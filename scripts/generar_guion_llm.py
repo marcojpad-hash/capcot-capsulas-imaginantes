@@ -11,7 +11,9 @@ Uso: python3 scripts/generar_guion_llm.py --tema "el niño fenomeno" --noticias 
 Las fuentes que proponga el LLM se VERIFICAN después (validar_storyboard.py --check-doi); nunca se aceptan sin verificar."""
 import argparse, json, os, sys, urllib.request
 PROMPT = """Eres guionista de micro-cápsulas científicas verticales estilo Imaginantes (periodismo informativo-narrativo).
-Reglas: 60-90 s totales, 170-235 palabras (voz +7%, objetivo 75-90 s), 7-9 escenas de 6-12 s; primera escena arc=hook_medias_res (in medias res, frase <=12 palabras);
+Reglas: duración objetivo {duracion} s (nunca <60; ~2.7 palabras/s con voz +7%), 6-10 escenas de 6-12 s;
+ESTRUCTURA OBLIGATORIA de esta cápsula: {estructura} — {estructura_desc} (rota entre cápsulas; no uses la plantilla de siempre).
+CAPAS DE DATOS: al menos 2 escenas con campo capa: una {{tipo:'mapa',region:[lon0,lon1,lat0,lat1],puntos:[{{nombre,lon,lat}}],flechas:[[lon0,lat0,lon1,lat1,'etiqueta']],titulo,fuente}} si hay lugares (lon 0-360 si cruza el Pacífico), y una {{tipo:'grafico',x:[],y:[],titulo,unidad,fuente}} o {{tipo:'dato',valor,etiqueta,fuente}} con cifras REALES de las fuentes; primera escena arc=hook_medias_res (in medias res, frase <=12 palabras);
 luego desarrollo, cierre_historia y una última reflexion_o_pregunta (reflexión ontológica o pregunta abierta). Todas las escenas llevan voz (sin huecos de silencio); si sobra tiempo, añade datos con fuente, nunca silencio.
 La voz eleva a idea, no describe. Metáfora y personificación. Ninguna cifra sin source_ids. Fuentes REALES con DOI o URL institucional que
 existan; si no estás seguro de una fuente, NO la incluyas. Estilo visual único para esta cápsula: {estilo}.
@@ -34,14 +36,15 @@ def llamar(prompt):
     return json.loads(json.load(urllib.request.urlopen(req, timeout=180))["choices"][0]["message"]["content"])
 
 if __name__ == "__main__":
+    import sys; sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
     ap = argparse.ArgumentParser(); ap.add_argument("--tema", required=True); ap.add_argument("--noticias", default="")
     ap.add_argument("--estilo", default="elige uno distinto de papel recortado (p.ej. linograbado, acuarela, miniatura, risografía)")
-    ap.add_argument("--id", default="capsula"); ap.add_argument("-o", "--out", required=True)
+    ap.add_argument("--id", default="capsula"); ap.add_argument("--estructura", default="pregunta"); ap.add_argument("--duracion", type=int, default=75); ap.add_argument("-o", "--out", required=True)
     a = ap.parse_args()
-    g = llamar(PROMPT.format(tema=a.tema, noticias=a.noticias[:1500], estilo=a.estilo))
+    g = llamar(PROMPT.format(tema=a.tema, noticias=a.noticias[:1500], estilo=a.estilo, duracion=a.duracion, estructura=a.estructura, estructura_desc=__import__("rotacion").ESTRUCTURAS[a.estructura]))
     for i, s in enumerate(g["scenes"]): s.setdefault("asset_filename", f"frames/scene_{i+1:03}.png")
     sb = {"project_id": a.id, "serie": "Imaginantes de la ciencia", "language": "es-MX", "aspect_ratio": "9:16",
-          "target_duration_seconds": 80, "trend_source": {"tipo": "google_trends_rss", "rss_geo": "MX", "termino": a.tema},
+          "target_duration_seconds": a.duracion, "estructura": a.estructura, "trend_source": {"tipo": "google_trends_rss", "rss_geo": "MX", "termino": a.tema},
           "voice": {"engine": "edge-tts", "voice_id": "es-MX-JorgeNeural", "rate": "+7%", "pitch": "-2Hz", "pad_seconds": 0.35},
           "cortinilla_fuentes": {"duration_seconds": 6, "titulo": "Fuentes", "aviso": "Imágenes generadas con IA. Voz sintética.", "bg_rgb": [18, 16, 14]},
           "audio": {"music_asset": "", "music_volume": 0.25},

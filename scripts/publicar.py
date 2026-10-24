@@ -41,7 +41,7 @@ def verificar_yt():
 def youtube(mp4, md, ejecutar):
     priv = META.get("privacyStatus", "private")
     body = {"snippet": {**md, "categoryId": "27", "defaultLanguage": "es"},
-            "status": {"privacyStatus": priv, "selfDeclaredMadeForKids": False, "containsSyntheticMedia": True}}
+            "status": {"privacyStatus": priv, "selfDeclaredMadeForKids": False, "containsSyntheticMedia": bool(META.get("contenido_sintetico", True))}}  # regla 14328491: solo si parece real o música IA central (metadata.py)
     print(f"[YT] canal destino {CANAL_ID} (verificar que el token sea de ese canal)")
     print("[YT] videos.insert part=snippet,status", json.dumps(body, ensure_ascii=False)[:600])
     if not ejecutar: return {"dry_run": True}

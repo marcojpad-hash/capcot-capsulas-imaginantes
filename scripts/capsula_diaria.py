@@ -19,13 +19,16 @@ def fuentes_md(sb): return "# Fuentes (verificadas)\n\n" + "\n".join(f"- [{s['id
 if __name__ == "__main__":
     ap = argparse.ArgumentParser(); ap.add_argument("--storyboard"); ap.add_argument("--proveedor-img", default="manual"); ap.add_argument("--fecha", default=datetime.date.today().isoformat()); ap.add_argument("--estilo", default=None)
     a = ap.parse_args()
+    sys.path.insert(0, S); import rotacion
+    rotacion.exigir_cupo(a.fecha)  # LÍMITE DURO: 1 cápsula por día (YouTube 2801973: nada de producción masiva)
     if a.storyboard: sb = json.load(open(a.storyboard, encoding="utf-8")); src_dir = os.path.dirname(os.path.abspath(a.storyboard))
     else:
         tj = f"/tmp/tendencias_{a.fecha}.json"; sh("python3", f"{S}/tendencias.py", "--json", tj)
         t = json.load(open(tj))[0]; print("TEMA:", t["termino"], t["puntaje"])
         if t["puntaje"] < 6: print("AVISO: puntaje <6; usar backlog atemporal")
         tmp = f"/tmp/sb_{a.fecha}.json"
-        rc = subprocess.run(["python3", f"{S}/generar_guion_llm.py", "--tema", t["termino"], "--noticias", json.dumps(t["noticias"], ensure_ascii=False), "--id", f"{a.fecha}_{slug(t['termino'])}", "-o", tmp]).returncode
+        est, dobj = rotacion.elegir_estructura(t["termino"]), rotacion.duracion_objetivo(t["termino"], len(t.get("noticias", [])))
+        rc = subprocess.run(["python3", f"{S}/generar_guion_llm.py", "--estructura", est, "--duracion", str(dobj), "--tema", t["termino"], "--noticias", json.dumps(t["noticias"], ensure_ascii=False), "--id", f"{a.fecha}_{slug(t['termino'])}", "-o", tmp]).returncode
         if rc == 3:
             json.dump({"fecha": a.fecha, "estado": "MANUAL", "tema": t["termino"], "accion": "El agente escribe el storyboard con docs/RECETA_CAPSULA.md (prompt en prompt_guion.txt) y reejecuta con --storyboard"}, open(os.path.join(R, "salidas", f"resumen_{a.fecha}.json"), "w"), ensure_ascii=False, indent=1)
             sys.exit("Modo manual: escribe el guion y reejecuta con --storyboard")
@@ -41,7 +44,16 @@ if __name__ == "__main__":
     if not tendencias_estilos.vigente():
         try: tendencias_estilos.actualizar()  # DIARIO: pesos de viralidad
         except Exception as ex: print('tendencias no actualizadas:', ex)
-    sb = rotar_estilo.aplicar_estilo(sb, a.estilo)  # elige estilo por temática + tendencia, sin repetir el anterior; respeta estilo_id/--estilo
+    sb = rotar_estilo.aplicar_estilo(sb, a.estilo)
+    tema = sb.get("trend_source", {}).get("termino", sb.get("title", ""))
+    u = [x["estructura"] for x in rotacion.log()]
+    if not sb.get("estructura") or (u and sb["estructura"] == u[-1]):
+        if sb.get("estructura"): sys.exit(f"estructura '{sb['estructura']}' repetida respecto de la cápsula anterior: reescribe el guion con {rotacion.elegir_estructura(tema)}")
+        sb["estructura"] = rotacion.elegir_estructura(tema)
+    sb.setdefault("target_duration_seconds", rotacion.duracion_objetivo(tema, len(sb.get("sources", []))))
+    aud = sb.setdefault("audio", {})
+    if not aud.get("music_asset") or aud["music_asset"].startswith("sintetico"):
+        aud["music_asset"] = "sintetico:" + rotacion.elegir_cama(tema); aud["cama_musical"] = aud["music_asset"].split(":")[1]  # elige estilo por temática + tendencia, sin repetir el anterior; respeta estilo_id/--estilo
     sb.setdefault("canal", {"nombre": "Datos y ociosidades", "handle": "@datosyociosidades", "youtube_channel_id": "UCU2ZI-6pBJEr9aSFsF6bxLw"})
     sb.setdefault("cortinilla_fuentes", {}).setdefault("firma", "Datos y ociosidades · @datosyociosidades")
     sbp = os.path.join(out, "storyboard.json"); json.dump(sb, open(sbp, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
@@ -53,12 +65,14 @@ if __name__ == "__main__":
     sh("python3", f"{S}/metadata.py", out)  # metadata.json: descripción + hashtags + canal
     # guion_mj.py DESCONECTADO 2026-10-24 (Mj: era de otro proyecto). Ver docs/obsoleto/guion_mj.py
     rotar_estilo.marcar(sb["estilo_id"], sb.get("project_id", out))
+    rotacion.marcar(a.fecha, sb.get("project_id", out), sb["estructura"], sb["audio"].get("cama_musical", "externa"), sb.get("target_duration_seconds"))
     sh("python3", f"{S}/metricas.py", "registrar", out)
     open(os.path.join(out, "LEEME.md"), "w").write(f"Paquete {os.path.basename(out)} · QA {'OK' if qa == 0 else 'CON FALLAS (ver qa.json)'} · NO publicado (publicar.py --ejecutar requiere aprobación y cuentas de Mj).\n")
     qj = json.load(open(os.path.join(out, "qa.json"))) if os.path.exists(os.path.join(out, "qa.json")) else {}
     res = {"fecha": a.fecha, "paquete": out, "titulo": sb["title"], "estilo": sb.get("estilo_id"), "qa_ok": qa == 0, "qa": qj,
            "archivos": sorted(os.listdir(out)), "publicado": False,
            "comando_subida_privada_PENDIENTE_APROBACION": f"python3 scripts/publicar.py {os.path.relpath(out, R)}/ --plataforma yt --ejecutar",
+           "estructura": sb["estructura"], "cama_musical": sb["audio"].get("cama_musical"),
            "tiktok": "sin cuenta nueva; la descripción enlaza al TikTok de Mj (CAPCOT_TIKTOK_HANDLE)"}
     json.dump(res, open(os.path.join(out, "resumen.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     print("PAQUETE:", out, "QA_OK" if qa == 0 else "QA_FALLAS")

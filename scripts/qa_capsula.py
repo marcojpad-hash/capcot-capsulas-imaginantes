@@ -7,7 +7,7 @@ def ok(n, c, d=""): R.append({"check": n, "ok": bool(c), "detalle": d})
 pr = json.loads(subprocess.check_output(["ffprobe", "-v", "error", "-show_streams", "-show_format", "-of", "json", mp4]))
 v = next(s for s in pr["streams"] if s["codec_type"] == "video"); a = [s for s in pr["streams"] if s["codec_type"] == "audio"]
 d = float(pr["format"]["duration"])
-ok("duracion_60_95", 60 <= d <= 95, f"{d:.2f}s"); ok("resolucion_1080x1920", (v["width"], v["height"]) == (1080, 1920))
+ok("duracion_>=60_<=120", 60 <= d <= 120, f"{d:.2f}s (objetivo {sb.get('target_duration_seconds', '?')})"); ok("resolucion_1080x1920", (v["width"], v["height"]) == (1080, 1920))
 ok("h264_aac", v["codec_name"] == "h264" and a and a[0]["codec_name"] == "aac"); ok("fps_30", v["r_frame_rate"] == "30/1", v["r_frame_rate"])
 e = subprocess.run(["ffmpeg", "-i", mp4, "-af", "ebur128=peak=true", "-f", "null", "-"], capture_output=True, text=True).stderr
 I = float(re.findall(r"I:\s+(-?[\d.]+) LUFS", e)[-1]); ok("loudness_-14", abs(I + 14) <= 1, f"{I} LUFS")
@@ -42,6 +42,15 @@ if _os.path.exists(_ass):
     ok("subs_en_cuadro_zona_segura", _py == 1920 and 1920*0.20 <= _mv <= 1920*0.55, f"PlayResY {_py}, MarginV {_mv}")
 else: ok("subs_ass_existe", False, "sin .ass (SRT con PlayResY 288 saca el texto de cuadro)")
 pal = sum(len(s["narration"].split()) for s in sb["scenes"]); ok("voz_<=240_palabras", pal <= 240, f"{pal} palabras")
+# Reglas anti 'contenido no auténtico / en serie' (YouTube 1311392, 2801973)
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__))); import rotacion
+prev = [x for x in rotacion.log() if x.get("project_id") != sb.get("project_id")]
+est = sb.get("estructura"); ok("estructura_valida", est in rotacion.ESTRUCTURAS, str(est))
+ok("estructura_no_repite_anterior", not prev or est != prev[-1].get("estructura"), f"anterior: {prev[-1].get('estructura') if prev else '-'}")
+cama = sb.get("audio", {}).get("cama_musical"); ok("cama_musical_no_repite_anterior", not prev or not cama or cama != prev[-1].get("cama"), f"{cama} (anterior: {prev[-1].get('cama') if prev else '-'})")
+capas = [sc["capa"]["tipo"] for sc in sb["scenes"] if sc.get("capa")]
+ok("capa_mapa", "mapa" in capas, ",".join(capas) or "sin capas"); ok("capa_grafico_o_dato", bool({"grafico", "dato"} & set(capas)), ",".join(capas) or "sin capas")
+ok("licencias_json", os.path.exists(os.path.join(os.path.dirname(os.path.abspath(mp4)), "licencias.json")))
 json.dump(R, open(os.path.join(os.path.dirname(os.path.abspath(mp4)), "qa.json"), "w"), ensure_ascii=False, indent=1)
 for r in R: print(("PASA " if r["ok"] else "FALLA"), r["check"], r["detalle"])
 sys.exit(0 if all(r["ok"] for r in R) else 1)

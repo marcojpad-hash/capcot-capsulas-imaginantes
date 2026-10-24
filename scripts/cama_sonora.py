@@ -77,8 +77,20 @@ NOTAS = {"A1": 55.0, "F1": 43.65, "C2": 65.41, "G1": 49.0, "A3": 220.0, "C4": 26
          "F3": 174.61, "G3": 196.0, "B3": 246.94, "D4": 293.66, "E3": 164.81}
 PROG = [("A1", ["A3", "C4", "E4"]), ("F1", ["F3", "A3", "C4"]), ("C2", ["G3", "C4", "E4"]), ("G1", ["G3", "B3", "D4"])]
 
-def musica(total, bpm=92):
-    """Lo-fi sutil: kick suave en 1 y 3 (+ fantasma), hat cerrado en corcheas, bajo y pad por compás."""
+NOTAS.update({"D2": 73.42, "E2": 82.41, "D3": 146.83, "A4": 440.0, "G4": 392.0, "B4": 493.88, "D5": 587.33, "E5": 659.25})
+# Camas musicales (regla anti 'contenido en serie', YouTube 2801973): varias, rotadas, todas síntesis propia (licencia: obra propia).
+CAMAS = {
+    "pulso":    {"bpm": 92,  "prog": PROG, "timbre": "pad",     "bateria": "lofi"},
+    "marimba":  {"bpm": 104, "prog": [("C2", ["C4", "E4", "G4"]), ("A1", ["A3", "C4", "E4"]), ("F1", ["F3", "A3", "C4"]), ("G1", ["G3", "B3", "D4"])], "timbre": "marimba", "bateria": "shaker"},
+    "pizzicato":{"bpm": 84,  "prog": [("D2", ["D4", "F3", "A3"]), ("A1", ["A3", "C4", "E4"]), ("G1", ["G3", "B3", "D4"]), ("A1", ["A3", "C4", "E4"])], "timbre": "pluck", "bateria": "suave"},
+    "arpegio":  {"bpm": 112, "prog": [("E2", ["E4", "G4", "B4"]), ("C2", ["C4", "E4", "G4"]), ("G1", ["G4", "B4", "D5"]), ("D2", ["D4", "A4", "D5"])], "timbre": "arp", "bateria": "lofi"},
+    "tambor":   {"bpm": 96,  "prog": [("A1", ["A3", "E4", "A4"]), ("G1", ["G3", "D4", "G4"]), ("F1", ["F3", "C4", "A4"]), ("E2", ["E4", "B3", "E4"])], "timbre": "pad", "bateria": "mano"},
+}
+
+def musica(total, bpm=92, cama="pulso"):
+    """Cama musical sintetizada. `cama` elige variante de CAMAS (tempo, progresión, timbre, batería)."""
+    cfg = CAMAS.get(cama, CAMAS["pulso"]); bpm = cfg["bpm"] if cama in CAMAS else bpm
+    if cfg["timbre"] != "pad" or cfg["bateria"] != "lofi" or cama != "pulso": return _musica_var(total, cfg)
     n = int(total * SR); out = np.zeros(n); beat = 60 / bpm; t = np.arange(n) / SR
     def put(x, s):
         i = int(s * SR); m = min(len(x), n - i)
@@ -102,6 +114,51 @@ def musica(total, bpm=92):
         put((bajo + _lp(pad, 1500)) * env, k * bar); k += 1
     fade = np.minimum(1, t / 1.0) * np.minimum(1, (total - t) / 2.5)
     return out * fade
+
+def _musica_var(total, cfg):
+    n = int(total * SR); out = np.zeros(n); beat = 60 / cfg["bpm"]; t = np.arange(n) / SR
+    def put(x, s):
+        i = int(s * SR); m = min(len(x), n - i)
+        if m > 0: out[i:i + m] += x[:m]
+    kt = np.arange(int(0.3 * SR)) / SR
+    kick = np.sin(2 * np.pi * (48 * kt + 50 * (1 - np.exp(-kt * 30)) / 30)) * np.exp(-kt * 10) * 0.8
+    st = int(0.06 * SR); shk = _bp(_ruido(st), 5000, 10000) * np.exp(-np.arange(st) / (0.02 * SR)) * 0.18
+    tom = np.sin(2 * np.pi * 140 * kt * np.exp(-kt * 3)) * np.exp(-kt * 14) * 0.6
+    b = 0
+    while b * beat < total:
+        s0 = b * beat; bt = cfg["bateria"]
+        if bt == "lofi":
+            if b % 4 in (0, 2): put(kick, s0)
+            put(shk, s0 + beat / 2)
+        elif bt == "shaker":
+            if b % 4 == 0: put(kick * 0.8, s0)
+            for q in range(4): put(shk * (1 if q % 2 else 0.5), s0 + q * beat / 4)
+        elif bt == "suave":
+            if b % 4 == 0: put(kick * 0.6, s0)
+            if b % 2: put(shk * 0.6, s0)
+        elif bt == "mano":
+            put(tom * (1 if b % 2 == 0 else 0.6), s0)
+            if b % 4 == 3: put(tom * 0.5, s0 + beat / 2)
+            put(shk * 0.5, s0 + beat / 2)
+        b += 1
+    bar = 4 * beat; k = 0
+    while k * bar < total:
+        raiz, acorde = cfg["prog"][k % len(cfg["prog"])]; m = int(bar * SR); tt = np.arange(m) / SR
+        env = np.minimum(1, tt / 0.05) * np.minimum(1, (bar - tt) / 0.3)
+        seg = np.sin(2 * np.pi * NOTAS[raiz] * 2 * tt) * np.exp(-((tt % (2 * beat)) * 2.0)) * 0.45
+        tim = cfg["timbre"]
+        if tim == "pad":
+            seg += _lp(sum(np.sin(2 * np.pi * NOTAS[x] * tt + j) for j, x in enumerate(acorde)) * 0.12, 1500)
+        else:
+            sub = {"marimba": beat / 2, "pluck": beat, "arp": beat / 4}[tim]; dec = {"marimba": 9, "pluck": 6, "arp": 12}[tim]
+            q = 0
+            while q * sub < bar - 1e-6:
+                f0 = NOTAS[acorde[q % len(acorde)]] * (2 if tim == "marimba" else 1)
+                L = int(min(sub * 2, bar - q * sub) * SR); u = np.arange(L) / SR
+                w = np.sin(2 * np.pi * f0 * u) + (0.3 * np.sin(2 * np.pi * f0 * 4 * u) if tim == "marimba" else 0.4 * np.sin(2 * np.pi * f0 * 2 * u))
+                i0 = int(q * sub * SR); seg[i0:i0 + L] += (w * np.exp(-u * dec) * 0.22)[:m - i0]; q += 1
+        put(seg * env, k * bar); k += 1
+    return out * np.minimum(1, t / 1.0) * np.minimum(1, (total - t) / 2.5)
 
 def guardar(x, path, rms=0.1):
     x = _norm(x, rms); x = np.clip(x, -0.98, 0.98)

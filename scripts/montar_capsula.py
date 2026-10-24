@@ -178,7 +178,7 @@ def cama_sonora(aud, base, total, tmp, durs=None):
     m = aud.get("music_asset", "sintetico:pulso")
     if m:
         dst = os.path.join(tmp, "musica_raw.wav")
-        if m.startswith("sintetico"): cs.guardar(cs.musica(total, int(aud.get("music_bpm", 92))), dst)
+        if m.startswith("sintetico"): cs.guardar(cs.musica(total, int(aud.get("music_bpm", 92)), aud.get("cama_musical") or (m.split(":", 1)[1] if ":" in m else "pulso")), dst)
         else: run(["ffmpeg", "-y", "-stream_loop", "-1", "-i", os.path.join(base, m), "-t", f"{total:.2f}", dst])
         n = os.path.join(tmp, "musica.wav")
         run(["ffmpeg", "-y", "-i", dst, "-af", f"loudnorm=I={aud.get('music_lufs', -27)}:TP=-3", "-ac", "2", "-ar", "48000", n]); out.append(n)
@@ -218,7 +218,7 @@ def _plano(png, seconds, out_mp4, mov, overlay=None, ov_hasta=None):
 
 def n_planos(seconds, plano_s=2.5): return max(1, round(seconds / plano_s))
 
-def escena_video(png, seconds, out_mp4, idx, texto="", plano_s=2.5, gancho=False):
+def escena_video(png, seconds, out_mp4, idx, texto="", plano_s=2.5, gancho=False, capa=None):
     tmpd = tempfile.mkdtemp(prefix="pl_"); n = n_planos(seconds, plano_s); parts = []
     ov = None
     if texto:
@@ -227,6 +227,9 @@ def escena_video(png, seconds, out_mp4, idx, texto="", plano_s=2.5, gancho=False
         d = seconds / n; mp = os.path.join(tmpd, f"{k}.mp4")
         # el texto en pantalla vive en el primer plano de la escena (en el gancho, los 2 primeros)
         con_txt = ov if (k == 0 or (gancho and k == 1)) else None
+        if capa and k == min(int(capa.get("plano", n - 1)), n - 1):  # capa informativa (mapa/gráfico/dato), no Ken Burns
+            sys.path.insert(0, os.path.dirname(os.path.abspath(__file__))); import capas_datos
+            capas_datos.render_capa(capa, d, mp); parts.append(mp); continue
         _plano(png, d, mp, MOVS[(idx * 2 + k) % len(MOVS)], con_txt); parts.append(mp)
     lst = os.path.join(tmpd, "l.txt"); open(lst, "w").writelines(f"file '{p}'\n" for p in parts)
     run(["ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", lst, "-c", "copy", out_mp4])
@@ -256,7 +259,7 @@ def main():
         mp4 = os.path.join(tmp, f"{sc['id']}.mp4")
         titulo = sb.get("titulo") or sb["scenes"][0].get("on_screen_text", "")
         escena_video(os.path.join(base, sc["asset_filename"]), sdur, mp4, i, titulo if i == 0 else sc.get("on_screen_text", ""),
-                     float(sb.get("export", {}).get("plano_seconds", 2.5)), gancho=(i == 0)); clips.append(mp4)
+                     float(sb.get("export", {}).get("plano_seconds", 2.5)), gancho=(i == 0), capa=sc.get("capa")); clips.append(mp4)
         ps = float(sb.get("export", {}).get("plano_seconds", 2.5)); n = n_planos(sdur, ps)
         sfx = sc.get("sfx") or [sc.get("ambiente") or "olas"]  # lista por plano; el último se repite
         durs += [(sfx[min(k, len(sfx) - 1)], sdur / n) for k in range(n)]
@@ -293,7 +296,30 @@ def main():
             "-c:a", "aac", "-b:a", "160k", "-ar", "48000", "-shortest", "-movflags", "+faststart", a.out]
     run(cmd)
     d = dur(a.out); print(f"OK {a.out} duración {d:.2f}s")
-    if not 60 <= d <= 95: print("ERROR: duración fuera de 60-95 s", file=sys.stderr); sys.exit(2)
+    licencias(sb, os.path.join(os.path.dirname(os.path.abspath(a.out)), "licencias.json"))
+    # Regla 1 anti 'en serie': duración variable por tema (60-90+ s), nunca <60; techo 120 s
+    if not 60 <= d <= 120: print("ERROR: duración fuera de 60-120 s", file=sys.stderr); sys.exit(2)
+
+def licencias(sb, path):
+    """Registro de licencias por cápsula (música, SFX, imágenes, voz, mapas)."""
+    R = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    aud = sb.get("audio", {}); m = aud.get("music_asset", "sintetico:pulso")
+    lic_sfx = {}
+    lp = os.path.join(R, "assets", "sfx", "LICENCIAS.json")
+    if os.path.exists(lp): lic_sfx = json.load(open(lp, encoding="utf-8"))
+    usados = sorted({x for sc in sb["scenes"] for y in (sc.get("sfx") or [sc.get("ambiente") or "olas"]) for x in y.split("+")})
+    if m.startswith("sintetico"):
+        mus = {"cama": aud.get("cama_musical") or (m.split(":", 1)[1] if ":" in m else "pulso"), "origen": "síntesis propia (scripts/cama_sonora.py, numpy)", "licencia": "obra propia de Datos y ociosidades", "generada_por_ia": False}
+    else:
+        mus = {"archivo": m, "origen": aud.get("music_origen", "YouTube Audio Library (descarga manual de Mj)"), "licencia": aud.get("music_licencia", "PENDIENTE: anotar licencia/atribución"), "generada_por_ia": bool(aud.get("music_ia", False))}
+    capas = [sc["capa"]["tipo"] for sc in sb["scenes"] if sc.get("capa")]
+    rec = {"project_id": sb.get("project_id"), "musica": mus,
+           "sfx": {k: (lic_sfx.get(k) or {"origen": "síntesis propia (cama_sonora.py)", "licencia": "obra propia"}) for k in usados},
+           "imagenes": {"origen": sb.get("proveedor_imagenes", "generadas con IA (ilustración no realista)"), "estilo": sb.get("estilo_id"), "realista": bool(sb.get("parece_real", False))},
+           "voz": {"motor": "Microsoft Edge TTS", "voz": sb.get("voice", {}).get("voice_id"), "nota": "voz sintética; no imita a una persona real"},
+           "capas_datos": {"tipos": capas, "mapa_base": "Natural Earth 110m (dominio público)" if "mapa" in capas else None, "render": "matplotlib (propio)"},
+           "fuentes_datos": [s.get("url") for s in sb.get("sources", [])]}
+    json.dump(rec, open(path, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 
 if __name__ == "__main__":
     main()

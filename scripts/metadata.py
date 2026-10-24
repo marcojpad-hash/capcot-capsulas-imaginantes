@@ -10,6 +10,19 @@ def tiktok_linea():
     h = TIKTOK.lstrip("@")
     return f"TikTok: https://www.tiktok.com/@{h}"
 def tag(t): return "#" + re.sub(r"[^A-Za-z0-9ÁÉÍÓÚáéíóúÑñ]", "", "".join(w.capitalize() for w in t.split()))
+# Regla de etiqueta "contenido alterado o sintético" (YouTube support.google.com/youtube/answer/14328491):
+# SÍ cuando algo PARECE REAL (personas reales, lugares/eventos reales recreados de forma realista, escenas
+# realistas que no ocurrieron) o cuando la música generada por IA es el elemento central. NO para ilustración
+# no realista (garabato, crayón, tatuaje, acuarela...), voz TTS genérica, guion/miniatura asistidos ni infografías.
+ESTILOS_REALISTAS = {"fotorrealista", "foto", "documental_realista", "miniatura_realista"}
+def etiqueta_sintetica(sb):
+    motivos = []
+    if sb.get("parece_real"): motivos.append("imágenes/escenas que parecen reales (parece_real=true)")
+    if sb.get("estilo_id") in ESTILOS_REALISTAS: motivos.append(f"estilo realista: {sb.get('estilo_id')}")
+    if any(s.get("persona_real_recreada") for s in sb.get("scenes", [])): motivos.append("persona real recreada")
+    a = sb.get("audio", {})
+    if a.get("music_ia") and a.get("music_protagonista"): motivos.append("música generada por IA como elemento central")
+    return bool(motivos), motivos
 def generar(d, sbn="storyboard.json"):
     sb = json.load(open(os.path.join(d, sbn), encoding="utf-8"))
     tema = sb.get("trend_source", {}).get("termino", "")
@@ -23,6 +36,7 @@ def generar(d, sbn="storyboard.json"):
             f"Suscríbete: {CANAL['handle']}\n{tiktok_linea()}\n\n{' '.join(hashtags)}")
     md = {"canal": CANAL, "titulo": (sb["title"] + " #Shorts")[:100], "descripcion": desc[:4900], "hashtags": hashtags,
           "tags": [h.lstrip("#") for h in hashtags], "idioma": "es-MX", "categoria_yt": "27", "contiene_ia": True,
+          "contenido_sintetico": etiqueta_sintetica(sb)[0], "contenido_sintetico_motivos": etiqueta_sintetica(sb)[1] or ["no realista: ilustración estilizada + voz TTS; no requiere etiqueta (YouTube 14328491)"],
           "privacyStatus": "private", "tiktok_caption": f"{gancho} {' '.join(hashtags)}"[:2200]}
     json.dump(md, open(os.path.join(d, "metadata.json"), "w"), ensure_ascii=False, indent=1); return md
 if __name__ == "__main__": print(json.dumps(generar(sys.argv[1], *(sys.argv[2:3])), ensure_ascii=False, indent=1))
