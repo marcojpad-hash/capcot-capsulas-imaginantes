@@ -2,6 +2,8 @@
 """Métricas -> SQLite (data/metricas.db) y puntaje del PLAN_MAESTRO §7.
   registrar: python3 scripts/metricas.py registrar <dir_salida>   (guarda tema, estilo, gancho, duración)
   recolectar: python3 scripts/metricas.py recolectar [--dry-run]  (YouTube Analytics con CAPCOT_YT_TOKEN; TikTok video.list con CAPCOT_TIKTOK_ACCESS_TOKEN)
+  vistas:    python3 scripts/metricas.py vistas [yt_id ...]   (YouTube Data videos.list part=statistics; basta youtube.readonly;
+             sin ids usa data/publicaciones.json; guarda en tabla metricas)
   reporte:   python3 scripts/metricas.py reporte
   metas:     python3 scripts/metricas.py metas [subs_actuales vistas_shorts_90d horas_largos_12m]  (metas semanales hacia el YPP, fecha límite 2026-12-05)
 Sin credenciales, 'recolectar' solo informa qué falta."""
@@ -32,6 +34,21 @@ if __name__ == "__main__":
         c.execute("insert or replace into capsulas values(?,?,?,?,?,?,?,?)", (sb["project_id"], datetime.date.today().isoformat(),
                   sb.get("trend_source", {}).get("termino", sb["title"]), sb.get("estilo_visual", ""), sb["scenes"][0].get("on_screen_text", ""),
                   sum(s["duration_seconds"] for s in sb["scenes"]), None, None)); c.commit(); print("registrada", sb["project_id"])
+    elif cmd == "vistas":
+        sys.path.insert(0, os.path.dirname(os.path.abspath(__file__))); import publicar
+        pubs = os.path.join(os.path.dirname(DB), "publicaciones.json")
+        ids = sys.argv[2:] or [p["yt_id"] for p in (json.load(open(pubs)) if os.path.exists(pubs) else []) if p.get("yt_id")]
+        if not ids: print("sin videos publicados"); sys.exit(0)
+        r = publicar.yt_cliente().videos().list(part="statistics,status,snippet", id=",".join(ids[:50])).execute()
+        ts = datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="seconds")
+        for it in r.get("items", []):
+            st = it["statistics"]; pid = next((p["project_id"] for p in json.load(open(pubs)) if p.get("yt_id") == it["id"]), it["id"]) if os.path.exists(pubs) else it["id"]
+            c.execute("insert into metricas values(?,?,?,?,?,?,?,?,?,?)", (pid, "youtube", ts, int(st.get("viewCount", 0)), None, int(st.get("likeCount", 0)), int(st.get("commentCount", 0)), None, None, None))
+            c.execute("update capsulas set yt_id=? where id=?", (it["id"], pid))
+            print(f"{it['id']} [{it['status']['privacyStatus']}] {it['snippet']['title'][:50]} | vistas {st.get('viewCount', 0)} · likes {st.get('likeCount', 0)} · comentarios {st.get('commentCount', 0)}")
+        c.commit()
+        faltan = set(ids) - {it["id"] for it in r.get("items", [])}
+        if faltan: print("no devueltos (aún procesando o privados de otro canal):", ", ".join(faltan))
     elif cmd == "recolectar":
         falt = [k for k in ("CAPCOT_YT_TOKEN", "CAPCOT_TIKTOK_ACCESS_TOKEN") if not os.environ.get(k)]
         if falt: print("Sin credenciales, no se recolecta:", ", ".join(falt)); sys.exit(0)

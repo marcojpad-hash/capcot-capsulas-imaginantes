@@ -94,9 +94,12 @@ Imágenes generadas con IA · voz sintética · audio sintetizado.
 Suscríbete: @datosyociosidades
 TikTok: https://www.tiktok.com/@datosyociosidades
 
-#DatosYOciosidades #Shorts #ciencia #divulgación #SabíasQue #<Tema>
+#DatosYOciosidades #Shorts #datos #ciencia #difusión #difusióncientífica #ia #<Tema> (hasta 4 de tema)
 ```
-Título YouTube = título + « #Shorts» (≤100 caracteres). Máximo 8 hashtags. Subida siempre `private` hasta que Mj apruebe.
+Título YouTube = título + « #Shorts» (≤100 caracteres, sin `<` `>`; en URLs se codifican %3C/%3E). Descripción ≤5000 bytes; tags ≤500 caracteres.
+Hashtags base FIJOS en todas las plataformas: `#datos #ciencia #difusión #difusióncientífica #ia` + hashtags del tema. Solo YouTube añade `#DatosYOciosidades #Shorts`.
+Descripción completa en YouTube y TikTok. **Caption TikTok** (≤2200): gancho + resumen (`"resumen"` opcional en el storyboard) + «Fuentes en YouTube @datosyociosidades» + hashtags base y de tema.
+Publicación automática solo vía `capsula_diaria.py --publicar` cuando QA pasa. Máximo 3 al día (2 propias + 1 externa por cola/, ver docs/FLUJO_EXTERNO.md), en ventanas distintas; ningún tema repetido el mismo día (data/temas_del_dia.json).
 
 ## 7. (Eliminado) Versión para la voz de Mj
 Cancelada por Mj el 2026-10-24 (pertenece a otro proyecto). La cápsula usa solo la voz sintética es-MX-JorgeNeural a +7%.

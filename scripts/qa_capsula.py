@@ -51,6 +51,7 @@ cama = sb.get("audio", {}).get("cama_musical"); ok("cama_musical_no_repite_anter
 capas = [sc["capa"]["tipo"] for sc in sb["scenes"] if sc.get("capa")]
 ok("capa_mapa", "mapa" in capas, ",".join(capas) or "sin capas"); ok("capa_grafico_o_dato", bool({"grafico", "dato"} & set(capas)), ",".join(capas) or "sin capas")
 ok("licencias_json", os.path.exists(os.path.join(os.path.dirname(os.path.abspath(mp4)), "licencias.json")))
+import metadata; _e = metadata.validar_yt(metadata.construir(sb)); ok("metadata_yt_valida", not _e, "; ".join(_e) or "título/descr./tags OK")
 json.dump(R, open(os.path.join(os.path.dirname(os.path.abspath(mp4)), "qa.json"), "w"), ensure_ascii=False, indent=1)
 for r in R: print(("PASA " if r["ok"] else "FALLA"), r["check"], r["detalle"])
 sys.exit(0 if all(r["ok"] for r in R) else 1)

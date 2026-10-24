@@ -1,7 +1,7 @@
 # SKILL DRAFT — Cápsula diaria de imaginantes (CAPCOT)
 
 Fuente de verdad: docs/PLAN_MAESTRO_AUTOMATICO.md. Este draft = procedimiento probado en el box (2026-10-24).
-**Nunca publicar sin aprobación de Mj** (publicar.py es dry-run por defecto).
+**Publicación automática autorizada por Mj (2026-10-24 11:33)** solo vía `capsula_diaria.py --publicar` y solo si QA pasa; máx. 3/día (2 propias + 1 externa). publicar.py sigue en dry-run sin --ejecutar.
 
 ## Canal
 **Datos y ociosidades** · @datosyociosidades · YouTube UCU2ZI-6pBJEr9aSFsF6bxLw (sin números en nombres/handles).
@@ -69,3 +69,21 @@ salidas/2026-10-24_fenomeno-el-nino/capsula_v2.mp4 (87.8 s, QA 11/11): storyboar
 
 **Corrección 2026-10-24 (Mj): no se crea cuenta nueva de TikTok; no se publica en TikTok desde el sistema. Cada descripción de YouTube enlaza al TikTok existente de Mj (`CAPCOT_TIKTOK_HANDLE`, handle pendiente). TikTok desactivado por defecto en publicar.py.**
 Paquete diario incluye resumen.json (guion_mj.md cancelado 2026-10-24: era de otro proyecto). TikTok fijo: https://www.tiktok.com/@datosyociosidades. Voz es-MX-JorgeNeural +7%. Receta: docs/RECETA_CAPSULA.md.
+
+
+## Rutina diaria (actualización 2026-10-24 11:40)
+Comando de la rutina (cada corrida = 1 cápsula propia; correr 2 veces al día como máximo):
+```
+cd /workspace/capcot && python3 scripts/capsula_diaria.py --publicar --programar
+```
+- Sin clave LLM (GEMINI/GROQ) termina en **modo manual** (rc≠0, "Modo manual") y deja `salidas/pendiente/prompt_guion_<fecha>.txt` + `salidas/resumen_<fecha>.json` (estructura, duración objetivo, tema).
+- **PASO DEL AGENTE** (en su turno): leer el prompt, escribir `salidas/pendiente/storyboard_<fecha>.json` (estructura y duración indicadas, capas mapa + dato/gráfico, fuentes verificadas con DOI/URL, tema no usado hoy), generar los frames en `salidas/pendiente/frames/` (GenerateImage o `--proveedor-img`), y reejecutar:
+```
+python3 scripts/capsula_diaria.py --storyboard salidas/pendiente/storyboard_<fecha>.json --publicar --programar
+```
+- `--programar`: sube `private` + `status.publishAt` a una hora aleatoria de una ventana libre (9–11, 13–15, 18–21 h CDMX); sin ventana libre, público inmediato. `--dry-run`: cadena completa sin subir ni escribir en data/.
+- Registro: data/publicaciones.json (yt_id, hora, ventana, origen), data/rotacion.json, data/temas_del_dia.json.
+- **TikTok**: cada paquete deja `tiktok.json` (caption, mp4, estado `pendiente_tiktok`). El agente principal lo sube por navegador con un agente de escritorio y cambia el estado a `publicado_tiktok`.
+- **Externa (ChatGPT)**: `python3 scripts/procesar_cola.py --publicar --programar` (ver docs/FLUJO_EXTERNO.md).
+- Métricas: `python3 scripts/metricas.py vistas` (videos.list, scope readonly).
+- Acerca de: `python3 scripts/actualizar_acerca_de.py` (dry-run); `--ejecutar` requiere scope youtube.force-ssl (falta).

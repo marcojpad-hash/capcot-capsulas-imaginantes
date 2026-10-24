@@ -38,10 +38,13 @@ def verificar_yt():
     ids = [(c["id"], c["snippet"]["title"]) for c in r.get("items", [])]
     print("canales del token:", ids, "| OK" if any(i == CANAL_ID for i, _ in ids) else f"| NO coincide con {CANAL_ID}")
 
-def youtube(mp4, md, ejecutar):
-    priv = META.get("privacyStatus", "private")
-    body = {"snippet": {**md, "categoryId": "27", "defaultLanguage": "es"},
-            "status": {"privacyStatus": priv, "selfDeclaredMadeForKids": False, "containsSyntheticMedia": bool(META.get("contenido_sintetico", True))}}  # regla 14328491: solo si parece real o música IA central (metadata.py)
+def youtube(mp4, md, ejecutar, privacidad=None, publish_at=None, meta=None):
+    """privacidad: public|unlisted|private. publish_at (ISO 8601 UTC, futuro): programa la salida; YouTube exige privacyStatus=private."""
+    META = meta if meta is not None else globals().get("META", {})
+    priv = privacidad or META.get("privacyStatus", "private")
+    st = {"privacyStatus": priv, "selfDeclaredMadeForKids": False, "containsSyntheticMedia": bool(META.get("contenido_sintetico", True))}
+    if publish_at: st.update(privacyStatus="private", publishAt=publish_at)
+    body = {"snippet": {**md, "categoryId": "27", "defaultLanguage": "es"}, "status": st}  # regla 14328491: solo si parece real o música IA central (metadata.py)
     print(f"[YT] canal destino {CANAL_ID} (verificar que el token sea de ese canal)")
     print("[YT] videos.insert part=snippet,status", json.dumps(body, ensure_ascii=False)[:600])
     if not ejecutar: return {"dry_run": True}
@@ -71,10 +74,13 @@ def tiktok(mp4, md, ejecutar):
 if __name__ == "__main__":
     if "--verificar-yt" in sys.argv: verificar_yt(); sys.exit()
     ap = argparse.ArgumentParser(); ap.add_argument("dir"); ap.add_argument("--plataforma", default="yt"); ap.add_argument("--habilitar-tiktok", action="store_true"); ap.add_argument("--video", default="capsula.mp4"); ap.add_argument("--storyboard", default="storyboard.json")
-    ap.add_argument("--ejecutar", action="store_true", help="publica de verdad (requiere aprobación de Mj)")
+    ap.add_argument("--ejecutar", action="store_true", help="publica de verdad")
+    ap.add_argument("--privacidad", choices=["public", "unlisted", "private"], default=None)
+    ap.add_argument("--publish-at", default=None, help="ISO 8601 UTC, p.ej. 2026-10-25T19:42:00Z (queda private hasta esa hora)")
     a = ap.parse_args(); META, md = metadatos(a.dir, a.storyboard); mp4 = os.path.join(a.dir, a.video); res = {}
-    if a.plataforma in ("yt", "ambas"): res["youtube"] = youtube(mp4, md, a.ejecutar)
+    if a.plataforma in ("yt", "ambas"): res["youtube"] = youtube(mp4, md, a.ejecutar, a.privacidad, a.publish_at)
     if a.plataforma in ("tt", "ambas") and not a.habilitar_tiktok: res["tiktok"] = "desactivado (usa --habilitar-tiktok)"
     elif a.plataforma in ("tt", "ambas"): res["tiktok"] = tiktok(mp4, md, a.ejecutar)
     json.dump({"metadatos": md, "resultado": res}, open(os.path.join(a.dir, "publicacion.json"), "w"), ensure_ascii=False, indent=1)
     print("dry-run: nada publicado" if not a.ejecutar else "publicado")
+    if a.ejecutar and isinstance(res.get("youtube"), dict) and res["youtube"].get("id"): print("YT_ID", res["youtube"]["id"])

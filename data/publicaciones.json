@@ -1,0 +1,23 @@
+[
+ {
+  "fecha": "2026-10-24",
+  "project_id": "2026-10-24_fenomeno-el-nino",
+  "yt_id": "5D96DmjvioU",
+  "url": "https://youtube.com/shorts/5D96DmjvioU",
+  "privacidad": "public",
+  "publishAt_utc": null,
+  "hora_local": "2026-10-24 ~11:30 (America/Mexico_City)",
+  "ventana": 0,
+  "video": "capsula_v7.mp4",
+  "storyboard": "storyboard_v7.json",
+  "titulo": "El mar que llegó en Navidad: El Niño",
+  "tema": "el niño fenomeno",
+  "estructura": "historia",
+  "estilo": "linograbado",
+  "cama": "marimba",
+  "aprobado_por": "Mj (directo)",
+  "nota": "1er intento invalidDescription por < > en DOI de Bjerknes; metadata.json parcheado a mano",
+  "origen": "propia",
+  "tiktok": "pendiente_tiktok"
+ }
+]

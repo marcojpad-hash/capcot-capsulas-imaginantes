@@ -23,3 +23,6 @@ token*.json
 .capcot/
 assets/sfx/
 assets/geo/
+
+# cola externa: solo json
+cola/*/frames/
