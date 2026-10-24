@@ -208,14 +208,18 @@ Las referencias están en `referencias_estilo/`, que no se commitea (gitignored)
 ### Garabato en cuaderno (`garabato_cuaderno`) — atractivo 4 (rehecho 2026-10-24: más boceto, menos estilizado)
 Boceto real a lápiz en hoja rayada: trazo suelto y corroído, líneas de construcción y repetidas, sombreado a rayas, manchas de grafito; la escena se lee clara.
 
-Prompt: `raw unfinished graphite pencil sketch on worn lined notebook paper, loose scratchy freehand strokes, many repeated overlapping searching lines, visible construction lines and guide shapes left in, rough parallel hatching and crosshatch shading, smudged graphite stains, eraser marks, coffee ring, uneven pressure, broken lines, imperfect proportions, NOT polished, NOT clean, subject still clearly readable with solid shading on key forms, vertical 9:16, no text`
+Prompt: `messy ballpoint-and-pencil sketchbook study, close view of the subject, corroded rough linework, repeated contour strokes, visible proportion guide lines and gesture lines, scribbled hatching shadows, graphite smudges and finger smears, torn lined notebook page, imperfect but fully readable, vertical 9:16, no text`
+
+Variante oficial: **v2** (elegida por Mj en catalogo_sketch, 2026-10-24); la otra se descartó. Frame de referencia: `referencias_estilo/garabato_cuaderno_oficial.jpg` (local, no se commitea).
 
 Temas: ideas, inventos, procesos mentales, estudio · Ref: referencias_estilo/66fca9e1…jpg (línea fina bartending) + búsqueda web 'sketch tattoo' (tattmagic.com, sortra.com) y 'watercolor tattoo' (thinktanktattoo.com, madrabbit.com), 2026-10-24
 
 ### Crayón en nube de pensamiento (`crayon_nube`) — atractivo 4 (rehecho 2026-10-24: más boceto, menos estilizado)
 Boceto con crayón de cera: garabato tosco y corroído, líneas repetidas, relleno a rayas que se sale del contorno, manchas; nube de pensamiento dibujada a mano, escena legible.
 
-Prompt: `rough wax crayon sketch inside a wobbly hand-drawn thought bubble, scrappy childlike-but-expressive scribbles, repeated overlapping outline strokes, visible pencil construction lines underneath, coloring in loose diagonal hatching that goes outside the lines, waxy grain on cheap paper, smudges and smears, crumbled crayon flecks, NOT polished, NOT cute, scene clearly readable, vertical 9:16, no text`
+Prompt: `rough wax crayon sketch inside a wobbly hand-drawn thought bubble on cheap paper, scrappy expressive scribbles, repeated overlapping outline strokes, visible pencil construction lines underneath, coloring in loose diagonal hatching going outside the lines, waxy grain, smudges and smears, crayon flecks, not cute, not polished, scene clearly readable, vertical 9:16, no text`
+
+Variante oficial: **v1** (elegida por Mj en catalogo_sketch, 2026-10-24); la otra se descartó. Frame de referencia: `referencias_estilo/crayon_nube_oficial.jpg` (local, no se commitea).
 
 Temas: imaginación, sueños, psicología, hipótesis · Ref: referencias_estilo/66fca9e1…jpg (línea fina bartending) + búsqueda web 'sketch tattoo' (tattmagic.com, sortra.com) y 'watercolor tattoo' (thinktanktattoo.com, madrabbit.com), 2026-10-24
 
@@ -228,13 +232,17 @@ Temas: imaginación, sueños, psicología, hipótesis · Ref: referencias_estilo
 ### Tatuaje sketch (`tatuaje_sketch`) — atractivo 5 (nuevo 2026-10-24)
 Como un sketch tattoo: boceto de tinta negra con líneas guía y de construcción visibles, trazos repetidos que se afinan, sombreado scratchy y punteado, espacio negativo; parece arrancado del sketchbook pero el sujeto se lee completo.
 
-Prompt: `sketch style tattoo flash design, black ink on off-white paper, loose freehand linework with visible construction and guide lines, multiple overlapping tapering strokes, fine-line foundation, scratchy whip shading and crosshatching, dotwork stippling, ink smudges and unfinished edges, generous negative space, black and grey only, subject clearly readable, vertical 9:16, no text`
+Prompt: `sketch tattoo composition in black ink on cream paper, loosely framed by a rough circle of guide lines, main subject as a portrait with its context below, raw pen study, repeated searching strokes, visible geometric construction lines, scratchy hatching, stippled shadows, smudges, black and grey only, negative space, readable, vertical 9:16, no text`
+
+Variante oficial: **v2** (elegida por Mj en catalogo_sketch, 2026-10-24); la otra se descartó. Frame de referencia: `referencias_estilo/tatuaje_sketch_oficial.jpg` (local, no se commitea).
 
 Temas: oficios, historia, personajes, aventura, mar, viajes, retratos · Ref: referencias_estilo/66fca9e1…jpg (línea fina bartending) + búsqueda web 'sketch tattoo' (tattmagic.com, sortra.com) y 'watercolor tattoo' (thinktanktattoo.com, madrabbit.com), 2026-10-24
 
 ### Tatuaje acuarela (`tatuaje_acuarela`) — atractivo 5 (nuevo 2026-10-24)
 Watercolor tattoo: línea sketch negra suelta con manchas de acuarela translúcidas que se salen del contorno, salpicaduras y goteos controlados; poco negro, color en capas, composición legible.
 
-Prompt: `watercolor tattoo design, loose black sketch linework with visible construction lines, soft translucent watercolor washes bleeding beyond the outlines, paint splashes, splatter and drips, layered blended pigments, soft edges, minimal black ink, white paper as negative space, controlled limited palette, subject clearly readable, vertical 9:16, no text`
+Prompt: `watercolor sketch tattoo flash, rough black ink sketch of the subject with big loose watercolor blots of deep blue, coral and gold splashing behind like ink bursts, drips running down, splatter dots, color escaping the lines, guide lines and repeated strokes visible, white paper, readable subject, vertical 9:16, no text`
+
+Variante oficial: **v2** (elegida por Mj en catalogo_sketch, 2026-10-24); la otra se descartó. Frame de referencia: `referencias_estilo/tatuaje_acuarela_oficial.jpg` (local, no se commitea).
 
 Temas: naturaleza, clima, océano, emociones, biología, animales, agua · Ref: referencias_estilo/66fca9e1…jpg (línea fina bartending) + búsqueda web 'sketch tattoo' (tattmagic.com, sortra.com) y 'watercolor tattoo' (thinktanktattoo.com, madrabbit.com), 2026-10-24

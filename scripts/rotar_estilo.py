@@ -36,6 +36,10 @@ def tema_de(sb): return " ".join([sb.get("topic", ""), sb.get("title", "")] + [s
 def aplicar_estilo(sb, e=None):
     e = e or sb.get("estilo_id") or elegir(tema_de(sb)); c = catalogo()[e]
     sb["estilo_id"], sb["estilo_visual"] = e, c["nombre"]
+    # variante oficial elegida por Mj (2026-10-24) y su frame local como referencia de estilo para el generador
+    if c.get("variante_oficial"): sb["estilo_variante"] = c["variante_oficial"]
+    ref = c.get("frame_referencia", "").split(" ")[0]
+    if ref and os.path.exists(os.path.join(R, ref)): sb["estilo_referencia_imagen"] = ref
     for s in sb["scenes"]:
         p = s.get("image_prompt", "")
         if c["prompt_base"] not in p: s["image_prompt"] = f"{p.rstrip('. ')}. Style: {c['prompt_base']}"
