@@ -1,0 +1,44 @@
+{
+  "actualizado": "2026-10-24",
+  "zona_horaria": "America/Mexico_City (UTC-6 todo el año, sin horario de verano)",
+  "punto_de_partida_previo": ["12:00-14:00", "19:00-22:00"],
+  "nota_conversion": "EE.UU. en horario estándar (desde 1-nov-2026): ET = CDMX+1, CT = CDMX, PT = CDMX-2. En horario de verano (mar-nov): ET = CDMX+2, CT = CDMX+1, PT = CDMX-1. España: CET = CDMX+7 (invierno), CEST = CDMX+8 (verano).",
+  "ventanas": [
+    {"id": "mediodia", "inicio": "12:00", "fin": "14:00", "plataformas": ["tiktok", "youtube_shorts"], "dias_preferentes": ["mar", "mie", "jue"],
+     "cubre": "Hora de comida en MX/CT (12-14); ET 13-15 (invierno); PT 10-12; España 19-21 CET (tarde/noche).",
+     "base": ["kapwing", "tokportal", "allmarket", "lenostube"]},
+    {"id": "tarde", "inicio": "16:00", "fin": "18:00", "plataformas": ["youtube_shorts", "tiktok"], "dias_preferentes": ["mar", "mie", "sab"],
+     "cubre": "Salida de escuela/trabajo MX; 4 p.m. local Shorts (Adobe); educación TikTok mié 4-6 p.m. (Hootsuite); Sprout 15-18 h. España ya es 23-01 (no cubre).",
+     "base": ["adobe_shorts", "hootsuite_edu", "sprout_via_m4e", "buffer_youtube"]},
+    {"id": "noche", "inicio": "19:30", "fin": "21:30", "plataformas": ["tiktok", "youtube_shorts"], "dias_preferentes": ["lun", "mar", "mie", "jue", "dom"],
+     "cubre": "Noche MX/Latam (19-23); CT 20:00-21:30 y ET 19-21 (TokPortal); 47% de divulgadores publican de noche. España: madrugada (no cubre).",
+     "base": ["revvisual_divulgadores", "tokportal", "allmarket", "hashmeta"]}
+  ],
+  "regla_variable": "Rotar la hora exacta dentro de la ventana (p.ej. 12:15, 13:00, 13:40) y alternar ventana principal por día; registrar resultados en metricas.db y ajustar semanalmente.",
+  "espana": "Solo la ventana mediodía (12-14 CDMX = 19-21 CET) llega a España en horario útil; no se prioriza salvo que Analytics muestre audiencia española relevante.",
+  "segmentos_sin_datos_publicos": [
+    "Ciencia/divulgación con métricas de rendimiento por hora (solo existe una encuesta de 36 divulgadores, sin datos de engagement)",
+    "Divulgación hispanohablante específicamente",
+    "YouTube Shorts por país hispano (México, Latam, España) con datos verificables",
+    "Audiencia hispana de EE.UU. (no hay estudios separados de la audiencia general de EE.UU.)"
+  ],
+  "ajuste": "Revisión semanal con YouTube Analytics ('Cuándo está conectada tu audiencia') y analíticas de TikTok (pestaña Seguidores, actividad por hora) cuando se activen.",
+  "fuentes": [
+    {"id": "revvisual_divulgadores", "url": "https://doi.org/10.62161/revvisual.v16.5247", "tz_original": "local del creador", "dice": "Encuesta a 36 divulgadores científicos en TikTok (VISUAL Review 2024): 52.8% prefiere publicar por la tarde (12:00-19:00) y 47.2% por la noche (20:00-24:00); mañana sin respuesta positiva."},
+    {"id": "hootsuite_edu", "url": "https://blog.hootsuite.com/social-media-education-benchmarks/", "tz_original": "hora local (118 países)", "dice": "Instituciones educativas en TikTok: mejor miércoles 4-6 p.m."},
+    {"id": "hashmeta", "url": "https://hashmeta.com/insights/best-time-post-tiktok", "tz_original": "EST", "dice": "Contenido educativo/tutoriales: mar-mié 2-4 p.m. y 8-10 p.m. EST; domingo 7-9 p.m. (metodología no detallada)."},
+    {"id": "kapwing", "url": "https://smallbiztrends.com/kapwing-study-best-times-to-post-on-tiktok/", "tz_original": "ET", "dice": "15,000 videos top (dic-2024): mejor general miércoles 12 p.m. ET; mañanas rinden mejor en casi todas las zonas; entretenimiento mié 10 a.m., libros jue 12 o 2 p.m."},
+    {"id": "tokportal", "url": "https://www.tokportal.com/post/the-best-time-to-post-on-tiktok-for-us-reach-in-2025-data-by-time-zone", "tz_original": "local de cada zona EE.UU.", "dice": "112,000 videos ene-jun 2025: ET 11:30-13:30 y 19-21; CT 12-14 y 20-21:30; MT 11:30-12:30 y 19:30-21; PT 12:30-14 y 20:30-22."},
+    {"id": "hootsuite_tiktok", "url": "https://blog.hootsuite.com/best-time-to-post-on-tiktok/", "tz_original": "hora local (118 países)", "dice": "1M posts: lun 5 p.m., mar 10-13, mié 16-18, jue 7-9, vie 16-18, sáb 10-19, dom 8-12."},
+    {"id": "later", "url": "https://later.com/blog/best-time-to-post-on-tiktok/", "tz_original": "PST", "dice": "Cuenta propia de Later: lun-vie 10 a.m. PST, jueves y viernes con más engagement."},
+    {"id": "adobe_tiktok", "url": "https://www.marketingprofs.com/charts/2025/52561/the-best-days-and-times-to-post-on-tiktok", "tz_original": "UTC", "dice": "Adobe Express, 21,000 TikToks: domingo más vistas; franjas 5:00, 8:00 y 19:00 UTC con más vistas (= 23:00 previo, 2:00 y 13:00 CDMX)."},
+    {"id": "sprout_via_m4e", "url": "https://marketing4ecommerce.mx/mejor-hora-para-publicar-en-tiktok/", "tz_original": "hora local (mapa global Sprout Social 2025)", "dice": "Mié-jue alto 8-18 h, muy alto 15-18 h (mié desde 14 h); mar 17-18 muy alto; educación mar-mié 16-17 h; domingo el peor."},
+    {"id": "tiendanube_mx", "url": "https://www.tiendanube.com/blog/cuales-son-las-mejores-horas-para-publicar-en-tiktok/", "tz_original": "hora de México", "dice": "México: lun 6,10,22; mar 2,4,9; mié 7,8,23; jue 9,12,19; vie 5,13,15; sáb 11,19,20; dom 7,8,16 (sin metodología publicada)."},
+    {"id": "allmarket", "url": "https://allmarket.ai/blog/mejor-hora-para-publicar-tik-tok/", "tz_original": "hora local de cada país", "dice": "México: picos 6-8, 13-15 y 19-23; Argentina 20-00; Colombia/Perú similar a México (orientativo, sin datos crudos)."},
+    {"id": "shopify_es", "url": "https://www.shopify.com/es/blog/mejor-hora-para-publicar-en-tiktok", "tz_original": "CET (España)", "dice": "España: lun 12 y 16; mar 4,9,10,15; mié 13,14; jue 5,15,18; vie 1,11,19,21; sáb 17,19; dom 1,2,13,22."},
+    {"id": "adobe_shorts", "url": "https://www.adobe.com/express/learn/blog/best-times-to-post-youtube-shorts", "tz_original": "hora local (no especifica)", "dice": "24,000 Shorts/280 creadores: martes más vistas y likes; 4 p.m. mejor hora; sábado 4 p.m. mejor combinación; fuera de pico (no 8-10 a.m.) rinde más."},
+    {"id": "adobe_shorts_encuesta", "url": "https://www.adobe.com/express/learn/blog/youtube-shorts-length-study", "tz_original": "local", "dice": "Encuesta a creadores: sábados más vistas; 6-8 p.m. tiende a rendir mejor en la semana."},
+    {"id": "buffer_youtube", "url": "https://buffer.com/resources/best-time-to-post-on-youtube/", "tz_original": "hora local", "dice": "1M videos (incluye Shorts): vie 3-4 p.m., jue 6 p.m., mar 2 p.m."},
+    {"id": "lenostube", "url": "https://www.lenostube.com/en/best-time-to-post-on-youtube-shorts/", "tz_original": "local", "dice": "Shorts: 12-2 p.m. suele rendir mejor (opinión, sin dataset)."}
+  ]
+}
