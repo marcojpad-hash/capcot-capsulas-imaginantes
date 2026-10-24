@@ -1,5 +1,7 @@
 # Estilos visuales — Datos y ociosidades
 
+El catálogo y la rotación visual no fijan el cupo diario. El límite vigente de producción está definido en `scripts/rotacion.py`: máximo 3 cápsulas por fecha (2 propias + 1 externa).
+
 **Regla (2026-10-24, Mj):** no hay rotación mecánica. El estilo se elige **según la temática** de cada cápsula y **nunca se repite el de la cápsula anterior**.
 
 ## Selector (`scripts/rotar_estilo.py`)
