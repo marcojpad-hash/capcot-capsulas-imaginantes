@@ -1,0 +1,82 @@
+[
+  {
+    "check": "duracion_60_95",
+    "ok": true,
+    "detalle": "87.51s"
+  },
+  {
+    "check": "resolucion_1080x1920",
+    "ok": true,
+    "detalle": ""
+  },
+  {
+    "check": "h264_aac",
+    "ok": true,
+    "detalle": ""
+  },
+  {
+    "check": "fps_30",
+    "ok": true,
+    "detalle": "30/1"
+  },
+  {
+    "check": "loudness_-14",
+    "ok": true,
+    "detalle": "-14.5 LUFS"
+  },
+  {
+    "check": "subtitulos_max_3_palabras",
+    "ok": true,
+    "detalle": "56 bloques"
+  },
+  {
+    "check": "fuentes_1_4",
+    "ok": true,
+    "detalle": "4 fuentes"
+  },
+  {
+    "check": "aviso_IA",
+    "ok": true,
+    "detalle": ""
+  },
+  {
+    "check": "arco_completo",
+    "ok": true,
+    "detalle": ""
+  },
+  {
+    "check": "sin_huecos_subtitulos",
+    "ok": true,
+    "detalle": "máx 0.35s"
+  },
+  {
+    "check": "cobertura_subtitulos_99",
+    "ok": true,
+    "detalle": "100.0% (160/160)"
+  },
+  {
+    "check": "voz_240_palabras",
+    "ok": true,
+    "detalle": "160 palabras"
+  },
+  {
+    "check": "estructura_valida",
+    "ok": true,
+    "detalle": ""
+  },
+  {
+    "check": "capa_mapa",
+    "ok": true,
+    "detalle": ""
+  },
+  {
+    "check": "capa_dato",
+    "ok": true,
+    "detalle": ""
+  },
+  {
+    "check": "licencias_json",
+    "ok": true,
+    "detalle": ""
+  }
+]
