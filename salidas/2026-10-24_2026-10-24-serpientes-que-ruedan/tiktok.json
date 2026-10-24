@@ -1,5 +1,5 @@
 {
- "estado": "pendiente_tiktok",
+ "estado": "publicado_tiktok",
  "mp4": "/workspace/capcot/salidas/2026-10-24_2026-10-24-serpientes-que-ruedan/capsula.mp4",
  "caption": "¿Una serpiente que rueda como llanta?\n\nLas serpientes enanas de los juncos (Pseudorabdion) ruedan hasta 4 veces más rápido de lo que reptan, y mantienen la cabeza estable mientras el cuerpo gira (Current Biology, 2026).\n\nFuentes en YouTube @datosyociosidades\n\n#datos #ciencia #difusión #difusióncientífica #ia #SerpientesQueRuedan",
  "hashtags": [
@@ -15,5 +15,7 @@
  "hora_sugerida_local": null,
  "yt_id": "ZrUtKs7Ty7U",
  "instruccion": "Agente principal: subir por navegador (agente de escritorio) con este caption; al terminar poner estado='publicado_tiktok' y url.",
- "yt_url": "https://youtube.com/shorts/ZrUtKs7Ty7U"
+ "yt_url": "https://youtube.com/shorts/ZrUtKs7Ty7U",
+ "tiktok_url": null,
+ "nota_tiktok": "Ya estaba publicado en TikTok Studio (aparece con hora 24-oct 4:42 PM, Everyone); no se volvió a subir. URL directa no disponible desde la lista de Studio."
 }

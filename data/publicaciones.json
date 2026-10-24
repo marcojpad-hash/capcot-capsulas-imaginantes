@@ -18,7 +18,8 @@
   "aprobado_por": "Mj (directo)",
   "nota": "1er intento invalidDescription por < > en DOI de Bjerknes; metadata.json parcheado a mano",
   "origen": "propia",
-  "tiktok": "pendiente_tiktok"
+  "tiktok": "publicado_tiktok",
+  "tiktok_url": "https://www.tiktok.com/@datosyociosidades/video/7700301619988040966"
  },
  {
   "fecha": "2026-10-24",
@@ -35,6 +36,6 @@
   "tema": "serpientes que ruedan",
   "aprobado_por": "Mj (directo, 'ya')",
   "origen": "propia",
-  "tiktok": "pendiente_tiktok"
+  "tiktok": "publicado_tiktok"
  }
 ]
