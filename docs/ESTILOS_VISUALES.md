@@ -205,20 +205,36 @@ Las referencias están en `referencias_estilo/`, que no se commitea (gitignored)
 - Referencia: referencias_estilo/9e2b90b5…png
 - Temas: crítica social, consumo, ecología, urbanismo
 
-### Garabato en cuaderno (`garabato_cuaderno`) — atractivo 3
-- Descripción: Dibujo a lápiz en hoja rayada con anotaciones.
-- Prompt base: `pencil doodle sketch on lined notebook paper, hand-drawn arrows and small notes, graphite shading, spiral binding edge, vertical 9:16, no text`
-- Referencia: referencias_estilo/18fd32b7…webp
-- Temas: ideas, inventos, procesos mentales, estudio
+### Garabato en cuaderno (`garabato_cuaderno`) — atractivo 4 (rehecho 2026-10-24: más boceto, menos estilizado)
+Boceto real a lápiz en hoja rayada: trazo suelto y corroído, líneas de construcción y repetidas, sombreado a rayas, manchas de grafito; la escena se lee clara.
 
-### Crayón en nube de pensamiento (`crayon_nube`) — atractivo 3
-- Descripción: Escena dibujada con crayón dentro de una nube de pensamiento.
-- Prompt base: `crayon drawing inside a cartoon thought bubble floating over a soft paper background, dreamy, hand-colored, vertical 9:16, no text`
-- Referencia: (identificado por el agente padre; no aislado en las capturas)
-- Temas: imaginación, sueños, psicología, hipótesis
+Prompt: `raw unfinished graphite pencil sketch on worn lined notebook paper, loose scratchy freehand strokes, many repeated overlapping searching lines, visible construction lines and guide shapes left in, rough parallel hatching and crosshatch shading, smudged graphite stains, eraser marks, coffee ring, uneven pressure, broken lines, imperfect proportions, NOT polished, NOT clean, subject still clearly readable with solid shading on key forms, vertical 9:16, no text`
+
+Temas: ideas, inventos, procesos mentales, estudio · Ref: referencias_estilo/66fca9e1…jpg (línea fina bartending) + búsqueda web 'sketch tattoo' (tattmagic.com, sortra.com) y 'watercolor tattoo' (thinktanktattoo.com, madrabbit.com), 2026-10-24
+
+### Crayón en nube de pensamiento (`crayon_nube`) — atractivo 4 (rehecho 2026-10-24: más boceto, menos estilizado)
+Boceto con crayón de cera: garabato tosco y corroído, líneas repetidas, relleno a rayas que se sale del contorno, manchas; nube de pensamiento dibujada a mano, escena legible.
+
+Prompt: `rough wax crayon sketch inside a wobbly hand-drawn thought bubble, scrappy childlike-but-expressive scribbles, repeated overlapping outline strokes, visible pencil construction lines underneath, coloring in loose diagonal hatching that goes outside the lines, waxy grain on cheap paper, smudges and smears, crumbled crayon flecks, NOT polished, NOT cute, scene clearly readable, vertical 9:16, no text`
+
+Temas: imaginación, sueños, psicología, hipótesis · Ref: referencias_estilo/66fca9e1…jpg (línea fina bartending) + búsqueda web 'sketch tattoo' (tattmagic.com, sortra.com) y 'watercolor tattoo' (thinktanktattoo.com, madrabbit.com), 2026-10-24
 
 ### Grafiti urbano colorido (`grafiti_colorido`) — atractivo 3
 - Descripción: Mural de spray saturado con personajes.
 - Prompt base: `colorful urban graffiti mural, saturated spray paint, playful cartoon characters, thick outlines, wildstyle accents, vertical 9:16, no text`
 - Referencia: referencias_estilo/695b8137…webp
 - Temas: ciudades, juventud, cultura popular, música
+
+### Tatuaje sketch (`tatuaje_sketch`) — atractivo 5 (nuevo 2026-10-24)
+Como un sketch tattoo: boceto de tinta negra con líneas guía y de construcción visibles, trazos repetidos que se afinan, sombreado scratchy y punteado, espacio negativo; parece arrancado del sketchbook pero el sujeto se lee completo.
+
+Prompt: `sketch style tattoo flash design, black ink on off-white paper, loose freehand linework with visible construction and guide lines, multiple overlapping tapering strokes, fine-line foundation, scratchy whip shading and crosshatching, dotwork stippling, ink smudges and unfinished edges, generous negative space, black and grey only, subject clearly readable, vertical 9:16, no text`
+
+Temas: oficios, historia, personajes, aventura, mar, viajes, retratos · Ref: referencias_estilo/66fca9e1…jpg (línea fina bartending) + búsqueda web 'sketch tattoo' (tattmagic.com, sortra.com) y 'watercolor tattoo' (thinktanktattoo.com, madrabbit.com), 2026-10-24
+
+### Tatuaje acuarela (`tatuaje_acuarela`) — atractivo 5 (nuevo 2026-10-24)
+Watercolor tattoo: línea sketch negra suelta con manchas de acuarela translúcidas que se salen del contorno, salpicaduras y goteos controlados; poco negro, color en capas, composición legible.
+
+Prompt: `watercolor tattoo design, loose black sketch linework with visible construction lines, soft translucent watercolor washes bleeding beyond the outlines, paint splashes, splatter and drips, layered blended pigments, soft edges, minimal black ink, white paper as negative space, controlled limited palette, subject clearly readable, vertical 9:16, no text`
+
+Temas: naturaleza, clima, océano, emociones, biología, animales, agua · Ref: referencias_estilo/66fca9e1…jpg (línea fina bartending) + búsqueda web 'sketch tattoo' (tattmagic.com, sortra.com) y 'watercolor tattoo' (thinktanktattoo.com, madrabbit.com), 2026-10-24

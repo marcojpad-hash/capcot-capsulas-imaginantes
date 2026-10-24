@@ -106,6 +106,6 @@ Pendiente de implementar: ingesta de tendencias, generador de guion LLM, adaptad
 
 
 ### Corrección 2026-10-24 10:46 (Mj)
-- Voz por defecto: es-MX-JorgeNeural **+14%** (antes +11%). El Niño v4 = referencia.
+- Voz por defecto: es-MX-JorgeNeural **+7%** (antes +11%). El Niño v4 = referencia.
 - **Cancelado** `guion_mj.md` / versión para la voz de Mj (otro proyecto): desconectado de `capsula_diaria.py`; el script se movió a `docs/obsoleto/guion_mj.py` con nota.
 - TikTok fijo: https://www.tiktok.com/@datosyociosidades (cuenta existente; CAPCOT_TIKTOK_HANDLE solo para sobreescribir).

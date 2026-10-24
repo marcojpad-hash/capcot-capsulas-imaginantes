@@ -15,7 +15,7 @@ Fuente de verdad: docs/PLAN_MAESTRO_AUTOMATICO.md. Este draft = procedimiento pr
 - 9:16 1080x1920, 30 fps, h264/aac, **75–95 s**, −14 LUFS, subtítulos abajo ≤3 palabras, ~190–230 palabras.
 - **Voz:** edge-tts es-MX-JorgeNeural, **rate +8 %** (+6/+10), pitch −2 Hz (default del pipeline).
 - **Pausas (regla):** narración casi continua. `voice.modo_pausas="continuo"` (default): la escena dura lo que su voz + 0.6 s;
-  pausas por puntuación 0.3–0.6 s; se recorta el silencio que edge-tts deja en cada frase. QA falla si un hueco entre
+  pausas ligeras por puntuación 0.25–0.35 s; se recorta el silencio que edge-tts deja en cada frase. QA falla si un hueco entre
   subtítulos supera 0.9 s. **Si falta duración, agregar información respaldada, nunca silencio.**
 - **Audio de fondo:** `audio.ambiente` = oceano | viento | oceano+viento | archivo; `audio.music_asset` =
   `sintetico:menor_calma` | archivo CC0 (documentar fuente/licencia en `music_license`). Camas a −38/−40 LUFS vs voz −16 LUFS
@@ -68,4 +68,4 @@ salidas/2026-10-24_fenomeno-el-nino/capsula_v2.mp4 (87.8 s, QA 11/11): storyboar
 
 
 **Corrección 2026-10-24 (Mj): no se crea cuenta nueva de TikTok; no se publica en TikTok desde el sistema. Cada descripción de YouTube enlaza al TikTok existente de Mj (`CAPCOT_TIKTOK_HANDLE`, handle pendiente). TikTok desactivado por defecto en publicar.py.**
-Paquete diario incluye resumen.json (guion_mj.md cancelado 2026-10-24: era de otro proyecto). TikTok fijo: https://www.tiktok.com/@datosyociosidades. Voz es-MX-JorgeNeural +14%. Receta: docs/RECETA_CAPSULA.md.
+Paquete diario incluye resumen.json (guion_mj.md cancelado 2026-10-24: era de otro proyecto). TikTok fijo: https://www.tiktok.com/@datosyociosidades. Voz es-MX-JorgeNeural +7%. Receta: docs/RECETA_CAPSULA.md.

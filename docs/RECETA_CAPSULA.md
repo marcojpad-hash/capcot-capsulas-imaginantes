@@ -13,7 +13,7 @@ Canal: **Datos y ociosidades** · @datosyociosidades · YouTube UCU2ZI-6pBJEr9aS
 
 ## 2. Duración y ritmo
 - Total **75–90 s** (QA acepta 60–95 s). **170–235 palabras** (máx. 240) con voz es-MX-JorgeNeural a **+11 %** (rango +10 a +12 %), pitch −2 Hz.
-- 7–9 escenas de 6–15 s. **Todas con voz**: pausas cortas (punto 0.45 s, pregunta 0.55 s, dos puntos 0.3 s), ningún hueco de subtítulos >0.9 s.
+- 7–9 escenas de 6–15 s. **Todas con voz**: pausa ligera entre frases (punto 0.32 s, pregunta/exclamación/… 0.35 s, dos puntos 0.25 s), ningún hueco de subtítulos >0.9 s.
 - Si sobra tiempo: **añade un dato con fuente**, nunca silencio ni escenas mudas.
 - Subtítulos de ≤3 palabras por bloque; texto en pantalla ≤6 palabras por escena.
 - Al final, cortinilla de fuentes de 6 s (ver §5).
@@ -25,7 +25,7 @@ Canal: **Datos y ociosidades** · @datosyociosidades · YouTube UCU2ZI-6pBJEr9aS
  "target_duration_seconds": 85,
  "trend_source": {"tipo": "google_trends_rss", "termino": "...", "fecha_consulta": "AAAA-MM-DD", "url": "..."},
  "estilo_id": "<clave de §4>", "estilo_visual": "<nombre del estilo>",
- "voice": {"engine": "edge-tts", "voice_id": "es-MX-JorgeNeural", "rate": "+14%", "pitch": "-2Hz", "pad_seconds": 0.35, "modo_pausas": "continuo"},
+ "voice": {"engine": "edge-tts", "voice_id": "es-MX-JorgeNeural", "rate": "+7%", "pitch": "-2Hz", "pad_seconds": 0.35, "modo_pausas": "continuo"},
  "sources": [{"id": "SRC-001", "cita_corta": "Autor (año). Título. Medio.", "url": "https://...", "doi": "opcional", "accessed": "AAAA-MM-DD", "supports": ["afirmación 1", "..."], "ref_display": "texto corto"}],
  "scenes": [{"id": "scene_001", "arc": "hook_medias_res", "duration_seconds": 9.0, "narration": "...", "on_screen_text": "...",
              "visual_description": "...", "image_prompt": "<prompt_base del estilo> + escena concreta, vertical 9:16, no text", "source_ids": ["SRC-001"],
@@ -95,7 +95,7 @@ TikTok: https://www.tiktok.com/@datosyociosidades
 Título YouTube = título + « #Shorts» (≤100 caracteres). Máximo 8 hashtags. Subida siempre `private` hasta que Mj apruebe.
 
 ## 7. (Eliminado) Versión para la voz de Mj
-Cancelada por Mj el 2026-10-24 (pertenece a otro proyecto). La cápsula usa solo la voz sintética es-MX-JorgeNeural a +14%.
+Cancelada por Mj el 2026-10-24 (pertenece a otro proyecto). La cápsula usa solo la voz sintética es-MX-JorgeNeural a +7%.
 
 ## 8. Ejemplo completo: «El mar que llegó en Navidad: El Niño» (86.0 s, QA OK, estilo linograbado)
 Narración:
@@ -129,7 +129,7 @@ JSON completo:
  "voice": {
   "engine": "edge-tts",
   "voice_id": "es-MX-JorgeNeural",
-  "rate": "+14%",
+  "rate": "+7%",
   "pitch": "-2Hz",
   "pad_seconds": 0.35,
   "modo_pausas": "continuo"

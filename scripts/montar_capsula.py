@@ -32,8 +32,8 @@ async def _tts_one(text, voice, out_mp3, rate, pitch):
 
 # Pausas naturales: edge-tts no acepta SSML <break>, así que se sintetiza frase por
 # frase y se insertan silencios según la puntuación final (".", "?", "…", ":").
-# Regla de pausas (feedback Mj 2026-10-24): narración casi continua, pausas 0.3–0.6 s.
-PAUSAS = {".": 0.45, "?": 0.55, "!": 0.5, "…": 0.6, ":": 0.3, ";": 0.3}
+# Regla de pausas (feedback Mj 2026-10-24 10:53): pausa ligera entre frases 0.25–0.35 s, sin huecos largos.
+PAUSAS = {".": 0.32, "?": 0.35, "!": 0.35, "…": 0.35, ":": 0.25, ";": 0.25}
 
 def _frases(text):
     import re
@@ -188,7 +188,7 @@ def main():
     clips, audio_parts, all_words, t = [], [], [], 0.0
     for i, sc in enumerate(sb["scenes"]):
         mp3 = os.path.join(tmp, f"{sc['id']}.mp3")
-        words = asyncio.run(tts(sc["narration"], v["voice_id"], mp3, v.get("rate", "+14%"), v.get("pitch", "-2Hz"))) if sc["narration"].strip() else []
+        words = asyncio.run(tts(sc["narration"], v["voice_id"], mp3, v.get("rate", "+7%"), v.get("pitch", "-2Hz"))) if sc["narration"].strip() else []
         adur = dur(mp3) if words else 0.0
         if continuo and words: sdur = adur + 0.25 + pad   # la escena dura lo que su voz: sin huecos
         elif continuo: sdur = float(sc.get("duration_seconds", 3))
