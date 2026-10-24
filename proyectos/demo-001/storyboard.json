@@ -6,26 +6,229 @@
   "aspect_ratio": "9:16",
   "target_duration_seconds": 80,
   "audience": "Público general curioso (TikTok / YouTube Shorts)",
-  "trend_source": {"tipo": "atemporal_backlog", "rss_geo": null, "termino": "Tunguska", "fecha_consulta": "2026-10-24", "puntaje": null},
-  "voice": {"engine": "edge-tts", "voice_id": "es-MX-JorgeNeural", "rate": "+4%", "pitch": "-2Hz", "pad_seconds": 0.5, "fallback": {"engine": "google-chirp3-hd", "voice_id": "es-US-Chirp3-HD-Charon"}},
+  "trend_source": {
+    "tipo": "atemporal_backlog",
+    "rss_geo": null,
+    "termino": "Tunguska",
+    "fecha_consulta": "2026-10-24",
+    "puntaje": null
+  },
+  "voice": {
+    "engine": "edge-tts",
+    "voice_id": "es-MX-DaliaNeural",
+    "rate": "+4%",
+    "pitch": "-1Hz",
+    "pad_seconds": 0.3,
+    "pausas": "Frase por frase con silencios por puntuación (montar_capsula.PAUSAS)",
+    "alternativas": [
+      "en-US-AndrewMultilingualNeural (habla español, más conversacional, acento neutro no mexicano)",
+      "piper es_MX-claude-high (local/offline, sin marcas de palabra)"
+    ],
+    "fallback": {
+      "engine": "piper",
+      "voice_id": "es_MX-claude-high"
+    }
+  },
   "sources": [
-    {"id": "SRC-001", "cita_corta": "Chyba, Thomas & Zahnle (1993). Nature 361, 40-44.", "doi": "10.1038/361040a0", "url": "https://doi.org/10.1038/361040a0", "accessed": "2026-10-24", "supports": ["Explosión atmosférica de un asteroide rocoso a varios km de altura, sin cráter"]},
-    {"id": "SRC-002", "cita_corta": "Jenniskens et al. (2019). Icarus 327, 4-18.", "doi": "10.1016/j.icarus.2019.01.001", "url": "https://doi.org/10.1016/j.icarus.2019.01.001", "accessed": "2026-10-24", "supports": ["Relatos de testigos: luz, calor y onda expansiva a decenas de km; ~2000 km² de bosque derribado"]},
-    {"id": "SRC-003", "cita_corta": "Gasperini, Alvisi, Biasini et al. (2007). Terra Nova 19, 245-251.", "doi": "10.1111/j.1365-3121.2007.00742.x", "url": "https://doi.org/10.1111/j.1365-3121.2007.00742.x", "accessed": "2026-10-24", "supports": ["Hipótesis (debatida) del lago Cheko como posible cráter"]}
+    {
+      "id": "SRC-001",
+      "cita_corta": "Chyba, Thomas & Zahnle (1993). Nature 361, 40-44.",
+      "doi": "10.1038/361040a0",
+      "url": "https://doi.org/10.1038/361040a0",
+      "accessed": "2026-10-24",
+      "supports": [
+        "Explosión atmosférica de un asteroide rocoso a varios km de altura, sin cráter"
+      ]
+    },
+    {
+      "id": "SRC-002",
+      "cita_corta": "Jenniskens et al. (2019). Icarus 327, 4-18.",
+      "doi": "10.1016/j.icarus.2019.01.001",
+      "url": "https://doi.org/10.1016/j.icarus.2019.01.001",
+      "accessed": "2026-10-24",
+      "supports": [
+        "Relatos de testigos en la factoría de Vanavara (~65 km): calor, luz y onda expansiva; ~2000 km² de bosque derribado; expedición de Kulik (1927) sin cráter"
+      ]
+    },
+    {
+      "id": "SRC-004",
+      "cita_corta": "NASA Ames (2019). Tunguska Workshop, NASA/TM-2019-220174.",
+      "url": "https://ntrs.nasa.gov/citations/20190002302",
+      "ref_display": "ntrs.nasa.gov/citations/20190002302",
+      "accessed": "2026-10-24",
+      "supports": [
+        "Explosión aérea (airburst) de 10-20 Mt a unos 10 km de altura; asteroide rocoso de ~50-80 m"
+      ]
+    },
+    {
+      "id": "SRC-003",
+      "cita_corta": "Gasperini, Alvisi, Biasini et al. (2007). Terra Nova 19, 245-251.",
+      "doi": "10.1111/j.1365-3121.2007.00742.x",
+      "url": "https://doi.org/10.1111/j.1365-3121.2007.00742.x",
+      "accessed": "2026-10-24",
+      "supports": [
+        "Hipótesis (debatida) del lago Cheko como posible cráter"
+      ]
+    }
   ],
   "scenes": [
-    {"id": "scene_001", "arc": "hook_medias_res", "duration_seconds": 6, "narration": "Siberia, 1908. Un bosque entero cae al suelo.", "on_screen_text": "Siberia, 1908", "visual_description": "Árboles derribados en abanico al amanecer", "image_prompt": "papercut diorama, flattened taiga forest radiating outward, dawn light, sepia with red accents, vertical 9:16", "source_ids": ["SRC-002"], "asset_filename": "frames/scene_001.png"},
-    {"id": "scene_002", "arc": "hook_medias_res", "duration_seconds": 5, "narration": "Y nadie vio caer nada.", "on_screen_text": "", "visual_description": "Cielo vacío sobre el bosque", "image_prompt": "papercut empty sky over fallen trees, silence", "source_ids": [], "asset_filename": "frames/scene_002.png"},
-    {"id": "scene_003", "arc": "desarrollo", "duration_seconds": 9, "narration": "A decenas de kilómetros, un hombre sintió que su camisa ardía. Una luz más brillante que el sol cruzó el cielo, y luego llegó el golpe.", "on_screen_text": "Una luz en el cielo", "visual_description": "Figura de papel en un porche, cegada por un destello", "image_prompt": "papercut man on wooden porch shielding eyes from blinding flash", "source_ids": ["SRC-002"], "asset_filename": "frames/scene_003.png"},
-    {"id": "scene_004", "arc": "desarrollo", "duration_seconds": 9, "narration": "Más de dos mil kilómetros cuadrados de árboles quedaron tendidos, todos apuntando hacia afuera, como si algo hubiera soplado desde un solo punto.", "on_screen_text": "~2000 km² derribados", "visual_description": "Mapa de papel con árboles en patrón radial", "image_prompt": "top-down papercut map, radial pattern of fallen trees", "source_ids": ["SRC-002"], "asset_filename": "frames/scene_004.png"},
-    {"id": "scene_005", "arc": "desarrollo", "duration_seconds": 8, "narration": "Pero cuando los científicos llegaron, años después, buscaron el cráter. Y no había cráter.", "on_screen_text": "¿Y el cráter?", "visual_description": "Expedición de papel ante un claro vacío", "image_prompt": "papercut expedition with lanterns facing empty clearing", "source_ids": [], "asset_filename": "frames/scene_005.png"},
-    {"id": "scene_006", "arc": "desarrollo", "duration_seconds": 9, "narration": "En el centro, extrañamente, algunos árboles seguían de pie, sin ramas, como postes quemados. La pista estaba arriba, no abajo.", "on_screen_text": "La pista estaba arriba", "visual_description": "Troncos de pie, desnudos, en el epicentro", "image_prompt": "papercut bare standing trunks at epicenter, looking up", "source_ids": [], "asset_filename": "frames/scene_006.png"},
-    {"id": "scene_007", "arc": "cierre_historia", "duration_seconds": 11, "narration": "Hoy la explicación más aceptada es que una roca espacial de decenas de metros estalló en el aire, a varios kilómetros de altura. Nunca tocó el suelo: lo que derribó el bosque fue el aire mismo.", "on_screen_text": "Estalló en el aire", "visual_description": "Bola de fuego de papel sobre el horizonte", "image_prompt": "papercut fireball bursting high above taiga horizon", "source_ids": ["SRC-001"], "asset_filename": "frames/scene_007.png"},
-    {"id": "scene_008", "arc": "cierre_historia", "duration_seconds": 7, "narration": "Algunos investigadores aún buscan un fragmento bajo un lago cercano. El debate sigue abierto.", "on_screen_text": "Lago Cheko: ¿cráter?", "visual_description": "Lago pequeño y quieto entre árboles", "image_prompt": "papercut small still lake among trees, mist", "source_ids": ["SRC-003"], "asset_filename": "frames/scene_008.png"},
-    {"id": "scene_009", "arc": "reflexion_o_pregunta", "duration_seconds": 10, "narration": "Tal vez las cosas más grandes que nos pasan no dejan huella donde las buscamos. ¿Cuántas veces habrá caído el cielo sin que nadie lo viera?", "on_screen_text": "", "visual_description": "Mismo bosque del gancho, ahora con brotes nuevos (loop)", "image_prompt": "papercut regrown forest at dusk mirroring opening shot", "source_ids": [], "asset_filename": "frames/scene_009.png"}
+    {
+      "id": "scene_001",
+      "arc": "hook_medias_res",
+      "duration_seconds": 5,
+      "narration": "Siberia, 1908. Una bola de fuego cruza el cielo al amanecer...",
+      "on_screen_text": "Siberia, 1908",
+      "visual_description": "Taiga siberiana al amanecer; un bólido con estela de fuego cruza el cielo",
+      "image_prompt": "Paper cut-out layered diorama, handmade craft paper with visible fibers and soft drop shadows between layers, cohesive palette of deep teal, pine green, ochre, burnt orange and cream, cinematic lighting, vertical 9:16 composition, no text, no letters. Siberian taiga at dawn, endless dark pine forest and a winding river, a blazing fireball with a long glowing orange tail streaking diagonally across a pale dawn sky",
+      "source_ids": [
+        "SRC-004"
+      ],
+      "asset_filename": "frames/scene_001.png"
+    },
+    {
+      "id": "scene_002",
+      "arc": "hook_medias_res",
+      "duration_seconds": 6,
+      "narration": "Es un bólido: una roca espacial que estalla en el aire, antes de tocar el suelo.",
+      "on_screen_text": "Un bólido",
+      "visual_description": "El bólido estalla en el aire: destello blanco-naranja sobre el bosque",
+      "image_prompt": "Paper cut-out layered diorama, handmade craft paper with visible fibers and soft drop shadows between layers, cohesive palette of deep teal, pine green, ochre, burnt orange and cream, cinematic lighting, vertical 9:16 composition, no text, no letters. a gigantic blinding white and orange explosion flash high in the sky above the taiga forest, concentric paper rings of light radiating outward, the forest below silhouetted",
+      "source_ids": [
+        "SRC-001",
+        "SRC-004"
+      ],
+      "asset_filename": "frames/scene_002.png"
+    },
+    {
+      "id": "scene_003",
+      "arc": "silencio",
+      "duration_seconds": 3,
+      "narration": "",
+      "on_screen_text": "",
+      "visual_description": "Onda expansiva silenciosa: los árboles se doblan, sin voz",
+      "image_prompt": "Paper cut-out layered diorama, handmade craft paper with visible fibers and soft drop shadows between layers, cohesive palette of deep teal, pine green, ochre, burnt orange and cream, cinematic lighting, vertical 9:16 composition, no text, no letters. a visible shockwave ring of pale paper sweeping across the pine forest, trees bending and snapping outward, dust clouds, eerie silence",
+      "source_ids": [],
+      "asset_filename": "frames/scene_003.png"
+    },
+    {
+      "id": "scene_004",
+      "arc": "desarrollo",
+      "duration_seconds": 7,
+      "narration": "En segundos, unos dos mil kilómetros cuadrados de bosque caen, todos apuntando hacia afuera.",
+      "on_screen_text": "~2000 km² derribados",
+      "visual_description": "Vista aérea: árboles derribados en patrón radial desde un centro",
+      "image_prompt": "Paper cut-out layered diorama, handmade craft paper with visible fibers and soft drop shadows between layers, cohesive palette of deep teal, pine green, ochre, burnt orange and cream, cinematic lighting, vertical 9:16 composition, no text, no letters. top-down aerial view of a forest where thousands of fallen tree trunks lie in a perfect radial starburst pattern pointing outward from a single central point",
+      "source_ids": [
+        "SRC-002"
+      ],
+      "asset_filename": "frames/scene_004.png"
+    },
+    {
+      "id": "scene_005",
+      "arc": "desarrollo",
+      "duration_seconds": 6,
+      "narration": "A sesenta kilómetros, en Vanavara, un hombre sintió que su camisa ardía.",
+      "on_screen_text": "Vanavara, ~60 km",
+      "visual_description": "Testigos en un puesto comercial de madera lejos del estallido; un hombre cae del porche",
+      "image_prompt": "Paper cut-out layered diorama, handmade craft paper with visible fibers and soft drop shadows between layers, cohesive palette of deep teal, pine green, ochre, burnt orange and cream, cinematic lighting, vertical 9:16 composition, no text, no letters. a small wooden log trading post in Siberia with a few villagers in early 1900s clothing, one man thrown from the porch shielding his face, a bright glow on the far horizon",
+      "source_ids": [
+        "SRC-002"
+      ],
+      "asset_filename": "frames/scene_005.png"
+    },
+    {
+      "id": "scene_006",
+      "arc": "desarrollo",
+      "duration_seconds": 6,
+      "narration": "¿Por qué nadie lo vio? Porque esa taiga era remota: casi sin habitantes.",
+      "on_screen_text": "Una zona remota",
+      "visual_description": "Taiga inmensa y vacía, una sola cabaña diminuta",
+      "image_prompt": "Paper cut-out layered diorama, handmade craft paper with visible fibers and soft drop shadows between layers, cohesive palette of deep teal, pine green, ochre, burnt orange and cream, cinematic lighting, vertical 9:16 composition, no text, no letters. an immense empty taiga landscape stretching to the horizon with no roads, a single tiny hut and a thin wisp of smoke, overwhelming sense of remoteness",
+      "source_ids": [],
+      "asset_filename": "frames/scene_006.png"
+    },
+    {
+      "id": "scene_007",
+      "arc": "desarrollo",
+      "duration_seconds": 8,
+      "narration": "Por eso el misterio duró. Leonid Kulik llegó hasta 1927, buscó un cráter... y no había cráter.",
+      "on_screen_text": "Expedición 1927",
+      "visual_description": "Expedición de 1927 con caballos y mochilas ante un claro sin cráter",
+      "image_prompt": "Paper cut-out layered diorama, handmade craft paper with visible fibers and soft drop shadows between layers, cohesive palette of deep teal, pine green, ochre, burnt orange and cream, cinematic lighting, vertical 9:16 composition, no text, no letters. a small 1920s scientific expedition of paper figures with horses, backpacks and a surveying tripod standing at the edge of a vast clearing of fallen trees, no crater in sight",
+      "source_ids": [
+        "SRC-002"
+      ],
+      "asset_filename": "frames/scene_007.png"
+    },
+    {
+      "id": "scene_008",
+      "arc": "desarrollo",
+      "duration_seconds": 6,
+      "narration": "En el centro, algunos árboles seguían de pie, sin ramas. La pista estaba arriba.",
+      "on_screen_text": "La pista estaba arriba",
+      "visual_description": "Troncos desnudos y quemados de pie en el epicentro, mirando al cielo",
+      "image_prompt": "Paper cut-out layered diorama, handmade craft paper with visible fibers and soft drop shadows between layers, cohesive palette of deep teal, pine green, ochre, burnt orange and cream, cinematic lighting, vertical 9:16 composition, no text, no letters. low angle view of bare charred standing tree trunks without branches at the epicenter, like burnt telegraph poles, pointing up to a pale sky",
+      "source_ids": [],
+      "asset_filename": "frames/scene_008.png"
+    },
+    {
+      "id": "scene_009",
+      "arc": "cierre_historia",
+      "duration_seconds": 8,
+      "narration": "Hoy tiene nombre: explosión aérea, o airburst. Entre diez y veinte megatones, a unos diez kilómetros de altura.",
+      "on_screen_text": "Explosión aérea: 10-20 Mt",
+      "visual_description": "Esquema de papel: estallido en lo alto y cono de onda hacia el bosque",
+      "image_prompt": "Paper cut-out layered diorama, handmade craft paper with visible fibers and soft drop shadows between layers, cohesive palette of deep teal, pine green, ochre, burnt orange and cream, cinematic lighting, vertical 9:16 composition, no text, no letters. side view cross-section diorama: a bright burst high in the layered sky, a cone of pressure waves descending onto the forest below, trees flattened beneath it",
+      "source_ids": [
+        "SRC-004"
+      ],
+      "asset_filename": "frames/scene_009.png"
+    },
+    {
+      "id": "scene_010",
+      "arc": "cierre_historia",
+      "duration_seconds": 6,
+      "narration": "Algunos aún buscan un fragmento bajo el lago Cheko. El debate sigue abierto.",
+      "on_screen_text": "Lago Cheko: ¿cráter?",
+      "visual_description": "Lago pequeño y quieto entre árboles, con niebla",
+      "image_prompt": "Paper cut-out layered diorama, handmade craft paper with visible fibers and soft drop shadows between layers, cohesive palette of deep teal, pine green, ochre, burnt orange and cream, cinematic lighting, vertical 9:16 composition, no text, no letters. a small still oval lake among regrowing pine trees, morning mist, a tiny rowing boat with a researcher",
+      "source_ids": [
+        "SRC-003"
+      ],
+      "asset_filename": "frames/scene_010.png"
+    },
+    {
+      "id": "scene_011",
+      "arc": "reflexion_o_pregunta",
+      "duration_seconds": 9,
+      "narration": "Tal vez las cosas más grandes que nos pasan no dejan huella donde las buscamos. ¿Cuántas veces habrá caído el cielo sin que nadie lo viera?",
+      "on_screen_text": "",
+      "visual_description": "El mismo bosque del inicio, ahora regenerado al atardecer (loop)",
+      "image_prompt": "Paper cut-out layered diorama, handmade craft paper with visible fibers and soft drop shadows between layers, cohesive palette of deep teal, pine green, ochre, burnt orange and cream, cinematic lighting, vertical 9:16 composition, no text, no letters. the same Siberian taiga and winding river as the opening, now regrown and peaceful at dusk, a few stars and one faint shooting star",
+      "source_ids": [],
+      "asset_filename": "frames/scene_011.png"
+    }
   ],
-  "cortinilla_fuentes": {"duration_seconds": 6, "titulo": "Fuentes", "aviso": "Imágenes: placeholders de demo. Voz sintética (edge-tts).", "bg_rgb": [18, 16, 14]},
-  "audio": {"music_asset": "", "music_license": "", "music_volume": 0.25},
-  "export": {"filename": "demo-001.mp4", "resolution": "1080x1920", "fps": 30, "subtitle_max_words": 3},
+  "cortinilla_fuentes": {
+    "duration_seconds": 6,
+    "titulo": "Fuentes",
+    "aviso": "Ilustraciones generadas por IA (estilo papel recortado). Voz sintética (edge-tts, es-MX-DaliaNeural).",
+    "bg_rgb": [
+      18,
+      16,
+      14
+    ]
+  },
+  "audio": {
+    "music_asset": "",
+    "music_license": "",
+    "music_volume": 0.25
+  },
+  "export": {
+    "filename": "demo-001_v2.mp4",
+    "resolution": "1080x1920",
+    "fps": 30,
+    "subtitle_max_words": 3
+  },
   "estado": "STORYBOARD_VALIDADO"
 }

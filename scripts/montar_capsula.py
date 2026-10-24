@@ -19,7 +19,7 @@ def dur(path):
     return float(subprocess.check_output(["ffprobe", "-v", "error", "-show_entries", "format=duration",
                                           "-of", "csv=p=0", path]).decode().strip())
 
-async def tts(text, voice, out_mp3, rate="+0%", pitch="+0Hz"):
+async def _tts_one(text, voice, out_mp3, rate, pitch):
     import edge_tts
     c = edge_tts.Communicate(text, voice, rate=rate, pitch=pitch, boundary="WordBoundary")
     words = []
@@ -28,6 +28,33 @@ async def tts(text, voice, out_mp3, rate="+0%", pitch="+0Hz"):
             if ch["type"] == "audio": f.write(ch["data"])
             elif ch["type"] == "WordBoundary":
                 words.append((ch["offset"] / 1e7, (ch["offset"] + ch["duration"]) / 1e7, ch["text"]))
+    return words
+
+# Pausas naturales: edge-tts no acepta SSML <break>, así que se sintetiza frase por
+# frase y se insertan silencios según la puntuación final (".", "?", "…", ":").
+PAUSAS = {".": 0.35, "?": 0.4, "!": 0.4, "…": 0.5, ":": 0.25, ";": 0.25}
+
+def _frases(text):
+    import re
+    partes = re.findall(r"[^.?!…:;]+(?:\.\.\.|[.?!…:;]+)?", text)
+    return [p.strip() for p in partes if p.strip()]
+
+async def tts(text, voice, out_mp3, rate="+0%", pitch="+0Hz"):
+    tmpd = tempfile.mkdtemp(prefix="tts_"); parts, words, t = [], [], 0.0
+    frases = _frases(text)
+    for k, fr in enumerate(frases):
+        mp = os.path.join(tmpd, f"{k}.mp3")
+        ws = await _tts_one(fr, voice, mp, rate, pitch)
+        d = dur(mp)
+        words += [(s + t, e + t, w) for s, e, w in ws]
+        wav = os.path.join(tmpd, f"{k}.wav")
+        fin = "…" if fr.endswith("...") else fr[-1]
+        gap = PAUSAS.get(fin, 0.15) if k < len(frases) - 1 else 0.0
+        run(["ffmpeg", "-y", "-i", mp, "-af", f"apad=pad_dur={gap}", "-ar", "48000", "-ac", "1", wav])
+        parts.append(wav); t += d + gap
+    lst = os.path.join(tmpd, "l.txt")
+    with open(lst, "w") as f: f.writelines(f"file '{p}'\n" for p in parts)
+    run(["ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", lst, "-c:a", "libmp3lame", "-q:a", "2", out_mp3])
     return words
 
 def ts(t):
