@@ -2,7 +2,7 @@
 """Monta una cápsula vertical 9:16 desde un storyboard con frames PNG locales.
 Uso: python3 montar_capsula.py proyectos/x/storyboard.json -o salida.mp4
 Requiere: ffmpeg/ffprobe, edge-tts (pip), Pillow.
-Pasos: TTS por escena (edge-tts, WordBoundary) -> SRT por palabras -> Ken Burns
+Pasos: TTS por escena (edge-tts, WordBoundary) -> SRT por palabras -> planos ~2.5 s con cortes secos
 (zoompan) por frame -> cortinilla de fuentes (Pillow) -> concat + subtítulos
 quemados + música opcional con ducking -> MP4 1080x1920 30 fps."""
 import argparse, asyncio, json, os, subprocess, sys, tempfile
@@ -148,35 +148,70 @@ def _ambiente(tipo, dst, total):
     run(["ffmpeg", "-y", "-f", "lavfi", "-i", src, "-t", f"{total:.2f}", "-af",
          f"{af},afade=t=in:d=2,afade=t=out:st={max(total-3,0):.2f}:d=3,loudnorm=I=-38:TP=-2", "-ac", "2", dst])
 
-def cama_sonora(aud, base, total, tmp):
-    """aud = sb['audio']: ambiente: oceano|viento|oceano+viento|<archivo>; music_asset: <archivo> | 'sintetico:menor_calma'.
-    Devuelve lista de wavs (cada uno ya normalizado ~-38/-40 LUFS: ≥22 dB bajo la voz a -16)."""
+def cama_sonora(aud, base, total, tmp, durs=None):
+    """Plantilla base (feedback Mj 10:55): ambiente POR ESCENA (campo scenes[].ambiente) + música con
+    pulso suave sintetizada (scripts/cama_sonora.py). Niveles: ambiente -30 LUFS, música -27 LUFS,
+    voz -16 LUFS; la cama se agacha con sidechain cuando habla la voz.
+    Compatibles: audio.ambiente global (oceano|viento|archivo) y music_asset=<archivo CC0>."""
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__))); import cama_sonora as cs
     out = []
-    amb = aud.get("ambiente", "")
-    for k, a in enumerate([x for x in amb.split("+") if x]):
-        dst = os.path.join(tmp, f"amb{k}.wav")
-        if a in ("oceano", "viento"): _ambiente(a, dst, total)
-        else: run(["ffmpeg", "-y", "-stream_loop", "-1", "-i", os.path.join(base, a), "-t", f"{total:.2f}",
-                   "-af", "loudnorm=I=-38:TP=-2", "-ac", "2", "-ar", "48000", dst])
-        out.append(dst)
-    m = aud.get("music_asset", "")
+    if durs:
+        dst = os.path.join(tmp, "amb.wav"); cs.guardar(cs.pista_ambiente(durs, total), dst)
+        n = os.path.join(tmp, "amb_n.wav")
+        run(["ffmpeg", "-y", "-i", dst, "-af", f"loudnorm=I={aud.get('ambiente_lufs', -30)}:TP=-3", "-ar", "48000", n]); out.append(n)
+    m = aud.get("music_asset", "sintetico:pulso")
     if m:
-        dst = os.path.join(tmp, "musica.wav")
-        if m.startswith("sintetico"): _pad(dst, total, m.split(":", 1)[1] if ":" in m else "menor_calma")
-        else: run(["ffmpeg", "-y", "-stream_loop", "-1", "-i", os.path.join(base, m), "-t", f"{total:.2f}",
-                   "-af", f"loudnorm=I={aud.get('music_lufs', -40)}:TP=-2", "-ac", "2", "-ar", "48000", dst])
-        out.append(dst)
+        dst = os.path.join(tmp, "musica_raw.wav")
+        if m.startswith("sintetico"): cs.guardar(cs.musica(total, int(aud.get("music_bpm", 92))), dst)
+        else: run(["ffmpeg", "-y", "-stream_loop", "-1", "-i", os.path.join(base, m), "-t", f"{total:.2f}", dst])
+        n = os.path.join(tmp, "musica.wav")
+        run(["ffmpeg", "-y", "-i", dst, "-af", f"loudnorm=I={aud.get('music_lufs', -27)}:TP=-3", "-ac", "2", "-ar", "48000", n]); out.append(n)
     return out
 
-def kenburns(png, seconds, out_mp4, idx):
-    frames = int(round(seconds * FPS))
-    zin = idx % 2 == 0
-    z = f"min(1+0.12*on/{frames},1.12)" if zin else f"max(1.12-0.12*on/{frames},1)"
-    vf = (f"scale={W*2}:{H*2}:force_original_aspect_ratio=increase,crop={W*2}:{H*2},"
-          f"zoompan=z='{z}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d={frames}:s={W}x{H}:fps={FPS},"
-          f"format=yuv420p")
-    run(["ffmpeg", "-y", "-loop", "1", "-i", png, "-vf", vf, "-frames:v", str(frames),
-         "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", out_mp4])
+# ---- Estructura visual (docs/ESTRUCTURA_VISUAL_TRENDS.md): planos de ~2.5 s con cortes secos ----
+# Cada escena se parte en planos; cada plano usa un movimiento distinto sobre el mismo frame
+# (zoom in, zoom out, paneo, punch-in) para que haya un cambio visual cada 2-3 s sin transiciones.
+MOVS = ["zin", "pan_d", "punch", "zout", "pan_i", "punch_b"]
+
+def texto_png(text, out_png, gancho=False):
+    img = Image.new("RGBA", (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(img)
+    f = ImageFont.truetype(FONT, 92 if gancho else 64); maxw = int(W * .78)
+    lines = wrap(d, text.upper() if gancho else text, f, maxw); lh = 108 if gancho else 78
+    y = int(H * (.15 if gancho else .12))  # zona segura superior
+    for ln in lines:
+        x = int(W * .08); tw = d.textlength(ln, font=f); bx = (x - 18, y - 10, x + tw + 18, y + lh - 8)
+        d.rounded_rectangle(bx, 14, fill=(0, 0, 0, 170) if not gancho else (240, 200, 120, 235))
+        d.text((x, y), ln, font=f, fill=(20, 18, 16) if gancho else (255, 255, 255)); y += lh + 6
+    img.save(out_png)
+
+def _plano(png, seconds, out_mp4, mov, overlay=None, ov_hasta=None):
+    fr = max(int(round(seconds * FPS)), 1)
+    c = "iw/2-(iw/zoom/2)"; m = "ih/2-(ih/zoom/2)"
+    z, x, y = {"zin": (f"1+0.10*on/{fr}", c, m), "zout": (f"1.10-0.10*on/{fr}", c, m),
+               "pan_d": ("1.15", f"(iw-iw/zoom)*on/{fr}", m), "pan_i": ("1.15", f"(iw-iw/zoom)*(1-on/{fr})", m),
+               "punch": (f"1.30+0.05*on/{fr}", c, "ih*0.38-(ih/zoom/2)"),
+               "punch_b": (f"1.30+0.05*on/{fr}", c, "ih*0.62-(ih/zoom/2)")}[mov]
+    base = (f"[0:v]scale={W*2}:{H*2}:force_original_aspect_ratio=increase,crop={W*2}:{H*2},"
+            f"zoompan=z='{z}':x='{x}':y='{y}':d={fr}:s={W}x{H}:fps={FPS}")
+    if overlay:
+        en = f":enable='lt(t,{ov_hasta:.2f})'" if ov_hasta else ""
+        fc = f"{base}[b];[b][1:v]overlay=0:0{en},format=yuv420p[o]"; ins = ["-loop", "1", "-i", overlay]
+    else: fc = f"{base},format=yuv420p[o]"; ins = []
+    run(["ffmpeg", "-y", "-loop", "1", "-i", png, *ins, "-filter_complex", fc, "-map", "[o]", "-frames:v", str(fr),
+         "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-r", str(FPS), out_mp4])
+
+def escena_video(png, seconds, out_mp4, idx, texto="", plano_s=2.5, gancho=False):
+    tmpd = tempfile.mkdtemp(prefix="pl_"); n = max(1, round(seconds / plano_s)); parts = []
+    ov = None
+    if texto:
+        ov = os.path.join(tmpd, "t.png"); texto_png(texto, ov, gancho)
+    for k in range(n):
+        d = seconds / n; mp = os.path.join(tmpd, f"{k}.mp4")
+        # el texto en pantalla vive en el primer plano de la escena (en el gancho, los 2 primeros)
+        con_txt = ov if (k == 0 or (gancho and k == 1)) else None
+        _plano(png, d, mp, MOVS[(idx * 2 + k) % len(MOVS)], con_txt); parts.append(mp)
+    lst = os.path.join(tmpd, "l.txt"); open(lst, "w").writelines(f"file '{p}'\n" for p in parts)
+    run(["ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", lst, "-c", "copy", out_mp4])
 
 def main():
     ap = argparse.ArgumentParser(); ap.add_argument("storyboard"); ap.add_argument("-o", "--out", required=True)
@@ -185,7 +220,7 @@ def main():
     v = sb["voice"]; tmp = tempfile.mkdtemp(prefix="capcot_")
     continuo = v.get("modo_pausas", "continuo") == "continuo"
     pad = float(v.get("pad_seconds", 0.35 if continuo else 0.6))
-    clips, audio_parts, all_words, t = [], [], [], 0.0
+    clips, audio_parts, all_words, t, durs = [], [], [], 0.0, []
     for i, sc in enumerate(sb["scenes"]):
         mp3 = os.path.join(tmp, f"{sc['id']}.mp3")
         words = asyncio.run(tts(sc["narration"], v["voice_id"], mp3, v.get("rate", "+7%"), v.get("pitch", "-2Hz"))) if sc["narration"].strip() else []
@@ -201,9 +236,11 @@ def main():
         run(["ffmpeg", "-y", *src, "-af", f"adelay=250,apad", "-t", f"{sdur:.3f}", "-ar", "48000", "-ac", "2", wav])
         audio_parts.append(wav)
         mp4 = os.path.join(tmp, f"{sc['id']}.mp4")
-        kenburns(os.path.join(base, sc["asset_filename"]), sdur, mp4, i); clips.append(mp4)
+        escena_video(os.path.join(base, sc["asset_filename"]), sdur, mp4, i, sc.get("on_screen_text", ""),
+                     float(sb.get("export", {}).get("plano_seconds", 2.5)), gancho=(i == 0)); clips.append(mp4)
+        durs.append((sc.get("ambiente") or sb.get("audio", {}).get("ambiente_defecto", "oceano"), sdur))
         print(f"{sc['id']}: voz {adur:.1f}s, escena {sdur:.1f}s"); t += sdur
-    cd = float(sb["cortinilla_fuentes"].get("duration_seconds", 6))
+    cd = float(sb["cortinilla_fuentes"].get("duration_seconds", 5))
     cpng = os.path.join(tmp, "cortinilla.png"); cortinilla(sb, cpng)
     cmp4 = os.path.join(tmp, "cortinilla.mp4")
     run(["ffmpeg", "-y", "-loop", "1", "-i", cpng, "-t", f"{cd}", "-r", str(FPS), "-vf", "format=yuv420p",
@@ -218,15 +255,16 @@ def main():
     srt = os.path.splitext(a.out)[0] + ".srt"
     open(srt, "w", encoding="utf-8").write(srt_from_words(all_words, sb["export"].get("subtitle_max_words", 3)))
     style = ("FontName=DejaVu Sans,FontSize=16,Bold=1,PrimaryColour=&H00FFFFFF,OutlineColour=&H00000000,"
-             "BorderStyle=1,Outline=3,Shadow=0,Alignment=2,MarginV=70")
+             "BorderStyle=1,Outline=3,Shadow=0,Alignment=2,MarginV=560")
     vf = f"subtitles={srt}:original_size={W}x{H}:force_style='{style}'"
-    camas = cama_sonora(sb.get("audio", {}), base, dur(acat), tmp)
+    durs.append(("silencio", cd))  # cortinilla: solo música
+    camas = cama_sonora(sb.get("audio", {}), base, dur(acat), tmp, durs)
     cmd = ["ffmpeg", "-y", "-i", vcat, "-i", acat]
     if camas:
         for c in camas: cmd += ["-i", c]
         n = len(camas); ins = "".join(f"[{k+2}:a]" for k in range(n))
         fc = (f"[1:a]loudnorm=I=-16:TP=-2,asplit=2[v][sc];{ins}amix=inputs={n}:normalize=0[bed];"
-              f"[bed][sc]sidechaincompress=threshold=0.02:ratio=6:attack=20:release=500:makeup=1[duck];"
+              f"[bed][sc]sidechaincompress=threshold=0.015:ratio=8:attack=15:release=350:makeup=1[duck];"
               f"[v][duck]amix=inputs=2:duration=first:normalize=0,loudnorm=I=-14:TP=-1.5[aout];[0:v]{vf}[vout]")
         cmd += ["-filter_complex", fc, "-map", "[vout]", "-map", "[aout]"]
     else:

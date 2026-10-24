@@ -69,14 +69,15 @@
    "arc": "hook_medias_res",
    "duration_seconds": 9.0,
    "narration": "Navidad, costa de Sudamérica. El agua que debería estar fría llega tibia. Cada tantos años, el mar se calienta justo por estas fechas.",
-   "on_screen_text": "Navidad: el mar, tibio",
+   "on_screen_text": "En Navidad, el mar se calienta",
    "visual_description": "ver prompt",
    "image_prompt": "linocut indigo/ocre (ver registro)",
    "source_ids": [
     "SRC-001"
    ],
    "asset_filename": "frames/scene_001.jpg",
-   "arc_imaginantes": "gancho"
+   "arc_imaginantes": "gancho",
+   "ambiente": "oceano"
   },
   {
    "id": "scene_002",
@@ -90,7 +91,8 @@
     "SRC-001"
    ],
    "asset_filename": "frames/scene_002.jpg",
-   "arc_imaginantes": "ancla"
+   "arc_imaginantes": "ancla",
+   "ambiente": "puerto"
   },
   {
    "id": "scene_003",
@@ -104,7 +106,8 @@
     "SRC-001"
    ],
    "asset_filename": "frames/scene_003.jpg",
-   "arc_imaginantes": "relato_beat1"
+   "arc_imaginantes": "relato_beat1",
+   "ambiente": "viento"
   },
   {
    "id": "scene_004",
@@ -118,7 +121,8 @@
     "SRC-001"
    ],
    "asset_filename": "frames/scene_004.jpg",
-   "arc_imaginantes": "relato_beat2"
+   "arc_imaginantes": "relato_beat2",
+   "ambiente": "oceano"
   },
   {
    "id": "scene_005",
@@ -130,7 +134,8 @@
    "image_prompt": "linocut indigo/ocre (ver registro)",
    "source_ids": [],
    "asset_filename": "frames/scene_005.jpg",
-   "arc_imaginantes": "relato_beat3"
+   "arc_imaginantes": "relato_beat3",
+   "ambiente": "oceano+viento"
   },
   {
    "id": "scene_006",
@@ -144,7 +149,8 @@
     "SRC-001"
    ],
    "asset_filename": "frames/scene_006.jpg",
-   "arc_imaginantes": "giro"
+   "arc_imaginantes": "giro",
+   "ambiente": "viento_fuerte"
   },
   {
    "id": "scene_007",
@@ -159,7 +165,8 @@
     "SRC-003"
    ],
    "asset_filename": "frames/scene_007.jpg",
-   "arc_imaginantes": "cierre"
+   "arc_imaginantes": "cierre",
+   "ambiente": "lluvia"
   },
   {
    "id": "scene_008",
@@ -173,11 +180,12 @@
     "SRC-001"
    ],
    "asset_filename": "frames/scene_008.jpg",
-   "arc_imaginantes": "reflexion_firma"
+   "arc_imaginantes": "reflexion_firma",
+   "ambiente": "oceano"
   }
  ],
  "cortinilla_fuentes": {
-  "duration_seconds": 6,
+  "duration_seconds": 5,
   "titulo": "Fuentes",
   "aviso": "Imágenes generadas con IA. Voz sintética (edge-tts). Ambiente y música sintetizados con ffmpeg.",
   "bg_rgb": [
@@ -188,16 +196,21 @@
   "firma": "Datos y ociosidades · @datosyociosidades"
  },
  "audio": {
-  "ambiente": "oceano+viento",
-  "music_asset": "sintetico:menor_calma",
-  "music_license": "Sintetizado con ffmpeg (aevalsrc/anoisesrc) por el pipeline: obra propia, sin derechos de terceros",
-  "ducking": "sidechaincompress thr 0.02 ratio 6; camas a -38/-40 LUFS vs voz -16 LUFS"
+  "ambiente_defecto": "oceano",
+  "ambiente_lufs": -30,
+  "music_asset": "sintetico:pulso",
+  "music_bpm": 92,
+  "music_lufs": -27,
+  "music_license": "Sintetizado con numpy por scripts/cama_sonora.py: obra propia del pipeline, sin muestras de terceros (equivalente CC0)",
+  "ambiente_license": "Sintetizado con numpy por scripts/cama_sonora.py (sin grabaciones de terceros)",
+  "ducking": "sidechaincompress thr 0.015 ratio 8 attack 15 ms release 350 ms; voz -16 LUFS, música -27, ambiente -30"
  },
  "export": {
   "filename": "capsula_v5.mp4",
   "resolution": "1080x1920",
   "fps": 30,
-  "subtitle_max_words": 3
+  "subtitle_max_words": 3,
+  "plano_seconds": 2.5
  },
  "estado": "STORYBOARD_VALIDADO",
  "version": "v2",

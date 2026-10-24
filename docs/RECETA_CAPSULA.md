@@ -14,6 +14,8 @@ Canal: **Datos y ociosidades** · @datosyociosidades · YouTube UCU2ZI-6pBJEr9aS
 ## 2. Duración y ritmo
 - Total **75–90 s** (QA acepta 60–95 s). **170–235 palabras** (máx. 240) con voz es-MX-JorgeNeural a **+11 %** (rango +10 a +12 %), pitch −2 Hz.
 - 7–9 escenas de 6–15 s. **Todas con voz**: pausa ligera entre frases (punto 0.32 s, pregunta/exclamación/… 0.35 s, dos puntos 0.25 s), ningún hueco de subtítulos >0.9 s.
+- **Estructura visual** (docs/ESTRUCTURA_VISUAL_TRENDS.md): planos de ~2.5 s con cortes secos y un movimiento distinto en cada plano. La escena 1 lleva tarjeta de gancho con `on_screen_text` desde el frame 0. Los subtítulos van en zona segura (MarginV 560). Cortinilla de 5 s.
+- **Audio**: cada escena lleva el campo `ambiente` (oceano|puerto|viento|viento_fuerte|lluvia|tormenta|mercado, combinables con +). La música es `sintetico:pulso` a 92 BPM. Niveles: voz -16, música -27, ambiente -30 LUFS, con ducking por sidechain. Todo es sintetizado (scripts/cama_sonora.py), sin terceros. Si se usa un archivo externo, solo Freesound CC0 verificado.
 - Si sobra tiempo: **añade un dato con fuente**, nunca silencio ni escenas mudas.
 - Subtítulos de ≤3 palabras por bloque; texto en pantalla ≤6 palabras por escena.
 - Al final, cortinilla de fuentes de 6 s (ver §5).

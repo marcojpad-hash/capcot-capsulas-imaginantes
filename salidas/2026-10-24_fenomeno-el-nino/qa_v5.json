@@ -2,7 +2,7 @@
  {
   "check": "duracion_60_95",
   "ok": true,
-  "detalle": "86.60s"
+  "detalle": "85.47s"
  },
  {
   "check": "resolucion_1080x1920",
@@ -22,7 +22,7 @@
  {
   "check": "loudness_-14",
   "ok": true,
-  "detalle": "-14.2 LUFS"
+  "detalle": "-14.4 LUFS"
  },
  {
   "check": "subs_max_3_palabras",
