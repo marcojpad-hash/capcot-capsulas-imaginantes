@@ -1,0 +1,14 @@
+{
+ "linograbado": {"nombre": "Linograbado bitono", "origen": "cápsula El Niño (2026-10-24), aprobado por Mj",
+  "prompt_base": "linocut print, two-tone indigo and ochre ink on cream paper, bold carved lines, visible gouge marks, high contrast, vertical 9:16 composition, no text",
+  "paleta": "índigo, ocre, crema", "ambiente_sugerido": "oceano+viento", "musica_sugerida": "sintetico:menor_calma"},
+ "papel_rasgado_capas": {"nombre": "Papel rasgado por capas (diorama)", "origen": "demo-001 v2 Tunguska",
+  "prompt_base": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text",
+  "paleta": "verde bosque, turquesa apagado, ocre, crema", "ambiente_sugerido": "viento", "musica_sugerida": "sintetico:menor_calma"},
+ "papel_recortado_popup": {"nombre": "Recortes de papel stop-motion / libro pop-up", "origen": "referencia_estilo_01 (El perro de papel, Mj)",
+  "prompt_base": "stop-motion paper cut-out scene inside an open pop-up book box, newsprint and sepia paper figures, red thread accents, cardboard background, warm dim lamp light, handmade feel, vertical 9:16, no text",
+  "paleta": "sepia, cartón, negro, acentos rojos", "ambiente_sugerido": "", "musica_sugerida": "caja de música (sintetizar o CC0)"},
+ "amigurumi": {"nombre": "Muñecos tejidos amigurumi en miniatura", "origen": "referencia_estilo_02 (Muñecos tejidos, Mj)",
+  "prompt_base": "miniature crochet amigurumi characters, macro photography, shallow depth of field, soft natural window light turning to warm firelight, handmade yarn texture, cozy diorama props, vertical 9:16, no text",
+  "paleta": "cálida → oscura con luz de fuego", "ambiente_sugerido": "", "musica_sugerida": "piano melancólico (CC0) o sintetico:menor_calma"}
+}

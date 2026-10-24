@@ -81,3 +81,17 @@ python3 scripts/validar_storyboard.py proyectos/<id>/storyboard.json --check-doi
 python3 scripts/montar_capsula.py proyectos/<id>/storyboard.json -o /workspace/imaginantes/<id>.mp4
 ```
 Pendiente de implementar: ingesta de tendencias, generador de guion LLM, adaptador de imagen, publicador YT/TikTok, colector de métricas, orquestador diario (cron/rutina).
+
+---
+## Addendum 2026-10-24 (Grok Bot, feedback de Mj sobre la cápsula El Niño)
+- **Canal:** Datos y ociosidades · @datosyociosidades · YouTube ID UCU2ZI-6pBJEr9aSFsF6bxLw. Sin números en nombres/handles.
+- **Formato:** 9:16 1080x1920, 30 fps, h264/aac, **75–95 s** (QA acepta 60–95), −14 LUFS, subtítulos abajo ≤3 palabras.
+- **Línea editorial:** periodismo informativo-narrativo; estructura Imaginantes gancho → ancla → relato (3 beats) → giro → cierre
+  → reflexión/pregunta + firma ("Esto fue Datos y ociosidades."); solo hechos respaldados por fuentes verificadas; dramatizaciones
+  solo visuales y marcadas.
+- **Voz:** edge-tts es-MX-JorgeNeural, rate +8 % (rango +6/+10), pitch −2 Hz. **Narración casi continua:** pausas 0.3–0.6 s entre
+  frases y entre bloques; nada de escenas mudas largas. Si falta duración, se agrega información respaldada, nunca silencio.
+- **Audio:** ambiente + música bajo la voz (camas a −38/−40 LUFS vs voz −16, sidechain ducking). Audio sintético o CC0 documentado.
+- **Cortinilla final (5–7 s):** "Fuentes" con citas reales (1–4), aviso IA, firma del canal.
+- **Publicación:** cada cápsula genera `metadata.json` (título, descripción con fuentes, hashtags, caption TikTok) que usa publicar.py.
+- **Estilos:** rotación automática según docs/ESTILOS_VISUALES.md.

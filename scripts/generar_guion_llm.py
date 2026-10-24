@@ -32,7 +32,7 @@ if __name__ == "__main__":
     for i, s in enumerate(g["scenes"]): s.setdefault("asset_filename", f"frames/scene_{i+1:03}.png")
     sb = {"project_id": a.id, "serie": "Imaginantes de la ciencia", "language": "es-MX", "aspect_ratio": "9:16",
           "target_duration_seconds": 80, "trend_source": {"tipo": "google_trends_rss", "rss_geo": "MX", "termino": a.tema},
-          "voice": {"engine": "edge-tts", "voice_id": "es-MX-JorgeNeural", "rate": "-8%", "pitch": "-2Hz", "pad_seconds": 0.8},
+          "voice": {"engine": "edge-tts", "voice_id": "es-MX-JorgeNeural", "rate": "+8%", "pitch": "-2Hz", "pad_seconds": 0.35},
           "cortinilla_fuentes": {"duration_seconds": 6, "titulo": "Fuentes", "aviso": "Imágenes generadas con IA. Voz sintética.", "bg_rgb": [18, 16, 14]},
           "audio": {"music_asset": "", "music_volume": 0.25},
           "export": {"filename": a.id + ".mp4", "resolution": "1080x1920", "fps": 30, "subtitle_max_words": 3}, **g}

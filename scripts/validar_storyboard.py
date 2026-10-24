@@ -26,7 +26,7 @@ def validar(path, doi=False):
     if sb["aspect_ratio"] != "9:16": errs.append("aspect_ratio debe ser 9:16")
     if sb["export"].get("resolution") != "1080x1920": errs.append("export.resolution debe ser 1080x1920")
     t = sb["target_duration_seconds"]
-    if not (60 <= t <= 90): errs.append(f"target_duration_seconds={t} fuera de 60-90")
+    if not (60 <= t <= 95): errs.append(f"target_duration_seconds={t} fuera de 60-95")
     src_ids = set()
     for s in sb["sources"]:
         for k in ["id", "cita_corta", "url"]:
@@ -57,8 +57,8 @@ def validar(path, doi=False):
     first = sb["scenes"][0].get("narration", "").split(".")[0] if sb["scenes"] else ""
     if len(first.split()) > 12: warns.append("primera frase del gancho >12 palabras")
     total += float(sb["cortinilla_fuentes"].get("duration_seconds", 0))
-    if not (60 <= total <= 90): errs.append(f"duración planificada {total:.1f}s fuera de 60-90")
-    if words > 210: warns.append(f"{words} palabras: riesgo de exceder 90 s")
+    if not (60 <= total <= 95): errs.append(f"duración planificada {total:.1f}s fuera de 60-95")
+    if words > 240: warns.append(f"{words} palabras: riesgo de exceder 95 s")
     return errs, warns
 
 if __name__ == "__main__":

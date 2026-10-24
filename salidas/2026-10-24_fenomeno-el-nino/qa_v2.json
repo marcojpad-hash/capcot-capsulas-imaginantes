@@ -1,0 +1,57 @@
+[
+ {
+  "check": "duracion_60_95",
+  "ok": true,
+  "detalle": "87.80s"
+ },
+ {
+  "check": "resolucion_1080x1920",
+  "ok": true,
+  "detalle": ""
+ },
+ {
+  "check": "h264_aac",
+  "ok": true,
+  "detalle": ""
+ },
+ {
+  "check": "fps_30",
+  "ok": true,
+  "detalle": "30/1"
+ },
+ {
+  "check": "loudness_-14",
+  "ok": true,
+  "detalle": "-14.2 LUFS"
+ },
+ {
+  "check": "subs_max_3_palabras",
+  "ok": true,
+  "detalle": "85 bloques"
+ },
+ {
+  "check": "fuentes_1_4",
+  "ok": true,
+  "detalle": ""
+ },
+ {
+  "check": "aviso_ia",
+  "ok": true,
+  "detalle": ""
+ },
+ {
+  "check": "arco",
+  "ok": true,
+  "detalle": ""
+ },
+ {
+  "check": "sin_huecos_voz_<=0.9s",
+  "ok": true,
+  "detalle": "hueco máx 0.55s"
+ },
+ {
+  "check": "voz_<=240_palabras",
+  "ok": true,
+  "detalle": "215 palabras"
+ }
+]

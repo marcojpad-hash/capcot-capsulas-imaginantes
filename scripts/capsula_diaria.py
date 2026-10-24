@@ -17,7 +17,7 @@ def guion_md(sb):
     return "\n".join(L)
 def fuentes_md(sb): return "# Fuentes (verificadas)\n\n" + "\n".join(f"- [{s['id']}] {s['cita_corta']} {s['url']} (consulta {s.get('accessed','')}) — respalda: {'; '.join(s.get('supports',[]))}" for s in sb["sources"])
 if __name__ == "__main__":
-    ap = argparse.ArgumentParser(); ap.add_argument("--storyboard"); ap.add_argument("--proveedor-img", default="manual"); ap.add_argument("--fecha", default=datetime.date.today().isoformat())
+    ap = argparse.ArgumentParser(); ap.add_argument("--storyboard"); ap.add_argument("--proveedor-img", default="manual"); ap.add_argument("--fecha", default=datetime.date.today().isoformat()); ap.add_argument("--estilo", default=None)
     a = ap.parse_args()
     if a.storyboard: sb = json.load(open(a.storyboard, encoding="utf-8")); src_dir = os.path.dirname(os.path.abspath(a.storyboard))
     else:
@@ -35,13 +35,19 @@ if __name__ == "__main__":
         for s in sb["scenes"]:
             f = os.path.join(src_dir, s["asset_filename"])
             if os.path.exists(f): shutil.copy(f, os.path.join(out, s["asset_filename"]))
+    sys.path.insert(0, S); import rotar_estilo
+    sb = rotar_estilo.aplicar_estilo(sb, a.estilo)  # rota estilos (scripts/estilos.json); respeta estilo_id si ya viene
+    sb.setdefault("canal", {"nombre": "Datos y ociosidades", "handle": "@datosyociosidades", "youtube_channel_id": "UCU2ZI-6pBJEr9aSFsF6bxLw"})
+    sb.setdefault("cortinilla_fuentes", {}).setdefault("firma", "Datos y ociosidades · @datosyociosidades")
     sbp = os.path.join(out, "storyboard.json"); json.dump(sb, open(sbp, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     sh("python3", f"{S}/generar_frames.py", sbp, "--proveedor", a.proveedor_img)
     sh("python3", f"{S}/validar_storyboard.py", sbp, "--check-doi")
     sh("python3", f"{S}/montar_capsula.py", sbp, "-o", os.path.join(out, "capsula.mp4"))
     qa = sh("python3", f"{S}/qa_capsula.py", os.path.join(out, "capsula.mp4"), sbp, ok=(0, 1))
     open(os.path.join(out, "guion.md"), "w").write(guion_md(sb)); open(os.path.join(out, "fuentes.md"), "w").write(fuentes_md(sb))
+    sh("python3", f"{S}/metadata.py", out)  # metadata.json: descripción + hashtags + canal
     sh("python3", f"{S}/publicar.py", out)  # dry-run
+    rotar_estilo.marcar(sb["estilo_id"], sb.get("project_id", out))
     sh("python3", f"{S}/metricas.py", "registrar", out)
     open(os.path.join(out, "LEEME.md"), "w").write(f"Paquete {os.path.basename(out)} · QA {'OK' if qa == 0 else 'CON FALLAS (ver qa.json)'} · NO publicado (publicar.py --ejecutar requiere aprobación y cuentas de Mj).\n")
     print("PAQUETE:", out, "QA_OK" if qa == 0 else "QA_FALLAS")

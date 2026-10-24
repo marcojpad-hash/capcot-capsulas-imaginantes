@@ -6,15 +6,20 @@ Publicar de verdad exige --ejecutar Y credenciales de Mj:
 Uso: python3 scripts/publicar.py salidas/<dir>/  [--plataforma yt|tt|ambas] [--ejecutar]"""
 import argparse, json, os, sys
 
-def metadatos(d):
-    sb = json.load(open(os.path.join(d, "storyboard.json"), encoding="utf-8"))
-    fuentes = "\n".join(f"- {s['cita_corta']} {s['url']}" for s in sb["sources"])
-    desc = (f"{sb['title']}\n\nFuentes:\n{fuentes}\n\nImágenes generadas con IA · voz sintética.\n#Shorts #ciencia #Imaginantes")
-    return sb, {"title": (sb["title"] + " #Shorts")[:100], "description": desc[:4900], "tags": ["ciencia", "divulgación", "shorts"]}
+CANAL_ID = "UCU2ZI-6pBJEr9aSFsF6bxLw"  # Datos y ociosidades (@datosyociosidades)
+
+def metadatos(d, sbn="storyboard.json"):
+    """Usa metadata.json de la cápsula (lo genera scripts/metadata.py si falta)."""
+    mp = os.path.join(d, "metadata.json")
+    if not os.path.exists(mp):
+        sys.path.insert(0, os.path.dirname(os.path.abspath(__file__))); import metadata; metadata.generar(d, sbn)
+    m = json.load(open(mp, encoding="utf-8"))
+    return m, {"title": m["titulo"], "description": m["descripcion"], "tags": m["tags"]}
 
 def youtube(mp4, md, ejecutar):
     body = {"snippet": {**md, "categoryId": "27", "defaultLanguage": "es"},
             "status": {"privacyStatus": "private", "selfDeclaredMadeForKids": False, "containsSyntheticMedia": True}}
+    print(f"[YT] canal destino {CANAL_ID} (verificar que el token sea de ese canal)")
     print("[YT] videos.insert part=snippet,status", json.dumps(body, ensure_ascii=False)[:600])
     if not ejecutar: return {"dry_run": True}
     tok = os.environ.get("CAPCOT_YT_TOKEN")
@@ -24,8 +29,10 @@ def youtube(mp4, md, ejecutar):
     return yt.videos().insert(part="snippet,status", body=body, media_body=MediaFileUpload(mp4, resumable=True)).execute()
 
 def tiktok(mp4, md, ejecutar):
+    md = {**md, "caption": META.get("tiktok_caption", "")}
     size = os.path.getsize(mp4)
     body = {"source_info": {"source": "FILE_UPLOAD", "video_size": size, "chunk_size": size, "total_chunk_count": 1}}
+    body["post_info"] = {"title": md.get("caption", "")}
     print("[TT] POST /v2/post/publish/inbox/video/init/ (borrador)", json.dumps(body))
     if not ejecutar: return {"dry_run": True}
     tok = os.environ.get("CAPCOT_TIKTOK_ACCESS_TOKEN")
@@ -39,9 +46,9 @@ def tiktok(mp4, md, ejecutar):
     return r
 
 if __name__ == "__main__":
-    ap = argparse.ArgumentParser(); ap.add_argument("dir"); ap.add_argument("--plataforma", default="ambas")
+    ap = argparse.ArgumentParser(); ap.add_argument("dir"); ap.add_argument("--plataforma", default="ambas"); ap.add_argument("--video", default="capsula.mp4"); ap.add_argument("--storyboard", default="storyboard.json")
     ap.add_argument("--ejecutar", action="store_true", help="publica de verdad (requiere aprobación de Mj)")
-    a = ap.parse_args(); sb, md = metadatos(a.dir); mp4 = os.path.join(a.dir, "capsula.mp4"); res = {}
+    a = ap.parse_args(); META, md = metadatos(a.dir, a.storyboard); mp4 = os.path.join(a.dir, a.video); res = {}
     if a.plataforma in ("yt", "ambas"): res["youtube"] = youtube(mp4, md, a.ejecutar)
     if a.plataforma in ("tt", "ambas"): res["tiktok"] = tiktok(mp4, md, a.ejecutar)
     json.dump({"metadatos": md, "resultado": res}, open(os.path.join(a.dir, "publicacion.json"), "w"), ensure_ascii=False, indent=1)

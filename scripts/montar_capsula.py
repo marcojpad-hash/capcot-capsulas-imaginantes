@@ -32,7 +32,8 @@ async def _tts_one(text, voice, out_mp3, rate, pitch):
 
 # Pausas naturales: edge-tts no acepta SSML <break>, así que se sintetiza frase por
 # frase y se insertan silencios según la puntuación final (".", "?", "…", ":").
-PAUSAS = {".": 0.35, "?": 0.4, "!": 0.4, "…": 0.5, ":": 0.25, ";": 0.25}
+# Regla de pausas (feedback Mj 2026-10-24): narración casi continua, pausas 0.3–0.6 s.
+PAUSAS = {".": 0.45, "?": 0.55, "!": 0.5, "…": 0.6, ":": 0.3, ";": 0.3}
 
 def _frases(text):
     import re
@@ -45,12 +46,16 @@ async def tts(text, voice, out_mp3, rate="+0%", pitch="+0Hz"):
     for k, fr in enumerate(frases):
         mp = os.path.join(tmpd, f"{k}.mp3")
         ws = await _tts_one(fr, voice, mp, rate, pitch)
-        d = dur(mp)
-        words += [(s + t, e + t, w) for s, e, w in ws]
+        # recortar el silencio que edge-tts deja al inicio/final de cada frase (si no, las pausas se duplican ~1 s)
+        a0 = max(ws[0][0] - 0.05, 0) if ws else 0.0
+        a1 = min(ws[-1][1] + 0.15, dur(mp)) if ws else dur(mp)
+        d = a1 - a0
+        words += [(s - a0 + t, e - a0 + t, w) for s, e, w in ws]
         wav = os.path.join(tmpd, f"{k}.wav")
         fin = "…" if fr.endswith("...") else fr[-1]
         gap = PAUSAS.get(fin, 0.15) if k < len(frases) - 1 else 0.0
-        run(["ffmpeg", "-y", "-i", mp, "-af", f"apad=pad_dur={gap}", "-ar", "48000", "-ac", "1", wav])
+        run(["ffmpeg", "-y", "-i", mp, "-af", f"atrim={a0:.3f}:{a1:.3f},asetpts=PTS-STARTPTS,afade=t=out:st={max(d-0.04,0):.3f}:d=0.04,apad=pad_dur={gap}",
+             "-ar", "48000", "-ac", "1", wav])
         parts.append(wav); t += d + gap
     lst = os.path.join(tmpd, "l.txt")
     with open(lst, "w") as f: f.writelines(f"file '{p}'\n" for p in parts)
@@ -108,8 +113,60 @@ def cortinilla(sb, out_png):
         y += 40
     for ln in wrap(d, c.get("aviso", ""), fn, maxw):
         d.text((x0, y + 20), ln, font=fn, fill=(170, 170, 170)); y += 46
+    if c.get("firma") or sb.get("canal"):  # end card del canal (sin números en nombres/handles)
+        f = c.get("firma") or f"{sb['canal']['nombre']} · {sb['canal']['handle']}"
+        y += 70
+        for ln in f.split(" · "):
+            d.text((x0, y), ln, font=ImageFont.truetype(FONT, 46), fill=(240, 200, 120)); y += 62
     if y > H * .80: print("AVISO: la cortinilla invade la zona segura inferior", file=sys.stderr)
     img.save(out_png)
+
+# ---- Cama sonora sintética (ambiente + música), generada con ffmpeg: sin derechos de terceros ----
+NOTAS = {"A2": 110.0, "C3": 130.81, "D3": 146.83, "E3": 164.81, "F2": 87.31, "F3": 174.61, "G2": 98.0,
+         "G3": 196.0, "A3": 220.0, "B3": 246.94, "C4": 261.63, "D4": 293.66, "E4": 329.63, "G4": 392.0}
+PROGRESIONES = {"menor_calma": [["A2", "E3", "A3", "C4"], ["F2", "C3", "A3", "C4"], ["C3", "G3", "C4", "E4"], ["G2", "D3", "G3", "B3"]]}
+
+def _pad(dst, total, prog="menor_calma", acorde_s=6.0):
+    tmpd = tempfile.mkdtemp(prefix="pad_"); parts = []
+    for k, ch in enumerate(PROGRESIONES[prog]):
+        expr = "+".join(f"{0.18/(1+j*0.5):.3f}*sin(2*PI*{NOTAS[n]}*t)*(1+0.3*sin(2*PI*{0.2+0.07*j:.2f}*t))"
+                        for j, n in enumerate(ch))
+        pp = os.path.join(tmpd, f"{k}.wav")
+        run(["ffmpeg", "-y", "-f", "lavfi", "-i", f"aevalsrc='{expr}':s=48000:d={acorde_s}",
+             "-af", f"afade=t=in:d=1.5,afade=t=out:st={acorde_s-1.5}:d=1.5", pp]); parts.append(pp)
+    lst = os.path.join(tmpd, "l.txt"); open(lst, "w").writelines(f"file '{p}'\n" for p in parts)
+    run(["ffmpeg", "-y", "-stream_loop", "-1", "-f", "concat", "-safe", "0", "-i", lst, "-t", f"{total:.2f}",
+         "-af", "lowpass=f=1800,aecho=0.8:0.7:120|260:0.35|0.25,afade=t=in:d=2,"
+                f"afade=t=out:st={max(total-3,0):.2f}:d=3,loudnorm=I=-40:TP=-2", "-ac", "2", "-ar", "48000", dst])
+
+def _ambiente(tipo, dst, total):
+    if tipo == "oceano":   # oleaje: ruido marrón con vaivén lento (~9 s por ola)
+        src, af = "anoisesrc=c=brown:r=48000:a=0.5", "lowpass=f=900,highpass=f=60,volume='0.45+0.55*pow(sin(PI*0.11*t),2)':eval=frame"
+    elif tipo == "viento":  # viento: ruido rosa en banda media con ráfagas lentas
+        src, af = "anoisesrc=c=pink:r=48000:a=0.5", "bandpass=f=600:w=500,volume='0.5+0.5*sin(2*PI*0.07*t)':eval=frame"
+    else: raise SystemExit(f"ambiente desconocido: {tipo}")
+    run(["ffmpeg", "-y", "-f", "lavfi", "-i", src, "-t", f"{total:.2f}", "-af",
+         f"{af},afade=t=in:d=2,afade=t=out:st={max(total-3,0):.2f}:d=3,loudnorm=I=-38:TP=-2", "-ac", "2", dst])
+
+def cama_sonora(aud, base, total, tmp):
+    """aud = sb['audio']: ambiente: oceano|viento|oceano+viento|<archivo>; music_asset: <archivo> | 'sintetico:menor_calma'.
+    Devuelve lista de wavs (cada uno ya normalizado ~-38/-40 LUFS: ≥22 dB bajo la voz a -16)."""
+    out = []
+    amb = aud.get("ambiente", "")
+    for k, a in enumerate([x for x in amb.split("+") if x]):
+        dst = os.path.join(tmp, f"amb{k}.wav")
+        if a in ("oceano", "viento"): _ambiente(a, dst, total)
+        else: run(["ffmpeg", "-y", "-stream_loop", "-1", "-i", os.path.join(base, a), "-t", f"{total:.2f}",
+                   "-af", "loudnorm=I=-38:TP=-2", "-ac", "2", "-ar", "48000", dst])
+        out.append(dst)
+    m = aud.get("music_asset", "")
+    if m:
+        dst = os.path.join(tmp, "musica.wav")
+        if m.startswith("sintetico"): _pad(dst, total, m.split(":", 1)[1] if ":" in m else "menor_calma")
+        else: run(["ffmpeg", "-y", "-stream_loop", "-1", "-i", os.path.join(base, m), "-t", f"{total:.2f}",
+                   "-af", f"loudnorm=I={aud.get('music_lufs', -40)}:TP=-2", "-ac", "2", "-ar", "48000", dst])
+        out.append(dst)
+    return out
 
 def kenburns(png, seconds, out_mp4, idx):
     frames = int(round(seconds * FPS))
@@ -126,13 +183,16 @@ def main():
     a = ap.parse_args()
     sb = json.load(open(a.storyboard, encoding="utf-8")); base = os.path.dirname(os.path.abspath(a.storyboard))
     v = sb["voice"]; tmp = tempfile.mkdtemp(prefix="capcot_")
-    pad = float(v.get("pad_seconds", 0.6))
+    continuo = v.get("modo_pausas", "continuo") == "continuo"
+    pad = float(v.get("pad_seconds", 0.35 if continuo else 0.6))
     clips, audio_parts, all_words, t = [], [], [], 0.0
     for i, sc in enumerate(sb["scenes"]):
         mp3 = os.path.join(tmp, f"{sc['id']}.mp3")
-        words = asyncio.run(tts(sc["narration"], v["voice_id"], mp3, v.get("rate", "+0%"), v.get("pitch", "+0Hz"))) if sc["narration"].strip() else []
+        words = asyncio.run(tts(sc["narration"], v["voice_id"], mp3, v.get("rate", "+8%"), v.get("pitch", "-2Hz"))) if sc["narration"].strip() else []
         adur = dur(mp3) if words else 0.0
-        sdur = max(float(sc["duration_seconds"]), adur + pad)
+        if continuo and words: sdur = adur + 0.25 + pad   # la escena dura lo que su voz: sin huecos
+        elif continuo: sdur = float(sc.get("duration_seconds", 3))
+        else: sdur = max(float(sc["duration_seconds"]), adur + pad)
         toks = sc["narration"].split()  # recuperar puntuación del guion (edge-tts la omite)
         if len(toks) == len(words): words = [(s, e, tok) for (s, e, _), tok in zip(words, toks)]
         all_words += [(s + t + 0.25, e + t + 0.25, w) for s, e, w in words]
@@ -160,20 +220,22 @@ def main():
     style = ("FontName=DejaVu Sans,FontSize=16,Bold=1,PrimaryColour=&H00FFFFFF,OutlineColour=&H00000000,"
              "BorderStyle=1,Outline=3,Shadow=0,Alignment=2,MarginV=70")
     vf = f"subtitles={srt}:original_size={W}x{H}:force_style='{style}'"
-    music = sb.get("audio", {}).get("music_asset")
+    camas = cama_sonora(sb.get("audio", {}), base, dur(acat), tmp)
     cmd = ["ffmpeg", "-y", "-i", vcat, "-i", acat]
-    if music:
-        cmd += ["-stream_loop", "-1", "-i", os.path.join(base, music),
-                "-filter_complex", f"[2:a]volume={sb['audio'].get('music_volume',0.25)}[m];"
-                f"[m][1:a]sidechaincompress=threshold=0.03:ratio=8[md];[1:a][md]amix=inputs=2:duration=first,"
-                f"loudnorm=I=-14:TP=-1.5[aout];[0:v]{vf}[vout]", "-map", "[vout]", "-map", "[aout]"]
+    if camas:
+        for c in camas: cmd += ["-i", c]
+        n = len(camas); ins = "".join(f"[{k+2}:a]" for k in range(n))
+        fc = (f"[1:a]loudnorm=I=-16:TP=-2,asplit=2[v][sc];{ins}amix=inputs={n}:normalize=0[bed];"
+              f"[bed][sc]sidechaincompress=threshold=0.02:ratio=6:attack=20:release=500:makeup=1[duck];"
+              f"[v][duck]amix=inputs=2:duration=first:normalize=0,loudnorm=I=-14:TP=-1.5[aout];[0:v]{vf}[vout]")
+        cmd += ["-filter_complex", fc, "-map", "[vout]", "-map", "[aout]"]
     else:
         cmd += ["-vf", vf, "-af", "loudnorm=I=-14:TP=-1.5", "-map", "0:v", "-map", "1:a"]
     cmd += ["-c:v", "libx264", "-preset", "medium", "-crf", "20", "-pix_fmt", "yuv420p", "-r", str(FPS),
             "-c:a", "aac", "-b:a", "160k", "-ar", "48000", "-shortest", "-movflags", "+faststart", a.out]
     run(cmd)
     d = dur(a.out); print(f"OK {a.out} duración {d:.2f}s")
-    if not 60 <= d <= 90: print("ERROR: duración fuera de 60-90 s", file=sys.stderr); sys.exit(2)
+    if not 60 <= d <= 95: print("ERROR: duración fuera de 60-95 s", file=sys.stderr); sys.exit(2)
 
 if __name__ == "__main__":
     main()
