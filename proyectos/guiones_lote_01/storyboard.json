@@ -1,0 +1,844 @@
+{
+  "lote": "guiones_lote_01",
+  "created": "2026-10-24",
+  "aspect_ratio": "9:16",
+  "trends_feed": "https://trends.google.com/trending/rss?geo=MX",
+  "projects": [
+    {
+      "project_id": "lote01-01-el-nino",
+      "title": "El niño que calienta el mar",
+      "language": "es-MX",
+      "target_duration_seconds": 78,
+      "aspect_ratio": "9:16",
+      "audience": "Público general en redes (TikTok/Shorts)",
+      "learning_objective": "",
+      "style": "Papel recortado en capas (pop-up), sepia con acentos rojo coral y azul Pacífico, manos visibles moviendo piezas",
+      "music_mood": "Caja de música con marimba lejana; tensión de cuerdas graves en el clímax; silencio antes de la pregunta final",
+      "sources": [
+        {
+          "id": "SRC-001",
+          "title": "McPhaden, M. J., Zebiak, S. E. & Glantz, M. H. (2006). ENSO as an Integrating Concept in Earth Science. Science.",
+          "url": "https://doi.org/10.1126/science.1132588",
+          "accessed": "2026-10-24",
+          "supports": []
+        },
+        {
+          "id": "SRC-002",
+          "title": "Cai, W., McPhaden, M. J., Grimm, A. M. et al. (2020). Climate impacts of the El Niño–Southern Oscillation on South America. Nature Reviews Earth & Environment.",
+          "url": "https://doi.org/10.1038/s43017-020-0040-3",
+          "accessed": "2026-10-24",
+          "supports": []
+        },
+        {
+          "id": "SRC-003",
+          "title": "NOAA Climate.gov — ENSO (El Niño/La Niña).",
+          "url": "https://www.climate.gov/enso",
+          "accessed": "2026-10-24",
+          "supports": []
+        }
+      ],
+      "scenes": [
+        {
+          "id": "scene_001",
+          "duration_seconds": 8,
+          "narration": "",
+          "on_screen_text": "Diciembre. Costa de Perú.",
+          "visual_description": "Pescador de papel recortado levanta una red vacía al amanecer; el mar de papel azul se tiñe de naranja; mano humana sostiene la orilla",
+          "generation_prompt": "Vertical 9:16 frame, Papel recortado en capas (pop-up), sepia con acentos rojo coral y azul Pacífico, manos visibles moviendo piezas. Pescador de papel recortado levanta una red vacía al amanecer; el mar de papel azul se tiñe de naranja; mano humana sostiene la orilla. Cinematic, shallow depth of field, no text.",
+          "source_ids": [
+            "SRC-001"
+          ],
+          "asset_filename": "scene_001.png",
+          "asset_type": "image",
+          "status": "planned",
+          "notes": ""
+        },
+        {
+          "id": "scene_002",
+          "duration_seconds": 10,
+          "narration": "Los pescadores le pusieron nombre de niño… porque llegaba cerca de Navidad.",
+          "on_screen_text": "Le llamaron «El Niño»",
+          "visual_description": "Un niño de papel, hecho de olas tibias, camina sobre el agua cargando un farol; peces huyen hacia el fondo",
+          "generation_prompt": "Vertical 9:16 frame, Papel recortado en capas (pop-up), sepia con acentos rojo coral y azul Pacífico, manos visibles moviendo piezas. Un niño de papel, hecho de olas tibias, camina sobre el agua cargando un farol; peces huyen hacia el fondo. Cinematic, shallow depth of field, no text.",
+          "source_ids": [
+            "SRC-001"
+          ],
+          "asset_filename": "scene_002.png",
+          "asset_type": "image",
+          "status": "planned",
+          "notes": ""
+        },
+        {
+          "id": "scene_003",
+          "duration_seconds": 10,
+          "narration": "",
+          "on_screen_text": "",
+          "visual_description": "Vista aérea pop-up del Pacífico: los vientos alisios, como hilos rojos, se aflojan y una mancha cálida viaja de oeste a este",
+          "generation_prompt": "Vertical 9:16 frame, Papel recortado en capas (pop-up), sepia con acentos rojo coral y azul Pacífico, manos visibles moviendo piezas. Vista aérea pop-up del Pacífico: los vientos alisios, como hilos rojos, se aflojan y una mancha cálida viaja de oeste a este. Cinematic, shallow depth of field, no text.",
+          "source_ids": [
+            "SRC-001"
+          ],
+          "asset_filename": "scene_003.png",
+          "asset_type": "image",
+          "status": "planned",
+          "notes": ""
+        },
+        {
+          "id": "scene_004",
+          "duration_seconds": 12,
+          "narration": "Basta que el viento se canse… para que medio planeta cambie de humor.",
+          "on_screen_text": "El viento se cansa",
+          "visual_description": "Los hilos de viento se deshilachan; el niño de agua crece y su sombra cubre un mapa de papel de América",
+          "generation_prompt": "Vertical 9:16 frame, Papel recortado en capas (pop-up), sepia con acentos rojo coral y azul Pacífico, manos visibles moviendo piezas. Los hilos de viento se deshilachan; el niño de agua crece y su sombra cubre un mapa de papel de América. Cinematic, shallow depth of field, no text.",
+          "source_ids": [
+            "SRC-003"
+          ],
+          "asset_filename": "scene_004.png",
+          "asset_type": "image",
+          "status": "planned",
+          "notes": ""
+        },
+        {
+          "id": "scene_005",
+          "duration_seconds": 12,
+          "narration": "",
+          "on_screen_text": "Lluvias aquí · sequías allá",
+          "visual_description": "Collage dividido: en un lado un río de papel se desborda sobre casas; en el otro, una milpa de papel se agrieta bajo un sol rojo",
+          "generation_prompt": "Vertical 9:16 frame, Papel recortado en capas (pop-up), sepia con acentos rojo coral y azul Pacífico, manos visibles moviendo piezas. Collage dividido: en un lado un río de papel se desborda sobre casas; en el otro, una milpa de papel se agrieta bajo un sol rojo. Cinematic, shallow depth of field, no text.",
+          "source_ids": [
+            "SRC-002"
+          ],
+          "asset_filename": "scene_005.png",
+          "asset_type": "image",
+          "status": "planned",
+          "notes": ""
+        },
+        {
+          "id": "scene_006",
+          "duration_seconds": 10,
+          "narration": "Un solo océano respira… y todos sentimos su aliento.",
+          "on_screen_text": "Un océano que respira",
+          "visual_description": "El niño de agua se sienta, cansado; las olas vuelven a enfriarse; llega una niña de papel azul oscuro: La Niña",
+          "generation_prompt": "Vertical 9:16 frame, Papel recortado en capas (pop-up), sepia con acentos rojo coral y azul Pacífico, manos visibles moviendo piezas. El niño de agua se sienta, cansado; las olas vuelven a enfriarse; llega una niña de papel azul oscuro: La Niña. Cinematic, shallow depth of field, no text.",
+          "source_ids": [
+            "SRC-001"
+          ],
+          "asset_filename": "scene_006.png",
+          "asset_type": "image",
+          "status": "planned",
+          "notes": ""
+        },
+        {
+          "id": "scene_007",
+          "duration_seconds": 10,
+          "narration": "El mar no tiene calendario… pero nosotros sí. ¿Y si el clima no fuera un lugar, sino una conversación que apenas empezamos a escuchar?",
+          "on_screen_text": "¿El clima es una conversación?",
+          "visual_description": "Plano final: el pescador mira el horizonte con la red llena; las manos se retiran del set de papel",
+          "generation_prompt": "Vertical 9:16 frame, Papel recortado en capas (pop-up), sepia con acentos rojo coral y azul Pacífico, manos visibles moviendo piezas. Plano final: el pescador mira el horizonte con la red llena; las manos se retiran del set de papel. Cinematic, shallow depth of field, no text.",
+          "source_ids": [
+            "SRC-001"
+          ],
+          "asset_filename": "scene_007.png",
+          "asset_type": "image",
+          "status": "planned",
+          "notes": ""
+        },
+        {
+          "id": "scene_008",
+          "duration_seconds": 6,
+          "narration": "",
+          "on_screen_text": "Fuentes: McPhaden, M · Cai, W · NOAA Climate",
+          "visual_description": "Cortinilla de fuentes (4–6 s, texto ≥36 px en zona segura) + «Imágenes generadas con IA; voz sintética»",
+          "generation_prompt": "Vertical 9:16 end card, Papel recortado en capas (pop-up), sepia con acentos rojo coral y azul Pacífico, manos visibles moviendo piezas, plain background for source text.",
+          "source_ids": [
+            "SRC-001",
+            "SRC-002",
+            "SRC-003"
+          ],
+          "asset_filename": "scene_008.png",
+          "asset_type": "image",
+          "status": "planned",
+          "notes": ""
+        }
+      ],
+      "audio": {
+        "voice_asset": "voz/narracion.wav",
+        "music_asset": "",
+        "music_license": ""
+      },
+      "export": {
+        "filename": "lote01-01-el-nino.mp4",
+        "resolution": "1080x1920",
+        "fps": 30,
+        "subtitle_file": "subtitulos/es-MX.srt"
+      }
+    },
+    {
+      "project_id": "lote01-02-petroleo",
+      "title": "La sopa de luz que se volvió petróleo",
+      "language": "es-MX",
+      "target_duration_seconds": 80,
+      "aspect_ratio": "9:16",
+      "audience": "Público general en redes (TikTok/Shorts)",
+      "learning_objective": "",
+      "style": "Grabado en madera (woodcut) en negro y ocre, con un único acento verde fluorescente para el plancton",
+      "music_mood": "Contrabajo y tambor lento, drones minerales; respiración de órgano en el final",
+      "sources": [
+        {
+          "id": "SRC-001",
+          "title": "Tissot, B. P. & Welte, D. H. (1984). Petroleum Formation and Occurrence (2.ª ed.). Springer.",
+          "url": "https://doi.org/10.1007/978-3-642-87813-8",
+          "accessed": "2026-10-24",
+          "supports": []
+        },
+        {
+          "id": "SRC-002",
+          "title": "U.S. Energy Information Administration — Oil and petroleum products explained.",
+          "url": "https://www.eia.gov/energyexplained/oil-and-petroleum-products/",
+          "accessed": "2026-10-24",
+          "supports": []
+        }
+      ],
+      "scenes": [
+        {
+          "id": "scene_001",
+          "duration_seconds": 8,
+          "narration": "",
+          "on_screen_text": "Hace 100 millones de años",
+          "visual_description": "Grabado: un mar antiguo lleno de diminutas algas verdes brillantes, como polvo de estrellas en el agua",
+          "generation_prompt": "Vertical 9:16 frame, Grabado en madera (woodcut) en negro y ocre, con un único acento verde fluorescente para el plancton. Grabado: un mar antiguo lleno de diminutas algas verdes brillantes, como polvo de estrellas en el agua. Cinematic, shallow depth of field, no text.",
+          "source_ids": [
+            "SRC-001"
+          ],
+          "asset_filename": "scene_001.png",
+          "asset_type": "image",
+          "status": "planned",
+          "notes": ""
+        },
+        {
+          "id": "scene_002",
+          "duration_seconds": 10,
+          "narration": "Todo empezó con una luz tan pequeña que cabía en una gota.",
+          "on_screen_text": "Una luz en una gota",
+          "visual_description": "Macro grabado: una célula de plancton bebe un rayo de sol; sus líneas talladas irradian verde",
+          "generation_prompt": "Vertical 9:16 frame, Grabado en madera (woodcut) en negro y ocre, con un único acento verde fluorescente para el plancton. Macro grabado: una célula de plancton bebe un rayo de sol; sus líneas talladas irradian verde. Cinematic, shallow depth of field, no text.",
+          "source_ids": [
+            "SRC-001"
+          ],
+          "asset_filename": "scene_002.png",
+          "asset_type": "image",
+          "status": "planned",
+          "notes": ""
+        },
+        {
+          "id": "scene_003",
+          "duration_seconds": 10,
+          "narration": "",
+          "on_screen_text": "",
+          "visual_description": "Las algas mueren y caen en lluvia lenta al fondo sin oxígeno; capas de lodo las cubren como cobijas",
+          "generation_prompt": "Vertical 9:16 frame, Grabado en madera (woodcut) en negro y ocre, con un único acento verde fluorescente para el plancton. Las algas mueren y caen en lluvia lenta al fondo sin oxígeno; capas de lodo las cubren como cobijas. Cinematic, shallow depth of field, no text.",
+          "source_ids": [
+            "SRC-001"
+          ],
+          "asset_filename": "scene_003.png",
+          "asset_type": "image",
+          "status": "planned",
+          "notes": ""
+        },
+        {
+          "id": "scene_004",
+          "duration_seconds": 12,
+          "narration": "El fondo del mar las guardó… como quien guarda una carta sin abrir.",
+          "on_screen_text": "Una carta sin abrir",
+          "visual_description": "Corte geológico tallado: capas de roca se apilan; presión y calor representados como manos de piedra que aprietan",
+          "generation_prompt": "Vertical 9:16 frame, Grabado en madera (woodcut) en negro y ocre, con un único acento verde fluorescente para el plancton. Corte geológico tallado: capas de roca se apilan; presión y calor representados como manos de piedra que aprietan. Cinematic, shallow depth of field, no text.",
+          "source_ids": [
+            "SRC-001"
+          ],
+          "asset_filename": "scene_004.png",
+          "asset_type": "image",
+          "status": "planned",
+          "notes": ""
+        },
+        {
+          "id": "scene_005",
+          "duration_seconds": 12,
+          "narration": "",
+          "on_screen_text": "Calor + presión + millones de años",
+          "visual_description": "El lodo se oscurece hasta volverse gota negra brillante; la gota sube por poros de roca como un viajero clandestino",
+          "generation_prompt": "Vertical 9:16 frame, Grabado en madera (woodcut) en negro y ocre, con un único acento verde fluorescente para el plancton. El lodo se oscurece hasta volverse gota negra brillante; la gota sube por poros de roca como un viajero clandestino. Cinematic, shallow depth of field, no text.",
+          "source_ids": [
+            "SRC-002"
+          ],
+          "asset_filename": "scene_005.png",
+          "asset_type": "image",
+          "status": "planned",
+          "notes": ""
+        },
+        {
+          "id": "scene_006",
+          "duration_seconds": 12,
+          "narration": "Hoy esa carta la quemamos en segundos. El sol viejo vuelve a ser fuego… y humo.",
+          "on_screen_text": "Sol antiguo → fuego",
+          "visual_description": "Una refinería grabada en madera; dentro de la llama aparece, tenue, la silueta de la alga verde",
+          "generation_prompt": "Vertical 9:16 frame, Grabado en madera (woodcut) en negro y ocre, con un único acento verde fluorescente para el plancton. Una refinería grabada en madera; dentro de la llama aparece, tenue, la silueta de la alga verde. Cinematic, shallow depth of field, no text.",
+          "source_ids": [
+            "SRC-002"
+          ],
+          "asset_filename": "scene_006.png",
+          "asset_type": "image",
+          "status": "planned",
+          "notes": ""
+        },
+        {
+          "id": "scene_007",
+          "duration_seconds": 10,
+          "narration": "Cada gota fue una vida que miró al sol. ¿Qué hacemos con una herencia que tardó cien millones de años en escribirse?",
+          "on_screen_text": "¿Qué hacemos con la herencia?",
+          "visual_description": "Una mano sostiene una gota negra que refleja un mar verde antiguo",
+          "generation_prompt": "Vertical 9:16 frame, Grabado en madera (woodcut) en negro y ocre, con un único acento verde fluorescente para el plancton. Una mano sostiene una gota negra que refleja un mar verde antiguo. Cinematic, shallow depth of field, no text.",
+          "source_ids": [
+            "SRC-001"
+          ],
+          "asset_filename": "scene_007.png",
+          "asset_type": "image",
+          "status": "planned",
+          "notes": ""
+        },
+        {
+          "id": "scene_008",
+          "duration_seconds": 6,
+          "narration": "",
+          "on_screen_text": "Fuentes: Tissot, B · U",
+          "visual_description": "Cortinilla de fuentes (4–6 s, texto ≥36 px en zona segura) + «Imágenes generadas con IA; voz sintética»",
+          "generation_prompt": "Vertical 9:16 end card, Grabado en madera (woodcut) en negro y ocre, con un único acento verde fluorescente para el plancton, plain background for source text.",
+          "source_ids": [
+            "SRC-001",
+            "SRC-002"
+          ],
+          "asset_filename": "scene_008.png",
+          "asset_type": "image",
+          "status": "planned",
+          "notes": ""
+        }
+      ],
+      "audio": {
+        "voice_asset": "voz/narracion.wav",
+        "music_asset": "",
+        "music_license": ""
+      },
+      "export": {
+        "filename": "lote01-02-petroleo.mp4",
+        "resolution": "1080x1920",
+        "fps": 30,
+        "subtitle_file": "subtitulos/es-MX.srt"
+      }
+    },
+    {
+      "project_id": "lote01-03-balon-curva",
+      "title": "El balón que desobedeció al aire",
+      "language": "es-MX",
+      "target_duration_seconds": 78,
+      "aspect_ratio": "9:16",
+      "audience": "Público general en redes (TikTok/Shorts)",
+      "learning_objective": "",
+      "style": "Claymation (plastilina) con texturas de huellas dactilares, estadio en miniatura, luz de reflector",
+      "music_mood": "Percusión de estadio contenida, cuerdas pizzicato que aceleran; reverberación y eco de multitud al cierre",
+      "sources": [
+        {
+          "id": "SRC-001",
+          "title": "Dupeux, G., Le Goff, A., Quéré, D. & Clanet, C. (2010). The spinning ball spiral. New Journal of Physics, 12, 093004.",
+          "url": "https://doi.org/10.1088/1367-2630/12/9/093004",
+          "accessed": "2026-10-24",
+          "supports": []
+        },
+        {
+          "id": "SRC-002",
+          "title": "Kray, T., Franke, J. & Frank, W. (2014). Magnus effect on a rotating soccer ball at high Reynolds numbers. J. Wind Eng. Ind. Aerodyn.",
+          "url": "https://doi.org/10.1016/j.jweia.2013.10.010",
+          "accessed": "2026-10-24",
+          "supports": []
+        }
+      ],
+      "scenes": [
+        {
+          "id": "scene_001",
+          "duration_seconds": 8,
+          "narration": "",
+          "on_screen_text": "Tiro libre. 35 metros.",
+          "visual_description": "Muñeco de plastilina con dorsal frente a barrera de muñecos; balón de plastilina en el pasto; silencio de estadio",
+          "generation_prompt": "Vertical 9:16 frame, Claymation (plastilina) con texturas de huellas dactilares, estadio en miniatura, luz de reflector. Muñeco de plastilina con dorsal frente a barrera de muñecos; balón de plastilina en el pasto; silencio de estadio. Cinematic, shallow depth of field, no text.",
+          "source_ids": [
+            "SRC-001"
+          ],
+          "asset_filename": "scene_001.png",
+          "asset_type": "image",
+          "status": "planned",
+          "notes": ""
+        },
+        {
+          "id": "scene_002",
+          "duration_seconds": 8,
+          "narration": "",
+          "on_screen_text": "",
+          "visual_description": "El pie golpea de lado; el balón sale girando, ligeramente hacia afuera; el portero de plastilina ni se mueve",
+          "generation_prompt": "Vertical 9:16 frame, Claymation (plastilina) con texturas de huellas dactilares, estadio en miniatura, luz de reflector. El pie golpea de lado; el balón sale girando, ligeramente hacia afuera; el portero de plastilina ni se mueve. Cinematic, shallow depth of field, no text.",
+          "source_ids": [
+            "SRC-001"
+          ],
+          "asset_filename": "scene_002.png",
+          "asset_type": "image",
+          "status": "planned",
+          "notes": ""
+        },
+        {
+          "id": "scene_003",
+          "duration_seconds": 12,
+          "narration": "El balón gira… y el aire, celoso, lo empuja hacia un lado.",
+          "on_screen_text": "El aire empuja",
+          "visual_description": "Cámara lenta: hilos de aire de plastilina blanca se enredan en un lado del balón y se aceleran en el otro",
+          "generation_prompt": "Vertical 9:16 frame, Claymation (plastilina) con texturas de huellas dactilares, estadio en miniatura, luz de reflector. Cámara lenta: hilos de aire de plastilina blanca se enredan en un lado del balón y se aceleran en el otro. Cinematic, shallow depth of field, no text.",
+          "source_ids": [
+            "SRC-002"
+          ],
+          "asset_filename": "scene_003.png",
+          "asset_type": "image",
+          "status": "planned",
+          "notes": ""
+        },
+        {
+          "id": "scene_004",
+          "duration_seconds": 12,
+          "narration": "Lo que parecía un error se dobla como una pregunta.",
+          "on_screen_text": "Efecto Magnus",
+          "visual_description": "La trayectoria curva dibujada con una tira de plastilina; el balón regresa hacia la portería",
+          "generation_prompt": "Vertical 9:16 frame, Claymation (plastilina) con texturas de huellas dactilares, estadio en miniatura, luz de reflector. La trayectoria curva dibujada con una tira de plastilina; el balón regresa hacia la portería. Cinematic, shallow depth of field, no text.",
+          "source_ids": [
+            "SRC-002"
+          ],
+          "asset_filename": "scene_004.png",
+          "asset_type": "image",
+          "status": "planned",
+          "notes": ""
+        },
+        {
+          "id": "scene_005",
+          "duration_seconds": 12,
+          "narration": "Si el tiro fuera más largo, la curva no terminaría nunca: sería una espiral.",
+          "on_screen_text": "Una espiral",
+          "visual_description": "Vista cenital: la tira de plastilina se enrolla en espiral sobre el campo, como un caracol",
+          "generation_prompt": "Vertical 9:16 frame, Claymation (plastilina) con texturas de huellas dactilares, estadio en miniatura, luz de reflector. Vista cenital: la tira de plastilina se enrolla en espiral sobre el campo, como un caracol. Cinematic, shallow depth of field, no text.",
+          "source_ids": [
+            "SRC-001"
+          ],
+          "asset_filename": "scene_005.png",
+          "asset_type": "image",
+          "status": "planned",
+          "notes": ""
+        },
+        {
+          "id": "scene_006",
+          "duration_seconds": 10,
+          "narration": "",
+          "on_screen_text": "¡GOL!",
+          "visual_description": "El balón entra al ángulo; los muñecos de plastilina en la tribuna se deforman de alegría",
+          "generation_prompt": "Vertical 9:16 frame, Claymation (plastilina) con texturas de huellas dactilares, estadio en miniatura, luz de reflector. El balón entra al ángulo; los muñecos de plastilina en la tribuna se deforman de alegría. Cinematic, shallow depth of field, no text.",
+          "source_ids": [
+            "SRC-001"
+          ],
+          "asset_filename": "scene_006.png",
+          "asset_type": "image",
+          "status": "planned",
+          "notes": ""
+        },
+        {
+          "id": "scene_007",
+          "duration_seconds": 10,
+          "narration": "El balón no sabe física, y aun así la obedece mejor que nadie. ¿Cuánto de lo que llamamos talento es el mundo dejándose leer?",
+          "on_screen_text": "¿Talento o lectura del mundo?",
+          "visual_description": "El jugador mira su pie de plastilina; aparece la huella dactilar del animador",
+          "generation_prompt": "Vertical 9:16 frame, Claymation (plastilina) con texturas de huellas dactilares, estadio en miniatura, luz de reflector. El jugador mira su pie de plastilina; aparece la huella dactilar del animador. Cinematic, shallow depth of field, no text.",
+          "source_ids": [
+            "SRC-001"
+          ],
+          "asset_filename": "scene_007.png",
+          "asset_type": "image",
+          "status": "planned",
+          "notes": ""
+        },
+        {
+          "id": "scene_008",
+          "duration_seconds": 6,
+          "narration": "",
+          "on_screen_text": "Fuentes: Dupeux, G · Kray, T",
+          "visual_description": "Cortinilla de fuentes (4–6 s, texto ≥36 px en zona segura) + «Imágenes generadas con IA; voz sintética»",
+          "generation_prompt": "Vertical 9:16 end card, Claymation (plastilina) con texturas de huellas dactilares, estadio en miniatura, luz de reflector, plain background for source text.",
+          "source_ids": [
+            "SRC-001",
+            "SRC-002"
+          ],
+          "asset_filename": "scene_008.png",
+          "asset_type": "image",
+          "status": "planned",
+          "notes": ""
+        }
+      ],
+      "audio": {
+        "voice_asset": "voz/narracion.wav",
+        "music_asset": "",
+        "music_license": ""
+      },
+      "export": {
+        "filename": "lote01-03-balon-curva.mp4",
+        "resolution": "1080x1920",
+        "fps": 30,
+        "subtitle_file": "subtitulos/es-MX.srt"
+      }
+    },
+    {
+      "project_id": "lote01-04-tardigrado",
+      "title": "El oso que aprendió a no morir",
+      "language": "es-MX",
+      "target_duration_seconds": 82,
+      "aspect_ratio": "9:16",
+      "audience": "Público general en redes (TikTok/Shorts)",
+      "learning_objective": "",
+      "style": "Amigurumi (muñecos tejidos a crochet) en miniatura, foto macro con Ken Burns, paleta de musgo verde y luz cálida que se vuelve fría",
+      "music_mood": "Piano melancólico solo, notas espaciadas; sin efectos de sonido",
+      "sources": [
+        {
+          "id": "SRC-001",
+          "title": "Hashimoto, T., Horikawa, D. D., Saito, Y. et al. (2016). Extremotolerant tardigrade genome and improved radiotolerance of human cultured cells by tardigrade-unique protein. Nature Communications, 7, 12808.",
+          "url": "https://doi.org/10.1038/ncomms12808",
+          "accessed": "2026-10-24",
+          "supports": []
+        },
+        {
+          "id": "SRC-002",
+          "title": "Boothby, T. C., Tapia, H., Brozena, A. H. et al. (2017). Tardigrades Use Intrinsically Disordered Proteins to Survive Desiccation. Molecular Cell, 65(6).",
+          "url": "https://doi.org/10.1016/j.molcel.2017.02.018",
+          "accessed": "2026-10-24",
+          "supports": []
+        }
+      ],
+      "scenes": [
+        {
+          "id": "scene_001",
+          "duration_seconds": 8,
+          "narration": "",
+          "on_screen_text": "",
+          "visual_description": "Un tardígrado amigurumi de ocho patas regordetas camina sobre una gota de agua en musgo tejido",
+          "generation_prompt": "Vertical 9:16 frame, Amigurumi (muñecos tejidos a crochet) en miniatura, foto macro con Ken Burns, paleta de musgo verde y luz cálida que se vuelve fría. Un tardígrado amigurumi de ocho patas regordetas camina sobre una gota de agua en musgo tejido. Cinematic, shallow depth of field, no text.",
+          "source_ids": [
+            "SRC-002"
+          ],
+          "asset_filename": "scene_001.png",
+          "asset_type": "image",
+          "status": "planned",
+          "notes": ""
+        },
+        {
+          "id": "scene_002",
+          "duration_seconds": 10,
+          "narration": "",
+          "on_screen_text": "El charco se seca",
+          "visual_description": "El sol tejido brilla fuerte; la gota se encoge; el tardígrado mira alrededor, preocupado",
+          "generation_prompt": "Vertical 9:16 frame, Amigurumi (muñecos tejidos a crochet) en miniatura, foto macro con Ken Burns, paleta de musgo verde y luz cálida que se vuelve fría. El sol tejido brilla fuerte; la gota se encoge; el tardígrado mira alrededor, preocupado. Cinematic, shallow depth of field, no text.",
+          "source_ids": [
+            "SRC-002"
+          ],
+          "asset_filename": "scene_002.png",
+          "asset_type": "image",
+          "status": "planned",
+          "notes": ""
+        },
+        {
+          "id": "scene_003",
+          "duration_seconds": 12,
+          "narration": "",
+          "on_screen_text": "",
+          "visual_description": "Se recoge sobre sí mismo hasta volverse una bolita de estambre: un 'tun'; el musgo se vuelve café",
+          "generation_prompt": "Vertical 9:16 frame, Amigurumi (muñecos tejidos a crochet) en miniatura, foto macro con Ken Burns, paleta de musgo verde y luz cálida que se vuelve fría. Se recoge sobre sí mismo hasta volverse una bolita de estambre: un 'tun'; el musgo se vuelve café. Cinematic, shallow depth of field, no text.",
+          "source_ids": [
+            "SRC-002"
+          ],
+          "asset_filename": "scene_003.png",
+          "asset_type": "image",
+          "status": "planned",
+          "notes": ""
+        },
+        {
+          "id": "scene_004",
+          "duration_seconds": 12,
+          "narration": "Para no romperse, se convirtió en vidrio.",
+          "on_screen_text": "Se vuelve vidrio",
+          "visual_description": "Dentro de la bolita, hilos translúcidos se cristalizan como vitral alrededor de su corazón tejido",
+          "generation_prompt": "Vertical 9:16 frame, Amigurumi (muñecos tejidos a crochet) en miniatura, foto macro con Ken Burns, paleta de musgo verde y luz cálida que se vuelve fría. Dentro de la bolita, hilos translúcidos se cristalizan como vitral alrededor de su corazón tejido. Cinematic, shallow depth of field, no text.",
+          "source_ids": [
+            "SRC-002"
+          ],
+          "asset_filename": "scene_004.png",
+          "asset_type": "image",
+          "status": "planned",
+          "notes": ""
+        },
+        {
+          "id": "scene_005",
+          "duration_seconds": 12,
+          "narration": "Años después, una sola gota basta para despertarlo.",
+          "on_screen_text": "Una gota lo despierta",
+          "visual_description": "Lluvia de cuentas de vidrio; la bolita se desenrolla; el tardígrado estira las patas",
+          "generation_prompt": "Vertical 9:16 frame, Amigurumi (muñecos tejidos a crochet) en miniatura, foto macro con Ken Burns, paleta de musgo verde y luz cálida que se vuelve fría. Lluvia de cuentas de vidrio; la bolita se desenrolla; el tardígrado estira las patas. Cinematic, shallow depth of field, no text.",
+          "source_ids": [
+            "SRC-002"
+          ],
+          "asset_filename": "scene_005.png",
+          "asset_type": "image",
+          "status": "planned",
+          "notes": ""
+        },
+        {
+          "id": "scene_006",
+          "duration_seconds": 12,
+          "narration": "Hoy, una de sus proteínas protege también células humanas de la radiación.",
+          "on_screen_text": "Su escudo, en células humanas",
+          "visual_description": "Una pequeña célula tejida recibe del tardígrado una bufanda brillante, mientras rayos de lana roja rebotan",
+          "generation_prompt": "Vertical 9:16 frame, Amigurumi (muñecos tejidos a crochet) en miniatura, foto macro con Ken Burns, paleta de musgo verde y luz cálida que se vuelve fría. Una pequeña célula tejida recibe del tardígrado una bufanda brillante, mientras rayos de lana roja rebotan. Cinematic, shallow depth of field, no text.",
+          "source_ids": [
+            "SRC-001"
+          ],
+          "asset_filename": "scene_006.png",
+          "asset_type": "image",
+          "status": "planned",
+          "notes": ""
+        },
+        {
+          "id": "scene_007",
+          "duration_seconds": 10,
+          "narration": "Sobrevivir no fue resistir, sino saber detenerse. ¿Y si a veces vivir fuera aprender a esperar?",
+          "on_screen_text": "¿Vivir es saber esperar?",
+          "visual_description": "El tardígrado sentado en el musgo verde mirando una gota que cae",
+          "generation_prompt": "Vertical 9:16 frame, Amigurumi (muñecos tejidos a crochet) en miniatura, foto macro con Ken Burns, paleta de musgo verde y luz cálida que se vuelve fría. El tardígrado sentado en el musgo verde mirando una gota que cae. Cinematic, shallow depth of field, no text.",
+          "source_ids": [
+            "SRC-002"
+          ],
+          "asset_filename": "scene_007.png",
+          "asset_type": "image",
+          "status": "planned",
+          "notes": ""
+        },
+        {
+          "id": "scene_008",
+          "duration_seconds": 6,
+          "narration": "",
+          "on_screen_text": "Fuentes: Hashimoto, T · Boothby, T",
+          "visual_description": "Cortinilla de fuentes (4–6 s, texto ≥36 px en zona segura) + «Imágenes generadas con IA; voz sintética»",
+          "generation_prompt": "Vertical 9:16 end card, Amigurumi (muñecos tejidos a crochet) en miniatura, foto macro con Ken Burns, paleta de musgo verde y luz cálida que se vuelve fría, plain background for source text.",
+          "source_ids": [
+            "SRC-001",
+            "SRC-002"
+          ],
+          "asset_filename": "scene_008.png",
+          "asset_type": "image",
+          "status": "planned",
+          "notes": ""
+        }
+      ],
+      "audio": {
+        "voice_asset": "voz/narracion.wav",
+        "music_asset": "",
+        "music_license": ""
+      },
+      "export": {
+        "filename": "lote01-04-tardigrado.mp4",
+        "resolution": "1080x1920",
+        "fps": 30,
+        "subtitle_file": "subtitulos/es-MX.srt"
+      }
+    },
+    {
+      "project_id": "lote01-05-chicxulub",
+      "title": "La tarde en que el cielo cayó en Yucatán",
+      "language": "es-MX",
+      "target_duration_seconds": 84,
+      "aspect_ratio": "9:16",
+      "audience": "Público general en redes (TikTok/Shorts)",
+      "learning_objective": "",
+      "style": "Tinta china y aguada (sumi-e) sobre papel de arroz, negro con salpicaduras rojo-fuego; trazos que se dibujan en tiempo real",
+      "music_mood": "Taiko grave y viento; silencio total en el impacto; violonchelo solo al renacer",
+      "sources": [
+        {
+          "id": "SRC-001",
+          "title": "Hildebrand, A. R., Penfield, G. T., Kring, D. A. et al. (1991). Chicxulub Crater: A possible Cretaceous/Tertiary boundary impact crater on the Yucatán Peninsula, Mexico. Geology, 19(9), 867.",
+          "url": "https://doi.org/10.1130/0091-7613(1991)019<0867:CCAPCT>2.3.CO;2",
+          "accessed": "2026-10-24",
+          "supports": []
+        },
+        {
+          "id": "SRC-002",
+          "title": "Schulte, P. et al. (2010). The Chicxulub Asteroid Impact and Mass Extinction at the Cretaceous-Paleogene Boundary. Science, 327, 1214.",
+          "url": "https://doi.org/10.1126/science.1177265",
+          "accessed": "2026-10-24",
+          "supports": []
+        },
+        {
+          "id": "SRC-003",
+          "title": "Alvarez, L. W., Alvarez, W., Asaro, F. & Michel, H. V. (1980). Extraterrestrial Cause for the Cretaceous-Tertiary Extinction. Science, 208, 1095.",
+          "url": "https://doi.org/10.1126/science.208.4448.1095",
+          "accessed": "2026-10-24",
+          "supports": []
+        }
+      ],
+      "scenes": [
+        {
+          "id": "scene_001",
+          "duration_seconds": 8,
+          "narration": "",
+          "on_screen_text": "Hace 66 millones de años",
+          "visual_description": "Tinta: un dinosaurio de cuello largo bebe en una laguna tranquila; en el cielo, un punto rojo",
+          "generation_prompt": "Vertical 9:16 frame, Tinta china y aguada (sumi-e) sobre papel de arroz, negro con salpicaduras rojo-fuego; trazos que se dibujan en tiempo real. Tinta: un dinosaurio de cuello largo bebe en una laguna tranquila; en el cielo, un punto rojo. Cinematic, shallow depth of field, no text.",
+          "source_ids": [
+            "SRC-002"
+          ],
+          "asset_filename": "scene_001.png",
+          "asset_type": "image",
+          "status": "planned",
+          "notes": ""
+        },
+        {
+          "id": "scene_002",
+          "duration_seconds": 8,
+          "narration": "",
+          "on_screen_text": "",
+          "visual_description": "El punto crece como una gota de tinta que cae sobre el papel; el dinosaurio levanta la cabeza",
+          "generation_prompt": "Vertical 9:16 frame, Tinta china y aguada (sumi-e) sobre papel de arroz, negro con salpicaduras rojo-fuego; trazos que se dibujan en tiempo real. El punto crece como una gota de tinta que cae sobre el papel; el dinosaurio levanta la cabeza. Cinematic, shallow depth of field, no text.",
+          "source_ids": [
+            "SRC-002"
+          ],
+          "asset_filename": "scene_002.png",
+          "asset_type": "image",
+          "status": "planned",
+          "notes": ""
+        },
+        {
+          "id": "scene_003",
+          "duration_seconds": 6,
+          "narration": "",
+          "on_screen_text": "",
+          "visual_description": "Pantalla blanca. Silencio. Una salpicadura negra estalla y se expande por todo el papel",
+          "generation_prompt": "Vertical 9:16 frame, Tinta china y aguada (sumi-e) sobre papel de arroz, negro con salpicaduras rojo-fuego; trazos que se dibujan en tiempo real. Pantalla blanca. Silencio. Una salpicadura negra estalla y se expande por todo el papel. Cinematic, shallow depth of field, no text.",
+          "source_ids": [
+            "SRC-002"
+          ],
+          "asset_filename": "scene_003.png",
+          "asset_type": "image",
+          "status": "planned",
+          "notes": ""
+        },
+        {
+          "id": "scene_004",
+          "duration_seconds": 12,
+          "narration": "Una piedra del tamaño de una ciudad tocó el mar… y el mundo se apagó como una vela.",
+          "on_screen_text": "El mundo se apagó",
+          "visual_description": "Tinta gris cubre el cielo; los trazos de árboles se borran; un sol de tinta tenue",
+          "generation_prompt": "Vertical 9:16 frame, Tinta china y aguada (sumi-e) sobre papel de arroz, negro con salpicaduras rojo-fuego; trazos que se dibujan en tiempo real. Tinta gris cubre el cielo; los trazos de árboles se borran; un sol de tinta tenue. Cinematic, shallow depth of field, no text.",
+          "source_ids": [
+            "SRC-002"
+          ],
+          "asset_filename": "scene_004.png",
+          "asset_type": "image",
+          "status": "planned",
+          "notes": ""
+        },
+        {
+          "id": "scene_005",
+          "duration_seconds": 12,
+          "narration": "Décadas atrás, una capa delgada de arcilla rica en iridio confesó el crimen.",
+          "on_screen_text": "Iridio: la firma",
+          "visual_description": "Un geólogo dibujado con pincel raspa una línea delgada roja en un acantilado de tinta",
+          "generation_prompt": "Vertical 9:16 frame, Tinta china y aguada (sumi-e) sobre papel de arroz, negro con salpicaduras rojo-fuego; trazos que se dibujan en tiempo real. Un geólogo dibujado con pincel raspa una línea delgada roja en un acantilado de tinta. Cinematic, shallow depth of field, no text.",
+          "source_ids": [
+            "SRC-003"
+          ],
+          "asset_filename": "scene_005.png",
+          "asset_type": "image",
+          "status": "planned",
+          "notes": ""
+        },
+        {
+          "id": "scene_006",
+          "duration_seconds": 12,
+          "narration": "Y bajo Yucatán, la cicatriz esperaba que la encontráramos.",
+          "on_screen_text": "Chicxulub, Yucatán",
+          "visual_description": "Mapa de tinta de la península; un anillo enorme se dibuja bajo la tierra y los cenotes como cuentas",
+          "generation_prompt": "Vertical 9:16 frame, Tinta china y aguada (sumi-e) sobre papel de arroz, negro con salpicaduras rojo-fuego; trazos que se dibujan en tiempo real. Mapa de tinta de la península; un anillo enorme se dibuja bajo la tierra y los cenotes como cuentas. Cinematic, shallow depth of field, no text.",
+          "source_ids": [
+            "SRC-001"
+          ],
+          "asset_filename": "scene_006.png",
+          "asset_type": "image",
+          "status": "planned",
+          "notes": ""
+        },
+        {
+          "id": "scene_007",
+          "duration_seconds": 10,
+          "narration": "",
+          "on_screen_text": "",
+          "visual_description": "De la tinta gris brota un pequeño mamífero de pincel que mira hacia arriba",
+          "generation_prompt": "Vertical 9:16 frame, Tinta china y aguada (sumi-e) sobre papel de arroz, negro con salpicaduras rojo-fuego; trazos que se dibujan en tiempo real. De la tinta gris brota un pequeño mamífero de pincel que mira hacia arriba. Cinematic, shallow depth of field, no text.",
+          "source_ids": [
+            "SRC-002"
+          ],
+          "asset_filename": "scene_007.png",
+          "asset_type": "image",
+          "status": "planned",
+          "notes": ""
+        },
+        {
+          "id": "scene_008",
+          "duration_seconds": 10,
+          "narration": "Un final fue, para alguien, un principio. ¿Somos los herederos de una catástrofe… o su respuesta?",
+          "on_screen_text": "¿Herederos o respuesta?",
+          "visual_description": "El mamífero se convierte, trazo a trazo, en una mano humana que sostiene el pincel",
+          "generation_prompt": "Vertical 9:16 frame, Tinta china y aguada (sumi-e) sobre papel de arroz, negro con salpicaduras rojo-fuego; trazos que se dibujan en tiempo real. El mamífero se convierte, trazo a trazo, en una mano humana que sostiene el pincel. Cinematic, shallow depth of field, no text.",
+          "source_ids": [
+            "SRC-002"
+          ],
+          "asset_filename": "scene_008.png",
+          "asset_type": "image",
+          "status": "planned",
+          "notes": ""
+        },
+        {
+          "id": "scene_009",
+          "duration_seconds": 6,
+          "narration": "",
+          "on_screen_text": "Fuentes: Hildebrand, A · Schulte, P · Alvarez, L",
+          "visual_description": "Cortinilla de fuentes (4–6 s, texto ≥36 px en zona segura) + «Imágenes generadas con IA; voz sintética»",
+          "generation_prompt": "Vertical 9:16 end card, Tinta china y aguada (sumi-e) sobre papel de arroz, negro con salpicaduras rojo-fuego; trazos que se dibujan en tiempo real, plain background for source text.",
+          "source_ids": [
+            "SRC-001",
+            "SRC-002",
+            "SRC-003"
+          ],
+          "asset_filename": "scene_009.png",
+          "asset_type": "image",
+          "status": "planned",
+          "notes": ""
+        }
+      ],
+      "audio": {
+        "voice_asset": "voz/narracion.wav",
+        "music_asset": "",
+        "music_license": ""
+      },
+      "export": {
+        "filename": "lote01-05-chicxulub.mp4",
+        "resolution": "1080x1920",
+        "fps": 30,
+        "subtitle_file": "subtitulos/es-MX.srt"
+      }
+    }
+  ]
+}
