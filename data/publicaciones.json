@@ -54,5 +54,26 @@
   "aprobado_por": "Mj (directo, 'YA')",
   "origen": "propia",
   "tiktok": "pendiente_tiktok"
+ },
+ {
+  "fecha": "2026-10-24",
+  "project_id": "2026-10-24_aves-temen-mas-a-mujeres",
+  "yt_id": "ZmejLrdEslU",
+  "url": "https://youtube.com/shorts/ZmejLrdEslU",
+  "privacidad": "public",
+  "publishAt_utc": null,
+  "hora_local": "2026-10-24 ~17:50 (America/Mexico_City)",
+  "ventana": 0,
+  "video": "capsula.mp4",
+  "storyboard": "storyboard.json",
+  "titulo": "Las aves huyen antes de las mujeres #Shorts",
+  "tema": "aves temen más a las mujeres",
+  "estructura": "comparacion",
+  "estilo": "garabato_cuaderno",
+  "cama": "pizzicato",
+  "aprobado_por": "Mj (directo, 'haz otro video y lo subes')",
+  "origen": "propia",
+  "tiktok": "pendiente_tiktok",
+  "nota": "4.ª cápsula del día: supera MAX_POR_DIA=3 por petición directa de Mj"
  }
 ]

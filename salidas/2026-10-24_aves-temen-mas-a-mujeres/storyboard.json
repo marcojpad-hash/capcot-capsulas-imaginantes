@@ -1,0 +1,295 @@
+{
+ "project_id": "2026-10-24_aves-temen-mas-a-mujeres",
+ "serie": "Imaginantes de la ciencia",
+ "title": "Las aves huyen antes de las mujeres",
+ "titulo": "¿Aves que temen a mujeres?",
+ "language": "es-MX",
+ "aspect_ratio": "9:16",
+ "target_duration_seconds": 84,
+ "estructura": "comparacion",
+ "estilo_id": "garabato_cuaderno",
+ "trend_source": {
+  "tipo": "noticia_cientifica",
+  "medio": "ScienceDaily (British Ecological Society)",
+  "url": "https://www.sciencedaily.com/releases/2026/10/261021231250.htm",
+  "estudio_doi": "10.1002/pan3.70226",
+  "fecha_publicacion": "2026-10-22",
+  "termino": "aves temen más a las mujeres",
+  "fecha_consulta": "2026-10-24"
+ },
+ "resumen": "En cinco países europeos y 37 especies, las aves urbanas huyeron en promedio ~1 m antes cuando se acercaba una mujer que un hombre (People and Nature). Nadie sabe aún por qué.",
+ "voice": {
+  "engine": "edge-tts",
+  "voice_id": "es-MX-JorgeNeural",
+  "rate": "+7%",
+  "pitch": "-2Hz",
+  "pad_seconds": 0.3,
+  "modo_pausas": "continuo"
+ },
+ "sources": [
+  {
+   "id": "SRC-001",
+   "cita_corta": "Morelli, F. et al. (2025). Sex matters: European urban birds flee approaching women sooner than approaching men. People and Nature.",
+   "doi": "10.1002/pan3.70226",
+   "url": "https://doi.org/10.1002/pan3.70226",
+   "accessed": "2026-10-24",
+   "supports": [
+    "distancia de inicio de huida (FID)",
+    "cinco países europeos",
+    "observadores emparejados por estatura y ropa",
+    "~1 m antes con mujeres, 11% de la FID media",
+    "consistente en los cinco países",
+    "mecanismo desconocido; hipótesis"
+   ],
+   "ref_display": "People and Nature · doi:10.1002/pan3.70226"
+  },
+  {
+   "id": "SRC-002",
+   "cita_corta": "British Ecological Society (2026). Birds are more afraid of women than men. Scientists have no idea why. ScienceDaily, 22 oct 2026.",
+   "url": "https://www.sciencedaily.com/releases/2026/10/261021231250.htm",
+   "accessed": "2026-10-24",
+   "supports": [
+    "Chequia, Francia, Alemania, Polonia, España",
+    "37 especies, 2701 observaciones",
+    "parques y áreas verdes",
+    "feromonas, forma del cuerpo, forma de caminar como hipótesis",
+    "cita de Daniel Blumstein (UCLA)",
+    "gorriones, mirlos, carboneros, urracas, palomas"
+   ],
+   "ref_display": "ScienceDaily · British Ecological Society"
+  },
+  {
+   "id": "SRC-003",
+   "cita_corta": "UCLA Newsroom (2026). Are birds scared of women? The study that's taken flight on social media.",
+   "url": "https://newsroom.ucla.edu/releases/are-birds-scared-of-women",
+   "accessed": "2026-10-24",
+   "supports": [
+    "ornitólogos de estatura y ropa similares",
+    "estudios con solo hombres o solo mujeres podrían sesgarse"
+   ],
+   "ref_display": "UCLA Newsroom"
+  }
+ ],
+ "scenes": [
+  {
+   "id": "scene_001",
+   "arc": "hook_medias_res",
+   "duration_seconds": 8.8,
+   "narration": "Una mujer camina hacia una paloma en el parque. La paloma sale volando. Un hombre lo intenta… y llega más cerca.",
+   "on_screen_text": "¿Aves que temen a mujeres?",
+   "visual_description": "a woman walking toward a pigeon in a city park, pigeon taking off, a man in background",
+   "image_prompt": "messy ballpoint-and-pencil sketchbook study, close view of the subject, corroded rough linework, repeated contour strokes, visible proportion guide lines and gesture lines, scribbled hatching shadows, graphite smudges and finger smears, torn lined notebook page, imperfect but fully readable, vertical 9:16, no text + a woman walking toward a pigeon in a city park, pigeon taking off, a man in background",
+   "source_ids": [
+    "SRC-001",
+    "SRC-002"
+   ],
+   "asset_filename": "frames/scene_001.jpg",
+   "sfx": [
+    "pluma",
+    "viento"
+   ]
+  },
+  {
+   "id": "scene_002",
+   "arc": "desarrollo",
+   "duration_seconds": 10.4,
+   "narration": "Suena a anécdota, pero un estudio lo midió. Usaron la distancia de inicio de huida: qué tan cerca llegas antes de que el ave escape.",
+   "on_screen_text": "Distancia de huida",
+   "visual_description": "researcher with measuring tape and notebook, small bird on a park path, distance marked with arrows",
+   "image_prompt": "messy ballpoint-and-pencil sketchbook study, close view of the subject, corroded rough linework, repeated contour strokes, visible proportion guide lines and gesture lines, scribbled hatching shadows, graphite smudges and finger smears, torn lined notebook page, imperfect but fully readable, vertical 9:16, no text + researcher with measuring tape and notebook, small bird on a park path, distance marked with arrows",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "asset_filename": "frames/scene_002.jpg",
+   "sfx": [
+    "madera"
+   ]
+  },
+  {
+   "id": "scene_003",
+   "arc": "desarrollo",
+   "duration_seconds": 9.2,
+   "narration": "Fue en parques y jardines de Chequia, Francia, Alemania, Polonia y España. Treinta y siete especies: gorriones, mirlos, carboneros, urracas y palomas.",
+   "on_screen_text": "5 países, 37 especies",
+   "visual_description": "group of urban birds: house sparrow, blackbird, great tit, magpie, pigeon on a park bench",
+   "image_prompt": "messy ballpoint-and-pencil sketchbook study, close view of the subject, corroded rough linework, repeated contour strokes, visible proportion guide lines and gesture lines, scribbled hatching shadows, graphite smudges and finger smears, torn lined notebook page, imperfect but fully readable, vertical 9:16, no text + group of urban birds: house sparrow, blackbird, great tit, magpie, pigeon on a park bench",
+   "source_ids": [
+    "SRC-001",
+    "SRC-002"
+   ],
+   "asset_filename": "frames/scene_003.jpg",
+   "sfx": [
+    "viento",
+    "pluma"
+   ],
+   "capa": {
+    "tipo": "mapa",
+    "region": [
+     -12,
+     26,
+     34,
+     56
+    ],
+    "puntos": [
+     {
+      "nombre": "España",
+      "lon": -3.7,
+      "lat": 40.4
+     },
+     {
+      "nombre": "Francia",
+      "lon": 2.3,
+      "lat": 48.9
+     },
+     {
+      "nombre": "Alemania",
+      "lon": 13.4,
+      "lat": 52.5
+     },
+     {
+      "nombre": "Polonia",
+      "lon": 16.9,
+      "lat": 52.4
+     },
+     {
+      "nombre": "Chequia",
+      "lon": 14.4,
+      "lat": 50.1
+     }
+    ],
+    "titulo": "Aves urbanas en 5 países",
+    "fuente": "Morelli et al. (2025), People and Nature"
+   }
+  },
+  {
+   "id": "scene_004",
+   "arc": "desarrollo",
+   "duration_seconds": 10.4,
+   "narration": "En cada país, una mujer y un hombre, de estatura parecida y con ropa similar, caminaron hacia las aves. Reunieron dos mil setecientas una observaciones.",
+   "on_screen_text": "Misma estatura, misma ropa",
+   "visual_description": "a woman and a man of similar height in similar plain jackets walking side by side toward birds on grass",
+   "image_prompt": "messy ballpoint-and-pencil sketchbook study, close view of the subject, corroded rough linework, repeated contour strokes, visible proportion guide lines and gesture lines, scribbled hatching shadows, graphite smudges and finger smears, torn lined notebook page, imperfect but fully readable, vertical 9:16, no text + a woman and a man of similar height in similar plain jackets walking side by side toward birds on grass",
+   "source_ids": [
+    "SRC-001",
+    "SRC-002",
+    "SRC-003"
+   ],
+   "asset_filename": "frames/scene_004.jpg",
+   "sfx": [
+    "reloj"
+   ]
+  },
+  {
+   "id": "scene_005",
+   "arc": "desarrollo",
+   "duration_seconds": 12.8,
+   "narration": "El resultado: con las mujeres, las aves huyeron en promedio un metro antes. Es cerca de un once por ciento de su distancia de escape. Y pasó en los cinco países.",
+   "on_screen_text": "Un metro antes",
+   "visual_description": "blackbird flying away early from approaching woman, a one-meter ruler drawn on ground",
+   "image_prompt": "messy ballpoint-and-pencil sketchbook study, close view of the subject, corroded rough linework, repeated contour strokes, visible proportion guide lines and gesture lines, scribbled hatching shadows, graphite smudges and finger smears, torn lined notebook page, imperfect but fully readable, vertical 9:16, no text + blackbird flying away early from approaching woman, a one-meter ruler drawn on ground",
+   "source_ids": [
+    "SRC-001",
+    "SRC-002"
+   ],
+   "asset_filename": "frames/scene_005.jpg",
+   "sfx": [
+    "pluma",
+    "viento"
+   ],
+   "capa": {
+    "tipo": "dato",
+    "valor": "≈1 m",
+    "etiqueta": "huyen antes ante mujeres (~11 %)",
+    "fuente": "Morelli et al. (2025), People and Nature"
+   }
+  },
+  {
+   "id": "scene_006",
+   "arc": "cierre_historia",
+   "duration_seconds": 15.5,
+   "narration": "¿Por qué? Nadie lo sabe. Los autores mencionan el olor, la forma del cuerpo o la manera de caminar, pero son solo hipótesis. Daniel Blumstein, de UCLA, dice que cree en el resultado, aunque aún no puede explicarlo.",
+   "on_screen_text": "Nadie sabe por qué",
+   "visual_description": "curious great tit staring at human footprints and a big question mark drawn as a scribble",
+   "image_prompt": "messy ballpoint-and-pencil sketchbook study, close view of the subject, corroded rough linework, repeated contour strokes, visible proportion guide lines and gesture lines, scribbled hatching shadows, graphite smudges and finger smears, torn lined notebook page, imperfect but fully readable, vertical 9:16, no text + curious great tit staring at human footprints and a big question mark drawn as a scribble",
+   "source_ids": [
+    "SRC-001",
+    "SRC-002",
+    "SRC-003"
+   ],
+   "asset_filename": "frames/scene_006.jpg",
+   "sfx": [
+    "pluma"
+   ]
+  },
+  {
+   "id": "scene_007",
+   "arc": "cierre_historia",
+   "duration_seconds": 8.4,
+   "narration": "Y hay una consecuencia práctica: si en un estudio solo trabajan hombres, o solo mujeres, sus datos podrían salir sesgados.",
+   "on_screen_text": "Ojo con el sesgo",
+   "visual_description": "field notebook with bird data tables and a scale tilted to one side",
+   "image_prompt": "messy ballpoint-and-pencil sketchbook study, close view of the subject, corroded rough linework, repeated contour strokes, visible proportion guide lines and gesture lines, scribbled hatching shadows, graphite smudges and finger smears, torn lined notebook page, imperfect but fully readable, vertical 9:16, no text + field notebook with bird data tables and a scale tilted to one side",
+   "source_ids": [
+    "SRC-003"
+   ],
+   "asset_filename": "frames/scene_007.jpg",
+   "sfx": [
+    "madera",
+    "reloj"
+   ]
+  },
+  {
+   "id": "scene_008",
+   "arc": "reflexion_o_pregunta",
+   "duration_seconds": 10.8,
+   "narration": "Las aves de la ciudad nos observan más de lo que creemos. ¿Qué ven en nosotros que nosotros todavía no vemos? Esto fue Datos y ociosidades.",
+   "on_screen_text": "¿Qué ven en nosotros?",
+   "visual_description": "sparrow perched on a lamp post at dusk watching people walk by",
+   "image_prompt": "messy ballpoint-and-pencil sketchbook study, close view of the subject, corroded rough linework, repeated contour strokes, visible proportion guide lines and gesture lines, scribbled hatching shadows, graphite smudges and finger smears, torn lined notebook page, imperfect but fully readable, vertical 9:16, no text + sparrow perched on a lamp post at dusk watching people walk by",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "asset_filename": "frames/scene_008.jpg",
+   "sfx": [
+    "viento",
+    "lluvia"
+   ]
+  }
+ ],
+ "cortinilla_fuentes": {
+  "duration_seconds": 6,
+  "titulo": "Fuentes",
+  "aviso": "Imágenes generadas con IA. Voz sintética (edge-tts). Música y ambiente sintetizados / CC0.",
+  "bg_rgb": [
+   34,
+   34,
+   40
+  ],
+  "firma": "Datos y ociosidades · @datosyociosidades"
+ },
+ "audio": {
+  "music_asset": "sintetico:pizzicato",
+  "cama_musical": "pizzicato",
+  "music_lufs": -27,
+  "ambiente_lufs": -28,
+  "music_license": "Sintetizado por scripts/cama_sonora.py (obra propia)",
+  "sfx_license": "Wikimedia Commons CC0/PD, ver assets/sfx/LICENCIAS.json"
+ },
+ "export": {
+  "filename": "capsula.mp4",
+  "resolution": "1080x1920",
+  "fps": 30,
+  "subtitle_max_words": 3,
+  "plano_seconds": 2.5,
+  "loudness_lufs": -14
+ },
+ "canal": {
+  "nombre": "Datos y ociosidades",
+  "handle": "@datosyociosidades",
+  "youtube_channel_id": "UCU2ZI-6pBJEr9aSFsF6bxLw"
+ },
+ "origen": "propia",
+ "estilo_visual": "Garabato en cuaderno",
+ "estilo_variante": "v2",
+ "estilo_referencia_imagen": "referencias_estilo/garabato_cuaderno_oficial.jpg"
+}
