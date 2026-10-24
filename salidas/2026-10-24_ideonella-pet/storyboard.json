@@ -1,0 +1,251 @@
+{
+  "project_id": "2026-10-24_ideonella-pet",
+  "serie": "Imaginantes de la ciencia",
+  "title": "La bacteria que come plástico… pero no hace magia",
+  "language": "es-MX",
+  "aspect_ratio": "9:16",
+  "target_duration_seconds": 87.51,
+  "audience": "Público general curioso",
+  "estructura": "mito_vs_dato",
+  "estilo_id": "claymation",
+  "estilo_visual": "Claymation stop-motion en miniatura, texturas artesanales y profundidad de campo",
+  "trend_source": {
+    "tipo": "atemporal_backlog",
+    "rss_geo": "MX",
+    "termino": "bacteria que degrada PET",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/26965627/",
+    "fecha_consulta": "2026-10-24",
+    "puntaje": 0
+  },
+  "voice": {
+    "engine": "espeak",
+    "voice_id": "es-mx",
+    "rate": "170 wpm",
+    "pitch": "45",
+    "pad_seconds": 0.35,
+    "fallback_note": "TTS local offline; edge-tts no estaba instalado en este entorno. No equivale a la voz es-MX-JorgeNeural de la receta."
+  },
+  "sources": [
+    {
+      "id": "SRC-001",
+      "cita_corta": "Yoshida et al. (2016). Science 351, 1196–1199.",
+      "doi": "10.1126/science.aad6359",
+      "url": "https://doi.org/10.1126/science.aad6359",
+      "accessed": "2026-10-24",
+      "supports": [
+        "Ideonella sakaiensis puede usar PET como fuente principal de carbono y energía",
+        "PETasa y MHETasa participan en la degradación enzimática del PET"
+      ]
+    },
+    {
+      "id": "SRC-002",
+      "cita_corta": "Tanasupawat et al. (2016). Int J Syst Evol Microbiol 66, 2813–2818.",
+      "doi": "10.1099/ijsem.0.001058",
+      "url": "https://doi.org/10.1099/ijsem.0.001058",
+      "accessed": "2026-10-24",
+      "supports": [
+        "Descripción taxonómica de Ideonella sakaiensis aislada de un consorcio que degrada PET"
+      ]
+    },
+    {
+      "id": "SRC-004",
+      "cita_corta": "Walter et al. (2022). Archives of Microbiology.",
+      "doi": "10.1007/s00203-022-03306-w",
+      "url": "https://doi.org/10.1007/s00203-022-03306-w",
+      "accessed": "2026-10-24",
+      "supports": [
+        "Estudio de siete semanas sobre dos materiales comerciales de PET",
+        "La degradación depende de las características del material y del ensayo"
+      ]
+    },
+    {
+      "id": "SRC-005",
+      "cita_corta": "Yang, Yang & Jiang (2016). Science 353, 759. Comment.",
+      "doi": "10.1126/science.aaf8305",
+      "url": "https://doi.org/10.1126/science.aaf8305",
+      "accessed": "2026-10-24",
+      "supports": [
+        "Advertencia crítica sobre interpretar la eficiencia de degradación observada con PET de baja cristalinidad"
+      ]
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_001",
+      "arc": "hook_medias_res",
+      "duration_seconds": 5.604,
+      "narration": "Una botella puede durar décadas. Pero este microbio tiene otra idea.",
+      "on_screen_text": "Una botella. Un microbio.",
+      "visual_description": "Una botella PET abandonada en la orilla, como objeto protagonista de una escena en miniatura.",
+      "image_prompt": "Claymation stop-motion miniature, plastic PET bottle at a riverbank, handcrafted textures, vertical 9:16, no text.",
+      "source_ids": [
+        "SRC-001"
+      ],
+      "asset_filename": "frames/scene_001.png",
+      "asset_type": "image",
+      "motion": "kenburns_auto"
+    },
+    {
+      "id": "scene_002",
+      "arc": "desarrollo",
+      "duration_seconds": 9.298,
+      "narration": "En Japón, investigadores buscaron microorganismos en muestras de un lugar contaminado por PET, el plástico de muchas botellas.",
+      "on_screen_text": "Sakai, Japón",
+      "visual_description": "Muestra de sedimento junto a una planta de reciclaje; mapa pequeño localiza Sakai, Japón.",
+      "image_prompt": "Claymation miniature sampling jar beside PET recycling site, shallow focus, vertical 9:16, no text.",
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "capa": {
+        "tipo": "mapa",
+        "dato": "Sakai, Japón",
+        "fuente_id": "SRC-002"
+      },
+      "asset_filename": "frames/scene_002.png",
+      "asset_type": "image",
+      "motion": "kenburns_auto"
+    },
+    {
+      "id": "scene_003",
+      "arc": "desarrollo",
+      "duration_seconds": 10.285,
+      "narration": "En 2016 describieron Ideonella sakaiensis, una bacteria capaz de usar ese plástico como fuente de carbono y energía en laboratorio.",
+      "on_screen_text": "Una bacteria distinta",
+      "visual_description": "Bacteria microscópica adherida a una superficie de plástico, representación visual metafórica.",
+      "image_prompt": "Claymation microscopic bacterium attached to clear PET plastic, miniature tactile textures, vertical 9:16, no text.",
+      "source_ids": [
+        "SRC-001"
+      ],
+      "asset_filename": "frames/scene_003.png",
+      "asset_type": "image",
+      "motion": "kenburns_auto"
+    },
+    {
+      "id": "scene_004",
+      "arc": "desarrollo",
+      "duration_seconds": 10.687,
+      "narration": "No lo devora como un animal: produce dos enzimas. PETasa corta la cadena del polímero; MHETasa actúa sobre un fragmento intermedio.",
+      "on_screen_text": "Dos enzimas",
+      "visual_description": "Enzimas metafóricas alrededor de una cadena de polímero que se separa en fragmentos.",
+      "image_prompt": "Claymation molecular metaphor, two enzyme-like forms breaking a clear polymer chain into smaller pieces, vertical 9:16, no text.",
+      "source_ids": [
+        "SRC-001"
+      ],
+      "capa": {
+        "tipo": "dato",
+        "dato": "2 enzimas: PETasa + MHETasa",
+        "fuente_id": "SRC-001"
+      },
+      "asset_filename": "frames/scene_004.png",
+      "asset_type": "image",
+      "motion": "kenburns_auto"
+    },
+    {
+      "id": "scene_005",
+      "arc": "desarrollo",
+      "duration_seconds": 9.952,
+      "narration": "Esos fragmentos pueden convertirse en moléculas más simples que el microorganismo aprovecha para crecer. No es una desaparición mágica.",
+      "on_screen_text": "Plástico → moléculas",
+      "visual_description": "Fragmentos transparentes transformándose en pequeñas piezas moleculares de colores; imagen conceptual.",
+      "image_prompt": "Claymation molecular fragments from transparent PET becoming small colorful molecules, handcrafted stop-motion, vertical 9:16, no text.",
+      "source_ids": [
+        "SRC-001"
+      ],
+      "asset_filename": "frames/scene_005.png",
+      "asset_type": "image",
+      "motion": "kenburns_auto"
+    },
+    {
+      "id": "scene_006",
+      "arc": "desarrollo",
+      "duration_seconds": 9.985,
+      "narration": "Hay una advertencia importante: el primer estudio usó PET de baja cristalinidad, más fácil de degradar que muchos productos comerciales.",
+      "on_screen_text": "No todo PET es igual",
+      "visual_description": "Botella PET intacta junto a una lámina de laboratorio; contraste entre muestras.",
+      "image_prompt": "Claymation laboratory comparison of clear plastic bottle and thin PET film sample, warm lab lighting, vertical 9:16, no text.",
+      "source_ids": [
+        "SRC-005"
+      ],
+      "asset_filename": "frames/scene_006.png",
+      "asset_type": "image",
+      "motion": "kenburns_auto"
+    },
+    {
+      "id": "scene_007",
+      "arc": "cierre_historia",
+      "duration_seconds": 10.563,
+      "narration": "Estudios posteriores probaron materiales comerciales durante semanas. El resultado depende del tipo de plástico y de las condiciones del experimento.",
+      "on_screen_text": "Material + tiempo + condiciones",
+      "visual_description": "Dos muestras de PET comparadas en laboratorio, una más alterada que la otra, sin sugerir una tasa universal.",
+      "image_prompt": "Claymation gloved hands compare intact and visibly weathered PET samples in a lab, vertical 9:16, no text.",
+      "source_ids": [
+        "SRC-004"
+      ],
+      "asset_filename": "frames/scene_007.png",
+      "asset_type": "image",
+      "motion": "kenburns_auto"
+    },
+    {
+      "id": "scene_008",
+      "arc": "reflexion_o_pregunta",
+      "duration_seconds": 15.133,
+      "narration": "No significa que debamos soltar bacterias al océano. Significa que la biología puede inspirar procesos de reciclaje controlados. ¿Qué otra herramienta se esconde en lo diminuto? Esto fue Datos y ociosidades.",
+      "on_screen_text": "¿Qué puede enseñarnos lo diminuto?",
+      "visual_description": "Playa al atardecer con un pequeño fragmento de plástico en primer plano; cierre contemplativo.",
+      "image_prompt": "Claymation miniature beach at sunset, a small clear plastic fragment in foreground, reflective quiet mood, vertical 9:16, no text.",
+      "source_ids": [
+        "SRC-001",
+        "SRC-004"
+      ],
+      "asset_filename": "frames/scene_008.png",
+      "asset_type": "image",
+      "motion": "kenburns_auto"
+    }
+  ],
+  "cortinilla_fuentes": {
+    "duration_seconds": 6,
+    "titulo": "Fuentes",
+    "aviso": "Imágenes generadas con IA. Voz sintética (eSpeak es-MX); audio musical sintetizado localmente.",
+    "bg_rgb": [
+      18,
+      16,
+      14
+    ],
+    "firma": "Datos y ociosidades · @datosyociosidades"
+  },
+  "audio": {
+    "music_asset": "sintetico:pizzicato",
+    "music_license": "Pista original sintetizada localmente con ondas senoidales; sin audio de terceros.",
+    "music_volume": 0.04,
+    "cama_musical": "pizzicato"
+  },
+  "export": {
+    "filename": "capsula.mp4",
+    "resolution": "1080x1920",
+    "fps": 30,
+    "subtitle_max_words": 3,
+    "loudness_lufs": -14
+  },
+  "publicacion": {
+    "youtube": {
+      "privacy": "private",
+      "publishAt": "",
+      "titulo": "La bacteria que come plástico… pero no hace magia #Shorts",
+      "descripcion_con_fuentes": "Microorganismos y enzimas pueden degradar PET bajo condiciones específicas; no es una solución mágica ni universal. Fuentes y DOI incluidos en la cortinilla y fuentes.md. Imágenes generadas con IA · voz sintética.",
+      "tags": [
+        "#Shorts",
+        "#ciencia",
+        "#plástico",
+        "#microbiología"
+      ],
+      "synthetic_content": true
+    },
+    "tiktok": {
+      "modo": "disabled",
+      "is_aigc": true,
+      "caption": "La bacteria que come plástico… pero no hace magia #ciencia #microbiología"
+    }
+  },
+  "estado": "RENDER_LOCAL_NO_PUBLICADO"
+}
