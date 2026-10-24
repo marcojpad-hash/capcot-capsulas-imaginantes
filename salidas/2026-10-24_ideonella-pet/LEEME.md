@@ -1,0 +1,3 @@
+Paquete 2026-10-24_ideonella-pet · render local completado · QA propio: 16/16 · NO publicado.
+
+No se ejecutó en /workspace/capcot ni mediante scripts/capsula_diaria.py. Voz alternativa eSpeak es-MX: edge-tts no estaba instalado en este entorno. La publicación y los registros de rotación no se modificaron. El MP4 y los medios se entregan en el paquete descargable; los medios pesados no se suben al repositorio.
