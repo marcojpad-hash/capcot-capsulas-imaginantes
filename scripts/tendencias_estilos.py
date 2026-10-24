@@ -20,5 +20,5 @@ def actualizar():
     for e, n in cnt.items(): d["pesos"][e] = round(0.5 * d["pesos"].get(e, 0) + 0.5 * n / mx, 2)
     d["actualizado"] = time.strftime("%Y-%m-%d"); d["conteo_ultimo"] = cnt
     json.dump(d, open(TEN, "w"), ensure_ascii=False, indent=1); return d
-def vigente(): return os.path.exists(TEN) and time.time() - os.path.getmtime(TEN) < 7 * 86400
+def vigente(): return os.path.exists(TEN) and time.time() - os.path.getmtime(TEN) < 1 * 86400  # revisión DIARIA de estilos virales
 if __name__ == "__main__": print(json.dumps(actualizar()["pesos"], indent=1))

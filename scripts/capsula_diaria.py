@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """Orquestador diario CAPCOT: tendencia -> guion -> frames -> validación -> montaje -> QA -> paquete. NO publica.
 Uso: python3 scripts/capsula_diaria.py [--storyboard ruta.json] [--proveedor-img manual|xai|openai|placeholder] [--fecha AAAA-MM-DD]
-- Sin --storyboard: elige el mejor tema del RSS MX y llama a generar_guion_llm.py (requiere CAPCOT_LLM_API_KEY).
+- Sin --storyboard: elige el mejor tema del RSS MX y llama a generar_guion_llm.py (proveedor gratuito: CAPCOT_LLM_PROVIDER=gemini|groq; sin clave -> modo manual).
 - Con --storyboard: usa ese guion (lote o manual) y lo copia al paquete.
-Paquete: salidas/<fecha>_<slug>/ {storyboard.json, guion.md, fuentes.md, frames/, capsula.mp4, capsula.srt, qa.json, publicacion.json(dry-run), LEEME.md}"""
+Paquete: salidas/<fecha>_<slug>/ {storyboard.json, guion.md, fuentes.md, frames/, capsula.mp4, capsula.srt, qa.json, guion_mj.md, metadata.json, resumen.json, LEEME.md}. Nunca publica ni sube."""
 import argparse, datetime, json, os, re, shutil, subprocess, sys, unicodedata
 R = os.path.dirname(os.path.dirname(os.path.abspath(__file__))); S = os.path.join(R, "scripts")
 def sh(*a, ok=(0,)):
@@ -26,7 +26,9 @@ if __name__ == "__main__":
         if t["puntaje"] < 6: print("AVISO: puntaje <6; usar backlog atemporal")
         tmp = f"/tmp/sb_{a.fecha}.json"
         rc = subprocess.run(["python3", f"{S}/generar_guion_llm.py", "--tema", t["termino"], "--noticias", json.dumps(t["noticias"], ensure_ascii=False), "--id", f"{a.fecha}_{slug(t['termino'])}", "-o", tmp]).returncode
-        if rc == 3: sys.exit("Sin CAPCOT_LLM_API_KEY: escribe el guion a mano (o con el bot) y reejecuta con --storyboard")
+        if rc == 3:
+            json.dump({"fecha": a.fecha, "estado": "MANUAL", "tema": t["termino"], "accion": "El agente escribe el storyboard con docs/RECETA_CAPSULA.md (prompt en prompt_guion.txt) y reejecuta con --storyboard"}, open(os.path.join(R, "salidas", f"resumen_{a.fecha}.json"), "w"), ensure_ascii=False, indent=1)
+            sys.exit("Modo manual: escribe el guion y reejecuta con --storyboard")
         if rc: sys.exit("generar_guion_llm falló")
         sb = json.load(open(tmp)); src_dir = None
     out = os.path.join(R, "salidas", f"{a.fecha}_{slug(sb.get('project_id') if a.storyboard else sb['trend_source']['termino'])}")
@@ -37,7 +39,7 @@ if __name__ == "__main__":
             if os.path.exists(f): shutil.copy(f, os.path.join(out, s["asset_filename"]))
     sys.path.insert(0, S); import rotar_estilo, tendencias_estilos
     if not tendencias_estilos.vigente():
-        try: tendencias_estilos.actualizar()  # semanal: pesos de viralidad
+        try: tendencias_estilos.actualizar()  # DIARIO: pesos de viralidad
         except Exception as ex: print('tendencias no actualizadas:', ex)
     sb = rotar_estilo.aplicar_estilo(sb, a.estilo)  # elige estilo por temática + tendencia, sin repetir el anterior; respeta estilo_id/--estilo
     sb.setdefault("canal", {"nombre": "Datos y ociosidades", "handle": "@datosyociosidades", "youtube_channel_id": "UCU2ZI-6pBJEr9aSFsF6bxLw"})
@@ -49,8 +51,14 @@ if __name__ == "__main__":
     qa = sh("python3", f"{S}/qa_capsula.py", os.path.join(out, "capsula.mp4"), sbp, ok=(0, 1))
     open(os.path.join(out, "guion.md"), "w").write(guion_md(sb)); open(os.path.join(out, "fuentes.md"), "w").write(fuentes_md(sb))
     sh("python3", f"{S}/metadata.py", out)  # metadata.json: descripción + hashtags + canal
-    sh("python3", f"{S}/publicar.py", out)  # dry-run
+    sh("python3", f"{S}/guion_mj.py", out)  # guion para la voz de Mj
     rotar_estilo.marcar(sb["estilo_id"], sb.get("project_id", out))
     sh("python3", f"{S}/metricas.py", "registrar", out)
     open(os.path.join(out, "LEEME.md"), "w").write(f"Paquete {os.path.basename(out)} · QA {'OK' if qa == 0 else 'CON FALLAS (ver qa.json)'} · NO publicado (publicar.py --ejecutar requiere aprobación y cuentas de Mj).\n")
+    qj = json.load(open(os.path.join(out, "qa.json"))) if os.path.exists(os.path.join(out, "qa.json")) else {}
+    res = {"fecha": a.fecha, "paquete": out, "titulo": sb["title"], "estilo": sb.get("estilo_id"), "qa_ok": qa == 0, "qa": qj,
+           "archivos": sorted(os.listdir(out)), "publicado": False,
+           "comando_subida_privada_PENDIENTE_APROBACION": f"python3 scripts/publicar.py {os.path.relpath(out, R)}/ --plataforma yt --ejecutar",
+           "tiktok": "sin cuenta nueva; la descripción enlaza al TikTok de Mj (CAPCOT_TIKTOK_HANDLE)"}
+    json.dump(res, open(os.path.join(out, "resumen.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     print("PAQUETE:", out, "QA_OK" if qa == 0 else "QA_FALLAS")

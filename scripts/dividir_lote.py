@@ -4,7 +4,7 @@ esquema de validar_storyboard.py (arc, voice, trend_source, cortinilla_fuentes, 
 Uso: python3 scripts/dividir_lote.py proyectos/guiones_lote_01/storyboard.json [--out proyectos]"""
 import argparse, json, os, re
 
-VOICE = {"engine": "edge-tts", "voice_id": "es-MX-JorgeNeural", "rate": "+8%", "pitch": "-2Hz", "pad_seconds": 0.35}
+VOICE = {"engine": "edge-tts", "voice_id": "es-MX-JorgeNeural", "rate": "+11%", "pitch": "-2Hz", "pad_seconds": 0.35}
 
 def cita_corta(title):
     t = re.sub(r"\s+", " ", title).strip()

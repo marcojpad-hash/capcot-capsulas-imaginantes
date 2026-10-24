@@ -3,7 +3,7 @@
 Fecha: 2026-10-24 · Autor: Grok Bot · Estado: **vigente**. Si otro documento contradice este, **manda este**. Los documentos de ChatGPT (`docs/ARQUITECTURA_INICIAL.md`, `docs/FLUJO_DE_PRODUCCION.md`, `docs/MATRIZ_HERRAMIENTAS_GRATUITAS.md`, `templates/storyboard.template.json`, `checklists/revision_final.md`) se conservan como antecedente; sus puntos no contradichos siguen valiendo (no inventar fuentes, no versionar medios pesados, registrar hashes, no tocar el motor U6, no eludir límites de proveedores).
 
 ## 1. Objetivo
-Canal diario **100 % automático** (TikTok + YouTube Shorts) de micro-cápsulas científicas **verticales 9:16, 60–90 s**, concepto *Imaginantes*: periodismo informativo + narrativo, arco dramático, arranque *in medias res*, cierre de la historia + reflexión ontológica o pregunta abierta, la imagen narra, voz sintética mínima, subtítulos quemados, cortinilla con fuentes bibliográficas. Tema elegido por Google Trends (RSS) + backlog; métricas retroalimentan el sistema. **Mj no necesita estar presente**; la revisión humana es opcional.
+Canal diario **100 % automático** (YouTube Shorts; la descripción enlaza al TikTok existente de Mj) de micro-cápsulas científicas **verticales 9:16, 60–90 s**, concepto *Imaginantes*: periodismo informativo + narrativo, arco dramático, arranque *in medias res*, cierre de la historia + reflexión ontológica o pregunta abierta, la imagen narra, voz sintética mínima, subtítulos quemados, cortinilla con fuentes bibliográficas. Tema elegido por Google Trends (RSS) + backlog; métricas retroalimentan el sistema. **Mj no necesita estar presente**; la revisión humana es opcional.
 
 ## 2. Conflictos resueltos (antes → ahora, y por qué)
 | # | Antes (ChatGPT) | Ahora | Razón |
@@ -17,7 +17,7 @@ Canal diario **100 % automático** (TikTok + YouTube Shorts) de micro-cápsulas 
 | 7 | SRT/VTT a mano y revisión de pronunciación humana | **Subtítulos por palabra** desde los *WordBoundary* del TTS (sin whisper); whisper/faster-whisper solo si el motor TTS no da tiempos | Tiempos exactos, cero transcripción, cero intervención. |
 | 8 | Video animado como componente central | **Gancho animado opcional** (1–2 planos de ~5 s) **solo si existe API con créditos** (p. ej. Veo/Kling/Runway API) | Video 100 % generado cuesta US$3–32 por cápsula; híbrido ≈ US$0.25–0.80. |
 | 9 | Control de calidad = reproducir y revisar a mano | **Compuertas automáticas** que el bot verifica (sección 5); revisión humana opcional | Mj no quiere estar presente. |
-| 10 | Publicación no contemplada / "no publicar hasta revisión" | **YouTube automático** (Data API `videos.insert`, público o `publishAt`); **TikTok como borrador** (inbox upload) o scheduler auditado | Direct Post de TikTok sin auditoría solo permite `SELF_ONLY`. |
+| 10 | Publicación no contemplada / "no publicar hasta revisión" | **YouTube automático** (Data API `videos.insert`, público o `publishAt`); ~~TikTok como borrador~~ → sin TikTok: enlace al TikTok de Mj en la descripción | Direct Post de TikTok sin auditoría solo permite `SELF_ONLY`. |
 | 11 | Estados BORRADOR→…→FINAL con aprobaciones humanas | Estados de máquina con criterio automático (sección 4) | Avance sin bloqueo humano. |
 | 12 | Plantilla `storyboard.template.json` | **`templates/storyboard_vertical.template.json`** con `arc`, `trend_source`, `voice`, `cortinilla_fuentes`, `publicacion` | Soporta el arco y la automatización. |
 | 13 | Medios descargados manualmente (`scene_001.mp4`) | `frames/scene_NNN.png` generados por el pipeline; `.mp4` solo para el gancho opcional | Coherente con la ruta por defecto. |
@@ -60,16 +60,16 @@ Fallo en cualquier compuerta → reintento (máx. 2) con la variable culpable (p
 
 ## 6. Publicación
 - **YouTube:** Data API v3 `videos.insert` (OAuth de la cuenta del canal de Mj, una sola vez), `privacyStatus=public` o `publishAt`; título buscable + `#Shorts`; fuentes completas en la descripción.
-- **TikTok:** Content Posting API en modo **upload/borrador** (llega al inbox; Mj publica con un toque) **o** un scheduler ya auditado (Buffer/Metricool/Later, por verificar). Direct Post solo tras auditoría (poco probable para uso propio). Fuentes en comentario fijado.
+- **TikTok:** ~~Content Posting API en modo **upload/borrador** (llega al inbox; Mj publica con un toque) **o** un scheduler ya auditado (Buffer/Metricool/Later, por verificar). Direct Post solo tras auditoría (poco probable para uso propio). Fuentes en comentario fijado.~~ **Corrección 2026-10-24 (Mj): no se crea cuenta nueva de TikTok; no se publica en TikTok desde el sistema. Cada descripción de YouTube enlaza al TikTok existente de Mj (`CAPCOT_TIKTOK_HANDLE`, handle pendiente). TikTok desactivado por defecto en publicar.py.**
 
 ## 7. Ciclo de métricas (semanal, domingo)
-- Recolecta YouTube Analytics (`views`, `averageViewDuration`, `averageViewPercentage`, `likes`, `comments`, `shares`, `subscribersGained`) y TikTok Display API (`video.list`).
+- Recolecta YouTube Analytics (`views`, `averageViewDuration`, `averageViewPercentage`, `likes`, `comments`, `shares`, `subscribersGained`) (TikTok: fuera de alcance).
 - Puntaje = 0.4·retención + 0.3·(compartidos+guardados)/vistas + 0.2·comentarios/vistas + 0.1·subs/vistas.
 - **Una sola variable por semana** (tipo de gancho, estilo visual, duración, voz, horario, tendencia vs. atemporal); 80 % explotación / 20 % exploración; el cambio y su resultado se anotan en `avances/`.
 
 ## 8. Lo que requiere a Mj (una sola vez)
 1. OAuth de YouTube (proyecto Google Cloud + canal) para Data/Analytics API.
-2. App TikTok for Developers (Content Posting + Display) o cuenta en scheduler auditado.
+2. ~~App TikTok for Developers~~ — solo el handle del TikTok de Mj para el enlace.
 3. Clave de API de imagen (proveedor a elegir) y, opcional, Google Cloud TTS (Chirp) y API de video para el gancho.
 4. Música con licencia (YouTube Audio Library / Pixabay) en una carpeta local.
 
@@ -93,5 +93,13 @@ Pendiente de implementar: ingesta de tendencias, generador de guion LLM, adaptad
   frases y entre bloques; nada de escenas mudas largas. Si falta duración, se agrega información respaldada, nunca silencio.
 - **Audio:** ambiente + música bajo la voz (camas a −38/−40 LUFS vs voz −16, sidechain ducking). Audio sintético o CC0 documentado.
 - **Cortinilla final (5–7 s):** "Fuentes" con citas reales (1–4), aviso IA, firma del canal.
-- **Publicación:** cada cápsula genera `metadata.json` (título, descripción con fuentes, hashtags, caption TikTok) que usa publicar.py.
+- **Publicación:** cada cápsula genera `metadata.json` (título, descripción con fuentes, hashtags, enlace al TikTok de Mj) que usa publicar.py.
 - **Estilos:** rotación automática según docs/ESTILOS_VISUALES.md.
+
+
+## Actualización 2026-10-24 (10:35, Mj)
+**Corrección 2026-10-24 (Mj): no se crea cuenta nueva de TikTok; no se publica en TikTok desde el sistema. Cada descripción de YouTube enlaza al TikTok existente de Mj (`CAPCOT_TIKTOK_HANDLE`, handle pendiente). TikTok desactivado por defecto en publicar.py.**
+- **Monetización (meta ~5 dic 2026):** YPP exige 1,000 suscriptores + 10 M vistas válidas de Shorts en 90 días, **o** 1,000 suscriptores + 4,000 h de videos largos públicos en 12 meses (support.google.com/youtube/answer/72851, verificado 2026-10-24). Metas semanales en `scripts/metricas.py metas`.
+- **Videos largos (1–2):** `scripts/compilar_largo.py` une cápsulas en 16:9 1920×1080 (fondo desenfocado, tarjetas de capítulo, `capitulos.txt`). Largo 1: «El clima en historias» (El Niño + cápsulas de clima/mar, 8–12 cápsulas ≈ 12–16 min) a mediados de noviembre. Largo 2: «Historias de la ciencia que no te contaron» (mejores cápsulas por retención, 10–15) a inicios de diciembre. Sus horas son las únicas que cuentan para la ruta de 4,000 h.
+- **Orquestador:** `capsula_diaria.py` = tendencias → guion (LLM gratuito Gemini Flash/Groq o manual) → estilo (revisión **diaria** de estilos virales) → frames → QA → paquete con `guion_mj.md` y `resumen.json`. No publica.
+- **Voz:** es-MX-JorgeNeural +11 % (rango +10/+12). Receta portátil: `docs/RECETA_CAPSULA.md`.

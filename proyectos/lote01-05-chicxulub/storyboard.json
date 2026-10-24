@@ -18,7 +18,7 @@
  "voice": {
   "engine": "edge-tts",
   "voice_id": "es-MX-JorgeNeural",
-  "rate": "+8%",
+  "rate": "+11%",
   "pitch": "-2Hz",
   "pad_seconds": 0.35
  },

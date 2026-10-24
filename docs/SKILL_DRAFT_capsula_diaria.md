@@ -22,7 +22,7 @@ Fuente de verdad: docs/PLAN_MAESTRO_AUTOMATICO.md. Este draft = procedimiento pr
   + sidechain ducking → música ~22–24 dB bajo la voz.
 - **Cortinilla final 6 s:** Fuentes (cita corta + DOI/ref_display), aviso IA/voz/audio, firma del canal.
 - **Estilo visual:** distinto en cada cápsula; rotación con scripts/rotar_estilo.py (docs/ESTILOS_VISUALES.md).
-- **Publicación:** metadata.json (descripción + fuentes + hashtags + caption TikTok) generado por scripts/metadata.py.
+- **Publicación:** metadata.json (descripción + fuentes + hashtags + enlace al TikTok existente de Mj vía CAPCOT_TIKTOK_HANDLE) generado por scripts/metadata.py.
 
 ## Requisitos (instalados en el box)
 python3, ffmpeg/ffprobe, `pip install edge-tts pillow requests`. Voz: es-MX-JorgeNeural +8 %.
@@ -48,14 +48,14 @@ python3, ffmpeg/ffprobe, `pip install edge-tts pillow requests`. Voz: es-MX-Jorg
 6. QA: `python3 scripts/qa_capsula.py capsula.mp4 storyboard.json` → todo PASA. Mirar la cortinilla:
    `ffmpeg -ss <dur-3> -i capsula.mp4 -frames:v 1 /tmp/c.png` (usar `ref_display` en fuentes con URL larga).
 7. Publicación (solo con aprobación): `python3 scripts/publicar.py <salida> [--video capsula_v2.mp4 --storyboard storyboard_v2.json] --ejecutar` (usa metadata.json; dry-run sin --ejecutar)
-   (CAPCOT_YT_TOKEN para YouTube; CAPCOT_TIKTOK_ACCESS_TOKEN → inbox de TikTok como borrador).
+   (token YouTube en ~/.capcot/token.json; TikTok desactivado: no hay cuenta nueva).
 8. Métricas: `python3 scripts/metricas.py registrar|recolectar|reporte` (SQLite data/metricas.db).
 
 ## Git
 `git pull --rebase` antes de commit; solo docs/scripts/storyboards/guion/fuentes; medios en .gitignore; no borrar archivos ajenos.
 
 ## Credenciales pendientes
-CAPCOT_LLM_API_KEY, CAPCOT_IMAGE_API_KEY, OAuth YouTube (CAPCOT_YT_TOKEN), CAPCOT_TIKTOK_ACCESS_TOKEN, música con licencia.
+GEMINI_API_KEY o GROQ_API_KEY (free tier; si no, modo manual), CAPCOT_IMAGE_API_KEY, OAuth YouTube, CAPCOT_TIKTOK_HANDLE (solo enlace), música con licencia.
 
 ## Ejemplo de referencia
 salidas/2026-10-24_fenomeno-el-nino/capsula_v2.mp4 (87.8 s, QA 11/11): storyboard_v2.json, guion_v2.md, metadata.json, HERRAMIENTAS.md.
@@ -65,3 +65,7 @@ salidas/2026-10-24_fenomeno-el-nino/capsula_v2.mp4 (87.8 s, QA 11/11): storyboar
 - Estilo **por temática**, no por rotación: `rotar_estilo.py` usa empate de etiquetas, atractivo y tendencia, y no repite el estilo de la cápsula anterior. Son 34 estilos; ver docs/ESTILOS_VISUALES.md. Incluye claymation, El Principito 2015, Disney clásico y sketch de línea fina.
 - Tendencias: `tendencias_estilos.py` corre cada semana (Google News RSS) y da peso extra a los estilos virales. Hoy claymation y stop-motion de papel van primero.
 - YouTube: `publicar.py` lee `~/.capcot/token.json`, refresca el token y comprueba que `channels.list(mine)` = UCU2ZI-6pBJEr9aSFsF6bxLw. Luego hace `videos.insert` con título, descripción y tags de metadata.json, y `privacyStatus` (por defecto `private`). Verificación de solo lectura: `python3 scripts/publicar.py --verificar-yt`. Subir requiere `--ejecutar` y la aprobación de Mj.
+
+
+**Corrección 2026-10-24 (Mj): no se crea cuenta nueva de TikTok; no se publica en TikTok desde el sistema. Cada descripción de YouTube enlaza al TikTok existente de Mj (`CAPCOT_TIKTOK_HANDLE`, handle pendiente). TikTok desactivado por defecto en publicar.py.**
+Paquete diario incluye guion_mj.md (marcas / y //, versión 30–60 s, fuentes) y resumen.json. Receta: docs/RECETA_CAPSULA.md.

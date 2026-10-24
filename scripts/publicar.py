@@ -5,7 +5,9 @@ Publicar de verdad exige --ejecutar Y credenciales de Mj:
            (override: CAPCOT_YT_CLIENT_SECRETS / CAPCOT_YT_TOKEN). NUNCA commitear ni imprimir esos archivos.
   Verificación solo lectura: python3 scripts/publicar.py --verificar-yt
   TikTok : CAPCOT_TIKTOK_ACCESS_TOKEN (scope video.upload -> buzón de borradores; Mj publica desde la app)
-Uso: python3 scripts/publicar.py salidas/<dir>/  [--plataforma yt|tt|ambas] [--ejecutar]"""
+Uso: python3 scripts/publicar.py salidas/<dir>/  [--plataforma yt] [--ejecutar]
+TikTok DESACTIVADO por defecto (no hay cuenta nueva; la descripción de YT enlaza al TikTok de Mj).
+Solo se usa tt/ambas si además se pasa --habilitar-tiktok."""
 import argparse, json, os, sys
 
 CANAL_ID = "UCU2ZI-6pBJEr9aSFsF6bxLw"  # Datos y ociosidades (@datosyociosidades)
@@ -68,10 +70,11 @@ def tiktok(mp4, md, ejecutar):
 
 if __name__ == "__main__":
     if "--verificar-yt" in sys.argv: verificar_yt(); sys.exit()
-    ap = argparse.ArgumentParser(); ap.add_argument("dir"); ap.add_argument("--plataforma", default="ambas"); ap.add_argument("--video", default="capsula.mp4"); ap.add_argument("--storyboard", default="storyboard.json")
+    ap = argparse.ArgumentParser(); ap.add_argument("dir"); ap.add_argument("--plataforma", default="yt"); ap.add_argument("--habilitar-tiktok", action="store_true"); ap.add_argument("--video", default="capsula.mp4"); ap.add_argument("--storyboard", default="storyboard.json")
     ap.add_argument("--ejecutar", action="store_true", help="publica de verdad (requiere aprobación de Mj)")
     a = ap.parse_args(); META, md = metadatos(a.dir, a.storyboard); mp4 = os.path.join(a.dir, a.video); res = {}
     if a.plataforma in ("yt", "ambas"): res["youtube"] = youtube(mp4, md, a.ejecutar)
-    if a.plataforma in ("tt", "ambas"): res["tiktok"] = tiktok(mp4, md, a.ejecutar)
+    if a.plataforma in ("tt", "ambas") and not a.habilitar_tiktok: res["tiktok"] = "desactivado (usa --habilitar-tiktok)"
+    elif a.plataforma in ("tt", "ambas"): res["tiktok"] = tiktok(mp4, md, a.ejecutar)
     json.dump({"metadatos": md, "resultado": res}, open(os.path.join(a.dir, "publicacion.json"), "w"), ensure_ascii=False, indent=1)
     print("dry-run: nada publicado" if not a.ejecutar else "publicado")

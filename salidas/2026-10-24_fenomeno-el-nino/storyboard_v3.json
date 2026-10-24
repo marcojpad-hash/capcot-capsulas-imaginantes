@@ -1,0 +1,210 @@
+{
+ "project_id": "2026-10-24_fenomeno-el-nino",
+ "serie": "Imaginantes de la ciencia (prueba)",
+ "title": "El mar que llegó en Navidad: El Niño",
+ "language": "es-MX",
+ "aspect_ratio": "9:16",
+ "target_duration_seconds": 88,
+ "trend_source": {
+  "tipo": "google_trends_rss",
+  "rss_geo": "MX",
+  "url": "https://trends.google.com/trending/rss?geo=MX",
+  "termino": "el niño fenomeno",
+  "trafico": "500+",
+  "fecha_consulta": "2026-10-24"
+ },
+ "estilo_visual": "Linograbado (linocut) bitono índigo y ocre sobre papel crema",
+ "voice": {
+  "engine": "edge-tts",
+  "voice_id": "es-MX-JorgeNeural",
+  "rate": "+11%",
+  "pitch": "-2Hz",
+  "pad_seconds": 0.35,
+  "modo_pausas": "continuo"
+ },
+ "sources": [
+  {
+   "id": "SRC-001",
+   "cita_corta": "L'Heureux, M. (2014). What is ENSO in a nutshell? NOAA Climate.gov.",
+   "url": "https://www.climate.gov/news-features/blogs/enso/what-el-nino-southern-oscillation-enso-nutshell",
+   "accessed": "2026-10-24",
+   "supports": [
+    "pescadores sudamericanos, Navidad",
+    "Walker y la Oscilación del Sur",
+    "Bjerknes, finales de los 60",
+    "ENSO influye temperatura y lluvia en todo el globo",
+    "El Niño: calentamiento superficial del Pacífico tropical central y oriental",
+    "vientos del este se debilitan o invierten",
+    "lluvia baja en Indonesia y sube en el Pacífico tropical",
+    "Walker no reconoció el vínculo con el océano",
+    "La Niña: enfriamiento, fase opuesta",
+    "se puede predecir con varias estaciones de anticipación"
+   ],
+   "ref_display": "climate.gov › ENSO in a nutshell"
+  },
+  {
+   "id": "SRC-002",
+   "cita_corta": "Bjerknes, J. (1969). Monthly Weather Review 97, 163-172.",
+   "doi": "10.1175/1520-0493(1969)097<0163:ATFTEP>2.3.CO;2",
+   "url": "https://doi.org/10.1175/1520-0493(1969)097%3C0163:ATFTEP%3E2.3.CO;2",
+   "accessed": "2026-10-24",
+   "supports": [
+    "acoplamiento océano-atmósfera"
+   ]
+  },
+  {
+   "id": "SRC-003",
+   "cita_corta": "McPhaden, Zebiak & Glantz (2006). Science 314, 1740-1745.",
+   "doi": "10.1126/science.1132588",
+   "url": "https://doi.org/10.1126/science.1132588",
+   "accessed": "2026-10-24",
+   "supports": [
+    "ENSO con impactos globales"
+   ]
+  }
+ ],
+ "scenes": [
+  {
+   "id": "scene_001",
+   "arc": "hook_medias_res",
+   "duration_seconds": 9.0,
+   "narration": "Navidad, costa de Sudamérica. El agua que debería estar fría llega tibia. Cada tantos años, el mar se calienta justo por estas fechas.",
+   "on_screen_text": "Navidad: el mar, tibio",
+   "visual_description": "ver prompt",
+   "image_prompt": "linocut indigo/ocre (ver registro)",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "asset_filename": "frames/scene_001.jpg",
+   "arc_imaginantes": "gancho"
+  },
+  {
+   "id": "scene_002",
+   "arc": "desarrollo",
+   "duration_seconds": 5.7,
+   "narration": "Los pescadores lo bautizaron por la fiesta: El Niño, como el niño de Navidad.",
+   "on_screen_text": "Le llamaron El Niño",
+   "visual_description": "ver prompt",
+   "image_prompt": "linocut indigo/ocre (ver registro)",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "asset_filename": "frames/scene_002.jpg",
+   "arc_imaginantes": "ancla"
+  },
+  {
+   "id": "scene_003",
+   "arc": "desarrollo",
+   "duration_seconds": 9.7,
+   "narration": "Lejos de ahí, Sir Gilbert Walker estudiaba la presión del aire. Descubrió un vaivén enorme entre Indonesia y el Pacífico tropical: la Oscilación del Sur.",
+   "on_screen_text": "La Oscilación del Sur",
+   "visual_description": "ver prompt",
+   "image_prompt": "linocut indigo/ocre (ver registro)",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "asset_filename": "frames/scene_003.jpg",
+   "arc_imaginantes": "relato_beat1"
+  },
+  {
+   "id": "scene_004",
+   "arc": "desarrollo",
+   "duration_seconds": 6.8,
+   "narration": "Pero no vio que estaba ligado al mar. Él tenía media historia; los pescadores, la otra mitad.",
+   "on_screen_text": "La mitad de la historia",
+   "visual_description": "ver prompt",
+   "image_prompt": "linocut indigo/ocre (ver registro)",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "asset_filename": "frames/scene_004.jpg",
+   "arc_imaginantes": "relato_beat2"
+  },
+  {
+   "id": "scene_005",
+   "arc": "desarrollo",
+   "duration_seconds": 8.6,
+   "narration": "A finales de los sesenta, Jacob Bjerknes y otros unieron las piezas: océano y atmósfera estaban conectados. Así nació el nombre ENSO.",
+   "on_screen_text": "Océano + atmósfera",
+   "visual_description": "ver prompt",
+   "image_prompt": "linocut indigo/ocre (ver registro)",
+   "source_ids": [],
+   "asset_filename": "frames/scene_005.jpg",
+   "arc_imaginantes": "relato_beat3"
+  },
+  {
+   "id": "scene_006",
+   "arc": "cierre_historia",
+   "duration_seconds": 14.1,
+   "narration": "Durante El Niño, se calienta la superficie del Pacífico tropical. Los vientos que soplan de este a oeste se debilitan, y a veces se invierten. Su fase opuesta, cuando el mar se enfría, se llama La Niña.",
+   "on_screen_text": "Vientos que se invierten",
+   "visual_description": "ver prompt",
+   "image_prompt": "linocut indigo/ocre (ver registro)",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "asset_filename": "frames/scene_006.jpg",
+   "arc_imaginantes": "giro"
+  },
+  {
+   "id": "scene_007",
+   "arc": "cierre_historia",
+   "duration_seconds": 17.7,
+   "narration": "La lluvia se muda: baja en Indonesia y sube en el Pacífico. Y al cambiar la circulación de la atmósfera, cambian el calor y la lluvia en todo el planeta. Por eso los científicos lo vigilan: a menudo pueden anticipar su llegada con varias estaciones de ventaja.",
+   "on_screen_text": "ENSO",
+   "visual_description": "ver prompt",
+   "image_prompt": "linocut indigo/ocre (ver registro)",
+   "source_ids": [
+    "SRC-001",
+    "SRC-003"
+   ],
+   "asset_filename": "frames/scene_007.jpg",
+   "arc_imaginantes": "cierre"
+  },
+  {
+   "id": "scene_008",
+   "arc": "reflexion_o_pregunta",
+   "duration_seconds": 11.5,
+   "narration": "Un nombre de pescadores terminó describiendo un pulso del clima de la Tierra entera. ¿Cuántos gigantes más se esconden en lo que hoy llamamos costumbre? Esto fue Datos y ociosidades.",
+   "on_screen_text": "",
+   "visual_description": "ver prompt",
+   "image_prompt": "linocut indigo/ocre (ver registro)",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "asset_filename": "frames/scene_008.jpg",
+   "arc_imaginantes": "reflexion_firma"
+  }
+ ],
+ "cortinilla_fuentes": {
+  "duration_seconds": 6,
+  "titulo": "Fuentes",
+  "aviso": "Imágenes generadas con IA. Voz sintética (edge-tts). Ambiente y música sintetizados con ffmpeg.",
+  "bg_rgb": [
+   20,
+   28,
+   52
+  ],
+  "firma": "Datos y ociosidades · @datosyociosidades"
+ },
+ "audio": {
+  "ambiente": "oceano+viento",
+  "music_asset": "sintetico:menor_calma",
+  "music_license": "Sintetizado con ffmpeg (aevalsrc/anoisesrc) por el pipeline: obra propia, sin derechos de terceros",
+  "ducking": "sidechaincompress thr 0.02 ratio 6; camas a -38/-40 LUFS vs voz -16 LUFS"
+ },
+ "export": {
+  "filename": "capsula_v3.mp4",
+  "resolution": "1080x1920",
+  "fps": 30,
+  "subtitle_max_words": 3
+ },
+ "estado": "STORYBOARD_VALIDADO",
+ "version": "v2",
+ "canal": {
+  "nombre": "Datos y ociosidades",
+  "handle": "@datosyociosidades",
+  "youtube_channel_id": "UCU2ZI-6pBJEr9aSFsF6bxLw"
+ },
+ "estilo_id": "linograbado"
+}
