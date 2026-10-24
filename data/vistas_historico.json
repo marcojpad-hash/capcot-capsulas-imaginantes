@@ -20,5 +20,52 @@
     },
     "suscriptores": 1,
     "tiktok": "pendiente de Studio (sin cifras en repo)"
+  },
+  {
+    "timestamp_cdmx": "2026-10-24T16:09:00-06:00",
+    "youtube": {
+      "5D96DmjvioU": {
+        "view": 40,
+        "like": 3,
+        "comment": 0
+      },
+      "ZrUtKs7Ty7U": {
+        "view": 36,
+        "like": 2,
+        "comment": 0
+      }
+    },
+    "youtube_totales": {
+      "view": 76,
+      "like": 5,
+      "comment": 0
+    },
+    "suscriptores": 2,
+    "tiktok": {
+      "fuente": "TikTok Studio",
+      "videos": {
+        "serpientes": {
+          "view": 0,
+          "like": 0,
+          "comment": 0
+        },
+        "el_nino_hashtags_IA": {
+          "view": 79,
+          "like": 2,
+          "comment": 0
+        },
+        "el_nino_mar_navidad": {
+          "view": 0,
+          "like": 0,
+          "comment": 0
+        }
+      },
+      "totales": {
+        "view": 79,
+        "like": 2,
+        "comment": 0
+      },
+      "seguidores": 0
+    }
   }
 ]
