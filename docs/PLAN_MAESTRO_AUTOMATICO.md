@@ -3,7 +3,7 @@
 Fecha: 2026-10-24 · Autor: Grok Bot · Estado: **vigente**. Si otro documento contradice este, **manda este**. Los documentos de ChatGPT (`docs/ARQUITECTURA_INICIAL.md`, `docs/FLUJO_DE_PRODUCCION.md`, `docs/MATRIZ_HERRAMIENTAS_GRATUITAS.md`, `templates/storyboard.template.json`, `checklists/revision_final.md`) se conservan como antecedente; sus puntos no contradichos siguen valiendo (no inventar fuentes, no versionar medios pesados, registrar hashes, no tocar el motor U6, no eludir límites de proveedores).
 
 ## 1. Objetivo
-Canal diario **100 % automático** (YouTube Shorts; la descripción enlaza al TikTok existente de Mj) de micro-cápsulas científicas **verticales 9:16, 60–90 s**, concepto *Imaginantes*: periodismo informativo + narrativo, arco dramático, arranque *in medias res*, cierre de la historia + reflexión ontológica o pregunta abierta, la imagen narra, voz sintética mínima, subtítulos quemados, cortinilla con fuentes bibliográficas. Tema elegido por Google Trends (RSS) + backlog; métricas retroalimentan el sistema. **Mj no necesita estar presente**; la revisión humana es opcional.
+Canal diario **100 % automático** (YouTube Shorts; la descripción enlaza al TikTok existente de Mj) de micro-cápsulas científicas **verticales 9:16, 60–90 s**, concepto *Imaginantes*: periodismo informativo + narrativo, arco dramático, arranque *in medias res*, cierre de la historia + reflexión ontológica o pregunta abierta, la imagen narra, voz sintética mínima, subtítulos quemados, cortinilla con fuentes bibliográficas. Tema: **noticia científica/de investigación reciente (≤7 días) con estudio original citado** (feeds RSS de ciencia; Google Trends como señal secundaria; backlog solo de respaldo — ver §10); métricas retroalimentan el sistema. **Mj no necesita estar presente**; la revisión humana es opcional.
 
 ## 2. Conflictos resueltos (antes → ahora, y por qué)
 | # | Antes (ChatGPT) | Ahora | Razón |
@@ -24,7 +24,7 @@ Canal diario **100 % automático** (YouTube Shorts; la descripción enlaza al Ti
 | 14 | Checklist de 1–3 min | Checklist = compuertas de la sección 5 (el archivo antiguo queda como referencia) | Duración y formato nuevos. |
 
 ## 3. Ruta técnica por defecto (sin clicks)
-1. **Tendencias** — RSS `https://trends.google.com/trending/rss?geo=MX` (+ES, US, AR), feeds ScienceDaily/Phys.org/EurekAlert, backlog atemporal. Mezcla 70 % atemporal / 30 % tendencia. (pytrends: no usar.)
+1. **Temas** — PRIORIDAD: noticias científicas de los últimos ~7 días (`scripts/tendencias.py`: ScienceDaily, Phys.org, NASA, ESA, Nature, UNAM Global; EurekAlert/SINC si su RSS responde), luego Google Trends RSS MX como señal secundaria; backlog atemporal solo de respaldo. ~~Mezcla 70 % atemporal / 30 % tendencia~~ (sustituido 2026-10-24). (pytrends: no usar.)
 2. **Guion** — LLM rellena `storyboard_vertical.template.json` (arco completo, ≤12 palabras en la primera frase, una idea, ninguna cifra sin fuente).
 3. **Fuentes** — cada DOI se verifica contra Crossref (`api.crossref.org/works/<doi>`); si no resuelve, la fuente y la afirmación se eliminan o el guion se regenera.
 4. **Imágenes** — 8–12 frames 1080×1920 con estilo fijo (papel recortado / miniatura) y semilla de estilo. Proveedor intercambiable: API de imagen con clave de Mj (opción recomendada) o modelo local/gratuito. Sin imagen → no se publica (no placeholders en producción).
@@ -109,3 +109,13 @@ Pendiente de implementar: ingesta de tendencias, generador de guion LLM, adaptad
 - Voz por defecto: es-MX-JorgeNeural **+7%** (antes +11%). El Niño v4 = referencia.
 - **Cancelado** `guion_mj.md` / versión para la voz de Mj (otro proyecto): desconectado de `capsula_diaria.py`; el script se movió a `docs/obsoleto/guion_mj.py` con nota.
 - TikTok fijo: https://www.tiktok.com/@datosyociosidades (cuenta existente; CAPCOT_TIKTOK_HANDLE solo para sobreescribir).
+
+
+## 10. Temas de actualidad científica y reparto ChatGPT / Grok Bot (2026-10-24, Mj)
+**Cómo se elegían hasta hoy:** `tendencias.py` leía solo el RSS de Google Trends MX y puntuaba palabras con ángulo científico; `capsula_diaria.py` (sin `--storyboard`) tomaba el mejor término no deportivo y no repetido del día; si puntuaba <6, backlog atemporal. Las del lote 01 (El Niño, petróleo, balón con curva, tardígrado, Chicxulub) eran temas fijos preescritos. ChatGPT solo podía dejar una 3.ª cápsula externa en `cola/entrada/`.
+
+**Desde hoy:**
+1. **Prioridad editorial:** noticias científicas y de investigación RECIENTES (≤7 días): estudios publicados, descubrimientos, misiones espaciales, salud, clima. Fuentes reales: Nature/Science news, EurekAlert, ScienceDaily, Phys.org, NASA/ESA/JAXA, SINC, Agencia Informativa Conacyt, UNAM Global. `tendencias.py` lee esos RSS primero (base 6 + recencia) y Google Trends después.
+2. **Estudio original obligatorio:** cada cápsula de actualidad cita el paper (DOI verificado en Crossref) o el comunicado oficial de la agencia, no solo la nota de prensa.
+3. **ChatGPT = productor de la cápsula de actualidad del día:** propone la noticia, escribe el storyboard según docs/RECETA_CAPSULA.md y deja el paquete (storyboard.json + frames o mp4 + fuentes.md) en `cola/entrada/`. **Nunca publica.**
+4. **Grok Bot = editor y publicador:** revisa la noticia y el DOI, aplica la receta, corre `procesar_cola.py` / `capsula_diaria.py` y `qa_capsula.py`; solo publica si QA pasa y el tema no se repite en el día. Grok Bot también produce sus propias cápsulas (2/día máx.) con el mismo criterio de actualidad.

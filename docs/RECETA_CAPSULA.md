@@ -2,14 +2,19 @@
 
 Pega este documento completo en cualquier modelo (Gemini, Groq/Llama, ChatGPT, Grok, Claude…) y pídele: «Hazme la cápsula de hoy sobre <TEMA>, siguiendo la receta. Devuelve SOLO el JSON storyboard_vertical y luego la descripción».
 
+**Rol de ChatGPT (2026-10-24, Mj):** ChatGPT propone y produce la **cápsula de actualidad científica del día** (noticia ≤7 días, estudio original citado) y la deja en `cola/entrada/` como paquete (storyboard + frames o mp4 + fuentes). **ChatGPT nunca publica.** Grok Bot revisa (fuentes, DOI, receta), corre QA y publica. Detalle en docs/FLUJO_EXTERNO.md.
+
 Canal: **Datos y ociosidades** · @datosyociosidades · YouTube UCU2ZI-6pBJEr9aSFsF6bxLw. TikTok: **@datosyociosidades** (cuenta existente, sin cuenta nueva); toda descripción de YouTube lleva la línea fija `TikTok: https://www.tiktok.com/@datosyociosidades`.
 
 ## 1. Reglas editoriales
 - Periodismo informativo-narrativo estilo «Imaginantes»: una historia real con personas, lugar y momento; el dato científico es el giro, no una lista.
-- Arco obligatorio: `hook_medias_res` (in medias res, primera frase ≤12 palabras) → `desarrollo` (2–4 escenas) → `cierre_historia` (1–2) → `reflexion_o_pregunta` (reflexión ontológica o pregunta abierta + «Esto fue Datos y ociosidades.»).
+- Arco obligatorio (campo técnico; el contenido del gancho depende de `estructura`: pregunta, mito_vs_dato, comparacion, sabias_que o historia): `hook_medias_res` (in medias res, primera frase ≤12 palabras) → `desarrollo` (2–4 escenas) → `cierre_historia` (1–2) → `reflexion_o_pregunta` (reflexión ontológica o pregunta abierta + «Esto fue Datos y ociosidades.»).
 - Cada afirmación factual tiene `source_ids`. Nada de cifras inventadas, nada de «se dice que». Si no hay fuente, no se dice.
 - Lenguaje: español de México, frases cortas, verbos concretos, segunda persona ocasional. Sin clickbait falso.
-- Tema: el que tenga tendencia hoy (Google Trends/News MX) y se pueda contar con fuentes; si ninguno puntúa ≥6, usar backlog atemporal.
+- **Tema (actualizado 2026-10-24, Mj): PRIORIDAD = noticia científica o de investigación RECIENTE (últimos ~7 días)**: estudio recién publicado, descubrimiento, misión espacial, salud, clima/ambiente. Se busca en fuentes reales: Nature/Science news, EurekAlert, ScienceDaily, Phys.org, NASA/ESA/JAXA, SINC, Agencia Informativa Conacyt, UNAM Global/Gaceta UNAM (`python3 scripts/tendencias.py` ya lee estos RSS y los puntúa antes que Google Trends).
+- **Siempre se cita el estudio original** (DOI o comunicado oficial de la institución/agencia) además de la nota de prensa; se verifica que el DOI resuelva (Crossref) y que el estudio diga lo que la cápsula afirma. La fecha de publicación va en `trend_source.fecha_publicacion`.
+- Google Trends es señal secundaria (sirve para elegir entre noticias o enganchar con lo que se busca); backlog atemporal solo si no hay noticia científica verificable de la semana. Nada de deportes, crimen ni tragedias.
+- `trend_source` para noticias: `{"tipo": "noticia_cientifica", "medio": "...", "url": "<nota>", "estudio_doi": "...", "fecha_publicacion": "AAAA-MM-DD", "termino": "<tema corto>", "fecha_consulta": "AAAA-MM-DD"}`.
 
 ## 2. Duración y ritmo
 - Total **75–90 s** (QA acepta 60–95 s). **170–235 palabras** (máx. 240) con voz es-MX-JorgeNeural a **+11 %** (rango +10 a +12 %), pitch −2 Hz.
