@@ -18,6 +18,6 @@ def generar(d, sbn="storyboard.json"):
             f"Suscríbete: {CANAL['handle']}\n\n{' '.join(hashtags)}")
     md = {"canal": CANAL, "titulo": (sb["title"] + " #Shorts")[:100], "descripcion": desc[:4900], "hashtags": hashtags,
           "tags": [h.lstrip("#") for h in hashtags], "idioma": "es-MX", "categoria_yt": "27", "contiene_ia": True,
-          "tiktok_caption": f"{gancho} {' '.join(hashtags)}"[:2200]}
+          "privacyStatus": "private", "tiktok_caption": f"{gancho} {' '.join(hashtags)}"[:2200]}
     json.dump(md, open(os.path.join(d, "metadata.json"), "w"), ensure_ascii=False, indent=1); return md
 if __name__ == "__main__": print(json.dumps(generar(sys.argv[1], *(sys.argv[2:3])), ensure_ascii=False, indent=1))

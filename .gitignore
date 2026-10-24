@@ -17,3 +17,7 @@ salidas/*/frames/
 *.jpeg
 salidas/**/*.log
 data/*.db
+referencias_estilo/
+client_secret*.json
+token*.json
+.capcot/

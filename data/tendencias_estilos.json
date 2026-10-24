@@ -1,0 +1,38 @@
+{
+ "actualizado": "2026-10-24",
+ "fuente": [
+  "https://www.opus.pro/blog/claymation-ai",
+  "https://vvideo.co/blog/stop-motion-tiktok-reels-comeback",
+  "https://toklytics.app/hashtag/stopmotionanimation",
+  "https://www.opus.pro/blog/viral-ai-video-styles-2026"
+ ],
+ "nota": "Claymation = estética #1 en TikTok 2026 (contra-tendencia al 'AI slop'); stop-motion/mixed media en auge; Ghibli/2D pintado fue 2025.",
+ "pesos": {
+  "claymation": 0.67,
+  "papel_stop_motion": 0.8,
+  "principito_2015": 0.3,
+  "carton_recortado": 0.5,
+  "amigurumi": 0.25,
+  "papel_recortado_popup": 0.5,
+  "disney_clasico": 0.15,
+  "acuarela_linea": 0.27,
+  "pixel_art": 0.0,
+  "ukiyo_e": 0.0,
+  "pop_art_comic": 0.0,
+  "risografia": 0.0,
+  "van_gogh": 0.0
+ },
+ "conteo_ultimo": {
+  "claymation": 2,
+  "papel_stop_motion": 6,
+  "principito_2015": 0,
+  "disney_clasico": 0,
+  "acuarela_linea": 2,
+  "pixel_art": 0,
+  "ukiyo_e": 0,
+  "pop_art_comic": 0,
+  "amigurumi": 0,
+  "risografia": 0,
+  "van_gogh": 0
+ }
+}

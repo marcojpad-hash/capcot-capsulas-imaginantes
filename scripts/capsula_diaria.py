@@ -35,8 +35,11 @@ if __name__ == "__main__":
         for s in sb["scenes"]:
             f = os.path.join(src_dir, s["asset_filename"])
             if os.path.exists(f): shutil.copy(f, os.path.join(out, s["asset_filename"]))
-    sys.path.insert(0, S); import rotar_estilo
-    sb = rotar_estilo.aplicar_estilo(sb, a.estilo)  # rota estilos (scripts/estilos.json); respeta estilo_id si ya viene
+    sys.path.insert(0, S); import rotar_estilo, tendencias_estilos
+    if not tendencias_estilos.vigente():
+        try: tendencias_estilos.actualizar()  # semanal: pesos de viralidad
+        except Exception as ex: print('tendencias no actualizadas:', ex)
+    sb = rotar_estilo.aplicar_estilo(sb, a.estilo)  # elige estilo por temática + tendencia, sin repetir el anterior; respeta estilo_id/--estilo
     sb.setdefault("canal", {"nombre": "Datos y ociosidades", "handle": "@datosyociosidades", "youtube_channel_id": "UCU2ZI-6pBJEr9aSFsF6bxLw"})
     sb.setdefault("cortinilla_fuentes", {}).setdefault("firma", "Datos y ociosidades · @datosyociosidades")
     sbp = os.path.join(out, "storyboard.json"); json.dump(sb, open(sbp, "w", encoding="utf-8"), ensure_ascii=False, indent=1)

@@ -59,3 +59,9 @@ CAPCOT_LLM_API_KEY, CAPCOT_IMAGE_API_KEY, OAuth YouTube (CAPCOT_YT_TOKEN), CAPCO
 
 ## Ejemplo de referencia
 salidas/2026-10-24_fenomeno-el-nino/capsula_v2.mp4 (87.8 s, QA 11/11): storyboard_v2.json, guion_v2.md, metadata.json, HERRAMIENTAS.md.
+
+
+## Estilos y publicación (actualización 2026-10-24 10:30)
+- Estilo **por temática**, no por rotación: `rotar_estilo.py` usa empate de etiquetas, atractivo y tendencia, y no repite el estilo de la cápsula anterior. Son 34 estilos; ver docs/ESTILOS_VISUALES.md. Incluye claymation, El Principito 2015, Disney clásico y sketch de línea fina.
+- Tendencias: `tendencias_estilos.py` corre cada semana (Google News RSS) y da peso extra a los estilos virales. Hoy claymation y stop-motion de papel van primero.
+- YouTube: `publicar.py` lee `~/.capcot/token.json`, refresca el token y comprueba que `channels.list(mine)` = UCU2ZI-6pBJEr9aSFsF6bxLw. Luego hace `videos.insert` con título, descripción y tags de metadata.json, y `privacyStatus` (por defecto `private`). Verificación de solo lectura: `python3 scripts/publicar.py --verificar-yt`. Subir requiere `--ejecutar` y la aprobación de Mj.
