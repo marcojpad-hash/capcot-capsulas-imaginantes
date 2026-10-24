@@ -2,6 +2,8 @@
 
 **Reparto (2026-10-24, Mj):** ChatGPT **propone y produce** la cápsula de actualidad científica del día y la deja en cola; **nunca publica** (ni YouTube ni TikTok). Grok Bot **revisa, hace QA y publica**.
 
+> **Antes de producir, lee [docs/GUIA_MODELO_EXTERNO.md](GUIA_MODELO_EXTERNO.md)**: qué leer, el estilo por tema, la voz obligatoria (JorgeNeural +7 %; si no la tienes, entrega sin montar), el formato del paquete en `cola/entrada/<project_id>/`, el checklist de autocrítica y el anti-ejemplo Ideonella.
+
 ## 0. Cómo elige ChatGPT el tema
 - Noticia científica o de investigación de los **últimos ~7 días** (estudio publicado, descubrimiento, misión espacial, salud, clima), buscada en fuentes reales: Nature/Science news, EurekAlert, ScienceDaily, Phys.org, NASA/ESA/JAXA, SINC, Agencia Informativa Conacyt, UNAM Global. Puede partir de `python3 scripts/tendencias.py` (feeds de ciencia primero).
 - Abre el **estudio original** (DOI) o comunicado oficial y solo afirma lo que este respalda. `trend_source.tipo = "noticia_cientifica"` con `url`, `estudio_doi` y `fecha_publicacion`.

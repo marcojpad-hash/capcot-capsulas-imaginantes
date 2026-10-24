@@ -1,0 +1,283 @@
+{
+ "project_id": "2026-10-24_ideonella-pet",
+ "serie": "Datos y ociosidades",
+ "title": "La bacteria que come plástico… sin magia",
+ "titulo": "¿Un microbio come plástico?",
+ "language": "es-MX",
+ "aspect_ratio": "9:16",
+ "target_duration_seconds": 82,
+ "estructura": "pregunta",
+ "estilo_id": "claymation",
+ "estilo_visual": "Claymation / plastilina (propio)",
+ "trend_source": {
+  "tipo": "atemporal_backlog",
+  "rss_geo": "MX",
+  "termino": "bacteria que degrada PET",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/26965627/",
+  "fecha_consulta": "2026-10-24",
+  "puntaje": 0
+ },
+ "resumen": "Ideonella sakaiensis (Sakai, Japón, 2016) usa PET como fuente de carbono con dos enzimas, PETasa y MHETasa; el efecto depende del tipo de PET y las condiciones.",
+ "voice": {
+  "engine": "edge-tts",
+  "voice_id": "es-MX-JorgeNeural",
+  "rate": "+7%",
+  "pitch": "-2Hz",
+  "pad_seconds": 0.3,
+  "modo_pausas": "continuo"
+ },
+ "sources": [
+  {
+   "id": "SRC-001",
+   "cita_corta": "Yoshida et al. (2016). Science 351, 1196–1199.",
+   "doi": "10.1126/science.aad6359",
+   "url": "https://doi.org/10.1126/science.aad6359",
+   "accessed": "2026-10-24",
+   "supports": [
+    "Ideonella sakaiensis puede usar PET como fuente principal de carbono y energía",
+    "PETasa y MHETasa participan en la degradación enzimática del PET"
+   ]
+  },
+  {
+   "id": "SRC-002",
+   "cita_corta": "Tanasupawat et al. (2016). Int J Syst Evol Microbiol 66, 2813–2818.",
+   "doi": "10.1099/ijsem.0.001058",
+   "url": "https://doi.org/10.1099/ijsem.0.001058",
+   "accessed": "2026-10-24",
+   "supports": [
+    "Descripción taxonómica de Ideonella sakaiensis aislada de un consorcio que degrada PET"
+   ]
+  },
+  {
+   "id": "SRC-004",
+   "cita_corta": "Walter et al. (2022). Archives of Microbiology.",
+   "doi": "10.1007/s00203-022-03306-w",
+   "url": "https://doi.org/10.1007/s00203-022-03306-w",
+   "accessed": "2026-10-24",
+   "supports": [
+    "Estudio de siete semanas sobre dos materiales comerciales de PET",
+    "La degradación depende de las características del material y del ensayo"
+   ]
+  },
+  {
+   "id": "SRC-005",
+   "cita_corta": "Yang, Yang & Jiang (2016). Science 353, 759. Comment.",
+   "doi": "10.1126/science.aaf8305",
+   "url": "https://doi.org/10.1126/science.aaf8305",
+   "accessed": "2026-10-24",
+   "supports": [
+    "Advertencia crítica sobre interpretar la eficiencia de degradación observada con PET de baja cristalinidad"
+   ]
+  }
+ ],
+ "scenes": [
+  {
+   "id": "scene_001",
+   "arc": "hook_medias_res",
+   "duration_seconds": 10.0,
+   "narration": "¿Un microbio que come botellas? Suena a ciencia ficción. Pero en Japón encontraron uno, y la historia es más interesante que el mito.",
+   "on_screen_text": "¿Come plástico?",
+   "visual_description": "a tiny cute plasticine bacterium character with a fork nibbling the edge of a clear plastic PET bottle lying on a riverbank",
+   "image_prompt": "claymation stop-motion scene, plasticine characters and set with visible fingerprints, soft studio lighting, miniature handmade props, vertical 9:16, no text + a tiny cute plasticine bacterium character with a fork nibbling the edge of a clear plastic PET bottle lying on a riverbank",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "asset_filename": "frames/scene_001.jpg",
+   "sfx": [
+    "viento"
+   ],
+   "ambiente": "viento"
+  },
+  {
+   "id": "scene_002",
+   "arc": "desarrollo",
+   "duration_seconds": 8.9,
+   "narration": "En Sakai, Japón, un equipo tomó muestras cerca de una planta de reciclaje de PET, el plástico de muchas botellas.",
+   "on_screen_text": "Sakai, Japón",
+   "visual_description": "scientist plasticine figure in lab coat scooping sediment into a glass jar beside piles of crushed plastic bottles at a recycling plant",
+   "image_prompt": "claymation stop-motion scene, plasticine characters and set with visible fingerprints, soft studio lighting, miniature handmade props, vertical 9:16, no text + scientist plasticine figure in lab coat scooping sediment into a glass jar beside piles of crushed plastic bottles at a recycling plant",
+   "source_ids": [
+    "SRC-001",
+    "SRC-002"
+   ],
+   "asset_filename": "frames/scene_002.jpg",
+   "sfx": [
+    "madera"
+   ],
+   "ambiente": "mercado",
+   "capa": {
+    "tipo": "mapa",
+    "region": [
+     125,
+     147,
+     28,
+     44
+    ],
+    "puntos": [
+     {
+      "nombre": "Sakai",
+      "lon": 135.48,
+      "lat": 34.57
+     }
+    ],
+    "titulo": "Sakai, Japón",
+    "fuente": "Yoshida et al. 2016 · Natural Earth"
+   }
+  },
+  {
+   "id": "scene_003",
+   "arc": "desarrollo",
+   "duration_seconds": 9.3,
+   "narration": "En 2016 describieron Ideonella sakaiensis: una bacteria capaz de usar ese plástico como fuente de carbono y energía, en el laboratorio.",
+   "on_screen_text": "Ideonella sakaiensis",
+   "visual_description": "giant plasticine rod-shaped bacterium clinging to a thin clear plastic film inside a petri dish under a microscope lamp",
+   "image_prompt": "claymation stop-motion scene, plasticine characters and set with visible fingerprints, soft studio lighting, miniature handmade props, vertical 9:16, no text + giant plasticine rod-shaped bacterium clinging to a thin clear plastic film inside a petri dish under a microscope lamp",
+   "source_ids": [
+    "SRC-001",
+    "SRC-002"
+   ],
+   "asset_filename": "frames/scene_003.jpg",
+   "sfx": [
+    "reloj"
+   ],
+   "ambiente": "viento"
+  },
+  {
+   "id": "scene_004",
+   "arc": "desarrollo",
+   "duration_seconds": 10.0,
+   "narration": "No lo devora como un animal. Produce dos enzimas: la PETasa corta la cadena del polímero, y la MHETasa rompe un fragmento intermedio.",
+   "on_screen_text": "Dos enzimas",
+   "visual_description": "two small plasticine enzyme characters, one with scissors, cutting a long chain of clear beads representing a polymer",
+   "image_prompt": "claymation stop-motion scene, plasticine characters and set with visible fingerprints, soft studio lighting, miniature handmade props, vertical 9:16, no text + two small plasticine enzyme characters, one with scissors, cutting a long chain of clear beads representing a polymer",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "asset_filename": "frames/scene_004.jpg",
+   "sfx": [
+    "pluma"
+   ],
+   "ambiente": "viento",
+   "capa": {
+    "tipo": "dato",
+    "valor": "2 enzimas",
+    "etiqueta": "PETasa + MHETasa",
+    "fuente": "Yoshida et al., Science 2016"
+   }
+  },
+  {
+   "id": "scene_005",
+   "arc": "desarrollo",
+   "duration_seconds": 8.9,
+   "narration": "Esos fragmentos se convierten en moléculas más simples que la bacteria aprovecha para crecer. No es desaparición mágica: es química.",
+   "on_screen_text": "Plástico → moléculas",
+   "visual_description": "clear plastic fragments transforming into small colorful plasticine molecule balls that a bacterium collects into a basket",
+   "image_prompt": "claymation stop-motion scene, plasticine characters and set with visible fingerprints, soft studio lighting, miniature handmade props, vertical 9:16, no text + clear plastic fragments transforming into small colorful plasticine molecule balls that a bacterium collects into a basket",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "asset_filename": "frames/scene_005.jpg",
+   "sfx": [
+    "pluma"
+   ],
+   "ambiente": "viento"
+  },
+  {
+   "id": "scene_006",
+   "arc": "desarrollo",
+   "duration_seconds": 10.0,
+   "narration": "Pero hay letra chiquita. El primer estudio usó PET de baja cristalinidad, mucho más fácil de degradar que el de muchos productos comerciales.",
+   "on_screen_text": "No todo PET es igual",
+   "visual_description": "plasticine lab bench comparing a soft thin plastic film and a hard thick plastic bottle, magnifying glass, warm lab lighting",
+   "image_prompt": "claymation stop-motion scene, plasticine characters and set with visible fingerprints, soft studio lighting, miniature handmade props, vertical 9:16, no text + plasticine lab bench comparing a soft thin plastic film and a hard thick plastic bottle, magnifying glass, warm lab lighting",
+   "source_ids": [
+    "SRC-005"
+   ],
+   "asset_filename": "frames/scene_006.jpg",
+   "sfx": [
+    "reloj"
+   ],
+   "ambiente": "lluvia"
+  },
+  {
+   "id": "scene_007",
+   "arc": "cierre_historia",
+   "duration_seconds": 9.3,
+   "narration": "Estudios posteriores probaron materiales comerciales durante siete semanas. El resultado depende del tipo de plástico y de las condiciones del experimento.",
+   "on_screen_text": "7 semanas de prueba",
+   "visual_description": "plasticine gloved hands holding two plastic samples next to a wall calendar with weeks crossed out, lab glassware",
+   "image_prompt": "claymation stop-motion scene, plasticine characters and set with visible fingerprints, soft studio lighting, miniature handmade props, vertical 9:16, no text + plasticine gloved hands holding two plastic samples next to a wall calendar with weeks crossed out, lab glassware",
+   "source_ids": [
+    "SRC-004"
+   ],
+   "asset_filename": "frames/scene_007.jpg",
+   "sfx": [
+    "reloj"
+   ],
+   "ambiente": "viento",
+   "capa": {
+    "tipo": "dato",
+    "valor": "7 semanas",
+    "etiqueta": "prueba con PET comercial",
+    "fuente": "Walter et al., Arch Microbiol 2022"
+   }
+  },
+  {
+   "id": "scene_008",
+   "arc": "reflexion_o_pregunta",
+   "duration_seconds": 12.7,
+   "narration": "No se trata de soltar bacterias al océano. Se trata de copiar sus herramientas para reciclar en procesos controlados. ¿Qué otras soluciones esconde lo diminuto? Esto fue Datos y ociosidades.",
+   "on_screen_text": "¿Qué esconde lo diminuto?",
+   "visual_description": "miniature plasticine beach at sunset, a tiny bacterium character sitting next to a small plastic fragment looking at the sea, reflective mood",
+   "image_prompt": "claymation stop-motion scene, plasticine characters and set with visible fingerprints, soft studio lighting, miniature handmade props, vertical 9:16, no text + miniature plasticine beach at sunset, a tiny bacterium character sitting next to a small plastic fragment looking at the sea, reflective mood",
+   "source_ids": [
+    "SRC-001",
+    "SRC-004"
+   ],
+   "asset_filename": "frames/scene_008.jpg",
+   "sfx": [
+    "olas"
+   ],
+   "ambiente": "oceano"
+  }
+ ],
+ "cortinilla_fuentes": {
+  "duration_seconds": 6,
+  "titulo": "Fuentes",
+  "aviso": "Imágenes generadas con IA. Voz sintética (edge-tts). Música y ambiente sintetizados / CC0.",
+  "bg_rgb": [
+   30,
+   24,
+   40
+  ],
+  "firma": "Datos y ociosidades · @datosyociosidades"
+ },
+ "audio": {
+  "music_lufs": -27,
+  "ambiente_lufs": -28,
+  "music_license": "Sintetizado por scripts/cama_sonora.py (obra propia)",
+  "sfx_license": "Wikimedia Commons CC0/PD, ver assets/sfx/LICENCIAS.json",
+  "music_asset": "sintetico:arpegio",
+  "cama_musical": "arpegio"
+ },
+ "export": {
+  "filename": "capsula.mp4",
+  "resolution": "1080x1920",
+  "fps": 30,
+  "subtitle_max_words": 3,
+  "plano_seconds": 2.5,
+  "loudness_lufs": -14
+ },
+ "publicacion": {
+  "tiktok": {
+   "modo": "pendiente_tiktok",
+   "is_aigc": true
+  }
+ },
+ "canal": {
+  "nombre": "Datos y ociosidades",
+  "handle": "@datosyociosidades",
+  "youtube_channel_id": "UCU2ZI-6pBJEr9aSFsF6bxLw"
+ },
+ "origen": "externa"
+}

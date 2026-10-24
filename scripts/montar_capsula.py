@@ -198,6 +198,8 @@ def texto_png(text, out_png, gancho=False):
         x = int(W * .08); tw = d.textlength(ln, font=f); bx = (x - 18, y - 10, x + tw + 18, y + lh - 8)
         d.rounded_rectangle(bx, 14, fill=(0, 0, 0, 170) if not gancho else (240, 200, 120, 235))
         d.text((x, y), ln, font=f, fill=(20, 18, 16) if gancho else (255, 255, 255)); y += lh + 6
+    if gancho and lines:  # título-gancho subrayado (trazo de acento bajo la última línea)
+        tw = d.textlength(lines[-1], font=f); x = int(W * .08); d.rounded_rectangle((x, y + 4, x + tw, y + 22), 8, fill=(200, 40, 40, 245))
     img.save(out_png)
 
 def _plano(png, seconds, out_mp4, mov, overlay=None, ov_hasta=None):

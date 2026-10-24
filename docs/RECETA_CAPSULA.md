@@ -17,7 +17,7 @@ Canal: **Datos y ociosidades** · @datosyociosidades · YouTube UCU2ZI-6pBJEr9aS
 - `trend_source` para noticias: `{"tipo": "noticia_cientifica", "medio": "...", "url": "<nota>", "estudio_doi": "...", "fecha_publicacion": "AAAA-MM-DD", "termino": "<tema corto>", "fecha_consulta": "AAAA-MM-DD"}`.
 
 ## 2. Duración y ritmo
-- Total **75–90 s** (QA acepta 60–95 s). **170–235 palabras** (máx. 240) con voz es-MX-JorgeNeural a **+11 %** (rango +10 a +12 %), pitch −2 Hz.
+- Total **75–90 s** (QA acepta 60–95 s). **170–235 palabras** (máx. 240) con voz es-MX-JorgeNeural a **+7 %**, pitch −2 Hz, pausas ~0.3 s (ver docs/GUIA_MODELO_EXTERNO.md).
 - 7–9 escenas de 6–15 s. **Todas con voz**: pausa ligera entre frases (punto 0.32 s, pregunta/exclamación/… 0.35 s, dos puntos 0.25 s), ningún hueco de subtítulos >0.9 s.
 - **Estructura visual** (docs/ESTRUCTURA_VISUAL_TRENDS.md): planos de ~2.5 s con cortes secos y un movimiento distinto en cada plano. La escena 1 lleva tarjeta de gancho con `on_screen_text` desde el frame 0. Los subtítulos van en zona segura (MarginV 560). Cortinilla de 5 s.
 - **Título**: campo `titulo` (gancho ≤6 palabras) como tarjeta inicial. **Subtítulos**: ASS 1080×1920 con el 100 % del guion (QA de cobertura ≥99 %).
