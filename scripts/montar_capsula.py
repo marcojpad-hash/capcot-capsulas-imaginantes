@@ -50,7 +50,14 @@ def srt_from_words(words, max_words=3):
 
 def wrap(draw, text, font, maxw):
     lines, cur = [], ""
-    for w in text.split():
+    toks = []
+    for w in text.split():  # partir tokens largos (URLs/DOIs) que no caben
+        while draw.textlength(w, font=font) > maxw and len(w) > 1:
+            k = len(w)
+            while k > 1 and draw.textlength(w[:k], font=font) > maxw: k -= 1
+            toks.append(w[:k]); w = w[k:]
+        toks.append(w)
+    for w in toks:
         t = (cur + " " + w).strip()
         if draw.textlength(t, font=font) <= maxw: cur = t
         else: lines.append(cur); cur = w
@@ -68,7 +75,7 @@ def cortinilla(sb, out_png):
     for s in sb["sources"]:
         for ln in wrap(d, s["cita_corta"], fs, maxw):
             d.text((x0, y), ln, font=fs, fill=(235, 235, 235)); y += 52
-        ref = "doi.org/" + s["doi"] if s.get("doi") else s["url"]
+        ref = s.get("ref_display") or ("doi.org/" + s["doi"] if s.get("doi") else s["url"])
         for ln in wrap(d, ref, fn, maxw):
             d.text((x0, y), ln, font=fn, fill=(160, 190, 230)); y += 46
         y += 40

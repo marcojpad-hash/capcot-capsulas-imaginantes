@@ -10,3 +10,10 @@ proyectos/*/frames/
 proyectos/*/voz/
 proyectos/*/exportaciones/
 __pycache__/
+# medios/artefactos (cápsula diaria)
+salidas/*/frames/
+*.png
+*.jpg
+*.jpeg
+salidas/**/*.log
+data/*.db
