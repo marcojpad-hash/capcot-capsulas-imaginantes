@@ -3,7 +3,7 @@
 Uso: python3 scripts/capsula_diaria.py [--storyboard ruta.json] [--proveedor-img manual|xai|openai|placeholder] [--fecha AAAA-MM-DD]
 - Sin --storyboard: elige el mejor tema del RSS MX y llama a generar_guion_llm.py (proveedor gratuito: CAPCOT_LLM_PROVIDER=gemini|groq; sin clave -> modo manual).
 - Con --storyboard: usa ese guion (lote o manual) y lo copia al paquete.
-Paquete: salidas/<fecha>_<slug>/ {storyboard.json, guion.md, fuentes.md, frames/, capsula.mp4, capsula.srt, qa.json, guion_mj.md, metadata.json, resumen.json, LEEME.md}. Nunca publica ni sube."""
+Paquete: salidas/<fecha>_<slug>/ {storyboard.json, guion.md, fuentes.md, frames/, capsula.mp4, capsula.srt, qa.json, metadata.json, resumen.json, LEEME.md}. Nunca publica ni sube."""
 import argparse, datetime, json, os, re, shutil, subprocess, sys, unicodedata
 R = os.path.dirname(os.path.dirname(os.path.abspath(__file__))); S = os.path.join(R, "scripts")
 def sh(*a, ok=(0,)):
@@ -51,7 +51,7 @@ if __name__ == "__main__":
     qa = sh("python3", f"{S}/qa_capsula.py", os.path.join(out, "capsula.mp4"), sbp, ok=(0, 1))
     open(os.path.join(out, "guion.md"), "w").write(guion_md(sb)); open(os.path.join(out, "fuentes.md"), "w").write(fuentes_md(sb))
     sh("python3", f"{S}/metadata.py", out)  # metadata.json: descripción + hashtags + canal
-    sh("python3", f"{S}/guion_mj.py", out)  # guion para la voz de Mj
+    # guion_mj.py DESCONECTADO 2026-10-24 (Mj: era de otro proyecto). Ver docs/obsoleto/guion_mj.py
     rotar_estilo.marcar(sb["estilo_id"], sb.get("project_id", out))
     sh("python3", f"{S}/metricas.py", "registrar", out)
     open(os.path.join(out, "LEEME.md"), "w").write(f"Paquete {os.path.basename(out)} · QA {'OK' if qa == 0 else 'CON FALLAS (ver qa.json)'} · NO publicado (publicar.py --ejecutar requiere aprobación y cuentas de Mj).\n")

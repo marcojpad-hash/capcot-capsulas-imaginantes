@@ -188,7 +188,7 @@ def main():
     clips, audio_parts, all_words, t = [], [], [], 0.0
     for i, sc in enumerate(sb["scenes"]):
         mp3 = os.path.join(tmp, f"{sc['id']}.mp3")
-        words = asyncio.run(tts(sc["narration"], v["voice_id"], mp3, v.get("rate", "+11%"), v.get("pitch", "-2Hz"))) if sc["narration"].strip() else []
+        words = asyncio.run(tts(sc["narration"], v["voice_id"], mp3, v.get("rate", "+14%"), v.get("pitch", "-2Hz"))) if sc["narration"].strip() else []
         adur = dur(mp3) if words else 0.0
         if continuo and words: sdur = adur + 0.25 + pad   # la escena dura lo que su voz: sin huecos
         elif continuo: sdur = float(sc.get("duration_seconds", 3))

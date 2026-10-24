@@ -1,8 +1,8 @@
 # RECETA CÁPSULA — Datos y ociosidades (autocontenida)
 
-Pega este documento completo en cualquier modelo (Gemini, Groq/Llama, ChatGPT, Grok, Claude…) y pídele: «Hazme la cápsula de hoy sobre <TEMA>, siguiendo la receta. Devuelve SOLO el JSON storyboard_vertical, luego la descripción y luego el guion para la voz de Mj».
+Pega este documento completo en cualquier modelo (Gemini, Groq/Llama, ChatGPT, Grok, Claude…) y pídele: «Hazme la cápsula de hoy sobre <TEMA>, siguiendo la receta. Devuelve SOLO el JSON storyboard_vertical y luego la descripción».
 
-Canal: **Datos y ociosidades** · @datosyociosidades · YouTube UCU2ZI-6pBJEr9aSFsF6bxLw. TikTok: **no hay cuenta nueva**; toda descripción enlaza al TikTok existente de Mj (`https://www.tiktok.com/@<HANDLE_MJ>`, handle pendiente).
+Canal: **Datos y ociosidades** · @datosyociosidades · YouTube UCU2ZI-6pBJEr9aSFsF6bxLw. TikTok: **@datosyociosidades** (cuenta existente, sin cuenta nueva); toda descripción de YouTube lleva la línea fija `TikTok: https://www.tiktok.com/@datosyociosidades`.
 
 ## 1. Reglas editoriales
 - Periodismo informativo-narrativo estilo «Imaginantes»: una historia real con personas, lugar y momento; el dato científico es el giro, no una lista.
@@ -25,7 +25,7 @@ Canal: **Datos y ociosidades** · @datosyociosidades · YouTube UCU2ZI-6pBJEr9aS
  "target_duration_seconds": 85,
  "trend_source": {"tipo": "google_trends_rss", "termino": "...", "fecha_consulta": "AAAA-MM-DD", "url": "..."},
  "estilo_id": "<clave de §4>", "estilo_visual": "<nombre del estilo>",
- "voice": {"engine": "edge-tts", "voice_id": "es-MX-JorgeNeural", "rate": "+11%", "pitch": "-2Hz", "pad_seconds": 0.35, "modo_pausas": "continuo"},
+ "voice": {"engine": "edge-tts", "voice_id": "es-MX-JorgeNeural", "rate": "+14%", "pitch": "-2Hz", "pad_seconds": 0.35, "modo_pausas": "continuo"},
  "sources": [{"id": "SRC-001", "cita_corta": "Autor (año). Título. Medio.", "url": "https://...", "doi": "opcional", "accessed": "AAAA-MM-DD", "supports": ["afirmación 1", "..."], "ref_display": "texto corto"}],
  "scenes": [{"id": "scene_001", "arc": "hook_medias_res", "duration_seconds": 9.0, "narration": "...", "on_screen_text": "...",
              "visual_description": "...", "image_prompt": "<prompt_base del estilo> + escena concreta, vertical 9:16, no text", "source_ids": ["SRC-001"],
@@ -88,16 +88,14 @@ Fuentes:
 
 Imágenes generadas con IA · voz sintética · audio sintetizado.
 Suscríbete: @datosyociosidades
-TikTok: https://www.tiktok.com/@<HANDLE_MJ>
+TikTok: https://www.tiktok.com/@datosyociosidades
 
 #DatosYOciosidades #Shorts #ciencia #divulgación #SabíasQue #<Tema>
 ```
 Título YouTube = título + « #Shorts» (≤100 caracteres). Máximo 8 hashtags. Subida siempre `private` hasta que Mj apruebe.
 
-## 7. Versión para la voz de Mj (`guion_mj.md`)
-- Misma narración, con marcas: `/` respiración corta (comas, dos puntos), `//` respiración larga (fin de frase y de escena).
-- Versión completa (~75–90 s) + **versión corta opcional 30–60 s** (gancho + cierre + reflexión, ≤150 palabras).
-- Fuentes al final. Tono cercano: energía arriba en el gancho, baja en la reflexión.
+## 7. (Eliminado) Versión para la voz de Mj
+Cancelada por Mj el 2026-10-24 (pertenece a otro proyecto). La cápsula usa solo la voz sintética es-MX-JorgeNeural a +14%.
 
 ## 8. Ejemplo completo: «El mar que llegó en Navidad: El Niño» (86.0 s, QA OK, estilo linograbado)
 Narración:
@@ -131,7 +129,7 @@ JSON completo:
  "voice": {
   "engine": "edge-tts",
   "voice_id": "es-MX-JorgeNeural",
-  "rate": "+11%",
+  "rate": "+14%",
   "pitch": "-2Hz",
   "pad_seconds": 0.35,
   "modo_pausas": "continuo"

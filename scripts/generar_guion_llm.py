@@ -11,7 +11,7 @@ Uso: python3 scripts/generar_guion_llm.py --tema "el niño fenomeno" --noticias 
 Las fuentes que proponga el LLM se VERIFICAN después (validar_storyboard.py --check-doi); nunca se aceptan sin verificar."""
 import argparse, json, os, sys, urllib.request
 PROMPT = """Eres guionista de micro-cápsulas científicas verticales estilo Imaginantes (periodismo informativo-narrativo).
-Reglas: 60-90 s totales, 170-235 palabras (voz +11%, objetivo 75-90 s), 7-9 escenas de 6-12 s; primera escena arc=hook_medias_res (in medias res, frase <=12 palabras);
+Reglas: 60-90 s totales, 170-235 palabras (voz +14%, objetivo 75-90 s), 7-9 escenas de 6-12 s; primera escena arc=hook_medias_res (in medias res, frase <=12 palabras);
 luego desarrollo, cierre_historia y una última reflexion_o_pregunta (reflexión ontológica o pregunta abierta). Todas las escenas llevan voz (sin huecos de silencio); si sobra tiempo, añade datos con fuente, nunca silencio.
 La voz eleva a idea, no describe. Metáfora y personificación. Ninguna cifra sin source_ids. Fuentes REALES con DOI o URL institucional que
 existan; si no estás seguro de una fuente, NO la incluyas. Estilo visual único para esta cápsula: {estilo}.
@@ -42,7 +42,7 @@ if __name__ == "__main__":
     for i, s in enumerate(g["scenes"]): s.setdefault("asset_filename", f"frames/scene_{i+1:03}.png")
     sb = {"project_id": a.id, "serie": "Imaginantes de la ciencia", "language": "es-MX", "aspect_ratio": "9:16",
           "target_duration_seconds": 80, "trend_source": {"tipo": "google_trends_rss", "rss_geo": "MX", "termino": a.tema},
-          "voice": {"engine": "edge-tts", "voice_id": "es-MX-JorgeNeural", "rate": "+11%", "pitch": "-2Hz", "pad_seconds": 0.35},
+          "voice": {"engine": "edge-tts", "voice_id": "es-MX-JorgeNeural", "rate": "+14%", "pitch": "-2Hz", "pad_seconds": 0.35},
           "cortinilla_fuentes": {"duration_seconds": 6, "titulo": "Fuentes", "aviso": "Imágenes generadas con IA. Voz sintética.", "bg_rgb": [18, 16, 14]},
           "audio": {"music_asset": "", "music_volume": 0.25},
           "export": {"filename": a.id + ".mp4", "resolution": "1080x1920", "fps": 30, "subtitle_max_words": 3}, **g}

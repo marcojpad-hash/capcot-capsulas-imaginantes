@@ -103,3 +103,9 @@ Pendiente de implementar: ingesta de tendencias, generador de guion LLM, adaptad
 - **Videos largos (1–2):** `scripts/compilar_largo.py` une cápsulas en 16:9 1920×1080 (fondo desenfocado, tarjetas de capítulo, `capitulos.txt`). Largo 1: «El clima en historias» (El Niño + cápsulas de clima/mar, 8–12 cápsulas ≈ 12–16 min) a mediados de noviembre. Largo 2: «Historias de la ciencia que no te contaron» (mejores cápsulas por retención, 10–15) a inicios de diciembre. Sus horas son las únicas que cuentan para la ruta de 4,000 h.
 - **Orquestador:** `capsula_diaria.py` = tendencias → guion (LLM gratuito Gemini Flash/Groq o manual) → estilo (revisión **diaria** de estilos virales) → frames → QA → paquete con `guion_mj.md` y `resumen.json`. No publica.
 - **Voz:** es-MX-JorgeNeural +11 % (rango +10/+12). Receta portátil: `docs/RECETA_CAPSULA.md`.
+
+
+### Corrección 2026-10-24 10:46 (Mj)
+- Voz por defecto: es-MX-JorgeNeural **+14%** (antes +11%). El Niño v4 = referencia.
+- **Cancelado** `guion_mj.md` / versión para la voz de Mj (otro proyecto): desconectado de `capsula_diaria.py`; el script se movió a `docs/obsoleto/guion_mj.py` con nota.
+- TikTok fijo: https://www.tiktok.com/@datosyociosidades (cuenta existente; CAPCOT_TIKTOK_HANDLE solo para sobreescribir).

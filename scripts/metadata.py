@@ -3,10 +3,11 @@
 Uso: python3 scripts/metadata.py salidas/<dir>/ [storyboard.json]"""
 import json, os, sys, re, unicodedata
 CANAL = {"nombre": "Datos y ociosidades", "handle": "@datosyociosidades", "youtube_channel_id": "UCU2ZI-6pBJEr9aSFsF6bxLw"}
+TIKTOK = os.environ.get("CAPCOT_TIKTOK_HANDLE") or "@datosyociosidades"  # TikTok existente (confirmado); único placeholder
 BASE_TAGS = ["#DatosYOciosidades", "#Shorts", "#ciencia", "#divulgación", "#SabíasQue"]
 def tiktok_linea():
-    """Línea con el TikTok EXISTENTE de Mj (no se crea cuenta nueva). Handle configurable: CAPCOT_TIKTOK_HANDLE."""
-    h = (os.environ.get("CAPCOT_TIKTOK_HANDLE") or "@PENDIENTE_HANDLE_MJ").lstrip("@")
+    """Línea con el TikTok EXISTENTE de Mj Fija: @datosyociosidades; CAPCOT_TIKTOK_HANDLE solo sobreescribe."""
+    h = TIKTOK.lstrip("@")
     return f"TikTok: https://www.tiktok.com/@{h}"
 def tag(t): return "#" + re.sub(r"[^A-Za-z0-9ÁÉÍÓÚáéíóúÑñ]", "", "".join(w.capitalize() for w in t.split()))
 def generar(d, sbn="storyboard.json"):

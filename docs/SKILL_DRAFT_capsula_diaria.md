@@ -68,4 +68,4 @@ salidas/2026-10-24_fenomeno-el-nino/capsula_v2.mp4 (87.8 s, QA 11/11): storyboar
 
 
 **Corrección 2026-10-24 (Mj): no se crea cuenta nueva de TikTok; no se publica en TikTok desde el sistema. Cada descripción de YouTube enlaza al TikTok existente de Mj (`CAPCOT_TIKTOK_HANDLE`, handle pendiente). TikTok desactivado por defecto en publicar.py.**
-Paquete diario incluye guion_mj.md (marcas / y //, versión 30–60 s, fuentes) y resumen.json. Receta: docs/RECETA_CAPSULA.md.
+Paquete diario incluye resumen.json (guion_mj.md cancelado 2026-10-24: era de otro proyecto). TikTok fijo: https://www.tiktok.com/@datosyociosidades. Voz es-MX-JorgeNeural +14%. Receta: docs/RECETA_CAPSULA.md.
