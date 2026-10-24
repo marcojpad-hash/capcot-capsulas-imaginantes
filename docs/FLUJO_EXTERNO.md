@@ -7,7 +7,7 @@ Siguiendo **docs/RECETA_CAPSULA.md** (JSON `storyboard_vertical`, §3), deja **u
 - `cola/entrada/<project_id>.json`: solo el storyboard. Los frames se generan con `--proveedor-img`.
 - `cola/entrada/<project_id>/storyboard.json` + `frames/escena_XX.png`: storyboard con imágenes propias.
 
-Requisitos: `project_id` único, `trend_source.termino` (tema), `estructura` (mito_vs_dato | pregunta | historia | comparacion | sabias_que), escenas con `capa` (mapa y dato/gráfico), `sources` verificables (DOI/URL), 60–120 s. Opcional: `resumen` (va al caption de TikTok).
+Requisitos: `project_id` único, `trend_source.termino` (tema), `estructura` (mito_vs_dato | pregunta | historia | comparacion | sabias_que), escenas con `capa` (mapa y dato/gráfico), `sources` verificables (DOI/URL), 60–95 s (límite que impone scripts/validar_storyboard.py). Opcional: `resumen` (va al caption de TikTok).
 
 **Antes de escribir**, el modelo (o quien lo opere) consulta `data/temas_del_dia.json`: el tema no puede coincidir con otro del día. Tampoco debe repetir la estructura, el estilo ni la música de las otras cápsulas del día (ver data/publicaciones.json y data/rotacion.json).
 
