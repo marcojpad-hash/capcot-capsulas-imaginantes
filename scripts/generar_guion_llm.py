@@ -16,7 +16,7 @@ luego desarrollo, cierre_historia y una última reflexion_o_pregunta (reflexión
 La voz eleva a idea, no describe. Metáfora y personificación. Ninguna cifra sin source_ids. Fuentes REALES con DOI o URL institucional que
 existan; si no estás seguro de una fuente, NO la incluyas. Estilo visual único para esta cápsula: {estilo}.
 Devuelve SOLO JSON con claves: title, estilo_visual, sources[{{id,cita_corta,doi?,url,supports[]}}],
-scenes[{{id,arc,duration_seconds,narration,on_screen_text,visual_description,image_prompt,source_ids[]}}].
+titulo (gancho corto ≤6 palabras, afirmación sorprendente, se muestra como título-tarjeta al inicio), scenes[{{id,arc,duration_seconds,narration,on_screen_text,sfx[] (un efecto por plano de ~2.5 s acorde a lo que se ve: olas,gaviotas,lluvia,tormenta,viento,campanas,reloj,pluma,madera,redes,motor; combinables con +),visual_description,image_prompt,source_ids[]}}].
 Tema del día: {tema}. Noticias relacionadas: {noticias}"""
 
 def llamar(prompt):

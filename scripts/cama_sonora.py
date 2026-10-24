@@ -108,3 +108,45 @@ def guardar(x, path, rms=0.1):
     st = np.repeat((x * 32767).astype(np.int16)[:, None], 2, axis=1)
     with wave.open(path, "wb") as w:
         w.setnchannels(2); w.setsampwidth(2); w.setframerate(SR); w.writeframes(st.tobytes())
+
+# ---- SFX por plano con grabaciones reales CC0/dominio público (scripts/sfx_manifest.json) ----
+UNA_VEZ = {"gaviotas", "gaviotas2", "madera"}  # efectos puntuales: se colocan una vez, no en bucle
+SINTETICOS = {"oceano", "puerto", "viento_fuerte", "mercado", "silencio", "motor", "redes"}
+_cache = {}
+
+def _cargar(path):
+    if path not in _cache:
+        import subprocess
+        raw = subprocess.check_output(["ffmpeg", "-v", "error", "-i", path, "-ac", "1", "-ar", str(SR), "-f", "s16le", "-"])
+        x = np.frombuffer(raw, np.int16).astype(float) / 32768; _cache[path] = _norm(x[np.abs(x) > 0][:] if False else x)
+    return _cache[path]
+
+def _sfx(nombre, seg, carpeta):
+    n = int(seg * SR)
+    if nombre == "motor":
+        t = np.arange(n) / SR; m = np.sin(2*np.pi*42*t)*(0.6+0.4*np.sin(2*np.pi*11*t)) + 0.5*np.sign(np.sin(2*np.pi*21*t))
+        return _norm(_lp(m + 0.2*_ruido(n), 400))
+    if nombre == "redes":  # cuerda/red: crujidos de madera reales + roce
+        return _sfx("madera", seg, carpeta) + 0.3 * _norm(_bp(_ruido(n), 2000, 6000)) * (np.random.default_rng(1).random(n) > 0.6)
+    if nombre in SINTETICOS: return ambiente(nombre, seg)
+    import glob
+    f = glob.glob(os.path.join(carpeta, nombre + ".*"))
+    if not f: raise SystemExit(f"sfx desconocido: {nombre} (ver scripts/sfx_manifest.json)")
+    x = _cargar(f[0])
+    if nombre in UNA_VEZ:
+        out = np.zeros(n); i = int(0.3 * SR); m = min(len(x), n - i)
+        if m > 0: out[i:i + m] = x[:m]
+        return out
+    o = int(rng.uniform(0, max(len(x) - n, 1))) if len(x) > n else 0
+    return np.resize(x[o:], n) if len(x) - o < n else x[o:o + n]
+
+import os
+def pista_sfx(planos, total, carpeta):
+    """planos: [(sfx 'a+b', dur_s)] en orden; crossfade 0.3 s entre planos."""
+    n = int(total * SR); out = np.zeros(n); pos = 0; xf = int(0.3 * SR)
+    for tipo, d in planos:
+        seg = sum(_sfx(a, d + 0.3, carpeta) for a in tipo.split("+") if a) if tipo else np.zeros(int((d + .3) * SR))
+        if np.isscalar(seg): seg = np.zeros(int((d + .3) * SR))
+        m = len(seg); env = np.ones(m); env[:xf] = np.linspace(0, 1, xf); env[-xf:] = np.linspace(1, 0, xf)
+        e = min(n, pos + m); out[pos:e] += (seg * env)[:e - pos]; pos += int(d * SR)
+    return out

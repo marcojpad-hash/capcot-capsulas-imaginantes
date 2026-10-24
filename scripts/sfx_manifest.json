@@ -1,0 +1,15 @@
+{
+ "_nota": "Efectos reales de Wikimedia Commons, solo CC0 o dominio público (verificado vía API extmetadata LicenseShortName, 2026-10-24). Los audios NO se commitean: scripts/descargar_sfx.py los baja a assets/sfx/ (gitignored).",
+ "olas":      {"archivo": "olas.ogg",      "commons": "File:Ocean Waves on a Tropical Beach.ogg", "autor": "Jarrod stanley", "licencia": "CC0"},
+ "gaviotas":  {"archivo": "gaviotas.ogg",  "commons": "File:Gull 1.ogg", "autor": "avphillips", "licencia": "Public domain"},
+ "gaviotas2": {"archivo": "gaviotas2.ogg", "commons": "File:Gull 2.ogg", "autor": "avphillips", "licencia": "Public domain"},
+ "lluvia":    {"archivo": "lluvia.ogg",    "commons": "File:Rain (1).ogg", "autor": "ezwa", "licencia": "Public domain"},
+ "tormenta":  {"archivo": "tormenta.ogg",  "commons": "File:Rain and thunder.ogg", "autor": "User:Caesar", "licencia": "Public domain"},
+ "truenos":   {"archivo": "truenos.ogg",   "commons": "File:Storm thunderbolts.ogg", "autor": "stephan", "licencia": "Public domain"},
+ "viento":    {"archivo": "viento.ogg",    "commons": "File:Howling wind.ogg", "autor": "Tvabutzku1234", "licencia": "CC0"},
+ "viento_costa": {"archivo": "viento_costa.ogg", "commons": "File:Killiney Hill Storm Floris 20250804 1537.ogg", "autor": "Karlunun", "licencia": "CC0"},
+ "campanas":  {"archivo": "campanas.oga",  "commons": "File:Church bells - Leverkusen, 2007.oga", "autor": "natalie", "licencia": "Public domain"},
+ "reloj":     {"archivo": "reloj.ogg",     "commons": "File:Clock ticking.ogg", "autor": "natalie", "licencia": "Public domain"},
+ "pluma":     {"archivo": "pluma.ogg",     "commons": "File:Writing with inkpen.ogg", "autor": "stephan", "licencia": "Public domain"},
+ "madera":    {"archivo": "madera.ogg",    "commons": "File:Creaky wooden casket.ogg", "autor": "stephan", "licencia": "Public domain"}
+}

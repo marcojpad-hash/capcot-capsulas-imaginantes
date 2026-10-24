@@ -80,6 +80,22 @@ def srt_from_words(words, max_words=3):
         i += len(chunk); n += 1
     return "\n".join(out)
 
+# Subtítulos ASS con PlayRes = resolución real (con SRT, libass usa PlayResY=288 y un MarginV grande
+# empujaba el texto fuera de cuadro: bug de v5, se veían solo palabras sueltas).
+SUB_Y_BASE = 1300  # línea base inferior del subtítulo (px): debajo del texto clave (12-35 %), arriba del 20 % inferior
+def ass_from_srt(srt_txt, out_ass):
+    head = ("[Script Info]\nScriptType: v4.00+\nPlayResX: 1080\nPlayResY: 1920\nWrapStyle: 0\nScaledBorderAndShadow: yes\n\n"
+            "[V4+ Styles]\nFormat: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, "
+            "Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding\n"
+            f"Style: Sub,DejaVu Sans,72,&H00FFFFFF,&H00FFFFFF,&H00000000,&H64000000,-1,0,0,0,100,100,0,0,1,6,2,2,90,170,{1920-SUB_Y_BASE},1\n\n"
+            "[Events]\nFormat: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text\n")
+    ev = []
+    for b in srt_txt.strip().split("\n\n"):
+        l = b.split("\n"); a, z = l[1].split(" --> ")
+        f = lambda x: (lambda h, m, r: f"{int(h)}:{m}:{r.replace(',', '.')[:-1]}")(*x.split(":"))
+        ev.append(f"Dialogue: 0,{f(a)},{f(z)},Sub,,0,0,0,,{' '.join(l[2:])}")
+    open(out_ass, "w", encoding="utf-8").write(head + "\n".join(ev) + "\n")
+
 def wrap(draw, text, font, maxw):
     lines, cur = [], ""
     toks = []
@@ -156,9 +172,9 @@ def cama_sonora(aud, base, total, tmp, durs=None):
     sys.path.insert(0, os.path.dirname(os.path.abspath(__file__))); import cama_sonora as cs
     out = []
     if durs:
-        dst = os.path.join(tmp, "amb.wav"); cs.guardar(cs.pista_ambiente(durs, total), dst)
+        dst = os.path.join(tmp, "amb.wav"); cs.guardar(cs.pista_sfx(durs, total, os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "assets", "sfx")), dst)
         n = os.path.join(tmp, "amb_n.wav")
-        run(["ffmpeg", "-y", "-i", dst, "-af", f"loudnorm=I={aud.get('ambiente_lufs', -30)}:TP=-3", "-ar", "48000", n]); out.append(n)
+        run(["ffmpeg", "-y", "-i", dst, "-af", f"loudnorm=I={aud.get('ambiente_lufs', -26)}:TP=-3", "-ar", "48000", n]); out.append(n)
     m = aud.get("music_asset", "sintetico:pulso")
     if m:
         dst = os.path.join(tmp, "musica_raw.wav")
@@ -200,8 +216,10 @@ def _plano(png, seconds, out_mp4, mov, overlay=None, ov_hasta=None):
     run(["ffmpeg", "-y", "-loop", "1", "-i", png, *ins, "-filter_complex", fc, "-map", "[o]", "-frames:v", str(fr),
          "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-r", str(FPS), out_mp4])
 
+def n_planos(seconds, plano_s=2.5): return max(1, round(seconds / plano_s))
+
 def escena_video(png, seconds, out_mp4, idx, texto="", plano_s=2.5, gancho=False):
-    tmpd = tempfile.mkdtemp(prefix="pl_"); n = max(1, round(seconds / plano_s)); parts = []
+    tmpd = tempfile.mkdtemp(prefix="pl_"); n = n_planos(seconds, plano_s); parts = []
     ov = None
     if texto:
         ov = os.path.join(tmpd, "t.png"); texto_png(texto, ov, gancho)
@@ -236,9 +254,12 @@ def main():
         run(["ffmpeg", "-y", *src, "-af", f"adelay=250,apad", "-t", f"{sdur:.3f}", "-ar", "48000", "-ac", "2", wav])
         audio_parts.append(wav)
         mp4 = os.path.join(tmp, f"{sc['id']}.mp4")
-        escena_video(os.path.join(base, sc["asset_filename"]), sdur, mp4, i, sc.get("on_screen_text", ""),
+        titulo = sb.get("titulo") or sb["scenes"][0].get("on_screen_text", "")
+        escena_video(os.path.join(base, sc["asset_filename"]), sdur, mp4, i, titulo if i == 0 else sc.get("on_screen_text", ""),
                      float(sb.get("export", {}).get("plano_seconds", 2.5)), gancho=(i == 0)); clips.append(mp4)
-        durs.append((sc.get("ambiente") or sb.get("audio", {}).get("ambiente_defecto", "oceano"), sdur))
+        ps = float(sb.get("export", {}).get("plano_seconds", 2.5)); n = n_planos(sdur, ps)
+        sfx = sc.get("sfx") or [sc.get("ambiente") or "olas"]  # lista por plano; el último se repite
+        durs += [(sfx[min(k, len(sfx) - 1)], sdur / n) for k in range(n)]
         print(f"{sc['id']}: voz {adur:.1f}s, escena {sdur:.1f}s"); t += sdur
     cd = float(sb["cortinilla_fuentes"].get("duration_seconds", 5))
     cpng = os.path.join(tmp, "cortinilla.png"); cortinilla(sb, cpng)
@@ -254,9 +275,8 @@ def main():
     run(["ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", os.path.join(tmp, "a.txt"), "-c", "copy", acat])
     srt = os.path.splitext(a.out)[0] + ".srt"
     open(srt, "w", encoding="utf-8").write(srt_from_words(all_words, sb["export"].get("subtitle_max_words", 3)))
-    style = ("FontName=DejaVu Sans,FontSize=16,Bold=1,PrimaryColour=&H00FFFFFF,OutlineColour=&H00000000,"
-             "BorderStyle=1,Outline=3,Shadow=0,Alignment=2,MarginV=560")
-    vf = f"subtitles={srt}:original_size={W}x{H}:force_style='{style}'"
+    ass = os.path.splitext(a.out)[0] + ".ass"; ass_from_srt(open(srt, encoding="utf-8").read(), ass)
+    vf = f"ass={ass}"
     durs.append(("silencio", cd))  # cortinilla: solo música
     camas = cama_sonora(sb.get("audio", {}), base, dur(acat), tmp, durs)
     cmd = ["ffmpeg", "-y", "-i", vcat, "-i", acat]

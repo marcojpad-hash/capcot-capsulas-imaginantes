@@ -26,6 +26,21 @@ _bl = _re.findall(r"(\d\d:\d\d:\d\d,\d+) --> (\d\d:\d\d:\d\d,\d+)", open(_srt).r
 _gaps = [_t(_bl[i+1][0]) - _t(_bl[i][1]) for i in range(len(_bl)-1)]
 _mx = max(_gaps) if _gaps else 0
 ok("sin_huecos_voz_<=0.9s", _mx <= 0.9, f"hueco máx {_mx:.2f}s")
+# Cobertura de subtítulos (feedback Mj 11:06): 100 % del guion, sin solapes, y ASS dentro de cuadro
+def _norm_w(t): return [w for w in _re.sub(r"[^\wáéíóúüñ]+", " ", t.lower()).split() if w]
+_guion = _norm_w(" ".join(s["narration"] for s in sb["scenes"]))
+_subs = _norm_w(" ".join(" ".join(b.split("\n")[2:]) for b in open(_srt, encoding="utf-8").read().strip().split("\n\n"))) if _os.path.exists(_srt) else []
+import difflib as _dl
+_m = sum(b.size for b in _dl.SequenceMatcher(None, _guion, _subs, autojunk=False).get_matching_blocks())
+_cov = _m / max(len(_guion), 1); ok("subs_cobertura_>=99%", _cov >= 0.99, f"{_cov*100:.1f}% ({_m}/{len(_guion)} palabras)")
+_ov = [i for i in range(len(_bl)-1) if _t(_bl[i+1][0]) < _t(_bl[i][1])]
+ok("subs_sin_solapes", not _ov, f"{len(_ov)} solapes")
+_ass = _os.path.splitext(sys.argv[1])[0] + ".ass"
+if _os.path.exists(_ass):
+    _a = open(_ass, encoding="utf-8").read(); _py = int(_re.search(r"PlayResY:\s*(\d+)", _a).group(1))
+    _mv = int(_a.split("Style: Sub,")[1].split("\n")[0].split(",")[-2])
+    ok("subs_en_cuadro_zona_segura", _py == 1920 and 1920*0.20 <= _mv <= 1920*0.55, f"PlayResY {_py}, MarginV {_mv}")
+else: ok("subs_ass_existe", False, "sin .ass (SRT con PlayResY 288 saca el texto de cuadro)")
 pal = sum(len(s["narration"].split()) for s in sb["scenes"]); ok("voz_<=240_palabras", pal <= 240, f"{pal} palabras")
 json.dump(R, open(os.path.join(os.path.dirname(os.path.abspath(mp4)), "qa.json"), "w"), ensure_ascii=False, indent=1)
 for r in R: print(("PASA " if r["ok"] else "FALLA"), r["check"], r["detalle"])
