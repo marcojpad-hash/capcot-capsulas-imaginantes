@@ -1,0 +1,78 @@
+{
+ "project_id": "2026-10-24_serpientes-que-ruedan",
+ "musica": {
+  "cama": "pulso",
+  "origen": "síntesis propia (scripts/cama_sonora.py, numpy)",
+  "licencia": "obra propia de Datos y ociosidades",
+  "generada_por_ia": false
+ },
+ "sfx": {
+  "lluvia": {
+   "archivo": "lluvia.ogg",
+   "commons": "File:Rain (1).ogg",
+   "autor": "ezwa",
+   "licencia": "Public domain",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Rain_%281%29.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Rain_(1).ogg",
+   "licencia_verificada": "Public domain"
+  },
+  "madera": {
+   "archivo": "madera.ogg",
+   "commons": "File:Creaky wooden casket.ogg",
+   "autor": "stephan",
+   "licencia": "Public domain",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Creaky_wooden_casket.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Creaky_wooden_casket.ogg",
+   "licencia_verificada": "Public domain"
+  },
+  "pluma": {
+   "archivo": "pluma.ogg",
+   "commons": "File:Writing with inkpen.ogg",
+   "autor": "stephan",
+   "licencia": "Public domain",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Writing_with_inkpen.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Writing_with_inkpen.ogg",
+   "licencia_verificada": "Public domain"
+  },
+  "reloj": {
+   "archivo": "reloj.ogg",
+   "commons": "File:Clock ticking.ogg",
+   "autor": "natalie",
+   "licencia": "Public domain",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/5/56/Clock_ticking.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Clock_ticking.ogg",
+   "licencia_verificada": "Public domain"
+  },
+  "viento": {
+   "archivo": "viento.ogg",
+   "commons": "File:Howling wind.ogg",
+   "autor": "Tvabutzku1234",
+   "licencia": "CC0",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Howling_wind.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Howling_wind.ogg",
+   "licencia_verificada": "CC0"
+  }
+ },
+ "imagenes": {
+  "origen": "generadas con IA (ilustración no realista)",
+  "estilo": "disney_clasico",
+  "realista": false
+ },
+ "voz": {
+  "motor": "Microsoft Edge TTS",
+  "voz": "es-MX-JorgeNeural",
+  "nota": "voz sintética; no imita a una persona real"
+ },
+ "capas_datos": {
+  "tipos": [
+   "mapa",
+   "dato"
+  ],
+  "mapa_base": "Natural Earth 110m (dominio público)",
+  "render": "matplotlib (propio)"
+ },
+ "fuentes_datos": [
+  "https://doi.org/10.1016/j.cub.2026.08.057",
+  "https://www.sciencedaily.com/releases/2026/10/261023023718.htm"
+ ]
+}

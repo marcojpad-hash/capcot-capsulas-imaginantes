@@ -1,0 +1,261 @@
+{
+ "project_id": "2026-10-24_serpientes-que-ruedan",
+ "serie": "Imaginantes de la ciencia",
+ "title": "Serpientes que ruedan: el mito era real",
+ "titulo": "¿Serpientes que ruedan?",
+ "language": "es-MX",
+ "aspect_ratio": "9:16",
+ "target_duration_seconds": 82,
+ "estructura": "mito_vs_dato",
+ "estilo_id": "disney_clasico",
+ "estilo_visual": "Animación clásica tipo Disney",
+ "trend_source": {
+  "tipo": "noticia_cientifica",
+  "medio": "ScienceDaily (Toho University)",
+  "url": "https://www.sciencedaily.com/releases/2026/10/261023023718.htm",
+  "estudio_doi": "10.1016/j.cub.2026.08.057",
+  "fecha_publicacion": "2026-10-24",
+  "termino": "serpientes que ruedan",
+  "fecha_consulta": "2026-10-24"
+ },
+ "resumen": "Las serpientes enanas de los juncos (Pseudorabdion) ruedan hasta 4 veces más rápido de lo que reptan, y mantienen la cabeza estable mientras el cuerpo gira (Current Biology, 2026).",
+ "voice": {
+  "engine": "edge-tts",
+  "voice_id": "es-MX-JorgeNeural",
+  "rate": "+7%",
+  "pitch": "-2Hz",
+  "pad_seconds": 0.3,
+  "modo_pausas": "continuo"
+ },
+ "sources": [
+  {
+   "id": "SRC-001",
+   "cita_corta": "Kojima, Y. et al. (2026). Locomotor kinematics and head stabilization in rolling snakes. Current Biology 36(20): R1061.",
+   "doi": "10.1016/j.cub.2026.08.057",
+   "url": "https://doi.org/10.1016/j.cub.2026.08.057",
+   "accessed": "2026-10-24",
+   "supports": [
+    "género Pseudorabdion, Sudeste Asiático",
+    "ruedan para escapar",
+    "filmadas desde varios ángulos",
+    "1.72–3.69 m/s, ~4× la ondulación lateral",
+    "pista de 20 cm",
+    "brazada (stroke), alternan lado",
+    "cabeza estable, al frente, altura constante"
+   ],
+   "ref_display": "Current Biology · doi:10.1016/j.cub.2026.08.057"
+  },
+  {
+   "id": "SRC-002",
+   "cita_corta": "Toho University (2026). These tiny snakes roll four times faster than they slither. ScienceDaily, 24 oct 2026.",
+   "url": "https://www.sciencedaily.com/releases/2026/10/261023023718.htm",
+   "accessed": "2026-10-24",
+   "supports": [
+    "comunicado del estudio; ondulación lateral es el modo común",
+    "sin eje como una rueda",
+    "la estructura del cuerpo no determina todo el movimiento"
+   ],
+   "ref_display": "ScienceDaily · Toho University"
+  }
+ ],
+ "scenes": [
+  {
+   "id": "scene_001",
+   "arc": "hook_medias_res",
+   "duration_seconds": 8.8,
+   "narration": "¿Una serpiente que rueda como llanta? Suena a mito de feria. Pues es real, y un estudio de esta semana acaba de medirlo.",
+   "on_screen_text": "¿Serpientes que ruedan?",
+   "visual_description": "snake rolling like a wheel on rainforest floor, surprised bird",
+   "image_prompt": "classic hand-drawn 2D animation still in the style of 1950s Disney feature films, painted gouache backgrounds, expressive characters, soft cel shading, vertical 9:16, no text + snake rolling like a wheel on rainforest floor, surprised bird",
+   "source_ids": [
+    "SRC-001",
+    "SRC-002"
+   ],
+   "asset_filename": "frames/scene_001.jpg",
+   "sfx": [
+    "viento",
+    "pluma"
+   ]
+  },
+  {
+   "id": "scene_002",
+   "arc": "desarrollo",
+   "duration_seconds": 9.6,
+   "narration": "El mito dice que las serpientes solo se arrastran: ondas de lado a lado. Así se mueve la mayoría, y por eso rodar parecía imposible.",
+   "on_screen_text": "El mito: solo reptan",
+   "visual_description": "green snake slithering in S-waves on sand",
+   "image_prompt": "classic hand-drawn 2D animation still in the style of 1950s Disney feature films, painted gouache backgrounds, expressive characters, soft cel shading, vertical 9:16, no text + green snake slithering in S-waves on sand",
+   "source_ids": [
+    "SRC-002"
+   ],
+   "asset_filename": "frames/scene_002.jpg",
+   "sfx": [
+    "viento"
+   ]
+  },
+  {
+   "id": "scene_003",
+   "arc": "desarrollo",
+   "duration_seconds": 9.6,
+   "narration": "Pero en el Sudeste Asiático viven unas serpientes enanas de los juncos, del género Pseudorabdion. Cuando huyen de un depredador, dejan de reptar y ruedan.",
+   "on_screen_text": "Sudeste Asiático",
+   "visual_description": "misty Borneo rainforest, tiny snake hiding, predator bird shadow",
+   "image_prompt": "classic hand-drawn 2D animation still in the style of 1950s Disney feature films, painted gouache backgrounds, expressive characters, soft cel shading, vertical 9:16, no text + misty Borneo rainforest, tiny snake hiding, predator bird shadow",
+   "source_ids": [
+    "SRC-001",
+    "SRC-002"
+   ],
+   "asset_filename": "frames/scene_003.jpg",
+   "sfx": [
+    "lluvia",
+    "viento"
+   ],
+   "capa": {
+    "tipo": "mapa",
+    "region": [
+     90,
+     135,
+     -12,
+     22
+    ],
+    "puntos": [
+     {
+      "nombre": "Sudeste Asiático",
+      "lon": 112,
+      "lat": 2
+     }
+    ],
+    "titulo": "Serpientes enanas de los juncos",
+    "fuente": "Kojima et al. (2026), Current Biology"
+   }
+  },
+  {
+   "id": "scene_004",
+   "arc": "desarrollo",
+   "duration_seconds": 9.2,
+   "narration": "Un equipo encabezado por la Universidad Toho, en Japón, las filmó desde varios ángulos. Rodando, las más rápidas superaron los tres metros y medio por segundo.",
+   "on_screen_text": "Filmadas desde varios ángulos",
+   "visual_description": "scientists filming tiny snake on narrow track with cameras",
+   "image_prompt": "classic hand-drawn 2D animation still in the style of 1950s Disney feature films, painted gouache backgrounds, expressive characters, soft cel shading, vertical 9:16, no text + scientists filming tiny snake on narrow track with cameras",
+   "source_ids": [
+    "SRC-001",
+    "SRC-002"
+   ],
+   "asset_filename": "frames/scene_004.jpg",
+   "sfx": [
+    "reloj",
+    "madera"
+   ]
+  },
+  {
+   "id": "scene_005",
+   "arc": "desarrollo",
+   "duration_seconds": 9.2,
+   "narration": "Eso es unas cuatro veces su velocidad máxima reptando. Y no es caer sin control: siguieron una pista de apenas veinte centímetros de ancho.",
+   "on_screen_text": "4 veces más rápido",
+   "visual_description": "snake rolling fast on narrow racetrack",
+   "image_prompt": "classic hand-drawn 2D animation still in the style of 1950s Disney feature films, painted gouache backgrounds, expressive characters, soft cel shading, vertical 9:16, no text + snake rolling fast on narrow racetrack",
+   "source_ids": [
+    "SRC-001",
+    "SRC-002"
+   ],
+   "asset_filename": "frames/scene_005.jpg",
+   "sfx": [
+    "madera",
+    "viento"
+   ],
+   "capa": {
+    "tipo": "dato",
+    "valor": "×4",
+    "etiqueta": "rodar vs. reptar (velocidad máxima)",
+    "fuente": "Kojima et al. (2026), Current Biology"
+   }
+  },
+  {
+   "id": "scene_006",
+   "arc": "cierre_historia",
+   "duration_seconds": 11.2,
+   "narration": "¿El truco? Ruedan sobre un costado y barren hacia abajo una curva del cuerpo junto a la cabeza. Los científicos lo llamaron brazada. En cada ciclo cambian de lado.",
+   "on_screen_text": "El truco: la brazada",
+   "visual_description": "snake on its side swinging body loop downward",
+   "image_prompt": "classic hand-drawn 2D animation still in the style of 1950s Disney feature films, painted gouache backgrounds, expressive characters, soft cel shading, vertical 9:16, no text + snake on its side swinging body loop downward",
+   "source_ids": [
+    "SRC-001",
+    "SRC-002"
+   ],
+   "asset_filename": "frames/scene_006.jpg",
+   "sfx": [
+    "pluma",
+    "madera"
+   ]
+  },
+  {
+   "id": "scene_007",
+   "arc": "cierre_historia",
+   "duration_seconds": 10.4,
+   "narration": "Y lo más raro: mientras el cuerpo gira, la cabeza casi no se mueve. Mira hacia adelante y conserva su altura. Una rueda tiene eje; ellas no.",
+   "on_screen_text": "La cabeza no gira",
+   "visual_description": "spinning snake body with steady head beside wooden wheel with axle",
+   "image_prompt": "classic hand-drawn 2D animation still in the style of 1950s Disney feature films, painted gouache backgrounds, expressive characters, soft cel shading, vertical 9:16, no text + spinning snake body with steady head beside wooden wheel with axle",
+   "source_ids": [
+    "SRC-001",
+    "SRC-002"
+   ],
+   "asset_filename": "frames/scene_007.jpg",
+   "sfx": [
+    "viento",
+    "reloj"
+   ]
+  },
+  {
+   "id": "scene_008",
+   "arc": "reflexion_o_pregunta",
+   "duration_seconds": 11.5,
+   "narration": "Según los autores, la forma del cuerpo no dicta todo lo que un animal puede hacer. ¿Cuántos movimientos que llamamos imposibles solo nos falta filmar? Esto fue Datos y ociosidades.",
+   "on_screen_text": "¿Qué más llamamos imposible?",
+   "visual_description": "snake on mossy log at dusk with fireflies and stars",
+   "image_prompt": "classic hand-drawn 2D animation still in the style of 1950s Disney feature films, painted gouache backgrounds, expressive characters, soft cel shading, vertical 9:16, no text + snake on mossy log at dusk with fireflies and stars",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "asset_filename": "frames/scene_008.jpg",
+   "sfx": [
+    "lluvia",
+    "viento"
+   ]
+  }
+ ],
+ "cortinilla_fuentes": {
+  "duration_seconds": 6,
+  "titulo": "Fuentes",
+  "aviso": "Imágenes generadas con IA. Voz sintética (edge-tts). Música y ambiente sintetizados / CC0.",
+  "bg_rgb": [
+   24,
+   40,
+   30
+  ],
+  "firma": "Datos y ociosidades · @datosyociosidades"
+ },
+ "audio": {
+  "music_asset": "sintetico:pulso",
+  "cama_musical": "pulso",
+  "music_lufs": -27,
+  "ambiente_lufs": -28,
+  "music_license": "Sintetizado por scripts/cama_sonora.py (obra propia)",
+  "sfx_license": "Wikimedia Commons CC0/PD, ver assets/sfx/LICENCIAS.json"
+ },
+ "export": {
+  "filename": "capsula.mp4",
+  "resolution": "1080x1920",
+  "fps": 30,
+  "subtitle_max_words": 3,
+  "plano_seconds": 2.5,
+  "loudness_lufs": -14
+ },
+ "canal": {
+  "nombre": "Datos y ociosidades",
+  "handle": "@datosyociosidades",
+  "youtube_channel_id": "UCU2ZI-6pBJEr9aSFsF6bxLw"
+ },
+ "origen": "propia"
+}

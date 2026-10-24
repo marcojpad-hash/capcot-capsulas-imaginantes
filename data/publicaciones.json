@@ -19,5 +19,22 @@
   "nota": "1er intento invalidDescription por < > en DOI de Bjerknes; metadata.json parcheado a mano",
   "origen": "propia",
   "tiktok": "pendiente_tiktok"
+ },
+ {
+  "fecha": "2026-10-24",
+  "project_id": "2026-10-24_serpientes-que-ruedan",
+  "yt_id": "ZrUtKs7Ty7U",
+  "url": "https://youtube.com/shorts/ZrUtKs7Ty7U",
+  "privacidad": "public",
+  "publishAt_utc": null,
+  "hora_local": "2026-10-24 ~14:45 (America/Mexico_City)",
+  "ventana": 0,
+  "video": "capsula.mp4",
+  "storyboard": "storyboard.json",
+  "titulo": "Serpientes que ruedan: el mito era real #Shorts",
+  "tema": "serpientes que ruedan",
+  "aprobado_por": "Mj (directo, 'ya')",
+  "origen": "propia",
+  "tiktok": "pendiente_tiktok"
  }
 ]

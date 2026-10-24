@@ -1,0 +1,4 @@
+# Fuentes (verificadas)
+
+- [SRC-001] Kojima, Y. et al. (2026). Locomotor kinematics and head stabilization in rolling snakes. Current Biology 36(20): R1061. https://doi.org/10.1016/j.cub.2026.08.057 (consulta 2026-10-24) — respalda: género Pseudorabdion, Sudeste Asiático; ruedan para escapar; filmadas desde varios ángulos; 1.72–3.69 m/s, ~4× la ondulación lateral; pista de 20 cm; brazada (stroke), alternan lado; cabeza estable, al frente, altura constante
+- [SRC-002] Toho University (2026). These tiny snakes roll four times faster than they slither. ScienceDaily, 24 oct 2026. https://www.sciencedaily.com/releases/2026/10/261023023718.htm (consulta 2026-10-24) — respalda: comunicado del estudio; ondulación lateral es el modo común; sin eje como una rueda; la estructura del cuerpo no determina todo el movimiento
