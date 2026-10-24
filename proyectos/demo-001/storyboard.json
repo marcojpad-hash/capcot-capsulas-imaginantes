@@ -1,0 +1,31 @@
+{
+  "project_id": "demo-001",
+  "serie": "Imaginantes de la ciencia #1 (DEMO)",
+  "title": "El bosque que cayó sin cráter: Tunguska, 1908",
+  "language": "es-MX",
+  "aspect_ratio": "9:16",
+  "target_duration_seconds": 80,
+  "audience": "Público general curioso (TikTok / YouTube Shorts)",
+  "trend_source": {"tipo": "atemporal_backlog", "rss_geo": null, "termino": "Tunguska", "fecha_consulta": "2026-10-24", "puntaje": null},
+  "voice": {"engine": "edge-tts", "voice_id": "es-MX-JorgeNeural", "rate": "+4%", "pitch": "-2Hz", "pad_seconds": 0.5, "fallback": {"engine": "google-chirp3-hd", "voice_id": "es-US-Chirp3-HD-Charon"}},
+  "sources": [
+    {"id": "SRC-001", "cita_corta": "Chyba, Thomas & Zahnle (1993). Nature 361, 40-44.", "doi": "10.1038/361040a0", "url": "https://doi.org/10.1038/361040a0", "accessed": "2026-10-24", "supports": ["Explosión atmosférica de un asteroide rocoso a varios km de altura, sin cráter"]},
+    {"id": "SRC-002", "cita_corta": "Jenniskens et al. (2019). Icarus 327, 4-18.", "doi": "10.1016/j.icarus.2019.01.001", "url": "https://doi.org/10.1016/j.icarus.2019.01.001", "accessed": "2026-10-24", "supports": ["Relatos de testigos: luz, calor y onda expansiva a decenas de km; ~2000 km² de bosque derribado"]},
+    {"id": "SRC-003", "cita_corta": "Gasperini, Alvisi, Biasini et al. (2007). Terra Nova 19, 245-251.", "doi": "10.1111/j.1365-3121.2007.00742.x", "url": "https://doi.org/10.1111/j.1365-3121.2007.00742.x", "accessed": "2026-10-24", "supports": ["Hipótesis (debatida) del lago Cheko como posible cráter"]}
+  ],
+  "scenes": [
+    {"id": "scene_001", "arc": "hook_medias_res", "duration_seconds": 6, "narration": "Siberia, 1908. Un bosque entero cae al suelo.", "on_screen_text": "Siberia, 1908", "visual_description": "Árboles derribados en abanico al amanecer", "image_prompt": "papercut diorama, flattened taiga forest radiating outward, dawn light, sepia with red accents, vertical 9:16", "source_ids": ["SRC-002"], "asset_filename": "frames/scene_001.png"},
+    {"id": "scene_002", "arc": "hook_medias_res", "duration_seconds": 5, "narration": "Y nadie vio caer nada.", "on_screen_text": "", "visual_description": "Cielo vacío sobre el bosque", "image_prompt": "papercut empty sky over fallen trees, silence", "source_ids": [], "asset_filename": "frames/scene_002.png"},
+    {"id": "scene_003", "arc": "desarrollo", "duration_seconds": 9, "narration": "A decenas de kilómetros, un hombre sintió que su camisa ardía. Una luz más brillante que el sol cruzó el cielo, y luego llegó el golpe.", "on_screen_text": "Una luz en el cielo", "visual_description": "Figura de papel en un porche, cegada por un destello", "image_prompt": "papercut man on wooden porch shielding eyes from blinding flash", "source_ids": ["SRC-002"], "asset_filename": "frames/scene_003.png"},
+    {"id": "scene_004", "arc": "desarrollo", "duration_seconds": 9, "narration": "Más de dos mil kilómetros cuadrados de árboles quedaron tendidos, todos apuntando hacia afuera, como si algo hubiera soplado desde un solo punto.", "on_screen_text": "~2000 km² derribados", "visual_description": "Mapa de papel con árboles en patrón radial", "image_prompt": "top-down papercut map, radial pattern of fallen trees", "source_ids": ["SRC-002"], "asset_filename": "frames/scene_004.png"},
+    {"id": "scene_005", "arc": "desarrollo", "duration_seconds": 8, "narration": "Pero cuando los científicos llegaron, años después, buscaron el cráter. Y no había cráter.", "on_screen_text": "¿Y el cráter?", "visual_description": "Expedición de papel ante un claro vacío", "image_prompt": "papercut expedition with lanterns facing empty clearing", "source_ids": [], "asset_filename": "frames/scene_005.png"},
+    {"id": "scene_006", "arc": "desarrollo", "duration_seconds": 9, "narration": "En el centro, extrañamente, algunos árboles seguían de pie, sin ramas, como postes quemados. La pista estaba arriba, no abajo.", "on_screen_text": "La pista estaba arriba", "visual_description": "Troncos de pie, desnudos, en el epicentro", "image_prompt": "papercut bare standing trunks at epicenter, looking up", "source_ids": [], "asset_filename": "frames/scene_006.png"},
+    {"id": "scene_007", "arc": "cierre_historia", "duration_seconds": 11, "narration": "Hoy la explicación más aceptada es que una roca espacial de decenas de metros estalló en el aire, a varios kilómetros de altura. Nunca tocó el suelo: lo que derribó el bosque fue el aire mismo.", "on_screen_text": "Estalló en el aire", "visual_description": "Bola de fuego de papel sobre el horizonte", "image_prompt": "papercut fireball bursting high above taiga horizon", "source_ids": ["SRC-001"], "asset_filename": "frames/scene_007.png"},
+    {"id": "scene_008", "arc": "cierre_historia", "duration_seconds": 7, "narration": "Algunos investigadores aún buscan un fragmento bajo un lago cercano. El debate sigue abierto.", "on_screen_text": "Lago Cheko: ¿cráter?", "visual_description": "Lago pequeño y quieto entre árboles", "image_prompt": "papercut small still lake among trees, mist", "source_ids": ["SRC-003"], "asset_filename": "frames/scene_008.png"},
+    {"id": "scene_009", "arc": "reflexion_o_pregunta", "duration_seconds": 10, "narration": "Tal vez las cosas más grandes que nos pasan no dejan huella donde las buscamos. ¿Cuántas veces habrá caído el cielo sin que nadie lo viera?", "on_screen_text": "", "visual_description": "Mismo bosque del gancho, ahora con brotes nuevos (loop)", "image_prompt": "papercut regrown forest at dusk mirroring opening shot", "source_ids": [], "asset_filename": "frames/scene_009.png"}
+  ],
+  "cortinilla_fuentes": {"duration_seconds": 6, "titulo": "Fuentes", "aviso": "Imágenes: placeholders de demo. Voz sintética (edge-tts).", "bg_rgb": [18, 16, 14]},
+  "audio": {"music_asset": "", "music_license": "", "music_volume": 0.25},
+  "export": {"filename": "demo-001.mp4", "resolution": "1080x1920", "fps": 30, "subtitle_max_words": 3},
+  "estado": "STORYBOARD_VALIDADO"
+}

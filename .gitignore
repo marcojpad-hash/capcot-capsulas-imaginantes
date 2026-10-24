@@ -1,0 +1,12 @@
+# Medios pesados: no versionar (renders en /workspace/imaginantes/)
+*.mp4
+*.mov
+*.wav
+*.mp3
+*.m4a
+*.srt
+*.ass
+proyectos/*/frames/
+proyectos/*/voz/
+proyectos/*/exportaciones/
+__pycache__/

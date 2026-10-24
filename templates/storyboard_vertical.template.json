@@ -1,0 +1,106 @@
+{
+  "_comentario": "Plantilla CAPCOT vertical (fuente de verdad: docs/PLAN_MAESTRO_AUTOMATICO.md). Reemplaza a storyboard.template.json (16:9, 1-3 min). arc ∈ hook_medias_res|desarrollo|cierre_historia|reflexion_o_pregunta. Validar con scripts/validar_storyboard.py --check-doi.",
+  "project_id": "AAAA-MM-DD-slug",
+  "serie": "Imaginantes de la ciencia #N",
+  "title": "",
+  "language": "es-MX",
+  "aspect_ratio": "9:16",
+  "target_duration_seconds": 80,
+  "audience": "Público general curioso (TikTok / YouTube Shorts)",
+  "trend_source": {
+    "tipo": "google_trends_rss | feed_cientifico | atemporal_backlog",
+    "rss_geo": "MX",
+    "termino": "",
+    "url": "https://trends.google.com/trending/rss?geo=MX",
+    "fecha_consulta": "AAAA-MM-DD",
+    "puntaje": 0
+  },
+  "arco": {
+    "hook_medias_res": "Primera frase ≤12 palabras, en plena acción (0-5 s)",
+    "desarrollo": "Contexto mínimo, pistas, giro con dato citado",
+    "cierre_historia": "Lo que hoy se sabe, con fuente",
+    "reflexion_o_pregunta": "Reflexión ontológica o pregunta abierta; empalma con el gancho",
+    "cortinilla_fuentes": "5-6 s, 1-4 fuentes, zona segura"
+  },
+  "voice": {
+    "engine": "edge-tts",
+    "voice_id": "es-MX-JorgeNeural",
+    "rate": "+4%",
+    "pitch": "-2Hz",
+    "pad_seconds": 0.5,
+    "fallback": {
+      "engine": "google-chirp3-hd",
+      "voice_id": "es-US-Chirp3-HD-Charon"
+    }
+  },
+  "sources": [
+    {
+      "id": "SRC-001",
+      "cita_corta": "Autor et al. (año). Revista vol, págs.",
+      "doi": "10.xxxx/xxxx",
+      "url": "https://doi.org/10.xxxx/xxxx",
+      "accessed": "AAAA-MM-DD",
+      "supports": [
+        "Afirmación exacta que respalda"
+      ]
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_001",
+      "arc": "hook_medias_res",
+      "duration_seconds": 6,
+      "narration": "Texto exacto de la voz (mínima; la imagen narra).",
+      "on_screen_text": "≤6 palabras",
+      "visual_description": "Qué se ve",
+      "image_prompt": "prompt de imagen vertical 9:16 con semilla de estilo fija",
+      "source_ids": [
+        "SRC-001"
+      ],
+      "asset_filename": "frames/scene_001.png",
+      "asset_type": "image",
+      "motion": "kenburns_auto",
+      "animated_hook": false
+    }
+  ],
+  "cortinilla_fuentes": {
+    "duration_seconds": 6,
+    "titulo": "Fuentes",
+    "aviso": "Imágenes generadas con IA. Voz sintética.",
+    "bg_rgb": [
+      18,
+      16,
+      14
+    ]
+  },
+  "audio": {
+    "music_asset": "",
+    "music_license": "",
+    "music_volume": 0.25
+  },
+  "export": {
+    "filename": "capsula.mp4",
+    "resolution": "1080x1920",
+    "fps": 30,
+    "subtitle_max_words": 3,
+    "loudness_lufs": -14
+  },
+  "publicacion": {
+    "youtube": {
+      "privacy": "public",
+      "publishAt": "",
+      "titulo": "",
+      "descripcion_con_fuentes": "",
+      "tags": [
+        "#Shorts"
+      ],
+      "synthetic_content": true
+    },
+    "tiktok": {
+      "modo": "draft_inbox",
+      "is_aigc": true,
+      "caption": ""
+    }
+  },
+  "estado": "BORRADOR"
+}
