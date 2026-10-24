@@ -1,0 +1,35 @@
+{
+  "project_id": "2026-10-24_ideonella-pet",
+  "images": {
+    "source": "OpenAI image generation",
+    "disclosure": "Contact sheet generated for this capsule and cropped into scene frames"
+  },
+  "voice": {
+    "engine": "eSpeak NG",
+    "voice": "es-mx",
+    "license": "Open-source local TTS engine; speech synthesized for this project"
+  },
+  "music": {
+    "asset": "audio/pizzicato.wav",
+    "source": "Original local synthesis",
+    "license": "Original generated audio; no third-party recording"
+  },
+  "sources": [
+    {
+      "id": "SRC-001",
+      "url": "https://doi.org/10.1126/science.aad6359"
+    },
+    {
+      "id": "SRC-002",
+      "url": "https://doi.org/10.1099/ijsem.0.001058"
+    },
+    {
+      "id": "SRC-004",
+      "url": "https://doi.org/10.1007/s00203-022-03306-w"
+    },
+    {
+      "id": "SRC-005",
+      "url": "https://doi.org/10.1126/science.aaf8305"
+    }
+  ]
+}
