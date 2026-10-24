@@ -1,0 +1,179 @@
+{
+ "project_id": "lote01-03-balon-curva",
+ "serie": "Imaginantes de la ciencia",
+ "title": "El balón que desobedeció al aire",
+ "language": "es-MX",
+ "aspect_ratio": "9:16",
+ "target_duration_seconds": 78,
+ "audience": "Público general en redes (TikTok/Shorts)",
+ "estilo_visual": "Claymation (plastilina) con texturas de huellas dactilares, estadio en miniatura, luz de reflector",
+ "music_mood": "Percusión de estadio contenida, cuerdas pizzicato que aceleran; reverberación y eco de multitud al cierre",
+ "trend_source": {
+  "tipo": "lote",
+  "rss_geo": "MX",
+  "url": "https://trends.google.com/trending/rss?geo=MX",
+  "lote": "guiones_lote_01",
+  "fecha_consulta": "2026-10-24"
+ },
+ "voice": {
+  "engine": "edge-tts",
+  "voice_id": "es-MX-JorgeNeural",
+  "rate": "-8%",
+  "pitch": "-2Hz",
+  "pad_seconds": 0.8
+ },
+ "sources": [
+  {
+   "id": "SRC-001",
+   "cita_corta": "Dupeux, G., Le Goff, A., Quéré, D. & Clanet, C. (2010). The spinning ball spiral. New Journal of Physics,…",
+   "url": "https://doi.org/10.1088/1367-2630/12/9/093004",
+   "accessed": "2026-10-24",
+   "supports": [],
+   "doi": "10.1088/1367-2630/12/9/093004"
+  },
+  {
+   "id": "SRC-002",
+   "cita_corta": "Kray, T., Franke, J. & Frank, W. (2014). Magnus effect on a rotating soccer ball at high Reynolds numbers.…",
+   "url": "https://doi.org/10.1016/j.jweia.2013.10.010",
+   "accessed": "2026-10-24",
+   "supports": [],
+   "doi": "10.1016/j.jweia.2013.10.010"
+  }
+ ],
+ "scenes": [
+  {
+   "id": "scene_001",
+   "duration_seconds": 8,
+   "narration": "",
+   "on_screen_text": "Tiro libre. 35 metros.",
+   "visual_description": "Muñeco de plastilina con dorsal frente a barrera de muñecos; balón de plastilina en el pasto; silencio de estadio",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "asset_filename": "frames/scene_001.png",
+   "asset_type": "image",
+   "status": "planned",
+   "notes": "",
+   "arc": "hook_medias_res",
+   "image_prompt": "Vertical 9:16 frame, Claymation (plastilina) con texturas de huellas dactilares, estadio en miniatura, luz de reflector. Muñeco de plastilina con dorsal frente a barrera de muñecos; balón de plastilina en el pasto; silencio de estadio. Cinematic, shallow depth of field, no text."
+  },
+  {
+   "id": "scene_002",
+   "duration_seconds": 8,
+   "narration": "",
+   "on_screen_text": "",
+   "visual_description": "El pie golpea de lado; el balón sale girando, ligeramente hacia afuera; el portero de plastilina ni se mueve",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "asset_filename": "frames/scene_002.png",
+   "asset_type": "image",
+   "status": "planned",
+   "notes": "",
+   "arc": "desarrollo",
+   "image_prompt": "Vertical 9:16 frame, Claymation (plastilina) con texturas de huellas dactilares, estadio en miniatura, luz de reflector. El pie golpea de lado; el balón sale girando, ligeramente hacia afuera; el portero de plastilina ni se mueve. Cinematic, shallow depth of field, no text."
+  },
+  {
+   "id": "scene_003",
+   "duration_seconds": 12,
+   "narration": "El balón gira… y el aire, celoso, lo empuja hacia un lado.",
+   "on_screen_text": "El aire empuja",
+   "visual_description": "Cámara lenta: hilos de aire de plastilina blanca se enredan en un lado del balón y se aceleran en el otro",
+   "source_ids": [
+    "SRC-002"
+   ],
+   "asset_filename": "frames/scene_003.png",
+   "asset_type": "image",
+   "status": "planned",
+   "notes": "",
+   "arc": "desarrollo",
+   "image_prompt": "Vertical 9:16 frame, Claymation (plastilina) con texturas de huellas dactilares, estadio en miniatura, luz de reflector. Cámara lenta: hilos de aire de plastilina blanca se enredan en un lado del balón y se aceleran en el otro. Cinematic, shallow depth of field, no text."
+  },
+  {
+   "id": "scene_004",
+   "duration_seconds": 12,
+   "narration": "Lo que parecía un error se dobla como una pregunta.",
+   "on_screen_text": "Efecto Magnus",
+   "visual_description": "La trayectoria curva dibujada con una tira de plastilina; el balón regresa hacia la portería",
+   "source_ids": [
+    "SRC-002"
+   ],
+   "asset_filename": "frames/scene_004.png",
+   "asset_type": "image",
+   "status": "planned",
+   "notes": "",
+   "arc": "desarrollo",
+   "image_prompt": "Vertical 9:16 frame, Claymation (plastilina) con texturas de huellas dactilares, estadio en miniatura, luz de reflector. La trayectoria curva dibujada con una tira de plastilina; el balón regresa hacia la portería. Cinematic, shallow depth of field, no text."
+  },
+  {
+   "id": "scene_005",
+   "duration_seconds": 12,
+   "narration": "Si el tiro fuera más largo, la curva no terminaría nunca: sería una espiral.",
+   "on_screen_text": "Una espiral",
+   "visual_description": "Vista cenital: la tira de plastilina se enrolla en espiral sobre el campo, como un caracol",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "asset_filename": "frames/scene_005.png",
+   "asset_type": "image",
+   "status": "planned",
+   "notes": "",
+   "arc": "desarrollo",
+   "image_prompt": "Vertical 9:16 frame, Claymation (plastilina) con texturas de huellas dactilares, estadio en miniatura, luz de reflector. Vista cenital: la tira de plastilina se enrolla en espiral sobre el campo, como un caracol. Cinematic, shallow depth of field, no text."
+  },
+  {
+   "id": "scene_006",
+   "duration_seconds": 10,
+   "narration": "",
+   "on_screen_text": "¡GOL!",
+   "visual_description": "El balón entra al ángulo; los muñecos de plastilina en la tribuna se deforman de alegría",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "asset_filename": "frames/scene_006.png",
+   "asset_type": "image",
+   "status": "planned",
+   "notes": "",
+   "arc": "cierre_historia",
+   "image_prompt": "Vertical 9:16 frame, Claymation (plastilina) con texturas de huellas dactilares, estadio en miniatura, luz de reflector. El balón entra al ángulo; los muñecos de plastilina en la tribuna se deforman de alegría. Cinematic, shallow depth of field, no text."
+  },
+  {
+   "id": "scene_007",
+   "duration_seconds": 10,
+   "narration": "El balón no sabe física, y aun así la obedece mejor que nadie. ¿Cuánto de lo que llamamos talento es el mundo dejándose leer?",
+   "on_screen_text": "¿Talento o lectura del mundo?",
+   "visual_description": "El jugador mira su pie de plastilina; aparece la huella dactilar del animador",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "asset_filename": "frames/scene_007.png",
+   "asset_type": "image",
+   "status": "planned",
+   "notes": "",
+   "arc": "reflexion_o_pregunta",
+   "image_prompt": "Vertical 9:16 frame, Claymation (plastilina) con texturas de huellas dactilares, estadio en miniatura, luz de reflector. El jugador mira su pie de plastilina; aparece la huella dactilar del animador. Cinematic, shallow depth of field, no text."
+  }
+ ],
+ "cortinilla_fuentes": {
+  "duration_seconds": 6,
+  "titulo": "Fuentes",
+  "aviso": "Imágenes generadas con IA. Voz sintética.",
+  "bg_rgb": [
+   18,
+   16,
+   14
+  ]
+ },
+ "audio": {
+  "music_asset": "",
+  "music_license": "",
+  "music_volume": 0.25
+ },
+ "export": {
+  "filename": "lote01-03-balon-curva.mp4",
+  "resolution": "1080x1920",
+  "fps": 30,
+  "subtitle_max_words": 3
+ },
+ "estado": "GUION_OK"
+}

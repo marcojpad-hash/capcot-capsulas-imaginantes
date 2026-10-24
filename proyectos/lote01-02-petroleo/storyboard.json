@@ -1,0 +1,178 @@
+{
+ "project_id": "lote01-02-petroleo",
+ "serie": "Imaginantes de la ciencia",
+ "title": "La sopa de luz que se volvió petróleo",
+ "language": "es-MX",
+ "aspect_ratio": "9:16",
+ "target_duration_seconds": 80,
+ "audience": "Público general en redes (TikTok/Shorts)",
+ "estilo_visual": "Grabado en madera (woodcut) en negro y ocre, con un único acento verde fluorescente para el plancton",
+ "music_mood": "Contrabajo y tambor lento, drones minerales; respiración de órgano en el final",
+ "trend_source": {
+  "tipo": "lote",
+  "rss_geo": "MX",
+  "url": "https://trends.google.com/trending/rss?geo=MX",
+  "lote": "guiones_lote_01",
+  "fecha_consulta": "2026-10-24"
+ },
+ "voice": {
+  "engine": "edge-tts",
+  "voice_id": "es-MX-JorgeNeural",
+  "rate": "-8%",
+  "pitch": "-2Hz",
+  "pad_seconds": 0.8
+ },
+ "sources": [
+  {
+   "id": "SRC-001",
+   "cita_corta": "Tissot, B. P. & Welte, D. H. (1984). Petroleum Formation and Occurrence (2.ª ed.). Springer.",
+   "url": "https://doi.org/10.1007/978-3-642-87813-8",
+   "accessed": "2026-10-24",
+   "supports": [],
+   "doi": "10.1007/978-3-642-87813-8"
+  },
+  {
+   "id": "SRC-002",
+   "cita_corta": "U.S. Energy Information Administration — Oil and petroleum products explained.",
+   "url": "https://www.eia.gov/energyexplained/oil-and-petroleum-products/",
+   "accessed": "2026-10-24",
+   "supports": []
+  }
+ ],
+ "scenes": [
+  {
+   "id": "scene_001",
+   "duration_seconds": 8,
+   "narration": "",
+   "on_screen_text": "Hace 100 millones de años",
+   "visual_description": "Grabado: un mar antiguo lleno de diminutas algas verdes brillantes, como polvo de estrellas en el agua",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "asset_filename": "frames/scene_001.png",
+   "asset_type": "image",
+   "status": "planned",
+   "notes": "",
+   "arc": "hook_medias_res",
+   "image_prompt": "Vertical 9:16 frame, Grabado en madera (woodcut) en negro y ocre, con un único acento verde fluorescente para el plancton. Grabado: un mar antiguo lleno de diminutas algas verdes brillantes, como polvo de estrellas en el agua. Cinematic, shallow depth of field, no text."
+  },
+  {
+   "id": "scene_002",
+   "duration_seconds": 10,
+   "narration": "Todo empezó con una luz tan pequeña que cabía en una gota.",
+   "on_screen_text": "Una luz en una gota",
+   "visual_description": "Macro grabado: una célula de plancton bebe un rayo de sol; sus líneas talladas irradian verde",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "asset_filename": "frames/scene_002.png",
+   "asset_type": "image",
+   "status": "planned",
+   "notes": "",
+   "arc": "desarrollo",
+   "image_prompt": "Vertical 9:16 frame, Grabado en madera (woodcut) en negro y ocre, con un único acento verde fluorescente para el plancton. Macro grabado: una célula de plancton bebe un rayo de sol; sus líneas talladas irradian verde. Cinematic, shallow depth of field, no text."
+  },
+  {
+   "id": "scene_003",
+   "duration_seconds": 10,
+   "narration": "",
+   "on_screen_text": "",
+   "visual_description": "Las algas mueren y caen en lluvia lenta al fondo sin oxígeno; capas de lodo las cubren como cobijas",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "asset_filename": "frames/scene_003.png",
+   "asset_type": "image",
+   "status": "planned",
+   "notes": "",
+   "arc": "desarrollo",
+   "image_prompt": "Vertical 9:16 frame, Grabado en madera (woodcut) en negro y ocre, con un único acento verde fluorescente para el plancton. Las algas mueren y caen en lluvia lenta al fondo sin oxígeno; capas de lodo las cubren como cobijas. Cinematic, shallow depth of field, no text."
+  },
+  {
+   "id": "scene_004",
+   "duration_seconds": 12,
+   "narration": "El fondo del mar las guardó… como quien guarda una carta sin abrir.",
+   "on_screen_text": "Una carta sin abrir",
+   "visual_description": "Corte geológico tallado: capas de roca se apilan; presión y calor representados como manos de piedra que aprietan",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "asset_filename": "frames/scene_004.png",
+   "asset_type": "image",
+   "status": "planned",
+   "notes": "",
+   "arc": "desarrollo",
+   "image_prompt": "Vertical 9:16 frame, Grabado en madera (woodcut) en negro y ocre, con un único acento verde fluorescente para el plancton. Corte geológico tallado: capas de roca se apilan; presión y calor representados como manos de piedra que aprietan. Cinematic, shallow depth of field, no text."
+  },
+  {
+   "id": "scene_005",
+   "duration_seconds": 12,
+   "narration": "",
+   "on_screen_text": "Calor, presión, millones de años",
+   "visual_description": "El lodo se oscurece hasta volverse gota negra brillante; la gota sube por poros de roca como un viajero clandestino",
+   "source_ids": [
+    "SRC-002"
+   ],
+   "asset_filename": "frames/scene_005.png",
+   "asset_type": "image",
+   "status": "planned",
+   "notes": "",
+   "arc": "desarrollo",
+   "image_prompt": "Vertical 9:16 frame, Grabado en madera (woodcut) en negro y ocre, con un único acento verde fluorescente para el plancton. El lodo se oscurece hasta volverse gota negra brillante; la gota sube por poros de roca como un viajero clandestino. Cinematic, shallow depth of field, no text."
+  },
+  {
+   "id": "scene_006",
+   "duration_seconds": 12,
+   "narration": "Hoy esa carta la quemamos en segundos. El sol viejo vuelve a ser fuego… y humo.",
+   "on_screen_text": "Sol antiguo → fuego",
+   "visual_description": "Una refinería grabada en madera; dentro de la llama aparece, tenue, la silueta de la alga verde",
+   "source_ids": [
+    "SRC-002"
+   ],
+   "asset_filename": "frames/scene_006.png",
+   "asset_type": "image",
+   "status": "planned",
+   "notes": "",
+   "arc": "cierre_historia",
+   "image_prompt": "Vertical 9:16 frame, Grabado en madera (woodcut) en negro y ocre, con un único acento verde fluorescente para el plancton. Una refinería grabada en madera; dentro de la llama aparece, tenue, la silueta de la alga verde. Cinematic, shallow depth of field, no text."
+  },
+  {
+   "id": "scene_007",
+   "duration_seconds": 10,
+   "narration": "Cada gota fue una vida que miró al sol. ¿Qué hacemos con una herencia que tardó cien millones de años en escribirse?",
+   "on_screen_text": "¿Qué hacemos con la herencia?",
+   "visual_description": "Una mano sostiene una gota negra que refleja un mar verde antiguo",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "asset_filename": "frames/scene_007.png",
+   "asset_type": "image",
+   "status": "planned",
+   "notes": "",
+   "arc": "reflexion_o_pregunta",
+   "image_prompt": "Vertical 9:16 frame, Grabado en madera (woodcut) en negro y ocre, con un único acento verde fluorescente para el plancton. Una mano sostiene una gota negra que refleja un mar verde antiguo. Cinematic, shallow depth of field, no text."
+  }
+ ],
+ "cortinilla_fuentes": {
+  "duration_seconds": 6,
+  "titulo": "Fuentes",
+  "aviso": "Imágenes generadas con IA. Voz sintética.",
+  "bg_rgb": [
+   18,
+   16,
+   14
+  ]
+ },
+ "audio": {
+  "music_asset": "",
+  "music_license": "",
+  "music_volume": 0.25
+ },
+ "export": {
+  "filename": "lote01-02-petroleo.mp4",
+  "resolution": "1080x1920",
+  "fps": 30,
+  "subtitle_max_words": 3
+ },
+ "estado": "GUION_OK"
+}

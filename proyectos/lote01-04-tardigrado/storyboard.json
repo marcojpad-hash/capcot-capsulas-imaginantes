@@ -1,0 +1,179 @@
+{
+ "project_id": "lote01-04-tardigrado",
+ "serie": "Imaginantes de la ciencia",
+ "title": "El oso que aprendió a no morir",
+ "language": "es-MX",
+ "aspect_ratio": "9:16",
+ "target_duration_seconds": 82,
+ "audience": "Público general en redes (TikTok/Shorts)",
+ "estilo_visual": "Amigurumi (muñecos tejidos a crochet) en miniatura, foto macro con Ken Burns, paleta de musgo verde y luz cálida que se vuelve fría",
+ "music_mood": "Piano melancólico solo, notas espaciadas; sin efectos de sonido",
+ "trend_source": {
+  "tipo": "lote",
+  "rss_geo": "MX",
+  "url": "https://trends.google.com/trending/rss?geo=MX",
+  "lote": "guiones_lote_01",
+  "fecha_consulta": "2026-10-24"
+ },
+ "voice": {
+  "engine": "edge-tts",
+  "voice_id": "es-MX-JorgeNeural",
+  "rate": "-8%",
+  "pitch": "-2Hz",
+  "pad_seconds": 0.8
+ },
+ "sources": [
+  {
+   "id": "SRC-001",
+   "cita_corta": "Hashimoto, T., Horikawa, D. D., Saito, Y. et al. (2016). Extremotolerant tardigrade genome and improved…",
+   "url": "https://doi.org/10.1038/ncomms12808",
+   "accessed": "2026-10-24",
+   "supports": [],
+   "doi": "10.1038/ncomms12808"
+  },
+  {
+   "id": "SRC-002",
+   "cita_corta": "Boothby, T. C., Tapia, H., Brozena, A. H. et al. (2017). Tardigrades Use Intrinsically Disordered Proteins…",
+   "url": "https://doi.org/10.1016/j.molcel.2017.02.018",
+   "accessed": "2026-10-24",
+   "supports": [],
+   "doi": "10.1016/j.molcel.2017.02.018"
+  }
+ ],
+ "scenes": [
+  {
+   "id": "scene_001",
+   "duration_seconds": 8,
+   "narration": "",
+   "on_screen_text": "",
+   "visual_description": "Un tardígrado amigurumi de ocho patas regordetas camina sobre una gota de agua en musgo tejido",
+   "source_ids": [
+    "SRC-002"
+   ],
+   "asset_filename": "frames/scene_001.png",
+   "asset_type": "image",
+   "status": "planned",
+   "notes": "",
+   "arc": "hook_medias_res",
+   "image_prompt": "Vertical 9:16 frame, Amigurumi (muñecos tejidos a crochet) en miniatura, foto macro con Ken Burns, paleta de musgo verde y luz cálida que se vuelve fría. Un tardígrado amigurumi de ocho patas regordetas camina sobre una gota de agua en musgo tejido. Cinematic, shallow depth of field, no text."
+  },
+  {
+   "id": "scene_002",
+   "duration_seconds": 10,
+   "narration": "",
+   "on_screen_text": "El charco se seca",
+   "visual_description": "El sol tejido brilla fuerte; la gota se encoge; el tardígrado mira alrededor, preocupado",
+   "source_ids": [
+    "SRC-002"
+   ],
+   "asset_filename": "frames/scene_002.png",
+   "asset_type": "image",
+   "status": "planned",
+   "notes": "",
+   "arc": "desarrollo",
+   "image_prompt": "Vertical 9:16 frame, Amigurumi (muñecos tejidos a crochet) en miniatura, foto macro con Ken Burns, paleta de musgo verde y luz cálida que se vuelve fría. El sol tejido brilla fuerte; la gota se encoge; el tardígrado mira alrededor, preocupado. Cinematic, shallow depth of field, no text."
+  },
+  {
+   "id": "scene_003",
+   "duration_seconds": 12,
+   "narration": "",
+   "on_screen_text": "",
+   "visual_description": "Se recoge sobre sí mismo hasta volverse una bolita de estambre: un 'tun'; el musgo se vuelve café",
+   "source_ids": [
+    "SRC-002"
+   ],
+   "asset_filename": "frames/scene_003.png",
+   "asset_type": "image",
+   "status": "planned",
+   "notes": "",
+   "arc": "desarrollo",
+   "image_prompt": "Vertical 9:16 frame, Amigurumi (muñecos tejidos a crochet) en miniatura, foto macro con Ken Burns, paleta de musgo verde y luz cálida que se vuelve fría. Se recoge sobre sí mismo hasta volverse una bolita de estambre: un 'tun'; el musgo se vuelve café. Cinematic, shallow depth of field, no text."
+  },
+  {
+   "id": "scene_004",
+   "duration_seconds": 12,
+   "narration": "Para no romperse, se convirtió en vidrio.",
+   "on_screen_text": "Se vuelve vidrio",
+   "visual_description": "Dentro de la bolita, hilos translúcidos se cristalizan como vitral alrededor de su corazón tejido",
+   "source_ids": [
+    "SRC-002"
+   ],
+   "asset_filename": "frames/scene_004.png",
+   "asset_type": "image",
+   "status": "planned",
+   "notes": "",
+   "arc": "desarrollo",
+   "image_prompt": "Vertical 9:16 frame, Amigurumi (muñecos tejidos a crochet) en miniatura, foto macro con Ken Burns, paleta de musgo verde y luz cálida que se vuelve fría. Dentro de la bolita, hilos translúcidos se cristalizan como vitral alrededor de su corazón tejido. Cinematic, shallow depth of field, no text."
+  },
+  {
+   "id": "scene_005",
+   "duration_seconds": 12,
+   "narration": "Años después, una sola gota basta para despertarlo.",
+   "on_screen_text": "Una gota lo despierta",
+   "visual_description": "Lluvia de cuentas de vidrio; la bolita se desenrolla; el tardígrado estira las patas",
+   "source_ids": [
+    "SRC-002"
+   ],
+   "asset_filename": "frames/scene_005.png",
+   "asset_type": "image",
+   "status": "planned",
+   "notes": "",
+   "arc": "desarrollo",
+   "image_prompt": "Vertical 9:16 frame, Amigurumi (muñecos tejidos a crochet) en miniatura, foto macro con Ken Burns, paleta de musgo verde y luz cálida que se vuelve fría. Lluvia de cuentas de vidrio; la bolita se desenrolla; el tardígrado estira las patas. Cinematic, shallow depth of field, no text."
+  },
+  {
+   "id": "scene_006",
+   "duration_seconds": 12,
+   "narration": "Hoy, una de sus proteínas protege también células humanas de la radiación.",
+   "on_screen_text": "Su escudo, en células humanas",
+   "visual_description": "Una pequeña célula tejida recibe del tardígrado una bufanda brillante, mientras rayos de lana roja rebotan",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "asset_filename": "frames/scene_006.png",
+   "asset_type": "image",
+   "status": "planned",
+   "notes": "",
+   "arc": "cierre_historia",
+   "image_prompt": "Vertical 9:16 frame, Amigurumi (muñecos tejidos a crochet) en miniatura, foto macro con Ken Burns, paleta de musgo verde y luz cálida que se vuelve fría. Una pequeña célula tejida recibe del tardígrado una bufanda brillante, mientras rayos de lana roja rebotan. Cinematic, shallow depth of field, no text."
+  },
+  {
+   "id": "scene_007",
+   "duration_seconds": 10,
+   "narration": "Sobrevivir no fue resistir, sino saber detenerse. ¿Y si a veces vivir fuera aprender a esperar?",
+   "on_screen_text": "¿Vivir es saber esperar?",
+   "visual_description": "El tardígrado sentado en el musgo verde mirando una gota que cae",
+   "source_ids": [
+    "SRC-002"
+   ],
+   "asset_filename": "frames/scene_007.png",
+   "asset_type": "image",
+   "status": "planned",
+   "notes": "",
+   "arc": "reflexion_o_pregunta",
+   "image_prompt": "Vertical 9:16 frame, Amigurumi (muñecos tejidos a crochet) en miniatura, foto macro con Ken Burns, paleta de musgo verde y luz cálida que se vuelve fría. El tardígrado sentado en el musgo verde mirando una gota que cae. Cinematic, shallow depth of field, no text."
+  }
+ ],
+ "cortinilla_fuentes": {
+  "duration_seconds": 6,
+  "titulo": "Fuentes",
+  "aviso": "Imágenes generadas con IA. Voz sintética.",
+  "bg_rgb": [
+   18,
+   16,
+   14
+  ]
+ },
+ "audio": {
+  "music_asset": "",
+  "music_license": "",
+  "music_volume": 0.25
+ },
+ "export": {
+  "filename": "lote01-04-tardigrado.mp4",
+  "resolution": "1080x1920",
+  "fps": 30,
+  "subtitle_max_words": 3
+ },
+ "estado": "GUION_OK"
+}

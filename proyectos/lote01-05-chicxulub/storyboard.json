@@ -1,0 +1,203 @@
+{
+ "project_id": "lote01-05-chicxulub",
+ "serie": "Imaginantes de la ciencia",
+ "title": "La tarde en que el cielo cayó en Yucatán",
+ "language": "es-MX",
+ "aspect_ratio": "9:16",
+ "target_duration_seconds": 84,
+ "audience": "Público general en redes (TikTok/Shorts)",
+ "estilo_visual": "Tinta china y aguada (sumi-e) sobre papel de arroz, negro con salpicaduras rojo-fuego; trazos que se dibujan en tiempo real",
+ "music_mood": "Taiko grave y viento; silencio total en el impacto; violonchelo solo al renacer",
+ "trend_source": {
+  "tipo": "lote",
+  "rss_geo": "MX",
+  "url": "https://trends.google.com/trending/rss?geo=MX",
+  "lote": "guiones_lote_01",
+  "fecha_consulta": "2026-10-24"
+ },
+ "voice": {
+  "engine": "edge-tts",
+  "voice_id": "es-MX-JorgeNeural",
+  "rate": "-8%",
+  "pitch": "-2Hz",
+  "pad_seconds": 0.8
+ },
+ "sources": [
+  {
+   "id": "SRC-001",
+   "cita_corta": "Hildebrand, A. R., Penfield, G. T., Kring, D. A. et al. (1991). Chicxulub Crater: A possible…",
+   "url": "https://doi.org/10.1130/0091-7613(1991)019<0867:CCAPCT>2.3.CO;2",
+   "accessed": "2026-10-24",
+   "supports": [],
+   "doi": "10.1130/0091-7613(1991)019<0867:CCAPCT>2.3.CO;2"
+  },
+  {
+   "id": "SRC-002",
+   "cita_corta": "Schulte, P. et al. (2010). The Chicxulub Asteroid Impact and Mass Extinction at the Cretaceous-Paleogene…",
+   "url": "https://doi.org/10.1126/science.1177265",
+   "accessed": "2026-10-24",
+   "supports": [],
+   "doi": "10.1126/science.1177265"
+  },
+  {
+   "id": "SRC-003",
+   "cita_corta": "Alvarez, L. W., Alvarez, W., Asaro, F. & Michel, H. V. (1980). Extraterrestrial Cause for the…",
+   "url": "https://doi.org/10.1126/science.208.4448.1095",
+   "accessed": "2026-10-24",
+   "supports": [],
+   "doi": "10.1126/science.208.4448.1095"
+  }
+ ],
+ "scenes": [
+  {
+   "id": "scene_001",
+   "duration_seconds": 8,
+   "narration": "",
+   "on_screen_text": "Hace 66 millones de años",
+   "visual_description": "Tinta: un dinosaurio de cuello largo bebe en una laguna tranquila; en el cielo, un punto rojo",
+   "source_ids": [
+    "SRC-002"
+   ],
+   "asset_filename": "frames/scene_001.png",
+   "asset_type": "image",
+   "status": "planned",
+   "notes": "",
+   "arc": "hook_medias_res",
+   "image_prompt": "Vertical 9:16 frame, Tinta china y aguada (sumi-e) sobre papel de arroz, negro con salpicaduras rojo-fuego; trazos que se dibujan en tiempo real. Tinta: un dinosaurio de cuello largo bebe en una laguna tranquila; en el cielo, un punto rojo. Cinematic, shallow depth of field, no text."
+  },
+  {
+   "id": "scene_002",
+   "duration_seconds": 8,
+   "narration": "",
+   "on_screen_text": "",
+   "visual_description": "El punto crece como una gota de tinta que cae sobre el papel; el dinosaurio levanta la cabeza",
+   "source_ids": [
+    "SRC-002"
+   ],
+   "asset_filename": "frames/scene_002.png",
+   "asset_type": "image",
+   "status": "planned",
+   "notes": "",
+   "arc": "desarrollo",
+   "image_prompt": "Vertical 9:16 frame, Tinta china y aguada (sumi-e) sobre papel de arroz, negro con salpicaduras rojo-fuego; trazos que se dibujan en tiempo real. El punto crece como una gota de tinta que cae sobre el papel; el dinosaurio levanta la cabeza. Cinematic, shallow depth of field, no text."
+  },
+  {
+   "id": "scene_003",
+   "duration_seconds": 6,
+   "narration": "",
+   "on_screen_text": "",
+   "visual_description": "Pantalla blanca. Silencio. Una salpicadura negra estalla y se expande por todo el papel",
+   "source_ids": [
+    "SRC-002"
+   ],
+   "asset_filename": "frames/scene_003.png",
+   "asset_type": "image",
+   "status": "planned",
+   "notes": "",
+   "arc": "desarrollo",
+   "image_prompt": "Vertical 9:16 frame, Tinta china y aguada (sumi-e) sobre papel de arroz, negro con salpicaduras rojo-fuego; trazos que se dibujan en tiempo real. Pantalla blanca. Silencio. Una salpicadura negra estalla y se expande por todo el papel. Cinematic, shallow depth of field, no text."
+  },
+  {
+   "id": "scene_004",
+   "duration_seconds": 12,
+   "narration": "Una piedra del tamaño de una ciudad tocó el mar… y el mundo se apagó como una vela.",
+   "on_screen_text": "El mundo se apagó",
+   "visual_description": "Tinta gris cubre el cielo; los trazos de árboles se borran; un sol de tinta tenue",
+   "source_ids": [
+    "SRC-002"
+   ],
+   "asset_filename": "frames/scene_004.png",
+   "asset_type": "image",
+   "status": "planned",
+   "notes": "",
+   "arc": "desarrollo",
+   "image_prompt": "Vertical 9:16 frame, Tinta china y aguada (sumi-e) sobre papel de arroz, negro con salpicaduras rojo-fuego; trazos que se dibujan en tiempo real. Tinta gris cubre el cielo; los trazos de árboles se borran; un sol de tinta tenue. Cinematic, shallow depth of field, no text."
+  },
+  {
+   "id": "scene_005",
+   "duration_seconds": 12,
+   "narration": "Décadas atrás, una capa delgada de arcilla rica en iridio confesó el crimen.",
+   "on_screen_text": "Iridio: la firma",
+   "visual_description": "Un geólogo dibujado con pincel raspa una línea delgada roja en un acantilado de tinta",
+   "source_ids": [
+    "SRC-003"
+   ],
+   "asset_filename": "frames/scene_005.png",
+   "asset_type": "image",
+   "status": "planned",
+   "notes": "",
+   "arc": "desarrollo",
+   "image_prompt": "Vertical 9:16 frame, Tinta china y aguada (sumi-e) sobre papel de arroz, negro con salpicaduras rojo-fuego; trazos que se dibujan en tiempo real. Un geólogo dibujado con pincel raspa una línea delgada roja en un acantilado de tinta. Cinematic, shallow depth of field, no text."
+  },
+  {
+   "id": "scene_006",
+   "duration_seconds": 12,
+   "narration": "Y bajo Yucatán, la cicatriz esperaba que la encontráramos.",
+   "on_screen_text": "Chicxulub, Yucatán",
+   "visual_description": "Mapa de tinta de la península; un anillo enorme se dibuja bajo la tierra y los cenotes como cuentas",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "asset_filename": "frames/scene_006.png",
+   "asset_type": "image",
+   "status": "planned",
+   "notes": "",
+   "arc": "desarrollo",
+   "image_prompt": "Vertical 9:16 frame, Tinta china y aguada (sumi-e) sobre papel de arroz, negro con salpicaduras rojo-fuego; trazos que se dibujan en tiempo real. Mapa de tinta de la península; un anillo enorme se dibuja bajo la tierra y los cenotes como cuentas. Cinematic, shallow depth of field, no text."
+  },
+  {
+   "id": "scene_007",
+   "duration_seconds": 10,
+   "narration": "",
+   "on_screen_text": "",
+   "visual_description": "De la tinta gris brota un pequeño mamífero de pincel que mira hacia arriba",
+   "source_ids": [
+    "SRC-002"
+   ],
+   "asset_filename": "frames/scene_007.png",
+   "asset_type": "image",
+   "status": "planned",
+   "notes": "",
+   "arc": "cierre_historia",
+   "image_prompt": "Vertical 9:16 frame, Tinta china y aguada (sumi-e) sobre papel de arroz, negro con salpicaduras rojo-fuego; trazos que se dibujan en tiempo real. De la tinta gris brota un pequeño mamífero de pincel que mira hacia arriba. Cinematic, shallow depth of field, no text."
+  },
+  {
+   "id": "scene_008",
+   "duration_seconds": 10,
+   "narration": "Un final fue, para alguien, un principio. ¿Somos los herederos de una catástrofe… o su respuesta?",
+   "on_screen_text": "¿Herederos o respuesta?",
+   "visual_description": "El mamífero se convierte, trazo a trazo, en una mano humana que sostiene el pincel",
+   "source_ids": [
+    "SRC-002"
+   ],
+   "asset_filename": "frames/scene_008.png",
+   "asset_type": "image",
+   "status": "planned",
+   "notes": "",
+   "arc": "reflexion_o_pregunta",
+   "image_prompt": "Vertical 9:16 frame, Tinta china y aguada (sumi-e) sobre papel de arroz, negro con salpicaduras rojo-fuego; trazos que se dibujan en tiempo real. El mamífero se convierte, trazo a trazo, en una mano humana que sostiene el pincel. Cinematic, shallow depth of field, no text."
+  }
+ ],
+ "cortinilla_fuentes": {
+  "duration_seconds": 6,
+  "titulo": "Fuentes",
+  "aviso": "Imágenes generadas con IA. Voz sintética.",
+  "bg_rgb": [
+   18,
+   16,
+   14
+  ]
+ },
+ "audio": {
+  "music_asset": "",
+  "music_license": "",
+  "music_volume": 0.25
+ },
+ "export": {
+  "filename": "lote01-05-chicxulub.mp4",
+  "resolution": "1080x1920",
+  "fps": 30,
+  "subtitle_max_words": 3
+ },
+ "estado": "GUION_OK"
+}

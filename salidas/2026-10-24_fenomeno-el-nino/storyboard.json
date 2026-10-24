@@ -1,0 +1,184 @@
+{
+ "project_id": "2026-10-24_fenomeno-el-nino",
+ "serie": "Imaginantes de la ciencia (prueba)",
+ "title": "El mar que llegó en Navidad: El Niño",
+ "language": "es-MX",
+ "aspect_ratio": "9:16",
+ "target_duration_seconds": 80,
+ "trend_source": {
+  "tipo": "google_trends_rss",
+  "rss_geo": "MX",
+  "url": "https://trends.google.com/trending/rss?geo=MX",
+  "termino": "el niño fenomeno",
+  "trafico": "500+",
+  "fecha_consulta": "2026-10-24"
+ },
+ "estilo_visual": "Linograbado (linocut) bitono índigo y ocre sobre papel crema",
+ "voice": {
+  "engine": "edge-tts",
+  "voice_id": "es-MX-JorgeNeural",
+  "rate": "-8%",
+  "pitch": "-2Hz",
+  "pad_seconds": 0.8
+ },
+ "sources": [
+  {
+   "id": "SRC-001",
+   "cita_corta": "L'Heureux, M. (2014). What is ENSO in a nutshell? NOAA Climate.gov.",
+   "url": "https://www.climate.gov/news-features/blogs/enso/what-el-nino-southern-oscillation-enso-nutshell",
+   "accessed": "2026-10-24",
+   "supports": [
+    "pescadores sudamericanos, Navidad",
+    "Walker y la Oscilación del Sur",
+    "Bjerknes, finales de los 60",
+    "ENSO influye temperatura y lluvia en todo el globo"
+   ],
+   "ref_display": "climate.gov › ENSO in a nutshell"
+  },
+  {
+   "id": "SRC-002",
+   "cita_corta": "Bjerknes, J. (1969). Monthly Weather Review 97, 163-172.",
+   "doi": "10.1175/1520-0493(1969)097<0163:ATFTEP>2.3.CO;2",
+   "url": "https://doi.org/10.1175/1520-0493(1969)097%3C0163:ATFTEP%3E2.3.CO;2",
+   "accessed": "2026-10-24",
+   "supports": [
+    "acoplamiento océano-atmósfera"
+   ]
+  },
+  {
+   "id": "SRC-003",
+   "cita_corta": "McPhaden, Zebiak & Glantz (2006). Science 314, 1740-1745.",
+   "doi": "10.1126/science.1132588",
+   "url": "https://doi.org/10.1126/science.1132588",
+   "accessed": "2026-10-24",
+   "supports": [
+    "ENSO con impactos globales"
+   ]
+  }
+ ],
+ "scenes": [
+  {
+   "id": "scene_001",
+   "arc": "hook_medias_res",
+   "duration_seconds": 9,
+   "narration": "Navidad, costa de Sudamérica. Las redes suben vacías.",
+   "on_screen_text": "Las redes, vacías",
+   "visual_description": "ver prompt",
+   "image_prompt": "linocut indigo/ocre (ver registro)",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "asset_filename": "frames/scene_001.jpg",
+   "nota": "'redes vacías' es dramatización visual, no dato"
+  },
+  {
+   "id": "scene_002",
+   "arc": "desarrollo",
+   "duration_seconds": 8,
+   "narration": "El mar llegó tibio. Los pescadores le pusieron nombre de recién nacido: El Niño.",
+   "on_screen_text": "Le llamaron El Niño",
+   "visual_description": "ver prompt",
+   "image_prompt": "linocut indigo/ocre (ver registro)",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "asset_filename": "frames/scene_002.jpg"
+  },
+  {
+   "id": "scene_003",
+   "arc": "desarrollo",
+   "duration_seconds": 9,
+   "narration": "",
+   "on_screen_text": "",
+   "visual_description": "ver prompt",
+   "image_prompt": "linocut indigo/ocre (ver registro)",
+   "source_ids": [],
+   "asset_filename": "frames/scene_003.jpg"
+  },
+  {
+   "id": "scene_004",
+   "arc": "desarrollo",
+   "duration_seconds": 9,
+   "narration": "Lejos de ahí, Gilbert Walker estudiaba la presión del aire. Encontró un sube y baja entre Indonesia y el Pacífico tropical.",
+   "on_screen_text": "La Oscilación del Sur",
+   "visual_description": "ver prompt",
+   "image_prompt": "linocut indigo/ocre (ver registro)",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "asset_filename": "frames/scene_004.jpg"
+  },
+  {
+   "id": "scene_005",
+   "arc": "desarrollo",
+   "duration_seconds": 9,
+   "narration": "No sabía que el mar estaba en el otro extremo.",
+   "on_screen_text": "",
+   "visual_description": "ver prompt",
+   "image_prompt": "linocut indigo/ocre (ver registro)",
+   "source_ids": [],
+   "asset_filename": "frames/scene_005.jpg"
+  },
+  {
+   "id": "scene_006",
+   "arc": "cierre_historia",
+   "duration_seconds": 9,
+   "narration": "A finales de los sesenta, Jacob Bjerknes unió las piezas: el océano y el viento eran una sola conversación.",
+   "on_screen_text": "Océano + atmósfera",
+   "visual_description": "ver prompt",
+   "image_prompt": "linocut indigo/ocre (ver registro)",
+   "source_ids": [
+    "SRC-001",
+    "SRC-002"
+   ],
+   "asset_filename": "frames/scene_006.jpg"
+  },
+  {
+   "id": "scene_007",
+   "arc": "cierre_historia",
+   "duration_seconds": 9,
+   "narration": "Hoy lo llamamos ENSO, y sus efectos se sienten en la Tierra entera.",
+   "on_screen_text": "ENSO",
+   "visual_description": "ver prompt",
+   "image_prompt": "linocut indigo/ocre (ver registro)",
+   "source_ids": [
+    "SRC-001",
+    "SRC-003"
+   ],
+   "asset_filename": "frames/scene_007.jpg"
+  },
+  {
+   "id": "scene_008",
+   "arc": "reflexion_o_pregunta",
+   "duration_seconds": 10,
+   "narration": "Un mar tibio, del tamaño de un niño, cambia la lluvia del mundo. ¿Qué otra cosa pequeña estará moviendo lo que creemos grande?",
+   "on_screen_text": "",
+   "visual_description": "ver prompt",
+   "image_prompt": "linocut indigo/ocre (ver registro)",
+   "source_ids": [],
+   "asset_filename": "frames/scene_008.jpg"
+  }
+ ],
+ "cortinilla_fuentes": {
+  "duration_seconds": 7,
+  "titulo": "Fuentes",
+  "aviso": "Imágenes generadas con IA. Voz sintética (edge-tts).",
+  "bg_rgb": [
+   20,
+   28,
+   52
+  ]
+ },
+ "audio": {
+  "music_asset": "",
+  "music_license": "",
+  "music_volume": 0.25
+ },
+ "export": {
+  "filename": "capsula.mp4",
+  "resolution": "1080x1920",
+  "fps": 30,
+  "subtitle_max_words": 3
+ },
+ "estado": "STORYBOARD_VALIDADO"
+}

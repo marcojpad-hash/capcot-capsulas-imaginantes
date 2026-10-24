@@ -1,0 +1,186 @@
+{
+ "project_id": "lote01-01-el-nino",
+ "serie": "Imaginantes de la ciencia",
+ "title": "El niño que calienta el mar",
+ "language": "es-MX",
+ "aspect_ratio": "9:16",
+ "target_duration_seconds": 78,
+ "audience": "Público general en redes (TikTok/Shorts)",
+ "estilo_visual": "Papel recortado en capas (pop-up), sepia con acentos rojo coral y azul Pacífico, manos visibles moviendo piezas",
+ "music_mood": "Caja de música con marimba lejana; tensión de cuerdas graves en el clímax; silencio antes de la pregunta final",
+ "trend_source": {
+  "tipo": "lote",
+  "rss_geo": "MX",
+  "url": "https://trends.google.com/trending/rss?geo=MX",
+  "lote": "guiones_lote_01",
+  "fecha_consulta": "2026-10-24"
+ },
+ "voice": {
+  "engine": "edge-tts",
+  "voice_id": "es-MX-JorgeNeural",
+  "rate": "-8%",
+  "pitch": "-2Hz",
+  "pad_seconds": 0.8
+ },
+ "sources": [
+  {
+   "id": "SRC-001",
+   "cita_corta": "McPhaden, M. J., Zebiak, S. E. & Glantz, M. H. (2006). ENSO as an Integrating Concept in Earth Science.…",
+   "url": "https://doi.org/10.1126/science.1132588",
+   "accessed": "2026-10-24",
+   "supports": [],
+   "doi": "10.1126/science.1132588"
+  },
+  {
+   "id": "SRC-002",
+   "cita_corta": "Cai, W., McPhaden, M. J., Grimm, A. M. et al. (2020). Climate impacts of the El Niño–Southern Oscillation…",
+   "url": "https://doi.org/10.1038/s43017-020-0040-3",
+   "accessed": "2026-10-24",
+   "supports": [],
+   "doi": "10.1038/s43017-020-0040-3"
+  },
+  {
+   "id": "SRC-003",
+   "cita_corta": "NOAA Climate.gov — ENSO (El Niño/La Niña).",
+   "url": "https://www.climate.gov/enso",
+   "accessed": "2026-10-24",
+   "supports": []
+  }
+ ],
+ "scenes": [
+  {
+   "id": "scene_001",
+   "duration_seconds": 8,
+   "narration": "",
+   "on_screen_text": "Diciembre. Costa de Perú.",
+   "visual_description": "Pescador de papel recortado levanta una red vacía al amanecer; el mar de papel azul se tiñe de naranja; mano humana sostiene la orilla",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "asset_filename": "frames/scene_001.png",
+   "asset_type": "image",
+   "status": "planned",
+   "notes": "",
+   "arc": "hook_medias_res",
+   "image_prompt": "Vertical 9:16 frame, Papel recortado en capas (pop-up), sepia con acentos rojo coral y azul Pacífico, manos visibles moviendo piezas. Pescador de papel recortado levanta una red vacía al amanecer; el mar de papel azul se tiñe de naranja; mano humana sostiene la orilla. Cinematic, shallow depth of field, no text."
+  },
+  {
+   "id": "scene_002",
+   "duration_seconds": 10,
+   "narration": "Los pescadores le pusieron nombre de niño… porque llegaba cerca de Navidad.",
+   "on_screen_text": "Le llamaron «El Niño»",
+   "visual_description": "Un niño de papel, hecho de olas tibias, camina sobre el agua cargando un farol; peces huyen hacia el fondo",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "asset_filename": "frames/scene_002.png",
+   "asset_type": "image",
+   "status": "planned",
+   "notes": "",
+   "arc": "desarrollo",
+   "image_prompt": "Vertical 9:16 frame, Papel recortado en capas (pop-up), sepia con acentos rojo coral y azul Pacífico, manos visibles moviendo piezas. Un niño de papel, hecho de olas tibias, camina sobre el agua cargando un farol; peces huyen hacia el fondo. Cinematic, shallow depth of field, no text."
+  },
+  {
+   "id": "scene_003",
+   "duration_seconds": 10,
+   "narration": "",
+   "on_screen_text": "",
+   "visual_description": "Vista aérea pop-up del Pacífico: los vientos alisios, como hilos rojos, se aflojan y una mancha cálida viaja de oeste a este",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "asset_filename": "frames/scene_003.png",
+   "asset_type": "image",
+   "status": "planned",
+   "notes": "",
+   "arc": "desarrollo",
+   "image_prompt": "Vertical 9:16 frame, Papel recortado en capas (pop-up), sepia con acentos rojo coral y azul Pacífico, manos visibles moviendo piezas. Vista aérea pop-up del Pacífico: los vientos alisios, como hilos rojos, se aflojan y una mancha cálida viaja de oeste a este. Cinematic, shallow depth of field, no text."
+  },
+  {
+   "id": "scene_004",
+   "duration_seconds": 12,
+   "narration": "Basta que el viento se canse… para que medio planeta cambie de humor.",
+   "on_screen_text": "El viento se cansa",
+   "visual_description": "Los hilos de viento se deshilachan; el niño de agua crece y su sombra cubre un mapa de papel de América",
+   "source_ids": [
+    "SRC-003"
+   ],
+   "asset_filename": "frames/scene_004.png",
+   "asset_type": "image",
+   "status": "planned",
+   "notes": "",
+   "arc": "desarrollo",
+   "image_prompt": "Vertical 9:16 frame, Papel recortado en capas (pop-up), sepia con acentos rojo coral y azul Pacífico, manos visibles moviendo piezas. Los hilos de viento se deshilachan; el niño de agua crece y su sombra cubre un mapa de papel de América. Cinematic, shallow depth of field, no text."
+  },
+  {
+   "id": "scene_005",
+   "duration_seconds": 12,
+   "narration": "",
+   "on_screen_text": "Lluvias aquí · sequías allá",
+   "visual_description": "Collage dividido: en un lado un río de papel se desborda sobre casas; en el otro, una milpa de papel se agrieta bajo un sol rojo",
+   "source_ids": [
+    "SRC-002"
+   ],
+   "asset_filename": "frames/scene_005.png",
+   "asset_type": "image",
+   "status": "planned",
+   "notes": "",
+   "arc": "desarrollo",
+   "image_prompt": "Vertical 9:16 frame, Papel recortado en capas (pop-up), sepia con acentos rojo coral y azul Pacífico, manos visibles moviendo piezas. Collage dividido: en un lado un río de papel se desborda sobre casas; en el otro, una milpa de papel se agrieta bajo un sol rojo. Cinematic, shallow depth of field, no text."
+  },
+  {
+   "id": "scene_006",
+   "duration_seconds": 10,
+   "narration": "Un solo océano respira… y todos sentimos su aliento.",
+   "on_screen_text": "Un océano que respira",
+   "visual_description": "El niño de agua se sienta, cansado; las olas vuelven a enfriarse; llega una niña de papel azul oscuro: La Niña",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "asset_filename": "frames/scene_006.png",
+   "asset_type": "image",
+   "status": "planned",
+   "notes": "",
+   "arc": "cierre_historia",
+   "image_prompt": "Vertical 9:16 frame, Papel recortado en capas (pop-up), sepia con acentos rojo coral y azul Pacífico, manos visibles moviendo piezas. El niño de agua se sienta, cansado; las olas vuelven a enfriarse; llega una niña de papel azul oscuro: La Niña. Cinematic, shallow depth of field, no text."
+  },
+  {
+   "id": "scene_007",
+   "duration_seconds": 10,
+   "narration": "El mar no tiene calendario… pero nosotros sí. ¿Y si el clima no fuera un lugar, sino una conversación que apenas empezamos a escuchar?",
+   "on_screen_text": "¿El clima es una conversación?",
+   "visual_description": "Plano final: el pescador mira el horizonte con la red llena; las manos se retiran del set de papel",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "asset_filename": "frames/scene_007.png",
+   "asset_type": "image",
+   "status": "planned",
+   "notes": "",
+   "arc": "reflexion_o_pregunta",
+   "image_prompt": "Vertical 9:16 frame, Papel recortado en capas (pop-up), sepia con acentos rojo coral y azul Pacífico, manos visibles moviendo piezas. Plano final: el pescador mira el horizonte con la red llena; las manos se retiran del set de papel. Cinematic, shallow depth of field, no text."
+  }
+ ],
+ "cortinilla_fuentes": {
+  "duration_seconds": 6,
+  "titulo": "Fuentes",
+  "aviso": "Imágenes generadas con IA. Voz sintética.",
+  "bg_rgb": [
+   18,
+   16,
+   14
+  ]
+ },
+ "audio": {
+  "music_asset": "",
+  "music_license": "",
+  "music_volume": 0.25
+ },
+ "export": {
+  "filename": "lote01-01-el-nino.mp4",
+  "resolution": "1080x1920",
+  "fps": 30,
+  "subtitle_max_words": 3
+ },
+ "estado": "GUION_OK"
+}

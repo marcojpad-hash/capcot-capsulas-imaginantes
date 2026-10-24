@@ -1,0 +1,48 @@
+#!/usr/bin/env python3
+"""Publicación YouTube Shorts / TikTok (borrador). POR DEFECTO --dry-run: solo arma y muestra la petición.
+Publicar de verdad exige --ejecutar Y credenciales de Mj:
+  YouTube: CAPCOT_YT_CLIENT_SECRETS (json OAuth) + CAPCOT_YT_TOKEN (token con scope youtube.upload); pip google-api-python-client
+  TikTok : CAPCOT_TIKTOK_ACCESS_TOKEN (scope video.upload -> buzón de borradores; Mj publica desde la app)
+Uso: python3 scripts/publicar.py salidas/<dir>/  [--plataforma yt|tt|ambas] [--ejecutar]"""
+import argparse, json, os, sys
+
+def metadatos(d):
+    sb = json.load(open(os.path.join(d, "storyboard.json"), encoding="utf-8"))
+    fuentes = "\n".join(f"- {s['cita_corta']} {s['url']}" for s in sb["sources"])
+    desc = (f"{sb['title']}\n\nFuentes:\n{fuentes}\n\nImágenes generadas con IA · voz sintética.\n#Shorts #ciencia #Imaginantes")
+    return sb, {"title": (sb["title"] + " #Shorts")[:100], "description": desc[:4900], "tags": ["ciencia", "divulgación", "shorts"]}
+
+def youtube(mp4, md, ejecutar):
+    body = {"snippet": {**md, "categoryId": "27", "defaultLanguage": "es"},
+            "status": {"privacyStatus": "private", "selfDeclaredMadeForKids": False, "containsSyntheticMedia": True}}
+    print("[YT] videos.insert part=snippet,status", json.dumps(body, ensure_ascii=False)[:600])
+    if not ejecutar: return {"dry_run": True}
+    tok = os.environ.get("CAPCOT_YT_TOKEN")
+    if not tok: sys.exit("FALTA CAPCOT_YT_TOKEN (OAuth de Mj)")
+    from google.oauth2.credentials import Credentials; from googleapiclient.discovery import build; from googleapiclient.http import MediaFileUpload
+    yt = build("youtube", "v3", credentials=Credentials.from_authorized_user_file(tok))
+    return yt.videos().insert(part="snippet,status", body=body, media_body=MediaFileUpload(mp4, resumable=True)).execute()
+
+def tiktok(mp4, md, ejecutar):
+    size = os.path.getsize(mp4)
+    body = {"source_info": {"source": "FILE_UPLOAD", "video_size": size, "chunk_size": size, "total_chunk_count": 1}}
+    print("[TT] POST /v2/post/publish/inbox/video/init/ (borrador)", json.dumps(body))
+    if not ejecutar: return {"dry_run": True}
+    tok = os.environ.get("CAPCOT_TIKTOK_ACCESS_TOKEN")
+    if not tok: sys.exit("FALTA CAPCOT_TIKTOK_ACCESS_TOKEN")
+    import urllib.request
+    r = json.load(urllib.request.urlopen(urllib.request.Request("https://open.tiktokapis.com/v2/post/publish/inbox/video/init/",
+        json.dumps(body).encode(), {"Authorization": "Bearer " + tok, "Content-Type": "application/json; charset=UTF-8"})))
+    url = r["data"]["upload_url"]
+    urllib.request.urlopen(urllib.request.Request(url, open(mp4, "rb").read(), {"Content-Type": "video/mp4",
+        "Content-Range": f"bytes 0-{size-1}/{size}"}, method="PUT"))
+    return r
+
+if __name__ == "__main__":
+    ap = argparse.ArgumentParser(); ap.add_argument("dir"); ap.add_argument("--plataforma", default="ambas")
+    ap.add_argument("--ejecutar", action="store_true", help="publica de verdad (requiere aprobación de Mj)")
+    a = ap.parse_args(); sb, md = metadatos(a.dir); mp4 = os.path.join(a.dir, "capsula.mp4"); res = {}
+    if a.plataforma in ("yt", "ambas"): res["youtube"] = youtube(mp4, md, a.ejecutar)
+    if a.plataforma in ("tt", "ambas"): res["tiktok"] = tiktok(mp4, md, a.ejecutar)
+    json.dump({"metadatos": md, "resultado": res}, open(os.path.join(a.dir, "publicacion.json"), "w"), ensure_ascii=False, indent=1)
+    print("dry-run: nada publicado" if not a.ejecutar else "publicado")
