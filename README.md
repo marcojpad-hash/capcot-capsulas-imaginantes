@@ -19,4 +19,4 @@ Proyecto para producir micro-cápsulas científicas verticales (9:16, 60–90 s)
 4. No guardar medios pesados en GitHub por defecto.
 5. No modificar el motor U6 desde este repositorio.
 
-La arquitectura está documentada; el validador y el script de montaje aún no están implementados ni probados.
+Los scripts de validación y montaje existen. El plan maestro documenta un prototipo probado; las corridas concretas deben distinguirse de los paquetes locales y verificarse por separado.
