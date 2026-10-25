@@ -1,8 +1,8 @@
 [
  {
-  "check": "duracion_60_95",
+  "check": "duracion_>=60_<=120",
   "ok": true,
-  "detalle": "84.37s"
+  "detalle": "85.47s (objetivo 85)"
  },
  {
   "check": "resolucion_1080x1920",
@@ -47,11 +47,56 @@
  {
   "check": "sin_huecos_voz_<=0.9s",
   "ok": true,
-  "detalle": "hueco máx 0.54s"
+  "detalle": "hueco máx 0.55s"
+ },
+ {
+  "check": "subs_cobertura_>=99%",
+  "ok": true,
+  "detalle": "100.0% (215/215 palabras)"
+ },
+ {
+  "check": "subs_sin_solapes",
+  "ok": true,
+  "detalle": "0 solapes"
+ },
+ {
+  "check": "subs_en_cuadro_zona_segura",
+  "ok": true,
+  "detalle": "PlayResY 1920, MarginV 620"
  },
  {
   "check": "voz_<=240_palabras",
   "ok": true,
   "detalle": "215 palabras"
+ },
+ {
+  "check": "estructura_valida",
+  "ok": true,
+  "detalle": "historia"
+ },
+ {
+  "check": "estructura_no_repite_anterior",
+  "ok": true,
+  "detalle": "anterior: -"
+ },
+ {
+  "check": "cama_musical_no_repite_anterior",
+  "ok": true,
+  "detalle": "marimba (anterior: -)"
+ },
+ {
+  "check": "capa_mapa",
+  "ok": true,
+  "detalle": "mapa,dato"
+ },
+ {
+  "check": "capa_grafico_o_dato",
+  "ok": true,
+  "detalle": "mapa,dato"
+ },
+ {
+  "check": "licencias_json",
+  "ok": true,
+  "detalle": ""
  }
 ]

@@ -1,7 +1,7 @@
 {
  "metadatos": {
   "title": "El mar que llegó en Navidad: El Niño #Shorts",
-  "description": "Navidad, costa de Sudamérica.\n\nEl mar que llegó en Navidad: El Niño. Una cápsula de Datos y ociosidades: datos verificados contados como historia.\n\nFuentes:\n• L'Heureux, M. (2014). What is ENSO in a nutshell? NOAA Climate.gov. https://www.climate.gov/news-features/blogs/enso/what-el-nino-southern-oscillation-enso-nutshell\n• Bjerknes, J. (1969). Monthly Weather Review 97, 163-172. https://doi.org/10.1175/1520-0493(1969)097<0163:ATFTEP>2.3.CO;2\n• McPhaden, Zebiak & Glantz (2006). Science 314, 1740-1745. https://doi.org/10.1126/science.1132588\n\nImágenes generadas con IA · voz sintética · audio sintetizado.\nSuscríbete: @datosyociosidades\n\n#DatosYOciosidades #Shorts #ciencia #divulgación #SabíasQue #ElNiñoFenomeno",
+  "description": "Navidad, costa de Sudamérica.\n\nEl mar que llegó en Navidad: El Niño. Una cápsula de Datos y ociosidades: datos verificados contados como historia.\n\nFuentes:\n• L'Heureux, M. (2014). What is ENSO in a nutshell? NOAA Climate.gov. https://www.climate.gov/news-features/blogs/enso/what-el-nino-southern-oscillation-enso-nutshell\n• Bjerknes, J. (1969). Monthly Weather Review 97, 163-172. https://doi.org/10.1175/1520-0493(1969)097%3C0163:ATFTEP%3E2.3.CO;2\n• McPhaden, Zebiak & Glantz (2006). Science 314, 1740-1745. https://doi.org/10.1126/science.1132588\n\nImágenes generadas con IA · voz sintética · audio sintetizado.\nSuscríbete: @datosyociosidades\nTikTok: https://www.tiktok.com/@datosyociosidades\n\n#DatosYOciosidades #Shorts #ciencia #divulgación #SabíasQue #ElNiñoFenomeno",
   "tags": [
    "DatosYOciosidades",
    "Shorts",
@@ -13,10 +13,57 @@
  },
  "resultado": {
   "youtube": {
-   "dry_run": true
-  },
-  "tiktok": {
-   "dry_run": true
+   "kind": "youtube#video",
+   "etag": "q7dRaJpHDcVmvU__LeCmqqXGB5k",
+   "id": "5D96DmjvioU",
+   "snippet": {
+    "publishedAt": "2026-10-24T17:33:03Z",
+    "channelId": "UCU2ZI-6pBJEr9aSFsF6bxLw",
+    "title": "El mar que llegó en Navidad: El Niño #Shorts",
+    "description": "Navidad, costa de Sudamérica.\n\nEl mar que llegó en Navidad: El Niño. Una cápsula de Datos y ociosidades: datos verificados contados como historia.\n\nFuentes:\n• L'Heureux, M. (2014). What is ENSO in a nutshell? NOAA Climate.gov. https://www.climate.gov/news-features/blogs/enso/what-el-nino-southern-oscillation-enso-nutshell\n• Bjerknes, J. (1969). Monthly Weather Review 97, 163-172. https://doi.org/10.1175/1520-0493(1969)097%3C0163:ATFTEP%3E2.3.CO;2\n• McPhaden, Zebiak & Glantz (2006). Science 314, 1740-1745. https://doi.org/10.1126/science.1132588\n\nImágenes generadas con IA · voz sintética · audio sintetizado.\nSuscríbete: @datosyociosidades\nTikTok: https://www.tiktok.com/@datosyociosidades\n\n#DatosYOciosidades #Shorts #ciencia #divulgación #SabíasQue #ElNiñoFenomeno",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/5D96DmjvioU/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/5D96DmjvioU/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/5D96DmjvioU/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "Datos y ociosidades",
+    "tags": [
+     "DatosYOciosidades",
+     "ElNiñoFenomeno",
+     "SabíasQue",
+     "Shorts",
+     "ciencia",
+     "divulgación"
+    ],
+    "categoryId": "27",
+    "liveBroadcastContent": "none",
+    "defaultLanguage": "es",
+    "localized": {
+     "title": "El mar que llegó en Navidad: El Niño #Shorts",
+     "description": "Navidad, costa de Sudamérica.\n\nEl mar que llegó en Navidad: El Niño. Una cápsula de Datos y ociosidades: datos verificados contados como historia.\n\nFuentes:\n• L'Heureux, M. (2014). What is ENSO in a nutshell? NOAA Climate.gov. https://www.climate.gov/news-features/blogs/enso/what-el-nino-southern-oscillation-enso-nutshell\n• Bjerknes, J. (1969). Monthly Weather Review 97, 163-172. https://doi.org/10.1175/1520-0493(1969)097%3C0163:ATFTEP%3E2.3.CO;2\n• McPhaden, Zebiak & Glantz (2006). Science 314, 1740-1745. https://doi.org/10.1126/science.1132588\n\nImágenes generadas con IA · voz sintética · audio sintetizado.\nSuscríbete: @datosyociosidades\nTikTok: https://www.tiktok.com/@datosyociosidades\n\n#DatosYOciosidades #Shorts #ciencia #divulgación #SabíasQue #ElNiñoFenomeno"
+    }
+   },
+   "status": {
+    "uploadStatus": "uploaded",
+    "privacyStatus": "public",
+    "license": "youtube",
+    "embeddable": true,
+    "publicStatsViewable": true,
+    "selfDeclaredMadeForKids": false,
+    "containsSyntheticMedia": false
+   }
   }
  }
 }

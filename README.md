@@ -20,3 +20,4 @@ Proyecto para producir micro-cápsulas científicas verticales (9:16, 60–90 s)
 5. No modificar el motor U6 desde este repositorio.
 
 Los scripts de validación y montaje existen. El plan maestro documenta un prototipo probado; las corridas concretas deben distinguirse de los paquetes locales y verificarse por separado.
+**Para Grok / modelos externos:** ver `ajustes_entre_modelos/HANDOFF_GROK_PRODUCCION.md`.
