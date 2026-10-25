@@ -1208,5 +1208,114 @@
    "likes_perfil": 162
   },
   "nota": "Balance 6h 14:00. YT Data API (uploads del canal; IzWU privado y programados no aparecen); TT leído en TikTok Studio ~14:05."
+ },
+ {
+  "timestamp_cdmx": "2026-10-25T14:02-06:00",
+  "youtube": {
+   "gIjJ0YKYQ8M": {
+    "view": 4,
+    "like": 0,
+    "comment": 0
+   },
+   "AJR6kcnnDig": {
+    "view": 4,
+    "like": 0,
+    "comment": 0
+   },
+   "Qe2Y9xDn9QQ": {
+    "view": 178,
+    "like": 4,
+    "comment": 0
+   },
+   "3bhntOcKHPk": {
+    "view": 1146,
+    "like": 32,
+    "comment": 0
+   },
+   "O7TdKvuBjyg": {
+    "view": 8,
+    "like": 1,
+    "comment": 0
+   },
+   "r1AhsPOAS_o": {
+    "view": 1342,
+    "like": 72,
+    "comment": 4
+   },
+   "ZrUtKs7Ty7U": {
+    "view": 1258,
+    "like": 47,
+    "comment": 0
+   },
+   "5D96DmjvioU": {
+    "view": 528,
+    "like": 25,
+    "comment": 0
+   }
+  },
+  "youtube_totales": {
+   "view": 4468,
+   "like": 181,
+   "comment": 4
+  },
+  "suscriptores": 13,
+  "delta_vs_anterior": {
+   "view": 0,
+   "like": 0,
+   "comment": 0,
+   "suscriptores": 0
+  },
+  "tiktok": {
+   "fuente": "TikTok Studio",
+   "videos": {
+    "sueno_luz_electrica": {
+     "view": 0,
+     "like": 0,
+     "comment": 0
+    },
+    "reina_topo": {
+     "view": 433,
+     "like": 41,
+     "comment": 0
+    },
+    "osedax_huesos": {
+     "view": 490,
+     "like": 24,
+     "comment": 0
+    },
+    "abejas_bullying": {
+     "view": 477,
+     "like": 22,
+     "comment": 0
+    },
+    "aves_mujeres": {
+     "view": 501,
+     "like": 38,
+     "comment": 0
+    },
+    "serpientes": {
+     "view": 104,
+     "like": 1,
+     "comment": 0
+    },
+    "ideonella": {
+     "view": 543,
+     "like": 33,
+     "comment": 0
+    },
+    "el_nino_hashtags_IA": {
+     "view": 270,
+     "like": 5,
+     "comment": 0
+    }
+   },
+   "totales": {
+    "view": 2818,
+    "like": 164,
+    "comment": 0
+   },
+   "seguidores": 1
+  },
+  "nota": "Balance 6h 14:00. YT Data API (uploads del canal); TT leído en TikTok Studio. Sueño TT figura con 0 (probablemente programado 15:58)."
  }
 ]
