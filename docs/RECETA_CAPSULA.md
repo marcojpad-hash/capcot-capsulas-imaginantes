@@ -102,8 +102,9 @@ TikTok: https://www.tiktok.com/@datosyociosidades
 #DatosYOciosidades #Shorts #datos #ciencia #difusión #difusióncientífica #ia #<Tema> (hasta 4 de tema)
 ```
 Título YouTube = título + « #Shorts» (≤100 caracteres, sin `<` `>`; en URLs se codifican %3C/%3E). Descripción ≤5000 bytes; tags ≤500 caracteres.
-Hashtags base FIJOS en todas las plataformas: `#datos #ciencia #difusión #difusióncientífica #ia` + hashtags del tema. Solo YouTube añade `#DatosYOciosidades #Shorts`.
-Descripción completa en YouTube y TikTok. **Caption TikTok** (≤2200): gancho + resumen (`"resumen"` opcional en el storyboard) + «Fuentes en YouTube @datosyociosidades» + hashtags base y de tema.
+**YouTube** hashtags: `#DatosYOciosidades #Shorts #datos #ciencia #difusión #difusióncientífica #ia` + hasta 4 del tema.
+**TikTok** (Mj 24-oct-2026): **máximo 5 hashtags** por caption, elegidos por alcance. Fijos de alto alcance: `#aprendeentiktok #sabiasque #ciencia #divulgacioncientifica` + **1 del tema** (p. ej. `#abejas`). No gastar slots en marca (`#DatosYOciosidades` va en el texto del caption). Fuentes de priorización: estudios ES (aprendeentiktok ~78.9B, sabiasque ~28.4B, ciencia ~9.7B) y Toklytics 2026.
+**Caption TikTok** (≤2200): gancho + resumen (`"resumen"` opcional en el storyboard) + «Fuentes en YouTube @datosyociosidades» + esos 5 hashtags.
 Publicación automática solo vía `capsula_diaria.py --publicar` cuando QA pasa. Máximo 3 al día (2 propias + 1 externa por cola/, ver docs/FLUJO_EXTERNO.md), en ventanas distintas; ningún tema repetido el mismo día (data/temas_del_dia.json).
 
 ## 7. (Eliminado) Versión para la voz de Mj
