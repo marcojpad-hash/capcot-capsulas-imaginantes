@@ -1,0 +1,66 @@
+{
+  "ESTADO_EJECUCION.md": {
+    "bytes": 3005,
+    "sha256": "6d850db1dfd08c169913c98c49f387bfd016991b094125c898fa0b8d5d310f47"
+  },
+  "LEEME.md": {
+    "bytes": 1899,
+    "sha256": "a3e4c9f30ebe815cde477b1c084b4f7090424d6eb7bbcdc4c37039239ebb97df"
+  },
+  "contact_sheet.png": {
+    "bytes": 1706699,
+    "sha256": "6fbe74a8e6af8f6b7e4a478c3d6e322fb92246c3d7a99bc5f48b4326d2cae16b"
+  },
+  "frames/scene_001.png": {
+    "bytes": 4089326,
+    "sha256": "7f719390add71d8dc07ee4d9d75bbb93eb9cdfffa7552c8658c27f0fc5e9e147"
+  },
+  "frames/scene_002.png": {
+    "bytes": 3884044,
+    "sha256": "3fbe0777c817b6c7be812827d2350b33aefba97f849025a59f5955dc696048f8"
+  },
+  "frames/scene_003.png": {
+    "bytes": 3714677,
+    "sha256": "da4040f434425a0149e53f293a743e2753ece3c3a6080a69fb07419350159645"
+  },
+  "frames/scene_004.png": {
+    "bytes": 4106031,
+    "sha256": "010bc826d842a4307d7990ac7230df42ea545928ba72b681a616df55033b2e32"
+  },
+  "frames/scene_005.png": {
+    "bytes": 3782435,
+    "sha256": "1dbc46f2d32110e6ac23054225cb3acf8eaa6fcd16a795430c2688054eb1b24a"
+  },
+  "frames/scene_006.png": {
+    "bytes": 3769127,
+    "sha256": "50050b7d90ef119f4c44911a401774a05dac2ae3e669a5e376010697a1709317"
+  },
+  "frames/scene_007.png": {
+    "bytes": 4334249,
+    "sha256": "04d5fe54c661a69d3efc3eaf49fd2ce8de7c31096349786b55c6de06c18acf80"
+  },
+  "frames/scene_008.png": {
+    "bytes": 3936978,
+    "sha256": "d1f136f39e4f8db8613683f93576989af4e4f16af28064a22140516b29a25c01"
+  },
+  "frames/scene_009.png": {
+    "bytes": 4199558,
+    "sha256": "aec9dd64cfa0523902107430d3458d303015abdbbd4fce26faaa103d910bf580"
+  },
+  "fuentes.md": {
+    "bytes": 2449,
+    "sha256": "ce513510afbd0145264e86a3d0d519e821d154d6323281e110e8d0257f1cd818"
+  },
+  "licencias.json": {
+    "bytes": 2377,
+    "sha256": "78381f44bdb80b4793d3263e69cd432b54bb65792782f5a526ff3f8bc02e2f35"
+  },
+  "storyboard.json": {
+    "bytes": 17906,
+    "sha256": "cd0214ffa221ada6351622b74ab2f7f7b13fe9dd51401ba125261ca23191be7c"
+  },
+  "subtitulos_plan.json": {
+    "bytes": 3124,
+    "sha256": "5be7783a3d2e70c89b1145b1023af5c61e0f7acb82e1b0c6c17de2eefe8102fe"
+  }
+}

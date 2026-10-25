@@ -1,0 +1,58 @@
+{
+  "project_id": "2026-10-25_corales-contacto",
+  "estado": "registro preliminar; no hay render ni publicación",
+  "imagenes": {
+    "origen": "Generadas con IA mediante ChatGPT image generation el 2026-10-25; ilustraciones no fotorrealistas creadas para esta cápsula.",
+    "archivos": [
+      "frames/scene_001.png",
+      "frames/scene_002.png",
+      "frames/scene_003.png",
+      "frames/scene_004.png",
+      "frames/scene_005.png",
+      "frames/scene_006.png",
+      "frames/scene_007.png",
+      "frames/scene_008.png",
+      "frames/scene_009.png"
+    ],
+    "licencia": "No se asigna CC0. Usar sujeto a los términos aplicables de la herramienta y verificar condiciones comerciales/plataforma antes de publicar.",
+    "nota": "No se reutilizan fotografías, figuras ni ilustraciones del estudio."
+  },
+  "voz": {
+    "motor": "edge-tts",
+    "voice_id": "es-MX-JorgeNeural",
+    "rate": "+7%",
+    "pitch": "-2Hz",
+    "estado": "no generada; el módulo edge_tts no está instalado en el entorno actual",
+    "licencia": "Pendiente de los términos aplicables al servicio de voz."
+  },
+  "musica": {
+    "cama": "arpegio",
+    "origen_previsto": "síntesis propia mediante scripts/cama_sonora.py del repositorio CAPCOT",
+    "estado": "planificada, no renderizada",
+    "licencia_prevista": "obra propia según la receta del proyecto; no se incorpora una pista de terceros"
+  },
+  "ambiente_y_sfx": {
+    "ambiente": "oceano (síntesis propia por el pipeline)",
+    "sfx_previstos": [
+      {
+        "id": "olas",
+        "archivo": "Ocean Waves on a Tropical Beach.ogg",
+        "autor": "Jarrod stanley",
+        "licencia": "CC0",
+        "origen": "Wikimedia Commons; ver scripts/sfx_manifest.json",
+        "estado": "no descargado ni incorporado todavía"
+      }
+    ]
+  },
+  "mapa": {
+    "base": "Natural Earth 110m",
+    "licencia": "Dominio público",
+    "estado": "capa definida en storyboard; render pendiente"
+  },
+  "datos_y_grafico": {
+    "fuente": "Collins et al. (2026), Science Advances, doi:10.1126/sciadv.aeh1580",
+    "licencia_fuente": "CC BY-NC 4.0 para el artículo; no se reutilizan figuras. Se usan cifras y resultados descritos con cita.",
+    "estado": "capa definida en storyboard; render pendiente"
+  },
+  "divulgacion": "Cortinilla prevista: “Imágenes generadas con IA. Voz sintética. Música y ambiente sintetizados.”"
+}

@@ -1,0 +1,127 @@
+{
+  "nota": "Segmentación textual provisional; sin timestamps. El pipeline debe generar SRT/ASS finales desde WordBoundary de edge-tts. Máximo tres palabras por bloque.",
+  "scene_blocks": [
+    {
+      "scene_id": "scene_001",
+      "blocks": [
+        "En un acuario,",
+        "dos corales se",
+        "tocaron por accidente."
+      ]
+    },
+    {
+      "scene_id": "scene_002",
+      "blocks": [
+        "Uno estaba blanqueado;",
+        "el otro conservaba",
+        "sus algas simbiontes.",
+        "El investigador Steve",
+        "Palumbi notó que,",
+        "justo donde se",
+        "rozaban, el coral",
+        "pálido empezaba a",
+        "recuperar color."
+      ]
+    },
+    {
+      "scene_id": "scene_003",
+      "blocks": [
+        "El equipo convirtió",
+        "esa observación en",
+        "un experimento: cinco",
+        "fragmentos blanqueados tocaron",
+        "clones sanos; otros",
+        "cinco quedaron separados",
+        "por apenas unos",
+        "milímetros."
+      ]
+    },
+    {
+      "scene_id": "scene_004",
+      "blocks": [
+        "La diferencia fue",
+        "radical. Los cinco",
+        "que tuvieron contacto",
+        "se recuperaron por",
+        "completo; ninguno de",
+        "los cinco aislados",
+        "lo logró. Al",
+        "final, dos habían",
+        "muerto y los",
+        "otros tres estaban",
+        "cubiertos de algas."
+      ]
+    },
+    {
+      "scene_id": "scene_005",
+      "blocks": [
+        "En una segunda",
+        "prueba, una semana",
+        "de contacto bastó",
+        "para iniciar una",
+        "recuperación autónoma: los",
+        "fragmentos tratados así",
+        "sanaron por completo",
+        "en siete semanas,",
+        "incluso después de",
+        "separarlos."
+      ]
+    },
+    {
+      "scene_id": "scene_006",
+      "blocks": [
+        "¿El mecanismo? Los",
+        "tejidos de corales",
+        "genéticamente idénticos pueden",
+        "fusionarse y crear",
+        "canales por los",
+        "que pasan algas",
+        "beneficiosas."
+      ]
+    },
+    {
+      "scene_id": "scene_007",
+      "blocks": [
+        "Al microscopio, las",
+        "algas aparecieron en",
+        "el coral dañado",
+        "desde el tercer",
+        "día. Después se",
+        "multiplicaron y devolvieron",
+        "a su huésped",
+        "una fuente esencial",
+        "de energía."
+      ]
+    },
+    {
+      "scene_id": "scene_008",
+      "blocks": [
+        "Pero no es",
+        "una cura lista",
+        "para los arrecifes:",
+        "la prueba fue",
+        "de laboratorio y",
+        "depende de corales",
+        "del mismo genotipo.",
+        "Los investigadores aún",
+        "deben encontrar una",
+        "forma escalable."
+      ]
+    },
+    {
+      "scene_id": "scene_009",
+      "blocks": [
+        "La pista no",
+        "es que el",
+        "coral sea invencible:",
+        "es que la",
+        "recuperación puede empezar",
+        "con una conexión",
+        "precisa. ¿Podremos llevar",
+        "ese mecanismo al",
+        "arrecife? Esto fue",
+        "Datos y ociosidades."
+      ]
+    }
+  ]
+}
