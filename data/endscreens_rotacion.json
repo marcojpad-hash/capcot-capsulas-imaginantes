@@ -1,7 +1,7 @@
 {
   "fecha": "2026-10-25",
   "tipo": "endscreens_rotacion",
-  "actualizado_cdmx": "2026-10-25T17:41-06:00",
+  "actualizado_cdmx": "2026-10-25T17:44-06:00",
   "motivo": "Override Mj: gusanos (Qe2) que sube → reina topo (gIj) floja.",
   "vistas_ref": {
     "r1AhsPOAS_o": 1349,
@@ -29,7 +29,7 @@
     "r1AhsPOAS_o": "aplicado",
     "ZrUtKs7Ty7U": "aplicado",
     "3bhntOcKHPk": "omitido_ya_correcto",
-    "Qe2Y9xDn9QQ": "pendiente_override_mj",
+    "Qe2Y9xDn9QQ": "aplicado_override_mj",
     "5D96DmjvioU": "aplicado",
     "O7TdKvuBjyg": "aplicado",
     "AJR6kcnnDig": "aplicado_nuevo",
