@@ -975,5 +975,69 @@
     },
     "tiktok": null,
     "nota": "Snapshot horario. YT Data API (uploads del canal). TikTok sin acceso desde este run (sin login/API); no se inventa."
+  },
+  {
+    "timestamp_cdmx": "2026-10-25 12:56",
+    "youtube": {
+      "gIjJ0YKYQ8M": {
+        "view": 2,
+        "like": 0,
+        "comment": 0
+      },
+      "AJR6kcnnDig": {
+        "view": 4,
+        "like": 0,
+        "comment": 0
+      },
+      "IzWU_1BXq3Q": {
+        "view": 1,
+        "like": 0,
+        "comment": 0
+      },
+      "Qe2Y9xDn9QQ": {
+        "view": 110,
+        "like": 3,
+        "comment": 0
+      },
+      "3bhntOcKHPk": {
+        "view": 1145,
+        "like": 32,
+        "comment": 0
+      },
+      "O7TdKvuBjyg": {
+        "view": 3,
+        "like": 0,
+        "comment": 0
+      },
+      "r1AhsPOAS_o": {
+        "view": 1343,
+        "like": 72,
+        "comment": 4
+      },
+      "ZrUtKs7Ty7U": {
+        "view": 1258,
+        "like": 47,
+        "comment": 0
+      },
+      "5D96DmjvioU": {
+        "view": 527,
+        "like": 25,
+        "comment": 0
+      }
+    },
+    "youtube_totales": {
+      "view": 4393,
+      "like": 179,
+      "comment": 4
+    },
+    "suscriptores": 13,
+    "delta_vs_anterior": {
+      "view": 52,
+      "like": -1,
+      "comment": 0,
+      "suscriptores": 0
+    },
+    "tiktok": null,
+    "nota": "Snapshot horario. YT Data API (uploads del canal; nuevo gIjJ0YKYQ8M). No públicos: IzWU_1BXq3Q. Programados GHxm9dDUMmM/YAVdu0MLd24 no devueltos por la API aún. TikTok sin acceso desde este run (sin login/API); no se inventa."
   }
 ]
