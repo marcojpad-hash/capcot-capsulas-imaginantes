@@ -400,5 +400,126 @@
   "atractivo": 5,
   "variante_oficial": "v2",
   "frame_referencia": "referencias_estilo/tatuaje_acuarela_oficial.jpg (local, gitignored; copia de salidas/estilos_test/tatuaje_acuarela_v2.jpg)"
+ },
+ "rubber_hose_1930s": {
+  "nombre": "Cartoon rubber hose años 20-30",
+  "descripcion": "Cartoon manguera de goma, ojos pie-cut, grano de película",
+  "prompt_base": "1930s rubber hose cartoon animation style, hand-inked bouncy characters with pie-cut eyes and white gloves, watercolor painted backgrounds, film grain, slight vignette, sepia-tinted vintage colors, single large character centered, simple background, flat illustrated, not photorealistic, vertical 9:16, no text",
+  "paleta": "sepia, rojo tomate, amarillo mostaza, negro tinta, crema",
+  "temas": "insectos eusocial microbiología sueño antropología",
+  "atractivo": 5,
+  "origen": "propuesta Mj 2026-10-25",
+  "ambiente_sugerido": "",
+  "musica_sugerida": "sintetico:pulso"
+ },
+ "pulp_comic_1940s": {
+  "nombre": "Pulp comic años 40",
+  "descripcion": "Portada pulp aventuras, tinta gruesa",
+  "prompt_base": "1940s pulp adventure magazine cover illustration, dramatic low angle, heavy ink hatching, worn newsprint texture, faded four-color printing, one heroic subject large in frame, simple gradient sky, illustrated not photorealistic, vertical 9:16, no text",
+  "paleta": "rojo óxido, amarillo, azul petróleo, papel amarillento",
+  "temas": "paleontología exploración clima extremo",
+  "atractivo": 4,
+  "origen": "propuesta Mj 2026-10-25",
+  "ambiente_sugerido": "",
+  "musica_sugerida": "sintetico:pulso"
+ },
+ "ligne_claire": {
+  "nombre": "Ligne claire",
+  "descripcion": "Cómic europeo línea clara",
+  "prompt_base": "ligne claire European comic illustration, clean uniform black outlines, flat bright colors, no hatching, clear readable shapes, one main subject large, minimal background, illustrated, not photorealistic, vertical 9:16, no text",
+  "paleta": "azul cielo, rojo, beige, verde claro",
+  "temas": "historia ciencia inventos geografía",
+  "atractivo": 4,
+  "origen": "propuesta Mj 2026-10-25",
+  "ambiente_sugerido": "",
+  "musica_sugerida": "sintetico:menor_calma"
+ },
+ "neon_noir": {
+  "nombre": "Neon noir",
+  "descripcion": "Noche lluviosa, neones, siluetas",
+  "prompt_base": "neo-noir digital painting, dark rainy night, glowing magenta and cyan neon rim light, strong silhouette of a single subject, wet reflections, minimal background, painterly not photorealistic, vertical 9:16, no text",
+  "paleta": "negro, magenta, cian, violeta",
+  "temas": "sueño antropología neurociencia",
+  "atractivo": 4,
+  "origen": "propuesta Mj 2026-10-25",
+  "ambiente_sugerido": "lluvia",
+  "musica_sugerida": "sintetico:menor_calma"
+ },
+ "atlas_antiguo": {
+  "nombre": "Atlas antiguo grabado",
+  "descripcion": "Mapa atlas cobre s.XVII-XIX",
+  "prompt_base": "antique engraved atlas map illustration, hand-colored copperplate, compass rose, sea monsters, aged parchment, single large central motif, not photorealistic, vertical 9:16, no text",
+  "paleta": "pergamino, sepia, verde mar, rojo lacre",
+  "temas": "clima mar migraciones geología",
+  "atractivo": 4,
+  "origen": "propuesta Mj 2026-10-25",
+  "ambiente_sugerido": "oceano",
+  "musica_sugerida": "sintetico:menor_calma"
+ },
+ "collage_cientifico_vintage": {
+  "nombre": "Collage científico vintage",
+  "descripcion": "Láminas naturalista recortadas",
+  "prompt_base": "vintage scientific collage, cut-out 19th century natural history engravings, botanical and anatomical plates, aged paper, muted pastel accents, one large specimen centered, plain background, not photorealistic, vertical 9:16, no text",
+  "paleta": "crema, sepia, verde salvia, rosa viejo",
+  "temas": "mamíferos insectos botánica",
+  "atractivo": 5,
+  "origen": "propuesta Mj 2026-10-25",
+  "ambiente_sugerido": "",
+  "musica_sugerida": "sintetico:menor_calma"
+ },
+ "fieltro_stop_motion": {
+  "nombre": "Fieltro stop-motion",
+  "descripcion": "Stop-motion fieltro y lana",
+  "prompt_base": "stop-motion felt animation diorama, needle felted wool characters, visible stitches, soft fuzzy textures, warm studio light, one large character, simple felt backdrop, handmade, not photorealistic, vertical 9:16, no text",
+  "paleta": "mostaza, terracota, verde musgo",
+  "temas": "mamíferos sueño ecología bosque",
+  "atractivo": 4,
+  "origen": "propuesta Mj 2026-10-25",
+  "ambiente_sugerido": "",
+  "musica_sugerida": "sintetico:menor_calma"
+ },
+ "pixel_16bit_isometrico": {
+  "nombre": "Pixel 16-bit isométrico",
+  "descripcion": "Diorama pixel art isométrico",
+  "prompt_base": "16-bit isometric pixel art diorama, crisp pixels, limited palette, dithered shading, one island-like scene with large central subject, empty dark background, retro game aesthetic, vertical 9:16, no text",
+  "paleta": "azules, verdes, ocres limitados",
+  "temas": "microbiología insectos eusocial ciudades",
+  "atractivo": 4,
+  "origen": "propuesta Mj 2026-10-25",
+  "ambiente_sugerido": "",
+  "musica_sugerida": "sintetico:pulso"
+ },
+ "dibujo_cientifico_scratchboard": {
+  "nombre": "Scratchboard científico",
+  "descripcion": "Esgrafiado blanco sobre negro",
+  "prompt_base": "scratchboard illustration, white lines scratched on black, fine cross-hatching, dramatic single subject filling frame, black background, not photorealistic, vertical 9:16, no text",
+  "paleta": "negro, blanco, ámbar",
+  "temas": "paleontología mar profundo insectos",
+  "atractivo": 4,
+  "origen": "propuesta Mj 2026-10-25",
+  "ambiente_sugerido": "",
+  "musica_sugerida": "sintetico:menor_calma"
+ },
+ "art_deco_poster": {
+  "nombre": "Póster Art Déco",
+  "descripcion": "Póster Art Déco años 20-30",
+  "prompt_base": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text",
+  "paleta": "teal, dorado, negro, crema",
+  "temas": "clima mar astronomía tecnología",
+  "atractivo": 4,
+  "origen": "propuesta Mj 2026-10-25",
+  "ambiente_sugerido": "",
+  "musica_sugerida": "sintetico:pulso"
+ },
+ "microscopio_psicodelico": {
+  "nombre": "Microscopia psicodélica",
+  "descripcion": "Ilustración psicodélica 60s orgánicos",
+  "prompt_base": "1960s psychedelic poster art, flowing organic shapes, vibrant complementary colors, microscopic organisms as large central motif, simple swirling background, illustrated, not photorealistic, vertical 9:16, no text",
+  "paleta": "naranja, magenta, verde lima, violeta",
+  "temas": "microbiología química percepción sueño",
+  "atractivo": 3,
+  "origen": "propuesta Mj 2026-10-25",
+  "ambiente_sugerido": "",
+  "musica_sugerida": "sintetico:pulso"
  }
 }
