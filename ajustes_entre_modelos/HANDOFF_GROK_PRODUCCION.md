@@ -35,7 +35,7 @@ También en lote previo (sin publicar aún / ver salidas/): tardígrado, Chicxul
 Elige por temática desde el catálogo. **No uses** linograbado, disney_clasico, claymation ni garabato_cuaderno (usados hoy), ni el estilo de la última entrada de `data/rotacion.json`. Un estilo por cápsula; cada `image_prompt` = `prompt_base` exacto + " + " + escena en inglés; 9:16, sin texto.
 
 ## Cómo generar (paso a paso, comandos reales; repo en `/workspace/capcot` o tu clon)
-0. `git clone git@github.com:marcojpad-hash/capcot-capsulas-imaginantes.git capcot && cd capcot && pip install -r requirements.txt` (si existe) + `ffmpeg`, `edge-tts`.
+0. `git clone git@github.com:marcojpad-hash/capcot-capsulas-imaginantes.git capcot && cd capcot ` ; instala `ffmpeg` y `pip install edge-tts` (no hay requirements.txt).
 1. **Tema + fuentes:** `python3 scripts/tendencias.py --dias 7 --json` (feeds de ciencia primero; `--geo MX`; `--sin-ciencia` solo para comparar). Elige uno de la rotación de arriba, abre el estudio y anota DOI/URL.
 2. **Storyboard:** escribe `proyectos/AAAA-MM-DD_slug/storyboard.json` según RECETA (7–9 escenas, 170–235 palabras, 60–95 s, `titulo` ≤6 palabras, capa `mapa` + capa `dato`/`grafico`, `source_ids` en cada afirmación, `estructura` distinta a las de hoy, `ambiente`/`sfx` por escena, serie «Datos y ociosidades», cierre «Esto fue Datos y ociosidades.»). Voz:
    `"voice": {"engine":"edge-tts","voice_id":"es-MX-JorgeNeural","rate":"+7%","pitch":"-2Hz","pad_seconds":0.3,"modo_pausas":"continuo"}`
