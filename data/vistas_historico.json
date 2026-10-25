@@ -1,124 +1,191 @@
 [
-  {
-    "timestamp_cdmx": "2026-10-24T15:06:12-06:00",
-    "youtube": {
-      "5D96DmjvioU": {
-        "view": 16,
-        "like": 1,
-        "comment": 0
-      },
-      "ZrUtKs7Ty7U": {
-        "view": 9,
-        "like": 0,
-        "comment": 0
-      }
-    },
-    "youtube_totales": {
-      "view": 25,
-      "like": 1,
-      "comment": 0
-    },
-    "suscriptores": 1,
-    "tiktok": "pendiente de Studio (sin cifras en repo)"
+ {
+  "timestamp_cdmx": "2026-10-24T15:06:12-06:00",
+  "youtube": {
+   "5D96DmjvioU": {
+    "view": 16,
+    "like": 1,
+    "comment": 0
+   },
+   "ZrUtKs7Ty7U": {
+    "view": 9,
+    "like": 0,
+    "comment": 0
+   }
   },
-  {
-    "timestamp_cdmx": "2026-10-24T16:09:00-06:00",
-    "youtube": {
-      "5D96DmjvioU": {
-        "view": 40,
-        "like": 3,
-        "comment": 0
-      },
-      "ZrUtKs7Ty7U": {
-        "view": 36,
-        "like": 2,
-        "comment": 0
-      }
-    },
-    "youtube_totales": {
-      "view": 76,
-      "like": 5,
-      "comment": 0
-    },
-    "suscriptores": 2,
-    "tiktok": {
-      "fuente": "TikTok Studio",
-      "videos": {
-        "serpientes": {
-          "view": 0,
-          "like": 0,
-          "comment": 0
-        },
-        "el_nino_hashtags_IA": {
-          "view": 79,
-          "like": 2,
-          "comment": 0
-        },
-        "el_nino_mar_navidad": {
-          "view": 0,
-          "like": 0,
-          "comment": 0
-        }
-      },
-      "totales": {
-        "view": 79,
-        "like": 2,
-        "comment": 0
-      },
-      "seguidores": 0
-    }
+  "youtube_totales": {
+   "view": 25,
+   "like": 1,
+   "comment": 0
   },
-  {
-    "timestamp_cdmx": "2026-10-24T17:05:00-06:00",
-    "youtube": {
-      "5D96DmjvioU": {
-        "view": 125,
-        "like": 10,
-        "comment": 0
-      },
-      "ZrUtKs7Ty7U": {
-        "view": 138,
-        "like": 12,
-        "comment": 0
-      },
-      "r1AhsPOAS_o": {
-        "view": 4,
-        "like": 1,
-        "comment": 0
-      }
+  "suscriptores": 1,
+  "tiktok": "pendiente de Studio (sin cifras en repo)"
+ },
+ {
+  "timestamp_cdmx": "2026-10-24T16:09:00-06:00",
+  "youtube": {
+   "5D96DmjvioU": {
+    "view": 40,
+    "like": 3,
+    "comment": 0
+   },
+   "ZrUtKs7Ty7U": {
+    "view": 36,
+    "like": 2,
+    "comment": 0
+   }
+  },
+  "youtube_totales": {
+   "view": 76,
+   "like": 5,
+   "comment": 0
+  },
+  "suscriptores": 2,
+  "tiktok": {
+   "fuente": "TikTok Studio",
+   "videos": {
+    "serpientes": {
+     "view": 0,
+     "like": 0,
+     "comment": 0
     },
-    "youtube_totales": {
-      "view": 267,
-      "like": 23,
-      "comment": 0
+    "el_nino_hashtags_IA": {
+     "view": 79,
+     "like": 2,
+     "comment": 0
     },
-    "suscriptores": null,
-    "tiktok": {
-      "fuente": "TikTok Studio",
-      "videos": {
-        "serpientes": {
-          "view": 1,
-          "like": 0,
-          "comment": 0
-        },
-        "ideonella": {
-          "view": 35,
-          "like": 2,
-          "comment": 0
-        },
-        "el_nino_hashtags_IA": {
-          "view": 87,
-          "like": 2,
-          "comment": 0
-        }
-      },
-      "totales": {
-        "view": 123,
-        "like": 4,
-        "comment": 0
-      },
-      "seguidores": 0,
-      "nota": "el_nino_mar_navidad ya no aparece en Studio"
+    "el_nino_mar_navidad": {
+     "view": 0,
+     "like": 0,
+     "comment": 0
     }
+   },
+   "totales": {
+    "view": 79,
+    "like": 2,
+    "comment": 0
+   },
+   "seguidores": 0
   }
+ },
+ {
+  "timestamp_cdmx": "2026-10-24T17:05:00-06:00",
+  "youtube": {
+   "5D96DmjvioU": {
+    "view": 125,
+    "like": 10,
+    "comment": 0
+   },
+   "ZrUtKs7Ty7U": {
+    "view": 138,
+    "like": 12,
+    "comment": 0
+   },
+   "r1AhsPOAS_o": {
+    "view": 4,
+    "like": 1,
+    "comment": 0
+   }
+  },
+  "youtube_totales": {
+   "view": 267,
+   "like": 23,
+   "comment": 0
+  },
+  "suscriptores": null,
+  "tiktok": {
+   "fuente": "TikTok Studio",
+   "videos": {
+    "serpientes": {
+     "view": 1,
+     "like": 0,
+     "comment": 0
+    },
+    "ideonella": {
+     "view": 35,
+     "like": 2,
+     "comment": 0
+    },
+    "el_nino_hashtags_IA": {
+     "view": 87,
+     "like": 2,
+     "comment": 0
+    }
+   },
+   "totales": {
+    "view": 123,
+    "like": 4,
+    "comment": 0
+   },
+   "seguidores": 0,
+   "nota": "el_nino_mar_navidad ya no aparece en Studio"
+  }
+ },
+ {
+  "timestamp_cdmx": "2026-10-24T18:09:00-06:00",
+  "youtube": {
+   "5D96DmjvioU": {
+    "view": 208,
+    "like": 14,
+    "comment": 0
+   },
+   "ZrUtKs7Ty7U": {
+    "view": 280,
+    "like": 18,
+    "comment": 0
+   },
+   "r1AhsPOAS_o": {
+    "view": 6,
+    "like": 1,
+    "comment": 0
+   },
+   "ZmejLrdEslU": {
+    "view": 0,
+    "like": 0,
+    "comment": 0
+   },
+   "O7TdKvuBjyg": {
+    "view": 0,
+    "like": 0,
+    "comment": 0
+   }
+  },
+  "youtube_totales": {
+   "view": 494,
+   "like": 33,
+   "comment": 0
+  },
+  "suscriptores": 2,
+  "tiktok": {
+   "fuente": "TikTok Studio",
+   "videos": {
+    "aves_mujeres": {
+     "view": 21,
+     "like": 1,
+     "comment": 0
+    },
+    "serpientes": {
+     "view": 27,
+     "like": 0,
+     "comment": 0
+    },
+    "ideonella": {
+     "view": 89,
+     "like": 7,
+     "comment": 0
+    },
+    "el_nino_hashtags_IA": {
+     "view": 105,
+     "like": 2,
+     "comment": 0
+    }
+   },
+   "totales": {
+    "view": 242,
+    "like": 10,
+    "comment": 0
+   },
+   "seguidores": 0
+  }
+ }
 ]
