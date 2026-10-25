@@ -162,11 +162,13 @@
     "titulo": "Un ave de hace 150 millones de años con dientes de dinosaurio… y sin vuelo",
     "tema": "Yuezhuornis ave jurasica sin vuelo remake",
     "origen": "propia",
-    "tiktok": "pendiente_tiktok",
+    "tiktok": "programado_tiktok",
     "estructura": "pregunta",
     "estilo": "linograbado",
     "reemplaza": "IzWU_1BXq3Q",
-    "nota": "Remake frames legibles 25-oct; viejo ID privado | Reprogramado a mañana 20:00 CDMX (pico)"
+    "nota": "Remake frames legibles 25-oct; viejo ID privado | Reprogramado a mañana 20:00 CDMX (pico)",
+    "tiktok_schedule_local": "2026-10-26 20:00 CDMX",
+    "tiktok_nota": "Programado Studio 25-oct por Imaginantes; AI label on; Everyone; mirror YT"
   },
   {
     "fecha": "2026-10-25",
@@ -189,14 +191,15 @@
     "project_id": "2026-10-24_lote01-04-tardigrado",
     "yt_id": "YAVdu0MLd24",
     "url": "https://youtube.com/shorts/YAVdu0MLd24",
-    "privacidad": "public (programado)",
-    "publishAt_utc": "2026-10-26T02:00:00Z",
-    "hora_local": "2026-10-25 20:00 CDMX",
+    "privacidad": "private",
+    "hora_local": "cancelado_placeholders",
     "ventana": "noche",
     "titulo": "El oso que aprendió a no morir",
     "tema": "tardigrado",
     "origen": "lote",
-    "tiktok": "pendiente_tiktok",
-    "nota": "Hueco dejado por dino; programado en hora pico 20:00"
+    "tiktok": "programado_tiktok",
+    "nota": "Hueco dejado por dino; programado en hora pico 20:00 | 25-oct: quitado schedule; mp4 era PLACEHOLDER, remake pendiente",
+    "tiktok_schedule_local": "2026-10-25 20:00 CDMX",
+    "tiktok_nota": "Programado Studio 25-oct por Imaginantes (GMT-6 Mexico City); AI label on; Everyone"
   }
 ]
