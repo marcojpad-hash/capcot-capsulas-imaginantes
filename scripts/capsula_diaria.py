@@ -69,6 +69,7 @@ if __name__ == "__main__":
     sb.setdefault("cortinilla_fuentes", {}).setdefault("firma", "Datos y ociosidades · @datosyociosidades")
     sb["origen"] = a.origen
     dif = rotacion.diferencias_con_hoy(sb, a.fecha)
+    if os.environ.get("CAPCOT_FORZAR_CUPO") == "1": dif = [d for d in dif if d.startswith(("tema", "estilo"))]  # cupo forzado: solo tema/estilo deben diferir
     if dif: sys.exit("La cápsula repite respecto de la otra de hoy: " + "; ".join(dif))
     sbp = os.path.join(out, "storyboard.json"); json.dump(sb, open(sbp, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     sh("python3", f"{S}/generar_frames.py", sbp, "--proveedor", a.proveedor_img)

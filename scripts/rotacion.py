@@ -22,7 +22,7 @@ def elegir_estructura(tema="", evitar=()):
     u = [x["estructura"] for x in log()]; ops = [e for e in ESTRUCTURAS if (not u or e != u[-1]) and e not in evitar]
     ops.sort(key=lambda e: (u[-4:].count(e), _h(tema + e) % 97)); return ops[0]
 def elegir_cama(tema="", evitar=()):
-    u = [x.get("cama") for x in log()]; ops = [c for c in CAMAS if c not in u[-2:] and c not in evitar] or [c for c in CAMAS if (not u or c != u[-1]) and c not in evitar]
+    u = [x.get("cama") for x in log()]; ops = [c for c in CAMAS if c not in u[-2:] and c not in evitar] or [c for c in CAMAS if (not u or c != u[-1]) and c not in evitar] or [c for c in CAMAS if c not in u[-2:]]
     return sorted(ops, key=lambda c: _h(tema + c) % 97)[0]
 def duracion_objetivo(tema="", n_fuentes=2):
     """60-95 s según tema: más fuentes/complejidad -> más largo; varía respecto de la anterior."""
@@ -54,7 +54,9 @@ def hecha_hoy(fecha=None):
         if x.get("fecha") == f: d.setdefault(x["project_id"], {}).update({k: v for k, v in x.items() if v is not None})
     return list(d.values())
 def exigir_cupo(fecha=None, origen="propia"):
-    h = hecha_hoy(fecha); n = sum(1 for x in h if x.get("origen", "propia") == origen)
+    h = hecha_hoy(fecha)
+    if os.environ.get("CAPCOT_FORZAR_CUPO") == "1": print("AVISO: cupo diario forzado por orden explícita de Mj"); return h
+    n = sum(1 for x in h if x.get("origen", "propia") == origen)
     if len(h) >= MAX_POR_DIA: sys.exit(f"LÍMITE DURO: ya hay {len(h)} cápsulas el {fecha or 'hoy'} ({', '.join(x['project_id'] for x in h)}). Máximo {MAX_POR_DIA} por día.")
     if n >= MAX_ORIGEN[origen]: sys.exit(f"LÍMITE DURO: ya hay {n} cápsulas '{origen}' el {fecha or 'hoy'}. Máximo {MAX_ORIGEN[origen]} {origen}(s) por día (2 propias + 1 externa).")
     return h

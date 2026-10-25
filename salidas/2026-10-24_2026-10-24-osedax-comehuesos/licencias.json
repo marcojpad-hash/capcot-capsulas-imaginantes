@@ -1,0 +1,70 @@
+{
+ "project_id": "2026-10-24_osedax-comehuesos",
+ "musica": {
+  "cama": "arpegio",
+  "origen": "síntesis propia (scripts/cama_sonora.py, numpy)",
+  "licencia": "obra propia de Datos y ociosidades",
+  "generada_por_ia": false
+ },
+ "sfx": {
+  "gaviotas": {
+   "archivo": "gaviotas.ogg",
+   "commons": "File:Gull 1.ogg",
+   "autor": "avphillips",
+   "licencia": "Public domain",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/4/43/Gull_1.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Gull_1.ogg",
+   "licencia_verificada": "Public domain"
+  },
+  "madera": {
+   "archivo": "madera.ogg",
+   "commons": "File:Creaky wooden casket.ogg",
+   "autor": "stephan",
+   "licencia": "Public domain",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Creaky_wooden_casket.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Creaky_wooden_casket.ogg",
+   "licencia_verificada": "Public domain"
+  },
+  "olas": {
+   "archivo": "olas.ogg",
+   "commons": "File:Ocean Waves on a Tropical Beach.ogg",
+   "autor": "Jarrod stanley",
+   "licencia": "CC0",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/6/64/Ocean_Waves_on_a_Tropical_Beach.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Ocean_Waves_on_a_Tropical_Beach.ogg",
+   "licencia_verificada": "CC0"
+  },
+  "pluma": {
+   "archivo": "pluma.ogg",
+   "commons": "File:Writing with inkpen.ogg",
+   "autor": "stephan",
+   "licencia": "Public domain",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Writing_with_inkpen.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Writing_with_inkpen.ogg",
+   "licencia_verificada": "Public domain"
+  }
+ },
+ "imagenes": {
+  "origen": "generadas con IA (ilustración no realista)",
+  "estilo": "tatuaje_acuarela",
+  "realista": false
+ },
+ "voz": {
+  "motor": "Microsoft Edge TTS",
+  "voz": "es-MX-JorgeNeural",
+  "nota": "voz sintética; no imita a una persona real"
+ },
+ "capas_datos": {
+  "tipos": [
+   "dato",
+   "mapa"
+  ],
+  "mapa_base": "Natural Earth 110m (dominio público)",
+  "render": "matplotlib (propio)"
+ },
+ "fuentes_datos": [
+  "https://doi.org/10.1093/zoolinnean/zlag148",
+  "https://www.agenciasinc.es/Noticias/Descubren-tres-nuevas-especies-de-gusanos-comehuesos-en-la-peninsula-iberica",
+  "https://www.elconfidencial.com/tecnologia/ciencia/2026-10-24/gusanos-sin-boca-ni-intestino-perforan-huesos_4450422/"
+ ]
+}

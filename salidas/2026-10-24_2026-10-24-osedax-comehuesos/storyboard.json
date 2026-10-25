@@ -1,0 +1,298 @@
+{
+ "project_id": "2026-10-24_osedax-comehuesos",
+ "serie": "Datos y ociosidades",
+ "title": "Gusanos sin boca que se comen los huesos",
+ "titulo": "Gusanos sin boca",
+ "language": "es-MX",
+ "aspect_ratio": "9:16",
+ "target_duration_seconds": 85,
+ "estructura": "mito_vs_dato",
+ "estilo_id": "tatuaje_acuarela",
+ "estilo_visual": "Tatuaje acuarela",
+ "trend_source": {
+  "tipo": "noticia_cientifica",
+  "medio": "SINC / El Confidencial (CSIC)",
+  "url": "https://www.agenciasinc.es/Noticias/Descubren-tres-nuevas-especies-de-gusanos-comehuesos-en-la-peninsula-iberica",
+  "estudio_doi": "10.1093/zoolinnean/zlag148",
+  "fecha_publicacion": "2026-10-09",
+  "termino": "osedax",
+  "fecha_consulta": "2026-10-24"
+ },
+ "resumen": "Científicos del CSIC describieron tres especies nuevas de Osedax, gusanos sin boca ni intestino que se alimentan de huesos con ayuda de bacterias, usando huesos de vaca y cerdo como cebo a hasta ~1,200 m (Zool. J. Linn. Soc., 2026).",
+ "voice": {
+  "engine": "edge-tts",
+  "voice_id": "es-MX-JorgeNeural",
+  "rate": "+7%",
+  "pitch": "-2Hz",
+  "pad_seconds": 0.3,
+  "modo_pausas": "continuo"
+ },
+ "sources": [
+  {
+   "id": "SRC-001",
+   "cita_corta": "Alonso-Hartyanyi et al. (2026). On the diversity of 'bone-eating' worms (Osedax) and their symbionts around the Iberian Peninsula. Zoological Journal of the Linnean Society 208(2), zlag148.",
+   "doi": "10.1093/zoolinnean/zlag148",
+   "url": "https://doi.org/10.1093/zoolinnean/zlag148",
+   "accessed": "2026-10-24",
+   "supports": [
+    "sin boca, ano ni intestino; simbiosis bacteriana",
+    "34 especies previas",
+    "huesos de vaca y cerdo en landers, 89–1231 m, nueve sitios",
+    "recuperados tras 5–9 meses, 2022–2024, Ángeles Alvariño y Ramón Margalef",
+    "tres especies nuevas: O. emmae, O. martini, O. teoi"
+   ],
+   "ref_display": "Zool. J. Linn. Soc. · doi:10.1093/zoolinnean/zlag148"
+  },
+  {
+   "id": "SRC-002",
+   "cita_corta": "SINC / MNCN-CSIC (2026). Descubren tres nuevas especies de 'gusanos comehuesos' en la península ibérica.",
+   "url": "https://www.agenciasinc.es/Noticias/Descubren-tres-nuevas-especies-de-gusanos-comehuesos-en-la-peninsula-iberica",
+   "accessed": "2026-10-24",
+   "supports": [
+    "estructura similar a raíces, bacterias degradan",
+    "género descubierto hace dos décadas",
+    "teoi >1200 m con mancha verde; martini dos variantes",
+    "reciclaje de nutrientes y escasez de esqueletos fósiles"
+   ],
+   "ref_display": "Agencia SINC · MNCN-CSIC"
+  },
+  {
+   "id": "SRC-003",
+   "cita_corta": "Velasco, M. (2026). Descubren tres especies de gusanos sin boca ni intestino que perforan huesos. El Confidencial, 24 oct 2026.",
+   "url": "https://www.elconfidencial.com/tecnologia/ciencia/2026-10-24/gusanos-sin-boca-ni-intestino-perforan-huesos_4450422/",
+   "accessed": "2026-10-24",
+   "supports": [
+    "nota de prensa"
+   ],
+   "ref_display": "El Confidencial"
+  }
+ ],
+ "cortinilla_fuentes": {
+  "duration_seconds": 6,
+  "titulo": "Fuentes",
+  "aviso": "Imágenes generadas con IA. Voz sintética (edge-tts). Música y ambiente sintetizados / CC0.",
+  "bg_rgb": [
+   14,
+   28,
+   44
+  ],
+  "firma": "Datos y ociosidades · @datosyociosidades"
+ },
+ "audio": {
+  "music_asset": "sintetico:arpegio",
+  "cama_musical": "arpegio",
+  "music_lufs": -27,
+  "ambiente_lufs": -28,
+  "music_license": "Sintetizado por scripts/cama_sonora.py (obra propia)",
+  "sfx_license": "Wikimedia Commons CC0/PD, ver assets/sfx/LICENCIAS.json"
+ },
+ "export": {
+  "filename": "capsula.mp4",
+  "resolution": "1080x1920",
+  "fps": 30,
+  "subtitle_max_words": 3,
+  "plano_seconds": 2.5,
+  "loudness_lufs": -14
+ },
+ "scenes": [
+  {
+   "id": "scene_001",
+   "arc": "hook_medias_res",
+   "duration_seconds": 7.5,
+   "narration": "¿Los huesos duran para siempre en el fondo del mar? No. Hay gusanos que se los comen, y no tienen boca.",
+   "on_screen_text": "Gusanos sin boca",
+   "visual_description": "a whale-like bone resting on dark deep sea floor covered in tiny red plume worms",
+   "image_prompt": "watercolor sketch tattoo flash, rough black ink sketch of the subject with big loose watercolor blots of deep blue, coral and gold splashing behind like ink bursts, drips running down, splatter dots, color escaping the lines, guide lines and repeated strokes visible, white paper, readable subject, vertical 9:16, no text + a whale-like bone resting on dark deep sea floor covered in tiny red plume worms",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "asset_filename": "frames/scene_001.jpg",
+   "ambiente": "oceano",
+   "sfx": [
+    "olas"
+   ]
+  },
+  {
+   "id": "scene_002",
+   "arc": "desarrollo",
+   "duration_seconds": 5.3,
+   "narration": "Se llaman Osedax: los gusanos devoradores de huesos. No tienen boca, ni ano, ni intestino.",
+   "on_screen_text": "Sin boca, sin intestino",
+   "visual_description": "close-up of a tiny Osedax worm with feathery red plumes emerging from a bone",
+   "image_prompt": "watercolor sketch tattoo flash, rough black ink sketch of the subject with big loose watercolor blots of deep blue, coral and gold splashing behind like ink bursts, drips running down, splatter dots, color escaping the lines, guide lines and repeated strokes visible, white paper, readable subject, vertical 9:16, no text + close-up of a tiny Osedax worm with feathery red plumes emerging from a bone",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "asset_filename": "frames/scene_002.jpg",
+   "ambiente": "oceano",
+   "sfx": [
+    "olas"
+   ]
+  },
+  {
+   "id": "scene_003",
+   "arc": "desarrollo",
+   "duration_seconds": 7.8,
+   "narration": "Para alimentarse, hunden en el hueso unas estructuras parecidas a raíces. Ahí adentro viven bacterias que degradan la materia orgánica del hueso.",
+   "on_screen_text": "Raíces dentro del hueso",
+   "visual_description": "cross-section of a bone with worm roots penetrating inside, tiny bacteria clusters",
+   "image_prompt": "watercolor sketch tattoo flash, rough black ink sketch of the subject with big loose watercolor blots of deep blue, coral and gold splashing behind like ink bursts, drips running down, splatter dots, color escaping the lines, guide lines and repeated strokes visible, white paper, readable subject, vertical 9:16, no text + cross-section of a bone with worm roots penetrating inside, tiny bacteria clusters",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "asset_filename": "frames/scene_003.jpg",
+   "ambiente": "oceano",
+   "sfx": [
+    "madera"
+   ]
+  },
+  {
+   "id": "scene_004",
+   "arc": "desarrollo",
+   "duration_seconds": 8.2,
+   "narration": "El género se descubrió hace apenas unas dos décadas. Antes de este estudio había treinta y cuatro especies descritas en todos los océanos.",
+   "on_screen_text": "34 especies conocidas",
+   "visual_description": "world ocean map sketch with small worm marks scattered across oceans",
+   "image_prompt": "watercolor sketch tattoo flash, rough black ink sketch of the subject with big loose watercolor blots of deep blue, coral and gold splashing behind like ink bursts, drips running down, splatter dots, color escaping the lines, guide lines and repeated strokes visible, white paper, readable subject, vertical 9:16, no text + world ocean map sketch with small worm marks scattered across oceans",
+   "source_ids": [
+    "SRC-001",
+    "SRC-002"
+   ],
+   "asset_filename": "frames/scene_004.jpg",
+   "ambiente": "viento",
+   "sfx": [
+    "pluma"
+   ],
+   "capa": {
+    "tipo": "dato",
+    "valor": "34",
+    "etiqueta": "especies de Osedax descritas antes",
+    "fuente": "Alonso-Hartyanyi et al. 2026"
+   }
+  },
+  {
+   "id": "scene_005",
+   "arc": "desarrollo",
+   "duration_seconds": 9.2,
+   "narration": "Un equipo del CSIC, en España, quiso saber cuáles vivían alrededor de la península ibérica. Su cebo: huesos de vaca y de cerdo, comprados en mercados.",
+   "on_screen_text": "Cebo: huesos de mercado",
+   "visual_description": "scientists placing cow and pig bones into a box on a metal underwater lander on a ship deck",
+   "image_prompt": "watercolor sketch tattoo flash, rough black ink sketch of the subject with big loose watercolor blots of deep blue, coral and gold splashing behind like ink bursts, drips running down, splatter dots, color escaping the lines, guide lines and repeated strokes visible, white paper, readable subject, vertical 9:16, no text + scientists placing cow and pig bones into a box on a metal underwater lander on a ship deck",
+   "source_ids": [
+    "SRC-001",
+    "SRC-002"
+   ],
+   "asset_filename": "frames/scene_005.jpg",
+   "ambiente": "puerto",
+   "sfx": [
+    "gaviotas"
+   ]
+  },
+  {
+   "id": "scene_006",
+   "arc": "desarrollo",
+   "duration_seconds": 11.0,
+   "narration": "Los bajaron en nueve puntos, entre unos noventa y más de mil doscientos metros de profundidad. Cantábrico, golfo de Cádiz, Mediterráneo. Meses después, entre 2022 y 2024, los buques los recuperaron.",
+   "on_screen_text": "Hasta 1,200 m",
+   "visual_description": "a lander with bones descending into deep dark blue water beneath a research ship",
+   "image_prompt": "watercolor sketch tattoo flash, rough black ink sketch of the subject with big loose watercolor blots of deep blue, coral and gold splashing behind like ink bursts, drips running down, splatter dots, color escaping the lines, guide lines and repeated strokes visible, white paper, readable subject, vertical 9:16, no text + a lander with bones descending into deep dark blue water beneath a research ship",
+   "source_ids": [
+    "SRC-001",
+    "SRC-002"
+   ],
+   "asset_filename": "frames/scene_006.jpg",
+   "ambiente": "oceano",
+   "sfx": [
+    "olas"
+   ],
+   "capa": {
+    "tipo": "mapa",
+    "region": [
+     -12,
+     5,
+     33,
+     47
+    ],
+    "titulo": "Huesos como cebo",
+    "puntos": [
+     {
+      "nombre": "El Cachucho",
+      "lon": -4.8,
+      "lat": 44.1
+     },
+     {
+      "nombre": "Golfo de Cádiz",
+      "lon": -7.0,
+      "lat": 36.4
+     },
+     {
+      "nombre": "Mazarrón",
+      "lon": -1.3,
+      "lat": 37.3
+     }
+    ],
+    "fuente": "Zool. J. Linn. Soc. 2026"
+   }
+  },
+  {
+   "id": "scene_007",
+   "arc": "cierre_historia",
+   "duration_seconds": 13.1,
+   "narration": "Hallaron tres especies nuevas: Osedax emmae, teoi y martini. Teoi vive a más de mil doscientos metros y tiene una mancha verde nunca vista en el género. Martini viene en dos versiones: con manchas negras o rojiza.",
+   "on_screen_text": "3 especies nuevas",
+   "visual_description": "three different tiny worms side by side, one with a green spot, one black-spotted, one reddish",
+   "image_prompt": "watercolor sketch tattoo flash, rough black ink sketch of the subject with big loose watercolor blots of deep blue, coral and gold splashing behind like ink bursts, drips running down, splatter dots, color escaping the lines, guide lines and repeated strokes visible, white paper, readable subject, vertical 9:16, no text + three different tiny worms side by side, one with a green spot, one black-spotted, one reddish",
+   "source_ids": [
+    "SRC-001",
+    "SRC-002"
+   ],
+   "asset_filename": "frames/scene_007.jpg",
+   "ambiente": "oceano",
+   "sfx": [
+    "pluma"
+   ]
+  },
+  {
+   "id": "scene_008",
+   "arc": "cierre_historia",
+   "duration_seconds": 9.6,
+   "narration": "Con sus bacterias, reciclan los restos y devuelven nutrientes al fondo. Eso ayuda a explicar por qué el registro fósil marino guarda tan pocos esqueletos de vertebrados.",
+   "on_screen_text": "Reciclan el océano",
+   "visual_description": "a skeleton dissolving into flowing nutrients on the sea floor with tiny worms",
+   "image_prompt": "watercolor sketch tattoo flash, rough black ink sketch of the subject with big loose watercolor blots of deep blue, coral and gold splashing behind like ink bursts, drips running down, splatter dots, color escaping the lines, guide lines and repeated strokes visible, white paper, readable subject, vertical 9:16, no text + a skeleton dissolving into flowing nutrients on the sea floor with tiny worms",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "asset_filename": "frames/scene_008.jpg",
+   "ambiente": "oceano",
+   "sfx": [
+    "olas"
+   ]
+  },
+  {
+   "id": "scene_009",
+   "arc": "reflexion_o_pregunta",
+   "duration_seconds": 11.7,
+   "narration": "Lo que para nosotros es un final, un hueso en la oscuridad, para ellos es casa y banquete. ¿Cuánta vida espera todavía en lo que damos por muerto? Esto fue Datos y ociosidades.",
+   "on_screen_text": "¿Qué damos por muerto?",
+   "visual_description": "a single bone glowing softly in the abyss with worms blooming like flowers",
+   "image_prompt": "watercolor sketch tattoo flash, rough black ink sketch of the subject with big loose watercolor blots of deep blue, coral and gold splashing behind like ink bursts, drips running down, splatter dots, color escaping the lines, guide lines and repeated strokes visible, white paper, readable subject, vertical 9:16, no text + a single bone glowing softly in the abyss with worms blooming like flowers",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "asset_filename": "frames/scene_009.jpg",
+   "ambiente": "oceano",
+   "sfx": [
+    "olas"
+   ]
+  }
+ ],
+ "estilo_variante": "v2",
+ "estilo_referencia_imagen": "referencias_estilo/tatuaje_acuarela_oficial.jpg",
+ "canal": {
+  "nombre": "Datos y ociosidades",
+  "handle": "@datosyociosidades",
+  "youtube_channel_id": "UCU2ZI-6pBJEr9aSFsF6bxLw"
+ },
+ "origen": "propia"
+}

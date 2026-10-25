@@ -53,7 +53,7 @@
   "tema": "ideonella sakaiensis pet",
   "aprobado_por": "Mj (directo, 'YA')",
   "origen": "propia",
-  "tiktok": "pendiente_tiktok"
+  "tiktok": "publicado_tiktok"
  },
  {
   "fecha": "2026-10-24",
@@ -73,7 +73,7 @@
   "cama": "pizzicato",
   "aprobado_por": "Mj (directo, 'haz otro video y lo subes')",
   "origen": "propia",
-  "tiktok": "pendiente_tiktok",
+  "tiktok": "publicado_tiktok",
   "nota": "4.ª cápsula del día: supera MAX_POR_DIA=3 por petición directa de Mj | duplicado ZmejLrdEslU borrado Studio (Mj t71u); queda O7TdKvuBjyg"
  },
  {
@@ -94,7 +94,24 @@
   "cama": "tambor",
   "aprobado_por": "Mj (directo, t66u 'genera el video')",
   "origen": "propia",
-  "tiktok": "pendiente_tiktok",
+  "tiktok": "pendiente_mj",
   "nota": "5.ª cápsula del día: pedida por Mj t66u; supera MAX_POR_DIA=3 | v2 cierre; borrado 76DCb-MJZCc por Studio (Mj t70u)"
+ },
+ {
+  "fecha": "2026-10-24",
+  "project_id": "2026-10-24_osedax-comehuesos",
+  "yt_id": "Qe2Y9xDn9QQ",
+  "url": "https://youtube.com/shorts/Qe2Y9xDn9QQ",
+  "privacidad": "public",
+  "publishAt_utc": null,
+  "hora_local": null,
+  "ventana": null,
+  "titulo": "Gusanos sin boca que se comen los huesos",
+  "tema": "osedax",
+  "origen": "propia",
+  "tiktok": "pendiente_tiktok",
+  "estructura": "mito_vs_dato",
+  "estilo": "tatuaje_acuarela",
+  "cama": "arpegio"
  }
 ]
