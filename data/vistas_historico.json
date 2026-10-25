@@ -1435,5 +1435,64 @@
     },
     "tiktok": null,
     "nota": "Snapshot horario. YT Data API (uploads del canal, solo públicos). TikTok sin acceso desde este run (sin login/API); no se inventa."
+  },
+  {
+    "timestamp_cdmx": "2026-10-25T16:57-06:00",
+    "youtube": {
+      "gIjJ0YKYQ8M": {
+        "view": 4,
+        "like": 0,
+        "comment": 0
+      },
+      "AJR6kcnnDig": {
+        "view": 5,
+        "like": 0,
+        "comment": 0
+      },
+      "Qe2Y9xDn9QQ": {
+        "view": 518,
+        "like": 23,
+        "comment": 0
+      },
+      "3bhntOcKHPk": {
+        "view": 1150,
+        "like": 32,
+        "comment": 0
+      },
+      "O7TdKvuBjyg": {
+        "view": 5,
+        "like": 1,
+        "comment": 0
+      },
+      "r1AhsPOAS_o": {
+        "view": 1350,
+        "like": 72,
+        "comment": 4
+      },
+      "ZrUtKs7Ty7U": {
+        "view": 1265,
+        "like": 47,
+        "comment": 0
+      },
+      "5D96DmjvioU": {
+        "view": 533,
+        "like": 25,
+        "comment": 0
+      }
+    },
+    "youtube_totales": {
+      "view": 4830,
+      "like": 200,
+      "comment": 4
+    },
+    "suscriptores": 14,
+    "delta_vs_anterior": {
+      "view": 143,
+      "like": 7,
+      "comment": 0,
+      "suscriptores": 0
+    },
+    "tiktok": null,
+    "nota": "Snapshot horario. YT Data API (uploads del canal, solo públicos). TikTok sin acceso desde este run (sin login/API); no se inventa."
   }
 ]
