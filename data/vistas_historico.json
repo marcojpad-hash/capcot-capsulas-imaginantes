@@ -265,5 +265,73 @@
    "seguidores": 0
   },
   "nota": "YouTube tiene dos videos de abejas (76DCb-MJZCc y 3bhntOcKHPk) con el mismo título"
+ },
+ {
+  "timestamp_cdmx": "2026-10-24T20:05:00-06:00",
+  "youtube": {
+   "3bhntOcKHPk": {
+    "view": 146,
+    "like": 5,
+    "comment": 0
+   },
+   "O7TdKvuBjyg": {
+    "view": 2,
+    "like": 0,
+    "comment": 0
+   },
+   "r1AhsPOAS_o": {
+    "view": 330,
+    "like": 27,
+    "comment": 2
+   },
+   "ZrUtKs7Ty7U": {
+    "view": 551,
+    "like": 29,
+    "comment": 0
+   },
+   "5D96DmjvioU": {
+    "view": 260,
+    "like": 15,
+    "comment": 0
+   }
+  },
+  "youtube_totales": {
+   "view": 1289,
+   "like": 76,
+   "comment": 2
+  },
+  "suscriptores": 9,
+  "tiktok": {
+   "fuente": "TikTok Studio",
+   "videos": {
+    "aves_mujeres": {
+     "view": 167,
+     "like": 18,
+     "comment": 0
+    },
+    "serpientes": {
+     "view": 44,
+     "like": 1,
+     "comment": 0
+    },
+    "ideonella": {
+     "view": 522,
+     "like": 32,
+     "comment": 0
+    },
+    "el_nino_hashtags_IA": {
+     "view": 145,
+     "like": 3,
+     "comment": 0
+    }
+   },
+   "totales": {
+    "view": 878,
+    "like": 54,
+    "comment": 0
+   },
+   "seguidores": 0
+  },
+  "nota": "76DCb-MJZCc y ZmejLrdEslU ya no aparecen en el canal de YouTube"
  }
 ]
