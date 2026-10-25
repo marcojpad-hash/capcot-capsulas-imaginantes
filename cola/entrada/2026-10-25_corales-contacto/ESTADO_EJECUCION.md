@@ -4,6 +4,7 @@
 - Paquete editorial preparado con storyboard, fuentes, registro preliminar de licencias, plan de bloques de subtítulos y nueve frames ilustrados.
 - **No se generó MP4. No se generó voz ni SRT/ASS temporizado. No se ejecutó el QA oficial. No se publicó.**
 - No se escribió en `data/temas_del_dia.json`, `data/rotacion.json`, `data/publicaciones.json` ni `data/cola.json`.
+- En GitHub se versionaron únicamente storyboard y documentación. Los PNG permanecen en el ZIP; la carpeta de cola no está lista para montaje hasta extraer esos medios.
 
 ## Bloqueos comprobados en este entorno
 1. `/workspace/capcot` no existe en este entorno; por ello no estaba disponible la cola local oficial (`scripts/procesar_cola.py` → `scripts/capsula_diaria.py` → `scripts/qa_capsula.py`).
