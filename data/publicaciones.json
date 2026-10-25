@@ -75,5 +75,26 @@
   "origen": "propia",
   "tiktok": "pendiente_tiktok",
   "nota": "4.ª cápsula del día: supera MAX_POR_DIA=3 por petición directa de Mj"
+ },
+ {
+  "fecha": "2026-10-24",
+  "project_id": "2026-10-24_abejas-bullying",
+  "yt_id": "76DCb-MJZCc",
+  "url": "https://youtube.com/shorts/76DCb-MJZCc",
+  "privacidad": "public",
+  "publishAt_utc": null,
+  "hora_local": "2026-10-24 ~18:50 (America/Mexico_City)",
+  "ventana": 0,
+  "video": "capsula.mp4",
+  "storyboard": "storyboard.json",
+  "titulo": "Las abejas de miel también hacen bullying #Shorts",
+  "tema": "abejas de miel bullying",
+  "estructura": "sabias_que",
+  "estilo": "papel_rasgado_capas",
+  "cama": "tambor",
+  "aprobado_por": "Mj (directo, t66u 'genera el video')",
+  "origen": "propia",
+  "tiktok": "pendiente_tiktok",
+  "nota": "5.ª cápsula del día: pedida por Mj t66u; supera MAX_POR_DIA=3"
  }
 ]
