@@ -10,10 +10,10 @@
 - `subtitulos_plan.json`: bloques de texto de máximo tres palabras; no contiene tiempos.
 - `ESTADO_EJECUCION.md`: limitaciones comprobadas, conflicto de cupo y elementos pendientes.
 - `contact_sheet.png`: hoja de revisión de los nueve frames; no usar como frame del video.
-- `SHA256SUMS.json`: tamaños y SHA-256 de los archivos incluidos.
+- `SHA256SUMS.json`: tamaños y SHA-256 de los archivos del ZIP de entrega; incluye hashes de medios que deliberadamente no se versionan en GitHub.
 
 ## Uso previsto
-Importar el paquete en `cola/entrada/2026-10-25_corales-contacto/` para que Grok Bot ejecute el pipeline oficial cuando el entorno y el cupo estén resueltos. No se debe marcar como publicado ni aprobado por QA con este paquete solamente.
+Extraer el ZIP de entrega sobre `cola/entrada/2026-10-25_corales-contacto/` para copiar allí los nueve PNG antes de procesar. Grok Bot podrá ejecutar el pipeline oficial cuando el entorno, los frames y el cupo estén resueltos. No se debe marcar como publicado ni aprobado por QA con este paquete solamente.
 
 ## Importante
 El entorno de esta ejecución no contiene `/workspace/capcot` ni el módulo `edge_tts`. Por tanto, no existe MP4, voz, SRT/ASS temporizado ni resultado de QA oficial. La entrada no se añadió a `data/cola.json`, y no se modificaron los registros de temas, rotación o publicaciones.
