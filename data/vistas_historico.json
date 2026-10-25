@@ -522,5 +522,64 @@
     "suscriptores": 11,
     "tiktok": null,
     "nota": "Solo YouTube (Data API). TikTok sin acceso; ultimo dato TikTok en snapshot 22:02."
+  },
+  {
+    "timestamp_cdmx": "2026-10-25T06:54-06:00",
+    "youtube": {
+      "IzWU_1BXq3Q": {
+        "view": 0,
+        "like": 0,
+        "comment": 0
+      },
+      "AJR6kcnnDig": {
+        "view": 0,
+        "like": 0,
+        "comment": 0
+      },
+      "Qe2Y9xDn9QQ": {
+        "view": 61,
+        "like": 3,
+        "comment": 0
+      },
+      "3bhntOcKHPk": {
+        "view": 1117,
+        "like": 32,
+        "comment": 0
+      },
+      "O7TdKvuBjyg": {
+        "view": 2,
+        "like": 0,
+        "comment": 0
+      },
+      "r1AhsPOAS_o": {
+        "view": 1336,
+        "like": 71,
+        "comment": 4
+      },
+      "ZrUtKs7Ty7U": {
+        "view": 1249,
+        "like": 47,
+        "comment": 0
+      },
+      "5D96DmjvioU": {
+        "view": 389,
+        "like": 21,
+        "comment": 0
+      }
+    },
+    "youtube_totales": {
+      "view": 4154,
+      "like": 174,
+      "comment": 4
+    },
+    "suscriptores": 13,
+    "delta_vs_anterior": {
+      "view": 457,
+      "like": 7,
+      "comment": 0,
+      "suscriptores": 2
+    },
+    "tiktok": null,
+    "nota": "Solo YouTube (Data API). IzWU_1BXq3Q y AJR6kcnnDig privados (programados/pendientes). TikTok sin acceso desde este run; último dato TikTok en snapshot 22:02 del 24-oct."
   }
 ]
