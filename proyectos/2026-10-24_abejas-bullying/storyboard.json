@@ -1,0 +1,265 @@
+{
+ "project_id": "2026-10-24_abejas-bullying",
+ "serie": "Datos y ociosidades",
+ "title": "Las abejas de miel también hacen bullying",
+ "titulo": "¿Abejas abusonas?",
+ "language": "es-MX",
+ "aspect_ratio": "9:16",
+ "target_duration_seconds": 84,
+ "estructura": "sabias_que",
+ "estilo_id": "papel_rasgado_capas",
+ "estilo_visual": "Papel rasgado por capas (diorama)",
+ "trend_source": {
+  "tipo": "noticia_cientifica",
+  "medio": "ScienceDaily (Anglia Ruskin University)",
+  "url": "https://www.sciencedaily.com/releases/2026/10/261021231227.htm",
+  "estudio_doi": "10.1111/een.70139",
+  "fecha_publicacion": "2026-10-22",
+  "termino": "abejas de miel bullying",
+  "fecha_consulta": "2026-10-24"
+ },
+ "resumen": "Las abejas de miel inician y ganan la mayoría de los pleitos por flores frente a polinizadores silvestres; al duplicarse su densidad en zarzamora hubo 14 % menos abejorros (Ecological Entomology, 2026).",
+ "voice": {
+  "engine": "edge-tts",
+  "voice_id": "es-MX-JorgeNeural",
+  "rate": "+7%",
+  "pitch": "-2Hz",
+  "pad_seconds": 0.3,
+  "modo_pausas": "continuo"
+ },
+ "sources": [
+  {
+   "id": "SRC-001",
+   "cita_corta": "Buckle, V. A., Brown, P. M. J., Carter, T. & Ings, T. C. (2026). Honeybees directly outcompete other flower visitors through interference competition on shared resource. Ecological Entomology.",
+   "doi": "10.1111/een.70139",
+   "url": "https://doi.org/10.1111/een.70139",
+   "accessed": "2026-10-24",
+   "supports": [
+    "5 sitios en Cambridge a <300 m de colmenas",
+    "dos años, zarzamora y hiedra",
+    "93 h de observación",
+    "abejas de miel inician y ganan más encuentros",
+    "duplicar densidad → 14 % menos abejorros en zarzamora",
+    "abeja de la hiedra gana pleitos",
+    "más encuentros con más calor"
+   ],
+   "ref_display": "Ecological Entomology · doi:10.1111/een.70139"
+  },
+  {
+   "id": "SRC-002",
+   "cita_corta": "Anglia Ruskin University (2026). Honey bees are bullying other bees, scientists discover. ScienceDaily, 22 oct 2026.",
+   "url": "https://www.sciencedaily.com/releases/2026/10/261021231227.htm",
+   "accessed": "2026-10-24",
+   "supports": [
+    "comunicado; Victoria Buckle autora principal",
+    "abeja de la hiedra registrada en GB desde 2001",
+    "estrés por calor reduce néctar; abejorros sensibles al calor",
+    "apicultores registrados 19 000 (2010) → 47 000",
+    "no busca desalentar la apicultura"
+   ],
+   "ref_display": "ScienceDaily · Anglia Ruskin University"
+  }
+ ],
+ "scenes": [
+  {
+   "id": "scene_001",
+   "arc": "hook_medias_res",
+   "duration_seconds": 9.2,
+   "narration": "¿Sabías que las abejas hacen bullying? Las de miel empujan, persiguen y se quedan con las flores. Un estudio británico lo acaba de documentar.",
+   "on_screen_text": "¿Abejas abusonas?",
+   "visual_description": "a honeybee shoving a fuzzy bumblebee off a bramble flower, dramatic close-up",
+   "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text + a honeybee shoving a fuzzy bumblebee off a bramble flower, dramatic close-up",
+   "source_ids": [
+    "SRC-001",
+    "SRC-002"
+   ],
+   "asset_filename": "frames/scene_001.jpg",
+   "ambiente": "viento",
+   "sfx": [
+    "viento",
+    "pluma"
+   ]
+  },
+  {
+   "id": "scene_002",
+   "arc": "desarrollo",
+   "duration_seconds": 10.0,
+   "narration": "En Cambridge, Inglaterra, Victoria Buckle y su equipo de la Universidad Anglia Ruskin vigilaron cinco sitios, cada uno a menos de trescientos metros de una colmena.",
+   "on_screen_text": "Cambridge, Inglaterra",
+   "visual_description": "young researcher with notebook kneeling near beehive boxes in an English meadow",
+   "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text + young researcher with notebook kneeling near beehive boxes in an English meadow",
+   "source_ids": [
+    "SRC-001",
+    "SRC-002"
+   ],
+   "asset_filename": "frames/scene_002.jpg",
+   "ambiente": "viento",
+   "sfx": [
+    "viento",
+    "madera"
+   ],
+   "capa": {
+    "tipo": "mapa",
+    "region": [
+     -6,
+     3,
+     49.5,
+     56
+    ],
+    "puntos": [
+     {
+      "nombre": "Cambridge",
+      "lon": 0.12,
+      "lat": 52.2
+     }
+    ],
+    "titulo": "Cinco sitios cerca de colmenas",
+    "fuente": "Buckle et al. (2026), Ecological Entomology"
+   }
+  },
+  {
+   "id": "scene_003",
+   "arc": "desarrollo",
+   "duration_seconds": 9.2,
+   "narration": "Durante dos años observaron zarzamoras y hiedra en flor. Más de noventa y tres horas mirando quién comía y quién se quedaba sin néctar.",
+   "on_screen_text": "93 horas observando",
+   "visual_description": "flowering bramble hedge and ivy on an old wall with many small pollinators",
+   "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text + flowering bramble hedge and ivy on an old wall with many small pollinators",
+   "source_ids": [
+    "SRC-001",
+    "SRC-002"
+   ],
+   "asset_filename": "frames/scene_003.jpg",
+   "ambiente": "viento",
+   "sfx": [
+    "reloj",
+    "viento"
+   ]
+  },
+  {
+   "id": "scene_004",
+   "arc": "desarrollo",
+   "duration_seconds": 10.0,
+   "narration": "Las abejas de miel iniciaron la mayoría de los pleitos, y ganaron más. Abejorros, abejas solitarias y moscas de las flores las esquivaban, o salían perseguidas.",
+   "on_screen_text": "Ellas empiezan el pleito",
+   "visual_description": "honeybee chasing a hoverfly and a solitary bee away from an ivy flower cluster",
+   "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text + honeybee chasing a hoverfly and a solitary bee away from an ivy flower cluster",
+   "source_ids": [
+    "SRC-001",
+    "SRC-002"
+   ],
+   "asset_filename": "frames/scene_004.jpg",
+   "ambiente": "viento",
+   "sfx": [
+    "pluma",
+    "viento"
+   ]
+  },
+  {
+   "id": "scene_005",
+   "arc": "desarrollo",
+   "duration_seconds": 7.1,
+   "narration": "En la zarzamora, cuando la densidad de abejas de miel se duplicaba, había catorce por ciento menos abejorros.",
+   "on_screen_text": "14 % menos abejorros",
+   "visual_description": "crowd of honeybees on bramble flowers while a lone bumblebee flies away",
+   "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text + crowd of honeybees on bramble flowers while a lone bumblebee flies away",
+   "source_ids": [
+    "SRC-001",
+    "SRC-002"
+   ],
+   "asset_filename": "frames/scene_005.jpg",
+   "ambiente": "viento",
+   "sfx": [
+    "viento"
+   ],
+   "capa": {
+    "tipo": "dato",
+    "valor": "−14 %",
+    "etiqueta": "abejorros al duplicarse las abejas de miel",
+    "fuente": "Buckle et al. (2026), Ecological Entomology"
+   }
+  },
+  {
+   "id": "scene_006",
+   "arc": "cierre_historia",
+   "duration_seconds": 10.7,
+   "narration": "Solo una plantaba cara: la abeja de la hiedra, una especie solitaria que llegó a Gran Bretaña apenas en dos mil uno. Ella sí les ganaba los pleitos.",
+   "on_screen_text": "La abeja de la hiedra",
+   "visual_description": "small striped ivy bee standing its ground facing a honeybee on yellow ivy flowers",
+   "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text + small striped ivy bee standing its ground facing a honeybee on yellow ivy flowers",
+   "source_ids": [
+    "SRC-001",
+    "SRC-002"
+   ],
+   "asset_filename": "frames/scene_006.jpg",
+   "ambiente": "viento",
+   "sfx": [
+    "pluma",
+    "madera"
+   ]
+  },
+  {
+   "id": "scene_007",
+   "arc": "cierre_historia",
+   "duration_seconds": 12.5,
+   "narration": "Y el calor empeora la pelea: con más temperatura hubo más choques. Las plantas estresadas pueden dar menos néctar, y las abejas de miel se activan más, mientras los abejorros prefieren el fresco.",
+   "on_screen_text": "Más calor, más pleitos",
+   "visual_description": "hot ochre sun over wilting flowers, honeybees swarming, bumblebee resting in shade",
+   "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text + hot ochre sun over wilting flowers, honeybees swarming, bumblebee resting in shade",
+   "source_ids": [
+    "SRC-002"
+   ],
+   "asset_filename": "frames/scene_007.jpg",
+   "ambiente": "viento",
+   "sfx": [
+    "viento",
+    "reloj"
+   ]
+  },
+  {
+   "id": "scene_008",
+   "arc": "reflexion_o_pregunta",
+   "duration_seconds": 13.6,
+   "narration": "Los autores no piden dejar la apicultura, sino aprender a convivir. En Reino Unido, los apicultores registrados pasaron de diecinueve mil a cuarenta y siete mil. ¿Cuánta ayuda puede volverse competencia? Esto fue Datos y ociosidades.",
+   "on_screen_text": "¿Ayuda o competencia?",
+   "visual_description": "beehives and wild flowers meadow at dusk, honeybees and wild bees sharing flowers peacefully",
+   "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text + beehives and wild flowers meadow at dusk, honeybees and wild bees sharing flowers peacefully",
+   "source_ids": [
+    "SRC-002"
+   ],
+   "asset_filename": "frames/scene_008.jpg",
+   "ambiente": "viento",
+   "sfx": [
+    "viento",
+    "campanas"
+   ]
+  }
+ ],
+ "cortinilla_fuentes": {
+  "duration_seconds": 6,
+  "titulo": "Fuentes",
+  "aviso": "Imágenes generadas con IA. Voz sintética (edge-tts). Música y ambiente sintetizados / CC0.",
+  "bg_rgb": [
+   30,
+   44,
+   34
+  ],
+  "firma": "Datos y ociosidades · @datosyociosidades"
+ },
+ "audio": {
+  "music_asset": "sintetico:tambor",
+  "cama_musical": "tambor",
+  "music_lufs": -27,
+  "ambiente_lufs": -28,
+  "music_license": "Sintetizado por scripts/cama_sonora.py (obra propia)",
+  "sfx_license": "Wikimedia Commons CC0/PD, ver assets/sfx/LICENCIAS.json"
+ },
+ "export": {
+  "filename": "capsula.mp4",
+  "resolution": "1080x1920",
+  "fps": 30,
+  "subtitle_max_words": 3,
+  "plano_seconds": 2.5,
+  "loudness_lufs": -14
+ }
+}
