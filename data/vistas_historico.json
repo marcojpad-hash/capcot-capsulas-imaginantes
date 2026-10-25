@@ -333,5 +333,78 @@
    "seguidores": 0
   },
   "nota": "76DCb-MJZCc y ZmejLrdEslU ya no aparecen en el canal de YouTube"
+ },
+ {
+  "timestamp_cdmx": "2026-10-24T21:01:00-06:00",
+  "youtube": {
+   "3bhntOcKHPk": {
+    "view": 434,
+    "like": 18,
+    "comment": 0
+   },
+   "O7TdKvuBjyg": {
+    "view": 0,
+    "like": 0,
+    "comment": 0
+   },
+   "r1AhsPOAS_o": {
+    "view": 456,
+    "like": 37,
+    "comment": 2
+   },
+   "ZrUtKs7Ty7U": {
+    "view": 746,
+    "like": 42,
+    "comment": 0
+   },
+   "5D96DmjvioU": {
+    "view": 261,
+    "like": 15,
+    "comment": 0
+   }
+  },
+  "youtube_totales": {
+   "view": 1897,
+   "like": 112,
+   "comment": 2
+  },
+  "suscriptores": 10,
+  "tiktok": {
+   "fuente": "TikTok Studio",
+   "videos": {
+    "abejas_bullying": {
+     "view": 21,
+     "like": 0,
+     "comment": 0
+    },
+    "aves_mujeres": {
+     "view": 484,
+     "like": 36,
+     "comment": 0
+    },
+    "serpientes": {
+     "view": 55,
+     "like": 1,
+     "comment": 0
+    },
+    "ideonella": {
+     "view": 536,
+     "like": 33,
+     "comment": 0
+    },
+    "el_nino_hashtags_IA": {
+     "view": 157,
+     "like": 3,
+     "comment": 0
+    }
+   },
+   "totales": {
+    "view": 1253,
+    "like": 73,
+    "comment": 0
+   },
+   "seguidores": 0
+  },
+  "nota": "YouTube O7TdKvuBjyg (aves) bajó de 2 a 0 vistas (recalculo de YouTube). TikTok: nuevo video abejas; seguidores 0 con captcha en perfil, puede no ser confiable."
  }
 ]
