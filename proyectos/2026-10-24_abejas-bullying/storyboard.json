@@ -219,12 +219,13 @@
   {
    "id": "scene_008",
    "arc": "reflexion_o_pregunta",
-   "duration_seconds": 13.6,
-   "narration": "Los autores no piden dejar la apicultura, sino aprender a convivir. En Reino Unido, los apicultores registrados pasaron de diecinueve mil a cuarenta y siete mil. ¿Cuánta ayuda puede volverse competencia? Esto fue Datos y ociosidades.",
+   "duration_seconds": 12.4,
+   "narration": "No es demonizar a las abejas de miel: polinizan y dan miel. Es ver que demasiadas, cerca, pueden empujar a las silvestres. ¿Cuándo una ayuda se vuelve competencia? Esto fue Datos y ociosidades.",
    "on_screen_text": "¿Ayuda o competencia?",
    "visual_description": "beehives and wild flowers meadow at dusk, honeybees and wild bees sharing flowers peacefully",
    "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text + beehives and wild flowers meadow at dusk, honeybees and wild bees sharing flowers peacefully",
    "source_ids": [
+    "SRC-001",
     "SRC-002"
    ],
    "asset_filename": "frames/scene_008.jpg",

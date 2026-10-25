@@ -1,5 +1,5 @@
 {
- "estado": "pendiente_tiktok",
+ "estado": "publicado_tiktok",
  "mp4": "/workspace/capcot/salidas/2026-10-24_2026-10-24-ideonella-pet/capsula.mp4",
  "caption": "Bacteria que come plástico: Ideonella sakaiensis 🧫♻️\n\n¿Un microbio que come botellas? Descubierta en Sakai, Japón (2016), usa PET como fuente de carbono con dos enzimas, PETasa y MHETasa; el efecto depende del tipo de PET y las condiciones.\n\nFuentes en YouTube @datosyociosidades\n\n#bacteriaquecomeplastico #ciencia #reciclaje #plastico #datos #difusióncientífica #difusión #ia #DatosYOciosidades #aprendeentiktok",
  "hashtags": [
@@ -19,5 +19,6 @@
  "hora_sugerida_local": null,
  "yt_id": "r1AhsPOAS_o",
  "instruccion": "Agente principal: subir por navegador (agente de escritorio) con este caption; al terminar poner estado='publicado_tiktok' y url.",
- "yt_url": "https://youtube.com/shorts/r1AhsPOAS_o"
+ "yt_url": "https://youtube.com/shorts/r1AhsPOAS_o",
+ "nota_tiktok": "Publicado por Mj desde su teléfono; aparece en TikTok Studio (ideonella) en reporte 20:05 CDMX 24-oct. Marcado sin reenviar."
 }
