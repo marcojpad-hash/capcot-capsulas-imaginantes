@@ -1,12 +1,38 @@
 {
   "fecha": "2026-10-25",
   "tipo": "endscreens_rotacion",
+  "actualizado_cdmx": "2026-10-25T15:53-06:00",
+  "motivo": "Qe2 acelera; O7/AJR/gIj flojos ~4-5 vistas. Repartir: no fijar 3 fuertes a un solo destino.",
+  "vistas_ref": {
+    "r1AhsPOAS_o": 1349,
+    "ZrUtKs7Ty7U": 1265,
+    "3bhntOcKHPk": 1145,
+    "5D96DmjvioU": 527,
+    "Qe2Y9xDn9QQ": 370,
+    "O7TdKvuBjyg": 5,
+    "AJR6kcnnDig": 5,
+    "gIjJ0YKYQ8M": 4
+  },
   "mapa": {
+    "r1AhsPOAS_o": "AJR6kcnnDig",
+    "ZrUtKs7Ty7U": "gIjJ0YKYQ8M",
     "3bhntOcKHPk": "O7TdKvuBjyg",
-    "r1AhsPOAS_o": "O7TdKvuBjyg",
-    "ZrUtKs7Ty7U": "O7TdKvuBjyg",
-    "Qe2Y9xDn9QQ": "5D96DmjvioU",
-    "O7TdKvuBjyg": "r1AhsPOAS_o",
-    "5D96DmjvioU": "Qe2Y9xDn9QQ"
+    "Qe2Y9xDn9QQ": "AJR6kcnnDig",
+    "5D96DmjvioU": "gIjJ0YKYQ8M",
+    "O7TdKvuBjyg": "AJR6kcnnDig",
+    "AJR6kcnnDig": "O7TdKvuBjyg",
+    "gIjJ0YKYQ8M": "O7TdKvuBjyg"
+  },
+  "pendiente_studio": false,
+  "nota": "Aplicado en YouTube Studio Editor > Pantalla final (video específico). Búsqueda: pegar youtube.com/watch?v=ID en 'Buscar vídeos de otros canales' (tus vídeos no lista Shorts). Sin suscripción ni tarjetas.",
+  "aplicado_studio": {
+    "r1AhsPOAS_o": "aplicado",
+    "ZrUtKs7Ty7U": "aplicado",
+    "3bhntOcKHPk": "omitido_ya_correcto",
+    "Qe2Y9xDn9QQ": "aplicado",
+    "5D96DmjvioU": "aplicado",
+    "O7TdKvuBjyg": "aplicado",
+    "AJR6kcnnDig": "aplicado_nuevo",
+    "gIjJ0YKYQ8M": "aplicado_nuevo"
   }
 }
