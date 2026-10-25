@@ -521,5 +521,17 @@
   "origen": "propuesta Mj 2026-10-25",
   "ambiente_sugerido": "",
   "musica_sugerida": "sintetico:pulso"
+ },
+ "papel_infantil": {
+  "nombre": "Papel infantil / bolígrafo",
+  "descripcion": "Dibujo infantil con bolígrafo negro en hoja blanca arrugada, foto de celular. NO caricatura limpia, NO Canva, NO fotorrealista, NO vectorial, NO ilustración pulida. NO usar para anuncios de gym ni ganchos de marketing tipo 'Estoy harto de IA'.",
+  "prompt_base": "childlike imperfect doodle drawn with black ballpoint pen only on white crumpled paper, photographed with a phone, trembling wobbly lines, uneven stick figures, double-traced strokes, crooked handwriting, large clear single subject, simple empty paper background, soft fold shadows, optional fingertip at frame edge and small ink blot, amateur phone photo, not clean cartoon, not vector, not polished illustration, not photorealistic subject, vertical 9:16",
+  "paleta": "blanco papel, negro bolígrafo, sombras grises de pliegues",
+  "temas": "tardígrado, dinosaurios/aves, sueño, antropología con metáforas simples, antes/después científico",
+  "atractivo": 4,
+  "origen": "propuesta Mj 2026-10-25, aprobado test v2 (foto celular con pulgar); v1 limpia rechazada",
+  "ambiente_sugerido": "",
+  "musica_sugerida": "sintetico:pulso",
+  "referencia": "salidas/estilos_test/papel_infantil.jpg"
  }
 }
