@@ -64,16 +64,6 @@
     },
     {
       "id": "SRC-003",
-      "cita_corta": "ScienceDaily (2026-10-19). A simple touch can bring dying corals back to life in just 7 weeks.",
-      "url": "https://www.sciencedaily.com/releases/2026/10/261017230025.htm",
-      "accessed": "2026-10-25",
-      "supports": [
-        "La noticia científica se difundió el 19 de octubre de 2026, dentro de la ventana editorial de siete días."
-      ],
-      "ref_display": "ScienceDaily · 19 oct 2026"
-    },
-    {
-      "id": "SRC-004",
       "cita_corta": "Hopkins Marine Station. Contacto y dirección oficial: 120 Ocean View Blvd, Pacific Grove, California.",
       "url": "https://hopkinsmarinestation.stanford.edu/about/contact",
       "accessed": "2026-10-25",
@@ -117,7 +107,7 @@
       "source_ids": [
         "SRC-001",
         "SRC-002",
-        "SRC-004"
+        "SRC-003"
       ],
       "asset_filename": "frames/scene_002.png",
       "asset_type": "image",
@@ -337,7 +327,8 @@
     "video_codec": "h264",
     "audio_codec": "aac",
     "loudness_lufs": -14,
-    "plano_seconds": 2.5
+    "plano_seconds": 2.5,
+    "subtitle_max_words": 3
   },
   "proveedor_imagenes": "ChatGPT image generation; 9 PNG preparados localmente a 1080x1920.",
   "parece_real": false,
