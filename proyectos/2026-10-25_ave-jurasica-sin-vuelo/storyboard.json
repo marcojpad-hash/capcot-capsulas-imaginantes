@@ -1,0 +1,424 @@
+{
+ "project_id": "2026-10-25_ave-jurasica-sin-vuelo",
+ "serie": "Datos y ociosidades",
+ "title": "Un ave de hace 150 millones de años con dientes de dinosaurio… y sin vuelo",
+ "titulo": "El ave que no volaba",
+ "titulo_estilo": {
+  "font": "/usr/share/fonts/truetype/sand-box/google/Alfa Slab One/AlfaSlabOne-Regular.ttf",
+  "size": 88,
+  "caja_rgb": [
+   238,
+   224,
+   190
+  ],
+  "texto_rgb": [
+   34,
+   42,
+   92
+  ],
+  "subrayado_rgb": [
+   204,
+   122,
+   32
+  ]
+ },
+ "language": "es-MX",
+ "aspect_ratio": "9:16",
+ "target_duration_seconds": 90,
+ "estructura": "pregunta",
+ "estilo_id": "linograbado",
+ "estilo_visual": "Linograbado bitono",
+ "trend_source": {
+  "tipo": "noticia_cientifica",
+  "medio": "Nature / ScienceDaily (Chinese Academy of Sciences)",
+  "url": "https://www.sciencedaily.com/releases/2026/10/261023023710.htm",
+  "estudio_doi": "10.1038/s41586-026-10972-z",
+  "fecha_publicacion": "2026-10-14",
+  "termino": "Yuezhuornis ave jurasica sin vuelo",
+  "fecha_consulta": "2026-10-25"
+ },
+ "resumen": "Yuezhuornis yangyuanensis, un avial del Jurásico tardío (150–148 Ma) de la fauna de Zhenghe (Fujian, China), combina dientes aserrados y garra en hoz de deinonicosaurio con brazos cortos y patas de ave terrestre: el caso más antiguo conocido de un ave sin vuelo (Nature, 2026).",
+ "voice": {
+  "engine": "edge-tts",
+  "voice_id": "es-MX-JorgeNeural",
+  "rate": "+7%",
+  "pitch": "-2Hz",
+  "pad_seconds": 0.3,
+  "modo_pausas": "continuo"
+ },
+ "sources": [
+  {
+   "id": "SRC-001",
+   "cita_corta": "Xu, L., Wang, M., Lin, G. et al. (2026). Jurassic flightless bird reveals early ecological diversity of avialans. Nature 658, 690.",
+   "doi": "10.1038/s41586-026-10972-z",
+   "url": "https://doi.org/10.1038/s41586-026-10972-z",
+   "accessed": "2026-10-25",
+   "supports": [
+    "Yuezhuornis yangyuanensis, Jurásico tardío, fauna de Zhenghe, sureste de China",
+    "mosaico de rasgos de aviales y troodóntidos; segundo dedo hiperextensible tipo deinonicosaurio",
+    "antebrazos muy cortos",
+    "estilo de vida terrestre y sin vuelo",
+    "holotipo IVPP V34427"
+   ],
+   "ref_display": "Nature · doi:10.1038/s41586-026-10972-z"
+  },
+  {
+   "id": "SRC-002",
+   "cita_corta": "Chinese Academy of Sciences / ScienceDaily (2026). This 150-million-year-old bird had dinosaur teeth and a strange secret. 23 oct 2026.",
+   "url": "https://www.sciencedaily.com/releases/2026/10/261023023710.htm",
+   "accessed": "2026-10-25",
+   "supports": [
+    "150–148 millones de años; tamaño de un cuervo",
+    "provincia de Fujian; IVPP y Fujian Institute of Geological Sciences",
+    "dientes juntos y aserrados como deinonicosaurios",
+    "garra en forma de hoz en el segundo dedo",
+    "parsimonia y tip-dating bayesiano: dentro de Avialae, un paso más allá que Archaeopteryx",
+    "proporciones como aves terrestres; ejemplo más antiguo conocido de pérdida de vuelo"
+   ],
+   "ref_display": "CAS · ScienceDaily"
+  }
+ ],
+ "cortinilla_fuentes": {
+  "duration_seconds": 6,
+  "titulo": "Fuentes",
+  "aviso": "Imágenes: Audubon, Owen, Haeckel, Darwin (dominio público); T. Evanson CC BY-SA 2.0; Fowler et al. 2011 CC BY 2.5; foto Zhenghe de rheins CC BY 3.0. Filtro linograbado propio; no representan a Yuezhuornis. Voz sintética con IA (edge-tts). Música sintetizada / CC0.",
+  "bg_rgb": [
+   28,
+   30,
+   52
+  ],
+  "firma": "Datos y ociosidades · @datosyociosidades"
+ },
+ "audio": {
+  "music_asset": "sintetico:pizzicato",
+  "cama_musical": "pizzicato",
+  "music_lufs": -27,
+  "ambiente_lufs": -28,
+  "music_license": "Sintetizado por scripts/cama_sonora.py (obra propia)",
+  "sfx_license": "Wikimedia Commons CC0/PD, ver assets/sfx/LICENCIAS.json"
+ },
+ "export": {
+  "filename": "capsula.mp4",
+  "resolution": "1080x1920",
+  "fps": 30,
+  "subtitle_max_words": 3,
+  "plano_seconds": 2.5,
+  "loudness_lufs": -14
+ },
+ "scenes": [
+  {
+   "id": "scene_001",
+   "arc": "hook_medias_res",
+   "duration_seconds": 8.4,
+   "narration": "¿Un ave con dientes de dinosaurio y garra en forma de hoz? Y además, no podía volar. Existió hace ciento cincuenta millones de años.",
+   "on_screen_text": "El ave que no volaba",
+   "visual_description": "Imagen real de referencia con tratamiento de linograbado bitono: John James Audubon, American Crow, The Birds of America lám. 156 (1827-38) (no representa a Yuezhuornis)",
+   "image_prompt": "linocut print, two-tone indigo and ochre ink on cream paper, bold carved lines, visible gouge marks, high contrast, vertical 9:16 composition, no text + a crow-sized feathered bird with a toothed beak and a sickle claw standing on the ground in a Jurassic forest",
+   "source_ids": [
+    "SRC-001",
+    "SRC-002"
+   ],
+   "asset_filename": "frames/scene_001.jpg",
+   "ambiente": "viento",
+   "sfx": [
+    "viento"
+   ],
+   "image_origen": {
+    "tipo": "wikimedia_commons",
+    "obra": "John James Audubon, American Crow, The Birds of America lám. 156 (1827-38)",
+    "url": "https://commons.wikimedia.org/wiki/File:156_American_Crow.jpg",
+    "licencia": "Public domain",
+    "modificada": "filtro linograbado bitono (scripts propios)"
+   }
+  },
+  {
+   "id": "scene_002",
+   "arc": "desarrollo",
+   "duration_seconds": 7.4,
+   "narration": "Se llama Yuezhuornis yangyuanensis. Su fósil salió de la fauna de Zhenghe, en la provincia de Fujian, al sureste de China.",
+   "on_screen_text": "Fujian, China",
+   "visual_description": "Imagen real de referencia con tratamiento de linograbado bitono: rheins, Desembocadura del río Longtan, Zhenghe, Fujian (foto 2015, panoramio) (no representa a Yuezhuornis)",
+   "image_prompt": "linocut print, two-tone indigo and ochre ink on cream paper, bold carved lines, visible gouge marks, high contrast, vertical 9:16 composition, no text + paleontologists brushing a small bird fossil in a rock slab on a green hillside in southeastern China",
+   "source_ids": [
+    "SRC-001",
+    "SRC-002"
+   ],
+   "asset_filename": "frames/scene_002.jpg",
+   "ambiente": "viento",
+   "sfx": [
+    "madera",
+    "viento"
+   ],
+   "capa": {
+    "tipo": "mapa",
+    "region": [
+     114,
+     123,
+     22,
+     30
+    ],
+    "titulo": "Fauna de Zhenghe",
+    "puntos": [
+     {
+      "nombre": "Zhenghe, Fujian",
+      "lon": 118.86,
+      "lat": 27.37
+     }
+    ],
+    "fuente": "Nature 2026; CAS"
+   },
+   "image_origen": {
+    "tipo": "wikimedia_commons",
+    "obra": "rheins, Desembocadura del río Longtan, Zhenghe, Fujian (foto 2015, panoramio)",
+    "url": "https://commons.wikimedia.org/wiki/File:%E9%BE%99%E6%BD%AD%E6%BA%AA%E5%8F%A3_-_Outlet_of_Longtan_River_-_2015.11_-_panoramio.jpg",
+    "licencia": "CC BY 3.0",
+    "modificada": "filtro linograbado bitono (scripts propios)"
+   }
+  },
+  {
+   "id": "scene_003",
+   "arc": "desarrollo",
+   "duration_seconds": 8.4,
+   "narration": "Vivió en el Jurásico tardío, hace entre ciento cincuenta y ciento cuarenta y ocho millones de años, y era del tamaño de un cuervo.",
+   "on_screen_text": "Tamaño: un cuervo",
+   "visual_description": "Imagen real de referencia con tratamiento de linograbado bitono: Richard Owen, London Archaeopteryx (1862), lámina IV (no representa a Yuezhuornis)",
+   "image_prompt": "linocut print, two-tone indigo and ochre ink on cream paper, bold carved lines, visible gouge marks, high contrast, vertical 9:16 composition, no text + the small toothed bird standing next to a modern crow silhouette for size comparison",
+   "source_ids": [
+    "SRC-002"
+   ],
+   "asset_filename": "frames/scene_003.jpg",
+   "ambiente": "viento",
+   "sfx": [
+    "viento"
+   ],
+   "capa": {
+    "tipo": "dato",
+    "valor": "150 M",
+    "etiqueta": "de años: Jurásico tardío",
+    "fuente": "Xu et al. 2026, Nature"
+   },
+   "image_origen": {
+    "tipo": "wikimedia_commons",
+    "obra": "Richard Owen, London Archaeopteryx (1862), lámina IV",
+    "url": "https://commons.wikimedia.org/wiki/File:R._Owen_London_Archaeopteryx_(1862)_-_Plate_IV.png",
+    "licencia": "Public domain",
+    "modificada": "filtro linograbado bitono (scripts propios)"
+   }
+  },
+  {
+   "id": "scene_004",
+   "arc": "desarrollo",
+   "duration_seconds": 7.0,
+   "narration": "Su mandíbula tenía dientes juntos y aserrados, como los de los deinonicosaurios: los dinosaurios cazadores más cercanos a las aves.",
+   "on_screen_text": "Dientes aserrados",
+   "visual_description": "Imagen real de referencia con tratamiento de linograbado bitono: Tim Evanson, Deinonychus tooth, Museum of the Rockies (2013) (no representa a Yuezhuornis)",
+   "image_prompt": "linocut print, two-tone indigo and ochre ink on cream paper, bold carved lines, visible gouge marks, high contrast, vertical 9:16 composition, no text + close-up of a small fossil skull with closely spaced serrated teeth",
+   "source_ids": [
+    "SRC-001",
+    "SRC-002"
+   ],
+   "asset_filename": "frames/scene_004.jpg",
+   "ambiente": "viento",
+   "sfx": [
+    "pluma"
+   ],
+   "image_origen": {
+    "tipo": "wikimedia_commons",
+    "obra": "Tim Evanson, Deinonychus tooth, Museum of the Rockies (2013)",
+    "url": "https://commons.wikimedia.org/wiki/File:Deinonychus_tooth_-_Carbon_County_Montana_-_Museum_of_the_Rockies_-_2013-07-08.jpg",
+    "licencia": "CC BY-SA 2.0",
+    "modificada": "filtro linograbado bitono (scripts propios)"
+   }
+  },
+  {
+   "id": "scene_005",
+   "arc": "desarrollo",
+   "duration_seconds": 9.8,
+   "narration": "Y en el segundo dedo del pie llevaba una garra curva, en forma de hoz, que se doblaba hacia atrás. Igual que los dromeosáuridos, la familia del velocirraptor.",
+   "on_screen_text": "Garra en hoz",
+   "visual_description": "Imagen real de referencia con tratamiento de linograbado bitono: Fowler et al. (2011) PLoS ONE, Deinonychus foot flexion (no representa a Yuezhuornis)",
+   "image_prompt": "linocut print, two-tone indigo and ochre ink on cream paper, bold carved lines, visible gouge marks, high contrast, vertical 9:16 composition, no text + a bird foot with a raised curved sickle-shaped claw on the second toe",
+   "source_ids": [
+    "SRC-002"
+   ],
+   "asset_filename": "frames/scene_005.jpg",
+   "ambiente": "viento",
+   "sfx": [
+    "madera"
+   ],
+   "image_origen": {
+    "tipo": "wikimedia_commons",
+    "obra": "Fowler et al. (2011) PLoS ONE, Deinonychus foot flexion",
+    "url": "https://commons.wikimedia.org/wiki/File:Deinonychus_foot_flexion.png",
+    "licencia": "CC BY 2.5",
+    "modificada": "filtro linograbado bitono (scripts propios)"
+   }
+  },
+  {
+   "id": "scene_006",
+   "arc": "desarrollo",
+   "duration_seconds": 11.9,
+   "narration": "Entonces, ¿era un dinosaurio? No. Dos análisis distintos de su árbol evolutivo lo ponen entre las aviales: el grupo de las aves y sus parientes extintos más cercanos, un paso más allá que Archaeopteryx.",
+   "on_screen_text": "Rama de las aves",
+   "visual_description": "Imagen real de referencia con tratamiento de linograbado bitono: Archaeopteryx, ejemplar de Berlín (réplica), foto de HTO (no representa a Yuezhuornis)",
+   "image_prompt": "linocut print, two-tone indigo and ochre ink on cream paper, bold carved lines, visible gouge marks, high contrast, vertical 9:16 composition, no text + an evolutionary tree carved in wood with small bird and dinosaur figures on its branches, one branch highlighted",
+   "source_ids": [
+    "SRC-001",
+    "SRC-002"
+   ],
+   "asset_filename": "frames/scene_006.jpg",
+   "ambiente": "viento",
+   "sfx": [
+    "pluma"
+   ],
+   "image_origen": {
+    "tipo": "wikimedia_commons",
+    "obra": "Archaeopteryx, ejemplar de Berlín (réplica), foto de HTO",
+    "url": "https://commons.wikimedia.org/wiki/File:Archaeopteryx,_Berlin_specimen,_replica.JPG",
+    "licencia": "Public domain",
+    "modificada": "filtro linograbado bitono (scripts propios)"
+   }
+  },
+  {
+   "id": "scene_007",
+   "arc": "desarrollo",
+   "duration_seconds": 10.2,
+   "narration": "Lo más extraño: sus brazos eran muy cortos, y sus patas tienen proporciones como las de las aves que hoy viven en el suelo. Todo indica que no volaba.",
+   "on_screen_text": "Brazos cortos, patas largas",
+   "visual_description": "Imagen real de referencia con tratamiento de linograbado bitono: John James Audubon, Wild Turkey, The Birds of America lám. 1 (no representa a Yuezhuornis)",
+   "image_prompt": "linocut print, two-tone indigo and ochre ink on cream paper, bold carved lines, visible gouge marks, high contrast, vertical 9:16 composition, no text + the toothed bird running on the forest floor with short arms folded and long legs",
+   "source_ids": [
+    "SRC-001",
+    "SRC-002"
+   ],
+   "asset_filename": "frames/scene_007.jpg",
+   "ambiente": "viento",
+   "sfx": [
+    "viento",
+    "madera"
+   ],
+   "image_origen": {
+    "tipo": "wikimedia_commons",
+    "obra": "John James Audubon, Wild Turkey, The Birds of America lám. 1",
+    "url": "https://commons.wikimedia.org/wiki/File:1_Wild_Turkey.jpg",
+    "licencia": "Public domain",
+    "modificada": "filtro linograbado bitono (scripts propios)"
+   }
+  },
+  {
+   "id": "scene_008",
+   "arc": "cierre_historia",
+   "duration_seconds": 8.4,
+   "narration": "Para el equipo de la Academia China de Ciencias, es el ejemplo más antiguo conocido de un linaje de aves que dejó de volar.",
+   "on_screen_text": "Sin vuelo desde el Jurásico",
+   "visual_description": "Imagen real de referencia con tratamiento de linograbado bitono: Ernst Haeckel, Pedigree of Man (1874) (no representa a Yuezhuornis)",
+   "image_prompt": "linocut print, two-tone indigo and ochre ink on cream paper, bold carved lines, visible gouge marks, high contrast, vertical 9:16 composition, no text + the bird standing on a rock watching other feathered creatures glide overhead in the sky",
+   "source_ids": [
+    "SRC-002"
+   ],
+   "asset_filename": "frames/scene_008.jpg",
+   "ambiente": "viento",
+   "sfx": [
+    "viento"
+   ],
+   "image_origen": {
+    "tipo": "wikimedia_commons",
+    "obra": "Ernst Haeckel, Pedigree of Man (1874)",
+    "url": "https://commons.wikimedia.org/wiki/File:Pedigree_of_man_(Haeckel_1874).jpg",
+    "licencia": "Public domain",
+    "modificada": "filtro linograbado bitono (scripts propios)"
+   }
+  },
+  {
+   "id": "scene_009",
+   "arc": "reflexion_o_pregunta",
+   "duration_seconds": 10.9,
+   "narration": "Creíamos que las primeras aves solo buscaban volar mejor. Pero algunas ya estaban bajando al suelo. ¿Y si la evolución nunca va en una sola dirección? Esto fue Datos y ociosidades.",
+   "on_screen_text": "¿Una sola dirección?",
+   "visual_description": "Imagen real de referencia con tratamiento de linograbado bitono: Charles Darwin, cuaderno B, árbol 'I think' (1837) (no representa a Yuezhuornis)",
+   "image_prompt": "linocut print, two-tone indigo and ochre ink on cream paper, bold carved lines, visible gouge marks, high contrast, vertical 9:16 composition, no text + a lone small feathered bird on the ground looking up at the sunset sky",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "asset_filename": "frames/scene_009.jpg",
+   "ambiente": "viento",
+   "sfx": [
+    "viento"
+   ],
+   "image_origen": {
+    "tipo": "wikimedia_commons",
+    "obra": "Charles Darwin, cuaderno B, árbol 'I think' (1837)",
+    "url": "https://commons.wikimedia.org/wiki/File:Darwin_Tree_1837.png",
+    "licencia": "Public domain",
+    "modificada": "filtro linograbado bitono (scripts propios)"
+   }
+  }
+ ],
+ "proveedor_imagenes": "imágenes reales de Wikimedia Commons (dominio público / CC BY / CC BY-SA) con filtro linograbado propio; ninguna representa a Yuezhuornis",
+ "parece_real": false,
+ "creditos_imagenes": [
+  {
+   "escena": "scene_001",
+   "obra": "John James Audubon, American Crow, The Birds of America lám. 156 (1827-38)",
+   "url": "https://commons.wikimedia.org/wiki/File:156_American_Crow.jpg",
+   "licencia": "Public domain",
+   "modificada": true
+  },
+  {
+   "escena": "scene_002",
+   "obra": "rheins, Desembocadura del río Longtan, Zhenghe, Fujian (foto 2015, panoramio)",
+   "url": "https://commons.wikimedia.org/wiki/File:%E9%BE%99%E6%BD%AD%E6%BA%AA%E5%8F%A3_-_Outlet_of_Longtan_River_-_2015.11_-_panoramio.jpg",
+   "licencia": "CC BY 3.0",
+   "modificada": true
+  },
+  {
+   "escena": "scene_003",
+   "obra": "Richard Owen, London Archaeopteryx (1862), lámina IV",
+   "url": "https://commons.wikimedia.org/wiki/File:R._Owen_London_Archaeopteryx_(1862)_-_Plate_IV.png",
+   "licencia": "Public domain",
+   "modificada": true
+  },
+  {
+   "escena": "scene_004",
+   "obra": "Tim Evanson, Deinonychus tooth, Museum of the Rockies (2013)",
+   "url": "https://commons.wikimedia.org/wiki/File:Deinonychus_tooth_-_Carbon_County_Montana_-_Museum_of_the_Rockies_-_2013-07-08.jpg",
+   "licencia": "CC BY-SA 2.0",
+   "modificada": true
+  },
+  {
+   "escena": "scene_005",
+   "obra": "Fowler et al. (2011) PLoS ONE, Deinonychus foot flexion",
+   "url": "https://commons.wikimedia.org/wiki/File:Deinonychus_foot_flexion.png",
+   "licencia": "CC BY 2.5",
+   "modificada": true
+  },
+  {
+   "escena": "scene_006",
+   "obra": "Archaeopteryx, ejemplar de Berlín (réplica), foto de HTO",
+   "url": "https://commons.wikimedia.org/wiki/File:Archaeopteryx,_Berlin_specimen,_replica.JPG",
+   "licencia": "Public domain",
+   "modificada": true
+  },
+  {
+   "escena": "scene_007",
+   "obra": "John James Audubon, Wild Turkey, The Birds of America lám. 1",
+   "url": "https://commons.wikimedia.org/wiki/File:1_Wild_Turkey.jpg",
+   "licencia": "Public domain",
+   "modificada": true
+  },
+  {
+   "escena": "scene_008",
+   "obra": "Ernst Haeckel, Pedigree of Man (1874)",
+   "url": "https://commons.wikimedia.org/wiki/File:Pedigree_of_man_(Haeckel_1874).jpg",
+   "licencia": "Public domain",
+   "modificada": true
+  },
+  {
+   "escena": "scene_009",
+   "obra": "Charles Darwin, cuaderno B, árbol 'I think' (1837)",
+   "url": "https://commons.wikimedia.org/wiki/File:Darwin_Tree_1837.png",
+   "licencia": "Public domain",
+   "modificada": true
+  }
+ ]
+}

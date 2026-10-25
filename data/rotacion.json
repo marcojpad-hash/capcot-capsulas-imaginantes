@@ -59,5 +59,25 @@
   "tema": "osedax",
   "estilo": "tatuaje_acuarela",
   "origen": "propia"
+ },
+ {
+  "fecha": "2026-10-25",
+  "project_id": "2026-10-25_sueno-electricidad-qom",
+  "estructura": "comparacion",
+  "cama": "marimba",
+  "duracion": 80,
+  "tema": "sueño electricidad toba qom",
+  "estilo": "van_gogh",
+  "origen": "propia"
+ },
+ {
+  "fecha": "2026-10-25",
+  "project_id": "2026-10-25_ave-jurasica-sin-vuelo",
+  "estructura": "pregunta",
+  "cama": "pulso",
+  "duracion": 90,
+  "tema": "Yuezhuornis ave jurasica sin vuelo",
+  "estilo": "linograbado",
+  "origen": "propia"
  }
 ]

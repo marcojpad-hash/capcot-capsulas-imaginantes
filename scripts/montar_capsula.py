@@ -189,17 +189,23 @@ def cama_sonora(aud, base, total, tmp, durs=None):
 # (zoom in, zoom out, paneo, punch-in) para que haya un cambio visual cada 2-3 s sin transiciones.
 MOVS = ["zin", "pan_d", "punch", "zout", "pan_i", "punch_b"]
 
-def texto_png(text, out_png, gancho=False):
+def texto_png(text, out_png, gancho=False, estilo=None):
+    # estilo (opcional, solo gancho): storyboard["titulo_estilo"] = {"font": ruta_ttf, "size": 92,
+    #   "caja_rgb": [r,g,b], "texto_rgb": [r,g,b], "subrayado_rgb": [r,g,b]} -> tipografía/subrayado por cápsula
+    e = (estilo or {}) if gancho else {}
+    fpath = e.get("font") if e.get("font") and os.path.exists(e.get("font")) else FONT
     img = Image.new("RGBA", (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(img)
-    f = ImageFont.truetype(FONT, 92 if gancho else 64); maxw = int(W * .78)
+    f = ImageFont.truetype(fpath, int(e.get("size", 92)) if gancho else 64); maxw = int(W * .78)
+    caja = tuple(e.get("caja_rgb", (240, 200, 120))) + (235,); tcol = tuple(e.get("texto_rgb", (20, 18, 16)))
+    sub = tuple(e.get("subrayado_rgb", (200, 40, 40))) + (245,)
     lines = wrap(d, text.upper() if gancho else text, f, maxw); lh = 108 if gancho else 78
     y = int(H * (.15 if gancho else .12))  # zona segura superior
     for ln in lines:
         x = int(W * .08); tw = d.textlength(ln, font=f); bx = (x - 18, y - 10, x + tw + 18, y + lh - 8)
-        d.rounded_rectangle(bx, 14, fill=(0, 0, 0, 170) if not gancho else (240, 200, 120, 235))
-        d.text((x, y), ln, font=f, fill=(20, 18, 16) if gancho else (255, 255, 255)); y += lh + 6
+        d.rounded_rectangle(bx, 14, fill=(0, 0, 0, 170) if not gancho else caja)
+        d.text((x, y), ln, font=f, fill=tcol if gancho else (255, 255, 255)); y += lh + 6
     if gancho and lines:  # título-gancho subrayado (trazo de acento bajo la última línea)
-        tw = d.textlength(lines[-1], font=f); x = int(W * .08); d.rounded_rectangle((x, y + 4, x + tw, y + 22), 8, fill=(200, 40, 40, 245))
+        tw = d.textlength(lines[-1], font=f); x = int(W * .08); d.rounded_rectangle((x, y + 4, x + tw, y + 22), 8, fill=sub)
     img.save(out_png)
 
 def _plano(png, seconds, out_mp4, mov, overlay=None, ov_hasta=None):
@@ -220,11 +226,11 @@ def _plano(png, seconds, out_mp4, mov, overlay=None, ov_hasta=None):
 
 def n_planos(seconds, plano_s=2.5): return max(1, round(seconds / plano_s))
 
-def escena_video(png, seconds, out_mp4, idx, texto="", plano_s=2.5, gancho=False, capa=None):
+def escena_video(png, seconds, out_mp4, idx, texto="", plano_s=2.5, gancho=False, capa=None, titulo_estilo=None):
     tmpd = tempfile.mkdtemp(prefix="pl_"); n = n_planos(seconds, plano_s); parts = []
     ov = None
     if texto:
-        ov = os.path.join(tmpd, "t.png"); texto_png(texto, ov, gancho)
+        ov = os.path.join(tmpd, "t.png"); texto_png(texto, ov, gancho, titulo_estilo)
     for k in range(n):
         d = seconds / n; mp = os.path.join(tmpd, f"{k}.mp4")
         # el texto en pantalla vive en el primer plano de la escena (en el gancho, los 2 primeros)
@@ -261,7 +267,8 @@ def main():
         mp4 = os.path.join(tmp, f"{sc['id']}.mp4")
         titulo = sb.get("titulo") or sb["scenes"][0].get("on_screen_text", "")
         escena_video(os.path.join(base, sc["asset_filename"]), sdur, mp4, i, titulo if i == 0 else sc.get("on_screen_text", ""),
-                     float(sb.get("export", {}).get("plano_seconds", 2.5)), gancho=(i == 0), capa=sc.get("capa")); clips.append(mp4)
+                     float(sb.get("export", {}).get("plano_seconds", 2.5)), gancho=(i == 0), capa=sc.get("capa"),
+                     titulo_estilo=sb.get("titulo_estilo")); clips.append(mp4)
         ps = float(sb.get("export", {}).get("plano_seconds", 2.5)); n = n_planos(sdur, ps)
         sfx = sc.get("sfx") or [sc.get("ambiente") or "olas"]  # lista por plano; el último se repite
         durs += [(sfx[min(k, len(sfx) - 1)], sdur / n) for k in range(n)]

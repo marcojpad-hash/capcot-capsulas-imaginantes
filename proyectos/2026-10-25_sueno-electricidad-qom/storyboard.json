@@ -1,0 +1,397 @@
+{
+ "project_id": "2026-10-25_sueno-electricidad-qom",
+ "serie": "Datos y ociosidades",
+ "title": "Llegó la luz eléctrica y el sueño se acortó: 12 años midiendo a los qom",
+ "titulo": "Les llegó la luz",
+ "titulo_estilo": {
+  "font": "/usr/share/fonts/truetype/sand-box/google/Playfair Display SC/PlayfairDisplaySC-BlackItalic.ttf",
+  "size": 96,
+  "caja_rgb": [
+   22,
+   34,
+   78
+  ],
+  "texto_rgb": [
+   250,
+   214,
+   92
+  ],
+  "subrayado_rgb": [
+   250,
+   190,
+   40
+  ]
+ },
+ "language": "es-MX",
+ "aspect_ratio": "9:16",
+ "target_duration_seconds": 80,
+ "estructura": "comparacion",
+ "estilo_id": "van_gogh",
+ "estilo_visual": "Noche estrellada (Van Gogh)",
+ "trend_source": {
+  "tipo": "noticia_cientifica",
+  "medio": "Nature (research highlight) / Current Biology",
+  "url": "https://www.nature.com/articles/d41586-026-03318-2",
+  "estudio_doi": "10.1016/j.cub.2026.09.058",
+  "fecha_publicacion": "2026-10-15",
+  "termino": "sueño electricidad toba qom",
+  "fecha_consulta": "2026-10-25"
+ },
+ "resumen": "Un estudio longitudinal (2012–2024) con 156 personas toba/qom del norte de Argentina registró más de 12,000 episodios de sueño: ambos grupos retrasaron el sueño casi 1 h y los rurales, que recibieron electricidad después de 2016, perdieron 35 min de sueño en una década (Current Biology, 2026).",
+ "voice": {
+  "engine": "edge-tts",
+  "voice_id": "es-MX-JorgeNeural",
+  "rate": "+7%",
+  "pitch": "-2Hz",
+  "pad_seconds": 0.3,
+  "modo_pausas": "continuo"
+ },
+ "sources": [
+  {
+   "id": "SRC-001",
+   "cita_corta": "Casiraghi, L.P., Spiousas, I., Trebucq, L.L. et al. (2026). Longitudinal study of Toba/Qom communities reveals delay and shortening of sleep in real time. Current Biology.",
+   "doi": "10.1016/j.cub.2026.09.058",
+   "url": "https://doi.org/10.1016/j.cub.2026.09.058",
+   "accessed": "2026-10-25",
+   "supports": [
+    "2012–2024, comunidades toba/qom del norte de Argentina",
+    "rurales con electricidad después de 2016; semiurbanas con acceso previo",
+    "más de 12,000 episodios de sueño con actígrafos, 156 participantes",
+    "ambos grupos retrasaron ~1 h el horario de sueño",
+    "rurales perdieron 35 min de sueño en una década",
+    "electricidad e internet/smartphones no explican por sí solos el retraso; modernización y aculturación",
+    "paralelo contemporáneo de la industrialización"
+   ],
+   "ref_display": "Current Biology · doi:10.1016/j.cub.2026.09.058"
+  },
+  {
+   "id": "SRC-002",
+   "cita_corta": "Nature (2026). Sleep declines in rural communities after electricity arrives. Research highlight, 23 oct 2026.",
+   "url": "https://www.nature.com/articles/d41586-026-03318-2",
+   "accessed": "2026-10-25",
+   "supports": [
+    "cobertura de prensa del estudio"
+   ],
+   "ref_display": "Nature · Research highlight"
+  },
+  {
+   "id": "SRC-003",
+   "cita_corta": "de la Iglesia, H.O. et al. (2015). Access to electric light is associated with shorter sleep duration in a traditionally hunter-gatherer community. Journal of Biological Rhythms 30(4).",
+   "doi": "10.1177/0748730415590702",
+   "url": "https://doi.org/10.1177/0748730415590702",
+   "accessed": "2026-10-25",
+   "supports": [
+    "toba/qom del Chaco argentino, históricamente cazadores-recolectores",
+    "en invierno, sin electricidad durmieron ~56 min más"
+   ],
+   "ref_display": "J. Biol. Rhythms · doi:10.1177/0748730415590702"
+  }
+ ],
+ "cortinilla_fuentes": {
+  "duration_seconds": 6,
+  "titulo": "Fuentes",
+  "aviso": "Escenas 1-5: imágenes generadas con IA. Escenas 6-9: pinturas de Van Gogh (1888, dominio público). Voz sintética (edge-tts). Música y ambiente sintetizados / CC0.",
+  "bg_rgb": [
+   10,
+   16,
+   40
+  ],
+  "firma": "Datos y ociosidades · @datosyociosidades"
+ },
+ "audio": {
+  "music_asset": "sintetico:marimba",
+  "cama_musical": "marimba",
+  "music_lufs": -27,
+  "ambiente_lufs": -28,
+  "music_license": "Sintetizado por scripts/cama_sonora.py (obra propia)",
+  "sfx_license": "Wikimedia Commons CC0/PD, ver assets/sfx/LICENCIAS.json"
+ },
+ "export": {
+  "filename": "capsula.mp4",
+  "resolution": "1080x1920",
+  "fps": 30,
+  "subtitle_max_words": 3,
+  "plano_seconds": 2.5,
+  "loudness_lufs": -14
+ },
+ "scenes": [
+  {
+   "id": "scene_001",
+   "arc": "hook_medias_res",
+   "duration_seconds": 7.7,
+   "narration": "En solo diez años, todo un pueblo empezó a dormir más tarde. Casi una hora. Y la ciencia lo midió mientras pasaba.",
+   "on_screen_text": "Les llegó la luz",
+   "visual_description": "a small indigenous village at night under a swirling starry sky, one house suddenly glowing with a yellow electric bulb",
+   "image_prompt": "post-impressionist painting in the style of Van Gogh's Starry Night, swirling brushstrokes, deep blues and glowing yellows, vertical 9:16, no text + a small indigenous village at night under a swirling starry sky, one house suddenly glowing with a yellow electric bulb",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "asset_filename": "frames/scene_001.jpg",
+   "ambiente": "viento",
+   "sfx": [
+    "viento"
+   ],
+   "image_origen": {
+    "tipo": "ia",
+    "proveedor": "Canva generate-image"
+   }
+  },
+  {
+   "id": "scene_002",
+   "arc": "desarrollo",
+   "duration_seconds": 7.0,
+   "narration": "Son comunidades toba, o qom, del Chaco, en el norte de Argentina. Un pueblo con historia de cazadores y recolectores.",
+   "on_screen_text": "Toba/Qom, Chaco",
+   "visual_description": "families of the Qom people sitting by a small fire outside simple homes in the dry Chaco forest at dusk",
+   "image_prompt": "post-impressionist painting in the style of Van Gogh's Starry Night, swirling brushstrokes, deep blues and glowing yellows, vertical 9:16, no text + families of the Qom people sitting by a small fire outside simple homes in the dry Chaco forest at dusk",
+   "source_ids": [
+    "SRC-003",
+    "SRC-001"
+   ],
+   "asset_filename": "frames/scene_002.jpg",
+   "ambiente": "viento",
+   "sfx": [
+    "viento",
+    "madera"
+   ],
+   "capa": {
+    "tipo": "mapa",
+    "region": [
+     -66,
+     -56,
+     -29,
+     -21
+    ],
+    "titulo": "Chaco argentino",
+    "puntos": [
+     {
+      "nombre": "Región del estudio",
+      "lon": -60.5,
+      "lat": -24.5
+     }
+    ],
+    "fuente": "Curr. Biol. 2026; J. Biol. Rhythms 2015"
+   },
+   "image_origen": {
+    "tipo": "ia",
+    "proveedor": "Canva generate-image"
+   }
+  },
+  {
+   "id": "scene_003",
+   "arc": "desarrollo",
+   "duration_seconds": 9.5,
+   "narration": "Ya en 2015, un estudio en estas comunidades había visto algo: en invierno, quienes vivían sin electricidad dormían casi una hora más que sus vecinos con luz.",
+   "on_screen_text": "2015: sin luz, más sueño",
+   "visual_description": "two neighboring huts at night, one completely dark under the stars with a person sleeping, the other lit by a bulb with a person awake",
+   "image_prompt": "post-impressionist painting in the style of Van Gogh's Starry Night, swirling brushstrokes, deep blues and glowing yellows, vertical 9:16, no text + two neighboring huts at night, one completely dark under the stars with a person sleeping, the other lit by a bulb with a person awake",
+   "source_ids": [
+    "SRC-003"
+   ],
+   "asset_filename": "frames/scene_003.jpg",
+   "ambiente": "viento",
+   "sfx": [
+    "reloj"
+   ],
+   "image_origen": {
+    "tipo": "ia",
+    "proveedor": "Canva generate-image"
+   }
+  },
+  {
+   "id": "scene_004",
+   "arc": "desarrollo",
+   "duration_seconds": 8.8,
+   "narration": "Pero eso era una foto. Faltaba la película. Así que, de dos mil doce a dos mil veinticuatro, les pusieron en la muñeca unos sensores que registran cuándo duermen.",
+   "on_screen_text": "2012 a 2024",
+   "visual_description": "close-up of a wrist wearing a small actigraph sensor watch, resting on a blanket under swirling night sky light",
+   "image_prompt": "post-impressionist painting in the style of Van Gogh's Starry Night, swirling brushstrokes, deep blues and glowing yellows, vertical 9:16, no text + close-up of a wrist wearing a small actigraph sensor watch, resting on a blanket under swirling night sky light",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "asset_filename": "frames/scene_004.jpg",
+   "ambiente": "viento",
+   "sfx": [
+    "reloj"
+   ],
+   "image_origen": {
+    "tipo": "ia",
+    "proveedor": "Canva generate-image"
+   }
+  },
+  {
+   "id": "scene_005",
+   "arc": "desarrollo",
+   "duration_seconds": 4.6,
+   "narration": "Ciento cincuenta y seis personas. Más de doce mil episodios de sueño registrados.",
+   "on_screen_text": "+12,000 noches medidas",
+   "visual_description": "many small sleeping figures arranged like stars in a swirling night sky",
+   "image_prompt": "post-impressionist painting in the style of Van Gogh's Starry Night, swirling brushstrokes, deep blues and glowing yellows, vertical 9:16, no text + many small sleeping figures arranged like stars in a swirling night sky",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "asset_filename": "frames/scene_005.jpg",
+   "ambiente": "viento",
+   "sfx": [
+    "pluma"
+   ],
+   "capa": {
+    "tipo": "dato",
+    "valor": "12,000+",
+    "etiqueta": "episodios de sueño de 156 personas",
+    "fuente": "Casiraghi et al. 2026, Current Biology"
+   },
+   "image_origen": {
+    "tipo": "ia",
+    "proveedor": "Canva generate-image"
+   }
+  },
+  {
+   "id": "scene_006",
+   "arc": "desarrollo",
+   "duration_seconds": 7.7,
+   "narration": "De un lado, grupos semiurbanos que ya tenían electricidad. Del otro, grupos rurales a los que la luz llegó después de 2016.",
+   "on_screen_text": "Semiurbano vs rural",
+   "visual_description": "Obra real de dominio público: Vincent van Gogh, Terraza de café por la noche (1888), Kröller-Müller Museum",
+   "image_prompt": "post-impressionist painting in the style of Van Gogh's Starry Night, swirling brushstrokes, deep blues and glowing yellows, vertical 9:16, no text + split scene: on the left a semi-urban street with glowing streetlights, on the right a rural village receiving its first power line poles",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "asset_filename": "frames/scene_006.jpg",
+   "ambiente": "viento",
+   "sfx": [
+    "viento",
+    "madera"
+   ],
+   "image_origen": {
+    "tipo": "dominio_publico",
+    "obra": "Vincent van Gogh, Terraza de café por la noche (1888), Kröller-Müller Museum",
+    "url": "https://commons.wikimedia.org/wiki/File:Van_Gogh_-_Terrasse_des_Caf%C3%A9s_an_der_Place_du_Forum_in_Arles_am_Abend1.jpeg",
+    "licencia": "Public domain (PD-Art)"
+   }
+  },
+  {
+   "id": "scene_007",
+   "arc": "desarrollo",
+   "duration_seconds": 10.5,
+   "narration": "El resultado: los dos grupos retrasaron su hora de dormir casi una hora. Y en las comunidades rurales, la gente perdió treinta y cinco minutos de sueño en una década.",
+   "on_screen_text": "-35 minutos de sueño",
+   "visual_description": "Obra real de dominio público: Vincent van Gogh, El café de noche (1888), Yale University Art Gallery",
+   "image_prompt": "post-impressionist painting in the style of Van Gogh's Starry Night, swirling brushstrokes, deep blues and glowing yellows, vertical 9:16, no text + a large old clock face melting into a swirling night sky above a rural house with a lit window",
+   "source_ids": [
+    "SRC-001",
+    "SRC-002"
+   ],
+   "asset_filename": "frames/scene_007.jpg",
+   "ambiente": "viento",
+   "sfx": [
+    "reloj"
+   ],
+   "capa": {
+    "tipo": "dato",
+    "valor": "35 min",
+    "etiqueta": "de sueño perdidos en zonas rurales en 10 años",
+    "fuente": "Casiraghi et al. 2026, Current Biology"
+   },
+   "image_origen": {
+    "tipo": "dominio_publico",
+    "obra": "Vincent van Gogh, El café de noche (1888), Yale University Art Gallery",
+    "url": "https://commons.wikimedia.org/wiki/File:Van_Gogh_-_The_Night_Caf%C3%A9_(1888).jpg",
+    "licencia": "Public domain (PD-Art)"
+   }
+  },
+  {
+   "id": "scene_008",
+   "arc": "cierre_historia",
+   "duration_seconds": 10.5,
+   "narration": "Ojo: según los autores, la luz eléctrica, internet y los celulares no explican por sí solos todo el retraso. Apuntan a cambios más amplios: la modernización de la vida diaria.",
+   "on_screen_text": "No es solo la luz",
+   "visual_description": "Obra real de dominio público: Vincent van Gogh, Noche estrellada sobre el Ródano (1888), Musée d'Orsay",
+   "image_prompt": "post-impressionist painting in the style of Van Gogh's Starry Night, swirling brushstrokes, deep blues and glowing yellows, vertical 9:16, no text + a young person in a village at night looking at a glowing phone screen, with power lines and swirling stars above",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "asset_filename": "frames/scene_008.jpg",
+   "ambiente": "viento",
+   "sfx": [
+    "viento"
+   ],
+   "image_origen": {
+    "tipo": "dominio_publico",
+    "obra": "Vincent van Gogh, Noche estrellada sobre el Ródano (1888), Musée d'Orsay",
+    "url": "https://commons.wikimedia.org/wiki/File:Starry_Night_Over_the_Rhone.jpg",
+    "licencia": "Public domain (PD-Art)"
+   }
+  },
+  {
+   "id": "scene_009",
+   "arc": "reflexion_o_pregunta",
+   "duration_seconds": 9.8,
+   "narration": "Es como ver en vivo lo que la industrialización pudo hacerle al sueño humano. ¿Y tú, a qué hora apagaste la luz anoche? Esto fue Datos y ociosidades.",
+   "on_screen_text": "¿A qué hora apagaste la luz?",
+   "visual_description": "Obra real de dominio público: Vincent van Gogh, El dormitorio (1888), Van Gogh Museum",
+   "image_prompt": "post-impressionist painting in the style of Van Gogh's Starry Night, swirling brushstrokes, deep blues and glowing yellows, vertical 9:16, no text + a single bedroom window with a lamp switching off, under a huge swirling starry night sky",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "asset_filename": "frames/scene_009.jpg",
+   "ambiente": "viento",
+   "sfx": [
+    "viento"
+   ],
+   "image_origen": {
+    "tipo": "dominio_publico",
+    "obra": "Vincent van Gogh, El dormitorio (1888), Van Gogh Museum",
+    "url": "https://commons.wikimedia.org/wiki/File:Vincent_van_Gogh_-_De_slaapkamer_-_Google_Art_Project.jpg",
+    "licencia": "Public domain (PD-Art)"
+   }
+  }
+ ],
+ "proveedor_imagenes": "escenas 1-5 generadas con IA (Canva); escenas 6-9 pinturas de Van Gogh en dominio público (Wikimedia Commons)",
+ "creditos_imagenes": [
+  {
+   "escena": "scene_001",
+   "origen": "Canva generate-image (IA)"
+  },
+  {
+   "escena": "scene_002",
+   "origen": "Canva generate-image (IA)"
+  },
+  {
+   "escena": "scene_003",
+   "origen": "Canva generate-image (IA)"
+  },
+  {
+   "escena": "scene_004",
+   "origen": "Canva generate-image (IA)"
+  },
+  {
+   "escena": "scene_005",
+   "origen": "Canva generate-image (IA)"
+  },
+  {
+   "escena": "scene_006",
+   "obra": "Vincent van Gogh, Terraza de café por la noche (1888), Kröller-Müller Museum",
+   "url": "https://commons.wikimedia.org/wiki/File:Van_Gogh_-_Terrasse_des_Caf%C3%A9s_an_der_Place_du_Forum_in_Arles_am_Abend1.jpeg",
+   "licencia": "Public domain"
+  },
+  {
+   "escena": "scene_007",
+   "obra": "Vincent van Gogh, El café de noche (1888), Yale University Art Gallery",
+   "url": "https://commons.wikimedia.org/wiki/File:Van_Gogh_-_The_Night_Caf%C3%A9_(1888).jpg",
+   "licencia": "Public domain"
+  },
+  {
+   "escena": "scene_008",
+   "obra": "Vincent van Gogh, Noche estrellada sobre el Ródano (1888), Musée d'Orsay",
+   "url": "https://commons.wikimedia.org/wiki/File:Starry_Night_Over_the_Rhone.jpg",
+   "licencia": "Public domain"
+  },
+  {
+   "escena": "scene_009",
+   "obra": "Vincent van Gogh, El dormitorio (1888), Van Gogh Museum",
+   "url": "https://commons.wikimedia.org/wiki/File:Vincent_van_Gogh_-_De_slaapkamer_-_Google_Art_Project.jpg",
+   "licencia": "Public domain"
+  }
+ ]
+}
