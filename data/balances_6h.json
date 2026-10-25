@@ -1,0 +1,86 @@
+[
+ {
+  "hora_cdmx": "2026-10-25T08:04-06:00",
+  "base_youtube": "2026-10-25T00:11 (no hubo snapshot ~02:00)",
+  "base_tiktok": "2026-10-24T22:02 (último dato TT)",
+  "youtube_totales": {
+   "view": 4237,
+   "like": 175,
+   "comment": 4
+  },
+  "suscriptores": 13,
+  "delta_youtube": {
+   "view": 540,
+   "like": 8,
+   "suscriptores": 2
+  },
+  "tiktok_totales": {
+   "view": 1569,
+   "like": 85,
+   "comment": 0
+  },
+  "delta_tiktok": {
+   "view": 273,
+   "like": 8
+  },
+  "ranking_crecimiento": [
+   [
+    "YT La bacteria que come plástico… sin magia",
+    297
+   ],
+   [
+    "YT El mar que llegó en Navidad: El Niño #Sh",
+    102
+   ],
+   [
+    "TT abejas_bullying",
+    96
+   ],
+   [
+    "TT osedax_huesos",
+    78
+   ],
+   [
+    "YT Gusanos sin boca que se comen los huesos",
+    75
+   ],
+   [
+    "TT el_nino_hashtags_IA",
+    65
+   ],
+   [
+    "YT Las abejas de miel también hacen bullyin",
+    35
+   ],
+   [
+    "YT Serpientes que ruedan: el mito era real ",
+    31
+   ],
+   [
+    "TT serpientes",
+    29
+   ],
+   [
+    "TT aves_mujeres",
+    3
+   ],
+   [
+    "TT ideonella",
+    2
+   ],
+   [
+    "YT Un ave de hace 150 millones de años con ",
+    0
+   ],
+   [
+    "YT Llegó la luz eléctrica y el sueño se aco",
+    0
+   ],
+   [
+    "YT ¿Aves que temen a mujeres?",
+    0
+   ]
+  ],
+  "nota_flujo": "Madrugada lenta pero viva: Ideonella YT y El Niño YT lideran; Abejas, Osedax y El Niño crecen en TT; Aves TT e Ideonella TT se estancaron; Aves YT (O7TdKvuBjyg) sigue en 2 vistas."
+ }
+]
