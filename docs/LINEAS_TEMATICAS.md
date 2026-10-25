@@ -27,3 +27,6 @@ Actualizado 2026-10-25 (Mj). Una marca, varias líneas; los datos deciden qué s
 
 ## Cupo sugerido (arranque)
 Hasta ~3/día distintos de línea; luego 2/día fijos cuando haya 1–2 plantillas ganadoras.
+
+## Ampliación temática (Mj 2026-10-25)
+Difusión científica/cultural amplia: no saturar solo biología/bacterias. Incluir antropología, paleontología/paleolítico, clima-geo/atmosférico, tech/IA (p. ej. modelos bayesianos / cómo piensa un LLM), actualidad y fusiones culturales. Elegir estilo visual por **sublínea**, no por «ciencia» genérica.
