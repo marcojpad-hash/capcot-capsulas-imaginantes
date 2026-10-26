@@ -27,24 +27,13 @@
     {
       "hora": "19:00",
       "id": "2026-10-26_papel-picado-dia-muertos_parte2",
-      "titulo": "Día de Muertos · Parte 2: la ofrenda",
-      "serie": "ddm-2026",
-      "parte": 2,
-      "estilo": "claymation (variante papel maché/cartonería)",
-      "plataformas": [
-        "youtube",
-        "tiktok"
-      ],
-      "nota": "Cableada a P1. Guion OK; producir después."
-    },
-    {
-      "hora": "19:00",
-      "id": "2026-10-26_papel-picado-dia-muertos_parte2",
       "titulo": "Si falta UNO, tu muerto se pierde (Parte 2)",
       "plataformas": [
         "youtube",
         "tiktok"
-      ]
+      ],
+      "serie": "ddm-2026",
+      "parte": 2
     },
     {
       "hora": "21:00",
@@ -59,5 +48,5 @@
     }
   ],
   "actualizado_cdmx": "2026-10-25T20:58-06:00",
-  "nota": "Corrección MJ pt144u: P2 SÍ es 26-oct 19:00. 27-oct = Parte 3 de la misma serie."
+  "nota": "P1 14:30 papel picado; Catrina 17:00; P2 19:00 ofrenda; ave 21:00. P3 el 27."
 }
