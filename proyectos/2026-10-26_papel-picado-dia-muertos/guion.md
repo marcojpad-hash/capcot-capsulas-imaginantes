@@ -1,7 +1,7 @@
 # Papel picado, parte 1: nació en una tienda de raya
 
 - **Título YT:** El papel picado nació de una DEUDA 😳 (Parte 1) #Shorts
-- **Caption TT:** Ese papel que adorna tu ofrenda viene de las tiendas de raya del Porfiriato… y de un pueblo donde 3 de cada 4 personas lo fabrican. Parte 1/2 🟣🟠 #PapelPicado #DíaDeMuertos #Puebla #DatosYOciosidades
+- **Caption TT:** Ese papel que adorna tu ofrenda viene de las tiendas de raya del Porfiriato… y de un pueblo donde 3 de cada 4 personas lo fabrican. Parte 1/2: el viento. En la parte 2, los otros tres 🟣🟠 #PapelPicado #DíaDeMuertos #Puebla #DatosYOciosidades
 - **Duración estimada:** ~72 s
 - **Estilo propuesto:** `papel_picado_cincel` (ver storyboard.json → estilo_propuesto)
 - **Publicación sugerida:** 2026-10-26 21:00 (CDMX) YT+TT
@@ -24,8 +24,8 @@ No se corta con tijeras: se *pica*. Se apilan unos 50 pliegos, se pone una plant
 **[52–65 s] EL DATO**
 Hoy, cerca de tres de cada cuatro habitantes de Huixcolotla viven de esto, y desde 1998 es Patrimonio Cultural de Puebla.
 
-**[65–72 s] CIERRE**
-¿Y por qué cuelga en la ofrenda? Porque representa al viento. Eso, y otra tradición que inventó… James Bond, en la parte 2.
+**[65–72 s] CIERRE (cliffhanger → Parte 2)**
+¿Y por qué cuelga en tu ofrenda? Porque es el *viento*. Pero el viento es solo uno de cuatro elementos… y según la tradición, si falta uno, tu muerto no encuentra el camino. Los otros tres, en la parte 2.
 
 ## Fuentes
 - [La Jornada de Oriente (2011) – papel picado Huixcolotla](https://www.lajornadadeoriente.com.mx/2011/12/26/puebla/cul116.php) — tiendas de raya s. XIX; etimología; decreto 22-sep-1998
@@ -34,3 +34,6 @@ Hoy, cerca de tres de cada cuatro habitantes de Huixcolotla viven de esto, y des
 
 ## Notas de verificación
 Fecha del decreto: fuentes difieren (22 vs 30 sep 1998) → guion solo dice 1998. 'Papel picado = viento/aire' es lectura tradicional de los 4 elementos de la ofrenda (divulgación, no fuente académica: decir 'representa al viento' como tradición).
+
+- [Smithsonian – 5 Facts About Día de los Muertos](https://www.si.edu/stories/5-facts-about-dia-de-los-muertos-day-dead) — papel picado = viento (4 elementos)
+- [INAH – Ofrendas para los muertos](https://www.inah.gob.mx/foto-del-dia/ofrendas-para-los-muertos) — papel picado representa el viento

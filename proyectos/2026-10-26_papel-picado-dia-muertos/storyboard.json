@@ -24,7 +24,7 @@
  "estado": "borrador_guion — NO renderizar (esperando créditos Canva IA)",
  "publicacion_sugerida": "2026-10-26 21:00 (CDMX) YT+TT",
  "titulo_yt": "El papel picado nació de una DEUDA 😳 (Parte 1) #Shorts",
- "caption_tt": "Ese papel que adorna tu ofrenda viene de las tiendas de raya del Porfiriato… y de un pueblo donde 3 de cada 4 personas lo fabrican. Parte 1/2 🟣🟠 #PapelPicado #DíaDeMuertos #Puebla #DatosYOciosidades",
+ "caption_tt": "Ese papel que adorna tu ofrenda viene de las tiendas de raya del Porfiriato… y de un pueblo donde 3 de cada 4 personas lo fabrican. Parte 1/2: el viento. En la parte 2, los otros tres 🟣🟠 #PapelPicado #DíaDeMuertos #Puebla #DatosYOciosidades",
  "sources": [
   {
    "id": "SRC-001",
@@ -52,6 +52,24 @@
    "supports": [
     "decreto 1998"
    ]
+  },
+  {
+   "id": "SRC-S1",
+   "cita_corta": "Smithsonian – 5 Facts About Día de los Muertos",
+   "url": "https://www.si.edu/stories/5-facts-about-dia-de-los-muertos-day-dead",
+   "accessed": "2026-10-25",
+   "supports": [
+    "papel picado = viento; 4 elementos"
+   ]
+  },
+  {
+   "id": "SRC-S2",
+   "cita_corta": "INAH – Ofrendas para los muertos",
+   "url": "https://www.inah.gob.mx/foto-del-dia/ofrendas-para-los-muertos",
+   "accessed": "2026-10-25",
+   "supports": [
+    "papel picado representa el viento"
+   ]
   }
  ],
  "escenas": [
@@ -77,7 +95,8 @@
   },
   {
    "t": "65-72",
-   "prompt_frame": "Ofrenda: papel picado moviéndose con el aire; teaser silueta 007 de esqueleto. Estilo: handmade Mexican papel picado tissue paper banners, cut-out silhouettes of calaveras and marigolds, backlit by warm candle light, translucent magenta orange purple green paper, visible chisel cuts, fluttering in wind, shallow depth of field, stop-motion feel, vertical 9:16, no text"
+   "prompt_frame": "Ofrenda de noche: papel picado moviéndose con el aire; cámara baja hacia una vela, un vaso de agua y un camino de pétalos de cempasúchil que se pierde en la oscuridad (teaser parte 2). Estilo: handmade Mexican papel picado tissue paper banners, cut-out silhouettes of calaveras and marigolds, backlit by warm candle light, translucent magenta orange purple green paper, visible chisel cuts, fluttering in wind, shallow depth of field, stop-motion feel, vertical 9:16, no text"
   }
- ]
+ ],
+ "cierre_hook": "Viento = 1 de 4 elementos; si falta uno, el muerto no encuentra el camino → Parte 2"
 }
