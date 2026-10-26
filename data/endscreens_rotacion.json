@@ -1,7 +1,7 @@
 {
   "fecha": "2026-10-25",
   "tipo": "endscreens_rotacion",
-  "actualizado_cdmx": "2026-10-25T20:10-06:00",
+  "actualizado_cdmx": "2026-10-25T20:12-06:00",
   "motivo": "Override Mj: Abejas (3bhnt) → sueño (AJR); Qe2→gIj sigue fijo. Imaginantes aplica Abejas en Studio.",
   "vistas_ref": {
     "r1AhsPOAS_o": 1349,
@@ -28,7 +28,7 @@
   "aplicado_studio": {
     "r1AhsPOAS_o": "aplicado",
     "ZrUtKs7Ty7U": "aplicado",
-    "3bhntOcKHPk": "pendiente_abejas_sueno",
+    "3bhntOcKHPk": "aplicado_abejas_sueno",
     "Qe2Y9xDn9QQ": "aplicado_override_mj",
     "5D96DmjvioU": "aplicado",
     "O7TdKvuBjyg": "aplicado",
