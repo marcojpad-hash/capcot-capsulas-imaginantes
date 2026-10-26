@@ -2206,5 +2206,64 @@
       "likes_perfil": 209
     },
     "nota": "Balance 6h 08:00. YT Data API uploads (solo públicos; bYGd/PBDM programados privados). TT leído en TikTok Studio ~08:07 (tardígrado 0 vistas; ave jurásica programado 20:00)."
+  },
+  {
+    "timestamp_cdmx": "2026-10-26T08:54-06:00",
+    "youtube": {
+      "gIjJ0YKYQ8M": {
+        "view": 4,
+        "like": 0,
+        "comment": 0
+      },
+      "AJR6kcnnDig": {
+        "view": 88,
+        "like": 6,
+        "comment": 0
+      },
+      "Qe2Y9xDn9QQ": {
+        "view": 847,
+        "like": 30,
+        "comment": 0
+      },
+      "3bhntOcKHPk": {
+        "view": 1390,
+        "like": 35,
+        "comment": 0
+      },
+      "O7TdKvuBjyg": {
+        "view": 11,
+        "like": 1,
+        "comment": 0
+      },
+      "r1AhsPOAS_o": {
+        "view": 1365,
+        "like": 72,
+        "comment": 4
+      },
+      "ZrUtKs7Ty7U": {
+        "view": 1287,
+        "like": 47,
+        "comment": 0
+      },
+      "5D96DmjvioU": {
+        "view": 604,
+        "like": 27,
+        "comment": 0
+      }
+    },
+    "youtube_totales": {
+      "view": 5596,
+      "like": 218,
+      "comment": 4
+    },
+    "suscriptores": 15,
+    "delta_vs_anterior": {
+      "view": -3,
+      "like": -1,
+      "comment": 0,
+      "suscriptores": 0
+    },
+    "tiktok": null,
+    "nota": "Registro horario 09:00 (corrida ~08:54). YT Data API uploads + IDs conocidos. No públicos (excluidos): {'bYGd7QuenSk': 'private', 'PBDMJxOkCRk': 'private'}. TikTok null: corrida sin navegador (no se abrió TikTok Studio). Delta vs fila 2026-10-26T08:07-06:00."
   }
 ]
