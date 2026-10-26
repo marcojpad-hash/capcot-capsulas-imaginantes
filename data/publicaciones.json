@@ -167,8 +167,10 @@
     "estilo": "linograbado",
     "reemplaza": "IzWU_1BXq3Q",
     "nota": "Remake frames legibles 25-oct; viejo ID privado | Reprogramado a mañana 20:00 CDMX (pico)",
-    "tiktok_schedule_local": "2026-10-26 20:00 CDMX",
-    "tiktok_nota": "Programado Studio 25-oct por Imaginantes; AI label on; Everyone; mirror YT"
+    "tiktok_schedule_local": "2026-10-26 21:00 CDMX",
+    "tiktok_nota": "Programado Studio 25-oct por Imaginantes; AI label on; Everyone; mirror YT",
+    "yt_schedule_local": "2026-10-26 21:00 CDMX",
+    "yt_nota_horario": "Mj movió de 20:00 a 21:00 (25-oct)"
   },
   {
     "fecha": "2026-10-25",

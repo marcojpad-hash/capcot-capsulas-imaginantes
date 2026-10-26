@@ -1,0 +1,46 @@
+{
+  "fecha": "2026-10-26",
+  "tz": "America/Mexico_City",
+  "pedido_mj": "t140u ~20:47 CDMX 25-oct",
+  "slots": [
+    {
+      "hora": "14:30",
+      "id": "2026-10-26_papel-picado-dia-muertos",
+      "titulo": "El papel picado nació de una DEUDA",
+      "plataformas": [
+        "youtube",
+        "tiktok"
+      ]
+    },
+    {
+      "hora": "17:00",
+      "id": "2026-10-26_catrina-posada-monerismo",
+      "titulo": "La Catrina NO era un homenaje… era una burla",
+      "plataformas": [
+        "youtube",
+        "tiktok"
+      ]
+    },
+    {
+      "hora": "19:00",
+      "id": "2026-10-26_papel-picado-dia-muertos_parte2",
+      "titulo": "El desfile de Día de Muertos lo inventó JAMES BOND",
+      "plataformas": [
+        "youtube",
+        "tiktok"
+      ]
+    },
+    {
+      "hora": "21:00",
+      "id": "2026-10-25_ave-jurasica-REMAKE",
+      "titulo": "Ave jurásica remake",
+      "yt_id": "GHxm9dDUMmM",
+      "plataformas": [
+        "youtube",
+        "tiktok"
+      ],
+      "nota": "Movida de 20:00 a 21:00"
+    }
+  ],
+  "actualizado_cdmx": "2026-10-25T20:47-06:00"
+}
