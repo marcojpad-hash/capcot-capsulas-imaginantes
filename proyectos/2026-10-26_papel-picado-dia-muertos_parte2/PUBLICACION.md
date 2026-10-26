@@ -1,7 +1,5 @@
 # Publicación
 
-**NO producir aún** (Mj 25-oct: ahorrar recursos / posibles cambios).
+Programar **19:00 CDMX** el **2026-10-26** en YouTube Shorts y TikTok @datosyociosidades.
 
-Programar el **2026-10-27** (pico trend cempasúchil/ofrenda), hora a definir (~19:00 CDMX sugerida).
-Plataformas: YouTube Shorts + TikTok @datosyociosidades.
-Serie cableada a Parte 1 (26-oct 14:30).
+Serie DdM **Parte 2** (cableada a Parte 1 a las 14:30). Parte 3 va el **27-oct**.
