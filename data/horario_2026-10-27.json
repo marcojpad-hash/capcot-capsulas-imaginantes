@@ -1,0 +1,29 @@
+{
+  "fecha": "2026-10-27",
+  "tz": "America/Mexico_City",
+  "pedido_mj": "pt142u 25-oct",
+  "estado": "stub — no producir hasta OK de MJ",
+  "slots": [
+    {
+      "hora": "19:00",
+      "id": "2026-10-26_papel-picado-dia-muertos_parte2",
+      "titulo": "P2 ofrenda (agua, fuego, tierra + camino de cempasúchil)",
+      "plataformas": [
+        "youtube",
+        "tiktok"
+      ],
+      "nota": "Pico trend cempasúchil 27-oct; ver salidas/_ops/2026-10-25_papel_picado_serie.md"
+    },
+    {
+      "hora": "TBD",
+      "id": "2026-10-27_ofrenda-mas-grande-templo-mayor",
+      "titulo": "TBD pueblo/antro — propuesta: La ofrenda MÁS GRANDE de México (Templo Mayor, INAH feb-2026)",
+      "plataformas": [
+        "youtube",
+        "tiktok"
+      ],
+      "nota": "Ver salidas/_ops/2026-10-25_tema_27_oct_ddm.md"
+    }
+  ],
+  "actualizado_cdmx": "2026-10-25T20:55-06:00"
+}
