@@ -237,5 +237,58 @@
   "estructura": "historia",
   "estilo": "tv_estatica",
   "cama": "arpegio"
+ },
+ {
+  "fecha": "2026-10-26",
+  "project_id": "2026-10-26_papel-picado-dia-muertos",
+  "yt_id": "i9QBFPljl6M",
+  "url": "https://youtube.com/shorts/i9QBFPljl6M",
+  "privacidad": "public (inmediato; slot 14:30 ya pasado)",
+  "publishAt_utc": null,
+  "hora_local": "2026-10-26 14:36 CDMX",
+  "ventana": "tarde",
+  "titulo": "Papel picado, parte 1: nació en una tienda de raya",
+  "origen": "propia",
+  "tiktok": "pendiente_mj"
+ },
+ {
+  "fecha": "2026-10-26",
+  "project_id": "2026-10-26_catrina-posada-monerismo",
+  "yt_id": "ivVo2H9NaEU",
+  "url": "https://youtube.com/shorts/ivVo2H9NaEU",
+  "privacidad": "private→public (publishAt)",
+  "publishAt_utc": "2026-10-26T23:00:00Z",
+  "hora_local": "2026-10-26 17:00 CDMX",
+  "ventana": "tarde",
+  "titulo": "La Catrina no era un homenaje: era una burla",
+  "origen": "propia",
+  "tiktok": "pendiente_mj"
+ },
+ {
+  "fecha": "2026-10-26",
+  "project_id": "2026-10-26_papel-picado-dia-muertos_parte2",
+  "yt_id": "GYxjXDh1ahc",
+  "url": "https://youtube.com/shorts/GYxjXDh1ahc",
+  "privacidad": "private→public (publishAt)",
+  "publishAt_utc": "2026-10-27T01:00:00Z",
+  "hora_local": "2026-10-26 19:00 CDMX",
+  "ventana": "noche",
+  "titulo": "Papel picado, parte 2: los otros tres elementos (el camino de tu muerto)",
+  "origen": "propia",
+  "tiktok": "pendiente_mj"
+ },
+ {
+  "fecha": "2026-10-26",
+  "project_id": "2026-10-25_ave-jurasica-REMAKE",
+  "yt_id": "YKldyldCeiQ",
+  "url": "https://youtube.com/shorts/YKldyldCeiQ",
+  "privacidad": "private→public (publishAt)",
+  "publishAt_utc": "2026-10-27T03:00:00Z",
+  "hora_local": "2026-10-26 21:00 CDMX",
+  "ventana": "noche",
+  "titulo": "Un ave de hace 150 millones de años con dientes de dinosaurio… y sin vuelo",
+  "origen": "propia",
+  "tiktok": "pendiente_mj",
+  "nota": "Remake subido como video NUEVO; GHxm9dDUMmM ya no existe en el canal"
  }
 ]
