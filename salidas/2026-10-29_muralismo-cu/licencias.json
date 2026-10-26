@@ -1,0 +1,44 @@
+{
+ "project_id": "2026-10-29_muralismo-cu",
+ "musica": {
+  "cama": "menor_calma",
+  "origen": "síntesis propia (scripts/cama_sonora.py, numpy)",
+  "licencia": "obra propia de Datos y ociosidades",
+  "generada_por_ia": false
+ },
+ "sfx": {
+  "viento": {
+   "archivo": "viento.ogg",
+   "commons": "File:Howling wind.ogg",
+   "autor": "Tvabutzku1234",
+   "licencia": "CC0",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Howling_wind.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Howling_wind.ogg",
+   "licencia_verificada": "CC0"
+  }
+ },
+ "imagenes": {
+  "origen": "GenerateImage (IA) con prompt_base del estilo",
+  "estilo": "mosaico_piedra",
+  "realista": false
+ },
+ "voz": {
+  "motor": "Microsoft Edge TTS",
+  "voz": "es-MX-JorgeNeural",
+  "nota": "voz sintética; no imita a una persona real"
+ },
+ "capas_datos": {
+  "tipos": [
+   "dato",
+   "mapa",
+   "dato"
+  ],
+  "mapa_base": "Natural Earth 110m (dominio público)",
+  "render": "matplotlib (propio)"
+ },
+ "fuentes_datos": [
+  "https://whc.unesco.org/en/list/1250",
+  "https://www.dgb.unam.mx/",
+  "https://patrimonio.unam.mx/"
+ ]
+}
