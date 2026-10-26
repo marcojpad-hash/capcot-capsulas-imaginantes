@@ -1,0 +1,5 @@
+# Fuentes (verificadas)
+
+- [SRC-001] Larkin y Hammersley (2026). What's the difference between green, yellow and red capsicums? The Conversation / Univ. de Wollongong https://theconversation.com/whats-the-difference-between-green-yellow-and-red-capsicums-its-more-than-what-you-see-292116 (consulta 2026-10-26) — respalda: mismo fruto en distinta madurez; 8 semanas; +2/+3/+4 semanas; nutrientes por color; mito de lóbulos; sin capsaicina
+- [SRC-002] Kraft et al. (2014). Origin of domesticated chili pepper, Capsicum annuum, in Mexico. PNAS https://doi.org/10.1073/pnas.1308933111 (consulta 2026-10-26) — respalda: domesticación en México (centro-este, Tehuacán); palabra para chile en protootomangue hace ~6,500 años
+- [SRC-003] Frontiers in Plant Science (2025). Phytochemical characterization in sweet pepper (Capsicum annuum L.) https://doi.org/10.3389/fpls.2025.1719537 (consulta 2026-10-26) — respalda: el pimiento dulce es Capsicum annuum

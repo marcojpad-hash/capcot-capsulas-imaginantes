@@ -1,0 +1,317 @@
+{
+ "project_id": "2026-10-26_hongo-gente-diminuta",
+ "serie": "Datos y ociosidades",
+ "title": "El hongo que hace ver gente diminuta",
+ "language": "es-MX",
+ "aspect_ratio": "9:16",
+ "titulo": "El hongo de la gente diminuta",
+ "titulo_yt": "El hongo que hace ver gente diminuta… y no tiene ningún alucinógeno conocido 🍄 #Shorts",
+ "estructura": "historia",
+ "estilo_id": "tv_estatica",
+ "linea_editorial": "B · reglas rotas de la naturaleza",
+ "trend_source": {
+  "tipo": "noticia_cientifica",
+  "medio": "ScienceDaily / Universidad de Utah",
+  "url": "https://attheu.utah.edu/facultystaff/scientists-identify-mushroom-behind-tiny-people-hallucinations/",
+  "termino": "hongo Lanmaoa asiatica alucinaciones gente diminuta",
+  "estudio_doi": "10.1080/00275514.2026.2670968",
+  "fecha_publicacion": "2026-06-05",
+  "fecha_consulta": "2026-10-26"
+ },
+ "voice": {
+  "engine": "edge-tts",
+  "voice_id": "es-MX-JorgeNeural",
+  "rate": "+7%",
+  "pitch": "-2Hz",
+  "pad_seconds": 0.3,
+  "modo_pausas": "continuo"
+ },
+ "sources": [
+  {
+   "id": "SRC-001",
+   "cita_corta": "Domnauer y Dentinger (2026). Phylogenomic systematics of Lanmaoa. Mycologia",
+   "url": "https://doi.org/10.1080/00275514.2026.2670968",
+   "doi": "10.1080/00275514.2026.2670968",
+   "accessed": "2026-10-26",
+   "supports": [
+    "53 genomas, 17 especies, 4 nuevas",
+    "sin genes de psilocibina ni ácido iboténico: posible compuesto nuevo"
+   ]
+  },
+  {
+   "id": "SRC-002",
+   "cita_corta": "Universidad de Utah (@theU, 6-ago-2026): Scientists identify mushroom behind 'tiny people' hallucinations",
+   "url": "https://attheu.utah.edu/facultystaff/scientists-identify-mushroom-behind-tiny-people-hallucinations/",
+   "accessed": "2026-10-26",
+   "supports": [
+    "1934 Papúa Nueva Guinea, Hofmann, Yunnan 1990s, Filipinas 2024, misma especie por ADN, comestible mal cocido"
+   ]
+  },
+  {
+   "id": "SRC-003",
+   "cita_corta": "ScienceDaily (25-oct-2026): mushroom that makes people see tiny humans",
+   "url": "https://www.sciencedaily.com/releases/2026/10/261024222021.htm",
+   "accessed": "2026-10-26",
+   "supports": [
+    "figuras de 3 a 30 cm",
+    "alucinaciones liliputienses en demencia, degeneración macular y abstinencia de alcohol"
+   ]
+  },
+  {
+   "id": "SRC-004",
+   "cita_corta": "College of Science, Univ. de Utah: Traveling with Gulliver",
+   "url": "https://science.utah.edu/faculty/faculty-research/mushroom-tiny-humans/",
+   "accessed": "2026-10-26",
+   "supports": [
+    "se vende en mercados y restaurantes de Yunnan",
+    "cronómetro de 15 minutos en restaurante"
+   ]
+  }
+ ],
+ "cortinilla_fuentes": {
+  "duration_seconds": 6,
+  "titulo": "Fuentes",
+  "aviso": "Ilustraciones generadas con IA (estilo TV vieja); interpretación artística, no fotos reales. No consumas hongos silvestres. Voz sintética con IA (edge-tts). Música sintetizada.",
+  "bg_rgb": [
+   20,
+   20,
+   24
+  ],
+  "firma": "Datos y ociosidades · @datosyociosidades"
+ },
+ "audio": {
+  "ambiente": "silencio",
+  "music_lufs": -27,
+  "ambiente_lufs": -28,
+  "music_license": "Sintetizado por scripts/cama_sonora.py (obra propia)",
+  "sfx_license": "Wikimedia Commons CC0/PD, ver assets/sfx/LICENCIAS.json",
+  "music_asset": "sintetico:menor_calma"
+ },
+ "export": {
+  "filename": "capsula.mp4",
+  "resolution": "1080x1920",
+  "fps": 30,
+  "subtitle_max_words": 3,
+  "plano_seconds": 2.5,
+  "loudness_lufs": -14
+ },
+ "canal": {
+  "nombre": "Datos y ociosidades",
+  "handle": "@datosyociosidades",
+  "youtube_channel_id": "UCU2ZI-6pBJEr9aSFsF6bxLw"
+ },
+ "parece_real": false,
+ "proveedor_imagenes": "Canva generate-image (IA) con prompt_base del estilo",
+ "target_duration_seconds": 90,
+ "scenes": [
+  {
+   "id": "scene_001",
+   "arc": "hook_medias_res",
+   "duration_seconds": 9.0,
+   "narration": "Ves gente diminuta caminando sobre tu mesa. Cientos. Y no es un cuento: pasa después de comer cierto hongo mal cocido.",
+   "on_screen_text": "Gente diminuta en la mesa",
+   "visual_description": "Ilustración generada con IA (interpretación artística)",
+   "image_prompt": "dozens of tiny little people a few centimeters tall walking across a kitchen table between plates and a bowl of mushroom soup. Style: black and white cartoon image displayed on an old CRT television in a dark dusty room, scan lines, static noise, eerie vintage mood, vertical 9:16, no text",
+   "source_ids": [
+    "SRC-002",
+    "SRC-003"
+   ],
+   "asset_filename": "frames/scene_001.png",
+   "ambiente": "silencio",
+   "sfx": [
+    "silencio",
+    "reloj"
+   ],
+   "image_origen": {
+    "tipo": "ia_generada",
+    "herramienta": "Canva generate-image"
+   }
+  },
+  {
+   "id": "scene_002",
+   "arc": "desarrollo",
+   "duration_seconds": 10.0,
+   "narration": "Papúa Nueva Guinea, 1934. Investigadores occidentales oyen el primer relato: tras comer hongos silvestres, la gente veía hombrecitos.",
+   "on_screen_text": "1934, Papúa Nueva Guinea",
+   "visual_description": "Ilustración generada con IA (interpretación artística)",
+   "image_prompt": "an elder villager in a tropical highland forest pointing at tiny people peeking from behind wild mushrooms on the ground. Style: black and white cartoon image displayed on an old CRT television in a dark dusty room, scan lines, static noise, eerie vintage mood, vertical 9:16, no text",
+   "source_ids": [
+    "SRC-002"
+   ],
+   "asset_filename": "frames/scene_002.png",
+   "ambiente": "lluvia",
+   "sfx": [
+    "lluvia",
+    "viento"
+   ],
+   "image_origen": {
+    "tipo": "ia_generada",
+    "herramienta": "Canva generate-image"
+   }
+  },
+  {
+   "id": "scene_003",
+   "arc": "desarrollo",
+   "duration_seconds": 10.0,
+   "narration": "En los cincuenta y sesenta llegaron antropólogos. Mandaron muestras a Albert Hofmann, el químico que descubrió el LSD y aisló la psilocibina. No encontró nada.",
+   "on_screen_text": "Hofmann: no encontró nada",
+   "visual_description": "Ilustración generada con IA (interpretación artística)",
+   "image_prompt": "a chemist in a white lab coat looking puzzled at an empty test tube next to a dried mushroom sample in a 1950s laboratory. Style: black and white cartoon image displayed on an old CRT television in a dark dusty room, scan lines, static noise, eerie vintage mood, vertical 9:16, no text",
+   "source_ids": [
+    "SRC-002"
+   ],
+   "asset_filename": "frames/scene_003.png",
+   "ambiente": "silencio",
+   "sfx": [
+    "pluma",
+    "reloj"
+   ],
+   "image_origen": {
+    "tipo": "ia_generada",
+    "herramienta": "Canva generate-image"
+   }
+  },
+  {
+   "id": "scene_004",
+   "arc": "desarrollo",
+   "duration_seconds": 7.0,
+   "narration": "Sin sustancia, la conclusión fue cultural: creencias, sugestión. Y el caso se archivó.",
+   "on_screen_text": "Caso archivado",
+   "visual_description": "Ilustración generada con IA (interpretación artística)",
+   "image_prompt": "a cardboard file box labeled with a mushroom drawing being closed and put on a dusty archive shelf. Style: black and white cartoon image displayed on an old CRT television in a dark dusty room, scan lines, static noise, eerie vintage mood, vertical 9:16, no text",
+   "source_ids": [
+    "SRC-002"
+   ],
+   "asset_filename": "frames/scene_004.png",
+   "ambiente": "silencio",
+   "sfx": [
+    "madera"
+   ],
+   "image_origen": {
+    "tipo": "ia_generada",
+    "herramienta": "Canva generate-image"
+   }
+  },
+  {
+   "id": "scene_005",
+   "arc": "desarrollo",
+   "duration_seconds": 11.0,
+   "narration": "Pero volvió. En los noventa, en Yunnan, China. Y en 2024, en las montañas del norte de Filipinas. Gente sin contacto entre sí contaba lo mismo.",
+   "on_screen_text": "Tres lugares, el mismo relato",
+   "visual_description": "Ilustración generada con IA (interpretación artística)",
+   "image_prompt": "a busy wild mushroom market stall with baskets of brown bolete mushrooms, a mushroom cap turning blue where a hand touched it. Style: black and white cartoon image displayed on an old CRT television in a dark dusty room, scan lines, static noise, eerie vintage mood, vertical 9:16, no text",
+   "source_ids": [
+    "SRC-002"
+   ],
+   "asset_filename": "frames/scene_005.png",
+   "ambiente": "mercado",
+   "sfx": [
+    "mercado"
+   ],
+   "image_origen": {
+    "tipo": "ia_generada",
+    "herramienta": "Canva generate-image"
+   },
+   "capa": {
+    "tipo": "mapa",
+    "region": [
+     95,
+     155,
+     -12,
+     30
+    ],
+    "titulo": "Tres lugares, el mismo relato",
+    "puntos": [
+     {
+      "nombre": "Yunnan",
+      "lon": 102.7,
+      "lat": 25.0
+     },
+     {
+      "nombre": "Norte de Filipinas",
+      "lon": 121.0,
+      "lat": 17.0
+     },
+     {
+      "nombre": "Papúa N. Guinea",
+      "lon": 144.0,
+      "lat": -6.0
+     }
+    ],
+    "fuente": "Universidad de Utah"
+   }
+  },
+  {
+   "id": "scene_006",
+   "arc": "cierre_historia",
+   "duration_seconds": 12.0,
+   "narration": "Ahora, Colin Domnauer y Bryn Dentinger, de la Universidad de Utah, leyeron su ADN. Era la misma especie: Lanmaoa asiatica. Y no tiene psilocibina ni ningún alucinógeno conocido.",
+   "on_screen_text": "Misma especie: Lanmaoa asiatica",
+   "visual_description": "Ilustración generada con IA (interpretación artística)",
+   "image_prompt": "two scientists in a lab examining a DNA sequence on a screen next to a bolete mushroom on a tray. Style: black and white cartoon image displayed on an old CRT television in a dark dusty room, scan lines, static noise, eerie vintage mood, vertical 9:16, no text",
+   "source_ids": [
+    "SRC-001",
+    "SRC-002"
+   ],
+   "asset_filename": "frames/scene_006.png",
+   "ambiente": "silencio",
+   "sfx": [
+    "silencio"
+   ],
+   "image_origen": {
+    "tipo": "ia_generada",
+    "herramienta": "Canva generate-image"
+   }
+  },
+  {
+   "id": "scene_007",
+   "arc": "cierre_historia",
+   "duration_seconds": 12.0,
+   "narration": "Las figuras miden de tres a treinta centímetros, y las mismas visiones aparecen en personas con demencia, degeneración macular o abstinencia de alcohol.",
+   "on_screen_text": "De 3 a 30 centímetros",
+   "visual_description": "Ilustración generada con IA (interpretación artística)",
+   "image_prompt": "a tiny person about the size of a coffee cup standing next to a cup on a table, an old man's eyeglasses lying nearby. Style: black and white cartoon image displayed on an old CRT television in a dark dusty room, scan lines, static noise, eerie vintage mood, vertical 9:16, no text",
+   "source_ids": [
+    "SRC-003"
+   ],
+   "asset_filename": "frames/scene_007.png",
+   "ambiente": "silencio",
+   "sfx": [
+    "reloj"
+   ],
+   "image_origen": {
+    "tipo": "ia_generada",
+    "herramienta": "Canva generate-image"
+   },
+   "capa": {
+    "tipo": "dato",
+    "valor": "3 a 30 cm",
+    "etiqueta": "altura de las figuras que describen",
+    "fuente": "Universidad de Utah / ScienceDaily"
+   }
+  },
+  {
+   "id": "scene_008",
+   "arc": "reflexion_o_pregunta",
+   "duration_seconds": 13.0,
+   "narration": "En Yunnan se vende en mercados y restaurantes. En uno, el mesero puso un cronómetro de quince minutos: no lo coman antes, o verán gente pequeña. ¿Qué nos dirá del cerebro esa molécula cuando aparezca? Esto fue Datos y ociosidades.",
+   "on_screen_text": "Espera 15 minutos",
+   "visual_description": "Ilustración generada con IA (interpretación artística)",
+   "image_prompt": "a mushroom hot pot bubbling on a restaurant table with a kitchen timer next to it, a tiny figure sitting on the rim of the pot looking up. Style: black and white cartoon image displayed on an old CRT television in a dark dusty room, scan lines, static noise, eerie vintage mood, vertical 9:16, no text",
+   "source_ids": [
+    "SRC-004",
+    "SRC-003"
+   ],
+   "asset_filename": "frames/scene_008.png",
+   "ambiente": "silencio",
+   "sfx": [
+    "silencio"
+   ],
+   "image_origen": {
+    "tipo": "ia_generada",
+    "herramienta": "Canva generate-image"
+   }
+  }
+ ],
+ "estilo_visual": "TV vieja con estática (tipo Coraje)"
+}

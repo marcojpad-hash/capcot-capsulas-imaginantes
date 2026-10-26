@@ -1,0 +1,6 @@
+# Fuentes (verificadas)
+
+- [SRC-001] Domnauer y Dentinger (2026). Phylogenomic systematics of Lanmaoa. Mycologia https://doi.org/10.1080/00275514.2026.2670968 (consulta 2026-10-26) — respalda: 53 genomas, 17 especies, 4 nuevas; sin genes de psilocibina ni ácido iboténico: posible compuesto nuevo
+- [SRC-002] Universidad de Utah (@theU, 6-ago-2026): Scientists identify mushroom behind 'tiny people' hallucinations https://attheu.utah.edu/facultystaff/scientists-identify-mushroom-behind-tiny-people-hallucinations/ (consulta 2026-10-26) — respalda: 1934 Papúa Nueva Guinea, Hofmann, Yunnan 1990s, Filipinas 2024, misma especie por ADN, comestible mal cocido
+- [SRC-003] ScienceDaily (25-oct-2026): mushroom that makes people see tiny humans https://www.sciencedaily.com/releases/2026/10/261024222021.htm (consulta 2026-10-26) — respalda: figuras de 3 a 30 cm; alucinaciones liliputienses en demencia, degeneración macular y abstinencia de alcohol
+- [SRC-004] College of Science, Univ. de Utah: Traveling with Gulliver https://science.utah.edu/faculty/faculty-research/mushroom-tiny-humans/ (consulta 2026-10-26) — respalda: se vende en mercados y restaurantes de Yunnan; cronómetro de 15 minutos en restaurante

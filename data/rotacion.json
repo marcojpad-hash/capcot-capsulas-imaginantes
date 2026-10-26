@@ -79,5 +79,25 @@
   "tema": "Yuezhuornis ave jurasica sin vuelo",
   "estilo": "linograbado",
   "origen": "propia"
+ },
+ {
+  "fecha": "2026-10-26",
+  "project_id": "2026-10-26_hongo-gente-diminuta",
+  "estructura": "historia",
+  "cama": "arpegio",
+  "duracion": 90,
+  "tema": "hongo Lanmaoa asiatica alucinaciones gente diminuta",
+  "estilo": "tv_estatica",
+  "origen": "propia"
+ },
+ {
+  "fecha": "2026-10-26",
+  "project_id": "2026-10-26_pimiento-verde-rojo",
+  "estructura": "comparacion",
+  "cama": "pizzicato",
+  "duracion": 75,
+  "tema": "pimiento morrón colores madurez origen México",
+  "estilo": "pop_art_comic",
+  "origen": "propia"
  }
 ]

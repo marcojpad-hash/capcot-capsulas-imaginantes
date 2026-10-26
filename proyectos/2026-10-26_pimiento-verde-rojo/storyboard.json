@@ -1,0 +1,331 @@
+{
+ "project_id": "2026-10-26_pimiento-verde-rojo",
+ "serie": "Datos y ociosidades",
+ "title": "El pimiento verde y el rojo son el mismo fruto",
+ "language": "es-MX",
+ "aspect_ratio": "9:16",
+ "titulo": "Pimiento verde y rojo: el mismo",
+ "titulo_yt": "El pimiento verde y el rojo son el mismo fruto 🫑 (y viene de México) #Shorts",
+ "estructura": "comparacion",
+ "estilo_id": "pop_art_comic",
+ "linea_editorial": "A · orígenes de lo que usamos",
+ "trend_source": {
+  "tipo": "noticia_cientifica",
+  "medio": "Phys.org / The Conversation (24-oct-2026)",
+  "url": "https://phys.org/news/2026-10-bell-pepper-reveal-differences-sweetness.html",
+  "termino": "pimiento morrón colores madurez origen México",
+  "estudio_doi": "10.1073/pnas.1308933111",
+  "fecha_publicacion": "2026-10-24",
+  "fecha_consulta": "2026-10-26"
+ },
+ "voice": {
+  "engine": "edge-tts",
+  "voice_id": "es-MX-JorgeNeural",
+  "rate": "+7%",
+  "pitch": "-2Hz",
+  "pad_seconds": 0.3,
+  "modo_pausas": "continuo"
+ },
+ "sources": [
+  {
+   "id": "SRC-001",
+   "cita_corta": "Larkin y Hammersley (2026). What's the difference between green, yellow and red capsicums? The Conversation / Univ. de Wollongong",
+   "url": "https://theconversation.com/whats-the-difference-between-green-yellow-and-red-capsicums-its-more-than-what-you-see-292116",
+   "accessed": "2026-10-26",
+   "supports": [
+    "mismo fruto en distinta madurez; 8 semanas; +2/+3/+4 semanas; nutrientes por color; mito de lóbulos; sin capsaicina"
+   ]
+  },
+  {
+   "id": "SRC-002",
+   "cita_corta": "Kraft et al. (2014). Origin of domesticated chili pepper, Capsicum annuum, in Mexico. PNAS",
+   "url": "https://doi.org/10.1073/pnas.1308933111",
+   "doi": "10.1073/pnas.1308933111",
+   "accessed": "2026-10-26",
+   "supports": [
+    "domesticación en México (centro-este, Tehuacán)",
+    "palabra para chile en protootomangue hace ~6,500 años"
+   ]
+  },
+  {
+   "id": "SRC-003",
+   "cita_corta": "Frontiers in Plant Science (2025). Phytochemical characterization in sweet pepper (Capsicum annuum L.)",
+   "url": "https://doi.org/10.3389/fpls.2025.1719537",
+   "doi": "10.3389/fpls.2025.1719537",
+   "accessed": "2026-10-26",
+   "supports": [
+    "el pimiento dulce es Capsicum annuum"
+   ]
+  }
+ ],
+ "cortinilla_fuentes": {
+  "duration_seconds": 6,
+  "titulo": "Fuentes",
+  "aviso": "Fotos: Wikimedia Commons (CC BY/BY-SA: MaiDenzel, Peachyeung316, H. Zell, G. Chernilevsky, L. Viatour, Jahel207, Shixart1985), estilizadas. Voz sintética con IA (edge-tts). Música sintetizada.",
+  "bg_rgb": [
+   24,
+   30,
+   60
+  ],
+  "firma": "Datos y ociosidades · @datosyociosidades"
+ },
+ "audio": {
+  "ambiente": "viento",
+  "music_lufs": -27,
+  "ambiente_lufs": -28,
+  "music_license": "Sintetizado por scripts/cama_sonora.py (obra propia)",
+  "sfx_license": "Wikimedia Commons CC0/PD, ver assets/sfx/LICENCIAS.json",
+  "music_asset": "sintetico:menor_calma"
+ },
+ "export": {
+  "filename": "capsula.mp4",
+  "resolution": "1080x1920",
+  "fps": 30,
+  "subtitle_max_words": 3,
+  "plano_seconds": 2.5,
+  "loudness_lufs": -14
+ },
+ "canal": {
+  "nombre": "Datos y ociosidades",
+  "handle": "@datosyociosidades",
+  "youtube_channel_id": "UCU2ZI-6pBJEr9aSFsF6bxLw"
+ },
+ "parece_real": false,
+ "proveedor_imagenes": "Fotos de Wikimedia Commons (CC BY / CC BY-SA, autores por escena en image_origen) estilizadas con filtro pop art propio; no generadas con IA",
+ "target_duration_seconds": 75,
+ "scenes": [
+  {
+   "id": "scene_001",
+   "arc": "hook_medias_res",
+   "duration_seconds": 8.0,
+   "narration": "El pimiento verde y el rojo son el mismo fruto. Solo que uno se cortó antes.",
+   "on_screen_text": "Verde y rojo: mismo fruto",
+   "visual_description": "Ilustración generada con IA (interpretación artística)",
+   "image_prompt": "a green bell pepper and a red bell pepper side by side on a kitchen cutting board, facing each other like rivals. Style: pop art comic book panel, Ben-Day halftone dots, bold black outlines, saturated primary colors, dramatic action burst background, vertical 9:16, no text",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "asset_filename": "frames/scene_001.png",
+   "ambiente": "silencio",
+   "sfx": [
+    "madera"
+   ],
+   "image_origen": {
+    "tipo": "foto_cc_estilizada",
+    "herramienta": "filtro pop art propio (PIL: posterizado + puntos Ben-Day + contorno)",
+    "archivo_base": "File:Green, yellow and red bell peppers.jpg",
+    "url": "https://commons.wikimedia.org/wiki/File:Green,_yellow_and_red_bell_peppers.jpg",
+    "autor": "Peachyeung316",
+    "licencia": "CC BY-SA 4.0",
+    "licencia_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "nota": "Canva generate-image sin crédito (quota) el 26-oct; se usó foto libre de Wikimedia Commons"
+   }
+  },
+  {
+   "id": "scene_002",
+   "arc": "desarrollo",
+   "duration_seconds": 9.0,
+   "narration": "Todos empiezan verdes por la clorofila. Al madurar, la clorofila se rompe y salen los carotenoides: amarillo, naranja y, al final, rojo.",
+   "on_screen_text": "Todos empiezan verdes",
+   "visual_description": "Ilustración generada con IA (interpretación artística)",
+   "image_prompt": "a single bell pepper on a plant shown in four stages left to right turning from green to yellow to orange to red. Style: pop art comic book panel, Ben-Day halftone dots, bold black outlines, saturated primary colors, dramatic action burst background, vertical 9:16, no text",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "asset_filename": "frames/scene_002.png",
+   "ambiente": "viento",
+   "sfx": [
+    "viento"
+   ],
+   "image_origen": {
+    "tipo": "foto_cc_estilizada",
+    "herramienta": "filtro pop art propio (PIL: posterizado + puntos Ben-Day + contorno)",
+    "archivo_base": "File:Bell peppers 2020 G1.jpg",
+    "url": "https://commons.wikimedia.org/wiki/File:Bell_peppers_2020_G1.jpg",
+    "autor": "George Chernilevsky",
+    "licencia": "CC BY-SA 4.0",
+    "licencia_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "nota": "Canva generate-image sin crédito (quota) el 26-oct; se usó foto libre de Wikimedia Commons"
+   }
+  },
+  {
+   "id": "scene_003",
+   "arc": "desarrollo",
+   "duration_seconds": 10.0,
+   "narration": "El verde se corta unas ocho semanas después de plantarlo: firme y algo amargo. El rojo se queda cuatro semanas más en la planta: es el más dulce.",
+   "on_screen_text": "Rojo: 4 semanas más",
+   "visual_description": "Ilustración generada con IA (interpretación artística)",
+   "image_prompt": "a calendar with weeks crossed out next to a pepper plant in a garden, one red pepper hanging ripe. Style: pop art comic book panel, Ben-Day halftone dots, bold black outlines, saturated primary colors, dramatic action burst background, vertical 9:16, no text",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "asset_filename": "frames/scene_003.png",
+   "ambiente": "viento",
+   "sfx": [
+    "viento",
+    "reloj"
+   ],
+   "image_origen": {
+    "tipo": "foto_cc_estilizada",
+    "herramienta": "filtro pop art propio (PIL: posterizado + puntos Ben-Day + contorno)",
+    "archivo_base": "File:Capsicum annuum 004.JPG",
+    "url": "https://commons.wikimedia.org/wiki/File:Capsicum_annuum_004.JPG",
+    "autor": "H. Zell",
+    "licencia": "CC BY-SA 3.0",
+    "licencia_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "nota": "Canva generate-image sin crédito (quota) el 26-oct; se usó foto libre de Wikimedia Commons"
+   },
+   "capa": {
+    "tipo": "grafico",
+    "x": [
+     0,
+     2,
+     3,
+     4
+    ],
+    "y": [
+     0,
+     2,
+     3,
+     4
+    ],
+    "titulo": "Semanas extra en la planta (0 = verde, 2 = amarillo, 3 = naranja, 4 = rojo)",
+    "unidad": "semanas",
+    "fuente": "Larkin y Hammersley, The Conversation"
+   }
+  },
+  {
+   "id": "scene_004",
+   "arc": "desarrollo",
+   "duration_seconds": 11.0,
+   "narration": "Y cambia lo que te da. El naranja y el rojo traen más vitamina C y betacaroteno. El verde, el amarillo y el naranja, luteína y zeaxantina, ligadas a la salud de los ojos.",
+   "on_screen_text": "Cada color, otro nutriente",
+   "visual_description": "Ilustración generada con IA (interpretación artística)",
+   "image_prompt": "bell peppers in green, yellow, orange and red cut open showing their insides, sparkles around them like a superhero reveal. Style: pop art comic book panel, Ben-Day halftone dots, bold black outlines, saturated primary colors, dramatic action burst background, vertical 9:16, no text",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "asset_filename": "frames/scene_004.png",
+   "ambiente": "silencio",
+   "sfx": [
+    "madera"
+   ],
+   "image_origen": {
+    "tipo": "foto_cc_estilizada",
+    "herramienta": "filtro pop art propio (PIL: posterizado + puntos Ben-Day + contorno)",
+    "archivo_base": "File:Poivrons Luc Viatour.jpg",
+    "url": "https://commons.wikimedia.org/wiki/File:Poivrons_Luc_Viatour.jpg",
+    "autor": "Luc Viatour",
+    "licencia": "CC BY-SA 3.0",
+    "licencia_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "nota": "Canva generate-image sin crédito (quota) el 26-oct; se usó foto libre de Wikimedia Commons"
+   }
+  },
+  {
+   "id": "scene_005",
+   "arc": "desarrollo",
+   "duration_seconds": 8.0,
+   "narration": "¿Y lo de contar las protuberancias de abajo para saber cuál es más dulce? Falso. Tienen de dos a cinco lóbulos, según la genética.",
+   "on_screen_text": "Las protuberancias no dicen nada",
+   "visual_description": "Ilustración generada con IA (interpretación artística)",
+   "image_prompt": "the bottom of a bell pepper seen from below showing its lobes, a big magnifying glass over it. Style: pop art comic book panel, Ben-Day halftone dots, bold black outlines, saturated primary colors, dramatic action burst background, vertical 9:16, no text",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "asset_filename": "frames/scene_005.png",
+   "ambiente": "silencio",
+   "sfx": [
+    "pluma"
+   ],
+   "image_origen": {
+    "tipo": "foto_cc_estilizada",
+    "herramienta": "filtro pop art propio (PIL: posterizado + puntos Ben-Day + contorno)",
+    "archivo_base": "File:Green and red peppers 01.jpg",
+    "url": "https://commons.wikimedia.org/wiki/File:Green_and_red_peppers_01.jpg",
+    "autor": "MaiDenzel",
+    "licencia": "CC BY-SA 4.0",
+    "licencia_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "nota": "Canva generate-image sin crédito (quota) el 26-oct; se usó foto libre de Wikimedia Commons"
+   }
+  },
+  {
+   "id": "scene_006",
+   "arc": "cierre_historia",
+   "duration_seconds": 13.0,
+   "narration": "Su origen está aquí. Es Capsicum annuum, la misma especie que muchos chiles, y se domesticó en México. Hace unos seis mil quinientos años, una lengua ancestral otomangue ya tenía palabra para el chile.",
+   "on_screen_text": "Domesticado en México",
+   "visual_description": "Ilustración generada con IA (interpretación artística)",
+   "image_prompt": "an ancient Mesoamerican farmer harvesting small chili peppers on a dry valley hillside with cactus, Tehuacan valley landscape. Style: pop art comic book panel, Ben-Day halftone dots, bold black outlines, saturated primary colors, dramatic action burst background, vertical 9:16, no text",
+   "source_ids": [
+    "SRC-002",
+    "SRC-003"
+   ],
+   "asset_filename": "frames/scene_006.png",
+   "ambiente": "viento",
+   "sfx": [
+    "viento"
+   ],
+   "image_origen": {
+    "tipo": "foto_cc_estilizada",
+    "herramienta": "filtro pop art propio (PIL: posterizado + puntos Ben-Day + contorno)",
+    "archivo_base": "File:Vista del Valle de Tehuacán desde el Cerro del Cococpaltce.jpg",
+    "url": "https://commons.wikimedia.org/wiki/File:Vista_del_Valle_de_Tehuac%C3%A1n_desde_el_Cerro_del_Cococpaltce.jpg",
+    "autor": "Jahel207",
+    "licencia": "CC BY-SA 4.0",
+    "licencia_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "nota": "Canva generate-image sin crédito (quota) el 26-oct; se usó foto libre de Wikimedia Commons"
+   },
+   "capa": {
+    "tipo": "mapa",
+    "region": [
+     -106,
+     -90,
+     14,
+     26
+    ],
+    "titulo": "Donde empezó el chile",
+    "puntos": [
+     {
+      "nombre": "Tehuacán, Pue.",
+      "lon": -97.4,
+      "lat": 18.46
+     },
+     {
+      "nombre": "Ocampo, Tamps.",
+      "lon": -99.23,
+      "lat": 22.84
+     }
+    ],
+    "fuente": "Kraft et al., PNAS 2014"
+   }
+  },
+  {
+   "id": "scene_007",
+   "arc": "reflexion_o_pregunta",
+   "duration_seconds": 10.0,
+   "narration": "La diferencia es que el morrón no tiene capsaicina: por eso no pica. Tal vez la próxima vez que lo piques lo veas distinto. ¿Tú cuál prefieres, el verde o el rojo? Esto fue Datos y ociosidades.",
+   "on_screen_text": "¿Verde o rojo?",
+   "visual_description": "Ilustración generada con IA (interpretación artística)",
+   "image_prompt": "a home cook's hands slicing a red bell pepper next to a green one on a kitchen counter, warm friendly scene. Style: pop art comic book panel, Ben-Day halftone dots, bold black outlines, saturated primary colors, dramatic action burst background, vertical 9:16, no text",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "asset_filename": "frames/scene_007.png",
+   "ambiente": "mercado",
+   "sfx": [
+    "madera"
+   ],
+   "image_origen": {
+    "tipo": "foto_cc_estilizada",
+    "herramienta": "filtro pop art propio (PIL: posterizado + puntos Ben-Day + contorno)",
+    "archivo_base": "File:Close-up of a chef slicing fresh red pepper on the pice.jpg",
+    "url": "https://commons.wikimedia.org/wiki/File:Close-up_of_a_chef_slicing_fresh_red_pepper_on_the_pice.jpg",
+    "autor": "Shixart1985",
+    "licencia": "CC BY 2.0",
+    "licencia_url": "https://creativecommons.org/licenses/by/2.0",
+    "nota": "Canva generate-image sin crédito (quota) el 26-oct; se usó foto libre de Wikimedia Commons"
+   }
+  }
+ ],
+ "estilo_visual": "Cómic pop art"
+}

@@ -1,0 +1,142 @@
+{
+ "project_id": "2026-10-26_pimiento-verde-rojo",
+ "musica": {
+  "cama": "pizzicato",
+  "origen": "síntesis propia (scripts/cama_sonora.py, numpy)",
+  "licencia": "obra propia de Datos y ociosidades",
+  "generada_por_ia": false
+ },
+ "sfx": {
+  "madera": {
+   "archivo": "madera.ogg",
+   "commons": "File:Creaky wooden casket.ogg",
+   "autor": "stephan",
+   "licencia": "Public domain",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Creaky_wooden_casket.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Creaky_wooden_casket.ogg",
+   "licencia_verificada": "Public domain"
+  },
+  "pluma": {
+   "archivo": "pluma.ogg",
+   "commons": "File:Writing with inkpen.ogg",
+   "autor": "stephan",
+   "licencia": "Public domain",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Writing_with_inkpen.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Writing_with_inkpen.ogg",
+   "licencia_verificada": "Public domain"
+  },
+  "reloj": {
+   "archivo": "reloj.ogg",
+   "commons": "File:Clock ticking.ogg",
+   "autor": "natalie",
+   "licencia": "Public domain",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/5/56/Clock_ticking.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Clock_ticking.ogg",
+   "licencia_verificada": "Public domain"
+  },
+  "viento": {
+   "archivo": "viento.ogg",
+   "commons": "File:Howling wind.ogg",
+   "autor": "Tvabutzku1234",
+   "licencia": "CC0",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Howling_wind.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Howling_wind.ogg",
+   "licencia_verificada": "CC0"
+  }
+ },
+ "imagenes": {
+  "origen": "Fotos de Wikimedia Commons (CC BY / CC BY-SA, autores por escena en image_origen) estilizadas con filtro pop art propio; no generadas con IA",
+  "estilo": "pop_art_comic",
+  "realista": false,
+  "por_escena": {
+   "scene_001": {
+    "tipo": "foto_cc_estilizada",
+    "herramienta": "filtro pop art propio (PIL: posterizado + puntos Ben-Day + contorno)",
+    "archivo_base": "File:Green, yellow and red bell peppers.jpg",
+    "url": "https://commons.wikimedia.org/wiki/File:Green,_yellow_and_red_bell_peppers.jpg",
+    "autor": "Peachyeung316",
+    "licencia": "CC BY-SA 4.0",
+    "licencia_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "nota": "Canva generate-image sin crédito (quota) el 26-oct; se usó foto libre de Wikimedia Commons"
+   },
+   "scene_002": {
+    "tipo": "foto_cc_estilizada",
+    "herramienta": "filtro pop art propio (PIL: posterizado + puntos Ben-Day + contorno)",
+    "archivo_base": "File:Bell peppers 2020 G1.jpg",
+    "url": "https://commons.wikimedia.org/wiki/File:Bell_peppers_2020_G1.jpg",
+    "autor": "George Chernilevsky",
+    "licencia": "CC BY-SA 4.0",
+    "licencia_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "nota": "Canva generate-image sin crédito (quota) el 26-oct; se usó foto libre de Wikimedia Commons"
+   },
+   "scene_003": {
+    "tipo": "foto_cc_estilizada",
+    "herramienta": "filtro pop art propio (PIL: posterizado + puntos Ben-Day + contorno)",
+    "archivo_base": "File:Capsicum annuum 004.JPG",
+    "url": "https://commons.wikimedia.org/wiki/File:Capsicum_annuum_004.JPG",
+    "autor": "H. Zell",
+    "licencia": "CC BY-SA 3.0",
+    "licencia_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "nota": "Canva generate-image sin crédito (quota) el 26-oct; se usó foto libre de Wikimedia Commons"
+   },
+   "scene_004": {
+    "tipo": "foto_cc_estilizada",
+    "herramienta": "filtro pop art propio (PIL: posterizado + puntos Ben-Day + contorno)",
+    "archivo_base": "File:Poivrons Luc Viatour.jpg",
+    "url": "https://commons.wikimedia.org/wiki/File:Poivrons_Luc_Viatour.jpg",
+    "autor": "Luc Viatour",
+    "licencia": "CC BY-SA 3.0",
+    "licencia_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "nota": "Canva generate-image sin crédito (quota) el 26-oct; se usó foto libre de Wikimedia Commons"
+   },
+   "scene_005": {
+    "tipo": "foto_cc_estilizada",
+    "herramienta": "filtro pop art propio (PIL: posterizado + puntos Ben-Day + contorno)",
+    "archivo_base": "File:Green and red peppers 01.jpg",
+    "url": "https://commons.wikimedia.org/wiki/File:Green_and_red_peppers_01.jpg",
+    "autor": "MaiDenzel",
+    "licencia": "CC BY-SA 4.0",
+    "licencia_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "nota": "Canva generate-image sin crédito (quota) el 26-oct; se usó foto libre de Wikimedia Commons"
+   },
+   "scene_006": {
+    "tipo": "foto_cc_estilizada",
+    "herramienta": "filtro pop art propio (PIL: posterizado + puntos Ben-Day + contorno)",
+    "archivo_base": "File:Vista del Valle de Tehuacán desde el Cerro del Cococpaltce.jpg",
+    "url": "https://commons.wikimedia.org/wiki/File:Vista_del_Valle_de_Tehuac%C3%A1n_desde_el_Cerro_del_Cococpaltce.jpg",
+    "autor": "Jahel207",
+    "licencia": "CC BY-SA 4.0",
+    "licencia_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "nota": "Canva generate-image sin crédito (quota) el 26-oct; se usó foto libre de Wikimedia Commons"
+   },
+   "scene_007": {
+    "tipo": "foto_cc_estilizada",
+    "herramienta": "filtro pop art propio (PIL: posterizado + puntos Ben-Day + contorno)",
+    "archivo_base": "File:Close-up of a chef slicing fresh red pepper on the pice.jpg",
+    "url": "https://commons.wikimedia.org/wiki/File:Close-up_of_a_chef_slicing_fresh_red_pepper_on_the_pice.jpg",
+    "autor": "Shixart1985",
+    "licencia": "CC BY 2.0",
+    "licencia_url": "https://creativecommons.org/licenses/by/2.0",
+    "nota": "Canva generate-image sin crédito (quota) el 26-oct; se usó foto libre de Wikimedia Commons"
+   }
+  }
+ },
+ "voz": {
+  "motor": "Microsoft Edge TTS",
+  "voz": "es-MX-JorgeNeural",
+  "nota": "voz sintética; no imita a una persona real"
+ },
+ "capas_datos": {
+  "tipos": [
+   "grafico",
+   "mapa"
+  ],
+  "mapa_base": "Natural Earth 110m (dominio público)",
+  "render": "matplotlib (propio)"
+ },
+ "fuentes_datos": [
+  "https://theconversation.com/whats-the-difference-between-green-yellow-and-red-capsicums-its-more-than-what-you-see-292116",
+  "https://doi.org/10.1073/pnas.1308933111",
+  "https://doi.org/10.3389/fpls.2025.1719537"
+ ]
+}
