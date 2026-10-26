@@ -1,0 +1,368 @@
+{
+  "project_id": "2026-10-26_baffin-bay-ice-shelf",
+  "serie": "Datos y ociosidades",
+  "title": "El hielo que sostuvo tres mantos #Shorts",
+  "titulo": "¿Qué sostuvo tres mantos?",
+  "language": "es-MX",
+  "aspect_ratio": "9:16",
+  "target_duration_seconds": 87,
+  "audience": "Público general curioso (YouTube Shorts)",
+  "estructura": "pregunta",
+  "trend_source": {
+    "tipo": "noticia_cientifica",
+    "medio": "Nature Geoscience",
+    "url": "https://www.nature.com/articles/s41561-026-02127-6",
+    "estudio_doi": "10.1038/s41561-026-02126-7",
+    "fecha_publicacion": "2026-10-26",
+    "estudio_fecha_publicacion": "2026-10-21",
+    "fecha_consulta": "2026-10-26",
+    "termino": "plataforma de hielo de la bahía de Baffin durante la última glaciación",
+    "puntaje": 8
+  },
+  "resumen": "Un estudio de Nature Geoscience reconstruye una enorme plataforma de hielo en la bahía de Baffin que habría estabilizado los mantos Laurentide, Innuitian y de Groenlandia durante la última glaciación. Sus huellas submarinas ayudan a entender por qué la pérdida de plataformas puede acelerar el retroceso glaciar.",
+  "keywords": [
+    "bahía de Baffin",
+    "plataforma de hielo",
+    "glaciación",
+    "dinámica de mantos de hielo"
+  ],
+  "estilo_id": "art_deco_poster",
+  "estilo_visual": "Póster Art Déco",
+  "voice": {
+    "engine": "edge-tts",
+    "voice_id": "es-MX-JorgeNeural",
+    "rate": "+7%",
+    "pitch": "-2Hz",
+    "pad_seconds": 0.3,
+    "modo_pausas": "continuo"
+  },
+  "sources": [
+    {
+      "id": "SRC-001",
+      "cita_corta": "Klotsko, S. A. et al. (2026). The Baffin Bay Ice Shelf stabilized three adjacent ice sheets during the last glacial period. Nature Geoscience.",
+      "doi": "10.1038/s41561-026-02126-7",
+      "url": "https://doi.org/10.1038/s41561-026-02126-7",
+      "accessed": "2026-10-26",
+      "published": "2026-10-21",
+      "supports": [
+        "La bahía de Baffin se encuentra entre Groenlandia y Canadá; durante el Último Máximo Glacial confluyeron allí los mantos Laurentide, Innuitian y de Groenlandia.",
+        "El estudio interpreta rasgos geomorfológicos del talud continental como evidencia de una plataforma de hielo que abarcaba aproximadamente 150,000 km².",
+        "El espesor interpretado de la plataforma fue de aproximadamente 1,400–2,100 m, corregido por el nivel relativo del mar.",
+        "La plataforma habría proporcionado apoyo mecánico a los mantos de hielo adyacentes; los autores infieren que su colapso desencadenó un retroceso rápido.",
+        "La reconstrucción se basa en batimetría, rasgos geomorfológicos, datos sísmicos y núcleos de sedimento; no es una observación directa del colapso."
+      ],
+      "ref_display": "Klotsko et al. · Nature Geoscience · doi:10.1038/s41561-026-02126-7"
+    },
+    {
+      "id": "SRC-002",
+      "cita_corta": "Nature Geoscience (2026-10-26). An Arctic ice shelf in the Last Glacial Maximum rivalled Antarctica’s modern ice shelves. Research Briefing.",
+      "doi": "10.1038/s41561-026-02127-6",
+      "url": "https://doi.org/10.1038/s41561-026-02127-6",
+      "accessed": "2026-10-26",
+      "published": "2026-10-26",
+      "supports": [
+        "Contextualiza la relevancia del estudio de la plataforma de Baffin Bay para comprender la estabilidad de plataformas de hielo actuales.",
+        "Resume que la pérdida de plataformas puede acelerar el retroceso de mantos de hielo marinos."
+      ],
+      "ref_display": "Nature Geoscience Research Briefing · 26 Oct 2026 · doi:10.1038/s41561-026-02127-6"
+    },
+    {
+      "id": "SRC-003",
+      "cita_corta": "Natural Earth. 1:110m Physical Vectors — Land.",
+      "url": "https://www.naturalearthdata.com/downloads/110m-physical-vectors/110m-land/",
+      "accessed": "2026-10-26",
+      "supports": [
+        "Base cartográfica geográfica para la capa de mapa; el marcador indica una ubicación orientativa de la bahía, no un punto de muestreo."
+      ],
+      "ref_display": "Natural Earth 1:110m · base cartográfica de dominio público"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_001",
+      "arc": "hook_medias_res",
+      "duration_seconds": 9,
+      "narration": "¿Qué pudo sostener tres enormes mantos de hielo? Durante la última glaciación, una plataforma helada ocupó la bahía de Baffin.",
+      "on_screen_text": "¿Qué sostuvo tres mantos?",
+      "visual_description": "A vast ancient ice shelf spanning a dark teal Arctic fjord, sheer pale-blue ice cliffs, jagged mountains, and a tiny research ship for scale, dramatic golden horizon.",
+      "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text + A vast ancient ice shelf spanning a dark teal Arctic fjord, sheer pale-blue ice cliffs, jagged mountains, and a tiny research ship for scale, dramatic golden horizon. vertical 9:16, no text",
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "asset_filename": "frames/scene_001.png",
+      "asset_type": "image",
+      "motion": "kenburns_auto",
+      "animated_hook": false,
+      "ambiente": "viento+oceano",
+      "sfx": [
+        "viento"
+      ],
+      "image_origen": "Generada con IA para este paquete; ilustración editorial, no fotografía ni imagen documental."
+    },
+    {
+      "id": "scene_002",
+      "arc": "desarrollo",
+      "duration_seconds": 9,
+      "narration": "Hoy, esa bahía separa Groenlandia de Canadá. Bajo el agua, el relieve conserva huellas de la plataforma que desapareció hace miles de años.",
+      "on_screen_text": "Bahía de Baffin",
+      "visual_description": "A stylized aerial geography view of Baffin Bay between Greenland and northeastern Canada, with angular coastlines, glaciers, floating ice and dark teal water; leave clear central water for an overlaid map marker.",
+      "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text + A stylized aerial geography view of Baffin Bay between Greenland and northeastern Canada, with angular coastlines, glaciers, floating ice and dark teal water; leave clear central water for an overlaid map marker. vertical 9:16, no text",
+      "source_ids": [
+        "SRC-001",
+        "SRC-003"
+      ],
+      "asset_filename": "frames/scene_002.png",
+      "asset_type": "image",
+      "motion": "kenburns_auto",
+      "animated_hook": false,
+      "ambiente": "viento",
+      "sfx": [
+        "olas"
+      ],
+      "image_origen": "Generada con IA para este paquete; ilustración editorial, no fotografía ni imagen documental.",
+      "capa": {
+        "tipo": "mapa",
+        "region": [
+          -85,
+          -45,
+          55,
+          78
+        ],
+        "puntos": [
+          {
+            "nombre": "Bahía de Baffin (referencia geográfica aproximada; no es un punto de muestreo)",
+            "lon": -65,
+            "lat": 68.5
+          }
+        ],
+        "titulo": "Bahía de Baffin",
+        "fuente": "Klotsko et al. (2026), Nature Geoscience; Natural Earth 1:110m"
+      }
+    },
+    {
+      "id": "scene_003",
+      "arc": "desarrollo",
+      "duration_seconds": 9,
+      "narration": "El equipo reunió mapas del fondo marino, perfiles sísmicos y núcleos de sedimento para reconstruir dónde se apoyaba el hielo.",
+      "on_screen_text": "Huellas bajo el mar",
+      "visual_description": "An Arctic research vessel surveying a dramatic underwater continental slope, layered seafloor ridges and channels illuminated by a sonar fan, no readable instruments.",
+      "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text + An Arctic research vessel surveying a dramatic underwater continental slope, layered seafloor ridges and channels illuminated by a sonar fan, no readable instruments. vertical 9:16, no text",
+      "source_ids": [
+        "SRC-001"
+      ],
+      "asset_filename": "frames/scene_003.png",
+      "asset_type": "image",
+      "motion": "kenburns_auto",
+      "animated_hook": false,
+      "ambiente": "viento",
+      "sfx": [
+        "reloj"
+      ],
+      "image_origen": "Generada con IA para este paquete; ilustración editorial, no fotografía ni imagen documental."
+    },
+    {
+      "id": "scene_004",
+      "arc": "desarrollo",
+      "duration_seconds": 9,
+      "narration": "La reconstrucción apunta a una plataforma de unos ciento cincuenta mil kilómetros cuadrados. No era una franja estrecha: cubría una cuenca entera.",
+      "on_screen_text": "150,000 km²",
+      "visual_description": "A monumental flat ice shelf filling a broad polar basin, with scattered floes and distant angular mountain ranges; keep the center visually uncluttered for a sourced data overlay.",
+      "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text + A monumental flat ice shelf filling a broad polar basin, with scattered floes and distant angular mountain ranges; keep the center visually uncluttered for a sourced data overlay. vertical 9:16, no text",
+      "source_ids": [
+        "SRC-001"
+      ],
+      "asset_filename": "frames/scene_004.png",
+      "asset_type": "image",
+      "motion": "kenburns_auto",
+      "animated_hook": false,
+      "ambiente": "viento+oceano",
+      "sfx": [
+        "viento"
+      ],
+      "image_origen": "Generada con IA para este paquete; ilustración editorial, no fotografía ni imagen documental.",
+      "capa": {
+        "tipo": "dato",
+        "valor": "150,000 km²",
+        "etiqueta": "Área reconstruida de la plataforma de hielo en Baffin Bay",
+        "fuente": "Klotsko et al. (2026), Nature Geoscience, DOI 10.1038/s41561-026-02126-7"
+      }
+    },
+    {
+      "id": "scene_005",
+      "arc": "desarrollo",
+      "duration_seconds": 9,
+      "narration": "Su espesor estimado alcanzaba entre 1.4 y 2.1 kilómetros, tras corregir los cambios del nivel relativo del mar. La escala es difícil de imaginar.",
+      "on_screen_text": "1.4–2.1 km",
+      "visual_description": "A cutaway of an immense ice shelf with a deep submerged blue-green body beneath its pale surface, a tiny ship and dark seabed to communicate scale without labels.",
+      "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text + A cutaway of an immense ice shelf with a deep submerged blue-green body beneath its pale surface, a tiny ship and dark seabed to communicate scale without labels. vertical 9:16, no text",
+      "source_ids": [
+        "SRC-001"
+      ],
+      "asset_filename": "frames/scene_005.png",
+      "asset_type": "image",
+      "motion": "kenburns_auto",
+      "animated_hook": false,
+      "ambiente": "oceano",
+      "sfx": [
+        "olas"
+      ],
+      "image_origen": "Generada con IA para este paquete; ilustración editorial, no fotografía ni imagen documental.",
+      "capa": {
+        "tipo": "grafico",
+        "valor": "1.4–2.1 km",
+        "etiqueta": "Espesor estimado, corregido por nivel relativo del mar",
+        "fuente": "Klotsko et al. (2026), Nature Geoscience, DOI 10.1038/s41561-026-02126-7"
+      }
+    },
+    {
+      "id": "scene_006",
+      "arc": "cierre_historia",
+      "duration_seconds": 9,
+      "narration": "Esa plataforma conectaba los mantos Laurentide, Innuitian y de Groenlandia. Al apoyarse contra ellos, funcionaba como un tope que ayudaba a estabilizarlos.",
+      "on_screen_text": "Tres mantos unidos",
+      "visual_description": "Three large glacier systems converging toward a broad ice shelf in a Baffin Bay-like basin, their fronts mechanically braced by the shelf, crisp geometric shapes.",
+      "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text + Three large glacier systems converging toward a broad ice shelf in a Baffin Bay-like basin, their fronts mechanically braced by the shelf, crisp geometric shapes. vertical 9:16, no text",
+      "source_ids": [
+        "SRC-001"
+      ],
+      "asset_filename": "frames/scene_006.png",
+      "asset_type": "image",
+      "motion": "kenburns_auto",
+      "animated_hook": false,
+      "ambiente": "viento",
+      "sfx": [
+        "viento"
+      ],
+      "image_origen": "Generada con IA para este paquete; ilustración editorial, no fotografía ni imagen documental."
+    },
+    {
+      "id": "scene_007",
+      "arc": "cierre_historia",
+      "duration_seconds": 9,
+      "narration": "Pero los autores infieren que el colapso de la plataforma desencadenó un retroceso rápido del hielo. Cuando se perdió el soporte, cambió la estabilidad del conjunto.",
+      "on_screen_text": "El soporte colapsó",
+      "visual_description": "A fractured ancient ice shelf with separated angular floes and retreating glacier fronts, deep teal water and distant mountains under a muted golden sky; depict a geological reconstruction, not a witnessed event.",
+      "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text + A fractured ancient ice shelf with separated angular floes and retreating glacier fronts, deep teal water and distant mountains under a muted golden sky; depict a geological reconstruction, not a witnessed event. vertical 9:16, no text",
+      "source_ids": [
+        "SRC-001"
+      ],
+      "asset_filename": "frames/scene_007.png",
+      "asset_type": "image",
+      "motion": "kenburns_auto",
+      "animated_hook": false,
+      "ambiente": "viento+oceano",
+      "sfx": [
+        "olas"
+      ],
+      "image_origen": "Generada con IA para este paquete; ilustración editorial, no fotografía ni imagen documental."
+    },
+    {
+      "id": "scene_008",
+      "arc": "reflexion_o_pregunta",
+      "duration_seconds": 9,
+      "narration": "No significa que el Ártico antiguo sea un duplicado del presente. El estudio ofrece una analogía física para las plataformas que hoy sostienen el hielo antártico.",
+      "on_screen_text": "Una analogía actual",
+      "visual_description": "A present-day Antarctic floating ice shelf at the edge of a vast ice sheet, dark ocean, crevassed blue-white ice and distant mountains, a visual analogy rather than a literal reconstruction.",
+      "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text + A present-day Antarctic floating ice shelf at the edge of a vast ice sheet, dark ocean, crevassed blue-white ice and distant mountains, a visual analogy rather than a literal reconstruction. vertical 9:16, no text",
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "asset_filename": "frames/scene_008.png",
+      "asset_type": "image",
+      "motion": "kenburns_auto",
+      "animated_hook": false,
+      "ambiente": "viento",
+      "sfx": [
+        "viento"
+      ],
+      "image_origen": "Generada con IA para este paquete; ilustración editorial, no fotografía ni imagen documental."
+    },
+    {
+      "id": "scene_009",
+      "arc": "reflexion_o_pregunta",
+      "duration_seconds": 9,
+      "narration": "Si ese soporte se debilita, los glaciares pueden retroceder con mayor facilidad. El fondo marino guarda la memoria de lo que puede ocurrir cuando una barrera desaparece. Esto fue Datos y ociosidades.",
+      "on_screen_text": "El hielo deja huellas",
+      "visual_description": "A wide polar landscape where a vast ice shelf recedes toward distant glaciers, with a narrow band of open water and golden light across a dark teal sea, contemplative closing image.",
+      "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text + A wide polar landscape where a vast ice shelf recedes toward distant glaciers, with a narrow band of open water and golden light across a dark teal sea, contemplative closing image. vertical 9:16, no text",
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "asset_filename": "frames/scene_009.png",
+      "asset_type": "image",
+      "motion": "kenburns_auto",
+      "animated_hook": false,
+      "ambiente": "oceano+viento",
+      "sfx": [
+        "olas"
+      ],
+      "image_origen": "Generada con IA para este paquete; ilustración editorial, no fotografía ni imagen documental."
+    }
+  ],
+  "cortinilla_fuentes": {
+    "duration_seconds": 6,
+    "titulo": "Fuentes",
+    "aviso": "Imágenes generadas con IA. Voz sintética. Música sintetizada; efectos CC0/dominio público.",
+    "firma": "Datos y ociosidades · @datosyociosidades",
+    "bg_rgb": [
+      12,
+      32,
+      47
+    ],
+    "fuentes_en_pantalla": [
+      "Klotsko et al., Nature Geoscience (2026), doi:10.1038/s41561-026-02126-7",
+      "Nature Geoscience Research Briefing (26 oct 2026), doi:10.1038/s41561-026-02127-6"
+    ]
+  },
+  "audio": {
+    "music_asset": "sintetico:circuito_neural",
+    "cama_musical": "circuito_neural",
+    "music_lufs": -38,
+    "ambiente_lufs": -30,
+    "music_license": "Síntesis propia del pipeline scripts/cama_sonora.py; el repositorio describe la música sintetizada como obra propia. El documento de licencia de audio citado por el código no está presente en docs/; ver licencias.json.",
+    "sfx_license": "Wikimedia Commons CC0/dominio público según scripts/sfx_manifest.json; descarga y verificación final de archivos quedan para el pipeline.",
+    "music_protagonista": false
+  },
+  "export": {
+    "filename": "capsula.mp4",
+    "resolution": "1080x1920",
+    "fps": 30,
+    "video_codec": "h264",
+    "audio_codec": "aac",
+    "loudness_lufs": -14,
+    "plano_seconds": 2.5,
+    "subtitle_max_words": 3
+  },
+  "proveedor_imagenes": "ChatGPT ImageGen; nueve imágenes ilustrativas generadas para este paquete y ajustadas a 1080x1920.",
+  "parece_real": false,
+  "canal": {
+    "nombre": "Datos y ociosidades",
+    "handle": "@datosyociosidades",
+    "youtube_channel_id": "UCU2ZI-6pBJEr9aSFsF6bxLw"
+  },
+  "publicacion": {
+    "youtube": {
+      "privacy": "private",
+      "publishAt": "",
+      "titulo": "El hielo que sostuvo tres mantos #Shorts",
+      "descripcion_con_fuentes": "Una plataforma de hielo en la bahía de Baffin habría estabilizado tres mantos durante la última glaciación. Estudio original: Klotsko et al., Nature Geoscience (2026), https://doi.org/10.1038/s41561-026-02126-7. Resumen de investigación: https://doi.org/10.1038/s41561-026-02127-6. TikTok: https://www.tiktok.com/@datosyociosidades",
+      "tags": [
+        "#Shorts",
+        "ciencia",
+        "glaciación",
+        "bahía de Baffin",
+        "clima"
+      ],
+      "synthetic_content": true
+    },
+    "tiktok": {
+      "modo": "desactivado_por_defecto",
+      "is_aigc": true,
+      "caption": "Una plataforma de hielo sostuvo tres mantos durante la última glaciación. La huella quedó bajo el mar. #Ciencia #Glaciación"
+    }
+  },
+  "estado_produccion": "PAQUETE_PREPARADO_NO_RENDERIZADO_NO_PUBLICADO"
+}
