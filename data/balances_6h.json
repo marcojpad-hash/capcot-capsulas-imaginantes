@@ -462,5 +462,111 @@
       ]
     ],
     "nota_flujo": "Noche lenta pero viva (Δ vs balance 20:03, ~12 h). YouTube +443 vistas y +1 suscriptor, empujado por Abejas (+222), luego Osedax (+80), El Niño (+57) y Sueño (+56). En TikTok +254, casi todo de El Niño, que despertó (+213, likes 6→13); reina topo apenas +18. Se estancaron Osedax, Abejas y Aves en TT (0) y Reina topo y Aves en YT (0). Tardígrado TT, publicado 25-oct 22:00, sigue en 0 vistas tras ~10 h. Hoy: pimiento YT 13:25, hongo YT 16:06, ave jurásica TT 20:00."
+  },
+  {
+    "hora_cdmx": "2026-10-26T14:05-06:00",
+    "base_youtube": "2026-10-26T08:07",
+    "base_tiktok": "2026-10-26T08:07",
+    "youtube_totales": {
+      "view": 6648,
+      "like": 287,
+      "comment": 10
+    },
+    "suscriptores": 24,
+    "delta_youtube": {
+      "view": 1049,
+      "like": 68,
+      "comment": 6,
+      "suscriptores": 9
+    },
+    "tiktok_totales": {
+      "view": 3461,
+      "like": 211,
+      "comment": 0
+    },
+    "seguidores_tiktok": 1,
+    "delta_tiktok": {
+      "view": 4,
+      "like": 1
+    },
+    "ranking_crecimiento": [
+      [
+        "YT Reina topo",
+        917
+      ],
+      [
+        "YT Osedax",
+        44
+      ],
+      [
+        "YT Pimiento",
+        32
+      ],
+      [
+        "YT Sueño/luz eléctrica",
+        25
+      ],
+      [
+        "YT Ideonella",
+        11
+      ],
+      [
+        "YT Abejas",
+        8
+      ],
+      [
+        "YT Serpientes",
+        6
+      ],
+      [
+        "YT El Niño",
+        6
+      ],
+      [
+        "TT reina_topo",
+        3
+      ],
+      [
+        "TT serpientes",
+        1
+      ],
+      [
+        "YT Aves",
+        0
+      ],
+      [
+        "TT tardigrado",
+        0
+      ],
+      [
+        "TT ave_jurasica",
+        0
+      ],
+      [
+        "TT sueno_luz_electrica",
+        0
+      ],
+      [
+        "TT osedax_huesos",
+        0
+      ],
+      [
+        "TT abejas_bullying",
+        0
+      ],
+      [
+        "TT aves_mujeres",
+        0
+      ],
+      [
+        "TT ideonella",
+        0
+      ],
+      [
+        "TT el_nino_hashtags_IA",
+        0
+      ]
+    ],
+    "nota_flujo": "YouTube aceleró fuerte en la mañana: +1,049 vistas, +68 likes, +6 comentarios y +9 suscriptores (15 a 24) en ~6 h. Casi todo lo empujó Reina topo, que despertó de 4 a 921 (+917, 60 likes), aunque su ritmo bajó en la última hora (+8 desde 13:53). Detrás: Osedax +44, Pimiento +32 (público desde 13:25), Sueño +25. Abejas, Ideonella, Serpientes y El Niño casi planos (+6 a +11); Aves en 0. TikTok plano: +4 vistas y +1 like en 6 h; tardígrado sigue en 0 a ~16 h de su hora (posible publicación fallida). Pendientes hoy: hongo YT 16:06, ave jurásica TT 20:00."
   }
 ]

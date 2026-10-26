@@ -2565,5 +2565,130 @@
     },
     "tiktok": null,
     "nota": "Registro horario 14:00 (corrida 13:53). YT Data API uploads + IDs conocidos. No públicos (excluidos): {'PBDMJxOkCRk': 'private'}. TikTok null: corrida sin navegador (no se abrió TikTok Studio). Delta vs fila 2026-10-26T12:56-06:00."
+  },
+  {
+    "timestamp_cdmx": "2026-10-26T14:05-06:00",
+    "youtube": {
+      "bYGd7QuenSk": {
+        "view": 32,
+        "like": 2,
+        "comment": 0
+      },
+      "gIjJ0YKYQ8M": {
+        "view": 921,
+        "like": 60,
+        "comment": 1
+      },
+      "AJR6kcnnDig": {
+        "view": 121,
+        "like": 10,
+        "comment": 0
+      },
+      "Qe2Y9xDn9QQ": {
+        "view": 890,
+        "like": 31,
+        "comment": 0
+      },
+      "3bhntOcKHPk": {
+        "view": 1399,
+        "like": 36,
+        "comment": 0
+      },
+      "O7TdKvuBjyg": {
+        "view": 11,
+        "like": 1,
+        "comment": 0
+      },
+      "r1AhsPOAS_o": {
+        "view": 1376,
+        "like": 72,
+        "comment": 4
+      },
+      "ZrUtKs7Ty7U": {
+        "view": 1290,
+        "like": 48,
+        "comment": 5
+      },
+      "5D96DmjvioU": {
+        "view": 608,
+        "like": 27,
+        "comment": 0
+      }
+    },
+    "youtube_totales": {
+      "view": 6648,
+      "like": 287,
+      "comment": 10
+    },
+    "suscriptores": 24,
+    "delta_vs_anterior": {
+      "view": 17,
+      "like": 1,
+      "comment": 0,
+      "suscriptores": 0
+    },
+    "tiktok": {
+      "fuente": "TikTok Studio",
+      "videos": {
+        "tardigrado": {
+          "view": 0,
+          "like": 0,
+          "comment": 0
+        },
+        "ave_jurasica": {
+          "view": 0,
+          "like": 0,
+          "comment": 0
+        },
+        "sueno_luz_electrica": {
+          "view": 2,
+          "like": 0,
+          "comment": 0
+        },
+        "reina_topo": {
+          "view": 722,
+          "like": 75,
+          "comment": 0
+        },
+        "osedax_huesos": {
+          "view": 496,
+          "like": 25,
+          "comment": 0
+        },
+        "abejas_bullying": {
+          "view": 500,
+          "like": 23,
+          "comment": 0
+        },
+        "aves_mujeres": {
+          "view": 501,
+          "like": 38,
+          "comment": 0
+        },
+        "serpientes": {
+          "view": 156,
+          "like": 3,
+          "comment": 0
+        },
+        "ideonella": {
+          "view": 562,
+          "like": 34,
+          "comment": 0
+        },
+        "el_nino_hashtags_IA": {
+          "view": 522,
+          "like": 13,
+          "comment": 0
+        }
+      },
+      "totales": {
+        "view": 3461,
+        "like": 211,
+        "comment": 0
+      },
+      "seguidores": 1,
+      "likes_perfil": 210
+    },
+    "nota": "Balance 6h 14:00 (corrida ~14:05). YT Data API uploads (solo públicos; PBDMJxOkCRk hongo privado/programado 16:06 excluido). TT leído en TikTok Studio ~14:05: tardígrado sigue en 0 (posible publicación fallida), ave jurásica programado 20:00."
   }
 ]
