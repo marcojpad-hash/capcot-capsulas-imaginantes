@@ -1,20 +1,20 @@
 {
   "fecha": "2026-10-26",
   "tipo": "endscreens_rotacion",
-  "actualizado_cdmx": "2026-10-26T16:27-06:00",
-  "motivo": "Mj: priorizar hongos PBDMJxOkCRk como destino en lugar del ave-dino (YKld/GHxm). Reina gIj → hongos (antes papel picado i9QB). Hongos como origen → aves O7Td. No usar YKldyldCeiQ/GHxm9dDUMmM/IzWU_1BXq3Q de destino.",
+  "actualizado_cdmx": "2026-10-26T16:50-06:00",
+  "motivo": "Papel picado P1 (i9QB, 430 vistas) y pimiento (bYGd, 307) aceleraron sin pantalla final: i9QB→hongos PBDM (165), bYGd→aves O7Td (12).",
   "vistas_ref": {
-    "r1AhsPOAS_o": 1376,
-    "ZrUtKs7Ty7U": 1298,
-    "3bhntOcKHPk": 1399,
+    "r1AhsPOAS_o": 1381,
+    "ZrUtKs7Ty7U": 1299,
+    "3bhntOcKHPk": 1402,
     "5D96DmjvioU": 608,
     "Qe2Y9xDn9QQ": 890,
-    "O7TdKvuBjyg": 11,
-    "AJR6kcnnDig": 121,
-    "gIjJ0YKYQ8M": 1201,
-    "bYGd7QuenSk": 64,
-    "i9QBFPljl6M": 111,
-    "PBDMJxOkCRk": 112
+    "O7TdKvuBjyg": 12,
+    "AJR6kcnnDig": 134,
+    "gIjJ0YKYQ8M": 1207,
+    "bYGd7QuenSk": 307,
+    "i9QBFPljl6M": 430,
+    "PBDMJxOkCRk": 165
   },
   "mapa": {
     "r1AhsPOAS_o": "AJR6kcnnDig",
@@ -25,7 +25,9 @@
     "O7TdKvuBjyg": "AJR6kcnnDig",
     "AJR6kcnnDig": "O7TdKvuBjyg",
     "gIjJ0YKYQ8M": "PBDMJxOkCRk",
-    "PBDMJxOkCRk": "O7TdKvuBjyg"
+    "PBDMJxOkCRk": "O7TdKvuBjyg",
+    "i9QBFPljl6M": "PBDMJxOkCRk",
+    "bYGd7QuenSk": "O7TdKvuBjyg"
   },
   "pendiente_studio": false,
   "nota": "Aplicado en YouTube Studio Editor > Pantalla final (video específico). Búsqueda: pegar youtube.com/watch?v=ID en 'Buscar vídeos de otros canales' (tus vídeos no lista Shorts). Sin suscripción ni tarjetas.",
@@ -38,7 +40,9 @@
     "O7TdKvuBjyg": "aplicado",
     "AJR6kcnnDig": "aplicado_nuevo",
     "gIjJ0YKYQ8M": "aplicado_2026-10-26 16:27 (antes i9QBFPljl6M → PBDMJxOkCRk)",
-    "PBDMJxOkCRk": "aplicado_nuevo_2026-10-26 16:27 → O7TdKvuBjyg"
+    "PBDMJxOkCRk": "aplicado_nuevo_2026-10-26 16:27 → O7TdKvuBjyg",
+    "i9QBFPljl6M": "aplicado_nuevo_2026-10-26 16:50",
+    "bYGd7QuenSk": "aplicado_nuevo_2026-10-26 16:50"
   },
   "fijos": {
     "Qe2Y9xDn9QQ": "gIjJ0YKYQ8M",
