@@ -1,0 +1,92 @@
+{
+ "project_id": "2026-10-26_papel-picado-dia-muertos_parte2",
+ "serie": "Datos y ociosidades",
+ "title": "Papel picado, parte 2: el desfile de Día de Muertos lo inventó James Bond",
+ "language": "es-MX",
+ "aspect_ratio": "9:16",
+ "target_duration_seconds": 70,
+ "estilo_id": "papel_picado_cincel",
+ "estilo_propuesto": {
+  "ver": "mismo estilo que parte 1 (serie)"
+ },
+ "voice": {
+  "engine": "edge-tts",
+  "voice_id": "es-MX-JorgeNeural",
+  "rate": "+7%",
+  "pitch": "-2Hz",
+  "pad_seconds": 0.35
+ },
+ "estado": "borrador_guion — NO renderizar (esperando créditos Canva IA)",
+ "publicacion_sugerida": "2026-10-27 19:00 (CDMX) — o 26-oct 14:00 si Mj quiere ambas mañana",
+ "titulo_yt": "El desfile de Día de Muertos lo inventó JAMES BOND 🎬💀 (Parte 2) #Shorts",
+ "caption_tt": "No es ancestral: el gran desfile de CDMX empezó en 2016… por una escena de Spectre. Parte 2/2 🎬💀 #DíaDeMuertos #JamesBond #CDMX #DatosYOciosidades",
+ "sources": [
+  {
+   "id": "SRC-001",
+   "cita_corta": "BBC Mundo (2016) – James Bond inspira un desfile del Día de los Muertos",
+   "url": "https://www.bbc.com/mundo/noticias-37813219",
+   "accessed": "2026-10-25",
+   "supports": [
+    "origen en Spectre"
+   ]
+  },
+  {
+   "id": "SRC-002",
+   "cita_corta": "La Jornada (28-oct-2016) – Mancera anuncia el primer desfile",
+   "url": "https://www.jornada.com.mx/2016/10/28/cultura/a06n1cul",
+   "accessed": "2026-10-25",
+   "supports": [
+    "cita 'salió de la película de James Bond'"
+   ]
+  },
+  {
+   "id": "SRC-003",
+   "cita_corta": "El País (30-oct-2016) – Una tradición milenaria de un año de vida",
+   "url": "https://elpais.com/internacional/2016/10/30/mexico/1477791003_218376.html",
+   "accessed": "2026-10-25",
+   "supports": [
+    "250,000 asistentes"
+   ]
+  },
+  {
+   "id": "SRC-004",
+   "cita_corta": "Regeneración (29-oct-2016)",
+   "url": "https://regeneracion.mx/conoce-los-detalles-del-desfile-de-dia-de-muertos-en-la-cdmx/",
+   "accessed": "2026-10-25",
+   "supports": [
+    "1,028 voluntarios, ruta Reforma-Zócalo"
+   ]
+  },
+  {
+   "id": "SRC-005",
+   "cita_corta": "UNESCO – Fiestas indígenas dedicadas a los muertos (inscrito 2008)",
+   "url": "https://ich.unesco.org/es/RL/las-fiestas-indigenas-dedicadas-a-los-muertos-00054",
+   "accessed": "2026-10-25",
+   "supports": [
+    "patrimonio inmaterial"
+   ]
+  }
+ ],
+ "escenas": [
+  {
+   "t": "0-5",
+   "prompt_frame": "Silueta de agente con traje y máscara de calavera entre papel picado. Estilo: ver parte 1"
+  },
+  {
+   "t": "5-22",
+   "prompt_frame": "Desfile 'de película' en calle colonial, toma cinematográfica (sin actores reales reconocibles). Estilo: ver parte 1"
+  },
+  {
+   "t": "22-40",
+   "prompt_frame": "Mapa Reforma→Zócalo trazado con tiras de papel picado; multitud de calaveras. Estilo: ver parte 1"
+  },
+  {
+   "t": "40-55",
+   "prompt_frame": "Panteón de noche, velas y cempasúchil, familia en tumba. Estilo: ver parte 1"
+  },
+  {
+   "t": "55-70",
+   "prompt_frame": "Papel picado ondeando sobre desfile y ofrenda a la vez; cierre canal. Estilo: ver parte 1"
+  }
+ ]
+}

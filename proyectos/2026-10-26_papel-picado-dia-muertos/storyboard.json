@@ -1,0 +1,83 @@
+{
+ "project_id": "2026-10-26_papel-picado-dia-muertos",
+ "serie": "Datos y ociosidades",
+ "title": "Papel picado, parte 1: nació en una tienda de raya",
+ "language": "es-MX",
+ "aspect_ratio": "9:16",
+ "target_duration_seconds": 72,
+ "estilo_id": "papel_picado_cincel",
+ "estilo_propuesto": {
+  "nombre": "Papel picado animado (cincel y luz)",
+  "prompt_base": "handmade Mexican papel picado tissue paper banners, cut-out silhouettes of calaveras and marigolds, backlit by warm candle light, translucent magenta orange purple green paper, visible chisel cuts, fluttering in wind, shallow depth of field, stop-motion feel, vertical 9:16, no text",
+  "paleta": "rosa mexicano, cempasúchil, morado, verde limón, azul rey sobre negro",
+  "base_existente": "deriva de 'papel_recortado_popup' y 'stop-motion de papel (propio)'",
+  "musica_sugerida": "jarana/son suave o marimba lenta (CC0)",
+  "movimiento": "tiras que ondean, cortes que se 'abren' revelando la escena siguiente a través de los huecos"
+ },
+ "voice": {
+  "engine": "edge-tts",
+  "voice_id": "es-MX-JorgeNeural",
+  "rate": "+7%",
+  "pitch": "-2Hz",
+  "pad_seconds": 0.35
+ },
+ "estado": "borrador_guion — NO renderizar (esperando créditos Canva IA)",
+ "publicacion_sugerida": "2026-10-26 21:00 (CDMX) YT+TT",
+ "titulo_yt": "El papel picado nació de una DEUDA 😳 (Parte 1) #Shorts",
+ "caption_tt": "Ese papel que adorna tu ofrenda viene de las tiendas de raya del Porfiriato… y de un pueblo donde 3 de cada 4 personas lo fabrican. Parte 1/2 🟣🟠 #PapelPicado #DíaDeMuertos #Puebla #DatosYOciosidades",
+ "sources": [
+  {
+   "id": "SRC-001",
+   "cita_corta": "La Jornada de Oriente (2011) – papel picado Huixcolotla",
+   "url": "https://www.lajornadadeoriente.com.mx/2011/12/26/puebla/cul116.php",
+   "accessed": "2026-10-25",
+   "supports": [
+    "tiendas de raya s. XIX; etimología; decreto 22-sep-1998"
+   ]
+  },
+  {
+   "id": "SRC-002",
+   "cita_corta": "Excélsior/AFP (16-oct-2026) – Papel picado mexicano: tradición artesanal de Huixcolotla",
+   "url": "https://www.excelsior.com.mx/nacional/papel-picado-mexicano-san-salvador-huixcolotla",
+   "accessed": "2026-10-25",
+   "supports": [
+    "amate prehispánico; papel de China ~1850; 3/4 de ~17 mil habitantes; pliego de 50 hojas"
+   ]
+  },
+  {
+   "id": "SRC-003",
+   "cita_corta": "México Desconocido – Papel picado patrimonio cultural de Puebla",
+   "url": "https://www.mexicodesconocido.com.mx/papel-picado-patrimonio-cultural-puebla.html",
+   "accessed": "2026-10-25",
+   "supports": [
+    "decreto 1998"
+   ]
+  }
+ ],
+ "escenas": [
+  {
+   "t": "0-5",
+   "prompt_frame": "Tira de papel picado ondea; un hueco revela una moneda/ficha de hacienda. Estilo: handmade Mexican papel picado tissue paper banners, cut-out silhouettes of calaveras and marigolds, backlit by warm candle light, translucent magenta orange purple green paper, visible chisel cuts, fluttering in wind, shallow depth of field, stop-motion feel, vertical 9:16, no text"
+  },
+  {
+   "t": "5-20",
+   "prompt_frame": "Tienda de raya de hacienda, libreta de deudas, rollos de papel de China. Estilo: handmade Mexican papel picado tissue paper banners, cut-out silhouettes of calaveras and marigolds, backlit by warm candle light, translucent magenta orange purple green paper, visible chisel cuts, fluttering in wind, shallow depth of field, stop-motion feel, vertical 9:16, no text"
+  },
+  {
+   "t": "20-35",
+   "prompt_frame": "Manos cortando amate con navaja → transición a papel de China multicolor. Estilo: handmade Mexican papel picado tissue paper banners, cut-out silhouettes of calaveras and marigolds, backlit by warm candle light, translucent magenta orange purple green paper, visible chisel cuts, fluttering in wind, shallow depth of field, stop-motion feel, vertical 9:16, no text"
+  },
+  {
+   "t": "35-52",
+   "prompt_frame": "Macro: martillo y cincel atravesando 50 hojas apiladas; plantilla de calavera. Estilo: handmade Mexican papel picado tissue paper banners, cut-out silhouettes of calaveras and marigolds, backlit by warm candle light, translucent magenta orange purple green paper, visible chisel cuts, fluttering in wind, shallow depth of field, stop-motion feel, vertical 9:16, no text"
+  },
+  {
+   "t": "52-65",
+   "prompt_frame": "Calles de Huixcolotla con tendederos de papel picado. Estilo: handmade Mexican papel picado tissue paper banners, cut-out silhouettes of calaveras and marigolds, backlit by warm candle light, translucent magenta orange purple green paper, visible chisel cuts, fluttering in wind, shallow depth of field, stop-motion feel, vertical 9:16, no text"
+  },
+  {
+   "t": "65-72",
+   "prompt_frame": "Ofrenda: papel picado moviéndose con el aire; teaser silueta 007 de esqueleto. Estilo: handmade Mexican papel picado tissue paper banners, cut-out silhouettes of calaveras and marigolds, backlit by warm candle light, translucent magenta orange purple green paper, visible chisel cuts, fluttering in wind, shallow depth of field, stop-motion feel, vertical 9:16, no text"
+  }
+ ]
+}

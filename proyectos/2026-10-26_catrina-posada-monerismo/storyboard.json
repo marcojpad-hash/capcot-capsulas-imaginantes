@@ -1,0 +1,92 @@
+{
+ "project_id": "2026-10-26_catrina-posada-monerismo",
+ "serie": "Datos y ociosidades",
+ "title": "La Catrina no era un homenaje: era una burla",
+ "language": "es-MX",
+ "aspect_ratio": "9:16",
+ "target_duration_seconds": 78,
+ "estilo_id": "grabado_posada",
+ "estilo_propuesto": {
+  "nombre": "Grabado de Posada (calavera de hoja volante)",
+  "prompt_base": "José Guadalupe Posada style relief engraving, type-metal etching look, black ink on cheap yellowed broadside paper, skeleton calaveras in Porfiriato clothing, bold cross-hatching, visible ink bleed and paper fibers, ornamental broadside border, vertical 9:16, no text",
+  "paleta": "negro tinta, papel amarillento/sepia, acento opcional rojo carmín",
+  "evitar": "catrina 'bonita' tipo Disney/Coco, maquillaje de fiesta, colores neón, render 3D",
+  "musica_sugerida": "vals porfiriano desafinado / organillo (CC0 o sintético)",
+  "movimiento": "zoom lento sobre la plancha, hoja volante que se imprime con rodillo, figuras recortadas con parallax"
+ },
+ "voice": {
+  "engine": "edge-tts",
+  "voice_id": "es-MX-JorgeNeural",
+  "rate": "+7%",
+  "pitch": "-2Hz",
+  "pad_seconds": 0.35
+ },
+ "estado": "borrador_guion — NO renderizar (esperando créditos Canva IA)",
+ "publicacion_sugerida": "2026-10-26 19:00 (CDMX) YT+TT",
+ "titulo_yt": "La Catrina NO era un homenaje… era una burla 💀 #Shorts",
+ "caption_tt": "Posada no dibujó a la Catrina para honrar a la muerte: la dibujó para exhibir a quien negaba su origen. Ni siquiera se llamaba Catrina. 💀🎩 #DíaDeMuertos #Catrina #Posada #HistoriaDeMéxico #DatosYOciosidades",
+ "sources": [
+  {
+   "id": "SRC-001",
+   "cita_corta": "BBC Mundo – La Catrina: de dónde viene",
+   "url": "https://www.bbc.com/mundo/noticias-america-latina-46039695",
+   "accessed": "2026-10-25",
+   "supports": [
+    "garbanceros, nuevos ricos que imitaban lo europeo"
+   ]
+  },
+  {
+   "id": "SRC-002",
+   "cita_corta": "Torres Ramos, G. (2014). Polisemia y apropiación de la Catrina. Vita Brevis (INAH) 3(5)",
+   "url": "https://revistas.inah.gob.mx/index.php/vitabrevis/article/download/5545/6392/10489",
+   "accessed": "2026-10-25",
+   "supports": [
+    "uso nacionalista posrevolucionario; 'el mexicano se ríe de la muerte'"
+   ]
+  },
+  {
+   "id": "SRC-003",
+   "cita_corta": "Wikipedia – La Catrina",
+   "url": "https://es.wikipedia.org/wiki/La_Catrina",
+   "accessed": "2026-10-25",
+   "supports": [
+    "Rivera, mural Alameda 1946-47, nombre Catrina"
+   ]
+  },
+  {
+   "id": "SRC-004",
+   "cita_corta": "El Universal Confabulario – La invención de la calavera Garbancera y La Catrina",
+   "url": "https://www.eluniversal.com.mx/cultura/confabulario/no-existe-la-calavera-garbancera-ni-la-catrina/",
+   "accessed": "2026-10-25",
+   "supports": [
+    "hoja volante post mortem 'Remate de calaveras alegres', nombre no usado en vida de Posada"
+   ]
+  }
+ ],
+ "escenas": [
+  {
+   "t": "0-5",
+   "prompt_frame": "Calavera con sombrero de plumas emerge de tinta negra; rodillo imprime la hoja volante. Estilo: José Guadalupe Posada style relief engraving, type-metal etching look, black ink on cheap yellowed broadside paper, skeleton calaveras in Porfiriato clothing, bold cross-hatching, visible ink bleed and paper fibers, ornamental broadside border, vertical 9:16, no text"
+  },
+  {
+   "t": "5-18",
+   "prompt_frame": "Taller de imprenta, prensa manual, hojas volantes colgadas; firma 'Vanegas Arroyo' ilegible (sin texto real). Estilo: José Guadalupe Posada style relief engraving, type-metal etching look, black ink on cheap yellowed broadside paper, skeleton calaveras in Porfiriato clothing, bold cross-hatching, visible ink bleed and paper fibers, ornamental broadside border, vertical 9:16, no text"
+  },
+  {
+   "t": "18-35",
+   "prompt_frame": "Calaveras garbanceras con corsé y bastón frente a escaparate parisino; espejo devuelve esqueleto. Estilo: José Guadalupe Posada style relief engraving, type-metal etching look, black ink on cheap yellowed broadside paper, skeleton calaveras in Porfiriato clothing, bold cross-hatching, visible ink bleed and paper fibers, ornamental broadside border, vertical 9:16, no text"
+  },
+  {
+   "t": "35-50",
+   "prompt_frame": "Retrato grabado de Posada con bombín; transición a mural: Catrina del brazo de Posada y niño Diego. Estilo: José Guadalupe Posada style relief engraving, type-metal etching look, black ink on cheap yellowed broadside paper, skeleton calaveras in Porfiriato clothing, bold cross-hatching, visible ink bleed and paper fibers, ornamental broadside border, vertical 9:16, no text"
+  },
+  {
+   "t": "50-65",
+   "prompt_frame": "Catrina multiplicada como sello oficial / cartel; se vuelve máscara de disfraz. Estilo: José Guadalupe Posada style relief engraving, type-metal etching look, black ink on cheap yellowed broadside paper, skeleton calaveras in Porfiriato clothing, bold cross-hatching, visible ink bleed and paper fibers, ornamental broadside border, vertical 9:16, no text"
+  },
+  {
+   "t": "65-78",
+   "prompt_frame": "Fila de calaveras de todas las clases sociales idénticas; tinta se seca, logo canal. Estilo: José Guadalupe Posada style relief engraving, type-metal etching look, black ink on cheap yellowed broadside paper, skeleton calaveras in Porfiriato clothing, bold cross-hatching, visible ink bleed and paper fibers, ornamental broadside border, vertical 9:16, no text"
+  }
+ ]
+}
