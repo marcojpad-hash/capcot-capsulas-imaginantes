@@ -15,7 +15,7 @@ ESTRUCTURAS = {
     "comparacion": "Compara dos cosas (antes/después, aquí/allá, A vs B) con cifras; cierra con la diferencia clave.",
     "sabias_que": "Encadena 3 datos sorprendentes y verificados sobre el tema, de menor a mayor impacto.",
 }
-CAMAS = ["pulso", "marimba", "pizzicato", "arpegio", "tambor"]
+CAMAS = ["pulso", "marimba", "pizzicato", "arpegio", "tambor", "circuito_neural"]
 def log(): return json.load(open(LOG)) if os.path.exists(LOG) else []
 def _h(s): return int(hashlib.md5(s.encode()).hexdigest(), 16)
 def elegir_estructura(tema="", evitar=()):
