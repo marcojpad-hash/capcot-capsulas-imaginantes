@@ -1,20 +1,21 @@
 {
   "fecha": "2026-10-26",
   "tipo": "endscreens_rotacion",
-  "actualizado_cdmx": "2026-10-26T16:50-06:00",
-  "motivo": "Papel picado P1 (i9QB, 430 vistas) y pimiento (bYGd, 307) aceleraron sin pantalla final: i9QB→hongos PBDM (165), bYGd→aves O7Td (12).",
+  "actualizado_cdmx": "2026-10-26T17:45-06:00",
+  "motivo": "Pimiento (bYGd 770) y papel picado P1 (i9QB 755) siguen acelerando; hongos (PBDM 228) ya se mueve solo y sueño (AJR6 134) quedó plano: i9QB→AJR6 (sueño); Catrina nueva (ivVo 75) →PBDM; bYGd sigue →O7Td (12).",
   "vistas_ref": {
-    "r1AhsPOAS_o": 1381,
-    "ZrUtKs7Ty7U": 1299,
-    "3bhntOcKHPk": 1402,
-    "5D96DmjvioU": 608,
-    "Qe2Y9xDn9QQ": 890,
-    "O7TdKvuBjyg": 12,
-    "AJR6kcnnDig": 134,
+    "ivVo2H9NaEU": 75,
+    "PBDMJxOkCRk": 228,
+    "i9QBFPljl6M": 755,
+    "bYGd7QuenSk": 770,
     "gIjJ0YKYQ8M": 1207,
-    "bYGd7QuenSk": 307,
-    "i9QBFPljl6M": 430,
-    "PBDMJxOkCRk": 165
+    "AJR6kcnnDig": 134,
+    "Qe2Y9xDn9QQ": 922,
+    "3bhntOcKHPk": 1403,
+    "O7TdKvuBjyg": 12,
+    "r1AhsPOAS_o": 1381,
+    "ZrUtKs7Ty7U": 1302,
+    "5D96DmjvioU": 612
   },
   "mapa": {
     "r1AhsPOAS_o": "AJR6kcnnDig",
@@ -26,8 +27,9 @@
     "AJR6kcnnDig": "O7TdKvuBjyg",
     "gIjJ0YKYQ8M": "PBDMJxOkCRk",
     "PBDMJxOkCRk": "O7TdKvuBjyg",
-    "i9QBFPljl6M": "PBDMJxOkCRk",
-    "bYGd7QuenSk": "O7TdKvuBjyg"
+    "i9QBFPljl6M": "AJR6kcnnDig",
+    "bYGd7QuenSk": "O7TdKvuBjyg",
+    "ivVo2H9NaEU": "PBDMJxOkCRk"
   },
   "pendiente_studio": false,
   "nota": "Aplicado en YouTube Studio Editor > Pantalla final (video específico). Búsqueda: pegar youtube.com/watch?v=ID en 'Buscar vídeos de otros canales' (tus vídeos no lista Shorts). Sin suscripción ni tarjetas.",
@@ -41,8 +43,9 @@
     "AJR6kcnnDig": "aplicado_nuevo",
     "gIjJ0YKYQ8M": "aplicado_2026-10-26 16:27 (antes i9QBFPljl6M → PBDMJxOkCRk)",
     "PBDMJxOkCRk": "aplicado_nuevo_2026-10-26 16:27 → O7TdKvuBjyg",
-    "i9QBFPljl6M": "aplicado_nuevo_2026-10-26 16:50",
-    "bYGd7QuenSk": "aplicado_nuevo_2026-10-26 16:50"
+    "i9QBFPljl6M": "aplicado_2026-10-26 17:45 (antes PBDMJxOkCRk → AJR6kcnnDig)",
+    "bYGd7QuenSk": "aplicado_nuevo_2026-10-26 16:50",
+    "ivVo2H9NaEU": "aplicado_nuevo_2026-10-26 17:45 → PBDMJxOkCRk"
   },
   "fijos": {
     "Qe2Y9xDn9QQ": "gIjJ0YKYQ8M",
