@@ -77,7 +77,7 @@ NOTAS = {"A1": 55.0, "F1": 43.65, "C2": 65.41, "G1": 49.0, "A3": 220.0, "C4": 26
          "F3": 174.61, "G3": 196.0, "B3": 246.94, "D4": 293.66, "E3": 164.81}
 PROG = [("A1", ["A3", "C4", "E4"]), ("F1", ["F3", "A3", "C4"]), ("C2", ["G3", "C4", "E4"]), ("G1", ["G3", "B3", "D4"])]
 
-NOTAS.update({"D2": 73.42, "E2": 82.41, "D3": 146.83, "A4": 440.0, "G4": 392.0, "B4": 493.88, "D5": 587.33, "E5": 659.25})
+NOTAS.update({"D2": 73.42, "E2": 82.41, "D3": 146.83, "A4": 440.0, "G4": 392.0, "B4": 493.88, "D5": 587.33, "E5": 659.25, "Bb1": 58.27, "Bb3": 233.08, "F4": 349.23})
 # Camas musicales (regla anti 'contenido en serie', YouTube 2801973): varias, rotadas, todas síntesis propia (licencia: obra propia).
 CAMAS = {
     "pulso":    {"bpm": 92,  "prog": PROG, "timbre": "pad",     "bateria": "lofi"},
@@ -85,6 +85,8 @@ CAMAS = {
     "pizzicato":{"bpm": 84,  "prog": [("D2", ["D4", "F3", "A3"]), ("A1", ["A3", "C4", "E4"]), ("G1", ["G3", "B3", "D4"]), ("A1", ["A3", "C4", "E4"])], "timbre": "pluck", "bateria": "suave"},
     "arpegio":  {"bpm": 112, "prog": [("E2", ["E4", "G4", "B4"]), ("C2", ["C4", "E4", "G4"]), ("G1", ["G4", "B4", "D5"]), ("D2", ["D4", "A4", "D5"])], "timbre": "arp", "bateria": "lofi"},
     "tambor":   {"bpm": 96,  "prog": [("A1", ["A3", "E4", "A4"]), ("G1", ["G3", "D4", "G4"]), ("F1", ["F3", "C4", "A4"]), ("E2", ["E4", "B3", "E4"])], "timbre": "pad", "bateria": "mano"},
+    # Cama nueva para la cápsula externa del gemelo digital: pad sintético y pulso suave.
+    "circuito_neural": {"bpm": 88, "prog": [("D2", ["D4", "F4", "A4"]), ("Bb1", ["Bb3", "D4", "F4"]), ("G1", ["G3", "B3", "D4"]), ("C2", ["C4", "E4", "G4"])], "timbre": "pad", "bateria": "suave"},
 }
 
 def musica(total, bpm=92, cama="pulso"):
