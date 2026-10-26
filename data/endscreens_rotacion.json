@@ -2,7 +2,7 @@
   "fecha": "2026-10-25",
   "tipo": "endscreens_rotacion",
   "actualizado_cdmx": "2026-10-25T20:10-06:00",
-  "motivo": "Tras diagnóstico 20:03: Abejas→sueño (flojo); Qe2→gIj fijo Mj.",
+  "motivo": "Override Mj: Abejas (3bhnt) → sueño (AJR); Qe2→gIj sigue fijo. Imaginantes aplica Abejas en Studio.",
   "vistas_ref": {
     "r1AhsPOAS_o": 1349,
     "ZrUtKs7Ty7U": 1265,
@@ -36,7 +36,8 @@
     "gIjJ0YKYQ8M": "aplicado_nuevo"
   },
   "fijos": {
-    "Qe2Y9xDn9QQ": "gIjJ0YKYQ8M"
+    "Qe2Y9xDn9QQ": "gIjJ0YKYQ8M",
+    "3bhntOcKHPk": "AJR6kcnnDig"
   },
-  "nota_fijos": "Destinos fijos por pedido de Mj; CAPCOT Pantallas no debe revertirlos."
+  "nota_fijos": "Destinos fijos por pedido de Mj; CAPCOT Pantallas no debe revertirlos. Incluye Qe2→gIj y Abejas→sueño."
 }
