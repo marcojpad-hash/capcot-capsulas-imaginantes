@@ -4,6 +4,42 @@
   "pedido_mj": "pt144u/t145u",
   "slots": [
     {
+      "hora": "14:30",
+      "id": "2026-10-27_TBD-B",
+      "titulo": "TBD",
+      "angulo_propuesto": "Muertos en mosaico (CU / O'Gorman)",
+      "estilo": "mosaico",
+      "estado": "TBD",
+      "plataformas": [
+        "youtube",
+        "tiktok"
+      ],
+      "nota": "Propuesta pt160u; ver salidas/_ops/2026-10-25_huecos_26_28_estilos.md"
+    },
+    {
+      "hora": "14:30",
+      "id": "2026-10-29_muralismo-cu",
+      "titulo": "Muralismo CU / Biblioteca Central O’Gorman",
+      "nota": "Mj: meter el 27-oct (carpeta aún 29); pendiente revisión",
+      "plataformas": [
+        "youtube",
+        "tiktok"
+      ]
+    },
+    {
+      "hora": "17:00",
+      "id": "2026-10-27_TBD-C",
+      "titulo": "TBD",
+      "angulo_propuesto": "Ciencia del cempasúchil",
+      "estilo": "litografia_azul_dorado",
+      "estado": "TBD",
+      "plataformas": [
+        "youtube",
+        "tiktok"
+      ],
+      "nota": "Propuesta pt160u; ver salidas/_ops/2026-10-25_huecos_26_28_estilos.md"
+    },
+    {
       "hora": "19:00",
       "id": "2026-10-27_ddm-parte3-pomuch",
       "titulo": "Día de Muertos · Parte 3: En este pueblo SACAN a sus muertos… para bañarlos",
@@ -25,5 +61,7 @@
     "P2": "papel_mache_cartonería",
     "P3": "bordado",
     "P4": "codex_mexica"
-  }
+  },
+  "actualizado_cdmx": "2026-10-25T22:10-06:00",
+  "nota": "26 cubierto (4). 27: muralismo + P3 + 1–2 TBD (infantil mañana?). 28: P4 + 2 TBD."
 }
