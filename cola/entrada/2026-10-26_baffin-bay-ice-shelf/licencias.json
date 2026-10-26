@@ -1,0 +1,68 @@
+{
+  "project_id": "2026-10-26_baffin-bay-ice-shelf",
+  "musica": {
+    "cama": "circuito_neural",
+    "origen": "síntesis propia del pipeline (scripts/cama_sonora.py, numpy)",
+    "licencia": "El código del repositorio la describe como obra propia. El documento de licencia de audio citado por el código no se encontró en docs/; revisión formal pendiente.",
+    "generada_por_ia": false,
+    "estado": "no generada en este entorno"
+  },
+  "sfx": {
+    "viento": {
+      "archivo": "viento.ogg",
+      "commons": "File:Howling wind.ogg",
+      "autor": "Tvabutzku1234",
+      "licencia": "CC0",
+      "pagina": "https://commons.wikimedia.org/wiki/File:Howling_wind.ogg",
+      "licencia_verificada_en_repositorio": "CC0; manifest verificado 2026-10-24",
+      "estado": "no descargado; pipeline pendiente"
+    },
+    "olas": {
+      "archivo": "olas.ogg",
+      "commons": "File:Ocean Waves on a Tropical Beach.ogg",
+      "autor": "Jarrod stanley",
+      "licencia": "CC0",
+      "pagina": "https://commons.wikimedia.org/wiki/File:Ocean_Waves_on_a_Tropical_Beach.ogg",
+      "licencia_verificada_en_repositorio": "CC0; manifest verificado 2026-10-24",
+      "estado": "no descargado; pipeline pendiente"
+    },
+    "reloj": {
+      "archivo": "reloj.ogg",
+      "commons": "File:Clock ticking.ogg",
+      "autor": "natalie",
+      "licencia": "Public domain",
+      "pagina": "https://commons.wikimedia.org/wiki/File:Clock_ticking.ogg",
+      "licencia_verificada_en_repositorio": "Public domain; manifest verificado 2026-10-24",
+      "estado": "no descargado; pipeline pendiente"
+    }
+  },
+  "imagenes": {
+    "origen": "ChatGPT ImageGen; nueve ilustraciones originales generadas para este paquete el 2026-10-26",
+    "estilo": "art_deco_poster",
+    "prompt_base": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text",
+    "realista": false,
+    "licencia": "Generadas para el proyecto; uso sujeto a los términos aplicables de OpenAI. No se reutilizaron fotografías de terceros.",
+    "estado": "incluidas en el ZIP; no se suben a GitHub"
+  },
+  "voz": {
+    "motor": "Microsoft Edge TTS",
+    "voz": "es-MX-JorgeNeural",
+    "rate": "+7%",
+    "pitch": "-2Hz",
+    "nota": "Voz requerida por el procedimiento; no generada porque edge_tts no está instalado y no existe el runtime /workspace/capcot."
+  },
+  "capas_datos": {
+    "tipos": [
+      "mapa",
+      "dato",
+      "grafico"
+    ],
+    "mapa_base": "Natural Earth 110m (dominio público)",
+    "render": "pipeline oficial pendiente; capa descrita en storyboard"
+  },
+  "fuentes_datos": [
+    "https://doi.org/10.1038/s41561-026-02126-7",
+    "https://doi.org/10.1038/s41561-026-02127-6",
+    "https://www.naturalearthdata.com/downloads/110m-physical-vectors/110m-land/"
+  ]
+}
