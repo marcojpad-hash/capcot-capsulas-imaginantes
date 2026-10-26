@@ -1850,5 +1850,64 @@
   },
   "tiktok": null,
   "nota": "Registro horario 21:00 (corrida ~20:52). YT Data API uploads del canal + GHxm/YAVd. No públicos: ninguno. TikTok null: esta corrida no abrió TikTok Studio (sin navegador); último TT en fila 20:03."
+ },
+ {
+  "timestamp_cdmx": "2026-10-25T21:53-06:00",
+  "youtube": {
+   "gIjJ0YKYQ8M": {
+    "view": 4,
+    "like": 0,
+    "comment": 0
+   },
+   "AJR6kcnnDig": {
+    "view": 48,
+    "like": 2,
+    "comment": 0
+   },
+   "Qe2Y9xDn9QQ": {
+    "view": 797,
+    "like": 29,
+    "comment": 0
+   },
+   "3bhntOcKHPk": {
+    "view": 1170,
+    "like": 33,
+    "comment": 0
+   },
+   "O7TdKvuBjyg": {
+    "view": 11,
+    "like": 1,
+    "comment": 0
+   },
+   "r1AhsPOAS_o": {
+    "view": 1358,
+    "like": 72,
+    "comment": 4
+   },
+   "ZrUtKs7Ty7U": {
+    "view": 1273,
+    "like": 47,
+    "comment": 0
+   },
+   "5D96DmjvioU": {
+    "view": 545,
+    "like": 26,
+    "comment": 0
+   }
+  },
+  "youtube_totales": {
+   "view": 5206,
+   "like": 210,
+   "comment": 4
+  },
+  "suscriptores": 14,
+  "delta_vs_anterior": {
+   "view": 40,
+   "like": 3,
+   "comment": 0,
+   "suscriptores": 0
+  },
+  "tiktok": null,
+  "nota": "Registro horario 22:00 (corrida ~21:53). YT Data API uploads del canal + GHxm/YAVd. No públicos: ninguno. TikTok null: esta corrida no abrió TikTok Studio (sin navegador); último TT en fila 20:03."
  }
 ]
