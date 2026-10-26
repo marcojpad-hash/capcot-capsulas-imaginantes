@@ -1,13 +1,15 @@
 {
   "estado": "publicado_tiktok",
   "mp4": "/workspace/capcot/salidas/2026-10-25_2026-10-25-sueno-electricidad-qom/capsula.mp4",
-  "caption": "En solo diez años, todo un pueblo empezó a dormir más tarde.\n\nUn estudio longitudinal (2012–2024) con 156 personas toba/qom del norte de Argentina registró más de 12,000 episodios de sueño: ambos grupos retrasaron el sueño casi 1 h y los rurales, que recibieron electricidad después de 2016, perdieron 35 min de sueño en una década (Current Biology, 2026).\n\nFuentes en YouTube @datosyociosidades\n\n#aprendeentiktok #sabiasque #ciencia #divulgacioncientifica #sueño",
+  "caption": "¿La luz eléctrica te roba sueño? Lo midieron 12 años.\n\nUn estudio longitudinal (2012–2024) con 156 personas toba/qom del norte de Argentina registró más de 12,000 episodios de sueño: ambos grupos retrasaron el sueño casi 1 h y los rurales, que recibieron electricidad después de 2016, perdieron 35 min de sueño en una década (Current Biology, 2026).\n\nFuentes en YouTube @datosyociosidades\n\n#sabiasque #aprendeentiktok #divulgacioncientifica #sueño #dormir #neurociencia #ciencia",
   "hashtags": [
-    "#aprendeentiktok",
     "#sabiasque",
-    "#ciencia",
+    "#aprendeentiktok",
     "#divulgacioncientifica",
-    "#sueño"
+    "#sueño",
+    "#dormir",
+    "#neurociencia",
+    "#ciencia"
   ],
   "descripcion_completa": "En solo diez años, todo un pueblo empezó a dormir más tarde.\n\nLlegó la luz eléctrica y el sueño se acortó: 12 años midiendo a los qom. Una cápsula de Datos y ociosidades: datos verificados contados como historia.\n\nFuentes:\n• Casiraghi, L.P., Spiousas, I., Trebucq, L.L. et al. (2026). Longitudinal study of Toba/Qom communities reveals delay and shortening of sleep in real time. Current Biology. https://doi.org/10.1016/j.cub.2026.09.058\n• Nature (2026). Sleep declines in rural communities after electricity arrives. Research highlight, 23 oct 2026. https://www.nature.com/articles/d41586-026-03318-2\n• de la Iglesia, H.O. et al. (2015). Access to electric light is associated with shorter sleep duration in a traditionally hunter-gatherer community. Journal of Biological Rhythms 30(4). https://doi.org/10.1177/0748730415590702\n\nEscenas 1-5: imágenes generadas con IA; escenas 6-9: pinturas de Van Gogh (1888, dominio público) · voz sintética con IA · audio sintetizado.\nFuentes en YouTube @datosyociosidades\n\n#aprendeentiktok #sabiasque #ciencia #divulgacioncientifica #sueño",
   "cuenta": "@datosyociosidades",
@@ -15,5 +17,7 @@
   "yt_id": "AJR6kcnnDig",
   "instruccion": "Mj publica desde su teléfono (NO subir desde el navegador del bot). Etiquetar como contenido generado por IA si TikTok lo ofrece. Al publicar: estado='publicado_tiktok' y url.",
   "enviado_a_mj": "2026-10-25T12:18 CDMX",
-  "nota_mj": "confirmado chat 25-oct ~12:25 CDMX"
+  "nota_mj": "confirmado chat 25-oct ~12:25 CDMX",
+  "hashtags_editados_studio": "2026-10-25T20:21-06:00",
+  "hashtags_nota": "Editados en TikTok Studio 25-oct ~20:20 CDMX; posts Under review"
 }
