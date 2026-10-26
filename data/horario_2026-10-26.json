@@ -10,7 +10,10 @@
       "plataformas": [
         "youtube",
         "tiktok"
-      ]
+      ],
+      "serie": "ddm-2026",
+      "parte": 1,
+      "estilo": "papel_picado"
     },
     {
       "hora": "17:00",
@@ -20,6 +23,19 @@
         "youtube",
         "tiktok"
       ]
+    },
+    {
+      "hora": "19:00",
+      "id": "2026-10-26_papel-picado-dia-muertos_parte2",
+      "titulo": "Día de Muertos · Parte 2: la ofrenda",
+      "serie": "ddm-2026",
+      "parte": 2,
+      "estilo": "claymation (variante papel maché/cartonería)",
+      "plataformas": [
+        "youtube",
+        "tiktok"
+      ],
+      "nota": "Cableada a P1. Guion OK; producir después."
     },
     {
       "hora": "19:00",
@@ -42,7 +58,6 @@
       "nota": "Movida de 20:00 a 21:00"
     }
   ],
-  "actualizado_cdmx": "2026-10-25T20:53-06:00",
-  "nota": "P2 mañana 19:00; P3 el 27-oct.",
-  "nota_p2": "P2 (papel picado parte 2 / ofrenda) removido de 26-oct 19:00; reservado para 27-oct 19:00 (pedido MJ pt142u). No producir aún."
+  "actualizado_cdmx": "2026-10-25T20:58-06:00",
+  "nota": "Corrección MJ pt144u: P2 SÍ es 26-oct 19:00. 27-oct = Parte 3 de la misma serie."
 }
