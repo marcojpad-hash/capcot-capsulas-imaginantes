@@ -1,7 +1,7 @@
 {
   "fecha": "2026-10-26",
   "tipo": "endscreens_rotacion",
-  "actualizado_cdmx": "2026-10-26T16:24-06:00",
+  "actualizado_cdmx": "2026-10-26T16:27-06:00",
   "motivo": "Mj: priorizar hongos PBDMJxOkCRk como destino en lugar del ave-dino (YKld/GHxm). Reina gIj → hongos (antes papel picado i9QB). Hongos como origen → aves O7Td. No usar YKldyldCeiQ/GHxm9dDUMmM/IzWU_1BXq3Q de destino.",
   "vistas_ref": {
     "r1AhsPOAS_o": 1376,
@@ -27,7 +27,7 @@
     "gIjJ0YKYQ8M": "PBDMJxOkCRk",
     "PBDMJxOkCRk": "O7TdKvuBjyg"
   },
-  "pendiente_studio": true,
+  "pendiente_studio": false,
   "nota": "Aplicado en YouTube Studio Editor > Pantalla final (video específico). Búsqueda: pegar youtube.com/watch?v=ID en 'Buscar vídeos de otros canales' (tus vídeos no lista Shorts). Sin suscripción ni tarjetas.",
   "aplicado_studio": {
     "r1AhsPOAS_o": "aplicado",
@@ -37,8 +37,8 @@
     "5D96DmjvioU": "aplicado_2026-10-26 15:44 (antes AJR6kcnnDig)",
     "O7TdKvuBjyg": "aplicado",
     "AJR6kcnnDig": "aplicado_nuevo",
-    "gIjJ0YKYQ8M": "pendiente_studio_hongos",
-    "PBDMJxOkCRk": "pendiente_nuevo"
+    "gIjJ0YKYQ8M": "aplicado_2026-10-26 16:27 (antes i9QBFPljl6M → PBDMJxOkCRk)",
+    "PBDMJxOkCRk": "aplicado_nuevo_2026-10-26 16:27 → O7TdKvuBjyg"
   },
   "fijos": {
     "Qe2Y9xDn9QQ": "gIjJ0YKYQ8M",
@@ -51,5 +51,6 @@
     "GHxm9dDUMmM",
     "IzWU_1BXq3Q"
   ],
-  "nota_excluidos": "Ave-dino / velociraptor: no mandar tráfico de pantallas finales (riesgo de parecer fusil). Preferir hongos y otros nuevos flojos."
+  "nota_excluidos": "Ave-dino / velociraptor: no mandar tráfico de pantallas finales (riesgo de parecer fusil). Preferir hongos y otros nuevos flojos.",
+  "nota_studio": "Hongos destino confirmado en timeline. Origen hongos: Studio mostró título «¿Aves que temen a mujeres?» al pegar watch?v=O7TdKvuBjyg (mismo ID O7Td)."
 }
