@@ -268,5 +268,98 @@
    ]
   ],
   "nota_flujo": "TikTok aceleró fuerte: Osedax y Abejas despertaron y la reina topo arrancó con 433. YT sube moderado empujado por Osedax y El Niño; Ideonella, Serpientes y Abejas YT se aplanaron; Aves sigue estancado en ambas plataformas."
+ },
+ {
+  "hora_cdmx": "2026-10-25T20:03-06:00",
+  "base_youtube": "2026-10-25T14:02",
+  "base_tiktok": "2026-10-25T14:02",
+  "youtube_totales": {
+   "view": 5156,
+   "like": 206,
+   "comment": 4
+  },
+  "suscriptores": 14,
+  "delta_youtube": {
+   "view": 688,
+   "like": 25,
+   "suscriptores": 1
+  },
+  "tiktok_totales": {
+   "view": 3203,
+   "like": 203,
+   "comment": 0
+  },
+  "seguidores_tiktok": 1,
+  "delta_tiktok": {
+   "view": 385,
+   "like": 39
+  },
+  "ranking_crecimiento": [
+   [
+    "YT Osedax",
+    588
+   ],
+   [
+    "TT reina_topo",
+    268
+   ],
+   [
+    "TT el_nino_hashtags_IA",
+    39
+   ],
+   [
+    "TT serpientes",
+    37
+   ],
+   [
+    "YT Sueño/luz eléctrica",
+    36
+   ],
+   [
+    "YT Abejas",
+    23
+   ],
+   [
+    "TT abejas_bullying",
+    23
+   ],
+   [
+    "YT El Niño",
+    17
+   ],
+   [
+    "YT Serpientes",
+    11
+   ],
+   [
+    "YT Ideonella",
+    10
+   ],
+   [
+    "TT ideonella",
+    10
+   ],
+   [
+    "TT osedax_huesos",
+    6
+   ],
+   [
+    "YT Aves",
+    3
+   ],
+   [
+    "TT sueno_luz_electrica",
+    2
+   ],
+   [
+    "YT Reina topo",
+    0
+   ],
+   [
+    "TT aves_mujeres",
+    0
+   ]
+  ],
+  "nota_flujo": "Tarde moderada: la reina topo TT siguió (+268) y es el único motor en TikTok; YT sumó +676 repartido (Abejas, Osedax, Serpientes, El Niño, Sueño). Se estancaron en TT Osedax, Abejas, Aves e Ideonella; Sueño TT apenas 2 vistas en 4 h; Reina topo YT (4) y Aves YT (11) siguen casi en cero. Tardígrado TT programado 22:00 y ave jurásica TT 26-oct 20:00."
  }
 ]
