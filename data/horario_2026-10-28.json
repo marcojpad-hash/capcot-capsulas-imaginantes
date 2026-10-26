@@ -1,0 +1,23 @@
+{
+  "fecha": "2026-10-28",
+  "tz": "America/Mexico_City",
+  "pedido_mj": "t145u",
+  "slots": [
+    {
+      "hora": "19:00",
+      "id": "2026-10-28_ddm-parte4-templo-mayor",
+      "titulo": "Día de Muertos · Parte 4: la ofrenda MÁS GRANDE (Templo Mayor)",
+      "serie": "ddm-2026",
+      "parte": 4,
+      "estado": "outline",
+      "angulo": "Ofrenda colosal Motecuhzoma Ilhuicamina (INAH feb-2026): 83 figurillas Mezcala, +4000 moluscos",
+      "continua_de": "P3 Pomuch",
+      "estilo": "codex_mexica",
+      "plataformas": [
+        "youtube",
+        "tiktok"
+      ],
+      "proyecto": "2026-10-28_ddm-parte4-templo-mayor"
+    }
+  ]
+}

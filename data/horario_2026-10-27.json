@@ -1,28 +1,29 @@
 {
   "fecha": "2026-10-27",
   "tz": "America/Mexico_City",
-  "pedido_mj": "pt144u",
+  "pedido_mj": "pt144u/t145u",
   "slots": [
     {
       "hora": "19:00",
-      "id": "2026-10-27_ddm-parte3-templo-mayor",
-      "titulo": "Día de Muertos · Parte 3: la ofrenda MÁS GRANDE (Templo Mayor)",
+      "id": "2026-10-27_ddm-parte3-pomuch",
+      "titulo": "Día de Muertos · Parte 3: En este pueblo SACAN a sus muertos… para bañarlos",
       "serie": "ddm-2026",
       "parte": 3,
-      "estado": "TBD",
-      "angulo_recomendado": "Ofrenda colosal Templo Mayor / Motecuhzoma Ilhuicamina (INAH feb-2026): 83 figurillas Mezcala, +4000 conchas; ~580 años",
-      "angulo_alterno": "Mazahuas/otomíes: monarca = muertos que regresan (Cuicuilco feb-2026)",
+      "estado": "guion_listo",
+      "angulo": "Pomuch, Campeche: limpieza de huesos (Janal Pixán)",
+      "continua_de": "P2 ofrenda (26-oct 19:00)",
       "estilo": "bordado",
       "plataformas": [
         "youtube",
         "tiktok"
       ],
-      "proyecto": "2026-10-27_ofrenda-mas-grande-templo-mayor"
+      "proyecto": "2026-10-27_ddm-parte3-pomuch"
     }
   ],
   "estilos_serie": {
     "P1": "papel_picado",
     "P2": "papel_mache_cartonería",
-    "P3": "grabado_o_bordado_o_alebrije"
+    "P3": "bordado",
+    "P4": "codex_mexica"
   }
 }
