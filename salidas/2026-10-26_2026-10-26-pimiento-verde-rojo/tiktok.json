@@ -1,5 +1,5 @@
 {
- "estado": "pendiente_tiktok",
+ "estado": "pendiente_mj",
  "mp4": "/workspace/capcot/salidas/2026-10-26_2026-10-26-pimiento-verde-rojo/capsula.mp4",
  "caption": "El pimiento verde y el rojo son el mismo fruto.\n\nEl pimiento verde y el rojo son el mismo fruto. Datos verificados contados como historia.\n\nFuentes en YouTube @datosyociosidades\n\n#aprendeentiktok #sabiasque #ciencia #divulgacioncientifica #PimientoMorrónColoresMadurezOrigenMéxico",
  "hashtags": [
@@ -13,5 +13,8 @@
  "cuenta": "@datosyociosidades",
  "hora_sugerida_local": "2026-10-26 13:25 CDMX",
  "yt_id": "bYGd7QuenSk",
- "instruccion": "Agente principal: subir por navegador (agente de escritorio) con este caption; al terminar poner estado='publicado_tiktok' y url."
+ "instruccion": "Mj sube desde su teléfono (no subir desde el box).",
+ "caption_corto": "El pimiento verde y el rojo son el mismo fruto 🫑\n\n#pimiento #pimientomorron #alimentos #ciencia #datoscuriosos #aprendeentiktok",
+ "etiqueta_ia": true,
+ "entregado_a_mj": "2026-10-26T14:20-06:00"
 }

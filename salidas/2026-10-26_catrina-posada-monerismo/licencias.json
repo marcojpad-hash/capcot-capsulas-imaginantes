@@ -1,0 +1,44 @@
+{
+ "project_id": "2026-10-26_catrina-posada-monerismo",
+ "musica": {
+  "cama": "tambor",
+  "origen": "síntesis propia (scripts/cama_sonora.py, numpy)",
+  "licencia": "obra propia de Datos y ociosidades",
+  "generada_por_ia": false
+ },
+ "sfx": {
+  "viento": {
+   "archivo": "viento.ogg",
+   "commons": "File:Howling wind.ogg",
+   "autor": "Tvabutzku1234",
+   "licencia": "CC0",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Howling_wind.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Howling_wind.ogg",
+   "licencia_verificada": "CC0"
+  }
+ },
+ "imagenes": {
+  "origen": "GenerateImage (IA) con prompt_base del estilo",
+  "estilo": "linograbado",
+  "realista": false
+ },
+ "voz": {
+  "motor": "Microsoft Edge TTS",
+  "voz": "es-MX-JorgeNeural",
+  "nota": "voz sintética; no imita a una persona real"
+ },
+ "capas_datos": {
+  "tipos": [
+   "mapa",
+   "dato"
+  ],
+  "mapa_base": "Natural Earth 110m (dominio público)",
+  "render": "matplotlib (propio)"
+ },
+ "fuentes_datos": [
+  "https://www.bbc.com/mundo/noticias-america-latina-46039695",
+  "https://revistas.inah.gob.mx/index.php/vitabrevis/article/download/5545/6392/10489",
+  "https://es.wikipedia.org/wiki/La_Catrina",
+  "https://www.eluniversal.com.mx/cultura/confabulario/no-existe-la-calavera-garbancera-ni-la-catrina/"
+ ]
+}

@@ -1,5 +1,5 @@
 {
- "estado": "pendiente_tiktok",
+ "estado": "pendiente_mj",
  "mp4": "/workspace/capcot/salidas/2026-10-26_2026-10-26-hongo-gente-diminuta/capsula.mp4",
  "caption": "Ves gente diminuta caminando sobre tu mesa.\n\nEl hongo que hace ver gente diminuta. Datos verificados contados como historia.\n\nFuentes en YouTube @datosyociosidades\n\n#aprendeentiktok #sabiasque #ciencia #divulgacioncientifica #HongoLanmaoaAsiaticaAlucinacionesGenteDiminuta",
  "hashtags": [
@@ -13,5 +13,8 @@
  "cuenta": "@datosyociosidades",
  "hora_sugerida_local": "2026-10-26 16:06 CDMX",
  "yt_id": "PBDMJxOkCRk",
- "instruccion": "Agente principal: subir por navegador (agente de escritorio) con este caption; al terminar poner estado='publicado_tiktok' y url."
+ "instruccion": "Mj sube desde su teléfono (no subir desde el box).",
+ "caption_corto": "El hongo que hace ver gente diminuta 🍄\n\n#hongos #micologia #ciencia #datoscuriosos #aprendeentiktok",
+ "etiqueta_ia": true,
+ "entregado_a_mj": "2026-10-26T14:20-06:00"
 }
