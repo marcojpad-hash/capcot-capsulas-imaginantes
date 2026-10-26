@@ -22,15 +22,6 @@
       ]
     },
     {
-      "hora": "19:00",
-      "id": "2026-10-26_papel-picado-dia-muertos_parte2",
-      "titulo": "El desfile de Día de Muertos lo inventó JAMES BOND",
-      "plataformas": [
-        "youtube",
-        "tiktok"
-      ]
-    },
-    {
       "hora": "21:00",
       "id": "2026-10-25_ave-jurasica-REMAKE",
       "titulo": "Ave jurásica remake",
@@ -42,5 +33,6 @@
       "nota": "Movida de 20:00 a 21:00"
     }
   ],
-  "actualizado_cdmx": "2026-10-25T20:47-06:00"
+  "actualizado_cdmx": "2026-10-25T20:51-06:00",
+  "nota": "P2 ofrenda movida a 27-oct (pico trend); no producir aún."
 }
