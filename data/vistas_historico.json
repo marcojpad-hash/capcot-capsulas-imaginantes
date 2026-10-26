@@ -2027,5 +2027,64 @@
   },
   "tiktok": null,
   "nota": "Registro horario 07:00 (corrida ~06:53). YT Data API uploads + IDs conocidos. No públicos (excluidos): {'bYGd7QuenSk': 'private', 'PBDMJxOkCRk': 'private'}. TikTok null: esta corrida no abrió TikTok Studio (sin navegador). Delta vs fila 22:52 del 25-oct (noche sin registros)."
+ },
+ {
+  "timestamp_cdmx": "2026-10-26T08:02-06:00",
+  "youtube": {
+   "5D96DmjvioU": {
+    "view": 583,
+    "like": 27,
+    "comment": 0
+   },
+   "r1AhsPOAS_o": {
+    "view": 1365,
+    "like": 72,
+    "comment": 4
+   },
+   "ZrUtKs7Ty7U": {
+    "view": 1287,
+    "like": 47,
+    "comment": 0
+   },
+   "O7TdKvuBjyg": {
+    "view": 11,
+    "like": 1,
+    "comment": 0
+   },
+   "Qe2Y9xDn9QQ": {
+    "view": 847,
+    "like": 30,
+    "comment": 0
+   },
+   "AJR6kcnnDig": {
+    "view": 88,
+    "like": 6,
+    "comment": 0
+   },
+   "3bhntOcKHPk": {
+    "view": 1390,
+    "like": 35,
+    "comment": 0
+   },
+   "gIjJ0YKYQ8M": {
+    "view": 4,
+    "like": 0,
+    "comment": 0
+   }
+  },
+  "youtube_totales": {
+   "view": 5575,
+   "like": 218,
+   "comment": 4
+  },
+  "suscriptores": 15,
+  "delta_vs_anterior": {
+   "view": 10,
+   "like": 0,
+   "comment": 0,
+   "suscriptores": 0
+  },
+  "tiktok": null,
+  "nota": "Registro horario 08:00. YT Data API uploads + IDs conocidos. No públicos (excluidos): {'PBDMJxOkCRk': 'private', 'bYGd7QuenSk': 'private'}. TikTok null: corrida sin navegador (no se abrió TikTok Studio). Delta vs fila 2026-10-26T06:53-06:00."
  }
 ]
