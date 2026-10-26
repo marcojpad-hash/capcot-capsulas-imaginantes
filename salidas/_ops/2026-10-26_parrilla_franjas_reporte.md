@@ -45,3 +45,36 @@ Prueba rápida: ¿un niño de 8 años lo entiende y lo cuenta en la cena? → A/
 | 28-oct | 13:30 | B · familia | El disco de oro del Voyager: ¿qué sonidos de la Tierra van rumbo a las estrellas? | parking voyager-disco-oro |
 Se mantienen: 27 muralismo CU 14:30, cempasúchil 17:00, P3 Pomuch 19:00; 28 monarca 14:30, pan de muerto 17:00, P4 Templo Mayor 19:00.
 Datos de cada borrador se verifican con fuente antes de guion.
+
+---
+## Actualización 2026-10-25 22:40 CDMX (feedback Mj pt168u)
+- **Muralismo CU = franja C (general)** confirmado (27-oct 14:30).
+- Kids OK: Titanoboa (28 07:00), Chrysopelea (27 07:00).
+- **Biología sí va en kids** (el «no saturar biología» aplicaba solo al mix general).
+
+### Ajolote: giro no cliché (27-oct 13:30, borrador)
+«Los ajolotes que viajaron a París… y se convirtieron en otro animal»
+- 1864: llegan 34 ajolotes vivos de Xochimilco a París; Auguste Duméril recibe 6 (5 machos, 1 hembra), se reproducen y algunas crías **se transforman en salamandras terrestres** con pulmones. Nadie lo esperaba: se creía que eran larvas, o adultos de otra especie. https://www.frontiersin.org/journals/cell-and-developmental-biology/articles/10.3389/fcell.2022.786533/full
+- Casi todos los ajolotes de laboratorio del mundo descienden de ese lote; los **blancos (leucísticos)** vienen de **un solo macho blanco** del envío. https://doi.org/10.1186/s12864-020-07248-9 · https://pmc.ncbi.nlm.nih.gov/articles/PMC7051018/
+- Remate extra: en 1962 se cruzaron con salamandra tigre → muchos ajolotes de laboratorio llevan ADN de salamandra tigre (mismas fuentes).
+- «Bloques en las manchas»: **no lo pude verificar**. Lo más cercano es la pigmentación: un solo macho blanco dio origen a la línea blanca. Hay que preguntarle a Mj qué recuerda.
+- Si no convence → reemplazo: tiburón de Groenlandia (abajo).
+
+### 3 temas nuevos kids/familia (borradores en `proyectos/2026-xx_kids_*`)
+1. **El pulpo tiene 3 corazones y sangre azul**: «cuando nada, un corazón se detiene». Anatomía imposible, una sola idea.
+2. **El tiburón que nació antes que tus tatarabuelos** (Groenlandia, ~392 ± 120 años; Nielsen et al., Science 2016). Es un récord; el adulto engancha con la comparación histórica.
+3. **El camarón mantis da el golpe más rápido del mar**: «el agua hace burbujas que explotan» (cavitación; Patek et al., Nature 2004). Animal superhéroe, mucha acción.
+No duplican serpiente voladora ni Titanoboa.
+
+### Perfil 12:00–15:00 CDMX («despertino», casero)
+- Para TikTok México, la ventana de referencia es **12:00–14:00** (pico mañana/mediodía), con jueves como día top. https://cliptoclick.com/mejores-horarios-tiktok
+- Por nicho: cocina 11–13; lo educativo/tips rinde mejor por la mañana (misma fuente). YouTube entre semana 15:00 (salida de escuela), fin de semana 12:00. https://weblindrome.com/blog/listas/mejores-horarios-publicar-redes/
+- Mamás MX: 7 de cada 10 consultan internet para el hogar (cocina, salud, tutoriales, educación). Es un dato de 2017, ya viejo. https://www.themarkethink.com/mercadotecnia/7-de-cada-10-mamas-mexicanas-consultan-internet-para-el-cuidado-de-su-hogar/
+- **Qué tipo de dato va:** curiosidades útiles y cotidianas: ciencia de la cocina (por qué llora la cebolla, origen de ingredientes mexicanos), casa y cuerpo, historia de objetos comunes, animales domésticos. Tono tranquilo, para comentar.
+- **Propuesta (sin pisar el slot kids sin OK):** un slot «casero» a las **12:30** (general-suave), separado del kids/familia de 13:30. El existente de 14:30 sigue como general. Mj decide si lo abre.
+
+### Perfil nocturno 23:00–01:00
+- **Quién:** sobre todo jóvenes 16–35 en TikTok MX (Weblindrome sugiere 21:00 y 01:00). https://weblindrome.com/blog/listas/mejores-horarios-publicar-redes/ También bachilleres: en un estudio UNAM 2024 (CDMX, edad media 17), 84% tenía mala calidad de sueño, asociada al uso problemático del celular. https://www.mdpi.com/1660-4601/21/9/1177
+- **Motivo:** en adultos mexicanos, el uso nocturno del celular se asocia al **aburrimiento**, con más TikTok/Instagram y más compras y juegos en línea. https://www.redalyc.org/journal/5717/571783123001/html/ Además: insomnio y retraso del sueño (redes de noche → acostarse más tarde; 120 M timestamps de Reddit). https://pubmed.ncbi.nlm.nih.gov/37235891/ Turnos nocturnos: sin dato MX encontrado.
+- **Qué pega:** en la noche rinde el contenido emocional/introspectivo (21–23) y el humor/entretenimiento (19–23). https://cliptoclick.com/mejores-horarios-tiktok
+- **Tipo de dato para slot D:** misterio, lo inquietante, «no puedo dejar de pensar en esto». Espacio profundo, mar profundo, sueño y cerebro (por qué soñamos, parálisis del sueño), enigmas históricos, casos raros. Ejemplos del parking que calzan: Voyager (versión «mensaje a nadie»), Herculano (papiros quemados), Londres «gran hedor». Sin gore. Prueba A/B vie/sáb 23:30 como ya se propuso.

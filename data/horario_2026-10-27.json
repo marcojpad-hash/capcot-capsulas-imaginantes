@@ -22,7 +22,7 @@
     {
       "hora": "13:30",
       "id": "2026-10-27_familia-ajolote",
-      "titulo": "Ajolote: le vuelve a crecer una pata",
+      "titulo": "Los ajolotes que viajaron a París… y se convirtieron en otro animal",
       "franja": "B",
       "linea": "familia",
       "estilo": "papel_infantil",
@@ -33,7 +33,9 @@
         "tiktok"
       ],
       "hecho_para_ninos": false,
-      "nota": "pt167u; NO programar/publicar sin OK de Mj; ver salidas/_ops/2026-10-26_parrilla_franjas_reporte.md"
+      "nota": "pt168u: gancho no-cliché (sin 'regenera pata'); estado borrador_propuesta; NO programar sin OK",
+      "angulo": "1864: 34 ajolotes de Xochimilco a París; Duméril vio a algunas crías metamorfosearse en salamandras terrestres; casi todos los ajolotes de laboratorio y los blancos de mascota descienden de ese lote (un solo macho blanco)",
+      "alternativa_si_Mj_no": "2026-xx_kids_tiburon-groenlandia-400-anos"
     },
     {
       "hora": "14:30",
@@ -56,7 +58,9 @@
       "plataformas": [
         "youtube",
         "tiktok"
-      ]
+      ],
+      "franja": "C",
+      "linea": "general"
     },
     {
       "hora": "17:00",
