@@ -27,3 +27,7 @@ Estilos (mosaico, bordado, códice, chimú, chicha, etc.): rotar libre; ~34/mes 
 
 ## Calendario Meta (referencia; ya programado en FB)
 Antes DdM: abejas + ave · DdM ventana · post: serpiente, microbio, aves género · UNAM para dic/ene
+
+## Feedback extra (FB 40–65 / saves)
+Útil: FB = adulto 40–65; saves + share privado > likes; Reels discovery; hooks con conflicto; original > stock; subtítulos grandes; no pelear young en FB.
+CTA: Meta pide frase de guardado; Mj: «Guárdalo / mándaselo a la familia» se siente itchy → usar cierre sugerente, no orden.
