@@ -19,3 +19,5 @@
 - https://www.socialpilot.co/es/insights/best-time-to-post-on-youtube
 - https://schedulala.com/es/blog/mejor-hora-publicar-youtube-shorts
 - https://contentsociety.co/blog/mejor-hora-publicar-clips-opus
+
+> **Actualización 26-oct:** parrilla diaria vigente en `2026-10-26_parrilla_franjas_reporte.md` (franjas 06–08 y 13–14 kids/familia diario).

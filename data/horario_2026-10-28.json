@@ -4,6 +4,64 @@
   "pedido_mj": "t145u",
   "slots": [
     {
+      "hora": "07:00",
+      "id": "2026-10-28_kids-titanoboa",
+      "titulo": "Titanoboa, la serpiente del tamaño de un autobús",
+      "franja": "A",
+      "linea": "kids",
+      "estilo": "papel_infantil",
+      "estado": "borrador_propuesta",
+      "origen": "nuevo",
+      "plataformas": [
+        "youtube",
+        "tiktok"
+      ],
+      "hecho_para_ninos": false,
+      "nota": "pt167u; NO programar/publicar sin OK de Mj; ver salidas/_ops/2026-10-26_parrilla_franjas_reporte.md"
+    },
+    {
+      "hora": "13:30",
+      "id": "2026-10-28_familia-voyager-disco-oro",
+      "titulo": "El disco de oro del Voyager",
+      "franja": "B",
+      "linea": "familia",
+      "estilo": "papel_infantil",
+      "estado": "borrador_propuesta",
+      "origen": "parking 2026-xx_parking_voyager-disco-oro",
+      "plataformas": [
+        "youtube",
+        "tiktok"
+      ],
+      "hecho_para_ninos": false,
+      "nota": "pt167u; NO programar/publicar sin OK de Mj; ver salidas/_ops/2026-10-26_parrilla_franjas_reporte.md"
+    },
+    {
+      "hora": "14:30",
+      "id": "2026-10-28_TBD-D",
+      "titulo": "TBD",
+      "angulo_propuesto": "Monarca = almas que regresan",
+      "estilo": "grafiti_colorido",
+      "estado": "TBD",
+      "plataformas": [
+        "youtube",
+        "tiktok"
+      ],
+      "nota": "Propuesta pt160u; ver salidas/_ops/2026-10-25_huecos_26_28_estilos.md"
+    },
+    {
+      "hora": "17:00",
+      "id": "2026-10-28_TBD-E",
+      "titulo": "TBD",
+      "angulo_propuesto": "Pan de muerto: huesos y lágrima",
+      "estilo": "litografia_azul_dorado",
+      "estado": "TBD",
+      "plataformas": [
+        "youtube",
+        "tiktok"
+      ],
+      "nota": "Propuesta pt160u; ver salidas/_ops/2026-10-25_huecos_26_28_estilos.md"
+    },
+    {
       "hora": "19:00",
       "id": "2026-10-28_ddm-parte4-templo-mayor",
       "titulo": "Día de Muertos · Parte 4: la ofrenda MÁS GRANDE (Templo Mayor)",
@@ -19,5 +77,6 @@
       ],
       "proyecto": "2026-10-28_ddm-parte4-templo-mayor"
     }
-  ]
+  ],
+  "franjas_ref": "salidas/_ops/2026-10-26_parrilla_franjas_reporte.md"
 }

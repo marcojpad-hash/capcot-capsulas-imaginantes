@@ -4,6 +4,38 @@
   "pedido_mj": "pt144u/t145u",
   "slots": [
     {
+      "hora": "07:00",
+      "id": "2026-10-27_kids-serpiente-voladora",
+      "titulo": "La serpiente que «vuela»",
+      "franja": "A",
+      "linea": "kids",
+      "estilo": "papel_infantil",
+      "estado": "borrador_propuesta",
+      "origen": "nuevo",
+      "plataformas": [
+        "youtube",
+        "tiktok"
+      ],
+      "hecho_para_ninos": false,
+      "nota": "pt167u; NO programar/publicar sin OK de Mj; ver salidas/_ops/2026-10-26_parrilla_franjas_reporte.md"
+    },
+    {
+      "hora": "13:30",
+      "id": "2026-10-27_familia-ajolote",
+      "titulo": "Ajolote: le vuelve a crecer una pata",
+      "franja": "B",
+      "linea": "familia",
+      "estilo": "papel_infantil",
+      "estado": "borrador_propuesta",
+      "origen": "nuevo",
+      "plataformas": [
+        "youtube",
+        "tiktok"
+      ],
+      "hecho_para_ninos": false,
+      "nota": "pt167u; NO programar/publicar sin OK de Mj; ver salidas/_ops/2026-10-26_parrilla_franjas_reporte.md"
+    },
+    {
       "hora": "14:30",
       "id": "2026-10-27_TBD-B",
       "titulo": "TBD",
@@ -63,5 +95,6 @@
     "P4": "codex_mexica"
   },
   "actualizado_cdmx": "2026-10-25T22:10-06:00",
-  "nota": "26 cubierto (4). 27: muralismo + P3 + 1–2 TBD (infantil mañana?). 28: P4 + 2 TBD."
+  "nota": "26 cubierto (4). 27: muralismo + P3 + 1–2 TBD (infantil mañana?). 28: P4 + 2 TBD.",
+  "franjas_ref": "salidas/_ops/2026-10-26_parrilla_franjas_reporte.md"
 }
