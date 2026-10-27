@@ -4458,5 +4458,166 @@
   },
   "tiktok": null,
   "nota": "Reporte horario 14:00 (corrida ~13:58). YT Data API uploads, solo públicos (5 privados/programados excluidos). TikTok null: sin navegador en esta corrida. Delta vs 2026-10-27T12:50."
+ },
+ {
+  "timestamp_cdmx": "2026-10-27T14:06-06:00",
+  "youtube": {
+   "nY2UqhKmAKQ": {
+    "view": 47,
+    "like": 1,
+    "comment": 0
+   },
+   "3RdSX40OCac": {
+    "view": 184,
+    "like": 3,
+    "comment": 0
+   },
+   "YKldyldCeiQ": {
+    "view": 225,
+    "like": 10,
+    "comment": 0
+   },
+   "GYxjXDh1ahc": {
+    "view": 565,
+    "like": 9,
+    "comment": 0
+   },
+   "ivVo2H9NaEU": {
+    "view": 298,
+    "like": 13,
+    "comment": 0
+   },
+   "PBDMJxOkCRk": {
+    "view": 1251,
+    "like": 28,
+    "comment": 4
+   },
+   "i9QBFPljl6M": {
+    "view": 1053,
+    "like": 23,
+    "comment": 0
+   },
+   "bYGd7QuenSk": {
+    "view": 1009,
+    "like": 24,
+    "comment": 0
+   },
+   "gIjJ0YKYQ8M": {
+    "view": 1214,
+    "like": 60,
+    "comment": 1
+   },
+   "AJR6kcnnDig": {
+    "view": 186,
+    "like": 13,
+    "comment": 0
+   },
+   "Qe2Y9xDn9QQ": {
+    "view": 976,
+    "like": 33,
+    "comment": 2
+   },
+   "3bhntOcKHPk": {
+    "view": 1422,
+    "like": 37,
+    "comment": 0
+   },
+   "O7TdKvuBjyg": {
+    "view": 13,
+    "like": 1,
+    "comment": 0
+   },
+   "r1AhsPOAS_o": {
+    "view": 1389,
+    "like": 73,
+    "comment": 4
+   },
+   "ZrUtKs7Ty7U": {
+    "view": 1318,
+    "like": 48,
+    "comment": 5
+   },
+   "5D96DmjvioU": {
+    "view": 621,
+    "like": 27,
+    "comment": 0
+   }
+  },
+  "youtube_totales": {
+   "view": 11771,
+   "like": 403,
+   "comment": 16
+  },
+  "suscriptores": 35,
+  "delta_vs_anterior": {
+   "view": 25,
+   "like": 1,
+   "comment": 0,
+   "suscriptores": 0
+  },
+  "tiktok": {
+   "fuente": "TikTok Studio",
+   "videos": {
+    "serpiente_voladora": {
+     "view": 99,
+     "like": 9,
+     "comment": 0
+    },
+    "ave_jurasica": {
+     "view": 0,
+     "like": 0,
+     "comment": 0
+    },
+    "catrina": {
+     "view": 181,
+     "like": 14,
+     "comment": 0
+    },
+    "papel_picado_p1": {
+     "view": 226,
+     "like": 17,
+     "comment": 0
+    },
+    "tardigrado": {
+     "view": 2,
+     "like": 0,
+     "comment": 0
+    },
+    "sueno_luz_electrica": {
+     "view": 2,
+     "like": 0,
+     "comment": 0
+    },
+    "reina_topo": {
+     "view": 723,
+     "like": 75,
+     "comment": 0
+    },
+    "osedax_huesos": {
+     "view": 497,
+     "like": 25,
+     "comment": 0
+    },
+    "abejas_bullying": {
+     "view": 502,
+     "like": 23,
+     "comment": 0
+    },
+    "aves_mujeres": {
+     "view": 501,
+     "like": 38,
+     "comment": 0
+    }
+   },
+   "totales": {
+    "view": 2733,
+    "like": 201,
+    "comment": 0
+   },
+   "seguidores": 2,
+   "likes_perfil": 250,
+   "nota": "Studio dice 13 posts; solo cargaron 10 (faltan serpientes y 2 más sin leer)."
+  },
+  "nota": "Balance 6h 14:00 (corrida ~14:06). YT Data API uploads, solo públicos (5 privados/programados excluidos)."
  }
 ]

@@ -778,5 +778,76 @@
    ]
   ],
   "nota_flujo": "Ventana nocturna: YT +1,247 en ~12 h reales de corrida (base 20:06), casi todo antes de medianoche; última hora plana (+1 desde 08:01). Hongo siguió siendo el motor; Pimiento (+15) y Reina (+3) se estancaron tras su pico. TT: solo Catrina despertó (+158); ave jurásica en 0 vistas tras 10 h, señal de que TT no la empujó."
+ },
+ {
+  "hora_cdmx": "2026-10-27T14:06-06:00",
+  "base_youtube": "2026-10-27T08:06",
+  "base_tiktok": "2026-10-27T08:06",
+  "youtube_totales": {
+   "view": 11771,
+   "like": 403,
+   "comment": 16
+  },
+  "suscriptores": 35,
+  "delta_youtube": {
+   "view": 501,
+   "like": 19,
+   "comment": 0,
+   "suscriptores": 2
+  },
+  "tiktok_totales": {
+   "view": 2733,
+   "like": 201,
+   "comment": 0
+  },
+  "seguidores_tiktok": 2,
+  "delta_tiktok": {
+   "view_comparable_9": 21,
+   "like_comparable_9": 2,
+   "nota": "Comparando los 9 videos leídos en ambos cortes (sin serpientes, no cargó): Catrina +11, P1 +8, reina +1, resto 0. Serpiente voladora nueva en TT: 99 vistas/9 likes. Ave jurásica sigue en 0. Total TT de 10 leídos 2,733 (no comparable con 2,772 de 08:06 porque falta serpientes=158)."
+  },
+  "ranking_crecimiento": [
+   [
+    "YT Papel picado P2",
+    186
+   ],
+   [
+    "YT Serpiente voladora",
+    152
+   ],
+   [
+    "TT Serpiente voladora (nuevo)",
+    99
+   ],
+   [
+    "YT Ave remake",
+    64
+   ],
+   [
+    "YT Ajolotes (nuevo)",
+    47
+   ],
+   [
+    "YT Papel picado P1",
+    21
+   ],
+   [
+    "YT Catrina",
+    15
+   ],
+   [
+    "TT Catrina",
+    11
+   ],
+   [
+    "TT Papel picado P1",
+    8
+   ],
+   [
+    "YT Sueño/luz eléctrica",
+    6
+   ]
+  ],
+  "nota_flujo": "Ritmo diurno moderado: YT +501 en 6 h (vs +1,247 nocturno), sostenido por lo nuevo (P2, serpiente voladora, ave, ajolotes). Se estancaron los veteranos: hongo +1 (era el motor), pimiento +1, reina +1, bacteria 0, Osedax ~0. TT casi plano salvo serpiente voladora recién subida; ave jurásica 0 vistas a 16 h."
  }
 ]
