@@ -1,25 +1,26 @@
 {
   "fecha": "2026-10-27",
   "tipo": "endscreens_rotacion",
-  "actualizado_cdmx": "2026-10-27T14:47-06:00",
-  "motivo": "Aceleran 3RdS (140→184 desde 12:50) y GYxj (537→565); ambos apuntaban a ivVo. GYxj pasa de ivVo a O7Td (13, el más flojo). Nuevo nY2U (ajolotes, 47) sin pantalla → AJR6 (sueño 186, estancado). 3RdS se queda en ivVo.",
+  "actualizado_cdmx": "2026-10-27T14:50-06:00",
+  "motivo": "Nuevo xBqd (campus, 6 vistas, publicado 14:30) sin pantalla → ivVo (Catrina, 298 estancado, solo recibía de 3RdS). nY2U acelera (47→124) y ya manda a AJR6; 3RdS (184→212) sigue → ivVo.",
   "vistas_ref": {
-    "nY2UqhKmAKQ": 47,
-    "3RdSX40OCac": 184,
+    "nY2UqhKmAKQ": 124,
+    "3RdSX40OCac": 212,
     "YKldyldCeiQ": 225,
-    "GYxjXDh1ahc": 565,
+    "GYxjXDh1ahc": 571,
     "ivVo2H9NaEU": 298,
-    "PBDMJxOkCRk": 1251,
+    "PBDMJxOkCRk": 1262,
     "i9QBFPljl6M": 1053,
     "bYGd7QuenSk": 1009,
     "gIjJ0YKYQ8M": 1214,
     "AJR6kcnnDig": 186,
     "Qe2Y9xDn9QQ": 976,
-    "3bhntOcKHPk": 1422,
+    "3bhntOcKHPk": 1427,
     "O7TdKvuBjyg": 13,
     "r1AhsPOAS_o": 1389,
     "ZrUtKs7Ty7U": 1318,
-    "5D96DmjvioU": 621
+    "5D96DmjvioU": 621,
+    "xBqdEn1Dumg": 6
   },
   "mapa": {
     "r1AhsPOAS_o": "AJR6kcnnDig",
@@ -37,7 +38,8 @@
     "GYxjXDh1ahc": "O7TdKvuBjyg",
     "YKldyldCeiQ": "AJR6kcnnDig",
     "3RdSX40OCac": "ivVo2H9NaEU",
-    "nY2UqhKmAKQ": "AJR6kcnnDig"
+    "nY2UqhKmAKQ": "AJR6kcnnDig",
+    "xBqdEn1Dumg": "ivVo2H9NaEU"
   },
   "pendiente_studio": false,
   "nota": "Aplicado en YouTube Studio Editor > Pantalla final (video específico). Búsqueda: pegar youtube.com/watch?v=ID en 'Buscar vídeos de otros canales' (tus vídeos no lista Shorts). Sin suscripción ni tarjetas. Actualización 26-oct 19:49: la lista «Elegir un vídeo específico» ya muestra los Shorts.",
@@ -57,7 +59,8 @@
     "GYxjXDh1ahc": "aplicado 27-oct 14:47",
     "YKldyldCeiQ": "aplicado_nuevo_2026-10-26 21:45 → AJR6kcnnDig",
     "3RdSX40OCac": "aplicado_nuevo_2026-10-27 07:53 → ivVo2H9NaEU",
-    "nY2UqhKmAKQ": "aplicado 27-oct 14:47"
+    "nY2UqhKmAKQ": "aplicado 27-oct 14:47",
+    "xBqdEn1Dumg": "aplicado 27-oct 14:50"
   },
   "fijos": {
     "Qe2Y9xDn9QQ": "gIjJ0YKYQ8M",
