@@ -568,5 +568,104 @@
       ]
     ],
     "nota_flujo": "YouTube aceleró fuerte en la mañana: +1,049 vistas, +68 likes, +6 comentarios y +9 suscriptores (15 a 24) en ~6 h. Casi todo lo empujó Reina topo, que despertó de 4 a 921 (+917, 60 likes), aunque su ritmo bajó en la última hora (+8 desde 13:53). Detrás: Osedax +44, Pimiento +32 (público desde 13:25), Sueño +25. Abejas, Ideonella, Serpientes y El Niño casi planos (+6 a +11); Aves en 0. TikTok plano: +4 vistas y +1 like en 6 h; tardígrado sigue en 0 a ~16 h de su hora (posible publicación fallida). Pendientes hoy: hongo YT 16:06, ave jurásica TT 20:00."
+  },
+  {
+    "hora_cdmx": "2026-10-26T20:06-06:00",
+    "base_youtube": "2026-10-26T14:05",
+    "base_tiktok": "2026-10-26T14:05",
+    "youtube_totales": {
+      "view": 10023,
+      "like": 367,
+      "comment": 16
+    },
+    "suscriptores": 31,
+    "delta_youtube": {
+      "view": 3375,
+      "like": 80,
+      "comment": 6,
+      "suscriptores": 7
+    },
+    "tiktok_totales": {
+      "view": 2578,
+      "like": 178,
+      "comment": 0
+    },
+    "seguidores_tiktok": 1,
+    "delta_tiktok": {
+      "view": -883,
+      "like": -33,
+      "nota": "total cae porque Ideonella y El Niño desaparecieron de Studio (-1,084 vistas/-47 likes); posts comparables: +3 vistas; nuevos P1 papel picado 186/14 y Catrina 12"
+    },
+    "ranking_crecimiento": [
+      [
+        "YT Pimiento",
+        961
+      ],
+      [
+        "YT Papel picado P1 (nuevo)",
+        899
+      ],
+      [
+        "YT Hongo gente diminuta (nuevo)",
+        893
+      ],
+      [
+        "YT Reina topo",
+        289
+      ],
+      [
+        "TT Papel picado P1 (nuevo)",
+        186
+      ],
+      [
+        "YT Catrina (nuevo)",
+        154
+      ],
+      [
+        "YT Papel picado P2 (nuevo)",
+        91
+      ],
+      [
+        "YT Osedax",
+        42
+      ],
+      [
+        "YT Sueño/luz eléctrica",
+        16
+      ],
+      [
+        "YT Serpientes",
+        12
+      ],
+      [
+        "TT Catrina (nuevo)",
+        12
+      ],
+      [
+        "YT Bacteria",
+        7
+      ],
+      [
+        "YT Abejas",
+        6
+      ],
+      [
+        "YT El Niño",
+        4
+      ],
+      [
+        "TT tardigrado",
+        2
+      ],
+      [
+        "YT Aves",
+        1
+      ],
+      [
+        "TT serpientes",
+        1
+      ]
+    ],
+    "nota_flujo": "YouTube siguió acelerado: +3,375 vistas en ~6 h (6,648 a 10,023, cruzó 10k), +80 likes, +7 subs (24 a 31). Lo empujaron los nuevos: Pimiento +961, P1 papel picado y Hongo ~+900 cada uno; Reina topo se frenó (+289 vs +917 la mañana). Catálogo viejo plano (+1 a +42). Última hora se aplanó (+47 desde 19:55). TikTok plano en posts viejos (+3); solo P1 despertó (186). Alerta: Ideonella y El Niño ya no aparecen en TikTok Studio."
   }
 ]
