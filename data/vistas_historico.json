@@ -3734,5 +3734,160 @@
   },
   "tiktok": null,
   "nota": "Reporte horario 08:00. YT Data API uploads, solo públicos. TikTok null: sin navegador en esta corrida. Delta vs 2026-10-27T06:56-06:00."
+ },
+ {
+  "timestamp_cdmx": "2026-10-27T08:06-06:00",
+  "youtube": {
+   "3RdSX40OCac": {
+    "view": 32,
+    "like": 0,
+    "comment": 0
+   },
+   "YKldyldCeiQ": {
+    "view": 161,
+    "like": 4,
+    "comment": 0
+   },
+   "GYxjXDh1ahc": {
+    "view": 379,
+    "like": 5,
+    "comment": 0
+   },
+   "ivVo2H9NaEU": {
+    "view": 283,
+    "like": 11,
+    "comment": 0
+   },
+   "PBDMJxOkCRk": {
+    "view": 1250,
+    "like": 28,
+    "comment": 4
+   },
+   "i9QBFPljl6M": {
+    "view": 1032,
+    "like": 21,
+    "comment": 0
+   },
+   "bYGd7QuenSk": {
+    "view": 1008,
+    "like": 24,
+    "comment": 0
+   },
+   "gIjJ0YKYQ8M": {
+    "view": 1213,
+    "like": 60,
+    "comment": 1
+   },
+   "AJR6kcnnDig": {
+    "view": 180,
+    "like": 12,
+    "comment": 0
+   },
+   "Qe2Y9xDn9QQ": {
+    "view": 977,
+    "like": 33,
+    "comment": 2
+   },
+   "3bhntOcKHPk": {
+    "view": 1419,
+    "like": 37,
+    "comment": 0
+   },
+   "O7TdKvuBjyg": {
+    "view": 13,
+    "like": 1,
+    "comment": 0
+   },
+   "r1AhsPOAS_o": {
+    "view": 1389,
+    "like": 73,
+    "comment": 4
+   },
+   "ZrUtKs7Ty7U": {
+    "view": 1314,
+    "like": 48,
+    "comment": 5
+   },
+   "5D96DmjvioU": {
+    "view": 620,
+    "like": 27,
+    "comment": 0
+   }
+  },
+  "youtube_totales": {
+   "view": 11270,
+   "like": 384,
+   "comment": 16
+  },
+  "suscriptores": 33,
+  "delta_vs_anterior": {
+   "view": 1,
+   "like": 0,
+   "comment": 0,
+   "suscriptores": 0
+  },
+  "tiktok": {
+   "fuente": "TikTok Studio",
+   "videos": {
+    "ave_jurasica": {
+     "view": 0,
+     "like": 0,
+     "comment": 0
+    },
+    "catrina": {
+     "view": 170,
+     "like": 13,
+     "comment": 0
+    },
+    "papel_picado_p1": {
+     "view": 218,
+     "like": 16,
+     "comment": 0
+    },
+    "tardigrado": {
+     "view": 2,
+     "like": 0,
+     "comment": 0
+    },
+    "sueno_luz_electrica": {
+     "view": 2,
+     "like": 0,
+     "comment": 0
+    },
+    "reina_topo": {
+     "view": 722,
+     "like": 75,
+     "comment": 0
+    },
+    "osedax_huesos": {
+     "view": 497,
+     "like": 25,
+     "comment": 0
+    },
+    "abejas_bullying": {
+     "view": 502,
+     "like": 23,
+     "comment": 0
+    },
+    "aves_mujeres": {
+     "view": 501,
+     "like": 38,
+     "comment": 0
+    },
+    "serpientes": {
+     "view": 158,
+     "like": 3,
+     "comment": 0
+    }
+   },
+   "totales": {
+    "view": 2772,
+    "like": 193,
+    "comment": 0
+   },
+   "seguidores": 2,
+   "likes_perfil": 239
+  },
+  "nota": "Balance 6h 08:00 (corrida ~08:06). YT Data API uploads, solo públicos (6 privados/programados excluidos). TT Studio: 10 posts, ninguno programado; serpiente voladora aún no está en TT."
  }
 ]
