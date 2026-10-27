@@ -1,21 +1,22 @@
 {
   "fecha": "2026-10-26",
   "tipo": "endscreens_rotacion",
-  "actualizado_cdmx": "2026-10-26T17:45-06:00",
-  "motivo": "Pimiento (bYGd 770) y papel picado P1 (i9QB 755) siguen acelerando; hongos (PBDM 228) ya se mueve solo y sueño (AJR6 134) quedó plano: i9QB→AJR6 (sueño); Catrina nueva (ivVo 75) →PBDM; bYGd sigue →O7Td (12).",
+  "actualizado_cdmx": "2026-10-26T19:49-06:00",
+  "motivo": "Hongos (PBDM 871) ya despegó solo; papel picado P1 (i9QB 892) acelera: i9QB→GYxj (papel picado P2, nuevo, 68). GYxj nuevo →ivVo (Catrina 135). Sin comentarios pendientes.",
   "vistas_ref": {
-    "ivVo2H9NaEU": 75,
-    "PBDMJxOkCRk": 228,
-    "i9QBFPljl6M": 755,
-    "bYGd7QuenSk": 770,
+    "ivVo2H9NaEU": 135,
+    "PBDMJxOkCRk": 871,
+    "i9QBFPljl6M": 892,
+    "bYGd7QuenSk": 969,
     "gIjJ0YKYQ8M": 1207,
-    "AJR6kcnnDig": 134,
-    "Qe2Y9xDn9QQ": 922,
-    "3bhntOcKHPk": 1403,
+    "AJR6kcnnDig": 138,
+    "Qe2Y9xDn9QQ": 930,
+    "3bhntOcKHPk": 1405,
     "O7TdKvuBjyg": 12,
-    "r1AhsPOAS_o": 1381,
+    "r1AhsPOAS_o": 1385,
     "ZrUtKs7Ty7U": 1302,
-    "5D96DmjvioU": 612
+    "5D96DmjvioU": 612,
+    "GYxjXDh1ahc": 68
   },
   "mapa": {
     "r1AhsPOAS_o": "AJR6kcnnDig",
@@ -27,12 +28,13 @@
     "AJR6kcnnDig": "O7TdKvuBjyg",
     "gIjJ0YKYQ8M": "PBDMJxOkCRk",
     "PBDMJxOkCRk": "O7TdKvuBjyg",
-    "i9QBFPljl6M": "AJR6kcnnDig",
+    "i9QBFPljl6M": "GYxjXDh1ahc",
     "bYGd7QuenSk": "O7TdKvuBjyg",
-    "ivVo2H9NaEU": "PBDMJxOkCRk"
+    "ivVo2H9NaEU": "PBDMJxOkCRk",
+    "GYxjXDh1ahc": "ivVo2H9NaEU"
   },
   "pendiente_studio": false,
-  "nota": "Aplicado en YouTube Studio Editor > Pantalla final (video específico). Búsqueda: pegar youtube.com/watch?v=ID en 'Buscar vídeos de otros canales' (tus vídeos no lista Shorts). Sin suscripción ni tarjetas.",
+  "nota": "Aplicado en YouTube Studio Editor > Pantalla final (video específico). Búsqueda: pegar youtube.com/watch?v=ID en 'Buscar vídeos de otros canales' (tus vídeos no lista Shorts). Sin suscripción ni tarjetas. Actualización 26-oct 19:49: la lista «Elegir un vídeo específico» ya muestra los Shorts.",
   "aplicado_studio": {
     "r1AhsPOAS_o": "aplicado",
     "ZrUtKs7Ty7U": "verificado_studio_2026-10-26",
@@ -43,9 +45,10 @@
     "AJR6kcnnDig": "aplicado_nuevo",
     "gIjJ0YKYQ8M": "aplicado_2026-10-26 16:27 (antes i9QBFPljl6M → PBDMJxOkCRk)",
     "PBDMJxOkCRk": "aplicado_nuevo_2026-10-26 16:27 → O7TdKvuBjyg",
-    "i9QBFPljl6M": "aplicado_2026-10-26 17:45 (antes PBDMJxOkCRk → AJR6kcnnDig)",
+    "i9QBFPljl6M": "aplicado_2026-10-26 19:49 (antes AJR6kcnnDig → GYxjXDh1ahc)",
     "bYGd7QuenSk": "aplicado_nuevo_2026-10-26 16:50",
-    "ivVo2H9NaEU": "aplicado_nuevo_2026-10-26 17:45 → PBDMJxOkCRk"
+    "ivVo2H9NaEU": "aplicado_nuevo_2026-10-26 17:45 → PBDMJxOkCRk",
+    "GYxjXDh1ahc": "aplicado_nuevo_2026-10-26 19:49 → ivVo2H9NaEU"
   },
   "fijos": {
     "Qe2Y9xDn9QQ": "gIjJ0YKYQ8M",
