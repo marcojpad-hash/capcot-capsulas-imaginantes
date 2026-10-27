@@ -10,7 +10,7 @@
       "franja": "A",
       "linea": "kids",
       "estilo": "papel_infantil",
-      "estado": "borrador_propuesta",
+      "estado": "programado_yt",
       "origen": "nuevo",
       "plataformas": [
         "youtube",
@@ -18,8 +18,14 @@
         "facebook"
       ],
       "hecho_para_ninos": false,
-      "nota": "pt167u; NO programar/publicar sin OK de Mj; ver salidas/_ops/2026-10-26_parrilla_franjas_reporte.md",
-      "prioridad": "producir_madrugada"
+      "nota": "Programado por orden Mj pt253u (supera nota previa de no programar); revisión Mj en LEEME",
+      "prioridad": "producir_madrugada",
+      "salida": "salidas/2026-10-27_kids-serpiente-voladora",
+      "yt_id": "3RdSX40OCac",
+      "yt_publishAt_utc": "2026-10-27T13:00:00Z",
+      "tiktok": "pendiente_mj",
+      "facebook": "pendiente_fb",
+      "revision_mj": "LEEME: revisión Mj pendiente antes de hora"
     },
     {
       "hora": "13:30",
@@ -28,7 +34,7 @@
       "franja": "B",
       "linea": "familia",
       "estilo": "papel_infantil",
-      "estado": "borrador_propuesta",
+      "estado": "programado_yt",
       "origen": "nuevo",
       "plataformas": [
         "youtube",
@@ -36,10 +42,16 @@
         "facebook"
       ],
       "hecho_para_ninos": false,
-      "nota": "pt168u: gancho no-cliché (sin 'regenera pata'); estado borrador_propuesta; NO programar sin OK",
+      "nota": "Programado por orden Mj pt253u (supera nota previa de no programar); revisión Mj en LEEME",
       "angulo": "1864: 34 ajolotes de Xochimilco a París; Duméril vio a algunas crías metamorfosearse en salamandras terrestres; casi todos los ajolotes de laboratorio y los blancos de mascota descienden de ese lote (un solo macho blanco)",
       "alternativa_si_Mj_no": "2026-xx_kids_tiburon-groenlandia-400-anos",
-      "prioridad": "producir_madrugada"
+      "prioridad": "producir_madrugada",
+      "salida": "salidas/2026-10-27_familia-ajolote",
+      "yt_id": "nY2UqhKmAKQ",
+      "yt_publishAt_utc": "2026-10-27T19:30:00Z",
+      "tiktok": "pendiente_mj",
+      "facebook": "pendiente_fb",
+      "revision_mj": "LEEME: revisión Mj pendiente antes de hora"
     },
     {
       "hora": "14:30",
@@ -53,9 +65,13 @@
       ],
       "franja": "C",
       "linea": "general",
-      "estado": "mp4_listo_pendiente_ok",
+      "estado": "programado_yt",
       "estilo": "mosaico_piedra",
-      "salida": "salidas/2026-10-29_muralismo-cu"
+      "salida": "salidas/2026-10-29_muralismo-cu",
+      "yt_id": "xBqdEn1Dumg",
+      "yt_publishAt_utc": "2026-10-27T20:30:00Z",
+      "tiktok": "pendiente_mj",
+      "facebook": "pendiente_fb"
     },
     {
       "hora": "17:00",
@@ -63,7 +79,7 @@
       "titulo": "Cempasúchil: la flor que guía… y también es pesticida natural",
       "angulo_propuesto": "Ciencia del cempasúchil",
       "estilo": "a_definir_no_litografia",
-      "estado": "por_producir",
+      "estado": "programado_yt",
       "plataformas": [
         "youtube",
         "tiktok",
@@ -72,7 +88,13 @@
       "nota": "Hueco 17:00; litografía azul-dorado descartada. Tema propuesto para cubrir cesta.",
       "angulo": "ciencia/objeto cotidiano DdM: compuestos del Tagetes (tietinas) usados vs nematodos; color y olor en la ofrenda",
       "franja": "C",
-      "linea": "general"
+      "linea": "general",
+      "salida": "salidas/2026-10-27_cempasuchil-ciencia",
+      "yt_id": "v6t8jKMbrhw",
+      "yt_publishAt_utc": "2026-10-27T23:00:00Z",
+      "tiktok": "pendiente_mj",
+      "facebook": "pendiente_fb",
+      "revision_mj": "LEEME: revisión Mj pendiente antes de hora"
     },
     {
       "hora": "19:00",
@@ -80,7 +102,7 @@
       "titulo": "Día de Muertos · Parte 3: En este pueblo SACAN a sus muertos… para bañarlos",
       "serie": "ddm-2026",
       "parte": 3,
-      "estado": "mp4_listo_pendiente_ok",
+      "estado": "programado_yt",
       "angulo": "Pomuch, Campeche: limpieza de huesos (Janal Pixán)",
       "continua_de": "P2 ofrenda (26-oct 19:00)",
       "estilo": "bordado",
@@ -91,23 +113,35 @@
       ],
       "proyecto": "2026-10-27_ddm-parte3-pomuch",
       "salida": "salidas/2026-10-27_ddm-parte3-pomuch",
-      "nota": "Mj 26-oct noche: debe quedar programado 27-oct 19:00"
+      "nota": "Mj 26-oct noche: debe quedar programado 27-oct 19:00",
+      "yt_id": "YIoWXfZaMj0",
+      "yt_publishAt_utc": "2026-10-28T01:00:00Z",
+      "tiktok": "pendiente_mj",
+      "facebook": "pendiente_fb"
     },
     {
       "hora": "23:30",
-      "id": "2026-10-27_dato-del-dia",
-      "titulo": "Dato del día (descubrimiento reciente)",
+      "id": "2026-10-27_noct-anfibio-marino",
+      "titulo": "Anfibio marino: hallan el primero que vivió en el mar",
       "franja": "E",
       "linea": "noctambulos",
       "formato": "dato_del_dia",
-      "estado": "por_investigar_y_producir",
+      "estado": "programado_yt",
       "plataformas": [
         "youtube",
         "tiktok",
         "facebook"
       ],
       "nota": "Mj 26-oct: cierre noctámbulos 23:30. Hallazgo/noticia científica o natural del mismo día o fechas muy cercanas (tipo hongo Lanmaoa / lo del 24–25 oct). No evergreen genérico.",
-      "criterio": "preferir papers/noticias de ~24–27 oct 2026; LatAm o ciencia/naturaleza alineada a editorial sin sociedades"
+      "criterio": "preferir papers/noticias de ~24–27 oct 2026; LatAm o ciencia/naturaleza alineada a editorial sin sociedades",
+      "salida": "salidas/2026-10-27_noct-anfibio-marino",
+      "yt_id": "5XQfUHpyTWs",
+      "yt_publishAt_utc": "2026-10-28T05:30:00Z",
+      "tiktok": "pendiente_mj",
+      "facebook": "pendiente_fb",
+      "revision_mj": "LEEME: revisión Mj pendiente antes de hora",
+      "estilo": "dibujo_cientifico_scratchboard",
+      "fuente": "UC Davis News 26-oct-2026 / Nature Ecology & Evolution"
     }
   ],
   "estilos_serie": {
@@ -116,8 +150,8 @@
     "P3": "bordado",
     "P4": "codex_mexica"
   },
-  "actualizado_cdmx": "2026-10-26T23:14-06:00",
-  "nota": "6 slots. Cubrir y programar todos. 2 mp4 listos (muralismo, Pomuch) pendientes OK implícito de programar. 3 por producir + 1 dato del día.",
+  "actualizado_cdmx": "2026-10-27T madrugada",
+  "nota": "6/6 programados en YT (private+publishAt). TT pendiente_mj, FB pendiente_fb.",
   "franjas_ref": "salidas/_ops/2026-10-26_parrilla_franjas_reporte.md",
   "meta_dia": {
     "cestas": 5,

@@ -1,0 +1,249 @@
+{
+ "project_id": "familia-ajolote",
+ "serie": "Datos y ociosidades",
+ "title": "Ajolotes de laboratorio: todos vienen de 34 que viajaron a París",
+ "language": "es-MX",
+ "aspect_ratio": "9:16",
+ "sources": [
+  {
+   "id": "SRC-001",
+   "cita_corta": "Reiß, Olsson y Hoßfeld (2015). The history of the oldest self-sustaining laboratory animal: 150 years of axolotl research. J Exp Zool B",
+   "url": "https://doi.org/10.1002/jez.b.22617",
+   "accessed": "2026-10-26",
+   "supports": [
+    "1864, 34 ajolotes, Duméril, metamorfosis 1865"
+   ]
+  },
+  {
+   "id": "SRC-002",
+   "cita_corta": "Smithsonian Magazine – The Axolotl's Long Journey",
+   "url": "https://www.smithsonianmag.com/science-nature/salamander-ambystoma-mexicanum-axolotl-180976236/",
+   "accessed": "2026-10-26",
+   "supports": [
+    "colonias de laboratorio descienden de París"
+   ]
+  },
+  {
+   "id": "SRC-003",
+   "cita_corta": "Voss et al. (2009). Ambystoma mexicanum, the axolotl. Cold Spring Harb Protoc",
+   "url": "https://doi.org/10.1101/pdb.emo128",
+   "accessed": "2026-10-26",
+   "supports": [
+    "modelo de laboratorio"
+   ]
+  }
+ ],
+ "titulo_yt": "Ajolote: los de laboratorio del mundo vienen de 34 que viajaron a París en 1864 #Shorts",
+ "caption_tt": "En 1864, 34 ajolotes de Xochimilco viajaron a París. De ellos descienden casi todos los ajolotes de laboratorio del planeta 🦎🇫🇷 #ajolote #Xochimilco #historia #DatosYOciosidades",
+ "titulo": "Ajolotes en París, 1864",
+ "estructura": "historia",
+ "estilo_id": "collage_cientifico_vintage",
+ "estilo_visual": "Collage científico vintage",
+ "trend_source": {
+  "tipo": "dato",
+  "medio": "J Exp Zool B",
+  "url": "https://doi.org/10.1002/jez.b.22617",
+  "termino": "ajolote Paris 1864 Dumeril",
+  "fecha_consulta": "2026-10-26"
+ },
+ "voice": {
+  "engine": "edge-tts",
+  "voice_id": "es-MX-JorgeNeural",
+  "rate": "+7%",
+  "pitch": "-2Hz",
+  "pad_seconds": 0.3,
+  "modo_pausas": "continuo"
+ },
+ "cortinilla_fuentes": {
+  "duration_seconds": 6,
+  "titulo": "Fuentes",
+  "aviso": "Ilustraciones generadas con IA (estilo Collage científico vintage); interpretación artística. Voz sintética con IA (edge-tts). Música sintetizada.",
+  "bg_rgb": [
+   28,
+   30,
+   52
+  ],
+  "firma": "Datos y ociosidades · @datosyociosidades"
+ },
+ "audio": {
+  "music_asset": "sintetico:pizzicato",
+  "music_lufs": -27,
+  "ambiente_lufs": -28,
+  "music_license": "Sintetizado por scripts/cama_sonora.py (obra propia)",
+  "sfx_license": "Wikimedia Commons CC0/PD, ver assets/sfx/LICENCIAS.json",
+  "cama_musical": "pizzicato"
+ },
+ "export": {
+  "filename": "capsula.mp4",
+  "resolution": "1080x1920",
+  "fps": 30,
+  "subtitle_max_words": 3,
+  "plano_seconds": 2.5,
+  "loudness_lufs": -14
+ },
+ "canal": {
+  "nombre": "Datos y ociosidades",
+  "handle": "@datosyociosidades",
+  "youtube_channel_id": "UCU2ZI-6pBJEr9aSFsF6bxLw"
+ },
+ "origen": "propia",
+ "parece_real": false,
+ "proveedor_imagenes": "GenerateImage (IA) con prompt_base del estilo",
+ "estado": "render 2026-10-26 noche · PENDIENTE REVISIÓN MJ",
+ "scenes": [
+  {
+   "id": "scene_001",
+   "arc": "hook_medias_res",
+   "duration_seconds": 12.9,
+   "narration": "En 1864, un barco llegó a Francia con una carga rara: treinta y cuatro ajolotes sacados de los canales de México. Iban a una exposición en Francia, en tiempos de Maximiliano, cuando México y Francia estaban muy enredados.",
+   "on_screen_text": "1864: 34 ajolotes",
+   "visual_description": "Ilustración generada con IA, estilo Collage científico vintage (interpretación artística)",
+   "image_prompt": "vintage scientific collage, cut-out 19th century natural history engravings, botanical and anatomical plates, aged paper, muted pastel accents, one large specimen centered, plain background, not photorealistic, vertical 9:16, no text + a cut-out engraving of a 19th century sailing ship with a glass jar holding axolotls on deck Palette: cream, sepia, sage green, old rose.",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "asset_filename": "frames/scene_001.png",
+   "ambiente": "",
+   "sfx": [],
+   "image_origen": {
+    "tipo": "ia_generada",
+    "herramienta": "GenerateImage"
+   },
+   "capa": {
+    "tipo": "mapa",
+    "region": [
+     -105,
+     10,
+     10,
+     55
+    ],
+    "titulo": "Xochimilco → París, 1864",
+    "puntos": [
+     {
+      "nombre": "Xochimilco",
+      "lon": -99.1,
+      "lat": 19.26
+     },
+     {
+      "nombre": "París",
+      "lon": 2.35,
+      "lat": 48.85
+     }
+    ],
+    "flechas": [
+     [
+      -99.1,
+      19.26,
+      2.35,
+      48.85,
+      "1864"
+     ]
+    ],
+    "fuente": "Reiß et al. 2015"
+   }
+  },
+  {
+   "id": "scene_002",
+   "arc": "desarrollo",
+   "duration_seconds": 12.9,
+   "narration": "Fueron a dar al Jardín de Plantas de París, con el zoólogo Auguste Duméril. Para él eran unos peces con patas muy extraños. Los puso en peceras, les dio de comer gusanitos y anotó todo en su cuaderno.",
+   "on_screen_text": "Jardín de Plantas, París",
+   "visual_description": "Ilustración generada con IA, estilo Collage científico vintage (interpretación artística)",
+   "image_prompt": "vintage scientific collage, cut-out 19th century natural history engravings, botanical and anatomical plates, aged paper, muted pastel accents, one large specimen centered, plain background, not photorealistic, vertical 9:16, no text + a vintage naturalist engraving of a glass aquarium with axolotls in a 19th century Paris museum Palette: cream, sepia, sage green, old rose.",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "asset_filename": "frames/scene_002.png",
+   "ambiente": "",
+   "sfx": [],
+   "image_origen": {
+    "tipo": "ia_generada",
+    "herramienta": "GenerateImage"
+   }
+  },
+  {
+   "id": "scene_003",
+   "arc": "desarrollo",
+   "duration_seconds": 12.5,
+   "narration": "Se reprodujeron sin problema. Pero en 1865 pasó algo que nadie esperaba: algunas crías perdieron las branquias y salieron del agua. Duméril no lo podía creer: el animal de agua se había vuelto un animal de tierra.",
+   "on_screen_text": "Pasó algo raro",
+   "visual_description": "Ilustración generada con IA, estilo Collage científico vintage (interpretación artística)",
+   "image_prompt": "vintage scientific collage, cut-out 19th century natural history engravings, botanical and anatomical plates, aged paper, muted pastel accents, one large specimen centered, plain background, not photorealistic, vertical 9:16, no text + axolotl larvae in a tank and one specimen climbing out of water onto a rock, botanical plate look Palette: cream, sepia, sage green, old rose.",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "asset_filename": "frames/scene_003.png",
+   "ambiente": "",
+   "sfx": [],
+   "image_origen": {
+    "tipo": "ia_generada",
+    "herramienta": "GenerateImage"
+   }
+  },
+  {
+   "id": "scene_004",
+   "arc": "desarrollo",
+   "duration_seconds": 12.9,
+   "narration": "Se habían transformado en salamandras de tierra. Hasta entonces se creía que eran dos animales distintos… y eran el mismo. Hoy sabemos que el ajolote normalmente se queda joven toda la vida; sólo a veces termina la transformación.",
+   "on_screen_text": "Era el mismo animal",
+   "visual_description": "Ilustración generada con IA, estilo Collage científico vintage (interpretación artística)",
+   "image_prompt": "vintage scientific collage, cut-out 19th century natural history engravings, botanical and anatomical plates, aged paper, muted pastel accents, one large specimen centered, plain background, not photorealistic, vertical 9:16, no text + two engravings side by side: an aquatic axolotl with feathery gills and a land salamander without gills, joined by an arrow Palette: cream, sepia, sage green, old rose.",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "asset_filename": "frames/scene_004.png",
+   "ambiente": "",
+   "sfx": [],
+   "image_origen": {
+    "tipo": "ia_generada",
+    "herramienta": "GenerateImage"
+   }
+  },
+  {
+   "id": "scene_005",
+   "arc": "cierre_historia",
+   "duration_seconds": 12.9,
+   "narration": "Duméril repartió crías por los laboratorios de Europa. Por eso casi todos los ajolotes de laboratorio del mundo descienden de aquel lote de París. Más de ciento sesenta años después, siguen estudiándolos para entender cómo reparan su cuerpo.",
+   "on_screen_text": "Todos vienen de ahí",
+   "visual_description": "Ilustración generada con IA, estilo Collage científico vintage (interpretación artística)",
+   "image_prompt": "vintage scientific collage, cut-out 19th century natural history engravings, botanical and anatomical plates, aged paper, muted pastel accents, one large specimen centered, plain background, not photorealistic, vertical 9:16, no text + a vintage family tree diagram with many small axolotl engravings branching from one jar Palette: cream, sepia, sage green, old rose.",
+   "source_ids": [
+    "SRC-001",
+    "SRC-002"
+   ],
+   "asset_filename": "frames/scene_005.png",
+   "ambiente": "",
+   "sfx": [],
+   "image_origen": {
+    "tipo": "ia_generada",
+    "herramienta": "GenerateImage"
+   },
+   "capa": {
+    "tipo": "dato",
+    "valor": "34",
+    "etiqueta": "ajolotes llegaron a París",
+    "fuente": "Reiß et al. 2015"
+   }
+  },
+  {
+   "id": "scene_006",
+   "arc": "reflexion_o_pregunta",
+   "duration_seconds": 8.0,
+   "narration": "Hoy en los canales de Xochimilco quedan muy pocos, y en los laboratorios hay miles. ¿Lo sabía usted? Esto fue Datos y ociosidades.",
+   "on_screen_text": "¿Lo sabía usted?",
+   "visual_description": "Ilustración generada con IA, estilo Collage científico vintage (interpretación artística)",
+   "image_prompt": "vintage scientific collage, cut-out 19th century natural history engravings, botanical and anatomical plates, aged paper, muted pastel accents, one large specimen centered, plain background, not photorealistic, vertical 9:16, no text + a lonely wild axolotl among water plants of a Mexican canal with a chinampa trajinera silhouette, engraving Palette: cream, sepia, sage green, old rose.",
+   "source_ids": [
+    "SRC-003"
+   ],
+   "asset_filename": "frames/scene_006.png",
+   "ambiente": "",
+   "sfx": [],
+   "image_origen": {
+    "tipo": "ia_generada",
+    "herramienta": "GenerateImage"
+   }
+  }
+ ],
+ "target_duration_seconds": 75
+}

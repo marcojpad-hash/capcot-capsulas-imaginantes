@@ -1,0 +1,9 @@
+{
+ "estado": "pendiente_mj",
+ "mp4": "/workspace/capcot/salidas/2026-10-29_muralismo-cu/capsula.mp4",
+ "caption_corto": "El campus más fotografiado de México es un libro de piedra (Muralismo CU)\n\nFuentes en YouTube @datosyociosidades\n#aprendeentiktok #ciencia #sabiasque",
+ "etiqueta_ia": "Activar etiqueta 'Contenido generado por IA' (imágenes y voz sintéticas)",
+ "hora_sugerida_local": "2026-10-27 14:30 CDMX",
+ "yt_id": "xBqdEn1Dumg",
+ "instruccion": "Mj sube en TikTok con caption_corto y etiqueta IA; luego estado='publicado_tiktok' + url."
+}

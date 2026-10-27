@@ -1,0 +1,134 @@
+{
+ "fecha": "2026-10-27",
+ "paquete": "/workspace/capcot/salidas/2026-10-27_kids-serpiente-voladora",
+ "titulo": "Serpiente voladora: cómo planea sin alas",
+ "estilo": "papel_infantil",
+ "qa_ok": true,
+ "qa": [
+  {
+   "check": "duracion_>=60_<=120",
+   "ok": true,
+   "detalle": "83.80s (objetivo 70)"
+  },
+  {
+   "check": "resolucion_1080x1920",
+   "ok": true,
+   "detalle": ""
+  },
+  {
+   "check": "h264_aac",
+   "ok": true,
+   "detalle": ""
+  },
+  {
+   "check": "fps_30",
+   "ok": true,
+   "detalle": "30/1"
+  },
+  {
+   "check": "loudness_-14",
+   "ok": true,
+   "detalle": "-14.4 LUFS"
+  },
+  {
+   "check": "subs_max_3_palabras",
+   "ok": true,
+   "detalle": "88 bloques"
+  },
+  {
+   "check": "fuentes_1_4",
+   "ok": true,
+   "detalle": ""
+  },
+  {
+   "check": "aviso_ia",
+   "ok": true,
+   "detalle": ""
+  },
+  {
+   "check": "arco",
+   "ok": true,
+   "detalle": ""
+  },
+  {
+   "check": "sin_huecos_voz_<=0.9s",
+   "ok": true,
+   "detalle": "hueco máx 0.50s"
+  },
+  {
+   "check": "subs_cobertura_>=99%",
+   "ok": true,
+   "detalle": "100.0% (225/225 palabras)"
+  },
+  {
+   "check": "subs_sin_solapes",
+   "ok": true,
+   "detalle": "0 solapes"
+  },
+  {
+   "check": "subs_en_cuadro_zona_segura",
+   "ok": true,
+   "detalle": "PlayResY 1920, MarginV 620"
+  },
+  {
+   "check": "voz_<=240_palabras",
+   "ok": true,
+   "detalle": "225 palabras"
+  },
+  {
+   "check": "estructura_valida",
+   "ok": true,
+   "detalle": "pregunta"
+  },
+  {
+   "check": "estructura_no_repite_anterior",
+   "ok": true,
+   "detalle": "anterior: comparacion"
+  },
+  {
+   "check": "cama_musical_no_repite_anterior",
+   "ok": true,
+   "detalle": "circuito_neural (anterior: tambor)"
+  },
+  {
+   "check": "capa_mapa",
+   "ok": true,
+   "detalle": "mapa,dato"
+  },
+  {
+   "check": "capa_grafico_o_dato",
+   "ok": true,
+   "detalle": "mapa,dato"
+  },
+  {
+   "check": "licencias_json",
+   "ok": true,
+   "detalle": ""
+  },
+  {
+   "check": "metadata_yt_valida",
+   "ok": true,
+   "detalle": "título/descr./tags OK"
+  }
+ ],
+ "archivos": [
+  "LEEME.md",
+  "capsula.ass",
+  "capsula.mp4",
+  "capsula.srt",
+  "frames",
+  "fuentes.md",
+  "guion.md",
+  "licencias.json",
+  "metadata.json",
+  "qa.json",
+  "storyboard.json",
+  "tiktok.json"
+ ],
+ "publicado": false,
+ "tiktok": "pendiente_tiktok",
+ "comando_subida_manual": "python3 scripts/publicar.py salidas/2026-10-27_kids-serpiente-voladora/ --plataforma yt --privacidad public --ejecutar",
+ "estructura": "pregunta",
+ "cama_musical": "circuito_neural",
+ "tiktok_json": "/workspace/capcot/salidas/2026-10-27_kids-serpiente-voladora/tiktok.json"
+}

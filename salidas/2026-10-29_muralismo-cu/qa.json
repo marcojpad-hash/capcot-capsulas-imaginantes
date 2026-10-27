@@ -77,12 +77,12 @@
  {
   "check": "estructura_no_repite_anterior",
   "ok": true,
-  "detalle": "anterior: pregunta"
+  "detalle": "anterior: comparacion"
  },
  {
   "check": "cama_musical_no_repite_anterior",
   "ok": true,
-  "detalle": "menor_calma (anterior: pulso)"
+  "detalle": "menor_calma (anterior: pizzicato)"
  },
  {
   "check": "capa_mapa",

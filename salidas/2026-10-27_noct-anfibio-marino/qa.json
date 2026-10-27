@@ -1,0 +1,107 @@
+[
+ {
+  "check": "duracion_>=60_<=120",
+  "ok": true,
+  "detalle": "90.67s (objetivo 70)"
+ },
+ {
+  "check": "resolucion_1080x1920",
+  "ok": true,
+  "detalle": ""
+ },
+ {
+  "check": "h264_aac",
+  "ok": true,
+  "detalle": ""
+ },
+ {
+  "check": "fps_30",
+  "ok": true,
+  "detalle": "30/1"
+ },
+ {
+  "check": "loudness_-14",
+  "ok": true,
+  "detalle": "-14.3 LUFS"
+ },
+ {
+  "check": "subs_max_3_palabras",
+  "ok": true,
+  "detalle": "91 bloques"
+ },
+ {
+  "check": "fuentes_1_4",
+  "ok": true,
+  "detalle": ""
+ },
+ {
+  "check": "aviso_ia",
+  "ok": true,
+  "detalle": ""
+ },
+ {
+  "check": "arco",
+  "ok": true,
+  "detalle": ""
+ },
+ {
+  "check": "sin_huecos_voz_<=0.9s",
+  "ok": true,
+  "detalle": "hueco máx 0.50s"
+ },
+ {
+  "check": "subs_cobertura_>=99%",
+  "ok": true,
+  "detalle": "100.0% (234/234 palabras)"
+ },
+ {
+  "check": "subs_sin_solapes",
+  "ok": true,
+  "detalle": "0 solapes"
+ },
+ {
+  "check": "subs_en_cuadro_zona_segura",
+  "ok": true,
+  "detalle": "PlayResY 1920, MarginV 620"
+ },
+ {
+  "check": "voz_<=240_palabras",
+  "ok": true,
+  "detalle": "234 palabras"
+ },
+ {
+  "check": "estructura_valida",
+  "ok": true,
+  "detalle": "comparacion"
+ },
+ {
+  "check": "estructura_no_repite_anterior",
+  "ok": true,
+  "detalle": "anterior: pregunta"
+ },
+ {
+  "check": "cama_musical_no_repite_anterior",
+  "ok": true,
+  "detalle": "marimba (anterior: circuito_neural)"
+ },
+ {
+  "check": "capa_mapa",
+  "ok": true,
+  "detalle": "dato,mapa,dato"
+ },
+ {
+  "check": "capa_grafico_o_dato",
+  "ok": true,
+  "detalle": "dato,mapa,dato"
+ },
+ {
+  "check": "licencias_json",
+  "ok": true,
+  "detalle": ""
+ },
+ {
+  "check": "metadata_yt_valida",
+  "ok": true,
+  "detalle": "título/descr./tags OK"
+ }
+]

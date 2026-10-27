@@ -1,0 +1,9 @@
+{
+ "estado": "pendiente_mj",
+ "mp4": "/workspace/capcot/salidas/2026-10-27_ddm-parte3-pomuch/capsula.mp4",
+ "caption_corto": "Día de Muertos, parte 3: en Pomuch bañan a sus muertos\n\nFuentes en YouTube @datosyociosidades\n#aprendeentiktok #ciencia #sabiasque",
+ "etiqueta_ia": "Activar etiqueta 'Contenido generado por IA' (imágenes y voz sintéticas)",
+ "hora_sugerida_local": "2026-10-27 19:00 CDMX",
+ "yt_id": "YIoWXfZaMj0",
+ "instruccion": "Mj sube en TikTok con caption_corto y etiqueta IA; luego estado='publicado_tiktok' + url."
+}

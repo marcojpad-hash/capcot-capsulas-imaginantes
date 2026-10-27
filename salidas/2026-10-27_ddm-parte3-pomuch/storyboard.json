@@ -1,0 +1,295 @@
+{
+ "project_id": "2026-10-27_ddm-parte3-pomuch",
+ "serie": "Datos y ociosidades",
+ "title": "Día de Muertos, parte 3: en Pomuch bañan a sus muertos",
+ "language": "es-MX",
+ "aspect_ratio": "9:16",
+ "sources": [
+  {
+   "id": "SRC-001",
+   "cita_corta": "INAH – Los santos restos: Janal Pixán en Pomuch",
+   "url": "https://www.inah.gob.mx/boletines/la-tradicion-del-janal-pixan-en-la-exposicion-los-santos-restos-ritualidad-y-expresion-en-pomuch",
+   "accessed": "2026-10-25",
+   "supports": [
+    "Janal Pixán, osarios, cementerio de Pomuch"
+   ]
+  },
+  {
+   "id": "SRC-002",
+   "cita_corta": "INAH Foto del día – Pomuch y la limpieza de huesos",
+   "url": "https://www.inah.gob.mx/foto-del-dia/pomuch-y-la-limpieza-de-huesos",
+   "accessed": "2026-10-25",
+   "supports": [
+    "paño bordado con nombre, cruces, palomas"
+   ]
+  },
+  {
+   "id": "SRC-003",
+   "cita_corta": "La Jornada (31-oct-2024) – Limpieza de los Santos Restos",
+   "url": "https://www.jornada.com.mx/noticia/2024/10/31/cultura/realizan-limpieza-de-los-santos-restos-antes-del-janal-pixan-739",
+   "accessed": "2026-10-25",
+   "supports": [
+    "tercer año, una semana antes, 40-80 pesos"
+   ]
+  },
+  {
+   "id": "SRC-004",
+   "cita_corta": "Hernández, Rea y Rodríguez (2014). Hanal Pixán: limpieza de huesos. Vita Brevis (INAH)",
+   "url": "https://revistas.inah.gob.mx/index.php/vitabrevis/article/view/5544",
+   "accessed": "2026-10-25",
+   "supports": [
+    "brocha, participación familiar, hablarles"
+   ]
+  }
+ ],
+ "titulo_yt": "En este pueblo SACAN a sus muertos… para bañarlos 🦴🧵 (Parte 3) #Shorts",
+ "caption_tt": "En Pomuch, Campeche, una semana antes del Janal Pixán las familias limpian hueso por hueso a sus difuntos y les cambian la ropa: un paño bordado con su nombre. Parte 3/4 🧵🕯️ #DíaDeMuertos #JanalPixan #Pomuch #Campeche #DatosYOciosidades",
+ "titulo": "Aquí bañan a sus muertos",
+ "titulo_estilo": {
+  "font": "/usr/share/fonts/truetype/sand-box/google/Alfa Slab One/AlfaSlabOne-Regular.ttf",
+  "size": 88,
+  "caja_rgb": [
+   238,
+   224,
+   190
+  ],
+  "texto_rgb": [
+   34,
+   42,
+   92
+  ],
+  "subrayado_rgb": [
+   204,
+   122,
+   32
+  ]
+ },
+ "estructura": "historia",
+ "estilo_id": "bordado",
+ "estilo_visual": "Bordado (propio)",
+ "trend_source": {
+  "tipo": "efemeride_cultural",
+  "medio": "INAH",
+  "url": "https://www.inah.gob.mx/foto-del-dia/pomuch-y-la-limpieza-de-huesos",
+  "termino": "Pomuch limpieza de huesos Janal Pixán",
+  "fecha_consulta": "2026-10-25"
+ },
+ "voice": {
+  "engine": "edge-tts",
+  "voice_id": "es-MX-JorgeNeural",
+  "rate": "+7%",
+  "pitch": "-2Hz",
+  "pad_seconds": 0.3,
+  "modo_pausas": "continuo"
+ },
+ "cortinilla_fuentes": {
+  "duration_seconds": 6,
+  "titulo": "Fuentes",
+  "aviso": "Ilustraciones generadas con IA en estilo bordado; interpretación artística, no fotos de la comunidad ni de restos reales. Voz sintética con IA (edge-tts). Música sintetizada.",
+  "bg_rgb": [
+   28,
+   30,
+   52
+  ],
+  "firma": "Datos y ociosidades · @datosyociosidades"
+ },
+ "audio": {
+  "music_asset": "sintetico:arpegio",
+  "cama_musical": "arpegio",
+  "music_lufs": -27,
+  "ambiente_lufs": -28,
+  "music_license": "Sintetizado por scripts/cama_sonora.py (obra propia)",
+  "sfx_license": "Wikimedia Commons CC0/PD, ver assets/sfx/LICENCIAS.json",
+  "ambiente": "viento"
+ },
+ "export": {
+  "filename": "capsula.mp4",
+  "resolution": "1080x1920",
+  "fps": 30,
+  "subtitle_max_words": 3,
+  "plano_seconds": 2.5,
+  "loudness_lufs": -14
+ },
+ "canal": {
+  "nombre": "Datos y ociosidades",
+  "handle": "@datosyociosidades",
+  "youtube_channel_id": "UCU2ZI-6pBJEr9aSFsF6bxLw"
+ },
+ "origen": "propia",
+ "parece_real": false,
+ "proveedor_imagenes": "GenerateImage (IA) con prompt_base del estilo",
+ "estado": "render 2026-10-25 noche · PENDIENTE REVISIÓN MJ",
+ "serie_ddm": {
+  "parte": 3,
+  "de": 4,
+  "slot": "2026-10-27 19:00 America/Mexico_City"
+ },
+ "scenes": [
+  {
+   "id": "scene_001",
+   "arc": "hook_medias_res",
+   "duration_seconds": 11.0,
+   "narration": "En este pueblo sacan a sus muertos de la tumba… para bañarlos. En la parte dos armamos la ofrenda; hoy vamos más cerca: a los huesos.",
+   "on_screen_text": "Los bañan",
+   "visual_description": "Ilustración generada con IA, estilo Bordado (propio) (interpretación artística)",
+   "image_prompt": "hand embroidery on linen fabric, colorful thread stitches, satin and french knots, embroidery hoop edge visible, vertical 9:16, no text + an embroidered wooden box slowly opening inside an embroidery hoop, a marigold-orange thread escaping from it like a ribbon Palette: marigold orange, magenta and black thread on white cotton manta.",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "asset_filename": "frames/scene_001.png",
+   "ambiente": "viento",
+   "sfx": [],
+   "image_origen": {
+    "tipo": "ia_generada",
+    "herramienta": "GenerateImage"
+   }
+  },
+  {
+   "id": "scene_002",
+   "arc": "desarrollo",
+   "duration_seconds": 11.4,
+   "narration": "Pomuch, Campeche. En su cementerio maya, una semana antes del Janal Pixán, la comida de las ánimas, las familias abren los osarios: pequeños nichos pintados de colores.",
+   "on_screen_text": "Pomuch, Campeche",
+   "visual_description": "Ilustración generada con IA, estilo Bordado (propio) (interpretación artística)",
+   "image_prompt": "hand embroidery on linen fabric, colorful thread stitches, satin and french knots, embroidery hoop edge visible, vertical 9:16, no text + an embroidered village cemetery with rows of small colorful painted niches in turquoise, pink and yellow, embroidered marigolds along the path Palette: marigold orange, magenta and black thread on white cotton manta.",
+   "source_ids": [
+    "SRC-001",
+    "SRC-003"
+   ],
+   "asset_filename": "frames/scene_002.png",
+   "ambiente": "viento",
+   "sfx": [],
+   "image_origen": {
+    "tipo": "ia_generada",
+    "herramienta": "GenerateImage"
+   },
+   "capa": {
+    "tipo": "mapa",
+    "region": [
+     -92.5,
+     -86.5,
+     17.8,
+     21.8
+    ],
+    "titulo": "Pomuch, Campeche",
+    "puntos": [
+     {
+      "nombre": "Pomuch",
+      "lon": -90.17,
+      "lat": 20.14
+     }
+    ],
+    "fuente": "INAH"
+   }
+  },
+  {
+   "id": "scene_003",
+   "arc": "desarrollo",
+   "duration_seconds": 10.2,
+   "narration": "Con una brocha quitan el polvo hueso por hueso. Niños, adultos, abuelos: todos participan. Ellos no lo llaman limpiar: lo llaman bañar al difunto.",
+   "on_screen_text": "Hueso por hueso",
+   "visual_description": "Ilustración generada con IA, estilo Bordado (propio) (interpretación artística)",
+   "image_prompt": "hand embroidery on linen fabric, colorful thread stitches, satin and french knots, embroidery hoop edge visible, vertical 9:16, no text + embroidered hands of a grandmother and a child holding a small brush over a simple stylized white box, dust drawn as tiny french knots falling, no realistic bones Palette: marigold orange, magenta and black thread on white cotton manta.",
+   "source_ids": [
+    "SRC-004"
+   ],
+   "asset_filename": "frames/scene_003.png",
+   "ambiente": "viento",
+   "sfx": [],
+   "image_origen": {
+    "tipo": "ia_generada",
+    "herramienta": "GenerateImage"
+   }
+  },
+  {
+   "id": "scene_004",
+   "arc": "desarrollo",
+   "duration_seconds": 9.8,
+   "narration": "Luego le cambian la ropa: un lienzo blanco nuevo, bordado con su nombre, flores, cruces o palomas, donde vuelven a acomodar sus restos.",
+   "on_screen_text": "Ropa nueva",
+   "visual_description": "Ilustración generada con IA, estilo Bordado (propio) (interpretación artística)",
+   "image_prompt": "hand embroidery on linen fabric, colorful thread stitches, satin and french knots, embroidery hoop edge visible, vertical 9:16, no text + close-up of a white cloth with cross-stitch flowers in magenta, a small dove and a cross in satin stitch, cloth being folded over a box Palette: marigold orange, magenta and black thread on white cotton manta.",
+   "source_ids": [
+    "SRC-002"
+   ],
+   "asset_filename": "frames/scene_004.png",
+   "ambiente": "viento",
+   "sfx": [],
+   "image_origen": {
+    "tipo": "ia_generada",
+    "herramienta": "GenerateImage"
+   }
+  },
+  {
+   "id": "scene_005",
+   "arc": "cierre_historia",
+   "duration_seconds": 13.0,
+   "narration": "La primera limpieza llega al tercer año: se exhuma el cuerpo y pasa al osario. Desde entonces, cada año. Y no es en silencio: le hablan, le cuentan cómo les fue.",
+   "on_screen_text": "Cada año",
+   "visual_description": "Ilustración generada con IA, estilo Bordado (propio) (interpretación artística)",
+   "image_prompt": "hand embroidery on linen fabric, colorful thread stitches, satin and french knots, embroidery hoop edge visible, vertical 9:16, no text + a family sitting beside a freshly repainted small niche with lit candles, embroidered speech bubbles made of thread floating between them Palette: marigold orange, magenta and black thread on white cotton manta.",
+   "source_ids": [
+    "SRC-003",
+    "SRC-004"
+   ],
+   "asset_filename": "frames/scene_005.png",
+   "ambiente": "viento",
+   "sfx": [],
+   "image_origen": {
+    "tipo": "ia_generada",
+    "herramienta": "GenerateImage"
+   },
+   "capa": {
+    "tipo": "dato",
+    "valor": "3",
+    "etiqueta": "años para la primera limpieza",
+    "fuente": "La Jornada"
+   }
+  },
+  {
+   "id": "scene_006",
+   "arc": "cierre_historia",
+   "duration_seconds": 8.3,
+   "narration": "Quien no puede venir se lo encarga al sepulturero: entre cuarenta y ochenta pesos por limpiar un esqueleto completo.",
+   "on_screen_text": "$40–$80",
+   "visual_description": "Ilustración generada con IA, estilo Bordado (propio) (interpretación artística)",
+   "image_prompt": "hand embroidery on linen fabric, colorful thread stitches, satin and french knots, embroidery hoop edge visible, vertical 9:16, no text + an embroidered cemetery caretaker with a straw hat holding a brush, a few embroidered coins beside him Palette: marigold orange, magenta and black thread on white cotton manta.",
+   "source_ids": [
+    "SRC-003"
+   ],
+   "asset_filename": "frames/scene_006.png",
+   "ambiente": "viento",
+   "sfx": [],
+   "image_origen": {
+    "tipo": "ia_generada",
+    "herramienta": "GenerateImage"
+   },
+   "capa": {
+    "tipo": "dato",
+    "valor": "$40–80",
+    "etiqueta": "pesos por limpieza",
+    "fuente": "La Jornada"
+   }
+  },
+  {
+   "id": "scene_007",
+   "arc": "reflexion_o_pregunta",
+   "duration_seconds": 13.3,
+   "narration": "Cuando las ánimas regresan, los encuentran limpios y con ropa nueva. ¿Y en tu pueblo cómo los reciben? Mañana, parte cuatro: la ofrenda más grande jamás encontrada. Esto fue Datos y ociosidades.",
+   "on_screen_text": "¿Y en tu pueblo?",
+   "visual_description": "Ilustración generada con IA, estilo Bordado (propio) (interpretación artística)",
+   "image_prompt": "hand embroidery on linen fabric, colorful thread stitches, satin and french knots, embroidery hoop edge visible, vertical 9:16, no text + small boxes half open with a candle at dusk in the cemetery, a marigold petal sweeping across the hoop and turning into a red-and-turquoise Aztec codex style glyph at the edge Palette: marigold orange, magenta and black thread on white cotton manta.",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "asset_filename": "frames/scene_007.png",
+   "ambiente": "viento",
+   "sfx": [],
+   "image_origen": {
+    "tipo": "ia_generada",
+    "herramienta": "GenerateImage"
+   }
+  }
+ ],
+ "target_duration_seconds": 75
+}

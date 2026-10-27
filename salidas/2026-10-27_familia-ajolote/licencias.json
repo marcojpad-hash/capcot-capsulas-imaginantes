@@ -1,0 +1,43 @@
+{
+ "project_id": "familia-ajolote",
+ "musica": {
+  "cama": "pizzicato",
+  "origen": "síntesis propia (scripts/cama_sonora.py, numpy)",
+  "licencia": "obra propia de Datos y ociosidades",
+  "generada_por_ia": false
+ },
+ "sfx": {
+  "olas": {
+   "archivo": "olas.ogg",
+   "commons": "File:Ocean Waves on a Tropical Beach.ogg",
+   "autor": "Jarrod stanley",
+   "licencia": "CC0",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/6/64/Ocean_Waves_on_a_Tropical_Beach.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Ocean_Waves_on_a_Tropical_Beach.ogg",
+   "licencia_verificada": "CC0"
+  }
+ },
+ "imagenes": {
+  "origen": "GenerateImage (IA) con prompt_base del estilo",
+  "estilo": "collage_cientifico_vintage",
+  "realista": false
+ },
+ "voz": {
+  "motor": "Microsoft Edge TTS",
+  "voz": "es-MX-JorgeNeural",
+  "nota": "voz sintética; no imita a una persona real"
+ },
+ "capas_datos": {
+  "tipos": [
+   "mapa",
+   "dato"
+  ],
+  "mapa_base": "Natural Earth 110m (dominio público)",
+  "render": "matplotlib (propio)"
+ },
+ "fuentes_datos": [
+  "https://doi.org/10.1002/jez.b.22617",
+  "https://www.smithsonianmag.com/science-nature/salamander-ambystoma-mexicanum-axolotl-180976236/",
+  "https://doi.org/10.1101/pdb.emo128"
+ ]
+}

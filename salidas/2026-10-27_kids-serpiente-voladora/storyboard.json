@@ -1,0 +1,246 @@
+{
+ "project_id": "kids-serpiente-voladora",
+ "serie": "Datos y ociosidades",
+ "title": "Serpiente voladora: cómo planea sin alas",
+ "language": "es-MX",
+ "aspect_ratio": "9:16",
+ "sources": [
+  {
+   "id": "SRC-001",
+   "cita_corta": "Socha (2002). Gliding flight in the paradise tree snake. Nature 418",
+   "url": "https://doi.org/10.1038/418603a",
+   "accessed": "2026-10-26",
+   "supports": [
+    "se aplana, planea, ondula"
+   ]
+  },
+  {
+   "id": "SRC-002",
+   "cita_corta": "Yeaton, Socha y Ross (2020). Undulation enables gliding in flying snakes. Nature Physics",
+   "url": "https://doi.org/10.1038/s41567-020-0935-4",
+   "accessed": "2026-10-26",
+   "supports": [
+    "ondulación estabiliza el planeo"
+   ]
+  },
+  {
+   "id": "SRC-003",
+   "cita_corta": "Virginia Tech News (2020) – Flying snakes undulate to glide",
+   "url": "https://news.vt.edu/articles/2020/06/eng-flyingsnakes.html",
+   "accessed": "2026-10-26",
+   "supports": [
+    "distancias, Sudeste Asiático"
+   ]
+  }
+ ],
+ "titulo_yt": "La serpiente que «vuela» sin alas: así cruza la selva #Shorts",
+ "caption_tt": "Una serpiente que salta de un árbol y planea más de 10 metros. Sin alas: se aplana y ondula en el aire 🐍🌳 #ciencia #animales #DatosYOciosidades",
+ "titulo": "Una serpiente que «vuela»",
+ "estructura": "pregunta",
+ "estilo_id": "papel_infantil",
+ "estilo_visual": "Papel infantil / bolígrafo",
+ "trend_source": {
+  "tipo": "dato",
+  "medio": "Nature",
+  "url": "https://www.nature.com/articles/418603a",
+  "termino": "Chrysopelea serpiente voladora planeo",
+  "fecha_consulta": "2026-10-26"
+ },
+ "voice": {
+  "engine": "edge-tts",
+  "voice_id": "es-MX-JorgeNeural",
+  "rate": "+7%",
+  "pitch": "-2Hz",
+  "pad_seconds": 0.3,
+  "modo_pausas": "continuo"
+ },
+ "cortinilla_fuentes": {
+  "duration_seconds": 6,
+  "titulo": "Fuentes",
+  "aviso": "Ilustraciones generadas con IA (estilo Papel infantil / bolígrafo); interpretación artística. Voz sintética con IA (edge-tts). Música sintetizada.",
+  "bg_rgb": [
+   28,
+   30,
+   52
+  ],
+  "firma": "Datos y ociosidades · @datosyociosidades"
+ },
+ "audio": {
+  "music_asset": "sintetico:circuito_neural",
+  "music_lufs": -27,
+  "ambiente_lufs": -28,
+  "music_license": "Sintetizado por scripts/cama_sonora.py (obra propia)",
+  "sfx_license": "Wikimedia Commons CC0/PD, ver assets/sfx/LICENCIAS.json",
+  "cama_musical": "circuito_neural"
+ },
+ "export": {
+  "filename": "capsula.mp4",
+  "resolution": "1080x1920",
+  "fps": 30,
+  "subtitle_max_words": 3,
+  "plano_seconds": 2.5,
+  "loudness_lufs": -14
+ },
+ "canal": {
+  "nombre": "Datos y ociosidades",
+  "handle": "@datosyociosidades",
+  "youtube_channel_id": "UCU2ZI-6pBJEr9aSFsF6bxLw"
+ },
+ "origen": "propia",
+ "parece_real": false,
+ "proveedor_imagenes": "GenerateImage (IA) con prompt_base del estilo",
+ "estado": "render 2026-10-26 noche · PENDIENTE REVISIÓN MJ",
+ "scenes": [
+  {
+   "id": "scene_001",
+   "arc": "hook_medias_res",
+   "duration_seconds": 13.8,
+   "narration": "¿Puede volar una serpiente que no tiene alas? En las selvas del sudeste de Asia hay una que se avienta desde lo alto de un árbol… y no se cae: planea. Parece cuento, pero los científicos la han filmado muchas veces.",
+   "on_screen_text": "¿Una serpiente que vuela?",
+   "visual_description": "Ilustración generada con IA, estilo Papel infantil / bolígrafo (interpretación artística)",
+   "image_prompt": "childlike imperfect doodle drawn with black ballpoint pen only on white crumpled paper, photographed with a phone, trembling wobbly lines, uneven stick figures, double-traced strokes, crooked handwriting, large clear single subject, simple empty paper background, soft fold shadows, optional fingertip at frame edge and small ink blot, amateur phone photo, not clean cartoon, not vector, not polished illustration, not photorealistic subject, vertical 9:16 + a long thin snake leaping from the top of a tall tree branch into the air, big smiling sun Palette: black ballpoint ink on white paper.",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "asset_filename": "frames/scene_001.png",
+   "ambiente": "",
+   "sfx": [],
+   "image_origen": {
+    "tipo": "ia_generada",
+    "herramienta": "GenerateImage"
+   }
+  },
+  {
+   "id": "scene_002",
+   "arc": "desarrollo",
+   "duration_seconds": 12.5,
+   "narration": "Se llama Chrysopelea, la serpiente arborícola del paraíso. Mide como un metro y es muy delgada, como una cuerda. Vive en Tailandia, Malasia, Indonesia y otras selvas del sur de Asia, y casi nunca baja al suelo.",
+   "on_screen_text": "Chrysopelea",
+   "visual_description": "Ilustración generada con IA, estilo Papel infantil / bolígrafo (interpretación artística)",
+   "image_prompt": "childlike imperfect doodle drawn with black ballpoint pen only on white crumpled paper, photographed with a phone, trembling wobbly lines, uneven stick figures, double-traced strokes, crooked handwriting, large clear single subject, simple empty paper background, soft fold shadows, optional fingertip at frame edge and small ink blot, amateur phone photo, not clean cartoon, not vector, not polished illustration, not photorealistic subject, vertical 9:16 + a thin snake curled on a branch next to a measuring stick drawn as a ruler Palette: black ballpoint ink on white paper.",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "asset_filename": "frames/scene_002.png",
+   "ambiente": "",
+   "sfx": [],
+   "image_origen": {
+    "tipo": "ia_generada",
+    "herramienta": "GenerateImage"
+   },
+   "capa": {
+    "tipo": "mapa",
+    "region": [
+     92,
+     128,
+     -10,
+     22
+    ],
+    "titulo": "Sudeste de Asia",
+    "puntos": [
+     {
+      "nombre": "Tailandia",
+      "lon": 101,
+      "lat": 15
+     },
+     {
+      "nombre": "Malasia",
+      "lon": 102,
+      "lat": 4
+     },
+     {
+      "nombre": "Borneo",
+      "lon": 114,
+      "lat": 1
+     }
+    ],
+    "fuente": "Socha 2002, Nature"
+   }
+  },
+  {
+   "id": "scene_003",
+   "arc": "desarrollo",
+   "duration_seconds": 13.8,
+   "narration": "El truco: al saltar, abre sus costillas y aplana el cuerpo. De redonda pasa a plana, casi como una cinta o un listón. Su cuerpo se vuelve como un ala de lado a lado. Atrapa el aire y frena la caída.",
+   "on_screen_text": "Se aplana",
+   "visual_description": "Ilustración generada con IA, estilo Papel infantil / bolígrafo (interpretación artística)",
+   "image_prompt": "childlike imperfect doodle drawn with black ballpoint pen only on white crumpled paper, photographed with a phone, trembling wobbly lines, uneven stick figures, double-traced strokes, crooked handwriting, large clear single subject, simple empty paper background, soft fold shadows, optional fingertip at frame edge and small ink blot, amateur phone photo, not clean cartoon, not vector, not polished illustration, not photorealistic subject, vertical 9:16 + side by side doodle: a round tube and a flat ribbon snake, arrows showing it flattening Palette: black ballpoint ink on white paper.",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "asset_filename": "frames/scene_003.png",
+   "ambiente": "",
+   "sfx": [],
+   "image_origen": {
+    "tipo": "ia_generada",
+    "herramienta": "GenerateImage"
+   }
+  },
+  {
+   "id": "scene_004",
+   "arc": "desarrollo",
+   "duration_seconds": 14.8,
+   "narration": "Y en el aire se mueve en forma de S, como si nadara. En dos mil veinte científicos de Virginia Tech comprobaron que sin esa ondulación se voltearía y caería. Incluso la grabaron con cámaras rápidas en una torre de quince metros, para medir cada movimiento.",
+   "on_screen_text": "Nada en el aire",
+   "visual_description": "Ilustración generada con IA, estilo Papel infantil / bolígrafo (interpretación artística)",
+   "image_prompt": "childlike imperfect doodle drawn with black ballpoint pen only on white crumpled paper, photographed with a phone, trembling wobbly lines, uneven stick figures, double-traced strokes, crooked handwriting, large clear single subject, simple empty paper background, soft fold shadows, optional fingertip at frame edge and small ink blot, amateur phone photo, not clean cartoon, not vector, not polished illustration, not photorealistic subject, vertical 9:16 + a snake in S shape gliding over tiny trees with motion lines, small scientist stick figure with a notebook below Palette: black ballpoint ink on white paper.",
+   "source_ids": [
+    "SRC-002",
+    "SRC-003"
+   ],
+   "asset_filename": "frames/scene_004.png",
+   "ambiente": "",
+   "sfx": [],
+   "image_origen": {
+    "tipo": "ia_generada",
+    "herramienta": "GenerateImage"
+   }
+  },
+  {
+   "id": "scene_005",
+   "arc": "cierre_historia",
+   "duration_seconds": 12.2,
+   "narration": "Así puede recorrer más de diez metros de un árbol a otro, y hasta girar en el aire para escoger dónde aterrizar. Así huye de sus enemigos y llega a otro árbol sin tocar el suelo.",
+   "on_screen_text": "+10 metros",
+   "visual_description": "Ilustración generada con IA, estilo Papel infantil / bolígrafo (interpretación artística)",
+   "image_prompt": "childlike imperfect doodle drawn with black ballpoint pen only on white crumpled paper, photographed with a phone, trembling wobbly lines, uneven stick figures, double-traced strokes, crooked handwriting, large clear single subject, simple empty paper background, soft fold shadows, optional fingertip at frame edge and small ink blot, amateur phone photo, not clean cartoon, not vector, not polished illustration, not photorealistic subject, vertical 9:16 + a dotted arc line between two trees with a snake landing on the second tree, number 10 drawn large Palette: black ballpoint ink on white paper.",
+   "source_ids": [
+    "SRC-001",
+    "SRC-003"
+   ],
+   "asset_filename": "frames/scene_005.png",
+   "ambiente": "",
+   "sfx": [],
+   "image_origen": {
+    "tipo": "ia_generada",
+    "herramienta": "GenerateImage"
+   },
+   "capa": {
+    "tipo": "dato",
+    "valor": "+10 m",
+    "etiqueta": "de planeo entre árboles",
+    "fuente": "Socha 2002; Virginia Tech"
+   }
+  },
+  {
+   "id": "scene_006",
+   "arc": "reflexion_o_pregunta",
+   "duration_seconds": 8.3,
+   "narration": "No vuela como un pájaro: planea, como un papalote vivo. Si tú fueras animal, ¿qué te gustaría poder hacer? Esto fue Datos y ociosidades.",
+   "on_screen_text": "Un papalote vivo",
+   "visual_description": "Ilustración generada con IA, estilo Papel infantil / bolígrafo (interpretación artística)",
+   "image_prompt": "childlike imperfect doodle drawn with black ballpoint pen only on white crumpled paper, photographed with a phone, trembling wobbly lines, uneven stick figures, double-traced strokes, crooked handwriting, large clear single subject, simple empty paper background, soft fold shadows, optional fingertip at frame edge and small ink blot, amateur phone photo, not clean cartoon, not vector, not polished illustration, not photorealistic subject, vertical 9:16 + a snake shaped like a kite in the sky with a child stick figure holding a string looking up happily Palette: black ballpoint ink on white paper.",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "asset_filename": "frames/scene_006.png",
+   "ambiente": "",
+   "sfx": [],
+   "image_origen": {
+    "tipo": "ia_generada",
+    "herramienta": "GenerateImage"
+   }
+  }
+ ],
+ "target_duration_seconds": 70
+}

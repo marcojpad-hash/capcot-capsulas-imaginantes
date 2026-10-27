@@ -1,0 +1,231 @@
+{
+ "project_id": "noct-anfibio-marino",
+ "serie": "Datos y ociosidades",
+ "title": "Anfibio marino: hallan el primero que vivió en el mar",
+ "language": "es-MX",
+ "aspect_ratio": "9:16",
+ "sources": [
+  {
+   "id": "SRC-001",
+   "cita_corta": "UC Davis News (26-oct-2026) – Researchers Unearth Fossil Evidence of First Fully Marine Amphibian",
+   "url": "https://www.ucdavis.edu/curiosity/news/researchers-unearth-fossil-evidence-first-fully-marine-amphibian",
+   "accessed": "2026-10-26",
+   "supports": [
+    "237 Ma, Guizhou, armadura, 90 cm, 8000 especies, <2%"
+   ]
+  },
+  {
+   "id": "SRC-002",
+   "cita_corta": "Motani et al. (2026). Nature Ecology & Evolution – Gerrothorax maritimus",
+   "url": "https://www.nature.com/natecolevol/",
+   "accessed": "2026-10-26",
+   "supports": [
+    "publicación original"
+   ]
+  }
+ ],
+ "titulo_yt": "Anfibio marino: hallan el primero que vivía en el mar, hace 237 millones de años #Shorts",
+ "caption_tt": "Dato del día (26-oct-2026): describen Gerrothorax maritimus, el primer anfibio que vivía de lleno en el mar. Hoy ninguno de 8,000 anfibios puede 🐸🌊 #ciencia #paleontología #DatosYOciosidades",
+ "titulo": "Dato del día: un anfibio de mar",
+ "estructura": "comparacion",
+ "estilo_id": "dibujo_cientifico_scratchboard",
+ "estilo_visual": "Scratchboard científico",
+ "trend_source": {
+  "tipo": "dato",
+  "medio": "UC Davis",
+  "url": "https://www.ucdavis.edu/curiosity/news/researchers-unearth-fossil-evidence-first-fully-marine-amphibian",
+  "termino": "Gerrothorax maritimus anfibio marino",
+  "fecha_consulta": "2026-10-26"
+ },
+ "voice": {
+  "engine": "edge-tts",
+  "voice_id": "es-MX-JorgeNeural",
+  "rate": "+7%",
+  "pitch": "-2Hz",
+  "pad_seconds": 0.3,
+  "modo_pausas": "continuo"
+ },
+ "cortinilla_fuentes": {
+  "duration_seconds": 6,
+  "titulo": "Fuentes",
+  "aviso": "Ilustraciones generadas con IA (estilo Scratchboard científico); interpretación artística. Voz sintética con IA (edge-tts). Música sintetizada.",
+  "bg_rgb": [
+   28,
+   30,
+   52
+  ],
+  "firma": "Datos y ociosidades · @datosyociosidades"
+ },
+ "audio": {
+  "music_asset": "sintetico:",
+  "music_lufs": -27,
+  "ambiente_lufs": -28,
+  "music_license": "Sintetizado por scripts/cama_sonora.py (obra propia)",
+  "sfx_license": "Wikimedia Commons CC0/PD, ver assets/sfx/LICENCIAS.json"
+ },
+ "export": {
+  "filename": "capsula.mp4",
+  "resolution": "1080x1920",
+  "fps": 30,
+  "subtitle_max_words": 3,
+  "plano_seconds": 2.5,
+  "loudness_lufs": -14
+ },
+ "canal": {
+  "nombre": "Datos y ociosidades",
+  "handle": "@datosyociosidades",
+  "youtube_channel_id": "UCU2ZI-6pBJEr9aSFsF6bxLw"
+ },
+ "origen": "propia",
+ "parece_real": false,
+ "proveedor_imagenes": "GenerateImage (IA) con prompt_base del estilo",
+ "estado": "render 2026-10-26 noche · PENDIENTE REVISIÓN MJ",
+ "scenes": [
+  {
+   "id": "scene_001",
+   "arc": "hook_medias_res",
+   "duration_seconds": 14.8,
+   "narration": "Dato del día. Hoy hay más de ocho mil especies de anfibios: ranas, sapos, salamandras. Ninguna vive en el mar. Pero acaban de encontrar una que sí. Ese era un misterio: hay mamíferos, reptiles y aves que viven en el mar. Los anfibios, no.",
+   "on_screen_text": "Dato del día",
+   "visual_description": "Ilustración generada con IA, estilo Scratchboard científico (interpretación artística)",
+   "image_prompt": "scratchboard illustration, white lines scratched on black, fine cross-hatching, dramatic single subject filling frame, black background, not photorealistic, vertical 9:16, no text + a frog silhouette on the left and dark ocean waves on the right, divided composition Palette: black, white, amber.",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "asset_filename": "frames/scene_001.png",
+   "ambiente": "",
+   "sfx": [],
+   "image_origen": {
+    "tipo": "ia_generada",
+    "herramienta": "GenerateImage"
+   },
+   "capa": {
+    "tipo": "dato",
+    "valor": "8,000+",
+    "etiqueta": "anfibios hoy: ninguno marino",
+    "fuente": "UC Davis 2026"
+   }
+  },
+  {
+   "id": "scene_002",
+   "arc": "desarrollo",
+   "duration_seconds": 11.9,
+   "narration": "Se llama Gerrothorax maritimus. Lo anunciaron este veintiséis de octubre científicos de la Universidad de California en Davis y de China. Lo publicaron en la revista Nature Ecology and Evolution, con dos esqueletos casi completos.",
+   "on_screen_text": "26 de octubre de 2026",
+   "visual_description": "Ilustración generada con IA, estilo Scratchboard científico (interpretación artística)",
+   "image_prompt": "scratchboard illustration, white lines scratched on black, fine cross-hatching, dramatic single subject filling frame, black background, not photorealistic, vertical 9:16, no text + fossil skeleton of a flat broad-headed amphibian embedded in rock slab Palette: black, white, amber.",
+   "source_ids": [
+    "SRC-001",
+    "SRC-002"
+   ],
+   "asset_filename": "frames/scene_002.png",
+   "ambiente": "",
+   "sfx": [],
+   "image_origen": {
+    "tipo": "ia_generada",
+    "herramienta": "GenerateImage"
+   }
+  },
+  {
+   "id": "scene_003",
+   "arc": "desarrollo",
+   "duration_seconds": 14.5,
+   "narration": "Vivió hace doscientos treinta y siete millones de años, en un mar que cubría lo que hoy es Guizhou, en China. Medía casi un metro y era plano como un disco. En ese mar también nadaban ictiosaurios, reptiles parecidos a delfines. Por eso iba bien armado.",
+   "on_screen_text": "237 millones de años",
+   "visual_description": "Ilustración generada con IA, estilo Scratchboard científico (interpretación artística)",
+   "image_prompt": "scratchboard illustration, white lines scratched on black, fine cross-hatching, dramatic single subject filling frame, black background, not photorealistic, vertical 9:16, no text + a flat disc-shaped armored amphibian lying on the sea floor, ichthyosaur shadow above Palette: black, white, amber.",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "asset_filename": "frames/scene_003.png",
+   "ambiente": "",
+   "sfx": [],
+   "image_origen": {
+    "tipo": "ia_generada",
+    "herramienta": "GenerateImage"
+   },
+   "capa": {
+    "tipo": "mapa",
+    "region": [
+     95,
+     120,
+     18,
+     35
+    ],
+    "titulo": "Guizhou, China",
+    "puntos": [
+     {
+      "nombre": "Guizhou",
+      "lon": 106.7,
+      "lat": 26.6
+     }
+    ],
+    "fuente": "UC Davis 2026"
+   }
+  },
+  {
+   "id": "scene_004",
+   "arc": "desarrollo",
+   "duration_seconds": 16.1,
+   "narration": "La diferencia clave es la piel. Las ranas respiran y beben por la piel, y el agua salada las deshidrata. Él tenía una armadura de hueso que lo aislaba. Menos del dos por ciento de los anfibios de hoy aguantan algo de sal, y aun así pierden peso.",
+   "on_screen_text": "Piel vs armadura",
+   "visual_description": "Ilustración generada con IA, estilo Scratchboard científico (interpretación artística)",
+   "image_prompt": "scratchboard illustration, white lines scratched on black, fine cross-hatching, dramatic single subject filling frame, black background, not photorealistic, vertical 9:16, no text + split: a soft frog skin texture vs bony armor plates scales Palette: black, white, amber.",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "asset_filename": "frames/scene_004.png",
+   "ambiente": "",
+   "sfx": [],
+   "image_origen": {
+    "tipo": "ia_generada",
+    "herramienta": "GenerateImage"
+   },
+   "capa": {
+    "tipo": "dato",
+    "valor": "<2%",
+    "etiqueta": "de anfibios toleran algo de sal",
+    "fuente": "UC Davis 2026"
+   }
+  },
+  {
+   "id": "scene_005",
+   "arc": "cierre_historia",
+   "duration_seconds": 13.5,
+   "narration": "Bebía el agua por la boca y usaba branquias para sacar la sal. Esperaba quieto en el fondo y succionaba a sus presas. Los fósiles conservan hasta los dedos: señal de que murió donde vivía, en el fondo del mar.",
+   "on_screen_text": "Cazaba succionando",
+   "visual_description": "Ilustración generada con IA, estilo Scratchboard científico (interpretación artística)",
+   "image_prompt": "scratchboard illustration, white lines scratched on black, fine cross-hatching, dramatic single subject filling frame, black background, not photorealistic, vertical 9:16, no text + the armored amphibian opening wide mouth sucking in a small fish on the sea floor Palette: black, white, amber.",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "asset_filename": "frames/scene_005.png",
+   "ambiente": "",
+   "sfx": [],
+   "image_origen": {
+    "tipo": "ia_generada",
+    "herramienta": "GenerateImage"
+   }
+  },
+  {
+   "id": "scene_006",
+   "arc": "reflexion_o_pregunta",
+   "duration_seconds": 7.4,
+   "narration": "Una rana de hoy duraría poco en el mar; este pariente antiguo vivía ahí. Buenas noches. Esto fue Datos y ociosidades.",
+   "on_screen_text": "Buenas noches",
+   "visual_description": "Ilustración generada con IA, estilo Scratchboard científico (interpretación artística)",
+   "image_prompt": "scratchboard illustration, white lines scratched on black, fine cross-hatching, dramatic single subject filling frame, black background, not photorealistic, vertical 9:16, no text + a moon over a calm night sea with the fossil amphibian outline in the deep Palette: black, white, amber.",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "asset_filename": "frames/scene_006.png",
+   "ambiente": "",
+   "sfx": [],
+   "image_origen": {
+    "tipo": "ia_generada",
+    "herramienta": "GenerateImage"
+   }
+  }
+ ],
+ "target_duration_seconds": 70
+}
