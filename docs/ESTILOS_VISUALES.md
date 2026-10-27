@@ -248,3 +248,12 @@ Prompt: `watercolor sketch tattoo flash, rough black ink sketch of the subject w
 Variante oficial: **v2** (elegida por Mj en catalogo_sketch, 2026-10-24); la otra se descartó. Frame de referencia: `referencias_estilo/tatuaje_acuarela_oficial.jpg` (local, no se commitea).
 
 Temas: naturaleza, clima, océano, emociones, biología, animales, agua · Ref: referencias_estilo/66fca9e1…jpg (línea fina bartending) + búsqueda web 'sketch tattoo' (tattmagic.com, sortra.com) y 'watercolor tattoo' (thinktanktattoo.com, madrabbit.com), 2026-10-24
+
+### Acuarela japonesa (`acuarela_japonesa`) — atractivo 5 (plantilla posible 2026-10-27)
+Aguadas suaves sobre papel tipo washi: bordes que sangran, lavados azul-gris, sujeto centrado y legible; un acento de color fuerte solo si el tema lo pide (rojo/dorado). Inspiración sumi-e / acuarela japonesa contemporánea — **no** ukiyo-e de planos planos ni `acuarela_linea` monocromo.
+
+Prompt: `Japanese watercolor on washi paper, soft bleeding washes, indigo-gray and cream, delicate brush edges that dissolve into the paper, one large readable subject centered, sparse background, subtle paper texture, optional single strong accent color if the theme needs it, illustrated not photorealistic, vertical 9:16, no text`
+
+Referencia local (estilo, no el gag): `referencias_estilo/acuarela_japonesa_ref_mj.png` (no se confía en el texto del meme ni en el handle).
+
+Temas: animales, mitos/Asia, océano, flora, misterios suaves, cultura material japonesa genérica · Distinto de `ukiyo_e` y `tatuaje_acuarela`.

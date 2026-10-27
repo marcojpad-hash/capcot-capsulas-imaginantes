@@ -38,3 +38,6 @@ Solo propuestas: **no** se ha editado `scripts/estilos.json`. Ids verificados co
 5. Todos los prompts anti-fotorreales (“illustrated / not photorealistic”) y 9:16.
 6. Respetar IP: inspiración de época sí; personajes, logos o escenas reconocibles no.
 7. Antes de añadir a `estilos.json`: generar 1 frame de prueba por estilo y que Mj apruebe (atractivo provisional hasta entonces).
+
+## 5. Añadido Mj 27-oct-2026 — acuarela japonesa
+Id: `acuarela_japonesa`. Ref visual de Mj (story: gato + máscara, estética acuarela japonesa). Entrar al catálogo como plantilla posible: solo look (aguadas/washi), sin gag ni IP ajena. Pendiente frame de prueba antes de meter a `scripts/estilos.json`.
