@@ -3983,5 +3983,99 @@
   },
   "tiktok": null,
   "nota": "Reporte horario 09:00 (corrida ~08:57). YT Data API uploads, solo públicos (6 privados/programados excluidos). TikTok null: sin navegador en esta corrida. Delta vs 2026-10-27T08:06."
+ },
+ {
+  "timestamp_cdmx": "2026-10-27T09:53-06:00",
+  "youtube": {
+   "3RdSX40OCac": {
+    "view": 33,
+    "like": 0,
+    "comment": 0
+   },
+   "YKldyldCeiQ": {
+    "view": 178,
+    "like": 5,
+    "comment": 0
+   },
+   "GYxjXDh1ahc": {
+    "view": 394,
+    "like": 6,
+    "comment": 0
+   },
+   "ivVo2H9NaEU": {
+    "view": 289,
+    "like": 12,
+    "comment": 0
+   },
+   "PBDMJxOkCRk": {
+    "view": 1250,
+    "like": 28,
+    "comment": 4
+   },
+   "i9QBFPljl6M": {
+    "view": 1036,
+    "like": 22,
+    "comment": 0
+   },
+   "bYGd7QuenSk": {
+    "view": 1008,
+    "like": 24,
+    "comment": 0
+   },
+   "gIjJ0YKYQ8M": {
+    "view": 1213,
+    "like": 60,
+    "comment": 1
+   },
+   "AJR6kcnnDig": {
+    "view": 180,
+    "like": 12,
+    "comment": 0
+   },
+   "Qe2Y9xDn9QQ": {
+    "view": 977,
+    "like": 33,
+    "comment": 2
+   },
+   "3bhntOcKHPk": {
+    "view": 1419,
+    "like": 37,
+    "comment": 0
+   },
+   "O7TdKvuBjyg": {
+    "view": 13,
+    "like": 1,
+    "comment": 0
+   },
+   "r1AhsPOAS_o": {
+    "view": 1389,
+    "like": 73,
+    "comment": 4
+   },
+   "ZrUtKs7Ty7U": {
+    "view": 1315,
+    "like": 48,
+    "comment": 5
+   },
+   "5D96DmjvioU": {
+    "view": 621,
+    "like": 27,
+    "comment": 0
+   }
+  },
+  "youtube_totales": {
+   "view": 11315,
+   "like": 388,
+   "comment": 16
+  },
+  "suscriptores": 34,
+  "delta_vs_anterior": {
+   "view": 9,
+   "like": 1,
+   "comment": 0,
+   "suscriptores": 1
+  },
+  "tiktok": null,
+  "nota": "Reporte horario 10:00 (corrida ~09:53). YT Data API uploads, solo públicos (6 privados/programados excluidos). TikTok null: sin navegador en esta corrida. Delta vs 2026-10-27T08:57."
  }
 ]
