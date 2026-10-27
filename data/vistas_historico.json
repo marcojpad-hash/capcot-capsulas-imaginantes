@@ -1,3644 +1,3738 @@
 [
-  {
-    "timestamp_cdmx": "2026-10-24T15:06:12-06:00",
-    "youtube": {
-      "5D96DmjvioU": {
-        "view": 16,
-        "like": 1,
-        "comment": 0
-      },
-      "ZrUtKs7Ty7U": {
-        "view": 9,
-        "like": 0,
-        "comment": 0
-      }
-    },
-    "youtube_totales": {
-      "view": 25,
-      "like": 1,
-      "comment": 0
-    },
-    "suscriptores": 1,
-    "tiktok": "pendiente de Studio (sin cifras en repo)"
+ {
+  "timestamp_cdmx": "2026-10-24T15:06:12-06:00",
+  "youtube": {
+   "5D96DmjvioU": {
+    "view": 16,
+    "like": 1,
+    "comment": 0
+   },
+   "ZrUtKs7Ty7U": {
+    "view": 9,
+    "like": 0,
+    "comment": 0
+   }
   },
-  {
-    "timestamp_cdmx": "2026-10-24T16:09:00-06:00",
-    "youtube": {
-      "5D96DmjvioU": {
-        "view": 40,
-        "like": 3,
-        "comment": 0
-      },
-      "ZrUtKs7Ty7U": {
-        "view": 36,
-        "like": 2,
-        "comment": 0
-      }
+  "youtube_totales": {
+   "view": 25,
+   "like": 1,
+   "comment": 0
+  },
+  "suscriptores": 1,
+  "tiktok": "pendiente de Studio (sin cifras en repo)"
+ },
+ {
+  "timestamp_cdmx": "2026-10-24T16:09:00-06:00",
+  "youtube": {
+   "5D96DmjvioU": {
+    "view": 40,
+    "like": 3,
+    "comment": 0
+   },
+   "ZrUtKs7Ty7U": {
+    "view": 36,
+    "like": 2,
+    "comment": 0
+   }
+  },
+  "youtube_totales": {
+   "view": 76,
+   "like": 5,
+   "comment": 0
+  },
+  "suscriptores": 2,
+  "tiktok": {
+   "fuente": "TikTok Studio",
+   "videos": {
+    "serpientes": {
+     "view": 0,
+     "like": 0,
+     "comment": 0
     },
-    "youtube_totales": {
-      "view": 76,
-      "like": 5,
-      "comment": 0
+    "el_nino_hashtags_IA": {
+     "view": 79,
+     "like": 2,
+     "comment": 0
     },
-    "suscriptores": 2,
-    "tiktok": {
-      "fuente": "TikTok Studio",
-      "videos": {
-        "serpientes": {
-          "view": 0,
-          "like": 0,
-          "comment": 0
-        },
-        "el_nino_hashtags_IA": {
-          "view": 79,
-          "like": 2,
-          "comment": 0
-        },
-        "el_nino_mar_navidad": {
-          "view": 0,
-          "like": 0,
-          "comment": 0
-        }
-      },
-      "totales": {
-        "view": 79,
-        "like": 2,
-        "comment": 0
-      },
-      "seguidores": 0
+    "el_nino_mar_navidad": {
+     "view": 0,
+     "like": 0,
+     "comment": 0
     }
-  },
-  {
-    "timestamp_cdmx": "2026-10-24T17:05:00-06:00",
-    "youtube": {
-      "5D96DmjvioU": {
-        "view": 125,
-        "like": 10,
-        "comment": 0
-      },
-      "ZrUtKs7Ty7U": {
-        "view": 138,
-        "like": 12,
-        "comment": 0
-      },
-      "r1AhsPOAS_o": {
-        "view": 4,
-        "like": 1,
-        "comment": 0
-      }
-    },
-    "youtube_totales": {
-      "view": 267,
-      "like": 23,
-      "comment": 0
-    },
-    "suscriptores": null,
-    "tiktok": {
-      "fuente": "TikTok Studio",
-      "videos": {
-        "serpientes": {
-          "view": 1,
-          "like": 0,
-          "comment": 0
-        },
-        "ideonella": {
-          "view": 35,
-          "like": 2,
-          "comment": 0
-        },
-        "el_nino_hashtags_IA": {
-          "view": 87,
-          "like": 2,
-          "comment": 0
-        }
-      },
-      "totales": {
-        "view": 123,
-        "like": 4,
-        "comment": 0
-      },
-      "seguidores": 0,
-      "nota": "el_nino_mar_navidad ya no aparece en Studio"
-    }
-  },
-  {
-    "timestamp_cdmx": "2026-10-24T18:09:00-06:00",
-    "youtube": {
-      "5D96DmjvioU": {
-        "view": 208,
-        "like": 14,
-        "comment": 0
-      },
-      "ZrUtKs7Ty7U": {
-        "view": 280,
-        "like": 18,
-        "comment": 0
-      },
-      "r1AhsPOAS_o": {
-        "view": 6,
-        "like": 1,
-        "comment": 0
-      },
-      "ZmejLrdEslU": {
-        "view": 0,
-        "like": 0,
-        "comment": 0
-      },
-      "O7TdKvuBjyg": {
-        "view": 0,
-        "like": 0,
-        "comment": 0
-      }
-    },
-    "youtube_totales": {
-      "view": 494,
-      "like": 33,
-      "comment": 0
-    },
-    "suscriptores": 2,
-    "tiktok": {
-      "fuente": "TikTok Studio",
-      "videos": {
-        "aves_mujeres": {
-          "view": 21,
-          "like": 1,
-          "comment": 0
-        },
-        "serpientes": {
-          "view": 27,
-          "like": 0,
-          "comment": 0
-        },
-        "ideonella": {
-          "view": 89,
-          "like": 7,
-          "comment": 0
-        },
-        "el_nino_hashtags_IA": {
-          "view": 105,
-          "like": 2,
-          "comment": 0
-        }
-      },
-      "totales": {
-        "view": 242,
-        "like": 10,
-        "comment": 0
-      },
-      "seguidores": 0
-    }
-  },
-  {
-    "timestamp_cdmx": "2026-10-24T19:10:00-06:00",
-    "youtube": {
-      "5D96DmjvioU": {
-        "view": 252,
-        "like": 15,
-        "comment": 0
-      },
-      "ZrUtKs7Ty7U": {
-        "view": 414,
-        "like": 20,
-        "comment": 0
-      },
-      "r1AhsPOAS_o": {
-        "view": 176,
-        "like": 15,
-        "comment": 0
-      },
-      "ZmejLrdEslU": {
-        "view": 0,
-        "like": 0,
-        "comment": 0
-      },
-      "O7TdKvuBjyg": {
-        "view": 0,
-        "like": 0,
-        "comment": 0
-      },
-      "76DCb-MJZCc": {
-        "view": 9,
-        "like": 0,
-        "comment": 0
-      },
-      "3bhntOcKHPk": {
-        "view": 6,
-        "like": 0,
-        "comment": 0
-      }
-    },
-    "youtube_totales": {
-      "view": 857,
-      "like": 50,
-      "comment": 0
-    },
-    "suscriptores": 8,
-    "tiktok": {
-      "fuente": "TikTok Studio",
-      "videos": {
-        "aves_mujeres": {
-          "view": 40,
-          "like": 4,
-          "comment": 0
-        },
-        "serpientes": {
-          "view": 31,
-          "like": 0,
-          "comment": 0
-        },
-        "ideonella": {
-          "view": 210,
-          "like": 12,
-          "comment": 0
-        },
-        "el_nino_hashtags_IA": {
-          "view": 124,
-          "like": 3,
-          "comment": 0
-        }
-      },
-      "totales": {
-        "view": 405,
-        "like": 19,
-        "comment": 0
-      },
-      "seguidores": 0
-    },
-    "nota": "YouTube tiene dos videos de abejas (76DCb-MJZCc y 3bhntOcKHPk) con el mismo título"
-  },
-  {
-    "timestamp_cdmx": "2026-10-24T20:05:00-06:00",
-    "youtube": {
-      "3bhntOcKHPk": {
-        "view": 146,
-        "like": 5,
-        "comment": 0
-      },
-      "O7TdKvuBjyg": {
-        "view": 2,
-        "like": 0,
-        "comment": 0
-      },
-      "r1AhsPOAS_o": {
-        "view": 330,
-        "like": 27,
-        "comment": 2
-      },
-      "ZrUtKs7Ty7U": {
-        "view": 551,
-        "like": 29,
-        "comment": 0
-      },
-      "5D96DmjvioU": {
-        "view": 260,
-        "like": 15,
-        "comment": 0
-      }
-    },
-    "youtube_totales": {
-      "view": 1289,
-      "like": 76,
-      "comment": 2
-    },
-    "suscriptores": 9,
-    "tiktok": {
-      "fuente": "TikTok Studio",
-      "videos": {
-        "aves_mujeres": {
-          "view": 167,
-          "like": 18,
-          "comment": 0
-        },
-        "serpientes": {
-          "view": 44,
-          "like": 1,
-          "comment": 0
-        },
-        "ideonella": {
-          "view": 522,
-          "like": 32,
-          "comment": 0
-        },
-        "el_nino_hashtags_IA": {
-          "view": 145,
-          "like": 3,
-          "comment": 0
-        }
-      },
-      "totales": {
-        "view": 878,
-        "like": 54,
-        "comment": 0
-      },
-      "seguidores": 0
-    },
-    "nota": "76DCb-MJZCc y ZmejLrdEslU ya no aparecen en el canal de YouTube"
-  },
-  {
-    "timestamp_cdmx": "2026-10-24T21:01:00-06:00",
-    "youtube": {
-      "3bhntOcKHPk": {
-        "view": 434,
-        "like": 18,
-        "comment": 0
-      },
-      "O7TdKvuBjyg": {
-        "view": 0,
-        "like": 0,
-        "comment": 0
-      },
-      "r1AhsPOAS_o": {
-        "view": 456,
-        "like": 37,
-        "comment": 2
-      },
-      "ZrUtKs7Ty7U": {
-        "view": 746,
-        "like": 42,
-        "comment": 0
-      },
-      "5D96DmjvioU": {
-        "view": 261,
-        "like": 15,
-        "comment": 0
-      }
-    },
-    "youtube_totales": {
-      "view": 1897,
-      "like": 112,
-      "comment": 2
-    },
-    "suscriptores": 10,
-    "tiktok": {
-      "fuente": "TikTok Studio",
-      "videos": {
-        "abejas_bullying": {
-          "view": 21,
-          "like": 0,
-          "comment": 0
-        },
-        "aves_mujeres": {
-          "view": 484,
-          "like": 36,
-          "comment": 0
-        },
-        "serpientes": {
-          "view": 55,
-          "like": 1,
-          "comment": 0
-        },
-        "ideonella": {
-          "view": 536,
-          "like": 33,
-          "comment": 0
-        },
-        "el_nino_hashtags_IA": {
-          "view": 157,
-          "like": 3,
-          "comment": 0
-        }
-      },
-      "totales": {
-        "view": 1253,
-        "like": 73,
-        "comment": 0
-      },
-      "seguidores": 0
-    },
-    "nota": "YouTube O7TdKvuBjyg (aves) bajó de 2 a 0 vistas (recalculo de YouTube). TikTok: nuevo video abejas; seguidores 0 con captcha en perfil, puede no ser confiable."
-  },
-  {
-    "timestamp_cdmx": "2026-10-24T22:02:00-06:00",
-    "youtube": {
-      "3bhntOcKHPk": {
-        "view": 907,
-        "like": 33,
-        "comment": 0
-      },
-      "O7TdKvuBjyg": {
-        "view": 0,
-        "like": 0,
-        "comment": 0
-      },
-      "r1AhsPOAS_o": {
-        "view": 630,
-        "like": 51,
-        "comment": 4
-      },
-      "ZrUtKs7Ty7U": {
-        "view": 898,
-        "like": 47,
-        "comment": 0
-      },
-      "5D96DmjvioU": {
-        "view": 261,
-        "like": 15,
-        "comment": 0
-      }
-    },
-    "youtube_totales": {
-      "view": 2696,
-      "like": 146,
-      "comment": 4
-    },
-    "suscriptores": 11,
-    "tiktok": {
-      "fuente": "TikTok Studio",
-      "videos": {
-        "abejas_bullying": {
-          "view": 32,
-          "like": 3,
-          "comment": 0
-        },
-        "aves_mujeres": {
-          "view": 497,
-          "like": 37,
-          "comment": 0
-        },
-        "serpientes": {
-          "view": 63,
-          "like": 1,
-          "comment": 0
-        },
-        "ideonella": {
-          "view": 538,
-          "like": 33,
-          "comment": 0
-        },
-        "el_nino_hashtags_IA": {
-          "view": 166,
-          "like": 3,
-          "comment": 0
-        }
-      },
-      "totales": {
-        "view": 1296,
-        "like": 77,
-        "comment": 0
-      },
-      "seguidores": null
-    },
-    "nota": "TikTok seguidores no visibles en Studio."
-  },
-  {
-    "timestamp_cdmx": "2026-10-25T00:11:00-06:00",
-    "youtube": {
-      "5D96DmjvioU": {
-        "view": 342,
-        "like": 15,
-        "comment": 0
-      },
-      "ZrUtKs7Ty7U": {
-        "view": 1220,
-        "like": 47,
-        "comment": 0
-      },
-      "r1AhsPOAS_o": {
-        "view": 1039,
-        "like": 73,
-        "comment": 4
-      },
-      "3bhntOcKHPk": {
-        "view": 1090,
-        "like": 32,
-        "comment": 0
-      },
-      "O7TdKvuBjyg": {
-        "view": 2,
-        "like": 0,
-        "comment": 0
-      },
-      "Qe2Y9xDn9QQ": {
-        "view": 4,
-        "like": 0,
-        "comment": 0
-      }
-    },
-    "youtube_totales": {
-      "view": 3697,
-      "like": 167,
-      "comment": 4
-    },
-    "suscriptores": 11,
-    "tiktok": null,
-    "nota": "Solo YouTube (Data API). TikTok sin acceso; ultimo dato TikTok en snapshot 22:02."
-  },
-  {
-    "timestamp_cdmx": "2026-10-25T06:54-06:00",
-    "youtube": {
-      "IzWU_1BXq3Q": {
-        "view": 0,
-        "like": 0,
-        "comment": 0
-      },
-      "AJR6kcnnDig": {
-        "view": 0,
-        "like": 0,
-        "comment": 0
-      },
-      "Qe2Y9xDn9QQ": {
-        "view": 61,
-        "like": 3,
-        "comment": 0
-      },
-      "3bhntOcKHPk": {
-        "view": 1117,
-        "like": 32,
-        "comment": 0
-      },
-      "O7TdKvuBjyg": {
-        "view": 2,
-        "like": 0,
-        "comment": 0
-      },
-      "r1AhsPOAS_o": {
-        "view": 1336,
-        "like": 71,
-        "comment": 4
-      },
-      "ZrUtKs7Ty7U": {
-        "view": 1249,
-        "like": 47,
-        "comment": 0
-      },
-      "5D96DmjvioU": {
-        "view": 389,
-        "like": 21,
-        "comment": 0
-      }
-    },
-    "youtube_totales": {
-      "view": 4154,
-      "like": 174,
-      "comment": 4
-    },
-    "suscriptores": 13,
-    "delta_vs_anterior": {
-      "view": 457,
-      "like": 7,
-      "comment": 0,
-      "suscriptores": 2
-    },
-    "tiktok": null,
-    "nota": "Solo YouTube (Data API). IzWU_1BXq3Q y AJR6kcnnDig privados (programados/pendientes). TikTok sin acceso desde este run; último dato TikTok en snapshot 22:02 del 24-oct."
-  },
-  {
-    "timestamp_cdmx": "2026-10-25T07:50-06:00",
-    "youtube": {
-      "IzWU_1BXq3Q": {
-        "view": 0,
-        "like": 0,
-        "comment": 0
-      },
-      "AJR6kcnnDig": {
-        "view": 0,
-        "like": 0,
-        "comment": 0
-      },
-      "Qe2Y9xDn9QQ": {
-        "view": 61,
-        "like": 3,
-        "comment": 0
-      },
-      "3bhntOcKHPk": {
-        "view": 1125,
-        "like": 32,
-        "comment": 0
-      },
-      "O7TdKvuBjyg": {
-        "view": 2,
-        "like": 0,
-        "comment": 0
-      },
-      "r1AhsPOAS_o": {
-        "view": 1336,
-        "like": 71,
-        "comment": 4
-      },
-      "ZrUtKs7Ty7U": {
-        "view": 1251,
-        "like": 47,
-        "comment": 0
-      },
-      "5D96DmjvioU": {
-        "view": 420,
-        "like": 22,
-        "comment": 0
-      }
-    },
-    "youtube_totales": {
-      "view": 4195,
-      "like": 175,
-      "comment": 4
-    },
-    "suscriptores": 13,
-    "delta_vs_anterior": {
-      "view": 41,
-      "like": 1,
-      "comment": 0,
-      "suscriptores": 0
-    },
-    "tiktok": null,
-    "nota": "Solo YouTube (Data API). No públicos: IzWU_1BXq3Q, AJR6kcnnDig. TikTok sin acceso desde este run (sin login/API); no se inventa."
-  },
-  {
-    "timestamp_cdmx": "2026-10-25T08:04-06:00",
-    "youtube": {
-      "IzWU_1BXq3Q": {
-        "view": 0,
-        "like": 0,
-        "comment": 0
-      },
-      "AJR6kcnnDig": {
-        "view": 0,
-        "like": 0,
-        "comment": 0
-      },
-      "Qe2Y9xDn9QQ": {
-        "view": 79,
-        "like": 3,
-        "comment": 0
-      },
-      "3bhntOcKHPk": {
-        "view": 1125,
-        "like": 32,
-        "comment": 0
-      },
-      "O7TdKvuBjyg": {
-        "view": 2,
-        "like": 0,
-        "comment": 0
-      },
-      "r1AhsPOAS_o": {
-        "view": 1336,
-        "like": 71,
-        "comment": 4
-      },
-      "ZrUtKs7Ty7U": {
-        "view": 1251,
-        "like": 47,
-        "comment": 0
-      },
-      "5D96DmjvioU": {
-        "view": 444,
-        "like": 22,
-        "comment": 0
-      }
-    },
-    "youtube_totales": {
-      "view": 4237,
-      "like": 175,
-      "comment": 4
-    },
-    "suscriptores": 13,
-    "delta_vs_anterior": {
-      "view": 42,
-      "like": 0,
-      "comment": 0,
-      "suscriptores": 0
-    },
-    "tiktok": {
-      "fuente": "TikTok Studio",
-      "videos": {
-        "osedax_huesos": {
-          "view": 78,
-          "like": 1,
-          "comment": 0
-        },
-        "abejas_bullying": {
-          "view": 128,
-          "like": 8,
-          "comment": 0
-        },
-        "aves_mujeres": {
-          "view": 500,
-          "like": 38,
-          "comment": 0
-        },
-        "serpientes": {
-          "view": 92,
-          "like": 1,
-          "comment": 0
-        },
-        "ideonella": {
-          "view": 540,
-          "like": 33,
-          "comment": 0
-        },
-        "el_nino_hashtags_IA": {
-          "view": 231,
-          "like": 4,
-          "comment": 0
-        }
-      },
-      "totales": {
-        "view": 1569,
-        "like": 85,
-        "comment": 0
-      },
-      "seguidores": null
-    },
-    "nota": "Balance 6h 08:00. YT Data API (uploads del canal); TT leído en TikTok Studio."
-  },
-  {
-    "timestamp_cdmx": "2026-10-25 08:54",
-    "youtube": {
-      "IzWU_1BXq3Q": {
-        "view": 0,
-        "like": 0,
-        "comment": 0
-      },
-      "AJR6kcnnDig": {
-        "view": 0,
-        "like": 0,
-        "comment": 0
-      },
-      "Qe2Y9xDn9QQ": {
-        "view": 79,
-        "like": 3,
-        "comment": 0
-      },
-      "3bhntOcKHPk": {
-        "view": 1119,
-        "like": 32,
-        "comment": 0
-      },
-      "O7TdKvuBjyg": {
-        "view": 2,
-        "like": 0,
-        "comment": 0
-      },
-      "r1AhsPOAS_o": {
-        "view": 1338,
-        "like": 72,
-        "comment": 4
-      },
-      "ZrUtKs7Ty7U": {
-        "view": 1251,
-        "like": 47,
-        "comment": 0
-      },
-      "5D96DmjvioU": {
-        "view": 461,
-        "like": 23,
-        "comment": 0
-      }
-    },
-    "youtube_totales": {
-      "view": 4250,
-      "like": 177,
-      "comment": 4
-    },
-    "suscriptores": 13,
-    "delta_vs_anterior": {
-      "view": 13,
-      "like": 2,
-      "comment": 0,
-      "suscriptores": 0
-    },
-    "tiktok": null,
-    "nota": "Snapshot horario. YT Data API (uploads del canal). TikTok sin acceso desde este run (sin login/API); no se inventa; último dato TT en balance 08:00."
-  },
-  {
-    "timestamp_cdmx": "2026-10-25 09:52",
-    "youtube": {
-      "IzWU_1BXq3Q": {
-        "view": 0,
-        "like": 0,
-        "comment": 0
-      },
-      "AJR6kcnnDig": {
-        "view": 0,
-        "like": 0,
-        "comment": 0
-      },
-      "Qe2Y9xDn9QQ": {
-        "view": 80,
-        "like": 3,
-        "comment": 0
-      },
-      "3bhntOcKHPk": {
-        "view": 1135,
-        "like": 32,
-        "comment": 0
-      },
-      "O7TdKvuBjyg": {
-        "view": 2,
-        "like": 0,
-        "comment": 0
-      },
-      "r1AhsPOAS_o": {
-        "view": 1338,
-        "like": 72,
-        "comment": 4
-      },
-      "ZrUtKs7Ty7U": {
-        "view": 1251,
-        "like": 47,
-        "comment": 0
-      },
-      "5D96DmjvioU": {
-        "view": 468,
-        "like": 24,
-        "comment": 0
-      }
-    },
-    "youtube_totales": {
-      "view": 4274,
-      "like": 178,
-      "comment": 4
-    },
-    "suscriptores": 13,
-    "delta_vs_anterior": {
-      "view": 24,
-      "like": 1,
-      "comment": 0,
-      "suscriptores": 0
-    },
-    "tiktok": null,
-    "nota": "Snapshot horario. YT Data API (uploads del canal). TikTok sin acceso desde este run (sin login/API); no se inventa."
-  },
-  {
-    "timestamp_cdmx": "2026-10-25 10:50",
-    "youtube": {
-      "IzWU_1BXq3Q": {
-        "view": 0,
-        "like": 0,
-        "comment": 0
-      },
-      "AJR6kcnnDig": {
-        "view": 0,
-        "like": 0,
-        "comment": 0
-      },
-      "Qe2Y9xDn9QQ": {
-        "view": 80,
-        "like": 3,
-        "comment": 0
-      },
-      "3bhntOcKHPk": {
-        "view": 1138,
-        "like": 32,
-        "comment": 0
-      },
-      "O7TdKvuBjyg": {
-        "view": 2,
-        "like": 0,
-        "comment": 0
-      },
-      "r1AhsPOAS_o": {
-        "view": 1339,
-        "like": 72,
-        "comment": 4
-      },
-      "ZrUtKs7Ty7U": {
-        "view": 1251,
-        "like": 47,
-        "comment": 0
-      },
-      "5D96DmjvioU": {
-        "view": 505,
-        "like": 25,
-        "comment": 0
-      }
-    },
-    "youtube_totales": {
-      "view": 4315,
-      "like": 179,
-      "comment": 4
-    },
-    "suscriptores": 13,
-    "delta_vs_anterior": {
-      "view": 41,
-      "like": 1,
-      "comment": 0,
-      "suscriptores": 0
-    },
-    "tiktok": null,
-    "nota": "Snapshot horario. YT Data API (uploads del canal). TikTok sin acceso desde este run (sin login/API); no se inventa."
-  },
-  {
-    "timestamp_cdmx": "2026-10-25 11:54",
-    "youtube": {
-      "IzWU_1BXq3Q": {
-        "view": 0,
-        "like": 0,
-        "comment": 0
-      },
-      "AJR6kcnnDig": {
-        "view": 0,
-        "like": 0,
-        "comment": 0
-      },
-      "Qe2Y9xDn9QQ": {
-        "view": 80,
-        "like": 3,
-        "comment": 0
-      },
-      "3bhntOcKHPk": {
-        "view": 1135,
-        "like": 32,
-        "comment": 0
-      },
-      "O7TdKvuBjyg": {
-        "view": 2,
-        "like": 0,
-        "comment": 0
-      },
-      "r1AhsPOAS_o": {
-        "view": 1342,
-        "like": 72,
-        "comment": 4
-      },
-      "ZrUtKs7Ty7U": {
-        "view": 1258,
-        "like": 47,
-        "comment": 0
-      },
-      "5D96DmjvioU": {
-        "view": 524,
-        "like": 26,
-        "comment": 0
-      }
-    },
-    "youtube_totales": {
-      "view": 4341,
-      "like": 180,
-      "comment": 4
-    },
-    "suscriptores": 13,
-    "delta_vs_anterior": {
-      "view": 26,
-      "like": 1,
-      "comment": 0,
-      "suscriptores": 0
-    },
-    "tiktok": null,
-    "nota": "Snapshot horario. YT Data API (uploads del canal). TikTok sin acceso desde este run (sin login/API); no se inventa."
-  },
-  {
-    "timestamp_cdmx": "2026-10-25 12:56",
-    "youtube": {
-      "gIjJ0YKYQ8M": {
-        "view": 2,
-        "like": 0,
-        "comment": 0
-      },
-      "AJR6kcnnDig": {
-        "view": 4,
-        "like": 0,
-        "comment": 0
-      },
-      "IzWU_1BXq3Q": {
-        "view": 1,
-        "like": 0,
-        "comment": 0
-      },
-      "Qe2Y9xDn9QQ": {
-        "view": 110,
-        "like": 3,
-        "comment": 0
-      },
-      "3bhntOcKHPk": {
-        "view": 1145,
-        "like": 32,
-        "comment": 0
-      },
-      "O7TdKvuBjyg": {
-        "view": 3,
-        "like": 0,
-        "comment": 0
-      },
-      "r1AhsPOAS_o": {
-        "view": 1343,
-        "like": 72,
-        "comment": 4
-      },
-      "ZrUtKs7Ty7U": {
-        "view": 1258,
-        "like": 47,
-        "comment": 0
-      },
-      "5D96DmjvioU": {
-        "view": 527,
-        "like": 25,
-        "comment": 0
-      }
-    },
-    "youtube_totales": {
-      "view": 4393,
-      "like": 179,
-      "comment": 4
-    },
-    "suscriptores": 13,
-    "delta_vs_anterior": {
-      "view": 52,
-      "like": -1,
-      "comment": 0,
-      "suscriptores": 0
-    },
-    "tiktok": null,
-    "nota": "Snapshot horario. YT Data API (uploads del canal; nuevo gIjJ0YKYQ8M). No públicos: IzWU_1BXq3Q. Programados GHxm9dDUMmM/YAVdu0MLd24 no devueltos por la API aún. TikTok sin acceso desde este run (sin login/API); no se inventa."
-  },
-  {
-    "timestamp_cdmx": "2026-10-25 13:56",
-    "youtube": {
-      "gIjJ0YKYQ8M": {
-        "view": 4,
-        "like": 0,
-        "comment": 0
-      },
-      "AJR6kcnnDig": {
-        "view": 4,
-        "like": 0,
-        "comment": 0
-      },
-      "Qe2Y9xDn9QQ": {
-        "view": 169,
-        "like": 4,
-        "comment": 0
-      },
-      "3bhntOcKHPk": {
-        "view": 1146,
-        "like": 32,
-        "comment": 0
-      },
-      "O7TdKvuBjyg": {
-        "view": 6,
-        "like": 1,
-        "comment": 0
-      },
-      "r1AhsPOAS_o": {
-        "view": 1342,
-        "like": 72,
-        "comment": 4
-      },
-      "ZrUtKs7Ty7U": {
-        "view": 1258,
-        "like": 47,
-        "comment": 0
-      },
-      "5D96DmjvioU": {
-        "view": 528,
-        "like": 25,
-        "comment": 0
-      }
-    },
-    "youtube_totales": {
-      "view": 4457,
-      "like": 181,
-      "comment": 4
-    },
-    "suscriptores": 13,
-    "delta_vs_anterior": {
-      "view": 64,
-      "like": 2,
-      "comment": 0,
-      "suscriptores": 0
-    },
-    "tiktok": null,
-    "nota": "Snapshot horario. YT Data API (uploads del canal). No devueltos por la API: IzWU_1BXq3Q (privado) y programados GHxm9dDUMmM/YAVdu0MLd24; el delta de vistas incluye esa ausencia (-1 de IzWU). TikTok sin acceso desde este run (sin login/API); no se inventa."
-  },
-  {
-    "timestamp_cdmx": "2026-10-25T14:01-06:00",
-    "youtube": {
-      "gIjJ0YKYQ8M": {
-        "view": 4,
-        "like": 0,
-        "comment": 0
-      },
-      "AJR6kcnnDig": {
-        "view": 4,
-        "like": 0,
-        "comment": 0
-      },
-      "Qe2Y9xDn9QQ": {
-        "view": 178,
-        "like": 4,
-        "comment": 0
-      },
-      "3bhntOcKHPk": {
-        "view": 1146,
-        "like": 32,
-        "comment": 0
-      },
-      "O7TdKvuBjyg": {
-        "view": 8,
-        "like": 1,
-        "comment": 0
-      },
-      "r1AhsPOAS_o": {
-        "view": 1342,
-        "like": 72,
-        "comment": 4
-      },
-      "ZrUtKs7Ty7U": {
-        "view": 1258,
-        "like": 47,
-        "comment": 0
-      },
-      "5D96DmjvioU": {
-        "view": 528,
-        "like": 25,
-        "comment": 0
-      }
-    },
-    "youtube_totales": {
-      "view": 4468,
-      "like": 181,
-      "comment": 4
-    },
-    "suscriptores": 13,
-    "delta_vs_anterior": {
-      "view": 11,
-      "like": 0,
-      "comment": 0,
-      "suscriptores": 0
-    },
-    "tiktok": {
-      "fuente": "TikTok Studio",
-      "videos": {
-        "sueno_toba_qom": {
-          "view": 0,
-          "like": 0,
-          "comment": 0
-        },
-        "reina_topo": {
-          "view": 415,
-          "like": 40,
-          "comment": 0
-        },
-        "osedax_huesos": {
-          "view": 490,
-          "like": 24,
-          "comment": 0
-        },
-        "abejas_bullying": {
-          "view": 474,
-          "like": 22,
-          "comment": 0
-        },
-        "aves_mujeres": {
-          "view": 501,
-          "like": 38,
-          "comment": 0
-        },
-        "serpientes": {
-          "view": 104,
-          "like": 1,
-          "comment": 0
-        },
-        "ideonella": {
-          "view": 543,
-          "like": 33,
-          "comment": 0
-        },
-        "el_nino_hashtags_IA": {
-          "view": 270,
-          "like": 5,
-          "comment": 0
-        }
-      },
-      "totales": {
-        "view": 2797,
-        "like": 163,
-        "comment": 0
-      },
-      "seguidores": 1,
-      "likes_perfil": 162
-    },
-    "nota": "Balance 6h 14:00. YT Data API (uploads del canal; IzWU privado y programados no aparecen); TT leído en TikTok Studio ~14:05."
-  },
-  {
-    "timestamp_cdmx": "2026-10-25T14:02-06:00",
-    "youtube": {
-      "gIjJ0YKYQ8M": {
-        "view": 4,
-        "like": 0,
-        "comment": 0
-      },
-      "AJR6kcnnDig": {
-        "view": 4,
-        "like": 0,
-        "comment": 0
-      },
-      "Qe2Y9xDn9QQ": {
-        "view": 178,
-        "like": 4,
-        "comment": 0
-      },
-      "3bhntOcKHPk": {
-        "view": 1146,
-        "like": 32,
-        "comment": 0
-      },
-      "O7TdKvuBjyg": {
-        "view": 8,
-        "like": 1,
-        "comment": 0
-      },
-      "r1AhsPOAS_o": {
-        "view": 1342,
-        "like": 72,
-        "comment": 4
-      },
-      "ZrUtKs7Ty7U": {
-        "view": 1258,
-        "like": 47,
-        "comment": 0
-      },
-      "5D96DmjvioU": {
-        "view": 528,
-        "like": 25,
-        "comment": 0
-      }
-    },
-    "youtube_totales": {
-      "view": 4468,
-      "like": 181,
-      "comment": 4
-    },
-    "suscriptores": 13,
-    "delta_vs_anterior": {
-      "view": 0,
-      "like": 0,
-      "comment": 0,
-      "suscriptores": 0
-    },
-    "tiktok": {
-      "fuente": "TikTok Studio",
-      "videos": {
-        "sueno_luz_electrica": {
-          "view": 0,
-          "like": 0,
-          "comment": 0
-        },
-        "reina_topo": {
-          "view": 433,
-          "like": 41,
-          "comment": 0
-        },
-        "osedax_huesos": {
-          "view": 490,
-          "like": 24,
-          "comment": 0
-        },
-        "abejas_bullying": {
-          "view": 477,
-          "like": 22,
-          "comment": 0
-        },
-        "aves_mujeres": {
-          "view": 501,
-          "like": 38,
-          "comment": 0
-        },
-        "serpientes": {
-          "view": 104,
-          "like": 1,
-          "comment": 0
-        },
-        "ideonella": {
-          "view": 543,
-          "like": 33,
-          "comment": 0
-        },
-        "el_nino_hashtags_IA": {
-          "view": 270,
-          "like": 5,
-          "comment": 0
-        }
-      },
-      "totales": {
-        "view": 2818,
-        "like": 164,
-        "comment": 0
-      },
-      "seguidores": 1
-    },
-    "nota": "Balance 6h 14:00. YT Data API (uploads del canal); TT leído en TikTok Studio. Sueño TT figura con 0 (probablemente programado 15:58)."
-  },
-  {
-    "timestamp_cdmx": "2026-10-25T14:58-06:00",
-    "youtube": {
-      "gIjJ0YKYQ8M": {
-        "view": 4,
-        "like": 0,
-        "comment": 0
-      },
-      "AJR6kcnnDig": {
-        "view": 4,
-        "like": 0,
-        "comment": 0
-      },
-      "Qe2Y9xDn9QQ": {
-        "view": 255,
-        "like": 7,
-        "comment": 0
-      },
-      "3bhntOcKHPk": {
-        "view": 1146,
-        "like": 32,
-        "comment": 0
-      },
-      "O7TdKvuBjyg": {
-        "view": 8,
-        "like": 1,
-        "comment": 0
-      },
-      "r1AhsPOAS_o": {
-        "view": 1349,
-        "like": 72,
-        "comment": 4
-      },
-      "ZrUtKs7Ty7U": {
-        "view": 1265,
-        "like": 47,
-        "comment": 0
-      },
-      "5D96DmjvioU": {
-        "view": 528,
-        "like": 25,
-        "comment": 0
-      }
-    },
-    "youtube_totales": {
-      "view": 4559,
-      "like": 184,
-      "comment": 4
-    },
-    "suscriptores": 13,
-    "delta_vs_anterior": {
-      "view": 91,
-      "like": 3,
-      "comment": 0,
-      "suscriptores": 0
-    },
-    "tiktok": null,
-    "nota": "Snapshot horario. YT Data API (uploads del canal, solo públicos). TikTok sin acceso desde este run (sin login/API); no se inventa."
-  },
-  {
-    "timestamp_cdmx": "2026-10-25T15:54-06:00",
-    "youtube": {
-      "gIjJ0YKYQ8M": {
-        "view": 4,
-        "like": 0,
-        "comment": 0
-      },
-      "AJR6kcnnDig": {
-        "view": 5,
-        "like": 0,
-        "comment": 0
-      },
-      "Qe2Y9xDn9QQ": {
-        "view": 387,
-        "like": 16,
-        "comment": 0
-      },
-      "3bhntOcKHPk": {
-        "view": 1145,
-        "like": 32,
-        "comment": 0
-      },
-      "O7TdKvuBjyg": {
-        "view": 5,
-        "like": 1,
-        "comment": 0
-      },
-      "r1AhsPOAS_o": {
-        "view": 1349,
-        "like": 72,
-        "comment": 4
-      },
-      "ZrUtKs7Ty7U": {
-        "view": 1265,
-        "like": 47,
-        "comment": 0
-      },
-      "5D96DmjvioU": {
-        "view": 527,
-        "like": 25,
-        "comment": 0
-      }
-    },
-    "youtube_totales": {
-      "view": 4687,
-      "like": 193,
-      "comment": 4
-    },
-    "suscriptores": 14,
-    "delta_vs_anterior": {
-      "view": 128,
-      "like": 9,
-      "comment": 0,
-      "suscriptores": 1
-    },
-    "tiktok": null,
-    "nota": "Snapshot horario. YT Data API (uploads del canal, solo públicos). TikTok sin acceso desde este run (sin login/API); no se inventa."
-  },
-  {
-    "timestamp_cdmx": "2026-10-25T16:57-06:00",
-    "youtube": {
-      "gIjJ0YKYQ8M": {
-        "view": 4,
-        "like": 0,
-        "comment": 0
-      },
-      "AJR6kcnnDig": {
-        "view": 5,
-        "like": 0,
-        "comment": 0
-      },
-      "Qe2Y9xDn9QQ": {
-        "view": 518,
-        "like": 23,
-        "comment": 0
-      },
-      "3bhntOcKHPk": {
-        "view": 1150,
-        "like": 32,
-        "comment": 0
-      },
-      "O7TdKvuBjyg": {
-        "view": 5,
-        "like": 1,
-        "comment": 0
-      },
-      "r1AhsPOAS_o": {
-        "view": 1350,
-        "like": 72,
-        "comment": 4
-      },
-      "ZrUtKs7Ty7U": {
-        "view": 1265,
-        "like": 47,
-        "comment": 0
-      },
-      "5D96DmjvioU": {
-        "view": 533,
-        "like": 25,
-        "comment": 0
-      }
-    },
-    "youtube_totales": {
-      "view": 4830,
-      "like": 200,
-      "comment": 4
-    },
-    "suscriptores": 14,
-    "delta_vs_anterior": {
-      "view": 143,
-      "like": 7,
-      "comment": 0,
-      "suscriptores": 0
-    },
-    "tiktok": null,
-    "nota": "Snapshot horario. YT Data API (uploads del canal, solo públicos). TikTok sin acceso desde este run (sin login/API); no se inventa."
-  },
-  {
-    "timestamp_cdmx": "2026-10-25T17:54-06:00",
-    "youtube": {
-      "gIjJ0YKYQ8M": {
-        "view": 4,
-        "like": 0,
-        "comment": 0
-      },
-      "AJR6kcnnDig": {
-        "view": 13,
-        "like": 0,
-        "comment": 0
-      },
-      "Qe2Y9xDn9QQ": {
-        "view": 604,
-        "like": 28,
-        "comment": 0
-      },
-      "3bhntOcKHPk": {
-        "view": 1159,
-        "like": 32,
-        "comment": 0
-      },
-      "O7TdKvuBjyg": {
-        "view": 8,
-        "like": 1,
-        "comment": 0
-      },
-      "r1AhsPOAS_o": {
-        "view": 1352,
-        "like": 72,
-        "comment": 4
-      },
-      "ZrUtKs7Ty7U": {
-        "view": 1269,
-        "like": 47,
-        "comment": 0
-      },
-      "5D96DmjvioU": {
-        "view": 536,
-        "like": 25,
-        "comment": 0
-      }
-    },
-    "youtube_totales": {
-      "view": 4945,
-      "like": 205,
-      "comment": 4
-    },
-    "suscriptores": 14,
-    "delta_vs_anterior": {
-      "view": 115,
-      "like": 5,
-      "comment": 0,
-      "suscriptores": 0
-    },
-    "tiktok": null,
-    "nota": "Snapshot horario. YT Data API (uploads del canal, solo públicos). TikTok sin acceso desde este run (sin login/API); no se inventa."
-  },
-  {
-    "timestamp_cdmx": "2026-10-25T18:58-06:00",
-    "youtube": {
-      "gIjJ0YKYQ8M": {
-        "view": 4,
-        "like": 0,
-        "comment": 0
-      },
-      "AJR6kcnnDig": {
-        "view": 18,
-        "like": 0,
-        "comment": 0
-      },
-      "Qe2Y9xDn9QQ": {
-        "view": 737,
-        "like": 28,
-        "comment": 0
-      },
-      "3bhntOcKHPk": {
-        "view": 1157,
-        "like": 32,
-        "comment": 0
-      },
-      "O7TdKvuBjyg": {
-        "view": 11,
-        "like": 1,
-        "comment": 0
-      },
-      "r1AhsPOAS_o": {
-        "view": 1352,
-        "like": 72,
-        "comment": 4
-      },
-      "ZrUtKs7Ty7U": {
-        "view": 1269,
-        "like": 47,
-        "comment": 0
-      },
-      "5D96DmjvioU": {
-        "view": 545,
-        "like": 26,
-        "comment": 0
-      }
-    },
-    "youtube_totales": {
-      "view": 5093,
-      "like": 206,
-      "comment": 4
-    },
-    "suscriptores": 14,
-    "delta_vs_anterior": {
-      "view": 148,
-      "like": 1,
-      "comment": 0,
-      "suscriptores": 0
-    },
-    "tiktok": null,
-    "nota": "Snapshot horario. YT Data API (uploads del canal, solo públicos). TikTok sin acceso desde este run (sin login/API); no se inventa."
-  },
-  {
-    "timestamp_cdmx": "2026-10-25T19:57-06:00",
-    "youtube": {
-      "gIjJ0YKYQ8M": {
-        "view": 4,
-        "like": 0,
-        "comment": 0
-      },
-      "AJR6kcnnDig": {
-        "view": 40,
-        "like": 0,
-        "comment": 0
-      },
-      "Qe2Y9xDn9QQ": {
-        "view": 766,
-        "like": 28,
-        "comment": 0
-      },
-      "3bhntOcKHPk": {
-        "view": 1157,
-        "like": 32,
-        "comment": 0
-      },
-      "O7TdKvuBjyg": {
-        "view": 11,
-        "like": 1,
-        "comment": 0
-      },
-      "r1AhsPOAS_o": {
-        "view": 1352,
-        "like": 72,
-        "comment": 4
-      },
-      "ZrUtKs7Ty7U": {
-        "view": 1269,
-        "like": 47,
-        "comment": 0
-      },
-      "5D96DmjvioU": {
-        "view": 545,
-        "like": 26,
-        "comment": 0
-      }
-    },
-    "youtube_totales": {
-      "view": 5144,
-      "like": 206,
-      "comment": 4
-    },
-    "suscriptores": 14,
-    "delta_vs_anterior": {
-      "view": 51,
-      "like": 0,
-      "comment": 0,
-      "suscriptores": 0
-    },
-    "tiktok": null,
-    "nota": "Snapshot horario. YT Data API (uploads del canal, solo públicos). TikTok sin acceso desde este run (sin login/API); no se inventa."
-  },
-  {
-    "timestamp_cdmx": "2026-10-25T20:03-06:00",
-    "youtube": {
-      "gIjJ0YKYQ8M": {
-        "view": 4,
-        "like": 0,
-        "comment": 0
-      },
-      "AJR6kcnnDig": {
-        "view": 40,
-        "like": 0,
-        "comment": 0
-      },
-      "Qe2Y9xDn9QQ": {
-        "view": 766,
-        "like": 28,
-        "comment": 0
-      },
-      "3bhntOcKHPk": {
-        "view": 1169,
-        "like": 32,
-        "comment": 0
-      },
-      "O7TdKvuBjyg": {
-        "view": 11,
-        "like": 1,
-        "comment": 0
-      },
-      "r1AhsPOAS_o": {
-        "view": 1352,
-        "like": 72,
-        "comment": 4
-      },
-      "ZrUtKs7Ty7U": {
-        "view": 1269,
-        "like": 47,
-        "comment": 0
-      },
-      "5D96DmjvioU": {
-        "view": 545,
-        "like": 26,
-        "comment": 0
-      }
-    },
-    "youtube_totales": {
-      "view": 5156,
-      "like": 206,
-      "comment": 4
-    },
-    "suscriptores": 14,
-    "delta_vs_anterior": {
-      "view": 12,
-      "like": 0,
-      "comment": 0,
-      "suscriptores": 0
-    },
-    "tiktok": {
-      "fuente": "TikTok Studio",
-      "videos": {
-        "tardigrado": {
-          "view": 0,
-          "like": 0,
-          "comment": 0
-        },
-        "ave_jurasica": {
-          "view": 0,
-          "like": 0,
-          "comment": 0
-        },
-        "sueno_luz_electrica": {
-          "view": 2,
-          "like": 0,
-          "comment": 0
-        },
-        "reina_topo": {
-          "view": 701,
-          "like": 74,
-          "comment": 0
-        },
-        "osedax_huesos": {
-          "view": 496,
-          "like": 25,
-          "comment": 0
-        },
-        "abejas_bullying": {
-          "view": 500,
-          "like": 23,
-          "comment": 0
-        },
-        "aves_mujeres": {
-          "view": 501,
-          "like": 38,
-          "comment": 0
-        },
-        "serpientes": {
-          "view": 141,
-          "like": 3,
-          "comment": 0
-        },
-        "ideonella": {
-          "view": 553,
-          "like": 34,
-          "comment": 0
-        },
-        "el_nino_hashtags_IA": {
-          "view": 309,
-          "like": 6,
-          "comment": 0
-        }
-      },
-      "totales": {
-        "view": 3203,
-        "like": 203,
-        "comment": 0
-      },
-      "seguidores": 1,
-      "likes_perfil": 202
-    },
-    "nota": "Balance 6h 20:00. YT Data API (uploads del canal, solo públicos; GHxm/YAVd programados no aparecen). TT leído en TikTok Studio ~20:03; tardígrado (22:00 hoy) y ave jurásica (26-oct 20:00) programados con 0."
-  },
-  {
-    "timestamp_cdmx": "2026-10-25T20:51-06:00",
-    "youtube": {
-      "gIjJ0YKYQ8M": {
-        "view": 4,
-        "like": 0,
-        "comment": 0
-      },
-      "AJR6kcnnDig": {
-        "view": 40,
-        "like": 0,
-        "comment": 0
-      },
-      "Qe2Y9xDn9QQ": {
-        "view": 766,
-        "like": 28,
-        "comment": 0
-      },
-      "3bhntOcKHPk": {
-        "view": 1169,
-        "like": 33,
-        "comment": 0
-      },
-      "O7TdKvuBjyg": {
-        "view": 11,
-        "like": 1,
-        "comment": 0
-      },
-      "r1AhsPOAS_o": {
-        "view": 1358,
-        "like": 72,
-        "comment": 4
-      },
-      "ZrUtKs7Ty7U": {
-        "view": 1273,
-        "like": 47,
-        "comment": 0
-      },
-      "5D96DmjvioU": {
-        "view": 545,
-        "like": 26,
-        "comment": 0
-      }
-    },
-    "youtube_totales": {
-      "view": 5166,
-      "like": 207,
-      "comment": 4
-    },
-    "suscriptores": 14,
-    "delta_vs_anterior": {
-      "view": 10,
-      "like": 1,
-      "comment": 0,
-      "suscriptores": 0
-    },
-    "tiktok": null,
-    "nota": "Registro horario 21:00 (corrida ~20:52). YT Data API uploads del canal + GHxm/YAVd. No públicos: ninguno. TikTok null: esta corrida no abrió TikTok Studio (sin navegador); último TT en fila 20:03."
-  },
-  {
-    "timestamp_cdmx": "2026-10-25T21:53-06:00",
-    "youtube": {
-      "gIjJ0YKYQ8M": {
-        "view": 4,
-        "like": 0,
-        "comment": 0
-      },
-      "AJR6kcnnDig": {
-        "view": 48,
-        "like": 2,
-        "comment": 0
-      },
-      "Qe2Y9xDn9QQ": {
-        "view": 797,
-        "like": 29,
-        "comment": 0
-      },
-      "3bhntOcKHPk": {
-        "view": 1170,
-        "like": 33,
-        "comment": 0
-      },
-      "O7TdKvuBjyg": {
-        "view": 11,
-        "like": 1,
-        "comment": 0
-      },
-      "r1AhsPOAS_o": {
-        "view": 1358,
-        "like": 72,
-        "comment": 4
-      },
-      "ZrUtKs7Ty7U": {
-        "view": 1273,
-        "like": 47,
-        "comment": 0
-      },
-      "5D96DmjvioU": {
-        "view": 545,
-        "like": 26,
-        "comment": 0
-      }
-    },
-    "youtube_totales": {
-      "view": 5206,
-      "like": 210,
-      "comment": 4
-    },
-    "suscriptores": 14,
-    "delta_vs_anterior": {
-      "view": 40,
-      "like": 3,
-      "comment": 0,
-      "suscriptores": 0
-    },
-    "tiktok": null,
-    "nota": "Registro horario 22:00 (corrida ~21:53). YT Data API uploads del canal + GHxm/YAVd. No públicos: ninguno. TikTok null: esta corrida no abrió TikTok Studio (sin navegador); último TT en fila 20:03."
-  },
-  {
-    "timestamp_cdmx": "2026-10-25T22:52-06:00",
-    "youtube": {
-      "gIjJ0YKYQ8M": {
-        "view": 4,
-        "like": 0,
-        "comment": 0
-      },
-      "AJR6kcnnDig": {
-        "view": 55,
-        "like": 3,
-        "comment": 0
-      },
-      "Qe2Y9xDn9QQ": {
-        "view": 799,
-        "like": 29,
-        "comment": 0
-      },
-      "3bhntOcKHPk": {
-        "view": 1181,
-        "like": 35,
-        "comment": 0
-      },
-      "O7TdKvuBjyg": {
-        "view": 11,
-        "like": 1,
-        "comment": 0
-      },
-      "r1AhsPOAS_o": {
-        "view": 1358,
-        "like": 72,
-        "comment": 4
-      },
-      "ZrUtKs7Ty7U": {
-        "view": 1273,
-        "like": 47,
-        "comment": 0
-      },
-      "5D96DmjvioU": {
-        "view": 554,
-        "like": 26,
-        "comment": 0
-      }
-    },
-    "youtube_totales": {
-      "view": 5235,
-      "like": 213,
-      "comment": 4
-    },
-    "suscriptores": 15,
-    "delta_vs_anterior": {
-      "view": 29,
-      "like": 3,
-      "comment": 0,
-      "suscriptores": 1
-    },
-    "tiktok": null,
-    "nota": "Registro horario 23:00 (corrida ~22:52). YT Data API uploads del canal + GHxm/YAVd (no devueltos). TikTok null: esta corrida no abrió TikTok Studio (sin navegador)."
-  },
-  {
-    "timestamp_cdmx": "2026-10-26T06:53-06:00",
-    "youtube": {
-      "gIjJ0YKYQ8M": {
-        "view": 4,
-        "like": 0,
-        "comment": 0
-      },
-      "AJR6kcnnDig": {
-        "view": 88,
-        "like": 6,
-        "comment": 0
-      },
-      "Qe2Y9xDn9QQ": {
-        "view": 847,
-        "like": 30,
-        "comment": 0
-      },
-      "3bhntOcKHPk": {
-        "view": 1390,
-        "like": 35,
-        "comment": 0
-      },
-      "O7TdKvuBjyg": {
-        "view": 11,
-        "like": 1,
-        "comment": 0
-      },
-      "r1AhsPOAS_o": {
-        "view": 1361,
-        "like": 72,
-        "comment": 4
-      },
-      "ZrUtKs7Ty7U": {
-        "view": 1281,
-        "like": 47,
-        "comment": 0
-      },
-      "5D96DmjvioU": {
-        "view": 583,
-        "like": 27,
-        "comment": 0
-      }
-    },
-    "youtube_totales": {
-      "view": 5565,
-      "like": 218,
-      "comment": 4
-    },
-    "suscriptores": 15,
-    "delta_vs_anterior": {
-      "view": 330,
-      "like": 5,
-      "comment": 0,
-      "suscriptores": 0
-    },
-    "tiktok": null,
-    "nota": "Registro horario 07:00 (corrida ~06:53). YT Data API uploads + IDs conocidos. No públicos (excluidos): {'bYGd7QuenSk': 'private', 'PBDMJxOkCRk': 'private'}. TikTok null: esta corrida no abrió TikTok Studio (sin navegador). Delta vs fila 22:52 del 25-oct (noche sin registros)."
-  },
-  {
-    "timestamp_cdmx": "2026-10-26T08:02-06:00",
-    "youtube": {
-      "5D96DmjvioU": {
-        "view": 583,
-        "like": 27,
-        "comment": 0
-      },
-      "r1AhsPOAS_o": {
-        "view": 1365,
-        "like": 72,
-        "comment": 4
-      },
-      "ZrUtKs7Ty7U": {
-        "view": 1287,
-        "like": 47,
-        "comment": 0
-      },
-      "O7TdKvuBjyg": {
-        "view": 11,
-        "like": 1,
-        "comment": 0
-      },
-      "Qe2Y9xDn9QQ": {
-        "view": 847,
-        "like": 30,
-        "comment": 0
-      },
-      "AJR6kcnnDig": {
-        "view": 88,
-        "like": 6,
-        "comment": 0
-      },
-      "3bhntOcKHPk": {
-        "view": 1390,
-        "like": 35,
-        "comment": 0
-      },
-      "gIjJ0YKYQ8M": {
-        "view": 4,
-        "like": 0,
-        "comment": 0
-      }
-    },
-    "youtube_totales": {
-      "view": 5575,
-      "like": 218,
-      "comment": 4
-    },
-    "suscriptores": 15,
-    "delta_vs_anterior": {
-      "view": 10,
-      "like": 0,
-      "comment": 0,
-      "suscriptores": 0
-    },
-    "tiktok": null,
-    "nota": "Registro horario 08:00. YT Data API uploads + IDs conocidos. No públicos (excluidos): {'PBDMJxOkCRk': 'private', 'bYGd7QuenSk': 'private'}. TikTok null: corrida sin navegador (no se abrió TikTok Studio). Delta vs fila 2026-10-26T06:53-06:00."
-  },
-  {
-    "timestamp_cdmx": "2026-10-26T08:07-06:00",
-    "youtube": {
-      "gIjJ0YKYQ8M": {
-        "view": 4,
-        "like": 0,
-        "comment": 0
-      },
-      "AJR6kcnnDig": {
-        "view": 96,
-        "like": 6,
-        "comment": 0
-      },
-      "Qe2Y9xDn9QQ": {
-        "view": 846,
-        "like": 30,
-        "comment": 0
-      },
-      "3bhntOcKHPk": {
-        "view": 1391,
-        "like": 36,
-        "comment": 0
-      },
-      "O7TdKvuBjyg": {
-        "view": 11,
-        "like": 1,
-        "comment": 0
-      },
-      "r1AhsPOAS_o": {
-        "view": 1365,
-        "like": 72,
-        "comment": 4
-      },
-      "ZrUtKs7Ty7U": {
-        "view": 1284,
-        "like": 47,
-        "comment": 0
-      },
-      "5D96DmjvioU": {
-        "view": 602,
-        "like": 27,
-        "comment": 0
-      }
-    },
-    "youtube_totales": {
-      "view": 5599,
-      "like": 219,
-      "comment": 4
-    },
-    "suscriptores": 15,
-    "delta_vs_anterior": {
-      "view": 24,
-      "like": 1,
-      "comment": 0,
-      "suscriptores": 0
-    },
-    "tiktok": {
-      "fuente": "TikTok Studio",
-      "videos": {
-        "tardigrado": {
-          "view": 0,
-          "like": 0,
-          "comment": 0
-        },
-        "ave_jurasica": {
-          "view": 0,
-          "like": 0,
-          "comment": 0
-        },
-        "sueno_luz_electrica": {
-          "view": 2,
-          "like": 0,
-          "comment": 0
-        },
-        "reina_topo": {
-          "view": 719,
-          "like": 74,
-          "comment": 0
-        },
-        "osedax_huesos": {
-          "view": 496,
-          "like": 25,
-          "comment": 0
-        },
-        "abejas_bullying": {
-          "view": 500,
-          "like": 23,
-          "comment": 0
-        },
-        "aves_mujeres": {
-          "view": 501,
-          "like": 38,
-          "comment": 0
-        },
-        "serpientes": {
-          "view": 155,
-          "like": 3,
-          "comment": 0
-        },
-        "ideonella": {
-          "view": 562,
-          "like": 34,
-          "comment": 0
-        },
-        "el_nino_hashtags_IA": {
-          "view": 522,
-          "like": 13,
-          "comment": 0
-        }
-      },
-      "totales": {
-        "view": 3457,
-        "like": 210,
-        "comment": 0
-      },
-      "seguidores": 1,
-      "likes_perfil": 209
-    },
-    "nota": "Balance 6h 08:00. YT Data API uploads (solo públicos; bYGd/PBDM programados privados). TT leído en TikTok Studio ~08:07 (tardígrado 0 vistas; ave jurásica programado 20:00)."
-  },
-  {
-    "timestamp_cdmx": "2026-10-26T08:54-06:00",
-    "youtube": {
-      "gIjJ0YKYQ8M": {
-        "view": 4,
-        "like": 0,
-        "comment": 0
-      },
-      "AJR6kcnnDig": {
-        "view": 88,
-        "like": 6,
-        "comment": 0
-      },
-      "Qe2Y9xDn9QQ": {
-        "view": 847,
-        "like": 30,
-        "comment": 0
-      },
-      "3bhntOcKHPk": {
-        "view": 1390,
-        "like": 35,
-        "comment": 0
-      },
-      "O7TdKvuBjyg": {
-        "view": 11,
-        "like": 1,
-        "comment": 0
-      },
-      "r1AhsPOAS_o": {
-        "view": 1365,
-        "like": 72,
-        "comment": 4
-      },
-      "ZrUtKs7Ty7U": {
-        "view": 1287,
-        "like": 47,
-        "comment": 0
-      },
-      "5D96DmjvioU": {
-        "view": 604,
-        "like": 27,
-        "comment": 0
-      }
-    },
-    "youtube_totales": {
-      "view": 5596,
-      "like": 218,
-      "comment": 4
-    },
-    "suscriptores": 15,
-    "delta_vs_anterior": {
-      "view": -3,
-      "like": -1,
-      "comment": 0,
-      "suscriptores": 0
-    },
-    "tiktok": null,
-    "nota": "Registro horario 09:00 (corrida ~08:54). YT Data API uploads + IDs conocidos. No públicos (excluidos): {'bYGd7QuenSk': 'private', 'PBDMJxOkCRk': 'private'}. TikTok null: corrida sin navegador (no se abrió TikTok Studio). Delta vs fila 2026-10-26T08:07-06:00."
-  },
-  {
-    "timestamp_cdmx": "2026-10-26T09:51-06:00",
-    "youtube": {
-      "gIjJ0YKYQ8M": {
-        "view": 56,
-        "like": 6,
-        "comment": 0
-      },
-      "AJR6kcnnDig": {
-        "view": 103,
-        "like": 6,
-        "comment": 0
-      },
-      "Qe2Y9xDn9QQ": {
-        "view": 859,
-        "like": 30,
-        "comment": 0
-      },
-      "3bhntOcKHPk": {
-        "view": 1393,
-        "like": 36,
-        "comment": 0
-      },
-      "O7TdKvuBjyg": {
-        "view": 11,
-        "like": 1,
-        "comment": 0
-      },
-      "r1AhsPOAS_o": {
-        "view": 1368,
-        "like": 72,
-        "comment": 4
-      },
-      "ZrUtKs7Ty7U": {
-        "view": 1289,
-        "like": 47,
-        "comment": 0
-      },
-      "5D96DmjvioU": {
-        "view": 606,
-        "like": 27,
-        "comment": 0
-      }
-    },
-    "youtube_totales": {
-      "view": 5685,
-      "like": 225,
-      "comment": 4
-    },
-    "suscriptores": 17,
-    "delta_vs_anterior": {
-      "view": 89,
-      "like": 7,
-      "comment": 0,
-      "suscriptores": 2
-    },
-    "tiktok": null,
-    "nota": "Registro horario 10:00 (corrida ~09:51). YT Data API uploads + IDs conocidos. No públicos (excluidos): {'bYGd7QuenSk': 'private', 'PBDMJxOkCRk': 'private'}. TikTok null: corrida sin navegador (no se abrió TikTok Studio). Delta vs fila 2026-10-26T08:54-06:00."
-  },
-  {
-    "timestamp_cdmx": "2026-10-26T10:58-06:00",
-    "youtube": {
-      "gIjJ0YKYQ8M": {
-        "view": 274,
-        "like": 24,
-        "comment": 0
-      },
-      "AJR6kcnnDig": {
-        "view": 102,
-        "like": 6,
-        "comment": 0
-      },
-      "Qe2Y9xDn9QQ": {
-        "view": 859,
-        "like": 30,
-        "comment": 0
-      },
-      "3bhntOcKHPk": {
-        "view": 1393,
-        "like": 36,
-        "comment": 0
-      },
-      "O7TdKvuBjyg": {
-        "view": 11,
-        "like": 1,
-        "comment": 0
-      },
-      "r1AhsPOAS_o": {
-        "view": 1368,
-        "like": 72,
-        "comment": 4
-      },
-      "ZrUtKs7Ty7U": {
-        "view": 1289,
-        "like": 48,
-        "comment": 5
-      },
-      "5D96DmjvioU": {
-        "view": 604,
-        "like": 27,
-        "comment": 0
-      }
-    },
-    "youtube_totales": {
-      "view": 5900,
-      "like": 244,
-      "comment": 9
-    },
-    "suscriptores": 18,
-    "delta_vs_anterior": {
-      "view": 215,
-      "like": 19,
-      "comment": 5,
-      "suscriptores": 1
-    },
-    "tiktok": null,
-    "nota": "Registro horario 11:00 (corrida ~10:58). YT Data API uploads + IDs conocidos. No públicos (excluidos): {'bYGd7QuenSk': 'private', 'PBDMJxOkCRk': 'private'}. TikTok null: corrida sin navegador (no se abrió TikTok Studio). Delta vs fila 2026-10-26T09:51-06:00."
-  },
-  {
-    "timestamp_cdmx": "2026-10-26T11:57-06:00",
-    "youtube": {
-      "gIjJ0YKYQ8M": {
-        "view": 524,
-        "like": 40,
-        "comment": 0
-      },
-      "AJR6kcnnDig": {
-        "view": 108,
-        "like": 8,
-        "comment": 0
-      },
-      "Qe2Y9xDn9QQ": {
-        "view": 870,
-        "like": 30,
-        "comment": 0
-      },
-      "3bhntOcKHPk": {
-        "view": 1393,
-        "like": 36,
-        "comment": 0
-      },
-      "O7TdKvuBjyg": {
-        "view": 11,
-        "like": 1,
-        "comment": 0
-      },
-      "r1AhsPOAS_o": {
-        "view": 1368,
-        "like": 72,
-        "comment": 4
-      },
-      "ZrUtKs7Ty7U": {
-        "view": 1290,
-        "like": 48,
-        "comment": 5
-      },
-      "5D96DmjvioU": {
-        "view": 607,
-        "like": 27,
-        "comment": 0
-      }
-    },
-    "youtube_totales": {
-      "view": 6171,
-      "like": 262,
-      "comment": 9
-    },
-    "suscriptores": 22,
-    "delta_vs_anterior": {
-      "view": 271,
-      "like": 18,
-      "comment": 0,
-      "suscriptores": 4
-    },
-    "tiktok": null,
-    "nota": "Registro horario 12:00 (corrida ~11:57). YT Data API uploads + IDs conocidos. No públicos (excluidos): {'bYGd7QuenSk': 'private', 'PBDMJxOkCRk': 'private'}. TikTok null: corrida sin navegador (no se abrió TikTok Studio). Delta vs fila 2026-10-26T10:58-06:00."
-  },
-  {
-    "timestamp_cdmx": "2026-10-26T12:56-06:00",
-    "youtube": {
-      "gIjJ0YKYQ8M": {
-        "view": 728,
-        "like": 57,
-        "comment": 1
-      },
-      "AJR6kcnnDig": {
-        "view": 108,
-        "like": 9,
-        "comment": 0
-      },
-      "Qe2Y9xDn9QQ": {
-        "view": 869,
-        "like": 30,
-        "comment": 0
-      },
-      "3bhntOcKHPk": {
-        "view": 1393,
-        "like": 36,
-        "comment": 0
-      },
-      "O7TdKvuBjyg": {
-        "view": 11,
-        "like": 1,
-        "comment": 0
-      },
-      "r1AhsPOAS_o": {
-        "view": 1376,
-        "like": 72,
-        "comment": 4
-      },
-      "ZrUtKs7Ty7U": {
-        "view": 1290,
-        "like": 48,
-        "comment": 5
-      },
-      "5D96DmjvioU": {
-        "view": 607,
-        "like": 27,
-        "comment": 0
-      }
-    },
-    "youtube_totales": {
-      "view": 6382,
-      "like": 280,
-      "comment": 10
-    },
-    "suscriptores": 24,
-    "delta_vs_anterior": {
-      "view": 211,
-      "like": 18,
-      "comment": 1,
-      "suscriptores": 2
-    },
-    "tiktok": null,
-    "nota": "Registro horario 13:00 (corrida 12:56). YT Data API uploads + IDs conocidos. No públicos (excluidos): {'bYGd7QuenSk': 'private', 'PBDMJxOkCRk': 'private'}. TikTok null: corrida sin navegador (no se abrió TikTok Studio). Delta vs fila 2026-10-26T11:57-06:00."
-  },
-  {
-    "timestamp_cdmx": "2026-10-26T13:53-06:00",
-    "youtube": {
-      "bYGd7QuenSk": {
-        "view": 20,
-        "like": 1,
-        "comment": 0
-      },
-      "gIjJ0YKYQ8M": {
-        "view": 913,
-        "like": 60,
-        "comment": 1
-      },
-      "AJR6kcnnDig": {
-        "view": 121,
-        "like": 10,
-        "comment": 0
-      },
-      "Qe2Y9xDn9QQ": {
-        "view": 890,
-        "like": 31,
-        "comment": 0
-      },
-      "3bhntOcKHPk": {
-        "view": 1402,
-        "like": 36,
-        "comment": 0
-      },
-      "O7TdKvuBjyg": {
-        "view": 11,
-        "like": 1,
-        "comment": 0
-      },
-      "r1AhsPOAS_o": {
-        "view": 1376,
-        "like": 72,
-        "comment": 4
-      },
-      "ZrUtKs7Ty7U": {
-        "view": 1290,
-        "like": 48,
-        "comment": 5
-      },
-      "5D96DmjvioU": {
-        "view": 608,
-        "like": 27,
-        "comment": 0
-      }
-    },
-    "youtube_totales": {
-      "view": 6631,
-      "like": 286,
-      "comment": 10
-    },
-    "suscriptores": 24,
-    "delta_vs_anterior": {
-      "view": 249,
-      "like": 6,
-      "comment": 0,
-      "suscriptores": 0
-    },
-    "tiktok": null,
-    "nota": "Registro horario 14:00 (corrida 13:53). YT Data API uploads + IDs conocidos. No públicos (excluidos): {'PBDMJxOkCRk': 'private'}. TikTok null: corrida sin navegador (no se abrió TikTok Studio). Delta vs fila 2026-10-26T12:56-06:00."
-  },
-  {
-    "timestamp_cdmx": "2026-10-26T14:05-06:00",
-    "youtube": {
-      "bYGd7QuenSk": {
-        "view": 32,
-        "like": 2,
-        "comment": 0
-      },
-      "gIjJ0YKYQ8M": {
-        "view": 921,
-        "like": 60,
-        "comment": 1
-      },
-      "AJR6kcnnDig": {
-        "view": 121,
-        "like": 10,
-        "comment": 0
-      },
-      "Qe2Y9xDn9QQ": {
-        "view": 890,
-        "like": 31,
-        "comment": 0
-      },
-      "3bhntOcKHPk": {
-        "view": 1399,
-        "like": 36,
-        "comment": 0
-      },
-      "O7TdKvuBjyg": {
-        "view": 11,
-        "like": 1,
-        "comment": 0
-      },
-      "r1AhsPOAS_o": {
-        "view": 1376,
-        "like": 72,
-        "comment": 4
-      },
-      "ZrUtKs7Ty7U": {
-        "view": 1290,
-        "like": 48,
-        "comment": 5
-      },
-      "5D96DmjvioU": {
-        "view": 608,
-        "like": 27,
-        "comment": 0
-      }
-    },
-    "youtube_totales": {
-      "view": 6648,
-      "like": 287,
-      "comment": 10
-    },
-    "suscriptores": 24,
-    "delta_vs_anterior": {
-      "view": 17,
-      "like": 1,
-      "comment": 0,
-      "suscriptores": 0
-    },
-    "tiktok": {
-      "fuente": "TikTok Studio",
-      "videos": {
-        "tardigrado": {
-          "view": 0,
-          "like": 0,
-          "comment": 0
-        },
-        "ave_jurasica": {
-          "view": 0,
-          "like": 0,
-          "comment": 0
-        },
-        "sueno_luz_electrica": {
-          "view": 2,
-          "like": 0,
-          "comment": 0
-        },
-        "reina_topo": {
-          "view": 722,
-          "like": 75,
-          "comment": 0
-        },
-        "osedax_huesos": {
-          "view": 496,
-          "like": 25,
-          "comment": 0
-        },
-        "abejas_bullying": {
-          "view": 500,
-          "like": 23,
-          "comment": 0
-        },
-        "aves_mujeres": {
-          "view": 501,
-          "like": 38,
-          "comment": 0
-        },
-        "serpientes": {
-          "view": 156,
-          "like": 3,
-          "comment": 0
-        },
-        "ideonella": {
-          "view": 562,
-          "like": 34,
-          "comment": 0
-        },
-        "el_nino_hashtags_IA": {
-          "view": 522,
-          "like": 13,
-          "comment": 0
-        }
-      },
-      "totales": {
-        "view": 3461,
-        "like": 211,
-        "comment": 0
-      },
-      "seguidores": 1,
-      "likes_perfil": 210
-    },
-    "nota": "Balance 6h 14:00 (corrida ~14:05). YT Data API uploads (solo públicos; PBDMJxOkCRk hongo privado/programado 16:06 excluido). TT leído en TikTok Studio ~14:05: tardígrado sigue en 0 (posible publicación fallida), ave jurásica programado 20:00."
-  },
-  {
-    "timestamp_cdmx": "2026-10-26T14:52-06:00",
-    "youtube": {
-      "i9QBFPljl6M": {
-        "view": 21,
-        "like": 3,
-        "comment": 0
-      },
-      "bYGd7QuenSk": {
-        "view": 64,
-        "like": 2,
-        "comment": 0
-      },
-      "gIjJ0YKYQ8M": {
-        "view": 1116,
-        "like": 60,
-        "comment": 1
-      },
-      "AJR6kcnnDig": {
-        "view": 121,
-        "like": 10,
-        "comment": 0
-      },
-      "Qe2Y9xDn9QQ": {
-        "view": 890,
-        "like": 31,
-        "comment": 0
-      },
-      "3bhntOcKHPk": {
-        "view": 1399,
-        "like": 36,
-        "comment": 0
-      },
-      "O7TdKvuBjyg": {
-        "view": 11,
-        "like": 1,
-        "comment": 0
-      },
-      "r1AhsPOAS_o": {
-        "view": 1376,
-        "like": 72,
-        "comment": 4
-      },
-      "ZrUtKs7Ty7U": {
-        "view": 1298,
-        "like": 48,
-        "comment": 5
-      },
-      "5D96DmjvioU": {
-        "view": 608,
-        "like": 27,
-        "comment": 0
-      }
-    },
-    "youtube_totales": {
-      "view": 6904,
-      "like": 290,
-      "comment": 10
-    },
-    "suscriptores": 25,
-    "delta_vs_anterior": {
-      "view": 256,
-      "like": 3,
-      "comment": 0,
-      "suscriptores": 1
-    },
-    "tiktok": null,
-    "nota": "Reporte horario 14:52. YT Data API uploads (solo públicos; P1 papel picado i9QBFPljl6M ya público, entra nuevo). TikTok null: no se leyó TikTok Studio en esta corrida (sin navegador en el subagente)."
-  },
-  {
-    "timestamp_cdmx": "2026-10-26T15:57-06:00",
-    "youtube": {
-      "i9QBFPljl6M": {
-        "view": 111,
-        "like": 7,
-        "comment": 0
-      },
-      "bYGd7QuenSk": {
-        "view": 64,
-        "like": 2,
-        "comment": 0
-      },
-      "gIjJ0YKYQ8M": {
-        "view": 1201,
-        "like": 60,
-        "comment": 1
-      },
-      "AJR6kcnnDig": {
-        "view": 121,
-        "like": 10,
-        "comment": 0
-      },
-      "Qe2Y9xDn9QQ": {
-        "view": 890,
-        "like": 31,
-        "comment": 0
-      },
-      "3bhntOcKHPk": {
-        "view": 1403,
-        "like": 36,
-        "comment": 0
-      },
-      "O7TdKvuBjyg": {
-        "view": 11,
-        "like": 1,
-        "comment": 0
-      },
-      "r1AhsPOAS_o": {
-        "view": 1376,
-        "like": 72,
-        "comment": 4
-      },
-      "ZrUtKs7Ty7U": {
-        "view": 1298,
-        "like": 48,
-        "comment": 5
-      },
-      "5D96DmjvioU": {
-        "view": 608,
-        "like": 27,
-        "comment": 0
-      }
-    },
-    "youtube_totales": {
-      "view": 7083,
-      "like": 294,
-      "comment": 10
-    },
-    "suscriptores": 25,
-    "delta_vs_anterior": {
-      "view": 179,
-      "like": 4,
-      "comment": 0,
-      "suscriptores": 0
-    },
-    "tiktok": null,
-    "nota": "Reporte horario 15:57. YT Data API uploads (solo públicos). TikTok null: sin navegador en esta corrida."
-  },
-  {
-    "timestamp_cdmx": "2026-10-26T16:55-06:00",
-    "youtube": {
-      "PBDMJxOkCRk": {
-        "view": 176,
-        "like": 2,
-        "comment": 2
-      },
-      "i9QBFPljl6M": {
-        "view": 474,
-        "like": 13,
-        "comment": 0
-      },
-      "bYGd7QuenSk": {
-        "view": 375,
-        "like": 5,
-        "comment": 0
-      },
-      "gIjJ0YKYQ8M": {
-        "view": 1207,
-        "like": 60,
-        "comment": 1
-      },
-      "AJR6kcnnDig": {
-        "view": 134,
-        "like": 11,
-        "comment": 0
-      },
-      "Qe2Y9xDn9QQ": {
-        "view": 916,
-        "like": 31,
-        "comment": 0
-      },
-      "3bhntOcKHPk": {
-        "view": 1403,
-        "like": 36,
-        "comment": 0
-      },
-      "O7TdKvuBjyg": {
-        "view": 12,
-        "like": 1,
-        "comment": 0
-      },
-      "r1AhsPOAS_o": {
-        "view": 1381,
-        "like": 72,
-        "comment": 4
-      },
-      "ZrUtKs7Ty7U": {
-        "view": 1298,
-        "like": 48,
-        "comment": 5
-      },
-      "5D96DmjvioU": {
-        "view": 608,
-        "like": 27,
-        "comment": 0
-      }
-    },
-    "youtube_totales": {
-      "view": 7984,
-      "like": 306,
-      "comment": 12
-    },
-    "suscriptores": 25,
-    "delta_vs_anterior": {
-      "view": 901,
-      "like": 12,
-      "comment": 2,
-      "suscriptores": 0
-    },
-    "tiktok": null,
-    "nota": "Reporte horario 16:55. YT Data API uploads (solo públicos). TikTok null: sin navegador en esta corrida."
-  },
-  {
-    "timestamp_cdmx": "2026-10-26T17:52-06:00",
-    "youtube": {
-      "ivVo2H9NaEU": {
-        "view": 82,
-        "like": 1,
-        "comment": 0
-      },
-      "PBDMJxOkCRk": {
-        "view": 235,
-        "like": 2,
-        "comment": 2
-      },
-      "i9QBFPljl6M": {
-        "view": 755,
-        "like": 22,
-        "comment": 0
-      },
-      "bYGd7QuenSk": {
-        "view": 860,
-        "like": 23,
-        "comment": 0
-      },
-      "gIjJ0YKYQ8M": {
-        "view": 1207,
-        "like": 60,
-        "comment": 1
-      },
-      "AJR6kcnnDig": {
-        "view": 134,
-        "like": 11,
-        "comment": 0
-      },
-      "Qe2Y9xDn9QQ": {
-        "view": 923,
-        "like": 31,
-        "comment": 2
-      },
-      "3bhntOcKHPk": {
-        "view": 1403,
-        "like": 36,
-        "comment": 0
-      },
-      "O7TdKvuBjyg": {
-        "view": 12,
-        "like": 1,
-        "comment": 0
-      },
-      "r1AhsPOAS_o": {
-        "view": 1381,
-        "like": 72,
-        "comment": 4
-      },
-      "ZrUtKs7Ty7U": {
-        "view": 1302,
-        "like": 48,
-        "comment": 5
-      },
-      "5D96DmjvioU": {
-        "view": 612,
-        "like": 27,
-        "comment": 0
-      }
-    },
-    "youtube_totales": {
-      "view": 8906,
-      "like": 334,
-      "comment": 14
-    },
-    "suscriptores": 25,
-    "delta_vs_anterior": {
-      "view": 922,
-      "like": 28,
-      "comment": 2,
-      "suscriptores": 0
-    },
-    "tiktok": null,
-    "nota": "Reporte horario 17:52. YT Data API uploads (solo públicos). TikTok null: sin navegador en esta corrida."
-  },
-  {
-    "timestamp_cdmx": "2026-10-26T18:53-06:00",
-    "youtube": {
-      "ivVo2H9NaEU": {
-        "view": 112,
-        "like": 2,
-        "comment": 0
-      },
-      "PBDMJxOkCRk": {
-        "view": 581,
-        "like": 15,
-        "comment": 2
-      },
-      "i9QBFPljl6M": {
-        "view": 755,
-        "like": 20,
-        "comment": 0
-      },
-      "bYGd7QuenSk": {
-        "view": 878,
-        "like": 24,
-        "comment": 0
-      },
-      "gIjJ0YKYQ8M": {
-        "view": 1207,
-        "like": 60,
-        "comment": 1
-      },
-      "AJR6kcnnDig": {
-        "view": 134,
-        "like": 11,
-        "comment": 0
-      },
-      "Qe2Y9xDn9QQ": {
-        "view": 930,
-        "like": 32,
-        "comment": 2
-      },
-      "3bhntOcKHPk": {
-        "view": 1403,
-        "like": 36,
-        "comment": 0
-      },
-      "O7TdKvuBjyg": {
-        "view": 12,
-        "like": 1,
-        "comment": 0
-      },
-      "r1AhsPOAS_o": {
-        "view": 1381,
-        "like": 72,
-        "comment": 4
-      },
-      "ZrUtKs7Ty7U": {
-        "view": 1302,
-        "like": 48,
-        "comment": 5
-      },
-      "5D96DmjvioU": {
-        "view": 612,
-        "like": 27,
-        "comment": 0
-      }
-    },
-    "youtube_totales": {
-      "view": 9307,
-      "like": 348,
-      "comment": 14
-    },
-    "suscriptores": 27,
-    "delta_vs_anterior": {
-      "view": 401,
-      "like": 14,
-      "comment": 0,
-      "suscriptores": 2
-    },
-    "tiktok": null,
-    "nota": "Reporte horario 18:53. YT Data API uploads (solo públicos). TikTok null: sin navegador en esta corrida."
-  },
-  {
-    "timestamp_cdmx": "2026-10-26T19:55-06:00",
-    "youtube": {
-      "GYxjXDh1ahc": {
-        "view": 76,
-        "like": 1,
-        "comment": 0
-      },
-      "ivVo2H9NaEU": {
-        "view": 143,
-        "like": 6,
-        "comment": 0
-      },
-      "PBDMJxOkCRk": {
-        "view": 882,
-        "like": 28,
-        "comment": 4
-      },
-      "i9QBFPljl6M": {
-        "view": 896,
-        "like": 20,
-        "comment": 0
-      },
-      "bYGd7QuenSk": {
-        "view": 985,
-        "like": 24,
-        "comment": 0
-      },
-      "gIjJ0YKYQ8M": {
-        "view": 1210,
-        "like": 60,
-        "comment": 1
-      },
-      "AJR6kcnnDig": {
-        "view": 138,
-        "like": 11,
-        "comment": 0
-      },
-      "Qe2Y9xDn9QQ": {
-        "view": 930,
-        "like": 32,
-        "comment": 2
-      },
-      "3bhntOcKHPk": {
-        "view": 1405,
-        "like": 36,
-        "comment": 0
-      },
-      "O7TdKvuBjyg": {
-        "view": 12,
-        "like": 1,
-        "comment": 0
-      },
-      "r1AhsPOAS_o": {
-        "view": 1385,
-        "like": 72,
-        "comment": 4
-      },
-      "ZrUtKs7Ty7U": {
-        "view": 1302,
-        "like": 48,
-        "comment": 5
-      },
-      "5D96DmjvioU": {
-        "view": 612,
-        "like": 27,
-        "comment": 0
-      }
-    },
-    "youtube_totales": {
-      "view": 9976,
-      "like": 366,
-      "comment": 16
-    },
-    "suscriptores": 31,
-    "delta_vs_anterior": {
-      "view": 669,
-      "like": 18,
-      "comment": 2,
-      "suscriptores": 4
-    },
-    "tiktok": null,
-    "nota": "Reporte horario 19:55. YT Data API uploads (solo públicos). TikTok null: sin navegador en esta corrida."
-  },
-  {
-    "timestamp_cdmx": "2026-10-26T20:06-06:00",
-    "youtube": {
-      "GYxjXDh1ahc": {
-        "view": 91,
-        "like": 1,
-        "comment": 0
-      },
-      "ivVo2H9NaEU": {
-        "view": 154,
-        "like": 7,
-        "comment": 0
-      },
-      "PBDMJxOkCRk": {
-        "view": 893,
-        "like": 28,
-        "comment": 4
-      },
-      "i9QBFPljl6M": {
-        "view": 899,
-        "like": 20,
-        "comment": 0
-      },
-      "bYGd7QuenSk": {
-        "view": 993,
-        "like": 24,
-        "comment": 0
-      },
-      "gIjJ0YKYQ8M": {
-        "view": 1210,
-        "like": 60,
-        "comment": 1
-      },
-      "AJR6kcnnDig": {
-        "view": 137,
-        "like": 11,
-        "comment": 0
-      },
-      "Qe2Y9xDn9QQ": {
-        "view": 932,
-        "like": 32,
-        "comment": 2
-      },
-      "3bhntOcKHPk": {
-        "view": 1405,
-        "like": 36,
-        "comment": 0
-      },
-      "O7TdKvuBjyg": {
-        "view": 12,
-        "like": 1,
-        "comment": 0
-      },
-      "r1AhsPOAS_o": {
-        "view": 1383,
-        "like": 72,
-        "comment": 4
-      },
-      "ZrUtKs7Ty7U": {
-        "view": 1302,
-        "like": 48,
-        "comment": 5
-      },
-      "5D96DmjvioU": {
-        "view": 612,
-        "like": 27,
-        "comment": 0
-      }
-    },
-    "youtube_totales": {
-      "view": 10023,
-      "like": 367,
-      "comment": 16
-    },
-    "suscriptores": 31,
-    "delta_vs_anterior": {
-      "view": 47,
-      "like": 1,
-      "comment": 0,
-      "suscriptores": 0
-    },
-    "tiktok": {
-      "fuente": "TikTok Studio",
-      "videos": {
-        "ave_jurasica": {
-          "view": 0,
-          "like": 0,
-          "comment": 0
-        },
-        "catrina": {
-          "view": 12,
-          "like": 0,
-          "comment": 0
-        },
-        "papel_picado_p1": {
-          "view": 186,
-          "like": 14,
-          "comment": 0
-        },
-        "tardigrado": {
-          "view": 2,
-          "like": 0,
-          "comment": 0
-        },
-        "sueno_luz_electrica": {
-          "view": 2,
-          "like": 0,
-          "comment": 0
-        },
-        "reina_topo": {
-          "view": 722,
-          "like": 75,
-          "comment": 0
-        },
-        "osedax_huesos": {
-          "view": 496,
-          "like": 25,
-          "comment": 0
-        },
-        "abejas_bullying": {
-          "view": 500,
-          "like": 23,
-          "comment": 0
-        },
-        "aves_mujeres": {
-          "view": 501,
-          "like": 38,
-          "comment": 0
-        },
-        "serpientes": {
-          "view": 157,
-          "like": 3,
-          "comment": 0
-        }
-      },
-      "totales": {
-        "view": 2578,
-        "like": 178,
-        "comment": 0
-      },
-      "seguidores": 1,
-      "likes_perfil": 224
-    },
-    "nota": "Balance 6h 20:00 (corrida ~20:06). YT Data API uploads (solo públicos; ave remake YKldyldCeiQ privado/programado 21:00 excluido). TT leído en TikTok Studio 20:06: solo 10 posts; ideonella (562/34) y el_nino_hashtags_IA (522/13) ya NO aparecen en Studio (¿borrados/ocultos?). ave_jurasica figura creada 22:00 (programado). Perfil: 1 seguidor, 224 likes."
-  },
-  {
-    "timestamp_cdmx": "2026-10-26T20:53-06:00",
-    "youtube": {
-      "GYxjXDh1ahc": {
-        "view": 94,
-        "like": 1,
-        "comment": 0
-      },
-      "ivVo2H9NaEU": {
-        "view": 173,
-        "like": 9,
-        "comment": 0
-      },
-      "PBDMJxOkCRk": {
-        "view": 954,
-        "like": 28,
-        "comment": 4
-      },
-      "i9QBFPljl6M": {
-        "view": 899,
-        "like": 20,
-        "comment": 0
-      },
-      "bYGd7QuenSk": {
-        "view": 998,
-        "like": 24,
-        "comment": 0
-      },
-      "gIjJ0YKYQ8M": {
-        "view": 1208,
-        "like": 60,
-        "comment": 1
-      },
-      "AJR6kcnnDig": {
-        "view": 145,
-        "like": 11,
-        "comment": 0
-      },
-      "Qe2Y9xDn9QQ": {
-        "view": 930,
-        "like": 32,
-        "comment": 2
-      },
-      "3bhntOcKHPk": {
-        "view": 1403,
-        "like": 36,
-        "comment": 0
-      },
-      "O7TdKvuBjyg": {
-        "view": 12,
-        "like": 1,
-        "comment": 0
-      },
-      "r1AhsPOAS_o": {
-        "view": 1383,
-        "like": 72,
-        "comment": 4
-      },
-      "ZrUtKs7Ty7U": {
-        "view": 1302,
-        "like": 48,
-        "comment": 5
-      },
-      "5D96DmjvioU": {
-        "view": 612,
-        "like": 27,
-        "comment": 0
-      }
-    },
-    "youtube_totales": {
-      "view": 10113,
-      "like": 369,
-      "comment": 16
-    },
-    "suscriptores": 31,
-    "delta_vs_anterior": {
-      "view": 90,
-      "like": 2,
-      "comment": 0,
-      "suscriptores": 0
-    },
-    "tiktok": null,
-    "nota": "Reporte horario 21:00 (corrida ~20:53). YT Data API uploads, solo públicos (ave remake YKldyldCeiQ programado 21:00 aún no público). TikTok null: no se leyó Studio en esta corrida (sin navegador); última lectura TT 20:06 = 2578 vistas / 178 likes."
-  },
-  {
-    "timestamp_cdmx": "2026-10-26T21:50-06:00",
-    "youtube": {
-      "YKldyldCeiQ": {
-        "view": 57,
-        "like": 0,
-        "comment": 0
-      },
-      "GYxjXDh1ahc": {
-        "view": 94,
-        "like": 1,
-        "comment": 0
-      },
-      "ivVo2H9NaEU": {
-        "view": 216,
-        "like": 11,
-        "comment": 0
-      },
-      "PBDMJxOkCRk": {
-        "view": 1220,
-        "like": 28,
-        "comment": 4
-      },
-      "i9QBFPljl6M": {
-        "view": 929,
-        "like": 21,
-        "comment": 0
-      },
-      "bYGd7QuenSk": {
-        "view": 998,
-        "like": 24,
-        "comment": 0
-      },
-      "gIjJ0YKYQ8M": {
-        "view": 1210,
-        "like": 60,
-        "comment": 1
-      },
-      "AJR6kcnnDig": {
-        "view": 154,
-        "like": 11,
-        "comment": 0
-      },
-      "Qe2Y9xDn9QQ": {
-        "view": 955,
-        "like": 32,
-        "comment": 2
-      },
-      "3bhntOcKHPk": {
-        "view": 1412,
-        "like": 36,
-        "comment": 0
-      },
-      "O7TdKvuBjyg": {
-        "view": 12,
-        "like": 1,
-        "comment": 0
-      },
-      "r1AhsPOAS_o": {
-        "view": 1385,
-        "like": 72,
-        "comment": 4
-      },
-      "ZrUtKs7Ty7U": {
-        "view": 1307,
-        "like": 48,
-        "comment": 5
-      },
-      "5D96DmjvioU": {
-        "view": 612,
-        "like": 27,
-        "comment": 0
-      }
-    },
-    "youtube_totales": {
-      "view": 10561,
-      "like": 372,
-      "comment": 16
-    },
-    "suscriptores": 32,
-    "delta_vs_anterior": {
-      "view": 448,
-      "like": 3,
-      "comment": 0,
-      "suscriptores": 1
-    },
-    "tiktok": null,
-    "nota": "Reporte horario 22:00 (corrida ~21:50). YT Data API uploads, solo públicos. TikTok null: sin navegador en esta corrida. Nuevo público: YKldyldCeiQ."
-  },
-  {
-    "timestamp_cdmx": "2026-10-26T22:50-06:00",
-    "youtube": {
-      "YKldyldCeiQ": {
-        "view": 76,
-        "like": 0,
-        "comment": 0
-      },
-      "GYxjXDh1ahc": {
-        "view": 248,
-        "like": 3,
-        "comment": 0
-      },
-      "ivVo2H9NaEU": {
-        "view": 224,
-        "like": 11,
-        "comment": 0
-      },
-      "PBDMJxOkCRk": {
-        "view": 1231,
-        "like": 28,
-        "comment": 4
-      },
-      "i9QBFPljl6M": {
-        "view": 958,
-        "like": 21,
-        "comment": 0
-      },
-      "bYGd7QuenSk": {
-        "view": 1005,
-        "like": 24,
-        "comment": 0
-      },
-      "gIjJ0YKYQ8M": {
-        "view": 1212,
-        "like": 60,
-        "comment": 1
-      },
-      "AJR6kcnnDig": {
-        "view": 145,
-        "like": 11,
-        "comment": 0
-      },
-      "Qe2Y9xDn9QQ": {
-        "view": 956,
-        "like": 32,
-        "comment": 2
-      },
-      "3bhntOcKHPk": {
-        "view": 1414,
-        "like": 36,
-        "comment": 0
-      },
-      "O7TdKvuBjyg": {
-        "view": 13,
-        "like": 1,
-        "comment": 0
-      },
-      "r1AhsPOAS_o": {
-        "view": 1387,
-        "like": 72,
-        "comment": 4
-      },
-      "ZrUtKs7Ty7U": {
-        "view": 1307,
-        "like": 48,
-        "comment": 5
-      },
-      "5D96DmjvioU": {
-        "view": 617,
-        "like": 27,
-        "comment": 0
-      }
-    },
-    "youtube_totales": {
-      "view": 10793,
-      "like": 374,
-      "comment": 16
-    },
-    "suscriptores": 33,
-    "delta_vs_anterior": {
-      "view": 232,
-      "like": 2,
-      "comment": 0,
-      "suscriptores": 1
-    },
-    "tiktok": null,
-    "nota": "Reporte horario 23:00 (corrida ~22:50). YT Data API uploads, solo públicos. TikTok null: sin navegador en esta corrida."
-  },
-  {
-    "timestamp_cdmx": "2026-10-27T06:56-06:00",
-    "youtube": {
-      "YKldyldCeiQ": {
-        "view": 160,
-        "like": 4,
-        "comment": 0
-      },
-      "GYxjXDh1ahc": {
-        "view": 377,
-        "like": 5,
-        "comment": 0
-      },
-      "ivVo2H9NaEU": {
-        "view": 283,
-        "like": 11,
-        "comment": 0
-      },
-      "PBDMJxOkCRk": {
-        "view": 1250,
-        "like": 28,
-        "comment": 4
-      },
-      "i9QBFPljl6M": {
-        "view": 1032,
-        "like": 21,
-        "comment": 0
-      },
-      "bYGd7QuenSk": {
-        "view": 1008,
-        "like": 24,
-        "comment": 0
-      },
-      "gIjJ0YKYQ8M": {
-        "view": 1213,
-        "like": 60,
-        "comment": 1
-      },
-      "AJR6kcnnDig": {
-        "view": 173,
-        "like": 11,
-        "comment": 0
-      },
-      "Qe2Y9xDn9QQ": {
-        "view": 976,
-        "like": 33,
-        "comment": 2
-      },
-      "3bhntOcKHPk": {
-        "view": 1419,
-        "like": 36,
-        "comment": 0
-      },
-      "O7TdKvuBjyg": {
-        "view": 13,
-        "like": 1,
-        "comment": 0
-      },
-      "r1AhsPOAS_o": {
-        "view": 1389,
-        "like": 73,
-        "comment": 4
-      },
-      "ZrUtKs7Ty7U": {
-        "view": 1314,
-        "like": 48,
-        "comment": 5
-      },
-      "5D96DmjvioU": {
-        "view": 620,
-        "like": 27,
-        "comment": 0
-      }
-    },
-    "youtube_totales": {
-      "view": 11227,
-      "like": 382,
-      "comment": 16
-    },
-    "suscriptores": 33,
-    "delta_vs_anterior": {
-      "view": 434,
-      "like": 8,
-      "comment": 0,
-      "suscriptores": 0
-    },
-    "tiktok": null,
-    "nota": "Reporte horario 07:00 (corrida ~06:56). YT Data API uploads, solo públicos. TikTok null: sin navegador en esta corrida. Delta vs 22:50 del 26-oct (noche)."
+   },
+   "totales": {
+    "view": 79,
+    "like": 2,
+    "comment": 0
+   },
+   "seguidores": 0
   }
+ },
+ {
+  "timestamp_cdmx": "2026-10-24T17:05:00-06:00",
+  "youtube": {
+   "5D96DmjvioU": {
+    "view": 125,
+    "like": 10,
+    "comment": 0
+   },
+   "ZrUtKs7Ty7U": {
+    "view": 138,
+    "like": 12,
+    "comment": 0
+   },
+   "r1AhsPOAS_o": {
+    "view": 4,
+    "like": 1,
+    "comment": 0
+   }
+  },
+  "youtube_totales": {
+   "view": 267,
+   "like": 23,
+   "comment": 0
+  },
+  "suscriptores": null,
+  "tiktok": {
+   "fuente": "TikTok Studio",
+   "videos": {
+    "serpientes": {
+     "view": 1,
+     "like": 0,
+     "comment": 0
+    },
+    "ideonella": {
+     "view": 35,
+     "like": 2,
+     "comment": 0
+    },
+    "el_nino_hashtags_IA": {
+     "view": 87,
+     "like": 2,
+     "comment": 0
+    }
+   },
+   "totales": {
+    "view": 123,
+    "like": 4,
+    "comment": 0
+   },
+   "seguidores": 0,
+   "nota": "el_nino_mar_navidad ya no aparece en Studio"
+  }
+ },
+ {
+  "timestamp_cdmx": "2026-10-24T18:09:00-06:00",
+  "youtube": {
+   "5D96DmjvioU": {
+    "view": 208,
+    "like": 14,
+    "comment": 0
+   },
+   "ZrUtKs7Ty7U": {
+    "view": 280,
+    "like": 18,
+    "comment": 0
+   },
+   "r1AhsPOAS_o": {
+    "view": 6,
+    "like": 1,
+    "comment": 0
+   },
+   "ZmejLrdEslU": {
+    "view": 0,
+    "like": 0,
+    "comment": 0
+   },
+   "O7TdKvuBjyg": {
+    "view": 0,
+    "like": 0,
+    "comment": 0
+   }
+  },
+  "youtube_totales": {
+   "view": 494,
+   "like": 33,
+   "comment": 0
+  },
+  "suscriptores": 2,
+  "tiktok": {
+   "fuente": "TikTok Studio",
+   "videos": {
+    "aves_mujeres": {
+     "view": 21,
+     "like": 1,
+     "comment": 0
+    },
+    "serpientes": {
+     "view": 27,
+     "like": 0,
+     "comment": 0
+    },
+    "ideonella": {
+     "view": 89,
+     "like": 7,
+     "comment": 0
+    },
+    "el_nino_hashtags_IA": {
+     "view": 105,
+     "like": 2,
+     "comment": 0
+    }
+   },
+   "totales": {
+    "view": 242,
+    "like": 10,
+    "comment": 0
+   },
+   "seguidores": 0
+  }
+ },
+ {
+  "timestamp_cdmx": "2026-10-24T19:10:00-06:00",
+  "youtube": {
+   "5D96DmjvioU": {
+    "view": 252,
+    "like": 15,
+    "comment": 0
+   },
+   "ZrUtKs7Ty7U": {
+    "view": 414,
+    "like": 20,
+    "comment": 0
+   },
+   "r1AhsPOAS_o": {
+    "view": 176,
+    "like": 15,
+    "comment": 0
+   },
+   "ZmejLrdEslU": {
+    "view": 0,
+    "like": 0,
+    "comment": 0
+   },
+   "O7TdKvuBjyg": {
+    "view": 0,
+    "like": 0,
+    "comment": 0
+   },
+   "76DCb-MJZCc": {
+    "view": 9,
+    "like": 0,
+    "comment": 0
+   },
+   "3bhntOcKHPk": {
+    "view": 6,
+    "like": 0,
+    "comment": 0
+   }
+  },
+  "youtube_totales": {
+   "view": 857,
+   "like": 50,
+   "comment": 0
+  },
+  "suscriptores": 8,
+  "tiktok": {
+   "fuente": "TikTok Studio",
+   "videos": {
+    "aves_mujeres": {
+     "view": 40,
+     "like": 4,
+     "comment": 0
+    },
+    "serpientes": {
+     "view": 31,
+     "like": 0,
+     "comment": 0
+    },
+    "ideonella": {
+     "view": 210,
+     "like": 12,
+     "comment": 0
+    },
+    "el_nino_hashtags_IA": {
+     "view": 124,
+     "like": 3,
+     "comment": 0
+    }
+   },
+   "totales": {
+    "view": 405,
+    "like": 19,
+    "comment": 0
+   },
+   "seguidores": 0
+  },
+  "nota": "YouTube tiene dos videos de abejas (76DCb-MJZCc y 3bhntOcKHPk) con el mismo título"
+ },
+ {
+  "timestamp_cdmx": "2026-10-24T20:05:00-06:00",
+  "youtube": {
+   "3bhntOcKHPk": {
+    "view": 146,
+    "like": 5,
+    "comment": 0
+   },
+   "O7TdKvuBjyg": {
+    "view": 2,
+    "like": 0,
+    "comment": 0
+   },
+   "r1AhsPOAS_o": {
+    "view": 330,
+    "like": 27,
+    "comment": 2
+   },
+   "ZrUtKs7Ty7U": {
+    "view": 551,
+    "like": 29,
+    "comment": 0
+   },
+   "5D96DmjvioU": {
+    "view": 260,
+    "like": 15,
+    "comment": 0
+   }
+  },
+  "youtube_totales": {
+   "view": 1289,
+   "like": 76,
+   "comment": 2
+  },
+  "suscriptores": 9,
+  "tiktok": {
+   "fuente": "TikTok Studio",
+   "videos": {
+    "aves_mujeres": {
+     "view": 167,
+     "like": 18,
+     "comment": 0
+    },
+    "serpientes": {
+     "view": 44,
+     "like": 1,
+     "comment": 0
+    },
+    "ideonella": {
+     "view": 522,
+     "like": 32,
+     "comment": 0
+    },
+    "el_nino_hashtags_IA": {
+     "view": 145,
+     "like": 3,
+     "comment": 0
+    }
+   },
+   "totales": {
+    "view": 878,
+    "like": 54,
+    "comment": 0
+   },
+   "seguidores": 0
+  },
+  "nota": "76DCb-MJZCc y ZmejLrdEslU ya no aparecen en el canal de YouTube"
+ },
+ {
+  "timestamp_cdmx": "2026-10-24T21:01:00-06:00",
+  "youtube": {
+   "3bhntOcKHPk": {
+    "view": 434,
+    "like": 18,
+    "comment": 0
+   },
+   "O7TdKvuBjyg": {
+    "view": 0,
+    "like": 0,
+    "comment": 0
+   },
+   "r1AhsPOAS_o": {
+    "view": 456,
+    "like": 37,
+    "comment": 2
+   },
+   "ZrUtKs7Ty7U": {
+    "view": 746,
+    "like": 42,
+    "comment": 0
+   },
+   "5D96DmjvioU": {
+    "view": 261,
+    "like": 15,
+    "comment": 0
+   }
+  },
+  "youtube_totales": {
+   "view": 1897,
+   "like": 112,
+   "comment": 2
+  },
+  "suscriptores": 10,
+  "tiktok": {
+   "fuente": "TikTok Studio",
+   "videos": {
+    "abejas_bullying": {
+     "view": 21,
+     "like": 0,
+     "comment": 0
+    },
+    "aves_mujeres": {
+     "view": 484,
+     "like": 36,
+     "comment": 0
+    },
+    "serpientes": {
+     "view": 55,
+     "like": 1,
+     "comment": 0
+    },
+    "ideonella": {
+     "view": 536,
+     "like": 33,
+     "comment": 0
+    },
+    "el_nino_hashtags_IA": {
+     "view": 157,
+     "like": 3,
+     "comment": 0
+    }
+   },
+   "totales": {
+    "view": 1253,
+    "like": 73,
+    "comment": 0
+   },
+   "seguidores": 0
+  },
+  "nota": "YouTube O7TdKvuBjyg (aves) bajó de 2 a 0 vistas (recalculo de YouTube). TikTok: nuevo video abejas; seguidores 0 con captcha en perfil, puede no ser confiable."
+ },
+ {
+  "timestamp_cdmx": "2026-10-24T22:02:00-06:00",
+  "youtube": {
+   "3bhntOcKHPk": {
+    "view": 907,
+    "like": 33,
+    "comment": 0
+   },
+   "O7TdKvuBjyg": {
+    "view": 0,
+    "like": 0,
+    "comment": 0
+   },
+   "r1AhsPOAS_o": {
+    "view": 630,
+    "like": 51,
+    "comment": 4
+   },
+   "ZrUtKs7Ty7U": {
+    "view": 898,
+    "like": 47,
+    "comment": 0
+   },
+   "5D96DmjvioU": {
+    "view": 261,
+    "like": 15,
+    "comment": 0
+   }
+  },
+  "youtube_totales": {
+   "view": 2696,
+   "like": 146,
+   "comment": 4
+  },
+  "suscriptores": 11,
+  "tiktok": {
+   "fuente": "TikTok Studio",
+   "videos": {
+    "abejas_bullying": {
+     "view": 32,
+     "like": 3,
+     "comment": 0
+    },
+    "aves_mujeres": {
+     "view": 497,
+     "like": 37,
+     "comment": 0
+    },
+    "serpientes": {
+     "view": 63,
+     "like": 1,
+     "comment": 0
+    },
+    "ideonella": {
+     "view": 538,
+     "like": 33,
+     "comment": 0
+    },
+    "el_nino_hashtags_IA": {
+     "view": 166,
+     "like": 3,
+     "comment": 0
+    }
+   },
+   "totales": {
+    "view": 1296,
+    "like": 77,
+    "comment": 0
+   },
+   "seguidores": null
+  },
+  "nota": "TikTok seguidores no visibles en Studio."
+ },
+ {
+  "timestamp_cdmx": "2026-10-25T00:11:00-06:00",
+  "youtube": {
+   "5D96DmjvioU": {
+    "view": 342,
+    "like": 15,
+    "comment": 0
+   },
+   "ZrUtKs7Ty7U": {
+    "view": 1220,
+    "like": 47,
+    "comment": 0
+   },
+   "r1AhsPOAS_o": {
+    "view": 1039,
+    "like": 73,
+    "comment": 4
+   },
+   "3bhntOcKHPk": {
+    "view": 1090,
+    "like": 32,
+    "comment": 0
+   },
+   "O7TdKvuBjyg": {
+    "view": 2,
+    "like": 0,
+    "comment": 0
+   },
+   "Qe2Y9xDn9QQ": {
+    "view": 4,
+    "like": 0,
+    "comment": 0
+   }
+  },
+  "youtube_totales": {
+   "view": 3697,
+   "like": 167,
+   "comment": 4
+  },
+  "suscriptores": 11,
+  "tiktok": null,
+  "nota": "Solo YouTube (Data API). TikTok sin acceso; ultimo dato TikTok en snapshot 22:02."
+ },
+ {
+  "timestamp_cdmx": "2026-10-25T06:54-06:00",
+  "youtube": {
+   "IzWU_1BXq3Q": {
+    "view": 0,
+    "like": 0,
+    "comment": 0
+   },
+   "AJR6kcnnDig": {
+    "view": 0,
+    "like": 0,
+    "comment": 0
+   },
+   "Qe2Y9xDn9QQ": {
+    "view": 61,
+    "like": 3,
+    "comment": 0
+   },
+   "3bhntOcKHPk": {
+    "view": 1117,
+    "like": 32,
+    "comment": 0
+   },
+   "O7TdKvuBjyg": {
+    "view": 2,
+    "like": 0,
+    "comment": 0
+   },
+   "r1AhsPOAS_o": {
+    "view": 1336,
+    "like": 71,
+    "comment": 4
+   },
+   "ZrUtKs7Ty7U": {
+    "view": 1249,
+    "like": 47,
+    "comment": 0
+   },
+   "5D96DmjvioU": {
+    "view": 389,
+    "like": 21,
+    "comment": 0
+   }
+  },
+  "youtube_totales": {
+   "view": 4154,
+   "like": 174,
+   "comment": 4
+  },
+  "suscriptores": 13,
+  "delta_vs_anterior": {
+   "view": 457,
+   "like": 7,
+   "comment": 0,
+   "suscriptores": 2
+  },
+  "tiktok": null,
+  "nota": "Solo YouTube (Data API). IzWU_1BXq3Q y AJR6kcnnDig privados (programados/pendientes). TikTok sin acceso desde este run; último dato TikTok en snapshot 22:02 del 24-oct."
+ },
+ {
+  "timestamp_cdmx": "2026-10-25T07:50-06:00",
+  "youtube": {
+   "IzWU_1BXq3Q": {
+    "view": 0,
+    "like": 0,
+    "comment": 0
+   },
+   "AJR6kcnnDig": {
+    "view": 0,
+    "like": 0,
+    "comment": 0
+   },
+   "Qe2Y9xDn9QQ": {
+    "view": 61,
+    "like": 3,
+    "comment": 0
+   },
+   "3bhntOcKHPk": {
+    "view": 1125,
+    "like": 32,
+    "comment": 0
+   },
+   "O7TdKvuBjyg": {
+    "view": 2,
+    "like": 0,
+    "comment": 0
+   },
+   "r1AhsPOAS_o": {
+    "view": 1336,
+    "like": 71,
+    "comment": 4
+   },
+   "ZrUtKs7Ty7U": {
+    "view": 1251,
+    "like": 47,
+    "comment": 0
+   },
+   "5D96DmjvioU": {
+    "view": 420,
+    "like": 22,
+    "comment": 0
+   }
+  },
+  "youtube_totales": {
+   "view": 4195,
+   "like": 175,
+   "comment": 4
+  },
+  "suscriptores": 13,
+  "delta_vs_anterior": {
+   "view": 41,
+   "like": 1,
+   "comment": 0,
+   "suscriptores": 0
+  },
+  "tiktok": null,
+  "nota": "Solo YouTube (Data API). No públicos: IzWU_1BXq3Q, AJR6kcnnDig. TikTok sin acceso desde este run (sin login/API); no se inventa."
+ },
+ {
+  "timestamp_cdmx": "2026-10-25T08:04-06:00",
+  "youtube": {
+   "IzWU_1BXq3Q": {
+    "view": 0,
+    "like": 0,
+    "comment": 0
+   },
+   "AJR6kcnnDig": {
+    "view": 0,
+    "like": 0,
+    "comment": 0
+   },
+   "Qe2Y9xDn9QQ": {
+    "view": 79,
+    "like": 3,
+    "comment": 0
+   },
+   "3bhntOcKHPk": {
+    "view": 1125,
+    "like": 32,
+    "comment": 0
+   },
+   "O7TdKvuBjyg": {
+    "view": 2,
+    "like": 0,
+    "comment": 0
+   },
+   "r1AhsPOAS_o": {
+    "view": 1336,
+    "like": 71,
+    "comment": 4
+   },
+   "ZrUtKs7Ty7U": {
+    "view": 1251,
+    "like": 47,
+    "comment": 0
+   },
+   "5D96DmjvioU": {
+    "view": 444,
+    "like": 22,
+    "comment": 0
+   }
+  },
+  "youtube_totales": {
+   "view": 4237,
+   "like": 175,
+   "comment": 4
+  },
+  "suscriptores": 13,
+  "delta_vs_anterior": {
+   "view": 42,
+   "like": 0,
+   "comment": 0,
+   "suscriptores": 0
+  },
+  "tiktok": {
+   "fuente": "TikTok Studio",
+   "videos": {
+    "osedax_huesos": {
+     "view": 78,
+     "like": 1,
+     "comment": 0
+    },
+    "abejas_bullying": {
+     "view": 128,
+     "like": 8,
+     "comment": 0
+    },
+    "aves_mujeres": {
+     "view": 500,
+     "like": 38,
+     "comment": 0
+    },
+    "serpientes": {
+     "view": 92,
+     "like": 1,
+     "comment": 0
+    },
+    "ideonella": {
+     "view": 540,
+     "like": 33,
+     "comment": 0
+    },
+    "el_nino_hashtags_IA": {
+     "view": 231,
+     "like": 4,
+     "comment": 0
+    }
+   },
+   "totales": {
+    "view": 1569,
+    "like": 85,
+    "comment": 0
+   },
+   "seguidores": null
+  },
+  "nota": "Balance 6h 08:00. YT Data API (uploads del canal); TT leído en TikTok Studio."
+ },
+ {
+  "timestamp_cdmx": "2026-10-25 08:54",
+  "youtube": {
+   "IzWU_1BXq3Q": {
+    "view": 0,
+    "like": 0,
+    "comment": 0
+   },
+   "AJR6kcnnDig": {
+    "view": 0,
+    "like": 0,
+    "comment": 0
+   },
+   "Qe2Y9xDn9QQ": {
+    "view": 79,
+    "like": 3,
+    "comment": 0
+   },
+   "3bhntOcKHPk": {
+    "view": 1119,
+    "like": 32,
+    "comment": 0
+   },
+   "O7TdKvuBjyg": {
+    "view": 2,
+    "like": 0,
+    "comment": 0
+   },
+   "r1AhsPOAS_o": {
+    "view": 1338,
+    "like": 72,
+    "comment": 4
+   },
+   "ZrUtKs7Ty7U": {
+    "view": 1251,
+    "like": 47,
+    "comment": 0
+   },
+   "5D96DmjvioU": {
+    "view": 461,
+    "like": 23,
+    "comment": 0
+   }
+  },
+  "youtube_totales": {
+   "view": 4250,
+   "like": 177,
+   "comment": 4
+  },
+  "suscriptores": 13,
+  "delta_vs_anterior": {
+   "view": 13,
+   "like": 2,
+   "comment": 0,
+   "suscriptores": 0
+  },
+  "tiktok": null,
+  "nota": "Snapshot horario. YT Data API (uploads del canal). TikTok sin acceso desde este run (sin login/API); no se inventa; último dato TT en balance 08:00."
+ },
+ {
+  "timestamp_cdmx": "2026-10-25 09:52",
+  "youtube": {
+   "IzWU_1BXq3Q": {
+    "view": 0,
+    "like": 0,
+    "comment": 0
+   },
+   "AJR6kcnnDig": {
+    "view": 0,
+    "like": 0,
+    "comment": 0
+   },
+   "Qe2Y9xDn9QQ": {
+    "view": 80,
+    "like": 3,
+    "comment": 0
+   },
+   "3bhntOcKHPk": {
+    "view": 1135,
+    "like": 32,
+    "comment": 0
+   },
+   "O7TdKvuBjyg": {
+    "view": 2,
+    "like": 0,
+    "comment": 0
+   },
+   "r1AhsPOAS_o": {
+    "view": 1338,
+    "like": 72,
+    "comment": 4
+   },
+   "ZrUtKs7Ty7U": {
+    "view": 1251,
+    "like": 47,
+    "comment": 0
+   },
+   "5D96DmjvioU": {
+    "view": 468,
+    "like": 24,
+    "comment": 0
+   }
+  },
+  "youtube_totales": {
+   "view": 4274,
+   "like": 178,
+   "comment": 4
+  },
+  "suscriptores": 13,
+  "delta_vs_anterior": {
+   "view": 24,
+   "like": 1,
+   "comment": 0,
+   "suscriptores": 0
+  },
+  "tiktok": null,
+  "nota": "Snapshot horario. YT Data API (uploads del canal). TikTok sin acceso desde este run (sin login/API); no se inventa."
+ },
+ {
+  "timestamp_cdmx": "2026-10-25 10:50",
+  "youtube": {
+   "IzWU_1BXq3Q": {
+    "view": 0,
+    "like": 0,
+    "comment": 0
+   },
+   "AJR6kcnnDig": {
+    "view": 0,
+    "like": 0,
+    "comment": 0
+   },
+   "Qe2Y9xDn9QQ": {
+    "view": 80,
+    "like": 3,
+    "comment": 0
+   },
+   "3bhntOcKHPk": {
+    "view": 1138,
+    "like": 32,
+    "comment": 0
+   },
+   "O7TdKvuBjyg": {
+    "view": 2,
+    "like": 0,
+    "comment": 0
+   },
+   "r1AhsPOAS_o": {
+    "view": 1339,
+    "like": 72,
+    "comment": 4
+   },
+   "ZrUtKs7Ty7U": {
+    "view": 1251,
+    "like": 47,
+    "comment": 0
+   },
+   "5D96DmjvioU": {
+    "view": 505,
+    "like": 25,
+    "comment": 0
+   }
+  },
+  "youtube_totales": {
+   "view": 4315,
+   "like": 179,
+   "comment": 4
+  },
+  "suscriptores": 13,
+  "delta_vs_anterior": {
+   "view": 41,
+   "like": 1,
+   "comment": 0,
+   "suscriptores": 0
+  },
+  "tiktok": null,
+  "nota": "Snapshot horario. YT Data API (uploads del canal). TikTok sin acceso desde este run (sin login/API); no se inventa."
+ },
+ {
+  "timestamp_cdmx": "2026-10-25 11:54",
+  "youtube": {
+   "IzWU_1BXq3Q": {
+    "view": 0,
+    "like": 0,
+    "comment": 0
+   },
+   "AJR6kcnnDig": {
+    "view": 0,
+    "like": 0,
+    "comment": 0
+   },
+   "Qe2Y9xDn9QQ": {
+    "view": 80,
+    "like": 3,
+    "comment": 0
+   },
+   "3bhntOcKHPk": {
+    "view": 1135,
+    "like": 32,
+    "comment": 0
+   },
+   "O7TdKvuBjyg": {
+    "view": 2,
+    "like": 0,
+    "comment": 0
+   },
+   "r1AhsPOAS_o": {
+    "view": 1342,
+    "like": 72,
+    "comment": 4
+   },
+   "ZrUtKs7Ty7U": {
+    "view": 1258,
+    "like": 47,
+    "comment": 0
+   },
+   "5D96DmjvioU": {
+    "view": 524,
+    "like": 26,
+    "comment": 0
+   }
+  },
+  "youtube_totales": {
+   "view": 4341,
+   "like": 180,
+   "comment": 4
+  },
+  "suscriptores": 13,
+  "delta_vs_anterior": {
+   "view": 26,
+   "like": 1,
+   "comment": 0,
+   "suscriptores": 0
+  },
+  "tiktok": null,
+  "nota": "Snapshot horario. YT Data API (uploads del canal). TikTok sin acceso desde este run (sin login/API); no se inventa."
+ },
+ {
+  "timestamp_cdmx": "2026-10-25 12:56",
+  "youtube": {
+   "gIjJ0YKYQ8M": {
+    "view": 2,
+    "like": 0,
+    "comment": 0
+   },
+   "AJR6kcnnDig": {
+    "view": 4,
+    "like": 0,
+    "comment": 0
+   },
+   "IzWU_1BXq3Q": {
+    "view": 1,
+    "like": 0,
+    "comment": 0
+   },
+   "Qe2Y9xDn9QQ": {
+    "view": 110,
+    "like": 3,
+    "comment": 0
+   },
+   "3bhntOcKHPk": {
+    "view": 1145,
+    "like": 32,
+    "comment": 0
+   },
+   "O7TdKvuBjyg": {
+    "view": 3,
+    "like": 0,
+    "comment": 0
+   },
+   "r1AhsPOAS_o": {
+    "view": 1343,
+    "like": 72,
+    "comment": 4
+   },
+   "ZrUtKs7Ty7U": {
+    "view": 1258,
+    "like": 47,
+    "comment": 0
+   },
+   "5D96DmjvioU": {
+    "view": 527,
+    "like": 25,
+    "comment": 0
+   }
+  },
+  "youtube_totales": {
+   "view": 4393,
+   "like": 179,
+   "comment": 4
+  },
+  "suscriptores": 13,
+  "delta_vs_anterior": {
+   "view": 52,
+   "like": -1,
+   "comment": 0,
+   "suscriptores": 0
+  },
+  "tiktok": null,
+  "nota": "Snapshot horario. YT Data API (uploads del canal; nuevo gIjJ0YKYQ8M). No públicos: IzWU_1BXq3Q. Programados GHxm9dDUMmM/YAVdu0MLd24 no devueltos por la API aún. TikTok sin acceso desde este run (sin login/API); no se inventa."
+ },
+ {
+  "timestamp_cdmx": "2026-10-25 13:56",
+  "youtube": {
+   "gIjJ0YKYQ8M": {
+    "view": 4,
+    "like": 0,
+    "comment": 0
+   },
+   "AJR6kcnnDig": {
+    "view": 4,
+    "like": 0,
+    "comment": 0
+   },
+   "Qe2Y9xDn9QQ": {
+    "view": 169,
+    "like": 4,
+    "comment": 0
+   },
+   "3bhntOcKHPk": {
+    "view": 1146,
+    "like": 32,
+    "comment": 0
+   },
+   "O7TdKvuBjyg": {
+    "view": 6,
+    "like": 1,
+    "comment": 0
+   },
+   "r1AhsPOAS_o": {
+    "view": 1342,
+    "like": 72,
+    "comment": 4
+   },
+   "ZrUtKs7Ty7U": {
+    "view": 1258,
+    "like": 47,
+    "comment": 0
+   },
+   "5D96DmjvioU": {
+    "view": 528,
+    "like": 25,
+    "comment": 0
+   }
+  },
+  "youtube_totales": {
+   "view": 4457,
+   "like": 181,
+   "comment": 4
+  },
+  "suscriptores": 13,
+  "delta_vs_anterior": {
+   "view": 64,
+   "like": 2,
+   "comment": 0,
+   "suscriptores": 0
+  },
+  "tiktok": null,
+  "nota": "Snapshot horario. YT Data API (uploads del canal). No devueltos por la API: IzWU_1BXq3Q (privado) y programados GHxm9dDUMmM/YAVdu0MLd24; el delta de vistas incluye esa ausencia (-1 de IzWU). TikTok sin acceso desde este run (sin login/API); no se inventa."
+ },
+ {
+  "timestamp_cdmx": "2026-10-25T14:01-06:00",
+  "youtube": {
+   "gIjJ0YKYQ8M": {
+    "view": 4,
+    "like": 0,
+    "comment": 0
+   },
+   "AJR6kcnnDig": {
+    "view": 4,
+    "like": 0,
+    "comment": 0
+   },
+   "Qe2Y9xDn9QQ": {
+    "view": 178,
+    "like": 4,
+    "comment": 0
+   },
+   "3bhntOcKHPk": {
+    "view": 1146,
+    "like": 32,
+    "comment": 0
+   },
+   "O7TdKvuBjyg": {
+    "view": 8,
+    "like": 1,
+    "comment": 0
+   },
+   "r1AhsPOAS_o": {
+    "view": 1342,
+    "like": 72,
+    "comment": 4
+   },
+   "ZrUtKs7Ty7U": {
+    "view": 1258,
+    "like": 47,
+    "comment": 0
+   },
+   "5D96DmjvioU": {
+    "view": 528,
+    "like": 25,
+    "comment": 0
+   }
+  },
+  "youtube_totales": {
+   "view": 4468,
+   "like": 181,
+   "comment": 4
+  },
+  "suscriptores": 13,
+  "delta_vs_anterior": {
+   "view": 11,
+   "like": 0,
+   "comment": 0,
+   "suscriptores": 0
+  },
+  "tiktok": {
+   "fuente": "TikTok Studio",
+   "videos": {
+    "sueno_toba_qom": {
+     "view": 0,
+     "like": 0,
+     "comment": 0
+    },
+    "reina_topo": {
+     "view": 415,
+     "like": 40,
+     "comment": 0
+    },
+    "osedax_huesos": {
+     "view": 490,
+     "like": 24,
+     "comment": 0
+    },
+    "abejas_bullying": {
+     "view": 474,
+     "like": 22,
+     "comment": 0
+    },
+    "aves_mujeres": {
+     "view": 501,
+     "like": 38,
+     "comment": 0
+    },
+    "serpientes": {
+     "view": 104,
+     "like": 1,
+     "comment": 0
+    },
+    "ideonella": {
+     "view": 543,
+     "like": 33,
+     "comment": 0
+    },
+    "el_nino_hashtags_IA": {
+     "view": 270,
+     "like": 5,
+     "comment": 0
+    }
+   },
+   "totales": {
+    "view": 2797,
+    "like": 163,
+    "comment": 0
+   },
+   "seguidores": 1,
+   "likes_perfil": 162
+  },
+  "nota": "Balance 6h 14:00. YT Data API (uploads del canal; IzWU privado y programados no aparecen); TT leído en TikTok Studio ~14:05."
+ },
+ {
+  "timestamp_cdmx": "2026-10-25T14:02-06:00",
+  "youtube": {
+   "gIjJ0YKYQ8M": {
+    "view": 4,
+    "like": 0,
+    "comment": 0
+   },
+   "AJR6kcnnDig": {
+    "view": 4,
+    "like": 0,
+    "comment": 0
+   },
+   "Qe2Y9xDn9QQ": {
+    "view": 178,
+    "like": 4,
+    "comment": 0
+   },
+   "3bhntOcKHPk": {
+    "view": 1146,
+    "like": 32,
+    "comment": 0
+   },
+   "O7TdKvuBjyg": {
+    "view": 8,
+    "like": 1,
+    "comment": 0
+   },
+   "r1AhsPOAS_o": {
+    "view": 1342,
+    "like": 72,
+    "comment": 4
+   },
+   "ZrUtKs7Ty7U": {
+    "view": 1258,
+    "like": 47,
+    "comment": 0
+   },
+   "5D96DmjvioU": {
+    "view": 528,
+    "like": 25,
+    "comment": 0
+   }
+  },
+  "youtube_totales": {
+   "view": 4468,
+   "like": 181,
+   "comment": 4
+  },
+  "suscriptores": 13,
+  "delta_vs_anterior": {
+   "view": 0,
+   "like": 0,
+   "comment": 0,
+   "suscriptores": 0
+  },
+  "tiktok": {
+   "fuente": "TikTok Studio",
+   "videos": {
+    "sueno_luz_electrica": {
+     "view": 0,
+     "like": 0,
+     "comment": 0
+    },
+    "reina_topo": {
+     "view": 433,
+     "like": 41,
+     "comment": 0
+    },
+    "osedax_huesos": {
+     "view": 490,
+     "like": 24,
+     "comment": 0
+    },
+    "abejas_bullying": {
+     "view": 477,
+     "like": 22,
+     "comment": 0
+    },
+    "aves_mujeres": {
+     "view": 501,
+     "like": 38,
+     "comment": 0
+    },
+    "serpientes": {
+     "view": 104,
+     "like": 1,
+     "comment": 0
+    },
+    "ideonella": {
+     "view": 543,
+     "like": 33,
+     "comment": 0
+    },
+    "el_nino_hashtags_IA": {
+     "view": 270,
+     "like": 5,
+     "comment": 0
+    }
+   },
+   "totales": {
+    "view": 2818,
+    "like": 164,
+    "comment": 0
+   },
+   "seguidores": 1
+  },
+  "nota": "Balance 6h 14:00. YT Data API (uploads del canal); TT leído en TikTok Studio. Sueño TT figura con 0 (probablemente programado 15:58)."
+ },
+ {
+  "timestamp_cdmx": "2026-10-25T14:58-06:00",
+  "youtube": {
+   "gIjJ0YKYQ8M": {
+    "view": 4,
+    "like": 0,
+    "comment": 0
+   },
+   "AJR6kcnnDig": {
+    "view": 4,
+    "like": 0,
+    "comment": 0
+   },
+   "Qe2Y9xDn9QQ": {
+    "view": 255,
+    "like": 7,
+    "comment": 0
+   },
+   "3bhntOcKHPk": {
+    "view": 1146,
+    "like": 32,
+    "comment": 0
+   },
+   "O7TdKvuBjyg": {
+    "view": 8,
+    "like": 1,
+    "comment": 0
+   },
+   "r1AhsPOAS_o": {
+    "view": 1349,
+    "like": 72,
+    "comment": 4
+   },
+   "ZrUtKs7Ty7U": {
+    "view": 1265,
+    "like": 47,
+    "comment": 0
+   },
+   "5D96DmjvioU": {
+    "view": 528,
+    "like": 25,
+    "comment": 0
+   }
+  },
+  "youtube_totales": {
+   "view": 4559,
+   "like": 184,
+   "comment": 4
+  },
+  "suscriptores": 13,
+  "delta_vs_anterior": {
+   "view": 91,
+   "like": 3,
+   "comment": 0,
+   "suscriptores": 0
+  },
+  "tiktok": null,
+  "nota": "Snapshot horario. YT Data API (uploads del canal, solo públicos). TikTok sin acceso desde este run (sin login/API); no se inventa."
+ },
+ {
+  "timestamp_cdmx": "2026-10-25T15:54-06:00",
+  "youtube": {
+   "gIjJ0YKYQ8M": {
+    "view": 4,
+    "like": 0,
+    "comment": 0
+   },
+   "AJR6kcnnDig": {
+    "view": 5,
+    "like": 0,
+    "comment": 0
+   },
+   "Qe2Y9xDn9QQ": {
+    "view": 387,
+    "like": 16,
+    "comment": 0
+   },
+   "3bhntOcKHPk": {
+    "view": 1145,
+    "like": 32,
+    "comment": 0
+   },
+   "O7TdKvuBjyg": {
+    "view": 5,
+    "like": 1,
+    "comment": 0
+   },
+   "r1AhsPOAS_o": {
+    "view": 1349,
+    "like": 72,
+    "comment": 4
+   },
+   "ZrUtKs7Ty7U": {
+    "view": 1265,
+    "like": 47,
+    "comment": 0
+   },
+   "5D96DmjvioU": {
+    "view": 527,
+    "like": 25,
+    "comment": 0
+   }
+  },
+  "youtube_totales": {
+   "view": 4687,
+   "like": 193,
+   "comment": 4
+  },
+  "suscriptores": 14,
+  "delta_vs_anterior": {
+   "view": 128,
+   "like": 9,
+   "comment": 0,
+   "suscriptores": 1
+  },
+  "tiktok": null,
+  "nota": "Snapshot horario. YT Data API (uploads del canal, solo públicos). TikTok sin acceso desde este run (sin login/API); no se inventa."
+ },
+ {
+  "timestamp_cdmx": "2026-10-25T16:57-06:00",
+  "youtube": {
+   "gIjJ0YKYQ8M": {
+    "view": 4,
+    "like": 0,
+    "comment": 0
+   },
+   "AJR6kcnnDig": {
+    "view": 5,
+    "like": 0,
+    "comment": 0
+   },
+   "Qe2Y9xDn9QQ": {
+    "view": 518,
+    "like": 23,
+    "comment": 0
+   },
+   "3bhntOcKHPk": {
+    "view": 1150,
+    "like": 32,
+    "comment": 0
+   },
+   "O7TdKvuBjyg": {
+    "view": 5,
+    "like": 1,
+    "comment": 0
+   },
+   "r1AhsPOAS_o": {
+    "view": 1350,
+    "like": 72,
+    "comment": 4
+   },
+   "ZrUtKs7Ty7U": {
+    "view": 1265,
+    "like": 47,
+    "comment": 0
+   },
+   "5D96DmjvioU": {
+    "view": 533,
+    "like": 25,
+    "comment": 0
+   }
+  },
+  "youtube_totales": {
+   "view": 4830,
+   "like": 200,
+   "comment": 4
+  },
+  "suscriptores": 14,
+  "delta_vs_anterior": {
+   "view": 143,
+   "like": 7,
+   "comment": 0,
+   "suscriptores": 0
+  },
+  "tiktok": null,
+  "nota": "Snapshot horario. YT Data API (uploads del canal, solo públicos). TikTok sin acceso desde este run (sin login/API); no se inventa."
+ },
+ {
+  "timestamp_cdmx": "2026-10-25T17:54-06:00",
+  "youtube": {
+   "gIjJ0YKYQ8M": {
+    "view": 4,
+    "like": 0,
+    "comment": 0
+   },
+   "AJR6kcnnDig": {
+    "view": 13,
+    "like": 0,
+    "comment": 0
+   },
+   "Qe2Y9xDn9QQ": {
+    "view": 604,
+    "like": 28,
+    "comment": 0
+   },
+   "3bhntOcKHPk": {
+    "view": 1159,
+    "like": 32,
+    "comment": 0
+   },
+   "O7TdKvuBjyg": {
+    "view": 8,
+    "like": 1,
+    "comment": 0
+   },
+   "r1AhsPOAS_o": {
+    "view": 1352,
+    "like": 72,
+    "comment": 4
+   },
+   "ZrUtKs7Ty7U": {
+    "view": 1269,
+    "like": 47,
+    "comment": 0
+   },
+   "5D96DmjvioU": {
+    "view": 536,
+    "like": 25,
+    "comment": 0
+   }
+  },
+  "youtube_totales": {
+   "view": 4945,
+   "like": 205,
+   "comment": 4
+  },
+  "suscriptores": 14,
+  "delta_vs_anterior": {
+   "view": 115,
+   "like": 5,
+   "comment": 0,
+   "suscriptores": 0
+  },
+  "tiktok": null,
+  "nota": "Snapshot horario. YT Data API (uploads del canal, solo públicos). TikTok sin acceso desde este run (sin login/API); no se inventa."
+ },
+ {
+  "timestamp_cdmx": "2026-10-25T18:58-06:00",
+  "youtube": {
+   "gIjJ0YKYQ8M": {
+    "view": 4,
+    "like": 0,
+    "comment": 0
+   },
+   "AJR6kcnnDig": {
+    "view": 18,
+    "like": 0,
+    "comment": 0
+   },
+   "Qe2Y9xDn9QQ": {
+    "view": 737,
+    "like": 28,
+    "comment": 0
+   },
+   "3bhntOcKHPk": {
+    "view": 1157,
+    "like": 32,
+    "comment": 0
+   },
+   "O7TdKvuBjyg": {
+    "view": 11,
+    "like": 1,
+    "comment": 0
+   },
+   "r1AhsPOAS_o": {
+    "view": 1352,
+    "like": 72,
+    "comment": 4
+   },
+   "ZrUtKs7Ty7U": {
+    "view": 1269,
+    "like": 47,
+    "comment": 0
+   },
+   "5D96DmjvioU": {
+    "view": 545,
+    "like": 26,
+    "comment": 0
+   }
+  },
+  "youtube_totales": {
+   "view": 5093,
+   "like": 206,
+   "comment": 4
+  },
+  "suscriptores": 14,
+  "delta_vs_anterior": {
+   "view": 148,
+   "like": 1,
+   "comment": 0,
+   "suscriptores": 0
+  },
+  "tiktok": null,
+  "nota": "Snapshot horario. YT Data API (uploads del canal, solo públicos). TikTok sin acceso desde este run (sin login/API); no se inventa."
+ },
+ {
+  "timestamp_cdmx": "2026-10-25T19:57-06:00",
+  "youtube": {
+   "gIjJ0YKYQ8M": {
+    "view": 4,
+    "like": 0,
+    "comment": 0
+   },
+   "AJR6kcnnDig": {
+    "view": 40,
+    "like": 0,
+    "comment": 0
+   },
+   "Qe2Y9xDn9QQ": {
+    "view": 766,
+    "like": 28,
+    "comment": 0
+   },
+   "3bhntOcKHPk": {
+    "view": 1157,
+    "like": 32,
+    "comment": 0
+   },
+   "O7TdKvuBjyg": {
+    "view": 11,
+    "like": 1,
+    "comment": 0
+   },
+   "r1AhsPOAS_o": {
+    "view": 1352,
+    "like": 72,
+    "comment": 4
+   },
+   "ZrUtKs7Ty7U": {
+    "view": 1269,
+    "like": 47,
+    "comment": 0
+   },
+   "5D96DmjvioU": {
+    "view": 545,
+    "like": 26,
+    "comment": 0
+   }
+  },
+  "youtube_totales": {
+   "view": 5144,
+   "like": 206,
+   "comment": 4
+  },
+  "suscriptores": 14,
+  "delta_vs_anterior": {
+   "view": 51,
+   "like": 0,
+   "comment": 0,
+   "suscriptores": 0
+  },
+  "tiktok": null,
+  "nota": "Snapshot horario. YT Data API (uploads del canal, solo públicos). TikTok sin acceso desde este run (sin login/API); no se inventa."
+ },
+ {
+  "timestamp_cdmx": "2026-10-25T20:03-06:00",
+  "youtube": {
+   "gIjJ0YKYQ8M": {
+    "view": 4,
+    "like": 0,
+    "comment": 0
+   },
+   "AJR6kcnnDig": {
+    "view": 40,
+    "like": 0,
+    "comment": 0
+   },
+   "Qe2Y9xDn9QQ": {
+    "view": 766,
+    "like": 28,
+    "comment": 0
+   },
+   "3bhntOcKHPk": {
+    "view": 1169,
+    "like": 32,
+    "comment": 0
+   },
+   "O7TdKvuBjyg": {
+    "view": 11,
+    "like": 1,
+    "comment": 0
+   },
+   "r1AhsPOAS_o": {
+    "view": 1352,
+    "like": 72,
+    "comment": 4
+   },
+   "ZrUtKs7Ty7U": {
+    "view": 1269,
+    "like": 47,
+    "comment": 0
+   },
+   "5D96DmjvioU": {
+    "view": 545,
+    "like": 26,
+    "comment": 0
+   }
+  },
+  "youtube_totales": {
+   "view": 5156,
+   "like": 206,
+   "comment": 4
+  },
+  "suscriptores": 14,
+  "delta_vs_anterior": {
+   "view": 12,
+   "like": 0,
+   "comment": 0,
+   "suscriptores": 0
+  },
+  "tiktok": {
+   "fuente": "TikTok Studio",
+   "videos": {
+    "tardigrado": {
+     "view": 0,
+     "like": 0,
+     "comment": 0
+    },
+    "ave_jurasica": {
+     "view": 0,
+     "like": 0,
+     "comment": 0
+    },
+    "sueno_luz_electrica": {
+     "view": 2,
+     "like": 0,
+     "comment": 0
+    },
+    "reina_topo": {
+     "view": 701,
+     "like": 74,
+     "comment": 0
+    },
+    "osedax_huesos": {
+     "view": 496,
+     "like": 25,
+     "comment": 0
+    },
+    "abejas_bullying": {
+     "view": 500,
+     "like": 23,
+     "comment": 0
+    },
+    "aves_mujeres": {
+     "view": 501,
+     "like": 38,
+     "comment": 0
+    },
+    "serpientes": {
+     "view": 141,
+     "like": 3,
+     "comment": 0
+    },
+    "ideonella": {
+     "view": 553,
+     "like": 34,
+     "comment": 0
+    },
+    "el_nino_hashtags_IA": {
+     "view": 309,
+     "like": 6,
+     "comment": 0
+    }
+   },
+   "totales": {
+    "view": 3203,
+    "like": 203,
+    "comment": 0
+   },
+   "seguidores": 1,
+   "likes_perfil": 202
+  },
+  "nota": "Balance 6h 20:00. YT Data API (uploads del canal, solo públicos; GHxm/YAVd programados no aparecen). TT leído en TikTok Studio ~20:03; tardígrado (22:00 hoy) y ave jurásica (26-oct 20:00) programados con 0."
+ },
+ {
+  "timestamp_cdmx": "2026-10-25T20:51-06:00",
+  "youtube": {
+   "gIjJ0YKYQ8M": {
+    "view": 4,
+    "like": 0,
+    "comment": 0
+   },
+   "AJR6kcnnDig": {
+    "view": 40,
+    "like": 0,
+    "comment": 0
+   },
+   "Qe2Y9xDn9QQ": {
+    "view": 766,
+    "like": 28,
+    "comment": 0
+   },
+   "3bhntOcKHPk": {
+    "view": 1169,
+    "like": 33,
+    "comment": 0
+   },
+   "O7TdKvuBjyg": {
+    "view": 11,
+    "like": 1,
+    "comment": 0
+   },
+   "r1AhsPOAS_o": {
+    "view": 1358,
+    "like": 72,
+    "comment": 4
+   },
+   "ZrUtKs7Ty7U": {
+    "view": 1273,
+    "like": 47,
+    "comment": 0
+   },
+   "5D96DmjvioU": {
+    "view": 545,
+    "like": 26,
+    "comment": 0
+   }
+  },
+  "youtube_totales": {
+   "view": 5166,
+   "like": 207,
+   "comment": 4
+  },
+  "suscriptores": 14,
+  "delta_vs_anterior": {
+   "view": 10,
+   "like": 1,
+   "comment": 0,
+   "suscriptores": 0
+  },
+  "tiktok": null,
+  "nota": "Registro horario 21:00 (corrida ~20:52). YT Data API uploads del canal + GHxm/YAVd. No públicos: ninguno. TikTok null: esta corrida no abrió TikTok Studio (sin navegador); último TT en fila 20:03."
+ },
+ {
+  "timestamp_cdmx": "2026-10-25T21:53-06:00",
+  "youtube": {
+   "gIjJ0YKYQ8M": {
+    "view": 4,
+    "like": 0,
+    "comment": 0
+   },
+   "AJR6kcnnDig": {
+    "view": 48,
+    "like": 2,
+    "comment": 0
+   },
+   "Qe2Y9xDn9QQ": {
+    "view": 797,
+    "like": 29,
+    "comment": 0
+   },
+   "3bhntOcKHPk": {
+    "view": 1170,
+    "like": 33,
+    "comment": 0
+   },
+   "O7TdKvuBjyg": {
+    "view": 11,
+    "like": 1,
+    "comment": 0
+   },
+   "r1AhsPOAS_o": {
+    "view": 1358,
+    "like": 72,
+    "comment": 4
+   },
+   "ZrUtKs7Ty7U": {
+    "view": 1273,
+    "like": 47,
+    "comment": 0
+   },
+   "5D96DmjvioU": {
+    "view": 545,
+    "like": 26,
+    "comment": 0
+   }
+  },
+  "youtube_totales": {
+   "view": 5206,
+   "like": 210,
+   "comment": 4
+  },
+  "suscriptores": 14,
+  "delta_vs_anterior": {
+   "view": 40,
+   "like": 3,
+   "comment": 0,
+   "suscriptores": 0
+  },
+  "tiktok": null,
+  "nota": "Registro horario 22:00 (corrida ~21:53). YT Data API uploads del canal + GHxm/YAVd. No públicos: ninguno. TikTok null: esta corrida no abrió TikTok Studio (sin navegador); último TT en fila 20:03."
+ },
+ {
+  "timestamp_cdmx": "2026-10-25T22:52-06:00",
+  "youtube": {
+   "gIjJ0YKYQ8M": {
+    "view": 4,
+    "like": 0,
+    "comment": 0
+   },
+   "AJR6kcnnDig": {
+    "view": 55,
+    "like": 3,
+    "comment": 0
+   },
+   "Qe2Y9xDn9QQ": {
+    "view": 799,
+    "like": 29,
+    "comment": 0
+   },
+   "3bhntOcKHPk": {
+    "view": 1181,
+    "like": 35,
+    "comment": 0
+   },
+   "O7TdKvuBjyg": {
+    "view": 11,
+    "like": 1,
+    "comment": 0
+   },
+   "r1AhsPOAS_o": {
+    "view": 1358,
+    "like": 72,
+    "comment": 4
+   },
+   "ZrUtKs7Ty7U": {
+    "view": 1273,
+    "like": 47,
+    "comment": 0
+   },
+   "5D96DmjvioU": {
+    "view": 554,
+    "like": 26,
+    "comment": 0
+   }
+  },
+  "youtube_totales": {
+   "view": 5235,
+   "like": 213,
+   "comment": 4
+  },
+  "suscriptores": 15,
+  "delta_vs_anterior": {
+   "view": 29,
+   "like": 3,
+   "comment": 0,
+   "suscriptores": 1
+  },
+  "tiktok": null,
+  "nota": "Registro horario 23:00 (corrida ~22:52). YT Data API uploads del canal + GHxm/YAVd (no devueltos). TikTok null: esta corrida no abrió TikTok Studio (sin navegador)."
+ },
+ {
+  "timestamp_cdmx": "2026-10-26T06:53-06:00",
+  "youtube": {
+   "gIjJ0YKYQ8M": {
+    "view": 4,
+    "like": 0,
+    "comment": 0
+   },
+   "AJR6kcnnDig": {
+    "view": 88,
+    "like": 6,
+    "comment": 0
+   },
+   "Qe2Y9xDn9QQ": {
+    "view": 847,
+    "like": 30,
+    "comment": 0
+   },
+   "3bhntOcKHPk": {
+    "view": 1390,
+    "like": 35,
+    "comment": 0
+   },
+   "O7TdKvuBjyg": {
+    "view": 11,
+    "like": 1,
+    "comment": 0
+   },
+   "r1AhsPOAS_o": {
+    "view": 1361,
+    "like": 72,
+    "comment": 4
+   },
+   "ZrUtKs7Ty7U": {
+    "view": 1281,
+    "like": 47,
+    "comment": 0
+   },
+   "5D96DmjvioU": {
+    "view": 583,
+    "like": 27,
+    "comment": 0
+   }
+  },
+  "youtube_totales": {
+   "view": 5565,
+   "like": 218,
+   "comment": 4
+  },
+  "suscriptores": 15,
+  "delta_vs_anterior": {
+   "view": 330,
+   "like": 5,
+   "comment": 0,
+   "suscriptores": 0
+  },
+  "tiktok": null,
+  "nota": "Registro horario 07:00 (corrida ~06:53). YT Data API uploads + IDs conocidos. No públicos (excluidos): {'bYGd7QuenSk': 'private', 'PBDMJxOkCRk': 'private'}. TikTok null: esta corrida no abrió TikTok Studio (sin navegador). Delta vs fila 22:52 del 25-oct (noche sin registros)."
+ },
+ {
+  "timestamp_cdmx": "2026-10-26T08:02-06:00",
+  "youtube": {
+   "5D96DmjvioU": {
+    "view": 583,
+    "like": 27,
+    "comment": 0
+   },
+   "r1AhsPOAS_o": {
+    "view": 1365,
+    "like": 72,
+    "comment": 4
+   },
+   "ZrUtKs7Ty7U": {
+    "view": 1287,
+    "like": 47,
+    "comment": 0
+   },
+   "O7TdKvuBjyg": {
+    "view": 11,
+    "like": 1,
+    "comment": 0
+   },
+   "Qe2Y9xDn9QQ": {
+    "view": 847,
+    "like": 30,
+    "comment": 0
+   },
+   "AJR6kcnnDig": {
+    "view": 88,
+    "like": 6,
+    "comment": 0
+   },
+   "3bhntOcKHPk": {
+    "view": 1390,
+    "like": 35,
+    "comment": 0
+   },
+   "gIjJ0YKYQ8M": {
+    "view": 4,
+    "like": 0,
+    "comment": 0
+   }
+  },
+  "youtube_totales": {
+   "view": 5575,
+   "like": 218,
+   "comment": 4
+  },
+  "suscriptores": 15,
+  "delta_vs_anterior": {
+   "view": 10,
+   "like": 0,
+   "comment": 0,
+   "suscriptores": 0
+  },
+  "tiktok": null,
+  "nota": "Registro horario 08:00. YT Data API uploads + IDs conocidos. No públicos (excluidos): {'PBDMJxOkCRk': 'private', 'bYGd7QuenSk': 'private'}. TikTok null: corrida sin navegador (no se abrió TikTok Studio). Delta vs fila 2026-10-26T06:53-06:00."
+ },
+ {
+  "timestamp_cdmx": "2026-10-26T08:07-06:00",
+  "youtube": {
+   "gIjJ0YKYQ8M": {
+    "view": 4,
+    "like": 0,
+    "comment": 0
+   },
+   "AJR6kcnnDig": {
+    "view": 96,
+    "like": 6,
+    "comment": 0
+   },
+   "Qe2Y9xDn9QQ": {
+    "view": 846,
+    "like": 30,
+    "comment": 0
+   },
+   "3bhntOcKHPk": {
+    "view": 1391,
+    "like": 36,
+    "comment": 0
+   },
+   "O7TdKvuBjyg": {
+    "view": 11,
+    "like": 1,
+    "comment": 0
+   },
+   "r1AhsPOAS_o": {
+    "view": 1365,
+    "like": 72,
+    "comment": 4
+   },
+   "ZrUtKs7Ty7U": {
+    "view": 1284,
+    "like": 47,
+    "comment": 0
+   },
+   "5D96DmjvioU": {
+    "view": 602,
+    "like": 27,
+    "comment": 0
+   }
+  },
+  "youtube_totales": {
+   "view": 5599,
+   "like": 219,
+   "comment": 4
+  },
+  "suscriptores": 15,
+  "delta_vs_anterior": {
+   "view": 24,
+   "like": 1,
+   "comment": 0,
+   "suscriptores": 0
+  },
+  "tiktok": {
+   "fuente": "TikTok Studio",
+   "videos": {
+    "tardigrado": {
+     "view": 0,
+     "like": 0,
+     "comment": 0
+    },
+    "ave_jurasica": {
+     "view": 0,
+     "like": 0,
+     "comment": 0
+    },
+    "sueno_luz_electrica": {
+     "view": 2,
+     "like": 0,
+     "comment": 0
+    },
+    "reina_topo": {
+     "view": 719,
+     "like": 74,
+     "comment": 0
+    },
+    "osedax_huesos": {
+     "view": 496,
+     "like": 25,
+     "comment": 0
+    },
+    "abejas_bullying": {
+     "view": 500,
+     "like": 23,
+     "comment": 0
+    },
+    "aves_mujeres": {
+     "view": 501,
+     "like": 38,
+     "comment": 0
+    },
+    "serpientes": {
+     "view": 155,
+     "like": 3,
+     "comment": 0
+    },
+    "ideonella": {
+     "view": 562,
+     "like": 34,
+     "comment": 0
+    },
+    "el_nino_hashtags_IA": {
+     "view": 522,
+     "like": 13,
+     "comment": 0
+    }
+   },
+   "totales": {
+    "view": 3457,
+    "like": 210,
+    "comment": 0
+   },
+   "seguidores": 1,
+   "likes_perfil": 209
+  },
+  "nota": "Balance 6h 08:00. YT Data API uploads (solo públicos; bYGd/PBDM programados privados). TT leído en TikTok Studio ~08:07 (tardígrado 0 vistas; ave jurásica programado 20:00)."
+ },
+ {
+  "timestamp_cdmx": "2026-10-26T08:54-06:00",
+  "youtube": {
+   "gIjJ0YKYQ8M": {
+    "view": 4,
+    "like": 0,
+    "comment": 0
+   },
+   "AJR6kcnnDig": {
+    "view": 88,
+    "like": 6,
+    "comment": 0
+   },
+   "Qe2Y9xDn9QQ": {
+    "view": 847,
+    "like": 30,
+    "comment": 0
+   },
+   "3bhntOcKHPk": {
+    "view": 1390,
+    "like": 35,
+    "comment": 0
+   },
+   "O7TdKvuBjyg": {
+    "view": 11,
+    "like": 1,
+    "comment": 0
+   },
+   "r1AhsPOAS_o": {
+    "view": 1365,
+    "like": 72,
+    "comment": 4
+   },
+   "ZrUtKs7Ty7U": {
+    "view": 1287,
+    "like": 47,
+    "comment": 0
+   },
+   "5D96DmjvioU": {
+    "view": 604,
+    "like": 27,
+    "comment": 0
+   }
+  },
+  "youtube_totales": {
+   "view": 5596,
+   "like": 218,
+   "comment": 4
+  },
+  "suscriptores": 15,
+  "delta_vs_anterior": {
+   "view": -3,
+   "like": -1,
+   "comment": 0,
+   "suscriptores": 0
+  },
+  "tiktok": null,
+  "nota": "Registro horario 09:00 (corrida ~08:54). YT Data API uploads + IDs conocidos. No públicos (excluidos): {'bYGd7QuenSk': 'private', 'PBDMJxOkCRk': 'private'}. TikTok null: corrida sin navegador (no se abrió TikTok Studio). Delta vs fila 2026-10-26T08:07-06:00."
+ },
+ {
+  "timestamp_cdmx": "2026-10-26T09:51-06:00",
+  "youtube": {
+   "gIjJ0YKYQ8M": {
+    "view": 56,
+    "like": 6,
+    "comment": 0
+   },
+   "AJR6kcnnDig": {
+    "view": 103,
+    "like": 6,
+    "comment": 0
+   },
+   "Qe2Y9xDn9QQ": {
+    "view": 859,
+    "like": 30,
+    "comment": 0
+   },
+   "3bhntOcKHPk": {
+    "view": 1393,
+    "like": 36,
+    "comment": 0
+   },
+   "O7TdKvuBjyg": {
+    "view": 11,
+    "like": 1,
+    "comment": 0
+   },
+   "r1AhsPOAS_o": {
+    "view": 1368,
+    "like": 72,
+    "comment": 4
+   },
+   "ZrUtKs7Ty7U": {
+    "view": 1289,
+    "like": 47,
+    "comment": 0
+   },
+   "5D96DmjvioU": {
+    "view": 606,
+    "like": 27,
+    "comment": 0
+   }
+  },
+  "youtube_totales": {
+   "view": 5685,
+   "like": 225,
+   "comment": 4
+  },
+  "suscriptores": 17,
+  "delta_vs_anterior": {
+   "view": 89,
+   "like": 7,
+   "comment": 0,
+   "suscriptores": 2
+  },
+  "tiktok": null,
+  "nota": "Registro horario 10:00 (corrida ~09:51). YT Data API uploads + IDs conocidos. No públicos (excluidos): {'bYGd7QuenSk': 'private', 'PBDMJxOkCRk': 'private'}. TikTok null: corrida sin navegador (no se abrió TikTok Studio). Delta vs fila 2026-10-26T08:54-06:00."
+ },
+ {
+  "timestamp_cdmx": "2026-10-26T10:58-06:00",
+  "youtube": {
+   "gIjJ0YKYQ8M": {
+    "view": 274,
+    "like": 24,
+    "comment": 0
+   },
+   "AJR6kcnnDig": {
+    "view": 102,
+    "like": 6,
+    "comment": 0
+   },
+   "Qe2Y9xDn9QQ": {
+    "view": 859,
+    "like": 30,
+    "comment": 0
+   },
+   "3bhntOcKHPk": {
+    "view": 1393,
+    "like": 36,
+    "comment": 0
+   },
+   "O7TdKvuBjyg": {
+    "view": 11,
+    "like": 1,
+    "comment": 0
+   },
+   "r1AhsPOAS_o": {
+    "view": 1368,
+    "like": 72,
+    "comment": 4
+   },
+   "ZrUtKs7Ty7U": {
+    "view": 1289,
+    "like": 48,
+    "comment": 5
+   },
+   "5D96DmjvioU": {
+    "view": 604,
+    "like": 27,
+    "comment": 0
+   }
+  },
+  "youtube_totales": {
+   "view": 5900,
+   "like": 244,
+   "comment": 9
+  },
+  "suscriptores": 18,
+  "delta_vs_anterior": {
+   "view": 215,
+   "like": 19,
+   "comment": 5,
+   "suscriptores": 1
+  },
+  "tiktok": null,
+  "nota": "Registro horario 11:00 (corrida ~10:58). YT Data API uploads + IDs conocidos. No públicos (excluidos): {'bYGd7QuenSk': 'private', 'PBDMJxOkCRk': 'private'}. TikTok null: corrida sin navegador (no se abrió TikTok Studio). Delta vs fila 2026-10-26T09:51-06:00."
+ },
+ {
+  "timestamp_cdmx": "2026-10-26T11:57-06:00",
+  "youtube": {
+   "gIjJ0YKYQ8M": {
+    "view": 524,
+    "like": 40,
+    "comment": 0
+   },
+   "AJR6kcnnDig": {
+    "view": 108,
+    "like": 8,
+    "comment": 0
+   },
+   "Qe2Y9xDn9QQ": {
+    "view": 870,
+    "like": 30,
+    "comment": 0
+   },
+   "3bhntOcKHPk": {
+    "view": 1393,
+    "like": 36,
+    "comment": 0
+   },
+   "O7TdKvuBjyg": {
+    "view": 11,
+    "like": 1,
+    "comment": 0
+   },
+   "r1AhsPOAS_o": {
+    "view": 1368,
+    "like": 72,
+    "comment": 4
+   },
+   "ZrUtKs7Ty7U": {
+    "view": 1290,
+    "like": 48,
+    "comment": 5
+   },
+   "5D96DmjvioU": {
+    "view": 607,
+    "like": 27,
+    "comment": 0
+   }
+  },
+  "youtube_totales": {
+   "view": 6171,
+   "like": 262,
+   "comment": 9
+  },
+  "suscriptores": 22,
+  "delta_vs_anterior": {
+   "view": 271,
+   "like": 18,
+   "comment": 0,
+   "suscriptores": 4
+  },
+  "tiktok": null,
+  "nota": "Registro horario 12:00 (corrida ~11:57). YT Data API uploads + IDs conocidos. No públicos (excluidos): {'bYGd7QuenSk': 'private', 'PBDMJxOkCRk': 'private'}. TikTok null: corrida sin navegador (no se abrió TikTok Studio). Delta vs fila 2026-10-26T10:58-06:00."
+ },
+ {
+  "timestamp_cdmx": "2026-10-26T12:56-06:00",
+  "youtube": {
+   "gIjJ0YKYQ8M": {
+    "view": 728,
+    "like": 57,
+    "comment": 1
+   },
+   "AJR6kcnnDig": {
+    "view": 108,
+    "like": 9,
+    "comment": 0
+   },
+   "Qe2Y9xDn9QQ": {
+    "view": 869,
+    "like": 30,
+    "comment": 0
+   },
+   "3bhntOcKHPk": {
+    "view": 1393,
+    "like": 36,
+    "comment": 0
+   },
+   "O7TdKvuBjyg": {
+    "view": 11,
+    "like": 1,
+    "comment": 0
+   },
+   "r1AhsPOAS_o": {
+    "view": 1376,
+    "like": 72,
+    "comment": 4
+   },
+   "ZrUtKs7Ty7U": {
+    "view": 1290,
+    "like": 48,
+    "comment": 5
+   },
+   "5D96DmjvioU": {
+    "view": 607,
+    "like": 27,
+    "comment": 0
+   }
+  },
+  "youtube_totales": {
+   "view": 6382,
+   "like": 280,
+   "comment": 10
+  },
+  "suscriptores": 24,
+  "delta_vs_anterior": {
+   "view": 211,
+   "like": 18,
+   "comment": 1,
+   "suscriptores": 2
+  },
+  "tiktok": null,
+  "nota": "Registro horario 13:00 (corrida 12:56). YT Data API uploads + IDs conocidos. No públicos (excluidos): {'bYGd7QuenSk': 'private', 'PBDMJxOkCRk': 'private'}. TikTok null: corrida sin navegador (no se abrió TikTok Studio). Delta vs fila 2026-10-26T11:57-06:00."
+ },
+ {
+  "timestamp_cdmx": "2026-10-26T13:53-06:00",
+  "youtube": {
+   "bYGd7QuenSk": {
+    "view": 20,
+    "like": 1,
+    "comment": 0
+   },
+   "gIjJ0YKYQ8M": {
+    "view": 913,
+    "like": 60,
+    "comment": 1
+   },
+   "AJR6kcnnDig": {
+    "view": 121,
+    "like": 10,
+    "comment": 0
+   },
+   "Qe2Y9xDn9QQ": {
+    "view": 890,
+    "like": 31,
+    "comment": 0
+   },
+   "3bhntOcKHPk": {
+    "view": 1402,
+    "like": 36,
+    "comment": 0
+   },
+   "O7TdKvuBjyg": {
+    "view": 11,
+    "like": 1,
+    "comment": 0
+   },
+   "r1AhsPOAS_o": {
+    "view": 1376,
+    "like": 72,
+    "comment": 4
+   },
+   "ZrUtKs7Ty7U": {
+    "view": 1290,
+    "like": 48,
+    "comment": 5
+   },
+   "5D96DmjvioU": {
+    "view": 608,
+    "like": 27,
+    "comment": 0
+   }
+  },
+  "youtube_totales": {
+   "view": 6631,
+   "like": 286,
+   "comment": 10
+  },
+  "suscriptores": 24,
+  "delta_vs_anterior": {
+   "view": 249,
+   "like": 6,
+   "comment": 0,
+   "suscriptores": 0
+  },
+  "tiktok": null,
+  "nota": "Registro horario 14:00 (corrida 13:53). YT Data API uploads + IDs conocidos. No públicos (excluidos): {'PBDMJxOkCRk': 'private'}. TikTok null: corrida sin navegador (no se abrió TikTok Studio). Delta vs fila 2026-10-26T12:56-06:00."
+ },
+ {
+  "timestamp_cdmx": "2026-10-26T14:05-06:00",
+  "youtube": {
+   "bYGd7QuenSk": {
+    "view": 32,
+    "like": 2,
+    "comment": 0
+   },
+   "gIjJ0YKYQ8M": {
+    "view": 921,
+    "like": 60,
+    "comment": 1
+   },
+   "AJR6kcnnDig": {
+    "view": 121,
+    "like": 10,
+    "comment": 0
+   },
+   "Qe2Y9xDn9QQ": {
+    "view": 890,
+    "like": 31,
+    "comment": 0
+   },
+   "3bhntOcKHPk": {
+    "view": 1399,
+    "like": 36,
+    "comment": 0
+   },
+   "O7TdKvuBjyg": {
+    "view": 11,
+    "like": 1,
+    "comment": 0
+   },
+   "r1AhsPOAS_o": {
+    "view": 1376,
+    "like": 72,
+    "comment": 4
+   },
+   "ZrUtKs7Ty7U": {
+    "view": 1290,
+    "like": 48,
+    "comment": 5
+   },
+   "5D96DmjvioU": {
+    "view": 608,
+    "like": 27,
+    "comment": 0
+   }
+  },
+  "youtube_totales": {
+   "view": 6648,
+   "like": 287,
+   "comment": 10
+  },
+  "suscriptores": 24,
+  "delta_vs_anterior": {
+   "view": 17,
+   "like": 1,
+   "comment": 0,
+   "suscriptores": 0
+  },
+  "tiktok": {
+   "fuente": "TikTok Studio",
+   "videos": {
+    "tardigrado": {
+     "view": 0,
+     "like": 0,
+     "comment": 0
+    },
+    "ave_jurasica": {
+     "view": 0,
+     "like": 0,
+     "comment": 0
+    },
+    "sueno_luz_electrica": {
+     "view": 2,
+     "like": 0,
+     "comment": 0
+    },
+    "reina_topo": {
+     "view": 722,
+     "like": 75,
+     "comment": 0
+    },
+    "osedax_huesos": {
+     "view": 496,
+     "like": 25,
+     "comment": 0
+    },
+    "abejas_bullying": {
+     "view": 500,
+     "like": 23,
+     "comment": 0
+    },
+    "aves_mujeres": {
+     "view": 501,
+     "like": 38,
+     "comment": 0
+    },
+    "serpientes": {
+     "view": 156,
+     "like": 3,
+     "comment": 0
+    },
+    "ideonella": {
+     "view": 562,
+     "like": 34,
+     "comment": 0
+    },
+    "el_nino_hashtags_IA": {
+     "view": 522,
+     "like": 13,
+     "comment": 0
+    }
+   },
+   "totales": {
+    "view": 3461,
+    "like": 211,
+    "comment": 0
+   },
+   "seguidores": 1,
+   "likes_perfil": 210
+  },
+  "nota": "Balance 6h 14:00 (corrida ~14:05). YT Data API uploads (solo públicos; PBDMJxOkCRk hongo privado/programado 16:06 excluido). TT leído en TikTok Studio ~14:05: tardígrado sigue en 0 (posible publicación fallida), ave jurásica programado 20:00."
+ },
+ {
+  "timestamp_cdmx": "2026-10-26T14:52-06:00",
+  "youtube": {
+   "i9QBFPljl6M": {
+    "view": 21,
+    "like": 3,
+    "comment": 0
+   },
+   "bYGd7QuenSk": {
+    "view": 64,
+    "like": 2,
+    "comment": 0
+   },
+   "gIjJ0YKYQ8M": {
+    "view": 1116,
+    "like": 60,
+    "comment": 1
+   },
+   "AJR6kcnnDig": {
+    "view": 121,
+    "like": 10,
+    "comment": 0
+   },
+   "Qe2Y9xDn9QQ": {
+    "view": 890,
+    "like": 31,
+    "comment": 0
+   },
+   "3bhntOcKHPk": {
+    "view": 1399,
+    "like": 36,
+    "comment": 0
+   },
+   "O7TdKvuBjyg": {
+    "view": 11,
+    "like": 1,
+    "comment": 0
+   },
+   "r1AhsPOAS_o": {
+    "view": 1376,
+    "like": 72,
+    "comment": 4
+   },
+   "ZrUtKs7Ty7U": {
+    "view": 1298,
+    "like": 48,
+    "comment": 5
+   },
+   "5D96DmjvioU": {
+    "view": 608,
+    "like": 27,
+    "comment": 0
+   }
+  },
+  "youtube_totales": {
+   "view": 6904,
+   "like": 290,
+   "comment": 10
+  },
+  "suscriptores": 25,
+  "delta_vs_anterior": {
+   "view": 256,
+   "like": 3,
+   "comment": 0,
+   "suscriptores": 1
+  },
+  "tiktok": null,
+  "nota": "Reporte horario 14:52. YT Data API uploads (solo públicos; P1 papel picado i9QBFPljl6M ya público, entra nuevo). TikTok null: no se leyó TikTok Studio en esta corrida (sin navegador en el subagente)."
+ },
+ {
+  "timestamp_cdmx": "2026-10-26T15:57-06:00",
+  "youtube": {
+   "i9QBFPljl6M": {
+    "view": 111,
+    "like": 7,
+    "comment": 0
+   },
+   "bYGd7QuenSk": {
+    "view": 64,
+    "like": 2,
+    "comment": 0
+   },
+   "gIjJ0YKYQ8M": {
+    "view": 1201,
+    "like": 60,
+    "comment": 1
+   },
+   "AJR6kcnnDig": {
+    "view": 121,
+    "like": 10,
+    "comment": 0
+   },
+   "Qe2Y9xDn9QQ": {
+    "view": 890,
+    "like": 31,
+    "comment": 0
+   },
+   "3bhntOcKHPk": {
+    "view": 1403,
+    "like": 36,
+    "comment": 0
+   },
+   "O7TdKvuBjyg": {
+    "view": 11,
+    "like": 1,
+    "comment": 0
+   },
+   "r1AhsPOAS_o": {
+    "view": 1376,
+    "like": 72,
+    "comment": 4
+   },
+   "ZrUtKs7Ty7U": {
+    "view": 1298,
+    "like": 48,
+    "comment": 5
+   },
+   "5D96DmjvioU": {
+    "view": 608,
+    "like": 27,
+    "comment": 0
+   }
+  },
+  "youtube_totales": {
+   "view": 7083,
+   "like": 294,
+   "comment": 10
+  },
+  "suscriptores": 25,
+  "delta_vs_anterior": {
+   "view": 179,
+   "like": 4,
+   "comment": 0,
+   "suscriptores": 0
+  },
+  "tiktok": null,
+  "nota": "Reporte horario 15:57. YT Data API uploads (solo públicos). TikTok null: sin navegador en esta corrida."
+ },
+ {
+  "timestamp_cdmx": "2026-10-26T16:55-06:00",
+  "youtube": {
+   "PBDMJxOkCRk": {
+    "view": 176,
+    "like": 2,
+    "comment": 2
+   },
+   "i9QBFPljl6M": {
+    "view": 474,
+    "like": 13,
+    "comment": 0
+   },
+   "bYGd7QuenSk": {
+    "view": 375,
+    "like": 5,
+    "comment": 0
+   },
+   "gIjJ0YKYQ8M": {
+    "view": 1207,
+    "like": 60,
+    "comment": 1
+   },
+   "AJR6kcnnDig": {
+    "view": 134,
+    "like": 11,
+    "comment": 0
+   },
+   "Qe2Y9xDn9QQ": {
+    "view": 916,
+    "like": 31,
+    "comment": 0
+   },
+   "3bhntOcKHPk": {
+    "view": 1403,
+    "like": 36,
+    "comment": 0
+   },
+   "O7TdKvuBjyg": {
+    "view": 12,
+    "like": 1,
+    "comment": 0
+   },
+   "r1AhsPOAS_o": {
+    "view": 1381,
+    "like": 72,
+    "comment": 4
+   },
+   "ZrUtKs7Ty7U": {
+    "view": 1298,
+    "like": 48,
+    "comment": 5
+   },
+   "5D96DmjvioU": {
+    "view": 608,
+    "like": 27,
+    "comment": 0
+   }
+  },
+  "youtube_totales": {
+   "view": 7984,
+   "like": 306,
+   "comment": 12
+  },
+  "suscriptores": 25,
+  "delta_vs_anterior": {
+   "view": 901,
+   "like": 12,
+   "comment": 2,
+   "suscriptores": 0
+  },
+  "tiktok": null,
+  "nota": "Reporte horario 16:55. YT Data API uploads (solo públicos). TikTok null: sin navegador en esta corrida."
+ },
+ {
+  "timestamp_cdmx": "2026-10-26T17:52-06:00",
+  "youtube": {
+   "ivVo2H9NaEU": {
+    "view": 82,
+    "like": 1,
+    "comment": 0
+   },
+   "PBDMJxOkCRk": {
+    "view": 235,
+    "like": 2,
+    "comment": 2
+   },
+   "i9QBFPljl6M": {
+    "view": 755,
+    "like": 22,
+    "comment": 0
+   },
+   "bYGd7QuenSk": {
+    "view": 860,
+    "like": 23,
+    "comment": 0
+   },
+   "gIjJ0YKYQ8M": {
+    "view": 1207,
+    "like": 60,
+    "comment": 1
+   },
+   "AJR6kcnnDig": {
+    "view": 134,
+    "like": 11,
+    "comment": 0
+   },
+   "Qe2Y9xDn9QQ": {
+    "view": 923,
+    "like": 31,
+    "comment": 2
+   },
+   "3bhntOcKHPk": {
+    "view": 1403,
+    "like": 36,
+    "comment": 0
+   },
+   "O7TdKvuBjyg": {
+    "view": 12,
+    "like": 1,
+    "comment": 0
+   },
+   "r1AhsPOAS_o": {
+    "view": 1381,
+    "like": 72,
+    "comment": 4
+   },
+   "ZrUtKs7Ty7U": {
+    "view": 1302,
+    "like": 48,
+    "comment": 5
+   },
+   "5D96DmjvioU": {
+    "view": 612,
+    "like": 27,
+    "comment": 0
+   }
+  },
+  "youtube_totales": {
+   "view": 8906,
+   "like": 334,
+   "comment": 14
+  },
+  "suscriptores": 25,
+  "delta_vs_anterior": {
+   "view": 922,
+   "like": 28,
+   "comment": 2,
+   "suscriptores": 0
+  },
+  "tiktok": null,
+  "nota": "Reporte horario 17:52. YT Data API uploads (solo públicos). TikTok null: sin navegador en esta corrida."
+ },
+ {
+  "timestamp_cdmx": "2026-10-26T18:53-06:00",
+  "youtube": {
+   "ivVo2H9NaEU": {
+    "view": 112,
+    "like": 2,
+    "comment": 0
+   },
+   "PBDMJxOkCRk": {
+    "view": 581,
+    "like": 15,
+    "comment": 2
+   },
+   "i9QBFPljl6M": {
+    "view": 755,
+    "like": 20,
+    "comment": 0
+   },
+   "bYGd7QuenSk": {
+    "view": 878,
+    "like": 24,
+    "comment": 0
+   },
+   "gIjJ0YKYQ8M": {
+    "view": 1207,
+    "like": 60,
+    "comment": 1
+   },
+   "AJR6kcnnDig": {
+    "view": 134,
+    "like": 11,
+    "comment": 0
+   },
+   "Qe2Y9xDn9QQ": {
+    "view": 930,
+    "like": 32,
+    "comment": 2
+   },
+   "3bhntOcKHPk": {
+    "view": 1403,
+    "like": 36,
+    "comment": 0
+   },
+   "O7TdKvuBjyg": {
+    "view": 12,
+    "like": 1,
+    "comment": 0
+   },
+   "r1AhsPOAS_o": {
+    "view": 1381,
+    "like": 72,
+    "comment": 4
+   },
+   "ZrUtKs7Ty7U": {
+    "view": 1302,
+    "like": 48,
+    "comment": 5
+   },
+   "5D96DmjvioU": {
+    "view": 612,
+    "like": 27,
+    "comment": 0
+   }
+  },
+  "youtube_totales": {
+   "view": 9307,
+   "like": 348,
+   "comment": 14
+  },
+  "suscriptores": 27,
+  "delta_vs_anterior": {
+   "view": 401,
+   "like": 14,
+   "comment": 0,
+   "suscriptores": 2
+  },
+  "tiktok": null,
+  "nota": "Reporte horario 18:53. YT Data API uploads (solo públicos). TikTok null: sin navegador en esta corrida."
+ },
+ {
+  "timestamp_cdmx": "2026-10-26T19:55-06:00",
+  "youtube": {
+   "GYxjXDh1ahc": {
+    "view": 76,
+    "like": 1,
+    "comment": 0
+   },
+   "ivVo2H9NaEU": {
+    "view": 143,
+    "like": 6,
+    "comment": 0
+   },
+   "PBDMJxOkCRk": {
+    "view": 882,
+    "like": 28,
+    "comment": 4
+   },
+   "i9QBFPljl6M": {
+    "view": 896,
+    "like": 20,
+    "comment": 0
+   },
+   "bYGd7QuenSk": {
+    "view": 985,
+    "like": 24,
+    "comment": 0
+   },
+   "gIjJ0YKYQ8M": {
+    "view": 1210,
+    "like": 60,
+    "comment": 1
+   },
+   "AJR6kcnnDig": {
+    "view": 138,
+    "like": 11,
+    "comment": 0
+   },
+   "Qe2Y9xDn9QQ": {
+    "view": 930,
+    "like": 32,
+    "comment": 2
+   },
+   "3bhntOcKHPk": {
+    "view": 1405,
+    "like": 36,
+    "comment": 0
+   },
+   "O7TdKvuBjyg": {
+    "view": 12,
+    "like": 1,
+    "comment": 0
+   },
+   "r1AhsPOAS_o": {
+    "view": 1385,
+    "like": 72,
+    "comment": 4
+   },
+   "ZrUtKs7Ty7U": {
+    "view": 1302,
+    "like": 48,
+    "comment": 5
+   },
+   "5D96DmjvioU": {
+    "view": 612,
+    "like": 27,
+    "comment": 0
+   }
+  },
+  "youtube_totales": {
+   "view": 9976,
+   "like": 366,
+   "comment": 16
+  },
+  "suscriptores": 31,
+  "delta_vs_anterior": {
+   "view": 669,
+   "like": 18,
+   "comment": 2,
+   "suscriptores": 4
+  },
+  "tiktok": null,
+  "nota": "Reporte horario 19:55. YT Data API uploads (solo públicos). TikTok null: sin navegador en esta corrida."
+ },
+ {
+  "timestamp_cdmx": "2026-10-26T20:06-06:00",
+  "youtube": {
+   "GYxjXDh1ahc": {
+    "view": 91,
+    "like": 1,
+    "comment": 0
+   },
+   "ivVo2H9NaEU": {
+    "view": 154,
+    "like": 7,
+    "comment": 0
+   },
+   "PBDMJxOkCRk": {
+    "view": 893,
+    "like": 28,
+    "comment": 4
+   },
+   "i9QBFPljl6M": {
+    "view": 899,
+    "like": 20,
+    "comment": 0
+   },
+   "bYGd7QuenSk": {
+    "view": 993,
+    "like": 24,
+    "comment": 0
+   },
+   "gIjJ0YKYQ8M": {
+    "view": 1210,
+    "like": 60,
+    "comment": 1
+   },
+   "AJR6kcnnDig": {
+    "view": 137,
+    "like": 11,
+    "comment": 0
+   },
+   "Qe2Y9xDn9QQ": {
+    "view": 932,
+    "like": 32,
+    "comment": 2
+   },
+   "3bhntOcKHPk": {
+    "view": 1405,
+    "like": 36,
+    "comment": 0
+   },
+   "O7TdKvuBjyg": {
+    "view": 12,
+    "like": 1,
+    "comment": 0
+   },
+   "r1AhsPOAS_o": {
+    "view": 1383,
+    "like": 72,
+    "comment": 4
+   },
+   "ZrUtKs7Ty7U": {
+    "view": 1302,
+    "like": 48,
+    "comment": 5
+   },
+   "5D96DmjvioU": {
+    "view": 612,
+    "like": 27,
+    "comment": 0
+   }
+  },
+  "youtube_totales": {
+   "view": 10023,
+   "like": 367,
+   "comment": 16
+  },
+  "suscriptores": 31,
+  "delta_vs_anterior": {
+   "view": 47,
+   "like": 1,
+   "comment": 0,
+   "suscriptores": 0
+  },
+  "tiktok": {
+   "fuente": "TikTok Studio",
+   "videos": {
+    "ave_jurasica": {
+     "view": 0,
+     "like": 0,
+     "comment": 0
+    },
+    "catrina": {
+     "view": 12,
+     "like": 0,
+     "comment": 0
+    },
+    "papel_picado_p1": {
+     "view": 186,
+     "like": 14,
+     "comment": 0
+    },
+    "tardigrado": {
+     "view": 2,
+     "like": 0,
+     "comment": 0
+    },
+    "sueno_luz_electrica": {
+     "view": 2,
+     "like": 0,
+     "comment": 0
+    },
+    "reina_topo": {
+     "view": 722,
+     "like": 75,
+     "comment": 0
+    },
+    "osedax_huesos": {
+     "view": 496,
+     "like": 25,
+     "comment": 0
+    },
+    "abejas_bullying": {
+     "view": 500,
+     "like": 23,
+     "comment": 0
+    },
+    "aves_mujeres": {
+     "view": 501,
+     "like": 38,
+     "comment": 0
+    },
+    "serpientes": {
+     "view": 157,
+     "like": 3,
+     "comment": 0
+    }
+   },
+   "totales": {
+    "view": 2578,
+    "like": 178,
+    "comment": 0
+   },
+   "seguidores": 1,
+   "likes_perfil": 224
+  },
+  "nota": "Balance 6h 20:00 (corrida ~20:06). YT Data API uploads (solo públicos; ave remake YKldyldCeiQ privado/programado 21:00 excluido). TT leído en TikTok Studio 20:06: solo 10 posts; ideonella (562/34) y el_nino_hashtags_IA (522/13) ya NO aparecen en Studio (¿borrados/ocultos?). ave_jurasica figura creada 22:00 (programado). Perfil: 1 seguidor, 224 likes."
+ },
+ {
+  "timestamp_cdmx": "2026-10-26T20:53-06:00",
+  "youtube": {
+   "GYxjXDh1ahc": {
+    "view": 94,
+    "like": 1,
+    "comment": 0
+   },
+   "ivVo2H9NaEU": {
+    "view": 173,
+    "like": 9,
+    "comment": 0
+   },
+   "PBDMJxOkCRk": {
+    "view": 954,
+    "like": 28,
+    "comment": 4
+   },
+   "i9QBFPljl6M": {
+    "view": 899,
+    "like": 20,
+    "comment": 0
+   },
+   "bYGd7QuenSk": {
+    "view": 998,
+    "like": 24,
+    "comment": 0
+   },
+   "gIjJ0YKYQ8M": {
+    "view": 1208,
+    "like": 60,
+    "comment": 1
+   },
+   "AJR6kcnnDig": {
+    "view": 145,
+    "like": 11,
+    "comment": 0
+   },
+   "Qe2Y9xDn9QQ": {
+    "view": 930,
+    "like": 32,
+    "comment": 2
+   },
+   "3bhntOcKHPk": {
+    "view": 1403,
+    "like": 36,
+    "comment": 0
+   },
+   "O7TdKvuBjyg": {
+    "view": 12,
+    "like": 1,
+    "comment": 0
+   },
+   "r1AhsPOAS_o": {
+    "view": 1383,
+    "like": 72,
+    "comment": 4
+   },
+   "ZrUtKs7Ty7U": {
+    "view": 1302,
+    "like": 48,
+    "comment": 5
+   },
+   "5D96DmjvioU": {
+    "view": 612,
+    "like": 27,
+    "comment": 0
+   }
+  },
+  "youtube_totales": {
+   "view": 10113,
+   "like": 369,
+   "comment": 16
+  },
+  "suscriptores": 31,
+  "delta_vs_anterior": {
+   "view": 90,
+   "like": 2,
+   "comment": 0,
+   "suscriptores": 0
+  },
+  "tiktok": null,
+  "nota": "Reporte horario 21:00 (corrida ~20:53). YT Data API uploads, solo públicos (ave remake YKldyldCeiQ programado 21:00 aún no público). TikTok null: no se leyó Studio en esta corrida (sin navegador); última lectura TT 20:06 = 2578 vistas / 178 likes."
+ },
+ {
+  "timestamp_cdmx": "2026-10-26T21:50-06:00",
+  "youtube": {
+   "YKldyldCeiQ": {
+    "view": 57,
+    "like": 0,
+    "comment": 0
+   },
+   "GYxjXDh1ahc": {
+    "view": 94,
+    "like": 1,
+    "comment": 0
+   },
+   "ivVo2H9NaEU": {
+    "view": 216,
+    "like": 11,
+    "comment": 0
+   },
+   "PBDMJxOkCRk": {
+    "view": 1220,
+    "like": 28,
+    "comment": 4
+   },
+   "i9QBFPljl6M": {
+    "view": 929,
+    "like": 21,
+    "comment": 0
+   },
+   "bYGd7QuenSk": {
+    "view": 998,
+    "like": 24,
+    "comment": 0
+   },
+   "gIjJ0YKYQ8M": {
+    "view": 1210,
+    "like": 60,
+    "comment": 1
+   },
+   "AJR6kcnnDig": {
+    "view": 154,
+    "like": 11,
+    "comment": 0
+   },
+   "Qe2Y9xDn9QQ": {
+    "view": 955,
+    "like": 32,
+    "comment": 2
+   },
+   "3bhntOcKHPk": {
+    "view": 1412,
+    "like": 36,
+    "comment": 0
+   },
+   "O7TdKvuBjyg": {
+    "view": 12,
+    "like": 1,
+    "comment": 0
+   },
+   "r1AhsPOAS_o": {
+    "view": 1385,
+    "like": 72,
+    "comment": 4
+   },
+   "ZrUtKs7Ty7U": {
+    "view": 1307,
+    "like": 48,
+    "comment": 5
+   },
+   "5D96DmjvioU": {
+    "view": 612,
+    "like": 27,
+    "comment": 0
+   }
+  },
+  "youtube_totales": {
+   "view": 10561,
+   "like": 372,
+   "comment": 16
+  },
+  "suscriptores": 32,
+  "delta_vs_anterior": {
+   "view": 448,
+   "like": 3,
+   "comment": 0,
+   "suscriptores": 1
+  },
+  "tiktok": null,
+  "nota": "Reporte horario 22:00 (corrida ~21:50). YT Data API uploads, solo públicos. TikTok null: sin navegador en esta corrida. Nuevo público: YKldyldCeiQ."
+ },
+ {
+  "timestamp_cdmx": "2026-10-26T22:50-06:00",
+  "youtube": {
+   "YKldyldCeiQ": {
+    "view": 76,
+    "like": 0,
+    "comment": 0
+   },
+   "GYxjXDh1ahc": {
+    "view": 248,
+    "like": 3,
+    "comment": 0
+   },
+   "ivVo2H9NaEU": {
+    "view": 224,
+    "like": 11,
+    "comment": 0
+   },
+   "PBDMJxOkCRk": {
+    "view": 1231,
+    "like": 28,
+    "comment": 4
+   },
+   "i9QBFPljl6M": {
+    "view": 958,
+    "like": 21,
+    "comment": 0
+   },
+   "bYGd7QuenSk": {
+    "view": 1005,
+    "like": 24,
+    "comment": 0
+   },
+   "gIjJ0YKYQ8M": {
+    "view": 1212,
+    "like": 60,
+    "comment": 1
+   },
+   "AJR6kcnnDig": {
+    "view": 145,
+    "like": 11,
+    "comment": 0
+   },
+   "Qe2Y9xDn9QQ": {
+    "view": 956,
+    "like": 32,
+    "comment": 2
+   },
+   "3bhntOcKHPk": {
+    "view": 1414,
+    "like": 36,
+    "comment": 0
+   },
+   "O7TdKvuBjyg": {
+    "view": 13,
+    "like": 1,
+    "comment": 0
+   },
+   "r1AhsPOAS_o": {
+    "view": 1387,
+    "like": 72,
+    "comment": 4
+   },
+   "ZrUtKs7Ty7U": {
+    "view": 1307,
+    "like": 48,
+    "comment": 5
+   },
+   "5D96DmjvioU": {
+    "view": 617,
+    "like": 27,
+    "comment": 0
+   }
+  },
+  "youtube_totales": {
+   "view": 10793,
+   "like": 374,
+   "comment": 16
+  },
+  "suscriptores": 33,
+  "delta_vs_anterior": {
+   "view": 232,
+   "like": 2,
+   "comment": 0,
+   "suscriptores": 1
+  },
+  "tiktok": null,
+  "nota": "Reporte horario 23:00 (corrida ~22:50). YT Data API uploads, solo públicos. TikTok null: sin navegador en esta corrida."
+ },
+ {
+  "timestamp_cdmx": "2026-10-27T06:56-06:00",
+  "youtube": {
+   "YKldyldCeiQ": {
+    "view": 160,
+    "like": 4,
+    "comment": 0
+   },
+   "GYxjXDh1ahc": {
+    "view": 377,
+    "like": 5,
+    "comment": 0
+   },
+   "ivVo2H9NaEU": {
+    "view": 283,
+    "like": 11,
+    "comment": 0
+   },
+   "PBDMJxOkCRk": {
+    "view": 1250,
+    "like": 28,
+    "comment": 4
+   },
+   "i9QBFPljl6M": {
+    "view": 1032,
+    "like": 21,
+    "comment": 0
+   },
+   "bYGd7QuenSk": {
+    "view": 1008,
+    "like": 24,
+    "comment": 0
+   },
+   "gIjJ0YKYQ8M": {
+    "view": 1213,
+    "like": 60,
+    "comment": 1
+   },
+   "AJR6kcnnDig": {
+    "view": 173,
+    "like": 11,
+    "comment": 0
+   },
+   "Qe2Y9xDn9QQ": {
+    "view": 976,
+    "like": 33,
+    "comment": 2
+   },
+   "3bhntOcKHPk": {
+    "view": 1419,
+    "like": 36,
+    "comment": 0
+   },
+   "O7TdKvuBjyg": {
+    "view": 13,
+    "like": 1,
+    "comment": 0
+   },
+   "r1AhsPOAS_o": {
+    "view": 1389,
+    "like": 73,
+    "comment": 4
+   },
+   "ZrUtKs7Ty7U": {
+    "view": 1314,
+    "like": 48,
+    "comment": 5
+   },
+   "5D96DmjvioU": {
+    "view": 620,
+    "like": 27,
+    "comment": 0
+   }
+  },
+  "youtube_totales": {
+   "view": 11227,
+   "like": 382,
+   "comment": 16
+  },
+  "suscriptores": 33,
+  "delta_vs_anterior": {
+   "view": 434,
+   "like": 8,
+   "comment": 0,
+   "suscriptores": 0
+  },
+  "tiktok": null,
+  "nota": "Reporte horario 07:00 (corrida ~06:56). YT Data API uploads, solo públicos. TikTok null: sin navegador en esta corrida. Delta vs 22:50 del 26-oct (noche)."
+ },
+ {
+  "timestamp_cdmx": "2026-10-27T08:01-06:00",
+  "youtube": {
+   "3RdSX40OCac": {
+    "view": 32,
+    "like": 0,
+    "comment": 0
+   },
+   "YKldyldCeiQ": {
+    "view": 161,
+    "like": 4,
+    "comment": 0
+   },
+   "GYxjXDh1ahc": {
+    "view": 379,
+    "like": 5,
+    "comment": 0
+   },
+   "ivVo2H9NaEU": {
+    "view": 283,
+    "like": 11,
+    "comment": 0
+   },
+   "PBDMJxOkCRk": {
+    "view": 1250,
+    "like": 28,
+    "comment": 4
+   },
+   "i9QBFPljl6M": {
+    "view": 1032,
+    "like": 21,
+    "comment": 0
+   },
+   "bYGd7QuenSk": {
+    "view": 1008,
+    "like": 24,
+    "comment": 0
+   },
+   "gIjJ0YKYQ8M": {
+    "view": 1213,
+    "like": 60,
+    "comment": 1
+   },
+   "AJR6kcnnDig": {
+    "view": 180,
+    "like": 12,
+    "comment": 0
+   },
+   "Qe2Y9xDn9QQ": {
+    "view": 976,
+    "like": 33,
+    "comment": 2
+   },
+   "3bhntOcKHPk": {
+    "view": 1419,
+    "like": 37,
+    "comment": 0
+   },
+   "O7TdKvuBjyg": {
+    "view": 13,
+    "like": 1,
+    "comment": 0
+   },
+   "r1AhsPOAS_o": {
+    "view": 1389,
+    "like": 73,
+    "comment": 4
+   },
+   "ZrUtKs7Ty7U": {
+    "view": 1314,
+    "like": 48,
+    "comment": 5
+   },
+   "5D96DmjvioU": {
+    "view": 620,
+    "like": 27,
+    "comment": 0
+   }
+  },
+  "youtube_totales": {
+   "view": 11269,
+   "like": 384,
+   "comment": 16
+  },
+  "suscriptores": 33,
+  "delta_vs_anterior": {
+   "view": 42,
+   "like": 2,
+   "comment": 0,
+   "suscriptores": 0
+  },
+  "tiktok": null,
+  "nota": "Reporte horario 08:00. YT Data API uploads, solo públicos. TikTok null: sin navegador en esta corrida. Delta vs 2026-10-27T06:56-06:00."
+ }
 ]
