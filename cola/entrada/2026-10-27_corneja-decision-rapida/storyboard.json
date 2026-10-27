@@ -1,0 +1,300 @@
+{
+  "project_id": "2026-10-27_corneja-decision-rapida",
+  "serie": "Datos y ociosidades",
+  "title": "La corneja decide en 235 milisegundos",
+  "titulo": "La corneja decide antes del picotazo",
+  "titulo_yt": "La corneja decide en 235 milisegundos",
+  "caption_tt": "Dos cornejas resolvieron una tarea visual en 235 milisegundos. El estudio midió una decisión concreta, no la inteligencia en general. Fuentes en pantalla.",
+  "language": "es-MX",
+  "aspect_ratio": "9:16",
+  "target_duration_seconds": 86,
+  "estructura": "sabias_que",
+  "estilo_id": "microscopio_psicodelico",
+  "estilo_visual": "Microscopia psicodélica · cartel ilustrado de los años sesenta, formas orgánicas y colores complementarios",
+  "trend_source": {
+    "tipo": "noticia_cientifica",
+    "medio": "Science / Universität Tübingen",
+    "url": "https://uni-tuebingen.de/en/university/news-and-publications/press-releases/",
+    "estudio_doi": "10.1126/science.aed6459",
+    "fecha_publicacion": "2026-10-22",
+    "termino": "decisión visual ultrarrápida en cornejas negras",
+    "fecha_consulta": "2026-10-27"
+  },
+  "voice": {
+    "engine": "edge-tts",
+    "voice_id": "es-MX-JorgeNeural",
+    "rate": "+7%",
+    "pitch": "-2Hz",
+    "pad_seconds": 0.3,
+    "modo_pausas": "continuo"
+  },
+  "sources": [
+    {
+      "id": "SRC-001",
+      "cita_corta": "Schmidbauer & Nieder (2026). Ultrarapid decision-making in an avian brain. Science 394(6822), 445–449.",
+      "url": "https://doi.org/10.1126/science.aed6459",
+      "doi": "10.1126/science.aed6459",
+      "abstract_url": "https://pubmed.ncbi.nlm.nih.gov/42912155/",
+      "accessed": "2026-10-27",
+      "supports": [
+        "media de 235 ms en una tarea de discriminación de movimiento visual",
+        "señal neuronal predictiva desde unos 70 ms tras el estímulo",
+        "experimento con dos cornejas negras (Corvus corone)",
+        "comparación con estudios anteriores de humanos y monos"
+      ],
+      "ref_display": "Schmidbauer & Nieder, Science 394 (2026), DOI 10.1126/science.aed6459"
+    },
+    {
+      "id": "SRC-002",
+      "cita_corta": "Universität Tübingen (22 oct 2026). Crows make decisions twice as fast as humans and monkeys.",
+      "url": "https://uni-tuebingen.de/en/university/news-and-publications/press-releases/",
+      "accessed": "2026-10-27",
+      "supports": [
+        "contexto institucional del estudio",
+        "entrenamiento en pantalla táctil y respuesta mediante picotazo"
+      ],
+      "ref_display": "Universität Tübingen, comunicado 22 oct 2026"
+    },
+    {
+      "id": "SRC-003",
+      "cita_corta": "Krywko (23 oct 2026). Crows can evaluate visual info twice as fast as mammals. Ars Technica.",
+      "url": "https://arstechnica.com/science/2026/10/crows-can-evaluate-visual-info-twice-as-fast-as-mammals/",
+      "accessed": "2026-10-27",
+      "supports": [
+        "registro de 248 neuronas en el nidopallium caudolaterale",
+        "tarea con puntos móviles y condición de 3 por ciento de movimiento coherente",
+        "respuestas correctas incluso con señal visual débil"
+      ],
+      "ref_display": "Ars Technica, 23 oct 2026"
+    },
+    {
+      "id": "SRC-004",
+      "cita_corta": "Live Science (22 oct 2026). Crows may make lightning-fast decisions, sometimes twice as fast as humans, study hints.",
+      "url": "https://www.livescience.com/animals/birds/crows-may-make-lightning-fast-decisions-sometimes-twice-as-fast-as-humans-study-hints",
+      "accessed": "2026-10-27",
+      "supports": [
+        "la comparación con humanos y monos usa tareas previas y no una sesión simultánea idéntica",
+        "limitación del tamaño muestral: dos aves"
+      ],
+      "ref_display": "Live Science, 22 oct 2026"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_001",
+      "arc": "hook_medias_res",
+      "arc_imaginantes": "gancho",
+      "duration_seconds": 9.5,
+      "narration": "La decisión aparece antes de que la corneja pique. En una pantalla, puntos blancos se mueven; el ave debe detectar hacia dónde va la mayoría.",
+      "on_screen_text": "LA CORNEJA DECIDE ANTES",
+      "visual_description": "Primer plano de una corneja negra con una red neuronal luminosa; ilustración psicodélica, no imagen documental.",
+      "image_prompt": "1960s psychedelic poster art, flowing organic shapes, vibrant complementary colors, microscopic organisms as large central motif, simple swirling background, illustrated, not photorealistic, vertical 9:16, no text + A carrion crow in close-up, iridescent blue-violet feathers and amber eye, a luminous abstract neural network visible through a translucent head silhouette, swirling complementary-color ribbons and floating dots, strong focal point, editorial psychedelic screen-print texture, no labels or text.",
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "asset_filename": "frames/scene_001.jpg",
+      "ambiente": "viento",
+      "sfx": [
+        "viento"
+      ]
+    },
+    {
+      "id": "scene_002",
+      "arc": "desarrollo",
+      "arc_imaginantes": "ancla",
+      "duration_seconds": 10,
+      "narration": "En Tübingen, Alemania, Philipp Schmidbauer y Andreas Nieder entrenaron a dos cornejas negras para resolver la tarea y picotear el lado correcto a cambio de comida.",
+      "on_screen_text": "TÜBINGEN, ALEMANIA",
+      "visual_description": "Corneja frente a una pantalla táctil en un laboratorio; mapa de ubicación como capa informativa.",
+      "image_prompt": "1960s psychedelic poster art, flowing organic shapes, vibrant complementary colors, microscopic organisms as large central motif, simple swirling background, illustrated, not photorealistic, vertical 9:16, no text + A carrion crow in a neuroscience laboratory, facing a tilted touchscreen with scattered glowing white dots and one bright target, abstract brain and neural motifs in the background, vibrant teal, magenta, orange, purple and cream, textured poster illustration, no text.",
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "asset_filename": "frames/scene_002.jpg",
+      "ambiente": "silencio",
+      "sfx": [
+        "reloj"
+      ],
+      "capa": {
+        "tipo": "mapa",
+        "region": [
+          7.5,
+          10.5,
+          47.5,
+          49.5
+        ],
+        "titulo": "Lugar del estudio · Tübingen",
+        "puntos": [
+          {
+            "nombre": "Tübingen",
+            "lon": 9.0576,
+            "lat": 48.5216
+          }
+        ],
+        "fuente": "Universität Tübingen, comunicado del 22-10-2026",
+        "plano": 2
+      }
+    },
+    {
+      "id": "scene_003",
+      "arc": "desarrollo",
+      "arc_imaginantes": "relato_1",
+      "duration_seconds": 10,
+      "narration": "Cuando casi todos los puntos avanzaban juntos, la señal era fácil. Incluso cuando solo el tres por ciento se movía en la misma dirección, las cornejas superaban el azar.",
+      "on_screen_text": "PUNTOS EN MOVIMIENTO",
+      "visual_description": "Nube de puntos en una pantalla, con una pequeña proporción moviéndose en dirección común; la imagen es una representación esquemática.",
+      "image_prompt": "1960s psychedelic poster art, flowing organic shapes, vibrant complementary colors, microscopic organisms as large central motif, simple swirling background, illustrated, not photorealistic, vertical 9:16, no text + A black crow leaning toward a dark touchscreen filled with many luminous dots, a small coherent stream of dots moving to one side while most dots drift randomly, clear visual contrast, swirling psychedelic organic forms, no numbers, no labels, no text.",
+      "source_ids": [
+        "SRC-001",
+        "SRC-003"
+      ],
+      "asset_filename": "frames/scene_003.jpg",
+      "ambiente": "silencio",
+      "sfx": [
+        "reloj"
+      ]
+    },
+    {
+      "id": "scene_004",
+      "arc": "desarrollo",
+      "arc_imaginantes": "giro",
+      "duration_seconds": 10,
+      "narration": "Su respuesta tardó, en promedio, 235 milisegundos: menos de un cuarto de segundo. Eso describe esta tarea visual, no toda forma de inteligencia.",
+      "on_screen_text": "235 MILISEGUNDOS",
+      "visual_description": "La corneja toca el objetivo mientras los anillos de un reloj abstracto enfatizan la escala temporal; la cifra real aparece en la capa de dato.",
+      "image_prompt": "1960s psychedelic poster art, flowing organic shapes, vibrant complementary colors, microscopic organisms as large central motif, simple swirling background, illustrated, not photorealistic, vertical 9:16, no text + A carrion crow making a precise peck toward a glowing target on a dark screen, an oversized abstract concentric clock motif behind it, sharp motion streaks and colorful flowing shapes, no numerals, no letters, no text.",
+      "source_ids": [
+        "SRC-001"
+      ],
+      "asset_filename": "frames/scene_004.jpg",
+      "ambiente": "silencio",
+      "sfx": [
+        "reloj"
+      ],
+      "capa": {
+        "tipo": "dato",
+        "valor": "235 ms",
+        "etiqueta": "respuesta media en la tarea visual",
+        "fuente": "Schmidbauer & Nieder, Science (2026), DOI 10.1126/science.aed6459",
+        "plano": 2
+      }
+    },
+    {
+      "id": "scene_005",
+      "arc": "desarrollo",
+      "arc_imaginantes": "relato_2",
+      "duration_seconds": 10,
+      "narration": "El equipo registró actividad de 248 neuronas en el nidopallium caudolaterale, una región cerebral de las aves que participa en decisiones y asociaciones.",
+      "on_screen_text": "248 NEURONAS",
+      "visual_description": "Retrato anatómico ilustrado de una corneja con el cerebro y las conexiones neuronales representados de forma conceptual, no como una imagen anatómica literal.",
+      "image_prompt": "1960s psychedelic poster art, flowing organic shapes, vibrant complementary colors, microscopic organisms as large central motif, simple swirling background, illustrated, not photorealistic, vertical 9:16, no text + A carrion crow in profile with a translucent stylized brain region glowing in gold and cyan, branching neuron-like lines radiating from the forebrain into the surrounding psychedelic background, anatomical illustration interpreted as art, no labels or text.",
+      "source_ids": [
+        "SRC-001",
+        "SRC-003"
+      ],
+      "asset_filename": "frames/scene_005.jpg",
+      "ambiente": "silencio",
+      "sfx": [
+        "campanas"
+      ]
+    },
+    {
+      "id": "scene_006",
+      "arc": "cierre_historia",
+      "arc_imaginantes": "consecuencia",
+      "duration_seconds": 10,
+      "narration": "La actividad neuronal ya permitía anticipar la elección unos 70 milisegundos después de aparecer los puntos, mucho antes del picotazo que indicaba la respuesta.",
+      "on_screen_text": "70 MILISEGUNDOS",
+      "visual_description": "Señal neuronal anticipada representada como una corriente luminosa que llega al objetivo antes del movimiento del pico; dato en capa separada.",
+      "image_prompt": "1960s psychedelic poster art, flowing organic shapes, vibrant complementary colors, microscopic organisms as large central motif, simple swirling background, illustrated, not photorealistic, vertical 9:16, no text + A carrion crow facing a glowing target, luminous neural currents flowing from its brain toward the target before the beak moves, a sequence of floating dots and bright synaptic points, saturated psychedelic poster colors, no text.",
+      "source_ids": [
+        "SRC-001"
+      ],
+      "asset_filename": "frames/scene_006.jpg",
+      "ambiente": "silencio",
+      "sfx": [
+        "campanas"
+      ],
+      "capa": {
+        "tipo": "dato",
+        "valor": "70 ms",
+        "etiqueta": "señal neuronal anticipa la elección",
+        "fuente": "Schmidbauer & Nieder, Science (2026), DOI 10.1126/science.aed6459",
+        "plano": 2
+      }
+    },
+    {
+      "id": "scene_007",
+      "arc": "cierre_historia",
+      "arc_imaginantes": "limite",
+      "duration_seconds": 10,
+      "narration": "La comparación con humanos y monos usa estudios anteriores y respuestas motoras distintas; no fue un cara a cara en la misma sesión. Además, el estudio trabajó con solo dos cornejas.",
+      "on_screen_text": "SOLO DOS CORNEJAS",
+      "visual_description": "Tríptico visual de cornejas, cerebro de primate y pantalla de puntos, sin sugerir una comparación directa en el mismo experimento.",
+      "image_prompt": "1960s psychedelic poster art, flowing organic shapes, vibrant complementary colors, microscopic organisms as large central motif, simple swirling background, illustrated, not photorealistic, vertical 9:16, no text + A three-panel psychedelic editorial illustration: two carrion crows in one panel, a human profile and a primate profile with abstract glowing brains in another, and a touchscreen dot task in the third, clearly separate panels implying different studies rather than a direct race, no text.",
+      "source_ids": [
+        "SRC-001",
+        "SRC-004"
+      ],
+      "asset_filename": "frames/scene_007.jpg",
+      "ambiente": "silencio",
+      "sfx": [
+        "reloj"
+      ]
+    },
+    {
+      "id": "scene_008",
+      "arc": "reflexion_o_pregunta",
+      "arc_imaginantes": "reflexion",
+      "duration_seconds": 10,
+      "narration": "La sorpresa no es que su cerebro sea igual al nuestro. Es que la evolución pudo encontrar soluciones parecidas con arquitecturas distintas. Esto fue Datos y ociosidades.",
+      "on_screen_text": "CEREBROS DISTINTOS",
+      "visual_description": "Corneja en vuelo frente a una red de estrellas y líneas que evoca principios computacionales compartidos sin afirmar que ambos cerebros sean anatómicamente iguales.",
+      "image_prompt": "1960s psychedelic poster art, flowing organic shapes, vibrant complementary colors, microscopic organisms as large central motif, simple swirling background, illustrated, not photorealistic, vertical 9:16, no text + A carrion crow soaring through a cosmic landscape of branching star-like neural networks, luminous gold disk, deep indigo mountains and flowing teal, magenta, orange and cream forms, contemplative evolutionary imagery, no text.",
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "asset_filename": "frames/scene_008.jpg",
+      "ambiente": "viento",
+      "sfx": [
+        "viento"
+      ]
+    }
+  ],
+  "cortinilla_fuentes": {
+    "duration_seconds": 6,
+    "titulo": "Fuentes",
+    "aviso": "Ilustraciones generadas con IA; no son fotografías del experimento. Voz sintética prevista (edge-tts). Música original sintetizada.",
+    "firma": "Datos y ociosidades · @datosyociosidades"
+  },
+  "audio": {
+    "music_asset": "/workspace/capcot/cola/entrada/2026-10-27_corneja-decision-rapida/audio/musica_original.mp3",
+    "cama_musical": "cognicion_7_8",
+    "music_bpm": 126,
+    "music_meter": "7/8",
+    "music_lufs": -27,
+    "ambiente_lufs": -28,
+    "music_license": "Composición original sintetizada con Python/NumPy para esta cápsula; sin muestras ni grabaciones de terceros.",
+    "sfx_license": "SFX del manifiesto del repositorio: Wikimedia Commons CC0/dominio público; el pipeline debe descargarlos y conservar la atribución del manifiesto."
+  },
+  "export": {
+    "filename": "capsula.mp4",
+    "resolution": "1080x1920",
+    "fps": 30,
+    "loudness_lufs": -14,
+    "subtitle_max_words": 3,
+    "plano_seconds": 2.5
+  },
+  "canal": {
+    "nombre": "Datos y ociosidades",
+    "handle": "@datosyociosidades",
+    "youtube_channel_id": "UCU2ZI-6pBJEr9aSFsF6bxLw"
+  },
+  "origen": "externa",
+  "parece_real": false,
+  "proveedor_imagenes": "OpenAI image generation",
+  "estado": "CANDIDATO_NO_PUBLICADO"
+}
