@@ -1,7 +1,7 @@
 {
   "fecha": "2026-10-27",
   "tz": "America/Mexico_City",
-  "pedido_mj": "pt144u/t145u",
+  "pedido_mj": "t253u: las 5 cestas + noctámbulos 23:30 dato del día; todos programados 27-oct YT+TT+FB",
   "slots": [
     {
       "hora": "07:00",
@@ -14,10 +14,12 @@
       "origen": "nuevo",
       "plataformas": [
         "youtube",
-        "tiktok"
+        "tiktok",
+        "facebook"
       ],
       "hecho_para_ninos": false,
-      "nota": "pt167u; NO programar/publicar sin OK de Mj; ver salidas/_ops/2026-10-26_parrilla_franjas_reporte.md"
+      "nota": "pt167u; NO programar/publicar sin OK de Mj; ver salidas/_ops/2026-10-26_parrilla_franjas_reporte.md",
+      "prioridad": "producir_madrugada"
     },
     {
       "hora": "13:30",
@@ -30,50 +32,47 @@
       "origen": "nuevo",
       "plataformas": [
         "youtube",
-        "tiktok"
+        "tiktok",
+        "facebook"
       ],
       "hecho_para_ninos": false,
       "nota": "pt168u: gancho no-cliché (sin 'regenera pata'); estado borrador_propuesta; NO programar sin OK",
       "angulo": "1864: 34 ajolotes de Xochimilco a París; Duméril vio a algunas crías metamorfosearse en salamandras terrestres; casi todos los ajolotes de laboratorio y los blancos de mascota descienden de ese lote (un solo macho blanco)",
-      "alternativa_si_Mj_no": "2026-xx_kids_tiburon-groenlandia-400-anos"
-    },
-    {
-      "hora": "14:30",
-      "id": "2026-10-27_TBD-B",
-      "titulo": "TBD",
-      "angulo_propuesto": "Muertos en mosaico (CU / O'Gorman)",
-      "estilo": "mosaico",
-      "estado": "TBD",
-      "plataformas": [
-        "youtube",
-        "tiktok"
-      ],
-      "nota": "Propuesta pt160u; ver salidas/_ops/2026-10-25_huecos_26_28_estilos.md"
+      "alternativa_si_Mj_no": "2026-xx_kids_tiburon-groenlandia-400-anos",
+      "prioridad": "producir_madrugada"
     },
     {
       "hora": "14:30",
       "id": "2026-10-29_muralismo-cu",
       "titulo": "Muralismo CU / Biblioteca Central O’Gorman",
-      "nota": "Mj: meter el 27-oct (carpeta aún 29); pendiente revisión",
+      "nota": "Mj 26-oct noche: debe quedar programado 27-oct; carpeta aún prefijo 29",
       "plataformas": [
         "youtube",
-        "tiktok"
+        "tiktok",
+        "facebook"
       ],
       "franja": "C",
-      "linea": "general"
+      "linea": "general",
+      "estado": "mp4_listo_pendiente_ok",
+      "estilo": "mosaico_piedra",
+      "salida": "salidas/2026-10-29_muralismo-cu"
     },
     {
       "hora": "17:00",
-      "id": "2026-10-27_TBD-C",
-      "titulo": "TBD",
+      "id": "2026-10-27_cempasuchil-ciencia",
+      "titulo": "Cempasúchil: la flor que guía… y también es pesticida natural",
       "angulo_propuesto": "Ciencia del cempasúchil",
-      "estilo": "litografia_azul_dorado",
-      "estado": "TBD",
+      "estilo": "a_definir_no_litografia",
+      "estado": "por_producir",
       "plataformas": [
         "youtube",
-        "tiktok"
+        "tiktok",
+        "facebook"
       ],
-      "nota": "Propuesta pt160u; ver salidas/_ops/2026-10-25_huecos_26_28_estilos.md"
+      "nota": "Hueco 17:00; litografía azul-dorado descartada. Tema propuesto para cubrir cesta.",
+      "angulo": "ciencia/objeto cotidiano DdM: compuestos del Tagetes (tietinas) usados vs nematodos; color y olor en la ofrenda",
+      "franja": "C",
+      "linea": "general"
     },
     {
       "hora": "19:00",
@@ -81,15 +80,34 @@
       "titulo": "Día de Muertos · Parte 3: En este pueblo SACAN a sus muertos… para bañarlos",
       "serie": "ddm-2026",
       "parte": 3,
-      "estado": "guion_listo",
+      "estado": "mp4_listo_pendiente_ok",
       "angulo": "Pomuch, Campeche: limpieza de huesos (Janal Pixán)",
       "continua_de": "P2 ofrenda (26-oct 19:00)",
       "estilo": "bordado",
       "plataformas": [
         "youtube",
-        "tiktok"
+        "tiktok",
+        "facebook"
       ],
-      "proyecto": "2026-10-27_ddm-parte3-pomuch"
+      "proyecto": "2026-10-27_ddm-parte3-pomuch",
+      "salida": "salidas/2026-10-27_ddm-parte3-pomuch",
+      "nota": "Mj 26-oct noche: debe quedar programado 27-oct 19:00"
+    },
+    {
+      "hora": "23:30",
+      "id": "2026-10-27_dato-del-dia",
+      "titulo": "Dato del día (descubrimiento reciente)",
+      "franja": "E",
+      "linea": "noctambulos",
+      "formato": "dato_del_dia",
+      "estado": "por_investigar_y_producir",
+      "plataformas": [
+        "youtube",
+        "tiktok",
+        "facebook"
+      ],
+      "nota": "Mj 26-oct: cierre noctámbulos 23:30. Hallazgo/noticia científica o natural del mismo día o fechas muy cercanas (tipo hongo Lanmaoa / lo del 24–25 oct). No evergreen genérico.",
+      "criterio": "preferir papers/noticias de ~24–27 oct 2026; LatAm o ciencia/naturaleza alineada a editorial sin sociedades"
     }
   ],
   "estilos_serie": {
@@ -98,7 +116,17 @@
     "P3": "bordado",
     "P4": "codex_mexica"
   },
-  "actualizado_cdmx": "2026-10-25T22:10-06:00",
-  "nota": "26 cubierto (4). 27: muralismo + P3 + 1–2 TBD (infantil mañana?). 28: P4 + 2 TBD.",
-  "franjas_ref": "salidas/_ops/2026-10-26_parrilla_franjas_reporte.md"
+  "actualizado_cdmx": "2026-10-26T23:14-06:00",
+  "nota": "6 slots. Cubrir y programar todos. 2 mp4 listos (muralismo, Pomuch) pendientes OK implícito de programar. 3 por producir + 1 dato del día.",
+  "franjas_ref": "salidas/_ops/2026-10-26_parrilla_franjas_reporte.md",
+  "meta_dia": {
+    "cestas": 5,
+    "noctambulos": 1,
+    "total": 6,
+    "plataformas": [
+      "youtube",
+      "tiktok",
+      "facebook"
+    ]
+  }
 }
