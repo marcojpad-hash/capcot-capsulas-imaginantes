@@ -1,0 +1,299 @@
+{
+ "project_id": "2026-10-28_ddm-parte4-templo-mayor",
+ "serie": "Datos y ociosidades",
+ "title": "Día de Muertos, parte 4: la ofrenda más grande del Templo Mayor",
+ "language": "es-MX",
+ "aspect_ratio": "9:16",
+ "sources": [
+  {
+   "id": "SRC-001",
+   "cita_corta": "INAH Boletín 84 (27-feb-2026) – Ceremonia colosal en época de Motecuhzoma Ilhuicamina",
+   "url": "https://inah.gob.mx/boletines/nuevos-hallazgos-del-proyecto-templo-mayor-revelan-una-ceremonia-colosal-en-epoca-de-motecuhzoma-ilhuicamina",
+   "accessed": "2026-10-25",
+   "supports": [
+    "6 ofrendas un solo evento",
+    "83 figurillas Mezcala",
+    "etapa IVa 1440-1469",
+    "Tlaxco y Tlaxmalac 1447-1450",
+    "esculturas 600-1000 kg",
+    "más de 4,000 elementos malacológicos"
+   ]
+  },
+  {
+   "id": "SRC-002",
+   "cita_corta": "El Colegio Nacional – Impresionante hallazgo en el Templo Mayor",
+   "url": "https://colnal.mx/noticias/exponen-en-el-colegio-nacional-un-impresionante-hallazgo-en-el-templo-mayor/",
+   "accessed": "2026-10-25",
+   "supports": [
+    "tepetlacalli como Tlalocan",
+    "43 figurillas: 15, 15, 13"
+   ]
+  },
+  {
+   "id": "SRC-003",
+   "cita_corta": "El Heraldo de México (27-feb-2026) – Arqueólogos revelan gran ceremonia",
+   "url": "https://heraldodemexico.com.mx/cultura/2026/2/27/arqueologos-revelan-gran-ceremonia-en-templo-mayor-774137.html",
+   "accessed": "2026-10-25",
+   "supports": [
+    "moluscos transportados vivos desde costas lejanas"
+   ]
+  }
+ ],
+ "titulo_yt": "83 ídolos de botín y caracoles traídos VIVOS: la ofrenda más grande 🐚 (Parte 4) #Shorts",
+ "caption_tt": "Seis cofres de piedra alrededor del Templo Mayor parecían ofrendas sueltas. En 2026 el INAH confirmó que fueron UNA sola ceremonia de Motecuhzoma Ilhuicamina. Parte 4/4 🐚🌼 #DíaDeMuertos #TemploMayor #Mexicas #Arqueología #DatosYOciosidades",
+ "titulo": "La ofrenda más grande",
+ "titulo_estilo": {
+  "font": "/usr/share/fonts/truetype/sand-box/google/Alfa Slab One/AlfaSlabOne-Regular.ttf",
+  "size": 88,
+  "caja_rgb": [
+   238,
+   224,
+   190
+  ],
+  "texto_rgb": [
+   34,
+   42,
+   92
+  ],
+  "subrayado_rgb": [
+   204,
+   122,
+   32
+  ]
+ },
+ "estructura": "sabias_que",
+ "estilo_id": "codex_mexica",
+ "estilo_visual": "Códice mexica (propio)",
+ "trend_source": {
+  "tipo": "noticia",
+  "medio": "INAH Boletín 84",
+  "url": "https://inah.gob.mx/boletines/nuevos-hallazgos-del-proyecto-templo-mayor-revelan-una-ceremonia-colosal-en-epoca-de-motecuhzoma-ilhuicamina",
+  "fecha_publicacion": "2026-02-27",
+  "termino": "ofrendas 186 187 189 Templo Mayor",
+  "fecha_consulta": "2026-10-25"
+ },
+ "voice": {
+  "engine": "edge-tts",
+  "voice_id": "es-MX-JorgeNeural",
+  "rate": "+7%",
+  "pitch": "-2Hz",
+  "pad_seconds": 0.3,
+  "modo_pausas": "continuo"
+ },
+ "cortinilla_fuentes": {
+  "duration_seconds": 6,
+  "titulo": "Fuentes",
+  "aviso": "Ilustraciones generadas con IA en estilo códice; interpretación artística, no reproducciones de códices ni fotos de las piezas. Voz sintética con IA (edge-tts). Música sintetizada.",
+  "bg_rgb": [
+   28,
+   30,
+   52
+  ],
+  "firma": "Datos y ociosidades · @datosyociosidades"
+ },
+ "audio": {
+  "music_asset": "sintetico:tambor",
+  "cama_musical": "tambor",
+  "music_lufs": -27,
+  "ambiente_lufs": -28,
+  "music_license": "Sintetizado por scripts/cama_sonora.py (obra propia)",
+  "sfx_license": "Wikimedia Commons CC0/PD, ver assets/sfx/LICENCIAS.json",
+  "ambiente": "viento"
+ },
+ "export": {
+  "filename": "capsula.mp4",
+  "resolution": "1080x1920",
+  "fps": 30,
+  "subtitle_max_words": 3,
+  "plano_seconds": 2.5,
+  "loudness_lufs": -14
+ },
+ "canal": {
+  "nombre": "Datos y ociosidades",
+  "handle": "@datosyociosidades",
+  "youtube_channel_id": "UCU2ZI-6pBJEr9aSFsF6bxLw"
+ },
+ "origen": "propia",
+ "parece_real": false,
+ "proveedor_imagenes": "GenerateImage (IA) con prompt_base del estilo",
+ "estado": "render 2026-10-25 noche · PENDIENTE REVISIÓN MJ",
+ "serie_ddm": {
+  "parte": 4,
+  "de": 4,
+  "slot": "2026-10-28 19:00 America/Mexico_City"
+ },
+ "scenes": [
+  {
+   "id": "scene_001",
+   "arc": "hook_medias_res",
+   "duration_seconds": 15.7,
+   "narration": "Tu ofrenda tiene pan y cempasúchil. La más grande de México tuvo ochenta y tres ídolos de botín de guerra… y caracoles que quizá llegaron vivos del mar. En la parte tres limpiamos huesos; hoy, el Templo Mayor.",
+   "on_screen_text": "83 ídolos",
+   "visual_description": "Ilustración generada con IA, estilo Códice mexica (propio) (interpretación artística)",
+   "image_prompt": "Aztec codex illustration style, flat figures with thick black outlines, flat mineral colors red ochre turquoise maya blue, amate bark paper texture, glyphs and footprint paths, vertical 9:16, no text + a huge Aztec offering scene: many small green stone human figurines, conch shells and marigold flowers arranged at the foot of a twin-temple stepped pyramid",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "asset_filename": "frames/scene_001.png",
+   "ambiente": "viento",
+   "sfx": [],
+   "image_origen": {
+    "tipo": "ia_generada",
+    "herramienta": "GenerateImage"
+   }
+  },
+  {
+   "id": "scene_002",
+   "arc": "desarrollo",
+   "duration_seconds": 7.9,
+   "narration": "Tenochtitlan, entre mil cuatrocientos cuarenta y mil cuatrocientos sesenta y nueve. Gobierna Motecuhzoma Ilhuicamina, el flechador del cielo.",
+   "on_screen_text": "1440–1469",
+   "visual_description": "Ilustración generada con IA, estilo Códice mexica (propio) (interpretación artística)",
+   "image_prompt": "Aztec codex illustration style, flat figures with thick black outlines, flat mineral colors red ochre turquoise maya blue, amate bark paper texture, glyphs and footprint paths, vertical 9:16, no text + a codex-style ruler seated on a reed throne wearing a turquoise diadem, an arrow pointing to the sky, the Templo Mayor beside him on an island in a lake",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "asset_filename": "frames/scene_002.png",
+   "ambiente": "viento",
+   "sfx": [],
+   "image_origen": {
+    "tipo": "ia_generada",
+    "herramienta": "GenerateImage"
+   },
+   "capa": {
+    "tipo": "mapa",
+    "region": [
+     -101.5,
+     -97.5,
+     17.5,
+     20.3
+    ],
+    "titulo": "Del botín al templo",
+    "puntos": [
+     {
+      "nombre": "Templo Mayor",
+      "lon": -99.13,
+      "lat": 19.435
+     },
+     {
+      "nombre": "Norte de Guerrero",
+      "lon": -99.55,
+      "lat": 18.4
+     }
+    ],
+    "fuente": "INAH"
+   }
+  },
+  {
+   "id": "scene_003",
+   "arc": "desarrollo",
+   "duration_seconds": 12.2,
+   "narration": "Dato uno. Eduardo Matos halló las ofrendas dieciocho y diecinueve a finales de los setenta; López Luján, la noventa y siete en mil novecientos noventa y uno. Parecían aisladas.",
+   "on_screen_text": "Dato 1",
+   "visual_description": "Ilustración generada con IA, estilo Códice mexica (propio) (interpretación artística)",
+   "image_prompt": "Aztec codex illustration style, flat figures with thick black outlines, flat mineral colors red ochre turquoise maya blue, amate bark paper texture, glyphs and footprint paths, vertical 9:16, no text + codex-style archaeologists with brushes uncovering three stone boxes at different sides of a pyramid, footprint paths connecting them",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "asset_filename": "frames/scene_003.png",
+   "ambiente": "viento",
+   "sfx": [],
+   "image_origen": {
+    "tipo": "ia_generada",
+    "herramienta": "GenerateImage"
+   }
+  },
+  {
+   "id": "scene_004",
+   "arc": "desarrollo",
+   "duration_seconds": 12.6,
+   "narration": "Dato dos. En dos mil veintitrés aparecieron tres cofres de piedra más, al este y al sur. Este año, el INAH confirmó: los seis se colocaron en una sola ceremonia.",
+   "on_screen_text": "6 cofres, 1 ceremonia",
+   "visual_description": "Ilustración generada con IA, estilo Códice mexica (propio) (interpretación artística)",
+   "image_prompt": "Aztec codex illustration style, flat figures with thick black outlines, flat mineral colors red ochre turquoise maya blue, amate bark paper texture, glyphs and footprint paths, vertical 9:16, no text + top view of a stepped pyramid with six stone boxes placed around it forming a closed circle, drawn with a red ochre line and footprints",
+   "source_ids": [
+    "SRC-001",
+    "SRC-002"
+   ],
+   "asset_filename": "frames/scene_004.png",
+   "ambiente": "viento",
+   "sfx": [],
+   "image_origen": {
+    "tipo": "ia_generada",
+    "herramienta": "GenerateImage"
+   },
+   "capa": {
+    "tipo": "dato",
+    "valor": "6",
+    "etiqueta": "ofrendas, una sola ceremonia",
+    "fuente": "INAH 2026"
+   }
+  },
+  {
+   "id": "scene_005",
+   "arc": "cierre_historia",
+   "duration_seconds": 11.0,
+   "narration": "Adentro: ochenta y tres figurillas de piedra verde, traídas como botín de Guerrero, esculturas de hasta mil kilos y más de cuatro mil conchas y caracoles.",
+   "on_screen_text": "+4,000 conchas",
+   "visual_description": "Ilustración generada con IA, estilo Códice mexica (propio) (interpretación artística)",
+   "image_prompt": "Aztec codex illustration style, flat figures with thick black outlines, flat mineral colors red ochre turquoise maya blue, amate bark paper texture, glyphs and footprint paths, vertical 9:16, no text + codex-style priests moving a heavy stone sculpture with ropes and wooden rollers, piles of green stone figurines and seashells nearby",
+   "source_ids": [
+    "SRC-001",
+    "SRC-002"
+   ],
+   "asset_filename": "frames/scene_005.png",
+   "ambiente": "viento",
+   "sfx": [],
+   "image_origen": {
+    "tipo": "ia_generada",
+    "herramienta": "GenerateImage"
+   },
+   "capa": {
+    "tipo": "dato",
+    "valor": "83",
+    "etiqueta": "figurillas Mezcala",
+    "fuente": "INAH 2026"
+   }
+  },
+  {
+   "id": "scene_006",
+   "arc": "cierre_historia",
+   "duration_seconds": 13.0,
+   "narration": "Dato tres, el más raro: algunos moluscos conservaban su capa exterior, señal de que pudieron viajar vivos, en agua salada, desde costas lejanas hasta una ciudad en medio de un lago.",
+   "on_screen_text": "Llegaron vivos",
+   "visual_description": "Ilustración generada con IA, estilo Códice mexica (propio) (interpretación artística)",
+   "image_prompt": "Aztec codex illustration style, flat figures with thick black outlines, flat mineral colors red ochre turquoise maya blue, amate bark paper texture, glyphs and footprint paths, vertical 9:16, no text + codex-style porters carrying water jars with live conch snails along a footprint path from the sea waves to an island city in a lake",
+   "source_ids": [
+    "SRC-003",
+    "SRC-001"
+   ],
+   "asset_filename": "frames/scene_006.png",
+   "ambiente": "viento",
+   "sfx": [],
+   "image_origen": {
+    "tipo": "ia_generada",
+    "herramienta": "GenerateImage"
+   }
+  },
+  {
+   "id": "scene_007",
+   "arc": "reflexion_o_pregunta",
+   "duration_seconds": 9.8,
+   "narration": "Así que cuando pongas tu ofrenda este año, piensa que es heredera de esta. Así cerramos la serie. Esto fue Datos y ociosidades.",
+   "on_screen_text": "Heredera de esta",
+   "visual_description": "Ilustración generada con IA, estilo Códice mexica (propio) (interpretación artística)",
+   "image_prompt": "Aztec codex illustration style, flat figures with thick black outlines, flat mineral colors red ochre turquoise maya blue, amate bark paper texture, glyphs and footprint paths, vertical 9:16, no text + a modern home Day of the Dead altar with marigolds and candles drawn in Aztec codex style, a marigold path linking it to a small Templo Mayor glyph",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "asset_filename": "frames/scene_007.png",
+   "ambiente": "viento",
+   "sfx": [],
+   "image_origen": {
+    "tipo": "ia_generada",
+    "herramienta": "GenerateImage"
+   }
+  }
+ ],
+ "target_duration_seconds": 88
+}

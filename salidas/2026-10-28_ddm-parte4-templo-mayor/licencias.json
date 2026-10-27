@@ -1,0 +1,44 @@
+{
+ "project_id": "2026-10-28_ddm-parte4-templo-mayor",
+ "musica": {
+  "cama": "tambor",
+  "origen": "síntesis propia (scripts/cama_sonora.py, numpy)",
+  "licencia": "obra propia de Datos y ociosidades",
+  "generada_por_ia": false
+ },
+ "sfx": {
+  "viento": {
+   "archivo": "viento.ogg",
+   "commons": "File:Howling wind.ogg",
+   "autor": "Tvabutzku1234",
+   "licencia": "CC0",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Howling_wind.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Howling_wind.ogg",
+   "licencia_verificada": "CC0"
+  }
+ },
+ "imagenes": {
+  "origen": "GenerateImage (IA) con prompt_base del estilo",
+  "estilo": "codex_mexica",
+  "realista": false
+ },
+ "voz": {
+  "motor": "Microsoft Edge TTS",
+  "voz": "es-MX-JorgeNeural",
+  "nota": "voz sintética; no imita a una persona real"
+ },
+ "capas_datos": {
+  "tipos": [
+   "mapa",
+   "dato",
+   "dato"
+  ],
+  "mapa_base": "Natural Earth 110m (dominio público)",
+  "render": "matplotlib (propio)"
+ },
+ "fuentes_datos": [
+  "https://inah.gob.mx/boletines/nuevos-hallazgos-del-proyecto-templo-mayor-revelan-una-ceremonia-colosal-en-epoca-de-motecuhzoma-ilhuicamina",
+  "https://colnal.mx/noticias/exponen-en-el-colegio-nacional-un-impresionante-hallazgo-en-el-templo-mayor/",
+  "https://heraldodemexico.com.mx/cultura/2026/2/27/arqueologos-revelan-gran-ceremonia-en-templo-mayor-774137.html"
+ ]
+}
