@@ -1,26 +1,27 @@
 {
   "fecha": "2026-10-27",
   "tipo": "endscreens_rotacion",
-  "actualizado_cdmx": "2026-10-27T14:50-06:00",
-  "motivo": "Nuevo xBqd (campus, 6 vistas, publicado 14:30) sin pantalla → ivVo (Catrina, 298 estancado, solo recibía de 3RdS). nY2U acelera (47→124) y ya manda a AJR6; 3RdS (184→212) sigue → ivVo.",
+  "actualizado_cdmx": "2026-10-27T17:45-06:00",
+  "motivo": "Nuevo v6t8 (yema, 64 vistas, publicado 17:00) sin pantalla → xBqd (campus, 93, sin tráfico entrante). nY2U acelera (124→635) y sigue → AJR6 (196).",
   "vistas_ref": {
-    "nY2UqhKmAKQ": 124,
-    "3RdSX40OCac": 212,
-    "YKldyldCeiQ": 225,
-    "GYxjXDh1ahc": 571,
-    "ivVo2H9NaEU": 298,
-    "PBDMJxOkCRk": 1262,
-    "i9QBFPljl6M": 1053,
-    "bYGd7QuenSk": 1009,
+    "v6t8jKMbrhw": 64,
+    "xBqdEn1Dumg": 93,
+    "nY2UqhKmAKQ": 635,
+    "3RdSX40OCac": 312,
+    "YKldyldCeiQ": 263,
+    "GYxjXDh1ahc": 687,
+    "ivVo2H9NaEU": 310,
+    "PBDMJxOkCRk": 1268,
+    "i9QBFPljl6M": 1074,
+    "bYGd7QuenSk": 1010,
     "gIjJ0YKYQ8M": 1214,
-    "AJR6kcnnDig": 186,
+    "AJR6kcnnDig": 196,
     "Qe2Y9xDn9QQ": 976,
-    "3bhntOcKHPk": 1427,
+    "3bhntOcKHPk": 1431,
     "O7TdKvuBjyg": 13,
-    "r1AhsPOAS_o": 1389,
-    "ZrUtKs7Ty7U": 1318,
-    "5D96DmjvioU": 621,
-    "xBqdEn1Dumg": 6
+    "r1AhsPOAS_o": 1390,
+    "ZrUtKs7Ty7U": 1320,
+    "5D96DmjvioU": 621
   },
   "mapa": {
     "r1AhsPOAS_o": "AJR6kcnnDig",
@@ -39,7 +40,8 @@
     "YKldyldCeiQ": "AJR6kcnnDig",
     "3RdSX40OCac": "ivVo2H9NaEU",
     "nY2UqhKmAKQ": "AJR6kcnnDig",
-    "xBqdEn1Dumg": "ivVo2H9NaEU"
+    "xBqdEn1Dumg": "ivVo2H9NaEU",
+    "v6t8jKMbrhw": "xBqdEn1Dumg"
   },
   "pendiente_studio": false,
   "nota": "Aplicado en YouTube Studio Editor > Pantalla final (video específico). Búsqueda: pegar youtube.com/watch?v=ID en 'Buscar vídeos de otros canales' (tus vídeos no lista Shorts). Sin suscripción ni tarjetas. Actualización 26-oct 19:49: la lista «Elegir un vídeo específico» ya muestra los Shorts.",
@@ -60,7 +62,8 @@
     "YKldyldCeiQ": "aplicado_nuevo_2026-10-26 21:45 → AJR6kcnnDig",
     "3RdSX40OCac": "aplicado_nuevo_2026-10-27 07:53 → ivVo2H9NaEU",
     "nY2UqhKmAKQ": "aplicado 27-oct 14:47",
-    "xBqdEn1Dumg": "aplicado 27-oct 14:50"
+    "xBqdEn1Dumg": "aplicado 27-oct 14:50",
+    "v6t8jKMbrhw": "aplicado_nuevo 27-oct 17:44 → xBqdEn1Dumg"
   },
   "fijos": {
     "Qe2Y9xDn9QQ": "gIjJ0YKYQ8M",
