@@ -1,5 +1,5 @@
 {
- "estado": "pendiente_mj",
+ "estado": "publicado_tiktok",
  "mp4": "/workspace/capcot/salidas/2026-10-27_kids-serpiente-voladora/capsula.mp4",
  "caption": "¿Puede volar una serpiente que no tiene alas?\n\nSerpiente voladora: cómo planea sin alas. Datos verificados contados como historia.\n\nFuentes en YouTube @datosyociosidades\n\n#aprendeentiktok #sabiasque #ciencia #divulgacioncientifica #ChrysopeleaSerpienteVoladoraPlaneo",
  "hashtags": [
@@ -15,5 +15,9 @@
  "yt_id": "3RdSX40OCac",
  "instruccion": "Mj sube en TikTok con caption_corto y etiqueta IA; luego estado='publicado_tiktok' + url.",
  "caption_corto": "Serpiente voladora: cómo planea sin alas\n\nFuentes en YouTube @datosyociosidades\n#aprendeentiktok #ciencia #sabiasque",
- "etiqueta_ia": "Activar etiqueta 'Contenido generado por IA' (imágenes y voz sintéticas)"
+ "etiqueta_ia": "Activar etiqueta 'Contenido generado por IA' (imágenes y voz sintéticas)",
+ "hora_tiktok_cdmx": "2026-10-27T14:12-06:00",
+ "etiqueta_ia_activada": true,
+ "subido_por": "Imaginantes box (TikTok Studio web)",
+ "url": null
 }

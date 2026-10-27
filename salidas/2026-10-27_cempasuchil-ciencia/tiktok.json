@@ -1,5 +1,5 @@
 {
- "estado": "pendiente_mj",
+ "estado": "publicado_tiktok",
  "mp4": "/workspace/capcot/salidas/2026-10-27_cempasuchil-ciencia/capsula.mp4",
  "caption": "Casi todos pensamos que el cempasúchil sólo sirve para la ofrenda.\n\nYema de huevo: su amarillo puede venir del cempasúchil. Datos verificados contados como historia.\n\nFuentes en YouTube @datosyociosidades\n\n#aprendeentiktok #sabiasque #ciencia #divulgacioncientifica #CempasuchilLuteinaYemaNematodos",
  "hashtags": [
@@ -15,5 +15,9 @@
  "yt_id": "v6t8jKMbrhw",
  "instruccion": "Mj sube en TikTok con caption_corto y etiqueta IA; luego estado='publicado_tiktok' + url.",
  "caption_corto": "Yema de huevo: su amarillo puede venir del cempasúchil\n\nFuentes en YouTube @datosyociosidades\n#aprendeentiktok #ciencia #sabiasque",
- "etiqueta_ia": "Activar etiqueta 'Contenido generado por IA' (imágenes y voz sintéticas)"
+ "etiqueta_ia": "Activar etiqueta 'Contenido generado por IA' (imágenes y voz sintéticas)",
+ "hora_tiktok_cdmx": "2026-10-27T17:20-06:00",
+ "etiqueta_ia_activada": true,
+ "subido_por": "Imaginantes box (TikTok Studio web)",
+ "url": null
 }

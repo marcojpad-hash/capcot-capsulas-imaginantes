@@ -23,7 +23,7 @@
       "salida": "salidas/2026-10-27_kids-serpiente-voladora",
       "yt_id": "3RdSX40OCac",
       "yt_publishAt_utc": "2026-10-27T13:00:00Z",
-      "tiktok": "pendiente_mj",
+      "tiktok": "publicado_tiktok",
       "facebook": "programado_fb",
       "revision_mj": "LEEME: revisión Mj pendiente antes de hora"
     },
@@ -49,7 +49,7 @@
       "salida": "salidas/2026-10-27_familia-ajolote",
       "yt_id": "nY2UqhKmAKQ",
       "yt_publishAt_utc": "2026-10-27T19:30:00Z",
-      "tiktok": "pendiente_mj",
+      "tiktok": "publicado_tiktok",
       "facebook": "programado_fb",
       "revision_mj": "LEEME: revisión Mj pendiente antes de hora"
     },
@@ -70,7 +70,7 @@
       "salida": "salidas/2026-10-29_muralismo-cu",
       "yt_id": "xBqdEn1Dumg",
       "yt_publishAt_utc": "2026-10-27T20:30:00Z",
-      "tiktok": "pendiente_mj",
+      "tiktok": "publicado_tiktok",
       "facebook": "programado_fb"
     },
     {
@@ -92,7 +92,7 @@
       "salida": "salidas/2026-10-27_cempasuchil-ciencia",
       "yt_id": "v6t8jKMbrhw",
       "yt_publishAt_utc": "2026-10-27T23:00:00Z",
-      "tiktok": "pendiente_mj",
+      "tiktok": "publicado_tiktok",
       "facebook": "programado_fb",
       "revision_mj": "LEEME: revisión Mj pendiente antes de hora"
     },
@@ -116,7 +116,7 @@
       "nota": "Mj 26-oct noche: debe quedar programado 27-oct 19:00",
       "yt_id": "YIoWXfZaMj0",
       "yt_publishAt_utc": "2026-10-28T01:00:00Z",
-      "tiktok": "pendiente_mj",
+      "tiktok": "programado_tiktok",
       "facebook": "programado_fb"
     },
     {
@@ -137,7 +137,7 @@
       "salida": "salidas/2026-10-27_noct-anfibio-marino",
       "yt_id": "5XQfUHpyTWs",
       "yt_publishAt_utc": "2026-10-28T05:30:00Z",
-      "tiktok": "pendiente_mj",
+      "tiktok": "programado_tiktok",
       "facebook": "programado_fb",
       "revision_mj": "LEEME: revisión Mj pendiente antes de hora",
       "estilo": "dibujo_cientifico_scratchboard",
@@ -151,7 +151,7 @@
     "P4": "codex_mexica"
   },
   "actualizado_cdmx": "2026-10-27T madrugada",
-  "nota": "6/6 programados en YT (private+publishAt) y FB Suite. TT pendiente_mj (rutina de entrega).",
+  "nota": "6/6 YT y FB programados; TT: 4 publicados, Pomuch y anfibio programados (27-oct 17:23 CDMX).",
   "franjas_ref": "salidas/_ops/2026-10-26_parrilla_franjas_reporte.md",
   "meta_dia": {
     "cestas": 5,

@@ -1,5 +1,5 @@
 {
- "estado": "pendiente_mj",
+ "estado": "publicado_tiktok",
  "mp4": "/workspace/capcot/salidas/2026-10-27_familia-ajolote/capsula.mp4",
  "caption": "En 1864, un barco llegó a Francia con una carga rara: treinta y cuatro ajolotes sacados de los canales de México.\n\nAjolotes de laboratorio: todos vienen de 34 que viajaron a París. Datos verificados contados como historia.\n\nFuentes en YouTube @datosyociosidades\n\n#aprendeentiktok #sabiasque #ciencia #divulgacioncientifica #AjoloteParis1864Dumeril",
  "hashtags": [
@@ -15,5 +15,9 @@
  "yt_id": "nY2UqhKmAKQ",
  "instruccion": "Mj sube en TikTok con caption_corto y etiqueta IA; luego estado='publicado_tiktok' + url.",
  "caption_corto": "Ajolotes de laboratorio: todos vienen de 34 que viajaron a París\n\nFuentes en YouTube @datosyociosidades\n#aprendeentiktok #ciencia #sabiasque",
- "etiqueta_ia": "Activar etiqueta 'Contenido generado por IA' (imágenes y voz sintéticas)"
+ "etiqueta_ia": "Activar etiqueta 'Contenido generado por IA' (imágenes y voz sintéticas)",
+ "hora_tiktok_cdmx": "2026-10-27T17:19-06:00",
+ "etiqueta_ia_activada": true,
+ "subido_por": "Imaginantes box (TikTok Studio web)",
+ "url": null
 }

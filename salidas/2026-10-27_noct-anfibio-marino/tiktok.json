@@ -1,5 +1,5 @@
 {
- "estado": "pendiente_mj",
+ "estado": "programado_tiktok",
  "mp4": "/workspace/capcot/salidas/2026-10-27_noct-anfibio-marino/capsula.mp4",
  "caption": "Dato del día.\n\nAnfibio marino: hallan el primero que vivió en el mar. Datos verificados contados como historia.\n\nFuentes en YouTube @datosyociosidades\n\n#aprendeentiktok #sabiasque #ciencia #divulgacioncientifica #GerrothoraxMaritimusAnfibioMarino",
  "hashtags": [
@@ -15,5 +15,9 @@
  "yt_id": "5XQfUHpyTWs",
  "instruccion": "Mj sube en TikTok con caption_corto y etiqueta IA; luego estado='publicado_tiktok' + url.",
  "caption_corto": "Anfibio marino: hallan el primero que vivió en el mar\n\nFuentes en YouTube @datosyociosidades\n#aprendeentiktok #ciencia #sabiasque",
- "etiqueta_ia": "Activar etiqueta 'Contenido generado por IA' (imágenes y voz sintéticas)"
+ "etiqueta_ia": "Activar etiqueta 'Contenido generado por IA' (imágenes y voz sintéticas)",
+ "hora_tiktok_cdmx": "2026-10-27T23:30-06:00",
+ "etiqueta_ia_activada": true,
+ "subido_por": "Imaginantes box (TikTok Studio web)",
+ "url": null
 }
