@@ -3462,5 +3462,94 @@
     },
     "tiktok": null,
     "nota": "Reporte horario 22:00 (corrida ~21:50). YT Data API uploads, solo públicos. TikTok null: sin navegador en esta corrida. Nuevo público: YKldyldCeiQ."
+  },
+  {
+    "timestamp_cdmx": "2026-10-26T22:50-06:00",
+    "youtube": {
+      "YKldyldCeiQ": {
+        "view": 76,
+        "like": 0,
+        "comment": 0
+      },
+      "GYxjXDh1ahc": {
+        "view": 248,
+        "like": 3,
+        "comment": 0
+      },
+      "ivVo2H9NaEU": {
+        "view": 224,
+        "like": 11,
+        "comment": 0
+      },
+      "PBDMJxOkCRk": {
+        "view": 1231,
+        "like": 28,
+        "comment": 4
+      },
+      "i9QBFPljl6M": {
+        "view": 958,
+        "like": 21,
+        "comment": 0
+      },
+      "bYGd7QuenSk": {
+        "view": 1005,
+        "like": 24,
+        "comment": 0
+      },
+      "gIjJ0YKYQ8M": {
+        "view": 1212,
+        "like": 60,
+        "comment": 1
+      },
+      "AJR6kcnnDig": {
+        "view": 145,
+        "like": 11,
+        "comment": 0
+      },
+      "Qe2Y9xDn9QQ": {
+        "view": 956,
+        "like": 32,
+        "comment": 2
+      },
+      "3bhntOcKHPk": {
+        "view": 1414,
+        "like": 36,
+        "comment": 0
+      },
+      "O7TdKvuBjyg": {
+        "view": 13,
+        "like": 1,
+        "comment": 0
+      },
+      "r1AhsPOAS_o": {
+        "view": 1387,
+        "like": 72,
+        "comment": 4
+      },
+      "ZrUtKs7Ty7U": {
+        "view": 1307,
+        "like": 48,
+        "comment": 5
+      },
+      "5D96DmjvioU": {
+        "view": 617,
+        "like": 27,
+        "comment": 0
+      }
+    },
+    "youtube_totales": {
+      "view": 10793,
+      "like": 374,
+      "comment": 16
+    },
+    "suscriptores": 33,
+    "delta_vs_anterior": {
+      "view": 232,
+      "like": 2,
+      "comment": 0,
+      "suscriptores": 1
+    },
+    "tiktok": null,
+    "nota": "Reporte horario 23:00 (corrida ~22:50). YT Data API uploads, solo públicos. TikTok null: sin navegador en esta corrida."
   }
 ]
