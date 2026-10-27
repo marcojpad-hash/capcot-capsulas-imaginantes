@@ -4265,5 +4265,99 @@
     },
     "tiktok": null,
     "nota": "Reporte horario 12:00 (corrida ~11:52). YT Data API uploads, solo públicos (6 privados/programados excluidos). TikTok null: sin navegador en esta corrida. Delta vs 2026-10-27T10:51."
+  },
+  {
+    "timestamp_cdmx": "2026-10-27T12:50-06:00",
+    "youtube": {
+      "3RdSX40OCac": {
+        "view": 140,
+        "like": 2,
+        "comment": 0
+      },
+      "YKldyldCeiQ": {
+        "view": 218,
+        "like": 8,
+        "comment": 0
+      },
+      "GYxjXDh1ahc": {
+        "view": 537,
+        "like": 8,
+        "comment": 0
+      },
+      "ivVo2H9NaEU": {
+        "view": 290,
+        "like": 13,
+        "comment": 0
+      },
+      "PBDMJxOkCRk": {
+        "view": 1251,
+        "like": 28,
+        "comment": 4
+      },
+      "i9QBFPljl6M": {
+        "view": 1053,
+        "like": 23,
+        "comment": 0
+      },
+      "bYGd7QuenSk": {
+        "view": 1009,
+        "like": 24,
+        "comment": 0
+      },
+      "gIjJ0YKYQ8M": {
+        "view": 1213,
+        "like": 60,
+        "comment": 1
+      },
+      "AJR6kcnnDig": {
+        "view": 186,
+        "like": 13,
+        "comment": 0
+      },
+      "Qe2Y9xDn9QQ": {
+        "view": 976,
+        "like": 33,
+        "comment": 2
+      },
+      "3bhntOcKHPk": {
+        "view": 1422,
+        "like": 37,
+        "comment": 0
+      },
+      "O7TdKvuBjyg": {
+        "view": 13,
+        "like": 1,
+        "comment": 0
+      },
+      "r1AhsPOAS_o": {
+        "view": 1389,
+        "like": 73,
+        "comment": 4
+      },
+      "ZrUtKs7Ty7U": {
+        "view": 1315,
+        "like": 48,
+        "comment": 5
+      },
+      "5D96DmjvioU": {
+        "view": 621,
+        "like": 27,
+        "comment": 0
+      }
+    },
+    "youtube_totales": {
+      "view": 11633,
+      "like": 398,
+      "comment": 16
+    },
+    "suscriptores": 35,
+    "delta_vs_anterior": {
+      "view": 86,
+      "like": 4,
+      "comment": 0,
+      "suscriptores": 0
+    },
+    "tiktok": null,
+    "nota": "Reporte horario 13:00 (corrida ~12:50). YT Data API uploads, solo públicos (6 privados/programados excluidos). TikTok null: sin navegador en esta corrida. Delta vs 2026-10-27T11:52."
   }
 ]
