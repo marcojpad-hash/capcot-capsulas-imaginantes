@@ -3,6 +3,8 @@
 Proyecto para producir micro-cápsulas científicas verticales (9:16, 60–90 s) de forma automática.
 
 > **Fuente de verdad vigente: [docs/PLAN_MAESTRO_AUTOMATICO.md](docs/PLAN_MAESTRO_AUTOMATICO.md)** (sustituye lo que contradiga a los documentos iniciales). Plantilla: [templates/storyboard_vertical.template.json](templates/storyboard_vertical.template.json). Prototipo probado: `scripts/`.
+>
+> **Biblia editorial y plantilla visual: [docs/BIBLIA_LINEA_EDITORIAL.md](docs/BIBLIA_LINEA_EDITORIAL.md)**.
 
 ## Arquitectura inicial
 - [Arquitectura y límites](docs/ARQUITECTURA_INICIAL.md)

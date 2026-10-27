@@ -4,6 +4,19 @@
   "pedido_mj": "t140u ~20:47 CDMX 25-oct",
   "slots": [
     {
+      "hora": "12:00",
+      "id": "2026-10-26_TBD-A",
+      "titulo": "TBD",
+      "angulo_propuesto": "Calaveras en la calle: de Spectre al desfile",
+      "estilo": "grafiti_colorido",
+      "estado": "TBD",
+      "plataformas": [
+        "youtube",
+        "tiktok"
+      ],
+      "nota": "Propuesta pt160u; ver salidas/_ops/2026-10-25_huecos_26_28_estilos.md"
+    },
+    {
       "hora": "14:30",
       "id": "2026-10-26_papel-picado-dia-muertos",
       "titulo": "El papel picado nació de una DEUDA",

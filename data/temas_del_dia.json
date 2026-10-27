@@ -54,5 +54,27 @@
    "origen": "propia",
    "project_id": "2026-10-26_pimiento-verde-rojo"
   }
+ ],
+ "2026-10-27": [
+  {
+   "tema": "ajolote paris 1864 dumeril",
+   "origen": "propia",
+   "project_id": "familia-ajolote"
+  },
+  {
+   "tema": "chrysopelea serpiente voladora planeo",
+   "origen": "propia",
+   "project_id": "kids-serpiente-voladora"
+  },
+  {
+   "tema": "cempasuchil luteina yema nematodos",
+   "origen": "propia",
+   "project_id": "cempasuchil-ciencia"
+  },
+  {
+   "tema": "gerrothorax maritimus anfibio marino",
+   "origen": "propia",
+   "project_id": "noct-anfibio-marino"
+  }
  ]
 }

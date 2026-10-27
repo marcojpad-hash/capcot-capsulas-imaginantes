@@ -4,22 +4,6 @@
  "title": "Papel picado, parte 2: los otros tres elementos (el camino de tu muerto)",
  "language": "es-MX",
  "aspect_ratio": "9:16",
- "target_duration_seconds": 68,
- "estilo_id": "papel_picado_cincel",
- "estilo_propuesto": {
-  "ver": "mismo estilo que parte 1 (serie)"
- },
- "voice": {
-  "engine": "edge-tts",
-  "voice_id": "es-MX-JorgeNeural",
-  "rate": "+7%",
-  "pitch": "-2Hz",
-  "pad_seconds": 0.35
- },
- "estado": "borrador_guion — NO renderizar (esperando créditos Canva IA)",
- "publicacion_sugerida": "2026-10-27 19:00 (CDMX)",
- "titulo_yt": "Si falta UNO, tu muerto se pierde 🕯️💧🌼 (Parte 2) #Shorts",
- "caption_tt": "En la parte 1 viste que el papel picado es el viento. Estos son los otros tres elementos de tu ofrenda… y por qué el camino de cempasúchil importa. Parte 2/2 🕯️🌼 #DíaDeMuertos #Ofrenda #Cempasúchil #PapelPicado #DatosYOciosidades",
  "sources": [
   {
    "id": "SRC-001",
@@ -55,15 +39,6 @@
    ]
   },
   {
-   "id": "SRC-004",
-   "cita_corta": "Nueva Escuela Mexicana Digital (SEP)",
-   "url": "https://nemd.aprende.gob.mx/contenido/coleccion/234/",
-   "accessed": "2026-10-25",
-   "supports": [
-    "camino de pétalos casa–panteón"
-   ]
-  },
-  {
    "id": "SRC-005",
    "cita_corta": "SEP Chamakes – Ofrenda interactiva",
    "url": "https://chamakes.sep.gob.mx/interactivos/ofrenda_dia_de_muertos_interactiva.html",
@@ -73,35 +48,234 @@
    ]
   }
  ],
- "escenas": [
+ "titulo_yt": "Si falta UNO, tu muerto se pierde 🕯️💧🌼 (Parte 2) #Shorts",
+ "caption_tt": "En la parte 1 viste que el papel picado es el viento. Estos son los otros tres elementos de tu ofrenda… y por qué el camino de cempasúchil importa. Parte 2/2 🕯️🌼 #DíaDeMuertos #Ofrenda #Cempasúchil #PapelPicado #DatosYOciosidades",
+ "titulo": "Si falta uno, se pierde",
+ "titulo_estilo": {
+  "font": "/usr/share/fonts/truetype/sand-box/google/Alfa Slab One/AlfaSlabOne-Regular.ttf",
+  "size": 88,
+  "caja_rgb": [
+   238,
+   224,
+   190
+  ],
+  "texto_rgb": [
+   34,
+   42,
+   92
+  ],
+  "subrayado_rgb": [
+   204,
+   122,
+   32
+  ]
+ },
+ "estructura": "sabias_que",
+ "estilo_id": "claymation",
+ "estilo_visual": "Claymation / plastilina (propio)",
+ "trend_source": {
+  "tipo": "efemeride_cultural",
+  "medio": "INAH",
+  "url": "https://www.inah.gob.mx/foto-del-dia/ofrendas-para-los-muertos",
+  "termino": "elementos ofrenda día de muertos",
+  "fecha_consulta": "2026-10-25"
+ },
+ "voice": {
+  "engine": "edge-tts",
+  "voice_id": "es-MX-JorgeNeural",
+  "rate": "+7%",
+  "pitch": "-2Hz",
+  "pad_seconds": 0.3,
+  "modo_pausas": "continuo"
+ },
+ "cortinilla_fuentes": {
+  "duration_seconds": 6,
+  "titulo": "Fuentes",
+  "aviso": "Ilustraciones generadas con IA en estilo plastilina / papel maché; interpretación artística. Voz sintética con IA (edge-tts). Música sintetizada.",
+  "bg_rgb": [
+   28,
+   30,
+   52
+  ],
+  "firma": "Datos y ociosidades · @datosyociosidades"
+ },
+ "audio": {
+  "music_asset": "sintetico:pizzicato",
+  "cama_musical": "pizzicato",
+  "music_lufs": -27,
+  "ambiente_lufs": -28,
+  "music_license": "Sintetizado por scripts/cama_sonora.py (obra propia)",
+  "sfx_license": "Wikimedia Commons CC0/PD, ver assets/sfx/LICENCIAS.json",
+  "ambiente": "viento"
+ },
+ "export": {
+  "filename": "capsula.mp4",
+  "resolution": "1080x1920",
+  "fps": 30,
+  "subtitle_max_words": 3,
+  "plano_seconds": 2.5,
+  "loudness_lufs": -14
+ },
+ "canal": {
+  "nombre": "Datos y ociosidades",
+  "handle": "@datosyociosidades",
+  "youtube_channel_id": "UCU2ZI-6pBJEr9aSFsF6bxLw"
+ },
+ "origen": "propia",
+ "parece_real": false,
+ "proveedor_imagenes": "GenerateImage (IA) con prompt_base del estilo",
+ "estado": "render 2026-10-25 noche",
+ "scenes": [
   {
-   "t": "0-6",
-   "prompt_frame": "Misma ofrenda del cierre de P1: papel picado ondeando; cámara baja al camino de pétalos que se pierde en la oscuridad. Estilo: handmade Mexican papel picado tissue paper banners, cut-out silhouettes of calaveras and marigolds, backlit by warm candle light, translucent magenta orange purple green paper, visible chisel cuts, fluttering in wind, shallow depth of field, stop-motion feel, vertical 9:16, no text"
+   "id": "scene_001",
+   "arc": "hook_medias_res",
+   "duration_seconds": 11.4,
+   "narration": "En la parte uno viste que el papel picado es el viento de tu ofrenda. Faltan tres… y sin ellos, dice la tradición, tu muerto no llega.",
+   "on_screen_text": "Faltan tres",
+   "visual_description": "Ilustración generada con IA, estilo Claymation / plastilina (propio) (interpretación artística)",
+   "image_prompt": "claymation stop-motion scene, plasticine characters and set with visible fingerprints, soft studio lighting, miniature handmade props, vertical 9:16, no text + a plasticine and papier-mache Day of the Dead altar with colorful papel picado fluttering, three empty glowing spots on the altar",
+   "source_ids": [
+    "SRC-001",
+    "SRC-003"
+   ],
+   "asset_filename": "frames/scene_001.png",
+   "ambiente": "viento",
+   "sfx": [],
+   "image_origen": {
+    "tipo": "ia_generada",
+    "herramienta": "GenerateImage"
+   },
+   "capa": {
+    "tipo": "mapa",
+    "region": [
+     -99.5,
+     -96.5,
+     17.8,
+     20.2
+    ],
+    "titulo": "El viento: Huixcolotla",
+    "puntos": [
+     {
+      "nombre": "San Salvador Huixcolotla",
+      "lon": -97.77,
+      "lat": 18.92
+     }
+    ],
+    "fuente": "Parte 1 · INAH"
+   }
   },
   {
-   "t": "6-18",
-   "prompt_frame": "Jarro de barro con agua sobre la ofrenda, gota cayendo, reflejo de velas. Estilo: handmade Mexican papel picado tissue paper banners, cut-out silhouettes of calaveras and marigolds, backlit by warm candle light, translucent magenta orange purple green paper, visible chisel cuts, fluttering in wind, shallow depth of field, stop-motion feel, vertical 9:16, no text"
+   "id": "scene_002",
+   "arc": "desarrollo",
+   "duration_seconds": 9.8,
+   "narration": "Primero, el agua. Un vaso o un jarro, porque el camino desde el otro lado es largo y las ánimas llegan con sed.",
+   "on_screen_text": "Agua",
+   "visual_description": "Ilustración generada con IA, estilo Claymation / plastilina (propio) (interpretación artística)",
+   "image_prompt": "claymation stop-motion scene, plasticine characters and set with visible fingerprints, soft studio lighting, miniature handmade props, vertical 9:16, no text + a papier-mache clay clay jug and a glass of water on an altar, a tiny friendly clay skeleton traveler arriving thirsty",
+   "source_ids": [
+    "SRC-001",
+    "SRC-003"
+   ],
+   "asset_filename": "frames/scene_002.png",
+   "ambiente": "viento",
+   "sfx": [],
+   "image_origen": {
+    "tipo": "ia_generada",
+    "herramienta": "GenerateImage"
+   }
   },
   {
-   "t": "18-30",
-   "prompt_frame": "Veladoras encendiéndose una a una formando una cruz. Estilo: handmade Mexican papel picado tissue paper banners, cut-out silhouettes of calaveras and marigolds, backlit by warm candle light, translucent magenta orange purple green paper, visible chisel cuts, fluttering in wind, shallow depth of field, stop-motion feel, vertical 9:16, no text"
+   "id": "scene_003",
+   "arc": "desarrollo",
+   "duration_seconds": 11.8,
+   "narration": "Luego, el fuego: las velas y veladoras. Son la luz que los guía hasta la casa. En muchas ofrendas se colocan en cruz, marcando los cuatro puntos cardinales.",
+   "on_screen_text": "Fuego",
+   "visual_description": "Ilustración generada con IA, estilo Claymation / plastilina (propio) (interpretación artística)",
+   "image_prompt": "claymation stop-motion scene, plasticine characters and set with visible fingerprints, soft studio lighting, miniature handmade props, vertical 9:16, no text + clay candles arranged in a cross shape on an altar floor, warm flames lighting a papier-mache house doorway",
+   "source_ids": [
+    "SRC-001",
+    "SRC-003"
+   ],
+   "asset_filename": "frames/scene_003.png",
+   "ambiente": "viento",
+   "sfx": [],
+   "image_origen": {
+    "tipo": "ia_generada",
+    "herramienta": "GenerateImage"
+   },
+   "capa": {
+    "tipo": "dato",
+    "valor": "4",
+    "etiqueta": "puntos cardinales",
+    "fuente": "Smithsonian"
+   }
   },
   {
-   "t": "30-44",
-   "prompt_frame": "Pan de muerto, fruta y mole humeante sobre mantel bordado. Estilo: handmade Mexican papel picado tissue paper banners, cut-out silhouettes of calaveras and marigolds, backlit by warm candle light, translucent magenta orange purple green paper, visible chisel cuts, fluttering in wind, shallow depth of field, stop-motion feel, vertical 9:16, no text"
+   "id": "scene_004",
+   "arc": "desarrollo",
+   "duration_seconds": 10.6,
+   "narration": "La tierra es la comida: el pan de muerto, la fruta, el mole, el platillo que más le gustaba. Llegan con hambre después del viaje.",
+   "on_screen_text": "Tierra",
+   "visual_description": "Ilustración generada con IA, estilo Claymation / plastilina (propio) (interpretación artística)",
+   "image_prompt": "claymation stop-motion scene, plasticine characters and set with visible fingerprints, soft studio lighting, miniature handmade props, vertical 9:16, no text + clay miniature pan de muerto, fruits, a clay pot of mole on a festive altar table",
+   "source_ids": [
+    "SRC-001",
+    "SRC-003"
+   ],
+   "asset_filename": "frames/scene_004.png",
+   "ambiente": "viento",
+   "sfx": [],
+   "image_origen": {
+    "tipo": "ia_generada",
+    "herramienta": "GenerateImage"
+   }
   },
   {
-   "t": "44-58",
-   "prompt_frame": "Camino de pétalos de cempasúchil de la puerta al altar, luz cálida. Estilo: handmade Mexican papel picado tissue paper banners, cut-out silhouettes of calaveras and marigolds, backlit by warm candle light, translucent magenta orange purple green paper, visible chisel cuts, fluttering in wind, shallow depth of field, stop-motion feel, vertical 9:16, no text"
+   "id": "scene_005",
+   "arc": "cierre_historia",
+   "duration_seconds": 12.2,
+   "narration": "Y para que no se pierdan: cempasúchil, cempoalxóchitl, «veinte flores» en náhuatl. Su color y su olor marcan el camino. Hoy, los pétalos van de la puerta al altar.",
+   "on_screen_text": "Veinte flores",
+   "visual_description": "Ilustración generada con IA, estilo Claymation / plastilina (propio) (interpretación artística)",
+   "image_prompt": "claymation stop-motion scene, plasticine characters and set with visible fingerprints, soft studio lighting, miniature handmade props, vertical 9:16, no text + a path of bright orange clay marigold petals leading from a papier-mache front door to the altar",
+   "source_ids": [
+    "SRC-005",
+    "SRC-003"
+   ],
+   "asset_filename": "frames/scene_005.png",
+   "ambiente": "viento",
+   "sfx": [],
+   "image_origen": {
+    "tipo": "ia_generada",
+    "herramienta": "GenerateImage"
+   },
+   "capa": {
+    "tipo": "dato",
+    "valor": "20",
+    "etiqueta": "flores: cempoalxóchitl",
+    "fuente": "SEP Chamakes"
+   }
   },
   {
-   "t": "58-68",
-   "prompt_frame": "Papel picado de Huixcolotla se mueve solo con el aire sobre la ofrenda completa; cierre canal. Estilo: handmade Mexican papel picado tissue paper banners, cut-out silhouettes of calaveras and marigolds, backlit by warm candle light, translucent magenta orange purple green paper, visible chisel cuts, fluttering in wind, shallow depth of field, stop-motion feel, vertical 9:16, no text"
+   "id": "scene_006",
+   "arc": "reflexion_o_pregunta",
+   "duration_seconds": 14.9,
+   "narration": "Agua, fuego, tierra… y el viento que pica a cincel un pueblo de Puebla. Cuando el papel picado se mueve en tu ofrenda, según la tradición, es que alguien ya llegó. Esto fue Datos y ociosidades.",
+   "on_screen_text": "Alguien ya llegó",
+   "visual_description": "Ilustración generada con IA, estilo Claymation / plastilina (propio) (interpretación artística)",
+   "image_prompt": "claymation stop-motion scene, plasticine characters and set with visible fingerprints, soft studio lighting, miniature handmade props, vertical 9:16, no text + complete papier-mache altar at night with water, candles, food, marigolds and papel picado moving as if a gentle breeze arrived",
+   "source_ids": [
+    "SRC-001",
+    "SRC-002"
+   ],
+   "asset_filename": "frames/scene_006.png",
+   "ambiente": "viento",
+   "sfx": [],
+   "image_origen": {
+    "tipo": "ia_generada",
+    "herramienta": "GenerateImage"
+   }
   }
  ],
- "serie_link": {
-  "parte_anterior": "2026-10-26_papel-picado-dia-muertos",
-  "hook_recibido": "viento = 1 de 4; si falta uno, no encuentra el camino",
-  "plano_puente": "P1 termina y P2 abre en la misma ofrenda/camino de pétalos"
- }
+ "target_duration_seconds": 77
 }

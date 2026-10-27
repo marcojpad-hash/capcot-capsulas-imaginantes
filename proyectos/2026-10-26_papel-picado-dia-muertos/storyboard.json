@@ -4,27 +4,6 @@
  "title": "Papel picado, parte 1: nació en una tienda de raya",
  "language": "es-MX",
  "aspect_ratio": "9:16",
- "target_duration_seconds": 72,
- "estilo_id": "papel_picado_cincel",
- "estilo_propuesto": {
-  "nombre": "Papel picado animado (cincel y luz)",
-  "prompt_base": "handmade Mexican papel picado tissue paper banners, cut-out silhouettes of calaveras and marigolds, backlit by warm candle light, translucent magenta orange purple green paper, visible chisel cuts, fluttering in wind, shallow depth of field, stop-motion feel, vertical 9:16, no text",
-  "paleta": "rosa mexicano, cempasúchil, morado, verde limón, azul rey sobre negro",
-  "base_existente": "deriva de 'papel_recortado_popup' y 'stop-motion de papel (propio)'",
-  "musica_sugerida": "jarana/son suave o marimba lenta (CC0)",
-  "movimiento": "tiras que ondean, cortes que se 'abren' revelando la escena siguiente a través de los huecos"
- },
- "voice": {
-  "engine": "edge-tts",
-  "voice_id": "es-MX-JorgeNeural",
-  "rate": "+7%",
-  "pitch": "-2Hz",
-  "pad_seconds": 0.35
- },
- "estado": "borrador_guion — NO renderizar (esperando créditos Canva IA)",
- "publicacion_sugerida": "2026-10-26 21:00 (CDMX) YT+TT",
- "titulo_yt": "El papel picado nació de una DEUDA 😳 (Parte 1) #Shorts",
- "caption_tt": "Ese papel que adorna tu ofrenda viene de las tiendas de raya del Porfiriato… y de un pueblo donde 3 de cada 4 personas lo fabrican. Parte 1/2: el viento. En la parte 2, los otros tres 🟣🟠 #PapelPicado #DíaDeMuertos #Puebla #DatosYOciosidades",
  "sources": [
   {
    "id": "SRC-001",
@@ -61,42 +40,235 @@
    "supports": [
     "papel picado = viento; 4 elementos"
    ]
-  },
-  {
-   "id": "SRC-S2",
-   "cita_corta": "INAH – Ofrendas para los muertos",
-   "url": "https://www.inah.gob.mx/foto-del-dia/ofrendas-para-los-muertos",
-   "accessed": "2026-10-25",
-   "supports": [
-    "papel picado representa el viento"
-   ]
   }
  ],
- "escenas": [
+ "titulo_yt": "El papel picado nació de una DEUDA 😳 (Parte 1) #Shorts",
+ "caption_tt": "Ese papel que adorna tu ofrenda viene de las tiendas de raya del Porfiriato… y de un pueblo donde 3 de cada 4 personas lo fabrican. Parte 1/2: el viento. En la parte 2, los otros tres 🟣🟠 #PapelPicado #DíaDeMuertos #Puebla #DatosYOciosidades",
+ "titulo": "El papel picado nació de una deuda",
+ "titulo_estilo": {
+  "font": "/usr/share/fonts/truetype/sand-box/google/Alfa Slab One/AlfaSlabOne-Regular.ttf",
+  "size": 88,
+  "caja_rgb": [
+   238,
+   224,
+   190
+  ],
+  "texto_rgb": [
+   34,
+   42,
+   92
+  ],
+  "subrayado_rgb": [
+   204,
+   122,
+   32
+  ]
+ },
+ "estructura": "historia",
+ "estilo_id": "papel_recortado_popup",
+ "estilo_visual": "Recortes de papel stop-motion / libro pop-up",
+ "trend_source": {
+  "tipo": "efemeride_cultural",
+  "medio": "Excélsior/AFP",
+  "url": "https://www.excelsior.com.mx/nacional/papel-picado-mexicano-san-salvador-huixcolotla",
+  "fecha_publicacion": "2026-10-16",
+  "termino": "papel picado Huixcolotla",
+  "fecha_consulta": "2026-10-25"
+ },
+ "voice": {
+  "engine": "edge-tts",
+  "voice_id": "es-MX-JorgeNeural",
+  "rate": "+7%",
+  "pitch": "-2Hz",
+  "pad_seconds": 0.3,
+  "modo_pausas": "continuo"
+ },
+ "cortinilla_fuentes": {
+  "duration_seconds": 6,
+  "titulo": "Fuentes",
+  "aviso": "Ilustraciones generadas con IA en estilo papel recortado; interpretación artística. Voz sintética con IA (edge-tts). Música sintetizada.",
+  "bg_rgb": [
+   28,
+   30,
+   52
+  ],
+  "firma": "Datos y ociosidades · @datosyociosidades"
+ },
+ "audio": {
+  "music_asset": "sintetico:marimba",
+  "cama_musical": "marimba",
+  "music_lufs": -27,
+  "ambiente_lufs": -28,
+  "music_license": "Sintetizado por scripts/cama_sonora.py (obra propia)",
+  "sfx_license": "Wikimedia Commons CC0/PD, ver assets/sfx/LICENCIAS.json",
+  "ambiente": "viento"
+ },
+ "export": {
+  "filename": "capsula.mp4",
+  "resolution": "1080x1920",
+  "fps": 30,
+  "subtitle_max_words": 3,
+  "plano_seconds": 2.5,
+  "loudness_lufs": -14
+ },
+ "canal": {
+  "nombre": "Datos y ociosidades",
+  "handle": "@datosyociosidades",
+  "youtube_channel_id": "UCU2ZI-6pBJEr9aSFsF6bxLw"
+ },
+ "origen": "propia",
+ "parece_real": false,
+ "proveedor_imagenes": "GenerateImage (IA) con prompt_base del estilo",
+ "estado": "render 2026-10-25 noche",
+ "scenes": [
   {
-   "t": "0-5",
-   "prompt_frame": "Tira de papel picado ondea; un hueco revela una moneda/ficha de hacienda. Estilo: handmade Mexican papel picado tissue paper banners, cut-out silhouettes of calaveras and marigolds, backlit by warm candle light, translucent magenta orange purple green paper, visible chisel cuts, fluttering in wind, shallow depth of field, stop-motion feel, vertical 9:16, no text"
+   "id": "scene_001",
+   "arc": "hook_medias_res",
+   "duration_seconds": 4.7,
+   "narration": "El papel picado de tu ofrenda nació… de una deuda.",
+   "on_screen_text": "Nació de una deuda",
+   "visual_description": "Ilustración generada con IA, estilo Recortes de papel stop-motion / libro pop-up (interpretación artística)",
+   "image_prompt": "stop-motion paper cut-out scene inside an open pop-up book box, newsprint and sepia paper figures, red thread accents, cardboard background, warm dim lamp light, handmade feel, vertical 9:16, no text + a fluttering papel picado banner with skull and marigold cut-outs, through one cut hole a hacienda token coin is visible",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "asset_filename": "frames/scene_001.png",
+   "ambiente": "viento",
+   "sfx": [],
+   "image_origen": {
+    "tipo": "ia_generada",
+    "herramienta": "GenerateImage"
+   }
   },
   {
-   "t": "5-20",
-   "prompt_frame": "Tienda de raya de hacienda, libreta de deudas, rollos de papel de China. Estilo: handmade Mexican papel picado tissue paper banners, cut-out silhouettes of calaveras and marigolds, backlit by warm candle light, translucent magenta orange purple green paper, visible chisel cuts, fluttering in wind, shallow depth of field, stop-motion feel, vertical 9:16, no text"
+   "id": "scene_002",
+   "arc": "desarrollo",
+   "duration_seconds": 14.5,
+   "narration": "A mediados del siglo XIX, en las haciendas de Puebla, los peones compraban a cuenta de su salario en la tienda de raya. Ahí vendían un papel delgadísimo traído de lejos: el papel de China.",
+   "on_screen_text": "La tienda de raya",
+   "visual_description": "Ilustración generada con IA, estilo Recortes de papel stop-motion / libro pop-up (interpretación artística)",
+   "image_prompt": "stop-motion paper cut-out scene inside an open pop-up book box, newsprint and sepia paper figures, red thread accents, cardboard background, warm dim lamp light, handmade feel, vertical 9:16, no text + a 19th century Mexican hacienda company store counter with a debt ledger book and rolls of colorful tissue paper, paper peasant figures in sombreros",
+   "source_ids": [
+    "SRC-001",
+    "SRC-002"
+   ],
+   "asset_filename": "frames/scene_002.png",
+   "ambiente": "viento",
+   "sfx": [],
+   "image_origen": {
+    "tipo": "ia_generada",
+    "herramienta": "GenerateImage"
+   },
+   "capa": {
+    "tipo": "mapa",
+    "region": [
+     -99.5,
+     -96.5,
+     17.8,
+     20.2
+    ],
+    "titulo": "Huixcolotla, Puebla",
+    "puntos": [
+     {
+      "nombre": "San Salvador Huixcolotla",
+      "lon": -97.77,
+      "lat": 18.92
+     }
+    ],
+    "fuente": "La Jornada de Oriente 2011"
+   }
   },
   {
-   "t": "20-35",
-   "prompt_frame": "Manos cortando amate con navaja → transición a papel de China multicolor. Estilo: handmade Mexican papel picado tissue paper banners, cut-out silhouettes of calaveras and marigolds, backlit by warm candle light, translucent magenta orange purple green paper, visible chisel cuts, fluttering in wind, shallow depth of field, stop-motion feel, vertical 9:16, no text"
+   "id": "scene_003",
+   "arc": "desarrollo",
+   "duration_seconds": 11.8,
+   "narration": "En San Salvador Huixcolotla, «lugar de espinas torcidas» en náhuatl, los campesinos ya recortaban figuras en papel amate. Con el papel de China, el recorte se volvió encaje.",
+   "on_screen_text": "Del amate al encaje",
+   "visual_description": "Ilustración generada con IA, estilo Recortes de papel stop-motion / libro pop-up (interpretación artística)",
+   "image_prompt": "stop-motion paper cut-out scene inside an open pop-up book box, newsprint and sepia paper figures, red thread accents, cardboard background, warm dim lamp light, handmade feel, vertical 9:16, no text + paper cut-out hands cutting figures from brown bark amate paper, transforming into delicate lace-like colorful tissue paper",
+   "source_ids": [
+    "SRC-001",
+    "SRC-002"
+   ],
+   "asset_filename": "frames/scene_003.png",
+   "ambiente": "viento",
+   "sfx": [],
+   "image_origen": {
+    "tipo": "ia_generada",
+    "herramienta": "GenerateImage"
+   }
   },
   {
-   "t": "35-52",
-   "prompt_frame": "Macro: martillo y cincel atravesando 50 hojas apiladas; plantilla de calavera. Estilo: handmade Mexican papel picado tissue paper banners, cut-out silhouettes of calaveras and marigolds, backlit by warm candle light, translucent magenta orange purple green paper, visible chisel cuts, fluttering in wind, shallow depth of field, stop-motion feel, vertical 9:16, no text"
+   "id": "scene_004",
+   "arc": "desarrollo",
+   "duration_seconds": 14.5,
+   "narration": "No se corta con tijeras: se pica. Se apilan unos cincuenta pliegos, se pone una plantilla y se golpea con martillo y cincel. Un error en el detalle más pequeño… y se arruinan los cincuenta.",
+   "on_screen_text": "Martillo y cincel",
+   "visual_description": "Ilustración generada con IA, estilo Recortes de papel stop-motion / libro pop-up (interpretación artística)",
+   "image_prompt": "stop-motion paper cut-out scene inside an open pop-up book box, newsprint and sepia paper figures, red thread accents, cardboard background, warm dim lamp light, handmade feel, vertical 9:16, no text + close-up of a paper cut-out artisan hand holding a hammer and chisel striking a tall stack of fifty tissue paper sheets under a skull template",
+   "source_ids": [
+    "SRC-002"
+   ],
+   "asset_filename": "frames/scene_004.png",
+   "ambiente": "viento",
+   "sfx": [],
+   "image_origen": {
+    "tipo": "ia_generada",
+    "herramienta": "GenerateImage"
+   },
+   "capa": {
+    "tipo": "dato",
+    "valor": "50",
+    "etiqueta": "pliegos por golpe",
+    "fuente": "Excélsior/AFP 2026"
+   }
   },
   {
-   "t": "52-65",
-   "prompt_frame": "Calles de Huixcolotla con tendederos de papel picado. Estilo: handmade Mexican papel picado tissue paper banners, cut-out silhouettes of calaveras and marigolds, backlit by warm candle light, translucent magenta orange purple green paper, visible chisel cuts, fluttering in wind, shallow depth of field, stop-motion feel, vertical 9:16, no text"
+   "id": "scene_005",
+   "arc": "cierre_historia",
+   "duration_seconds": 10.6,
+   "narration": "Hoy, cerca de tres de cada cuatro habitantes de Huixcolotla viven de esto, y desde mil novecientos noventa y ocho es Patrimonio Cultural de Puebla.",
+   "on_screen_text": "3 de cada 4",
+   "visual_description": "Ilustración generada con IA, estilo Recortes de papel stop-motion / libro pop-up (interpretación artística)",
+   "image_prompt": "stop-motion paper cut-out scene inside an open pop-up book box, newsprint and sepia paper figures, red thread accents, cardboard background, warm dim lamp light, handmade feel, vertical 9:16, no text + a small Mexican town street in paper cut-out style with many clotheslines of colorful papel picado banners between houses",
+   "source_ids": [
+    "SRC-002",
+    "SRC-003"
+   ],
+   "asset_filename": "frames/scene_005.png",
+   "ambiente": "viento",
+   "sfx": [],
+   "image_origen": {
+    "tipo": "ia_generada",
+    "herramienta": "GenerateImage"
+   },
+   "capa": {
+    "tipo": "dato",
+    "valor": "3 de 4",
+    "etiqueta": "habitantes viven del papel picado",
+    "fuente": "Excélsior/AFP 2026"
+   }
   },
   {
-   "t": "65-72",
-   "prompt_frame": "Ofrenda de noche: papel picado moviéndose con el aire; cámara baja hacia una vela, un vaso de agua y un camino de pétalos de cempasúchil que se pierde en la oscuridad (teaser parte 2). Estilo: handmade Mexican papel picado tissue paper banners, cut-out silhouettes of calaveras and marigolds, backlit by warm candle light, translucent magenta orange purple green paper, visible chisel cuts, fluttering in wind, shallow depth of field, stop-motion feel, vertical 9:16, no text"
+   "id": "scene_006",
+   "arc": "reflexion_o_pregunta",
+   "duration_seconds": 18.4,
+   "narration": "¿Y por qué cuelga en tu ofrenda? Porque, según la tradición, es el viento. Pero el viento es solo uno de cuatro elementos… y si falta uno, tu muerto no encuentra el camino. Los otros tres, en la parte dos. Esto fue Datos y ociosidades.",
+   "on_screen_text": "Parte 2: los otros tres",
+   "visual_description": "Ilustración generada con IA, estilo Recortes de papel stop-motion / libro pop-up (interpretación artística)",
+   "image_prompt": "stop-motion paper cut-out scene inside an open pop-up book box, newsprint and sepia paper figures, red thread accents, cardboard background, warm dim lamp light, handmade feel, vertical 9:16, no text + a night Day of the Dead altar with papel picado moving in the air, a candle, a glass of water and a path of marigold petals vanishing into darkness",
+   "source_ids": [
+    "SRC-S1",
+    "SRC-002"
+   ],
+   "asset_filename": "frames/scene_006.png",
+   "ambiente": "viento",
+   "sfx": [],
+   "image_origen": {
+    "tipo": "ia_generada",
+    "herramienta": "GenerateImage"
+   }
   }
  ],
- "cierre_hook": "Viento = 1 de 4 elementos; si falta uno, el muerto no encuentra el camino → Parte 2"
+ "target_duration_seconds": 80
 }

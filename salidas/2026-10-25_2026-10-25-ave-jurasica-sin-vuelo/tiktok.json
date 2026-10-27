@@ -1,17 +1,18 @@
 {
- "estado": "pendiente_tiktok",
- "mp4": "/workspace/capcot/salidas/2026-10-25_2026-10-25-ave-jurasica-sin-vuelo/capsula.mp4",
- "caption": "¿Un ave con dientes de dinosaurio y garra en forma de hoz?\n\nYuezhuornis yangyuanensis, un avial del Jurásico tardío (150–148 Ma) de la fauna de Zhenghe (Fujian, China), combina dientes aserrados y garra en hoz de deinonicosaurio con brazos cortos y patas de ave terrestre: el caso más antiguo conocido de un ave sin vuelo (Nature, 2026).\n\nFuentes en YouTube @datosyociosidades\n\n#aprendeentiktok #sabiasque #ciencia #divulgacioncientifica #paleontologia",
- "hashtags": [
-  "#aprendeentiktok",
-  "#sabiasque",
-  "#ciencia",
-  "#divulgacioncientifica",
-  "#paleontologia"
- ],
- "descripcion_completa": "¿Un ave con dientes de dinosaurio y garra en forma de hoz?\n\nUn ave de hace 150 millones de años con dientes de dinosaurio… y sin vuelo. Una cápsula de Datos y ociosidades: datos verificados contados como historia.\n\nFuentes:\n• Xu, L., Wang, M., Lin, G. et al. (2026). Jurassic flightless bird reveals early ecological diversity of avialans. Nature 658, 690. https://doi.org/10.1038/s41586-026-10972-z\n• Chinese Academy of Sciences / ScienceDaily (2026). This 150-million-year-old bird had dinosaur teeth and a strange secret. 23 oct 2026. https://www.sciencedaily.com/releases/2026/10/261023023710.htm\n\nImágenes reales de referencia (Audubon, Owen, Haeckel, Darwin: dominio público; T. Evanson CC BY-SA 2.0; Fowler et al. 2011 CC BY 2.5; rheins CC BY 3.0) con filtro de linograbado; no representan a Yuezhuornis · voz sintética con IA · audio sintetizado.\nFuentes en YouTube @datosyociosidades\n\n#aprendeentiktok #sabiasque #ciencia #divulgacioncientifica #paleontologia",
- "cuenta": "@datosyociosidades",
- "hora_sugerida_local": "2026-10-25 21:05 CDMX (UTC-6)",
- "yt_id": "IzWU_1BXq3Q",
- "instruccion": "Mj publica desde su teléfono (NO subir desde el navegador del bot). Etiquetar como contenido generado por IA si TikTok lo ofrece. Al publicar: estado='publicado_tiktok' y url."
+  "estado": "reemplazado_por_remake",
+  "mp4": "/workspace/capcot/salidas/2026-10-25_2026-10-25-ave-jurasica-sin-vuelo/capsula.mp4",
+  "caption": "¿Un ave con dientes de dinosaurio y garra en forma de hoz?\n\nYuezhuornis yangyuanensis, un avial del Jurásico tardío (150–148 Ma) de la fauna de Zhenghe (Fujian, China), combina dientes aserrados y garra en hoz de deinonicosaurio con brazos cortos y patas de ave terrestre: el caso más antiguo conocido de un ave sin vuelo (Nature, 2026).\n\nFuentes en YouTube @datosyociosidades\n\n#aprendeentiktok #sabiasque #ciencia #divulgacioncientifica #paleontologia",
+  "hashtags": [
+    "#aprendeentiktok",
+    "#sabiasque",
+    "#ciencia",
+    "#divulgacioncientifica",
+    "#paleontologia"
+  ],
+  "descripcion_completa": "¿Un ave con dientes de dinosaurio y garra en forma de hoz?\n\nUn ave de hace 150 millones de años con dientes de dinosaurio… y sin vuelo. Una cápsula de Datos y ociosidades: datos verificados contados como historia.\n\nFuentes:\n• Xu, L., Wang, M., Lin, G. et al. (2026). Jurassic flightless bird reveals early ecological diversity of avialans. Nature 658, 690. https://doi.org/10.1038/s41586-026-10972-z\n• Chinese Academy of Sciences / ScienceDaily (2026). This 150-million-year-old bird had dinosaur teeth and a strange secret. 23 oct 2026. https://www.sciencedaily.com/releases/2026/10/261023023710.htm\n\nImágenes reales de referencia (Audubon, Owen, Haeckel, Darwin: dominio público; T. Evanson CC BY-SA 2.0; Fowler et al. 2011 CC BY 2.5; rheins CC BY 3.0) con filtro de linograbado; no representan a Yuezhuornis · voz sintética con IA · audio sintetizado.\nFuentes en YouTube @datosyociosidades\n\n#aprendeentiktok #sabiasque #ciencia #divulgacioncientifica #paleontologia",
+  "cuenta": "@datosyociosidades",
+  "hora_sugerida_local": "2026-10-25 21:05 CDMX (UTC-6)",
+  "yt_id": "IzWU_1BXq3Q",
+  "instruccion": "Mj publica desde su teléfono (NO subir desde el navegador del bot). Etiquetar como contenido generado por IA si TikTok lo ofrece. Al publicar: estado='publicado_tiktok' y url.",
+  "nota_rutina": "25-oct 16:20: sustituido por 2026-10-25_ave-jurasica-REMAKE (programado_tiktok 26-oct 20:00)"
 }

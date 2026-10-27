@@ -4,7 +4,7 @@
  "title": "El oso que aprendió a no morir",
  "language": "es-MX",
  "aspect_ratio": "9:16",
- "target_duration_seconds": 82,
+ "target_duration_seconds": 85,
  "audience": "Público general en redes (TikTok/Shorts)",
  "estilo_visual": "Amigurumi (muñecos tejidos a crochet) en miniatura, foto macro con Ken Burns, paleta de musgo verde y luz cálida que se vuelve fría",
  "music_mood": "Piano melancólico solo, notas espaciadas; sin efectos de sonido",
@@ -18,9 +18,10 @@
  "voice": {
   "engine": "edge-tts",
   "voice_id": "es-MX-JorgeNeural",
-  "rate": "-8%",
+  "rate": "+7%",
   "pitch": "-2Hz",
-  "pad_seconds": 0.8
+  "pad_seconds": 0.3,
+  "modo_pausas": "continuo"
  },
  "sources": [
   {
@@ -43,9 +44,9 @@
  "scenes": [
   {
    "id": "scene_001",
-   "duration_seconds": 8,
-   "narration": "",
-   "on_screen_text": "",
+   "duration_seconds": 12.15,
+   "narration": "Sabías que hay un animalito del tamaño de un grano de arroz que puede secarse por completo… y volver a la vida con una gota de agua?",
+   "on_screen_text": "El oso que no muere",
    "visual_description": "Un tardígrado amigurumi de ocho patas regordetas camina sobre una gota de agua en musgo tejido",
    "source_ids": [
     "SRC-002"
@@ -55,13 +56,17 @@
    "status": "planned",
    "notes": "",
    "arc": "hook_medias_res",
-   "image_prompt": "Vertical 9:16 frame, Amigurumi (muñecos tejidos a crochet) en miniatura, foto macro con Ken Burns, paleta de musgo verde y luz cálida que se vuelve fría. Un tardígrado amigurumi de ocho patas regordetas camina sobre una gota de agua en musgo tejido. Cinematic, shallow depth of field, no text."
+   "image_prompt": "Vertical 9:16 frame, Amigurumi (muñecos tejidos a crochet) en miniatura, foto macro con Ken Burns, paleta de musgo verde y luz cálida que se vuelve fría. Un tardígrado amigurumi de ocho patas regordetas camina sobre una gota de agua en musgo tejido. Cinematic, shallow depth of field, no text.",
+   "sfx": [
+    "lluvia"
+   ],
+   "ambiente": "lluvia"
   },
   {
    "id": "scene_002",
-   "duration_seconds": 10,
-   "narration": "",
-   "on_screen_text": "El charco se seca",
+   "duration_seconds": 9.0,
+   "narration": "Se llama tardígrado. También le dicen oso de agua. Vive en musgo húmedo, en charcos minúsculos que aparecen y desaparecen con el sol.",
+   "on_screen_text": "Oso de agua",
    "visual_description": "El sol tejido brilla fuerte; la gota se encoge; el tardígrado mira alrededor, preocupado",
    "source_ids": [
     "SRC-002"
@@ -71,13 +76,17 @@
    "status": "planned",
    "notes": "",
    "arc": "desarrollo",
-   "image_prompt": "Vertical 9:16 frame, Amigurumi (muñecos tejidos a crochet) en miniatura, foto macro con Ken Burns, paleta de musgo verde y luz cálida que se vuelve fría. El sol tejido brilla fuerte; la gota se encoge; el tardígrado mira alrededor, preocupado. Cinematic, shallow depth of field, no text."
+   "image_prompt": "Vertical 9:16 frame, Amigurumi (muñecos tejidos a crochet) en miniatura, foto macro con Ken Burns, paleta de musgo verde y luz cálida que se vuelve fría. El sol tejido brilla fuerte; la gota se encoge; el tardígrado mira alrededor, preocupado. Cinematic, shallow depth of field, no text.",
+   "sfx": [
+    "lluvia"
+   ],
+   "ambiente": "lluvia"
   },
   {
    "id": "scene_003",
-   "duration_seconds": 12,
-   "narration": "",
-   "on_screen_text": "",
+   "duration_seconds": 10.8,
+   "narration": "Cuando el charco se seca, no pelea contra la sequía. Se encoge, pierde casi toda el agua y se vuelve una bolita dura: un tun.",
+   "on_screen_text": "Estado tun",
    "visual_description": "Se recoge sobre sí mismo hasta volverse una bolita de estambre: un 'tun'; el musgo se vuelve café",
    "source_ids": [
     "SRC-002"
@@ -87,12 +96,16 @@
    "status": "planned",
    "notes": "",
    "arc": "desarrollo",
-   "image_prompt": "Vertical 9:16 frame, Amigurumi (muñecos tejidos a crochet) en miniatura, foto macro con Ken Burns, paleta de musgo verde y luz cálida que se vuelve fría. Se recoge sobre sí mismo hasta volverse una bolita de estambre: un 'tun'; el musgo se vuelve café. Cinematic, shallow depth of field, no text."
+   "image_prompt": "Vertical 9:16 frame, Amigurumi (muñecos tejidos a crochet) en miniatura, foto macro con Ken Burns, paleta de musgo verde y luz cálida que se vuelve fría. Se recoge sobre sí mismo hasta volverse una bolita de estambre: un 'tun'; el musgo se vuelve café. Cinematic, shallow depth of field, no text.",
+   "sfx": [
+    "viento"
+   ],
+   "ambiente": "viento"
   },
   {
    "id": "scene_004",
-   "duration_seconds": 12,
-   "narration": "Para no romperse, se convirtió en vidrio.",
+   "duration_seconds": 9.9,
+   "narration": "Adentro, proteínas desordenadas de su cuerpo se ordenan y lo convierten en algo parecido a vidrio. Así no se rompe su maquinaria interna.",
    "on_screen_text": "Se vuelve vidrio",
    "visual_description": "Dentro de la bolita, hilos translúcidos se cristalizan como vitral alrededor de su corazón tejido",
    "source_ids": [
@@ -103,12 +116,16 @@
    "status": "planned",
    "notes": "",
    "arc": "desarrollo",
-   "image_prompt": "Vertical 9:16 frame, Amigurumi (muñecos tejidos a crochet) en miniatura, foto macro con Ken Burns, paleta de musgo verde y luz cálida que se vuelve fría. Dentro de la bolita, hilos translúcidos se cristalizan como vitral alrededor de su corazón tejido. Cinematic, shallow depth of field, no text."
+   "image_prompt": "Vertical 9:16 frame, Amigurumi (muñecos tejidos a crochet) en miniatura, foto macro con Ken Burns, paleta de musgo verde y luz cálida que se vuelve fría. Dentro de la bolita, hilos translúcidos se cristalizan como vitral alrededor de su corazón tejido. Cinematic, shallow depth of field, no text.",
+   "sfx": [
+    "madera"
+   ],
+   "ambiente": "madera"
   },
   {
    "id": "scene_005",
-   "duration_seconds": 12,
-   "narration": "Años después, una sola gota basta para despertarlo.",
+   "duration_seconds": 8.55,
+   "narration": "Puede pasar años así, quieto. Luego basta una sola gota: se rehidrata, estira las patas y sigue como si el tiempo no hubiera pasado.",
    "on_screen_text": "Una gota lo despierta",
    "visual_description": "Lluvia de cuentas de vidrio; la bolita se desenrolla; el tardígrado estira las patas",
    "source_ids": [
@@ -119,13 +136,17 @@
    "status": "planned",
    "notes": "",
    "arc": "desarrollo",
-   "image_prompt": "Vertical 9:16 frame, Amigurumi (muñecos tejidos a crochet) en miniatura, foto macro con Ken Burns, paleta de musgo verde y luz cálida que se vuelve fría. Lluvia de cuentas de vidrio; la bolita se desenrolla; el tardígrado estira las patas. Cinematic, shallow depth of field, no text."
+   "image_prompt": "Vertical 9:16 frame, Amigurumi (muñecos tejidos a crochet) en miniatura, foto macro con Ken Burns, paleta de musgo verde y luz cálida que se vuelve fría. Lluvia de cuentas de vidrio; la bolita se desenrolla; el tardígrado estira las patas. Cinematic, shallow depth of field, no text.",
+   "sfx": [
+    "lluvia"
+   ],
+   "ambiente": "lluvia"
   },
   {
    "id": "scene_006",
-   "duration_seconds": 12,
-   "narration": "Hoy, una de sus proteínas protege también células humanas de la radiación.",
-   "on_screen_text": "Su escudo, en células humanas",
+   "duration_seconds": 10.8,
+   "narration": "En dos mil dieciséis, un equipo en Japón encontró una proteína suya llamada Dsup, que protege el ADN. Hoy se prueba en células humanas contra la radiación.",
+   "on_screen_text": "Proteína Dsup",
    "visual_description": "Una pequeña célula tejida recibe del tardígrado una bufanda brillante, mientras rayos de lana roja rebotan",
    "source_ids": [
     "SRC-001"
@@ -135,12 +156,16 @@
    "status": "planned",
    "notes": "",
    "arc": "cierre_historia",
-   "image_prompt": "Vertical 9:16 frame, Amigurumi (muñecos tejidos a crochet) en miniatura, foto macro con Ken Burns, paleta de musgo verde y luz cálida que se vuelve fría. Una pequeña célula tejida recibe del tardígrado una bufanda brillante, mientras rayos de lana roja rebotan. Cinematic, shallow depth of field, no text."
+   "image_prompt": "Vertical 9:16 frame, Amigurumi (muñecos tejidos a crochet) en miniatura, foto macro con Ken Burns, paleta de musgo verde y luz cálida que se vuelve fría. Una pequeña célula tejida recibe del tardígrado una bufanda brillante, mientras rayos de lana roja rebotan. Cinematic, shallow depth of field, no text.",
+   "sfx": [
+    "madera"
+   ],
+   "ambiente": "madera"
   },
   {
    "id": "scene_007",
-   "duration_seconds": 10,
-   "narration": "Sobrevivir no fue resistir, sino saber detenerse. ¿Y si a veces vivir fuera aprender a esperar?",
+   "duration_seconds": 10.8,
+   "narration": "Sobrevivir no fue resistir a la fuerza. Fue saber detenerse. ¿Y si a veces vivir fuera aprender a esperar? Esto fue Datos y ociosidades.",
    "on_screen_text": "¿Vivir es saber esperar?",
    "visual_description": "El tardígrado sentado en el musgo verde mirando una gota que cae",
    "source_ids": [
@@ -151,13 +176,18 @@
    "status": "planned",
    "notes": "",
    "arc": "reflexion_o_pregunta",
-   "image_prompt": "Vertical 9:16 frame, Amigurumi (muñecos tejidos a crochet) en miniatura, foto macro con Ken Burns, paleta de musgo verde y luz cálida que se vuelve fría. El tardígrado sentado en el musgo verde mirando una gota que cae. Cinematic, shallow depth of field, no text."
+   "image_prompt": "Vertical 9:16 frame, Amigurumi (muñecos tejidos a crochet) en miniatura, foto macro con Ken Burns, paleta de musgo verde y luz cálida que se vuelve fría. El tardígrado sentado en el musgo verde mirando una gota que cae. Cinematic, shallow depth of field, no text.",
+   "sfx": [
+    "viento"
+   ],
+   "ambiente": "viento"
   }
  ],
  "cortinilla_fuentes": {
   "duration_seconds": 6,
   "titulo": "Fuentes",
-  "aviso": "Imágenes generadas con IA. Voz sintética.",
+  "aviso": "Imágenes generadas con IA. Voz sintética. Audio sintetizado.",
+  "firma": "Datos y ociosidades · @datosyociosidades",
   "bg_rgb": [
    18,
    16,
@@ -165,9 +195,12 @@
   ]
  },
  "audio": {
-  "music_asset": "",
-  "music_license": "",
-  "music_volume": 0.25
+  "music_asset": "sintetico:menor_calma",
+  "cama_musical": "pulso",
+  "music_lufs": -27,
+  "ambiente_lufs": -28,
+  "music_license": "Sintetizado por scripts/cama_sonora.py (obra propia)",
+  "sfx_license": "Wikimedia Commons CC0/PD, ver assets/sfx/LICENCIAS.json"
  },
  "export": {
   "filename": "lote01-04-tardigrado.mp4",
@@ -175,5 +208,6 @@
   "fps": 30,
   "subtitle_max_words": 3
  },
- "estado": "GUION_OK"
+ "estado": "GUION_VOZ_OK",
+ "titulo": "El oso que no muere"
 }

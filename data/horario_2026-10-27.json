@@ -24,7 +24,7 @@
       "yt_id": "3RdSX40OCac",
       "yt_publishAt_utc": "2026-10-27T13:00:00Z",
       "tiktok": "pendiente_mj",
-      "facebook": "pendiente_fb",
+      "facebook": "programado_fb",
       "revision_mj": "LEEME: revisión Mj pendiente antes de hora"
     },
     {
@@ -50,7 +50,7 @@
       "yt_id": "nY2UqhKmAKQ",
       "yt_publishAt_utc": "2026-10-27T19:30:00Z",
       "tiktok": "pendiente_mj",
-      "facebook": "pendiente_fb",
+      "facebook": "programado_fb",
       "revision_mj": "LEEME: revisión Mj pendiente antes de hora"
     },
     {
@@ -71,7 +71,7 @@
       "yt_id": "xBqdEn1Dumg",
       "yt_publishAt_utc": "2026-10-27T20:30:00Z",
       "tiktok": "pendiente_mj",
-      "facebook": "pendiente_fb"
+      "facebook": "programado_fb"
     },
     {
       "hora": "17:00",
@@ -93,7 +93,7 @@
       "yt_id": "v6t8jKMbrhw",
       "yt_publishAt_utc": "2026-10-27T23:00:00Z",
       "tiktok": "pendiente_mj",
-      "facebook": "pendiente_fb",
+      "facebook": "programado_fb",
       "revision_mj": "LEEME: revisión Mj pendiente antes de hora"
     },
     {
@@ -117,7 +117,7 @@
       "yt_id": "YIoWXfZaMj0",
       "yt_publishAt_utc": "2026-10-28T01:00:00Z",
       "tiktok": "pendiente_mj",
-      "facebook": "pendiente_fb"
+      "facebook": "programado_fb"
     },
     {
       "hora": "23:30",
@@ -138,7 +138,7 @@
       "yt_id": "5XQfUHpyTWs",
       "yt_publishAt_utc": "2026-10-28T05:30:00Z",
       "tiktok": "pendiente_mj",
-      "facebook": "pendiente_fb",
+      "facebook": "programado_fb",
       "revision_mj": "LEEME: revisión Mj pendiente antes de hora",
       "estilo": "dibujo_cientifico_scratchboard",
       "fuente": "UC Davis News 26-oct-2026 / Nature Ecology & Evolution"
@@ -151,7 +151,7 @@
     "P4": "codex_mexica"
   },
   "actualizado_cdmx": "2026-10-27T madrugada",
-  "nota": "6/6 programados en YT (private+publishAt). TT pendiente_mj, FB pendiente_fb.",
+  "nota": "6/6 programados en YT (private+publishAt) y FB Suite. TT pendiente_mj (rutina de entrega).",
   "franjas_ref": "salidas/_ops/2026-10-26_parrilla_franjas_reporte.md",
   "meta_dia": {
     "cestas": 5,

@@ -1,8 +1,10 @@
 {
- "estado": "pendiente_fb",
- "motivo": "sin sesión Meta Business Suite verificada en el box",
+ "estado": "programado_fb",
  "mp4": "/workspace/capcot/salidas/2026-10-27_familia-ajolote/capsula.mp4",
  "caption": "En 1864, un barco llegó a Francia con una carga rara: treinta y cuatro ajolotes sacados de los canales de México.\n\nAjolotes de laboratorio: todos vienen de 34 que viajaron a París. Una cápsula de Datos y ociosidades: datos verificados contados como historia.\n\nFuentes:\n• Reiß, Olsson y Hoßfeld (2015). The history of the oldest self-sustaining laboratory animal: 150 years of axolotl research. J Exp Zool B https://doi.org/10.1002/jez.b.22617\n• Smithsonian Magazine – The Axolotl's Long Journey https://www.smithsonianmag.com/science-nature/salamander-ambystoma-mexicanum-axolotl-180976236/\n• Voss et al. (2009). Ambystoma mexicanum, the axolotl. Cold Spring Harb Protoc https://doi.org/10.1101/pdb.emo128\n\nImágenes generadas con IA · voz sintética · audio sintetizado.\nSuscríbete: @datosyociosidades\nTikTok: https://www.tiktok.com/@datosyociosidades\n\n#DatosYOciosidades #Shorts #datos #ciencia #difusión #difusióncientífica #ia #AjoloteParis1864Dumeril",
  "programar_cdmx": "2026-10-27 13:30",
- "yt_id": "nY2UqhKmAKQ"
+ "yt_id": "nY2UqhKmAKQ",
+ "programado_cdmx": "2026-10-27 13:30",
+ "programado_suite_tz": "America/Indiana/Indianapolis (CDMX+2)",
+ "fb_id": null
 }

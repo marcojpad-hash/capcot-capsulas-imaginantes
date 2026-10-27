@@ -1,8 +1,10 @@
 {
- "estado": "pendiente_fb",
- "motivo": "sin sesión Meta Business Suite verificada en el box",
+ "estado": "programado_fb",
  "mp4": "/workspace/capcot/salidas/2026-10-27_noct-anfibio-marino/capsula.mp4",
  "caption": "Dato del día.\n\nAnfibio marino: hallan el primero que vivió en el mar. Una cápsula de Datos y ociosidades: datos verificados contados como historia.\n\nFuentes:\n• UC Davis News (26-oct-2026) – Researchers Unearth Fossil Evidence of First Fully Marine Amphibian https://www.ucdavis.edu/curiosity/news/researchers-unearth-fossil-evidence-first-fully-marine-amphibian\n• Motani et al. (2026). Nature Ecology & Evolution – Gerrothorax maritimus https://www.nature.com/natecolevol/\n\nImágenes generadas con IA · voz sintética · audio sintetizado.\nSuscríbete: @datosyociosidades\nTikTok: https://www.tiktok.com/@datosyociosidades\n\n#DatosYOciosidades #Shorts #datos #ciencia #difusión #difusióncientífica #ia #GerrothoraxMaritimusAnfibioMarino",
  "programar_cdmx": "2026-10-27 23:30",
- "yt_id": "5XQfUHpyTWs"
+ "yt_id": "5XQfUHpyTWs",
+ "programado_cdmx": "2026-10-27 23:30",
+ "programado_suite_tz": "America/Indiana/Indianapolis (CDMX+2)",
+ "fb_id": null
 }

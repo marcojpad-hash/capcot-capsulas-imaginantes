@@ -99,5 +99,75 @@
   "tema": "pimiento morrón colores madurez origen México",
   "estilo": "pop_art_comic",
   "origen": "propia"
+ },
+ {
+  "fecha": "2026-10-27",
+  "project_id": "familia-ajolote",
+  "estructura": "historia",
+  "cama": "circuito_neural",
+  "duracion": 75,
+  "tema": "ajolote Paris 1864 Dumeril",
+  "estilo": "collage_cientifico_vintage",
+  "origen": "propia"
+ },
+ {
+  "fecha": "2026-10-27",
+  "project_id": "kids-serpiente-voladora",
+  "estructura": "pregunta",
+  "cama": "pulso",
+  "duracion": 70,
+  "tema": "Chrysopelea serpiente voladora planeo",
+  "estilo": "papel_infantil",
+  "origen": "propia"
+ },
+ {
+  "fecha": "2026-10-27",
+  "project_id": "familia-ajolote",
+  "estructura": "historia",
+  "cama": "pizzicato",
+  "duracion": 75,
+  "tema": "ajolote Paris 1864 Dumeril",
+  "estilo": "collage_cientifico_vintage",
+  "origen": "propia"
+ },
+ {
+  "fecha": "2026-10-27",
+  "project_id": "cempasuchil-ciencia",
+  "estructura": "mito_vs_dato",
+  "cama": "arpegio",
+  "duracion": 70,
+  "tema": "cempasuchil luteina yema nematodos",
+  "estilo": "risografia",
+  "origen": "propia"
+ },
+ {
+  "fecha": "2026-10-27",
+  "project_id": "noct-anfibio-marino",
+  "estructura": "comparacion",
+  "cama": "tambor",
+  "duracion": 70,
+  "tema": "Gerrothorax maritimus anfibio marino",
+  "estilo": "dibujo_cientifico_scratchboard",
+  "origen": "propia"
+ },
+ {
+  "fecha": "2026-10-27",
+  "project_id": "kids-serpiente-voladora",
+  "estructura": "pregunta",
+  "cama": "circuito_neural",
+  "duracion": 70,
+  "tema": "Chrysopelea serpiente voladora planeo",
+  "estilo": "papel_infantil",
+  "origen": "propia"
+ },
+ {
+  "fecha": "2026-10-27",
+  "project_id": "noct-anfibio-marino",
+  "estructura": "comparacion",
+  "cama": "marimba",
+  "duracion": 70,
+  "tema": "Gerrothorax maritimus anfibio marino",
+  "estilo": "dibujo_cientifico_scratchboard",
+  "origen": "propia"
  }
 ]
