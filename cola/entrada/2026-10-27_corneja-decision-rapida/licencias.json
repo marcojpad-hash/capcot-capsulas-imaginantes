@@ -1,0 +1,52 @@
+{
+  "project_id": "2026-10-27_corneja-decision-rapida",
+  "estado": "PRELIMINAR_NO_VALIDADO_POR_QA_OFICIAL",
+  "imagenes": {
+    "origen": "Generación original con OpenAI image_gen, 2026-10-27",
+    "cantidad": 8,
+    "formato": "JPG 1080x1920",
+    "terceros": "No se incorporaron fotografías ni ilustraciones de terceros",
+    "nota": "Ilustraciones interpretativas; no son imágenes documentales del experimento."
+  },
+  "musica": {
+    "archivo": "audio/musica_original.mp3",
+    "cama": "cognicion_7_8",
+    "origen": "Síntesis original con Python/NumPy para este paquete",
+    "licencia": "Obra original de producción; sin muestras ni grabaciones de terceros",
+    "generada_por_ia": false,
+    "duracion_segundos": 95,
+    "sample_rate_hz": 48000,
+    "canales": 2,
+    "formato": "MP3, 192 kbps CBR, derivado de síntesis original"
+  },
+  "voz": {
+    "motor_previsto": "edge-tts",
+    "voice_id": "es-MX-JorgeNeural",
+    "estado": "NO_GENERADA_EN_ESTE_ENTORNO",
+    "motivo": "edge_tts no está instalado; el runtime oficial /workspace/capcot no está disponible"
+  },
+  "sfx": {
+    "origen": "scripts/sfx_manifest.json del repositorio",
+    "licencias": "Wikimedia Commons CC0 o dominio público, según cada entrada del manifiesto",
+    "estado": "REFERENCIADOS_EN_STORYBOARD; NO DESCARGADOS EN ESTE PAQUETE"
+  },
+  "mapa": {
+    "base": "Natural Earth 110m",
+    "licencia": "Dominio público",
+    "estado": "Capa de mapa declarada en storyboard; render pendiente del pipeline CAPCOT"
+  },
+  "graficos": {
+    "origen": "Cifras del artículo DOI 10.1126/science.aed6459",
+    "estado": "Capas dato declaradas en storyboard; render pendiente del pipeline CAPCOT"
+  },
+  "fuentes": {
+    "doi": "10.1126/science.aed6459",
+    "urls": [
+      "https://doi.org/10.1126/science.aed6459",
+      "https://pubmed.ncbi.nlm.nih.gov/42912155/",
+      "https://uni-tuebingen.de/en/university/news-and-publications/press-releases/",
+      "https://arstechnica.com/science/2026/10/crows-can-evaluate-visual-info-twice-as-fast-as-mammals/",
+      "https://www.livescience.com/animals/birds/crows-may-make-lightning-fast-decisions-sometimes-twice-as-fast-as-humans-study-hints"
+    ]
+  }
+}
