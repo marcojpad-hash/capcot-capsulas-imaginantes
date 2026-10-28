@@ -96,6 +96,35 @@ Guion listo pendiente OK Mj (no producir sin OK): Machu Picchu fallas/Pisa (`per
 
 ---
 
+## ★ 0.5 Entorno de ejecución — mismos comandos, misma voz (verificado 28-oct 02:05 CDMX)
+
+Verificado en el box de Grok Bot: `edge-tts` 7.3.1 sintetiza `es-MX-JorgeNeural` OK; ffmpeg en `/usr/bin/ffmpeg`; token YT en `/home/box/.capcot/token.json`.
+
+**Regla:** Grok principal usa **exactamente** los mismos scripts y la misma voz (`es-MX-JorgeNeural`, rate +7 %, pitch −2 Hz — ya viene en cada `storyboard.json` → `voice`). No cambiar a otra voz/TTS aunque falle algo: arreglar el entorno.
+
+**Si NO tienes acceso al box de Grok Bot** (la app Grok sola no tiene shell persistente), necesitas una máquina con terminal (la de Mj o un servidor):
+```bash
+git clone https://github.com/marcojpad-hash/capcot-capsulas-imaginantes.git && cd capcot-capsulas-imaginantes
+# Sistema: ffmpeg + ffprobe y fuentes DejaVu (montar_capsula.py usa /usr/share/fonts/truetype/dejavu/DejaVuSans*.ttf)
+sudo apt install ffmpeg fonts-dejavu-core        # macOS: brew install ffmpeg + instalar DejaVu y ajustar FONT/FONT_R en scripts/montar_capsula.py
+pip install edge-tts pillow numpy matplotlib requests google-api-python-client google-auth google-auth-oauthlib google-auth-httplib2
+edge-tts --voice es-MX-JorgeNeural --text "prueba" --write-media /tmp/t.mp3   # debe generar mp3 (requiere internet)
+python3 scripts/montar_capsula.py proyectos/2026-10-24_abejas-bullying/storyboard.json -o /tmp/prueba.mp4
+```
+**Token YouTube:** `publicar.py` y `metricas.py` leen `~/.capcot/token.json` o la variable `CAPCOT_YT_TOKEN=/ruta/token.json`. El token **solo existe en el box**; no está en el repo ni debe subirse. Mj debe pasarlo por canal privado (o reautorizar con su `client_secret.json`: `~/.capcot/auth.py` tiene rutas `/home/box/...` fijas — cambiarlas a tu home). Verificar: `python3 scripts/publicar.py --verificar-yt` → debe decir `OK` con canal `UCU2ZI-6pBJEr9aSFsF6bxLw`.
+
+| Funciona solo en el box | Qué necesita Grok en local |
+|---|---|
+| `~/.capcot/token.json` + `client_secret.json` | copia privada de Mj o reautorizar OAuth |
+| ffmpeg/ffprobe, fuentes DejaVu instalados | `apt install ffmpeg fonts-dejavu-core` |
+| edge-tts, Pillow, numpy, matplotlib, google-api ya instalados | `pip install` de arriba |
+| Clone con estado local sin push (`data/estilos_usados.json`, `rotacion.json`, `temas_del_dia.json` modificados) | `git pull --rebase` tras push del bot |
+| TikTok/FB vía navegador logueado del box | sesión propia en Studio TT / Meta |
+
+Sin terminal ni box: Grok **no puede** montar ni publicar; solo puede escribir storyboard/guion y dejar paquete en `cola/entrada/` (§3.2) para que lo monte quien tenga entorno.
+
+---
+
 ## 1. Lectura obligatoria (en este orden)
 
 1. `docs/RECETA_CAPSULA.md` — reglas + JSON storyboard + estilos  
@@ -283,7 +312,7 @@ Cada vez que entres a YouTube Studio, TikTok Studio o las herramientas de la Pá
 
 | Qué | Dónde |
 |-----|--------|
-| YouTube OAuth | `~/.capcot/token.json` en el box de Imaginantes |
+| YouTube OAuth | `~/.capcot/token.json` (o `CAPCOT_YT_TOKEN`) — solo en el box; ver §0.5 |
 | Imagen API | `CAPCOT_IMAGE_API_KEY` (+ opcional `CAPCOT_IMAGE_MODEL`) |
 | LLM guion | `CAPCOT_LLM_API_KEY` / GEMINI / GROQ |
 | TikTok API | `CAPCOT_TIKTOK_ACCESS_TOKEN` (recolectar aún TODO; hoy TT se lee por Studio browser o queda null) |
