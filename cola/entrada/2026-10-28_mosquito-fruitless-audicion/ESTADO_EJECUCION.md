@@ -8,8 +8,13 @@ Paquete candidato preparado con storyboard, ocho frames, fuentes, registro preli
 - `python3 -c 'import edge_tts'`: `ModuleNotFoundError`; no está instalada la voz obligatoria `edge-tts` para `es-MX-JorgeNeural`.
 - `ffmpeg`: presente, pero no basta para producir el audio oficial.
 - Ocho imágenes se generaron manualmente con OpenAI ImageGen y se normalizaron a 1080×1920. Esto no cuenta como ejecución del proveedor ni del pipeline oficial.
-- La cama elegida es `pizzicato`, 84 BPM, distinta de las camas de los otros proyectos programados hoy (`pulso`, `marimba`, `tambor`, `arpegio`, `circuito_neural`). El archivo musical no se generó; debe producirse mediante `scripts/cama_sonora.py`.
+- Los `image_prompt` del storyboard incluyen literalmente el `prompt_base` del catálogo. Los frames se generaron manualmente con prompts descriptivos equivalentes; no se puede afirmar que el proveedor haya ejecutado literalmente cada campo del storyboard. Revisión estética de Grok pendiente.
+- La cama elegida es `pizzicato`, distinta de las camas de los otros proyectos programados hoy (`pulso`, `marimba`, `tambor`, `arpegio`, `circuito_neural`). El archivo musical no se generó; debe producirse mediante `scripts/cama_sonora.py`.
 - No se ejecutaron `procesar_cola.py`, `capsula_diaria.py`, `validar_storyboard.py --check-doi` ni `qa_capsula.py`, porque el repositorio no está clonado en el runtime de esta sesión. No se afirma QA oficial.
+
+## Coordinación del repositorio
+- `salidas/_ops/2026-10-28_HANDOFF_TOTAL_grok_principal.md` asigna temporalmente a Grok principal la producción integral de CAPCOT mientras se recuperan los créditos de los bots. Este paquete se preparó por la instrucción explícita recibida en esta conversación; no sustituye ni declara una ejecución del flujo de Grok principal.
+- La carpeta de evidencias se versiona, pero los frames permanecen únicamente en el ZIP. `data/cola.json` no se modificó y sigue sin registrar esta candidata.
 
 ## Diferencias editoriales del 28-oct
 - Tema: el gen `fruitless` y la audición de machos de `Aedes aegypti`; no aparece en `data/temas_del_dia.json` ni en los temas de los slots del `data/horario_2026-10-28.json`.
