@@ -5149,5 +5149,119 @@
     },
     "tiktok": null,
     "nota": "Reporte horario 19:00 (corrida ~18:54). Solo públicos (3 privados/programados excluidos). TikTok null: no consultado (sin navegador en subagente)."
+  },
+  {
+    "timestamp_cdmx": "2026-10-27T19:50-06:00",
+    "youtube": {
+      "YIoWXfZaMj0": {
+        "view": 44,
+        "like": 1,
+        "comment": 0
+      },
+      "v6t8jKMbrhw": {
+        "view": 176,
+        "like": 4,
+        "comment": 0
+      },
+      "xBqdEn1Dumg": {
+        "view": 145,
+        "like": 16,
+        "comment": 2
+      },
+      "nY2UqhKmAKQ": {
+        "view": 942,
+        "like": 42,
+        "comment": 1
+      },
+      "3RdSX40OCac": {
+        "view": 393,
+        "like": 6,
+        "comment": 0
+      },
+      "YKldyldCeiQ": {
+        "view": 366,
+        "like": 13,
+        "comment": 0
+      },
+      "GYxjXDh1ahc": {
+        "view": 807,
+        "like": 16,
+        "comment": 0
+      },
+      "ivVo2H9NaEU": {
+        "view": 310,
+        "like": 13,
+        "comment": 0
+      },
+      "PBDMJxOkCRk": {
+        "view": 1268,
+        "like": 28,
+        "comment": 4
+      },
+      "i9QBFPljl6M": {
+        "view": 1107,
+        "like": 24,
+        "comment": 0
+      },
+      "bYGd7QuenSk": {
+        "view": 1014,
+        "like": 24,
+        "comment": 0
+      },
+      "gIjJ0YKYQ8M": {
+        "view": 1214,
+        "like": 60,
+        "comment": 1
+      },
+      "AJR6kcnnDig": {
+        "view": 196,
+        "like": 13,
+        "comment": 0
+      },
+      "Qe2Y9xDn9QQ": {
+        "view": 977,
+        "like": 33,
+        "comment": 2
+      },
+      "3bhntOcKHPk": {
+        "view": 1434,
+        "like": 38,
+        "comment": 0
+      },
+      "O7TdKvuBjyg": {
+        "view": 13,
+        "like": 1,
+        "comment": 0
+      },
+      "r1AhsPOAS_o": {
+        "view": 1390,
+        "like": 73,
+        "comment": 4
+      },
+      "ZrUtKs7Ty7U": {
+        "view": 1321,
+        "like": 48,
+        "comment": 5
+      },
+      "5D96DmjvioU": {
+        "view": 621,
+        "like": 27,
+        "comment": 0
+      }
+    },
+    "youtube_totales": {
+      "view": 13738,
+      "like": 480,
+      "comment": 19
+    },
+    "suscriptores": 41,
+    "delta_vs_anterior": {
+      "view": 484,
+      "like": 10,
+      "comment": 0,
+      "suscriptores": 0
+    },
+    "tiktok": null,
+    "nota": "Reporte horario 20:00 (corrida ~19:50). Solo públicos (2 privados/programados excluidos). Nuevos públicos: ['YIoWXfZaMj0']. TikTok null: no consultado (sin navegador en subagente)."
   }
 ]
