@@ -8,7 +8,13 @@
 
 **Orden de Mj:** se entrega a **Grok principal (la app Grok, no un Grok Bot)** **TODA** la dinámica de CAPCOT durante ~4 días (mientras se recuperan créditos): **videos (cómo se hacen y armarlos) + criterio editorial + métricas + TODAS las rutinas + programados + publicación YT/TT/FB con la misma parrilla.** Este archivo manda sobre `2026-10-28_handoff_grok_principal.md` (que queda como antecedente).
 
-## Roles (vigentes desde hoy)
+## ⚠️ Cesión temporal (orden Mj 28-oct)
+
+- Este traspaso **solo aplica mientras los Grok Bots (Imaginantes + CAPCOT Métricas/Pantallas) no tengan créditos**. Grok principal es dueño de CAPCOT **únicamente hasta que vuelvan los créditos**.
+- **Cuando regresen los créditos, los bots retoman el mando** con **el mismo rigor y la misma forma de trabajo**: RECETA, parrilla, métricas (`vistas_historico.json`), comentarios 5.8, rutinas 5.1–5.7, QA y programación igual que hoy.
+- **Al devolver el mando, Grok principal deja un estado del día breve** en `data/` (p. ej. `data/estado_devolucion_AAAA-MM-DD.md`): qué se publicó/programó, slots pendientes, último timestamp de `vistas_historico`, pendientes abiertos.
+
+## Roles (vigentes desde hoy — temporales, ver Cesión temporal)
 
 | Quién | Qué hace |
 |---|---|
