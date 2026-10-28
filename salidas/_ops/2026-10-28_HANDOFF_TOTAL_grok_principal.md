@@ -11,16 +11,30 @@
 ## ★ Orden Mj 28-oct ~02:00 CDMX — tres cosas resueltas (sin atorarse)
 
 ### A. Plantillas y estilos — si Mj no los da, Grok los resuelve
-- **Fuentes de estilo (leer en este orden):** `docs/ESTILOS_VISUALES.md`, `docs/PROPUESTAS_PLANTILLAS_VISUALES.md`, `docs/ESTRUCTURA_VISUAL_TRENDS.md`, `salidas/_ops/2026-10-27_plantilla_acuarela_japonesa.md`, `data/tendencias_estilos.json`.
+- **Fuentes de estilo (leer en este orden):** `scripts/estilos.json`, `docs/ESTILOS_VISUALES.md`, `docs/PROPUESTAS_PLANTILLAS_VISUALES.md`, `docs/ESTRUCTURA_VISUAL_TRENDS.md`, `salidas/_ops/2026-10-27_plantilla_acuarela_japonesa.md`, `data/tendencias_estilos.json`.
 - **No repetir:** consultar `data/estilos_usados.json` y `data/rotacion.json`; no usar el mismo estilo 2 días seguidos ni en dos slots del mismo día. Registrar cada estilo usado al programar.
 - **Si Mj no entrega plantilla/estilo:** Grok **no espera ni pregunta**. Investiga (tendencias Shorts/TikTok del día, `docs/` arriba, cápsulas que más rindieron en `data/vistas_historico.json`), elige uno, lo anota en `data/estilos_usados.json` con 1 línea de por qué, y produce. Si falta una herramienta o crédito, usa la alternativa de §3.3 (frames manuales / Canva / otro modelo) — nunca se queda atorado.
 - Mj solo se entera si algo es irrecuperable; lo demás se decide y se reporta en el cierre del día.
 
-### B. Entrega diaria: 4–6 cápsulas, programadas y revisadas
-- **Cada día 4–6 cápsulas** (la cadencia que se ha manejado), cubriendo la parrilla §4 (A 07:00 kids · B 13:30 familia · C 14:30/17:00/19:00 general · D ~23:30 dato del día).
+### B. Entrega diaria: volumen y slots los DECIDE Grok con datos (no cuota fija)
+- **Aclaración Mj 28-oct:** «4 o 6 al día» fue un **ejemplo**, NO una cuota. Grok mira qué está pasando y decide cuántas cápsulas y en qué slots.
+- Insumos para decidir: `data/vistas_historico.json` (picos, velocidad de vistas por slot/cesta), reporte horario §5.3, balance 6h §5.4, comentarios §5.8, qué estilos/temas funcionaron (`data/estilos_usados.json`).
+- Regla práctica: reforzar slots/cestas que suben, recortar o cambiar los que se estancan; no publicar por publicar (mejor menos y buenas que relleno). La parrilla §4 (A 07:00 kids · B 13:30 familia · C 14:30/17:00/19:00 general · D ~23:30 dato del día) es la **base**, ajustable con evidencia.
 - Cada cápsula pasa **QA (§3 paso 6) + revisión editorial (§2: fuentes, dato verificable, título legible en miniatura)** antes de programarse.
 - **Programadas** en YT (private + publishAt UTC = CDMX + 6 h) y la misma parrilla en TT/FB. Nada sale sin revisión.
-- Producir con antelación (rutina madrugada §5.1): al amanecer el día ya debe estar cubierto.
+- Producir con antelación (rutina madrugada §5.1): al amanecer el día ya debe estar cubierto según el plan que Grok decidió.
+
+### B2. Análisis real del canal — no un autómata
+- Grok **analiza** cómo está funcionando el canal, no ejecuta un horario a ciegas. Mínimo en cada balance 6h y cierre del día:
+  - Qué videos están en pico y por qué (tema, gancho, estilo, hora).
+  - Qué está flojo y qué se cambia (título, miniatura, slot, estilo, tema).
+  - Señales de comentarios (§5.8): preguntas, temas pedidos, quejas → nuevas cápsulas.
+  - Decisión explícita para el siguiente bloque: volumen, slots, estilos, temas, end screens. Anotar en el cierre (1–3 líneas de «qué aprendimos / qué cambiamos»).
+- Ajuste semanal (§5.7) con la misma lógica: mover horarios según dónde rinde.
+
+### B3. Iniciativa — mismo rigor que Imaginantes / Puta 3 bots
+- Misma estructura: RECETA, parrilla, pantallas fuerte→flojo, comentarios 5.8, QA, programación.
+- **Si se atora** (falta plantilla, estilo, crédito, herramienta, dato, fuente): **investiga y resuelve** (docs/, `scripts/estilos.json`/`data/tendencias_estilos.json`, web, alternativa §3.3). **No espera a Mj indefinidamente.** Decide, documenta el porqué y sigue; a Mj solo lo irrecuperable.
 
 ### C. Pantallas finales / promoción: rotar de pico fuerte → flojos
 - Como se ha practicado: los videos **en pico** (más vistas recientes según `data/vistas_historico.json`) empujan con end screen / tarjeta a los **flojos**; repartir entre varios flojos, no todos al mismo.
