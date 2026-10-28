@@ -1,0 +1,383 @@
+{
+  "project_id": "2026-10-28_mosquito-fruitless-audicion",
+  "max_words_per_block": 3,
+  "timing_status": "SIN_TIMECODES; requiere WordBoundary de edge-tts en el pipeline oficial",
+  "blocks_by_scene": [
+    {
+      "scene_id": "scene_001",
+      "blocks": [
+        {
+          "id": "scene_001_B01",
+          "text": "Un mosquito macho",
+          "word_count": 3
+        },
+        {
+          "id": "scene_001_B02",
+          "text": "cambia de rumbo",
+          "word_count": 3
+        },
+        {
+          "id": "scene_001_B03",
+          "text": "al oír unas",
+          "word_count": 3
+        },
+        {
+          "id": "scene_001_B04",
+          "text": "alas. No ve",
+          "word_count": 3
+        },
+        {
+          "id": "scene_001_B05",
+          "text": "a la hembra",
+          "word_count": 3
+        },
+        {
+          "id": "scene_001_B06",
+          "text": "todavía: sigue una",
+          "word_count": 3
+        },
+        {
+          "id": "scene_001_B07",
+          "text": "vibración casi imperceptible.",
+          "word_count": 3
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_002",
+      "blocks": [
+        {
+          "id": "scene_002_B01",
+          "text": "Al anochecer, los",
+          "word_count": 3
+        },
+        {
+          "id": "scene_002_B02",
+          "text": "machos de Aedes",
+          "word_count": 3
+        },
+        {
+          "id": "scene_002_B03",
+          "text": "aegypti se reúnen",
+          "word_count": 3
+        },
+        {
+          "id": "scene_002_B04",
+          "text": "en enjambres. Cuando",
+          "word_count": 3
+        },
+        {
+          "id": "scene_002_B05",
+          "text": "una hembra entra,",
+          "word_count": 3
+        },
+        {
+          "id": "scene_002_B06",
+          "text": "su batido de",
+          "word_count": 3
+        },
+        {
+          "id": "scene_002_B07",
+          "text": "alas puede delatarla.",
+          "word_count": 3
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_003",
+      "blocks": [
+        {
+          "id": "scene_003_B01",
+          "text": "Las alas no",
+          "word_count": 3
+        },
+        {
+          "id": "scene_003_B02",
+          "text": "suenan igual: la",
+          "word_count": 3
+        },
+        {
+          "id": "scene_003_B03",
+          "text": "hembra ronda los",
+          "word_count": 3
+        },
+        {
+          "id": "scene_003_B04",
+          "text": "450 hercios y",
+          "word_count": 3
+        },
+        {
+          "id": "scene_003_B05",
+          "text": "el macho cerca",
+          "word_count": 3
+        },
+        {
+          "id": "scene_003_B06",
+          "text": "de 750. Son",
+          "word_count": 3
+        },
+        {
+          "id": "scene_003_B07",
+          "text": "valores aproximados, no",
+          "word_count": 3
+        },
+        {
+          "id": "scene_003_B08",
+          "text": "un silbido perfecto.",
+          "word_count": 3
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_004",
+      "blocks": [
+        {
+          "id": "scene_004_B01",
+          "text": "La antena funciona",
+          "word_count": 3
+        },
+        {
+          "id": "scene_004_B02",
+          "text": "como receptor. Sus",
+          "word_count": 3
+        },
+        {
+          "id": "scene_004_B03",
+          "text": "vibraciones llegan al",
+          "word_count": 3
+        },
+        {
+          "id": "scene_004_B04",
+          "text": "órgano de Johnston,",
+          "word_count": 3
+        },
+        {
+          "id": "scene_004_B05",
+          "text": "situado en la",
+          "word_count": 3
+        },
+        {
+          "id": "scene_004_B06",
+          "text": "base, y activan",
+          "word_count": 3
+        },
+        {
+          "id": "scene_004_B07",
+          "text": "neuronas auditivas.",
+          "word_count": 2
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_005",
+      "blocks": [
+        {
+          "id": "scene_005_B01",
+          "text": "El estudio, publicado",
+          "word_count": 3
+        },
+        {
+          "id": "scene_005_B02",
+          "text": "el 27 de",
+          "word_count": 3
+        },
+        {
+          "id": "scene_005_B03",
+          "text": "octubre, encontró que",
+          "word_count": 3
+        },
+        {
+          "id": "scene_005_B04",
+          "text": "el gen fruitless",
+          "word_count": 3
+        },
+        {
+          "id": "scene_005_B05",
+          "text": "ayuda a establecer",
+          "word_count": 3
+        },
+        {
+          "id": "scene_005_B06",
+          "text": "ese sistema auditivo",
+          "word_count": 3
+        },
+        {
+          "id": "scene_005_B07",
+          "text": "masculino y su",
+          "word_count": 3
+        },
+        {
+          "id": "scene_005_B08",
+          "text": "sensibilidad al sonido",
+          "word_count": 3
+        },
+        {
+          "id": "scene_005_B09",
+          "text": "femenino.",
+          "word_count": 1
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_006",
+      "blocks": [
+        {
+          "id": "scene_006_B01",
+          "text": "Cuando los investigadores",
+          "word_count": 3
+        },
+        {
+          "id": "scene_006_B02",
+          "text": "alteraron ese gen,",
+          "word_count": 3
+        },
+        {
+          "id": "scene_006_B03",
+          "text": "la respuesta neuronal",
+          "word_count": 3
+        },
+        {
+          "id": "scene_006_B04",
+          "text": "cayó a una",
+          "word_count": 3
+        },
+        {
+          "id": "scene_006_B05",
+          "text": "sexta parte de",
+          "word_count": 3
+        },
+        {
+          "id": "scene_006_B06",
+          "text": "la normal. Los",
+          "word_count": 3
+        },
+        {
+          "id": "scene_006_B07",
+          "text": "machos mutantes no",
+          "word_count": 3
+        },
+        {
+          "id": "scene_006_B08",
+          "text": "respondieron a las",
+          "word_count": 3
+        },
+        {
+          "id": "scene_006_B09",
+          "text": "frecuencias probadas.",
+          "word_count": 2
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_007",
+      "blocks": [
+        {
+          "id": "scene_007_B01",
+          "text": "Además, la sensibilidad",
+          "word_count": 3
+        },
+        {
+          "id": "scene_007_B02",
+          "text": "máxima del oído",
+          "word_count": 3
+        },
+        {
+          "id": "scene_007_B03",
+          "text": "se desplazó por",
+          "word_count": 3
+        },
+        {
+          "id": "scene_007_B04",
+          "text": "encima de la",
+          "word_count": 3
+        },
+        {
+          "id": "scene_007_B05",
+          "text": "frecuencia de las",
+          "word_count": 3
+        },
+        {
+          "id": "scene_007_B06",
+          "text": "alas femeninas. Los",
+          "word_count": 3
+        },
+        {
+          "id": "scene_007_B07",
+          "text": "machos mutantes dejaron",
+          "word_count": 3
+        },
+        {
+          "id": "scene_007_B08",
+          "text": "de localizar a",
+          "word_count": 3
+        },
+        {
+          "id": "scene_007_B09",
+          "text": "las hembras.",
+          "word_count": 2
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_008",
+      "blocks": [
+        {
+          "id": "scene_008_B01",
+          "text": "No es todavía",
+          "word_count": 3
+        },
+        {
+          "id": "scene_008_B02",
+          "text": "un método listo",
+          "word_count": 3
+        },
+        {
+          "id": "scene_008_B03",
+          "text": "para controlar mosquitos:",
+          "word_count": 3
+        },
+        {
+          "id": "scene_008_B04",
+          "text": "es una pista",
+          "word_count": 3
+        },
+        {
+          "id": "scene_008_B05",
+          "text": "sobre cómo un",
+          "word_count": 3
+        },
+        {
+          "id": "scene_008_B06",
+          "text": "gen organiza un",
+          "word_count": 3
+        },
+        {
+          "id": "scene_008_B07",
+          "text": "sentido. ¿Cuánto del",
+          "word_count": 3
+        },
+        {
+          "id": "scene_008_B08",
+          "text": "comportamiento depende de",
+          "word_count": 3
+        },
+        {
+          "id": "scene_008_B09",
+          "text": "escuchar bien? Esto",
+          "word_count": 3
+        },
+        {
+          "id": "scene_008_B10",
+          "text": "fue Datos y",
+          "word_count": 3
+        },
+        {
+          "id": "scene_008_B11",
+          "text": "ociosidades.",
+          "word_count": 1
+        }
+      ]
+    }
+  ],
+  "total_blocks": 67
+}

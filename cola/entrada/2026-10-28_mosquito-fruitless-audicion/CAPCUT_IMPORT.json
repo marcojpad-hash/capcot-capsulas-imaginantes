@@ -1,0 +1,238 @@
+{
+  "format": "CAPCOT_EDIT_SPEC_NOT_NATIVE_CAPCUT",
+  "project_id": "2026-10-28_mosquito-fruitless-audicion",
+  "title": "El gen que afina el oído del mosquito macho",
+  "aspect_ratio": "9:16",
+  "resolution": "1080x1920",
+  "fps": 30,
+  "target_duration_seconds": 85,
+  "scenes": [
+    {
+      "order": 1,
+      "asset": "frames/scene_001.jpg",
+      "duration_seconds": 8,
+      "narration": "Un mosquito macho cambia de rumbo al oír unas alas. No ve a la hembra todavía: sigue una vibración casi imperceptible.",
+      "caption_blocks": [
+        "Un mosquito macho",
+        "cambia de rumbo",
+        "al oír unas",
+        "alas. No ve",
+        "a la hembra",
+        "todavía: sigue una",
+        "vibración casi imperceptible."
+      ],
+      "on_screen_text": "El mosquito que escucha",
+      "motion": "kenburns_auto",
+      "layer": null
+    },
+    {
+      "order": 2,
+      "asset": "frames/scene_002.jpg",
+      "duration_seconds": 10,
+      "narration": "Al anochecer, los machos de Aedes aegypti se reúnen en enjambres. Cuando una hembra entra, su batido de alas puede delatarla.",
+      "caption_blocks": [
+        "Al anochecer, los",
+        "machos de Aedes",
+        "aegypti se reúnen",
+        "en enjambres. Cuando",
+        "una hembra entra,",
+        "su batido de",
+        "alas puede delatarla."
+      ],
+      "on_screen_text": "La cita del crepúsculo",
+      "motion": "kenburns_auto",
+      "layer": {
+        "tipo": "mapa",
+        "region": [
+          128,
+          143,
+          30,
+          42
+        ],
+        "titulo": "Nagoya, Japón: sede del equipo",
+        "puntos": [
+          {
+            "nombre": "Nagoya",
+            "lon": 136.964,
+            "lat": 35.154
+          }
+        ],
+        "fuente": "Nagoya University ITbM; coordenada aproximada de la ciudad"
+      }
+    },
+    {
+      "order": 3,
+      "asset": "frames/scene_003.jpg",
+      "duration_seconds": 10,
+      "narration": "Las alas no suenan igual: la hembra ronda los 450 hercios y el macho cerca de 750. Son valores aproximados, no un silbido perfecto.",
+      "caption_blocks": [
+        "Las alas no",
+        "suenan igual: la",
+        "hembra ronda los",
+        "450 hercios y",
+        "el macho cerca",
+        "de 750. Son",
+        "valores aproximados, no",
+        "un silbido perfecto."
+      ],
+      "on_screen_text": "450 Hz / 750 Hz",
+      "motion": "kenburns_auto",
+      "layer": {
+        "tipo": "grafico",
+        "x": [
+          "Hembra",
+          "Macho"
+        ],
+        "y": [
+          450,
+          750
+        ],
+        "titulo": "Frecuencia alar aproximada",
+        "unidad": "Hz",
+        "fuente": "Loh et al., PLOS Biology (2026); comunicado ITbM, Nagoya University"
+      }
+    },
+    {
+      "order": 4,
+      "asset": "frames/scene_004.jpg",
+      "duration_seconds": 10,
+      "narration": "La antena funciona como receptor. Sus vibraciones llegan al órgano de Johnston, situado en la base, y activan neuronas auditivas.",
+      "caption_blocks": [
+        "La antena funciona",
+        "como receptor. Sus",
+        "vibraciones llegan al",
+        "órgano de Johnston,",
+        "situado en la",
+        "base, y activan",
+        "neuronas auditivas."
+      ],
+      "on_screen_text": "La antena es su oído",
+      "motion": "kenburns_auto",
+      "layer": null
+    },
+    {
+      "order": 5,
+      "asset": "frames/scene_005.jpg",
+      "duration_seconds": 10,
+      "narration": "El estudio, publicado el 27 de octubre, encontró que el gen fruitless ayuda a establecer ese sistema auditivo masculino y su sensibilidad al sonido femenino.",
+      "caption_blocks": [
+        "El estudio, publicado",
+        "el 27 de",
+        "octubre, encontró que",
+        "el gen fruitless",
+        "ayuda a establecer",
+        "ese sistema auditivo",
+        "masculino y su",
+        "sensibilidad al sonido",
+        "femenino."
+      ],
+      "on_screen_text": "El gen fruitless",
+      "motion": "kenburns_auto",
+      "layer": null
+    },
+    {
+      "order": 6,
+      "asset": "frames/scene_006.jpg",
+      "duration_seconds": 10,
+      "narration": "Cuando los investigadores alteraron ese gen, la respuesta neuronal cayó a una sexta parte de la normal. Los machos mutantes no respondieron a las frecuencias probadas.",
+      "caption_blocks": [
+        "Cuando los investigadores",
+        "alteraron ese gen,",
+        "la respuesta neuronal",
+        "cayó a una",
+        "sexta parte de",
+        "la normal. Los",
+        "machos mutantes no",
+        "respondieron a las",
+        "frecuencias probadas."
+      ],
+      "on_screen_text": "Una respuesta seis veces menor",
+      "motion": "kenburns_auto",
+      "layer": {
+        "tipo": "dato",
+        "valor": "1/6",
+        "etiqueta": "respuesta neuronal en machos mutantes",
+        "fuente": "Loh et al., PLOS Biology (2026); comunicado ITbM, Nagoya University"
+      }
+    },
+    {
+      "order": 7,
+      "asset": "frames/scene_007.jpg",
+      "duration_seconds": 10,
+      "narration": "Además, la sensibilidad máxima del oído se desplazó por encima de la frecuencia de las alas femeninas. Los machos mutantes dejaron de localizar a las hembras.",
+      "caption_blocks": [
+        "Además, la sensibilidad",
+        "máxima del oído",
+        "se desplazó por",
+        "encima de la",
+        "frecuencia de las",
+        "alas femeninas. Los",
+        "machos mutantes dejaron",
+        "de localizar a",
+        "las hembras."
+      ],
+      "on_screen_text": "Sin la señal, no encuentra",
+      "motion": "kenburns_auto",
+      "layer": null
+    },
+    {
+      "order": 8,
+      "asset": "frames/scene_008.jpg",
+      "duration_seconds": 11,
+      "narration": "No es todavía un método listo para controlar mosquitos: es una pista sobre cómo un gen organiza un sentido. ¿Cuánto del comportamiento depende de escuchar bien? Esto fue Datos y ociosidades.",
+      "caption_blocks": [
+        "No es todavía",
+        "un método listo",
+        "para controlar mosquitos:",
+        "es una pista",
+        "sobre cómo un",
+        "gen organiza un",
+        "sentido. ¿Cuánto del",
+        "comportamiento depende de",
+        "escuchar bien? Esto",
+        "fue Datos y",
+        "ociosidades."
+      ],
+      "on_screen_text": "¿Qué organiza un sentido?",
+      "motion": "kenburns_auto",
+      "layer": null
+    }
+  ],
+  "source_slate": {
+    "duration_seconds": 6,
+    "titulo": "Fuentes",
+    "aviso": "Imágenes generadas con IA. Voz sintética. Música sintetizada.",
+    "firma": "Datos y ociosidades · @datosyociosidades",
+    "fuentes_visibles": [
+      "Loh et al. · PLOS Biology (2026)",
+      "DOI: 10.1371/journal.pbio.3004041",
+      "Nagoya University · ITbM"
+    ],
+    "bg_rgb": [
+      18,
+      16,
+      14
+    ]
+  },
+  "audio": {
+    "music_asset": "sintetico:pizzicato",
+    "cama_musical": "pizzicato",
+    "music_lufs": -27,
+    "ambiente_lufs": -28,
+    "music_license": "Cama sintética propia prevista mediante scripts/cama_sonora.py; archivo no generado en esta sesión.",
+    "sfx_license": "No se usaron SFX de terceros; el manifiesto del proyecto no contiene un efecto específico de mosquito.",
+    "music_volume": 0.22
+  },
+  "export": {
+    "filename": "capsula.mp4",
+    "resolution": "1080x1920",
+    "fps": 30,
+    "subtitle_max_words": 3,
+    "loudness_lufs": -14
+  },
+  "limitations": [
+    "No es un proyecto nativo de CapCut.",
+    "No contiene timecodes de subtítulos; requieren el TTS oficial.",
+    "No incluye MP4 ni audio generado."
+  ]
+}

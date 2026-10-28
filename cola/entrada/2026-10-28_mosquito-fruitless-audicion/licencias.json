@@ -1,0 +1,63 @@
+{
+  "project_id": "2026-10-28_mosquito-fruitless-audicion",
+  "status": "REGISTRO_PRELIMINAR; no hay publicación ni render",
+  "assets": [
+    {
+      "type": "ia_generada",
+      "provider": "OpenAI ImageGen",
+      "count": 8,
+      "files": [
+        "frames/scene_001.jpg",
+        "frames/scene_002.jpg",
+        "frames/scene_003.jpg",
+        "frames/scene_004.jpg",
+        "frames/scene_005.jpg",
+        "frames/scene_006.jpg",
+        "frames/scene_007.jpg",
+        "frames/scene_008.jpg"
+      ],
+      "prompt_source": "storyboard.json scenes[].image_prompt",
+      "third_party_source_material": false,
+      "license_note": "Imágenes originales generadas en esta sesión; uso sujeto a los términos aplicables del servicio. No se reutilizaron fotos de terceros."
+    },
+    {
+      "type": "voz",
+      "provider": "edge-tts",
+      "voice_id": "es-MX-JorgeNeural",
+      "status": "NO_GENERADA",
+      "license_note": "La receta exige la voz indicada. No se sustituyó por otra voz."
+    },
+    {
+      "type": "musica",
+      "provider": "scripts/cama_sonora.py",
+      "asset": "sintetico:pizzicato",
+      "status": "SOLO_PLAN; archivo no generado",
+      "license": "Obra sintética propia prevista; generar con el script del repositorio al montar."
+    },
+    {
+      "type": "ambiente",
+      "provider": "scripts/cama_sonora.py",
+      "asset": "viento",
+      "status": "SOLO_PLAN; archivo no generado",
+      "license": "Síntesis propia prevista por el pipeline."
+    },
+    {
+      "type": "sfx",
+      "status": "NO_USADOS",
+      "license_note": "No se incorporaron efectos de terceros; el manifiesto actual no contiene un zumbido específico de mosquito."
+    },
+    {
+      "type": "mapa",
+      "provider": "Natural Earth 110m (pipeline CAPCOT)",
+      "license": "Public domain",
+      "status": "CAPA_DECLARADA; no renderizada",
+      "location_source": "https://www.itbm.nagoya-u.ac.jp/en/access/",
+      "license_note": "Punto de Nagoya aproximado a escala de ciudad."
+    },
+    {
+      "type": "datos_y_grafico",
+      "source": "Loh et al. (2026), PLOS Biology; DOI 10.1371/journal.pbio.3004041",
+      "license_note": "Los datos citados se presentan con atribución; gráfico diseñado para esta cápsula."
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "project_id": "2026-10-28_mosquito-fruitless-audicion",
+  "media_in_repository": false,
+  "files": [
+    {
+      "path": "frames/scene_001.jpg",
+      "bytes": 328546,
+      "sha256": "4d32357ce8624d827c0faedb817f8ea8adc7e017924c22a31206bbed028eb20b",
+      "dimensions": [
+        1080,
+        1920
+      ]
+    },
+    {
+      "path": "frames/scene_002.jpg",
+      "bytes": 400741,
+      "sha256": "aee09cf02c34c1db9d8245e113d175e18ad2dc27b55b467a47fd74a7fc19a799",
+      "dimensions": [
+        1080,
+        1920
+      ]
+    },
+    {
+      "path": "frames/scene_003.jpg",
+      "bytes": 348048,
+      "sha256": "96c1c31706ef10ea29ad0e01876fbf3151fa0ce4e48d694184a2ea51e5ec36a3",
+      "dimensions": [
+        1080,
+        1920
+      ]
+    },
+    {
+      "path": "frames/scene_004.jpg",
+      "bytes": 328681,
+      "sha256": "95a8b2e8403a5a6fc998a58423e67d05ad8c44008a194f03f41a93789af39d61",
+      "dimensions": [
+        1080,
+        1920
+      ]
+    },
+    {
+      "path": "frames/scene_005.jpg",
+      "bytes": 356071,
+      "sha256": "a7820d6be2e5382ea77f6c150746df24830de5c34e206dc9f0d5c009ee182279",
+      "dimensions": [
+        1080,
+        1920
+      ]
+    },
+    {
+      "path": "frames/scene_006.jpg",
+      "bytes": 460733,
+      "sha256": "64ace22a97ca289afa027ec92b5901864af6181986bf478055ad3b6034256ee5",
+      "dimensions": [
+        1080,
+        1920
+      ]
+    },
+    {
+      "path": "frames/scene_007.jpg",
+      "bytes": 445400,
+      "sha256": "3056aa032206852b5d74a605390bf2ae83117f0a2720a8f6d3103a0522ce6dce",
+      "dimensions": [
+        1080,
+        1920
+      ]
+    },
+    {
+      "path": "frames/scene_008.jpg",
+      "bytes": 408073,
+      "sha256": "ac488550fe2f79ad5d60f4e8453b8a4a3f26335c8802341a1296a424cdfd7fe0",
+      "dimensions": [
+        1080,
+        1920
+      ]
+    }
+  ]
+}
