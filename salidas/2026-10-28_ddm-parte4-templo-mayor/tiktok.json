@@ -1,5 +1,5 @@
 {
- "estado": "pendiente_mj",
+ "estado": "programado_tiktok",
  "mp4": "/workspace/capcot/salidas/2026-10-28_ddm-parte4-templo-mayor/capsula.mp4",
  "caption": "Tu ofrenda tiene pan y cempasúchil.\n\nDía de Muertos, parte 4: la ofrenda más grande del Templo Mayor. Datos verificados contados como historia.\n\nFuentes en YouTube @datosyociosidades\n\n#aprendeentiktok #sabiasque #ciencia #divulgacioncientifica #Ofrendas186187189TemploMayor",
  "hashtags": [
@@ -15,5 +15,7 @@
  "yt_id": "RhiKtLt2UNQ",
  "instruccion": "Mj sube en TikTok con caption_corto y etiqueta IA; luego estado='publicado_tiktok' + url.",
  "caption_corto": "Día de Muertos, parte 4: la ofrenda más grande del Templo Mayor\n\nFuentes en YouTube @datosyociosidades\n#aprendeentiktok #ciencia #sabiasque",
- "etiqueta_ia": "Activar etiqueta 'Contenido generado por IA' (imágenes y voz sintéticas)"
+ "etiqueta_ia": "Activar etiqueta 'Contenido generado por IA' (imágenes y voz sintéticas)",
+ "hora_cdmx": "2026-10-28 19:00",
+ "nota_studio": "Programado Studio 9:00 PM GMT-4 (=19:00 CDMX); etiqueta IA ON"
 }
