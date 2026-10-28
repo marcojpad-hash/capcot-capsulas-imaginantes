@@ -1,5 +1,11 @@
 # HANDOFF TOTAL CAPCOT → Grok principal (28-oct-2026 CDMX) — DOCUMENTO MAESTRO
 
+## Prioridad Mj 28-oct ~01:50 CDMX
+
+1. **Primero hoy:** producir los slots faltantes: **07:00, 13:30, 14:30, 17:00 y ~23:30**.
+2. **Después**, solo con la parrilla cubierta: métricas / `vistas_historico`.
+3. **19:00 DdM P4 ya está programado — no tocar.**
+
 **Orden de Mj:** se entrega a **Grok principal (la app Grok, no un Grok Bot)** **TODA** la dinámica de CAPCOT durante ~4 días (mientras se recuperan créditos): **videos (cómo se hacen y armarlos) + criterio editorial + métricas + TODAS las rutinas + programados + publicación YT/TT/FB con la misma parrilla.** Este archivo manda sobre `2026-10-28_handoff_grok_principal.md` (que queda como antecedente).
 
 ## Roles (vigentes desde hoy)
