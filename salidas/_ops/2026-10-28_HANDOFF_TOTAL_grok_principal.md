@@ -231,6 +231,16 @@ Copia el **intent** (no hace falta el texto literal). Zona: `America/Mexico_City
 
 ---
 
+### 5.8 CAPCOT revisión de comentarios (YouTube / TikTok / Facebook)
+
+Cada vez que entres a YouTube Studio, TikTok Studio o las herramientas de la Página/creador de Facebook de **Datos y ociosidades**, revisa los comentarios nuevos:
+
+- **Preguntas buenas:** responde breve, en la voz de la marca (curiosa, clara, con humor ligero). Si no sabes el dato con fuente, no respondas con suposiciones: di que lo revisas o déjalo para Mj.
+- **Nunca inventes datos** en una respuesta.
+- **Spam, odio, acoso o estafas:** no respondas; márcalos para Mj (enlace + captura + plataforma) en el reporte.
+- **Cadencia:** aprovecha las mismas ventanas de métricas (7–23 h CDMX) y cada vez que publiques. Fuera de ese horario, no hace falta.
+- Anota en el reporte: cuántos comentarios nuevos, cuántos respondidos, cuántos marcados.
+
 ## 6. Credenciales / secretos (dónde viven)
 
 | Qué | Dónde |
