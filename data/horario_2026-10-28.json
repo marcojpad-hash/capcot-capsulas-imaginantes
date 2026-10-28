@@ -1,136 +1,136 @@
 {
-  "fecha": "2026-10-28",
-  "tz": "America/Mexico_City",
-  "pedido_mj": "pt263u",
-  "slots": [
-    {
-      "hora": "07:00",
-      "id": "2026-10-28_kids-titanoboa",
-      "titulo": "Titanoboa: la serpiente más grande que existió #Shorts",
-      "estilo": "papel_infantil",
-      "estructura": "historia",
-      "estado": "programado_yt",
-      "yt_id": "oGFKLUgBdhA",
-      "publishAt": "2026-10-28T13:00:00Z",
-      "privacidad": "private",
-      "proyecto": "2026-10-28_kids-titanoboa",
-      "salida": "salidas/2026-10-28_kids-titanoboa",
-      "qa": "QA_OK",
-      "plataformas": [
-        "youtube",
-        "tiktok",
-        "facebook"
-      ],
-      "tiktok": "pendiente",
-      "facebook": "pendiente",
-      "nota": "pt263u"
-    },
-    {
-      "hora": "13:30",
-      "id": "2026-10-28_familia-voyager-disco-oro",
-      "titulo": "El disco de oro del Voyager: un saludo a las estrellas #Shorts",
-      "estilo": "fieltro_stop_motion",
-      "estructura": "pregunta",
-      "estado": "programado_yt",
-      "yt_id": "OFpAg4XA3AM",
-      "publishAt": "2026-10-28T19:30:00Z",
-      "privacidad": "private",
-      "proyecto": "2026-10-28_familia-voyager-disco-oro",
-      "salida": "salidas/2026-10-28_familia-voyager-disco-oro",
-      "qa": "QA_OK",
-      "plataformas": [
-        "youtube",
-        "tiktok",
-        "facebook"
-      ],
-      "tiktok": "pendiente",
-      "facebook": "pendiente",
-      "nota": "pt263u"
-    },
-    {
-      "hora": "14:30",
-      "id": "2026-10-28_monarca-almas",
-      "titulo": "Mariposas monarca: ¿las almas que regresan en Día de Muertos? #Shorts",
-      "estilo": "grafiti_colorido",
-      "estructura": "mito_vs_dato",
-      "estado": "programado_yt",
-      "yt_id": "p4eXmoJ2f18",
-      "publishAt": "2026-10-28T20:30:00Z",
-      "privacidad": "private",
-      "proyecto": "2026-10-28_monarca-almas",
-      "salida": "salidas/2026-10-28_monarca-almas",
-      "qa": "QA_OK",
-      "plataformas": [
-        "youtube",
-        "tiktok",
-        "facebook"
-      ],
-      "tiktok": "pendiente",
-      "facebook": "pendiente",
-      "nota": "pt263u"
-    },
-    {
-      "hora": "17:00",
-      "id": "2026-10-28_pan-de-muerto-huesos",
-      "titulo": "Pan de muerto: antes y ahora, de México al mundo #Shorts",
-      "estilo": "bordado",
-      "estructura": "comparacion",
-      "estado": "programado_yt",
-      "yt_id": "inzztxrxYfg",
-      "publishAt": "2026-10-28T23:00:00Z",
-      "privacidad": "private",
-      "proyecto": "2026-10-28_pan-de-muerto-huesos",
-      "salida": "salidas/2026-10-28_pan-de-muerto-huesos",
-      "qa": "QA_OK",
-      "plataformas": [
-        "youtube",
-        "tiktok",
-        "facebook"
-      ],
-      "tiktok": "pendiente",
-      "facebook": "pendiente",
-      "nota": "pt263u"
-    },
-    {
-      "hora": "19:00",
-      "id": "2026-10-28_ddm-parte4-templo-mayor",
-      "titulo": "Día de Muertos · Parte 4: la ofrenda MÁS GRANDE (Templo Mayor)",
-      "serie": "ddm-2026",
-      "parte": 4,
-      "estado": "programado_yt",
-      "angulo": "Ofrenda colosal Motecuhzoma Ilhuicamina (INAH feb-2026): 83 figurillas Mezcala, +4000 moluscos",
-      "continua_de": "P3 Pomuch",
-      "estilo": "codex_mexica",
-      "plataformas": [
-        "youtube",
-        "tiktok"
-      ],
-      "proyecto": "2026-10-28_ddm-parte4-templo-mayor",
-      "yt_id": "RhiKtLt2UNQ",
-      "publishAt": "2026-10-29T01:00:00Z"
-    },
-    {
-      "hora": "23:30",
-      "id": "2026-10-28_noct-lince-milanos",
-      "titulo": "Dato del día: sequía y virus convierten al lince en cazador de milanos #Shorts",
-      "estilo": "ukiyo_e",
-      "estructura": "historia",
-      "estado": "programado_yt",
-      "yt_id": "mWtf7Yta294",
-      "publishAt": "2026-10-29T05:30:00Z",
-      "privacidad": "private",
-      "proyecto": "2026-10-28_noct-lince-milanos",
-      "salida": "salidas/2026-10-28_noct-lince-milanos",
-      "qa": "QA_OK",
-      "plataformas": [
-        "youtube",
-        "tiktok",
-        "facebook"
-      ],
-      "tiktok": "pendiente",
-      "facebook": "pendiente",
-      "nota": "pt263u"
-    }
-  ],
-  "franjas_ref": "salidas/_ops/2026-10-26_parrilla_franjas_reporte.md"
+ "fecha": "2026-10-28",
+ "tz": "America/Mexico_City",
+ "pedido_mj": "pt263u",
+ "slots": [
+  {
+   "hora": "07:00",
+   "id": "2026-10-28_kids-titanoboa",
+   "titulo": "Titanoboa: la serpiente más grande que existió #Shorts",
+   "estilo": "papel_infantil",
+   "estructura": "historia",
+   "estado": "programado_yt",
+   "yt_id": "oGFKLUgBdhA",
+   "publishAt": "2026-10-28T13:00:00Z",
+   "privacidad": "private",
+   "proyecto": "2026-10-28_kids-titanoboa",
+   "salida": "salidas/2026-10-28_kids-titanoboa",
+   "qa": "QA_OK",
+   "plataformas": [
+    "youtube",
+    "tiktok",
+    "facebook"
+   ],
+   "tiktok": "programado_tiktok",
+   "facebook": "pendiente",
+   "nota": "pt263u"
+  },
+  {
+   "hora": "13:30",
+   "id": "2026-10-28_familia-voyager-disco-oro",
+   "titulo": "El disco de oro del Voyager: un saludo a las estrellas #Shorts",
+   "estilo": "fieltro_stop_motion",
+   "estructura": "pregunta",
+   "estado": "programado_yt",
+   "yt_id": "OFpAg4XA3AM",
+   "publishAt": "2026-10-28T19:30:00Z",
+   "privacidad": "private",
+   "proyecto": "2026-10-28_familia-voyager-disco-oro",
+   "salida": "salidas/2026-10-28_familia-voyager-disco-oro",
+   "qa": "QA_OK",
+   "plataformas": [
+    "youtube",
+    "tiktok",
+    "facebook"
+   ],
+   "tiktok": "programado_tiktok",
+   "facebook": "pendiente",
+   "nota": "pt263u"
+  },
+  {
+   "hora": "14:30",
+   "id": "2026-10-28_monarca-almas",
+   "titulo": "Mariposas monarca: ¿las almas que regresan en Día de Muertos? #Shorts",
+   "estilo": "grafiti_colorido",
+   "estructura": "mito_vs_dato",
+   "estado": "programado_yt",
+   "yt_id": "p4eXmoJ2f18",
+   "publishAt": "2026-10-28T20:30:00Z",
+   "privacidad": "private",
+   "proyecto": "2026-10-28_monarca-almas",
+   "salida": "salidas/2026-10-28_monarca-almas",
+   "qa": "QA_OK",
+   "plataformas": [
+    "youtube",
+    "tiktok",
+    "facebook"
+   ],
+   "tiktok": "programado_tiktok",
+   "facebook": "pendiente",
+   "nota": "pt263u"
+  },
+  {
+   "hora": "17:00",
+   "id": "2026-10-28_pan-de-muerto-huesos",
+   "titulo": "Pan de muerto: antes y ahora, de México al mundo #Shorts",
+   "estilo": "bordado",
+   "estructura": "comparacion",
+   "estado": "programado_yt",
+   "yt_id": "inzztxrxYfg",
+   "publishAt": "2026-10-28T23:00:00Z",
+   "privacidad": "private",
+   "proyecto": "2026-10-28_pan-de-muerto-huesos",
+   "salida": "salidas/2026-10-28_pan-de-muerto-huesos",
+   "qa": "QA_OK",
+   "plataformas": [
+    "youtube",
+    "tiktok",
+    "facebook"
+   ],
+   "tiktok": "programado_tiktok",
+   "facebook": "pendiente",
+   "nota": "pt263u"
+  },
+  {
+   "hora": "19:00",
+   "id": "2026-10-28_ddm-parte4-templo-mayor",
+   "titulo": "Día de Muertos · Parte 4: la ofrenda MÁS GRANDE (Templo Mayor)",
+   "serie": "ddm-2026",
+   "parte": 4,
+   "estado": "programado_yt",
+   "angulo": "Ofrenda colosal Motecuhzoma Ilhuicamina (INAH feb-2026): 83 figurillas Mezcala, +4000 moluscos",
+   "continua_de": "P3 Pomuch",
+   "estilo": "codex_mexica",
+   "plataformas": [
+    "youtube",
+    "tiktok"
+   ],
+   "proyecto": "2026-10-28_ddm-parte4-templo-mayor",
+   "yt_id": "RhiKtLt2UNQ",
+   "publishAt": "2026-10-29T01:00:00Z"
+  },
+  {
+   "hora": "23:30",
+   "id": "2026-10-28_noct-lince-milanos",
+   "titulo": "Dato del día: sequía y virus convierten al lince en cazador de milanos #Shorts",
+   "estilo": "ukiyo_e",
+   "estructura": "historia",
+   "estado": "programado_yt",
+   "yt_id": "mWtf7Yta294",
+   "publishAt": "2026-10-29T05:30:00Z",
+   "privacidad": "private",
+   "proyecto": "2026-10-28_noct-lince-milanos",
+   "salida": "salidas/2026-10-28_noct-lince-milanos",
+   "qa": "QA_OK",
+   "plataformas": [
+    "youtube",
+    "tiktok",
+    "facebook"
+   ],
+   "tiktok": "programado_tiktok",
+   "facebook": "pendiente",
+   "nota": "pt263u"
+  }
+ ],
+ "franjas_ref": "salidas/_ops/2026-10-26_parrilla_franjas_reporte.md"
 }

@@ -1,5 +1,5 @@
 {
- "estado": "pendiente_tiktok",
+ "estado": "programado_tiktok",
  "mp4": "/workspace/capcot/salidas/2026-10-28_familia-voyager-disco-oro/capsula.mp4",
  "caption": "Si un extraterrestre encontrara un disco, ¿qué le contarías de la Tierra?\n\nEl disco de oro del Voyager: un saludo a las estrellas. Datos verificados contados como historia.\n\nFuentes en YouTube @datosyociosidades\n\n#aprendeentiktok #sabiasque #ciencia #divulgacioncientifica #VoyagerDiscoDeOroDiaLuz",
  "hashtags": [
@@ -17,5 +17,7 @@
  "caption_corto": "El disco de oro del Voyager: un saludo a las estrellas\n\nFuentes en YouTube @datosyociosidades\n#aprendeentiktok #sabiasque #ciencia",
  "etiqueta_ia": "Activar etiqueta 'Contenido generado por IA' (imágenes y voz sintéticas)",
  "etiqueta_ia_activada": false,
- "url": null
+ "url": null,
+ "hora_cdmx": "2026-10-28 13:30",
+ "nota_studio": "Programado 28-oct ~02:15 CDMX; Studio GMT-4 = CDMX+2"
 }
