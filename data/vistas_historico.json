@@ -6019,5 +6019,129 @@
     },
     "tiktok": null,
     "nota": "Snapshot horario 06:52 CDMX. YT Data API uploads, solo públicos (6 privados/programados excluidos). TikTok null: sin acceso a TikTok Studio en esta corrida (no se intentó login)."
+  },
+  {
+    "timestamp_cdmx": "2026-10-28T07:55-06:00",
+    "youtube": {
+      "oGFKLUgBdhA": {
+        "view": 4,
+        "like": 0,
+        "comment": 0
+      },
+      "5XQfUHpyTWs": {
+        "view": 46,
+        "like": 2,
+        "comment": 0
+      },
+      "YIoWXfZaMj0": {
+        "view": 175,
+        "like": 6,
+        "comment": 0
+      },
+      "v6t8jKMbrhw": {
+        "view": 467,
+        "like": 11,
+        "comment": 0
+      },
+      "xBqdEn1Dumg": {
+        "view": 292,
+        "like": 22,
+        "comment": 2
+      },
+      "nY2UqhKmAKQ": {
+        "view": 1103,
+        "like": 45,
+        "comment": 1
+      },
+      "3RdSX40OCac": {
+        "view": 540,
+        "like": 12,
+        "comment": 0
+      },
+      "YKldyldCeiQ": {
+        "view": 518,
+        "like": 15,
+        "comment": 0
+      },
+      "GYxjXDh1ahc": {
+        "view": 979,
+        "like": 19,
+        "comment": 0
+      },
+      "ivVo2H9NaEU": {
+        "view": 324,
+        "like": 13,
+        "comment": 0
+      },
+      "PBDMJxOkCRk": {
+        "view": 1276,
+        "like": 28,
+        "comment": 4
+      },
+      "i9QBFPljl6M": {
+        "view": 1169,
+        "like": 24,
+        "comment": 0
+      },
+      "bYGd7QuenSk": {
+        "view": 1019,
+        "like": 29,
+        "comment": 0
+      },
+      "gIjJ0YKYQ8M": {
+        "view": 1216,
+        "like": 60,
+        "comment": 1
+      },
+      "AJR6kcnnDig": {
+        "view": 196,
+        "like": 13,
+        "comment": 0
+      },
+      "Qe2Y9xDn9QQ": {
+        "view": 978,
+        "like": 33,
+        "comment": 2
+      },
+      "3bhntOcKHPk": {
+        "view": 1440,
+        "like": 38,
+        "comment": 0
+      },
+      "O7TdKvuBjyg": {
+        "view": 16,
+        "like": 1,
+        "comment": 0
+      },
+      "r1AhsPOAS_o": {
+        "view": 1393,
+        "like": 73,
+        "comment": 4
+      },
+      "ZrUtKs7Ty7U": {
+        "view": 1326,
+        "like": 48,
+        "comment": 5
+      },
+      "5D96DmjvioU": {
+        "view": 625,
+        "like": 27,
+        "comment": 0
+      }
+    },
+    "youtube_totales": {
+      "view": 15102,
+      "like": 519,
+      "comment": 19
+    },
+    "suscriptores": 41,
+    "delta_vs_anterior": {
+      "view": 48,
+      "like": 5,
+      "comment": 0,
+      "suscriptores": 0
+    },
+    "tiktok": null,
+    "nota": "Snapshot horario 07:55 CDMX. YT Data API uploads, solo públicos (5 privados/programados excluidos). TikTok null: sin acceso a TikTok Studio en esta corrida (no se intentó login)."
   }
 ]
