@@ -1,0 +1,21 @@
+{
+ "estado": "pendiente_tiktok",
+ "mp4": "/workspace/capcot/salidas/2026-10-28_noct-lince-milanos/capsula.mp4",
+ "caption": "De noche, un lince trepa doce metros por un alcornoque.\n\nDato del día: sequía y virus convierten al lince en cazador de milanos. Datos verificados contados como historia.\n\nFuentes en YouTube @datosyociosidades\n\n#aprendeentiktok #sabiasque #ciencia #divulgacioncientifica #LinceMilanoDoñanaSequía",
+ "hashtags": [
+  "#aprendeentiktok",
+  "#sabiasque",
+  "#ciencia",
+  "#divulgacioncientifica",
+  "#LinceMilanoDoñanaSequía"
+ ],
+ "descripcion_completa": "De noche, un lince trepa doce metros por un alcornoque.\n\nDato del día: sequía y virus convierten al lince en cazador de milanos. Una cápsula de Datos y ociosidades: datos verificados contados como historia.\n\nFuentes:\n• Sergio, F. et al. (2026) Drought and disease trigger novel interactions among top predators. Nature (publicado 21 oct 2026) https://doi.org/10.1038/s41586-026-11194-z\n\nImágenes generadas con IA · voz sintética · audio sintetizado.\nFuentes en YouTube @datosyociosidades\n\n#aprendeentiktok #sabiasque #ciencia #divulgacioncientifica #LinceMilanoDoñanaSequía",
+ "cuenta": "@datosyociosidades",
+ "hora_sugerida_local": "2026-10-28 23:30 CDMX",
+ "yt_id": "mWtf7Yta294",
+ "instruccion": "Mj/agente con browser sube en TikTok Studio con caption_corto, etiqueta IA y programa a la hora del slot; luego estado='programado_tiktok'/'publicado_tiktok' + url.",
+ "caption_corto": "Dato del día: sequía y virus convierten al lince en cazador de milanos\n\nFuentes en YouTube @datosyociosidades\n#aprendeentiktok #sabiasque #ciencia",
+ "etiqueta_ia": "Activar etiqueta 'Contenido generado por IA' (imágenes y voz sintéticas)",
+ "etiqueta_ia_activada": false,
+ "url": null
+}

@@ -1,0 +1,283 @@
+{
+ "project_id": "2026-10-28_kids-titanoboa",
+ "serie": "Datos y ociosidades",
+ "title": "Titanoboa: la serpiente más grande que existió",
+ "titulo": "La serpiente más gigante",
+ "titulo_yt": "Titanoboa: la serpiente más grande que existió #Shorts",
+ "language": "es-MX",
+ "aspect_ratio": "9:16",
+ "target_duration_seconds": 82,
+ "estructura": "historia",
+ "estilo_id": "papel_infantil",
+ "estilo_visual": "Papel infantil / bolígrafo",
+ "trend_source": {
+  "tipo": "dato",
+  "medio": "Nature",
+  "url": "https://www.nature.com/articles/nature07671",
+  "estudio_doi": "10.1038/nature07671",
+  "termino": "Titanoboa cerrejonensis serpiente gigante",
+  "fecha_consulta": "2026-10-28"
+ },
+ "voice": {
+  "engine": "edge-tts",
+  "voice_id": "es-MX-JorgeNeural",
+  "rate": "+7%",
+  "pitch": "-2Hz",
+  "pad_seconds": 0.3,
+  "modo_pausas": "continuo"
+ },
+ "sources": [
+  {
+   "id": "SRC-001",
+   "cita_corta": "Head et al. (2009). Giant boid snake from the Palaeocene neotropics reveals hotter past equatorial temperatures. Nature 457:715-717",
+   "url": "https://doi.org/10.1038/nature07671",
+   "doi": "10.1038/nature07671",
+   "accessed": "2026-10-28",
+   "supports": [
+    "Cerrejón, La Guajira, Colombia, 58-60 millones de años",
+    "13 m y 1135 kg, la serpiente más grande conocida",
+    "requería 30-34 °C de temperatura media anual",
+    "ecología parecida a la anaconda",
+    "nombre: boa titánica del Cerrejón",
+    "vértebras de 28 individuos"
+   ],
+   "ref_display": "Nature 2009 · Head et al."
+  },
+  {
+   "id": "SRC-002",
+   "cita_corta": "Smithsonian Tropical Research Institute – reimpresión del artículo (Jaramillo et al.)",
+   "url": "https://stri-apps.si.edu/docs/publications/pdfs/JaramilloC_etal_2009_Reprint_GiantSnake.pdf",
+   "accessed": "2026-10-28",
+   "supports": [
+    "mina de carbón del Cerrejón, tajo La Puente"
+   ],
+   "ref_display": "STRI · Smithsonian"
+  }
+ ],
+ "scenes": [
+  {
+   "id": "scene_001",
+   "arc": "hook_medias_res",
+   "duration_seconds": 8.8,
+   "narration": "Una mina de carbón en Colombia. Ahí, entre las rocas, apareció un hueso enorme. Era una vértebra… pero de una serpiente.",
+   "on_screen_text": "Un hueso gigante",
+   "visual_description": "Ilustración generada con IA, estilo Papel infantil / bolígrafo (interpretación artística): a huge single snake vertebra bone next to a tiny stick-figure scientist with a helmet and a pickaxe, coal mine hill",
+   "image_prompt": "childlike imperfect doodle drawn with black ballpoint pen only on white crumpled paper, photographed with a phone, trembling wobbly lines, uneven stick figures, double-traced strokes, crooked handwriting, large clear single subject, simple empty paper background, soft fold shadows, optional fingertip at frame edge and small ink blot, amateur phone photo, not clean cartoon, not vector, not polished illustration, not photorealistic subject, vertical 9:16 + a huge single snake vertebra bone next to a tiny stick-figure scientist with a helmet and a pickaxe, coal mine hill, no text",
+   "source_ids": [
+    "SRC-001",
+    "SRC-002"
+   ],
+   "asset_filename": "frames/scene_001.jpg",
+   "ambiente": "",
+   "sfx": [],
+   "image_origen": {
+    "tipo": "ia_generada",
+    "herramienta": "GenerateImage"
+   }
+  },
+  {
+   "id": "scene_002",
+   "arc": "desarrollo",
+   "duration_seconds": 9.2,
+   "narration": "La mina se llama Cerrejón y está en La Guajira, al norte de Colombia. Los científicos encontraron vértebras de veintiocho serpientes distintas.",
+   "on_screen_text": "Cerrejón, Colombia",
+   "visual_description": "Ilustración generada con IA, estilo Papel infantil / bolígrafo (interpretación artística): many snake vertebrae drawn in rows like a collection, a stick figure counting them with a pencil",
+   "image_prompt": "childlike imperfect doodle drawn with black ballpoint pen only on white crumpled paper, photographed with a phone, trembling wobbly lines, uneven stick figures, double-traced strokes, crooked handwriting, large clear single subject, simple empty paper background, soft fold shadows, optional fingertip at frame edge and small ink blot, amateur phone photo, not clean cartoon, not vector, not polished illustration, not photorealistic subject, vertical 9:16 + many snake vertebrae drawn in rows like a collection, a stick figure counting them with a pencil, no text",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "asset_filename": "frames/scene_002.jpg",
+   "ambiente": "",
+   "sfx": [],
+   "image_origen": {
+    "tipo": "ia_generada",
+    "herramienta": "GenerateImage"
+   },
+   "capa": {
+    "tipo": "mapa",
+    "region": [
+     -80,
+     -66,
+     0,
+     14
+    ],
+    "titulo": "La Guajira, Colombia",
+    "puntos": [
+     {
+      "nombre": "Cerrejón",
+      "lon": -72.6,
+      "lat": 11.1
+     }
+    ]
+   }
+  },
+  {
+   "id": "scene_003",
+   "arc": "desarrollo",
+   "duration_seconds": 9.6,
+   "narration": "Eran tan antiguas que vivieron hace entre cincuenta y ocho y sesenta millones de años, poco después de que desaparecieran los grandes dinosaurios.",
+   "on_screen_text": "Hace 60 millones de años",
+   "visual_description": "Ilustración generada con IA, estilo Papel infantil / bolígrafo (interpretación artística): a giant snake in a hot jungle swamp with big leaves and a smiling big sun, simple palm trees",
+   "image_prompt": "childlike imperfect doodle drawn with black ballpoint pen only on white crumpled paper, photographed with a phone, trembling wobbly lines, uneven stick figures, double-traced strokes, crooked handwriting, large clear single subject, simple empty paper background, soft fold shadows, optional fingertip at frame edge and small ink blot, amateur phone photo, not clean cartoon, not vector, not polished illustration, not photorealistic subject, vertical 9:16 + a giant snake in a hot jungle swamp with big leaves and a smiling big sun, simple palm trees, no text",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "asset_filename": "frames/scene_003.jpg",
+   "ambiente": "",
+   "sfx": [],
+   "image_origen": {
+    "tipo": "ia_generada",
+    "herramienta": "GenerateImage"
+   }
+  },
+  {
+   "id": "scene_004",
+   "arc": "desarrollo",
+   "duration_seconds": 7.7,
+   "narration": "Le pusieron Titanoboa cerrejonensis: la boa titánica del Cerrejón. Midiendo sus huesos, calcularon que medía unos trece metros.",
+   "on_screen_text": "Titanoboa: 13 metros",
+   "visual_description": "Ilustración generada con IA, estilo Papel infantil / bolígrafo (interpretación artística): an extremely long snake stretched across the whole paper with a wobbly measuring tape drawn along it and tiny stick people",
+   "image_prompt": "childlike imperfect doodle drawn with black ballpoint pen only on white crumpled paper, photographed with a phone, trembling wobbly lines, uneven stick figures, double-traced strokes, crooked handwriting, large clear single subject, simple empty paper background, soft fold shadows, optional fingertip at frame edge and small ink blot, amateur phone photo, not clean cartoon, not vector, not polished illustration, not photorealistic subject, vertical 9:16 + an extremely long snake stretched across the whole paper with a wobbly measuring tape drawn along it and tiny stick people, no text",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "asset_filename": "frames/scene_004.jpg",
+   "ambiente": "",
+   "sfx": [],
+   "image_origen": {
+    "tipo": "ia_generada",
+    "herramienta": "GenerateImage"
+   },
+   "capa": {
+    "tipo": "dato",
+    "valor": "13 m",
+    "etiqueta": "largo estimado de Titanoboa",
+    "fuente": "Head et al. 2009"
+   }
+  },
+  {
+   "id": "scene_005",
+   "arc": "desarrollo",
+   "duration_seconds": 10.0,
+   "narration": "Y pesaba más de una tonelada: unos mil ciento treinta y cinco kilos. Vivía en ríos y pantanos, como hoy lo hace la anaconda.",
+   "on_screen_text": "Más de una tonelada",
+   "visual_description": "Ilustración generada con IA, estilo Papel infantil / bolígrafo (interpretación artística): a giant snake on a big old balance scale lifting the other side, with a river and swamp reeds",
+   "image_prompt": "childlike imperfect doodle drawn with black ballpoint pen only on white crumpled paper, photographed with a phone, trembling wobbly lines, uneven stick figures, double-traced strokes, crooked handwriting, large clear single subject, simple empty paper background, soft fold shadows, optional fingertip at frame edge and small ink blot, amateur phone photo, not clean cartoon, not vector, not polished illustration, not photorealistic subject, vertical 9:16 + a giant snake on a big old balance scale lifting the other side, with a river and swamp reeds, no text",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "asset_filename": "frames/scene_005.jpg",
+   "ambiente": "",
+   "sfx": [],
+   "image_origen": {
+    "tipo": "ia_generada",
+    "herramienta": "GenerateImage"
+   },
+   "capa": {
+    "tipo": "dato",
+    "valor": "1135 kg",
+    "etiqueta": "peso estimado",
+    "fuente": "Head et al. 2009"
+   }
+  },
+  {
+   "id": "scene_006",
+   "arc": "cierre_historia",
+   "duration_seconds": 9.6,
+   "narration": "Ahora viene lo mejor. Las serpientes no fabrican su propio calor: dependen del clima. Y para crecer tanto, necesitaba un lugar muy caliente.",
+   "on_screen_text": "Necesitaba mucho calor",
+   "visual_description": "Ilustración generada con IA, estilo Papel infantil / bolígrafo (interpretación artística): a snake with a thermometer next to it and wavy heat lines, a big sun shining",
+   "image_prompt": "childlike imperfect doodle drawn with black ballpoint pen only on white crumpled paper, photographed with a phone, trembling wobbly lines, uneven stick figures, double-traced strokes, crooked handwriting, large clear single subject, simple empty paper background, soft fold shadows, optional fingertip at frame edge and small ink blot, amateur phone photo, not clean cartoon, not vector, not polished illustration, not photorealistic subject, vertical 9:16 + a snake with a thermometer next to it and wavy heat lines, a big sun shining, no text",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "asset_filename": "frames/scene_006.jpg",
+   "ambiente": "",
+   "sfx": [],
+   "image_origen": {
+    "tipo": "ia_generada",
+    "herramienta": "GenerateImage"
+   }
+  },
+  {
+   "id": "scene_007",
+   "arc": "cierre_historia",
+   "duration_seconds": 10.4,
+   "narration": "Los científicos calcularon que esa selva tenía una temperatura promedio de entre treinta y treinta y cuatro grados. Más caliente que las selvas de hoy.",
+   "on_screen_text": "Selva de 30 a 34 °C",
+   "visual_description": "Ilustración generada con IA, estilo Papel infantil / bolígrafo (interpretación artística): a hot jungle drawn with a huge thermometer near the top and a sweating stick figure explorer fanning himself",
+   "image_prompt": "childlike imperfect doodle drawn with black ballpoint pen only on white crumpled paper, photographed with a phone, trembling wobbly lines, uneven stick figures, double-traced strokes, crooked handwriting, large clear single subject, simple empty paper background, soft fold shadows, optional fingertip at frame edge and small ink blot, amateur phone photo, not clean cartoon, not vector, not polished illustration, not photorealistic subject, vertical 9:16 + a hot jungle drawn with a huge thermometer near the top and a sweating stick figure explorer fanning himself, no text",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "asset_filename": "frames/scene_007.jpg",
+   "ambiente": "",
+   "sfx": [],
+   "image_origen": {
+    "tipo": "ia_generada",
+    "herramienta": "GenerateImage"
+   },
+   "capa": {
+    "tipo": "dato",
+    "valor": "30-34 °C",
+    "etiqueta": "temperatura media anual necesaria",
+    "fuente": "Head et al. 2009"
+   }
+  },
+  {
+   "id": "scene_008",
+   "arc": "reflexion_o_pregunta",
+   "duration_seconds": 10.8,
+   "narration": "Así, un hueso de serpiente se volvió un termómetro del pasado. ¿Qué otros secretos del clima estarán escondidos en las rocas? Esto fue Datos y ociosidades.",
+   "on_screen_text": "Un termómetro del pasado",
+   "visual_description": "Ilustración generada con IA, estilo Papel infantil / bolígrafo (interpretación artística): a child stick figure holding a magnifying glass over a rock with a snake bone inside, question marks floating",
+   "image_prompt": "childlike imperfect doodle drawn with black ballpoint pen only on white crumpled paper, photographed with a phone, trembling wobbly lines, uneven stick figures, double-traced strokes, crooked handwriting, large clear single subject, simple empty paper background, soft fold shadows, optional fingertip at frame edge and small ink blot, amateur phone photo, not clean cartoon, not vector, not polished illustration, not photorealistic subject, vertical 9:16 + a child stick figure holding a magnifying glass over a rock with a snake bone inside, question marks floating, no text",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "asset_filename": "frames/scene_008.jpg",
+   "ambiente": "",
+   "sfx": [],
+   "image_origen": {
+    "tipo": "ia_generada",
+    "herramienta": "GenerateImage"
+   }
+  }
+ ],
+ "cortinilla_fuentes": {
+  "duration_seconds": 6,
+  "titulo": "Fuentes",
+  "aviso": "Ilustraciones generadas con IA (estilo Papel infantil / bolígrafo); interpretación artística. Voz sintética con IA (edge-tts). Música sintetizada.",
+  "bg_rgb": [
+   28,
+   30,
+   52
+  ],
+  "firma": "Datos y ociosidades · @datosyociosidades"
+ },
+ "audio": {
+  "music_asset": "sintetico:",
+  "music_lufs": -27,
+  "ambiente_lufs": -28,
+  "music_license": "Sintetizado por scripts/cama_sonora.py (obra propia)",
+  "sfx_license": "Wikimedia Commons CC0/PD, ver assets/sfx/LICENCIAS.json"
+ },
+ "export": {
+  "filename": "capsula.mp4",
+  "resolution": "1080x1920",
+  "fps": 30,
+  "subtitle_max_words": 3,
+  "plano_seconds": 2.5,
+  "loudness_lufs": -14
+ },
+ "canal": {
+  "nombre": "Datos y ociosidades",
+  "handle": "@datosyociosidades",
+  "youtube_channel_id": "UCU2ZI-6pBJEr9aSFsF6bxLw"
+ },
+ "origen": "propia",
+ "parece_real": false,
+ "proveedor_imagenes": "GenerateImage (IA) con prompt_base del estilo",
+ "slot_cdmx": "07:00",
+ "estado": "storyboard 2026-10-28"
+}

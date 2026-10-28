@@ -62,5 +62,25 @@
  {
   "estilo": "dibujo_cientifico_scratchboard",
   "proyecto": "noct-anfibio-marino"
+ },
+ {
+  "estilo": "papel_infantil",
+  "proyecto": "2026-10-28_kids-titanoboa"
+ },
+ {
+  "estilo": "fieltro_stop_motion",
+  "proyecto": "2026-10-28_familia-voyager-disco-oro"
+ },
+ {
+  "estilo": "grafiti_colorido",
+  "proyecto": "2026-10-28_monarca-almas"
+ },
+ {
+  "estilo": "bordado",
+  "proyecto": "2026-10-28_pan-de-muerto-huesos"
+ },
+ {
+  "estilo": "ukiyo_e",
+  "proyecto": "2026-10-28_noct-lince-milanos"
  }
 ]

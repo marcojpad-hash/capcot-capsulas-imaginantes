@@ -169,5 +169,55 @@
   "tema": "Gerrothorax maritimus anfibio marino",
   "estilo": "dibujo_cientifico_scratchboard",
   "origen": "propia"
+ },
+ {
+  "fecha": "2026-10-28",
+  "project_id": "2026-10-28_kids-titanoboa",
+  "estructura": "historia",
+  "cama": "pulso",
+  "duracion": 82,
+  "tema": "Titanoboa cerrejonensis serpiente gigante",
+  "estilo": "papel_infantil",
+  "origen": "propia"
+ },
+ {
+  "fecha": "2026-10-28",
+  "project_id": "2026-10-28_familia-voyager-disco-oro",
+  "estructura": "pregunta",
+  "cama": "circuito_neural",
+  "duracion": 90,
+  "tema": "Voyager disco de oro dia luz",
+  "estilo": "fieltro_stop_motion",
+  "origen": "propia"
+ },
+ {
+  "fecha": "2026-10-28",
+  "project_id": "2026-10-28_monarca-almas",
+  "estructura": "mito_vs_dato",
+  "cama": "tambor",
+  "duracion": 90,
+  "tema": "mariposa monarca dia de muertos",
+  "estilo": "grafiti_colorido",
+  "origen": "propia"
+ },
+ {
+  "fecha": "2026-10-28",
+  "project_id": "2026-10-28_pan-de-muerto-huesos",
+  "estructura": "comparacion",
+  "cama": "marimba",
+  "duracion": 88,
+  "tema": "pan de muerto origen",
+  "estilo": "bordado",
+  "origen": "propia"
+ },
+ {
+  "fecha": "2026-10-28",
+  "project_id": "2026-10-28_noct-lince-milanos",
+  "estructura": "historia",
+  "cama": "arpegio",
+  "duracion": 90,
+  "tema": "lince milano Doñana sequía",
+  "estilo": "ukiyo_e",
+  "origen": "propia"
  }
 ]

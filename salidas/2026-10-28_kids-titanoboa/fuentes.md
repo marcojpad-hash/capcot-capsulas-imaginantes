@@ -1,0 +1,4 @@
+# Fuentes (verificadas)
+
+- [SRC-001] Head et al. (2009). Giant boid snake from the Palaeocene neotropics reveals hotter past equatorial temperatures. Nature 457:715-717 https://doi.org/10.1038/nature07671 (consulta 2026-10-28) — respalda: Cerrejón, La Guajira, Colombia, 58-60 millones de años; 13 m y 1135 kg, la serpiente más grande conocida; requería 30-34 °C de temperatura media anual; ecología parecida a la anaconda; nombre: boa titánica del Cerrejón; vértebras de 28 individuos
+- [SRC-002] Smithsonian Tropical Research Institute – reimpresión del artículo (Jaramillo et al.) https://stri-apps.si.edu/docs/publications/pdfs/JaramilloC_etal_2009_Reprint_GiantSnake.pdf (consulta 2026-10-28) — respalda: mina de carbón del Cerrejón, tajo La Puente

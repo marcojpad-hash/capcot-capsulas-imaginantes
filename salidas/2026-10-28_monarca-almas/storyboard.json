@@ -1,0 +1,307 @@
+{
+ "project_id": "2026-10-28_monarca-almas",
+ "serie": "Datos y ociosidades",
+ "title": "Mariposas monarca: ¿las almas que regresan en Día de Muertos?",
+ "titulo": "¿Las monarca son almas?",
+ "titulo_yt": "Mariposas monarca: ¿las almas que regresan en Día de Muertos? #Shorts",
+ "language": "es-MX",
+ "aspect_ratio": "9:16",
+ "target_duration_seconds": 90,
+ "estructura": "mito_vs_dato",
+ "estilo_id": "grafiti_colorido",
+ "estilo_visual": "Grafiti urbano colorido",
+ "trend_source": {
+  "tipo": "temporada",
+  "medio": "CONANP",
+  "url": "https://conanp.gob.mx/conanp/dominios/rbmonarca/region.php",
+  "termino": "mariposa monarca dia de muertos",
+  "fecha_publicacion": "s/f",
+  "fecha_consulta": "2026-10-28"
+ },
+ "voice": {
+  "engine": "edge-tts",
+  "voice_id": "es-MX-JorgeNeural",
+  "rate": "+7%",
+  "pitch": "-2Hz",
+  "pad_seconds": 0.3,
+  "modo_pausas": "continuo"
+ },
+ "sources": [
+  {
+   "id": "SRC-001",
+   "cita_corta": "CONANP – Reserva de la Biosfera Mariposa Monarca, la región",
+   "url": "https://conanp.gob.mx/conanp/dominios/rbmonarca/region.php",
+   "accessed": "2026-10-28",
+   "supports": [
+    "los purépechas la consideraron el alma de los muertos",
+    "su llegada coincidía con el 1 y 2 de noviembre",
+    "mazahuas y otomíes la llamaron la cosechadora"
+   ],
+   "ref_display": "CONANP · RBMM"
+  },
+  {
+   "id": "SRC-002",
+   "cita_corta": "CONANP – Infografía Mariposa Monarca",
+   "url": "https://www.conanp.gob.mx/temp/mariposa.php",
+   "accessed": "2026-10-28",
+   "supports": [
+    "ruta de 4,000 a 4,500 km",
+    "100 a 120 km por día",
+    "travesía de aproximadamente 50 días",
+    "hasta 600 mariposas por árbol",
+    "origen en la región de los Grandes Lagos"
+   ],
+   "ref_display": "CONANP · Infografía"
+  },
+  {
+   "id": "SRC-003",
+   "cita_corta": "CONANP – Reserva de la Biosfera Mariposa Monarca",
+   "url": "https://conanp.gob.mx/conanp/dominios/rbmonarca/index.php",
+   "accessed": "2026-10-28",
+   "supports": [
+    "56,259 ha entre Michoacán y Estado de México",
+    "racimos en oyameles durante el invierno",
+    "en marzo vuelan al norte y mueren en el camino; sus descendientes completan el viaje"
+   ],
+   "ref_display": "CONANP · RBMM"
+  },
+  {
+   "id": "SRC-004",
+   "cita_corta": "Merlin, Gegear & Reppert (2009) Antennal circadian clocks coordinate sun compass orientation in migratory monarch butterflies. Science 325:1700-1704",
+   "url": "https://doi.org/10.1126/science.1176221",
+   "doi": "10.1126/science.1176221",
+   "accessed": "2026-10-28",
+   "supports": [
+    "usan una brújula solar compensada en el tiempo",
+    "el reloj que la corrige está en las antenas"
+   ],
+   "ref_display": "Merlin et al. 2009 · Science"
+  }
+ ],
+ "scenes": [
+  {
+   "id": "scene_001",
+   "arc": "hook_medias_res",
+   "duration_seconds": 6.0,
+   "narration": "Dicen que cada noviembre los muertos regresan volando, con alas naranjas.",
+   "on_screen_text": "¿Almas con alas?",
+   "visual_description": "Ilustración generada con IA, estilo Grafiti urbano colorido (interpretación artística): a vivid spray-painted graffiti mural of orange monarch butterflies swirling over a brick wall with marigold flowers and candles painted below",
+   "image_prompt": "colorful urban graffiti mural, saturated spray paint, playful cartoon characters, thick outlines, wildstyle accents, vertical 9:16, no text + a vivid spray-painted graffiti mural of orange monarch butterflies swirling over a brick wall with marigold flowers and candles painted below, no text",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "asset_filename": "frames/scene_001.jpg",
+   "ambiente": "",
+   "sfx": [],
+   "image_origen": {
+    "tipo": "ia_generada",
+    "herramienta": "GenerateImage"
+   }
+  },
+  {
+   "id": "scene_002",
+   "arc": "desarrollo",
+   "duration_seconds": 12.0,
+   "narration": "Los purépechas veían a la mariposa monarca como el alma de los difuntos, porque llegaba justo el uno y dos de noviembre. Mazahuas y otomíes la llamaban la cosechadora.",
+   "on_screen_text": "El mito purépecha",
+   "visual_description": "Ilustración generada con IA, estilo Grafiti urbano colorido (interpretación artística): graffiti mural of an indigenous Purépecha village at dusk with monarch butterflies arriving over cempasúchil fields, bold spray paint colors",
+   "image_prompt": "colorful urban graffiti mural, saturated spray paint, playful cartoon characters, thick outlines, wildstyle accents, vertical 9:16, no text + graffiti mural of an indigenous Purépecha village at dusk with monarch butterflies arriving over cempasúchil fields, bold spray paint colors, no text",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "asset_filename": "frames/scene_002.jpg",
+   "ambiente": "",
+   "sfx": [],
+   "image_origen": {
+    "tipo": "ia_generada",
+    "herramienta": "GenerateImage"
+   }
+  },
+  {
+   "id": "scene_003",
+   "arc": "desarrollo",
+   "duration_seconds": 10.0,
+   "narration": "El dato: vienen desde la región de los Grandes Lagos, en Canadá y Estados Unidos. Recorren entre cuatro mil y cuatro mil quinientos kilómetros.",
+   "on_screen_text": "Hasta 4,500 km",
+   "visual_description": "Ilustración generada con IA, estilo Grafiti urbano colorido (interpretación artística): graffiti mural map style of North America with a bright dotted spray-painted path of monarch butterflies flying south",
+   "image_prompt": "colorful urban graffiti mural, saturated spray paint, playful cartoon characters, thick outlines, wildstyle accents, vertical 9:16, no text + graffiti mural map style of North America with a bright dotted spray-painted path of monarch butterflies flying south, no text",
+   "source_ids": [
+    "SRC-002"
+   ],
+   "asset_filename": "frames/scene_003.jpg",
+   "ambiente": "",
+   "sfx": [],
+   "image_origen": {
+    "tipo": "ia_generada",
+    "herramienta": "GenerateImage"
+   },
+   "capa": {
+    "tipo": "mapa",
+    "region": [
+     -105,
+     -70,
+     17,
+     48
+    ],
+    "titulo": "Ruta de la monarca",
+    "puntos": [
+     {
+      "nombre": "Grandes Lagos",
+      "lon": -83.0,
+      "lat": 44.0
+     },
+     {
+      "nombre": "Reserva Monarca",
+      "lon": -100.27,
+      "lat": 19.6
+     }
+    ]
+   }
+  },
+  {
+   "id": "scene_004",
+   "arc": "desarrollo",
+   "duration_seconds": 9.2,
+   "narration": "Avanzan hasta ciento veinte kilómetros al día, durante unos cincuenta días, y de noche duermen en grupos de hasta seiscientas por árbol.",
+   "on_screen_text": "120 km al día",
+   "visual_description": "Ilustración generada con IA, estilo Grafiti urbano colorido (interpretación artística): graffiti mural of a tree branch completely covered with sleeping monarch butterflies under a spray-painted moon",
+   "image_prompt": "colorful urban graffiti mural, saturated spray paint, playful cartoon characters, thick outlines, wildstyle accents, vertical 9:16, no text + graffiti mural of a tree branch completely covered with sleeping monarch butterflies under a spray-painted moon, no text",
+   "source_ids": [
+    "SRC-002"
+   ],
+   "asset_filename": "frames/scene_004.jpg",
+   "ambiente": "",
+   "sfx": [],
+   "image_origen": {
+    "tipo": "ia_generada",
+    "herramienta": "GenerateImage"
+   },
+   "capa": {
+    "tipo": "dato",
+    "valor": "120 km",
+    "etiqueta": "recorrido por día",
+    "fuente": "CONANP"
+   }
+  },
+  {
+   "id": "scene_005",
+   "arc": "desarrollo",
+   "duration_seconds": 12.0,
+   "narration": "¿Cómo no se pierden? Usan el Sol como brújula. Y un estudio en Science descubrió que el reloj que corrige esa brújula durante el día está en sus antenas.",
+   "on_screen_text": "Un reloj en las antenas",
+   "visual_description": "Ilustración generada con IA, estilo Grafiti urbano colorido (interpretación artística): close-up graffiti mural of a monarch butterfly head with glowing antennae shaped like clock hands, a big spray-painted sun behind",
+   "image_prompt": "colorful urban graffiti mural, saturated spray paint, playful cartoon characters, thick outlines, wildstyle accents, vertical 9:16, no text + close-up graffiti mural of a monarch butterfly head with glowing antennae shaped like clock hands, a big spray-painted sun behind, no text",
+   "source_ids": [
+    "SRC-004"
+   ],
+   "asset_filename": "frames/scene_005.jpg",
+   "ambiente": "",
+   "sfx": [],
+   "image_origen": {
+    "tipo": "ia_generada",
+    "herramienta": "GenerateImage"
+   }
+  },
+  {
+   "id": "scene_006",
+   "arc": "desarrollo",
+   "duration_seconds": 12.4,
+   "narration": "Su destino son los bosques de oyamel entre Michoacán y el Estado de México: una reserva de cincuenta y seis mil hectáreas, donde se cuelgan en racimos todo el invierno.",
+   "on_screen_text": "56 mil hectáreas",
+   "visual_description": "Ilustración generada con IA, estilo Grafiti urbano colorido (interpretación artística): graffiti mural of tall fir trees on misty mountains with huge orange clusters of monarch butterflies hanging from branches",
+   "image_prompt": "colorful urban graffiti mural, saturated spray paint, playful cartoon characters, thick outlines, wildstyle accents, vertical 9:16, no text + graffiti mural of tall fir trees on misty mountains with huge orange clusters of monarch butterflies hanging from branches, no text",
+   "source_ids": [
+    "SRC-003"
+   ],
+   "asset_filename": "frames/scene_006.jpg",
+   "ambiente": "",
+   "sfx": [],
+   "image_origen": {
+    "tipo": "ia_generada",
+    "herramienta": "GenerateImage"
+   },
+   "capa": {
+    "tipo": "dato",
+    "valor": "56,259 ha",
+    "etiqueta": "Reserva de la Biosfera Mariposa Monarca",
+    "fuente": "CONANP"
+   }
+  },
+  {
+   "id": "scene_007",
+   "arc": "cierre_historia",
+   "duration_seconds": 12.4,
+   "narration": "Lo más increíble: ninguna mariposa hace el viaje completo de ida y vuelta. En marzo vuelan al norte y mueren en el camino; sus hijas y nietas terminan el viaje.",
+   "on_screen_text": "Ninguna regresa",
+   "visual_description": "Ilustración generada con IA, estilo Grafiti urbano colorido (interpretación artística): graffiti mural showing generations of monarch butterflies, caterpillars and chrysalises in a spray-painted circle of life",
+   "image_prompt": "colorful urban graffiti mural, saturated spray paint, playful cartoon characters, thick outlines, wildstyle accents, vertical 9:16, no text + graffiti mural showing generations of monarch butterflies, caterpillars and chrysalises in a spray-painted circle of life, no text",
+   "source_ids": [
+    "SRC-003"
+   ],
+   "asset_filename": "frames/scene_007.jpg",
+   "ambiente": "",
+   "sfx": [],
+   "image_origen": {
+    "tipo": "ia_generada",
+    "herramienta": "GenerateImage"
+   }
+  },
+  {
+   "id": "scene_008",
+   "arc": "reflexion_o_pregunta",
+   "duration_seconds": 11.6,
+   "narration": "Entonces, ¿son almas? Para la ciencia, son viajeras que vuelven a un lugar donde nunca estuvieron. Para la tradición, visitas que se esperan. Esto fue Datos y ociosidades.",
+   "on_screen_text": "Mito y dato",
+   "visual_description": "Ilustración generada con IA, estilo Grafiti urbano colorido (interpretación artística): a vivid spray-painted graffiti mural of orange monarch butterflies flying above a colorful Day of the Dead altar with photos and marigolds, painted on a city wall",
+   "image_prompt": "colorful urban graffiti mural, saturated spray paint, playful cartoon characters, thick outlines, wildstyle accents, vertical 9:16, no text + a vivid spray-painted graffiti mural of orange monarch butterflies flying above a colorful Day of the Dead altar with photos and marigolds, painted on a city wall, no text",
+   "source_ids": [
+    "SRC-001",
+    "SRC-003"
+   ],
+   "asset_filename": "frames/scene_008.jpg",
+   "ambiente": "",
+   "sfx": [],
+   "image_origen": {
+    "tipo": "ia_generada",
+    "herramienta": "GenerateImage"
+   }
+  }
+ ],
+ "cortinilla_fuentes": {
+  "duration_seconds": 6,
+  "titulo": "Fuentes",
+  "aviso": "Ilustraciones generadas con IA (estilo Grafiti urbano colorido); interpretación artística. Voz sintética con IA (edge-tts). Música sintetizada.",
+  "bg_rgb": [
+   28,
+   30,
+   52
+  ],
+  "firma": "Datos y ociosidades · @datosyociosidades"
+ },
+ "audio": {
+  "music_asset": "sintetico:tambor",
+  "music_lufs": -27,
+  "ambiente_lufs": -28,
+  "music_license": "Sintetizado por scripts/cama_sonora.py (obra propia)",
+  "sfx_license": "Wikimedia Commons CC0/PD, ver assets/sfx/LICENCIAS.json",
+  "cama_musical": "tambor"
+ },
+ "export": {
+  "filename": "capsula.mp4",
+  "resolution": "1080x1920",
+  "fps": 30,
+  "subtitle_max_words": 3,
+  "plano_seconds": 2.5,
+  "loudness_lufs": -14
+ },
+ "canal": {
+  "nombre": "Datos y ociosidades",
+  "handle": "@datosyociosidades",
+  "youtube_channel_id": "UCU2ZI-6pBJEr9aSFsF6bxLw"
+ },
+ "origen": "propia",
+ "parece_real": false,
+ "proveedor_imagenes": "GenerateImage (IA) con prompt_base del estilo",
+ "slot_cdmx": "14:30",
+ "estado": "storyboard 2026-10-28"
+}

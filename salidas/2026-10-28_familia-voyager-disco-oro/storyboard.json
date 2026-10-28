@@ -1,0 +1,298 @@
+{
+ "project_id": "2026-10-28_familia-voyager-disco-oro",
+ "serie": "Datos y ociosidades",
+ "title": "El disco de oro del Voyager: un saludo a las estrellas",
+ "titulo": "Un disco para extraterrestres",
+ "titulo_yt": "El disco de oro del Voyager: un saludo a las estrellas #Shorts",
+ "language": "es-MX",
+ "aspect_ratio": "9:16",
+ "target_duration_seconds": 90,
+ "estructura": "pregunta",
+ "estilo_id": "fieltro_stop_motion",
+ "estilo_visual": "Fieltro stop-motion",
+ "trend_source": {
+  "tipo": "noticia_cientifica",
+  "medio": "NASA Science",
+  "url": "https://science.nasa.gov/mission/voyager/voyager-1/voyager-1-what-is-a-light-day/",
+  "termino": "Voyager disco de oro dia luz",
+  "fecha_publicacion": "2026",
+  "fecha_consulta": "2026-10-28"
+ },
+ "voice": {
+  "engine": "edge-tts",
+  "voice_id": "es-MX-JorgeNeural",
+  "rate": "+7%",
+  "pitch": "-2Hz",
+  "pad_seconds": 0.3,
+  "modo_pausas": "continuo"
+ },
+ "sources": [
+  {
+   "id": "SRC-001",
+   "cita_corta": "NASA Science – What are the contents of the Golden Record?",
+   "url": "https://science.nasa.gov/mission/voyager/golden-record-contents/",
+   "accessed": "2026-10-28",
+   "supports": [
+    "comité de Carl Sagan",
+    "115 imágenes, sonidos naturales",
+    "saludos en 55 idiomas, del acadio al wu",
+    "aguja, cartucho e instrucciones simbólicas",
+    "disco chapado en oro de 12 pulgadas en cada Voyager, 1977"
+   ],
+   "ref_display": "NASA · Golden Record"
+  },
+  {
+   "id": "SRC-002",
+   "cita_corta": "NASA Science – Golden Record Sounds and Music",
+   "url": "https://science.nasa.gov/mission/voyager/golden-record-contents/sounds/",
+   "accessed": "2026-10-28",
+   "supports": [
+    "El Cascabel, Lorenzo Barcelata y el Mariachi México, 3:14"
+   ],
+   "ref_display": "NASA · Sounds and Music"
+  },
+  {
+   "id": "SRC-003",
+   "cita_corta": "NASA Science – Voyager 1: What Is a Light-Day (2026)",
+   "url": "https://science.nasa.gov/mission/voyager/voyager-1/voyager-1-what-is-a-light-day/",
+   "accessed": "2026-10-28",
+   "supports": [
+    "18 nov 2026: a un día-luz, ~26 mil millones de km",
+    "primer objeto humano a esa distancia",
+    "en 40,000 años pasará a 1.7 años luz de Gliese 445"
+   ],
+   "ref_display": "NASA · Light-Day"
+  },
+  {
+   "id": "SRC-004",
+   "cita_corta": "NASA Science – Voyager Interstellar Mission",
+   "url": "https://science.nasa.gov/mission/voyager/interstellar-mission/",
+   "accessed": "2026-10-28",
+   "supports": [
+    "Voyager 1 entró al espacio interestelar el 25 ago 2012"
+   ],
+   "ref_display": "NASA · Interstellar Mission"
+  }
+ ],
+ "scenes": [
+  {
+   "id": "scene_001",
+   "arc": "hook_medias_res",
+   "duration_seconds": 10.4,
+   "narration": "Si un extraterrestre encontrara un disco, ¿qué le contarías de la Tierra? En mil novecientos setenta y siete, alguien tuvo que responder eso de verdad.",
+   "on_screen_text": "¿Qué le dirías a un alien?",
+   "visual_description": "Ilustración generada con IA, estilo Fieltro stop-motion (interpretación artística): a small felt Voyager space probe with a big round dish antenna floating among felt stars, a shiny golden record attached to its side",
+   "image_prompt": "stop-motion felt animation diorama, needle felted wool characters, visible stitches, soft fuzzy textures, warm studio light, one large character, simple felt backdrop, handmade, not photorealistic, vertical 9:16, no text + a small felt Voyager space probe with a big round dish antenna floating among felt stars, a shiny golden record attached to its side, no text",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "asset_filename": "frames/scene_001.jpg",
+   "ambiente": "",
+   "sfx": [],
+   "image_origen": {
+    "tipo": "ia_generada",
+    "herramienta": "GenerateImage"
+   }
+  },
+  {
+   "id": "scene_002",
+   "arc": "desarrollo",
+   "duration_seconds": 10.4,
+   "narration": "Ese año despegaron dos sondas gemelas: Voyager uno y Voyager dos. Cada una lleva un disco chapado en oro, como un viejo disco de música.",
+   "on_screen_text": "Dos Voyager, dos discos",
+   "visual_description": "Ilustración generada con IA, estilo Fieltro stop-motion (interpretación artística): two identical felt space probes side by side on a felt launch pad, each holding a golden felt record",
+   "image_prompt": "stop-motion felt animation diorama, needle felted wool characters, visible stitches, soft fuzzy textures, warm studio light, one large character, simple felt backdrop, handmade, not photorealistic, vertical 9:16, no text + two identical felt space probes side by side on a felt launch pad, each holding a golden felt record, no text",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "asset_filename": "frames/scene_002.jpg",
+   "ambiente": "",
+   "sfx": [],
+   "image_origen": {
+    "tipo": "ia_generada",
+    "herramienta": "GenerateImage"
+   }
+  },
+  {
+   "id": "scene_003",
+   "arc": "desarrollo",
+   "duration_seconds": 10.4,
+   "narration": "Un equipo encabezado por el astrónomo Carl Sagan eligió qué poner. Ciento quince imágenes y sonidos de la Tierra: olas, viento, truenos, pájaros y ballenas.",
+   "on_screen_text": "115 imágenes y sonidos",
+   "visual_description": "Ilustración generada con IA, estilo Fieltro stop-motion (interpretación artística): felt whale, felt bird, felt waves and a felt thundercloud arranged in a circle around a golden record",
+   "image_prompt": "stop-motion felt animation diorama, needle felted wool characters, visible stitches, soft fuzzy textures, warm studio light, one large character, simple felt backdrop, handmade, not photorealistic, vertical 9:16, no text + felt whale, felt bird, felt waves and a felt thundercloud arranged in a circle around a golden record, no text",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "asset_filename": "frames/scene_003.jpg",
+   "ambiente": "",
+   "sfx": [],
+   "image_origen": {
+    "tipo": "ia_generada",
+    "herramienta": "GenerateImage"
+   },
+   "capa": {
+    "tipo": "dato",
+    "valor": "115",
+    "etiqueta": "imágenes codificadas en el disco",
+    "fuente": "NASA"
+   }
+  },
+  {
+   "id": "scene_004",
+   "arc": "desarrollo",
+   "duration_seconds": 10.4,
+   "narration": "También saludos en cincuenta y cinco idiomas. El primero en acadio, una lengua de hace seis mil años; el último en wu, un dialecto chino.",
+   "on_screen_text": "Hola en 55 idiomas",
+   "visual_description": "Ilustración generada con IA, estilo Fieltro stop-motion (interpretación artística): a group of felt children of many cultures waving hello in front of a felt planet Earth",
+   "image_prompt": "stop-motion felt animation diorama, needle felted wool characters, visible stitches, soft fuzzy textures, warm studio light, one large character, simple felt backdrop, handmade, not photorealistic, vertical 9:16, no text + a group of felt children of many cultures waving hello in front of a felt planet Earth, no text",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "asset_filename": "frames/scene_004.jpg",
+   "ambiente": "",
+   "sfx": [],
+   "image_origen": {
+    "tipo": "ia_generada",
+    "herramienta": "GenerateImage"
+   }
+  },
+  {
+   "id": "scene_005",
+   "arc": "desarrollo",
+   "duration_seconds": 10.8,
+   "narration": "Y música de todo el mundo. Entre Bach, Beethoven y Chuck Berry viaja un son de México: El Cascabel, con Lorenzo Barcelata y el Mariachi México.",
+   "on_screen_text": "El Cascabel, de México",
+   "visual_description": "Ilustración generada con IA, estilo Fieltro stop-motion (interpretación artística): a cheerful felt mariachi band with tiny felt guitars, violin and trumpet playing on a golden record stage",
+   "image_prompt": "stop-motion felt animation diorama, needle felted wool characters, visible stitches, soft fuzzy textures, warm studio light, one large character, simple felt backdrop, handmade, not photorealistic, vertical 9:16, no text + a cheerful felt mariachi band with tiny felt guitars, violin and trumpet playing on a golden record stage, no text",
+   "source_ids": [
+    "SRC-002"
+   ],
+   "asset_filename": "frames/scene_005.jpg",
+   "ambiente": "",
+   "sfx": [],
+   "image_origen": {
+    "tipo": "ia_generada",
+    "herramienta": "GenerateImage"
+   },
+   "capa": {
+    "tipo": "mapa",
+    "region": [
+     -118,
+     -86,
+     14,
+     33
+    ],
+    "titulo": "México en el disco",
+    "puntos": [
+     {
+      "nombre": "Ciudad de México",
+      "lon": -99.13,
+      "lat": 19.43
+     }
+    ]
+   }
+  },
+  {
+   "id": "scene_006",
+   "arc": "cierre_historia",
+   "duration_seconds": 13.1,
+   "narration": "El disco trae su propia aguja y dibujos que explican cómo tocarlo. En dos mil doce, Voyager uno salió de la burbuja del Sol: fue el primero en llegar al espacio interestelar.",
+   "on_screen_text": "Espacio interestelar",
+   "visual_description": "Ilustración generada con IA, estilo Fieltro stop-motion (interpretación artística): a small felt Voyager space probe with a big round dish antenna crossing a soft glowing felt bubble boundary into dark felt space",
+   "image_prompt": "stop-motion felt animation diorama, needle felted wool characters, visible stitches, soft fuzzy textures, warm studio light, one large character, simple felt backdrop, handmade, not photorealistic, vertical 9:16, no text + a small felt Voyager space probe with a big round dish antenna crossing a soft glowing felt bubble boundary into dark felt space, no text",
+   "source_ids": [
+    "SRC-001",
+    "SRC-004"
+   ],
+   "asset_filename": "frames/scene_006.jpg",
+   "ambiente": "",
+   "sfx": [],
+   "image_origen": {
+    "tipo": "ia_generada",
+    "herramienta": "GenerateImage"
+   }
+  },
+  {
+   "id": "scene_007",
+   "arc": "cierre_historia",
+   "duration_seconds": 10.0,
+   "narration": "Y ahora, el dieciocho de noviembre, estará tan lejos que su señal tardará un día entero en llegarnos: unos veintiséis mil millones de kilómetros.",
+   "on_screen_text": "A un día-luz",
+   "visual_description": "Ilustración generada con IA, estilo Fieltro stop-motion (interpretación artística): a tiny felt probe far away and a felt Earth with a felt clock showing a whole day between them, a dotted thread line connecting them",
+   "image_prompt": "stop-motion felt animation diorama, needle felted wool characters, visible stitches, soft fuzzy textures, warm studio light, one large character, simple felt backdrop, handmade, not photorealistic, vertical 9:16, no text + a tiny felt probe far away and a felt Earth with a felt clock showing a whole day between them, a dotted thread line connecting them, no text",
+   "source_ids": [
+    "SRC-003"
+   ],
+   "asset_filename": "frames/scene_007.jpg",
+   "ambiente": "",
+   "sfx": [],
+   "image_origen": {
+    "tipo": "ia_generada",
+    "herramienta": "GenerateImage"
+   },
+   "capa": {
+    "tipo": "dato",
+    "valor": "1 día-luz",
+    "etiqueta": "18 nov 2026 · ~26 mil millones de km",
+    "fuente": "NASA"
+   }
+  },
+  {
+   "id": "scene_008",
+   "arc": "reflexion_o_pregunta",
+   "duration_seconds": 10.8,
+   "narration": "Dentro de cuarenta mil años pasará cerca de otra estrella. Quizá nadie lo escuche nunca. Pero, ¿qué canción habrías puesto tú? Esto fue Datos y ociosidades.",
+   "on_screen_text": "¿Qué canción pondrías?",
+   "visual_description": "Ilustración generada con IA, estilo Fieltro stop-motion (interpretación artística): a felt family on a felt rooftop at night looking up at the stars, holding a small golden felt record",
+   "image_prompt": "stop-motion felt animation diorama, needle felted wool characters, visible stitches, soft fuzzy textures, warm studio light, one large character, simple felt backdrop, handmade, not photorealistic, vertical 9:16, no text + a felt family on a felt rooftop at night looking up at the stars, holding a small golden felt record, no text",
+   "source_ids": [
+    "SRC-003"
+   ],
+   "asset_filename": "frames/scene_008.jpg",
+   "ambiente": "",
+   "sfx": [],
+   "image_origen": {
+    "tipo": "ia_generada",
+    "herramienta": "GenerateImage"
+   }
+  }
+ ],
+ "cortinilla_fuentes": {
+  "duration_seconds": 6,
+  "titulo": "Fuentes",
+  "aviso": "Ilustraciones generadas con IA (estilo Fieltro stop-motion); interpretación artística. Voz sintética con IA (edge-tts). Música sintetizada.",
+  "bg_rgb": [
+   28,
+   30,
+   52
+  ],
+  "firma": "Datos y ociosidades · @datosyociosidades"
+ },
+ "audio": {
+  "music_asset": "sintetico:circuito_neural",
+  "music_lufs": -27,
+  "ambiente_lufs": -28,
+  "music_license": "Sintetizado por scripts/cama_sonora.py (obra propia)",
+  "sfx_license": "Wikimedia Commons CC0/PD, ver assets/sfx/LICENCIAS.json",
+  "cama_musical": "circuito_neural"
+ },
+ "export": {
+  "filename": "capsula.mp4",
+  "resolution": "1080x1920",
+  "fps": 30,
+  "subtitle_max_words": 3,
+  "plano_seconds": 2.5,
+  "loudness_lufs": -14
+ },
+ "canal": {
+  "nombre": "Datos y ociosidades",
+  "handle": "@datosyociosidades",
+  "youtube_channel_id": "UCU2ZI-6pBJEr9aSFsF6bxLw"
+ },
+ "origen": "propia",
+ "parece_real": false,
+ "proveedor_imagenes": "GenerateImage (IA) con prompt_base del estilo",
+ "slot_cdmx": "13:30",
+ "estado": "storyboard 2026-10-28"
+}

@@ -1,0 +1,270 @@
+{
+ "project_id": "2026-10-28_noct-lince-milanos",
+ "serie": "Datos y ociosidades",
+ "title": "Dato del día: sequía y virus convierten al lince en cazador de milanos",
+ "titulo": "Sequía + virus = lince trepador",
+ "titulo_yt": "Dato del día: sequía y virus convierten al lince en cazador de milanos #Shorts",
+ "language": "es-MX",
+ "aspect_ratio": "9:16",
+ "target_duration_seconds": 90,
+ "estructura": "historia",
+ "estilo_id": "ukiyo_e",
+ "estilo_visual": "Ukiyo-e (propio)",
+ "trend_source": {
+  "tipo": "noticia_cientifica",
+  "medio": "Nature",
+  "url": "https://www.nature.com/articles/s41586-026-11194-z",
+  "termino": "lince milano Doñana sequía",
+  "fecha_publicacion": "2026-10-21",
+  "fecha_consulta": "2026-10-28"
+ },
+ "voice": {
+  "engine": "edge-tts",
+  "voice_id": "es-MX-JorgeNeural",
+  "rate": "+7%",
+  "pitch": "-2Hz",
+  "pad_seconds": 0.3,
+  "modo_pausas": "continuo"
+ },
+ "sources": [
+  {
+   "id": "SRC-001",
+   "cita_corta": "Sergio, F. et al. (2026) Drought and disease trigger novel interactions among top predators. Nature (publicado 21 oct 2026)",
+   "url": "https://www.nature.com/articles/s41586-026-11194-z",
+   "doi": "10.1038/s41586-026-11194-z",
+   "accessed": "2026-10-28",
+   "supports": [
+    "Doñana, España; tres décadas, 1,624 nidos de milano negro",
+    "1993-2012: el lince destruyó 13 de 904 nidos (1%)",
+    "2013: variante de la enfermedad hemorrágica redujo conejos más de 70%",
+    "depredación solo en años de sequía",
+    "hasta 46% de los pollos casi listos para volar",
+    "linces trepan nidos de hasta 12 m",
+    "más del triple de restos de conejo bajo nidos depredados",
+    "éxito reproductivo de por vida -27.7%; 4 veces más probable emigrar",
+    "más mochuelos donde hubo menos milanos"
+   ],
+   "ref_display": "Sergio et al. 2026 · Nature"
+  }
+ ],
+ "scenes": [
+  {
+   "id": "scene_001",
+   "arc": "hook_medias_res",
+   "duration_seconds": 9.6,
+   "narration": "De noche, un lince trepa doce metros por un alcornoque. Arriba hay un nido de milano. Hace treinta años, esto casi nunca pasaba.",
+   "on_screen_text": "Un lince en el árbol",
+   "visual_description": "Ilustración generada con IA, estilo Ukiyo-e (propio) (interpretación artística): ukiyo-e Japanese woodblock print style, flat colors, bold outlines, an Iberian lynx climbing a gnarled cork oak at night under a full moon toward a large bird nest",
+   "image_prompt": "ukiyo-e Japanese woodblock print, flat color areas, elegant outlines, stylized waves and clouds, washi paper texture, vertical 9:16, no text + ukiyo-e Japanese woodblock print style, flat colors, bold outlines, an Iberian lynx climbing a gnarled cork oak at night under a full moon toward a large bird nest, no text",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "asset_filename": "frames/scene_001.jpg",
+   "ambiente": "",
+   "sfx": [],
+   "image_origen": {
+    "tipo": "ia_generada",
+    "herramienta": "GenerateImage"
+   }
+  },
+  {
+   "id": "scene_002",
+   "arc": "desarrollo",
+   "duration_seconds": 9.6,
+   "narration": "Doñana, sur de España. Un equipo siguió mil seiscientos veinticuatro nidos de milano negro durante tres décadas. Nature lo publicó hace una semana.",
+   "on_screen_text": "30 años, 1,624 nidos",
+   "visual_description": "Ilustración generada con IA, estilo Ukiyo-e (propio) (interpretación artística): ukiyo-e Japanese woodblock print style, flat colors, bold outlines, wide wetland marsh landscape of Doñana with cork oaks and black kites soaring, distant scientists with binoculars",
+   "image_prompt": "ukiyo-e Japanese woodblock print, flat color areas, elegant outlines, stylized waves and clouds, washi paper texture, vertical 9:16, no text + ukiyo-e Japanese woodblock print style, flat colors, bold outlines, wide wetland marsh landscape of Doñana with cork oaks and black kites soaring, distant scientists with binoculars, no text",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "asset_filename": "frames/scene_002.jpg",
+   "ambiente": "",
+   "sfx": [],
+   "image_origen": {
+    "tipo": "ia_generada",
+    "herramienta": "GenerateImage"
+   },
+   "capa": {
+    "tipo": "mapa",
+    "region": [
+     -10,
+     4,
+     35,
+     44
+    ],
+    "titulo": "Parque Nacional de Doñana",
+    "puntos": [
+     {
+      "nombre": "Doñana",
+      "lon": -6.44,
+      "lat": 36.99
+     }
+    ]
+   }
+  },
+  {
+   "id": "scene_003",
+   "arc": "desarrollo",
+   "duration_seconds": 13.5,
+   "narration": "Linces y milanos comen lo mismo: conejos. Por veinte años convivieron en paz. Entre mil novecientos noventa y tres y dos mil doce, el lince atacó apenas uno por ciento de los nidos.",
+   "on_screen_text": "Vecinos en paz",
+   "visual_description": "Ilustración generada con IA, estilo Ukiyo-e (propio) (interpretación artística): ukiyo-e Japanese woodblock print style, flat colors, bold outlines, a lynx resting below a tree while a black kite perches above, rabbits in the grass between them, calm scene",
+   "image_prompt": "ukiyo-e Japanese woodblock print, flat color areas, elegant outlines, stylized waves and clouds, washi paper texture, vertical 9:16, no text + ukiyo-e Japanese woodblock print style, flat colors, bold outlines, a lynx resting below a tree while a black kite perches above, rabbits in the grass between them, calm scene, no text",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "asset_filename": "frames/scene_003.jpg",
+   "ambiente": "",
+   "sfx": [],
+   "image_origen": {
+    "tipo": "ia_generada",
+    "herramienta": "GenerateImage"
+   },
+   "capa": {
+    "tipo": "dato",
+    "valor": "1%",
+    "etiqueta": "nidos atacados 1993-2012 (13 de 904)",
+    "fuente": "Sergio et al. 2026"
+   }
+  },
+  {
+   "id": "scene_004",
+   "arc": "desarrollo",
+   "duration_seconds": 9.6,
+   "narration": "En dos mil trece llegó una nueva variante de la enfermedad hemorrágica del conejo. La población local cayó más de setenta por ciento.",
+   "on_screen_text": "Se acaban los conejos",
+   "visual_description": "Ilustración generada con IA, estilo Ukiyo-e (propio) (interpretación artística): ukiyo-e Japanese woodblock print style, flat colors, bold outlines, empty rabbit burrows in dry grass under a pale sky, a single wilted plant, somber mood",
+   "image_prompt": "ukiyo-e Japanese woodblock print, flat color areas, elegant outlines, stylized waves and clouds, washi paper texture, vertical 9:16, no text + ukiyo-e Japanese woodblock print style, flat colors, bold outlines, empty rabbit burrows in dry grass under a pale sky, a single wilted plant, somber mood, no text",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "asset_filename": "frames/scene_004.jpg",
+   "ambiente": "",
+   "sfx": [],
+   "image_origen": {
+    "tipo": "ia_generada",
+    "herramienta": "GenerateImage"
+   }
+  },
+  {
+   "id": "scene_005",
+   "arc": "desarrollo",
+   "duration_seconds": 14.3,
+   "narration": "Pero el lince solo cambió de menú en años de sequía, cuando las marismas se secaban y tampoco había patos. Entonces destruyó hasta cuarenta y seis por ciento de los pollos a punto de volar.",
+   "on_screen_text": "Sequía: hasta 46%",
+   "visual_description": "Ilustración generada con IA, estilo Ukiyo-e (propio) (interpretación artística): ukiyo-e Japanese woodblock print style, flat colors, bold outlines, cracked dry marshland with a stalking lynx under a red sun, a kite nest in a lone tree",
+   "image_prompt": "ukiyo-e Japanese woodblock print, flat color areas, elegant outlines, stylized waves and clouds, washi paper texture, vertical 9:16, no text + ukiyo-e Japanese woodblock print style, flat colors, bold outlines, cracked dry marshland with a stalking lynx under a red sun, a kite nest in a lone tree, no text",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "asset_filename": "frames/scene_005.jpg",
+   "ambiente": "",
+   "sfx": [],
+   "image_origen": {
+    "tipo": "ia_generada",
+    "herramienta": "GenerateImage"
+   },
+   "capa": {
+    "tipo": "dato",
+    "valor": "46%",
+    "etiqueta": "pollos de milano depredados en sequía",
+    "fuente": "Sergio et al. 2026"
+   }
+  },
+  {
+   "id": "scene_006",
+   "arc": "desarrollo",
+   "duration_seconds": 8.8,
+   "narration": "Lo curioso: atacaba más los nidos con restos de conejo tirados abajo. Más del triple. Como si eliminara a un competidor.",
+   "on_screen_text": "Pistas bajo el nido",
+   "visual_description": "Ilustración generada con IA, estilo Ukiyo-e (propio) (interpretación artística): ukiyo-e Japanese woodblock print style, flat colors, bold outlines, close view of rabbit bones on the ground beneath a tree nest, a lynx sniffing them, moonlight",
+   "image_prompt": "ukiyo-e Japanese woodblock print, flat color areas, elegant outlines, stylized waves and clouds, washi paper texture, vertical 9:16, no text + ukiyo-e Japanese woodblock print style, flat colors, bold outlines, close view of rabbit bones on the ground beneath a tree nest, a lynx sniffing them, moonlight, no text",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "asset_filename": "frames/scene_006.jpg",
+   "ambiente": "",
+   "sfx": [],
+   "image_origen": {
+    "tipo": "ia_generada",
+    "herramienta": "GenerateImage"
+   }
+  },
+  {
+   "id": "scene_007",
+   "arc": "cierre_historia",
+   "duration_seconds": 12.0,
+   "narration": "Los milanos atacados criaron casi veintiocho por ciento menos pollos en su vida y fueron cuatro veces más propensos a mudarse. Y donde hubo menos milanos, aumentaron los mochuelos.",
+   "on_screen_text": "Efecto dominó",
+   "visual_description": "Ilustración generada con IA, estilo Ukiyo-e (propio) (interpretación artística): ukiyo-e Japanese woodblock print style, flat colors, bold outlines, a black kite flying away from a tree while a small little owl peeks from a tree hollow, layered composition",
+   "image_prompt": "ukiyo-e Japanese woodblock print, flat color areas, elegant outlines, stylized waves and clouds, washi paper texture, vertical 9:16, no text + ukiyo-e Japanese woodblock print style, flat colors, bold outlines, a black kite flying away from a tree while a small little owl peeks from a tree hollow, layered composition, no text",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "asset_filename": "frames/scene_007.jpg",
+   "ambiente": "",
+   "sfx": [],
+   "image_origen": {
+    "tipo": "ia_generada",
+    "herramienta": "GenerateImage"
+   }
+  },
+  {
+   "id": "scene_008",
+   "arc": "reflexion_o_pregunta",
+   "duration_seconds": 11.6,
+   "narration": "Un virus y una sequía bastaron para reescribir quién caza a quién. ¿Qué otras alianzas está cambiando el clima sin que lo veamos? Esto fue Datos y ociosidades.",
+   "on_screen_text": "¿Quién caza a quién?",
+   "visual_description": "Ilustración generada con IA, estilo Ukiyo-e (propio) (interpretación artística): ukiyo-e Japanese woodblock print style, flat colors, bold outlines, a lynx silhouette on a rock under a huge moon with kites circling, dramatic wave-like clouds",
+   "image_prompt": "ukiyo-e Japanese woodblock print, flat color areas, elegant outlines, stylized waves and clouds, washi paper texture, vertical 9:16, no text + ukiyo-e Japanese woodblock print style, flat colors, bold outlines, a lynx silhouette on a rock under a huge moon with kites circling, dramatic wave-like clouds, no text",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "asset_filename": "frames/scene_008.jpg",
+   "ambiente": "",
+   "sfx": [],
+   "image_origen": {
+    "tipo": "ia_generada",
+    "herramienta": "GenerateImage"
+   }
+  }
+ ],
+ "cortinilla_fuentes": {
+  "duration_seconds": 6,
+  "titulo": "Fuentes",
+  "aviso": "Ilustraciones generadas con IA (estilo Ukiyo-e (propio)); interpretación artística. Voz sintética con IA (edge-tts). Música sintetizada.",
+  "bg_rgb": [
+   28,
+   30,
+   52
+  ],
+  "firma": "Datos y ociosidades · @datosyociosidades"
+ },
+ "audio": {
+  "music_asset": "sintetico:arpegio",
+  "music_lufs": -27,
+  "ambiente_lufs": -28,
+  "music_license": "Sintetizado por scripts/cama_sonora.py (obra propia)",
+  "sfx_license": "Wikimedia Commons CC0/PD, ver assets/sfx/LICENCIAS.json",
+  "cama_musical": "arpegio"
+ },
+ "export": {
+  "filename": "capsula.mp4",
+  "resolution": "1080x1920",
+  "fps": 30,
+  "subtitle_max_words": 3,
+  "plano_seconds": 2.5,
+  "loudness_lufs": -14
+ },
+ "canal": {
+  "nombre": "Datos y ociosidades",
+  "handle": "@datosyociosidades",
+  "youtube_channel_id": "UCU2ZI-6pBJEr9aSFsF6bxLw"
+ },
+ "origen": "propia",
+ "parece_real": false,
+ "proveedor_imagenes": "GenerateImage (IA) con prompt_base del estilo",
+ "slot_cdmx": "23:30",
+ "estado": "storyboard 2026-10-28"
+}

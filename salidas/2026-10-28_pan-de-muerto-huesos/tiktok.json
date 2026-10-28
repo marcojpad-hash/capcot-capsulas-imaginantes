@@ -1,0 +1,21 @@
+{
+ "estado": "pendiente_tiktok",
+ "mp4": "/workspace/capcot/salidas/2026-10-28_pan-de-muerto-huesos/capsula.mp4",
+ "caption": "Te lo comes cada año, pero el pan de muerto tiene huesos, lágrimas y un cráneo.\n\nPan de muerto: antes y ahora, de México al mundo. Datos verificados contados como historia.\n\nFuentes en YouTube @datosyociosidades\n\n#aprendeentiktok #sabiasque #ciencia #divulgacioncientifica #PanDeMuertoOrigen",
+ "hashtags": [
+  "#aprendeentiktok",
+  "#sabiasque",
+  "#ciencia",
+  "#divulgacioncientifica",
+  "#PanDeMuertoOrigen"
+ ],
+ "descripcion_completa": "Te lo comes cada año, pero el pan de muerto tiene huesos, lágrimas y un cráneo.\n\nPan de muerto: antes y ahora, de México al mundo. Una cápsula de Datos y ociosidades: datos verificados contados como historia.\n\nFuentes:\n• UNAM Global – Pan de muerto: origen, historia y diversidad cultural (28 oct 2025) https://unamglobal.unam.mx/global_revista/pan-de-muerto-origen-historia-simbolismo/\n• Ciencia UNAM-DGDC – Pan de Muerto. Sabor y tradición en un alimento (2021) https://ciencia.unam.mx/leer/1183/pan\n\nImágenes generadas con IA · voz sintética · audio sintetizado.\nFuentes en YouTube @datosyociosidades\n\n#aprendeentiktok #sabiasque #ciencia #divulgacioncientifica #PanDeMuertoOrigen",
+ "cuenta": "@datosyociosidades",
+ "hora_sugerida_local": "2026-10-28 17:00 CDMX",
+ "yt_id": "inzztxrxYfg",
+ "instruccion": "Mj/agente con browser sube en TikTok Studio con caption_corto, etiqueta IA y programa a la hora del slot; luego estado='programado_tiktok'/'publicado_tiktok' + url.",
+ "caption_corto": "Pan de muerto: antes y ahora, de México al mundo\n\nFuentes en YouTube @datosyociosidades\n#aprendeentiktok #sabiasque #ciencia",
+ "etiqueta_ia": "Activar etiqueta 'Contenido generado por IA' (imágenes y voz sintéticas)",
+ "etiqueta_ia_activada": false,
+ "url": null
+}

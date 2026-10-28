@@ -1,0 +1,3 @@
+# Fuentes (verificadas)
+
+- [SRC-001] Sergio, F. et al. (2026) Drought and disease trigger novel interactions among top predators. Nature (publicado 21 oct 2026) https://www.nature.com/articles/s41586-026-11194-z (consulta 2026-10-28) — respalda: Doñana, España; tres décadas, 1,624 nidos de milano negro; 1993-2012: el lince destruyó 13 de 904 nidos (1%); 2013: variante de la enfermedad hemorrágica redujo conejos más de 70%; depredación solo en años de sequía; hasta 46% de los pollos casi listos para volar; linces trepan nidos de hasta 12 m; más del triple de restos de conejo bajo nidos depredados; éxito reproductivo de por vida -27.7%; 4 veces más probable emigrar; más mochuelos donde hubo menos milanos

@@ -1,0 +1,21 @@
+{
+ "estado": "pendiente_tiktok",
+ "mp4": "/workspace/capcot/salidas/2026-10-28_monarca-almas/capsula.mp4",
+ "caption": "Dicen que cada noviembre los muertos regresan volando, con alas naranjas.\n\nMariposas monarca: ¿las almas que regresan en Día de Muertos?. Datos verificados contados como historia.\n\nFuentes en YouTube @datosyociosidades\n\n#aprendeentiktok #sabiasque #ciencia #divulgacioncientifica #MariposaMonarcaDiaDeMuertos",
+ "hashtags": [
+  "#aprendeentiktok",
+  "#sabiasque",
+  "#ciencia",
+  "#divulgacioncientifica",
+  "#MariposaMonarcaDiaDeMuertos"
+ ],
+ "descripcion_completa": "Dicen que cada noviembre los muertos regresan volando, con alas naranjas.\n\nMariposas monarca: ¿las almas que regresan en Día de Muertos?. Una cápsula de Datos y ociosidades: datos verificados contados como historia.\n\nFuentes:\n• CONANP – Reserva de la Biosfera Mariposa Monarca, la región https://conanp.gob.mx/conanp/dominios/rbmonarca/region.php\n• CONANP – Infografía Mariposa Monarca https://www.conanp.gob.mx/temp/mariposa.php\n• CONANP – Reserva de la Biosfera Mariposa Monarca https://conanp.gob.mx/conanp/dominios/rbmonarca/index.php\n• Merlin, Gegear & Reppert (2009) Antennal circadian clocks coordinate sun compass orientation in migratory monarch butterflies. Science 325:1700-1704 https://doi.org/10.1126/science.1176221\n\nImágenes generadas con IA · voz sintética · audio sintetizado.\nFuentes en YouTube @datosyociosidades\n\n#aprendeentiktok #sabiasque #ciencia #divulgacioncientifica #MariposaMonarcaDiaDeMuertos",
+ "cuenta": "@datosyociosidades",
+ "hora_sugerida_local": "2026-10-28 14:30 CDMX",
+ "yt_id": "p4eXmoJ2f18",
+ "instruccion": "Mj/agente con browser sube en TikTok Studio con caption_corto, etiqueta IA y programa a la hora del slot; luego estado='programado_tiktok'/'publicado_tiktok' + url.",
+ "caption_corto": "Mariposas monarca: ¿las almas que regresan en Día de Muertos?\n\nFuentes en YouTube @datosyociosidades\n#aprendeentiktok #sabiasque #ciencia",
+ "etiqueta_ia": "Activar etiqueta 'Contenido generado por IA' (imágenes y voz sintéticas)",
+ "etiqueta_ia_activada": false,
+ "url": null
+}

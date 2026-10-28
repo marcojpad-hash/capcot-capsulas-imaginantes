@@ -76,5 +76,32 @@
    "origen": "propia",
    "project_id": "noct-anfibio-marino"
   }
+ ],
+ "2026-10-28": [
+  {
+   "tema": "titanoboa cerrejonensis serpiente gigante",
+   "origen": "propia",
+   "project_id": "2026-10-28_kids-titanoboa"
+  },
+  {
+   "tema": "voyager disco de oro dia luz",
+   "origen": "propia",
+   "project_id": "2026-10-28_familia-voyager-disco-oro"
+  },
+  {
+   "tema": "mariposa monarca dia de muertos",
+   "origen": "propia",
+   "project_id": "2026-10-28_monarca-almas"
+  },
+  {
+   "tema": "pan de muerto origen",
+   "origen": "propia",
+   "project_id": "2026-10-28_pan-de-muerto-huesos"
+  },
+  {
+   "tema": "lince milano doñana sequía",
+   "origen": "propia",
+   "project_id": "2026-10-28_noct-lince-milanos"
+  }
  ]
 }

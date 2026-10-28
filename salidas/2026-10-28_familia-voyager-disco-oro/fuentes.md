@@ -1,0 +1,6 @@
+# Fuentes (verificadas)
+
+- [SRC-001] NASA Science – What are the contents of the Golden Record? https://science.nasa.gov/mission/voyager/golden-record-contents/ (consulta 2026-10-28) — respalda: comité de Carl Sagan; 115 imágenes, sonidos naturales; saludos en 55 idiomas, del acadio al wu; aguja, cartucho e instrucciones simbólicas; disco chapado en oro de 12 pulgadas en cada Voyager, 1977
+- [SRC-002] NASA Science – Golden Record Sounds and Music https://science.nasa.gov/mission/voyager/golden-record-contents/sounds/ (consulta 2026-10-28) — respalda: El Cascabel, Lorenzo Barcelata y el Mariachi México, 3:14
+- [SRC-003] NASA Science – Voyager 1: What Is a Light-Day (2026) https://science.nasa.gov/mission/voyager/voyager-1/voyager-1-what-is-a-light-day/ (consulta 2026-10-28) — respalda: 18 nov 2026: a un día-luz, ~26 mil millones de km; primer objeto humano a esa distancia; en 40,000 años pasará a 1.7 años luz de Gliese 445
+- [SRC-004] NASA Science – Voyager Interstellar Mission https://science.nasa.gov/mission/voyager/interstellar-mission/ (consulta 2026-10-28) — respalda: Voyager 1 entró al espacio interestelar el 25 ago 2012

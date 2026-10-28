@@ -1,0 +1,6 @@
+# Fuentes (verificadas)
+
+- [SRC-001] CONANP – Reserva de la Biosfera Mariposa Monarca, la región https://conanp.gob.mx/conanp/dominios/rbmonarca/region.php (consulta 2026-10-28) — respalda: los purépechas la consideraron el alma de los muertos; su llegada coincidía con el 1 y 2 de noviembre; mazahuas y otomíes la llamaron la cosechadora
+- [SRC-002] CONANP – Infografía Mariposa Monarca https://www.conanp.gob.mx/temp/mariposa.php (consulta 2026-10-28) — respalda: ruta de 4,000 a 4,500 km; 100 a 120 km por día; travesía de aproximadamente 50 días; hasta 600 mariposas por árbol; origen en la región de los Grandes Lagos
+- [SRC-003] CONANP – Reserva de la Biosfera Mariposa Monarca https://conanp.gob.mx/conanp/dominios/rbmonarca/index.php (consulta 2026-10-28) — respalda: 56,259 ha entre Michoacán y Estado de México; racimos en oyameles durante el invierno; en marzo vuelan al norte y mueren en el camino; sus descendientes completan el viaje
+- [SRC-004] Merlin, Gegear & Reppert (2009) Antennal circadian clocks coordinate sun compass orientation in migratory monarch butterflies. Science 325:1700-1704 https://doi.org/10.1126/science.1176221 (consulta 2026-10-28) — respalda: usan una brújula solar compensada en el tiempo; el reloj que la corrige está en las antenas

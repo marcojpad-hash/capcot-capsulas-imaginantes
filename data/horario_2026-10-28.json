@@ -1,65 +1,95 @@
 {
   "fecha": "2026-10-28",
   "tz": "America/Mexico_City",
-  "pedido_mj": "t145u",
+  "pedido_mj": "pt263u",
   "slots": [
     {
       "hora": "07:00",
       "id": "2026-10-28_kids-titanoboa",
-      "titulo": "Titanoboa, la serpiente del tamaño de un autobús",
-      "franja": "A",
-      "linea": "kids",
+      "titulo": "Titanoboa: la serpiente más grande que existió #Shorts",
       "estilo": "papel_infantil",
-      "estado": "borrador_propuesta",
-      "origen": "nuevo",
+      "estructura": "historia",
+      "estado": "programado_yt",
+      "yt_id": "oGFKLUgBdhA",
+      "publishAt": "2026-10-28T13:00:00Z",
+      "privacidad": "private",
+      "proyecto": "2026-10-28_kids-titanoboa",
+      "salida": "salidas/2026-10-28_kids-titanoboa",
+      "qa": "QA_OK",
       "plataformas": [
         "youtube",
-        "tiktok"
+        "tiktok",
+        "facebook"
       ],
-      "hecho_para_ninos": false,
-      "nota": "pt167u; NO programar/publicar sin OK de Mj; ver salidas/_ops/2026-10-26_parrilla_franjas_reporte.md"
+      "tiktok": "pendiente",
+      "facebook": "pendiente",
+      "nota": "pt263u"
     },
     {
       "hora": "13:30",
       "id": "2026-10-28_familia-voyager-disco-oro",
-      "titulo": "El disco de oro del Voyager",
-      "franja": "B",
-      "linea": "familia",
-      "estilo": "papel_infantil",
-      "estado": "borrador_propuesta",
-      "origen": "parking 2026-xx_parking_voyager-disco-oro",
+      "titulo": "El disco de oro del Voyager: un saludo a las estrellas #Shorts",
+      "estilo": "fieltro_stop_motion",
+      "estructura": "pregunta",
+      "estado": "programado_yt",
+      "yt_id": "OFpAg4XA3AM",
+      "publishAt": "2026-10-28T19:30:00Z",
+      "privacidad": "private",
+      "proyecto": "2026-10-28_familia-voyager-disco-oro",
+      "salida": "salidas/2026-10-28_familia-voyager-disco-oro",
+      "qa": "QA_OK",
       "plataformas": [
         "youtube",
-        "tiktok"
+        "tiktok",
+        "facebook"
       ],
-      "hecho_para_ninos": false,
-      "nota": "pt167u; NO programar/publicar sin OK de Mj; ver salidas/_ops/2026-10-26_parrilla_franjas_reporte.md"
+      "tiktok": "pendiente",
+      "facebook": "pendiente",
+      "nota": "pt263u"
     },
     {
       "hora": "14:30",
-      "id": "2026-10-28_TBD-D",
-      "titulo": "TBD",
-      "angulo_propuesto": "Monarca = almas que regresan",
+      "id": "2026-10-28_monarca-almas",
+      "titulo": "Mariposas monarca: ¿las almas que regresan en Día de Muertos? #Shorts",
       "estilo": "grafiti_colorido",
-      "estado": "TBD",
+      "estructura": "mito_vs_dato",
+      "estado": "programado_yt",
+      "yt_id": "p4eXmoJ2f18",
+      "publishAt": "2026-10-28T20:30:00Z",
+      "privacidad": "private",
+      "proyecto": "2026-10-28_monarca-almas",
+      "salida": "salidas/2026-10-28_monarca-almas",
+      "qa": "QA_OK",
       "plataformas": [
         "youtube",
-        "tiktok"
+        "tiktok",
+        "facebook"
       ],
-      "nota": "Propuesta pt160u; ver salidas/_ops/2026-10-25_huecos_26_28_estilos.md"
+      "tiktok": "pendiente",
+      "facebook": "pendiente",
+      "nota": "pt263u"
     },
     {
       "hora": "17:00",
-      "id": "2026-10-28_TBD-E",
-      "titulo": "TBD",
-      "angulo_propuesto": "Pan de muerto: huesos y lágrima",
-      "estilo": "litografia_azul_dorado",
-      "estado": "TBD",
+      "id": "2026-10-28_pan-de-muerto-huesos",
+      "titulo": "Pan de muerto: antes y ahora, de México al mundo #Shorts",
+      "estilo": "bordado",
+      "estructura": "comparacion",
+      "estado": "programado_yt",
+      "yt_id": "inzztxrxYfg",
+      "publishAt": "2026-10-28T23:00:00Z",
+      "privacidad": "private",
+      "proyecto": "2026-10-28_pan-de-muerto-huesos",
+      "salida": "salidas/2026-10-28_pan-de-muerto-huesos",
+      "qa": "QA_OK",
       "plataformas": [
         "youtube",
-        "tiktok"
+        "tiktok",
+        "facebook"
       ],
-      "nota": "Propuesta pt160u; ver salidas/_ops/2026-10-25_huecos_26_28_estilos.md"
+      "tiktok": "pendiente",
+      "facebook": "pendiente",
+      "nota": "pt263u"
     },
     {
       "hora": "19:00",
@@ -78,6 +108,28 @@
       "proyecto": "2026-10-28_ddm-parte4-templo-mayor",
       "yt_id": "RhiKtLt2UNQ",
       "publishAt": "2026-10-29T01:00:00Z"
+    },
+    {
+      "hora": "23:30",
+      "id": "2026-10-28_noct-lince-milanos",
+      "titulo": "Dato del día: sequía y virus convierten al lince en cazador de milanos #Shorts",
+      "estilo": "ukiyo_e",
+      "estructura": "historia",
+      "estado": "programado_yt",
+      "yt_id": "mWtf7Yta294",
+      "publishAt": "2026-10-29T05:30:00Z",
+      "privacidad": "private",
+      "proyecto": "2026-10-28_noct-lince-milanos",
+      "salida": "salidas/2026-10-28_noct-lince-milanos",
+      "qa": "QA_OK",
+      "plataformas": [
+        "youtube",
+        "tiktok",
+        "facebook"
+      ],
+      "tiktok": "pendiente",
+      "facebook": "pendiente",
+      "nota": "pt263u"
     }
   ],
   "franjas_ref": "salidas/_ops/2026-10-26_parrilla_franjas_reporte.md"

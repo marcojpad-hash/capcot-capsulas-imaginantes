@@ -1,0 +1,21 @@
+{
+ "estado": "pendiente_tiktok",
+ "mp4": "/workspace/capcot/salidas/2026-10-28_kids-titanoboa/capsula.mp4",
+ "caption": "Una mina de carbón en Colombia.\n\nTitanoboa: la serpiente más grande que existió. Datos verificados contados como historia.\n\nFuentes en YouTube @datosyociosidades\n\n#aprendeentiktok #sabiasque #ciencia #divulgacioncientifica #TitanoboaCerrejonensisSerpienteGigante",
+ "hashtags": [
+  "#aprendeentiktok",
+  "#sabiasque",
+  "#ciencia",
+  "#divulgacioncientifica",
+  "#TitanoboaCerrejonensisSerpienteGigante"
+ ],
+ "descripcion_completa": "Una mina de carbón en Colombia.\n\nTitanoboa: la serpiente más grande que existió. Una cápsula de Datos y ociosidades: datos verificados contados como historia.\n\nFuentes:\n• Head et al. (2009). Giant boid snake from the Palaeocene neotropics reveals hotter past equatorial temperatures. Nature 457:715-717 https://doi.org/10.1038/nature07671\n• Smithsonian Tropical Research Institute – reimpresión del artículo (Jaramillo et al.) https://stri-apps.si.edu/docs/publications/pdfs/JaramilloC_etal_2009_Reprint_GiantSnake.pdf\n\nImágenes generadas con IA · voz sintética · audio sintetizado.\nFuentes en YouTube @datosyociosidades\n\n#aprendeentiktok #sabiasque #ciencia #divulgacioncientifica #TitanoboaCerrejonensisSerpienteGigante",
+ "cuenta": "@datosyociosidades",
+ "hora_sugerida_local": "2026-10-28 07:00 CDMX",
+ "yt_id": "oGFKLUgBdhA",
+ "instruccion": "Mj/agente con browser sube en TikTok Studio con caption_corto, etiqueta IA y programa a la hora del slot; luego estado='programado_tiktok'/'publicado_tiktok' + url.",
+ "caption_corto": "Titanoboa: la serpiente más grande que existió\n\nFuentes en YouTube @datosyociosidades\n#aprendeentiktok #sabiasque #ciencia",
+ "etiqueta_ia": "Activar etiqueta 'Contenido generado por IA' (imágenes y voz sintéticas)",
+ "etiqueta_ia_activada": false,
+ "url": null
+}

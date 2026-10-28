@@ -1,0 +1,21 @@
+{
+ "estado": "pendiente_tiktok",
+ "mp4": "/workspace/capcot/salidas/2026-10-28_familia-voyager-disco-oro/capsula.mp4",
+ "caption": "Si un extraterrestre encontrara un disco, ¿qué le contarías de la Tierra?\n\nEl disco de oro del Voyager: un saludo a las estrellas. Datos verificados contados como historia.\n\nFuentes en YouTube @datosyociosidades\n\n#aprendeentiktok #sabiasque #ciencia #divulgacioncientifica #VoyagerDiscoDeOroDiaLuz",
+ "hashtags": [
+  "#aprendeentiktok",
+  "#sabiasque",
+  "#ciencia",
+  "#divulgacioncientifica",
+  "#VoyagerDiscoDeOroDiaLuz"
+ ],
+ "descripcion_completa": "Si un extraterrestre encontrara un disco, ¿qué le contarías de la Tierra?\n\nEl disco de oro del Voyager: un saludo a las estrellas. Una cápsula de Datos y ociosidades: datos verificados contados como historia.\n\nFuentes:\n• NASA Science – What are the contents of the Golden Record? https://science.nasa.gov/mission/voyager/golden-record-contents/\n• NASA Science – Golden Record Sounds and Music https://science.nasa.gov/mission/voyager/golden-record-contents/sounds/\n• NASA Science – Voyager 1: What Is a Light-Day (2026) https://science.nasa.gov/mission/voyager/voyager-1/voyager-1-what-is-a-light-day/\n• NASA Science – Voyager Interstellar Mission https://science.nasa.gov/mission/voyager/interstellar-mission/\n\nImágenes generadas con IA · voz sintética · audio sintetizado.\nFuentes en YouTube @datosyociosidades\n\n#aprendeentiktok #sabiasque #ciencia #divulgacioncientifica #VoyagerDiscoDeOroDiaLuz",
+ "cuenta": "@datosyociosidades",
+ "hora_sugerida_local": "2026-10-28 13:30 CDMX",
+ "yt_id": "OFpAg4XA3AM",
+ "instruccion": "Mj/agente con browser sube en TikTok Studio con caption_corto, etiqueta IA y programa a la hora del slot; luego estado='programado_tiktok'/'publicado_tiktok' + url.",
+ "caption_corto": "El disco de oro del Voyager: un saludo a las estrellas\n\nFuentes en YouTube @datosyociosidades\n#aprendeentiktok #sabiasque #ciencia",
+ "etiqueta_ia": "Activar etiqueta 'Contenido generado por IA' (imágenes y voz sintéticas)",
+ "etiqueta_ia_activada": false,
+ "url": null
+}
