@@ -849,5 +849,75 @@
    ]
   ],
   "nota_flujo": "Ritmo diurno moderado: YT +501 en 6 h (vs +1,247 nocturno), sostenido por lo nuevo (P2, serpiente voladora, ave, ajolotes). Se estancaron los veteranos: hongo +1 (era el motor), pimiento +1, reina +1, bacteria 0, Osedax ~0. TT casi plano salvo serpiente voladora recién subida; ave jurásica 0 vistas a 16 h."
+ },
+ {
+  "hora_cdmx": "2026-10-27T20:08-06:00",
+  "base_youtube": "2026-10-27T14:06",
+  "base_tiktok": "2026-10-27T14:06",
+  "youtube_totales": {
+   "view": 13886,
+   "like": 482,
+   "comment": 19
+  },
+  "suscriptores": 41,
+  "delta_youtube": {
+   "view": 2115,
+   "like": 79,
+   "comment": 3,
+   "suscriptores": 6
+  },
+  "tiktok_totales": {
+   "view": 1735,
+   "like": 102,
+   "comment": 0
+  },
+  "seguidores_tiktok": 2,
+  "delta_tiktok": {
+   "view_comparable_5": 472,
+   "nota": "Comparables con 14:06: serpiente voladora 99→558 (+459), Catrina +7, P1 +6, ave 0, tardígrado 0. Nuevos: UNAM 574, ajolotes 105, yema 71, Pomuch 5, anfibio programado 0. 6 posts viejos no cargaron (reina, Osedax, abejas, aves, serpientes, sueño); total 1,735 de 10 leídos no comparable con 2,733."
+  },
+  "ranking_crecimiento": [
+   [
+    "YT Ajolotes",
+    952
+   ],
+   [
+    "TT UNAM (nuevo)",
+    574
+   ],
+   [
+    "TT Serpiente voladora",
+    459
+   ],
+   [
+    "YT Papel picado P2",
+    256
+   ],
+   [
+    "YT Serpiente voladora",
+    219
+   ],
+   [
+    "YT Yema/cempasúchil (nuevo)",
+    215
+   ],
+   [
+    "YT UNAM (nuevo)",
+    150
+   ],
+   [
+    "YT Ave remake",
+    147
+   ],
+   [
+    "TT Ajolotes (nuevo)",
+    105
+   ],
+   [
+    "YT Pomuch (nuevo)",
+    61
+   ]
+  ],
+  "nota_flujo": "Aceleró: YT +2,115 en 6 h (vs +501 la franja anterior), +6 subs. Lo empuja lo nuevo: ajolotes despertó (47→999). En TT despegaron serpiente voladora y UNAM. Estancados: reina 0, El Niño 0, aves-mujeres 0, bacteria/Osedax +1, pimiento +5, serpientes +3; ave jurásica sigue en 0 en TT."
  }
 ]
