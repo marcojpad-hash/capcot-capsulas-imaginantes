@@ -1,27 +1,28 @@
 {
   "fecha": "2026-10-27",
   "tipo": "endscreens_rotacion",
-  "actualizado_cdmx": "2026-10-27T17:45-06:00",
-  "motivo": "Nuevo v6t8 (yema, 64 vistas, publicado 17:00) sin pantalla → xBqd (campus, 93, sin tráfico entrante). nY2U acelera (124→635) y sigue → AJR6 (196).",
+  "actualizado_cdmx": "2026-10-27T19:52-06:00",
+  "motivo": "Nuevo YIoW (Día de Muertos parte 3, 44 vistas, publicado 19:00) sin pantalla → ivVo (Catrina, 310, estancado). Resto sin cambios.",
   "vistas_ref": {
-    "v6t8jKMbrhw": 64,
-    "xBqdEn1Dumg": 93,
-    "nY2UqhKmAKQ": 635,
-    "3RdSX40OCac": 312,
-    "YKldyldCeiQ": 263,
-    "GYxjXDh1ahc": 687,
+    "v6t8jKMbrhw": 176,
+    "xBqdEn1Dumg": 145,
+    "nY2UqhKmAKQ": 942,
+    "3RdSX40OCac": 393,
+    "YKldyldCeiQ": 366,
+    "GYxjXDh1ahc": 807,
     "ivVo2H9NaEU": 310,
-    "PBDMJxOkCRk": 1268,
-    "i9QBFPljl6M": 1074,
+    "PBDMJxOkCRk": 1267,
+    "i9QBFPljl6M": 1113,
     "bYGd7QuenSk": 1010,
     "gIjJ0YKYQ8M": 1214,
     "AJR6kcnnDig": 196,
-    "Qe2Y9xDn9QQ": 976,
-    "3bhntOcKHPk": 1431,
+    "Qe2Y9xDn9QQ": 977,
+    "3bhntOcKHPk": 1434,
     "O7TdKvuBjyg": 13,
     "r1AhsPOAS_o": 1390,
-    "ZrUtKs7Ty7U": 1320,
-    "5D96DmjvioU": 621
+    "ZrUtKs7Ty7U": 1321,
+    "5D96DmjvioU": 621,
+    "YIoWXfZaMj0": 44
   },
   "mapa": {
     "r1AhsPOAS_o": "AJR6kcnnDig",
@@ -41,7 +42,8 @@
     "3RdSX40OCac": "ivVo2H9NaEU",
     "nY2UqhKmAKQ": "AJR6kcnnDig",
     "xBqdEn1Dumg": "ivVo2H9NaEU",
-    "v6t8jKMbrhw": "xBqdEn1Dumg"
+    "v6t8jKMbrhw": "xBqdEn1Dumg",
+    "YIoWXfZaMj0": "ivVo2H9NaEU"
   },
   "pendiente_studio": false,
   "nota": "Aplicado en YouTube Studio Editor > Pantalla final (video específico). Búsqueda: pegar youtube.com/watch?v=ID en 'Buscar vídeos de otros canales' (tus vídeos no lista Shorts). Sin suscripción ni tarjetas. Actualización 26-oct 19:49: la lista «Elegir un vídeo específico» ya muestra los Shorts.",
@@ -63,7 +65,8 @@
     "3RdSX40OCac": "aplicado_nuevo_2026-10-27 07:53 → ivVo2H9NaEU",
     "nY2UqhKmAKQ": "aplicado 27-oct 14:47",
     "xBqdEn1Dumg": "aplicado 27-oct 14:50",
-    "v6t8jKMbrhw": "aplicado_nuevo 27-oct 17:44 → xBqdEn1Dumg"
+    "v6t8jKMbrhw": "aplicado_nuevo 27-oct 17:44 → xBqdEn1Dumg",
+    "YIoWXfZaMj0": "aplicado_nuevo 27-oct 19:52 → ivVo2H9NaEU"
   },
   "fijos": {
     "Qe2Y9xDn9QQ": "gIjJ0YKYQ8M",
