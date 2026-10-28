@@ -8,6 +8,24 @@
 
 **Orden de Mj:** se entrega a **Grok principal (la app Grok, no un Grok Bot)** **TODA** la dinámica de CAPCOT durante ~4 días (mientras se recuperan créditos): **videos (cómo se hacen y armarlos) + criterio editorial + métricas + TODAS las rutinas + programados + publicación YT/TT/FB con la misma parrilla.** Este archivo manda sobre `2026-10-28_handoff_grok_principal.md` (que queda como antecedente).
 
+## ★ Orden Mj 28-oct ~02:00 CDMX — tres cosas resueltas (sin atorarse)
+
+### A. Plantillas y estilos — si Mj no los da, Grok los resuelve
+- **Fuentes de estilo (leer en este orden):** `docs/ESTILOS_VISUALES.md`, `docs/PROPUESTAS_PLANTILLAS_VISUALES.md`, `docs/ESTRUCTURA_VISUAL_TRENDS.md`, `salidas/_ops/2026-10-27_plantilla_acuarela_japonesa.md`, `data/tendencias_estilos.json`.
+- **No repetir:** consultar `data/estilos_usados.json` y `data/rotacion.json`; no usar el mismo estilo 2 días seguidos ni en dos slots del mismo día. Registrar cada estilo usado al programar.
+- **Si Mj no entrega plantilla/estilo:** Grok **no espera ni pregunta**. Investiga (tendencias Shorts/TikTok del día, `docs/` arriba, cápsulas que más rindieron en `data/vistas_historico.json`), elige uno, lo anota en `data/estilos_usados.json` con 1 línea de por qué, y produce. Si falta una herramienta o crédito, usa la alternativa de §3.3 (frames manuales / Canva / otro modelo) — nunca se queda atorado.
+- Mj solo se entera si algo es irrecuperable; lo demás se decide y se reporta en el cierre del día.
+
+### B. Entrega diaria: 4–6 cápsulas, programadas y revisadas
+- **Cada día 4–6 cápsulas** (la cadencia que se ha manejado), cubriendo la parrilla §4 (A 07:00 kids · B 13:30 familia · C 14:30/17:00/19:00 general · D ~23:30 dato del día).
+- Cada cápsula pasa **QA (§3 paso 6) + revisión editorial (§2: fuentes, dato verificable, título legible en miniatura)** antes de programarse.
+- **Programadas** en YT (private + publishAt UTC = CDMX + 6 h) y la misma parrilla en TT/FB. Nada sale sin revisión.
+- Producir con antelación (rutina madrugada §5.1): al amanecer el día ya debe estar cubierto.
+
+### C. Pantallas finales / promoción: rotar de pico fuerte → flojos
+- Como se ha practicado: los videos **en pico** (más vistas recientes según `data/vistas_historico.json`) empujan con end screen / tarjeta a los **flojos**; repartir entre varios flojos, no todos al mismo.
+- Rotación horaria (`30 7-23 * * *`, §5.6); estado en `data/endscreens_rotacion.json`. Reevaluar quién es fuerte/flojo con cada reporte de vistas. No tocar Shorts fijados por Mj. Avisar a Mj **solo si cambió**.
+
 ## ⚠️ Cesión temporal (orden Mj 28-oct)
 
 - Este traspaso **solo aplica mientras los Grok Bots (Imaginantes + CAPCOT Métricas/Pantallas) no tengan créditos**. Grok principal es dueño de CAPCOT **únicamente hasta que vuelvan los créditos**.
