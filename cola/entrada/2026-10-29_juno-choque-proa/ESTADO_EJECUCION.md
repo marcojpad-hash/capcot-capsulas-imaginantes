@@ -9,6 +9,8 @@ Paquete candidato preparado con storyboard, ocho frames, mapa esquemático, dos 
 - `ffmpeg` sí existe en `/usr/bin/ffmpeg`, pero no sustituye el TTS obligatorio ni el pipeline oficial.
 - No se ejecutaron `scripts/validar_storyboard.py --check-doi`, `scripts/capsula_diaria.py`, `scripts/procesar_cola.py` ni `scripts/qa_capsula.py`. No se presenta validación local como QA oficial.
 - Ocho frames se generaron con OpenAI ImageGen y se normalizaron a 1080×1920. No se generaron audio, música ni MP4. Los overlays se diseñaron localmente como referencias para montaje manual.
+- Las llamadas de generación usaron prompts visualmente compatibles con el estilo Art Déco; no copiaron literalmente el campo `image_prompt` completo en cada llamada. El storyboard sí conserva el `prompt_base` exacto del catálogo para reproducibilidad. Revisión estética de Grok pendiente.
+- El handoff operativo `salidas/_ops/2026-10-28_HANDOFF_TOTAL_grok_principal.md` asigna temporalmente la producción integral a Grok principal mientras se recuperan créditos. Este paquete se preparó por la instrucción directa de esta conversación; no se presenta como ejecución de Grok Bot ni sustituye su revisión.
 - El DOI resuelve en la página editorial de Nature Communications. La API Crossref no pudo consultarse desde esta sesión; no se afirma que se haya pasado la compuerta Crossref.
 
 ## Actualidad y precisión de la fuente
