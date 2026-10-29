@@ -14,7 +14,7 @@ Paquete candidato preparado con storyboard, ocho frames, mapa esquemático, dos 
 - El DOI resuelve en la página editorial de Nature Communications. La API Crossref no pudo consultarse desde esta sesión; no se afirma que se haya pasado la compuerta Crossref.
 
 ## Actualidad y precisión de la fuente
-- La noticia de ScienceDaily está fechada el 29-oct-2026.
+- La noticia de ScienceDaily está fechada el 28-oct-2026.
 - El artículo primario de *Nature Communications* se publicó el 31-jul-2026. La cápsula se presenta como cobertura de actualidad publicada hoy, **no** como un artículo primario recién publicado esta semana.
 - Los resultados se basan en dos cruces del choque de proa de Júpiter observados por Juno el 10–11-dic-2024. La extrapolación a restos de supernovas es una posible aplicación, no una observación de Juno en una supernova.
 
