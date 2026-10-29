@@ -1,0 +1,268 @@
+{
+  "format": "CAPCOT_EDIT_SPEC_NOT_NATIVE_CAPCUT",
+  "project_id": "2026-10-29_juno-choque-proa",
+  "title": "Juno revela el choque invisible de Júpiter",
+  "language": "es-MX",
+  "aspect_ratio": "9:16",
+  "resolution": "1080x1920",
+  "fps": 30,
+  "target_duration_seconds": 85,
+  "scenes": [
+    {
+      "order": 1,
+      "asset": "frames/scene_001.jpg",
+      "duration_seconds": 9,
+      "narration": "Juno cruzó dos veces una frontera invisible frente a Júpiter.",
+      "caption_blocks": [
+        "Juno cruzó dos",
+        "veces una frontera",
+        "invisible frente a",
+        "Júpiter."
+      ],
+      "on_screen_text": "La frontera invisible",
+      "motion": "kenburns_auto",
+      "overlay": null
+    },
+    {
+      "order": 2,
+      "asset": "frames/scene_002.jpg",
+      "duration_seconds": 10,
+      "narration": "No es una pared sólida: es el choque de proa, donde el viento solar encuentra el entorno magnético del planeta y empieza a frenarse.",
+      "caption_blocks": [
+        "No es una",
+        "pared sólida: es",
+        "el choque de",
+        "proa, donde el",
+        "viento solar encuentra",
+        "el entorno magnético",
+        "del planeta y",
+        "empieza a frenarse."
+      ],
+      "on_screen_text": "No es una pared",
+      "motion": "kenburns_auto",
+      "overlay": null
+    },
+    {
+      "order": 3,
+      "asset": "frames/scene_003.jpg",
+      "duration_seconds": 10,
+      "narration": "La nave registró los cruces el diez y el once de diciembre de dos mil veinticuatro. Cada paso ofreció una mirada distinta al mismo límite.",
+      "caption_blocks": [
+        "La nave registró",
+        "los cruces el",
+        "diez y el",
+        "once de diciembre",
+        "de dos mil",
+        "veinticuatro. Cada paso",
+        "ofreció una mirada",
+        "distinta al mismo",
+        "límite."
+      ],
+      "on_screen_text": "Dos cruces",
+      "motion": "kenburns_auto",
+      "overlay": {
+        "tipo": "mapa",
+        "region": [
+          -125,
+          -65,
+          24,
+          50
+        ],
+        "puntos": [
+          {
+            "nombre": "University of Iowa",
+            "lon": -91.535,
+            "lat": 41.66,
+            "label": "Iowa City, EE. UU."
+          }
+        ],
+        "titulo": "Equipo investigador: Iowa City",
+        "fuente": "University of Iowa / Iowa Now; coordenada aproximada del campus. Base cartográfica: Natural Earth 110m, dominio público.",
+        "asset_filename": "layers/mapa_university_of_iowa.png"
+      }
+    },
+    {
+      "order": 4,
+      "asset": "frames/scene_004.jpg",
+      "duration_seconds": 10,
+      "narration": "Su instrumento de ondas registró el campo eléctrico a cincuenta mil muestras por segundo. Los registros de alta resolución de misiones anteriores llegaban a veintiocho mil.",
+      "caption_blocks": [
+        "Su instrumento de",
+        "ondas registró el",
+        "campo eléctrico a",
+        "cincuenta mil muestras",
+        "por segundo. Los",
+        "registros de alta",
+        "resolución de misiones",
+        "anteriores llegaban a",
+        "veintiocho mil."
+      ],
+      "on_screen_text": "28 kHz → 50 kHz",
+      "motion": "kenburns_auto",
+      "overlay": {
+        "tipo": "grafico",
+        "x": [
+          "Voyager",
+          "Juno / Waves"
+        ],
+        "y": [
+          28,
+          50
+        ],
+        "titulo": "Muestreo del campo eléctrico",
+        "unidad": "kHz",
+        "fuente": "Joseph et al., Nature Communications (2026), DOI 10.1038/s41467-026-76223-x.",
+        "asset_filename": "layers/grafico_muestreo_28_vs_50_khz.png"
+      }
+    },
+    {
+      "order": 5,
+      "asset": "frames/scene_005.jpg",
+      "duration_seconds": 10,
+      "narration": "Aparecieron ondas de Langmuir, ondas acústicas de iones y una inestabilidad que surge cuando electrones e iones se desplazan de forma diferente.",
+      "caption_blocks": [
+        "Aparecieron ondas de",
+        "Langmuir, ondas acústicas",
+        "de iones y",
+        "una inestabilidad que",
+        "surge cuando electrones",
+        "e iones se",
+        "desplazan de forma",
+        "diferente."
+      ],
+      "on_screen_text": "Ondas distintas",
+      "motion": "kenburns_auto",
+      "overlay": null
+    },
+    {
+      "order": 6,
+      "asset": "frames/scene_006.jpg",
+      "duration_seconds": 10,
+      "narration": "La sorpresa fueron los armónicos: varias frecuencias actuando juntas. También surgieron estructuras periódicas que reaparecían aproximadamente cada ocho coma tres segundos.",
+      "caption_blocks": [
+        "La sorpresa fueron",
+        "los armónicos: varias",
+        "frecuencias actuando juntas.",
+        "También surgieron estructuras",
+        "periódicas que reaparecían",
+        "aproximadamente cada ocho",
+        "coma tres segundos."
+      ],
+      "on_screen_text": "Cada 8,3 segundos",
+      "motion": "kenburns_auto",
+      "overlay": {
+        "tipo": "dato",
+        "valor": "8,3 s",
+        "etiqueta": "periodicidad aproximada de estructuras observadas",
+        "fuente": "Joseph et al., Nature Communications (2026), DOI 10.1038/s41467-026-76223-x.",
+        "asset_filename": "layers/dato_periodicidad_8_3s.png"
+      }
+    },
+    {
+      "order": 7,
+      "asset": "frames/scene_007.jpg",
+      "duration_seconds": 10,
+      "narration": "Esas ondas ayudan a transferir energía del viento solar a las partículas, calentándolas y frenándolas. Júpiter muestra un choque más intenso que el terrestre.",
+      "caption_blocks": [
+        "Esas ondas ayudan",
+        "a transferir energía",
+        "del viento solar",
+        "a las partículas,",
+        "calentándolas y frenándolas.",
+        "Júpiter muestra un",
+        "choque más intenso",
+        "que el terrestre."
+      ],
+      "on_screen_text": "Energía que cambia",
+      "motion": "kenburns_auto",
+      "overlay": null
+    },
+    {
+      "order": 8,
+      "asset": "frames/scene_008.jpg",
+      "duration_seconds": 10,
+      "narration": "No es un escudo perfecto ni una barrera que detenga todo. Es un laboratorio natural para entender choques de plasma, incluso los que rodean restos de supernovas. Esto fue Datos y ociosidades.",
+      "caption_blocks": [
+        "No es un",
+        "escudo perfecto ni",
+        "una barrera que",
+        "detenga todo. Es",
+        "un laboratorio natural",
+        "para entender choques",
+        "de plasma, incluso",
+        "los que rodean",
+        "restos de supernovas.",
+        "Esto fue Datos",
+        "y ociosidades."
+      ],
+      "on_screen_text": "Un laboratorio cósmico",
+      "motion": "kenburns_auto",
+      "overlay": null
+    }
+  ],
+  "extra_layers": [
+    {
+      "asset": "layers/mapa_university_of_iowa.png",
+      "scene_order": 3,
+      "type": "mapa"
+    },
+    {
+      "asset": "layers/grafico_muestreo_28_vs_50_khz.png",
+      "scene_order": 4,
+      "type": "grafico"
+    },
+    {
+      "asset": "layers/dato_periodicidad_8_3s.png",
+      "scene_order": 6,
+      "type": "dato"
+    }
+  ],
+  "source_slate": {
+    "asset": "cortinilla_fuentes.png",
+    "duration_seconds": 6,
+    "metadata": {
+      "duration_seconds": 6,
+      "titulo": "Fuentes",
+      "aviso": "Imágenes generadas con IA. Voz sintética. Música sintetizada.",
+      "firma": "Datos y ociosidades · @datosyociosidades",
+      "fuentes_visibles": [
+        "Joseph et al. · Nature Communications (2026)",
+        "DOI: 10.1038/s41467-026-76223-x",
+        "University of Iowa · ScienceDaily (29 oct 2026)"
+      ],
+      "asset_filename": "cortinilla_fuentes.png"
+    }
+  },
+  "audio": {
+    "music_asset": "sintetico:pizzicato",
+    "music_license": "Cama sintética propia prevista con scripts/cama_sonora.py (84 BPM); no se generó audio en esta sesión.",
+    "music_lufs": -27,
+    "ambiente_lufs": -30,
+    "ducking": "sidechaincompress; música por debajo de la voz",
+    "music_volume": 0.22,
+    "nota_ambiente": "Se usa ambiente silenciado porque el espacio no transmite sonido; no se simula audio literal de Júpiter."
+  },
+  "voice": {
+    "engine": "edge-tts",
+    "voice_id": "es-MX-JorgeNeural",
+    "rate": "+7%",
+    "pitch": "-2Hz",
+    "pad_seconds": 0.3,
+    "modo_pausas": "continuo"
+  },
+  "export": {
+    "filename": "capsula.mp4",
+    "resolution": "1080x1920",
+    "fps": 30,
+    "codec_video": "h264",
+    "codec_audio": "aac",
+    "loudness_lufs": -14,
+    "subtitle_max_words": 3
+  },
+  "limitations": [
+    "No es un proyecto nativo .capcut.",
+    "No contiene MP4 ni audio generado.",
+    "No contiene timecodes de subtítulos; deben generarse con WordBoundary de edge-tts.",
+    "Las capas visuales del ZIP son referencias para montaje; el pipeline oficial debe renderizar las capas y ejecutar QA."
+  ]
+}
