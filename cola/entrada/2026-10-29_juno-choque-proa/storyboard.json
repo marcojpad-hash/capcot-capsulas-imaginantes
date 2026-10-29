@@ -1,0 +1,303 @@
+{
+  "project_id": "2026-10-29_juno-choque-proa",
+  "serie": "Datos y ociosidades",
+  "title": "Juno revela el choque invisible de Júpiter",
+  "titulo": "La frontera invisible",
+  "titulo_yt": "La frontera invisible de Júpiter #Shorts",
+  "language": "es-MX",
+  "aspect_ratio": "9:16",
+  "target_duration_seconds": 85,
+  "estructura": "sabias_que",
+  "trend_source": {
+    "tipo": "noticia_cientifica",
+    "medio": "ScienceDaily / University of Iowa",
+    "url": "https://www.sciencedaily.com/releases/2026/10/261028232715.htm",
+    "estudio_doi": "10.1038/s41467-026-76223-x",
+    "fecha_publicacion": "2026-10-29",
+    "fecha_consulta": "2026-10-29",
+    "termino": "Juno revela ondas y estructuras en el choque de proa de Júpiter",
+    "nota_temporalidad": "La cobertura de actualidad está fechada 2026-10-29; el artículo primario se publicó el 2026-07-31."
+  },
+  "estilo_id": "art_deco_poster",
+  "estilo_visual": "Póster Art Déco años 20–30",
+  "voice": {
+    "engine": "edge-tts",
+    "voice_id": "es-MX-JorgeNeural",
+    "rate": "+7%",
+    "pitch": "-2Hz",
+    "pad_seconds": 0.3,
+    "modo_pausas": "continuo"
+  },
+  "sources": [
+    {
+      "id": "SRC-001",
+      "cita_corta": "Joseph et al. (2026). Plasma wave observations from Juno spacecraft at the Jovian bow shock. Nature Communications 17, 9263.",
+      "doi": "10.1038/s41467-026-76223-x",
+      "url": "https://doi.org/10.1038/s41467-026-76223-x",
+      "publisher_url": "https://www.nature.com/articles/s41467-026-76223-x",
+      "published": "2026-07-31",
+      "accessed": "2026-10-29",
+      "supports": [
+        "Juno cruzó el choque de proa de Júpiter el 10 y 11 de diciembre de 2024",
+        "Las mediciones de alta resolución de Juno Waves alcanzaron 50 kHz; mediciones anteriores de Voyager se describen como 28 kHz",
+        "Se observaron ondas acústicas de iones, ondas de Langmuir, inestabilidad de deriva ciclotrónica de electrones y estructuras periódicas",
+        "Se observaron estructuras periódicas de alrededor de 8,3 segundos y señales compatibles con posible reformación del choque",
+        "Las ondas de plasma participan en la disipación de energía en choques sin colisiones"
+      ]
+    },
+    {
+      "id": "SRC-002",
+      "cita_corta": "University of Iowa (2026-10-29). NASA discovers Jupiter’s invisible shield is more complex than Earth’s. ScienceDaily.",
+      "url": "https://www.sciencedaily.com/releases/2026/10/261028232715.htm",
+      "published": "2026-10-29",
+      "accessed": "2026-10-29",
+      "supports": [
+        "Cobertura de actualidad del 29 de octubre",
+        "Interpretación divulgativa de armónicos y shocklets",
+        "Posible relevancia para choques astrofísicos como los de restos de supernovas"
+      ]
+    },
+    {
+      "id": "SRC-003",
+      "cita_corta": "Lewis, R. C. (2026-09-21). Jupiter uses surprisingly complex system to fend off particles from sun. Iowa Now, University of Iowa.",
+      "url": "https://now.uiowa.edu/news/2026/09/jupiter-uses-surprisingly-complex-system-fend-particles-sun-0",
+      "published": "2026-09-21",
+      "accessed": "2026-10-29",
+      "supports": [
+        "La investigación fue liderada por la University of Iowa",
+        "El choque de proa desacelera y calienta el viento solar",
+        "La física del choque joviano puede ayudar a estudiar choques más extremos"
+      ]
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_001",
+      "arc": "hook_medias_res",
+      "duration_seconds": 9,
+      "narration": "Juno cruzó dos veces una frontera invisible frente a Júpiter.",
+      "on_screen_text": "La frontera invisible",
+      "visual_description": "La nave Juno frente al enorme disco de Júpiter, atravesando una frontera brillante de plasma.",
+      "asset_filename": "frames/scene_001.jpg",
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "ambiente": "silencio",
+      "sfx": [],
+      "motion": "kenburns_auto",
+      "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text + A Juno-style spacecraft crosses a luminous bow-shock boundary beside Jupiter, a giant banded planet filling the frame; gold and teal plasma ribbons, strong in-medias-res action, clean central silhouette, no lettering."
+    },
+    {
+      "id": "scene_002",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "No es una pared sólida: es el choque de proa, donde el viento solar encuentra el entorno magnético del planeta y empieza a frenarse.",
+      "on_screen_text": "No es una pared",
+      "visual_description": "El viento solar llega en corrientes de partículas y se curva al encontrar la envoltura magnética de Júpiter.",
+      "asset_filename": "frames/scene_002.jpg",
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "ambiente": "silencio",
+      "sfx": [],
+      "motion": "kenburns_auto",
+      "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text + Solar-wind particle streams bend around a luminous bow shock in front of Jupiter, with a small research spacecraft crossing the boundary; bold graphic motion, no text."
+    },
+    {
+      "id": "scene_003",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "La nave registró los cruces el diez y el once de diciembre de dos mil veinticuatro. Cada paso ofreció una mirada distinta al mismo límite.",
+      "on_screen_text": "Dos cruces",
+      "visual_description": "Juno atraviesa dos veces la región del choque; una capa de mapa ubica la Universidad de Iowa, sede del equipo investigador.",
+      "asset_filename": "frames/scene_003.jpg",
+      "source_ids": [
+        "SRC-001",
+        "SRC-003"
+      ],
+      "ambiente": "silencio",
+      "sfx": [],
+      "motion": "kenburns_auto",
+      "capa": {
+        "tipo": "mapa",
+        "region": [
+          -125,
+          -65,
+          24,
+          50
+        ],
+        "puntos": [
+          {
+            "nombre": "University of Iowa",
+            "lon": -91.535,
+            "lat": 41.66,
+            "label": "Iowa City, EE. UU."
+          }
+        ],
+        "titulo": "Equipo investigador: Iowa City",
+        "fuente": "University of Iowa / Iowa Now; coordenada aproximada del campus. Base cartográfica: Natural Earth 110m, dominio público.",
+        "asset_filename": "layers/mapa_university_of_iowa.png"
+      },
+      "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text + A Juno-like probe appears twice along a curved path near Jupiter’s glowing bow shock, emphasizing two separate crossings; Art Deco travel-poster illustration, no text."
+    },
+    {
+      "id": "scene_004",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "Su instrumento de ondas registró el campo eléctrico a cincuenta mil muestras por segundo. Los registros de alta resolución de misiones anteriores llegaban a veintiocho mil.",
+      "on_screen_text": "28 kHz → 50 kHz",
+      "visual_description": "La nave y su instrumento Waves frente a Júpiter; gráfico comparativo de los registros de alta resolución citados en el estudio.",
+      "asset_filename": "frames/scene_004.jpg",
+      "source_ids": [
+        "SRC-001"
+      ],
+      "ambiente": "silencio",
+      "sfx": [],
+      "motion": "kenburns_auto",
+      "capa": {
+        "tipo": "grafico",
+        "x": [
+          "Voyager",
+          "Juno / Waves"
+        ],
+        "y": [
+          28,
+          50
+        ],
+        "titulo": "Muestreo del campo eléctrico",
+        "unidad": "kHz",
+        "fuente": "Joseph et al., Nature Communications (2026), DOI 10.1038/s41467-026-76223-x.",
+        "asset_filename": "layers/grafico_muestreo_28_vs_50_khz.png"
+      },
+      "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text + A close Juno-like probe above Jupiter, surrounded by luminous teal and gold wave bands that resemble measured electric-field oscillations; no text or numerals."
+    },
+    {
+      "id": "scene_005",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "Aparecieron ondas de Langmuir, ondas acústicas de iones y una inestabilidad que surge cuando electrones e iones se desplazan de forma diferente.",
+      "on_screen_text": "Ondas distintas",
+      "visual_description": "Ondas de plasma de diferentes escalas y frecuencias se propagan por delante del choque de proa.",
+      "asset_filename": "frames/scene_005.jpg",
+      "source_ids": [
+        "SRC-001"
+      ],
+      "ambiente": "silencio",
+      "sfx": [],
+      "motion": "kenburns_auto",
+      "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text + Several distinct gold and teal plasma-wave fronts sweep across the bow shock in front of Jupiter, with fine oscillations and particle trails; scientific illustration, no labels."
+    },
+    {
+      "id": "scene_006",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "La sorpresa fueron los armónicos: varias frecuencias actuando juntas. También surgieron estructuras periódicas que reaparecían aproximadamente cada ocho coma tres segundos.",
+      "on_screen_text": "Cada 8,3 segundos",
+      "visual_description": "La región de choque muestra ondas con armónicos y estructuras periódicas; una capa de dato destaca el intervalo aproximado observado.",
+      "asset_filename": "frames/scene_006.jpg",
+      "source_ids": [
+        "SRC-001"
+      ],
+      "ambiente": "silencio",
+      "sfx": [],
+      "motion": "kenburns_auto",
+      "capa": {
+        "tipo": "dato",
+        "valor": "8,3 s",
+        "etiqueta": "periodicidad aproximada de estructuras observadas",
+        "fuente": "Joseph et al., Nature Communications (2026), DOI 10.1038/s41467-026-76223-x.",
+        "asset_filename": "layers/dato_periodicidad_8_3s.png"
+      },
+      "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text + Jupiter’s bow shock is rendered as nested, repeating teal-and-gold wave arcs with a small spacecraft at the edge; the image suggests periodic shock structures without literal labels."
+    },
+    {
+      "id": "scene_007",
+      "arc": "cierre_historia",
+      "duration_seconds": 10,
+      "narration": "Esas ondas ayudan a transferir energía del viento solar a las partículas, calentándolas y frenándolas. Júpiter muestra un choque más intenso que el terrestre.",
+      "on_screen_text": "Energía que cambia",
+      "visual_description": "Comparación visual de la envoltura magnética terrestre y la joviana, sin sugerir que sean idénticas.",
+      "asset_filename": "frames/scene_007.jpg",
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "ambiente": "silencio",
+      "sfx": [],
+      "motion": "kenburns_auto",
+      "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text + Earth appears as a blue sphere with magnetic loops bending incoming golden solar-wind particles, a restrained visual comparison to the stronger and more complex Jupiter bow shock; Art Deco poster, no text."
+    },
+    {
+      "id": "scene_008",
+      "arc": "reflexion_o_pregunta",
+      "duration_seconds": 10,
+      "narration": "No es un escudo perfecto ni una barrera que detenga todo. Es un laboratorio natural para entender choques de plasma, incluso los que rodean restos de supernovas. Esto fue Datos y ociosidades.",
+      "on_screen_text": "Un laboratorio cósmico",
+      "visual_description": "Un remanente de supernova aparece como un anillo de choque; la escena conecta la física joviana con otros entornos de plasma.",
+      "asset_filename": "frames/scene_008.jpg",
+      "source_ids": [
+        "SRC-001",
+        "SRC-002",
+        "SRC-003"
+      ],
+      "ambiente": "silencio",
+      "sfx": [],
+      "motion": "kenburns_auto",
+      "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text + A vast supernova remnant glows as a ring of orange, gold, and teal shock waves against deep navy space, an Art Deco illustration linking planetary and astrophysical plasma shocks; no text."
+    }
+  ],
+  "cortinilla_fuentes": {
+    "duration_seconds": 6,
+    "titulo": "Fuentes",
+    "aviso": "Imágenes generadas con IA. Voz sintética. Música sintetizada.",
+    "firma": "Datos y ociosidades · @datosyociosidades",
+    "fuentes_visibles": [
+      "Joseph et al. · Nature Communications (2026)",
+      "DOI: 10.1038/s41467-026-76223-x",
+      "University of Iowa · ScienceDaily (29 oct 2026)"
+    ],
+    "asset_filename": "cortinilla_fuentes.png"
+  },
+  "audio": {
+    "music_asset": "sintetico:pizzicato",
+    "music_license": "Cama sintética propia prevista con scripts/cama_sonora.py (84 BPM); no se generó audio en esta sesión.",
+    "music_lufs": -27,
+    "ambiente_lufs": -30,
+    "ducking": "sidechaincompress; música por debajo de la voz",
+    "music_volume": 0.22,
+    "nota_ambiente": "Se usa ambiente silenciado porque el espacio no transmite sonido; no se simula audio literal de Júpiter."
+  },
+  "export": {
+    "filename": "capsula.mp4",
+    "resolution": "1080x1920",
+    "fps": 30,
+    "codec_video": "h264",
+    "codec_audio": "aac",
+    "loudness_lufs": -14,
+    "subtitle_max_words": 3
+  },
+  "publicacion": {
+    "estado": "BORRADOR_NO_PUBLICADO",
+    "youtube": {
+      "privacy": "private",
+      "publishAt": "",
+      "titulo": "La frontera invisible de Júpiter #Shorts",
+      "descripcion_con_fuentes": "Juno registró ondas de plasma en el choque de proa de Júpiter. Estudio original: Joseph et al., Nature Communications (2026), https://doi.org/10.1038/s41467-026-76223-x. Cobertura del 29-oct-2026: https://www.sciencedaily.com/releases/2026/10/261028232715.htm. Imágenes generadas con IA; voz y música sintéticas previstas. TikTok: https://www.tiktok.com/@datosyociosidades",
+      "tags": [
+        "#Shorts",
+        "Júpiter",
+        "Juno",
+        "espacio",
+        "ciencia"
+      ],
+      "synthetic_content": true
+    },
+    "tiktok": {
+      "modo": "draft_inbox",
+      "is_aigc": true,
+      "caption": "Júpiter tiene un choque de proa lleno de ondas de plasma. Juno lo atravesó dos veces y registró detalles que antes no se veían. Fuentes en YouTube @datosyociosidades #ciencia #Jupiter #NASA"
+    }
+  }
+}
