@@ -1,0 +1,368 @@
+{
+  "project_id": "2026-10-29_juno-choque-proa",
+  "max_words_per_block": 3,
+  "timing_status": "SIN_TIMECODES; los tiempos deben proceder de WordBoundary de edge-tts en el pipeline oficial",
+  "blocks_by_scene": [
+    {
+      "scene_id": "scene_001",
+      "blocks": [
+        {
+          "id": "scene_001_B01",
+          "text": "Juno cruzó dos",
+          "word_count": 3
+        },
+        {
+          "id": "scene_001_B02",
+          "text": "veces una frontera",
+          "word_count": 3
+        },
+        {
+          "id": "scene_001_B03",
+          "text": "invisible frente a",
+          "word_count": 3
+        },
+        {
+          "id": "scene_001_B04",
+          "text": "Júpiter.",
+          "word_count": 1
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_002",
+      "blocks": [
+        {
+          "id": "scene_002_B01",
+          "text": "No es una",
+          "word_count": 3
+        },
+        {
+          "id": "scene_002_B02",
+          "text": "pared sólida: es",
+          "word_count": 3
+        },
+        {
+          "id": "scene_002_B03",
+          "text": "el choque de",
+          "word_count": 3
+        },
+        {
+          "id": "scene_002_B04",
+          "text": "proa, donde el",
+          "word_count": 3
+        },
+        {
+          "id": "scene_002_B05",
+          "text": "viento solar encuentra",
+          "word_count": 3
+        },
+        {
+          "id": "scene_002_B06",
+          "text": "el entorno magnético",
+          "word_count": 3
+        },
+        {
+          "id": "scene_002_B07",
+          "text": "del planeta y",
+          "word_count": 3
+        },
+        {
+          "id": "scene_002_B08",
+          "text": "empieza a frenarse.",
+          "word_count": 3
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_003",
+      "blocks": [
+        {
+          "id": "scene_003_B01",
+          "text": "La nave registró",
+          "word_count": 3
+        },
+        {
+          "id": "scene_003_B02",
+          "text": "los cruces el",
+          "word_count": 3
+        },
+        {
+          "id": "scene_003_B03",
+          "text": "diez y el",
+          "word_count": 3
+        },
+        {
+          "id": "scene_003_B04",
+          "text": "once de diciembre",
+          "word_count": 3
+        },
+        {
+          "id": "scene_003_B05",
+          "text": "de dos mil",
+          "word_count": 3
+        },
+        {
+          "id": "scene_003_B06",
+          "text": "veinticuatro. Cada paso",
+          "word_count": 3
+        },
+        {
+          "id": "scene_003_B07",
+          "text": "ofreció una mirada",
+          "word_count": 3
+        },
+        {
+          "id": "scene_003_B08",
+          "text": "distinta al mismo",
+          "word_count": 3
+        },
+        {
+          "id": "scene_003_B09",
+          "text": "límite.",
+          "word_count": 1
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_004",
+      "blocks": [
+        {
+          "id": "scene_004_B01",
+          "text": "Su instrumento de",
+          "word_count": 3
+        },
+        {
+          "id": "scene_004_B02",
+          "text": "ondas registró el",
+          "word_count": 3
+        },
+        {
+          "id": "scene_004_B03",
+          "text": "campo eléctrico a",
+          "word_count": 3
+        },
+        {
+          "id": "scene_004_B04",
+          "text": "cincuenta mil muestras",
+          "word_count": 3
+        },
+        {
+          "id": "scene_004_B05",
+          "text": "por segundo. Los",
+          "word_count": 3
+        },
+        {
+          "id": "scene_004_B06",
+          "text": "registros de alta",
+          "word_count": 3
+        },
+        {
+          "id": "scene_004_B07",
+          "text": "resolución de misiones",
+          "word_count": 3
+        },
+        {
+          "id": "scene_004_B08",
+          "text": "anteriores llegaban a",
+          "word_count": 3
+        },
+        {
+          "id": "scene_004_B09",
+          "text": "veintiocho mil.",
+          "word_count": 2
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_005",
+      "blocks": [
+        {
+          "id": "scene_005_B01",
+          "text": "Aparecieron ondas de",
+          "word_count": 3
+        },
+        {
+          "id": "scene_005_B02",
+          "text": "Langmuir, ondas acústicas",
+          "word_count": 3
+        },
+        {
+          "id": "scene_005_B03",
+          "text": "de iones y",
+          "word_count": 3
+        },
+        {
+          "id": "scene_005_B04",
+          "text": "una inestabilidad que",
+          "word_count": 3
+        },
+        {
+          "id": "scene_005_B05",
+          "text": "surge cuando electrones",
+          "word_count": 3
+        },
+        {
+          "id": "scene_005_B06",
+          "text": "e iones se",
+          "word_count": 3
+        },
+        {
+          "id": "scene_005_B07",
+          "text": "desplazan de forma",
+          "word_count": 3
+        },
+        {
+          "id": "scene_005_B08",
+          "text": "diferente.",
+          "word_count": 1
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_006",
+      "blocks": [
+        {
+          "id": "scene_006_B01",
+          "text": "La sorpresa fueron",
+          "word_count": 3
+        },
+        {
+          "id": "scene_006_B02",
+          "text": "los armónicos: varias",
+          "word_count": 3
+        },
+        {
+          "id": "scene_006_B03",
+          "text": "frecuencias actuando juntas.",
+          "word_count": 3
+        },
+        {
+          "id": "scene_006_B04",
+          "text": "También surgieron estructuras",
+          "word_count": 3
+        },
+        {
+          "id": "scene_006_B05",
+          "text": "periódicas que reaparecían",
+          "word_count": 3
+        },
+        {
+          "id": "scene_006_B06",
+          "text": "aproximadamente cada ocho",
+          "word_count": 3
+        },
+        {
+          "id": "scene_006_B07",
+          "text": "coma tres segundos.",
+          "word_count": 3
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_007",
+      "blocks": [
+        {
+          "id": "scene_007_B01",
+          "text": "Esas ondas ayudan",
+          "word_count": 3
+        },
+        {
+          "id": "scene_007_B02",
+          "text": "a transferir energía",
+          "word_count": 3
+        },
+        {
+          "id": "scene_007_B03",
+          "text": "del viento solar",
+          "word_count": 3
+        },
+        {
+          "id": "scene_007_B04",
+          "text": "a las partículas,",
+          "word_count": 3
+        },
+        {
+          "id": "scene_007_B05",
+          "text": "calentándolas y frenándolas.",
+          "word_count": 3
+        },
+        {
+          "id": "scene_007_B06",
+          "text": "Júpiter muestra un",
+          "word_count": 3
+        },
+        {
+          "id": "scene_007_B07",
+          "text": "choque más intenso",
+          "word_count": 3
+        },
+        {
+          "id": "scene_007_B08",
+          "text": "que el terrestre.",
+          "word_count": 3
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_008",
+      "blocks": [
+        {
+          "id": "scene_008_B01",
+          "text": "No es un",
+          "word_count": 3
+        },
+        {
+          "id": "scene_008_B02",
+          "text": "escudo perfecto ni",
+          "word_count": 3
+        },
+        {
+          "id": "scene_008_B03",
+          "text": "una barrera que",
+          "word_count": 3
+        },
+        {
+          "id": "scene_008_B04",
+          "text": "detenga todo. Es",
+          "word_count": 3
+        },
+        {
+          "id": "scene_008_B05",
+          "text": "un laboratorio natural",
+          "word_count": 3
+        },
+        {
+          "id": "scene_008_B06",
+          "text": "para entender choques",
+          "word_count": 3
+        },
+        {
+          "id": "scene_008_B07",
+          "text": "de plasma, incluso",
+          "word_count": 3
+        },
+        {
+          "id": "scene_008_B08",
+          "text": "los que rodean",
+          "word_count": 3
+        },
+        {
+          "id": "scene_008_B09",
+          "text": "restos de supernovas.",
+          "word_count": 3
+        },
+        {
+          "id": "scene_008_B10",
+          "text": "Esto fue Datos",
+          "word_count": 3
+        },
+        {
+          "id": "scene_008_B11",
+          "text": "y ociosidades.",
+          "word_count": 2
+        }
+      ]
+    }
+  ],
+  "total_blocks": 64
+}
