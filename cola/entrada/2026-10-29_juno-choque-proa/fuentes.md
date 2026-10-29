@@ -8,10 +8,10 @@ Joseph, J. et al. (2026). **Plasma wave observations from Juno spacecraft at the
 - **Verificación disponible:** la página oficial de Nature Communications resuelve el DOI y contiene el resumen, método y resultados. No se pudo consultar Crossref desde este entorno; por eso no se declara una comprobación Crossref ejecutada.
 
 ## SRC-002 — cobertura científica de actualidad
-University of Iowa. “NASA discovers Jupiter’s invisible shield is more complex than Earth’s.” *ScienceDaily*, 29 de octubre de 2026.
+University of Iowa. “NASA discovers Jupiter’s invisible shield is more complex than Earth’s.” *ScienceDaily*, 28 de octubre de 2026.
 - https://www.sciencedaily.com/releases/2026/10/261028232715.htm
 - Respalda: fecha de la noticia de actualidad, explicación divulgativa de los armónicos y relevancia potencial para choques en restos de supernovas.
-- Precisión temporal: la nota es del 29-oct; el estudio primario citado se publicó el 31-jul-2026. La cápsula no afirma que el artículo primario se haya publicado esta semana.
+- Precisión temporal: la nota es del 28-oct; el estudio primario citado se publicó el 31-jul-2026. La cápsula no afirma que el artículo primario se haya publicado esta semana.
 
 ## SRC-003 — comunicado institucional
 Lewis, R. C. (2026-09-21). “Jupiter uses surprisingly complex system to fend off particles from sun.” *Iowa Now*, University of Iowa.
