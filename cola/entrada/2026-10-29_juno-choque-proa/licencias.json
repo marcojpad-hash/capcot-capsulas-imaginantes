@@ -1,0 +1,66 @@
+{
+  "project_id": "2026-10-29_juno-choque-proa",
+  "status": "PRELIMINAR; no hay render ni publicación",
+  "assets": [
+    {
+      "type": "imagen_generada_ia",
+      "provider": "OpenAI ImageGen",
+      "count": 8,
+      "files": [
+        "frames/scene_001.jpg",
+        "frames/scene_002.jpg",
+        "frames/scene_003.jpg",
+        "frames/scene_004.jpg",
+        "frames/scene_005.jpg",
+        "frames/scene_006.jpg",
+        "frames/scene_007.jpg",
+        "frames/scene_008.jpg"
+      ],
+      "license_note": "Imágenes originales generadas para este paquete; no se reutilizaron fotografías de terceros. Uso sujeto a los términos aplicables del servicio."
+    },
+    {
+      "type": "grafico",
+      "file": "layers/grafico_muestreo_28_vs_50_khz.png",
+      "source": "SRC-001",
+      "license_note": "Gráfico propio; valores extraídos de la publicación citada."
+    },
+    {
+      "type": "dato",
+      "file": "layers/dato_periodicidad_8_3s.png",
+      "source": "SRC-001",
+      "license_note": "Tarjeta gráfica propia; dato aproximado con atribución."
+    },
+    {
+      "type": "mapa",
+      "file": "layers/mapa_university_of_iowa.png",
+      "base": "Natural Earth 110m",
+      "base_license": "Public domain",
+      "location_source": "SRC-003",
+      "license_note": "Tarjeta esquemática de ubicación; coordenada aproximada de Iowa City. El pipeline oficial debe renderizar su capa geográfica con la base Natural Earth."
+    },
+    {
+      "type": "cortinilla_fuentes",
+      "file": "cortinilla_fuentes.png",
+      "license_note": "Diseño tipográfico propio, sin imágenes de terceros."
+    },
+    {
+      "type": "voz",
+      "provider": "edge-tts",
+      "voice_id": "es-MX-JorgeNeural",
+      "status": "NO_GENERADA",
+      "license_note": "La voz obligatoria no está instalada en este entorno; no se sustituyó."
+    },
+    {
+      "type": "musica",
+      "provider": "scripts/cama_sonora.py",
+      "asset": "sintetico:pizzicato",
+      "status": "SOLO_PLAN; archivo no generado",
+      "license_note": "Cama sintética propia prevista, 84 BPM; requiere generador oficial."
+    },
+    {
+      "type": "ambiente_y_sfx",
+      "status": "NO_SE_AÑADIERON_SFX",
+      "license_note": "Se especifica ambiente silenciado porque el espacio no transmite sonido; no se usan efectos de terceros."
+    }
+  ]
+}
