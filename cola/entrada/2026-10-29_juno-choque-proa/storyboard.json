@@ -13,10 +13,10 @@
     "medio": "ScienceDaily / University of Iowa",
     "url": "https://www.sciencedaily.com/releases/2026/10/261028232715.htm",
     "estudio_doi": "10.1038/s41467-026-76223-x",
-    "fecha_publicacion": "2026-10-29",
+    "fecha_publicacion": "2026-10-28",
     "fecha_consulta": "2026-10-29",
     "termino": "Juno revela ondas y estructuras en el choque de proa de Júpiter",
-    "nota_temporalidad": "La cobertura de actualidad está fechada 2026-10-29; el artículo primario se publicó el 2026-07-31."
+    "nota_temporalidad": "La cobertura de actualidad está fechada 2026-10-28; el artículo primario se publicó el 2026-07-31."
   },
   "estilo_id": "art_deco_poster",
   "estilo_visual": "Póster Art Déco años 20–30",
@@ -47,12 +47,12 @@
     },
     {
       "id": "SRC-002",
-      "cita_corta": "University of Iowa (2026-10-29). NASA discovers Jupiter’s invisible shield is more complex than Earth’s. ScienceDaily.",
+      "cita_corta": "University of Iowa (2026-10-28). NASA discovers Jupiter’s invisible shield is more complex than Earth’s. ScienceDaily.",
       "url": "https://www.sciencedaily.com/releases/2026/10/261028232715.htm",
-      "published": "2026-10-29",
+      "published": "2026-10-28",
       "accessed": "2026-10-29",
       "supports": [
-        "Cobertura de actualidad del 29 de octubre",
+        "Cobertura de actualidad publicada el 28 de octubre",
         "Interpretación divulgativa de armónicos y shocklets",
         "Posible relevancia para choques astrofísicos como los de restos de supernovas"
       ]
@@ -256,7 +256,7 @@
     "fuentes_visibles": [
       "Joseph et al. · Nature Communications (2026)",
       "DOI: 10.1038/s41467-026-76223-x",
-      "University of Iowa · ScienceDaily (29 oct 2026)"
+      "University of Iowa · ScienceDaily (28 oct 2026)"
     ],
     "asset_filename": "cortinilla_fuentes.png"
   },
@@ -284,7 +284,7 @@
       "privacy": "private",
       "publishAt": "",
       "titulo": "La frontera invisible de Júpiter #Shorts",
-      "descripcion_con_fuentes": "Juno registró ondas de plasma en el choque de proa de Júpiter. Estudio original: Joseph et al., Nature Communications (2026), https://doi.org/10.1038/s41467-026-76223-x. Cobertura del 29-oct-2026: https://www.sciencedaily.com/releases/2026/10/261028232715.htm. Imágenes generadas con IA; voz y música sintéticas previstas. TikTok: https://www.tiktok.com/@datosyociosidades",
+      "descripcion_con_fuentes": "Juno registró ondas de plasma en el choque de proa de Júpiter. Estudio original: Joseph et al., Nature Communications (2026), https://doi.org/10.1038/s41467-026-76223-x. Cobertura del 28-oct-2026: https://www.sciencedaily.com/releases/2026/10/261028232715.htm. Imágenes generadas con IA; voz y música sintéticas previstas. TikTok: https://www.tiktok.com/@datosyociosidades",
       "tags": [
         "#Shorts",
         "Júpiter",
