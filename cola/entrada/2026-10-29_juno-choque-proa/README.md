@@ -12,4 +12,4 @@
 - `fuentes.md`, `licencias.json`, `tiktok.json` (bloqueado sin MP4), `ESTADO_EJECUCION.md` y `VALIDACION_ESTRUCTURAL_LOCAL.json`.
 
 ## Para procesar
-Extraer el ZIP en `cola/entrada/2026-10-29_juno-choque-proa/` del clon autorizado. No ejecutar el procesamiento oficial hasta disponer de `/workspace/capcot`, `edge-tts` con `es-MX-JorgeNeural` y los frames. El proyecto permanece sin publicar.
+Extraer el ZIP en `cola/entrada/2026-10-29_juno-choque-proa/` del clon autorizado. No ejecutar el procesamiento oficial hasta disponer de `/workspace/capcot`, `edge-tts` con `es-MX-JorgeNeural` y los frames. El proyecto permanece sin publicar. La revisión estética de Grok sigue pendiente; el handoff operativo asigna temporalmente la producción integral a Grok principal, así que este paquete es una entrega candidata por instrucción directa, no una ejecución de su pipeline.
