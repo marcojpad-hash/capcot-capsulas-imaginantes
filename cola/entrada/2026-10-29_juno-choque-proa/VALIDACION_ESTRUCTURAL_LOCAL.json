@@ -1,0 +1,23 @@
+{
+  "status": "VALIDACION_ESTRUCTURAL_LOCAL_NO_QA_OFICIAL",
+  "scene_count": 8,
+  "narrated_words": 184,
+  "scene_seconds": 79,
+  "source_slate_seconds": 6,
+  "planned_total_seconds": 85,
+  "subtitle_blocks": 64,
+  "max_words_per_subtitle_block": 3,
+  "dimensions": [
+    1080,
+    1920
+  ],
+  "fps_target": 30,
+  "layers": [
+    "mapa",
+    "grafico",
+    "dato"
+  ],
+  "source_ids_on_every_scene": true,
+  "mp4_generated": false,
+  "official_qa_run": false
+}
