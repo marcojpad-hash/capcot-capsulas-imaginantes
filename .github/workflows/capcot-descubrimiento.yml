@@ -1,0 +1,47 @@
+name: CAPCOT — descubrimiento de video y continuidad
+
+on:
+  schedule:
+    - cron: "30 14 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: capcot-video-discovery
+  cancel-in-progress: false
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Discover public video-generation projects
+        env:
+          GITHUB_TOKEN: \${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/buscar_generadores_video.py
+
+      - name: Validate continuity checker syntax
+        run: python -m py_compile scripts/validar_continuidad_audiovisual.py scripts/buscar_generadores_video.py
+
+      - name: Commit catalog when changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add investigacion/generadores_video/catalogo_actual.json investigacion/generadores_video/catalogo_actual.md
+          if git diff --cached --quiet; then
+            echo "No hay cambios en el catálogo."
+            exit 0
+          fi
+          git commit -m "CAPCOT: actualizar catálogo de generadores de video"
+          git push origin HEAD:main
