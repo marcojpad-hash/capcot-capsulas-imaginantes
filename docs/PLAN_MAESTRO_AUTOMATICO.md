@@ -119,3 +119,15 @@ Pendiente de implementar: ingesta de tendencias, generador de guion LLM, adaptad
 2. **Estudio original obligatorio:** cada cápsula de actualidad cita el paper (DOI verificado en Crossref) o el comunicado oficial de la agencia, no solo la nota de prensa.
 3. **ChatGPT = productor de la cápsula de actualidad del día:** propone la noticia, escribe el storyboard según docs/RECETA_CAPSULA.md y deja el paquete (storyboard.json + frames o mp4 + fuentes.md) en `cola/entrada/`. **Nunca publica.**
 4. **Grok Bot = editor y publicador:** revisa la noticia y el DOI, aplica la receta, corre `procesar_cola.py` / `capsula_diaria.py` y `qa_capsula.py`; solo publica si QA pasa y el tema no se repite en el día. Grok Bot también produce sus propias cápsulas (2/día máx.) con el mismo criterio de actualidad.
+
+
+---
+## Addendum — descubrimiento de video y continuidad audiovisual
+
+Se incorpora `scripts/buscar_generadores_video.py`, con reporte en `investigacion/generadores_video/`. Busca repositorios públicos relacionados con APIs, modelos, workflows e integración de generación de video y registra documentación candidata de proveedores. Los resultados son candidatos: no se clasifican como operativos, gratuitos ni comercialmente utilizables hasta verificar documentación, precio, cuotas, duración, licencias y disponibilidad.
+
+**No descartar clips cortos:** si un proveedor no genera 60–90 s en una sola solicitud, evaluar generación por escenas y lotes, extensión desde el último frame, image-to-video, animación de frames y combinación de proveedores. El montaje final debe cumplir la duración y el QA de la receta vigente.
+
+Se incorporan `docs/CONTINUIDAD_AUDIOVISUAL.md` y `scripts/validar_continuidad_audiovisual.py`. Cada cápsula debe mantener una única dirección artística concreta, paleta, luz, textura, composición, tipografía y voz es-MX-JorgeNeural. Se prohíben cambios accidentales de idioma y recursos visuales añadidos por ambigüedad. La validación estructural es automática; la continuidad estética requiere comparar todos los frames y revisar el audio. El nuevo validador permanece separado del histórico hasta migrar storyboards de forma controlada.
+
+El workflow `.github/workflows/capcot-descubrimiento.yml` se programa los lunes a las 08:30 hora CDMX y puede ejecutarse manualmente. Solo actualiza el catálogo; no genera cápsulas, no consume créditos, no publica y no modifica el motor U6. Debe integrarse a `main` para activar el calendario.
