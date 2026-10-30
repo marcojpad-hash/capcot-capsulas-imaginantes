@@ -23,3 +23,9 @@ Proyecto para producir micro-cápsulas científicas verticales (9:16, 60–90 s)
 
 Los scripts de validación y montaje existen. El plan maestro documenta un prototipo probado; las corridas concretas deben distinguirse de los paquetes locales y verificarse por separado.
 **Para Grok / modelos externos:** ver `ajustes_entre_modelos/HANDOFF_GROK_PRODUCCION.md`.
+
+## Nuevos módulos — descubrimiento y continuidad
+- [Buscador de generadores de video](scripts/buscar_generadores_video.py): cataloga APIs, repositorios públicos, modelos abiertos y alternativas de ensamblaje; no contrata servicios ni consume créditos.
+- [Continuidad audiovisual](docs/CONTINUIDAD_AUDIOVISUAL.md): biblia visual, tipográfica y de voz, con reglas de consistencia de inicio a fin.
+- Validador: `python scripts/validar_continuidad_audiovisual.py <storyboard.json>`.
+- Workflow semanal: `.github/workflows/capcot-descubrimiento.yml` (requiere integrar esta rama a `main` para activar el calendario).
