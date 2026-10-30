@@ -66,3 +66,7 @@ El paquete `salidas/2026-10-24_ideonella-pet/` tenía buen tema y buenas fuentes
 - Prompts sin el `prompt_base` del catálogo.
 
 Versión corregida: `salidas/2026-10-24_2026-10-24-ideonella-pet/` (storyboard en `proyectos/2026-10-24_ideonella-pet/storyboard.json`). Úsala como ejemplo de formato.
+
+
+## 8. Continuidad audiovisual obligatoria
+Antes de generar frames o clips, lee `docs/CONTINUIDAD_AUDIOVISUAL.md`. Cada cápsula debe declarar una biblia audiovisual única (`visual_identity`), identidad tipográfica (`typography_identity`) y voz maestra. No mezcles estilos ni cambies idioma, voz, tipografía, paleta, iluminación o acabado entre escenas. Cada prompt debe comenzar con el `prompt_base` exacto del catálogo. No agregues imágenes o planos que no estén declarados expresamente en `approved_assets`/storyboard. Para clips cortos se permite generación por segmentos y ensamblaje, siempre heredando la misma biblia audiovisual. Ejecuta `python scripts/validar_continuidad_audiovisual.py <storyboard.json>`; el resultado estructural no sustituye la revisión visual y auditiva integral. Si la voz oficial falla, no la sustituyas silenciosamente.
