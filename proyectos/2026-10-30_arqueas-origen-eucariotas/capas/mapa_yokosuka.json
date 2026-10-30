@@ -1,0 +1,20 @@
+{
+  "type": "mapa",
+  "base": "Basemap GSHHG for this manual overlay; official pipeline may regenerate with Natural Earth",
+  "region": [
+    128,
+    146,
+    29,
+    44
+  ],
+  "points": [
+    {
+      "name": "JAMSTEC · Yokosuka",
+      "longitude": 139.65,
+      "latitude": 35.32,
+      "precision": "approximate city-level"
+    }
+  ],
+  "source": "https://w3.jamstec.go.jp/e/about/access/yokosuka.html",
+  "warning": "This point marks JAMSTEC institutional headquarters, not the sample collection site."
+}
