@@ -73,11 +73,17 @@ def validar(path):
     seen_assets = set()
     approved_assets = sb.get("approved_assets")
     approved_names = None
-    if isinstance(approved_assets, list):
+    if not isinstance(approved_assets, list) or not approved_assets:
+        errors.append("approved_assets debe declarar explícitamente todos los recursos visuales autorizados")
+    else:
         approved_names = {
             item.get("filename") for item in approved_assets
             if isinstance(item, dict) and item.get("filename")
         }
+        if len(approved_names) != len(approved_assets):
+            errors.append("approved_assets contiene elementos inválidos o filenames duplicados")
+    if not isinstance(typography.get("font_family"), str):
+        errors.append("font_family debe ser una cadena única para toda la cápsula")
 
     for index, scene in enumerate(scenes, 1):
         sid = scene.get("id", f"scene_{index:03d}") if isinstance(scene, dict) else f"scene_{index:03d}"
@@ -107,6 +113,17 @@ def validar(path):
             errors.append(f"{sid}: text_language debe ser es-MX")
         if scene.get("voice_id", "es-MX-JorgeNeural") != "es-MX-JorgeNeural":
             errors.append(f"{sid}: voz distinta de la voz maestra")
+        scene_typography = scene.get("typography_identity")
+        if scene_typography is not None and scene_typography != typography:
+            errors.append(f"{sid}: identidad tipográfica sobrescribe la biblia maestra")
+        extra_assets = scene.get("additional_images", []) or scene.get("extra_assets", [])
+        if extra_assets:
+            extra_names = {
+                item.get("filename") if isinstance(item, dict) else item
+                for item in extra_assets
+            }
+            if approved_names is None or not extra_names.issubset(approved_names):
+                errors.append(f"{sid}: contiene imágenes adicionales no autorizadas")
 
     if approved_names is not None:
         unused = approved_names - seen_assets
