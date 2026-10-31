@@ -1,6 +1,9 @@
 # Coordinación ChatGPT · Imaginantes (Grok Bot) · Grok
 **Vigente desde 2026-10-31 · America/Mexico_City**
 
+> **Lectura obligatoria al entrar:** antes de cualquier tarea, lee `ajustes_entre_modelos/README.md`, `docs/CONTRATO_OPERATIVO_UNIFICADO.md` y `ajustes_entre_modelos/BITACORA_COORDINACION.md`. Registra al final de la bitácora cualquier cambio de coordinación o archivo compartido. La bitácora es append-only.
+
+
 Este archivo es el punto de entrada para los modelos externos. La autoridad completa es `docs/CONTRATO_OPERATIVO_UNIFICADO.md`; no mantiene reglas paralelas.
 
 ## Reglas de ejecución
