@@ -20,7 +20,16 @@ if __name__ == "__main__":
     ap.add_argument("--proveedor-img", default="manual"); a = ap.parse_args()
     ent = sorted(glob.glob(os.path.join(R, "cola", "entrada", "*.json")) + glob.glob(os.path.join(R, "cola", "entrada", "*", "storyboard.json")))
     if not ent: sys.exit("cola/entrada/ vacía")
-    l = cola(); f = ent[0]  # una externa por corrida (cupo 1/día)
+    def fecha_archivo(path):
+        nombre = os.path.basename(path)
+        if nombre == "storyboard.json":
+            nombre = os.path.basename(os.path.dirname(path))
+        return nombre[:10]
+    candidatas = [p for p in ent if fecha_archivo(p) == a.fecha]
+    if not candidatas:
+        antiguas = ", ".join(os.path.relpath(p, R) for p in ent[:8])
+        sys.exit(f"Sin entrada para {a.fecha}; no se procesan colas antiguas automáticamente. Entradas existentes: {antiguas}")
+    l = cola(); f = candidatas[0]  # solo una externa del día; nunca consumir la cola histórica más antigua
     sb = json.load(open(f, encoding="utf-8")); pid = sb.get("project_id") or os.path.splitext(os.path.basename(f))[0]
     tema = sb.get("trend_source", {}).get("termino") or sb.get("title", "")
     if not any(x["id"] == pid for x in l): l.append({"id": pid, "fecha": a.fecha, "origen": "externa", "tema": tema, "estado": "recibido", "entrada": os.path.relpath(f, R)}); guardar(l)
