@@ -131,3 +131,14 @@ Se incorpora `scripts/buscar_generadores_video.py`, con reporte en `investigacio
 Se incorporan `docs/CONTINUIDAD_AUDIOVISUAL.md` y `scripts/validar_continuidad_audiovisual.py`. Cada cápsula debe mantener una única dirección artística concreta, paleta, luz, textura, composición, tipografía y voz es-MX-JorgeNeural. Se prohíben cambios accidentales de idioma y recursos visuales añadidos por ambigüedad. La validación estructural es automática; la continuidad estética requiere comparar todos los frames y revisar el audio. El nuevo validador permanece separado del histórico hasta migrar storyboards de forma controlada.
 
 El workflow `.github/workflows/capcot-descubrimiento.yml` se programa los lunes a las 08:30 hora CDMX y puede ejecutarse manualmente. Solo actualiza el catálogo; no genera cápsulas, no consume créditos, no publica y no modifica el motor U6. Debe integrarse a `main` para activar el calendario.
+
+
+## Addendum — API de edición Krea / Runway y prueba de continuidad
+
+La investigación oficial confirma dos rutas API viables:
+- **Krea 3**: edición de imágenes con prompt, referencias de imagen y regiones; API `POST /generate/image/krea/krea-3`. **Seedance 2.5 vía Krea**: generación/animación/edición guiada de clips de 4–30 s con imagen inicial/final y referencias. El API usa saldo independiente de la suscripción de la app.
+- **Runway Dev Aleph 2.0**: edición de video existente mediante `POST /v1/video_to_video`, con instrucciones de texto, hasta cinco keyframes y clips de 2–30 s. Tarifa publicada: 28 créditos/s, mínimo 56 créditos; Runway Dev cobra USD $0.01 por crédito. Gen-4.5 es generación, no edición de un clip ya existente.
+- Integración en `scripts/media_api_clients.py`; documentación en `docs/API_EDITORES_KREA_RUNWAY.md`. Las claves son variables de entorno `KREA_API_KEY` y `RUNWAYML_API_SECRET`, nunca archivos del repo.
+- Las llamadas de generación/edición son facturables y están excluidas del CI. La CI solo compila, migra y valida storyboards, descubre candidatos y audita archivos; no consume saldo de proveedores.
+
+La prueba de migración se ejecuta sobre `salidas/2026-10-29_muralismo-cu/storyboard.json` en una copia temporal. El original no se modifica. El workflow genera un artefacto con el resultado del validador y la auditoría de presencia de frames/capas. Un PASS estructural no equivale a revisión audiovisual: para esa revisión deben estar disponibles todos los frames o el MP4 final.
