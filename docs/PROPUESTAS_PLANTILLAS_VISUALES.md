@@ -41,3 +41,9 @@ Solo propuestas: **no** se ha editado `scripts/estilos.json`. Ids verificados co
 
 ## 5. Añadido Mj 27-oct-2026 — acuarela japonesa
 Id: `acuarela_japonesa`. Ref visual de Mj (story: gato + máscara, estética acuarela japonesa). Entrar al catálogo como plantilla posible: solo look (aguadas/washi), sin gag ni IP ajena. Pendiente frame de prueba antes de meter a `scripts/estilos.json`.
+
+
+## 6. Añadido Mj 31-oct-2026 — cómic viñeta + refuerzo acuarela
+Id: `comic_vineta_dialogo`. Ref webcómic a lápiz/crayon con burbujas (archivo en salidas/_ops/refs_plantillas_2026-10-31/). Solo look; burbujas vacías o rótulos en post; sin gag/IP. Pendiente frame de prueba.
+`acuarela_japonesa`: segundo ref Mj (gato+oni) refuerza la plantilla del 27-oct; misma regla look-only.
+Detalle: `salidas/_ops/2026-10-31_plantillas_comic_y_acuarela.md`.

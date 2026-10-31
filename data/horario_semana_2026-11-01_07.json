@@ -16,22 +16,32 @@
       "hora": "07:00",
       "cesta": "kids",
       "project_id": "2026-11-01_pulpo-tres-corazones",
-      "estado": "programado",
+      "estado": "programado_yt_tt_fb",
       "notas": "TÍTULO: Un pulpo tiene tres corazones y sangre azul. borrador en proyectos/2026-xx_kids_pulpo-tres-corazones; fuentes sugeridas: Smithsonian Ocean, Monterey Bay Aquarium. No marcar Hecho para niños.",
       "project_id_plan": "2026-11-01_kids-pulpo-tres-corazones",
       "yt_id": "3B1ckNUahS8",
-      "publishAt": "2026-11-01T13:00:00Z"
+      "publishAt": "2026-11-01T13:00:00Z",
+      "plataformas": {
+        "yt": "programado",
+        "tt": "programado",
+        "fb": "programado"
+      }
     },
     {
       "fecha": "2026-11-01",
       "hora": "13:30",
       "cesta": "comida_familia",
       "project_id": "2026-11-01_llorar-cebolla-quimica",
-      "estado": "programado",
+      "estado": "programado_yt_tt_fb",
       "notas": "TÍTULO: Por qué la cebolla te hace llorar. química cotidiana; fuente: Imai et al. 2002 Nature (factor lacrimógeno)",
       "project_id_plan": "2026-11-01_comida-cebolla-llorar",
       "yt_id": "Fh4KkcZr3e8",
-      "publishAt": "2026-11-01T19:30:00Z"
+      "publishAt": "2026-11-01T19:30:00Z",
+      "plataformas": {
+        "yt": "programado",
+        "tt": "programado",
+        "fb": "programado"
+      }
     },
     {
       "fecha": "2026-11-01",
@@ -61,17 +71,17 @@
       "fecha": "2026-11-02",
       "hora": "07:00",
       "cesta": "kids",
-      "project_id": "2026-11-02_kids-camaron-mantis",
-      "estado": "pedir_chatgpt",
-      "notas": "TÍTULO: El golpe del camarón mantis. borrador en proyectos/2026-xx_kids_camaron-mantis-punetazo; fuente: Patek & Caldwell 2005 J Exp Biol. No marcar Hecho para niños."
+      "project_id": "2026-11-02_camaron-mantis",
+      "estado": "listo_cola_chatgpt",
+      "notas": "TÍTULO: El golpe del camarón mantis. borrador en proyectos/2026-xx_kids_camaron-mantis-punetazo; fuente: Patek & Caldwell 2005 J Exp Biol. No marcar Hecho para niños. | ChatGPT entregó paquete completo 31-oct (teatro_sombras, 8 escenas). PREPARADO_PENDIENTE_REVISION_GROK."
     },
     {
       "fecha": "2026-11-02",
       "hora": "13:30",
       "cesta": "comida_familia",
       "project_id": "2026-11-02_comida-pan-duro",
-      "estado": "pedir_chatgpt",
-      "notas": "TÍTULO: Por qué el pan se pone duro (no es que se seque). retrogradación del almidón; fuente: literatura de ciencia de alimentos (PENDING_SOURCE exacta)"
+      "estado": "listo_cola_chatgpt",
+      "notas": "TÍTULO: Por qué el pan se pone duro (no es que se seque). retrogradación del almidón; fuente: literatura de ciencia de alimentos (PENDING_SOURCE exacta) | ChatGPT entregó paquete 31-oct (papel_rasgado_capas, 8 escenas). PREPARADO_PENDIENTE_REVISION_GROK."
     },
     {
       "fecha": "2026-11-02",

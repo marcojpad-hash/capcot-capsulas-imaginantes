@@ -1,76 +1,173 @@
 {
- "metadatos": {
-  "title": "Por qué lloramos al cortar cebolla #Shorts",
-  "description": "Cortas una cebolla y tus ojos empiezan a llorar.\n\nPor qué lloramos al cortar cebolla. Una cápsula de Datos y ociosidades: datos verificados contados como historia.\n\nFuentes:\n• Imai et al. (2002). An onion enzyme that makes the eyes water. Nature, 419, 685. https://doi.org/10.1038/419685a\n• Library of Congress. Why does chopping an onion make you cry? https://www.loc.gov/everyday-mysteries/categories/food-and-nutrition/item/why-does-chopping-an-onion-make-you-cry/\n• Yoo et al. (2017). Enzyme That Makes You Cry—Crystal Structure of Lachrymatory Factor Synthase from Allium cepa. https://pubmed.ncbi.nlm.nih.gov/28708375/\n\nImágenes generadas con IA · voz sintética · audio sintetizado.\nSuscríbete: @datosyociosidades\nTikTok: https://www.tiktok.com/@datosyociosidades\n\n#DatosYOciosidades #Shorts #datos #ciencia #difusión #difusióncientífica #ia #Cebolla #Cocina",
-  "tags": [
-   "DatosYOciosidades",
-   "Shorts",
-   "datos",
-   "ciencia",
-   "difusión",
-   "difusióncientífica",
-   "ia",
-   "Cebolla",
-   "Cocina"
-  ]
- },
- "resultado": {
-  "youtube": {
-   "kind": "youtube#video",
-   "etag": "lES0wlUqzndZ8-RU-R-PrJwhlns",
-   "id": "Fh4KkcZr3e8",
-   "snippet": {
-    "publishedAt": "2026-10-31T20:25:10Z",
-    "channelId": "UCU2ZI-6pBJEr9aSFsF6bxLw",
+  "metadatos": {
     "title": "Por qué lloramos al cortar cebolla #Shorts",
     "description": "Cortas una cebolla y tus ojos empiezan a llorar.\n\nPor qué lloramos al cortar cebolla. Una cápsula de Datos y ociosidades: datos verificados contados como historia.\n\nFuentes:\n• Imai et al. (2002). An onion enzyme that makes the eyes water. Nature, 419, 685. https://doi.org/10.1038/419685a\n• Library of Congress. Why does chopping an onion make you cry? https://www.loc.gov/everyday-mysteries/categories/food-and-nutrition/item/why-does-chopping-an-onion-make-you-cry/\n• Yoo et al. (2017). Enzyme That Makes You Cry—Crystal Structure of Lachrymatory Factor Synthase from Allium cepa. https://pubmed.ncbi.nlm.nih.gov/28708375/\n\nImágenes generadas con IA · voz sintética · audio sintetizado.\nSuscríbete: @datosyociosidades\nTikTok: https://www.tiktok.com/@datosyociosidades\n\n#DatosYOciosidades #Shorts #datos #ciencia #difusión #difusióncientífica #ia #Cebolla #Cocina",
-    "thumbnails": {
-     "default": {
-      "url": "https://i9.ytimg.com/vi/Fh4KkcZr3e8/default.jpg?sqp=CJydmdcG&rs=AOn4CLDe6Ny0e4e4Anp5pGsegp0BwDRqcg",
-      "width": 120,
-      "height": 90
-     },
-     "medium": {
-      "url": "https://i9.ytimg.com/vi/Fh4KkcZr3e8/mqdefault.jpg?sqp=CJydmdcG&rs=AOn4CLDjio6wY99h5i8zR9IrWeGFhjVRyQ",
-      "width": 320,
-      "height": 180
-     },
-     "high": {
-      "url": "https://i9.ytimg.com/vi/Fh4KkcZr3e8/hqdefault.jpg?sqp=CJydmdcG&rs=AOn4CLCfD2cbqHfzglY66w0oYaz9NH3hcQ",
-      "width": 480,
-      "height": 360
-     }
-    },
-    "channelTitle": "Datos y ociosidades",
     "tags": [
-     "Cebolla",
-     "Cocina",
-     "DatosYOciosidades",
-     "Shorts",
-     "ciencia",
-     "datos",
-     "difusión",
-     "difusióncientífica",
-     "ia"
-    ],
-    "categoryId": "27",
-    "liveBroadcastContent": "none",
-    "defaultLanguage": "es",
-    "localized": {
-     "title": "Por qué lloramos al cortar cebolla #Shorts",
-     "description": "Cortas una cebolla y tus ojos empiezan a llorar.\n\nPor qué lloramos al cortar cebolla. Una cápsula de Datos y ociosidades: datos verificados contados como historia.\n\nFuentes:\n• Imai et al. (2002). An onion enzyme that makes the eyes water. Nature, 419, 685. https://doi.org/10.1038/419685a\n• Library of Congress. Why does chopping an onion make you cry? https://www.loc.gov/everyday-mysteries/categories/food-and-nutrition/item/why-does-chopping-an-onion-make-you-cry/\n• Yoo et al. (2017). Enzyme That Makes You Cry—Crystal Structure of Lachrymatory Factor Synthase from Allium cepa. https://pubmed.ncbi.nlm.nih.gov/28708375/\n\nImágenes generadas con IA · voz sintética · audio sintetizado.\nSuscríbete: @datosyociosidades\nTikTok: https://www.tiktok.com/@datosyociosidades\n\n#DatosYOciosidades #Shorts #datos #ciencia #difusión #difusióncientífica #ia #Cebolla #Cocina"
+      "DatosYOciosidades",
+      "Shorts",
+      "datos",
+      "ciencia",
+      "difusión",
+      "difusióncientífica",
+      "ia",
+      "Cebolla",
+      "Cocina"
+    ]
+  },
+  "resultado": {
+    "youtube": {
+      "kind": "youtube#video",
+      "etag": "lES0wlUqzndZ8-RU-R-PrJwhlns",
+      "id": "Fh4KkcZr3e8",
+      "snippet": {
+        "publishedAt": "2026-10-31T20:25:10Z",
+        "channelId": "UCU2ZI-6pBJEr9aSFsF6bxLw",
+        "title": "Por qué lloramos al cortar cebolla #Shorts",
+        "description": "Cortas una cebolla y tus ojos empiezan a llorar.\n\nPor qué lloramos al cortar cebolla. Una cápsula de Datos y ociosidades: datos verificados contados como historia.\n\nFuentes:\n• Imai et al. (2002). An onion enzyme that makes the eyes water. Nature, 419, 685. https://doi.org/10.1038/419685a\n• Library of Congress. Why does chopping an onion make you cry? https://www.loc.gov/everyday-mysteries/categories/food-and-nutrition/item/why-does-chopping-an-onion-make-you-cry/\n• Yoo et al. (2017). Enzyme That Makes You Cry—Crystal Structure of Lachrymatory Factor Synthase from Allium cepa. https://pubmed.ncbi.nlm.nih.gov/28708375/\n\nImágenes generadas con IA · voz sintética · audio sintetizado.\nSuscríbete: @datosyociosidades\nTikTok: https://www.tiktok.com/@datosyociosidades\n\n#DatosYOciosidades #Shorts #datos #ciencia #difusión #difusióncientífica #ia #Cebolla #Cocina",
+        "thumbnails": {
+          "default": {
+            "url": "https://i9.ytimg.com/vi/Fh4KkcZr3e8/default.jpg?sqp=CJydmdcG&rs=AOn4CLDe6Ny0e4e4Anp5pGsegp0BwDRqcg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i9.ytimg.com/vi/Fh4KkcZr3e8/mqdefault.jpg?sqp=CJydmdcG&rs=AOn4CLDjio6wY99h5i8zR9IrWeGFhjVRyQ",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i9.ytimg.com/vi/Fh4KkcZr3e8/hqdefault.jpg?sqp=CJydmdcG&rs=AOn4CLCfD2cbqHfzglY66w0oYaz9NH3hcQ",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Datos y ociosidades",
+        "tags": [
+          "Cebolla",
+          "Cocina",
+          "DatosYOciosidades",
+          "Shorts",
+          "ciencia",
+          "datos",
+          "difusión",
+          "difusióncientífica",
+          "ia"
+        ],
+        "categoryId": "27",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "es",
+        "localized": {
+          "title": "Por qué lloramos al cortar cebolla #Shorts",
+          "description": "Cortas una cebolla y tus ojos empiezan a llorar.\n\nPor qué lloramos al cortar cebolla. Una cápsula de Datos y ociosidades: datos verificados contados como historia.\n\nFuentes:\n• Imai et al. (2002). An onion enzyme that makes the eyes water. Nature, 419, 685. https://doi.org/10.1038/419685a\n• Library of Congress. Why does chopping an onion make you cry? https://www.loc.gov/everyday-mysteries/categories/food-and-nutrition/item/why-does-chopping-an-onion-make-you-cry/\n• Yoo et al. (2017). Enzyme That Makes You Cry—Crystal Structure of Lachrymatory Factor Synthase from Allium cepa. https://pubmed.ncbi.nlm.nih.gov/28708375/\n\nImágenes generadas con IA · voz sintética · audio sintetizado.\nSuscríbete: @datosyociosidades\nTikTok: https://www.tiktok.com/@datosyociosidades\n\n#DatosYOciosidades #Shorts #datos #ciencia #difusión #difusióncientífica #ia #Cebolla #Cocina"
+        }
+      },
+      "status": {
+        "uploadStatus": "uploaded",
+        "privacyStatus": "private",
+        "publishAt": "2026-11-01T19:30:00Z",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "selfDeclaredMadeForKids": false,
+        "containsSyntheticMedia": false
+      }
+    },
+    "tiktok": {
+      "estado": "programado",
+      "cuenta": "@datosyociosidades",
+      "publish_at_cdmx": "2026-11-01T13:30:00-06:00",
+      "ui_shown": "Nov 1, 2:30 PM (GMT-5) New York",
+      "ai_label": true,
+      "caption": "Por qué lloramos al cortar cebolla. Fuentes en YouTube @datosyociosidades #cebolla #cocina #ciencia #sabiasque",
+      "nota": "Sin URL/ID de Studio para programados. Offset 1-nov: UI GMT-5 = CDMX+1h.",
+      "actualizado": "2026-10-31T14:37:34-06:00"
+    },
+    "facebook": {
+      "estado": "programado",
+      "pagina": "Datos y ociosidades",
+      "publish_at_cdmx": "2026-11-01T13:30:00-06:00",
+      "ui_shown": "1 Nov 2026 14:30 America/New_York",
+      "ai_label": false,
+      "nota": "Reels via Meta Business Suite; AI label no disponible en flujo.",
+      "actualizado": "2026-10-31T14:37:34-06:00"
+    },
+    "plataformas": {
+      "youtube": {
+        "kind": "youtube#video",
+        "etag": "lES0wlUqzndZ8-RU-R-PrJwhlns",
+        "id": "Fh4KkcZr3e8",
+        "snippet": {
+          "publishedAt": "2026-10-31T20:25:10Z",
+          "channelId": "UCU2ZI-6pBJEr9aSFsF6bxLw",
+          "title": "Por qué lloramos al cortar cebolla #Shorts",
+          "description": "Cortas una cebolla y tus ojos empiezan a llorar.\n\nPor qué lloramos al cortar cebolla. Una cápsula de Datos y ociosidades: datos verificados contados como historia.\n\nFuentes:\n• Imai et al. (2002). An onion enzyme that makes the eyes water. Nature, 419, 685. https://doi.org/10.1038/419685a\n• Library of Congress. Why does chopping an onion make you cry? https://www.loc.gov/everyday-mysteries/categories/food-and-nutrition/item/why-does-chopping-an-onion-make-you-cry/\n• Yoo et al. (2017). Enzyme That Makes You Cry—Crystal Structure of Lachrymatory Factor Synthase from Allium cepa. https://pubmed.ncbi.nlm.nih.gov/28708375/\n\nImágenes generadas con IA · voz sintética · audio sintetizado.\nSuscríbete: @datosyociosidades\nTikTok: https://www.tiktok.com/@datosyociosidades\n\n#DatosYOciosidades #Shorts #datos #ciencia #difusión #difusióncientífica #ia #Cebolla #Cocina",
+          "thumbnails": {
+            "default": {
+              "url": "https://i9.ytimg.com/vi/Fh4KkcZr3e8/default.jpg?sqp=CJydmdcG&rs=AOn4CLDe6Ny0e4e4Anp5pGsegp0BwDRqcg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i9.ytimg.com/vi/Fh4KkcZr3e8/mqdefault.jpg?sqp=CJydmdcG&rs=AOn4CLDjio6wY99h5i8zR9IrWeGFhjVRyQ",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i9.ytimg.com/vi/Fh4KkcZr3e8/hqdefault.jpg?sqp=CJydmdcG&rs=AOn4CLCfD2cbqHfzglY66w0oYaz9NH3hcQ",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "Datos y ociosidades",
+          "tags": [
+            "Cebolla",
+            "Cocina",
+            "DatosYOciosidades",
+            "Shorts",
+            "ciencia",
+            "datos",
+            "difusión",
+            "difusióncientífica",
+            "ia"
+          ],
+          "categoryId": "27",
+          "liveBroadcastContent": "none",
+          "defaultLanguage": "es",
+          "localized": {
+            "title": "Por qué lloramos al cortar cebolla #Shorts",
+            "description": "Cortas una cebolla y tus ojos empiezan a llorar.\n\nPor qué lloramos al cortar cebolla. Una cápsula de Datos y ociosidades: datos verificados contados como historia.\n\nFuentes:\n• Imai et al. (2002). An onion enzyme that makes the eyes water. Nature, 419, 685. https://doi.org/10.1038/419685a\n• Library of Congress. Why does chopping an onion make you cry? https://www.loc.gov/everyday-mysteries/categories/food-and-nutrition/item/why-does-chopping-an-onion-make-you-cry/\n• Yoo et al. (2017). Enzyme That Makes You Cry—Crystal Structure of Lachrymatory Factor Synthase from Allium cepa. https://pubmed.ncbi.nlm.nih.gov/28708375/\n\nImágenes generadas con IA · voz sintética · audio sintetizado.\nSuscríbete: @datosyociosidades\nTikTok: https://www.tiktok.com/@datosyociosidades\n\n#DatosYOciosidades #Shorts #datos #ciencia #difusión #difusióncientífica #ia #Cebolla #Cocina"
+          }
+        },
+        "status": {
+          "uploadStatus": "uploaded",
+          "privacyStatus": "private",
+          "publishAt": "2026-11-01T19:30:00Z",
+          "license": "youtube",
+          "embeddable": true,
+          "publicStatsViewable": true,
+          "selfDeclaredMadeForKids": false,
+          "containsSyntheticMedia": false
+        }
+      },
+      "tiktok": {
+        "estado": "programado",
+        "cuenta": "@datosyociosidades",
+        "publish_at_cdmx": "2026-11-01T13:30:00-06:00",
+        "ui_shown": "Nov 1, 2:30 PM (GMT-5) New York",
+        "ai_label": true,
+        "caption": "Por qué lloramos al cortar cebolla. Fuentes en YouTube @datosyociosidades #cebolla #cocina #ciencia #sabiasque",
+        "nota": "Sin URL/ID de Studio para programados. Offset 1-nov: UI GMT-5 = CDMX+1h.",
+        "actualizado": "2026-10-31T14:37:34-06:00"
+      },
+      "facebook": {
+        "estado": "programado",
+        "pagina": "Datos y ociosidades",
+        "publish_at_cdmx": "2026-11-01T13:30:00-06:00",
+        "ui_shown": "1 Nov 2026 14:30 America/New_York",
+        "ai_label": false,
+        "nota": "Reels via Meta Business Suite; AI label no disponible en flujo.",
+        "actualizado": "2026-10-31T14:37:34-06:00"
+      }
     }
-   },
-   "status": {
-    "uploadStatus": "uploaded",
-    "privacyStatus": "private",
-    "publishAt": "2026-11-01T19:30:00Z",
-    "license": "youtube",
-    "embeddable": true,
-    "publicStatsViewable": true,
-    "selfDeclaredMadeForKids": false,
-    "containsSyntheticMedia": false
-   }
   }
- }
 }

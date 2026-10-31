@@ -128,3 +128,5 @@ Anexo de `2026-10-26_nostalgia_prime_visual.md`. Origen: lo que dictó Mj por vo
 
 **acuarela japonesa** (`acuarela_japonesa`, 27-oct-2026): aguadas suaves sobre papel tipo washi, bordes que sangran, grises/azules tenues y un acento fuerte (rojo/dorado cuando el tema lo pida). Motivos japoneses genéricos OK (máscaras, olas, flora); no copiar personajes ni memes ajenos. Distinto de `acuarela_linea` (azul monocromo a línea) y de `ukiyo_e` (grabado plano). Solo la estética del ref de Mj; sin el gag del texto.
 
+
+**cómic viñeta con diálogo** (`comic_vineta_dialogo`, 31-oct-2026): webcómic a lápiz/crayon coloreado, una viñeta 9:16, burbujas para postproducción. Solo estética; personajes originales; sin gag/IP del ref. Pendiente frame de prueba.
