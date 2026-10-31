@@ -25,7 +25,7 @@ Se intentó recuperar cada URL declarada en `scripts/tendencias.py`. El lector d
 | ScienceDaily — Health | `CRAWL_UNEXPECTED_CONTENT_TYPE` |
 | ScienceDaily — Space Time | `CRAWL_UNEXPECTED_CONTENT_TYPE` |
 | Phys.org | `CRAWL_UNEXPECTED_CONTENT_TYPE` |
-| NASA News Release | Recuperación posible, pero el único ítem devuelto está fechado **2026-09-01**; no sirve para el corte de siete días |
+| NASA News Release | Se recuperó un fragmento cuyo ítem visible está fechado **2026-09-01**; la extracción fue parcial y no permite confirmar si el feed contiene otros ítems recientes |
 | ESA Space Science | `CRAWL_UNEXPECTED_CONTENT_TYPE` |
 | Nature RSS | `CRAWL_UNEXPECTED_CONTENT_TYPE` |
 | EurekAlert | `CRAWL_NOT_FOUND` |
