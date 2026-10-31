@@ -37,3 +37,17 @@ Un estado no implica el siguiente. Un storyboard no prueba recepción; un paquet
 
 ## Límites
 ChatGPT no usa \`--publicar\`, no programa, no modifica \`main\`, no hace merge, no modifica \`data/*.json\`, no toca Motor U6 ni motores canónicos, no consume créditos y no declara QA oficial. La continuidad audiovisual aplica a la etapa de Grok, no autoriza a ChatGPT a generar medios.
+
+
+## 6. Confirmación machine-readable de Grok
+
+El storyboard no confirma recepción. Para cada candidato, Grok debe crear/actualizar cola/estado/YYYY-MM-DD_slug.json siguiendo docs/GROK_STATUS_CONTRACT.md y templates/grok_status.template.json.
+
+- Sin archivo de estado: recepción no confirmada.
+- RECIBIDO_POR_GROK: leído por Grok.
+- SELECCIONADO/DEVUELTO/RECHAZADO: decisión editorial.
+- EN_PRODUCCION: producción iniciada.
+- QA_APROBADO/QA_RECHAZADO: QA oficial con evidencia.
+- PUBLICADO: URL/ID y fecha confirmados.
+
+ChatGPT no crea ni modifica ese archivo; solo lo lee. No se declara aceptación por la mera existencia del storyboard.
