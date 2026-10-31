@@ -1,0 +1,74 @@
+{
+  "project_id": "2026-10-30_arqueas-origen-eucariotas",
+  "status": "REGISTRO PRELIMINAR; sin render oficial ni publicación",
+  "assets": [
+    {
+      "type": "ai_generated_frames",
+      "provider": "OpenAI ImageGen",
+      "count": 8,
+      "files": [
+        "frames/scene_001.jpg",
+        "frames/scene_002.jpg",
+        "frames/scene_003.jpg",
+        "frames/scene_004.jpg",
+        "frames/scene_005.jpg",
+        "frames/scene_006.jpg",
+        "frames/scene_007.jpg",
+        "frames/scene_008.jpg"
+      ],
+      "license_note": "Imágenes originales generadas en esta sesión; ilustraciones conceptuales, no micrografías. No se reutilizaron figuras ni fotos del artículo."
+    },
+    {
+      "type": "map_overlay",
+      "file": "capas/mapa_yokosuka.png",
+      "provider": "Matplotlib Basemap",
+      "data_source": "GSHHG coastline dataset bundled with basemap-data",
+      "license": "LGPL-3.0-or-later for GSHHG-derived data; Basemap software MIT",
+      "license_url": "https://pypi.org/project/basemap-data/",
+      "location_source": "https://w3.jamstec.go.jp/e/about/access/yokosuka.html",
+      "note": "Punto aproximado de la sede institucional; no es el sitio de muestreo."
+    },
+    {
+      "type": "data_graphic",
+      "file": "capas/grafico_prolongaciones.png",
+      "provider": "Pillow, diseño original",
+      "source": "Imachi et al., Nature (2026), DOI 10.1038/s41586-026-11170-7",
+      "license_note": "Gráfico original con datos atribuidos; no se copiaron figuras del paper."
+    },
+    {
+      "type": "source_slate",
+      "file": "cortinilla_fuentes.png",
+      "provider": "Pillow, diseño original",
+      "license_note": "Diseño original; DejaVu Sans, no se redistribuye el archivo de fuente."
+    },
+    {
+      "type": "voice",
+      "provider": "edge-tts",
+      "voice_id": "es-MX-JorgeNeural",
+      "rate": "+7%",
+      "pitch": "-2Hz",
+      "status": "NO GENERADA; edge_tts no está instalado",
+      "license_note": "No se sustituyó la voz obligatoria."
+    },
+    {
+      "type": "music",
+      "provider": "scripts/cama_sonora.py",
+      "asset": "sintetico:pizzicato",
+      "status": "SOLO PLAN; audio no generado",
+      "license_note": "Cama sintética original prevista; sin samples de terceros."
+    },
+    {
+      "type": "ambience_and_sfx",
+      "status": "NO USADOS",
+      "license_note": "Ambiente silencio y sin SFX; no se incorporaron grabaciones de terceros."
+    },
+    {
+      "type": "scientific_facts",
+      "sources": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "license_note": "Hechos parafraseados con atribución; no se copian textos extensos ni figuras."
+    }
+  ]
+}
