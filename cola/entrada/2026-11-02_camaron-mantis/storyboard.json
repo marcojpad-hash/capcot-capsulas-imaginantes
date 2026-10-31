@@ -1,0 +1,75 @@
+{
+  "project_id": "2026-11-02_camaron-mantis",
+  "title": "Camarón mantis",
+  "publish_date": "2026-11-02",
+  "publish_time_local": "07:00",
+  "format": "vertical_9_16",
+  "duration_seconds": 84,
+  "voice": {
+    "engine": "edge-tts",
+    "voice": "es-MX-JorgeNeural",
+    "rate": "+7%",
+    "pitch": "-2Hz"
+  },
+  "style": {
+    "id": "teatro_sombras",
+    "prompt_base": "shadow puppet theater, black paper cut silhouettes backlit by warm amber light, layered cut paper scenery, ornate wooden stage frame, vertical 9:16, no text"
+  },
+  "scenes": [
+    {
+      "scene": 1,
+      "duration_seconds": 9,
+      "voiceover": "El camarón mantis no golpea como parece: su apéndice puede acelerar tan rápido que genera cavitación.",
+      "visual_direction": "Gancho visual con el organismo/alimento en primer plano."
+    },
+    {
+      "scene": 2,
+      "duration_seconds": 10,
+      "voiceover": "Algunas especies tienen apéndices en forma de maza; otras tienen apéndices perforadores. Esta cápsula trata de las especies golpeadoras.",
+      "visual_direction": "Presentar el sujeto completo en su entorno, con escala clara."
+    },
+    {
+      "scene": 3,
+      "duration_seconds": 10,
+      "voiceover": "El golpe de la maza es extremadamente rápido y produce una caída local de presión en el agua.",
+      "visual_direction": "Acercamiento al mecanismo principal, sin exagerar su tamaño."
+    },
+    {
+      "scene": 4,
+      "duration_seconds": 10,
+      "voiceover": "Esa caída puede formar burbujas de cavitación; al colapsar, generan un segundo pulso de impacto y luz débil.",
+      "visual_direction": "Mostrar el proceso en secuencia temporal."
+    },
+    {
+      "scene": 5,
+      "duration_seconds": 10,
+      "voiceover": "El mecanismo permite romper presas con conchas, pero no significa que cada golpe sea más fuerte que una bala.",
+      "visual_direction": "Diagrama visual simplificado y científicamente fiel."
+    },
+    {
+      "scene": 6,
+      "duration_seconds": 10,
+      "voiceover": "Algunas especies tienen apéndices en forma de maza; otras tienen apéndices perforadores. Esta cápsula trata de las especies golpeadoras.",
+      "visual_direction": "Contrastar el mecanismo con una idea equivocada frecuente."
+    },
+    {
+      "scene": 7,
+      "duration_seconds": 10,
+      "voiceover": "El golpe de la maza es extremadamente rápido y produce una caída local de presión en el agua.",
+      "visual_direction": "Consecuencia observable en el mundo real."
+    },
+    {
+      "scene": 8,
+      "duration_seconds": 9,
+      "voiceover": "Esa caída puede formar burbujas de cavitación; al colapsar, generan un segundo pulso de impacto y luz débil.",
+      "visual_direction": "Cierre visual que resume el dato y deja respirar la cortinilla."
+    }
+  ],
+  "cortinilla_seconds": 6,
+  "closing_line": "Esto fue Datos y ociosidades.",
+  "production_notes": [
+    "No añadir texto incrustado en imágenes.",
+    "No inventar anatomía, magnitudes ni comparaciones no respaldadas.",
+    "La narración total de escenas debe sumar 78 segundos; cortinilla final de 6 segundos."
+  ]
+}
