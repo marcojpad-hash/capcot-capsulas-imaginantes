@@ -3,7 +3,7 @@
 - estructura narrativa: nunca la misma dos veces seguidas
 - cama musical: nunca la misma dos veces seguidas (y evita las 2 últimas)
 - duración objetivo: variable por tema, 60-95 s, nunca <60
-- límite DURO: 3 cápsulas por día (2 propias + 1 externa); la externa debe diferir en tema, estructura, estilo y música de las cápsulas propias del día
+- límite DURO: 5 cápsulas por día (máx. 2 propias; externas hasta 5), autorizado por Mj el 2026-10-31; cada externa debe diferir en tema, estructura, estilo y música de las cápsulas propias del día
 - hora de publicación variable por ventanas (America/Mexico_City)
 Registro: data/rotacion.json (lista de {fecha, project_id, estructura, cama, duracion})."""
 import datetime, hashlib, json, os, sys
@@ -31,8 +31,8 @@ def duracion_objetivo(tema="", n_fuentes=2):
     base = 62 + min(n_fuentes, 4) * 6 + _h(tema) % 10; prev = [x.get("duracion") for x in historial() if x.get("duracion")][-1:] or [None]
     if prev[0] and abs(base - prev[0]) < 5: base += 7 if base < 85 else -7
     return max(62, min(95, base))
-MAX_POR_DIA = 3  # total: 2 propias + 1 externa (ChatGPT vía cola/)
-MAX_ORIGEN = {"propia": 2, "externa": 1}
+MAX_POR_DIA = 5  # total diario; autorizado por Mj 2026-10-31 (parrilla 5 slots/día)
+MAX_ORIGEN = {"propia": 2, "externa": 5}  # externas = paquetes ChatGPT vía cola/; pueden llenar el día
 TEMAS = os.path.join(R, "data", "temas_del_dia.json")
 def temas_del_dia(fecha=None):
     f = fecha or datetime.date.today().isoformat()
@@ -58,7 +58,7 @@ def exigir_cupo(fecha=None, origen="propia", project_id=None):
     if os.environ.get("CAPCOT_FORZAR_CUPO") == "1": print("AVISO: cupo diario forzado por orden explícita de Mj"); return h
     n = sum(1 for x in h if x.get("origen", "propia") == origen)
     if len(h) >= MAX_POR_DIA: sys.exit(f"LÍMITE DURO: ya hay {len(h)} cápsulas el {fecha or 'hoy'} ({', '.join(x['project_id'] for x in h)}). Máximo {MAX_POR_DIA} por día.")
-    if n >= MAX_ORIGEN[origen]: sys.exit(f"LÍMITE DURO: ya hay {n} cápsulas '{origen}' el {fecha or 'hoy'}. Máximo {MAX_ORIGEN[origen]} {origen}(s) por día (2 propias + 1 externa).")
+    if n >= MAX_ORIGEN[origen]: sys.exit(f"LÍMITE DURO: ya hay {n} cápsulas '{origen}' el {fecha or 'hoy'}. Máximo {MAX_ORIGEN[origen]} {origen}(s) por día (cupo: máx. 2 propias / 5 externas, {MAX_POR_DIA} total).")
     return h
 def diferencias_con_hoy(sb, fecha):
     """Errores si la cápsula repite tema/estructura/estilo/música de otra del mismo día."""

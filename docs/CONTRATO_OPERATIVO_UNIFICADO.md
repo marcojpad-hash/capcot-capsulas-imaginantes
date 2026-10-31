@@ -24,15 +24,19 @@ Un documento de coordinación, un prompt dirigido a un modelo o una parrilla no 
 
 La división se mantiene hasta que Mj cambie explícitamente el alcance de ChatGPT. Ningún agente debe asumir que “ayudar” autoriza a duplicar trabajo de otro.
 
-## 3. Capacidad: cinco slots solicitados frente al límite implementado
-La parrilla del 1–7 de noviembre plantea **5 slots diarios** (35 en la semana). El código actualmente leído en `scripts/rotacion.py` implementa `MAX_POR_DIA = 3` y `MAX_ORIGEN = {propia: 2, externa: 1}`; además, `scripts/procesar_cola.py` procesa como máximo una entrada externa por fecha.
+## 3. Capacidad: cinco slots autorizados
+La parrilla del 1–7 de noviembre plantea **5 slots diarios** (35 en la semana). **Mj autorizó explícitamente 5 publicaciones por día el 31-oct-2026** (orden de la parrilla de 7 días × 5 slots, "no dejar de publicar").
 
-Por tanto, quedan separadas tres magnitudes:
-- **Slots editoriales:** 5 al día; representan el objetivo de programación.
-- **Capacidad que el código garantiza hoy:** hasta 3 cápsulas por día, con reparto de 2 propias + 1 externa.
-- **Publicaciones efectivas:** solo las que Imaginantes registre con QA y evidencia de publicación.
+En consecuencia, en la rama `feature/capcot-video-discovery-continuity`:
+- `scripts/rotacion.py`: `MAX_POR_DIA = 5`, `MAX_ORIGEN = {propia: 2, externa: 5}` (los paquetes de ChatGPT son externos y pueden llenar el día desde la cola).
+- `scripts/procesar_cola.py`: procesa en orden todas las entradas de `--fecha` hasta llenar el cupo (consulta `rotacion.exigir_cupo` antes de cada una); sigue sin consumir colas de otras fechas, sigue validando DOI y solo saca de `entrada/` en corrida real.
 
-No se debe afirmar que la parrilla de cinco está ejecutable de extremo a extremo. Los dos slots adicionales quedan como **planificados/no habilitados por el límite actual**. Para habilitar cinco al día hace falta una decisión explícita de Mj y un cambio coordinado en rotación, cupos por origen, procesador, validadores, tests y documentación. Hasta entonces está prohibido usar `CAPCOT_FORZAR_CUPO=1` como solución rutinaria. No se modifica el límite por inferencia ni se altera `data/*.json`.
+Se mantienen separadas:
+- **Slots editoriales:** 5 al día.
+- **Capacidad implementada:** hasta 5 por día (máx. 2 propias; externas hasta 5).
+- **Publicaciones efectivas:** solo las que Imaginantes registre con QA y evidencia de publicación. Habilitar el cupo **no** significa que los 5 slots estén publicados; cada slot requiere su evidencia.
+
+`CAPCOT_FORZAR_CUPO=1` sigue prohibido como solución rutinaria. Pendiente de revisar: ventanas horarias (`VENTANAS` tiene 3 franjas) frente a 5 slots, y límites de plataformas.
 
 ## 4. Una sola ruta de trabajo
 1. ChatGPT consulta el Plan Maestro y la memoria editorial disponible; distingue tema propuesto, paquete preparado, producción, QA y publicación.
@@ -72,7 +76,7 @@ Antes de declarar operativa la parrilla completa, Imaginantes/ChatGPT deben prep
 4. Revisión de ventanas horarias, colisiones, rotación de tema/estructura/estilo/música y límites de plataformas.
 5. Evidencia de QA y publicación por cada slot.
 
-Hasta completar y probar esos cinco puntos, el estado es **objetivo de cinco / capacidad implementada de tres**. Esta etiqueta debe acompañar cualquier reporte de operación.
+Actualización 31-oct-2026: puntos 1 y 2 implementados en rama (cupo 5, procesador multi-entrada); 3–5 siguen pendientes. Estado: **objetivo de cinco / capacidad de código cinco / publicación efectiva según evidencia**. Esta etiqueta debe acompañar cualquier reporte de operación.
 
 ## 2A. Descarga de carga de Grok Bot
 

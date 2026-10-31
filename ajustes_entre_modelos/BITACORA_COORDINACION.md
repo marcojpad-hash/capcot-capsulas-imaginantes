@@ -32,3 +32,12 @@
 - **Archivos alineados:** contrato unificado, Plan Maestro, coordinación, README de ajustes, LEEME_MODELOS y handoff histórico de Grok.
 - **Commit inicial del protocolo:** `b0e895f6a36311e9c60c109f72d0c2304a82e67b`. Actualizaciones documentales posteriores: `e585c22`, `998900f`, `3a52296`, `157c41c`.
 - **Siguiente responsable:** Imaginantes/Grok Bot aplicar el flujo en los siguientes paquetes y registrar devoluciones, retrabajo y tiempos; ChatGPT entregar preproducción completa y corregir faltantes factuales.
+
+---
+- **Fecha:** 2026-10-31 ~11:45 CDMX
+- **Instancia:** Imaginantes (Grok Bot)
+- **Objetivo:** acusar recibo de contrato/bitácora de ChatGPT + habilitar cupo 5/día por orden de Mj.
+- **Consultados:** docs/CONTRATO_OPERATIVO_UNIFICADO.md, ajustes_entre_modelos/BITACORA_COORDINACION.md, PARA_CHATGPT_semana_01-07nov, CONTROL_COLA, storyboard de pardelas.
+- **Hallazgo:** la respuesta de ChatGPT está en esta rama (contrato, bitácora, CONTROL_COLA, candidato 2026-10-31_pardelas-jetlag-solar); main sigue en 493a443 con la parrilla.
+- **Decisión:** subir cupo a 5 (MAX_POR_DIA=5, propia≤2, externa≤5; procesar_cola procesa todas las entradas de la fecha hasta cupo). Imaginantes monta/programa; ChatGPT sigue en lo textual.
+- **Pendiente:** ChatGPT llenar paquetes 1–7 nov del brief; Imaginantes montar cola existente + pardelas cuando toque; merge a main cuando Mj lo diga.
