@@ -47,7 +47,7 @@ def tema_ocupado(fecha, tema, project_id=None):
     t = (tema or "").lower().strip()
     return any((x.get("tema") or "").lower() == t and x.get("project_id") != project_id for x in temas_del_dia(fecha)) or any((x.get("tema") or "").lower() == t and x.get("project_id") != project_id for x in hecha_hoy(fecha))
 PUB = os.path.join(R, "data", "publicaciones.json")
-VENTANAS = [(9, 11), (13, 15), (18, 21)]  # horas locales America/Mexico_City
+VENTANAS = [(7, 9), (13, 15), (16, 18), (18, 21), (23, 24)]  # cinco ventanas para slots 07:00, 13:30, 17:00, 19:00 y 23:30 CDMX
 def publicaciones(): return json.load(open(PUB)) if os.path.exists(PUB) else []
 def hecha_hoy(fecha=None):
     """Vista reconciliada: rotación, publicaciones, cola y storyboards del día."""
@@ -82,7 +82,7 @@ def hora_publicacion(fecha, ahora=None, semilla=None):
     rnd = random.Random(semilla); d = datetime.date.fromisoformat(fecha)
     for i, (h0, h1) in enumerate(VENTANAS):
         if i in usadas: continue
-        ini = datetime.datetime(d.year, d.month, d.day, h0, tzinfo=tz); fin = datetime.datetime(d.year, d.month, d.day, h1, tzinfo=tz)
+        ini = datetime.datetime(d.year, d.month, d.day, h0, tzinfo=tz); fin = (datetime.datetime(d.year, d.month, d.day, tzinfo=tz) + datetime.timedelta(days=1)) if h1 == 24 else datetime.datetime(d.year, d.month, d.day, h1, tzinfo=tz)
         ini = max(ini, ahora + datetime.timedelta(minutes=20))
         if ini >= fin: continue
         t = ini + datetime.timedelta(seconds=rnd.randint(0, int((fin - ini).total_seconds())))
