@@ -1,0 +1,255 @@
+{
+  "_schema": "CAPCOT_STORYBOARD_TEXT_V2",
+  "project_id": "2026-11-03_kids-tiburon-groenlandia",
+  "serie": "Datos y ociosidades",
+  "title": "El tiburón que vive siglos",
+  "titulo": "Un tiburón de siglos",
+  "language": "es-MX",
+  "aspect_ratio": "9:16",
+  "target_duration_seconds": 84,
+  "estructura": "pregunta",
+  "audience": "Público general; explicación clara y concreta. No marcar Hecho para niños.",
+  "occasion": "Cápsula programada",
+  "resumen": "El tiburón de Groenlandia crece lentamente y puede vivir varios siglos. Un estudio estimó su edad mediante radiocarbono en los núcleos de las lentes oculares de 28 hembras; el cálculo tiene márgenes de incertidumbre.",
+  "trend_source": {
+    "termino": "Longevidad del tiburón de Groenlandia",
+    "fecha_publicacion": "2016-08-12",
+    "url": "https://doi.org/10.1126/science.aaf1703"
+  },
+  "editorial_status": "PROPUESTA_PENDIENTE_DE_GROK",
+  "arco": {
+    "hook_medias_res": "¿Puede un tiburón vivir más de dos siglos?",
+    "desarrollo": "La longevidad se estimó mediante radiocarbono en núcleos de lentes oculares de 28 hembras; los valores son estimaciones con incertidumbre.",
+    "cierre_historia": "La especie crece y madura lentamente, por lo que es vulnerable a la pesca.",
+    "reflexion_o_pregunta": "El océano contiene vidas que atraviesan siglos."
+  },
+  "estilo_id": "crayones_infantiles",
+  "estilo_visual": "Crayones infantiles",
+  "visual_identity": {
+    "style_id": "crayones_infantiles",
+    "style_name": "Crayones infantiles",
+    "prompt_base": "child's wax crayon drawing on white paper, naive shapes, bright colors, visible crayon strokes, cheerful sun, vertical 9:16, no text",
+    "palette": "Azul hielo, blanco, gris tiburón y acentos coral",
+    "lighting": "Luz fría difusa de aguas árticas",
+    "texture": "Cera visible sobre papel blanco",
+    "composition": "Silueta central, profundidad por capas, escala constante",
+    "negative_prompt": "Sin texto incrustado, sin anatomía fantástica, sin sangre, sin estilo fotográfico",
+    "reference_assets": [],
+    "seed": null,
+    "seed_policy": "Mantener composición, materiales, escala y dirección de luz constantes en las ocho escenas."
+  },
+  "typography_identity": {
+    "font_family": "DejaVu Sans",
+    "font_weight": "700 gancho; 400 subtítulos",
+    "title_style": "Gancho de máximo seis palabras visible desde frame 0 en postproducción",
+    "subtitle_style": "Bloques de máximo tres palabras, zona segura inferior",
+    "hierarchy": "Gancho > dato > subtítulos",
+    "animation": "Un movimiento por plano; tipografía en postproducción"
+  },
+  "voice": {
+    "engine": "edge-tts",
+    "voice_id": "es-MX-JorgeNeural",
+    "language": "es-MX",
+    "rate": "+7%",
+    "pitch": "-2Hz",
+    "pad_seconds": 0.3,
+    "modo_pausas": "continuo"
+  },
+  "sources": [
+    {
+      "id": "SRC-001",
+      "cita_corta": "Nielsen, J. et al. (2016). Eye lens radiocarbon reveals centuries of longevity in the Greenland shark. Science, 353(6300), 702–704.",
+      "url": "https://doi.org/10.1126/science.aaf1703",
+      "doi": "10.1126/science.aaf1703",
+      "accessed": "2026-10-31",
+      "publication_date": "2016-08-12",
+      "supports": [
+        "Análisis por radiocarbono de núcleos de lentes oculares de 28 hembras.",
+        "Estimación de vida de al menos 272 años; el ejemplar mayor se estimó en 392 ± 120 años.",
+        "Madurez sexual estimada en al menos 156 ± 22 años."
+      ],
+      "verification_status": "VERIFICADO_RESOLVEDOR"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_001",
+      "arc": "hook_medias_res",
+      "duration_seconds": 10,
+      "narration": "¿Y si un tiburón pudiera nacer antes de que existieran muchas de las ciudades actuales y seguir vivo hoy? El tiburón de Groenlandia puede vivir durante siglos.",
+      "on_screen_text": "Vive siglos",
+      "visual_description": "Tiburón de Groenlandia avanzando lentamente en agua ártica oscura; escala realista.",
+      "image_prompt": "child's wax crayon drawing on white paper, naive shapes, bright colors, visible crayon strokes, cheerful sun, vertical 9:16, no text Tiburón de Groenlandia avanzando lentamente en agua ártica oscura; escala realista.; ilustración científica clara, vertical 9:16, sin etiquetas ni texto.",
+      "ambiente": "Corriente submarina grave",
+      "sfx": [
+        "Pulso grave"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "crayones_infantiles"
+    },
+    {
+      "id": "scene_002",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "Habita aguas frías del Atlántico Norte y el Ártico. Crece muy despacio y puede superar los cinco metros de longitud.",
+      "on_screen_text": "Aguas árticas",
+      "visual_description": "Animal nadando bajo hielo marino; paisaje ártico amplio.",
+      "image_prompt": "child's wax crayon drawing on white paper, naive shapes, bright colors, visible crayon strokes, cheerful sun, vertical 9:16, no text Animal nadando bajo hielo marino; paisaje ártico amplio.; ilustración científica clara, vertical 9:16, sin etiquetas ni texto.",
+      "ambiente": "Viento filtrado bajo hielo",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "crayones_infantiles",
+      "capa": {
+        "tipo": "mapa",
+        "region": [
+          -75,
+          45,
+          -5,
+          85
+        ],
+        "puntos": [
+          {
+            "nombre": "Atlántico Norte y mares árticos",
+            "lat": 70,
+            "long": -30
+          }
+        ],
+        "titulo": "Distribución general del tiburón de Groenlandia",
+        "fuente": "Nielsen et al. 2016, descripción de la especie en mares árticos; punto ilustrativo regional, no coordenada de captura."
+      }
+    },
+    {
+      "id": "scene_003",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "Pero ¿cómo calcular la edad de un animal que puede ser más viejo que los registros humanos? El equipo estudió una parte muy especial de sus ojos.",
+      "on_screen_text": "Una pista ocular",
+      "visual_description": "Primer plano ilustrado del ojo del tiburón y corte esquemático de la lente, sin aspecto quirúrgico.",
+      "image_prompt": "child's wax crayon drawing on white paper, naive shapes, bright colors, visible crayon strokes, cheerful sun, vertical 9:16, no text Primer plano ilustrado del ojo del tiburón y corte esquemático de la lente, sin aspecto quirúrgico.; ilustración científica clara, vertical 9:16, sin etiquetas ni texto.",
+      "ambiente": "Tono de investigación",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "crayones_infantiles"
+    },
+    {
+      "id": "scene_004",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "Analizaron el carbono de los núcleos de las lentes oculares de veintiocho hembras. La señal de radiocarbono permitió estimar cuándo se formó ese tejido.",
+      "on_screen_text": "Carbono en el ojo",
+      "visual_description": "Lente ocular representada como anillos concéntricos y partículas de carbono.",
+      "image_prompt": "child's wax crayon drawing on white paper, naive shapes, bright colors, visible crayon strokes, cheerful sun, vertical 9:16, no text Lente ocular representada como anillos concéntricos y partículas de carbono.; ilustración científica clara, vertical 9:16, sin etiquetas ni texto.",
+      "ambiente": "Chasquidos suaves de laboratorio",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "crayones_infantiles"
+    },
+    {
+      "id": "scene_005",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "El resultado fue extraordinario: el estudio estimó una longevidad de al menos doscientos setenta y dos años. No fue una observación directa durante siglos, sino una estimación científica.",
+      "on_screen_text": "272 años o más",
+      "visual_description": "Línea temporal ilustrada que cruza varios siglos, tiburón avanzando al fondo.",
+      "image_prompt": "child's wax crayon drawing on white paper, naive shapes, bright colors, visible crayon strokes, cheerful sun, vertical 9:16, no text Línea temporal ilustrada que cruza varios siglos, tiburón avanzando al fondo.; ilustración científica clara, vertical 9:16, sin etiquetas ni texto.",
+      "ambiente": "Cuerda sonora ascendente",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "crayones_infantiles",
+      "capa": {
+        "tipo": "dato",
+        "valor": "≥272 años",
+        "etiqueta": "Longevidad estimada",
+        "fuente": "Nielsen et al., Science (2016), DOI 10.1126/science.aaf1703; estimación basada en radiocarbono, no seguimiento directo."
+      }
+    },
+    {
+      "id": "scene_006",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "Para el ejemplar más grande, de cinco metros y dos centímetros, calcularon unos trescientos noventa y dos años, con un margen de incertidumbre de ciento veinte años.",
+      "on_screen_text": "392 ± 120 años",
+      "visual_description": "Silueta de tiburón de 5,02 metros junto a escala gráfica sin cifras adicionales.",
+      "image_prompt": "child's wax crayon drawing on white paper, naive shapes, bright colors, visible crayon strokes, cheerful sun, vertical 9:16, no text Silueta de tiburón de 5,02 metros junto a escala gráfica sin cifras adicionales.; ilustración científica clara, vertical 9:16, sin etiquetas ni texto.",
+      "ambiente": "Eco grave",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "crayones_infantiles"
+    },
+    {
+      "id": "scene_007",
+      "arc": "cierre_historia",
+      "duration_seconds": 9,
+      "narration": "También estimaron que la madurez sexual llega muy tarde: alrededor de ciento cincuenta y seis años o más. Eso vuelve vulnerable a la especie ante la pesca.",
+      "on_screen_text": "Madurez tardía",
+      "visual_description": "Tiburón adulto bajo hielo; red pesquera distante como amenaza contextual, sin captura explícita.",
+      "image_prompt": "child's wax crayon drawing on white paper, naive shapes, bright colors, visible crayon strokes, cheerful sun, vertical 9:16, no text Tiburón adulto bajo hielo; red pesquera distante como amenaza contextual, sin captura explícita.; ilustración científica clara, vertical 9:16, sin etiquetas ni texto.",
+      "ambiente": "Corriente tenue",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "crayones_infantiles"
+    },
+    {
+      "id": "scene_008",
+      "arc": "reflexion_o_pregunta",
+      "duration_seconds": 9,
+      "narration": "Un animal puede llevar siglos recorriendo el océano sin que lo notemos. Su edad nos recuerda lo lento que puede ser el tiempo en la naturaleza. Esto fue Datos y ociosidades.",
+      "on_screen_text": "Tiempo profundo",
+      "visual_description": "Tiburón alejándose hacia una columna azul de luz bajo el hielo.",
+      "image_prompt": "child's wax crayon drawing on white paper, naive shapes, bright colors, visible crayon strokes, cheerful sun, vertical 9:16, no text Tiburón alejándose hacia una columna azul de luz bajo el hielo.; ilustración científica clara, vertical 9:16, sin etiquetas ni texto.",
+      "ambiente": "Agua que se desvanece",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "crayones_infantiles"
+    }
+  ],
+  "cortinilla_fuentes": {
+    "duration_seconds": 6,
+    "titulo": "Fuentes",
+    "aviso": "Imágenes generadas con IA; contenido científico basado en las fuentes citadas.",
+    "firma": "Datos y ociosidades",
+    "source_ids": [
+      "SRC-001"
+    ]
+  },
+  "audio": {
+    "music_asset": null,
+    "music_plan": "Cama sonora prevista; selección y generación corresponden a Imaginantes.",
+    "music_license": null
+  },
+  "export": {
+    "resolution": "1080x1920",
+    "fps": 30,
+    "render_status": "NOT_GENERATED"
+  },
+  "publicacion": {
+    "status": "PENDIENTE_DECISION_GROK",
+    "platforms": [
+      "YouTube Shorts",
+      "TikTok",
+      "Facebook Reels"
+    ],
+    "note": "No publicar ni programar desde preproducción textual."
+  },
+  "estado": "PENDIENTE_REVISION_GROK",
+  "production_mode": "storyboard_only",
+  "validation_notes": [],
+  "approved_assets": [],
+  "risk_notes": []
+}
