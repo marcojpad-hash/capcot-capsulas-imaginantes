@@ -1,147 +1,91 @@
-# PLAN MAESTRO AUTOMÁTICO — CAPCOT (fuente única de verdad)
+# Plan maestro operativo CAPCOT — vigente 2026-10-31
 
-Fecha: 2026-10-24 · Autor: Grok Bot · Estado: **vigente**. Si otro documento contradice este, **manda este**. Los documentos de ChatGPT (`docs/ARQUITECTURA_INICIAL.md`, `docs/FLUJO_DE_PRODUCCION.md`, `docs/MATRIZ_HERRAMIENTAS_GRATUITAS.md`, `templates/storyboard.template.json`, `checklists/revision_final.md`) se conservan como antecedente; sus puntos no contradichos siguen valiendo (no inventar fuentes, no versionar medios pesados, registrar hashes, no tocar el motor U6, no eludir límites de proveedores).
+> Autoridad operativa actual. Sustituye las instrucciones de producción integral anteriores, archivadas en \`docs/obsoleto/2026-10-31/\`. Ante cualquier contradicción prevalece este documento.
 
-## 1. Objetivo
-Canal diario **100 % automático** (YouTube Shorts; la descripción enlaza al TikTok existente de Mj) de micro-cápsulas científicas **verticales 9:16, 60–90 s**, concepto *Imaginantes*: periodismo informativo + narrativo, arco dramático, arranque *in medias res*, cierre de la historia + reflexión ontológica o pregunta abierta, la imagen narra, voz sintética mínima, subtítulos quemados, cortinilla con fuentes bibliográficas. Tema: **noticia científica/de investigación reciente (≤7 días) con estudio original citado** (feeds RSS de ciencia; Google Trends como señal secundaria; backlog solo de respaldo — ver §10); métricas retroalimentan el sistema. **Mj no necesita estar presente**; la revisión humana es opcional.
+## Objetivo y alcance
+CAPCOT / **Datos y ociosidades** produce cápsulas científicas y de naturaleza. ChatGPT es responsable de investigación, documentación y preproducción textual. Su entrega normal es un brief y un storyboard JSON verificables en GitHub.
 
-## 2. Conflictos resueltos (antes → ahora, y por qué)
-| # | Antes (ChatGPT) | Ahora | Razón |
-|---|---|---|---|
-| 1 | Formato 16:9, 1920×1080 | **9:16, 1080×1920** | TikTok/Shorts son verticales; Shorts exige vertical ≤3 min. |
-| 2 | Duración 1–3 min (60–180 s) | **60–90 s** (objetivo 80 s, ~150–200 palabras) | Concepto de Mj y retención en short-form (ver `investigacion/ESTRATEGIA_VIRAL_Y_PIPELINE.md`). |
-| 3 | Audiencia "público universitario", objetivo pedagógico | **Público general curioso**; periodismo narrativo con arco | Plataforma y estilo Imaginantes; el rigor se mantiene vía fuentes. |
-| 4 | Generación de video **manual** con clicks en Flow/Kling | **Ruta por defecto sin clicks**: frames fijos por API de imagen (o local/gratuita) + Ken Burns con ffmpeg | Un humano clicando rompe la automatización diaria; los planes gratuitos web no tienen API ni cuota garantizada. |
-| 5 | "Sin API de pago" como principio absoluto | **APIs permitidas cuando son gratuitas o de costo mínimo y con clave de Mj** (imagen, TTS Chirp de respaldo, YouTube Data API) | Sin API no hay automatización; el costo estimado es de pocos dólares/mes. Se sigue sin eludir límites ni automatizar UIs web. |
-| 6 | Voz grabada o TTS sin especificar | **edge-tts** (`es-MX-JorgeNeural`, gratis, sin clave) por defecto; **Google Chirp 3 HD** como respaldo (1 M caracteres/mes gratis) | Voz mínima "tipo Loquendo" pero natural; edge-tts es no oficial y puede romperse, de ahí el respaldo. |
-| 7 | SRT/VTT a mano y revisión de pronunciación humana | **Subtítulos por palabra** desde los *WordBoundary* del TTS (sin whisper); whisper/faster-whisper solo si el motor TTS no da tiempos | Tiempos exactos, cero transcripción, cero intervención. |
-| 8 | Video animado como componente central | **Gancho animado opcional** (1–2 planos de ~5 s) **solo si existe API con créditos** (p. ej. Veo/Kling/Runway API) | Video 100 % generado cuesta US$3–32 por cápsula; híbrido ≈ US$0.25–0.80. |
-| 9 | Control de calidad = reproducir y revisar a mano | **Compuertas automáticas** que el bot verifica (sección 5); revisión humana opcional | Mj no quiere estar presente. |
-| 10 | Publicación no contemplada / "no publicar hasta revisión" | **YouTube automático** (Data API `videos.insert`, público o `publishAt`); ~~TikTok como borrador~~ → sin TikTok: enlace al TikTok de Mj en la descripción | Direct Post de TikTok sin auditoría solo permite `SELF_ONLY`. |
-| 11 | Estados BORRADOR→…→FINAL con aprobaciones humanas | Estados de máquina con criterio automático (sección 4) | Avance sin bloqueo humano. |
-| 12 | Plantilla `storyboard.template.json` | **`templates/storyboard_vertical.template.json`** con `arc`, `trend_source`, `voice`, `cortinilla_fuentes`, `publicacion` | Soporta el arco y la automatización. |
-| 13 | Medios descargados manualmente (`scene_001.mp4`) | `frames/scene_NNN.png` generados por el pipeline; `.mp4` solo para el gancho opcional | Coherente con la ruta por defecto. |
-| 14 | Checklist de 1–3 min | Checklist = compuertas de la sección 5 (el archivo antiguo queda como referencia) | Duración y formato nuevos. |
+ChatGPT no genera imágenes, frames, audio, voz, video ni renders; no ejecuta QA audiovisual oficial; no decide la publicación final ni publica. No consume créditos.
 
-## 3. Ruta técnica por defecto (sin clicks)
-1. **Temas** — PRIORIDAD: noticias científicas de los últimos ~7 días (`scripts/tendencias.py`: ScienceDaily, Phys.org, NASA, ESA, Nature, UNAM Global; EurekAlert/SINC si su RSS responde), luego Google Trends RSS MX como señal secundaria; backlog atemporal solo de respaldo. ~~Mezcla 70 % atemporal / 30 % tendencia~~ (sustituido 2026-10-24). (pytrends: no usar.)
-2. **Guion** — LLM rellena `storyboard_vertical.template.json` (arco completo, ≤12 palabras en la primera frase, una idea, ninguna cifra sin fuente).
-3. **Fuentes** — cada DOI se verifica contra Crossref (`api.crossref.org/works/<doi>`); si no resuelve, la fuente y la afirmación se eliminan o el guion se regenera.
-4. **Imágenes** — 8–12 frames 1080×1920 con estilo fijo (papel recortado / miniatura) y semilla de estilo. Proveedor intercambiable: API de imagen con clave de Mj (opción recomendada) o modelo local/gratuito. Sin imagen → no se publica (no placeholders en producción).
-5. **Gancho animado (opcional)** — solo si `ANIMATED_HOOK_API` tiene créditos; si falla, se usa Ken Burns sin bloquear.
-6. **Voz** — edge-tts → si falla, Chirp 3 HD. Ritmo `rate` ajustable para caber en 60–90 s.
-7. **Subtítulos** — SRT de 1–3 palabras desde *WordBoundary*, puntuación recuperada del guion, quemados en el tercio inferior (fuera del 20 % inferior).
-8. **Montaje** — `scripts/montar_capsula.py`: Ken Burns (zoompan alternando in/out), cortinilla de fuentes, música opcional con *ducking* (`sidechaincompress`), `loudnorm` −14 LUFS, H.264 30 fps.
-9. **Publicación** y **métricas** (secciones 6 y 7).
+## Responsabilidades
+| Responsable | Función |
+|---|---|
+| ChatGPT | Investigación, verificación de fuentes, radar, clasificación temática, brief y storyboard textual; mantenimiento de documentación y validadores. |
+| Grok | Selección editorial final; adaptación del storyboard; generación/edición audiovisual; QA oficial; decisión y ejecución de publicación. |
+| Usuario | Objetivos, prioridades y decisiones que requieren autorización personal. |
+| GitHub | Fuente de verdad, historial, cola y evidencia. |
 
-## 4. Pipeline diario y estados (hora CDMX)
-| Hora | Estado alcanzado | Criterio automático |
-|---|---|---|
-| 05:00 | `TEMA_ELEGIDO` | Puntaje ≥6/10 y no sensible/tragedia |
-| 05:15 | `GUION_OK` | `validar_storyboard.py` sin errores |
-| 05:20 | `FUENTES_VERIFICADAS` | Todos los DOI resuelven (`--check-doi`) |
-| 05:30 | `MEDIOS_OK` | Existe cada `asset_filename`, 1080×1920 |
-| 05:45 | `RENDER_OK` | MP4 generado |
-| 05:50 | `QA_OK` | Todas las compuertas de la sección 5 |
-| 06:00 | `PREVIEW_ENVIADO` (opcional) | Si Mj responde "no" antes de la publicación, se cancela; el silencio = aprobación |
-| 12:00–14:00 o 19:00–21:00 | `PUBLICADO_YT` / `BORRADOR_TT` | IDs devueltos por las APIs |
-| +24 h, +72 h, +7 d | `METRICAS_n` | Registro en SQLite |
-Fallo en cualquier compuerta → reintento (máx. 2) con la variable culpable (p. ej. `rate`, otro tema del backlog) → si persiste, `FALLIDO` y se publica una cápsula de reserva del backlog ya renderizada.
+No atribuir a Grok revisión, aceptación o publicación que no esté registrada.
 
-## 5. Compuertas de calidad (el bot las verifica solo)
-- **Fuentes:** 1–4 fuentes; DOI resuelve en Crossref; cada `source_id` existe; escenas con cifras tienen `source_ids`.
-- **Arco:** primera escena `hook_medias_res`; existen `desarrollo`, `cierre_historia`, `reflexion_o_pregunta`; cortinilla 5–6 s.
-- **Duración:** 60 ≤ ffprobe ≤ 90 s (el montador sale con código 2 si no).
-- **Formato:** 1080×1920, 30 fps, H.264 + AAC, `faststart`.
-- **Audio:** −14 LUFS integrados (±1), TP ≤ −1.5 dB.
-- **Subtítulos:** ≤3 palabras por bloque, sin solapes, fuente ≥ ~60 px efectivos con contorno, centrados en zona segura (no en el 20 % inferior ni bajo la columna derecha de botones).
-- **Zonas seguras:** texto de pantalla y cortinilla dentro de 8 %–85 % horizontal y 10 %–80 % vertical.
-- **Divulgación:** aviso "imágenes IA / voz sintética" en cortinilla; `is_aigc` (TikTok) y contenido sintético (YouTube).
+## Fuente de verdad
+Repositorio: \`marcojpad-hash/capcot-capsulas-imaginantes\`. Rama de trabajo: \`feature/capcot-video-discovery-continuity\`.
 
-## 6. Publicación
-- **YouTube:** Data API v3 `videos.insert` (OAuth de la cuenta del canal de Mj, una sola vez), `privacyStatus=public` o `publishAt`; título buscable + `#Shorts`; fuentes completas en la descripción.
-- **TikTok:** ~~Content Posting API en modo **upload/borrador** (llega al inbox; Mj publica con un toque) **o** un scheduler ya auditado (Buffer/Metricool/Later, por verificar). Direct Post solo tras auditoría (poco probable para uso propio). Fuentes en comentario fijado.~~ **Corrección 2026-10-24 (Mj): no se crea cuenta nueva de TikTok; no se publica en TikTok desde el sistema. Cada descripción de YouTube enlaza al TikTok existente de Mj (`CAPCOT_TIKTOK_HANDLE`, handle pendiente). TikTok desactivado por defecto en publicar.py.**
+Antes de cada ejecución leer, en este orden:
+1. \`docs/PLAN_MAESTRO_AUTOMATICO.md\`
+2. \`docs/RECETA_CAPSULA.md\`
+3. \`docs/GUIA_MODELO_EXTERNO.md\`
+4. \`docs/ESTILOS_VISUALES.md\`
+5. \`scripts/estilos.json\`
+6. \`data/temas_del_dia.json\`
+7. \`data/rotacion.json\`
+8. \`data/publicaciones.json\`, si existe
+9. \`docs/LINEAS_TEMATICAS.md\`
+10. \`docs/FLUJO_EXTERNO.md\`
+11. \`docs/CONTINUIDAD_AUDIOVISUAL.md\`
+12. \`docs/INVESTIGACION_API_META_Y_GOOGLE_TRENDS.md\`
+13. Briefs recientes y storyboards relevantes de \`cola/entrada/\`, \`proyectos/\` y \`salidas/\`.
 
-## 7. Ciclo de métricas (semanal, domingo)
-- Recolecta YouTube Analytics (`views`, `averageViewDuration`, `averageViewPercentage`, `likes`, `comments`, `shares`, `subscribersGained`) (TikTok: fuera de alcance).
-- Puntaje = 0.4·retención + 0.3·(compartidos+guardados)/vistas + 0.2·comentarios/vistas + 0.1·subs/vistas.
-- **Una sola variable por semana** (tipo de gancho, estilo visual, duración, voz, horario, tendencia vs. atemporal); 80 % explotación / 20 % exploración; el cambio y su resultado se anotan en `avances/`.
+El catálogo canónico de estilos es \`scripts/estilos.json\`; el Markdown es una vista derivada.
 
-## 8. Lo que requiere a Mj (una sola vez)
-1. OAuth de YouTube (proyecto Google Cloud + canal) para Data/Analytics API.
-2. ~~App TikTok for Developers~~ — solo el handle del TikTok de Mj para el enlace.
-3. Clave de API de imagen (proveedor a elegir) y, opcional, Google Cloud TTS (Chirp) y API de video para el gancho.
-4. Música con licencia (YouTube Audio Library / Pixabay) en una carpeta local.
+## Investigación
+1. Consultar los RSS científicos definidos en \`scripts/tendencias.py\` y Google Trends RSS México.
+2. Si una fuente falla, registrar el error exacto. Si Trends RSS no se puede leer, consultar Trending Now oficial. Nunca afirmar que se parseó XML si no se obtuvo y procesó.
+3. Reunir 3–5 candidatos publicados en los últimos siete días, priorizando el estudio original.
+4. Verificar DOI mediante Crossref o resolvedor y contrastar afirmaciones en el paper o comunicado oficial. Si no se completa, marcar pendiente; no presentar el DOI como validado.
+5. Clasificar por las líneas reales de \`docs/LINEAS_TEMATICAS.md\`; separar tendencia, relevancia científica y oportunidad editorial.
+6. Registrar novedad, fuente primaria, DOI/URL, fecha, público/ocasión, riesgos y verificación.
+7. Separar observado, cálculo, inferencia y recomendación. No inventar métricas, causalidad, resultados ni precisión geográfica.
 
-## 9. Prototipo probado (2026-10-24)
-`scripts/validar_storyboard.py` + `scripts/montar_capsula.py` + `proyectos/demo-001/` (Tunguska 1908, 3 DOI verificados). Render en `/workspace/imaginantes/demo-001.mp4`: 84.37 s, 1080×1920, 30 fps, H.264/AAC, −14.1 LUFS. Frames = placeholders (Pillow).
-Uso:
-```
-python3 scripts/validar_storyboard.py proyectos/<id>/storyboard.json --check-doi
-python3 scripts/montar_capsula.py proyectos/<id>/storyboard.json -o /workspace/imaginantes/<id>.mp4
-```
-Pendiente de implementar: ingesta de tendencias, generador de guion LLM, adaptador de imagen, publicador YT/TikTok, colector de métricas, orquestador diario (cron/rutina).
+## Rotación y memoria editorial
+Los JSON de \`data/\` son registros operativos y pueden estar incompletos. No declarar unicidad usando solo esos archivos.
+- Reconciliar \`data/temas_del_dia.json\`, \`data/rotacion.json\` y \`data/publicaciones.json\` con storyboards de \`cola/entrada/\`, \`proyectos/\` y \`salidas/\`.
+- \`scripts/registro_editorial.py\` ofrece una vista de lectura combinada; no escribe ni modifica \`data/*.json\`.
+- Una entrada de cola o proyecto preparado es evidencia de tema/estilo propuesto, no prueba de publicación.
+- Distinguir propuesta, paquete preparado, producción audiovisual, QA oficial y publicación.
+- No repetir el estilo de la cápsula anterior ni estilo/estructura ya usado el mismo día.
+- Si no se reconstruye la secuencia, marcar la unicidad como no certificable e indicar las fechas faltantes.
+- ChatGPT no modifica, completa ni inventa registros en \`data/*.json\`.
 
----
-## Addendum 2026-10-24 (Grok Bot, feedback de Mj sobre la cápsula El Niño)
-- **Canal:** Datos y ociosidades · @datosyociosidades · YouTube ID UCU2ZI-6pBJEr9aSFsF6bxLw. Sin números en nombres/handles.
-- **Formato:** 9:16 1080x1920, 30 fps, h264/aac, **75–95 s** (QA acepta 60–95), −14 LUFS, subtítulos abajo ≤3 palabras.
-- **Línea editorial:** periodismo informativo-narrativo; estructura Imaginantes gancho → ancla → relato (3 beats) → giro → cierre
-  → reflexión/pregunta + firma ("Esto fue Datos y ociosidades."); solo hechos respaldados por fuentes verificadas; dramatizaciones
-  solo visuales y marcadas.
-- **Voz:** edge-tts es-MX-JorgeNeural, rate +8 % (rango +6/+10), pitch −2 Hz. **Narración casi continua:** pausas 0.3–0.6 s entre
-  frases y entre bloques; nada de escenas mudas largas. Si falta duración, se agrega información respaldada, nunca silencio.
-- **Audio:** ambiente + música bajo la voz (camas a −38/−40 LUFS vs voz −16, sidechain ducking). Audio sintético o CC0 documentado.
-- **Cortinilla final (5–7 s):** "Fuentes" con citas reales (1–4), aviso IA, firma del canal.
-- **Publicación:** cada cápsula genera `metadata.json` (título, descripción con fuentes, hashtags, enlace al TikTok de Mj) que usa publicar.py.
-- **Estilos:** rotación automática según docs/ESTILOS_VISUALES.md.
+## Storyboard diario
+Desarrollar un candidato principal para Grok:
+- 9:16; 75–90 s totales, incluidos seis segundos de cortinilla.
+- 170–235 palabras de narración; 7–9 escenas.
+- Arco \`hook_medias_res\` → \`desarrollo\` → \`cierre_historia\` → \`reflexion_o_pregunta\`.
+- \`titulo\` es el gancho y no supera seis palabras.
+- Cada afirmación verificable lleva \`source_ids\`.
+- Capa de mapa con coordenadas reales, fuente y nota de precisión.
+- Capa de dato/gráfico con fuente primaria.
+- Voz declarada: edge-tts, \`es-MX-JorgeNeural\`, rate \`+7%\`, pitch \`-2Hz\`.
+- Ambiente y SFX por escena; biblia visual y tipográfica coherente.
+- Serie exacta \`Datos y ociosidades\`; cierre hablado exacto \`Esto fue Datos y ociosidades.\`.
 
+## Estilo
+Elegir un solo estilo del catálogo por tema. Copiar literalmente \`prompt_base\` desde \`scripts/estilos.json\`; cada \`image_prompt\` debe comenzar con él. No inventar, mezclar ni renombrar estilos. No usar el estilo de la cápsula anterior. Si el Markdown difiere del JSON, prevalece el JSON.
 
-## Actualización 2026-10-24 (10:35, Mj)
-**Corrección 2026-10-24 (Mj): no se crea cuenta nueva de TikTok; no se publica en TikTok desde el sistema. Cada descripción de YouTube enlaza al TikTok existente de Mj (`CAPCOT_TIKTOK_HANDLE`, handle pendiente). TikTok desactivado por defecto en publicar.py.**
-- **Monetización (meta ~5 dic 2026):** YPP exige 1,000 suscriptores + 10 M vistas válidas de Shorts en 90 días, **o** 1,000 suscriptores + 4,000 h de videos largos públicos en 12 meses (support.google.com/youtube/answer/72851, verificado 2026-10-24). Metas semanales en `scripts/metricas.py metas`.
-- **Videos largos (1–2):** `scripts/compilar_largo.py` une cápsulas en 16:9 1920×1080 (fondo desenfocado, tarjetas de capítulo, `capitulos.txt`). Largo 1: «El clima en historias» (El Niño + cápsulas de clima/mar, 8–12 cápsulas ≈ 12–16 min) a mediados de noviembre. Largo 2: «Historias de la ciencia que no te contaron» (mejores cápsulas por retención, 10–15) a inicios de diciembre. Sus horas son las únicas que cuentan para la ruta de 4,000 h.
-- **Orquestador:** `capsula_diaria.py` = tendencias → guion (LLM gratuito Gemini Flash/Groq o manual) → estilo (revisión **diaria** de estilos virales) → frames → QA → paquete con `guion_mj.md` y `resumen.json`. No publica.
-- **Voz:** es-MX-JorgeNeural +11 % (rango +10/+12). Receta portátil: `docs/RECETA_CAPSULA.md`.
+## Entregables por ejecución
+Crear exactamente:
+1. \`docs/briefs/YYYY-MM-DD_RADAR_CAPCOT.md\`: 3–5 candidatos, Trends, fallos/fallbacks, límites y recomendación.
+2. \`cola/entrada/YYYY-MM-DD_slug.json\`: storyboard completo con fuentes incorporadas en el propio JSON.
 
+No crear un archivo de fuentes separado salvo petición expresa.
 
-### Corrección 2026-10-24 10:46 (Mj)
-- Voz por defecto: es-MX-JorgeNeural **+7%** (antes +11%). El Niño v4 = referencia.
-- **Cancelado** `guion_mj.md` / versión para la voz de Mj (otro proyecto): desconectado de `capsula_diaria.py`; el script se movió a `docs/obsoleto/guion_mj.py` con nota.
-- TikTok fijo: https://www.tiktok.com/@datosyociosidades (cuenta existente; CAPCOT_TIKTOK_HANDLE solo para sobreescribir).
+## Prohibición de assets en preproducción
+En el JSON de cola no incluir \`asset_filename\`, \`asset_type\`, rutas de frames/audio/video ni \`export.filename\`. \`approved_assets\` debe ser \`[]\`; \`export.render_status\` debe ser \`NOT_GENERATED\`; \`publicacion.status\` queda pendiente de Grok. Los prompts son instrucciones futuras, no evidencia de imágenes existentes.
 
+## Validación y entrega
+Confirmar ambos archivos en la rama; volver a leerlos desde GitHub; parsear JSON; comprobar palabras, escenas, duración, arco, gancho, cierre, voz, estilo, fuentes, source_ids, mapa, dato/gráfico y ausencia de rutas de assets; registrar commits reales. No declarar QA ni aceptación de Grok.
 
-## 10. Temas de actualidad científica y reparto ChatGPT / Grok Bot (2026-10-24, Mj)
-**Cómo se elegían hasta hoy:** `tendencias.py` leía solo el RSS de Google Trends MX y puntuaba palabras con ángulo científico; `capsula_diaria.py` (sin `--storyboard`) tomaba el mejor término no deportivo y no repetido del día; si puntuaba <6, backlog atemporal. Las del lote 01 (El Niño, petróleo, balón con curva, tardígrado, Chicxulub) eran temas fijos preescritos. ChatGPT solo podía dejar una 3.ª cápsula externa en `cola/entrada/`.
+No tocar \`main\`, no hacer merge, no modificar Motor U6 ni motores canónicos, no modificar \`data/*.json\`, no publicar/programar ni consumir créditos.
 
-**Desde hoy:**
-1. **Prioridad editorial:** noticias científicas y de investigación RECIENTES (≤7 días): estudios publicados, descubrimientos, misiones espaciales, salud, clima. Fuentes reales: Nature/Science news, EurekAlert, ScienceDaily, Phys.org, NASA/ESA/JAXA, SINC, Agencia Informativa Conacyt, UNAM Global. `tendencias.py` lee esos RSS primero (base 6 + recencia) y Google Trends después.
-2. **Estudio original obligatorio:** cada cápsula de actualidad cita el paper (DOI verificado en Crossref) o el comunicado oficial de la agencia, no solo la nota de prensa.
-3. **ChatGPT = productor de la cápsula de actualidad del día:** propone la noticia, escribe el storyboard según docs/RECETA_CAPSULA.md y deja el paquete (storyboard.json + frames o mp4 + fuentes.md) en `cola/entrada/`. **Nunca publica.**
-4. **Grok Bot = editor y publicador:** revisa la noticia y el DOI, aplica la receta, corre `procesar_cola.py` / `capsula_diaria.py` y `qa_capsula.py`; solo publica si QA pasa y el tema no se repite en el día. Grok Bot también produce sus propias cápsulas (2/día máx.) con el mismo criterio de actualidad.
-
-
----
-## Addendum — descubrimiento de video y continuidad audiovisual
-
-Se incorpora `scripts/buscar_generadores_video.py`, con reporte en `investigacion/generadores_video/`. Busca repositorios públicos relacionados con APIs, modelos, workflows e integración de generación de video y registra documentación candidata de proveedores. Los resultados son candidatos: no se clasifican como operativos, gratuitos ni comercialmente utilizables hasta verificar documentación, precio, cuotas, duración, licencias y disponibilidad.
-
-**No descartar clips cortos:** si un proveedor no genera 60–90 s en una sola solicitud, evaluar generación por escenas y lotes, extensión desde el último frame, image-to-video, animación de frames y combinación de proveedores. El montaje final debe cumplir la duración y el QA de la receta vigente.
-
-Se incorporan `docs/CONTINUIDAD_AUDIOVISUAL.md` y `scripts/validar_continuidad_audiovisual.py`. Cada cápsula debe mantener una única dirección artística concreta, paleta, luz, textura, composición, tipografía y voz es-MX-JorgeNeural. Se prohíben cambios accidentales de idioma y recursos visuales añadidos por ambigüedad. La validación estructural es automática; la continuidad estética requiere comparar todos los frames y revisar el audio. El nuevo validador permanece separado del histórico hasta migrar storyboards de forma controlada.
-
-El workflow `.github/workflows/capcot-descubrimiento.yml` se programa los lunes a las 08:30 hora CDMX y puede ejecutarse manualmente. Solo actualiza el catálogo; no genera cápsulas, no consume créditos, no publica y no modifica el motor U6. Debe integrarse a `main` para activar el calendario.
-
-
-## Addendum — API de edición Krea / Runway y prueba de continuidad
-
-La investigación oficial confirma dos rutas API viables:
-- **Krea 3**: edición de imágenes con prompt, referencias de imagen y regiones; API `POST /generate/image/krea/krea-3`. **Seedance 2.5 vía Krea**: generación/animación/edición guiada de clips de 4–30 s con imagen inicial/final y referencias. El precio específico de 2.5 no aparece desglosado en la tabla pública consultada; se debe verificar en el panel API antes de gastar. La tabla sí publica Seedance 2.0 desde USD $0.0809/s, pero no se extrapola ese precio a 2.5. Para edición de imagen, Krea 3 a 2K cuesta USD $0.06 + la referencia (USD $0.02 hasta 1MP o USD $0.07 si es mayor); Bria FIBO Edit 1.5 cuesta USD $0.05 por imagen. Runway Aleph 2.0 cuesta USD $0.28/s, por lo que una edición de 75–90 s en segmentos ronda USD $21–$25.20. El API usa saldo independiente de la suscripción de la app.
-- **Runway Dev Aleph 2.0**: edición de video existente mediante `POST /v1/video_to_video`, con instrucciones de texto, hasta cinco keyframes y clips de 2–30 s. Tarifa publicada: 28 créditos/s, mínimo 56 créditos; Runway Dev cobra USD $0.01 por crédito. **Bria FIBO Edit 1.5** dentro de Runway Dev edita 1–4 imágenes de referencia por instrucción a 5 créditos/imagen (USD $0.05); es un modelo de Bria, no propio de Runway. **Seedance 2.5** también admite edición video-to-video en Runway Dev: a 720p cobra 30 créditos/s de salida + 15 créditos/s de entrada (USD $0.45/s combinado, mínimo 80 créditos); Aleph 2.0 resulta más barato para edición directa con prompt/keyframes. Gen-4.5 es generación, no edición de un clip ya existente.
-- Integración en `scripts/media_api_clients.py`; documentación en `docs/API_EDITORES_KREA_RUNWAY.md`. Las claves son variables de entorno `KREA_API_KEY` y `RUNWAYML_API_SECRET`, nunca archivos del repo.
-- Las llamadas de generación/edición son facturables y están excluidas del CI. La CI solo compila, migra y valida storyboards, descubre candidatos y audita archivos; no consume saldo de proveedores.
-
-La prueba de migración se ejecuta sobre `salidas/2026-10-29_muralismo-cu/storyboard.json` en una copia temporal. El original no se modifica. El workflow genera un artefacto con el resultado del validador y la auditoría de presencia de frames/capas. Un PASS estructural no equivale a revisión audiovisual: para esa revisión deben estar disponibles todos los frames o el MP4 final.
-
-
-Guía de activación de credenciales desde Android: `docs/CONFIGURAR_APIS_DESDE_ANDROID.md`. Las claves se guardan como Repository Secrets; no se solicitan por chat ni se incluyen en los archivos del proyecto.
+## Seguimiento técnico
+Revisar documentación oficial/changelogs de Meta Graph API, Instagram Insights, Facebook Pages Insights y Google Trends API alfa. Comparar con \`docs/INVESTIGACION_API_META_Y_GOOGLE_TRENDS.md\`; actualizar solo si hay cambio nuevo relevante y sustentado. No solicitar ni guardar secretos. Si una integración requiere OAuth/permiso del titular, documentar el bloqueo y mantener la ruta pública disponible.
