@@ -1,0 +1,353 @@
+{
+  "project_id": "2026-10-30_arqueas-origen-eucariotas",
+  "max_words_per_block": 3,
+  "timing_status": "SIN_TIMECODES; generar WordBoundary con edge-tts es-MX-JorgeNeural en el pipeline oficial.",
+  "total_blocks": 61,
+  "blocks_by_scene": [
+    {
+      "scene_id": "scene_001",
+      "blocks": [
+        {
+          "id": "scene_001_B01",
+          "text": "¿Qué había antes",
+          "word_count": 3
+        },
+        {
+          "id": "scene_001_B02",
+          "text": "de una célula",
+          "word_count": 3
+        },
+        {
+          "id": "scene_001_B03",
+          "text": "como la tuya?",
+          "word_count": 3
+        },
+        {
+          "id": "scene_001_B04",
+          "text": "Dos microbios. Su",
+          "word_count": 3
+        },
+        {
+          "id": "scene_001_B05",
+          "text": "cultivo ofrece una",
+          "word_count": 3
+        },
+        {
+          "id": "scene_001_B06",
+          "text": "pista sobre el",
+          "word_count": 3
+        },
+        {
+          "id": "scene_001_B07",
+          "text": "origen de la",
+          "word_count": 3
+        },
+        {
+          "id": "scene_001_B08",
+          "text": "vida compleja.",
+          "word_count": 2
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_002",
+      "blocks": [
+        {
+          "id": "scene_002_B01",
+          "text": "Son Heimdallarchaeia: un",
+          "word_count": 3
+        },
+        {
+          "id": "scene_002_B02",
+          "text": "linaje de arqueas",
+          "word_count": 3
+        },
+        {
+          "id": "scene_002_B03",
+          "text": "considerado el pariente",
+          "word_count": 3
+        },
+        {
+          "id": "scene_002_B04",
+          "text": "conocido más cercano",
+          "word_count": 3
+        },
+        {
+          "id": "scene_002_B05",
+          "text": "de los eucariotas,",
+          "word_count": 3
+        },
+        {
+          "id": "scene_002_B06",
+          "text": "el grupo de",
+          "word_count": 3
+        },
+        {
+          "id": "scene_002_B07",
+          "text": "animales, plantas y",
+          "word_count": 3
+        },
+        {
+          "id": "scene_002_B08",
+          "text": "hongos.",
+          "word_count": 1
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_003",
+      "blocks": [
+        {
+          "id": "scene_003_B01",
+          "text": "Un equipo de",
+          "word_count": 3
+        },
+        {
+          "id": "scene_003_B02",
+          "text": "JAMSTEC aisló dos",
+          "word_count": 3
+        },
+        {
+          "id": "scene_003_B03",
+          "text": "cepas, HC1 y",
+          "word_count": 3
+        },
+        {
+          "id": "scene_003_B04",
+          "text": "SC1, y consiguió",
+          "word_count": 3
+        },
+        {
+          "id": "scene_003_B05",
+          "text": "mantenerlas en cultivo",
+          "word_count": 3
+        },
+        {
+          "id": "scene_003_B06",
+          "text": "para observarlas directamente.",
+          "word_count": 3
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_004",
+      "blocks": [
+        {
+          "id": "scene_004_B01",
+          "text": "Por dentro, la",
+          "word_count": 3
+        },
+        {
+          "id": "scene_004_B02",
+          "text": "sorpresa fue la",
+          "word_count": 3
+        },
+        {
+          "id": "scene_004_B03",
+          "text": "sencillez: no tenían",
+          "word_count": 3
+        },
+        {
+          "id": "scene_004_B04",
+          "text": "núcleo ni compartimentos",
+          "word_count": 3
+        },
+        {
+          "id": "scene_004_B05",
+          "text": "membranosos persistentes, como",
+          "word_count": 3
+        },
+        {
+          "id": "scene_004_B06",
+          "text": "los de nuestras",
+          "word_count": 3
+        },
+        {
+          "id": "scene_004_B07",
+          "text": "células.",
+          "word_count": 1
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_005",
+      "blocks": [
+        {
+          "id": "scene_005_B01",
+          "text": "Por fuera, en",
+          "word_count": 3
+        },
+        {
+          "id": "scene_005_B02",
+          "text": "cambio, desarrollaban prolongaciones",
+          "word_count": 3
+        },
+        {
+          "id": "scene_005_B03",
+          "text": "largas y flexibles.",
+          "word_count": 3
+        },
+        {
+          "id": "scene_005_B04",
+          "text": "En promedio, su",
+          "word_count": 3
+        },
+        {
+          "id": "scene_005_B05",
+          "text": "volumen alcanzaba cerca",
+          "word_count": 3
+        },
+        {
+          "id": "scene_005_B06",
+          "text": "del ciento cuarenta",
+          "word_count": 3
+        },
+        {
+          "id": "scene_005_B07",
+          "text": "y dos por",
+          "word_count": 3
+        },
+        {
+          "id": "scene_005_B08",
+          "text": "ciento del cuerpo",
+          "word_count": 3
+        },
+        {
+          "id": "scene_005_B09",
+          "text": "celular principal.",
+          "word_count": 2
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_006",
+      "blocks": [
+        {
+          "id": "scene_006_B01",
+          "text": "Esas extensiones conectaban",
+          "word_count": 3
+        },
+        {
+          "id": "scene_006_B02",
+          "text": "con otros microbios.",
+          "word_count": 3
+        },
+        {
+          "id": "scene_006_B03",
+          "text": "Ambas cepas dependían",
+          "word_count": 3
+        },
+        {
+          "id": "scene_006_B04",
+          "text": "de socios metanógenos:",
+          "word_count": 3
+        },
+        {
+          "id": "scene_006_B05",
+          "text": "una creció en",
+          "word_count": 3
+        },
+        {
+          "id": "scene_006_B06",
+          "text": "cocultivo y otra",
+          "word_count": 3
+        },
+        {
+          "id": "scene_006_B07",
+          "text": "en tricultivo.",
+          "word_count": 2
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_007",
+      "blocks": [
+        {
+          "id": "scene_007_B01",
+          "text": "También degradaban péptidos",
+          "word_count": 3
+        },
+        {
+          "id": "scene_007_B02",
+          "text": "y vivían sin",
+          "word_count": 3
+        },
+        {
+          "id": "scene_007_B03",
+          "text": "oxígeno. Una toleró",
+          "word_count": 3
+        },
+        {
+          "id": "scene_007_B04",
+          "text": "pequeñas trazas solo",
+          "word_count": 3
+        },
+        {
+          "id": "scene_007_B05",
+          "text": "cuando bacterias aerobias",
+          "word_count": 3
+        },
+        {
+          "id": "scene_007_B06",
+          "text": "las consumían: no",
+          "word_count": 3
+        },
+        {
+          "id": "scene_007_B07",
+          "text": "era respiración propia.",
+          "word_count": 3
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_008",
+      "blocks": [
+        {
+          "id": "scene_008_B01",
+          "text": "No son nuestros",
+          "word_count": 3
+        },
+        {
+          "id": "scene_008_B02",
+          "text": "antepasados directos. Son",
+          "word_count": 3
+        },
+        {
+          "id": "scene_008_B03",
+          "text": "parientes actuales que",
+          "word_count": 3
+        },
+        {
+          "id": "scene_008_B04",
+          "text": "permiten probar cómo",
+          "word_count": 3
+        },
+        {
+          "id": "scene_008_B05",
+          "text": "la cooperación entre",
+          "word_count": 3
+        },
+        {
+          "id": "scene_008_B06",
+          "text": "células simples pudo",
+          "word_count": 3
+        },
+        {
+          "id": "scene_008_B07",
+          "text": "preceder a la",
+          "word_count": 3
+        },
+        {
+          "id": "scene_008_B08",
+          "text": "complejidad. Esto fue",
+          "word_count": 3
+        },
+        {
+          "id": "scene_008_B09",
+          "text": "Datos y ociosidades.",
+          "word_count": 3
+        }
+      ]
+    }
+  ]
+}
