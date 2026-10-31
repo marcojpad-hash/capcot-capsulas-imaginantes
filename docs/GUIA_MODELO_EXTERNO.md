@@ -21,3 +21,6 @@ Crear exactamente:
 Fuentes y verificación van dentro del JSON. No crear \`_fuentes.md\`. El JSON de cola no incluye \`asset_filename\`, \`asset_type\`, rutas de medios ni \`export.filename\`; \`approved_assets=[]\` y \`render_status=NOT_GENERATED\`.
 
 Volver a leer desde GitHub, parsear, contar palabras/duración, comprobar arcos, gancho, cierre, voz, estilo, mapa, dato/gráfico, source_ids y ausencia de placeholders. Registrar commits reales. No declarar QA ni aceptación de Grok.
+
+## Confirmación de recepción
+Grok registra recepción, decisión editorial, producción, QA y publicación en cola/estado/YYYY-MM-DD_slug.json conforme a docs/GROK_STATUS_CONTRACT.md. ChatGPT no crea ni modifica ese estado; solo puede comprobarlo. La ausencia del archivo significa que la recepción no está confirmada.
