@@ -53,7 +53,10 @@ jobs:
           cp investigacion/generadores_video/catalogo_actual.md artifacts/
 
       - name: Compile CAPCOT scripts
-        run: python -m py_compile scripts/validar_continuidad_audiovisual.py scripts/buscar_generadores_video.py scripts/media_api_clients.py scripts/migrar_storyboard_continuidad.py scripts/auditar_assets_storyboard.py
+        run: python -m py_compile scripts/validar_continuidad_audiovisual.py scripts/buscar_generadores_video.py scripts/media_api_clients.py scripts/migrar_storyboard_continuidad.py scripts/auditar_assets_storyboard.py tests/test_media_api_clients.py
+
+      - name: Unit test API adapters without network or billing
+        run: python -m unittest discover -s tests -p 'test_*.py' -v
 
       - name: Migrate a real capsule into the continuity schema
         run: |
