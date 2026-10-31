@@ -86,16 +86,30 @@
       "hora": "07:00",
       "cesta": "kids",
       "project_id": "2026-11-02_camaron-mantis",
-      "estado": "listo_cola_chatgpt",
-      "notas": "TÍTULO: El golpe del camarón mantis. borrador en proyectos/2026-xx_kids_camaron-mantis-punetazo; fuente: Patek & Caldwell 2005 J Exp Biol. No marcar Hecho para niños. | ChatGPT entregó paquete completo 31-oct (teatro_sombras, 8 escenas). PREPARADO_PENDIENTE_REVISION_GROK."
+      "estado": "programado_yt",
+      "notas": "TÍTULO: El golpe del camarón mantis. borrador en proyectos/2026-xx_kids_camaron-mantis-punetazo; fuente: Patek & Caldwell 2005 J Exp Biol. No marcar Hecho para niños. | ChatGPT entregó paquete completo 31-oct (teatro_sombras, 8 escenas). PREPARADO_PENDIENTE_REVISION_GROK.",
+      "yt_id": "tmxMkxA6nOw",
+      "publishAt": "2026-11-02T13:00:00Z",
+      "plataformas": {
+        "yt": "programado",
+        "tt": "pending_tiktok",
+        "fb": "pending_fb"
+      }
     },
     {
       "fecha": "2026-11-02",
       "hora": "13:30",
       "cesta": "comida_familia",
       "project_id": "2026-11-02_comida-pan-duro",
-      "estado": "listo_cola_chatgpt",
-      "notas": "TÍTULO: Por qué el pan se pone duro (no es que se seque). retrogradación del almidón; fuente: literatura de ciencia de alimentos (PENDING_SOURCE exacta) | ChatGPT entregó paquete 31-oct (papel_rasgado_capas, 8 escenas). PREPARADO_PENDIENTE_REVISION_GROK."
+      "estado": "programado_yt",
+      "notas": "TÍTULO: Por qué el pan se pone duro (no es que se seque). retrogradación del almidón; fuente: literatura de ciencia de alimentos (PENDING_SOURCE exacta) | ChatGPT entregó paquete 31-oct (papel_rasgado_capas, 8 escenas). PREPARADO_PENDIENTE_REVISION_GROK.",
+      "yt_id": "TbZRvpiDjdk",
+      "publishAt": "2026-11-02T19:30:00Z",
+      "plataformas": {
+        "yt": "programado",
+        "tt": "pending_tiktok",
+        "fb": "pending_fb"
+      }
     },
     {
       "fecha": "2026-11-02",

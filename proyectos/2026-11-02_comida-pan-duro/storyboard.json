@@ -1,0 +1,311 @@
+{
+  "_schema": "CAPCOT_STORYBOARD_TEXT_V2",
+  "project_id": "2026-11-02_comida-pan-duro",
+  "serie": "Datos y ociosidades",
+  "title": "Por qué el pan se pone duro",
+  "titulo": "El pan no solo se seca",
+  "language": "es-MX",
+  "aspect_ratio": "9:16",
+  "target_duration_seconds": 84,
+  "estructura": "mito_vs_dato",
+  "audience": "Público general; lenguaje claro. No marcar Hecho para niños.",
+  "occasion": "Cápsula programada",
+  "resumen": "El endurecimiento del pan es un proceso complejo. La retrogradación del almidón, especialmente de la amilopectina, contribuye a la firmeza y redistribuye agua dentro de la miga; no es simplemente pérdida de humedad.",
+  "trend_source": {
+    "termino": "Por qué el pan se pone duro",
+    "fecha_publicacion": "2005-10-01",
+    "url": "https://doi.org/10.1111/j.1541-4337.2003.tb00011.x"
+  },
+  "editorial_status": "PROPUESTA_PENDIENTE_DE_GROK",
+  "arco": {
+    "hook_medias_res": "¿El pan se pone duro porque pierde agua? No exactamente.",
+    "desarrollo": "Cuando el pan sale del horno, parte del almidón está organizado de una manera que mantiene la miga suave. Con el tiempo, algunas moléculas de almidón vuelven a ordenarse y forman estructuras más cristalinas. A ese proceso se le llama retrogradación, y la amilopectina tiene un papel importante. Mientras ocurre, el agua también se redistribuye entre el almidón y la red de proteínas del pan. Por eso una bolsa cerrada no detiene por completo el endurecimiento: no es solo evaporación.",
+    "cierre_historia": "La revisión de Gray y BeMiller explica que intervienen varios mecanismos; la retrogradación es una pieza central, no la única.",
+    "reflexion_o_pregunta": "Para conservarlo mejor, congela el pan que no usarás pronto y recaliéntalo al consumirlo. Esto fue Datos y ociosidades."
+  },
+  "estilo_id": "papel_rasgado_capas",
+  "estilo_visual": "papel_rasgado_capas",
+  "visual_identity": {
+    "style_id": "papel_rasgado_capas",
+    "style_name": "papel_rasgado_capas",
+    "prompt_base": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text",
+    "palette": "Verde bosque, turquesa apagado, ocre y crema.",
+    "lighting": "Luz cálida lateral constante; contraste legible.",
+    "texture": "Material artesanal visible, capas físicas y bordes definidos.",
+    "composition": "Vertical 9:16; sujeto central; un concepto por plano; continuidad de escala.",
+    "negative_prompt": "No texto incrustado, no anatomía inventada, no litografía índigo-ocre, no marcas de agua.",
+    "reference_assets": [],
+    "seed": null,
+    "seed_policy": "Mantener personajes, escala, materiales y dirección de luz entre escenas."
+  },
+  "typography_identity": {
+    "font_family": "DejaVu Sans",
+    "font_weight": "700 gancho; 400 subtítulos",
+    "title_style": "Gancho visible desde frame 0 en postproducción",
+    "subtitle_style": "Máximo tres palabras por bloque, zona segura inferior",
+    "hierarchy": "Gancho > dato > subtítulos",
+    "animation": "Un movimiento por plano; tipografía en postproducción"
+  },
+  "voice": {
+    "engine": "edge-tts",
+    "voice_id": "es-MX-JorgeNeural",
+    "language": "es-MX",
+    "rate": "+7%",
+    "pitch": "-2Hz",
+    "pad_seconds": 0.3,
+    "modo_pausas": "continuo"
+  },
+  "sources": [
+    {
+      "id": "SRC-001",
+      "cita_corta": "Gray, J. A. & BeMiller, J. N. (2003). Bread Staling: Molecular Basis and Control. Comprehensive Reviews in Food Science and Food Safety, 2(1), 1–21.",
+      "url": "https://doi.org/10.1111/j.1541-4337.2003.tb00011.x",
+      "doi": "10.1111/j.1541-4337.2003.tb00011.x",
+      "accessed": "2026-10-31",
+      "publication_date": "2003-01",
+      "supports": [
+        "El envejecimiento del pan es multifactorial.",
+        "La retrogradación de amilopectina es una explicación molecular plausible y central.",
+        "El agua se redistribuye entre almidón y gluten; no reducir todo el proceso a secado."
+      ],
+      "verification_status": "VERIFICADO_RESOLVEDOR"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_001",
+      "arc": "hook_medias_res",
+      "duration_seconds": 9,
+      "narration": "¿El pan se pone duro porque pierde agua? Esa explicación parece lógica, pero deja fuera una parte fundamental de lo que ocurre dentro de la miga.",
+      "on_screen_text": "No es solo secado",
+      "visual_description": "Una rebanada fresca y otra firme, lado a lado, en un diorama de papel.",
+      "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text Una rebanada fresca y otra firme, lado a lado, en un diorama de papel., clear scientific illustration, no labels",
+      "sfx": [
+        "madera"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "papel_rasgado_capas",
+      "asset_filename": "frames/scene_001.jpg",
+      "asset_type": "image",
+      "motion": "kenburns_auto",
+      "animated_hook": false,
+      "image_origen": "Generada con IA para este paquete; ilustración editorial, no fotografía ni imagen documental.",
+      "ambiente_desc": "Cocina tranquila"
+    },
+    {
+      "id": "scene_002",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "Cuando el pan sale del horno, el almidón ha absorbido agua y forma una estructura que contribuye a que la miga sea suave y flexible.",
+      "on_screen_text": "Miga recién hecha",
+      "visual_description": "Corte transversal de pan con miga aireada y capas de papel representando almidón.",
+      "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text Corte transversal de pan con miga aireada y capas de papel representando almidón., clear scientific illustration, no labels",
+      "sfx": [
+        "viento"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "papel_rasgado_capas",
+      "capa": {
+        "tipo": "mapa",
+        "region": [
+          -180,
+          -90,
+          180,
+          90
+        ],
+        "puntos": [],
+        "titulo": "Hábitat marino; mapa contextual, no punto de observación",
+        "fuente": "Natural Earth; mapa ilustrativo sin coordenadas de captura."
+      },
+      "asset_filename": "frames/scene_002.jpg",
+      "asset_type": "image",
+      "motion": "kenburns_auto",
+      "animated_hook": false,
+      "image_origen": "Generada con IA para este paquete; ilustración editorial, no fotografía ni imagen documental.",
+      "ambiente_desc": "Horno suave"
+    },
+    {
+      "id": "scene_003",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "Con el paso del tiempo, parte de las moléculas de almidón vuelven a ordenarse y forman regiones más estructuradas, como pequeños cristales.",
+      "on_screen_text": "El almidón se reordena",
+      "visual_description": "Fibras de almidón pasando de desordenadas a estructuras ordenadas; metáfora visual etiquetada en post.",
+      "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text Fibras de almidón pasando de desordenadas a estructuras ordenadas; metáfora visual etiquetada en post., clear scientific illustration, no labels",
+      "sfx": [
+        "reloj"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "papel_rasgado_capas",
+      "capa": {
+        "tipo": "dato",
+        "valor": "Retrogradación de amilopectina",
+        "etiqueta": "Mecanismo principal descrito",
+        "fuente": "Gray, J. A. & BeMiller, J. N. (2003). Bread Staling: Molecular Basis and Control. Comprehensive Reviews in Food Science and Food Safety, 2(1), 1–21."
+      },
+      "asset_filename": "frames/scene_003.jpg",
+      "asset_type": "image",
+      "motion": "kenburns_auto",
+      "animated_hook": false,
+      "image_origen": "Generada con IA para este paquete; ilustración editorial, no fotografía ni imagen documental.",
+      "ambiente_desc": "Textura sutil"
+    },
+    {
+      "id": "scene_004",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "A ese cambio se le llama retrogradación. La amilopectina, una de las moléculas ramificadas del almidón, tiene un papel importante en el proceso.",
+      "on_screen_text": "Retrogradación",
+      "visual_description": "Cadenas ramificadas de amilopectina alineándose dentro de la miga.",
+      "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text Cadenas ramificadas de amilopectina alineándose dentro de la miga., clear scientific illustration, no labels",
+      "sfx": [
+        "madera"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "papel_rasgado_capas",
+      "asset_filename": "frames/scene_004.jpg",
+      "asset_type": "image",
+      "motion": "kenburns_auto",
+      "animated_hook": false,
+      "image_origen": "Generada con IA para este paquete; ilustración editorial, no fotografía ni imagen documental.",
+      "ambiente_desc": "Ambiente cálido"
+    },
+    {
+      "id": "scene_005",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "Al reorganizarse, esas estructuras también cambian dónde queda el agua: se redistribuye entre el almidón y la red de proteínas del pan.",
+      "on_screen_text": "El agua se redistribuye",
+      "visual_description": "Gotas ilustradas desplazándose entre redes de almidón y gluten, sin sugerir evaporación total.",
+      "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text Gotas ilustradas desplazándose entre redes de almidón y gluten, sin sugerir evaporación total., clear scientific illustration, no labels",
+      "sfx": [
+        "lluvia"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "papel_rasgado_capas",
+      "asset_filename": "frames/scene_005.jpg",
+      "asset_type": "image",
+      "motion": "kenburns_auto",
+      "animated_hook": false,
+      "image_origen": "Generada con IA para este paquete; ilustración editorial, no fotografía ni imagen documental.",
+      "ambiente_desc": "Gotas"
+    },
+    {
+      "id": "scene_006",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "Por eso una bolsa cerrada no detiene por completo el endurecimiento. Puede reducir la pérdida de humedad, pero no impide los cambios internos.",
+      "on_screen_text": "La bolsa no lo detiene",
+      "visual_description": "Pan dentro de bolsa cerrada; corte esquemático de la miga cambiando internamente.",
+      "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text Pan dentro de bolsa cerrada; corte esquemático de la miga cambiando internamente., clear scientific illustration, no labels",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "papel_rasgado_capas",
+      "asset_filename": "frames/scene_006.jpg",
+      "asset_type": "image",
+      "motion": "kenburns_auto",
+      "animated_hook": false,
+      "image_origen": "Generada con IA para este paquete; ilustración editorial, no fotografía ni imagen documental.",
+      "ambiente_desc": "Cocina"
+    },
+    {
+      "id": "scene_007",
+      "arc": "cierre_historia",
+      "duration_seconds": 10,
+      "narration": "Gray y BeMiller revisaron estos mecanismos y señalaron que el envejecimiento del pan es complejo; la retrogradación es central, pero no la única causa.",
+      "on_screen_text": "Un proceso complejo",
+      "visual_description": "Portada conceptual de revisión científica y tres mecanismos representados sin cifras.",
+      "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text Portada conceptual de revisión científica y tres mecanismos representados sin cifras., clear scientific illustration, no labels",
+      "sfx": [
+        "pluma"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "papel_rasgado_capas",
+      "asset_filename": "frames/scene_007.jpg",
+      "asset_type": "image",
+      "motion": "kenburns_auto",
+      "animated_hook": false,
+      "image_origen": "Generada con IA para este paquete; ilustración editorial, no fotografía ni imagen documental.",
+      "ambiente_desc": "Ambiente de estudio"
+    },
+    {
+      "id": "scene_008",
+      "arc": "reflexion_o_pregunta",
+      "duration_seconds": 9,
+      "narration": "Un consejo práctico: congela el pan que no vas a consumir pronto y recaliéntalo al servirlo. Esto fue Datos y ociosidades.",
+      "on_screen_text": "Congela, luego recalienta",
+      "visual_description": "Rebanadas guardadas en congelador y tostadas al servir; consejo práctico claro.",
+      "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text Rebanadas guardadas en congelador y tostadas al servir; consejo práctico claro., clear scientific illustration, no labels",
+      "sfx": [
+        "campanas"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "papel_rasgado_capas",
+      "asset_filename": "frames/scene_008.jpg",
+      "asset_type": "image",
+      "motion": "kenburns_auto",
+      "animated_hook": false,
+      "image_origen": "Generada con IA para este paquete; ilustración editorial, no fotografía ni imagen documental.",
+      "ambiente_desc": "Cocina cálida"
+    }
+  ],
+  "cortinilla_fuentes": {
+    "duration_seconds": 6,
+    "titulo": "Fuentes",
+    "aviso": "Imágenes generadas con IA · voz sintética · audio sintetizado.",
+    "firma": "Datos y ociosidades",
+    "source_ids": [
+      "SRC-001"
+    ]
+  },
+  "audio": {
+    "music_asset": "sintetico:pulso",
+    "music_license": "sintético propio",
+    "music_lufs": -38,
+    "ambiente_lufs": -30,
+    "music_protagonista": false,
+    "sfx_license": "Wikimedia Commons CC0/dominio público según scripts/sfx_manifest.json"
+  },
+  "export": {
+    "resolution": "1080x1920",
+    "fps": 30,
+    "render_status": "NOT_GENERATED"
+  },
+  "publicacion": {
+    "status": "PENDIENTE_DECISION_GROK",
+    "platforms": [
+      "YouTube Shorts",
+      "TikTok",
+      "Facebook Reels"
+    ],
+    "note": "No publicar ni programar desde preproducción textual."
+  },
+  "estado": "PENDIENTE_REVISION_GROK",
+  "production_mode": "storyboard_only",
+  "validation_notes": [
+    "8 escenas; 78 s de narración/escenas + 6 s de cortinilla = 84 s.",
+    "No marcar Hecho para niños.",
+    "Cierre hablado exacto: Esto fue Datos y ociosidades."
+  ],
+  "linea_tematica_provisional": "ciencia/naturaleza",
+  "approved_assets": [],
+  "risk_notes": [
+    "Cifras no incluidas sin respaldo específico."
+  ]
+}

@@ -1,0 +1,82 @@
+{
+ "metadatos": {
+  "title": "El pan no solo se seca #Shorts",
+  "description": "¿El pan se pone duro porque pierde agua?\n\nEl pan no solo se seca. Una cápsula de Datos y ociosidades: datos verificados contados como historia.\n\nFuentes:\n• Gray, J. A. & BeMiller, J. N. (2003). Bread Staling: Molecular Basis and Control. Comprehensive Reviews in Food Science and Food Safety, 2(1), 1–21. https://doi.org/10.1111/j.1541-4337.2003.tb00011.x\n\nImágenes generadas con IA · voz sintética · audio sintetizado.\nSuscríbete: @datosyociosidades\nTikTok: https://www.tiktok.com/@datosyociosidades\n\n#pan #cocina #ciencia #sabiasque #Shorts",
+  "tags": [
+   "pan",
+   "cocina",
+   "ciencia",
+   "sabiasque",
+   "Shorts"
+  ]
+ },
+ "resultado": {
+  "youtube": {
+   "kind": "youtube#video",
+   "etag": "z9AT-WCpAsrZ1LhevdKsXBecsq0",
+   "id": "TbZRvpiDjdk",
+   "snippet": {
+    "publishedAt": "2026-10-31T20:58:03Z",
+    "channelId": "UCU2ZI-6pBJEr9aSFsF6bxLw",
+    "title": "El pan no solo se seca #Shorts",
+    "description": "¿El pan se pone duro porque pierde agua?\n\nEl pan no solo se seca. Una cápsula de Datos y ociosidades: datos verificados contados como historia.\n\nFuentes:\n• Gray, J. A. & BeMiller, J. N. (2003). Bread Staling: Molecular Basis and Control. Comprehensive Reviews in Food Science and Food Safety, 2(1), 1–21. https://doi.org/10.1111/j.1541-4337.2003.tb00011.x\n\nImágenes generadas con IA · voz sintética · audio sintetizado.\nSuscríbete: @datosyociosidades\nTikTok: https://www.tiktok.com/@datosyociosidades\n\n#pan #cocina #ciencia #sabiasque #Shorts",
+    "thumbnails": {
+     "default": {
+      "url": "https://i9.ytimg.com/vi/TbZRvpiDjdk/default.jpg?sqp=CKSrmdcG&rs=AOn4CLAZAeFMLrBdHcJzIqmD2WRyRCSuXA",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i9.ytimg.com/vi/TbZRvpiDjdk/mqdefault.jpg?sqp=CKSrmdcG&rs=AOn4CLA7t_I-nb3JcDUAMKXFwLIrWAO1QA",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i9.ytimg.com/vi/TbZRvpiDjdk/hqdefault.jpg?sqp=CKSrmdcG&rs=AOn4CLAcO-1sydHX8khhL3qCIyq7p6lMUw",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "Datos y ociosidades",
+    "tags": [
+     "Shorts",
+     "ciencia",
+     "cocina",
+     "pan",
+     "sabiasque"
+    ],
+    "categoryId": "27",
+    "liveBroadcastContent": "none",
+    "defaultLanguage": "es",
+    "localized": {
+     "title": "El pan no solo se seca #Shorts",
+     "description": "¿El pan se pone duro porque pierde agua?\n\nEl pan no solo se seca. Una cápsula de Datos y ociosidades: datos verificados contados como historia.\n\nFuentes:\n• Gray, J. A. & BeMiller, J. N. (2003). Bread Staling: Molecular Basis and Control. Comprehensive Reviews in Food Science and Food Safety, 2(1), 1–21. https://doi.org/10.1111/j.1541-4337.2003.tb00011.x\n\nImágenes generadas con IA · voz sintética · audio sintetizado.\nSuscríbete: @datosyociosidades\nTikTok: https://www.tiktok.com/@datosyociosidades\n\n#pan #cocina #ciencia #sabiasque #Shorts"
+    }
+   },
+   "status": {
+    "uploadStatus": "uploaded",
+    "privacyStatus": "private",
+    "publishAt": "2026-11-02T19:30:00Z",
+    "license": "youtube",
+    "embeddable": true,
+    "publicStatsViewable": true,
+    "selfDeclaredMadeForKids": false,
+    "containsSyntheticMedia": false
+   }
+  },
+  "tiktok": {
+   "estado": "pending_tiktok",
+   "publish_at_cdmx": "2026-11-02T13:30:00-06:00",
+   "ai_label": true,
+   "caption": "¿El pan se pone duro porque pierde agua? No exactamente.\n\nEl endurecimiento del pan es un proceso complejo. La retrogradación del almidón, especialmente de la amilopectina, contribuye a la firmeza y redistribuye agua dentro de la miga; no es simplemente pérdida de humedad.\n\nFuentes en YouTube @datosyociosidades\n\n#pan #cocina #ciencia #sabiasque",
+   "video": "salidas/2026-11-02_comida-pan-duro/capsula.mp4"
+  },
+  "facebook": {
+   "estado": "pending_fb",
+   "publish_at_cdmx": "2026-11-02T13:30:00-06:00",
+   "caption": "¿El pan se pone duro porque pierde agua? No exactamente.\n\nEl endurecimiento del pan es un proceso complejo. La retrogradación del almidón, especialmente de la amilopectina, contribuye a la firmeza y redistribuye agua dentro de la miga; no es simplemente pérdida de humedad.\n\nFuentes en YouTube @datosyociosidades\n\n#pan #cocina #ciencia #sabiasque",
+   "video": "salidas/2026-11-02_comida-pan-duro/capsula.mp4",
+   "nota": "Reels via Meta Business Suite (browser)"
+  }
+ }
+}
