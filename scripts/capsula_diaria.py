@@ -24,7 +24,6 @@ if __name__ == "__main__":
     ap.add_argument("--dry-run", action="store_true", help="cadena completa sin publicar ni registrar en data/ (prueba)")
     a = ap.parse_args()
     sys.path.insert(0, S); import rotacion
-    rotacion.exigir_cupo(a.fecha, a.origen)  # LÍMITE DURO: 3/día = 2 propias + 1 externa (producidas+publicadas; YouTube 2801973: nada de producción masiva)
     ev = rotacion.evitar_hoy(a.fecha)  # la 2.ª del día difiere en tema, estructura, estilo y música
     if a.storyboard: sb = json.load(open(a.storyboard, encoding="utf-8")); src_dir = os.path.dirname(os.path.abspath(a.storyboard))
     else:
@@ -43,6 +42,17 @@ if __name__ == "__main__":
             sys.exit("Modo manual: escribe el guion y reejecuta con --storyboard")
         if rc: sys.exit("generar_guion_llm falló")
         sb = json.load(open(tmp)); src_dir = None
+    # El cupo y la rotación excluyen el storyboard que se está procesando,
+    # pero sí consideran otros registros del día encontrados en cola/proyectos.
+    rotacion.exigir_cupo(a.fecha, a.origen, sb.get("project_id"))
+    ev = rotacion.evitar_hoy(a.fecha, sb.get("project_id"))
+    # Los nombres de assets se crean aquí, en la etapa de producción de Grok.
+    # El JSON de preproducción permanece sin rutas de archivos inexistentes.
+    for i, scene in enumerate(sb.get("scenes", []), 1):
+        if not scene.get("asset_filename"):
+            scene["asset_filename"] = f"frames/scene_{i:03d}.png"
+            scene["asset_type"] = "image"
+    sb["production_mode"] = "grok_production"
     out = os.path.join(R, "salidas", f"{a.fecha}_{slug(sb.get('project_id') if a.storyboard else sb['trend_source']['termino'])}")
     os.makedirs(os.path.join(out, "frames"), exist_ok=True)
     if src_dir and os.path.abspath(src_dir) != os.path.abspath(out):
