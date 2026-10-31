@@ -25,19 +25,20 @@ No atribuir a Grok revisión, aceptación o publicación que no esté registrada
 Repositorio: \`marcojpad-hash/capcot-capsulas-imaginantes\`. Rama de trabajo: \`feature/capcot-video-discovery-continuity\`.
 
 Antes de cada ejecución leer, en este orden:
-1. \`docs/PLAN_MAESTRO_AUTOMATICO.md\`
-2. \`docs/RECETA_CAPSULA.md\`
-3. \`docs/GUIA_MODELO_EXTERNO.md\`
-4. \`docs/ESTILOS_VISUALES.md\`
-5. \`scripts/estilos.json\`
-6. \`data/temas_del_dia.json\`
-7. \`data/rotacion.json\`
-8. \`data/publicaciones.json\`, si existe
-9. \`docs/LINEAS_TEMATICAS.md\`
-10. \`docs/FLUJO_EXTERNO.md\`
-11. \`docs/CONTINUIDAD_AUDIOVISUAL.md\`
-12. \`docs/INVESTIGACION_API_META_Y_GOOGLE_TRENDS.md\`
-13. Briefs recientes y storyboards relevantes de \`cola/entrada/\`, \`proyectos/\` y \`salidas/\`.
+1. \`docs/CONTRATO_OPERATIVO_UNIFICADO.md\`
+2. \`docs/PLAN_MAESTRO_AUTOMATICO.md\`
+3. \`docs/RECETA_CAPSULA.md\`
+4. \`docs/GUIA_MODELO_EXTERNO.md\`
+5. \`docs/ESTILOS_VISUALES.md\`
+6. \`scripts/estilos.json\`
+7. \`data/temas_del_dia.json\`
+8. \`data/rotacion.json\`
+9. \`data/publicaciones.json\`, si existe
+10. \`docs/LINEAS_TEMATICAS.md\`
+11. \`docs/FLUJO_EXTERNO.md\`
+12. \`docs/CONTINUIDAD_AUDIOVISUAL.md\`
+13. \`docs/INVESTIGACION_API_META_Y_GOOGLE_TRENDS.md\`
+14. Briefs recientes y storyboards relevantes de \`cola/entrada/\`, \`proyectos/\` y \`salidas/\`.
 
 El catálogo canónico de estilos es \`scripts/estilos.json\`; el Markdown es una vista derivada.
 
