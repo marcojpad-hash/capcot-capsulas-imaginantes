@@ -32,3 +32,8 @@ Aplicar `docs/PROTOCOLO_DESCARGA_CARGA_GROK.md`. ChatGPT debe entregar preproduc
 
 ## 31-oct — tips ciencia+hack
 ChatGPT busca y empaqueta tips/life-hack con ancla científica (ver PARA_CHATGPT_tips_ciencia_hack_31oct.md). Imaginantes solo monta/publica. Hashtags simples. Evitar flops: aves-mujeres, dato abstracto de luz.
+
+## Standing diario — dato del día 23:30 CDMX
+Instrucción permanente: ver `PARA_CHATGPT_dato_del_dia.md`.
+ChatGPT entrega cada día UN paquete en `cola/entrada/YYYY-MM-DD_dato-<slug>/` (storyboard.json, fuentes.md, ESTADO_EJECUCION.md = PREPARADO_PENDIENTE_REVISION_GROK) para el slot 23:30 del mismo día; sin anticipación de días ni duplicados.
+Imaginantes monta y programa. ChatGPT no tiene cron: se activa por pegado de Mj o Custom Instructions.
