@@ -75,7 +75,7 @@
       "id": "scene_001",
       "arc": "hook_medias_res",
       "duration_seconds": 9,
-      "narration": "Una nave avanza hacia Júpiter a toda velocidad y, de pronto, choca contra algo que nadie puede ver. No hay roca, no hay hielo. Y aun así, Juno lo cruzó dos veces.",
+      "narration": "Una nave avanza hacia Júpiter y, de pronto, choca contra algo que nadie puede ver. Ni roca ni hielo. Y aun así, Juno lo cruzó dos veces.",
       "on_screen_text": "La frontera invisible",
       "visual_description": "La nave Juno frente al enorme disco de Júpiter, atravesando una frontera brillante de plasma.",
       "asset_filename": "frames/scene_001.jpg",
