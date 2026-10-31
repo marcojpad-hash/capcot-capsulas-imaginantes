@@ -29,6 +29,7 @@ Estado: integración preparada en código; credenciales y pruebas de generación
 - Casos documentados: quitar objetos o texto, cambiar fondos, ropa, clima, iluminación o estilo; mantener el resto del plano y su movimiento.
 - Conserva el audio original en la edición estándar.
 - Precio: 28 créditos por segundo, mínimo 56 créditos por solicitud. Runway Dev publica el crédito a USD $0.01: referencia de USD $0.28 por segundo, sujeto a mínimos y cargos de formato.
+- Alternativa de edición: Seedance 2.5 dentro de Runway Dev admite video-to-video `mode: "edit"`; en 720p cuesta 30 créditos/s de salida + 15 créditos/s de video de entrada/referencia (USD $0.45 por segundo combinado), mínimo 80 créditos. Aleph 2.0 es la opción más barata para edición directa con prompt y keyframes.
 - Gen-4.5 es generación de video (texto/imagen a video), no el modelo de edición de un video existente.
 
 **Imagen: Bria FIBO Edit 1.5 dentro de Runway Dev**
@@ -46,6 +47,7 @@ Estado: integración preparada en código; credenciales y pruebas de generación
 - Bria FIBO Edit 1.5 en Runway Dev: USD $0.05 por imagen (5 créditos); salida de 1MP.
 - Runway Aleph 2.0: USD $0.28 por segundo, mínimo 56 créditos por solicitud. Un clip de 10 s ronda USD $2.80; uno de 30 s, USD $8.40. Editar 75–90 s en tres segmentos ronda USD $21–$25.20, antes de posibles mínimos/ajustes.
 - Krea Seedance 2.5: la tabla pública consultada no muestra su precio individual. No usar el precio de Seedance 2.0 como sustituto.
+- Runway Dev Seedance 2.5 para edición de video: en 720p cobra 30 créditos/s de salida más 15 créditos/s de video de entrada, con mínimo 80 créditos. Para edición con prompt y keyframes, Aleph 2.0 cuesta menos: 28 créditos/s.
 
 ## Decisión recomendada para CAPCOT
 
