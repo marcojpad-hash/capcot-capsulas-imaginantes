@@ -45,7 +45,7 @@ def registrar_tema(fecha, tema, origen, project_id):
     json.dump(d, open(TEMAS, "w"), ensure_ascii=False, indent=1)
 def tema_ocupado(fecha, tema, project_id=None):
     t = (tema or "").lower().strip()
-    return any(x["tema"] == t and x["project_id"] != project_id for x in temas_del_dia(fecha)) or any((x.get("tema") or "").lower() == t and x["project_id"] != project_id for x in hecha_hoy(fecha))
+    return any((x.get("tema") or "").lower() == t and x.get("project_id") != project_id for x in temas_del_dia(fecha)) or any((x.get("tema") or "").lower() == t and x.get("project_id") != project_id for x in hecha_hoy(fecha))
 PUB = os.path.join(R, "data", "publicaciones.json")
 VENTANAS = [(9, 11), (13, 15), (18, 21)]  # horas locales America/Mexico_City
 def publicaciones(): return json.load(open(PUB)) if os.path.exists(PUB) else []
@@ -69,11 +69,11 @@ def diferencias_con_hoy(sb, fecha):
         if x.get("estructura") == sb.get("estructura"): e.append(f"estructura repetida ({x['estructura']})")
         if x.get("estilo") and x["estilo"] == sb.get("estilo_id"): e.append(f"estilo repetido ({x['estilo']})")
         if x.get("cama") and x["cama"] == sb.get("audio", {}).get("cama_musical"): e.append(f"música repetida ({x['cama']})")
-    if any(x["tema"] == tema and x["project_id"] != sb.get("project_id") for x in temas_del_dia(fecha)) and not any("tema repetido" in y for y in e): e.append(f"tema repetido en temas_del_dia ({tema})")
+    if any((x.get("tema") or "").lower() == tema and x.get("project_id") != sb.get("project_id") for x in temas_del_dia(fecha)) and not any("tema repetido" in y for y in e): e.append(f"tema repetido en temas_del_dia ({tema})")
     return e
 def evitar_hoy(fecha, project_id=None):
     h = [x for x in hecha_hoy(fecha) if x.get("project_id") != project_id]; ev = {k: {x.get(k) for x in h} - {None} for k in ("tema", "estructura", "estilo", "cama")}
-    ev["tema"] |= {x["tema"] for x in temas_del_dia(fecha)}; return ev
+    ev["tema"] |= {x.get("tema") for x in temas_del_dia(fecha) if x.get("tema")}; return ev
 def hora_publicacion(fecha, ahora=None, semilla=None):
     """Hora aleatoria dentro de una ventana no usada hoy y >=20 min en el futuro. Devuelve (local_iso, utc_iso 'Z')."""
     import random, zoneinfo
