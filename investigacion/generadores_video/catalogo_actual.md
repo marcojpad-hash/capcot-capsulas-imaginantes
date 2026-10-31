@@ -1,6 +1,6 @@
 # Catálogo de generadores de video — CAPCOT
 
-Actualizado (UTC): 2026-10-31T05:11:20.909578+00:00
+Actualizado (UTC): 2026-10-31T05:12:18.771862+00:00
 
 > Los elementos son candidatos. Ninguno se considera integrado, gratuito o apto para uso comercial sin verificación.
 
