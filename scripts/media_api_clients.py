@@ -55,23 +55,21 @@ class KreaAPI:
         }
 
     def edit_image(self, prompt: str, image_urls: list[str],
-                   resolution: str = "2K", thinking_mode: str = "fast",
+                   resolution: str = "2K",
                    regions: list[dict[str, Any]] | None = None) -> dict[str, Any]:
         """Edit an existing image with Krea 3 using image references/regions."""
         if not image_urls:
             raise ValueError("Krea 3 image editing requires at least one image URL.")
         if resolution not in {"1K", "2K", "4K"}:
             raise ValueError("resolution must be 1K, 2K or 4K")
-        if thinking_mode not in {"fast", "high"}:
-            raise ValueError("thinking_mode must be fast or high")
         body: dict[str, Any] = {
             "prompt": prompt,
             "resolution": resolution,
-            "thinking_mode": thinking_mode,
             "image_urls": image_urls[:8],
         }
         if regions:
             body["regions"] = regions[:24]
+            body["regional_edit"] = True
         return _request_json(
             f"{KREA_BASE}/generate/image/krea/krea-3",
             "POST", self.headers, body
