@@ -37,3 +37,5 @@ ChatGPT busca y empaqueta tips/life-hack con ancla científica (ver PARA_CHATGPT
 Instrucción permanente: ver `PARA_CHATGPT_dato_del_dia.md`.
 ChatGPT entrega cada día UN paquete en `cola/entrada/YYYY-MM-DD_dato-<slug>/` (storyboard.json, fuentes.md, ESTADO_EJECUCION.md = PREPARADO_PENDIENTE_REVISION_GROK) para el slot 23:30 del mismo día; sin anticipación de días ni duplicados.
 Imaginantes monta y programa. ChatGPT no tiene cron: se activa por pegado de Mj o Custom Instructions.
+
+> **Regla de cierre (obligatoria):** ver bloque «Cierre (obligatorio)» en `PARA_CHATGPT_dato_del_dia.md` — las 2 últimas escenas cierran; la última nunca es solo el sello.

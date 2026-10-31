@@ -24,6 +24,13 @@ Empuja al repo GitHub `marcojpad-hash/capcot-capsulas-imaginantes` rama `feature
 - `scenes[]` exactamente **8** escenas; cada una con:
   - `id`, `arc`, `duration_seconds`, `narration`, `on_screen_text` (≤3 palabras), `visual_description`, `image_prompt`, `ambiente`, `source_ids`
 - Última escena = cierre/reflexión; narración final debe permitir el cierre hablado: **«Esto fue Datos y ociosidades.»**
+- **Cierre (obligatorio):** El cierre ocupa las **dos últimas escenas** y no debe sentirse cortado.
+  - **Penúltima escena:** límite o matiz del estudio en 1–2 frases (120–170 caracteres), sin terminar en advertencia genérica.
+  - **Última escena — NUNCA es solo el sello:** 110–170 caracteres ANTES de «Esto fue Datos y ociosidades.», en este orden:
+    1. Frase-giro memorable («La sorpresa no es X, es Y» / tip práctico si es comida).
+    2. Pregunta abierta corta al espectador.
+    3. El sello literal: **«Esto fue Datos y ociosidades.»**
+  - No resumas lo ya dicho. Narración total **1100–1300 caracteres**; si falta largo, alarga el desarrollo, no el cierre.
 - `cortinilla_fuentes` con aviso de IA
 - `publicacion.status`: PENDIENTE_DECISION_GROK (no publiques tú)
 

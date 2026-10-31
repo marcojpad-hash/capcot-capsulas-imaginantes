@@ -19,3 +19,5 @@ Kids 07:00 o intermedio cercano a comida; no reemplazar el dato-día 23:30.
 
 ## Entrega
 Dejar ZIP/carpeta en `cola/entrada/` con `storyboard.json` (y frames si los generas tú). Marcar `editorial_status` listo para montaje.
+
+> **Regla de cierre (obligatoria):** ver bloque «Cierre (obligatorio)» en `PARA_CHATGPT_dato_del_dia.md` — las 2 últimas escenas cierran; la última nunca es solo el sello.

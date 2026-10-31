@@ -24,6 +24,13 @@ Carpeta: `cola/entrada/<project_id>/`
 - No inventar fuentes, DOI, cifras ni claims.
 - Evitar flops conocidos: «aves y mujeres»; datos abstractos de «la luz» sin tip usable.
 - Cierre de la narración, literal: **«Esto fue Datos y ociosidades.»**
+- **Cierre (obligatorio):** El cierre ocupa las **dos últimas escenas** y no debe sentirse cortado.
+  - **Penúltima escena:** límite o matiz del estudio en 1–2 frases (120–170 caracteres), sin terminar en advertencia genérica.
+  - **Última escena — NUNCA es solo el sello:** 110–170 caracteres ANTES de «Esto fue Datos y ociosidades.», en este orden:
+    1. Frase-giro memorable («La sorpresa no es X, es Y» / tip práctico si es comida).
+    2. Pregunta abierta corta al espectador.
+    3. El sello literal: **«Esto fue Datos y ociosidades.»**
+  - No resumas lo ya dicho. Narración total **1100–1300 caracteres**; si falta largo, alarga el desarrollo, no el cierre.
 - Hashtags: solo palabras simples buscables (ej. `#dinosaurios`, `#ciencia`). Nunca camelCase ni IDs de proyecto.
 
 ## Prohibido para ChatGPT
