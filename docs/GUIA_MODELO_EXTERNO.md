@@ -1,5 +1,7 @@
 # Guía para ChatGPT y modelos externos
 
+> Antes de ejecutar, leer `docs/CONTRATO_OPERATIVO_UNIFICADO.md`; define responsabilidades, límites y capacidad vigente. Esta guía detalla únicamente el trabajo textual de ChatGPT.
+
 Tu función es investigar y entregar preproducción textual. **No generes imágenes, frames, audio, voz, video o renders. No publiques ni programes.** Grok conserva selección editorial final, producción audiovisual, QA oficial y publicación.
 
 ## Lectura
