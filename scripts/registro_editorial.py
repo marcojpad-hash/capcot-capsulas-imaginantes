@@ -127,6 +127,10 @@ def registros():
         target = merged.setdefault(pid, {})
         for key, value in rec.items():
             if value not in EMPTY:
+                # El origen describe de dónde entró el paquete; una copia posterior
+                # en proyectos/ o salidas/ no convierte una entrada externa en propia.
+                if key == "origen" and target.get("origen") == "externa" and value == "propia":
+                    continue
                 target[key] = value
     result = list(merged.values()) + anonymous
     return sorted(result, key=lambda x: (x.get("fecha") or "", x.get("project_id") or ""))
