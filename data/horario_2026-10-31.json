@@ -19,8 +19,8 @@
         "tiktok",
         "facebook"
       ],
-      "tiktok": "pendiente",
-      "facebook": "pendiente",
+      "tiktok": "pendiente_browser",
+      "facebook": "publicado",
       "hashtags": [
         "cuervos",
         "animales",
@@ -43,7 +43,8 @@
         "#datos",
         "#Shorts",
         "#DatosYOciosidades"
-      ]
+      ],
+      "facebook_nota": "Compartir ahora 31-oct; Meta procesando"
     },
     {
       "hora": "13:30",
@@ -60,8 +61,8 @@
         "tiktok",
         "facebook"
       ],
-      "tiktok": "pendiente",
-      "facebook": "pendiente",
+      "tiktok": "pendiente_browser",
+      "facebook": "programado",
       "hashtags": [
         "corales",
         "océano",
@@ -86,7 +87,8 @@
         "#sabiasque",
         "#Shorts",
         "#DatosYOciosidades"
-      ]
+      ],
+      "facebook_nota": "Suite CDMX+2 confirmado en Scheduled"
     },
     {
       "hora": "17:00",
@@ -103,8 +105,8 @@
         "tiktok",
         "facebook"
       ],
-      "tiktok": "pendiente",
-      "facebook": "pendiente",
+      "tiktok": "pendiente_browser",
+      "facebook": "programado",
       "hashtags": [
         "mosquitos",
         "animales",
@@ -128,7 +130,8 @@
         "#datos",
         "#Shorts",
         "#DatosYOciosidades"
-      ]
+      ],
+      "facebook_nota": "Suite CDMX+2 confirmado en Scheduled"
     },
     {
       "hora": "19:00",
@@ -145,8 +148,8 @@
         "tiktok",
         "facebook"
       ],
-      "tiktok": "pendiente",
-      "facebook": "pendiente",
+      "tiktok": "pendiente_browser",
+      "facebook": "programado",
       "hashtags": [
         "fósiles",
         "evolución",
@@ -170,7 +173,8 @@
       ],
       "youtube_id": "MBMjQ5vLZo0",
       "youtube_url": "https://www.youtube.com/shorts/MBMjQ5vLZo0",
-      "publish_at": "2026-11-01T01:00:00Z"
+      "publish_at": "2026-11-01T01:00:00Z",
+      "facebook_nota": "Suite CDMX+2 confirmado en Scheduled"
     },
     {
       "hora": "23:30",
@@ -187,8 +191,8 @@
         "tiktok",
         "facebook"
       ],
-      "tiktok": "pendiente",
-      "facebook": "pendiente",
+      "tiktok": "pendiente_browser",
+      "facebook": "programado",
       "hashtags": [
         "aves",
         "migración",
@@ -213,7 +217,8 @@
       "nota": "override rotacion historia; único dato-día 31",
       "youtube_id": "IBH8Q95BGVs",
       "youtube_url": "https://www.youtube.com/shorts/IBH8Q95BGVs",
-      "publish_at": "2026-11-01T05:30:00Z"
+      "publish_at": "2026-11-01T05:30:00Z",
+      "facebook_nota": "Suite CDMX+2 confirmado en Scheduled"
     }
   ],
   "metricas_base": {
