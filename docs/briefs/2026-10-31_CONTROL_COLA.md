@@ -235,3 +235,96 @@ En esta auditoría:
 - No hubo merge ni consumo de créditos.
 
 **Conclusión:** la cola contiene dos paquetes textuales nuevos y estructuralmente sólidos para el 3-nov, pero Maillard requiere corregir la semántica del mapa y mapear sus SFX a recursos disponibles. Pardelas cumple estructura, aunque tiene audio incompleto y estado/ID de publicación contradictorio. Murciélagos, sequías y SmartPE ya muestran producción y carga privada YT, pero sus QA fallan y los guiones incumplen longitud/capas. Mantis y pan muestran QA JSON completo y YT programado; pan queda por debajo de 75 s y ambos tienen TT/FB pendientes. La recepción formal por Grok no está confirmada para ningún proyecto sin cola/estado.
+
+
+---
+
+# ADDENDUM — REAUDITORÍA DE CAMBIOS POSTERIORES
+
+**Corte real:** 2026-10-31 22:27 UTC (16:27 CDMX)  
+**HEAD:** `679c54048f8f3cd73407a6f98e84292304fa26a4`  
+**Comparación desde el HEAD de este informe:** 49 commits adelante, 0 atrás.  
+**Método:** lectura GitHub, comparación de commits, inspección estática y parseo de 15 storyboards. No se generaron medios.
+
+## A. Cambios posteriores confirmados
+
+Se incorporaron paquetes para 4–7 de noviembre y se reescribieron storyboards anteriores con nuevas reglas de tensión/cierre. También cambiaron coordinación editorial, horario semanal, scripts de montaje/publicación y el flujo de entrega automática a Imaginantes.
+
+La instrucción semanal más reciente marca Juno como cubierto el 3-nov 17:00 y prohíbe regenerarlo. Esto contradice la instrucción anterior de sustituir Juno por un intermedio nuevo. La instrucción más reciente parece cambiar la decisión, pero el cambio debe quedar reconocido como tal; no se infiere una aprobación independiente de Mj.
+
+## B. Paquetes 4–7 nov: validación estructural estática
+
+Se leyeron y parsearon los 13 storyboards nuevos:
+
+| Fecha | Proyecto | Palabras | Escenas | Duración con cortinilla | Mapa | Dato/gráfico |
+|---|---|---:|---:|---:|---|---|
+| 4-nov | hipo | 165 | 7 | 84 s | No | No |
+| 4-nov | miel | 165 | 7 | 84 s | No | No |
+| 4-nov | bioluminiscencia | 174 | 7 | 84 s | No | No |
+| 5-nov | Venus | 170 | 7 | 84 s | No | No |
+| 5-nov | palomitas | 173 | 7 | 84 s | No | No |
+| 5-nov | árboles | 182 | 7 | 84 s | No | No |
+| 6-nov | corazón de ballena | 174 | 7 | 84 s | No | No |
+| 6-nov | aguacate | 170 | 7 | 84 s | No | No |
+| 6-nov | ranas congeladas | 177 | 7 | 84 s | No | No |
+| 7-nov | huesos de bebé | 164 | 7 | 84 s | No | No |
+| 7-nov | Mpemba | 158 | 7 | 84 s | No | No |
+| 7-nov | sueños de pulpo | 164 | 7 | 84 s | No | No |
+| 7-nov | nubes | 176 | 7 | 84 s | No | No |
+
+Hallazgos comunes:
+- Los 13 tienen 7 escenas, duración de 84 s, gancho de 3–5 palabras, voz `+7% / 0.3 s`, cierre hablado literal, estado `PENDIENTE_DECISION_GROK` y no declaran rutas/assets.
+- Los 13 carecen de capa mapa y de capa dato/gráfico. No cumplen el contrato del validador ni el requisito de auditoría de mapa + dato.
+- Ninguno alcanza las 200 palabras exigidas por `PARA_CHATGPT_LINEA_EDITORIAL.md`; tres quedan por debajo de 170 (hipo 165, miel 165, huesos 164, Mpemba 158 y sueños de pulpo 164: cinco en total). El resto queda entre 170 y 182.
+- Los 13 quedan por debajo de los 1100 caracteres de narración total de la regla de cierre. Los cierres individuales sí respetan el rango: penúltima escena 140–159 caracteres y texto previo al sello final 115–141 caracteres.
+- No se comprobó la resolución externa de todos los DOI ni se ejecutó el validador con `--check-doi`; la revisión aquí es estructural/estática.
+
+Los dos paquetes del 3-nov también se volvieron a parsear:
+- Tiburón: 208 palabras, 8 escenas, 1257 caracteres, 84 s, mapa y dato presentes.
+- Maillard: 191 palabras, 8 escenas, 1190 caracteres, 84 s, mapa y dato presentes.
+Ambos conservan voz correcta, gancho corto, cierre y no declaran assets. Maillard queda por debajo del objetivo editorial más reciente de 200–235 palabras.
+
+## C. Rotación de estilos
+
+La instrucción semanal dice evitar estilos recientes `bordado` y `ukiyo_e`. Sin embargo:
+- 4-nov miel usa `bordado`.
+- 4-nov bioluminiscencia usa `ukiyo_e`.
+- 5-nov Venus vuelve a usar `ukiyo_e`.
+
+También se repiten `crayones_infantiles` (3-nov tiburón y 7-nov huesos) y `linea_fina` (3-nov Maillard y 6-nov aguacate). Esto requiere reconciliar la rotación; no se cambiaron estilos porque sería una decisión editorial.
+
+## D. Entrega automática a Imaginantes: fallo crítico
+
+Se inspeccionó `.github/workflows/capcot-grok-dispatch.yml` y el historial de Actions.
+
+- La ejecución más reciente, run **#75**, asociada al HEAD auditado, terminó `failure`.
+- Las 15 ejecuciones más recientes devueltas por la API aparecen como `failure`.
+- La consulta de jobs no devolvió detalle de pasos/logs; por tanto, no se atribuye una causa de ejecución observada. Sí se identifican defectos estáticos suficientes para invalidar el diseño actual:
+  1. El workflow manual busca `cola/entrada/<project_id>.json`, pero los paquetes vigentes están en `cola/entrada/<project_id>/storyboard.json`.
+  2. En evento push, el nombre se obtiene con `basename` del JSON. Para la estructura actual resulta `storyboard`, no el `project_id` real.
+  3. El payload transporta solo el storyboard; no incluye `fuentes.md` ni `ESTADO_EJECUCION.md`, que forman parte del paquete contractual.
+  4. No persiste recibo/acuse en `cola/estado/<project_id>.json`; el ACK queda solamente en el log del workflow.
+  5. El script contiene una expresión de detección de archivo con comillas/pipe mal formados y un bloque duplicado después del heredoc de Python. Requiere reparación y validación de sintaxis antes de confiar en él.
+
+**Conclusión:** el repositorio tiene un mecanismo de despacho configurado, pero la evidencia operativa disponible indica ejecuciones fallidas y el código no es compatible con el formato actual de paquetes. No hay base para afirmar recepción por Grok/Imaginantes. No se creó ningún archivo en `cola/estado/`.
+
+## E. Contratos contradictorios detectados
+
+- `PARA_CHATGPT_LINEA_EDITORIAL.md`: 200–235 palabras y 75–95 s.
+- `scripts/validar_storyboard.py`: 170–235 palabras y 75–90 s.
+- Brief semanal anterior: aproximadamente 170–200 palabras.
+- Brief de cierre: 1100–1300 caracteres y cierre en las dos últimas escenas.
+- La línea editorial dice evitar preguntas abiertas genéricas; el contrato de cierre exige pregunta abierta corta y específica.
+
+La diferencia de límites impide que un único validador represente todo el contrato vigente. Debe definirse una fuente de verdad y alinear el validador; no se modificó porque altera reglas editoriales.
+
+## F. Acciones y límites
+
+- No se modificaron `data/*.json`, `main`, el workflow, los storyboards ni los claims.
+- No se creó `cola/estado/`; su escritura corresponde al receptor Grok.
+- No se hizo merge ni se ejecutó producción.
+- No se generaron frames, imágenes, voz, audio, video o renders.
+- No se consumieron créditos.
+- La auditoría de este addendum es estática; no equivale a ejecución local de validadores.
+
+**Resultado actualizado:** los paquetes del 3-nov tienen estructura razonable, aunque Maillard queda corto frente a la nueva meta de palabras. Los 13 paquetes del 4–7 nov están incompletos frente al contrato de mapa/dato y a la longitud editorial. La integración automática es el bloqueo operativo prioritario: el workflow falla repetidamente, su ruta manual no coincide con la estructura de carpetas y no deja recibos verificables. Recepción Grok no confirmada.
