@@ -170,8 +170,15 @@
       "hora": "17:00",
       "cesta": "intermedio_1",
       "project_id": "2026-10-29_juno-choque-proa",
-      "estado": "listo_cola_chatgpt",
-      "notas": "Juno en cola; no salió 31-oct. Cubrir intermedio 3-nov."
+      "estado": "programado_yt",
+      "notas": "Juno en cola; no salió 31-oct. Cubrir intermedio 3-nov.",
+      "yt_id": "73cZz8Pi9TE",
+      "publishAt": "2026-11-03T23:00:00Z",
+      "plataformas": {
+        "yt": "programado",
+        "tt": "pending_tiktok",
+        "fb": "pending_fb"
+      }
     },
     {
       "fecha": "2026-11-03",

@@ -1,0 +1,44 @@
+{
+ "project_id": "2026-10-29_juno-choque-proa",
+ "musica": {
+  "cama": "arpegio",
+  "origen": "síntesis propia (scripts/cama_sonora.py, numpy)",
+  "licencia": "obra propia de Datos y ociosidades",
+  "generada_por_ia": false
+ },
+ "sfx": {
+  "viento": {
+   "archivo": "viento.ogg",
+   "commons": "File:Howling wind.ogg",
+   "autor": "Tvabutzku1234",
+   "licencia": "CC0",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Howling_wind.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Howling_wind.ogg",
+   "licencia_verificada": "CC0"
+  }
+ },
+ "imagenes": {
+  "origen": "Generador de imágenes IA de Grok Bot; ocho imágenes ilustrativas generadas para este paquete y ajustadas a 1080x1920.",
+  "estilo": "art_deco_poster",
+  "realista": false
+ },
+ "voz": {
+  "motor": "Microsoft Edge TTS",
+  "voz": "es-MX-JorgeNeural",
+  "nota": "voz sintética; no imita a una persona real"
+ },
+ "capas_datos": {
+  "tipos": [
+   "mapa",
+   "grafico",
+   "dato"
+  ],
+  "mapa_base": "Natural Earth 110m (dominio público)",
+  "render": "matplotlib (propio)"
+ },
+ "fuentes_datos": [
+  "https://doi.org/10.1038/s41467-026-76223-x",
+  "https://www.sciencedaily.com/releases/2026/10/261028232715.htm",
+  "https://now.uiowa.edu/news/2026/09/jupiter-uses-surprisingly-complex-system-fend-particles-sun-0"
+ ]
+}
