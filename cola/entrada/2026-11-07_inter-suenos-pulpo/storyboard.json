@@ -1,0 +1,217 @@
+{
+  "_schema": "CAPCOT_STORYBOARD_TEXT_V2",
+  "project_id": "2026-11-07_inter-suenos-pulpo",
+  "serie": "Datos y ociosidades",
+  "title": "¿Sueñan los pulpos?",
+  "titulo": "¿Sueñan los pulpos?",
+  "language": "es-MX",
+  "aspect_ratio": "9:16",
+  "target_duration_seconds": 84,
+  "estructura": "pregunta",
+  "audience": "Público general",
+  "occasion": "Cápsula vertical",
+  "resumen": "Octopus insularis presenta sueño quieto y activo; no prueba contenido onírico.",
+  "trend_source": {
+    "termino": "¿Sueñan los pulpos?",
+    "fecha_publicacion": "",
+    "url": "https://doi.org/10.1016/j.isci.2021.102223"
+  },
+  "editorial_status": "PROPUESTA_PENDIENTE_DE_GROK",
+  "arco": {
+    "hook_medias_res": "Un pulpo dormido puede cambiar rápidamente de color y textura, mover los ojos y contraer el cuerpo durante episodios breves.",
+    "desarrollo": "En estudios con Octopus insularis se describieron dos estados: sueño quieto y sueño activo. Durante el activo aparecen patrones dinámicos en la piel. Los cambios recuerdan a los patrones que el animal utiliza cuando está despierto, por ejemplo para camuflarse o comunicarse. Pero observar movimientos y cambios de color no permite saber qué está experimentando el pulpo. No demuestra que esté soñando una escena concreta. La investigación abre preguntas sobre la evolución del sueño, pero el contenido de una experiencia subjetiva no puede leerse directamente en la piel.",
+    "cierre_historia": "La cifra o el fenómeno debe interpretarse dentro de las condiciones medidas, no como regla sin excepciones.",
+    "reflexion_o_pregunta": "Esto fue Datos y ociosidades."
+  },
+  "estilo_id": "amigurumi",
+  "estilo_visual": "Muñecos tejidos amigurumi en miniatura",
+  "visual_identity": {
+    "style_id": "amigurumi",
+    "style_name": "Muñecos tejidos amigurumi en miniatura",
+    "prompt_base": "miniature crochet amigurumi characters, macro photography, shallow depth of field, soft natural window light turning to warm firelight, handmade yarn texture, cozy diorama props, vertical 9:16, no text",
+    "palette": "cálida → oscura con luz de fuego",
+    "lighting": "Según prompt base",
+    "texture": "Según prompt base",
+    "composition": "Vertical 9:16; continuidad entre escenas",
+    "negative_prompt": "No texto incrustado, no marcas de agua, no datos visuales falsos",
+    "reference_assets": [],
+    "seed": null,
+    "seed_policy": "Mantener identidad visual entre escenas"
+  },
+  "typography_identity": {
+    "font_family": "DejaVu Sans",
+    "font_weight": "700/400",
+    "title_style": "Máximo seis palabras desde frame 0",
+    "subtitle_style": "Bloques de máximo tres palabras",
+    "hierarchy": "Gancho > dato > subtítulos",
+    "animation": "Un movimiento por plano"
+  },
+  "voice": {
+    "engine": "edge-tts",
+    "voice_id": "es-MX-JorgeNeural",
+    "language": "es-MX",
+    "rate": "+7%",
+    "pitch": "-2Hz",
+    "pad_seconds": 0.3,
+    "modo_pausas": "continuo"
+  },
+  "sources": [
+    {
+      "id": "SRC-001",
+      "cita_corta": "Medeiros et al. 2021, iScience",
+      "url": "https://doi.org/10.1016/j.isci.2021.102223",
+      "doi": "10.1016/j.isci.2021.102223",
+      "accessed": "2026-10-31",
+      "publication_date": "",
+      "supports": [
+        "Octopus insularis presenta sueño quieto y activo; no prueba contenido onírico."
+      ],
+      "verification_status": "VERIFICADO_RESOLVEDOR"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_001",
+      "arc": "hook_medias_res",
+      "duration_seconds": 10,
+      "narration": "Un pulpo dormido puede cambiar rápidamente de color y textura, mover los ojos y contraer el cuerpo durante episodios breves.",
+      "on_screen_text": "¿Sueñan los pulpos?",
+      "visual_description": "Ilustración educativa secuencial sobre ¿sueñan los pulpos?",
+      "image_prompt": "miniature crochet amigurumi characters, macro photography, shallow depth of field, soft natural window light turning to warm firelight, handmade yarn texture, cozy diorama props, vertical 9:16, no text, educational visual scene illustrating ¿sueñan los pulpos?, consistent continuity",
+      "ambiente": "Ambiente discreto; voz al frente",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "amigurumi"
+    },
+    {
+      "id": "scene_002",
+      "arc": "desarrollo",
+      "duration_seconds": 12,
+      "narration": "En estudios con Octopus insularis se describieron dos estados: sueño quieto y sueño activo. Durante el activo aparecen patrones dinámicos en la piel.",
+      "on_screen_text": "El mecanismo",
+      "visual_description": "Ilustración educativa secuencial sobre ¿sueñan los pulpos?",
+      "image_prompt": "miniature crochet amigurumi characters, macro photography, shallow depth of field, soft natural window light turning to warm firelight, handmade yarn texture, cozy diorama props, vertical 9:16, no text, educational visual scene illustrating ¿sueñan los pulpos?, consistent continuity",
+      "ambiente": "Ambiente discreto; voz al frente",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "amigurumi"
+    },
+    {
+      "id": "scene_003",
+      "arc": "desarrollo",
+      "duration_seconds": 12,
+      "narration": "Los cambios recuerdan a los patrones que el animal utiliza cuando está despierto, por ejemplo para camuflarse o comunicarse.",
+      "on_screen_text": "Qué ocurre",
+      "visual_description": "Ilustración educativa secuencial sobre ¿sueñan los pulpos?",
+      "image_prompt": "miniature crochet amigurumi characters, macro photography, shallow depth of field, soft natural window light turning to warm firelight, handmade yarn texture, cozy diorama props, vertical 9:16, no text, educational visual scene illustrating ¿sueñan los pulpos?, consistent continuity",
+      "ambiente": "Ambiente discreto; voz al frente",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "amigurumi"
+    },
+    {
+      "id": "scene_004",
+      "arc": "desarrollo",
+      "duration_seconds": 12,
+      "narration": "Pero observar movimientos y cambios de color no permite saber qué está experimentando el pulpo. No demuestra que esté soñando una escena concreta.",
+      "on_screen_text": "La evidencia",
+      "visual_description": "Ilustración educativa secuencial sobre ¿sueñan los pulpos?",
+      "image_prompt": "miniature crochet amigurumi characters, macro photography, shallow depth of field, soft natural window light turning to warm firelight, handmade yarn texture, cozy diorama props, vertical 9:16, no text, educational visual scene illustrating ¿sueñan los pulpos?, consistent continuity",
+      "ambiente": "Ambiente discreto; voz al frente",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "amigurumi"
+    },
+    {
+      "id": "scene_005",
+      "arc": "desarrollo",
+      "duration_seconds": 12,
+      "narration": "La investigación abre preguntas sobre la evolución del sueño, pero el contenido de una experiencia subjetiva no puede leerse directamente en la piel.",
+      "on_screen_text": "El matiz",
+      "visual_description": "Ilustración educativa secuencial sobre ¿sueñan los pulpos?",
+      "image_prompt": "miniature crochet amigurumi characters, macro photography, shallow depth of field, soft natural window light turning to warm firelight, handmade yarn texture, cozy diorama props, vertical 9:16, no text, educational visual scene illustrating ¿sueñan los pulpos?, consistent continuity",
+      "ambiente": "Ambiente discreto; voz al frente",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "amigurumi"
+    },
+    {
+      "id": "scene_006",
+      "arc": "cierre_historia",
+      "duration_seconds": 10,
+      "narration": "La cifra o el fenómeno debe interpretarse dentro de las condiciones medidas, no como regla sin excepciones.",
+      "on_screen_text": "Qué sabemos",
+      "visual_description": "Ilustración educativa secuencial sobre ¿sueñan los pulpos?",
+      "image_prompt": "miniature crochet amigurumi characters, macro photography, shallow depth of field, soft natural window light turning to warm firelight, handmade yarn texture, cozy diorama props, vertical 9:16, no text, educational visual scene illustrating ¿sueñan los pulpos?, consistent continuity",
+      "ambiente": "Ambiente discreto; voz al frente",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "amigurumi"
+    },
+    {
+      "id": "scene_007",
+      "arc": "reflexion_o_pregunta",
+      "duration_seconds": 10,
+      "narration": "Esto fue Datos y ociosidades.",
+      "on_screen_text": "Esto fue Datos y ociosidades",
+      "visual_description": "Ilustración educativa secuencial sobre ¿sueñan los pulpos?",
+      "image_prompt": "miniature crochet amigurumi characters, macro photography, shallow depth of field, soft natural window light turning to warm firelight, handmade yarn texture, cozy diorama props, vertical 9:16, no text, educational visual scene illustrating ¿sueñan los pulpos?, consistent continuity",
+      "ambiente": "Ambiente discreto; voz al frente",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "amigurumi"
+    }
+  ],
+  "cortinilla_fuentes": {
+    "duration_seconds": 6,
+    "titulo": "Fuentes",
+    "aviso": "Declarar apoyo de IA y medios sintéticos en versión final.",
+    "firma": "Datos y ociosidades",
+    "source_ids": [
+      "SRC-001"
+    ]
+  },
+  "audio": {
+    "music_asset": null,
+    "music_plan": "Cama discreta; licencia por validar en montaje",
+    "music_license": null
+  },
+  "export": {
+    "resolution": "1080x1920",
+    "fps": 30,
+    "render_status": "NOT_GENERATED"
+  },
+  "publicacion": {
+    "status": "PENDIENTE_DECISION_GROK",
+    "platforms": [
+      "YouTube Shorts",
+      "TikTok",
+      "Facebook Reels"
+    ],
+    "note": "No publicar desde preproducción textual."
+  },
+  "estado": "PENDIENTE_REVISION_GROK",
+  "production_mode": "storyboard_only",
+  "validation_notes": [
+    "7 escenas; 78 s narración + 6 s cortinilla = 84 s."
+  ],
+  "linea_tematica_provisional": "Ciencia y naturaleza",
+  "approved_assets": [],
+  "risk_notes": [
+    "No generalizar más allá de la fuente."
+  ]
+}
