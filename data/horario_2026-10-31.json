@@ -1,0 +1,147 @@
+{
+  "fecha": "2026-10-31",
+  "tz": "America/Mexico_City",
+  "pedido_mj": "t277u",
+  "nota": "Parrilla rearmada 31-oct por métricas (t278u): quitar Juno; hashtags simples estilo Mj; factores animal/wow/cotidiano",
+  "slots": [
+    {
+      "hora": "07:00",
+      "cesta": "kids",
+      "id": "2026-10-27_corneja-decision-rapida",
+      "titulo": "La corneja decide en 235 milisegundos #Shorts",
+      "estilo": "microscopio_psicodelico",
+      "estructura": "sabias_que",
+      "estado": "pendiente_frames",
+      "proyecto": "2026-10-27_corneja-decision-rapida",
+      "salida": "salidas/2026-10-27_corneja-decision-rapida",
+      "plataformas": [
+        "youtube",
+        "tiktok",
+        "facebook"
+      ],
+      "tiktok": "pendiente",
+      "facebook": "pendiente",
+      "hashtags": [
+        "cuervos",
+        "animales",
+        "ciencia",
+        "curiosidades"
+      ]
+    },
+    {
+      "hora": "13:30",
+      "cesta": "comida_familia",
+      "id": "2026-10-25_corales-contacto",
+      "titulo": "Un toque de vida #Shorts",
+      "estilo": "ukiyo_e",
+      "estructura": "historia",
+      "estado": "pendiente_frames",
+      "proyecto": "2026-10-25_corales-contacto",
+      "salida": "salidas/2026-10-25_corales-contacto",
+      "plataformas": [
+        "youtube",
+        "tiktok",
+        "facebook"
+      ],
+      "tiktok": "pendiente",
+      "facebook": "pendiente",
+      "hashtags": [
+        "corales",
+        "océano",
+        "ciencia",
+        "naturaleza"
+      ]
+    },
+    {
+      "hora": "17:00",
+      "cesta": "intermedio_1",
+      "id": "2026-10-28_mosquito-fruitless-audicion",
+      "titulo": "El gen que afina el oído del mosquito macho #Shorts #Shorts",
+      "estilo": "claymation",
+      "estructura": "sabias_que",
+      "estado": "pendiente_frames",
+      "proyecto": "2026-10-28_mosquito-fruitless-audicion",
+      "salida": "salidas/2026-10-28_mosquito-fruitless-audicion",
+      "plataformas": [
+        "youtube",
+        "tiktok",
+        "facebook"
+      ],
+      "tiktok": "pendiente",
+      "facebook": "pendiente",
+      "hashtags": [
+        "mosquitos",
+        "animales",
+        "ciencia",
+        "curiosidades"
+      ]
+    },
+    {
+      "hora": "19:00",
+      "cesta": "intermedio_2",
+      "id": "2026-10-30_kromdraai-primera-fecha",
+      "titulo": "La cueva ya tiene fecha #Shorts",
+      "estilo": "dibujo_cientifico_scratchboard",
+      "estructura": "pregunta",
+      "estado": "pendiente_frames",
+      "proyecto": "2026-10-30_kromdraai-primera-fecha",
+      "salida": "salidas/2026-10-30_kromdraai-primera-fecha",
+      "plataformas": [
+        "youtube",
+        "tiktok",
+        "facebook"
+      ],
+      "tiktok": "pendiente",
+      "facebook": "pendiente",
+      "hashtags": [
+        "fósiles",
+        "evolución",
+        "ciencia",
+        "cueva"
+      ],
+      "nota": "Sustituye Juno: Voyager (espacio abstracto) solo 16 vistas; métricas favorecen hallazgo concreto"
+    },
+    {
+      "hora": "23:30",
+      "cesta": "dato_del_dia",
+      "id": "2026-10-31_pardelas-jetlag-solar",
+      "titulo": "Las aves también tienen jet lag #Shorts",
+      "estilo": "papel_rasgado_capas",
+      "estructura": "historia",
+      "estado": "pendiente_frames",
+      "proyecto": "2026-10-31_pardelas-jetlag-solar",
+      "salida": "salidas/2026-10-31_pardelas-jetlag-solar",
+      "plataformas": [
+        "youtube",
+        "tiktok",
+        "facebook"
+      ],
+      "tiktok": "pendiente",
+      "facebook": "pendiente",
+      "hashtags": [
+        "aves",
+        "migración",
+        "ciencia",
+        "océano"
+      ]
+    }
+  ],
+  "metricas_base": {
+    "corte": "2026-10-31T12:16-06:00",
+    "tops_v_dia": [
+      "Titanoboa",
+      "Ajolotes",
+      "Lince dato",
+      "Serpiente voladora",
+      "Hongo",
+      "Pimiento",
+      "Papel P1"
+    ],
+    "flops": [
+      "Voyager 16",
+      "qom 198",
+      "Monarca 279"
+    ],
+    "hashtag_regla": "base datos/ciencia/sabiasque + 2-3 tema simple; nunca camelCase de project_id"
+  }
+}

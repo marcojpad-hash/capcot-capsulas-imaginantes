@@ -29,3 +29,6 @@ ChatGPT deja radar y storyboard textual en las rutas definidas por el Plan Maest
 ## Descarga de carga para Grok Bot
 
 Aplicar `docs/PROTOCOLO_DESCARGA_CARGA_GROK.md`. ChatGPT debe entregar preproducción textual completa y validada (research, fuentes, guion, storyboard, prompts visuales, audio/SFX y metadata). Imaginantes/Grok Bot debe dedicar su trabajo a producir los medios, montar/renderizar, ejecutar QA audiovisual y publicar cuando esté autorizado. No duplicar research ni reescribir guiones por rutina. Las correcciones se limitan al campo/escena defectuoso; los faltantes factuales vuelven a ChatGPT como solicitud puntual. Las correcciones consumen tokens: evitar reescrituras y regeneraciones completas innecesarias.
+
+## 31-oct — tips ciencia+hack
+ChatGPT busca y empaqueta tips/life-hack con ancla científica (ver PARA_CHATGPT_tips_ciencia_hack_31oct.md). Imaginantes solo monta/publica. Hashtags simples. Evitar flops: aves-mujeres, dato abstracto de luz.
