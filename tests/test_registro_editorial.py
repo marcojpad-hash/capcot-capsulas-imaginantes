@@ -53,6 +53,32 @@ class RegistroEditorialTests(unittest.TestCase):
         self.assertEqual(json.loads(rot_path.read_text(encoding="utf-8")), rotacion)
         self.assertEqual(json.loads(topics_path.read_text(encoding="utf-8")), topics)
 
+    def test_external_origin_survives_project_and_output_copies(self):
+        sb = {
+            "project_id": "2026-10-31_external",
+            "title": "External package",
+            "trend_source": {"termino": "external topic"},
+            "estilo_id": "papel_rasgado_capas",
+            "estructura": "historia",
+            "scenes": [{"duration_seconds": 78}],
+            "cortinilla_fuentes": {"duration_seconds": 6},
+        }
+        self.write_json(
+            registro_editorial.ROOT / "cola" / "entrada" / "2026-10-31_external.json",
+            sb,
+        )
+        self.write_json(
+            registro_editorial.ROOT / "proyectos" / "2026-10-31_external" / "storyboard.json",
+            sb,
+        )
+        self.write_json(
+            registro_editorial.ROOT / "salidas" / "2026-10-31_external" / "storyboard.json",
+            sb,
+        )
+        day = registro_editorial.registros_dia("2026-10-31")
+        self.assertEqual(len(day), 1)
+        self.assertEqual(day[0]["origen"], "externa")
+
     def test_deduplicates_same_project_across_queue_and_rotation(self):
         self.write_json(
             registro_editorial.ROOT / "data" / "rotacion.json",
