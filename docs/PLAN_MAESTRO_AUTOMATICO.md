@@ -89,3 +89,6 @@ No tocar \`main\`, no hacer merge, no modificar Motor U6 ni motores canónicos, 
 
 ## Seguimiento técnico
 Revisar documentación oficial/changelogs de Meta Graph API, Instagram Insights, Facebook Pages Insights y Google Trends API alfa. Comparar con \`docs/INVESTIGACION_API_META_Y_GOOGLE_TRENDS.md\`; actualizar solo si hay cambio nuevo relevante y sustentado. No solicitar ni guardar secretos. Si una integración requiere OAuth/permiso del titular, documentar el bloqueo y mantener la ruta pública disponible.
+
+## Confirmación de recepción por Grok
+Leer cola/estado/YYYY-MM-DD_slug.json si existe. Su ausencia significa que la recepción no está confirmada. Grok es el único responsable de crear/actualizar ese archivo; ChatGPT solo lo lee. Ver docs/GROK_STATUS_CONTRACT.md.
