@@ -1,6 +1,17 @@
 name: CAPCOT — descubrimiento de video y continuidad
 
 on:
+  push:
+    branches:
+      - feature/capcot-video-discovery-continuity
+    paths:
+      - ".github/workflows/capcot-descubrimiento.yml"
+      - "scripts/buscar_generadores_video.py"
+      - "scripts/media_api_clients.py"
+      - "scripts/validar_continuidad_audiovisual.py"
+      - "scripts/migrar_storyboard_continuidad.py"
+      - "scripts/auditar_assets_storyboard.py"
+      - "docs/API_EDITORES_KREA_RUNWAY.md"
   schedule:
     - cron: "30 14 * * 1"
   workflow_dispatch:
@@ -31,8 +42,26 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python scripts/buscar_generadores_video.py
 
-      - name: Validate continuity checker syntax
-        run: python -m py_compile scripts/validar_continuidad_audiovisual.py scripts/buscar_generadores_video.py
+      - name: Compile CAPCOT scripts
+        run: python -m py_compile scripts/validar_continuidad_audiovisual.py scripts/buscar_generadores_video.py scripts/media_api_clients.py scripts/migrar_storyboard_continuidad.py scripts/auditar_assets_storyboard.py
+
+      - name: Migrate a real capsule into the continuity schema
+        run: |
+          mkdir -p artifacts
+          python scripts/migrar_storyboard_continuidad.py --input salidas/2026-10-29_muralismo-cu/storyboard.json --output /tmp/muralismo-cu-continuidad.json
+          python scripts/validar_continuidad_audiovisual.py /tmp/muralismo-cu-continuidad.json | tee artifacts/continuity-validation.txt
+
+      - name: Audit source media availability
+        run: |
+          python scripts/auditar_assets_storyboard.py salidas/2026-10-29_muralismo-cu/storyboard.json --output artifacts/media-assets-audit.json
+
+      - name: Upload continuity audit
+        uses: actions/upload-artifact@v4
+        with:
+          name: capcot-continuity-audit
+          path: artifacts/
+          if-no-files-found: error
+          retention-days: 30
 
       - name: Commit catalog when changed
         run: |
