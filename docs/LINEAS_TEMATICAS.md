@@ -1,6 +1,6 @@
 # Líneas temáticas CAPCOT / Datos y ociosidades
 
-Actualizado 2026-10-25 (Mj). Una marca, varias líneas; los datos deciden qué se vuelve canal alterno.
+Actualizado 2026-10-31. Taxonomía vigente y aún provisional; conservar nombres históricos y no convertir propuestas de la matriz en líneas aprobadas sin decisión editorial de Grok. Una marca, varias líneas; los datos deciden qué se vuelve canal alterno.
 
 ## Marca
 **Datos y ociosidades** — ciencia y curiosidad contadas como historia. Fuentes reales. Cápsulas ~70–90 s.
