@@ -45,3 +45,7 @@ Imaginantes monta y programa. ChatGPT no tiene cron: se activa por pegado de Mj 
 - **ChatGPT:** cada storyboard.json lleva `"thumbnail_source": "scene_001"` (o el id de la escena gancho si fuera otro). La escena gancho debe tener la pregunta en `narration`/`on_screen_text`.
 - **Imaginantes/Grok:** al publicar, `scripts/publicar.py` sube `frames/<thumbnail_source>.jpg|png` con `thumbnails.set` (reescalado a 1280px máx, <2 MB). Si la subida falla, el paquete no se marca listo hasta corregirlo a mano en YT Studio con ese mismo frame.
 - TikTok/Facebook: elegir como portada el primer segundo/frame del gancho.
+
+## 2026-10-31 — Regla portada YouTube
+- Portada YT = PRIMER frame del mp4 final montado (capsula_v2.mp4, ffmpeg -ss 0.3 -frames:v 1), que trae el título/pregunta quemado. NUNCA el frame RAW de scene_001 sin texto.
+- Aplicado vía thumbnails.set a los 10 yt_id v2 del horario 2026-11-01..07 (jpgs en _tmp/thumb_v2/).
