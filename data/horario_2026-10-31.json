@@ -19,8 +19,8 @@
         "tiktok",
         "facebook"
       ],
-      "tiktok": "pendiente_browser",
-      "facebook": "pendiente_browser",
+      "tiktok": "pendiente",
+      "facebook": "pendiente",
       "hashtags": [
         "cuervos",
         "animales",
@@ -60,8 +60,8 @@
         "tiktok",
         "facebook"
       ],
-      "tiktok": "pendiente_browser",
-      "facebook": "pendiente_browser",
+      "tiktok": "pendiente",
+      "facebook": "pendiente",
       "hashtags": [
         "corales",
         "océano",
@@ -103,8 +103,8 @@
         "tiktok",
         "facebook"
       ],
-      "tiktok": "pendiente_browser",
-      "facebook": "pendiente_browser",
+      "tiktok": "pendiente",
+      "facebook": "pendiente",
       "hashtags": [
         "mosquitos",
         "animales",
@@ -145,8 +145,8 @@
         "tiktok",
         "facebook"
       ],
-      "tiktok": "pendiente_browser",
-      "facebook": "pendiente_browser",
+      "tiktok": "pendiente",
+      "facebook": "pendiente",
       "hashtags": [
         "fósiles",
         "evolución",
@@ -167,7 +167,10 @@
         "#datos",
         "#Shorts",
         "#DatosYOciosidades"
-      ]
+      ],
+      "youtube_id": "MBMjQ5vLZo0",
+      "youtube_url": "https://www.youtube.com/shorts/MBMjQ5vLZo0",
+      "publish_at": "2026-11-01T01:00:00Z"
     },
     {
       "hora": "23:30",
@@ -184,8 +187,8 @@
         "tiktok",
         "facebook"
       ],
-      "tiktok": "pendiente_browser",
-      "facebook": "pendiente_browser",
+      "tiktok": "pendiente",
+      "facebook": "pendiente",
       "hashtags": [
         "aves",
         "migración",
@@ -207,7 +210,10 @@
         "#Shorts",
         "#DatosYOciosidades"
       ],
-      "nota": "override rotacion historia; único dato-día 31"
+      "nota": "override rotacion historia; único dato-día 31",
+      "youtube_id": "IBH8Q95BGVs",
+      "youtube_url": "https://www.youtube.com/shorts/IBH8Q95BGVs",
+      "publish_at": "2026-11-01T05:30:00Z"
     }
   ],
   "metricas_base": {
