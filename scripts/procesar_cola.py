@@ -47,13 +47,16 @@ if __name__ == "__main__":
         v = subprocess.run(["python3", f"{S}/validar_storyboard.py", sbp, "--check-doi"])
         if v.returncode: upd(l, pid, estado="invalido", motivo="validar_storyboard falló (ver salida)"); print(f"{pid}: storyboard externo inválido; queda en cola/ para corregir"); continue
         upd(l, pid, estado="validado", carpeta=os.path.relpath(dst, R))
-        if not a.dry_run:  # sale de entrada/ solo en corrida real
-            shutil.rmtree(src) if src else os.remove(f)
         cmd = ["python3", f"{S}/capsula_diaria.py", "--storyboard", sbp, "--origen", "externa", "--fecha", a.fecha, "--proveedor-img", a.proveedor_img]
         cmd += [x for x, on in (("--publicar", a.publicar), ("--programar", a.programar), ("--dry-run", a.dry_run)) if on]
         rc = subprocess.run(cmd).returncode
+        # La fuente solo se retira tras completar producción sin error. Si falla, queda recuperable en entrada/.
+        if rc == 0 and not a.dry_run:
+            shutil.rmtree(src) if src else os.remove(f)
         res = sorted(glob.glob(os.path.join(R, "salidas", f"{a.fecha}_*", "resumen.json")), key=os.path.getmtime)
         r = json.load(open(res[-1])) if res and rc == 0 else {}
         upd(l, pid, estado=("publicado_yt+pendiente_tiktok" if r.get("publicado") else "renderizado+pendiente_tiktok" if r.get("qa_ok") else "fallo"),
             rc=rc, paquete=os.path.relpath(r["paquete"], R) if r.get("paquete") else None, yt_id=r.get("yt_id"), qa_ok=r.get("qa_ok"))
+        if rc != 0:
+            print(f"ENTRADA CONSERVADA para reintento: {os.path.relpath(f, R)}")
         print("COLA:", pid, "rc", rc)
