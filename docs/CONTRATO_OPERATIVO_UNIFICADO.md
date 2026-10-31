@@ -73,3 +73,7 @@ Antes de declarar operativa la parrilla completa, Imaginantes/ChatGPT deben prep
 5. Evidencia de QA y publicación por cada slot.
 
 Hasta completar y probar esos cinco puntos, el estado es **objetivo de cinco / capacidad implementada de tres**. Esta etiqueta debe acompañar cualquier reporte de operación.
+
+## 2A. Descarga de carga de Grok Bot
+
+El protocolo operativo detallado está en `docs/PROTOCOLO_DESCARGA_CARGA_GROK.md` y complementa este contrato. La división obligatoria es: ChatGPT entrega investigación verificada, guion final, storyboard completo, prompts por escena y metadata; Imaginantes/Grok Bot se concentra en recepción, generación audiovisual, montaje, render, QA, correcciones de producción y publicación autorizada. Bot no repite research ni reescribe guiones por rutina. Las devoluciones deben señalar el campo o escena exactos; ChatGPT resuelve faltantes de investigación y entrega parches. Las correcciones también consumen tokens, por lo que se limita el cambio al fragmento afectado. No rehacer escenas aprobadas ni paquetes completos salvo defecto demostrado.
