@@ -1,0 +1,39 @@
+{
+ "project_id": "2026-10-30_arqueas-origen-eucariotas",
+ "musica": {
+  "cama": "pizzicato",
+  "origen": "síntesis propia (scripts/cama_sonora.py, numpy)",
+  "licencia": "obra propia de Datos y ociosidades",
+  "generada_por_ia": false
+ },
+ "sfx": {
+  "silencio": {
+   "origen": "síntesis propia (cama_sonora.py)",
+   "licencia": "obra propia"
+  }
+ },
+ "imagenes": {
+  "origen": "OpenAI ImageGen; generación manual fuera del pipeline oficial",
+  "estilo": "microscopio_psicodelico",
+  "realista": false
+ },
+ "voz": {
+  "motor": "Microsoft Edge TTS",
+  "voz": "es-MX-JorgeNeural",
+  "nota": "voz sintética; no imita a una persona real"
+ },
+ "capas_datos": {
+  "tipos": [
+   "mapa",
+   "grafico",
+   "dato"
+  ],
+  "mapa_base": "Natural Earth 110m (dominio público)",
+  "render": "matplotlib (propio)"
+ },
+ "fuentes_datos": [
+  "https://doi.org/10.1038/s41586-026-11170-7",
+  "https://www.jamstec.go.jp/e/about/press_release/20261029/",
+  "https://w3.jamstec.go.jp/e/about/access/yokosuka.html"
+ ]
+}
