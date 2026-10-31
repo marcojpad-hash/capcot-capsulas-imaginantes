@@ -328,3 +328,71 @@ La diferencia de límites impide que un único validador represente todo el cont
 - La auditoría de este addendum es estática; no equivale a ejecución local de validadores.
 
 **Resultado actualizado:** los paquetes del 3-nov tienen estructura razonable, aunque Maillard queda corto frente a la nueva meta de palabras. Los 13 paquetes del 4–7 nov están incompletos frente al contrato de mapa/dato y a la longitud editorial. La integración automática es el bloqueo operativo prioritario: el workflow falla repetidamente, su ruta manual no coincide con la estructura de carpetas y no deja recibos verificables. Recepción Grok no confirmada.
+
+
+---
+
+# ADDENDUM 2 — REVISIÓN DE IMAGINANTES Y ENTREGA DE MACHU
+
+**Corte:** 2026-10-31, rama `feature/capcot-video-discovery-continuity`  
+**HEAD previo de Imaginantes:** `4270ff3a7f493c4de58639970ac7c7da8ba37643`  
+**Commit de entrega Machu:** se registra en GitHub después de esta revisión.
+
+## 1. Actividad reciente de Imaginantes
+
+La rama avanzó un commit después del addendum anterior:
+- `4270ff3` — “v4 lote + sequías v4 + tiburón/maillard/4nov subidos; fix sfx libre; brief faltantes; línea editorial §8-9”.
+
+El árbol contiene salidas para los tres paquetes del 4-nov:
+- Hipo: YouTube ID `Rg-iTgMExWw`, privado, programado para 4-nov 07:00 CDMX.
+- Miel: YouTube ID `jpDyCX6zSgQ`, privado, programado para 4-nov 13:30 CDMX.
+- Bioluminiscencia: YouTube ID `4xylLT3vSIU`, privado, programado para 4-nov 17:00 CDMX.
+
+Los registros incluyen `youtube_thumbnail.estado=ok`. Esto acredita carga y programación privada en YouTube según `publicacion.json`; no acredita publicación pública ni publicación en TikTok/Facebook.
+
+## 2. Inconsistencia de estado / QA
+
+Para los tres paquetes anteriores:
+- `salidas/<project_id>/ESTADO_EJECUCION.md` conserva `Medios: NO_GENERADOS` y `Publicación: PENDIENTE_DECISION_GROK`.
+- `publicacion.json` contiene un ID de YouTube y estado `uploaded/private` con `publishAt` futuro.
+- No aparece `cola/estado/<project_id>.json`.
+- No aparece `qa.json` en las carpetas de salida del 4-nov.
+- El árbol versionado no contiene `capsula.mp4` para esos tres proyectos, aunque el horario semanal referencia rutas `capsula.mp4`.
+
+**Conclusión:** existe evidencia de carga y programación privada de YouTube, pero el estado Markdown no fue actualizado y no hay evidencia versionada suficiente para auditar QA oficial, archivo final o plataformas adicionales. Imaginantes debe reconciliar los estados y adjuntar evidencia QA sin inventar pasos retrospectivos.
+
+## 3. Machu Picchu vs Pisa — paquete textual entregado
+
+La parrilla mantenía el slot del **4-nov 19:00 CDMX** como `pendiente_ok_mj`, con la nota “requiere OK de Mj antes de producir”. La instrucción actual de Mj solicita expresamente generar Machu; se interpreta como autorización para entregar la preproducción textual. No se modifica la parrilla ni `data/*.json`.
+
+Se creó:
+- `cola/entrada/2026-11-04_machu-picchu-fallas-pisa.json`
+
+Contenido:
+- 8 escenas; 207 palabras; 89 segundos incluyendo cortinilla.
+- Estilo canónico `risografia`, ya existente en `scripts/estilos.json`; no se creó un estilo nuevo `chicha_neon`.
+- Mapa con localizadores aproximados de Pisa y Machu Picchu; explícitamente no representa trazas de fallas.
+- Capa de dato con las tres orientaciones principales reportadas por Menegat: 020°, 055° y 330°.
+- Cinco fuentes, incluyendo el resumen GSA de Menegat, comunicado GSA, Comune di Pisa, Institution of Civil Engineers e INAIGEM.
+- La narración atribuye a Menegat la interpretación de selección intencional y evita afirmar que los incas conocían la tectónica moderna.
+- `thumbnail_source=scene_001`; sin assets, sin render, sin publicación.
+
+Validación estática tras releer el archivo desde GitHub:
+- JSON parseable.
+- 8 escenas; 207 palabras; 89 s.
+- Arcos completos y en orden.
+- Voz `+7% / -2Hz / pad 0.3`.
+- Mapa con dos puntos y coordenadas dentro de rango.
+- Capa de dato con fuente.
+- Todos los `source_ids` resuelven.
+- Todos los prompts comienzan con el `prompt_base` canónico.
+- Estado de publicación `PENDIENTE_DECISION_GROK`.
+- Sin errores en las comprobaciones estáticas reproducidas del contrato del validador.
+
+La recepción, decisión, producción audiovisual, QA y programación de Machu quedan a cargo de Imaginantes. No existe todavía `cola/estado/2026-11-04_machu-picchu-fallas-pisa.json`; no se declara recibido.
+
+## 4. Próximas acciones asignadas
+
+1. **Imaginantes:** reconciliar estados de hipo, miel y bioluminiscencia; adjuntar QA y evidencia de medios/publicación; registrar los estados conforme a `docs/GROK_STATUS_CONTRACT.md`.
+2. **Imaginantes:** leer el nuevo JSON de Machu, registrar recepción y decisión; si lo selecciona, producir y ejecutar QA. No publicar sin autorización/QA conforme al contrato.
+3. **ChatGPT:** mantener el paquete Machu como preproducción textual; no crear estado de Grok, no generar medios, no programar ni publicar.
