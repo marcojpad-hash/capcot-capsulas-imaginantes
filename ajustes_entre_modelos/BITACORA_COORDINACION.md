@@ -22,3 +22,13 @@
 - **Commit:** `ea9ef69c6d68771220cb0a3802d21af5919290a0`.
 - **Regla:** cada instancia debe añadir comentarios cuando cambie coordinación, alcance, prioridades, pipeline o archivos compartidos. Los comentarios no sustituyen los contratos.
 - **Pendiente:** las instancias deben incorporar esta lectura a sus rutinas. El repositorio contiene la instrucción; su cumplimiento se verifica en cada intervención registrada.
+
+## 2026-10-31 — ChatGPT — Descarga de carga de Grok Bot
+
+- **Objetivo:** reducir tokens y retrabajo de Bot evitando que duplique investigación, fuentes y guion; concentrarlo en producción audiovisual.
+- **Hallazgo:** el reparto anterior asignaba a ChatGPT la preproducción, pero el handoff histórico de Grok todavía ordenaba a Bot investigar y redactar storyboard. Esa contradicción podía provocar doble trabajo.
+- **Decisión:** ChatGPT entrega paquete textual completo y validado; Bot verifica recepción/completitud y se concentra en generación de medios, montaje, render, QA, correcciones puntuales y publicación autorizada. Faltantes factuales regresan a ChatGPT como solicitudes específicas. Las correcciones consumen tokens, por lo que se prohíben reescrituras/regeneraciones integrales sin causa.
+- **Documento rector nuevo:** `docs/PROTOCOLO_DESCARGA_CARGA_GROK.md`.
+- **Archivos alineados:** contrato unificado, Plan Maestro, coordinación, README de ajustes, LEEME_MODELOS y handoff histórico de Grok.
+- **Commit inicial del protocolo:** `b0e895f6a36311e9c60c109f72d0c2304a82e67b`. Actualizaciones documentales posteriores: `e585c22`, `998900f`, `3a52296`, `157c41c`.
+- **Siguiente responsable:** Imaginantes/Grok Bot aplicar el flujo en los siguientes paquetes y registrar devoluciones, retrabajo y tiempos; ChatGPT entregar preproducción completa y corregir faltantes factuales.
