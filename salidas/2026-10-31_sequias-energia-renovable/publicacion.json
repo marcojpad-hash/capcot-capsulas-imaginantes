@@ -1,68 +1,85 @@
 {
- "metadatos": {
-  "title": "Cuando el viento y el Sol fallan juntos #Shorts",
-  "description": "La energía solar necesita Sol. La eólica necesita viento. Pero ¿qué pasa cuando ambos escasean al mismo tiempo?\n\nCuando el viento y el Sol fallan juntos #Shorts. Una cápsula de Datos y ociosidades: datos verificados contados como historia.\n\nFuentes:\n• Aminimehr, Hellinckx & Tabari (2026), Communications Earth & Environment https://doi.org/10.1038/s43247-026-04183-7\n\nImágenes generadas con IA · voz sintética · audio sintetizado.\nSuscríbete: @datosyociosidades\nTikTok: https://www.tiktok.com/@datosyociosidades\n\n#energia #sequia #ciencia #sabiasque #Shorts",
-  "tags": [
-   "energia",
-   "sequia",
-   "ciencia",
-   "sabiasque",
-   "Shorts"
-  ]
- },
- "resultado": {
-  "youtube": {
-   "kind": "youtube#video",
-   "etag": "qzfv6ktlGH7ItwXi3HMUywtxC78",
-   "id": "SQ7_g-vz8Ow",
-   "snippet": {
-    "publishedAt": "2026-10-31T20:57:51Z",
-    "channelId": "UCU2ZI-6pBJEr9aSFsF6bxLw",
+  "metadatos": {
     "title": "Cuando el viento y el Sol fallan juntos #Shorts",
     "description": "La energía solar necesita Sol. La eólica necesita viento. Pero ¿qué pasa cuando ambos escasean al mismo tiempo?\n\nCuando el viento y el Sol fallan juntos #Shorts. Una cápsula de Datos y ociosidades: datos verificados contados como historia.\n\nFuentes:\n• Aminimehr, Hellinckx & Tabari (2026), Communications Earth & Environment https://doi.org/10.1038/s43247-026-04183-7\n\nImágenes generadas con IA · voz sintética · audio sintetizado.\nSuscríbete: @datosyociosidades\nTikTok: https://www.tiktok.com/@datosyociosidades\n\n#energia #sequia #ciencia #sabiasque #Shorts",
-    "thumbnails": {
-     "default": {
-      "url": "https://i9.ytimg.com/vi/SQ7_g-vz8Ow/default.jpg?sqp=CKSrmdcG&rs=AOn4CLDbrdQDxVd0-yX_Rcs0A1bj_tA8VQ",
-      "width": 120,
-      "height": 90
-     },
-     "medium": {
-      "url": "https://i9.ytimg.com/vi/SQ7_g-vz8Ow/mqdefault.jpg?sqp=CKSrmdcG&rs=AOn4CLD63su2U4I6zDkAWC0iTVIg-aKePg",
-      "width": 320,
-      "height": 180
-     },
-     "high": {
-      "url": "https://i9.ytimg.com/vi/SQ7_g-vz8Ow/hqdefault.jpg?sqp=CKSrmdcG&rs=AOn4CLCONMMjDCseN1DCDNlc6Hlrfs1wYQ",
-      "width": 480,
-      "height": 360
-     }
-    },
-    "channelTitle": "Datos y ociosidades",
     "tags": [
-     "Shorts",
-     "ciencia",
-     "energia",
-     "sabiasque",
-     "sequia"
-    ],
-    "categoryId": "27",
-    "liveBroadcastContent": "none",
-    "defaultLanguage": "es",
-    "localized": {
-     "title": "Cuando el viento y el Sol fallan juntos #Shorts",
-     "description": "La energía solar necesita Sol. La eólica necesita viento. Pero ¿qué pasa cuando ambos escasean al mismo tiempo?\n\nCuando el viento y el Sol fallan juntos #Shorts. Una cápsula de Datos y ociosidades: datos verificados contados como historia.\n\nFuentes:\n• Aminimehr, Hellinckx & Tabari (2026), Communications Earth & Environment https://doi.org/10.1038/s43247-026-04183-7\n\nImágenes generadas con IA · voz sintética · audio sintetizado.\nSuscríbete: @datosyociosidades\nTikTok: https://www.tiktok.com/@datosyociosidades\n\n#energia #sequia #ciencia #sabiasque #Shorts"
+      "energia",
+      "sequia",
+      "ciencia",
+      "sabiasque",
+      "Shorts"
+    ]
+  },
+  "resultado": {
+    "youtube": {
+      "kind": "youtube#video",
+      "etag": "qzfv6ktlGH7ItwXi3HMUywtxC78",
+      "id": "SQ7_g-vz8Ow",
+      "snippet": {
+        "publishedAt": "2026-10-31T20:57:51Z",
+        "channelId": "UCU2ZI-6pBJEr9aSFsF6bxLw",
+        "title": "Cuando el viento y el Sol fallan juntos #Shorts",
+        "description": "La energía solar necesita Sol. La eólica necesita viento. Pero ¿qué pasa cuando ambos escasean al mismo tiempo?\n\nCuando el viento y el Sol fallan juntos #Shorts. Una cápsula de Datos y ociosidades: datos verificados contados como historia.\n\nFuentes:\n• Aminimehr, Hellinckx & Tabari (2026), Communications Earth & Environment https://doi.org/10.1038/s43247-026-04183-7\n\nImágenes generadas con IA · voz sintética · audio sintetizado.\nSuscríbete: @datosyociosidades\nTikTok: https://www.tiktok.com/@datosyociosidades\n\n#energia #sequia #ciencia #sabiasque #Shorts",
+        "thumbnails": {
+          "default": {
+            "url": "https://i9.ytimg.com/vi/SQ7_g-vz8Ow/default.jpg?sqp=CKSrmdcG&rs=AOn4CLDbrdQDxVd0-yX_Rcs0A1bj_tA8VQ",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i9.ytimg.com/vi/SQ7_g-vz8Ow/mqdefault.jpg?sqp=CKSrmdcG&rs=AOn4CLD63su2U4I6zDkAWC0iTVIg-aKePg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i9.ytimg.com/vi/SQ7_g-vz8Ow/hqdefault.jpg?sqp=CKSrmdcG&rs=AOn4CLCONMMjDCseN1DCDNlc6Hlrfs1wYQ",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Datos y ociosidades",
+        "tags": [
+          "Shorts",
+          "ciencia",
+          "energia",
+          "sabiasque",
+          "sequia"
+        ],
+        "categoryId": "27",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "es",
+        "localized": {
+          "title": "Cuando el viento y el Sol fallan juntos #Shorts",
+          "description": "La energía solar necesita Sol. La eólica necesita viento. Pero ¿qué pasa cuando ambos escasean al mismo tiempo?\n\nCuando el viento y el Sol fallan juntos #Shorts. Una cápsula de Datos y ociosidades: datos verificados contados como historia.\n\nFuentes:\n• Aminimehr, Hellinckx & Tabari (2026), Communications Earth & Environment https://doi.org/10.1038/s43247-026-04183-7\n\nImágenes generadas con IA · voz sintética · audio sintetizado.\nSuscríbete: @datosyociosidades\nTikTok: https://www.tiktok.com/@datosyociosidades\n\n#energia #sequia #ciencia #sabiasque #Shorts"
+        }
+      },
+      "status": {
+        "uploadStatus": "uploaded",
+        "privacyStatus": "private",
+        "publishAt": "2026-11-03T01:00:00Z",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "selfDeclaredMadeForKids": false,
+        "containsSyntheticMedia": true
+      }
+    },
+    "tiktok": {
+      "estado": "programado",
+      "cuenta": "@datosyociosidades",
+      "publish_at_cdmx": "2026-11-02T19:00:00-06:00",
+      "ui_shown": "Nov 2, 8:00 PM (GMT-5)",
+      "ai_label": true,
+      "caption": "Cuando el viento y el Sol fallan juntos.\n\nFuentes en YouTube @datosyociosidades\n\n#energia #ciencia #sabiasque",
+      "actualizado": "2026-10-31T15:11:26-06:00"
+    },
+    "facebook": {
+      "estado": "programado",
+      "pagina": "Datos y ociosidades",
+      "publish_at_cdmx": "2026-11-02T19:00:00-06:00",
+      "ui_shown": "2 Nov 2026 20:00 America/New_York",
+      "ai_label": false,
+      "actualizado": "2026-10-31T15:11:26-06:00"
     }
-   },
-   "status": {
-    "uploadStatus": "uploaded",
-    "privacyStatus": "private",
-    "publishAt": "2026-11-03T01:00:00Z",
-    "license": "youtube",
-    "embeddable": true,
-    "publicStatsViewable": true,
-    "selfDeclaredMadeForKids": false,
-    "containsSyntheticMedia": true
-   }
   }
- }
 }

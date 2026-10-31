@@ -1,68 +1,85 @@
 {
- "metadatos": {
-  "title": "La frontera invisible de Júpiter #Shorts",
-  "description": "Juno cruzó dos veces una frontera invisible frente a Júpiter.\n\nLa frontera invisible de Júpiter #Shorts. Una cápsula de Datos y ociosidades: datos verificados contados como historia.\n\nFuentes:\n• Joseph et al. (2026). Plasma wave observations from Juno spacecraft at the Jovian bow shock. Nature Communications 17, 9263. https://doi.org/10.1038/s41467-026-76223-x\n• University of Iowa (2026-10-28). NASA discovers Jupiter’s invisible shield is more complex than Earth’s. ScienceDaily. https://www.sciencedaily.com/releases/2026/10/261028232715.htm\n• Lewis, R. C. (2026-09-21). Jupiter uses surprisingly complex system to fend off particles from sun. Iowa Now, University of Iowa. https://now.uiowa.edu/news/2026/09/jupiter-uses-surprisingly-complex-system-fend-particles-sun-0\n\nImágenes generadas con IA · voz sintética · audio sintetizado.\nSuscríbete: @datosyociosidades\nTikTok: https://www.tiktok.com/@datosyociosidades\n\n#jupiter #espacio #ciencia #sabiasque #Shorts",
-  "tags": [
-   "jupiter",
-   "espacio",
-   "ciencia",
-   "sabiasque",
-   "Shorts"
-  ]
- },
- "resultado": {
-  "youtube": {
-   "kind": "youtube#video",
-   "etag": "GREbCxgjLi7z-M0AlullRGd1-yw",
-   "id": "73cZz8Pi9TE",
-   "snippet": {
-    "publishedAt": "2026-10-31T21:00:56Z",
-    "channelId": "UCU2ZI-6pBJEr9aSFsF6bxLw",
+  "metadatos": {
     "title": "La frontera invisible de Júpiter #Shorts",
     "description": "Juno cruzó dos veces una frontera invisible frente a Júpiter.\n\nLa frontera invisible de Júpiter #Shorts. Una cápsula de Datos y ociosidades: datos verificados contados como historia.\n\nFuentes:\n• Joseph et al. (2026). Plasma wave observations from Juno spacecraft at the Jovian bow shock. Nature Communications 17, 9263. https://doi.org/10.1038/s41467-026-76223-x\n• University of Iowa (2026-10-28). NASA discovers Jupiter’s invisible shield is more complex than Earth’s. ScienceDaily. https://www.sciencedaily.com/releases/2026/10/261028232715.htm\n• Lewis, R. C. (2026-09-21). Jupiter uses surprisingly complex system to fend off particles from sun. Iowa Now, University of Iowa. https://now.uiowa.edu/news/2026/09/jupiter-uses-surprisingly-complex-system-fend-particles-sun-0\n\nImágenes generadas con IA · voz sintética · audio sintetizado.\nSuscríbete: @datosyociosidades\nTikTok: https://www.tiktok.com/@datosyociosidades\n\n#jupiter #espacio #ciencia #sabiasque #Shorts",
-    "thumbnails": {
-     "default": {
-      "url": "https://i9.ytimg.com/vi/73cZz8Pi9TE/default.jpg?sqp=CNCtmdcG&rs=AOn4CLB_cEZxN653kEeDMz12b8poRtOYyA",
-      "width": 120,
-      "height": 90
-     },
-     "medium": {
-      "url": "https://i9.ytimg.com/vi/73cZz8Pi9TE/mqdefault.jpg?sqp=CNCtmdcG&rs=AOn4CLAtGiiwe1uOPkWi8k4zS7yKV50yZQ",
-      "width": 320,
-      "height": 180
-     },
-     "high": {
-      "url": "https://i9.ytimg.com/vi/73cZz8Pi9TE/hqdefault.jpg?sqp=CNCtmdcG&rs=AOn4CLC7QCexA5Rlm4Etg-Zx7qSEm8jh0A",
-      "width": 480,
-      "height": 360
-     }
-    },
-    "channelTitle": "Datos y ociosidades",
     "tags": [
-     "Shorts",
-     "ciencia",
-     "espacio",
-     "jupiter",
-     "sabiasque"
-    ],
-    "categoryId": "27",
-    "liveBroadcastContent": "none",
-    "defaultLanguage": "es",
-    "localized": {
-     "title": "La frontera invisible de Júpiter #Shorts",
-     "description": "Juno cruzó dos veces una frontera invisible frente a Júpiter.\n\nLa frontera invisible de Júpiter #Shorts. Una cápsula de Datos y ociosidades: datos verificados contados como historia.\n\nFuentes:\n• Joseph et al. (2026). Plasma wave observations from Juno spacecraft at the Jovian bow shock. Nature Communications 17, 9263. https://doi.org/10.1038/s41467-026-76223-x\n• University of Iowa (2026-10-28). NASA discovers Jupiter’s invisible shield is more complex than Earth’s. ScienceDaily. https://www.sciencedaily.com/releases/2026/10/261028232715.htm\n• Lewis, R. C. (2026-09-21). Jupiter uses surprisingly complex system to fend off particles from sun. Iowa Now, University of Iowa. https://now.uiowa.edu/news/2026/09/jupiter-uses-surprisingly-complex-system-fend-particles-sun-0\n\nImágenes generadas con IA · voz sintética · audio sintetizado.\nSuscríbete: @datosyociosidades\nTikTok: https://www.tiktok.com/@datosyociosidades\n\n#jupiter #espacio #ciencia #sabiasque #Shorts"
+      "jupiter",
+      "espacio",
+      "ciencia",
+      "sabiasque",
+      "Shorts"
+    ]
+  },
+  "resultado": {
+    "youtube": {
+      "kind": "youtube#video",
+      "etag": "GREbCxgjLi7z-M0AlullRGd1-yw",
+      "id": "73cZz8Pi9TE",
+      "snippet": {
+        "publishedAt": "2026-10-31T21:00:56Z",
+        "channelId": "UCU2ZI-6pBJEr9aSFsF6bxLw",
+        "title": "La frontera invisible de Júpiter #Shorts",
+        "description": "Juno cruzó dos veces una frontera invisible frente a Júpiter.\n\nLa frontera invisible de Júpiter #Shorts. Una cápsula de Datos y ociosidades: datos verificados contados como historia.\n\nFuentes:\n• Joseph et al. (2026). Plasma wave observations from Juno spacecraft at the Jovian bow shock. Nature Communications 17, 9263. https://doi.org/10.1038/s41467-026-76223-x\n• University of Iowa (2026-10-28). NASA discovers Jupiter’s invisible shield is more complex than Earth’s. ScienceDaily. https://www.sciencedaily.com/releases/2026/10/261028232715.htm\n• Lewis, R. C. (2026-09-21). Jupiter uses surprisingly complex system to fend off particles from sun. Iowa Now, University of Iowa. https://now.uiowa.edu/news/2026/09/jupiter-uses-surprisingly-complex-system-fend-particles-sun-0\n\nImágenes generadas con IA · voz sintética · audio sintetizado.\nSuscríbete: @datosyociosidades\nTikTok: https://www.tiktok.com/@datosyociosidades\n\n#jupiter #espacio #ciencia #sabiasque #Shorts",
+        "thumbnails": {
+          "default": {
+            "url": "https://i9.ytimg.com/vi/73cZz8Pi9TE/default.jpg?sqp=CNCtmdcG&rs=AOn4CLB_cEZxN653kEeDMz12b8poRtOYyA",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i9.ytimg.com/vi/73cZz8Pi9TE/mqdefault.jpg?sqp=CNCtmdcG&rs=AOn4CLAtGiiwe1uOPkWi8k4zS7yKV50yZQ",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i9.ytimg.com/vi/73cZz8Pi9TE/hqdefault.jpg?sqp=CNCtmdcG&rs=AOn4CLC7QCexA5Rlm4Etg-Zx7qSEm8jh0A",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Datos y ociosidades",
+        "tags": [
+          "Shorts",
+          "ciencia",
+          "espacio",
+          "jupiter",
+          "sabiasque"
+        ],
+        "categoryId": "27",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "es",
+        "localized": {
+          "title": "La frontera invisible de Júpiter #Shorts",
+          "description": "Juno cruzó dos veces una frontera invisible frente a Júpiter.\n\nLa frontera invisible de Júpiter #Shorts. Una cápsula de Datos y ociosidades: datos verificados contados como historia.\n\nFuentes:\n• Joseph et al. (2026). Plasma wave observations from Juno spacecraft at the Jovian bow shock. Nature Communications 17, 9263. https://doi.org/10.1038/s41467-026-76223-x\n• University of Iowa (2026-10-28). NASA discovers Jupiter’s invisible shield is more complex than Earth’s. ScienceDaily. https://www.sciencedaily.com/releases/2026/10/261028232715.htm\n• Lewis, R. C. (2026-09-21). Jupiter uses surprisingly complex system to fend off particles from sun. Iowa Now, University of Iowa. https://now.uiowa.edu/news/2026/09/jupiter-uses-surprisingly-complex-system-fend-particles-sun-0\n\nImágenes generadas con IA · voz sintética · audio sintetizado.\nSuscríbete: @datosyociosidades\nTikTok: https://www.tiktok.com/@datosyociosidades\n\n#jupiter #espacio #ciencia #sabiasque #Shorts"
+        }
+      },
+      "status": {
+        "uploadStatus": "uploaded",
+        "privacyStatus": "private",
+        "publishAt": "2026-11-03T23:00:00Z",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "selfDeclaredMadeForKids": false,
+        "containsSyntheticMedia": true
+      }
+    },
+    "tiktok": {
+      "estado": "programado",
+      "cuenta": "@datosyociosidades",
+      "publish_at_cdmx": "2026-11-03T17:00:00-06:00",
+      "ui_shown": "Nov 3, 6:00 PM (GMT-5)",
+      "ai_label": true,
+      "caption": "La frontera invisible.\n\nFuentes en YouTube @datosyociosidades\n\n#jupiter #espacio #ciencia #sabiasque",
+      "actualizado": "2026-10-31T15:11:26-06:00"
+    },
+    "facebook": {
+      "estado": "programado",
+      "pagina": "Datos y ociosidades",
+      "publish_at_cdmx": "2026-11-03T17:00:00-06:00",
+      "ui_shown": "3 Nov 2026 18:00 America/New_York",
+      "ai_label": false,
+      "actualizado": "2026-10-31T15:11:26-06:00"
     }
-   },
-   "status": {
-    "uploadStatus": "uploaded",
-    "privacyStatus": "private",
-    "publishAt": "2026-11-03T23:00:00Z",
-    "license": "youtube",
-    "embeddable": true,
-    "publicStatsViewable": true,
-    "selfDeclaredMadeForKids": false,
-    "containsSyntheticMedia": true
-   }
   }
- }
 }
