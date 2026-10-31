@@ -185,8 +185,15 @@
       "hora": "19:00",
       "cesta": "intermedio_2",
       "project_id": "2026-10-31_smartpe-edicion-plantas",
-      "estado": "listo_cola_json",
-      "notas": "Sustituye reutilizar arqueas (ya programado 1-nov 19:00). SmartPE cola JSON."
+      "estado": "programado_yt",
+      "notas": "Sustituye reutilizar arqueas (ya programado 1-nov 19:00). SmartPE cola JSON.",
+      "yt_id": "MXsNOywNzcg",
+      "publishAt": "2026-11-04T01:00:00Z",
+      "plataformas": {
+        "yt": "programado",
+        "tt": "pending_tiktok",
+        "fb": "pending_fb"
+      }
     },
     {
       "fecha": "2026-11-03",
