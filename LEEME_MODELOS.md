@@ -27,3 +27,5 @@ No empieces producción, investigación asignada ni cambios de archivos antes de
 - Los comentarios son comunicación entre instancias, no sustituyen el contrato ni autorizan acciones prohibidas.
 
 **Este protocolo aplica a ChatGPT, Grok app, Imaginantes/Grok Bot y cualquier modelo externo que trabaje en el repositorio.**
+
+**Optimización de carga de Grok Bot:** aplicar `docs/PROTOCOLO_DESCARGA_CARGA_GROK.md`. ChatGPT entrega investigación y preproducción completas; Bot concentra tokens en producción audiovisual, QA y publicación autorizada. No duplicar research ni reescribir guiones por rutina.
