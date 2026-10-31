@@ -37,7 +37,7 @@ No editar ni borrar entradas previas. Si hay desacuerdo, cada instancia registra
 La bitácora comunica; no legisla. En caso de contradicción manda `../docs/CONTRATO_OPERATIVO_UNIFICADO.md`, después el Plan Maestro y los contratos técnicos específicos. La parrilla semanal no cambia límites del código. No tocar `main`, Motor U6 ni `data/*.json` desde ChatGPT; no publicar desde ChatGPT.
 
 ## Estado de capacidad conocido
-La parrilla propone cinco slots diarios; el código revisado conserva un límite de tres cápsulas/día (dos propias + una externa) y el procesador admite una entrada externa por fecha. No reportar cinco publicaciones como capacidad habilitada hasta que código, validadores y pruebas lo demuestren.
+El contrato y el código de la rama feature establecen hasta cinco cápsulas por fecha (máximo dos propias y cinco externas, con tope global de cinco). `procesar_cola.py` recorre las entradas de la fecha hasta llenar el cupo. La programación dispone de cinco ventanas horarias; esto acredita capacidad de asignación, no cinco publicaciones efectivas. Las publicaciones solo se cuentan con QA y evidencia de plataforma. La suite de regresión de cupo/procesador debe pasar antes de declarar el flujo plenamente validado.
 
 ## Prioridad operativa: descargar trabajo de Grok Bot
 El documento `../docs/PROTOCOLO_DESCARGA_CARGA_GROK.md` define el reparto de preproducción y producción. ChatGPT entrega investigación, fuentes, guion, storyboard, prompts y metadata listos; Bot se concentra en generación audiovisual, montaje, render, QA y publicación autorizada. Bot no repite investigación ni reescribe por rutina. Las correcciones son puntuales y también consumen tokens; los faltantes de evidencia regresan a ChatGPT.
