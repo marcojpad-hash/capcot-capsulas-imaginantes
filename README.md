@@ -29,3 +29,11 @@ Los scripts de validación y montaje existen. El plan maestro documenta un proto
 - [Continuidad audiovisual](docs/CONTINUIDAD_AUDIOVISUAL.md): biblia visual, tipográfica y de voz, con reglas de consistencia de inicio a fin.
 - Validador: `python scripts/validar_continuidad_audiovisual.py <storyboard.json>`.
 - Workflow semanal: `.github/workflows/capcot-descubrimiento.yml` (requiere integrar esta rama a `main` para activar el calendario).
+
+
+## APIs de edición: Krea y Runway
+- [Investigación y decisión de integración](docs/API_EDITORES_KREA_RUNWAY.md).
+- Cliente API opcional: `scripts/media_api_clients.py` (Krea 3 para edición de imagen, Seedance 2.5 para clips; Runway Aleph 2.0 para edición de video).
+- Credenciales solo como variables de entorno/Repository Secrets: `KREA_API_KEY` y `RUNWAYML_API_SECRET`. No se guardan en Git.
+- Las llamadas de generación son facturables y no se ejecutan en CI.
+- Migración y auditoría de continuidad: `scripts/migrar_storyboard_continuidad.py`, `scripts/validar_continuidad_audiovisual.py`, `scripts/auditar_assets_storyboard.py`.
