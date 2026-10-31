@@ -1,41 +1,39 @@
-# Flujo externo — cápsula de actualidad científica de ChatGPT (3.ª del día)
+# Flujo externo CAPCOT — ChatGPT → GitHub → Grok
 
-**Reparto (2026-10-24, Mj):** ChatGPT **propone y produce** la cápsula de actualidad científica del día y la deja en cola; **nunca publica** (ni YouTube ni TikTok). Grok Bot **revisa, hace QA y publica**.
+## Roles
+- ChatGPT: investigación, verificación, brief y storyboard textual.
+- Grok: selección editorial final, producción audiovisual, QA oficial y publicación.
+- GitHub: contrato de handoff y registro verificable.
 
-> **Antes de producir, lee [docs/GUIA_MODELO_EXTERNO.md](GUIA_MODELO_EXTERNO.md)**: qué leer, el estilo por tema, la voz obligatoria (JorgeNeural +7 %; si no la tienes, entrega sin montar), el formato del paquete en `cola/entrada/<project_id>/`, el checklist de autocrítica y el anti-ejemplo Ideonella.
+No suponer que Grok consulta la cola en segundo plano. La recepción solo se confirma con lectura/estado registrado.
 
-## 0. Cómo elige ChatGPT el tema
-- Noticia científica o de investigación de los **últimos ~7 días** (estudio publicado, descubrimiento, misión espacial, salud, clima), buscada en fuentes reales: Nature/Science news, EurekAlert, ScienceDaily, Phys.org, NASA/ESA/JAXA, SINC, Agencia Informativa Conacyt, UNAM Global. Puede partir de `python3 scripts/tendencias.py` (feeds de ciencia primero).
-- Abre el **estudio original** (DOI) o comunicado oficial y solo afirma lo que este respalda. `trend_source.tipo = "noticia_cientifica"` con `url`, `estudio_doi` y `fecha_publicacion`.
-- Sin deportes, crimen ni tragedias; tema distinto a los de `data/temas_del_dia.json`.
+## Entrada
+ChatGPT trabaja exclusivamente en \`feature/capcot-video-discovery-continuity\` y crea:
+- \`docs/briefs/YYYY-MM-DD_RADAR_CAPCOT.md\`
+- \`cola/entrada/YYYY-MM-DD_slug.json\`
 
-Límite: **3 cápsulas por día = 2 propias (capsula_diaria) + 1 externa (cola)**, cada una en una ventana distinta (9–11, 13–15, 18–21 h America/Mexico_City). Lo exige `rotacion.exigir_cupo(fecha, origen)`.
+El storyboard incorpora fuentes, identificadores por escena, mapa, dato/gráfico, biblia visual/tipográfica, voz prevista, ambiente y SFX. No genera medios ni directorios de frames; no altera \`data/*.json\`.
 
-## 1. Qué entrega ChatGPT (paquete en cola, sin publicar)
-Siguiendo **docs/RECETA_CAPSULA.md** (JSON `storyboard_vertical`, §3), deja **una** de estas dos formas en `cola/entrada/`:
-- `cola/entrada/<project_id>.json`: solo el storyboard. Los frames se generan con `--proveedor-img`.
-- `cola/entrada/<project_id>/storyboard.json` + `frames/escena_XX.png`: storyboard con imágenes propias.
-- Opcional: `cola/entrada/<project_id>/capsula.mp4` ya montado + `fuentes.md`. Grok Bot igual lo revisa y, si no cumple la receta, lo vuelve a montar desde el storyboard.
+## Recepción y producción de Grok
+1. Lee brief y JSON.
+2. Verifica fuentes, DOI, claims, coordenadas y rotación.
+3. Decide seleccionar, devolver o rechazar.
+4. Si selecciona, genera assets y asigna rutas en la etapa de producción.
+5. Ejecuta render y QA oficial.
+6. Decide y ejecuta publicación conforme a permisos.
+7. Registra estados y evidencia.
 
-Requisitos: `project_id` único, `trend_source.termino` (tema), `estructura` (mito_vs_dato | pregunta | historia | comparacion | sabias_que), escenas con `capa` (mapa y dato/gráfico), `sources` verificables (DOI/URL), 60–95 s (límite que impone scripts/validar_storyboard.py). Opcional: `resumen` (va al caption de TikTok).
+El validador acepta storyboards textuales sin rutas de assets. El pipeline de producción asigna rutas después. \`procesar_cola.py\` solo selecciona entradas cuya fecha coincide con \`--fecha\`; no consume automáticamente la cola histórica más antigua.
 
-**Antes de escribir**, el modelo (o quien lo opere) consulta `data/temas_del_dia.json`: el tema no puede coincidir con otro del día. Tampoco debe repetir la estructura, el estilo ni la música de las otras cápsulas del día (ver data/publicaciones.json y data/rotacion.json).
+## Estados
+- \`PROPUESTA_EN_COLA\`
+- \`RECIBIDO_POR_GROK\`
+- \`SELECCIONADO\` / \`DEVUELTO\` / \`RECHAZADO\`
+- \`EN_PRODUCCION\`
+- \`QA_APROBADO\` / \`QA_RECHAZADO\`
+- \`PUBLICADO\`
 
-## 2. Revisión y publicación (solo Grok Bot; mismo pipeline y misma cola)
-Grok Bot verifica la noticia y el DOI antes de procesar; si la fuente no respalda el guion, marca `rechazado` con motivo en `data/cola.json`.
-```
-cd /workspace/capcot && python3 scripts/procesar_cola.py --publicar --programar   # --dry-run para probar
-```
-1. Toma la primera entrada y la registra en `data/cola.json` (estado `recibido`).
-2. Si el tema ya aparece en `data/temas_del_dia.json`: estado `rechazado`.
-3. Copia la entrada a `cola/<fecha>_<id>/` y corre `validar_storyboard.py --check-doi`. Si falla: estado `invalido`.
-4. Llama `capsula_diaria.py --storyboard ... --origen externa`. Esto renderiza, pasa QA (duración, estructura, capas, licencias, metadata YouTube) y genera metadata.json y tiktok.json. Si QA pasa, publica en YouTube (programado) y registra en data/publicaciones.json, data/rotacion.json y data/temas_del_dia.json.
-5. Estado final en `data/cola.json`: `publicado_yt+pendiente_tiktok`, `renderizado+pendiente_tiktok` o `fallo`.
+Un estado no implica el siguiente. Un storyboard no prueba recepción; un paquete de medios no prueba QA; QA no prueba publicación.
 
-Si QA falla, no se publica; el detalle queda en `resumen.json` → `fallas`.
-
-## 3. TikTok
-Cada paquete trae `tiktok.json`: `caption`, `mp4`, `estado: pendiente_tiktok` y una hora sugerida. El agente principal publica por navegador con un agente de escritorio y luego marca `publicado_tiktok` y la `url`.
-
-## 4. Git
-`cola/**` con medios queda fuera de git (*.mp4, *.png, *.jpg). Solo se versiona data/cola.json y data/temas_del_dia.json.
+## Límites
+ChatGPT no usa \`--publicar\`, no programa, no modifica \`main\`, no hace merge, no modifica \`data/*.json\`, no toca Motor U6 ni motores canónicos, no consume créditos y no declara QA oficial. La continuidad audiovisual aplica a la etapa de Grok, no autoriza a ChatGPT a generar medios.
