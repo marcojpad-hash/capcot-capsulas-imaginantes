@@ -164,6 +164,8 @@ El Plan Maestro vigente (2026-10-31) prevalece y declara obsoletas las instrucci
 
 No se modificaron esos documentos porque archivarlos o cambiar su autoridad es una decisión de mantenimiento del repositorio, no una corrección mecánica del candidato. `docs/obsoleto/2026-10-31/` sí contiene las versiones antiguas del Plan, Guía, Receta y Flujo Externo.
 
+3. `scripts/rotacion.py` tenía una contradicción dentro del propio archivo: el docstring decía máximo 2 cápsulas totales, mientras `MAX_POR_DIA=3` y `MAX_ORIGEN={propia: 2, externa: 1}` implementan 3 (2 propias + 1 externa). Se corrigió únicamente el docstring para que describa el límite ya implementado; no se alteraron constantes ni lógica.
+
 ## 8. Runtime, validadores y APIs
 
 - `/workspace/capcot`: ausente.
