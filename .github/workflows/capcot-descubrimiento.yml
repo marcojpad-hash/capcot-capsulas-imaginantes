@@ -31,10 +31,20 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Discover public video-generation projects
+      - name: Discover relevant video-generation projects
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python scripts/buscar_generadores_video.py
+
+      - name: Report filtered catalog size
+        run: |
+          python - <<'PY'
+          import json
+          with open('investigacion/generadores_video/catalogo_actual.json', encoding='utf-8') as f:
+              data = json.load(f)
+          print('Relevant candidates found:', data.get('candidate_count'))
+          print('Candidates included:', data.get('returned_count'))
+          PY
 
       - name: Prepare discovery catalog artifact
         run: |
