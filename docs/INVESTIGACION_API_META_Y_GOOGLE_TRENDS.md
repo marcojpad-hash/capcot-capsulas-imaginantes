@@ -141,3 +141,31 @@ No asumir que ChatGPT puede invocar directamente las credenciales o herramientas
 - Page Insights: https://developers.facebook.com/docs/platform/insights/
 
 Nota: las referencias de Meta deben comprobarse contra la versión Graph API configurada al implementar; la lista de métricas y permisos puede cambiar entre versiones.
+
+
+## 8. Seguimiento incremental de fuentes técnicas
+
+Consulta de referencia de esta ejecución: **2026-10-30 (CDMX)**. Esta sección añade campos y límites operativos que no estaban desglosados en la nota base; no implica que las capacidades hayan aparecido hoy.
+
+### 8.1 Instagram Platform
+
+- **Autodeclaración de IA:** la nota de Meta del 22-jun-2026 incorpora el parámetro `is_ai_generated` al crear medios y el campo equivalente en IG Media. La nota lo declara disponible para Instagram API con Facebook Login e Instagram Login. Es una declaración del publicador, no una clasificación automática. Para CAPCOT, conservarlo como metadata de publicación y coordinarlo con Grok.
+- **Clicks de Stories:** `link_clicks` cuenta taps en enlaces de Stories. La nota indica que requiere Instagram API con Facebook Login; no es una métrica de Reels.
+- **Campo de medios opcional:** desde el 30-jul-2026, `media_url` puede omitirse en medios con audio protegido o Reels con descargas desactivadas, aunque el endpoint responda 200. Mantener `permalink` y `thumbnail_url` como referencias estables; no tratar `media_url` como campo obligatorio para QA o ingestión.
+- Las notas del 20 y 28-oct-2026 describen cambios de comentarios ordenados, captions de Stories y handoffs de mensajería/webhooks. No cambian la selección de métricas orgánicas de Reels del MVP.
+
+Fuente de seguimiento: https://releasebot.io/updates/meta/instagram-platform (notas enlazadas al changelog oficial de Meta). Referencia oficial: https://developers.facebook.com/docs/instagram-platform/changelog/ . La página oficial respondió HTTP 429 durante esta consulta; validar contra ella antes de implementar.
+
+### 8.2 Facebook Pages / Page Insights
+
+La retirada de métricas legacy de impresiones y alcance único es una restricción operativa para el adaptador de Facebook: los integradores que reproducen el anuncio de Meta registran el corte del **15-jun-2026** para métricas como `page_impressions_unique` y `post_impressions_unique`. Los reemplazos de vistas únicas citados son `page_total_media_view_unique` y `post_total_media_view_unique`, sujetos a las dimensiones y al endpoint disponibles. Varias desagregaciones de alcance paid/viral/non-viral no tienen reemplazo equivalente.
+
+**Contrato de implementación:** no mezclar reach histórico con media views como si fueran la misma medida; preservar una ruptura de serie en 2026-06-15; almacenar `null` para campos retirados; probar el nombre exacto y la disponibilidad de cada métrica en la Page autorizada antes de cerrar el adaptador. No fijar nombres a partir de documentación de integradores si el changelog oficial no puede confirmarse.
+
+Fuentes de contraste: https://docs.supermetrics.com/docs/facebook-insights-field-changes-june-30-2026-1 ; https://developers.facebook.com/docs/graph-api/changelog/version25.0/ ; https://developers.facebook.com/docs/platform/insights/reference/page-insights/ . La referencia oficial de Meta devolvió HTTP 429 en esta consulta.
+
+### 8.3 Google Trends
+
+No se observó una nueva apertura general de la API ni una modificación de la especificación publicada. La documentación oficial mantiene la alfa de acceso limitado, ventana móvil de cinco años, agregaciones diaria/semanal/mensual/anual, regiones/subregiones y escalado consistente. Se conserva el RSS público MX como señal diaria; no sustituirlo por endpoints internos ni diseñar producción suponiendo acceso a la alfa.
+
+Fuente oficial: https://developers.google.com/search/apis/trends .
