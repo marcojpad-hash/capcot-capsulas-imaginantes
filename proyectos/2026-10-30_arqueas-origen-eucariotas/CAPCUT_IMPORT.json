@@ -1,0 +1,248 @@
+{
+  "format": "CAPCOT_EDIT_SPEC_NOT_NATIVE_CAPCUT",
+  "project_id": "2026-10-30_arqueas-origen-eucariotas",
+  "title": "Dos arqueas y el origen de la célula compleja",
+  "aspect_ratio": "9:16",
+  "resolution": "1080x1920",
+  "fps": 30,
+  "target_duration_seconds": 86,
+  "global_edit": {
+    "hard_cuts": true,
+    "shot_length_seconds": 2.5,
+    "subtitle_max_words": 3,
+    "opening_title": "Antes del núcleo",
+    "opening_title_from_frame_0": true
+  },
+  "scenes": [
+    {
+      "order": 1,
+      "asset": "frames/scene_001.jpg",
+      "duration_seconds": 9,
+      "narration": "¿Qué había antes de una célula como la tuya? Dos microbios. Su cultivo ofrece una pista sobre el origen de la vida compleja.",
+      "caption_blocks": [
+        "¿Qué había antes",
+        "de una célula",
+        "como la tuya?",
+        "Dos microbios. Su",
+        "cultivo ofrece una",
+        "pista sobre el",
+        "origen de la",
+        "vida compleja."
+      ],
+      "on_screen_text": "Antes del núcleo",
+      "motion": "kenburns_auto",
+      "ambiente": "silencio",
+      "sfx": [],
+      "layer": null
+    },
+    {
+      "order": 2,
+      "asset": "frames/scene_002.jpg",
+      "duration_seconds": 10,
+      "narration": "Son Heimdallarchaeia: un linaje de arqueas considerado el pariente conocido más cercano de los eucariotas, el grupo de animales, plantas y hongos.",
+      "caption_blocks": [
+        "Son Heimdallarchaeia: un",
+        "linaje de arqueas",
+        "considerado el pariente",
+        "conocido más cercano",
+        "de los eucariotas,",
+        "el grupo de",
+        "animales, plantas y",
+        "hongos."
+      ],
+      "on_screen_text": "El pariente más cercano",
+      "motion": "kenburns_auto",
+      "ambiente": "silencio",
+      "sfx": [],
+      "layer": {
+        "tipo": "mapa",
+        "region": [
+          128,
+          146,
+          29,
+          44
+        ],
+        "titulo": "Yokosuka, Japón · sede institucional de JAMSTEC",
+        "puntos": [
+          {
+            "nombre": "JAMSTEC · Yokosuka",
+            "lon": 139.65,
+            "lat": 35.32
+          }
+        ],
+        "fuente": "JAMSTEC, Yokosuka Headquarters, 2-15 Natsushima-cho, Yokosuka, Kanagawa, Japan. Coordenada aproximada a escala de ciudad; no es el sitio de muestreo.",
+        "asset_filename": "capas/mapa_yokosuka.png"
+      }
+    },
+    {
+      "order": 3,
+      "asset": "frames/scene_003.jpg",
+      "duration_seconds": 10,
+      "narration": "Un equipo de JAMSTEC aisló dos cepas, HC1 y SC1, y consiguió mantenerlas en cultivo para observarlas directamente.",
+      "caption_blocks": [
+        "Un equipo de",
+        "JAMSTEC aisló dos",
+        "cepas, HC1 y",
+        "SC1, y consiguió",
+        "mantenerlas en cultivo",
+        "para observarlas directamente."
+      ],
+      "on_screen_text": "Dos cepas cultivadas",
+      "motion": "kenburns_auto",
+      "ambiente": "silencio",
+      "sfx": [],
+      "layer": null
+    },
+    {
+      "order": 4,
+      "asset": "frames/scene_004.jpg",
+      "duration_seconds": 10,
+      "narration": "Por dentro, la sorpresa fue la sencillez: no tenían núcleo ni compartimentos membranosos persistentes, como los de nuestras células.",
+      "caption_blocks": [
+        "Por dentro, la",
+        "sorpresa fue la",
+        "sencillez: no tenían",
+        "núcleo ni compartimentos",
+        "membranosos persistentes, como",
+        "los de nuestras",
+        "células."
+      ],
+      "on_screen_text": "Sin núcleo interno",
+      "motion": "kenburns_auto",
+      "ambiente": "silencio",
+      "sfx": [],
+      "layer": null
+    },
+    {
+      "order": 5,
+      "asset": "frames/scene_005.jpg",
+      "duration_seconds": 10,
+      "narration": "Por fuera, en cambio, desarrollaban prolongaciones largas y flexibles. En promedio, su volumen alcanzaba cerca del ciento cuarenta y dos por ciento del cuerpo celular principal.",
+      "caption_blocks": [
+        "Por fuera, en",
+        "cambio, desarrollaban prolongaciones",
+        "largas y flexibles.",
+        "En promedio, su",
+        "volumen alcanzaba cerca",
+        "del ciento cuarenta",
+        "y dos por",
+        "ciento del cuerpo",
+        "celular principal."
+      ],
+      "on_screen_text": "Prolongaciones enormes",
+      "motion": "kenburns_auto",
+      "ambiente": "silencio",
+      "sfx": [],
+      "layer": {
+        "tipo": "grafico",
+        "x": [
+          "Cuerpo celular principal",
+          "Prolongaciones"
+        ],
+        "y": [
+          100,
+          142
+        ],
+        "titulo": "Volumen relativo promedio",
+        "unidad": "% del cuerpo celular principal",
+        "fuente": "Imachi et al., Nature (2026), Results / Supplementary Table 3; DOI 10.1038/s41586-026-11170-7.",
+        "asset_filename": "capas/grafico_prolongaciones.png",
+        "nota": "142 % es la estimación media descrita por los autores para el volumen de las prolongaciones respecto del cuerpo celular principal; no es una proporción universal de todas las arqueas."
+      }
+    },
+    {
+      "order": 6,
+      "asset": "frames/scene_006.jpg",
+      "duration_seconds": 10,
+      "narration": "Esas extensiones conectaban con otros microbios. Ambas cepas dependían de socios metanógenos: una creció en cocultivo y otra en tricultivo.",
+      "caption_blocks": [
+        "Esas extensiones conectaban",
+        "con otros microbios.",
+        "Ambas cepas dependían",
+        "de socios metanógenos:",
+        "una creció en",
+        "cocultivo y otra",
+        "en tricultivo."
+      ],
+      "on_screen_text": "Socios imprescindibles",
+      "motion": "kenburns_auto",
+      "ambiente": "silencio",
+      "sfx": [],
+      "layer": {
+        "tipo": "dato",
+        "valor": "2 cepas",
+        "etiqueta": "HC1 en cocultivo · SC1 en tricultivo",
+        "fuente": "Imachi et al., Nature (2026), Results; DOI 10.1038/s41586-026-11170-7."
+      }
+    },
+    {
+      "order": 7,
+      "asset": "frames/scene_007.jpg",
+      "duration_seconds": 10,
+      "narration": "También degradaban péptidos y vivían sin oxígeno. Una toleró pequeñas trazas solo cuando bacterias aerobias las consumían: no era respiración propia.",
+      "caption_blocks": [
+        "También degradaban péptidos",
+        "y vivían sin",
+        "oxígeno. Una toleró",
+        "pequeñas trazas solo",
+        "cuando bacterias aerobias",
+        "las consumían: no",
+        "era respiración propia."
+      ],
+      "on_screen_text": "Vivir sin oxígeno",
+      "motion": "kenburns_auto",
+      "ambiente": "silencio",
+      "sfx": [],
+      "layer": null
+    },
+    {
+      "order": 8,
+      "asset": "frames/scene_008.jpg",
+      "duration_seconds": 11,
+      "narration": "No son nuestros antepasados directos. Son parientes actuales que permiten probar cómo la cooperación entre células simples pudo preceder a la complejidad. Esto fue Datos y ociosidades.",
+      "caption_blocks": [
+        "No son nuestros",
+        "antepasados directos. Son",
+        "parientes actuales que",
+        "permiten probar cómo",
+        "la cooperación entre",
+        "células simples pudo",
+        "preceder a la",
+        "complejidad. Esto fue",
+        "Datos y ociosidades."
+      ],
+      "on_screen_text": "Una pista, no el ancestro",
+      "motion": "kenburns_auto",
+      "ambiente": "silencio",
+      "sfx": [],
+      "layer": null
+    }
+  ],
+  "source_slate": {
+    "asset": "cortinilla_fuentes.png",
+    "duration_seconds": 6
+  },
+  "audio": {
+    "music_asset": "sintetico:pizzicato",
+    "cama_musical": "pizzicato",
+    "music_lufs": -27,
+    "ambiente_lufs": -30,
+    "music_volume": 0.22,
+    "music_license": "Cama sintética original prevista mediante scripts/cama_sonora.py; no se generó archivo de audio en esta sesión.",
+    "ambiente": "silencio",
+    "sfx_license": "Sin efectos de terceros; scenes[].sfx está vacío porque no hay un efecto de Commons pertinente que mejore la explicación."
+  },
+  "export": {
+    "filename": "capsula.mp4",
+    "resolution": "1080x1920",
+    "fps": 30,
+    "subtitle_max_words": 3,
+    "plano_seconds": 2.5,
+    "loudness_lufs": -14
+  },
+  "limitations": [
+    "No es un proyecto nativo de CapCut.",
+    "No contiene audio ni timecodes.",
+    "No contiene MP4; falta TTS y pipeline oficial."
+  ]
+}
