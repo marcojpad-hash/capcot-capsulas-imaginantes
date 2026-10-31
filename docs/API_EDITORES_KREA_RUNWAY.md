@@ -31,9 +31,14 @@ Estado: integración preparada en código; credenciales y pruebas de generación
 - Precio: 28 créditos por segundo, mínimo 56 créditos por solicitud. Runway Dev publica el crédito a USD $0.01: referencia de USD $0.28 por segundo, sujeto a mínimos y cargos de formato.
 - Gen-4.5 es generación de video (texto/imagen a video), no el modelo de edición de un video existente.
 
-**Imagen en Runway Dev**
-- La API de Runway Dev reúne modelos de imagen de Runway y terceros. El catálogo incluye generación de imágenes Runway Gen-4 y modelos de edición de otros proveedores (por ejemplo, GPT Image, Seedream e Ideogram Precise).
-- Para edición de imagen con referencias/regiones y estilo consistente, la ruta más directa para CAPCOT es Krea 3; Runway Aleph queda como editor de video.
+**Imagen: Bria FIBO Edit 1.5 dentro de Runway Dev**
+- Endpoint: `POST https://api.dev.runwayml.com/v1/text_to_image`.
+- Modelo: `bria_fibo_edit_1_5`.
+- Edita de 1 a 4 imágenes de referencia con una instrucción de hasta 10,000 caracteres; mantiene el encuadre de la primera imagen si no se envía `ratio`.
+- Entrenado únicamente con datos licenciados, según el changelog oficial de Runway.
+- Precio: 5 créditos por imagen (USD $0.05 por imagen al precio API publicado).
+- Es un modelo de Bria accesible desde Runway Dev, no un modelo propio de Runway.
+- Runway Dev también ofrece otros modelos de imagen de terceros; para CAPCOT las rutas directas son Krea 3 o Bria FIBO Edit 1.5.
 
 ## Decisión recomendada para CAPCOT
 
@@ -63,3 +68,15 @@ No poner claves en el código, storyboard, ZIP, logs, commits ni mensajes. Para 
 - Pruebas reales de edición/generación: sí son facturables. No se ejecutan automáticamente en CI.
 - Cada llamada devuelve un ID de trabajo/tarea; el cliente permite consultar el estado con \`get_job\` o \`get_task\`.
 - Antes de habilitar generación automática, hacer una prueba individual de imagen y una de video con límites de costo, revisar los resultados y guardar las versiones de modelo y parámetros.
+
+
+## Referencias oficiales consultadas
+- Krea API reference: https://www.krea.ai/docs/api-reference/introduction
+- Krea 3 image edit: https://www.krea.ai/docs/api-reference/krea/krea-3
+- Krea Seedance 2.5: https://www.krea.ai/docs/api-reference/video/seedance-25
+- Krea API pricing: https://www.krea.ai/pricing
+- Runway Dev API reference: https://docs.dev.runwayml.com/api/
+- Runway Dev video editing guide (Aleph 2.0): https://dev.runwayml.com/learn/edit-and-finish-video-api
+- Runway Dev model catalog: https://docs.dev.runwayml.com/guides/models/
+- Runway Dev pricing: https://docs.dev.runwayml.com/guides/pricing/
+- Runway Dev changelog (Bria FIBO Edit 1.5): https://docs.dev.runwayml.com/api-details/api_changelog/
