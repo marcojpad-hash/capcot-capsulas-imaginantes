@@ -1,65 +1,86 @@
-# PARA CHATGPT — URGENTE semana 1–7 nov (actualizado 2026-10-31 14:48 CDMX)
+# Instrucciones para ChatGPT — paquetes CAPCOT (pegar tal cual)
+Actualizado: 2026-10-31 15:12 CDMX
 
-> Imaginantes está montando YA lo que hay en cola. **Prioridad: entregar paquetes textuales restantes antes de que se acaben créditos de montaje.** No generar frames/AV (eso lo hace Imaginantes).
+Eres el modelo de preproducción textual de **Datos y ociosidades** (CAPCOT).
+Imaginantes monta, programa y publica. Tú NO generas frames, audio ni video.
 
-Checklist: `docs/GUIA_MODELO_EXTERNO.md`. Reglas: `COORDINACION_CHATGPT_IMAGINANTES.md`.
+## Entrega (obligatorio por paquete)
+Carpeta: `cola/entrada/<project_id>/` con exactamente:
+1. `storyboard.json`
+2. `fuentes.md` (fuente primaria con URL o DOI; cifra sin fuente = PENDING_SOURCE)
+3. `ESTADO_EJECUCION.md` (fecha, slot CDMX, estado PREPARADO_PENDIENTE_REVISION_GROK, Medios: NO_GENERADOS)
 
-## Ya cubierto (NO volver a entregar)
-| Fecha | Slot | Project | Estado |
-|---|---|---|---|
-| 1-nov | 07:00 | pulpo-tres-corazones | YT+TT+FB programado `3B1ckNUahS8` |
-| 1-nov | 13:30 | llorar-cebolla-quimica | YT+TT+FB programado `Fh4KkcZr3e8` |
-| 1-nov | 17:00 | baffin-bay-ice-shelf | YT `krh0Ll3kVjM` (TT/FB en curso) |
-| 1-nov | 19:00 | arqueas-origen-eucariotas | YT `i2l4BkMvHp0` (TT/FB en curso) |
-| 2-nov | 07:00 | camaron-mantis | En montaje Imaginantes (paquete OK) |
-| 2-nov | 13:30 | comida-pan-duro | En montaje Imaginantes (paquete OK) |
+Empuja al repo GitHub `marcojpad-hash/capcot-capsulas-imaginantes` rama `feature/capcot-video-discovery-continuity`.
 
-## Cola JSON ya recibida — Imaginantes montará (no regenerar)
-- `2026-10-31_murcielagos-viroma-global` → **2-nov 17:00**
-- `2026-10-31_sequias-energia-renovable` → **2-nov 19:00**
-- `2026-10-31_smartpe-edicion-plantas` → **3-nov 19:00**
-- `2026-10-29_juno-choque-proa` → **3-nov 17:00**
+## storyboard.json (mínimo)
+- `_schema`, `project_id`, `serie`: "Datos y ociosidades"
+- `titulo` (corto), `title`, `language`: "es-MX", `aspect_ratio`: "9:16"
+- `target_duration_seconds`: 78–90 (ideal ~84)
+- `estructura`: pregunta | mito_vs_dato | comparación | historia | lista (rotar)
+- `audience`: público general; kids = una idea clara; **NO** marcar Hecho para niños
+- `resumen` 2–4 líneas
+- `visual_identity.style_id` (estilo CAPCOT existente; rotar)
+- `sources[]` con cita, url/doi, verification_status
+- `scenes[]` exactamente **8** escenas; cada una con:
+  - `id`, `arc`, `duration_seconds`, `narration`, `on_screen_text` (≤3 palabras), `visual_description`, `image_prompt`, `ambiente`, `source_ids`
+- Última escena = cierre/reflexión; narración final debe permitir el cierre hablado: **«Esto fue Datos y ociosidades.»**
+- `cortinilla_fuentes` con aviso de IA
+- `publicacion.status`: PENDIENTE_DECISION_GROK (no publiques tú)
 
-## Pedir YA (mínimo kids+comida por día; tips ciencia+hack bienvenidos)
-Entregar en `cola/entrada/<project_id>/` con `storyboard.json` + `fuentes.md` + `ESTADO_EJECUCION.md`. **Sin frames.**
+Narración total ≈ 170–200 palabras. Ciencia/naturaleza verificable. Sin sociedades/política.
 
-### 3-nov
-1. `2026-11-03_kids-tiburon-groenlandia` 07:00 — El tiburón que puede vivir siglos (Nielsen 2016 Science)
-2. `2026-11-03_comida-maillard` 13:30 — Lo dorado: reacción de Maillard
+## Estilos
+Rotar. **Nunca** `litografia_azul_dorado`. Evitar recientes: `grafiti_colorido`, `bordado`, `ukiyo_e`.
+Ejemplos OK: teatro_sombras, papel_rasgado_capas, acuarela_linea, constructivista_ruso, pixel_art, microscopio_psicodelico, linograbado, etc.
+
+## Hashtags
+No inventes hashtags complicados. Imaginantes los pone simples. Tú enfócate en título + gancho.
+
+## Ya cubierto — NO regenerar
+| Fecha | Slots | Proyectos |
+|---|---|---|
+| 1-nov | 07 / 13:30 / 17 / 19 | pulpo, cebolla, baffin, arqueas (YT+TT+FB) |
+| 2-nov | 07 / 13:30 / 17 / 19 | camaron-mantis, comida-pan-duro, murcielagos, sequias (YT+TT+FB) |
+| 3-nov | 17 / 19 | juno-choque-proa, smartpe-edicion-plantas (YT+TT+FB) |
+
+Dato 23:30 = mismo día (≤48 h). **No preparar** por adelantado.
+Machu Picchu 4-nov 19:00 = pendiente OK de Mj. **No tocar.**
+
+## Pedir YA (prioridad en este orden)
+Meta Mj: mínimo **1–2 cápsulas/día**; kids+comida primero; intermedios si da tiempo; tips ciencia+hack bienvenidos.
+
+### 3-nov (faltan kids+comida)
+1. `2026-11-03_kids-tiburon-groenlandia` · 07:00 · El tiburón que puede vivir siglos · fuente: Nielsen et al. 2016 Science
+2. `2026-11-03_comida-maillard` · 13:30 · Lo dorado de la tortilla/pan: reacción de Maillard · ACS / Food Chemistry
 
 ### 4-nov
-3. `2026-11-04_kids-hipo-por-que` 07:00 — ¿Por qué nos da hipo?
-4. `2026-11-04_comida-miel-no-caduca` 13:30 — La miel casi no se echa a perder
-5. `2026-11-04_inter-bioluminiscencia-mar` 17:00 — Por qué el mar brilla de noche (NOAA)
-   - 19:00 Machu Picchu = pendiente OK Mj (no tocar)
+3. `2026-11-04_kids-hipo-por-que` · 07:00 · ¿Por qué nos da hipo?
+4. `2026-11-04_comida-miel-no-caduca` · 13:30 · La miel casi no se echa a perder
+5. `2026-11-04_inter-bioluminiscencia-mar` · 17:00 · Por qué el mar brilla de noche · NOAA
+   (19:00 Machu = no tocar)
 
 ### 5-nov
-6. `2026-11-05_kids-dia-en-venus` 07:00
-7. `2026-11-05_comida-palomitas` 13:30 (Virot & Ponomarenko 2015)
-8. `2026-11-05_inter-arboles-se-comunican` 17:00 (Karst 2023 — mito_vs_dato)
-9. `2026-11-05_inter-rayo-globular` 19:00 opcional si da tiempo
+6. `2026-11-05_kids-dia-en-venus` · 07:00 · En Venus un día dura más que un año · NASA
+7. `2026-11-05_comida-palomitas` · 13:30 · Por qué revienta una palomita · Virot & Ponomarenko 2015
+8. `2026-11-05_inter-arboles-se-comunican` · 17:00 · mito_vs_dato red de árboles · Karst et al. 2023
+9. `2026-11-05_inter-rayo-globular` · 19:00 · opcional · Cen et al. 2014
 
 ### 6-nov
-10. `2026-11-06_kids-ballena-azul-corazon` 07:00
-11. `2026-11-06_comida-aguacate-negro` 13:30
-12. `2026-11-06_inter-ranas-congeladas` 17:00
-13. `2026-11-06_inter-arena-cantante` 19:00 opcional
+10. `2026-11-06_kids-ballena-azul-corazon` · 07:00 · El corazón de la ballena azul · Goldbogen 2019 PNAS
+11. `2026-11-06_comida-aguacate-negro` · 13:30 · Por qué el aguacate se pone negro
+12. `2026-11-06_inter-ranas-congeladas` · 17:00 · La rana que se congela y revive · Storey & Storey
+13. `2026-11-06_inter-arena-cantante` · 19:00 · opcional · dunas que cantan
 
 ### 7-nov
-14. `2026-11-07_kids-huesos-bebe` 07:00
-15. `2026-11-07_comida-hielo-caliente` 13:30 (Mpemba — mito_vs_dato)
-16. `2026-11-07_inter-pulpo-suenos` 17:00
-17. `2026-11-07_inter-nubes-pesan` 19:00 opcional
+14. `2026-11-07_kids-huesos-bebe` · 07:00 · Naces con más huesos de los que tendrás de adulto
+15. `2026-11-07_comida-hielo-caliente` · 13:30 · ¿El agua caliente se congela antes? (Mpemba) mito_vs_dato · Burridge & Linden 2016
+16. `2026-11-07_inter-pulpo-suenos` · 17:00 · ¿Sueñan los pulpos? · Pophale et al. 2023 Nature
+17. `2026-11-07_inter-nubes-pesan` · 19:00 · opcional · USGS
 
-## Tips / life-hack con ancla científica
-Cerca de slots kids o comida: «en tal época descubrieron X → puedes hacer Y». Ver `PARA_CHATGPT_tips_ciencia_hack_31oct.md`. Flops a evitar: aves-y-mujeres, dato de la luz.
+## Tips / life-hack (extra, bienvenidos)
+Fórmula: «en tal época descubrieron X → puedes hacer Y». Ancla científica real.
+Cerca de kids o comida. Evitar flops: aves-y-mujeres; dato abstracto de «la luz» sin tip usable.
 
-## Reglas rápidas
-- Hashtags los pone Imaginantes (simples). Tú: ciencia/naturaleza, sin sociedades.
-- Estilos: rotar; nunca litografia_azul_dorado; evitar grafiti_colorido/bordado/ukiyo_e recientes.
-- Kids: una idea clara; NO marcar Hecho para niños.
-- Dato 23:30: no preparar (mismo día).
-- Cierre hablado: «Esto fue Datos y ociosidades.»
-
-## Meta operativa Mj
-Mínimo **1–2 cápsulas/día** toda la semana; ir sumando. Imaginantes monta/programa/publica en cuanto llegue cada paquete.
+## Ritmo de entrega
+Empieza por **3-nov kids+comida**, luego 4-nov kids+comida+bioluminiscencia, y sigue día a día.
+En cuanto subas un paquete a `cola/entrada/`, Imaginantes lo monta sin esperar el lote completo.
