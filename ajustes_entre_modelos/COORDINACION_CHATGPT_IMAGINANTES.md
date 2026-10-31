@@ -13,7 +13,7 @@ Este archivo es el punto de entrada para los modelos externos. La autoridad comp
 4. **Mj:** define prioridades y autoriza cambios de alcance o cupo.
 
 ## Cupo
-La parrilla de cinco slots diarios es el objetivo editorial, no la capacidad actual del pipeline. El código vigente limita a tres por día (dos propias y una externa), y el procesador acepta una entrada externa por fecha. No forzar cupos ni anunciar cinco publicaciones ejecutables hasta que código, pruebas y validadores hayan sido actualizados y verificados. Ver sección 3 y 8 del contrato unificado.
+La capacidad configurada en esta rama es de hasta cinco cápsulas por fecha (máximo dos propias y cinco externas, con tope global de cinco). El procesador recorre múltiples entradas de la fecha y conserva la entrada original si falla producción. La programación cuenta con cinco ventanas asociadas a la parrilla (07:00, 13:30, 17:00, 19:00 y 23:30 CDMX). Esto no demuestra cinco publicaciones efectivas: cada una requiere QA y evidencia registrada. Ver secciones 3 y 8 del contrato unificado.
 
 ## Handoff
 ChatGPT deja radar y storyboard textual en las rutas definidas por el Plan Maestro. Imaginantes registra recepción solo después de leer el paquete en `cola/estado/<project_id>.json`, decide, produce, hace QA y registra publicación con URL/ID. Sin estado no hay recepción confirmada.
