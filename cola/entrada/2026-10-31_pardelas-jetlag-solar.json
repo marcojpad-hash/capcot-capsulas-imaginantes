@@ -83,7 +83,9 @@
       ],
       "ref_display": "Lewin et al. · Science · 2026",
       "crossref_record_url": "https://api.crossref.org/works/10.1126/science.adz2542",
-      "verification_status": "Crossref REST: status=ok; DOI y título coinciden; registro creado 2026-10-29."
+      "verification_status": "VERIFICADO_CROSSREF",
+      "verification_note": "Crossref REST consignado en la ficha de investigación: status=ok; DOI y título coinciden; registro creado 2026-10-29.",
+      "publication_date": "2026-10-29"
     },
     {
       "id": "SRC-002",
@@ -99,7 +101,9 @@
       ],
       "ref_display": "University of Oxford · comunicado de investigación",
       "publication_date": "2026-10-30",
-      "source_type": "Comunicado institucional del equipo investigador"
+      "source_type": "Comunicado institucional del equipo investigador",
+      "verification_status": "VERIFICADO_RESOLVEDOR",
+      "verification_note": "Página oficial de University of Oxford abierta y cotejada; fecha visible 2026-10-30."
     },
     {
       "id": "SRC-003",
@@ -110,7 +114,9 @@
         "Skomer es una isla de Pembrokeshire, Gales, con una colonia importante de pardelas pichonetas."
       ],
       "ref_display": "Pembrokeshire Coast National Park",
-      "source_type": "Parque nacional / contexto de colonia"
+      "source_type": "Parque nacional / contexto de colonia",
+      "verification_status": "VERIFICADO_RESOLVEDOR",
+      "verification_note": "Página oficial de Pembrokeshire Coast National Park abierta; identifica Skomer y su colonia de pardelas pichonetas."
     },
     {
       "id": "SRC-004",
@@ -122,7 +128,9 @@
         "La ficha TGN 1009194 identifica el punto como Skomer Island, isla de Pembrokeshire, Gales."
       ],
       "ref_display": "Getty Research Institute · coordenadas",
-      "source_type": "Getty TGN / coordenadas geográficas"
+      "source_type": "Getty TGN / coordenadas geográficas",
+      "verification_status": "VERIFICADO_RESOLVEDOR",
+      "verification_note": "Registro Getty TGN 1009194 abierto; coordenadas 51.7375 N, -5.2967 W coinciden con el punto del storyboard."
     }
   ],
   "scenes": [
@@ -376,48 +384,7 @@
     "editorial_review": "Pendiente de Grok: cotejar rotación completa, aceptar/rechazar, generar assets, ejecutar QA oficial y decidir publicación."
   },
   "linea_editorial_provisional": "Naturaleza / bichos · Actualidad científica · Comportamiento animal",
-  "approved_assets": [
-    {
-      "filename": "frames/scene_001.png",
-      "status": "pendiente_generacion_por_grok",
-      "role": "Frame scene_001; imagen vertical 9:16 sin texto integrado. No existe todavía."
-    },
-    {
-      "filename": "frames/scene_002.png",
-      "status": "pendiente_generacion_por_grok",
-      "role": "Frame scene_002; imagen vertical 9:16 sin texto integrado. No existe todavía."
-    },
-    {
-      "filename": "frames/scene_003.png",
-      "status": "pendiente_generacion_por_grok",
-      "role": "Frame scene_003; imagen vertical 9:16 sin texto integrado. No existe todavía."
-    },
-    {
-      "filename": "frames/scene_004.png",
-      "status": "pendiente_generacion_por_grok",
-      "role": "Frame scene_004; imagen vertical 9:16 sin texto integrado. No existe todavía."
-    },
-    {
-      "filename": "frames/scene_005.png",
-      "status": "pendiente_generacion_por_grok",
-      "role": "Frame scene_005; imagen vertical 9:16 sin texto integrado. No existe todavía."
-    },
-    {
-      "filename": "frames/scene_006.png",
-      "status": "pendiente_generacion_por_grok",
-      "role": "Frame scene_006; imagen vertical 9:16 sin texto integrado. No existe todavía."
-    },
-    {
-      "filename": "frames/scene_007.png",
-      "status": "pendiente_generacion_por_grok",
-      "role": "Frame scene_007; imagen vertical 9:16 sin texto integrado. No existe todavía."
-    },
-    {
-      "filename": "frames/scene_008.png",
-      "status": "pendiente_generacion_por_grok",
-      "role": "Frame scene_008; imagen vertical 9:16 sin texto integrado. No existe todavía."
-    }
-  ],
+  "approved_assets": [],
   "risk_notes": [
     "«Jet lag» es una analogía para el desfase entre reloj interno y hora solar local; no implica que las aves presenten todos los síntomas humanos.",
     "La desviación de hasta aproximadamente 15 grados corresponde a los ejemplares y vuelos estudiados; no es un valor universal para todas las aves.",
