@@ -1,0 +1,428 @@
+{
+  "project_id": "2026-10-31_pardelas-jetlag-solar",
+  "serie": "Datos y ociosidades",
+  "title": "El jet lag de las aves marinas",
+  "titulo": "Las aves también tienen jet lag",
+  "language": "es-MX",
+  "aspect_ratio": "9:16",
+  "target_duration_seconds": 84,
+  "estructura": "historia",
+  "audience": "Público general curioso; audiencia interesada en naturaleza, comportamiento animal y navegación.",
+  "occasion": "Actualidad científica reciente; historia de naturaleza para consumo general.",
+  "resumen": "Un estudio publicado en Science muestra que las pardelas pichonetas pueden experimentar un desfase entre su reloj interno y la hora solar local durante vuelos rápidos hacia el este. Ese desfase produce errores predecibles al orientarse con el Sol.",
+  "trend_source": {
+    "tipo": "noticia_cientifica",
+    "medio": "Science; comunicado institucional de University of Oxford",
+    "url": "https://www.ox.ac.uk/news/2026-10-26-study-finds-that-long-distance-flights-can-throw-seabirds-internal-clocks-out-of",
+    "estudio_doi": "10.1126/science.adz2542",
+    "fecha_publicacion": "2026-10-29",
+    "termino": "pardelas pichonetas jet lag reloj interno brújula solar",
+    "fecha_consulta": "2026-10-31",
+    "google_trends_match": false,
+    "puntaje": 8,
+    "crossref_verification": {
+      "status": "ok",
+      "endpoint": "https://api.crossref.org/works/10.1126/science.adz2542",
+      "doi_match": true,
+      "title_match": true,
+      "record_created": "2026-10-29",
+      "verified_at": "2026-10-31",
+      "note": "El registro bibliográfico confirma el DOI y el título. El texto completo de Science respondió HTTP 403; las cifras y detalles narrativos se contrastan con el comunicado oficial de Oxford."
+    }
+  },
+  "editorial_status": "Propuesta textual para evaluación de Grok. No autoriza generación audiovisual ni publicación.",
+  "arco": {
+    "hook_medias_res": "Una pardela cruza el océano y su reloj se queda atrás.",
+    "desarrollo": "Presentar especie, viajes y brújula solar; explicar el desfase horario al volar hacia el este; revelar la evidencia GPS.",
+    "cierre_historia": "Mostrar que el error de orientación es medible, pero las aves adultas corrigen su rumbo.",
+    "reflexion_o_pregunta": "Un reloj interno también puede ser una brújula. ¿Cuántos animales dependen de esa sincronía?"
+  },
+  "estilo_id": "papel_rasgado_capas",
+  "estilo_visual": "Papel rasgado por capas (diorama)",
+  "visual_identity": {
+    "style_id": "papel_rasgado_capas",
+    "style_name": "Papel rasgado por capas (diorama)",
+    "prompt_base": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text",
+    "palette": "Verde bosque, turquesa apagado, ocre y crema; mantener la misma saturación en todas las escenas.",
+    "lighting": "Luz lateral suave; sombras de profundidad constantes entre capas de papel.",
+    "texture": "Cartulina y papel rasgado con bordes visibles; capas físicas, sin acabado fotográfico ni 3D plástico.",
+    "composition": "Un sujeto dominante por plano; ave grande y legible; profundidad por capas; encuadre vertical 9:16.",
+    "negative_prompt": "Photorealism, glossy 3D, plasticine, watercolor, scratchboard, mixed styles, multi-panel collage, text, letters, logos, watermark, unrelated species, inaccurate bird anatomy.",
+    "reference_assets": [],
+    "seed": 20261031,
+    "seed_policy": "Mantener el mismo tratamiento, paleta, material y escala de la pardela en las ocho escenas. No añadir planos o recursos no descritos."
+  },
+  "typography_identity": {
+    "font_family": "DejaVu Sans",
+    "font_weight": "700 para gancho; 400 para subtítulos.",
+    "title_style": "DejaVu Sans Bold, máximo seis palabras, subrayado desde frame 0, alto contraste.",
+    "subtitle_style": "ASS 1080x1920, blanco con contorno oscuro, bloques de máximo tres palabras, zona segura inferior MarginV 560.",
+    "hierarchy": "Tarjeta de gancho > dato o etiqueta > subtítulos; máximo seis palabras visibles por escena.",
+    "animation": "Gancho presente desde frame 0; cortes secos cercanos a 2.5 s y un movimiento por plano. Tipografía siempre en postproducción."
+  },
+  "voice": {
+    "engine": "edge-tts",
+    "voice_id": "es-MX-JorgeNeural",
+    "language": "es-MX",
+    "rate": "+7%",
+    "pitch": "-2Hz",
+    "pad_seconds": 0.3,
+    "modo_pausas": "continuo"
+  },
+  "sources": [
+    {
+      "id": "SRC-001",
+      "cita_corta": "Lewin, P. et al. (2026). Rapid longitudinal flights cause time shifts and Sun compass error. Science 394, 520–524.",
+      "url": "https://doi.org/10.1126/science.adz2542",
+      "doi": "10.1126/science.adz2542",
+      "accessed": "2026-10-31",
+      "supports": [
+        "El estudio analiza cómo vuelos longitudinales rápidos producen desfases horarios y errores de orientación con brújula solar en pardelas pichonetas.",
+        "Los datos GPS muestran desviaciones sistemáticas compatibles con los errores predichos por el desfase del reloj interno.",
+        "La brújula solar sigue influyendo durante vuelos junto a la costa."
+      ],
+      "ref_display": "Lewin et al. · Science · 2026",
+      "crossref_record_url": "https://api.crossref.org/works/10.1126/science.adz2542",
+      "verification_status": "Crossref REST: status=ok; DOI y título coinciden; registro creado 2026-10-29."
+    },
+    {
+      "id": "SRC-002",
+      "cita_corta": "University of Oxford (2026). Study finds that long-distance flights can throw seabirds' internal clocks out of sync, causing navigation errors.",
+      "url": "https://www.ox.ac.uk/news/2026-10-26-study-finds-that-long-distance-flights-can-throw-seabirds-internal-clocks-out-of",
+      "accessed": "2026-10-31",
+      "supports": [
+        "20 años de GPS de 1,045 pardelas y 3,688 viajes de alimentación.",
+        "Los relojes internos pueden quedar retrasados hasta alrededor de una hora frente al tiempo solar local.",
+        "Las desviaciones de orientación llegaron aproximadamente a 15 grados.",
+        "Los investigadores estiman que las aves adultas corrigen su rumbo; no se han demostrado efectos equivalentes al jet lag humano sobre su salud.",
+        "Con un error medio de 7 grados y corrección continua, el modelo estima unos 5 km adicionales en un regreso desde 1,000 km; es un ejemplo modelado, no una medida universal."
+      ],
+      "ref_display": "University of Oxford · comunicado de investigación",
+      "publication_date": "2026-10-30",
+      "source_type": "Comunicado institucional del equipo investigador"
+    },
+    {
+      "id": "SRC-003",
+      "cita_corta": "Pembrokeshire Coast National Park. Skomer Island.",
+      "url": "https://www.pembrokeshirecoast.wales/things-to-do/pembrokeshires-islands/skomer/",
+      "accessed": "2026-10-31",
+      "supports": [
+        "Skomer es una isla de Pembrokeshire, Gales, con una colonia importante de pardelas pichonetas."
+      ],
+      "ref_display": "Pembrokeshire Coast National Park",
+      "source_type": "Parque nacional / contexto de colonia"
+    },
+    {
+      "id": "SRC-004",
+      "cita_corta": "Getty Research Institute. Thesaurus of Geographic Names: Skomer Island.",
+      "url": "https://www.getty.edu/vow/TGNFullDisplay?english=Y&find=midway&nation=&place=atoll&subjectid=1009194",
+      "accessed": "2026-10-31",
+      "supports": [
+        "Coordenadas cartográficas de Skomer Island: 51.7375 N, -5.2967 W.",
+        "La ficha TGN 1009194 identifica el punto como Skomer Island, isla de Pembrokeshire, Gales."
+      ],
+      "ref_display": "Getty Research Institute · coordenadas",
+      "source_type": "Getty TGN / coordenadas geográficas"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_001",
+      "arc": "hook_medias_res",
+      "duration_seconds": 9,
+      "narration": "Una pardela cruza el océano y su reloj se queda atrás. Sigue volando, pero el Sol empieza a señalarle una dirección equivocada.",
+      "on_screen_text": "Las aves también tienen jet lag",
+      "visual_description": "Una pardela pichoneta vuela sobre un océano abierto; detrás, el Sol aparece en dos posiciones superpuestas para sugerir el desfase, sin texto ni relojes digitales.",
+      "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text + one Manx shearwater flying low above a wide Atlantic ocean, oversized sun layered twice at different positions to suggest time mismatch, single clear subject",
+      "motion": "kenburns_auto",
+      "animated_hook": false,
+      "ambiente": "oceano+viento",
+      "sfx": [
+        "viento"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "style_id": "papel_rasgado_capas",
+      "text_language": "es-MX",
+      "voice_id": "es-MX-JorgeNeural"
+    },
+    {
+      "id": "scene_002",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "Es la pardela pichoneta, un ave marina que cría en islas del Reino Unido e Irlanda. Sale al Atlántico y puede buscar alimento a cientos de kilómetros de su nido.",
+      "on_screen_text": "Pardela pichoneta",
+      "visual_description": "La misma pardela sale de una colonia insular y se aleja sobre el mar; mantener la misma silueta, proporciones y colores.",
+      "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text + one consistent Manx shearwater leaving a small rugged Welsh island colony and flying out over the Atlantic, layered sea horizon",
+      "motion": "kenburns_auto",
+      "ambiente": "oceano+viento",
+      "sfx": [
+        "gaviotas"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002",
+        "SRC-003"
+      ],
+      "style_id": "papel_rasgado_capas",
+      "text_language": "es-MX",
+      "voice_id": "es-MX-JorgeNeural"
+    },
+    {
+      "id": "scene_003",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "Para orientarse, estas aves pueden usar el Sol como brújula. Pero necesitan algo más: un reloj interno que compense cómo cambia la posición del Sol durante el día.",
+      "on_screen_text": "El Sol funciona como brújula",
+      "visual_description": "Vista lateral de la pardela con el Sol recorriendo el cielo en una curva; una línea sencilla conecta la posición solar con la dirección de vuelo.",
+      "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text + one Manx shearwater in flight beneath a sun arc made of layered paper discs, one simple directional path, no labels",
+      "motion": "kenburns_auto",
+      "ambiente": "viento",
+      "sfx": [
+        "reloj"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "style_id": "papel_rasgado_capas",
+      "text_language": "es-MX",
+      "voice_id": "es-MX-JorgeNeural"
+    },
+    {
+      "id": "scene_004",
+      "arc": "desarrollo",
+      "duration_seconds": 11,
+      "narration": "El problema aparece cuando vuela rápido hacia el este. El amanecer llega antes en el lugar al que se acerca, pero su reloj interno no se ajusta al mismo ritmo.",
+      "on_screen_text": "El amanecer se adelanta",
+      "visual_description": "Mapa conceptual del Atlántico norte con una flecha hacia el este; el Sol nace antes en el extremo de llegada. Sin fronteras ni rutas exactas inventadas.",
+      "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text + simplified layered paper map of the North Atlantic with one eastward flight arrow and a sunrise appearing earlier ahead of the bird, no labels",
+      "motion": "kenburns_auto",
+      "ambiente": "viento",
+      "sfx": [
+        "reloj"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002",
+        "SRC-003",
+        "SRC-004"
+      ],
+      "style_id": "papel_rasgado_capas",
+      "text_language": "es-MX",
+      "voice_id": "es-MX-JorgeNeural",
+      "capa": {
+        "tipo": "mapa",
+        "region": [
+          -12,
+          0,
+          48,
+          57
+        ],
+        "puntos": [
+          {
+            "nombre": "Skomer Island · punto geográfico de referencia",
+            "lon": -5.2967,
+            "lat": 51.7375
+          }
+        ],
+        "titulo": "Skomer · Pembrokeshire, Gales",
+        "fuente": "Getty Research Institute, TGN 1009194; Pembrokeshire Coast National Park",
+        "nota": "El pin ubica una colonia conocida y sirve como contexto geográfico. No representa la ruta GPS de un ave ni la ubicación de todos los individuos del estudio."
+      }
+    },
+    {
+      "id": "scene_005",
+      "arc": "desarrollo",
+      "duration_seconds": 11,
+      "narration": "Durante un momento, el reloj puede quedar hasta una hora detrás del tiempo solar local. Entonces la posición del Sol parece distinta y la brújula de la pardela se desvía.",
+      "on_screen_text": "Hasta una hora de desfase",
+      "visual_description": "El ave mira el Sol; dos arcos solares superpuestos muestran la diferencia entre la hora que marca su reloj interno y la posición real del Sol.",
+      "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text + one Manx shearwater looking toward two offset paper sun arcs, clear visual metaphor for a one-hour internal clock lag, no numbers",
+      "motion": "kenburns_auto",
+      "ambiente": "viento",
+      "sfx": [
+        "latido"
+      ],
+      "capa": {
+        "tipo": "dato",
+        "valor": "≈1 hora",
+        "etiqueta": "Retraso posible del reloj interno",
+        "fuente": "Lewin et al., Science (2026)"
+      },
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "style_id": "papel_rasgado_capas",
+      "text_language": "es-MX",
+      "voice_id": "es-MX-JorgeNeural"
+    },
+    {
+      "id": "scene_006",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "El equipo estudió veinte años de recorridos GPS: mil cuarenta y cinco aves y más de tres mil seiscientos viajes. Sus trayectorias coincidieron con los errores que predecía el desfase.",
+      "on_screen_text": "20 años de GPS",
+      "visual_description": "Puntos de GPS se convierten en rutas sobre el Atlántico norte; mantener la visualización esquemática, sin presentar rutas ilustrativas como trayectorias individuales exactas.",
+      "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text + abstract layered paper map of the North Atlantic with many thin GPS route threads converging toward a small island, no labels or numbers",
+      "motion": "kenburns_auto",
+      "ambiente": "oceano",
+      "sfx": [
+        "pluma"
+      ],
+      "capa": {
+        "tipo": "dato",
+        "valor": "1,045 aves · 3,688 viajes",
+        "etiqueta": "Datos GPS reunidos durante 20 años",
+        "fuente": "University of Oxford (2026)"
+      },
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "style_id": "papel_rasgado_capas",
+      "text_language": "es-MX",
+      "voice_id": "es-MX-JorgeNeural"
+    },
+    {
+      "id": "scene_007",
+      "arc": "cierre_historia",
+      "duration_seconds": 9,
+      "narration": "La desviación llegó a unos quince grados. Aun así, las aves adultas pueden corregir el rumbo y volver a su colonia. El error no significa que se pierdan.",
+      "on_screen_text": "Desvíos de hasta 15°",
+      "visual_description": "La pardela corrige suavemente su trayectoria y se acerca a la costa de Gales; la colonia queda visible a lo lejos.",
+      "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text + one Manx shearwater adjusting its curved flight path toward a distant rugged Welsh island coast, calm open sea",
+      "motion": "kenburns_auto",
+      "ambiente": "oceano+viento",
+      "sfx": [
+        "olas"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "style_id": "papel_rasgado_capas",
+      "text_language": "es-MX",
+      "voice_id": "es-MX-JorgeNeural"
+    },
+    {
+      "id": "scene_008",
+      "arc": "reflexion_o_pregunta",
+      "duration_seconds": 8,
+      "narration": "Un reloj interno también puede ser una brújula. ¿Cuántos otros animales dependen de esa sincronía? Esto fue Datos y ociosidades.",
+      "on_screen_text": "Un reloj que orienta",
+      "visual_description": "La pardela vuela hacia la luz del amanecer; el Sol y el horizonte se alinean, cerrando visualmente el arco del primer plano.",
+      "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text + the same Manx shearwater flying toward a calm sunrise above the Atlantic, one strong silhouette, visual echo of opening scene",
+      "motion": "kenburns_auto",
+      "ambiente": "oceano",
+      "sfx": [
+        "viento"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "style_id": "papel_rasgado_capas",
+      "text_language": "es-MX",
+      "voice_id": "es-MX-JorgeNeural"
+    }
+  ],
+  "cortinilla_fuentes": {
+    "duration_seconds": 6,
+    "titulo": "Fuentes",
+    "aviso": "Divulgación prevista para la versión final: imágenes generadas con IA, voz sintética y audio sintetizado.",
+    "firma": "Datos y ociosidades · @datosyociosidades",
+    "source_ids": [
+      "SRC-001",
+      "SRC-002"
+    ]
+  },
+  "audio": {
+    "music_asset": null,
+    "music_license": null,
+    "music_volume": 0.25
+  },
+  "export": {
+    "resolution": "1080x1920",
+    "fps": 30,
+    "subtitle_max_words": 3,
+    "loudness_lufs": -14,
+    "render_status": "NOT_GENERATED"
+  },
+  "publicacion": {
+    "status": "PENDIENTE_DECISION_GROK",
+    "platforms": [
+      "YouTube Shorts",
+      "TikTok",
+      "Facebook Reels"
+    ],
+    "note": "No publicado ni programado; Grok conserva la decisión y la ejecución."
+  },
+  "estado": "PENDIENTE_REVISION_GROK",
+  "production_mode": "storyboard_only",
+  "validation_notes": {
+    "narration_word_count": 218,
+    "narration_word_count_estimate": 218,
+    "planned_duration_including_sources_seconds": 84,
+    "scene_duration_total_seconds": 78,
+    "sources_slate_seconds": 6,
+    "crossref_status": "Crossref REST devolvió status=ok y coincidencia de DOI/título para 10.1126/science.adz2542; registro creado 2026-10-29. El texto completo de Science respondió HTTP 403.",
+    "map_status": "Capa mapa agregada con coordenadas Getty TGN 1009194 (51.7375, -5.2967); el punto es contexto, no trayectoria GPS.",
+    "structural_status": "Comprobación estructural de esta ejecución: 8 escenas; arcos requeridos presentes; 218 palabras; duración 84 s con cortinilla; prompts empiezan con prompt_base exacto; source_ids resolubles; capas mapa y dato presentes. No equivale al QA oficial de Grok.",
+    "rotation_status": "data/temas_del_dia.json y data/rotacion.json llegan hasta 2026-10-28; data/publicaciones.json llega hasta 2026-10-26. No se modificaron. La unicidad de estructura/estilo/música frente a cápsulas del 29-31 no puede certificarse con esos registros.",
+    "editorial_review": "Pendiente de Grok: cotejar rotación completa, aceptar/rechazar, generar assets, ejecutar QA oficial y decidir publicación."
+  },
+  "linea_editorial_provisional": "Naturaleza / bichos · Actualidad científica · Comportamiento animal",
+  "approved_assets": [
+    {
+      "filename": "frames/scene_001.png",
+      "status": "pendiente_generacion_por_grok",
+      "role": "Frame scene_001; imagen vertical 9:16 sin texto integrado. No existe todavía."
+    },
+    {
+      "filename": "frames/scene_002.png",
+      "status": "pendiente_generacion_por_grok",
+      "role": "Frame scene_002; imagen vertical 9:16 sin texto integrado. No existe todavía."
+    },
+    {
+      "filename": "frames/scene_003.png",
+      "status": "pendiente_generacion_por_grok",
+      "role": "Frame scene_003; imagen vertical 9:16 sin texto integrado. No existe todavía."
+    },
+    {
+      "filename": "frames/scene_004.png",
+      "status": "pendiente_generacion_por_grok",
+      "role": "Frame scene_004; imagen vertical 9:16 sin texto integrado. No existe todavía."
+    },
+    {
+      "filename": "frames/scene_005.png",
+      "status": "pendiente_generacion_por_grok",
+      "role": "Frame scene_005; imagen vertical 9:16 sin texto integrado. No existe todavía."
+    },
+    {
+      "filename": "frames/scene_006.png",
+      "status": "pendiente_generacion_por_grok",
+      "role": "Frame scene_006; imagen vertical 9:16 sin texto integrado. No existe todavía."
+    },
+    {
+      "filename": "frames/scene_007.png",
+      "status": "pendiente_generacion_por_grok",
+      "role": "Frame scene_007; imagen vertical 9:16 sin texto integrado. No existe todavía."
+    },
+    {
+      "filename": "frames/scene_008.png",
+      "status": "pendiente_generacion_por_grok",
+      "role": "Frame scene_008; imagen vertical 9:16 sin texto integrado. No existe todavía."
+    }
+  ],
+  "risk_notes": [
+    "«Jet lag» es una analogía para el desfase entre reloj interno y hora solar local; no implica que las aves presenten todos los síntomas humanos.",
+    "La desviación de hasta aproximadamente 15 grados corresponde a los ejemplares y vuelos estudiados; no es un valor universal para todas las aves.",
+    "El ejemplo de unos 5 km adicionales solo aplica al modelo de un regreso desde 1,000 km, error medio de 7 grados y corrección continua; no se presenta como distancia medida en todos los vuelos.",
+    "El pin de Skomer es contexto geográfico de una colonia conocida, no la ruta GPS de un ave ni la ubicación de todos los individuos analizados.",
+    "No atribuir efectos demostrados sobre salud, sueño o supervivencia: Oxford señala que hacen falta más estudios."
+  ]
+}

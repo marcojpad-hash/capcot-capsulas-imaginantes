@@ -1,0 +1,3246 @@
+{
+  "generated_at_utc": "2026-10-31T05:12:18.771862+00:00",
+  "source": "GitHub public repository search API",
+  "queries": [
+    "\"text to video\" generation API",
+    "video generation model inference API",
+    "ComfyUI video generation workflow",
+    "open source image to video text to video",
+    "video generation API client SDK"
+  ],
+  "method_limitations": [
+    "Los resultados son candidatos, no certificaciones de que una API funcione.",
+    "La búsqueda de repositorios no sustituye la lectura de documentación ni una prueba real.",
+    "Precio, cuotas, licencia comercial, duración, resolución y disponibilidad regional deben verificarse en fuente oficial.",
+    "No se ejecuta código de terceros ni se consumen créditos."
+  ],
+  "provider_documentation_candidates": [
+    {
+      "provider": "Runway",
+      "category": "API comercial",
+      "documentation": "https://docs.dev.runwayml.com/",
+      "verification": "Revisar endpoints, modelos, duración, precio y disponibilidad regional."
+    },
+    {
+      "provider": "xAI",
+      "category": "API comercial",
+      "documentation": "https://docs.x.ai/docs/guides/video",
+      "verification": "Revisar modelos, duración, precio, límites y acceso."
+    },
+    {
+      "provider": "Google Vertex AI / Veo",
+      "category": "API comercial",
+      "documentation": "https://cloud.google.com/vertex-ai/generative-ai/docs/video/overview",
+      "verification": "Revisar disponibilidad, cuotas, duración, precio y requisitos de proyecto."
+    },
+    {
+      "provider": "ComfyUI",
+      "category": "Interfaz y API autoalojable",
+      "documentation": "https://github.com/comfyanonymous/ComfyUI",
+      "verification": "Revisar workflows de video, modelos, VRAM y despliegue."
+    },
+    {
+      "provider": "Hugging Face Diffusers",
+      "category": "Biblioteca / modelos abiertos",
+      "documentation": "https://huggingface.co/docs/diffusers",
+      "verification": "Buscar pipelines de text-to-video e image-to-video y sus licencias."
+    },
+    {
+      "provider": "fal",
+      "category": "API agregadora comercial",
+      "documentation": "https://fal.ai/docs",
+      "verification": "Revisar modelo concreto, precio por segundo, límites y licencia del modelo."
+    }
+  ],
+  "candidate_count": 97,
+  "returned_count": 97,
+  "repositories": [
+    {
+      "repository": "nkxx188/ComfyUI-MiniMaxH3-Easy",
+      "url": "https://github.com/nkxx188/ComfyUI-MiniMaxH3-Easy",
+      "description": "The easiest way to use MiniMax H3. One compact workflow for T2V, I2V, first/last-frame, and reference video generation, with a unified multi-media input, powerful @ references, and inline dialogue blocks. Less wiring. More creative control.",
+      "stars": 879,
+      "forks": 60,
+      "language": "JavaScript",
+      "license": "MIT",
+      "created_at": "2026-08-05T11:45:52Z",
+      "updated_at": "2026-10-30T04:52:53Z",
+      "pushed_at": "2026-10-26T10:11:10Z",
+      "archived": false,
+      "topics": [],
+      "candidate_tags": [
+        "texto a video",
+        "imagen a video",
+        "workflow/interfaz"
+      ],
+      "matched_terms": [
+        "t2v",
+        "i2v",
+        "video generation",
+        "minimax"
+      ],
+      "relevance_score": 4,
+      "verification_status": "PENDIENTE: revisar README, licencia, código, demos y requisitos"
+    },
+    {
+      "repository": "tetherto/qvac",
+      "url": "https://github.com/tetherto/qvac",
+      "description": "Open-source local AI SDK - run AI on-device with no cloud, no API keys. Supports GGUF, RAG, image, music, and video generation, speech-to-text, P2P inference, and more. Cross-platform: Linux, macOS, Windows, Android, iOS.",
+      "stars": 738,
+      "forks": 146,
+      "language": "TypeScript",
+      "license": "Apache-2.0",
+      "created_at": "2026-01-03T01:59:01Z",
+      "updated_at": "2026-10-30T17:17:13Z",
+      "pushed_at": "2026-10-31T02:25:45Z",
+      "archived": false,
+      "topics": [
+        "ai-sdk",
+        "decentralized-ai",
+        "llama",
+        "llm-inference",
+        "local-ai",
+        "local-fine-tuning",
+        "local-llm",
+        "nodejs",
+        "on-device-ai",
+        "open-source-ai",
+        "open-source-llm",
+        "open-source-rag",
+        "open-source-speech-to-text",
+        "openai-compatible",
+        "p2p-ai",
+        "python",
+        "run-llm-locally",
+        "stable-diffusion",
+        "typescript",
+        "whisper"
+      ],
+      "candidate_tags": [
+        "integración/API probable",
+        "workflow/interfaz"
+      ],
+      "matched_terms": [
+        "video generation"
+      ],
+      "relevance_score": 1,
+      "verification_status": "PENDIENTE: revisar README, licencia, código, demos y requisitos"
+    },
+    {
+      "repository": "SamurAIGPT/Seedance-2.5-API",
+      "url": "https://github.com/SamurAIGPT/Seedance-2.5-API",
+      "description": "Python wrapper for ByteDance's Seedance 2.5 API — Text-to-Video, Image-to-Video, realistic human faces, native 4K, consistent character generation.",
+      "stars": 501,
+      "forks": 69,
+      "language": "Python",
+      "license": "MIT",
+      "created_at": "2023-06-07T14:26:34Z",
+      "updated_at": "2026-10-30T09:01:54Z",
+      "pushed_at": "2026-10-06T21:47:20Z",
+      "archived": false,
+      "topics": [
+        "ai-video",
+        "ai-video-generation",
+        "bytedance",
+        "bytedance-seedance",
+        "generative-ai",
+        "image-to-video-api",
+        "muapi",
+        "python-api-wrapper",
+        "python-sdk",
+        "seedance-2-5",
+        "seedance-2-5-api",
+        "seedance-api",
+        "sora-alternative",
+        "text-to-video-api",
+        "video-generation"
+      ],
+      "candidate_tags": [
+        "integración/API probable",
+        "texto a video",
+        "imagen a video"
+      ],
+      "matched_terms": [
+        "text-to-video",
+        "image-to-video",
+        "seedance",
+        "sora"
+      ],
+      "relevance_score": 4,
+      "verification_status": "PENDIENTE: revisar README, licencia, código, demos y requisitos"
+    },
+    {
+      "repository": "Anil-matcha/Seedance-2-API",
+      "url": "https://github.com/Anil-matcha/Seedance-2-API",
+      "description": "Python wrapper for ByteDance's Seedance 2.0 , Seedance 2.5 and Seedance 2 Mini API — Text-to-Video, Image-to-Video, realistic human faces, 1080p, consistent character generation.",
+      "stars": 361,
+      "forks": 63,
+      "language": "Python",
+      "license": "MIT",
+      "created_at": "2024-04-13T15:51:45Z",
+      "updated_at": "2026-10-28T02:32:28Z",
+      "pushed_at": "2026-10-06T21:47:20Z",
+      "archived": false,
+      "topics": [
+        "ai-video",
+        "ai-video-generation",
+        "bytedance",
+        "bytedance-seedance",
+        "generative-ai",
+        "image-to-video-api",
+        "muapi",
+        "python-api-wrapper",
+        "python-sdk",
+        "seedance-2-0",
+        "seedance-2-5",
+        "seedance-2-api",
+        "seedance-2-mini",
+        "seedance-2-mini-api",
+        "seedance-api",
+        "seedance-v2",
+        "seedance2",
+        "sora-alternative",
+        "text-to-video-api",
+        "video-generation"
+      ],
+      "candidate_tags": [
+        "integración/API probable",
+        "texto a video",
+        "imagen a video"
+      ],
+      "matched_terms": [
+        "text-to-video",
+        "image-to-video",
+        "seedance",
+        "sora"
+      ],
+      "relevance_score": 4,
+      "verification_status": "PENDIENTE: revisar README, licencia, código, demos y requisitos"
+    },
+    {
+      "repository": "Tenney95/AI-Canvas-tauri",
+      "url": "https://github.com/Tenney95/AI-Canvas-tauri",
+      "description": "Local-first AI canvas for visual workflows, AI short drama, image/video generation, storyboarding and asset management. ComfyUI, AI agents, MCP & Blender. 本地优先 AI 画布：AI短剧、AI资产管理、图像/视频生成、分镜制作与视频剪辑。",
+      "stars": 298,
+      "forks": 67,
+      "language": "TypeScript",
+      "license": "NOASSERTION",
+      "created_at": "2026-05-27T12:26:15Z",
+      "updated_at": "2026-10-31T04:56:30Z",
+      "pushed_at": "2026-10-31T05:06:36Z",
+      "archived": false,
+      "topics": [
+        "ai-agent",
+        "ai-asset-management",
+        "ai-canvas",
+        "ai-short-drama",
+        "ai-workflow",
+        "asset-management",
+        "blender",
+        "comfyui",
+        "generative-ai",
+        "image-generation",
+        "local-first",
+        "mcp",
+        "mcp-server",
+        "model-context-protocol",
+        "runninghub",
+        "storyboard",
+        "tauri",
+        "video-editor",
+        "video-generation",
+        "visual-workflow"
+      ],
+      "candidate_tags": [
+        "workflow/interfaz"
+      ],
+      "matched_terms": [
+        "video generation"
+      ],
+      "relevance_score": 1,
+      "verification_status": "PENDIENTE: revisar README, licencia, código, demos y requisitos"
+    },
+    {
+      "repository": "mrbizarro/Phosphene",
+      "url": "https://github.com/mrbizarro/Phosphene",
+      "description": "Free, open-source AI video generator for Mac. Run LTX-2.5 and MiniMax H3 (Hailuo) locally on Apple Silicon: text-to-video and image-to-video with sound, lip-sync, character LoRA training, songs from lyrics (YuE2) and image editing (Qwen-Image-Edit). One-click install via Pinokio. Offline: no cloud, no API key, no NVIDIA GPU.",
+      "stars": 274,
+      "forks": 41,
+      "language": "Python",
+      "license": "MIT",
+      "created_at": "2026-04-29T11:59:51Z",
+      "updated_at": "2026-10-30T15:38:24Z",
+      "pushed_at": "2026-10-30T08:48:50Z",
+      "archived": false,
+      "topics": [
+        "ai-filmmaking",
+        "ai-video",
+        "ai-video-generator",
+        "apple-silicon",
+        "hailuo",
+        "image-to-video",
+        "lip-sync",
+        "local-ai",
+        "lora-training",
+        "ltx-2",
+        "ltx-2-5",
+        "ltx-video",
+        "macos",
+        "minimax-h3",
+        "mlx",
+        "music-generation",
+        "offline-ai",
+        "pinokio",
+        "text-to-video",
+        "video-generation"
+      ],
+      "candidate_tags": [
+        "integración/API probable",
+        "texto a video",
+        "imagen a video"
+      ],
+      "matched_terms": [
+        "text-to-video",
+        "image-to-video",
+        "minimax",
+        "hailuo",
+        "ltx-video"
+      ],
+      "relevance_score": 5,
+      "verification_status": "PENDIENTE: revisar README, licencia, código, demos y requisitos"
+    },
+    {
+      "repository": "princepainter/ComfyUI-PainterNodes",
+      "url": "https://github.com/princepainter/ComfyUI-PainterNodes",
+      "description": "A comprehensive ComfyUI toolkit for video generation, image editing, and audio-driven lip‑sync, featuring Flux, MiniMax, LTX, Wan2.2 and advanced batch workflows.",
+      "stars": 205,
+      "forks": 9,
+      "language": "JavaScript",
+      "license": "MIT",
+      "created_at": "2026-01-31T02:22:55Z",
+      "updated_at": "2026-10-26T14:31:53Z",
+      "pushed_at": "2026-10-23T02:19:37Z",
+      "archived": false,
+      "topics": [
+        "minimax",
+        "minimax-h3"
+      ],
+      "candidate_tags": [
+        "workflow/interfaz"
+      ],
+      "matched_terms": [
+        "video generation",
+        "wan2",
+        "minimax"
+      ],
+      "relevance_score": 3,
+      "verification_status": "PENDIENTE: revisar README, licencia, código, demos y requisitos"
+    },
+    {
+      "repository": "Anil-matcha/awesome-flux-3-api-prompts",
+      "url": "https://github.com/Anil-matcha/awesome-flux-3-api-prompts",
+      "description": "FLUX 3 video API and image API guide, prompts, parameters, and examples for Black Forest Labs' unified text-to-video, image-to-video, image, and audio generation model",
+      "stars": 147,
+      "forks": 30,
+      "language": null,
+      "license": null,
+      "created_at": "2024-05-09T15:04:35Z",
+      "updated_at": "2026-10-19T15:40:31Z",
+      "pushed_at": "2026-10-19T15:40:28Z",
+      "archived": false,
+      "topics": [
+        "ai-image-generation",
+        "ai-video",
+        "ai-video-generation",
+        "api",
+        "black-forest-labs",
+        "flux",
+        "flux-3",
+        "flux-3-video-api",
+        "flux-api",
+        "generative-ai",
+        "image-generation",
+        "image-to-image",
+        "image-to-video",
+        "muapi",
+        "multimodal-ai",
+        "prompt-engineering",
+        "text-to-image",
+        "text-to-video",
+        "video-api",
+        "video-generation"
+      ],
+      "candidate_tags": [
+        "integración/API probable",
+        "texto a video",
+        "imagen a video"
+      ],
+      "matched_terms": [
+        "text-to-video",
+        "image-to-video"
+      ],
+      "relevance_score": 2,
+      "verification_status": "PENDIENTE: revisar README, licencia, código, demos y requisitos"
+    },
+    {
+      "repository": "qzw881130/AI-NovelFlow",
+      "url": "https://github.com/qzw881130/AI-NovelFlow",
+      "description": "NovelFlow 是一个将小说自动转换为视频的 AI 平台。文生图、图生图、图生视频都是基于开源模型及B站大佬分享的工作流。（NovelFlow is an AI platform that automatically converts novels into videos. Text-to-image, image-to-image, and image-to-video generation are all powered by open-source models and workflow templates shared by creators on Bilibili.）",
+      "stars": 117,
+      "forks": 33,
+      "language": "Python",
+      "license": "NOASSERTION",
+      "created_at": "2026-02-13T13:15:19Z",
+      "updated_at": "2026-10-30T02:43:19Z",
+      "pushed_at": "2026-10-30T15:45:48Z",
+      "archived": false,
+      "topics": [],
+      "candidate_tags": [
+        "imagen a video",
+        "workflow/interfaz"
+      ],
+      "matched_terms": [
+        "image-to-video",
+        "video generation"
+      ],
+      "relevance_score": 2,
+      "verification_status": "PENDIENTE: revisar README, licencia, código, demos y requisitos"
+    },
+    {
+      "repository": "Anil-matcha/Wan-3.0-API",
+      "url": "https://github.com/Anil-matcha/Wan-3.0-API",
+      "description": "Wan 3.0 API Python SDK and MCP server for AI video generation: text-to-video, image-to-video, multimodal references, uploads, and async job polling.",
+      "stars": 80,
+      "forks": 10,
+      "language": "Python",
+      "license": "MIT",
+      "created_at": "2024-08-27T11:09:03Z",
+      "updated_at": "2026-10-06T08:55:14Z",
+      "pushed_at": "2026-10-01T10:58:14Z",
+      "archived": false,
+      "topics": [
+        "ai-api",
+        "ai-video",
+        "ai-video-generation",
+        "alibaba-wan",
+        "api-wrapper",
+        "async-api",
+        "generative-ai",
+        "image-to-video-api",
+        "mcp-server",
+        "model-context-protocol",
+        "muapi",
+        "multimodal-ai",
+        "python-api-wrapper",
+        "python-sdk",
+        "text-to-video-api",
+        "video-api",
+        "video-generation",
+        "wan-3-0-api",
+        "wan-3-api",
+        "wan-api"
+      ],
+      "candidate_tags": [
+        "integración/API probable",
+        "texto a video",
+        "imagen a video"
+      ],
+      "matched_terms": [
+        "text-to-video",
+        "image-to-video",
+        "video generation"
+      ],
+      "relevance_score": 3,
+      "verification_status": "PENDIENTE: revisar README, licencia, código, demos y requisitos"
+    },
+    {
+      "repository": "Anil-matcha/MiniMax-H3-API",
+      "url": "https://github.com/Anil-matcha/MiniMax-H3-API",
+      "description": "Python SDK for the MiniMax H3 API — text-to-video, image-to-video, and first/last-frame video generation via Muapi.",
+      "stars": 56,
+      "forks": 12,
+      "language": "Python",
+      "license": "MIT",
+      "created_at": "2025-12-08T19:28:49Z",
+      "updated_at": "2026-10-26T13:59:30Z",
+      "pushed_at": "2026-10-01T10:57:59Z",
+      "archived": false,
+      "topics": [
+        "ai-tools",
+        "ai-video",
+        "api",
+        "artificial-intelligence",
+        "creative-ai",
+        "developer-tools",
+        "first-last-frame",
+        "generative-ai",
+        "hailuo",
+        "hailuo-ai",
+        "image-to-video",
+        "minimax",
+        "minimax-h3",
+        "muapi",
+        "python",
+        "python-sdk",
+        "text-to-video",
+        "video-ai",
+        "video-api",
+        "video-generation"
+      ],
+      "candidate_tags": [
+        "integración/API probable",
+        "texto a video",
+        "imagen a video"
+      ],
+      "matched_terms": [
+        "text-to-video",
+        "image-to-video",
+        "video generation",
+        "minimax",
+        "hailuo"
+      ],
+      "relevance_score": 5,
+      "verification_status": "PENDIENTE: revisar README, licencia, código, demos y requisitos"
+    },
+    {
+      "repository": "duncangrimsby/minimax-h3-api",
+      "url": "https://github.com/duncangrimsby/minimax-h3-api",
+      "description": "MiniMax H3 API guide for asynchronous text-to-video generation, model limits, request fields, polling, and Argolink integration.",
+      "stars": 39,
+      "forks": 0,
+      "language": "Python",
+      "license": "MIT",
+      "created_at": "2026-10-04T06:46:49Z",
+      "updated_at": "2026-10-19T03:54:05Z",
+      "pushed_at": "2026-10-19T03:54:00Z",
+      "archived": false,
+      "topics": [],
+      "candidate_tags": [
+        "integración/API probable",
+        "texto a video"
+      ],
+      "matched_terms": [
+        "text-to-video",
+        "video generation",
+        "minimax"
+      ],
+      "relevance_score": 3,
+      "verification_status": "PENDIENTE: revisar README, licencia, código, demos y requisitos"
+    },
+    {
+      "repository": "ishandutta2007/Video-Generation-Landscape",
+      "url": "https://github.com/ishandutta2007/Video-Generation-Landscape",
+      "description": "🎬🎬 Open-source AI video tools to generate text-to-video or image-to-video without monthly subscriptions or cloud restrictions🌟 Star if you like it! 🌟",
+      "stars": 37,
+      "forks": 19,
+      "language": null,
+      "license": "MIT",
+      "created_at": "2018-12-22T01:51:12Z",
+      "updated_at": "2026-10-26T20:24:18Z",
+      "pushed_at": "2026-09-07T08:42:24Z",
+      "archived": false,
+      "topics": [
+        "ai-video",
+        "deep-learning",
+        "diffusion-models",
+        "generative-ai",
+        "text-to-video",
+        "video-generation"
+      ],
+      "candidate_tags": [
+        "texto a video",
+        "imagen a video"
+      ],
+      "matched_terms": [
+        "text-to-video",
+        "image-to-video"
+      ],
+      "relevance_score": 2,
+      "verification_status": "PENDIENTE: revisar README, licencia, código, demos y requisitos"
+    },
+    {
+      "repository": "backblaze-labs/awesome-video-generation",
+      "url": "https://github.com/backblaze-labs/awesome-video-generation",
+      "description": "A curated list of AI video generation APIs, SDKs, and tools including text-to-video, video editing, multimodal generation, diffusion models, and generative AI platforms. Covers commercial services, open source models with APIs, and production-ready infrastructure for developers building video applications.",
+      "stars": 37,
+      "forks": 41,
+      "language": null,
+      "license": "CC0-1.0",
+      "created_at": "2026-03-02T18:15:48Z",
+      "updated_at": "2026-10-29T20:33:41Z",
+      "pushed_at": "2026-10-07T17:42:59Z",
+      "archived": false,
+      "topics": [
+        "ai-video",
+        "ai-video-editor",
+        "ai-video-generation",
+        "ai-video-generator",
+        "awesome-list",
+        "awesome-lists",
+        "b2-labs",
+        "diffusion-models",
+        "generative-ai",
+        "text-to-video",
+        "text-to-video-generation",
+        "video-editing",
+        "video-generation",
+        "video-processing"
+      ],
+      "candidate_tags": [
+        "integración/API probable",
+        "texto a video",
+        "edición de video",
+        "modelo/código abierto probable"
+      ],
+      "matched_terms": [
+        "text-to-video",
+        "video editing",
+        "video edit",
+        "video generation"
+      ],
+      "relevance_score": 4,
+      "verification_status": "PENDIENTE: revisar README, licencia, código, demos y requisitos"
+    },
+    {
+      "repository": "SamurAIGPT/veo4-video-generator",
+      "url": "https://github.com/SamurAIGPT/veo4-video-generator",
+      "description": "Open-source Veo video generator — production-ready Next.js SaaS for text-to-video, image-to-video, and multi-image editing powered by Google Veo. Stripe billing, credits, NextAuth, and Prisma out of the box.",
+      "stars": 31,
+      "forks": 21,
+      "language": "JavaScript",
+      "license": null,
+      "created_at": "2026-04-24T12:16:01Z",
+      "updated_at": "2026-10-29T10:50:11Z",
+      "pushed_at": "2026-10-22T18:29:41Z",
+      "archived": false,
+      "topics": [
+        "ai-saas",
+        "ai-video",
+        "ai-video-generator",
+        "generative-ai",
+        "generative-video",
+        "google-veo",
+        "image-to-video",
+        "nextauth",
+        "nextjs",
+        "nextjs-boilerplate",
+        "prisma",
+        "saas-boilerplate",
+        "stripe",
+        "tailwindcss",
+        "text-to-video",
+        "veo",
+        "veo-3",
+        "veo-ai",
+        "veo3",
+        "video-generator"
+      ],
+      "candidate_tags": [
+        "texto a video",
+        "imagen a video"
+      ],
+      "matched_terms": [
+        "text-to-video",
+        "image-to-video",
+        "veo"
+      ],
+      "relevance_score": 3,
+      "verification_status": "PENDIENTE: revisar README, licencia, código, demos y requisitos"
+    },
+    {
+      "repository": "IvenKooLab/minimax-h3-turing",
+      "url": "https://github.com/IvenKooLab/minimax-h3-turing",
+      "description": "MiniMax H3 video generation on 2080Ti 22G (Turing sm_75) - field-tested handbook, workflows & FAQ",
+      "stars": 22,
+      "forks": 4,
+      "language": "Python",
+      "license": "MIT",
+      "created_at": "2026-09-01T13:40:44Z",
+      "updated_at": "2026-10-30T16:56:15Z",
+      "pushed_at": "2026-10-30T15:25:11Z",
+      "archived": false,
+      "topics": [
+        "2080ti",
+        "benchmark",
+        "comfyui",
+        "comfyui-nodes",
+        "field-tested",
+        "frame-interpolation",
+        "lora",
+        "low-vram",
+        "minimax-h3",
+        "pdd",
+        "quantization",
+        "rtx-vsr",
+        "turing-gpu",
+        "video-diffusion",
+        "video-generation",
+        "w4a8"
+      ],
+      "candidate_tags": [
+        "workflow/interfaz"
+      ],
+      "matched_terms": [
+        "video generation",
+        "minimax"
+      ],
+      "relevance_score": 2,
+      "verification_status": "PENDIENTE: revisar README, licencia, código, demos y requisitos"
+    },
+    {
+      "repository": "useapi/examples",
+      "url": "https://github.com/useapi/examples",
+      "description": "Node.js and Python examples for the useapi.net APIs — PixVerse v2 text-to-video and image-to-video, InsightFaceSwap, and webhook-driven batch asset generation. Each example ships parallel example.js and example.py implementations.",
+      "stars": 20,
+      "forks": 1,
+      "language": "JavaScript",
+      "license": null,
+      "created_at": "2023-11-05T18:48:37Z",
+      "updated_at": "2026-10-06T21:59:19Z",
+      "pushed_at": "2026-10-06T21:59:15Z",
+      "archived": false,
+      "topics": [
+        "api",
+        "faceswap",
+        "generative-ai",
+        "image-to-video",
+        "insightfaceswap",
+        "nodejs",
+        "pixverse",
+        "python",
+        "rest-api",
+        "text-to-video",
+        "useapi",
+        "video-generation",
+        "webhook"
+      ],
+      "candidate_tags": [
+        "integración/API probable",
+        "texto a video",
+        "imagen a video",
+        "workflow/interfaz"
+      ],
+      "matched_terms": [
+        "text-to-video",
+        "image-to-video"
+      ],
+      "relevance_score": 2,
+      "verification_status": "PENDIENTE: revisar README, licencia, código, demos y requisitos"
+    },
+    {
+      "repository": "Anil-matcha/seedance2.5-comfyui",
+      "url": "https://github.com/Anil-matcha/seedance2.5-comfyui",
+      "description": "Seedance 2.0 ComfyUI: custom nodes and workflows for ByteDance video generation via MuAPI — text-to-video, image-to-video, Omni Reference, consistent characters, and video extend.",
+      "stars": 19,
+      "forks": 1,
+      "language": "Python",
+      "license": null,
+      "created_at": "2026-08-02T00:02:19Z",
+      "updated_at": "2026-10-25T03:03:10Z",
+      "pushed_at": "2026-10-15T08:17:16Z",
+      "archived": false,
+      "topics": [
+        "ai-animation",
+        "ai-video",
+        "comfyui",
+        "comfyui-custom-nodes",
+        "comfyui-plugin",
+        "comfyui-workflows",
+        "custom-nodes",
+        "first-last-frame",
+        "generative-ai",
+        "image-to-video",
+        "muapi",
+        "open-source",
+        "python",
+        "seedance",
+        "seedance-2-5",
+        "seedance-25",
+        "text-to-video",
+        "video-api",
+        "video-generation",
+        "workflow-automation"
+      ],
+      "candidate_tags": [
+        "integración/API probable",
+        "texto a video",
+        "imagen a video",
+        "workflow/interfaz"
+      ],
+      "matched_terms": [
+        "text-to-video",
+        "image-to-video",
+        "video generation",
+        "seedance"
+      ],
+      "relevance_score": 4,
+      "verification_status": "PENDIENTE: revisar README, licencia, código, demos y requisitos"
+    },
+    {
+      "repository": "TechWithTy/kling",
+      "url": "https://github.com/TechWithTy/kling",
+      "description": "Kling AI Python SDK - Production-ready, type-safe Python client for Kling AI's cutting-edge video generation and media processing APIs. Supports async/await, Pydantic models, and comprehensive error h",
+      "stars": 15,
+      "forks": 5,
+      "language": "Python",
+      "license": null,
+      "created_at": "2025-05-28T22:02:21Z",
+      "updated_at": "2026-08-30T06:34:53Z",
+      "pushed_at": "2026-01-26T02:44:30Z",
+      "archived": false,
+      "topics": [
+        "ai-video",
+        "api-client",
+        "api-integration",
+        "async-io",
+        "computer-vision",
+        "developer-tools",
+        "generative-ai",
+        "kling-ai",
+        "media-processing",
+        "ml-ops",
+        "production-ready",
+        "pydantic",
+        "python-sdk",
+        "text-to-video",
+        "type-hints"
+      ],
+      "candidate_tags": [
+        "integración/API probable",
+        "texto a video"
+      ],
+      "matched_terms": [
+        "text-to-video",
+        "video generation",
+        "kling"
+      ],
+      "relevance_score": 3,
+      "verification_status": "PENDIENTE: revisar README, licencia, código, demos y requisitos"
+    },
+    {
+      "repository": "DevvGwardo/grok-imagine-video",
+      "url": "https://github.com/DevvGwardo/grok-imagine-video",
+      "description": "Video generation skill for OpenClaw. Text-to-video, image-to-video, and video editing via natural language using xAI's Grok Imagine API.",
+      "stars": 14,
+      "forks": 6,
+      "language": "Python",
+      "license": "MIT",
+      "created_at": "2026-02-12T01:11:01Z",
+      "updated_at": "2026-10-23T17:51:46Z",
+      "pushed_at": "2026-10-22T13:46:40Z",
+      "archived": false,
+      "topics": [
+        "grok",
+        "openclaw",
+        "python",
+        "text-to-video",
+        "video-generation",
+        "xai"
+      ],
+      "candidate_tags": [
+        "integración/API probable",
+        "texto a video",
+        "imagen a video",
+        "edición de video"
+      ],
+      "matched_terms": [
+        "text-to-video",
+        "image-to-video",
+        "video editing",
+        "video edit",
+        "video generation"
+      ],
+      "relevance_score": 5,
+      "verification_status": "PENDIENTE: revisar README, licencia, código, demos y requisitos"
+    },
+    {
+      "repository": "awslabs/world-models-inference",
+      "url": "https://github.com/awslabs/world-models-inference",
+      "description": "One-command deployment of open-source world models on AWS. Each model is a self-contained cartridge served behind a uniform API on EC2 or SageMaker — real-time interactive (browser-playable) and batch video generation.",
+      "stars": 12,
+      "forks": 3,
+      "language": "Python",
+      "license": "Apache-2.0",
+      "created_at": "2026-09-17T18:12:53Z",
+      "updated_at": "2026-10-26T14:35:58Z",
+      "pushed_at": "2026-10-26T14:35:57Z",
+      "archived": false,
+      "topics": [
+        "aws",
+        "ec2",
+        "generative-ai",
+        "inference",
+        "physical-ai",
+        "sagemaker",
+        "world-models"
+      ],
+      "candidate_tags": [
+        "integración/API probable"
+      ],
+      "matched_terms": [
+        "video generation"
+      ],
+      "relevance_score": 1,
+      "verification_status": "PENDIENTE: revisar README, licencia, código, demos y requisitos"
+    },
+    {
+      "repository": "SekiyoKana/minimax-studio-webui",
+      "url": "https://github.com/SekiyoKana/minimax-studio-webui",
+      "description": "MiniMax H3 FP8 video generation service with web UI, API, ComfyUI workflows, Turbo LoRA, model manifest, and cloud GPU installer.",
+      "stars": 10,
+      "forks": 1,
+      "language": "Python",
+      "license": "MIT",
+      "created_at": "2026-08-07T02:54:00Z",
+      "updated_at": "2026-10-26T07:19:23Z",
+      "pushed_at": "2026-10-23T17:21:14Z",
+      "archived": false,
+      "topics": [
+        "ai-agents",
+        "comfyui",
+        "comfyui-api",
+        "minimax",
+        "minimax-h3",
+        "minimax-m3",
+        "tts",
+        "webui"
+      ],
+      "candidate_tags": [
+        "integración/API probable",
+        "workflow/interfaz"
+      ],
+      "matched_terms": [
+        "video generation",
+        "minimax"
+      ],
+      "relevance_score": 2,
+      "verification_status": "PENDIENTE: revisar README, licencia, código, demos y requisitos"
+    },
+    {
+      "repository": "aihaipan/ComfyUI-Universal_Prompt_Optimizer",
+      "url": "https://github.com/aihaipan/ComfyUI-Universal_Prompt_Optimizer",
+      "description": "All-in-one MiniMax H3 video generation ecosystem for ComfyUI. 3-node workflow, Auto-Prompt, Storyboard, RefMod, and 2-Stage Upscaling.  (中文备选：面向 ComfyUI 的 MiniMax H3 终极全能生态。含全自动提示词、无限时长故事板、RefMod角色一致性及二采放大。仅需3个节点即可生成高质量视频。)",
+      "stars": 6,
+      "forks": 0,
+      "language": "JavaScript",
+      "license": "GPL-3.0",
+      "created_at": "2026-09-19T04:49:52Z",
+      "updated_at": "2026-10-29T17:57:37Z",
+      "pushed_at": "2026-10-29T09:00:25Z",
+      "archived": false,
+      "topics": [
+        "ai-video",
+        "comfyui",
+        "comfyui-nodes",
+        "h3-director",
+        "minimax-h3",
+        "prompt-optimizer",
+        "refmod",
+        "text-to-video"
+      ],
+      "candidate_tags": [
+        "texto a video",
+        "workflow/interfaz"
+      ],
+      "matched_terms": [
+        "text-to-video",
+        "video generation",
+        "minimax"
+      ],
+      "relevance_score": 3,
+      "verification_status": "PENDIENTE: revisar README, licencia, código, demos y requisitos"
+    },
+    {
+      "repository": "xm6018924/BSAI-ComfyUI-TaoMate",
+      "url": "https://github.com/xm6018924/BSAI-ComfyUI-TaoMate",
+      "description": "BSAI ComfyUI TaoMate: ComfyUI native nodes + workflows for TaoMate-H3 (MiniMax H3 3-step distilled streaming LoRA + KV-cache stream continuation), one-click long audio-video / digital-human generation.",
+      "stars": 5,
+      "forks": 3,
+      "language": "Python",
+      "license": null,
+      "created_at": "2026-09-14T01:37:28Z",
+      "updated_at": "2026-10-18T01:48:42Z",
+      "pushed_at": "2026-10-18T01:48:39Z",
+      "archived": false,
+      "topics": [],
+      "candidate_tags": [
+        "workflow/interfaz"
+      ],
+      "matched_terms": [
+        "minimax"
+      ],
+      "relevance_score": 1,
+      "verification_status": "PENDIENTE: revisar README, licencia, código, demos y requisitos"
+    },
+    {
+      "repository": "HongxiangGong/Gong_comfyui",
+      "url": "https://github.com/HongxiangGong/Gong_comfyui",
+      "description": "ComfyUI workflows and a custom node for local MiniMax H3 video generation: white-model/green-screen to finished video, and the reverse. 作者：宫鸿翔 (Hongxiang Gong)",
+      "stars": 5,
+      "forks": 1,
+      "language": "Python",
+      "license": "MIT",
+      "created_at": "2026-10-09T12:22:52Z",
+      "updated_at": "2026-10-24T03:30:53Z",
+      "pushed_at": "2026-10-24T03:30:49Z",
+      "archived": false,
+      "topics": [],
+      "candidate_tags": [
+        "workflow/interfaz"
+      ],
+      "matched_terms": [
+        "video generation",
+        "minimax"
+      ],
+      "relevance_score": 2,
+      "verification_status": "PENDIENTE: revisar README, licencia, código, demos y requisitos"
+    },
+    {
+      "repository": "api-evangelist/zhipu-ai",
+      "url": "https://github.com/api-evangelist/zhipu-ai",
+      "description": "Zhipu AI — independent third-party profile of a public API surface, by API Evangelist. Zhipu AI (Z.ai / BigModel) is a Chinese AI research lab and the developer of the GLM (General Language Model) family. The Z.ai open platform exposes chat completions, vision, image generation, video generation, web search, audio transcription, embeddings, fine-tu",
+      "stars": 4,
+      "forks": 0,
+      "language": null,
+      "license": null,
+      "created_at": "2026-05-08T19:05:58Z",
+      "updated_at": "2026-10-26T06:26:56Z",
+      "pushed_at": "2026-10-26T06:26:52Z",
+      "archived": false,
+      "topics": [
+        "ai",
+        "apis-json",
+        "chatglm",
+        "glm",
+        "inference",
+        "llm",
+        "multimodal"
+      ],
+      "candidate_tags": [
+        "integración/API probable"
+      ],
+      "matched_terms": [
+        "video generation"
+      ],
+      "relevance_score": 1,
+      "verification_status": "PENDIENTE: revisar README, licencia, código, demos y requisitos"
+    },
+    {
+      "repository": "Anil-matcha/Wan-3.0-Prime-API",
+      "url": "https://github.com/Anil-matcha/Wan-3.0-Prime-API",
+      "description": "Wan 3.0 Prime API Python SDK and MCP server for higher-fidelity AI video generation: text-to-video, image-to-video, multimodal references, uploads, and async job polling.",
+      "stars": 3,
+      "forks": 0,
+      "language": "Python",
+      "license": "MIT",
+      "created_at": "2026-08-25T17:44:10Z",
+      "updated_at": "2026-09-30T12:36:59Z",
+      "pushed_at": "2026-09-28T12:58:26Z",
+      "archived": false,
+      "topics": [
+        "ai-api",
+        "ai-video",
+        "ai-video-generation",
+        "alibaba-wan",
+        "api-wrapper",
+        "async-api",
+        "generative-ai",
+        "image-to-video-api",
+        "mcp-server",
+        "model-context-protocol",
+        "muapi",
+        "multimodal-ai",
+        "python-api-wrapper",
+        "python-sdk",
+        "text-to-video-api",
+        "video-api",
+        "video-generation",
+        "wan-3-0-api",
+        "wan-3-prime-api",
+        "wan-api"
+      ],
+      "candidate_tags": [
+        "integración/API probable",
+        "texto a video",
+        "imagen a video"
+      ],
+      "matched_terms": [
+        "text-to-video",
+        "image-to-video",
+        "video generation"
+      ],
+      "relevance_score": 3,
+      "verification_status": "PENDIENTE: revisar README, licencia, código, demos y requisitos"
+    },
+    {
+      "repository": "Ponlawat/ComfyUI-LTXVideo",
+      "url": "https://github.com/Ponlawat/ComfyUI-LTXVideo",
+      "description": "🎥 Enhance video generation with ComfyUI-LTXVideo by leveraging custom nodes for the LTX-2 model, improving your creative workflows today.",
+      "stars": 3,
+      "forks": 0,
+      "language": "Python",
+      "license": "NOASSERTION",
+      "created_at": "2026-01-22T03:44:13Z",
+      "updated_at": "2026-10-14T07:04:09Z",
+      "pushed_at": "2026-10-14T07:04:05Z",
+      "archived": false,
+      "topics": [
+        "agent",
+        "cemu",
+        "cemu-emulator",
+        "comfy-ui",
+        "comfyui-ltxvideo",
+        "copilot",
+        "cpp",
+        "emulation",
+        "emulator",
+        "extract-data",
+        "layout-analysis",
+        "nintendo",
+        "python",
+        "rag",
+        "stable-diffusion"
+      ],
+      "candidate_tags": [
+        "workflow/interfaz"
+      ],
+      "matched_terms": [
+        "video generation"
+      ],
+      "relevance_score": 1,
+      "verification_status": "PENDIENTE: revisar README, licencia, código, demos y requisitos"
+    },
+    {
+      "repository": "ortegarod/flixml",
+      "url": "https://github.com/ortegarod/flixml",
+      "description": "Open-source creative studio for AI image, video & voice generation. ComfyUI-native workflows, self-hostable, API-first.",
+      "stars": 3,
+      "forks": 0,
+      "language": "Python",
+      "license": "AGPL-3.0",
+      "created_at": "2026-05-23T20:16:36Z",
+      "updated_at": "2026-10-22T09:04:28Z",
+      "pushed_at": "2026-10-19T16:32:40Z",
+      "archived": false,
+      "topics": [
+        "ai-agents",
+        "ai-filmmaking",
+        "ai-image-generation",
+        "comfyui",
+        "creative-tools",
+        "flux",
+        "generative-ai",
+        "image-to-video",
+        "lip-sync",
+        "lora-training",
+        "open-source",
+        "qwen-image",
+        "self-hosted",
+        "stable-diffusion",
+        "text-to-image",
+        "text-to-speech",
+        "text-to-video",
+        "typescript",
+        "video-generation",
+        "wan"
+      ],
+      "candidate_tags": [
+        "integración/API probable",
+        "texto a video",
+        "imagen a video",
+        "workflow/interfaz"
+      ],
+      "matched_terms": [
+        "text-to-video",
+        "image-to-video"
+      ],
+      "relevance_score": 2,
+      "verification_status": "PENDIENTE: revisar README, licencia, código, demos y requisitos"
+    },
+    {
+      "repository": "caitongbo/ComfyUI-MiniMaxH3-LongVideo-DigitalHuman",
+      "url": "https://github.com/caitongbo/ComfyUI-MiniMaxH3-LongVideo-DigitalHuman",
+      "description": "Audio-driven digital human lip-sync and long-form video generation workflow for ComfyUI and MiniMax H3.",
+      "stars": 3,
+      "forks": 0,
+      "language": "Python",
+      "license": "GPL-3.0",
+      "created_at": "2026-09-21T18:08:29Z",
+      "updated_at": "2026-10-25T08:34:12Z",
+      "pushed_at": "2026-10-25T08:34:09Z",
+      "archived": false,
+      "topics": [
+        "audio-driven-talking-face",
+        "comfyui",
+        "digital-human",
+        "lip-sync",
+        "long-video-generation",
+        "minimax-h3",
+        "video-generation"
+      ],
+      "candidate_tags": [
+        "workflow/interfaz"
+      ],
+      "matched_terms": [
+        "video generation",
+        "minimax"
+      ],
+      "relevance_score": 2,
+      "verification_status": "PENDIENTE: revisar README, licencia, código, demos y requisitos"
+    },
+    {
+      "repository": "0c0/ComfyUI-Roundabout",
+      "url": "https://github.com/0c0/ComfyUI-Roundabout",
+      "description": "Expose ComfyUI workflows as an OpenAI-compatible REST API and an MCP server, so AI agents drive local image/video generation with semantic parameters instead of whole workflow graphs.",
+      "stars": 3,
+      "forks": 1,
+      "language": "Python",
+      "license": "MIT",
+      "created_at": "2026-09-11T05:12:33Z",
+      "updated_at": "2026-10-28T08:54:03Z",
+      "pushed_at": "2026-10-28T08:53:59Z",
+      "archived": false,
+      "topics": [],
+      "candidate_tags": [
+        "integración/API probable",
+        "workflow/interfaz"
+      ],
+      "matched_terms": [
+        "video generation"
+      ],
+      "relevance_score": 1,
+      "verification_status": "PENDIENTE: revisar README, licencia, código, demos y requisitos"
+    },
+    {
+      "repository": "usvideoapi/ai-video-api",
+      "url": "https://github.com/usvideoapi/ai-video-api",
+      "description": "AI video API for text-to-video and image-to-video workflows, prompt optimization, and ad-ready creative generation.",
+      "stars": 2,
+      "forks": 1,
+      "language": "Python",
+      "license": "MIT",
+      "created_at": "2026-04-25T18:26:08Z",
+      "updated_at": "2026-09-02T23:13:43Z",
+      "pushed_at": "2026-09-01T21:11:27Z",
+      "archived": false,
+      "topics": [
+        "advertising",
+        "ai-video-api",
+        "creative-automation",
+        "developer-tools",
+        "ecommerce",
+        "image-to-video",
+        "marketing-automation",
+        "prompt-engineering",
+        "text-to-video",
+        "video-generation-api"
+      ],
+      "candidate_tags": [
+        "integración/API probable",
+        "texto a video",
+        "imagen a video",
+        "workflow/interfaz"
+      ],
+      "matched_terms": [
+        "text-to-video",
+        "image-to-video",
+        "video workflow"
+      ],
+      "relevance_score": 3,
+      "verification_status": "PENDIENTE: revisar README, licencia, código, demos y requisitos"
+    },
+    {
+      "repository": "chen704290901chen/dsh-newapi-video",
+      "url": "https://github.com/chen704290901chen/dsh-newapi-video",
+      "description": "Call a new-api (one-api style) relay station's video model from the conversation, with @-referenced image/video materials plus a prompt. Supports Seedance 2.0 and Happyhorse text-to-video / image-to-video, four relay protocols, task ledger and a visual generation panel.",
+      "stars": 2,
+      "forks": 0,
+      "language": "JavaScript",
+      "license": null,
+      "created_at": "2026-09-08T08:57:34Z",
+      "updated_at": "2026-10-30T06:56:04Z",
+      "pushed_at": "2026-09-13T13:43:13Z",
+      "archived": false,
+      "topics": [
+        "dsh-plugin"
+      ],
+      "candidate_tags": [
+        "integración/API probable",
+        "texto a video",
+        "imagen a video"
+      ],
+      "matched_terms": [
+        "text-to-video",
+        "image-to-video",
+        "video model",
+        "seedance"
+      ],
+      "relevance_score": 4,
+      "verification_status": "PENDIENTE: revisar README, licencia, código, demos y requisitos"
+    },
+    {
+      "repository": "anujsehrawat1/flow",
+      "url": "https://github.com/anujsehrawat1/flow",
+      "description": "An automated creative suite, interactive terminal CLI, and API proxy for Google Labs Flow (Veo 3.1 & Imagen).   │ Support image generation, text-to-video, image-to-video, and multi-scene movie compilation using FFmpeg.",
+      "stars": 2,
+      "forks": 0,
+      "language": "JavaScript",
+      "license": null,
+      "created_at": "2026-08-14T17:51:52Z",
+      "updated_at": "2026-09-16T16:28:29Z",
+      "pushed_at": "2026-09-14T23:03:03Z",
+      "archived": false,
+      "topics": [],
+      "candidate_tags": [
+        "integración/API probable",
+        "texto a video",
+        "imagen a video"
+      ],
+      "matched_terms": [
+        "text-to-video",
+        "image-to-video",
+        "veo"
+      ],
+      "relevance_score": 3,
+      "verification_status": "PENDIENTE: revisar README, licencia, código, demos y requisitos"
+    },
+    {
+      "repository": "Wenyari/Mirage",
+      "url": "https://github.com/Wenyari/Mirage",
+      "description": "🎬 Open-source AIGC platform for text-to-video and text-to-image. Self-hosted multi-provider AI gateway — Sora, Veo, Nano Banana, ComfyUI — with a weighted API key pool, credits economy, membership tiers, and a full admin console. Flask + React + MySQL + Redis.",
+      "stars": 2,
+      "forks": 0,
+      "language": "Python",
+      "license": "MIT",
+      "created_at": "2025-12-29T08:19:18Z",
+      "updated_at": "2026-10-09T02:19:00Z",
+      "pushed_at": "2026-09-24T09:26:42Z",
+      "archived": false,
+      "topics": [
+        "admin-dashboard",
+        "aigc",
+        "comfyui",
+        "mysql",
+        "python",
+        "react",
+        "redis",
+        "saas-boilerplate",
+        "self-hosted",
+        "text-to-image",
+        "text-to-video"
+      ],
+      "candidate_tags": [
+        "integración/API probable",
+        "texto a video",
+        "workflow/interfaz"
+      ],
+      "matched_terms": [
+        "text-to-video",
+        "veo",
+        "sora"
+      ],
+      "relevance_score": 3,
+      "verification_status": "PENDIENTE: revisar README, licencia, código, demos y requisitos"
+    },
+    {
+      "repository": "uby174/ftl-studio",
+      "url": "https://github.com/uby174/ftl-studio",
+      "description": "Open-source AI video generator with consistent characters: compile one sentence into a directed multi-shot cinematic film. Veo 3.1 + Gemini + Claude pipeline — text-to-video, image-to-video, prompt architecture (FTPA/FTL).",
+      "stars": 2,
+      "forks": 0,
+      "language": "HTML",
+      "license": "MIT",
+      "created_at": "2026-08-05T12:54:45Z",
+      "updated_at": "2026-10-07T17:07:43Z",
+      "pushed_at": "2026-10-07T17:06:18Z",
+      "archived": false,
+      "topics": [
+        "ai-film",
+        "ai-filmmaking",
+        "ai-video",
+        "character-consistency",
+        "cinematic",
+        "claude",
+        "ffmpeg",
+        "filmmaking",
+        "gemini",
+        "generative-ai",
+        "google-flow",
+        "image-to-video",
+        "prompt-engineering",
+        "sora",
+        "storyboard",
+        "text-to-video",
+        "veo",
+        "veo3",
+        "video-generation"
+      ],
+      "candidate_tags": [
+        "texto a video",
+        "imagen a video"
+      ],
+      "matched_terms": [
+        "text-to-video",
+        "image-to-video",
+        "veo",
+        "sora"
+      ],
+      "relevance_score": 4,
+      "verification_status": "PENDIENTE: revisar README, licencia, código, demos y requisitos"
+    },
+    {
+      "repository": "Bryanva25/veo-api",
+      "url": "https://github.com/Bryanva25/veo-api",
+      "description": "Enable text-to-video and image-to-video generation using Google Veo 3 API with a simple, efficient interface and broad format support.",
+      "stars": 2,
+      "forks": 0,
+      "language": "Ruby",
+      "license": null,
+      "created_at": "2023-11-07T20:26:42Z",
+      "updated_at": "2026-10-12T04:47:08Z",
+      "pushed_at": "2026-10-12T04:47:04Z",
+      "archived": false,
+      "topics": [
+        "ai-video-generator",
+        "api",
+        "chatgpt-api",
+        "claude-ai",
+        "flux",
+        "gemini-model",
+        "generative-ai-video",
+        "google-cloud",
+        "imagen",
+        "kandinsky",
+        "lyria",
+        "nano-banana",
+        "prompt-enhancement",
+        "recraftv3",
+        "sora-ai",
+        "veo2",
+        "video-editing-api"
+      ],
+      "candidate_tags": [
+        "integración/API probable",
+        "texto a video",
+        "imagen a video"
+      ],
+      "matched_terms": [
+        "text-to-video",
+        "image-to-video",
+        "video generation",
+        "veo",
+        "sora"
+      ],
+      "relevance_score": 5,
+      "verification_status": "PENDIENTE: revisar README, licencia, código, demos y requisitos"
+    },
+    {
+      "repository": "api-evangelist/minimax-ai",
+      "url": "https://github.com/api-evangelist/minimax-ai",
+      "description": "MiniMax — independent third-party profile of a public API surface, by API Evangelist. MiniMax is a Chinese foundation model company offering full-stack multimodal APIs: text generation (M2.7, M2.5, M2.1, M2, M1, Text-01), speech synthesis (Speech 2.8/2.6/2.5), voice cloning, voice design, image generation (Image-01), video generation (Hailuo 2.3),",
+      "stars": 2,
+      "forks": 0,
+      "language": null,
+      "license": null,
+      "created_at": "2026-05-08T19:05:56Z",
+      "updated_at": "2026-10-30T19:52:20Z",
+      "pushed_at": "2026-10-30T19:52:16Z",
+      "archived": false,
+      "topics": [
+        "ai",
+        "apis-json",
+        "image",
+        "inference",
+        "llm",
+        "multimodal",
+        "music",
+        "video",
+        "voice"
+      ],
+      "candidate_tags": [
+        "integración/API probable"
+      ],
+      "matched_terms": [
+        "video generation",
+        "minimax",
+        "hailuo"
+      ],
+      "relevance_score": 3,
+      "verification_status": "PENDIENTE: revisar README, licencia, código, demos y requisitos"
+    },
+    {
+      "repository": "lpg-it/kie-go",
+      "url": "https://github.com/lpg-it/kie-go",
+      "description": "High-performance Go SDK for KIE AI. Image & video generation with Imagen4, Sora 2, Kling, Runway, Flux. HTTP/2, rate limiting, circuit breaker. Text-to-image, text-to-video API client.",
+      "stars": 1,
+      "forks": 0,
+      "language": "Go",
+      "license": "MIT",
+      "created_at": "2026-01-14T01:53:05Z",
+      "updated_at": "2026-04-22T15:04:11Z",
+      "pushed_at": "2026-04-22T15:04:14Z",
+      "archived": false,
+      "topics": [],
+      "candidate_tags": [
+        "integración/API probable",
+        "texto a video"
+      ],
+      "matched_terms": [
+        "text-to-video",
+        "video generation",
+        "kling",
+        "runway",
+        "sora",
+        "gen4"
+      ],
+      "relevance_score": 6,
+      "verification_status": "PENDIENTE: revisar README, licencia, código, demos y requisitos"
+    },
+    {
+      "repository": "gate/gate-ai-typescript",
+      "url": "https://github.com/gate/gate-ai-typescript",
+      "description": "Official TypeScript and JavaScript SDK for Gate AI APIs, providing typed clients for chat, responses, embeddings, images, audio, video generation, streaming, retries, and error handling.",
+      "stars": 1,
+      "forks": 0,
+      "language": "TypeScript",
+      "license": "MIT",
+      "created_at": "2026-07-20T03:57:00Z",
+      "updated_at": "2026-08-16T20:17:02Z",
+      "pushed_at": "2026-07-20T06:28:09Z",
+      "archived": false,
+      "topics": [],
+      "candidate_tags": [
+        "integración/API probable"
+      ],
+      "matched_terms": [
+        "video generation"
+      ],
+      "relevance_score": 1,
+      "verification_status": "PENDIENTE: revisar README, licencia, código, demos y requisitos"
+    },
+    {
+      "repository": "matthewdeaves/rockport",
+      "url": "https://github.com/matthewdeaves/rockport",
+      "description": "OpenAI-compatible LiteLLM proxy on EC2 behind Cloudflare Tunnel — routes Claude Code and any OpenAI SDK client to AWS Bedrock models. Chat, image generation (Nova Canvas, Titan, Stability AI), video generation (Nova Reel, Luma Ray2), virtual API keys, budgets, and spend tracking. Terraform-managed infrastructure with hardened systemd services.",
+      "stars": 1,
+      "forks": 0,
+      "language": "Shell",
+      "license": "Apache-2.0",
+      "created_at": "2026-03-13T17:46:01Z",
+      "updated_at": "2026-09-12T10:58:49Z",
+      "pushed_at": "2026-09-12T10:58:46Z",
+      "archived": false,
+      "topics": [
+        "aws-bedrock",
+        "claude-code",
+        "cloudflare-access",
+        "cloudflare-tunnel",
+        "fastapi",
+        "image-generation",
+        "infrastructure-as-code",
+        "litellm",
+        "luma-ray2",
+        "nova-canvas",
+        "nova-reel",
+        "openai-compatible",
+        "stability-ai",
+        "terraform",
+        "video-generation"
+      ],
+      "candidate_tags": [
+        "integración/API probable"
+      ],
+      "matched_terms": [
+        "video generation"
+      ],
+      "relevance_score": 1,
+      "verification_status": "PENDIENTE: revisar README, licencia, código, demos y requisitos"
+    },
+    {
+      "repository": "SHalimoosavi/SYJ-Video-Forge",
+      "url": "https://github.com/SHalimoosavi/SYJ-Video-Forge",
+      "description": "Open-source text-to-video and image-to-video app. Static frontend for GitHub Pages, a local backend, and pluggable inference providers. No paid service required.",
+      "stars": 1,
+      "forks": 0,
+      "language": "Python",
+      "license": "NOASSERTION",
+      "created_at": "2026-10-11T12:03:27Z",
+      "updated_at": "2026-10-16T09:20:54Z",
+      "pushed_at": "2026-10-11T23:06:24Z",
+      "archived": false,
+      "topics": [
+        "ai-video",
+        "ffmpeg",
+        "image-to-video",
+        "image-to-video-generation",
+        "inference-providers",
+        "javascript",
+        "local-first",
+        "local-first-software",
+        "open-source",
+        "python",
+        "self-hosted",
+        "text-to-video",
+        "text-to-video-generation",
+        "video-generation",
+        "video-generation-tool"
+      ],
+      "candidate_tags": [
+        "texto a video",
+        "imagen a video"
+      ],
+      "matched_terms": [
+        "text-to-video",
+        "image-to-video"
+      ],
+      "relevance_score": 2,
+      "verification_status": "PENDIENTE: revisar README, licencia, código, demos y requisitos"
+    },
+    {
+      "repository": "liuda1999/ComfyUI-Omni-Controller-SKILL",
+      "url": "https://github.com/liuda1999/ComfyUI-Omni-Controller-SKILL",
+      "description": "让任何 AI 智能体一句话全自动接管 ComfyUI：自然语言驱动图文/视频生成，工业级六阶段工作流，强制预检，硬件自适应，跨系列模型隔离，内置本地 CLI（对齐官方 comfy-cli）。 Let any AI agent fully automate ComfyUI with one sentence: natural-language image/video generation, industrial six-stage workflows, mandatory pre-flight, hardware-adaptive tuning, and a built-in local CLI aligned with the official comfy-cli.",
+      "stars": 1,
+      "forks": 0,
+      "language": "Python",
+      "license": "Apache-2.0",
+      "created_at": "2026-07-10T16:14:17Z",
+      "updated_at": "2026-10-17T16:26:37Z",
+      "pushed_at": "2026-10-13T20:18:35Z",
+      "archived": false,
+      "topics": [
+        "ai-agent",
+        "ai-workflow",
+        "automation",
+        "comfyui",
+        "comfyui-cli",
+        "comfyui-nodes",
+        "comfyui-workflow",
+        "gguf",
+        "image-generation",
+        "image-to-video",
+        "llm-agent",
+        "minimax-h3",
+        "natural-language",
+        "skill",
+        "stable-diffusion",
+        "text-to-video",
+        "video-generation",
+        "wan22",
+        "workflow",
+        "workflow-automation"
+      ],
+      "candidate_tags": [
+        "texto a video",
+        "imagen a video",
+        "workflow/interfaz"
+      ],
+      "matched_terms": [
+        "text-to-video",
+        "image-to-video",
+        "video generation",
+        "wan2",
+        "minimax"
+      ],
+      "relevance_score": 5,
+      "verification_status": "PENDIENTE: revisar README, licencia, código, demos y requisitos"
+    },
+    {
+      "repository": "fukkun2705-commits/MiniMax_H3_R2V_MV_Studio_FaceRefine_LatentUpscale",
+      "url": "https://github.com/fukkun2705-commits/MiniMax_H3_R2V_MV_Studio_FaceRefine_LatentUpscale",
+      "description": "ComfyUI workflow for MiniMax H3 R2V music video generation with seamless multi-clip Motion Context, FaceRefine, PDD Acc and RTX VSR 2x upscaling.",
+      "stars": 1,
+      "forks": 0,
+      "language": null,
+      "license": "MIT",
+      "created_at": "2026-09-23T08:54:52Z",
+      "updated_at": "2026-10-23T15:31:42Z",
+      "pushed_at": "2026-10-23T15:31:37Z",
+      "archived": false,
+      "topics": [],
+      "candidate_tags": [
+        "workflow/interfaz"
+      ],
+      "matched_terms": [
+        "video generation",
+        "minimax"
+      ],
+      "relevance_score": 2,
+      "verification_status": "PENDIENTE: revisar README, licencia, código, demos y requisitos"
+    },
+    {
+      "repository": "fukkun2705-commits/MiniMax-H3-All-in-One-Video-Studio",
+      "url": "https://github.com/fukkun2705-commits/MiniMax-H3-All-in-One-Video-Studio",
+      "description": "All-in-one MiniMax H3 ComfyUI workflow featuring REF2VA, T2VA, I2V and FLF2VA, 7-clip generation, seamless part continuation, Face Refine and Latent Upscale.",
+      "stars": 1,
+      "forks": 0,
+      "language": null,
+      "license": "MIT",
+      "created_at": "2026-10-15T02:44:21Z",
+      "updated_at": "2026-10-24T20:58:12Z",
+      "pushed_at": "2026-10-24T15:17:00Z",
+      "archived": false,
+      "topics": [],
+      "candidate_tags": [
+        "texto a video",
+        "imagen a video",
+        "workflow/interfaz"
+      ],
+      "matched_terms": [
+        "t2v",
+        "i2v",
+        "minimax"
+      ],
+      "relevance_score": 3,
+      "verification_status": "PENDIENTE: revisar README, licencia, código, demos y requisitos"
+    },
+    {
+      "repository": "api-evangelist/together-ai",
+      "url": "https://github.com/api-evangelist/together-ai",
+      "description": "Together AI — independent third-party profile of a public API surface, by API Evangelist. Together AI is an AI acceleration cloud delivering fast, scalable, and reliable generative-AI infrastructure. The Together API serves open-source and proprietary foundation models for chat, embeddings, vision, audio, image and video generation, fine-tuning, co",
+      "stars": 1,
+      "forks": 0,
+      "language": null,
+      "license": null,
+      "created_at": "2026-05-08T13:57:59Z",
+      "updated_at": "2026-10-26T06:06:17Z",
+      "pushed_at": "2026-10-26T06:06:13Z",
+      "archived": false,
+      "topics": [
+        "ai",
+        "apis-json",
+        "foundation-models",
+        "gpu",
+        "inference",
+        "llm",
+        "open-source-ai"
+      ],
+      "candidate_tags": [
+        "integración/API probable"
+      ],
+      "matched_terms": [
+        "video generation"
+      ],
+      "relevance_score": 1,
+      "verification_status": "PENDIENTE: revisar README, licencia, código, demos y requisitos"
+    },
+    {
+      "repository": "gaoruitech/genrelay-loomcanvas",
+      "url": "https://github.com/gaoruitech/genrelay-loomcanvas",
+      "description": "Open-source, self-hosted node-based AI canvas: wire prompts, images and models into visual workflows for text-to-image, image editing, image-to-video and video editing. Bring your own API keys (Gaorui, OpenAI, Google Gemini) for Nano Banana, GPT Image, Veo 3.1, Grok Video and DeepSeek. Cost estimates, not credits. Team spaces. Docker Compose.",
+      "stars": 1,
+      "forks": 0,
+      "language": "Vue",
+      "license": "AGPL-3.0",
+      "created_at": "2026-10-28T06:38:21Z",
+      "updated_at": "2026-10-28T07:15:54Z",
+      "pushed_at": "2026-10-28T07:15:50Z",
+      "archived": false,
+      "topics": [],
+      "candidate_tags": [
+        "integración/API probable",
+        "imagen a video",
+        "edición de video",
+        "workflow/interfaz"
+      ],
+      "matched_terms": [
+        "image-to-video",
+        "video editing",
+        "video edit",
+        "veo"
+      ],
+      "relevance_score": 4,
+      "verification_status": "PENDIENTE: revisar README, licencia, código, demos y requisitos"
+    },
+    {
+      "repository": "HJH-AILab/ComfyUI-Roundabout",
+      "url": "https://github.com/HJH-AILab/ComfyUI-Roundabout",
+      "description": "Expose ComfyUI workflows as an OpenAI-compatible REST API and an MCP server, so AI agents drive local image/video generation with semantic parameters instead of whole workflow graphs.",
+      "stars": 1,
+      "forks": 0,
+      "language": "Python",
+      "license": "MIT",
+      "created_at": "2026-10-10T13:47:10Z",
+      "updated_at": "2026-10-28T08:53:57Z",
+      "pushed_at": "2026-10-28T08:53:52Z",
+      "archived": false,
+      "topics": [
+        "comfyui",
+        "minimax-h3",
+        "qwen3-tts",
+        "z-image"
+      ],
+      "candidate_tags": [
+        "integración/API probable",
+        "workflow/interfaz"
+      ],
+      "matched_terms": [
+        "video generation",
+        "minimax"
+      ],
+      "relevance_score": 2,
+      "verification_status": "PENDIENTE: revisar README, licencia, código, demos y requisitos"
+    },
+    {
+      "repository": "RebelTortuga/comfyui-free-local-wan-video-quality",
+      "url": "https://github.com/RebelTortuga/comfyui-free-local-wan-video-quality",
+      "description": "Free local ComfyUI Wan 2.2 image-to-video workflow focused on quality, motion prompts, and AI video generation.",
+      "stars": 1,
+      "forks": 0,
+      "language": "Python",
+      "license": "MIT",
+      "created_at": "2026-10-26T02:56:23Z",
+      "updated_at": "2026-10-29T20:58:39Z",
+      "pushed_at": "2026-10-29T20:58:35Z",
+      "archived": false,
+      "topics": [
+        "ai-video",
+        "ai-video-generation",
+        "comfyui",
+        "comfyui-workflow",
+        "free-ai",
+        "generative-ai",
+        "image-to-video",
+        "local-ai",
+        "offline-ai",
+        "open-source",
+        "self-hosted",
+        "video-diffusion",
+        "video-generation",
+        "video-workflow",
+        "wan",
+        "wan-22",
+        "wan-video",
+        "wan2-2",
+        "wan22",
+        "workflow"
+      ],
+      "candidate_tags": [
+        "imagen a video",
+        "workflow/interfaz"
+      ],
+      "matched_terms": [
+        "image-to-video",
+        "video generation",
+        "wan2",
+        "wan 2",
+        "video workflow"
+      ],
+      "relevance_score": 5,
+      "verification_status": "PENDIENTE: revisar README, licencia, código, demos y requisitos"
+    },
+    {
+      "repository": "api-evangelist/doubao",
+      "url": "https://github.com/api-evangelist/doubao",
+      "description": "ByteDance Doubao — independent third-party profile of a public API surface, by API Evangelist. Doubao is ByteDance's foundation model family, served via the Volcano Engine Ark platform. Offers chat completions, deep reasoning, multimodal vision, embeddings, image generation (Seedream), video generation (Seedance), 3D generation, and TTS through Ope",
+      "stars": 1,
+      "forks": 0,
+      "language": null,
+      "license": null,
+      "created_at": "2026-05-08T19:06:04Z",
+      "updated_at": "2026-10-29T21:27:24Z",
+      "pushed_at": "2026-10-29T21:27:19Z",
+      "archived": false,
+      "topics": [
+        "ai",
+        "apis-json",
+        "bytedance",
+        "inference",
+        "llm",
+        "multimodal",
+        "volcano-engine"
+      ],
+      "candidate_tags": [
+        "integración/API probable"
+      ],
+      "matched_terms": [
+        "video generation",
+        "seedance"
+      ],
+      "relevance_score": 2,
+      "verification_status": "PENDIENTE: revisar README, licencia, código, demos y requisitos"
+    },
+    {
+      "repository": "api-evangelist/genmo-ai",
+      "url": "https://github.com/api-evangelist/genmo-ai",
+      "description": "Genmo — independent third-party profile of a public API surface, by API Evangelist. Genmo is a San Francisco research lab building open-source video generation models. Its flagship release, Mochi 1, is an Apache-2.0 licensed 10B-parameter text-to-video diffusion model (AsymmDiT architecture) with strong prompt adherence and high-fidelity motion. Ge",
+      "stars": 1,
+      "forks": 0,
+      "language": null,
+      "license": null,
+      "created_at": "2026-07-12T18:59:01Z",
+      "updated_at": "2026-10-30T04:15:42Z",
+      "pushed_at": "2026-10-30T04:15:38Z",
+      "archived": false,
+      "topics": [
+        "ai-video",
+        "apis-json",
+        "diffusion-model",
+        "generative-ai",
+        "mochi",
+        "open-source",
+        "text-to-video",
+        "video-generation"
+      ],
+      "candidate_tags": [
+        "integración/API probable",
+        "texto a video"
+      ],
+      "matched_terms": [
+        "text-to-video",
+        "video generation",
+        "video diffusion"
+      ],
+      "relevance_score": 3,
+      "verification_status": "PENDIENTE: revisar README, licencia, código, demos y requisitos"
+    },
+    {
+      "repository": "api-evangelist/luma-labs",
+      "url": "https://github.com/api-evangelist/luma-labs",
+      "description": "Luma AI — independent third-party profile of a public API surface, by API Evangelist. Luma AI is a generative media company best known for Dream Machine, a family of image and video models including Ray (video), Photon and Photon Flash (image). The Dream Machine API gives developers access to text-to-video, image-to-video, image generation, upscali",
+      "stars": 1,
+      "forks": 1,
+      "language": null,
+      "license": null,
+      "created_at": "2026-05-23T16:24:01Z",
+      "updated_at": "2026-10-30T16:39:32Z",
+      "pushed_at": "2026-10-30T16:39:27Z",
+      "archived": false,
+      "topics": [
+        "apis-json",
+        "artificial-intelligence",
+        "creative-tools",
+        "dream-machine",
+        "generative-ai",
+        "image",
+        "image-to-video",
+        "photon",
+        "ray",
+        "reframing",
+        "text-to-video",
+        "upscaling",
+        "video"
+      ],
+      "candidate_tags": [
+        "integración/API probable",
+        "texto a video",
+        "imagen a video"
+      ],
+      "matched_terms": [
+        "text-to-video",
+        "image-to-video",
+        "video model"
+      ],
+      "relevance_score": 3,
+      "verification_status": "PENDIENTE: revisar README, licencia, código, demos y requisitos"
+    },
+    {
+      "repository": "andrii2g/hedra-ai-dotnet-client",
+      "url": "https://github.com/andrii2g/hedra-ai-dotnet-client",
+      "description": "Typed .NET client for the Hedra API with direct generation support, request factories, and start-only video/avatar workflows.",
+      "stars": 0,
+      "forks": 0,
+      "language": "C#",
+      "license": null,
+      "created_at": "2026-05-14T20:36:55Z",
+      "updated_at": "2026-05-14T23:12:32Z",
+      "pushed_at": "2026-05-14T23:09:45Z",
+      "archived": false,
+      "topics": [
+        "ai",
+        "api-client",
+        "avatar",
+        "csharp",
+        "dotnet",
+        "hedra",
+        "image-to-video",
+        "sdk",
+        "text-to-video",
+        "video-generation"
+      ],
+      "candidate_tags": [
+        "integración/API probable",
+        "texto a video",
+        "imagen a video",
+        "workflow/interfaz"
+      ],
+      "matched_terms": [
+        "text-to-video",
+        "image-to-video"
+      ],
+      "relevance_score": 2,
+      "verification_status": "PENDIENTE: revisar README, licencia, código, demos y requisitos"
+    },
+    {
+      "repository": "zsky-ai/zsky-sdk-go",
+      "url": "https://github.com/zsky-ai/zsky-sdk-go",
+      "description": "Go SDK for the ZSky AI Max-tier developer API. X-API-Key client for image/video generation, job polling, and signed result URLs.",
+      "stars": 0,
+      "forks": 0,
+      "language": "Go",
+      "license": "MIT",
+      "created_at": "2026-05-23T22:55:38Z",
+      "updated_at": "2026-10-11T11:00:08Z",
+      "pushed_at": "2026-05-23T23:59:00Z",
+      "archived": false,
+      "topics": [
+        "ai",
+        "ai-image-generation",
+        "ai-image-generator",
+        "ai-video-generation",
+        "ai-video-generator",
+        "api-client",
+        "artificial-intelligence",
+        "creative-ai",
+        "generative-ai",
+        "go",
+        "golang",
+        "image-generation",
+        "job-polling",
+        "machine-learning",
+        "sdk",
+        "signed-urls",
+        "text-to-image",
+        "text-to-video",
+        "zsky",
+        "zsky-ai"
+      ],
+      "candidate_tags": [
+        "integración/API probable",
+        "texto a video"
+      ],
+      "matched_terms": [
+        "text-to-video",
+        "video generation"
+      ],
+      "relevance_score": 2,
+      "verification_status": "PENDIENTE: revisar README, licencia, código, demos y requisitos"
+    },
+    {
+      "repository": "ryjin111/mythosforge-video",
+      "url": "https://github.com/ryjin111/mythosforge-video",
+      "description": "Generate a short video from a text prompt (or image-to-video) via Replicate. BYO key. Part of the MythosForge open-source skill suite.",
+      "stars": 0,
+      "forks": 0,
+      "language": "JavaScript",
+      "license": "MIT",
+      "created_at": "2026-07-05T14:54:46Z",
+      "updated_at": "2026-07-05T14:54:53Z",
+      "pushed_at": "2026-07-05T14:54:50Z",
+      "archived": false,
+      "topics": [],
+      "candidate_tags": [
+        "imagen a video"
+      ],
+      "matched_terms": [
+        "image-to-video"
+      ],
+      "relevance_score": 1,
+      "verification_status": "PENDIENTE: revisar README, licencia, código, demos y requisitos"
+    },
+    {
+      "repository": "gate/gate-ai-go",
+      "url": "https://github.com/gate/gate-ai-go",
+      "description": " Official Go SDK for Gate AI APIs, providing typed clients for chat, responses, embeddings, images, audio, video generation, streaming, retries, and error handling.",
+      "stars": 0,
+      "forks": 0,
+      "language": "Go",
+      "license": "MIT",
+      "created_at": "2026-07-20T03:56:18Z",
+      "updated_at": "2026-07-20T05:31:56Z",
+      "pushed_at": "2026-07-20T05:36:05Z",
+      "archived": false,
+      "topics": [],
+      "candidate_tags": [
+        "integración/API probable"
+      ],
+      "matched_terms": [
+        "video generation"
+      ],
+      "relevance_score": 1,
+      "verification_status": "PENDIENTE: revisar README, licencia, código, demos y requisitos"
+    },
+    {
+      "repository": "purushottam-kunwar/MiniMontage",
+      "url": "https://github.com/purushottam-kunwar/MiniMontage",
+      "description": "An educational, open-source AI engine that turns a text prompt into a narrated video — script, stock images, voice narration, subtitles, and a final MP4. Built to learn how modern AI-orchestration systems (pipelines, agents, providers, rendering) fit together, with a strong bias toward free, local, keyless tools.",
+      "stars": 0,
+      "forks": 0,
+      "language": "Python",
+      "license": null,
+      "created_at": "2026-07-21T17:49:10Z",
+      "updated_at": "2026-08-22T17:22:16Z",
+      "pushed_at": "2026-07-22T16:39:40Z",
+      "archived": false,
+      "topics": [
+        "ai-agents",
+        "ai-video-generator",
+        "docker",
+        "fastapi",
+        "ffmpeg",
+        "gemini-api",
+        "litellm",
+        "nextjs",
+        "ollama",
+        "piper-tts",
+        "pydantic",
+        "pytest",
+        "python",
+        "react",
+        "sqlite",
+        "tailwindcss",
+        "text-to-speech",
+        "text-to-video",
+        "typescript",
+        "wikimedia-commons"
+      ],
+      "candidate_tags": [
+        "integración/API probable",
+        "texto a video"
+      ],
+      "matched_terms": [
+        "text-to-video"
+      ],
+      "relevance_score": 1,
+      "verification_status": "PENDIENTE: revisar README, licencia, código, demos y requisitos"
+    },
+    {
+      "repository": "dahalmilan2053-svg/Aagya-AI",
+      "url": "https://github.com/dahalmilan2053-svg/Aagya-AI",
+      "description": "Open-source platform for text-to-image, text-to-video, image editing, model management, and AI workflows.",
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "license": "Apache-2.0",
+      "created_at": "2026-08-03T11:26:34Z",
+      "updated_at": "2026-08-03T11:28:37Z",
+      "pushed_at": "2026-08-03T11:26:35Z",
+      "archived": false,
+      "topics": [],
+      "candidate_tags": [
+        "texto a video",
+        "workflow/interfaz"
+      ],
+      "matched_terms": [
+        "text-to-video"
+      ],
+      "relevance_score": 1,
+      "verification_status": "PENDIENTE: revisar README, licencia, código, demos y requisitos"
+    },
+    {
+      "repository": "ecoj344-oss/tokenworld-sdk",
+      "url": "https://github.com/ecoj344-oss/tokenworld-sdk",
+      "description": "Async Python client for TokenWorld API — AI video generation (Kling, Vidu, Hailuo, Veo, Seedance and more)",
+      "stars": 0,
+      "forks": 0,
+      "language": "Python",
+      "license": "MIT",
+      "created_at": "2026-08-19T06:50:40Z",
+      "updated_at": "2026-08-19T07:18:05Z",
+      "pushed_at": "2026-08-19T07:16:43Z",
+      "archived": false,
+      "topics": [],
+      "candidate_tags": [
+        "integración/API probable"
+      ],
+      "matched_terms": [
+        "video generation",
+        "seedance",
+        "kling",
+        "veo",
+        "hailuo",
+        "vidu"
+      ],
+      "relevance_score": 6,
+      "verification_status": "PENDIENTE: revisar README, licencia, código, demos y requisitos"
+    },
+    {
+      "repository": "skaadil786/ai-video-studio",
+      "url": "https://github.com/skaadil786/ai-video-studio",
+      "description": "Open-Source AI Video Studio: a modular, Colab-friendly Gradio app that unites text-to-video (Zeroscope), image-to-video (SVD-XT / I2VGen-XL), AI upscaling (Real-ESRGAN / SD x4), talking avatars (SadTalker), a TinyLlama prompt assistant and Edge-TTS in one free interface. Selective model loading fits 16 GB T4 GPUs. No paid APIs",
+      "stars": 0,
+      "forks": 0,
+      "language": "Python",
+      "license": null,
+      "created_at": "2026-08-28T05:31:48Z",
+      "updated_at": "2026-08-28T05:35:44Z",
+      "pushed_at": "2026-08-28T05:35:21Z",
+      "archived": false,
+      "topics": [],
+      "candidate_tags": [
+        "integración/API probable",
+        "texto a video",
+        "imagen a video"
+      ],
+      "matched_terms": [
+        "text-to-video",
+        "image-to-video",
+        "i2v"
+      ],
+      "relevance_score": 3,
+      "verification_status": "PENDIENTE: revisar README, licencia, código, demos y requisitos"
+    },
+    {
+      "repository": "nareshkumarchellani/Ai-Video-Generator1",
+      "url": "https://github.com/nareshkumarchellani/Ai-Video-Generator1",
+      "description": "An advanced AI video generation platform that automatically expands single-word inputs into rich, cinematic prompts. It features full duration controls and multi-model support, allowing you to plug in your own API keys for Google Veo and other leading text-to-video models for highly customizable outputs.",
+      "stars": 0,
+      "forks": 0,
+      "language": "JavaScript",
+      "license": null,
+      "created_at": "2026-08-30T09:39:45Z",
+      "updated_at": "2026-09-01T21:44:58Z",
+      "pushed_at": "2026-09-01T21:35:29Z",
+      "archived": false,
+      "topics": [],
+      "candidate_tags": [
+        "integración/API probable",
+        "texto a video"
+      ],
+      "matched_terms": [
+        "text-to-video",
+        "video generation",
+        "video model",
+        "veo"
+      ],
+      "relevance_score": 4,
+      "verification_status": "PENDIENTE: revisar README, licencia, código, demos y requisitos"
+    },
+    {
+      "repository": "AICAllenZhou/allens-h3-python",
+      "url": "https://github.com/AICAllenZhou/allens-h3-python",
+      "description": "Python SDK for Allen's MiniMax H3 video generation API - text-to-video with synchronised audio",
+      "stars": 0,
+      "forks": 0,
+      "language": "Python",
+      "license": "MIT",
+      "created_at": "2026-09-03T06:38:29Z",
+      "updated_at": "2026-09-03T23:01:49Z",
+      "pushed_at": "2026-09-03T23:01:40Z",
+      "archived": false,
+      "topics": [
+        "ai",
+        "api-client",
+        "minimax",
+        "python-sdk",
+        "text-to-video",
+        "video-generation"
+      ],
+      "candidate_tags": [
+        "integración/API probable",
+        "texto a video"
+      ],
+      "matched_terms": [
+        "text-to-video",
+        "video generation",
+        "minimax"
+      ],
+      "relevance_score": 3,
+      "verification_status": "PENDIENTE: revisar README, licencia, código, demos y requisitos"
+    },
+    {
+      "repository": "dongareprajwal622/text-to-video-generator",
+      "url": "https://github.com/dongareprajwal622/text-to-video-generator",
+      "description": "AI-powered text-to-video generator built with Python, Flask, MySQL, and external video generation APIs.",
+      "stars": 0,
+      "forks": 0,
+      "language": "HTML",
+      "license": null,
+      "created_at": "2026-09-04T12:40:20Z",
+      "updated_at": "2026-09-04T17:23:25Z",
+      "pushed_at": "2026-09-04T17:23:20Z",
+      "archived": false,
+      "topics": [],
+      "candidate_tags": [
+        "integración/API probable",
+        "texto a video"
+      ],
+      "matched_terms": [
+        "text-to-video",
+        "video generation"
+      ],
+      "relevance_score": 2,
+      "verification_status": "PENDIENTE: revisar README, licencia, código, demos y requisitos"
+    },
+    {
+      "repository": "nadeali0/OpenVideoAI",
+      "url": "https://github.com/nadeali0/OpenVideoAI",
+      "description": "Open-source AI Video Generator - Text/Image to Video with Free Cloud APIs",
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "license": "MIT",
+      "created_at": "2026-09-13T21:29:13Z",
+      "updated_at": "2026-09-13T21:30:11Z",
+      "pushed_at": "2026-09-13T21:30:08Z",
+      "archived": false,
+      "topics": [],
+      "candidate_tags": [
+        "integración/API probable",
+        "imagen a video"
+      ],
+      "matched_terms": [
+        "image to video"
+      ],
+      "relevance_score": 1,
+      "verification_status": "PENDIENTE: revisar README, licencia, código, demos y requisitos"
+    },
+    {
+      "repository": "y54575822-collab/Minato-Video-Maker",
+      "url": "https://github.com/y54575822-collab/Minato-Video-Maker",
+      "description": "AI-powered text-to-video generator: Create stunning videos from 1-24 minutes using advanced AI models. Support for multiple video generation APIs, automatic voiceovers, captions, and B-roll. Production-ready with web integration.",
+      "stars": 0,
+      "forks": 0,
+      "language": "Python",
+      "license": "MIT",
+      "created_at": "2026-09-15T18:47:15Z",
+      "updated_at": "2026-09-15T18:57:02Z",
+      "pushed_at": "2026-09-15T18:56:58Z",
+      "archived": false,
+      "topics": [],
+      "candidate_tags": [
+        "integración/API probable",
+        "texto a video"
+      ],
+      "matched_terms": [
+        "text-to-video",
+        "video generation"
+      ],
+      "relevance_score": 2,
+      "verification_status": "PENDIENTE: revisar README, licencia, código, demos y requisitos"
+    },
+    {
+      "repository": "kishore-9000/AI-Text-to-Video-Generator",
+      "url": "https://github.com/kishore-9000/AI-Text-to-Video-Generator",
+      "description": "I integrated Google Veo 3.1 through the Gemini API. Google's current documentation describes Veo 3.1 as supporting text-to-video generation and asynchronous long-running operations, where the application submits a job, polls its operation, and retrieves the completed video",
+      "stars": 0,
+      "forks": 0,
+      "language": "HTML",
+      "license": null,
+      "created_at": "2026-09-17T06:18:14Z",
+      "updated_at": "2026-09-17T07:06:27Z",
+      "pushed_at": "2026-09-17T07:06:24Z",
+      "archived": false,
+      "topics": [],
+      "candidate_tags": [
+        "integración/API probable",
+        "texto a video"
+      ],
+      "matched_terms": [
+        "text-to-video",
+        "video generation",
+        "veo"
+      ],
+      "relevance_score": 3,
+      "verification_status": "PENDIENTE: revisar README, licencia, código, demos y requisitos"
+    },
+    {
+      "repository": "madfortech/MyStudio",
+      "url": "https://github.com/madfortech/MyStudio",
+      "description": "text-to-video generation with Google Veo and your own API key.",
+      "stars": 0,
+      "forks": 0,
+      "language": "Blade",
+      "license": null,
+      "created_at": "2026-09-21T09:55:28Z",
+      "updated_at": "2026-09-21T10:06:47Z",
+      "pushed_at": "2026-09-21T10:06:28Z",
+      "archived": false,
+      "topics": [],
+      "candidate_tags": [
+        "integración/API probable",
+        "texto a video"
+      ],
+      "matched_terms": [
+        "text-to-video",
+        "video generation",
+        "veo"
+      ],
+      "relevance_score": 3,
+      "verification_status": "PENDIENTE: revisar README, licencia, código, demos y requisitos"
+    },
+    {
+      "repository": "caozhikun/video-generation-skill",
+      "url": "https://github.com/caozhikun/video-generation-skill",
+      "description": "Agent skill: text-to-video and image-to-video via Doubao Seedance and MiniMax-H3. API keys stay in environment variables and never reach the agent.",
+      "stars": 0,
+      "forks": 0,
+      "language": "Python",
+      "license": "MIT",
+      "created_at": "2026-09-21T04:22:28Z",
+      "updated_at": "2026-09-21T11:40:28Z",
+      "pushed_at": "2026-09-21T11:40:24Z",
+      "archived": false,
+      "topics": [
+        "agent-skills",
+        "claude-code",
+        "codex",
+        "doubao",
+        "grok",
+        "image-to-video",
+        "minimax",
+        "seedance",
+        "skill",
+        "text-to-video"
+      ],
+      "candidate_tags": [
+        "integración/API probable",
+        "texto a video",
+        "imagen a video"
+      ],
+      "matched_terms": [
+        "text-to-video",
+        "image-to-video",
+        "seedance",
+        "minimax"
+      ],
+      "relevance_score": 4,
+      "verification_status": "PENDIENTE: revisar README, licencia, código, demos y requisitos"
+    },
+    {
+      "repository": "vidu-dev/vidu-api",
+      "url": "https://github.com/vidu-dev/vidu-api",
+      "description": "Python client for Vidu-class video generation via a hosted API: text-to-video and image-to-video with audio.",
+      "stars": 0,
+      "forks": 0,
+      "language": "Python",
+      "license": "MIT",
+      "created_at": "2026-09-18T05:41:23Z",
+      "updated_at": "2026-09-22T04:46:07Z",
+      "pushed_at": "2026-09-22T04:46:03Z",
+      "archived": false,
+      "topics": [],
+      "candidate_tags": [
+        "integración/API probable",
+        "texto a video",
+        "imagen a video"
+      ],
+      "matched_terms": [
+        "text-to-video",
+        "image-to-video",
+        "video generation",
+        "vidu"
+      ],
+      "relevance_score": 4,
+      "verification_status": "PENDIENTE: revisar README, licencia, código, demos y requisitos"
+    },
+    {
+      "repository": "cogvideox-dev/cogvideox-api",
+      "url": "https://github.com/cogvideox-dev/cogvideox-api",
+      "description": "Python client for a CogVideoX-class video generation API: image-to-video and text-to-video through hosted endpoints",
+      "stars": 0,
+      "forks": 0,
+      "language": "Python",
+      "license": "MIT",
+      "created_at": "2026-09-18T05:59:33Z",
+      "updated_at": "2026-09-22T04:46:44Z",
+      "pushed_at": "2026-09-22T04:46:40Z",
+      "archived": false,
+      "topics": [],
+      "candidate_tags": [
+        "integración/API probable",
+        "texto a video",
+        "imagen a video"
+      ],
+      "matched_terms": [
+        "text-to-video",
+        "image-to-video",
+        "video generation",
+        "cogvideo"
+      ],
+      "relevance_score": 4,
+      "verification_status": "PENDIENTE: revisar README, licencia, código, demos y requisitos"
+    },
+    {
+      "repository": "patientprofitsllc-cell/creative-studio",
+      "url": "https://github.com/patientprofitsllc-cell/creative-studio",
+      "description": "Self-hosted AI video & ad studio: UGC ads, cinematic text-to-video and image ads on open-source models (Wan 2.2, FLUX) with an on-demand cloud GPU that shuts itself off.",
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "license": null,
+      "created_at": "2026-09-24T23:48:11Z",
+      "updated_at": "2026-09-24T23:53:06Z",
+      "pushed_at": "2026-09-24T23:52:13Z",
+      "archived": false,
+      "topics": [],
+      "candidate_tags": [
+        "texto a video"
+      ],
+      "matched_terms": [
+        "text-to-video",
+        "wan 2"
+      ],
+      "relevance_score": 2,
+      "verification_status": "PENDIENTE: revisar README, licencia, código, demos y requisitos"
+    },
+    {
+      "repository": "hokindeng/v2v-inferkit",
+      "url": "https://github.com/hokindeng/v2v-inferkit",
+      "description": "Unified inference toolkit for video-to-video generation models — one CLI, ten V2V models: five commercial APIs and five open-source.",
+      "stars": 0,
+      "forks": 0,
+      "language": "Python",
+      "license": null,
+      "created_at": "2026-07-12T01:25:09Z",
+      "updated_at": "2026-10-05T01:37:10Z",
+      "pushed_at": "2026-10-05T01:37:06Z",
+      "archived": false,
+      "topics": [],
+      "candidate_tags": [
+        "integración/API probable",
+        "edición de video"
+      ],
+      "matched_terms": [
+        "video-to-video",
+        "video generation"
+      ],
+      "relevance_score": 2,
+      "verification_status": "PENDIENTE: revisar README, licencia, código, demos y requisitos"
+    },
+    {
+      "repository": "HGWells2001/Wan2.2-Desktop",
+      "url": "https://github.com/HGWells2001/Wan2.2-Desktop",
+      "description": "Open-source desktop application for local Wan 2.2 video generation, adapted from the architecture of LTX Desktop. Native desktop UI, local GPU inference, model management, text-to-video and image-to-video workflows.",
+      "stars": 0,
+      "forks": 0,
+      "language": "TypeScript",
+      "license": "NOASSERTION",
+      "created_at": "2026-10-06T19:19:36Z",
+      "updated_at": "2026-10-07T20:23:03Z",
+      "pushed_at": "2026-10-07T20:22:58Z",
+      "archived": false,
+      "topics": [],
+      "candidate_tags": [
+        "texto a video",
+        "imagen a video",
+        "workflow/interfaz"
+      ],
+      "matched_terms": [
+        "text-to-video",
+        "image-to-video",
+        "video generation",
+        "wan2",
+        "wan 2",
+        "video workflow"
+      ],
+      "relevance_score": 6,
+      "verification_status": "PENDIENTE: revisar README, licencia, código, demos y requisitos"
+    },
+    {
+      "repository": "sabaazdn73/gemini-veo-studio-skill-for-claude",
+      "url": "https://github.com/sabaazdn73/gemini-veo-studio-skill-for-claude",
+      "description": "Gemini Veo Studio Skill for Claude: open-source Agent Skill to make AI videos with Google Veo 3.1 via the Gemini API. Template panel, text-to-video, image-to-video, character reference, native audio, post-production to MP4.",
+      "stars": 0,
+      "forks": 0,
+      "language": "Python",
+      "license": "MIT",
+      "created_at": "2026-10-07T20:30:06Z",
+      "updated_at": "2026-10-07T20:56:34Z",
+      "pushed_at": "2026-10-07T20:56:30Z",
+      "archived": false,
+      "topics": [
+        "agent-skills",
+        "ai-video",
+        "anthropic",
+        "claude",
+        "claude-code",
+        "claude-skills",
+        "gemini-api",
+        "generative-ai",
+        "google-veo",
+        "text-to-video",
+        "veo3",
+        "video-generation"
+      ],
+      "candidate_tags": [
+        "integración/API probable",
+        "texto a video",
+        "imagen a video"
+      ],
+      "matched_terms": [
+        "text-to-video",
+        "image-to-video",
+        "veo"
+      ],
+      "relevance_score": 3,
+      "verification_status": "PENDIENTE: revisar README, licencia, código, demos y requisitos"
+    },
+    {
+      "repository": "nastyakolykhan-sudo/ComfyUI_EsteeLauder_prod",
+      "url": "https://github.com/nastyakolykhan-sudo/ComfyUI_EsteeLauder_prod",
+      "description": "Production ComfyUI node pack for Estée Lauder workflows. Contains only nodes used in image and video generation workflows.",
+      "stars": 0,
+      "forks": 0,
+      "language": "Python",
+      "license": null,
+      "created_at": "2026-07-06T09:29:41Z",
+      "updated_at": "2026-10-09T14:13:41Z",
+      "pushed_at": "2026-10-09T14:13:37Z",
+      "archived": false,
+      "topics": [],
+      "candidate_tags": [
+        "workflow/interfaz"
+      ],
+      "matched_terms": [
+        "video generation"
+      ],
+      "relevance_score": 1,
+      "verification_status": "PENDIENTE: revisar README, licencia, código, demos y requisitos"
+    },
+    {
+      "repository": "spurbro/minimax-h3-colab-pipeline",
+      "url": "https://github.com/spurbro/minimax-h3-colab-pipeline",
+      "description": "MiniMax-H3 (Hailuo AI) Audio-Visual Video Generation Pipeline on Google Colab — Dual Workflows: Tesla T4 Low-VRAM GGUF (stable-diffusion.cpp mmap patch + Plan B T2V/I2V multi-shot chaining) & A100 ComfyUI WebUI with real-time Google Drive persistence.",
+      "stars": 0,
+      "forks": 0,
+      "language": "Jupyter Notebook",
+      "license": null,
+      "created_at": "2026-10-10T17:25:14Z",
+      "updated_at": "2026-10-10T17:40:33Z",
+      "pushed_at": "2026-10-10T17:40:29Z",
+      "archived": false,
+      "topics": [],
+      "candidate_tags": [
+        "texto a video",
+        "imagen a video",
+        "workflow/interfaz"
+      ],
+      "matched_terms": [
+        "t2v",
+        "i2v",
+        "video generation",
+        "minimax",
+        "hailuo"
+      ],
+      "relevance_score": 5,
+      "verification_status": "PENDIENTE: revisar README, licencia, código, demos y requisitos"
+    },
+    {
+      "repository": "navinsah7020-creator/Lords-Ai",
+      "url": "https://github.com/navinsah7020-creator/Lords-Ai",
+      "description": "🚀 A free and open-source AI video generation platform that aims to turn text prompts and images into videos. Built for creators, with a mobile-friendly interface, video previews, and downloadable results. Designed to integrate open-source AI models and free hosting options.",
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "license": null,
+      "created_at": "2026-10-11T10:14:39Z",
+      "updated_at": "2026-10-11T10:14:44Z",
+      "pushed_at": "2026-10-11T10:14:41Z",
+      "archived": false,
+      "topics": [],
+      "candidate_tags": [
+        "candidato por revisar"
+      ],
+      "matched_terms": [
+        "video generation"
+      ],
+      "relevance_score": 1,
+      "verification_status": "PENDIENTE: revisar README, licencia, código, demos y requisitos"
+    },
+    {
+      "repository": "deangilmoreremix/veo4-video-generator",
+      "url": "https://github.com/deangilmoreremix/veo4-video-generator",
+      "description": "Open-source Veo video generator — production-ready Next.js SaaS for text-to-video, image-to-video, and multi-image editing powered by Google Veo. Stripe billing, credits, NextAuth, and Prisma out of the box.",
+      "stars": 0,
+      "forks": 0,
+      "language": "JavaScript",
+      "license": "MIT",
+      "created_at": "2026-10-12T01:53:26Z",
+      "updated_at": "2026-10-12T01:53:37Z",
+      "pushed_at": "2026-10-12T01:53:32Z",
+      "archived": false,
+      "topics": [],
+      "candidate_tags": [
+        "texto a video",
+        "imagen a video"
+      ],
+      "matched_terms": [
+        "text-to-video",
+        "image-to-video",
+        "veo"
+      ],
+      "relevance_score": 3,
+      "verification_status": "PENDIENTE: revisar README, licencia, código, demos y requisitos"
+    },
+    {
+      "repository": "clipia-ai/clipia-js",
+      "url": "https://github.com/clipia-ai/clipia-js",
+      "description": "Official TypeScript/Node client + CLI for the Clipia API — AI image & video generation (MCP-ready)",
+      "stars": 0,
+      "forks": 0,
+      "language": "TypeScript",
+      "license": "MIT",
+      "created_at": "2026-06-14T08:08:53Z",
+      "updated_at": "2026-10-13T13:11:15Z",
+      "pushed_at": "2026-10-13T13:11:10Z",
+      "archived": false,
+      "topics": [
+        "ai",
+        "api-client",
+        "clipia",
+        "generative-ai",
+        "image-generation",
+        "mcp",
+        "nodejs",
+        "sdk",
+        "typescript",
+        "video-generation"
+      ],
+      "candidate_tags": [
+        "integración/API probable",
+        "workflow/interfaz"
+      ],
+      "matched_terms": [
+        "video generation"
+      ],
+      "relevance_score": 1,
+      "verification_status": "PENDIENTE: revisar README, licencia, código, demos y requisitos"
+    },
+    {
+      "repository": "clipia-ai/clipia-python",
+      "url": "https://github.com/clipia-ai/clipia-python",
+      "description": "Official Python client for the Clipia API — AI image & video generation (sync + async + webhooks)",
+      "stars": 0,
+      "forks": 0,
+      "language": "Python",
+      "license": "MIT",
+      "created_at": "2026-06-14T08:08:58Z",
+      "updated_at": "2026-10-13T13:11:18Z",
+      "pushed_at": "2026-10-13T13:11:13Z",
+      "archived": false,
+      "topics": [
+        "ai",
+        "api-client",
+        "async",
+        "clipia",
+        "generative-ai",
+        "image-generation",
+        "mcp",
+        "python",
+        "sdk",
+        "video-generation"
+      ],
+      "candidate_tags": [
+        "integración/API probable"
+      ],
+      "matched_terms": [
+        "video generation"
+      ],
+      "relevance_score": 1,
+      "verification_status": "PENDIENTE: revisar README, licencia, código, demos y requisitos"
+    },
+    {
+      "repository": "TopTylysamnang/sora-api",
+      "url": "https://github.com/TopTylysamnang/sora-api",
+      "description": "Provide cost-effective API access to OpenAI Sora 2 for text-to-video and image-to-video generation with simple integration.",
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "license": null,
+      "created_at": "2026-03-18T15:49:15Z",
+      "updated_at": "2026-10-14T07:15:16Z",
+      "pushed_at": "2026-10-14T07:15:12Z",
+      "archived": false,
+      "topics": [
+        "ai-learning",
+        "api",
+        "decentralized-exchange",
+        "defi",
+        "flowbite",
+        "liquidity-pool",
+        "open-ai",
+        "open-source",
+        "openai",
+        "rich-tui",
+        "sora",
+        "sora-ai",
+        "sora-webui",
+        "sora2api",
+        "text-to-video",
+        "texttovideo",
+        "video",
+        "video-generation",
+        "web3",
+        "webui"
+      ],
+      "candidate_tags": [
+        "integración/API probable",
+        "texto a video",
+        "imagen a video"
+      ],
+      "matched_terms": [
+        "text-to-video",
+        "image-to-video",
+        "video generation",
+        "sora"
+      ],
+      "relevance_score": 4,
+      "verification_status": "PENDIENTE: revisar README, licencia, código, demos y requisitos"
+    },
+    {
+      "repository": "kalpakjian/minimax-h3-comfyui",
+      "url": "https://github.com/kalpakjian/minimax-h3-comfyui",
+      "description": "MiniMax H3 video generation with ComfyUI - workflows, generation scripts and guides (models excluded)",
+      "stars": 0,
+      "forks": 0,
+      "language": "Python",
+      "license": null,
+      "created_at": "2026-09-02T02:48:39Z",
+      "updated_at": "2026-10-16T00:15:35Z",
+      "pushed_at": "2026-10-16T00:15:31Z",
+      "archived": false,
+      "topics": [],
+      "candidate_tags": [
+        "workflow/interfaz"
+      ],
+      "matched_terms": [
+        "video generation",
+        "minimax"
+      ],
+      "relevance_score": 2,
+      "verification_status": "PENDIENTE: revisar README, licencia, código, demos y requisitos"
+    },
+    {
+      "repository": "petrijohann68/MiniMax-H3-Extender-Workflows",
+      "url": "https://github.com/petrijohann68/MiniMax-H3-Extender-Workflows",
+      "description": "Modular ComfyUI workflows for long-form video generation using MiniMax H3 Extender. Supports mixed inputs (up to 8 reference images, video, and audio).",
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "license": null,
+      "created_at": "2026-10-16T09:17:02Z",
+      "updated_at": "2026-10-16T09:18:49Z",
+      "pushed_at": "2026-10-16T09:18:46Z",
+      "archived": false,
+      "topics": [],
+      "candidate_tags": [
+        "workflow/interfaz"
+      ],
+      "matched_terms": [
+        "video generation",
+        "minimax"
+      ],
+      "relevance_score": 2,
+      "verification_status": "PENDIENTE: revisar README, licencia, código, demos y requisitos"
+    },
+    {
+      "repository": "itsdarklikehell-interactive/batch_comfytester-stub",
+      "url": "https://github.com/itsdarklikehell-interactive/batch_comfytester-stub",
+      "description": "Batch Civitai/ComfyUI model tester — automated AI image/video generation testing with prompt pools, per-family output sorting, and workflow builders",
+      "stars": 0,
+      "forks": 0,
+      "language": "Python",
+      "license": "MIT",
+      "created_at": "2026-10-18T08:02:48Z",
+      "updated_at": "2026-10-20T12:35:16Z",
+      "pushed_at": "2026-10-20T12:35:12Z",
+      "archived": false,
+      "topics": [],
+      "candidate_tags": [
+        "workflow/interfaz"
+      ],
+      "matched_terms": [
+        "video generation"
+      ],
+      "relevance_score": 1,
+      "verification_status": "PENDIENTE: revisar README, licencia, código, demos y requisitos"
+    },
+    {
+      "repository": "pfrancug/text2video-wan2.1-fusionx",
+      "url": "https://github.com/pfrancug/text2video-wan2.1-fusionx",
+      "description": "Text2Video workflow using ComfyUI with Wan2.1 14B FusionX LoRA, UMT5 encoder, and FP8 VAE. Includes custom nodes, Docker-ready setup, and scripts to download models for reproducible video generation from text prompts.",
+      "stars": 0,
+      "forks": 0,
+      "language": "PowerShell",
+      "license": "MIT",
+      "created_at": "2025-09-04T01:16:09Z",
+      "updated_at": "2026-10-20T13:30:43Z",
+      "pushed_at": "2026-10-20T13:30:38Z",
+      "archived": false,
+      "topics": [],
+      "candidate_tags": [
+        "texto a video",
+        "workflow/interfaz"
+      ],
+      "matched_terms": [
+        "t2v",
+        "video generation",
+        "wan2",
+        "video workflow"
+      ],
+      "relevance_score": 4,
+      "verification_status": "PENDIENTE: revisar README, licencia, código, demos y requisitos"
+    },
+    {
+      "repository": "liltmark/free-ai-video-studio",
+      "url": "https://github.com/liltmark/free-ai-video-studio",
+      "description": "Free AI Video Studio - Text-to-Video & Image-to-Video with open-source AI models (Streamlit)",
+      "stars": 0,
+      "forks": 0,
+      "language": "Python",
+      "license": null,
+      "created_at": "2026-10-12T23:47:53Z",
+      "updated_at": "2026-10-20T14:42:15Z",
+      "pushed_at": "2026-10-20T14:42:12Z",
+      "archived": false,
+      "topics": [],
+      "candidate_tags": [
+        "texto a video",
+        "imagen a video"
+      ],
+      "matched_terms": [
+        "text-to-video",
+        "image-to-video"
+      ],
+      "relevance_score": 2,
+      "verification_status": "PENDIENTE: revisar README, licencia, código, demos y requisitos"
+    },
+    {
+      "repository": "its-vivek-jaiswal/openanime-studio",
+      "url": "https://github.com/its-vivek-jaiswal/openanime-studio",
+      "description": "Open-source, multi-agent AI anime production studio for manga-to-anime workflows, combining ComfyUI, Blender, video generation, automated quality assurance, audio, and episode assembly.",
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "license": null,
+      "created_at": "2026-10-24T00:15:49Z",
+      "updated_at": "2026-10-24T00:15:51Z",
+      "pushed_at": "2026-10-24T00:15:51Z",
+      "archived": false,
+      "topics": [],
+      "candidate_tags": [
+        "workflow/interfaz"
+      ],
+      "matched_terms": [
+        "video generation"
+      ],
+      "relevance_score": 1,
+      "verification_status": "PENDIENTE: revisar README, licencia, código, demos y requisitos"
+    },
+    {
+      "repository": "Hitesh-s0lanki/opensource-video-playground",
+      "url": "https://github.com/Hitesh-s0lanki/opensource-video-playground",
+      "description": "Local open-source video generation studio - five open-weight text-to-video and image-to-video models behind one Streamlit UI, tuned for low-VRAM GPUs.",
+      "stars": 0,
+      "forks": 1,
+      "language": "Python",
+      "license": null,
+      "created_at": "2026-08-06T08:23:39Z",
+      "updated_at": "2026-08-06T08:24:31Z",
+      "pushed_at": "2026-10-24T06:06:13Z",
+      "archived": false,
+      "topics": [],
+      "candidate_tags": [
+        "texto a video",
+        "imagen a video",
+        "modelo/código abierto probable"
+      ],
+      "matched_terms": [
+        "text-to-video",
+        "image-to-video",
+        "video generation",
+        "video model"
+      ],
+      "relevance_score": 4,
+      "verification_status": "PENDIENTE: revisar README, licencia, código, demos y requisitos"
+    },
+    {
+      "repository": "api-evangelist/pika-labs",
+      "url": "https://github.com/api-evangelist/pika-labs",
+      "description": "Pika Labs — independent third-party profile of a public API surface, by API Evangelist. Pika Labs is an AI video generation platform offering text-to-video, image-to-video, and video editing capabilities. As of May 2026 Pika does not publish a first-party REST API on its main domain; production API access is provided through partner aggregators (no",
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "license": null,
+      "created_at": "2026-05-08T20:59:37Z",
+      "updated_at": "2026-10-26T05:25:32Z",
+      "pushed_at": "2026-10-26T05:25:28Z",
+      "archived": false,
+      "topics": [
+        "ai",
+        "apis-json",
+        "generative",
+        "multimodal",
+        "text-to-video",
+        "video-generation"
+      ],
+      "candidate_tags": [
+        "integración/API probable",
+        "texto a video",
+        "imagen a video",
+        "edición de video"
+      ],
+      "matched_terms": [
+        "text-to-video",
+        "image-to-video",
+        "video editing",
+        "video edit",
+        "video generation",
+        "pika"
+      ],
+      "relevance_score": 6,
+      "verification_status": "PENDIENTE: revisar README, licencia, código, demos y requisitos"
+    },
+    {
+      "repository": "api-evangelist/playplay",
+      "url": "https://github.com/api-evangelist/playplay",
+      "description": "PlayPlay — independent third-party profile of a public API surface, by API Evangelist. PlayPlay is an online video and visual creation platform that lets business teams produce on-brand videos and images without prior editing experience. Through a drag-and-drop editor, AI-assisted tools (text-to-video, script and voice-over generation, automatic su",
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "license": null,
+      "created_at": "2026-08-01T03:44:45Z",
+      "updated_at": "2026-10-26T05:26:51Z",
+      "pushed_at": "2026-10-26T05:26:47Z",
+      "archived": false,
+      "topics": [
+        "ai",
+        "apis-json",
+        "company",
+        "content-creation",
+        "marketing",
+        "media",
+        "no-code",
+        "saas",
+        "video",
+        "video-creation"
+      ],
+      "candidate_tags": [
+        "integración/API probable",
+        "texto a video"
+      ],
+      "matched_terms": [
+        "text-to-video"
+      ],
+      "relevance_score": 1,
+      "verification_status": "PENDIENTE: revisar README, licencia, código, demos y requisitos"
+    },
+    {
+      "repository": "api-evangelist/pruna-ai",
+      "url": "https://github.com/api-evangelist/pruna-ai",
+      "description": "Pruna AI — independent third-party profile of a public API surface, by API Evangelist. Pruna AI builds Performance Models (P-Series) — optimized image and video generation models engineered to be faster, cheaper, and smaller than standard alternatives while keeping quality high.",
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "license": null,
+      "created_at": "2026-08-01T06:32:08Z",
+      "updated_at": "2026-10-26T05:31:45Z",
+      "pushed_at": "2026-10-26T05:31:40Z",
+      "archived": false,
+      "topics": [
+        "apis-json",
+        "artificial-intelligence",
+        "company",
+        "developer-tools",
+        "generative-ai",
+        "image-generation",
+        "inference",
+        "machine-learning",
+        "model-optimization",
+        "video-generation"
+      ],
+      "candidate_tags": [
+        "integración/API probable"
+      ],
+      "matched_terms": [
+        "video generation"
+      ],
+      "relevance_score": 1,
+      "verification_status": "PENDIENTE: revisar README, licencia, código, demos y requisitos"
+    },
+    {
+      "repository": "popnow-ai/popnow-skills",
+      "url": "https://github.com/popnow-ai/popnow-skills",
+      "description": "Agent Skills for AI video, image & music generation via the PopNow API: text-to-video, image-to-video, effects. For Claude Code, Codex & more.",
+      "stars": 0,
+      "forks": 0,
+      "language": "Python",
+      "license": "MIT",
+      "created_at": "2026-10-18T16:32:08Z",
+      "updated_at": "2026-10-27T07:48:53Z",
+      "pushed_at": "2026-10-27T07:48:49Z",
+      "archived": false,
+      "topics": [
+        "agent-skills",
+        "ai-image-generator",
+        "ai-music-generator",
+        "ai-video-generator",
+        "claude-code",
+        "claude-code-plugin",
+        "claude-skills",
+        "codex",
+        "generative-ai",
+        "image-to-video",
+        "kling",
+        "nano-banana",
+        "popnow",
+        "python",
+        "seedance",
+        "suno",
+        "text-to-image",
+        "text-to-speech",
+        "text-to-video",
+        "video-effects"
+      ],
+      "candidate_tags": [
+        "integración/API probable",
+        "texto a video",
+        "imagen a video"
+      ],
+      "matched_terms": [
+        "text-to-video",
+        "image-to-video",
+        "seedance",
+        "kling"
+      ],
+      "relevance_score": 4,
+      "verification_status": "PENDIENTE: revisar README, licencia, código, demos y requisitos"
+    },
+    {
+      "repository": "NotUsingGithub/wan27-clj",
+      "url": "https://github.com/NotUsingGithub/wan27-clj",
+      "description": "Clojure client SDK for Wan2.7 AI image and video generation API, cost estimation, and MCP Server workflows (https://wan2-7.io)",
+      "stars": 0,
+      "forks": 0,
+      "language": "Clojure",
+      "license": "NOASSERTION",
+      "created_at": "2026-10-28T10:00:24Z",
+      "updated_at": "2026-10-28T10:00:35Z",
+      "pushed_at": "2026-10-28T10:00:32Z",
+      "archived": false,
+      "topics": [],
+      "candidate_tags": [
+        "integración/API probable",
+        "workflow/interfaz"
+      ],
+      "matched_terms": [
+        "video generation",
+        "wan2"
+      ],
+      "relevance_score": 2,
+      "verification_status": "PENDIENTE: revisar README, licencia, código, demos y requisitos"
+    },
+    {
+      "repository": "faresmohamed260/renderlab",
+      "url": "https://github.com/faresmohamed260/renderlab",
+      "description": "Production AI media workspace for durable image/video generation, editing, animation, and ComfyUI workflow orchestration.",
+      "stars": 0,
+      "forks": 0,
+      "language": "JavaScript",
+      "license": "NOASSERTION",
+      "created_at": "2026-08-25T16:37:53Z",
+      "updated_at": "2026-10-28T03:38:37Z",
+      "pushed_at": "2026-10-29T08:52:30Z",
+      "archived": false,
+      "topics": [
+        "ai",
+        "cloudflare-r2",
+        "comfyui",
+        "generative-ai",
+        "image-generation",
+        "nextjs",
+        "supabase",
+        "typescript",
+        "video-generation"
+      ],
+      "candidate_tags": [
+        "workflow/interfaz"
+      ],
+      "matched_terms": [
+        "video generation"
+      ],
+      "relevance_score": 1,
+      "verification_status": "PENDIENTE: revisar README, licencia, código, demos y requisitos"
+    },
+    {
+      "repository": "tryAGI/MagicHour",
+      "url": "https://github.com/tryAGI/MagicHour",
+      "description": "C# SDK for the Magic Hour API -- AI video generation with face swap, lip sync, text-to-video, and image-to-video",
+      "stars": 0,
+      "forks": 1,
+      "language": "C#",
+      "license": "MIT",
+      "created_at": "2026-03-29T05:14:25Z",
+      "updated_at": "2026-10-29T18:14:48Z",
+      "pushed_at": "2026-10-29T18:14:45Z",
+      "archived": false,
+      "topics": [
+        "ai",
+        "autosdk",
+        "csharp",
+        "dotnet",
+        "face-swap",
+        "magichour",
+        "openapi",
+        "sdk",
+        "video-generation"
+      ],
+      "candidate_tags": [
+        "integración/API probable",
+        "texto a video",
+        "imagen a video"
+      ],
+      "matched_terms": [
+        "text-to-video",
+        "image-to-video",
+        "video generation"
+      ],
+      "relevance_score": 3,
+      "verification_status": "PENDIENTE: revisar README, licencia, código, demos y requisitos"
+    },
+    {
+      "repository": "rnikadi/genaiopengateway",
+      "url": "https://github.com/rnikadi/genaiopengateway",
+      "description": "Open-source GenAI gateway for every model type: LLMs, embeddings, text-to-speech, speech-to-text, realtime audio, image and video generation, plus an MCP and agent gateway. Enterprise features like SSO, RBAC, budgets, guardrails and audit are all included. Apache-2.0, with no paid tier.",
+      "stars": 0,
+      "forks": 0,
+      "language": "Go",
+      "license": "Apache-2.0",
+      "created_at": "2026-10-22T21:35:34Z",
+      "updated_at": "2026-10-26T15:56:22Z",
+      "pushed_at": "2026-10-29T19:17:03Z",
+      "archived": false,
+      "topics": [],
+      "candidate_tags": [
+        "candidato por revisar"
+      ],
+      "matched_terms": [
+        "video generation"
+      ],
+      "relevance_score": 1,
+      "verification_status": "PENDIENTE: revisar README, licencia, código, demos y requisitos"
+    },
+    {
+      "repository": "umairs759/HIGGSFIELD-AI-OPEN-SOURCE",
+      "url": "https://github.com/umairs759/HIGGSFIELD-AI-OPEN-SOURCE",
+      "description": "Free & Open-Source Higgsfield AI alternative with Multi-Provider BYOK (NVIDIA NIM, Kie.ai, Replicate, Fal). Features text-to-image, cinematic video, lipsync, and AI prompt enhancement.",
+      "stars": 0,
+      "forks": 0,
+      "language": "JavaScript",
+      "license": null,
+      "created_at": "2026-10-30T18:19:48Z",
+      "updated_at": "2026-10-30T18:48:47Z",
+      "pushed_at": "2026-10-30T18:51:44Z",
+      "archived": false,
+      "topics": [
+        "ai-video-generation",
+        "ai-video-generation-api",
+        "generative-ai",
+        "higgsfield-ai",
+        "nvidia-nim",
+        "open-source",
+        "text-to-video"
+      ],
+      "candidate_tags": [
+        "integración/API probable",
+        "texto a video"
+      ],
+      "matched_terms": [
+        "text-to-video"
+      ],
+      "relevance_score": 1,
+      "verification_status": "PENDIENTE: revisar README, licencia, código, demos y requisitos"
+    }
+  ]
+}

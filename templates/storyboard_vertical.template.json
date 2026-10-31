@@ -1,106 +1,231 @@
 {
-  "_comentario": "Plantilla CAPCOT vertical (fuente de verdad: docs/PLAN_MAESTRO_AUTOMATICO.md). Reemplaza a storyboard.template.json (16:9, 1-3 min). arc ∈ hook_medias_res|desarrollo|cierre_historia|reflexion_o_pregunta. Validar con scripts/validar_storyboard.py --check-doi.",
-  "project_id": "AAAA-MM-DD-slug",
-  "serie": "Imaginantes de la ciencia #N",
-  "title": "",
+  "_schema": "CAPCOT_STORYBOARD_TEXT_V2",
+  "project_id": "YYYY-MM-DD_slug",
+  "serie": "Datos y ociosidades",
+  "title": "Título descriptivo de la cápsula",
+  "titulo": "Gancho de máximo seis palabras",
   "language": "es-MX",
   "aspect_ratio": "9:16",
-  "target_duration_seconds": 80,
-  "audience": "Público general curioso (TikTok / YouTube Shorts)",
+  "target_duration_seconds": 84,
+  "estructura": "pregunta",
+  "audience": "Público principal",
+  "occasion": "Contexto de consumo",
+  "resumen": "Resumen factual de la historia",
   "trend_source": {
-    "tipo": "google_trends_rss | feed_cientifico | atemporal_backlog",
-    "rss_geo": "MX",
-    "termino": "",
-    "url": "https://trends.google.com/trending/rss?geo=MX",
-    "fecha_consulta": "AAAA-MM-DD",
-    "puntaje": 0
+    "termino": "Tema/candidato",
+    "fecha_publicacion": "YYYY-MM-DD",
+    "url": "URL de la fuente primaria"
   },
+  "editorial_status": "PROPUESTA_PENDIENTE_DE_GROK",
   "arco": {
-    "hook_medias_res": "Primera frase ≤12 palabras, en plena acción (0-5 s)",
-    "desarrollo": "Contexto mínimo, pistas, giro con dato citado",
-    "cierre_historia": "Lo que hoy se sabe, con fuente",
-    "reflexion_o_pregunta": "Reflexión ontológica o pregunta abierta; empalma con el gancho",
-    "cortinilla_fuentes": "5-6 s, 1-4 fuentes, zona segura"
+    "hook_medias_res": "Gancho breve",
+    "desarrollo": "Desarrollo causal",
+    "cierre_historia": "Cierre de la historia",
+    "reflexion_o_pregunta": "Reflexión o pregunta final"
+  },
+  "estilo_id": "ID_EXACTO_DE_scripts/estilos.json",
+  "estilo_visual": "Nombre exacto del catálogo",
+  "visual_identity": {
+    "style_id": "ID_EXACTO_DE_scripts/estilos.json",
+    "style_name": "Nombre exacto",
+    "prompt_base": "COPIAR LITERALMENTE DESDE scripts/estilos.json",
+    "palette": "Paleta fija",
+    "lighting": "Iluminación constante",
+    "texture": "Materialidad y acabado",
+    "composition": "Reglas de encuadre",
+    "negative_prompt": "Exclusiones visuales",
+    "reference_assets": [],
+    "seed": null,
+    "seed_policy": "Regla de continuidad entre escenas"
+  },
+  "typography_identity": {
+    "font_family": "DejaVu Sans",
+    "font_weight": "700 para gancho; 400 para subtítulos",
+    "title_style": "Máximo seis palabras; presente desde frame 0 en postproducción",
+    "subtitle_style": "Bloques de máximo tres palabras; zona segura inferior",
+    "hierarchy": "Gancho > dato/etiqueta > subtítulos",
+    "animation": "Un movimiento por plano; tipografía en postproducción"
   },
   "voice": {
     "engine": "edge-tts",
     "voice_id": "es-MX-JorgeNeural",
-    "rate": "+4%",
+    "language": "es-MX",
+    "rate": "+7%",
     "pitch": "-2Hz",
-    "pad_seconds": 0.5,
-    "fallback": {
-      "engine": "google-chirp3-hd",
-      "voice_id": "es-US-Chirp3-HD-Charon"
-    }
+    "pad_seconds": 0.3,
+    "modo_pausas": "continuo"
   },
   "sources": [
     {
       "id": "SRC-001",
-      "cita_corta": "Autor et al. (año). Revista vol, págs.",
-      "doi": "10.xxxx/xxxx",
-      "url": "https://doi.org/10.xxxx/xxxx",
-      "accessed": "AAAA-MM-DD",
+      "cita_corta": "Referencia bibliográfica breve",
+      "url": "URL/DOI real",
+      "doi": null,
+      "accessed": "YYYY-MM-DD",
+      "publication_date": "YYYY-MM-DD",
       "supports": [
-        "Afirmación exacta que respalda"
-      ]
+        "Afirmación que respalda"
+      ],
+      "verification_status": "PENDIENTE | VERIFICADO_CROSSREF | VERIFICADO_RESOLVEDOR"
     }
   ],
   "scenes": [
     {
       "id": "scene_001",
       "arc": "hook_medias_res",
-      "duration_seconds": 6,
-      "narration": "Texto exacto de la voz (mínima; la imagen narra).",
-      "on_screen_text": "≤6 palabras",
-      "visual_description": "Qué se ve",
-      "image_prompt": "prompt de imagen vertical 9:16 con semilla de estilo fija",
+      "duration_seconds": 10,
+      "narration": "Narración completa de esta escena.",
+      "on_screen_text": "Gancho corto",
+      "visual_description": "Descripción visual concreta",
+      "image_prompt": "COPIAR prompt_base literal + descripción de escena",
+      "ambiente": "Ambiente sonoro",
+      "sfx": [],
       "source_ids": [
         "SRC-001"
       ],
-      "asset_filename": "frames/scene_001.png",
-      "asset_type": "image",
-      "motion": "kenburns_auto",
-      "animated_hook": false
+      "style_id": "ID_EXACTO_DE_scripts/estilos.json"
+    },
+    {
+      "id": "scene_002",
+      "arc": "desarrollo",
+      "duration_seconds": 12,
+      "narration": "Afirmación respaldada por fuente.",
+      "on_screen_text": "Etiqueta breve",
+      "visual_description": "Descripción visual concreta",
+      "image_prompt": "COPIAR prompt_base literal + descripción de escena",
+      "ambiente": "Ambiente sonoro",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "ID_EXACTO_DE_scripts/estilos.json",
+      "capa": {
+        "tipo": "mapa",
+        "region": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "puntos": [],
+        "titulo": "Lugar real y función del pin",
+        "fuente": "Fuente cartográfica oficial; aclarar precisión y qué representa el punto."
+      }
+    },
+    {
+      "id": "scene_003",
+      "arc": "desarrollo",
+      "duration_seconds": 12,
+      "narration": "Dato o mecanismo con fuente.",
+      "on_screen_text": "Dato breve",
+      "visual_description": "Descripción visual concreta",
+      "image_prompt": "COPIAR prompt_base literal + descripción de escena",
+      "ambiente": "Ambiente sonoro",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "ID_EXACTO_DE_scripts/estilos.json",
+      "capa": {
+        "tipo": "dato",
+        "valor": "Dato comprobado",
+        "etiqueta": "Qué mide",
+        "fuente": "Fuente primaria que respalda el dato."
+      }
+    },
+    {
+      "id": "scene_004",
+      "arc": "desarrollo",
+      "duration_seconds": 12,
+      "narration": "Continuación de la explicación.",
+      "on_screen_text": "Texto breve",
+      "visual_description": "Descripción visual concreta",
+      "image_prompt": "COPIAR prompt_base literal + descripción de escena",
+      "ambiente": "Ambiente sonoro",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "ID_EXACTO_DE_scripts/estilos.json"
+    },
+    {
+      "id": "scene_005",
+      "arc": "desarrollo",
+      "duration_seconds": 12,
+      "narration": "Evidencia o matiz relevante.",
+      "on_screen_text": "Texto breve",
+      "visual_description": "Descripción visual concreta",
+      "image_prompt": "COPIAR prompt_base literal + descripción de escena",
+      "ambiente": "Ambiente sonoro",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "ID_EXACTO_DE_scripts/estilos.json"
+    },
+    {
+      "id": "scene_006",
+      "arc": "cierre_historia",
+      "duration_seconds": 10,
+      "narration": "Cierre factual de la historia.",
+      "on_screen_text": "Texto breve",
+      "visual_description": "Descripción visual concreta",
+      "image_prompt": "COPIAR prompt_base literal + descripción de escena",
+      "ambiente": "Ambiente sonoro",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "ID_EXACTO_DE_scripts/estilos.json"
+    },
+    {
+      "id": "scene_007",
+      "arc": "reflexion_o_pregunta",
+      "duration_seconds": 10,
+      "narration": "Reflexión final. Esto fue Datos y ociosidades.",
+      "on_screen_text": "Cierre breve",
+      "visual_description": "Descripción visual concreta",
+      "image_prompt": "COPIAR prompt_base literal + descripción de escena",
+      "ambiente": "Ambiente sonoro",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "ID_EXACTO_DE_scripts/estilos.json"
     }
   ],
   "cortinilla_fuentes": {
     "duration_seconds": 6,
     "titulo": "Fuentes",
-    "aviso": "Imágenes generadas con IA. Voz sintética.",
-    "bg_rgb": [
-      18,
-      16,
-      14
+    "aviso": "Divulgación prevista para la versión final; declarar solo los recursos realmente generados.",
+    "firma": "Datos y ociosidades",
+    "source_ids": [
+      "SRC-001"
     ]
   },
   "audio": {
-    "music_asset": "",
-    "music_license": "",
-    "music_volume": 0.25
+    "music_asset": null,
+    "music_plan": "Cama prevista; Grok la genera o selecciona en producción",
+    "music_license": null
   },
   "export": {
-    "filename": "capsula.mp4",
     "resolution": "1080x1920",
     "fps": 30,
-    "subtitle_max_words": 3,
-    "loudness_lufs": -14
+    "render_status": "NOT_GENERATED"
   },
   "publicacion": {
-    "youtube": {
-      "privacy": "public",
-      "publishAt": "",
-      "titulo": "",
-      "descripcion_con_fuentes": "",
-      "tags": [
-        "#Shorts"
-      ],
-      "synthetic_content": true
-    },
-    "tiktok": {
-      "modo": "draft_inbox",
-      "is_aigc": true,
-      "caption": ""
-    }
+    "status": "PENDIENTE_DECISION_GROK",
+    "platforms": [
+      "YouTube Shorts",
+      "TikTok",
+      "Facebook Reels"
+    ],
+    "note": "No publicar ni programar desde preproducción textual."
   },
-  "estado": "BORRADOR"
+  "estado": "PENDIENTE_REVISION_GROK",
+  "production_mode": "storyboard_only",
+  "validation_notes": [],
+  "linea_tematica_provisional": "Clasificar con docs/LINEAS_TEMATICAS.md; no crear una línea nueva sin evidencia.",
+  "approved_assets": [],
+  "risk_notes": []
 }
