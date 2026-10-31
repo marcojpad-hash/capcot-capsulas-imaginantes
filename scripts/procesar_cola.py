@@ -7,17 +7,22 @@ Flujo: validar (esquema + DOI + tema libre en data/temas_del_dia.json + cupo) ->
 Procesa TODAS las entradas de --fecha en orden hasta llenar el cupo; el cupo vive en rotacion.py (MAX_POR_DIA / MAX_ORIGEN).
 Nunca consume entradas de otras fechas (cola histórica)."""
 import argparse, datetime, glob, json, os, shutil, subprocess, sys
+from zoneinfo import ZoneInfo
 R = os.path.dirname(os.path.dirname(os.path.abspath(__file__))); S = os.path.join(R, "scripts"); sys.path.insert(0, S)
 import rotacion
 COLA = os.path.join(R, "data", "cola.json")
 def cola(): return json.load(open(COLA)) if os.path.exists(COLA) else []
 def guardar(l): json.dump(l, open(COLA, "w"), ensure_ascii=False, indent=1)
+def fecha_actual_cdmx():
+    """Fecha local de CAPCOT; evita que el runner UTC cambie de día antes que CDMX."""
+    return datetime.datetime.now(ZoneInfo("America/Mexico_City")).date().isoformat()
+
 def upd(l, pid, **k):
     for x in l:
         if x["id"] == pid: x.update(k); x["actualizado"] = datetime.datetime.now().isoformat(timespec="seconds")
     guardar(l)
 if __name__ == "__main__":
-    ap = argparse.ArgumentParser(); ap.add_argument("--fecha", default=datetime.date.today().isoformat())
+    ap = argparse.ArgumentParser(); ap.add_argument("--fecha", default=fecha_actual_cdmx())
     ap.add_argument("--publicar", action="store_true"); ap.add_argument("--programar", action="store_true"); ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--proveedor-img", default="manual"); a = ap.parse_args()
     ent = sorted(glob.glob(os.path.join(R, "cola", "entrada", "*.json")) + glob.glob(os.path.join(R, "cola", "entrada", "*", "storyboard.json")))
@@ -32,10 +37,10 @@ if __name__ == "__main__":
         antiguas = ", ".join(os.path.relpath(p, R) for p in ent[:8])
         sys.exit(f"Sin entrada para {a.fecha}; no se procesan colas antiguas automáticamente. Entradas existentes: {antiguas}")
     l = cola()
-    for f in candidatas:  # solo entradas de --fecha; el cupo lo decide rotacion.exigir_cupo
-        try: rotacion.exigir_cupo(a.fecha, "externa")
-        except SystemExit as e: print(f"Cupo lleno para {a.fecha}: {e}. Se detiene; quedan en entrada/: {', '.join(os.path.relpath(x, R) for x in candidatas[candidatas.index(f):])}"); break
+    for f in candidatas:  # solo entradas de --fecha; el cupo excluye el project_id candidato
         sb = json.load(open(f, encoding="utf-8")); pid = sb.get("project_id") or os.path.splitext(os.path.basename(f))[0]
+        try: rotacion.exigir_cupo(a.fecha, "externa", project_id=pid)
+        except SystemExit as e: print(f"Cupo lleno para {a.fecha}: {e}. Se detiene; quedan en entrada/: {', '.join(os.path.relpath(x, R) for x in candidatas[candidatas.index(f):])}"); break
         tema = sb.get("trend_source", {}).get("termino") or sb.get("title", "")
         if not any(x["id"] == pid for x in l): l.append({"id": pid, "fecha": a.fecha, "origen": "externa", "tema": tema, "estado": "recibido", "entrada": os.path.relpath(f, R)}); guardar(l)
         if rotacion.tema_ocupado(a.fecha, tema, pid): upd(l, pid, estado="rechazado", motivo=f"tema '{tema}' ya usado hoy (data/temas_del_dia.json)"); print(f"RECHAZADO: tema repetido hoy: {tema}"); continue
