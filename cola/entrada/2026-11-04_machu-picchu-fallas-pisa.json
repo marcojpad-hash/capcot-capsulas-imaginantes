@@ -1,0 +1,354 @@
+{
+  "_schema": "CAPCOT_STORYBOARD_TEXT_V2",
+  "project_id": "2026-11-04_machu-picchu-fallas-pisa",
+  "serie": "Datos y ociosidades",
+  "title": "Machu Picchu y las fallas: cuando la geología pudo ser aliada",
+  "titulo": "¿La falla ayudó a los incas?",
+  "language": "es-MX",
+  "aspect_ratio": "9:16",
+  "target_duration_seconds": 89,
+  "estructura": "comparacion",
+  "audience": "Público general; curiosidad de geología e historia, sin marcar como contenido infantil.",
+  "occasion": "Cápsula vertical de ciencia e historia cultural para YouTube Shorts, TikTok y Facebook Reels.",
+  "resumen": "La Torre de Pisa comenzó a inclinarse por el asentamiento de un terreno blando. En contraste, una interpretación geoarqueológica de Rualdo Menegat propone que los incas aprovecharon la red de fallas y fracturas de Machu Picchu para obtener bloques de roca y favorecer el drenaje. La intencionalidad es una interpretación presentada en un congreso, no una certeza definitiva.",
+  "trend_source": {
+    "termino": "Machu Picchu: fallas geológicas y planificación inca",
+    "fecha_publicacion": "2019-09-23",
+    "url": "https://doi.org/10.1130/abs/2019AM-330598"
+  },
+  "editorial_status": "PROPUESTA_PENDIENTE_DE_GROK",
+  "arco": {
+    "hook_medias_res": "Dos monumentos, dos relaciones opuestas con el terreno: Pisa se inclinó; Machu Picchu pudo aprovechar las fracturas.",
+    "desarrollo": "Comparar el asentamiento del suelo de Pisa con la red de fallas y fracturas descrita por Menegat en Machu Picchu, explicando sus posibles ventajas para la piedra y el agua.",
+    "cierre_historia": "Extender el patrón a otros asentamientos andinos citados por el investigador y delimitar el alcance de la evidencia.",
+    "reflexion_o_pregunta": "La geología no solo sostiene una ciudad: a veces condiciona dónde se construye y cómo se trabaja la piedra."
+  },
+  "estilo_id": "risografia",
+  "estilo_visual": "Risografía (propio)",
+  "visual_identity": {
+    "style_id": "risografia",
+    "style_name": "Risografía (propio)",
+    "prompt_base": "risograph print, two-color fluorescent pink and teal overprint, misregistration, grainy texture, flat shapes, vertical 9:16, no text",
+    "palette": "Magenta fluorescente y turquesa como tintas principales; negro para contraste; pequeños acentos naranja solo si ayudan a separar planos.",
+    "lighting": "Contraste gráfico alto, sombras limpias, sin iluminación fotográfica realista.",
+    "texture": "Grano de risografía, sobreimpresión y ligero desregistro de tintas; superficies de papel.",
+    "composition": "Dípticos y cortes geológicos legibles; líneas tectónicas abstractas claramente identificadas como interpretación; una idea visual dominante por escena.",
+    "negative_prompt": "No texto generado dentro de la imagen, no símbolos pseudoincaicos inventados, no fallas representadas como grietas gigantes abiertas, no mapas geológicos falsos, no maquinaria moderna en escenas históricas, no sepia ni dorado.",
+    "reference_assets": [],
+    "seed": null,
+    "seed_policy": "Mantener el mismo grano, paleta y grosor de línea; variar encuadre y escala sin cambiar el lenguaje gráfico."
+  },
+  "typography_identity": {
+    "font_family": "DejaVu Sans",
+    "font_weight": "700 para gancho; 400 para subtítulos",
+    "title_style": "Gancho de seis palabras máximo, presente desde frame 0 en postproducción.",
+    "subtitle_style": "Bloques de máximo tres palabras; zona segura inferior.",
+    "hierarchy": "Gancho > dato/etiqueta > subtítulos.",
+    "animation": "Un movimiento por plano; tipografía en postproducción."
+  },
+  "voice": {
+    "engine": "edge-tts",
+    "voice_id": "es-MX-JorgeNeural",
+    "language": "es-MX",
+    "rate": "+7%",
+    "pitch": "-2Hz",
+    "pad_seconds": 0.3,
+    "modo_pausas": "continuo"
+  },
+  "sources": [
+    {
+      "id": "SRC-001",
+      "cita_corta": "Menegat, R. (2019). How Incas Used Geological Faults to Build Their Settlements. GSA Annual Meeting, Abstract 148-9.",
+      "url": "https://doi.org/10.1130/abs/2019AM-330598",
+      "doi": "10.1130/abs/2019AM-330598",
+      "accessed": "2026-10-31",
+      "publication_date": "2019-09-23",
+      "supports": [
+        "Red densa de fallas y fracturas identificada mediante imágenes satelitales y trabajo de campo",
+        "Tres orientaciones principales: 020°, 055° y 330°, más dos orientaciones secundarias",
+        "Interpretación del autor sobre la selección de cruces de fallas y la orientación de sectores, edificios y escaleras"
+      ],
+      "verification_status": "VERIFICADO_RESOLVEDOR"
+    },
+    {
+      "id": "SRC-002",
+      "cita_corta": "Geological Society of America. (2019). Machu Picchu: Ancient Incan sanctuary intentionally built on faults. Comunicado de investigación.",
+      "url": "https://www.eurekalert.org/news-releases/463921",
+      "doi": null,
+      "accessed": "2026-10-31",
+      "publication_date": "2019-09-23",
+      "supports": [
+        "El sistema de fracturas pudo facilitar la extracción y talla de bloques de roca",
+        "Menegat propone que las fallas canalizaban agua de deshielo y lluvia y contribuían al drenaje"
+      ],
+      "verification_status": "VERIFICADO_RESOLVEDOR"
+    },
+    {
+      "id": "SRC-003",
+      "cita_corta": "Comune di Pisa. Piazza del Duomo – La torre pendente. Sitio oficial de turismo municipal.",
+      "url": "https://touch.turismo.pisa.it/en/cultura/dettaglio/piazza-del-duomo-la-torre-pendente/",
+      "doi": null,
+      "accessed": "2026-10-31",
+      "publication_date": "s/f",
+      "supports": [
+        "La construcción comenzó el 9 de agosto de 1173",
+        "La obra se detuvo después del tercer anillo por asentamiento del terreno; el suelo blando y la antigua rama del río Auser contribuyeron a la inclinación",
+        "Intervención de estabilización entre 1990 y 2001"
+      ],
+      "verification_status": "VERIFICADO_RESOLVEDOR"
+    },
+    {
+      "id": "SRC-004",
+      "cita_corta": "Institution of Civil Engineers. Stabilising the Leaning Tower of Pisa.",
+      "url": "https://www.ice.org.uk/what-is-civil-engineering/infrastructure-projects/stabilising-the-leaning-tower-of-pisa",
+      "doi": null,
+      "accessed": "2026-10-31",
+      "publication_date": "s/f",
+      "supports": [
+        "La torre se cerró al público en 1990 y reabrió en 2001",
+        "La inclinación se redujo mediante extracción controlada de suelo bajo la cimentación"
+      ],
+      "verification_status": "VERIFICADO_RESOLVEDOR"
+    },
+    {
+      "id": "SRC-005",
+      "cita_corta": "INAIGEM, Gobierno del Perú. (2021). Conozca el porqué los incas construyeron Machu Picchu en un área inaccesible.",
+      "url": "https://www.gob.pe/institucion/inaigem/noticias/494604-conozca-el-porque-los-incas-construyeron-machu-picchu-en-un-area-inaccesible",
+      "doi": null,
+      "accessed": "2026-10-31",
+      "publication_date": "2021-05-24",
+      "supports": [
+        "Síntesis institucional de la hipótesis de Menegat sobre fallas, abastecimiento y drenaje de agua",
+        "La misma interpretación se extiende a Pisac, Ollantaytambo y Cusco"
+      ],
+      "verification_status": "VERIFICADO_RESOLVEDOR"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_001",
+      "arc": "hook_medias_res",
+      "duration_seconds": 9,
+      "narration": "Una torre se inclinó mientras la construían. Otra ciudad se levantó entre fracturas del terreno. ¿Cómo pudo eso ayudar a Machu Picchu?",
+      "on_screen_text": "¿Falla aliada?",
+      "visual_description": "Composición partida en dos: la Torre de Pisa se ladea sobre suelo blando; al otro lado, Machu Picchu aparece sobre una trama de fracturas geométricas. Contraste visual inmediato, sin texto generado dentro de la imagen.",
+      "image_prompt": "risograph print, two-color fluorescent pink and teal overprint, misregistration, grainy texture, flat shapes, vertical 9:16, no text, bold Peruvian chicha-poster energy, split-screen composition: the Leaning Tower of Pisa tilting over soft ground on the left, Machu Picchu on a fractured Andean ridge on the right, fluorescent magenta and teal, dramatic high contrast, no lettering",
+      "ambiente": "Pulso grave y viento andino que entra en estéreo.",
+      "sfx": [
+        "golpe seco al inclinarse",
+        "rasgado breve de papel"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-003"
+      ],
+      "style_id": "risografia"
+    },
+    {
+      "id": "scene_002",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "En Pisa, las obras comenzaron en 1173. Al llegar al tercer nivel, el terreno cedió bajo sus cimientos poco profundos y la torre empezó a ladearse.",
+      "on_screen_text": "Pisa · 1173",
+      "visual_description": "Mapa comparativo con dos localizadores: Pisa, Italia, y Machu Picchu, Perú. Acercamiento posterior a la torre y un corte esquemático de suelo compresible bajo la cimentación.",
+      "image_prompt": "risograph print, two-color fluorescent pink and teal overprint, misregistration, grainy texture, flat shapes, vertical 9:16, no text, editorial map-and-cutaway composition, locator dots for Pisa Italy and Machu Picchu Peru, then a clear cross-section of shallow foundations settling unevenly into soft clayey ground, crisp geometric layers, no labels or text",
+      "ambiente": "Viento urbano tenue y vibración de piedra.",
+      "sfx": [
+        "crujido de mampostería"
+      ],
+      "source_ids": [
+        "SRC-003",
+        "SRC-004"
+      ],
+      "style_id": "risografia",
+      "capa": {
+        "tipo": "mapa",
+        "region": [
+          -13.3,
+          -72.7,
+          43.9,
+          10.5
+        ],
+        "puntos": [
+          {
+            "nombre": "Machu Picchu, Perú",
+            "lat": -13.1631,
+            "lon": -72.545,
+            "nota": "Localizador aproximado del santuario; no representa trazas de fallas."
+          },
+          {
+            "nombre": "Pisa, Italia",
+            "lat": 43.7229,
+            "lon": 10.3966,
+            "nota": "Localizador aproximado de la Torre inclinada; no representa el subsuelo."
+          }
+        ],
+        "titulo": "Dos ciudades, dos terrenos",
+        "fuente": "OpenStreetMap contributors, https://www.openstreetmap.org/; coordenadas aproximadas de localización urbana/turística, no levantamiento geológico."
+      }
+    },
+    {
+      "id": "scene_003",
+      "arc": "desarrollo",
+      "duration_seconds": 11,
+      "narration": "Pero en Machu Picchu, el geólogo Rualdo Menegat cartografió una red densa de fallas y fracturas. Una falla es una fractura de la corteza donde bloques de roca se desplazan.",
+      "on_screen_text": "Red de fracturas",
+      "visual_description": "Vista cenital estilizada de la montaña y ciudadela; líneas tectónicas abstractas se revelan bajo el relieve, sin fingir que son un mapa topográfico exacto.",
+      "image_prompt": "risograph print, two-color fluorescent pink and teal overprint, misregistration, grainy texture, flat shapes, vertical 9:16, no text, top-down stylized Andean mountain relief beneath Machu Picchu, a dense network of intersecting geological fractures revealed as fluorescent pink and teal lines under stone terraces, scientific editorial illustration, no text",
+      "ambiente": "Viento de altura, textura sonora de roca.",
+      "sfx": [
+        "trazo eléctrico suave"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-005"
+      ],
+      "style_id": "risografia"
+    },
+    {
+      "id": "scene_004",
+      "arc": "desarrollo",
+      "duration_seconds": 11,
+      "narration": "Su análisis distinguió tres direcciones principales: veinte, cincuenta y cinco y trescientos treinta grados. Al cruzarse, forman una trama parecida a una X bajo la ciudadela.",
+      "on_screen_text": "Tres direcciones",
+      "visual_description": "Diagrama de brújula con tres ejes angulares diferenciados y una X central. Se presenta como orientación medida en el estudio, no como plano exacto de cada falla.",
+      "image_prompt": "risograph print, two-color fluorescent pink and teal overprint, misregistration, grainy texture, flat shapes, vertical 9:16, no text, clean scientific compass diagram with three bold intersecting directional axes at 020, 055 and 330 degrees, central X motif, fluorescent magenta and teal overprint, precise infographic geometry, no numerals or text",
+      "ambiente": "Tono electrónico breve y estable.",
+      "sfx": [
+        "tres pulsos secos"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "risografia",
+      "capa": {
+        "tipo": "dato",
+        "valor": "020° · 055° · 330°",
+        "etiqueta": "Orientaciones principales de fallas descritas por Menegat (2019)",
+        "fuente": "Menegat, R. (2019), GSA Annual Meeting, Abstract 148-9, DOI 10.1130/abs/2019AM-330598. Son orientaciones principales reportadas en el análisis, no tres mediciones de desplazamiento."
+      }
+    },
+    {
+      "id": "scene_005",
+      "arc": "desarrollo",
+      "duration_seconds": 11,
+      "narration": "Y esa roca ya fracturada pudo facilitar el trabajo: los bloques se separaban siguiendo planos naturales, reduciendo el esfuerzo para tallarlos y encajarlos.",
+      "on_screen_text": "Piedra disponible",
+      "visual_description": "Bloque de granito atravesado por planos naturales; una sección se separa siguiendo la fractura y se convierte en un sillar que encaja con otro.",
+      "image_prompt": "risograph print, two-color fluorescent pink and teal overprint, misregistration, grainy texture, flat shapes, vertical 9:16, no text, close-up of fractured Andean granite splitting along natural planes into precisely shaped Inca masonry blocks, interlocking stone joints, fluorescent pink and teal cutaway lines, tactile grain, no text",
+      "ambiente": "Fricción mineral y golpes artesanales discretos.",
+      "sfx": [
+        "roce de piedra",
+        "encaje de bloque"
+      ],
+      "source_ids": [
+        "SRC-002",
+        "SRC-001"
+      ],
+      "style_id": "risografia"
+    },
+    {
+      "id": "scene_006",
+      "arc": "desarrollo",
+      "duration_seconds": 11,
+      "narration": "Además, Menegat propuso que las fracturas ayudaban a conducir y drenar el agua de lluvia y deshielo. No era solo piedra disponible: también importaba el agua.",
+      "on_screen_text": "Agua y drenaje",
+      "visual_description": "Corte de la montaña: gotas de lluvia y agua de deshielo recorren fracturas y salen hacia canales y drenajes de la ciudadela. Es una representación de la hipótesis, no un plano hidráulico medido.",
+      "image_prompt": "risograph print, two-color fluorescent pink and teal overprint, misregistration, grainy texture, flat shapes, vertical 9:16, no text, geological cutaway of an Andean ridge, rainwater and meltwater moving through natural rock fractures toward drainage channels below Machu Picchu, bold flowing teal streams, fluorescent pink fracture network, stylized scientific cross-section, no text",
+      "ambiente": "Agua filtrándose entre piedra y viento.",
+      "sfx": [
+        "goteo",
+        "flujo de agua breve"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002",
+        "SRC-005"
+      ],
+      "style_id": "risografia"
+    },
+    {
+      "id": "scene_007",
+      "arc": "cierre_historia",
+      "duration_seconds": 10,
+      "narration": "El mismo investigador identificó patrones parecidos en Pisac, Ollantaytambo y Cusco. Pero es una interpretación geoarqueológica presentada en un congreso, no una prueba definitiva de cada decisión inca.",
+      "on_screen_text": "Hipótesis, no certeza",
+      "visual_description": "Tres siluetas cartográficas de Pisac, Ollantaytambo y Cusco aparecen conectadas por líneas de orientación. Después, la imagen se detiene sobre la ficha del congreso GSA para marcar el alcance de la evidencia.",
+      "image_prompt": "risograph print, two-color fluorescent pink and teal overprint, misregistration, grainy texture, flat shapes, vertical 9:16, no text, three Andean settlement silhouettes representing Pisac Ollantaytambo and Cusco connected by subtle fault-direction lines, conference research poster motif, clear editorial restraint, fluorescent magenta and teal, no text",
+      "ambiente": "La música baja; queda el viento.",
+      "sfx": [
+        "tres marcas suaves"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-005"
+      ],
+      "style_id": "risografia"
+    },
+    {
+      "id": "scene_008",
+      "arc": "reflexion_o_pregunta",
+      "duration_seconds": 10,
+      "narration": "La diferencia sorprende: en Pisa, el suelo blando inclinó la torre; en Machu Picchu, la roca fracturada pudo convertirse en aliada. Esto fue Datos y ociosidades.",
+      "on_screen_text": "La roca aliada",
+      "visual_description": "Regreso al díptico inicial: la torre inclinada a un lado; Machu Picchu estable sobre el relieve fracturado al otro. Las dos mitades se cierran en una sola composición.",
+      "image_prompt": "risograph print, two-color fluorescent pink and teal overprint, misregistration, grainy texture, flat shapes, vertical 9:16, no text, final memorable split composition, leaning Tower of Pisa on soft ground contrasted with Machu Picchu integrated into fractured Andean rock, two landscapes joining into one bold chicha-inspired risograph poster, fluorescent pink and teal, no text",
+      "ambiente": "Resolución musical breve y aire de montaña.",
+      "sfx": [
+        "cierre de papel"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-003",
+        "SRC-004"
+      ],
+      "style_id": "risografia"
+    }
+  ],
+  "cortinilla_fuentes": {
+    "duration_seconds": 6,
+    "titulo": "Fuentes",
+    "aviso": "Imágenes previstas con IA; declarar en la versión final únicamente los recursos realmente generados.",
+    "firma": "Datos y ociosidades",
+    "source_ids": [
+      "SRC-001",
+      "SRC-002",
+      "SRC-003",
+      "SRC-004",
+      "SRC-005"
+    ]
+  },
+  "audio": {
+    "music_asset": null,
+    "music_plan": "Cama rítmica breve con percusión seca y textura de impresión; Grok selecciona o genera en producción.",
+    "music_license": null
+  },
+  "export": {
+    "resolution": "1080x1920",
+    "fps": 30,
+    "render_status": "NOT_GENERATED"
+  },
+  "publicacion": {
+    "status": "PENDIENTE_DECISION_GROK",
+    "platforms": [
+      "YouTube Shorts",
+      "TikTok",
+      "Facebook Reels"
+    ],
+    "note": "No publicar ni programar desde preproducción textual."
+  },
+  "estado": "PENDIENTE_REVISION_GROK",
+  "production_mode": "storyboard_only",
+  "validation_notes": [
+    "El dato de 020°, 055° y 330° corresponde a orientaciones principales reportadas en el resumen de congreso de Menegat (2019), no a desplazamientos medidos.",
+    "La hipótesis de selección intencional de zonas de falla es una interpretación del autor; no afirmar que los incas conocían la tectónica moderna.",
+    "El mapa ubica únicamente Pisa y Machu Picchu; no representa trazas geológicas."
+  ],
+  "linea_tematica_provisional": "Ciencia de la Tierra / geoarqueología / mito vs dato.",
+  "thumbnail_source": "scene_001",
+  "approved_assets": [],
+  "risk_notes": [
+    "El trabajo principal es un resumen de congreso GSA, no un artículo de investigación revisado por pares. La narración debe conservar la atribución a Menegat y el lenguaje de posibilidad.",
+    "No usar la comparación para afirmar que las fallas siempre son seguras o que la ubicación de Machu Picchu elimina riesgos geológicos."
+  ]
+}
