@@ -2,7 +2,7 @@
 
 **Repositorio:** marcojpad-hash/capcot-capsulas-imaginantes  
 **Rama auditada:** feature/capcot-video-discovery-continuity  
-**HEAD de la rama:** 676d8ae62519fd8ab56ed8bfa5b0ddbcba9cde60  
+**HEAD del contenido auditado antes de guardar este informe:** 676d8ae62519fd8ab56ed8bfa5b0ddbcba9cde60  
 **Corte:** 2026-10-31  
 **Tipo:** auditoría de cola, estructura, rotación, estados y consistencia. Sin producción de medios.
 
@@ -200,7 +200,7 @@ No se corrigió la semántica de fecha objetivo; requiere un contrato explícito
 - data/balances_6h.json y data/vistas_historico.json en la rama feature llegan al 28-oct 08:08.
 - data/endscreens_rotacion.json contiene una actualización del 31-oct.
 - main tiene el commit 4c7d8091b72cc01961ad5fd79378c5d0944dd801 con un snapshot del 31-oct 14:12: YT 23,665 vistas, 798 likes, 24 comentarios y 63 suscriptores; el delta consignado frente al 28-oct es +8,549 vistas, +278 likes, +5 comentarios y +22 suscriptores. TikTok: 15 seguidores, 531 likes de perfil y 30 videos. Ese snapshot no está incorporado a feature y no se copió.
-- La comparación actual de ramas reporta feature divergida: 191 commits exclusivos por delante y 13 por detrás de main. No se sincronizó ni se hizo merge.
+- La comparación tomada antes de guardar este informe reportó feature divergida: 191 commits exclusivos por delante y 13 por detrás de main. No se sincronizó ni se hizo merge.
 - data/rotacion registra cinco publicaciones del 31-oct. El registro combinado añade los tres paquetes con prefijo 31-oct, aunque sus slots son futuros. El estilo y la rotación musical de 2/3-nov no quedan certificados por data/rotacion.
 - Pardelas tiene cama «None» como texto en data/rotacion y Kromdraai no declara cama; no se normalizaron esos valores.
 
