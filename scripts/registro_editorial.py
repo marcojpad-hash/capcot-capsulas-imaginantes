@@ -157,3 +157,13 @@ def temas_dia(fecha):
             out.append({"tema": str(theme).lower(), "origen": rec.get("origen"), "project_id": pid, "registro": rec.get("_source")})
             seen.add(key)
     return out
+
+if __name__ == "__main__":
+    import argparse
+    parser = argparse.ArgumentParser(description="Vista reconciliada de rotación CAPCOT (solo lectura).")
+    parser.add_argument("--fecha", help="Limitar la vista a YYYY-MM-DD.")
+    args = parser.parse_args()
+    payload = {"registros": registros_dia(args.fecha) if args.fecha else registros()}
+    if args.fecha:
+        payload["temas_del_dia"] = temas_dia(args.fecha)
+    print(json.dumps(payload, ensure_ascii=False, indent=2))
