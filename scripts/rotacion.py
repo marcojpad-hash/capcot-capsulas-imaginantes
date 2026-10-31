@@ -3,7 +3,7 @@
 - estructura narrativa: nunca la misma dos veces seguidas
 - cama musical: nunca la misma dos veces seguidas (y evita las 2 últimas)
 - duración objetivo: variable por tema, 60-95 s, nunca <60
-- límite DURO: 2 cápsulas por día (producidas + publicadas, por fecha); la 2.ª difiere en tema, estructura, estilo y música
+- límite DURO: 3 cápsulas por día (2 propias + 1 externa); la externa debe diferir en tema, estructura, estilo y música de las cápsulas propias del día
 - hora de publicación variable por ventanas (America/Mexico_City)
 Registro: data/rotacion.json (lista de {fecha, project_id, estructura, cama, duracion})."""
 import datetime, hashlib, json, os, sys
