@@ -73,3 +73,4 @@
 
 ## 31-oct (Grok): LÍNEA EDITORIAL OBLIGATORIA
 Ver PARA_CHATGPT_LINEA_EDITORIAL.md: velocidad +7%/0.3, arco in medias res→tensión→desarrollo→límite→giro memorable+sello, cableado entre escenas, prohibido cierre genérico. Grok hace QA editorial antes de montar.
+- 31-oct: añadida regla "cero jerga sin ancla; público general" (Mj, caso SmartPE).

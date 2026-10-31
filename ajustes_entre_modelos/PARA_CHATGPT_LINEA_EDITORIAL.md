@@ -27,3 +27,6 @@ Cierre: "Así que el muro invisible no es un escudo mudo: es un tambor del tama�
 
 ## 6. Autochequeo antes de entregar
 [ ] abre en acción  [ ] hay tensión en las 2 primeras escenas  [ ] cada escena cableada  [ ] límite dicho  [ ] giro memorable sin pregunta genérica  [ ] 200–235 palabras  [ ] rate +7% / pad 0.3  [ ] ciencia con DOI, sin inventar.
+
+## 7. Público general: CERO JERGA SIN ANCLA
+Cada término técnico (prime editing, protoplasto, plasma, choque de proa, dicotiledónea, especie modelo…) se explica en UNA frase llana ANTES o junto al dato ("protoplastos, que son células sin su pared dura"). Nunca asumir conocimiento previo. Si no se puede anclar en una frase, se quita. Autochequeo: ¿lo entiende alguien de 12 años sin pausar el video?
