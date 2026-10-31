@@ -67,7 +67,7 @@ class MediaAPIClientTests(unittest.TestCase):
         api.edit_video(
             "https://assets.example/clip.mp4",
             "Remove the background sign; preserve camera movement",
-            keyframes=[{"uri": "https://assets.example/keyframe.png", "at": 0.5}],
+            keyframes=[{"uri": "https://assets.example/keyframe.png", "seconds": 5}],
         )
         args = request.call_args.args
         self.assertEqual(args[0], "https://api.dev.runwayml.com/v1/video_to_video")
