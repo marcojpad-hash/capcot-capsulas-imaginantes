@@ -25,6 +25,17 @@ class RotacionCapacityTests(unittest.TestCase):
             with self.assertRaises(SystemExit):
                 rotacion.exigir_cupo("2026-11-01", "propia")
 
+    def test_candidate_is_not_counted_against_daily_capacity(self):
+        five = [
+            {"project_id": f"p{i}", "origen": "externa" if i < 3 else "propia"}
+            for i in range(5)
+        ]
+        with patch.object(rotacion, "hecha_hoy", return_value=five):
+            remaining = rotacion.exigir_cupo(
+                "2026-11-01", "externa", project_id="p4"
+            )
+        self.assertEqual(len(remaining), 4)
+
     def test_five_distinct_publication_windows_can_be_assigned(self):
         now = datetime.datetime(2026, 11, 1, 6, 0, tzinfo=rotacion.datetime.timezone(
             datetime.timedelta(hours=-6)
