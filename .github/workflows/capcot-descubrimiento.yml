@@ -6,12 +6,6 @@ on:
       - feature/capcot-video-discovery-continuity
     paths:
       - ".github/workflows/capcot-descubrimiento.yml"
-      - "scripts/buscar_generadores_video.py"
-      - "scripts/media_api_clients.py"
-      - "scripts/validar_continuidad_audiovisual.py"
-      - "scripts/migrar_storyboard_continuidad.py"
-      - "scripts/auditar_assets_storyboard.py"
-      - "docs/API_EDITORES_KREA_RUNWAY.md"
   schedule:
     - cron: "30 14 * * 1"
   workflow_dispatch:
@@ -21,7 +15,7 @@ permissions:
 
 concurrency:
   group: capcot-video-discovery
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   discover:
@@ -41,6 +35,12 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python scripts/buscar_generadores_video.py
+
+      - name: Prepare discovery catalog artifact
+        run: |
+          mkdir -p artifacts
+          cp investigacion/generadores_video/catalogo_actual.json artifacts/
+          cp investigacion/generadores_video/catalogo_actual.md artifacts/
 
       - name: Compile CAPCOT scripts
         run: python -m py_compile scripts/validar_continuidad_audiovisual.py scripts/buscar_generadores_video.py scripts/media_api_clients.py scripts/migrar_storyboard_continuidad.py scripts/auditar_assets_storyboard.py
@@ -73,4 +73,6 @@ jobs:
             exit 0
           fi
           git commit -m "CAPCOT: actualizar catálogo de generadores de video"
-          git push origin HEAD:${GITHUB_REF_NAME}
+          git fetch origin "${GITHUB_REF_NAME}"
+          git rebase "origin/${GITHUB_REF_NAME}"
+          git push origin HEAD:"${GITHUB_REF_NAME}"
