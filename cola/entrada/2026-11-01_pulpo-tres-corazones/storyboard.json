@@ -1,0 +1,267 @@
+{
+  "_schema": "CAPCOT_STORYBOARD_TEXT_V2",
+  "serie": "Datos y ociosidades",
+  "language": "es-MX",
+  "aspect_ratio": "9:16",
+  "target_duration_seconds": 84,
+  "audience": "Público general",
+  "occasion": "Cápsula vertical de divulgación científica",
+  "editorial_status": "PROPUESTA_PENDIENTE_DE_GROK",
+  "typography_identity": {
+    "font_family": "DejaVu Sans",
+    "font_weight": "700 para gancho; 400 para subtítulos",
+    "title_style": "Máximo seis palabras; presente desde frame 0 en postproducción",
+    "subtitle_style": "Bloques de máximo tres palabras; zona segura inferior",
+    "hierarchy": "Gancho > dato/etiqueta > subtítulos",
+    "animation": "Un movimiento por plano; tipografía en postproducción"
+  },
+  "voice": {
+    "engine": "edge-tts",
+    "voice_id": "es-MX-JorgeNeural",
+    "language": "es-MX",
+    "rate": "+7%",
+    "pitch": "-2Hz",
+    "pad_seconds": 0.3,
+    "modo_pausas": "continuo"
+  },
+  "cortinilla_fuentes": {
+    "duration_seconds": 6,
+    "titulo": "Fuentes",
+    "aviso": "Mostrar solo las fuentes realmente consultadas y los recursos efectivamente generados.",
+    "firma": "Datos y ociosidades"
+  },
+  "audio": {
+    "music_asset": null,
+    "music_plan": "Pendiente de selección/generación por Grok en producción; ambiente discreto, sin efectos engañosos.",
+    "music_license": null
+  },
+  "export": {
+    "resolution": "1080x1920",
+    "fps": 30,
+    "render_status": "NOT_GENERATED"
+  },
+  "publicacion": {
+    "status": "PENDIENTE_DECISION_GROK",
+    "platforms": [
+      "YouTube Shorts",
+      "TikTok",
+      "Facebook Reels"
+    ],
+    "note": "No publicar ni programar desde preproducción textual."
+  },
+  "estado": "PENDIENTE_REVISION_GROK",
+  "production_mode": "storyboard_only",
+  "validation_notes": [],
+  "approved_assets": [],
+  "risk_notes": [],
+  "project_id": "2026-11-01_pulpo-tres-corazones",
+  "title": "Pulpo: tres corazones",
+  "titulo": "Tres corazones, un pulpo",
+  "estructura": "pregunta",
+  "resumen": "Los pulpos tienen un sistema circulatorio cerrado con tres corazones: dos corazones branquiales impulsan la sangre por las branquias y un corazón sistémico distribuye la sangre oxigenada al cuerpo. Su hemocianina, proteína respiratoria con cobre, da a la sangre su tono azulado.",
+  "trend_source": {
+    "termino": "Anatomía y circulación de los pulpos",
+    "fecha_publicacion": "1980-04-01",
+    "url": "https://doi.org/10.1242/jeb.85.1.111"
+  },
+  "arco": {
+    "hook_medias_res": "Un pulpo tiene tres corazones. Pero no hacen el mismo trabajo.",
+    "desarrollo": "Dos corazones branquiales bombean sangre hacia las branquias, donde recoge oxígeno. Después, el corazón sistémico impulsa esa sangre al resto del cuerpo. Es una circulación cerrada, con vasos y capilares.",
+    "cierre_historia": "La sangre es azulada por la hemocianina, una proteína que transporta oxígeno usando cobre en lugar de hierro. Tres corazones, dos circuitos coordinados y una solución distinta a la nuestra.",
+    "reflexion_o_pregunta": "No son tres corazones de repuesto: cada uno cumple una función. Esto fue Datos y ociosidades."
+  },
+  "estilo_id": "carton_recortado",
+  "estilo_visual": "Figuras de cartón recortado",
+  "visual_identity": {
+    "style_id": "carton_recortado",
+    "style_name": "Figuras de cartón recortado",
+    "prompt_base": "handmade figures cut from corrugated cardboard, raw torn edges, marker details, photographed on a table with soft light, vertical 9:16, no text",
+    "palette": "cartón natural, tinta negra y acentos azul marino",
+    "lighting": "Luz suave de mesa",
+    "texture": "Cartón corrugado y bordes rasgados",
+    "composition": "Maqueta anatómica por capas, órganos claramente diferenciados, continuidad entre escenas",
+    "negative_prompt": "No anatomía humana aplicada al pulpo, no corazones extra, no sangre dramática, no etiquetas generadas",
+    "reference_assets": [],
+    "seed": null,
+    "seed_policy": "Conservar el mismo pulpo de maqueta, proporciones y paleta en las ocho escenas; diferenciar claramente los tres corazones."
+  },
+  "sources": [
+    {
+      "id": "SRC-001",
+      "cita_corta": "Wells, M. J. (1980). Nervous control of the heartbeat in octopus. Journal of Experimental Biology, 85, 111–128.",
+      "url": "https://doi.org/10.1242/jeb.85.1.111",
+      "doi": "10.1242/jeb.85.1.111",
+      "accessed": "2026-10-31",
+      "publication_date": "1980-04-01",
+      "supports": [
+        "Sistema circulatorio de cefalópodos basado en tres corazones",
+        "Registro de los latidos y coordinación del sistema cardíaco"
+      ],
+      "verification_status": "VERIFICADO_RESOLVEDOR"
+    },
+    {
+      "id": "SRC-002",
+      "cita_corta": "FAO. Cephalopods of the World: Annotated and Illustrated Catalogue.",
+      "url": "https://www.fao.org/4/i3489e/i3489e.pdf",
+      "doi": null,
+      "accessed": "2026-10-31",
+      "publication_date": "2014",
+      "supports": [
+        "Un corazón sistémico y dos corazones branquiales",
+        "Hemocianina con cobre como pigmento respiratorio y sangre azulada"
+      ],
+      "verification_status": "VERIFICADO_RESOLVEDOR"
+    },
+    {
+      "id": "SRC-003",
+      "cita_corta": "Smithsonian Ocean. Cephalopods: Octopus, Squid, Cuttlefish, and Nautilus.",
+      "url": "https://ocean.si.edu/ocean-life/invertebrates/octopuses-squids-and-relatives",
+      "doi": null,
+      "accessed": "2026-10-31",
+      "publication_date": null,
+      "supports": [
+        "Explicación divulgativa de la función de los tres corazones y de la hemocianina"
+      ],
+      "verification_status": "VERIFICADO_RESOLVEDOR"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_001",
+      "arc": "hook_medias_res",
+      "duration_seconds": 9,
+      "narration": "Un pulpo tiene tres corazones. Pero no hacen el mismo trabajo.",
+      "on_screen_text": "Tres corazones",
+      "visual_description": "Pulpo de cartón recortado en vista tres cuartos; tres pequeños pulsos gráficos aparecen en zonas anatómicas distintas.",
+      "image_prompt": "handmade figures cut from corrugated cardboard, raw torn edges, marker details, photographed on a table with soft light, vertical 9:16, no text. Pulpo de cartón recortado en vista tres cuartos; tres pequeños pulsos gráficos aparecen en zonas anatómicas distintas.. No text or lettering.",
+      "ambiente": "Ambiente discreto",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002",
+        "SRC-003"
+      ],
+      "style_id": "carton_recortado"
+    },
+    {
+      "id": "scene_002",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "Dos de esos corazones están asociados a las branquias. Se llaman corazones branquiales.",
+      "on_screen_text": "Dos corazones branquiales",
+      "visual_description": "La maqueta se abre por capas y deja visibles las dos branquias y un corazón junto a cada una.",
+      "image_prompt": "handmade figures cut from corrugated cardboard, raw torn edges, marker details, photographed on a table with soft light, vertical 9:16, no text. La maqueta se abre por capas y deja visibles las dos branquias y un corazón junto a cada una.. No text or lettering.",
+      "ambiente": "Ambiente discreto",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002",
+        "SRC-003"
+      ],
+      "style_id": "carton_recortado"
+    },
+    {
+      "id": "scene_003",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "Cada corazón branquial impulsa la sangre hacia una branquia para que ocurra el intercambio de gases.",
+      "on_screen_text": "Hacia las branquias",
+      "visual_description": "Flechas claras llevan la sangre desde ambos corazones hacia las láminas branquiales; no dibujar rutas contradictorias.",
+      "image_prompt": "handmade figures cut from corrugated cardboard, raw torn edges, marker details, photographed on a table with soft light, vertical 9:16, no text. Flechas claras llevan la sangre desde ambos corazones hacia las láminas branquiales; no dibujar rutas contradictorias.. No text or lettering.",
+      "ambiente": "Ambiente discreto",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002",
+        "SRC-003"
+      ],
+      "style_id": "carton_recortado"
+    },
+    {
+      "id": "scene_004",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "En las branquias, la sangre recoge oxígeno del agua que circula por la cavidad del manto.",
+      "on_screen_text": "Aquí recoge oxígeno",
+      "visual_description": "Corte esquemático de agua fluyendo por las branquias; la sangre aparece en vasos, separada del agua.",
+      "image_prompt": "handmade figures cut from corrugated cardboard, raw torn edges, marker details, photographed on a table with soft light, vertical 9:16, no text. Corte esquemático de agua fluyendo por las branquias; la sangre aparece en vasos, separada del agua.. No text or lettering.",
+      "ambiente": "Ambiente discreto",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002",
+        "SRC-003"
+      ],
+      "style_id": "carton_recortado"
+    },
+    {
+      "id": "scene_005",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "Después entra en acción el tercer corazón: el corazón sistémico, que envía la sangre oxigenada al resto del cuerpo.",
+      "on_screen_text": "Un corazón para el cuerpo",
+      "visual_description": "El corazón sistémico se ilumina y las flechas recorren vasos hacia los órganos y brazos.",
+      "image_prompt": "handmade figures cut from corrugated cardboard, raw torn edges, marker details, photographed on a table with soft light, vertical 9:16, no text. El corazón sistémico se ilumina y las flechas recorren vasos hacia los órganos y brazos.. No text or lettering.",
+      "ambiente": "Ambiente discreto",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002",
+        "SRC-003"
+      ],
+      "style_id": "carton_recortado"
+    },
+    {
+      "id": "scene_006",
+      "arc": "cierre_historia",
+      "duration_seconds": 10,
+      "narration": "Y hay otro detalle: la sangre del pulpo es azulada porque utiliza hemocianina, una proteína respiratoria que contiene cobre.",
+      "on_screen_text": "Sangre azulada: cobre",
+      "visual_description": "Primer plano de una gota azulada junto a una representación sencilla de hemocianina con cobre; sin estética fantástica.",
+      "image_prompt": "handmade figures cut from corrugated cardboard, raw torn edges, marker details, photographed on a table with soft light, vertical 9:16, no text. Primer plano de una gota azulada junto a una representación sencilla de hemocianina con cobre; sin estética fantástica.. No text or lettering.",
+      "ambiente": "Ambiente discreto",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002",
+        "SRC-003"
+      ],
+      "style_id": "carton_recortado"
+    },
+    {
+      "id": "scene_007",
+      "arc": "reflexion_o_pregunta",
+      "duration_seconds": 9,
+      "narration": "Así que no son tres corazones de repuesto: dos llevan sangre a las branquias y uno la distribuye por el cuerpo.",
+      "on_screen_text": "Cada uno tiene su función",
+      "visual_description": "Diagrama completo y limpio con tres corazones, branquias y circulación sistémica claramente rotulados en postproducción.",
+      "image_prompt": "handmade figures cut from corrugated cardboard, raw torn edges, marker details, photographed on a table with soft light, vertical 9:16, no text. Diagrama completo y limpio con tres corazones, branquias y circulación sistémica claramente rotulados en postproducción.. No text or lettering.",
+      "ambiente": "Ambiente discreto",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002",
+        "SRC-003"
+      ],
+      "style_id": "carton_recortado"
+    },
+    {
+      "id": "scene_008",
+      "arc": "reflexion_o_pregunta",
+      "duration_seconds": 10,
+      "narration": "Tres corazones, un sistema coordinado. Esto fue Datos y ociosidades.",
+      "on_screen_text": "Datos y ociosidades",
+      "visual_description": "La maqueta del pulpo se cierra; los tres pulsos se sincronizan y queda el plano final.",
+      "image_prompt": "handmade figures cut from corrugated cardboard, raw torn edges, marker details, photographed on a table with soft light, vertical 9:16, no text. La maqueta del pulpo se cierra; los tres pulsos se sincronizan y queda el plano final.. No text or lettering.",
+      "ambiente": "Ambiente discreto",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002",
+        "SRC-003"
+      ],
+      "style_id": "carton_recortado"
+    }
+  ],
+  "linea_tematica_provisional": "Naturaleza / anatomía animal"
+}
