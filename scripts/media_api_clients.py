@@ -60,6 +60,10 @@ class KreaAPI:
         """Edit an existing image with Krea 3 using image references/regions."""
         if not image_urls:
             raise ValueError("Krea 3 image editing requires at least one image URL.")
+        if len(image_urls) > 8:
+            raise ValueError("Krea 3 accepts at most 8 reference images")
+        if regions and len(regions) > 24:
+            raise ValueError("Krea 3 accepts at most 24 edit regions")
         if resolution not in {"1K", "2K", "4K"}:
             raise ValueError("resolution must be 1K, 2K or 4K")
         body: dict[str, Any] = {
@@ -87,6 +91,10 @@ class KreaAPI:
             raise ValueError("Seedance 2.5 duration must be between 4 and 30 seconds")
         if resolution not in {"480p", "720p", "1080p"}:
             raise ValueError("resolution must be 480p, 720p or 1080p")
+        if reference_images and len(reference_images) > 30:
+            raise ValueError("Seedance 2.5 accepts at most 30 reference images")
+        if reference_videos and len(reference_videos) > 10:
+            raise ValueError("Seedance 2.5 accepts at most 10 reference videos")
         body: dict[str, Any] = {
             "prompt": prompt,
             "duration": duration,
@@ -157,13 +165,15 @@ class RunwayDevAPI:
             raise ValueError("video_uri must be HTTPS, a Runway upload URI or a video data URI")
         if not prompt_text or len(prompt_text) > 1000:
             raise ValueError("prompt_text must contain 1–1000 characters")
+        if keyframes and len(keyframes) > 5:
+            raise ValueError("Aleph 2.0 accepts at most 5 keyframes")
         body: dict[str, Any] = {
             "model": "aleph2",
             "videoUri": video_uri,
             "promptText": prompt_text,
         }
         if keyframes:
-            body["keyframes"] = keyframes[:5]
+            body["keyframes"] = keyframes
         if target_aspect_ratio:
             body["targetAspectRatio"] = target_aspect_ratio
         return _request_json(
