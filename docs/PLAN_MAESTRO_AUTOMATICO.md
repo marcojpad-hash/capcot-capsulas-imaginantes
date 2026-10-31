@@ -97,3 +97,6 @@ Revisar documentación oficial/changelogs de Meta Graph API, Instagram Insights,
 
 ## Confirmación de recepción por Grok
 Leer cola/estado/YYYY-MM-DD_slug.json si existe. Su ausencia significa que la recepción no está confirmada. Grok es el único responsable de crear/actualizar ese archivo; ChatGPT solo lo lee. Ver docs/GROK_STATUS_CONTRACT.md.
+
+## Handoff optimizado para Grok Bot
+Aplicar `docs/PROTOCOLO_DESCARGA_CARGA_GROK.md`: ChatGPT no entrega solo un tema o una idea, sino investigación verificada y paquete textual completo listo para producir (guion, storyboard, prompts por escena, audio/SFX, fuentes y metadata). Bot no debe repetir research ni redactar de nuevo por defecto; debe concentrarse en producción audiovisual, montaje, render y QA. Las devoluciones se hacen por campo/escena y ChatGPT resuelve investigación faltante con un parche. Las correcciones consumen tokens, por lo que no se solicitan reescrituras ni regeneraciones integrales sin defecto justificado.
