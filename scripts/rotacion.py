@@ -7,6 +7,7 @@
 - hora de publicación variable por ventanas (America/Mexico_City)
 Registro: data/rotacion.json (lista de {fecha, project_id, estructura, cama, duracion})."""
 import datetime, hashlib, json, os, sys
+import registro_editorial
 R = os.path.dirname(os.path.dirname(os.path.abspath(__file__))); LOG = os.path.join(R, "data", "rotacion.json")
 ESTRUCTURAS = {
     "mito_vs_dato": "Abre con una creencia común (el mito) y la desmonta con el dato verificado; cierra con por qué importa.",
@@ -17,24 +18,25 @@ ESTRUCTURAS = {
 }
 CAMAS = ["pulso", "marimba", "pizzicato", "arpegio", "tambor", "circuito_neural"]
 def log(): return json.load(open(LOG)) if os.path.exists(LOG) else []
+def historial(): return registro_editorial.registros()
 def _h(s): return int(hashlib.md5(s.encode()).hexdigest(), 16)
 def elegir_estructura(tema="", evitar=()):
-    u = [x["estructura"] for x in log()]; ops = [e for e in ESTRUCTURAS if (not u or e != u[-1]) and e not in evitar]
+    u = [x.get("estructura") for x in historial() if x.get("estructura")]; ops = [e for e in ESTRUCTURAS if (not u or e != u[-1]) and e not in evitar]
     ops.sort(key=lambda e: (u[-4:].count(e), _h(tema + e) % 97)); return ops[0]
 def elegir_cama(tema="", evitar=()):
-    u = [x.get("cama") for x in log()]; ops = [c for c in CAMAS if c not in u[-2:] and c not in evitar] or [c for c in CAMAS if (not u or c != u[-1]) and c not in evitar] or [c for c in CAMAS if c not in u[-2:]]
+    u = [x.get("cama") for x in historial() if x.get("cama")]; ops = [c for c in CAMAS if c not in u[-2:] and c not in evitar] or [c for c in CAMAS if (not u or c != u[-1]) and c not in evitar] or [c for c in CAMAS if c not in u[-2:]]
     return sorted(ops, key=lambda c: _h(tema + c) % 97)[0]
 def duracion_objetivo(tema="", n_fuentes=2):
     """60-95 s según tema: más fuentes/complejidad -> más largo; varía respecto de la anterior."""
-    base = 62 + min(n_fuentes, 4) * 6 + _h(tema) % 10; prev = [x.get("duracion") for x in log()][-1:] or [None]
+    base = 62 + min(n_fuentes, 4) * 6 + _h(tema) % 10; prev = [x.get("duracion") for x in historial() if x.get("duracion")][-1:] or [None]
     if prev[0] and abs(base - prev[0]) < 5: base += 7 if base < 85 else -7
     return max(62, min(95, base))
 MAX_POR_DIA = 3  # total: 2 propias + 1 externa (ChatGPT vía cola/)
 MAX_ORIGEN = {"propia": 2, "externa": 1}
 TEMAS = os.path.join(R, "data", "temas_del_dia.json")
 def temas_del_dia(fecha=None):
-    f = fecha or datetime.date.today().isoformat(); d = json.load(open(TEMAS)) if os.path.exists(TEMAS) else {}
-    return d.get(f, [])
+    f = fecha or datetime.date.today().isoformat()
+    return registro_editorial.temas_dia(f)
 def registrar_tema(fecha, tema, origen, project_id):
     """data/temas_del_dia.json: TODA fuente (propia o externa) lo consulta y escribe para no repetir tema el mismo día."""
     d = json.load(open(TEMAS)) if os.path.exists(TEMAS) else {}
@@ -48,13 +50,11 @@ PUB = os.path.join(R, "data", "publicaciones.json")
 VENTANAS = [(9, 11), (13, 15), (18, 21)]  # horas locales America/Mexico_City
 def publicaciones(): return json.load(open(PUB)) if os.path.exists(PUB) else []
 def hecha_hoy(fecha=None):
-    """Cápsulas del día (unión por project_id de data/rotacion.json y data/publicaciones.json)."""
-    f = fecha or datetime.date.today().isoformat(); d = {}
-    for x in log() + publicaciones():
-        if x.get("fecha") == f: d.setdefault(x["project_id"], {}).update({k: v for k, v in x.items() if v is not None})
-    return list(d.values())
-def exigir_cupo(fecha=None, origen="propia"):
-    h = hecha_hoy(fecha)
+    """Vista reconciliada: rotación, publicaciones, cola y storyboards del día."""
+    f = fecha or datetime.date.today().isoformat()
+    return registro_editorial.registros_dia(f)
+def exigir_cupo(fecha=None, origen="propia", project_id=None):
+    h = [x for x in hecha_hoy(fecha) if x.get("project_id") != project_id]
     if os.environ.get("CAPCOT_FORZAR_CUPO") == "1": print("AVISO: cupo diario forzado por orden explícita de Mj"); return h
     n = sum(1 for x in h if x.get("origen", "propia") == origen)
     if len(h) >= MAX_POR_DIA: sys.exit(f"LÍMITE DURO: ya hay {len(h)} cápsulas el {fecha or 'hoy'} ({', '.join(x['project_id'] for x in h)}). Máximo {MAX_POR_DIA} por día.")
@@ -71,8 +71,8 @@ def diferencias_con_hoy(sb, fecha):
         if x.get("cama") and x["cama"] == sb.get("audio", {}).get("cama_musical"): e.append(f"música repetida ({x['cama']})")
     if any(x["tema"] == tema and x["project_id"] != sb.get("project_id") for x in temas_del_dia(fecha)) and not any("tema repetido" in y for y in e): e.append(f"tema repetido en temas_del_dia ({tema})")
     return e
-def evitar_hoy(fecha):
-    h = hecha_hoy(fecha); ev = {k: {x.get(k) for x in h} - {None} for k in ("tema", "estructura", "estilo", "cama")}
+def evitar_hoy(fecha, project_id=None):
+    h = [x for x in hecha_hoy(fecha) if x.get("project_id") != project_id]; ev = {k: {x.get(k) for x in h} - {None} for k in ("tema", "estructura", "estilo", "cama")}
     ev["tema"] |= {x["tema"] for x in temas_del_dia(fecha)}; return ev
 def hora_publicacion(fecha, ahora=None, semilla=None):
     """Hora aleatoria dentro de una ventana no usada hoy y >=20 min en el futuro. Devuelve (local_iso, utc_iso 'Z')."""
