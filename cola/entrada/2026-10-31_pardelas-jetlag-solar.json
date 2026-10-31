@@ -399,7 +399,7 @@
     "crossref_status": "Crossref REST devolvió status=ok y coincidencia de DOI/título para 10.1126/science.adz2542; registro creado 2026-10-29. El texto completo de Science respondió HTTP 403.",
     "map_status": "Capa mapa agregada con coordenadas Getty TGN 1009194 (51.7375, -5.2967); el punto es contexto, no trayectoria GPS.",
     "structural_status": "Comprobación estructural de esta ejecución: 8 escenas; arcos requeridos presentes; 218 palabras; duración 84 s con cortinilla; prompts empiezan con prompt_base exacto; source_ids resolubles; capas mapa y dato presentes. No equivale al QA oficial de Grok.",
-    "rotation_status": "data/rotacion.json, data/temas_del_dia.json y data/publicaciones.json llegan hasta 2026-10-28. No se modificaron. La unicidad de estructura/estilo frente a cápsulas del 29-31 no puede certificarse con esos registros.",
+    "rotation_status": "data/temas_del_dia.json y data/rotacion.json llegan hasta 2026-10-28; data/publicaciones.json llega hasta 2026-10-26. No se modificaron. La unicidad de estructura/estilo/música frente a cápsulas del 29-31 no puede certificarse con esos registros.",
     "editorial_review": "Pendiente de Grok: cotejar rotación completa, aceptar/rechazar, generar assets, ejecutar QA oficial y decidir publicación."
   },
   "linea_editorial_provisional": "Naturaleza / bichos · Actualidad científica · Comportamiento animal",
