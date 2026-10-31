@@ -36,7 +36,7 @@ Se mantienen separadas:
 - **Capacidad implementada:** hasta 5 por día (máx. 2 propias; externas hasta 5).
 - **Publicaciones efectivas:** solo las que Imaginantes registre con QA y evidencia de publicación. Habilitar el cupo **no** significa que los 5 slots estén publicados; cada slot requiere su evidencia.
 
-`CAPCOT_FORZAR_CUPO=1` sigue prohibido como solución rutinaria. Pendiente de revisar: ventanas horarias (`VENTANAS` tiene 3 franjas) frente a 5 slots, y límites de plataformas.
+`CAPCOT_FORZAR_CUPO=1` sigue prohibido como solución rutinaria. La rama configura cinco ventanas horarias en `scripts/rotacion.py`, alineadas con los slots 07:00, 13:30, 17:00, 19:00 y 23:30 CDMX. Falta ejecutar y aprobar pruebas de regresión y verificar límites de plataformas.
 
 ## 4. Una sola ruta de trabajo
 1. ChatGPT consulta el Plan Maestro y la memoria editorial disponible; distingue tema propuesto, paquete preparado, producción, QA y publicación.
@@ -76,7 +76,7 @@ Antes de declarar operativa la parrilla completa, Imaginantes/ChatGPT deben prep
 4. Revisión de ventanas horarias, colisiones, rotación de tema/estructura/estilo/música y límites de plataformas.
 5. Evidencia de QA y publicación por cada slot.
 
-Actualización 31-oct-2026: puntos 1 y 2 implementados en rama (cupo 5, procesador multi-entrada); 3–5 siguen pendientes. Estado: **objetivo de cinco / capacidad de código cinco / publicación efectiva según evidencia**. Esta etiqueta debe acompañar cualquier reporte de operación.
+Actualización 31-oct-2026: puntos 1 y 2 implementados en rama (cupo 5, procesador multi-entrada con conservación de la entrada ante error); cinco ventanas horarias configuradas. Se añadió `tests/test_rotacion_capacity.py`, pero su ejecución en CI sigue pendiente; los límites de plataformas y la evidencia de publicación por slot también siguen pendientes. Estado: **objetivo de cinco / capacidad de código configurada para cinco / publicación efectiva según evidencia**. Esta etiqueta debe acompañar cualquier reporte de operación.
 
 ## 2A. Descarga de carga de Grok Bot
 
