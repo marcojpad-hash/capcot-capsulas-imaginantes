@@ -19,7 +19,12 @@ REQUIRED_TYPE = (
 )
 
 def nonempty(obj, key):
-    return isinstance(obj, dict) and bool(str(obj.get(key, "")).strip())
+    if not isinstance(obj, dict):
+        return False
+    value = str(obj.get(key, "")).strip()
+    if not value:
+        return False
+    return value.lower() not in {"pendiente", "por fijar", "todo", "tbd", "n/d", "unknown"}
 
 def validar(path):
     errors, warnings = [], []
@@ -56,6 +61,7 @@ def validar(path):
         "voice_id": "es-MX-JorgeNeural",
         "rate": "+7%",
         "pitch": "-2Hz",
+        "pad_seconds": 0.3,
     }
     for key, expected in expected_voice.items():
         if voice.get(key) != expected:
@@ -105,6 +111,12 @@ def validar(path):
             seen_assets.add(filename)
         if approved_names is not None and filename not in approved_names:
             errors.append(f"{sid}: recurso no declarado en approved_assets: {filename}")
+        layer = scene.get("capa")
+        if isinstance(layer, dict) and layer.get("asset_filename"):
+            layer_name = layer["asset_filename"]
+            seen_assets.add(layer_name)
+            if approved_names is not None and layer_name not in approved_names:
+                errors.append(f"{sid}: capa no declarada en approved_assets: {layer_name}")
         for field in ("narration", "on_screen_text"):
             value = scene.get(field, "")
             if value and not isinstance(value, str):
@@ -132,6 +144,8 @@ def validar(path):
 
     if not isinstance(visual.get("reference_assets", []), list):
         errors.append("visual_identity.reference_assets debe ser una lista")
+    if "seed" not in visual or not isinstance(visual.get("seed"), int):
+        errors.append("visual_identity.seed debe ser una semilla entera fija")
     if not visual.get("seed_policy"):
         errors.append("visual_identity.seed_policy ausente")
 
