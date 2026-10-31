@@ -1,46 +1,65 @@
-# PARA CHATGPT — semana 1–7 nov 2026 (brief único)
+# PARA CHATGPT — URGENTE semana 1–7 nov (actualizado 2026-10-31 14:48 CDMX)
 
-> Sustituye a PARA_CHATGPT_31oct.md. Checklist técnico: `docs/GUIA_MODELO_EXTERNO.md`. Reglas: `COORDINACION_CHATGPT_IMAGINANTES.md`. Parrilla: `data/horario_semana_2026-11-01_07.json`.
+> Imaginantes está montando YA lo que hay en cola. **Prioridad: entregar paquetes textuales restantes antes de que se acaben créditos de montaje.** No generar frames/AV (eso lo hace Imaginantes).
 
-## Entrega por paquete (en `cola/entrada/<project_id>/`)
-- `storyboard.json` (shots con duración, texto en pantalla, prompt visual)
-- `frames/` (un frame por shot)
-- `fuentes.md` (fuente primaria con URL/DOI; cifra sin fuente = PENDING_SOURCE)
-- `ESTADO_EJECUCION.md` con fecha/slot propuesto
+Checklist: `docs/GUIA_MODELO_EXTERNO.md`. Reglas: `COORDINACION_CHATGPT_IMAGINANTES.md`.
 
-## Reglas
-- Ciencia/naturaleza, sin temas de sociedades. Rotar estructuras (pregunta, mito_vs_dato, comparación, historia, lista).
-- Estilos: nunca litografia_azul_dorado; evitar recientes grafiti_colorido, bordado, ukiyo_e; revisar `data/rotacion.json`.
-- Kids: una idea clara, lenguaje normal, NO marcar Hecho para niños.
-- No inventar datos ni cifras.
+## Ya cubierto (NO volver a entregar)
+| Fecha | Slot | Project | Estado |
+|---|---|---|---|
+| 1-nov | 07:00 | pulpo-tres-corazones | YT+TT+FB programado `3B1ckNUahS8` |
+| 1-nov | 13:30 | llorar-cebolla-quimica | YT+TT+FB programado `Fh4KkcZr3e8` |
+| 1-nov | 17:00 | baffin-bay-ice-shelf | YT `krh0Ll3kVjM` (TT/FB en curso) |
+| 1-nov | 19:00 | arqueas-origen-eucariotas | YT `i2l4BkMvHp0` (TT/FB en curso) |
+| 2-nov | 07:00 | camaron-mantis | En montaje Imaginantes (paquete OK) |
+| 2-nov | 13:30 | comida-pan-duro | En montaje Imaginantes (paquete OK) |
 
-## Prioridad (en orden)
-1. **2026-11-01 07:00 (kids)** `2026-11-01_kids-pulpo-tres-corazones` — TÍTULO: Un pulpo tiene tres corazones y sangre azul. borrador en proyectos/2026-xx_kids_pulpo-tres-corazones; fuentes sugeridas: Smithsonian Ocean, Monterey Bay Aquarium. No marcar Hecho para niños.
-2. **2026-11-01 13:30 (comida_familia)** `2026-11-01_comida-cebolla-llorar` — TÍTULO: Por qué la cebolla te hace llorar. química cotidiana; fuente: Imai et al. 2002 Nature (factor lacrimógeno)
-3. **2026-11-02 07:00 (kids)** `2026-11-02_kids-camaron-mantis` — TÍTULO: El golpe del camarón mantis. borrador en proyectos/2026-xx_kids_camaron-mantis-punetazo; fuente: Patek & Caldwell 2005 J Exp Biol. No marcar Hecho para niños.
-4. **2026-11-02 13:30 (comida_familia)** `2026-11-02_comida-pan-duro` — TÍTULO: Por qué el pan se pone duro (no es que se seque). retrogradación del almidón; fuente: literatura de ciencia de alimentos (PENDING_SOURCE exacta)
-5. **2026-11-03 07:00 (kids)** `2026-11-03_kids-tiburon-groenlandia` — TÍTULO: El tiburón que puede vivir siglos. borrador en proyectos/2026-xx_kids_tiburon-groenlandia-400-anos; fuente: Nielsen et al. 2016 Science. No marcar Hecho para niños.
-6. **2026-11-03 13:30 (comida_familia)** `2026-11-03_comida-maillard` — TÍTULO: Lo dorado de la tortilla y el pan: reacción de Maillard. fuente: ACS / revisión Food Chemistry
-7. **2026-11-04 07:00 (kids)** `2026-11-04_kids-hipo-por-que` — TÍTULO: ¿Por qué nos da hipo?. cuerpo; fuente: NHS / revisión médica revisada por pares (PENDING_SOURCE exacta). No marcar Hecho para niños.
-8. **2026-11-04 13:30 (comida_familia)** `2026-11-04_comida-miel-no-caduca` — TÍTULO: La miel casi no se echa a perder. fuente: Smithsonian Magazine + estudio de actividad de agua
-9. **2026-11-04 17:00 (intermedio_1)** `2026-11-04_inter-bioluminiscencia-mar` — TÍTULO: Por qué el mar brilla de noche. naturaleza; fuente: NOAA Ocean Exploration
-10. **2026-11-05 07:00 (kids)** `2026-11-05_kids-dia-en-venus` — TÍTULO: En Venus un día dura más que un año. espacio; fuente: NASA Science Venus facts. No marcar Hecho para niños.
-11. **2026-11-05 13:30 (comida_familia)** `2026-11-05_comida-palomitas` — TÍTULO: Por qué revienta una palomita. fuente: Virot & Ponomarenko 2015 J R Soc Interface
-12. **2026-11-05 17:00 (intermedio_1)** `2026-11-05_inter-arboles-se-comunican` — TÍTULO: Lo que sí y lo que no se sabe de la 'red' de los árboles. mito_vs_dato; fuente: Karst et al. 2023 Nat Ecol Evol
-13. **2026-11-05 19:00 (intermedio_2)** `2026-11-05_inter-rayo-globular` — TÍTULO: El rayo globular: el misterio que pocos han medido. misterio ligero; fuente: Cen et al. 2014 Phys Rev Lett
-14. **2026-11-06 07:00 (kids)** `2026-11-06_kids-ballena-azul-corazon` — TÍTULO: El corazón de la ballena azul. animales; fuente: Goldbogen et al. 2019 PNAS (ritmo cardiaco). No marcar Hecho para niños.
-15. **2026-11-06 13:30 (comida_familia)** `2026-11-06_comida-aguacate-negro` — TÍTULO: Por qué el aguacate se pone negro. oxidación enzimática (polifenol oxidasa); fuente: USDA / revisión científica
-16. **2026-11-06 17:00 (intermedio_1)** `2026-11-06_inter-ranas-congeladas` — TÍTULO: La rana que se congela y revive. fuente: Storey & Storey (rana de bosque, Lithobates sylvaticus)
-17. **2026-11-06 19:00 (intermedio_2)** `2026-11-06_inter-arena-cantante` — TÍTULO: Dunas que cantan. fuente: Andreotti 2004 PRL / Douady et al. 2006
-18. **2026-11-07 07:00 (kids)** `2026-11-07_kids-huesos-bebe` — TÍTULO: Naces con más huesos de los que tendrás de adulto. cuerpo; fuente: NIH/MedlinePlus o texto de anatomía; cifras PENDING_SOURCE. No marcar Hecho para niños.
-19. **2026-11-07 13:30 (comida_familia)** `2026-11-07_comida-hielo-caliente` — TÍTULO: ¿El agua caliente se congela antes? (efecto Mpemba). mito_vs_dato; fuente: Burridge & Linden 2016 Sci Rep
-20. **2026-11-07 17:00 (intermedio_1)** `2026-11-07_inter-pulpo-suenos` — TÍTULO: ¿Sueñan los pulpos? cambios de color al dormir. fuente: Pophale et al. 2023 Nature
-21. **2026-11-07 19:00 (intermedio_2)** `2026-11-07_inter-nubes-pesan` — TÍTULO: Una nube pesa toneladas y aun así flota. fuente: USGS Water Science School
+## Cola JSON ya recibida — Imaginantes montará (no regenerar)
+- `2026-10-31_murcielagos-viroma-global` → **2-nov 17:00**
+- `2026-10-31_sequias-energia-renovable` → **2-nov 19:00**
+- `2026-10-31_smartpe-edicion-plantas` → **3-nov 19:00**
+- `2026-10-29_juno-choque-proa` → **3-nov 17:00**
 
-## Dato del día 23:30
-Se pide el mismo día (noticia ≤48 h, fuente primaria). No preparar por adelantado.
+## Pedir YA (mínimo kids+comida por día; tips ciencia+hack bienvenidos)
+Entregar en `cola/entrada/<project_id>/` con `storyboard.json` + `fuentes.md` + `ESTADO_EJECUCION.md`. **Sin frames.**
 
-## NO duplicar
-- Ya en cola: corales-contacto, baffin-bay-ice-shelf, corneja-decision-rapida, mosquito-fruitless-audicion, juno-choque-proa
-- Proyectos: arqueas-origen-eucariotas, machu-picchu-fallas-pisa (espera OK Mj), muralismo-cu
-- Publicados: El Niño, serpientes que ruedan, Ideonella/plástico, aves y mujeres, abejas bullying, Osedax, sueño qom, ave jurásica, reina olor, oso, pimiento, hongo gente diminuta, papel picado 1-2, Catrina, cempasúchil, Pomuch, ajolote, serpiente voladora, anfibio marino, Templo Mayor, Voyager disco, titanoboa, monarca, lince/milanos, pan de muerto, tardígrado, Chicxulub
+### 3-nov
+1. `2026-11-03_kids-tiburon-groenlandia` 07:00 — El tiburón que puede vivir siglos (Nielsen 2016 Science)
+2. `2026-11-03_comida-maillard` 13:30 — Lo dorado: reacción de Maillard
+
+### 4-nov
+3. `2026-11-04_kids-hipo-por-que` 07:00 — ¿Por qué nos da hipo?
+4. `2026-11-04_comida-miel-no-caduca` 13:30 — La miel casi no se echa a perder
+5. `2026-11-04_inter-bioluminiscencia-mar` 17:00 — Por qué el mar brilla de noche (NOAA)
+   - 19:00 Machu Picchu = pendiente OK Mj (no tocar)
+
+### 5-nov
+6. `2026-11-05_kids-dia-en-venus` 07:00
+7. `2026-11-05_comida-palomitas` 13:30 (Virot & Ponomarenko 2015)
+8. `2026-11-05_inter-arboles-se-comunican` 17:00 (Karst 2023 — mito_vs_dato)
+9. `2026-11-05_inter-rayo-globular` 19:00 opcional si da tiempo
+
+### 6-nov
+10. `2026-11-06_kids-ballena-azul-corazon` 07:00
+11. `2026-11-06_comida-aguacate-negro` 13:30
+12. `2026-11-06_inter-ranas-congeladas` 17:00
+13. `2026-11-06_inter-arena-cantante` 19:00 opcional
+
+### 7-nov
+14. `2026-11-07_kids-huesos-bebe` 07:00
+15. `2026-11-07_comida-hielo-caliente` 13:30 (Mpemba — mito_vs_dato)
+16. `2026-11-07_inter-pulpo-suenos` 17:00
+17. `2026-11-07_inter-nubes-pesan` 19:00 opcional
+
+## Tips / life-hack con ancla científica
+Cerca de slots kids o comida: «en tal época descubrieron X → puedes hacer Y». Ver `PARA_CHATGPT_tips_ciencia_hack_31oct.md`. Flops a evitar: aves-y-mujeres, dato de la luz.
+
+## Reglas rápidas
+- Hashtags los pone Imaginantes (simples). Tú: ciencia/naturaleza, sin sociedades.
+- Estilos: rotar; nunca litografia_azul_dorado; evitar grafiti_colorido/bordado/ukiyo_e recientes.
+- Kids: una idea clara; NO marcar Hecho para niños.
+- Dato 23:30: no preparar (mismo día).
+- Cierre hablado: «Esto fue Datos y ociosidades.»
+
+## Meta operativa Mj
+Mínimo **1–2 cápsulas/día** toda la semana; ir sumando. Imaginantes monta/programa/publica en cuanto llegue cada paquete.
