@@ -117,8 +117,15 @@
       "hora": "19:00",
       "cesta": "intermedio_2",
       "project_id": "2026-10-31_sequias-energia-renovable",
-      "estado": "listo_cola_json",
-      "notas": "Cola JSON ChatGPT 31-oct. NO usar mosquito (ya pub 31-oct)."
+      "estado": "programado_yt",
+      "notas": "Cola JSON ChatGPT 31-oct. NO usar mosquito (ya pub 31-oct).",
+      "yt_id": "SQ7_g-vz8Ow",
+      "publishAt": "2026-11-03T01:00:00Z",
+      "plataformas": {
+        "yt": "programado",
+        "tt": "pending_tiktok",
+        "fb": "pending_fb"
+      }
     },
     {
       "fecha": "2026-11-02",
