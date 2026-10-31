@@ -1,6 +1,10 @@
 # Plan maestro operativo CAPCOT — vigente 2026-10-31
 
-> Autoridad operativa actual. Sustituye las instrucciones de producción integral anteriores, archivadas en \`docs/obsoleto/2026-10-31/\`. Ante cualquier contradicción prevalece este documento.
+> Autoridad de investigación, preproducción y rotación. La autoridad superior para responsabilidades entre agentes, cupos y handoff es \`docs/CONTRATO_OPERATIVO_UNIFICADO.md\`; este Plan rige los detalles editoriales y técnicos de ChatGPT. Las instrucciones de producción integral anteriores, archivadas en \`docs/obsoleto/2026-10-31/\`, son legado.
+
+## Precedencia y capacidad reconciliada
+
+Consultar primero \`docs/CONTRATO_OPERATIVO_UNIFICADO.md\`. La parrilla de cinco slots diarios es un objetivo editorial; el código de rotación vigente todavía limita la operación a tres cápsulas por día (dos propias y una externa), y el procesador admite una entrada externa por fecha. No presentar cinco como capacidad ejecutable hasta que el límite, el procesador y sus pruebas se actualicen y validen. ChatGPT conserva el alcance textual descrito en este Plan; Imaginantes opera producción audiovisual, QA y publicación.
 
 ## Objetivo y alcance
 CAPCOT / **Datos y ociosidades** produce cápsulas científicas y de naturaleza. ChatGPT es responsable de investigación, documentación y preproducción textual. Su entrega normal es un brief y un storyboard JSON verificables en GitHub.
