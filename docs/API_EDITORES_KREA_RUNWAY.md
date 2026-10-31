@@ -17,7 +17,7 @@ Estado: integración preparada en código; credenciales y pruebas de generación
 - Endpoint: \`POST https://api.krea.ai/generate/video/bytedance/seedance-2-5\`.
 - Clips de 4–30 segundos, 480p/720p/1080p.
 - Texto a video, animación de imagen inicial/final y referencias de imagen, video y audio. La documentación admite edición guiada por video de referencia.
-- Precio publicado en la página de API: desde USD $0.0809 por segundo; el costo exacto depende del modelo y la configuración.
+- El precio visible para Seedance 2.5 no aparece desglosado en la tabla pública consultada; debe verificarse en el panel antes de enviar trabajos. La tabla sí publica Seedance 2.0 desde USD $0.0809/s, pero no se debe asumir que esa tarifa aplica a 2.5.
 - El saldo de API es independiente del cómputo de la aplicación Krea.
 
 ### Runway Dev — editor de video
@@ -74,7 +74,7 @@ No poner claves en el código, storyboard, ZIP, logs, commits ni mensajes. Para 
 - Krea API reference: https://www.krea.ai/docs/api-reference/introduction
 - Krea 3 image edit: https://www.krea.ai/docs/api-reference/krea/krea-3
 - Krea Seedance 2.5: https://www.krea.ai/docs/api-reference/video/seedance-25
-- Krea API pricing: https://www.krea.ai/pricing
+- Krea API pricing: https://www.krea.ai/app/api/pricing
 - Runway Dev API reference: https://docs.dev.runwayml.com/api/
 - Runway Dev video editing guide (Aleph 2.0): https://dev.runwayml.com/learn/edit-and-finish-video-api
 - Runway Dev model catalog: https://docs.dev.runwayml.com/guides/models/
