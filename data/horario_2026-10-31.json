@@ -11,7 +11,7 @@
       "titulo": "La corneja decide en 235 milisegundos #Shorts",
       "estilo": "microscopio_psicodelico",
       "estructura": "sabias_que",
-      "estado": "pendiente_frames",
+      "estado": "publicado_yt",
       "proyecto": "2026-10-27_corneja-decision-rapida",
       "salida": "salidas/2026-10-27_corneja-decision-rapida",
       "plataformas": [
@@ -19,13 +19,30 @@
         "tiktok",
         "facebook"
       ],
-      "tiktok": "pendiente",
-      "facebook": "pendiente",
+      "tiktok": "pendiente_browser",
+      "facebook": "pendiente_browser",
       "hashtags": [
         "cuervos",
         "animales",
         "ciencia",
         "curiosidades"
+      ],
+      "youtube_id": "ZHdJXFrURk4",
+      "youtube_url": "https://www.youtube.com/shorts/ZHdJXFrURk4",
+      "privacy": "public",
+      "yt_id": "ZHdJXFrURk4",
+      "url": "https://youtube.com/shorts/ZHdJXFrURk4",
+      "publishAt": null,
+      "mp4": "salidas/2026-10-27_corneja-decision-rapida/capsula.mp4",
+      "duracion_s": 87.7,
+      "hashtags_yt": [
+        "#cuervos",
+        "#animales",
+        "#ciencia",
+        "#sabiasque",
+        "#datos",
+        "#Shorts",
+        "#DatosYOciosidades"
       ]
     },
     {
@@ -35,7 +52,7 @@
       "titulo": "Un toque de vida #Shorts",
       "estilo": "ukiyo_e",
       "estructura": "historia",
-      "estado": "pendiente_frames",
+      "estado": "programado_yt",
       "proyecto": "2026-10-25_corales-contacto",
       "salida": "salidas/2026-10-25_corales-contacto",
       "plataformas": [
@@ -43,13 +60,32 @@
         "tiktok",
         "facebook"
       ],
-      "tiktok": "pendiente",
-      "facebook": "pendiente",
+      "tiktok": "pendiente_browser",
+      "facebook": "pendiente_browser",
       "hashtags": [
         "corales",
         "océano",
         "ciencia",
         "naturaleza"
+      ],
+      "youtube_id": "Mz-IVFvFWH4",
+      "youtube_url": "https://www.youtube.com/shorts/Mz-IVFvFWH4",
+      "privacy": "private",
+      "publish_at": "2026-10-31T19:30:00Z",
+      "yt_id": "Mz-IVFvFWH4",
+      "url": "https://youtube.com/shorts/Mz-IVFvFWH4",
+      "publishAt": "2026-10-31T19:30:00Z",
+      "mp4": "salidas/2026-10-25_corales-contacto/capsula.mp4",
+      "duracion_s": 95.0,
+      "hashtags_yt": [
+        "#corales",
+        "#océano",
+        "#ciencia",
+        "#naturaleza",
+        "#datos",
+        "#sabiasque",
+        "#Shorts",
+        "#DatosYOciosidades"
       ]
     },
     {
@@ -59,7 +95,7 @@
       "titulo": "El gen que afina el oído del mosquito macho #Shorts #Shorts",
       "estilo": "claymation",
       "estructura": "sabias_que",
-      "estado": "pendiente_frames",
+      "estado": "programado_yt",
       "proyecto": "2026-10-28_mosquito-fruitless-audicion",
       "salida": "salidas/2026-10-28_mosquito-fruitless-audicion",
       "plataformas": [
@@ -67,13 +103,31 @@
         "tiktok",
         "facebook"
       ],
-      "tiktok": "pendiente",
-      "facebook": "pendiente",
+      "tiktok": "pendiente_browser",
+      "facebook": "pendiente_browser",
       "hashtags": [
         "mosquitos",
         "animales",
         "ciencia",
         "curiosidades"
+      ],
+      "youtube_id": "G5is50omLo4",
+      "youtube_url": "https://www.youtube.com/shorts/G5is50omLo4",
+      "privacy": "private",
+      "publish_at": "2026-10-31T23:00:00Z",
+      "yt_id": "G5is50omLo4",
+      "url": "https://youtube.com/shorts/G5is50omLo4",
+      "publishAt": "2026-10-31T23:00:00Z",
+      "mp4": "salidas/2026-10-28_mosquito-fruitless-audicion/capsula.mp4",
+      "duracion_s": 83.2,
+      "hashtags_yt": [
+        "#mosquitos",
+        "#animales",
+        "#ciencia",
+        "#sabiasque",
+        "#datos",
+        "#Shorts",
+        "#DatosYOciosidades"
       ]
     },
     {
@@ -83,7 +137,7 @@
       "titulo": "La cueva ya tiene fecha #Shorts",
       "estilo": "dibujo_cientifico_scratchboard",
       "estructura": "pregunta",
-      "estado": "pendiente_frames",
+      "estado": "programado_yt",
       "proyecto": "2026-10-30_kromdraai-primera-fecha",
       "salida": "salidas/2026-10-30_kromdraai-primera-fecha",
       "plataformas": [
@@ -91,15 +145,29 @@
         "tiktok",
         "facebook"
       ],
-      "tiktok": "pendiente",
-      "facebook": "pendiente",
+      "tiktok": "pendiente_browser",
+      "facebook": "pendiente_browser",
       "hashtags": [
         "fósiles",
         "evolución",
         "ciencia",
         "cueva"
       ],
-      "nota": "Sustituye Juno: Voyager (espacio abstracto) solo 16 vistas; métricas favorecen hallazgo concreto"
+      "nota": "Sustituye Juno: Voyager (espacio abstracto) solo 16 vistas; métricas favorecen hallazgo concreto",
+      "yt_id": "ILDMoFhsH74",
+      "url": "https://youtube.com/shorts/ILDMoFhsH74",
+      "publishAt": "2026-11-01T01:00:00Z",
+      "mp4": "salidas/2026-10-30_kromdraai-primera-fecha/capsula.mp4",
+      "duracion_s": 78.9,
+      "hashtags_yt": [
+        "#fósiles",
+        "#cueva",
+        "#ciencia",
+        "#sabiasque",
+        "#datos",
+        "#Shorts",
+        "#DatosYOciosidades"
+      ]
     },
     {
       "hora": "23:30",
@@ -108,7 +176,7 @@
       "titulo": "Las aves también tienen jet lag #Shorts",
       "estilo": "papel_rasgado_capas",
       "estructura": "historia",
-      "estado": "pendiente_frames",
+      "estado": "programado_yt",
       "proyecto": "2026-10-31_pardelas-jetlag-solar",
       "salida": "salidas/2026-10-31_pardelas-jetlag-solar",
       "plataformas": [
@@ -116,14 +184,30 @@
         "tiktok",
         "facebook"
       ],
-      "tiktok": "pendiente",
-      "facebook": "pendiente",
+      "tiktok": "pendiente_browser",
+      "facebook": "pendiente_browser",
       "hashtags": [
         "aves",
         "migración",
         "ciencia",
         "océano"
-      ]
+      ],
+      "yt_id": "MSiwJnSu_Dk",
+      "url": "https://youtube.com/shorts/MSiwJnSu_Dk",
+      "publishAt": "2026-11-01T05:30:00Z",
+      "mp4": "salidas/2026-10-31_pardelas-jetlag-solar/capsula.mp4",
+      "duracion_s": 84.2,
+      "hashtags_yt": [
+        "#aves",
+        "#migración",
+        "#ciencia",
+        "#océano",
+        "#datos",
+        "#sabiasque",
+        "#Shorts",
+        "#DatosYOciosidades"
+      ],
+      "nota": "override rotacion historia; único dato-día 31"
     }
   ],
   "metricas_base": {
