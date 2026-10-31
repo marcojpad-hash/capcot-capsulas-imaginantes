@@ -1,3 +1,5 @@
+> **SUPERSEDED:** usar `ajustes_entre_modelos/PARA_CHATGPT_semana_01-07nov.md` (parrilla 5/día, 1–7 nov).
+
 # Brief para ChatGPT — 31-oct-2026
 
 > Reglas: `COORDINACION_CHATGPT_IMAGINANTES.md`. No inventar datos. No publicar.
