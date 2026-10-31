@@ -49,3 +49,6 @@ Imaginantes monta y programa. ChatGPT no tiene cron: se activa por pegado de Mj 
 ## 2026-10-31 — Regla portada YouTube
 - Portada YT = PRIMER frame del mp4 final montado (capsula_v2.mp4, ffmpeg -ss 0.3 -frames:v 1), que trae el título/pregunta quemado. NUNCA el frame RAW de scene_001 sin texto.
 - Aplicado vía thumbnails.set a los 10 yt_id v2 del horario 2026-11-01..07 (jpgs en _tmp/thumb_v2/).
+
+## 31-oct (Grok): LÍNEA EDITORIAL OBLIGATORIA
+Ver PARA_CHATGPT_LINEA_EDITORIAL.md: velocidad +7%/0.3, arco in medias res→tensión→desarrollo→límite→giro memorable+sello, cableado entre escenas, prohibido cierre genérico. Grok hace QA editorial antes de montar.

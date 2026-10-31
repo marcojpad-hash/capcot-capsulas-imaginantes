@@ -1,320 +1,320 @@
 {
-  "project_id": "2026-10-31_smartpe-edicion-plantas",
-  "serie": "Datos y ociosidades",
-  "language": "es-MX",
-  "aspect_ratio": "9:16",
-  "target_duration_seconds": 84,
-  "estructura": "pregunta",
-  "trend_source": {
-    "termino": "SmartPE prime editing en cultivos dicotiledóneos",
-    "fecha_publicacion": "2026-10-28",
-    "url": "https://www.nature.com/articles/s41477-026-02447-w"
+ "project_id": "2026-10-31_smartpe-edicion-plantas",
+ "serie": "Datos y ociosidades",
+ "language": "es-MX",
+ "aspect_ratio": "9:16",
+ "target_duration_seconds": 84,
+ "estructura": "pregunta",
+ "trend_source": {
+  "termino": "SmartPE prime editing en cultivos dicotiledóneos",
+  "fecha_publicacion": "2026-10-28",
+  "url": "https://www.nature.com/articles/s41477-026-02447-w"
+ },
+ "resumen": "SmartPE optimiza prime editing en plantas dicotiledóneas. En protoplastos, la eficiencia relativa aumentó 8.2–38.2 veces en tomate y 6.3–23 veces en Arabidopsis, según objetivos experimentales. Los resultados siguen siendo de laboratorio, no prueba de rendimiento agrícola.",
+ "estilo_id": "pixel_art",
+ "estilo_visual": "Pixel art",
+ "sources": [
+  {
+   "id": "SRC-001",
+   "cita_corta": "Liu et al. (2026), Nature Plants",
+   "url": "https://doi.org/10.1038/s41477-026-02447-w",
+   "doi": "10.1038/s41477-026-02447-w",
+   "accessed": "2026-10-31",
+   "publication_date": "2026-10-28",
+   "supports": [
+    "Diseño de SmartPE y componentes moleculares",
+    "Mejoras relativas en protoplastos de tomate y Arabidopsis",
+    "Pruebas en raíces y transformación estable"
+   ],
+   "verification_status": "VERIFICADO_RESOLVEDOR"
   },
-  "resumen": "SmartPE optimiza prime editing en plantas dicotiledóneas. En protoplastos, la eficiencia relativa aumentó 8.2–38.2 veces en tomate y 6.3–23 veces en Arabidopsis, según objetivos experimentales. Los resultados siguen siendo de laboratorio, no prueba de rendimiento agrícola.",
-  "estilo_id": "pixel_art",
-  "estilo_visual": "Pixel art",
-  "sources": [
-    {
-      "id": "SRC-001",
-      "cita_corta": "Liu et al. (2026), Nature Plants",
-      "url": "https://doi.org/10.1038/s41477-026-02447-w",
-      "doi": "10.1038/s41477-026-02447-w",
-      "accessed": "2026-10-31",
-      "publication_date": "2026-10-28",
-      "supports": [
-        "Diseño de SmartPE y componentes moleculares",
-        "Mejoras relativas en protoplastos de tomate y Arabidopsis",
-        "Pruebas en raíces y transformación estable"
-      ],
-      "verification_status": "VERIFICADO_RESOLVEDOR"
-    },
-    {
-      "id": "SRC-002",
-      "cita_corta": "Chinese Academy of Sciences (2026)",
-      "url": "https://english.cas.cn/newsroom/research-news/202610/t20261028_1212712.shtml",
-      "doi": null,
-      "accessed": "2026-10-31",
-      "publication_date": "2026-10-29",
-      "supports": [
-        "Contexto institucional y límites de los ensayos experimentales"
-      ],
-      "verification_status": "VERIFICADO_RESOLVEDOR"
-    },
-    {
-      "id": "SRC-003",
-      "cita_corta": "Institute of Genetics and Developmental Biology, CAS",
-      "url": "https://genetics.cas.cn/dtxw/kyjz/202610/t20261028_8299731.html",
-      "doi": null,
-      "accessed": "2026-10-31",
-      "publication_date": "2026-10-28",
-      "supports": [
-        "Diseño de SmartPE y contexto del equipo investigador"
-      ],
-      "verification_status": "VERIFICADO_RESOLVEDOR"
-    }
+  {
+   "id": "SRC-002",
+   "cita_corta": "Chinese Academy of Sciences (2026)",
+   "url": "https://english.cas.cn/newsroom/research-news/202610/t20261028_1212712.shtml",
+   "doi": null,
+   "accessed": "2026-10-31",
+   "publication_date": "2026-10-29",
+   "supports": [
+    "Contexto institucional y límites de los ensayos experimentales"
+   ],
+   "verification_status": "VERIFICADO_RESOLVEDOR"
+  },
+  {
+   "id": "SRC-003",
+   "cita_corta": "Institute of Genetics and Developmental Biology, CAS",
+   "url": "https://genetics.cas.cn/dtxw/kyjz/202610/t20261028_8299731.html",
+   "doi": null,
+   "accessed": "2026-10-31",
+   "publication_date": "2026-10-28",
+   "supports": [
+    "Diseño de SmartPE y contexto del equipo investigador"
+   ],
+   "verification_status": "VERIFICADO_RESOLVEDOR"
+  }
+ ],
+ "title": "SmartPE: edición genética más precisa en plantas #Shorts",
+ "titulo": "Editar plantas con precisión",
+ "audience": "Público general curioso (YouTube Shorts)",
+ "voice": {
+  "engine": "edge-tts",
+  "voice_id": "es-MX-JorgeNeural",
+  "rate": "+7%",
+  "pitch": "-2Hz",
+  "pad_seconds": 0.3,
+  "modo_pausas": "continuo"
+ },
+ "scenes": [
+  {
+   "id": "scene_001",
+   "arc": "hook_medias_res",
+   "duration_seconds": 9,
+   "narration": "Imagina corregir una sola letra en el libro de instrucciones de un tomate, sin romper la página. Eso promete la edición de precisión. El problema: en plantas casi no funcionaba.",
+   "on_screen_text": "Editar con precisión",
+   "visual_description": "Hoja de tomate se transforma en secuencia de letras; una base cambia sin mostrar corte de ambas cadenas.",
+   "image_prompt": "16-bit pixel art scene, limited retro palette, crisp pixels, side view video game style, dithering, vertical 9:16, no text. Hoja de tomate se transforma en secuencia de letras; una base cambia sin mostrar corte de ambas cadenas.. No text, no lettering.",
+   "ambiente": "silencio",
+   "sfx": [
+    "viento"
+   ],
+   "source_ids": [
+    "SRC-001",
+    "SRC-002",
+    "SRC-003"
+   ],
+   "style_id": "pixel_art",
+   "asset_filename": "frames/scene_001.jpg",
+   "asset_type": "image",
+   "motion": "kenburns_auto",
+   "animated_hook": false,
+   "image_origen": "Generada con IA para este paquete; ilustración editorial, no fotografía ni imagen documental."
+  },
+  {
+   "id": "scene_002",
+   "arc": "desarrollo",
+   "duration_seconds": 10,
+   "narration": "La técnica se llama prime editing. Puede introducir sustituciones y pequeños cambios, pero en muchas plantas su eficiencia era baja. Ese era el cuello de botella.",
+   "on_screen_text": "Eficiencia variable",
+   "visual_description": "Escalera de ADN y herramienta molecular; varios intentos muestran resultados variables.",
+   "image_prompt": "16-bit pixel art scene, limited retro palette, crisp pixels, side view video game style, dithering, vertical 9:16, no text. Escalera de ADN y herramienta molecular; varios intentos muestran resultados variables.. No text, no lettering.",
+   "ambiente": "silencio",
+   "sfx": [
+    "viento"
+   ],
+   "source_ids": [
+    "SRC-001",
+    "SRC-002",
+    "SRC-003"
+   ],
+   "style_id": "pixel_art",
+   "asset_filename": "frames/scene_002.jpg",
+   "asset_type": "image",
+   "motion": "kenburns_auto",
+   "animated_hook": false,
+   "image_origen": "Generada con IA para este paquete; ilustración editorial, no fotografía ni imagen documental."
+  },
+  {
+   "id": "scene_003",
+   "arc": "desarrollo",
+   "duration_seconds": 10,
+   "narration": "Entonces un equipo presentó SmartPE, un sistema optimizado para plantas dicotiledóneas como tomate, soya y canola. ¿Lograría destrabarlo?",
+   "on_screen_text": "SmartPE",
+   "visual_description": "Diagrama de dos guías moleculares, plantilla de copia y enzima modificada; no dibujar tijeras.",
+   "image_prompt": "16-bit pixel art scene, limited retro palette, crisp pixels, side view video game style, dithering, vertical 9:16, no text. Diagrama de dos guías moleculares, plantilla de copia y enzima modificada; no dibujar tijeras.. No text, no lettering.",
+   "ambiente": "silencio",
+   "sfx": [
+    "viento"
+   ],
+   "source_ids": [
+    "SRC-001",
+    "SRC-002",
+    "SRC-003"
+   ],
+   "style_id": "pixel_art",
+   "asset_filename": "frames/scene_003.jpg",
+   "asset_type": "image",
+   "motion": "kenburns_auto",
+   "animated_hook": false,
+   "image_origen": "Generada con IA para este paquete; ilustración editorial, no fotografía ni imagen documental."
+  },
+  {
+   "id": "scene_004",
+   "arc": "desarrollo",
+   "duration_seconds": 10,
+   "narration": "En protoplastos de tomate, la eficiencia aumentó entre 8.2 y 38.2 veces frente a los métodos de referencia. No un pequeño ajuste: un salto.",
+   "on_screen_text": "8.2–38.2× en tomate",
+   "visual_description": "Células vegetales estilizadas y barra de aumento relativo; indicar que depende del sitio objetivo.",
+   "image_prompt": "16-bit pixel art scene, limited retro palette, crisp pixels, side view video game style, dithering, vertical 9:16, no text. Células vegetales estilizadas y barra de aumento relativo; indicar que depende del sitio objetivo.. No text, no lettering.",
+   "ambiente": "silencio",
+   "sfx": [
+    "viento"
+   ],
+   "source_ids": [
+    "SRC-001",
+    "SRC-002",
+    "SRC-003"
+   ],
+   "style_id": "pixel_art",
+   "asset_filename": "frames/scene_004.jpg",
+   "asset_type": "image",
+   "motion": "kenburns_auto",
+   "animated_hook": false,
+   "image_origen": "Generada con IA para este paquete; ilustración editorial, no fotografía ni imagen documental."
+  },
+  {
+   "id": "scene_005",
+   "arc": "desarrollo",
+   "duration_seconds": 10,
+   "narration": "Y no fue solo el tomate. En Arabidopsis, una planta modelo, el aumento fue de 6.3 a 23 veces, según el experimento.",
+   "on_screen_text": "6.3–23× en Arabidopsis",
+   "visual_description": "Planta modelo Arabidopsis con gráfico de mejora relativa; no convertir en porcentaje absoluto.",
+   "image_prompt": "16-bit pixel art scene, limited retro palette, crisp pixels, side view video game style, dithering, vertical 9:16, no text. Planta modelo Arabidopsis con gráfico de mejora relativa; no convertir en porcentaje absoluto.. No text, no lettering.",
+   "ambiente": "silencio",
+   "sfx": [
+    "viento"
+   ],
+   "source_ids": [
+    "SRC-001",
+    "SRC-002",
+    "SRC-003"
+   ],
+   "style_id": "pixel_art",
+   "asset_filename": "frames/scene_005.jpg",
+   "asset_type": "image",
+   "motion": "kenburns_auto",
+   "animated_hook": false,
+   "image_origen": "Generada con IA para este paquete; ilustración editorial, no fotografía ni imagen documental."
+  },
+  {
+   "id": "scene_006",
+   "arc": "cierre_historia",
+   "duration_seconds": 10,
+   "narration": "Incluso lograron modificaciones en raíces de tomate y avanzaron en experimentos de transformación estable en plantas.",
+   "on_screen_text": "Pruebas experimentales",
+   "visual_description": "Raíces de tomate en cultivo y plantas experimentales dentro de laboratorio; no mostrar campos comerciales.",
+   "image_prompt": "16-bit pixel art scene, limited retro palette, crisp pixels, side view video game style, dithering, vertical 9:16, no text. Raíces de tomate en cultivo y plantas experimentales dentro de laboratorio; no mostrar campos comerciales.. No text, no lettering.",
+   "ambiente": "silencio",
+   "sfx": [
+    "viento"
+   ],
+   "source_ids": [
+    "SRC-001",
+    "SRC-002",
+    "SRC-003"
+   ],
+   "style_id": "pixel_art",
+   "asset_filename": "frames/scene_006.jpg",
+   "asset_type": "image",
+   "motion": "kenburns_auto",
+   "animated_hook": false,
+   "image_origen": "Generada con IA para este paquete; ilustración editorial, no fotografía ni imagen documental."
+  },
+  {
+   "id": "scene_007",
+   "arc": "reflexion_o_pregunta",
+   "duration_seconds": 9,
+   "narration": "El límite: los aumentos se midieron en laboratorio. El estudio no demuestra todavía mayor cosecha, resistencia en campo ni disponibilidad comercial.",
+   "on_screen_text": "Aún no es comercial",
+   "visual_description": "Transición de placa de Petri a campo agrícola que se detiene; rótulo de límite experimental.",
+   "image_prompt": "16-bit pixel art scene, limited retro palette, crisp pixels, side view video game style, dithering, vertical 9:16, no text. Transición de placa de Petri a campo agrícola que se detiene; rótulo de límite experimental.. No text, no lettering.",
+   "ambiente": "silencio",
+   "sfx": [
+    "viento"
+   ],
+   "source_ids": [
+    "SRC-001",
+    "SRC-002",
+    "SRC-003"
+   ],
+   "style_id": "pixel_art",
+   "asset_filename": "frames/scene_007.jpg",
+   "asset_type": "image",
+   "motion": "kenburns_auto",
+   "animated_hook": false,
+   "image_origen": "Generada con IA para este paquete; ilustración editorial, no fotografía ni imagen documental."
+  },
+  {
+   "id": "scene_008",
+   "arc": "reflexion_o_pregunta",
+   "duration_seconds": 10,
+   "narration": "Editar una letra ya no es el problema principal; el reto es que el cambio sirva fuera del laboratorio. ¿Qué cultivo te gustaría ver mejorado? Esto fue Datos y ociosidades.",
+   "on_screen_text": "Datos y ociosidades",
+   "visual_description": "Planta joven con secuencia de ADN superpuesta; cierre de investigación.",
+   "image_prompt": "16-bit pixel art scene, limited retro palette, crisp pixels, side view video game style, dithering, vertical 9:16, no text. Planta joven con secuencia de ADN superpuesta; cierre de investigación.. No text, no lettering.",
+   "ambiente": "silencio",
+   "sfx": [
+    "viento"
+   ],
+   "source_ids": [
+    "SRC-001",
+    "SRC-002",
+    "SRC-003"
+   ],
+   "style_id": "pixel_art",
+   "asset_filename": "frames/scene_008.jpg",
+   "asset_type": "image",
+   "motion": "kenburns_auto",
+   "animated_hook": false,
+   "image_origen": "Generada con IA para este paquete; ilustración editorial, no fotografía ni imagen documental."
+  }
+ ],
+ "cortinilla_fuentes": {
+  "duration_seconds": 6,
+  "titulo": "Fuentes",
+  "aviso": "Imágenes generadas con IA. Voz sintética. Música sintetizada; efectos CC0/dominio público.",
+  "firma": "Datos y ociosidades · @datosyociosidades",
+  "bg_rgb": [
+   12,
+   32,
+   47
   ],
-  "title": "SmartPE: edición genética más precisa en plantas #Shorts",
-  "titulo": "Editar plantas con precisión",
-  "audience": "Público general curioso (YouTube Shorts)",
-  "voice": {
-    "engine": "edge-tts",
-    "voice_id": "es-MX-JorgeNeural",
-    "rate": "-2%",
-    "pitch": "-2Hz",
-    "pad_seconds": 0.7,
-    "modo_pausas": "continuo"
-  },
-  "scenes": [
-    {
-      "id": "scene_001",
-      "arc": "hook_medias_res",
-      "duration_seconds": 9,
-      "narration": "Cambiar una letra del ADN de una planta sin cortar las dos cadenas: esa es una de las promesas de la edición de precisión.",
-      "on_screen_text": "Editar con precisión",
-      "visual_description": "Hoja de tomate se transforma en secuencia de letras; una base cambia sin mostrar corte de ambas cadenas.",
-      "image_prompt": "16-bit pixel art scene, limited retro palette, crisp pixels, side view video game style, dithering, vertical 9:16, no text. Hoja de tomate se transforma en secuencia de letras; una base cambia sin mostrar corte de ambas cadenas.. No text, no lettering.",
-      "ambiente": "silencio",
-      "sfx": [
-        "viento"
-      ],
-      "source_ids": [
-        "SRC-001",
-        "SRC-002",
-        "SRC-003"
-      ],
-      "style_id": "pixel_art",
-      "asset_filename": "frames/scene_001.jpg",
-      "asset_type": "image",
-      "motion": "kenburns_auto",
-      "animated_hook": false,
-      "image_origen": "Generada con IA para este paquete; ilustración editorial, no fotografía ni imagen documental."
-    },
-    {
-      "id": "scene_002",
-      "arc": "desarrollo",
-      "duration_seconds": 10,
-      "narration": "La técnica se llama prime editing. Puede introducir sustituciones y pequeños cambios, pero en muchas plantas su eficiencia ha sido baja. Ese era el cuello de botella.",
-      "on_screen_text": "Eficiencia variable",
-      "visual_description": "Escalera de ADN y herramienta molecular; varios intentos muestran resultados variables.",
-      "image_prompt": "16-bit pixel art scene, limited retro palette, crisp pixels, side view video game style, dithering, vertical 9:16, no text. Escalera de ADN y herramienta molecular; varios intentos muestran resultados variables.. No text, no lettering.",
-      "ambiente": "silencio",
-      "sfx": [
-        "viento"
-      ],
-      "source_ids": [
-        "SRC-001",
-        "SRC-002",
-        "SRC-003"
-      ],
-      "style_id": "pixel_art",
-      "asset_filename": "frames/scene_002.jpg",
-      "asset_type": "image",
-      "motion": "kenburns_auto",
-      "animated_hook": false,
-      "image_origen": "Generada con IA para este paquete; ilustración editorial, no fotografía ni imagen documental."
-    },
-    {
-      "id": "scene_003",
-      "arc": "desarrollo",
-      "duration_seconds": 10,
-      "narration": "Un equipo presentó SmartPE, un sistema optimizado para plantas dicotiledóneas como tomate, soya y canola.",
-      "on_screen_text": "SmartPE",
-      "visual_description": "Diagrama de dos guías moleculares, plantilla de copia y enzima modificada; no dibujar tijeras.",
-      "image_prompt": "16-bit pixel art scene, limited retro palette, crisp pixels, side view video game style, dithering, vertical 9:16, no text. Diagrama de dos guías moleculares, plantilla de copia y enzima modificada; no dibujar tijeras.. No text, no lettering.",
-      "ambiente": "silencio",
-      "sfx": [
-        "viento"
-      ],
-      "source_ids": [
-        "SRC-001",
-        "SRC-002",
-        "SRC-003"
-      ],
-      "style_id": "pixel_art",
-      "asset_filename": "frames/scene_003.jpg",
-      "asset_type": "image",
-      "motion": "kenburns_auto",
-      "animated_hook": false,
-      "image_origen": "Generada con IA para este paquete; ilustración editorial, no fotografía ni imagen documental."
-    },
-    {
-      "id": "scene_004",
-      "arc": "desarrollo",
-      "duration_seconds": 10,
-      "narration": "En protoplastos de tomate, la eficiencia aumentó entre 8.2 y 38.2 veces frente a los métodos de referencia.",
-      "on_screen_text": "8.2–38.2× en tomate",
-      "visual_description": "Células vegetales estilizadas y barra de aumento relativo; indicar que depende del sitio objetivo.",
-      "image_prompt": "16-bit pixel art scene, limited retro palette, crisp pixels, side view video game style, dithering, vertical 9:16, no text. Células vegetales estilizadas y barra de aumento relativo; indicar que depende del sitio objetivo.. No text, no lettering.",
-      "ambiente": "silencio",
-      "sfx": [
-        "viento"
-      ],
-      "source_ids": [
-        "SRC-001",
-        "SRC-002",
-        "SRC-003"
-      ],
-      "style_id": "pixel_art",
-      "asset_filename": "frames/scene_004.jpg",
-      "asset_type": "image",
-      "motion": "kenburns_auto",
-      "animated_hook": false,
-      "image_origen": "Generada con IA para este paquete; ilustración editorial, no fotografía ni imagen documental."
-    },
-    {
-      "id": "scene_005",
-      "arc": "desarrollo",
-      "duration_seconds": 10,
-      "narration": "En Arabidopsis, una planta modelo, el aumento fue de 6.3 a 23 veces, también según el experimento.",
-      "on_screen_text": "6.3–23× en Arabidopsis",
-      "visual_description": "Planta modelo Arabidopsis con gráfico de mejora relativa; no convertir en porcentaje absoluto.",
-      "image_prompt": "16-bit pixel art scene, limited retro palette, crisp pixels, side view video game style, dithering, vertical 9:16, no text. Planta modelo Arabidopsis con gráfico de mejora relativa; no convertir en porcentaje absoluto.. No text, no lettering.",
-      "ambiente": "silencio",
-      "sfx": [
-        "viento"
-      ],
-      "source_ids": [
-        "SRC-001",
-        "SRC-002",
-        "SRC-003"
-      ],
-      "style_id": "pixel_art",
-      "asset_filename": "frames/scene_005.jpg",
-      "asset_type": "image",
-      "motion": "kenburns_auto",
-      "animated_hook": false,
-      "image_origen": "Generada con IA para este paquete; ilustración editorial, no fotografía ni imagen documental."
-    },
-    {
-      "id": "scene_006",
-      "arc": "cierre_historia",
-      "duration_seconds": 10,
-      "narration": "También lograron modificaciones en raíces de tomate y experimentos de transformación estable en plantas.",
-      "on_screen_text": "Pruebas experimentales",
-      "visual_description": "Raíces de tomate en cultivo y plantas experimentales dentro de laboratorio; no mostrar campos comerciales.",
-      "image_prompt": "16-bit pixel art scene, limited retro palette, crisp pixels, side view video game style, dithering, vertical 9:16, no text. Raíces de tomate en cultivo y plantas experimentales dentro de laboratorio; no mostrar campos comerciales.. No text, no lettering.",
-      "ambiente": "silencio",
-      "sfx": [
-        "viento"
-      ],
-      "source_ids": [
-        "SRC-001",
-        "SRC-002",
-        "SRC-003"
-      ],
-      "style_id": "pixel_art",
-      "asset_filename": "frames/scene_006.jpg",
-      "asset_type": "image",
-      "motion": "kenburns_auto",
-      "animated_hook": false,
-      "image_origen": "Generada con IA para este paquete; ilustración editorial, no fotografía ni imagen documental."
-    },
-    {
-      "id": "scene_007",
-      "arc": "reflexion_o_pregunta",
-      "duration_seconds": 9,
-      "narration": "El límite: los aumentos se midieron en laboratorio. El estudio no demuestra todavía mayor cosecha, resistencia en campo ni disponibilidad comercial.",
-      "on_screen_text": "Aún no es comercial",
-      "visual_description": "Transición de placa de Petri a campo agrícola que se detiene; rótulo de límite experimental.",
-      "image_prompt": "16-bit pixel art scene, limited retro palette, crisp pixels, side view video game style, dithering, vertical 9:16, no text. Transición de placa de Petri a campo agrícola que se detiene; rótulo de límite experimental.. No text, no lettering.",
-      "ambiente": "silencio",
-      "sfx": [
-        "viento"
-      ],
-      "source_ids": [
-        "SRC-001",
-        "SRC-002",
-        "SRC-003"
-      ],
-      "style_id": "pixel_art",
-      "asset_filename": "frames/scene_007.jpg",
-      "asset_type": "image",
-      "motion": "kenburns_auto",
-      "animated_hook": false,
-      "image_origen": "Generada con IA para este paquete; ilustración editorial, no fotografía ni imagen documental."
-    },
-    {
-      "id": "scene_008",
-      "arc": "reflexion_o_pregunta",
-      "duration_seconds": 10,
-      "narration": "Editar una letra ya no es el problema principal; el reto es que el cambio sirva fuera del laboratorio. ¿Qué cultivo te gustaría ver mejorado? Esto fue Datos y ociosidades.",
-      "on_screen_text": "Datos y ociosidades",
-      "visual_description": "Planta joven con secuencia de ADN superpuesta; cierre de investigación.",
-      "image_prompt": "16-bit pixel art scene, limited retro palette, crisp pixels, side view video game style, dithering, vertical 9:16, no text. Planta joven con secuencia de ADN superpuesta; cierre de investigación.. No text, no lettering.",
-      "ambiente": "silencio",
-      "sfx": [
-        "viento"
-      ],
-      "source_ids": [
-        "SRC-001",
-        "SRC-002",
-        "SRC-003"
-      ],
-      "style_id": "pixel_art",
-      "asset_filename": "frames/scene_008.jpg",
-      "asset_type": "image",
-      "motion": "kenburns_auto",
-      "animated_hook": false,
-      "image_origen": "Generada con IA para este paquete; ilustración editorial, no fotografía ni imagen documental."
-    }
-  ],
-  "cortinilla_fuentes": {
-    "duration_seconds": 6,
-    "titulo": "Fuentes",
-    "aviso": "Imágenes generadas con IA. Voz sintética. Música sintetizada; efectos CC0/dominio público.",
-    "firma": "Datos y ociosidades · @datosyociosidades",
-    "bg_rgb": [
-      12,
-      32,
-      47
-    ],
-    "fuentes_en_pantalla": [
-      "Liu et al. (2026), Nature Plants, doi:10.1038/s41477-026-02447-w",
-      "Chinese Academy of Sciences (2026)",
-      "Institute of Genetics and Developmental Biology, CAS"
-    ]
-  },
-  "audio": {
-    "music_asset": "sintetico:tambor",
-    "cama_musical": "tambor",
-    "music_lufs": -38,
-    "ambiente_lufs": -30,
-    "music_license": "Síntesis propia del pipeline scripts/cama_sonora.py; el repositorio describe la música sintetizada como obra propia. El documento de licencia de audio citado por el código no está presente en docs/; ver licencias.json.",
-    "sfx_license": "Wikimedia Commons CC0/dominio público según scripts/sfx_manifest.json; descarga y verificación final de archivos quedan para el pipeline.",
-    "music_protagonista": false
-  },
-  "export": {
-    "filename": "capsula.mp4",
-    "resolution": "1080x1920",
-    "fps": 30,
-    "video_codec": "h264",
-    "audio_codec": "aac",
-    "loudness_lufs": -14,
-    "plano_seconds": 2.5,
-    "subtitle_max_words": 3
-  },
-  "proveedor_imagenes": "Generador de imágenes IA de Grok Bot; ocho imágenes ilustrativas generadas para este paquete y ajustadas a 1080x1920.",
-  "parece_real": false,
-  "canal": {
-    "nombre": "Datos y ociosidades",
-    "handle": "@datosyociosidades",
-    "youtube_channel_id": "UCU2ZI-6pBJEr9aSFsF6bxLw"
-  },
-  "publicacion": {
-    "youtube": {
-      "privacy": "private",
-      "publishAt": "",
-      "titulo": "SmartPE: edición genética más precisa en plantas #Shorts",
-      "tags": [
-        "#Shorts",
-        "plantas",
-        "genetica",
-        "ciencia",
-        "sabiasque"
-      ],
-      "synthetic_content": true
-    }
-  },
-  "estado_produccion": "MONTADO_PENDIENTE_PROGRAMAR",
-  "thumbnail_source": "scene_001"
+  "fuentes_en_pantalla": [
+   "Liu et al. (2026), Nature Plants, doi:10.1038/s41477-026-02447-w",
+   "Chinese Academy of Sciences (2026)",
+   "Institute of Genetics and Developmental Biology, CAS"
+  ]
+ },
+ "audio": {
+  "music_asset": "sintetico:tambor",
+  "cama_musical": "tambor",
+  "music_lufs": -38,
+  "ambiente_lufs": -30,
+  "music_license": "Síntesis propia del pipeline scripts/cama_sonora.py; el repositorio describe la música sintetizada como obra propia. El documento de licencia de audio citado por el código no está presente en docs/; ver licencias.json.",
+  "sfx_license": "Wikimedia Commons CC0/dominio público según scripts/sfx_manifest.json; descarga y verificación final de archivos quedan para el pipeline.",
+  "music_protagonista": false
+ },
+ "export": {
+  "filename": "capsula.mp4",
+  "resolution": "1080x1920",
+  "fps": 30,
+  "video_codec": "h264",
+  "audio_codec": "aac",
+  "loudness_lufs": -14,
+  "plano_seconds": 2.5,
+  "subtitle_max_words": 3
+ },
+ "proveedor_imagenes": "Generador de imágenes IA de Grok Bot; ocho imágenes ilustrativas generadas para este paquete y ajustadas a 1080x1920.",
+ "parece_real": false,
+ "canal": {
+  "nombre": "Datos y ociosidades",
+  "handle": "@datosyociosidades",
+  "youtube_channel_id": "UCU2ZI-6pBJEr9aSFsF6bxLw"
+ },
+ "publicacion": {
+  "youtube": {
+   "privacy": "private",
+   "publishAt": "",
+   "titulo": "SmartPE: edición genética más precisa en plantas #Shorts",
+   "tags": [
+    "#Shorts",
+    "plantas",
+    "genetica",
+    "ciencia",
+    "sabiasque"
+   ],
+   "synthetic_content": true
+  }
+ },
+ "estado_produccion": "MONTADO_PENDIENTE_PROGRAMAR",
+ "thumbnail_source": "scene_001"
 }

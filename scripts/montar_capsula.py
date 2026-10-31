@@ -248,7 +248,11 @@ def main():
     sb = json.load(open(a.storyboard, encoding="utf-8")); base = os.path.dirname(os.path.abspath(a.storyboard))
     v = sb["voice"]; tmp = tempfile.mkdtemp(prefix="capcot_")
     continuo = v.get("modo_pausas", "continuo") == "continuo"
-    pad = float(v.get("pad_seconds", 0.35 if continuo else 0.6))
+    # RITMO UNIFICADO (Mj 31-oct): referencia pan/corneja = rate +7%, pad 0.3. Guiones con -2%/0.7 sonaban arremansados.
+    try: _r = int(str(v.get("rate", "+7%")).replace("%", ""))
+    except ValueError: _r = 7
+    if _r < 7: v["rate"] = "+7%"
+    pad = min(float(v.get("pad_seconds", 0.3)), 0.3) if continuo else float(v.get("pad_seconds", 0.6))
     clips, audio_parts, all_words, t, durs = [], [], [], 0.0, []
     for i, sc in enumerate(sb["scenes"]):
         mp3 = os.path.join(tmp, f"{sc['id']}.mp3")

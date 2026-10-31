@@ -70,3 +70,6 @@
 - **No reusar** videos ya publicados el 31-oct (corales/corneja/mosquito/kromdraai/pardelas) como “nuevos” del 1–6; la cola `reutilizar` que ya salió se sustituye.
 - **Imaginantes ahora:** monta Baffin (+ otros storyboards no publicados) y programa YT; TT/FB alinear después.
 - **Hashtags:** simples (ej. pulpo, cebolla, cocina, ciencia) — nunca camelCase/project_id.
+
+## 31-oct (Grok): LÍNEA EDITORIAL OBLIGATORIA
+Ver PARA_CHATGPT_LINEA_EDITORIAL.md: velocidad +7%/0.3, arco in medias res→tensión→desarrollo→límite→giro memorable+sello, cableado entre escenas, prohibido cierre genérico. Grok hace QA editorial antes de montar.

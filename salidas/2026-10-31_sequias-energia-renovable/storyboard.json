@@ -1,278 +1,278 @@
 {
-  "project_id": "2026-10-31_sequias-energia-renovable",
-  "serie": "Datos y ociosidades",
-  "language": "es-MX",
-  "aspect_ratio": "9:16",
-  "target_duration_seconds": 84,
-  "estructura": "pregunta",
-  "trend_source": {
-    "termino": "Sequías energéticas renovables compuestas",
-    "fecha_publicacion": "2026-10-29",
-    "url": "https://www.nature.com/articles/s43247-026-04183-7"
+ "project_id": "2026-10-31_sequias-energia-renovable",
+ "serie": "Datos y ociosidades",
+ "language": "es-MX",
+ "aspect_ratio": "9:16",
+ "target_duration_seconds": 84,
+ "estructura": "pregunta",
+ "trend_source": {
+  "termino": "Sequías energéticas renovables compuestas",
+  "fecha_publicacion": "2026-10-29",
+  "url": "https://www.nature.com/articles/s43247-026-04183-7"
+ },
+ "resumen": "Un estudio con simulaciones CMIP6 examina sequías energéticas renovables compuestas bajo 1.5, 2 y 3 °C de calentamiento. A 3 °C, cambios significativos en duración, frecuencia e intensidad afectarían 69.4%, 74.0% y 50.2% del área terrestre global, respectivamente.",
+ "estilo_id": "constructivista_ruso",
+ "estilo_visual": "Stencil constructivista ruso",
+ "sources": [
+  {
+   "id": "SRC-001",
+   "cita_corta": "Aminimehr, Hellinckx & Tabari (2026), Communications Earth & Environment",
+   "url": "https://doi.org/10.1038/s43247-026-04183-7",
+   "doi": "10.1038/s43247-026-04183-7",
+   "accessed": "2026-10-31",
+   "publication_date": "2026-10-29",
+   "supports": [
+    "Escenarios CMIP6 de 1.5, 2 y 3 °C",
+    "Porcentajes de área terrestre global con cambios significativos en duración, frecuencia e intensidad",
+    "Papel dominante de la radiación solar en intensificación"
+   ],
+   "verification_status": "VERIFICADO_RESOLVEDOR"
+  }
+ ],
+ "title": "Cuando el viento y el Sol fallan juntos #Shorts",
+ "titulo": "¿Y si faltan ambos?",
+ "audience": "Público general curioso (YouTube Shorts)",
+ "voice": {
+  "engine": "edge-tts",
+  "voice_id": "es-MX-JorgeNeural",
+  "rate": "+7%",
+  "pitch": "-2Hz",
+  "pad_seconds": 0.3,
+  "modo_pausas": "continuo"
+ },
+ "scenes": [
+  {
+   "id": "scene_001",
+   "arc": "hook_medias_res",
+   "duration_seconds": 9,
+   "narration": "Imagina una tarde nublada y sin una sola ráfaga. Los paneles casi no producen; los molinos, quietos. ¿Qué pasa cuando el Sol y el viento fallan al mismo tiempo?",
+   "on_screen_text": "¿Y si faltan ambos?",
+   "visual_description": "Aerogeneradores quietos bajo cielo velado y paneles con luz débil; composición dividida que converge.",
+   "image_prompt": "Russian constructivist propaganda photomontage, red and black on aged paper, bold diagonals, stencil shapes, grainy halftone photo, vertical 9:16, no text. Aerogeneradores quietos bajo cielo velado y paneles con luz débil; composición dividida que converge.. No text, no lettering.",
+   "ambiente": "silencio",
+   "sfx": [
+    "viento"
+   ],
+   "source_ids": [
+    "SRC-001"
+   ],
+   "style_id": "constructivista_ruso",
+   "asset_filename": "frames/scene_001.jpg",
+   "asset_type": "image",
+   "motion": "kenburns_auto",
+   "animated_hook": false,
+   "image_origen": "Generada con IA para este paquete; ilustración editorial, no fotografía ni imagen documental."
   },
-  "resumen": "Un estudio con simulaciones CMIP6 examina sequías energéticas renovables compuestas bajo 1.5, 2 y 3 °C de calentamiento. A 3 °C, cambios significativos en duración, frecuencia e intensidad afectarían 69.4%, 74.0% y 50.2% del área terrestre global, respectivamente.",
-  "estilo_id": "constructivista_ruso",
-  "estilo_visual": "Stencil constructivista ruso",
-  "sources": [
-    {
-      "id": "SRC-001",
-      "cita_corta": "Aminimehr, Hellinckx & Tabari (2026), Communications Earth & Environment",
-      "url": "https://doi.org/10.1038/s43247-026-04183-7",
-      "doi": "10.1038/s43247-026-04183-7",
-      "accessed": "2026-10-31",
-      "publication_date": "2026-10-29",
-      "supports": [
-        "Escenarios CMIP6 de 1.5, 2 y 3 °C",
-        "Porcentajes de área terrestre global con cambios significativos en duración, frecuencia e intensidad",
-        "Papel dominante de la radiación solar en intensificación"
-      ],
-      "verification_status": "VERIFICADO_RESOLVEDOR"
-    }
+  {
+   "id": "scene_002",
+   "arc": "desarrollo",
+   "duration_seconds": 10,
+   "narration": "Tiene nombre: sequía energética renovable compuesta. Días en que la energía posible del viento y del Sol cae a la vez. Y la pregunta incómoda es si serán más comunes.",
+   "on_screen_text": "Sequía renovable compuesta",
+   "visual_description": "Sol y turbina con indicadores de generación potencial descendiendo al mismo tiempo.",
+   "image_prompt": "Russian constructivist propaganda photomontage, red and black on aged paper, bold diagonals, stencil shapes, grainy halftone photo, vertical 9:16, no text. Sol y turbina con indicadores de generación potencial descendiendo al mismo tiempo.. No text, no lettering.",
+   "ambiente": "silencio",
+   "sfx": [
+    "viento"
+   ],
+   "source_ids": [
+    "SRC-001"
+   ],
+   "style_id": "constructivista_ruso",
+   "asset_filename": "frames/scene_002.jpg",
+   "asset_type": "image",
+   "motion": "kenburns_auto",
+   "animated_hook": false,
+   "image_origen": "Generada con IA para este paquete; ilustración editorial, no fotografía ni imagen documental."
+  },
+  {
+   "id": "scene_003",
+   "arc": "desarrollo",
+   "duration_seconds": 10,
+   "narration": "Un equipo comparó simulaciones climáticas del planeta con uno punto cinco, dos y tres grados de calentamiento. Querían saber cuánto cambian esas rachas sin Sol ni viento.",
+   "on_screen_text": "1.5 · 2 · 3 °C",
+   "visual_description": "Globo con capas climáticas abstractas y tres escenarios claramente rotulados.",
+   "image_prompt": "Russian constructivist propaganda photomontage, red and black on aged paper, bold diagonals, stencil shapes, grainy halftone photo, vertical 9:16, no text. Globo con capas climáticas abstractas y tres escenarios claramente rotulados.. No text, no lettering.",
+   "ambiente": "silencio",
+   "sfx": [
+    "viento"
+   ],
+   "source_ids": [
+    "SRC-001"
+   ],
+   "style_id": "constructivista_ruso",
+   "asset_filename": "frames/scene_003.jpg",
+   "asset_type": "image",
+   "motion": "kenburns_auto",
+   "animated_hook": false,
+   "image_origen": "Generada con IA para este paquete; ilustración editorial, no fotografía ni imagen documental."
+  },
+  {
+   "id": "scene_004",
+   "arc": "desarrollo",
+   "duration_seconds": 10,
+   "narration": "Con tres grados, la duración de estos episodios cambiaría de forma significativa en el 69.4 por ciento de la superficie terrestre. Casi siete de cada diez rincones.",
+   "on_screen_text": "69.4% · duración",
+   "visual_description": "Gráfico global de área terrestre; rótulo explícito: superficie con cambio significativo en duración.",
+   "image_prompt": "Russian constructivist propaganda photomontage, red and black on aged paper, bold diagonals, stencil shapes, grainy halftone photo, vertical 9:16, no text. Gráfico global de área terrestre; rótulo explícito: superficie con cambio significativo en duración.. No text, no lettering.",
+   "ambiente": "silencio",
+   "sfx": [
+    "viento"
+   ],
+   "source_ids": [
+    "SRC-001"
+   ],
+   "style_id": "constructivista_ruso",
+   "asset_filename": "frames/scene_004.jpg",
+   "asset_type": "image",
+   "motion": "kenburns_auto",
+   "animated_hook": false,
+   "image_origen": "Generada con IA para este paquete; ilustración editorial, no fotografía ni imagen documental."
+  },
+  {
+   "id": "scene_005",
+   "arc": "desarrollo",
+   "duration_seconds": 10,
+   "narration": "Y no solo durarían distinto. Su frecuencia cambiaría en el 74 por ciento del área terrestre; su intensidad, en el 50.2 por ciento.",
+   "on_screen_text": "74.0% frecuencia · 50.2% intensidad",
+   "visual_description": "Dos gráficos comparativos con el mismo denominador: área terrestre global; no sumar porcentajes.",
+   "image_prompt": "Russian constructivist propaganda photomontage, red and black on aged paper, bold diagonals, stencil shapes, grainy halftone photo, vertical 9:16, no text. Dos gráficos comparativos con el mismo denominador: área terrestre global; no sumar porcentajes.. No text, no lettering.",
+   "ambiente": "silencio",
+   "sfx": [
+    "viento"
+   ],
+   "source_ids": [
+    "SRC-001"
+   ],
+   "style_id": "constructivista_ruso",
+   "asset_filename": "frames/scene_005.jpg",
+   "asset_type": "image",
+   "motion": "kenburns_auto",
+   "animated_hook": false,
+   "image_origen": "Generada con IA para este paquete; ilustración editorial, no fotografía ni imagen documental."
+  },
+  {
+   "id": "scene_006",
+   "arc": "cierre_historia",
+   "duration_seconds": 10,
+   "narration": "El principal sospechoso sorprende: no es el viento. La radiación solar aparece como el factor que más empuja la intensidad de estos episodios.",
+   "on_screen_text": "La radiación solar pesa más",
+   "visual_description": "Rayos solares atraviesan capas de nubes; esquema causal sobrio, sin datos regionales.",
+   "image_prompt": "Russian constructivist propaganda photomontage, red and black on aged paper, bold diagonals, stencil shapes, grainy halftone photo, vertical 9:16, no text. Rayos solares atraviesan capas de nubes; esquema causal sobrio, sin datos regionales.. No text, no lettering.",
+   "ambiente": "silencio",
+   "sfx": [
+    "viento"
+   ],
+   "source_ids": [
+    "SRC-001"
+   ],
+   "style_id": "constructivista_ruso",
+   "asset_filename": "frames/scene_006.jpg",
+   "asset_type": "image",
+   "motion": "kenburns_auto",
+   "animated_hook": false,
+   "image_origen": "Generada con IA para este paquete; ilustración editorial, no fotografía ni imagen documental."
+  },
+  {
+   "id": "scene_007",
+   "arc": "reflexion_o_pregunta",
+   "duration_seconds": 9,
+   "narration": "Pero ojo: el estudio mide recursos climáticos simulados, no redes eléctricas reales. Más sequías de Sol y viento no significan, por sí solas, apagones.",
+   "on_screen_text": "No predice apagones",
+   "visual_description": "Red eléctrica y baterías como ilustración conceptual; detener la visual antes de mostrar apagones.",
+   "image_prompt": "Russian constructivist propaganda photomontage, red and black on aged paper, bold diagonals, stencil shapes, grainy halftone photo, vertical 9:16, no text. Red eléctrica y baterías como ilustración conceptual; detener la visual antes de mostrar apagones.. No text, no lettering.",
+   "ambiente": "silencio",
+   "sfx": [
+    "viento"
+   ],
+   "source_ids": [
+    "SRC-001"
+   ],
+   "style_id": "constructivista_ruso",
+   "asset_filename": "frames/scene_007.jpg",
+   "asset_type": "image",
+   "motion": "kenburns_auto",
+   "animated_hook": false,
+   "image_origen": "Generada con IA para este paquete; ilustración editorial, no fotografía ni imagen documental."
+  },
+  {
+   "id": "scene_008",
+   "arc": "reflexion_o_pregunta",
+   "duration_seconds": 10,
+   "narration": "El giro es este: el reto ya no es solo producir energía limpia, sino guardarla para los días en que el cielo no ayuda. ¿Tu ciudad estaría lista? Esto fue Datos y ociosidades.",
+   "on_screen_text": "Planear también es energía",
+   "visual_description": "Sol sobre paneles y turbinas conectados a almacenamiento; cierre editorial.",
+   "image_prompt": "Russian constructivist propaganda photomontage, red and black on aged paper, bold diagonals, stencil shapes, grainy halftone photo, vertical 9:16, no text. Sol sobre paneles y turbinas conectados a almacenamiento; cierre editorial.. No text, no lettering.",
+   "ambiente": "silencio",
+   "sfx": [
+    "viento"
+   ],
+   "source_ids": [
+    "SRC-001"
+   ],
+   "style_id": "constructivista_ruso",
+   "asset_filename": "frames/scene_008.jpg",
+   "asset_type": "image",
+   "motion": "kenburns_auto",
+   "animated_hook": false,
+   "image_origen": "Generada con IA para este paquete; ilustración editorial, no fotografía ni imagen documental."
+  }
+ ],
+ "cortinilla_fuentes": {
+  "duration_seconds": 6,
+  "titulo": "Fuentes",
+  "aviso": "Imágenes generadas con IA. Voz sintética. Música sintetizada; efectos CC0/dominio público.",
+  "firma": "Datos y ociosidades · @datosyociosidades",
+  "bg_rgb": [
+   12,
+   32,
+   47
   ],
-  "title": "Cuando el viento y el Sol fallan juntos #Shorts",
-  "titulo": "¿Y si faltan ambos?",
-  "audience": "Público general curioso (YouTube Shorts)",
-  "voice": {
-    "engine": "edge-tts",
-    "voice_id": "es-MX-JorgeNeural",
-    "rate": "-2%",
-    "pitch": "-2Hz",
-    "pad_seconds": 0.7,
-    "modo_pausas": "continuo"
-  },
-  "scenes": [
-    {
-      "id": "scene_001",
-      "arc": "hook_medias_res",
-      "duration_seconds": 9,
-      "narration": "La energía solar necesita Sol. La eólica necesita viento. Pero ¿qué pasa cuando ambos escasean al mismo tiempo?",
-      "on_screen_text": "¿Y si faltan ambos?",
-      "visual_description": "Aerogeneradores quietos bajo cielo velado y paneles con luz débil; composición dividida que converge.",
-      "image_prompt": "Russian constructivist propaganda photomontage, red and black on aged paper, bold diagonals, stencil shapes, grainy halftone photo, vertical 9:16, no text. Aerogeneradores quietos bajo cielo velado y paneles con luz débil; composición dividida que converge.. No text, no lettering.",
-      "ambiente": "silencio",
-      "sfx": [
-        "viento"
-      ],
-      "source_ids": [
-        "SRC-001"
-      ],
-      "style_id": "constructivista_ruso",
-      "asset_filename": "frames/scene_001.jpg",
-      "asset_type": "image",
-      "motion": "kenburns_auto",
-      "animated_hook": false,
-      "image_origen": "Generada con IA para este paquete; ilustración editorial, no fotografía ni imagen documental."
-    },
-    {
-      "id": "scene_002",
-      "arc": "desarrollo",
-      "duration_seconds": 10,
-      "narration": "A esa coincidencia se le llama sequía energética renovable compuesta: un periodo en que la generación potencial del viento y del Sol cae simultáneamente.",
-      "on_screen_text": "Sequía renovable compuesta",
-      "visual_description": "Sol y turbina con indicadores de generación potencial descendiendo al mismo tiempo.",
-      "image_prompt": "Russian constructivist propaganda photomontage, red and black on aged paper, bold diagonals, stencil shapes, grainy halftone photo, vertical 9:16, no text. Sol y turbina con indicadores de generación potencial descendiendo al mismo tiempo.. No text, no lettering.",
-      "ambiente": "silencio",
-      "sfx": [
-        "viento"
-      ],
-      "source_ids": [
-        "SRC-001"
-      ],
-      "style_id": "constructivista_ruso",
-      "asset_filename": "frames/scene_002.jpg",
-      "asset_type": "image",
-      "motion": "kenburns_auto",
-      "animated_hook": false,
-      "image_origen": "Generada con IA para este paquete; ilustración editorial, no fotografía ni imagen documental."
-    },
-    {
-      "id": "scene_003",
-      "arc": "desarrollo",
-      "duration_seconds": 10,
-      "narration": "El estudio comparó simulaciones climáticas globales para uno punto cinco, dos y tres grados de calentamiento.",
-      "on_screen_text": "1.5 · 2 · 3 °C",
-      "visual_description": "Globo con capas climáticas abstractas y tres escenarios claramente rotulados.",
-      "image_prompt": "Russian constructivist propaganda photomontage, red and black on aged paper, bold diagonals, stencil shapes, grainy halftone photo, vertical 9:16, no text. Globo con capas climáticas abstractas y tres escenarios claramente rotulados.. No text, no lettering.",
-      "ambiente": "silencio",
-      "sfx": [
-        "viento"
-      ],
-      "source_ids": [
-        "SRC-001"
-      ],
-      "style_id": "constructivista_ruso",
-      "asset_filename": "frames/scene_003.jpg",
-      "asset_type": "image",
-      "motion": "kenburns_auto",
-      "animated_hook": false,
-      "image_origen": "Generada con IA para este paquete; ilustración editorial, no fotografía ni imagen documental."
-    },
-    {
-      "id": "scene_004",
-      "arc": "desarrollo",
-      "duration_seconds": 10,
-      "narration": "En el escenario de tres grados, los cambios significativos en la duración afectarían al 69.4 por ciento de la superficie terrestre.",
-      "on_screen_text": "69.4% · duración",
-      "visual_description": "Gráfico global de área terrestre; rótulo explícito: superficie con cambio significativo en duración.",
-      "image_prompt": "Russian constructivist propaganda photomontage, red and black on aged paper, bold diagonals, stencil shapes, grainy halftone photo, vertical 9:16, no text. Gráfico global de área terrestre; rótulo explícito: superficie con cambio significativo en duración.. No text, no lettering.",
-      "ambiente": "silencio",
-      "sfx": [
-        "viento"
-      ],
-      "source_ids": [
-        "SRC-001"
-      ],
-      "style_id": "constructivista_ruso",
-      "asset_filename": "frames/scene_004.jpg",
-      "asset_type": "image",
-      "motion": "kenburns_auto",
-      "animated_hook": false,
-      "image_origen": "Generada con IA para este paquete; ilustración editorial, no fotografía ni imagen documental."
-    },
-    {
-      "id": "scene_005",
-      "arc": "desarrollo",
-      "duration_seconds": 10,
-      "narration": "Los cambios en frecuencia afectarían al 74 por ciento del área terrestre y los de intensidad al 50.2 por ciento.",
-      "on_screen_text": "74.0% frecuencia · 50.2% intensidad",
-      "visual_description": "Dos gráficos comparativos con el mismo denominador: área terrestre global; no sumar porcentajes.",
-      "image_prompt": "Russian constructivist propaganda photomontage, red and black on aged paper, bold diagonals, stencil shapes, grainy halftone photo, vertical 9:16, no text. Dos gráficos comparativos con el mismo denominador: área terrestre global; no sumar porcentajes.. No text, no lettering.",
-      "ambiente": "silencio",
-      "sfx": [
-        "viento"
-      ],
-      "source_ids": [
-        "SRC-001"
-      ],
-      "style_id": "constructivista_ruso",
-      "asset_filename": "frames/scene_005.jpg",
-      "asset_type": "image",
-      "motion": "kenburns_auto",
-      "animated_hook": false,
-      "image_origen": "Generada con IA para este paquete; ilustración editorial, no fotografía ni imagen documental."
-    },
-    {
-      "id": "scene_006",
-      "arc": "cierre_historia",
-      "duration_seconds": 10,
-      "narration": "La radiación solar aparece como el factor dominante en el aumento de la intensidad de estos episodios.",
-      "on_screen_text": "La radiación solar pesa más",
-      "visual_description": "Rayos solares atraviesan capas de nubes; esquema causal sobrio, sin datos regionales.",
-      "image_prompt": "Russian constructivist propaganda photomontage, red and black on aged paper, bold diagonals, stencil shapes, grainy halftone photo, vertical 9:16, no text. Rayos solares atraviesan capas de nubes; esquema causal sobrio, sin datos regionales.. No text, no lettering.",
-      "ambiente": "silencio",
-      "sfx": [
-        "viento"
-      ],
-      "source_ids": [
-        "SRC-001"
-      ],
-      "style_id": "constructivista_ruso",
-      "asset_filename": "frames/scene_006.jpg",
-      "asset_type": "image",
-      "motion": "kenburns_auto",
-      "animated_hook": false,
-      "image_origen": "Generada con IA para este paquete; ilustración editorial, no fotografía ni imagen documental."
-    },
-    {
-      "id": "scene_007",
-      "arc": "reflexion_o_pregunta",
-      "duration_seconds": 9,
-      "narration": "Un matiz importante: el trabajo analiza recursos climáticos simulados, no fallas de redes eléctricas. Más sequías de Sol y viento no implican apagones.",
-      "on_screen_text": "No predice apagones",
-      "visual_description": "Red eléctrica y baterías como ilustración conceptual; detener la visual antes de mostrar apagones.",
-      "image_prompt": "Russian constructivist propaganda photomontage, red and black on aged paper, bold diagonals, stencil shapes, grainy halftone photo, vertical 9:16, no text. Red eléctrica y baterías como ilustración conceptual; detener la visual antes de mostrar apagones.. No text, no lettering.",
-      "ambiente": "silencio",
-      "sfx": [
-        "viento"
-      ],
-      "source_ids": [
-        "SRC-001"
-      ],
-      "style_id": "constructivista_ruso",
-      "asset_filename": "frames/scene_007.jpg",
-      "asset_type": "image",
-      "motion": "kenburns_auto",
-      "animated_hook": false,
-      "image_origen": "Generada con IA para este paquete; ilustración editorial, no fotografía ni imagen documental."
-    },
-    {
-      "id": "scene_008",
-      "arc": "reflexion_o_pregunta",
-      "duration_seconds": 10,
-      "narration": "El reto no es solo producir energía limpia, sino guardarla para los días sin Sol ni viento. ¿Cómo crees que debería prepararse tu ciudad? Esto fue Datos y ociosidades.",
-      "on_screen_text": "Planear también es energía",
-      "visual_description": "Sol sobre paneles y turbinas conectados a almacenamiento; cierre editorial.",
-      "image_prompt": "Russian constructivist propaganda photomontage, red and black on aged paper, bold diagonals, stencil shapes, grainy halftone photo, vertical 9:16, no text. Sol sobre paneles y turbinas conectados a almacenamiento; cierre editorial.. No text, no lettering.",
-      "ambiente": "silencio",
-      "sfx": [
-        "viento"
-      ],
-      "source_ids": [
-        "SRC-001"
-      ],
-      "style_id": "constructivista_ruso",
-      "asset_filename": "frames/scene_008.jpg",
-      "asset_type": "image",
-      "motion": "kenburns_auto",
-      "animated_hook": false,
-      "image_origen": "Generada con IA para este paquete; ilustración editorial, no fotografía ni imagen documental."
-    }
-  ],
-  "cortinilla_fuentes": {
-    "duration_seconds": 6,
-    "titulo": "Fuentes",
-    "aviso": "Imágenes generadas con IA. Voz sintética. Música sintetizada; efectos CC0/dominio público.",
-    "firma": "Datos y ociosidades · @datosyociosidades",
-    "bg_rgb": [
-      12,
-      32,
-      47
-    ],
-    "fuentes_en_pantalla": [
-      "Aminimehr, Hellinckx & Tabari (2026), Communications Earth & Environment, doi:10.1038/s43247-026-04183-7"
-    ]
-  },
-  "audio": {
-    "music_asset": "sintetico:pizzicato",
-    "cama_musical": "pizzicato",
-    "music_lufs": -38,
-    "ambiente_lufs": -30,
-    "music_license": "Síntesis propia del pipeline scripts/cama_sonora.py; el repositorio describe la música sintetizada como obra propia. El documento de licencia de audio citado por el código no está presente en docs/; ver licencias.json.",
-    "sfx_license": "Wikimedia Commons CC0/dominio público según scripts/sfx_manifest.json; descarga y verificación final de archivos quedan para el pipeline.",
-    "music_protagonista": false
-  },
-  "export": {
-    "filename": "capsula.mp4",
-    "resolution": "1080x1920",
-    "fps": 30,
-    "video_codec": "h264",
-    "audio_codec": "aac",
-    "loudness_lufs": -14,
-    "plano_seconds": 2.5,
-    "subtitle_max_words": 3
-  },
-  "proveedor_imagenes": "Generador de imágenes IA de Grok Bot; ocho imágenes ilustrativas generadas para este paquete y ajustadas a 1080x1920.",
-  "parece_real": false,
-  "canal": {
-    "nombre": "Datos y ociosidades",
-    "handle": "@datosyociosidades",
-    "youtube_channel_id": "UCU2ZI-6pBJEr9aSFsF6bxLw"
-  },
-  "publicacion": {
-    "youtube": {
-      "privacy": "private",
-      "publishAt": "",
-      "titulo": "Cuando el viento y el Sol fallan juntos #Shorts",
-      "tags": [
-        "#Shorts",
-        "energia",
-        "sequia",
-        "ciencia",
-        "sabiasque"
-      ],
-      "synthetic_content": true
-    }
-  },
-  "estado_produccion": "MONTADO_PENDIENTE_PROGRAMAR",
-  "thumbnail_source": "scene_001"
+  "fuentes_en_pantalla": [
+   "Aminimehr, Hellinckx & Tabari (2026), Communications Earth & Environment, doi:10.1038/s43247-026-04183-7"
+  ]
+ },
+ "audio": {
+  "music_asset": "sintetico:pizzicato",
+  "cama_musical": "pizzicato",
+  "music_lufs": -38,
+  "ambiente_lufs": -30,
+  "music_license": "Síntesis propia del pipeline scripts/cama_sonora.py; el repositorio describe la música sintetizada como obra propia. El documento de licencia de audio citado por el código no está presente en docs/; ver licencias.json.",
+  "sfx_license": "Wikimedia Commons CC0/dominio público según scripts/sfx_manifest.json; descarga y verificación final de archivos quedan para el pipeline.",
+  "music_protagonista": false
+ },
+ "export": {
+  "filename": "capsula.mp4",
+  "resolution": "1080x1920",
+  "fps": 30,
+  "video_codec": "h264",
+  "audio_codec": "aac",
+  "loudness_lufs": -14,
+  "plano_seconds": 2.5,
+  "subtitle_max_words": 3
+ },
+ "proveedor_imagenes": "Generador de imágenes IA de Grok Bot; ocho imágenes ilustrativas generadas para este paquete y ajustadas a 1080x1920.",
+ "parece_real": false,
+ "canal": {
+  "nombre": "Datos y ociosidades",
+  "handle": "@datosyociosidades",
+  "youtube_channel_id": "UCU2ZI-6pBJEr9aSFsF6bxLw"
+ },
+ "publicacion": {
+  "youtube": {
+   "privacy": "private",
+   "publishAt": "",
+   "titulo": "Cuando el viento y el Sol fallan juntos #Shorts",
+   "tags": [
+    "#Shorts",
+    "energia",
+    "sequia",
+    "ciencia",
+    "sabiasque"
+   ],
+   "synthetic_content": true
+  }
+ },
+ "estado_produccion": "MONTADO_PENDIENTE_PROGRAMAR",
+ "thumbnail_source": "scene_001"
 }

@@ -1,0 +1,309 @@
+{
+  "project_id": "2026-10-28_mosquito-fruitless-audicion",
+  "serie": "Datos y ociosidades",
+  "title": "El gen que afina el oído del mosquito macho",
+  "titulo": "El mosquito que escucha",
+  "titulo_yt": "El gen que afina el oído del mosquito macho #Shorts",
+  "language": "es-MX",
+  "aspect_ratio": "9:16",
+  "target_duration_seconds": 85,
+  "audience": "Público general curioso; YouTube Shorts",
+  "estructura": "sabias_que",
+  "estilo_id": "claymation",
+  "estilo_visual": "Claymation / plastilina (propio)",
+  "trend_source": {
+    "tipo": "feed_cientifico",
+    "rss_geo": "MX",
+    "termino": "gen fruitless y audición de mosquitos Aedes aegypti",
+    "url": "https://www.itbm.nagoya-u.ac.jp/en/research/2026/10/post-124.php",
+    "fecha_consulta": "2026-10-28",
+    "puntaje": 1
+  },
+  "voice": {
+    "engine": "edge-tts",
+    "voice_id": "es-MX-JorgeNeural",
+    "rate": "+7%",
+    "pitch": "-2Hz",
+    "pad_seconds": 0.3,
+    "modo_pausas": "continuo"
+  },
+  "sources": [
+    {
+      "id": "SRC-001",
+      "cita_corta": "Loh et al. (2026). fruitless is essential for male Aedes aegypti mosquito attraction to female flight sounds. PLOS Biology.",
+      "doi": "10.1371/journal.pbio.3004041",
+      "url": "https://doi.org/10.1371/journal.pbio.3004041",
+      "accessed": "2026-10-28",
+      "published": "2026-10-27",
+      "supports": [
+        "El gen fruitless contribuye a la atracción de machos Aedes aegypti a sonidos de vuelo de hembras",
+        "Frecuencias alares aproximadas: 450 Hz para hembras y 750 Hz para machos",
+        "El órgano de Johnston participa en la detección auditiva",
+        "La respuesta neuronal de machos mutantes fue aproximadamente una sexta parte de la de machos normales",
+        "La mutación alteró la sensibilidad auditiva y la capacidad de localizar hembras"
+      ]
+    },
+    {
+      "id": "SRC-002",
+      "cita_corta": "Institute of Transformative Bio-Molecules, Nagoya University (2026-10-28). Why male mosquitoes are attracted to the sound of female wingbeats.",
+      "url": "https://www.itbm.nagoya-u.ac.jp/en/research/2026/10/post-124.php",
+      "accessed": "2026-10-28",
+      "supports": [
+        "Fecha de publicación y resumen institucional del estudio",
+        "Frecuencias alares aproximadas de 450 Hz y 750 Hz",
+        "Función del órgano de Johnston y efecto de la mutación fruitless",
+        "Respuesta neuronal de una sexta parte en machos mutantes"
+      ]
+    },
+    {
+      "id": "SRC-003",
+      "cita_corta": "Institute of Transformative Bio-Molecules, Nagoya University. Access map.",
+      "url": "https://www.itbm.nagoya-u.ac.jp/en/access/",
+      "accessed": "2026-10-28",
+      "supports": [
+        "Ubicación institucional del equipo en Nagoya, Japón; punto cartográfico aproximado a escala de ciudad"
+      ]
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_001",
+      "arc": "hook_medias_res",
+      "duration_seconds": 8,
+      "narration": "Un mosquito macho cambia de rumbo al oír unas alas. No ve a la hembra todavía: sigue una vibración casi imperceptible.",
+      "on_screen_text": "El mosquito que escucha",
+      "visual_description": "Primer plano de un mosquito macho que vira siguiendo a una hembra al anochecer; el enjambre aparece desenfocado detrás.",
+      "image_prompt": "claymation stop-motion scene, plasticine characters and set with visible fingerprints, soft studio lighting, miniature handmade props, vertical 9:16, no text + A male Aedes aegypti turns sharply toward the sound of a female's wingbeats over a tiny marsh at sunset; other mosquitoes are soft silhouettes in the background, dramatic in-medias-res action, tactile handmade clay, no text.",
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "asset_filename": "frames/scene_001.jpg",
+      "asset_type": "image",
+      "motion": "kenburns_auto",
+      "ambiente": "viento",
+      "sfx": []
+    },
+    {
+      "id": "scene_002",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "Al anochecer, los machos de Aedes aegypti se reúnen en enjambres. Cuando una hembra entra, su batido de alas puede delatarla.",
+      "on_screen_text": "La cita del crepúsculo",
+      "visual_description": "Enjambre de mosquitos sobre un humedal en miniatura al crepúsculo. Capa de mapa ubica Nagoya, Japón, sede del equipo investigador.",
+      "image_prompt": "claymation stop-motion scene, plasticine characters and set with visible fingerprints, soft studio lighting, miniature handmade props, vertical 9:16, no text + A small group of male mosquitoes gathers over a marsh at dusk as a female enters the swarm; reeds, water and a tiny campus-like skyline in the far background, leave the upper middle uncluttered for a separate map overlay, no text.",
+      "source_ids": [
+        "SRC-001",
+        "SRC-002",
+        "SRC-003"
+      ],
+      "asset_filename": "frames/scene_002.jpg",
+      "asset_type": "image",
+      "motion": "kenburns_auto",
+      "ambiente": "viento",
+      "sfx": [],
+      "capa": {
+        "tipo": "mapa",
+        "region": [
+          128,
+          143,
+          30,
+          42
+        ],
+        "titulo": "Nagoya, Japón: sede del equipo",
+        "puntos": [
+          {
+            "nombre": "Nagoya",
+            "lon": 136.964,
+            "lat": 35.154
+          }
+        ],
+        "fuente": "Nagoya University ITbM; coordenada aproximada de la ciudad"
+      }
+    },
+    {
+      "id": "scene_003",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "Las alas no suenan igual: la hembra ronda los 450 hercios y el macho cerca de 750. Son valores aproximados, no un silbido perfecto.",
+      "on_screen_text": "450 Hz / 750 Hz",
+      "visual_description": "Dos mosquitos enfrentados con vibraciones de distinta frecuencia; una capa gráfica compara los valores aproximados reportados para hembra y macho.",
+      "image_prompt": "claymation stop-motion scene, plasticine characters and set with visible fingerprints, soft studio lighting, miniature handmade props, vertical 9:16, no text + Two stylized mosquitoes hover face to face, one with subtle wing vibration arcs and one with stronger feathered antennae; warm sunset, shallow focus, clear negative space for a separately rendered scientific chart, no text or numerals.",
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "asset_filename": "frames/scene_003.jpg",
+      "asset_type": "image",
+      "motion": "kenburns_auto",
+      "ambiente": "viento",
+      "sfx": [],
+      "capa": {
+        "tipo": "grafico",
+        "x": [
+          "Hembra",
+          "Macho"
+        ],
+        "y": [
+          450,
+          750
+        ],
+        "titulo": "Frecuencia alar aproximada",
+        "unidad": "Hz",
+        "fuente": "Loh et al., PLOS Biology (2026); comunicado ITbM, Nagoya University"
+      }
+    },
+    {
+      "id": "scene_004",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "La antena funciona como receptor. Sus vibraciones llegan al órgano de Johnston, situado en la base, y activan neuronas auditivas.",
+      "on_screen_text": "La antena es su oído",
+      "visual_description": "Macro anatómico estilizado de la antena y el órgano de Johnston en su base; ondas mecánicas llegan al tejido sensorial.",
+      "image_prompt": "claymation stop-motion scene, plasticine characters and set with visible fingerprints, soft studio lighting, miniature handmade props, vertical 9:16, no text + Extreme macro cutaway of a mosquito head and antenna base, showing the Johnston's organ as a miniature sculpted sensory structure with branching neural fibers and small vibration arcs; scientifically illustrative rather than a literal micrograph, no text.",
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "asset_filename": "frames/scene_004.jpg",
+      "asset_type": "image",
+      "motion": "kenburns_auto",
+      "ambiente": "viento",
+      "sfx": []
+    },
+    {
+      "id": "scene_005",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "El estudio, publicado el 27 de octubre, encontró que el gen fruitless ayuda a establecer ese sistema auditivo masculino y su sensibilidad al sonido femenino.",
+      "on_screen_text": "El gen fruitless",
+      "visual_description": "Un modelo de ADN de plastilina conecta visualmente el órgano sensorial con una red neuronal; es una metáfora visual, no una imagen literal del gen.",
+      "image_prompt": "claymation stop-motion scene, plasticine characters and set with visible fingerprints, soft studio lighting, miniature handmade props, vertical 9:16, no text + A handmade DNA double helix in blue, orange and cream connects by glowing golden neural threads to a stylized mosquito antenna and sensory organ; metaphorical science illustration, no letters, no labels, no text.",
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "asset_filename": "frames/scene_005.jpg",
+      "asset_type": "image",
+      "motion": "kenburns_auto",
+      "ambiente": "viento",
+      "sfx": []
+    },
+    {
+      "id": "scene_006",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "Cuando los investigadores alteraron ese gen, la respuesta neuronal cayó a una sexta parte de la normal. Los machos mutantes no respondieron a las frecuencias probadas.",
+      "on_screen_text": "Una respuesta seis veces menor",
+      "visual_description": "Comparación visual entre un mosquito de respuesta sensorial normal y un macho mutante con señal neuronal reducida; capa de dato cuantifica el resultado.",
+      "image_prompt": "claymation stop-motion scene, plasticine characters and set with visible fingerprints, soft studio lighting, miniature handmade props, vertical 9:16, no text + A split-screen handcrafted clay diorama compares a normal male mosquito with bright neural signal arcs and a mutant male with much fainter arcs; balanced composition, clear central divider, no numbers or text.",
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "asset_filename": "frames/scene_006.jpg",
+      "asset_type": "image",
+      "motion": "kenburns_auto",
+      "ambiente": "viento",
+      "sfx": [],
+      "capa": {
+        "tipo": "dato",
+        "valor": "1/6",
+        "etiqueta": "respuesta neuronal en machos mutantes",
+        "fuente": "Loh et al., PLOS Biology (2026); comunicado ITbM, Nagoya University"
+      }
+    },
+    {
+      "id": "scene_007",
+      "arc": "cierre_historia",
+      "duration_seconds": 10,
+      "narration": "Además, la sensibilidad máxima del oído se desplazó por encima de la frecuencia de las alas femeninas. Los machos mutantes dejaron de localizar a las hembras.",
+      "on_screen_text": "Sin la señal, no encuentra",
+      "visual_description": "Un macho mutante permanece separado mientras una hembra cruza el humedal; las ondas de sonido no activan su órgano auditivo.",
+      "image_prompt": "claymation stop-motion scene, plasticine characters and set with visible fingerprints, soft studio lighting, miniature handmade props, vertical 9:16, no text + A mutant male mosquito remains on a lily pad while a female flies farther away across a miniature pond; faint, misaligned vibration arcs fade before reaching the male's antenna, sunset and handcrafted clay textures, no text.",
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "asset_filename": "frames/scene_007.jpg",
+      "asset_type": "image",
+      "motion": "kenburns_auto",
+      "ambiente": "viento",
+      "sfx": []
+    },
+    {
+      "id": "scene_008",
+      "arc": "reflexion_o_pregunta",
+      "duration_seconds": 11,
+      "narration": "No es todavía un método listo para controlar mosquitos: es una pista sobre cómo un gen organiza un sentido. ¿Cuánto del comportamiento depende de escuchar bien? Esto fue Datos y ociosidades.",
+      "on_screen_text": "¿Qué organiza un sentido?",
+      "visual_description": "Plano amplio y contemplativo del humedal; un mosquito sigue una senda de ondas sobre el agua hacia el horizonte.",
+      "image_prompt": "claymation stop-motion scene, plasticine characters and set with visible fingerprints, soft studio lighting, miniature handmade props, vertical 9:16, no text + A wide miniature marsh at sunset, a male mosquito on a lily pad in the foreground and a distant female above a glowing ripple trail across teal water; calm reflective closing image, visible handmade clay texture, no text.",
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "asset_filename": "frames/scene_008.jpg",
+      "asset_type": "image",
+      "motion": "kenburns_auto",
+      "ambiente": "viento",
+      "sfx": []
+    }
+  ],
+  "cortinilla_fuentes": {
+    "duration_seconds": 6,
+    "titulo": "Fuentes",
+    "aviso": "Imágenes generadas con IA. Voz sintética. Música sintetizada.",
+    "firma": "Datos y ociosidades · @datosyociosidades",
+    "fuentes_visibles": [
+      "Loh et al. · PLOS Biology (2026)",
+      "DOI: 10.1371/journal.pbio.3004041",
+      "Nagoya University · ITbM"
+    ],
+    "bg_rgb": [
+      18,
+      16,
+      14
+    ]
+  },
+  "audio": {
+    "music_asset": "sintetico:pizzicato",
+    "cama_musical": "pizzicato",
+    "music_lufs": -27,
+    "ambiente_lufs": -28,
+    "music_license": "Cama sintética propia prevista mediante scripts/cama_sonora.py; archivo no generado en esta sesión.",
+    "sfx_license": "No se usaron SFX de terceros; el manifiesto del proyecto no contiene un efecto específico de mosquito.",
+    "music_volume": 0.22
+  },
+  "export": {
+    "filename": "capsula.mp4",
+    "resolution": "1080x1920",
+    "fps": 30,
+    "subtitle_max_words": 3,
+    "loudness_lufs": -14
+  },
+  "publicacion": {
+    "youtube": {
+      "privacy": "private",
+      "publishAt": "",
+      "titulo": "El gen que afina el oído del mosquito macho #Shorts",
+      "descripcion_con_fuentes": "Un estudio publicado en PLOS Biology investiga cómo el gen fruitless contribuye a la audición de los machos de Aedes aegypti. DOI: https://doi.org/10.1371/journal.pbio.3004041. Imágenes generadas con IA; voz y música sintéticas previstas.",
+      "tags": [
+        "#Shorts",
+        "mosquitos",
+        "ciencia",
+        "biología"
+      ],
+      "synthetic_content": true
+    },
+    "tiktok": {
+      "modo": "draft_inbox",
+      "is_aigc": true,
+      "caption": "El oído de un mosquito depende de más que sus antenas: también de un gen. Estudio en PLOS Biology (2026)."
+    }
+  },
+  "canal": "Datos y ociosidades",
+  "origen": "externa",
+  "proveedor_imagenes": "OpenAI ImageGen; generación manual fuera del pipeline oficial",
+  "estado": "BORRADOR_SIN_RENDER"
+}
