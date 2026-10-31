@@ -84,12 +84,21 @@ def github_search(query: str) -> list[dict]:
         print(f"AVISO: búsqueda GitHub falló para {query!r}: {exc}", file=sys.stderr)
         return []
 
-def classify(repo: dict) -> list[str]:
-    text = " ".join([
-        repo.get("name") or "",
-        repo.get("description") or "",
-        " ".join(repo.get("topics") or []),
-    ]).lower()
+VIDEO_TERMS = (
+    "text-to-video", "text to video", "t2v", "image-to-video", "image to video",
+    "i2v", "video-to-video", "video to video", "video editing", "video edit",
+    "video generation", "video diffusion", "video model", "seedance", "kling",
+    "runway", "veo", "sora", "wan2", "wan 2", "wan3", "minimax", "hailuo",
+    "cogvideo", "ltx-video", "ltx video", "vidu", "pika", "gen-4", "gen4",
+    "flux video", "comfyui video", "video workflow", "video inference",
+)
+
+def classify(repo: dict) -> tuple[list[str], list[str], int]:
+    name = repo.get("name") or ""
+    description = repo.get("description") or ""
+    topics = " ".join(repo.get("topics") or [])
+    text = " ".join([name, description, topics]).lower()
+    matched = [term for term in VIDEO_TERMS if term in text]
     tags = []
     if any(x in text for x in ("api", "sdk", "endpoint", "client")):
         tags.append("integración/API probable")
@@ -97,13 +106,15 @@ def classify(repo: dict) -> list[str]:
         tags.append("texto a video")
     if any(x in text for x in ("image-to-video", "image to video", "i2v")):
         tags.append("imagen a video")
+    if any(x in text for x in ("video-to-video", "video to video", "video edit", "video editing")):
+        tags.append("edición de video")
     if any(x in text for x in ("comfyui", "workflow", "node")):
         tags.append("workflow/interfaz")
     if any(x in text for x in ("open source", "opensource", "weights", "diffusers")):
         tags.append("modelo/código abierto probable")
     if not tags:
         tags.append("candidato por revisar")
-    return tags
+    return tags, matched, len(matched)
 
 def main() -> int:
     OUT.mkdir(parents=True, exist_ok=True)
@@ -112,6 +123,9 @@ def main() -> int:
         for item in github_search(query):
             full_name = item.get("full_name")
             if not full_name:
+                continue
+            tags, matched_terms, relevance_score = classify(item)
+            if relevance_score < 1:
                 continue
             found[full_name] = {
                 "repository": full_name,
@@ -126,7 +140,9 @@ def main() -> int:
                 "pushed_at": item.get("pushed_at"),
                 "archived": item.get("archived", False),
                 "topics": item.get("topics", []),
-                "candidate_tags": classify(item),
+                "candidate_tags": tags,
+                "matched_terms": matched_terms,
+                "relevance_score": relevance_score,
                 "verification_status": "PENDIENTE: revisar README, licencia, código, demos y requisitos",
             }
         time.sleep(1)
@@ -144,6 +160,8 @@ def main() -> int:
             "No se ejecuta código de terceros ni se consumen créditos.",
         ],
         "provider_documentation_candidates": PROVIDER_DOCS,
+        "candidate_count": len(repos),
+        "returned_count": min(len(repos), 100),
         "repositories": repos[:100],
     }
     json_path = OUT / "catalogo_actual.json"
@@ -169,14 +187,15 @@ def main() -> int:
         lines.append("No se obtuvieron resultados. Revisar cuota o disponibilidad de GitHub Search API.")
     else:
         lines += [
-            "| Repositorio | Estrellas | Última actualización | Licencia declarada | Clasificación |",
-            "|---|---:|---|---|---|",
+            "| Repositorio | Estrellas | Última actualización | Licencia declarada | Clasificación | Evidencia |",
+            "|---|---:|---|---|---|---|",
         ]
         for r in repos[:100]:
             license_name = r["license"] or "No declarada"
             tags = ", ".join(r["candidate_tags"])
+            evidence = ", ".join(r.get("matched_terms", []))
             lines.append(
-                f"| [{r['repository']}]({r['url']}) | {r['stars']} | {r['pushed_at'] or 'N/D'} | {license_name} | {tags} |"
+                f"| [{r['repository']}]({r['url']}) | {r['stars']} | {r['pushed_at'] or 'N/D'} | {license_name} | {tags} | {evidence} |"
             )
     lines += [
         "",
@@ -202,7 +221,7 @@ def main() -> int:
         "- Los campos no verificados permanecen explícitamente pendientes.",
     ]
     md_path.write_text("\n".join(lines) + "\n", encoding="utf-8")
-    print(f"Repositorios candidatos: {len(repos)}")
+    print(f"Candidatos relevantes: {len(repos)}; incluidos en catálogo: {min(len(repos), 100)}")
     print(f"JSON: {json_path.relative_to(ROOT)}")
     print(f"Markdown: {md_path.relative_to(ROOT)}")
     return 0
