@@ -19,7 +19,16 @@
     "termino": "pardelas pichonetas jet lag reloj interno brújula solar",
     "fecha_consulta": "2026-10-31",
     "google_trends_match": false,
-    "puntaje": null
+    "puntaje": 8,
+    "crossref_verification": {
+      "status": "ok",
+      "endpoint": "https://api.crossref.org/works/10.1126/science.adz2542",
+      "doi_match": true,
+      "title_match": true,
+      "record_created": "2026-10-29",
+      "verified_at": "2026-10-31",
+      "note": "El registro bibliográfico confirma el DOI y el título. El texto completo de Science respondió HTTP 403; las cifras y detalles narrativos se contrastan con el comunicado oficial de Oxford."
+    }
   },
   "editorial_status": "Propuesta textual para evaluación de Grok. No autoriza generación audiovisual ni publicación.",
   "arco": {
@@ -72,7 +81,9 @@
         "Los datos GPS muestran desviaciones sistemáticas compatibles con los errores predichos por el desfase del reloj interno.",
         "La brújula solar sigue influyendo durante vuelos junto a la costa."
       ],
-      "ref_display": "Lewin et al. · Science · 2026"
+      "ref_display": "Lewin et al. · Science · 2026",
+      "crossref_record_url": "https://api.crossref.org/works/10.1126/science.adz2542",
+      "verification_status": "Crossref REST: status=ok; DOI y título coinciden; registro creado 2026-10-29."
     },
     {
       "id": "SRC-002",
@@ -83,9 +94,12 @@
         "20 años de GPS de 1,045 pardelas y 3,688 viajes de alimentación.",
         "Los relojes internos pueden quedar retrasados hasta alrededor de una hora frente al tiempo solar local.",
         "Las desviaciones de orientación llegaron aproximadamente a 15 grados.",
-        "Los investigadores estiman que las aves adultas corrigen su rumbo; no se han demostrado efectos equivalentes al jet lag humano sobre su salud."
+        "Los investigadores estiman que las aves adultas corrigen su rumbo; no se han demostrado efectos equivalentes al jet lag humano sobre su salud.",
+        "Con un error medio de 7 grados y corrección continua, el modelo estima unos 5 km adicionales en un regreso desde 1,000 km; es un ejemplo modelado, no una medida universal."
       ],
-      "ref_display": "University of Oxford · comunicado de investigación"
+      "ref_display": "University of Oxford · comunicado de investigación",
+      "publication_date": "2026-10-30",
+      "source_type": "Comunicado institucional del equipo investigador"
     },
     {
       "id": "SRC-003",
@@ -95,7 +109,8 @@
       "supports": [
         "Skomer es una isla de Pembrokeshire, Gales, con una colonia importante de pardelas pichonetas."
       ],
-      "ref_display": "Pembrokeshire Coast National Park"
+      "ref_display": "Pembrokeshire Coast National Park",
+      "source_type": "Parque nacional / contexto de colonia"
     },
     {
       "id": "SRC-004",
@@ -103,9 +118,11 @@
       "url": "https://www.getty.edu/vow/TGNFullDisplay?english=Y&find=midway&nation=&place=atoll&subjectid=1009194",
       "accessed": "2026-10-31",
       "supports": [
-        "Coordenadas cartográficas de Skomer Island: 51.7375 N, -5.2967 W."
+        "Coordenadas cartográficas de Skomer Island: 51.7375 N, -5.2967 W.",
+        "La ficha TGN 1009194 identifica el punto como Skomer Island, isla de Pembrokeshire, Gales."
       ],
-      "ref_display": "Getty Research Institute · coordenadas"
+      "ref_display": "Getty Research Institute · coordenadas",
+      "source_type": "Getty TGN / coordenadas geográficas"
     }
   ],
   "scenes": [
@@ -128,7 +145,10 @@
       "source_ids": [
         "SRC-001",
         "SRC-002"
-      ]
+      ],
+      "style_id": "papel_rasgado_capas",
+      "text_language": "es-MX",
+      "voice_id": "es-MX-JorgeNeural"
     },
     {
       "id": "scene_002",
@@ -149,7 +169,10 @@
         "SRC-001",
         "SRC-002",
         "SRC-003"
-      ]
+      ],
+      "style_id": "papel_rasgado_capas",
+      "text_language": "es-MX",
+      "voice_id": "es-MX-JorgeNeural"
     },
     {
       "id": "scene_003",
@@ -169,7 +192,10 @@
       "source_ids": [
         "SRC-001",
         "SRC-002"
-      ]
+      ],
+      "style_id": "papel_rasgado_capas",
+      "text_language": "es-MX",
+      "voice_id": "es-MX-JorgeNeural"
     },
     {
       "id": "scene_004",
@@ -188,8 +214,32 @@
       ],
       "source_ids": [
         "SRC-001",
-        "SRC-002"
-      ]
+        "SRC-002",
+        "SRC-003",
+        "SRC-004"
+      ],
+      "style_id": "papel_rasgado_capas",
+      "text_language": "es-MX",
+      "voice_id": "es-MX-JorgeNeural",
+      "capa": {
+        "tipo": "mapa",
+        "region": [
+          -12,
+          0,
+          48,
+          57
+        ],
+        "puntos": [
+          {
+            "nombre": "Skomer Island · punto geográfico de referencia",
+            "lon": -5.2967,
+            "lat": 51.7375
+          }
+        ],
+        "titulo": "Skomer · Pembrokeshire, Gales",
+        "fuente": "Getty Research Institute, TGN 1009194; Pembrokeshire Coast National Park",
+        "nota": "El pin ubica una colonia conocida y sirve como contexto geográfico. No representa la ruta GPS de un ave ni la ubicación de todos los individuos del estudio."
+      }
     },
     {
       "id": "scene_005",
@@ -215,7 +265,10 @@
       "source_ids": [
         "SRC-001",
         "SRC-002"
-      ]
+      ],
+      "style_id": "papel_rasgado_capas",
+      "text_language": "es-MX",
+      "voice_id": "es-MX-JorgeNeural"
     },
     {
       "id": "scene_006",
@@ -241,7 +294,10 @@
       "source_ids": [
         "SRC-001",
         "SRC-002"
-      ]
+      ],
+      "style_id": "papel_rasgado_capas",
+      "text_language": "es-MX",
+      "voice_id": "es-MX-JorgeNeural"
     },
     {
       "id": "scene_007",
@@ -261,7 +317,10 @@
       "source_ids": [
         "SRC-001",
         "SRC-002"
-      ]
+      ],
+      "style_id": "papel_rasgado_capas",
+      "text_language": "es-MX",
+      "voice_id": "es-MX-JorgeNeural"
     },
     {
       "id": "scene_008",
@@ -281,14 +340,21 @@
       "source_ids": [
         "SRC-001",
         "SRC-002"
-      ]
+      ],
+      "style_id": "papel_rasgado_capas",
+      "text_language": "es-MX",
+      "voice_id": "es-MX-JorgeNeural"
     }
   ],
   "cortinilla_fuentes": {
     "duration_seconds": 6,
     "titulo": "Fuentes",
     "aviso": "Imágenes generadas con IA. Voz sintética. Audio sintetizado.",
-    "firma": "Datos y ociosidades · @datosyociosidades"
+    "firma": "Datos y ociosidades · @datosyociosidades",
+    "source_ids": [
+      "SRC-001",
+      "SRC-002"
+    ]
   },
   "audio": {
     "music_asset": "",
@@ -325,10 +391,65 @@
   "estado": "BORRADOR",
   "production_mode": "storyboard_only_no_frames",
   "validation_notes": {
+    "narration_word_count": 218,
     "narration_word_count_estimate": 218,
     "planned_duration_including_sources_seconds": 84,
-    "doi_status": "DOI identificado en el registro bibliográfico de Science/AAAS y comunicado de Oxford; la página de Science bloqueó acceso automatizado (403).",
-    "rotation_status": "data/rotacion.json y data/temas_del_dia.json disponibles solo hasta 2026-10-28; no se modificaron. Estructura y estilo elegidos con la última rotación visible; falta cotejo con las ejecuciones del 29-31 oct.",
-    "editorial_review": "Pendiente de Grok: validar selección editorial, assets, rotación completa y QA audiovisual."
-  }
+    "scene_duration_total_seconds": 78,
+    "sources_slate_seconds": 6,
+    "crossref_status": "Crossref REST devolvió status=ok y coincidencia de DOI/título para 10.1126/science.adz2542; registro creado 2026-10-29. El texto completo de Science respondió HTTP 403.",
+    "map_status": "Capa mapa agregada con coordenadas Getty TGN 1009194 (51.7375, -5.2967); el punto es contexto, no trayectoria GPS.",
+    "structural_status": "Comprobación estructural de esta ejecución: 8 escenas; arcos requeridos presentes; 218 palabras; duración 84 s con cortinilla; prompts empiezan con prompt_base exacto; source_ids resolubles; capas mapa y dato presentes. No equivale al QA oficial de Grok.",
+    "rotation_status": "data/rotacion.json, data/temas_del_dia.json y data/publicaciones.json llegan hasta 2026-10-28. No se modificaron. La unicidad de estructura/estilo frente a cápsulas del 29-31 no puede certificarse con esos registros.",
+    "editorial_review": "Pendiente de Grok: cotejar rotación completa, aceptar/rechazar, generar assets, ejecutar QA oficial y decidir publicación."
+  },
+  "linea_editorial_provisional": "Naturaleza / bichos · Actualidad científica · Comportamiento animal",
+  "approved_assets": [
+    {
+      "filename": "frames/scene_001.png",
+      "status": "pendiente_generacion_por_grok",
+      "role": "Frame scene_001; imagen vertical 9:16 sin texto integrado. No existe todavía."
+    },
+    {
+      "filename": "frames/scene_002.png",
+      "status": "pendiente_generacion_por_grok",
+      "role": "Frame scene_002; imagen vertical 9:16 sin texto integrado. No existe todavía."
+    },
+    {
+      "filename": "frames/scene_003.png",
+      "status": "pendiente_generacion_por_grok",
+      "role": "Frame scene_003; imagen vertical 9:16 sin texto integrado. No existe todavía."
+    },
+    {
+      "filename": "frames/scene_004.png",
+      "status": "pendiente_generacion_por_grok",
+      "role": "Frame scene_004; imagen vertical 9:16 sin texto integrado. No existe todavía."
+    },
+    {
+      "filename": "frames/scene_005.png",
+      "status": "pendiente_generacion_por_grok",
+      "role": "Frame scene_005; imagen vertical 9:16 sin texto integrado. No existe todavía."
+    },
+    {
+      "filename": "frames/scene_006.png",
+      "status": "pendiente_generacion_por_grok",
+      "role": "Frame scene_006; imagen vertical 9:16 sin texto integrado. No existe todavía."
+    },
+    {
+      "filename": "frames/scene_007.png",
+      "status": "pendiente_generacion_por_grok",
+      "role": "Frame scene_007; imagen vertical 9:16 sin texto integrado. No existe todavía."
+    },
+    {
+      "filename": "frames/scene_008.png",
+      "status": "pendiente_generacion_por_grok",
+      "role": "Frame scene_008; imagen vertical 9:16 sin texto integrado. No existe todavía."
+    }
+  ],
+  "risk_notes": [
+    "«Jet lag» es una analogía para el desfase entre reloj interno y hora solar local; no implica que las aves presenten todos los síntomas humanos.",
+    "La desviación de hasta aproximadamente 15 grados corresponde a los ejemplares y vuelos estudiados; no es un valor universal para todas las aves.",
+    "El ejemplo de unos 5 km adicionales solo aplica al modelo de un regreso desde 1,000 km, error medio de 7 grados y corrección continua; no se presenta como distancia medida en todos los vuelos.",
+    "El pin de Skomer es contexto geográfico de una colonia conocida, no la ruta GPS de un ave ni la ubicación de todos los individuos analizados.",
+    "No atribuir efectos demostrados sobre salud, sueño o supervivencia: Oxford señala que hacen falta más estudios."
+  ]
 }
