@@ -142,3 +142,6 @@ La investigación oficial confirma dos rutas API viables:
 - Las llamadas de generación/edición son facturables y están excluidas del CI. La CI solo compila, migra y valida storyboards, descubre candidatos y audita archivos; no consume saldo de proveedores.
 
 La prueba de migración se ejecuta sobre `salidas/2026-10-29_muralismo-cu/storyboard.json` en una copia temporal. El original no se modifica. El workflow genera un artefacto con el resultado del validador y la auditoría de presencia de frames/capas. Un PASS estructural no equivale a revisión audiovisual: para esa revisión deben estar disponibles todos los frames o el MP4 final.
+
+
+Guía de activación de credenciales desde Android: `docs/CONFIGURAR_APIS_DESDE_ANDROID.md`. Las claves se guardan como Repository Secrets; no se solicitan por chat ni se incluyen en los archivos del proyecto.
