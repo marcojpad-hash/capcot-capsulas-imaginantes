@@ -73,7 +73,7 @@
     {
       "id": "scene_001",
       "arc": "hook_medias_res",
-      "duration_seconds": 9,
+      "duration_seconds": 10,
       "narration": "Narración completa de esta escena.",
       "on_screen_text": "Gancho corto",
       "visual_description": "Descripción visual concreta",
@@ -88,7 +88,7 @@
     {
       "id": "scene_002",
       "arc": "desarrollo",
-      "duration_seconds": 10,
+      "duration_seconds": 12,
       "narration": "Afirmación respaldada por fuente.",
       "on_screen_text": "Etiqueta breve",
       "visual_description": "Descripción visual concreta",
@@ -115,7 +115,7 @@
     {
       "id": "scene_003",
       "arc": "desarrollo",
-      "duration_seconds": 10,
+      "duration_seconds": 12,
       "narration": "Dato o mecanismo con fuente.",
       "on_screen_text": "Dato breve",
       "visual_description": "Descripción visual concreta",
@@ -136,7 +136,7 @@
     {
       "id": "scene_004",
       "arc": "desarrollo",
-      "duration_seconds": 10,
+      "duration_seconds": 12,
       "narration": "Continuación de la explicación.",
       "on_screen_text": "Texto breve",
       "visual_description": "Descripción visual concreta",
@@ -151,7 +151,7 @@
     {
       "id": "scene_005",
       "arc": "desarrollo",
-      "duration_seconds": 10,
+      "duration_seconds": 12,
       "narration": "Evidencia o matiz relevante.",
       "on_screen_text": "Texto breve",
       "visual_description": "Descripción visual concreta",
@@ -181,7 +181,7 @@
     {
       "id": "scene_007",
       "arc": "reflexion_o_pregunta",
-      "duration_seconds": 9,
+      "duration_seconds": 10,
       "narration": "Reflexión final. Esto fue Datos y ociosidades.",
       "on_screen_text": "Cierre breve",
       "visual_description": "Descripción visual concreta",
