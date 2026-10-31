@@ -40,6 +40,13 @@ Estado: integración preparada en código; credenciales y pruebas de generación
 - Es un modelo de Bria accesible desde Runway Dev, no un modelo propio de Runway.
 - Runway Dev también ofrece otros modelos de imagen de terceros; para CAPCOT las rutas directas son Krea 3 o Bria FIBO Edit 1.5.
 
+## Comparación de costo por edición
+
+- Krea 3 a 2K: USD $0.06 por imagen; una referencia añade USD $0.02 si mide hasta 1024×1024 o USD $0.07 si es mayor. Una edición 2K con un frame vertical de referencia de más de 1MP queda alrededor de USD $0.13.
+- Bria FIBO Edit 1.5 en Runway Dev: USD $0.05 por imagen (5 créditos); salida de 1MP.
+- Runway Aleph 2.0: USD $0.28 por segundo, mínimo 56 créditos por solicitud. Un clip de 10 s ronda USD $2.80; uno de 30 s, USD $8.40. Editar 75–90 s en tres segmentos ronda USD $21–$25.20, antes de posibles mínimos/ajustes.
+- Krea Seedance 2.5: la tabla pública consultada no muestra su precio individual. No usar el precio de Seedance 2.0 como sustituto.
+
 ## Decisión recomendada para CAPCOT
 
 | Trabajo | Servicio | Modelo | Uso |
