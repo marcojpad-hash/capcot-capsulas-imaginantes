@@ -1,87 +1,104 @@
 {
-  "metadatos": {
+ "metadatos": {
+  "title": "Un golpe bajo el agua #Shorts",
+  "description": "¿Cómo puede un animal pequeño romper una concha bajo el agua?\n\nUn golpe bajo el agua. Una cápsula de Datos y ociosidades: datos verificados contados como historia.\n\nFuentes:\n• Patek, S. N. & Caldwell, R. L. (2005). Extreme impact and cavitation forces of a biological hammer. Journal of Experimental Biology, 208, 3655–3664. https://doi.org/10.1242/jeb.01831\n\nImágenes generadas con IA · voz sintética · audio sintetizado.\nSuscríbete: @datosyociosidades\nTikTok: https://www.tiktok.com/@datosyociosidades\n\n#camaron #mantis #ciencia #animales #sabiasque #Shorts",
+  "tags": [
+   "camaron",
+   "mantis",
+   "ciencia",
+   "animales",
+   "sabiasque",
+   "Shorts"
+  ]
+ },
+ "resultado": {
+  "youtube": {
+   "kind": "youtube#video",
+   "etag": "BaWfkyVOfFCxDLntKYT1jxelBjk",
+   "id": "d-tYvAM8hGE",
+   "snippet": {
+    "publishedAt": "2026-10-31T21:56:26Z",
+    "channelId": "UCU2ZI-6pBJEr9aSFsF6bxLw",
     "title": "Un golpe bajo el agua #Shorts",
     "description": "¿Cómo puede un animal pequeño romper una concha bajo el agua?\n\nUn golpe bajo el agua. Una cápsula de Datos y ociosidades: datos verificados contados como historia.\n\nFuentes:\n• Patek, S. N. & Caldwell, R. L. (2005). Extreme impact and cavitation forces of a biological hammer. Journal of Experimental Biology, 208, 3655–3664. https://doi.org/10.1242/jeb.01831\n\nImágenes generadas con IA · voz sintética · audio sintetizado.\nSuscríbete: @datosyociosidades\nTikTok: https://www.tiktok.com/@datosyociosidades\n\n#camaron #mantis #ciencia #animales #sabiasque #Shorts",
+    "thumbnails": {
+     "default": {
+      "url": "https://i9.ytimg.com/vi/d-tYvAM8hGE/default.jpg?sqp=CLTHmdcG&rs=AOn4CLCzQPCUpcRPzy7NS387CiNFZMRf_w",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i9.ytimg.com/vi/d-tYvAM8hGE/mqdefault.jpg?sqp=CLTHmdcG&rs=AOn4CLCuYbzAmmkf_E0S_kbcFZhF6XpWwg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i9.ytimg.com/vi/d-tYvAM8hGE/hqdefault.jpg?sqp=CLTHmdcG&rs=AOn4CLCk7RxGTupO96Ma4C0yJv_KlJ9brw",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "Datos y ociosidades",
     "tags": [
-      "camaron",
-      "mantis",
-      "ciencia",
-      "animales",
-      "sabiasque",
-      "Shorts"
-    ]
-  },
-  "resultado": {
-    "youtube": {
-      "kind": "youtube#video",
-      "etag": "ueHUnh6Dj0KiL1bPxOuYzoFID9M",
-      "id": "tmxMkxA6nOw",
-      "snippet": {
-        "publishedAt": "2026-10-31T20:58:00Z",
-        "channelId": "UCU2ZI-6pBJEr9aSFsF6bxLw",
-        "title": "Un golpe bajo el agua #Shorts",
-        "description": "¿Cómo puede un animal pequeño romper una concha bajo el agua?\n\nUn golpe bajo el agua. Una cápsula de Datos y ociosidades: datos verificados contados como historia.\n\nFuentes:\n• Patek, S. N. & Caldwell, R. L. (2005). Extreme impact and cavitation forces of a biological hammer. Journal of Experimental Biology, 208, 3655–3664. https://doi.org/10.1242/jeb.01831\n\nImágenes generadas con IA · voz sintética · audio sintetizado.\nSuscríbete: @datosyociosidades\nTikTok: https://www.tiktok.com/@datosyociosidades\n\n#camaron #mantis #ciencia #animales #sabiasque #Shorts",
-        "thumbnails": {
-          "default": {
-            "url": "https://i9.ytimg.com/vi/tmxMkxA6nOw/default.jpg?sqp=CKSrmdcG&rs=AOn4CLDNgUqtnXgBeO0Y2d7SlcAiCYE0OA",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i9.ytimg.com/vi/tmxMkxA6nOw/mqdefault.jpg?sqp=CKSrmdcG&rs=AOn4CLBnryHhJ73bROTjgquJjvxCyO-EUw",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i9.ytimg.com/vi/tmxMkxA6nOw/hqdefault.jpg?sqp=CKSrmdcG&rs=AOn4CLB0ZPEJV62Y8xRCRdNhanXAVgr2Zw",
-            "width": 480,
-            "height": 360
-          }
-        },
-        "channelTitle": "Datos y ociosidades",
-        "tags": [
-          "Shorts",
-          "animales",
-          "camaron",
-          "ciencia",
-          "mantis",
-          "sabiasque"
-        ],
-        "categoryId": "27",
-        "liveBroadcastContent": "none",
-        "defaultLanguage": "es",
-        "localized": {
-          "title": "Un golpe bajo el agua #Shorts",
-          "description": "¿Cómo puede un animal pequeño romper una concha bajo el agua?\n\nUn golpe bajo el agua. Una cápsula de Datos y ociosidades: datos verificados contados como historia.\n\nFuentes:\n• Patek, S. N. & Caldwell, R. L. (2005). Extreme impact and cavitation forces of a biological hammer. Journal of Experimental Biology, 208, 3655–3664. https://doi.org/10.1242/jeb.01831\n\nImágenes generadas con IA · voz sintética · audio sintetizado.\nSuscríbete: @datosyociosidades\nTikTok: https://www.tiktok.com/@datosyociosidades\n\n#camaron #mantis #ciencia #animales #sabiasque #Shorts"
-        }
-      },
-      "status": {
-        "uploadStatus": "uploaded",
-        "privacyStatus": "private",
-        "publishAt": "2026-11-02T13:00:00Z",
-        "license": "youtube",
-        "embeddable": true,
-        "publicStatsViewable": true,
-        "selfDeclaredMadeForKids": false,
-        "containsSyntheticMedia": false
-      }
-    },
-    "tiktok": {
-      "estado": "programado",
-      "cuenta": "@datosyociosidades",
-      "publish_at_cdmx": "2026-11-02T07:00:00-06:00",
-      "ui_shown": "Nov 2, 8:00 AM (GMT-5)",
-      "ai_label": true,
-      "caption": "Un golpe bajo el agua.\n\nFuentes en YouTube @datosyociosidades\n\n#camaron #ciencia #animales #sabiasque",
-      "actualizado": "2026-10-31T15:11:26-06:00"
-    },
-    "facebook": {
-      "estado": "programado",
-      "pagina": "Datos y ociosidades",
-      "publish_at_cdmx": "2026-11-02T07:00:00-06:00",
-      "ui_shown": "2 Nov 2026 08:00 America/New_York",
-      "ai_label": false,
-      "actualizado": "2026-10-31T15:11:26-06:00"
+     "Shorts",
+     "animales",
+     "camaron",
+     "ciencia",
+     "mantis",
+     "sabiasque"
+    ],
+    "categoryId": "27",
+    "liveBroadcastContent": "none",
+    "defaultLanguage": "es",
+    "localized": {
+     "title": "Un golpe bajo el agua #Shorts",
+     "description": "¿Cómo puede un animal pequeño romper una concha bajo el agua?\n\nUn golpe bajo el agua. Una cápsula de Datos y ociosidades: datos verificados contados como historia.\n\nFuentes:\n• Patek, S. N. & Caldwell, R. L. (2005). Extreme impact and cavitation forces of a biological hammer. Journal of Experimental Biology, 208, 3655–3664. https://doi.org/10.1242/jeb.01831\n\nImágenes generadas con IA · voz sintética · audio sintetizado.\nSuscríbete: @datosyociosidades\nTikTok: https://www.tiktok.com/@datosyociosidades\n\n#camaron #mantis #ciencia #animales #sabiasque #Shorts"
     }
+   },
+   "status": {
+    "uploadStatus": "uploaded",
+    "privacyStatus": "private",
+    "publishAt": "2026-11-02T13:00:00Z",
+    "license": "youtube",
+    "embeddable": true,
+    "publicStatsViewable": true,
+    "selfDeclaredMadeForKids": false,
+    "containsSyntheticMedia": true
+   }
+  },
+  "tiktok": {
+   "estado": "programado",
+   "cuenta": "@datosyociosidades",
+   "publish_at_cdmx": "2026-11-02T07:00:00-06:00",
+   "ui_shown": "Nov 2, 8:00 AM (GMT-5)",
+   "ai_label": true,
+   "caption": "Un golpe bajo el agua.\n\nFuentes en YouTube @datosyociosidades\n\n#camaron #ciencia #animales #sabiasque",
+   "actualizado": "2026-10-31T15:11:26-06:00"
+  },
+  "facebook": {
+   "estado": "programado",
+   "pagina": "Datos y ociosidades",
+   "publish_at_cdmx": "2026-11-02T07:00:00-06:00",
+   "ui_shown": "2 Nov 2026 08:00 America/New_York",
+   "ai_label": false,
+   "actualizado": "2026-10-31T15:11:26-06:00"
+  },
+  "historial_youtube": [
+   {
+    "id": "tmxMkxA6nOw",
+    "estado": "SIGUE PROGRAMADO 2026-11-02T13:00:00Z — borrar a mano en Studio (token sin scope youtube)",
+    "reemplazado_por": "d-tYvAM8hGE",
+    "fecha": "2026-10-31T15:55:49-06:00"
+   }
+  ],
+  "youtube_thumbnail": {
+   "fuente": "scene_001 (gancho)",
+   "estado": "ok"
   }
+ },
+ "remontaje_cierre": {
+  "fecha": "2026-10-31T15:55:49-06:00",
+  "video": "capsula_v2.mp4",
+  "tiktok_facebook": "siguen con video viejo (pre-cierre)"
+ }
 }

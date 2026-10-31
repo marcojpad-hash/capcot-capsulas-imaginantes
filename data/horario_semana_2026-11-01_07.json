@@ -19,13 +19,16 @@
       "estado": "programado_yt_tt_fb",
       "notas": "TÍTULO: Un pulpo tiene tres corazones y sangre azul. borrador en proyectos/2026-xx_kids_pulpo-tres-corazones; fuentes sugeridas: Smithsonian Ocean, Monterey Bay Aquarium. No marcar Hecho para niños.",
       "project_id_plan": "2026-11-01_kids-pulpo-tres-corazones",
-      "yt_id": "3B1ckNUahS8",
+      "yt_id": "pxX0eGK3r98",
       "publishAt": "2026-11-01T13:00:00Z",
       "plataformas": {
         "yt": "programado",
         "tt": "programado",
         "fb": "programado"
-      }
+      },
+      "yt_id_historial": [
+        "3B1ckNUahS8"
+      ]
     },
     {
       "fecha": "2026-11-01",
@@ -35,13 +38,17 @@
       "estado": "programado_yt_tt_fb",
       "notas": "TÍTULO: Por qué la cebolla te hace llorar. química cotidiana; fuente: Imai et al. 2002 Nature (factor lacrimógeno)",
       "project_id_plan": "2026-11-01_comida-cebolla-llorar",
-      "yt_id": "Fh4KkcZr3e8",
+      "yt_id": "0WAcVgODwd8",
       "publishAt": "2026-11-01T19:30:00Z",
       "plataformas": {
         "yt": "programado",
         "tt": "programado",
         "fb": "programado"
-      }
+      },
+      "yt_id_historial": [
+        "Fh4KkcZr3e8"
+      ],
+      "yt_v2": true
     },
     {
       "fecha": "2026-11-01",
@@ -50,13 +57,17 @@
       "project_id": "2026-10-26_baffin-bay-ice-shelf",
       "estado": "programado_yt_tt_fb",
       "notas": "Sustituye corales (ya publicado 31-oct). Montar+programar YT 1-nov 17:00.",
-      "yt_id": "krh0Ll3kVjM",
+      "yt_id": "MYWsfLm_Brw",
       "publishAt": "2026-11-01T23:00:00Z",
       "plataformas": {
         "yt": "programado",
         "tt": "programado",
         "fb": "programado"
-      }
+      },
+      "yt_id_historial": [
+        "krh0Ll3kVjM"
+      ],
+      "yt_v2": true
     },
     {
       "fecha": "2026-11-01",
@@ -65,13 +76,17 @@
       "project_id": "2026-10-30_arqueas-origen-eucariotas",
       "estado": "programado_yt_tt_fb",
       "notas": "Sustituye baffin (pasa a 17:00). Preferir arqueas si storyboard OK; si no, ChatGPT.",
-      "yt_id": "i2l4BkMvHp0",
+      "yt_id": "9XflXdWDM0A",
       "publishAt": "2026-11-02T01:00:00Z",
       "plataformas": {
         "yt": "programado",
         "tt": "programado",
         "fb": "programado"
-      }
+      },
+      "yt_id_historial": [
+        "i2l4BkMvHp0"
+      ],
+      "yt_v2": true
     },
     {
       "fecha": "2026-11-01",
@@ -88,13 +103,17 @@
       "project_id": "2026-11-02_camaron-mantis",
       "estado": "programado_yt_tt_fb",
       "notas": "TÍTULO: El golpe del camarón mantis. borrador en proyectos/2026-xx_kids_camaron-mantis-punetazo; fuente: Patek & Caldwell 2005 J Exp Biol. No marcar Hecho para niños. | ChatGPT entregó paquete completo 31-oct (teatro_sombras, 8 escenas). PREPARADO_PENDIENTE_REVISION_GROK.",
-      "yt_id": "tmxMkxA6nOw",
+      "yt_id": "d-tYvAM8hGE",
       "publishAt": "2026-11-02T13:00:00Z",
       "plataformas": {
         "yt": "programado",
         "tt": "programado",
         "fb": "programado"
-      }
+      },
+      "yt_id_historial": [
+        "tmxMkxA6nOw"
+      ],
+      "yt_v2": true
     },
     {
       "fecha": "2026-11-02",
@@ -103,13 +122,17 @@
       "project_id": "2026-11-02_comida-pan-duro",
       "estado": "programado_yt_tt_fb",
       "notas": "TÍTULO: Por qué el pan se pone duro (no es que se seque). retrogradación del almidón; fuente: literatura de ciencia de alimentos (PENDING_SOURCE exacta) | ChatGPT entregó paquete 31-oct (papel_rasgado_capas, 8 escenas). PREPARADO_PENDIENTE_REVISION_GROK.",
-      "yt_id": "TbZRvpiDjdk",
+      "yt_id": "sHjf4QF9QiM",
       "publishAt": "2026-11-02T19:30:00Z",
       "plataformas": {
         "yt": "programado",
         "tt": "programado",
         "fb": "programado"
-      }
+      },
+      "yt_id_historial": [
+        "TbZRvpiDjdk"
+      ],
+      "yt_v2": true
     },
     {
       "fecha": "2026-11-02",
@@ -118,13 +141,17 @@
       "project_id": "2026-10-31_murcielagos-viroma-global",
       "estado": "programado_yt_tt_fb",
       "notas": "Cola JSON ChatGPT 31-oct. NO usar corneja (ya pub 31-oct).",
-      "yt_id": "dFwKjIb8tFI",
+      "yt_id": "6ts8TvhgKa8",
       "publishAt": "2026-11-02T23:00:00Z",
       "plataformas": {
         "yt": "programado",
         "tt": "programado",
         "fb": "programado"
-      }
+      },
+      "yt_id_historial": [
+        "dFwKjIb8tFI"
+      ],
+      "yt_v2": true
     },
     {
       "fecha": "2026-11-02",
@@ -133,13 +160,17 @@
       "project_id": "2026-10-31_sequias-energia-renovable",
       "estado": "programado_yt_tt_fb",
       "notas": "Cola JSON ChatGPT 31-oct. NO usar mosquito (ya pub 31-oct).",
-      "yt_id": "SQ7_g-vz8Ow",
+      "yt_id": "pMkzlwB-7bo",
       "publishAt": "2026-11-03T01:00:00Z",
       "plataformas": {
         "yt": "programado",
         "tt": "programado",
         "fb": "programado"
-      }
+      },
+      "yt_id_historial": [
+        "SQ7_g-vz8Ow"
+      ],
+      "yt_v2": true
     },
     {
       "fecha": "2026-11-02",
@@ -172,13 +203,17 @@
       "project_id": "2026-10-29_juno-choque-proa",
       "estado": "programado_yt_tt_fb",
       "notas": "Juno en cola; no salió 31-oct. Cubrir intermedio 3-nov.",
-      "yt_id": "73cZz8Pi9TE",
+      "yt_id": "3IiUmsRb30Y",
       "publishAt": "2026-11-03T23:00:00Z",
       "plataformas": {
         "yt": "programado",
         "tt": "programado",
         "fb": "programado"
-      }
+      },
+      "yt_id_historial": [
+        "73cZz8Pi9TE"
+      ],
+      "yt_v2": true
     },
     {
       "fecha": "2026-11-03",
@@ -187,13 +222,17 @@
       "project_id": "2026-10-31_smartpe-edicion-plantas",
       "estado": "programado_yt_tt_fb",
       "notas": "Sustituye reutilizar arqueas (ya programado 1-nov 19:00). SmartPE cola JSON.",
-      "yt_id": "MXsNOywNzcg",
+      "yt_id": "aOcqxbBhQ0E",
       "publishAt": "2026-11-04T01:00:00Z",
       "plataformas": {
         "yt": "programado",
         "tt": "programado",
         "fb": "programado"
-      }
+      },
+      "yt_id_historial": [
+        "MXsNOywNzcg"
+      ],
+      "yt_v2": true
     },
     {
       "fecha": "2026-11-03",
