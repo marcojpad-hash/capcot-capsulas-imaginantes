@@ -1,8 +1,8 @@
 {
   "fecha": "2026-10-31",
   "tipo": "endscreens_rotacion",
-  "actualizado_cdmx": "2026-10-31T11:54-06:00",
-  "motivo": "6 Shorts nuevos sin pantalla final: Titanoboa y lince → Voyager (16); pan de muerto → El Niño (632, estancado); Templo Mayor → monarca (257); monarca → Voyager; Voyager → sueño. Vistas TubeAlfred 31-oct. Resto sin cambios.",
+  "actualizado_cdmx": "2026-10-31T12:48-06:00",
+  "motivo": "Corneja ZHdJXFrURk4 (pública 07:00, sin pantalla) → monarca p4eXmoJ2f18 (257, flojo). Resto sin cambios.",
   "vistas_ref": {
     "p4eXmoJ2f18": 257,
     "OFpAg4XA3AM": 16,
@@ -57,7 +57,8 @@
     "inzztxrxYfg": "5D96DmjvioU",
     "RhiKtLt2UNQ": "p4eXmoJ2f18",
     "p4eXmoJ2f18": "OFpAg4XA3AM",
-    "OFpAg4XA3AM": "AJR6kcnnDig"
+    "OFpAg4XA3AM": "AJR6kcnnDig",
+    "ZHdJXFrURk4": "p4eXmoJ2f18"
   },
   "pendiente_studio": false,
   "nota": "Aplicado en YouTube Studio Editor > Pantalla final (video específico). Búsqueda: pegar youtube.com/watch?v=ID en 'Buscar vídeos de otros canales' (tus vídeos no lista Shorts). Sin suscripción ni tarjetas. Actualización 26-oct 19:49: la lista «Elegir un vídeo específico» ya muestra los Shorts.",
@@ -87,7 +88,8 @@
     "inzztxrxYfg": "aplicado_nuevo 31-oct 11:54 → 5D96DmjvioU",
     "RhiKtLt2UNQ": "aplicado_nuevo 31-oct 11:54 → p4eXmoJ2f18",
     "p4eXmoJ2f18": "aplicado_nuevo 31-oct 11:54 → OFpAg4XA3AM",
-    "OFpAg4XA3AM": "aplicado_nuevo 31-oct 11:54 → AJR6kcnnDig"
+    "OFpAg4XA3AM": "aplicado_nuevo 31-oct 11:54 → AJR6kcnnDig",
+    "ZHdJXFrURk4": "aplicado_nuevo 31-oct 12:48 → p4eXmoJ2f18"
   },
   "fijos": {
     "Qe2Y9xDn9QQ": "gIjJ0YKYQ8M",
