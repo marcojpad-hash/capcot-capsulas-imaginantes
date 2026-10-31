@@ -149,7 +149,7 @@
       "id": "scene_006",
       "arc": "cierre_historia",
       "duration_seconds": 10,
-      "narration": "El mecanismo tiene límites y depende de las condiciones observadas. No conviene convertir una medición particular en una regla universal.",
+      "narration": "El límite: la glucosa es una pieza importante de la protección, pero los resultados describen a esta especie y a las condiciones estudiadas.",
       "on_screen_text": "Qué sabemos",
       "visual_description": "Representación didáctica de las ranas que sobreviven congeladas, secuencia causal clara y legible",
       "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text, educational visual scene illustrating las ranas que sobreviven congeladas, consistent visual continuity",
@@ -164,7 +164,7 @@
       "id": "scene_007",
       "arc": "reflexion_o_pregunta",
       "duration_seconds": 10,
-      "narration": "Esto fue Datos y ociosidades.",
+      "narration": "Esta rana no evita el hielo: lo deja formarse afuera de sus células y se protege por dentro. ¿Qué otro animal extremo te gustaría conocer? Esto fue Datos y ociosidades.",
       "on_screen_text": "Esto fue Datos y ociosidades",
       "visual_description": "Representación didáctica de las ranas que sobreviven congeladas, secuencia causal clara y legible",
       "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text, educational visual scene illustrating las ranas que sobreviven congeladas, consistent visual continuity",
@@ -213,5 +213,6 @@
   "approved_assets": [],
   "risk_notes": [
     "Mantener límites y matices de la fuente; no generalizar más allá de la evidencia."
-  ]
+  ],
+  "thumbnail_source": "scene_001"
 }

@@ -207,7 +207,7 @@
       "id": "scene_007",
       "arc": "cierre_historia",
       "duration_seconds": 9,
-      "narration": "La intensidad depende de varios factores, entre ellos temperatura, tiempo, humedad, pH y los ingredientes. No existe un único botón químico para dorar.",
+      "narration": "El límite: no hay un único botón para dorar. Temperatura, tiempo, humedad, pH e ingredientes cambian el resultado, así que cada alimento se comporta distinto.",
       "on_screen_text": "Depende del proceso",
       "visual_description": "Comal con tortilla a distintos grados de dorado, sin quemaduras extremas.",
       "image_prompt": "fine line pencil illustration on white paper, precise thin strokes, subtle graphite shading, minimal composition, vertical 9:16, no text Comal con tortilla a distintos grados de dorado, sin quemaduras extremas.; ilustración científica clara, vertical 9:16, sin etiquetas ni texto.",
@@ -222,7 +222,7 @@
       "id": "scene_008",
       "arc": "reflexion_o_pregunta",
       "duration_seconds": 9,
-      "narration": "La próxima vez que veas una tortilla dorada, recuerda: su color y aroma cuentan una historia de moléculas reaccionando con el calor. Esto fue Datos y ociosidades.",
+      "narration": "Dorar no es quemar ni solo caramelizar: es crear aromas nuevos con calor. ¿Cuál es el alimento dorado que más se te antoja? Esto fue Datos y ociosidades.",
       "on_screen_text": "Química cotidiana",
       "visual_description": "Tortilla dorada en primer plano, vapor tenue y fondo de cocina mexicana.",
       "image_prompt": "fine line pencil illustration on white paper, precise thin strokes, subtle graphite shading, minimal composition, vertical 9:16, no text Tortilla dorada en primer plano, vapor tenue y fondo de cocina mexicana.; ilustración científica clara, vertical 9:16, sin etiquetas ni texto.",
@@ -268,5 +268,6 @@
   "production_mode": "storyboard_only",
   "validation_notes": [],
   "approved_assets": [],
-  "risk_notes": []
+  "risk_notes": [],
+  "thumbnail_source": "scene_001"
 }

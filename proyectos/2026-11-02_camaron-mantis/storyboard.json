@@ -253,7 +253,7 @@
       "id": "scene_008",
       "arc": "reflexion_o_pregunta",
       "duration_seconds": 9,
-      "narration": "Así que no es magia ni un golpe idéntico en todos los camarones mantis: es biomecánica extrema bajo el agua. Esto fue Datos y ociosidades.",
+      "narration": "El golpe no termina en la maza: el agua también pega, porque las burbujas al colapsar dan un segundo impacto. ¿Qué otro animal usa la física como arma? Esto fue Datos y ociosidades.",
       "on_screen_text": "Martillos bajo el mar",
       "visual_description": "Concha abierta y silueta del animal alejándose en el teatrino.",
       "image_prompt": "shadow puppet theater, black paper cut silhouettes backlit by warm amber light, layered cut paper scenery, ornate wooden stage frame, vertical 9:16, no text Concha abierta y silueta del animal alejándose en el teatrino., clear scientific illustration, no labels",
@@ -316,5 +316,6 @@
   "approved_assets": [],
   "risk_notes": [
     "Cifras no incluidas sin respaldo específico."
-  ]
+  ],
+  "thumbnail_source": "scene_001"
 }

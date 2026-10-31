@@ -39,3 +39,9 @@ ChatGPT entrega cada día UN paquete en `cola/entrada/YYYY-MM-DD_dato-<slug>/` (
 Imaginantes monta y programa. ChatGPT no tiene cron: se activa por pegado de Mj o Custom Instructions.
 
 > **Regla de cierre (obligatoria):** ver bloque «Cierre (obligatorio)» en `PARA_CHATGPT_dato_del_dia.md` — las 2 últimas escenas cierran; la última nunca es solo el sello.
+
+## Regla de portada YouTube Shorts (Mj 31-oct, obligatoria)
+- La portada / custom thumbnail de YT es SIEMPRE el frame de la escena gancho (la pregunta inicial, `scene_001`). Nunca una escena intermedia.
+- **ChatGPT:** cada storyboard.json lleva `"thumbnail_source": "scene_001"` (o el id de la escena gancho si fuera otro). La escena gancho debe tener la pregunta en `narration`/`on_screen_text`.
+- **Imaginantes/Grok:** al publicar, `scripts/publicar.py` sube `frames/<thumbnail_source>.jpg|png` con `thumbnails.set` (reescalado a 1280px máx, <2 MB). Si la subida falla, el paquete no se marca listo hasta corregirlo a mano en YT Studio con ese mismo frame.
+- TikTok/Facebook: elegir como portada el primer segundo/frame del gancho.

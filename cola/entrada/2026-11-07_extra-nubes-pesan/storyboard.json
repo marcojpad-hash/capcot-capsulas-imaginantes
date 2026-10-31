@@ -134,7 +134,7 @@
       "id": "scene_005",
       "arc": "desarrollo",
       "duration_seconds": 12,
-      "narration": "La nube sí tiene masa; lo que la mantiene flotando es el equilibrio entre las gotas, el aire y los movimientos de la atmósfera.",
+      "narration": "La nube sí tiene masa; lo que la mantiene flotando es el equilibrio entre las gotas diminutas, el aire y los movimientos de la atmósfera.",
       "on_screen_text": "El matiz",
       "visual_description": "Ilustración educativa secuencial sobre ¿cuánto pesa una nube?",
       "image_prompt": "antique engraved atlas map illustration, hand-colored copperplate, compass rose, sea monsters, aged parchment, single large central motif, not photorealistic, vertical 9:16, no text, educational visual scene illustrating ¿cuánto pesa una nube?, consistent continuity",
@@ -149,7 +149,7 @@
       "id": "scene_006",
       "arc": "cierre_historia",
       "duration_seconds": 10,
-      "narration": "La cifra o el fenómeno debe interpretarse dentro de las condiciones medidas, no como regla sin excepciones.",
+      "narration": "El límite: no hay un peso único. Cualquier cifra depende del tamaño de la nube y del agua que contiene, y una tormenta no se parece a una nube pequeña.",
       "on_screen_text": "Qué sabemos",
       "visual_description": "Ilustración educativa secuencial sobre ¿cuánto pesa una nube?",
       "image_prompt": "antique engraved atlas map illustration, hand-colored copperplate, compass rose, sea monsters, aged parchment, single large central motif, not photorealistic, vertical 9:16, no text, educational visual scene illustrating ¿cuánto pesa una nube?, consistent continuity",
@@ -164,7 +164,7 @@
       "id": "scene_007",
       "arc": "reflexion_o_pregunta",
       "duration_seconds": 10,
-      "narration": "Esto fue Datos y ociosidades.",
+      "narration": "Las nubes flotan no porque no pesen, sino porque sus gotas son diminutas y el aire las sostiene. ¿Qué forma de nube es tu favorita? Esto fue Datos y ociosidades.",
       "on_screen_text": "Esto fue Datos y ociosidades",
       "visual_description": "Ilustración educativa secuencial sobre ¿cuánto pesa una nube?",
       "image_prompt": "antique engraved atlas map illustration, hand-colored copperplate, compass rose, sea monsters, aged parchment, single large central motif, not photorealistic, vertical 9:16, no text, educational visual scene illustrating ¿cuánto pesa una nube?, consistent continuity",
@@ -213,5 +213,6 @@
   "approved_assets": [],
   "risk_notes": [
     "No generalizar más allá de la fuente."
-  ]
+  ],
+  "thumbnail_source": "scene_001"
 }

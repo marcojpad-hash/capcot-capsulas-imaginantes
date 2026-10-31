@@ -134,7 +134,7 @@
       "id": "scene_005",
       "arc": "desarrollo",
       "duration_seconds": 12,
-      "narration": "El estallido no es una explosión química: es una expansión física impulsada por vapor de agua y por la estructura del grano.",
+      "narration": "El estallido no es una explosión química: es una expansión física impulsada por vapor de agua y por la estructura resistente del grano.",
       "on_screen_text": "El matiz",
       "visual_description": "Representación didáctica de ¿por qué explotan las palomitas?, secuencia causal clara y legible",
       "image_prompt": "stop-motion paper cut-out scene inside an open pop-up book box, newsprint and sepia paper figures, red thread accents, cardboard background, warm dim lamp light, handmade feel, vertical 9:16, no text, educational visual scene illustrating ¿por qué explotan las palomitas?, consistent visual continuity",
@@ -149,7 +149,7 @@
       "id": "scene_006",
       "arc": "cierre_historia",
       "duration_seconds": 10,
-      "narration": "El mecanismo tiene límites y depende de las condiciones observadas. No conviene convertir una medición particular en una regla universal.",
+      "narration": "El límite: cada grano es distinto. Si el agua escapa por una grieta o la cubierta no retiene presión, el grano queda cerrado en el fondo de la olla.",
       "on_screen_text": "Qué sabemos",
       "visual_description": "Representación didáctica de ¿por qué explotan las palomitas?, secuencia causal clara y legible",
       "image_prompt": "stop-motion paper cut-out scene inside an open pop-up book box, newsprint and sepia paper figures, red thread accents, cardboard background, warm dim lamp light, handmade feel, vertical 9:16, no text, educational visual scene illustrating ¿por qué explotan las palomitas?, consistent visual continuity",
@@ -164,7 +164,7 @@
       "id": "scene_007",
       "arc": "reflexion_o_pregunta",
       "duration_seconds": 10,
-      "narration": "Esto fue Datos y ociosidades.",
+      "narration": "Una palomita es agua convertida en vapor que infla almidón como espuma. ¿Prefieres las palomitas dulces o saladas? Esto fue Datos y ociosidades.",
       "on_screen_text": "Esto fue Datos y ociosidades",
       "visual_description": "Representación didáctica de ¿por qué explotan las palomitas?, secuencia causal clara y legible",
       "image_prompt": "stop-motion paper cut-out scene inside an open pop-up book box, newsprint and sepia paper figures, red thread accents, cardboard background, warm dim lamp light, handmade feel, vertical 9:16, no text, educational visual scene illustrating ¿por qué explotan las palomitas?, consistent visual continuity",
@@ -213,5 +213,6 @@
   "approved_assets": [],
   "risk_notes": [
     "Mantener límites y matices de la fuente; no generalizar más allá de la evidencia."
-  ]
+  ],
+  "thumbnail_source": "scene_001"
 }

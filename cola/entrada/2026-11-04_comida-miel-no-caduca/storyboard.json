@@ -166,7 +166,7 @@
       "id": "scene_006",
       "arc": "cierre_historia",
       "duration_seconds": 10,
-      "narration": "Si el frasco queda abierto, absorbe agua del ambiente o se contamina, puede cambiar. La cristalización, por sí sola, tampoco significa que esté echada a perder: es un proceso físico natural de sus azúcares.",
+      "narration": "Si el frasco queda abierto, absorbe agua o se contamina, puede cambiar. Y cristalizarse no significa echarse a perder: es un proceso físico natural.",
       "on_screen_text": "Humedad y conservación",
       "visual_description": "Plano educativo de ¿la miel nunca se echa a perder?, metáfora visual concreta y legible",
       "image_prompt": "hand embroidery on linen fabric, colorful thread stitches, satin and french knots, embroidery hoop edge visible, vertical 9:16, no text, educational visual scene illustrating ¿la miel nunca se echa a perder?, consistent visual continuity",
@@ -182,7 +182,7 @@
       "id": "scene_007",
       "arc": "reflexion_o_pregunta",
       "duration_seconds": 10,
-      "narration": "La clave de su larga conservación es una combinación de poca agua disponible, acidez y composición química. Así que la miel no es inmortal; es un alimento con condiciones poco hospitalarias para muchos microbios. Esto fue Datos y ociosidades.",
+      "narration": "Tip: guarda la miel bien tapada para que no absorba humedad; si cristaliza, sigue siendo miel. ¿Tienes un frasco olvidado en la alacena? Esto fue Datos y ociosidades.",
       "on_screen_text": "Esto fue Datos y ociosidades",
       "visual_description": "Plano educativo de ¿la miel nunca se echa a perder?, metáfora visual concreta y legible",
       "image_prompt": "hand embroidery on linen fabric, colorful thread stitches, satin and french knots, embroidery hoop edge visible, vertical 9:16, no text, educational visual scene illustrating ¿la miel nunca se echa a perder?, consistent visual continuity",
@@ -233,5 +233,6 @@
   "approved_assets": [],
   "risk_notes": [
     "Evitar absolutos; explicar condiciones y límites."
-  ]
+  ],
+  "thumbnail_source": "scene_001"
 }

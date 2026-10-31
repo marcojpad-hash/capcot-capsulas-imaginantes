@@ -89,7 +89,7 @@
       "id": "scene_002",
       "arc": "desarrollo",
       "duration_seconds": 12,
-      "narration": "Venus tarda unos 243 días terrestres en completar una vuelta sobre su eje, mientras que su año dura cerca de 225 días. La comparación depende de distinguir día sideral y día solar.",
+      "narration": "Venus tarda unos 243 días terrestres en completar una vuelta sobre su eje, mientras que su órbita alrededor del Sol dura cerca de 225 días.",
       "on_screen_text": "El mecanismo",
       "visual_description": "Representación didáctica de venus: un día más largo que su año, con secuencia visual causal y sin rótulos incrustados",
       "image_prompt": "ukiyo-e Japanese woodblock print, flat color areas, elegant outlines, stylized waves and clouds, washi paper texture, vertical 9:16, no text, clear educational illustration showing venus: un día más largo que su año, causal sequence, consistent scene design",
@@ -112,13 +112,14 @@
       "source_ids": [
         "SRC-001"
       ],
-      "style_id": "ukiyo_e"
+      "style_id": "ukiyo_e",
+      "narration": "Es decir, Venus termina una vuelta completa al Sol antes de completar una sola vuelta sobre sí mismo. Además gira en sentido contrario a la Tierra."
     },
     {
       "id": "scene_004",
       "arc": "desarrollo",
       "duration_seconds": 12,
-      "narration": "El mecanismo depende de condiciones físicas y biológicas concretas; no conviene convertir una observación limitada en una regla para todos los casos.",
+      "narration": "Por eso hablamos de rotación sideral: el giro medido respecto a las estrellas lejanas. Con esa medida, su día es más largo que su año.",
       "on_screen_text": "La evidencia",
       "visual_description": "Representación didáctica de venus: un día más largo que su año, con secuencia visual causal y sin rótulos incrustados",
       "image_prompt": "ukiyo-e Japanese woodblock print, flat color areas, elegant outlines, stylized waves and clouds, washi paper texture, vertical 9:16, no text, clear educational illustration showing venus: un día más largo que su año, causal sequence, consistent scene design",
@@ -133,7 +134,7 @@
       "id": "scene_005",
       "arc": "desarrollo",
       "duration_seconds": 12,
-      "narration": "La evidencia permite describir el proceso, pero también obliga a separar lo observado de lo que todavía no se puede concluir.",
+      "narration": "Esa lentitud, sumada al giro retrógrado, vuelve engañosa cualquier comparación con la Tierra si no se aclara qué se está midiendo.",
       "on_screen_text": "El matiz",
       "visual_description": "Representación didáctica de venus: un día más largo que su año, con secuencia visual causal y sin rótulos incrustados",
       "image_prompt": "ukiyo-e Japanese woodblock print, flat color areas, elegant outlines, stylized waves and clouds, washi paper texture, vertical 9:16, no text, clear educational illustration showing venus: un día más largo que su año, causal sequence, consistent scene design",
@@ -148,7 +149,7 @@
       "id": "scene_006",
       "arc": "cierre_historia",
       "duration_seconds": 10,
-      "narration": "La clave está en entender el mecanismo y sus límites, no solo repetir el dato sorprendente.",
+      "narration": "Un matiz: el día que veríamos de amanecer a amanecer, llamado día solar, es otra medida distinta. Para comparar hay que aclarar de qué día hablamos.",
       "on_screen_text": "Qué sí sabemos",
       "visual_description": "Representación didáctica de venus: un día más largo que su año, con secuencia visual causal y sin rótulos incrustados",
       "image_prompt": "ukiyo-e Japanese woodblock print, flat color areas, elegant outlines, stylized waves and clouds, washi paper texture, vertical 9:16, no text, clear educational illustration showing venus: un día más largo que su año, causal sequence, consistent scene design",
@@ -163,7 +164,7 @@
       "id": "scene_007",
       "arc": "reflexion_o_pregunta",
       "duration_seconds": 10,
-      "narration": "Esto fue Datos y ociosidades.",
+      "narration": "En Venus, un día sobre su eje dura más que un año alrededor del Sol. ¿Cómo organizarías tu calendario en un planeta así? Esto fue Datos y ociosidades.",
       "on_screen_text": "Esto fue Datos y ociosidades",
       "visual_description": "Representación didáctica de venus: un día más largo que su año, con secuencia visual causal y sin rótulos incrustados",
       "image_prompt": "ukiyo-e Japanese woodblock print, flat color areas, elegant outlines, stylized waves and clouds, washi paper texture, vertical 9:16, no text, clear educational illustration showing venus: un día más largo que su año, causal sequence, consistent scene design",
@@ -212,5 +213,6 @@
   "approved_assets": [],
   "risk_notes": [
     "Conservar los límites de interpretación indicados en fuentes."
-  ]
+  ],
+  "thumbnail_source": "scene_001"
 }

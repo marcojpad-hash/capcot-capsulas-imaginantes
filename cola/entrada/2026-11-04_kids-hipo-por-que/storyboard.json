@@ -150,7 +150,7 @@
       "id": "scene_005",
       "arc": "desarrollo",
       "duration_seconds": 12,
-      "narration": "Por eso, irritaciones en distintas partes del recorrido pueden desencadenarlo. Comer rápido, distender el estómago o cambios bruscos de temperatura son disparadores conocidos, aunque no explican todos los casos.",
+      "narration": "Por eso, irritaciones en distintas partes del recorrido pueden desencadenarlo. Comer rápido o distender el estómago son disparadores conocidos.",
       "on_screen_text": "Circuito nervioso",
       "visual_description": "Recorrido esquemático de nervios y cerebro.",
       "image_prompt": "child's wax crayon drawing on white paper, naive shapes, bright colors, visible crayon strokes, cheerful sun, vertical 9:16, no text, Vagus and phrenic nerve pathways as clear diagram, consistent character and visual continuity",
@@ -166,7 +166,7 @@
       "id": "scene_006",
       "arc": "cierre_historia",
       "duration_seconds": 10,
-      "narration": "La mayoría de los episodios dura poco y desaparece sin tratamiento. Si persiste durante días, puede requerir evaluación médica porque a veces acompaña otros problemas.",
+      "narration": "El límite: sabemos cómo ocurre, pero no siempre qué lo activó. La mayoría de los episodios pasa sola; si dura días, conviene evaluación médica.",
       "on_screen_text": "No siempre hay causa única",
       "visual_description": "Contraste entre episodio breve y persistente; sin consejo clínico individual.",
       "image_prompt": "child's wax crayon drawing on white paper, naive shapes, bright colors, visible crayon strokes, cheerful sun, vertical 9:16, no text, Quiet everyday scene transitioning to a calm medical context, consistent character and visual continuity",
@@ -182,7 +182,7 @@
       "id": "scene_007",
       "arc": "reflexion_o_pregunta",
       "duration_seconds": 10,
-      "narration": "Así que el hipo no es una criatura escondida ni una falla misteriosa: es un reflejo respiratorio cuya causa inmediata conocemos, aunque no siempre sepamos qué lo activó. Esto fue Datos y ociosidades.",
+      "narration": "El hipo es un reflejo con un circuito que va del diafragma a la garganta y al sistema nervioso. ¿Cuál es tu truco favorito para quitártelo? Esto fue Datos y ociosidades.",
       "on_screen_text": "Esto fue Datos y ociosidades",
       "visual_description": "Imagen final que sintetiza el fenómeno.",
       "image_prompt": "child's wax crayon drawing on white paper, naive shapes, bright colors, visible crayon strokes, cheerful sun, vertical 9:16, no text, Elegant final tableau with diaphragm and breath motif, consistent character and visual continuity",
@@ -234,5 +234,6 @@
   "approved_assets": [],
   "risk_notes": [
     "No presentar el reflejo como enfermedad; persistencia requiere valoración clínica."
-  ]
+  ],
+  "thumbnail_source": "scene_001"
 }

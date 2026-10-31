@@ -134,7 +134,7 @@
       "id": "scene_005",
       "arc": "desarrollo",
       "duration_seconds": 12,
-      "narration": "La medición fue extraordinaria porque obtener señales cardíacas de un animal tan grande y libre en el océano es técnicamente difícil.",
+      "narration": "La medición fue extraordinaria porque obtener señales cardíacas de un animal tan grande y libre en el océano es técnicamente muy difícil.",
       "on_screen_text": "El matiz",
       "visual_description": "Representación didáctica de el corazón de la ballena azul, secuencia causal clara y legible",
       "image_prompt": "scratchboard illustration, white lines scratched on black, fine cross-hatching, dramatic single subject filling frame, black background, not photorealistic, vertical 9:16, no text, educational visual scene illustrating el corazón de la ballena azul, consistent visual continuity",
@@ -149,7 +149,7 @@
       "id": "scene_006",
       "arc": "cierre_historia",
       "duration_seconds": 10,
-      "narration": "El mecanismo tiene límites y depende de las condiciones observadas. No conviene convertir una medición particular en una regla universal.",
+      "narration": "El límite: estos registros provienen de un solo ejemplar, en las condiciones de ese estudio. Sirven como evidencia valiosa, no como norma para toda la especie.",
       "on_screen_text": "Qué sabemos",
       "visual_description": "Representación didáctica de el corazón de la ballena azul, secuencia causal clara y legible",
       "image_prompt": "scratchboard illustration, white lines scratched on black, fine cross-hatching, dramatic single subject filling frame, black background, not photorealistic, vertical 9:16, no text, educational visual scene illustrating el corazón de la ballena azul, consistent visual continuity",
@@ -164,7 +164,7 @@
       "id": "scene_007",
       "arc": "reflexion_o_pregunta",
       "duration_seconds": 10,
-      "narration": "Esto fue Datos y ociosidades.",
+      "narration": "El corazón más grande del planeta casi se detiene al bucear y acelera al subir a respirar. ¿Qué otro récord animal te gustaría conocer? Esto fue Datos y ociosidades.",
       "on_screen_text": "Esto fue Datos y ociosidades",
       "visual_description": "Representación didáctica de el corazón de la ballena azul, secuencia causal clara y legible",
       "image_prompt": "scratchboard illustration, white lines scratched on black, fine cross-hatching, dramatic single subject filling frame, black background, not photorealistic, vertical 9:16, no text, educational visual scene illustrating el corazón de la ballena azul, consistent visual continuity",
@@ -213,5 +213,6 @@
   "approved_assets": [],
   "risk_notes": [
     "Mantener límites y matices de la fuente; no generalizar más allá de la evidencia."
-  ]
+  ],
+  "thumbnail_source": "scene_001"
 }

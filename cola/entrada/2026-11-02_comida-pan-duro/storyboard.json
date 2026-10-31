@@ -80,14 +80,19 @@
       "on_screen_text": "No es solo secado",
       "visual_description": "Una rebanada fresca y otra firme, lado a lado, en un diorama de papel.",
       "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text Una rebanada fresca y otra firme, lado a lado, en un diorama de papel., clear scientific illustration, no labels",
-      "ambiente": "Cocina tranquila",
       "sfx": [
-        "Golpecito"
+        "madera"
       ],
       "source_ids": [
         "SRC-001"
       ],
-      "style_id": "papel_rasgado_capas"
+      "style_id": "papel_rasgado_capas",
+      "asset_filename": "frames/scene_001.jpg",
+      "asset_type": "image",
+      "motion": "kenburns_auto",
+      "animated_hook": false,
+      "image_origen": "Generada con IA para este paquete; ilustración editorial, no fotografía ni imagen documental.",
+      "ambiente_desc": "Cocina tranquila"
     },
     {
       "id": "scene_002",
@@ -97,9 +102,8 @@
       "on_screen_text": "Miga recién hecha",
       "visual_description": "Corte transversal de pan con miga aireada y capas de papel representando almidón.",
       "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text Corte transversal de pan con miga aireada y capas de papel representando almidón., clear scientific illustration, no labels",
-      "ambiente": "Horno suave",
       "sfx": [
-        "Aire"
+        "viento"
       ],
       "source_ids": [
         "SRC-001"
@@ -116,7 +120,13 @@
         "puntos": [],
         "titulo": "Hábitat marino; mapa contextual, no punto de observación",
         "fuente": "Natural Earth; mapa ilustrativo sin coordenadas de captura."
-      }
+      },
+      "asset_filename": "frames/scene_002.jpg",
+      "asset_type": "image",
+      "motion": "kenburns_auto",
+      "animated_hook": false,
+      "image_origen": "Generada con IA para este paquete; ilustración editorial, no fotografía ni imagen documental.",
+      "ambiente_desc": "Horno suave"
     },
     {
       "id": "scene_003",
@@ -126,9 +136,8 @@
       "on_screen_text": "El almidón se reordena",
       "visual_description": "Fibras de almidón pasando de desordenadas a estructuras ordenadas; metáfora visual etiquetada en post.",
       "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text Fibras de almidón pasando de desordenadas a estructuras ordenadas; metáfora visual etiquetada en post., clear scientific illustration, no labels",
-      "ambiente": "Textura sutil",
       "sfx": [
-        "Clics"
+        "reloj"
       ],
       "source_ids": [
         "SRC-001"
@@ -139,7 +148,13 @@
         "valor": "Retrogradación de amilopectina",
         "etiqueta": "Mecanismo principal descrito",
         "fuente": "Gray, J. A. & BeMiller, J. N. (2003). Bread Staling: Molecular Basis and Control. Comprehensive Reviews in Food Science and Food Safety, 2(1), 1–21."
-      }
+      },
+      "asset_filename": "frames/scene_003.jpg",
+      "asset_type": "image",
+      "motion": "kenburns_auto",
+      "animated_hook": false,
+      "image_origen": "Generada con IA para este paquete; ilustración editorial, no fotografía ni imagen documental.",
+      "ambiente_desc": "Textura sutil"
     },
     {
       "id": "scene_004",
@@ -149,14 +164,19 @@
       "on_screen_text": "Retrogradación",
       "visual_description": "Cadenas ramificadas de amilopectina alineándose dentro de la miga.",
       "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text Cadenas ramificadas de amilopectina alineándose dentro de la miga., clear scientific illustration, no labels",
-      "ambiente": "Ambiente cálido",
       "sfx": [
-        "Chasquido"
+        "madera"
       ],
       "source_ids": [
         "SRC-001"
       ],
-      "style_id": "papel_rasgado_capas"
+      "style_id": "papel_rasgado_capas",
+      "asset_filename": "frames/scene_004.jpg",
+      "asset_type": "image",
+      "motion": "kenburns_auto",
+      "animated_hook": false,
+      "image_origen": "Generada con IA para este paquete; ilustración editorial, no fotografía ni imagen documental.",
+      "ambiente_desc": "Ambiente cálido"
     },
     {
       "id": "scene_005",
@@ -166,14 +186,19 @@
       "on_screen_text": "El agua se redistribuye",
       "visual_description": "Gotas ilustradas desplazándose entre redes de almidón y gluten, sin sugerir evaporación total.",
       "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text Gotas ilustradas desplazándose entre redes de almidón y gluten, sin sugerir evaporación total., clear scientific illustration, no labels",
-      "ambiente": "Gotas",
       "sfx": [
-        "Goteo"
+        "lluvia"
       ],
       "source_ids": [
         "SRC-001"
       ],
-      "style_id": "papel_rasgado_capas"
+      "style_id": "papel_rasgado_capas",
+      "asset_filename": "frames/scene_005.jpg",
+      "asset_type": "image",
+      "motion": "kenburns_auto",
+      "animated_hook": false,
+      "image_origen": "Generada con IA para este paquete; ilustración editorial, no fotografía ni imagen documental.",
+      "ambiente_desc": "Gotas"
     },
     {
       "id": "scene_006",
@@ -183,14 +208,17 @@
       "on_screen_text": "La bolsa no lo detiene",
       "visual_description": "Pan dentro de bolsa cerrada; corte esquemático de la miga cambiando internamente.",
       "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text Pan dentro de bolsa cerrada; corte esquemático de la miga cambiando internamente., clear scientific illustration, no labels",
-      "ambiente": "Cocina",
-      "sfx": [
-        "Papel"
-      ],
+      "sfx": [],
       "source_ids": [
         "SRC-001"
       ],
-      "style_id": "papel_rasgado_capas"
+      "style_id": "papel_rasgado_capas",
+      "asset_filename": "frames/scene_006.jpg",
+      "asset_type": "image",
+      "motion": "kenburns_auto",
+      "animated_hook": false,
+      "image_origen": "Generada con IA para este paquete; ilustración editorial, no fotografía ni imagen documental.",
+      "ambiente_desc": "Cocina"
     },
     {
       "id": "scene_007",
@@ -200,46 +228,59 @@
       "on_screen_text": "Un proceso complejo",
       "visual_description": "Portada conceptual de revisión científica y tres mecanismos representados sin cifras.",
       "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text Portada conceptual de revisión científica y tres mecanismos representados sin cifras., clear scientific illustration, no labels",
-      "ambiente": "Ambiente de estudio",
       "sfx": [
-        "Paso de página"
+        "pluma"
       ],
       "source_ids": [
         "SRC-001"
       ],
-      "style_id": "papel_rasgado_capas"
+      "style_id": "papel_rasgado_capas",
+      "asset_filename": "frames/scene_007.jpg",
+      "asset_type": "image",
+      "motion": "kenburns_auto",
+      "animated_hook": false,
+      "image_origen": "Generada con IA para este paquete; ilustración editorial, no fotografía ni imagen documental.",
+      "ambiente_desc": "Ambiente de estudio"
     },
     {
       "id": "scene_008",
-      "arc": "cierre_historia",
+      "arc": "reflexion_o_pregunta",
       "duration_seconds": 9,
-      "narration": "Un consejo práctico: congela el pan que no vas a consumir pronto y recaliéntalo al servirlo. Esto fue Datos y ociosidades.",
+      "narration": "Tip: congela el pan que no vas a comer pronto y recaliéntalo al servirlo. El calor ayuda a suavizar la miga. ¿Qué haces tú con el pan duro? Esto fue Datos y ociosidades.",
       "on_screen_text": "Congela, luego recalienta",
       "visual_description": "Rebanadas guardadas en congelador y tostadas al servir; consejo práctico claro.",
       "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text Rebanadas guardadas en congelador y tostadas al servir; consejo práctico claro., clear scientific illustration, no labels",
-      "ambiente": "Cocina cálida",
       "sfx": [
-        "Tostador"
+        "campanas"
       ],
       "source_ids": [
         "SRC-001"
       ],
-      "style_id": "papel_rasgado_capas"
+      "style_id": "papel_rasgado_capas",
+      "asset_filename": "frames/scene_008.jpg",
+      "asset_type": "image",
+      "motion": "kenburns_auto",
+      "animated_hook": false,
+      "image_origen": "Generada con IA para este paquete; ilustración editorial, no fotografía ni imagen documental.",
+      "ambiente_desc": "Cocina cálida"
     }
   ],
   "cortinilla_fuentes": {
     "duration_seconds": 6,
     "titulo": "Fuentes",
-    "aviso": "Divulgación; afirmaciones limitadas al estudio citado.",
+    "aviso": "Imágenes generadas con IA · voz sintética · audio sintetizado.",
     "firma": "Datos y ociosidades",
     "source_ids": [
       "SRC-001"
     ]
   },
   "audio": {
-    "music_asset": null,
-    "music_plan": "Cama instrumental discreta; seleccionar/generar en producción",
-    "music_license": null
+    "music_asset": "sintetico:pulso",
+    "music_license": "sintético propio",
+    "music_lufs": -38,
+    "ambiente_lufs": -30,
+    "music_protagonista": false,
+    "sfx_license": "Wikimedia Commons CC0/dominio público según scripts/sfx_manifest.json"
   },
   "export": {
     "resolution": "1080x1920",
@@ -266,5 +307,6 @@
   "approved_assets": [],
   "risk_notes": [
     "Cifras no incluidas sin respaldo específico."
-  ]
+  ],
+  "thumbnail_source": "scene_001"
 }

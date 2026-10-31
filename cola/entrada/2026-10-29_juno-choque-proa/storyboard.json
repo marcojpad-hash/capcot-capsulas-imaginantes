@@ -1,9 +1,6 @@
 {
   "project_id": "2026-10-29_juno-choque-proa",
   "serie": "Datos y ociosidades",
-  "title": "Juno revela el choque invisible de Júpiter",
-  "titulo": "La frontera invisible",
-  "titulo_yt": "La frontera invisible de Júpiter #Shorts",
   "language": "es-MX",
   "aspect_ratio": "9:16",
   "target_duration_seconds": 85,
@@ -20,14 +17,6 @@
   },
   "estilo_id": "art_deco_poster",
   "estilo_visual": "Póster Art Déco años 20–30",
-  "voice": {
-    "engine": "edge-tts",
-    "voice_id": "es-MX-JorgeNeural",
-    "rate": "+7%",
-    "pitch": "-2Hz",
-    "pad_seconds": 0.3,
-    "modo_pausas": "continuo"
-  },
   "sources": [
     {
       "id": "SRC-001",
@@ -70,6 +59,17 @@
       ]
     }
   ],
+  "title": "La frontera invisible de Júpiter #Shorts",
+  "titulo": "La frontera invisible",
+  "audience": "Público general curioso (YouTube Shorts)",
+  "voice": {
+    "engine": "edge-tts",
+    "voice_id": "es-MX-JorgeNeural",
+    "rate": "-2%",
+    "pitch": "-2Hz",
+    "pad_seconds": 0.7,
+    "modo_pausas": "continuo"
+  },
   "scenes": [
     {
       "id": "scene_001",
@@ -84,9 +84,14 @@
         "SRC-002"
       ],
       "ambiente": "silencio",
-      "sfx": [],
+      "sfx": [
+        "viento"
+      ],
       "motion": "kenburns_auto",
-      "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text + A Juno-style spacecraft crosses a luminous bow-shock boundary beside Jupiter, a giant banded planet filling the frame; gold and teal plasma ribbons, strong in-medias-res action, clean central silhouette, no lettering."
+      "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text + A Juno-style spacecraft crosses a luminous bow-shock boundary beside Jupiter, a giant banded planet filling the frame; gold and teal plasma ribbons, strong in-medias-res action, clean central silhouette, no lettering.",
+      "asset_type": "image",
+      "animated_hook": false,
+      "image_origen": "Generada con IA para este paquete; ilustración editorial, no fotografía ni imagen documental."
     },
     {
       "id": "scene_002",
@@ -101,9 +106,14 @@
         "SRC-002"
       ],
       "ambiente": "silencio",
-      "sfx": [],
+      "sfx": [
+        "viento"
+      ],
       "motion": "kenburns_auto",
-      "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text + Solar-wind particle streams bend around a luminous bow shock in front of Jupiter, with a small research spacecraft crossing the boundary; bold graphic motion, no text."
+      "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text + Solar-wind particle streams bend around a luminous bow shock in front of Jupiter, with a small research spacecraft crossing the boundary; bold graphic motion, no text.",
+      "asset_type": "image",
+      "animated_hook": false,
+      "image_origen": "Generada con IA para este paquete; ilustración editorial, no fotografía ni imagen documental."
     },
     {
       "id": "scene_003",
@@ -118,7 +128,9 @@
         "SRC-003"
       ],
       "ambiente": "silencio",
-      "sfx": [],
+      "sfx": [
+        "viento"
+      ],
       "motion": "kenburns_auto",
       "capa": {
         "tipo": "mapa",
@@ -140,7 +152,10 @@
         "fuente": "University of Iowa / Iowa Now; coordenada aproximada del campus. Base cartográfica: Natural Earth 110m, dominio público.",
         "asset_filename": "layers/mapa_university_of_iowa.png"
       },
-      "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text + A Juno-like probe appears twice along a curved path near Jupiter’s glowing bow shock, emphasizing two separate crossings; Art Deco travel-poster illustration, no text."
+      "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text + A Juno-like probe appears twice along a curved path near Jupiter’s glowing bow shock, emphasizing two separate crossings; Art Deco travel-poster illustration, no text.",
+      "asset_type": "image",
+      "animated_hook": false,
+      "image_origen": "Generada con IA para este paquete; ilustración editorial, no fotografía ni imagen documental."
     },
     {
       "id": "scene_004",
@@ -154,7 +169,9 @@
         "SRC-001"
       ],
       "ambiente": "silencio",
-      "sfx": [],
+      "sfx": [
+        "viento"
+      ],
       "motion": "kenburns_auto",
       "capa": {
         "tipo": "grafico",
@@ -171,7 +188,10 @@
         "fuente": "Joseph et al., Nature Communications (2026), DOI 10.1038/s41467-026-76223-x.",
         "asset_filename": "layers/grafico_muestreo_28_vs_50_khz.png"
       },
-      "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text + A close Juno-like probe above Jupiter, surrounded by luminous teal and gold wave bands that resemble measured electric-field oscillations; no text or numerals."
+      "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text + A close Juno-like probe above Jupiter, surrounded by luminous teal and gold wave bands that resemble measured electric-field oscillations; no text or numerals.",
+      "asset_type": "image",
+      "animated_hook": false,
+      "image_origen": "Generada con IA para este paquete; ilustración editorial, no fotografía ni imagen documental."
     },
     {
       "id": "scene_005",
@@ -185,9 +205,14 @@
         "SRC-001"
       ],
       "ambiente": "silencio",
-      "sfx": [],
+      "sfx": [
+        "viento"
+      ],
       "motion": "kenburns_auto",
-      "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text + Several distinct gold and teal plasma-wave fronts sweep across the bow shock in front of Jupiter, with fine oscillations and particle trails; scientific illustration, no labels."
+      "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text + Several distinct gold and teal plasma-wave fronts sweep across the bow shock in front of Jupiter, with fine oscillations and particle trails; scientific illustration, no labels.",
+      "asset_type": "image",
+      "animated_hook": false,
+      "image_origen": "Generada con IA para este paquete; ilustración editorial, no fotografía ni imagen documental."
     },
     {
       "id": "scene_006",
@@ -201,7 +226,9 @@
         "SRC-001"
       ],
       "ambiente": "silencio",
-      "sfx": [],
+      "sfx": [
+        "viento"
+      ],
       "motion": "kenburns_auto",
       "capa": {
         "tipo": "dato",
@@ -210,13 +237,16 @@
         "fuente": "Joseph et al., Nature Communications (2026), DOI 10.1038/s41467-026-76223-x.",
         "asset_filename": "layers/dato_periodicidad_8_3s.png"
       },
-      "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text + Jupiter’s bow shock is rendered as nested, repeating teal-and-gold wave arcs with a small spacecraft at the edge; the image suggests periodic shock structures without literal labels."
+      "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text + Jupiter’s bow shock is rendered as nested, repeating teal-and-gold wave arcs with a small spacecraft at the edge; the image suggests periodic shock structures without literal labels.",
+      "asset_type": "image",
+      "animated_hook": false,
+      "image_origen": "Generada con IA para este paquete; ilustración editorial, no fotografía ni imagen documental."
     },
     {
       "id": "scene_007",
       "arc": "cierre_historia",
       "duration_seconds": 10,
-      "narration": "Esas ondas ayudan a transferir energía del viento solar a las partículas, calentándolas y frenándolas. Júpiter muestra un choque más intenso que el terrestre.",
+      "narration": "Esas ondas ayudan a transferir energía del viento solar a las partículas, calentándolas y frenándolas. Es un choque más intenso que el terrestre.",
       "on_screen_text": "Energía que cambia",
       "visual_description": "Comparación visual de la envoltura magnética terrestre y la joviana, sin sugerir que sean idénticas.",
       "asset_filename": "frames/scene_007.jpg",
@@ -225,15 +255,20 @@
         "SRC-002"
       ],
       "ambiente": "silencio",
-      "sfx": [],
+      "sfx": [
+        "viento"
+      ],
       "motion": "kenburns_auto",
-      "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text + Earth appears as a blue sphere with magnetic loops bending incoming golden solar-wind particles, a restrained visual comparison to the stronger and more complex Jupiter bow shock; Art Deco poster, no text."
+      "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text + Earth appears as a blue sphere with magnetic loops bending incoming golden solar-wind particles, a restrained visual comparison to the stronger and more complex Jupiter bow shock; Art Deco poster, no text.",
+      "asset_type": "image",
+      "animated_hook": false,
+      "image_origen": "Generada con IA para este paquete; ilustración editorial, no fotografía ni imagen documental."
     },
     {
       "id": "scene_008",
       "arc": "reflexion_o_pregunta",
       "duration_seconds": 10,
-      "narration": "No es un escudo perfecto ni una barrera que detenga todo. Es un laboratorio natural para entender choques de plasma, incluso los que rodean restos de supernovas. Esto fue Datos y ociosidades.",
+      "narration": "Júpiter no tiene un escudo perfecto: tiene un laboratorio de plasma a escala planetaria. ¿Qué otra frontera invisible del espacio te intriga? Esto fue Datos y ociosidades.",
       "on_screen_text": "Un laboratorio cósmico",
       "visual_description": "Un remanente de supernova aparece como un anillo de choque; la escena conecta la física joviana con otros entornos de plasma.",
       "asset_filename": "frames/scene_008.jpg",
@@ -243,61 +278,73 @@
         "SRC-003"
       ],
       "ambiente": "silencio",
-      "sfx": [],
+      "sfx": [
+        "viento"
+      ],
       "motion": "kenburns_auto",
-      "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text + A vast supernova remnant glows as a ring of orange, gold, and teal shock waves against deep navy space, an Art Deco illustration linking planetary and astrophysical plasma shocks; no text."
+      "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text + A vast supernova remnant glows as a ring of orange, gold, and teal shock waves against deep navy space, an Art Deco illustration linking planetary and astrophysical plasma shocks; no text.",
+      "asset_type": "image",
+      "animated_hook": false,
+      "image_origen": "Generada con IA para este paquete; ilustración editorial, no fotografía ni imagen documental."
     }
   ],
   "cortinilla_fuentes": {
     "duration_seconds": 6,
     "titulo": "Fuentes",
-    "aviso": "Imágenes generadas con IA. Voz sintética. Música sintetizada.",
+    "aviso": "Imágenes generadas con IA. Voz sintética. Música sintetizada; efectos CC0/dominio público.",
     "firma": "Datos y ociosidades · @datosyociosidades",
-    "fuentes_visibles": [
-      "Joseph et al. · Nature Communications (2026)",
-      "DOI: 10.1038/s41467-026-76223-x",
-      "University of Iowa · ScienceDaily (28 oct 2026)"
+    "bg_rgb": [
+      12,
+      32,
+      47
     ],
-    "asset_filename": "cortinilla_fuentes.png"
+    "fuentes_en_pantalla": [
+      "Joseph et al. (2026). Plasma wave observations from Juno spacecraft at the Jovian bow shock. Nature Communications 17, 9263., doi:10.1038/s41467-026-76223-x",
+      "University of Iowa (2026-10-28). NASA discovers Jupiter’s invisible shield is more complex than Earth’s. ScienceDaily.",
+      "Lewis, R. C. (2026-09-21). Jupiter uses surprisingly complex system to fend off particles from sun. Iowa Now, University of Iowa."
+    ]
   },
   "audio": {
-    "music_asset": "sintetico:pizzicato",
-    "music_license": "Cama sintética propia prevista con scripts/cama_sonora.py (84 BPM); no se generó audio en esta sesión.",
-    "music_lufs": -27,
+    "music_asset": "sintetico:arpegio",
+    "cama_musical": "arpegio",
+    "music_lufs": -38,
     "ambiente_lufs": -30,
-    "ducking": "sidechaincompress; música por debajo de la voz",
-    "music_volume": 0.22,
-    "nota_ambiente": "Se usa ambiente silenciado porque el espacio no transmite sonido; no se simula audio literal de Júpiter."
+    "music_license": "Síntesis propia del pipeline scripts/cama_sonora.py; el repositorio describe la música sintetizada como obra propia. El documento de licencia de audio citado por el código no está presente en docs/; ver licencias.json.",
+    "sfx_license": "Wikimedia Commons CC0/dominio público según scripts/sfx_manifest.json; descarga y verificación final de archivos quedan para el pipeline.",
+    "music_protagonista": false
   },
   "export": {
     "filename": "capsula.mp4",
     "resolution": "1080x1920",
     "fps": 30,
-    "codec_video": "h264",
-    "codec_audio": "aac",
+    "video_codec": "h264",
+    "audio_codec": "aac",
     "loudness_lufs": -14,
+    "plano_seconds": 2.5,
     "subtitle_max_words": 3
   },
+  "proveedor_imagenes": "Generador de imágenes IA de Grok Bot; ocho imágenes ilustrativas generadas para este paquete y ajustadas a 1080x1920.",
+  "parece_real": false,
+  "canal": {
+    "nombre": "Datos y ociosidades",
+    "handle": "@datosyociosidades",
+    "youtube_channel_id": "UCU2ZI-6pBJEr9aSFsF6bxLw"
+  },
   "publicacion": {
-    "estado": "BORRADOR_NO_PUBLICADO",
     "youtube": {
       "privacy": "private",
       "publishAt": "",
       "titulo": "La frontera invisible de Júpiter #Shorts",
-      "descripcion_con_fuentes": "Juno registró ondas de plasma en el choque de proa de Júpiter. Estudio original: Joseph et al., Nature Communications (2026), https://doi.org/10.1038/s41467-026-76223-x. Cobertura del 28-oct-2026: https://www.sciencedaily.com/releases/2026/10/261028232715.htm. Imágenes generadas con IA; voz y música sintéticas previstas. TikTok: https://www.tiktok.com/@datosyociosidades",
       "tags": [
         "#Shorts",
-        "Júpiter",
-        "Juno",
+        "jupiter",
         "espacio",
-        "ciencia"
+        "ciencia",
+        "sabiasque"
       ],
       "synthetic_content": true
-    },
-    "tiktok": {
-      "modo": "draft_inbox",
-      "is_aigc": true,
-      "caption": "Júpiter tiene un choque de proa lleno de ondas de plasma. Juno lo atravesó dos veces y registró detalles que antes no se veían. Fuentes en YouTube @datosyociosidades #ciencia #Jupiter #NASA"
     }
-  }
+  },
+  "estado_produccion": "MONTADO_PENDIENTE_PROGRAMAR",
+  "thumbnail_source": "scene_001"
 }

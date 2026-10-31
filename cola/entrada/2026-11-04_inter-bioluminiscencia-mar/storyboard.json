@@ -118,7 +118,7 @@
       "id": "scene_003",
       "arc": "desarrollo",
       "duration_seconds": 12,
-      "narration": "La energía química termina liberándose como fotones: luz visible. Pero no todos los organismos usan exactamente la misma maquinaria molecular; existen sistemas distintos y evoluciones independientes.",
+      "narration": "La energía química termina liberándose como luz visible. Pero no todos los organismos usan la misma maquinaria: hay sistemas distintos que evolucionaron por separado.",
       "on_screen_text": "Poca agua disponible",
       "visual_description": "Plano educativo de el mar que fabrica luz, metáfora visual concreta y legible",
       "image_prompt": "ukiyo-e Japanese woodblock print, flat color areas, elegant outlines, stylized waves and clouds, washi paper texture, vertical 9:16, no text, educational visual scene illustrating el mar que fabrica luz, consistent visual continuity",
@@ -134,7 +134,7 @@
       "id": "scene_004",
       "arc": "desarrollo",
       "duration_seconds": 12,
-      "narration": "En el océano la luz puede servir para varias tareas. Algunos animales la usan para atraer presas, otros para confundir o distraer a un depredador, y otros para comunicarse o encontrar pareja.",
+      "narration": "En el océano la luz sirve para varias tareas: atraer presas, distraer a un depredador, comunicarse o encontrar pareja.",
       "on_screen_text": "Acidez y química",
       "visual_description": "Plano educativo de el mar que fabrica luz, metáfora visual concreta y legible",
       "image_prompt": "ukiyo-e Japanese woodblock print, flat color areas, elegant outlines, stylized waves and clouds, washi paper texture, vertical 9:16, no text, educational visual scene illustrating el mar que fabrica luz, consistent visual continuity",
@@ -166,7 +166,7 @@
       "id": "scene_006",
       "arc": "cierre_historia",
       "duration_seconds": 10,
-      "narration": "Hay una diferencia importante: fluorescencia es absorber luz externa y reemitirla; bioluminiscencia produce luz mediante una reacción química propia o con ayuda de simbiontes.",
+      "narration": "Un matiz: no todo lo que brilla es bioluminiscencia. La fluorescencia reemite luz externa; la bioluminiscencia produce luz con una reacción propia.",
       "on_screen_text": "Humedad y conservación",
       "visual_description": "Plano educativo de el mar que fabrica luz, metáfora visual concreta y legible",
       "image_prompt": "ukiyo-e Japanese woodblock print, flat color areas, elegant outlines, stylized waves and clouds, washi paper texture, vertical 9:16, no text, educational visual scene illustrating el mar que fabrica luz, consistent visual continuity",
@@ -182,7 +182,7 @@
       "id": "scene_007",
       "arc": "reflexion_o_pregunta",
       "duration_seconds": 10,
-      "narration": "Así que el mar no está encendido como una lámpara. Está lleno de organismos con soluciones químicas distintas para convertir una reacción en una señal luminosa. Esto fue Datos y ociosidades.",
+      "narration": "En el mar oscuro, la luz es un lenguaje químico que surgió muchas veces y de muchas formas. ¿Qué criatura luminosa te gustaría ver de cerca? Esto fue Datos y ociosidades.",
       "on_screen_text": "Esto fue Datos y ociosidades",
       "visual_description": "Plano educativo de el mar que fabrica luz, metáfora visual concreta y legible",
       "image_prompt": "ukiyo-e Japanese woodblock print, flat color areas, elegant outlines, stylized waves and clouds, washi paper texture, vertical 9:16, no text, educational visual scene illustrating el mar que fabrica luz, consistent visual continuity",
@@ -233,5 +233,6 @@
   "approved_assets": [],
   "risk_notes": [
     "Evitar absolutos; explicar condiciones y límites."
-  ]
+  ],
+  "thumbnail_source": "scene_001"
 }

@@ -134,7 +134,7 @@
       "id": "scene_005",
       "arc": "desarrollo",
       "duration_seconds": 12,
-      "narration": "El dato correcto no es que los árboles produzcan oxígeno de noche: es que respiran siempre y fotosintetizan cuando hay luz.",
+      "narration": "El dato correcto no es que los árboles produzcan oxígeno de noche: es que respiran siempre y fotosintetizan cuando hay luz suficiente.",
       "on_screen_text": "El matiz",
       "visual_description": "Representación didáctica de ¿los árboles producen oxígeno de noche?, secuencia causal clara y legible",
       "image_prompt": "editorial satirical newspaper cartoon, black ink crosshatching on newsprint, caricatured figures, newspaper columns layout, vertical 9:16, no text, educational visual scene illustrating ¿los árboles producen oxígeno de noche?, consistent visual continuity",
@@ -149,7 +149,7 @@
       "id": "scene_006",
       "arc": "cierre_historia",
       "duration_seconds": 10,
-      "narration": "El mecanismo tiene límites y depende de las condiciones observadas. No conviene convertir una medición particular en una regla universal.",
+      "narration": "Un matiz: el balance de gases cambia entre día y noche, pero el consumo nocturno de una planta es diminuto frente al aire de un cuarto ventilado.",
       "on_screen_text": "Qué sabemos",
       "visual_description": "Representación didáctica de ¿los árboles producen oxígeno de noche?, secuencia causal clara y legible",
       "image_prompt": "editorial satirical newspaper cartoon, black ink crosshatching on newsprint, caricatured figures, newspaper columns layout, vertical 9:16, no text, educational visual scene illustrating ¿los árboles producen oxígeno de noche?, consistent visual continuity",
@@ -164,7 +164,7 @@
       "id": "scene_007",
       "arc": "reflexion_o_pregunta",
       "duration_seconds": 10,
-      "narration": "Esto fue Datos y ociosidades.",
+      "narration": "Un árbol no se apaga de noche: deja de fabricar azúcares, pero sigue respirando para usarlos. ¿Qué otro mito de las plantas has escuchado? Esto fue Datos y ociosidades.",
       "on_screen_text": "Esto fue Datos y ociosidades",
       "visual_description": "Representación didáctica de ¿los árboles producen oxígeno de noche?, secuencia causal clara y legible",
       "image_prompt": "editorial satirical newspaper cartoon, black ink crosshatching on newsprint, caricatured figures, newspaper columns layout, vertical 9:16, no text, educational visual scene illustrating ¿los árboles producen oxígeno de noche?, consistent visual continuity",
@@ -213,5 +213,6 @@
   "approved_assets": [],
   "risk_notes": [
     "Mantener límites y matices de la fuente; no generalizar más allá de la evidencia."
-  ]
+  ],
+  "thumbnail_source": "scene_001"
 }

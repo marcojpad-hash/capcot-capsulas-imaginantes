@@ -134,7 +134,7 @@
       "id": "scene_005",
       "arc": "desarrollo",
       "duration_seconds": 12,
-      "narration": "El cambio de color es una reacción química favorecida por el daño celular y el oxígeno; reducir el contacto con el aire puede retrasarla.",
+      "narration": "El cambio de color es una reacción química favorecida por el daño celular y el oxígeno. Si el oxígeno es parte del problema, el aire es la clave.",
       "on_screen_text": "El matiz",
       "visual_description": "Representación didáctica de ¿por qué se pone negro el aguacate?, secuencia causal clara y legible",
       "image_prompt": "fine line pencil illustration on white paper, precise thin strokes, subtle graphite shading, minimal composition, vertical 9:16, no text, educational visual scene illustrating ¿por qué se pone negro el aguacate?, consistent visual continuity",
@@ -149,7 +149,7 @@
       "id": "scene_006",
       "arc": "cierre_historia",
       "duration_seconds": 10,
-      "narration": "El mecanismo tiene límites y depende de las condiciones observadas. No conviene convertir una medición particular en una regla universal.",
+      "narration": "El límite: oscurecerse no equivale a estar podrido. Para decidir si un aguacate sigue bien, cuentan también el olor, la textura y el tiempo guardado.",
       "on_screen_text": "Qué sabemos",
       "visual_description": "Representación didáctica de ¿por qué se pone negro el aguacate?, secuencia causal clara y legible",
       "image_prompt": "fine line pencil illustration on white paper, precise thin strokes, subtle graphite shading, minimal composition, vertical 9:16, no text, educational visual scene illustrating ¿por qué se pone negro el aguacate?, consistent visual continuity",
@@ -164,7 +164,7 @@
       "id": "scene_007",
       "arc": "reflexion_o_pregunta",
       "duration_seconds": 10,
-      "narration": "Esto fue Datos y ociosidades.",
+      "narration": "Tip: cubre la pulpa cortada para reducir su contacto con el aire y retrasar el pardeamiento. ¿Qué truco usas tú para tu guacamole? Esto fue Datos y ociosidades.",
       "on_screen_text": "Esto fue Datos y ociosidades",
       "visual_description": "Representación didáctica de ¿por qué se pone negro el aguacate?, secuencia causal clara y legible",
       "image_prompt": "fine line pencil illustration on white paper, precise thin strokes, subtle graphite shading, minimal composition, vertical 9:16, no text, educational visual scene illustrating ¿por qué se pone negro el aguacate?, consistent visual continuity",
@@ -213,5 +213,6 @@
   "approved_assets": [],
   "risk_notes": [
     "Mantener límites y matices de la fuente; no generalizar más allá de la evidencia."
-  ]
+  ],
+  "thumbnail_source": "scene_001"
 }

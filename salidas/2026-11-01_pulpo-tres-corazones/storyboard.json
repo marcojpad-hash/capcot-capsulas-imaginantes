@@ -149,7 +149,7 @@
       "id": "scene_002",
       "arc": "desarrollo",
       "duration_seconds": 10,
-      "narration": "Dos de esos corazones están asociados a las branquias. Se llaman corazones branquiales.",
+      "narration": "Dos de esos corazones están asociados a las branquias, los órganos con los que respira bajo el agua. Se llaman corazones branquiales.",
       "on_screen_text": "Dos corazones branquiales",
       "visual_description": "La maqueta se abre por capas y deja visibles las dos branquias y un corazón junto a cada una.",
       "image_prompt": "handmade figures cut from corrugated cardboard, raw torn edges, marker details, photographed on a table with soft light, vertical 9:16, no text. La maqueta se abre por capas y deja visibles las dos branquias y un corazón junto a cada una.. No text or lettering.",
@@ -185,7 +185,7 @@
       "id": "scene_004",
       "arc": "desarrollo",
       "duration_seconds": 10,
-      "narration": "En las branquias, la sangre recoge oxígeno del agua que circula por la cavidad del manto.",
+      "narration": "En las branquias, la sangre recoge oxígeno del agua que circula por la cavidad del manto. Ese es el primer tramo del recorrido.",
       "on_screen_text": "Aquí recoge oxígeno",
       "visual_description": "Corte esquemático de agua fluyendo por las branquias; la sangre aparece en vasos, separada del agua.",
       "image_prompt": "handmade figures cut from corrugated cardboard, raw torn edges, marker details, photographed on a table with soft light, vertical 9:16, no text. Corte esquemático de agua fluyendo por las branquias; la sangre aparece en vasos, separada del agua.. No text or lettering.",
@@ -203,7 +203,7 @@
       "id": "scene_005",
       "arc": "desarrollo",
       "duration_seconds": 10,
-      "narration": "Después entra en acción el tercer corazón: el corazón sistémico, que envía la sangre oxigenada al resto del cuerpo.",
+      "narration": "Con la sangre ya oxigenada entra en acción el tercer corazón: el corazón sistémico, que la envía al resto del cuerpo. Es el segundo tramo.",
       "on_screen_text": "Un corazón para el cuerpo",
       "visual_description": "El corazón sistémico se ilumina y las flechas recorren vasos hacia los órganos y brazos.",
       "image_prompt": "handmade figures cut from corrugated cardboard, raw torn edges, marker details, photographed on a table with soft light, vertical 9:16, no text. El corazón sistémico se ilumina y las flechas recorren vasos hacia los órganos y brazos.. No text or lettering.",
@@ -239,7 +239,7 @@
       "id": "scene_007",
       "arc": "reflexion_o_pregunta",
       "duration_seconds": 9,
-      "narration": "Así que no son tres corazones de repuesto: dos llevan sangre a las branquias y uno la distribuye por el cuerpo.",
+      "narration": "Ojo: no son tres corazones de repuesto ni copias del mismo órgano. Cada uno cubre un tramo distinto del circuito: dos para respirar y uno para repartir.",
       "on_screen_text": "Cada uno tiene su función",
       "visual_description": "Diagrama completo y limpio con tres corazones, branquias y circulación sistémica claramente rotulados en postproducción.",
       "image_prompt": "handmade figures cut from corrugated cardboard, raw torn edges, marker details, photographed on a table with soft light, vertical 9:16, no text. Diagrama completo y limpio con tres corazones, branquias y circulación sistémica claramente rotulados en postproducción.. No text or lettering.",
@@ -257,7 +257,7 @@
       "id": "scene_008",
       "arc": "reflexion_o_pregunta",
       "duration_seconds": 10,
-      "narration": "Tres corazones, un sistema coordinado. Esto fue Datos y ociosidades.",
+      "narration": "Más que tres corazones, el pulpo tiene un relevo: primero oxigena, luego reparte. ¿Qué otro animal crees que esconde un corazón sorprendente? Esto fue Datos y ociosidades.",
       "on_screen_text": "Datos y ociosidades",
       "visual_description": "La maqueta del pulpo se cierra; los tres pulsos se sincronizan y queda el plano final.",
       "image_prompt": "handmade figures cut from corrugated cardboard, raw torn edges, marker details, photographed on a table with soft light, vertical 9:16, no text. La maqueta del pulpo se cierra; los tres pulsos se sincronizan y queda el plano final.. No text or lettering.",
@@ -275,5 +275,6 @@
   "linea_tematica_provisional": "Naturaleza / anatomía animal",
   "keywords": [
     "pulpo"
-  ]
+  ],
+  "thumbnail_source": "scene_001"
 }

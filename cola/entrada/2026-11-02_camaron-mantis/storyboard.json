@@ -80,14 +80,20 @@
       "on_screen_text": "Un martillo viviente",
       "visual_description": "Silueta de camarón mantis frente a una concha, teatrino submarino.",
       "image_prompt": "shadow puppet theater, black paper cut silhouettes backlit by warm amber light, layered cut paper scenery, ornate wooden stage frame, vertical 9:16, no text Silueta de camarón mantis frente a una concha, teatrino submarino., clear scientific illustration, no labels",
-      "ambiente": "Agua profunda tenue",
       "sfx": [
-        "Golpe seco"
+        "madera"
       ],
       "source_ids": [
         "SRC-001"
       ],
-      "style_id": "teatro_sombras"
+      "style_id": "teatro_sombras",
+      "asset_filename": "frames/scene_001.jpg",
+      "asset_type": "image",
+      "motion": "kenburns_auto",
+      "animated_hook": false,
+      "image_origen": "Generada con IA para este paquete; ilustración editorial, no fotografía ni imagen documental.",
+      "ambiente_desc": "Agua profunda tenue",
+      "ambiente": "oceano"
     },
     {
       "id": "scene_002",
@@ -97,9 +103,8 @@
       "on_screen_text": "Una maza natural",
       "visual_description": "Vista lateral del animal; destacar el apéndice raptorial sin exagerar proporciones.",
       "image_prompt": "shadow puppet theater, black paper cut silhouettes backlit by warm amber light, layered cut paper scenery, ornate wooden stage frame, vertical 9:16, no text Vista lateral del animal; destacar el apéndice raptorial sin exagerar proporciones., clear scientific illustration, no labels",
-      "ambiente": "Burbujeo suave",
       "sfx": [
-        "Deslizamiento"
+        "olas"
       ],
       "source_ids": [
         "SRC-001"
@@ -116,7 +121,14 @@
         "puntos": [],
         "titulo": "Hábitat marino; mapa contextual, no punto de observación",
         "fuente": "Natural Earth; mapa ilustrativo sin coordenadas de captura."
-      }
+      },
+      "asset_filename": "frames/scene_002.jpg",
+      "asset_type": "image",
+      "motion": "kenburns_auto",
+      "animated_hook": false,
+      "image_origen": "Generada con IA para este paquete; ilustración editorial, no fotografía ni imagen documental.",
+      "ambiente_desc": "Burbujeo suave",
+      "ambiente": "oceano"
     },
     {
       "id": "scene_003",
@@ -126,10 +138,7 @@
       "on_screen_text": "Dos herramientas distintas",
       "visual_description": "Dos siluetas comparativas: maza redondeada frente a apéndice perforador.",
       "image_prompt": "shadow puppet theater, black paper cut silhouettes backlit by warm amber light, layered cut paper scenery, ornate wooden stage frame, vertical 9:16, no text Dos siluetas comparativas: maza redondeada frente a apéndice perforador., clear scientific illustration, no labels",
-      "ambiente": "Agua tenue",
-      "sfx": [
-        "Cambio de plano"
-      ],
+      "sfx": [],
       "source_ids": [
         "SRC-001"
       ],
@@ -139,7 +148,14 @@
         "valor": "Dos picos de fuerza",
         "etiqueta": "Impacto y cavitación",
         "fuente": "Patek, S. N. & Caldwell, R. L. (2005). Extreme impact and cavitation forces of a biological hammer. Journal of Experimental Biology, 208, 3655–3664."
-      }
+      },
+      "asset_filename": "frames/scene_003.jpg",
+      "asset_type": "image",
+      "motion": "kenburns_auto",
+      "animated_hook": false,
+      "image_origen": "Generada con IA para este paquete; ilustración editorial, no fotografía ni imagen documental.",
+      "ambiente_desc": "Agua tenue",
+      "ambiente": "oceano"
     },
     {
       "id": "scene_004",
@@ -149,15 +165,20 @@
       "on_screen_text": "Golpe ultrarrápido",
       "visual_description": "Secuencia de tres posiciones de la maza acercándose a una concha.",
       "image_prompt": "shadow puppet theater, black paper cut silhouettes backlit by warm amber light, layered cut paper scenery, ornate wooden stage frame, vertical 9:16, no text Secuencia de tres posiciones de la maza acercándose a una concha., clear scientific illustration, no labels",
-      "ambiente": "Tensión ascendente",
       "sfx": [
-        "Whoosh breve",
-        "Impacto"
+        "viento"
       ],
       "source_ids": [
         "SRC-001"
       ],
-      "style_id": "teatro_sombras"
+      "style_id": "teatro_sombras",
+      "asset_filename": "frames/scene_004.jpg",
+      "asset_type": "image",
+      "motion": "kenburns_auto",
+      "animated_hook": false,
+      "image_origen": "Generada con IA para este paquete; ilustración editorial, no fotografía ni imagen documental.",
+      "ambiente_desc": "Tensión ascendente",
+      "ambiente": "oceano"
     },
     {
       "id": "scene_005",
@@ -167,14 +188,20 @@
       "on_screen_text": "Burbujas de cavitación",
       "visual_description": "Burbujas pequeñas nacen junto al punto de contacto, sin números no documentados.",
       "image_prompt": "shadow puppet theater, black paper cut silhouettes backlit by warm amber light, layered cut paper scenery, ornate wooden stage frame, vertical 9:16, no text Burbujas pequeñas nacen junto al punto de contacto, sin números no documentados., clear scientific illustration, no labels",
-      "ambiente": "Burbujeo",
       "sfx": [
-        "Burbujas"
+        "olas"
       ],
       "source_ids": [
         "SRC-001"
       ],
-      "style_id": "teatro_sombras"
+      "style_id": "teatro_sombras",
+      "asset_filename": "frames/scene_005.jpg",
+      "asset_type": "image",
+      "motion": "kenburns_auto",
+      "animated_hook": false,
+      "image_origen": "Generada con IA para este paquete; ilustración editorial, no fotografía ni imagen documental.",
+      "ambiente_desc": "Burbujeo",
+      "ambiente": "oceano"
     },
     {
       "id": "scene_006",
@@ -184,14 +211,20 @@
       "on_screen_text": "Un segundo pulso",
       "visual_description": "Dos ondas sucesivas en el agua, la segunda asociada al colapso de burbujas.",
       "image_prompt": "shadow puppet theater, black paper cut silhouettes backlit by warm amber light, layered cut paper scenery, ornate wooden stage frame, vertical 9:16, no text Dos ondas sucesivas en el agua, la segunda asociada al colapso de burbujas., clear scientific illustration, no labels",
-      "ambiente": "Pulso grave",
       "sfx": [
-        "Doble golpe"
+        "madera"
       ],
       "source_ids": [
         "SRC-001"
       ],
-      "style_id": "teatro_sombras"
+      "style_id": "teatro_sombras",
+      "asset_filename": "frames/scene_006.jpg",
+      "asset_type": "image",
+      "motion": "kenburns_auto",
+      "animated_hook": false,
+      "image_origen": "Generada con IA para este paquete; ilustración editorial, no fotografía ni imagen documental.",
+      "ambiente_desc": "Pulso grave",
+      "ambiente": "oceano"
     },
     {
       "id": "scene_007",
@@ -201,46 +234,62 @@
       "on_screen_text": "Medido en laboratorio",
       "visual_description": "Mesa de laboratorio estilizada y gráfico de dos picos sin escala numérica.",
       "image_prompt": "shadow puppet theater, black paper cut silhouettes backlit by warm amber light, layered cut paper scenery, ornate wooden stage frame, vertical 9:16, no text Mesa de laboratorio estilizada y gráfico de dos picos sin escala numérica., clear scientific illustration, no labels",
-      "ambiente": "Ambiente científico",
       "sfx": [
-        "Lápiz"
+        "pluma"
       ],
       "source_ids": [
         "SRC-001"
       ],
-      "style_id": "teatro_sombras"
+      "style_id": "teatro_sombras",
+      "asset_filename": "frames/scene_007.jpg",
+      "asset_type": "image",
+      "motion": "kenburns_auto",
+      "animated_hook": false,
+      "image_origen": "Generada con IA para este paquete; ilustración editorial, no fotografía ni imagen documental.",
+      "ambiente_desc": "Ambiente científico",
+      "ambiente": "oceano"
     },
     {
       "id": "scene_008",
-      "arc": "cierre_historia",
+      "arc": "reflexion_o_pregunta",
       "duration_seconds": 9,
-      "narration": "Así que no es magia ni un golpe idéntico en todos los camarones mantis: es biomecánica extrema bajo el agua. Esto fue Datos y ociosidades.",
+      "narration": "El golpe no termina en la maza: el agua también pega, porque las burbujas al colapsar dan un segundo impacto. ¿Qué otro animal usa la física como arma? Esto fue Datos y ociosidades.",
       "on_screen_text": "Martillos bajo el mar",
       "visual_description": "Concha abierta y silueta del animal alejándose en el teatrino.",
       "image_prompt": "shadow puppet theater, black paper cut silhouettes backlit by warm amber light, layered cut paper scenery, ornate wooden stage frame, vertical 9:16, no text Concha abierta y silueta del animal alejándose en el teatrino., clear scientific illustration, no labels",
-      "ambiente": "Agua calmada",
       "sfx": [
-        "Campanilla"
+        "campanas"
       ],
       "source_ids": [
         "SRC-001"
       ],
-      "style_id": "teatro_sombras"
+      "style_id": "teatro_sombras",
+      "asset_filename": "frames/scene_008.jpg",
+      "asset_type": "image",
+      "motion": "kenburns_auto",
+      "animated_hook": false,
+      "image_origen": "Generada con IA para este paquete; ilustración editorial, no fotografía ni imagen documental.",
+      "ambiente_desc": "Agua calmada",
+      "ambiente": "oceano"
     }
   ],
   "cortinilla_fuentes": {
     "duration_seconds": 6,
     "titulo": "Fuentes",
-    "aviso": "Divulgación; afirmaciones limitadas al estudio citado.",
+    "aviso": "Imágenes generadas con IA · voz sintética · audio sintetizado.",
     "firma": "Datos y ociosidades",
     "source_ids": [
       "SRC-001"
     ]
   },
   "audio": {
-    "music_asset": null,
-    "music_plan": "Cama instrumental discreta; seleccionar/generar en producción",
-    "music_license": null
+    "music_asset": "sintetico:pulso",
+    "music_license": "sintético propio",
+    "ambiente": "oceano",
+    "music_lufs": -38,
+    "ambiente_lufs": -30,
+    "music_protagonista": false,
+    "sfx_license": "Wikimedia Commons CC0/dominio público según scripts/sfx_manifest.json"
   },
   "export": {
     "resolution": "1080x1920",
@@ -267,5 +316,6 @@
   "approved_assets": [],
   "risk_notes": [
     "Cifras no incluidas sin respaldo específico."
-  ]
+  ],
+  "thumbnail_source": "scene_001"
 }

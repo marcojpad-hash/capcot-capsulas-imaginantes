@@ -149,7 +149,7 @@
       "id": "scene_002",
       "arc": "desarrollo",
       "duration_seconds": 10,
-      "narration": "Cuando el cuchillo corta la cebolla, rompe células y pone en contacto sustancias que antes estaban separadas.",
+      "narration": "Cuando el cuchillo corta la cebolla, rompe células y pone en contacto sustancias que antes estaban separadas. Ahí empieza una cadena química.",
       "on_screen_text": "Romper las células",
       "visual_description": "Corte transversal de capas de cebolla; las células se abren y dos grupos de moléculas quedan en contacto.",
       "image_prompt": "stop-motion paper cut-out scene inside an open pop-up book box, newsprint and sepia paper figures, red thread accents, cardboard background, warm dim lamp light, handmade feel, vertical 9:16, no text. Corte transversal de capas de cebolla; las células se abren y dos grupos de moléculas quedan en contacto.. No text or lettering.",
@@ -185,7 +185,7 @@
       "id": "scene_004",
       "arc": "desarrollo",
       "duration_seconds": 10,
-      "narration": "Luego interviene otra enzima: la lachrymatory-factor synthase, identificada por investigadores en 2002.",
+      "narration": "Luego interviene otra enzima: la lachrymatory-factor synthase, identificada por investigadores en 2002. Su hallazgo cambió la explicación.",
       "on_screen_text": "La enzima clave",
       "visual_description": "La enzima LFS aparece como una segunda estación del mecanismo; una flecha muestra la conversión.",
       "image_prompt": "stop-motion paper cut-out scene inside an open pop-up book box, newsprint and sepia paper figures, red thread accents, cardboard background, warm dim lamp light, handmade feel, vertical 9:16, no text. La enzima LFS aparece como una segunda estación del mecanismo; una flecha muestra la conversión.. No text or lettering.",
@@ -203,7 +203,7 @@
       "id": "scene_005",
       "arc": "desarrollo",
       "duration_seconds": 10,
-      "narration": "Esa enzima ayuda a producir syn-propanethial-S-oxide, el factor lacrimógeno volátil de la cebolla.",
+      "narration": "Esa enzima produce syn-propanethial-S-oxide, el factor lacrimógeno volátil. No es un simple subproducto: hay una enzima dedicada a fabricarlo.",
       "on_screen_text": "La molécula volátil",
       "visual_description": "Pequeñas formas moleculares de papel se desprenden de la cebolla y ascienden por el aire; sin nube tóxica.",
       "image_prompt": "stop-motion paper cut-out scene inside an open pop-up book box, newsprint and sepia paper figures, red thread accents, cardboard background, warm dim lamp light, handmade feel, vertical 9:16, no text. Pequeñas formas moleculares de papel se desprenden de la cebolla y ascienden por el aire; sin nube tóxica.. No text or lettering.",
@@ -239,7 +239,7 @@
       "id": "scene_007",
       "arc": "reflexion_o_pregunta",
       "duration_seconds": 9,
-      "narration": "Como respuesta protectora, las glándulas lagrimales producen lágrimas que ayudan a diluir y retirar el irritante.",
+      "narration": "Las lágrimas no son una reacción emocional: las glándulas lagrimales responden para diluir y retirar el irritante, como harían con otra molécula molesta.",
       "on_screen_text": "Tus ojos se protegen",
       "visual_description": "Gota de lágrima cubre la superficie ocular; la molécula irritante se dispersa en la capa líquida.",
       "image_prompt": "stop-motion paper cut-out scene inside an open pop-up book box, newsprint and sepia paper figures, red thread accents, cardboard background, warm dim lamp light, handmade feel, vertical 9:16, no text. Gota de lágrima cubre la superficie ocular; la molécula irritante se dispersa en la capa líquida.. No text or lettering.",
@@ -257,7 +257,7 @@
       "id": "scene_008",
       "arc": "reflexion_o_pregunta",
       "duration_seconds": 10,
-      "narration": "La cebolla activa una defensa química y tus ojos responden. Esto fue Datos y ociosidades.",
+      "narration": "La cebolla no te hace llorar por accidente: guarda una defensa química que se arma al cortarla. ¿Qué otro alimento crees que se defiende así? Esto fue Datos y ociosidades.",
       "on_screen_text": "Datos y ociosidades",
       "visual_description": "El libro pop-up se cierra sobre una cebolla cortada; queda una lágrima pequeña como remate visual.",
       "image_prompt": "stop-motion paper cut-out scene inside an open pop-up book box, newsprint and sepia paper figures, red thread accents, cardboard background, warm dim lamp light, handmade feel, vertical 9:16, no text. El libro pop-up se cierra sobre una cebolla cortada; queda una lágrima pequeña como remate visual.. No text or lettering.",
@@ -276,5 +276,6 @@
   "keywords": [
     "cebolla",
     "cocina"
-  ]
+  ],
+  "thumbnail_source": "scene_001"
 }

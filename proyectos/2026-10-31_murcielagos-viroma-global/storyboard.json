@@ -1,298 +1,299 @@
 {
- "project_id": "2026-10-31_murcielagos-viroma-global",
- "serie": "Datos y ociosidades",
- "language": "es-MX",
- "aspect_ratio": "9:16",
- "target_duration_seconds": 84,
- "estructura": "pregunta",
- "trend_source": {
-  "termino": "Viroma global de murciélagos",
-  "fecha_publicacion": "2026-10-30",
-  "url": "https://www.nature.com/articles/s41467-026-79059-7"
- },
- "resumen": "Un análisis global de 1,627 bibliotecas de ARN viral de 78 especies y 13 países encontró que geografía y parentesco del hospedador explican más variación del viroma que la dieta. Detectar secuencias no demuestra contagio humano.",
- "estilo_id": "acuarela_linea",
- "estilo_visual": "Acuarela azul a línea",
- "sources": [
-  {
-   "id": "SRC-001",
-   "cita_corta": "Huang et al. (2026), Nature Communications",
-   "url": "https://doi.org/10.1038/s41467-026-79059-7",
-   "doi": "10.1038/s41467-026-79059-7",
-   "accessed": "2026-10-31",
-   "publication_date": "2026-10-30",
-   "supports": [
-    "1,627 bibliotecas, 78 especies y 13 países",
-    "309,546 vOTUs reconstruidas y 82.74% sin clasificar",
-    "Influencia relativa de geografía, filogenia y dieta"
-   ],
-   "verification_status": "VERIFICADO_RESOLVEDOR"
+  "project_id": "2026-10-31_murcielagos-viroma-global",
+  "serie": "Datos y ociosidades",
+  "language": "es-MX",
+  "aspect_ratio": "9:16",
+  "target_duration_seconds": 84,
+  "estructura": "pregunta",
+  "trend_source": {
+    "termino": "Viroma global de murciélagos",
+    "fecha_publicacion": "2026-10-30",
+    "url": "https://www.nature.com/articles/s41467-026-79059-7"
   },
-  {
-   "id": "SRC-002",
-   "cita_corta": "Resultados y discusión del artículo original",
-   "url": "https://www.nature.com/articles/s41467-026-79059-7",
-   "doi": "10.1038/s41467-026-79059-7",
-   "accessed": "2026-10-31",
-   "publication_date": "2026-10-30",
-   "supports": [
-    "La detección de secuencias virales no equivale a demostrar riesgo zoonótico individual ni contagio humano"
-   ],
-   "verification_status": "VERIFICADO_RESOLVEDOR"
-  }
- ],
- "title": "Los murciélagos y sus virus #Shorts",
- "titulo": "¿Qué define sus virus?",
- "audience": "Público general curioso (YouTube Shorts)",
- "voice": {
-  "engine": "edge-tts",
-  "voice_id": "es-MX-JorgeNeural",
-  "rate": "-2%",
-  "pitch": "-2Hz",
-  "pad_seconds": 0.7,
-  "modo_pausas": "continuo"
- },
- "scenes": [
-  {
-   "id": "scene_001",
-   "arc": "hook_medias_res",
-   "duration_seconds": 9,
-   "narration": "¿Qué determina los virus que encontramos en los murciélagos: lo que comen o el lugar donde viven?",
-   "on_screen_text": "¿Qué define sus virus?",
-   "visual_description": "Murciélago en una cueva; dos capas visuales contrastan alimento y paisaje; acercamiento lento.",
-   "image_prompt": "delicate blue watercolor wash with fine ink line drawing, monochrome indigo-blue tones fading to white paper, loose expressive brushwork, vertical 9:16, no text. Murciélago en una cueva; dos capas visuales contrastan alimento y paisaje; acercamiento lento.. No text, no lettering.",
-   "ambiente": "silencio",
-   "sfx": [
-    "viento"
-   ],
-   "source_ids": [
-    "SRC-001",
-    "SRC-002"
-   ],
-   "style_id": "acuarela_linea",
-   "asset_filename": "frames/scene_001.jpg",
-   "asset_type": "image",
-   "motion": "kenburns_auto",
-   "animated_hook": false,
-   "image_origen": "Generada con IA para este paquete; ilustración editorial, no fotografía ni imagen documental."
-  },
-  {
-   "id": "scene_002",
-   "arc": "desarrollo",
-   "duration_seconds": 10,
-   "narration": "Un estudio global reunió mil seiscientas veintisiete bibliotecas de ARN viral de setenta y ocho especies, procedentes de trece países.",
-   "on_screen_text": "78 especies · 13 países",
-   "visual_description": "Composición de siluetas de especies distintas; contador visual de 78 especies y 13 países.",
-   "image_prompt": "delicate blue watercolor wash with fine ink line drawing, monochrome indigo-blue tones fading to white paper, loose expressive brushwork, vertical 9:16, no text. Composición de siluetas de especies distintas; contador visual de 78 especies y 13 países.. No text, no lettering.",
-   "ambiente": "silencio",
-   "sfx": [
-    "viento"
-   ],
-   "source_ids": [
-    "SRC-001",
-    "SRC-002"
-   ],
-   "style_id": "acuarela_linea",
-   "asset_filename": "frames/scene_002.jpg",
-   "asset_type": "image",
-   "motion": "kenburns_auto",
-   "animated_hook": false,
-   "image_origen": "Generada con IA para este paquete; ilustración editorial, no fotografía ni imagen documental."
-  },
-  {
-   "id": "scene_003",
-   "arc": "desarrollo",
-   "duration_seconds": 10,
-   "narration": "El equipo reconstruyó más de trescientas nueve mil unidades virales, aunque el 82.74 por ciento permaneció sin clasificar.",
-   "on_screen_text": "309,546 unidades virales",
-   "visual_description": "Tubos de laboratorio y secuencias abstractas; gráfico 1,627 bibliotecas y 309,546 vOTUs; marcar 82.74% sin clasificar.",
-   "image_prompt": "delicate blue watercolor wash with fine ink line drawing, monochrome indigo-blue tones fading to white paper, loose expressive brushwork, vertical 9:16, no text. Tubos de laboratorio y secuencias abstractas; gráfico 1,627 bibliotecas y 309,546 vOTUs; marcar 82.74% sin clasificar.. No text, no lettering.",
-   "ambiente": "silencio",
-   "sfx": [
-    "viento"
-   ],
-   "source_ids": [
-    "SRC-001",
-    "SRC-002"
-   ],
-   "style_id": "acuarela_linea",
-   "asset_filename": "frames/scene_003.jpg",
-   "asset_type": "image",
-   "motion": "kenburns_auto",
-   "animated_hook": false,
-   "image_origen": "Generada con IA para este paquete; ilustración editorial, no fotografía ni imagen documental."
-  },
-  {
-   "id": "scene_004",
-   "arc": "desarrollo",
-   "duration_seconds": 10,
-   "narration": "La comparación reveló que la geografía y la historia evolutiva del hospedador explican más diferencias que la dieta.",
-   "on_screen_text": "Geografía + parentesco",
-   "visual_description": "Tres capas separadas: mapa esquemático, árbol evolutivo y dieta; destacar las dos primeras.",
-   "image_prompt": "delicate blue watercolor wash with fine ink line drawing, monochrome indigo-blue tones fading to white paper, loose expressive brushwork, vertical 9:16, no text. Tres capas separadas: mapa esquemático, árbol evolutivo y dieta; destacar las dos primeras.. No text, no lettering.",
-   "ambiente": "silencio",
-   "sfx": [
-    "viento"
-   ],
-   "source_ids": [
-    "SRC-001",
-    "SRC-002"
-   ],
-   "style_id": "acuarela_linea",
-   "asset_filename": "frames/scene_004.jpg",
-   "asset_type": "image",
-   "motion": "kenburns_auto",
-   "animated_hook": false,
-   "image_origen": "Generada con IA para este paquete; ilustración editorial, no fotografía ni imagen documental."
-  },
-  {
-   "id": "scene_005",
-   "arc": "desarrollo",
-   "duration_seconds": 10,
-   "narration": "La dieta sí se relaciona con la composición de las comunidades virales, pero su influencia es secundaria.",
-   "on_screen_text": "La dieta también influye",
-   "visual_description": "Comparación ilustrada de murciélago frugívoro, insectívoro y hematófago; no atribuirlos a sitios concretos.",
-   "image_prompt": "delicate blue watercolor wash with fine ink line drawing, monochrome indigo-blue tones fading to white paper, loose expressive brushwork, vertical 9:16, no text. Comparación ilustrada de murciélago frugívoro, insectívoro y hematófago; no atribuirlos a sitios concretos.. No text, no lettering.",
-   "ambiente": "silencio",
-   "sfx": [
-    "viento"
-   ],
-   "source_ids": [
-    "SRC-001",
-    "SRC-002"
-   ],
-   "style_id": "acuarela_linea",
-   "asset_filename": "frames/scene_005.jpg",
-   "asset_type": "image",
-   "motion": "kenburns_auto",
-   "animated_hook": false,
-   "image_origen": "Generada con IA para este paquete; ilustración editorial, no fotografía ni imagen documental."
-  },
-  {
-   "id": "scene_006",
-   "arc": "cierre_historia",
-   "duration_seconds": 10,
-   "narration": "Los murciélagos hematófagos mostraron una comunidad viral particular. Eso no significa que cada secuencia detectada pueda infectar a personas.",
-   "on_screen_text": "Detectar ≠ contagio",
-   "visual_description": "Ficha de laboratorio con signo de interrogación entre detección y riesgo humano; tono neutral.",
-   "image_prompt": "delicate blue watercolor wash with fine ink line drawing, monochrome indigo-blue tones fading to white paper, loose expressive brushwork, vertical 9:16, no text. Ficha de laboratorio con signo de interrogación entre detección y riesgo humano; tono neutral.. No text, no lettering.",
-   "ambiente": "silencio",
-   "sfx": [
-    "viento"
-   ],
-   "source_ids": [
-    "SRC-001",
-    "SRC-002"
-   ],
-   "style_id": "acuarela_linea",
-   "asset_filename": "frames/scene_006.jpg",
-   "asset_type": "image",
-   "motion": "kenburns_auto",
-   "animated_hook": false,
-   "image_origen": "Generada con IA para este paquete; ilustración editorial, no fotografía ni imagen documental."
-  },
-  {
-   "id": "scene_007",
-   "arc": "reflexion_o_pregunta",
-   "duration_seconds": 9,
-   "narration": "Para entender los virus de la fauna hay que mirar al animal, su parentesco y su ambiente.",
-   "on_screen_text": "El contexto importa",
-   "visual_description": "Mapa global esquemático sin pins ni rutas, conectado a ramas evolutivas y silueta de murciélago.",
-   "image_prompt": "delicate blue watercolor wash with fine ink line drawing, monochrome indigo-blue tones fading to white paper, loose expressive brushwork, vertical 9:16, no text. Mapa global esquemático sin pins ni rutas, conectado a ramas evolutivas y silueta de murciélago.. No text, no lettering.",
-   "ambiente": "silencio",
-   "sfx": [
-    "viento"
-   ],
-   "source_ids": [
-    "SRC-001",
-    "SRC-002"
-   ],
-   "style_id": "acuarela_linea",
-   "asset_filename": "frames/scene_007.jpg",
-   "asset_type": "image",
-   "motion": "kenburns_auto",
-   "animated_hook": false,
-   "image_origen": "Generada con IA para este paquete; ilustración editorial, no fotografía ni imagen documental."
-  },
-  {
-   "id": "scene_008",
-   "arc": "reflexion_o_pregunta",
-   "duration_seconds": 10,
-   "narration": "Esto fue Datos y ociosidades.",
-   "on_screen_text": "Datos y ociosidades",
-   "visual_description": "Murciélago al anochecer, salida de cueva; cierre sereno.",
-   "image_prompt": "delicate blue watercolor wash with fine ink line drawing, monochrome indigo-blue tones fading to white paper, loose expressive brushwork, vertical 9:16, no text. Murciélago al anochecer, salida de cueva; cierre sereno.. No text, no lettering.",
-   "ambiente": "silencio",
-   "sfx": [
-    "viento"
-   ],
-   "source_ids": [
-    "SRC-001",
-    "SRC-002"
-   ],
-   "style_id": "acuarela_linea",
-   "asset_filename": "frames/scene_008.jpg",
-   "asset_type": "image",
-   "motion": "kenburns_auto",
-   "animated_hook": false,
-   "image_origen": "Generada con IA para este paquete; ilustración editorial, no fotografía ni imagen documental."
-  }
- ],
- "cortinilla_fuentes": {
-  "duration_seconds": 6,
-  "titulo": "Fuentes",
-  "aviso": "Imágenes generadas con IA. Voz sintética. Música sintetizada; efectos CC0/dominio público.",
-  "firma": "Datos y ociosidades · @datosyociosidades",
-  "bg_rgb": [
-   12,
-   32,
-   47
+  "resumen": "Un análisis global de 1,627 bibliotecas de ARN viral de 78 especies y 13 países encontró que geografía y parentesco del hospedador explican más variación del viroma que la dieta. Detectar secuencias no demuestra contagio humano.",
+  "estilo_id": "acuarela_linea",
+  "estilo_visual": "Acuarela azul a línea",
+  "sources": [
+    {
+      "id": "SRC-001",
+      "cita_corta": "Huang et al. (2026), Nature Communications",
+      "url": "https://doi.org/10.1038/s41467-026-79059-7",
+      "doi": "10.1038/s41467-026-79059-7",
+      "accessed": "2026-10-31",
+      "publication_date": "2026-10-30",
+      "supports": [
+        "1,627 bibliotecas, 78 especies y 13 países",
+        "309,546 vOTUs reconstruidas y 82.74% sin clasificar",
+        "Influencia relativa de geografía, filogenia y dieta"
+      ],
+      "verification_status": "VERIFICADO_RESOLVEDOR"
+    },
+    {
+      "id": "SRC-002",
+      "cita_corta": "Resultados y discusión del artículo original",
+      "url": "https://www.nature.com/articles/s41467-026-79059-7",
+      "doi": "10.1038/s41467-026-79059-7",
+      "accessed": "2026-10-31",
+      "publication_date": "2026-10-30",
+      "supports": [
+        "La detección de secuencias virales no equivale a demostrar riesgo zoonótico individual ni contagio humano"
+      ],
+      "verification_status": "VERIFICADO_RESOLVEDOR"
+    }
   ],
-  "fuentes_en_pantalla": [
-   "Huang et al. (2026), Nature Communications, doi:10.1038/s41467-026-79059-7",
-   "Resultados y discusión del artículo original, doi:10.1038/s41467-026-79059-7"
-  ]
- },
- "audio": {
-  "music_asset": "sintetico:marimba",
-  "cama_musical": "marimba",
-  "music_lufs": -38,
-  "ambiente_lufs": -30,
-  "music_license": "Síntesis propia del pipeline scripts/cama_sonora.py; el repositorio describe la música sintetizada como obra propia. El documento de licencia de audio citado por el código no está presente en docs/; ver licencias.json.",
-  "sfx_license": "Wikimedia Commons CC0/dominio público según scripts/sfx_manifest.json; descarga y verificación final de archivos quedan para el pipeline.",
-  "music_protagonista": false
- },
- "export": {
-  "filename": "capsula.mp4",
-  "resolution": "1080x1920",
-  "fps": 30,
-  "video_codec": "h264",
-  "audio_codec": "aac",
-  "loudness_lufs": -14,
-  "plano_seconds": 2.5,
-  "subtitle_max_words": 3
- },
- "proveedor_imagenes": "Generador de imágenes IA de Grok Bot; ocho imágenes ilustrativas generadas para este paquete y ajustadas a 1080x1920.",
- "parece_real": false,
- "canal": {
-  "nombre": "Datos y ociosidades",
-  "handle": "@datosyociosidades",
-  "youtube_channel_id": "UCU2ZI-6pBJEr9aSFsF6bxLw"
- },
- "publicacion": {
-  "youtube": {
-   "privacy": "private",
-   "publishAt": "",
-   "titulo": "Los murciélagos y sus virus #Shorts",
-   "tags": [
-    "#Shorts",
-    "murcielagos",
-    "ciencia",
-    "animales",
-    "sabiasque"
-   ],
-   "synthetic_content": true
-  }
- },
- "estado_produccion": "MONTADO_PENDIENTE_PROGRAMAR"
+  "title": "Los murciélagos y sus virus #Shorts",
+  "titulo": "¿Qué define sus virus?",
+  "audience": "Público general curioso (YouTube Shorts)",
+  "voice": {
+    "engine": "edge-tts",
+    "voice_id": "es-MX-JorgeNeural",
+    "rate": "-2%",
+    "pitch": "-2Hz",
+    "pad_seconds": 0.7,
+    "modo_pausas": "continuo"
+  },
+  "scenes": [
+    {
+      "id": "scene_001",
+      "arc": "hook_medias_res",
+      "duration_seconds": 9,
+      "narration": "¿Qué determina los virus que encontramos en los murciélagos: lo que comen o el lugar donde viven?",
+      "on_screen_text": "¿Qué define sus virus?",
+      "visual_description": "Murciélago en una cueva; dos capas visuales contrastan alimento y paisaje; acercamiento lento.",
+      "image_prompt": "delicate blue watercolor wash with fine ink line drawing, monochrome indigo-blue tones fading to white paper, loose expressive brushwork, vertical 9:16, no text. Murciélago en una cueva; dos capas visuales contrastan alimento y paisaje; acercamiento lento.. No text, no lettering.",
+      "ambiente": "silencio",
+      "sfx": [
+        "viento"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "style_id": "acuarela_linea",
+      "asset_filename": "frames/scene_001.jpg",
+      "asset_type": "image",
+      "motion": "kenburns_auto",
+      "animated_hook": false,
+      "image_origen": "Generada con IA para este paquete; ilustración editorial, no fotografía ni imagen documental."
+    },
+    {
+      "id": "scene_002",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "Para responderlo, un estudio global reunió mil seiscientas veintisiete bibliotecas de ARN viral de setenta y ocho especies, procedentes de trece países.",
+      "on_screen_text": "78 especies · 13 países",
+      "visual_description": "Composición de siluetas de especies distintas; contador visual de 78 especies y 13 países.",
+      "image_prompt": "delicate blue watercolor wash with fine ink line drawing, monochrome indigo-blue tones fading to white paper, loose expressive brushwork, vertical 9:16, no text. Composición de siluetas de especies distintas; contador visual de 78 especies y 13 países.. No text, no lettering.",
+      "ambiente": "silencio",
+      "sfx": [
+        "viento"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "style_id": "acuarela_linea",
+      "asset_filename": "frames/scene_002.jpg",
+      "asset_type": "image",
+      "motion": "kenburns_auto",
+      "animated_hook": false,
+      "image_origen": "Generada con IA para este paquete; ilustración editorial, no fotografía ni imagen documental."
+    },
+    {
+      "id": "scene_003",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "El equipo reconstruyó más de trescientas nueve mil unidades virales, aunque el 82.74 por ciento permaneció sin clasificar.",
+      "on_screen_text": "309,546 unidades virales",
+      "visual_description": "Tubos de laboratorio y secuencias abstractas; gráfico 1,627 bibliotecas y 309,546 vOTUs; marcar 82.74% sin clasificar.",
+      "image_prompt": "delicate blue watercolor wash with fine ink line drawing, monochrome indigo-blue tones fading to white paper, loose expressive brushwork, vertical 9:16, no text. Tubos de laboratorio y secuencias abstractas; gráfico 1,627 bibliotecas y 309,546 vOTUs; marcar 82.74% sin clasificar.. No text, no lettering.",
+      "ambiente": "silencio",
+      "sfx": [
+        "viento"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "style_id": "acuarela_linea",
+      "asset_filename": "frames/scene_003.jpg",
+      "asset_type": "image",
+      "motion": "kenburns_auto",
+      "animated_hook": false,
+      "image_origen": "Generada con IA para este paquete; ilustración editorial, no fotografía ni imagen documental."
+    },
+    {
+      "id": "scene_004",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "La comparación reveló que la geografía y la historia evolutiva del hospedador explican más diferencias que la dieta. Pesa más dónde vive y de qué linaje viene.",
+      "on_screen_text": "Geografía + parentesco",
+      "visual_description": "Tres capas separadas: mapa esquemático, árbol evolutivo y dieta; destacar las dos primeras.",
+      "image_prompt": "delicate blue watercolor wash with fine ink line drawing, monochrome indigo-blue tones fading to white paper, loose expressive brushwork, vertical 9:16, no text. Tres capas separadas: mapa esquemático, árbol evolutivo y dieta; destacar las dos primeras.. No text, no lettering.",
+      "ambiente": "silencio",
+      "sfx": [
+        "viento"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "style_id": "acuarela_linea",
+      "asset_filename": "frames/scene_004.jpg",
+      "asset_type": "image",
+      "motion": "kenburns_auto",
+      "animated_hook": false,
+      "image_origen": "Generada con IA para este paquete; ilustración editorial, no fotografía ni imagen documental."
+    },
+    {
+      "id": "scene_005",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "La dieta sí se relaciona con la composición de las comunidades virales, pero su influencia es secundaria.",
+      "on_screen_text": "La dieta también influye",
+      "visual_description": "Comparación ilustrada de murciélago frugívoro, insectívoro y hematófago; no atribuirlos a sitios concretos.",
+      "image_prompt": "delicate blue watercolor wash with fine ink line drawing, monochrome indigo-blue tones fading to white paper, loose expressive brushwork, vertical 9:16, no text. Comparación ilustrada de murciélago frugívoro, insectívoro y hematófago; no atribuirlos a sitios concretos.. No text, no lettering.",
+      "ambiente": "silencio",
+      "sfx": [
+        "viento"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "style_id": "acuarela_linea",
+      "asset_filename": "frames/scene_005.jpg",
+      "asset_type": "image",
+      "motion": "kenburns_auto",
+      "animated_hook": false,
+      "image_origen": "Generada con IA para este paquete; ilustración editorial, no fotografía ni imagen documental."
+    },
+    {
+      "id": "scene_006",
+      "arc": "cierre_historia",
+      "duration_seconds": 10,
+      "narration": "Los murciélagos hematófagos, los que se alimentan de sangre, mostraron una comunidad viral particular, distinta de la de otras especies.",
+      "on_screen_text": "Detectar ≠ contagio",
+      "visual_description": "Ficha de laboratorio con signo de interrogación entre detección y riesgo humano; tono neutral.",
+      "image_prompt": "delicate blue watercolor wash with fine ink line drawing, monochrome indigo-blue tones fading to white paper, loose expressive brushwork, vertical 9:16, no text. Ficha de laboratorio con signo de interrogación entre detección y riesgo humano; tono neutral.. No text, no lettering.",
+      "ambiente": "silencio",
+      "sfx": [
+        "viento"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "style_id": "acuarela_linea",
+      "asset_filename": "frames/scene_006.jpg",
+      "asset_type": "image",
+      "motion": "kenburns_auto",
+      "animated_hook": false,
+      "image_origen": "Generada con IA para este paquete; ilustración editorial, no fotografía ni imagen documental."
+    },
+    {
+      "id": "scene_007",
+      "arc": "reflexion_o_pregunta",
+      "duration_seconds": 9,
+      "narration": "Un límite clave: detectar una secuencia viral no prueba que pueda infectar a personas, y la mayoría de esos virus ni siquiera está clasificada todavía.",
+      "on_screen_text": "El contexto importa",
+      "visual_description": "Mapa global esquemático sin pins ni rutas, conectado a ramas evolutivas y silueta de murciélago.",
+      "image_prompt": "delicate blue watercolor wash with fine ink line drawing, monochrome indigo-blue tones fading to white paper, loose expressive brushwork, vertical 9:16, no text. Mapa global esquemático sin pins ni rutas, conectado a ramas evolutivas y silueta de murciélago.. No text, no lettering.",
+      "ambiente": "silencio",
+      "sfx": [
+        "viento"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "style_id": "acuarela_linea",
+      "asset_filename": "frames/scene_007.jpg",
+      "asset_type": "image",
+      "motion": "kenburns_auto",
+      "animated_hook": false,
+      "image_origen": "Generada con IA para este paquete; ilustración editorial, no fotografía ni imagen documental."
+    },
+    {
+      "id": "scene_008",
+      "arc": "reflexion_o_pregunta",
+      "duration_seconds": 10,
+      "narration": "Sus virus hablan más de dónde vive un murciélago y de quién desciende que de lo que come. ¿Qué otro animal te gustaría ver bajo esta lupa? Esto fue Datos y ociosidades.",
+      "on_screen_text": "Datos y ociosidades",
+      "visual_description": "Murciélago al anochecer, salida de cueva; cierre sereno.",
+      "image_prompt": "delicate blue watercolor wash with fine ink line drawing, monochrome indigo-blue tones fading to white paper, loose expressive brushwork, vertical 9:16, no text. Murciélago al anochecer, salida de cueva; cierre sereno.. No text, no lettering.",
+      "ambiente": "silencio",
+      "sfx": [
+        "viento"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "style_id": "acuarela_linea",
+      "asset_filename": "frames/scene_008.jpg",
+      "asset_type": "image",
+      "motion": "kenburns_auto",
+      "animated_hook": false,
+      "image_origen": "Generada con IA para este paquete; ilustración editorial, no fotografía ni imagen documental."
+    }
+  ],
+  "cortinilla_fuentes": {
+    "duration_seconds": 6,
+    "titulo": "Fuentes",
+    "aviso": "Imágenes generadas con IA. Voz sintética. Música sintetizada; efectos CC0/dominio público.",
+    "firma": "Datos y ociosidades · @datosyociosidades",
+    "bg_rgb": [
+      12,
+      32,
+      47
+    ],
+    "fuentes_en_pantalla": [
+      "Huang et al. (2026), Nature Communications, doi:10.1038/s41467-026-79059-7",
+      "Resultados y discusión del artículo original, doi:10.1038/s41467-026-79059-7"
+    ]
+  },
+  "audio": {
+    "music_asset": "sintetico:marimba",
+    "cama_musical": "marimba",
+    "music_lufs": -38,
+    "ambiente_lufs": -30,
+    "music_license": "Síntesis propia del pipeline scripts/cama_sonora.py; el repositorio describe la música sintetizada como obra propia. El documento de licencia de audio citado por el código no está presente en docs/; ver licencias.json.",
+    "sfx_license": "Wikimedia Commons CC0/dominio público según scripts/sfx_manifest.json; descarga y verificación final de archivos quedan para el pipeline.",
+    "music_protagonista": false
+  },
+  "export": {
+    "filename": "capsula.mp4",
+    "resolution": "1080x1920",
+    "fps": 30,
+    "video_codec": "h264",
+    "audio_codec": "aac",
+    "loudness_lufs": -14,
+    "plano_seconds": 2.5,
+    "subtitle_max_words": 3
+  },
+  "proveedor_imagenes": "Generador de imágenes IA de Grok Bot; ocho imágenes ilustrativas generadas para este paquete y ajustadas a 1080x1920.",
+  "parece_real": false,
+  "canal": {
+    "nombre": "Datos y ociosidades",
+    "handle": "@datosyociosidades",
+    "youtube_channel_id": "UCU2ZI-6pBJEr9aSFsF6bxLw"
+  },
+  "publicacion": {
+    "youtube": {
+      "privacy": "private",
+      "publishAt": "",
+      "titulo": "Los murciélagos y sus virus #Shorts",
+      "tags": [
+        "#Shorts",
+        "murcielagos",
+        "ciencia",
+        "animales",
+        "sabiasque"
+      ],
+      "synthetic_content": true
+    }
+  },
+  "estado_produccion": "MONTADO_PENDIENTE_PROGRAMAR",
+  "thumbnail_source": "scene_001"
 }

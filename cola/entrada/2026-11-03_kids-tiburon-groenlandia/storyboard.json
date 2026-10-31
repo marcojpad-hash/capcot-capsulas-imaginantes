@@ -192,7 +192,7 @@
       "id": "scene_007",
       "arc": "cierre_historia",
       "duration_seconds": 9,
-      "narration": "También estimaron que la madurez sexual llega muy tarde: alrededor de ciento cincuenta y seis años o más. Eso vuelve vulnerable a la especie ante la pesca.",
+      "narration": "Un matiz: esas edades son estimaciones con márgenes amplios. Y si la madurez llega cerca de los ciento cincuenta y seis años, la pesca la vuelve vulnerable.",
       "on_screen_text": "Madurez tardía",
       "visual_description": "Tiburón adulto bajo hielo; red pesquera distante como amenaza contextual, sin captura explícita.",
       "image_prompt": "child's wax crayon drawing on white paper, naive shapes, bright colors, visible crayon strokes, cheerful sun, vertical 9:16, no text Tiburón adulto bajo hielo; red pesquera distante como amenaza contextual, sin captura explícita.; ilustración científica clara, vertical 9:16, sin etiquetas ni texto.",
@@ -207,7 +207,7 @@
       "id": "scene_008",
       "arc": "reflexion_o_pregunta",
       "duration_seconds": 9,
-      "narration": "Un animal puede llevar siglos recorriendo el océano sin que lo notemos. Su edad nos recuerda lo lento que puede ser el tiempo en la naturaleza. Esto fue Datos y ociosidades.",
+      "narration": "Algunos tiburones que nadan hoy pudieron nacer hace siglos y seguir creciendo despacio. ¿Qué crees que ha cambiado en el mar desde entonces? Esto fue Datos y ociosidades.",
       "on_screen_text": "Tiempo profundo",
       "visual_description": "Tiburón alejándose hacia una columna azul de luz bajo el hielo.",
       "image_prompt": "child's wax crayon drawing on white paper, naive shapes, bright colors, visible crayon strokes, cheerful sun, vertical 9:16, no text Tiburón alejándose hacia una columna azul de luz bajo el hielo.; ilustración científica clara, vertical 9:16, sin etiquetas ni texto.",
@@ -251,5 +251,6 @@
   "production_mode": "storyboard_only",
   "validation_notes": [],
   "approved_assets": [],
-  "risk_notes": []
+  "risk_notes": [],
+  "thumbnail_source": "scene_001"
 }

@@ -90,7 +90,7 @@
         "SRC-001",
         "SRC-002"
       ],
-      "asset_filename": "frames/scene_001.png",
+      "asset_filename": "frames/scene_001.jpg",
       "asset_type": "image",
       "motion": "kenburns_auto",
       "animated_hook": false,
@@ -112,7 +112,7 @@
         "SRC-001",
         "SRC-003"
       ],
-      "asset_filename": "frames/scene_002.png",
+      "asset_filename": "frames/scene_002.jpg",
       "asset_type": "image",
       "motion": "kenburns_auto",
       "animated_hook": false,
@@ -151,7 +151,7 @@
       "source_ids": [
         "SRC-001"
       ],
-      "asset_filename": "frames/scene_003.png",
+      "asset_filename": "frames/scene_003.jpg",
       "asset_type": "image",
       "motion": "kenburns_auto",
       "animated_hook": false,
@@ -172,7 +172,7 @@
       "source_ids": [
         "SRC-001"
       ],
-      "asset_filename": "frames/scene_004.png",
+      "asset_filename": "frames/scene_004.jpg",
       "asset_type": "image",
       "motion": "kenburns_auto",
       "animated_hook": false,
@@ -199,7 +199,7 @@
       "source_ids": [
         "SRC-001"
       ],
-      "asset_filename": "frames/scene_005.png",
+      "asset_filename": "frames/scene_005.jpg",
       "asset_type": "image",
       "motion": "kenburns_auto",
       "animated_hook": false,
@@ -209,10 +209,11 @@
       ],
       "image_origen": "Generada con IA para este paquete; ilustración editorial, no fotografía ni imagen documental.",
       "capa": {
-        "tipo": "grafico",
+        "tipo": "dato",
         "valor": "1.4–2.1 km",
         "etiqueta": "Espesor estimado, corregido por nivel relativo del mar",
-        "fuente": "Klotsko et al. (2026), Nature Geoscience, DOI 10.1038/s41561-026-02126-7"
+        "fuente": "Klotsko et al. (2026), Nature Geoscience, DOI 10.1038/s41561-026-02126-7",
+        "nota_grok": "grafico sin serie x/y; renderizado como dato (mismo valor/fuente)"
       }
     },
     {
@@ -226,7 +227,7 @@
       "source_ids": [
         "SRC-001"
       ],
-      "asset_filename": "frames/scene_006.png",
+      "asset_filename": "frames/scene_006.jpg",
       "asset_type": "image",
       "motion": "kenburns_auto",
       "animated_hook": false,
@@ -247,7 +248,7 @@
       "source_ids": [
         "SRC-001"
       ],
-      "asset_filename": "frames/scene_007.png",
+      "asset_filename": "frames/scene_007.jpg",
       "asset_type": "image",
       "motion": "kenburns_auto",
       "animated_hook": false,
@@ -261,7 +262,7 @@
       "id": "scene_008",
       "arc": "reflexion_o_pregunta",
       "duration_seconds": 9,
-      "narration": "No significa que el Ártico antiguo sea un duplicado del presente. El estudio ofrece una analogía física para las plataformas que hoy sostienen el hielo antártico.",
+      "narration": "El límite: el Ártico antiguo no es un duplicado del presente. El estudio ofrece una analogía física para las plataformas que hoy sostienen el hielo antártico.",
       "on_screen_text": "Una analogía actual",
       "visual_description": "A present-day Antarctic floating ice shelf at the edge of a vast ice sheet, dark ocean, crevassed blue-white ice and distant mountains, a visual analogy rather than a literal reconstruction.",
       "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text + A present-day Antarctic floating ice shelf at the edge of a vast ice sheet, dark ocean, crevassed blue-white ice and distant mountains, a visual analogy rather than a literal reconstruction. vertical 9:16, no text",
@@ -269,7 +270,7 @@
         "SRC-001",
         "SRC-002"
       ],
-      "asset_filename": "frames/scene_008.png",
+      "asset_filename": "frames/scene_008.jpg",
       "asset_type": "image",
       "motion": "kenburns_auto",
       "animated_hook": false,
@@ -283,7 +284,7 @@
       "id": "scene_009",
       "arc": "reflexion_o_pregunta",
       "duration_seconds": 9,
-      "narration": "Si ese soporte se debilita, los glaciares pueden retroceder con mayor facilidad. El fondo marino guarda la memoria de lo que puede ocurrir cuando una barrera desaparece. Esto fue Datos y ociosidades.",
+      "narration": "El fondo marino guarda la memoria de lo que pasa cuando un soporte de hielo desaparece. ¿Qué crees que nos enseñará la Antártida en las próximas décadas? Esto fue Datos y ociosidades.",
       "on_screen_text": "El hielo deja huellas",
       "visual_description": "A wide polar landscape where a vast ice shelf recedes toward distant glaciers, with a narrow band of open water and golden light across a dark teal sea, contemplative closing image.",
       "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text + A wide polar landscape where a vast ice shelf recedes toward distant glaciers, with a narrow band of open water and golden light across a dark teal sea, contemplative closing image. vertical 9:16, no text",
@@ -291,7 +292,7 @@
         "SRC-001",
         "SRC-002"
       ],
-      "asset_filename": "frames/scene_009.png",
+      "asset_filename": "frames/scene_009.jpg",
       "asset_type": "image",
       "motion": "kenburns_auto",
       "animated_hook": false,
@@ -364,5 +365,6 @@
       "caption": "Una plataforma de hielo sostuvo tres mantos durante la última glaciación. La huella quedó bajo el mar. #Ciencia #Glaciación"
     }
   },
-  "estado_produccion": "PAQUETE_PREPARADO_NO_RENDERIZADO_NO_PUBLICADO"
+  "estado_produccion": "PAQUETE_PREPARADO_NO_RENDERIZADO_NO_PUBLICADO",
+  "thumbnail_source": "scene_001"
 }

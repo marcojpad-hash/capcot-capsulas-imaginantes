@@ -149,7 +149,7 @@
       "id": "scene_006",
       "arc": "cierre_historia",
       "duration_seconds": 10,
-      "narration": "La cifra o el fenómeno debe interpretarse dentro de las condiciones medidas, no como regla sin excepciones.",
+      "narration": "El límite: estos estados se describieron en Octopus insularis. Ver cambios en la piel no basta para saber si existe algo parecido a un sueño humano.",
       "on_screen_text": "Qué sabemos",
       "visual_description": "Ilustración educativa secuencial sobre ¿sueñan los pulpos?",
       "image_prompt": "miniature crochet amigurumi characters, macro photography, shallow depth of field, soft natural window light turning to warm firelight, handmade yarn texture, cozy diorama props, vertical 9:16, no text, educational visual scene illustrating ¿sueñan los pulpos?, consistent continuity",
@@ -164,7 +164,7 @@
       "id": "scene_007",
       "arc": "reflexion_o_pregunta",
       "duration_seconds": 10,
-      "narration": "Esto fue Datos y ociosidades.",
+      "narration": "Un pulpo dormido puede repetir en la piel patrones de su vida despierta, pero su mente sigue siendo un misterio. ¿Tú qué crees que siente? Esto fue Datos y ociosidades.",
       "on_screen_text": "Esto fue Datos y ociosidades",
       "visual_description": "Ilustración educativa secuencial sobre ¿sueñan los pulpos?",
       "image_prompt": "miniature crochet amigurumi characters, macro photography, shallow depth of field, soft natural window light turning to warm firelight, handmade yarn texture, cozy diorama props, vertical 9:16, no text, educational visual scene illustrating ¿sueñan los pulpos?, consistent continuity",
@@ -213,5 +213,6 @@
   "approved_assets": [],
   "risk_notes": [
     "No generalizar más allá de la fuente."
-  ]
+  ],
+  "thumbnail_source": "scene_001"
 }

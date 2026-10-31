@@ -246,7 +246,7 @@
       "id": "scene_008",
       "arc": "reflexion_o_pregunta",
       "duration_seconds": 9,
-      "narration": "Un consejo práctico: congela el pan que no vas a consumir pronto y recaliéntalo al servirlo. Esto fue Datos y ociosidades.",
+      "narration": "Tip: congela el pan que no vas a comer pronto y recaliéntalo al servirlo. El calor ayuda a suavizar la miga. ¿Qué haces tú con el pan duro? Esto fue Datos y ociosidades.",
       "on_screen_text": "Congela, luego recalienta",
       "visual_description": "Rebanadas guardadas en congelador y tostadas al servir; consejo práctico claro.",
       "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text Rebanadas guardadas en congelador y tostadas al servir; consejo práctico claro., clear scientific illustration, no labels",
@@ -307,5 +307,6 @@
   "approved_assets": [],
   "risk_notes": [
     "Cifras no incluidas sin respaldo específico."
-  ]
+  ],
+  "thumbnail_source": "scene_001"
 }

@@ -54,6 +54,21 @@ def youtube(mp4, md, ejecutar, privacidad=None, publish_at=None, meta=None):
     if CANAL_ID not in mine: sys.exit(f"token no es del canal {CANAL_ID}: {mine}")
     return yt.videos().insert(part="snippet,status", body=body, media_body=MediaFileUpload(mp4, resumable=True)).execute()
 
+def thumbnail_gancho(video_id, d, sbn="storyboard.json", yt=None):
+    """Regla Mj 31-oct: portada YT = frame de la escena gancho (thumbnail_source, por defecto scene_001)."""
+    from PIL import Image; from googleapiclient.http import MediaFileUpload
+    sb = json.load(open(os.path.join(d, sbn), encoding="utf-8"))
+    sid = sb.get("thumbnail_source") or sb["scenes"][0]["id"]
+    sc = next(x for x in sb["scenes"] if x["id"] == sid)
+    base = [os.path.join(d, sc.get("asset_filename", ""))]
+    pid = sb.get("project_id", ""); R = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    base += [os.path.join(R, "proyectos", pid, sc.get("asset_filename", ""))]
+    src = next((p for p in base if os.path.isfile(p)), None)
+    if not src: raise FileNotFoundError(f"frame gancho {sid} no encontrado: {base}")
+    out = os.path.join(d, "thumbnail_gancho.jpg"); im = Image.open(src).convert("RGB"); im.thumbnail((1280, 1280)); im.save(out, quality=88)
+    yt = yt or yt_cliente()
+    return yt.thumbnails().set(videoId=video_id, media_body=MediaFileUpload(out, mimetype="image/jpeg")).execute()
+
 def tiktok(mp4, md, ejecutar):
     md = {**md, "caption": META.get("tiktok_caption", "")}
     size = os.path.getsize(mp4)
@@ -83,4 +98,7 @@ if __name__ == "__main__":
     elif a.plataforma in ("tt", "ambas"): res["tiktok"] = tiktok(mp4, md, a.ejecutar)
     json.dump({"metadatos": md, "resultado": res}, open(os.path.join(a.dir, "publicacion.json"), "w"), ensure_ascii=False, indent=1)
     print("dry-run: nada publicado" if not a.ejecutar else "publicado")
-    if a.ejecutar and isinstance(res.get("youtube"), dict) and res["youtube"].get("id"): print("YT_ID", res["youtube"]["id"])
+    if a.ejecutar and isinstance(res.get("youtube"), dict) and res["youtube"].get("id"):
+        print("YT_ID", res["youtube"]["id"])
+        try: print("THUMB", thumbnail_gancho(res["youtube"]["id"], a.dir, a.storyboard))
+        except Exception as e: print("THUMB_ERROR (subir portada gancho a mano):", e, file=sys.stderr)
