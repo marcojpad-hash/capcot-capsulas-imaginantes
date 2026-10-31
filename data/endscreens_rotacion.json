@@ -1,13 +1,13 @@
 {
   "fecha": "2026-10-31",
   "tipo": "endscreens_rotacion",
-  "actualizado_cdmx": "2026-10-31T12:48-06:00",
-  "motivo": "Corneja ZHdJXFrURk4 (pública 07:00, sin pantalla) → monarca p4eXmoJ2f18 (257, flojo). Resto sin cambios.",
+  "actualizado_cdmx": "2026-10-31T13:49-06:00",
+  "motivo": "Corales Mz-IVFvFWH4 (pública 13:30, sin pantalla) → Voyager OFpAg4XA3AM (17, flojo). Resto sin cambios.",
   "vistas_ref": {
-    "p4eXmoJ2f18": 257,
-    "OFpAg4XA3AM": 16,
-    "inzztxrxYfg": 676,
-    "mWtf7Yta294": 984,
+    "p4eXmoJ2f18": 316,
+    "OFpAg4XA3AM": 17,
+    "inzztxrxYfg": 678,
+    "mWtf7Yta294": 985,
     "RhiKtLt2UNQ": 596,
     "oGFKLUgBdhA": 1300,
     "5XQfUHpyTWs": 981,
@@ -29,7 +29,9 @@
     "O7TdKvuBjyg": 18,
     "r1AhsPOAS_o": 1300,
     "ZrUtKs7Ty7U": 1300,
-    "5D96DmjvioU": 632
+    "5D96DmjvioU": 632,
+    "Mz-IVFvFWH4": 4,
+    "ZHdJXFrURk4": 3
   },
   "mapa": {
     "r1AhsPOAS_o": "AJR6kcnnDig",
@@ -58,7 +60,8 @@
     "RhiKtLt2UNQ": "p4eXmoJ2f18",
     "p4eXmoJ2f18": "OFpAg4XA3AM",
     "OFpAg4XA3AM": "AJR6kcnnDig",
-    "ZHdJXFrURk4": "p4eXmoJ2f18"
+    "ZHdJXFrURk4": "p4eXmoJ2f18",
+    "Mz-IVFvFWH4": "OFpAg4XA3AM"
   },
   "pendiente_studio": false,
   "nota": "Aplicado en YouTube Studio Editor > Pantalla final (video específico). Búsqueda: pegar youtube.com/watch?v=ID en 'Buscar vídeos de otros canales' (tus vídeos no lista Shorts). Sin suscripción ni tarjetas. Actualización 26-oct 19:49: la lista «Elegir un vídeo específico» ya muestra los Shorts.",
@@ -89,7 +92,8 @@
     "RhiKtLt2UNQ": "aplicado_nuevo 31-oct 11:54 → p4eXmoJ2f18",
     "p4eXmoJ2f18": "aplicado_nuevo 31-oct 11:54 → OFpAg4XA3AM",
     "OFpAg4XA3AM": "aplicado_nuevo 31-oct 11:54 → AJR6kcnnDig",
-    "ZHdJXFrURk4": "aplicado_nuevo 31-oct 12:48 → p4eXmoJ2f18"
+    "ZHdJXFrURk4": "aplicado_nuevo 31-oct 12:48 → p4eXmoJ2f18",
+    "Mz-IVFvFWH4": "aplicado_nuevo_2026-10-31 13:49 → OFpAg4XA3AM"
   },
   "fijos": {
     "Qe2Y9xDn9QQ": "gIjJ0YKYQ8M",
