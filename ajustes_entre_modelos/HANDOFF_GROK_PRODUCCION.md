@@ -51,3 +51,7 @@ Elige por temática desde el catálogo. **No uses** linograbado, disney_clasico,
 - Mínimo: storyboard + frames + fuentes.md en `cola/entrada/<id>/` (o `proyectos/<id>/`). Ideal: paquete montado en `salidas/<id>/` con QA oficial.
 - Commit sin mp4/png/tokens (ya en .gitignore). Mensaje: `Paquete <id> (<estilo>, <estructura>) para <fecha>`.
 - Pasa el checklist de 14 puntos de GUIA_MODELO_EXTERNO antes de entregar.
+
+## Actualización obligatoria — Bot no duplica preproducción
+
+Este handoff histórico queda subordinado a `docs/PROTOCOLO_DESCARGA_CARGA_GROK.md`. En el flujo actual, ChatGPT entrega tema seleccionado, investigación verificada, fuentes, guion final, storyboard, prompts por escena y metadata. **Grok Bot no debe volver a ejecutar los pasos 1 y 2 de investigación/storyboard por rutina**: debe revisar que el paquete esté completo, registrar recepción y pasar a generar frames/medios, voz/audio, montaje, render y QA. Si falta evidencia o hay un error factual, devuelve a ChatGPT el claim y el campo exactos; ChatGPT investiga y entrega el parche. Bot corrige únicamente defectos de producción y cambios locales. No rehacer todo el guion ni regenerar escenas aprobadas sin motivo de QA. Las correcciones también consumen tokens: mantenerlas acotadas. Los pasos históricos de research y storyboard solo aplican cuando Mj asigne expresamente a Bot un trabajo extraordinario de preproducción.
