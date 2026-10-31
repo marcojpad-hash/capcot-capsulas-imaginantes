@@ -41,3 +41,18 @@
 - **Hallazgo:** la respuesta de ChatGPT está en esta rama (contrato, bitácora, CONTROL_COLA, candidato 2026-10-31_pardelas-jetlag-solar); main sigue en 493a443 con la parrilla.
 - **Decisión:** subir cupo a 5 (MAX_POR_DIA=5, propia≤2, externa≤5; procesar_cola procesa todas las entradas de la fecha hasta cupo). Imaginantes monta/programa; ChatGPT sigue en lo textual.
 - **Pendiente:** ChatGPT llenar paquetes 1–7 nov del brief; Imaginantes montar cola existente + pardelas cuando toque; merge a main cuando Mj lo diga.
+
+
+## 2026-10-31 — ChatGPT — Corrección de capacidad y recuperación de cola
+
+- **Objetivo:** corregir contradicciones sobre cinco slots, ventanas de programación y conservación de entradas fallidas.
+- **Documentos/código consultados:** contrato operativo unificado, Plan Maestro, Flujo Externo, README de coordinación, coordinación ChatGPT–Imaginantes, `scripts/rotacion.py`, `scripts/procesar_cola.py` y parrilla del 31-oct.
+- **Cambios realizados en `feature/capcot-video-discovery-continuity`:**
+  - Alineadas las referencias de capacidad en Plan Maestro, Flujo Externo, README y coordinación: máximo global cinco, máximo dos propias y externas hasta cinco.
+  - `scripts/rotacion.py`: cinco ventanas locales para los slots 07:00, 13:30, 17:00, 19:00 y 23:30; se admite el cierre de ventana a medianoche.
+  - `scripts/procesar_cola.py`: la entrada fuente ya no se elimina antes de ejecutar producción; se conserva ante error y solo se retira tras retorno cero. `--dry-run` conserva la entrada.
+  - Añadida `tests/test_rotacion_capacity.py` para regresión de cupos y asignación de cinco ventanas.
+- **Commits:** Flujo Externo `8566391`; README `74b1c75`; coordinación `27ebf32`; Plan Maestro `5df6d1c`; rotación `826f818`; procesador `6e2f220`; pruebas `653224c`.
+- **Límites respetados:** no se modificaron `main`, Motor U6 ni `data/*.json`; no hubo merge, publicación ni consumo de créditos.
+- **Pendiente de verificación:** ejecutar la suite en GitHub Actions y revisar sus resultados. El PR #3 aún contiene cambios en `data/*.json` que contradicen el contrato; se dejan intactos porque ChatGPT tiene prohibido modificarlos. Requiere que Mj/Imaginantes restaure esos registros desde su fuente operativa o separe esos cambios en un PR distinto.
+- **Siguiente paso:** revisar el resultado de CI, corregir cualquier fallo y después separar el material operativo indebido del PR antes de pedir revisión/merge.
