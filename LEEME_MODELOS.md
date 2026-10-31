@@ -1,5 +1,7 @@
 # Reglas para los modelos (Claude, ChatGPT, Grok Bot)
 
+> **ENTRADA PRINCIPAL (ChatGPT / Grok): `ajustes_entre_modelos/COORDINACION_CHATGPT_IMAGINANTES.md`.** Acceso de Grok: `ajustes_entre_modelos/ACCESO_GROK.md`. Brief vigente: `ajustes_entre_modelos/PARA_CHATGPT_31oct.md`.
+
 > **Grok (producción de variedad): lee `ajustes_entre_modelos/HANDOFF_GROK_PRODUCCION.md`.**
 - `investigacion/` contiene los análisis de estilo, la estrategia viral y el pipeline. Si quieres complementarlos, añade un archivo propio con tu nombre de modelo y la fecha; no sobrescribas los de otros.
 - `referencias/` contiene los clips de muestra de Mj.
