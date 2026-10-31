@@ -48,14 +48,14 @@
       "hora": "17:00",
       "cesta": "intermedio_1",
       "project_id": "2026-10-26_baffin-bay-ice-shelf",
-      "estado": "programado_yt",
+      "estado": "programado_yt_tt_fb",
       "notas": "Sustituye corales (ya publicado 31-oct). Montar+programar YT 1-nov 17:00.",
       "yt_id": "krh0Ll3kVjM",
       "publishAt": "2026-11-01T23:00:00Z",
       "plataformas": {
         "yt": "programado",
-        "tt": "pending_tiktok",
-        "fb": "pending_fb"
+        "tt": "programado",
+        "fb": "programado"
       }
     },
     {
@@ -63,14 +63,14 @@
       "hora": "19:00",
       "cesta": "intermedio_2",
       "project_id": "2026-10-30_arqueas-origen-eucariotas",
-      "estado": "programado_yt",
+      "estado": "programado_yt_tt_fb",
       "notas": "Sustituye baffin (pasa a 17:00). Preferir arqueas si storyboard OK; si no, ChatGPT.",
       "yt_id": "i2l4BkMvHp0",
       "publishAt": "2026-11-02T01:00:00Z",
       "plataformas": {
         "yt": "programado",
-        "tt": "pending_tiktok",
-        "fb": "pending_fb"
+        "tt": "programado",
+        "fb": "programado"
       }
     },
     {
