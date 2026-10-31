@@ -8,11 +8,23 @@ puntaje(e) = 3*empate_tema(e) + 0.5*atractivo(e) + 2*peso_tendencia(e) - penaliz
 Opcional --llm: si CAPCOT_LLM_API_KEY existe, el LLM elige entre el top-5 (desempate).
 Uso: python3 scripts/rotar_estilo.py "texto del tema" [--top N] | --marcar <estilo> <proyecto>"""
 import json, os, re, sys, unicodedata
+import registro_editorial
 R = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CAT, LOG = os.path.join(R, "scripts", "estilos.json"), os.path.join(R, "data", "estilos_usados.json")
 TEN = os.path.join(R, "data", "tendencias_estilos.json")
 def catalogo(): return json.load(open(CAT, encoding="utf-8"))
-def usados(): return json.load(open(LOG)) if os.path.exists(LOG) else []
+def usados():
+    """Une el registro de estilos con proyectos/cola; no modifica data/*.json."""
+    base = json.load(open(LOG, encoding="utf-8")) if os.path.exists(LOG) else []
+    by_project = {}
+    for x in base:
+        if isinstance(x, dict) and x.get("estilo"):
+            by_project[str(x.get("proyecto") or x.get("project_id") or len(by_project))] = dict(x)
+    for r in registro_editorial.registros():
+        if r.get("estilo"):
+            pid = str(r.get("project_id") or r.get("fecha") or len(by_project))
+            by_project[pid] = {"estilo": r["estilo"], "proyecto": pid, "fecha": r.get("fecha")}
+    return sorted(by_project.values(), key=lambda x: (x.get("fecha") or x.get("proyecto") or ""))
 def _n(s): return unicodedata.normalize("NFKD", s.lower()).encode("ascii", "ignore").decode()
 STOP = {"del","los","las","una","por","que","con","para","como","mas","sus","the","and"}
 def _raiz(w): return w[:5]
