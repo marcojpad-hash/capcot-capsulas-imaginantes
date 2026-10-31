@@ -87,7 +87,7 @@ Fuentes: [`cola/entrada/2026-10-31_pardelas-jetlag-solar_fuentes.md`](../../cola
 - La comprobación estructural de esta ejecución confirma 8 escenas, 218 palabras, duración dentro del rango, arcos obligatorios, prompts con prompt_base literal, source_ids resolubles y presencia de mapa/dato. Esto no equivale al QA oficial.
 
 ### Rotación y cupo
-`data/temas_del_dia.json`, `data/rotacion.json` y `data/publicaciones.json` disponibles en la rama llegan hasta **2026-10-28**. Se inspeccionaron, pero no se modificaron. Por eso no puede certificarse que estructura, estilo, música y tema sean únicos frente a todas las cápsulas del 29–31 oct. El estilo y la estructura elegidos sí difieren de las dos cápsulas externas conocidas del 30-oct, pero falta el registro completo del 31-oct.
+`data/temas_del_dia.json` y `data/rotacion.json` disponibles en la rama llegan hasta **2026-10-28**; `data/publicaciones.json` llega hasta **2026-10-26**. Se inspeccionaron, pero no se modificaron. Por eso no puede certificarse que estructura, estilo, música y tema sean únicos frente a todas las cápsulas del 29–31 oct. El estilo y la estructura elegidos sí difieren de las dos cápsulas externas conocidas del 30-oct, pero falta el registro completo del 31-oct.
 
 ## 5. Seguimiento técnico: Meta y Google Trends
 
