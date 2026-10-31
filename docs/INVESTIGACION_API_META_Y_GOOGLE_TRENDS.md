@@ -169,3 +169,61 @@ Fuentes de contraste: https://docs.supermetrics.com/docs/facebook-insights-field
 No se observó una nueva apertura general de la API ni una modificación de la especificación publicada. La documentación oficial mantiene la alfa de acceso limitado, ventana móvil de cinco años, agregaciones diaria/semanal/mensual/anual, regiones/subregiones y escalado consistente. Se conserva el RSS público MX como señal diaria; no sustituirlo por endpoints internos ni diseñar producción suponiendo acceso a la alfa.
 
 Fuente oficial: https://developers.google.com/search/apis/trends .
+
+
+## 8. Actualización de investigación y decisiones operativas — 2026-10-31
+
+Esta sección separa documentación oficial de observaciones externas. No sustituye la referencia de Meta ni presume que CAPCOT ya concedió OAuth.
+
+### 8.1 Google Trends: rutas disponibles
+
+**API oficial:** continúa publicada como alfa de acceso limitado. La documentación oficial anuncia cinco años de datos, agregación diaria/semanal/mensual/anual, desgloses geográficos y escala consistente entre consultas. No es una API pública disponible para cualquier proyecto. No diseñar la ingesta diaria dependiendo de su aprobación. Fuentes:
+- https://developers.google.com/search/apis/trends
+- https://developers.google.com/search/blog/2025/07/trends-api
+
+**RSS Trends:** mantener `https://trends.google.com/trending/rss?geo=MX` como señal rápida de tendencias emergentes. No representa volumen absoluto, no ofrece por sí solo historial comparable y puede fallar temporalmente. Registrar el error real y continuar con fuentes científicas.
+
+**BigQuery público:** Google documenta conjuntos públicos de Trends con Top 25 y Rising queries de los últimos 30 días. La cobertura descrita incluye Estados Unidos e internacional (alrededor de 50 países); granularidad diaria internacional y ventanas históricas de hasta cinco años. Se puede explorar con BigQuery Sandbox sin tarjeta. Es una ruta de investigación adicional, no asumir cobertura de México hasta comprobar el código de país y las tablas disponibles. Fuente: https://support.google.com/trends/answer/12764470?hl=en
+
+**Decisión:** no incorporar pytrends ni endpoints internos no documentados como dependencia de producción. No usar proxies CORS de terceros como infraestructura de CAPCOT. La ingesta debe preferir RSS oficial y, si se confirma cobertura mexicana, el dataset público de BigQuery. Solicitar alfa oficial como tarea separada, sin bloquear el pipeline.
+
+### 8.2 Meta: separar Instagram de Facebook y no prometer métricas retiradas
+
+Las APIs oficiales permiten trabajar con activos propios autorizados, pero el acceso depende de tipo de cuenta, login elegido, permisos, versión de Graph API y elegibilidad de cada métrica. No existe acceso legítimo a Insights privados de cuentas ajenas por el mero hecho de conocer su nombre.
+
+**Instagram:** mantener dos rutas de autenticación diferenciadas en la implementación:
+- Instagram Login para cuentas profesionales, con los permisos de Instagram que correspondan al endpoint actual.
+- Facebook Login cuando el diseño requiera una Facebook Page vinculada y permisos de Pages.
+
+No mezclar permisos entre flujos. Antes de persistir una métrica, validar el nombre y la disponibilidad contra la referencia oficial de la versión fijada y hacer una consulta de prueba con una publicación propia. Referencia de trabajo: https://www.postman.com/meta/instagram/documentation/6yqw8pt/instagram-api
+
+**Facebook Pages Insights:** hay reportes recientes de cambios/deprecaciones en métricas de reach e impressions de Page/Post y video, incluyendo diferencias de fechas entre changelog y páginas de referencia. La fuente consultada no es Meta; por ello, esta alerta se trata como riesgo operativo y no como especificación definitiva. No codificar métricas antiguas de reach/impressions como obligatorias. Hacer una prueba de descubrimiento de métricas disponibles en el activo real y conservar el nombre original devuelto por Meta. Referencia secundaria de alerta: https://agencyreportr.com/blog/facebook-page-insights-api
+
+**Regla de implementación:** el esquema normalizado conserva `null` cuando una métrica no existe, y añade `source_endpoint`, `api_version`, `captured_at`, `period` y `raw_metric_name`. No sustituir reach por views ni sumar métricas de placements distintos como si fueran equivalentes.
+
+### 8.3 Trabajo técnico que sí puede hacerse sin credenciales
+
+1. Preparar adaptadores independientes Instagram y Facebook, con versión Graph API explícita y lista de métricas configurable.
+2. Crear validador de respuestas que preserve el JSON original y marque campos ausentes, errores de permisos, métricas inválidas y expiración de token sin imprimir secretos.
+3. Normalizar métricas sin inventar equivalencias y guardar snapshots históricos inmutables.
+4. Unificar YouTube Analytics y métricas Meta por publicación, plataforma y ventana de observación; mantener las fuentes separadas.
+5. Generar reporte de rendimiento que compare publicaciones de edad equivalente (por ejemplo 24 h contra 24 h), no vistas acumuladas de distinta antigüedad.
+6. Mantener el radar editorial y la recopilación de métricas como procesos distintos: Trends detecta atención pública; fuentes científicas verifican hechos; Insights mide el rendimiento del canal.
+
+### 8.4 Bloqueos reales y criterio para desbloquearlos
+
+- **Meta OAuth:** requiere autorización del titular de las cuentas y activos. La conexión disponible no expone por sí misma tokens ni demuestra que exista una app Meta autorizada para CAPCOT. No inventar identificadores ni fabricar credenciales. La única acción externa pendiente es completar el consentimiento desde Meta for Developers y guardar el token como secreto del entorno.
+- **Acceso alfa Google Trends:** solicitud pendiente de aceptación por Google. No es un bloqueo para el RSS.
+- **Cobertura BigQuery México:** pendiente de consulta de tabla/código de país; no afirmar cobertura mexicana hasta probarla.
+- **Prueba de métricas:** pendiente de respuesta real de una cuenta propia autorizada. Las pruebas locales deben usar fixtures y nunca enviar llamadas de publicación o interacción.
+- **Coordinación Grok:** Imaginantes no debe volver a investigar tendencias ni recopilar métricas manualmente cuando existan snapshots y reportes automáticos. Su trabajo comienza en selección editorial, generación audiovisual, montaje, QA y publicación.
+
+### 8.5 Fuentes y nivel de confianza
+
+- Google Trends API alfa, documentación oficial: https://developers.google.com/search/apis/trends — **oficial**.
+- Anuncio de Google Trends API, 24-jul-2025: https://developers.google.com/search/blog/2025/07/trends-api — **oficial**.
+- Dataset Google Trends en BigQuery: https://support.google.com/trends/answer/12764470?hl=en — **oficial**.
+- Meta Instagram API workspace: https://www.postman.com/meta/instagram/documentation/6yqw8pt/instagram-api — **documentación de Meta publicada en Postman**; validar cada endpoint contra la referencia vigente.
+- Cambios recientes de Facebook Page Insights: https://agencyreportr.com/blog/facebook-page-insights-api — **fuente secundaria**, alerta para pruebas, no contrato de implementación.
+
+**Estado al corte:** investigación y diseño actualizados; ninguna conexión privada Meta está activada ni ninguna métrica privada fue descargada en esta ejecución. El RSS es la ruta de Trends disponible sin credenciales. No se han consumido créditos ni se han publicado contenidos.
