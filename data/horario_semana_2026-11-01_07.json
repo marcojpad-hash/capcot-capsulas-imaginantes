@@ -1,0 +1,295 @@
+{
+  "semana": "2026-11-01..07",
+  "zona": "America/Mexico_City",
+  "slots_por_dia": 5,
+  "total": 35,
+  "conteo": {
+    "pedir_chatgpt": 21,
+    "reutilizar_cola": 6,
+    "pendiente_dato_dia": 7,
+    "pendiente_ok_mj": 1
+  },
+  "reglas": "ciencia/naturaleza; sin sociedades; no litografia_azul_dorado; evitar grafiti_colorido,bordado,ukiyo_e; no inventar cifras (PENDING_SOURCE)",
+  "slots": [
+    {
+      "fecha": "2026-11-01",
+      "hora": "07:00",
+      "cesta": "kids",
+      "project_id": "2026-11-01_kids-pulpo-tres-corazones",
+      "estado": "pedir_chatgpt",
+      "notas": "TÍTULO: Un pulpo tiene tres corazones y sangre azul. borrador en proyectos/2026-xx_kids_pulpo-tres-corazones; fuentes sugeridas: Smithsonian Ocean, Monterey Bay Aquarium. No marcar Hecho para niños."
+    },
+    {
+      "fecha": "2026-11-01",
+      "hora": "13:30",
+      "cesta": "comida_familia",
+      "project_id": "2026-11-01_comida-cebolla-llorar",
+      "estado": "pedir_chatgpt",
+      "notas": "TÍTULO: Por qué la cebolla te hace llorar. química cotidiana; fuente: Imai et al. 2002 Nature (factor lacrimógeno)"
+    },
+    {
+      "fecha": "2026-11-01",
+      "hora": "17:00",
+      "cesta": "intermedio_1",
+      "project_id": "2026-10-26_baffin-bay-ice-shelf",
+      "estado": "en_produccion_imaginantes",
+      "notas": "Sustituye corales (ya publicado 31-oct). Montar+programar YT 1-nov 17:00."
+    },
+    {
+      "fecha": "2026-11-01",
+      "hora": "19:00",
+      "cesta": "intermedio_2",
+      "project_id": "2026-10-30_arqueas-origen-eucariotas",
+      "estado": "en_produccion_imaginantes",
+      "notas": "Sustituye baffin (pasa a 17:00). Preferir arqueas si storyboard OK; si no, ChatGPT."
+    },
+    {
+      "fecha": "2026-11-01",
+      "hora": "23:30",
+      "cesta": "dato_del_dia",
+      "project_id": "2026-11-01_dato-TBD-news",
+      "estado": "pendiente_dato_dia",
+      "notas": "TBD-news: noticia científica del mismo día o ≤48h, fuente primaria (paper/agencia). Producir el mismo día."
+    },
+    {
+      "fecha": "2026-11-02",
+      "hora": "07:00",
+      "cesta": "kids",
+      "project_id": "2026-11-02_kids-camaron-mantis",
+      "estado": "pedir_chatgpt",
+      "notas": "TÍTULO: El golpe del camarón mantis. borrador en proyectos/2026-xx_kids_camaron-mantis-punetazo; fuente: Patek & Caldwell 2005 J Exp Biol. No marcar Hecho para niños."
+    },
+    {
+      "fecha": "2026-11-02",
+      "hora": "13:30",
+      "cesta": "comida_familia",
+      "project_id": "2026-11-02_comida-pan-duro",
+      "estado": "pedir_chatgpt",
+      "notas": "TÍTULO: Por qué el pan se pone duro (no es que se seque). retrogradación del almidón; fuente: literatura de ciencia de alimentos (PENDING_SOURCE exacta)"
+    },
+    {
+      "fecha": "2026-11-02",
+      "hora": "17:00",
+      "cesta": "intermedio_1",
+      "project_id": "2026-10-27_corneja-decision-rapida",
+      "estado": "pedir_chatgpt",
+      "notas": "cola/entrada | NO reutilizar: ya publicado 31-oct; ChatGPT entregue tema nuevo."
+    },
+    {
+      "fecha": "2026-11-02",
+      "hora": "19:00",
+      "cesta": "intermedio_2",
+      "project_id": "2026-10-28_mosquito-fruitless-audicion",
+      "estado": "pedir_chatgpt",
+      "notas": "cola/entrada | NO reutilizar: ya publicado 31-oct; ChatGPT entregue tema nuevo."
+    },
+    {
+      "fecha": "2026-11-02",
+      "hora": "23:30",
+      "cesta": "dato_del_dia",
+      "project_id": "2026-11-02_dato-TBD-news",
+      "estado": "pendiente_dato_dia",
+      "notas": "TBD-news: noticia científica del mismo día o ≤48h, fuente primaria (paper/agencia). Producir el mismo día."
+    },
+    {
+      "fecha": "2026-11-03",
+      "hora": "07:00",
+      "cesta": "kids",
+      "project_id": "2026-11-03_kids-tiburon-groenlandia",
+      "estado": "pedir_chatgpt",
+      "notas": "TÍTULO: El tiburón que puede vivir siglos. borrador en proyectos/2026-xx_kids_tiburon-groenlandia-400-anos; fuente: Nielsen et al. 2016 Science. No marcar Hecho para niños."
+    },
+    {
+      "fecha": "2026-11-03",
+      "hora": "13:30",
+      "cesta": "comida_familia",
+      "project_id": "2026-11-03_comida-maillard",
+      "estado": "pedir_chatgpt",
+      "notas": "TÍTULO: Lo dorado de la tortilla y el pan: reacción de Maillard. fuente: ACS / revisión Food Chemistry"
+    },
+    {
+      "fecha": "2026-11-03",
+      "hora": "17:00",
+      "cesta": "intermedio_1",
+      "project_id": "2026-11-03_inter-TBD-no-juno",
+      "estado": "pedir_chatgpt",
+      "notas": "Juno flop métricas; ChatGPT tema nuevo animal/wow. No espacio abstracto."
+    },
+    {
+      "fecha": "2026-11-03",
+      "hora": "19:00",
+      "cesta": "intermedio_2",
+      "project_id": "2026-10-30_arqueas-origen-eucariotas",
+      "estado": "reutilizar_cola",
+      "notas": "proyecto con storyboard+capas+fuentes; mover/validar como paquete"
+    },
+    {
+      "fecha": "2026-11-03",
+      "hora": "23:30",
+      "cesta": "dato_del_dia",
+      "project_id": "2026-11-03_dato-TBD-news",
+      "estado": "pendiente_dato_dia",
+      "notas": "TBD-news: noticia científica del mismo día o ≤48h, fuente primaria (paper/agencia). Producir el mismo día."
+    },
+    {
+      "fecha": "2026-11-04",
+      "hora": "07:00",
+      "cesta": "kids",
+      "project_id": "2026-11-04_kids-hipo-por-que",
+      "estado": "pedir_chatgpt",
+      "notas": "TÍTULO: ¿Por qué nos da hipo?. cuerpo; fuente: NHS / revisión médica revisada por pares (PENDING_SOURCE exacta). No marcar Hecho para niños."
+    },
+    {
+      "fecha": "2026-11-04",
+      "hora": "13:30",
+      "cesta": "comida_familia",
+      "project_id": "2026-11-04_comida-miel-no-caduca",
+      "estado": "pedir_chatgpt",
+      "notas": "TÍTULO: La miel casi no se echa a perder. fuente: Smithsonian Magazine + estudio de actividad de agua"
+    },
+    {
+      "fecha": "2026-11-04",
+      "hora": "17:00",
+      "cesta": "intermedio_1",
+      "project_id": "2026-11-04_inter-bioluminiscencia-mar",
+      "estado": "pedir_chatgpt",
+      "notas": "TÍTULO: Por qué el mar brilla de noche. naturaleza; fuente: NOAA Ocean Exploration"
+    },
+    {
+      "fecha": "2026-11-04",
+      "hora": "19:00",
+      "cesta": "intermedio_2",
+      "project_id": "2026-10-29_machu-picchu-fallas-pisa",
+      "estado": "pendiente_ok_mj",
+      "notas": "Candidato: requiere OK de Mj antes de producir. Si no hay OK -> ChatGPT entrega respaldo: 'Por qué el cielo es azul y el atardecer rojo' (fuente: NASA SpacePlace / NOAA)"
+    },
+    {
+      "fecha": "2026-11-04",
+      "hora": "23:30",
+      "cesta": "dato_del_dia",
+      "project_id": "2026-11-04_dato-TBD-news",
+      "estado": "pendiente_dato_dia",
+      "notas": "TBD-news: noticia científica del mismo día o ≤48h, fuente primaria (paper/agencia). Producir el mismo día."
+    },
+    {
+      "fecha": "2026-11-05",
+      "hora": "07:00",
+      "cesta": "kids",
+      "project_id": "2026-11-05_kids-dia-en-venus",
+      "estado": "pedir_chatgpt",
+      "notas": "TÍTULO: En Venus un día dura más que un año. espacio; fuente: NASA Science Venus facts. No marcar Hecho para niños."
+    },
+    {
+      "fecha": "2026-11-05",
+      "hora": "13:30",
+      "cesta": "comida_familia",
+      "project_id": "2026-11-05_comida-palomitas",
+      "estado": "pedir_chatgpt",
+      "notas": "TÍTULO: Por qué revienta una palomita. fuente: Virot & Ponomarenko 2015 J R Soc Interface"
+    },
+    {
+      "fecha": "2026-11-05",
+      "hora": "17:00",
+      "cesta": "intermedio_1",
+      "project_id": "2026-11-05_inter-arboles-se-comunican",
+      "estado": "pedir_chatgpt",
+      "notas": "TÍTULO: Lo que sí y lo que no se sabe de la 'red' de los árboles. mito_vs_dato; fuente: Karst et al. 2023 Nat Ecol Evol"
+    },
+    {
+      "fecha": "2026-11-05",
+      "hora": "19:00",
+      "cesta": "intermedio_2",
+      "project_id": "2026-11-05_inter-rayo-globular",
+      "estado": "pedir_chatgpt",
+      "notas": "TÍTULO: El rayo globular: el misterio que pocos han medido. misterio ligero; fuente: Cen et al. 2014 Phys Rev Lett"
+    },
+    {
+      "fecha": "2026-11-05",
+      "hora": "23:30",
+      "cesta": "dato_del_dia",
+      "project_id": "2026-11-05_dato-TBD-news",
+      "estado": "pendiente_dato_dia",
+      "notas": "TBD-news: noticia científica del mismo día o ≤48h, fuente primaria (paper/agencia). Producir el mismo día."
+    },
+    {
+      "fecha": "2026-11-06",
+      "hora": "07:00",
+      "cesta": "kids",
+      "project_id": "2026-11-06_kids-ballena-azul-corazon",
+      "estado": "pedir_chatgpt",
+      "notas": "TÍTULO: El corazón de la ballena azul. animales; fuente: Goldbogen et al. 2019 PNAS (ritmo cardiaco). No marcar Hecho para niños."
+    },
+    {
+      "fecha": "2026-11-06",
+      "hora": "13:30",
+      "cesta": "comida_familia",
+      "project_id": "2026-11-06_comida-aguacate-negro",
+      "estado": "pedir_chatgpt",
+      "notas": "TÍTULO: Por qué el aguacate se pone negro. oxidación enzimática (polifenol oxidasa); fuente: USDA / revisión científica"
+    },
+    {
+      "fecha": "2026-11-06",
+      "hora": "17:00",
+      "cesta": "intermedio_1",
+      "project_id": "2026-11-06_inter-ranas-congeladas",
+      "estado": "pedir_chatgpt",
+      "notas": "TÍTULO: La rana que se congela y revive. fuente: Storey & Storey (rana de bosque, Lithobates sylvaticus)"
+    },
+    {
+      "fecha": "2026-11-06",
+      "hora": "19:00",
+      "cesta": "intermedio_2",
+      "project_id": "2026-11-06_inter-arena-cantante",
+      "estado": "pedir_chatgpt",
+      "notas": "TÍTULO: Dunas que cantan. fuente: Andreotti 2004 PRL / Douady et al. 2006"
+    },
+    {
+      "fecha": "2026-11-06",
+      "hora": "23:30",
+      "cesta": "dato_del_dia",
+      "project_id": "2026-11-06_dato-TBD-news",
+      "estado": "pendiente_dato_dia",
+      "notas": "TBD-news: noticia científica del mismo día o ≤48h, fuente primaria (paper/agencia). Producir el mismo día."
+    },
+    {
+      "fecha": "2026-11-07",
+      "hora": "07:00",
+      "cesta": "kids",
+      "project_id": "2026-11-07_kids-huesos-bebe",
+      "estado": "pedir_chatgpt",
+      "notas": "TÍTULO: Naces con más huesos de los que tendrás de adulto. cuerpo; fuente: NIH/MedlinePlus o texto de anatomía; cifras PENDING_SOURCE. No marcar Hecho para niños."
+    },
+    {
+      "fecha": "2026-11-07",
+      "hora": "13:30",
+      "cesta": "comida_familia",
+      "project_id": "2026-11-07_comida-hielo-caliente",
+      "estado": "pedir_chatgpt",
+      "notas": "TÍTULO: ¿El agua caliente se congela antes? (efecto Mpemba). mito_vs_dato; fuente: Burridge & Linden 2016 Sci Rep"
+    },
+    {
+      "fecha": "2026-11-07",
+      "hora": "17:00",
+      "cesta": "intermedio_1",
+      "project_id": "2026-11-07_inter-pulpo-suenos",
+      "estado": "pedir_chatgpt",
+      "notas": "TÍTULO: ¿Sueñan los pulpos? cambios de color al dormir. fuente: Pophale et al. 2023 Nature"
+    },
+    {
+      "fecha": "2026-11-07",
+      "hora": "19:00",
+      "cesta": "intermedio_2",
+      "project_id": "2026-11-07_inter-nubes-pesan",
+      "estado": "pedir_chatgpt",
+      "notas": "TÍTULO: Una nube pesa toneladas y aun así flota. fuente: USGS Water Science School"
+    },
+    {
+      "fecha": "2026-11-07",
+      "hora": "23:30",
+      "cesta": "dato_del_dia",
+      "project_id": "2026-11-07_dato-TBD-news",
+      "estado": "pendiente_dato_dia",
+      "notas": "TBD-news: noticia científica del mismo día o ≤48h, fuente primaria (paper/agencia). Producir el mismo día."
+    }
+  ]
+}

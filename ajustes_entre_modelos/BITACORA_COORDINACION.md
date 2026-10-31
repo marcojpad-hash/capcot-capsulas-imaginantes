@@ -56,3 +56,17 @@
 - **Límites respetados:** no se modificaron `main`, Motor U6 ni `data/*.json`; no hubo merge, publicación ni consumo de créditos.
 - **Pendiente de verificación:** ejecutar la suite en GitHub Actions y revisar sus resultados. El PR #3 aún contiene cambios en `data/*.json` que contradicen el contrato; se dejan intactos porque ChatGPT tiene prohibido modificarlos. Requiere que Mj/Imaginantes restaure esos registros desde su fuente operativa o separe esos cambios en un PR distinto.
 - **Siguiente paso:** revisar el resultado de CI, corregir cualquier fallo y después separar el material operativo indebido del PR antes de pedir revisión/merge.
+
+## 2026-10-31 ~13:05 CDMX — Imaginantes — URGENTE paquetes 1–6 nov
+
+- **Pedido Mj (t281u):** programar resto hasta el viernes (1–6 nov), 5 slots/día; producir 1–3 ya si hay créditos y dejar el resto programado.
+- **Créditos Bot:** ~10% semanal usado → hay margen para montar, pero **ChatGPT debe entregar paquetes textuales** (kids/comida/tips ciencia+hack + intermedios + dato-día). Imaginantes solo monta/publica.
+- **Plan restaurado en rama:** `data/horario_semana_2026-11-01_07.json` + `ajustes_entre_modelos/PARA_CHATGPT_semana_01-07nov.md`.
+- **Prioridad ChatGPT (orden):**
+  1. 1-nov kids pulpo + comida cebolla (+ opcional tip/hack ciencia usable cerca de kids)
+  2. 2-nov kids camarón mantis + pan duro
+  3. 3–6 nov kids+comida+inter según plan; hashtags **simples** buscables
+  4. dato-día cada noche (≤48h) el mismo día
+- **No reusar** videos ya publicados el 31-oct (corales/corneja/mosquito/kromdraai/pardelas) como “nuevos” del 1–6; la cola `reutilizar` que ya salió se sustituye.
+- **Imaginantes ahora:** monta Baffin (+ otros storyboards no publicados) y programa YT; TT/FB alinear después.
+- **Hashtags:** simples (ej. pulpo, cebolla, cocina, ciencia) — nunca camelCase/project_id.
