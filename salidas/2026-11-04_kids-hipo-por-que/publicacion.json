@@ -60,5 +60,15 @@
    "fuente": "primer frame mp4",
    "estado": "ok"
   }
+ },
+ "tiktok": {
+  "estado": "programado",
+  "cuenta": "@datosyociosidades",
+  "publish_at_cdmx": "2026-11-04T07:00:00-06:00",
+  "ui_shown": "Nov 4, 8:00 AM (GMT-5)",
+  "ai_label": true,
+  "caption": "¿Por qué tenemos hipo?\n\nFuentes en YouTube @datosyociosidades\n\n#hipo #cuerpohumano #ciencia #sabiasque",
+  "mp4": "salidas/2026-11-04_kids-hipo-por-que/capsula.mp4",
+  "actualizado": "2026-10-31T17:22:00-06:00"
  }
 }
