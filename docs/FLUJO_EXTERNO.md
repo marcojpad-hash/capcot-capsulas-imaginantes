@@ -1,6 +1,6 @@
 # Flujo externo CAPCOT — ChatGPT → GitHub → Grok
 
-> Contrato superior de responsabilidades y capacidad: \`docs/CONTRATO_OPERATIVO_UNIFICADO.md\`. La parrilla de cinco slots no anula el cupo actualmente implementado de tres por día.
+> Contrato superior de responsabilidades y capacidad: \`docs/CONTRATO_OPERATIVO_UNIFICADO.md\`. El código admite hasta cinco cápsulas por fecha (máximo dos propias y cinco externas, con tope global de cinco). La programación requiere cinco ventanas horarias distintas; ver `scripts/rotacion.py`.
 
 ## Roles
 - ChatGPT: investigación, verificación, brief y storyboard textual.
@@ -25,7 +25,7 @@ El storyboard incorpora fuentes, identificadores por escena, mapa, dato/gráfico
 6. Decide y ejecuta publicación conforme a permisos.
 7. Registra estados y evidencia.
 
-El validador acepta storyboards textuales sin rutas de assets. El pipeline de producción asigna rutas después. \`procesar_cola.py\` solo selecciona entradas cuya fecha coincide con \`--fecha\`; no consume automáticamente la cola histórica más antigua.
+El validador acepta storyboards textuales sin rutas de assets. El pipeline de producción asigna rutas después. La entrada original se conserva si falla la ejecución de producción y se retira únicamente después de una ejecución con código de salida cero. `--dry-run` nunca la elimina. \`procesar_cola.py\` solo selecciona entradas cuya fecha coincide con \`--fecha\`; no consume automáticamente la cola histórica más antigua.
 
 ## Estados
 - \`PROPUESTA_EN_COLA\`
