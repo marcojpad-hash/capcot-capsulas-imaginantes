@@ -1,3 +1,5 @@
+> **Ámbito:** esta compuerta se aplica a la etapa audiovisual de Grok. ChatGPT solo declara la biblia visual/tipográfica y los prompts en el storyboard; no genera ni adjunta imágenes, frames, audio o video. Un prompt no demuestra que exista un asset.
+
 # Compuerta de continuidad audiovisual — CAPCOT
 
 Estado: política propuesta para el coordinador CAPCOT. No sustituye la receta ni autoriza publicación.
