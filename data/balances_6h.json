@@ -989,5 +989,68 @@
    ]
   ],
   "nota_flujo": "Se frenó de noche como es normal: YT +1,230 en 12 h (vs +2,115 en la franja 14→20), sin subs nuevos. Lo nuevo sigue jalando (yema, P2, ave, UNAM, Pomuch); en TT despertaron UNAM y ajolotes. Estancados: luz eléctrica 0, reina +2, Osedax +1, bacteria +3, serpientes que ruedan +5, Catrina YT +14; en TT serpiente voladora se aplanó (+6)."
+ },
+ {
+  "hora_cdmx": "2026-10-31T14:12-06:00",
+  "base_youtube": "2026-10-28T08:08",
+  "base_tiktok": "2026-10-28T08:08",
+  "aviso_base": "No hubo snapshots en el repo entre 28-oct 08:08 y hoy 14:12; el Δ cubre ~78 h, no 6 h.",
+  "youtube_totales": {
+   "view": 23665,
+   "like": 798,
+   "comment": 24
+  },
+  "suscriptores": 63,
+  "shorts_publicos": 28,
+  "delta_youtube": {
+   "view": 8549,
+   "like": 278,
+   "comment": 5,
+   "suscriptores": 22
+  },
+  "tiktok_totales": null,
+  "seguidores_tiktok": 15,
+  "likes_perfil_tiktok": 531,
+  "videos_tiktok": 30,
+  "delta_tiktok": {
+   "seguidores": 12,
+   "likes_perfil": 170,
+   "nota": "Solo perfil público (vistas por video no disponibles sin Studio)."
+  },
+  "ranking_crecimiento": [
+   [
+    "YT Titanoboa",
+    1348
+   ],
+   [
+    "YT Dato lince (nuevo)",
+    984
+   ],
+   [
+    "YT Anfibio marino",
+    908
+   ],
+   [
+    "YT Campus UNAM",
+    729
+   ],
+   [
+    "YT Pan de muerto (nuevo)",
+    678
+   ],
+   [
+    "YT DdM P4 Templo (nuevo)",
+    596
+   ],
+   [
+    "YT Serpiente voladora",
+    510
+   ],
+   [
+    "YT Yema/cempasúchil",
+    509
+   ]
+  ],
+  "nota_flujo": "Lo de 27–28-oct (Titanoboa, lince, anfibio, UNAM, pan de muerto, Templo) cargó casi todo el crecimiento; los viejos (abejas, bacteria, reina, hongo, Osedax, El Niño, serpientes que ruedan) quedaron planos (+3 a +14 en 3 días). Voyager solo 21 vistas desde 28-oct (estancado). Hoy: Corneja (07:00) 3 vistas y Corales 4 a las 14:12 — arranque flojo. Subs 41→63, TT seguidores 3→15."
  }
 ]
