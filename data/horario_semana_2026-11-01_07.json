@@ -211,7 +211,7 @@
    "hora": "07:00",
    "cesta": "kids",
    "project_id": "2026-11-03_kids-tiburon-groenlandia",
-   "estado": "programado_yt_tt",
+   "estado": "programado_yt_tt_fb",
    "notas": "TÍTULO: El tiburón que puede vivir siglos. borrador en proyectos/2026-xx_kids_tiburon-groenlandia-400-anos; fuente: Nielsen et al. 2016 Science. No marcar Hecho para niños.",
    "publishAt": "2026-11-03T13:00:00Z",
    "yt_id": "bImG_vdlBhs",
@@ -219,7 +219,8 @@
    "mp4": "salidas/2026-11-03_kids-tiburon-groenlandia/capsula.mp4",
    "plataformas": {
     "yt": "programado",
-    "tt": "programado"
+    "tt": "programado",
+    "fb": "programado"
    }
   },
   {
@@ -227,7 +228,7 @@
    "hora": "13:30",
    "cesta": "comida_familia",
    "project_id": "2026-11-03_comida-maillard",
-   "estado": "programado_yt_tt",
+   "estado": "programado_yt_tt_fb",
    "notas": "TÍTULO: Lo dorado de la tortilla y el pan: reacción de Maillard. fuente: ACS / revisión Food Chemistry",
    "publishAt": "2026-11-03T19:30:00Z",
    "yt_id": "JOA1Bm6KYDs",
@@ -235,7 +236,8 @@
    "mp4": "salidas/2026-11-03_comida-maillard/capsula.mp4",
    "plataformas": {
     "yt": "programado",
-    "tt": "programado"
+    "tt": "programado",
+    "fb": "programado"
    }
   },
   {
@@ -295,7 +297,7 @@
    "hora": "07:00",
    "cesta": "kids",
    "project_id": "2026-11-04_kids-hipo-por-que",
-   "estado": "programado_yt_tt",
+   "estado": "programado_yt_tt_fb",
    "notas": "TÍTULO: ¿Por qué nos da hipo?. cuerpo; fuente: NHS / revisión médica revisada por pares (PENDING_SOURCE exacta). No marcar Hecho para niños.",
    "publishAt": "2026-11-04T13:00:00Z",
    "yt_id": "Rg-iTgMExWw",
@@ -303,7 +305,8 @@
    "mp4": "salidas/2026-11-04_kids-hipo-por-que/capsula.mp4",
    "plataformas": {
     "yt": "programado",
-    "tt": "programado"
+    "tt": "programado",
+    "fb": "programado"
    }
   },
   {
@@ -311,7 +314,7 @@
    "hora": "13:30",
    "cesta": "comida_familia",
    "project_id": "2026-11-04_comida-miel-no-caduca",
-   "estado": "programado_yt_tt",
+   "estado": "programado_yt_tt_fb",
    "notas": "TÍTULO: La miel casi no se echa a perder. fuente: Smithsonian Magazine + estudio de actividad de agua",
    "publishAt": "2026-11-04T19:30:00Z",
    "yt_id": "jpDyCX6zSgQ",
@@ -319,7 +322,8 @@
    "mp4": "salidas/2026-11-04_comida-miel-no-caduca/capsula.mp4",
    "plataformas": {
     "yt": "programado",
-    "tt": "programado"
+    "tt": "programado",
+    "fb": "programado"
    }
   },
   {
@@ -327,7 +331,7 @@
    "hora": "17:00",
    "cesta": "intermedio_1",
    "project_id": "2026-11-04_inter-bioluminiscencia-mar",
-   "estado": "programado_yt_tt",
+   "estado": "programado_yt_tt_fb",
    "notas": "TÍTULO: Por qué el mar brilla de noche. naturaleza; fuente: NOAA Ocean Exploration",
    "publishAt": "2026-11-04T23:00:00Z",
    "yt_id": "4xylLT3vSIU",
@@ -335,7 +339,8 @@
    "mp4": "salidas/2026-11-04_inter-bioluminiscencia-mar/capsula.mp4",
    "plataformas": {
     "yt": "programado",
-    "tt": "programado"
+    "tt": "programado",
+    "fb": "programado"
    }
   },
   {
