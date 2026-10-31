@@ -1,0 +1,33 @@
+{
+  "project_id": "YYYY-MM-DD_slug",
+  "status": "RECIBIDO_POR_GROK",
+  "updated_at": "YYYY-MM-DDTHH:MM:SS-06:00",
+  "reviewed_by": "Grok",
+  "decision": "PENDIENTE",
+  "checks": {
+    "primary_source_reviewed": false,
+    "doi_or_url_resolved": false,
+    "claims_verified": false,
+    "map_coordinates_checked": false,
+    "data_graphic_checked": false,
+    "style_prompt_exact": false,
+    "rotation_checked": false
+  },
+  "production": {
+    "status": "NOT_STARTED",
+    "assets": [],
+    "audio": "NOT_GENERATED",
+    "render": "NOT_GENERATED"
+  },
+  "qa": {
+    "status": "NOT_RUN",
+    "evidence": []
+  },
+  "publication": {
+    "status": "NOT_PUBLISHED",
+    "platforms": [],
+    "urls": [],
+    "published_at": null
+  },
+  "notes": []
+}
