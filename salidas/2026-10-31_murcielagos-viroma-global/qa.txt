@@ -1,0 +1,21 @@
+PASA  duracion_>=60_<=120 65.47s (objetivo 84)
+PASA  resolucion_1080x1920 
+PASA  h264_aac 
+PASA  fps_30 30/1
+PASA  loudness_-14 -14.2 LUFS
+PASA  subs_max_3_palabras 48 bloques
+PASA  fuentes_1_4 
+PASA  aviso_ia 
+PASA  arco 
+PASA  sin_huecos_voz_<=0.9s hueco máx 0.90s
+PASA  subs_cobertura_>=99% 100.0% (132/132 palabras)
+PASA  subs_sin_solapes 0 solapes
+PASA  subs_en_cuadro_zona_segura PlayResY 1920, MarginV 620
+PASA  voz_<=240_palabras 131 palabras
+PASA  estructura_valida pregunta
+PASA  estructura_no_repite_anterior anterior: historia
+PASA  cama_musical_no_repite_anterior marimba (anterior: None)
+FALLA capa_mapa sin capas
+FALLA capa_grafico_o_dato sin capas
+PASA  licencias_json 
+PASA  metadata_yt_valida título/descr./tags OK

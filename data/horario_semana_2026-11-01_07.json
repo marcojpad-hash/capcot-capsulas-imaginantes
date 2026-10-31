@@ -102,8 +102,15 @@
       "hora": "17:00",
       "cesta": "intermedio_1",
       "project_id": "2026-10-31_murcielagos-viroma-global",
-      "estado": "listo_cola_json",
-      "notas": "Cola JSON ChatGPT 31-oct. NO usar corneja (ya pub 31-oct)."
+      "estado": "programado_yt",
+      "notas": "Cola JSON ChatGPT 31-oct. NO usar corneja (ya pub 31-oct).",
+      "yt_id": "dFwKjIb8tFI",
+      "publishAt": "2026-11-02T23:00:00Z",
+      "plataformas": {
+        "yt": "programado",
+        "tt": "pending_tiktok",
+        "fb": "pending_fb"
+      }
     },
     {
       "fecha": "2026-11-02",
