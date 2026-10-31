@@ -4,7 +4,7 @@
 
 ## Precedencia y capacidad reconciliada
 
-Consultar primero \`docs/CONTRATO_OPERATIVO_UNIFICADO.md\`. La parrilla de cinco slots diarios es un objetivo editorial; el código de rotación vigente todavía limita la operación a tres cápsulas por día (dos propias y una externa), y el procesador admite una entrada externa por fecha. No presentar cinco como capacidad ejecutable hasta que el límite, el procesador y sus pruebas se actualicen y validen. ChatGPT conserva el alcance textual descrito en este Plan; Imaginantes opera producción audiovisual, QA y publicación.
+Consultar primero `docs/CONTRATO_OPERATIVO_UNIFICADO.md`. En esta rama, `scripts/rotacion.py` permite hasta cinco cápsulas por fecha (máximo dos propias y cinco externas, con tope global de cinco); `scripts/procesar_cola.py` procesa múltiples entradas de la fecha y conserva la entrada original cuando falla producción. La asignación horaria dispone de cinco ventanas, alineadas con los slots 07:00, 13:30, 17:00, 19:00 y 23:30 CDMX. Capacidad de código y programación no equivalen a publicaciones efectivas: cada publicación requiere QA y evidencia de plataforma. ChatGPT conserva el alcance textual descrito en este Plan; Imaginantes opera producción audiovisual, QA y publicación.
 
 ## Objetivo y alcance
 CAPCOT / **Datos y ociosidades** produce cápsulas científicas y de naturaleza. ChatGPT es responsable de investigación, documentación y preproducción textual. Su entrega normal es un brief y un storyboard JSON verificables en GitHub.
