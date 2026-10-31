@@ -134,8 +134,6 @@
       "on_screen_text": "Las aves también tienen jet lag",
       "visual_description": "Una pardela pichoneta vuela sobre un océano abierto; detrás, el Sol aparece en dos posiciones superpuestas para sugerir el desfase, sin texto ni relojes digitales.",
       "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text + one Manx shearwater flying low above a wide Atlantic ocean, oversized sun layered twice at different positions to suggest time mismatch, single clear subject",
-      "asset_filename": "frames/scene_001.png",
-      "asset_type": "image",
       "motion": "kenburns_auto",
       "animated_hook": false,
       "ambiente": "oceano+viento",
@@ -158,8 +156,6 @@
       "on_screen_text": "Pardela pichoneta",
       "visual_description": "La misma pardela sale de una colonia insular y se aleja sobre el mar; mantener la misma silueta, proporciones y colores.",
       "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text + one consistent Manx shearwater leaving a small rugged Welsh island colony and flying out over the Atlantic, layered sea horizon",
-      "asset_filename": "frames/scene_002.png",
-      "asset_type": "image",
       "motion": "kenburns_auto",
       "ambiente": "oceano+viento",
       "sfx": [
@@ -182,8 +178,6 @@
       "on_screen_text": "El Sol funciona como brújula",
       "visual_description": "Vista lateral de la pardela con el Sol recorriendo el cielo en una curva; una línea sencilla conecta la posición solar con la dirección de vuelo.",
       "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text + one Manx shearwater in flight beneath a sun arc made of layered paper discs, one simple directional path, no labels",
-      "asset_filename": "frames/scene_003.png",
-      "asset_type": "image",
       "motion": "kenburns_auto",
       "ambiente": "viento",
       "sfx": [
@@ -205,8 +199,6 @@
       "on_screen_text": "El amanecer se adelanta",
       "visual_description": "Mapa conceptual del Atlántico norte con una flecha hacia el este; el Sol nace antes en el extremo de llegada. Sin fronteras ni rutas exactas inventadas.",
       "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text + simplified layered paper map of the North Atlantic with one eastward flight arrow and a sunrise appearing earlier ahead of the bird, no labels",
-      "asset_filename": "frames/scene_004.png",
-      "asset_type": "image",
       "motion": "kenburns_auto",
       "ambiente": "viento",
       "sfx": [
@@ -249,8 +241,6 @@
       "on_screen_text": "Hasta una hora de desfase",
       "visual_description": "El ave mira el Sol; dos arcos solares superpuestos muestran la diferencia entre la hora que marca su reloj interno y la posición real del Sol.",
       "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text + one Manx shearwater looking toward two offset paper sun arcs, clear visual metaphor for a one-hour internal clock lag, no numbers",
-      "asset_filename": "frames/scene_005.png",
-      "asset_type": "image",
       "motion": "kenburns_auto",
       "ambiente": "viento",
       "sfx": [
@@ -278,8 +268,6 @@
       "on_screen_text": "20 años de GPS",
       "visual_description": "Puntos de GPS se convierten en rutas sobre el Atlántico norte; mantener la visualización esquemática, sin presentar rutas ilustrativas como trayectorias individuales exactas.",
       "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text + abstract layered paper map of the North Atlantic with many thin GPS route threads converging toward a small island, no labels or numbers",
-      "asset_filename": "frames/scene_006.png",
-      "asset_type": "image",
       "motion": "kenburns_auto",
       "ambiente": "oceano",
       "sfx": [
@@ -307,8 +295,6 @@
       "on_screen_text": "Desvíos de hasta 15°",
       "visual_description": "La pardela corrige suavemente su trayectoria y se acerca a la costa de Gales; la colonia queda visible a lo lejos.",
       "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text + one Manx shearwater adjusting its curved flight path toward a distant rugged Welsh island coast, calm open sea",
-      "asset_filename": "frames/scene_007.png",
-      "asset_type": "image",
       "motion": "kenburns_auto",
       "ambiente": "oceano+viento",
       "sfx": [
@@ -330,8 +316,6 @@
       "on_screen_text": "Un reloj que orienta",
       "visual_description": "La pardela vuela hacia la luz del amanecer; el Sol y el horizonte se alinean, cerrando visualmente el arco del primer plano.",
       "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text + the same Manx shearwater flying toward a calm sunrise above the Atlantic, one strong silhouette, visual echo of opening scene",
-      "asset_filename": "frames/scene_008.png",
-      "asset_type": "image",
       "motion": "kenburns_auto",
       "ambiente": "oceano",
       "sfx": [
@@ -349,7 +333,7 @@
   "cortinilla_fuentes": {
     "duration_seconds": 6,
     "titulo": "Fuentes",
-    "aviso": "Imágenes generadas con IA. Voz sintética. Audio sintetizado.",
+    "aviso": "Divulgación prevista para la versión final: imágenes generadas con IA, voz sintética y audio sintetizado.",
     "firma": "Datos y ociosidades · @datosyociosidades",
     "source_ids": [
       "SRC-001",
@@ -357,39 +341,28 @@
     ]
   },
   "audio": {
-    "music_asset": "",
-    "music_license": "",
+    "music_asset": null,
+    "music_license": null,
     "music_volume": 0.25
   },
   "export": {
-    "filename": "capsula.mp4",
     "resolution": "1080x1920",
     "fps": 30,
     "subtitle_max_words": 3,
-    "loudness_lufs": -14
+    "loudness_lufs": -14,
+    "render_status": "NOT_GENERATED"
   },
   "publicacion": {
-    "youtube": {
-      "privacy": "public",
-      "publishAt": "",
-      "titulo": "El jet lag de las aves marinas: cómo el reloj interno guía a las pardelas",
-      "descripcion_con_fuentes": "Estudio original: Lewin et al. (2026), Science. https://doi.org/10.1126/science.adz2542\nComunicado: University of Oxford. https://www.ox.ac.uk/news/2026-10-26-study-finds-that-long-distance-flights-can-throw-seabirds-internal-clocks-out-of\nTikTok: https://www.tiktok.com/@datosyociosidades",
-      "tags": [
-        "#Shorts",
-        "ciencia",
-        "aves",
-        "naturaleza"
-      ],
-      "synthetic_content": true
-    },
-    "tiktok": {
-      "modo": "disabled",
-      "is_aigc": true,
-      "caption": "Las pardelas pueden experimentar un desfase entre su reloj interno y el Sol. Estudio publicado en Science."
-    }
+    "status": "PENDIENTE_DECISION_GROK",
+    "platforms": [
+      "YouTube Shorts",
+      "TikTok",
+      "Facebook Reels"
+    ],
+    "note": "No publicado ni programado; Grok conserva la decisión y la ejecución."
   },
-  "estado": "BORRADOR",
-  "production_mode": "storyboard_only_no_frames",
+  "estado": "PENDIENTE_REVISION_GROK",
+  "production_mode": "storyboard_only",
   "validation_notes": {
     "narration_word_count": 218,
     "narration_word_count_estimate": 218,
