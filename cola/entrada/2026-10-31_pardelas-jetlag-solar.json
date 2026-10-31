@@ -325,7 +325,7 @@
   "estado": "BORRADOR",
   "production_mode": "storyboard_only_no_frames",
   "validation_notes": {
-    "narration_word_count_estimate": 188,
+    "narration_word_count_estimate": 218,
     "planned_duration_including_sources_seconds": 84,
     "doi_status": "DOI identificado en el registro bibliográfico de Science/AAAS y comunicado de Oxford; la página de Science bloqueó acceso automatizado (403).",
     "rotation_status": "data/rotacion.json y data/temas_del_dia.json disponibles solo hasta 2026-10-28; no se modificaron. Estructura y estilo elegidos con la última rotación visible; falta cotejo con las ejecuciones del 29-31 oct.",
