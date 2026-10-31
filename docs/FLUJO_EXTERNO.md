@@ -1,5 +1,7 @@
 # Flujo externo CAPCOT — ChatGPT → GitHub → Grok
 
+> Contrato superior de responsabilidades y capacidad: \`docs/CONTRATO_OPERATIVO_UNIFICADO.md\`. La parrilla de cinco slots no anula el cupo actualmente implementado de tres por día.
+
 ## Roles
 - ChatGPT: investigación, verificación, brief y storyboard textual.
 - Grok: selección editorial final, producción audiovisual, QA oficial y publicación.
