@@ -52,3 +52,6 @@ Al corte de auditoría 2026-10-31, la rama de trabajo estaba divergida respecto 
 ## Documentación histórica
 
 Las versiones previas de plan, receta, guía y flujo están en \`docs/obsoleto/2026-10-31/\`. No usarlas como instrucciones activas.
+
+## Confirmación de Grok
+Grok debe registrar recepción y estados en cola/estado/YYYY-MM-DD_slug.json. Sin ese archivo, la recepción no está confirmada. Ver docs/GROK_STATUS_CONTRACT.md.
