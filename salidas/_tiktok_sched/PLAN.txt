@@ -1,0 +1,9 @@
+1) Tardígrado "El oso que aprendió a no morir"
+   mp4: /workspace/capcot/salidas/2026-10-24_lote01-04-tardigrado/capsula.mp4
+   caption: tardi_caption.txt
+   schedule: 2026-10-25 20:00 America/Mexico_City (tonight peak)
+
+2) Ave jurásica remake
+   mp4: /workspace/capcot/salidas/2026-10-25_ave-jurasica-REMAKE/capsula.mp4
+   caption: ave_caption.txt
+   schedule: 2026-10-26 20:00 America/Mexico_City (match YT GHxm9dDUMmM)

@@ -14,26 +14,26 @@
  "resultado": {
   "youtube": {
    "kind": "youtube#video",
-   "etag": "IrXUVfdDVNN2gRa5W6RUz2DKGFs",
-   "id": "9XflXdWDM0A",
+   "etag": "rziE-Q-jPREItORF5y-OT3indZI",
+   "id": "bICGA3kIBcU",
    "snippet": {
-    "publishedAt": "2026-10-31T21:56:10Z",
+    "publishedAt": "2026-10-31T22:51:24Z",
     "channelId": "UCU2ZI-6pBJEr9aSFsF6bxLw",
     "title": "¿Qué había antes de nuestras células? #Shorts",
     "description": "¿Qué había antes de una célula como la tuya?\n\nDos arqueas y el origen de la célula compleja. Una cápsula de Datos y ociosidades: datos verificados contados como historia.\n\nFuentes:\n• Imachi, H. et al. (2026). Eukaryotes’ closest relatives are internally simple syntrophic peptidotrophic archaea. Nature. https://doi.org/10.1038/s41586-026-11170-7\n• JAMSTEC (2026-10-29). Capturing our closest archaeal relatives offers clues to the origin of eukaryotes. https://www.jamstec.go.jp/e/about/press_release/20261029/\n• JAMSTEC. Yokosuka Headquarters — official address and access. https://w3.jamstec.go.jp/e/about/access/yokosuka.html\n\nImágenes generadas con IA · voz sintética · audio sintetizado.\nSuscríbete: @datosyociosidades\nTikTok: https://www.tiktok.com/@datosyociosidades\n\n#arqueas #celulas #evolucion #ciencia #sabiasque #Shorts",
     "thumbnails": {
      "default": {
-      "url": "https://i9.ytimg.com/vi/9XflXdWDM0A/default.jpg?sqp=CLTHmdcG&rs=AOn4CLCFzevahr2KYQYthc_Las5UrtEKig",
+      "url": "https://i9.ytimg.com/vi/bICGA3kIBcU/default.jpg?sqp=CJjhmdcG&rs=AOn4CLA8lkMuOnQmbux3bvRWadZwhhXa8g",
       "width": 120,
       "height": 90
      },
      "medium": {
-      "url": "https://i9.ytimg.com/vi/9XflXdWDM0A/mqdefault.jpg?sqp=CLTHmdcG&rs=AOn4CLBhm-sNvzjmkdPe64fnsoSfMtGikA",
+      "url": "https://i9.ytimg.com/vi/bICGA3kIBcU/mqdefault.jpg?sqp=CJjhmdcG&rs=AOn4CLBYYESDZhRW85jbc6GtWXf3POW5gg",
       "width": 320,
       "height": 180
      },
      "high": {
-      "url": "https://i9.ytimg.com/vi/9XflXdWDM0A/hqdefault.jpg?sqp=CLTHmdcG&rs=AOn4CLC3BoYWmCg1pp9L_uedDbDHFr-KTw",
+      "url": "https://i9.ytimg.com/vi/bICGA3kIBcU/hqdefault.jpg?sqp=CJjhmdcG&rs=AOn4CLCQr-Jqt80QjpfG9K5wuBYv-nDo-Q",
       "width": 480,
       "height": 360
      }
@@ -89,10 +89,16 @@
     "estado": "SIGUE PROGRAMADO 2026-11-02T01:00:00Z — borrar a mano en Studio (token sin scope youtube)",
     "reemplazado_por": "9XflXdWDM0A",
     "fecha": "2026-10-31T15:55:49-06:00"
+   },
+   {
+    "id": "9XflXdWDM0A",
+    "estado": "SIGUE PROGRAMADO 2026-11-02T01:00:00Z — borrar a mano en Studio",
+    "reemplazado_por": "bICGA3kIBcU",
+    "fecha": "2026-10-31T16:51:13-06:00"
    }
   ],
   "youtube_thumbnail": {
-   "fuente": "scene_001 (gancho)",
+   "fuente": "primer frame mp4",
    "estado": "ok"
   }
  },

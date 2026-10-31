@@ -1,0 +1,24 @@
+# PARA CHATGPT — Faltantes reales (31 oct 2026)
+
+> **Antes de escribir nada, lee `capcot/ajustes_entre_modelos/PARA_CHATGPT_LINEA_EDITORIAL.md` (§1–9).** El §8 trae las figuras retóricas que salen del análisis Imaginantes / Pepe Gordon (paradoja al arrancar, metáfora que se pueda ver, antítesis en el clímax, eco circular y la firma al cerrar). También trae las señales de "LLM plano" que están prohibidas y la "prueba de la cena". El §9 dice que en un remontaje se conserva un arranque que ya engancha.
+> Nada de research nuevo: usa las fuentes que ya tiene cada proyecto.
+
+Formato: storyboard.json (8 escenas, 205–235 palabras, cada transición cableada a la siguiente, cierre memorable), voz es-MX-JorgeNeural +7% en continuo. Entrega en `cola/entrada/<pid>/`.
+
+## 1. Dato del día 23:30 CDMX (1–7 nov), los 7 sin tema
+- Slots `2026-11-0X_dato-TBD-news` del 1 al 7 nov. Falta el tema (noticia científica de esa semana) más el storyboard.
+- Urgentes: el 1 nov 23:30 (= 2026-11-02T05:30Z) y el 2 nov.
+
+## 2. 19:00 opcionales
+- **5 nov, rayo globular** (`2026-11-05_inter-rayo-globular`): no hay storyboard en la cola.
+- **6 nov, arena cantante** (`2026-11-06_inter-arena-cantante`): no hay storyboard en la cola.
+
+## 3. Machu Picchu (`2026-10-29_machu-picchu-fallas-pisa`)
+- Está en `pendiente_ok_mj`. Se publica si Mj da el OK; si no, hay que proponer un reemplazo para ese slot.
+
+## 4. Reescritura de la cola del 5 al 7 nov (no pasaron el QA editorial)
+Se quedan en 7 escenas con 158–182 palabras y tienen arranques didácticos, preguntas de cierre genéricas y visual_description de relleno:
+palomitas, árboles-se-comunican, día-en-Venus (5 nov) · aguacate-negro, ranas-congeladas, ballena-azul (6 nov) · hielo-caliente, nubes-pesan, pulpo-sueños, huesos-bebé (7 nov).
+Hay que reescribirlas siguiendo la línea editorial y con visual_description concretas (Grok genera los frames).
+
+Ya está resuelto, no lo toques: Juno, SmartPE, sequías, el lote v4 del 1–2 nov, tiburón, maillard, y el 4 nov (hipo, miel, bioluminiscencia).

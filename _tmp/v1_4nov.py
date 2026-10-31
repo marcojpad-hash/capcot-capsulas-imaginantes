@@ -1,0 +1,30 @@
+N={
+"2026-11-04_kids-hipo-por-que":[
+("Estás en plena clase, todo en silencio, y de pronto: ¡hic! Todos voltean. Ese sonido no sale de tu estómago. Viene de un músculo escondido debajo de tus pulmones.","Niño en un salón de clases silencioso dando un brinco con un hipo, compañeros volteando sorprendidos"),
+("Se llama diafragma, y es como un trampolín que sube y baja para que respires. Pero a veces, sin avisar, da un brinco solo. Y el aire entra de golpe.","Diafragma como un trampolín elástico bajo dos pulmones, con aire entrando de golpe por la nariz"),
+("Y entonces, casi en el mismo instante, una puertita en tu garganta se cierra de golpe. Esa puertita se llama glotis. El aire choca contra ella y suena: ¡hic!","Puertita en la garganta cerrándose de golpe frente a una ráfaga de aire, estilo caricatura anatómica amable"),
+("Pero ¿quién da la orden? Tu cuerpo tiene cables, los nervios, que llevan mensajes entre el cerebro y el diafragma. El hipo es un mensaje que se dispara sin permiso.","Cables de colores luminosos que van del cerebro al diafragma, con un mensaje en chispa viajando"),
+("Así que cualquier cosa que moleste esos cables puede activarlo. Por ejemplo, comer muy rápido o llenarte demasiado la panza, que empuja justo donde pasan.","Niño comiendo muy rápido con la panza inflada empujando suavemente cables de nervios"),
+("Lo raro es que los científicos saben cómo pasa, pero muchas veces no saben qué lo encendió. Casi siempre se va solo. Si dura días, hay que ir al médico.","Signo de interrogación gigante flotando sobre un diafragma, con un reloj de arena al lado"),
+("Así que la próxima vez que suene tu ¡hic!, imagina esto: un trampolín que brinca solo y una puertita que se cierra para aplaudirle. Tu cuerpo, tocando su propio tambor. Esto fue Datos y ociosidades.","Niño sonriendo mientras un trampolín y una puertita dentro de su pecho tocan un tambor juntos"),
+],
+"2026-11-04_comida-miel-no-caduca":[
+("Abres un frasco de miel olvidado en la alacena. Lleva años ahí. ¿Se echó a perder? Casi siempre, no. Pero decir que nunca caduca tiene trampa.","Mano abriendo un frasco de miel antiguo y polvoso en una alacena de cocina mexicana"),
+("Todo empieza en la colmena. Las abejas toman néctar, que es casi agua con azúcar, y lo abanican con las alas hasta quitarle la mayor parte del agua.","Abejas abanicando con sus alas celdas de panal llenas de néctar brillante"),
+("Y con eso arman una fortaleza. La miel tiene tan poca agua libre que los microbios no encuentran de dónde beber. Es como un desierto dulce para ellos.","Bacterias diminutas perdidas y sedientas en un desierto de dunas de miel dorada"),
+("Pero hay más guardias en la puerta: la miel es un poco ácida, y algunas producen sustancias que frenan a las bacterias. Una defensa doble.","Gotas de miel como guardianes con escudo deteniendo a pequeñas bacterias en una puerta"),
+("Ojo: no es invencible. Hay levaduras, unos hongos diminutos, que aguantan el azúcar. Si la miel tiene demasiada agua, pueden fermentarla.","Levaduras burbujeantes dentro de un frasco de miel aguada con pequeñas burbujas"),
+("Así que el peligro es el agua. Un frasco abierto chupa humedad del aire, y ahí la fortaleza se debilita. ¿Y si se pone dura y blanca? Eso es otra cosa.","Frasco de miel destapado absorbiendo vapor de una cocina, al lado un frasco con miel cristalizada blanca"),
+("Esa miel cristalizada no está echada a perder: sus azúcares solo se acomodaron en granitos. Tápala bien, y si quieres, entíbiala a baño maría.","Miel cristalizada volviendo a ser líquida en un frasco dentro de una olla con agua tibia"),
+("Así que la miel no es eterna por magia: es un desierto dulce que se defiende solo, mientras tú no le abras la puerta al agua. Esto fue Datos y ociosidades.","Frasco de miel bien tapado brillando como un pequeño sol dorado en la alacena"),
+],
+"2026-11-04_inter-bioluminiscencia-mar":[
+("Es de noche en la playa. Una ola rompe a tus pies y, de pronto, el agua se enciende de azul. No es electricidad ni magia. Algo vivo está haciendo luz.","Ola rompiendo de noche en una playa con espuma azul brillante a los pies de una persona"),
+("Tiene nombre: bioluminiscencia, que significa luz hecha por seres vivos. Es como un foco químico: dos ingredientes se juntan con oxígeno, y sale luz.","Dos moléculas encontrándose con burbujas de oxígeno y encendiendo una chispa de luz azul"),
+("Y lo raro es esto: la naturaleza inventó ese foco muchas veces, por caminos distintos. No hubo un solo inventor. Fueron muchos, cada uno por su cuenta.","Varias criaturas marinas distintas, cada una encendiendo su propia luz en la oscuridad"),
+("¿Para qué sirve brillar en el fondo del mar? Para cazar, como una carnada luminosa; para despistar a un enemigo; o para encontrar pareja en la oscuridad.","Pez abisal con señuelo luminoso atrayendo un pez pequeño en la oscuridad profunda"),
+("Así que esa playa azul tiene truco. Son seres diminutos del plancton que brillan cuando el agua se agita. En algunos, funciona como alarma antirrobo.","Plancton diminuto brillando al ser agitado por una mano en el agua nocturna"),
+("Porque el destello puede delatar al atacante, como prender las luces a un ladrón. Así, un depredador más grande puede verlo y comérselo.","Pequeño crustáceo iluminado por destellos azules mientras un pez grande se acerca desde la sombra"),
+("Un matiz: no todo lo que brilla es esto. Algunos animales solo devuelven la luz que les llega, como un chaleco reflejante. Otros, como el plancton, la fabrican.","Comparación: medusa reflejando luz de una linterna frente a plancton que brilla por sí mismo"),
+("Así que el mar, de noche, no está a oscuras: está lleno de faroles vivos que se encienden para cazar, huir o enamorarse. Esto fue Datos y ociosidades.","Océano nocturno lleno de pequeñas luces vivas azules como un cielo estrellado bajo el agua"),
+]}

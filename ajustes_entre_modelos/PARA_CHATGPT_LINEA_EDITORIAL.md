@@ -30,3 +30,16 @@ Cierre: "Así que el muro invisible no es un escudo mudo: es un tambor del tama�
 
 ## 7. Público general: CERO JERGA SIN ANCLA
 Cada término técnico (prime editing, protoplasto, plasma, choque de proa, dicotiledónea, especie modelo…) se explica en UNA frase llana ANTES o junto al dato ("protoplastos, que son células sin su pared dura"). Nunca asumir conocimiento previo. Si no se puede anclar en una frase, se quita. Autochequeo: ¿lo entiende alguien de 12 años sin pausar el video?
+
+## 8. Lo humano vs lo LLM plano (fuente: investigacion/ANALISIS_ESTILO_IMAGINANTES.md — Imaginantes, Fundación Televisa / José Gordon)
+Gordon no lista datos: cuenta **un instante** ("el momento en que se enciende el foco") con prosa poética hablada, cálida e íntima, y lo vincula "con lo que vivimos". Figuras por tramo (úsalas, una por escena como mínimo):
+- **Inicio — paradoja / premisa imposible:** "Hubo un tiempo en que la Luna estaba tan cerca que…", "Un ciego aprende a ver sin pasar por los ojos". Nuestro: "Una nave choca contra algo que nadie puede ver."
+- **Desarrollo — metáfora visualizada** (la imagen vuelve literal lo que dice la voz), **personificación** (la cebolla "arma una trampa", el hielo "sostiene"), **enumeración sensorial** de tres ("peces fosforescentes, caracoles, estrellas de mar").
+- **Clímax — antítesis:** cerca/lejos, seco/ordenado, solo/acompañado.
+- **Cierre — explicación casi mítica + eco circular** de la primera imagen ("por eso los perros aúllan en luna llena"). Reflexión breve, nunca moraleja didáctica ni pregunta genérica.
+- **Firma fija:** "Esto fue Datos y ociosidades." (el estribillo).
+
+Señales de LLM plano (PROHIBIDAS): "Un estudio reveló…", "cabe destacar", "juega un papel crucial", "en conclusión", frases-resumen que repiten el dato, enumerar nombres técnicos/cepas/siglas, cada escena empezando igual, adjetivos vacíos ("fascinante", "increíble"), cierre "¿Qué opinas?". Prueba humana: ¿hay al menos UNA imagen que el espectador pueda contar a otro en la cena? Si no, reescribe.
+
+## 9. Remontajes: conservar lo que engancha
+Al corregir un guion ya publicado, **no rehacer research ni tirar el arranque si ya enganchaba** (caso sequías): conserva la escena 1 original y solo agrega cableado, anclas de jerga y giro final.

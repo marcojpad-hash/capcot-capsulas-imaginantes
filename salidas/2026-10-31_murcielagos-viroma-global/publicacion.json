@@ -13,26 +13,26 @@
  "resultado": {
   "youtube": {
    "kind": "youtube#video",
-   "etag": "-1ZLIFVr9Z3eBitgmeiigbJDApM",
-   "id": "6ts8TvhgKa8",
+   "etag": "hq83y38-UYBr4StgO-BHqR-yY9I",
+   "id": "c-7pMF3-B-g",
    "snippet": {
-    "publishedAt": "2026-10-31T21:56:49Z",
+    "publishedAt": "2026-10-31T22:51:33Z",
     "channelId": "UCU2ZI-6pBJEr9aSFsF6bxLw",
     "title": "Los murciélagos y sus virus #Shorts",
     "description": "¿Qué determina los virus que encontramos en los murciélagos: lo que comen o el lugar donde viven?\n\nLos murciélagos y sus virus #Shorts. Una cápsula de Datos y ociosidades: datos verificados contados como historia.\n\nFuentes:\n• Huang et al. (2026), Nature Communications https://doi.org/10.1038/s41467-026-79059-7\n• Resultados y discusión del artículo original https://www.nature.com/articles/s41467-026-79059-7\n\nImágenes generadas con IA · voz sintética · audio sintetizado.\nSuscríbete: @datosyociosidades\nTikTok: https://www.tiktok.com/@datosyociosidades\n\n#murcielagos #ciencia #animales #sabiasque #Shorts",
     "thumbnails": {
      "default": {
-      "url": "https://i9.ytimg.com/vi/6ts8TvhgKa8/default.jpg?sqp=CLTHmdcG&rs=AOn4CLBou2GxPmJWVPKg2LEDz82ptG0AEA",
+      "url": "https://i9.ytimg.com/vi/c-7pMF3-B-g/default.jpg?sqp=CJjhmdcG&rs=AOn4CLAYllzIKGtlfEB5poaokVCv7nF-gw",
       "width": 120,
       "height": 90
      },
      "medium": {
-      "url": "https://i9.ytimg.com/vi/6ts8TvhgKa8/mqdefault.jpg?sqp=CLTHmdcG&rs=AOn4CLBYiIa1A8dfNBS0qOUoR43tC4gJuA",
+      "url": "https://i9.ytimg.com/vi/c-7pMF3-B-g/mqdefault.jpg?sqp=CJjhmdcG&rs=AOn4CLBd5ubhuHxtyRhHlof6eJ1wtKXItA",
       "width": 320,
       "height": 180
      },
      "high": {
-      "url": "https://i9.ytimg.com/vi/6ts8TvhgKa8/hqdefault.jpg?sqp=CLTHmdcG&rs=AOn4CLC-8oI3jt-KC8-K8Xwim4rdwNaBzw",
+      "url": "https://i9.ytimg.com/vi/c-7pMF3-B-g/hqdefault.jpg?sqp=CJjhmdcG&rs=AOn4CLAQnR2b3TJCZgpzEU4bDw_cX9A8zw",
       "width": 480,
       "height": 360
      }
@@ -87,10 +87,16 @@
     "estado": "SIGUE PROGRAMADO 2026-11-02T23:00:00Z — borrar a mano en Studio (token sin scope youtube)",
     "reemplazado_por": "6ts8TvhgKa8",
     "fecha": "2026-10-31T15:55:49-06:00"
+   },
+   {
+    "id": "6ts8TvhgKa8",
+    "estado": "SIGUE PROGRAMADO 2026-11-02T23:00:00Z — borrar a mano en Studio",
+    "reemplazado_por": "c-7pMF3-B-g",
+    "fecha": "2026-10-31T16:51:13-06:00"
    }
   ],
   "youtube_thumbnail": {
-   "fuente": "scene_001 (gancho)",
+   "fuente": "primer frame mp4",
    "estado": "ok"
   }
  },

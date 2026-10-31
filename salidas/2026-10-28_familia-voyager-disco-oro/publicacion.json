@@ -70,5 +70,14 @@
     "containsSyntheticMedia": false
    }
   }
+ },
+ "repost": {
+  "2026-10-31": {
+   "yt_id": "5k93gNk5gdw",
+   "publishAt": "2026-10-31T22:00:00Z",
+   "hora_cdmx": "16:00",
+   "nota": "Borrado Studio OK; TT programado 16:00 CDMX",
+   "estado": "borrado_studio"
+  }
  }
 }

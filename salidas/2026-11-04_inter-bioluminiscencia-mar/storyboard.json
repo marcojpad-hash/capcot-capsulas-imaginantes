@@ -1,0 +1,267 @@
+{
+  "_schema": "CAPCOT_STORYBOARD_TEXT_V2",
+  "project_id": "2026-11-04_inter-bioluminiscencia-mar",
+  "serie": "Datos y ociosidades",
+  "title": "El mar que fabrica luz",
+  "titulo": "El océano también brilla",
+  "language": "es-MX",
+  "aspect_ratio": "9:16",
+  "target_duration_seconds": 84,
+  "estructura": "pregunta",
+  "audience": "Público general",
+  "occasion": "Video vertical breve",
+  "resumen": "El mar que fabrica luz",
+  "trend_source": {
+    "termino": "El mar que fabrica luz",
+    "fecha_publicacion": "",
+    "url": "https://doi.org/10.1126/science.1174269"
+  },
+  "editorial_status": "PROPUESTA_PENDIENTE_DE_GROK",
+  "arco": {
+    "hook_medias_res": "En algunas noches, una ola rompe en la orilla y deja destellos azules. No es electricidad del agua: son organismos que producen luz mediante química.",
+    "desarrollo": "El fenómeno se llama bioluminiscencia. En muchos seres vivos, una molécula llamada luciferina reacciona con oxígeno y una enzima, la luciferasa, facilita la reacción. La energía química termina liberándose como fotones: luz visible. Pero no todos los organismos usan exactamente la misma maquinaria molecular; existen sistemas distintos y evoluciones independientes. En el océano la luz puede servir para varias tareas. Algunos animales la usan para atraer presas, otros para confundir o distraer a un depredador, y otros para comunicarse o encontrar pareja. El plancton luminoso puede emitir destellos cuando el agua se agita. En ciertas especies, esa respuesta funciona como alarma o como una forma de hacer más visible al atacante.",
+    "cierre_historia": "Hay una diferencia importante: fluorescencia es absorber luz externa y reemitirla; bioluminiscencia produce luz mediante una reacción química propia o con ayuda de simbiontes.",
+    "reflexion_o_pregunta": "Así que el mar no está encendido como una lámpara. Está lleno de organismos con soluciones químicas distintas para convertir una reacción en una señal luminosa. Esto fue Datos y ociosidades."
+  },
+  "estilo_id": "ukiyo_e",
+  "estilo_visual": "Ukiyo-e (propio)",
+  "visual_identity": {
+    "style_id": "ukiyo_e",
+    "style_name": "Ukiyo-e (propio)",
+    "prompt_base": "ukiyo-e Japanese woodblock print, flat color areas, elegant outlines, stylized waves and clouds, washi paper texture, vertical 9:16, no text",
+    "palette": "Según catálogo",
+    "lighting": "Según prompt base",
+    "texture": "Según prompt base",
+    "composition": "Vertical 9:16; continuidad de paleta y escala",
+    "negative_prompt": "No texto dentro de imagen, no marcas de agua, no elementos falsos",
+    "reference_assets": [],
+    "seed": null,
+    "seed_policy": "Continuidad entre las ocho escenas"
+  },
+  "typography_identity": {
+    "font_family": "DejaVu Sans",
+    "font_weight": "700/400",
+    "title_style": "Gancho máximo seis palabras desde frame 0",
+    "subtitle_style": "Bloques de máximo tres palabras",
+    "hierarchy": "Gancho > dato > subtítulos",
+    "animation": "Un movimiento por plano; texto en postproducción"
+  },
+  "voice": {
+    "engine": "edge-tts",
+    "voice_id": "es-MX-JorgeNeural",
+    "language": "es-MX",
+    "rate": "+7%",
+    "pitch": "-2Hz",
+    "pad_seconds": 0.3,
+    "modo_pausas": "continuo"
+  },
+  "sources": [
+    {
+      "id": "SRC-001",
+      "cita_corta": "Artículo de revisión sobre propiedades ecológicas y químicas de la miel (2022)",
+      "url": "https://doi.org/10.1126/science.1174269",
+      "doi": "10.1126/science.1174269",
+      "accessed": "2026-10-31",
+      "publication_date": "2022",
+      "supports": [
+        "Composición, mecanismos y límites descritos en la fuente"
+      ],
+      "verification_status": "VERIFICADO_RESOLVEDOR"
+    },
+    {
+      "id": "SRC-002",
+      "cita_corta": "Revisión científica sobre actividad antimicrobiana de la miel (2022)",
+      "url": "https://doi.org/10.1007/s42995-024-00250-0",
+      "doi": "10.1007/s42995-024-00250-0",
+      "accessed": "2026-10-31",
+      "publication_date": "2022",
+      "supports": [
+        "Composición, mecanismos y límites descritos en la fuente"
+      ],
+      "verification_status": "VERIFICADO_RESOLVEDOR"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_001",
+      "arc": "hook_medias_res",
+      "duration_seconds": 10,
+      "narration": "Es de noche en la playa. Una ola rompe a tus pies y, de pronto, el agua se enciende de azul. No es electricidad ni magia. Algo vivo está haciendo luz.",
+      "on_screen_text": "El océano también brilla",
+      "visual_description": "Ola rompiendo de noche en una playa con espuma azul brillante a los pies de una persona",
+      "image_prompt": "ukiyo-e Japanese woodblock print, flat color areas, elegant outlines, stylized waves and clouds, washi paper texture, vertical 9:16, no text Ola rompiendo de noche en una playa con espuma azul brillante a los pies de una persona; vertical 9:16, sin texto.",
+      "ambiente": "olas",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "style_id": "ukiyo_e",
+      "asset_filename": "frames/scene_001.png"
+    },
+    {
+      "id": "scene_002",
+      "arc": "desarrollo",
+      "duration_seconds": 12,
+      "narration": "Tiene nombre: bioluminiscencia, que significa luz hecha por seres vivos. Es como un foco químico: dos ingredientes se juntan con oxígeno, y sale luz.",
+      "on_screen_text": "Néctar transformado",
+      "visual_description": "Dos moléculas encontrándose con burbujas de oxígeno y encendiendo una chispa de luz azul",
+      "image_prompt": "ukiyo-e Japanese woodblock print, flat color areas, elegant outlines, stylized waves and clouds, washi paper texture, vertical 9:16, no text Dos moléculas encontrándose con burbujas de oxígeno y encendiendo una chispa de luz azul; vertical 9:16, sin texto.",
+      "ambiente": "olas",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "style_id": "ukiyo_e",
+      "asset_filename": "frames/scene_002.png"
+    },
+    {
+      "id": "scene_003",
+      "arc": "desarrollo",
+      "duration_seconds": 12,
+      "narration": "Y lo raro es esto: la naturaleza inventó ese foco muchas veces, por caminos distintos. No hubo un solo inventor. Fueron muchos, cada uno por su cuenta.",
+      "on_screen_text": "Poca agua disponible",
+      "visual_description": "Varias criaturas marinas distintas, cada una encendiendo su propia luz en la oscuridad",
+      "image_prompt": "ukiyo-e Japanese woodblock print, flat color areas, elegant outlines, stylized waves and clouds, washi paper texture, vertical 9:16, no text Varias criaturas marinas distintas, cada una encendiendo su propia luz en la oscuridad; vertical 9:16, sin texto.",
+      "ambiente": "olas",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "style_id": "ukiyo_e",
+      "asset_filename": "frames/scene_003.png"
+    },
+    {
+      "id": "scene_004",
+      "arc": "desarrollo",
+      "duration_seconds": 12,
+      "narration": "¿Para qué sirve brillar en el fondo del mar? Para cazar, como una carnada luminosa; para despistar a un enemigo; o para encontrar pareja en la oscuridad.",
+      "on_screen_text": "Acidez y química",
+      "visual_description": "Pez abisal con señuelo luminoso atrayendo un pez pequeño en la oscuridad profunda",
+      "image_prompt": "ukiyo-e Japanese woodblock print, flat color areas, elegant outlines, stylized waves and clouds, washi paper texture, vertical 9:16, no text Pez abisal con señuelo luminoso atrayendo un pez pequeño en la oscuridad profunda; vertical 9:16, sin texto.",
+      "ambiente": "olas",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "style_id": "ukiyo_e",
+      "asset_filename": "frames/scene_004.png"
+    },
+    {
+      "id": "scene_005",
+      "arc": "desarrollo",
+      "duration_seconds": 12,
+      "narration": "Así que esa playa azul tiene truco. Son seres diminutos del plancton que brillan cuando el agua se agita. En algunos, funciona como alarma antirrobo.",
+      "on_screen_text": "No es esterilidad",
+      "visual_description": "Plancton diminuto brillando al ser agitado por una mano en el agua nocturna",
+      "image_prompt": "ukiyo-e Japanese woodblock print, flat color areas, elegant outlines, stylized waves and clouds, washi paper texture, vertical 9:16, no text Plancton diminuto brillando al ser agitado por una mano en el agua nocturna; vertical 9:16, sin texto.",
+      "ambiente": "olas",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "style_id": "ukiyo_e",
+      "asset_filename": "frames/scene_005.png"
+    },
+    {
+      "id": "scene_006",
+      "arc": "cierre_historia",
+      "duration_seconds": 10,
+      "narration": "Porque el destello puede delatar al atacante, como prender las luces a un ladrón. Así, un depredador más grande puede verlo y comérselo.",
+      "on_screen_text": "Humedad y conservación",
+      "visual_description": "Pequeño crustáceo iluminado por destellos azules mientras un pez grande se acerca desde la sombra",
+      "image_prompt": "ukiyo-e Japanese woodblock print, flat color areas, elegant outlines, stylized waves and clouds, washi paper texture, vertical 9:16, no text Pequeño crustáceo iluminado por destellos azules mientras un pez grande se acerca desde la sombra; vertical 9:16, sin texto.",
+      "ambiente": "olas",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "style_id": "ukiyo_e",
+      "asset_filename": "frames/scene_006.png"
+    },
+    {
+      "id": "scene_007",
+      "arc": "reflexion_o_pregunta",
+      "duration_seconds": 10,
+      "narration": "Un matiz: no todo lo que brilla es esto. Algunos animales solo devuelven la luz que les llega, como un chaleco reflejante. Otros, como el plancton, la fabrican.",
+      "on_screen_text": "Esto fue Datos y ociosidades",
+      "visual_description": "Comparación: medusa reflejando luz de una linterna frente a plancton que brilla por sí mismo",
+      "image_prompt": "ukiyo-e Japanese woodblock print, flat color areas, elegant outlines, stylized waves and clouds, washi paper texture, vertical 9:16, no text Comparación: medusa reflejando luz de una linterna frente a plancton que brilla por sí mismo; vertical 9:16, sin texto.",
+      "ambiente": "olas",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "style_id": "ukiyo_e",
+      "asset_filename": "frames/scene_007.png"
+    },
+    {
+      "id": "scene_008",
+      "arc": "reflexion_o_pregunta",
+      "duration_seconds": 10,
+      "narration": "Así que el mar, de noche, no está a oscuras: está lleno de faroles vivos que se encienden para cazar, huir o enamorarse. Esto fue Datos y ociosidades.",
+      "on_screen_text": "Esto fue Datos y ociosidades",
+      "visual_description": "Océano nocturno lleno de pequeñas luces vivas azules como un cielo estrellado bajo el agua",
+      "image_prompt": "ukiyo-e Japanese woodblock print, flat color areas, elegant outlines, stylized waves and clouds, washi paper texture, vertical 9:16, no text Océano nocturno lleno de pequeñas luces vivas azules como un cielo estrellado bajo el agua; vertical 9:16, sin texto.",
+      "ambiente": "olas",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "style_id": "ukiyo_e",
+      "asset_filename": "frames/scene_008.png"
+    }
+  ],
+  "cortinilla_fuentes": {
+    "duration_seconds": 6,
+    "titulo": "Fuentes",
+    "aviso": "Divulgación realizada con apoyo de IA; declarar los recursos sintéticos usados en versión final.",
+    "firma": "Datos y ociosidades",
+    "source_ids": [
+      "SRC-001",
+      "SRC-002"
+    ]
+  },
+  "audio": {
+    "music_asset": null,
+    "music_plan": "Cama discreta; selección en montaje por Grok",
+    "music_license": null
+  },
+  "export": {
+    "resolution": "1080x1920",
+    "fps": 30,
+    "render_status": "NOT_GENERATED"
+  },
+  "publicacion": {
+    "status": "PENDIENTE_DECISION_GROK",
+    "platforms": [
+      "YouTube Shorts",
+      "TikTok",
+      "Facebook Reels"
+    ],
+    "note": "No publicar desde preproducción textual."
+  },
+  "estado": "PENDIENTE_REVISION_GROK",
+  "production_mode": "storyboard_only",
+  "validation_notes": [
+    "7 escenas; 78 segundos narrados y cortinilla de 6 segundos."
+  ],
+  "linea_tematica_provisional": "Ciencia y vida cotidiana",
+  "approved_assets": [],
+  "risk_notes": [
+    "Evitar absolutos; explicar condiciones y límites."
+  ],
+  "thumbnail_source": "scene_001",
+  "qa_editorial": {
+    "fecha": "2026-10-31",
+    "por": "Grok",
+    "estado": "OK tras reescritura (línea editorial §1-9)"
+  }
+}

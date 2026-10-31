@@ -1,5 +1,5 @@
 {
- "estado": "programado_tiktok",
+ "estado": "programado_tiktok_repost",
  "mp4": "/workspace/capcot/salidas/2026-10-28_familia-voyager-disco-oro/capsula.mp4",
  "caption": "Si un extraterrestre encontrara un disco, ¿qué le contarías de la Tierra?\n\nEl disco de oro del Voyager: un saludo a las estrellas. Datos verificados contados como historia.\n\nFuentes en YouTube @datosyociosidades\n\n#aprendeentiktok #sabiasque #ciencia #divulgacioncientifica #VoyagerDiscoDeOroDiaLuz",
  "hashtags": [
@@ -16,8 +16,21 @@
  "instruccion": "Mj/agente con browser sube en TikTok Studio con caption_corto, etiqueta IA y programa a la hora del slot; luego estado='programado_tiktok'/'publicado_tiktok' + url.",
  "caption_corto": "El disco de oro del Voyager: un saludo a las estrellas\n\nFuentes en YouTube @datosyociosidades\n#aprendeentiktok #sabiasque #ciencia",
  "etiqueta_ia": "Activar etiqueta 'Contenido generado por IA' (imágenes y voz sintéticas)",
- "etiqueta_ia_activada": false,
+ "etiqueta_ia_activada": true,
  "url": null,
  "hora_cdmx": "2026-10-28 13:30",
- "nota_studio": "Programado 28-oct ~02:15 CDMX; Studio GMT-4 = CDMX+2"
+ "nota_studio": "Programado 28-oct ~02:15 CDMX; Studio GMT-4 = CDMX+2",
+ "repost_pedido": {
+  "cuando": "2026-10-31",
+  "hora_cdmx_sugerida": "16:00",
+  "motivo": "Mj t289u: TT ~3 vistas propias; YT original OK; cancelar YT 5k93gNk5gdw"
+ },
+ "caption_repost": "Si un extraterrestre encontrara un disco, ¿qué le contarías de la Tierra?\n\nEl disco de oro del Voyager 🚀\n\nFuentes en YouTube @datosyociosidades\n\n#voyager #disco #ciencia #espacio #extraterrestres #sabiasque",
+ "repost_31oct": {
+  "hora_cdmx": "2026-10-31 16:00",
+  "studio_label": "Oct 31, 6:00 PM (GMT-4) New York",
+  "etiqueta_ia": true,
+  "caption": "Si un extraterrestre encontrara un disco, ¿qué le contarías de la Tierra?\n\nEl disco de oro del Voyager 🚀\n\nFuentes en YouTube @datosyociosidades\n\n#voyager #disco #ciencia #espacio #extraterrestres #sabiasque",
+  "pedido": "t289u"
+ }
 }

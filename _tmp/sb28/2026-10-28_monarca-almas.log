@@ -1,0 +1,88 @@
+frames OK
+OK
+AVISO: la cortinilla invade la zona segura inferior
+scene_001: voz 4.2s, escena 4.7s
+scene_002: voz 9.2s, escena 9.8s
+scene_003: voz 8.8s, escena 9.4s
+scene_004: voz 7.3s, escena 7.9s
+scene_005: voz 9.0s, escena 9.5s
+scene_006: voz 9.1s, escena 9.6s
+scene_007: voz 10.1s, escena 10.6s
+scene_008: voz 11.3s, escena 11.9s
+OK /workspace/capcot/salidas/2026-10-28_2026-10-28-monarca-almas/capsula.mp4 duración 79.27s
+PASA  duracion_>=60_<=120 79.27s (objetivo 90)
+PASA  resolucion_1080x1920 
+PASA  h264_aac 
+PASA  fps_30 30/1
+PASA  loudness_-14 -14.4 LUFS
+PASA  subs_max_3_palabras 79 bloques
+PASA  fuentes_1_4 
+PASA  aviso_ia 
+PASA  arco 
+PASA  sin_huecos_voz_<=0.9s hueco máx 0.49s
+PASA  subs_cobertura_>=99% 100.0% (203/203 palabras)
+PASA  subs_sin_solapes 0 solapes
+PASA  subs_en_cuadro_zona_segura PlayResY 1920, MarginV 620
+PASA  voz_<=240_palabras 203 palabras
+PASA  estructura_valida mito_vs_dato
+PASA  estructura_no_repite_anterior anterior: pregunta
+PASA  cama_musical_no_repite_anterior tambor (anterior: circuito_neural)
+PASA  capa_mapa mapa,dato,dato
+PASA  capa_grafico_o_dato mapa,dato,dato
+PASA  licencias_json 
+PASA  metadata_yt_valida título/descr./tags OK
+{
+ "canal": {
+  "nombre": "Datos y ociosidades",
+  "handle": "@datosyociosidades",
+  "youtube_channel_id": "UCU2ZI-6pBJEr9aSFsF6bxLw"
+ },
+ "titulo": "Mariposas monarca: ¿las almas que regresan en Día de Muertos? #Shorts",
+ "descripcion": "Dicen que cada noviembre los muertos regresan volando, con alas naranjas.\n\nMariposas monarca: ¿las almas que regresan en Día de Muertos?. Una cápsula de Datos y ociosidades: datos verificados contados como historia.\n\nFuentes:\n• CONANP – Reserva de la Biosfera Mariposa Monarca, la región https://conanp.gob.mx/conanp/dominios/rbmonarca/region.php\n• CONANP – Infografía Mariposa Monarca https://www.conanp.gob.mx/temp/mariposa.php\n• CONANP – Reserva de la Biosfera Mariposa Monarca https://conanp.gob.mx/conanp/dominios/rbmonarca/index.php\n• Merlin, Gegear & Reppert (2009) Antennal circadian clocks coordinate sun compass orientation in migratory monarch butterflies. Science 325:1700-1704 https://doi.org/10.1126/science.1176221\n\nImágenes generadas con IA · voz sintética · audio sintetizado.\nSuscríbete: @datosyociosidades\nTikTok: https://www.tiktok.com/@datosyociosidades\n\n#DatosYOciosidades #Shorts #datos #ciencia #difusión #difusióncientífica #ia #MariposaMonarcaDiaDeMuertos",
+ "hashtags": [
+  "#DatosYOciosidades",
+  "#Shorts",
+  "#datos",
+  "#ciencia",
+  "#difusión",
+  "#difusióncientífica",
+  "#ia",
+  "#MariposaMonarcaDiaDeMuertos"
+ ],
+ "tags": [
+  "DatosYOciosidades",
+  "Shorts",
+  "datos",
+  "ciencia",
+  "difusión",
+  "difusióncientífica",
+  "ia",
+  "MariposaMonarcaDiaDeMuertos"
+ ],
+ "idioma": "es-MX",
+ "categoria_yt": "27",
+ "contiene_ia": true,
+ "contenido_sintetico": false,
+ "contenido_sintetico_motivos": [
+  "no realista: ilustración estilizada + voz TTS; no requiere etiqueta (YouTube 14328491)"
+ ],
+ "privacyStatus": "private",
+ "tiktok_caption": "Dicen que cada noviembre los muertos regresan volando, con alas naranjas.\n\nMariposas monarca: ¿las almas que regresan en Día de Muertos?. Datos verificados contados como historia.\n\nFuentes en YouTube @datosyociosidades\n\n#aprendeentiktok #sabiasque #ciencia #divulgacioncientifica #MariposaMonarcaDiaDeMuertos",
+ "tiktok_hashtags": [
+  "#aprendeentiktok",
+  "#sabiasque",
+  "#ciencia",
+  "#divulgacioncientifica",
+  "#MariposaMonarcaDiaDeMuertos"
+ ],
+ "tiktok_descripcion_completa": "Dicen que cada noviembre los muertos regresan volando, con alas naranjas.\n\nMariposas monarca: ¿las almas que regresan en Día de Muertos?. Una cápsula de Datos y ociosidades: datos verificados contados como historia.\n\nFuentes:\n• CONANP – Reserva de la Biosfera Mariposa Monarca, la región https://conanp.gob.mx/conanp/dominios/rbmonarca/region.php\n• CONANP – Infografía Mariposa Monarca https://www.conanp.gob.mx/temp/mariposa.php\n• CONANP – Reserva de la Biosfera Mariposa Monarca https://conanp.gob.mx/conanp/dominios/rbmonarca/index.php\n• Merlin, Gegear & Reppert (2009) Antennal circadian clocks coordinate sun compass orientation in migratory monarch butterflies. Science 325:1700-1704 https://doi.org/10.1126/science.1176221\n\nImágenes generadas con IA · voz sintética · audio sintetizado.\nFuentes en YouTube @datosyociosidades\n\n#aprendeentiktok #sabiasque #ciencia #divulgacioncientifica #MariposaMonarcaDiaDeMuertos"
+}
+registrada 2026-10-28_monarca-almas
+AVISO: cupo diario forzado por orden explícita de Mj
+$ python3 /workspace/capcot/scripts/generar_frames.py /workspace/capcot/salidas/2026-10-28_2026-10-28-monarca-almas/storyboard.json --proveedor manual
+$ python3 /workspace/capcot/scripts/validar_storyboard.py /workspace/capcot/salidas/2026-10-28_2026-10-28-monarca-almas/storyboard.json --check-doi
+$ python3 /workspace/capcot/scripts/montar_capsula.py /workspace/capcot/salidas/2026-10-28_2026-10-28-monarca-almas/storyboard.json -o /workspace/capcot/salidas/2026-10-28_2026-10-28-monarca-almas/capsula.mp4
+$ python3 /workspace/capcot/scripts/qa_capsula.py /workspace/capcot/salidas/2026-10-28_2026-10-28-monarca-almas/capsula.mp4 /workspace/capcot/salidas/2026-10-28_2026-10-28-monarca-almas/storyboard.json
+$ python3 /workspace/capcot/scripts/metadata.py /workspace/capcot/salidas/2026-10-28_2026-10-28-monarca-almas
+$ python3 /workspace/capcot/scripts/metricas.py registrar /workspace/capcot/salidas/2026-10-28_2026-10-28-monarca-almas
+PAQUETE: /workspace/capcot/salidas/2026-10-28_2026-10-28-monarca-almas QA_OK

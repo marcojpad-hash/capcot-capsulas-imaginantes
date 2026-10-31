@@ -1,0 +1,64 @@
+{
+ "resultado": {
+  "youtube": {
+   "kind": "youtube#video",
+   "etag": "DdAZeFjeOwWhXynYvf92qV0WiQ8",
+   "id": "4xylLT3vSIU",
+   "snippet": {
+    "publishedAt": "2026-10-31T23:11:56Z",
+    "channelId": "UCU2ZI-6pBJEr9aSFsF6bxLw",
+    "title": "El mar que fabrica luz #Shorts",
+    "description": "Es de noche en la playa.\n\nEl mar que fabrica luz. Una cápsula de Datos y ociosidades: datos verificados contados como historia.\n\nFuentes:\n• Artículo de revisión sobre propiedades ecológicas y químicas de la miel (2022) https://doi.org/10.1126/science.1174269\n• Revisión científica sobre actividad antimicrobiana de la miel (2022) https://doi.org/10.1007/s42995-024-00250-0\n\nImágenes generadas con IA · voz sintética · audio sintetizado.\nSuscríbete: @datosyociosidades\nTikTok: https://www.tiktok.com/@datosyociosidades\n\n#DatosYOciosidades #Shorts #datos #ciencia #difusión #difusióncientífica #ia #ElMarQueFabricaLuz",
+    "thumbnails": {
+     "default": {
+      "url": "https://i9.ytimg.com/vi/4xylLT3vSIU/default.jpg?sqp=CMjqmdcG&rs=AOn4CLA8wDCiXPLjEV55mw20kunZufioRg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i9.ytimg.com/vi/4xylLT3vSIU/mqdefault.jpg?sqp=CMjqmdcG&rs=AOn4CLAuAHGdROgxl5Or0yXAkOjvMedBUA",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i9.ytimg.com/vi/4xylLT3vSIU/hqdefault.jpg?sqp=CMjqmdcG&rs=AOn4CLB6SruliFiPTlNAk1cAXCQuEnSnpw",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "Datos y ociosidades",
+    "tags": [
+     "DatosYOciosidades",
+     "ElMarQueFabricaLuz",
+     "Shorts",
+     "ciencia",
+     "datos",
+     "difusión",
+     "difusióncientífica",
+     "ia"
+    ],
+    "categoryId": "27",
+    "liveBroadcastContent": "none",
+    "defaultLanguage": "es",
+    "localized": {
+     "title": "El mar que fabrica luz #Shorts",
+     "description": "Es de noche en la playa.\n\nEl mar que fabrica luz. Una cápsula de Datos y ociosidades: datos verificados contados como historia.\n\nFuentes:\n• Artículo de revisión sobre propiedades ecológicas y químicas de la miel (2022) https://doi.org/10.1126/science.1174269\n• Revisión científica sobre actividad antimicrobiana de la miel (2022) https://doi.org/10.1007/s42995-024-00250-0\n\nImágenes generadas con IA · voz sintética · audio sintetizado.\nSuscríbete: @datosyociosidades\nTikTok: https://www.tiktok.com/@datosyociosidades\n\n#DatosYOciosidades #Shorts #datos #ciencia #difusión #difusióncientífica #ia #ElMarQueFabricaLuz"
+    }
+   },
+   "status": {
+    "uploadStatus": "uploaded",
+    "privacyStatus": "private",
+    "publishAt": "2026-11-04T23:00:00Z",
+    "license": "youtube",
+    "embeddable": true,
+    "publicStatsViewable": true,
+    "selfDeclaredMadeForKids": false,
+    "containsSyntheticMedia": true
+   }
+  },
+  "youtube_thumbnail": {
+   "fuente": "primer frame mp4",
+   "estado": "ok"
+  }
+ }
+}

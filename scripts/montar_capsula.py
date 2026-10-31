@@ -45,7 +45,11 @@ async def tts(text, voice, out_mp3, rate="+0%", pitch="+0Hz"):
     frases = _frases(text)
     for k, fr in enumerate(frases):
         mp = os.path.join(tmpd, f"{k}.mp3")
-        ws = await _tts_one(fr, voice, mp, rate, pitch)
+        for _try in range(6):  # edge-tts devuelve NoAudioReceived intermitente (throttling): reintentar
+            try: ws = await _tts_one(fr, voice, mp, rate, pitch); break
+            except Exception:
+                if _try == 5: raise
+                await asyncio.sleep(3 + 4 * _try)
         # recortar el silencio que edge-tts deja al inicio/final de cada frase (si no, las pausas se duplican ~1 s)
         a0 = max(ws[0][0] - 0.05, 0) if ws else 0.0
         a1 = min(ws[-1][1] + 0.15, dur(mp)) if ws else dur(mp)

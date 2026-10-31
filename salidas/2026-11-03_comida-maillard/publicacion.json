@@ -1,0 +1,64 @@
+{
+ "resultado": {
+  "youtube": {
+   "kind": "youtube#video",
+   "etag": "fX1puK1eIQv1E2IzX0F96qaKVwM",
+   "id": "JOA1Bm6KYDs",
+   "snippet": {
+    "publishedAt": "2026-10-31T23:11:34Z",
+    "channelId": "UCU2ZI-6pBJEr9aSFsF6bxLw",
+    "title": "La química del dorado #Shorts",
+    "description": "Pones una tortilla en el comal y, en segundos, la cocina entera huele a gloria.\n\nLa química del dorado. Una cápsula de Datos y ociosidades: datos verificados contados como historia.\n\nFuentes:\n• Lund, M. N. & Ray, C. A. (2017). Control of Maillard Reactions in Foods: Strategies and Chemical Mechanisms. Journal of Agricultural and Food Chemistry, 65(23), 4537–4552. https://doi.org/10.1021/acs.jafc.7b00882\n• Chen, X.-M., Dai, Y. & Kitts, D. D. (2016). Detection of Maillard Reaction Product in Breads. Journal of Agricultural and Food Chemistry, 64(47), 9072–9077. https://doi.org/10.1021/acs.jafc.6b04367\n\nImágenes generadas con IA · voz sintética · audio sintetizado.\nSuscríbete: @datosyociosidades\nTikTok: https://www.tiktok.com/@datosyociosidades\n\n#DatosYOciosidades #Shorts #datos #ciencia #difusión #difusióncientífica #ia #ReacciónDeMaillardEnAlimentos",
+    "thumbnails": {
+     "default": {
+      "url": "https://i9.ytimg.com/vi/JOA1Bm6KYDs/default.jpg?sqp=CMjqmdcG&rs=AOn4CLD1zgaJmlr_jA_s7bB_PVCnve3jEA",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i9.ytimg.com/vi/JOA1Bm6KYDs/mqdefault.jpg?sqp=CMjqmdcG&rs=AOn4CLDLxlmsy-zytUo-il45dobgxP93Rg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i9.ytimg.com/vi/JOA1Bm6KYDs/hqdefault.jpg?sqp=CMjqmdcG&rs=AOn4CLBpxpdNceCaZ0dS7MDuqg1JAcJM9w",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "Datos y ociosidades",
+    "tags": [
+     "DatosYOciosidades",
+     "ReacciónDeMaillardEnAlimentos",
+     "Shorts",
+     "ciencia",
+     "datos",
+     "difusión",
+     "difusióncientífica",
+     "ia"
+    ],
+    "categoryId": "27",
+    "liveBroadcastContent": "none",
+    "defaultLanguage": "es",
+    "localized": {
+     "title": "La química del dorado #Shorts",
+     "description": "Pones una tortilla en el comal y, en segundos, la cocina entera huele a gloria.\n\nLa química del dorado. Una cápsula de Datos y ociosidades: datos verificados contados como historia.\n\nFuentes:\n• Lund, M. N. & Ray, C. A. (2017). Control of Maillard Reactions in Foods: Strategies and Chemical Mechanisms. Journal of Agricultural and Food Chemistry, 65(23), 4537–4552. https://doi.org/10.1021/acs.jafc.7b00882\n• Chen, X.-M., Dai, Y. & Kitts, D. D. (2016). Detection of Maillard Reaction Product in Breads. Journal of Agricultural and Food Chemistry, 64(47), 9072–9077. https://doi.org/10.1021/acs.jafc.6b04367\n\nImágenes generadas con IA · voz sintética · audio sintetizado.\nSuscríbete: @datosyociosidades\nTikTok: https://www.tiktok.com/@datosyociosidades\n\n#DatosYOciosidades #Shorts #datos #ciencia #difusión #difusióncientífica #ia #ReacciónDeMaillardEnAlimentos"
+    }
+   },
+   "status": {
+    "uploadStatus": "uploaded",
+    "privacyStatus": "private",
+    "publishAt": "2026-11-03T19:30:00Z",
+    "license": "youtube",
+    "embeddable": true,
+    "publicStatsViewable": true,
+    "selfDeclaredMadeForKids": false,
+    "containsSyntheticMedia": true
+   }
+  },
+  "youtube_thumbnail": {
+   "fuente": "primer frame mp4",
+   "estado": "ok"
+  }
+ }
+}

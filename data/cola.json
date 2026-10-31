@@ -1,1 +1,16 @@
-[]
+[
+ {
+  "id": "2026-10-31_pardelas-jetlag-solar",
+  "fecha": "2026-10-31",
+  "origen": "externa",
+  "tema": "pardelas pichonetas jet lag reloj interno brújula solar",
+  "estado": "fallo",
+  "entrada": "cola/entrada/2026-10-31_pardelas-jetlag-solar.json",
+  "carpeta": "cola/2026-10-31_2026-10-31_pardelas-jetlag-solar",
+  "actualizado": "2026-10-31T12:12:25",
+  "rc": 1,
+  "paquete": null,
+  "yt_id": null,
+  "qa_ok": null
+ }
+]

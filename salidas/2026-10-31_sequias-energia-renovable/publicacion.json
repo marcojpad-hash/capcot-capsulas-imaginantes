@@ -13,26 +13,26 @@
  "resultado": {
   "youtube": {
    "kind": "youtube#video",
-   "etag": "gS0ZqZgqZ-Ohoib9m0C0ky8C18c",
-   "id": "pMkzlwB-7bo",
+   "etag": "u0XxqkYmroNigD8RcL-rQAKKUBI",
+   "id": "OwfxfQ4RPSo",
    "snippet": {
-    "publishedAt": "2026-10-31T21:56:55Z",
+    "publishedAt": "2026-10-31T23:02:10Z",
     "channelId": "UCU2ZI-6pBJEr9aSFsF6bxLw",
     "title": "Cuando el viento y el Sol fallan juntos #Shorts",
     "description": "La energía solar necesita Sol. La eólica necesita viento. Pero ¿qué pasa cuando ambos escasean al mismo tiempo?\n\nCuando el viento y el Sol fallan juntos #Shorts. Una cápsula de Datos y ociosidades: datos verificados contados como historia.\n\nFuentes:\n• Aminimehr, Hellinckx & Tabari (2026), Communications Earth & Environment https://doi.org/10.1038/s43247-026-04183-7\n\nImágenes generadas con IA · voz sintética · audio sintetizado.\nSuscríbete: @datosyociosidades\nTikTok: https://www.tiktok.com/@datosyociosidades\n\n#energia #sequia #ciencia #sabiasque #Shorts",
     "thumbnails": {
      "default": {
-      "url": "https://i9.ytimg.com/vi/pMkzlwB-7bo/default.jpg?sqp=CLTHmdcG&rs=AOn4CLB36shn_2r6EcFytJ4eXIZCqJt-kw",
+      "url": "https://i9.ytimg.com/vi/OwfxfQ4RPSo/default.jpg?sqp=CPDlmdcG&rs=AOn4CLB_aXzGNFDUdFhw18eae1lX2N3BxA",
       "width": 120,
       "height": 90
      },
      "medium": {
-      "url": "https://i9.ytimg.com/vi/pMkzlwB-7bo/mqdefault.jpg?sqp=CLTHmdcG&rs=AOn4CLDEOSBz5W3Su35qM9rNJIqUME9HjQ",
+      "url": "https://i9.ytimg.com/vi/OwfxfQ4RPSo/mqdefault.jpg?sqp=CPDlmdcG&rs=AOn4CLBAK0XPuBaEcwRB-TcK1mxl6HtfUA",
       "width": 320,
       "height": 180
      },
      "high": {
-      "url": "https://i9.ytimg.com/vi/pMkzlwB-7bo/hqdefault.jpg?sqp=CLTHmdcG&rs=AOn4CLCj7ohki7duITU75DFLPGbYzzjpVw",
+      "url": "https://i9.ytimg.com/vi/OwfxfQ4RPSo/hqdefault.jpg?sqp=CPDlmdcG&rs=AOn4CLCR3x7VJUWkMsy-3zN1m58_Cbg0eA",
       "width": 480,
       "height": 360
      }
@@ -87,10 +87,22 @@
     "estado": "SIGUE PROGRAMADO 2026-11-03T01:00:00Z — borrar a mano en Studio (token sin scope youtube)",
     "reemplazado_por": "pMkzlwB-7bo",
     "fecha": "2026-10-31T15:55:49-06:00"
+   },
+   {
+    "id": "pMkzlwB-7bo",
+    "estado": "SIGUE PROGRAMADO 2026-11-03T01:00:00Z — borrar a mano en Studio",
+    "reemplazado_por": "-HfaDUCg4OE",
+    "fecha": "2026-10-31T16:28:17-06:00"
+   },
+   {
+    "id": "-HfaDUCg4OE",
+    "estado": "SIGUE PROGRAMADO 2026-11-03T01:00:00Z — borrar a mano en Studio",
+    "reemplazado_por": "OwfxfQ4RPSo",
+    "fecha": "2026-10-31T17:01:59-06:00"
    }
   ],
   "youtube_thumbnail": {
-   "fuente": "scene_001 (gancho)",
+   "fuente": "primer frame mp4",
    "estado": "ok"
   }
  },

@@ -14,26 +14,26 @@
  "resultado": {
   "youtube": {
    "kind": "youtube#video",
-   "etag": "3dam_FFy7UiuuZANUiDNyh7tP7k",
-   "id": "MYWsfLm_Brw",
+   "etag": "Sb0j1qK5MxwB8zMXPLN31XnM00A",
+   "id": "HDQr9OGpFJM",
    "snippet": {
-    "publishedAt": "2026-10-31T21:56:05Z",
+    "publishedAt": "2026-10-31T23:01:59Z",
     "channelId": "UCU2ZI-6pBJEr9aSFsF6bxLw",
     "title": "El hielo que sostuvo tres mantos #Shorts",
     "description": "¿Qué pudo sostener tres enormes mantos de hielo?\n\nEl hielo que sostuvo tres mantos #Shorts. Una cápsula de Datos y ociosidades: datos verificados contados como historia.\n\nFuentes:\n• Klotsko, S. A. et al. (2026). The Baffin Bay Ice Shelf stabilized three adjacent ice sheets during the last glacial period. Nature Geoscience. https://doi.org/10.1038/s41561-026-02126-7\n• Nature Geoscience (2026-10-26). An Arctic ice shelf in the Last Glacial Maximum rivalled Antarctica’s modern ice shelves. Research Briefing. https://doi.org/10.1038/s41561-026-02127-6\n• Natural Earth. 1:110m Physical Vectors — Land. https://www.naturalearthdata.com/downloads/110m-physical-vectors/110m-land/\n\nImágenes generadas con IA · voz sintética · audio sintetizado.\nSuscríbete: @datosyociosidades\nTikTok: https://www.tiktok.com/@datosyociosidades\n\n#hielo #artico #glaciares #ciencia #sabiasque #Shorts",
     "thumbnails": {
      "default": {
-      "url": "https://i9.ytimg.com/vi/MYWsfLm_Brw/default.jpg?sqp=CLTHmdcG&rs=AOn4CLAko-Gvx1KyeaZB8ll3WHWldvPBJw",
+      "url": "https://i9.ytimg.com/vi/HDQr9OGpFJM/default.jpg?sqp=CPDlmdcG&rs=AOn4CLAZZYKQSsrjpb1DV1tA0o_GDkLMrQ",
       "width": 120,
       "height": 90
      },
      "medium": {
-      "url": "https://i9.ytimg.com/vi/MYWsfLm_Brw/mqdefault.jpg?sqp=CLTHmdcG&rs=AOn4CLBHm9XCG1CbMZT8cIcnkTfNrA5LCg",
+      "url": "https://i9.ytimg.com/vi/HDQr9OGpFJM/mqdefault.jpg?sqp=CPDlmdcG&rs=AOn4CLDyAnIe3wmgur-hl8p7Jxdn0QJB9A",
       "width": 320,
       "height": 180
      },
      "high": {
-      "url": "https://i9.ytimg.com/vi/MYWsfLm_Brw/hqdefault.jpg?sqp=CLTHmdcG&rs=AOn4CLBEBIzIOqq4L71KrmFL0Q3bUXWEQg",
+      "url": "https://i9.ytimg.com/vi/HDQr9OGpFJM/hqdefault.jpg?sqp=CPDlmdcG&rs=AOn4CLAHcOn6xTDxrPXZrRgrDoPZ-W1lHQ",
       "width": 480,
       "height": 360
      }
@@ -89,10 +89,16 @@
     "estado": "SIGUE PROGRAMADO 2026-11-01T23:00:00Z — borrar a mano en Studio (token sin scope youtube)",
     "reemplazado_por": "MYWsfLm_Brw",
     "fecha": "2026-10-31T15:55:49-06:00"
+   },
+   {
+    "id": "MYWsfLm_Brw",
+    "estado": "SIGUE PROGRAMADO 2026-11-01T23:00:00Z — borrar a mano en Studio",
+    "reemplazado_por": "HDQr9OGpFJM",
+    "fecha": "2026-10-31T17:01:59-06:00"
    }
   ],
   "youtube_thumbnail": {
-   "fuente": "scene_001 (gancho)",
+   "fuente": "primer frame mp4",
    "estado": "ok"
   }
  },

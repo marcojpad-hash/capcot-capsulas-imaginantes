@@ -1,0 +1,251 @@
+{
+  "_schema": "CAPCOT_STORYBOARD_TEXT_V2",
+  "project_id": "2026-11-04_kids-hipo-por-que",
+  "serie": "Datos y ociosidades",
+  "title": "¿Por qué tenemos hipo?",
+  "titulo": "¿Quién dispara ese hic?",
+  "language": "es-MX",
+  "aspect_ratio": "9:16",
+  "target_duration_seconds": 84,
+  "estructura": "pregunta",
+  "audience": "Público general",
+  "occasion": "Consumo vertical breve",
+  "resumen": "El hipo es un reflejo involuntario: una contracción brusca del diafragma y músculos respiratorios termina con el cierre repentino de la glotis. Su circuito incluye nervios que llevan señales desde el tórax y abdomen hacia el sistema nervioso y regresan al diafragma. Suele ser pasajero; no existe una explicación única para todos sus episodios.",
+  "trend_source": {
+    "termino": "¿Por qué tenemos hipo?",
+    "fecha_publicacion": "",
+    "url": "https://www.ncbi.nlm.nih.gov/books/NBK538225/"
+  },
+  "editorial_status": "PROPUESTA_PENDIENTE_DE_GROK",
+  "arco": {
+    "hook_medias_res": "Ese «hic» no viene del estómago: es un reflejo que involucra al diafragma, el músculo principal de la respiración.",
+    "desarrollo": "Primero ocurre una contracción involuntaria y repentina del diafragma y de músculos que ayudan a inhalar. El aire entra de golpe. Casi inmediatamente, la glotis —la entrada de la laringe— se cierra. Ese cierre produce el sonido característico que reconocemos como hipo. El circuito nervioso es más complejo que un simple espasmo. Participan señales que viajan por nervios como el vago y el frénico, además de conexiones en el sistema nervioso central. Por eso, irritaciones en distintas partes del recorrido pueden desencadenarlo. Comer rápido, distender el estómago o cambios bruscos de temperatura son disparadores conocidos, aunque no explican todos los casos.",
+    "cierre_historia": "La mayoría de los episodios dura poco y desaparece sin tratamiento. Si persiste durante días, puede requerir evaluación médica porque a veces acompaña otros problemas.",
+    "reflexion_o_pregunta": "Así que el hipo no es una criatura escondida ni una falla misteriosa: es un reflejo respiratorio cuya causa inmediata conocemos, aunque no siempre sepamos qué lo activó. Esto fue Datos y ociosidades."
+  },
+  "estilo_id": "crayones_infantiles",
+  "estilo_visual": "Crayones infantiles",
+  "visual_identity": {
+    "style_id": "crayones_infantiles",
+    "style_name": "Crayones infantiles",
+    "prompt_base": "child's wax crayon drawing on white paper, naive shapes, bright colors, visible crayon strokes, cheerful sun, vertical 9:16, no text",
+    "palette": "Según catálogo",
+    "lighting": "Constante según prompt_base",
+    "texture": "Según prompt_base",
+    "composition": "Vertical 9:16; sujeto central; continuidad de escala y personaje",
+    "negative_prompt": "No texto generado dentro de imagen, no marcas de agua, no anatomía incorrecta, no elementos no respaldados",
+    "reference_assets": [],
+    "seed": null,
+    "seed_policy": "Mantener continuidad de personajes, paleta y encuadre entre escenas"
+  },
+  "typography_identity": {
+    "font_family": "DejaVu Sans",
+    "font_weight": "700 para gancho; 400 para subtítulos",
+    "title_style": "Máximo seis palabras; presente desde frame 0 en postproducción",
+    "subtitle_style": "Bloques de máximo tres palabras; zona segura inferior",
+    "hierarchy": "Gancho > dato/etiqueta > subtítulos",
+    "animation": "Un movimiento por plano; tipografía en postproducción"
+  },
+  "voice": {
+    "engine": "edge-tts",
+    "voice_id": "es-MX-JorgeNeural",
+    "language": "es-MX",
+    "rate": "+7%",
+    "pitch": "-2Hz",
+    "pad_seconds": 0.3,
+    "modo_pausas": "continuo"
+  },
+  "sources": [
+    {
+      "id": "SRC-001",
+      "cita_corta": "Cole JA, Plewa MC. Singultus. StatPearls. Actualizado 2025.",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK538225/",
+      "doi": null,
+      "accessed": "2026-10-31",
+      "publication_date": "2025-08-09",
+      "supports": [
+        "Arco reflejo del hipo, contracción diafragmática y cierre glótico."
+      ],
+      "verification_status": "VERIFICADO_RESOLVEDOR"
+    },
+    {
+      "id": "SRC-002",
+      "cita_corta": "Kahrilas PJ, Shi G. Why do we hiccup? Gut. 1997;41:712–713.",
+      "url": "https://doi.org/10.1136/gut.41.5.712",
+      "doi": "10.1136/gut.41.5.712",
+      "accessed": "2026-10-31",
+      "publication_date": "1997-11-01",
+      "supports": [
+        "Discusión fisiológica del reflejo del hipo."
+      ],
+      "verification_status": "VERIFICADO_RESOLVEDOR"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_001",
+      "arc": "hook_medias_res",
+      "duration_seconds": 10,
+      "narration": "Estás en plena clase, todo en silencio, y de pronto: ¡hic! Todos voltean. Ese sonido no sale de tu estómago. Viene de un músculo escondido debajo de tus pulmones.",
+      "on_screen_text": "¿Quién dispara ese hic?",
+      "visual_description": "Niño en un salón de clases silencioso dando un brinco con un hipo, compañeros volteando sorprendidos",
+      "image_prompt": "child's wax crayon drawing on white paper, naive shapes, bright colors, visible crayon strokes, cheerful sun, vertical 9:16, no text Niño en un salón de clases silencioso dando un brinco con un hipo, compañeros volteando sorprendidos; vertical 9:16, sin texto.",
+      "ambiente": "madera",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "style_id": "crayones_infantiles",
+      "asset_filename": "frames/scene_001.png"
+    },
+    {
+      "id": "scene_002",
+      "arc": "desarrollo",
+      "duration_seconds": 12,
+      "narration": "Se llama diafragma, y es como un trampolín que sube y baja para que respires. Pero a veces, sin avisar, da un brinco solo. Y el aire entra de golpe.",
+      "on_screen_text": "El diafragma",
+      "visual_description": "Diafragma como un trampolín elástico bajo dos pulmones, con aire entrando de golpe por la nariz",
+      "image_prompt": "child's wax crayon drawing on white paper, naive shapes, bright colors, visible crayon strokes, cheerful sun, vertical 9:16, no text Diafragma como un trampolín elástico bajo dos pulmones, con aire entrando de golpe por la nariz; vertical 9:16, sin texto.",
+      "ambiente": "madera",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "style_id": "crayones_infantiles",
+      "asset_filename": "frames/scene_002.png"
+    },
+    {
+      "id": "scene_003",
+      "arc": "desarrollo",
+      "duration_seconds": 12,
+      "narration": "Y entonces, casi en el mismo instante, una puertita en tu garganta se cierra de golpe. Esa puertita se llama glotis. El aire choca contra ella y suena: ¡hic!",
+      "on_screen_text": "Contracción súbita",
+      "visual_description": "Puertita en la garganta cerrándose de golpe frente a una ráfaga de aire, estilo caricatura anatómica amable",
+      "image_prompt": "child's wax crayon drawing on white paper, naive shapes, bright colors, visible crayon strokes, cheerful sun, vertical 9:16, no text Puertita en la garganta cerrándose de golpe frente a una ráfaga de aire, estilo caricatura anatómica amable; vertical 9:16, sin texto.",
+      "ambiente": "madera",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "style_id": "crayones_infantiles",
+      "asset_filename": "frames/scene_003.png"
+    },
+    {
+      "id": "scene_004",
+      "arc": "desarrollo",
+      "duration_seconds": 12,
+      "narration": "Pero ¿quién da la orden? Tu cuerpo tiene cables, los nervios, que llevan mensajes entre el cerebro y el diafragma. El hipo es un mensaje que se dispara sin permiso.",
+      "on_screen_text": "Cierre de glotis",
+      "visual_description": "Cables de colores luminosos que van del cerebro al diafragma, con un mensaje en chispa viajando",
+      "image_prompt": "child's wax crayon drawing on white paper, naive shapes, bright colors, visible crayon strokes, cheerful sun, vertical 9:16, no text Cables de colores luminosos que van del cerebro al diafragma, con un mensaje en chispa viajando; vertical 9:16, sin texto.",
+      "ambiente": "madera",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "style_id": "crayones_infantiles",
+      "asset_filename": "frames/scene_004.png"
+    },
+    {
+      "id": "scene_005",
+      "arc": "desarrollo",
+      "duration_seconds": 12,
+      "narration": "Así que cualquier cosa que moleste esos cables puede activarlo. Por ejemplo, comer muy rápido o llenarte demasiado la panza, que empuja justo donde pasan.",
+      "on_screen_text": "Circuito nervioso",
+      "visual_description": "Niño comiendo muy rápido con la panza inflada empujando suavemente cables de nervios",
+      "image_prompt": "child's wax crayon drawing on white paper, naive shapes, bright colors, visible crayon strokes, cheerful sun, vertical 9:16, no text Niño comiendo muy rápido con la panza inflada empujando suavemente cables de nervios; vertical 9:16, sin texto.",
+      "ambiente": "madera",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "style_id": "crayones_infantiles",
+      "asset_filename": "frames/scene_005.png"
+    },
+    {
+      "id": "scene_006",
+      "arc": "cierre_historia",
+      "duration_seconds": 10,
+      "narration": "Lo raro es que los científicos saben cómo pasa, pero muchas veces no saben qué lo encendió. Casi siempre se va solo. Si dura días, hay que ir al médico.",
+      "on_screen_text": "No siempre hay causa única",
+      "visual_description": "Signo de interrogación gigante flotando sobre un diafragma, con un reloj de arena al lado",
+      "image_prompt": "child's wax crayon drawing on white paper, naive shapes, bright colors, visible crayon strokes, cheerful sun, vertical 9:16, no text Signo de interrogación gigante flotando sobre un diafragma, con un reloj de arena al lado; vertical 9:16, sin texto.",
+      "ambiente": "madera",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "style_id": "crayones_infantiles",
+      "asset_filename": "frames/scene_006.png"
+    },
+    {
+      "id": "scene_007",
+      "arc": "reflexion_o_pregunta",
+      "duration_seconds": 10,
+      "narration": "Así que la próxima vez que suene tu ¡hic!, imagina esto: un trampolín que brinca solo y una puertita que se cierra para aplaudirle. Tu cuerpo, tocando su propio tambor. Esto fue Datos y ociosidades.",
+      "on_screen_text": "Esto fue Datos y ociosidades",
+      "visual_description": "Niño sonriendo mientras un trampolín y una puertita dentro de su pecho tocan un tambor juntos",
+      "image_prompt": "child's wax crayon drawing on white paper, naive shapes, bright colors, visible crayon strokes, cheerful sun, vertical 9:16, no text Niño sonriendo mientras un trampolín y una puertita dentro de su pecho tocan un tambor juntos; vertical 9:16, sin texto.",
+      "ambiente": "madera",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "style_id": "crayones_infantiles",
+      "asset_filename": "frames/scene_007.png"
+    }
+  ],
+  "cortinilla_fuentes": {
+    "duration_seconds": 6,
+    "titulo": "Fuentes",
+    "aviso": "Contenido generado con IA; imágenes y voz sintéticas declaradas en versión final.",
+    "firma": "Datos y ociosidades",
+    "source_ids": [
+      "SRC-001",
+      "SRC-002"
+    ]
+  },
+  "audio": {
+    "music_asset": null,
+    "music_plan": "Cama instrumental discreta; Grok selecciona/genera en producción",
+    "music_license": null
+  },
+  "export": {
+    "resolution": "1080x1920",
+    "fps": 30,
+    "render_status": "NOT_GENERATED"
+  },
+  "publicacion": {
+    "status": "PENDIENTE_DECISION_GROK",
+    "platforms": [
+      "YouTube Shorts",
+      "TikTok",
+      "Facebook Reels"
+    ],
+    "note": "No publicar ni programar desde preproducción textual."
+  },
+  "estado": "PENDIENTE_REVISION_GROK",
+  "production_mode": "storyboard_only",
+  "validation_notes": [
+    "Narración objetivo 78 s; cortinilla 6 s; total 84 s.",
+    "No generar medios desde este paquete."
+  ],
+  "linea_tematica_provisional": "Ciencia y vida cotidiana",
+  "approved_assets": [],
+  "risk_notes": [
+    "No presentar el reflejo como enfermedad; persistencia requiere valoración clínica."
+  ],
+  "thumbnail_source": "scene_001",
+  "qa_editorial": {
+    "fecha": "2026-10-31",
+    "por": "Grok",
+    "estado": "OK tras reescritura (línea editorial §1-9)"
+  }
+}

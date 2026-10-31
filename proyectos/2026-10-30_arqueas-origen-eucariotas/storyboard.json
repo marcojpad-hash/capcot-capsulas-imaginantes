@@ -81,7 +81,7 @@
       "id": "scene_001",
       "arc": "hook_medias_res",
       "duration_seconds": 9,
-      "narration": "¿Qué había antes de una célula como la tuya? Dos microbios. Su cultivo ofrece una pista sobre el origen de la vida compleja.",
+      "narration": "Mira tu mano: cada una de sus células es una ciudad, con un núcleo en el centro y barrios separados por paredes. Pero hace muchísimo tiempo, ninguna célula era así. ¿Cómo empezó todo?",
       "on_screen_text": "Antes del núcleo",
       "visual_description": "Dos células microbianas estilizadas se aproximan por prolongaciones ramificadas; gancho in medias res, sin representar una célula humana ni un antepasado literal.",
       "source_ids": [
@@ -104,7 +104,7 @@
       "id": "scene_002",
       "arc": "desarrollo",
       "duration_seconds": 10,
-      "narration": "Son Heimdallarchaeia: un linaje de arqueas considerado el pariente conocido más cercano de los eucariotas, el grupo de animales, plantas y hongos.",
+      "narration": "La pista viene de unos microbios con nombre de dios nórdico: Heimdallarqueas. Son arqueas, microbios sencillos, y los parientes vivos más cercanos que conocemos de animales, plantas y hongos.",
       "on_screen_text": "El pariente más cercano",
       "visual_description": "Diorama de laboratorio de cultivo microbiano; se superpone mapa de Yokosuka para ubicar la sede institucional de JAMSTEC, no el sitio de muestreo.",
       "source_ids": [
@@ -147,7 +147,7 @@
       "id": "scene_003",
       "arc": "desarrollo",
       "duration_seconds": 10,
-      "narration": "Un equipo de JAMSTEC aisló dos cepas, HC1 y SC1, y consiguió mantenerlas en cultivo para observarlas directamente.",
+      "narration": "El problema: casi nadie había logrado criarlas. Hasta que un equipo japonés consiguió mantener vivas dos variedades en el laboratorio, y por fin pudo verlas de cerca.",
       "on_screen_text": "Dos cepas cultivadas",
       "visual_description": "Dos organismos distintos flotan separados, ambos con membranas externas y prolongaciones; el contraste indica dos cepas observadas, no una secuencia evolutiva.",
       "source_ids": [
@@ -170,7 +170,7 @@
       "id": "scene_004",
       "arc": "desarrollo",
       "duration_seconds": 10,
-      "narration": "Por dentro, la sorpresa fue la sencillez: no tenían núcleo ni compartimentos membranosos persistentes, como los de nuestras células.",
+      "narration": "Y por dentro, la sorpresa fue la sencillez. No había núcleo, ni barrios con paredes. Nada de la ciudad complicada que tienen nuestras células.",
       "on_screen_text": "Sin núcleo interno",
       "visual_description": "Corte conceptual de una arquea con membrana y citoplasma sencillo, sin núcleo ni organelos membranosos persistentes; no es una micrografía.",
       "source_ids": [
@@ -193,7 +193,7 @@
       "id": "scene_005",
       "arc": "desarrollo",
       "duration_seconds": 10,
-      "narration": "Por fuera, en cambio, desarrollaban prolongaciones largas y flexibles. En promedio, su volumen alcanzaba cerca del ciento cuarenta y dos por ciento del cuerpo celular principal.",
+      "narration": "Pero por fuera era otra historia: les crecían brazos largos y flexibles, tan grandes que en promedio ocupaban más espacio que el cuerpo del propio microbio.",
       "on_screen_text": "Prolongaciones enormes",
       "visual_description": "Una arquea despliega filamentos ramificados; aparece gráfico comparativo del volumen promedio de prolongaciones frente al cuerpo celular principal.",
       "source_ids": [
@@ -231,7 +231,7 @@
       "id": "scene_006",
       "arc": "cierre_historia",
       "duration_seconds": 10,
-      "narration": "Esas extensiones conectaban con otros microbios. Ambas cepas dependían de socios metanógenos: una creció en cocultivo y otra en tricultivo.",
+      "narration": "¿Y para qué tantos brazos? Para tocar a sus vecinos. Ninguna de las dos sobrevivía sola: necesitaban convivir con otros microbios que fabrican gas metano.",
       "on_screen_text": "Socios imprescindibles",
       "visual_description": "Dos configuraciones simbióticas: una arquea junto a un socio metanógeno y otra junto a dos socios; la capa de dato distingue HC1 y SC1.",
       "source_ids": [
@@ -259,7 +259,7 @@
       "id": "scene_007",
       "arc": "cierre_historia",
       "duration_seconds": 10,
-      "narration": "Un matiz: no son nuestros antepasados directos, sino parientes actuales. Permiten probar hipótesis sobre el origen de la complejidad, no ver el pasado.",
+      "narration": "Un matiz: no son nuestras tatarabuelas, sino primas actuales. No nos muestran el pasado, pero sirven para poner a prueba ideas sobre cómo empezó la complejidad.",
       "on_screen_text": "Vivir sin oxígeno",
       "visual_description": "Una cadena de péptidos se fragmenta y libera partículas hacia un socio metanógeno; el fondo representa un entorno anaerobio. La tolerancia al microoxígeno se explica solo en la voz.",
       "source_ids": [
@@ -282,7 +282,7 @@
       "id": "scene_008",
       "arc": "reflexion_o_pregunta",
       "duration_seconds": 11,
-      "narration": "Antes de la complejidad pudo estar la cooperación entre células simples. ¿Qué crees que hizo posible el salto? Esto fue Datos y ociosidades.",
+      "narration": "Así que quizá la primera gran ciudad de la vida no nació de una célula genial, sino de vecinos que se dieron la mano y ya no se soltaron. Esto fue Datos y ociosidades.",
       "on_screen_text": "Una pista, no el ancestro",
       "visual_description": "Composición conceptual: arquea y bacteria interactúan a la izquierda; una célula eucariota compleja aparece separada a la derecha, unidas por un camino punteado que representa hipótesis evolutiva, no descendencia directa demostrada.",
       "source_ids": [

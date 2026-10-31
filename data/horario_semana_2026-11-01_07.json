@@ -19,7 +19,7 @@
       "estado": "programado_yt_tt_fb",
       "notas": "TÍTULO: Un pulpo tiene tres corazones y sangre azul. borrador en proyectos/2026-xx_kids_pulpo-tres-corazones; fuentes sugeridas: Smithsonian Ocean, Monterey Bay Aquarium. No marcar Hecho para niños.",
       "project_id_plan": "2026-11-01_kids-pulpo-tres-corazones",
-      "yt_id": "pxX0eGK3r98",
+      "yt_id": "PQzLUQnHbcA",
       "publishAt": "2026-11-01T13:00:00Z",
       "plataformas": {
         "yt": "programado",
@@ -27,8 +27,11 @@
         "fb": "programado"
       },
       "yt_id_historial": [
-        "3B1ckNUahS8"
-      ]
+        "3B1ckNUahS8",
+        "pxX0eGK3r98"
+      ],
+      "yt_v4": true,
+      "mp4": "salidas/2026-11-01_pulpo-tres-corazones/capsula_v4.mp4"
     },
     {
       "fecha": "2026-11-01",
@@ -38,7 +41,7 @@
       "estado": "programado_yt_tt_fb",
       "notas": "TÍTULO: Por qué la cebolla te hace llorar. química cotidiana; fuente: Imai et al. 2002 Nature (factor lacrimógeno)",
       "project_id_plan": "2026-11-01_comida-cebolla-llorar",
-      "yt_id": "0WAcVgODwd8",
+      "yt_id": "ZWF6ke9Zec0",
       "publishAt": "2026-11-01T19:30:00Z",
       "plataformas": {
         "yt": "programado",
@@ -46,9 +49,12 @@
         "fb": "programado"
       },
       "yt_id_historial": [
-        "Fh4KkcZr3e8"
+        "Fh4KkcZr3e8",
+        "0WAcVgODwd8"
       ],
-      "yt_v2": true
+      "yt_v2": true,
+      "yt_v4": true,
+      "mp4": "salidas/2026-11-01_llorar-cebolla-quimica/capsula_v4.mp4"
     },
     {
       "fecha": "2026-11-01",
@@ -57,7 +63,7 @@
       "project_id": "2026-10-26_baffin-bay-ice-shelf",
       "estado": "programado_yt_tt_fb",
       "notas": "Sustituye corales (ya publicado 31-oct). Montar+programar YT 1-nov 17:00.",
-      "yt_id": "MYWsfLm_Brw",
+      "yt_id": "HDQr9OGpFJM",
       "publishAt": "2026-11-01T23:00:00Z",
       "plataformas": {
         "yt": "programado",
@@ -65,9 +71,12 @@
         "fb": "programado"
       },
       "yt_id_historial": [
-        "krh0Ll3kVjM"
+        "krh0Ll3kVjM",
+        "MYWsfLm_Brw"
       ],
-      "yt_v2": true
+      "yt_v2": true,
+      "yt_v4": true,
+      "mp4": "salidas/2026-10-26_baffin-bay-ice-shelf/capsula_v4.mp4"
     },
     {
       "fecha": "2026-11-01",
@@ -76,7 +85,7 @@
       "project_id": "2026-10-30_arqueas-origen-eucariotas",
       "estado": "programado_yt_tt_fb",
       "notas": "Sustituye baffin (pasa a 17:00). Preferir arqueas si storyboard OK; si no, ChatGPT.",
-      "yt_id": "9XflXdWDM0A",
+      "yt_id": "bICGA3kIBcU",
       "publishAt": "2026-11-02T01:00:00Z",
       "plataformas": {
         "yt": "programado",
@@ -84,9 +93,12 @@
         "fb": "programado"
       },
       "yt_id_historial": [
-        "i2l4BkMvHp0"
+        "i2l4BkMvHp0",
+        "9XflXdWDM0A"
       ],
-      "yt_v2": true
+      "yt_v2": true,
+      "yt_v4": true,
+      "mp4": "salidas/2026-10-30_arqueas-origen-eucariotas/capsula_v4.mp4"
     },
     {
       "fecha": "2026-11-01",
@@ -103,7 +115,7 @@
       "project_id": "2026-11-02_camaron-mantis",
       "estado": "programado_yt_tt_fb",
       "notas": "TÍTULO: El golpe del camarón mantis. borrador en proyectos/2026-xx_kids_camaron-mantis-punetazo; fuente: Patek & Caldwell 2005 J Exp Biol. No marcar Hecho para niños. | ChatGPT entregó paquete completo 31-oct (teatro_sombras, 8 escenas). PREPARADO_PENDIENTE_REVISION_GROK.",
-      "yt_id": "d-tYvAM8hGE",
+      "yt_id": "5sxxx0vuXFE",
       "publishAt": "2026-11-02T13:00:00Z",
       "plataformas": {
         "yt": "programado",
@@ -111,9 +123,12 @@
         "fb": "programado"
       },
       "yt_id_historial": [
-        "tmxMkxA6nOw"
+        "tmxMkxA6nOw",
+        "d-tYvAM8hGE"
       ],
-      "yt_v2": true
+      "yt_v2": true,
+      "yt_v4": true,
+      "mp4": "salidas/2026-11-02_camaron-mantis/capsula_v4.mp4"
     },
     {
       "fecha": "2026-11-02",
@@ -122,7 +137,7 @@
       "project_id": "2026-11-02_comida-pan-duro",
       "estado": "programado_yt_tt_fb",
       "notas": "TÍTULO: Por qué el pan se pone duro (no es que se seque). retrogradación del almidón; fuente: literatura de ciencia de alimentos (PENDING_SOURCE exacta) | ChatGPT entregó paquete 31-oct (papel_rasgado_capas, 8 escenas). PREPARADO_PENDIENTE_REVISION_GROK.",
-      "yt_id": "sHjf4QF9QiM",
+      "yt_id": "V9bO9EUN0JA",
       "publishAt": "2026-11-02T19:30:00Z",
       "plataformas": {
         "yt": "programado",
@@ -130,9 +145,12 @@
         "fb": "programado"
       },
       "yt_id_historial": [
-        "TbZRvpiDjdk"
+        "TbZRvpiDjdk",
+        "sHjf4QF9QiM"
       ],
-      "yt_v2": true
+      "yt_v2": true,
+      "yt_v4": true,
+      "mp4": "salidas/2026-11-02_comida-pan-duro/capsula_v4.mp4"
     },
     {
       "fecha": "2026-11-02",
@@ -141,7 +159,7 @@
       "project_id": "2026-10-31_murcielagos-viroma-global",
       "estado": "programado_yt_tt_fb",
       "notas": "Cola JSON ChatGPT 31-oct. NO usar corneja (ya pub 31-oct).",
-      "yt_id": "6ts8TvhgKa8",
+      "yt_id": "c-7pMF3-B-g",
       "publishAt": "2026-11-02T23:00:00Z",
       "plataformas": {
         "yt": "programado",
@@ -149,9 +167,12 @@
         "fb": "programado"
       },
       "yt_id_historial": [
-        "dFwKjIb8tFI"
+        "dFwKjIb8tFI",
+        "6ts8TvhgKa8"
       ],
-      "yt_v2": true
+      "yt_v2": true,
+      "yt_v4": true,
+      "mp4": "salidas/2026-10-31_murcielagos-viroma-global/capsula_v4.mp4"
     },
     {
       "fecha": "2026-11-02",
@@ -160,7 +181,7 @@
       "project_id": "2026-10-31_sequias-energia-renovable",
       "estado": "programado_yt_tt_fb",
       "notas": "Cola JSON ChatGPT 31-oct. NO usar mosquito (ya pub 31-oct).",
-      "yt_id": "pMkzlwB-7bo",
+      "yt_id": "OwfxfQ4RPSo",
       "publishAt": "2026-11-03T01:00:00Z",
       "plataformas": {
         "yt": "programado",
@@ -168,9 +189,14 @@
         "fb": "programado"
       },
       "yt_id_historial": [
-        "SQ7_g-vz8Ow"
+        "SQ7_g-vz8Ow",
+        "pMkzlwB-7bo",
+        "-HfaDUCg4OE"
       ],
-      "yt_v2": true
+      "yt_v2": true,
+      "yt_v3": true,
+      "mp4": "salidas/2026-10-31_sequias-energia-renovable/capsula_v4.mp4",
+      "yt_v4": true
     },
     {
       "fecha": "2026-11-02",
@@ -185,16 +211,24 @@
       "hora": "07:00",
       "cesta": "kids",
       "project_id": "2026-11-03_kids-tiburon-groenlandia",
-      "estado": "pedir_chatgpt",
-      "notas": "TÍTULO: El tiburón que puede vivir siglos. borrador en proyectos/2026-xx_kids_tiburon-groenlandia-400-anos; fuente: Nielsen et al. 2016 Science. No marcar Hecho para niños."
+      "estado": "programado_yt",
+      "notas": "TÍTULO: El tiburón que puede vivir siglos. borrador en proyectos/2026-xx_kids_tiburon-groenlandia-400-anos; fuente: Nielsen et al. 2016 Science. No marcar Hecho para niños.",
+      "publishAt": "2026-11-03T13:00:00Z",
+      "yt_id": "bImG_vdlBhs",
+      "yt_v1": true,
+      "mp4": "salidas/2026-11-03_kids-tiburon-groenlandia/capsula.mp4"
     },
     {
       "fecha": "2026-11-03",
       "hora": "13:30",
       "cesta": "comida_familia",
       "project_id": "2026-11-03_comida-maillard",
-      "estado": "pedir_chatgpt",
-      "notas": "TÍTULO: Lo dorado de la tortilla y el pan: reacción de Maillard. fuente: ACS / revisión Food Chemistry"
+      "estado": "programado_yt",
+      "notas": "TÍTULO: Lo dorado de la tortilla y el pan: reacción de Maillard. fuente: ACS / revisión Food Chemistry",
+      "publishAt": "2026-11-03T19:30:00Z",
+      "yt_id": "JOA1Bm6KYDs",
+      "yt_v1": true,
+      "mp4": "salidas/2026-11-03_comida-maillard/capsula.mp4"
     },
     {
       "fecha": "2026-11-03",
@@ -203,7 +237,7 @@
       "project_id": "2026-10-29_juno-choque-proa",
       "estado": "programado_yt_tt_fb",
       "notas": "Juno en cola; no salió 31-oct. Cubrir intermedio 3-nov.",
-      "yt_id": "3IiUmsRb30Y",
+      "yt_id": "bpeRL5XtYLI",
       "publishAt": "2026-11-03T23:00:00Z",
       "plataformas": {
         "yt": "programado",
@@ -211,9 +245,12 @@
         "fb": "programado"
       },
       "yt_id_historial": [
-        "73cZz8Pi9TE"
+        "73cZz8Pi9TE",
+        "3IiUmsRb30Y"
       ],
-      "yt_v2": true
+      "yt_v2": true,
+      "yt_v4": true,
+      "mp4": "salidas/2026-10-29_juno-choque-proa/capsula_v4.mp4"
     },
     {
       "fecha": "2026-11-03",
@@ -222,7 +259,7 @@
       "project_id": "2026-10-31_smartpe-edicion-plantas",
       "estado": "programado_yt_tt_fb",
       "notas": "Sustituye reutilizar arqueas (ya programado 1-nov 19:00). SmartPE cola JSON.",
-      "yt_id": "aOcqxbBhQ0E",
+      "yt_id": "-WBW0X9KpLM",
       "publishAt": "2026-11-04T01:00:00Z",
       "plataformas": {
         "yt": "programado",
@@ -230,9 +267,12 @@
         "fb": "programado"
       },
       "yt_id_historial": [
-        "MXsNOywNzcg"
+        "MXsNOywNzcg",
+        "aOcqxbBhQ0E"
       ],
-      "yt_v2": true
+      "yt_v2": true,
+      "yt_v4": true,
+      "mp4": "salidas/2026-10-31_smartpe-edicion-plantas/capsula_v4.mp4"
     },
     {
       "fecha": "2026-11-03",
@@ -247,24 +287,36 @@
       "hora": "07:00",
       "cesta": "kids",
       "project_id": "2026-11-04_kids-hipo-por-que",
-      "estado": "pedir_chatgpt",
-      "notas": "TÍTULO: ¿Por qué nos da hipo?. cuerpo; fuente: NHS / revisión médica revisada por pares (PENDING_SOURCE exacta). No marcar Hecho para niños."
+      "estado": "programado_yt",
+      "notas": "TÍTULO: ¿Por qué nos da hipo?. cuerpo; fuente: NHS / revisión médica revisada por pares (PENDING_SOURCE exacta). No marcar Hecho para niños.",
+      "publishAt": "2026-11-04T13:00:00Z",
+      "yt_id": "Rg-iTgMExWw",
+      "yt_v1": true,
+      "mp4": "salidas/2026-11-04_kids-hipo-por-que/capsula.mp4"
     },
     {
       "fecha": "2026-11-04",
       "hora": "13:30",
       "cesta": "comida_familia",
       "project_id": "2026-11-04_comida-miel-no-caduca",
-      "estado": "pedir_chatgpt",
-      "notas": "TÍTULO: La miel casi no se echa a perder. fuente: Smithsonian Magazine + estudio de actividad de agua"
+      "estado": "programado_yt",
+      "notas": "TÍTULO: La miel casi no se echa a perder. fuente: Smithsonian Magazine + estudio de actividad de agua",
+      "publishAt": "2026-11-04T19:30:00Z",
+      "yt_id": "jpDyCX6zSgQ",
+      "yt_v1": true,
+      "mp4": "salidas/2026-11-04_comida-miel-no-caduca/capsula.mp4"
     },
     {
       "fecha": "2026-11-04",
       "hora": "17:00",
       "cesta": "intermedio_1",
       "project_id": "2026-11-04_inter-bioluminiscencia-mar",
-      "estado": "pedir_chatgpt",
-      "notas": "TÍTULO: Por qué el mar brilla de noche. naturaleza; fuente: NOAA Ocean Exploration"
+      "estado": "programado_yt",
+      "notas": "TÍTULO: Por qué el mar brilla de noche. naturaleza; fuente: NOAA Ocean Exploration",
+      "publishAt": "2026-11-04T23:00:00Z",
+      "yt_id": "4xylLT3vSIU",
+      "yt_v1": true,
+      "mp4": "salidas/2026-11-04_inter-bioluminiscencia-mar/capsula.mp4"
     },
     {
       "fecha": "2026-11-04",

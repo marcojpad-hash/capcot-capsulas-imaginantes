@@ -10,3 +10,9 @@
 
 Hashtags simples. Brief tips ChatGPT: ajustes_entre_modelos/PARA_CHATGPT_tips_ciencia_hack_31oct.md
 Duplicados YT ILDMoFhsH74 / MSiwJnSu_Dk / IBH8Q95BGVs borrados.
+
+## Cierre 31-oct noche (Grok)
+- Se subió el lote v4 (de-jargon, cableado entre escenas y cierre memorable), sequías v4 con el arranque viejo, tiburón, maillard y el 4 nov (hipo, miel, bioluminiscencia). Thumbnail = frame 0.
+- Por qué fallaba tiburón: los campos `sfx`/`ambiente` traían texto libre de ChatGPT ("Pulso grave") y montar_capsula hacía SystemExit; procesar_cola se tragaba el error. Ahora se mapean a claves de sfx_manifest. asset_filename estaba en None.
+- 23:30 de hoy: MSiwJnSu_Dk ya no existe en YT; solo queda rLd9DVPXHb8 (privado, publishAt 05:30Z). horario_2026-10-31 corregido.
+- Del 5 al 7 nov no pasaron el QA editorial: brief en ajustes_entre_modelos/PARA_CHATGPT_faltantes_ahora.md

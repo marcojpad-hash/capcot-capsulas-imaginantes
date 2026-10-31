@@ -1,0 +1,267 @@
+{
+  "_schema": "CAPCOT_STORYBOARD_TEXT_V2",
+  "project_id": "2026-11-04_comida-miel-no-caduca",
+  "serie": "Datos y ociosidades",
+  "title": "¿La miel nunca se echa a perder?",
+  "titulo": "La miel desafía al tiempo",
+  "language": "es-MX",
+  "aspect_ratio": "9:16",
+  "target_duration_seconds": 84,
+  "estructura": "pregunta",
+  "audience": "Público general",
+  "occasion": "Video vertical breve",
+  "resumen": "¿La miel nunca se echa a perder?",
+  "trend_source": {
+    "termino": "¿La miel nunca se echa a perder?",
+    "fecha_publicacion": "",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9359632/"
+  },
+  "editorial_status": "PROPUESTA_PENDIENTE_DE_GROK",
+  "arco": {
+    "hook_medias_res": "La miel puede durar muchísimo tiempo, pero decir que nunca se echa a perder necesita una precisión: depende de cómo se produjo y cómo se guarda.",
+    "desarrollo": "Las abejas transforman el néctar, reducen su humedad y lo almacenan en celdas. El resultado es una mezcla muy concentrada de azúcares. Esa concentración deja poca agua disponible para que muchos microorganismos crezcan. Los científicos llaman a esa medida actividad de agua; en la miel suele ser baja. También influye su acidez. Y en ciertas mieles, enzimas y otros compuestos generan sustancias que dificultan el crecimiento de bacterias. No es magia ni esterilidad absoluta. Algunas levaduras toleran ambientes muy azucarados y pueden fermentar miel con demasiada humedad.",
+    "cierre_historia": "Si el frasco queda abierto, absorbe agua del ambiente o se contamina, puede cambiar. La cristalización, por sí sola, tampoco significa que esté echada a perder: es un proceso físico natural de sus azúcares.",
+    "reflexion_o_pregunta": "La clave de su larga conservación es una combinación de poca agua disponible, acidez y composición química. Así que la miel no es inmortal; es un alimento con condiciones poco hospitalarias para muchos microbios. Esto fue Datos y ociosidades."
+  },
+  "estilo_id": "bordado",
+  "estilo_visual": "Bordado (propio)",
+  "visual_identity": {
+    "style_id": "bordado",
+    "style_name": "Bordado (propio)",
+    "prompt_base": "hand embroidery on linen fabric, colorful thread stitches, satin and french knots, embroidery hoop edge visible, vertical 9:16, no text",
+    "palette": "Según catálogo",
+    "lighting": "Según prompt base",
+    "texture": "Según prompt base",
+    "composition": "Vertical 9:16; continuidad de paleta y escala",
+    "negative_prompt": "No texto dentro de imagen, no marcas de agua, no elementos falsos",
+    "reference_assets": [],
+    "seed": null,
+    "seed_policy": "Continuidad entre las ocho escenas"
+  },
+  "typography_identity": {
+    "font_family": "DejaVu Sans",
+    "font_weight": "700/400",
+    "title_style": "Gancho máximo seis palabras desde frame 0",
+    "subtitle_style": "Bloques de máximo tres palabras",
+    "hierarchy": "Gancho > dato > subtítulos",
+    "animation": "Un movimiento por plano; texto en postproducción"
+  },
+  "voice": {
+    "engine": "edge-tts",
+    "voice_id": "es-MX-JorgeNeural",
+    "language": "es-MX",
+    "rate": "+7%",
+    "pitch": "-2Hz",
+    "pad_seconds": 0.3,
+    "modo_pausas": "continuo"
+  },
+  "sources": [
+    {
+      "id": "SRC-001",
+      "cita_corta": "Artículo de revisión sobre propiedades ecológicas y químicas de la miel (2022)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9359632/",
+      "doi": null,
+      "accessed": "2026-10-31",
+      "publication_date": "2022",
+      "supports": [
+        "Composición, mecanismos y límites descritos en la fuente"
+      ],
+      "verification_status": "VERIFICADO_RESOLVEDOR"
+    },
+    {
+      "id": "SRC-002",
+      "cita_corta": "Revisión científica sobre actividad antimicrobiana de la miel (2022)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9312033/",
+      "doi": null,
+      "accessed": "2026-10-31",
+      "publication_date": "2022",
+      "supports": [
+        "Composición, mecanismos y límites descritos en la fuente"
+      ],
+      "verification_status": "VERIFICADO_RESOLVEDOR"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_001",
+      "arc": "hook_medias_res",
+      "duration_seconds": 10,
+      "narration": "Abres un frasco de miel olvidado en la alacena. Lleva años ahí. ¿Se echó a perder? Casi siempre, no. Pero decir que nunca caduca tiene trampa.",
+      "on_screen_text": "La miel desafía al tiempo",
+      "visual_description": "Mano abriendo un frasco de miel antiguo y polvoso en una alacena de cocina mexicana",
+      "image_prompt": "hand embroidery on linen fabric, colorful thread stitches, satin and french knots, embroidery hoop edge visible, vertical 9:16, no text Mano abriendo un frasco de miel antiguo y polvoso en una alacena de cocina mexicana; vertical 9:16, sin texto.",
+      "ambiente": "madera",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "style_id": "bordado",
+      "asset_filename": "frames/scene_001.png"
+    },
+    {
+      "id": "scene_002",
+      "arc": "desarrollo",
+      "duration_seconds": 12,
+      "narration": "Todo empieza en la colmena. Las abejas toman néctar, que es casi agua con azúcar, y lo abanican con las alas hasta quitarle la mayor parte del agua.",
+      "on_screen_text": "Néctar transformado",
+      "visual_description": "Abejas abanicando con sus alas celdas de panal llenas de néctar brillante",
+      "image_prompt": "hand embroidery on linen fabric, colorful thread stitches, satin and french knots, embroidery hoop edge visible, vertical 9:16, no text Abejas abanicando con sus alas celdas de panal llenas de néctar brillante; vertical 9:16, sin texto.",
+      "ambiente": "madera",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "style_id": "bordado",
+      "asset_filename": "frames/scene_002.png"
+    },
+    {
+      "id": "scene_003",
+      "arc": "desarrollo",
+      "duration_seconds": 12,
+      "narration": "Y con eso arman una fortaleza. La miel tiene tan poca agua libre que los microbios no encuentran de dónde beber. Es como un desierto dulce para ellos.",
+      "on_screen_text": "Poca agua disponible",
+      "visual_description": "Bacterias diminutas perdidas y sedientas en un desierto de dunas de miel dorada",
+      "image_prompt": "hand embroidery on linen fabric, colorful thread stitches, satin and french knots, embroidery hoop edge visible, vertical 9:16, no text Bacterias diminutas perdidas y sedientas en un desierto de dunas de miel dorada; vertical 9:16, sin texto.",
+      "ambiente": "madera",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "style_id": "bordado",
+      "asset_filename": "frames/scene_003.png"
+    },
+    {
+      "id": "scene_004",
+      "arc": "desarrollo",
+      "duration_seconds": 12,
+      "narration": "Pero hay más guardias en la puerta: la miel es un poco ácida, y algunas producen sustancias que frenan a las bacterias. Una defensa doble.",
+      "on_screen_text": "Acidez y química",
+      "visual_description": "Gotas de miel como guardianes con escudo deteniendo a pequeñas bacterias en una puerta",
+      "image_prompt": "hand embroidery on linen fabric, colorful thread stitches, satin and french knots, embroidery hoop edge visible, vertical 9:16, no text Gotas de miel como guardianes con escudo deteniendo a pequeñas bacterias en una puerta; vertical 9:16, sin texto.",
+      "ambiente": "madera",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "style_id": "bordado",
+      "asset_filename": "frames/scene_004.png"
+    },
+    {
+      "id": "scene_005",
+      "arc": "desarrollo",
+      "duration_seconds": 12,
+      "narration": "Ojo: no es invencible. Hay levaduras, unos hongos diminutos, que aguantan el azúcar. Si la miel tiene demasiada agua, pueden fermentarla.",
+      "on_screen_text": "No es esterilidad",
+      "visual_description": "Levaduras burbujeantes dentro de un frasco de miel aguada con pequeñas burbujas",
+      "image_prompt": "hand embroidery on linen fabric, colorful thread stitches, satin and french knots, embroidery hoop edge visible, vertical 9:16, no text Levaduras burbujeantes dentro de un frasco de miel aguada con pequeñas burbujas; vertical 9:16, sin texto.",
+      "ambiente": "madera",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "style_id": "bordado",
+      "asset_filename": "frames/scene_005.png"
+    },
+    {
+      "id": "scene_006",
+      "arc": "cierre_historia",
+      "duration_seconds": 10,
+      "narration": "Así que el peligro es el agua. Un frasco abierto chupa humedad del aire, y ahí la fortaleza se debilita. ¿Y si se pone dura y blanca? Eso es otra cosa.",
+      "on_screen_text": "Humedad y conservación",
+      "visual_description": "Frasco de miel destapado absorbiendo vapor de una cocina, al lado un frasco con miel cristalizada blanca",
+      "image_prompt": "hand embroidery on linen fabric, colorful thread stitches, satin and french knots, embroidery hoop edge visible, vertical 9:16, no text Frasco de miel destapado absorbiendo vapor de una cocina, al lado un frasco con miel cristalizada blanca; vertical 9:16, sin texto.",
+      "ambiente": "madera",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "style_id": "bordado",
+      "asset_filename": "frames/scene_006.png"
+    },
+    {
+      "id": "scene_007",
+      "arc": "reflexion_o_pregunta",
+      "duration_seconds": 10,
+      "narration": "Esa miel cristalizada no está echada a perder: sus azúcares solo se acomodaron en granitos. Tápala bien, y si quieres, entíbiala a baño maría.",
+      "on_screen_text": "Esto fue Datos y ociosidades",
+      "visual_description": "Miel cristalizada volviendo a ser líquida en un frasco dentro de una olla con agua tibia",
+      "image_prompt": "hand embroidery on linen fabric, colorful thread stitches, satin and french knots, embroidery hoop edge visible, vertical 9:16, no text Miel cristalizada volviendo a ser líquida en un frasco dentro de una olla con agua tibia; vertical 9:16, sin texto.",
+      "ambiente": "madera",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "style_id": "bordado",
+      "asset_filename": "frames/scene_007.png"
+    },
+    {
+      "id": "scene_008",
+      "arc": "reflexion_o_pregunta",
+      "duration_seconds": 10,
+      "narration": "Así que la miel no es eterna por magia: es un desierto dulce que se defiende solo, mientras tú no le abras la puerta al agua. Esto fue Datos y ociosidades.",
+      "on_screen_text": "Esto fue Datos y ociosidades",
+      "visual_description": "Frasco de miel bien tapado brillando como un pequeño sol dorado en la alacena",
+      "image_prompt": "hand embroidery on linen fabric, colorful thread stitches, satin and french knots, embroidery hoop edge visible, vertical 9:16, no text Frasco de miel bien tapado brillando como un pequeño sol dorado en la alacena; vertical 9:16, sin texto.",
+      "ambiente": "madera",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "style_id": "bordado",
+      "asset_filename": "frames/scene_008.png"
+    }
+  ],
+  "cortinilla_fuentes": {
+    "duration_seconds": 6,
+    "titulo": "Fuentes",
+    "aviso": "Divulgación realizada con apoyo de IA; declarar los recursos sintéticos usados en versión final.",
+    "firma": "Datos y ociosidades",
+    "source_ids": [
+      "SRC-001",
+      "SRC-002"
+    ]
+  },
+  "audio": {
+    "music_asset": null,
+    "music_plan": "Cama discreta; selección en montaje por Grok",
+    "music_license": null
+  },
+  "export": {
+    "resolution": "1080x1920",
+    "fps": 30,
+    "render_status": "NOT_GENERATED"
+  },
+  "publicacion": {
+    "status": "PENDIENTE_DECISION_GROK",
+    "platforms": [
+      "YouTube Shorts",
+      "TikTok",
+      "Facebook Reels"
+    ],
+    "note": "No publicar desde preproducción textual."
+  },
+  "estado": "PENDIENTE_REVISION_GROK",
+  "production_mode": "storyboard_only",
+  "validation_notes": [
+    "7 escenas; 78 segundos narrados y cortinilla de 6 segundos."
+  ],
+  "linea_tematica_provisional": "Ciencia y vida cotidiana",
+  "approved_assets": [],
+  "risk_notes": [
+    "Evitar absolutos; explicar condiciones y límites."
+  ],
+  "thumbnail_source": "scene_001",
+  "qa_editorial": {
+    "fecha": "2026-10-31",
+    "por": "Grok",
+    "estado": "OK tras reescritura (línea editorial §1-9)"
+  }
+}

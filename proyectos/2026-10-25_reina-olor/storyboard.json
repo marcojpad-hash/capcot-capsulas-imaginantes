@@ -1,0 +1,173 @@
+{
+ "project_id": "2026-10-25_reina-olor",
+ "serie": "Datos y ociosidades",
+ "canal": {
+  "nombre": "Datos y ociosidades",
+  "handle": "@datosyociosidades"
+ },
+ "title": "La reina que manda con su olor",
+ "titulo": "Reina del olor",
+ "language": "es-MX",
+ "aspect_ratio": "9:16",
+ "estilo_id": "linograbado",
+ "estilo_visual": "Linograbado bitono",
+ "audio_existente": "salidas/2026-10-25-reina-olor/narracion.mp3",
+ "narration_duration": 80.304,
+ "voice": {
+  "engine": "edge-tts",
+  "voice_id": "es-MX-JorgeNeural",
+  "nota": "preexistente, no regenerar"
+ },
+ "audio": {
+  "music_asset": "sintetico:menor_calma",
+  "cama_musical": "pulso"
+ },
+ "sources": [
+  {
+   "id": "SRC-001",
+   "cita_corta": "Khallaf et al. (2026). A queen odour mediates reproductive suppression in a eusocial mammal. Nature.",
+   "doi": "10.1038/s41586-026-10772-5",
+   "url": "https://doi.org/10.1038/s41586-026-10772-5",
+   "accessed": "2026-10-25",
+   "ref_display": "Nature · doi:10.1038/s41586-026-10772-5"
+  }
+ ],
+ "cortinilla_fuentes": {
+  "titulo": "Fuente",
+  "duracion": 6,
+  "aviso": "Imágenes generadas con IA. Voz sintética.",
+  "firma": "Datos y ociosidades · @datosyociosidades"
+ },
+ "scenes": [
+  {
+   "id": "scene_001",
+   "start": 0.0,
+   "end": 7.447,
+   "duration": 7.447,
+   "narration": "Sabías que existe un mamífero donde una sola hembra tiene permiso de tener crías… y lo controla con su olor?",
+   "on_screen_text": "La reina que manda con su olor",
+   "visual_description": "Reina rata topo con ondas de olor",
+   "image_prompt": "linocut print, two-tone indigo and ochre ink on cream paper, bold carved lines, visible gouge marks, high contrast, vertical 9:16 composition, no text, A naked mole-rat queen, wrinkled hairless body, long front teeth, inside an underground burrow chamber, wavy scent lines radiating from her",
+   "asset_filename": "frames/scene_001.jpg",
+   "ambiente": "viento",
+   "sfx": "viento"
+  },
+  {
+   "id": "scene_002",
+   "start": 7.447,
+   "end": 15.236,
+   "duration": 7.789,
+   "narration": "Es la rata topo desnuda. Vive en colonias bajo tierra, como si fuera un hormiguero o una colmena.",
+   "on_screen_text": "",
+   "visual_description": "Corte de túneles tipo hormiguero",
+   "image_prompt": "linocut print, two-tone indigo and ochre ink on cream paper, bold carved lines, visible gouge marks, high contrast, vertical 9:16 composition, no text, Cross-section of an underground naked mole-rat colony: a network of tunnels and chambers like an anthill, many small hairless mole-rats",
+   "asset_filename": "frames/scene_002.jpg",
+   "ambiente": "viento",
+   "sfx": "viento"
+  },
+  {
+   "id": "scene_003",
+   "start": 15.236,
+   "end": 24.026,
+   "duration": 8.79,
+   "narration": "En cada colonia hay una reina. Ella es la única que se reproduce. Las demás hembras no son fértiles.",
+   "on_screen_text": "Una sola reina",
+   "visual_description": "Reina grande rodeada de obreras",
+   "image_prompt": "linocut print, two-tone indigo and ochre ink on cream paper, bold carved lines, visible gouge marks, high contrast, vertical 9:16 composition, no text, A large naked mole-rat queen resting on a nest of roots, surrounded by smaller worker mole-rats bowing at a distance",
+   "asset_filename": "frames/scene_003.jpg",
+   "ambiente": "viento",
+   "sfx": "viento"
+  },
+  {
+   "id": "scene_004",
+   "start": 24.026,
+   "end": 34.552,
+   "duration": 10.526,
+   "narration": "Durante años no se supo bien cómo lo lograba. Ahora, un estudio publicado en Nature, en dos mil veintiséis, encontró una pista química.",
+   "on_screen_text": "Nature, 2026",
+   "visual_description": "Frasco y pista química",
+   "image_prompt": "linocut print, two-tone indigo and ochre ink on cream paper, bold carved lines, visible gouge marks, high contrast, vertical 9:16 composition, no text, A scientist's hands holding a glass vial with a single drop near a sleeping naked mole-rat in a tunnel, wavy chemical scent curls",
+   "asset_filename": "frames/scene_004.jpg",
+   "ambiente": "madera",
+   "sfx": "madera"
+  },
+  {
+   "id": "scene_005",
+   "start": 34.552,
+   "end": 43.039,
+   "duration": 8.487,
+   "narration": "La reina tiene mucho de una sustancia llamada miristato de isopropilo. Las que no se reproducen casi no la tienen.",
+   "on_screen_text": "Miristato de isopropilo",
+   "visual_description": "Molécula como nube de olor",
+   "image_prompt": "linocut print, two-tone indigo and ochre ink on cream paper, bold carved lines, visible gouge marks, high contrast, vertical 9:16 composition, no text, Abstract molecule chain of carbon atoms drawn as carved beads, floating like a scent cloud above a naked mole-rat queen",
+   "asset_filename": "frames/scene_005.jpg",
+   "ambiente": "viento",
+   "sfx": "viento"
+  },
+  {
+   "id": "scene_006",
+   "start": 43.039,
+   "end": 49.46,
+   "duration": 6.421,
+   "narration": "Ese olor lo detectan las neuronas del olfato, y hace que las ratas de rango alto se alejen.",
+   "on_screen_text": "",
+   "visual_description": "Hocico, neuronas olfativas, rechazo",
+   "image_prompt": "linocut print, two-tone indigo and ochre ink on cream paper, bold carved lines, visible gouge marks, high contrast, vertical 9:16 composition, no text, Close-up of a naked mole-rat snout sniffing, with stylized olfactory neurons branching like roots toward the brain; another mole-rat turning away",
+   "asset_filename": "frames/scene_006.jpg",
+   "ambiente": "viento",
+   "sfx": "viento"
+  },
+  {
+   "id": "scene_007",
+   "start": 49.46,
+   "end": 56.631,
+   "duration": 7.171,
+   "narration": "Además, cambia sus hormonas, la prolactina y la progesterona, y así se frena su reproducción.",
+   "on_screen_text": "Prolactina y progesterona",
+   "visual_description": "Hormonas y freno reproductivo",
+   "image_prompt": "linocut print, two-tone indigo and ochre ink on cream paper, bold carved lines, visible gouge marks, high contrast, vertical 9:16 composition, no text, Stylized hormone symbols as swirling carved patterns flowing through a silhouette of a female naked mole-rat, a closed flower symbol on her belly",
+   "asset_filename": "frames/scene_007.jpg",
+   "ambiente": "viento",
+   "sfx": "viento"
+  },
+  {
+   "id": "scene_008",
+   "start": 56.631,
+   "end": 65.421,
+   "duration": 8.79,
+   "narration": "Lo más fuerte: en una colonia sin reina, los científicos pusieron ese olor todos los días… y ninguna hembra tomó su lugar.",
+   "on_screen_text": "Colonia sin reina",
+   "visual_description": "Nido vacío con olor diario",
+   "image_prompt": "linocut print, two-tone indigo and ochre ink on cream paper, bold carved lines, visible gouge marks, high contrast, vertical 9:16 composition, no text, An empty queen throne-like nest chamber in a tunnel, a dropper adding scent every day, worker naked mole-rats waiting calmly",
+   "asset_filename": "frames/scene_008.jpg",
+   "ambiente": "madera",
+   "sfx": "madera"
+  },
+  {
+   "id": "scene_009",
+   "start": 65.421,
+   "end": 70.75,
+   "duration": 5.329,
+   "narration": "Cuando lo quitaron, empezaron las peleas y la competencia por reproducirse.",
+   "on_screen_text": "",
+   "visual_description": "Peleas por el trono",
+   "image_prompt": "linocut print, two-tone indigo and ochre ink on cream paper, bold carved lines, visible gouge marks, high contrast, vertical 9:16 composition, no text, Two naked mole-rats fighting with bared front teeth in a narrow tunnel, dust and motion lines",
+   "asset_filename": "frames/scene_009.jpg",
+   "ambiente": "madera",
+   "sfx": "madera"
+  },
+  {
+   "id": "scene_010",
+   "start": 70.75,
+   "end": 80.304,
+   "duration": 9.554,
+   "narration": "Es una señal química que conecta a estos mamíferos con insectos como las abejas y las hormigas. Síguenos en Datos y Ociosidades.",
+   "on_screen_text": "",
+   "visual_description": "Rata topo, abeja y hormiga unidas",
+   "image_prompt": "linocut print, two-tone indigo and ochre ink on cream paper, bold carved lines, visible gouge marks, high contrast, vertical 9:16 composition, no text, A naked mole-rat beside a honeybee and an ant, linked by curling scent lines, unified in a decorative carved border",
+   "asset_filename": "frames/scene_010.jpg",
+   "ambiente": "viento",
+   "sfx": "viento"
+  }
+ ]
+}

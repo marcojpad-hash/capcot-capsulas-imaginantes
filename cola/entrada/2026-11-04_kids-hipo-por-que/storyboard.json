@@ -86,113 +86,120 @@
       "id": "scene_001",
       "arc": "hook_medias_res",
       "duration_seconds": 10,
-      "narration": "Ese «hic» no viene del estómago: es un reflejo que involucra al diafragma, el músculo principal de la respiración.",
+      "narration": "Estás en plena clase, todo en silencio, y de pronto: ¡hic! Todos voltean. Ese sonido no sale de tu estómago. Viene de un músculo escondido debajo de tus pulmones.",
       "on_screen_text": "¿Quién dispara ese hic?",
-      "visual_description": "Plano inicial del fenómeno en una composición vertical clara.",
-      "image_prompt": "child's wax crayon drawing on white paper, naive shapes, bright colors, visible crayon strokes, cheerful sun, vertical 9:16, no text, A child-friendly educational illustration of a person hiccupping, clear readable anatomy metaphor, consistent character and visual continuity",
-      "ambiente": "Ambiente limpio y discreto; sin música invasiva.",
+      "visual_description": "Niño en un salón de clases silencioso dando un brinco con un hipo, compañeros volteando sorprendidos",
+      "image_prompt": "child's wax crayon drawing on white paper, naive shapes, bright colors, visible crayon strokes, cheerful sun, vertical 9:16, no text Niño en un salón de clases silencioso dando un brinco con un hipo, compañeros volteando sorprendidos; vertical 9:16, sin texto.",
+      "ambiente": "madera",
       "sfx": [],
       "source_ids": [
         "SRC-001",
         "SRC-002"
       ],
-      "style_id": "crayones_infantiles"
+      "style_id": "crayones_infantiles",
+      "asset_filename": "frames/scene_001.png"
     },
     {
       "id": "scene_002",
       "arc": "desarrollo",
       "duration_seconds": 12,
-      "narration": "Primero ocurre una contracción involuntaria y repentina del diafragma y de músculos que ayudan a inhalar. El aire entra de golpe.",
+      "narration": "Se llama diafragma, y es como un trampolín que sube y baja para que respires. Pero a veces, sin avisar, da un brinco solo. Y el aire entra de golpe.",
       "on_screen_text": "El diafragma",
-      "visual_description": "Vista anatómica simplificada del diafragma en acción.",
-      "image_prompt": "child's wax crayon drawing on white paper, naive shapes, bright colors, visible crayon strokes, cheerful sun, vertical 9:16, no text, Diaphragm shown as a simple curved muscle beneath lungs, consistent character and visual continuity",
-      "ambiente": "Textura sonora tenue, sincronizada con la acción.",
+      "visual_description": "Diafragma como un trampolín elástico bajo dos pulmones, con aire entrando de golpe por la nariz",
+      "image_prompt": "child's wax crayon drawing on white paper, naive shapes, bright colors, visible crayon strokes, cheerful sun, vertical 9:16, no text Diafragma como un trampolín elástico bajo dos pulmones, con aire entrando de golpe por la nariz; vertical 9:16, sin texto.",
+      "ambiente": "madera",
       "sfx": [],
       "source_ids": [
         "SRC-001",
         "SRC-002"
       ],
-      "style_id": "crayones_infantiles"
+      "style_id": "crayones_infantiles",
+      "asset_filename": "frames/scene_002.png"
     },
     {
       "id": "scene_003",
       "arc": "desarrollo",
       "duration_seconds": 12,
-      "narration": "Casi inmediatamente, la glotis —la entrada de la laringe— se cierra. Ese cierre produce el sonido característico que reconocemos como hipo.",
+      "narration": "Y entonces, casi en el mismo instante, una puertita en tu garganta se cierra de golpe. Esa puertita se llama glotis. El aire choca contra ella y suena: ¡hic!",
       "on_screen_text": "Contracción súbita",
-      "visual_description": "Secuencia visual de inhalación brusca.",
-      "image_prompt": "child's wax crayon drawing on white paper, naive shapes, bright colors, visible crayon strokes, cheerful sun, vertical 9:16, no text, Sudden inhalation represented with arrows and expanding chest, consistent character and visual continuity",
-      "ambiente": "Pulso suave para subrayar el mecanismo.",
+      "visual_description": "Puertita en la garganta cerrándose de golpe frente a una ráfaga de aire, estilo caricatura anatómica amable",
+      "image_prompt": "child's wax crayon drawing on white paper, naive shapes, bright colors, visible crayon strokes, cheerful sun, vertical 9:16, no text Puertita en la garganta cerrándose de golpe frente a una ráfaga de aire, estilo caricatura anatómica amable; vertical 9:16, sin texto.",
+      "ambiente": "madera",
       "sfx": [],
       "source_ids": [
         "SRC-001",
         "SRC-002"
       ],
-      "style_id": "crayones_infantiles"
+      "style_id": "crayones_infantiles",
+      "asset_filename": "frames/scene_003.png"
     },
     {
       "id": "scene_004",
       "arc": "desarrollo",
       "duration_seconds": 12,
-      "narration": "El circuito nervioso es más complejo que un simple espasmo. Participan señales que viajan por nervios como el vago y el frénico, además de conexiones en el sistema nervioso central.",
+      "narration": "Pero ¿quién da la orden? Tu cuerpo tiene cables, los nervios, que llevan mensajes entre el cerebro y el diafragma. El hipo es un mensaje que se dispara sin permiso.",
       "on_screen_text": "Cierre de glotis",
-      "visual_description": "La glotis se cierra; representar sin dramatización médica.",
-      "image_prompt": "child's wax crayon drawing on white paper, naive shapes, bright colors, visible crayon strokes, cheerful sun, vertical 9:16, no text, Simplified larynx and glottis closing, educational cross-section, consistent character and visual continuity",
-      "ambiente": "Ambiente continuo; dejar respirar la explicación.",
+      "visual_description": "Cables de colores luminosos que van del cerebro al diafragma, con un mensaje en chispa viajando",
+      "image_prompt": "child's wax crayon drawing on white paper, naive shapes, bright colors, visible crayon strokes, cheerful sun, vertical 9:16, no text Cables de colores luminosos que van del cerebro al diafragma, con un mensaje en chispa viajando; vertical 9:16, sin texto.",
+      "ambiente": "madera",
       "sfx": [],
       "source_ids": [
         "SRC-001",
         "SRC-002"
       ],
-      "style_id": "crayones_infantiles"
+      "style_id": "crayones_infantiles",
+      "asset_filename": "frames/scene_004.png"
     },
     {
       "id": "scene_005",
       "arc": "desarrollo",
       "duration_seconds": 12,
-      "narration": "Por eso, irritaciones en distintas partes del recorrido pueden desencadenarlo. Comer rápido o distender el estómago son disparadores conocidos.",
+      "narration": "Así que cualquier cosa que moleste esos cables puede activarlo. Por ejemplo, comer muy rápido o llenarte demasiado la panza, que empuja justo donde pasan.",
       "on_screen_text": "Circuito nervioso",
-      "visual_description": "Recorrido esquemático de nervios y cerebro.",
-      "image_prompt": "child's wax crayon drawing on white paper, naive shapes, bright colors, visible crayon strokes, cheerful sun, vertical 9:16, no text, Vagus and phrenic nerve pathways as clear diagram, consistent character and visual continuity",
-      "ambiente": "SFX puntual y bajo, sin competir con la voz.",
+      "visual_description": "Niño comiendo muy rápido con la panza inflada empujando suavemente cables de nervios",
+      "image_prompt": "child's wax crayon drawing on white paper, naive shapes, bright colors, visible crayon strokes, cheerful sun, vertical 9:16, no text Niño comiendo muy rápido con la panza inflada empujando suavemente cables de nervios; vertical 9:16, sin texto.",
+      "ambiente": "madera",
       "sfx": [],
       "source_ids": [
         "SRC-001",
         "SRC-002"
       ],
-      "style_id": "crayones_infantiles"
+      "style_id": "crayones_infantiles",
+      "asset_filename": "frames/scene_005.png"
     },
     {
       "id": "scene_006",
       "arc": "cierre_historia",
       "duration_seconds": 10,
-      "narration": "El límite: sabemos cómo ocurre, pero no siempre qué lo activó. La mayoría de los episodios pasa sola; si dura días, conviene evaluación médica.",
+      "narration": "Lo raro es que los científicos saben cómo pasa, pero muchas veces no saben qué lo encendió. Casi siempre se va solo. Si dura días, hay que ir al médico.",
       "on_screen_text": "No siempre hay causa única",
-      "visual_description": "Contraste entre episodio breve y persistente; sin consejo clínico individual.",
-      "image_prompt": "child's wax crayon drawing on white paper, naive shapes, bright colors, visible crayon strokes, cheerful sun, vertical 9:16, no text, Quiet everyday scene transitioning to a calm medical context, consistent character and visual continuity",
-      "ambiente": "Bajar la música para el matiz final.",
+      "visual_description": "Signo de interrogación gigante flotando sobre un diafragma, con un reloj de arena al lado",
+      "image_prompt": "child's wax crayon drawing on white paper, naive shapes, bright colors, visible crayon strokes, cheerful sun, vertical 9:16, no text Signo de interrogación gigante flotando sobre un diafragma, con un reloj de arena al lado; vertical 9:16, sin texto.",
+      "ambiente": "madera",
       "sfx": [],
       "source_ids": [
         "SRC-001",
         "SRC-002"
       ],
-      "style_id": "crayones_infantiles"
+      "style_id": "crayones_infantiles",
+      "asset_filename": "frames/scene_006.png"
     },
     {
       "id": "scene_007",
       "arc": "reflexion_o_pregunta",
       "duration_seconds": 10,
-      "narration": "El hipo es un reflejo con un circuito que va del diafragma a la garganta y al sistema nervioso. ¿Cuál es tu truco favorito para quitártelo? Esto fue Datos y ociosidades.",
+      "narration": "Así que la próxima vez que suene tu ¡hic!, imagina esto: un trampolín que brinca solo y una puertita que se cierra para aplaudirle. Tu cuerpo, tocando su propio tambor. Esto fue Datos y ociosidades.",
       "on_screen_text": "Esto fue Datos y ociosidades",
-      "visual_description": "Imagen final que sintetiza el fenómeno.",
-      "image_prompt": "child's wax crayon drawing on white paper, naive shapes, bright colors, visible crayon strokes, cheerful sun, vertical 9:16, no text, Elegant final tableau with diaphragm and breath motif, consistent character and visual continuity",
-      "ambiente": "Cierre limpio y breve; no añadir voz.",
+      "visual_description": "Niño sonriendo mientras un trampolín y una puertita dentro de su pecho tocan un tambor juntos",
+      "image_prompt": "child's wax crayon drawing on white paper, naive shapes, bright colors, visible crayon strokes, cheerful sun, vertical 9:16, no text Niño sonriendo mientras un trampolín y una puertita dentro de su pecho tocan un tambor juntos; vertical 9:16, sin texto.",
+      "ambiente": "madera",
       "sfx": [],
       "source_ids": [
         "SRC-001",
         "SRC-002"
       ],
-      "style_id": "crayones_infantiles"
+      "style_id": "crayones_infantiles",
+      "asset_filename": "frames/scene_007.png"
     }
   ],
   "cortinilla_fuentes": {
@@ -235,5 +242,10 @@
   "risk_notes": [
     "No presentar el reflejo como enfermedad; persistencia requiere valoración clínica."
   ],
-  "thumbnail_source": "scene_001"
+  "thumbnail_source": "scene_001",
+  "qa_editorial": {
+    "fecha": "2026-10-31",
+    "por": "Grok",
+    "estado": "OK tras reescritura (línea editorial §1-9)"
+  }
 }

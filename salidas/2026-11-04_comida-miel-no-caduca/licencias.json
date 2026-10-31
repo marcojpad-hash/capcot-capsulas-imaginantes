@@ -1,0 +1,39 @@
+{
+ "project_id": "2026-11-04_comida-miel-no-caduca",
+ "musica": {
+  "archivo": "",
+  "origen": "YouTube Audio Library (descarga manual de Mj)",
+  "licencia": "PENDIENTE: anotar licencia/atribución",
+  "generada_por_ia": false
+ },
+ "sfx": {
+  "madera": {
+   "archivo": "madera.ogg",
+   "commons": "File:Creaky wooden casket.ogg",
+   "autor": "stephan",
+   "licencia": "Public domain",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Creaky_wooden_casket.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Creaky_wooden_casket.ogg",
+   "licencia_verificada": "Public domain"
+  }
+ },
+ "imagenes": {
+  "origen": "generadas con IA (ilustración no realista)",
+  "estilo": "bordado",
+  "realista": false
+ },
+ "voz": {
+  "motor": "Microsoft Edge TTS",
+  "voz": "es-MX-JorgeNeural",
+  "nota": "voz sintética; no imita a una persona real"
+ },
+ "capas_datos": {
+  "tipos": [],
+  "mapa_base": null,
+  "render": "matplotlib (propio)"
+ },
+ "fuentes_datos": [
+  "https://pmc.ncbi.nlm.nih.gov/articles/PMC9359632/",
+  "https://pmc.ncbi.nlm.nih.gov/articles/PMC9312033/"
+ ]
+}

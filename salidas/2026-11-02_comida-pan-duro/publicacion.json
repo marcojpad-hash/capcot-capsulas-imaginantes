@@ -13,26 +13,26 @@
  "resultado": {
   "youtube": {
    "kind": "youtube#video",
-   "etag": "BStt0tgr77mTgk3vORmuvjjAikY",
-   "id": "sHjf4QF9QiM",
+   "etag": "7NXOOdhjdVlcSBr9h6Hn2WJvW3U",
+   "id": "V9bO9EUN0JA",
    "snippet": {
-    "publishedAt": "2026-10-31T21:56:38Z",
+    "publishedAt": "2026-10-31T23:02:04Z",
     "channelId": "UCU2ZI-6pBJEr9aSFsF6bxLw",
     "title": "El pan no solo se seca #Shorts",
     "description": "¿El pan se pone duro porque pierde agua?\n\nEl pan no solo se seca. Una cápsula de Datos y ociosidades: datos verificados contados como historia.\n\nFuentes:\n• Gray, J. A. & BeMiller, J. N. (2003). Bread Staling: Molecular Basis and Control. Comprehensive Reviews in Food Science and Food Safety, 2(1), 1–21. https://doi.org/10.1111/j.1541-4337.2003.tb00011.x\n\nImágenes generadas con IA · voz sintética · audio sintetizado.\nSuscríbete: @datosyociosidades\nTikTok: https://www.tiktok.com/@datosyociosidades\n\n#pan #cocina #ciencia #sabiasque #Shorts",
     "thumbnails": {
      "default": {
-      "url": "https://i9.ytimg.com/vi/sHjf4QF9QiM/default.jpg?sqp=CLTHmdcG&rs=AOn4CLDaVdMdk5odvkMArfAvKY877Bh3-w",
+      "url": "https://i9.ytimg.com/vi/V9bO9EUN0JA/default.jpg?sqp=CPDlmdcG&rs=AOn4CLDhYaJ4qexwmUhafcXkGmRiew3_VQ",
       "width": 120,
       "height": 90
      },
      "medium": {
-      "url": "https://i9.ytimg.com/vi/sHjf4QF9QiM/mqdefault.jpg?sqp=CLTHmdcG&rs=AOn4CLAI-61xjRNpRgL3YoOX3o85kTbB9Q",
+      "url": "https://i9.ytimg.com/vi/V9bO9EUN0JA/mqdefault.jpg?sqp=CPDlmdcG&rs=AOn4CLBwQW-hvyPg_LVOmkA9mnF8Z2yfsg",
       "width": 320,
       "height": 180
      },
      "high": {
-      "url": "https://i9.ytimg.com/vi/sHjf4QF9QiM/hqdefault.jpg?sqp=CLTHmdcG&rs=AOn4CLCP3nNkxoz7Pg5alNXTIWi4PV-KvA",
+      "url": "https://i9.ytimg.com/vi/V9bO9EUN0JA/hqdefault.jpg?sqp=CPDlmdcG&rs=AOn4CLATbOPkMsbccF7q6vXGWv4BKK-0jA",
       "width": 480,
       "height": 360
      }
@@ -88,10 +88,16 @@
     "estado": "SIGUE PROGRAMADO 2026-11-02T19:30:00Z — borrar a mano en Studio (token sin scope youtube)",
     "reemplazado_por": "sHjf4QF9QiM",
     "fecha": "2026-10-31T15:55:49-06:00"
+   },
+   {
+    "id": "sHjf4QF9QiM",
+    "estado": "SIGUE PROGRAMADO 2026-11-02T19:30:00Z — borrar a mano en Studio",
+    "reemplazado_por": "V9bO9EUN0JA",
+    "fecha": "2026-10-31T17:01:59-06:00"
    }
   ],
   "youtube_thumbnail": {
-   "fuente": "scene_001 (gancho)",
+   "fuente": "primer frame mp4",
    "estado": "ok"
   }
  },

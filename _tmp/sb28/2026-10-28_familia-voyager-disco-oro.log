@@ -1,0 +1,88 @@
+frames OK
+AVISO: primera frase del gancho >12 palabras
+OK
+scene_001: voz 8.7s, escena 9.3s
+scene_002: voz 9.0s, escena 9.5s
+scene_003: voz 10.2s, escena 10.7s
+scene_004: voz 8.7s, escena 9.3s
+scene_005: voz 9.2s, escena 9.8s
+scene_006: voz 10.4s, escena 10.9s
+scene_007: voz 8.8s, escena 9.4s
+scene_008: voz 10.0s, escena 10.6s
+OK /workspace/capcot/salidas/2026-10-28_2026-10-28-familia-voyager-disco-oro/capsula.mp4 duración 85.33s
+PASA  duracion_>=60_<=120 85.33s (objetivo 90)
+PASA  resolucion_1080x1920 
+PASA  h264_aac 
+PASA  fps_30 30/1
+PASA  loudness_-14 -14.4 LUFS
+PASA  subs_max_3_palabras 82 bloques
+PASA  fuentes_1_4 
+PASA  aviso_ia 
+PASA  arco 
+PASA  sin_huecos_voz_<=0.9s hueco máx 0.49s
+PASA  subs_cobertura_>=99% 100.0% (208/208 palabras)
+PASA  subs_sin_solapes 0 solapes
+PASA  subs_en_cuadro_zona_segura PlayResY 1920, MarginV 620
+PASA  voz_<=240_palabras 208 palabras
+PASA  estructura_valida pregunta
+PASA  estructura_no_repite_anterior anterior: historia
+PASA  cama_musical_no_repite_anterior circuito_neural (anterior: pulso)
+PASA  capa_mapa dato,mapa,dato
+PASA  capa_grafico_o_dato dato,mapa,dato
+PASA  licencias_json 
+PASA  metadata_yt_valida título/descr./tags OK
+{
+ "canal": {
+  "nombre": "Datos y ociosidades",
+  "handle": "@datosyociosidades",
+  "youtube_channel_id": "UCU2ZI-6pBJEr9aSFsF6bxLw"
+ },
+ "titulo": "El disco de oro del Voyager: un saludo a las estrellas #Shorts",
+ "descripcion": "Si un extraterrestre encontrara un disco, ¿qué le contarías de la Tierra?\n\nEl disco de oro del Voyager: un saludo a las estrellas. Una cápsula de Datos y ociosidades: datos verificados contados como historia.\n\nFuentes:\n• NASA Science – What are the contents of the Golden Record? https://science.nasa.gov/mission/voyager/golden-record-contents/\n• NASA Science – Golden Record Sounds and Music https://science.nasa.gov/mission/voyager/golden-record-contents/sounds/\n• NASA Science – Voyager 1: What Is a Light-Day (2026) https://science.nasa.gov/mission/voyager/voyager-1/voyager-1-what-is-a-light-day/\n• NASA Science – Voyager Interstellar Mission https://science.nasa.gov/mission/voyager/interstellar-mission/\n\nImágenes generadas con IA · voz sintética · audio sintetizado.\nSuscríbete: @datosyociosidades\nTikTok: https://www.tiktok.com/@datosyociosidades\n\n#DatosYOciosidades #Shorts #datos #ciencia #difusión #difusióncientífica #ia #VoyagerDiscoDeOroDiaLuz",
+ "hashtags": [
+  "#DatosYOciosidades",
+  "#Shorts",
+  "#datos",
+  "#ciencia",
+  "#difusión",
+  "#difusióncientífica",
+  "#ia",
+  "#VoyagerDiscoDeOroDiaLuz"
+ ],
+ "tags": [
+  "DatosYOciosidades",
+  "Shorts",
+  "datos",
+  "ciencia",
+  "difusión",
+  "difusióncientífica",
+  "ia",
+  "VoyagerDiscoDeOroDiaLuz"
+ ],
+ "idioma": "es-MX",
+ "categoria_yt": "27",
+ "contiene_ia": true,
+ "contenido_sintetico": false,
+ "contenido_sintetico_motivos": [
+  "no realista: ilustración estilizada + voz TTS; no requiere etiqueta (YouTube 14328491)"
+ ],
+ "privacyStatus": "private",
+ "tiktok_caption": "Si un extraterrestre encontrara un disco, ¿qué le contarías de la Tierra?\n\nEl disco de oro del Voyager: un saludo a las estrellas. Datos verificados contados como historia.\n\nFuentes en YouTube @datosyociosidades\n\n#aprendeentiktok #sabiasque #ciencia #divulgacioncientifica #VoyagerDiscoDeOroDiaLuz",
+ "tiktok_hashtags": [
+  "#aprendeentiktok",
+  "#sabiasque",
+  "#ciencia",
+  "#divulgacioncientifica",
+  "#VoyagerDiscoDeOroDiaLuz"
+ ],
+ "tiktok_descripcion_completa": "Si un extraterrestre encontrara un disco, ¿qué le contarías de la Tierra?\n\nEl disco de oro del Voyager: un saludo a las estrellas. Una cápsula de Datos y ociosidades: datos verificados contados como historia.\n\nFuentes:\n• NASA Science – What are the contents of the Golden Record? https://science.nasa.gov/mission/voyager/golden-record-contents/\n• NASA Science – Golden Record Sounds and Music https://science.nasa.gov/mission/voyager/golden-record-contents/sounds/\n• NASA Science – Voyager 1: What Is a Light-Day (2026) https://science.nasa.gov/mission/voyager/voyager-1/voyager-1-what-is-a-light-day/\n• NASA Science – Voyager Interstellar Mission https://science.nasa.gov/mission/voyager/interstellar-mission/\n\nImágenes generadas con IA · voz sintética · audio sintetizado.\nFuentes en YouTube @datosyociosidades\n\n#aprendeentiktok #sabiasque #ciencia #divulgacioncientifica #VoyagerDiscoDeOroDiaLuz"
+}
+registrada 2026-10-28_familia-voyager-disco-oro
+AVISO: cupo diario forzado por orden explícita de Mj
+$ python3 /workspace/capcot/scripts/generar_frames.py /workspace/capcot/salidas/2026-10-28_2026-10-28-familia-voyager-disco-oro/storyboard.json --proveedor manual
+$ python3 /workspace/capcot/scripts/validar_storyboard.py /workspace/capcot/salidas/2026-10-28_2026-10-28-familia-voyager-disco-oro/storyboard.json --check-doi
+$ python3 /workspace/capcot/scripts/montar_capsula.py /workspace/capcot/salidas/2026-10-28_2026-10-28-familia-voyager-disco-oro/storyboard.json -o /workspace/capcot/salidas/2026-10-28_2026-10-28-familia-voyager-disco-oro/capsula.mp4
+$ python3 /workspace/capcot/scripts/qa_capsula.py /workspace/capcot/salidas/2026-10-28_2026-10-28-familia-voyager-disco-oro/capsula.mp4 /workspace/capcot/salidas/2026-10-28_2026-10-28-familia-voyager-disco-oro/storyboard.json
+$ python3 /workspace/capcot/scripts/metadata.py /workspace/capcot/salidas/2026-10-28_2026-10-28-familia-voyager-disco-oro
+$ python3 /workspace/capcot/scripts/metricas.py registrar /workspace/capcot/salidas/2026-10-28_2026-10-28-familia-voyager-disco-oro
+PAQUETE: /workspace/capcot/salidas/2026-10-28_2026-10-28-familia-voyager-disco-oro QA_OK

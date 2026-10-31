@@ -14,26 +14,26 @@
  "resultado": {
   "youtube": {
    "kind": "youtube#video",
-   "etag": "BaWfkyVOfFCxDLntKYT1jxelBjk",
-   "id": "d-tYvAM8hGE",
+   "etag": "TspAg07QET8abUaoe4erLvmFr4g",
+   "id": "5sxxx0vuXFE",
    "snippet": {
-    "publishedAt": "2026-10-31T21:56:26Z",
+    "publishedAt": "2026-10-31T22:51:29Z",
     "channelId": "UCU2ZI-6pBJEr9aSFsF6bxLw",
     "title": "Un golpe bajo el agua #Shorts",
     "description": "¿Cómo puede un animal pequeño romper una concha bajo el agua?\n\nUn golpe bajo el agua. Una cápsula de Datos y ociosidades: datos verificados contados como historia.\n\nFuentes:\n• Patek, S. N. & Caldwell, R. L. (2005). Extreme impact and cavitation forces of a biological hammer. Journal of Experimental Biology, 208, 3655–3664. https://doi.org/10.1242/jeb.01831\n\nImágenes generadas con IA · voz sintética · audio sintetizado.\nSuscríbete: @datosyociosidades\nTikTok: https://www.tiktok.com/@datosyociosidades\n\n#camaron #mantis #ciencia #animales #sabiasque #Shorts",
     "thumbnails": {
      "default": {
-      "url": "https://i9.ytimg.com/vi/d-tYvAM8hGE/default.jpg?sqp=CLTHmdcG&rs=AOn4CLCzQPCUpcRPzy7NS387CiNFZMRf_w",
+      "url": "https://i9.ytimg.com/vi/5sxxx0vuXFE/default.jpg?sqp=CJjhmdcG&rs=AOn4CLDreVEBXd4SNGWGBGDuWb1EcjXyzQ",
       "width": 120,
       "height": 90
      },
      "medium": {
-      "url": "https://i9.ytimg.com/vi/d-tYvAM8hGE/mqdefault.jpg?sqp=CLTHmdcG&rs=AOn4CLCuYbzAmmkf_E0S_kbcFZhF6XpWwg",
+      "url": "https://i9.ytimg.com/vi/5sxxx0vuXFE/mqdefault.jpg?sqp=CJjhmdcG&rs=AOn4CLAu7w2yWTGtr0RqMsnz9fgORFD_Gg",
       "width": 320,
       "height": 180
      },
      "high": {
-      "url": "https://i9.ytimg.com/vi/d-tYvAM8hGE/hqdefault.jpg?sqp=CLTHmdcG&rs=AOn4CLCk7RxGTupO96Ma4C0yJv_KlJ9brw",
+      "url": "https://i9.ytimg.com/vi/5sxxx0vuXFE/hqdefault.jpg?sqp=CJjhmdcG&rs=AOn4CLDx13RUPMVluNaZ-J2_ALN89DGRjg",
       "width": 480,
       "height": 360
      }
@@ -89,10 +89,16 @@
     "estado": "SIGUE PROGRAMADO 2026-11-02T13:00:00Z — borrar a mano en Studio (token sin scope youtube)",
     "reemplazado_por": "d-tYvAM8hGE",
     "fecha": "2026-10-31T15:55:49-06:00"
+   },
+   {
+    "id": "d-tYvAM8hGE",
+    "estado": "SIGUE PROGRAMADO 2026-11-02T13:00:00Z — borrar a mano en Studio",
+    "reemplazado_por": "5sxxx0vuXFE",
+    "fecha": "2026-10-31T16:51:13-06:00"
    }
   ],
   "youtube_thumbnail": {
-   "fuente": "scene_001 (gancho)",
+   "fuente": "primer frame mp4",
    "estado": "ok"
   }
  },

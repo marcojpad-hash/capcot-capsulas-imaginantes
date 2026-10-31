@@ -1,0 +1,125 @@
+{
+ "project_id": "2026-10-25_ave-jurasica-sin-vuelo",
+ "musica": {
+  "cama": "pulso",
+  "origen": "síntesis propia (scripts/cama_sonora.py, numpy)",
+  "licencia": "obra propia de Datos y ociosidades",
+  "generada_por_ia": false
+ },
+ "sfx": {
+  "madera": {
+   "archivo": "madera.ogg",
+   "commons": "File:Creaky wooden casket.ogg",
+   "autor": "stephan",
+   "licencia": "Public domain",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Creaky_wooden_casket.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Creaky_wooden_casket.ogg",
+   "licencia_verificada": "Public domain"
+  },
+  "pluma": {
+   "archivo": "pluma.ogg",
+   "commons": "File:Writing with inkpen.ogg",
+   "autor": "stephan",
+   "licencia": "Public domain",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Writing_with_inkpen.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Writing_with_inkpen.ogg",
+   "licencia_verificada": "Public domain"
+  },
+  "viento": {
+   "archivo": "viento.ogg",
+   "commons": "File:Howling wind.ogg",
+   "autor": "Tvabutzku1234",
+   "licencia": "CC0",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Howling_wind.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Howling_wind.ogg",
+   "licencia_verificada": "CC0"
+  }
+ },
+ "imagenes": {
+  "origen": "imágenes reales de Wikimedia Commons (dominio público / CC BY / CC BY-SA) con filtro linograbado propio; ninguna representa a Yuezhuornis",
+  "estilo": "linograbado",
+  "realista": false,
+  "creditos": [
+   {
+    "escena": "scene_001",
+    "obra": "John James Audubon, American Crow, The Birds of America lám. 156 (1827-38)",
+    "url": "https://commons.wikimedia.org/wiki/File:156_American_Crow.jpg",
+    "licencia": "Public domain",
+    "modificada": true
+   },
+   {
+    "escena": "scene_002",
+    "obra": "rheins, Desembocadura del río Longtan, Zhenghe, Fujian (foto 2015, panoramio)",
+    "url": "https://commons.wikimedia.org/wiki/File:%E9%BE%99%E6%BD%AD%E6%BA%AA%E5%8F%A3_-_Outlet_of_Longtan_River_-_2015.11_-_panoramio.jpg",
+    "licencia": "CC BY 3.0",
+    "modificada": true
+   },
+   {
+    "escena": "scene_003",
+    "obra": "Richard Owen, London Archaeopteryx (1862), lámina IV",
+    "url": "https://commons.wikimedia.org/wiki/File:R._Owen_London_Archaeopteryx_(1862)_-_Plate_IV.png",
+    "licencia": "Public domain",
+    "modificada": true
+   },
+   {
+    "escena": "scene_004",
+    "obra": "Tim Evanson, Deinonychus tooth, Museum of the Rockies (2013)",
+    "url": "https://commons.wikimedia.org/wiki/File:Deinonychus_tooth_-_Carbon_County_Montana_-_Museum_of_the_Rockies_-_2013-07-08.jpg",
+    "licencia": "CC BY-SA 2.0",
+    "modificada": true
+   },
+   {
+    "escena": "scene_005",
+    "obra": "Fowler et al. (2011) PLoS ONE, Deinonychus foot flexion",
+    "url": "https://commons.wikimedia.org/wiki/File:Deinonychus_foot_flexion.png",
+    "licencia": "CC BY 2.5",
+    "modificada": true
+   },
+   {
+    "escena": "scene_006",
+    "obra": "Archaeopteryx, ejemplar de Berlín (réplica), foto de HTO",
+    "url": "https://commons.wikimedia.org/wiki/File:Archaeopteryx,_Berlin_specimen,_replica.JPG",
+    "licencia": "Public domain",
+    "modificada": true
+   },
+   {
+    "escena": "scene_007",
+    "obra": "John James Audubon, Wild Turkey, The Birds of America lám. 1",
+    "url": "https://commons.wikimedia.org/wiki/File:1_Wild_Turkey.jpg",
+    "licencia": "Public domain",
+    "modificada": true
+   },
+   {
+    "escena": "scene_008",
+    "obra": "Ernst Haeckel, Pedigree of Man (1874)",
+    "url": "https://commons.wikimedia.org/wiki/File:Pedigree_of_man_(Haeckel_1874).jpg",
+    "licencia": "Public domain",
+    "modificada": true
+   },
+   {
+    "escena": "scene_009",
+    "obra": "Charles Darwin, cuaderno B, árbol 'I think' (1837)",
+    "url": "https://commons.wikimedia.org/wiki/File:Darwin_Tree_1837.png",
+    "licencia": "Public domain",
+    "modificada": true
+   }
+  ]
+ },
+ "voz": {
+  "motor": "Microsoft Edge TTS",
+  "voz": "es-MX-JorgeNeural",
+  "nota": "voz sintética; no imita a una persona real"
+ },
+ "capas_datos": {
+  "tipos": [
+   "mapa",
+   "dato"
+  ],
+  "mapa_base": "Natural Earth 110m (dominio público)",
+  "render": "matplotlib (propio)"
+ },
+ "fuentes_datos": [
+  "https://doi.org/10.1038/s41586-026-10972-z",
+  "https://www.sciencedaily.com/releases/2026/10/261023023710.htm"
+ ]
+}

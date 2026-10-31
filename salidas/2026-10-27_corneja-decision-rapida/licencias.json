@@ -1,0 +1,63 @@
+{
+ "project_id": "2026-10-27_corneja-decision-rapida",
+ "musica": {
+  "cama": "cognicion_7_8",
+  "origen": "síntesis propia (scripts/cama_sonora.py, numpy)",
+  "licencia": "obra propia de Datos y ociosidades",
+  "generada_por_ia": false
+ },
+ "sfx": {
+  "campanas": {
+   "archivo": "campanas.oga",
+   "commons": "File:Church bells - Leverkusen, 2007.oga",
+   "autor": "natalie",
+   "licencia": "Public domain",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/3/36/Church_bells_-_Leverkusen%2C_2007.oga?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Church_bells_-_Leverkusen,_2007.oga",
+   "licencia_verificada": "Public domain"
+  },
+  "reloj": {
+   "archivo": "reloj.ogg",
+   "commons": "File:Clock ticking.ogg",
+   "autor": "natalie",
+   "licencia": "Public domain",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/5/56/Clock_ticking.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Clock_ticking.ogg",
+   "licencia_verificada": "Public domain"
+  },
+  "viento": {
+   "archivo": "viento.ogg",
+   "commons": "File:Howling wind.ogg",
+   "autor": "Tvabutzku1234",
+   "licencia": "CC0",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Howling_wind.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Howling_wind.ogg",
+   "licencia_verificada": "CC0"
+  }
+ },
+ "imagenes": {
+  "origen": "OpenAI image generation",
+  "estilo": "microscopio_psicodelico",
+  "realista": false
+ },
+ "voz": {
+  "motor": "Microsoft Edge TTS",
+  "voz": "es-MX-JorgeNeural",
+  "nota": "voz sintética; no imita a una persona real"
+ },
+ "capas_datos": {
+  "tipos": [
+   "mapa",
+   "dato",
+   "dato"
+  ],
+  "mapa_base": "Natural Earth 110m (dominio público)",
+  "render": "matplotlib (propio)"
+ },
+ "fuentes_datos": [
+  "https://doi.org/10.1126/science.aed6459",
+  "https://uni-tuebingen.de/en/university/news-and-publications/press-releases/",
+  "https://arstechnica.com/science/2026/10/crows-can-evaluate-visual-info-twice-as-fast-as-mammals/",
+  "https://www.livescience.com/animals/birds/crows-may-make-lightning-fast-decisions-sometimes-twice-as-fast-as-humans-study-hints"
+ ]
+}

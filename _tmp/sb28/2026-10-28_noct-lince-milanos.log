@@ -1,0 +1,87 @@
+frames OK
+OK
+scene_001: voz 8.8s, escena 9.4s
+scene_002: voz 9.3s, escena 9.8s
+scene_003: voz 11.6s, escena 12.1s
+scene_004: voz 7.4s, escena 8.0s
+scene_005: voz 10.2s, escena 10.8s
+scene_006: voz 8.4s, escena 8.9s
+scene_007: voz 10.2s, escena 10.8s
+scene_008: voz 9.4s, escena 10.0s
+OK /workspace/capcot/salidas/2026-10-28_2026-10-28-noct-lince-milanos/capsula.mp4 duración 85.86s
+PASA  duracion_>=60_<=120 85.86s (objetivo 90)
+PASA  resolucion_1080x1920 
+PASA  h264_aac 
+PASA  fps_30 30/1
+PASA  loudness_-14 -14.5 LUFS
+PASA  subs_max_3_palabras 79 bloques
+PASA  fuentes_1_4 
+PASA  aviso_ia 
+PASA  arco 
+PASA  sin_huecos_voz_<=0.9s hueco máx 0.50s
+PASA  subs_cobertura_>=99% 100.0% (215/215 palabras)
+PASA  subs_sin_solapes 0 solapes
+PASA  subs_en_cuadro_zona_segura PlayResY 1920, MarginV 620
+PASA  voz_<=240_palabras 215 palabras
+PASA  estructura_valida historia
+PASA  estructura_no_repite_anterior anterior: comparacion
+PASA  cama_musical_no_repite_anterior arpegio (anterior: marimba)
+PASA  capa_mapa mapa,dato,dato
+PASA  capa_grafico_o_dato mapa,dato,dato
+PASA  licencias_json 
+PASA  metadata_yt_valida título/descr./tags OK
+{
+ "canal": {
+  "nombre": "Datos y ociosidades",
+  "handle": "@datosyociosidades",
+  "youtube_channel_id": "UCU2ZI-6pBJEr9aSFsF6bxLw"
+ },
+ "titulo": "Dato del día: sequía y virus convierten al lince en cazador de milanos #Shorts",
+ "descripcion": "De noche, un lince trepa doce metros por un alcornoque.\n\nDato del día: sequía y virus convierten al lince en cazador de milanos. Una cápsula de Datos y ociosidades: datos verificados contados como historia.\n\nFuentes:\n• Sergio, F. et al. (2026) Drought and disease trigger novel interactions among top predators. Nature (publicado 21 oct 2026) https://doi.org/10.1038/s41586-026-11194-z\n\nImágenes generadas con IA · voz sintética · audio sintetizado.\nSuscríbete: @datosyociosidades\nTikTok: https://www.tiktok.com/@datosyociosidades\n\n#DatosYOciosidades #Shorts #datos #ciencia #difusión #difusióncientífica #ia #LinceMilanoDoñanaSequía",
+ "hashtags": [
+  "#DatosYOciosidades",
+  "#Shorts",
+  "#datos",
+  "#ciencia",
+  "#difusión",
+  "#difusióncientífica",
+  "#ia",
+  "#LinceMilanoDoñanaSequía"
+ ],
+ "tags": [
+  "DatosYOciosidades",
+  "Shorts",
+  "datos",
+  "ciencia",
+  "difusión",
+  "difusióncientífica",
+  "ia",
+  "LinceMilanoDoñanaSequía"
+ ],
+ "idioma": "es-MX",
+ "categoria_yt": "27",
+ "contiene_ia": true,
+ "contenido_sintetico": false,
+ "contenido_sintetico_motivos": [
+  "no realista: ilustración estilizada + voz TTS; no requiere etiqueta (YouTube 14328491)"
+ ],
+ "privacyStatus": "private",
+ "tiktok_caption": "De noche, un lince trepa doce metros por un alcornoque.\n\nDato del día: sequía y virus convierten al lince en cazador de milanos. Datos verificados contados como historia.\n\nFuentes en YouTube @datosyociosidades\n\n#aprendeentiktok #sabiasque #ciencia #divulgacioncientifica #LinceMilanoDoñanaSequía",
+ "tiktok_hashtags": [
+  "#aprendeentiktok",
+  "#sabiasque",
+  "#ciencia",
+  "#divulgacioncientifica",
+  "#LinceMilanoDoñanaSequía"
+ ],
+ "tiktok_descripcion_completa": "De noche, un lince trepa doce metros por un alcornoque.\n\nDato del día: sequía y virus convierten al lince en cazador de milanos. Una cápsula de Datos y ociosidades: datos verificados contados como historia.\n\nFuentes:\n• Sergio, F. et al. (2026) Drought and disease trigger novel interactions among top predators. Nature (publicado 21 oct 2026) https://doi.org/10.1038/s41586-026-11194-z\n\nImágenes generadas con IA · voz sintética · audio sintetizado.\nFuentes en YouTube @datosyociosidades\n\n#aprendeentiktok #sabiasque #ciencia #divulgacioncientifica #LinceMilanoDoñanaSequía"
+}
+registrada 2026-10-28_noct-lince-milanos
+AVISO: cupo diario forzado por orden explícita de Mj
+$ python3 /workspace/capcot/scripts/generar_frames.py /workspace/capcot/salidas/2026-10-28_2026-10-28-noct-lince-milanos/storyboard.json --proveedor manual
+$ python3 /workspace/capcot/scripts/validar_storyboard.py /workspace/capcot/salidas/2026-10-28_2026-10-28-noct-lince-milanos/storyboard.json --check-doi
+$ python3 /workspace/capcot/scripts/montar_capsula.py /workspace/capcot/salidas/2026-10-28_2026-10-28-noct-lince-milanos/storyboard.json -o /workspace/capcot/salidas/2026-10-28_2026-10-28-noct-lince-milanos/capsula.mp4
+$ python3 /workspace/capcot/scripts/qa_capsula.py /workspace/capcot/salidas/2026-10-28_2026-10-28-noct-lince-milanos/capsula.mp4 /workspace/capcot/salidas/2026-10-28_2026-10-28-noct-lince-milanos/storyboard.json
+$ python3 /workspace/capcot/scripts/metadata.py /workspace/capcot/salidas/2026-10-28_2026-10-28-noct-lince-milanos
+$ python3 /workspace/capcot/scripts/metricas.py registrar /workspace/capcot/salidas/2026-10-28_2026-10-28-noct-lince-milanos
+PAQUETE: /workspace/capcot/salidas/2026-10-28_2026-10-28-noct-lince-milanos QA_OK
