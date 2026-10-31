@@ -38,3 +38,6 @@ La bitácora comunica; no legisla. En caso de contradicción manda `../docs/CONT
 
 ## Estado de capacidad conocido
 La parrilla propone cinco slots diarios; el código revisado conserva un límite de tres cápsulas/día (dos propias + una externa) y el procesador admite una entrada externa por fecha. No reportar cinco publicaciones como capacidad habilitada hasta que código, validadores y pruebas lo demuestren.
+
+## Prioridad operativa: descargar trabajo de Grok Bot
+El documento `../docs/PROTOCOLO_DESCARGA_CARGA_GROK.md` define el reparto de preproducción y producción. ChatGPT entrega investigación, fuentes, guion, storyboard, prompts y metadata listos; Bot se concentra en generación audiovisual, montaje, render, QA y publicación autorizada. Bot no repite investigación ni reescribe por rutina. Las correcciones son puntuales y también consumen tokens; los faltantes de evidencia regresan a ChatGPT.
