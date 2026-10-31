@@ -1,0 +1,272 @@
+{
+  "_schema": "CAPCOT_STORYBOARD_TEXT_V2",
+  "project_id": "2026-11-03_comida-maillard",
+  "serie": "Datos y ociosidades",
+  "title": "La química del dorado",
+  "titulo": "¿Por qué se dora?",
+  "language": "es-MX",
+  "aspect_ratio": "9:16",
+  "target_duration_seconds": 84,
+  "estructura": "pregunta",
+  "audience": "Público general; explicación clara y concreta. No marcar Hecho para niños.",
+  "occasion": "Cápsula programada",
+  "resumen": "La reacción de Maillard produce parte del color y aroma de alimentos calentados. Ocurre entre grupos amino y azúcares reductores; en el pan, la corteza y la miga muestran condiciones y concentraciones distintas.",
+  "trend_source": {
+    "termino": "Reacción de Maillard en alimentos",
+    "fecha_publicacion": "2017-05-30",
+    "url": "https://doi.org/10.1021/acs.jafc.7b00882"
+  },
+  "editorial_status": "PROPUESTA_PENDIENTE_DE_GROK",
+  "arco": {
+    "hook_medias_res": "¿Qué química vuelve dorada una tortilla?",
+    "desarrollo": "La reacción de Maillard combina grupos amino y azúcares reductores y produce compuestos que afectan color y aroma.",
+    "cierre_historia": "El tostado y las condiciones de horneado cambian los productos formados; no debe confundirse con caramelización.",
+    "reflexion_o_pregunta": "El dorado cotidiano es química en acción."
+  },
+  "estilo_id": "linea_fina",
+  "estilo_visual": "Sketch de línea fina (tipo referencia bartending)",
+  "visual_identity": {
+    "style_id": "linea_fina",
+    "style_name": "Sketch de línea fina (tipo referencia bartending)",
+    "prompt_base": "fine line pencil illustration on white paper, precise thin strokes, subtle graphite shading, minimal composition, vertical 9:16, no text",
+    "palette": "Grafito, crema y dorado tostado",
+    "lighting": "Luz lateral cálida de cocina",
+    "texture": "Grafito fino y sombreado suave",
+    "composition": "Ingredientes y superficies en primer plano, macro limpio",
+    "negative_prompt": "Sin texto incrustado, sin marcas, sin fotografía, sin diagramas confusos",
+    "reference_assets": [],
+    "seed": null,
+    "seed_policy": "Mantener composición, materiales, escala y dirección de luz constantes en las ocho escenas."
+  },
+  "typography_identity": {
+    "font_family": "DejaVu Sans",
+    "font_weight": "700 gancho; 400 subtítulos",
+    "title_style": "Gancho de máximo seis palabras visible desde frame 0 en postproducción",
+    "subtitle_style": "Bloques de máximo tres palabras, zona segura inferior",
+    "hierarchy": "Gancho > dato > subtítulos",
+    "animation": "Un movimiento por plano; tipografía en postproducción"
+  },
+  "voice": {
+    "engine": "edge-tts",
+    "voice_id": "es-MX-JorgeNeural",
+    "language": "es-MX",
+    "rate": "+7%",
+    "pitch": "-2Hz",
+    "pad_seconds": 0.3,
+    "modo_pausas": "continuo"
+  },
+  "sources": [
+    {
+      "id": "SRC-001",
+      "cita_corta": "Lund, M. N. & Ray, C. A. (2017). Control of Maillard Reactions in Foods: Strategies and Chemical Mechanisms. Journal of Agricultural and Food Chemistry, 65(23), 4537–4552.",
+      "url": "https://doi.org/10.1021/acs.jafc.7b00882",
+      "doi": "10.1021/acs.jafc.7b00882",
+      "accessed": "2026-10-31",
+      "publication_date": "2017-05-30",
+      "supports": [
+        "La reacción comienza entre grupos amino de proteínas, péptidos o aminoácidos y grupos carbonilo de azúcares reductores.",
+        "La reacción modifica color, aroma y otras propiedades del alimento.",
+        "Temperatura, humedad, pH y composición influyen en la reacción."
+      ],
+      "verification_status": "VERIFICADO_RESOLVEDOR"
+    },
+    {
+      "id": "SRC-002",
+      "cita_corta": "Chen, X.-M., Dai, Y. & Kitts, D. D. (2016). Detection of Maillard Reaction Product in Breads. Journal of Agricultural and Food Chemistry, 64(47), 9072–9077.",
+      "url": "https://doi.org/10.1021/acs.jafc.6b04367",
+      "doi": "10.1021/acs.jafc.6b04367",
+      "accessed": "2026-10-31",
+      "publication_date": "2016-11-16",
+      "supports": [
+        "Se identificaron productos de la reacción de Maillard en pan.",
+        "La corteza presentó mayor concentración del compuesto F3-A que la miga; el tostado modificó su concentración."
+      ],
+      "verification_status": "VERIFICADO_RESOLVEDOR"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_001",
+      "arc": "hook_medias_res",
+      "duration_seconds": 10,
+      "narration": "¿Por qué una tortilla dorada y la corteza del pan huelen tan bien? No es solo que se estén calentando: ocurre una química que transforma su superficie.",
+      "on_screen_text": "Dorado delicioso",
+      "visual_description": "Tortilla y rebanada de pan pasando de pálidas a doradas sobre comal y tostador.",
+      "image_prompt": "fine line pencil illustration on white paper, precise thin strokes, subtle graphite shading, minimal composition, vertical 9:16, no text Tortilla y rebanada de pan pasando de pálidas a doradas sobre comal y tostador.; ilustración científica clara, vertical 9:16, sin etiquetas ni texto.",
+      "ambiente": "Cocina suave con chisporroteo",
+      "sfx": [
+        "Tostado leve"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "style_id": "linea_fina"
+    },
+    {
+      "id": "scene_002",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "Se llama reacción de Maillard. Comienza cuando grupos de aminoácidos o proteínas reaccionan con ciertos azúcares, llamados reductores.",
+      "on_screen_text": "Reacción de Maillard",
+      "visual_description": "Ilustración de aminoácidos y moléculas de azúcar acercándose sobre la superficie de una masa.",
+      "image_prompt": "fine line pencil illustration on white paper, precise thin strokes, subtle graphite shading, minimal composition, vertical 9:16, no text Ilustración de aminoácidos y moléculas de azúcar acercándose sobre la superficie de una masa.; ilustración científica clara, vertical 9:16, sin etiquetas ni texto.",
+      "ambiente": "Burbujas discretas",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "linea_fina",
+      "capa": {
+        "tipo": "mapa",
+        "region": [
+          -120,
+          -60,
+          160,
+          70
+        ],
+        "puntos": [
+          {
+            "nombre": "Proceso presente en alimentos calentados",
+            "lat": 19.4326,
+            "long": -99.1332
+          }
+        ],
+        "titulo": "Fenómeno químico, no ubicación geográfica",
+        "fuente": "El pin solo identifica CDMX como referencia editorial de la cápsula; no representa un lugar de descubrimiento ni una medición."
+      }
+    },
+    {
+      "id": "scene_003",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "Con el calor, esas moléculas atraviesan varias etapas y forman compuestos nuevos. Algunos aportan aromas; otros contribuyen a los tonos dorados y cafés.",
+      "on_screen_text": "Color y aroma",
+      "visual_description": "Secuencia molecular abstracta que termina en pigmentos pardos sobre una superficie de pan.",
+      "image_prompt": "fine line pencil illustration on white paper, precise thin strokes, subtle graphite shading, minimal composition, vertical 9:16, no text Secuencia molecular abstracta que termina en pigmentos pardos sobre una superficie de pan.; ilustración científica clara, vertical 9:16, sin etiquetas ni texto.",
+      "ambiente": "Cama cálida",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "linea_fina"
+    },
+    {
+      "id": "scene_004",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "Por eso el dorado no es simplemente azúcar caramelizada. La caramelización es otro conjunto de reacciones; Maillard necesita compuestos con grupos amino y azúcares reductores.",
+      "on_screen_text": "No es caramelo",
+      "visual_description": "Comparación visual: reacción amino-azúcar a un lado y azúcar calentada sola al otro.",
+      "image_prompt": "fine line pencil illustration on white paper, precise thin strokes, subtle graphite shading, minimal composition, vertical 9:16, no text Comparación visual: reacción amino-azúcar a un lado y azúcar calentada sola al otro.; ilustración científica clara, vertical 9:16, sin etiquetas ni texto.",
+      "ambiente": "Dos notas contrastantes",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "linea_fina"
+    },
+    {
+      "id": "scene_005",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "En el pan, la corteza recibe condiciones distintas a la miga: pierde más agua y alcanza temperaturas mayores durante el horneado.",
+      "on_screen_text": "Corteza y miga",
+      "visual_description": "Corte transversal de pan: corteza seca y dorada, interior claro y húmedo.",
+      "image_prompt": "fine line pencil illustration on white paper, precise thin strokes, subtle graphite shading, minimal composition, vertical 9:16, no text Corte transversal de pan: corteza seca y dorada, interior claro y húmedo.; ilustración científica clara, vertical 9:16, sin etiquetas ni texto.",
+      "ambiente": "Horno apagándose",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "style_id": "linea_fina"
+    },
+    {
+      "id": "scene_006",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "Un estudio encontró más cantidad de un producto de Maillard en la corteza que en la miga. También observó cambios al tostar el pan.",
+      "on_screen_text": "Más en la corteza",
+      "visual_description": "Gráfico comparativo cualitativo de corteza frente a miga; no asignar barras numéricas no citadas.",
+      "image_prompt": "fine line pencil illustration on white paper, precise thin strokes, subtle graphite shading, minimal composition, vertical 9:16, no text Gráfico comparativo cualitativo de corteza frente a miga; no asignar barras numéricas no citadas.; ilustración científica clara, vertical 9:16, sin etiquetas ni texto.",
+      "ambiente": "Golpe de lápiz",
+      "sfx": [],
+      "source_ids": [
+        "SRC-002"
+      ],
+      "style_id": "linea_fina",
+      "capa": {
+        "tipo": "dato",
+        "valor": "Corteza > miga",
+        "etiqueta": "F3-A en el pan estudiado",
+        "fuente": "Chen et al., J. Agric. Food Chem. (2016), DOI 10.1021/acs.jafc.6b04367; resultado específico del compuesto analizado, no de todos los productos de Maillard."
+      }
+    },
+    {
+      "id": "scene_007",
+      "arc": "cierre_historia",
+      "duration_seconds": 9,
+      "narration": "La intensidad depende de varios factores, entre ellos temperatura, tiempo, humedad, pH y los ingredientes. No existe un único botón químico para dorar.",
+      "on_screen_text": "Depende del proceso",
+      "visual_description": "Comal con tortilla a distintos grados de dorado, sin quemaduras extremas.",
+      "image_prompt": "fine line pencil illustration on white paper, precise thin strokes, subtle graphite shading, minimal composition, vertical 9:16, no text Comal con tortilla a distintos grados de dorado, sin quemaduras extremas.; ilustración científica clara, vertical 9:16, sin etiquetas ni texto.",
+      "ambiente": "Comal tenue",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "linea_fina"
+    },
+    {
+      "id": "scene_008",
+      "arc": "reflexion_o_pregunta",
+      "duration_seconds": 9,
+      "narration": "La próxima vez que veas una tortilla dorada, recuerda: su color y aroma cuentan una historia de moléculas reaccionando con el calor. Esto fue Datos y ociosidades.",
+      "on_screen_text": "Química cotidiana",
+      "visual_description": "Tortilla dorada en primer plano, vapor tenue y fondo de cocina mexicana.",
+      "image_prompt": "fine line pencil illustration on white paper, precise thin strokes, subtle graphite shading, minimal composition, vertical 9:16, no text Tortilla dorada en primer plano, vapor tenue y fondo de cocina mexicana.; ilustración científica clara, vertical 9:16, sin etiquetas ni texto.",
+      "ambiente": "Cierre cálido",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "style_id": "linea_fina"
+    }
+  ],
+  "cortinilla_fuentes": {
+    "duration_seconds": 6,
+    "titulo": "Fuentes",
+    "aviso": "Imágenes generadas con IA; contenido científico basado en las fuentes citadas.",
+    "firma": "Datos y ociosidades",
+    "source_ids": [
+      "SRC-001",
+      "SRC-002"
+    ]
+  },
+  "audio": {
+    "music_asset": null,
+    "music_plan": "Cama sonora prevista; selección y generación corresponden a Imaginantes.",
+    "music_license": null
+  },
+  "export": {
+    "resolution": "1080x1920",
+    "fps": 30,
+    "render_status": "NOT_GENERATED"
+  },
+  "publicacion": {
+    "status": "PENDIENTE_DECISION_GROK",
+    "platforms": [
+      "YouTube Shorts",
+      "TikTok",
+      "Facebook Reels"
+    ],
+    "note": "No publicar ni programar desde preproducción textual."
+  },
+  "estado": "PENDIENTE_REVISION_GROK",
+  "production_mode": "storyboard_only",
+  "validation_notes": [],
+  "approved_assets": [],
+  "risk_notes": []
+}
