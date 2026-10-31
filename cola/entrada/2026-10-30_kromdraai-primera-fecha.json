@@ -1,0 +1,353 @@
+{
+  "project_id": "2026-10-30_kromdraai-primera-fecha",
+  "title": "Kromdraai: la cueva que por fin tiene fecha",
+  "titulo": "La cueva ya tiene fecha",
+  "serie": "Datos y ociosidades",
+  "language": "es-MX",
+  "aspect_ratio": "9:16",
+  "target_duration_seconds": 84,
+  "linea_editorial_provisional": "Historia de la ciencia y del mundo · paleontología (taxonomía de trabajo provisional)",
+  "audience": "Público general curioso; estudiantes y familias. No se infiere un segmento de audiencia a partir de métricas no consultadas.",
+  "occasion": "Cápsula de curiosidad científica para consumo general; no se fuerza una conexión con la tendencia estacional del día.",
+  "editorial_status": "Propuesta textual para evaluación de Grok. No autoriza generación audiovisual ni publicación.",
+  "resumen": "Una nueva investigación ofrece la primera datación absoluta de un bloque de brecha de Kromdraai. El intervalo ayuda a ordenar el registro fósil, pero no fecha por sí solo toda la cueva ni todos sus fósiles.",
+  "trend_source": {
+    "tipo": "noticia_cientifica",
+    "medio": "npj Heritage Science · Nature",
+    "url": "https://www.nature.com/articles/s40494-026-03075-5",
+    "estudio_doi": "10.1038/s40494-026-03075-5",
+    "fecha_publicacion": "2026-10-30",
+    "termino": "Primera datación absoluta de un bloque de brecha en Kromdraai",
+    "fecha_consulta": "2026-10-30",
+    "google_trends_match": false
+  },
+  "estilo_id": "dibujo_cientifico_scratchboard",
+  "estilo_visual": "Scratchboard científico",
+  "visual_identity": {
+    "style_id": "dibujo_cientifico_scratchboard",
+    "style_name": "Scratchboard científico",
+    "prompt_base": "scratchboard illustration, white lines scratched on black, fine cross-hatching, dramatic single subject filling frame, black background, not photorealistic, vertical 9:16, no text",
+    "palette": "Negro mate, blanco hueso y acentos ámbar; sin otros colores.",
+    "lighting": "Luz lateral marcada, alto contraste y sombras profundas; acento ámbar pequeño y constante.",
+    "texture": "Esgrafiado blanco sobre negro, rayado fino y trama cruzada; acabado de grabado.",
+    "composition": "Un motivo central por plano; sujeto principal dominante, profundidad por capas y encuadre vertical 9:16.",
+    "negative_prompt": "Photorealism, 3D render, plasticine, watercolor, collage, multi-panel layout, text, letters, logos, watermark, gore, unrelated modern props.",
+    "reference_assets": [],
+    "seed": 20261030,
+    "seed_policy": "Semilla fija 20261030 para las ocho escenas; mantener el mismo material, contraste, paleta y gramática de encuadre. No crear planos ni recursos adicionales."
+  },
+  "typography_identity": {
+    "font_family": "DejaVu Sans",
+    "font_weight": "700 para gancho; 400 para subtítulos.",
+    "title_style": "DejaVu Sans Bold, 92 px, gancho de máximo seis palabras, alto contraste y subrayado; visible desde el frame 0.",
+    "subtitle_style": "DejaVu Sans Regular en ASS 1080x1920, blanco con contorno oscuro, bloques de máximo tres palabras y zona segura inferior (MarginV 560).",
+    "hierarchy": "Tarjeta de gancho > dato o etiqueta de escena > subtítulos; máximo seis palabras de texto visible por escena.",
+    "animation": "El subrayado del gancho entra desde el frame 0; cortes secos cercanos a 2.5 s y un movimiento por plano. Tipografía compuesta en postproducción, nunca dentro de la imagen."
+  },
+  "voice": {
+    "engine": "edge-tts",
+    "voice_id": "es-MX-JorgeNeural",
+    "language": "es-MX",
+    "rate": "+7%",
+    "pitch": "-2Hz",
+    "pad_seconds": 0.3,
+    "modo_pausas": "continuo"
+  },
+  "audio": {
+    "music_asset": ""
+  },
+  "sources": [
+    {
+      "id": "SRC-001",
+      "cita_corta": "Fernandez, R. et al. (2026). First U-Pb dating of Kromdraai cave in the Cradle of Humankind UNESCO World Heritage Site. npj Heritage Science.",
+      "url": "https://www.nature.com/articles/s40494-026-03075-5",
+      "doi": "10.1038/s40494-026-03075-5",
+      "accessed": "2026-10-30",
+      "supports": [
+        "Primera datación absoluta de un bloque clave de brecha de Kromdraai.",
+        "Datación mediante geocronología uranio-plomo.",
+        "Intervalo de edad de 1.94 ± 0.08 a 2.67 ± 0.17 millones de años para ese bloque.",
+        "La publicación combina varios enfoques matemáticos para evaluar el ajuste de los modelos.",
+        "Kromdraai ha producido restos de homininos, incluido el espécimen tipo de Paranthropus robustus."
+      ],
+      "ref_display": "Fernandez et al. · npj Heritage Science · 2026"
+    },
+    {
+      "id": "SRC-002",
+      "cita_corta": "UNESCO World Heritage Centre. Fossil Hominid Sites of South Africa.",
+      "url": "https://whc.unesco.org/en/list/915/",
+      "accessed": "2026-10-30",
+      "supports": [
+        "El componente patrimonial incluye Sterkfontein, Swartkrans, Kromdraai y alrededores.",
+        "Contexto de los yacimientos fósiles y su importancia para el estudio de la evolución humana."
+      ],
+      "ref_display": "UNESCO · Cuna de la Humanidad"
+    },
+    {
+      "id": "SRC-003",
+      "cita_corta": "UNESCO World Heritage Centre. Fossil Hominid Sites of South Africa — Maps.",
+      "url": "https://whc.unesco.org/en/list/915/maps/",
+      "accessed": "2026-10-30",
+      "supports": [
+        "Coordenadas oficiales del componente 915bis-001: 25°55′45″ S, 27°47′20″ E.",
+        "Ubicación regional del conjunto que incluye Kromdraai y sus alrededores."
+      ],
+      "ref_display": "UNESCO · mapa del componente 915bis-001"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_001",
+      "arc": "hook_medias_res",
+      "duration_seconds": 9,
+      "narration": "Una cueva con fósiles tenía un reloj sin calibrar. Ahora, un estudio le da una primera escala de tiempo.",
+      "on_screen_text": "La cueva ya tiene fecha",
+      "visual_description": "Boca de una cueva sudafricana; un bloque de brecha con un fósil apenas visible ocupa el centro, sin mostrar restos humanos modernos ni reconstrucciones fantásticas.",
+      "image_scene": "a South African limestone cave entrance, one fossil-bearing breccia block in the foreground, a faint amber glint on the embedded fossil, no people",
+      "sfx": [
+        "viento"
+      ],
+      "style_id": "dibujo_cientifico_scratchboard",
+      "image_prompt": "scratchboard illustration, white lines scratched on black, fine cross-hatching, dramatic single subject filling frame, black background, not photorealistic, vertical 9:16, no text + a South African limestone cave entrance, one fossil-bearing breccia block in the foreground, a faint amber glint on the embedded fossil, no people",
+      "asset_filename": "frames/scene_001.jpg",
+      "source_ids": [
+        "SRC-001"
+      ],
+      "text_language": "es-MX",
+      "voice_id": "es-MX-JorgeNeural"
+    },
+    {
+      "id": "scene_002",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "Kromdraai está en Gauteng, Sudáfrica, dentro de la Cuna de la Humanidad: un paisaje de cuevas que conserva restos de antiguos homininos.",
+      "on_screen_text": "Gauteng, Sudáfrica",
+      "visual_description": "Mapa grabado de África austral con Gauteng señalado como región; el pin cartográfico se añadirá en postproducción con Natural Earth y coordenadas UNESCO.",
+      "image_scene": "a single engraved relief map motif of southern Africa, the Gauteng region highlighted by one amber point, no labels, no text",
+      "sfx": [
+        "viento"
+      ],
+      "capa": {
+        "tipo": "mapa",
+        "region": [
+          27.4,
+          28.1,
+          -26.2,
+          -25.7
+        ],
+        "puntos": [
+          {
+            "nombre": "Kromdraai y alrededores (componente UNESCO)",
+            "lon": 27.78889,
+            "lat": -25.92917
+          }
+        ],
+        "titulo": "Cuna de la Humanidad · Gauteng",
+        "fuente": "UNESCO World Heritage Centre · 915bis-001"
+      },
+      "style_id": "dibujo_cientifico_scratchboard",
+      "image_prompt": "scratchboard illustration, white lines scratched on black, fine cross-hatching, dramatic single subject filling frame, black background, not photorealistic, vertical 9:16, no text + a single engraved relief map motif of southern Africa, the Gauteng region highlighted by one amber point, no labels, no text",
+      "asset_filename": "frames/scene_002.jpg",
+      "source_ids": [
+        "SRC-001",
+        "SRC-002",
+        "SRC-003"
+      ],
+      "text_language": "es-MX",
+      "voice_id": "es-MX-JorgeNeural"
+    },
+    {
+      "id": "scene_003",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "El sitio ha entregado fósiles importantes, incluido el espécimen tipo de Paranthropus robustus. Pero fechar sus depósitos no es sencillo: una cueva no es una sola capa.",
+      "on_screen_text": "Paranthropus robustus",
+      "visual_description": "Cráneo fósil de Paranthropus robustus representado como pieza de museo, aislado y sin insinuar que sea el fósil fechado en el bloque.",
+      "image_scene": "one carefully rendered fossil cranium of Paranthropus robustus on a dark museum plinth, amber rim light, no labels, no other specimens",
+      "sfx": [
+        "madera"
+      ],
+      "style_id": "dibujo_cientifico_scratchboard",
+      "image_prompt": "scratchboard illustration, white lines scratched on black, fine cross-hatching, dramatic single subject filling frame, black background, not photorealistic, vertical 9:16, no text + one carefully rendered fossil cranium of Paranthropus robustus on a dark museum plinth, amber rim light, no labels, no other specimens",
+      "asset_filename": "frames/scene_003.jpg",
+      "source_ids": [
+        "SRC-001"
+      ],
+      "text_language": "es-MX",
+      "voice_id": "es-MX-JorgeNeural"
+    },
+    {
+      "id": "scene_004",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "El equipo aplicó datación uranio-plomo a un bloque de brecha: sedimento y fragmentos cementados que rellenan la cueva.",
+      "on_screen_text": "Bloque de brecha",
+      "visual_description": "Primer plano de un bloque de brecha: fragmentos de roca y sedimento cementados, con una escala de mano de investigador para mostrar su tamaño sin inventar medidas.",
+      "image_scene": "one irregular cave breccia block with embedded stone fragments, a gloved researcher's hand holding it for scale, no visible instruments or labels",
+      "sfx": [
+        "pluma"
+      ],
+      "style_id": "dibujo_cientifico_scratchboard",
+      "image_prompt": "scratchboard illustration, white lines scratched on black, fine cross-hatching, dramatic single subject filling frame, black background, not photorealistic, vertical 9:16, no text + one irregular cave breccia block with embedded stone fragments, a gloved researcher's hand holding it for scale, no visible instruments or labels",
+      "asset_filename": "frames/scene_004.jpg",
+      "source_ids": [
+        "SRC-001"
+      ],
+      "text_language": "es-MX",
+      "voice_id": "es-MX-JorgeNeural"
+    },
+    {
+      "id": "scene_005",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "Al combinar varios modelos matemáticos, obtuvo un intervalo de edad de 1.94 a 2.67 millones de años para ese bloque.",
+      "on_screen_text": "1.94–2.67 millones de años",
+      "visual_description": "El bloque aparece junto a una línea temporal sobria; el intervalo numérico se añadirá como gráfico tipográfico en postproducción, nunca dentro de la imagen generada.",
+      "image_scene": "one breccia sample beside a simple unlabelled amber timeline carved into dark stone, a single central motif, no numerals or text",
+      "sfx": [
+        "reloj"
+      ],
+      "capa": {
+        "tipo": "dato",
+        "valor": "1.94–2.67 Ma",
+        "etiqueta": "Intervalo estimado para un bloque de brecha",
+        "fuente": "Fernandez et al., npj Heritage Science (2026)"
+      },
+      "style_id": "dibujo_cientifico_scratchboard",
+      "image_prompt": "scratchboard illustration, white lines scratched on black, fine cross-hatching, dramatic single subject filling frame, black background, not photorealistic, vertical 9:16, no text + one breccia sample beside a simple unlabelled amber timeline carved into dark stone, a single central motif, no numerals or text",
+      "asset_filename": "frames/scene_005.jpg",
+      "source_ids": [
+        "SRC-001"
+      ],
+      "text_language": "es-MX",
+      "voice_id": "es-MX-JorgeNeural"
+    },
+    {
+      "id": "scene_006",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "Eso no significa que todos los fósiles tengan esa edad, ni que toda la cueva se formara entonces: la fecha corresponde a una pieza concreta.",
+      "on_screen_text": "No es la edad de todo",
+      "visual_description": "Un único bloque iluminado dentro de una cueva con otros estratos al fondo; la composición distingue la muestra fechada del resto del yacimiento.",
+      "image_scene": "one isolated breccia block illuminated in amber inside a larger dark cave, multiple geological layers receding in the background, no other highlighted samples",
+      "sfx": [
+        "lluvia"
+      ],
+      "style_id": "dibujo_cientifico_scratchboard",
+      "image_prompt": "scratchboard illustration, white lines scratched on black, fine cross-hatching, dramatic single subject filling frame, black background, not photorealistic, vertical 9:16, no text + one isolated breccia block illuminated in amber inside a larger dark cave, multiple geological layers receding in the background, no other highlighted samples",
+      "asset_filename": "frames/scene_006.jpg",
+      "source_ids": [
+        "SRC-001"
+      ],
+      "text_language": "es-MX",
+      "voice_id": "es-MX-JorgeNeural"
+    },
+    {
+      "id": "scene_007",
+      "arc": "cierre_historia",
+      "duration_seconds": 10,
+      "narration": "La clave está en el método: probar modelos alternativos ayuda a evitar fechas engañosas cuando los datos isotópicos no encajan bien.",
+      "on_screen_text": "Más modelos, mejor contraste",
+      "visual_description": "Una investigadora compara varias hojas de cálculo y un pequeño fragmento mineral; las curvas son esquemáticas, sin números ni resultados falsos.",
+      "image_scene": "one researcher comparing several handwritten calculation sheets beside a mineral sample, abstract unlabelled curves only, no readable writing",
+      "sfx": [
+        "pluma"
+      ],
+      "style_id": "dibujo_cientifico_scratchboard",
+      "image_prompt": "scratchboard illustration, white lines scratched on black, fine cross-hatching, dramatic single subject filling frame, black background, not photorealistic, vertical 9:16, no text + one researcher comparing several handwritten calculation sheets beside a mineral sample, abstract unlabelled curves only, no readable writing",
+      "asset_filename": "frames/scene_007.jpg",
+      "source_ids": [
+        "SRC-001"
+      ],
+      "text_language": "es-MX",
+      "voice_id": "es-MX-JorgeNeural"
+    },
+    {
+      "id": "scene_008",
+      "arc": "reflexion_o_pregunta",
+      "duration_seconds": 9,
+      "narration": "Con mejores fechas, los investigadores podrán ordenar las capas y comparar los fósiles con otros hallazgos de la región. El pasado no se vuelve simple; se vuelve medible. Esto fue Datos y ociosidades.",
+      "on_screen_text": "El pasado se puede medir",
+      "visual_description": "Estratos de cueva que se alejan hacia una luz ámbar; un fósil pequeño queda integrado en la roca, cierre contemplativo sin añadir personajes.",
+      "image_scene": "a single deep cave wall with visible geological strata and one small fossil embedded in stone, a narrow amber beam of light, contemplative ending",
+      "sfx": [
+        "viento"
+      ],
+      "style_id": "dibujo_cientifico_scratchboard",
+      "image_prompt": "scratchboard illustration, white lines scratched on black, fine cross-hatching, dramatic single subject filling frame, black background, not photorealistic, vertical 9:16, no text + a single deep cave wall with visible geological strata and one small fossil embedded in stone, a narrow amber beam of light, contemplative ending",
+      "asset_filename": "frames/scene_008.jpg",
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "text_language": "es-MX",
+      "voice_id": "es-MX-JorgeNeural"
+    }
+  ],
+  "approved_assets": [
+    {
+      "filename": "frames/scene_001.jpg",
+      "status": "pendiente_generacion_por_grok",
+      "role": "Frame scene_001 del storyboard; una imagen vertical, sin texto integrado."
+    },
+    {
+      "filename": "frames/scene_002.jpg",
+      "status": "pendiente_generacion_por_grok",
+      "role": "Frame scene_002 del storyboard; una imagen vertical, sin texto integrado."
+    },
+    {
+      "filename": "frames/scene_003.jpg",
+      "status": "pendiente_generacion_por_grok",
+      "role": "Frame scene_003 del storyboard; una imagen vertical, sin texto integrado."
+    },
+    {
+      "filename": "frames/scene_004.jpg",
+      "status": "pendiente_generacion_por_grok",
+      "role": "Frame scene_004 del storyboard; una imagen vertical, sin texto integrado."
+    },
+    {
+      "filename": "frames/scene_005.jpg",
+      "status": "pendiente_generacion_por_grok",
+      "role": "Frame scene_005 del storyboard; una imagen vertical, sin texto integrado."
+    },
+    {
+      "filename": "frames/scene_006.jpg",
+      "status": "pendiente_generacion_por_grok",
+      "role": "Frame scene_006 del storyboard; una imagen vertical, sin texto integrado."
+    },
+    {
+      "filename": "frames/scene_007.jpg",
+      "status": "pendiente_generacion_por_grok",
+      "role": "Frame scene_007 del storyboard; una imagen vertical, sin texto integrado."
+    },
+    {
+      "filename": "frames/scene_008.jpg",
+      "status": "pendiente_generacion_por_grok",
+      "role": "Frame scene_008 del storyboard; una imagen vertical, sin texto integrado."
+    }
+  ],
+  "risk_notes": [
+    "El intervalo de 1.94–2.67 Ma corresponde al bloque de brecha analizado; no es la edad de toda la cueva ni de todos los fósiles.",
+    "No afirmar que el espécimen tipo de Paranthropus robustus fue fechado directamente por este bloque.",
+    "La coordenada del mapa corresponde al componente patrimonial UNESCO 915bis-001 y representa la región de Kromdraai y alrededores, no la entrada exacta de la cueva.",
+    "No presentar el intervalo como una fecha puntual: conservar la amplitud y la incertidumbre del estudio."
+  ],
+  "cortinilla_fuentes": {
+    "duration_seconds": 6,
+    "titulo": "Fuentes",
+    "aviso": "Imágenes generadas con IA. Voz sintética. Audio sintetizado.",
+    "firma": "Datos y ociosidades · @datosyociosidades",
+    "source_ids": [
+      "SRC-001",
+      "SRC-002",
+      "SRC-003"
+    ]
+  },
+  "export": {
+    "filename": "capsula.mp4",
+    "resolution": "1080x1920",
+    "fps": 30,
+    "loudness_lufs": -14,
+    "subtitle_max_words": 3
+  }
+}
