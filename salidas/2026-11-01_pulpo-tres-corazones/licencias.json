@@ -1,0 +1,35 @@
+{
+ "project_id": "2026-11-01_pulpo-tres-corazones",
+ "musica": {
+  "cama": "pulso",
+  "origen": "síntesis propia (scripts/cama_sonora.py, numpy)",
+  "licencia": "obra propia de Datos y ociosidades",
+  "generada_por_ia": false
+ },
+ "sfx": {
+  "oceano": {
+   "origen": "síntesis propia (cama_sonora.py)",
+   "licencia": "obra propia"
+  }
+ },
+ "imagenes": {
+  "origen": "generadas con IA (ilustración no realista)",
+  "estilo": "carton_recortado",
+  "realista": false
+ },
+ "voz": {
+  "motor": "Microsoft Edge TTS",
+  "voz": "es-MX-JorgeNeural",
+  "nota": "voz sintética; no imita a una persona real"
+ },
+ "capas_datos": {
+  "tipos": [],
+  "mapa_base": null,
+  "render": "matplotlib (propio)"
+ },
+ "fuentes_datos": [
+  "https://doi.org/10.1242/jeb.85.1.111",
+  "https://www.fao.org/4/i3489e/i3489e.pdf",
+  "https://ocean.si.edu/ocean-life/invertebrates/octopuses-squids-and-relatives"
+ ]
+}

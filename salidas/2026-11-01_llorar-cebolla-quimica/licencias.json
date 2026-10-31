@@ -1,0 +1,35 @@
+{
+ "project_id": "2026-11-01_llorar-cebolla-quimica",
+ "musica": {
+  "cama": "pulso",
+  "origen": "síntesis propia (scripts/cama_sonora.py, numpy)",
+  "licencia": "obra propia de Datos y ociosidades",
+  "generada_por_ia": false
+ },
+ "sfx": {
+  "silencio": {
+   "origen": "síntesis propia (cama_sonora.py)",
+   "licencia": "obra propia"
+  }
+ },
+ "imagenes": {
+  "origen": "generadas con IA (ilustración no realista)",
+  "estilo": "papel_recortado_popup",
+  "realista": false
+ },
+ "voz": {
+  "motor": "Microsoft Edge TTS",
+  "voz": "es-MX-JorgeNeural",
+  "nota": "voz sintética; no imita a una persona real"
+ },
+ "capas_datos": {
+  "tipos": [],
+  "mapa_base": null,
+  "render": "matplotlib (propio)"
+ },
+ "fuentes_datos": [
+  "https://doi.org/10.1038/419685a",
+  "https://www.loc.gov/everyday-mysteries/categories/food-and-nutrition/item/why-does-chopping-an-onion-make-you-cry/",
+  "https://pubmed.ncbi.nlm.nih.gov/28708375/"
+ ]
+}

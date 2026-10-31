@@ -1,0 +1,280 @@
+{
+  "_schema": "CAPCOT_STORYBOARD_TEXT_V2",
+  "serie": "Datos y ociosidades",
+  "language": "es-MX",
+  "aspect_ratio": "9:16",
+  "target_duration_seconds": 84,
+  "audience": "Público general",
+  "occasion": "Cápsula vertical de divulgación científica",
+  "editorial_status": "PROPUESTA_PENDIENTE_DE_GROK",
+  "typography_identity": {
+    "font_family": "DejaVu Sans",
+    "font_weight": "700 para gancho; 400 para subtítulos",
+    "title_style": "Máximo seis palabras; presente desde frame 0 en postproducción",
+    "subtitle_style": "Bloques de máximo tres palabras; zona segura inferior",
+    "hierarchy": "Gancho > dato/etiqueta > subtítulos",
+    "animation": "Un movimiento por plano; tipografía en postproducción"
+  },
+  "voice": {
+    "engine": "edge-tts",
+    "voice_id": "es-MX-JorgeNeural",
+    "language": "es-MX",
+    "rate": "+7%",
+    "pitch": "-2Hz",
+    "pad_seconds": 0.4,
+    "modo_pausas": "continuo"
+  },
+  "cortinilla_fuentes": {
+    "duration_seconds": 12,
+    "titulo": "Fuentes",
+    "aviso": "Imágenes generadas con IA, voz sintética y audio sintetizado.",
+    "firma": "Datos y ociosidades"
+  },
+  "audio": {
+    "music_asset": "sintetico:pulso",
+    "music_plan": "Pendiente de selección/generación por Grok en producción; ambiente discreto, sin efectos engañosos.",
+    "music_license": "Generada por script (cama_sonora), sin licencia de terceros"
+  },
+  "export": {
+    "resolution": "1080x1920",
+    "fps": 30,
+    "render_status": "NOT_GENERATED"
+  },
+  "publicacion": {
+    "status": "PENDIENTE_DECISION_GROK",
+    "platforms": [
+      "YouTube Shorts",
+      "TikTok",
+      "Facebook Reels"
+    ],
+    "note": "No publicar ni programar desde preproducción textual."
+  },
+  "estado": "PENDIENTE_REVISION_GROK",
+  "production_mode": "storyboard_only",
+  "validation_notes": [],
+  "approved_assets": [],
+  "risk_notes": [],
+  "project_id": "2026-11-01_llorar-cebolla-quimica",
+  "title": "Por qué lloramos al cortar cebolla",
+  "titulo": "La química detrás de las lágrimas",
+  "estructura": "pregunta",
+  "resumen": "Al cortar una cebolla se rompen sus células y se ponen en contacto compuestos que normalmente están separados. La enzima alliinasa contribuye a formar ácido sulfénico; la lachrymatory-factor synthase lo convierte en syn-propanethial-S-oxide, una molécula volátil que llega a los ojos e irrita la superficie ocular, provocando lágrimas.",
+  "trend_source": {
+    "termino": "",
+    "fecha_publicacion": "2002-10-17",
+    "url": "https://www.nature.com/articles/419685a",
+    "termino_original": "Enzima que produce el factor lacrimógeno de la cebolla"
+  },
+  "arco": {
+    "hook_medias_res": "Cortas una cebolla y tus ojos empiezan a llorar. No es tristeza: es química.",
+    "desarrollo": "Al cortar la cebolla rompes sus células y mezclas sustancias que estaban separadas. Una enzima llamada alliinasa participa en la formación de ácido sulfénico. Después, otra enzima, la lachrymatory-factor synthase, produce el factor lacrimógeno volátil.",
+    "cierre_historia": "Esa molécula, syn-propanethial-S-oxide, viaja por el aire y alcanza la superficie del ojo. La irritación activa una respuesta protectora: las glándulas lagrimales producen lágrimas para diluir y eliminar el irritante.",
+    "reflexion_o_pregunta": "La cebolla no te hace llorar por su olor: activa una defensa química y tus ojos responden. Esto fue Datos y ociosidades."
+  },
+  "estilo_id": "papel_recortado_popup",
+  "estilo_visual": "Recortes de papel stop-motion / libro pop-up",
+  "visual_identity": {
+    "style_id": "papel_recortado_popup",
+    "style_name": "Recortes de papel stop-motion / libro pop-up",
+    "prompt_base": "stop-motion paper cut-out scene inside an open pop-up book box, newsprint and sepia paper figures, red thread accents, cardboard background, warm dim lamp light, handmade feel, vertical 9:16, no text",
+    "palette": "sepia, cartón, crema y acentos rojos",
+    "lighting": "Luz cálida lateral de teatrino",
+    "texture": "Papel recortado, cartón y capas articuladas",
+    "composition": "Células vegetales y moléculas representadas como capas desplegables; secuencia causal de izquierda a derecha",
+    "negative_prompt": "No ojos anatómicos exagerados, no nube tóxica, no vapor verde, no fórmulas o texto inventado",
+    "reference_assets": [],
+    "seed": null,
+    "seed_policy": "Mantener la misma cebolla y el mismo esquema de moléculas; mostrar la secuencia causal sin inventar estructuras químicas detalladas."
+  },
+  "sources": [
+    {
+      "id": "SRC-001",
+      "cita_corta": "Imai et al. (2002). An onion enzyme that makes the eyes water. Nature, 419, 685.",
+      "url": "https://doi.org/10.1038/419685a",
+      "doi": "10.1038/419685a",
+      "accessed": "2026-10-31",
+      "publication_date": "2002-10-17",
+      "supports": [
+        "Descubrimiento de lachrymatory-factor synthase",
+        "El factor lacrimógeno se sintetiza mediante una enzima específica y no es un simple subproducto espontáneo de la reacción de alliinase"
+      ],
+      "verification_status": "VERIFICADO_RESOLVEDOR"
+    },
+    {
+      "id": "SRC-002",
+      "cita_corta": "Library of Congress. Why does chopping an onion make you cry?",
+      "url": "https://www.loc.gov/everyday-mysteries/categories/food-and-nutrition/item/why-does-chopping-an-onion-make-you-cry/",
+      "doi": null,
+      "accessed": "2026-10-31",
+      "publication_date": null,
+      "supports": [
+        "Identidad del factor lacrimógeno syn-propanethial-S-oxide",
+        "Secuencia divulgativa: corte celular, formación del compuesto volátil y respuesta lagrimal"
+      ],
+      "verification_status": "VERIFICADO_RESOLVEDOR"
+    },
+    {
+      "id": "SRC-003",
+      "cita_corta": "Yoo et al. (2017). Enzyme That Makes You Cry—Crystal Structure of Lachrymatory Factor Synthase from Allium cepa.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28708375/",
+      "doi": null,
+      "accessed": "2026-10-31",
+      "publication_date": "2017",
+      "supports": [
+        "Estructura y actividad catalítica de la enzima LFS en Allium cepa"
+      ],
+      "verification_status": "VERIFICADO_RESOLVEDOR"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_001",
+      "arc": "hook_medias_res",
+      "duration_seconds": 9,
+      "narration": "Cortas una cebolla y tus ojos empiezan a llorar. No es tristeza: es química.",
+      "on_screen_text": "¿Por qué lloramos?",
+      "visual_description": "Cebolla de papel dentro de un libro pop-up; al abrirse, aparecen capas celulares y una gota de lágrima.",
+      "image_prompt": "stop-motion paper cut-out scene inside an open pop-up book box, newsprint and sepia paper figures, red thread accents, cardboard background, warm dim lamp light, handmade feel, vertical 9:16, no text. Cebolla de papel dentro de un libro pop-up; al abrirse, aparecen capas celulares y una gota de lágrima.. No text or lettering.",
+      "ambiente": "silencio",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002",
+        "SRC-003"
+      ],
+      "style_id": "papel_recortado_popup",
+      "asset_filename": "frames/scene_001.jpg"
+    },
+    {
+      "id": "scene_002",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "Cuando el cuchillo corta la cebolla, rompe células y pone en contacto sustancias que antes estaban separadas.",
+      "on_screen_text": "Romper las células",
+      "visual_description": "Corte transversal de capas de cebolla; las células se abren y dos grupos de moléculas quedan en contacto.",
+      "image_prompt": "stop-motion paper cut-out scene inside an open pop-up book box, newsprint and sepia paper figures, red thread accents, cardboard background, warm dim lamp light, handmade feel, vertical 9:16, no text. Corte transversal de capas de cebolla; las células se abren y dos grupos de moléculas quedan en contacto.. No text or lettering.",
+      "ambiente": "silencio",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002",
+        "SRC-003"
+      ],
+      "style_id": "papel_recortado_popup",
+      "asset_filename": "frames/scene_002.jpg"
+    },
+    {
+      "id": "scene_003",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "Una enzima llamada alliinasa actúa sobre compuestos azufrados y contribuye a formar ácido sulfénico.",
+      "on_screen_text": "Primera reacción",
+      "visual_description": "Piezas moleculares de papel se encuentran dentro de una célula abierta; representar la enzima como herramienta, sin fórmula inventada.",
+      "image_prompt": "stop-motion paper cut-out scene inside an open pop-up book box, newsprint and sepia paper figures, red thread accents, cardboard background, warm dim lamp light, handmade feel, vertical 9:16, no text. Piezas moleculares de papel se encuentran dentro de una célula abierta; representar la enzima como herramienta, sin fórmula inventada.. No text or lettering.",
+      "ambiente": "silencio",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002",
+        "SRC-003"
+      ],
+      "style_id": "papel_recortado_popup",
+      "asset_filename": "frames/scene_003.jpg"
+    },
+    {
+      "id": "scene_004",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "Luego interviene otra enzima: la lachrymatory-factor synthase, identificada por investigadores en 2002.",
+      "on_screen_text": "La enzima clave",
+      "visual_description": "La enzima LFS aparece como una segunda estación del mecanismo; una flecha muestra la conversión.",
+      "image_prompt": "stop-motion paper cut-out scene inside an open pop-up book box, newsprint and sepia paper figures, red thread accents, cardboard background, warm dim lamp light, handmade feel, vertical 9:16, no text. La enzima LFS aparece como una segunda estación del mecanismo; una flecha muestra la conversión.. No text or lettering.",
+      "ambiente": "silencio",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002",
+        "SRC-003"
+      ],
+      "style_id": "papel_recortado_popup",
+      "asset_filename": "frames/scene_004.jpg"
+    },
+    {
+      "id": "scene_005",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "Esa enzima ayuda a producir syn-propanethial-S-oxide, el factor lacrimógeno volátil de la cebolla.",
+      "on_screen_text": "La molécula volátil",
+      "visual_description": "Pequeñas formas moleculares de papel se desprenden de la cebolla y ascienden por el aire; sin nube tóxica.",
+      "image_prompt": "stop-motion paper cut-out scene inside an open pop-up book box, newsprint and sepia paper figures, red thread accents, cardboard background, warm dim lamp light, handmade feel, vertical 9:16, no text. Pequeñas formas moleculares de papel se desprenden de la cebolla y ascienden por el aire; sin nube tóxica.. No text or lettering.",
+      "ambiente": "silencio",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002",
+        "SRC-003"
+      ],
+      "style_id": "papel_recortado_popup",
+      "asset_filename": "frames/scene_005.jpg"
+    },
+    {
+      "id": "scene_006",
+      "arc": "cierre_historia",
+      "duration_seconds": 10,
+      "narration": "La molécula llega a la superficie del ojo y provoca irritación. No es la cebolla dentro del ojo: es un compuesto que viaja por el aire.",
+      "on_screen_text": "Viaja hasta el ojo",
+      "visual_description": "Trayectoria sencilla desde cebolla hasta superficie ocular; representar el ojo de forma esquemática y no invasiva.",
+      "image_prompt": "stop-motion paper cut-out scene inside an open pop-up book box, newsprint and sepia paper figures, red thread accents, cardboard background, warm dim lamp light, handmade feel, vertical 9:16, no text. Trayectoria sencilla desde cebolla hasta superficie ocular; representar el ojo de forma esquemática y no invasiva.. No text or lettering.",
+      "ambiente": "silencio",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002",
+        "SRC-003"
+      ],
+      "style_id": "papel_recortado_popup",
+      "asset_filename": "frames/scene_006.jpg"
+    },
+    {
+      "id": "scene_007",
+      "arc": "reflexion_o_pregunta",
+      "duration_seconds": 9,
+      "narration": "Como respuesta protectora, las glándulas lagrimales producen lágrimas que ayudan a diluir y retirar el irritante.",
+      "on_screen_text": "Tus ojos se protegen",
+      "visual_description": "Gota de lágrima cubre la superficie ocular; la molécula irritante se dispersa en la capa líquida.",
+      "image_prompt": "stop-motion paper cut-out scene inside an open pop-up book box, newsprint and sepia paper figures, red thread accents, cardboard background, warm dim lamp light, handmade feel, vertical 9:16, no text. Gota de lágrima cubre la superficie ocular; la molécula irritante se dispersa en la capa líquida.. No text or lettering.",
+      "ambiente": "silencio",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002",
+        "SRC-003"
+      ],
+      "style_id": "papel_recortado_popup",
+      "asset_filename": "frames/scene_007.jpg"
+    },
+    {
+      "id": "scene_008",
+      "arc": "reflexion_o_pregunta",
+      "duration_seconds": 10,
+      "narration": "La cebolla activa una defensa química y tus ojos responden. Esto fue Datos y ociosidades.",
+      "on_screen_text": "Datos y ociosidades",
+      "visual_description": "El libro pop-up se cierra sobre una cebolla cortada; queda una lágrima pequeña como remate visual.",
+      "image_prompt": "stop-motion paper cut-out scene inside an open pop-up book box, newsprint and sepia paper figures, red thread accents, cardboard background, warm dim lamp light, handmade feel, vertical 9:16, no text. El libro pop-up se cierra sobre una cebolla cortada; queda una lágrima pequeña como remate visual.. No text or lettering.",
+      "ambiente": "silencio",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002",
+        "SRC-003"
+      ],
+      "style_id": "papel_recortado_popup",
+      "asset_filename": "frames/scene_008.jpg"
+    }
+  ],
+  "linea_tematica_provisional": "Cocina / química cotidiana",
+  "keywords": [
+    "cebolla",
+    "cocina"
+  ]
+}

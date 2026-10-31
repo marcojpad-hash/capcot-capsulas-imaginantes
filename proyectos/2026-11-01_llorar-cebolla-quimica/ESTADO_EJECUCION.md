@@ -1,0 +1,15 @@
+# Estado de ejecución — Por qué lloramos al cortar cebolla
+
+- Fecha/slot editorial: 2026-11-01 13:30 America/Mexico_City
+- Project ID: `2026-11-01_llorar-cebolla-quimica`
+- Estado: `PENDIENTE_REVISION_GROK`
+- Modalidad: `storyboard_only`
+- Guion y storyboard: preparados; 8 escenas, 78 segundos + cortinilla de 6 segundos = 84 segundos.
+- Voz prevista: edge-tts `es-MX-JorgeNeural`, velocidad +7%, tono -2Hz.
+- Fuentes: documentadas en `fuentes.md`; claims acotados a esas fuentes.
+- Frames: NO GENERADOS.
+- Audio/voz/música: NO GENERADOS.
+- Video/render: NO GENERADO.
+- QA audiovisual: PENDIENTE DE GROK.
+- Publicación/programación: NO REALIZADA.
+- No declarar recepción del bot hasta que exista registro en `cola/estado/`.

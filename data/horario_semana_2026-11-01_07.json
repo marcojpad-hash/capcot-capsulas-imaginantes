@@ -15,17 +15,23 @@
       "fecha": "2026-11-01",
       "hora": "07:00",
       "cesta": "kids",
-      "project_id": "2026-11-01_kids-pulpo-tres-corazones",
-      "estado": "pedir_chatgpt",
-      "notas": "TÍTULO: Un pulpo tiene tres corazones y sangre azul. borrador en proyectos/2026-xx_kids_pulpo-tres-corazones; fuentes sugeridas: Smithsonian Ocean, Monterey Bay Aquarium. No marcar Hecho para niños."
+      "project_id": "2026-11-01_pulpo-tres-corazones",
+      "estado": "programado",
+      "notas": "TÍTULO: Un pulpo tiene tres corazones y sangre azul. borrador en proyectos/2026-xx_kids_pulpo-tres-corazones; fuentes sugeridas: Smithsonian Ocean, Monterey Bay Aquarium. No marcar Hecho para niños.",
+      "project_id_plan": "2026-11-01_kids-pulpo-tres-corazones",
+      "yt_id": "3B1ckNUahS8",
+      "publishAt": "2026-11-01T13:00:00Z"
     },
     {
       "fecha": "2026-11-01",
       "hora": "13:30",
       "cesta": "comida_familia",
-      "project_id": "2026-11-01_comida-cebolla-llorar",
-      "estado": "pedir_chatgpt",
-      "notas": "TÍTULO: Por qué la cebolla te hace llorar. química cotidiana; fuente: Imai et al. 2002 Nature (factor lacrimógeno)"
+      "project_id": "2026-11-01_llorar-cebolla-quimica",
+      "estado": "programado",
+      "notas": "TÍTULO: Por qué la cebolla te hace llorar. química cotidiana; fuente: Imai et al. 2002 Nature (factor lacrimógeno)",
+      "project_id_plan": "2026-11-01_comida-cebolla-llorar",
+      "yt_id": "Fh4KkcZr3e8",
+      "publishAt": "2026-11-01T19:30:00Z"
     },
     {
       "fecha": "2026-11-01",

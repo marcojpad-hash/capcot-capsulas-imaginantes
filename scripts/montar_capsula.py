@@ -312,7 +312,7 @@ def main():
 def licencias(sb, path):
     """Registro de licencias por cápsula (música, SFX, imágenes, voz, mapas)."""
     R = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-    aud = sb.get("audio", {}); m = aud.get("music_asset", "sintetico:pulso")
+    aud = sb.get("audio", {}); m = aud.get("music_asset", "sintetico:pulso") or ""
     lic_sfx = {}
     lp = os.path.join(R, "assets", "sfx", "LICENCIAS.json")
     if os.path.exists(lp): lic_sfx = json.load(open(lp, encoding="utf-8"))
