@@ -1,75 +1,271 @@
 {
+  "_schema": "CAPCOT_STORYBOARD_TEXT_V2",
   "project_id": "2026-11-02_camaron-mantis",
-  "title": "Camarón mantis",
-  "publish_date": "2026-11-02",
-  "publish_time_local": "07:00",
-  "format": "vertical_9_16",
-  "duration_seconds": 84,
+  "serie": "Datos y ociosidades",
+  "title": "El golpe del camarón mantis",
+  "titulo": "Un golpe bajo el agua",
+  "language": "es-MX",
+  "aspect_ratio": "9:16",
+  "target_duration_seconds": 84,
+  "estructura": "pregunta",
+  "audience": "Público general; lenguaje claro. No marcar Hecho para niños.",
+  "occasion": "Cápsula programada",
+  "resumen": "El camarón mantis pavo real usa un apéndice en forma de maza que golpea presas duras. El movimiento puede producir cavitación; el estudio midió dos picos de fuerza, uno por impacto y otro asociado al colapso de burbujas.",
+  "trend_source": {
+    "termino": "El golpe del camarón mantis",
+    "fecha_publicacion": "2005-10-01",
+    "url": "https://doi.org/10.1242/jeb.01831"
+  },
+  "editorial_status": "PROPUESTA_PENDIENTE_DE_GROK",
+  "arco": {
+    "hook_medias_res": "¿Cómo rompe una concha un animal pequeño bajo el agua?",
+    "desarrollo": "El camarón mantis pavo real tiene un apéndice delantero que funciona como una maza. No todas las especies lo hacen igual: esta historia trata de las que golpean, no de las que perforan. La maza acelera y golpea la concha con una fuerza extraordinaria. Ese movimiento tan rápido también altera la presión del agua y forma burbujas de cavitación. Cuando las burbujas colapsan, aparece un segundo pulso de fuerza: el golpe no termina en el primer contacto.",
+    "cierre_historia": "En el laboratorio, Patek y Caldwell midieron ambos picos en esta especie; no significa que cada camarón mantis tenga el mismo mecanismo.",
+    "reflexion_o_pregunta": "La próxima vez que veas una concha, recuerda que bajo el mar hay martillos biológicos. Esto fue Datos y ociosidades."
+  },
+  "estilo_id": "teatro_sombras",
+  "estilo_visual": "teatro_sombras",
+  "visual_identity": {
+    "style_id": "teatro_sombras",
+    "style_name": "teatro_sombras",
+    "prompt_base": "shadow puppet theater, black paper cut silhouettes backlit by warm amber light, layered cut paper scenery, ornate wooden stage frame, vertical 9:16, no text",
+    "palette": "Negro, ámbar, crema; siluetas de alto contraste.",
+    "lighting": "Luz cálida lateral constante; contraste legible.",
+    "texture": "Material artesanal visible, capas físicas y bordes definidos.",
+    "composition": "Vertical 9:16; sujeto central; un concepto por plano; continuidad de escala.",
+    "negative_prompt": "No texto incrustado, no anatomía inventada, no litografía índigo-ocre, no marcas de agua.",
+    "reference_assets": [],
+    "seed": null,
+    "seed_policy": "Mantener personajes, escala, materiales y dirección de luz entre escenas."
+  },
+  "typography_identity": {
+    "font_family": "DejaVu Sans",
+    "font_weight": "700 gancho; 400 subtítulos",
+    "title_style": "Gancho visible desde frame 0 en postproducción",
+    "subtitle_style": "Máximo tres palabras por bloque, zona segura inferior",
+    "hierarchy": "Gancho > dato > subtítulos",
+    "animation": "Un movimiento por plano; tipografía en postproducción"
+  },
   "voice": {
     "engine": "edge-tts",
-    "voice": "es-MX-JorgeNeural",
+    "voice_id": "es-MX-JorgeNeural",
+    "language": "es-MX",
     "rate": "+7%",
-    "pitch": "-2Hz"
+    "pitch": "-2Hz",
+    "pad_seconds": 0.3,
+    "modo_pausas": "continuo"
   },
-  "style": {
-    "id": "teatro_sombras",
-    "prompt_base": "shadow puppet theater, black paper cut silhouettes backlit by warm amber light, layered cut paper scenery, ornate wooden stage frame, vertical 9:16, no text"
-  },
-  "scenes": [
+  "sources": [
     {
-      "scene": 1,
-      "duration_seconds": 9,
-      "voiceover": "El camarón mantis no golpea como parece: su apéndice puede acelerar tan rápido que genera cavitación.",
-      "visual_direction": "Gancho visual con el organismo/alimento en primer plano."
-    },
-    {
-      "scene": 2,
-      "duration_seconds": 10,
-      "voiceover": "Algunas especies tienen apéndices en forma de maza; otras tienen apéndices perforadores. Esta cápsula trata de las especies golpeadoras.",
-      "visual_direction": "Presentar el sujeto completo en su entorno, con escala clara."
-    },
-    {
-      "scene": 3,
-      "duration_seconds": 10,
-      "voiceover": "El golpe de la maza es extremadamente rápido y produce una caída local de presión en el agua.",
-      "visual_direction": "Acercamiento al mecanismo principal, sin exagerar su tamaño."
-    },
-    {
-      "scene": 4,
-      "duration_seconds": 10,
-      "voiceover": "Esa caída puede formar burbujas de cavitación; al colapsar, generan un segundo pulso de impacto y luz débil.",
-      "visual_direction": "Mostrar el proceso en secuencia temporal."
-    },
-    {
-      "scene": 5,
-      "duration_seconds": 10,
-      "voiceover": "El mecanismo permite romper presas con conchas, pero no significa que cada golpe sea más fuerte que una bala.",
-      "visual_direction": "Diagrama visual simplificado y científicamente fiel."
-    },
-    {
-      "scene": 6,
-      "duration_seconds": 10,
-      "voiceover": "Algunas especies tienen apéndices en forma de maza; otras tienen apéndices perforadores. Esta cápsula trata de las especies golpeadoras.",
-      "visual_direction": "Contrastar el mecanismo con una idea equivocada frecuente."
-    },
-    {
-      "scene": 7,
-      "duration_seconds": 10,
-      "voiceover": "El golpe de la maza es extremadamente rápido y produce una caída local de presión en el agua.",
-      "visual_direction": "Consecuencia observable en el mundo real."
-    },
-    {
-      "scene": 8,
-      "duration_seconds": 9,
-      "voiceover": "Esa caída puede formar burbujas de cavitación; al colapsar, generan un segundo pulso de impacto y luz débil.",
-      "visual_direction": "Cierre visual que resume el dato y deja respirar la cortinilla."
+      "id": "SRC-001",
+      "cita_corta": "Patek, S. N. & Caldwell, R. L. (2005). Extreme impact and cavitation forces of a biological hammer. Journal of Experimental Biology, 208, 3655–3664.",
+      "url": "https://doi.org/10.1242/jeb.01831",
+      "doi": "10.1242/jeb.01831",
+      "accessed": "2026-10-31",
+      "publication_date": "2005-10",
+      "supports": [
+        "El estudio midió golpes de Odontodactylus scyllarus.",
+        "La cavitación genera un segundo pico de fuerza tras el impacto.",
+        "No generalizar el mecanismo a todas las especies de camarón mantis."
+      ],
+      "verification_status": "VERIFICADO_RESOLVEDOR"
     }
   ],
-  "cortinilla_seconds": 6,
-  "closing_line": "Esto fue Datos y ociosidades.",
-  "production_notes": [
-    "No añadir texto incrustado en imágenes.",
-    "No inventar anatomía, magnitudes ni comparaciones no respaldadas.",
-    "La narración total de escenas debe sumar 78 segundos; cortinilla final de 6 segundos."
+  "scenes": [
+    {
+      "id": "scene_001",
+      "arc": "hook_medias_res",
+      "duration_seconds": 9,
+      "narration": "¿Cómo rompe una concha bajo el agua?",
+      "on_screen_text": "Un martillo viviente",
+      "visual_description": "Silueta de camarón mantis frente a una concha, teatrino submarino.",
+      "image_prompt": "shadow puppet theater, black paper cut silhouettes backlit by warm amber light, layered cut paper scenery, ornate wooden stage frame, vertical 9:16, no text Silueta de camarón mantis frente a una concha, teatrino submarino., clear scientific illustration, no labels",
+      "ambiente": "Agua profunda tenue",
+      "sfx": [
+        "Golpe seco"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "teatro_sombras"
+    },
+    {
+      "id": "scene_002",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "El camarón mantis pavo real tiene un apéndice delantero que funciona como una maza.",
+      "on_screen_text": "Una maza natural",
+      "visual_description": "Vista lateral del animal; destacar el apéndice raptorial sin exagerar proporciones.",
+      "image_prompt": "shadow puppet theater, black paper cut silhouettes backlit by warm amber light, layered cut paper scenery, ornate wooden stage frame, vertical 9:16, no text Vista lateral del animal; destacar el apéndice raptorial sin exagerar proporciones., clear scientific illustration, no labels",
+      "ambiente": "Burbujeo suave",
+      "sfx": [
+        "Deslizamiento"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "teatro_sombras",
+      "capa": {
+        "tipo": "mapa",
+        "region": [
+          -180,
+          -90,
+          180,
+          90
+        ],
+        "puntos": [],
+        "titulo": "Hábitat marino; mapa contextual, no punto de observación",
+        "fuente": "Natural Earth; mapa ilustrativo sin coordenadas de captura."
+      }
+    },
+    {
+      "id": "scene_003",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "No todas las especies lo hacen igual: esta historia trata de las que golpean, no de las que perforan.",
+      "on_screen_text": "Dos herramientas distintas",
+      "visual_description": "Dos siluetas comparativas: maza redondeada frente a apéndice perforador.",
+      "image_prompt": "shadow puppet theater, black paper cut silhouettes backlit by warm amber light, layered cut paper scenery, ornate wooden stage frame, vertical 9:16, no text Dos siluetas comparativas: maza redondeada frente a apéndice perforador., clear scientific illustration, no labels",
+      "ambiente": "Agua tenue",
+      "sfx": [
+        "Cambio de plano"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "teatro_sombras",
+      "capa": {
+        "tipo": "dato",
+        "valor": "Dos picos de fuerza",
+        "etiqueta": "Impacto y cavitación",
+        "fuente": "Patek, S. N. & Caldwell, R. L. (2005). Extreme impact and cavitation forces of a biological hammer. Journal of Experimental Biology, 208, 3655–3664."
+      }
+    },
+    {
+      "id": "scene_004",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "La maza acelera y golpea la concha con una fuerza extraordinaria.",
+      "on_screen_text": "Golpe ultrarrápido",
+      "visual_description": "Secuencia de tres posiciones de la maza acercándose a una concha.",
+      "image_prompt": "shadow puppet theater, black paper cut silhouettes backlit by warm amber light, layered cut paper scenery, ornate wooden stage frame, vertical 9:16, no text Secuencia de tres posiciones de la maza acercándose a una concha., clear scientific illustration, no labels",
+      "ambiente": "Tensión ascendente",
+      "sfx": [
+        "Whoosh breve",
+        "Impacto"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "teatro_sombras"
+    },
+    {
+      "id": "scene_005",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "Ese movimiento tan rápido también altera la presión del agua y forma burbujas de cavitación.",
+      "on_screen_text": "Burbujas de cavitación",
+      "visual_description": "Burbujas pequeñas nacen junto al punto de contacto, sin números no documentados.",
+      "image_prompt": "shadow puppet theater, black paper cut silhouettes backlit by warm amber light, layered cut paper scenery, ornate wooden stage frame, vertical 9:16, no text Burbujas pequeñas nacen junto al punto de contacto, sin números no documentados., clear scientific illustration, no labels",
+      "ambiente": "Burbujeo",
+      "sfx": [
+        "Burbujas"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "teatro_sombras"
+    },
+    {
+      "id": "scene_006",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "Cuando las burbujas colapsan, aparece un segundo pulso de fuerza: el golpe no termina en el primer contacto.",
+      "on_screen_text": "Un segundo pulso",
+      "visual_description": "Dos ondas sucesivas en el agua, la segunda asociada al colapso de burbujas.",
+      "image_prompt": "shadow puppet theater, black paper cut silhouettes backlit by warm amber light, layered cut paper scenery, ornate wooden stage frame, vertical 9:16, no text Dos ondas sucesivas en el agua, la segunda asociada al colapso de burbujas., clear scientific illustration, no labels",
+      "ambiente": "Pulso grave",
+      "sfx": [
+        "Doble golpe"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "teatro_sombras"
+    },
+    {
+      "id": "scene_007",
+      "arc": "cierre_historia",
+      "duration_seconds": 10,
+      "narration": "En el laboratorio, Patek y Caldwell midieron ambos picos en esta especie; no significa que cada camarón mantis tenga el mismo mecanismo.",
+      "on_screen_text": "Medido en laboratorio",
+      "visual_description": "Mesa de laboratorio estilizada y gráfico de dos picos sin escala numérica.",
+      "image_prompt": "shadow puppet theater, black paper cut silhouettes backlit by warm amber light, layered cut paper scenery, ornate wooden stage frame, vertical 9:16, no text Mesa de laboratorio estilizada y gráfico de dos picos sin escala numérica., clear scientific illustration, no labels",
+      "ambiente": "Ambiente científico",
+      "sfx": [
+        "Lápiz"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "teatro_sombras"
+    },
+    {
+      "id": "scene_008",
+      "arc": "cierre_historia",
+      "duration_seconds": 9,
+      "narration": "La próxima vez que veas una concha, recuerda que bajo el mar hay martillos biológicos. Esto fue Datos y ociosidades.",
+      "on_screen_text": "Martillos bajo el mar",
+      "visual_description": "Concha abierta y silueta del animal alejándose en el teatrino.",
+      "image_prompt": "shadow puppet theater, black paper cut silhouettes backlit by warm amber light, layered cut paper scenery, ornate wooden stage frame, vertical 9:16, no text Concha abierta y silueta del animal alejándose en el teatrino., clear scientific illustration, no labels",
+      "ambiente": "Agua calmada",
+      "sfx": [
+        "Campanilla"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "teatro_sombras"
+    }
+  ],
+  "cortinilla_fuentes": {
+    "duration_seconds": 6,
+    "titulo": "Fuentes",
+    "aviso": "Divulgación; afirmaciones limitadas al estudio citado.",
+    "firma": "Datos y ociosidades",
+    "source_ids": [
+      "SRC-001"
+    ]
+  },
+  "audio": {
+    "music_asset": null,
+    "music_plan": "Cama instrumental discreta; seleccionar/generar en producción",
+    "music_license": null
+  },
+  "export": {
+    "resolution": "1080x1920",
+    "fps": 30,
+    "render_status": "NOT_GENERATED"
+  },
+  "publicacion": {
+    "status": "PENDIENTE_DECISION_GROK",
+    "platforms": [
+      "YouTube Shorts",
+      "TikTok",
+      "Facebook Reels"
+    ],
+    "note": "No publicar ni programar desde preproducción textual."
+  },
+  "estado": "PENDIENTE_REVISION_GROK",
+  "production_mode": "storyboard_only",
+  "validation_notes": [
+    "8 escenas; 78 s de narración/escenas + 6 s de cortinilla = 84 s.",
+    "No marcar Hecho para niños.",
+    "Cierre hablado exacto: Esto fue Datos y ociosidades."
+  ],
+  "linea_tematica_provisional": "ciencia/naturaleza",
+  "approved_assets": [],
+  "risk_notes": [
+    "Cifras no incluidas sin respaldo específico."
   ]
 }
