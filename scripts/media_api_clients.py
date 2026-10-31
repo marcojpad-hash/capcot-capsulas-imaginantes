@@ -133,6 +133,24 @@ class RunwayDevAPI:
             "Accept": "application/json",
         }
 
+    def edit_image(self, prompt_text: str, reference_images: list[str],
+                   seed: int | None = None) -> dict[str, Any]:
+        """Edit 1–4 reference images with Bria FIBO Edit 1.5 on Runway Dev."""
+        if not 1 <= len(reference_images) <= 4:
+            raise ValueError("Bria FIBO Edit 1.5 requires 1–4 reference images")
+        if not prompt_text or len(prompt_text) > 10000:
+            raise ValueError("prompt_text must contain 1–10000 characters")
+        body: dict[str, Any] = {
+            "model": "bria_fibo_edit_1_5",
+            "promptText": prompt_text,
+            "referenceImages": [{"uri": uri} for uri in reference_images],
+        }
+        if seed is not None:
+            body["seed"] = seed
+        return _request_json(
+            f"{RUNWAY_BASE}/text_to_image", "POST", self.headers, body
+        )
+
     def edit_video(self, video_uri: str, prompt_text: str,
                    keyframes: list[dict[str, Any]] | None = None,
                    target_aspect_ratio: str | None = None) -> dict[str, Any]:
