@@ -33,7 +33,7 @@ Los scripts de validación y montaje existen. El plan maestro documenta un proto
 
 ## APIs de edición: Krea y Runway
 - [Investigación y decisión de integración](docs/API_EDITORES_KREA_RUNWAY.md).
-- Cliente API opcional: `scripts/media_api_clients.py` (Krea 3 para edición de imagen, Seedance 2.5 para clips; Runway Aleph 2.0 para edición de video).
+- Cliente API opcional: `scripts/media_api_clients.py` (Krea 3 y Runway/Bria FIBO Edit 1.5 para edición de imagen; Krea Seedance 2.5 para clips; Runway Aleph 2.0 para edición de video).
 - Credenciales solo como variables de entorno/Repository Secrets: `KREA_API_KEY` y `RUNWAYML_API_SECRET`. No se guardan en Git.
 - Las llamadas de generación son facturables y no se ejecutan en CI.
 - Migración y auditoría de continuidad: `scripts/migrar_storyboard_continuidad.py`, `scripts/validar_continuidad_audiovisual.py`, `scripts/auditar_assets_storyboard.py`.
