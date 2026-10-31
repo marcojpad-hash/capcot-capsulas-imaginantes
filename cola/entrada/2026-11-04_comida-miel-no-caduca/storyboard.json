@@ -1,0 +1,237 @@
+{
+  "_schema": "CAPCOT_STORYBOARD_TEXT_V2",
+  "project_id": "2026-11-04_comida-miel-no-caduca",
+  "serie": "Datos y ociosidades",
+  "title": "¿La miel nunca se echa a perder?",
+  "titulo": "La miel desafía al tiempo",
+  "language": "es-MX",
+  "aspect_ratio": "9:16",
+  "target_duration_seconds": 84,
+  "estructura": "pregunta",
+  "audience": "Público general",
+  "occasion": "Video vertical breve",
+  "resumen": "¿La miel nunca se echa a perder?",
+  "trend_source": {
+    "termino": "¿La miel nunca se echa a perder?",
+    "fecha_publicacion": "",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9359632/"
+  },
+  "editorial_status": "PROPUESTA_PENDIENTE_DE_GROK",
+  "arco": {
+    "hook_medias_res": "La miel puede durar muchísimo tiempo, pero decir que nunca se echa a perder necesita una precisión: depende de cómo se produjo y cómo se guarda.",
+    "desarrollo": "Las abejas transforman el néctar, reducen su humedad y lo almacenan en celdas. El resultado es una mezcla muy concentrada de azúcares. Esa concentración deja poca agua disponible para que muchos microorganismos crezcan. Los científicos llaman a esa medida actividad de agua; en la miel suele ser baja. También influye su acidez. Y en ciertas mieles, enzimas y otros compuestos generan sustancias que dificultan el crecimiento de bacterias. No es magia ni esterilidad absoluta. Algunas levaduras toleran ambientes muy azucarados y pueden fermentar miel con demasiada humedad.",
+    "cierre_historia": "Si el frasco queda abierto, absorbe agua del ambiente o se contamina, puede cambiar. La cristalización, por sí sola, tampoco significa que esté echada a perder: es un proceso físico natural de sus azúcares.",
+    "reflexion_o_pregunta": "La clave de su larga conservación es una combinación de poca agua disponible, acidez y composición química. Así que la miel no es inmortal; es un alimento con condiciones poco hospitalarias para muchos microbios. Esto fue Datos y ociosidades."
+  },
+  "estilo_id": "bordado",
+  "estilo_visual": "Bordado (propio)",
+  "visual_identity": {
+    "style_id": "bordado",
+    "style_name": "Bordado (propio)",
+    "prompt_base": "hand embroidery on linen fabric, colorful thread stitches, satin and french knots, embroidery hoop edge visible, vertical 9:16, no text",
+    "palette": "Según catálogo",
+    "lighting": "Según prompt base",
+    "texture": "Según prompt base",
+    "composition": "Vertical 9:16; continuidad de paleta y escala",
+    "negative_prompt": "No texto dentro de imagen, no marcas de agua, no elementos falsos",
+    "reference_assets": [],
+    "seed": null,
+    "seed_policy": "Continuidad entre las ocho escenas"
+  },
+  "typography_identity": {
+    "font_family": "DejaVu Sans",
+    "font_weight": "700/400",
+    "title_style": "Gancho máximo seis palabras desde frame 0",
+    "subtitle_style": "Bloques de máximo tres palabras",
+    "hierarchy": "Gancho > dato > subtítulos",
+    "animation": "Un movimiento por plano; texto en postproducción"
+  },
+  "voice": {
+    "engine": "edge-tts",
+    "voice_id": "es-MX-JorgeNeural",
+    "language": "es-MX",
+    "rate": "+7%",
+    "pitch": "-2Hz",
+    "pad_seconds": 0.3,
+    "modo_pausas": "continuo"
+  },
+  "sources": [
+    {
+      "id": "SRC-001",
+      "cita_corta": "Artículo de revisión sobre propiedades ecológicas y químicas de la miel (2022)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9359632/",
+      "doi": null,
+      "accessed": "2026-10-31",
+      "publication_date": "2022",
+      "supports": [
+        "Composición, mecanismos y límites descritos en la fuente"
+      ],
+      "verification_status": "VERIFICADO_RESOLVEDOR"
+    },
+    {
+      "id": "SRC-002",
+      "cita_corta": "Revisión científica sobre actividad antimicrobiana de la miel (2022)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9312033/",
+      "doi": null,
+      "accessed": "2026-10-31",
+      "publication_date": "2022",
+      "supports": [
+        "Composición, mecanismos y límites descritos en la fuente"
+      ],
+      "verification_status": "VERIFICADO_RESOLVEDOR"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_001",
+      "arc": "hook_medias_res",
+      "duration_seconds": 10,
+      "narration": "La miel puede durar muchísimo tiempo, pero decir que nunca se echa a perder necesita una precisión: depende de cómo se produjo y cómo se guarda.",
+      "on_screen_text": "La miel desafía al tiempo",
+      "visual_description": "Plano educativo de ¿la miel nunca se echa a perder?, metáfora visual concreta y legible",
+      "image_prompt": "hand embroidery on linen fabric, colorful thread stitches, satin and french knots, embroidery hoop edge visible, vertical 9:16, no text, educational visual scene illustrating ¿la miel nunca se echa a perder?, consistent visual continuity",
+      "ambiente": "Ambiente discreto; voz siempre al frente",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "style_id": "bordado"
+    },
+    {
+      "id": "scene_002",
+      "arc": "desarrollo",
+      "duration_seconds": 12,
+      "narration": "Las abejas transforman el néctar, reducen su humedad y lo almacenan en celdas. El resultado es una mezcla muy concentrada de azúcares.",
+      "on_screen_text": "Néctar transformado",
+      "visual_description": "Plano educativo de ¿la miel nunca se echa a perder?, metáfora visual concreta y legible",
+      "image_prompt": "hand embroidery on linen fabric, colorful thread stitches, satin and french knots, embroidery hoop edge visible, vertical 9:16, no text, educational visual scene illustrating ¿la miel nunca se echa a perder?, consistent visual continuity",
+      "ambiente": "Ambiente discreto; voz siempre al frente",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "style_id": "bordado"
+    },
+    {
+      "id": "scene_003",
+      "arc": "desarrollo",
+      "duration_seconds": 12,
+      "narration": "Esa concentración deja poca agua disponible para que muchos microorganismos crezcan. Los científicos llaman a esa medida actividad de agua; en la miel suele ser baja.",
+      "on_screen_text": "Poca agua disponible",
+      "visual_description": "Plano educativo de ¿la miel nunca se echa a perder?, metáfora visual concreta y legible",
+      "image_prompt": "hand embroidery on linen fabric, colorful thread stitches, satin and french knots, embroidery hoop edge visible, vertical 9:16, no text, educational visual scene illustrating ¿la miel nunca se echa a perder?, consistent visual continuity",
+      "ambiente": "Ambiente discreto; voz siempre al frente",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "style_id": "bordado"
+    },
+    {
+      "id": "scene_004",
+      "arc": "desarrollo",
+      "duration_seconds": 12,
+      "narration": "También influye su acidez. Y en ciertas mieles, enzimas y otros compuestos generan sustancias que dificultan el crecimiento de bacterias.",
+      "on_screen_text": "Acidez y química",
+      "visual_description": "Plano educativo de ¿la miel nunca se echa a perder?, metáfora visual concreta y legible",
+      "image_prompt": "hand embroidery on linen fabric, colorful thread stitches, satin and french knots, embroidery hoop edge visible, vertical 9:16, no text, educational visual scene illustrating ¿la miel nunca se echa a perder?, consistent visual continuity",
+      "ambiente": "Ambiente discreto; voz siempre al frente",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "style_id": "bordado"
+    },
+    {
+      "id": "scene_005",
+      "arc": "desarrollo",
+      "duration_seconds": 12,
+      "narration": "No es magia ni esterilidad absoluta. Algunas levaduras toleran ambientes muy azucarados y pueden fermentar miel con demasiada humedad.",
+      "on_screen_text": "No es esterilidad",
+      "visual_description": "Plano educativo de ¿la miel nunca se echa a perder?, metáfora visual concreta y legible",
+      "image_prompt": "hand embroidery on linen fabric, colorful thread stitches, satin and french knots, embroidery hoop edge visible, vertical 9:16, no text, educational visual scene illustrating ¿la miel nunca se echa a perder?, consistent visual continuity",
+      "ambiente": "Ambiente discreto; voz siempre al frente",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "style_id": "bordado"
+    },
+    {
+      "id": "scene_006",
+      "arc": "cierre_historia",
+      "duration_seconds": 10,
+      "narration": "Si el frasco queda abierto, absorbe agua del ambiente o se contamina, puede cambiar. La cristalización, por sí sola, tampoco significa que esté echada a perder: es un proceso físico natural de sus azúcares.",
+      "on_screen_text": "Humedad y conservación",
+      "visual_description": "Plano educativo de ¿la miel nunca se echa a perder?, metáfora visual concreta y legible",
+      "image_prompt": "hand embroidery on linen fabric, colorful thread stitches, satin and french knots, embroidery hoop edge visible, vertical 9:16, no text, educational visual scene illustrating ¿la miel nunca se echa a perder?, consistent visual continuity",
+      "ambiente": "Ambiente discreto; voz siempre al frente",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "style_id": "bordado"
+    },
+    {
+      "id": "scene_007",
+      "arc": "reflexion_o_pregunta",
+      "duration_seconds": 10,
+      "narration": "La clave de su larga conservación es una combinación de poca agua disponible, acidez y composición química. Así que la miel no es inmortal; es un alimento con condiciones poco hospitalarias para muchos microbios. Esto fue Datos y ociosidades.",
+      "on_screen_text": "Esto fue Datos y ociosidades",
+      "visual_description": "Plano educativo de ¿la miel nunca se echa a perder?, metáfora visual concreta y legible",
+      "image_prompt": "hand embroidery on linen fabric, colorful thread stitches, satin and french knots, embroidery hoop edge visible, vertical 9:16, no text, educational visual scene illustrating ¿la miel nunca se echa a perder?, consistent visual continuity",
+      "ambiente": "Ambiente discreto; voz siempre al frente",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "style_id": "bordado"
+    }
+  ],
+  "cortinilla_fuentes": {
+    "duration_seconds": 6,
+    "titulo": "Fuentes",
+    "aviso": "Divulgación realizada con apoyo de IA; declarar los recursos sintéticos usados en versión final.",
+    "firma": "Datos y ociosidades",
+    "source_ids": [
+      "SRC-001",
+      "SRC-002"
+    ]
+  },
+  "audio": {
+    "music_asset": null,
+    "music_plan": "Cama discreta; selección en montaje por Grok",
+    "music_license": null
+  },
+  "export": {
+    "resolution": "1080x1920",
+    "fps": 30,
+    "render_status": "NOT_GENERATED"
+  },
+  "publicacion": {
+    "status": "PENDIENTE_DECISION_GROK",
+    "platforms": [
+      "YouTube Shorts",
+      "TikTok",
+      "Facebook Reels"
+    ],
+    "note": "No publicar desde preproducción textual."
+  },
+  "estado": "PENDIENTE_REVISION_GROK",
+  "production_mode": "storyboard_only",
+  "validation_notes": [
+    "7 escenas; 78 segundos narrados y cortinilla de 6 segundos."
+  ],
+  "linea_tematica_provisional": "Ciencia y vida cotidiana",
+  "approved_assets": [],
+  "risk_notes": [
+    "Evitar absolutos; explicar condiciones y límites."
+  ]
+}
