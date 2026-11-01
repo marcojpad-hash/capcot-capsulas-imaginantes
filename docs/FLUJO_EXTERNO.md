@@ -9,12 +9,14 @@
 
 No suponer que Grok consulta la cola en segundo plano. La recepción solo se confirma con lectura/estado registrado.
 
-## Entrada
-ChatGPT trabaja exclusivamente en \`feature/capcot-video-discovery-continuity\` y crea:
-- \`docs/briefs/YYYY-MM-DD_RADAR_CAPCOT.md\`
-- \`cola/entrada/YYYY-MM-DD_slug.json\`
+## Entrada y staging narrativo
+ChatGPT trabaja exclusivamente en feature/capcot-video-discovery-continuity y crea:
+- docs/briefs/YYYY-MM-DD_RADAR_CAPCOT.md
+- borrador: proyectos/YYYY-MM-DD_slug/storyboard.json
 
-El storyboard incorpora fuentes, identificadores por escena, mapa, dato/gráfico, biblia visual/tipográfica, voz prevista, ambiente y SFX. No genera medios ni directorios de frames; no altera \`data/*.json\`.
+El investigador no escribe ni deja borradores en cola/entrada/. El auditor CAPCOT, como revisor distinto y en una ejecución/conversación separada, realiza QA en frío leyendo únicamente la narración concatenada. Registra narrative_qa conforme a docs/QA_NARRATIVO_EN_FRIO.md. Solo con PASS (>=85, siete checks true, flags vacíos) crea/promueve la copia de handoff en cola/entrada/<project_id>/storyboard.json. Si falla, no promueve; cualquier copia heredada en cola se mueve a cola/bloqueados/<project_id>/storyboard.json conservando el contenido.
+
+El storyboard incorpora fuentes, identificadores por escena, mapa, dato/gráfico, biblia visual/tipográfica, voz prevista, ambiente y SFX. No genera medios ni directorios de frames; no altera data/*.json.
 
 ## Recepción y producción de Grok
 1. Lee brief y JSON.
