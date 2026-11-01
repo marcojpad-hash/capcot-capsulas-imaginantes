@@ -30,6 +30,26 @@ def check_doi(doi):
 def words(text):
     return re.findall(r"[A-Za-zÁÉÍÓÚÜÑáéíóúüñ0-9]+(?:['’.-][A-Za-zÁÉÍÓÚÜÑáéíóúüñ0-9]+)*", text or "")
 
+NARRATIVE_CONTRACT_FIELDS = (
+    "central_question",
+    "promise",
+    "stakes",
+    "scientific_turn",
+    "evidence_limit",
+    "payoff",
+)
+
+def validar_narrative_contract(contract):
+    """Exige que el autor explicite la arquitectura narrativa antes de redactar."""
+    if not isinstance(contract, dict):
+        return ["falta narrative_contract: contrato narrativo estructurado ausente"]
+    errs = []
+    for key in NARRATIVE_CONTRACT_FIELDS:
+        value = contract.get(key)
+        if not isinstance(value, str) or not value.strip():
+            errs.append(f"narrative_contract.{key} debe ser texto no vacío")
+    return errs
+
 NARRATIVE_QA_CHECKS = (
     "pregunta_central_reconstruible",
     "apertura_in_medias_res",
@@ -87,6 +107,7 @@ def validar(path, doi=False):
     if errs:
         return errs, warns
 
+    errs.extend(validar_narrative_contract(sb.get("narrative_contract")))
     errs.extend(validar_narrative_qa(sb.get("narrative_qa")))
 
     if sb["serie"] != "Datos y ociosidades":
