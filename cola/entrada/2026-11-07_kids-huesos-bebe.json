@@ -1,0 +1,236 @@
+{
+  "_schema": "CAPCOT_STORYBOARD_TEXT_V2",
+  "project_id": "2026-11-07_kids-huesos-bebe",
+  "serie": "Datos y ociosidades",
+  "title": "¿Los bebés tienen más huesos?",
+  "titulo": "Nacemos con más huesos",
+  "language": "es-MX",
+  "aspect_ratio": "9:16",
+  "target_duration_seconds": 84,
+  "estructura": "pregunta",
+  "audience": "Público general",
+  "occasion": "Cápsula vertical de divulgación",
+  "resumen": "Un recién nacido tiene aproximadamente 270–300 huesos; algunos se fusionan durante el crecimiento.",
+  "trend_source": {
+    "termino": "¿Los bebés tienen más huesos?",
+    "fecha_publicacion": "",
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/6-2-bone-classification"
+  },
+  "editorial_status": "PROPUESTA_PENDIENTE_DE_GROK",
+  "arco": {
+    "hook_medias_res": "Un bebé puede nacer con cerca de 300 huesos, mientras que en un adulto suelen contarse 206. ¿A dónde fueron a parar los demás?",
+    "desarrollo": "No desaparecen: durante el crecimiento, varias estructuras óseas se unen y forman huesos mayores. Es parte normal del desarrollo del esqueleto. Un ejemplo está en el cráneo. Al nacer, varios huesos están separados por espacios flexibles que permiten el crecimiento del cerebro y ayudan durante el parto. Con el tiempo, esas estructuras se fusionan. También ocurre en otras regiones del esqueleto, como la pelvis y la columna. El número exacto puede variar según cómo se cuenten algunas piezas pequeñas, pero la idea central es correcta: el esqueleto cambia mientras crecemos.",
+    "cierre_historia": "El mecanismo tiene límites y depende de las condiciones observadas. No conviene convertir una medición particular en una regla universal.",
+    "reflexion_o_pregunta": "Esto fue Datos y ociosidades."
+  },
+  "estilo_id": "crayones_infantiles",
+  "estilo_visual": "Crayones infantiles",
+  "visual_identity": {
+    "style_id": "crayones_infantiles",
+    "style_name": "Crayones infantiles",
+    "prompt_base": "child's wax crayon drawing on white paper, naive shapes, bright colors, visible crayon strokes, cheerful sun, vertical 9:16, no text",
+    "palette": "Según catálogo",
+    "lighting": "Según prompt base",
+    "texture": "Según prompt base",
+    "composition": "Vertical 9:16; continuidad de sujeto y paleta",
+    "negative_prompt": "No texto generado, no marcas de agua, no datos falsos",
+    "reference_assets": [],
+    "seed": null,
+    "seed_policy": "Continuidad entre escenas"
+  },
+  "typography_identity": {
+    "font_family": "DejaVu Sans",
+    "font_weight": "700 para gancho; 400 para subtítulos",
+    "title_style": "Máximo seis palabras desde frame 0",
+    "subtitle_style": "Bloques de máximo tres palabras",
+    "hierarchy": "Gancho > dato > subtítulos",
+    "animation": "Un movimiento por plano; texto en postproducción"
+  },
+  "voice": {
+    "engine": "edge-tts",
+    "voice_id": "es-MX-JorgeNeural",
+    "language": "es-MX",
+    "rate": "+7%",
+    "pitch": "-2Hz",
+    "pad_seconds": 0.3,
+    "modo_pausas": "continuo"
+  },
+  "sources": [
+    {
+      "id": "SRC-001",
+      "cita_corta": "OpenStax Anatomy & Physiology 2e, Bone Classification.",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/6-2-bone-classification",
+      "doi": null,
+      "accessed": "2026-10-31",
+      "publication_date": "",
+      "supports": [
+        "Un recién nacido tiene aproximadamente 270–300 huesos; algunos se fusionan durante el crecimiento."
+      ],
+      "verification_status": "VERIFICADO_RESOLVEDOR"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_001",
+      "arc": "hook_medias_res",
+      "duration_seconds": 10,
+      "narration": "Un bebé puede nacer con cerca de 300 huesos, mientras que en un adulto suelen contarse 206. ¿A dónde fueron a parar los demás?",
+      "on_screen_text": "Nacemos con más huesos",
+      "visual_description": "Representación didáctica de ¿los bebés tienen más huesos?, secuencia causal clara y legible",
+      "image_prompt": "child's wax crayon drawing on white paper, naive shapes, bright colors, visible crayon strokes, cheerful sun, vertical 9:16, no text, educational visual scene illustrating ¿los bebés tienen más huesos?, consistent visual continuity",
+      "ambiente": "Ambiente discreto; voz al frente",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "crayones_infantiles"
+    },
+    {
+      "id": "scene_002",
+      "arc": "desarrollo",
+      "duration_seconds": 12,
+      "narration": "No desaparecen: durante el crecimiento, varias estructuras óseas se unen y forman huesos mayores. Es parte normal del desarrollo del esqueleto.",
+      "on_screen_text": "El mecanismo",
+      "visual_description": "Representación didáctica de ¿los bebés tienen más huesos?, secuencia causal clara y legible",
+      "image_prompt": "child's wax crayon drawing on white paper, naive shapes, bright colors, visible crayon strokes, cheerful sun, vertical 9:16, no text, educational visual scene illustrating ¿los bebés tienen más huesos?, consistent visual continuity",
+      "ambiente": "Ambiente discreto; voz al frente",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "crayones_infantiles",
+      "capa": {
+        "tipo": "mapa",
+        "titulo": "Rice University, Houston",
+        "puntos": [
+          {
+            "nombre": "Rice University, Houston",
+            "lat": 29.7174,
+            "lon": -95.4018
+          }
+        ],
+        "fuente": "OpenStax Anatomy & Physiology 2e, publicado por Rice University. OpenStax describe la fusión de huesos durante el desarrollo. El pin ubica Rice University, editora del recurso, no una población de estudio. Cartografía base: OpenStreetMap."
+      }
+    },
+    {
+      "id": "scene_003",
+      "arc": "desarrollo",
+      "duration_seconds": 12,
+      "narration": "Un ejemplo está en el cráneo. Al nacer, varios huesos están separados por espacios flexibles que permiten el crecimiento del cerebro y ayudan durante el parto.",
+      "on_screen_text": "Qué ocurre",
+      "visual_description": "Representación didáctica de ¿los bebés tienen más huesos?, secuencia causal clara y legible",
+      "image_prompt": "child's wax crayon drawing on white paper, naive shapes, bright colors, visible crayon strokes, cheerful sun, vertical 9:16, no text, educational visual scene illustrating ¿los bebés tienen más huesos?, consistent visual continuity",
+      "ambiente": "Ambiente discreto; voz al frente",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "crayones_infantiles",
+      "capa": {
+        "tipo": "dato",
+        "valor": "≈270–300 → 206",
+        "etiqueta": "Conteo aproximado de huesos al nacer y en la adultez",
+        "fuente": "OpenStax Anatomy & Physiology 2e, publicado por Rice University. https://openstax.org/books/anatomy-and-physiology-2e/pages/6-2-bone-classification. OpenStax describe la fusión de huesos durante el desarrollo. El pin ubica Rice University, editora del recurso, no una población de estudio."
+      }
+    },
+    {
+      "id": "scene_004",
+      "arc": "desarrollo",
+      "duration_seconds": 12,
+      "narration": "Con el tiempo, esas estructuras se fusionan. También ocurre en otras regiones del esqueleto, como la pelvis y la columna.",
+      "on_screen_text": "La evidencia",
+      "visual_description": "Representación didáctica de ¿los bebés tienen más huesos?, secuencia causal clara y legible",
+      "image_prompt": "child's wax crayon drawing on white paper, naive shapes, bright colors, visible crayon strokes, cheerful sun, vertical 9:16, no text, educational visual scene illustrating ¿los bebés tienen más huesos?, consistent visual continuity",
+      "ambiente": "Ambiente discreto; voz al frente",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "crayones_infantiles"
+    },
+    {
+      "id": "scene_005",
+      "arc": "desarrollo",
+      "duration_seconds": 12,
+      "narration": "El número exacto puede variar según cómo se cuenten algunas piezas pequeñas, pero la idea central es correcta: el esqueleto cambia mientras crecemos.",
+      "on_screen_text": "El matiz",
+      "visual_description": "Representación didáctica de ¿los bebés tienen más huesos?, secuencia causal clara y legible",
+      "image_prompt": "child's wax crayon drawing on white paper, naive shapes, bright colors, visible crayon strokes, cheerful sun, vertical 9:16, no text, educational visual scene illustrating ¿los bebés tienen más huesos?, consistent visual continuity",
+      "ambiente": "Ambiente discreto; voz al frente",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "crayones_infantiles"
+    },
+    {
+      "id": "scene_006",
+      "arc": "cierre_historia",
+      "duration_seconds": 10,
+      "narration": "Un matiz: el número exacto cambia según cómo se cuenten algunas piezas pequeñas. Lo importante no es la cifra, sino que los huesos se fusionan. La fusión ocurre en distintas etapas del desarrollo.",
+      "on_screen_text": "Qué sabemos",
+      "visual_description": "Representación didáctica de ¿los bebés tienen más huesos?, secuencia causal clara y legible",
+      "image_prompt": "child's wax crayon drawing on white paper, naive shapes, bright colors, visible crayon strokes, cheerful sun, vertical 9:16, no text, educational visual scene illustrating ¿los bebés tienen más huesos?, consistent visual continuity",
+      "ambiente": "Ambiente discreto; voz al frente",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "crayones_infantiles"
+    },
+    {
+      "id": "scene_007",
+      "arc": "reflexion_o_pregunta",
+      "duration_seconds": 10,
+      "narration": "No perdemos huesos al crecer: se unen como piezas de rompecabezas. ¿Sabías que tu cráneo empezó siendo varias piezas separadas? Esto fue Datos y ociosidades.",
+      "on_screen_text": "Esto fue Datos y ociosidades",
+      "visual_description": "Representación didáctica de ¿los bebés tienen más huesos?, secuencia causal clara y legible",
+      "image_prompt": "child's wax crayon drawing on white paper, naive shapes, bright colors, visible crayon strokes, cheerful sun, vertical 9:16, no text, educational visual scene illustrating ¿los bebés tienen más huesos?, consistent visual continuity",
+      "ambiente": "Ambiente discreto; voz al frente",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "crayones_infantiles"
+    }
+  ],
+  "cortinilla_fuentes": {
+    "duration_seconds": 6,
+    "titulo": "Fuentes",
+    "aviso": "Contenido realizado con apoyo de IA; declarar recursos sintéticos usados en versión final.",
+    "firma": "Datos y ociosidades",
+    "source_ids": [
+      "SRC-001"
+    ]
+  },
+  "audio": {
+    "music_asset": null,
+    "music_plan": "Cama discreta; selección y licencia por validar en montaje",
+    "music_license": null
+  },
+  "export": {
+    "resolution": "1080x1920",
+    "fps": 30,
+    "render_status": "NOT_GENERATED"
+  },
+  "publicacion": {
+    "status": "PENDIENTE_DECISION_GROK",
+    "platforms": [
+      "YouTube Shorts",
+      "TikTok",
+      "Facebook Reels"
+    ],
+    "note": "No publicar desde preproducción textual."
+  },
+  "estado": "PENDIENTE_REVISION_GROK",
+  "production_mode": "storyboard_only",
+  "validation_notes": [
+    "7 escenas; objetivo 78 s de narración + 6 s de cortinilla = 84 s."
+  ],
+  "linea_tematica_provisional": "Ciencia y naturaleza",
+  "approved_assets": [],
+  "risk_notes": [
+    "Mantener límites y matices de la fuente; no generalizar más allá de la evidencia."
+  ],
+  "thumbnail_source": "scene_001"
+}
