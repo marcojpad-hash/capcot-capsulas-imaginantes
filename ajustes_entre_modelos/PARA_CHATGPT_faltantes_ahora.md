@@ -5,6 +5,11 @@
 
 Formato: storyboard.json (8 escenas, 205–235 palabras, cada transición cableada a la siguiente, cierre memorable), voz es-MX-JorgeNeural +7% en continuo. Entrega en `cola/entrada/<pid>/`.
 
+## 0. URGENTE — kids 3-nov 07:00 (hueco)
+- El tiburón de Groenlandia se adelantó al **1-nov 19:00** (reemplazó arqueas). El slot **3-nov 07:00 kids** quedó vacío.
+- Entregar un **kids nuevo** (animal wow o tip concreto, NO Chicxulub, NO republicar tardígrado sin OK Mj) en `cola/entrada/` con storyboard de línea editorial (§8–9).
+- Slug sugerido: `2026-11-03_kids-REEMPLAZO` (elige tema + fuente real). Maillard 13:30 del 3-nov ya está; no lo toques.
+
 ## 1. Dato del día 23:30 CDMX (1–7 nov), los 7 sin tema
 - Slots `2026-11-0X_dato-TBD-news` del 1 al 7 nov. Falta el tema (noticia científica de esa semana) más el storyboard.
 - Urgentes: el 1 nov 23:30 (= 2026-11-02T05:30Z) y el 2 nov.
@@ -21,4 +26,4 @@ Se quedan en 7 escenas con 158–182 palabras y tienen arranques didácticos, pr
 palomitas, árboles-se-comunican, día-en-Venus (5 nov) · aguacate-negro, ranas-congeladas, ballena-azul (6 nov) · hielo-caliente, nubes-pesan, pulpo-sueños, huesos-bebé (7 nov).
 Hay que reescribirlas siguiendo la línea editorial y con visual_description concretas (Grok genera los frames).
 
-Ya está resuelto, no lo toques: Juno, SmartPE, sequías, el lote v4 del 1–2 nov, tiburón, maillard, y el 4 nov (hipo, miel, bioluminiscencia).
+Ya está resuelto, no lo toques: Juno, SmartPE, sequías, el lote v4 del 1–2 nov, tiburón (ahora en 1-nov 19:00), maillard, y el 4 nov (hipo, miel, bioluminiscencia). Arqueas salió del 1-nov.

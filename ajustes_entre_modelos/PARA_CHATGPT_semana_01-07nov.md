@@ -46,9 +46,9 @@ No inventes hashtags complicados. Imaginantes los pone simples. Tú enfócate en
 ## Ya cubierto — NO regenerar
 | Fecha | Slots | Proyectos |
 |---|---|---|
-| 1-nov | 07 / 13:30 / 17 / 19 | pulpo, cebolla, baffin, arqueas (YT+TT+FB) |
+| 1-nov | 07 / 13:30 / 17 / 19 | pulpo, cebolla, baffin, **tiburón** (arqueas fuera; YT+TT+FB) |
 | 2-nov | 07 / 13:30 / 17 / 19 | camaron-mantis, comida-pan-duro, murcielagos, sequias (YT+TT+FB) |
-| 3-nov | 17 / 19 | juno-choque-proa, smartpe-edicion-plantas (YT+TT+FB) |
+| 3-nov | 13:30 / 17 / 19 | maillard, juno, smartpe (YT+TT+FB). **07:00 kids HUECO** (tiburón movido a 1-nov 19:00) |
 
 Dato 23:30 = mismo día (≤48 h). **No preparar** por adelantado.
 Machu Picchu 4-nov 19:00 = pendiente OK de Mj. **No tocar.**
@@ -56,9 +56,9 @@ Machu Picchu 4-nov 19:00 = pendiente OK de Mj. **No tocar.**
 ## Pedir YA (prioridad en este orden)
 Meta Mj: mínimo **1–2 cápsulas/día**; kids+comida primero; intermedios si da tiempo; tips ciencia+hack bienvenidos.
 
-### 3-nov (faltan kids+comida)
-1. `2026-11-03_kids-tiburon-groenlandia` · 07:00 · El tiburón que puede vivir siglos · fuente: Nielsen et al. 2016 Science
-2. `2026-11-03_comida-maillard` · 13:30 · Lo dorado de la tortilla/pan: reacción de Maillard · ACS / Food Chemistry
+### 3-nov (falta kids 07:00; comida ya cubierta)
+1. `2026-11-03_kids-REEMPLAZO` · 07:00 · **NUEVO** kids animal wow / tip concreto (tiburón ya usado el 1-nov 19:00). Fuente real obligatoria. NO Chicxulub / NO tardígrado sin OK Mj.
+2. `2026-11-03_comida-maillard` · 13:30 · YA MONTADO — no regenerar
 
 ### 4-nov
 3. `2026-11-04_kids-hipo-por-que` · 07:00 · ¿Por qué nos da hipo?
