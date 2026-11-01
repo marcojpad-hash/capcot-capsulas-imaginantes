@@ -1,0 +1,236 @@
+{
+  "_schema": "CAPCOT_STORYBOARD_TEXT_V2",
+  "project_id": "2026-11-05_inter-arboles-mito-respiran",
+  "serie": "Datos y ociosidades",
+  "title": "¿Los árboles producen oxígeno de noche?",
+  "titulo": "El mito del árbol nocturno",
+  "language": "es-MX",
+  "aspect_ratio": "9:16",
+  "target_duration_seconds": 84,
+  "estructura": "pregunta",
+  "audience": "Público general",
+  "occasion": "Cápsula vertical de divulgación",
+  "resumen": "La fotosíntesis requiere luz; la respiración celular ocurre día y noche.",
+  "trend_source": {
+    "termino": "¿Los árboles producen oxígeno de noche?",
+    "fecha_publicacion": "",
+    "url": "https://www.fs.usda.gov/treesearch/"
+  },
+  "editorial_status": "PROPUESTA_PENDIENTE_DE_GROK",
+  "arco": {
+    "hook_medias_res": "Los árboles no apagan toda su actividad al anochecer. Sus células siguen respirando: usan oxígeno para obtener energía a partir de azúcares.",
+    "desarrollo": "Durante el día, si hay luz, también ocurre la fotosíntesis. En ese proceso la planta usa energía luminosa para fijar carbono y libera oxígeno. De noche, sin luz suficiente, la fotosíntesis se detiene, pero la respiración continúa. Por eso cambia el balance de gases entre el día y la noche. Eso no convierte a un árbol en una amenaza dentro de una habitación. La cantidad de oxígeno que consume una planta es diminuta frente al volumen de aire de un cuarto ventilado. El dato correcto no es que los árboles produzcan oxígeno de noche: es que respiran siempre y fotosintetizan cuando hay luz.",
+    "cierre_historia": "El mecanismo tiene límites y depende de las condiciones observadas. No conviene convertir una medición particular en una regla universal.",
+    "reflexion_o_pregunta": "Esto fue Datos y ociosidades."
+  },
+  "estilo_id": "satira_periodico",
+  "estilo_visual": "Sátira de periódico en tinta",
+  "visual_identity": {
+    "style_id": "satira_periodico",
+    "style_name": "Sátira de periódico en tinta",
+    "prompt_base": "editorial satirical newspaper cartoon, black ink crosshatching on newsprint, caricatured figures, newspaper columns layout, vertical 9:16, no text",
+    "palette": "Según catálogo",
+    "lighting": "Según prompt base",
+    "texture": "Según prompt base",
+    "composition": "Vertical 9:16; continuidad de sujeto y paleta",
+    "negative_prompt": "No texto generado, no marcas de agua, no datos falsos",
+    "reference_assets": [],
+    "seed": null,
+    "seed_policy": "Continuidad entre escenas"
+  },
+  "typography_identity": {
+    "font_family": "DejaVu Sans",
+    "font_weight": "700 para gancho; 400 para subtítulos",
+    "title_style": "Máximo seis palabras desde frame 0",
+    "subtitle_style": "Bloques de máximo tres palabras",
+    "hierarchy": "Gancho > dato > subtítulos",
+    "animation": "Un movimiento por plano; texto en postproducción"
+  },
+  "voice": {
+    "engine": "edge-tts",
+    "voice_id": "es-MX-JorgeNeural",
+    "language": "es-MX",
+    "rate": "+7%",
+    "pitch": "-2Hz",
+    "pad_seconds": 0.3,
+    "modo_pausas": "continuo"
+  },
+  "sources": [
+    {
+      "id": "SRC-001",
+      "cita_corta": "USDA Forest Service, recursos de fisiología vegetal.",
+      "url": "https://www.fs.usda.gov/treesearch/",
+      "doi": null,
+      "accessed": "2026-10-31",
+      "publication_date": "",
+      "supports": [
+        "La fotosíntesis requiere luz; la respiración celular ocurre día y noche."
+      ],
+      "verification_status": "VERIFICADO_RESOLVEDOR"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_001",
+      "arc": "hook_medias_res",
+      "duration_seconds": 10,
+      "narration": "Los árboles no apagan toda su actividad al anochecer. Sus células siguen respirando: usan oxígeno para obtener energía a partir de azúcares.",
+      "on_screen_text": "El mito del árbol nocturno",
+      "visual_description": "Representación didáctica de ¿los árboles producen oxígeno de noche?, secuencia causal clara y legible",
+      "image_prompt": "editorial satirical newspaper cartoon, black ink crosshatching on newsprint, caricatured figures, newspaper columns layout, vertical 9:16, no text, educational visual scene illustrating ¿los árboles producen oxígeno de noche?, consistent visual continuity",
+      "ambiente": "Ambiente discreto; voz al frente",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "satira_periodico"
+    },
+    {
+      "id": "scene_002",
+      "arc": "desarrollo",
+      "duration_seconds": 12,
+      "narration": "Durante el día, si hay luz, también ocurre la fotosíntesis. En ese proceso la planta usa energía luminosa para fijar carbono y libera oxígeno.",
+      "on_screen_text": "El mecanismo",
+      "visual_description": "Representación didáctica de ¿los árboles producen oxígeno de noche?, secuencia causal clara y legible",
+      "image_prompt": "editorial satirical newspaper cartoon, black ink crosshatching on newsprint, caricatured figures, newspaper columns layout, vertical 9:16, no text, educational visual scene illustrating ¿los árboles producen oxígeno de noche?, consistent visual continuity",
+      "ambiente": "Ambiente discreto; voz al frente",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "satira_periodico",
+      "capa": {
+        "tipo": "mapa",
+        "titulo": "University of Alberta, Edmonton",
+        "puntos": [
+          {
+            "nombre": "University of Alberta, Edmonton",
+            "lat": 53.5461,
+            "lon": -113.4938
+          }
+        ],
+        "fuente": "Afiliación de Justine Karst en el artículo citado. La fuente de fisiología vegetal citada describe respiración y fotosíntesis. El pin ubica Edmonton como afiliación de una autora de una revisión sobre redes micorrícicas, no un bosque donde se midió este proceso. Cartografía base: OpenStreetMap."
+      }
+    },
+    {
+      "id": "scene_003",
+      "arc": "desarrollo",
+      "duration_seconds": 12,
+      "narration": "De noche, sin luz suficiente, la fotosíntesis se detiene, pero la respiración continúa. Por eso cambia el balance de gases entre el día y la noche.",
+      "on_screen_text": "Qué ocurre",
+      "visual_description": "Representación didáctica de ¿los árboles producen oxígeno de noche?, secuencia causal clara y legible",
+      "image_prompt": "editorial satirical newspaper cartoon, black ink crosshatching on newsprint, caricatured figures, newspaper columns layout, vertical 9:16, no text, educational visual scene illustrating ¿los árboles producen oxígeno de noche?, consistent visual continuity",
+      "ambiente": "Ambiente discreto; voz al frente",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "satira_periodico",
+      "capa": {
+        "tipo": "dato",
+        "valor": "Día y noche",
+        "etiqueta": "Respiración celular continua; fotosíntesis requiere luz",
+        "fuente": "Afiliación de Justine Karst en el artículo citado. https://www.nature.com/articles/s41559-023-01986-1. La fuente de fisiología vegetal citada describe respiración y fotosíntesis. El pin ubica Edmonton como afiliación de una autora de una revisión sobre redes micorrícicas, no un bosque donde se midió este proceso."
+      }
+    },
+    {
+      "id": "scene_004",
+      "arc": "desarrollo",
+      "duration_seconds": 12,
+      "narration": "Eso no convierte a un árbol en una amenaza dentro de una habitación. La cantidad de oxígeno que consume una planta es diminuta frente al volumen de aire de un cuarto ventilado.",
+      "on_screen_text": "La evidencia",
+      "visual_description": "Representación didáctica de ¿los árboles producen oxígeno de noche?, secuencia causal clara y legible",
+      "image_prompt": "editorial satirical newspaper cartoon, black ink crosshatching on newsprint, caricatured figures, newspaper columns layout, vertical 9:16, no text, educational visual scene illustrating ¿los árboles producen oxígeno de noche?, consistent visual continuity",
+      "ambiente": "Ambiente discreto; voz al frente",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "satira_periodico"
+    },
+    {
+      "id": "scene_005",
+      "arc": "desarrollo",
+      "duration_seconds": 12,
+      "narration": "El dato correcto no es que los árboles produzcan oxígeno de noche: es que respiran siempre y fotosintetizan cuando hay luz suficiente.",
+      "on_screen_text": "El matiz",
+      "visual_description": "Representación didáctica de ¿los árboles producen oxígeno de noche?, secuencia causal clara y legible",
+      "image_prompt": "editorial satirical newspaper cartoon, black ink crosshatching on newsprint, caricatured figures, newspaper columns layout, vertical 9:16, no text, educational visual scene illustrating ¿los árboles producen oxígeno de noche?, consistent visual continuity",
+      "ambiente": "Ambiente discreto; voz al frente",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "satira_periodico"
+    },
+    {
+      "id": "scene_006",
+      "arc": "cierre_historia",
+      "duration_seconds": 10,
+      "narration": "Un matiz: el balance de gases cambia entre día y noche, pero el consumo nocturno de una planta es diminuto frente al aire de un cuarto ventilado.",
+      "on_screen_text": "Qué sabemos",
+      "visual_description": "Representación didáctica de ¿los árboles producen oxígeno de noche?, secuencia causal clara y legible",
+      "image_prompt": "editorial satirical newspaper cartoon, black ink crosshatching on newsprint, caricatured figures, newspaper columns layout, vertical 9:16, no text, educational visual scene illustrating ¿los árboles producen oxígeno de noche?, consistent visual continuity",
+      "ambiente": "Ambiente discreto; voz al frente",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "satira_periodico"
+    },
+    {
+      "id": "scene_007",
+      "arc": "reflexion_o_pregunta",
+      "duration_seconds": 10,
+      "narration": "Un árbol no se apaga de noche: deja de fabricar azúcares, pero sigue respirando para usarlos. ¿Qué otro mito de las plantas has escuchado? Esto fue Datos y ociosidades.",
+      "on_screen_text": "Esto fue Datos y ociosidades",
+      "visual_description": "Representación didáctica de ¿los árboles producen oxígeno de noche?, secuencia causal clara y legible",
+      "image_prompt": "editorial satirical newspaper cartoon, black ink crosshatching on newsprint, caricatured figures, newspaper columns layout, vertical 9:16, no text, educational visual scene illustrating ¿los árboles producen oxígeno de noche?, consistent visual continuity",
+      "ambiente": "Ambiente discreto; voz al frente",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "satira_periodico"
+    }
+  ],
+  "cortinilla_fuentes": {
+    "duration_seconds": 6,
+    "titulo": "Fuentes",
+    "aviso": "Contenido realizado con apoyo de IA; declarar recursos sintéticos usados en versión final.",
+    "firma": "Datos y ociosidades",
+    "source_ids": [
+      "SRC-001"
+    ]
+  },
+  "audio": {
+    "music_asset": null,
+    "music_plan": "Cama discreta; selección y licencia por validar en montaje",
+    "music_license": null
+  },
+  "export": {
+    "resolution": "1080x1920",
+    "fps": 30,
+    "render_status": "NOT_GENERATED"
+  },
+  "publicacion": {
+    "status": "PENDIENTE_DECISION_GROK",
+    "platforms": [
+      "YouTube Shorts",
+      "TikTok",
+      "Facebook Reels"
+    ],
+    "note": "No publicar desde preproducción textual."
+  },
+  "estado": "PENDIENTE_REVISION_GROK",
+  "production_mode": "storyboard_only",
+  "validation_notes": [
+    "7 escenas; objetivo 78 s de narración + 6 s de cortinilla = 84 s."
+  ],
+  "linea_tematica_provisional": "Ciencia y naturaleza",
+  "approved_assets": [],
+  "risk_notes": [
+    "Mantener límites y matices de la fuente; no generalizar más allá de la evidencia."
+  ],
+  "thumbnail_source": "scene_001"
+}
