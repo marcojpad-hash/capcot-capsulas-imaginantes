@@ -14,7 +14,7 @@
   "trend_source": {
     "termino": "¿Los árboles producen oxígeno de noche?",
     "fecha_publicacion": "",
-    "url": "https://www.fs.usda.gov/treesearch/"
+    "url": "https://extension.oregonstate.edu/es/gardening/flowers-shrubs-trees/plant-growth-development"
   },
   "editorial_status": "PROPUESTA_PENDIENTE_DE_GROK",
   "arco": {
@@ -58,15 +58,16 @@
   "sources": [
     {
       "id": "SRC-001",
-      "cita_corta": "USDA Forest Service, recursos de fisiología vegetal.",
-      "url": "https://www.fs.usda.gov/treesearch/",
+      "cita_corta": "Oregon State University Extension, Plant Growth and Development — Photosynthesis and Respiration.",
+      "url": "https://extension.oregonstate.edu/es/gardening/flowers-shrubs-trees/plant-growth-development",
       "doi": null,
-      "accessed": "2026-10-31",
+      "accessed": "2026-11-01",
       "publication_date": "",
       "supports": [
-        "La fotosíntesis requiere luz; la respiración celular ocurre día y noche."
+        "La fotosíntesis ocurre con luz; la respiración celular ocurre tanto con luz como en oscuridad.",
+        "La respiración utiliza oxígeno y libera dióxido de carbono."
       ],
-      "verification_status": "VERIFICADO_RESOLVEDOR"
+      "verification_status": "VERIFICADO_FUENTE_INSTITUCIONAL"
     }
   ],
   "scenes": [
@@ -101,15 +102,15 @@
       "style_id": "satira_periodico",
       "capa": {
         "tipo": "mapa",
-        "titulo": "University of Alberta, Edmonton",
+        "titulo": "Oregon State University, Corvallis",
         "puntos": [
           {
-            "nombre": "University of Alberta, Edmonton",
-            "lat": 53.5461,
-            "lon": -113.4938
+            "nombre": "Oregon State University, Corvallis",
+            "lat": 44.5638,
+            "lon": -123.2794
           }
         ],
-        "fuente": "Afiliación de Justine Karst en el artículo citado. La fuente de fisiología vegetal citada describe respiración y fotosíntesis. El pin ubica Edmonton como afiliación de una autora de una revisión sobre redes micorrícicas, no un bosque donde se midió este proceso. Cartografía base: OpenStreetMap."
+        "fuente": "Oregon State University Extension, Plant Growth and Development. El pin ubica la institución editora del recurso educativo, no un bosque ni un experimento de intercambio gaseoso. Cartografía base: OpenStreetMap."
       }
     },
     {
@@ -130,7 +131,7 @@
         "tipo": "dato",
         "valor": "Día y noche",
         "etiqueta": "Respiración celular continua; fotosíntesis requiere luz",
-        "fuente": "Afiliación de Justine Karst en el artículo citado. https://www.nature.com/articles/s41559-023-01986-1. La fuente de fisiología vegetal citada describe respiración y fotosíntesis. El pin ubica Edmonton como afiliación de una autora de una revisión sobre redes micorrícicas, no un bosque donde se midió este proceso."
+        "fuente": "Oregon State University Extension, Plant Growth and Development. La respiración celular ocurre tanto en luz como en oscuridad; la fotosíntesis requiere luz. https://extension.oregonstate.edu/es/gardening/flowers-shrubs-trees/plant-growth-development."
       }
     },
     {
