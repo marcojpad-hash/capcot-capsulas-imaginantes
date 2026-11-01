@@ -8,6 +8,7 @@
 Formato: storyboard.json (8 escenas, 205–235 palabras, cada transición cableada a la siguiente, cierre memorable), voz es-MX-JorgeNeural +7% en continuo. Entrega en `cola/entrada/<pid>/`.
 
 ## 0. URGENTE — kids 3-nov 07:00 (hueco)
+- **1-nov: Mj dio luz verde a Feynman en Brasil → brief completo en `PARA_CHATGPT_tema_feynman_brasil.md`** (va en este hueco; si no cabe, tip/dato).
 - El tiburón de Groenlandia se adelantó al **1-nov 19:00** (reemplazó arqueas). El slot **3-nov 07:00 kids** quedó vacío.
 - Entregar un **kids nuevo** (animal wow o tip concreto, NO Chicxulub, NO republicar tardígrado sin OK Mj) en `cola/entrada/` con storyboard de línea editorial (§8–9).
 - Slug sugerido: `2026-11-03_kids-REEMPLAZO` (elige tema + fuente real). Maillard 13:30 del 3-nov ya está; no lo toques.
