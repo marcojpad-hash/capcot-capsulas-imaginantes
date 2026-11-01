@@ -13,6 +13,22 @@
   "slots": [
     {
       "fecha": "2026-11-01",
+      "hora": "03:00",
+      "cesta": "dato_madrugada",
+      "project_id": "2026-11-01_dato-xolo-mictlan",
+      "estado": "programado_yt",
+      "notas": "Dato del día madrugada trend-aligned (Día de Muertos + perro). Fuentes INAH, Tula LAA, Drögemüller 2008 Science.",
+      "yt_id": "aZn5eTyiQPQ",
+      "publishAt": "2026-11-01T09:00:00Z",
+      "plataformas": {
+        "yt": "programado",
+        "tt": "pendiente_ui",
+        "fb": "pendiente_ui"
+      },
+      "mp4": "salidas/2026-11-01_dato-xolo-mictlan/capsula.mp4"
+    },
+    {
+      "fecha": "2026-11-01",
       "hora": "07:00",
       "cesta": "kids",
       "project_id": "2026-11-01_pulpo-tres-corazones",

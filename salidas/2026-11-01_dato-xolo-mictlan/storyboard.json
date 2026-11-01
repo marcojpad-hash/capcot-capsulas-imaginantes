@@ -1,0 +1,263 @@
+{
+ "_schema": "CAPCOT_STORYBOARD_TEXT_V2",
+ "serie": "Datos y ociosidades",
+ "language": "es-MX",
+ "aspect_ratio": "9:16",
+ "target_duration_seconds": 84,
+ "audience": "Público general",
+ "occasion": "Cápsula vertical de divulgación científica",
+ "editorial_status": "PROPUESTA_PENDIENTE_DE_GROK",
+ "typography_identity": {
+  "font_family": "DejaVu Sans",
+  "font_weight": "700 para gancho; 400 para subtítulos",
+  "title_style": "Máximo seis palabras; presente desde frame 0 en postproducción",
+  "subtitle_style": "Bloques de máximo tres palabras; zona segura inferior",
+  "hierarchy": "Gancho > dato/etiqueta > subtítulos",
+  "animation": "Un movimiento por plano; tipografía en postproducción"
+ },
+ "voice": {
+  "engine": "edge-tts",
+  "voice_id": "es-MX-JorgeNeural",
+  "language": "es-MX",
+  "rate": "+7%",
+  "pitch": "-2Hz",
+  "pad_seconds": 0.3,
+  "modo_pausas": "continuo"
+ },
+ "cortinilla_fuentes": {
+  "duration_seconds": 12,
+  "titulo": "Fuentes",
+  "aviso": "Imágenes generadas con IA, voz sintética y audio sintetizado.",
+  "firma": "Datos y ociosidades"
+ },
+ "audio": {
+  "music_asset": "sintetico:pulso",
+  "music_plan": "Pendiente de selección/generación por Grok en producción; ambiente discreto, sin efectos engañosos.",
+  "music_license": "Generada por script (cama_sonora), sin licencia de terceros"
+ },
+ "export": {
+  "resolution": "1080x1920",
+  "fps": 30,
+  "render_status": "NOT_GENERATED"
+ },
+ "publicacion": {
+  "status": "PENDIENTE_DECISION_GROK",
+  "platforms": [
+   "YouTube Shorts",
+   "TikTok",
+   "Facebook Reels"
+  ],
+  "note": "No publicar ni programar desde preproducción textual."
+ },
+ "estado": "PENDIENTE_REVISION_GROK",
+ "production_mode": "storyboard_only",
+ "validation_notes": [],
+ "approved_assets": [],
+ "risk_notes": [],
+ "project_id": "2026-11-01_dato-xolo-mictlan",
+ "title": "El perro que guía a los muertos",
+ "titulo": "El perro guía de almas",
+ "estructura": "pregunta",
+ "resumen": "Xoloitzcuintle: guía de almas al Mictlán en la tradición mexica; su falta de pelo se debe a una mutación dominante en FOXI3, letal en doble copia.",
+ "trend_source": {
+  "termino": "Día de Muertos / xoloitzcuintle / perro (Google Trends MX top 30-oct)",
+  "fecha_publicacion": "2026-11-01",
+  "url": "https://www.inah.gob.mx/foto-del-dia/xoloitzcuintle-companero-en-el-viaje-al-mictlan"
+ },
+ "arco": {
+  "hook_medias_res": "Según la tradición mexica, esta noche un perro sin pelo espera junto a un río oscuro. Su trabajo: ayudar a tu alma a cruzar. Pero la ciencia encontró algo todavía más raro en él.",
+  "desarrollo": "Es el xoloitzcuintle. Diversas fuentes históricas cuentan que acompañaba a los muertos hacia el Mictlán, y que los ayudaba a cruzar el río donde empezaba el viaje por el inframundo. Por eso aparece en ofrendas y entierros. En Tula, Hidalgo, arqueólogos estudiaron veintisiete perros enterrados hace unos mil trescientos años. Entre ellos había perros pelones. Ahora lo raro. En 2008, un equipo de genetistas encontró por qué no tiene pelo: una mutación en un solo gen, llamado FOXI3. Con una copia, el perro nace pelón y con dientes incompletos. Pero si un cachorro hereda dos copias de esa mutación, no sobrevive: muere antes de nacer. Por eso, cuando se cruzan dos xolos pelones, en la camada siempre aparecen cachorros con pelo.",
+  "cierre_historia": "Ojo: lo del guía de almas viene de crónicas y creencias, no de un experimento. Lo que sí se midió en el laboratorio es su gen y cómo se hereda.",
+  "reflexion_o_pregunta": "La sorpresa no es que sea pelón, es que ser pelón depende de tener exactamente una copia. ¿Tú pondrías un xolo en tu ofrenda? Esto fue Datos y ociosidades."
+ },
+ "estilo_id": "teatro_sombras",
+ "estilo_visual": "Teatro de sombras retroiluminado",
+ "visual_identity": {
+  "style_id": "carton_recortado",
+  "style_name": "Figuras de cartón recortado",
+  "prompt_base": "handmade figures cut from corrugated cardboard, raw torn edges, marker details, photographed on a table with soft light, vertical 9:16, no text",
+  "palette": "cartón natural, tinta negra y acentos azul marino",
+  "lighting": "Luz suave de mesa",
+  "texture": "Cartón corrugado y bordes rasgados",
+  "composition": "Maqueta anatómica por capas, órganos claramente diferenciados, continuidad entre escenas",
+  "negative_prompt": "No anatomía humana aplicada al pulpo, no corazones extra, no sangre dramática, no etiquetas generadas",
+  "reference_assets": [],
+  "seed": null,
+  "seed_policy": "Conservar el mismo pulpo de maqueta, proporciones y paleta en las ocho escenas; diferenciar claramente los tres corazones."
+ },
+ "sources": [
+  {
+   "id": "SRC-001",
+   "cita_corta": "INAH. Xoloitzcuintle: compañero en el viaje al Mictlán.",
+   "url": "https://www.inah.gob.mx/foto-del-dia/xoloitzcuintle-companero-en-el-viaje-al-mictlan",
+   "doi": null,
+   "accessed": "2026-10-31",
+   "publication_date": null,
+   "supports": [
+    "Guía de almas al Mictlán, cruce del río"
+   ],
+   "verification_status": "VERIFICADO_RESOLVEDOR"
+  },
+  {
+   "id": "SRC-002",
+   "cita_corta": "Valadez et al. Entierros de perros descubiertos en la antigua ciudad de Tula. Latin American Antiquity.",
+   "url": "https://www.cambridge.org/core/journals/latin-american-antiquity/article/abs/entierros-de-perros-descubiertos-en-la-antigua-ciudad-de-tula/B0A13016232B94017F45A49403E375CD",
+   "doi": null,
+   "accessed": "2026-10-31",
+   "publication_date": null,
+   "supports": [
+    "27 perros, 650-750 d.C., incluye perro pelón"
+   ],
+   "verification_status": "VERIFICADO_RESOLVEDOR"
+  },
+  {
+   "id": "SRC-003",
+   "cita_corta": "Drögemüller C. et al. (2008). A mutation in hairless dogs implicates FOXI3 in ectodermal development. Science 321:1462.",
+   "url": "https://doi.org/10.1126/science.1162525",
+   "doi": "10.1126/science.1162525",
+   "accessed": "2026-10-31",
+   "publication_date": "2008-09-12",
+   "supports": [
+    "Mutación FOXI3 dominante: sin pelo y dentición anómala; homocigotos letales embrionarios"
+   ],
+   "verification_status": "VERIFICADO_RESOLVEDOR"
+  }
+ ],
+ "scenes": [
+  {
+   "id": "scene_001",
+   "arc": "hook_medias_res",
+   "duration_seconds": 11,
+   "narration": "Según la tradición mexica, esta noche un perro sin pelo espera junto a un río oscuro. Su trabajo: ayudar a tu alma a cruzar. Pero la ciencia encontró algo todavía más raro en él.",
+   "on_screen_text": "El perro guía de almas",
+   "visual_description": "El perro guía de almas",
+   "image_prompt": "shadow puppet theater, black paper cut silhouettes backlit by warm amber light, layered cut paper scenery, ornate wooden stage frame, vertical 9:16, no text",
+   "ambiente": "viento",
+   "sfx": [
+    "viento"
+   ],
+   "source_ids": [
+    "SRC-001",
+    "SRC-002",
+    "SRC-003"
+   ],
+   "style_id": "teatro_sombras",
+   "asset_filename": "frames/s1.jpg"
+  },
+  {
+   "id": "scene_002",
+   "arc": "desarrollo",
+   "duration_seconds": 11,
+   "narration": "Es el xoloitzcuintle. Diversas fuentes históricas cuentan que acompañaba a los muertos hacia el Mictlán, y que los ayudaba a cruzar el río donde empezaba el viaje por el inframundo.",
+   "on_screen_text": "Rumbo al Mictlán",
+   "visual_description": "Rumbo al Mictlán",
+   "image_prompt": "shadow puppet theater, black paper cut silhouettes backlit by warm amber light, layered cut paper scenery, ornate wooden stage frame, vertical 9:16, no text",
+   "ambiente": "viento",
+   "sfx": [],
+   "source_ids": [
+    "SRC-001",
+    "SRC-002",
+    "SRC-003"
+   ],
+   "style_id": "teatro_sombras",
+   "asset_filename": "frames/s2.jpg"
+  },
+  {
+   "id": "scene_003",
+   "arc": "desarrollo",
+   "duration_seconds": 11,
+   "narration": "Por eso aparece en ofrendas y entierros. En Tula, Hidalgo, arqueólogos estudiaron veintisiete perros enterrados hace unos mil trescientos años. Entre ellos había perros pelones.",
+   "on_screen_text": "27 perros enterrados",
+   "visual_description": "27 perros enterrados",
+   "image_prompt": "shadow puppet theater, black paper cut silhouettes backlit by warm amber light, layered cut paper scenery, ornate wooden stage frame, vertical 9:16, no text",
+   "ambiente": "viento",
+   "sfx": [],
+   "source_ids": [
+    "SRC-001",
+    "SRC-002",
+    "SRC-003"
+   ],
+   "style_id": "teatro_sombras",
+   "asset_filename": "frames/s3.jpg"
+  },
+  {
+   "id": "scene_004",
+   "arc": "desarrollo",
+   "duration_seconds": 11,
+   "narration": "Ahora lo raro. En 2008, un equipo de genetistas encontró por qué no tiene pelo: una mutación en un solo gen, llamado FOXI3. Con una copia, el perro nace pelón y con dientes incompletos.",
+   "on_screen_text": "Un solo gen",
+   "visual_description": "Un solo gen",
+   "image_prompt": "shadow puppet theater, black paper cut silhouettes backlit by warm amber light, layered cut paper scenery, ornate wooden stage frame, vertical 9:16, no text",
+   "ambiente": "viento",
+   "sfx": [],
+   "source_ids": [
+    "SRC-001",
+    "SRC-002",
+    "SRC-003"
+   ],
+   "style_id": "teatro_sombras",
+   "asset_filename": "frames/s4.jpg"
+  },
+  {
+   "id": "scene_005",
+   "arc": "desarrollo",
+   "duration_seconds": 11,
+   "narration": "Pero si un cachorro hereda dos copias de esa mutación, no sobrevive: muere antes de nacer. Por eso, cuando se cruzan dos xolos pelones, en la camada siempre aparecen cachorros con pelo.",
+   "on_screen_text": "Cachorros con pelo",
+   "visual_description": "Cachorros con pelo",
+   "image_prompt": "shadow puppet theater, black paper cut silhouettes backlit by warm amber light, layered cut paper scenery, ornate wooden stage frame, vertical 9:16, no text",
+   "ambiente": "viento",
+   "sfx": [],
+   "source_ids": [
+    "SRC-001",
+    "SRC-002",
+    "SRC-003"
+   ],
+   "style_id": "teatro_sombras",
+   "asset_filename": "frames/s5.jpg"
+  },
+  {
+   "id": "scene_006",
+   "arc": "cierre_historia",
+   "duration_seconds": 11,
+   "narration": "Ojo: lo del guía de almas viene de crónicas y creencias, no de un experimento. Lo que sí se midió en el laboratorio es su gen y cómo se hereda.",
+   "on_screen_text": "Creencia vs. gen",
+   "visual_description": "Creencia vs. gen",
+   "image_prompt": "shadow puppet theater, black paper cut silhouettes backlit by warm amber light, layered cut paper scenery, ornate wooden stage frame, vertical 9:16, no text",
+   "ambiente": "viento",
+   "sfx": [],
+   "source_ids": [
+    "SRC-001",
+    "SRC-002",
+    "SRC-003"
+   ],
+   "style_id": "teatro_sombras",
+   "asset_filename": "frames/s1.jpg"
+  },
+  {
+   "id": "scene_007",
+   "arc": "reflexion_o_pregunta",
+   "duration_seconds": 11,
+   "narration": "La sorpresa no es que sea pelón, es que ser pelón depende de tener exactamente una copia. ¿Tú pondrías un xolo en tu ofrenda? Esto fue Datos y ociosidades.",
+   "on_screen_text": "¿Xolo en tu ofrenda?",
+   "visual_description": "¿Xolo en tu ofrenda?",
+   "image_prompt": "shadow puppet theater, black paper cut silhouettes backlit by warm amber light, layered cut paper scenery, ornate wooden stage frame, vertical 9:16, no text",
+   "ambiente": "viento",
+   "sfx": [
+    "campanas"
+   ],
+   "source_ids": [
+    "SRC-001",
+    "SRC-002",
+    "SRC-003"
+   ],
+   "style_id": "teatro_sombras",
+   "asset_filename": "frames/s4.jpg"
+  }
+ ],
+ "linea_tematica_provisional": "Naturaleza / anatomía animal",
+ "keywords": [
+  "xoloitzcuintle"
+ ],
+ "thumbnail_source": "scene_001"
+}

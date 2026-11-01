@@ -1,0 +1,49 @@
+{
+ "project_id": "2026-11-01_dato-xolo-mictlan",
+ "musica": {
+  "cama": "pulso",
+  "origen": "síntesis propia (scripts/cama_sonora.py, numpy)",
+  "licencia": "obra propia de Datos y ociosidades",
+  "generada_por_ia": false
+ },
+ "sfx": {
+  "campanas": {
+   "archivo": "campanas.oga",
+   "commons": "File:Church bells - Leverkusen, 2007.oga",
+   "autor": "natalie",
+   "licencia": "Public domain",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/3/36/Church_bells_-_Leverkusen%2C_2007.oga?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Church_bells_-_Leverkusen,_2007.oga",
+   "licencia_verificada": "Public domain"
+  },
+  "viento": {
+   "archivo": "viento.ogg",
+   "commons": "File:Howling wind.ogg",
+   "autor": "Tvabutzku1234",
+   "licencia": "CC0",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Howling_wind.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Howling_wind.ogg",
+   "licencia_verificada": "CC0"
+  }
+ },
+ "imagenes": {
+  "origen": "generadas con IA (ilustración no realista)",
+  "estilo": "teatro_sombras",
+  "realista": false
+ },
+ "voz": {
+  "motor": "Microsoft Edge TTS",
+  "voz": "es-MX-JorgeNeural",
+  "nota": "voz sintética; no imita a una persona real"
+ },
+ "capas_datos": {
+  "tipos": [],
+  "mapa_base": null,
+  "render": "matplotlib (propio)"
+ },
+ "fuentes_datos": [
+  "https://www.inah.gob.mx/foto-del-dia/xoloitzcuintle-companero-en-el-viaje-al-mictlan",
+  "https://www.cambridge.org/core/journals/latin-american-antiquity/article/abs/entierros-de-perros-descubiertos-en-la-antigua-ciudad-de-tula/B0A13016232B94017F45A49403E375CD",
+  "https://doi.org/10.1126/science.1162525"
+ ]
+}
