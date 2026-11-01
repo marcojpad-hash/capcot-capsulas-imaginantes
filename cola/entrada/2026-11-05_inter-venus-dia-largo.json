@@ -1,0 +1,236 @@
+{
+  "_schema": "CAPCOT_STORYBOARD_TEXT_V2",
+  "project_id": "2026-11-05_inter-venus-dia-largo",
+  "serie": "Datos y ociosidades",
+  "title": "Venus: un día más largo que su año",
+  "titulo": "Un día que dura más",
+  "language": "es-MX",
+  "aspect_ratio": "9:16",
+  "target_duration_seconds": 84,
+  "estructura": "pregunta",
+  "audience": "Público general",
+  "occasion": "Cápsula vertical de divulgación",
+  "resumen": "Rotación sideral retrógrada de 243 días terrestres y órbita de 224.7 días.",
+  "trend_source": {
+    "termino": "Venus: un día más largo que su año",
+    "fecha_publicacion": "",
+    "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/venusfact.html"
+  },
+  "editorial_status": "PROPUESTA_PENDIENTE_DE_GROK",
+  "arco": {
+    "hook_medias_res": "Venus gira muy lentamente y en sentido retrógrado; su rotación sideral dura más que su traslación alrededor del Sol.",
+    "desarrollo": "Venus tarda unos 243 días terrestres en completar una vuelta sobre su eje, mientras que su año dura cerca de 225 días. La comparación depende de distinguir día sideral y día solar.  El mecanismo depende de condiciones físicas y biológicas concretas; no conviene convertir una observación limitada en una regla para todos los casos. La evidencia permite describir el proceso, pero también obliga a separar lo observado de lo que todavía no se puede concluir.",
+    "cierre_historia": "La clave está en entender el mecanismo y sus límites, no solo repetir el dato sorprendente.",
+    "reflexion_o_pregunta": "Esto fue Datos y ociosidades."
+  },
+  "estilo_id": "constructivista_ruso",
+  "estilo_visual": "Stencil constructivista ruso",
+  "visual_identity": {
+    "style_id": "constructivista_ruso",
+    "style_name": "Stencil constructivista ruso",
+    "prompt_base": "Russian constructivist propaganda photomontage, red and black on aged paper, bold diagonals, stencil shapes, grainy halftone photo, vertical 9:16, no text",
+    "palette": "Según catálogo",
+    "lighting": "Consistente con prompt_base",
+    "texture": "Consistente con prompt_base",
+    "composition": "Vertical 9:16; continuidad de sujeto, escala y paleta",
+    "negative_prompt": "No texto generado, no marcas de agua, no afirmaciones visuales falsas, no anatomía incorrecta",
+    "reference_assets": [],
+    "seed": null,
+    "seed_policy": "Continuidad entre escenas; variación de plano sin cambiar identidad visual"
+  },
+  "typography_identity": {
+    "font_family": "DejaVu Sans",
+    "font_weight": "700 para gancho; 400 para subtítulos",
+    "title_style": "Máximo seis palabras desde frame 0",
+    "subtitle_style": "Bloques de máximo tres palabras",
+    "hierarchy": "Gancho > dato > subtítulos",
+    "animation": "Un movimiento por plano; texto en postproducción"
+  },
+  "voice": {
+    "engine": "edge-tts",
+    "voice_id": "es-MX-JorgeNeural",
+    "language": "es-MX",
+    "rate": "+7%",
+    "pitch": "-2Hz",
+    "pad_seconds": 0.3,
+    "modo_pausas": "continuo"
+  },
+  "sources": [
+    {
+      "id": "SRC-001",
+      "cita_corta": "Venus factsheet. NASA NSSDC.",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/venusfact.html",
+      "doi": null,
+      "accessed": "2026-10-31",
+      "publication_date": "",
+      "supports": [
+        "Rotación sideral retrógrada de 243 días terrestres y órbita de 224.7 días."
+      ],
+      "verification_status": "VERIFICADO_RESOLVEDOR"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_001",
+      "arc": "hook_medias_res",
+      "duration_seconds": 10,
+      "narration": "Venus gira muy lentamente y en sentido retrógrado; su rotación sideral dura más que su traslación alrededor del Sol.",
+      "on_screen_text": "Un día que dura más",
+      "visual_description": "Representación didáctica de venus: un día más largo que su año, con secuencia visual causal y sin rótulos incrustados",
+      "image_prompt": "Russian constructivist propaganda photomontage, red and black on aged paper, bold diagonals, stencil shapes, grainy halftone photo, vertical 9:16, no text, clear educational illustration showing venus: un día más largo que su año, causal sequence, consistent scene design",
+      "ambiente": "Cama sonora discreta; voz al frente",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "constructivista_ruso"
+    },
+    {
+      "id": "scene_002",
+      "arc": "desarrollo",
+      "duration_seconds": 12,
+      "narration": "Venus tarda unos 243 días terrestres en completar una vuelta sobre su eje, mientras que su órbita alrededor del Sol dura cerca de 225 días.",
+      "on_screen_text": "El mecanismo",
+      "visual_description": "Representación didáctica de venus: un día más largo que su año, con secuencia visual causal y sin rótulos incrustados",
+      "image_prompt": "Russian constructivist propaganda photomontage, red and black on aged paper, bold diagonals, stencil shapes, grainy halftone photo, vertical 9:16, no text, clear educational illustration showing venus: un día más largo que su año, causal sequence, consistent scene design",
+      "ambiente": "Cama sonora discreta; voz al frente",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "constructivista_ruso",
+      "capa": {
+        "tipo": "mapa",
+        "titulo": "NASA Goddard Space Flight Center, Greenbelt",
+        "puntos": [
+          {
+            "nombre": "NASA Goddard Space Flight Center, Greenbelt",
+            "lat": 38.9955,
+            "lon": -76.8547
+          }
+        ],
+        "fuente": "NASA NSSDC Venus Fact Sheet. NASA NSSDC: 243 días de rotación sideral y 224.7 días de órbita. El pin ubica la institución NASA Goddard asociada al recurso, no a Venus. Cartografía base: OpenStreetMap."
+      }
+    },
+    {
+      "id": "scene_003",
+      "arc": "desarrollo",
+      "duration_seconds": 12,
+      "on_screen_text": "Qué ocurre",
+      "visual_description": "Representación didáctica de venus: un día más largo que su año, con secuencia visual causal y sin rótulos incrustados",
+      "image_prompt": "Russian constructivist propaganda photomontage, red and black on aged paper, bold diagonals, stencil shapes, grainy halftone photo, vertical 9:16, no text, clear educational illustration showing venus: un día más largo que su año, causal sequence, consistent scene design",
+      "ambiente": "Cama sonora discreta; voz al frente",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "constructivista_ruso",
+      "narration": "Es decir, Venus termina una vuelta completa al Sol antes de completar una sola vuelta sobre sí mismo. Además gira en sentido contrario a la Tierra.",
+      "capa": {
+        "tipo": "dato",
+        "valor": "243 días",
+        "etiqueta": "Rotación sideral frente a 224.7 días de órbita",
+        "fuente": "NASA NSSDC Venus Fact Sheet. https://nssdc.gsfc.nasa.gov/planetary/factsheet/venusfact.html. NASA NSSDC: 243 días de rotación sideral y 224.7 días de órbita. El pin ubica la institución NASA Goddard asociada al recurso, no a Venus."
+      }
+    },
+    {
+      "id": "scene_004",
+      "arc": "desarrollo",
+      "duration_seconds": 12,
+      "narration": "Por eso hablamos de rotación sideral: el giro medido respecto a las estrellas lejanas. Con esa medida, su día es más largo que su año.",
+      "on_screen_text": "La evidencia",
+      "visual_description": "Representación didáctica de venus: un día más largo que su año, con secuencia visual causal y sin rótulos incrustados",
+      "image_prompt": "Russian constructivist propaganda photomontage, red and black on aged paper, bold diagonals, stencil shapes, grainy halftone photo, vertical 9:16, no text, clear educational illustration showing venus: un día más largo que su año, causal sequence, consistent scene design",
+      "ambiente": "Cama sonora discreta; voz al frente",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "constructivista_ruso"
+    },
+    {
+      "id": "scene_005",
+      "arc": "desarrollo",
+      "duration_seconds": 12,
+      "narration": "Esa lentitud, sumada al giro retrógrado, vuelve engañosa cualquier comparación con la Tierra si no se aclara qué se está midiendo.",
+      "on_screen_text": "El matiz",
+      "visual_description": "Representación didáctica de venus: un día más largo que su año, con secuencia visual causal y sin rótulos incrustados",
+      "image_prompt": "Russian constructivist propaganda photomontage, red and black on aged paper, bold diagonals, stencil shapes, grainy halftone photo, vertical 9:16, no text, clear educational illustration showing venus: un día más largo que su año, causal sequence, consistent scene design",
+      "ambiente": "Cama sonora discreta; voz al frente",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "constructivista_ruso"
+    },
+    {
+      "id": "scene_006",
+      "arc": "cierre_historia",
+      "duration_seconds": 10,
+      "narration": "Un matiz: el día que veríamos de amanecer a amanecer, llamado día solar, es otra medida distinta. Para comparar hay que aclarar de qué día hablamos.",
+      "on_screen_text": "Qué sí sabemos",
+      "visual_description": "Representación didáctica de venus: un día más largo que su año, con secuencia visual causal y sin rótulos incrustados",
+      "image_prompt": "Russian constructivist propaganda photomontage, red and black on aged paper, bold diagonals, stencil shapes, grainy halftone photo, vertical 9:16, no text, clear educational illustration showing venus: un día más largo que su año, causal sequence, consistent scene design",
+      "ambiente": "Cama sonora discreta; voz al frente",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "constructivista_ruso"
+    },
+    {
+      "id": "scene_007",
+      "arc": "reflexion_o_pregunta",
+      "duration_seconds": 10,
+      "narration": "En Venus, un día sobre su eje dura más que un año alrededor del Sol. ¿Cómo organizarías tu calendario en un planeta así? Esto fue Datos y ociosidades.",
+      "on_screen_text": "Esto fue Datos y ociosidades",
+      "visual_description": "Representación didáctica de venus: un día más largo que su año, con secuencia visual causal y sin rótulos incrustados",
+      "image_prompt": "Russian constructivist propaganda photomontage, red and black on aged paper, bold diagonals, stencil shapes, grainy halftone photo, vertical 9:16, no text, clear educational illustration showing venus: un día más largo que su año, causal sequence, consistent scene design",
+      "ambiente": "Cama sonora discreta; voz al frente",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "constructivista_ruso"
+    }
+  ],
+  "cortinilla_fuentes": {
+    "duration_seconds": 6,
+    "titulo": "Fuentes",
+    "aviso": "Contenido producido con apoyo de IA; declarar medios sintéticos usados en versión final.",
+    "firma": "Datos y ociosidades",
+    "source_ids": [
+      "SRC-001"
+    ]
+  },
+  "audio": {
+    "music_asset": null,
+    "music_plan": "Selección musical en montaje por Grok; licencia por verificar antes de publicar",
+    "music_license": null
+  },
+  "export": {
+    "resolution": "1080x1920",
+    "fps": 30,
+    "render_status": "NOT_GENERATED"
+  },
+  "publicacion": {
+    "status": "PENDIENTE_DECISION_GROK",
+    "platforms": [
+      "YouTube Shorts",
+      "TikTok",
+      "Facebook Reels"
+    ],
+    "note": "No publicar desde preproducción textual."
+  },
+  "estado": "PENDIENTE_REVISION_GROK",
+  "production_mode": "storyboard_only",
+  "validation_notes": [
+    "7 escenas; objetivo 78 s de narración más cortinilla de 6 s = 84 s."
+  ],
+  "linea_tematica_provisional": "Ciencia y naturaleza",
+  "approved_assets": [],
+  "risk_notes": [
+    "Conservar los límites de interpretación indicados en fuentes."
+  ],
+  "thumbnail_source": "scene_001"
+}
