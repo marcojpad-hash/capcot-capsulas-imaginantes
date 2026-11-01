@@ -62,6 +62,8 @@ Los JSON de \`data/\` son registros operativos y pueden estar incompletos. No de
 - ChatGPT no modifica, completa ni inventa registros en \`data/*.json\`.
 
 ## Storyboard diario
+
+Completar `narrative_contract` antes de escribir escenas: `central_question`, `promise`, `stakes`, `scientific_turn`, `evidence_limit` y `payoff`. El auditor oculta este objeto durante la lectura en frío; la narración debe sostenerse por sí sola.
 Desarrollar un candidato principal para Grok:
 - 9:16; 75–90 s totales, incluidos seis segundos de cortinilla.
 - 170–235 palabras de narración; 7–9 escenas.
