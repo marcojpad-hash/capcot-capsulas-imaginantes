@@ -1,4 +1,4 @@
-# Plan maestro operativo CAPCOT — vigente 2026-10-31
+# Plan maestro operativo CAPCOT — vigente 2026-11-01
 
 > Autoridad de investigación, preproducción y rotación. La autoridad superior para responsabilidades entre agentes, cupos y handoff es \`docs/CONTRATO_OPERATIVO_UNIFICADO.md\`; este Plan rige los detalles editoriales y técnicos de ChatGPT. Las instrucciones de producción integral anteriores, archivadas en \`docs/obsoleto/2026-10-31/\`, son legado.
 
@@ -82,7 +82,7 @@ Crear exactamente:
 1. docs/briefs/YYYY-MM-DD_RADAR_CAPCOT.md: 3–5 candidatos, Trends, fallos/fallbacks, límites y recomendación.
 2. proyectos/YYYY-MM-DD_slug/storyboard.json: borrador completo con fuentes incorporadas en el propio JSON.
 
-El investigador no escribe en cola/entrada/. El auditor independiente realiza la lectura narrativa en frío y solo promueve el JSON a cola/entrada/<project_id>/storyboard.json si narrative_qa.status=PASS, score >=85, los siete checks son true y critical_flags=[]. Si falla o no existe revisor independiente, permanece fuera de la cola. Los paquetes heredados que fallen se mueven a cola/bloqueados/<project_id>/storyboard.json, preservando su contenido. Ver docs/QA_NARRATIVO_EN_FRIO.md.
+El investigador no escribe en cola/entrada/. El auditor independiente realiza la lectura narrativa en frío y solo promueve el JSON a cola/entrada/<project_id>.json si narrative_qa.status=PASS, score >=85, los siete checks son true y critical_flags=[]. Si falla o no existe revisor independiente, permanece fuera de la cola. Los paquetes heredados que fallen se mueven a cola/bloqueados/<project_id>/storyboard.json, preservando su contenido. Ver docs/QA_NARRATIVO_EN_FRIO.md.
 
 No crear un archivo de fuentes separado salvo petición expresa.
 
