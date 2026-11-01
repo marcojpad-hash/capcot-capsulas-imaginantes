@@ -157,3 +157,12 @@ El borrador abre con la anomalía de frecuencia ya en curso y su contrato narrat
 ### Corrección de conteo y alcance científico — 14:36 CDMX
 
 Una lectura posterior del storyboard actualizado devuelve **196 palabras**, no 190; el radar ya fue corregido mediante el commit `089e55f6d837703c936eab50adfd541bb3ed94ea`. La versión actual conserva 8 escenas y 84 s (78 + 6). El contrato narrativo ahora explicita el posible desgaste de turbinas hidroeléctricas en Escandinavia cuando las oscilaciones son intensas. Ese claim requiere contraste directo con el artículo, cuyo DOI continúa PENDIENTE; no se presenta como validado por el comunicado institucional. El borrador sigue sin `narrative_qa` y fuera de cola.
+
+
+## 10. Cierre verificado del run investigador
+
+El run `eb74bc97-0478-832c-a823-25af9adab923` terminó a las 14:37:23 CDMX. Su resultado final declara exactamente dos entregables y ambos se releyeron desde GitHub:
+- Radar: commit `089e55f6d837703c936eab50adfd541bb3ed94ea`.
+- Borrador `proyectos/2026-11-01_red-electrica-pulso-minuto/storyboard.json`: commit `bbd1b3d4efca889856bdbd2cad9dc1bcbe64cb7a`.
+
+El borrador queda en proyectos, no en cola; 8 escenas, 196 palabras, 84 s, contrato narrativo completo, tres capas de datos, mapa de referencia, sin assets aprobados ni medios. Los cinco DOI del radar siguen PENDIENTES de validación directa. No se añadió `narrative_qa`; corresponde al auditor. No se marca preparado ni aceptado por Grok.
