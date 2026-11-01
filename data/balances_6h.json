@@ -1052,5 +1052,60 @@
    ]
   ],
   "nota_flujo": "Lo de 27–28-oct (Titanoboa, lince, anfibio, UNAM, pan de muerto, Templo) cargó casi todo el crecimiento; los viejos (abejas, bacteria, reina, hongo, Osedax, El Niño, serpientes que ruedan) quedaron planos (+3 a +14 en 3 días). Voyager solo 21 vistas desde 28-oct (estancado). Hoy: Corneja (07:00) 3 vistas y Corales 4 a las 14:12 — arranque flojo. Subs 41→63, TT seguidores 3→15."
+ },
+ {
+  "hora_cdmx": "2026-10-31T20:09-06:00",
+  "base_youtube": "2026-10-31T14:12",
+  "base_tiktok": "2026-10-31T14:12",
+  "youtube_totales": {
+   "view": 23848,
+   "like": 800,
+   "comment": 24
+  },
+  "suscriptores": 63,
+  "shorts_publicos": 30,
+  "delta_youtube": {
+   "view": 183,
+   "like": 2,
+   "comment": 0,
+   "suscriptores": 0
+  },
+  "tiktok_totales": null,
+  "seguidores_tiktok": 15,
+  "likes_perfil_tiktok": 544,
+  "videos_tiktok": 33,
+  "delta_tiktok": {
+   "seguidores": 0,
+   "likes_perfil": 13,
+   "videos": 3,
+   "nota": "Solo perfil público (vistas por video no disponibles sin Studio)."
+  },
+  "ranking_crecimiento": [
+   [
+    "YT Mariposas monarca",
+    71
+   ],
+   [
+    "YT Mosquito (nuevo 17:00)",
+    56
+   ],
+   [
+    "YT Corales",
+    26
+   ],
+   [
+    "YT Dato lince",
+    6
+   ],
+   [
+    "YT Pan de muerto",
+    5
+   ],
+   [
+    "YT Kromdraai (nuevo 19:00)",
+    5
+   ]
+  ],
+  "nota_flujo": "Flujo casi plano en 6 h: YT +183 vistas, +2 likes, 0 subs (63). Monarca empujó por Día de Muertos; Mosquito arrancó mejor que Corneja/Corales. Estancados: Titanoboa, ajolotes, anfibio, Templo, yema y casi todo el catálogo viejo (0–1). Corneja solo 6 vistas en 13 h. TT perfil: 15 seguidores (=), likes 531→544."
  }
 ]
