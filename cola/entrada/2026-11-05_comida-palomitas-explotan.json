@@ -1,0 +1,237 @@
+{
+  "_schema": "CAPCOT_STORYBOARD_TEXT_V2",
+  "project_id": "2026-11-05_comida-palomitas-explotan",
+  "serie": "Datos y ociosidades",
+  "title": "¿Por qué explotan las palomitas?",
+  "titulo": "Una gota atrapada explota",
+  "language": "es-MX",
+  "aspect_ratio": "9:16",
+  "target_duration_seconds": 84,
+  "estructura": "pregunta",
+  "audience": "Público general",
+  "occasion": "Cápsula vertical de divulgación",
+  "resumen": "El vapor de agua aumenta la presión interna; al ceder el pericarpio, el almidón se expande y solidifica.",
+  "trend_source": {
+    "termino": "¿Por qué explotan las palomitas?",
+    "fecha_publicacion": "",
+    "url": "https://doi.org/10.1093/chemse/bjr071"
+  },
+  "editorial_status": "PROPUESTA_PENDIENTE_DE_GROK",
+  "arco": {
+    "hook_medias_res": "Cada grano de maíz palomero guarda una pequeña cantidad de agua dentro de una cubierta resistente. Al calentarse, el agua se convierte en vapor y aumenta la presión interna.",
+    "desarrollo": "El almidón del interior se ablanda y se vuelve una masa caliente. La cubierta, llamada pericarpio, mantiene la presión mientras la temperatura sube. Cuando la cubierta cede, el vapor se expande de golpe y empuja el almidón hacia afuera. Al enfriarse, esa espuma se solidifica y forma la palomita blanca. No todos los granos revientan. Algunos tienen grietas, poca humedad o una cubierta que no logra retener suficiente presión. El estallido no es una explosión química: es una expansión física impulsada por vapor de agua y por la estructura del grano.",
+    "cierre_historia": "El mecanismo tiene límites y depende de las condiciones observadas. No conviene convertir una medición particular en una regla universal.",
+    "reflexion_o_pregunta": "Esto fue Datos y ociosidades."
+  },
+  "estilo_id": "papel_recortado_popup",
+  "estilo_visual": "Recortes de papel stop-motion / libro pop-up",
+  "visual_identity": {
+    "style_id": "papel_recortado_popup",
+    "style_name": "Recortes de papel stop-motion / libro pop-up",
+    "prompt_base": "stop-motion paper cut-out scene inside an open pop-up book box, newsprint and sepia paper figures, red thread accents, cardboard background, warm dim lamp light, handmade feel, vertical 9:16, no text",
+    "palette": "sepia, cartón, negro, acentos rojos",
+    "lighting": "Según prompt base",
+    "texture": "Según prompt base",
+    "composition": "Vertical 9:16; continuidad de sujeto y paleta",
+    "negative_prompt": "No texto generado, no marcas de agua, no datos falsos",
+    "reference_assets": [],
+    "seed": null,
+    "seed_policy": "Continuidad entre escenas"
+  },
+  "typography_identity": {
+    "font_family": "DejaVu Sans",
+    "font_weight": "700 para gancho; 400 para subtítulos",
+    "title_style": "Máximo seis palabras desde frame 0",
+    "subtitle_style": "Bloques de máximo tres palabras",
+    "hierarchy": "Gancho > dato > subtítulos",
+    "animation": "Un movimiento por plano; texto en postproducción"
+  },
+  "voice": {
+    "engine": "edge-tts",
+    "voice_id": "es-MX-JorgeNeural",
+    "language": "es-MX",
+    "rate": "+7%",
+    "pitch": "-2Hz",
+    "pad_seconds": 0.3,
+    "modo_pausas": "continuo"
+  },
+  "sources": [
+    {
+      "id": "SRC-001",
+      "cita_corta": "Virot & Ponomarenko. Popcorn: critical temperature, jump and sound. Journal of the Royal Society Interface 12 (2015).",
+      "url": "https://doi.org/10.1098/rsif.2014.1247",
+      "doi": "10.1098/rsif.2014.1247",
+      "accessed": "2026-11-01",
+      "publication_date": "2015-03-06",
+      "supports": [
+        "La humedad interna se transforma en vapor; el pericarpio retiene presión y al ceder permite la expansión del almidón.",
+        "El estudio reporta temperatura crítica cercana a 180 °C."
+      ],
+      "verification_status": "VERIFICADO_RESOLVEDOR"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_001",
+      "arc": "hook_medias_res",
+      "duration_seconds": 10,
+      "narration": "Cada grano de maíz palomero guarda una pequeña cantidad de agua dentro de una cubierta resistente. Al calentarse, el agua se convierte en vapor y aumenta la presión interna.",
+      "on_screen_text": "Una gota atrapada explota",
+      "visual_description": "Representación didáctica de ¿por qué explotan las palomitas?, secuencia causal clara y legible",
+      "image_prompt": "stop-motion paper cut-out scene inside an open pop-up book box, newsprint and sepia paper figures, red thread accents, cardboard background, warm dim lamp light, handmade feel, vertical 9:16, no text, educational visual scene illustrating ¿por qué explotan las palomitas?, consistent visual continuity",
+      "ambiente": "Ambiente discreto; voz al frente",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "papel_recortado_popup"
+    },
+    {
+      "id": "scene_002",
+      "arc": "desarrollo",
+      "duration_seconds": 12,
+      "narration": "El almidón del interior se ablanda y se vuelve una masa caliente. La cubierta, llamada pericarpio, mantiene la presión mientras la temperatura sube.",
+      "on_screen_text": "El mecanismo",
+      "visual_description": "Representación didáctica de ¿por qué explotan las palomitas?, secuencia causal clara y legible",
+      "image_prompt": "stop-motion paper cut-out scene inside an open pop-up book box, newsprint and sepia paper figures, red thread accents, cardboard background, warm dim lamp light, handmade feel, vertical 9:16, no text, educational visual scene illustrating ¿por qué explotan las palomitas?, consistent visual continuity",
+      "ambiente": "Ambiente discreto; voz al frente",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "papel_recortado_popup",
+      "capa": {
+        "tipo": "mapa",
+        "titulo": "École Polytechnique, Palaiseau",
+        "puntos": [
+          {
+            "nombre": "École Polytechnique, Palaiseau",
+            "lat": 48.713,
+            "lon": 2.207
+          }
+        ],
+        "fuente": "Afiliación institucional del estudio de Virot y Ponomarenko. Virot y Ponomarenko (2015) reportan una temperatura crítica cercana a 180 °C. Pin de afiliación institucional de uno de los autores; no es el origen geográfico de las palomitas. Cartografía base: OpenStreetMap."
+      }
+    },
+    {
+      "id": "scene_003",
+      "arc": "desarrollo",
+      "duration_seconds": 12,
+      "narration": "Cuando la cubierta cede, el vapor se expande de golpe y empuja el almidón hacia afuera. Al enfriarse, esa espuma se solidifica y forma la palomita blanca.",
+      "on_screen_text": "Qué ocurre",
+      "visual_description": "Representación didáctica de ¿por qué explotan las palomitas?, secuencia causal clara y legible",
+      "image_prompt": "stop-motion paper cut-out scene inside an open pop-up book box, newsprint and sepia paper figures, red thread accents, cardboard background, warm dim lamp light, handmade feel, vertical 9:16, no text, educational visual scene illustrating ¿por qué explotan las palomitas?, consistent visual continuity",
+      "ambiente": "Ambiente discreto; voz al frente",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "papel_recortado_popup",
+      "capa": {
+        "tipo": "dato",
+        "valor": "≈180 °C",
+        "etiqueta": "Temperatura crítica reportada para el estallido",
+        "fuente": "Afiliación institucional del estudio de Virot y Ponomarenko. https://pmc.ncbi.nlm.nih.gov/articles/PMC4345489/. Virot y Ponomarenko (2015) reportan una temperatura crítica cercana a 180 °C. Pin de afiliación institucional de uno de los autores; no es el origen geográfico de las palomitas."
+      }
+    },
+    {
+      "id": "scene_004",
+      "arc": "desarrollo",
+      "duration_seconds": 12,
+      "narration": "No todos los granos revientan. Algunos tienen grietas, poca humedad o una cubierta que no logra retener suficiente presión.",
+      "on_screen_text": "La evidencia",
+      "visual_description": "Representación didáctica de ¿por qué explotan las palomitas?, secuencia causal clara y legible",
+      "image_prompt": "stop-motion paper cut-out scene inside an open pop-up book box, newsprint and sepia paper figures, red thread accents, cardboard background, warm dim lamp light, handmade feel, vertical 9:16, no text, educational visual scene illustrating ¿por qué explotan las palomitas?, consistent visual continuity",
+      "ambiente": "Ambiente discreto; voz al frente",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "papel_recortado_popup"
+    },
+    {
+      "id": "scene_005",
+      "arc": "desarrollo",
+      "duration_seconds": 12,
+      "narration": "El estallido no es una explosión química: es una expansión física impulsada por vapor de agua y por la estructura resistente del grano.",
+      "on_screen_text": "El matiz",
+      "visual_description": "Representación didáctica de ¿por qué explotan las palomitas?, secuencia causal clara y legible",
+      "image_prompt": "stop-motion paper cut-out scene inside an open pop-up book box, newsprint and sepia paper figures, red thread accents, cardboard background, warm dim lamp light, handmade feel, vertical 9:16, no text, educational visual scene illustrating ¿por qué explotan las palomitas?, consistent visual continuity",
+      "ambiente": "Ambiente discreto; voz al frente",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "papel_recortado_popup"
+    },
+    {
+      "id": "scene_006",
+      "arc": "cierre_historia",
+      "duration_seconds": 10,
+      "narration": "El límite: cada grano es distinto. Si el agua escapa por una grieta o la cubierta no retiene presión, el grano queda cerrado en el fondo de la olla.",
+      "on_screen_text": "Qué sabemos",
+      "visual_description": "Representación didáctica de ¿por qué explotan las palomitas?, secuencia causal clara y legible",
+      "image_prompt": "stop-motion paper cut-out scene inside an open pop-up book box, newsprint and sepia paper figures, red thread accents, cardboard background, warm dim lamp light, handmade feel, vertical 9:16, no text, educational visual scene illustrating ¿por qué explotan las palomitas?, consistent visual continuity",
+      "ambiente": "Ambiente discreto; voz al frente",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "papel_recortado_popup"
+    },
+    {
+      "id": "scene_007",
+      "arc": "reflexion_o_pregunta",
+      "duration_seconds": 10,
+      "narration": "Una palomita es agua convertida en vapor que infla almidón como espuma. ¿Prefieres las palomitas dulces o saladas? Esto fue Datos y ociosidades.",
+      "on_screen_text": "Esto fue Datos y ociosidades",
+      "visual_description": "Representación didáctica de ¿por qué explotan las palomitas?, secuencia causal clara y legible",
+      "image_prompt": "stop-motion paper cut-out scene inside an open pop-up book box, newsprint and sepia paper figures, red thread accents, cardboard background, warm dim lamp light, handmade feel, vertical 9:16, no text, educational visual scene illustrating ¿por qué explotan las palomitas?, consistent visual continuity",
+      "ambiente": "Ambiente discreto; voz al frente",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "papel_recortado_popup"
+    }
+  ],
+  "cortinilla_fuentes": {
+    "duration_seconds": 6,
+    "titulo": "Fuentes",
+    "aviso": "Contenido realizado con apoyo de IA; declarar recursos sintéticos usados en versión final.",
+    "firma": "Datos y ociosidades",
+    "source_ids": [
+      "SRC-001"
+    ]
+  },
+  "audio": {
+    "music_asset": null,
+    "music_plan": "Cama discreta; selección y licencia por validar en montaje",
+    "music_license": null
+  },
+  "export": {
+    "resolution": "1080x1920",
+    "fps": 30,
+    "render_status": "NOT_GENERATED"
+  },
+  "publicacion": {
+    "status": "PENDIENTE_DECISION_GROK",
+    "platforms": [
+      "YouTube Shorts",
+      "TikTok",
+      "Facebook Reels"
+    ],
+    "note": "No publicar desde preproducción textual."
+  },
+  "estado": "PENDIENTE_REVISION_GROK",
+  "production_mode": "storyboard_only",
+  "validation_notes": [
+    "7 escenas; objetivo 78 s de narración + 6 s de cortinilla = 84 s."
+  ],
+  "linea_tematica_provisional": "Ciencia y naturaleza",
+  "approved_assets": [],
+  "risk_notes": [
+    "Mantener límites y matices de la fuente; no generalizar más allá de la evidencia."
+  ],
+  "thumbnail_source": "scene_001"
+}
