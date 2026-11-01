@@ -98,23 +98,31 @@
       "fecha": "2026-11-01",
       "hora": "19:00",
       "cesta": "intermedio_2",
-      "project_id": "2026-10-30_arqueas-origen-eucariotas",
-      "estado": "programado_yt_tt_fb",
-      "notas": "Sustituye baffin (pasa a 17:00). Preferir arqueas si storyboard OK; si no, ChatGPT.",
-      "yt_id": "bICGA3kIBcU",
+      "project_id": "2026-11-03_kids-tiburon-groenlandia",
+      "estado": "yt_programado_tt_fb_pendiente_ui",
+      "notas": "1-nov 00:30: arqueas (flojo vs temporada/animales wow) sustituido por tiburón de Groenlandia (adelantado desde 3-nov 07:00). Baffin 17:00 intacto. Borrar en Studio: arqueas bICGA3kIBcU, i2l4BkMvHp0, 9XflXdWDM0A.",
+      "yt_id": "0x1B9_rMm-I",
       "publishAt": "2026-11-02T01:00:00Z",
       "plataformas": {
         "yt": "programado",
-        "tt": "programado_v4",
-        "fb": "programado_v4"
+        "tt": "pendiente_ui",
+        "fb": "pendiente_ui"
       },
       "yt_id_historial": [
         "i2l4BkMvHp0",
-        "9XflXdWDM0A"
+        "9XflXdWDM0A",
+        "bICGA3kIBcU"
       ],
-      "yt_v2": true,
-      "yt_v4": true,
-      "mp4": "salidas/2026-10-30_arqueas-origen-eucariotas/capsula_v4.mp4"
+      "mp4": "salidas/2026-11-03_kids-tiburon-groenlandia/capsula.mp4",
+      "reemplaza": {
+        "project_id": "2026-10-30_arqueas-origen-eucariotas",
+        "yt_ids_a_borrar": [
+          "bICGA3kIBcU",
+          "i2l4BkMvHp0",
+          "9XflXdWDM0A"
+        ],
+        "tt_fb": "borrar arqueas v4 programado 20:00 NY"
+      }
     },
     {
       "fecha": "2026-11-01",
@@ -226,18 +234,19 @@
       "fecha": "2026-11-03",
       "hora": "07:00",
       "cesta": "kids",
-      "project_id": "2026-11-03_kids-tiburon-groenlandia",
-      "estado": "programado_yt_tt_fb",
-      "notas": "TÍTULO: El tiburón que puede vivir siglos. borrador en proyectos/2026-xx_kids_tiburon-groenlandia-400-anos; fuente: Nielsen et al. 2016 Science. No marcar Hecho para niños.",
+      "project_id": "2026-11-03_kids-TBD",
+      "estado": "pendiente_reemplazo",
+      "notas": "Tiburón adelantado a 1-nov 19:00 (YT 0x1B9_rMm-I). Borrar en Studio bImG_vdlBhs (sigue programado 3-nov 13:00Z) y TT/FB tiburón 3-nov 8:00 NY. Candidato sin costo: 2026-10-24_lote01-05-chicxulub (QA OK, sin publicar; pide OK Mj, estilo viejo sin sello) o pedir ChatGPT.",
       "publishAt": "2026-11-03T13:00:00Z",
-      "yt_id": "bImG_vdlBhs",
       "yt_v1": true,
-      "mp4": "salidas/2026-11-03_kids-tiburon-groenlandia/capsula.mp4",
       "plataformas": {
-        "yt": "programado",
-        "tt": "programado",
-        "fb": "programado"
-      }
+        "yt": "vacío (borrar viejo)",
+        "tt": "borrar viejo",
+        "fb": "borrar viejo"
+      },
+      "yt_ids_a_borrar": [
+        "bImG_vdlBhs"
+      ]
     },
     {
       "fecha": "2026-11-03",

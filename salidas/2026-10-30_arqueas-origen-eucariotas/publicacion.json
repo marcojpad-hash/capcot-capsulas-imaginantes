@@ -1,142 +1,153 @@
 {
-  "metadatos": {
+ "metadatos": {
+  "title": "¿Qué había antes de nuestras células? #Shorts",
+  "description": "¿Qué había antes de una célula como la tuya?\n\nDos arqueas y el origen de la célula compleja. Una cápsula de Datos y ociosidades: datos verificados contados como historia.\n\nFuentes:\n• Imachi, H. et al. (2026). Eukaryotes’ closest relatives are internally simple syntrophic peptidotrophic archaea. Nature. https://doi.org/10.1038/s41586-026-11170-7\n• JAMSTEC (2026-10-29). Capturing our closest archaeal relatives offers clues to the origin of eukaryotes. https://www.jamstec.go.jp/e/about/press_release/20261029/\n• JAMSTEC. Yokosuka Headquarters — official address and access. https://w3.jamstec.go.jp/e/about/access/yokosuka.html\n\nImágenes generadas con IA · voz sintética · audio sintetizado.\nSuscríbete: @datosyociosidades\nTikTok: https://www.tiktok.com/@datosyociosidades\n\n#arqueas #celulas #evolucion #ciencia #sabiasque #Shorts",
+  "tags": [
+   "arqueas",
+   "celulas",
+   "evolucion",
+   "ciencia",
+   "sabiasque",
+   "Shorts"
+  ]
+ },
+ "resultado": {
+  "youtube": {
+   "kind": "youtube#video",
+   "etag": "rziE-Q-jPREItORF5y-OT3indZI",
+   "id": "bICGA3kIBcU",
+   "snippet": {
+    "publishedAt": "2026-10-31T22:51:24Z",
+    "channelId": "UCU2ZI-6pBJEr9aSFsF6bxLw",
     "title": "¿Qué había antes de nuestras células? #Shorts",
     "description": "¿Qué había antes de una célula como la tuya?\n\nDos arqueas y el origen de la célula compleja. Una cápsula de Datos y ociosidades: datos verificados contados como historia.\n\nFuentes:\n• Imachi, H. et al. (2026). Eukaryotes’ closest relatives are internally simple syntrophic peptidotrophic archaea. Nature. https://doi.org/10.1038/s41586-026-11170-7\n• JAMSTEC (2026-10-29). Capturing our closest archaeal relatives offers clues to the origin of eukaryotes. https://www.jamstec.go.jp/e/about/press_release/20261029/\n• JAMSTEC. Yokosuka Headquarters — official address and access. https://w3.jamstec.go.jp/e/about/access/yokosuka.html\n\nImágenes generadas con IA · voz sintética · audio sintetizado.\nSuscríbete: @datosyociosidades\nTikTok: https://www.tiktok.com/@datosyociosidades\n\n#arqueas #celulas #evolucion #ciencia #sabiasque #Shorts",
+    "thumbnails": {
+     "default": {
+      "url": "https://i9.ytimg.com/vi/bICGA3kIBcU/default.jpg?sqp=CJjhmdcG&rs=AOn4CLA8lkMuOnQmbux3bvRWadZwhhXa8g",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i9.ytimg.com/vi/bICGA3kIBcU/mqdefault.jpg?sqp=CJjhmdcG&rs=AOn4CLBYYESDZhRW85jbc6GtWXf3POW5gg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i9.ytimg.com/vi/bICGA3kIBcU/hqdefault.jpg?sqp=CJjhmdcG&rs=AOn4CLCQr-Jqt80QjpfG9K5wuBYv-nDo-Q",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "Datos y ociosidades",
     "tags": [
-      "arqueas",
-      "celulas",
-      "evolucion",
-      "ciencia",
-      "sabiasque",
-      "Shorts"
-    ]
-  },
-  "resultado": {
-    "youtube": {
-      "kind": "youtube#video",
-      "etag": "rziE-Q-jPREItORF5y-OT3indZI",
-      "id": "bICGA3kIBcU",
-      "snippet": {
-        "publishedAt": "2026-10-31T22:51:24Z",
-        "channelId": "UCU2ZI-6pBJEr9aSFsF6bxLw",
-        "title": "¿Qué había antes de nuestras células? #Shorts",
-        "description": "¿Qué había antes de una célula como la tuya?\n\nDos arqueas y el origen de la célula compleja. Una cápsula de Datos y ociosidades: datos verificados contados como historia.\n\nFuentes:\n• Imachi, H. et al. (2026). Eukaryotes’ closest relatives are internally simple syntrophic peptidotrophic archaea. Nature. https://doi.org/10.1038/s41586-026-11170-7\n• JAMSTEC (2026-10-29). Capturing our closest archaeal relatives offers clues to the origin of eukaryotes. https://www.jamstec.go.jp/e/about/press_release/20261029/\n• JAMSTEC. Yokosuka Headquarters — official address and access. https://w3.jamstec.go.jp/e/about/access/yokosuka.html\n\nImágenes generadas con IA · voz sintética · audio sintetizado.\nSuscríbete: @datosyociosidades\nTikTok: https://www.tiktok.com/@datosyociosidades\n\n#arqueas #celulas #evolucion #ciencia #sabiasque #Shorts",
-        "thumbnails": {
-          "default": {
-            "url": "https://i9.ytimg.com/vi/bICGA3kIBcU/default.jpg?sqp=CJjhmdcG&rs=AOn4CLA8lkMuOnQmbux3bvRWadZwhhXa8g",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i9.ytimg.com/vi/bICGA3kIBcU/mqdefault.jpg?sqp=CJjhmdcG&rs=AOn4CLBYYESDZhRW85jbc6GtWXf3POW5gg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i9.ytimg.com/vi/bICGA3kIBcU/hqdefault.jpg?sqp=CJjhmdcG&rs=AOn4CLCQr-Jqt80QjpfG9K5wuBYv-nDo-Q",
-            "width": 480,
-            "height": 360
-          }
-        },
-        "channelTitle": "Datos y ociosidades",
-        "tags": [
-          "Shorts",
-          "arqueas",
-          "celulas",
-          "ciencia",
-          "evolucion",
-          "sabiasque"
-        ],
-        "categoryId": "27",
-        "liveBroadcastContent": "none",
-        "defaultLanguage": "es",
-        "localized": {
-          "title": "¿Qué había antes de nuestras células? #Shorts",
-          "description": "¿Qué había antes de una célula como la tuya?\n\nDos arqueas y el origen de la célula compleja. Una cápsula de Datos y ociosidades: datos verificados contados como historia.\n\nFuentes:\n• Imachi, H. et al. (2026). Eukaryotes’ closest relatives are internally simple syntrophic peptidotrophic archaea. Nature. https://doi.org/10.1038/s41586-026-11170-7\n• JAMSTEC (2026-10-29). Capturing our closest archaeal relatives offers clues to the origin of eukaryotes. https://www.jamstec.go.jp/e/about/press_release/20261029/\n• JAMSTEC. Yokosuka Headquarters — official address and access. https://w3.jamstec.go.jp/e/about/access/yokosuka.html\n\nImágenes generadas con IA · voz sintética · audio sintetizado.\nSuscríbete: @datosyociosidades\nTikTok: https://www.tiktok.com/@datosyociosidades\n\n#arqueas #celulas #evolucion #ciencia #sabiasque #Shorts"
-        }
-      },
-      "status": {
-        "uploadStatus": "uploaded",
-        "privacyStatus": "private",
-        "publishAt": "2026-11-02T01:00:00Z",
-        "license": "youtube",
-        "embeddable": true,
-        "publicStatsViewable": true,
-        "selfDeclaredMadeForKids": false,
-        "containsSyntheticMedia": true
-      }
-    },
-    "tiktok": {
-      "estado": "programado",
-      "cuenta": "@datosyociosidades",
-      "publish_at_cdmx": "2026-11-01T19:00:00-06:00",
-      "ui_shown": "Nov 1, 8:00 PM (GMT-5) New York",
-      "ai_label": true,
-      "caption": "¿Qué había antes de una célula como la tuya?\n\nFuentes en YouTube @datosyociosidades\n\n#arqueas #celulas #evolucion #ciencia #sabiasque",
-      "actualizado": "2026-10-31T14:53:04-06:00",
-      "reemplazo_v4": {
-        "estado": "pendiente_ui",
-        "mp4_nuevo": "salidas/2026-10-30_arqueas-origen-eucariotas/capsula_v4.mp4",
-        "viejo": "programado pre-v4 sin ID; borrar en Studio/Business Suite",
-        "actualizado": "2026-10-31T19:20:00-06:00"
-      }
-    },
-    "facebook": {
-      "estado": "programado",
-      "pagina": "Datos y ociosidades",
-      "publish_at_cdmx": "2026-11-01T19:00:00-06:00",
-      "ui_shown": "1 Nov 2026 20:00 America/New_York",
-      "ai_label": false,
-      "actualizado": "2026-10-31T14:53:04-06:00",
-      "reemplazo_v4": {
-        "estado": "pendiente_ui",
-        "mp4_nuevo": "salidas/2026-10-30_arqueas-origen-eucariotas/capsula_v4.mp4",
-        "viejo": "programado pre-v4 sin ID; borrar en Studio/Business Suite",
-        "actualizado": "2026-10-31T19:20:00-06:00"
-      }
-    },
-    "historial_youtube": [
-      {
-        "id": "i2l4BkMvHp0",
-        "estado": "SIGUE PROGRAMADO 2026-11-02T01:00:00Z — borrar a mano en Studio (token sin scope youtube)",
-        "reemplazado_por": "9XflXdWDM0A",
-        "fecha": "2026-10-31T15:55:49-06:00"
-      },
-      {
-        "id": "9XflXdWDM0A",
-        "estado": "SIGUE PROGRAMADO 2026-11-02T01:00:00Z — borrar a mano en Studio",
-        "reemplazado_por": "bICGA3kIBcU",
-        "fecha": "2026-10-31T16:51:13-06:00"
-      }
+     "Shorts",
+     "arqueas",
+     "celulas",
+     "ciencia",
+     "evolucion",
+     "sabiasque"
     ],
-    "youtube_thumbnail": {
-      "fuente": "primer frame mp4",
-      "estado": "ok"
+    "categoryId": "27",
+    "liveBroadcastContent": "none",
+    "defaultLanguage": "es",
+    "localized": {
+     "title": "¿Qué había antes de nuestras células? #Shorts",
+     "description": "¿Qué había antes de una célula como la tuya?\n\nDos arqueas y el origen de la célula compleja. Una cápsula de Datos y ociosidades: datos verificados contados como historia.\n\nFuentes:\n• Imachi, H. et al. (2026). Eukaryotes’ closest relatives are internally simple syntrophic peptidotrophic archaea. Nature. https://doi.org/10.1038/s41586-026-11170-7\n• JAMSTEC (2026-10-29). Capturing our closest archaeal relatives offers clues to the origin of eukaryotes. https://www.jamstec.go.jp/e/about/press_release/20261029/\n• JAMSTEC. Yokosuka Headquarters — official address and access. https://w3.jamstec.go.jp/e/about/access/yokosuka.html\n\nImágenes generadas con IA · voz sintética · audio sintetizado.\nSuscríbete: @datosyociosidades\nTikTok: https://www.tiktok.com/@datosyociosidades\n\n#arqueas #celulas #evolucion #ciencia #sabiasque #Shorts"
     }
+   },
+   "status": {
+    "uploadStatus": "uploaded",
+    "privacyStatus": "private",
+    "publishAt": "2026-11-02T01:00:00Z",
+    "license": "youtube",
+    "embeddable": true,
+    "publicStatsViewable": true,
+    "selfDeclaredMadeForKids": false,
+    "containsSyntheticMedia": true
+   }
   },
-  "remontaje_cierre": {
-    "fecha": "2026-10-31T15:55:49-06:00",
-    "video": "capsula_v2.mp4",
-    "tiktok_facebook": "siguen con video viejo (pre-cierre)"
+  "tiktok": {
+   "estado": "programado",
+   "cuenta": "@datosyociosidades",
+   "publish_at_cdmx": "2026-11-01T19:00:00-06:00",
+   "ui_shown": "Nov 1, 8:00 PM (GMT-5) New York",
+   "ai_label": true,
+   "caption": "¿Qué había antes de una célula como la tuya?\n\nFuentes en YouTube @datosyociosidades\n\n#arqueas #celulas #evolucion #ciencia #sabiasque",
+   "actualizado": "2026-10-31T14:53:04-06:00",
+   "reemplazo_v4": {
+    "estado": "pendiente_ui",
+    "mp4_nuevo": "salidas/2026-10-30_arqueas-origen-eucariotas/capsula_v4.mp4",
+    "viejo": "programado pre-v4 sin ID; borrar en Studio/Business Suite",
+    "actualizado": "2026-10-31T19:20:00-06:00"
+   }
   },
-  "reemplazo_v4": {
-    "mp4": "salidas/2026-10-30_arqueas-origen-eucariotas/capsula_v4.mp4",
-    "tiktok": {
-      "estado": "programado_v4",
-      "viejo": "borrado",
-      "ui_ny_gmt5": "2026-11-01 20:00",
-      "hora_cdmx": "19:00",
-      "ai_label": true,
-      "confirmado": "2026-10-31T19:25:00-06:00"
-    },
-    "facebook": {
-      "estado": "programado_v4",
-      "viejo": "borrado",
-      "ui_ny_gmt5": "2026-11-01 20:00",
-      "ai_label": false,
-      "subtitulos_auto": true,
-      "confirmado": "2026-10-31T19:45:00-06:00",
-      "nota": "thumbnail posiblemente procesando"
-    }
+  "facebook": {
+   "estado": "programado",
+   "pagina": "Datos y ociosidades",
+   "publish_at_cdmx": "2026-11-01T19:00:00-06:00",
+   "ui_shown": "1 Nov 2026 20:00 America/New_York",
+   "ai_label": false,
+   "actualizado": "2026-10-31T14:53:04-06:00",
+   "reemplazo_v4": {
+    "estado": "pendiente_ui",
+    "mp4_nuevo": "salidas/2026-10-30_arqueas-origen-eucariotas/capsula_v4.mp4",
+    "viejo": "programado pre-v4 sin ID; borrar en Studio/Business Suite",
+    "actualizado": "2026-10-31T19:20:00-06:00"
+   }
+  },
+  "historial_youtube": [
+   {
+    "id": "i2l4BkMvHp0",
+    "estado": "SIGUE PROGRAMADO 2026-11-02T01:00:00Z — borrar a mano en Studio (token sin scope youtube)",
+    "reemplazado_por": "9XflXdWDM0A",
+    "fecha": "2026-10-31T15:55:49-06:00"
+   },
+   {
+    "id": "9XflXdWDM0A",
+    "estado": "SIGUE PROGRAMADO 2026-11-02T01:00:00Z — borrar a mano en Studio",
+    "reemplazado_por": "bICGA3kIBcU",
+    "fecha": "2026-10-31T16:51:13-06:00"
+   }
+  ],
+  "youtube_thumbnail": {
+   "fuente": "primer frame mp4",
+   "estado": "ok"
   }
+ },
+ "remontaje_cierre": {
+  "fecha": "2026-10-31T15:55:49-06:00",
+  "video": "capsula_v2.mp4",
+  "tiktok_facebook": "siguen con video viejo (pre-cierre)"
+ },
+ "reemplazo_v4": {
+  "mp4": "salidas/2026-10-30_arqueas-origen-eucariotas/capsula_v4.mp4",
+  "tiktok": {
+   "estado": "programado_v4",
+   "viejo": "borrado",
+   "ui_ny_gmt5": "2026-11-01 20:00",
+   "hora_cdmx": "19:00",
+   "ai_label": true,
+   "confirmado": "2026-10-31T19:25:00-06:00"
+  },
+  "facebook": {
+   "estado": "programado_v4",
+   "viejo": "borrado",
+   "ui_ny_gmt5": "2026-11-01 20:00",
+   "ai_label": false,
+   "subtitulos_auto": true,
+   "confirmado": "2026-10-31T19:45:00-06:00",
+   "nota": "thumbnail posiblemente procesando"
+  }
+ },
+ "retirado_1nov": {
+  "fecha": "2026-11-01T00:30:00-06:00",
+  "motivo": "slot 19:00 sustituido por tiburón (temporada/animales wow)",
+  "yt_borrar_studio": [
+   "bICGA3kIBcU",
+   "i2l4BkMvHp0",
+   "9XflXdWDM0A"
+  ],
+  "tt_fb_borrar": "arqueas v4 programado 1-nov 20:00 NY (TT y FB)",
+  "estado": "sin_slot (reusable más adelante)"
+ }
 }

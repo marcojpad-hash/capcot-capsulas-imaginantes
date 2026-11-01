@@ -1,9 +1,12 @@
 {
- "estado": "programado",
+ "estado": "pendiente_ui",
  "pagina": "Datos y ociosidades",
- "publish_at_cdmx": "2026-11-03T07:00:00-06:00",
+ "publish_at_cdmx": "2026-11-01T19:00:00-06:00",
  "ui_shown": "3 Nov 2026 08:00 America/New_York",
  "ai_label": false,
  "mp4": "salidas/2026-11-03_kids-tiburon-groenlandia/capsula.mp4",
- "actualizado": "2026-10-31T17:27:00-06:00"
+ "actualizado": "2026-11-01T00:30:00-06:00",
+ "ui_ny_gmt5": "2026-11-01 20:00",
+ "caption": "Un tiburón que puede tener 400 años 🦈\n\nFuentes en YouTube @datosyociosidades\n\n#tiburon #animales #oceano #ciencia #sabiasque",
+ "viejo": "borrar Reel programado 3-nov 08:00 NY"
 }

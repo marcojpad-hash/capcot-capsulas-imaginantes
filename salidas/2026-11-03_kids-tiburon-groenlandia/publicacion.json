@@ -2,53 +2,51 @@
  "resultado": {
   "youtube": {
    "kind": "youtube#video",
-   "etag": "TGwy9b3CH8Xg42CxKz-REyOKWq4",
-   "id": "bImG_vdlBhs",
+   "etag": "pEipDKB_3MOpICFdi4dbgSWmBnc",
+   "id": "0x1B9_rMm-I",
    "snippet": {
-    "publishedAt": "2026-10-31T23:11:29Z",
+    "publishedAt": "2026-11-01T06:16:08Z",
     "channelId": "UCU2ZI-6pBJEr9aSFsF6bxLw",
     "title": "El tiburón que vive siglos #Shorts",
-    "description": "En el agua helada del Ártico nada un tiburón lento, casi dormido.\n\nEl tiburón que vive siglos. Una cápsula de Datos y ociosidades: datos verificados contados como historia.\n\nFuentes:\n• Nielsen, J. et al. (2016). Eye lens radiocarbon reveals centuries of longevity in the Greenland shark. Science, 353(6300), 702–704. https://doi.org/10.1126/science.aaf1703\n\nImágenes generadas con IA · voz sintética · audio sintetizado.\nSuscríbete: @datosyociosidades\nTikTok: https://www.tiktok.com/@datosyociosidades\n\n#DatosYOciosidades #Shorts #datos #ciencia #difusión #difusióncientífica #ia #LongevidadDelTiburónDeGroenlandia",
+    "description": "En el agua helada del Ártico nada un tiburón lento, casi dormido.\n\nEl tiburón que vive siglos. Una cápsula de Datos y ociosidades: datos verificados contados como historia.\n\nFuentes:\n• Nielsen, J. et al. (2016). Eye lens radiocarbon reveals centuries of longevity in the Greenland shark. Science, 353(6300), 702–704. https://doi.org/10.1126/science.aaf1703\n\nImágenes generadas con IA · voz sintética · audio sintetizado.\nSuscríbete: @datosyociosidades\nTikTok: https://www.tiktok.com/@datosyociosidades\n\n#tiburon #animales #oceano #ciencia #sabiasque #Shorts",
     "thumbnails": {
      "default": {
-      "url": "https://i9.ytimg.com/vi/bImG_vdlBhs/default.jpg?sqp=CMjqmdcG&rs=AOn4CLDyl34kXb7s2RX03wJZgpcAlEp13Q",
+      "url": "https://i9.ytimg.com/vi/0x1B9_rMm-I/default.jpg?sqp=COSxm9cG&rs=AOn4CLCykcooFEH2Vt9QhZwnOeNq_goLEw",
       "width": 120,
       "height": 90
      },
      "medium": {
-      "url": "https://i9.ytimg.com/vi/bImG_vdlBhs/mqdefault.jpg?sqp=CMjqmdcG&rs=AOn4CLDWrJ4vHCtmUd_hT3SXHdr9kX6kXA",
+      "url": "https://i9.ytimg.com/vi/0x1B9_rMm-I/mqdefault.jpg?sqp=COSxm9cG&rs=AOn4CLCnXr0z1qPehsDhAQRJVCjrlwpZrQ",
       "width": 320,
       "height": 180
      },
      "high": {
-      "url": "https://i9.ytimg.com/vi/bImG_vdlBhs/hqdefault.jpg?sqp=CMjqmdcG&rs=AOn4CLDa3vQbsr_Od5HavkHF1QQvBGdwnA",
+      "url": "https://i9.ytimg.com/vi/0x1B9_rMm-I/hqdefault.jpg?sqp=COSxm9cG&rs=AOn4CLCAg3Vr7K3k9p6zTLlxtFuP0ZijIw",
       "width": 480,
       "height": 360
      }
     },
     "channelTitle": "Datos y ociosidades",
     "tags": [
-     "DatosYOciosidades",
-     "LongevidadDelTiburónDeGroenlandia",
      "Shorts",
+     "animales",
      "ciencia",
-     "datos",
-     "difusión",
-     "difusióncientífica",
-     "ia"
+     "oceano",
+     "sabiasque",
+     "tiburon"
     ],
     "categoryId": "27",
     "liveBroadcastContent": "none",
     "defaultLanguage": "es",
     "localized": {
      "title": "El tiburón que vive siglos #Shorts",
-     "description": "En el agua helada del Ártico nada un tiburón lento, casi dormido.\n\nEl tiburón que vive siglos. Una cápsula de Datos y ociosidades: datos verificados contados como historia.\n\nFuentes:\n• Nielsen, J. et al. (2016). Eye lens radiocarbon reveals centuries of longevity in the Greenland shark. Science, 353(6300), 702–704. https://doi.org/10.1126/science.aaf1703\n\nImágenes generadas con IA · voz sintética · audio sintetizado.\nSuscríbete: @datosyociosidades\nTikTok: https://www.tiktok.com/@datosyociosidades\n\n#DatosYOciosidades #Shorts #datos #ciencia #difusión #difusióncientífica #ia #LongevidadDelTiburónDeGroenlandia"
+     "description": "En el agua helada del Ártico nada un tiburón lento, casi dormido.\n\nEl tiburón que vive siglos. Una cápsula de Datos y ociosidades: datos verificados contados como historia.\n\nFuentes:\n• Nielsen, J. et al. (2016). Eye lens radiocarbon reveals centuries of longevity in the Greenland shark. Science, 353(6300), 702–704. https://doi.org/10.1126/science.aaf1703\n\nImágenes generadas con IA · voz sintética · audio sintetizado.\nSuscríbete: @datosyociosidades\nTikTok: https://www.tiktok.com/@datosyociosidades\n\n#tiburon #animales #oceano #ciencia #sabiasque #Shorts"
     }
    },
    "status": {
     "uploadStatus": "uploaded",
     "privacyStatus": "private",
-    "publishAt": "2026-11-03T13:00:00Z",
+    "publishAt": "2026-11-02T01:00:00Z",
     "license": "youtube",
     "embeddable": true,
     "publicStatsViewable": true,
@@ -59,6 +57,33 @@
   "youtube_thumbnail": {
    "fuente": "primer frame mp4",
    "estado": "ok"
+  },
+  "historial_youtube": [
+   {
+    "id": "bImG_vdlBhs",
+    "estado": "SIGUE PROGRAMADO 2026-11-03T13:00:00Z — borrar a mano en Studio (contenido movido a 1-nov 19:00)",
+    "reemplazado_por": "0x1B9_rMm-I",
+    "fecha": "2026-11-01T00:30:00-06:00"
+   }
+  ],
+  "tiktok": {
+   "estado": "pendiente_ui",
+   "publish_at_cdmx": "2026-11-01T19:00:00-06:00",
+   "ui_ny_gmt5": "2026-11-01 20:00",
+   "ai_label": true,
+   "caption": "Un tiburón que puede tener 400 años 🦈\n\nFuentes en YouTube @datosyociosidades\n\n#tiburon #animales #oceano #ciencia #sabiasque",
+   "viejo": "borrar entrada 3-nov 8:00 AM NY",
+   "mp4": "salidas/2026-11-03_kids-tiburon-groenlandia/capsula.mp4",
+   "actualizado": "2026-11-01T00:30:00-06:00"
+  },
+  "facebook": {
+   "estado": "pendiente_ui",
+   "publish_at_cdmx": "2026-11-01T19:00:00-06:00",
+   "ui_ny_gmt5": "2026-11-01 20:00",
+   "ai_label": false,
+   "caption": "Un tiburón que puede tener 400 años 🦈\n\nFuentes en YouTube @datosyociosidades\n\n#tiburon #animales #oceano #ciencia #sabiasque",
+   "viejo": "borrar Reel programado 3-nov 08:00 NY",
+   "actualizado": "2026-11-01T00:30:00-06:00"
   }
  },
  "tiktok": {
@@ -79,5 +104,17 @@
   "ai_label": false,
   "mp4": "salidas/2026-11-03_kids-tiburon-groenlandia/capsula.mp4",
   "actualizado": "2026-10-31T17:27:00-06:00"
+ },
+ "metadatos": {
+  "title": "El tiburón que vive siglos #Shorts",
+  "description": "En el agua helada del Ártico nada un tiburón lento, casi dormido.\n\nEl tiburón que vive siglos. Una cápsula de Datos y ociosidades: datos verificados contados como historia.\n\nFuentes:\n• Nielsen, J. et al. (2016). Eye lens radiocarbon reveals centuries of longevity in the Greenland shark. Science, 353(6300), 702–704. https://doi.org/10.1126/science.aaf1703\n\nImágenes generadas con IA · voz sintética · audio sintetizado.\nSuscríbete: @datosyociosidades\nTikTok: https://www.tiktok.com/@datosyociosidades\n\n#tiburon #animales #oceano #ciencia #sabiasque #Shorts",
+  "tags": [
+   "tiburon",
+   "animales",
+   "oceano",
+   "ciencia",
+   "sabiasque",
+   "Shorts"
+  ]
  }
 }
