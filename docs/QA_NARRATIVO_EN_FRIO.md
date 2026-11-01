@@ -15,6 +15,12 @@ Este QA es independiente del validador estructural y del QA audiovisual oficial 
 - **Auditor/revisor (15:00):** es una ejecución/conversación distinta. Oculta título, resumen, arco y notas; extrae y lee únicamente las narraciones de todas las escenas, concatenadas en orden.
 - **Grok:** recibe solo paquetes que ya superaron esta compuerta. Mantiene selección editorial, producción audiovisual, QA oficial y publicación.
 
+## Contrato narrativo del autor
+
+El borrador incluye un objeto `narrative_contract` con seis campos no vacíos: `central_question`, `promise`, `stakes`, `scientific_turn`, `evidence_limit` y `payoff`. Este contrato guía la escritura, pero no es evidencia ni puede sustituir la narración.
+
+Durante la lectura en frío, el revisor también oculta `narrative_contract`; no debe usarlo para reconstruir la historia. La pregunta, progresión, giro, límite y payoff tienen que ser recuperables solo desde la narración.
+
 ## Siete checks obligatorios
 
 El revisor marca cada campo booleano, con evidencia breve:
