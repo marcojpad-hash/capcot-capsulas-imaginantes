@@ -106,11 +106,13 @@
       "ui_ny_gmt5": "2026-11-02 08:00",
       "tt_viejo_id": null,
       "fb_viejo_id": null,
-      "estado": "tt_v4_ok_fb_pendiente",
+      "estado": "tt_v4_ok_fb_v4_ok",
       "tt_estado": "programado_v4",
-      "fb_estado": "pendiente_ui_reemplazo_v4",
+      "fb_estado": "programado_v4",
       "tt_viejo_borrado": true,
-      "tt_v4_confirmado": "2026-10-31T19:35:00-06:00"
+      "tt_v4_confirmado": "2026-10-31T19:35:00-06:00",
+      "fb_viejo_borrado": true,
+      "fb_v4_confirmado": "2026-10-31T20:00:00-06:00"
     },
     {
       "fecha": "2026-11-02",
@@ -126,11 +128,13 @@
       "ui_ny_gmt5": "2026-11-02 14:30",
       "tt_viejo_id": null,
       "fb_viejo_id": null,
-      "estado": "tt_v4_ok_fb_pendiente",
+      "estado": "tt_v4_ok_fb_v4_ok",
       "tt_estado": "programado_v4",
-      "fb_estado": "pendiente_ui_reemplazo_v4",
+      "fb_estado": "programado_v4",
       "tt_viejo_borrado": true,
-      "tt_v4_confirmado": "2026-10-31T19:35:00-06:00"
+      "tt_v4_confirmado": "2026-10-31T19:35:00-06:00",
+      "fb_viejo_borrado": true,
+      "fb_v4_confirmado": "2026-10-31T20:00:00-06:00"
     },
     {
       "fecha": "2026-11-02",
@@ -146,11 +150,13 @@
       "ui_ny_gmt5": "2026-11-02 18:00",
       "tt_viejo_id": null,
       "fb_viejo_id": null,
-      "estado": "tt_v4_ok_fb_pendiente",
+      "estado": "tt_v4_ok_fb_v4_ok",
       "tt_estado": "programado_v4",
-      "fb_estado": "pendiente_ui_reemplazo_v4",
+      "fb_estado": "programado_v4",
       "tt_viejo_borrado": true,
-      "tt_v4_confirmado": "2026-10-31T19:35:00-06:00"
+      "tt_v4_confirmado": "2026-10-31T19:35:00-06:00",
+      "fb_viejo_borrado": true,
+      "fb_v4_confirmado": "2026-10-31T20:00:00-06:00"
     },
     {
       "fecha": "2026-11-02",
@@ -166,11 +172,13 @@
       "ui_ny_gmt5": "2026-11-02 20:00",
       "tt_viejo_id": null,
       "fb_viejo_id": null,
-      "estado": "tt_v4_ok_fb_pendiente",
+      "estado": "tt_v4_ok_fb_v4_ok",
       "tt_estado": "programado_v4",
-      "fb_estado": "pendiente_ui_reemplazo_v4",
+      "fb_estado": "programado_v4",
       "tt_viejo_borrado": true,
-      "tt_v4_confirmado": "2026-10-31T19:35:00-06:00"
+      "tt_v4_confirmado": "2026-10-31T19:35:00-06:00",
+      "fb_viejo_borrado": true,
+      "fb_v4_confirmado": "2026-10-31T20:00:00-06:00"
     },
     {
       "fecha": "2026-11-03",

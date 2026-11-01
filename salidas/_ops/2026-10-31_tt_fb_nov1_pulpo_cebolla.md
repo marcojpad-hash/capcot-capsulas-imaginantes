@@ -24,3 +24,6 @@ TikTok Studio: 2 slots Nov3 con capsula_v4 (viejos borrados, AI label ON): juno 
 
 ## Reemplazo v4 FB Nov1 (31-oct ~19:45 CDMX)
 Meta Business Suite: 4 Reels Nov1 con capsula_v4 (viejos borrados, nuevo 1 vez c/u, sin AI label, subtítulos auto ON): pulpo 08:00, cebolla 14:30, baffin 18:00, arqueas 20:00 (GMT-5). Arqueas: thumbnail posiblemente aún procesando. FB Nov2–3 siguen pendientes.
+
+## Reemplazo v4 FB Nov2 (31-oct ~20:00 CDMX)
+Meta Business Suite: 4 Reels Nov2 con capsula_v4 (viejos borrados, sin AI label): camarón mantis 08:00, pan duro 14:30, murciélagos 18:00, sequías 20:00 (GMT-5). Algunos pueden seguir "En proceso". Caption puede llevar espacio final tras @datosyociosidades (cosmético). FB Nov3 sigue pendiente.
