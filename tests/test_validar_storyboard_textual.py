@@ -7,6 +7,13 @@ import validar_storyboard
 
 
 class TextOnlyStoryboardContractTests(unittest.TestCase):
+    def test_valid_narrative_contract_passes(self):
+        contract = {key: "contenido verificable" for key in validar_storyboard.NARRATIVE_CONTRACT_FIELDS}
+        self.assertEqual(validar_storyboard.validar_narrative_contract(contract), [])
+
+    def test_missing_narrative_contract_fields_are_rejected(self):
+        self.assertTrue(validar_storyboard.validar_narrative_contract({"central_question": "¿Por qué?"}))
+
     def test_valid_independent_narrative_qa_passes(self):
         qa = {
             "status": "PASS",
