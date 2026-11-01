@@ -98,7 +98,19 @@
       "source_ids": [
         "SRC-001"
       ],
-      "style_id": "papel_rasgado_capas"
+      "style_id": "papel_rasgado_capas",
+      "capa": {
+        "tipo": "mapa",
+        "titulo": "Interior de Alaska, Fairbanks",
+        "puntos": [
+          {
+            "nombre": "Interior de Alaska, Fairbanks",
+            "lat": 64.8378,
+            "lon": -147.7164
+          }
+        ],
+        "fuente": "Estudios de tolerancia al congelamiento de Rana sylvatica en Interior Alaska. Estudio de población de Rana sylvatica de Interior Alaska. El punto es una referencia regional aproximada, no la ubicación exacta de todos los individuos. Cartografía base: OpenStreetMap."
+      }
     },
     {
       "id": "scene_003",
@@ -113,7 +125,13 @@
       "source_ids": [
         "SRC-001"
       ],
-      "style_id": "papel_rasgado_capas"
+      "style_id": "papel_rasgado_capas",
+      "capa": {
+        "tipo": "dato",
+        "valor": "Hasta −16 °C",
+        "etiqueta": "Temperatura mínima tolerada en población invernal estudiada",
+        "fuente": "Estudios de tolerancia al congelamiento de Rana sylvatica en Interior Alaska. https://pubmed.ncbi.nlm.nih.gov/23966588/. Estudio de población de Rana sylvatica de Interior Alaska. El punto es una referencia regional aproximada, no la ubicación exacta de todos los individuos."
+      }
     },
     {
       "id": "scene_004",
