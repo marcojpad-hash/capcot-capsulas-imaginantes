@@ -98,7 +98,19 @@
       "source_ids": [
         "SRC-001"
       ],
-      "style_id": "linea_fina"
+      "style_id": "linea_fina",
+      "capa": {
+        "tipo": "mapa",
+        "titulo": "Western Regional Research Center, Albany",
+        "puntos": [
+          {
+            "nombre": "Western Regional Research Center, Albany",
+            "lat": 37.887,
+            "lon": -122.298
+          }
+        ],
+        "fuente": "Contexto institucional de investigación de alimentos; mapa referencial. La fuente describe la participación de polifenol oxidasa en el pardeamiento. Pin de referencia institucional en Albany; no representa zona de cultivo ni origen del aguacate. Cartografía base: OpenStreetMap."
+      }
     },
     {
       "id": "scene_003",
@@ -113,7 +125,13 @@
       "source_ids": [
         "SRC-001"
       ],
-      "style_id": "linea_fina"
+      "style_id": "linea_fina",
+      "capa": {
+        "tipo": "dato",
+        "valor": "Polifenol oxidasa",
+        "etiqueta": "Enzima que participa en el pardeamiento enzimático",
+        "fuente": "Contexto institucional de investigación de alimentos; mapa referencial. https://pmc.ncbi.nlm.nih.gov/articles/PMC11874750/. La fuente describe la participación de polifenol oxidasa en el pardeamiento. Pin de referencia institucional en Albany; no representa zona de cultivo ni origen del aguacate."
+      }
     },
     {
       "id": "scene_004",
