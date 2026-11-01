@@ -1,0 +1,24 @@
+{
+  "project_id": "2026-11-06_telescopio-james-webb-exoplaneta",
+  "serie": "Datos y ociosidades",
+  "title": "Webb ve atmósfera de exoplaneta",
+  "titulo": "¿Webb ve aire lejano?",
+  "language": "es-MX",
+  "aspect_ratio": "9:16",
+  "target_duration_seconds": 80,
+  "estructura": "pregunta",
+  "estilo_id": "van_gogh",
+  "estilo_visual": "Noche estrellada (Van Gogh)",
+  "trend_source": {"tipo": "noticia_cientifica", "medio": "NASA", "url": "https://www.nasa.gov/example", "estudio_doi": "10.3847/example", "fecha_publicacion": "2026-10-31", "termino": "JWST exoplanet atmosphere", "fecha_consulta": "2026-11-01"},
+  "voice": {"engine": "edge-tts", "voice_id": "es-MX-JorgeNeural", "rate": "+7%", "pitch": "-2Hz", "pad_seconds": 0.3, "modo_pausas": "continuo"},
+  "sources": [{"id": "SRC-001", "cita_corta": "NASA JWST (2026). Exoplanet.", "url": "https://www.nasa.gov/example", "accessed": "2026-11-01", "supports": ["Detección de vapor de agua"], "ref_display": "NASA 2026"}],
+  "scenes": [
+    {"id": "scene_001", "arc": "hook_medias_res", "duration_seconds": 9.0, "narration": "El telescopio James Webb acaba de mirar el aire de un planeta lejano.", "on_screen_text": "¿Webb ve aire lejano?", "visual_description": "van gogh style swirling night sky with telescope and distant planet", "image_prompt": "post-impressionist painting in the style of Van Gogh's Starry Night, swirling brushstrokes, deep blues and glowing yellows, vertical 9:16, no text + swirling night sky with telescope and distant planet", "source_ids": ["SRC-001"], "asset_filename": "frames/scene_001.jpg"},
+    {"id": "scene_002", "arc": "desarrollo", "duration_seconds": 10.0, "narration": "Detectó vapor de agua en la atmósfera de un mundo a cientos de años luz.", "on_screen_text": "Vapor de agua", "visual_description": "van gogh planet with swirling water vapor clouds", "image_prompt": "post-impressionist painting in the style of Van Gogh's Starry Night, swirling brushstrokes, deep blues and glowing yellows, vertical 9:16, no text + planet with swirling water vapor clouds", "source_ids": ["SRC-001"], "asset_filename": "frames/scene_002.jpg"},
+    {"id": "scene_003", "arc": "desarrollo", "duration_seconds": 10.0, "narration": "La luz de la estrella atraviesa el aire del planeta y deja la firma del agua.", "on_screen_text": "Firma de luz", "visual_description": "van gogh star light passing through planet atmosphere", "image_prompt": "post-impressionist painting in the style of Van Gogh's Starry Night, swirling brushstrokes, deep blues and glowing yellows, vertical 9:16, no text + star light passing through planet atmosphere", "source_ids": ["SRC-001"], "asset_filename": "frames/scene_003.jpg"},
+    {"id": "scene_004", "arc": "cierre_historia", "duration_seconds": 10.0, "narration": "No es habitable aún, pero es un paso más para buscar mundos con agua.", "on_screen_text": "Un paso más", "visual_description": "van gogh telescope looking at many swirling planets", "image_prompt": "post-impressionist painting in the style of Van Gogh's Starry Night, swirling brushstrokes, deep blues and glowing yellows, vertical 9:16, no text + telescope looking at many swirling planets", "source_ids": ["SRC-001"], "asset_filename": "frames/scene_004.jpg"},
+    {"id": "scene_005", "arc": "reflexion_o_pregunta", "duration_seconds": 11.0, "narration": "¿Qué más puede ver el Webb en las atmósferas lejanas? Esto fue Datos y ociosidades.", "on_screen_text": "¿Qué más ve?", "visual_description": "van gogh starry night with question mark planet", "image_prompt": "post-impressionist painting in the style of Van Gogh's Starry Night, swirling brushstrokes, deep blues and glowing yellows, vertical 9:16, no text + starry night with question mark planet", "source_ids": ["SRC-001"], "asset_filename": "frames/scene_005.jpg"}
+  ],
+  "cortinilla_fuentes": {"duration_seconds": 6, "titulo": "Fuentes", "aviso": "Imágenes generadas con IA. Voz sintética. Audio sintetizado.", "firma": "Datos y ociosidades · @datosyociosidades"},
+  "export": {"filename": "capsula.mp4", "resolution": "1080x1920", "fps": 30, "loudness_lufs": -14}
+}
