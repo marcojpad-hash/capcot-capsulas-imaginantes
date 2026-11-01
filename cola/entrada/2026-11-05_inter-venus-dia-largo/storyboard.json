@@ -23,12 +23,12 @@
     "cierre_historia": "La clave está en entender el mecanismo y sus límites, no solo repetir el dato sorprendente.",
     "reflexion_o_pregunta": "Esto fue Datos y ociosidades."
   },
-  "estilo_id": "ukiyo_e",
-  "estilo_visual": "Ukiyo-e (propio)",
+  "estilo_id": "constructivista_ruso",
+  "estilo_visual": "Stencil constructivista ruso",
   "visual_identity": {
-    "style_id": "ukiyo_e",
-    "style_name": "Ukiyo-e (propio)",
-    "prompt_base": "ukiyo-e Japanese woodblock print, flat color areas, elegant outlines, stylized waves and clouds, washi paper texture, vertical 9:16, no text",
+    "style_id": "constructivista_ruso",
+    "style_name": "Stencil constructivista ruso",
+    "prompt_base": "Russian constructivist propaganda photomontage, red and black on aged paper, bold diagonals, stencil shapes, grainy halftone photo, vertical 9:16, no text",
     "palette": "Según catálogo",
     "lighting": "Consistente con prompt_base",
     "texture": "Consistente con prompt_base",
@@ -77,13 +77,13 @@
       "narration": "Venus gira muy lentamente y en sentido retrógrado; su rotación sideral dura más que su traslación alrededor del Sol.",
       "on_screen_text": "Un día que dura más",
       "visual_description": "Representación didáctica de venus: un día más largo que su año, con secuencia visual causal y sin rótulos incrustados",
-      "image_prompt": "ukiyo-e Japanese woodblock print, flat color areas, elegant outlines, stylized waves and clouds, washi paper texture, vertical 9:16, no text, clear educational illustration showing venus: un día más largo que su año, causal sequence, consistent scene design",
+      "image_prompt": "Russian constructivist propaganda photomontage, red and black on aged paper, bold diagonals, stencil shapes, grainy halftone photo, vertical 9:16, no text, clear educational illustration showing venus: un día más largo que su año, causal sequence, consistent scene design",
       "ambiente": "Cama sonora discreta; voz al frente",
       "sfx": [],
       "source_ids": [
         "SRC-001"
       ],
-      "style_id": "ukiyo_e"
+      "style_id": "constructivista_ruso"
     },
     {
       "id": "scene_002",
@@ -92,13 +92,25 @@
       "narration": "Venus tarda unos 243 días terrestres en completar una vuelta sobre su eje, mientras que su órbita alrededor del Sol dura cerca de 225 días.",
       "on_screen_text": "El mecanismo",
       "visual_description": "Representación didáctica de venus: un día más largo que su año, con secuencia visual causal y sin rótulos incrustados",
-      "image_prompt": "ukiyo-e Japanese woodblock print, flat color areas, elegant outlines, stylized waves and clouds, washi paper texture, vertical 9:16, no text, clear educational illustration showing venus: un día más largo que su año, causal sequence, consistent scene design",
+      "image_prompt": "Russian constructivist propaganda photomontage, red and black on aged paper, bold diagonals, stencil shapes, grainy halftone photo, vertical 9:16, no text, clear educational illustration showing venus: un día más largo que su año, causal sequence, consistent scene design",
       "ambiente": "Cama sonora discreta; voz al frente",
       "sfx": [],
       "source_ids": [
         "SRC-001"
       ],
-      "style_id": "ukiyo_e"
+      "style_id": "constructivista_ruso",
+      "capa": {
+        "tipo": "mapa",
+        "titulo": "NASA Goddard Space Flight Center, Greenbelt",
+        "puntos": [
+          {
+            "nombre": "NASA Goddard Space Flight Center, Greenbelt",
+            "lat": 38.9955,
+            "lon": -76.8547
+          }
+        ],
+        "fuente": "NASA NSSDC Venus Fact Sheet. NASA NSSDC: 243 días de rotación sideral y 224.7 días de órbita. El pin ubica la institución NASA Goddard asociada al recurso, no a Venus. Cartografía base: OpenStreetMap."
+      }
     },
     {
       "id": "scene_003",
@@ -106,14 +118,20 @@
       "duration_seconds": 12,
       "on_screen_text": "Qué ocurre",
       "visual_description": "Representación didáctica de venus: un día más largo que su año, con secuencia visual causal y sin rótulos incrustados",
-      "image_prompt": "ukiyo-e Japanese woodblock print, flat color areas, elegant outlines, stylized waves and clouds, washi paper texture, vertical 9:16, no text, clear educational illustration showing venus: un día más largo que su año, causal sequence, consistent scene design",
+      "image_prompt": "Russian constructivist propaganda photomontage, red and black on aged paper, bold diagonals, stencil shapes, grainy halftone photo, vertical 9:16, no text, clear educational illustration showing venus: un día más largo que su año, causal sequence, consistent scene design",
       "ambiente": "Cama sonora discreta; voz al frente",
       "sfx": [],
       "source_ids": [
         "SRC-001"
       ],
-      "style_id": "ukiyo_e",
-      "narration": "Es decir, Venus termina una vuelta completa al Sol antes de completar una sola vuelta sobre sí mismo. Además gira en sentido contrario a la Tierra."
+      "style_id": "constructivista_ruso",
+      "narration": "Es decir, Venus termina una vuelta completa al Sol antes de completar una sola vuelta sobre sí mismo. Además gira en sentido contrario a la Tierra.",
+      "capa": {
+        "tipo": "dato",
+        "valor": "243 días",
+        "etiqueta": "Rotación sideral frente a 224.7 días de órbita",
+        "fuente": "NASA NSSDC Venus Fact Sheet. https://nssdc.gsfc.nasa.gov/planetary/factsheet/venusfact.html. NASA NSSDC: 243 días de rotación sideral y 224.7 días de órbita. El pin ubica la institución NASA Goddard asociada al recurso, no a Venus."
+      }
     },
     {
       "id": "scene_004",
@@ -122,13 +140,13 @@
       "narration": "Por eso hablamos de rotación sideral: el giro medido respecto a las estrellas lejanas. Con esa medida, su día es más largo que su año.",
       "on_screen_text": "La evidencia",
       "visual_description": "Representación didáctica de venus: un día más largo que su año, con secuencia visual causal y sin rótulos incrustados",
-      "image_prompt": "ukiyo-e Japanese woodblock print, flat color areas, elegant outlines, stylized waves and clouds, washi paper texture, vertical 9:16, no text, clear educational illustration showing venus: un día más largo que su año, causal sequence, consistent scene design",
+      "image_prompt": "Russian constructivist propaganda photomontage, red and black on aged paper, bold diagonals, stencil shapes, grainy halftone photo, vertical 9:16, no text, clear educational illustration showing venus: un día más largo que su año, causal sequence, consistent scene design",
       "ambiente": "Cama sonora discreta; voz al frente",
       "sfx": [],
       "source_ids": [
         "SRC-001"
       ],
-      "style_id": "ukiyo_e"
+      "style_id": "constructivista_ruso"
     },
     {
       "id": "scene_005",
@@ -137,13 +155,13 @@
       "narration": "Esa lentitud, sumada al giro retrógrado, vuelve engañosa cualquier comparación con la Tierra si no se aclara qué se está midiendo.",
       "on_screen_text": "El matiz",
       "visual_description": "Representación didáctica de venus: un día más largo que su año, con secuencia visual causal y sin rótulos incrustados",
-      "image_prompt": "ukiyo-e Japanese woodblock print, flat color areas, elegant outlines, stylized waves and clouds, washi paper texture, vertical 9:16, no text, clear educational illustration showing venus: un día más largo que su año, causal sequence, consistent scene design",
+      "image_prompt": "Russian constructivist propaganda photomontage, red and black on aged paper, bold diagonals, stencil shapes, grainy halftone photo, vertical 9:16, no text, clear educational illustration showing venus: un día más largo que su año, causal sequence, consistent scene design",
       "ambiente": "Cama sonora discreta; voz al frente",
       "sfx": [],
       "source_ids": [
         "SRC-001"
       ],
-      "style_id": "ukiyo_e"
+      "style_id": "constructivista_ruso"
     },
     {
       "id": "scene_006",
@@ -152,13 +170,13 @@
       "narration": "Un matiz: el día que veríamos de amanecer a amanecer, llamado día solar, es otra medida distinta. Para comparar hay que aclarar de qué día hablamos.",
       "on_screen_text": "Qué sí sabemos",
       "visual_description": "Representación didáctica de venus: un día más largo que su año, con secuencia visual causal y sin rótulos incrustados",
-      "image_prompt": "ukiyo-e Japanese woodblock print, flat color areas, elegant outlines, stylized waves and clouds, washi paper texture, vertical 9:16, no text, clear educational illustration showing venus: un día más largo que su año, causal sequence, consistent scene design",
+      "image_prompt": "Russian constructivist propaganda photomontage, red and black on aged paper, bold diagonals, stencil shapes, grainy halftone photo, vertical 9:16, no text, clear educational illustration showing venus: un día más largo que su año, causal sequence, consistent scene design",
       "ambiente": "Cama sonora discreta; voz al frente",
       "sfx": [],
       "source_ids": [
         "SRC-001"
       ],
-      "style_id": "ukiyo_e"
+      "style_id": "constructivista_ruso"
     },
     {
       "id": "scene_007",
@@ -167,13 +185,13 @@
       "narration": "En Venus, un día sobre su eje dura más que un año alrededor del Sol. ¿Cómo organizarías tu calendario en un planeta así? Esto fue Datos y ociosidades.",
       "on_screen_text": "Esto fue Datos y ociosidades",
       "visual_description": "Representación didáctica de venus: un día más largo que su año, con secuencia visual causal y sin rótulos incrustados",
-      "image_prompt": "ukiyo-e Japanese woodblock print, flat color areas, elegant outlines, stylized waves and clouds, washi paper texture, vertical 9:16, no text, clear educational illustration showing venus: un día más largo que su año, causal sequence, consistent scene design",
+      "image_prompt": "Russian constructivist propaganda photomontage, red and black on aged paper, bold diagonals, stencil shapes, grainy halftone photo, vertical 9:16, no text, clear educational illustration showing venus: un día más largo que su año, causal sequence, consistent scene design",
       "ambiente": "Cama sonora discreta; voz al frente",
       "sfx": [],
       "source_ids": [
         "SRC-001"
       ],
-      "style_id": "ukiyo_e"
+      "style_id": "constructivista_ruso"
     }
   ],
   "cortinilla_fuentes": {
