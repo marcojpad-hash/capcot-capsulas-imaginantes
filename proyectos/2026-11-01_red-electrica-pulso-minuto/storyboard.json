@@ -1,0 +1,351 @@
+{
+  "_schema": "CAPCOT_STORYBOARD_TEXT_V2",
+  "project_id": "2026-11-01_red-electrica-pulso-minuto",
+  "serie": "Datos y ociosidades",
+  "title": "Por qué la red eléctrica oscila cada minuto",
+  "titulo": "La red pierde el compás",
+  "language": "es-MX",
+  "aspect_ratio": "9:16",
+  "target_duration_seconds": 84,
+  "estructura": "comparacion",
+  "audience": "Público general; explicar frecuencia eléctrica y sistemas de respaldo sin jerga innecesaria. No marcar como Hecho para niños.",
+  "occasion": "Actualidad científica; cápsula de curiosidad tecnológica sin depender de una efeméride.",
+  "resumen": "Un patrón de 60 segundos aparece en doce redes eléctricas de cinco continentes. El equipo rastreó una autoprueba de una UPS que genera picos de corriente y siguió esa señal hasta la conexión con la red pública. El estudio no afirma que todas las oscilaciones tengan esa causa ni que exista una amenaza crítica inmediata.",
+  "narrative_contract": {
+    "central_question": "¿Qué provoca una oscilación de un minuto que aparece en redes eléctricas distintas?",
+    "promise": "Mostrar cómo una rutina automática de autoprueba en un sistema de respaldo puede dejar una huella medible en la red.",
+    "stakes": "Los picos repetidos de demanda pueden contribuir al desgaste de equipos que regulan la frecuencia; el artículo indica que el patrón observado aún no alcanza un nivel crítico de seguridad.",
+    "scientific_turn": "La señal coincide con picos de corriente de UPS; el fabricante confirmó que una autoprueba periódica del controlador genera los picos del equipo investigado.",
+    "evidence_limit": "El artículo identifica el patrón en doce redes de cinco continentes y rastrea una UPS concreta en el campus de Jülich; no prueba que todas las oscilaciones ni todas las UPS tengan esa causa.",
+    "payoff": "La apertura se resuelve: el pulso no era un fallo aleatorio, sino la suma de rutinas sincronizadas; la pregunta final extiende el mecanismo a otros aparatos sin afirmar que ya se haya demostrado."
+  },
+  "trend_source": {
+    "termino": "Oscilación de 60 segundos en redes eléctricas",
+    "fecha_publicacion": "2026-10-30",
+    "url": "https://www.nature.com/articles/s41560-026-02144-0",
+    "observacion_trends": "Sin señal directa en Trending Now México al corte del 2026-11-01; selección por novedad científica, cadena causal y oportunidad narrativa."
+  },
+  "editorial_status": "BORRADOR_EN_PROYECTOS_PENDIENTE_QA_INDEPENDIENTE",
+  "arco": {
+    "hook_medias_res": "La frecuencia cae brevemente al comenzar cada minuto en varias redes.",
+    "desarrollo": "La comparación de doce redes lleva a una investigación local; la señal coincide con edificios que contienen UPS; una autoprueba produce picos que se propagan hasta la conexión de 110 kV.",
+    "cierre_historia": "El mecanismo no es una batería gigantesca: son rutinas digitales pequeñas que coinciden en el tiempo.",
+    "reflexion_o_pregunta": "El estudio acota lo demostrado y propone escalonar las autopruebas; la red no perdía el compás por azar, sino por relojes sincronizados."
+  },
+  "estilo_id": "risografia",
+  "estilo_visual": "Risografía (propio)",
+  "visual_identity": {
+    "style_id": "risografia",
+    "style_name": "Risografía (propio)",
+    "prompt_base": "risograph print, two-color fluorescent pink and teal overprint, misregistration, grainy texture, flat shapes, vertical 9:16, no text",
+    "palette": "Dos tintas fijas: rosa fluorescente y turquesa; sobreimpresión constante.",
+    "lighting": "Luz gráfica plana de impresión; sin volumen fotográfico ni brillos realistas.",
+    "texture": "Grano risográfico visible y desregistro leve pero constante entre las dos tintas.",
+    "composition": "Vertical 9:16; siluetas planas, metáforas centrales y espacio negativo para tipografía añadida en postproducción.",
+    "negative_prompt": "photorealism, 3D render, gradients, gold-blue lithography, extra colors, baked-in text, logos, fake dashboards, fabricated meter readings, alarm symbols, blackout imagery, exact sensor coordinates not present in the source",
+    "reference_assets": [],
+    "seed": null,
+    "seed_policy": "Sin seed fija; mantener en todas las escenas las mismas dos tintas, grano, desregistro, grosor de silueta y jerarquía."
+  },
+  "typography_identity": {
+    "font_family": "DejaVu Sans",
+    "font_weight": "700 para gancho; 400 para subtítulos",
+    "title_style": "Gancho de cinco palabras; visible desde frame 0 en postproducción.",
+    "subtitle_style": "Bloques de máximo tres palabras; zona segura inferior.",
+    "hierarchy": "Gancho > dato/etiqueta > subtítulos.",
+    "animation": "Un movimiento principal por plano; tipografía añadida en postproducción."
+  },
+  "voice": {
+    "engine": "edge-tts",
+    "voice_id": "es-MX-JorgeNeural",
+    "language": "es-MX",
+    "rate": "+7%",
+    "pitch": "-2Hz",
+    "pad_seconds": 0.3,
+    "modo_pausas": "continuo"
+  },
+  "sources": [
+    {
+      "id": "SRC-001",
+      "cita_corta": "Witthaut et al. (2026). One-minute frequency disturbances from unintended synchronization in cyber–physical power systems. Nature Energy.",
+      "url": "https://www.nature.com/articles/s41560-026-02144-0",
+      "doi": "10.1038/s41560-026-02144-0",
+      "accessed": "2026-11-01",
+      "publication_date": "2026-10-30",
+      "supports": [
+        "Patrón de un minuto en doce redes eléctricas de cinco continentes.",
+        "Cuatro edificios medidos con UPS mostraron una señal fuerte; los edificios medidos sin UPS no mostraron el mismo patrón.",
+        "El fabricante confirmó que los picos de corriente de la UPS investigada procedían de autopruebas periódicas del sistema de gestión de baterías.",
+        "La señal se rastreó a través de transformadores y una barra colectora hasta la conexión con la red pública de 110 kV.",
+        "El artículo indica que el patrón observado aún no había alcanzado un nivel crítico de seguridad y propone mejorar el diseño de control."
+      ],
+      "verification_status": "PENDIENTE",
+      "verification_detail": "El registro del editor muestra el DOI y la fecha, pero la apertura directa de Nature redirigió a idp.nature.com y devolvió HTTP 500; doi.org y Crossref REST no fueron accesibles en esta consulta. El DOI no se considera validado."
+    },
+    {
+      "id": "SRC-002",
+      "cita_corta": "Forschungszentrum Jülich (2026). Mystery of 60-Second Fluctuations in Power Grids Solved.",
+      "url": "https://www.fz-juelich.de/en/news/archive/press-release/2026/mystery-of-60-second-fluctuations-in-power-grids-solved",
+      "doi": null,
+      "accessed": "2026-11-01",
+      "publication_date": "2026-10-30",
+      "supports": [
+        "El equipo instaló medidores en 80 ubicaciones del campus.",
+        "La señal apareció en las ubicaciones donde había sistemas grandes de almacenamiento con baterías.",
+        "El comunicado explica que la autoprueba se ejecutaba al inicio de cada minuto y que repartir aleatoriamente las comprobaciones puede reducir la sincronización.",
+        "El comunicado indica que las desviaciones observadas no eran críticas para la seguridad de la red."
+      ],
+      "verification_status": "VERIFICADO_RESOLVEDOR",
+      "verification_detail": "URL institucional abierta y consultada directamente; no se atribuye DOI a este comunicado."
+    },
+    {
+      "id": "SRC-003",
+      "cita_corta": "Wikidata. Forschungszentrum Jülich (Q697111), coordenada institucional.",
+      "url": "https://www.wikidata.org/wiki/Q697111",
+      "doi": null,
+      "accessed": "2026-11-01",
+      "publication_date": null,
+      "supports": [
+        "Coordenada institucional 50°54'18\"N, 6°24'43\"E, convertida a 50.905, 6.411944 para el pin contextual."
+      ],
+      "verification_status": "VERIFICADO_RESOLVEDOR",
+      "verification_detail": "Ficha abierta y coordenada visible. El punto representa el centro institucional del campus, no la posición de los 80 medidores ni de la UPS."
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_001",
+      "arc": "hook_medias_res",
+      "duration_seconds": 9,
+      "narration": "Al cambiar el minuto, varias redes eléctricas pierden un poco de frecuencia. Sesenta segundos después, vuelve a ocurrir. No es un apagón: es un pulso exacto.",
+      "on_screen_text": "Cada minuto",
+      "visual_description": "Una línea de frecuencia cae unos instantes al cambiar el minuto y vuelve a su nivel; detrás, una ciudad esquemática conectada por líneas eléctricas. No representar un apagón ni una falla general.",
+      "image_prompt": "risograph print, two-color fluorescent pink and teal overprint, misregistration, grainy texture, flat shapes, vertical 9:16, no text; A simplified electric grid line running through abstract city blocks; at the start of a minute the frequency trace dips briefly; show a small precise pulse, not a blackout; no numbers or labels, leave negative space for overlay.",
+      "ambiente": "Zumbido eléctrico bajo y continuo, sin tono de alarma.",
+      "sfx": [
+        "Un pulso grave breve al inicio del minuto.",
+        "Un clic seco que marca la repetición."
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "risografia"
+    },
+    {
+      "id": "scene_002",
+      "arc": "desarrollo",
+      "duration_seconds": 9,
+      "narration": "El equipo comparó registros de doce sistemas en cinco continentes. En todos encontró una oscilación con periodo de un minuto, estable durante años.",
+      "on_screen_text": "12 redes",
+      "visual_description": "Globo gráfico con cinco masas continentales y doce puntos abstractos sin asignación a países; alrededor, una onda de sesenta segundos que se repite. No presentar los puntos como coordenadas reales.",
+      "image_prompt": "risograph print, two-color fluorescent pink and teal overprint, misregistration, grainy texture, flat shapes, vertical 9:16, no text; A flat globe with five continent silhouettes and twelve unlabelled signal nodes; no country-specific positions and no exact grid map; one narrow one-minute waveform repeated around the globe; no text.",
+      "ambiente": "El zumbido continúa y se abre espacialmente.",
+      "sfx": [
+        "Cinco tonos breves y suaves que se agrupan.",
+        "Un tic repetido cada segundo como metáfora del periodo, no como dato de frecuencia eléctrica."
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "risografia",
+      "capa": {
+        "tipo": "dato",
+        "valor": "12 redes · 5 continentes",
+        "etiqueta": "Sistemas donde se observó un patrón de 60 segundos",
+        "fuente": "SRC-001"
+      }
+    },
+    {
+      "id": "scene_003",
+      "arc": "desarrollo",
+      "duration_seconds": 8,
+      "narration": "Para rastrearla, bajaron al campus de Forschungszentrum Jülich, en Alemania. Allí instalaron medidores en 80 ubicaciones.",
+      "on_screen_text": "80 puntos",
+      "visual_description": "Mapa contextual de Jülich con un solo pin institucional; junto a él, ochenta marcas esquemáticas agrupadas sin atribuirles posiciones individuales.",
+      "image_prompt": "risograph print, two-color fluorescent pink and teal overprint, misregistration, grainy texture, flat shapes, vertical 9:16, no text; A simple contextual map panel focused on Jülich, Germany, with one institutional campus pin added in post; a cluster of eighty abstract measurement markers around the campus area without claiming their exact positions; no individual sensor coordinates, no text.",
+      "ambiente": "Ambiente de laboratorio discreto con zumbido de fondo.",
+      "sfx": [
+        "Tres pitidos de medición muy suaves.",
+        "Un sonido breve de enfoque al aparecer el pin."
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002",
+        "SRC-003"
+      ],
+      "style_id": "risografia",
+      "capa": {
+        "tipo": "mapa",
+        "region": [
+          6.35,
+          6.47,
+          50.86,
+          50.95
+        ],
+        "puntos": [
+          {
+            "nombre": "Forschungszentrum Jülich — centro institucional, pin contextual",
+            "lat": 50.905,
+            "lon": 6.411944,
+            "precision": "Coordenada institucional; no localiza los 80 medidores ni la UPS."
+          }
+        ],
+        "titulo": "Campus de investigación · Jülich, Alemania",
+        "fuente": "SRC-003 para la coordenada institucional; SRC-002 para el campus y las 80 ubicaciones medidas."
+      }
+    },
+    {
+      "id": "scene_004",
+      "arc": "desarrollo",
+      "duration_seconds": 9,
+      "narration": "La señal apareció con fuerza en cuatro edificios, todos con sistemas de respaldo de baterías. En los edificios medidos sin ellos, no apareció.",
+      "on_screen_text": "4 edificios",
+      "visual_description": "Cuatro edificios resaltados contienen cajas de respaldo con baterías; otros edificios medidos quedan en segundo plano sin el pulso. La imagen distingue edificios, no cuatro baterías.",
+      "image_prompt": "risograph print, two-color fluorescent pink and teal overprint, misregistration, grainy texture, flat shapes, vertical 9:16, no text; Four simple building silhouettes with battery UPS boxes; a repeated pulse appears only at those four measured buildings; other measured buildings remain quiet; flat two-color overprint, no realistic architecture.",
+      "ambiente": "Ventilación de edificio y zumbido eléctrico contenido.",
+      "sfx": [
+        "Cuatro clics breves, uno por edificio.",
+        "El pulso se detiene en los edificios sin UPS."
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "style_id": "risografia",
+      "capa": {
+        "tipo": "dato",
+        "valor": "4 edificios",
+        "etiqueta": "Señal fuerte; todos tenían UPS",
+        "fuente": "SRC-001"
+      }
+    },
+    {
+      "id": "scene_005",
+      "arc": "desarrollo",
+      "duration_seconds": 9,
+      "narration": "En una instalación, la batería daba un pico de corriente cada minuto. El fabricante confirmó la causa: una autoprueba automática del controlador.",
+      "on_screen_text": "Autoprueba",
+      "visual_description": "Corte esquemático de una UPS: batería, controlador y una pequeña subida de corriente que aparece en el instante de la autoprueba.",
+      "image_prompt": "risograph print, two-color fluorescent pink and teal overprint, misregistration, grainy texture, flat shapes, vertical 9:16, no text; A cutaway of one UPS battery and its controller; a small diagnostic self-test triggers a current spike at the minute mark; show a simple current line and a small switch; do not imply that one device powers an entire grid.",
+      "ambiente": "Zumbido eléctrico cercano, más definido.",
+      "sfx": [
+        "Chirp corto de diagnóstico.",
+        "Golpe eléctrico breve al aparecer el pico de corriente."
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "style_id": "risografia"
+    },
+    {
+      "id": "scene_006",
+      "arc": "desarrollo",
+      "duration_seconds": 8,
+      "narration": "Los investigadores siguieron ese consumo por varios transformadores hasta la conexión con la red pública de 110 kilovoltios.",
+      "on_screen_text": "110 kV",
+      "visual_description": "La señal viaja desde la UPS por transformadores y una barra colectora hasta una torre de transmisión; el trayecto es esquemático, no un plano eléctrico literal.",
+      "image_prompt": "risograph print, two-color fluorescent pink and teal overprint, misregistration, grainy texture, flat shapes, vertical 9:16, no text; A single current pulse travels through transformer silhouettes and a busbar toward a high-voltage transmission pylon; highlight one schematic path; no fabricated meter readouts or precise electrical diagram.",
+      "ambiente": "El zumbido se amplía, sin aumentar a tono de emergencia.",
+      "sfx": [
+        "Dos golpes metálicos suaves al cruzar transformadores.",
+        "Barrido eléctrico corto al llegar a la torre."
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "risografia",
+      "capa": {
+        "tipo": "dato",
+        "valor": "110 kV",
+        "etiqueta": "Conexión pública hasta donde se rastreó la señal",
+        "fuente": "SRC-001"
+      }
+    },
+    {
+      "id": "scene_007",
+      "arc": "cierre_historia",
+      "duration_seconds": 13,
+      "narration": "Pero el estudio no demuestra que todas las oscilaciones mundiales vengan de baterías: encontró el patrón en doce redes y rastreó una UPS concreta. Tampoco lo considera una amenaza crítica actual.",
+      "on_screen_text": "Límite del estudio",
+      "visual_description": "La imagen separa un mapa de doce redes estudiadas de una sola UPS rastreada en detalle; el resto queda como evidencia de patrón, no como causa demostrada.",
+      "image_prompt": "risograph print, two-color fluorescent pink and teal overprint, misregistration, grainy texture, flat shapes, vertical 9:16, no text; Separate a schematic set of twelve grid symbols from one highlighted UPS under investigation; show the evidence boundary clearly; no claim that every grid or every battery has the same cause; calm editorial composition.",
+      "ambiente": "El zumbido baja y deja espacio a la voz.",
+      "sfx": [
+        "Un pulso se apaga suavemente.",
+        "Pausa breve antes del cierre."
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "style_id": "risografia"
+    },
+    {
+      "id": "scene_008",
+      "arc": "reflexion_o_pregunta",
+      "duration_seconds": 13,
+      "narration": "Separar las autopruebas puede reducir el pulso. La red no perdía el compás por azar: muchos relojes marcaban el mismo segundo. ¿Qué otra rutina podría hacerlo? Esto fue Datos y ociosidades.",
+      "on_screen_text": "¿Qué rutina?",
+      "visual_description": "Varios relojes de aparatos dejan de coincidir y sus pulsos se dispersan; la onda de la red se suaviza. Cierre circular con la misma línea de frecuencia de la apertura.",
+      "image_prompt": "risograph print, two-color fluorescent pink and teal overprint, misregistration, grainy texture, flat shapes, vertical 9:16, no text; Several device clocks shift to staggered times and their current pulses no longer stack; the grid waveform becomes smaller and more even; return to the opening frequency line for a circular payoff; calm, no red alarm symbols.",
+      "ambiente": "Los pulsos se separan y el zumbido se estabiliza.",
+      "sfx": [
+        "Tics desfasados que se alejan entre sí.",
+        "Resolución sonora corta y tranquila al final."
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "style_id": "risografia"
+    }
+  ],
+  "cortinilla_fuentes": {
+    "duration_seconds": 6,
+    "titulo": "Fuentes científicas",
+    "aviso": "Visuales ilustrativos previstos con IA; no son capturas, mediciones ni registros instrumentales reales.",
+    "firma": "Datos y ociosidades",
+    "source_ids": [
+      "SRC-001",
+      "SRC-002"
+    ]
+  },
+  "audio": {
+    "music_asset": null,
+    "music_plan": "Cama sintética en menor, calma y pulso eléctrico discreto; sin crescendo alarmista. Solo planificación textual, no hay archivo de audio.",
+    "music_license": null
+  },
+  "export": {
+    "resolution": "1080x1920",
+    "fps": 30,
+    "render_status": "NOT_GENERATED"
+  },
+  "publicacion": {
+    "status": "PENDIENTE_DECISION_GROK",
+    "platforms": [
+      "YouTube Shorts",
+      "TikTok",
+      "Facebook Reels"
+    ],
+    "note": "No publicar ni programar desde preproducción textual; requiere decisión editorial y QA oficial de Grok."
+  },
+  "estado": "BORRADOR_EN_PROYECTOS_NO_PROMOVIDO",
+  "production_mode": "storyboard_only",
+  "validation_notes": [
+    "Borrador del investigador guardado en proyectos; no crear entrada en cola hasta PASS de QA narrativo independiente.",
+    "No se añadió narrative_qa ni se realizó autoevaluación; el auditor independiente debe ocultar título, resumen, arco y notas, y leer solo la narración concatenada.",
+    "El DOI de la fuente primaria permanece PENDIENTE: la URL del editor muestra la cita, pero el resolver y la apertura directa quedaron bloqueados en esta consulta.",
+    "El pin representa el centro institucional del campus; no localiza los 80 medidores ni la UPS."
+  ],
+  "linea_tematica_provisional": "Actualidad científica",
+  "approved_assets": [],
+  "risk_notes": [
+    "No afirmar que todas las oscilaciones de todas las redes sean causadas por UPS; el estudio identifica el patrón en doce redes y rastrea una UPS concreta.",
+    "No presentar el resultado como amenaza inminente de apagón; el artículo indica que el patrón observado aún no alcanzaba un nivel crítico de seguridad.",
+    "No confundir el periodo de 60 segundos con la frecuencia nominal de 50 o 60 Hz de la red.",
+    "Las 80 ubicaciones son puntos de medición en el campus, no 80 UPS ni 80 edificios.",
+    "El pin cartográfico es la coordenada institucional del centro; no representa la ubicación exacta de los medidores.",
+    "No presentar la reducción de 17.000 veces ni ningún otro dato de otro candidato en este storyboard."
+  ]
+}
