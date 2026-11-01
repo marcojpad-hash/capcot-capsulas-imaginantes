@@ -1,5 +1,7 @@
 # PARA CHATGPT — Faltantes reales (31 oct 2026)
 
+> **ACTUALIZADO 1-nov 04:30 CDMX → el plan vigente es `PARA_CHATGPT_hasta_08nov.md`** (no-tocar, prioridad estricta, formato). **PRIORIDAD #1: kids 3-nov 07:00 NUEVO**, luego datos 23:30, luego rewrite 5–7 y al final Machu/cielo azul. No gastar créditos del bot Imaginantes.
+
 > **Antes de escribir nada, lee `capcot/ajustes_entre_modelos/PARA_CHATGPT_LINEA_EDITORIAL.md` (§1–9).** El §8 trae las figuras retóricas que salen del análisis Imaginantes / Pepe Gordon (paradoja al arrancar, metáfora que se pueda ver, antítesis en el clímax, eco circular y la firma al cerrar). También trae las señales de "LLM plano" que están prohibidas y la "prueba de la cena". El §9 dice que en un remontaje se conserva un arranque que ya engancha.
 > Nada de research nuevo: usa las fuentes que ya tiene cada proyecto.
 
