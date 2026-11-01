@@ -1,0 +1,236 @@
+{
+  "_schema": "CAPCOT_STORYBOARD_TEXT_V2",
+  "project_id": "2026-11-06_comida-aguacate-negro",
+  "serie": "Datos y ociosidades",
+  "title": "¿Por qué se pone negro el aguacate?",
+  "titulo": "El aguacate se oxida",
+  "language": "es-MX",
+  "aspect_ratio": "9:16",
+  "target_duration_seconds": 84,
+  "estructura": "pregunta",
+  "audience": "Público general",
+  "occasion": "Cápsula vertical de divulgación",
+  "resumen": "La polifenol oxidasa participa en el pardeamiento de pulpa vegetal expuesta al oxígeno.",
+  "trend_source": {
+    "termino": "¿Por qué se pone negro el aguacate?",
+    "fecha_publicacion": "",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11874750/"
+  },
+  "editorial_status": "PROPUESTA_PENDIENTE_DE_GROK",
+  "arco": {
+    "hook_medias_res": "Al cortar un aguacate, rompes células que antes mantenían separados varios componentes. El oxígeno del aire entra en contacto con la pulpa.",
+    "desarrollo": "Una enzima llamada polifenol oxidasa puede acelerar reacciones entre compuestos fenólicos y oxígeno. El resultado son pigmentos oscuros que cambian el color de la superficie. Este proceso se llama pardeamiento enzimático. También ocurre en frutas como manzanas y plátanos cuando se cortan o golpean. Que la superficie se oscurezca no significa automáticamente que el aguacate esté podrido. Olor, textura, tiempo y condiciones de almacenamiento aportan información adicional. El cambio de color es una reacción química favorecida por el daño celular y el oxígeno; reducir el contacto con el aire puede retrasarla.",
+    "cierre_historia": "El mecanismo tiene límites y depende de las condiciones observadas. No conviene convertir una medición particular en una regla universal.",
+    "reflexion_o_pregunta": "Esto fue Datos y ociosidades."
+  },
+  "estilo_id": "linea_fina",
+  "estilo_visual": "Sketch de línea fina (tipo referencia bartending)",
+  "visual_identity": {
+    "style_id": "linea_fina",
+    "style_name": "Sketch de línea fina (tipo referencia bartending)",
+    "prompt_base": "fine line pencil illustration on white paper, precise thin strokes, subtle graphite shading, minimal composition, vertical 9:16, no text",
+    "palette": "Según catálogo",
+    "lighting": "Según prompt base",
+    "texture": "Según prompt base",
+    "composition": "Vertical 9:16; continuidad de sujeto y paleta",
+    "negative_prompt": "No texto generado, no marcas de agua, no datos falsos",
+    "reference_assets": [],
+    "seed": null,
+    "seed_policy": "Continuidad entre escenas"
+  },
+  "typography_identity": {
+    "font_family": "DejaVu Sans",
+    "font_weight": "700 para gancho; 400 para subtítulos",
+    "title_style": "Máximo seis palabras desde frame 0",
+    "subtitle_style": "Bloques de máximo tres palabras",
+    "hierarchy": "Gancho > dato > subtítulos",
+    "animation": "Un movimiento por plano; texto en postproducción"
+  },
+  "voice": {
+    "engine": "edge-tts",
+    "voice_id": "es-MX-JorgeNeural",
+    "language": "es-MX",
+    "rate": "+7%",
+    "pitch": "-2Hz",
+    "pad_seconds": 0.3,
+    "modo_pausas": "continuo"
+  },
+  "sources": [
+    {
+      "id": "SRC-001",
+      "cita_corta": "Estudio Heliyon 2025 sobre polifenol oxidasa y pardeamiento enzimático.",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11874750/",
+      "doi": null,
+      "accessed": "2026-10-31",
+      "publication_date": "",
+      "supports": [
+        "La polifenol oxidasa participa en el pardeamiento de pulpa vegetal expuesta al oxígeno."
+      ],
+      "verification_status": "VERIFICADO_RESOLVEDOR"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_001",
+      "arc": "hook_medias_res",
+      "duration_seconds": 10,
+      "narration": "Al cortar un aguacate, rompes células que antes mantenían separados varios componentes. El oxígeno del aire entra en contacto con la pulpa.",
+      "on_screen_text": "El aguacate se oxida",
+      "visual_description": "Representación didáctica de ¿por qué se pone negro el aguacate?, secuencia causal clara y legible",
+      "image_prompt": "fine line pencil illustration on white paper, precise thin strokes, subtle graphite shading, minimal composition, vertical 9:16, no text, educational visual scene illustrating ¿por qué se pone negro el aguacate?, consistent visual continuity",
+      "ambiente": "Ambiente discreto; voz al frente",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "linea_fina"
+    },
+    {
+      "id": "scene_002",
+      "arc": "desarrollo",
+      "duration_seconds": 12,
+      "narration": "Una enzima llamada polifenol oxidasa puede acelerar reacciones entre compuestos fenólicos y oxígeno. El resultado son pigmentos oscuros que cambian el color de la superficie.",
+      "on_screen_text": "El mecanismo",
+      "visual_description": "Representación didáctica de ¿por qué se pone negro el aguacate?, secuencia causal clara y legible",
+      "image_prompt": "fine line pencil illustration on white paper, precise thin strokes, subtle graphite shading, minimal composition, vertical 9:16, no text, educational visual scene illustrating ¿por qué se pone negro el aguacate?, consistent visual continuity",
+      "ambiente": "Ambiente discreto; voz al frente",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "linea_fina",
+      "capa": {
+        "tipo": "mapa",
+        "titulo": "Western Regional Research Center, Albany",
+        "puntos": [
+          {
+            "nombre": "Western Regional Research Center, Albany",
+            "lat": 37.887,
+            "lon": -122.298
+          }
+        ],
+        "fuente": "Contexto institucional de investigación de alimentos; mapa referencial. La fuente describe la participación de polifenol oxidasa en el pardeamiento. Pin de referencia institucional en Albany; no representa zona de cultivo ni origen del aguacate. Cartografía base: OpenStreetMap."
+      }
+    },
+    {
+      "id": "scene_003",
+      "arc": "desarrollo",
+      "duration_seconds": 12,
+      "narration": "Este proceso se llama pardeamiento enzimático. También ocurre en frutas como manzanas y plátanos cuando se cortan o golpean.",
+      "on_screen_text": "Qué ocurre",
+      "visual_description": "Representación didáctica de ¿por qué se pone negro el aguacate?, secuencia causal clara y legible",
+      "image_prompt": "fine line pencil illustration on white paper, precise thin strokes, subtle graphite shading, minimal composition, vertical 9:16, no text, educational visual scene illustrating ¿por qué se pone negro el aguacate?, consistent visual continuity",
+      "ambiente": "Ambiente discreto; voz al frente",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "linea_fina",
+      "capa": {
+        "tipo": "dato",
+        "valor": "Polifenol oxidasa",
+        "etiqueta": "Enzima que participa en el pardeamiento enzimático",
+        "fuente": "Contexto institucional de investigación de alimentos; mapa referencial. https://pmc.ncbi.nlm.nih.gov/articles/PMC11874750/. La fuente describe la participación de polifenol oxidasa en el pardeamiento. Pin de referencia institucional en Albany; no representa zona de cultivo ni origen del aguacate."
+      }
+    },
+    {
+      "id": "scene_004",
+      "arc": "desarrollo",
+      "duration_seconds": 12,
+      "narration": "Que la superficie se oscurezca no significa automáticamente que el aguacate esté podrido. Olor, textura, tiempo y condiciones de almacenamiento aportan información adicional.",
+      "on_screen_text": "La evidencia",
+      "visual_description": "Representación didáctica de ¿por qué se pone negro el aguacate?, secuencia causal clara y legible",
+      "image_prompt": "fine line pencil illustration on white paper, precise thin strokes, subtle graphite shading, minimal composition, vertical 9:16, no text, educational visual scene illustrating ¿por qué se pone negro el aguacate?, consistent visual continuity",
+      "ambiente": "Ambiente discreto; voz al frente",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "linea_fina"
+    },
+    {
+      "id": "scene_005",
+      "arc": "desarrollo",
+      "duration_seconds": 12,
+      "narration": "El cambio de color es una reacción química favorecida por el daño celular y el oxígeno. Si el oxígeno es parte del problema, el aire es la clave.",
+      "on_screen_text": "El matiz",
+      "visual_description": "Representación didáctica de ¿por qué se pone negro el aguacate?, secuencia causal clara y legible",
+      "image_prompt": "fine line pencil illustration on white paper, precise thin strokes, subtle graphite shading, minimal composition, vertical 9:16, no text, educational visual scene illustrating ¿por qué se pone negro el aguacate?, consistent visual continuity",
+      "ambiente": "Ambiente discreto; voz al frente",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "linea_fina"
+    },
+    {
+      "id": "scene_006",
+      "arc": "cierre_historia",
+      "duration_seconds": 10,
+      "narration": "El límite: oscurecerse no equivale a estar podrido. Para decidir si un aguacate sigue bien, cuentan también el olor, la textura y el tiempo guardado.",
+      "on_screen_text": "Qué sabemos",
+      "visual_description": "Representación didáctica de ¿por qué se pone negro el aguacate?, secuencia causal clara y legible",
+      "image_prompt": "fine line pencil illustration on white paper, precise thin strokes, subtle graphite shading, minimal composition, vertical 9:16, no text, educational visual scene illustrating ¿por qué se pone negro el aguacate?, consistent visual continuity",
+      "ambiente": "Ambiente discreto; voz al frente",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "linea_fina"
+    },
+    {
+      "id": "scene_007",
+      "arc": "reflexion_o_pregunta",
+      "duration_seconds": 10,
+      "narration": "Tip: cubre la pulpa cortada para reducir su contacto con el aire y retrasar el pardeamiento. ¿Qué truco usas tú para tu guacamole? Esto fue Datos y ociosidades.",
+      "on_screen_text": "Esto fue Datos y ociosidades",
+      "visual_description": "Representación didáctica de ¿por qué se pone negro el aguacate?, secuencia causal clara y legible",
+      "image_prompt": "fine line pencil illustration on white paper, precise thin strokes, subtle graphite shading, minimal composition, vertical 9:16, no text, educational visual scene illustrating ¿por qué se pone negro el aguacate?, consistent visual continuity",
+      "ambiente": "Ambiente discreto; voz al frente",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "linea_fina"
+    }
+  ],
+  "cortinilla_fuentes": {
+    "duration_seconds": 6,
+    "titulo": "Fuentes",
+    "aviso": "Contenido realizado con apoyo de IA; declarar recursos sintéticos usados en versión final.",
+    "firma": "Datos y ociosidades",
+    "source_ids": [
+      "SRC-001"
+    ]
+  },
+  "audio": {
+    "music_asset": null,
+    "music_plan": "Cama discreta; selección y licencia por validar en montaje",
+    "music_license": null
+  },
+  "export": {
+    "resolution": "1080x1920",
+    "fps": 30,
+    "render_status": "NOT_GENERATED"
+  },
+  "publicacion": {
+    "status": "PENDIENTE_DECISION_GROK",
+    "platforms": [
+      "YouTube Shorts",
+      "TikTok",
+      "Facebook Reels"
+    ],
+    "note": "No publicar desde preproducción textual."
+  },
+  "estado": "PENDIENTE_REVISION_GROK",
+  "production_mode": "storyboard_only",
+  "validation_notes": [
+    "7 escenas; objetivo 78 s de narración + 6 s de cortinilla = 84 s."
+  ],
+  "linea_tematica_provisional": "Ciencia y naturaleza",
+  "approved_assets": [],
+  "risk_notes": [
+    "Mantener límites y matices de la fuente; no generalizar más allá de la evidencia."
+  ],
+  "thumbnail_source": "scene_001"
+}
