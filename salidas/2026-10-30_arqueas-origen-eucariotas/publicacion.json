@@ -130,7 +130,13 @@
       "confirmado": "2026-10-31T19:25:00-06:00"
     },
     "facebook": {
-      "estado": "pendiente_ui_reemplazo_v4"
+      "estado": "programado_v4",
+      "viejo": "borrado",
+      "ui_ny_gmt5": "2026-11-01 20:00",
+      "ai_label": false,
+      "subtitulos_auto": true,
+      "confirmado": "2026-10-31T19:45:00-06:00",
+      "nota": "thumbnail posiblemente procesando"
     }
   }
 }

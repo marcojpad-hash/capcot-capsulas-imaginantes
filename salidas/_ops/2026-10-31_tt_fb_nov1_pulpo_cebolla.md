@@ -21,3 +21,6 @@ TikTok Studio: 4 slots Nov2 con capsula_v4 (viejos borrados, nuevo 1 vez c/u, AI
 
 ## Reemplazo v4 TT Nov3 (31-oct ~19:40 CDMX)
 TikTok Studio: 2 slots Nov3 con capsula_v4 (viejos borrados, AI label ON): juno choque proa 6:00 PM (~1:32), SmartPE edición plantas 8:00 PM (GMT-5). **Los 10 slots TT v4 (Nov1–3) hechos.** FB Nov1–3 (10 slots) siguen pendientes (`fb_estado: pendiente_ui_reemplazo_v4`).
+
+## Reemplazo v4 FB Nov1 (31-oct ~19:45 CDMX)
+Meta Business Suite: 4 Reels Nov1 con capsula_v4 (viejos borrados, nuevo 1 vez c/u, sin AI label, subtítulos auto ON): pulpo 08:00, cebolla 14:30, baffin 18:00, arqueas 20:00 (GMT-5). Arqueas: thumbnail posiblemente aún procesando. FB Nov2–3 siguen pendientes.
