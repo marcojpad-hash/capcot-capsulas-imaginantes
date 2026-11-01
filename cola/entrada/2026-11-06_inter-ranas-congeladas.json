@@ -67,6 +67,19 @@
         "Rana sylvatica tolera congelación parcial; la glucosa tisular actúa como crioprotector."
       ],
       "verification_status": "VERIFICADO_RESOLVEDOR"
+    },
+    {
+      "id": "SRC-002",
+      "cita_corta": "Costanzo et al. 2013, Hibernation physiology, freezing adaptation and extreme freeze tolerance in a northern population of the wood frog, Journal of Experimental Biology.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/23966588/",
+      "doi": "10.1242/jeb.089342",
+      "accessed": "2026-11-01",
+      "publication_date": "2013-09-15",
+      "supports": [
+        "Una población de Rana sylvatica de Interior Alaska sobrevivió experimentalmente a congelación de hasta −16 °C.",
+        "La tolerancia extrema se asocia con crioprotectores y agua ligada; las condiciones y la aclimatación invernal son determinantes."
+      ],
+      "verification_status": "VERIFICADO_PUBMED"
     }
   ],
   "scenes": [
@@ -123,14 +136,15 @@
       "ambiente": "Ambiente discreto; voz al frente",
       "sfx": [],
       "source_ids": [
-        "SRC-001"
+        "SRC-001",
+        "SRC-002"
       ],
       "style_id": "papel_rasgado_capas",
       "capa": {
         "tipo": "dato",
         "valor": "Hasta −16 °C",
         "etiqueta": "Temperatura mínima tolerada en población invernal estudiada",
-        "fuente": "Estudios de tolerancia al congelamiento de Rana sylvatica en Interior Alaska. https://pubmed.ncbi.nlm.nih.gov/23966588/. Estudio de población de Rana sylvatica de Interior Alaska. El punto es una referencia regional aproximada, no la ubicación exacta de todos los individuos."
+        "fuente": "Costanzo et al. (2013), Journal of Experimental Biology, DOI 10.1242/jeb.089342. Una población invernal de Interior Alaska sobrevivió a congelación experimental de hasta −16 °C. No es un límite universal para la especie ni para cualquier estación. https://pubmed.ncbi.nlm.nih.gov/23966588/."
       }
     },
     {
@@ -159,7 +173,8 @@
       "ambiente": "Ambiente discreto; voz al frente",
       "sfx": [],
       "source_ids": [
-        "SRC-001"
+        "SRC-001",
+        "SRC-002"
       ],
       "style_id": "papel_rasgado_capas"
     },
@@ -174,7 +189,8 @@
       "ambiente": "Ambiente discreto; voz al frente",
       "sfx": [],
       "source_ids": [
-        "SRC-001"
+        "SRC-001",
+        "SRC-002"
       ],
       "style_id": "papel_rasgado_capas"
     },
