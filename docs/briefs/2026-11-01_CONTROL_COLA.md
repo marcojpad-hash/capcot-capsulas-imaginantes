@@ -1,168 +1,119 @@
 # CONTROL DE COLA CAPCOT — 2026-11-01
 
-**Corte:** 2026-11-01, 14:20 CDMX  
-**Repositorio:** `marcojpad-hash/capcot-capsulas-imaginantes`  
-**Rama:** `feature/capcot-video-discovery-continuity`  
-**Tipo de revisión:** auditoría estática de GitHub; no se ejecutó el runtime local.
+**Corte:** 1-nov-2026, tarde CDMX. **Rama:** `feature/capcot-video-discovery-continuity`. **HEAD de auditoría:** `2abc31925449c0cd53656f6f3dbadc4db5fadb84`.  
+**Método:** lectura de GitHub y revisión estática; no hubo checkout/runtime local.
 
 ## Dictamen
 
-**HANDOFF NO CONFIABLE.** Hay cinco piezas audiovisuales asignadas a slots del 1-nov y una sexta entrada de dato del día pendiente. Ninguna tiene acuse machine-readable en `cola/estado/`. Los paquetes de cola están en carpetas anidadas que el workflow de dispatch no detecta. Las últimas diez ejecuciones de Actions aparecen fallidas; las ocho ejecuciones cuyo job se inspeccionó fallaron en el mismo paso de configuración y omitieron el envío.
+**HANDOFF BLOQUEADO.** Hay 3 borradores en `proyectos/`, 0 entradas activas en `cola/entrada/`, 2 snapshots bloqueados (pulpo y cebolla), 5 paquetes de salida asignados a slots y un slot de dato de las 23:30 aún pendiente. No hay acuses en `cola/estado/`; recepción de Grok no confirmada para ninguno.
 
-Los artefactos de salida de pulpo y cebolla contienen QA de 19/21, con fallo de mapa y dato/gráfico, pero también contienen registros de carga/programación. Baffin tiene 20/21 y duración renderizada de 91.93 s, fuera del límite de 90 s. Xolo y tiburón no tienen `qa.json`. No se puede atribuir recepción ni QA aprobado a Grok sin el estado correspondiente.
+QA narrativo independiente: pulpo **FAIL 72**, cebolla **FAIL 79**, red eléctrica **PASS 89**. Red eléctrica no se promovió: el validador Python no pudo ejecutarse, el DOI primario sigue `PENDIENTE` y crear una entrada en la ruta observada por Actions dispararía el workflow, expresamente prohibido en esta auditoría.
 
-## 1. Briefs y paquetes del 1-nov
+Las 12 ejecuciones más recientes de Actions (#136–147) fallaron. Error literal de los tres logs más recientes: `Falta configurar GROK_WEBHOOK_URL.`.
 
-No existe `docs/briefs/2026-11-01_RADAR_CAPCOT.md` (404). En `docs/briefs/` están 30-oct, 31-oct y los radares 5–7 nov. Sí existe un brief de trabajo para el slot de 23:30 en `ajustes_entre_modelos/PARA_CHATGPT_dato_del_dia.md`; no es un storyboard ni un paquete de cola. El documento propone el cambio de horario y el estudio Sandhu et al. (2014), y pide comprobar con fuente oficial la excepción mexicana de municipios fronterizos antes de afirmarla.
+## 1. Briefs y borradores vigentes
 
-### Entradas asignadas a slots del 1-nov
+Existe `docs/briefs/2026-11-01_RADAR_CAPCOT.md`; la versión anterior de este control decía erróneamente que no existía y queda sustituida por este informe.
 
-| Slot CDMX | project_id | Ubicación/evidencia | Estado de auditoría |
-|---|---|---|---|
-| 03:00 | `2026-11-01_dato-xolo-mictlan` | Solo en `salidas/`; no hay entrada en cola ni carpeta de proyecto | NOT_DISPATCHABLE; sin QA ni estado Grok |
-| 07:00 | `2026-11-01_pulpo-tres-corazones` | `cola/entrada/<id>/storyboard.json`, `proyectos/`, `salidas/` | NOT_DISPATCHABLE; QA 19/21 |
-| 13:30 | `2026-11-01_llorar-cebolla-quimica` | `cola/entrada/<id>/storyboard.json`, `proyectos/`, `salidas/` | NOT_DISPATCHABLE; QA 19/21 |
-| 17:00 | `2026-10-26_baffin-bay-ice-shelf` | Entrada anidada y salida; ID conserva fecha original aunque el slot es 1-nov | NOT_DISPATCHABLE; QA 20/21 |
-| 19:00 | `2026-11-03_kids-tiburon-groenlandia` | Entrada anidada, proyecto/salida; ID conserva fecha original aunque el slot es 1-nov | NOT_DISPATCHABLE; no existe `qa.json` |
-| 23:30 | `2026-11-01_dato-TBD-news` | Slot pendiente; brief de trabajo en `ajustes_entre_modelos/PARA_CHATGPT_dato_del_dia.md` | SIN PAQUETE; aún dentro del plazo de hoy |
+| Proyecto | Creación del borrador | Slot/fecha objetivo | QA narrativo | Dispatch |
+|---|---|---|---|---|
+| `2026-11-01_pulpo-tres-corazones` | 31-oct, 14:25 CDMX | 1-nov 07:00 | FAIL 72/100 | NOT_DISPATCHABLE |
+| `2026-11-01_llorar-cebolla-quimica` | 31-oct, 14:25 CDMX | 1-nov 13:30 | FAIL 79/100 | NOT_DISPATCHABLE |
+| `2026-11-01_red-electrica-pulso-minuto` | 1-nov, 14:33 CDMX | 1-nov, sin slot | PASS 89/100 | NOT_DISPATCHABLE |
 
-### Validación por paquete
+Pulpo y cebolla tienen copias en `cola/bloqueados/<project_id>/storyboard.json`; los blobs coinciden con los originales previos al QA. Se conservaron sin modificar. No había una copia activa en entrada que mover.
 
-**Xolo — 03:00**
-- 7 escenas, 214 palabras, 77 s de escenas + 12 s de cortinilla = 89 s; estilo `teatro_sombras`, presente en el catálogo.
-- Sin capas de mapa ni dato/gráfico. Tiene rutas `asset_filename` en las escenas, pero no hay evidencia de esos frames en el paquete. `approved_assets=[]`, `render_status=NOT_GENERATED`.
-- No existe `qa.json` ni `cola/estado/2026-11-01_dato-xolo-mictlan.json`.
-- `publicacion.json` registra YouTube `uploaded/private` con `publishAt=2026-11-01T09:00:00Z`, y TikTok/Facebook como programados. Es registro de carga/programación, no comprobación en vivo de visibilidad pública.
-- Lectura en frío independiente: 85/100, narrativa PASS; el arco mito → arqueología → genética se puede reconstruir y el cierre vuelve a la ofrenda. El storyboard no guarda `narrative_qa`; el paquete falla el contrato estructural por ausencia de mapa/dato y QA.
+`cola/entrada/` contiene solo `.gitkeep`: 0 JSON de primer nivel y 0 carpetas con `storyboard.json`. El paquete histórico de pardelas bajo `cola/2026-10-31_2026-10-31_pardelas-jetlag-solar/` no es entrada vigente.
 
-**Pulpo — 07:00**
-- 8 escenas, 228 palabras; 78 s de escenas + 12 s de cortinilla = 90 s, aunque `target_duration_seconds=84`. `ESTADO_EJECUCION.md` dice 78 + 6 = 84 s: contradicción entre JSON y estado.
-- Sin mapa ni dato/gráfico. Las ocho escenas llevan `sfx=[]`; ambiente `oceano`. Ocho `asset_filename` apuntan a `frames/scene_00N.jpg`, pero no son assets aprobados ni generados.
-- QA de salida: **19/21**. Fallan literalmente `capa_mapa: sin capas` y `capa_grafico_o_dato: sin capas`. La misma QA registra 61.80 s de render y 125 palabras de voz, frente a 228 palabras del storyboard. El chequeo de duración usado por esa QA permite 60–120 s, no el contrato editorial de 75–90 s.
-- `publicacion.json` registra YouTube `uploaded/private` con publicación programada para 13:00Z; TikTok/Facebook aparecen programados. `ESTADO_EJECUCION.md` aún dice pendiente de revisión Grok y que no hubo publicación/programación. No se puede resolver esa contradicción sin estado de Grok y comprobación de plataforma.
-- Lectura en frío: **72/100, FAIL**. La pregunta se entiende y el mecanismo avanza, pero la apertura hipotética («Si pudieras…») no es in medias res. Flags: la comparación de branquias con pulmones que «sacan aire del agua» es imprecisa; «si uno falla, los otros no lo reemplazan» no está respaldado por las fuentes enumeradas. No existe `narrative_qa` en el JSON.
+## 2. Paquetes de salida asociados a la parrilla del 1-nov
 
-**Cebolla — 13:30**
-- 8 escenas, 231 palabras; 78 s de escenas + 12 s de cortinilla = 90 s, aunque el objetivo es 84 s. El estado de ejecución declara cortinilla de 6 s y total 84 s.
-- Sin mapa ni dato/gráfico. Las ocho escenas tienen `sfx=[]` y ambiente `silencio`. Ocho `asset_filename` son rutas de frames no aprobados/generados.
-- QA de salida: **19/21**; fallan mapa y dato/gráfico. Registra 66.70 s de render y 127 palabras de voz frente a 231 palabras en el storyboard. El umbral mecánico de esa QA (60–120 s) no corresponde al contrato 75–90 s.
-- `publicacion.json` registra YouTube `uploaded/private` con `publishAt=2026-11-01T19:30:00Z`; TikTok/Facebook figuran programados. El estado de entrada dice pendiente de revisión Grok y no realizada la programación. No hay estado Grok que resuelva la discrepancia.
-- Lectura en frío: **84/100, FAIL** por flag crítico: el cierre afirma que la cebolla «inventó» la alarma química para que nadie se la coma. La fuente primaria demuestra la síntesis enzimática del factor lacrimógeno, no esa intención evolutiva. El resto de la progresión causal y el retorno a las lágrimas se entiende. No existe `narrative_qa` en el JSON.
+| Pieza | ID de salida | Slot | Evidencia y fallos |
+|---|---|---:|---|
+| Xolo | `2026-11-01_dato-xolo-mictlan` | 03:00 extra | 7 escenas, 214 palabras, 77+12=89 s; sin `qa.json`; faltan mapa y dato/gráfico; rutas de assets; YouTube cargado privado y programado |
+| Pulpo | `2026-11-01_pulpo-tres-corazones` | 07:00 | QA local 19/21; render 61.80 s; faltan mapa y dato/gráfico; YouTube privado programado |
+| Cebolla | `2026-11-01_llorar-cebolla-quimica` | 13:30 | QA local 19/21; render 66.70 s; faltan mapa y dato/gráfico; YouTube privado programado |
+| Baffin | `2026-10-26_baffin-bay-ice-shelf` | 17:00 | QA local 20/21; render 91.93 s; 83 bloques de subtítulos superan tres palabras; YouTube privado programado |
+| Tiburón de Groenlandia | `2026-11-03_kids-tiburon-groenlandia` | 19:00 | 8 escenas, 244 palabras (>235), 78+6=84 s; sin `qa.json`; YouTube privado programado |
 
-**Baffin — slot 17:00**
-- ID de proyecto 26-oct, slot asignado 1-nov. 9 escenas, 215 palabras, 81 + 6 = 87 s; estilo `art_deco_poster`. Mapa y datos presentes; las escenas tienen rutas de assets que no deben confundirse con medios aprobados.
-- QA de salida: **20/21**. Falla `subs_max_3_palabras` con 83 bloques. Duración renderizada: **91.93 s**, excede 90 s. `publicacion.json` registra YouTube `uploaded/private` para 23:00Z y TikTok/Facebook programados.
-- Lectura en frío: **78/100, FAIL**. La cadena evidencia → reconstrucción → función de soporte → colapso es legible, pero la apertura «Imagina una tapa…» es descriptiva, no una anomalía/acción ya en curso. Flag factual: «Tapaba la bahía de Baffin completa» excede lo que el paper reporta explícitamente (plataforma de 150,000 km²; espesor estimado 1,400–2,100 m). El artículo primario habla de una plataforma que abarcaba la cuenca; no autoriza a convertirlo sin matiz en cobertura literal de toda la bahía.
+El slot 23:30 sigue pendiente y no tiene storyboard. Los cinco storyboards de salida conservan `approved_assets=[]` y `export.render_status=NOT_GENERATED`, pero hay QA o registros de carga/programación y rutas de assets. No hay MP4, frames, imágenes ni audio rastreables en el árbol de GitHub. Los placeholders no cuentan como medios y el estado del JSON contradice los artefactos de salida.
 
-**Tiburón de Groenlandia — slot 19:00**
-- ID de proyecto 3-nov, reasignado al 1-nov 19:00. 8 escenas, **244 palabras** (9 sobre el máximo), 78 + 6 = 84 s; mapa y dato presentes; estilo `crayones_infantiles`. Hay ocho rutas `asset_filename`.
-- No existe `qa.json`. `ESTADO_EJECUCION.md` aún lo describe como paquete del 3-nov 07:00, 211 palabras, preparado y sin medios; `publicacion.json` registra YouTube `uploaded/private` con `publishAt=2026-11-02T01:00:00Z`, mientras TikTok/Facebook aparecen `pendiente_ui`. El horario semanal, en cambio, los marca programados en las tres plataformas.
-- Lectura en frío: **89/100, narrativa PASS**. La pregunta sobre cómo estimar la edad se sostiene; el método del cristalino, radiocarbono, estimaciones y margen de error forman una progresión; el final paga la apertura. El paquete global sigue FAIL: 244 palabras, no hay `narrative_qa` ni QA de producción, y el estado conserva el slot anterior.
+### Acuses
 
-## 2. Recepción y dispatch
+Los seis archivos consultados devolvieron 404. Resultado exacto para cada ID:
 
-- `cola/estado/` devuelve 404: no existe directorio de estados. Para cada storyboard del 1-nov: **RECEPCION_GROK_NO_CONFIRMADA**. No se creó ni modificó ningún estado.
-- El workflow `.github/workflows/capcot-grok-dispatch.yml` escucha `cola/entrada/*.json`; en push usa grep `^cola/entrada/[^/]+\.json$`. En `workflow_dispatch`, `all` ejecuta `find cola/entrada -maxdepth 1 -type f -name '*.json'`, y un ID concreto intenta `cola/entrada/<id>.json`. Por tanto ignora las carpetas anidadas con `storyboard.json`. Los paquetes reutilizados/anidados de Baffin y tiburón tampoco son dispatchables por ese workflow; Xolo ni siquiera está en la cola.
-- Las diez ejecuciones más recientes listadas (runs 138–147) terminaron en failure. En las ocho inspeccionadas, el único paso fallido fue `Verificar configuración del receptor`; `Entregar paquetes y exigir acuse individual` quedó skipped. Los logs muestran literalmente: `Falta configurar GROK_WEBHOOK_URL.` En el entorno del job aparecen vacíos `WEBHOOK_URL` y `WEBHOOK_TOKEN`; la comprobación del URL falla antes de llegar a la comprobación del token. No hubo POST ni acuse.
-- No se atribuye recepción, selección, QA aprobado ni publicación pública a Grok por la mera existencia de `salidas/` o de un ID de video.
+- `2026-11-01_pulpo-tres-corazones` — **RECEPCION_GROK_NO_CONFIRMADA**
+- `2026-11-01_llorar-cebolla-quimica` — **RECEPCION_GROK_NO_CONFIRMADA**
+- `2026-11-01_red-electrica-pulso-minuto` — **RECEPCION_GROK_NO_CONFIRMADA**
+- `2026-11-01_dato-xolo-mictlan` — **RECEPCION_GROK_NO_CONFIRMADA**
+- `2026-10-26_baffin-bay-ice-shelf` — **RECEPCION_GROK_NO_CONFIRMADA**
+- `2026-11-03_kids-tiburon-groenlandia` — **RECEPCION_GROK_NO_CONFIRMADA**
 
-## 3. Procesador, rotación y contradicciones
+Los `qa.json` existentes son QA local; no prueban recepción ni QA de Grok.
 
-- `scripts/procesar_cola.py` recoge `cola/entrada/*.json` y `cola/entrada/*/storyboard.json`; toma los primeros diez caracteres del nombre del archivo/carpeta y filtra por `--fecha`, cuyo default es la fecha CDMX. No procesa automáticamente otras fechas. Para 1-nov detecta las carpetas anidadas de pulpo y cebolla; no selecciona Baffin (prefijo 26-oct) ni tiburón (prefijo 3-nov), aunque estén asignados al 1-nov en el horario. El filtro por fecha de paquete funciona, pero no equivale a fecha objetivo del slot.
-- `scripts/rotacion.py` fija `MAX_POR_DIA=5`. `data/horario_semana_2026-11-01_07.json` declara `slots_por_dia=5` y `total=35`, pero contiene **36 registros** y seis slots para el 1-nov: 03:00, 07:00, 13:30, 17:00, 19:00 y 23:30. El slot 03:00 es el extra respecto a las cinco ventanas declaradas; no aparece una excepción de cupo en el registro consultado.
-- `data/temas_del_dia.json` solo llega a 28-oct; `data/rotacion.json` tiene 27 registros, con fechas 24–28 y 31-oct, ninguno del 1-nov; `data/publicaciones.json` tiene 22 registros y llega a 31-oct. Los tres registros operativos están desactualizados para el día auditado.
-- `scripts/registro_editorial.py` fusiona rotación, publicaciones, `data/cola.json` y storyboards de cola/proyectos/salidas, pero no lee `data/horario_semana_2026-11-01_07.json`. Deriva la fecha del `project_id`: Baffin queda como 26-oct y tiburón como 3-nov aunque ambos ocupen slots del 1-nov. Esto subcuenta la rotación del día y puede permitir colisiones/cupo incorrecto.
-- En el horario, `project_id_plan` no coincide con `project_id` para pulpo (`2026-11-01_kids-pulpo-tres-corazones`) ni cebolla (`2026-11-01_comida-cebolla-llorar`).
-- Contradicción adicional: `PARA_CHATGPT_faltantes_ahora.md` y `PARA_CHATGPT_tema_feynman_brasil.md` indican luz verde para Feynman en Brasil en el hueco kids del 3-nov 07:00; el horario semanal conserva `2026-11-03_kids-TBD` y notas de reemplazo pendientes. Requiere reconciliar el horario antes de tratar Feynman como asignado.
-- Rotación visual observada: los cinco paquetes existentes usan estilos distintos y presentes en el catálogo: `teatro_sombras`, `carton_recortado`, `papel_recortado_popup`, `art_deco_poster`, `crayones_infantiles`. No se detectó repetición de estilo entre esos cinco.
+## 3. QA en frío y estructura
 
-## 4. QA de narrativa y estructura
+La lectura se hizo solo sobre la narración concatenada, ocultando título, resumen, arco, notas y contrato.
 
-Ninguno de los cinco storyboards contiene `narrative_contract` ni `narrative_qa`; por tanto, ninguno pasa la compuerta machine-readable. La lectura en frío de este auditor produjo: Xolo 85 PASS; pulpo 72 FAIL; cebolla 84 FAIL; Baffin 78 FAIL; tiburón 89 PASS. Los PASS narrativos de Xolo y tiburón no significan que el paquete completo pase: siguen fallando requisitos estructurales/administrativos descritos arriba.
+- **Cebolla — FAIL 79.** Pregunta, apertura, progresión, transiciones y giro pasan. Fallan límite de evidencia y payoff. Flags: `CIERRE_ATRIBUYE_INTENCION_EVOLUTIVA_NO_DEMOSTRADA`, `LIMITE_DE_EVIDENCIA_NO_EXPLICITO`. El cierre atribuye a la cebolla una intención de evitar ser comida que las fuentes no demuestran.
+- **Pulpo — FAIL 72.** Pregunta, progresión, transiciones, giro y payoff pasan. Fallan apertura y límite de evidencia. Flags: `APERTURA_HIPOTETICA_NO_IN_MEDIAS_RES`, `ANALOGIA_BRANQUIAS_SACAR_AIRE_DEL_AGUA_IMPRECISA`, `AFIRMACION_CORAZONES_NO_SUSTITUIBLES_SIN_RESPALDO`.
+- **Red eléctrica — PASS 89.** Los siete checks son verdaderos y `critical_flags=[]`. La narración pasa del patrón global a la medición local, identifica la autoprueba de la UPS, limita la conclusión a una UPS concreta y paga la apertura con el efecto de rutinas sincronizadas.
 
-El validador `scripts/validar_storyboard.py` es estructural: comprueba etiquetas de arco, conteo, duración, fuentes, mapa/dato, estilo y assets, pero no transiciones ni progresión. Los paquetes de pulpo, cebolla y Xolo no tienen mapa/dato. Los cinco storyboards inspeccionados incluyen `asset_filename` aunque están en modo textual con `approved_assets=[]` y `render_status=NOT_GENERATED`; esos nombres son placeholders, no medios. No se ejecutó el validador porque no hay checkout/runtime local disponible en esta auditoría; se hizo comprobación estática de los JSON, scripts y QA guardadas.
+Se registró `narrative_qa` en los tres borradores. En red eléctrica también se añadieron los seis campos narrativos por escena, sin cambiar narración ni claims.
 
-## 5. Fuentes y DOI
+Pulpo y cebolla: 8 escenas, 78 s de escenas + cortinilla declarada de 12 s = 90 s, frente a objetivo 84 s. Sus `ESTADO_EJECUCION.md` dicen 78+6=84, contradicción con el JSON. Además, no tienen `narrative_contract`, faltan los seis campos narrativos por escena, faltan capas mapa y dato/gráfico, tienen rutas `asset_filename`/`asset_type` no existentes en el árbol y SFX vacíos.
 
-Los DOI principales se contrastaron con registros de editor/indexadores:
-- Cebolla: Imai et al. (2002), Nature, 10.1038/419685a — confirmado. La fuente demuestra síntesis específica por LFS; no demuestra por sí sola la intención evolutiva atribuida en el cierre.
-- Pulpo: Wells (1980), J. Exp. Biol., 10.1242/jeb.85.1.111 — confirmado.
-- Xolo: Drögemüller et al. (2008), Science, 10.1126/science.1162525 — confirmado.
-- Baffin: artículo primario Nature Geoscience, 10.1038/s41561-026-02126-7 — confirmado; publicado 21-oct-2026. La segunda fuente, 10.1038/s41561-026-02127-6, es un Research Briefing de Nature publicado 26-oct, no el artículo primario.
-- Tiburón: Nielsen et al. (2016), Science, 10.1126/science.aaf1703 — confirmado.
+Red eléctrica: 8 escenas, 196 palabras, título de 5 palabras, 78+6=84 s, voz `edge-tts / es-MX-JorgeNeural`, `source_ids` válidos, `prompt_base` coincidente con `risografia`, mapa, dato, ambiente y SFX presentes, `approved_assets=[]`, `render_status=NOT_GENERATED` y sin rutas de medios. El DOI `10.1038/s41560-026-02144-0` conserva estado `PENDIENTE`; la página editorial existe, pero no se ejecutó Crossref.
 
-No se revisaron changelogs de APIs en esta pasada: no apareció un cambio oficial nuevo como parte de los bloqueos auditados.
+La revisión estática de las condiciones estructurales del validador no encontró errores en red eléctrica tras añadir los campos por escena. No equivale a ejecutar Python. No se promovió a cola.
 
-## 6. Cambios ejecutados en esta auditoría
+## 4. Dispatch, Actions y procesador
 
-- Se creó este informe de control en la rama de trabajo.
-- No se modificaron `data/*.json`, storyboards, estados de Grok, workflows, secretos, permisos, `main` ni Motor U6.
-- No se generaron cápsulas ni medios, no se publicó, no se programó y no se consumieron créditos.
-- La recepción por Grok sigue **NO CONFIRMADA** mientras falten los estados individuales y el dispatch no complete un POST con acuse verificable.
+El workflow `.github/workflows/capcot-grok-dispatch.yml` observa JSON de primer nivel en `cola/entrada/` y usa búsqueda con profundidad máxima 1. No detecta `proyectos/<id>/storyboard.json`, `cola/entrada/<id>/storyboard.json`, bloqueados ni salidas. Por ruta, los tres borradores, las dos copias bloqueadas y los cinco storyboards de salida son **NOT_DISPATCHABLE**.
 
+Las ejecuciones #136–147 terminaron en failure. Los tres logs más recientes contienen literalmente `Falta configurar GROK_WEBHOOK_URL.`. Los nombres `GROK_WEBHOOK_URL` y `GROK_WEBHOOK_TOKEN` aparecen vacíos en el entorno; el paso se detiene primero por URL y no llega a comprobar token. No se muestran valores.
 
-## 7. Acción posterior a la auditoría — cuarentena de la cola
+`scripts/procesar_cola.py` sí acepta JSON raíz y carpeta anidada de un nivel, pero filtra por los primeros diez caracteres del nombre de archivo/directorio, no por una fecha objetivo del storyboard. Baffin (ID 26-oct) y tiburón (ID 3-nov) no serían seleccionados para 1-nov aunque el horario los asigne a ese día.
 
-**Corte:** 2026-11-01, 14:29 CDMX. Esta sección registra una operación posterior al corte estático de la auditoría; no altera sus hallazgos originales.
+`scripts/registro_editorial.py` toma fecha del prefijo de `project_id`, escanea un nivel en proyectos/entrada/cola/salidas y no incluye `cola/bloqueados/`. Por ello omite bloqueados, clasifica Baffin y tiburón por fecha de ID y cuenta red eléctrica como elemento del 1-nov aunque no tenga slot.
 
-La inspección de los 38 storyboard JSON que permanecían en `cola/entrada/` encontró que ninguno contenía `narrative_contract` ni `narrative_qa`. Por tanto, ninguno acreditaba PASS machine-readable. Se retiraron de la cola y se conservaron en `cola/bloqueados/`:
+## 5. Datos y contradicciones
 
-- Commit [057474c](https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/commit/057474c747202e164c28d3cf2f54c3196d55ca9f): cuatro paquetes asignados a slots del 1-nov, 15 archivos movidos.
-- Commit [3795f4](https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/commit/3795f40cd035a8293efed759a2af1b5d58ef1ef0): 29 project_id adicionales, 101 archivos movidos.
-- Commit [6b9cf52](https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/commit/6b9cf5285b19ba064d09fc843d741d69852f4d28): README de cuarentena y condiciones de reingreso.
+- El horario semanal declara `slots_por_dia=5`, pero contiene 6 filas para 1-nov: Xolo extra 03:00, pulpo 07:00, cebolla 13:30, Baffin 17:00, tiburón 19:00 y dato 23:30 pendiente. Si se llena 23:30, serán seis piezas contando el extra.
+- `project_id_plan` no coincide con el ID real de pulpo ni cebolla.
+- Baffin y tiburón tienen prefijos 26-oct y 3-nov aunque el slot objetivo es 1-nov.
+- `data/reprogramacion_tt_fb_v4_2026-11-01_03.json` declara el lote completo, pero su slot 1-nov 19:00 aún referencia arqueas. El horario y `salidas/_ops/2026-11-01_swap_arqueas_tiburon.md` dicen que fue sustituida por tiburón. El `publicacion.json` del tiburón conserva TT/FB pendientes en su resultado, mientras el registro operativo dice que ya se programó en UI.
+- `data/temas_del_dia.json` llega a 28-oct; `rotacion.json` y `publicaciones.json` a 31-oct; `estilos_usados.json`, `balances_6h.json` y `vistas_historico.json` a 28-oct. No reflejan el 1-nov.
+- `data/cola.json` conserva el fallo de pardelas de 31-oct (`rc=1`) con una ruta de entrada que no existe en el árbol actual.
+- `data/endscreens_rotacion.json` sí tiene actualización del 1-nov a las 13:48 CDMX.
+- Los radares 5–7 nov afirman que sus cuatro paquetes están en `cola/entrada/`; el árbol actual los muestra en `cola/bloqueados/`, no en entrada.
 
-**Verificación:** 116 archivos en total, 33 project_id; cada destino conserva exactamente el SHA de blob original y cada ruta fuente fue retirada. La consulta posterior al árbol encontró cero storyboard JSON en `cola/entrada/`. No se borró contenido, no se reescribió narración/fuentes, no se modificó `cola/estado/` y no se disparó el workflow (`[skip ci]` en el commit masivo).
+Los tres borradores actuales usan estilos de catálogo distintos: `carton_recortado`, `papel_recortado_popup` y `risografia`. Los cinco storyboards de salida también tienen estilos distintos, pero la rotación no puede certificarse con el registro histórico desactualizado y el cálculo por prefijo de ID.
 
-Los PASS narrativos que el auditor reportó para Xolo y tiburón no se promovieron: sus JSON no contienen los siete checks ni el registro `narrative_qa`, y sus paquetes siguen teniendo fallos estructurales/administrativos. Xolo permanece en `salidas/`, no en cola. El reingreso requiere completar `narrative_contract`, revisión independiente registrada y validador estructural correcto.
+Los registros de YouTube muestran `privacyStatus=private` y `publishAt` programado. Aunque algunos horarios ya transcurrieron, no se consultó el estado público en vivo; no se marca ninguna pieza como publicada. Los registros de TT/FB son evidencia de programación en algunos casos, no de publicación pública.
 
+## 6. Correcciones mecánicas realizadas
 
+Sin tocar claims, narración, decisiones editoriales, datos ni workflows:
 
-## 8. Compuerta narrativa implementada en documentación y validador
+1. `scripts/validar_storyboard.py` — eliminada la validación duplicada que exigía booleanos ingleses fuera de `checks` y un campo `premise` ajeno al contrato documentado. Commit `22f2718041975b21fdfd64aa74afb82669c667f0`.
+2. `scripts/generar_guion_llm.py` — deja de autoañadir `narrative_qa`; el QA corresponde al auditor independiente. Contrato de seis campos y voz con idioma `es-MX`. Commit `bfbfaaa72e819d4a3720eb36b5661684de8acab4`.
+3. `templates/storyboard_vertical.template.json` — añadidos los seis campos narrativos por escena. Commit `8d74e3f23c4b52794566f918e3159cd4e5ef93ac`.
+4. `docs/RECETA_CAPSULA.md` — documentados los campos por escena y la responsabilidad del auditor. Commit `bb7f995e451778f823a3aebc68e6432da96fb645`.
+5. `scripts/qa_capsula.py` — umbral de duración renderizada corregido de 60–120 s a **75–90 s**. Commit `2abc31925449c0cd53656f6f3dbadc4db5fadb84`.
 
-Cambios posteriores a la auditoría:
+Los `qa.json` históricos no se reescribieron. Con el nuevo umbral, los renders de pulpo (61.80 s), cebolla (66.70 s) y Baffin (91.93 s) también fallarían duración si se repitiera QA; no se volvió a renderizar.
 
-- Commit `4f13d5a`: plantilla `storyboard_vertical.template.json` incorpora `narrative_contract` con seis campos: central_question, promise, stakes, scientific_turn, evidence_limit y payoff.
-- Commit `40f1f95`: QA en frío oculta también narrative_contract para evitar sesgo del revisor.
-- Commit `31d936c`: receta exige contrato narrativo antes de escribir escenas.
-- Commit `18577b7`: Plan Maestro exige el contrato narrativo.
-- Commit `0f65ccd`: contrato operativo explicita que el revisor no ve narrative_contract.
-- Commit `45b3a4f`: validador exige narrative_qa PASS, score >=85, review_basis exacto, siete checks true, flags vacíos y reviewer_role auditor_capcot_independiente.
-- Commit `c5b0c2d`: validador exige los seis campos de narrative_contract no vacíos.
-- Commit `65fd938` y `491113d`: pruebas unitarias para contrato narrativo y QA independiente.
-- Commit `3795f40`: cuarentena masiva de los paquetes sin PASS; el selector de dispatch queda sin storyboard en cola.
+Commits de QA: cebolla `794c3a18b3e7e6f417eda12b2bdfa43f9ac2fd3a`; pulpo `b50a4337128310b70e80fc52e5072e87b7b1bafc`; red eléctrica QA `1359d0bb3994f607ed88d7441253bb53b8c562ae` y metadatos causales `94eb9252e3358a20fc20d6f4290dcf1974281810`.
 
-**Pruebas:** ejecuté cuatro pruebas aisladas de la lógica de los dos helpers en Python; 4/4 pasaron. No se ejecutó el conjunto de tests del repositorio ni el validador completo porque no había checkout local y el intento de clonado falló por resolución DNS. La verificación de GitHub confirma los contenidos y commits, no una ejecución de CI.
+## 7. Límites y estado final
 
-**Estado posterior:** cero storyboard JSON en `cola/entrada/`; 33 project_id y 116 archivos conservados en `cola/bloqueados/`. El siguiente reingreso debe ser borrador en `proyectos/`, QA independiente registrado y promoción por el auditor a `cola/entrada/YYYY-MM-DD_slug.json`. El investigador no crea la entrada de cola.
+No había runtime/checkout local: no se ejecutaron validador Python, helpers ni tests. Se hizo revisión estática y comprobación estática de los campos del validador. No se revisaron APIs porque no se identificó un cambio oficial nuevo.
 
+No se modificaron `data/*.json`, `main`, estados de Grok, workflow, secretos, permisos ni decisiones editoriales. No hubo merge. No se generaron medios, no se publicó, no se dispararon Actions ni se enviaron payloads externos.
 
-## 9. Nuevo borrador detectado después de la auditoría
-
-**Corte:** 2026-11-01, 14:35 CDMX.
-
-El investigador dejó un nuevo borrador en `proyectos/2026-11-01_red-electrica-pulso-minuto/storyboard.json` y creó `docs/briefs/2026-11-01_RADAR_CAPCOT.md`. El run del investigador sigue `in_progress`; estos archivos están verificados por lectura de vuelta, pero no se declara completada la ejecución.
-
-**Comprobaciones del borrador:**
-- 8 escenas, 190 palabras, 78 s de escenas + 6 s de cortinilla = 84 s.
-- `narrative_contract` contiene los seis campos requeridos.
-- Mapa y capas de datos presentes; no hay `asset_filename`; `approved_assets=[]`.
-- `export.render_status=NOT_GENERATED`; `publicacion.status=PENDIENTE_DECISION_GROK`.
-- No contiene `narrative_qa`; por tanto sigue siendo borrador y no se promueve a cola.
-- La fuente Nature Energy/DOI está marcada PENDIENTE de validación directa; el comunicado institucional de Forschungszentrum Jülich y la ficha de coordenadas sí aparecen como verificados. No se presenta el DOI como validado.
-- No existe `cola/estado/2026-11-01_red-electrica-pulso-minuto.json`: recepción Grok no confirmada.
-
-El borrador abre con la anomalía de frecuencia ya en curso y su contrato narrativo explicita pregunta, promesa, stakes, giro, límite y payoff. La lectura narrativa independiente sigue pendiente del auditor; no se le asigna PASS desde esta operación. El slot de dato del día 23:30 sigue sin paquete confirmado.
-
-
-### Corrección de conteo y alcance científico — 14:36 CDMX
-
-Una lectura posterior del storyboard actualizado devuelve **196 palabras**, no 190; el radar ya fue corregido mediante el commit `089e55f6d837703c936eab50adfd541bb3ed94ea`. La versión actual conserva 8 escenas y 84 s (78 + 6). El contrato narrativo ahora explicita el posible desgaste de turbinas hidroeléctricas en Escandinavia cuando las oscilaciones son intensas. Ese claim requiere contraste directo con el artículo, cuyo DOI continúa PENDIENTE; no se presenta como validado por el comunicado institucional. El borrador sigue sin `narrative_qa` y fuera de cola.
-
-
-## 10. Cierre verificado del run investigador
-
-El run `eb74bc97-0478-832c-a823-25af9adab923` terminó a las 14:37:23 CDMX. Su resultado final declara exactamente dos entregables y ambos se releyeron desde GitHub:
-- Radar: commit `089e55f6d837703c936eab50adfd541bb3ed94ea`.
-- Borrador `proyectos/2026-11-01_red-electrica-pulso-minuto/storyboard.json`: commit `bbd1b3d4efca889856bdbd2cad9dc1bcbe64cb7a`.
-
-El borrador queda en proyectos, no en cola; 8 escenas, 196 palabras, 84 s, contrato narrativo completo, tres capas de datos, mapa de referencia, sin assets aprobados ni medios. Los cinco DOI del radar siguen PENDIENTES de validación directa. No se añadió `narrative_qa`; corresponde al auditor. No se marca preparado ni aceptado por Grok.
+- Pulpo: **FAIL narrativo; no promover**.
+- Cebolla: **FAIL narrativo; no promover**.
+- Red eléctrica: **PASS narrativo; estructura sin errores detectados en revisión estática; no promover en esta ejecución**.
+- Cola activa: **vacía**.
+- Recepción Grok: **no confirmada para todos los IDs enumerados**.
+- Publicación pública: **no confirmada**.
