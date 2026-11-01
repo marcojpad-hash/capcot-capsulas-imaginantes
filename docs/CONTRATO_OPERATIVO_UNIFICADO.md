@@ -1,5 +1,5 @@
 # Contrato operativo unificado CAPCOT
-**Vigente desde 2026-10-31 · America/Mexico_City**
+**Vigente desde 2026-11-01 · America/Mexico_City**
 
 Este documento reconcilia el Plan Maestro, la Receta, la Guía para modelos externos, el Flujo Externo y las instrucciones de coordinación que aparecieron en una línea divergente. Es la referencia común para ChatGPT, Imaginantes (Grok Bot) y Grok app. No reemplaza los contratos técnicos de storyboard ni el contrato de estados.
 
@@ -52,7 +52,7 @@ El contrato machine-readable es `docs/GROK_STATUS_CONTRACT.md`. La ausencia de `
 
 Todo storyboard pasa por la compuerta de docs/QA_NARRATIVO_EN_FRIO.md antes de entrar a cola/entrada/. El investigador redacta el borrador en proyectos/<project_id>/storyboard.json; no lo deja en cola ni lo marca preparado. El auditor CAPCOT, en una ejecución y conversación distintas, oculta título, resumen, arco y notas y revisa únicamente la narración concatenada. Registra narrative_qa con siete checks, score, review_basis=lectura_en_frio_solo_narracion y critical_flags.
 
-Solo PASS (score >=85, siete checks true y flags vacíos) permite que el auditor promueva una copia idéntica a cola/entrada/<project_id>/storyboard.json. Con FAIL, el borrador permanece en proyectos/ y cualquier copia heredada en cola se mueve a cola/bloqueados/<project_id>/storyboard.json, preservando su contenido. Si no hay revisión independiente, el resultado es FAIL. Esta compuerta es QA narrativo previo al handoff; no sustituye la selección editorial ni el QA audiovisual oficial de Grok. No autoriza publicar, producir medios ni crear estados Grok.
+Solo PASS (score >=85, siete checks true y flags vacíos) permite que el auditor promueva una copia idéntica a cola/entrada/<project_id>.json. Con FAIL, el borrador permanece en proyectos/ y cualquier copia heredada en cola se mueve a cola/bloqueados/<project_id>/storyboard.json, preservando su contenido. Si no hay revisión independiente, el resultado es FAIL. Esta compuerta es QA narrativo previo al handoff; no sustituye la selección editorial ni el QA audiovisual oficial de Grok. No autoriza publicar, producir medios ni crear estados Grok.
 
 ## 5. Paquetes y medios
 Para el alcance vigente de ChatGPT, el paquete es textual: radar Markdown + storyboard JSON en la ruta definida por el Plan Maestro. Fuentes, DOI, estado de verificación y `source_ids` viajan dentro del storyboard. No se crean carpetas de frames ni `fuentes.md` separado por defecto. `approved_assets=[]`, `render_status=NOT_GENERATED` y sin rutas de medios antes de producción.
