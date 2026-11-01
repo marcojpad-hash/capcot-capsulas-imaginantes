@@ -98,7 +98,19 @@
       "source_ids": [
         "SRC-001"
       ],
-      "style_id": "satira_periodico"
+      "style_id": "satira_periodico",
+      "capa": {
+        "tipo": "mapa",
+        "titulo": "University of Cambridge",
+        "puntos": [
+          {
+            "nombre": "University of Cambridge",
+            "lat": 52.2053,
+            "lon": 0.1218
+          }
+        ],
+        "fuente": "Afiliación de Henry C. Burridge en el estudio citado. Burridge y Linden (2016) informan que sus ensayos controlados no encontraron evidencia de observaciones significativas del efecto como regla general. Pin de afiliación de autor. Cartografía base: OpenStreetMap."
+      }
     },
     {
       "id": "scene_003",
@@ -113,7 +125,13 @@
       "source_ids": [
         "SRC-001"
       ],
-      "style_id": "satira_periodico"
+      "style_id": "satira_periodico",
+      "capa": {
+        "tipo": "dato",
+        "valor": "Sin regla universal",
+        "etiqueta": "El estudio controlado no respalda un efecto general significativo",
+        "fuente": "Afiliación de Henry C. Burridge en el estudio citado. https://doi.org/10.1038/srep37665. Burridge y Linden (2016) informan que sus ensayos controlados no encontraron evidencia de observaciones significativas del efecto como regla general. Pin de afiliación de autor."
+      }
     },
     {
       "id": "scene_004",
@@ -134,7 +152,7 @@
       "id": "scene_005",
       "arc": "desarrollo",
       "duration_seconds": 12,
-      "narration": "La pregunta científica útil es qué condiciones producen una diferencia medible y reproducible, no cuál agua gana siempre una carrera al congelador.",
+      "narration": "La pregunta científica útil es qué condiciones producen una diferencia medible y reproducible, no cuál agua gana siempre una carrera al congelador. Por eso los ensayos deben controlar variables y repetir mediciones.",
       "on_screen_text": "El matiz",
       "visual_description": "Representación didáctica de ¿el agua caliente se congela primero?, secuencia causal clara y legible",
       "image_prompt": "editorial satirical newspaper cartoon, black ink crosshatching on newsprint, caricatured figures, newspaper columns layout, vertical 9:16, no text, educational visual scene illustrating ¿el agua caliente se congela primero?, consistent visual continuity",
