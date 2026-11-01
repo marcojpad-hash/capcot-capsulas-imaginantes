@@ -1,0 +1,261 @@
+{
+  "_schema": "CAPCOT_STORYBOARD_TEXT_V2",
+  "project_id": "2026-11-06_inter-arena-cantante",
+  "serie": "Datos y ociosidades",
+  "title": "Dunas que cantan: el sonido de la arena",
+  "titulo": "¿La arena puede cantar?",
+  "language": "es-MX",
+  "aspect_ratio": "9:16",
+  "target_duration_seconds": 84,
+  "estructura": "pregunta",
+  "audience": "Público general",
+  "occasion": "Cápsula vertical de divulgación",
+  "resumen": "En ciertas dunas, una avalancha de granos puede producir un sonido grave y sostenido. Los estudios experimentales relacionan el tono con el movimiento colectivo y la sincronización de los granos; no todas las dunas cantan.",
+  "trend_source": {
+    "termino": "Dunas que cantan: el sonido de la arena",
+    "fecha_publicacion": "",
+    "url": "https://doi.org/10.1103/PhysRevLett.93.238001"
+  },
+  "editorial_status": "PROPUESTA_PENDIENTE_DE_GROK",
+  "arco": {
+    "hook_medias_res": "Una ladera de arena se desliza y, en vez de producir solo un susurro, emite un zumbido grave que puede escucharse a gran distancia. Algunas dunas literalmente parecen cantar.",
+    "desarrollo": "El sonido aparece cuando una capa de granos empieza a deslizarse por la pendiente. La avalancha hace vibrar la superficie y genera ondas elásticas que se transmiten al aire. No es simplemente el viento soplando entre las crestas: el movimiento de la arena es parte central del mecanismo.",
+    "cierre_historia": "Un estudio de Andreotti describió sonidos cercanos a cien decibeles y frecuencias alrededor de cien hercios en las condiciones examinadas. Investigaciones posteriores compararon dunas de distintos lugares y experimentos controlados: el tono se relaciona con la velocidad relativa de los granos y su sincronización durante la avalancha.",
+    "reflexion_o_pregunta": "No cualquier montón de arena produce este efecto. Importan el tamaño y la uniformidad de los granos, la humedad y las condiciones del deslizamiento. La duna funciona como una caja de resonancia granular, pero el sonido nace del movimiento colectivo. Esto fue Datos y ociosidades."
+  },
+  "estilo_id": "art_deco_poster",
+  "estilo_visual": "Póster Art Déco",
+  "visual_identity": {
+    "style_id": "art_deco_poster",
+    "style_name": "Póster Art Déco",
+    "prompt_base": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text",
+    "palette": "teal, dorado, negro, crema",
+    "lighting": "Iluminación coherente con el prompt base; contraste legible y estable entre escenas",
+    "texture": "Materialidad y acabado constantes según catálogo",
+    "composition": "Vertical 9:16; un sujeto/acción principal por plano; continuidad de escala y dirección",
+    "negative_prompt": "Sin texto incrustado, logotipos, marcas de agua, fotografías añadidas ni visualizaciones que aparenten ser registros reales del fenómeno",
+    "reference_assets": [],
+    "seed": null,
+    "seed_policy": "Mantener el mismo lenguaje visual; variar encuadre sin cambiar materialidad"
+  },
+  "typography_identity": {
+    "font_family": "DejaVu Sans",
+    "font_weight": "700 para gancho; 400 para subtítulos",
+    "title_style": "Gancho de máximo seis palabras desde frame 0",
+    "subtitle_style": "Bloques de máximo tres palabras; zona segura inferior",
+    "hierarchy": "Gancho > dato/etiqueta > subtítulos",
+    "animation": "Un movimiento por plano; tipografía en postproducción"
+  },
+  "voice": {
+    "engine": "edge-tts",
+    "voice_id": "es-MX-JorgeNeural",
+    "language": "es-MX",
+    "rate": "+7%",
+    "pitch": "-2Hz",
+    "pad_seconds": 0.3,
+    "modo_pausas": "continuo"
+  },
+  "sources": [
+    {
+      "id": "SRC-001",
+      "cita_corta": "Andreotti, B. The Song of Dunes as a Wave-Particle Mode Locking. Physical Review Letters 93, 238001 (2004).",
+      "url": "https://doi.org/10.1103/PhysRevLett.93.238001",
+      "doi": "10.1103/PhysRevLett.93.238001",
+      "accessed": "2026-11-01",
+      "publication_date": "2004-12-01",
+      "supports": [
+        "Avalanchas de arena excitan ondas elásticas en la superficie de la duna y producen emisión acústica coherente.",
+        "El artículo reporta, en sus condiciones experimentales, amplitud cercana a 105 dB y frecuencia cercana a 100 Hz."
+      ],
+      "verification_status": "VERIFICADO_RESOLVEDOR"
+    },
+    {
+      "id": "SRC-002",
+      "cita_corta": "Douady et al. Song of the Dunes as a Self-Synchronized Instrument. Physical Review Letters 97, 018002 (2006).",
+      "url": "https://doi.org/10.1103/PhysRevLett.97.018002",
+      "doi": "10.1103/PhysRevLett.97.018002",
+      "accessed": "2026-11-01",
+      "publication_date": "2006-07-07",
+      "supports": [
+        "Experimentos de campo y laboratorio relacionan el sonido con el movimiento relativo y la sincronización de los granos.",
+        "La duna no es indispensable para emitir el sonido en el experimento; existe un umbral de velocidad."
+      ],
+      "verification_status": "VERIFICADO_RESOLVEDOR"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_001",
+      "arc": "hook_medias_res",
+      "duration_seconds": 10,
+      "narration": "Una pendiente de arena empieza a deslizarse y aparece un zumbido grave, casi como una nota musical. No es un efecto añadido: en ciertas condiciones, la propia avalancha produce el sonido.",
+      "on_screen_text": "¿La arena puede cantar?",
+      "visual_description": "Gran duna en perfil con una franja de granos deslizándose y ondas sonoras sugeridas; ilustración editorial.",
+      "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text, grand desert dune in profile with a flowing avalanche of sand grains and elegant sound-wave motifs, no text",
+      "ambiente": "Viento desértico amplio",
+      "sfx": [
+        "Zumbido grave que emerge"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "art_deco_poster"
+    },
+    {
+      "id": "scene_002",
+      "arc": "desarrollo",
+      "duration_seconds": 12,
+      "narration": "El fenómeno se ha estudiado en dunas de distintas regiones. Para ubicar un contexto geográfico, el mapa señala Agadir, Marruecos, sede de una de las instituciones de investigación que participó en estudios sobre el canto de las dunas.",
+      "on_screen_text": "Investigación en Marruecos",
+      "visual_description": "Mapa del suroeste de Marruecos con pin en Agadir; etiqueta institucional clara, sin sugerir que el experimento ocurrió exactamente en el pin.",
+      "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text, art deco travel poster style map of southwestern Morocco, one marker at Agadir, clean geographic locator",
+      "ambiente": "Viento suave",
+      "sfx": [
+        "Golpe de arena"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "art_deco_poster",
+      "capa": {
+        "tipo": "mapa",
+        "titulo": "Agadir: afiliación de un equipo investigador",
+        "puntos": [
+          {
+            "nombre": "Agadir, Marruecos",
+            "lat": 30.4278,
+            "lon": -9.5981
+          }
+        ],
+        "fuente": "Afiliación GEOenvironnement des Milieux Arides, Université Ibn Zohr, Agadir, declarada en Douady et al. (2006), DOI 10.1103/PhysRevLett.97.018002. El pin localiza la afiliación institucional, no el sitio exacto de todas las mediciones."
+      }
+    },
+    {
+      "id": "scene_003",
+      "arc": "desarrollo",
+      "duration_seconds": 12,
+      "narration": "Cuando la capa superficial se desliza, los granos chocan y se mueven unos respecto de otros. Ese movimiento colectivo puede sincronizar vibraciones y convertir la pendiente en una fuente de sonido.",
+      "on_screen_text": "Una avalancha sincronizada",
+      "visual_description": "Primer plano esquemático de granos deslizándose, con ondas que nacen de la capa móvil.",
+      "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text, close-up of sand grains sliding down a dune slope, synchronized motion represented by subtle wave patterns",
+      "ambiente": "Roce granular rítmico",
+      "sfx": [
+        "Deslizamiento de arena"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "art_deco_poster",
+      "capa": {
+        "tipo": "dato",
+        "valor": "≈100 Hz",
+        "etiqueta": "Frecuencia característica reportada en el estudio de Andreotti",
+        "fuente": "Andreotti (2004), Physical Review Letters 93, 238001, DOI 10.1103/PhysRevLett.93.238001. Valor aproximado observado en las condiciones estudiadas; no es una constante universal de todas las dunas."
+      }
+    },
+    {
+      "id": "scene_004",
+      "arc": "desarrollo",
+      "duration_seconds": 12,
+      "narration": "Andreotti describió ondas elásticas en la superficie de la duna. La vibración se transmite al aire como un tono coherente. El artículo reportó amplitudes cercanas a ciento cinco decibeles bajo las condiciones de su estudio.",
+      "on_screen_text": "Vibración que se oye",
+      "visual_description": "Corte conceptual de la duna mostrando ondas en la capa superficial y propagación del sonido al aire.",
+      "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text, art deco scientific cross section of a dune showing elastic surface waves and sound traveling through air",
+      "ambiente": "Tono grave sostenido",
+      "sfx": [
+        "Resonancia corta"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "art_deco_poster"
+    },
+    {
+      "id": "scene_005",
+      "arc": "desarrollo",
+      "duration_seconds": 12,
+      "narration": "Después, otros investigadores compararon dunas naturales y pruebas controladas. Encontraron que el tono depende del movimiento relativo de los granos: cuando se sincronizan, el sonido se vuelve estable y reconocible.",
+      "on_screen_text": "Los granos marcan el tono",
+      "visual_description": "Comparación visual de granos moviéndose desordenados y luego sincronizados; dos paneles con misma estética.",
+      "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text, two-part art deco illustration of sand grains moving chaotically then synchronizing in an avalanche",
+      "ambiente": "Pulso granular",
+      "sfx": [
+        "Dos tonos que se alinean"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "art_deco_poster"
+    },
+    {
+      "id": "scene_006",
+      "arc": "cierre_historia",
+      "duration_seconds": 10,
+      "narration": "El efecto requiere condiciones concretas: características de los granos, humedad y velocidad del deslizamiento. Por eso no todas las dunas producen una nota audible cada vez que cae arena.",
+      "on_screen_text": "No todas las dunas cantan",
+      "visual_description": "Dos pendientes de arena: una silenciosa y otra con ondas sonoras, sin convertir la comparación en medición cuantitativa.",
+      "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text, art deco poster showing two desert dune slopes, one quiet and one resonating, clear contrast",
+      "ambiente": "Viento vuelve al frente",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "art_deco_poster"
+    },
+    {
+      "id": "scene_007",
+      "arc": "reflexion_o_pregunta",
+      "duration_seconds": 10,
+      "narration": "La música de estas dunas no viene de un instrumento escondido: surge del movimiento coordinado de millones de granos. La arena puede cantar, pero solo cuando la física encuentra las condiciones adecuadas. Esto fue Datos y ociosidades.",
+      "on_screen_text": "La física de la arena",
+      "visual_description": "Duna al atardecer, ondas sonoras discretas que se disuelven en el horizonte.",
+      "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text, art deco desert dune at sunset with subtle sound waves fading into the horizon",
+      "ambiente": "Cierre musical breve",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "art_deco_poster"
+    }
+  ],
+  "cortinilla_fuentes": {
+    "duration_seconds": 6,
+    "titulo": "Fuentes",
+    "aviso": "Divulgación científica. Las imágenes generadas son ilustrativas, no registros instrumentales del fenómeno.",
+    "firma": "Datos y ociosidades",
+    "source_ids": [
+      "SRC-001",
+      "SRC-002"
+    ]
+  },
+  "audio": {
+    "music_asset": null,
+    "music_plan": "Cama sonora discreta; selección y licencia pendientes de producción por Grok",
+    "music_license": null
+  },
+  "export": {
+    "resolution": "1080x1920",
+    "fps": 30,
+    "render_status": "NOT_GENERATED"
+  },
+  "publicacion": {
+    "status": "PENDIENTE_DECISION_GROK",
+    "platforms": [
+      "YouTube Shorts",
+      "TikTok",
+      "Facebook Reels"
+    ],
+    "note": "No publicar ni programar desde preproducción textual."
+  },
+  "estado": "PENDIENTE_REVISION_GROK",
+  "production_mode": "storyboard_only",
+  "validation_notes": [],
+  "linea_tematica_provisional": "Ciencia y naturaleza",
+  "approved_assets": [],
+  "risk_notes": [
+    "No presentar 100 Hz ni 105 dB como valores universales.",
+    "El pin de Agadir representa afiliación institucional, no ubicación precisa del fenómeno.",
+    "No afirmar que el viento produce el tono; el mecanismo descrito involucra avalanchas y movimiento de granos."
+  ],
+  "thumbnail_source": "scene_001"
+}
