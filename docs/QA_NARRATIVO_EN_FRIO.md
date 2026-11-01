@@ -68,7 +68,7 @@ El ejemplo es solo el esquema; no es un resultado. El auditor debe reemplazar ca
 1. El investigador crea brief y borrador en docs/briefs/ y proyectos/.
 2. El auditor relee el borrador desde GitHub y hace QA en frío sin consultar título, resumen, arco ni notas durante la evaluación.
 3. Escribe narrative_qa en el borrador y vuelve a leer/verificar el JSON.
-4. Si PASS, crea/promueve una copia de handoff en cola/entrada/<project_id>/storyboard.json y compara el contenido después de escribir.
+4. Si PASS, crea/promueve una copia de handoff en cola/entrada/YYYY-MM-DD_slug.json y compara el contenido después de escribir.
 5. Si FAIL, el borrador permanece en proyectos/ y no se crea entrada de cola.
 6. Para entradas heredadas ya presentes en cola/entrada/ que fallen, mueve el archivo a cola/bloqueados/<project_id>/storyboard.json después de verificar la copia; conserva el contenido íntegro. No borra ni reescribe la narración.
 7. Si la promoción o el movimiento no se pueden verificar, informa el bloqueo y no declara dispatchabilidad.
