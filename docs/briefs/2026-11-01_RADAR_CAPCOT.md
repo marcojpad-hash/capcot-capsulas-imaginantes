@@ -81,7 +81,7 @@ Lectura combinada de data/temas_del_dia.json, data/rotacion.json, data/publicaci
 
 Archivo de trabajo: proyectos/2026-11-01_red-electrica-pulso-minuto/storyboard.json
 
-- Ocho escenas; narración concatenada: 190 palabras.
+- Ocho escenas; narración concatenada: 196 palabras.
 - Escenas: 78 s + cortinilla de fuentes: 6 s = 84 s.
 - Arco: hook_medias_res → desarrollo → cierre_historia → reflexion_o_pregunta.
 - Voz: edge-tts / es-MX-JorgeNeural / +7 % / -2 Hz / pausas continuas.
@@ -108,7 +108,7 @@ Consulta de documentación oficial y comparación con docs/INVESTIGACION_API_MET
 ## 7. Observado, cálculo, inferencia y recomendación
 
 - **Observado:** fechas y afirmaciones de los artículos originales; patrón de 60 s en doce redes; autoprueba confirmada por el fabricante para una UPS; cuatro edificios con UPS; comunicado institucional con 80 ubicaciones; Trends MX dominado por fútbol y Día de Muertos; errores RSS consignados arriba.
-- **Cálculo:** 78 s de escenas + 6 s de cortinilla = 84 s; 190 palabras de narración. No se derivan métricas científicas nuevas.
+- **Cálculo:** 78 s de escenas + 6 s de cortinilla = 84 s; 196 palabras de narración. No se derivan métricas científicas nuevas.
 - **Inferencia:** rutinas digitales sincronizadas pueden sumar picos de demanda; no se atribuye toda oscilación de red a UPS.
 - **Recomendación:** priorizar el candidato principal por cadena causal y claridad narrativa, conservando los límites de evidencia y el estado pendiente del DOI.
 
