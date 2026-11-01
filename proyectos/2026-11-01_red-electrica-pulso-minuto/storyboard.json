@@ -348,5 +348,32 @@
     "Las 80 ubicaciones son puntos de medición en el campus, no 80 UPS ni 80 edificios.",
     "El pin cartográfico es la coordenada institucional del centro; no representa la ubicación exacta de los medidores.",
     "El desgaste de turbinas se menciona para oscilaciones intensas en la red escandinava; no atribuir ese efecto a la UPS concreta medida en Jülich."
-  ]
+  ],
+  "narrative_qa": {
+    "status": "PASS",
+    "score": 89,
+    "review_basis": "lectura_en_frio_solo_narracion",
+    "checks": {
+      "pregunta_central_reconstruible": true,
+      "apertura_in_medias_res": true,
+      "progresion_por_escena": true,
+      "transiciones_causales": true,
+      "giro_cientifico_explicado": true,
+      "limite_evidencia_explicito": true,
+      "payoff_cierre_apertura": true
+    },
+    "critical_flags": [],
+    "reviewer_role": "auditor_capcot_independiente",
+    "reviewed_at": "2026-11-01T15:09:29-06:00",
+    "review_scope": "Lectura exclusiva de la narración concatenada; título, resumen, arco, notas y narrative_contract excluidos.",
+    "check_evidence": {
+      "pregunta_central_reconstruible": "La anomalía recurrente permite reconstruir una pregunta única: qué causa el pulso de un minuto en redes distintas.",
+      "apertura_in_medias_res": "La caída breve de frecuencia ya está ocurriendo y se repite ante el espectador.",
+      "progresion_por_escena": "La narración pasa del patrón global a la medición local, la asociación con UPS, el mecanismo, la conexión a red y la mitigación.",
+      "transiciones_causales": "Cada escena estrecha la búsqueda a partir de la evidencia obtenida en la anterior.",
+      "giro_cientifico_explicado": "El fabricante confirma que la autoprueba periódica del controlador de la UPS genera los picos de corriente.",
+      "limite_evidencia_explicito": "Distingue el patrón observado en doce redes del rastreo causal de una UPS concreta y descarta presentarlo como amenaza crítica actual.",
+      "payoff_cierre_apertura": "El pulso inicial se resignifica como efecto de rutinas sincronizadas; la propuesta de desfasarlas cierra la explicación."
+    }
+  }
 }
