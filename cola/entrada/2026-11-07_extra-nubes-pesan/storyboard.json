@@ -98,7 +98,19 @@
       "source_ids": [
         "SRC-001"
       ],
-      "style_id": "atlas_antiguo"
+      "style_id": "atlas_antiguo",
+      "capa": {
+        "tipo": "mapa",
+        "titulo": "U.S. Geological Survey, Reston",
+        "puntos": [
+          {
+            "nombre": "U.S. Geological Survey, Reston",
+            "lat": 38.95,
+            "lon": -77.36
+          }
+        ],
+        "fuente": "USGS Water Science School, How Much Does a Cloud Weigh? https://www.usgs.gov/water-science-school/science/how-much-does-a-cloud-weigh. El pin ubica la institución editora del recurso, no una nube concreta. Cartografía base: OpenStreetMap."
+      }
     },
     {
       "id": "scene_003",
@@ -113,7 +125,13 @@
       "source_ids": [
         "SRC-001"
       ],
-      "style_id": "atlas_antiguo"
+      "style_id": "atlas_antiguo",
+      "capa": {
+        "tipo": "dato",
+        "valor": "≈500,000 kg",
+        "etiqueta": "Estimación ilustrativa para 1 km³ de cúmulo",
+        "fuente": "USGS Water Science School, How Much Does a Cloud Weigh? https://www.usgs.gov/water-science-school/science/how-much-does-a-cloud-weigh. Estimación basada en 0.5 g/m³ de agua líquida; no es una cifra universal."
+      }
     },
     {
       "id": "scene_004",
