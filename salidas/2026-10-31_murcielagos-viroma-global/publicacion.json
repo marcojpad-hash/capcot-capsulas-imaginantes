@@ -71,7 +71,13 @@
    "ui_shown": "Nov 2, 6:00 PM (GMT-5)",
    "ai_label": true,
    "caption": "¿Qué define los virus de los murciélagos?\n\nFuentes en YouTube @datosyociosidades\n\n#murcielagos #ciencia #animales #sabiasque",
-   "actualizado": "2026-10-31T15:11:26-06:00"
+   "actualizado": "2026-10-31T15:11:26-06:00",
+   "reemplazo_v4": {
+    "estado": "pendiente_ui",
+    "mp4_nuevo": "salidas/2026-10-31_murcielagos-viroma-global/capsula_v4.mp4",
+    "viejo": "programado pre-v4 sin ID; borrar en Studio/Business Suite",
+    "actualizado": "2026-10-31T19:20:00-06:00"
+   }
   },
   "facebook": {
    "estado": "programado",
@@ -79,7 +85,13 @@
    "publish_at_cdmx": "2026-11-02T17:00:00-06:00",
    "ui_shown": "2 Nov 2026 18:00 America/New_York",
    "ai_label": false,
-   "actualizado": "2026-10-31T15:11:26-06:00"
+   "actualizado": "2026-10-31T15:11:26-06:00",
+   "reemplazo_v4": {
+    "estado": "pendiente_ui",
+    "mp4_nuevo": "salidas/2026-10-31_murcielagos-viroma-global/capsula_v4.mp4",
+    "viejo": "programado pre-v4 sin ID; borrar en Studio/Business Suite",
+    "actualizado": "2026-10-31T19:20:00-06:00"
+   }
   },
   "historial_youtube": [
    {

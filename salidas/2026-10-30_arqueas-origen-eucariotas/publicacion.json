@@ -73,7 +73,13 @@
    "ui_shown": "Nov 1, 8:00 PM (GMT-5) New York",
    "ai_label": true,
    "caption": "¿Qué había antes de una célula como la tuya?\n\nFuentes en YouTube @datosyociosidades\n\n#arqueas #celulas #evolucion #ciencia #sabiasque",
-   "actualizado": "2026-10-31T14:53:04-06:00"
+   "actualizado": "2026-10-31T14:53:04-06:00",
+   "reemplazo_v4": {
+    "estado": "pendiente_ui",
+    "mp4_nuevo": "salidas/2026-10-30_arqueas-origen-eucariotas/capsula_v4.mp4",
+    "viejo": "programado pre-v4 sin ID; borrar en Studio/Business Suite",
+    "actualizado": "2026-10-31T19:20:00-06:00"
+   }
   },
   "facebook": {
    "estado": "programado",
@@ -81,7 +87,13 @@
    "publish_at_cdmx": "2026-11-01T19:00:00-06:00",
    "ui_shown": "1 Nov 2026 20:00 America/New_York",
    "ai_label": false,
-   "actualizado": "2026-10-31T14:53:04-06:00"
+   "actualizado": "2026-10-31T14:53:04-06:00",
+   "reemplazo_v4": {
+    "estado": "pendiente_ui",
+    "mp4_nuevo": "salidas/2026-10-30_arqueas-origen-eucariotas/capsula_v4.mp4",
+    "viejo": "programado pre-v4 sin ID; borrar en Studio/Business Suite",
+    "actualizado": "2026-10-31T19:20:00-06:00"
+   }
   },
   "historial_youtube": [
    {

@@ -71,7 +71,13 @@
    "ui_shown": "Nov 2, 8:00 PM (GMT-5)",
    "ai_label": true,
    "caption": "Cuando el viento y el Sol fallan juntos.\n\nFuentes en YouTube @datosyociosidades\n\n#energia #ciencia #sabiasque",
-   "actualizado": "2026-10-31T15:11:26-06:00"
+   "actualizado": "2026-10-31T15:11:26-06:00",
+   "reemplazo_v4": {
+    "estado": "pendiente_ui",
+    "mp4_nuevo": "salidas/2026-10-31_sequias-energia-renovable/capsula_v4.mp4",
+    "viejo": "programado pre-v4 sin ID; borrar en Studio/Business Suite",
+    "actualizado": "2026-10-31T19:20:00-06:00"
+   }
   },
   "facebook": {
    "estado": "programado",
@@ -79,7 +85,13 @@
    "publish_at_cdmx": "2026-11-02T19:00:00-06:00",
    "ui_shown": "2 Nov 2026 20:00 America/New_York",
    "ai_label": false,
-   "actualizado": "2026-10-31T15:11:26-06:00"
+   "actualizado": "2026-10-31T15:11:26-06:00",
+   "reemplazo_v4": {
+    "estado": "pendiente_ui",
+    "mp4_nuevo": "salidas/2026-10-31_sequias-energia-renovable/capsula_v4.mp4",
+    "viejo": "programado pre-v4 sin ID; borrar en Studio/Business Suite",
+    "actualizado": "2026-10-31T19:20:00-06:00"
+   }
   },
   "historial_youtube": [
    {

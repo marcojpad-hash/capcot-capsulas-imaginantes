@@ -80,7 +80,13 @@
    "ai_label": true,
    "caption": "Por qué lloramos al cortar cebolla. Fuentes en YouTube @datosyociosidades #cebolla #cocina #ciencia #sabiasque",
    "nota": "Sin URL/ID de Studio para programados. Offset 1-nov: UI GMT-5 = CDMX+1h.",
-   "actualizado": "2026-10-31T14:37:34-06:00"
+   "actualizado": "2026-10-31T14:37:34-06:00",
+   "reemplazo_v4": {
+    "estado": "pendiente_ui",
+    "mp4_nuevo": "salidas/2026-11-01_llorar-cebolla-quimica/capsula_v4.mp4",
+    "viejo": "programado pre-v4 sin ID; borrar en Studio/Business Suite",
+    "actualizado": "2026-10-31T19:20:00-06:00"
+   }
   },
   "facebook": {
    "estado": "programado",
@@ -89,7 +95,13 @@
    "ui_shown": "1 Nov 2026 14:30 America/New_York",
    "ai_label": false,
    "nota": "Reels via Meta Business Suite; AI label no disponible en flujo.",
-   "actualizado": "2026-10-31T14:37:34-06:00"
+   "actualizado": "2026-10-31T14:37:34-06:00",
+   "reemplazo_v4": {
+    "estado": "pendiente_ui",
+    "mp4_nuevo": "salidas/2026-11-01_llorar-cebolla-quimica/capsula_v4.mp4",
+    "viejo": "programado pre-v4 sin ID; borrar en Studio/Business Suite",
+    "actualizado": "2026-10-31T19:20:00-06:00"
+   }
   },
   "plataformas": {
    "youtube": {
