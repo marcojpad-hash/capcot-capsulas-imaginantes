@@ -7,7 +7,7 @@ def ok(n, c, d=""): R.append({"check": n, "ok": bool(c), "detalle": d})
 pr = json.loads(subprocess.check_output(["ffprobe", "-v", "error", "-show_streams", "-show_format", "-of", "json", mp4]))
 v = next(s for s in pr["streams"] if s["codec_type"] == "video"); a = [s for s in pr["streams"] if s["codec_type"] == "audio"]
 d = float(pr["format"]["duration"])
-ok("duracion_>=60_<=120", 60 <= d <= 120, f"{d:.2f}s (objetivo {sb.get('target_duration_seconds', '?')})"); ok("resolucion_1080x1920", (v["width"], v["height"]) == (1080, 1920))
+ok("duracion_>=75_<=90", 75 <= d <= 90, f"{d:.2f}s (objetivo {sb.get('target_duration_seconds', '?')})"); ok("resolucion_1080x1920", (v["width"], v["height"]) == (1080, 1920))
 ok("h264_aac", v["codec_name"] == "h264" and a and a[0]["codec_name"] == "aac"); ok("fps_30", v["r_frame_rate"] == "30/1", v["r_frame_rate"])
 e = subprocess.run(["ffmpeg", "-i", mp4, "-af", "ebur128=peak=true", "-f", "null", "-"], capture_output=True, text=True).stderr
 I = float(re.findall(r"I:\s+(-?[\d.]+) LUFS", e)[-1]); ok("loudness_-14", abs(I + 14) <= 1, f"{I} LUFS")
