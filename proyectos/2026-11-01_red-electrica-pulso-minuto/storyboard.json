@@ -14,7 +14,7 @@
   "narrative_contract": {
     "central_question": "¿Qué provoca una oscilación de un minuto que aparece en redes eléctricas distintas?",
     "promise": "Mostrar cómo una rutina automática de autoprueba en un sistema de respaldo puede dejar una huella medible en la red.",
-    "stakes": "Los picos repetidos de demanda pueden contribuir al desgaste de equipos que regulan la frecuencia; el artículo indica que el patrón observado aún no alcanza un nivel crítico de seguridad.",
+    "stakes": "En redes donde la amplitud es alta, las oscilaciones pueden contribuir al desgaste de turbinas hidroeléctricas que prestan control primario; el artículo indica que el patrón observado aún no alcanza un nivel crítico de seguridad.",
     "scientific_turn": "La señal coincide con picos de corriente de UPS; el fabricante confirmó que una autoprueba periódica del controlador genera los picos del equipo investigado.",
     "evidence_limit": "El artículo identifica el patrón en doce redes de cinco continentes y rastrea una UPS concreta en el campus de Jülich; no prueba que todas las oscilaciones ni todas las UPS tengan esa causa.",
     "payoff": "La apertura se resuelve: el pulso no era un fallo aleatorio, sino la suma de rutinas sincronizadas; la pregunta final extiende el mecanismo a otros aparatos sin afirmar que ya se haya demostrado."
@@ -77,7 +77,8 @@
         "Cuatro edificios medidos con UPS mostraron una señal fuerte; los edificios medidos sin UPS no mostraron el mismo patrón.",
         "El fabricante confirmó que los picos de corriente de la UPS investigada procedían de autopruebas periódicas del sistema de gestión de baterías.",
         "La señal se rastreó a través de transformadores y una barra colectora hasta la conexión con la red pública de 110 kV.",
-        "El artículo indica que el patrón observado aún no había alcanzado un nivel crítico de seguridad y propone mejorar el diseño de control."
+        "El artículo indica que el patrón observado aún no había alcanzado un nivel crítico de seguridad y propone mejorar el diseño de control.",
+        "En la red escandinava se observaron amplitudes superiores a 10 mHz; la operación oscilatoria puede contribuir al desgaste de turbinas hidroeléctricas que prestan control primario."
       ],
       "verification_status": "PENDIENTE",
       "verification_detail": "El resultado indexado de la página del editor muestra el DOI y la fecha, pero la apertura directa de Nature redirigió a idp.nature.com y devolvió HTTP 500; doi.org y Crossref REST no fueron accesibles en esta consulta. El DOI no se considera validado."
@@ -116,8 +117,8 @@
     {
       "id": "scene_001",
       "arc": "hook_medias_res",
-      "duration_seconds": 9,
-      "narration": "Al cambiar el minuto, varias redes eléctricas pierden un poco de frecuencia. Sesenta segundos después, vuelve a ocurrir. No es un apagón: es un pulso exacto.",
+      "duration_seconds": 8,
+      "narration": "Al cambiar el minuto, la frecuencia de varias redes cae brevemente. Sesenta segundos después, vuelve a ocurrir: un pulso exacto, no un apagón.",
       "on_screen_text": "Cada minuto",
       "visual_description": "Una línea de frecuencia cae unos instantes al cambiar el minuto y vuelve a su nivel; detrás, una ciudad esquemática conectada por líneas eléctricas. No representar un apagón ni una falla general.",
       "image_prompt": "risograph print, two-color fluorescent pink and teal overprint, misregistration, grainy texture, flat shapes, vertical 9:16, no text; A simplified electric grid line running through abstract city blocks; at the start of a minute the frequency trace dips briefly; show a small precise pulse, not a blackout; no numbers or labels, leave negative space for overlay.",
@@ -241,11 +242,11 @@
     {
       "id": "scene_006",
       "arc": "desarrollo",
-      "duration_seconds": 8,
-      "narration": "Los investigadores siguieron ese consumo por varios transformadores hasta la conexión con la red pública de 110 kilovoltios.",
+      "duration_seconds": 12,
+      "narration": "Los investigadores siguieron el consumo por transformadores hasta la red pública de 110 kilovoltios. En Escandinavia, oscilaciones intensas pueden contribuir al desgaste de turbinas hidroeléctricas de regulación.",
       "on_screen_text": "110 kV",
-      "visual_description": "La señal viaja desde la UPS por transformadores y una barra colectora hasta una torre de transmisión; el trayecto es esquemático, no un plano eléctrico literal.",
-      "image_prompt": "risograph print, two-color fluorescent pink and teal overprint, misregistration, grainy texture, flat shapes, vertical 9:16, no text; A single current pulse travels through transformer silhouettes and a busbar toward a high-voltage transmission pylon; highlight one schematic path; no fabricated meter readouts or precise electrical diagram.",
+      "visual_description": "La señal viaja desde la UPS por transformadores y una barra colectora hasta la conexión de 110 kV; un segundo plano muestra una turbina hidroeléctrica como metáfora del desgaste descrito para oscilaciones intensas en Escandinavia, no como medición del campus de Jülich.",
+      "image_prompt": "risograph print, two-color fluorescent pink and teal overprint, misregistration, grainy texture, flat shapes, vertical 9:16, no text; A single current pulse travels through transformer silhouettes and a busbar toward a high-voltage transmission pylon; a separate hydro-turbine silhouette suggests possible wear under intense oscillations, not a measured scene from Jülich; highlight one schematic path; no fabricated meter readouts or precise electrical diagram.",
       "ambiente": "El zumbido se amplía, sin aumentar a tono de emergencia.",
       "sfx": [
         "Dos golpes metálicos suaves al cruzar transformadores.",
@@ -265,7 +266,7 @@
     {
       "id": "scene_007",
       "arc": "cierre_historia",
-      "duration_seconds": 13,
+      "duration_seconds": 11,
       "narration": "Pero el estudio no demuestra que todas las oscilaciones mundiales vengan de baterías: encontró el patrón en doce redes y rastreó una UPS concreta. Tampoco lo considera una amenaza crítica actual.",
       "on_screen_text": "Límite del estudio",
       "visual_description": "La imagen separa un mapa de doce redes estudiadas de una sola UPS rastreada en detalle; el resto queda como evidencia de patrón, no como causa demostrada.",
@@ -284,7 +285,7 @@
     {
       "id": "scene_008",
       "arc": "reflexion_o_pregunta",
-      "duration_seconds": 13,
+      "duration_seconds": 12,
       "narration": "Separar las autopruebas puede reducir el pulso. La red no perdía el compás por azar: muchos relojes marcaban el mismo segundo. ¿Qué otra rutina podría hacerlo? Esto fue Datos y ociosidades.",
       "on_screen_text": "¿Qué rutina?",
       "visual_description": "Varios relojes de aparatos dejan de coincidir y sus pulsos se dispersan; la onda de la red se suaviza. Cierre circular con la misma línea de frecuencia de la apertura.",
@@ -345,6 +346,7 @@
     "No presentar el resultado como amenaza inminente de apagón; el artículo indica que el patrón observado aún no alcanzaba un nivel crítico de seguridad.",
     "No confundir el periodo de 60 segundos con la frecuencia nominal de 50 o 60 Hz de la red.",
     "Las 80 ubicaciones son puntos de medición en el campus, no 80 UPS ni 80 edificios.",
-    "El pin cartográfico es la coordenada institucional del centro; no representa la ubicación exacta de los medidores."
+    "El pin cartográfico es la coordenada institucional del centro; no representa la ubicación exacta de los medidores.",
+    "El desgaste de turbinas se menciona para oscilaciones intensas en la red escandinava; no atribuir ese efecto a la UPS concreta medida en Jülich."
   ]
 }
