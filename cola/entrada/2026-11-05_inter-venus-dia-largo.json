@@ -64,7 +64,9 @@
       "accessed": "2026-10-31",
       "publication_date": "",
       "supports": [
-        "Rotación sideral retrógrada de 243 días terrestres y órbita de 224.7 días."
+        "Rotación sideral retrógrada de aproximadamente 243.69 días terrestres.",
+        "Periodo orbital de aproximadamente 224.701 días terrestres.",
+        "Duración del día solar de aproximadamente 116.75 días terrestres."
       ],
       "verification_status": "VERIFICADO_RESOLVEDOR"
     }
@@ -130,7 +132,7 @@
         "tipo": "dato",
         "valor": "243 días",
         "etiqueta": "Rotación sideral frente a 224.7 días de órbita",
-        "fuente": "NASA NSSDC Venus Fact Sheet. https://nssdc.gsfc.nasa.gov/planetary/factsheet/venusfact.html. NASA NSSDC: 243 días de rotación sideral y 224.7 días de órbita. El pin ubica la institución NASA Goddard asociada al recurso, no a Venus."
+        "fuente": "NASA NSSDC Venus Fact Sheet. Rotación sideral: 243.69 días; periodo orbital: 224.701 días; día solar: 116.75 días. https://nssdc.gsfc.nasa.gov/planetary/factsheet/venusfact.html. La comparación «día más largo que el año» solo corresponde al día sideral."
       }
     },
     {
