@@ -11,6 +11,14 @@
   "audience": "Público principal",
   "occasion": "Contexto de consumo",
   "resumen": "Resumen factual de la historia",
+  "narrative_contract": {
+    "central_question": "Una sola pregunta que la narración responderá.",
+    "promise": "Qué comprenderá el espectador al final.",
+    "stakes": "Por qué importa la respuesta o qué cambia.",
+    "scientific_turn": "El hallazgo o mecanismo que cambia la comprensión inicial.",
+    "evidence_limit": "Qué se midió/demostró, bajo qué condiciones y qué no permite concluir.",
+    "payoff": "Cómo el cierre paga la pregunta y promesa de apertura."
+  },
   "trend_source": {
     "termino": "Tema/candidato",
     "fecha_publicacion": "YYYY-MM-DD",
