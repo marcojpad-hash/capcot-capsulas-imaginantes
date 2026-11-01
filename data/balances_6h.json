@@ -1162,5 +1162,60 @@
    ]
   ],
   "nota_flujo": "12 h nocturnas (20:09→08:02, sin corte de 02:00): YT +686 vistas, +24 likes, 0 subs (63). El xolo de madrugada fue el mejor arranque reciente (249 en 5 h) y monarca sigue empujando por Muertos; Kromdraai despertó (5→133). Estancados: corneja (10 vistas), Voyager (27), pardelas/jet lag 7 en 8.5 h, y todo el catálogo viejo en 0–2. TT perfil: 15→17 seguidores, likes 544→554."
+ },
+ {
+  "hora_cdmx": "2026-11-01T14:04-06:00",
+  "base_youtube": "2026-11-01T08:02",
+  "base_tiktok": "2026-11-01T08:02",
+  "youtube_totales": {
+   "view": 25097,
+   "like": 846,
+   "comment": 26
+  },
+  "suscriptores": 65,
+  "shorts_publicos": 34,
+  "delta_youtube": {
+   "view": 563,
+   "like": 22,
+   "comment": 2,
+   "suscriptores": 2
+  },
+  "tiktok_totales": null,
+  "seguidores_tiktok": 17,
+  "likes_perfil_tiktok": 558,
+  "videos_tiktok": 35,
+  "delta_tiktok": {
+   "seguidores": 0,
+   "likes_perfil": 4,
+   "videos": 0,
+   "nota": "Solo perfil público (vistas por video no disponibles sin Studio)."
+  },
+  "ranking_crecimiento": [
+   [
+    "YT Xoloitzcuintle",
+    217
+   ],
+   [
+    "YT Pulpo (nuevo 07:00)",
+    209
+   ],
+   [
+    "YT Kromdraai",
+    49
+   ],
+   [
+    "YT Mariposas monarca",
+    32
+   ],
+   [
+    "YT Mosquito",
+    26
+   ],
+   [
+    "YT Corales",
+    13
+   ]
+  ],
+  "nota_flujo": "6 h diurnas (08:02→14:04): YT +563 vistas, +22 likes, +2 comentarios, +2 subs (65). Xolo sigue al frente (466) y el pulpo tuvo buen arranque (225 en 7 h); monarca se enfría (+32 vs +155 la ventana anterior). Estancados: corneja 11, Voyager 28, pardelas 14, catálogo viejo en 0–4. TT perfil: 17 seguidores sin cambio, likes 554→558, contador de videos sigue en 35."
  }
 ]
