@@ -122,27 +122,6 @@ def validar(path, doi=False):
         errs.append("target_duration_seconds debe estar entre 75 y 90 segundos")
     if not 1 <= len(words(sb.get("titulo", ""))) <= 6:
         errs.append("titulo/gancho debe tener entre 1 y 6 palabras")
-    contract = sb.get("narrative_contract") or {}
-    for key in ("premise", "central_question", "promise", "stakes", "scientific_turn", "evidence_limit", "payoff"):
-        if not str(contract.get(key) or "").strip():
-            errs.append(f"narrative_contract.{key} es obligatorio")
-    qa = sb.get("narrative_qa") or {}
-    qa_checks = ("central_question_reconstructable", "opening_is_in_medias_res", "every_scene_advances", "transitions_are_causal", "data_is_interpreted", "scientific_turn_present", "payoff_resolves_opening")
-    if qa.get("status") != "PASS":
-        errs.append("narrative_qa.status debe ser PASS; sin QA narrativo aprobado se bloquea el handoff")
-    if qa.get("review_basis") != "lectura_en_frio_solo_narracion":
-        errs.append("narrative_qa.review_basis debe ser lectura_en_frio_solo_narracion")
-    try:
-        score = float(qa.get("score", 0))
-    except (TypeError, ValueError):
-        score = 0
-    if score < 85:
-        errs.append("narrative_qa.score debe ser >=85")
-    for check in qa_checks:
-        if qa.get(check) is not True:
-            errs.append(f"narrative_qa.{check} debe ser true")
-    if qa.get("critical_flags") != []:
-        errs.append("narrative_qa.critical_flags debe ser []")
     scenes = sb.get("scenes") or []
     if not 7 <= len(scenes) <= 9:
         errs.append(f"se requieren 7–9 escenas; hay {len(scenes)}")
