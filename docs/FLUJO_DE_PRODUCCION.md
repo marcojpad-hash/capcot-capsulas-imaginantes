@@ -1,5 +1,9 @@
 # Flujo de producción CAPCOT
 
+> **Ahorro de recursos (2026-11-01):** ver [AHORRO_RECURSOS_PIPELINE.md](AHORRO_RECURSOS_PIPELINE.md).
+> Ruta por defecto: storyboard → frames fijos → `montar_capsula.py`. Borrador 540×960 (`--borrador`) antes de cualquier imagen HD.
+> I2V/HyperFrames solo como excepción. Voz JorgeNeural intocable.
+
 ## Estructura de cada proyecto
     proyectos/
       ejemplo-001/

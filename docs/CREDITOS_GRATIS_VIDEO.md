@@ -1,5 +1,8 @@
 # CAPCOT – Créditos GRATIS de video IA (revisado 24 oct 2026)
 
+> **Antes de gastar créditos:** seguir [AHORRO_RECURSOS_PIPELINE.md](AHORRO_RECURSOS_PIPELINE.md).
+> I2V solo para 1–2 insertos héroe por cápsula; el resto, fijas + FFmpeg.
+
 Supuestos: cápsula de unos 80 s. Horas en **CDMX (UTC-6)**. "NP" significa que el dato **no está publicado** en la fuente oficial. Los cálculos no cuentan las tomas fallidas ni repetidas; en la práctica hay que contar **×2**.
 
 ## Tabla

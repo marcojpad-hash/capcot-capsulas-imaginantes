@@ -20,6 +20,7 @@ Proyecto para producir micro-cápsulas científicas verticales (9:16, 60–90 s)
 3. No asumir generación ilimitada, ausencia de marcas de agua ni derechos comerciales en planes gratuitos.
 4. No guardar medios pesados en GitHub por defecto.
 5. No modificar el motor U6 desde este repositorio.
+6. Ahorro de recursos: ruta por defecto fijas + FFmpeg y borrador 540×960 antes de HD; ver [docs/AHORRO_RECURSOS_PIPELINE.md](docs/AHORRO_RECURSOS_PIPELINE.md).
 
 Los scripts de validación y montaje existen. El plan maestro documenta un prototipo probado; las corridas concretas deben distinguirse de los paquetes locales y verificarse por separado.
 **Para Grok / modelos externos:** ver `ajustes_entre_modelos/HANDOFF_GROK_PRODUCCION.md`.

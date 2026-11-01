@@ -244,7 +244,9 @@ def escena_video(png, seconds, out_mp4, idx, texto="", plano_s=2.5, gancho=False
 
 def main():
     ap = argparse.ArgumentParser(); ap.add_argument("storyboard"); ap.add_argument("-o", "--out", required=True)
+    ap.add_argument("--borrador", action="store_true", help="MP4 de vista previa 540x960, preset rápido, CRF alto")
     a = ap.parse_args()
+    if a.borrador: print("=" * 40 + "\n  BORRADOR 540x960 — vista previa, NO publicar\n" + "=" * 40)
     sb = json.load(open(a.storyboard, encoding="utf-8")); base = os.path.dirname(os.path.abspath(a.storyboard))
     v = sb["voice"]; tmp = tempfile.mkdtemp(prefix="capcot_")
     continuo = v.get("modo_pausas", "continuo") == "continuo"
@@ -288,7 +290,7 @@ def main():
     srt = os.path.splitext(a.out)[0] + ".srt"
     open(srt, "w", encoding="utf-8").write(srt_from_words(all_words, sb["export"].get("subtitle_max_words", 3)))
     ass = os.path.splitext(a.out)[0] + ".ass"; ass_from_srt(open(srt, encoding="utf-8").read(), ass)
-    vf = f"ass={ass}"
+    vf = f"ass={ass}" + (",scale=540:960" if a.borrador else "")
     durs.append(("silencio", cd))  # cortinilla: solo música
     camas = cama_sonora(sb.get("audio", {}), base, dur(acat), tmp, durs)
     cmd = ["ffmpeg", "-y", "-i", vcat, "-i", acat]
@@ -301,7 +303,7 @@ def main():
         cmd += ["-filter_complex", fc, "-map", "[vout]", "-map", "[aout]"]
     else:
         cmd += ["-vf", vf, "-af", "loudnorm=I=-14:TP=-1.5", "-map", "0:v", "-map", "1:a"]
-    cmd += ["-c:v", "libx264", "-preset", "medium", "-crf", "20", "-pix_fmt", "yuv420p", "-r", str(FPS),
+    cmd += ["-c:v", "libx264", "-preset", "veryfast" if a.borrador else "medium", "-crf", "28" if a.borrador else "20", "-pix_fmt", "yuv420p", "-r", str(FPS),
             "-c:a", "aac", "-b:a", "160k", "-ar", "48000", "-shortest", "-movflags", "+faststart", a.out]
     run(cmd)
     d = dur(a.out); print(f"OK {a.out} duración {d:.2f}s")

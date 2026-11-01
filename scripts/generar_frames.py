@@ -6,12 +6,16 @@ Proveedores (--proveedor):
   manual       no genera: lista prompts y espera los archivos (p.ej. hechos con la herramienta GenerateImage del bot)
   placeholder  frames de prueba con Pillow (NUNCA en producción)
 Siempre normaliza a 1080x1920 (recorte centrado). Uso:
-  python3 scripts/generar_frames.py proyectos/x/storyboard.json --proveedor manual"""
+  python3 scripts/generar_frames.py proyectos/x/storyboard.json --proveedor manual
+--borrador  normaliza a 540x960 (revisión barata antes de gastar llamadas HD; ver docs/AHORRO_RECURSOS_PIPELINE.md).
+            Funciona con todos los proveedores. Producción (sin flag) sigue en 1080x1920."""
 import argparse, base64, json, os, sys, urllib.request
 from PIL import Image, ImageDraw, ImageFont
 
+RES = (1080, 1920)  # producción; --borrador lo cambia a (540, 960)
+
 def normalizar(path):
-    im = Image.open(path).convert("RGB"); W, H = 1080, 1920
+    im = Image.open(path).convert("RGB"); W, H = RES
     r = max(W / im.width, H / im.height); im = im.resize((round(im.width * r), round(im.height * r)), Image.LANCZOS)
     l, t = (im.width - W) // 2, (im.height - H) // 2; im.crop((l, t, l + W, t + H)).save(path)
 
@@ -29,11 +33,14 @@ def placeholder(sc, out, i):
     y = 320
     for k in range(0, len(sc.get("visual_description", "")), 34):
         d.text((80, y), sc["visual_description"][k:k + 34], font=f, fill=(255, 255, 255)); y += 60
-    im.save(out)
+    im.save(out); normalizar(out)
 
 if __name__ == "__main__":
     ap = argparse.ArgumentParser(); ap.add_argument("storyboard"); ap.add_argument("--proveedor", default="manual")
-    a = ap.parse_args(); sb = json.load(open(a.storyboard, encoding="utf-8")); base = os.path.dirname(os.path.abspath(a.storyboard))
+    ap.add_argument("--borrador", action="store_true", help="frames 540x960 para revisión (no producción)")
+    a = ap.parse_args()
+    if a.borrador: RES = (540, 960); print("=" * 40 + "\n  BORRADOR 540x960 — NO es render final\n" + "=" * 40)
+    sb = json.load(open(a.storyboard, encoding="utf-8")); base = os.path.dirname(os.path.abspath(a.storyboard))
     falt = 0
     for i, sc in enumerate(sb["scenes"]):
         out = os.path.join(base, sc["asset_filename"]); os.makedirs(os.path.dirname(out), exist_ok=True)
