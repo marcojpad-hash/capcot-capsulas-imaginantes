@@ -152,3 +152,8 @@ El investigador dejó un nuevo borrador en `proyectos/2026-11-01_red-electrica-p
 - No existe `cola/estado/2026-11-01_red-electrica-pulso-minuto.json`: recepción Grok no confirmada.
 
 El borrador abre con la anomalía de frecuencia ya en curso y su contrato narrativo explicita pregunta, promesa, stakes, giro, límite y payoff. La lectura narrativa independiente sigue pendiente del auditor; no se le asigna PASS desde esta operación. El slot de dato del día 23:30 sigue sin paquete confirmado.
+
+
+### Corrección de conteo y alcance científico — 14:36 CDMX
+
+Una lectura posterior del storyboard actualizado devuelve **196 palabras**, no 190; el radar ya fue corregido mediante el commit `089e55f6d837703c936eab50adfd541bb3ed94ea`. La versión actual conserva 8 escenas y 84 s (78 + 6). El contrato narrativo ahora explicita el posible desgaste de turbinas hidroeléctricas en Escandinavia cuando las oscilaciones son intensas. Ese claim requiere contraste directo con el artículo, cuyo DOI continúa PENDIENTE; no se presenta como validado por el comunicado institucional. El borrador sigue sin `narrative_qa` y fuera de cola.
