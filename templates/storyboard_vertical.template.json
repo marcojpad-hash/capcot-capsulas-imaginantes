@@ -91,7 +91,13 @@
       "source_ids": [
         "SRC-001"
       ],
-      "style_id": "ID_EXACTO_DE_scripts/estilos.json"
+      "style_id": "ID_EXACTO_DE_scripts/estilos.json",
+      "dramatic_beat": "Tensión o cambio dramático concreto de esta escena.",
+      "scene_function": "Qué función cumple esta escena en la historia.",
+      "causal_bridge_from_previous": "Cómo deriva causalmente de la escena anterior; en scene_001, explicar la apertura en curso.",
+      "question_state": "Qué se sabe y qué queda sin resolver al terminar esta escena.",
+      "reason_to_continue": "Qué razón concreta impulsa a seguir a la escena siguiente.",
+      "new_information": "Qué información nueva aporta esta escena sin repetir datos previos."
     },
     {
       "id": "scene_002",
@@ -118,7 +124,13 @@
         "puntos": [],
         "titulo": "Lugar real y función del pin",
         "fuente": "Fuente cartográfica oficial; aclarar precisión y qué representa el punto."
-      }
+      },
+      "dramatic_beat": "Tensión o cambio dramático concreto de esta escena.",
+      "scene_function": "Qué función cumple esta escena en la historia.",
+      "causal_bridge_from_previous": "Cómo deriva causalmente de la escena anterior; en scene_001, explicar la apertura en curso.",
+      "question_state": "Qué se sabe y qué queda sin resolver al terminar esta escena.",
+      "reason_to_continue": "Qué razón concreta impulsa a seguir a la escena siguiente.",
+      "new_information": "Qué información nueva aporta esta escena sin repetir datos previos."
     },
     {
       "id": "scene_003",
@@ -139,7 +151,13 @@
         "valor": "Dato comprobado",
         "etiqueta": "Qué mide",
         "fuente": "Fuente primaria que respalda el dato."
-      }
+      },
+      "dramatic_beat": "Tensión o cambio dramático concreto de esta escena.",
+      "scene_function": "Qué función cumple esta escena en la historia.",
+      "causal_bridge_from_previous": "Cómo deriva causalmente de la escena anterior; en scene_001, explicar la apertura en curso.",
+      "question_state": "Qué se sabe y qué queda sin resolver al terminar esta escena.",
+      "reason_to_continue": "Qué razón concreta impulsa a seguir a la escena siguiente.",
+      "new_information": "Qué información nueva aporta esta escena sin repetir datos previos."
     },
     {
       "id": "scene_004",
@@ -154,7 +172,13 @@
       "source_ids": [
         "SRC-001"
       ],
-      "style_id": "ID_EXACTO_DE_scripts/estilos.json"
+      "style_id": "ID_EXACTO_DE_scripts/estilos.json",
+      "dramatic_beat": "Tensión o cambio dramático concreto de esta escena.",
+      "scene_function": "Qué función cumple esta escena en la historia.",
+      "causal_bridge_from_previous": "Cómo deriva causalmente de la escena anterior; en scene_001, explicar la apertura en curso.",
+      "question_state": "Qué se sabe y qué queda sin resolver al terminar esta escena.",
+      "reason_to_continue": "Qué razón concreta impulsa a seguir a la escena siguiente.",
+      "new_information": "Qué información nueva aporta esta escena sin repetir datos previos."
     },
     {
       "id": "scene_005",
@@ -169,7 +193,13 @@
       "source_ids": [
         "SRC-001"
       ],
-      "style_id": "ID_EXACTO_DE_scripts/estilos.json"
+      "style_id": "ID_EXACTO_DE_scripts/estilos.json",
+      "dramatic_beat": "Tensión o cambio dramático concreto de esta escena.",
+      "scene_function": "Qué función cumple esta escena en la historia.",
+      "causal_bridge_from_previous": "Cómo deriva causalmente de la escena anterior; en scene_001, explicar la apertura en curso.",
+      "question_state": "Qué se sabe y qué queda sin resolver al terminar esta escena.",
+      "reason_to_continue": "Qué razón concreta impulsa a seguir a la escena siguiente.",
+      "new_information": "Qué información nueva aporta esta escena sin repetir datos previos."
     },
     {
       "id": "scene_006",
@@ -184,7 +214,13 @@
       "source_ids": [
         "SRC-001"
       ],
-      "style_id": "ID_EXACTO_DE_scripts/estilos.json"
+      "style_id": "ID_EXACTO_DE_scripts/estilos.json",
+      "dramatic_beat": "Tensión o cambio dramático concreto de esta escena.",
+      "scene_function": "Qué función cumple esta escena en la historia.",
+      "causal_bridge_from_previous": "Cómo deriva causalmente de la escena anterior; en scene_001, explicar la apertura en curso.",
+      "question_state": "Qué se sabe y qué queda sin resolver al terminar esta escena.",
+      "reason_to_continue": "Qué razón concreta impulsa a seguir a la escena siguiente.",
+      "new_information": "Qué información nueva aporta esta escena sin repetir datos previos."
     },
     {
       "id": "scene_007",
@@ -199,7 +235,13 @@
       "source_ids": [
         "SRC-001"
       ],
-      "style_id": "ID_EXACTO_DE_scripts/estilos.json"
+      "style_id": "ID_EXACTO_DE_scripts/estilos.json",
+      "dramatic_beat": "Tensión o cambio dramático concreto de esta escena.",
+      "scene_function": "Qué función cumple esta escena en la historia.",
+      "causal_bridge_from_previous": "Cómo deriva causalmente de la escena anterior; en scene_001, explicar la apertura en curso.",
+      "question_state": "Qué se sabe y qué queda sin resolver al terminar esta escena.",
+      "reason_to_continue": "Qué razón concreta impulsa a seguir a la escena siguiente.",
+      "new_information": "Qué información nueva aporta esta escena sin repetir datos previos."
     }
   ],
   "cortinilla_fuentes": {
