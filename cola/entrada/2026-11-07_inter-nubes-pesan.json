@@ -14,7 +14,7 @@
   "trend_source": {
     "termino": "¿Cuánto pesa una nube?",
     "fecha_publicacion": "",
-    "url": "https://www.usgs.gov/special-topics/water-science-school"
+    "url": "https://www.usgs.gov/water-science-school/science/how-much-does-a-cloud-weigh"
   },
   "editorial_status": "PROPUESTA_PENDIENTE_DE_GROK",
   "arco": {
@@ -59,12 +59,13 @@
     {
       "id": "SRC-001",
       "cita_corta": "USGS Water Science School",
-      "url": "https://www.usgs.gov/special-topics/water-science-school",
+      "url": "https://www.usgs.gov/water-science-school/science/how-much-does-a-cloud-weigh",
       "doi": null,
       "accessed": "2026-10-31",
       "publication_date": "",
       "supports": [
-        "La masa depende del volumen y del contenido de agua líquida; no existe cifra universal."
+        "Una estimación ilustrativa para un cúmulo de 1 km³ con contenido de agua líquida de 0.5 g/m³ equivale a unos 500,000 kg de agua.",
+        "La masa estimada varía con el volumen y el contenido de agua líquida; no existe una cifra universal para todas las nubes."
       ],
       "verification_status": "VERIFICADO_RESOLVEDOR"
     }
@@ -130,7 +131,7 @@
         "tipo": "dato",
         "valor": "≈500,000 kg",
         "etiqueta": "Estimación ilustrativa para 1 km³ de cúmulo",
-        "fuente": "USGS Water Science School, How Much Does a Cloud Weigh? https://www.usgs.gov/water-science-school/science/how-much-does-a-cloud-weigh. Estimación basada en 0.5 g/m³ de agua líquida; no es una cifra universal."
+        "fuente": "USGS Water Science School, How Much Does a Cloud Weigh? Para un cúmulo hipotético de 1 km³ y 0.5 g/m³ de contenido de agua líquida, el cálculo es 500,000 kg de agua. Es una estimación ilustrativa, no una medida universal. https://www.usgs.gov/water-science-school/science/how-much-does-a-cloud-weigh."
       }
     },
     {
