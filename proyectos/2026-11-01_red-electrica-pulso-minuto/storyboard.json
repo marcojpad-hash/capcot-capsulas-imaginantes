@@ -67,7 +67,7 @@
   "sources": [
     {
       "id": "SRC-001",
-      "cita_corta": "Witthaut et al. (2026). One-minute frequency disturbances from unintended synchronization in cyber–physical power systems. Nature Energy.",
+      "cita_corta": "Hartmann, C. et al. (2026). One-minute frequency disturbances from unintended synchronization in cyber–physical power systems. Nature Energy.",
       "url": "https://www.nature.com/articles/s41560-026-02144-0",
       "doi": "10.1038/s41560-026-02144-0",
       "accessed": "2026-11-01",
@@ -80,7 +80,7 @@
         "El artículo indica que el patrón observado aún no había alcanzado un nivel crítico de seguridad y propone mejorar el diseño de control."
       ],
       "verification_status": "PENDIENTE",
-      "verification_detail": "El registro del editor muestra el DOI y la fecha, pero la apertura directa de Nature redirigió a idp.nature.com y devolvió HTTP 500; doi.org y Crossref REST no fueron accesibles en esta consulta. El DOI no se considera validado."
+      "verification_detail": "El resultado indexado de la página del editor muestra el DOI y la fecha, pero la apertura directa de Nature redirigió a idp.nature.com y devolvió HTTP 500; doi.org y Crossref REST no fueron accesibles en esta consulta. El DOI no se considera validado."
     },
     {
       "id": "SRC-002",
@@ -142,7 +142,7 @@
       "ambiente": "El zumbido continúa y se abre espacialmente.",
       "sfx": [
         "Cinco tonos breves y suaves que se agrupan.",
-        "Un tic repetido cada segundo como metáfora del periodo, no como dato de frecuencia eléctrica."
+        "Dos pulsos suaves espaciados como representación comprimida del periodo de 60 segundos; no usar metrónomo de 1 Hz."
       ],
       "source_ids": [
         "SRC-001"
@@ -345,7 +345,6 @@
     "No presentar el resultado como amenaza inminente de apagón; el artículo indica que el patrón observado aún no alcanzaba un nivel crítico de seguridad.",
     "No confundir el periodo de 60 segundos con la frecuencia nominal de 50 o 60 Hz de la red.",
     "Las 80 ubicaciones son puntos de medición en el campus, no 80 UPS ni 80 edificios.",
-    "El pin cartográfico es la coordenada institucional del centro; no representa la ubicación exacta de los medidores.",
-    "No presentar la reducción de 17.000 veces ni ningún otro dato de otro candidato en este storyboard."
+    "El pin cartográfico es la coordenada institucional del centro; no representa la ubicación exacta de los medidores."
   ]
 }
