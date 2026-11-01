@@ -87,10 +87,10 @@
    "ai_label": false,
    "actualizado": "2026-10-31T15:11:26-06:00",
    "reemplazo_v4": {
-    "estado": "pendiente_ui",
+    "estado": "programado_v4",
     "mp4_nuevo": "salidas/2026-10-31_sequias-energia-renovable/capsula_v4.mp4",
     "viejo": "programado pre-v4 sin ID; borrar en Studio/Business Suite",
-    "actualizado": "2026-10-31T19:20:00-06:00"
+    "actualizado": "2026-10-31T20:00:00-06:00"
    }
   },
   "historial_youtube": [
@@ -134,7 +134,13 @@
    "confirmado": "2026-10-31T19:35:00-06:00"
   },
   "facebook": {
-   "estado": "pendiente"
+   "estado": "programado_v4",
+   "viejo": "borrado",
+   "ui_ny_gmt5": "2026-11-02 20:00",
+   "hora_cdmx": "19:00",
+   "ai_label": false,
+   "confirmado": "2026-10-31T20:00:00-06:00",
+   "nota": "puede seguir En proceso en Business Suite; caption con posible espacio final tras @datosyociosidades (cosmético)"
   }
  }
 }
