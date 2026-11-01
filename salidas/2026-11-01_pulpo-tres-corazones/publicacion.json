@@ -1,206 +1,220 @@
 {
- "metadatos": {
-  "title": "Pulpo: tres corazones #Shorts",
-  "description": "Un pulpo tiene tres corazones.\n\nPulpo: tres corazones. Una cápsula de Datos y ociosidades: datos verificados contados como historia.\n\nFuentes:\n• Wells, M. J. (1980). Nervous control of the heartbeat in octopus. Journal of Experimental Biology, 85, 111–128. https://doi.org/10.1242/jeb.85.1.111\n• FAO. Cephalopods of the World: Annotated and Illustrated Catalogue. https://www.fao.org/4/i3489e/i3489e.pdf\n• Smithsonian Ocean. Cephalopods: Octopus, Squid, Cuttlefish, and Nautilus. https://ocean.si.edu/ocean-life/invertebrates/octopuses-squids-and-relatives\n\nImágenes generadas con IA · voz sintética · audio sintetizado.\nSuscríbete: @datosyociosidades\nTikTok: https://www.tiktok.com/@datosyociosidades\n\n#DatosYOciosidades #Shorts #datos #ciencia #difusión #difusióncientífica #ia #AnatomíaYCirculaciónDeLosPulpos",
-  "tags": [
-   "DatosYOciosidades",
-   "Shorts",
-   "datos",
-   "ciencia",
-   "difusión",
-   "difusióncientífica",
-   "ia",
-   "AnatomíaYCirculaciónDeLosPulpos"
-  ]
- },
- "resultado": {
-  "youtube": {
-   "kind": "youtube#video",
-   "etag": "OJwgbPs25cC8AcIQQmX0w37g7IY",
-   "id": "PQzLUQnHbcA",
-   "snippet": {
-    "publishedAt": "2026-10-31T22:51:14Z",
-    "channelId": "UCU2ZI-6pBJEr9aSFsF6bxLw",
+  "metadatos": {
     "title": "Pulpo: tres corazones #Shorts",
     "description": "Un pulpo tiene tres corazones.\n\nPulpo: tres corazones. Una cápsula de Datos y ociosidades: datos verificados contados como historia.\n\nFuentes:\n• Wells, M. J. (1980). Nervous control of the heartbeat in octopus. Journal of Experimental Biology, 85, 111–128. https://doi.org/10.1242/jeb.85.1.111\n• FAO. Cephalopods of the World: Annotated and Illustrated Catalogue. https://www.fao.org/4/i3489e/i3489e.pdf\n• Smithsonian Ocean. Cephalopods: Octopus, Squid, Cuttlefish, and Nautilus. https://ocean.si.edu/ocean-life/invertebrates/octopuses-squids-and-relatives\n\nImágenes generadas con IA · voz sintética · audio sintetizado.\nSuscríbete: @datosyociosidades\nTikTok: https://www.tiktok.com/@datosyociosidades\n\n#DatosYOciosidades #Shorts #datos #ciencia #difusión #difusióncientífica #ia #AnatomíaYCirculaciónDeLosPulpos",
-    "thumbnails": {
-     "default": {
-      "url": "https://i9.ytimg.com/vi/PQzLUQnHbcA/default.jpg?sqp=CJjhmdcG&rs=AOn4CLADfDQu_NGiBxz5Cr38r7hhDW-NfQ",
-      "width": 120,
-      "height": 90
-     },
-     "medium": {
-      "url": "https://i9.ytimg.com/vi/PQzLUQnHbcA/mqdefault.jpg?sqp=CJjhmdcG&rs=AOn4CLAL9XqEJsl0ZNvC5IGN358Br-f-Bw",
-      "width": 320,
-      "height": 180
-     },
-     "high": {
-      "url": "https://i9.ytimg.com/vi/PQzLUQnHbcA/hqdefault.jpg?sqp=CJjhmdcG&rs=AOn4CLBUaabte2Zj6mQatKRlSmb6SgJJCw",
-      "width": 480,
-      "height": 360
-     }
-    },
-    "channelTitle": "Datos y ociosidades",
     "tags": [
-     "AnatomíaYCirculaciónDeLosPulpos",
-     "DatosYOciosidades",
-     "Shorts",
-     "ciencia",
-     "datos",
-     "difusión",
-     "difusióncientífica",
-     "ia"
-    ],
-    "categoryId": "27",
-    "liveBroadcastContent": "none",
-    "defaultLanguage": "es",
-    "localized": {
-     "title": "Pulpo: tres corazones #Shorts",
-     "description": "Un pulpo tiene tres corazones.\n\nPulpo: tres corazones. Una cápsula de Datos y ociosidades: datos verificados contados como historia.\n\nFuentes:\n• Wells, M. J. (1980). Nervous control of the heartbeat in octopus. Journal of Experimental Biology, 85, 111–128. https://doi.org/10.1242/jeb.85.1.111\n• FAO. Cephalopods of the World: Annotated and Illustrated Catalogue. https://www.fao.org/4/i3489e/i3489e.pdf\n• Smithsonian Ocean. Cephalopods: Octopus, Squid, Cuttlefish, and Nautilus. https://ocean.si.edu/ocean-life/invertebrates/octopuses-squids-and-relatives\n\nImágenes generadas con IA · voz sintética · audio sintetizado.\nSuscríbete: @datosyociosidades\nTikTok: https://www.tiktok.com/@datosyociosidades\n\n#DatosYOciosidades #Shorts #datos #ciencia #difusión #difusióncientífica #ia #AnatomíaYCirculaciónDeLosPulpos"
-    }
-   },
-   "status": {
-    "uploadStatus": "uploaded",
-    "privacyStatus": "private",
-    "publishAt": "2026-11-01T13:00:00Z",
-    "license": "youtube",
-    "embeddable": true,
-    "publicStatsViewable": true,
-    "selfDeclaredMadeForKids": false,
-    "containsSyntheticMedia": true
-   }
-  },
-  "tiktok": {
-   "estado": "programado",
-   "cuenta": "@datosyociosidades",
-   "publish_at_cdmx": "2026-11-01T07:00:00-06:00",
-   "ui_shown": "Nov 1, 8:00 AM (GMT-5) New York",
-   "ai_label": true,
-   "caption": "Un pulpo tiene tres corazones y sangre azul. Fuentes en YouTube @datosyociosidades #pulpo #ciencia #animales #sabiasque",
-   "nota": "Sin URL/ID de Studio para programados. Corregido tras DST: desde 1-nov offset CDMX = UI+1h (no +2).",
-   "actualizado": "2026-10-31T14:37:34-06:00",
-   "reemplazo_v4": {
-    "estado": "pendiente_ui",
-    "mp4_nuevo": "salidas/2026-11-01_pulpo-tres-corazones/capsula_v4.mp4",
-    "viejo": "programado pre-v4 sin ID; borrar en Studio/Business Suite",
-    "actualizado": "2026-10-31T19:20:00-06:00"
-   }
-  },
-  "facebook": {
-   "estado": "programado",
-   "pagina": "Datos y ociosidades",
-   "publish_at_cdmx": "2026-11-01T07:00:00-06:00",
-   "ui_shown": "1 Nov 2026 08:00 America/New_York",
-   "ai_label": false,
-   "nota": "Reels via Meta Business Suite; flujo no ofrece AI label. Planner week Nov1.",
-   "actualizado": "2026-10-31T14:37:34-06:00",
-   "reemplazo_v4": {
-    "estado": "pendiente_ui",
-    "mp4_nuevo": "salidas/2026-11-01_pulpo-tres-corazones/capsula_v4.mp4",
-    "viejo": "programado pre-v4 sin ID; borrar en Studio/Business Suite",
-    "actualizado": "2026-10-31T19:20:00-06:00"
-   }
-  },
-  "plataformas": {
-   "youtube": {
-    "kind": "youtube#video",
-    "etag": "chaUjIx_YrqTRmPj1uhwb1tHe4s",
-    "id": "3B1ckNUahS8",
-    "snippet": {
-     "publishedAt": "2026-10-31T20:25:07Z",
-     "channelId": "UCU2ZI-6pBJEr9aSFsF6bxLw",
-     "title": "Pulpo: tres corazones #Shorts",
-     "description": "Un pulpo tiene tres corazones.\n\nPulpo: tres corazones. Una cápsula de Datos y ociosidades: datos verificados contados como historia.\n\nFuentes:\n• Wells, M. J. (1980). Nervous control of the heartbeat in octopus. Journal of Experimental Biology, 85, 111–128. https://doi.org/10.1242/jeb.85.1.111\n• FAO. Cephalopods of the World: Annotated and Illustrated Catalogue. https://www.fao.org/4/i3489e/i3489e.pdf\n• Smithsonian Ocean. Cephalopods: Octopus, Squid, Cuttlefish, and Nautilus. https://ocean.si.edu/ocean-life/invertebrates/octopuses-squids-and-relatives\n\nImágenes generadas con IA · voz sintética · audio sintetizado.\nSuscríbete: @datosyociosidades\nTikTok: https://www.tiktok.com/@datosyociosidades\n\n#DatosYOciosidades #Shorts #datos #ciencia #difusión #difusióncientífica #ia #AnatomíaYCirculaciónDeLosPulpos",
-     "thumbnails": {
-      "default": {
-       "url": "https://i9.ytimg.com/vi/3B1ckNUahS8/default.jpg?sqp=CJydmdcG&rs=AOn4CLDThRnidplORtyEMlcCo8Io08JsNg",
-       "width": 120,
-       "height": 90
-      },
-      "medium": {
-       "url": "https://i9.ytimg.com/vi/3B1ckNUahS8/mqdefault.jpg?sqp=CJydmdcG&rs=AOn4CLAmvwt_G3nWS68G5Dzb36t4jtIBFg",
-       "width": 320,
-       "height": 180
-      },
-      "high": {
-       "url": "https://i9.ytimg.com/vi/3B1ckNUahS8/hqdefault.jpg?sqp=CJydmdcG&rs=AOn4CLA4Jbb907Bs_rZ7pI9Kqvbf3dJlCQ",
-       "width": 480,
-       "height": 360
-      }
-     },
-     "channelTitle": "Datos y ociosidades",
-     "tags": [
-      "AnatomíaYCirculaciónDeLosPulpos",
       "DatosYOciosidades",
       "Shorts",
-      "ciencia",
       "datos",
+      "ciencia",
       "difusión",
       "difusióncientífica",
-      "ia"
-     ],
-     "categoryId": "27",
-     "liveBroadcastContent": "none",
-     "defaultLanguage": "es",
-     "localized": {
-      "title": "Pulpo: tres corazones #Shorts",
-      "description": "Un pulpo tiene tres corazones.\n\nPulpo: tres corazones. Una cápsula de Datos y ociosidades: datos verificados contados como historia.\n\nFuentes:\n• Wells, M. J. (1980). Nervous control of the heartbeat in octopus. Journal of Experimental Biology, 85, 111–128. https://doi.org/10.1242/jeb.85.1.111\n• FAO. Cephalopods of the World: Annotated and Illustrated Catalogue. https://www.fao.org/4/i3489e/i3489e.pdf\n• Smithsonian Ocean. Cephalopods: Octopus, Squid, Cuttlefish, and Nautilus. https://ocean.si.edu/ocean-life/invertebrates/octopuses-squids-and-relatives\n\nImágenes generadas con IA · voz sintética · audio sintetizado.\nSuscríbete: @datosyociosidades\nTikTok: https://www.tiktok.com/@datosyociosidades\n\n#DatosYOciosidades #Shorts #datos #ciencia #difusión #difusióncientífica #ia #AnatomíaYCirculaciónDeLosPulpos"
-     }
-    },
-    "status": {
-     "uploadStatus": "uploaded",
-     "privacyStatus": "private",
-     "publishAt": "2026-11-01T13:00:00Z",
-     "license": "youtube",
-     "embeddable": true,
-     "publicStatsViewable": true,
-     "selfDeclaredMadeForKids": false,
-     "containsSyntheticMedia": false
-    }
-   },
-   "tiktok": {
-    "estado": "programado",
-    "cuenta": "@datosyociosidades",
-    "publish_at_cdmx": "2026-11-01T07:00:00-06:00",
-    "ui_shown": "Nov 1, 8:00 AM (GMT-5) New York",
-    "ai_label": true,
-    "caption": "Un pulpo tiene tres corazones y sangre azul. Fuentes en YouTube @datosyociosidades #pulpo #ciencia #animales #sabiasque",
-    "nota": "Sin URL/ID de Studio para programados. Corregido tras DST: desde 1-nov offset CDMX = UI+1h (no +2).",
-    "actualizado": "2026-10-31T14:37:34-06:00"
-   },
-   "facebook": {
-    "estado": "programado",
-    "pagina": "Datos y ociosidades",
-    "publish_at_cdmx": "2026-11-01T07:00:00-06:00",
-    "ui_shown": "1 Nov 2026 08:00 America/New_York",
-    "ai_label": false,
-    "nota": "Reels via Meta Business Suite; flujo no ofrece AI label. Planner week Nov1.",
-    "actualizado": "2026-10-31T14:37:34-06:00"
-   }
+      "ia",
+      "AnatomíaYCirculaciónDeLosPulpos"
+    ]
   },
-  "historial_youtube": [
-   {
-    "id": "3B1ckNUahS8",
-    "estado": "SIGUE PROGRAMADO 2026-11-01T13:00Z — desprogramar/borrar a mano (token sin scope youtube)",
-    "reemplazado_por": "pxX0eGK3r98",
-    "fecha": "2026-10-31T15:52:53-06:00"
-   },
-   {
-    "id": "pxX0eGK3r98",
-    "estado": "SIGUE PROGRAMADO 2026-11-01T13:00:00Z — borrar a mano en Studio",
-    "reemplazado_por": "PQzLUQnHbcA",
-    "fecha": "2026-10-31T16:51:13-06:00"
-   }
-  ],
-  "youtube_thumbnail": {
-   "fuente": "primer frame mp4",
-   "estado": "ok"
+  "resultado": {
+    "youtube": {
+      "kind": "youtube#video",
+      "etag": "OJwgbPs25cC8AcIQQmX0w37g7IY",
+      "id": "PQzLUQnHbcA",
+      "snippet": {
+        "publishedAt": "2026-10-31T22:51:14Z",
+        "channelId": "UCU2ZI-6pBJEr9aSFsF6bxLw",
+        "title": "Pulpo: tres corazones #Shorts",
+        "description": "Un pulpo tiene tres corazones.\n\nPulpo: tres corazones. Una cápsula de Datos y ociosidades: datos verificados contados como historia.\n\nFuentes:\n• Wells, M. J. (1980). Nervous control of the heartbeat in octopus. Journal of Experimental Biology, 85, 111–128. https://doi.org/10.1242/jeb.85.1.111\n• FAO. Cephalopods of the World: Annotated and Illustrated Catalogue. https://www.fao.org/4/i3489e/i3489e.pdf\n• Smithsonian Ocean. Cephalopods: Octopus, Squid, Cuttlefish, and Nautilus. https://ocean.si.edu/ocean-life/invertebrates/octopuses-squids-and-relatives\n\nImágenes generadas con IA · voz sintética · audio sintetizado.\nSuscríbete: @datosyociosidades\nTikTok: https://www.tiktok.com/@datosyociosidades\n\n#DatosYOciosidades #Shorts #datos #ciencia #difusión #difusióncientífica #ia #AnatomíaYCirculaciónDeLosPulpos",
+        "thumbnails": {
+          "default": {
+            "url": "https://i9.ytimg.com/vi/PQzLUQnHbcA/default.jpg?sqp=CJjhmdcG&rs=AOn4CLADfDQu_NGiBxz5Cr38r7hhDW-NfQ",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i9.ytimg.com/vi/PQzLUQnHbcA/mqdefault.jpg?sqp=CJjhmdcG&rs=AOn4CLAL9XqEJsl0ZNvC5IGN358Br-f-Bw",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i9.ytimg.com/vi/PQzLUQnHbcA/hqdefault.jpg?sqp=CJjhmdcG&rs=AOn4CLBUaabte2Zj6mQatKRlSmb6SgJJCw",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Datos y ociosidades",
+        "tags": [
+          "AnatomíaYCirculaciónDeLosPulpos",
+          "DatosYOciosidades",
+          "Shorts",
+          "ciencia",
+          "datos",
+          "difusión",
+          "difusióncientífica",
+          "ia"
+        ],
+        "categoryId": "27",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "es",
+        "localized": {
+          "title": "Pulpo: tres corazones #Shorts",
+          "description": "Un pulpo tiene tres corazones.\n\nPulpo: tres corazones. Una cápsula de Datos y ociosidades: datos verificados contados como historia.\n\nFuentes:\n• Wells, M. J. (1980). Nervous control of the heartbeat in octopus. Journal of Experimental Biology, 85, 111–128. https://doi.org/10.1242/jeb.85.1.111\n• FAO. Cephalopods of the World: Annotated and Illustrated Catalogue. https://www.fao.org/4/i3489e/i3489e.pdf\n• Smithsonian Ocean. Cephalopods: Octopus, Squid, Cuttlefish, and Nautilus. https://ocean.si.edu/ocean-life/invertebrates/octopuses-squids-and-relatives\n\nImágenes generadas con IA · voz sintética · audio sintetizado.\nSuscríbete: @datosyociosidades\nTikTok: https://www.tiktok.com/@datosyociosidades\n\n#DatosYOciosidades #Shorts #datos #ciencia #difusión #difusióncientífica #ia #AnatomíaYCirculaciónDeLosPulpos"
+        }
+      },
+      "status": {
+        "uploadStatus": "uploaded",
+        "privacyStatus": "private",
+        "publishAt": "2026-11-01T13:00:00Z",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "selfDeclaredMadeForKids": false,
+        "containsSyntheticMedia": true
+      }
+    },
+    "tiktok": {
+      "estado": "programado",
+      "cuenta": "@datosyociosidades",
+      "publish_at_cdmx": "2026-11-01T07:00:00-06:00",
+      "ui_shown": "Nov 1, 8:00 AM (GMT-5) New York",
+      "ai_label": true,
+      "caption": "Un pulpo tiene tres corazones y sangre azul. Fuentes en YouTube @datosyociosidades #pulpo #ciencia #animales #sabiasque",
+      "nota": "Sin URL/ID de Studio para programados. Corregido tras DST: desde 1-nov offset CDMX = UI+1h (no +2).",
+      "actualizado": "2026-10-31T14:37:34-06:00",
+      "reemplazo_v4": {
+        "estado": "pendiente_ui",
+        "mp4_nuevo": "salidas/2026-11-01_pulpo-tres-corazones/capsula_v4.mp4",
+        "viejo": "programado pre-v4 sin ID; borrar en Studio/Business Suite",
+        "actualizado": "2026-10-31T19:20:00-06:00"
+      }
+    },
+    "facebook": {
+      "estado": "programado",
+      "pagina": "Datos y ociosidades",
+      "publish_at_cdmx": "2026-11-01T07:00:00-06:00",
+      "ui_shown": "1 Nov 2026 08:00 America/New_York",
+      "ai_label": false,
+      "nota": "Reels via Meta Business Suite; flujo no ofrece AI label. Planner week Nov1.",
+      "actualizado": "2026-10-31T14:37:34-06:00",
+      "reemplazo_v4": {
+        "estado": "pendiente_ui",
+        "mp4_nuevo": "salidas/2026-11-01_pulpo-tres-corazones/capsula_v4.mp4",
+        "viejo": "programado pre-v4 sin ID; borrar en Studio/Business Suite",
+        "actualizado": "2026-10-31T19:20:00-06:00"
+      }
+    },
+    "plataformas": {
+      "youtube": {
+        "kind": "youtube#video",
+        "etag": "chaUjIx_YrqTRmPj1uhwb1tHe4s",
+        "id": "3B1ckNUahS8",
+        "snippet": {
+          "publishedAt": "2026-10-31T20:25:07Z",
+          "channelId": "UCU2ZI-6pBJEr9aSFsF6bxLw",
+          "title": "Pulpo: tres corazones #Shorts",
+          "description": "Un pulpo tiene tres corazones.\n\nPulpo: tres corazones. Una cápsula de Datos y ociosidades: datos verificados contados como historia.\n\nFuentes:\n• Wells, M. J. (1980). Nervous control of the heartbeat in octopus. Journal of Experimental Biology, 85, 111–128. https://doi.org/10.1242/jeb.85.1.111\n• FAO. Cephalopods of the World: Annotated and Illustrated Catalogue. https://www.fao.org/4/i3489e/i3489e.pdf\n• Smithsonian Ocean. Cephalopods: Octopus, Squid, Cuttlefish, and Nautilus. https://ocean.si.edu/ocean-life/invertebrates/octopuses-squids-and-relatives\n\nImágenes generadas con IA · voz sintética · audio sintetizado.\nSuscríbete: @datosyociosidades\nTikTok: https://www.tiktok.com/@datosyociosidades\n\n#DatosYOciosidades #Shorts #datos #ciencia #difusión #difusióncientífica #ia #AnatomíaYCirculaciónDeLosPulpos",
+          "thumbnails": {
+            "default": {
+              "url": "https://i9.ytimg.com/vi/3B1ckNUahS8/default.jpg?sqp=CJydmdcG&rs=AOn4CLDThRnidplORtyEMlcCo8Io08JsNg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i9.ytimg.com/vi/3B1ckNUahS8/mqdefault.jpg?sqp=CJydmdcG&rs=AOn4CLAmvwt_G3nWS68G5Dzb36t4jtIBFg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i9.ytimg.com/vi/3B1ckNUahS8/hqdefault.jpg?sqp=CJydmdcG&rs=AOn4CLA4Jbb907Bs_rZ7pI9Kqvbf3dJlCQ",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "Datos y ociosidades",
+          "tags": [
+            "AnatomíaYCirculaciónDeLosPulpos",
+            "DatosYOciosidades",
+            "Shorts",
+            "ciencia",
+            "datos",
+            "difusión",
+            "difusióncientífica",
+            "ia"
+          ],
+          "categoryId": "27",
+          "liveBroadcastContent": "none",
+          "defaultLanguage": "es",
+          "localized": {
+            "title": "Pulpo: tres corazones #Shorts",
+            "description": "Un pulpo tiene tres corazones.\n\nPulpo: tres corazones. Una cápsula de Datos y ociosidades: datos verificados contados como historia.\n\nFuentes:\n• Wells, M. J. (1980). Nervous control of the heartbeat in octopus. Journal of Experimental Biology, 85, 111–128. https://doi.org/10.1242/jeb.85.1.111\n• FAO. Cephalopods of the World: Annotated and Illustrated Catalogue. https://www.fao.org/4/i3489e/i3489e.pdf\n• Smithsonian Ocean. Cephalopods: Octopus, Squid, Cuttlefish, and Nautilus. https://ocean.si.edu/ocean-life/invertebrates/octopuses-squids-and-relatives\n\nImágenes generadas con IA · voz sintética · audio sintetizado.\nSuscríbete: @datosyociosidades\nTikTok: https://www.tiktok.com/@datosyociosidades\n\n#DatosYOciosidades #Shorts #datos #ciencia #difusión #difusióncientífica #ia #AnatomíaYCirculaciónDeLosPulpos"
+          }
+        },
+        "status": {
+          "uploadStatus": "uploaded",
+          "privacyStatus": "private",
+          "publishAt": "2026-11-01T13:00:00Z",
+          "license": "youtube",
+          "embeddable": true,
+          "publicStatsViewable": true,
+          "selfDeclaredMadeForKids": false,
+          "containsSyntheticMedia": false
+        }
+      },
+      "tiktok": {
+        "estado": "programado",
+        "cuenta": "@datosyociosidades",
+        "publish_at_cdmx": "2026-11-01T07:00:00-06:00",
+        "ui_shown": "Nov 1, 8:00 AM (GMT-5) New York",
+        "ai_label": true,
+        "caption": "Un pulpo tiene tres corazones y sangre azul. Fuentes en YouTube @datosyociosidades #pulpo #ciencia #animales #sabiasque",
+        "nota": "Sin URL/ID de Studio para programados. Corregido tras DST: desde 1-nov offset CDMX = UI+1h (no +2).",
+        "actualizado": "2026-10-31T14:37:34-06:00"
+      },
+      "facebook": {
+        "estado": "programado",
+        "pagina": "Datos y ociosidades",
+        "publish_at_cdmx": "2026-11-01T07:00:00-06:00",
+        "ui_shown": "1 Nov 2026 08:00 America/New_York",
+        "ai_label": false,
+        "nota": "Reels via Meta Business Suite; flujo no ofrece AI label. Planner week Nov1.",
+        "actualizado": "2026-10-31T14:37:34-06:00"
+      }
+    },
+    "historial_youtube": [
+      {
+        "id": "3B1ckNUahS8",
+        "estado": "SIGUE PROGRAMADO 2026-11-01T13:00Z — desprogramar/borrar a mano (token sin scope youtube)",
+        "reemplazado_por": "pxX0eGK3r98",
+        "fecha": "2026-10-31T15:52:53-06:00"
+      },
+      {
+        "id": "pxX0eGK3r98",
+        "estado": "SIGUE PROGRAMADO 2026-11-01T13:00:00Z — borrar a mano en Studio",
+        "reemplazado_por": "PQzLUQnHbcA",
+        "fecha": "2026-10-31T16:51:13-06:00"
+      }
+    ],
+    "youtube_thumbnail": {
+      "fuente": "primer frame mp4",
+      "estado": "ok"
+    }
+  },
+  "remontaje_cierre": {
+    "fecha": "2026-10-31T15:52:53-06:00",
+    "video": "capsula_v2.mp4",
+    "frames": "sin cambios",
+    "tiktok_facebook": "siguen con video viejo (pre-cierre)"
+  },
+  "reemplazo_v4": {
+    "mp4": "salidas/2026-11-01_pulpo-tres-corazones/capsula_v4.mp4",
+    "tiktok": {
+      "estado": "programado_v4",
+      "viejo": "borrado",
+      "ui_ny_gmt5": "2026-11-01 08:00",
+      "hora_cdmx": "07:00",
+      "ai_label": true,
+      "confirmado": "2026-10-31T19:25:00-06:00"
+    },
+    "facebook": {
+      "estado": "pendiente_ui_reemplazo_v4"
+    }
   }
- },
- "remontaje_cierre": {
-  "fecha": "2026-10-31T15:52:53-06:00",
-  "video": "capsula_v2.mp4",
-  "frames": "sin cambios",
-  "tiktok_facebook": "siguen con video viejo (pre-cierre)"
- }
 }

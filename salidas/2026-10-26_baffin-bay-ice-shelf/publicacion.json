@@ -1,122 +1,136 @@
 {
- "metadatos": {
-  "title": "El hielo que sostuvo tres mantos #Shorts",
-  "description": "¿Qué pudo sostener tres enormes mantos de hielo?\n\nEl hielo que sostuvo tres mantos #Shorts. Una cápsula de Datos y ociosidades: datos verificados contados como historia.\n\nFuentes:\n• Klotsko, S. A. et al. (2026). The Baffin Bay Ice Shelf stabilized three adjacent ice sheets during the last glacial period. Nature Geoscience. https://doi.org/10.1038/s41561-026-02126-7\n• Nature Geoscience (2026-10-26). An Arctic ice shelf in the Last Glacial Maximum rivalled Antarctica’s modern ice shelves. Research Briefing. https://doi.org/10.1038/s41561-026-02127-6\n• Natural Earth. 1:110m Physical Vectors — Land. https://www.naturalearthdata.com/downloads/110m-physical-vectors/110m-land/\n\nImágenes generadas con IA · voz sintética · audio sintetizado.\nSuscríbete: @datosyociosidades\nTikTok: https://www.tiktok.com/@datosyociosidades\n\n#hielo #artico #glaciares #ciencia #sabiasque #Shorts",
-  "tags": [
-   "hielo",
-   "artico",
-   "glaciares",
-   "ciencia",
-   "sabiasque",
-   "Shorts"
-  ]
- },
- "resultado": {
-  "youtube": {
-   "kind": "youtube#video",
-   "etag": "Sb0j1qK5MxwB8zMXPLN31XnM00A",
-   "id": "HDQr9OGpFJM",
-   "snippet": {
-    "publishedAt": "2026-10-31T23:01:59Z",
-    "channelId": "UCU2ZI-6pBJEr9aSFsF6bxLw",
+  "metadatos": {
     "title": "El hielo que sostuvo tres mantos #Shorts",
     "description": "¿Qué pudo sostener tres enormes mantos de hielo?\n\nEl hielo que sostuvo tres mantos #Shorts. Una cápsula de Datos y ociosidades: datos verificados contados como historia.\n\nFuentes:\n• Klotsko, S. A. et al. (2026). The Baffin Bay Ice Shelf stabilized three adjacent ice sheets during the last glacial period. Nature Geoscience. https://doi.org/10.1038/s41561-026-02126-7\n• Nature Geoscience (2026-10-26). An Arctic ice shelf in the Last Glacial Maximum rivalled Antarctica’s modern ice shelves. Research Briefing. https://doi.org/10.1038/s41561-026-02127-6\n• Natural Earth. 1:110m Physical Vectors — Land. https://www.naturalearthdata.com/downloads/110m-physical-vectors/110m-land/\n\nImágenes generadas con IA · voz sintética · audio sintetizado.\nSuscríbete: @datosyociosidades\nTikTok: https://www.tiktok.com/@datosyociosidades\n\n#hielo #artico #glaciares #ciencia #sabiasque #Shorts",
-    "thumbnails": {
-     "default": {
-      "url": "https://i9.ytimg.com/vi/HDQr9OGpFJM/default.jpg?sqp=CPDlmdcG&rs=AOn4CLAZZYKQSsrjpb1DV1tA0o_GDkLMrQ",
-      "width": 120,
-      "height": 90
-     },
-     "medium": {
-      "url": "https://i9.ytimg.com/vi/HDQr9OGpFJM/mqdefault.jpg?sqp=CPDlmdcG&rs=AOn4CLDyAnIe3wmgur-hl8p7Jxdn0QJB9A",
-      "width": 320,
-      "height": 180
-     },
-     "high": {
-      "url": "https://i9.ytimg.com/vi/HDQr9OGpFJM/hqdefault.jpg?sqp=CPDlmdcG&rs=AOn4CLAHcOn6xTDxrPXZrRgrDoPZ-W1lHQ",
-      "width": 480,
-      "height": 360
-     }
-    },
-    "channelTitle": "Datos y ociosidades",
     "tags": [
-     "Shorts",
-     "artico",
-     "ciencia",
-     "glaciares",
-     "hielo",
-     "sabiasque"
+      "hielo",
+      "artico",
+      "glaciares",
+      "ciencia",
+      "sabiasque",
+      "Shorts"
+    ]
+  },
+  "resultado": {
+    "youtube": {
+      "kind": "youtube#video",
+      "etag": "Sb0j1qK5MxwB8zMXPLN31XnM00A",
+      "id": "HDQr9OGpFJM",
+      "snippet": {
+        "publishedAt": "2026-10-31T23:01:59Z",
+        "channelId": "UCU2ZI-6pBJEr9aSFsF6bxLw",
+        "title": "El hielo que sostuvo tres mantos #Shorts",
+        "description": "¿Qué pudo sostener tres enormes mantos de hielo?\n\nEl hielo que sostuvo tres mantos #Shorts. Una cápsula de Datos y ociosidades: datos verificados contados como historia.\n\nFuentes:\n• Klotsko, S. A. et al. (2026). The Baffin Bay Ice Shelf stabilized three adjacent ice sheets during the last glacial period. Nature Geoscience. https://doi.org/10.1038/s41561-026-02126-7\n• Nature Geoscience (2026-10-26). An Arctic ice shelf in the Last Glacial Maximum rivalled Antarctica’s modern ice shelves. Research Briefing. https://doi.org/10.1038/s41561-026-02127-6\n• Natural Earth. 1:110m Physical Vectors — Land. https://www.naturalearthdata.com/downloads/110m-physical-vectors/110m-land/\n\nImágenes generadas con IA · voz sintética · audio sintetizado.\nSuscríbete: @datosyociosidades\nTikTok: https://www.tiktok.com/@datosyociosidades\n\n#hielo #artico #glaciares #ciencia #sabiasque #Shorts",
+        "thumbnails": {
+          "default": {
+            "url": "https://i9.ytimg.com/vi/HDQr9OGpFJM/default.jpg?sqp=CPDlmdcG&rs=AOn4CLAZZYKQSsrjpb1DV1tA0o_GDkLMrQ",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i9.ytimg.com/vi/HDQr9OGpFJM/mqdefault.jpg?sqp=CPDlmdcG&rs=AOn4CLDyAnIe3wmgur-hl8p7Jxdn0QJB9A",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i9.ytimg.com/vi/HDQr9OGpFJM/hqdefault.jpg?sqp=CPDlmdcG&rs=AOn4CLAHcOn6xTDxrPXZrRgrDoPZ-W1lHQ",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Datos y ociosidades",
+        "tags": [
+          "Shorts",
+          "artico",
+          "ciencia",
+          "glaciares",
+          "hielo",
+          "sabiasque"
+        ],
+        "categoryId": "27",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "es",
+        "localized": {
+          "title": "El hielo que sostuvo tres mantos #Shorts",
+          "description": "¿Qué pudo sostener tres enormes mantos de hielo?\n\nEl hielo que sostuvo tres mantos #Shorts. Una cápsula de Datos y ociosidades: datos verificados contados como historia.\n\nFuentes:\n• Klotsko, S. A. et al. (2026). The Baffin Bay Ice Shelf stabilized three adjacent ice sheets during the last glacial period. Nature Geoscience. https://doi.org/10.1038/s41561-026-02126-7\n• Nature Geoscience (2026-10-26). An Arctic ice shelf in the Last Glacial Maximum rivalled Antarctica’s modern ice shelves. Research Briefing. https://doi.org/10.1038/s41561-026-02127-6\n• Natural Earth. 1:110m Physical Vectors — Land. https://www.naturalearthdata.com/downloads/110m-physical-vectors/110m-land/\n\nImágenes generadas con IA · voz sintética · audio sintetizado.\nSuscríbete: @datosyociosidades\nTikTok: https://www.tiktok.com/@datosyociosidades\n\n#hielo #artico #glaciares #ciencia #sabiasque #Shorts"
+        }
+      },
+      "status": {
+        "uploadStatus": "uploaded",
+        "privacyStatus": "private",
+        "publishAt": "2026-11-01T23:00:00Z",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "selfDeclaredMadeForKids": false,
+        "containsSyntheticMedia": true
+      }
+    },
+    "tiktok": {
+      "estado": "programado",
+      "cuenta": "@datosyociosidades",
+      "publish_at_cdmx": "2026-11-01T17:00:00-06:00",
+      "ui_shown": "Nov 1, 6:00 PM (GMT-5) New York",
+      "ai_label": true,
+      "caption": "¿Qué pudo sostener tres enormes mantos de hielo?\n\nFuentes en YouTube @datosyociosidades\n\n#hielo #artico #glaciares #ciencia #sabiasque",
+      "actualizado": "2026-10-31T14:53:04-06:00",
+      "reemplazo_v4": {
+        "estado": "pendiente_ui",
+        "mp4_nuevo": "salidas/2026-10-26_baffin-bay-ice-shelf/capsula_v4.mp4",
+        "viejo": "programado pre-v4 sin ID; borrar en Studio/Business Suite",
+        "actualizado": "2026-10-31T19:20:00-06:00"
+      }
+    },
+    "facebook": {
+      "estado": "programado",
+      "pagina": "Datos y ociosidades",
+      "publish_at_cdmx": "2026-11-01T17:00:00-06:00",
+      "ui_shown": "1 Nov 2026 18:00 America/New_York",
+      "ai_label": false,
+      "actualizado": "2026-10-31T14:53:04-06:00",
+      "reemplazo_v4": {
+        "estado": "pendiente_ui",
+        "mp4_nuevo": "salidas/2026-10-26_baffin-bay-ice-shelf/capsula_v4.mp4",
+        "viejo": "programado pre-v4 sin ID; borrar en Studio/Business Suite",
+        "actualizado": "2026-10-31T19:20:00-06:00"
+      }
+    },
+    "historial_youtube": [
+      {
+        "id": "krh0Ll3kVjM",
+        "estado": "SIGUE PROGRAMADO 2026-11-01T23:00:00Z — borrar a mano en Studio (token sin scope youtube)",
+        "reemplazado_por": "MYWsfLm_Brw",
+        "fecha": "2026-10-31T15:55:49-06:00"
+      },
+      {
+        "id": "MYWsfLm_Brw",
+        "estado": "SIGUE PROGRAMADO 2026-11-01T23:00:00Z — borrar a mano en Studio",
+        "reemplazado_por": "HDQr9OGpFJM",
+        "fecha": "2026-10-31T17:01:59-06:00"
+      }
     ],
-    "categoryId": "27",
-    "liveBroadcastContent": "none",
-    "defaultLanguage": "es",
-    "localized": {
-     "title": "El hielo que sostuvo tres mantos #Shorts",
-     "description": "¿Qué pudo sostener tres enormes mantos de hielo?\n\nEl hielo que sostuvo tres mantos #Shorts. Una cápsula de Datos y ociosidades: datos verificados contados como historia.\n\nFuentes:\n• Klotsko, S. A. et al. (2026). The Baffin Bay Ice Shelf stabilized three adjacent ice sheets during the last glacial period. Nature Geoscience. https://doi.org/10.1038/s41561-026-02126-7\n• Nature Geoscience (2026-10-26). An Arctic ice shelf in the Last Glacial Maximum rivalled Antarctica’s modern ice shelves. Research Briefing. https://doi.org/10.1038/s41561-026-02127-6\n• Natural Earth. 1:110m Physical Vectors — Land. https://www.naturalearthdata.com/downloads/110m-physical-vectors/110m-land/\n\nImágenes generadas con IA · voz sintética · audio sintetizado.\nSuscríbete: @datosyociosidades\nTikTok: https://www.tiktok.com/@datosyociosidades\n\n#hielo #artico #glaciares #ciencia #sabiasque #Shorts"
+    "youtube_thumbnail": {
+      "fuente": "primer frame mp4",
+      "estado": "ok"
     }
-   },
-   "status": {
-    "uploadStatus": "uploaded",
-    "privacyStatus": "private",
-    "publishAt": "2026-11-01T23:00:00Z",
-    "license": "youtube",
-    "embeddable": true,
-    "publicStatsViewable": true,
-    "selfDeclaredMadeForKids": false,
-    "containsSyntheticMedia": true
-   }
   },
-  "tiktok": {
-   "estado": "programado",
-   "cuenta": "@datosyociosidades",
-   "publish_at_cdmx": "2026-11-01T17:00:00-06:00",
-   "ui_shown": "Nov 1, 6:00 PM (GMT-5) New York",
-   "ai_label": true,
-   "caption": "¿Qué pudo sostener tres enormes mantos de hielo?\n\nFuentes en YouTube @datosyociosidades\n\n#hielo #artico #glaciares #ciencia #sabiasque",
-   "actualizado": "2026-10-31T14:53:04-06:00",
-   "reemplazo_v4": {
-    "estado": "pendiente_ui",
-    "mp4_nuevo": "salidas/2026-10-26_baffin-bay-ice-shelf/capsula_v4.mp4",
-    "viejo": "programado pre-v4 sin ID; borrar en Studio/Business Suite",
-    "actualizado": "2026-10-31T19:20:00-06:00"
-   }
+  "remontaje_cierre": {
+    "fecha": "2026-10-31T15:55:49-06:00",
+    "video": "capsula_v2.mp4",
+    "tiktok_facebook": "siguen con video viejo (pre-cierre)"
   },
-  "facebook": {
-   "estado": "programado",
-   "pagina": "Datos y ociosidades",
-   "publish_at_cdmx": "2026-11-01T17:00:00-06:00",
-   "ui_shown": "1 Nov 2026 18:00 America/New_York",
-   "ai_label": false,
-   "actualizado": "2026-10-31T14:53:04-06:00",
-   "reemplazo_v4": {
-    "estado": "pendiente_ui",
-    "mp4_nuevo": "salidas/2026-10-26_baffin-bay-ice-shelf/capsula_v4.mp4",
-    "viejo": "programado pre-v4 sin ID; borrar en Studio/Business Suite",
-    "actualizado": "2026-10-31T19:20:00-06:00"
-   }
-  },
-  "historial_youtube": [
-   {
-    "id": "krh0Ll3kVjM",
-    "estado": "SIGUE PROGRAMADO 2026-11-01T23:00:00Z — borrar a mano en Studio (token sin scope youtube)",
-    "reemplazado_por": "MYWsfLm_Brw",
-    "fecha": "2026-10-31T15:55:49-06:00"
-   },
-   {
-    "id": "MYWsfLm_Brw",
-    "estado": "SIGUE PROGRAMADO 2026-11-01T23:00:00Z — borrar a mano en Studio",
-    "reemplazado_por": "HDQr9OGpFJM",
-    "fecha": "2026-10-31T17:01:59-06:00"
-   }
-  ],
-  "youtube_thumbnail": {
-   "fuente": "primer frame mp4",
-   "estado": "ok"
+  "reemplazo_v4": {
+    "mp4": "salidas/2026-10-26_baffin-bay-ice-shelf/capsula_v4.mp4",
+    "tiktok": {
+      "estado": "programado_v4",
+      "viejo": "borrado",
+      "ui_ny_gmt5": "2026-11-01 18:00",
+      "hora_cdmx": "17:00",
+      "ai_label": true,
+      "confirmado": "2026-10-31T19:25:00-06:00"
+    },
+    "facebook": {
+      "estado": "pendiente_ui_reemplazo_v4"
+    }
   }
- },
- "remontaje_cierre": {
-  "fecha": "2026-10-31T15:55:49-06:00",
-  "video": "capsula_v2.mp4",
-  "tiktok_facebook": "siguen con video viejo (pre-cierre)"
- }
 }
