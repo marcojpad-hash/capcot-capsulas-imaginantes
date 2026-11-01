@@ -22,3 +22,8 @@ Fuentes en YouTube @datosyociosidades
 #tiburon #animales #oceano #ciencia #sabiasque
 ## Hueco 3-nov 07:00 (kids)
 Pendiente reemplazo: chicxulub (lote01-05, QA OK sin publicar, estilo viejo, requiere OK Mj) o pedir ChatGPT.
+
+## TT+FB hecho (~00:30 CDMX 1-nov)
+- TT: borrados arqueas Nov1 8PM + tiburón Nov3 8AM; programado capsula.mp4 Nov1 8PM GMT-5, AI ON.
+- FB: borrados mismos slots; Reel programado Nov1 20:00 America/New_York, sin AI label; página Datos y ociosidades.
+- YT Studio: borrados bICGA3kIBcU, bImG_vdlBhs, krh0Ll3kVjM, MYWsfLm_Brw; 9XflXdWDM0A e i2l4BkMvHp0 ya ausentes. KEEP 0x1B9_rMm-I / HDQr9OGpFJM / aZn5eTyiQPQ.
