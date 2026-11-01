@@ -32,7 +32,10 @@ Un solo \`style_id\` para toda la cápsula. Cada \`image_prompt\` comienza con e
 ## Audio
 El storyboard declara intención sonora, no archivos. Cada escena tiene ambiente y SFX; el silencio se expresa explícitamente. La música puede quedar como plan para Grok. No adjuntar audio.
 
+## QA narrativo previo al handoff
+Aplicar obligatoriamente `docs/QA_NARRATIVO_EN_FRIO.md`: un revisor distinto del redactor oculta título, resumen, arco y notas y lee solo la narración concatenada. Registra siete checks, score y flags. Solo PASS (>=85, siete checks true, flags vacíos) permite entrar a `cola/entrada/`. Sin revisión independiente, FAIL. El validador estructural no sustituye esta lectura.
+
 ## Validación
-7–9 escenas; 170–235 palabras; 75–90 s con cortinilla; gancho ≤6 palabras; arco completo; cierre exacto; voz correcta; mapa y dato/gráfico con fuente; source_ids válidos; estilo y prompt_base exactos; sin rutas de assets; publicación pendiente de Grok.
+7–9 escenas; 170–235 palabras; 75–90 s con cortinilla; gancho ≤6 palabras; arco completo; cierre exacto; voz correcta; mapa y dato/gráfico con fuente; source_ids válidos; estilo y prompt_base exactos; sin rutas de assets; publicación pendiente de Grok; `narrative_qa` PASS.
 
 Plantilla: \`templates/storyboard_vertical.template.json\`. Validador: \`scripts/validar_storyboard.py\`.
