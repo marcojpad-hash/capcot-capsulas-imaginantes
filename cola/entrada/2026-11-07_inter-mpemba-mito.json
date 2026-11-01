@@ -1,0 +1,237 @@
+{
+  "_schema": "CAPCOT_STORYBOARD_TEXT_V2",
+  "project_id": "2026-11-07_inter-mpemba-mito",
+  "serie": "Datos y ociosidades",
+  "title": "¿El agua caliente se congela primero?",
+  "titulo": "El efecto Mpemba, con matices",
+  "language": "es-MX",
+  "aspect_ratio": "9:16",
+  "target_duration_seconds": 84,
+  "estructura": "pregunta",
+  "audience": "Público general",
+  "occasion": "Cápsula vertical de divulgación",
+  "resumen": "Experimentos controlados no respaldan una regla general; la definición y las condiciones importan.",
+  "trend_source": {
+    "termino": "¿El agua caliente se congela primero?",
+    "fecha_publicacion": "",
+    "url": "https://doi.org/10.1038/srep37665"
+  },
+  "editorial_status": "PROPUESTA_PENDIENTE_DE_GROK",
+  "arco": {
+    "hook_medias_res": "Se cuenta que el agua caliente puede congelarse antes que la fría. A esa afirmación se le llama efecto Mpemba, pero no es una regla universal.",
+    "desarrollo": "El resultado depende de qué significa exactamente congelarse primero, de la evaporación, el recipiente, el contacto térmico y el sobreenfriamiento. En un estudio con condiciones controladas, Burridge y Linden no encontraron evidencia de un efecto general significativo. Eso no demuestra que toda configuración imaginable se comporte igual. Significa que la afirmación popular no puede presentarse como una ley sencilla de la naturaleza. La pregunta científica útil es qué condiciones producen una diferencia medible y reproducible, no cuál agua gana siempre una carrera al congelador.",
+    "cierre_historia": "El mecanismo tiene límites y depende de las condiciones observadas. No conviene convertir una medición particular en una regla universal.",
+    "reflexion_o_pregunta": "Esto fue Datos y ociosidades."
+  },
+  "estilo_id": "satira_periodico",
+  "estilo_visual": "Sátira de periódico en tinta",
+  "visual_identity": {
+    "style_id": "satira_periodico",
+    "style_name": "Sátira de periódico en tinta",
+    "prompt_base": "editorial satirical newspaper cartoon, black ink crosshatching on newsprint, caricatured figures, newspaper columns layout, vertical 9:16, no text",
+    "palette": "Según catálogo",
+    "lighting": "Según prompt base",
+    "texture": "Según prompt base",
+    "composition": "Vertical 9:16; continuidad de sujeto y paleta",
+    "negative_prompt": "No texto generado, no marcas de agua, no datos falsos",
+    "reference_assets": [],
+    "seed": null,
+    "seed_policy": "Continuidad entre escenas"
+  },
+  "typography_identity": {
+    "font_family": "DejaVu Sans",
+    "font_weight": "700 para gancho; 400 para subtítulos",
+    "title_style": "Máximo seis palabras desde frame 0",
+    "subtitle_style": "Bloques de máximo tres palabras",
+    "hierarchy": "Gancho > dato > subtítulos",
+    "animation": "Un movimiento por plano; texto en postproducción"
+  },
+  "voice": {
+    "engine": "edge-tts",
+    "voice_id": "es-MX-JorgeNeural",
+    "language": "es-MX",
+    "rate": "+7%",
+    "pitch": "-2Hz",
+    "pad_seconds": 0.3,
+    "modo_pausas": "continuo"
+  },
+  "sources": [
+    {
+      "id": "SRC-001",
+      "cita_corta": "Burridge & Linden 2016, Questioning the Mpemba effect: hot water does not cool more quickly than cold, Scientific Reports.",
+      "url": "https://doi.org/10.1038/srep37665",
+      "doi": "10.1038/srep37665",
+      "accessed": "2026-10-31",
+      "publication_date": "",
+      "supports": [
+        "Experimentos controlados no respaldan una regla general; la definición y las condiciones importan."
+      ],
+      "verification_status": "VERIFICADO_RESOLVEDOR"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_001",
+      "arc": "hook_medias_res",
+      "duration_seconds": 10,
+      "narration": "Se cuenta que el agua caliente puede congelarse antes que la fría. A esa afirmación se le llama efecto Mpemba, pero no es una regla universal.",
+      "on_screen_text": "El efecto Mpemba, con matices",
+      "visual_description": "Representación didáctica de ¿el agua caliente se congela primero?, secuencia causal clara y legible",
+      "image_prompt": "editorial satirical newspaper cartoon, black ink crosshatching on newsprint, caricatured figures, newspaper columns layout, vertical 9:16, no text, educational visual scene illustrating ¿el agua caliente se congela primero?, consistent visual continuity",
+      "ambiente": "Ambiente discreto; voz al frente",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "satira_periodico"
+    },
+    {
+      "id": "scene_002",
+      "arc": "desarrollo",
+      "duration_seconds": 12,
+      "narration": "El resultado depende de qué significa exactamente congelarse primero, de la evaporación, el recipiente, el contacto térmico y el sobreenfriamiento.",
+      "on_screen_text": "El mecanismo",
+      "visual_description": "Representación didáctica de ¿el agua caliente se congela primero?, secuencia causal clara y legible",
+      "image_prompt": "editorial satirical newspaper cartoon, black ink crosshatching on newsprint, caricatured figures, newspaper columns layout, vertical 9:16, no text, educational visual scene illustrating ¿el agua caliente se congela primero?, consistent visual continuity",
+      "ambiente": "Ambiente discreto; voz al frente",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "satira_periodico",
+      "capa": {
+        "tipo": "mapa",
+        "titulo": "University of Cambridge",
+        "puntos": [
+          {
+            "nombre": "University of Cambridge",
+            "lat": 52.2053,
+            "lon": 0.1218
+          }
+        ],
+        "fuente": "Afiliación de Henry C. Burridge en el estudio citado. Burridge y Linden (2016) informan que sus ensayos controlados no encontraron evidencia de observaciones significativas del efecto como regla general. Pin de afiliación de autor. Cartografía base: OpenStreetMap."
+      }
+    },
+    {
+      "id": "scene_003",
+      "arc": "desarrollo",
+      "duration_seconds": 12,
+      "narration": "En un estudio con condiciones controladas, Burridge y Linden no encontraron evidencia de un efecto general significativo.",
+      "on_screen_text": "Qué ocurre",
+      "visual_description": "Representación didáctica de ¿el agua caliente se congela primero?, secuencia causal clara y legible",
+      "image_prompt": "editorial satirical newspaper cartoon, black ink crosshatching on newsprint, caricatured figures, newspaper columns layout, vertical 9:16, no text, educational visual scene illustrating ¿el agua caliente se congela primero?, consistent visual continuity",
+      "ambiente": "Ambiente discreto; voz al frente",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "satira_periodico",
+      "capa": {
+        "tipo": "dato",
+        "valor": "Sin regla universal",
+        "etiqueta": "El estudio controlado no respalda un efecto general significativo",
+        "fuente": "Afiliación de Henry C. Burridge en el estudio citado. https://doi.org/10.1038/srep37665. Burridge y Linden (2016) informan que sus ensayos controlados no encontraron evidencia de observaciones significativas del efecto como regla general. Pin de afiliación de autor."
+      }
+    },
+    {
+      "id": "scene_004",
+      "arc": "desarrollo",
+      "duration_seconds": 12,
+      "narration": "Eso no demuestra que toda configuración imaginable se comporte igual. Significa que la afirmación popular no puede presentarse como una ley sencilla de la naturaleza.",
+      "on_screen_text": "La evidencia",
+      "visual_description": "Representación didáctica de ¿el agua caliente se congela primero?, secuencia causal clara y legible",
+      "image_prompt": "editorial satirical newspaper cartoon, black ink crosshatching on newsprint, caricatured figures, newspaper columns layout, vertical 9:16, no text, educational visual scene illustrating ¿el agua caliente se congela primero?, consistent visual continuity",
+      "ambiente": "Ambiente discreto; voz al frente",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "satira_periodico"
+    },
+    {
+      "id": "scene_005",
+      "arc": "desarrollo",
+      "duration_seconds": 12,
+      "narration": "La pregunta científica útil es qué condiciones producen una diferencia medible y reproducible, no cuál agua gana siempre una carrera al congelador. Por eso los ensayos deben controlar variables y repetir mediciones. La temperatura inicial importa.",
+      "on_screen_text": "El matiz",
+      "visual_description": "Representación didáctica de ¿el agua caliente se congela primero?, secuencia causal clara y legible",
+      "image_prompt": "editorial satirical newspaper cartoon, black ink crosshatching on newsprint, caricatured figures, newspaper columns layout, vertical 9:16, no text, educational visual scene illustrating ¿el agua caliente se congela primero?, consistent visual continuity",
+      "ambiente": "Ambiente discreto; voz al frente",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "satira_periodico"
+    },
+    {
+      "id": "scene_006",
+      "arc": "cierre_historia",
+      "duration_seconds": 10,
+      "narration": "El límite: no encontrar un efecto general no descarta casos particulares. Cada experimento vale para su recipiente, temperatura y forma de medir.",
+      "on_screen_text": "Qué sabemos",
+      "visual_description": "Representación didáctica de ¿el agua caliente se congela primero?, secuencia causal clara y legible",
+      "image_prompt": "editorial satirical newspaper cartoon, black ink crosshatching on newsprint, caricatured figures, newspaper columns layout, vertical 9:16, no text, educational visual scene illustrating ¿el agua caliente se congela primero?, consistent visual continuity",
+      "ambiente": "Ambiente discreto; voz al frente",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "satira_periodico"
+    },
+    {
+      "id": "scene_007",
+      "arc": "reflexion_o_pregunta",
+      "duration_seconds": 10,
+      "narration": "La pregunta no es qué agua gana siempre, sino en qué condiciones hay diferencia. ¿Alguna vez lo probaste en tu congelador? Esto fue Datos y ociosidades.",
+      "on_screen_text": "Esto fue Datos y ociosidades",
+      "visual_description": "Representación didáctica de ¿el agua caliente se congela primero?, secuencia causal clara y legible",
+      "image_prompt": "editorial satirical newspaper cartoon, black ink crosshatching on newsprint, caricatured figures, newspaper columns layout, vertical 9:16, no text, educational visual scene illustrating ¿el agua caliente se congela primero?, consistent visual continuity",
+      "ambiente": "Ambiente discreto; voz al frente",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "satira_periodico"
+    }
+  ],
+  "cortinilla_fuentes": {
+    "duration_seconds": 6,
+    "titulo": "Fuentes",
+    "aviso": "Contenido realizado con apoyo de IA; declarar recursos sintéticos usados en versión final.",
+    "firma": "Datos y ociosidades",
+    "source_ids": [
+      "SRC-001"
+    ]
+  },
+  "audio": {
+    "music_asset": null,
+    "music_plan": "Cama discreta; selección y licencia por validar en montaje",
+    "music_license": null
+  },
+  "export": {
+    "resolution": "1080x1920",
+    "fps": 30,
+    "render_status": "NOT_GENERATED"
+  },
+  "publicacion": {
+    "status": "PENDIENTE_DECISION_GROK",
+    "platforms": [
+      "YouTube Shorts",
+      "TikTok",
+      "Facebook Reels"
+    ],
+    "note": "No publicar desde preproducción textual."
+  },
+  "estado": "PENDIENTE_REVISION_GROK",
+  "production_mode": "storyboard_only",
+  "validation_notes": [
+    "7 escenas; objetivo 78 s de narración + 6 s de cortinilla = 84 s."
+  ],
+  "linea_tematica_provisional": "Ciencia y naturaleza",
+  "approved_assets": [],
+  "risk_notes": [
+    "Mantener límites y matices de la fuente; no generalizar más allá de la evidencia."
+  ],
+  "thumbnail_source": "scene_001",
+  "slot_hora_cdmx": "13:30"
+}
