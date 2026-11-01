@@ -1,0 +1,236 @@
+{
+  "_schema": "CAPCOT_STORYBOARD_TEXT_V2",
+  "project_id": "2026-11-06_inter-ranas-congeladas",
+  "serie": "Datos y ociosidades",
+  "title": "Las ranas que sobreviven congeladas",
+  "titulo": "Congeladas, pero vivas",
+  "language": "es-MX",
+  "aspect_ratio": "9:16",
+  "target_duration_seconds": 84,
+  "estructura": "pregunta",
+  "audience": "Público general",
+  "occasion": "Cápsula vertical de divulgación",
+  "resumen": "Rana sylvatica tolera congelación parcial; la glucosa tisular actúa como crioprotector.",
+  "trend_source": {
+    "termino": "Las ranas que sobreviven congeladas",
+    "fecha_publicacion": "",
+    "url": "https://doi.org/10.1242/jeb.181.1.245"
+  },
+  "editorial_status": "PROPUESTA_PENDIENTE_DE_GROK",
+  "arco": {
+    "hook_medias_res": "La rana de bosque norteamericana puede sobrevivir a que parte del agua de su cuerpo se congele durante el invierno.",
+    "desarrollo": "No es que todas sus células se conviertan en hielo. El hielo se forma principalmente fuera de las células, mientras el organismo moviliza grandes cantidades de glucosa. Esa glucosa ayuda a proteger las células frente a la pérdida de agua y al estrés que provoca la congelación. Funciona como parte de un sistema natural de crioprotección. Costanzo y colegas estudiaron cómo la concentración de glucosa influye en la tolerancia al congelamiento. Sus resultados mostraron que la glucosa tiene un papel protector importante. Es una adaptación extrema de esta especie: no significa que cualquier rana, ni cualquier animal, pueda congelarse y volver a la vida.",
+    "cierre_historia": "El mecanismo tiene límites y depende de las condiciones observadas. No conviene convertir una medición particular en una regla universal.",
+    "reflexion_o_pregunta": "Esto fue Datos y ociosidades."
+  },
+  "estilo_id": "papel_rasgado_capas",
+  "estilo_visual": "Papel rasgado por capas (diorama)",
+  "visual_identity": {
+    "style_id": "papel_rasgado_capas",
+    "style_name": "Papel rasgado por capas (diorama)",
+    "prompt_base": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text",
+    "palette": "verde bosque, turquesa apagado, ocre, crema",
+    "lighting": "Según prompt base",
+    "texture": "Según prompt base",
+    "composition": "Vertical 9:16; continuidad de sujeto y paleta",
+    "negative_prompt": "No texto generado, no marcas de agua, no datos falsos",
+    "reference_assets": [],
+    "seed": null,
+    "seed_policy": "Continuidad entre escenas"
+  },
+  "typography_identity": {
+    "font_family": "DejaVu Sans",
+    "font_weight": "700 para gancho; 400 para subtítulos",
+    "title_style": "Máximo seis palabras desde frame 0",
+    "subtitle_style": "Bloques de máximo tres palabras",
+    "hierarchy": "Gancho > dato > subtítulos",
+    "animation": "Un movimiento por plano; texto en postproducción"
+  },
+  "voice": {
+    "engine": "edge-tts",
+    "voice_id": "es-MX-JorgeNeural",
+    "language": "es-MX",
+    "rate": "+7%",
+    "pitch": "-2Hz",
+    "pad_seconds": 0.3,
+    "modo_pausas": "continuo"
+  },
+  "sources": [
+    {
+      "id": "SRC-001",
+      "cita_corta": "Costanzo, Lee & Lortz 1993, Glucose concentration regulates freeze tolerance in the wood frog, Journal of Experimental Biology.",
+      "url": "https://doi.org/10.1242/jeb.181.1.245",
+      "doi": "10.1242/jeb.181.1.245",
+      "accessed": "2026-10-31",
+      "publication_date": "",
+      "supports": [
+        "Rana sylvatica tolera congelación parcial; la glucosa tisular actúa como crioprotector."
+      ],
+      "verification_status": "VERIFICADO_RESOLVEDOR"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_001",
+      "arc": "hook_medias_res",
+      "duration_seconds": 10,
+      "narration": "La rana de bosque norteamericana puede sobrevivir a que parte del agua de su cuerpo se congele durante el invierno.",
+      "on_screen_text": "Congeladas, pero vivas",
+      "visual_description": "Representación didáctica de las ranas que sobreviven congeladas, secuencia causal clara y legible",
+      "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text, educational visual scene illustrating las ranas que sobreviven congeladas, consistent visual continuity",
+      "ambiente": "Ambiente discreto; voz al frente",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "papel_rasgado_capas"
+    },
+    {
+      "id": "scene_002",
+      "arc": "desarrollo",
+      "duration_seconds": 12,
+      "narration": "No es que todas sus células se conviertan en hielo. El hielo se forma principalmente fuera de las células, mientras el organismo moviliza grandes cantidades de glucosa.",
+      "on_screen_text": "El mecanismo",
+      "visual_description": "Representación didáctica de las ranas que sobreviven congeladas, secuencia causal clara y legible",
+      "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text, educational visual scene illustrating las ranas que sobreviven congeladas, consistent visual continuity",
+      "ambiente": "Ambiente discreto; voz al frente",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "papel_rasgado_capas",
+      "capa": {
+        "tipo": "mapa",
+        "titulo": "Interior de Alaska, Fairbanks",
+        "puntos": [
+          {
+            "nombre": "Interior de Alaska, Fairbanks",
+            "lat": 64.8378,
+            "lon": -147.7164
+          }
+        ],
+        "fuente": "Estudios de tolerancia al congelamiento de Rana sylvatica en Interior Alaska. Estudio de población de Rana sylvatica de Interior Alaska. El punto es una referencia regional aproximada, no la ubicación exacta de todos los individuos. Cartografía base: OpenStreetMap."
+      }
+    },
+    {
+      "id": "scene_003",
+      "arc": "desarrollo",
+      "duration_seconds": 12,
+      "narration": "Esa glucosa ayuda a proteger las células frente a la pérdida de agua y al estrés que provoca la congelación. Funciona como parte de un sistema natural de crioprotección.",
+      "on_screen_text": "Qué ocurre",
+      "visual_description": "Representación didáctica de las ranas que sobreviven congeladas, secuencia causal clara y legible",
+      "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text, educational visual scene illustrating las ranas que sobreviven congeladas, consistent visual continuity",
+      "ambiente": "Ambiente discreto; voz al frente",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "papel_rasgado_capas",
+      "capa": {
+        "tipo": "dato",
+        "valor": "Hasta −16 °C",
+        "etiqueta": "Temperatura mínima tolerada en población invernal estudiada",
+        "fuente": "Estudios de tolerancia al congelamiento de Rana sylvatica en Interior Alaska. https://pubmed.ncbi.nlm.nih.gov/23966588/. Estudio de población de Rana sylvatica de Interior Alaska. El punto es una referencia regional aproximada, no la ubicación exacta de todos los individuos."
+      }
+    },
+    {
+      "id": "scene_004",
+      "arc": "desarrollo",
+      "duration_seconds": 12,
+      "narration": "Costanzo y colegas estudiaron cómo la concentración de glucosa influye en la tolerancia al congelamiento. Sus resultados mostraron que la glucosa tiene un papel protector importante.",
+      "on_screen_text": "La evidencia",
+      "visual_description": "Representación didáctica de las ranas que sobreviven congeladas, secuencia causal clara y legible",
+      "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text, educational visual scene illustrating las ranas que sobreviven congeladas, consistent visual continuity",
+      "ambiente": "Ambiente discreto; voz al frente",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "papel_rasgado_capas"
+    },
+    {
+      "id": "scene_005",
+      "arc": "desarrollo",
+      "duration_seconds": 12,
+      "narration": "Es una adaptación extrema de esta especie: no significa que cualquier rana, ni cualquier animal, pueda congelarse y volver a la vida.",
+      "on_screen_text": "El matiz",
+      "visual_description": "Representación didáctica de las ranas que sobreviven congeladas, secuencia causal clara y legible",
+      "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text, educational visual scene illustrating las ranas que sobreviven congeladas, consistent visual continuity",
+      "ambiente": "Ambiente discreto; voz al frente",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "papel_rasgado_capas"
+    },
+    {
+      "id": "scene_006",
+      "arc": "cierre_historia",
+      "duration_seconds": 10,
+      "narration": "El límite: la glucosa es una pieza importante de la protección, pero los resultados describen a esta especie y a las condiciones estudiadas.",
+      "on_screen_text": "Qué sabemos",
+      "visual_description": "Representación didáctica de las ranas que sobreviven congeladas, secuencia causal clara y legible",
+      "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text, educational visual scene illustrating las ranas que sobreviven congeladas, consistent visual continuity",
+      "ambiente": "Ambiente discreto; voz al frente",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "papel_rasgado_capas"
+    },
+    {
+      "id": "scene_007",
+      "arc": "reflexion_o_pregunta",
+      "duration_seconds": 10,
+      "narration": "Esta rana no evita el hielo: lo deja formarse afuera de sus células y se protege por dentro. ¿Qué otro animal extremo te gustaría conocer? Esto fue Datos y ociosidades.",
+      "on_screen_text": "Esto fue Datos y ociosidades",
+      "visual_description": "Representación didáctica de las ranas que sobreviven congeladas, secuencia causal clara y legible",
+      "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text, educational visual scene illustrating las ranas que sobreviven congeladas, consistent visual continuity",
+      "ambiente": "Ambiente discreto; voz al frente",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "papel_rasgado_capas"
+    }
+  ],
+  "cortinilla_fuentes": {
+    "duration_seconds": 6,
+    "titulo": "Fuentes",
+    "aviso": "Contenido realizado con apoyo de IA; declarar recursos sintéticos usados en versión final.",
+    "firma": "Datos y ociosidades",
+    "source_ids": [
+      "SRC-001"
+    ]
+  },
+  "audio": {
+    "music_asset": null,
+    "music_plan": "Cama discreta; selección y licencia por validar en montaje",
+    "music_license": null
+  },
+  "export": {
+    "resolution": "1080x1920",
+    "fps": 30,
+    "render_status": "NOT_GENERATED"
+  },
+  "publicacion": {
+    "status": "PENDIENTE_DECISION_GROK",
+    "platforms": [
+      "YouTube Shorts",
+      "TikTok",
+      "Facebook Reels"
+    ],
+    "note": "No publicar desde preproducción textual."
+  },
+  "estado": "PENDIENTE_REVISION_GROK",
+  "production_mode": "storyboard_only",
+  "validation_notes": [
+    "7 escenas; objetivo 78 s de narración + 6 s de cortinilla = 84 s."
+  ],
+  "linea_tematica_provisional": "Ciencia y naturaleza",
+  "approved_assets": [],
+  "risk_notes": [
+    "Mantener límites y matices de la fuente; no generalizar más allá de la evidencia."
+  ],
+  "thumbnail_source": "scene_001"
+}
