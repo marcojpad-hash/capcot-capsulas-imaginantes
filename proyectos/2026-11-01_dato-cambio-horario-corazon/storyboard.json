@@ -1,0 +1,397 @@
+{
+  "_schema": "CAPCOT_STORYBOARD_TEXT_V2",
+  "project_id": "2026-11-01_dato-cambio-horario-corazon",
+  "serie": "Datos y ociosidades",
+  "title": "El cambio de hora y el corazón",
+  "titulo": "Una hora, otro ritmo",
+  "language": "es-MX",
+  "aspect_ratio": "9:16",
+  "target_duration_seconds": 84,
+  "estructura": "historia",
+  "audience": "Público general adulto",
+  "occasion": "Dato del día · 23:30 CDMX · 1 de noviembre de 2026",
+  "resumen": "Un estudio de Michigan encontró diferencias en el número diario de ingresos por infarto tratados con angioplastia después de los cambios estacionales de hora: más el lunes tras adelantar en primavera y menos el martes tras atrasar en otoño. El total semanal no mostró diferencia significativa.",
+  "narrative_contract": {
+    "central_question": "¿El cambio de hora altera el momento en que llegan al hospital los infartos?",
+    "promise": "Entender qué encontró el estudio de Michigan y qué no permite afirmar.",
+    "stakes": "No confundir un cambio temporal en presentaciones hospitalarias con un aumento del número total de infartos.",
+    "scientific_turn": "Más ingresos diarios el lunes tras adelantar la hora en primavera y menos el martes tras atrasarla en otoño, sin diferencia significativa en el total semanal.",
+    "evidence_limit": "Registros de Michigan de 2010–2013; solo infartos tratados con angioplastia; estudio observacional, no prueba causalidad ni incluye todos los casos.",
+    "payoff": "El reloj vuelve atrás, pero el cuerpo conserva su propio ritmo; el hallazgo fue sobre cuándo se presentaron los casos, no sobre más infartos en la semana."
+  },
+  "trend_source": {
+    "termino": "Cambio de hora otoñal en Norteamérica",
+    "fecha_publicacion": "2026-11-01",
+    "url": "https://www.nist.gov/pml/time-and-frequency-division/popular-links/daylight-saving-time-dst"
+  },
+  "editorial_status": "BORRADOR_EN_PROYECTOS_PENDIENTE_QA_NARRATIVO_INDEPENDIENTE",
+  "arco": {
+    "hook_medias_res": "El reloj vuelve a marcar la una; el cuerpo no se ajusta por decreto.",
+    "desarrollo": "Un estudio de Michigan examinó 42,060 ingresos por infarto tratados con angioplastia y encontró diferencias en días concretos tras los cambios de primavera y otoño.",
+    "cierre_historia": "El total semanal no mostró diferencia significativa. El patrón se relacionó con el momento de presentación, no con un aumento global.",
+    "reflexion_o_pregunta": "La hora vuelve atrás; el cuerpo no pulsa un botón para ajustarse. ¿Qué haces para recuperar tu ritmo? Esto fue Datos y ociosidades."
+  },
+  "estilo_id": "art_deco_poster",
+  "estilo_visual": "Póster Art Déco",
+  "visual_identity": {
+    "style_id": "art_deco_poster",
+    "style_name": "Póster Art Déco",
+    "prompt_base": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text",
+    "palette": "teal, dorado, negro, crema",
+    "lighting": "Luz lateral cálida y contrastes limpios; misma dirección en todas las escenas.",
+    "texture": "Impresión de póster de los años veinte, grano fino y gradientes aerografiados.",
+    "composition": "Un sujeto principal grande por plano; geometría clara; mapa y gráficos como láminas editoriales separadas.",
+    "negative_prompt": "No fotorealismo, anatomía falsa, pacientes identificables, texto o cifras generadas dentro de la imagen, ni mezcla de estilos.",
+    "reference_assets": [],
+    "seed": null,
+    "seed_policy": "Mantener una sola biblia Art Déco, misma paleta y tratamiento de reloj, mapa y gráficos en las ocho escenas."
+  },
+  "typography_identity": {
+    "font_family": "DejaVu Sans",
+    "font_weight": "700 para gancho; 400 para subtítulos",
+    "title_style": "Máximo seis palabras; presente desde frame 0 en postproducción",
+    "subtitle_style": "Bloques de máximo tres palabras; zona segura inferior",
+    "hierarchy": "Gancho > dato/etiqueta > subtítulos",
+    "animation": "Un movimiento por plano; tipografía en postproducción"
+  },
+  "voice": {
+    "engine": "edge-tts",
+    "voice_id": "es-MX-JorgeNeural",
+    "language": "es-MX",
+    "rate": "+7%",
+    "pitch": "-2Hz",
+    "pad_seconds": 0.3,
+    "modo_pausas": "continuo"
+  },
+  "sources": [
+    {
+      "id": "SRC-001",
+      "cita_corta": "Sandhu A, Seth M, Gurm HS. Daylight savings time and myocardial infarction. Open Heart. 2014;1:e000019.",
+      "url": "https://doi.org/10.1136/openhrt-2013-000019",
+      "doi": "10.1136/openhrt-2013-000019",
+      "accessed": "2026-11-01",
+      "publication_date": "2014-03-28",
+      "supports": [
+        "42,060 ingresos por infarto tratados con angioplastia en el periodo 2010–2013",
+        "Riesgo relativo ajustado 1.24 el lunes tras el cambio de primavera",
+        "Riesgo relativo ajustado 0.79 el martes tras el cambio de otoño",
+        "Ausencia de diferencia significativa en el total semanal",
+        "Límites geográficos y clínicos de la muestra"
+      ],
+      "verification_status": "VERIFICADO_RESOLVEDOR"
+    },
+    {
+      "id": "SRC-002",
+      "cita_corta": "Diario Oficial de la Federación. Ley de los Husos Horarios en los Estados Unidos Mexicanos. 28-10-2022.",
+      "url": "https://dof.gob.mx/nota_detalle.php?codigo=5670045&fecha=28/10/2022",
+      "doi": null,
+      "accessed": "2026-11-01",
+      "publication_date": "2022-10-28",
+      "supports": [
+        "El horario estacional mexicano se aplica únicamente a estados y municipios de la frontera norte, conforme al artículo 5."
+      ],
+      "verification_status": "VERIFICADO_FUENTE_OFICIAL"
+    },
+    {
+      "id": "SRC-003",
+      "cita_corta": "Secretaría de Energía. En la República Mexicana ya no hay Horario de Verano. 02-04-2023.",
+      "url": "https://www.gob.mx/sener/articulos/en-la-republica-mexicana-ya-no-hay-horario-de-verano?idiom=es",
+      "doi": null,
+      "accessed": "2026-11-01",
+      "publication_date": "2023-04-02",
+      "supports": [
+        "En casi todo México se eliminó el horario de verano; la frontera norte conserva horario estacional."
+      ],
+      "verification_status": "VERIFICADO_FUENTE_OFICIAL"
+    },
+    {
+      "id": "SRC-004",
+      "cita_corta": "U.S. Census Bureau. State Centers of Population 1880–2020: Michigan.",
+      "url": "https://www.census.gov/geographies/reference-files/time-series/geo/centers-population/historical-by-state/centers-of-pop-michigan.html",
+      "doi": null,
+      "accessed": "2026-11-01",
+      "publication_date": "2021-11-01",
+      "supports": [
+        "Coordenadas del centro de población de Michigan en el Censo 2020; referencia cartográfica, no ubicación de hospitales."
+      ],
+      "verification_status": "VERIFICADO_FUENTE_OFICIAL"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_001",
+      "arc": "hook_medias_res",
+      "duration_seconds": 9,
+      "narration": "A las dos, el reloj volvió a marcar la una. El horario cambió en un instante; el corazón no recibe instrucciones del reloj de pared.",
+      "on_screen_text": "El reloj retrocede",
+      "visual_description": "Reloj analógico en habitación nocturna cambiando de 2:00 a 1:00; el segundero sigue avanzando mientras una silueta humana permanece despierta.",
+      "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text. Reloj analógico en habitación nocturna cambiando de 2:00 a 1:00; el segundero sigue avanzando mientras una silueta humana permanece despierta. Sin texto dentro de la imagen.",
+      "ambiente": "Habitación nocturna: zumbido tenue",
+      "sfx": [
+        "tic-tac que se repite"
+      ],
+      "source_ids": [
+        "SRC-002",
+        "SRC-003"
+      ],
+      "style_id": "art_deco_poster",
+      "dramatic_beat": "El reloj acaba de retroceder una hora durante la madrugada del 1 de noviembre.",
+      "scene_function": "Abrir con la anomalía real del reloj que repite una hora.",
+      "causal_bridge_from_previous": "Apertura en curso: el reloj marca de nuevo la 1:00.",
+      "question_state": "Queda por saber qué ocurre con el ritmo corporal.",
+      "reason_to_continue": "La transición no ocurre igual en todos los lugares.",
+      "new_information": "El reloj repite la 1:00, pero el cuerpo no se ajusta por decreto."
+    },
+    {
+      "id": "scene_002",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "Hoy Estados Unidos y Canadá atrasan sus relojes. En Ciudad de México y casi todo el país no cambia la hora; la excepción es la franja fronteriza norte.",
+      "on_screen_text": "México: excepción fronteriza",
+      "visual_description": "Mapa editorial de Norteamérica: Estados Unidos y Canadá resaltados; México neutro y solo la franja fronteriza norte marcada como excepción estacional.",
+      "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text. Mapa editorial de Norteamérica: Estados Unidos y Canadá resaltados; México neutro y solo la franja fronteriza norte marcada como excepción estacional. Sin texto dentro de la imagen.",
+      "ambiente": "Aire exterior y sonido urbano leve",
+      "sfx": [
+        "clic suave de reloj"
+      ],
+      "source_ids": [
+        "SRC-002",
+        "SRC-003"
+      ],
+      "style_id": "art_deco_poster",
+      "dramatic_beat": "El reloj retrocedió donde rige el horario estacional; ahora distinguimos esa región de México.",
+      "scene_function": "Situar el evento y evitar que la audiencia de CDMX crea que también debe ajustar su reloj.",
+      "causal_bridge_from_previous": "El cambio ocurre en Norteamérica, pero el estudio no mide a toda la población.",
+      "question_state": "Falta entender la relación entre hora social y cuerpo.",
+      "reason_to_continue": "La pregunta pasa del mapa al mecanismo corporal.",
+      "new_information": "CDMX mantiene su hora; la excepción mexicana está en municipios fronterizos del norte.",
+      "capa": {
+        "tipo": "mapa",
+        "region": [
+          14,
+          -118,
+          60,
+          -52
+        ],
+        "puntos": [
+          {
+            "nombre": "Centro de población de Michigan",
+            "lat": 42.86472,
+            "lon": -84.21306,
+            "nota": "Referencia estatal; no representa hospitales individuales."
+          }
+        ],
+        "titulo": "Norteamérica y Michigan",
+        "fuente": "U.S. Census Bureau, centro de población 2020 de Michigan; el punto localiza el estado, no hospitales."
+      }
+    },
+    {
+      "id": "scene_003",
+      "arc": "desarrollo",
+      "duration_seconds": 9,
+      "narration": "Ese salto altera la hora social de dormir y despertar. El reloj interno, o ritmo circadiano, coordina funciones del cuerpo con los ciclos de luz y oscuridad.",
+      "on_screen_text": "El reloj interno",
+      "visual_description": "Reloj de pared conectado a una silueta humana y a un ciclo de amanecer y anochecer; diferencia entre hora civil y ritmo circadiano.",
+      "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text. Reloj de pared conectado a una silueta humana y a un ciclo de amanecer y anochecer; diferencia entre hora civil y ritmo circadiano. Sin texto dentro de la imagen.",
+      "ambiente": "Amanecer tenue",
+      "sfx": [
+        "pulso grave discreto"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "art_deco_poster",
+      "dramatic_beat": "Como el cambio legal modifica la hora social, ahora vemos cómo se relaciona con el reloj biológico.",
+      "scene_function": "Introducir el mecanismo sin afirmar que el paper midió ritmos individuales.",
+      "causal_bridge_from_previous": "Sabemos qué es el ritmo circadiano; falta evidencia hospitalaria.",
+      "question_state": "Hay que comprobar si existe una señal observable en hospitales.",
+      "reason_to_continue": "La evidencia proviene de registros clínicos.",
+      "new_information": "El ritmo circadiano coordina funciones con ciclos de luz y oscuridad."
+    },
+    {
+      "id": "scene_004",
+      "arc": "desarrollo",
+      "duration_seconds": 11,
+      "narration": "¿Puede notarse en urgencias? Sandhu, Seth y Gurm analizaron 42,060 ingresos por infarto tratados con angioplastia en Michigan entre 2010 y 2013. La angioplastia abre una arteria con un catéter.",
+      "on_screen_text": "42,060 ingresos · Michigan",
+      "visual_description": "Fichas clínicas abstractas se agrupan sobre un mapa de Michigan, evocando un registro hospitalario estatal entre 2010 y 2013; sin pacientes ni hospitales ficticios.",
+      "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text. Fichas clínicas abstractas se agrupan sobre un mapa de Michigan, evocando un registro hospitalario estatal entre 2010 y 2013; sin pacientes ni hospitales ficticios. Sin texto dentro de la imagen.",
+      "ambiente": "Ambiente hospitalario neutro, sin alarmas",
+      "sfx": [
+        "paso de fichas sobre mesa"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "art_deco_poster",
+      "dramatic_beat": "Para saber si el cambio coincide con variaciones clínicas, los autores analizaron registros de infartos tratados.",
+      "scene_function": "Definir población, periodo y qué contó el estudio.",
+      "causal_bridge_from_previous": "La muestra está delimitada; falta comparar primavera y otoño.",
+      "question_state": "Los días posteriores a cada cambio pueden mostrar patrones distintos.",
+      "reason_to_continue": "Primero aparece la comparación de primavera.",
+      "new_information": "42,060 ingresos por infarto con angioplastia en Michigan entre 2010 y 2013.",
+      "capa": {
+        "tipo": "dato",
+        "valor": 42060,
+        "unidad": "ingresos hospitalarios",
+        "etiqueta": "Infartos tratados con angioplastia, Michigan, 2010–2013",
+        "fuente": "Sandhu, Seth & Gurm (2014), Open Heart 1:e000019."
+      }
+    },
+    {
+      "id": "scene_005",
+      "arc": "desarrollo",
+      "duration_seconds": 11,
+      "narration": "Al adelantar el reloj en primavera, el lunes siguiente registró un riesgo relativo de 1.24: 24% más casos diarios de lo esperado, tras ajustar tendencia y estacionalidad.",
+      "on_screen_text": "Primavera: +24% el lunes",
+      "visual_description": "Calendario de primavera con lunes destacado; barra de riesgo relativo 1.24 comparada con 1.00.",
+      "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text. Calendario de primavera con lunes destacado; barra de riesgo relativo 1.24 comparada con 1.00. Sin texto dentro de la imagen.",
+      "ambiente": "Ritmo urbano matutino",
+      "sfx": [
+        "alarma breve y apagada"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "art_deco_poster",
+      "dramatic_beat": "Con la población y el método definidos, se compara el día posterior a perder una hora en primavera.",
+      "scene_function": "Mostrar el aumento observado el lunes posterior al adelanto primaveral.",
+      "causal_bridge_from_previous": "El lunes de primavera muestra aumento; falta saber qué ocurre en otoño.",
+      "question_state": "El contraste otoñal puede cambiar la interpretación.",
+      "reason_to_continue": "La comparación puede revelar si el efecto cambia de dirección.",
+      "new_information": "El riesgo relativo ajustado del lunes de primavera fue 1.24.",
+      "capa": {
+        "tipo": "grafico",
+        "valor": 1.24,
+        "unidad": "riesgo relativo ajustado",
+        "etiqueta": "Lunes tras el adelanto de primavera: +24% frente a lo esperado",
+        "condiciones": "Modelo ajustado por tendencia y estacionalidad; p=0.011; ingresos diarios por infarto tratados con PCI.",
+        "fuente": "Sandhu, Seth & Gurm (2014), tabla 1."
+      }
+    },
+    {
+      "id": "scene_006",
+      "arc": "desarrollo",
+      "duration_seconds": 11,
+      "narration": "Al atrasarlo en otoño, el martes siguiente el riesgo relativo fue 0.79: 21% menos. Pero el total semanal no mostró diferencia significativa: cambió el reparto por día, no la suma.",
+      "on_screen_text": "Otoño: −21% el martes",
+      "visual_description": "Calendario otoñal con martes destacado; comparación 1.24 en primavera y 0.79 en otoño, con línea semanal sin diferencia significativa.",
+      "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text. Calendario otoñal con martes destacado; comparación 1.24 en primavera y 0.79 en otoño, con línea semanal sin diferencia significativa. Sin texto dentro de la imagen.",
+      "ambiente": "Ritmo urbano que se calma",
+      "sfx": [
+        "tic-tac que se ralentiza"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "art_deco_poster",
+      "dramatic_beat": "Después del aumento de primavera, el atraso otoñal muestra una reducción en otro día de la semana.",
+      "scene_function": "Explicar el giro: los días cambian, el total semanal no aumenta significativamente.",
+      "causal_bridge_from_previous": "El patrón parece redistribuir el momento de las presentaciones.",
+      "question_state": "Falta precisar qué no puede concluirse.",
+      "reason_to_continue": "Los límites de la muestra impiden convertir asociación en causalidad.",
+      "new_information": "El martes de otoño tuvo riesgo relativo 0.79; el total semanal no mostró diferencia significativa.",
+      "capa": {
+        "tipo": "grafico",
+        "valor": 0.79,
+        "unidad": "riesgo relativo ajustado",
+        "etiqueta": "Martes tras el atraso de otoño: −21% frente a lo esperado",
+        "condiciones": "Modelo ajustado por tendencia y estacionalidad; p=0.044. El total semanal no mostró diferencia significativa.",
+        "fuente": "Sandhu, Seth & Gurm (2014), tabla 1 y resultados."
+      }
+    },
+    {
+      "id": "scene_007",
+      "arc": "cierre_historia",
+      "duration_seconds": 9,
+      "narration": "El estudio cubrió hospitales de Michigan y solo infartos tratados con angioplastia; no demuestra que cambiar la hora cause infartos ni mide todos los casos.",
+      "on_screen_text": "Asociación, no causalidad",
+      "visual_description": "Mapa de Michigan junto a un marco que limita los datos a infartos tratados con angioplastia; el resto queda fuera del recuadro.",
+      "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text. Mapa de Michigan junto a un marco que limita los datos a infartos tratados con angioplastia; el resto queda fuera del recuadro. Sin texto dentro de la imagen.",
+      "ambiente": "Silencio breve con ambiente distante",
+      "sfx": [
+        "marco de papel que se cierra"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "art_deco_poster",
+      "dramatic_beat": "El desplazamiento entre días es el giro; ahora reconocemos a quiénes no incluyó el registro.",
+      "scene_function": "Delimitar el alcance geográfico y clínico del estudio.",
+      "causal_bridge_from_previous": "La asociación está descrita, pero no prueba causalidad ni abarca todos los infartos.",
+      "question_state": "El cierre debe volver al reloj de la apertura.",
+      "reason_to_continue": "La historia regresa al reloj que retrocedió al inicio.",
+      "new_information": "La investigación no midió todos los infartos ni demuestra que el cambio horario los cause."
+    },
+    {
+      "id": "scene_008",
+      "arc": "reflexion_o_pregunta",
+      "duration_seconds": 8,
+      "narration": "La hora vuelve atrás; el cuerpo no pulsa un botón para ajustarse. ¿Qué haces para recuperar tu ritmo? Esto fue Datos y ociosidades.",
+      "on_screen_text": "El cuerpo lleva su propio ritmo",
+      "visual_description": "El reloj vuelve a avanzar; la luz del amanecer entra por la ventana y una silueta humana continúa su rutina, sin promesa médica.",
+      "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text. El reloj vuelve a avanzar; la luz del amanecer entra por la ventana y una silueta humana continúa su rutina, sin promesa médica. Sin texto dentro de la imagen.",
+      "ambiente": "Amanecer tranquilo",
+      "sfx": [
+        "un solo tic claro"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "style_id": "art_deco_poster",
+      "dramatic_beat": "Después de reconocer el límite del estudio, regresamos al reloj que retrocedió al inicio.",
+      "scene_function": "Pagar la apertura y cerrar con una pregunta cotidiana.",
+      "causal_bridge_from_previous": "La pregunta queda respondida: cambió el momento de presentación, no el total semanal.",
+      "question_state": "Cierre.",
+      "reason_to_continue": "Cierre.",
+      "new_information": "La hora civil cambia de golpe; el cuerpo no se ajusta con un botón."
+    }
+  ],
+  "cortinilla_fuentes": {
+    "duration_seconds": 6,
+    "titulo": "Fuentes",
+    "aviso": "Fuentes científicas y oficiales citadas.",
+    "firma": "Datos y ociosidades",
+    "source_ids": [
+      "SRC-001",
+      "SRC-002",
+      "SRC-003",
+      "SRC-004"
+    ]
+  },
+  "audio": {
+    "music_asset": null,
+    "music_plan": "Cama discreta de pulso lento; selección/generación exclusiva de Grok durante producción.",
+    "music_license": null
+  },
+  "export": {
+    "resolution": "1080x1920",
+    "fps": 30,
+    "render_status": "NOT_GENERATED"
+  },
+  "publicacion": {
+    "status": "PENDIENTE_DECISION_GROK",
+    "platforms": [
+      "YouTube Shorts",
+      "TikTok",
+      "Facebook Reels"
+    ],
+    "note": "No publicar ni programar desde preproducción textual."
+  },
+  "estado": "BORRADOR_EN_PROYECTOS_PENDIENTE_QA_NARRATIVO_INDEPENDIENTE",
+  "production_mode": "storyboard_only",
+  "approved_assets": [],
+  "validation_notes": [
+    "Duración de escenas: 78 s + cortinilla de 6 s = 84 s.",
+    "El QA narrativo independiente debe registrarse antes de cualquier promoción a cola.",
+    "No se incluyen asset_filename, asset_type ni rutas de medios.",
+    "No se crea estado Grok; recepción no confirmada hasta que Grok lo registre."
+  ],
+  "risk_notes": [
+    "No convertir porcentajes relativos diarios en riesgo individual.",
+    "No afirmar causalidad.",
+    "No afirmar que el cambio horario aumentó el total semanal de infartos.",
+    "El mapa usa el centro de población de Michigan, no coordenadas de hospitales."
+  ]
+}
