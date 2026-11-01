@@ -5,11 +5,11 @@ on:
     branches:
       - feature/capcot-video-discovery-continuity
     paths:
-      - 'cola/entrada/**/*.json'
+      - 'cola/entrada/*.json'
   workflow_dispatch:
     inputs:
       project_id:
-        description: 'ID del paquete, por ejemplo 2026-11-02_camaron-mantis'
+        description: 'ID del paquete, por ejemplo 2026-11-05_inter-rayo-globular'
         required: true
         type: string
 
@@ -36,18 +36,19 @@ jobs:
         env:
           EVENT_NAME: ${{ github.event_name }}
           INPUT_PROJECT_ID: ${{ inputs.project_id }}
-          COMMIT_BEFORE: ${{ github.event.before }}
         run: |
           set -euo pipefail
           if [[ "$EVENT_NAME" == "workflow_dispatch" ]]; then
             project_id="$INPUT_PROJECT_ID"
             file="cola/entrada/${project_id}.json"
           else
-            file="$(git diff-tree --no-commit-id --name-only -r "$GITHUB_SHA" | grep -E '^cola/entrada/.+\.json | head -n1 || true)"
-            if [[ -z "$file" ]]; then
-              echo "No se detectó un storyboard nuevo en este commit."
+            mapfile -t changed < <(git diff-tree --no-commit-id --name-only --diff-filter=AM -r "$GITHUB_SHA" | grep -E '^cola/entrada/[^/]+\.json$' || true)
+            if [[ "${#changed[@]}" -ne 1 ]]; then
+              printf 'Se esperaba exactamente un JSON nuevo/modificado en cola/entrada; detectados: %s\n' "${#changed[@]}"
+              printf '%s\n' "${changed[@]}"
               exit 1
             fi
+            file="${changed[0]}"
             project_id="$(basename "$file" .json)"
           fi
           test -f "$file" || { echo "No existe el paquete: $file"; exit 1; }
@@ -65,7 +66,7 @@ jobs:
           case "$WEBHOOK_URL" in https://*) ;; *) echo "::error::GROK_WEBHOOK_URL debe usar HTTPS."; exit 1;; esac
           test -n "$WEBHOOK_TOKEN" || { echo "::error::Falta configurar GROK_WEBHOOK_TOKEN."; exit 1; }
 
-      - name: Enviar paquete completo a Imaginantes
+      - name: Enviar paquete textual completo a Imaginantes
         id: deliver
         env:
           WEBHOOK_URL: ${{ secrets.GROK_WEBHOOK_URL }}
@@ -82,19 +83,19 @@ jobs:
           python - <<'PY'
           import json, os
           with open(os.environ["PACKAGE_FILE"], encoding="utf-8") as f:
-              storyboard=json.load(f)
-          payload={
-            "event":"capcot.package.ready",
-            "project_id":os.environ["PROJECT_ID"],
-            "repository":os.environ["REPOSITORY"],
-            "branch":os.environ["BRANCH"],
-            "commit_sha":os.environ["COMMIT_SHA"],
-            "package_path":os.environ["PACKAGE_FILE"],
-            "package_url":f'{os.environ["SERVER_URL"]}/{os.environ["REPOSITORY"]}/blob/{os.environ["COMMIT_SHA"]}/{os.environ["PACKAGE_FILE"]}',
-            "storyboard":storyboard
+              storyboard = json.load(f)
+          payload = {
+              "event": "capcot.package.ready",
+              "project_id": os.environ["PROJECT_ID"],
+              "repository": os.environ["REPOSITORY"],
+              "branch": os.environ["BRANCH"],
+              "commit_sha": os.environ["COMMIT_SHA"],
+              "package_path": os.environ["PACKAGE_FILE"],
+              "package_url": f'{os.environ["SERVER_URL"]}/{os.environ["REPOSITORY"]}/blob/{os.environ["COMMIT_SHA"]}/{os.environ["PACKAGE_FILE"]}',
+              "storyboard": storyboard
           }
-          with open("/tmp/capcot-payload.json","w",encoding="utf-8") as f:
-              json.dump(payload,f,ensure_ascii=False)
+          with open("/tmp/capcot-payload.json", "w", encoding="utf-8") as f:
+              json.dump(payload, f, ensure_ascii=False)
           PY
           code="$(curl --silent --show-error --output /tmp/grok-response.json --write-out '%{http_code}' \
             --request POST "$WEBHOOK_URL" \
@@ -106,84 +107,13 @@ jobs:
           [[ "$code" =~ ^2[0-9][0-9]$ ]] || { echo "::error::El receptor no aceptó el paquete."; exit 1; }
           python - <<'PY'
           import json
-          p="/tmp/grok-response.json"
+          p = "/tmp/grok-response.json"
           try:
-              data=json.load(open(p,encoding="utf-8"))
+              with open(p, encoding="utf-8") as f:
+                  data = json.load(f)
           except Exception:
               raise SystemExit("El receptor respondió sin JSON verificable.")
           if data.get("accepted") is not True:
               raise SystemExit("El receptor no confirmó accepted=true.")
-          print("RECEPTOR_ACK:", data.get("receipt_id","sin receipt_id"))
-          PY
- | head -n1 || true)"
-            if [[ -z "$file" ]]; then
-              echo "No se detectó un storyboard nuevo en este commit."
-              exit 1
-            fi
-            project_id="$(basename "$file" .json)"
-          fi
-          test -f "$file" || { echo "No existe el paquete: $file"; exit 1; }
-          python -m json.tool "$file" >/dev/null
-          echo "project_id=$project_id" >> "$GITHUB_OUTPUT"
-          echo "file=$file" >> "$GITHUB_OUTPUT"
-
-      - name: Verificar configuración del receptor
-        env:
-          WEBHOOK_URL: ${{ secrets.GROK_WEBHOOK_URL }}
-          WEBHOOK_TOKEN: ${{ secrets.GROK_WEBHOOK_TOKEN }}
-        run: |
-          set -euo pipefail
-          test -n "$WEBHOOK_URL" || { echo "::error::Falta configurar el secreto GROK_WEBHOOK_URL."; exit 1; }
-          case "$WEBHOOK_URL" in https://*) ;; *) echo "::error::GROK_WEBHOOK_URL debe usar HTTPS."; exit 1;; esac
-          test -n "$WEBHOOK_TOKEN" || { echo "::error::Falta configurar GROK_WEBHOOK_TOKEN."; exit 1; }
-
-      - name: Enviar paquete completo a Imaginantes
-        id: deliver
-        env:
-          WEBHOOK_URL: ${{ secrets.GROK_WEBHOOK_URL }}
-          WEBHOOK_TOKEN: ${{ secrets.GROK_WEBHOOK_TOKEN }}
-          PROJECT_ID: ${{ steps.package.outputs.project_id }}
-          PACKAGE_FILE: ${{ steps.package.outputs.file }}
-          REPOSITORY: ${{ github.repository }}
-          BRANCH: ${{ github.ref_name }}
-          COMMIT_SHA: ${{ github.sha }}
-          SERVER_URL: ${{ github.server_url }}
-        shell: bash
-        run: |
-          set -euo pipefail
-          python - <<'PY'
-          import json, os
-          with open(os.environ["PACKAGE_FILE"], encoding="utf-8") as f:
-              storyboard=json.load(f)
-          payload={
-            "event":"capcot.package.ready",
-            "project_id":os.environ["PROJECT_ID"],
-            "repository":os.environ["REPOSITORY"],
-            "branch":os.environ["BRANCH"],
-            "commit_sha":os.environ["COMMIT_SHA"],
-            "package_path":os.environ["PACKAGE_FILE"],
-            "package_url":f'{os.environ["SERVER_URL"]}/{os.environ["REPOSITORY"]}/blob/{os.environ["COMMIT_SHA"]}/{os.environ["PACKAGE_FILE"]}',
-            "storyboard":storyboard
-          }
-          with open("/tmp/capcot-payload.json","w",encoding="utf-8") as f:
-              json.dump(payload,f,ensure_ascii=False)
-          PY
-          code="$(curl --silent --show-error --output /tmp/grok-response.json --write-out '%{http_code}' \
-            --request POST "$WEBHOOK_URL" \
-            --header 'Content-Type: application/json' \
-            --header "Authorization: Bearer $WEBHOOK_TOKEN" \
-            --data-binary @/tmp/capcot-payload.json)"
-          echo "HTTP $code"
-          cat /tmp/grok-response.json || true
-          [[ "$code" =~ ^2[0-9][0-9]$ ]] || { echo "::error::El receptor no aceptó el paquete."; exit 1; }
-          python - <<'PY'
-          import json
-          p="/tmp/grok-response.json"
-          try:
-              data=json.load(open(p,encoding="utf-8"))
-          except Exception:
-              raise SystemExit("El receptor respondió sin JSON verificable.")
-          if data.get("accepted") is not True:
-              raise SystemExit("El receptor no confirmó accepted=true.")
-          print("RECEPTOR_ACK:", data.get("receipt_id","sin receipt_id"))
+          print("RECEPTOR_ACK:", data.get("receipt_id", "sin receipt_id"))
           PY
