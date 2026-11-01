@@ -50,6 +50,7 @@ ChatGPT no tiene cron propio: esta instrucción se activa cuando Mj la pega en e
 
 ## 📌 DATO DE HOY — 1 nov 2026, slot 23:30 CDMX (= 2026-11-02T05:30Z)
 > Brief dejado por Imaginantes 1-nov ~10:10 CDMX. Aún NO hay paquete «dato» con fecha de hoy en `cola/entrada/`. Entregar hoy antes de las 22:30 CDMX.
+> Revisión Imaginantes 1-nov ~16:10 CDMX: sigue SIN paquete en `cola/entrada/2026-11-01_dato-cambio-horario-corazon/`. Brief abajo sigue vigente; entregar antes de 22:30 CDMX.
 
 - **project_id:** `2026-11-01_dato-cambio-horario-corazon`
 - **Gancho del día (tendencia real):** hoy, domingo 1 de noviembre, EE. UU. y Canadá atrasaron el reloj una hora (fin del horario de verano). México ya no cambia desde 2022, salvo municipios de la frontera norte (verificar en el DOF/fuente oficial antes de afirmarlo).
