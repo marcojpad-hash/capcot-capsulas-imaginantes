@@ -98,7 +98,19 @@
       "source_ids": [
         "SRC-001"
       ],
-      "style_id": "satira_periodico"
+      "style_id": "satira_periodico",
+      "capa": {
+        "tipo": "mapa",
+        "titulo": "University of Alberta, Edmonton",
+        "puntos": [
+          {
+            "nombre": "University of Alberta, Edmonton",
+            "lat": 53.5461,
+            "lon": -113.4938
+          }
+        ],
+        "fuente": "Afiliación de Justine Karst en el artículo citado. La fuente de fisiología vegetal citada describe respiración y fotosíntesis. El pin ubica Edmonton como afiliación de una autora de una revisión sobre redes micorrícicas, no un bosque donde se midió este proceso. Cartografía base: OpenStreetMap."
+      }
     },
     {
       "id": "scene_003",
@@ -113,7 +125,13 @@
       "source_ids": [
         "SRC-001"
       ],
-      "style_id": "satira_periodico"
+      "style_id": "satira_periodico",
+      "capa": {
+        "tipo": "dato",
+        "valor": "Día y noche",
+        "etiqueta": "Respiración celular continua; fotosíntesis requiere luz",
+        "fuente": "Afiliación de Justine Karst en el artículo citado. https://www.nature.com/articles/s41559-023-01986-1. La fuente de fisiología vegetal citada describe respiración y fotosíntesis. El pin ubica Edmonton como afiliación de una autora de una revisión sobre redes micorrícicas, no un bosque donde se midió este proceso."
+      }
     },
     {
       "id": "scene_004",
