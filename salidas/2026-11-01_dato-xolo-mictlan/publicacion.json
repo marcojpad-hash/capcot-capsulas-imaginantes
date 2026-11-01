@@ -69,6 +69,22 @@
   "youtube_thumbnail": {
    "fuente": "primer frame mp4",
    "estado": "ok"
+  },
+  "tiktok": {
+   "cuenta": "@datosyociosidades",
+   "estado": "programado",
+   "programado_ui": "2026-11-01 04:00 GMT-5 (03:00 CDMX)",
+   "ai_generated_label": true,
+   "caption": "El perro que guía a los muertos 🐕💀 #xoloitzcuintle #diademuertos #perros #ciencia #sabiasque",
+   "verificado_ui": "una sola entrada en lista"
+  },
+  "facebook": {
+   "pagina": "Datos y ociosidades",
+   "formato": "Reels",
+   "estado": "programado",
+   "programado_ui": "2026-11-01 04:00 America/New_York (03:00 CDMX)",
+   "ai_label": false,
+   "verificado_ui": "una sola entrada en Programadas (puede mostrar En proceso)"
   }
  }
 }
