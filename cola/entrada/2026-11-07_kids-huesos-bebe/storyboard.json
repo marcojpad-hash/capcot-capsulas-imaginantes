@@ -98,7 +98,19 @@
       "source_ids": [
         "SRC-001"
       ],
-      "style_id": "crayones_infantiles"
+      "style_id": "crayones_infantiles",
+      "capa": {
+        "tipo": "mapa",
+        "titulo": "Rice University, Houston",
+        "puntos": [
+          {
+            "nombre": "Rice University, Houston",
+            "lat": 29.7174,
+            "lon": -95.4018
+          }
+        ],
+        "fuente": "OpenStax Anatomy & Physiology 2e, publicado por Rice University. OpenStax describe la fusión de huesos durante el desarrollo. El pin ubica Rice University, editora del recurso, no una población de estudio. Cartografía base: OpenStreetMap."
+      }
     },
     {
       "id": "scene_003",
@@ -113,7 +125,13 @@
       "source_ids": [
         "SRC-001"
       ],
-      "style_id": "crayones_infantiles"
+      "style_id": "crayones_infantiles",
+      "capa": {
+        "tipo": "dato",
+        "valor": "≈270–300 → 206",
+        "etiqueta": "Conteo aproximado de huesos al nacer y en la adultez",
+        "fuente": "OpenStax Anatomy & Physiology 2e, publicado por Rice University. https://openstax.org/books/anatomy-and-physiology-2e/pages/6-2-bone-classification. OpenStax describe la fusión de huesos durante el desarrollo. El pin ubica Rice University, editora del recurso, no una población de estudio."
+      }
     },
     {
       "id": "scene_004",
@@ -149,7 +167,7 @@
       "id": "scene_006",
       "arc": "cierre_historia",
       "duration_seconds": 10,
-      "narration": "Un matiz: el número exacto cambia según cómo se cuenten algunas piezas pequeñas. Lo importante no es la cifra, sino que los huesos se fusionan.",
+      "narration": "Un matiz: el número exacto cambia según cómo se cuenten algunas piezas pequeñas. Lo importante no es la cifra, sino que los huesos se fusionan. La fusión ocurre en distintas etapas del desarrollo.",
       "on_screen_text": "Qué sabemos",
       "visual_description": "Representación didáctica de ¿los bebés tienen más huesos?, secuencia causal clara y legible",
       "image_prompt": "child's wax crayon drawing on white paper, naive shapes, bright colors, visible crayon strokes, cheerful sun, vertical 9:16, no text, educational visual scene illustrating ¿los bebés tienen más huesos?, consistent visual continuity",
