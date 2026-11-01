@@ -256,5 +256,6 @@
     "Las imágenes deben identificarse como ilustraciones, nunca como el registro original.",
     "No generalizar un único evento a todos los reportes de rayo globular."
   ],
-  "thumbnail_source": "scene_001"
+  "thumbnail_source": "scene_001",
+  "slot_hora_cdmx": "19:00"
 }
