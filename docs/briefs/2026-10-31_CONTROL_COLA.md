@@ -486,3 +486,20 @@ Configurar en GitHub Actions los secretos:
 2. `GROK_WEBHOOK_TOKEN`: token vigente del mismo receptor.
 
 Después, repetir la entrega por paquete y verificar respuesta `accepted=true` y el recibo de Grok. No registrar los valores de los secretos en archivos, commits o logs.
+
+
+---
+
+# ADDENDUM 5 — DESPACHO POR LOTE
+
+**Corte:** 2026-11-01 · commit del workflow `63445e4face6d5b37d8f855143f6138a8c87e702`
+
+Se amplió `.github/workflows/capcot-grok-dispatch.yml` para que la ejecución manual admita:
+- Un ID individual, para entregar un solo paquete.
+- `all`, valor predeterminado, para recorrer todos los JSON de primer nivel de `cola/entrada/`.
+
+El nuevo flujo valida todos los JSON antes de intentar el envío y exige para cada paquete una respuesta HTTP 2xx, `accepted=true` y un `receipt_id` no vacío. Si un paquete no obtiene acuse verificable, la ejecución falla y deja identificado el paquete. No escribe estados de Grok ni simula recepción.
+
+**Estado de ejecución:** el cambio quedó guardado y releído desde GitHub. No se ha podido probar el envío por lote porque los secretos `GROK_WEBHOOK_URL` y `GROK_WEBHOOK_TOKEN` siguen siendo requisito previo. No se afirma que el workflow haya pasado una ejecución real con el nuevo código.
+
+**Siguiente acción única del propietario:** configurar ambos secretos en [GitHub Actions Secrets](https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/settings/secrets/actions). Después, ejecutar el workflow manualmente en la rama `feature/capcot-video-discovery-continuity`, dejando `project_id=all`. El resultado válido será un ACK y `receipt_id` por cada paquete.
