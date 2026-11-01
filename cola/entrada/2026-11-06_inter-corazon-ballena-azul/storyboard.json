@@ -98,7 +98,19 @@
       "source_ids": [
         "SRC-001"
       ],
-      "style_id": "dibujo_cientifico_scratchboard"
+      "style_id": "dibujo_cientifico_scratchboard",
+      "capa": {
+        "tipo": "mapa",
+        "titulo": "Monterey Bay, California",
+        "puntos": [
+          {
+            "nombre": "Monterey Bay, California",
+            "lat": 36.8,
+            "lon": -121.9
+          }
+        ],
+        "fuente": "Goldbogen et al. PNAS 2019; área de estudio de campo. Goldbogen et al. (2019) registraron ritmos de 4–8 latidos por minuto durante inmersiones, con mínimo de 2. El punto sitúa el contexto de trabajo en Monterey Bay; no representa distribución de la especie. Cartografía base: OpenStreetMap."
+      }
     },
     {
       "id": "scene_003",
@@ -113,7 +125,13 @@
       "source_ids": [
         "SRC-001"
       ],
-      "style_id": "dibujo_cientifico_scratchboard"
+      "style_id": "dibujo_cientifico_scratchboard",
+      "capa": {
+        "tipo": "dato",
+        "valor": "2–8 latidos/min",
+        "etiqueta": "Ritmo cardíaco durante inmersiones registrado en el ejemplar",
+        "fuente": "Goldbogen et al. PNAS 2019; área de estudio de campo. https://doi.org/10.1073/pnas.1914273116. Goldbogen et al. (2019) registraron ritmos de 4–8 latidos por minuto durante inmersiones, con mínimo de 2. El punto sitúa el contexto de trabajo en Monterey Bay; no representa distribución de la especie."
+      }
     },
     {
       "id": "scene_004",
