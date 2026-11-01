@@ -257,5 +257,6 @@
     "No generalizar un único evento a todos los reportes de rayo globular."
   ],
   "thumbnail_source": "scene_001",
-  "slot_hora_cdmx": "19:00"
+  "slot_hora_cdmx": "19:00",
+  "handoff_trigger_revision": 1
 }
