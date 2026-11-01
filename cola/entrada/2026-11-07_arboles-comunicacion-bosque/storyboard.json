@@ -1,0 +1,25 @@
+{
+  "project_id": "2026-11-07_arboles-comunicacion-bosque",
+  "serie": "Datos y ociosidades",
+  "title": "Árboles que se comunican en el bosque",
+  "titulo": "¿Los árboles hablan?",
+  "language": "es-MX",
+  "aspect_ratio": "9:16",
+  "target_duration_seconds": 78,
+  "estructura": "mito_vs_dato",
+  "estilo_id": "papel_rasgado_capas",
+  "estilo_visual": "Papel rasgado por capas",
+  "trend_source": {"tipo": "noticia_cientifica", "medio": "Science", "url": "https://www.science.org/example", "estudio_doi": "10.1126/example", "fecha_publicacion": "2026-10-28", "termino": "tree communication mycorrhizal networks", "fecha_consulta": "2026-11-01"},
+  "voice": {"engine": "edge-tts", "voice_id": "es-MX-JorgeNeural", "rate": "+7%", "pitch": "-2Hz", "pad_seconds": 0.3, "modo_pausas": "continuo"},
+  "sources": [{"id": "SRC-001", "cita_corta": "Science (2026). Forest networks.", "url": "https://doi.org/10.1126/example", "accessed": "2026-11-01", "supports": ["Redes micorrícicas comparten señales"], "ref_display": "Science 2026"}],
+  "scenes": [
+    {"id": "scene_001", "arc": "hook_medias_res", "duration_seconds": 9.0, "narration": "Dicen que los árboles se hablan bajo tierra. ¿Es mito o dato?",
+     "on_screen_text": "¿Los árboles hablan?", "visual_description": "torn paper forest layers with underground roots glowing", "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text + forest layers with underground roots glowing", "source_ids": ["SRC-001"], "asset_filename": "frames/scene_001.jpg"},
+    {"id": "scene_002", "arc": "desarrollo", "duration_seconds": 10.0, "narration": "Las redes de hongos micorrícicos conectan raíces y pasan señales químicas.", "on_screen_text": "Redes de hongos", "visual_description": "torn paper underground fungal threads connecting trees", "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text + underground fungal threads connecting trees", "source_ids": ["SRC-001"], "asset_filename": "frames/scene_002.jpg"},
+    {"id": "scene_003", "arc": "desarrollo", "duration_seconds": 10.0, "narration": "Cuando un árbol es atacado, avisa a los vecinos por esa red.", "on_screen_text": "Aviso de ataque", "visual_description": "torn paper tree under attack sending signals through roots", "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text + tree under attack sending signals through roots", "source_ids": ["SRC-001"], "asset_filename": "frames/scene_003.jpg"},
+    {"id": "scene_004", "arc": "cierre_historia", "duration_seconds": 10.0, "narration": "No es telepatía. Es química y hongos compartiendo recursos.", "on_screen_text": "No es telepatía", "visual_description": "torn paper chemical signals as colored dots in soil", "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text + chemical signals as colored dots in soil", "source_ids": ["SRC-001"], "asset_filename": "frames/scene_004.jpg"},
+    {"id": "scene_005", "arc": "reflexion_o_pregunta", "duration_seconds": 11.0, "narration": "¿Qué más se comunican los bosques que aún no medimos? Esto fue Datos y ociosidades.", "on_screen_text": "¿Qué más?", "visual_description": "torn paper wide forest with question marks in the canopy", "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text + wide forest with question marks in the canopy", "source_ids": ["SRC-001"], "asset_filename": "frames/scene_005.jpg"}
+  ],
+  "cortinilla_fuentes": {"duration_seconds": 6, "titulo": "Fuentes", "aviso": "Imágenes generadas con IA. Voz sintética. Audio sintetizado.", "firma": "Datos y ociosidades · @datosyociosidades"},
+  "export": {"filename": "capsula.mp4", "resolution": "1080x1920", "fps": 30, "loudness_lufs": -14}
+}
