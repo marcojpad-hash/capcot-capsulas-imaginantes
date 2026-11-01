@@ -1,0 +1,260 @@
+{
+  "_schema": "CAPCOT_STORYBOARD_TEXT_V2",
+  "project_id": "2026-11-05_inter-rayo-globular",
+  "serie": "Datos y ociosidades",
+  "title": "El rayo globular: una esfera fugaz",
+  "titulo": "¿Un rayo que flota?",
+  "language": "es-MX",
+  "aspect_ratio": "9:16",
+  "target_duration_seconds": 84,
+  "estructura": "pregunta",
+  "audience": "Público general",
+  "occasion": "Cápsula vertical de divulgación",
+  "resumen": "Un registro instrumental excepcional captó un destello esférico asociado a un rayo nube-tierra. El espectro mostró emisiones de elementos del suelo, pero un caso no resuelve el mecanismo general del rayo globular.",
+  "trend_source": {
+    "termino": "El rayo globular: una esfera fugaz",
+    "fecha_publicacion": "",
+    "url": "https://doi.org/10.1103/PhysRevLett.112.035001"
+  },
+  "editorial_status": "PROPUESTA_PENDIENTE_DE_GROK",
+  "arco": {
+    "hook_medias_res": "¿Puede un relámpago convertirse en una esfera luminosa que se desplaza? Existe un registro instrumental excepcional, pero no una explicación definitiva.",
+    "desarrollo": "En julio de 2012, durante una tormenta en la meseta Qinghai, China, dos cámaras con espectrógrafos registraron un fenómeno luminoso después de una descarga nube-tierra. El equipo no estaba buscando una esfera: estudiaba rayos ordinarios. La oportunidad fue accidental. El objeto apareció a unos novecientos metros de los instrumentos y se desplazó horizontalmente antes de desaparecer.",
+    "cierre_historia": "El análisis espectral encontró señales de elementos presentes en el suelo durante el episodio luminoso. Eso es compatible con algunas hipótesis que involucran material del terreno, pero no demuestra que todos los rayos globulares se formen de esa manera. La observación fue extraordinaria precisamente porque es difícil capturar el fenómeno con instrumentos.",
+    "reflexion_o_pregunta": "Un caso medido no equivale a una teoría resuelta. El rayo globular sigue siendo un fenómeno raro y su mecanismo continúa en investigación. Esto fue Datos y ociosidades."
+  },
+  "estilo_id": "pixel_art",
+  "estilo_visual": "Pixel art",
+  "visual_identity": {
+    "style_id": "pixel_art",
+    "style_name": "Pixel art",
+    "prompt_base": "16-bit pixel art scene, limited retro palette, crisp pixels, side view video game style, dithering, vertical 9:16, no text",
+    "palette": "Paleta del catálogo",
+    "lighting": "Iluminación coherente con el prompt base; contraste legible y estable entre escenas",
+    "texture": "Materialidad y acabado constantes según catálogo",
+    "composition": "Vertical 9:16; un sujeto/acción principal por plano; continuidad de escala y dirección",
+    "negative_prompt": "Sin texto incrustado, logotipos, marcas de agua, fotografías añadidas ni visualizaciones que aparenten ser registros reales del fenómeno",
+    "reference_assets": [],
+    "seed": null,
+    "seed_policy": "Mantener el mismo lenguaje visual; variar encuadre sin cambiar materialidad"
+  },
+  "typography_identity": {
+    "font_family": "DejaVu Sans",
+    "font_weight": "700 para gancho; 400 para subtítulos",
+    "title_style": "Gancho de máximo seis palabras desde frame 0",
+    "subtitle_style": "Bloques de máximo tres palabras; zona segura inferior",
+    "hierarchy": "Gancho > dato/etiqueta > subtítulos",
+    "animation": "Un movimiento por plano; tipografía en postproducción"
+  },
+  "voice": {
+    "engine": "edge-tts",
+    "voice_id": "es-MX-JorgeNeural",
+    "language": "es-MX",
+    "rate": "+7%",
+    "pitch": "-2Hz",
+    "pad_seconds": 0.3,
+    "modo_pausas": "continuo"
+  },
+  "sources": [
+    {
+      "id": "SRC-001",
+      "cita_corta": "Cen, Yuan y Xue. Observation of the Optical and Spectral Characteristics of Ball Lightning. Physical Review Letters 112, 035001 (2014).",
+      "url": "https://doi.org/10.1103/PhysRevLett.112.035001",
+      "doi": "10.1103/PhysRevLett.112.035001",
+      "accessed": "2026-11-01",
+      "publication_date": "2014-01-17",
+      "supports": [
+        "Registro óptico y espectral de un episodio de rayo globular observado tras una descarga nube-tierra en la meseta Qinghai en 2012.",
+        "El análisis espectral reportó radiación de elementos del suelo durante el episodio; el caso no establece un mecanismo universal."
+      ],
+      "verification_status": "VERIFICADO_RESOLVEDOR"
+    },
+    {
+      "id": "SRC-002",
+      "cita_corta": "APS Physics. First Spectrum of Ball Lightning (2014).",
+      "url": "https://physics.aps.org/articles/v7/5",
+      "doi": null,
+      "accessed": "2026-11-01",
+      "publication_date": "2014-01-17",
+      "supports": [
+        "Contexto del registro y limitaciones de una observación instrumental singular."
+      ],
+      "verification_status": "VERIFICADO"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_001",
+      "arc": "hook_medias_res",
+      "duration_seconds": 10,
+      "narration": "Una esfera luminosa aparece después de un relámpago, se mueve y desaparece. ¿Es un rayo globular? El fenómeno existe en reportes desde hace siglos, pero capturarlo con instrumentos es extraordinariamente difícil.",
+      "on_screen_text": "¿Un rayo que flota?",
+      "visual_description": "Cielo de tormenta y una esfera luminosa pequeña, ilustración no fotorrealista; no presentarla como fotografía documental.",
+      "image_prompt": "16-bit pixel art scene, limited retro palette, crisp pixels, side view video game style, dithering, vertical 9:16, no text, pixel-art storm sky, a small luminous sphere near a lightning channel, single clear subject, no text",
+      "ambiente": "Viento grave y tormenta lejana",
+      "sfx": [
+        "Trueno breve amortiguado"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "pixel_art"
+    },
+    {
+      "id": "scene_002",
+      "arc": "desarrollo",
+      "duration_seconds": 12,
+      "narration": "En julio de 2012, en la meseta Qinghai de China, dos cámaras con espectrógrafos observaban descargas eléctricas comunes. De pronto registraron una esfera luminosa asociada a un rayo nube-tierra.",
+      "on_screen_text": "Qinghai, China · 2012",
+      "visual_description": "Mapa sobrio del punto de observación documentado en la meseta Qinghai; pin único, sin dibujar una trayectoria.",
+      "image_prompt": "16-bit pixel art scene, limited retro palette, crisp pixels, side view video game style, dithering, vertical 9:16, no text, map scene with Qinghai Plateau terrain and one precise observation marker, clean educational cartography",
+      "ambiente": "Tormenta distante",
+      "sfx": [
+        "Pulso de radar suave"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "pixel_art",
+      "capa": {
+        "tipo": "mapa",
+        "titulo": "Punto de observación del registro de 2012",
+        "puntos": [
+          {
+            "nombre": "Sitio de observación, meseta Qinghai",
+            "lat": 37.013473,
+            "lon": 101.62008
+          }
+        ],
+        "fuente": "Coordenadas del sitio descritas en el artículo de Cen, Yuan y Xue (2014), DOI 10.1103/PhysRevLett.112.035001. El pin localiza el sitio de instrumentos; no representa una distribución mundial del fenómeno ni la posición exacta del destello."
+      }
+    },
+    {
+      "id": "scene_003",
+      "arc": "desarrollo",
+      "duration_seconds": 12,
+      "narration": "El destello ocurrió a unos novecientos metros de los instrumentos. El equipo pudo estudiar su luz y compararla con la descarga que lo originó. No fue una recreación de laboratorio: fue una observación accidental en campo.",
+      "on_screen_text": "A unos 0.9 km",
+      "visual_description": "Esquema en corte: cámaras en primer plano y punto luminoso distante; escala esquemática y no una reconstrucción literal.",
+      "image_prompt": "16-bit pixel art scene, limited retro palette, crisp pixels, side view video game style, dithering, vertical 9:16, no text, pixel art scientific diagram of two optical instruments observing a distant luminous event across a plateau, clear distance cue",
+      "ambiente": "Zumbido instrumental tenue",
+      "sfx": [
+        "Clic de obturador"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "pixel_art",
+      "capa": {
+        "tipo": "dato",
+        "valor": "0.9 km",
+        "etiqueta": "Distancia aproximada entre el destello y los instrumentos",
+        "fuente": "Cen, Yuan y Xue (2014), Physical Review Letters 112, 035001; descripción del sitio de observación."
+      }
+    },
+    {
+      "id": "scene_004",
+      "arc": "desarrollo",
+      "duration_seconds": 12,
+      "narration": "El espectro mostró emisiones de elementos presentes en el suelo durante el episodio luminoso. El resultado es compatible con hipótesis donde interviene material del terreno, pero no identifica por sí solo una explicación completa.",
+      "on_screen_text": "Señales de elementos del suelo",
+      "visual_description": "Espectro ilustrado con líneas discretas y etiquetas añadidas en postproducción; no inventar longitudes de onda ni intensidades.",
+      "image_prompt": "16-bit pixel art scene, limited retro palette, crisp pixels, side view video game style, dithering, vertical 9:16, no text, pixel art simplified scientific spectrum with a few bright spectral lines, abstract and clearly illustrative",
+      "ambiente": "Tono electrónico bajo",
+      "sfx": [
+        "Destello breve"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "pixel_art"
+    },
+    {
+      "id": "scene_005",
+      "arc": "desarrollo",
+      "duration_seconds": 12,
+      "narration": "La rareza del fenómeno impone un límite importante: una observación bien medida puede aportar pistas, pero no permite afirmar que todos los episodios tengan el mismo origen o comportamiento.",
+      "on_screen_text": "Un caso no es una teoría",
+      "visual_description": "Un registro instrumental aislado frente a varias siluetas hipotéticas difuminadas; distinguir evidencia de hipótesis.",
+      "image_prompt": "16-bit pixel art scene, limited retro palette, crisp pixels, side view video game style, dithering, vertical 9:16, no text, pixel art visual metaphor contrasting one measured observation with several unresolved hypotheses",
+      "ambiente": "La cama sonora se reduce",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "pixel_art"
+    },
+    {
+      "id": "scene_006",
+      "arc": "cierre_historia",
+      "duration_seconds": 10,
+      "narration": "Lo sólido es el registro óptico y espectral de un episodio. La composición observada aporta pistas sobre el material involucrado; el mecanismo general del rayo globular sigue abierto.",
+      "on_screen_text": "Qué sabemos y qué no",
+      "visual_description": "Instrumentos y destello separados por un marco de evidencia; sin convertir la hipótesis en certeza.",
+      "image_prompt": "16-bit pixel art scene, limited retro palette, crisp pixels, side view video game style, dithering, vertical 9:16, no text, pixel art observatory instruments beside a fading luminous sphere, restrained scientific ending",
+      "ambiente": "Viento y silencio gradual",
+      "sfx": [
+        "Descenso tonal"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "pixel_art"
+    },
+    {
+      "id": "scene_007",
+      "arc": "reflexion_o_pregunta",
+      "duration_seconds": 10,
+      "narration": "Un fenómeno puede estar documentado sin que su explicación esté cerrada. El rayo globular tiene una observación instrumental excepcional, no una teoría definitiva. ¿Qué misterio natural te gustaría ver medido? Esto fue Datos y ociosidades.",
+      "on_screen_text": "Medir no es resolver",
+      "visual_description": "La esfera se desvanece sobre el paisaje de meseta; cierre limpio para la firma en postproducción.",
+      "image_prompt": "16-bit pixel art scene, limited retro palette, crisp pixels, side view video game style, dithering, vertical 9:16, no text, pixel art luminous orb fading over a quiet high plateau at night, single focal point",
+      "ambiente": "Cierre musical breve",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "pixel_art"
+    }
+  ],
+  "cortinilla_fuentes": {
+    "duration_seconds": 6,
+    "titulo": "Fuentes",
+    "aviso": "Divulgación científica. Las imágenes generadas son ilustrativas, no registros instrumentales del fenómeno.",
+    "firma": "Datos y ociosidades",
+    "source_ids": [
+      "SRC-001",
+      "SRC-002"
+    ]
+  },
+  "audio": {
+    "music_asset": null,
+    "music_plan": "Cama sonora discreta; selección y licencia pendientes de producción por Grok",
+    "music_license": null
+  },
+  "export": {
+    "resolution": "1080x1920",
+    "fps": 30,
+    "render_status": "NOT_GENERATED"
+  },
+  "publicacion": {
+    "status": "PENDIENTE_DECISION_GROK",
+    "platforms": [
+      "YouTube Shorts",
+      "TikTok",
+      "Facebook Reels"
+    ],
+    "note": "No publicar ni programar desde preproducción textual."
+  },
+  "estado": "PENDIENTE_REVISION_GROK",
+  "production_mode": "storyboard_only",
+  "validation_notes": [],
+  "linea_tematica_provisional": "Ciencia y naturaleza",
+  "approved_assets": [],
+  "risk_notes": [
+    "No afirmar que el espectro demuestra definitivamente una teoría de formación.",
+    "Las imágenes deben identificarse como ilustraciones, nunca como el registro original.",
+    "No generalizar un único evento a todos los reportes de rayo globular."
+  ],
+  "thumbnail_source": "scene_001"
+}
