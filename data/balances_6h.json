@@ -1107,5 +1107,60 @@
    ]
   ],
   "nota_flujo": "Flujo casi plano en 6 h: YT +183 vistas, +2 likes, 0 subs (63). Monarca empujó por Día de Muertos; Mosquito arrancó mejor que Corneja/Corales. Estancados: Titanoboa, ajolotes, anfibio, Templo, yema y casi todo el catálogo viejo (0–1). Corneja solo 6 vistas en 13 h. TT perfil: 15 seguidores (=), likes 531→544."
+ },
+ {
+  "hora_cdmx": "2026-11-01T08:02-06:00",
+  "base_youtube": "2026-10-31T20:09",
+  "base_tiktok": "2026-10-31T20:09",
+  "youtube_totales": {
+   "view": 24534,
+   "like": 824,
+   "comment": 24
+  },
+  "suscriptores": 63,
+  "shorts_publicos": 33,
+  "delta_youtube": {
+   "view": 686,
+   "like": 24,
+   "comment": 0,
+   "suscriptores": 0
+  },
+  "tiktok_totales": null,
+  "seguidores_tiktok": 17,
+  "likes_perfil_tiktok": 554,
+  "videos_tiktok": 35,
+  "delta_tiktok": {
+   "seguidores": 2,
+   "likes_perfil": 10,
+   "videos": 2,
+   "nota": "Solo perfil público (vistas por video no disponibles sin Studio)."
+  },
+  "ranking_crecimiento": [
+   [
+    "YT Xoloitzcuintle (nuevo 03:00)",
+    249
+   ],
+   [
+    "YT Mariposas monarca",
+    155
+   ],
+   [
+    "YT Kromdraai",
+    128
+   ],
+   [
+    "YT Mosquito",
+    66
+   ],
+   [
+    "YT Corales",
+    47
+   ],
+   [
+    "YT Pulpo (nuevo 07:00)",
+    16
+   ]
+  ],
+  "nota_flujo": "12 h nocturnas (20:09→08:02, sin corte de 02:00): YT +686 vistas, +24 likes, 0 subs (63). El xolo de madrugada fue el mejor arranque reciente (249 en 5 h) y monarca sigue empujando por Muertos; Kromdraai despertó (5→133). Estancados: corneja (10 vistas), Voyager (27), pardelas/jet lag 7 en 8.5 h, y todo el catálogo viejo en 0–2. TT perfil: 15→17 seguidores, likes 544→554."
  }
 ]
