@@ -115,3 +115,22 @@ La inspección de los 38 storyboard JSON que permanecían en `cola/entrada/` enc
 
 Los PASS narrativos que el auditor reportó para Xolo y tiburón no se promovieron: sus JSON no contienen los siete checks ni el registro `narrative_qa`, y sus paquetes siguen teniendo fallos estructurales/administrativos. Xolo permanece en `salidas/`, no en cola. El reingreso requiere completar `narrative_contract`, revisión independiente registrada y validador estructural correcto.
 
+
+
+## 8. Compuerta narrativa implementada en documentación y validador
+
+Cambios posteriores a la auditoría:
+
+- Commit `4f13d5a`: plantilla `storyboard_vertical.template.json` incorpora `narrative_contract` con seis campos: central_question, promise, stakes, scientific_turn, evidence_limit y payoff.
+- Commit `40f1f95`: QA en frío oculta también narrative_contract para evitar sesgo del revisor.
+- Commit `31d936c`: receta exige contrato narrativo antes de escribir escenas.
+- Commit `18577b7`: Plan Maestro exige el contrato narrativo.
+- Commit `0f65ccd`: contrato operativo explicita que el revisor no ve narrative_contract.
+- Commit `45b3a4f`: validador exige narrative_qa PASS, score >=85, review_basis exacto, siete checks true, flags vacíos y reviewer_role auditor_capcot_independiente.
+- Commit `c5b0c2d`: validador exige los seis campos de narrative_contract no vacíos.
+- Commit `65fd938` y `491113d`: pruebas unitarias para contrato narrativo y QA independiente.
+- Commit `3795f40`: cuarentena masiva de los paquetes sin PASS; el selector de dispatch queda sin storyboard en cola.
+
+**Pruebas:** ejecuté cuatro pruebas aisladas de la lógica de los dos helpers en Python; 4/4 pasaron. No se ejecutó el conjunto de tests del repositorio ni el validador completo porque no había checkout local y el intento de clonado falló por resolución DNS. La verificación de GitHub confirma los contenidos y commits, no una ejecución de CI.
+
+**Estado posterior:** cero storyboard JSON en `cola/entrada/`; 33 project_id y 116 archivos conservados en `cola/bloqueados/`. El siguiente reingreso debe ser borrador en `proyectos/`, QA independiente registrado y promoción por el auditor a `cola/entrada/YYYY-MM-DD_slug.json`. El investigador no crea la entrada de cola.
