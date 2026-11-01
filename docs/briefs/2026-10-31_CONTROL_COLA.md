@@ -396,3 +396,60 @@ La recepción, decisión, producción audiovisual, QA y programación de Machu q
 1. **Imaginantes:** reconciliar estados de hipo, miel y bioluminiscencia; adjuntar QA y evidencia de medios/publicación; registrar los estados conforme a `docs/GROK_STATUS_CONTRACT.md`.
 2. **Imaginantes:** leer el nuevo JSON de Machu, registrar recepción y decisión; si lo selecciona, producir y ejecutar QA. No publicar sin autorización/QA conforme al contrato.
 3. **ChatGPT:** mantener el paquete Machu como preproducción textual; no crear estado de Grok, no generar medios, no programar ni publicar.
+
+
+---
+
+# ADDENDUM 3 — CIERRE DE COBERTURA 5–7 NOVIEMBRE
+
+**Corte:** 2026-11-01 · rama `feature/capcot-video-discovery-continuity`
+
+## 1. Entrega material completada
+
+Se completaron los 12 slots de contenido de las 07:00, 13:30, 17:00 y 19:00 de los días 5, 6 y 7 de noviembre. Cada paquete tiene ahora un JSON de primer nivel en `cola/entrada/<project_id>.json`, que es la forma exigida por `docs/GUIA_MODELO_EXTERNO.md` y la ruta que espera el despachador.
+
+| Fecha | 07:00 | 13:30 | 17:00 | 19:00 |
+|---|---|---|---|---|
+| 5-nov | Venus | Palomitas | Árboles | Rayo globular |
+| 6-nov | Corazón de ballena azul | Aguacate | Ranas congeladas | Dunas cantantes |
+| 7-nov | Huesos al nacer | Efecto Mpemba | Sueño de pulpos | Nubes |
+
+Paquetes nuevos que faltaban:
+- `cola/entrada/2026-11-05_inter-rayo-globular.json`
+- `cola/entrada/2026-11-06_inter-arena-cantante.json`
+
+Los diez paquetes que ya existían en carpetas históricas fueron corregidos y expuestos también en JSON de primer nivel. Las carpetas anteriores se conservan como historial; el despachador debe tomar los JSON de primer nivel, no duplicar los storyboards anidados.
+
+## 2. Correcciones de contenido y contrato
+
+- Venus cambió de `ukiyo_e` —prohibido en la parrilla— a `constructivista_ruso`, con prompt base canónico aplicado a las siete escenas.
+- Palomitas: DOI y referencia bibliográfica corregidos a Virot y Ponomarenko (2015), DOI `10.1098/rsif.2014.1247`.
+- Sueño de pulpos: fuente actualizada al estudio de Nature 2023 sobre sueño activo; el guion mantiene que los cambios de piel no demuestran contenido onírico.
+- Mpemba, huesos al nacer y pulpos: narración ampliada al mínimo del validador.
+- Nubes: ID corregido a `2026-11-07_inter-nubes-pesan` y slot alineado a 19:00 CDMX; se conserva la carpeta histórica con su nombre anterior.
+- Los 12 paquetes incluyen capa de mapa y capa de dato con fuentes y notas de precisión. En los temas no geográficos, algunos mapas ubican explícitamente la institución fuente o el contexto regional, no la distribución del fenómeno; esa distinción está escrita en la propia capa.
+- Se añadieron los tres briefs diarios `2026-11-05_RADAR_CAPCOT.md`, `2026-11-06_RADAR_CAPCOT.md` y `2026-11-07_RADAR_CAPCOT.md`. El corte Trends usado es 1-nov; no se extrapola como si fuera una tendencia futura.
+
+## 3. Verificación reproducida desde GitHub
+
+Se releyeron los 12 JSON de primer nivel y se comprobó:
+- JSON parseable.
+- 7 escenas por paquete.
+- 170–235 palabras por paquete.
+- 84 segundos incluyendo cortinilla de 6 segundos.
+- Los cuatro arcos requeridos y cierre hablado.
+- Voz `es-MX-JorgeNeural`, rate `+7%`, pitch `-2Hz`.
+- Todos los prompts comienzan con el `prompt_base` literal del catálogo y el estilo existe.
+- Mapa con punto y fuente; capa de dato con fuente.
+- `approved_assets=[]`, `render_status=NOT_GENERATED` y publicación pendiente de Grok.
+
+**Resultado de esta comprobación estructural: 12/12 PASS.** Es una verificación estática reproducida contra los archivos releídos desde GitHub; no se afirma que se haya ejecutado localmente `scripts/validar_storyboard.py --check-doi`, ni que Grok haya recibido, seleccionado o producido los paquetes.
+
+## 4. Límites y siguientes responsables
+
+- Los slots 23:30 siguen siendo `TBD-news` y se investigan el mismo día con una fuente primaria de ≤48 horas. No se preescribieron noticias futuras.
+- No se modificó `data/horario_semana_2026-11-01_07.json`.
+- No se crearon estados de Grok ni se afirmó recepción. Imaginantes debe registrar el ACK/decisión por cada JSON y continuar producción, QA y publicación según contrato.
+- El workflow de despacho ya tenía fallos recurrentes documentados en el addendum anterior. La presencia de JSON canónicos resuelve el desajuste de ruta de los nuevos paquetes, pero no demuestra que el workflow haya sido reparado ni que el envío haya llegado. El siguiente paso técnico es reparar y probar el despacho y verificar los recibos de Grok.
+
+**Resultado:** los 12 paquetes textuales de los slots 07:00–19:00 del 5–7 de noviembre están creados y estructuralmente comprobados en la cola canónica. No se generaron medios ni se publicaron cápsulas.
