@@ -134,3 +134,21 @@ Cambios posteriores a la auditoría:
 **Pruebas:** ejecuté cuatro pruebas aisladas de la lógica de los dos helpers en Python; 4/4 pasaron. No se ejecutó el conjunto de tests del repositorio ni el validador completo porque no había checkout local y el intento de clonado falló por resolución DNS. La verificación de GitHub confirma los contenidos y commits, no una ejecución de CI.
 
 **Estado posterior:** cero storyboard JSON en `cola/entrada/`; 33 project_id y 116 archivos conservados en `cola/bloqueados/`. El siguiente reingreso debe ser borrador en `proyectos/`, QA independiente registrado y promoción por el auditor a `cola/entrada/YYYY-MM-DD_slug.json`. El investigador no crea la entrada de cola.
+
+
+## 9. Nuevo borrador detectado después de la auditoría
+
+**Corte:** 2026-11-01, 14:35 CDMX.
+
+El investigador dejó un nuevo borrador en `proyectos/2026-11-01_red-electrica-pulso-minuto/storyboard.json` y creó `docs/briefs/2026-11-01_RADAR_CAPCOT.md`. El run del investigador sigue `in_progress`; estos archivos están verificados por lectura de vuelta, pero no se declara completada la ejecución.
+
+**Comprobaciones del borrador:**
+- 8 escenas, 190 palabras, 78 s de escenas + 6 s de cortinilla = 84 s.
+- `narrative_contract` contiene los seis campos requeridos.
+- Mapa y capas de datos presentes; no hay `asset_filename`; `approved_assets=[]`.
+- `export.render_status=NOT_GENERATED`; `publicacion.status=PENDIENTE_DECISION_GROK`.
+- No contiene `narrative_qa`; por tanto sigue siendo borrador y no se promueve a cola.
+- La fuente Nature Energy/DOI está marcada PENDIENTE de validación directa; el comunicado institucional de Forschungszentrum Jülich y la ficha de coordenadas sí aparecen como verificados. No se presenta el DOI como validado.
+- No existe `cola/estado/2026-11-01_red-electrica-pulso-minuto.json`: recepción Grok no confirmada.
+
+El borrador abre con la anomalía de frecuencia ya en curso y su contrato narrativo explicita pregunta, promesa, stakes, giro, límite y payoff. La lectura narrativa independiente sigue pendiente del auditor; no se le asigna PASS desde esta operación. El slot de dato del día 23:30 sigue sin paquete confirmado.
