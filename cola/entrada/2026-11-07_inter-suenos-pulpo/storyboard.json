@@ -58,13 +58,14 @@
   "sources": [
     {
       "id": "SRC-001",
-      "cita_corta": "Medeiros et al. 2021, iScience",
-      "url": "https://doi.org/10.1016/j.isci.2021.102223",
-      "doi": "10.1016/j.isci.2021.102223",
-      "accessed": "2026-10-31",
-      "publication_date": "",
+      "cita_corta": "Shigeno et al. / Pophale et al. Active sleep in octopuses, Nature (2023), Wake-like skin patterning and neural activity during octopus sleep.",
+      "url": "https://www.nature.com/articles/s41586-023-06203-4",
+      "doi": "10.1038/s41586-023-06203-4",
+      "accessed": "2026-11-01",
+      "publication_date": "2023-07-05",
       "supports": [
-        "Octopus insularis presenta sueño quieto y activo; no prueba contenido onírico."
+        "Pulpos alternan sueño quieto y episodios de sueño activo con cambios rápidos de patrón y textura de piel.",
+        "El patrón de piel durante el sueño activo se parece a patrones observados durante la vigilia; el estudio no demuestra contenido onírico."
       ],
       "verification_status": "VERIFICADO_RESOLVEDOR"
     }
@@ -98,7 +99,19 @@
       "source_ids": [
         "SRC-001"
       ],
-      "style_id": "amigurumi"
+      "style_id": "amigurumi",
+      "capa": {
+        "tipo": "mapa",
+        "titulo": "Okinawa Institute of Science and Technology",
+        "puntos": [
+          {
+            "nombre": "Okinawa Institute of Science and Technology",
+            "lat": 26.459,
+            "lon": 127.827
+          }
+        ],
+        "fuente": "Contexto de investigación de sueño activo en cefalópodos. El estudio de Nature 2023 describe dos estados de sueño en pulpos. El pin ubica OIST como centro de investigación en Okinawa; no es la distribución de Octopus insularis. Cartografía base: OpenStreetMap."
+      }
     },
     {
       "id": "scene_003",
@@ -113,7 +126,13 @@
       "source_ids": [
         "SRC-001"
       ],
-      "style_id": "amigurumi"
+      "style_id": "amigurumi",
+      "capa": {
+        "tipo": "dato",
+        "valor": "2 estados",
+        "etiqueta": "Sueño quieto y sueño activo descritos en pulpos",
+        "fuente": "Contexto de investigación de sueño activo en cefalópodos. https://www.nature.com/articles/s41586-023-06203-4. El estudio de Nature 2023 describe dos estados de sueño en pulpos. El pin ubica OIST como centro de investigación en Okinawa; no es la distribución de Octopus insularis."
+      }
     },
     {
       "id": "scene_004",
@@ -149,7 +168,7 @@
       "id": "scene_006",
       "arc": "cierre_historia",
       "duration_seconds": 10,
-      "narration": "El límite: estos estados se describieron en Octopus insularis. Ver cambios en la piel no basta para saber si existe algo parecido a un sueño humano.",
+      "narration": "El límite: estos estados se describieron en Octopus insularis. Ver cambios en la piel no basta para saber si existe algo parecido a un sueño humano. La conducta observada no revela recuerdos.",
       "on_screen_text": "Qué sabemos",
       "visual_description": "Ilustración educativa secuencial sobre ¿sueñan los pulpos?",
       "image_prompt": "miniature crochet amigurumi characters, macro photography, shallow depth of field, soft natural window light turning to warm firelight, handmade yarn texture, cozy diorama props, vertical 9:16, no text, educational visual scene illustrating ¿sueñan los pulpos?, consistent continuity",
