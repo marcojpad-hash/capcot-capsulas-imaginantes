@@ -18,3 +18,6 @@ TikTok Studio: 4 slots Nov1 con capsula_v4 (viejos borrados, nuevo 1 vez c/u, AI
 
 ## Reemplazo v4 TT Nov2 (31-oct ~19:35 CDMX)
 TikTok Studio: 4 slots Nov2 con capsula_v4 (viejos borrados, nuevo 1 vez c/u, AI label ON): camarón mantis 8:00 AM (~1:29), pan duro 2:30 PM (~1:29), murciélagos 6:00 PM (~1:33), sequías 8:00 PM (~1:28) (GMT-5). FB Nov1–2 y TT/FB Nov3 siguen pendientes.
+
+## Reemplazo v4 TT Nov3 (31-oct ~19:40 CDMX)
+TikTok Studio: 2 slots Nov3 con capsula_v4 (viejos borrados, AI label ON): juno choque proa 6:00 PM (~1:32), SmartPE edición plantas 8:00 PM (GMT-5). **Los 10 slots TT v4 (Nov1–3) hechos.** FB Nov1–3 (10 slots) siguen pendientes (`fb_estado: pendiente_ui_reemplazo_v4`).
