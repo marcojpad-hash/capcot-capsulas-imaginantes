@@ -115,6 +115,18 @@
         "Coordenadas del centro de población de Michigan en el Censo 2020; referencia cartográfica, no ubicación de hospitales."
       ],
       "verification_status": "VERIFICADO_FUENTE_OFICIAL"
+    },
+    {
+      "id": "SRC-005",
+      "cita_corta": "National Institute of Standards and Technology. Daylight Saving Time Rules.",
+      "url": "https://www.nist.gov/pml/time-and-frequency-division/popular-links/daylight-saving-time-dst",
+      "doi": null,
+      "accessed": "2026-11-01",
+      "publication_date": null,
+      "supports": [
+        "En 2026, el horario de verano en Estados Unidos terminó el 1 de noviembre a las 2:00 a. m.; el reloj retrocedió a la 1:00 a. m. en las regiones que observan DST."
+      ],
+      "verification_status": "VERIFICADO_FUENTE_OFICIAL"
     }
   ],
   "scenes": [
@@ -131,8 +143,7 @@
         "tic-tac que se repite"
       ],
       "source_ids": [
-        "SRC-002",
-        "SRC-003"
+        "SRC-005"
       ],
       "style_id": "art_deco_poster",
       "dramatic_beat": "El reloj acaba de retroceder una hora durante la madrugada del 1 de noviembre.",
@@ -146,7 +157,7 @@
       "id": "scene_002",
       "arc": "desarrollo",
       "duration_seconds": 10,
-      "narration": "Hoy Estados Unidos y Canadá atrasan sus relojes. En Ciudad de México y casi todo el país no cambia la hora; la excepción es la franja fronteriza norte.",
+      "narration": "Hoy gran parte de Estados Unidos y Canadá atrasan sus relojes. En Ciudad de México y casi todo el país no cambia la hora; la excepción es la franja fronteriza norte.",
       "on_screen_text": "México: excepción fronteriza",
       "visual_description": "Mapa editorial de Norteamérica: Estados Unidos y Canadá resaltados; México neutro y solo la franja fronteriza norte marcada como excepción estacional.",
       "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text. Mapa editorial de Norteamérica: Estados Unidos y Canadá resaltados; México neutro y solo la franja fronteriza norte marcada como excepción estacional. Sin texto dentro de la imagen.",
@@ -156,7 +167,8 @@
       ],
       "source_ids": [
         "SRC-002",
-        "SRC-003"
+        "SRC-003",
+        "SRC-004"
       ],
       "style_id": "art_deco_poster",
       "dramatic_beat": "El reloj retrocedió donde rige el horario estacional; ahora distinguimos esa región de México.",
