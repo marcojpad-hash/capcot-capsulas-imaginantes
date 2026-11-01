@@ -30,6 +30,45 @@ def check_doi(doi):
 def words(text):
     return re.findall(r"[A-Za-zÁÉÍÓÚÜÑáéíóúüñ0-9]+(?:['’.-][A-Za-zÁÉÍÓÚÜÑáéíóúüñ0-9]+)*", text or "")
 
+NARRATIVE_QA_CHECKS = (
+    "pregunta_central_reconstruible",
+    "apertura_in_medias_res",
+    "progresion_por_escena",
+    "transiciones_causales",
+    "giro_cientifico_explicado",
+    "limite_evidencia_explicito",
+    "payoff_cierre_apertura",
+)
+
+def validar_narrative_qa(qa):
+    """Exige una lectura narrativa independiente registrada antes del handoff."""
+    errs = []
+    if not isinstance(qa, dict):
+        return ["falta narrative_qa: no existe revisión independiente registrada"]
+    if qa.get("status") != "PASS":
+        errs.append("narrative_qa.status debe ser PASS")
+    try:
+        score = float(qa.get("score"))
+    except (TypeError, ValueError):
+        score = -1
+    if not 85 <= score <= 100:
+        errs.append("narrative_qa.score debe ser >=85 y <=100")
+    if qa.get("review_basis") != "lectura_en_frio_solo_narracion":
+        errs.append("narrative_qa.review_basis debe ser lectura_en_frio_solo_narracion")
+    checks = qa.get("checks")
+    if not isinstance(checks, dict):
+        errs.append("narrative_qa.checks debe ser un objeto con siete checks")
+    else:
+        for key in NARRATIVE_QA_CHECKS:
+            if checks.get(key) is not True:
+                errs.append(f"narrative_qa.checks.{key} debe ser true")
+    flags = qa.get("critical_flags")
+    if not isinstance(flags, list) or flags:
+        errs.append("narrative_qa.critical_flags debe ser una lista vacía")
+    if qa.get("reviewer_role") != "auditor_capcot_independiente":
+        errs.append("narrative_qa.reviewer_role debe ser auditor_capcot_independiente")
+    return errs
+
 def validar(path, doi=False):
     errs, warns = [], []
     with open(path, encoding="utf-8") as f:
@@ -47,6 +86,8 @@ def validar(path, doi=False):
             errs.append(f"falta campo raíz: {key}")
     if errs:
         return errs, warns
+
+    errs.extend(validar_narrative_qa(sb.get("narrative_qa")))
 
     if sb["serie"] != "Datos y ociosidades":
         errs.append("serie debe ser exactamente 'Datos y ociosidades'")
