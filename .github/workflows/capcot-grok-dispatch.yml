@@ -9,8 +9,9 @@ on:
   workflow_dispatch:
     inputs:
       project_id:
-        description: 'ID del paquete, por ejemplo 2026-11-05_inter-rayo-globular'
+        description: 'ID de un paquete o "all" para enviar toda la cola JSON'
         required: true
+        default: 'all'
         type: string
 
 permissions:
@@ -24,14 +25,14 @@ jobs:
   dispatch:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout rama y paquete
+      - name: Checkout rama y cola
         uses: actions/checkout@v4
         with:
           ref: ${{ github.sha }}
           fetch-depth: 2
 
-      - name: Resolver paquete
-        id: package
+      - name: Resolver y validar paquetes
+        id: packages
         shell: bash
         env:
           EVENT_NAME: ${{ github.event_name }}
@@ -39,22 +40,28 @@ jobs:
         run: |
           set -euo pipefail
           if [[ "$EVENT_NAME" == "workflow_dispatch" ]]; then
-            project_id="$INPUT_PROJECT_ID"
-            file="cola/entrada/${project_id}.json"
+            if [[ "$INPUT_PROJECT_ID" == "all" ]]; then
+              mapfile -t files < <(find cola/entrada -maxdepth 1 -type f -name '*.json' | sort)
+            else
+              [[ "$INPUT_PROJECT_ID" =~ ^[A-Za-z0-9._-]+$ ]] || { echo "::error::ID de paquete inválido."; exit 1; }
+              files=("cola/entrada/${INPUT_PROJECT_ID}.json")
+            fi
           else
-            mapfile -t changed < <(git diff-tree --no-commit-id --name-only --diff-filter=AM -r "$GITHUB_SHA" | grep -E '^cola/entrada/[^/]+\.json$' || true)
-            if [[ "${#changed[@]}" -ne 1 ]]; then
-              printf 'Se esperaba exactamente un JSON nuevo/modificado en cola/entrada; detectados: %s\n' "${#changed[@]}"
-              printf '%s\n' "${changed[@]}"
+            mapfile -t files < <(git diff-tree --no-commit-id --name-only --diff-filter=AM -r "$GITHUB_SHA" | grep -E '^cola/entrada/[^/]+\.json$' || true)
+            if [[ "${#files[@]}" -ne 1 ]]; then
+              printf 'Se esperaba exactamente un JSON nuevo/modificado; detectados: %s\n' "${#files[@]}"
+              printf '%s\n' "${files[@]}"
               exit 1
             fi
-            file="${changed[0]}"
-            project_id="$(basename "$file" .json)"
           fi
-          test -f "$file" || { echo "No existe el paquete: $file"; exit 1; }
-          python -m json.tool "$file" >/dev/null
-          echo "project_id=$project_id" >> "$GITHUB_OUTPUT"
-          echo "file=$file" >> "$GITHUB_OUTPUT"
+          [[ "${#files[@]}" -gt 0 ]] || { echo "::error::No hay paquetes JSON en cola/entrada."; exit 1; }
+          for file in "${files[@]}"; do
+            [[ -f "$file" ]] || { echo "::error::No existe: $file"; exit 1; }
+            python -m json.tool "$file" >/dev/null
+          done
+          printf '%s\n' "${files[@]}" > /tmp/capcot-files.txt
+          echo "count=${#files[@]}" >> "$GITHUB_OUTPUT"
+          echo "Paquetes validados: ${#files[@]}"
 
       - name: Verificar configuración del receptor
         env:
@@ -62,17 +69,14 @@ jobs:
           WEBHOOK_TOKEN: ${{ secrets.GROK_WEBHOOK_TOKEN }}
         run: |
           set -euo pipefail
-          test -n "$WEBHOOK_URL" || { echo "::error::Falta configurar el secreto GROK_WEBHOOK_URL."; exit 1; }
+          test -n "$WEBHOOK_URL" || { echo "::error::Falta configurar GROK_WEBHOOK_URL."; exit 1; }
           case "$WEBHOOK_URL" in https://*) ;; *) echo "::error::GROK_WEBHOOK_URL debe usar HTTPS."; exit 1;; esac
           test -n "$WEBHOOK_TOKEN" || { echo "::error::Falta configurar GROK_WEBHOOK_TOKEN."; exit 1; }
 
-      - name: Enviar paquete textual completo a Imaginantes
-        id: deliver
+      - name: Entregar paquetes y exigir acuse individual
         env:
           WEBHOOK_URL: ${{ secrets.GROK_WEBHOOK_URL }}
           WEBHOOK_TOKEN: ${{ secrets.GROK_WEBHOOK_TOKEN }}
-          PROJECT_ID: ${{ steps.package.outputs.project_id }}
-          PACKAGE_FILE: ${{ steps.package.outputs.file }}
           REPOSITORY: ${{ github.repository }}
           BRANCH: ${{ github.ref_name }}
           COMMIT_SHA: ${{ github.sha }}
@@ -80,7 +84,12 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          python - <<'PY'
+          total=0
+          while IFS= read -r package_file; do
+            [[ -n "$package_file" ]] || continue
+            project_id="$(basename "$package_file" .json)"
+            export PACKAGE_FILE="$package_file" PROJECT_ID="$project_id"
+            python - <<'PY'
           import json, os
           with open(os.environ["PACKAGE_FILE"], encoding="utf-8") as f:
               storyboard = json.load(f)
@@ -97,23 +106,21 @@ jobs:
           with open("/tmp/capcot-payload.json", "w", encoding="utf-8") as f:
               json.dump(payload, f, ensure_ascii=False)
           PY
-          code="$(curl --silent --show-error --output /tmp/grok-response.json --write-out '%{http_code}' \
-            --request POST "$WEBHOOK_URL" \
-            --header 'Content-Type: application/json' \
-            --header "Authorization: Bearer $WEBHOOK_TOKEN" \
-            --data-binary @/tmp/capcot-payload.json)"
-          echo "HTTP $code"
-          cat /tmp/grok-response.json || true
-          [[ "$code" =~ ^2[0-9][0-9]$ ]] || { echo "::error::El receptor no aceptó el paquete."; exit 1; }
-          python - <<'PY'
-          import json
-          p = "/tmp/grok-response.json"
-          try:
-              with open(p, encoding="utf-8") as f:
-                  data = json.load(f)
-          except Exception:
-              raise SystemExit("El receptor respondió sin JSON verificable.")
-          if data.get("accepted") is not True:
-              raise SystemExit("El receptor no confirmó accepted=true.")
-          print("RECEPTOR_ACK:", data.get("receipt_id", "sin receipt_id"))
+            code="$(curl --silent --show-error --output /tmp/grok-response.json --write-out '%{http_code}' \
+              --request POST "$WEBHOOK_URL" \
+              --header 'Content-Type: application/json' \
+              --header "Authorization: Bearer $WEBHOOK_TOKEN" \
+              --data-binary @/tmp/capcot-payload.json)"
+            [[ "$code" =~ ^2[0-9][0-9]$ ]] || { echo "::error::$project_id: HTTP $code"; exit 1; }
+            python - "$project_id" <<'PY'
+          import json, sys
+          with open("/tmp/grok-response.json", encoding="utf-8") as f:
+              data = json.load(f)
+          receipt = data.get("receipt_id")
+          if data.get("accepted") is not True or not receipt:
+              raise SystemExit(f'{sys.argv[1]}: falta accepted=true y receipt_id verificable')
+          print(f'{sys.argv[1]} ACK receipt_id={receipt}')
           PY
+            total=$((total + 1))
+          done < /tmp/capcot-files.txt
+          echo "Entrega confirmada para $total paquete(s)."
