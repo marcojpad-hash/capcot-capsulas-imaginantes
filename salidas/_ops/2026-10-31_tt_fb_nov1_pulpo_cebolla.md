@@ -27,3 +27,7 @@ Meta Business Suite: 4 Reels Nov1 con capsula_v4 (viejos borrados, nuevo 1 vez c
 
 ## Reemplazo v4 FB Nov2 (31-oct ~20:00 CDMX)
 Meta Business Suite: 4 Reels Nov2 con capsula_v4 (viejos borrados, sin AI label): camarón mantis 08:00, pan duro 14:30, murciélagos 18:00, sequías 20:00 (GMT-5). Algunos pueden seguir "En proceso". Caption puede llevar espacio final tras @datosyociosidades (cosmético). FB Nov3 sigue pendiente.
+
+## Reemplazo v4 FB Nov3 + cierre (31-oct ~20:05 CDMX)
+Meta Business Suite: 2 Reels Nov3 con capsula_v4 (viejos borrados, captions OK, sin AI label, nada en vivo): juno 18:00, smartpe 20:00 (GMT-5).
+**Cierre:** 10/10 TT + 10/10 FB v4 OK 31-oct ~20:05 CDMX. Swap v4 completo.

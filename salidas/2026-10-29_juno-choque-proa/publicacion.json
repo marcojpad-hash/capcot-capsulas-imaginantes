@@ -91,10 +91,15 @@
    "ai_label": false,
    "actualizado": "2026-10-31T15:11:26-06:00",
    "reemplazo_v4": {
-    "estado": "pendiente_ui_reemplazo_v4",
+    "estado": "programado_v4",
     "mp4_nuevo": "salidas/2026-10-29_juno-choque-proa/capsula_v4.mp4",
-    "viejo": "programado pre-v4 sin ID; borrar en Studio/Business Suite",
-    "actualizado": "2026-10-31T19:40:00-06:00"
+    "viejo": "borrado",
+    "actualizado": "2026-10-31T20:05:00-06:00",
+    "ui_ny_gmt5": "2026-11-03 18:00",
+    "hora_cdmx": "17:00",
+    "ai_label": false,
+    "captions_ok": true,
+    "confirmado": "2026-10-31T20:05:00-06:00"
    }
   },
   "historial_youtube": [
