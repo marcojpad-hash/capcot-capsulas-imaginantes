@@ -16,6 +16,7 @@ Esta receta define el guion y storyboard que ChatGPT entrega a Grok. No autoriza
 ## Contrato narrativo previo
 
 Antes de escribir escenas, completar `narrative_contract` con una sola pregunta central, promesa, stakes, giro científico, límite de evidencia y payoff. No copiar el contrato como explicación dentro del guion; la narración debe sostenerse por sí sola. El revisor en frío no ve este objeto.
+Cada escena declara `dramatic_beat`, `scene_function`, `causal_bridge_from_previous`, `question_state`, `reason_to_continue` y `new_information`; estos campos describen la progresión sin sustituir ni reescribir la narración. El investigador no añade `narrative_qa`: lo registra el auditor independiente después de la lectura en frío.
 
 ## Arco
 1. \`hook_medias_res\`: imagen mental o pregunta concreta.
