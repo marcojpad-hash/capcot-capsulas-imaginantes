@@ -43,7 +43,7 @@ El auditor escribe en el storyboard:
 ```json
 {
   "narrative_qa": {
-    "status": "PASS",
+    "status": "FAIL",
     "score": 0,
     "review_basis": "lectura_en_frio_solo_narracion",
     "checks": {
@@ -55,7 +55,7 @@ El auditor escribe en el storyboard:
       "limite_evidencia_explicito": false,
       "payoff_cierre_apertura": false
     },
-    "critical_flags": [],
+    "critical_flags": ["REVISION_INDEPENDIENTE_AUSENTE"],
     "reviewer_role": "auditor_capcot_independiente"
   }
 }
