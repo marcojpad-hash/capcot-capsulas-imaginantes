@@ -503,3 +503,47 @@ El nuevo flujo valida todos los JSON antes de intentar el envío y exige para ca
 **Estado de ejecución:** el cambio quedó guardado y releído desde GitHub. No se ha podido probar el envío por lote porque los secretos `GROK_WEBHOOK_URL` y `GROK_WEBHOOK_TOKEN` siguen siendo requisito previo. No se afirma que el workflow haya pasado una ejecución real con el nuevo código.
 
 **Siguiente acción única del propietario:** configurar ambos secretos en [GitHub Actions Secrets](https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/settings/secrets/actions). Después, ejecutar el workflow manualmente en la rama `feature/capcot-video-discovery-continuity`, dejando `project_id=all`. El resultado válido será un ACK y `receipt_id` por cada paquete.
+
+
+---
+
+# ADDENDUM 6 — REVISIÓN DE CONTINUIDAD LÉXICA, CIENTÍFICA Y NARRATIVA (5–7 NOV)
+
+**Corte:** 2026-11-01 · rama `feature/capcot-video-discovery-continuity`
+
+## Hallazgo de auditoría
+
+La revisión directa de los 12 JSON encontró fallos editoriales sustantivos. No eran solo erratas: había frases de plantilla ajenas al tema (por ejemplo, referencias a «condiciones físicas y biológicas» dentro del guion de Venus), cierres genéricos que no derivaban del desarrollo, repeticiones, cifras sin contexto suficiente y una conclusión sobre el corazón de la ballena que sugería que se detenía, cuando el estudio registró un mínimo de dos latidos por minuto.
+
+## Correcciones aplicadas
+
+Se reescribieron las siete narraciones y los textos en pantalla de los 12 paquetes. Se reconstruyó también el objeto `arco` desde las escenas, para que gancho, desarrollo, cierre y reflexión coincidan con la narración que realmente se entrega.
+
+Criterios aplicados:
+- Cada escena añade una pieza nueva al argumento; se eliminaron transiciones que no tenían antecedente en la escena anterior.
+- El dato cuantitativo aparece después de explicar qué se midió y se retoma en el cierre sin cambiar su significado.
+- El cierre recupera el mecanismo central y el límite real de la evidencia; se eliminaron cierres comodín del tipo «depende de las condiciones» cuando no explicaban cuáles.
+- La última pregunta o remate deriva del contenido, no introduce un tema nuevo.
+- Se conservaron los siete bloques, las duraciones, la voz, el formato y los estados de preproducción.
+
+## Correcciones de precisión y fuente
+
+- **Venus:** se distingue rotación sideral (243.69 días), año orbital (224.701 días) y día solar (116.75 días). «Un día más largo que su año» solo se afirma para el día sideral. Fuente NASA NSSDC.
+- **Árboles:** se retiró la fuente de micorrizas que no respaldaba respiración/fotosíntesis. Se sustituyó por Oregon State University Extension; el mapa ahora ubica la institución editora, no un bosque o medición.
+- **Rana de bosque:** se añadió la fuente primaria de 2013 para el registro de supervivencia experimental hasta −16 °C en una población invernal de Interior Alaska. Se separó esa evidencia del estudio anterior sobre glucosa.
+- **Pulpos:** se corrigió la especie del estudio de Nature 2023 a `Octopus laqueus`; se eliminó la referencia errónea a `Octopus insularis`. El guion no atribuye sueños ni recuerdos observados.
+- **Nubes:** se alineó la URL principal con el recurso específico de USGS y se aclaró que los ≈500,000 kg corresponden al agua líquida estimada en un cúmulo hipotético de 1 km³ bajo el supuesto de 0.5 g/m³; no es el peso universal de una nube.
+
+## Comprobación reproducida desde GitHub
+
+Se releyeron los 12 JSON después de las modificaciones y se comprobó:
+- 12/12 JSON parseables.
+- 7/7 escenas con narración por paquete.
+- 12/12 entre 195 y 227 palabras (rango permitido: 170–235).
+- En los 12, la capa de dato está en la escena 3 y su narración introduce el dato.
+- En los 12, los campos `arco` coinciden con la narración de escenas 1, 2–5, 6 y 7.
+- 12/12 mantienen sus siete escenas y textos en pantalla temáticamente específicos.
+
+**Límite:** esta es una revisión textual y estructural de los JSON releídos desde GitHub. No equivale a QA audiovisual, revisión oficial de Imaginantes ni validación automática externa de todos los DOI. No se generaron medios ni se publicaron cápsulas.
+
+**Resultado:** se sustituyó la versión textual defectuosa de los 12 paquetes por una versión revisada en la cola canónica. No se requiere que M corrija manualmente estos guiones.
