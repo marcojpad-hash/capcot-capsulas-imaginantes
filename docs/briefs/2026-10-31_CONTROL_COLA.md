@@ -453,3 +453,36 @@ Se releyeron los 12 JSON de primer nivel y se comprobó:
 - El workflow de despacho ya tenía fallos recurrentes documentados en el addendum anterior. La presencia de JSON canónicos resuelve el desajuste de ruta de los nuevos paquetes, pero no demuestra que el workflow haya sido reparado ni que el envío haya llegado. El siguiente paso técnico es reparar y probar el despacho y verificar los recibos de Grok.
 
 **Resultado:** los 12 paquetes textuales de los slots 07:00–19:00 del 5–7 de noviembre están creados y estructuralmente comprobados en la cola canónica. No se generaron medios ni se publicaron cápsulas.
+
+
+---
+
+# ADDENDUM 4 — PRUEBA REAL DEL DESPACHO
+
+**Corte:** 2026-11-01 · commit de workflow `1826bc04fc9455dd0d1fc47213bdb9ad30343516`
+
+## Resultado observado
+
+Se reparó `.github/workflows/capcot-grok-dispatch.yml`:
+- Se eliminó el bloque duplicado y el fragmento de shell inválido.
+- Se corrigió la detección del JSON de primer nivel.
+- El evento push exige exactamente un JSON nuevo/modificado por ejecución.
+- Se conserva la validación JSON y la exigencia de respuesta HTTP 2xx con `accepted=true`.
+
+Se disparó una prueba real con `2026-11-05_inter-rayo-globular.json`. GitHub Actions:
+- Checkout: PASS.
+- Resolver paquete: PASS.
+- Verificar configuración del receptor: FAIL.
+- Envío a Imaginantes: SKIPPED.
+
+Log exacto: `Falta configurar el secreto GROK_WEBHOOK_URL.` La ejecución no llegó a comprobar `GROK_WEBHOOK_TOKEN` ni a enviar el payload.
+
+**Conclusión:** la ruta y resolución del paquete ya funcionan. La entrega externa sigue bloqueada por la ausencia de `GROK_WEBHOOK_URL` en los secretos del repositorio. No hay ACK ni recepción confirmada para rayo globular ni para los otros once paquetes. No crear estados de Grok ni simular recepción.
+
+## Acción pendiente del propietario del receptor
+
+Configurar en GitHub Actions los secretos:
+1. `GROK_WEBHOOK_URL`: endpoint HTTPS real del receptor Imaginantes.
+2. `GROK_WEBHOOK_TOKEN`: token vigente del mismo receptor.
+
+Después, repetir la entrega por paquete y verificar respuesta `accepted=true` y el recibo de Grok. No registrar los valores de los secretos en archivos, commits o logs.
