@@ -130,7 +130,13 @@
       "source_ids": [
         "SRC-001"
       ],
-      "style_id": "risografia"
+      "style_id": "risografia",
+      "dramatic_beat": "Anomalía en curso",
+      "scene_function": "Abrir con el pulso recurrente y plantear la pregunta causal.",
+      "causal_bridge_from_previous": "Apertura de la historia: la anomalía ya está ocurriendo; no hay escena anterior.",
+      "question_state": "El pulso de un minuto está observado, pero su origen se desconoce.",
+      "reason_to_continue": "Hay que determinar si es un incidente aislado o un patrón compartido.",
+      "new_information": "La frecuencia cae brevemente en varias redes y el pulso se repite cada sesenta segundos."
     },
     {
       "id": "scene_002",
@@ -154,7 +160,13 @@
         "valor": "12 redes · 5 continentes",
         "etiqueta": "Sistemas donde se observó un patrón de 60 segundos",
         "fuente": "SRC-001"
-      }
+      },
+      "dramatic_beat": "Escala del fenómeno",
+      "scene_function": "Establecer que el patrón no se limita a una sola red.",
+      "causal_bridge_from_previous": "La repetición descrita en la apertura lleva a comparar registros de distintos sistemas.",
+      "question_state": "El patrón aparece en múltiples redes; la causa sigue sin identificarse.",
+      "reason_to_continue": "La escala obliga a buscar un mecanismo común y medible.",
+      "new_information": "Los registros de doce sistemas en cinco continentes muestran una oscilación de un minuto estable durante años."
     },
     {
       "id": "scene_003",
@@ -193,7 +205,13 @@
         ],
         "titulo": "Campus de investigación · Jülich, Alemania",
         "fuente": "SRC-003 para la coordenada institucional; SRC-002 para el campus y las 80 ubicaciones medidas."
-      }
+      },
+      "dramatic_beat": "Localización de la búsqueda",
+      "scene_function": "Pasar del patrón global a un lugar donde se pueden tomar mediciones locales.",
+      "causal_bridge_from_previous": "Al confirmar la escala del patrón, los investigadores buscan dónde aislar su origen.",
+      "question_state": "La anomalía es reproducible; falta localizar el dispositivo que la genera.",
+      "reason_to_continue": "Las mediciones distribuidas pueden revelar qué instalaciones coinciden con la señal.",
+      "new_information": "El equipo instala medidores en ochenta ubicaciones del campus de Forschungszentrum Jülich."
     },
     {
       "id": "scene_004",
@@ -218,7 +236,13 @@
         "valor": "4 edificios",
         "etiqueta": "Señal fuerte; todos tenían UPS",
         "fuente": "SRC-001"
-      }
+      },
+      "dramatic_beat": "Primera asociación causal",
+      "scene_function": "Reducir los posibles orígenes a edificios equipados con sistemas UPS.",
+      "causal_bridge_from_previous": "Los medidores locales permiten comparar edificios afectados y edificios sin sistemas de respaldo.",
+      "question_state": "La señal se concentra en cuatro edificios con UPS; la operación concreta aún no se conoce.",
+      "reason_to_continue": "La asociación con UPS necesita una causa operativa identificable.",
+      "new_information": "La señal aparece con fuerza en cuatro edificios con UPS y no aparece en los edificios medidos sin ellos."
     },
     {
       "id": "scene_005",
@@ -237,7 +261,13 @@
         "SRC-001",
         "SRC-002"
       ],
-      "style_id": "risografia"
+      "style_id": "risografia",
+      "dramatic_beat": "Giro científico",
+      "scene_function": "Identificar la rutina automática que produce los picos de corriente.",
+      "causal_bridge_from_previous": "La coincidencia con UPS lleva a medir una instalación y revisar sus picos periódicos.",
+      "question_state": "La autoprueba del controlador queda identificada como origen de los picos de esa UPS.",
+      "reason_to_continue": "Falta comprobar si el consumo periódico llega a la red pública.",
+      "new_information": "El fabricante confirma que una autoprueba automática del controlador genera el pico de corriente cada minuto."
     },
     {
       "id": "scene_006",
@@ -261,7 +291,13 @@
         "valor": "110 kV",
         "etiqueta": "Conexión pública hasta donde se rastreó la señal",
         "fuente": "SRC-001"
-      }
+      },
+      "dramatic_beat": "Propagación y consecuencias",
+      "scene_function": "Mostrar hasta dónde llega la señal y por qué puede importar en sistemas eléctricos.",
+      "causal_bridge_from_previous": "Identificado el pico en la UPS, los investigadores siguen el consumo por transformadores hacia la red pública.",
+      "question_state": "La señal alcanza la conexión de 110 kV; el posible desgaste depende de la amplitud y del sistema.",
+      "reason_to_continue": "La consecuencia operativa debe separarse de la causa demostrada en una instalación.",
+      "new_information": "El patrón se rastrea hasta la red pública de 110 kV; oscilaciones intensas pueden contribuir al desgaste de turbinas hidroeléctricas de regulación."
     },
     {
       "id": "scene_007",
@@ -280,7 +316,13 @@
         "SRC-001",
         "SRC-002"
       ],
-      "style_id": "risografia"
+      "style_id": "risografia",
+      "dramatic_beat": "Límite de la evidencia",
+      "scene_function": "Impedir que el caso de una UPS se generalice a todas las redes.",
+      "causal_bridge_from_previous": "La conexión y las consecuencias operativas exigen delimitar el alcance exacto de la investigación.",
+      "question_state": "El patrón se observó en doce redes, pero la causa se rastreó en una UPS concreta.",
+      "reason_to_continue": "El cierre debe responder la anomalía sin convertir una explicación localizada en una regla universal.",
+      "new_information": "El estudio no atribuye todas las oscilaciones a baterías ni considera que exista una amenaza crítica actual."
     },
     {
       "id": "scene_008",
@@ -299,7 +341,13 @@
         "SRC-001",
         "SRC-002"
       ],
-      "style_id": "risografia"
+      "style_id": "risografia",
+      "dramatic_beat": "Resolución y extensión",
+      "scene_function": "Pagar la apertura y dejar una pregunta final dentro del mismo mecanismo.",
+      "causal_bridge_from_previous": "Con el alcance de la evidencia delimitado, la autoprueba sincronizada explica el pulso que abrió la historia.",
+      "question_state": "La fuente del pulso investigado está identificada y su alcance queda acotado.",
+      "reason_to_continue": "La pregunta final invita a reconocer otros efectos de rutinas sincronizadas sin abrir una historia distinta.",
+      "new_information": "Desfasar autopruebas puede reducir el pulso; el fenómeno surge cuando varios relojes coordinan la misma rutina."
     }
   ],
   "cortinilla_fuentes": {
