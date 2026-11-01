@@ -99,3 +99,19 @@ No se revisaron changelogs de APIs en esta pasada: no apareció un cambio oficia
 - No se modificaron `data/*.json`, storyboards, estados de Grok, workflows, secretos, permisos, `main` ni Motor U6.
 - No se generaron cápsulas ni medios, no se publicó, no se programó y no se consumieron créditos.
 - La recepción por Grok sigue **NO CONFIRMADA** mientras falten los estados individuales y el dispatch no complete un POST con acuse verificable.
+
+
+## 7. Acción posterior a la auditoría — cuarentena de la cola
+
+**Corte:** 2026-11-01, 14:29 CDMX. Esta sección registra una operación posterior al corte estático de la auditoría; no altera sus hallazgos originales.
+
+La inspección de los 38 storyboard JSON que permanecían en `cola/entrada/` encontró que ninguno contenía `narrative_contract` ni `narrative_qa`. Por tanto, ninguno acreditaba PASS machine-readable. Se retiraron de la cola y se conservaron en `cola/bloqueados/`:
+
+- Commit [057474c](https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/commit/057474c747202e164c28d3cf2f54c3196d55ca9f): cuatro paquetes asignados a slots del 1-nov, 15 archivos movidos.
+- Commit [3795f4](https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/commit/3795f40cd035a8293efed759a2af1b5d58ef1ef0): 29 project_id adicionales, 101 archivos movidos.
+- Commit [6b9cf52](https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/commit/6b9cf5285b19ba064d09fc843d741d69852f4d28): README de cuarentena y condiciones de reingreso.
+
+**Verificación:** 116 archivos en total, 33 project_id; cada destino conserva exactamente el SHA de blob original y cada ruta fuente fue retirada. La consulta posterior al árbol encontró cero storyboard JSON en `cola/entrada/`. No se borró contenido, no se reescribió narración/fuentes, no se modificó `cola/estado/` y no se disparó el workflow (`[skip ci]` en el commit masivo).
+
+Los PASS narrativos que el auditor reportó para Xolo y tiburón no se promovieron: sus JSON no contienen los siete checks ni el registro `narrative_qa`, y sus paquetes siguen teniendo fallos estructurales/administrativos. Xolo permanece en `salidas/`, no en cola. El reingreso requiere completar `narrative_contract`, revisión independiente registrada y validador estructural correcto.
+
