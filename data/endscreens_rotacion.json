@@ -1,13 +1,13 @@
 {
   "fecha": "2026-11-01",
   "tipo": "endscreens_rotacion",
-  "actualizado_cdmx": "2026-11-01T13:48-06:00",
-  "motivo": "Pulpo PQzL sigue acelerando (175→220); deja de mandar a corneja ZHdJ (12, ya recibe de mWtf y MBMj) y ahora manda al nuevo Short cebolla ZWF6ke9Zec0 (1 vista). Resto y fijos intactos.",
+  "actualizado_cdmx": "2026-11-01T17:52-06:00",
+  "motivo": "Perro guía aZn5 acelera (528→578); deja rLd9 y manda al nuevo Short Baffin HDQr9OGpFJM (4 vistas, publicado 17:00). Baffin estrena pantalla → corneja ZHdJ (13). Resto y fijos intactos.",
   "vistas_ref": {
-    "p4eXmoJ2f18": 582,
+    "p4eXmoJ2f18": 588,
     "OFpAg4XA3AM": 29,
     "inzztxrxYfg": 687,
-    "mWtf7Yta294": 995,
+    "mWtf7Yta294": 997,
     "RhiKtLt2UNQ": 595,
     "oGFKLUgBdhA": 1353,
     "5XQfUHpyTWs": 981,
@@ -30,14 +30,15 @@
     "r1AhsPOAS_o": 1399,
     "ZrUtKs7Ty7U": 1341,
     "5D96DmjvioU": 632,
-    "Mz-IVFvFWH4": 83,
-    "ZHdJXFrURk4": 12,
-    "G5is50omLo4": 148,
-    "MBMjQ5vLZo0": 182,
-    "PQzLUQnHbcA": 231,
-    "aZn5eTyiQPQ": 528,
-    "rLd9DVPXHb8": 15,
-    "ZWF6ke9Zec0": 1
+    "Mz-IVFvFWH4": 104,
+    "ZHdJXFrURk4": 13,
+    "G5is50omLo4": 171,
+    "MBMjQ5vLZo0": 192,
+    "PQzLUQnHbcA": 263,
+    "aZn5eTyiQPQ": 578,
+    "rLd9DVPXHb8": 16,
+    "ZWF6ke9Zec0": 1,
+    "HDQr9OGpFJM": 4
   },
   "mapa": {
     "r1AhsPOAS_o": "AJR6kcnnDig",
@@ -70,9 +71,10 @@
     "Mz-IVFvFWH4": "OFpAg4XA3AM",
     "G5is50omLo4": "MBMjQ5vLZo0",
     "MBMjQ5vLZo0": "ZHdJXFrURk4",
-    "aZn5eTyiQPQ": "rLd9DVPXHb8",
+    "aZn5eTyiQPQ": "HDQr9OGpFJM",
     "PQzLUQnHbcA": "ZWF6ke9Zec0",
-    "rLd9DVPXHb8": "OFpAg4XA3AM"
+    "rLd9DVPXHb8": "OFpAg4XA3AM",
+    "HDQr9OGpFJM": "ZHdJXFrURk4"
   },
   "pendiente_studio": false,
   "nota": "Aplicado en YouTube Studio Editor > Pantalla final (video específico). Búsqueda: pegar youtube.com/watch?v=ID en 'Buscar vídeos de otros canales' (tus vídeos no lista Shorts). Sin suscripción ni tarjetas. Actualización 26-oct 19:49: la lista «Elegir un vídeo específico» ya muestra los Shorts.",
@@ -107,9 +109,10 @@
     "Mz-IVFvFWH4": "aplicado_nuevo_2026-10-31 13:49 → OFpAg4XA3AM",
     "G5is50omLo4": "aplicado_2026-10-31 19:50 (antes O7TdKvuBjyg → MBMjQ5vLZo0)",
     "MBMjQ5vLZo0": "aplicado_nuevo_2026-10-31 19:50 → ZHdJXFrURk4",
-    "aZn5eTyiQPQ": "aplicado_nuevo_2026-11-01 07:50 → rLd9DVPXHb8",
+    "aZn5eTyiQPQ": "aplicado_2026-11-01 17:50 (antes rLd9DVPXHb8)",
     "PQzLUQnHbcA": "aplicado_2026-11-01_13:48",
-    "rLd9DVPXHb8": "aplicado_nuevo_2026-11-01 07:50 → OFpAg4XA3AM"
+    "rLd9DVPXHb8": "aplicado_nuevo_2026-11-01 07:50 → OFpAg4XA3AM",
+    "HDQr9OGpFJM": "aplicado_nuevo_2026-11-01 17:50"
   },
   "fijos": {
     "Qe2Y9xDn9QQ": "gIjJ0YKYQ8M",
