@@ -79,8 +79,10 @@ Elegir un solo estilo del catálogo por tema. Copiar literalmente \`prompt_base\
 
 ## Entregables por ejecución
 Crear exactamente:
-1. \`docs/briefs/YYYY-MM-DD_RADAR_CAPCOT.md\`: 3–5 candidatos, Trends, fallos/fallbacks, límites y recomendación.
-2. \`cola/entrada/YYYY-MM-DD_slug.json\`: storyboard completo con fuentes incorporadas en el propio JSON.
+1. docs/briefs/YYYY-MM-DD_RADAR_CAPCOT.md: 3–5 candidatos, Trends, fallos/fallbacks, límites y recomendación.
+2. proyectos/YYYY-MM-DD_slug/storyboard.json: borrador completo con fuentes incorporadas en el propio JSON.
+
+El investigador no escribe en cola/entrada/. El auditor independiente realiza la lectura narrativa en frío y solo promueve el JSON a cola/entrada/<project_id>/storyboard.json si narrative_qa.status=PASS, score >=85, los siete checks son true y critical_flags=[]. Si falla o no existe revisor independiente, permanece fuera de la cola. Los paquetes heredados que fallen se mueven a cola/bloqueados/<project_id>/storyboard.json, preservando su contenido. Ver docs/QA_NARRATIVO_EN_FRIO.md.
 
 No crear un archivo de fuentes separado salvo petición expresa.
 
