@@ -118,5 +118,19 @@
   "fecha": "2026-10-31T15:55:49-06:00",
   "video": "capsula_v2.mp4",
   "tiktok_facebook": "siguen con video viejo (pre-cierre)"
+ },
+ "reemplazo_v4": {
+  "mp4": "salidas/2026-11-02_camaron-mantis/capsula_v4.mp4",
+  "tiktok": {
+   "estado": "programado_v4",
+   "viejo": "borrado",
+   "ui_ny_gmt5": "2026-11-02 08:00",
+   "hora_cdmx": "07:00",
+   "ai_label": true,
+   "confirmado": "2026-10-31T19:35:00-06:00"
+  },
+  "facebook": {
+   "estado": "pendiente"
+  }
  }
 }

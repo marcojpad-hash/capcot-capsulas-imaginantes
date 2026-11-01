@@ -15,3 +15,6 @@ Hashtags simples Mj: `#pulpo #ciencia #animales #sabiasque` / `#cebolla #cocina 
 
 ## Reemplazo v4 TT Nov1 (31-oct ~19:25 CDMX)
 TikTok Studio: 4 slots Nov1 con capsula_v4 (viejos borrados, nuevo 1 vez c/u, AI label ON): pulpo 8:00 AM, cebolla 2:30 PM, baffin 6:00 PM, arqueas 8:00 PM (GMT-5). FB Nov1 y TT/FB Nov2–3 siguen pendientes.
+
+## Reemplazo v4 TT Nov2 (31-oct ~19:35 CDMX)
+TikTok Studio: 4 slots Nov2 con capsula_v4 (viejos borrados, nuevo 1 vez c/u, AI label ON): camarón mantis 8:00 AM (~1:29), pan duro 2:30 PM (~1:29), murciélagos 6:00 PM (~1:33), sequías 8:00 PM (~1:28) (GMT-5). FB Nov1–2 y TT/FB Nov3 siguen pendientes.
