@@ -6,7 +6,7 @@
   "target_duration_seconds": 84,
   "audience": "Público general",
   "occasion": "Cápsula vertical de divulgación científica",
-  "editorial_status": "PROPUESTA_PENDIENTE_DE_GROK",
+  "editorial_status": "QA_NARRATIVO_FAIL_NO_PROMOVER",
   "typography_identity": {
     "font_family": "DejaVu Sans",
     "font_weight": "700 para gancho; 400 para subtítulos",
@@ -25,7 +25,7 @@
     "modo_pausas": "continuo"
   },
   "cortinilla_fuentes": {
-    "duration_seconds": 12,
+    "duration_seconds": 6,
     "titulo": "Fuentes",
     "aviso": "Imágenes generadas con IA, voz sintética y audio sintetizado.",
     "firma": "Datos y ociosidades"
@@ -49,9 +49,11 @@
     ],
     "note": "No publicar ni programar desde preproducción textual."
   },
-  "estado": "PENDIENTE_REVISION_GROK",
+  "estado": "QA_NARRATIVO_FAIL_NO_PROMOVER",
   "production_mode": "storyboard_only",
-  "validation_notes": [],
+  "validation_notes": [
+    "Corrección mecánica del auditor: retiradas referencias frames/scene_*.jpg no presentes en el árbol GitHub; cortinilla ajustada a 6 s (78 s escenas + 6 s = 84 s). Narración y claims intactos. El snapshot bloqueado conserva el original."
+  ],
   "approved_assets": [],
   "risk_notes": [],
   "project_id": "2026-11-01_pulpo-tres-corazones",
@@ -142,8 +144,7 @@
         "SRC-002",
         "SRC-003"
       ],
-      "style_id": "carton_recortado",
-      "asset_filename": "frames/scene_001.jpg"
+      "style_id": "carton_recortado"
     },
     {
       "id": "scene_002",
@@ -160,8 +161,7 @@
         "SRC-002",
         "SRC-003"
       ],
-      "style_id": "carton_recortado",
-      "asset_filename": "frames/scene_002.jpg"
+      "style_id": "carton_recortado"
     },
     {
       "id": "scene_003",
@@ -178,8 +178,7 @@
         "SRC-002",
         "SRC-003"
       ],
-      "style_id": "carton_recortado",
-      "asset_filename": "frames/scene_003.jpg"
+      "style_id": "carton_recortado"
     },
     {
       "id": "scene_004",
@@ -196,8 +195,7 @@
         "SRC-002",
         "SRC-003"
       ],
-      "style_id": "carton_recortado",
-      "asset_filename": "frames/scene_004.jpg"
+      "style_id": "carton_recortado"
     },
     {
       "id": "scene_005",
@@ -214,8 +212,7 @@
         "SRC-002",
         "SRC-003"
       ],
-      "style_id": "carton_recortado",
-      "asset_filename": "frames/scene_005.jpg"
+      "style_id": "carton_recortado"
     },
     {
       "id": "scene_006",
@@ -232,8 +229,7 @@
         "SRC-002",
         "SRC-003"
       ],
-      "style_id": "carton_recortado",
-      "asset_filename": "frames/scene_006.jpg"
+      "style_id": "carton_recortado"
     },
     {
       "id": "scene_007",
@@ -250,8 +246,7 @@
         "SRC-002",
         "SRC-003"
       ],
-      "style_id": "carton_recortado",
-      "asset_filename": "frames/scene_007.jpg"
+      "style_id": "carton_recortado"
     },
     {
       "id": "scene_008",
@@ -268,8 +263,7 @@
         "SRC-002",
         "SRC-003"
       ],
-      "style_id": "carton_recortado",
-      "asset_filename": "frames/scene_008.jpg"
+      "style_id": "carton_recortado"
     }
   ],
   "linea_tematica_provisional": "Naturaleza / anatomía animal",
