@@ -1,6 +1,6 @@
 # Control de cola CAPCOT — 2026-11-01
 
-**Corte:** 2026-11-01, 18:00 CDMX  
+**Corte:** 2026-11-01, 18:33 CDMX  
 **Rama:** feature/capcot-video-discovery-continuity  
 **Base revisada:** commit 277a12b4253f3bbbad37f0b9a58812a58053677e  
 **Alcance:** auditoría de briefs, borradores, salidas, rotación, cola, dispatch, estados y Actions. Solo lectura salvo QA narrativo y correcciones mecánicas documentadas abajo.
