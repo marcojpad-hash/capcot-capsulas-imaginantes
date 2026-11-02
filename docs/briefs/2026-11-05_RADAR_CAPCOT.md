@@ -49,3 +49,8 @@ La frase anterior «cuatro paquetes textuales en cola» no acredita una entrega 
 - Los storyboards recuperados tienen 7 escenas y no contienen `narrative_qa`; por tanto, no cumplen el contrato vigente de handoff.
 - La receta semanal pide `cola/entrada/<project_id>/` con tres archivos, pero el workflow de despacho escucha únicamente `cola/entrada/*.json` (JSON de primer nivel). La incompatibilidad debe resolverse antes de entregar.
 - Estado real: preproducción textual; sin frames, audio, render ni publicación.
+
+
+### Aclaración de jerarquía documental — 2-nov-2026
+
+Corrección a la nota anterior: la receta semanal del 31-oct es un documento de coordinación legado y contradice el contrato operativo unificado vigente desde 1-nov. La ruta activa es `proyectos/<project_id>/storyboard.json` → QA narrativo independiente PASS → `cola/entrada/<project_id>.json` (JSON de primer nivel). El workflow actual coincide con este contrato; no se debe modificar para aceptar carpetas. Los archivos observados en `cola/bloqueados/` son copias heredadas y no son borradores canónicos listos para promoción. Ver `docs/briefs/2026-11-02_CONTROL_COLA.md`.
