@@ -1332,5 +1332,60 @@
    ]
   ],
   "nota_flujo": "Madrugada (23:10→08:12, ~9 h): YT +318 vistas, +11 likes, 0 comentarios, subs 68→69. Xolo sigue arriba (694) pero se enfría; pulpo, lágrimas y tiburón empujan. Corneja (+3) y catálogo viejo planos. Cebolla Fh4KkcZr3e8 sigue sin aparecer pública; apareció nuevo 5sxxx0vuXFE 'Un golpe bajo el agua' (2 vistas) y no aparece tmxMkxA6nOw (camarón programado 07:00) — revisar Studio. TT perfil: 17 seguidores, likes 561→562."
+ },
+ {
+  "hora_cdmx": "2026-11-02T14:05-06:00",
+  "base_youtube": "2026-11-02T08:12",
+  "base_tiktok": "2026-11-02T08:12",
+  "youtube_totales": {
+   "view": 26223,
+   "like": 883,
+   "comment": 26
+  },
+  "suscriptores": 70,
+  "shorts_publicos": 38,
+  "delta_youtube": {
+   "view": 237,
+   "like": 10,
+   "comment": 0,
+   "suscriptores": 1
+  },
+  "tiktok_totales": null,
+  "seguidores_tiktok": 17,
+  "likes_perfil_tiktok": 563,
+  "videos_tiktok": 38,
+  "delta_tiktok": {
+   "seguidores": 0,
+   "likes_perfil": 1,
+   "videos": 0,
+   "nota": "Solo perfil público."
+  },
+  "ranking_crecimiento": [
+   [
+    "YT Un golpe bajo el agua",
+    63
+   ],
+   [
+    "YT El tiburón que vive siglos",
+    60
+   ],
+   [
+    "YT El perro que guía a los muertos 🐕💀",
+    48
+   ],
+   [
+    "YT La química detrás de las lágrimas",
+    25
+   ],
+   [
+    "YT Pulpo: tres corazones",
+    19
+   ],
+   [
+    "YT El jet lag de las aves marinas",
+    4
+   ]
+  ],
+  "nota_flujo": "Mediodía (08:12→14:05, ~6 h): YT +237 vistas, +10 likes, 0 comentarios, subs 69→70. Camarón mantis 5sxxx0vuXFE ('Un golpe bajo el agua', 07:00) arrancó +63; tiburón +60 y xolo +48 siguen; lágrimas +25, pulpo +19. Nuevo público V9bO9EUN0JA 'El pan no solo se seca' (1 vista, slot 13:30). Catálogo viejo plano (≤3). IDs viejos tmxMkxA6nOw/TbZRvpiDjdk/Fh4KkcZr3e8 ya no existen en la API (reemplazados/borrados). TT perfil: 17 seguidores, likes 562→563, 38 videos."
  }
 ]
