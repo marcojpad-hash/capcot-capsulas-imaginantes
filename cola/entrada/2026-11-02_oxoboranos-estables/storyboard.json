@@ -1,1 +1,188 @@
-PLACEHOLDER_STORY
+{
+  "project_id": "2026-11-02_oxoboranos-estables",
+  "serie": "Datos y ociosidades",
+  "title": "Químicos aislan oxoboranos estables tras 60 años",
+  "titulo": "¿Molécula imposible?",
+  "language": "es-MX",
+  "aspect_ratio": "9:16",
+  "target_duration_seconds": 82,
+  "estructura": "mito_vs_dato",
+  "estilo_id": "pop_art_comic",
+  "estilo_visual": "Cómic pop art",
+  "trend_source": {
+    "tipo": "noticia_cientifica",
+    "medio": "Nature Chemistry / Uni Würzburg",
+    "url": "https://www.nature.com/articles/s41557-026-02272-w",
+    "estudio_doi": "10.1038/s41557-026-02272-w",
+    "fecha_publicacion": "2026-10-27",
+    "termino": "oxoboranos estables",
+    "fecha_consulta": "2026-11-02"
+  },
+  "voice": {
+    "engine": "edge-tts",
+    "voice_id": "es-MX-JorgeNeural",
+    "rate": "+7%",
+    "pitch": "-2Hz",
+    "pad_seconds": 0.3,
+    "modo_pausas": "continuo"
+  },
+  "sources": [
+    {
+      "id": "SRC-001",
+      "cita_corta": "Lubczyk et al. (2026). Synthesis and isolation of stable oxoboranes. Nature Chemistry.",
+      "doi": "10.1038/s41557-026-02272-w",
+      "url": "https://doi.org/10.1038/s41557-026-02272-w",
+      "accessed": "2026-11-02",
+      "supports": [
+        "Three room-temperature-stable oxoboranes isolated as crystalline solids",
+        "B–O bonds 1.208(4)–1.217(4) Å, exceptionally short and strong",
+        "Simple synthesis from diboracumulene and carbonyls at room temperature",
+        "Previously sought for over 60 years, thought too unstable"
+      ],
+      "ref_display": "Lubczyk et al., Nat. Chem. 2026"
+    },
+    {
+      "id": "SRC-002",
+      "cita_corta": "University of Würzburg news (2026). A 60-Year search is over.",
+      "url": "https://www.uni-wuerzburg.de/en/news-and-events/news/detail/news/oxoboranes/",
+      "accessed": "2026-11-02",
+      "supports": [
+        "Holger Braunschweig team at Uni Würzburg",
+        "Nearly everybody had given up on isolating oxoboranes",
+        "Supported by computational work from Tezpur University"
+      ],
+      "ref_display": "Uni Würzburg 28 Oct 2026"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_001",
+      "arc": "hook_medias_res",
+      "duration_seconds": 9.0,
+      "narration": "Durante más de sesenta años, los químicos creyeron imposible aislar oxoboranos. Estas moléculas con triple enlace entre boro y oxígeno se consideraban demasiado inestables para existir en el laboratorio.",
+      "on_screen_text": "¿Molécula imposible?",
+      "visual_description": "pop art comic of frustrated chemists in lab with exploding molecule diagrams and bold POW effects",
+      "image_prompt": "pop art comic book panel, Ben-Day halftone dots, bold black outlines, saturated primary colors, dramatic action burst background, vertical 9:16, no text + pop art comic of frustrated chemists in lab with exploding molecule diagrams and bold POW effects",
+      "source_ids": ["SRC-001", "SRC-002"],
+      "asset_filename": "frames/scene_001.jpg",
+      "sfx": ["explosión"],
+      "ambiente": "viento"
+    },
+    {
+      "id": "scene_002",
+      "arc": "desarrollo",
+      "duration_seconds": 10.5,
+      "narration": "En la Universidad de Würzburg, el equipo de Holger Braunschweig, con apoyo computacional de Tezpur, reaccionó un diboracumuleno reactivo con cetonas simples a temperatura ambiente.",
+      "on_screen_text": "Würzburg, Alemania",
+      "visual_description": "pop art comic university building in Würzburg with comic speech bubbles of chemical reaction",
+      "image_prompt": "pop art comic book panel, Ben-Day halftone dots, bold black outlines, saturated primary colors, dramatic action burst background, vertical 9:16, no text + pop art comic university building in Würzburg with comic speech bubbles of chemical reaction",
+      "source_ids": ["SRC-002"],
+      "asset_filename": "frames/scene_002.jpg",
+      "sfx": ["campanas"],
+      "ambiente": "viento",
+      "capa": {
+        "tipo": "mapa",
+        "region": [8, 12, 48, 51],
+        "puntos": [{"nombre": "Würzburg", "lon": 9.93, "lat": 49.79}],
+        "titulo": "Universität Würzburg",
+        "fuente": "Uni Würzburg · Natural Earth"
+      }
+    },
+    {
+      "id": "scene_003",
+      "arc": "desarrollo",
+      "duration_seconds": 10.0,
+      "narration": "La sorpresa fue total: formaron tres oxoboranos estables como sólidos cristalinos de color naranja y amarillo. Obtuvieron más del cincuenta por ciento de rendimiento aislado.",
+      "on_screen_text": "3 cristales estables",
+      "visual_description": "pop art comic of glowing orange and yellow crystal solids popping out of a reaction flask",
+      "image_prompt": "pop art comic book panel, Ben-Day halftone dots, bold black outlines, saturated primary colors, dramatic action burst background, vertical 9:16, no text + pop art comic of glowing orange and yellow crystal solids popping out of a reaction flask",
+      "source_ids": ["SRC-001"],
+      "asset_filename": "frames/scene_003.jpg",
+      "sfx": ["cristal"],
+      "ambiente": "viento"
+    },
+    {
+      "id": "scene_004",
+      "arc": "desarrollo",
+      "duration_seconds": 11.0,
+      "narration": "Los enlaces boro-oxígeno miden entre 1.208 y 1.217 angstroms. Son extremadamente cortos y fuertes, casi perfectamente lineales, con evidencia de triple enlace real.",
+      "on_screen_text": "1.208 Å",
+      "visual_description": "pop art comic close-up of B≡O triple bond with measurement lines and atomic models",
+      "image_prompt": "pop art comic book panel, Ben-Day halftone dots, bold black outlines, saturated primary colors, dramatic action burst background, vertical 9:16, no text + pop art comic close-up of B triple bond O with measurement lines and atomic models",
+      "source_ids": ["SRC-001"],
+      "asset_filename": "frames/scene_004.jpg",
+      "sfx": ["medición"],
+      "ambiente": "viento",
+      "capa": {
+        "tipo": "dato",
+        "valor": "1.208 Å",
+        "etiqueta": "enlace B–O más corto",
+        "fuente": "Lubczyk et al., Nat. Chem. 2026"
+      }
+    },
+    {
+      "id": "scene_005",
+      "arc": "desarrollo",
+      "duration_seconds": 10.5,
+      "narration": "Antes, estas especies solo se habían detectado en fase gas o en matrices a temperaturas criogénicas. Nunca como compuestos estables a temperatura ambiente en condiciones de laboratorio.",
+      "on_screen_text": "Antes: inestables",
+      "visual_description": "pop art comic split panel of cold matrix isolation vs room temperature crystals",
+      "image_prompt": "pop art comic book panel, Ben-Day halftone dots, bold black outlines, saturated primary colors, dramatic action burst background, vertical 9:16, no text + pop art comic split panel of cold matrix isolation versus room temperature crystals",
+      "source_ids": ["SRC-001"],
+      "asset_filename": "frames/scene_005.jpg",
+      "sfx": ["hielo"],
+      "ambiente": "viento"
+    },
+    {
+      "id": "scene_006",
+      "arc": "cierre_historia",
+      "duration_seconds": 10.0,
+      "narration": "El hallazgo abre caminos para preparar más moléculas elusivas del bloque p de la tabla periódica. Casi todos en el campo habían abandonado la búsqueda hace décadas.",
+      "on_screen_text": "Búsqueda abandonada",
+      "visual_description": "pop art comic of abandoned lab notebooks transforming into new molecular structures",
+      "image_prompt": "pop art comic book panel, Ben-Day halftone dots, bold black outlines, saturated primary colors, dramatic action burst background, vertical 9:16, no text + pop art comic of abandoned lab notebooks transforming into new molecular structures",
+      "source_ids": ["SRC-002"],
+      "asset_filename": "frames/scene_006.jpg",
+      "sfx": ["página"],
+      "ambiente": "viento"
+    },
+    {
+      "id": "scene_007",
+      "arc": "cierre_historia",
+      "duration_seconds": 9.5,
+      "narration": "Ahora los químicos pueden estudiarlas en detalle, manipularlas y construir nuevas estructuras sobre ellas. Un paradigma de sesenta años de intentos fallidos se rompió de forma inesperada.",
+      "on_screen_text": "Paradigma roto",
+      "visual_description": "pop art comic of scientists celebrating with stable oxoborane models in hands",
+      "image_prompt": "pop art comic book panel, Ben-Day halftone dots, bold black outlines, saturated primary colors, dramatic action burst background, vertical 9:16, no text + pop art comic of scientists celebrating with stable oxoborane models in hands",
+      "source_ids": ["SRC-001"],
+      "asset_filename": "frames/scene_007.jpg",
+      "sfx": ["aplausos"],
+      "ambiente": "viento"
+    },
+    {
+      "id": "scene_008",
+      "arc": "reflexion_o_pregunta",
+      "duration_seconds": 11.5,
+      "narration": "¿Qué otras moléculas que creíamos imposibles esperan simplemente una reacción inesperada para volverse reales? Esto fue Datos y ociosidades.",
+      "on_screen_text": "¿Qué más es posible?",
+      "visual_description": "pop art comic night sky over lab with floating question mark made of atoms",
+      "image_prompt": "pop art comic book panel, Ben-Day halftone dots, bold black outlines, saturated primary colors, dramatic action burst background, vertical 9:16, no text + pop art comic night sky over lab with floating question mark made of atoms",
+      "source_ids": ["SRC-001"],
+      "asset_filename": "frames/scene_008.jpg",
+      "sfx": ["estrellas"],
+      "ambiente": "viento"
+    }
+  ],
+  "cortinilla_fuentes": {
+    "duration_seconds": 6,
+    "titulo": "Fuentes",
+    "aviso": "Imágenes generadas con IA. Voz sintética. Audio sintetizado.",
+    "firma": "Datos y ociosidades · @datosyociosidades"
+  },
+  "export": {
+    "filename": "capsula.mp4",
+    "resolution": "1080x1920",
+    "fps": 30,
+    "loudness_lufs": -14
+  }
+}
