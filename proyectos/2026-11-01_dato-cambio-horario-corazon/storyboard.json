@@ -225,7 +225,7 @@
       "arc": "desarrollo",
       "duration_seconds": 11,
       "narration": "¿Puede notarse en urgencias? Sandhu, Seth y Gurm analizaron 42,060 ingresos por infarto tratados con angioplastia en Michigan entre 2010 y 2013. La angioplastia abre una arteria con un catéter.",
-      "on_screen_text": "42,060 ingresos · Michigan",
+      "on_screen_text": "42,060 ingresos",
       "visual_description": "Fichas clínicas abstractas se agrupan sobre un mapa de Michigan, evocando un registro hospitalario estatal entre 2010 y 2013; sin pacientes ni hospitales ficticios.",
       "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text. Fichas clínicas abstractas se agrupan sobre un mapa de Michigan, evocando un registro hospitalario estatal entre 2010 y 2013; sin pacientes ni hospitales ficticios. Sin texto dentro de la imagen.",
       "ambiente": "Ambiente hospitalario neutro, sin alarmas",
@@ -255,7 +255,7 @@
       "arc": "desarrollo",
       "duration_seconds": 11,
       "narration": "Al adelantar el reloj en primavera, el lunes siguiente registró un riesgo relativo de 1.24: 24% más casos diarios de lo esperado, tras ajustar tendencia y estacionalidad.",
-      "on_screen_text": "Primavera: +24% el lunes",
+      "on_screen_text": "Lunes: +24%",
       "visual_description": "Calendario de primavera con lunes destacado; barra de riesgo relativo 1.24 comparada con 1.00.",
       "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text. Calendario de primavera con lunes destacado; barra de riesgo relativo 1.24 comparada con 1.00. Sin texto dentro de la imagen.",
       "ambiente": "Ritmo urbano matutino",
@@ -286,7 +286,7 @@
       "arc": "desarrollo",
       "duration_seconds": 11,
       "narration": "Al atrasarlo en otoño, el martes siguiente el riesgo relativo fue 0.79: 21% menos. Pero el total semanal no mostró diferencia significativa: cambió el reparto por día, no la suma.",
-      "on_screen_text": "Otoño: −21% el martes",
+      "on_screen_text": "Martes: −21%",
       "visual_description": "Calendario otoñal con martes destacado; comparación 1.24 en primavera y 0.79 en otoño, con línea semanal sin diferencia significativa.",
       "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text. Calendario otoñal con martes destacado; comparación 1.24 en primavera y 0.79 en otoño, con línea semanal sin diferencia significativa. Sin texto dentro de la imagen.",
       "ambiente": "Ritmo urbano que se calma",
@@ -340,7 +340,7 @@
       "arc": "reflexion_o_pregunta",
       "duration_seconds": 8,
       "narration": "La hora vuelve atrás; el cuerpo no pulsa un botón para ajustarse. ¿Qué haces para recuperar tu ritmo? Esto fue Datos y ociosidades.",
-      "on_screen_text": "El cuerpo lleva su propio ritmo",
+      "on_screen_text": "Ritmo propio",
       "visual_description": "El reloj vuelve a avanzar; la luz del amanecer entra por la ventana y una silueta humana continúa su rutina, sin promesa médica.",
       "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text. El reloj vuelve a avanzar; la luz del amanecer entra por la ventana y una silueta humana continúa su rutina, sin promesa médica. Sin texto dentro de la imagen.",
       "ambiente": "Amanecer tranquilo",
@@ -405,5 +405,31 @@
     "No afirmar causalidad.",
     "No afirmar que el cambio horario aumentó el total semanal de infartos.",
     "El mapa usa el centro de población de Michigan, no coordenadas de hospitales."
-  ]
+  ],
+  "narrative_qa": {
+    "status": "PASS",
+    "score": 87,
+    "review_basis": "lectura_en_frio_solo_narracion",
+    "checks": {
+      "pregunta_central_reconstruible": true,
+      "apertura_in_medias_res": true,
+      "progresion_por_escena": true,
+      "transiciones_causales": true,
+      "giro_cientifico_explicado": true,
+      "limite_evidencia_explicito": true,
+      "payoff_cierre_apertura": true
+    },
+    "critical_flags": [],
+    "reviewer_role": "auditor_capcot_independiente",
+    "review_scope": "Lectura exclusiva de la narración concatenada en orden; título, resumen, arco, notas y narrative_contract excluidos.",
+    "check_evidence": {
+      "pregunta_central_reconstruible": "Se reconstruye una pregunta única: si el cambio de hora altera cuándo llegan a urgencias los infartos.",
+      "apertura_in_medias_res": "El reloj ya está retrocediendo de las dos a la una; la anomalía está ocurriendo.",
+      "progresion_por_escena": "La narración avanza de la hora social al reloj circadiano, después a la cohorte, los dos cambios estacionales, el resultado semanal y el límite.",
+      "transiciones_causales": "El salto horario lleva al mecanismo circadiano; ese mecanismo abre la pregunta clínica; primavera y otoño se contrastan; el total semanal prepara la cautela final.",
+      "giro_cientifico_explicado": "Los cambios opuestos por día no se traducen en diferencia semanal significativa: el hallazgo trata del reparto temporal, no de un aumento semanal demostrado.",
+      "limite_evidencia_explicito": "Michigan, 2010–2013, ingresos tratados con angioplastia; estudio observacional que no demuestra causalidad ni cubre todos los infartos.",
+      "payoff_cierre_apertura": "El cierre vuelve al reloj que retrocede y al cuerpo que no se ajusta con un botón; la pregunta final nace del ritmo circadiano presentado al inicio."
+    }
+  }
 }
