@@ -295,5 +295,26 @@
     }
   },
   "estado_produccion": "MONTADO_PENDIENTE_PROGRAMAR",
-  "thumbnail_source": "scene_001"
+  "thumbnail_source": "scene_001",
+  "narrative_qa": {
+    "status": "FAIL",
+    "score": 72,
+    "review_basis": "lectura_en_frio_solo_narracion",
+    "checks": {
+      "pregunta_central_reconstruible": true,
+      "apertura_in_medias_res": false,
+      "progresion_por_escena": true,
+      "transiciones_causales": false,
+      "giro_cientifico_explicado": false,
+      "limite_evidencia_explicito": true,
+      "payoff_cierre_apertura": true
+    },
+    "critical_flags": [
+      "APERTURA_ESTATICA_Y_ESCENARIO_NO_DOCUMENTADO",
+      "TRANSICIONES_GENERICAS",
+      "CIFRA_300000_SIN_UNIDAD_DE_ANALISIS",
+      "GIRO_COMPARATIVO_NO_EXPLICADO"
+    ],
+    "reviewer_role": "auditor_capcot_independiente"
+  }
 }
