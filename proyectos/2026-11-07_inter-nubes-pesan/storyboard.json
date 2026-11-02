@@ -1,0 +1,251 @@
+{
+  "_schema": "CAPCOT_STORYBOARD_TEXT_V2",
+  "project_id": "2026-11-07_inter-nubes-pesan",
+  "serie": "Datos y ociosidades",
+  "title": "Una nube pesa toneladas y aun así flota",
+  "titulo": "Una nube también tiene masa",
+  "language": "es-MX",
+  "aspect_ratio": "9:16",
+  "target_duration_seconds": 84,
+  "estructura": "pregunta",
+  "audience": "Público general",
+  "occasion": "Cápsula vertical",
+  "resumen": "La masa depende del volumen y del contenido de agua líquida; no existe cifra universal.",
+  "trend_source": {
+    "termino": "¿Cuánto pesa una nube?",
+    "fecha_publicacion": "",
+    "url": "https://www.usgs.gov/water-science-school/science/how-much-does-a-cloud-weigh"
+  },
+  "editorial_status": "BORRADOR_ESPERA_AUDITOR_PASS",
+  "arco": {
+    "hook_medias_res": "Una nube parece liviana porque flota en el cielo. Sin embargo, las gotas de agua que contiene tienen masa, y una nube de gran volumen puede reunir cientos de toneladas.",
+    "desarrollo": "Para estimar esa masa hay que multiplicar el volumen de la nube por su contenido de agua líquida. No existe un peso único: cambia con el tipo y el tamaño de la nube. El ejemplo del USGS considera un cúmulo de un kilómetro cúbico y un contenido de agua de medio gramo por metro cúbico. Esa cuenta da aproximadamente 500 mil kilogramos de agua líquida. Esa cifra no significa que todas las nubes pesen lo mismo, ni que estemos contando toda la masa del aire húmedo que forma la nube. Es una estimación ilustrativa para un volumen supuesto. Entonces, ¿por qué no cae toda esa agua de golpe? Porque las gotas de nube son diminutas y tienen una velocidad de caída muy baja; las corrientes ascendentes pueden mantenerlas suspendidas.",
+    "cierre_historia": "Cuando las gotas chocan y crecen lo suficiente, su velocidad de caída aumenta y puede comenzar la precipitación. La nube no flota porque carezca de peso: intervienen el tamaño de las gotas y la dinámica del aire.",
+    "reflexion_o_pregunta": "Un cúmulo de un kilómetro cúbico puede contener cerca de 500 mil kilos de agua, según los supuestos del ejemplo. No todas las nubes son iguales. Esto fue Datos y ociosidades."
+  },
+  "estilo_id": "atlas_antiguo",
+  "estilo_visual": "Atlas antiguo grabado",
+  "visual_identity": {
+    "style_id": "atlas_antiguo",
+    "style_name": "Atlas antiguo grabado",
+    "prompt_base": "antique engraved atlas map illustration, hand-colored copperplate, compass rose, sea monsters, aged parchment, single large central motif, not photorealistic, vertical 9:16, no text",
+    "palette": "pergamino, sepia, verde mar, rojo lacre",
+    "lighting": "Según prompt base",
+    "texture": "Según prompt base",
+    "composition": "Vertical 9:16; continuidad entre escenas",
+    "negative_prompt": "No texto incrustado, no marcas de agua, no datos visuales falsos",
+    "reference_assets": [],
+    "seed": null,
+    "seed_policy": "Mantener identidad visual entre escenas"
+  },
+  "typography_identity": {
+    "font_family": "DejaVu Sans",
+    "font_weight": "700/400",
+    "title_style": "Máximo seis palabras desde frame 0",
+    "subtitle_style": "Bloques de máximo tres palabras",
+    "hierarchy": "Gancho > dato > subtítulos",
+    "animation": "Un movimiento por plano"
+  },
+  "voice": {
+    "engine": "edge-tts",
+    "voice_id": "es-MX-JorgeNeural",
+    "language": "es-MX",
+    "rate": "+7%",
+    "pitch": "-2Hz",
+    "pad_seconds": 0.3,
+    "modo_pausas": "continuo"
+  },
+  "sources": [
+    {
+      "id": "SRC-001",
+      "cita_corta": "USGS Water Science School",
+      "url": "https://www.usgs.gov/water-science-school/science/how-much-does-a-cloud-weigh",
+      "doi": null,
+      "accessed": "2026-10-31",
+      "publication_date": "",
+      "supports": [
+        "Una estimación ilustrativa para un cúmulo de 1 km³ con contenido de agua líquida de 0.5 g/m³ equivale a unos 500,000 kg de agua.",
+        "La masa estimada varía con el volumen y el contenido de agua líquida; no existe una cifra universal para todas las nubes."
+      ],
+      "verification_status": "VERIFICADO_RESOLVEDOR"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_001",
+      "arc": "hook_medias_res",
+      "duration_seconds": 10,
+      "narration": "Una nube parece liviana porque flota en el cielo. Sin embargo, las gotas de agua que contiene tienen masa, y una nube de gran volumen puede reunir cientos de toneladas.",
+      "on_screen_text": "Una nube sí tiene masa",
+      "visual_description": "Ilustración educativa secuencial sobre ¿cuánto pesa una nube?",
+      "image_prompt": "antique engraved atlas map illustration, hand-colored copperplate, compass rose, sea monsters, aged parchment, single large central motif, not photorealistic, vertical 9:16, no text, educational visual scene illustrating ¿cuánto pesa una nube?, consistent continuity",
+      "ambiente": "Ambiente discreto; voz al frente",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "atlas_antiguo"
+    },
+    {
+      "id": "scene_002",
+      "arc": "desarrollo",
+      "duration_seconds": 12,
+      "narration": "Para estimar esa masa hay que multiplicar el volumen de la nube por su contenido de agua líquida. No existe un peso único: cambia con el tipo y el tamaño de la nube.",
+      "on_screen_text": "Volumen y agua líquida",
+      "visual_description": "Ilustración educativa secuencial sobre ¿cuánto pesa una nube?",
+      "image_prompt": "antique engraved atlas map illustration, hand-colored copperplate, compass rose, sea monsters, aged parchment, single large central motif, not photorealistic, vertical 9:16, no text, educational visual scene illustrating ¿cuánto pesa una nube?, consistent continuity",
+      "ambiente": "Ambiente discreto; voz al frente",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "atlas_antiguo",
+      "capa": {
+        "tipo": "mapa",
+        "titulo": "U.S. Geological Survey, Reston",
+        "puntos": [
+          {
+            "nombre": "U.S. Geological Survey, Reston",
+            "lat": 38.95,
+            "lon": -77.36
+          }
+        ],
+        "fuente": "USGS Water Science School, How Much Does a Cloud Weigh? https://www.usgs.gov/water-science-school/science/how-much-does-a-cloud-weigh. El pin ubica la institución editora del recurso, no una nube concreta. Cartografía base: OpenStreetMap."
+      }
+    },
+    {
+      "id": "scene_003",
+      "arc": "desarrollo",
+      "duration_seconds": 12,
+      "narration": "El ejemplo del USGS considera un cúmulo de un kilómetro cúbico y un contenido de agua de medio gramo por metro cúbico. Esa cuenta da aproximadamente 500 mil kilogramos de agua líquida.",
+      "on_screen_text": "500 mil kilos",
+      "visual_description": "Ilustración educativa secuencial sobre ¿cuánto pesa una nube?",
+      "image_prompt": "antique engraved atlas map illustration, hand-colored copperplate, compass rose, sea monsters, aged parchment, single large central motif, not photorealistic, vertical 9:16, no text, educational visual scene illustrating ¿cuánto pesa una nube?, consistent continuity",
+      "ambiente": "Ambiente discreto; voz al frente",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "atlas_antiguo",
+      "capa": {
+        "tipo": "dato",
+        "valor": "≈500,000 kg",
+        "etiqueta": "Estimación ilustrativa para 1 km³ de cúmulo",
+        "fuente": "USGS Water Science School, How Much Does a Cloud Weigh? Para un cúmulo hipotético de 1 km³ y 0.5 g/m³ de contenido de agua líquida, el cálculo es 500,000 kg de agua. Es una estimación ilustrativa, no una medida universal. https://www.usgs.gov/water-science-school/science/how-much-does-a-cloud-weigh."
+      }
+    },
+    {
+      "id": "scene_004",
+      "arc": "desarrollo",
+      "duration_seconds": 12,
+      "narration": "Esa cifra no significa que todas las nubes pesen lo mismo. Una nube pequeña y una tormenta son sistemas muy distintos; el ejemplo es una estimación para un volumen supuesto, no una medida universal.",
+      "on_screen_text": "Una estimación, no una regla",
+      "visual_description": "Ilustración educativa secuencial sobre ¿cuánto pesa una nube?",
+      "image_prompt": "antique engraved atlas map illustration, hand-colored copperplate, compass rose, sea monsters, aged parchment, single large central motif, not photorealistic, vertical 9:16, no text, educational visual scene illustrating ¿cuánto pesa una nube?, consistent continuity",
+      "ambiente": "Ambiente discreto; voz al frente",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "atlas_antiguo"
+    },
+    {
+      "id": "scene_005",
+      "arc": "desarrollo",
+      "duration_seconds": 12,
+      "narration": "Entonces, ¿por qué no cae toda esa agua de golpe? Las gotas de nube son diminutas y caen muy despacio; las corrientes ascendentes pueden mantenerlas suspendidas.",
+      "on_screen_text": "Gotas diminutas",
+      "visual_description": "Ilustración educativa secuencial sobre ¿cuánto pesa una nube?",
+      "image_prompt": "antique engraved atlas map illustration, hand-colored copperplate, compass rose, sea monsters, aged parchment, single large central motif, not photorealistic, vertical 9:16, no text, educational visual scene illustrating ¿cuánto pesa una nube?, consistent continuity",
+      "ambiente": "Ambiente discreto; voz al frente",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "atlas_antiguo"
+    },
+    {
+      "id": "scene_006",
+      "arc": "cierre_historia",
+      "duration_seconds": 10,
+      "narration": "Cuando las gotas chocan y crecen, su velocidad de caída aumenta y puede comenzar la precipitación. La nube sí tiene masa: su suspensión depende del tamaño de las gotas y de la dinámica del aire.",
+      "on_screen_text": "Cuándo cae la lluvia",
+      "visual_description": "Ilustración educativa secuencial sobre ¿cuánto pesa una nube?",
+      "image_prompt": "antique engraved atlas map illustration, hand-colored copperplate, compass rose, sea monsters, aged parchment, single large central motif, not photorealistic, vertical 9:16, no text, educational visual scene illustrating ¿cuánto pesa una nube?, consistent continuity",
+      "ambiente": "Ambiente discreto; voz al frente",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "atlas_antiguo"
+    },
+    {
+      "id": "scene_007",
+      "arc": "reflexion_o_pregunta",
+      "duration_seconds": 10,
+      "narration": "Un cúmulo de un kilómetro cúbico puede contener cerca de 500 mil kilos de agua, según los supuestos del ejemplo. No todas las nubes son iguales. Esto fue Datos y ociosidades.",
+      "on_screen_text": "El peso de una nube",
+      "visual_description": "Ilustración educativa secuencial sobre ¿cuánto pesa una nube?",
+      "image_prompt": "antique engraved atlas map illustration, hand-colored copperplate, compass rose, sea monsters, aged parchment, single large central motif, not photorealistic, vertical 9:16, no text, educational visual scene illustrating ¿cuánto pesa una nube?, consistent continuity",
+      "ambiente": "Ambiente discreto; voz al frente",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "atlas_antiguo"
+    }
+  ],
+  "cortinilla_fuentes": {
+    "duration_seconds": 6,
+    "titulo": "Fuentes",
+    "aviso": "Declarar apoyo de IA y medios sintéticos en versión final.",
+    "firma": "Datos y ociosidades",
+    "source_ids": [
+      "SRC-001"
+    ]
+  },
+  "audio": {
+    "music_asset": null,
+    "music_plan": "Cama discreta; licencia por validar en montaje",
+    "music_license": null
+  },
+  "export": {
+    "resolution": "1080x1920",
+    "fps": 30,
+    "render_status": "NOT_GENERATED"
+  },
+  "publicacion": {
+    "status": "PENDIENTE_DECISION_GROK",
+    "platforms": [
+      "YouTube Shorts",
+      "TikTok",
+      "Facebook Reels"
+    ],
+    "note": "No publicar desde preproducción textual."
+  },
+  "estado": "BORRADOR_EN_PROYECTOS_ESPERA_AUDITOR_PASS",
+  "production_mode": "storyboard_only",
+  "validation_notes": [
+    "7 escenas; 78 s narración + 6 s cortinilla = 84 s.",
+    "Fusión canónica de las dos variantes: conserva el ejemplo cuantitativo y fuente específica USGS de la variante inter; integra la distinción nube pequeña/tormenta y la explicación de suspensión de la variante extra. La variante extra queda fuera de proyectos y no se crea otra copia."
+  ],
+  "linea_tematica_provisional": "Ciencia y naturaleza",
+  "approved_assets": [],
+  "risk_notes": [
+    "No generalizar más allá de la fuente."
+  ],
+  "thumbnail_source": "scene_001",
+  "slot_hora_cdmx": "17:45",
+  "fecha_objetivo": "2026-11-07",
+  "slot_local": "17:45",
+  "slot_cesta": "intermedio_2",
+  "slot_timezone": "America/Mexico_City",
+  "narrative_contract": {
+    "central_question": "¿Cómo puede una nube contener cientos de toneladas de agua y seguir suspendida en el aire?",
+    "promise": "Relacionar masa, volumen, contenido de agua y tamaño de las gotas.",
+    "stakes": "Corrige la idea de que una nube flota porque no pesa y evita una cifra universal.",
+    "scientific_turn": "El ejemplo USGS estima unos 500,000 kg de agua líquida para un cúmulo hipotético de 1 km³ y 0.5 g/m³; las gotas pequeñas y la dinámica del aire explican la suspensión.",
+    "evidence_limit": "Es una estimación ilustrativa basada en volumen y contenido de agua supuestos, no una medición de todas las nubes ni de toda la masa de aire húmedo.",
+    "payoff": "La nube sí tiene masa; su suspensión depende de las gotas y del movimiento atmosférico, y su masa cambia según el sistema."
+  }
+}

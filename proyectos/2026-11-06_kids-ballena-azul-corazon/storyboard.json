@@ -1,0 +1,249 @@
+{
+  "_schema": "CAPCOT_STORYBOARD_TEXT_V2",
+  "project_id": "2026-11-06_kids-ballena-azul-corazon",
+  "serie": "Datos y ociosidades",
+  "title": "El corazón de la ballena azul",
+  "titulo": "Un pulso en el océano",
+  "language": "es-MX",
+  "aspect_ratio": "9:16",
+  "target_duration_seconds": 84,
+  "estructura": "pregunta",
+  "audience": "Público general",
+  "occasion": "Cápsula vertical de divulgación",
+  "resumen": "Un ECG registró 4–8 latidos/min durante inmersiones, mínimo de 2, y 25–37 en superficie.",
+  "trend_source": {
+    "termino": "El corazón de la ballena azul",
+    "fecha_publicacion": "",
+    "url": "https://doi.org/10.1073/pnas.1914273116"
+  },
+  "editorial_status": "BORRADOR_ESPERA_AUDITOR_PASS",
+  "arco": {
+    "hook_medias_res": "Un equipo logró registrar el ritmo cardíaco de una ballena azul salvaje mientras se alimentaba y buceaba en el océano.",
+    "desarrollo": "Durante las inmersiones, el corazón latía normalmente entre cuatro y ocho veces por minuto. El mínimo registrado en ese ejemplar fue de dos latidos por minuto. Al salir a la superficie, el ritmo aumentaba de forma marcada: el estudio registró entre 25 y 37 latidos por minuto. El cambio ayuda a distribuir oxígeno de manera distinta durante la inmersión y la recuperación. No es un metrónomo fijo: el pulso responde a la actividad y a la profundidad. La medición fue extraordinaria porque obtener señales cardíacas de un animal tan grande y libre en el océano es técnicamente difícil.",
+    "cierre_historia": "El mecanismo tiene límites y depende de las condiciones observadas. No conviene convertir una medición particular en una regla universal.",
+    "reflexion_o_pregunta": "Esto fue Datos y ociosidades."
+  },
+  "estilo_id": "dibujo_cientifico_scratchboard",
+  "estilo_visual": "Scratchboard científico",
+  "visual_identity": {
+    "style_id": "dibujo_cientifico_scratchboard",
+    "style_name": "Scratchboard científico",
+    "prompt_base": "scratchboard illustration, white lines scratched on black, fine cross-hatching, dramatic single subject filling frame, black background, not photorealistic, vertical 9:16, no text",
+    "palette": "negro, blanco, ámbar",
+    "lighting": "Según prompt base",
+    "texture": "Según prompt base",
+    "composition": "Vertical 9:16; continuidad de sujeto y paleta",
+    "negative_prompt": "No texto generado, no marcas de agua, no datos falsos",
+    "reference_assets": [],
+    "seed": null,
+    "seed_policy": "Continuidad entre escenas"
+  },
+  "typography_identity": {
+    "font_family": "DejaVu Sans",
+    "font_weight": "700 para gancho; 400 para subtítulos",
+    "title_style": "Máximo seis palabras desde frame 0",
+    "subtitle_style": "Bloques de máximo tres palabras",
+    "hierarchy": "Gancho > dato > subtítulos",
+    "animation": "Un movimiento por plano; texto en postproducción"
+  },
+  "voice": {
+    "engine": "edge-tts",
+    "voice_id": "es-MX-JorgeNeural",
+    "language": "es-MX",
+    "rate": "+7%",
+    "pitch": "-2Hz",
+    "pad_seconds": 0.3,
+    "modo_pausas": "continuo"
+  },
+  "sources": [
+    {
+      "id": "SRC-001",
+      "cita_corta": "Goldbogen et al. 2019, Extreme bradycardia and tachycardia in the world's largest animal, PNAS.",
+      "url": "https://doi.org/10.1073/pnas.1914273116",
+      "doi": "10.1073/pnas.1914273116",
+      "accessed": "2026-10-31",
+      "publication_date": "",
+      "supports": [
+        "Un ECG registró 4–8 latidos/min durante inmersiones, mínimo de 2, y 25–37 en superficie."
+      ],
+      "verification_status": "VERIFICADO_RESOLVEDOR"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_001",
+      "arc": "hook_medias_res",
+      "duration_seconds": 10,
+      "narration": "Un equipo logró registrar el ritmo cardíaco de una ballena azul salvaje mientras se alimentaba y buceaba en el océano.",
+      "on_screen_text": "Un pulso en el océano",
+      "visual_description": "Representación didáctica de el corazón de la ballena azul, secuencia causal clara y legible",
+      "image_prompt": "scratchboard illustration, white lines scratched on black, fine cross-hatching, dramatic single subject filling frame, black background, not photorealistic, vertical 9:16, no text, educational visual scene illustrating el corazón de la ballena azul, consistent visual continuity",
+      "ambiente": "Ambiente discreto; voz al frente",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "dibujo_cientifico_scratchboard"
+    },
+    {
+      "id": "scene_002",
+      "arc": "desarrollo",
+      "duration_seconds": 12,
+      "narration": "Durante las inmersiones, el corazón latía normalmente entre cuatro y ocho veces por minuto. El mínimo registrado en ese ejemplar fue de dos latidos por minuto.",
+      "on_screen_text": "El mecanismo",
+      "visual_description": "Representación didáctica de el corazón de la ballena azul, secuencia causal clara y legible",
+      "image_prompt": "scratchboard illustration, white lines scratched on black, fine cross-hatching, dramatic single subject filling frame, black background, not photorealistic, vertical 9:16, no text, educational visual scene illustrating el corazón de la ballena azul, consistent visual continuity",
+      "ambiente": "Ambiente discreto; voz al frente",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "dibujo_cientifico_scratchboard",
+      "capa": {
+        "tipo": "mapa",
+        "titulo": "Monterey Bay, California",
+        "puntos": [
+          {
+            "nombre": "Monterey Bay, California",
+            "lat": 36.8,
+            "lon": -121.9
+          }
+        ],
+        "fuente": "Goldbogen et al. PNAS 2019; área de estudio de campo. Goldbogen et al. (2019) registraron ritmos de 4–8 latidos por minuto durante inmersiones, con mínimo de 2. El punto sitúa el contexto de trabajo en Monterey Bay; no representa distribución de la especie. Cartografía base: OpenStreetMap."
+      }
+    },
+    {
+      "id": "scene_003",
+      "arc": "desarrollo",
+      "duration_seconds": 12,
+      "narration": "Al salir a la superficie, el ritmo aumentaba de forma marcada: el estudio registró entre 25 y 37 latidos por minuto.",
+      "on_screen_text": "Qué ocurre",
+      "visual_description": "Representación didáctica de el corazón de la ballena azul, secuencia causal clara y legible",
+      "image_prompt": "scratchboard illustration, white lines scratched on black, fine cross-hatching, dramatic single subject filling frame, black background, not photorealistic, vertical 9:16, no text, educational visual scene illustrating el corazón de la ballena azul, consistent visual continuity",
+      "ambiente": "Ambiente discreto; voz al frente",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "dibujo_cientifico_scratchboard",
+      "capa": {
+        "tipo": "dato",
+        "valor": "2–8 latidos/min",
+        "etiqueta": "Ritmo cardíaco durante inmersiones registrado en el ejemplar",
+        "fuente": "Goldbogen et al. PNAS 2019; área de estudio de campo. https://doi.org/10.1073/pnas.1914273116. Goldbogen et al. (2019) registraron ritmos de 4–8 latidos por minuto durante inmersiones, con mínimo de 2. El punto sitúa el contexto de trabajo en Monterey Bay; no representa distribución de la especie."
+      }
+    },
+    {
+      "id": "scene_004",
+      "arc": "desarrollo",
+      "duration_seconds": 12,
+      "narration": "El cambio ayuda a distribuir oxígeno de manera distinta durante la inmersión y la recuperación. No es un metrónomo fijo: el pulso responde a la actividad y a la profundidad.",
+      "on_screen_text": "La evidencia",
+      "visual_description": "Representación didáctica de el corazón de la ballena azul, secuencia causal clara y legible",
+      "image_prompt": "scratchboard illustration, white lines scratched on black, fine cross-hatching, dramatic single subject filling frame, black background, not photorealistic, vertical 9:16, no text, educational visual scene illustrating el corazón de la ballena azul, consistent visual continuity",
+      "ambiente": "Ambiente discreto; voz al frente",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "dibujo_cientifico_scratchboard"
+    },
+    {
+      "id": "scene_005",
+      "arc": "desarrollo",
+      "duration_seconds": 12,
+      "narration": "La medición fue extraordinaria porque obtener señales cardíacas de un animal tan grande y libre en el océano es técnicamente muy difícil.",
+      "on_screen_text": "El matiz",
+      "visual_description": "Representación didáctica de el corazón de la ballena azul, secuencia causal clara y legible",
+      "image_prompt": "scratchboard illustration, white lines scratched on black, fine cross-hatching, dramatic single subject filling frame, black background, not photorealistic, vertical 9:16, no text, educational visual scene illustrating el corazón de la ballena azul, consistent visual continuity",
+      "ambiente": "Ambiente discreto; voz al frente",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "dibujo_cientifico_scratchboard"
+    },
+    {
+      "id": "scene_006",
+      "arc": "cierre_historia",
+      "duration_seconds": 10,
+      "narration": "El límite: estos registros provienen de un solo ejemplar, en las condiciones de ese estudio. Sirven como evidencia valiosa, no como norma para toda la especie.",
+      "on_screen_text": "Qué sabemos",
+      "visual_description": "Representación didáctica de el corazón de la ballena azul, secuencia causal clara y legible",
+      "image_prompt": "scratchboard illustration, white lines scratched on black, fine cross-hatching, dramatic single subject filling frame, black background, not photorealistic, vertical 9:16, no text, educational visual scene illustrating el corazón de la ballena azul, consistent visual continuity",
+      "ambiente": "Ambiente discreto; voz al frente",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "dibujo_cientifico_scratchboard"
+    },
+    {
+      "id": "scene_007",
+      "arc": "reflexion_o_pregunta",
+      "duration_seconds": 10,
+      "narration": "El corazón más grande del planeta casi se detiene al bucear y acelera al subir a respirar. ¿Qué otro récord animal te gustaría conocer? Esto fue Datos y ociosidades.",
+      "on_screen_text": "Esto fue Datos y ociosidades",
+      "visual_description": "Representación didáctica de el corazón de la ballena azul, secuencia causal clara y legible",
+      "image_prompt": "scratchboard illustration, white lines scratched on black, fine cross-hatching, dramatic single subject filling frame, black background, not photorealistic, vertical 9:16, no text, educational visual scene illustrating el corazón de la ballena azul, consistent visual continuity",
+      "ambiente": "Ambiente discreto; voz al frente",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "dibujo_cientifico_scratchboard"
+    }
+  ],
+  "cortinilla_fuentes": {
+    "duration_seconds": 6,
+    "titulo": "Fuentes",
+    "aviso": "Contenido realizado con apoyo de IA; declarar recursos sintéticos usados en versión final.",
+    "firma": "Datos y ociosidades",
+    "source_ids": [
+      "SRC-001"
+    ]
+  },
+  "audio": {
+    "music_asset": null,
+    "music_plan": "Cama discreta; selección y licencia por validar en montaje",
+    "music_license": null
+  },
+  "export": {
+    "resolution": "1080x1920",
+    "fps": 30,
+    "render_status": "NOT_GENERATED"
+  },
+  "publicacion": {
+    "status": "PENDIENTE_DECISION_GROK",
+    "platforms": [
+      "YouTube Shorts",
+      "TikTok",
+      "Facebook Reels"
+    ],
+    "note": "No publicar desde preproducción textual."
+  },
+  "estado": "BORRADOR_EN_PROYECTOS_ESPERA_AUDITOR_PASS",
+  "production_mode": "storyboard_only",
+  "validation_notes": [
+    "7 escenas; objetivo 78 s de narración + 6 s de cortinilla = 84 s."
+  ],
+  "linea_tematica_provisional": "Ciencia y naturaleza",
+  "approved_assets": [],
+  "risk_notes": [
+    "Mantener límites y matices de la fuente; no generalizar más allá de la evidencia."
+  ],
+  "thumbnail_source": "scene_001",
+  "fecha_objetivo": "2026-11-06",
+  "slot_local": "07:00",
+  "slot_hora_cdmx": "07:00",
+  "slot_cesta": "kids",
+  "slot_timezone": "America/Mexico_City",
+  "narrative_contract": {
+    "central_question": "¿Cómo cambia el ritmo cardíaco de una ballena azul cuando bucea y vuelve a la superficie?",
+    "promise": "Entender cómo el pulso acompaña la inmersión y la recuperación.",
+    "stakes": "Muestra una adaptación fisiológica extrema sin convertir un caso en regla de especie.",
+    "scientific_turn": "En el ejemplar registrado, el pulso bajó durante las inmersiones y aumentó al salir a respirar.",
+    "evidence_limit": "Los valores provienen de un solo ejemplar y de las condiciones del estudio; no describen a todas las ballenas azules.",
+    "payoff": "El pulso cambia con la inmersión, pero la medición excepcional no es un promedio universal."
+  }
+}
