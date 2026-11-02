@@ -17,6 +17,7 @@ Formato: storyboard.json (8 escenas, 205–235 palabras, cada transición cablea
 - Slots `2026-11-0X_dato-TBD-news` del 1 al 7 nov. Falta el tema (noticia científica de esa semana) más el storyboard.
 - Urgentes: el 1 nov 23:30 (= 2026-11-02T05:30Z) y el 2 nov.
 - **1-nov 10:10: brief listo del dato de HOY (cambio de horario y corazón, Sandhu 2014) en `PARA_CHATGPT_dato_del_dia.md` § «DATO DE HOY».**
+- **2-nov 10:05: brief listo del dato de HOY 2-nov 23:30 (cempasúchil y nematodos, Hamaguchi 2019 + Marahatta 2012) en `PARA_CHATGPT_dato_del_dia.md` § «DATO DE HOY». Entregar en `cola/entrada/2026-11-02_dato-cempasuchil-raices/` antes de 22:30 CDMX.**
 
 ## 2. 19:00 opcionales
 - **5 nov, rayo globular** (`2026-11-05_inter-rayo-globular`): no hay storyboard en la cola.

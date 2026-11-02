@@ -48,7 +48,37 @@ ChatGPT no tiene cron propio: esta instrucción se activa cuando Mj la pega en e
 
 ---
 
-## 📌 DATO DE HOY — 1 nov 2026, slot 23:30 CDMX (= 2026-11-02T05:30Z)
+## 📌 DATO DE HOY — 2 nov 2026 (Día de Muertos), slot 23:30 CDMX (= 2026-11-03T05:30Z)
+> Brief dejado por Imaginantes 2-nov ~10:05 CDMX. NO hay paquete «dato» con fecha de hoy en `cola/entrada/`. Entregar hoy antes de las 22:30 CDMX. El brief del 1-nov (cambio de horario) quedó vencido abajo; no lo entregues.
+
+- **project_id:** `2026-11-02_dato-cempasuchil-raices`
+- **Gancho del día (tendencia real):** hoy, 2 de noviembre, millones de ofrendas en México llevan cempasúchil. Después del Día de Muertos, mucha gente tira las flores o las macetas.
+- **Hecho usable / wow:** la raíz del cempasúchil (género *Tagetes*) suelta una sustancia, el **alfa-tertienilo**, que es tóxica para los **nematodos agalladores**: gusanitos microscópicos del suelo que hinchan y pudren las raíces de jitomate, pepino y chile. Con luz se vuelve más potente, pero incluso a oscuras (bajo tierra) mata larvas de nematodo, porque atraviesa su piel y les causa estrés oxidativo.
+- **Tip usable (con fuente):** la flor solo protege mientras está **viva y creciendo**. En invernadero, el cempasúchil francés (*Tagetes patula*) redujo los nematodos en el suelo húmedo y activo, pero no en el suelo seco, donde los nematodos están dormidos. Por eso conviene sembrarlo justo después de la cosecha y en suelo regado, no echar flores secas de la ofrenda como si fueran veneno.
+- **Ancla científica (verificada):**
+  - Hamaguchi T. et al. (2019). *Nematicidal actions of the marigold exudate α-terthienyl: oxidative stress-inducing compound penetrates nematode hypodermis.* Biology Open 8(4): bio038646. DOI [10.1242/bio.038646](https://doi.org/10.1242/bio.038646) · PMC: https://pmc.ncbi.nlm.nih.gov/articles/PMC6504006/
+  - Marahatta S. P., Wang K.-H., Sipes B. S., Hooks C. R. R. (2012). *Effects of Tagetes patula on Active and Inactive Stages of Root-Knot Nematodes.* J Nematol 44(1):26–30. PMID 23482862 · PMC: https://pmc.ncbi.nlm.nih.gov/articles/PMC3593261/
+  - NO inventes porcentajes. El «≈50 %» que aparece en Marahatta 2012 viene de un estudio previo (Marahatta et al. 2010) citado ahí; úsalo solo si lo verificas en esa fuente primaria, si no, di «menos nematodos» sin cifra.
+- **Límite obligatorio (penúltima):** son ensayos de laboratorio e invernadero; en campo el efecto es inconsistente, el lixiviado de raíz no frenó la eclosión de huevos y las flores cortadas o secas no sirven.
+- **Términos a explicar en 1 frase llana:** «nematodo» (gusano tan pequeño que no se ve a simple vista), «estrés oxidativo» (la sustancia «oxida» las células del gusano como el óxido al metal), «alfa-tertienilo» (puedes decir «una molécula de la raíz» y nombrarla una sola vez).
+- **Evitar:** no prometer que el cempasúchil cura plagas de todo tipo ni que repele mosquitos (no está en estas fuentes). Tono de Día de Muertos respetuoso, sin calaveras de terror.
+
+### Storyboard sugerido (8 escenas, sin frames — Grok los genera)
+1. **In medias res / paradoja:** «La flor que hoy guía a los muertos… bajo tierra se dedica a matar.» Ofrenda con cempasúchil; la cámara baja al suelo y se ven las raíces.
+2. **Contexto llano:** qué es un nematodo; zoom a un gusanito transparente entrando a la raíz de un jitomate.
+3. **Conflicto:** las agallas, raíces hinchadas como nudos, y la planta que se marchita aunque la riegues.
+4. **Dato 1:** la raíz del cempasúchil suelta una molécula que es veneno para esos gusanos. Metáfora visible: la raíz como guardiana con farol naranja.
+5. **Dato 2 / antítesis:** con luz es más potente, pero a oscuras también mata: atraviesa la piel del gusano y lo «oxida» por dentro.
+6. **Giro técnico / tip:** solo funciona si la planta está viva y el suelo húmedo, cuando los gusanos están despiertos; en suelo seco no hizo efecto. Sembrarla tras la cosecha.
+7. **Límite (penúltima, 120–170 caracteres):** laboratorio e invernadero, en campo falla a veces, y la flor seca de la ofrenda no sirve.
+8. **Giro + pregunta + sello (110–170 car. antes del sello):** ej. «Hoy la usamos para recordar a los que se fueron; en el huerto, para que la planta no se vaya. ¿Qué harás con tu cempasúchil mañana? Esto fue Datos y ociosidades.» (reescribe con eco circular al arranque).
+
+Formato: 205–235 palabras, narración 1100–1300 caracteres, voz es-MX-JorgeNeural +7 % continuo, línea editorial `PARA_CHATGPT_LINEA_EDITORIAL.md` §8–9. Hashtags simples: `#cempasuchil #diademuertos #ciencia #huerto #datoscuriosos`.
+Entrega: `cola/entrada/2026-11-02_dato-cempasuchil-raices/` con `storyboard.json`, `fuentes.md`, `ESTADO_EJECUCION.md` = `PREPARADO_PENDIENTE_REVISION_GROK`.
+
+---
+
+## (Vencido) Dato 1 nov 2026, slot 23:30 CDMX (= 2026-11-02T05:30Z)
 > Brief dejado por Imaginantes 1-nov ~10:10 CDMX. Aún NO hay paquete «dato» con fecha de hoy en `cola/entrada/`. Entregar hoy antes de las 22:30 CDMX.
 > Revisión Imaginantes 1-nov ~16:10 CDMX: sigue SIN paquete en `cola/entrada/2026-11-01_dato-cambio-horario-corazon/`. Brief abajo sigue vigente; entregar antes de 22:30 CDMX.
 
