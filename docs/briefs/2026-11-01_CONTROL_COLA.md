@@ -92,10 +92,10 @@ La agenda tiene cinco slots regulares y un paquete extra de madrugada a las 03:0
 | 2026-11-03_kids-tiburon-groenlandia | 19:00 | 8; 244 palabras; 78+6=84 s | No hay qa.json | YouTube uploaded/private; TT/FB en conflicto entre registros |
 
 Hallazgos de salida:
-- Xolo: estilo declarado teatro_sombras, pero visual_identity.style_id declara carton_recortado; los prompts usan teatro_sombras. Además tiene cortinilla de 12 s y carece de mapa/dato.
-- Pulpo y cebolla: sus ESTADO_EJECUCION dicen 78+6=84 s, pero el JSON suma 78+12=90 s. Los QA locales no son QA narrativo ni QA oficial de Grok.
-- Baffin: usa art_deco_poster, igual que el candidato cambio-horario de las 23:30; hay repetición de estilo el mismo día.
-- Tiburón: storyboard tiene 244 palabras, pero ESTADO_EJECUCION declara 211. El ID conserva fecha 3-nov aunque el slot se adelantó al 1-nov.
+- Xolo: estilo declarado teatro_sombras, pero visual_identity.style_id declara carton_recortado; los prompts usan teatro_sombras. Además tiene cortinilla de 12 s, carece de mapa/dato y deja SFX vacíos en cinco escenas.
+- Pulpo y cebolla: sus ESTADO_EJECUCION dicen 78+6=84 s, pero el JSON suma 78+12=90 s. No tienen mapa/dato y dejan SFX vacíos en todas las escenas. Los QA locales no son QA narrativo ni QA oficial de Grok.
+- Baffin: usa art_deco_poster, igual que el candidato cambio-horario de las 23:30; hay repetición de estilo el mismo día. El storyboard carece de visual_identity y sus escenas no declaran style_id, aunque los image_prompt sí comienzan con el prompt_base del catálogo. El QA local falla subs_max_3_palabras.
+- Tiburón: storyboard tiene 244 palabras, pero ESTADO_EJECUCION declara 211. El ID conserva fecha 3-nov aunque el slot se adelantó al 1-nov. Tiene mapa y dato, pero siete de ocho escenas dejan SFX vacíos.
 - Para tiburón, salidas/_ops registra que TT/FB se programaron el 1-nov 20:00 hora de Nueva York. Sin embargo, publicacion.json mantiene estado pendiente_ui para el 1-nov y conserva otros bloques TT/FB con el slot antiguo del 3-nov. data/reprogramacion_tt_fb_v4_2026-11-01_03.json todavía asigna el slot 1-nov 19:00 a arqueas. La programación TT/FB del tiburón no está reconciliada en los registros.
 - Los storyboard de salidas contienen asset_filename o referencias a MP4, pero el árbol Git no contiene esos frames, audio ni MP4. Algunos mantienen approved_assets=[] y render_status=NOT_GENERATED pese a los registros de carga/programación. No se puede verificar el almacenamiento local desde GitHub.
 - YouTube aparece como uploaded/private con publishAt futuro; eso prueba carga privada/programación registrada, no publicación pública. Los qa.json locales tampoco prueban recepción ni QA oficial de Grok.
