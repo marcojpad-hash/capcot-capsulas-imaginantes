@@ -1217,5 +1217,60 @@
    ]
   ],
   "nota_flujo": "6 h diurnas (08:02→14:04): YT +563 vistas, +22 likes, +2 comentarios, +2 subs (65). Xolo sigue al frente (466) y el pulpo tuvo buen arranque (225 en 7 h); monarca se enfría (+32 vs +155 la ventana anterior). Estancados: corneja 11, Voyager 28, pardelas 14, catálogo viejo en 0–4. TT perfil: 17 seguidores sin cambio, likes 554→558, contador de videos sigue en 35."
+ },
+ {
+  "hora_cdmx": "2026-11-01T20:10-06:00",
+  "base_youtube": "2026-11-01T14:04",
+  "base_tiktok": "2026-11-01T14:04",
+  "youtube_totales": {
+   "view": 25467,
+   "like": 851,
+   "comment": 26
+  },
+  "suscriptores": 65,
+  "shorts_publicos": 36,
+  "delta_youtube": {
+   "view": 370,
+   "like": 5,
+   "comment": 0,
+   "suscriptores": 0
+  },
+  "tiktok_totales": null,
+  "seguidores_tiktok": 17,
+  "likes_perfil_tiktok": 561,
+  "videos_tiktok": 38,
+  "delta_tiktok": {
+   "seguidores": 0,
+   "likes_perfil": 3,
+   "videos": 3,
+   "nota": "Solo perfil público."
+  },
+  "ranking_crecimiento": [
+   [
+    "YT Xoloitzcuintle",
+    142
+   ],
+   [
+    "YT Mosquito",
+    60
+   ],
+   [
+    "YT Pulpo",
+    59
+   ],
+   [
+    "YT Corales",
+    20
+   ],
+   [
+    "YT Kromdraai",
+    17
+   ],
+   [
+    "YT Lágrimas (nuevo)",
+    13
+   ]
+  ],
+  "nota_flujo": "6 h tarde (14:04→20:10): YT +370 vistas, +5 likes, 0 comentarios, subs 65 sin cambio. Xolo sigue al frente (+142, 608); mosquito revive (+60) y pulpo sigue (+59). Recién públicos: lágrimas 13, Baffin 8, tiburón 3 (arranque lento). ZWF6ke9Zec0 ya no aparece público. Catálogo viejo en 0. TT perfil: 17 seguidores, likes 558→561, videos 35→38."
  }
 ]
