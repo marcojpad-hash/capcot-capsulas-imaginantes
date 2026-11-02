@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-26",
+ "actualizado": "2026-11-02",
  "zona_horaria": "America/Mexico_City (UTC-6 todo el año, sin horario de verano)",
  "punto_de_partida_previo": [
   "12:00-14:00",
@@ -7,6 +7,26 @@
  ],
  "nota_conversion": "EE.UU. en horario estándar (desde 1-nov-2026): ET = CDMX+1, CT = CDMX, PT = CDMX-2. En horario de verano (mar-nov): ET = CDMX+2, CT = CDMX+1, PT = CDMX-1. España: CET = CDMX+7 (invierno), CEST = CDMX+8 (verano).",
  "ventanas": [
+  {
+   "id": "manana",
+   "inicio": "06:30",
+   "fin": "07:30",
+   "plataformas": [
+    "youtube_shorts",
+    "tiktok"
+   ],
+   "dias_preferentes": [
+    "mar",
+    "mie",
+    "jue",
+    "sab"
+   ],
+   "cubre": "Camino a escuela/trabajo MX; ET 07:30-08:30 (invierno). Ventana nueva 2-nov.",
+   "base": [
+    "trendreport_mx_2026",
+    "propio_yt_semana_26oct"
+   ]
+  },
   {
    "id": "mediodia",
    "inicio": "13:30",
@@ -27,7 +47,8 @@
     "allmarket",
     "lenostube",
     "wowpostio_mx",
-    "tusfollowers_mx"
+    "tusfollowers_mx",
+    "sprout_2026"
    ]
   },
   {
@@ -48,32 +69,8 @@
     "adobe_shorts",
     "hootsuite_edu",
     "sprout_via_m4e",
-    "buffer_youtube"
-   ]
-  },
-  {
-   "id": "noche",
-   "inicio": "19:00",
-   "fin": "21:00",
-   "plataformas": [
-    "tiktok",
-    "youtube_shorts"
-   ],
-   "dias_preferentes": [
-    "lun",
-    "mar",
-    "mie",
-    "jue",
-    "dom"
-   ],
-   "cubre": "Justo antes del pico nocturno MX/Latam (20-23); Buffer 2026 picos 18-23 h.",
-   "base": [
-    "revvisual_divulgadores",
-    "tokportal",
-    "allmarket",
-    "hashmeta",
-    "buffer_tiktok_2026",
-    "buffer_youtube"
+    "buffer_youtube",
+    "sprout_2026"
    ]
   }
  ],
@@ -206,6 +203,24 @@
    "url": "https://www.ytdetective.com/blog/best-time-to-post-youtube-shorts",
    "tz_original": "UTC",
    "dice": "Sep-2026, 1,710 Shorts/64 canales: ninguna hora ni día gana de forma fiable (p=0.77); probar en lotes."
+  },
+  {
+   "id": "trendreport_mx_2026",
+   "url": "https://trendreport.com/channels/best-time-to-upload/in-mexico/",
+   "tz_original": "CDMX",
+   "dice": "Actualizado 2-nov-2026, 15,425 subidas de 74 canales MX (nov-2025 a oct-2026): Shorts rinden +10% de 4 a 7 a.m.; mejor día martes (+3%); largos 21-24 h -13%. Muestra chica; la hora pesa poco frente a tema/título."
+  },
+  {
+   "id": "sprout_2026",
+   "url": "https://mubert.com/es/blog/best-time-to-post-on-tiktok",
+   "tz_original": "hora local",
+   "dice": "Sprout Social 2026 (307,000 perfiles, nov-2025 a feb-2026, vía resumen de Mubert): TikTok mar-jue 14-18 h; mié 13-20 h; lun/vie 15-17 h; evitar fin de semana. Buffer (7.1M, sep-2026) discrepa: noche 18-23 h y dom 9 a.m."
+  },
+  {
+   "id": "propio_yt_semana_26oct",
+   "url": "",
+   "tz_original": "CDMX",
+   "dice": "YouTube Data API 2-nov 10:10: 28 Shorts públicos del 26-oct al 1-nov = 18,772 vistas acumuladas. Promedio por franja: 03:00 698 (1 video, xolo), 07:00 919 (3), 12:24-14:36 714 (8), 16:06-17:00 666 (6), 19:00-21:00 514 (7), 23:30 670 (3)."
   }
  ],
  "historial_ajustes": [
@@ -223,6 +238,28 @@
    ],
    "por_que": "YT propio (24-26 oct, muestra chica y con sesgo de tema): mediodía 12:32/12:40 = 103 y 56 vistas al día siguiente; 14:45-18:50 = 1,289-1,393 (salvo aves 11, por título). El empuje real llegó 19-22 h (abejas 6->907 vistas entre 19:10 y 22:02). Buffer 2026 (7.1M TikTok; Shorts 1.8M) ve picos 18-23 h y tarde 12-17 h floja; wowpostio/TusFollowers MX: 12-15 y 19-23. Se recorre mediodía a la hora de comida y la noche arranca 19:00 para publicar un poco antes del pico (preferencia Mj). YTDetective sep-2026 (1,710 Shorts) no halla hora universal: probar en lotes.",
    "sin_datos": "Retención por hora no disponible (sin token YouTube Analytics); TikTok sin hora de publicación registrada por video."
+  },
+  {
+   "fecha": "2026-11-02",
+   "antes": [
+    "13:30-15:00",
+    "16:30-18:00",
+    "19:00-21:00"
+   ],
+   "despues": [
+    "06:30-07:30",
+    "13:30-15:00",
+    "16:30-18:00"
+   ],
+   "por_que": "Propio YT: 07:00 fue la franja más fuerte (titanoboa 1,354; serpiente voladora 1,051) y el dato de madrugada 03:00 (xolo 698) ganó el 1-nov; 19:00 fue la más floja la mayoría de los días (pomuch 547, ofrenda 595, kromdraai 209, tiburón 118, lágrimas 141). Trendreport MX (2-nov-2026) ve Shorts +10% 4-7 a.m. Sprout 2026 respalda 14-18 h entre semana para TikTok. Se mantienen mediodía y tarde, entra mañana, noche pasa a prueba. Sesgo fuerte de tema y de edad del video; los días 30-oct a 1-nov bajaron en todas las franjas.",
+   "sin_datos": "Retención por hora no disponible (token sin scope de YouTube Analytics). TikTok: último registro de vistas en repo es 28-oct (Studio), sin hora de publicación por video; no se usa."
   }
- ]
+ ],
+ "ventana_en_prueba": {
+  "id": "noche",
+  "inicio": "19:00",
+  "fin": "21:00",
+  "estado": "fuera de las 3 ventanas desde 2-nov; el slot 19:00 de la parrilla sigue (ya programado hasta 4-nov) como prueba hasta que Mj decida",
+  "motivo": "semana 26-oct a 1-nov: 19:00 promedió ~510 vistas (7 videos) vs ~920 a las 07:00 (3) y ~710 a mediodía (8); muestra chica y con sesgo de tema (series Día de Muertos)"
+ }
 }
