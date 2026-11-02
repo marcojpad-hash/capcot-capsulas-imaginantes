@@ -276,5 +276,36 @@
   "keywords": [
     "pulpo"
   ],
-  "thumbnail_source": "scene_001"
+  "thumbnail_source": "scene_001",
+  "narrative_qa": {
+    "status": "FAIL",
+    "score": 72,
+    "review_basis": "lectura_en_frio_solo_narracion",
+    "checks": {
+      "pregunta_central_reconstruible": true,
+      "apertura_in_medias_res": false,
+      "progresion_por_escena": true,
+      "transiciones_causales": true,
+      "giro_cientifico_explicado": true,
+      "limite_evidencia_explicito": false,
+      "payoff_cierre_apertura": true
+    },
+    "critical_flags": [
+      "APERTURA_HIPOTETICA_NO_IN_MEDIAS_RES",
+      "ANALOGIA_BRANQUIAS_SACAR_AIRE_DEL_AGUA_IMPRECISA",
+      "AFIRMACION_CORAZONES_NO_SUSTITUIBLES_SIN_RESPALDO"
+    ],
+    "reviewer_role": "auditor_capcot_independiente",
+    "reviewed_at": "2026-11-01T15:09:29-06:00",
+    "review_scope": "Lectura exclusiva de la narración concatenada; título, resumen, arco, notas y narrative_contract excluidos.",
+    "check_evidence": {
+      "pregunta_central_reconstruible": "Se entiende que la pregunta es por qué el pulpo tiene tres corazones.",
+      "apertura_in_medias_res": "La apertura empieza con 'Si pudieras...', una hipótesis dirigida al espectador, no una acción o anomalía ya en curso.",
+      "progresion_por_escena": "Se avanza por los corazones branquiales, el corazón sistémico y el transporte de oxígeno.",
+      "transiciones_causales": "El recorrido de la sangre conecta las escenas de branquias, circulación y función de cada corazón.",
+      "giro_cientifico_explicado": "La especialización de dos corazones para las branquias y uno para el cuerpo explica la división del trabajo.",
+      "limite_evidencia_explicito": "No acota la evidencia ni limita la afirmación absoluta sobre qué ocurre si falla uno de los corazones.",
+      "payoff_cierre_apertura": "El final responde para qué necesita tres corazones y vuelve a la pregunta de apertura."
+    }
+  }
 }
