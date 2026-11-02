@@ -35,3 +35,6 @@ Ya está resuelto, no lo toques: Juno, SmartPE, sequías, el lote v4 del 1–2 n
 
 ## Estéticas opcionales (2026-11-02)
 Ver `PARA_CHATGPT_y_GROK_esteticas_opcionales.md`: «oscuro-etéreo» (misterio/fenómenos) y «DIY foto-proceso» (comida/tips prácticos). Solo doc; no generar frames sin pedido de Mj.
+
+## Lote 5–7 nov → PASS del Auditor (2026-11-02)
+Ver `PARA_CHATGPT_5-7nov_PASS_auditor.md`: una copia canónica por slot en `proyectos/<id>/` con `narrative_contract`; sin PASS del Auditor (15:00) nada entra a `cola/entrada/`.
