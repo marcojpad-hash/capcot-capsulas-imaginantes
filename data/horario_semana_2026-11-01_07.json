@@ -410,11 +410,11 @@
   },
   {
    "fecha": "2026-11-05",
-   "hora": null,
+   "hora": "17:45",
    "cesta": "intermedio_2",
    "project_id": "2026-11-05_inter-rayo-globular",
-   "estado": "reserva_sin_slot",
-   "notas": "TÍTULO: El rayo globular: el misterio que pocos han medido. misterio ligero; fuente: Cen et al. 2014 Phys Rev Lett | 2-nov Mj: slot 19:00 retirado desde 5-nov; 07:00 ya ocupado por kids, tema queda en reserva (no se crea slot nuevo).",
+   "estado": "pedir_chatgpt",
+   "notas": "TÍTULO: El rayo globular: el misterio que pocos han medido. misterio ligero; fuente: Cen et al. 2014 Phys Rev Lett | 2-nov Mj: 19:00 retirado; reubicado a 17:45 (ventana tarde 16:30–18:00; 17:00 ocupado por intermedio_1).",
    "hora_original": "19:00"
   },
   {
@@ -451,11 +451,11 @@
   },
   {
    "fecha": "2026-11-06",
-   "hora": null,
+   "hora": "17:45",
    "cesta": "intermedio_2",
    "project_id": "2026-11-06_inter-arena-cantante",
-   "estado": "reserva_sin_slot",
-   "notas": "TÍTULO: Dunas que cantan. fuente: Andreotti 2004 PRL / Douady et al. 2006 | 2-nov Mj: slot 19:00 retirado desde 5-nov; 07:00 ya ocupado por kids, tema queda en reserva (no se crea slot nuevo).",
+   "estado": "pedir_chatgpt",
+   "notas": "TÍTULO: Dunas que cantan. fuente: Andreotti 2004 PRL / Douady et al. 2006 | 2-nov Mj: 19:00 retirado; reubicado a 17:45 (ventana tarde 16:30–18:00; 17:00 ocupado por intermedio_1).",
    "hora_original": "19:00"
   },
   {
@@ -492,11 +492,11 @@
   },
   {
    "fecha": "2026-11-07",
-   "hora": null,
+   "hora": "17:45",
    "cesta": "intermedio_2",
    "project_id": "2026-11-07_inter-nubes-pesan",
-   "estado": "reserva_sin_slot",
-   "notas": "TÍTULO: Una nube pesa toneladas y aun así flota. fuente: USGS Water Science School | 2-nov Mj: slot 19:00 retirado desde 5-nov; 07:00 ya ocupado por kids, tema queda en reserva (no se crea slot nuevo).",
+   "estado": "pedir_chatgpt",
+   "notas": "TÍTULO: Una nube pesa toneladas y aun así flota. fuente: USGS Water Science School | 2-nov Mj: 19:00 retirado; reubicado a 17:45 (ventana tarde 16:30–18:00; 17:00 ocupado por intermedio_1).",
    "hora_original": "19:00"
   },
   {
@@ -508,8 +508,9 @@
    "notas": "TBD-news: noticia científica del mismo día o ≤48h, fuente primaria (paper/agencia). Producir el mismo día."
   }
  ],
- "slots_por_dia_desde_2026-11-05": 4,
+ "slots_por_dia_desde_2026-11-05": 5,
  "notas_politica": [
-  "2026-11-02 Mj: desde 5-nov no se programa 19:00; 19:00 hasta 4-nov inclusive se respeta."
+  "2026-11-02 Mj: desde 5-nov no se programa 19:00; 19:00 hasta 4-nov inclusive se respeta.",
+  "2026-11-02 Mj: intermedio_2 5–7 nov reubicado a 17:45 (ventana tarde); sin reserva_sin_slot."
  ]
 }
