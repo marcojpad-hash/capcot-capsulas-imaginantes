@@ -39,3 +39,13 @@ Los cuatro storyboards del día se encuentran en `cola/entrada/` como JSON de pr
 07:00 Venus; 13:30 palomitas; 17:00 árboles; 19:00 rayo globular.
 
 **Estado:** cuatro paquetes textuales en cola; recepción y decisión de Grok pendientes. El slot de 23:30 queda reservado para noticia científica del mismo día (≤48 h), con fuente primaria y verificación en la fecha de emisión.
+
+
+## Corrección operativa de estado — 2-nov-2026
+
+La frase anterior «cuatro paquetes textuales en cola» no acredita una entrega a Imaginantes. Verificación del árbol de la rama: Venus, palomitas y árboles están en cola/bloqueados/<project_id>/; rayo globular tiene un JSON directo en cola/bloqueados. Ninguno está en `cola/entrada/`.
+
+- No hay entrega acreditada a Grok/Imaginantes ni acuse individual.
+- Los storyboards recuperados tienen 7 escenas y no contienen `narrative_qa`; por tanto, no cumplen el contrato vigente de handoff.
+- La receta semanal pide `cola/entrada/<project_id>/` con tres archivos, pero el workflow de despacho escucha únicamente `cola/entrada/*.json` (JSON de primer nivel). La incompatibilidad debe resolverse antes de entregar.
+- Estado real: preproducción textual; sin frames, audio, render ni publicación.
