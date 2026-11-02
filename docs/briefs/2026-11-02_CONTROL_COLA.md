@@ -159,13 +159,19 @@ En TikTok/Facebook, los objetos internos `reemplazo_v4` conservan estados `pendi
 ### Reconciliación de datos, procedencia y rotación
 
 - `data/horario_semana_2026-11-01_07.json` programa los cuatro slots del 2-nov y conserva el slot 23:30 como TBD.
-- La nota del slot de camarón apunta a `proyectos/2026-xx_kids_camaron-mantis-punetazo`, ruta que no existe; el ID real es `2026-11-02_camaron-mantis`. La misma nota afirma entrega por ChatGPT y estado `PREPARADO_PENDIENTE_REVISION_GROK`, pero `ESTADO_EJECUCION.md` atribuye la carga inicial a Grok Bot (commit `c83c35814499ae0a73443beb4d02d84e0e62c144`). No se atribuye el paquete a la automatización investigadora.
+- La nota del slot de camarón apunta a `proyectos/2026-xx_kids_camaron-mantis-punetazo`, ruta que no existe; el ID real es `2026-11-02_camaron-mantis`. La misma nota afirma entrega por ChatGPT y estado `PREPARADO_PENDIENTE_REVISION_GROK`, pero `ESTADO_EJECUCION.md` atribuye la carga inicial a Grok Bot (commit `c83c35814499ae0a73443beb4d02d84e0e62c144`) y el estado vigente es `BORRADOR_EN_PROYECTOS_NO_APTO_PARA_PROMOCION`. No se atribuye el paquete a la automatización investigadora.
 - La nota de pan conserva `PENDING_SOURCE exacta`, aunque `fuentes.md` y `sources[]` contienen DOI y la verificación declarada. El campo `trend_source.fecha_publicacion` estaba en 2005-10-01 frente a 2003-01 en la fuente; se corrigió a `2003-01` en `proyectos/` y en la copia bloqueada. No se modificó `data/horario_semana` ni el snapshot de `salidas/`.
 - Las notas de murciélagos/sequías dicen «Cola JSON ChatGPT 31-oct», pero no se encontró evidencia de commit que permita atribuir esas copias a la automatización investigadora.
 - `data/rotacion.json` llega a 31-oct; `data/estilos_usados.json` y `data/temas_del_dia.json` llegan a 28-oct; `data/publicaciones.json` llega a 31-oct; `data/cola.json` solo conserva una entrada fallida de 31-oct. No contienen un registro canónico completo del 2-nov.
 - La última salida programada del 1-nov 19:00 usa `crayones_infantiles`; el 2-nov se asignan `teatro_sombras` y `papel_rasgado_capas`, sin repetición inmediata observada. La secuencia no puede certificarse desde `data/rotacion.json`/ `data/estilos_usados.json` porque están desactualizados. Los estilos están en el catálogo; el ajuste temático de papel rasgado para pan es débil frente a los temas declarados del estilo.
-- `scripts/registro_editorial.py` une rotación/publicaciones/cola y storyboards de proyectos, entrada y salidas, pero no recorre `cola/bloqueados/<id>/` y no lee los `publicacion.json` de salidas para IDs/plataformas. No es una reconciliación completa.
+- `scripts/registro_editorial.py` une rotación/publicaciones/cola y storyboards de proyectos, entrada y salidas, pero no incluye ningún contenido de `cola/bloqueados/` (ni JSON directo ni subcarpeta) y no lee los `publicacion.json` de salidas para IDs/plataformas. No es una reconciliación completa.
 - `scripts/procesar_cola.py` usa por defecto la fecha local CDMX y filtra por fecha extraída del nombre/ID. Sin embargo, permite pasar `--fecha` explícita; no existe una prohibición dura de seleccionar una fecha histórica si alguien fuerza ese argumento.
+
+
+### APIs
+
+El documento técnico de Meta/Google Trends tiene corte 31-oct-2026. No se encontró en el repositorio un cambio oficial posterior que justifique reabrir la investigación; por la regla de alcance, no se hizo una nueva búsqueda de APIs. La integración sigue condicionada a OAuth/credenciales del titular y Google Trends API continúa documentada como alfa limitada.
+
 
 ### Actions y configuración de receptor
 
