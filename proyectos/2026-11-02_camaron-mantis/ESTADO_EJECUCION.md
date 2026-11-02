@@ -6,7 +6,7 @@
 - Estado del storyboard: BORRADOR_EN_PROYECTOS_NO_APTO_PARA_PROMOCION.
 - narrative_contract: AUSENTE.
 - narrative_qa: PASS 90/100; siete checks true; `critical_flags=[]`; `review_basis=lectura_en_frio_solo_narracion`; revisor `auditor_capcot_independiente`.
-- Compuerta estructural: FAIL estático: faltan los seis campos narrativos en las ocho escenas; mapa sin puntos; `asset_filename`/`asset_type` en las ocho escenas. No se promovió. El validador no se ejecutó en runtime.
+- Compuerta estructural: FAIL estático: faltan los seis campos narrativos en las ocho escenas y el mapa sigue sin puntos. Se retiraron los ocho placeholders `asset_filename`/`asset_type` del borrador y de la copia bloqueada; el snapshot histórico de `salidas/` conserva referencias no verificadas. No se promovió. El validador no se ejecutó en runtime.
 - Estado de producción: existen registros en `salidas/2026-11-02_camaron-mantis/` (storyboard, qa.json, publicacion.json, metadata y licencias). El `qa.json` es QA audiovisual, no lectura narrativa en frío: 21 checks verdaderos, duración de `capsula.mp4` registrada 75.35 s. El log M4 informa `capsula_v4.mp4` 89.52 s, pero no hay `qa.json` específico de esa versión. El QA cuenta 181 palabras frente a 223 en el storyboard; no se acredita identidad de guion/voz. El QA local usa 60–120 s y solo acredita presencia de capas, no puntos cartográficos.
 - Medios: el árbol GitHub no contiene `capsula_v4.mp4` ni frames verificables; `MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO`. Los logs y bytes declarados no sustituyen el archivo.
 - Handoff Grok: RECEPCION_GROK_NO_CONFIRMADA. No existe `cola/estado/2026-11-02_camaron-mantis.json`; no inferir recepción por commits, salidas ni cola.
