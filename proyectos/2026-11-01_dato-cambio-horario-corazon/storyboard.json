@@ -24,7 +24,7 @@
     "fecha_publicacion": "2026-11-01",
     "url": "https://www.nist.gov/pml/time-and-frequency-division/popular-links/daylight-saving-time-dst"
   },
-  "editorial_status": "BORRADOR_EN_PROYECTOS_PENDIENTE_QA_NARRATIVO_INDEPENDIENTE",
+  "editorial_status": "QA_NARRATIVO_FAIL_NO_PROMOVER",
   "arco": {
     "hook_medias_res": "El reloj vuelve a marcar la una; el cuerpo no se ajusta por decreto.",
     "desarrollo": "Un estudio de Michigan examinó 42,060 ingresos por infarto tratados con angioplastia y encontró diferencias en días concretos tras los cambios de primavera y otoño.",
@@ -118,15 +118,19 @@
     },
     {
       "id": "SRC-005",
-      "cita_corta": "National Institute of Standards and Technology. Daylight Saving Time Rules.",
+      "cita_corta": "National Institute of Standards and Technology, Daylight Saving Time Rules; Transport Canada, AIM 2026-1, §1.5.3 Time Zone.",
       "url": "https://www.nist.gov/pml/time-and-frequency-division/popular-links/daylight-saving-time-dst",
       "doi": null,
       "accessed": "2026-11-01",
       "publication_date": null,
       "supports": [
-        "En 2026, el horario de verano en Estados Unidos terminó el 1 de noviembre a las 2:00 a. m.; el reloj retrocedió a la 1:00 a. m. en las regiones que observan DST."
+        "En 2026, el horario de verano en Estados Unidos terminó el 1 de noviembre a las 2:00 a. m.; el reloj retrocedió a la 1:00 a. m. en las regiones que observan DST.",
+        "En las localidades canadienses que observan horario de verano, este termina a las 02:00 locales el primer domingo de noviembre; pueden existir excepciones territoriales o municipales."
       ],
-      "verification_status": "VERIFICADO_FUENTE_OFICIAL"
+      "verification_status": "VERIFICADO_FUENTE_OFICIAL",
+      "additional_urls": [
+        "https://tc.canada.ca/sites/default/files/2026-03/aim-2026-1_access_en.pdf"
+      ]
     }
   ],
   "scenes": [
@@ -168,7 +172,8 @@
       "source_ids": [
         "SRC-002",
         "SRC-003",
-        "SRC-004"
+        "SRC-004",
+        "SRC-005"
       ],
       "style_id": "art_deco_poster",
       "dramatic_beat": "El reloj retrocedió donde rige el horario estacional; ahora distinguimos esa región de México.",
@@ -391,14 +396,15 @@
     ],
     "note": "No publicar ni programar desde preproducción textual."
   },
-  "estado": "BORRADOR_EN_PROYECTOS_PENDIENTE_QA_NARRATIVO_INDEPENDIENTE",
+  "estado": "QA_NARRATIVO_FAIL_NO_PROMOVER",
   "production_mode": "storyboard_only",
   "approved_assets": [],
   "validation_notes": [
     "Duración de escenas: 78 s + cortinilla de 6 s = 84 s.",
     "El QA narrativo independiente debe registrarse antes de cualquier promoción a cola.",
     "No se incluyen asset_filename, asset_type ni rutas de medios.",
-    "No se crea estado Grok; recepción no confirmada hasta que Grok lo registre."
+    "No se crea estado Grok; recepción no confirmada hasta que Grok lo registre.",
+    "QA en frío independiente: FAIL 84/100. Los siete checks narrativos pasan, pero el cierre previo al sello tiene 101 caracteres; el brief exige 110–170. Narración intacta; no promover."
   ],
   "risk_notes": [
     "No convertir porcentajes relativos diarios en riesgo individual.",
@@ -407,8 +413,8 @@
     "El mapa usa el centro de población de Michigan, no coordenadas de hospitales."
   ],
   "narrative_qa": {
-    "status": "PASS",
-    "score": 87,
+    "status": "FAIL",
+    "score": 84,
     "review_basis": "lectura_en_frio_solo_narracion",
     "checks": {
       "pregunta_central_reconstruible": true,
@@ -419,17 +425,34 @@
       "limite_evidencia_explicito": true,
       "payoff_cierre_apertura": true
     },
-    "critical_flags": [],
+    "critical_flags": [
+      "CIERRE_PRESELLO_INFERIOR_A_110_CARACTERES"
+    ],
     "reviewer_role": "auditor_capcot_independiente",
-    "review_scope": "Lectura exclusiva de la narración concatenada en orden; título, resumen, arco, notas y narrative_contract excluidos.",
+    "reviewed_at": "2026-11-01T18:08:00-06:00",
+    "review_scope": "Lectura exclusiva de la narración concatenada; título, resumen, arco, notas y narrative_contract excluidos.",
     "check_evidence": {
-      "pregunta_central_reconstruible": "Se reconstruye una pregunta única: si el cambio de hora altera cuándo llegan a urgencias los infartos.",
-      "apertura_in_medias_res": "El reloj ya está retrocediendo de las dos a la una; la anomalía está ocurriendo.",
-      "progresion_por_escena": "La narración avanza de la hora social al reloj circadiano, después a la cohorte, los dos cambios estacionales, el resultado semanal y el límite.",
-      "transiciones_causales": "El salto horario lleva al mecanismo circadiano; ese mecanismo abre la pregunta clínica; primavera y otoño se contrastan; el total semanal prepara la cautela final.",
-      "giro_cientifico_explicado": "Los cambios opuestos por día no se traducen en diferencia semanal significativa: el hallazgo trata del reparto temporal, no de un aumento semanal demostrado.",
-      "limite_evidencia_explicito": "Michigan, 2010–2013, ingresos tratados con angioplastia; estudio observacional que no demuestra causalidad ni cubre todos los infartos.",
-      "payoff_cierre_apertura": "El cierre vuelve al reloj que retrocede y al cuerpo que no se ajusta con un botón; la pregunta final nace del ritmo circadiano presentado al inicio."
+      "pregunta_central_reconstruible": "La narración permite reconstruir si el cambio de hora altera el momento de presentación hospitalaria de los infartos; la pregunta se formula en la escena 4 y se responde con la comparación por día.",
+      "apertura_in_medias_res": "El reloj ya está retrocediendo de las 2:00 a la 1:00; la anomalía está en curso desde la primera frase.",
+      "progresion_por_escena": "La secuencia avanza del cambio civil y su geografía al ritmo circadiano, la cohorte clínica, el contraste primavera/otoño, el límite y el retorno al reloj inicial.",
+      "transiciones_causales": "Cada tramo deriva del anterior: cambio horario, hora social, reloj interno, observación hospitalaria, comparación de días y límites de inferencia.",
+      "giro_cientifico_explicado": "El hallazgo cambia la lectura inicial: varían las presentaciones diarias tras cada transición, pero el total semanal no muestra diferencia significativa.",
+      "limite_evidencia_explicito": "Se especifica Michigan, 2010–2013, infartos tratados con angioplastia y que el estudio no demuestra causalidad ni cubre todos los casos.",
+      "payoff_cierre_apertura": "La última escena vuelve al reloj que retrocede y a la falta de ajuste instantáneo del cuerpo; no abre un tema nuevo."
+    },
+    "format_flags": {
+      "cierre_pre_sello_chars": 101,
+      "required_min_chars": 110,
+      "required_max_chars": 170,
+      "total_narration_chars": 1290,
+      "required_total_min_chars": 1100,
+      "required_total_max_chars": 1300
     }
-  }
+  },
+  "created_at": "2026-11-01T17:54:14-06:00",
+  "fecha_objetivo": "2026-11-01",
+  "slot_local": "23:30",
+  "timezone": "America/Mexico_City",
+  "prioridad": "dato_del_dia",
+  "origen": "externa"
 }
