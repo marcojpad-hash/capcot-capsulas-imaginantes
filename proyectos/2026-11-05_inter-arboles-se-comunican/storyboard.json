@@ -2,38 +2,38 @@
   "_schema": "CAPCOT_STORYBOARD_TEXT_V2",
   "project_id": "2026-11-05_inter-arboles-se-comunican",
   "serie": "Datos y ociosidades",
-  "title": "¿Los árboles producen oxígeno de noche?",
-  "titulo": "El mito del árbol nocturno",
+  "title": "¿Los árboles están conectados?",
+  "titulo": "La red oculta del bosque",
   "language": "es-MX",
   "aspect_ratio": "9:16",
   "target_duration_seconds": 84,
   "estructura": "pregunta",
   "audience": "Público general",
   "occasion": "Cápsula vertical de divulgación",
-  "resumen": "La fotosíntesis requiere luz; la respiración celular ocurre día y noche.",
+  "resumen": "Bajo el suelo, algunos hongos forman asociaciones con raíces de distintas plantas. A estas conexiones se les relaciona con las redes micorrícicas comunes. La investigación estudia qué intercambios ocurren, pero una revisión crítica advierte que varias afirmaciones populares sobre estas redes exceden la evidencia disponible.",
   "trend_source": {
-    "termino": "¿Los árboles producen oxígeno de noche?",
-    "fecha_publicacion": "",
-    "url": "https://www.fs.usda.gov/treesearch/"
+    "termino": "red micorrícica común; wood-wide web",
+    "fecha_publicacion": "2023",
+    "url": "https://www.nature.com/articles/s41559-023-01986-1"
   },
-  "editorial_status": "BORRADOR_BLOQUEADO_POR_DESAJUSTE_DE_TEMA",
+  "editorial_status": "BORRADOR_PENDIENTE_AUDITOR",
   "arco": {
-    "hook_medias_res": "Los árboles no apagan toda su actividad al anochecer. Sus células siguen respirando: usan oxígeno para obtener energía a partir de azúcares.",
-    "desarrollo": "Durante el día, si hay luz, también ocurre la fotosíntesis. En ese proceso la planta usa energía luminosa para fijar carbono y libera oxígeno. De noche, sin luz suficiente, la fotosíntesis se detiene, pero la respiración continúa. Por eso cambia el balance de gases entre el día y la noche. Eso no convierte a un árbol en una amenaza dentro de una habitación. La cantidad de oxígeno que consume una planta es diminuta frente al volumen de aire de un cuarto ventilado. El dato correcto no es que los árboles produzcan oxígeno de noche: es que respiran siempre y fotosintetizan cuando hay luz.",
-    "cierre_historia": "El mecanismo tiene límites y depende de las condiciones observadas. No conviene convertir una medición particular en una regla universal.",
-    "reflexion_o_pregunta": "Esto fue Datos y ociosidades."
+    "hook_medias_res": "Debajo de un bosque puede existir una conexión que no vemos: hongos asociados a las raíces de diferentes plantas.",
+    "desarrollo": "Algunos hongos forman asociaciones micorrícicas con las raíces. Sus filamentos pueden conectar raíces de varias plantas y formar lo que se conoce como una red micorrícica común. La investigación estudia si por esas conexiones pueden moverse nutrientes u otras señales. Pero aquí aparece un problema: una conexión física no demuestra automáticamente que exista una red funcional extensa, ni que los recursos transferidos mejoren la supervivencia de otras plantas. Los resultados de campo son variables y existen explicaciones alternativas. Una revisión publicada en Nature Ecology & Evolution en 2023 examinó críticamente varias afirmaciones populares sobre estas redes. Sus autores señalaron que la evidencia no permite sostener algunas de las historias más repetidas: por ejemplo, que los árboles adultos alimentan preferentemente a sus descendientes o les envían señales de defensa a través de una red subterránea.",
+    "cierre_historia": "Eso no significa que las asociaciones micorrícicas no existan. Significa que debemos distinguir entre una conexión observada, un intercambio posible y un beneficio demostrado. El bosque subterráneo es real; algunas de las historias que contamos sobre él todavía necesitan pruebas.",
+    "reflexion_o_pregunta": "¿Qué otras cosas del bosque crees que todavía no entendemos? Esto fue Datos y ociosidades."
   },
-  "estilo_id": "satira_periodico",
-  "estilo_visual": "Sátira de periódico en tinta",
+  "estilo_id": "papel_rasgado_capas",
+  "estilo_visual": "Diorama de papel rasgado en capas",
   "visual_identity": {
-    "style_id": "satira_periodico",
-    "style_name": "Sátira de periódico en tinta",
-    "prompt_base": "editorial satirical newspaper cartoon, black ink crosshatching on newsprint, caricatured figures, newspaper columns layout, vertical 9:16, no text",
-    "palette": "Según catálogo",
-    "lighting": "Según prompt base",
-    "texture": "Según prompt base",
-    "composition": "Vertical 9:16; continuidad de sujeto y paleta",
-    "negative_prompt": "No texto generado, no marcas de agua, no datos falsos",
+    "style_id": "papel_rasgado_capas",
+    "style_name": "Diorama de papel rasgado en capas",
+    "prompt_base": "layered torn paper diorama, handcrafted cut paper illustration, visible paper fibers and torn edges, botanical underground cross section, tree roots and delicate fungal hyphae, scientifically grounded educational illustration, tactile paper depth, vertical 9:16 composition, no text",
+    "palette": "Tonos naturales de suelo, raíces, verdes vegetales y hongos; contraste suficiente para distinguir capas",
+    "lighting": "Luz suave de estudio, volumen entre capas de papel",
+    "texture": "Papel artesanal rasgado, fibras visibles, capas superpuestas",
+    "composition": "Vertical 9:16; continuidad visual del mismo suelo, raíces y filamentos entre escenas",
+    "negative_prompt": "No texto generado, no marcas de agua, no rostros humanos, no expresiones antropomórficas en árboles, no cables ni circuitos eléctricos, no representar la red como internet literal, no inventar mecanismos biológicos",
     "reference_assets": [],
     "seed": null,
     "seed_policy": "Continuidad entre escenas"
@@ -58,140 +58,136 @@
   "sources": [
     {
       "id": "SRC-001",
-      "cita_corta": "USDA Forest Service, recursos de fisiología vegetal.",
-      "url": "https://www.fs.usda.gov/treesearch/",
-      "doi": null,
-      "accessed": "2026-10-31",
-      "publication_date": "",
+      "cita_corta": "Karst, Jones y Hoeksema (2023). Positive citation bias and overinterpreted results lead to misinformation on common mycorrhizal networks in forests. Nature Ecology & Evolution, 7, 501–511.",
+      "url": "https://www.nature.com/articles/s41559-023-01986-1",
+      "doi": "10.1038/s41559-023-01986-1",
+      "accessed": "2026-11-02",
+      "publication_date": "2023",
       "supports": [
-        "La fotosíntesis requiere luz; la respiración celular ocurre día y noche."
+        "Las redes micorrícicas comunes pueden formarse cuando hifas de hongos micorrícicos conectan raíces de múltiples plantas.",
+        "La evidencia de campo sobre la extensión y función de estas redes es variable y presenta limitaciones.",
+        "La transferencia de recursos y sus efectos sobre el desempeño de otras plantas no deben generalizarse como beneficios demostrados.",
+        "No existe evidencia publicada revisada por pares que demuestre que árboles adultos envían preferentemente recursos o señales de defensa a sus descendientes mediante estas redes."
       ],
-      "verification_status": "VERIFICADO_RESOLVEDOR"
+      "verification_status": "VERIFICADO"
+    },
+    {
+      "id": "SRC-002",
+      "cita_corta": "Registro bibliográfico del artículo de Karst, Jones y Hoeksema (2023), PubMed.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36882401/",
+      "doi": "10.1038/s41559-023-01986-1",
+      "accessed": "2026-11-02",
+      "publication_date": "2023",
+      "supports": [
+        "Identificación bibliográfica y referencia del artículo científico."
+      ],
+      "verification_status": "VERIFICADO"
     }
   ],
   "scenes": [
     {
       "id": "scene_001",
       "arc": "hook_medias_res",
-      "duration_seconds": 10,
-      "narration": "Los árboles no apagan toda su actividad al anochecer. Sus células siguen respirando: usan oxígeno para obtener energía a partir de azúcares.",
-      "on_screen_text": "El mito del árbol nocturno",
-      "visual_description": "Representación didáctica de ¿los árboles producen oxígeno de noche?, secuencia causal clara y legible",
-      "image_prompt": "editorial satirical newspaper cartoon, black ink crosshatching on newsprint, caricatured figures, newspaper columns layout, vertical 9:16, no text, educational visual scene illustrating ¿los árboles producen oxígeno de noche?, consistent visual continuity",
+      "duration_seconds": 9,
+      "narration": "Debajo de un bosque puede existir una conexión que no vemos: hongos asociados a las raíces de diferentes plantas.",
+      "on_screen_text": "La red oculta",
+      "visual_description": "Corte transversal de un bosque. Sobre el suelo aparecen varios árboles; debajo, sus raíces se extienden entre capas de tierra. La cámara desciende para revelar filamentos fúngicos finos.",
+      "image_prompt": "Layered torn paper diorama, vertical forest cross section, several trees above soil and visible roots below, delicate fungal filaments emerging through soil layers, handcrafted paper fibers, educational scientific illustration, no text, no anthropomorphic elements",
       "ambiente": "Ambiente discreto; voz al frente",
       "sfx": [],
-      "source_ids": [
-        "SRC-001"
-      ],
-      "style_id": "satira_periodico"
+      "source_ids": ["SRC-001"],
+      "style_id": "papel_rasgado_capas"
     },
     {
       "id": "scene_002",
       "arc": "desarrollo",
-      "duration_seconds": 12,
-      "narration": "Durante el día, si hay luz, también ocurre la fotosíntesis. En ese proceso la planta usa energía luminosa para fijar carbono y libera oxígeno.",
-      "on_screen_text": "El mecanismo",
-      "visual_description": "Representación didáctica de ¿los árboles producen oxígeno de noche?, secuencia causal clara y legible",
-      "image_prompt": "editorial satirical newspaper cartoon, black ink crosshatching on newsprint, caricatured figures, newspaper columns layout, vertical 9:16, no text, educational visual scene illustrating ¿los árboles producen oxígeno de noche?, consistent visual continuity",
+      "duration_seconds": 10,
+      "narration": "Algunos hongos forman asociaciones micorrícicas con las raíces. El hongo y la planta establecen una relación biológica que puede beneficiar a ambos.",
+      "on_screen_text": "Una asociación real",
+      "visual_description": "Acercamiento a una raíz con filamentos fúngicos finos alrededor y en contacto con ella. La escena muestra una asociación entre organismos, no una conexión eléctrica.",
+      "image_prompt": "Scientific close-up of a plant root associated with mycorrhizal fungal hyphae, layered torn paper cutaway, clearly distinguishable root tissue and delicate fungal filaments, accurate botanical educational illustration, vertical 9:16, no text",
       "ambiente": "Ambiente discreto; voz al frente",
       "sfx": [],
-      "source_ids": [
-        "SRC-001"
-      ],
-      "style_id": "satira_periodico",
-      "capa": {
-        "tipo": "mapa",
-        "titulo": "University of Alberta, Edmonton",
-        "puntos": [
-          {
-            "nombre": "University of Alberta, Edmonton",
-            "lat": 53.5461,
-            "lon": -113.4938
-          }
-        ],
-        "fuente": "Afiliación de Justine Karst en el artículo citado. La fuente de fisiología vegetal citada describe respiración y fotosíntesis. El pin ubica Edmonton como afiliación de una autora de una revisión sobre redes micorrícicas, no un bosque donde se midió este proceso. Cartografía base: OpenStreetMap."
-      }
+      "source_ids": ["SRC-001"],
+      "style_id": "papel_rasgado_capas"
     },
     {
       "id": "scene_003",
       "arc": "desarrollo",
-      "duration_seconds": 12,
-      "narration": "De noche, sin luz suficiente, la fotosíntesis se detiene, pero la respiración continúa. Por eso cambia el balance de gases entre el día y la noche.",
-      "on_screen_text": "Qué ocurre",
-      "visual_description": "Representación didáctica de ¿los árboles producen oxígeno de noche?, secuencia causal clara y legible",
-      "image_prompt": "editorial satirical newspaper cartoon, black ink crosshatching on newsprint, caricatured figures, newspaper columns layout, vertical 9:16, no text, educational visual scene illustrating ¿los árboles producen oxígeno de noche?, consistent visual continuity",
+      "duration_seconds": 10,
+      "narration": "Los filamentos de ciertos hongos pueden conectar raíces de varias plantas. A esa conexión se le llama red micorrícica común.",
+      "on_screen_text": "Conexiones subterráneas",
+      "visual_description": "Vista ampliada de varias raíces de plantas distintas conectadas por filamentos de un mismo sistema fúngico. Se muestra una conexión localizada, sin sugerir que todo el bosque esté conectado.",
+      "image_prompt": "Botanically grounded cross section showing fungal hyphae connecting roots of multiple plants, localized common mycorrhizal network, layered paper diorama, no glowing lines, no internet imagery, no text, vertical 9:16",
       "ambiente": "Ambiente discreto; voz al frente",
       "sfx": [],
-      "source_ids": [
-        "SRC-001"
-      ],
-      "style_id": "satira_periodico",
-      "capa": {
-        "tipo": "dato",
-        "valor": "Día y noche",
-        "etiqueta": "Respiración celular continua; fotosíntesis requiere luz",
-        "fuente": "Afiliación de Justine Karst en el artículo citado. https://www.nature.com/articles/s41559-023-01986-1. La fuente de fisiología vegetal citada describe respiración y fotosíntesis. El pin ubica Edmonton como afiliación de una autora de una revisión sobre redes micorrícicas, no un bosque donde se midió este proceso."
-      }
+      "source_ids": ["SRC-001"],
+      "style_id": "papel_rasgado_capas"
     },
     {
       "id": "scene_004",
       "arc": "desarrollo",
-      "duration_seconds": 12,
-      "narration": "Eso no convierte a un árbol en una amenaza dentro de una habitación. La cantidad de oxígeno que consume una planta es diminuta frente al volumen de aire de un cuarto ventilado.",
-      "on_screen_text": "La evidencia",
-      "visual_description": "Representación didáctica de ¿los árboles producen oxígeno de noche?, secuencia causal clara y legible",
-      "image_prompt": "editorial satirical newspaper cartoon, black ink crosshatching on newsprint, caricatured figures, newspaper columns layout, vertical 9:16, no text, educational visual scene illustrating ¿los árboles producen oxígeno de noche?, consistent visual continuity",
+      "duration_seconds": 10,
+      "narration": "La pregunta es qué puede circular por esas conexiones. Se investigan posibles movimientos de nutrientes y señales entre plantas.",
+      "on_screen_text": "¿Qué puede circular?",
+      "visual_description": "Los filamentos aparecen en primer plano. Pequeños indicadores gráficos neutros señalan que el movimiento de sustancias es una pregunta de investigación, no un flujo garantizado.",
+      "image_prompt": "Layered paper scientific illustration of mycorrhizal hyphae between plant roots, subtle neutral markers indicating a research question about possible nutrient movement, no arrows implying proven direction, no text, vertical 9:16",
       "ambiente": "Ambiente discreto; voz al frente",
       "sfx": [],
-      "source_ids": [
-        "SRC-001"
-      ],
-      "style_id": "satira_periodico"
+      "source_ids": ["SRC-001"],
+      "style_id": "papel_rasgado_capas"
     },
     {
       "id": "scene_005",
       "arc": "desarrollo",
-      "duration_seconds": 12,
-      "narration": "El dato correcto no es que los árboles produzcan oxígeno de noche: es que respiran siempre y fotosintetizan cuando hay luz suficiente.",
-      "on_screen_text": "El matiz",
-      "visual_description": "Representación didáctica de ¿los árboles producen oxígeno de noche?, secuencia causal clara y legible",
-      "image_prompt": "editorial satirical newspaper cartoon, black ink crosshatching on newsprint, caricatured figures, newspaper columns layout, vertical 9:16, no text, educational visual scene illustrating ¿los árboles producen oxígeno de noche?, consistent visual continuity",
+      "duration_seconds": 10,
+      "narration": "Pero encontrar una conexión no demuestra por sí solo que exista una red extensa y funcional, ni que una planta reciba un beneficio.",
+      "on_screen_text": "Conectar no es demostrar",
+      "visual_description": "La escena separa visualmente tres niveles: raíces conectadas, posible movimiento de sustancias y un resultado medible en una planta. No se dibuja una causalidad automática entre ellos.",
+      "image_prompt": "Three-part layered paper scientific composition: connected roots, possible substance movement marked as uncertain, and a separate plant growth outcome requiring evidence; clear visual distinction between observation and causal proof, no text",
       "ambiente": "Ambiente discreto; voz al frente",
       "sfx": [],
-      "source_ids": [
-        "SRC-001"
-      ],
-      "style_id": "satira_periodico"
+      "source_ids": ["SRC-001"],
+      "style_id": "papel_rasgado_capas"
     },
     {
       "id": "scene_006",
-      "arc": "cierre_historia",
+      "arc": "desarrollo",
       "duration_seconds": 10,
-      "narration": "Un matiz: el balance de gases cambia entre día y noche, pero el consumo nocturno de una planta es diminuto frente al aire de un cuarto ventilado.",
-      "on_screen_text": "Qué sabemos",
-      "visual_description": "Representación didáctica de ¿los árboles producen oxígeno de noche?, secuencia causal clara y legible",
-      "image_prompt": "editorial satirical newspaper cartoon, black ink crosshatching on newsprint, caricatured figures, newspaper columns layout, vertical 9:16, no text, educational visual scene illustrating ¿los árboles producen oxígeno de noche?, consistent visual continuity",
+      "narration": "En 2023, una revisión en Nature Ecology & Evolution examinó críticamente varias afirmaciones populares sobre estas redes.",
+      "on_screen_text": "Una revisión crítica",
+      "visual_description": "Representación editorial de un artículo científico abierto junto a una ilustración de raíces y hongos. Se destaca el año 2023 sin reproducir portadas ni logotipos.",
+      "image_prompt": "Layered torn paper diorama, scientific research paper represented as neutral printed pages beside a precise underground root and fungal network illustration, editorial academic atmosphere, year 2023 may be added in postproduction, no logos, no generated text",
       "ambiente": "Ambiente discreto; voz al frente",
       "sfx": [],
-      "source_ids": [
-        "SRC-001"
-      ],
-      "style_id": "satira_periodico"
+      "source_ids": ["SRC-001", "SRC-002"],
+      "style_id": "papel_rasgado_capas"
     },
     {
       "id": "scene_007",
-      "arc": "reflexion_o_pregunta",
+      "arc": "cierre_historia",
       "duration_seconds": 10,
-      "narration": "Un árbol no se apaga de noche: deja de fabricar azúcares, pero sigue respirando para usarlos. ¿Qué otro mito de las plantas has escuchado? Esto fue Datos y ociosidades.",
-      "on_screen_text": "Esto fue Datos y ociosidades",
-      "visual_description": "Representación didáctica de ¿los árboles producen oxígeno de noche?, secuencia causal clara y legible",
-      "image_prompt": "editorial satirical newspaper cartoon, black ink crosshatching on newsprint, caricatured figures, newspaper columns layout, vertical 9:16, no text, educational visual scene illustrating ¿los árboles producen oxígeno de noche?, consistent visual continuity",
+      "narration": "Sus autores advierten que no está demostrado que los árboles adultos alimenten preferentemente a sus crías o les envíen señales de defensa por esa red.",
+      "on_screen_text": "El límite de la evidencia",
+      "visual_description": "Un árbol adulto y una planta joven aparecen separados por capas de suelo. Entre sus raíces se observan filamentos, pero no flechas de alimento ni señales dirigidas. La composición evita atribuir intención a los árboles.",
+      "image_prompt": "Scientifically cautious layered paper forest cross section with mature tree and young plant, fungal hyphae visible in soil but no directional transfer arrows, no nurturing or human-like behavior, no anthropomorphism, vertical 9:16",
       "ambiente": "Ambiente discreto; voz al frente",
       "sfx": [],
-      "source_ids": [
-        "SRC-001"
-      ],
-      "style_id": "satira_periodico"
+      "source_ids": ["SRC-001"],
+      "style_id": "papel_rasgado_capas"
+    },
+    {
+      "id": "scene_008",
+      "arc": "reflexion_o_pregunta",
+      "duration_seconds": 9,
+      "narration": "Las conexiones subterráneas son reales; varias historias sobre ellas aún necesitan pruebas. ¿Qué más esconde el suelo de un bosque? Esto fue Datos y ociosidades.",
+      "on_screen_text": "Lo que aún falta probar",
+      "visual_description": "La cámara se aleja del corte transversal y muestra el bosque completo. Bajo el suelo quedan visibles las raíces y los filamentos, como una estructura compleja que todavía se investiga.",
+      "image_prompt": "Wide vertical layered torn paper diorama of a forest with a visible underground cross section, tree roots and delicate fungal hyphae, scientifically restrained, sense of discovery without fantasy, no text, no anthropomorphic trees",
+      "ambiente": "Ambiente discreto; voz al frente",
+      "sfx": [],
+      "source_ids": ["SRC-001"],
+      "style_id": "papel_rasgado_capas"
     }
   ],
   "cortinilla_fuentes": {
@@ -199,9 +195,7 @@
     "titulo": "Fuentes",
     "aviso": "Contenido realizado con apoyo de IA; declarar recursos sintéticos usados en versión final.",
     "firma": "Datos y ociosidades",
-    "source_ids": [
-      "SRC-001"
-    ]
+    "source_ids": ["SRC-001", "SRC-002"]
   },
   "audio": {
     "music_asset": null,
@@ -225,13 +219,21 @@
   "estado": "BORRADOR_EN_PROYECTOS_ESPERA_AUDITOR_PASS",
   "production_mode": "storyboard_only",
   "validation_notes": [
-    "7 escenas; objetivo 78 s de narración + 6 s de cortinilla = 84 s.",
-    "DESAJUSTE_DE_SLOT: el horario asigna «red de los árboles» / Karst et al. 2023 (wood-wide web); este borrador trata respiración nocturna y fotosíntesis. Se conserva como material fuente, no se presenta como tema correcto ni apto para promoción. Requiere reemplazo editorial antes de QA."
+    "8 escenas; 78 segundos de narración + 6 segundos de cortinilla = 84 segundos.",
+    "Tema corregido al horario: red micorrícica común / wood-wide web.",
+    "La revisión de Karst et al. 2023 se usa como fuente crítica; no convertir hipótesis o afirmaciones populares en hechos demostrados.",
+    "No se afirma que todos los árboles de un bosque estén conectados ni que exista transferencia beneficiosa generalizada.",
+    "Borrador textual; sin frames, audio, video ni publicación.",
+    "Pendiente de revisión independiente del Auditor. No promover a cola ni a entrada antes de PASS."
   ],
   "linea_tematica_provisional": "Ciencia y naturaleza",
   "approved_assets": [],
   "risk_notes": [
-    "Mantener límites y matices de la fuente; no generalizar más allá de la evidencia."
+    "No antropomorfizar árboles ni hongos.",
+    "No representar la red micorrícica como internet literal, sistema nervioso o red eléctrica.",
+    "Distinguir conexión física, posible intercambio y beneficio demostrado.",
+    "No afirmar que los árboles adultos alimentan o protegen deliberadamente a sus descendientes.",
+    "Conservar los matices y límites de evidencia descritos por Karst et al. 2023."
   ],
   "thumbnail_source": "scene_001",
   "fecha_objetivo": "2026-11-05",
@@ -240,11 +242,11 @@
   "slot_cesta": "intermedio_1",
   "slot_timezone": "America/Mexico_City",
   "narrative_contract": {
-    "central_question": "¿Qué ocurre con la respiración y la fotosíntesis de un árbol cuando cae la noche?",
-    "promise": "Distinguir la respiración continua de la fotosíntesis dependiente de la luz.",
-    "stakes": "Evita el mito de que un árbol apaga toda su actividad o vuelve peligrosa una habitación.",
-    "scientific_turn": "La fotosíntesis se detiene sin luz suficiente, pero la respiración celular continúa.",
-    "evidence_limit": "El borrador trata intercambio gaseoso nocturno; no aborda la red micorrícica/«wood wide web» indicada por el horario ni la fuente Karst et al. 2023.",
-    "payoff": "El árbol no se apaga: deja de fotosintetizar, pero sigue respirando. Este borrador no corresponde al tema asignado."
+    "central_question": "¿Qué sabemos realmente sobre las conexiones entre raíces a través de hongos micorrícicos?",
+    "promise": "Explicar qué es una red micorrícica común y separar los hallazgos de las afirmaciones populares que aún no están demostradas.",
+    "stakes": "Evitar convertir una conexión biológica real en una historia exagerada sobre árboles que se alimentan, hablan o protegen deliberadamente.",
+    "scientific_turn": "Una conexión entre raíces no demuestra por sí sola transferencia funcional, beneficio para otra planta ni una red extensa en todo el bosque.",
+    "evidence_limit": "Karst et al. (2023) señalan limitaciones en la evidencia de campo y falta de respaldo publicado para afirmaciones populares como la transferencia preferente de recursos o señales de defensa a descendientes.",
+    "payoff": "Las asociaciones y conexiones micorrícicas existen, pero las historias sobre sus efectos deben ajustarse a lo que la evidencia realmente demuestra."
   }
 }
