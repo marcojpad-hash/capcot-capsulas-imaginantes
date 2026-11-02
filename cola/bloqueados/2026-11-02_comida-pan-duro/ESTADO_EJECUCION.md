@@ -6,7 +6,7 @@
 - Responsable de montaje, programación y publicación YT + TT + FB: Imaginantes
 - Estado del paquete: BORRADOR_EN_PROYECTOS_NO_APTO_PARA_PROMOCION
 - narrative_qa: FAIL 84/100; siete checks true, pero `critical_flags=[CIERRE_SOBREAFIRMA_Y_CONTRADICE_LIMITE_DE_SECADO]`.
-- Compuerta estructural: FAIL; faltan `narrative_contract` y campos narrativos por escena, el mapa no tiene puntos, falta `ambiente` en ocho escenas y hay ocho referencias `asset_filename`/`asset_type`. No promover ni redispatchar.
+- Compuerta estructural: FAIL; faltan `narrative_contract` y campos narrativos por escena, el mapa no tiene puntos y falta `ambiente` en ocho escenas. Se retiraron los placeholders de assets del borrador. No promover ni redispatchar.
 - Medios: NO_GENERADOS (fuera del alcance de ChatGPT)
 - QA audiovisual: existe `qa.json` preexistente en `salidas/`, pero no se acredita que corresponda a esta copia; la versión v4 solo tiene log M4, sin QA específico.
 - Publicación: pendiente de confirmar estado público; `publicacion.json` registra IDs/horarios y `privacyStatus=private`. No inferir publicación efectiva.
