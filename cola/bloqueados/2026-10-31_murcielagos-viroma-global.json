@@ -243,5 +243,25 @@
       "style_id": "acuarela_linea"
     }
   ],
-  "linea_tematica_provisional": "Naturaleza / biodiversidad"
+  "linea_tematica_provisional": "Naturaleza / biodiversidad",
+  "narrative_qa": {
+    "status": "FAIL",
+    "score": 80,
+    "review_basis": "lectura_en_frio_solo_narracion",
+    "checks": {
+      "pregunta_central_reconstruible": true,
+      "apertura_in_medias_res": false,
+      "progresion_por_escena": true,
+      "transiciones_causales": true,
+      "giro_cientifico_explicado": false,
+      "limite_evidencia_explicito": true,
+      "payoff_cierre_apertura": true
+    },
+    "critical_flags": [
+      "APERTURA_PREGUNTA_GENERICA",
+      "GIRO_COMPARATIVO_NO_EXPLICADO",
+      "UNIDADES_VIRALES_NO_DEFINIDAS"
+    ],
+    "reviewer_role": "auditor_capcot_independiente"
+  }
 }
