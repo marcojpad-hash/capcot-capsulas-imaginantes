@@ -7674,5 +7674,216 @@
    "videos_publicados": 38
   },
   "nota": "Snapshot cierre del día 23:10."
+ },
+ {
+  "timestamp_cdmx": "2026-11-02T08:12-06:00",
+  "youtube": {
+   "5sxxx0vuXFE": {
+    "view": 2,
+    "like": 0,
+    "comment": 0
+   },
+   "GlBl4S4aDAs": {
+    "view": 140,
+    "like": 10,
+    "comment": 0
+   },
+   "0x1B9_rMm-I": {
+    "view": 88,
+    "like": 6,
+    "comment": 0
+   },
+   "HDQr9OGpFJM": {
+    "view": 48,
+    "like": 1,
+    "comment": 0
+   },
+   "PQzLUQnHbcA": {
+    "view": 350,
+    "like": 7,
+    "comment": 0
+   },
+   "aZn5eTyiQPQ": {
+    "view": 694,
+    "like": 32,
+    "comment": 2
+   },
+   "rLd9DVPXHb8": {
+    "view": 34,
+    "like": 1,
+    "comment": 0
+   },
+   "MBMjQ5vLZo0": {
+    "view": 211,
+    "like": 4,
+    "comment": 0
+   },
+   "G5is50omLo4": {
+    "view": 256,
+    "like": 5,
+    "comment": 0
+   },
+   "Mz-IVFvFWH4": {
+    "view": 122,
+    "like": 2,
+    "comment": 0
+   },
+   "ZHdJXFrURk4": {
+    "view": 22,
+    "like": 0,
+    "comment": 0
+   },
+   "p4eXmoJ2f18": {
+    "view": 602,
+    "like": 13,
+    "comment": 0
+   },
+   "OFpAg4XA3AM": {
+    "view": 29,
+    "like": 3,
+    "comment": 0
+   },
+   "inzztxrxYfg": {
+    "view": 687,
+    "like": 13,
+    "comment": 0
+   },
+   "mWtf7Yta294": {
+    "view": 997,
+    "like": 24,
+    "comment": 0
+   },
+   "RhiKtLt2UNQ": {
+    "view": 595,
+    "like": 19,
+    "comment": 0
+   },
+   "oGFKLUgBdhA": {
+    "view": 1354,
+    "like": 39,
+    "comment": 2
+   },
+   "5XQfUHpyTWs": {
+    "view": 981,
+    "like": 35,
+    "comment": 0
+   },
+   "YIoWXfZaMj0": {
+    "view": 547,
+    "like": 16,
+    "comment": 0
+   },
+   "v6t8jKMbrhw": {
+    "view": 977,
+    "like": 31,
+    "comment": 0
+   },
+   "xBqdEn1Dumg": {
+    "view": 1015,
+    "like": 70,
+    "comment": 2
+   },
+   "nY2UqhKmAKQ": {
+    "view": 1372,
+    "like": 67,
+    "comment": 2
+   },
+   "3RdSX40OCac": {
+    "view": 1051,
+    "like": 26,
+    "comment": 0
+   },
+   "YKldyldCeiQ": {
+    "view": 945,
+    "like": 20,
+    "comment": 0
+   },
+   "GYxjXDh1ahc": {
+    "view": 1046,
+    "like": 19,
+    "comment": 0
+   },
+   "ivVo2H9NaEU": {
+    "view": 719,
+    "like": 33,
+    "comment": 2
+   },
+   "PBDMJxOkCRk": {
+    "view": 1308,
+    "like": 28,
+    "comment": 4
+   },
+   "i9QBFPljl6M": {
+    "view": 1311,
+    "like": 24,
+    "comment": 0
+   },
+   "bYGd7QuenSk": {
+    "view": 1238,
+    "like": 31,
+    "comment": 0
+   },
+   "gIjJ0YKYQ8M": {
+    "view": 1223,
+    "like": 61,
+    "comment": 1
+   },
+   "AJR6kcnnDig": {
+    "view": 198,
+    "like": 13,
+    "comment": 0
+   },
+   "Qe2Y9xDn9QQ": {
+    "view": 983,
+    "like": 33,
+    "comment": 2
+   },
+   "3bhntOcKHPk": {
+    "view": 1450,
+    "like": 38,
+    "comment": 0
+   },
+   "O7TdKvuBjyg": {
+    "view": 18,
+    "like": 1,
+    "comment": 0
+   },
+   "r1AhsPOAS_o": {
+    "view": 1399,
+    "like": 73,
+    "comment": 4
+   },
+   "ZrUtKs7Ty7U": {
+    "view": 1342,
+    "like": 48,
+    "comment": 5
+   },
+   "5D96DmjvioU": {
+    "view": 632,
+    "like": 27,
+    "comment": 0
+   }
+  },
+  "youtube_totales": {
+   "view": 25986,
+   "like": 873,
+   "comment": 26
+  },
+  "suscriptores": 69,
+  "delta_vs_anterior": {
+   "view": 318,
+   "like": 11,
+   "comment": 0,
+   "suscriptores": 1
+  },
+  "tiktok": {
+   "fuente": "perfil público tiktok.com (sin vistas por video)",
+   "videos": null,
+   "totales": null,
+   "seguidores": 17,
+   "likes_perfil": 562,
+   "videos_publicados": 38
+  },
+  "nota": "Balance 6h 08:12 (base cierre 23:10)."
  }
 ]

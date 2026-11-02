@@ -1272,5 +1272,65 @@
    ]
   ],
   "nota_flujo": "6 h tarde (14:04→20:10): YT +370 vistas, +5 likes, 0 comentarios, subs 65 sin cambio. Xolo sigue al frente (+142, 608); mosquito revive (+60) y pulpo sigue (+59). Recién públicos: lágrimas 13, Baffin 8, tiburón 3 (arranque lento). ZWF6ke9Zec0 ya no aparece público. Catálogo viejo en 0. TT perfil: 17 seguidores, likes 558→561, videos 35→38."
+ },
+ {
+  "hora_cdmx": "2026-11-02T08:12-06:00",
+  "base_youtube": "2026-11-01T23:10",
+  "base_tiktok": "2026-11-01T23:10",
+  "youtube_totales": {
+   "view": 25986,
+   "like": 873,
+   "comment": 26
+  },
+  "suscriptores": 69,
+  "shorts_publicos": 37,
+  "delta_youtube": {
+   "view": 318,
+   "like": 11,
+   "comment": 0,
+   "suscriptores": 1
+  },
+  "delta_vs_balance_previo_20_10": {
+   "view": 519,
+   "like": 22,
+   "suscriptores": 4
+  },
+  "tiktok_totales": null,
+  "seguidores_tiktok": 17,
+  "likes_perfil_tiktok": 562,
+  "videos_tiktok": 38,
+  "delta_tiktok": {
+   "seguidores": 0,
+   "likes_perfil": 1,
+   "videos": 0,
+   "nota": "Solo perfil público."
+  },
+  "ranking_crecimiento": [
+   [
+    "YT Xoloitzcuintle",
+    72
+   ],
+   [
+    "YT Pulpo",
+    59
+   ],
+   [
+    "YT Lágrimas",
+    50
+   ],
+   [
+    "YT Tiburón Groenlandia",
+    37
+   ],
+   [
+    "YT Mosquito",
+    22
+   ],
+   [
+    "YT Baffin",
+    15
+   ]
+  ],
+  "nota_flujo": "Madrugada (23:10→08:12, ~9 h): YT +318 vistas, +11 likes, 0 comentarios, subs 68→69. Xolo sigue arriba (694) pero se enfría; pulpo, lágrimas y tiburón empujan. Corneja (+3) y catálogo viejo planos. Cebolla Fh4KkcZr3e8 sigue sin aparecer pública; apareció nuevo 5sxxx0vuXFE 'Un golpe bajo el agua' (2 vistas) y no aparece tmxMkxA6nOw (camarón programado 07:00) — revisar Studio. TT perfil: 17 seguidores, likes 561→562."
  }
 ]
