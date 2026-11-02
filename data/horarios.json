@@ -259,7 +259,21 @@
   "id": "noche",
   "inicio": "19:00",
   "fin": "21:00",
-  "estado": "fuera de las 3 ventanas desde 2-nov; el slot 19:00 de la parrilla sigue (ya programado hasta 4-nov) como prueba hasta que Mj decida",
+  "estado": "decisión Mj 2-nov: slots 19:00 ya programados hasta 4-nov inclusive se quedan; desde 5-nov no se programa 19:00 (vacíos pasan a reserva; mañana 07:00 es la franja fija). Noche solo como prueba puntual con OK Mj.",
   "motivo": "semana 26-oct a 1-nov: 19:00 promedió ~510 vistas (7 videos) vs ~920 a las 07:00 (3) y ~710 a mediodía (8); muestra chica y con sesgo de tema (series Día de Muertos)"
+ },
+ "politica_desde_2026-11-05": {
+  "ventanas": [
+   "06:30-07:30",
+   "13:30-15:00",
+   "16:30-18:00"
+  ],
+  "slot_19": "retirado",
+  "tiktok_mirror": [
+   "07:00",
+   "14:00",
+   "17:00"
+  ],
+  "decidio": "Mj 2026-11-02"
  }
 }

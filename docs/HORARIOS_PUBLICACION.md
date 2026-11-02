@@ -51,3 +51,6 @@ Conversión: con horario de verano en EE.UU. (mar–nov) sumar +1 h más a ET/CT
 ## Ajuste continuo
 
 Estas ventanas son hipótesis iniciales. Se ajustarán **semanalmente** con YouTube Analytics (gráfico "Cuándo está conectada tu audiencia") y con las analíticas de TikTok (actividad de seguidores por hora) cuando se activen, registrando resultados en `data/metricas.db`.
+
+## Decisión Mj 2-nov-2026
+Ventanas: 06:30–07:30 / 13:30–15:00 / 16:30–18:00 (CDMX). Lo programado a las 19:00 hasta el 4-nov inclusive se queda; desde el 5-nov no se programa 19:00 (los slots vacíos pasan a reserva). Noche solo a prueba con OK de Mj. TikTok espejo 07:00 / 14:00 / 17:00.
