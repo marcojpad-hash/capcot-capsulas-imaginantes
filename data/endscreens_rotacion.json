@@ -1,15 +1,15 @@
 {
   "fecha": "2026-11-02",
   "tipo": "endscreens_rotacion",
-  "actualizado_cdmx": "2026-11-02T07:52-06:00",
-  "motivo": "Nuevo Short camarón mantis 5sxxx0vuXFE (4 vistas): Perro aZn5 (599→694, acelera) → 5sxxx (antes HDQr9, ya en 44). 5sxxx estrena → corneja ZHdJ (22). Fijos intactos.",
+  "actualizado_cdmx": "2026-11-02T13:54-06:00",
+  "motivo": "Nuevo Short pan V9bO9EUN0JA (1 vista): tiburón 0x1B9 (120→148, acelera) → V9bO (antes HDQr9). V9bO estrena → HDQr9 (52) para no dejarlo sin fuente. Fijos intactos.",
   "vistas_ref": {
     "p4eXmoJ2f18": 602,
     "OFpAg4XA3AM": 29,
     "inzztxrxYfg": 687,
     "mWtf7Yta294": 997,
     "RhiKtLt2UNQ": 595,
-    "oGFKLUgBdhA": 1300,
+    "oGFKLUgBdhA": 1354,
     "5XQfUHpyTWs": 981,
     "YIoWXfZaMj0": 547,
     "v6t8jKMbrhw": 977,
@@ -25,7 +25,7 @@
     "gIjJ0YKYQ8M": 1223,
     "AJR6kcnnDig": 198,
     "Qe2Y9xDn9QQ": 983,
-    "3bhntOcKHPk": 1400,
+    "3bhntOcKHPk": 1450,
     "O7TdKvuBjyg": 18,
     "r1AhsPOAS_o": 1399,
     "ZrUtKs7Ty7U": 1341,
@@ -37,10 +37,11 @@
     "PQzLUQnHbcA": 351,
     "aZn5eTyiQPQ": 694,
     "rLd9DVPXHb8": 33,
-    "HDQr9OGpFJM": 44,
-    "GlBl4S4aDAs": 141,
-    "0x1B9_rMm-I": 88,
-    "5sxxx0vuXFE": 4
+    "HDQr9OGpFJM": 52,
+    "GlBl4S4aDAs": 185,
+    "0x1B9_rMm-I": 148,
+    "5sxxx0vuXFE": 65,
+    "V9bO9EUN0JA": 1
   },
   "mapa": {
     "r1AhsPOAS_o": "AJR6kcnnDig",
@@ -77,9 +78,10 @@
     "PQzLUQnHbcA": "0x1B9_rMm-I",
     "rLd9DVPXHb8": "OFpAg4XA3AM",
     "HDQr9OGpFJM": "ZHdJXFrURk4",
-    "0x1B9_rMm-I": "HDQr9OGpFJM",
+    "0x1B9_rMm-I": "V9bO9EUN0JA",
     "GlBl4S4aDAs": "rLd9DVPXHb8",
-    "5sxxx0vuXFE": "ZHdJXFrURk4"
+    "5sxxx0vuXFE": "ZHdJXFrURk4",
+    "V9bO9EUN0JA": "HDQr9OGpFJM"
   },
   "pendiente_studio": false,
   "nota": "Aplicado en YouTube Studio Editor > Pantalla final (video específico). Búsqueda: pegar youtube.com/watch?v=ID en 'Buscar vídeos de otros canales' (tus vídeos no lista Shorts). Sin suscripción ni tarjetas. Actualización 26-oct 19:49: la lista «Elegir un vídeo específico» ya muestra los Shorts.",
@@ -118,8 +120,9 @@
     "PQzLUQnHbcA": "aplicado_2026-11-01 19:45",
     "rLd9DVPXHb8": "aplicado_nuevo_2026-11-01 07:50 → OFpAg4XA3AM",
     "HDQr9OGpFJM": "aplicado_nuevo_2026-11-01 17:50",
-    "0x1B9_rMm-I": "aplicado_2026-11-01 19:45",
-    "GlBl4S4aDAs": "aplicado_2026-11-01 19:45"
+    "0x1B9_rMm-I": "aplicado_2026-11-02 13:53 (antes HDQr9OGpFJM → V9bO9EUN0JA)",
+    "GlBl4S4aDAs": "aplicado_2026-11-01 19:45",
+    "V9bO9EUN0JA": "aplicado_nuevo_2026-11-02 13:53 → HDQr9OGpFJM"
   },
   "fijos": {
     "Qe2Y9xDn9QQ": "gIjJ0YKYQ8M",
@@ -134,7 +137,7 @@
   ],
   "nota_excluidos": "Ave-dino / velociraptor: no mandar tráfico de pantallas finales (riesgo de parecer fusil). Preferir hongos y otros nuevos flojos.",
   "nota_studio": "Hongos destino confirmado en timeline. Origen hongos: Studio mostró título «¿Aves que temen a mujeres?» al pegar watch?v=O7TdKvuBjyg (mismo ID O7Td).",
-  "ultima_revision_cdmx": "2026-11-02T12:50-06:00 sin cambio de pantallas (vistas iguales a 11:55: Abejas 1450 fijo, Titanoboa 1355 → OFpAg 29, 5sxxx 65 → ZHdJ 22, 0x1B9 120 → HDQr9 51; destinos siguen flojos). Sin comentarios nuevos. Pan V9bO sale 13:30 CDMX, aún privado. Vistas por YT Data API.",
+  "ultima_revision_cdmx": "2026-11-02T13:54-06:00 cambio: 0x1B9→V9bO, V9bO→HDQr9. Sin comentarios nuevos. Vistas por YT Data API.",
   "comentarios_ref_2026-11-01T21:52": {
     "oGFKLUgBdhA": 2,
     "xBqdEn1Dumg": 2,
