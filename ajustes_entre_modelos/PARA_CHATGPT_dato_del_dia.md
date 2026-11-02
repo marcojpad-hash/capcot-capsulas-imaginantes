@@ -49,6 +49,7 @@ ChatGPT no tiene cron propio: esta instrucción se activa cuando Mj la pega en e
 ---
 
 ## 📌 DATO DE HOY — 2 nov 2026 (Día de Muertos), slot 23:30 CDMX (= 2026-11-03T05:30Z)
+> ⏰ Re-chequeo 2-nov ~16:07 CDMX: sigue SIN paquete en `cola/entrada/`. Límite de entrega 22:30 CDMX.
 > Brief dejado por Imaginantes 2-nov ~10:05 CDMX. NO hay paquete «dato» con fecha de hoy en `cola/entrada/`. Entregar hoy antes de las 22:30 CDMX. El brief del 1-nov (cambio de horario) quedó vencido abajo; no lo entregues.
 
 - **project_id:** `2026-11-02_dato-cempasuchil-raices`
