@@ -186,7 +186,7 @@ El workflow requiere `GROK_WEBHOOK_URL` y `GROK_WEBHOOK_TOKEN`; no se muestran n
 1. Se añadió `narrative_qa` a ocho JSON de borrador/copia bloqueada; los scores/statuses son los de la tabla de QA narrativo.
 2. Se corrigió `trend_source.fecha_publicacion` del pan a `2003-01` en `proyectos/` y `cola/bloqueados/`; no se tocó el snapshot de salida ni `data/*.json`.
 3. Se actualizaron los dos `ESTADO_EJECUCION.md` de proyectos 2-nov con QA y fallos estructurales.
-4. Se corrigieron los dos estados de las copias bloqueadas de `PREPARADO_PENDIENTE_REVISION_GROK` a `BORRADOR_EN_PROYECTOS_NO_APTO_PARA_PROMOCION`.
+4. Se corrigieron los dos estados de las copias bloqueadas de `PREPARADO_PENDIENTE_REVISION_GROK` a `BORRADOR_EN_PROYECTOS_NO_APTO_PARA_PROMOCION`; también se retiró la atribución no demostrada a ChatGPT y se anotó la QA/publicación preexistente sin adjudicarla a esa copia.
 5. Se alineó `docs/GUIA_MODELO_EXTERNO.md` con la secuencia proyectos → QA independiente → promoción.
 6. Se corrigió este informe: los slots 5–7 se reubicaron de 19:00 a 17:45 y se separó el comportamiento del workflow del procesador.
 
