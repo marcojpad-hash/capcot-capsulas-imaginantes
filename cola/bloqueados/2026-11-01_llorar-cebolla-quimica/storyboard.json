@@ -277,5 +277,35 @@
     "cebolla",
     "cocina"
   ],
-  "thumbnail_source": "scene_001"
+  "thumbnail_source": "scene_001",
+  "narrative_qa": {
+    "status": "FAIL",
+    "score": 79,
+    "review_basis": "lectura_en_frio_solo_narracion",
+    "checks": {
+      "pregunta_central_reconstruible": true,
+      "apertura_in_medias_res": true,
+      "progresion_por_escena": true,
+      "transiciones_causales": true,
+      "giro_cientifico_explicado": true,
+      "limite_evidencia_explicito": false,
+      "payoff_cierre_apertura": false
+    },
+    "critical_flags": [
+      "CIERRE_ATRIBUYE_INTENCION_EVOLUTIVA_NO_DEMOSTRADA",
+      "LIMITE_DE_EVIDENCIA_NO_EXPLICITO"
+    ],
+    "reviewer_role": "auditor_capcot_independiente",
+    "reviewed_at": "2026-11-01T15:09:29-06:00",
+    "review_scope": "Lectura exclusiva de la narración concatenada; título, resumen, arco, notas y narrative_contract excluidos.",
+    "check_evidence": {
+      "pregunta_central_reconstruible": "Se reconstruye por qué cortar cebolla desencadena lágrimas.",
+      "apertura_in_medias_res": "La acción de cortar y el lagrimeo ya están ocurriendo.",
+      "progresion_por_escena": "La narración avanza de la ruptura celular a los precursores, las enzimas y el factor lacrimógeno.",
+      "transiciones_causales": "Los pasos del mecanismo se encadenan de la ruptura celular a la respuesta ocular.",
+      "giro_cientifico_explicado": "La segunda enzima convierte el precursor en el factor que irrita los ojos.",
+      "limite_evidencia_explicito": "No distingue el mecanismo demostrado de una explicación adaptativa; no delimita qué no puede concluirse.",
+      "payoff_cierre_apertura": "El cierre vuelve a las lágrimas, pero atribuye a la cebolla una intención de evitar ser comida que la evidencia citada no demuestra."
+    }
+  }
 }
