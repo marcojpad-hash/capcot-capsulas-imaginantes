@@ -17,12 +17,15 @@ Desarrollar un candidato principal con la receta y plantilla vigentes. Serie exa
 
 ## Entrega
 Crear exactamente:
-- \`docs/briefs/YYYY-MM-DD_RADAR_CAPCOT.md\`
-- \`cola/entrada/YYYY-MM-DD_slug.json\`
+- `docs/briefs/YYYY-MM-DD_RADAR_CAPCOT.md`
+- `proyectos/YYYY-MM-DD_slug/storyboard.json`
 
-Fuentes y verificación van dentro del JSON. No crear \`_fuentes.md\`. El JSON de cola no incluye \`asset_filename\`, \`asset_type\`, rutas de medios ni \`export.filename\`; \`approved_assets=[]\` y \`render_status=NOT_GENERATED\`.
+El investigador entrega un borrador en `proyectos/`; **no escribe en `cola/entrada/` ni crea estados de Grok**. Fuentes y verificación van dentro del JSON. No crear `_fuentes.md`.
 
-Volver a leer desde GitHub, parsear, contar palabras/duración, comprobar arcos, gancho, cierre, voz, estilo, mapa, dato/gráfico, source_ids y ausencia de placeholders. Registrar commits reales. No declarar QA ni aceptación de Grok.
+El JSON de preproducción no incluye `asset_filename`, `asset_type`, rutas de medios ni `export.filename`; `approved_assets=[]` y `export.render_status=NOT_GENERATED`.
 
+El auditor independiente oculta título, resumen, arco y notas; lee solo la narración concatenada y registra `narrative_qa`. Solo se promueve una copia a `cola/entrada/<project_id>.json` cuando el QA es PASS (score >=85, siete checks true y `critical_flags=[]`) **y** el validador estructural pasa. Si falla cualquiera de las dos compuertas, no se crea entrada de cola. Las copias heredadas fallidas se conservan en `cola/bloqueados/`.
+
+Volver a leer desde GitHub, parsear, contar palabras/duración, comprobar arcos, gancho, cierre, voz, estilo, mapa, dato/gráfico, source_ids y ausencia de placeholders. Registrar commits reales. El investigador no declara QA narrativo ni aceptación de Grok; el auditor registra el primero y Grok registra la segunda.
 ## Confirmación de recepción
 Grok registra recepción, decisión editorial, producción, QA y publicación en cola/estado/YYYY-MM-DD_slug.json conforme a docs/GROK_STATUS_CONTRACT.md. ChatGPT no crea ni modifica ese estado; solo puede comprobarlo. La ausencia del archivo significa que la recepción no está confirmada.
