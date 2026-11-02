@@ -38,3 +38,4 @@ Ver `PARA_CHATGPT_y_GROK_esteticas_opcionales.md`: «oscuro-etéreo» (misterio/
 
 ## Lote 5–7 nov → PASS del Auditor (2026-11-02)
 Ver `PARA_CHATGPT_5-7nov_PASS_auditor.md`: una copia canónica por slot en `proyectos/<id>/` con `narrative_contract`; sin PASS del Auditor (15:00) nada entra a `cola/entrada/`.
+- Árboles 5-nov 17:00: rehacer storyboard (red micorrícica / Karst 2023) → `PARA_CHATGPT_arboles_5nov_rehacer_karst.md`
