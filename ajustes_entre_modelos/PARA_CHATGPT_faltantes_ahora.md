@@ -32,3 +32,6 @@ palomitas, árboles-se-comunican, día-en-Venus (5 nov) · aguacate-negro, ranas
 Hay que reescribirlas siguiendo la línea editorial y con visual_description concretas (Grok genera los frames).
 
 Ya está resuelto, no lo toques: Juno, SmartPE, sequías, el lote v4 del 1–2 nov, tiburón (ahora en 1-nov 19:00), maillard, y el 4 nov (hipo, miel, bioluminiscencia). Arqueas salió del 1-nov.
+
+## Estéticas opcionales (2026-11-02)
+Ver `PARA_CHATGPT_y_GROK_esteticas_opcionales.md`: «oscuro-etéreo» (misterio/fenómenos) y «DIY foto-proceso» (comida/tips prácticos). Solo doc; no generar frames sin pedido de Mj.
