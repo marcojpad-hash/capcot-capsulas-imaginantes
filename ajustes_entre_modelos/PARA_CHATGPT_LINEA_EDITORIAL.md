@@ -7,6 +7,14 @@ Todo storyboard que no cumpla esto se rechaza antes de montar. Imaginantes no de
 - 200–235 palabras, 7–9 escenas, 75–95 s. Referencia: pan, corneja, voyager (~2.4–2.5 palabras/s).
 - El tiempo que se gana con la velocidad se gasta en FRASES DE CABLEADO, no en más datos.
 
+
+## 1b. Balazo periodístico (Mj, desde el inicio)
+La primera frase es un **balazo**: titular de impacto que mete al oyente in medias res (quién/qué/golpe), máximo ~12–14 palabras, verbo de acción, cero lead académico.
+- Sí: «Apoyas el cuchillo, cortas una cebolla y, en segundos, ya estás llorando.»
+- Sí: «Una nave avanza hacia Júpiter y, de pronto, choca contra algo que nadie puede ver.»
+- No: «Según la tradición…», «Un estudio reveló…», «Investigadores descubrieron…», «Sabías que…».
+El balazo no basta solo en el renglón 1: las escenas 1–2 deben sostener la tensión del titular (como un lead de nota roja/ciencia que no se diluye en briefing). Si el medio se vuelve lista de datos, **FAIL** aunque el arranque sea bueno.
+
 ## 2. Arco (mini-trama, no lista de datos)
 1. **In medias res**: abre en plena acción o con una imagen concreta ("Una nave choca contra algo que nadie ve…"). Nunca "Un estudio reveló…".
 2. **Conflicto/tensión**: algo no cuadra, un misterio, un riesgo, una pregunta que el espectador quiere resolver.
