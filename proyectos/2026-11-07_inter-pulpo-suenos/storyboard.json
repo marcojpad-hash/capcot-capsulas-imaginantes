@@ -246,5 +246,26 @@
     "scientific_turn": "Durante el sueño activo se observan patrones dinámicos de piel que recuerdan a los usados durante la vigilia.",
     "evidence_limit": "Los registros conductuales no revelan recuerdos ni el contenido de una experiencia; el estudio se refiere a la especie observada.",
     "payoff": "La piel ofrece pistas sobre estados de sueño, pero no permite saber si el pulpo sueña una escena."
+  },
+  "narrative_qa": {
+    "status": "FAIL",
+    "score": 80,
+    "checks": {
+      "pregunta_central_reconstruible": true,
+      "apertura_in_medias_res": true,
+      "progresion_por_escena": false,
+      "transiciones_causales": false,
+      "giro_cientifico_explicado": true,
+      "limite_evidencia_explicito": true,
+      "payoff_cierre_apertura": false
+    },
+    "critical_flags": [
+      "REPETICION_DE_LIMITES_EN_ESCENAS_5_6",
+      "PAYOFF_VAGO_Y_PREGUNTA_ESPECULATIVA"
+    ],
+    "review_notes": "Los patrones observables no prueban sueños; las dos últimas explicaciones repiten límites y el cierre desplaza la respuesta hacia especulación subjetiva.",
+    "review_basis": "lectura_en_frio_solo_narracion",
+    "reviewer_role": "auditor_capcot_independiente",
+    "reviewed_at": "2026-11-03T15:07:21-06:00"
   }
 }
