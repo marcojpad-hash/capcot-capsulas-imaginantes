@@ -1,1 +1,174 @@
-PLACEHOLDER_STORYBOARD
+{
+  "project_id": "2026-11-03_autismo-microbioma-cerebro",
+  "serie": "Datos y ociosidades",
+  "title": "Microbioma intestinal y cerebro en autismo",
+  "titulo": "¿El intestino habla al cerebro?",
+  "language": "es-MX",
+  "aspect_ratio": "9:16",
+  "target_duration_seconds": 82,
+  "estructura": "pregunta",
+  "estilo_id": "claymation",
+  "estilo_visual": "Claymation / plastilina",
+  "trend_source": {
+    "tipo": "noticia_cientifica",
+    "medio": "UCLA Health / Nature Communications",
+    "url": "https://www.uclahealth.org/news/article/kids-with-autism-gut-microbiome-brain",
+    "estudio_doi": "10.1038/s41467-025-58459-1",
+    "fecha_publicacion": "2026-10-30",
+    "termino": "autismo microbioma cerebral",
+    "fecha_consulta": "2026-11-03"
+  },
+  "voice": {
+    "engine": "edge-tts",
+    "voice_id": "es-MX-JorgeNeural",
+    "rate": "+7%",
+    "pitch": "-2Hz",
+    "pad_seconds": 0.3,
+    "modo_pausas": "continuo"
+  },
+  "sources": [
+    {
+      "id": "SRC-001",
+      "cita_corta": "Aziz-Zadeh et al. (2025). Nat Commun.",
+      "doi": "10.1038/s41467-025-58459-1",
+      "url": "https://doi.org/10.1038/s41467-025-58459-1",
+      "accessed": "2026-11-03",
+      "supports": [
+        "Niveles más bajos de metabolitos de triptófano (kynurenato) en heces de niños con TEA",
+        "Asociación con actividad cerebral alterada en ínsula y cíngulo",
+        "Correlación con mayor severidad de síntomas"
+      ],
+      "ref_display": "Aziz-Zadeh et al., Nat Commun 2025"
+    },
+    {
+      "id": "SRC-002",
+      "cita_corta": "UCLA Health (2026).",
+      "url": "https://www.uclahealth.org/news/article/kids-with-autism-gut-microbiome-brain",
+      "accessed": "2026-11-03",
+      "supports": [
+        "84 participantes de 8 a 17 años, mitad con TEA",
+        "Primer análisis integral cerebro-intestino-microbioma en TEA",
+        "Sugiere posible beneficio de dieta o probióticos"
+      ],
+      "ref_display": "UCLA Health 30 Oct 2026"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_001",
+      "arc": "hook_medias_res",
+      "duration_seconds": 9.0,
+      "narration": "¿Y si el intestino de un niño con autismo manda señales distintas al cerebro? Un estudio reciente encontró metabolitos más bajos.",
+      "on_screen_text": "¿El intestino habla al cerebro?",
+      "visual_description": "claymation child figure next to a glowing intestine model with tiny bacteria characters talking to a brain",
+      "image_prompt": "claymation stop-motion scene, plasticine characters and set with visible fingerprints, soft studio lighting, miniature handmade props, vertical 9:16, no text + claymation child figure next to a glowing intestine model with tiny bacteria characters talking to a brain",
+      "source_ids": ["SRC-001", "SRC-002"],
+      "asset_filename": "frames/scene_001.jpg",
+      "sfx": ["burbujas"],
+      "ambiente": "viento",
+      "capa": {
+        "tipo": "mapa",
+        "region": [-120, -115, 33, 35],
+        "puntos": [{"nombre": "UCLA / Los Ángeles", "lon": -118.4, "lat": 34.07}],
+        "titulo": "UCLA / USC, California",
+        "fuente": "UCLA Health · Natural Earth"
+      }
+    },
+    {
+      "id": "scene_002",
+      "arc": "desarrollo",
+      "duration_seconds": 10.5,
+      "narration": "Investigadores de UCLA y USC estudiaron a 84 chicos y chicas de 8 a 17 años. La mitad tenía diagnóstico de espectro autista.",
+      "on_screen_text": "84 participantes",
+      "visual_description": "claymation lab with two groups of small plasticine kids, half with subtle sensory props",
+      "image_prompt": "claymation stop-motion scene, plasticine characters and set with visible fingerprints, soft studio lighting, miniature handmade props, vertical 9:16, no text + claymation lab with two groups of small plasticine kids, half with subtle sensory props",
+      "source_ids": ["SRC-002"],
+      "asset_filename": "frames/scene_002.jpg",
+      "sfx": ["campanas"],
+      "ambiente": "viento"
+    },
+    {
+      "id": "scene_003",
+      "arc": "desarrollo",
+      "duration_seconds": 11.0,
+      "narration": "En las heces hallaron menos metabolitos de triptófano, como el kynurenato. El triptófano viene de la comida y los microbios lo transforman.",
+      "on_screen_text": "Menos kynurenato",
+      "visual_description": "claymation microscopic view of bacteria converting food into glowing metabolite molecules",
+      "image_prompt": "claymation stop-motion scene, plasticine characters and set with visible fingerprints, soft studio lighting, miniature handmade props, vertical 9:16, no text + claymation microscopic view of bacteria converting food into glowing metabolite molecules",
+      "source_ids": ["SRC-001"],
+      "asset_filename": "frames/scene_003.jpg",
+      "sfx": ["pluma"],
+      "ambiente": "viento",
+      "capa": {
+        "tipo": "dato",
+        "valor": "menor",
+        "etiqueta": "kynurenato en TEA",
+        "fuente": "Aziz-Zadeh et al. 2025"
+      }
+    },
+    {
+      "id": "scene_004",
+      "arc": "desarrollo",
+      "duration_seconds": 10.0,
+      "narration": "Esos metabolitos más bajos se asociaron a cambios en la actividad de la ínsula y el cíngulo, zonas del cerebro ligadas a las emociones y el cuerpo.",
+      "on_screen_text": "Ínsula y cíngulo",
+      "visual_description": "claymation brain with highlighted insula and cingulate areas lighting up while connected by thin threads to gut",
+      "image_prompt": "claymation stop-motion scene, plasticine characters and set with visible fingerprints, soft studio lighting, miniature handmade props, vertical 9:16, no text + claymation brain with highlighted insula and cingulate areas lighting up while connected by thin threads to gut",
+      "source_ids": ["SRC-001"],
+      "asset_filename": "frames/scene_004.jpg",
+      "sfx": ["pulso"],
+      "ambiente": "viento"
+    },
+    {
+      "id": "scene_005",
+      "arc": "cierre_historia",
+      "duration_seconds": 10.5,
+      "narration": "La menor concentración también correlacionó con más síntomas y mayor severidad. No prueba causa, pero apunta a un vínculo real.",
+      "on_screen_text": "Más síntomas",
+      "visual_description": "claymation scale showing higher symptom intensity next to lower metabolite levels",
+      "image_prompt": "claymation stop-motion scene, plasticine characters and set with visible fingerprints, soft studio lighting, miniature handmade props, vertical 9:16, no text + claymation scale showing higher symptom intensity next to lower metabolite levels",
+      "source_ids": ["SRC-001"],
+      "asset_filename": "frames/scene_005.jpg",
+      "sfx": ["reloj"],
+      "ambiente": "viento"
+    },
+    {
+      "id": "scene_006",
+      "arc": "cierre_historia",
+      "duration_seconds": 9.5,
+      "narration": "El equipo sugiere que cambiar la dieta o usar probióticos podría ayudar. Las sensibilidades sensoriales complican la comida, claro.",
+      "on_screen_text": "Dieta y probióticos",
+      "visual_description": "claymation plate with varied foods and small probiotic bottles next to a child figure",
+      "image_prompt": "claymation stop-motion scene, plasticine characters and set with visible fingerprints, soft studio lighting, miniature handmade props, vertical 9:16, no text + claymation plate with varied foods and small probiotic bottles next to a child figure",
+      "source_ids": ["SRC-002"],
+      "asset_filename": "frames/scene_006.jpg",
+      "sfx": ["madera"],
+      "ambiente": "viento"
+    },
+    {
+      "id": "scene_007",
+      "arc": "reflexion_o_pregunta",
+      "duration_seconds": 12.0,
+      "narration": "¿Hasta dónde el microbioma intestinal puede modular cómo el cerebro procesa el mundo en el autismo? Esto fue Datos y ociosidades.",
+      "on_screen_text": "¿Hasta dónde?",
+      "visual_description": "claymation night scene with a child looking at a starry sky connected by a glowing gut-brain path",
+      "image_prompt": "claymation stop-motion scene, plasticine characters and set with visible fingerprints, soft studio lighting, miniature handmade props, vertical 9:16, no text + claymation night scene with a child looking at a starry sky connected by a glowing gut-brain path",
+      "source_ids": ["SRC-001"],
+      "asset_filename": "frames/scene_007.jpg",
+      "sfx": ["estrellas"],
+      "ambiente": "viento"
+    }
+  ],
+  "cortinilla_fuentes": {
+    "duration_seconds": 6,
+    "titulo": "Fuentes",
+    "aviso": "Imágenes generadas con IA. Voz sintética. Audio sintetizado.",
+    "firma": "Datos y ociosidades · @datosyociosidades"
+  },
+  "export": {
+    "filename": "capsula.mp4",
+    "resolution": "1080x1920",
+    "fps": 30,
+    "loudness_lufs": -14
+  }
+}

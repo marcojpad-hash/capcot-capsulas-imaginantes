@@ -1,1 +1,14 @@
-PLACEHOLDER_PROG
+{
+  "project_id": "2026-11-03_autismo-microbioma-cerebro",
+  "plataformas": ["yt", "tt"],
+  "publish_at": "2026-11-03T20:00:00Z",
+  "ventana": "mediodia",
+  "hora_cdmx": "2026-11-03 14:00",
+  "caption_tt": "¿El intestino de un niño con autismo manda señales distintas al cerebro? Un estudio de UCLA y USC encontró menos metabolitos de triptófano ligados a cambios cerebrales y más síntomas. #autismo #microbioma #ciencia #DatosYOciosidades",
+  "titulo_yt": "¿El intestino habla al cerebro en el autismo?",
+  "descripcion_yt": "Niños con espectro autista tienen niveles más bajos de metabolitos del microbioma intestinal (como kynurenato) asociados a actividad cerebral distinta y mayor severidad de síntomas. Estudio de UCLA/USC en Nature Communications.\n\nFuentes: Aziz-Zadeh et al. (2025) doi:10.1038/s41467-025-58459-1 · UCLA Health 30 Oct 2026.\n\nTikTok: https://www.tiktok.com/@datosyociosidades\n\nImágenes generadas con IA. Voz sintética. Audio sintetizado.",
+  "tags": ["autismo", "microbioma", "cerebro", "ciencia", "TEA", "Datos y ociosidades"],
+  "privacidad": "private",
+  "estado": "programado_paquete",
+  "nota": "Falta montar mp4 (edge-tts JorgeNeural + FFmpeg). Mj sube TikTok en el slot. YouTube private hasta publish_at."
+}
