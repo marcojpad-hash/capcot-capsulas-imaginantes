@@ -13,7 +13,7 @@
 ## 2. Checklist por hueco
 | Hueco | Fuente | Fecha límite para montar | Notas |
 |---|---|---|---|
-| 3-nov 07:00 kids | Grok Bot | hecho | leche-enchilado YT 7HfvkkR5Jf4; TT+FB pendientes Grok app antes de 06:30 |
+| 3-nov 07:00 kids | Grok Bot | hecho | leche-enchilado YT 7HfvkkR5Jf4; TT+FB programados (ver 2026-11-03_SLOT_0700_CUBIERTO.md) |
 | 23:30 dato 1–7 nov | ChatGPT (b) | mismo día 22:30 | 23:30 CDMX = 05:30Z del día siguiente. Si "SIN DATO", deja el slot vacío |
 | 5–7 nov ×12 | ChatGPT (c) rewrite | día anterior 22:00 | Si no llega la v2 → monta el storyboard v1 que ya está en cola (sirve) |
 | 4-nov 19:00 Machu/cielo azul | Mj OK o respaldo de ChatGPT (d) | 3-nov 22:00 | |

@@ -234,19 +234,21 @@
    "fecha": "2026-11-03",
    "hora": "07:00",
    "cesta": "kids",
-   "project_id": "2026-11-03_kids-TBD",
-   "estado": "pendiente_reemplazo",
-   "notas": "Tiburón adelantado a 1-nov 19:00 (YT 0x1B9_rMm-I). Borrar en Studio bImG_vdlBhs (sigue programado 3-nov 13:00Z) y TT/FB tiburón 3-nov 8:00 NY. Candidato sin costo: 2026-10-24_lote01-05-chicxulub (QA OK, sin publicar; pide OK Mj, estilo viejo sin sello) o pedir ChatGPT.",
+   "project_id": "2026-11-03_kids-leche-enchilado",
+   "estado": "programado_yt_tt_fb",
+   "notas": "Cubierto por Grok Bot 2-nov ~23:00 (ver ajustes_entre_modelos/2026-11-03_SLOT_0700_CUBIERTO.md). Pendiente Mj: etiqueta contenido sintético en YT Studio. Viejo tiburón bImG_vdlBhs: confirmar borrado en Studio.",
    "publishAt": "2026-11-03T13:00:00Z",
    "yt_v1": true,
    "plataformas": {
-    "yt": "vacío (borrar viejo)",
-    "tt": "borrar viejo",
-    "fb": "borrar viejo"
+    "yt": "programado",
+    "tt": "programado",
+    "fb": "programado"
    },
    "yt_ids_a_borrar": [
     "bImG_vdlBhs"
-   ]
+   ],
+   "yt_id": "7HfvkkR5Jf4",
+   "mp4": "salidas/2026-11-03_kids-leche-enchilado/"
   },
   {
    "fecha": "2026-11-03",
