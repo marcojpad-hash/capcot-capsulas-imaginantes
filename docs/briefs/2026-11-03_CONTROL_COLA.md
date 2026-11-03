@@ -31,6 +31,27 @@ Los doce `project_id`, `fecha_objetivo`, `slot_local` y `slot_cesta` de `proyect
 - `docs/PLAN_MAESTRO_AUTOMATICO.md`, `docs/FLUJO_EXTERNO.md` y `scripts/rotacion.py` conservan cinco ventanas antiguas, incluida 19:00. El código todavía define ventanas 16:00–18:00 y 18:00–21:00, por lo que 17:00 y 17:45 caen en la misma ventana del código.
 - Los doce registros del horario siguen con `estado: pedir_chatgpt` aunque ya existe `proyectos/<id>/storyboard.json`. El control del 2 de noviembre indica que deben quedar en proyectos esperando PASS del auditor. No se modificó `data/*.json`.
 
+## 2.1 Inventario exhaustivo de los doce borradores
+
+Los doce están en `proyectos/<id>/storyboard.json`. En todos coinciden `project_id`, `fecha_objetivo`, `slot_local` y `slot_cesta` con el horario. El campo `estado` del horario continúa como `pedir_chatgpt` pese a que el borrador ya existe.
+
+| ID | Fecha | Slot CDMX | Cesta | Estado horario | Dispatch | Estado Grok |
+|---|---|---:|---|---|---|---|
+| `2026-11-05_kids-dia-en-venus` | 05-nov | 07:00 | kids | pedir_chatgpt | NOT_DISPATCHABLE | RECEPCION_GROK_NO_CONFIRMADA |
+| `2026-11-05_comida-palomitas` | 05-nov | 13:30 | comida_familia | pedir_chatgpt | NOT_DISPATCHABLE | RECEPCION_GROK_NO_CONFIRMADA |
+| `2026-11-05_inter-arboles-se-comunican` | 05-nov | 17:00 | intermedio_1 | pedir_chatgpt | NOT_DISPATCHABLE | RECEPCION_GROK_NO_CONFIRMADA |
+| `2026-11-05_inter-rayo-globular` | 05-nov | 17:45 | intermedio_2 | pedir_chatgpt | NOT_DISPATCHABLE | RECEPCION_GROK_NO_CONFIRMADA |
+| `2026-11-06_kids-ballena-azul-corazon` | 06-nov | 07:00 | kids | pedir_chatgpt | NOT_DISPATCHABLE | RECEPCION_GROK_NO_CONFIRMADA |
+| `2026-11-06_comida-aguacate-negro` | 06-nov | 13:30 | comida_familia | pedir_chatgpt | NOT_DISPATCHABLE | RECEPCION_GROK_NO_CONFIRMADA |
+| `2026-11-06_inter-ranas-congeladas` | 06-nov | 17:00 | intermedio_1 | pedir_chatgpt | NOT_DISPATCHABLE | RECEPCION_GROK_NO_CONFIRMADA |
+| `2026-11-06_inter-arena-cantante` | 06-nov | 17:45 | intermedio_2 | pedir_chatgpt | NOT_DISPATCHABLE | RECEPCION_GROK_NO_CONFIRMADA |
+| `2026-11-07_kids-huesos-bebe` | 07-nov | 07:00 | kids | pedir_chatgpt | NOT_DISPATCHABLE | RECEPCION_GROK_NO_CONFIRMADA |
+| `2026-11-07_comida-hielo-caliente` | 07-nov | 13:30 | comida_familia | pedir_chatgpt | NOT_DISPATCHABLE | RECEPCION_GROK_NO_CONFIRMADA |
+| `2026-11-07_inter-pulpo-suenos` | 07-nov | 17:00 | intermedio_1 | pedir_chatgpt | NOT_DISPATCHABLE | RECEPCION_GROK_NO_CONFIRMADA |
+| `2026-11-07_inter-nubes-pesan` | 07-nov | 17:45 | intermedio_2 | pedir_chatgpt | NOT_DISPATCHABLE | RECEPCION_GROK_NO_CONFIRMADA |
+
+La ruta real de cada uno es `proyectos/<id>/storyboard.json`, fuera de los paths y del selector del workflow. No hay JSON directo `cola/entrada/<id>.json` ni salida asociada.
+ 
 ## 3. QA narrativo en frío del lote
 
 Se ocultaron título, resumen, arco, notas y `narrative_contract`; la lectura se hizo sobre la narración concatenada. Cada JSON recibió `narrative_qa` con siete checks, `review_basis: lectura_en_frio_solo_narracion`, `reviewer_role: auditor_capcot_independiente` y `critical_flags`.
