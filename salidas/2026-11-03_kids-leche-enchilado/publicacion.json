@@ -69,6 +69,24 @@
     "selfDeclaredMadeForKids": false,
     "containsSyntheticMedia": false
    }
-  }
+  },
+  "tiktok": {
+   "estado": "programado",
+   "cuenta": "@datosyociosidades",
+   "publish_at": "2026-11-03T07:00:00-06:00",
+   "ui_tz": "America/New_York 08:00",
+   "post_id": null,
+   "etiqueta_ia": true
+  },
+  "facebook": {
+   "estado": "programado",
+   "pagina": "Datos y ociosidades",
+   "asset_id": "1460158683840154",
+   "publish_at": "2026-11-03T07:00:00-06:00",
+   "ui_tz": "America/New_York 08:00",
+   "post_id": null,
+   "etiqueta_ia": "no se encontró toggle"
+  },
+  "youtube_nota_ia": "containsSyntheticMedia sigue false; API update 403 insufficient scopes; Mj debe marcar contenido alterado en Studio"
  }
 }
