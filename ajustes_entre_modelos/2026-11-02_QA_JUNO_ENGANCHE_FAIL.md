@@ -23,3 +23,6 @@ Pendientes de recepción en repo/chat. Cuando lleguen, se suman a este checklist
 
 ## Dirección de reescritura (sin tirar el arranque)
 Conservar esc. 1. Comprimir instrumento a UNA metáfora (radio viejo → hi‑fi). Máximo UN nombre técnico anclado. Meter stake terrestre. Límite explícito. Cierre tambor + eco del choque invisible. Luego remontar voz/subs si Mj autoriza créditos/tiempo antes del slot.
+
+## Criterio nuevo relacionado
+Ancla «¿y a mí qué?» (Mj 2-nov): Juno falla aquí — no vincula el muro al cuerpo/vida terrestre a tiempo.

@@ -15,6 +15,13 @@ La primera frase es un **balazo**: titular de impacto que mete al oyente in medi
 - No: «Según la tradición…», «Un estudio reveló…», «Investigadores descubrieron…», «Sabías que…».
 El balazo no basta solo en el renglón 1: las escenas 1–2 deben sostener la tensión del titular (como un lead de nota roja/ciencia que no se diluye en briefing). Si el medio se vuelve lista de datos, **FAIL** aunque el arranque sea bueno.
 
+
+## 1c. Ancla «¿y a mí qué?» (Mj 2-nov ~23:31)
+El enganche no cierra solo con balazo. En las primeras 2–3 escenas el oyente debe sentir **por qué le llama la atención** o **qué tiene que ver con su cuerpo/vida/mundo cercano** (Gordon: vincular «con lo que vivimos»).
+- Ejemplos: el Sol te golpea y no lo sientes; la leche del taco; el hipo en clase; el pan de ayer en la bolsa.
+- Prohibido quedarse en briefing de misión/laboratorio sin ancla cotidiana.
+- Autochequeo: si alguien pregunta «¿y a mí qué?», el guion ya respondió antes del minuto 0:40. Si no → **FAIL** de enganche.
+
 ## 2. Arco (mini-trama, no lista de datos)
 1. **In medias res**: abre en plena acción o con una imagen concreta ("Una nave choca contra algo que nadie ve…"). Nunca "Un estudio reveló…".
 2. **Conflicto/tensión**: algo no cuadra, un misterio, un riesgo, una pregunta que el espectador quiere resolver.
