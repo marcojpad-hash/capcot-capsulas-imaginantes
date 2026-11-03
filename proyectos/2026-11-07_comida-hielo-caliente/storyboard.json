@@ -245,5 +245,25 @@
     "scientific_turn": "Un estudio controlado no encontró evidencia de un efecto general significativo; importan evaporación, recipiente, contacto térmico y sobreenfriamiento.",
     "evidence_limit": "La ausencia de un efecto general en esas condiciones no descarta todas las configuraciones particulares.",
     "payoff": "La pregunta útil no es qué agua gana siempre, sino bajo qué condiciones aparece una diferencia reproducible."
+  },
+  "narrative_qa": {
+    "status": "FAIL",
+    "score": 81,
+    "checks": {
+      "pregunta_central_reconstruible": true,
+      "apertura_in_medias_res": false,
+      "progresion_por_escena": true,
+      "transiciones_causales": true,
+      "giro_cientifico_explicado": true,
+      "limite_evidencia_explicito": true,
+      "payoff_cierre_apertura": true
+    },
+    "critical_flags": [
+      "APERTURA_DE_CREENCIAS_NO_IN_MEDIAS_RES"
+    ],
+    "review_notes": "La secuencia experimental y su límite están bien conectados, pero abre con la formulación general de una creencia, no con el fenómeno en curso.",
+    "review_basis": "lectura_en_frio_solo_narracion",
+    "reviewer_role": "auditor_capcot_independiente",
+    "reviewed_at": "2026-11-03T15:07:21-06:00"
   }
 }
