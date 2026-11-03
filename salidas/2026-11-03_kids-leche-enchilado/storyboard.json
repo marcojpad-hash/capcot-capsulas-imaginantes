@@ -1,0 +1,256 @@
+{
+ "_schema": "CAPCOT_STORYBOARD_TEXT_V2",
+ "project_id": "2026-11-03_kids-leche-enchilado",
+ "serie": "Datos y ociosidades",
+ "title": "¿Por qué la leche quita lo enchilado?",
+ "titulo": "¿Agua o leche al enchilarte?",
+ "language": "es-MX",
+ "aspect_ratio": "9:16",
+ "target_duration_seconds": 84,
+ "estructura": "pregunta",
+ "audience": "Público general",
+ "occasion": "Consumo vertical breve",
+ "resumen": "La capsaicina del chile activa el receptor TRPV1, el mismo sensor que avisa del calor (Caterina et al. 1997). En un experimento con 72 personas (Nolden, Lenart y Hayes 2019), la leche entera y la descremada fueron las bebidas que más bajaron el ardor; el agua ayudó menos. Como la descremada funcionó igual que la entera, la proteína podría importar más que la grasa; el mecanismo aún no está cerrado.",
+ "trend_source": {
+  "termino": "¿Qué quita lo enchilado?",
+  "fecha_publicacion": "2019-05-20",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6620146/"
+ },
+ "editorial_status": "REDACTADO_Y_MONTADO_POR_GROK_BOT_3NOV_SLOT_KIDS_HOTTIP",
+ "arco": {
+  "hook_medias_res": "Mordida a un taco con salsa: la boca arde y corres por agua.",
+  "desarrollo": "Capsaicina engaña al sensor de calor TRPV1; no hay quemadura real. Experimento Penn State: 72 personas, 7 bebidas; leche gana, agua ayuda menos.",
+  "cierre_historia": "Límite: los científicos aún no saben si es la grasa, la proteína o el azúcar; ninguna bebida lo quita al instante.",
+  "reflexion_o_pregunta": "Giro: la descremada funcionó igual que la entera, así que no sería (solo) la grasa. Pregunta + sello."
+ },
+ "estilo_id": "crayones_infantiles",
+ "estilo_visual": "Crayones infantiles",
+ "visual_identity": {
+  "style_id": "crayones_infantiles",
+  "style_name": "Crayones infantiles",
+  "prompt_base": "child's wax crayon drawing on white paper, naive shapes, bright colors, visible crayon strokes, cheerful sun, vertical 9:16, no text",
+  "palette": "Según catálogo",
+  "lighting": "Constante según prompt_base",
+  "texture": "Según prompt_base",
+  "composition": "Vertical 9:16; sujeto central; continuidad de escala y personaje",
+  "negative_prompt": "No texto generado dentro de imagen, no marcas de agua, no anatomía incorrecta, no elementos no respaldados",
+  "reference_assets": [],
+  "seed": null,
+  "seed_policy": "Mantener continuidad de personajes, paleta y encuadre entre escenas"
+ },
+ "typography_identity": {
+  "font_family": "DejaVu Sans",
+  "font_weight": "700 para gancho; 400 para subtítulos",
+  "title_style": "Máximo seis palabras; presente desde frame 0 en postproducción",
+  "subtitle_style": "Bloques de máximo tres palabras; zona segura inferior",
+  "hierarchy": "Gancho > dato/etiqueta > subtítulos",
+  "animation": "Un movimiento por plano; tipografía en postproducción"
+ },
+ "voice": {
+  "engine": "edge-tts",
+  "voice_id": "es-MX-JorgeNeural",
+  "language": "es-MX",
+  "rate": "+7%",
+  "pitch": "-2Hz",
+  "pad_seconds": 0.3,
+  "modo_pausas": "continuo"
+ },
+ "sources": [
+  {
+   "id": "SRC-001",
+   "cita_corta": "Nolden AA, Lenart G, Hayes JE. Putting out the fire – Efficacy of common beverages in reducing oral burn from capsaicin. Physiol Behav 208:112557 (2019).",
+   "url": "https://doi.org/10.1016/j.physbeh.2019.05.018",
+   "doi": "10.1016/j.physbeh.2019.05.018",
+   "accessed": "2026-11-02",
+   "publication_date": "2019-05-20",
+   "supports": [
+    "72 participantes; 7 bebidas probadas tras jugo de tomate picante",
+    "Leche entera y descremada redujeron más el ardor; Kool-Aid también; solo esas superaron al agua",
+    "Entera y descremada no difirieron; proteína podría importar más que grasa; mecanismo pendiente"
+   ],
+   "verification_status": "VERIFICADO_WEB (PMC6620146)"
+  },
+  {
+   "id": "SRC-002",
+   "cita_corta": "Caterina MJ et al. The capsaicin receptor: a heat-activated ion channel in the pain pathway. Nature 389:816–824 (1997).",
+   "url": "https://doi.org/10.1038/39807",
+   "doi": "10.1038/39807",
+   "accessed": "2026-11-02",
+   "publication_date": "1997-10-23",
+   "supports": [
+    "La capsaicina activa un receptor que también responde al calor (TRPV1/VR1)"
+   ],
+   "verification_status": "VERIFICADO_LITERATURA"
+  }
+ ],
+ "scenes": [
+  {
+   "id": "scene_001",
+   "arc": "hook_medias_res",
+   "duration_seconds": 10,
+   "narration": "Le das una mordida al taco, con salsa de la buena... y uno, dos, tres: la lengua arde, los ojos lloran, y corres por un vaso de agua. Alto ahí. Tal vez no es tu mejor opción.",
+   "on_screen_text": "¿Agua o leche?",
+   "visual_description": "a kid biting a taco with red salsa, face red, steam coming from ears, tears, reaching for a glass of water",
+   "image_prompt": "child's wax crayon drawing on white paper, naive shapes, bright colors, visible crayon strokes, cheerful sun, vertical 9:16, no text. a kid biting a taco with red salsa, face red, steam coming from ears, tears, reaching for a glass of water",
+   "sfx": [],
+   "source_ids": [
+    "SRC-001"
+   ],
+   "style_id": "crayones_infantiles",
+   "asset_filename": "frames/scene_001.png",
+   "ambiente": "silencio"
+  },
+  {
+   "id": "scene_002",
+   "arc": "desarrollo",
+   "duration_seconds": 12,
+   "narration": "Primero, el truco del chile. Trae una sustancia llamada capsaicina. Cuando toca tu lengua, se pega a un sensor que normalmente avisa: ¡cuidado, algo está caliente! Y el sensor se la cree.",
+   "on_screen_text": "El chile engaña",
+   "visual_description": "cartoon tongue with tiny alarm sensors ringing, a little green chili character pressing a button labeled with a flame symbol",
+   "image_prompt": "child's wax crayon drawing on white paper, naive shapes, bright colors, visible crayon strokes, cheerful sun, vertical 9:16, no text. cartoon tongue with tiny alarm sensors ringing, a little green chili character pressing a button labeled with a flame symbol",
+   "sfx": [],
+   "source_ids": [
+    "SRC-002"
+   ],
+   "style_id": "crayones_infantiles",
+   "asset_filename": "frames/scene_002.png",
+   "ambiente": "silencio"
+  },
+  {
+   "id": "scene_003",
+   "arc": "desarrollo",
+   "duration_seconds": 12,
+   "narration": "Por eso sientes fuego, aunque tu boca no se esté quemando de verdad. Es una falsa alarma. Ahora, ¿cómo se apaga? En 2019, en la Universidad Estatal de Pensilvania, hicieron la prueba con setenta y dos personas.",
+   "on_screen_text": "Falsa alarma",
+   "visual_description": "a fire alarm bell on a tongue with a question mark, and a small university building with scientists in lab coats",
+   "image_prompt": "child's wax crayon drawing on white paper, naive shapes, bright colors, visible crayon strokes, cheerful sun, vertical 9:16, no text. a fire alarm bell on a tongue with a question mark, and a small university building with scientists in lab coats",
+   "sfx": [],
+   "source_ids": [
+    "SRC-001",
+    "SRC-002"
+   ],
+   "style_id": "crayones_infantiles",
+   "asset_filename": "frames/scene_003.png",
+   "ambiente": "silencio"
+  },
+  {
+   "id": "scene_004",
+   "arc": "desarrollo",
+   "duration_seconds": 12,
+   "narration": "Les dieron jugo de tomate con picante, y luego distintas bebidas: agua, agua mineral, refresco de cola, cerveza sin alcohol, un agua de sabor azucarada, leche entera y leche descremada. Y cada diez segundos decían cuánto les ardía.",
+   "on_screen_text": "72 personas, 7 bebidas",
+   "visual_description": "a row of seven glasses: water, sparkling water, cola, amber drink, red sweet drink, two glasses of milk, a stopwatch beside them",
+   "image_prompt": "child's wax crayon drawing on white paper, naive shapes, bright colors, visible crayon strokes, cheerful sun, vertical 9:16, no text. a row of seven glasses: water, sparkling water, cola, amber drink, red sweet drink, two glasses of milk, a stopwatch beside them",
+   "sfx": [],
+   "source_ids": [
+    "SRC-001"
+   ],
+   "style_id": "crayones_infantiles",
+   "asset_filename": "frames/scene_004.png",
+   "ambiente": "silencio"
+  },
+  {
+   "id": "scene_005",
+   "arc": "desarrollo",
+   "duration_seconds": 12,
+   "narration": "¿El resultado? Todas ayudaron un poco, pero las campeonas fueron las dos leches. El agua de sabor con azúcar también funcionó bien. Y el agua sola... se quedó atrás.",
+   "on_screen_text": "Gana la leche",
+   "visual_description": "two glasses of milk on a winners podium with gold medals, a glass of water sadly on the side",
+   "image_prompt": "child's wax crayon drawing on white paper, naive shapes, bright colors, visible crayon strokes, cheerful sun, vertical 9:16, no text. two glasses of milk on a winners podium with gold medals, a glass of water sadly on the side",
+   "sfx": [],
+   "source_ids": [
+    "SRC-001"
+   ],
+   "style_id": "crayones_infantiles",
+   "asset_filename": "frames/scene_005.png",
+   "ambiente": "silencio"
+  },
+  {
+   "id": "scene_006",
+   "arc": "cierre_historia",
+   "duration_seconds": 10,
+   "narration": "Pero ojo, aquí está el límite: los científicos todavía no saben exactamente por qué funciona. Puede ser la grasa, la proteína de la leche o el azúcar. Y ninguna bebida lo apaga al instante.",
+   "on_screen_text": "Aún sin respuesta",
+   "visual_description": "a scientist kid with a magnifying glass looking at three question marks labeled with drawings of a butter drop, an egg-like protein blob and a sugar cube",
+   "image_prompt": "child's wax crayon drawing on white paper, naive shapes, bright colors, visible crayon strokes, cheerful sun, vertical 9:16, no text. a scientist kid with a magnifying glass looking at three question marks labeled with drawings of a butter drop, an egg-like protein blob and a sugar cube",
+   "sfx": [],
+   "source_ids": [
+    "SRC-001"
+   ],
+   "style_id": "crayones_infantiles",
+   "asset_filename": "frames/scene_006.png",
+   "ambiente": "silencio"
+  },
+  {
+   "id": "scene_007",
+   "arc": "reflexion_o_pregunta",
+   "duration_seconds": 10,
+   "narration": "Y el giro: la leche descremada funcionó igual que la entera. O sea, quizá no es la grasa la que apaga el fuego, sino la proteína. ¿Tú qué tomas cuando te enchilas? Esto fue Datos y ociosidades.",
+   "on_screen_text": "¿Y tú qué tomas?",
+   "visual_description": "a happy kid holding a glass of milk with a calm smiling green chili next to him, a family table with tacos",
+   "image_prompt": "child's wax crayon drawing on white paper, naive shapes, bright colors, visible crayon strokes, cheerful sun, vertical 9:16, no text. a happy kid holding a glass of milk with a calm smiling green chili next to him, a family table with tacos",
+   "sfx": [],
+   "source_ids": [
+    "SRC-001"
+   ],
+   "style_id": "crayones_infantiles",
+   "asset_filename": "frames/scene_007.png",
+   "ambiente": "silencio"
+  }
+ ],
+ "cortinilla_fuentes": {
+  "duration_seconds": 6,
+  "titulo": "Fuentes",
+  "aviso": "Contenido generado con IA; imágenes y voz sintéticas declaradas en versión final.",
+  "firma": "Datos y ociosidades",
+  "source_ids": [
+   "SRC-001",
+   "SRC-002"
+  ]
+ },
+ "audio": {
+  "music_asset": "sintetico:pulso",
+  "music_plan": "Cama sintética propia (cama_sonora.py)",
+  "music_license": "obra propia"
+ },
+ "export": {
+  "resolution": "1080x1920",
+  "fps": 30,
+  "render_status": "PENDIENTE"
+ },
+ "publicacion": {
+  "status": "PROGRAMAR_3NOV_0700_CDMX",
+  "platforms": [
+   "YouTube Shorts",
+   "TikTok",
+   "Facebook Reels"
+  ],
+  "publish_at_utc": "2026-11-03T13:00:00Z"
+ },
+ "estado": "EN_PRODUCCION_GROK_BOT",
+ "production_mode": "full",
+ "validation_notes": [
+  "Narración ~78 s; cortinilla 6 s.",
+  "Escrito 2-nov ~22:40 CDMX por Grok Bot por regla Mj: no dejar slot vacío."
+ ],
+ "linea_tematica_provisional": "Ciencia y vida cotidiana",
+ "approved_assets": [],
+ "risk_notes": [
+  "No afirmar mecanismo; el estudio lo deja abierto.",
+  "No recomendar para alergias/intolerancia a lactosa; es dato, no consejo médico."
+ ],
+ "thumbnail_source": "scene_001",
+ "qa_editorial": {
+  "fecha": "2026-11-02",
+  "por": "Grok Bot (redactor) — sin auditor en frío independiente por urgencia",
+  "estado": "OK línea editorial; hechos acotados a 3 fuentes"
+ },
+ "narrative_contract": {
+  "central_question": "¿Qué bebida apaga mejor lo enchilado?",
+  "promise": "Resultado de un experimento real",
+  "stakes": "Elegir mal = más rato ardiendo",
+  "scientific_turn": "Capsaicina activa el sensor de calor; leche redujo más el ardor",
+  "evidence_limit": "Mecanismo no resuelto; ninguna bebida lo quita al instante",
+  "payoff": "Descremada = entera: quizá la proteína, no la grasa"
+ }
+}

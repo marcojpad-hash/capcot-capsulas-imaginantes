@@ -10,7 +10,7 @@ Estado: `cola/entrada/` vacía · `handoffs/grok_inbox/` sin paquetes · `handof
 ## Huecos reales
 | Slot | Estado | Quién |
 |---|---|---|
-| 3-nov 07:00 kids | Vacío. Paquete ChatGPT no llegó (límite 2-nov 22:00 vencido). Chicxulub sin mp4 y requiere OK Mj. | Probablemente queda vacío; si Mj da OK a otro tema, ChatGPT storyboard → Grok monta. |
+| 3-nov 07:00 kids | **CUBIERTO** leche-enchilado, YT 7HfvkkR5Jf4 (ver 2026-11-03_SLOT_0700_CUBIERTO.md) | Grok app: TT+FB antes de 06:30 |
 | 3-nov 23:30 dato | Sin paquete | ChatGPT (rutina dato 10:00/16:00), Grok monta mismo día ≤22:30 |
 | 4-nov 19:00 | Machu Picchu pendiente OK Mj; respaldo "cielo azul / atardecer rojo" (NASA SpacePlace / NOAA) | ChatGPT entrega respaldo antes de 3-nov 22:00 si no hay OK; Grok monta |
 | 4-nov 23:30 dato | Sin paquete | ChatGPT → Grok |

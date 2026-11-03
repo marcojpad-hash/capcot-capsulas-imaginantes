@@ -1,0 +1,266 @@
+{
+ "_schema": "CAPCOT_STORYBOARD_TEXT_V2",
+ "project_id": "2026-11-xx_kids-flamencos-rosas",
+ "serie": "Datos y ociosidades",
+ "title": "¿Por qué los flamencos son rosas?",
+ "titulo": "¿Quién pintó al flamenco?",
+ "language": "es-MX",
+ "aspect_ratio": "9:16",
+ "target_duration_seconds": 84,
+ "estructura": "pregunta",
+ "audience": "Público general",
+ "occasion": "Consumo vertical breve",
+ "resumen": "Los flamencos nacen con plumón blanco o gris; el rosa llega con los años porque comen algas y crustáceos con carotenoides, pigmentos que su cuerpo deposita en las plumas. Además, el flamenco común se unta secreción de su glándula de acicalamiento, que también lleva carotenoides, sobre todo en temporada de cortejo (Amat et al. 2011).",
+ "trend_source": {
+  "termino": "¿Por qué los flamencos son rosas?",
+  "fecha_publicacion": "",
+  "url": "https://nationalzoo.si.edu/animals/news/why-are-flamingos-pink-and-other-flamingo-facts"
+ },
+ "editorial_status": "REDACTADO_Y_MONTADO_POR_GROK_BOT_3NOV_SLOT_KIDS",
+ "arco": {
+  "hook_medias_res": "Un pollito de flamenco sale del huevo... y no es rosa: es blanco-gris.",
+  "desarrollo": "El color viene de la comida: carotenoides de algas y artemias; leche de buche de ambos padres; años y mudas para volverse rosa.",
+  "cierre_historia": "Límite: sin carotenoides en la dieta las plumas nuevas pierden color; por eso en zoológicos se les da alimento con esos pigmentos.",
+  "reflexion_o_pregunta": "Giro: el flamenco común se maquilla con aceite de su glándula de acicalamiento. Pregunta: ¿de qué color serías tú si fueras lo que comes? Sello Datos y ociosidades."
+ },
+ "estilo_id": "crayones_infantiles",
+ "estilo_visual": "Crayones infantiles",
+ "visual_identity": {
+  "style_id": "crayones_infantiles",
+  "style_name": "Crayones infantiles",
+  "prompt_base": "child's wax crayon drawing on white paper, naive shapes, bright colors, visible crayon strokes, cheerful sun, vertical 9:16, no text",
+  "palette": "Según catálogo",
+  "lighting": "Constante según prompt_base",
+  "texture": "Según prompt_base",
+  "composition": "Vertical 9:16; sujeto central; continuidad de escala y personaje",
+  "negative_prompt": "No texto generado dentro de imagen, no marcas de agua, no anatomía incorrecta, no elementos no respaldados",
+  "reference_assets": [],
+  "seed": null,
+  "seed_policy": "Mantener continuidad de personajes, paleta y encuadre entre escenas"
+ },
+ "typography_identity": {
+  "font_family": "DejaVu Sans",
+  "font_weight": "700 para gancho; 400 para subtítulos",
+  "title_style": "Máximo seis palabras; presente desde frame 0 en postproducción",
+  "subtitle_style": "Bloques de máximo tres palabras; zona segura inferior",
+  "hierarchy": "Gancho > dato/etiqueta > subtítulos",
+  "animation": "Un movimiento por plano; tipografía en postproducción"
+ },
+ "voice": {
+  "engine": "edge-tts",
+  "voice_id": "es-MX-JorgeNeural",
+  "language": "es-MX",
+  "rate": "+7%",
+  "pitch": "-2Hz",
+  "pad_seconds": 0.3,
+  "modo_pausas": "continuo"
+ },
+ "sources": [
+  {
+   "id": "SRC-001",
+   "cita_corta": "Smithsonian's National Zoo. Why Are Flamingos Pink? And Other Flamingo Facts.",
+   "url": "https://nationalzoo.si.edu/animals/news/why-are-flamingos-pink-and-other-flamingo-facts",
+   "doi": null,
+   "accessed": "2026-11-02",
+   "publication_date": "",
+   "supports": [
+    "Color por carotenoides de algas y artemias",
+    "Pollitos nacen con plumón blanco-gris y tardan años en volverse rosas",
+    "Leche de buche producida por ambos padres"
+   ],
+   "verification_status": "VERIFICADO_WEB"
+  },
+  {
+   "id": "SRC-002",
+   "cita_corta": "Denver Zoo. American Flamingo (Phoenicopterus ruber) fact sheet.",
+   "url": "https://www.denverzoo.org/wp-content/uploads/2018/09/American-Flamingo.pdf",
+   "doi": null,
+   "accessed": "2026-11-02",
+   "publication_date": "2018",
+   "supports": [
+    "Sin carotenoides suficientes las plumas pierden color",
+    "En zoológico comen alimento con carotenoides",
+    "Filtran comida con el pico de cabeza"
+   ],
+   "verification_status": "VERIFICADO_WEB"
+  },
+  {
+   "id": "SRC-003",
+   "cita_corta": "Amat JA et al. Greater flamingos Phoenicopterus roseus use uropygial secretions as make-up. Behav Ecol Sociobiol 65:665–673 (2011).",
+   "url": "https://doi.org/10.1007/s00265-010-1068-z",
+   "doi": "10.1007/s00265-010-1068-z",
+   "accessed": "2026-11-02",
+   "publication_date": "2010-10-23",
+   "supports": [
+    "Secreción uropigial con carotenoides untada en plumas",
+    "Uso más frecuente en exhibiciones de grupo / cortejo"
+   ],
+   "verification_status": "VERIFICADO_WEB"
+  }
+ ],
+ "scenes": [
+  {
+   "id": "scene_001",
+   "arc": "hook_medias_res",
+   "duration_seconds": 10,
+   "narration": "Un huevo se rompe en un nido de lodo. Sale un pollito de flamenco... y sorpresa: no es rosa. Es blanco, grisecito, como bolita de algodón sucia.",
+   "on_screen_text": "¿Y el rosa?",
+   "visual_description": "flamingo chick hatching from egg on a small mud cone nest, chick with white-grey fluffy down, pink-feathered parent flamingo watching",
+   "image_prompt": "child's wax crayon drawing on white paper, naive shapes, bright colors, visible crayon strokes, cheerful sun, vertical 9:16, no text. flamingo chick hatching from egg on a small mud cone nest, chick with white-grey fluffy down, pink-feathered parent flamingo watching",
+   "ambiente": "madera",
+   "sfx": [],
+   "source_ids": [
+    "SRC-001"
+   ],
+   "style_id": "crayones_infantiles",
+   "asset_filename": "frames/scene_001.png"
+  },
+  {
+   "id": "scene_002",
+   "arc": "desarrollo",
+   "duration_seconds": 12,
+   "narration": "Entonces, ¿quién pinta al flamenco? Nadie con pincel. El secreto está en lo que come. Algas diminutas y camaroncitos llamados artemias traen pigmentos rojos y naranjas: los carotenoides.",
+   "on_screen_text": "Eres lo que comes",
+   "visual_description": "pink flamingo wading in a shallow lagoon with tiny algae and small brine shrimp drawn big in the water",
+   "image_prompt": "child's wax crayon drawing on white paper, naive shapes, bright colors, visible crayon strokes, cheerful sun, vertical 9:16, no text. pink flamingo wading in a shallow lagoon with tiny algae and small brine shrimp drawn big in the water",
+   "ambiente": "madera",
+   "sfx": [],
+   "source_ids": [
+    "SRC-001"
+   ],
+   "style_id": "crayones_infantiles",
+   "asset_filename": "frames/scene_002.png"
+  },
+  {
+   "id": "scene_003",
+   "arc": "desarrollo",
+   "duration_seconds": 12,
+   "narration": "Son los mismos pigmentos que vuelven naranja a la zanahoria y rojo al jitomate. El cuerpo del flamenco los procesa y los guarda en sus plumas nuevas. Pluma a pluma, el color se va acumulando.",
+   "on_screen_text": "Como la zanahoria",
+   "visual_description": "a carrot and a red tomato next to a flamingo feather turning from white to pink, colorful arrows",
+   "image_prompt": "child's wax crayon drawing on white paper, naive shapes, bright colors, visible crayon strokes, cheerful sun, vertical 9:16, no text. a carrot and a red tomato next to a flamingo feather turning from white to pink, colorful arrows",
+   "ambiente": "madera",
+   "sfx": [],
+   "source_ids": [
+    "SRC-001"
+   ],
+   "style_id": "crayones_infantiles",
+   "asset_filename": "frames/scene_003.png"
+  },
+  {
+   "id": "scene_004",
+   "arc": "desarrollo",
+   "duration_seconds": 12,
+   "narration": "Y mientras crece, papá y mamá lo alimentan con una leche especial que fabrican en el buche, en la garganta. Los dos pueden producirla. Pero el rosa no llega rápido: tarda años y varias mudas de plumas.",
+   "on_screen_text": "Leche de buche",
+   "visual_description": "two adult pink flamingos feeding a grey fluffy chick beak to beak, nest of mud, sunny lagoon",
+   "image_prompt": "child's wax crayon drawing on white paper, naive shapes, bright colors, visible crayon strokes, cheerful sun, vertical 9:16, no text. two adult pink flamingos feeding a grey fluffy chick beak to beak, nest of mud, sunny lagoon",
+   "ambiente": "madera",
+   "sfx": [],
+   "source_ids": [
+    "SRC-001",
+    "SRC-002"
+   ],
+   "style_id": "crayones_infantiles",
+   "asset_filename": "frames/scene_004.png"
+  },
+  {
+   "id": "scene_005",
+   "arc": "desarrollo",
+   "duration_seconds": 12,
+   "narration": "Para comer, el flamenco mete el pico de cabeza en el agua y lo mueve de lado a lado. Con la lengua empuja el agua y unas laminitas del pico atrapan la comida, como coladera.",
+   "on_screen_text": "Pico coladera",
+   "visual_description": "flamingo with head upside down in water filtering food, bubbles, small shrimp, side view",
+   "image_prompt": "child's wax crayon drawing on white paper, naive shapes, bright colors, visible crayon strokes, cheerful sun, vertical 9:16, no text. flamingo with head upside down in water filtering food, bubbles, small shrimp, side view",
+   "ambiente": "madera",
+   "sfx": [],
+   "source_ids": [
+    "SRC-002"
+   ],
+   "style_id": "crayones_infantiles",
+   "asset_filename": "frames/scene_005.png"
+  },
+  {
+   "id": "scene_006",
+   "arc": "cierre_historia",
+   "duration_seconds": 10,
+   "narration": "Aquí está el límite: si deja de comer carotenoides, sus plumas nuevas salen más pálidas. Por eso en los zoológicos les dan alimento con esos pigmentos, para que no se destiñan.",
+   "on_screen_text": "¿Sin pigmento? Pálido",
+   "visual_description": "a pale whitish flamingo next to a bright pink flamingo eating pellets from a bowl at a zoo",
+   "image_prompt": "child's wax crayon drawing on white paper, naive shapes, bright colors, visible crayon strokes, cheerful sun, vertical 9:16, no text. a pale whitish flamingo next to a bright pink flamingo eating pellets from a bowl at a zoo",
+   "ambiente": "madera",
+   "sfx": [],
+   "source_ids": [
+    "SRC-002"
+   ],
+   "style_id": "crayones_infantiles",
+   "asset_filename": "frames/scene_006.png"
+  },
+  {
+   "id": "scene_007",
+   "arc": "reflexion_o_pregunta",
+   "duration_seconds": 10,
+   "narration": "Y el giro: el flamenco común también se maquilla. Se unta en las plumas un aceite de su glándula de acicalamiento, con pigmento, sobre todo cuando busca pareja. ¿De qué color serías tú si fueras lo que comes? Esto fue Datos y ociosidades.",
+   "on_screen_text": "¡Se maquilla!",
+   "visual_description": "group of bright pink flamingos preening their feathers with their beaks, dancing in a group display, hearts",
+   "image_prompt": "child's wax crayon drawing on white paper, naive shapes, bright colors, visible crayon strokes, cheerful sun, vertical 9:16, no text. group of bright pink flamingos preening their feathers with their beaks, dancing in a group display, hearts",
+   "ambiente": "madera",
+   "sfx": [],
+   "source_ids": [
+    "SRC-003"
+   ],
+   "style_id": "crayones_infantiles",
+   "asset_filename": "frames/scene_007.png"
+  }
+ ],
+ "cortinilla_fuentes": {
+  "duration_seconds": 6,
+  "titulo": "Fuentes",
+  "aviso": "Contenido generado con IA; imágenes y voz sintéticas declaradas en versión final.",
+  "firma": "Datos y ociosidades",
+  "source_ids": [
+   "SRC-001",
+   "SRC-002",
+   "SRC-003"
+  ]
+ },
+ "audio": {
+  "music_asset": "sintetico:pulso",
+  "music_plan": "Cama sintética propia (cama_sonora.py)",
+  "music_license": "obra propia"
+ },
+ "export": {
+  "resolution": "1080x1920",
+  "fps": 30,
+  "render_status": "PENDIENTE"
+ },
+ "publicacion": {
+  "status": "RESPALDO_SIN_SLOT"
+ },
+ "estado": "RESPALDO_SIN_FECHA_SIN_MEDIOS",
+ "production_mode": "full",
+ "validation_notes": [
+  "Narración ~78 s; cortinilla 6 s.",
+  "Escrito 2-nov ~22:40 CDMX por Grok Bot por regla Mj: no dejar slot vacío."
+ ],
+ "linea_tematica_provisional": "Ciencia y vida cotidiana",
+ "approved_assets": [],
+ "risk_notes": [
+  "Maquillaje uropigial documentado en flamenco común (P. roseus); no generalizar a todas las especies.",
+  "Leche de buche: 'ambos pueden producirla' (Smithsonian)."
+ ],
+ "thumbnail_source": "scene_001",
+ "qa_editorial": {
+  "fecha": "2026-11-02",
+  "por": "Grok Bot (redactor) — sin auditor en frío independiente por urgencia",
+  "estado": "OK línea editorial; hechos acotados a 3 fuentes"
+ },
+ "narrative_contract": {
+  "central_question": "¿Por qué los flamencos son rosas si nacen blancos?",
+  "promise": "Descubrir quién 'pinta' al flamenco",
+  "stakes": "Sin la comida correcta, pierde su color",
+  "scientific_turn": "Carotenoides de la dieta depositados en plumas nuevas",
+  "evidence_limit": "El maquillaje está documentado en flamenco común; el rosa tarda años",
+  "payoff": "Se maquilla con aceite pigmentado al cortejar"
+ }
+}
