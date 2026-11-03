@@ -245,5 +245,23 @@
     "scientific_turn": "Venus gira lentamente y en sentido retrógrado; la rotación sideral dura unos 243 días terrestres, frente a unos 224.7 días de órbita.",
     "evidence_limit": "La cifra compara rotación sideral con periodo orbital; no equivale al intervalo entre dos amaneceres venusinos.",
     "payoff": "El día sideral de Venus sí supera su año, pero el día solar es otra medida."
+  },
+  "narrative_qa": {
+    "status": "PASS",
+    "score": 88,
+    "checks": {
+      "pregunta_central_reconstruible": true,
+      "apertura_in_medias_res": true,
+      "progresion_por_escena": true,
+      "transiciones_causales": true,
+      "giro_cientifico_explicado": true,
+      "limite_evidencia_explicito": true,
+      "payoff_cierre_apertura": true
+    },
+    "critical_flags": [],
+    "review_notes": "La anomalía día sideral/año organiza una progresión clara; distingue día sideral y solar y devuelve el cierre al calendario venusino.",
+    "review_basis": "lectura_en_frio_solo_narracion",
+    "reviewer_role": "auditor_capcot_independiente",
+    "reviewed_at": "2026-11-03T15:07:21-06:00"
   }
 }
