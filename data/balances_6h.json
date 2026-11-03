@@ -1387,5 +1387,60 @@
    ]
   ],
   "nota_flujo": "Mediodía (08:12→14:05, ~6 h): YT +237 vistas, +10 likes, 0 comentarios, subs 69→70. Camarón mantis 5sxxx0vuXFE ('Un golpe bajo el agua', 07:00) arrancó +63; tiburón +60 y xolo +48 siguen; lágrimas +25, pulpo +19. Nuevo público V9bO9EUN0JA 'El pan no solo se seca' (1 vista, slot 13:30). Catálogo viejo plano (≤3). IDs viejos tmxMkxA6nOw/TbZRvpiDjdk/Fh4KkcZr3e8 ya no existen en la API (reemplazados/borrados). TT perfil: 17 seguidores, likes 562→563, 38 videos."
+ },
+ {
+  "hora_cdmx": "2026-11-02T20:04-06:00",
+  "base_youtube": "2026-11-02T14:05",
+  "base_tiktok": "2026-11-02T14:05",
+  "youtube_totales": {
+   "view": 26487,
+   "like": 885,
+   "comment": 26
+  },
+  "suscriptores": 70,
+  "shorts_publicos": 40,
+  "delta_youtube": {
+   "view": 264,
+   "like": 2,
+   "comment": 0,
+   "suscriptores": 0
+  },
+  "tiktok_totales": null,
+  "seguidores_tiktok": 21,
+  "likes_perfil_tiktok": 579,
+  "videos_tiktok": 43,
+  "delta_tiktok": {
+   "seguidores": 4,
+   "likes_perfil": 16,
+   "videos": 5,
+   "nota": "Solo perfil público."
+  },
+  "ranking_crecimiento": [
+   [
+    "YT Un golpe bajo el agua",
+    56
+   ],
+   [
+    "YT La química detrás de las lágrimas",
+    47
+   ],
+   [
+    "YT El perro que guía a los muertos 🐕💀",
+    34
+   ],
+   [
+    "YT Pulpo: tres corazones",
+    33
+   ],
+   [
+    "YT El gen que afina el oído del mosquito macho",
+    20
+   ],
+   [
+    "YT El tiburón que vive siglos",
+    17
+   ]
+  ],
+  "nota_flujo": "Tarde (14:05→20:04, ~6 h): YT +264 vistas, +2 likes, 0 comentarios, subs 70→70. Camarón mantis 5sxxx0vuXFE +56 (121 total), lágrimas +47, xolo +34, pulpo +33, mosquito +20, tiburón se enfrió (+17 vs +60). Nuevos públicos: murciélagos c-7pMF3-B-g (slot 17:00) 5 vistas y sequías OwfxfQ4RPSo 1 vista (slot 19:00). Estancados: corneja ZHdJXFrURk4 0, Voyager 0, pan V9bO9EUN0JA +6, Baffin +6. Catálogo viejo plano (≤9). TT perfil: seguidores 17→21, likes 563→579 (+16), videos 38→43."
  }
 ]
