@@ -15,6 +15,8 @@
 - La única entrada de cola del 3 de noviembre era un paquete rechazado de enzimas en una carpeta anidada. Se conservó íntegro en `cola/bloqueados/` y se retiró de la cola activa después de verificar las cuatro copias.
 - No se generaron imágenes, frames, voz, audio, video ni renders. No se publicaron contenidos ni se consumieron créditos.
 
+**Exclusiones respetadas:** no se revisaron los storyboards de dato del día 23:30, kids del 3 de noviembre 07:00 ni Machu Picchu del 4 de noviembre 19:00; no se crearon copias para esos slots.
+
 ## 2. Briefs y horario 5–7 nov
 
 Confirmados:
