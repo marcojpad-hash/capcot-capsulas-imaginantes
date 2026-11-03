@@ -247,5 +247,23 @@
     "scientific_turn": "El ejemplo USGS estima unos 500,000 kg de agua líquida para un cúmulo hipotético de 1 km³ y 0.5 g/m³; las gotas pequeñas y la dinámica del aire explican la suspensión.",
     "evidence_limit": "Es una estimación ilustrativa basada en volumen y contenido de agua supuestos, no una medición de todas las nubes ni de toda la masa de aire húmedo.",
     "payoff": "La nube sí tiene masa; su suspensión depende de las gotas y del movimiento atmosférico, y su masa cambia según el sistema."
+  },
+  "narrative_qa": {
+    "status": "PASS",
+    "score": 91,
+    "checks": {
+      "pregunta_central_reconstruible": true,
+      "apertura_in_medias_res": true,
+      "progresion_por_escena": true,
+      "transiciones_causales": true,
+      "giro_cientifico_explicado": true,
+      "limite_evidencia_explicito": true,
+      "payoff_cierre_apertura": true
+    },
+    "critical_flags": [],
+    "review_notes": "El contraste entre flotación y masa abre la pregunta; el cálculo acotado, la suspensión y la precipitación conducen al payoff sin universalizar la cifra.",
+    "review_basis": "lectura_en_frio_solo_narracion",
+    "reviewer_role": "auditor_capcot_independiente",
+    "reviewed_at": "2026-11-03T15:07:21-06:00"
   }
 }
