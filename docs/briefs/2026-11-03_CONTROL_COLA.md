@@ -169,3 +169,21 @@ Los tres directorios de salida referencian `capsula.mp4` o `capsula_v4.mp4`, per
 **No se modificó:** `data/*.json`, `main`, workflows, secretos, permisos, decisiones editoriales, estados de Grok, publicaciones ni archivos de medios. No se hizo merge ni se ejecutó dispatch.
 
 **Ejecución:** revisión estática desde GitHub. No había checkout/runtime del repositorio disponible; no se ejecutó `validar_storyboard.py`, `procesar_cola.py` ni `registro_editorial.py`. La conclusión estructural se basa en inspección del código del validador y de los doce JSON, no en una ejecución del validador.
+
+
+## Actualización posterior — dato del día 23:30, 3-nov-2026
+
+A las 17:xx CDMX se recibió el brief específico de Imaginantes para `2026-11-03_dato-polvo-africano-microbios`. Se creó y releyó el borrador textual en `proyectos/2026-11-03_dato-polvo-africano-microbios/storyboard.json` (commit de staging: `2b798389b833446b30fb96f69e4a5140b8d3d6ad`; apertura inicial de staging `b323d00523cbcc457af1c54a104dddc12f7190d5`).
+
+- Fecha objetivo: `2026-11-03`; slot local: `23:30`; cesta: `dato_del_dia`.
+- El horario `data/horario_semana_2026-11-01_07.json` conserva el marcador `2026-11-03_dato-TBD-news` / `pendiente_dato_dia`; el brief de Imaginantes proporciona el slug final. No se modificó `data/*.json`.
+- Fuente primaria verificada en la página editorial: Weber et al., publicado 27-oct-2026, DOI `10.1038/s43247-026-04119-1`; fuente institucional ATTO complementa método y límite de viabilidad.
+- Conteo del borrador releído: 8 escenas, 206 palabras, 1,259 caracteres, 83 s de escenas + 6 s de cortinilla = 89 s; gancho de 4 palabras; voz `es-MX-JorgeNeural` +7%, pitch -2Hz; mapa y capa de dato presentes; prompts comienzan con el `prompt_base` literal del estilo `atlas_antiguo`.
+- `approved_assets=[]`; `export.render_status=NOT_GENERATED`; no hay `asset_filename`, `asset_type` ni rutas de medios.
+- **QA narrativo independiente:** no quedó registrado en el JSON. El campo `narrative_qa` está ausente; por tanto, el borrador NO está aprobado para handoff.
+- **Recepción Grok:** `RECEPCION_GROK_NO_CONFIRMADA`; no existe `cola/estado/2026-11-03_dato-polvo-africano-microbios.json`.
+- No existe salida previa para este project_id. No se creó entrada en `cola/entrada/` ni se creó `fuentes.md` separado: el contrato vigente de preproducción exige staging en `proyectos/`, fuentes dentro del JSON y promoción plana por el auditor solo después de QA PASS y validación.
+- El validador Python no se ejecutó: no había checkout/runtime del repositorio. Se hizo revisión estática de los requisitos enumerados; esto no sustituye la ejecución del helper.
+- No se promovió el archivo. La ruta activa `cola/entrada/*.json` dispara el workflow de GitHub Actions por push; no se efectuó ese push ni se envió payload externo en esta actualización.
+
+**Estado final del paquete:** `BORRADOR_EN_PROYECTOS_PENDIENTE_QA_NARRATIVO_INDEPENDIENTE`. No está en cola ni recibido por Grok.
