@@ -1,4 +1,373 @@
 {
+  "_schema": "CAPCOT_STORYBOARD_TEXT_V2",
   "project_id": "2026-11-03_dato-polvo-africano-microbios",
-  "estado": "BORRADOR_EN_PROYECTOS_PENDIENTE_QA_NARRATIVO_INDEPENDIENTE"
+  "serie": "Datos y ociosidades",
+  "title": "Polvo africano transporta microbios hasta el Amazonas",
+  "titulo": "Polvo con pasajeros invisibles",
+  "language": "es-MX",
+  "aspect_ratio": "9:16",
+  "target_duration_seconds": 89,
+  "fecha_objetivo": "2026-11-03",
+  "slot_local": "23:30",
+  "slot_cesta": "dato_del_dia",
+  "audience": "Público general",
+  "occasion": "Dato del día, 3 de noviembre de 2026",
+  "estructura": "historia",
+  "resumen": "Una intrusión de polvo del norte de África observada durante cinco días en el Amazonas modificó la comunidad bacteriana del aire y triplicó las endotoxinas, mientras la comunidad fúngica permaneció estable. No se encontró enriquecimiento de patógenos obligados y el análisis no determinó si los microorganismos seguían vivos.",
+  "narrative_contract": {
+    "central_question": "¿Qué más puede viajar con el polvo africano cuando cruza el Atlántico y llega al aire del Amazonas?",
+    "promise": "Entender que el polvo puede transportar material biológico y cómo se observó ese cambio en la torre ATTO.",
+    "stakes": "El aire conecta regiones lejanas; conocer sus partículas importa para entender atmósfera y ecosistemas, sin convertir el hallazgo en alarma sanitaria.",
+    "scientific_turn": "El polvo no transportó solo minerales: cambió la comunidad bacteriana y aumentaron las endotoxinas, mientras los hongos casi no variaron y no se enriquecieron patógenos obligados.",
+    "evidence_limit": "Un episodio de cinco días en un observatorio, con muestras a 42 y 323 m; el análisis genético no determina por sí solo la viabilidad ni demuestra enfermedad.",
+    "payoff": "La apertura del aire que llega desde África se resignifica: el polvo también lleva rastros de otros ecosistemas."
+  },
+  "trend_source": {
+    "termino": "Amazonian rainforest bioaerosol influenced by African dust intrusion",
+    "fecha_publicacion": "2026-10-27",
+    "url": "https://www.nature.com/articles/s43247-026-04119-1"
+  },
+  "editorial_status": "BORRADOR_EN_PROYECTOS_PENDIENTE_QA_NARRATIVO_INDEPENDIENTE",
+  "arco": {
+    "hook_medias_res": "El aire amazónico recibe una intrusión de polvo del norte de África.",
+    "desarrollo": "La torre ATTO compara bioaerosoles a dos alturas; las bacterias cambian y los hongos permanecen casi estables.",
+    "cierre_historia": "Las endotoxinas se triplican, sin enriquecimiento de patógenos obligados; el ADN no demuestra viabilidad.",
+    "reflexion_o_pregunta": "El polvo cruza océanos con rastros de otros ecosistemas."
+  },
+  "estilo_id": "atlas_antiguo",
+  "estilo_visual": "Atlas antiguo grabado",
+  "visual_identity": {
+    "style_id": "atlas_antiguo",
+    "style_name": "Atlas antiguo grabado",
+    "prompt_base": "antique engraved atlas map illustration, hand-colored copperplate, compass rose, sea monsters, aged parchment, single large central motif, not photorealistic, vertical 9:16, no text",
+    "palette": "pergamino envejecido, tinta sepia y color manual discreto",
+    "lighting": "iluminación suave y uniforme de lámina impresa",
+    "texture": "grabado de cobre y papel envejecido",
+    "composition": "un motivo central grande, detalles cartográficos secundarios, vertical 9:16",
+    "negative_prompt": "fotografía realista, render 3D, infografía moderna, texto, logotipos, marcas de agua, fronteras inventadas",
+    "reference_assets": [],
+    "seed": null,
+    "seed_policy": "Mantener el mismo tratamiento de atlas grabado, paleta y textura en las ocho escenas."
+  },
+  "typography_identity": {
+    "font_family": "DejaVu Sans",
+    "font_weight": "700 para gancho; 400 para subtítulos",
+    "title_style": "Máximo seis palabras; presente desde frame 0 en postproducción",
+    "subtitle_style": "Bloques de máximo tres palabras; zona segura inferior",
+    "hierarchy": "Gancho > dato/etiqueta > subtítulos",
+    "animation": "Un movimiento por plano; tipografía en postproducción"
+  },
+  "voice": {
+    "engine": "edge-tts",
+    "voice_id": "es-MX-JorgeNeural",
+    "language": "es-MX",
+    "rate": "+7%",
+    "pitch": "-2Hz",
+    "pad_seconds": 0.3,
+    "modo_pausas": "continuo"
+  },
+  "sources": [
+    {
+      "id": "SRC-001",
+      "cita_corta": "Weber, J. et al. (2026). Amazonian rainforest bioaerosol influenced by African dust intrusion. Communications Earth & Environment.",
+      "url": "https://doi.org/10.1038/s43247-026-04119-1",
+      "doi": "10.1038/s43247-026-04119-1",
+      "accessed": "2026-11-03",
+      "publication_date": "2026-10-27",
+      "supports": [
+        "Intrusión de polvo del norte de África de cinco días.",
+        "Muestreo bacteriano, fúngico y arqueano a 42 y 323 m en ATTO.",
+        "Cambio marcado de comunidades bacterianas hacia señales de suelos secos, costras biológicas y ambientes marinos.",
+        "Comunidad fúngica prácticamente sin cambio.",
+        "Concentración de endotoxinas en el aire aumentó tres veces.",
+        "No hubo enriquecimiento de patógenos obligados."
+      ],
+      "verification_status": "VERIFICADO_RESOLVEDOR",
+      "publication": "Communications Earth & Environment",
+      "article_url": "https://www.nature.com/articles/s43247-026-04119-1"
+    },
+    {
+      "id": "SRC-002",
+      "cita_corta": "Amazon Tall Tower Observatory (ATTO). Desert Microbes in the Amazon.",
+      "url": "https://www.attoproject.org/desert-microbes-in-the-amazon/",
+      "doi": null,
+      "accessed": "2026-11-03",
+      "publication_date": null,
+      "supports": [
+        "Filtros instalados a 42 y 323 metros en la torre ATTO.",
+        "Comparación de filtros antes y después del evento.",
+        "El análisis no resuelve si el material genético recogido seguía siendo viable.",
+        "El transporte de masas de aire desde África a Sudamérica tomó alrededor de diez días."
+      ],
+      "verification_status": "VERIFICADO_FUENTE_INSTITUCIONAL"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_001",
+      "arc": "hook_medias_res",
+      "duration_seconds": 6,
+      "narration": "El aire de la selva cambió en cinco días: venía del norte de África.",
+      "on_screen_text": "EL AIRE VENÍA DE ÁFRICA",
+      "visual_description": "Nube de polvo ocre ya cubre el horizonte amazónico; la selva aparece bajo una masa de aire que entra desde el océano.",
+      "image_prompt": "antique engraved atlas map illustration, hand-colored copperplate, compass rose, sea monsters, aged parchment, single large central motif, not photorealistic, vertical 9:16, no text; Nube de polvo ocre ya cubre el horizonte amazónico; la selva aparece bajo una masa de aire que entra desde el océano.; scientific editorial illustration, antique engraved atlas texture, coherent ochre and muted blue palette, no labels, no typography, no photorealism",
+      "ambiente": "viento alto sobre selva",
+      "sfx": [
+        "ráfaga de viento"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "atlas_antiguo",
+      "dramatic_beat": "La masa de aire transcontinental ya irrumpió sobre la selva.",
+      "scene_function": "Abrir con la anomalía y sembrar el origen inesperado.",
+      "causal_bridge_from_previous": "Apertura in medias res: la intrusión ya ocurre; el origen del aire es el misterio.",
+      "question_state": "La selva recibe aire desde África; falta saber qué viaja con el polvo.",
+      "reason_to_continue": "El origen remoto hace relevante averiguar qué respiramos.",
+      "new_information": "La intrusión de polvo del norte de África duró cinco días."
+    },
+    {
+      "id": "scene_002",
+      "arc": "desarrollo",
+      "duration_seconds": 11,
+      "narration": "Y te toca: el polvo de una ventana también puede viajar lejos. En la Amazonia, una torre atrapó el aire para saber qué pasajeros invisibles llegaban con él.",
+      "on_screen_text": "EL POLVO VIAJA",
+      "visual_description": "Polvo sobre el borde de una ventana que se transforma en una corriente atmosférica hacia la Amazonia; no sugerir que el polvo doméstico tenga siempre ese origen.",
+      "image_prompt": "antique engraved atlas map illustration, hand-colored copperplate, compass rose, sea monsters, aged parchment, single large central motif, not photorealistic, vertical 9:16, no text; Polvo sobre el borde de una ventana que se transforma en una corriente atmosférica hacia la Amazonia; no sugerir que el polvo doméstico tenga siempre ese origen.; scientific editorial illustration, antique engraved atlas texture, coherent ochre and muted blue palette, no labels, no typography, no photorealism",
+      "ambiente": "viento suave y roce doméstico",
+      "sfx": [
+        "roce de polvo sobre vidrio"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "atlas_antiguo",
+      "dramatic_beat": "La distancia se vuelve relevante para quien respira aire compartido.",
+      "scene_function": "Conectar el fenómeno con el espectador sin atribuir origen africano al polvo doméstico.",
+      "causal_bridge_from_previous": "Del aire que llegó a la selva pasamos a qué puede transportar el aire que nos rodea.",
+      "question_state": "El polvo puede viajar lejos; falta observar sus pasajeros.",
+      "reason_to_continue": "Una torre científica permite separar la impresión visual de lo que contiene el aire.",
+      "new_information": "El polvo puede recorrer grandes distancias; el estudio examinó el aire amazónico."
+    },
+    {
+      "id": "scene_003",
+      "arc": "desarrollo",
+      "duration_seconds": 12,
+      "narration": "La ATTO mide trescientos veinticinco metros. Sus filtros recogieron partículas a cuarenta y dos y trescientos veintitrés metros, día tras día, antes y durante una llegada de polvo africano.",
+      "on_screen_text": "TORRE ATTO · 325 M",
+      "visual_description": "Torre ATTO sobre el dosel amazónico; dos marcas discretas señalan 42 m y 323 m como alturas de muestreo.",
+      "image_prompt": "antique engraved atlas map illustration, hand-colored copperplate, compass rose, sea monsters, aged parchment, single large central motif, not photorealistic, vertical 9:16, no text; Torre ATTO sobre el dosel amazónico; dos marcas discretas señalan 42 m y 323 m como alturas de muestreo.; scientific editorial illustration, antique engraved atlas texture, coherent ochre and muted blue palette, no labels, no typography, no photorealism",
+      "ambiente": "viento entre torre y dosel",
+      "sfx": [
+        "zumbido leve de filtros"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "style_id": "atlas_antiguo",
+      "dramatic_beat": "La torre convierte el aire invisible en muestras comparables.",
+      "scene_function": "Explicar el instrumento y las condiciones de muestreo.",
+      "causal_bridge_from_previous": "Para saber qué llevaba esa masa de aire, los investigadores recogieron partículas a dos alturas.",
+      "question_state": "Sabemos dónde se tomaron muestras; falta comparar comunidades.",
+      "reason_to_continue": "Las muestras permiten distinguir cambios bacterianos y fúngicos.",
+      "new_information": "La torre ATTO tiene 325 m; los filtros se instalaron a 42 y 323 m.",
+      "capa": {
+        "tipo": "mapa",
+        "region": [
+          -8,
+          -70,
+          38,
+          35
+        ],
+        "puntos": [
+          {
+            "nombre": "Norte de África (referencia regional, no punto exacto de emisión)",
+            "lat": 20,
+            "lon": 10
+          },
+          {
+            "nombre": "Amazon Tall Tower Observatory (ATTO)",
+            "lat": -2.1483,
+            "lon": -59.0033
+          }
+        ],
+        "titulo": "Transporte de polvo desde el norte de África hasta el Amazonas",
+        "fuente": "Weber et al. 2026, DOI 10.1038/s43247-026-04119-1; ATTO. Base cartográfica OpenStreetMap. El punto de origen es regional y la ruta esquemática, no una trayectoria exacta."
+      }
+    },
+    {
+      "id": "scene_004",
+      "arc": "desarrollo",
+      "duration_seconds": 11,
+      "narration": "Al llegar, cambió la comunidad de bacterias: aparecieron microbios ligados a suelos secos, costras del desierto y ambientes marinos. No viajaba solo mineral; también llegaban rastros biológicos.",
+      "on_screen_text": "CAMBIARON LAS BACTERIAS",
+      "visual_description": "Corriente de partículas minerales con formas bacterianas; tres ambientes conectados: suelo seco, costra biológica y mar.",
+      "image_prompt": "antique engraved atlas map illustration, hand-colored copperplate, compass rose, sea monsters, aged parchment, single large central motif, not photorealistic, vertical 9:16, no text; Corriente de partículas minerales con formas bacterianas; tres ambientes conectados: suelo seco, costra biológica y mar.; scientific editorial illustration, antique engraved atlas texture, coherent ochre and muted blue palette, no labels, no typography, no photorealism",
+      "ambiente": "ráfaga arenosa",
+      "sfx": [
+        "paso de ráfaga arenosa"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "atlas_antiguo",
+      "dramatic_beat": "La firma bacteriana cambia cuando entra el polvo.",
+      "scene_function": "Presentar el hallazgo principal con sus fuentes ecológicas.",
+      "causal_bridge_from_previous": "Con muestras comparables aparece la primera respuesta: la comunidad bacteriana sí cambió.",
+      "question_state": "El aire mostró bacterias asociadas a otros ambientes; falta saber si todos cambiaron.",
+      "reason_to_continue": "Si las bacterias cambiaron, falta saber si todos los microorganismos respondieron igual.",
+      "new_information": "La comunidad bacteriana se desplazó hacia señales de ambientes secos y marinos."
+    },
+    {
+      "id": "scene_005",
+      "arc": "desarrollo",
+      "duration_seconds": 11,
+      "narration": "Pero no todo cambió. Los hongos del aire casi no variaron; sus señales siguieron parecidas, quizá porque la selva ya aporta tantos hongos que la señal lejana quedó oculta.",
+      "on_screen_text": "LOS HONGOS, CASI IGUAL",
+      "visual_description": "Dos capas de bioaerosol: las formas bacterianas cambian y las esporas fúngicas mantienen su patrón sobre el dosel.",
+      "image_prompt": "antique engraved atlas map illustration, hand-colored copperplate, compass rose, sea monsters, aged parchment, single large central motif, not photorealistic, vertical 9:16, no text; Dos capas de bioaerosol: las formas bacterianas cambian y las esporas fúngicas mantienen su patrón sobre el dosel.; scientific editorial illustration, antique engraved atlas texture, coherent ochre and muted blue palette, no labels, no typography, no photorealism",
+      "ambiente": "selva estable con viento lejano",
+      "sfx": [
+        "cambio sutil de textura sonora"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "atlas_antiguo",
+      "dramatic_beat": "La respuesta no es uniforme: los hongos resisten el cambio observado.",
+      "scene_function": "Construir la antítesis: no todos los grupos respondieron igual.",
+      "causal_bridge_from_previous": "Pero ese cambio no se repitió en todos los grupos: los hongos conservaron una composición similar.",
+      "question_state": "Bacterias cambiaron; hongos permanecieron casi estables.",
+      "reason_to_continue": "La diferencia entre grupos prepara el giro químico.",
+      "new_information": "La comunidad fúngica permaneció prácticamente sin cambios durante el evento."
+    },
+    {
+      "id": "scene_006",
+      "arc": "cierre_historia",
+      "duration_seconds": 11,
+      "narration": "Y vino el giro: las endotoxinas, restos de la pared de ciertas bacterias que pueden activar inflamación, se triplicaron. Aun así, no se enriquecieron los patógenos obligados.",
+      "on_screen_text": "ENDOTOXINAS ×3",
+      "visual_description": "Gráfico sobrio: concentración relativa de endotoxinas, fondo 1 e intrusión 3; aclaración visual de que no hubo enriquecimiento de patógenos obligados.",
+      "image_prompt": "antique engraved atlas map illustration, hand-colored copperplate, compass rose, sea monsters, aged parchment, single large central motif, not photorealistic, vertical 9:16, no text; Gráfico sobrio: concentración relativa de endotoxinas, fondo 1 e intrusión 3; aclaración visual de que no hubo enriquecimiento de patógenos obligados.; scientific editorial illustration, antique engraved atlas texture, coherent ochre and muted blue palette, no labels, no typography, no photorealism",
+      "ambiente": "pulso grave tenue, sin alarma",
+      "sfx": [
+        "tres pulsos suaves"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "atlas_antiguo",
+      "dramatic_beat": "El cambio aparece también en una señal química, sin probar enfermedad.",
+      "scene_function": "Explicar endotoxinas y separar su aumento de una afirmación de enfermedad.",
+      "causal_bridge_from_previous": "Aunque los hongos casi no variaron, el polvo coincidió con un aumento medido de endotoxinas.",
+      "question_state": "Las endotoxinas se triplicaron; no hubo enriquecimiento de patógenos obligados.",
+      "reason_to_continue": "El dato exige un límite: qué prueba el análisis y qué no.",
+      "new_information": "Las endotoxinas aumentaron tres veces, sin enriquecimiento de patógenos obligados.",
+      "capa": {
+        "tipo": "dato",
+        "valor": "3×",
+        "etiqueta": "Concentración de endotoxinas en el aire durante la intrusión frente a condiciones de fondo",
+        "fuente": "Weber et al. 2026, Communications Earth & Environment, DOI 10.1038/s43247-026-04119-1. El aumento no equivale a infección ni a enriquecimiento de patógenos obligados."
+      }
+    },
+    {
+      "id": "scene_007",
+      "arc": "cierre_historia",
+      "duration_seconds": 10,
+      "narration": "Fue un episodio de cinco días, en un sitio del Amazonas. El ADN no demuestra que los microbios siguieran vivos ni que provocaran enfermedad.",
+      "on_screen_text": "UN EPISODIO · CINCO DÍAS",
+      "visual_description": "Filtro de muestreo en primer plano; una doble silueta distingue ADN detectado de célula viva, sin representar organismos patógenos.",
+      "image_prompt": "antique engraved atlas map illustration, hand-colored copperplate, compass rose, sea monsters, aged parchment, single large central motif, not photorealistic, vertical 9:16, no text; Filtro de muestreo en primer plano; una doble silueta distingue ADN detectado de célula viva, sin representar organismos patógenos.; scientific editorial illustration, antique engraved atlas texture, coherent ochre and muted blue palette, no labels, no typography, no photorealism",
+      "ambiente": "ambiente sobrio y breve silencio",
+      "sfx": [
+        "corte de ambiente"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "atlas_antiguo",
+      "dramatic_beat": "El alcance del hallazgo queda delimitado.",
+      "scene_function": "Delimitar el alcance y la viabilidad microbiana.",
+      "causal_bridge_from_previous": "El giro químico no autoriza a decir que el polvo enfermó a la selva: se observó un episodio concreto.",
+      "question_state": "Fue un episodio de cinco días; el ADN no prueba viabilidad ni enfermedad.",
+      "reason_to_continue": "El límite devuelve la historia a la pregunta inicial sin alarmismo.",
+      "new_information": "El estudio no determinó si el material genético correspondía a microbios vivos."
+    },
+    {
+      "id": "scene_008",
+      "arc": "reflexion_o_pregunta",
+      "duration_seconds": 11,
+      "narration": "La sorpresa no es que la arena cruce el océano: también lleva rastros de otros ecosistemas. ¿Qué habrá pasado hoy sobre tu cabeza? Esto fue Datos y ociosidades.",
+      "on_screen_text": "PASAJEROS INVISIBLES",
+      "visual_description": "La nube de polvo se aleja sobre el océano; vuelve la ventana del inicio y una persona mira el cielo.",
+      "image_prompt": "antique engraved atlas map illustration, hand-colored copperplate, compass rose, sea monsters, aged parchment, single large central motif, not photorealistic, vertical 9:16, no text; La nube de polvo se aleja sobre el océano; vuelve la ventana del inicio y una persona mira el cielo.; scientific editorial illustration, antique engraved atlas texture, coherent ochre and muted blue palette, no labels, no typography, no photorealism",
+      "ambiente": "viento que se abre y se disuelve",
+      "sfx": [
+        "viento final que enlaza con la apertura"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "atlas_antiguo",
+      "dramatic_beat": "La arena deja de ser solo mineral: también lleva rastros biológicos.",
+      "scene_function": "Pagar el gancho y devolver la pregunta al espectador.",
+      "causal_bridge_from_previous": "Con el límite claro, la apertura se resignifica: lo que cruzó el océano no fue solo polvo mineral.",
+      "question_state": "La intrusión transportó rastros microbianos; queda abierta la pregunta por el aire cotidiano.",
+      "reason_to_continue": "El cierre devuelve al espectador al cielo que tiene encima.",
+      "new_information": "El polvo puede transportar material biológico a escala intercontinental."
+    }
+  ],
+  "cortinilla_fuentes": {
+    "duration_seconds": 6,
+    "titulo": "Fuentes",
+    "aviso": "Fuentes científicas y método; no añadir recursos no verificados.",
+    "firma": "Datos y ociosidades",
+    "source_ids": [
+      "SRC-001",
+      "SRC-002"
+    ]
+  },
+  "audio": {
+    "music_asset": null,
+    "music_plan": "Cama instrumental discreta de pulso atmosférico, sin dramatización de peligro; Grok selecciona o genera en producción con licencia válida.",
+    "music_license": null,
+    "mix_notes": "Voz al frente; viento bajo en escenas 1–4 y 8; ambiente de selva estable en escena 5; pulso tenue en escena 6; silencio breve antes del límite en escena 7."
+  },
+  "export": {
+    "resolution": "1080x1920",
+    "fps": 30,
+    "render_status": "NOT_GENERATED"
+  },
+  "publicacion": {
+    "status": "PENDIENTE_DECISION_GROK",
+    "platforms": [
+      "YouTube Shorts",
+      "TikTok",
+      "Facebook Reels"
+    ],
+    "note": "Sin programación ni publicación desde ChatGPT."
+  },
+  "approved_assets": [],
+  "production_mode": "storyboard_only",
+  "estado": "BORRADOR_EN_PROYECTOS_PENDIENTE_QA_NARRATIVO_INDEPENDIENTE",
+  "validation_notes": [
+    "Preproducción textual; sin medios ni rutas de assets.",
+    "QA narrativo independiente pendiente; no promover a cola hasta PASS y validador estructural exitoso.",
+    "El punto del norte de África es una referencia regional, no una coordenada exacta de emisión; la ruta es esquemática.",
+    "No afirmar que los microorganismos estaban vivos ni que causaron enfermedad."
+  ],
+  "risk_notes": [
+    "No afirmar que el polvo africano trae enfermedades.",
+    "El aumento de endotoxinas no equivale a infección.",
+    "El análisis basado en ADN no establece viabilidad.",
+    "Un episodio de cinco días en un observatorio no representa todos los eventos de polvo."
+  ],
+  "hashtags": [
+    "#ciencia",
+    "#datoscuriosos",
+    "#curiosidades",
+    "#naturaleza",
+    "#shorts"
+  ]
 }
