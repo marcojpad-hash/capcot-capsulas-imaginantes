@@ -272,5 +272,25 @@
     "scientific_turn": "Dos cámaras registraron en 2012 un evento luminoso y su espectro mostró señales compatibles con elementos del suelo.",
     "evidence_limit": "Es un registro particular; no demuestra el mecanismo general ni que todos los reportes históricos compartan origen.",
     "payoff": "Se midió una emisión luminosa y se obtuvieron pistas de composición, pero la causa general sigue sin resolverse."
+  },
+  "narrative_qa": {
+    "status": "FAIL",
+    "score": 81,
+    "checks": {
+      "pregunta_central_reconstruible": true,
+      "apertura_in_medias_res": false,
+      "progresion_por_escena": true,
+      "transiciones_causales": true,
+      "giro_cientifico_explicado": true,
+      "limite_evidencia_explicito": true,
+      "payoff_cierre_apertura": true
+    },
+    "critical_flags": [
+      "APERTURA_HISTORICA_DESCRIPTIVA_NO_IN_MEDIAS_RES"
+    ],
+    "review_notes": "El caso instrumental de 2012 sostiene el desarrollo, pero la narración abre con un resumen histórico de reportes y no con el registro en curso.",
+    "review_basis": "lectura_en_frio_solo_narracion",
+    "reviewer_role": "auditor_capcot_independiente",
+    "reviewed_at": "2026-11-03T15:07:21-06:00"
   }
 }
