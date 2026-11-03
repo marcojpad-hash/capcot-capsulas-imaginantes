@@ -272,5 +272,23 @@
     "scientific_turn": "Bajo ciertas condiciones, el movimiento relativo de los granos se acopla y sostiene una emisión acústica coherente.",
     "evidence_limit": "Frecuencia y nivel sonoro citados pertenecen a experimentos concretos; humedad, tamaño de grano y velocidad alteran el resultado.",
     "payoff": "La arena puede cantar cuando sus granos se mueven sincronizados, no siempre que se desliza."
+  },
+  "narrative_qa": {
+    "status": "PASS",
+    "score": 94,
+    "checks": {
+      "pregunta_central_reconstruible": true,
+      "apertura_in_medias_res": true,
+      "progresion_por_escena": true,
+      "transiciones_causales": true,
+      "giro_cientifico_explicado": true,
+      "limite_evidencia_explicito": true,
+      "payoff_cierre_apertura": true
+    },
+    "critical_flags": [],
+    "review_notes": "La avalancha pone el fenómeno en marcha; cada escena añade mecanismo, medición, condición o límite y el cierre explica por qué no canta cualquier duna.",
+    "review_basis": "lectura_en_frio_solo_narracion",
+    "reviewer_role": "auditor_capcot_independiente",
+    "reviewed_at": "2026-11-03T15:07:21-06:00"
   }
 }
