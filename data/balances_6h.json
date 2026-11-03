@@ -1442,5 +1442,60 @@
    ]
   ],
   "nota_flujo": "Tarde (14:05→20:04, ~6 h): YT +264 vistas, +2 likes, 0 comentarios, subs 70→70. Camarón mantis 5sxxx0vuXFE +56 (121 total), lágrimas +47, xolo +34, pulpo +33, mosquito +20, tiburón se enfrió (+17 vs +60). Nuevos públicos: murciélagos c-7pMF3-B-g (slot 17:00) 5 vistas y sequías OwfxfQ4RPSo 1 vista (slot 19:00). Estancados: corneja ZHdJXFrURk4 0, Voyager 0, pan V9bO9EUN0JA +6, Baffin +6. Catálogo viejo plano (≤9). TT perfil: seguidores 17→21, likes 563→579 (+16), videos 38→43."
+ },
+ {
+  "hora_cdmx": "2026-11-03T08:13-06:00",
+  "base_youtube": "2026-11-02T20:04",
+  "base_tiktok": "2026-11-02T20:04",
+  "youtube_totales": {
+   "view": 26797,
+   "like": 887,
+   "comment": 26
+  },
+  "suscriptores": 70,
+  "shorts_publicos": 41,
+  "delta_youtube": {
+   "view": 310,
+   "like": 2,
+   "comment": 0,
+   "suscriptores": 0
+  },
+  "tiktok_totales": null,
+  "seguidores_tiktok": 24,
+  "likes_perfil_tiktok": 600,
+  "videos_tiktok": 43,
+  "delta_tiktok": {
+   "seguidores": 3,
+   "likes_perfil": 21,
+   "videos": 0,
+   "nota": "Solo perfil público. Videos 43 igual: 5 republicados reemplazaron a los borrados."
+  },
+  "ranking_crecimiento": [
+   [
+    "YT El perro que guía a los muertos (xolo)",
+    34
+   ],
+   [
+    "YT La química detrás de las lágrimas",
+    25
+   ],
+   [
+    "YT Papel picado parte 1",
+    22
+   ],
+   [
+    "YT Murciélagos y sus virus",
+    18
+   ],
+   [
+    "YT Tiburón que vive siglos",
+    15
+   ],
+   [
+    "YT Camarón mantis",
+    13
+   ]
+  ],
+  "nota_flujo": "12 h con noche (20:04→08:13): YT +310 vistas, +2 likes, 0 comentarios, subs 70→70; desde cierre 23:03 solo +174. Xolo sigue liderando (817), lágrimas y papel picado P1 despertaron; leche/enchilado (slot 07:00) 3 vistas en su primera hora. Estancados: 23 de 41 Shorts en 0, incl. Kromdraai, mosquito, corneja, Voyager, jet lag. TT perfil: seguidores 21→24, likes 579→600."
  }
 ]
