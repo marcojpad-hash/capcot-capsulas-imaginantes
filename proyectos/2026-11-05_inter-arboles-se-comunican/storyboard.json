@@ -95,7 +95,9 @@
       "image_prompt": "Layered torn paper diorama, vertical forest cross section, several trees above soil and visible roots below, delicate fungal filaments emerging through soil layers, handcrafted paper fibers, educational scientific illustration, no text, no anthropomorphic elements",
       "ambiente": "Ambiente discreto; voz al frente",
       "sfx": [],
-      "source_ids": ["SRC-001"],
+      "source_ids": [
+        "SRC-001"
+      ],
       "style_id": "papel_rasgado_capas"
     },
     {
@@ -108,7 +110,9 @@
       "image_prompt": "Scientific close-up of a plant root associated with mycorrhizal fungal hyphae, layered torn paper cutaway, clearly distinguishable root tissue and delicate fungal filaments, accurate botanical educational illustration, vertical 9:16, no text",
       "ambiente": "Ambiente discreto; voz al frente",
       "sfx": [],
-      "source_ids": ["SRC-001"],
+      "source_ids": [
+        "SRC-001"
+      ],
       "style_id": "papel_rasgado_capas"
     },
     {
@@ -121,7 +125,9 @@
       "image_prompt": "Botanically grounded cross section showing fungal hyphae connecting roots of multiple plants, localized common mycorrhizal network, layered paper diorama, no glowing lines, no internet imagery, no text, vertical 9:16",
       "ambiente": "Ambiente discreto; voz al frente",
       "sfx": [],
-      "source_ids": ["SRC-001"],
+      "source_ids": [
+        "SRC-001"
+      ],
       "style_id": "papel_rasgado_capas"
     },
     {
@@ -134,7 +140,9 @@
       "image_prompt": "Layered paper scientific illustration of mycorrhizal hyphae between plant roots, subtle neutral markers indicating a research question about possible nutrient movement, no arrows implying proven direction, no text, vertical 9:16",
       "ambiente": "Ambiente discreto; voz al frente",
       "sfx": [],
-      "source_ids": ["SRC-001"],
+      "source_ids": [
+        "SRC-001"
+      ],
       "style_id": "papel_rasgado_capas"
     },
     {
@@ -147,7 +155,9 @@
       "image_prompt": "Three-part layered paper scientific composition: connected roots, possible substance movement marked as uncertain, and a separate plant growth outcome requiring evidence; clear visual distinction between observation and causal proof, no text",
       "ambiente": "Ambiente discreto; voz al frente",
       "sfx": [],
-      "source_ids": ["SRC-001"],
+      "source_ids": [
+        "SRC-001"
+      ],
       "style_id": "papel_rasgado_capas"
     },
     {
@@ -160,7 +170,10 @@
       "image_prompt": "Layered torn paper diorama, scientific research paper represented as neutral printed pages beside a precise underground root and fungal network illustration, editorial academic atmosphere, year 2023 may be added in postproduction, no logos, no generated text",
       "ambiente": "Ambiente discreto; voz al frente",
       "sfx": [],
-      "source_ids": ["SRC-001", "SRC-002"],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
       "style_id": "papel_rasgado_capas"
     },
     {
@@ -173,7 +186,9 @@
       "image_prompt": "Scientifically cautious layered paper forest cross section with mature tree and young plant, fungal hyphae visible in soil but no directional transfer arrows, no nurturing or human-like behavior, no anthropomorphism, vertical 9:16",
       "ambiente": "Ambiente discreto; voz al frente",
       "sfx": [],
-      "source_ids": ["SRC-001"],
+      "source_ids": [
+        "SRC-001"
+      ],
       "style_id": "papel_rasgado_capas"
     },
     {
@@ -186,7 +201,9 @@
       "image_prompt": "Wide vertical layered torn paper diorama of a forest with a visible underground cross section, tree roots and delicate fungal hyphae, scientifically restrained, sense of discovery without fantasy, no text, no anthropomorphic trees",
       "ambiente": "Ambiente discreto; voz al frente",
       "sfx": [],
-      "source_ids": ["SRC-001"],
+      "source_ids": [
+        "SRC-001"
+      ],
       "style_id": "papel_rasgado_capas"
     }
   ],
@@ -195,7 +212,10 @@
     "titulo": "Fuentes",
     "aviso": "Contenido realizado con apoyo de IA; declarar recursos sintéticos usados en versión final.",
     "firma": "Datos y ociosidades",
-    "source_ids": ["SRC-001", "SRC-002"]
+    "source_ids": [
+      "SRC-001",
+      "SRC-002"
+    ]
   },
   "audio": {
     "music_asset": null,
@@ -248,5 +268,25 @@
     "scientific_turn": "Una conexión entre raíces no demuestra por sí sola transferencia funcional, beneficio para otra planta ni una red extensa en todo el bosque.",
     "evidence_limit": "Karst et al. (2023) señalan limitaciones en la evidencia de campo y falta de respaldo publicado para afirmaciones populares como la transferencia preferente de recursos o señales de defensa a descendientes.",
     "payoff": "Las asociaciones y conexiones micorrícicas existen, pero las historias sobre sus efectos deben ajustarse a lo que la evidencia realmente demuestra."
+  },
+  "narrative_qa": {
+    "status": "FAIL",
+    "score": 78,
+    "checks": {
+      "pregunta_central_reconstruible": true,
+      "apertura_in_medias_res": false,
+      "progresion_por_escena": true,
+      "transiciones_causales": true,
+      "giro_cientifico_explicado": true,
+      "limite_evidencia_explicito": true,
+      "payoff_cierre_apertura": true
+    },
+    "critical_flags": [
+      "APERTURA_GENERICA_NO_IN_MEDIAS_RES"
+    ],
+    "review_notes": "La progresión distingue conexión micorrícica de afirmaciones populares, pero la apertura presenta una posibilidad general sin acción ni anomalía concreta.",
+    "review_basis": "lectura_en_frio_solo_narracion",
+    "reviewer_role": "auditor_capcot_independiente",
+    "reviewed_at": "2026-11-03T15:07:21-06:00"
   }
 }
