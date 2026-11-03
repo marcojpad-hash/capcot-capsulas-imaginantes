@@ -49,6 +49,8 @@ ChatGPT no tiene cron propio: esta instrucción se activa cuando Mj la pega en e
 ---
 
 ## 📌 DATO DE HOY — 3 nov 2026, slot 23:30 CDMX (= 2026-11-04T05:30Z)
+> **Re-chequeo 3-nov ~16:05 CDMX (Imaginantes): SIGUE SIN paquete** `cola/entrada/2026-11-03_dato-polvo-africano-microbios/`. El brief de abajo sigue vigente; entregar antes de las 22:30 CDMX para que Grok app haga QA→frames→montaje a 23:30. El control de cola 16:23 (`docs/briefs/2026-11-03_CONTROL_COLA.md`) excluyó expresamente el dato del día: no cuenta como entrega.
+
 > Brief dejado por Imaginantes 3-nov ~10:15 CDMX. NO hay paquete «dato» del 3-nov en `cola/entrada/` (horario: `2026-11-03_dato-TBD-news` = `pendiente_dato_dia`). `2026-11-03_enzimas-incrustadas-oceano` NO cuenta: no está asignado a 23:30 y su guion quedó FAIL de enganche. Entregar hoy antes de las 22:30 CDMX.
 > Tema tomado del radar `docs/briefs/2026-11-03_RADAR_CAPCOT.md` (candidato 1, «mayor fuerza visual»), publicado hace 7 días y con DOI verificado en Crossref. Trends MX del corte 08:01 no traen este tema; no fuerces relación con «vórtice polar».
 
