@@ -61,3 +61,7 @@ Señales de LLM plano (PROHIBIDAS): "Un estudio reveló…", "cabe destacar", "j
 
 ## 9. Remontajes: conservar lo que engancha
 Al corregir un guion ya publicado, **no rehacer research ni tirar el arranque si ya enganchaba** (caso sequías): conserva la escena 1 original y solo agrega cableado, anclas de jerga y giro final.
+
+
+## 10. Estrategia de ganchos (Grok app / main)
+Ver `docs/ESTRATEGIA_GANCHOS_Y_RETENCION.md`: hook 0–3 s afirmativo/negativo, open loop, ABT/PAS, relevancia = por qué no deslizo. Complementa §1b–1c; no las reemplaza.
