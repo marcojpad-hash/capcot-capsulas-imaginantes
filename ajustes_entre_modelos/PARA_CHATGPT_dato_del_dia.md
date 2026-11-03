@@ -48,7 +48,34 @@ ChatGPT no tiene cron propio: esta instrucción se activa cuando Mj la pega en e
 
 ---
 
-## 📌 DATO DE HOY — 2 nov 2026 (Día de Muertos), slot 23:30 CDMX (= 2026-11-03T05:30Z)
+## 📌 DATO DE HOY — 3 nov 2026, slot 23:30 CDMX (= 2026-11-04T05:30Z)
+> Brief dejado por Imaginantes 3-nov ~10:15 CDMX. NO hay paquete «dato» del 3-nov en `cola/entrada/` (horario: `2026-11-03_dato-TBD-news` = `pendiente_dato_dia`). `2026-11-03_enzimas-incrustadas-oceano` NO cuenta: no está asignado a 23:30 y su guion quedó FAIL de enganche. Entregar hoy antes de las 22:30 CDMX.
+> Tema tomado del radar `docs/briefs/2026-11-03_RADAR_CAPCOT.md` (candidato 1, «mayor fuerza visual»), publicado hace 7 días y con DOI verificado en Crossref. Trends MX del corte 08:01 no traen este tema; no fuerces relación con «vórtice polar».
+
+- **project_id:** `2026-11-03_dato-polvo-africano-microbios`
+- **Balazo (in medias res, sin «según un estudio»):** «El aire que respiraba la selva del Amazonas cambió de dueño en cinco días… y venía de África.»
+- **¿Y a mí qué? (obligatorio en escenas 1–2):** el aire que respiras no es solo de tu ciudad: el polvo viaja miles de kilómetros y trae vida microscópica. Ancla cotidiana: el polvo que se te pega en el carro o la ventana. Si quieres decir que el polvo del Sahara también llega a México/Caribe, VERIFÍCALO con fuente oficial (SMN/CONAGUA o NOAA) y cítalo en `fuentes.md`; si no la encuentras, di solo «cruza el Atlántico hasta América».
+- **Hecho usable / wow:** en la Torre Alta del Amazonas (ATTO) midieron el aire a 42 y 323 m del suelo antes y durante una llegada de polvo del norte de África de 5 días. Durante el polvo, las **bacterias** del aire cambiaron fuerte hacia microbios de suelos secos, costras del desierto y del mar; los **hongos** casi no cambiaron. Las **endotoxinas** en el aire se triplicaron, pero NO aumentaron los patógenos obligados.
+- **Ancla científica (verificada, DOI en Crossref):** Weber J. et al. (2026). *Amazonian rainforest bioaerosol influenced by African dust intrusion.* Communications Earth & Environment, publicado 27-oct-2026. DOI [10.1038/s43247-026-04119-1](https://doi.org/10.1038/s43247-026-04119-1) · https://www.nature.com/articles/s43247-026-04119-1 — Lee el artículo antes de escribir; NO agregues cifras que no estén ahí.
+- **Límite obligatorio (penúltima):** fue un solo episodio de 5 días en un sitio; endotoxinas ≠ infección; no se encontraron más patógenos. PROHIBIDO titular «el polvo africano trae enfermedades».
+- **Términos a explicar en 1 frase llana:** «bioaerosol» (vida microscópica flotando en el aire), «endotoxina» (pedacitos de la pared de ciertas bacterias que pueden irritar, aunque la bacteria ya no esté viva).
+
+### Storyboard sugerido (8 escenas, sin frames — Grok los genera; estilo CapCut: stills/animación narrada con personajes Imaginantes, NO HyperFrames)
+1. **Balazo:** nube naranja cruzando el océano hacia la selva; torre metálica entre la niebla.
+2. **¿Y a mí qué?:** el polvo de tu ventana también viene de lejos; el aire es una carretera con pasajeros invisibles.
+3. **Contexto:** la torre de 325 m en el Amazonas que «olfatea» el aire a dos alturas.
+4. **Dato 1:** llega el polvo y en 5 días las bacterias del aire ya son otras: del desierto y del mar.
+5. **Dato 2 / antítesis:** los hongos casi no se movieron. No todo viaja igual.
+6. **Giro:** las endotoxinas se triplicaron… pero los patógenos no aumentaron. Más irritante no es lo mismo que más enfermedad.
+7. **Límite (penúltima, 120–170 car.):** un episodio, un sitio, cinco días; falta ver si pasa igual siempre.
+8. **Giro + pregunta + sello (110–170 car. antes del sello):** eco circular con el balazo, p. ej. «La próxima vez que limpies el polvo, piensa que quizá cruzó un océano con pasajeros. ¿Tú qué crees que viaja en tu aire? Esto fue Datos y ociosidades.»
+
+QA de enganche (Mj, estricto): si las escenas 1–2 no dicen por qué le importa a alguien que no buscó el video, es FAIL aunque el técnico pase. Formato: 205–235 palabras, 1100–1300 caracteres, voz es-MX-JorgeNeural +7 % continuo, `PARA_CHATGPT_LINEA_EDITORIAL.md` §8–9. Hashtags solo de alto volumen: `#ciencia #datoscuriosos #curiosidades #naturaleza #shorts`.
+Entrega: `cola/entrada/2026-11-03_dato-polvo-africano-microbios/` con `storyboard.json` (con `fecha_objetivo: 2026-11-03` y `slot_local: 23:30`), `fuentes.md`, `ESTADO_EJECUCION.md` = `PREPARADO_PENDIENTE_REVISION_GROK`.
+
+---
+
+## (Vencido) Dato 2 nov 2026 (Día de Muertos), slot 23:30 CDMX (= 2026-11-03T05:30Z)
 > ⏰ Re-chequeo 2-nov ~16:07 CDMX: sigue SIN paquete en `cola/entrada/`. Límite de entrega 22:30 CDMX.
 > Brief dejado por Imaginantes 2-nov ~10:05 CDMX. NO hay paquete «dato» con fecha de hoy en `cola/entrada/`. Entregar hoy antes de las 22:30 CDMX. El brief del 1-nov (cambio de horario) quedó vencido abajo; no lo entregues.
 
