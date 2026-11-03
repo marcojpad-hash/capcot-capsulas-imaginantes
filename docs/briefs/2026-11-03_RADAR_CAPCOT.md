@@ -45,17 +45,17 @@ Se intentó abrir cada URL RSS definida en `scripts/tendencias.py`. El lector di
 
 | Fuente | URL | Respuesta exacta del lector |
 |---|---|---|
-| ScienceDaily | https://www.sciencedaily.com/rss/top/science.xml | `(400) Unsupported content-type: application/xml` |
-| ScienceDaily Salud | https://www.sciencedaily.com/rss/top/health.xml | `(400) Unsupported content-type: application/xml` |
-| ScienceDaily Espacio | https://www.sciencedaily.com/rss/space_time.xml | `(400) Unsupported content-type: application/xml` |
-| Phys.org | https://phys.org/rss-feed/ | `(400) Unsupported content-type: text/xml` |
-| NASA | https://www.nasa.gov/news-release/feed/ | `(400) Unsupported content-type: application/rss+xml` |
-| ESA | https://www.esa.int/rssfeed/Our_Activities/Space_Science | `(400) Unsupported content-type: application/rss+xml` |
-| Nature | https://www.nature.com/nature.rss | `(400) Unsupported content-type: application/rss+xml` |
-| EurekAlert | https://www.eurekalert.org/rss/news.xml | `URL ... is not accessible via this tool.` |
-| SINC | https://www.agenciasinc.es/rss | `URL ... is not accessible via this tool.` |
-| UNAM Global | https://unamglobal.unam.mx/feed/ | `(400) Unsupported content-type: application/rss+xml` |
-| Google Trends RSS MX | https://trends.google.com/trending/rss?geo=MX | `URL ... is not accessible via this tool.` |
+| ScienceDaily | https://www.sciencedaily.com/rss/top/science.xml | `Failed to fetch https://www.sciencedaily.com/rss/top/science.xml: (400) Unsupported content-type: application/xml` |
+| ScienceDaily Salud | https://www.sciencedaily.com/rss/top/health.xml | `Failed to fetch https://www.sciencedaily.com/rss/top/health.xml: (400) Unsupported content-type: application/xml` |
+| ScienceDaily Espacio | https://www.sciencedaily.com/rss/space_time.xml | `Failed to fetch https://www.sciencedaily.com/rss/space_time.xml: (400) Unsupported content-type: application/xml` |
+| Phys.org | https://phys.org/rss-feed/ | `Failed to fetch https://phys.org/rss-feed/: (400) Unsupported content-type: text/xml` |
+| NASA | https://www.nasa.gov/news-release/feed/ | `Failed to fetch https://www.nasa.gov/news-release/feed/: (400) Unsupported content-type: application/rss+xml` |
+| ESA | https://www.esa.int/rssfeed/Our_Activities/Space_Science | `Failed to fetch https://www.esa.int/rssfeed/Our_Activities/Space_Science: (400) Unsupported content-type: application/rss+xml` |
+| Nature | https://www.nature.com/nature.rss | `Failed to fetch https://www.nature.com/nature.rss: (400) Unsupported content-type: application/rss+xml` |
+| EurekAlert | https://www.eurekalert.org/rss/news.xml | `URL https://www.eurekalert.org/rss/news.xml is not accessible via this tool.` |
+| SINC | https://www.agenciasinc.es/rss | `URL https://www.agenciasinc.es/rss is not accessible via this tool.` |
+| UNAM Global | https://unamglobal.unam.mx/feed/ | `Failed to fetch https://unamglobal.unam.mx/feed/: (400) Unsupported content-type: application/rss+xml` |
+| Google Trends RSS MX | https://trends.google.com/trending/rss?geo=MX | `URL https://trends.google.com/trending/rss?geo=MX is not accessible via this tool.` |
 
 Estos errores describen la limitación del lector usado en esta ejecución; no prueban que los servidores RSS estén caídos. Se utilizó el respaldo oficial de Google Trending Now para México.
 
