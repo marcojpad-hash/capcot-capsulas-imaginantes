@@ -245,5 +245,25 @@
     "scientific_turn": "Huesos separados en etapas tempranas, como partes del cráneo, se unen con el desarrollo.",
     "evidence_limit": "Las cifras aproximadas dependen de qué piezas pequeñas se cuentan y de la etapa del desarrollo.",
     "payoff": "No perdemos huesos: varias piezas se fusionan hasta formar estructuras mayores."
+  },
+  "narrative_qa": {
+    "status": "FAIL",
+    "score": 82,
+    "checks": {
+      "pregunta_central_reconstruible": true,
+      "apertura_in_medias_res": true,
+      "progresion_por_escena": false,
+      "transiciones_causales": false,
+      "giro_cientifico_explicado": true,
+      "limite_evidencia_explicito": true,
+      "payoff_cierre_apertura": true
+    },
+    "critical_flags": [
+      "ESCENA_6_REPITE_LIMITE_DE_CONTEO_Y_FUSION_DE_ESCENA_5"
+    ],
+    "review_notes": "El contraste inicial y la fusión ósea explican la pregunta, pero la escena 6 repite el matiz de conteo de la escena 5.",
+    "review_basis": "lectura_en_frio_solo_narracion",
+    "reviewer_role": "auditor_capcot_independiente",
+    "reviewed_at": "2026-11-03T15:07:21-06:00"
   }
 }
