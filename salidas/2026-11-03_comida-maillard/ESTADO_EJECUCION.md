@@ -2,7 +2,7 @@
 
 - Fecha: 2026-11-03
 - Slot: 13:30 CDMX
-- Estado: PREPARADO_PENDIENTE_REVISION_GROK
+- Estado: PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR
 - Medios: NO_GENERADOS
 - Narración: 188 palabras
 - Escenas: 8
