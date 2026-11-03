@@ -65,3 +65,6 @@ Al corregir un guion ya publicado, **no rehacer research ni tirar el arranque si
 
 ## 10. Estrategia de ganchos (Grok app / main)
 Ver `docs/ESTRATEGIA_GANCHOS_Y_RETENCION.md`: hook 0–3 s afirmativo/negativo, open loop, ABT/PAS, relevancia = por qué no deslizo. Complementa §1b–1c; no las reemplaza.
+
+## 11. RECHAZO enzimas HyperFrames (Mj, 2-nov ~23:50 CDMX)
+NO HyperFrames/HeyGen para cápsulas CAPCOT: animación fea, voz no es CAPCOT, no engancha. Volver a CapCut (stills + personajes Imaginantes + voz del canal). Reescribir storyboard enzimas a 200–235 w con balazo + «¿y a mí qué?» estilo primeras entregas. Detalle: `2026-11-03_RECHAZO_ENZIMAS_HYPERFRAMES.md`.
