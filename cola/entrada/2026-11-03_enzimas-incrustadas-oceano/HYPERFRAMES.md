@@ -6,3 +6,6 @@ Session: https://hyperframes.dev/mcp-sessions/b9ceb6e6-e9bb-40e5-8d86-a8f65387d3
 
 Tema: enzimas incrustadas en poliésteres (Nature 2026, DOI 10.1038/s41586-026-11192-1). No es Ideonella.
 Cuando termine: descargar MP4 y dejar aquí el link.
+
+## ESTADO 2026-11-03
+Rewrite ChatGPT guardado como `storyboard.json` (copia: `storyboard_rewrite_chatgpt_2026-11-03.json`). **QA Imaginantes: FAIL ENGANCHE — pendiente PASS**, ver `ajustes_entre_modelos/2026-11-03_QA_ENZIMAS_REWRITE.md`. Pipeline CapCut; HyperFrames PROHIBIDO. No montar.
