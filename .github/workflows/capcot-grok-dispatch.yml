@@ -15,7 +15,7 @@ on:
         type: string
 
 permissions:
-  contents: read
+  contents: write
 
 concurrency:
   group: capcot-grok-dispatch-${{ github.event_name == 'workflow_dispatch' && inputs.project_id || github.sha }}
@@ -63,17 +63,65 @@ jobs:
           echo "count=${#files[@]}" >> "$GITHUB_OUTPUT"
           echo "Paquetes validados: ${#files[@]}"
 
-      - name: Verificar configuración del receptor
+      - name: Escribir handoff en buzón del repo (gratis, sin webhook)
+        env:
+          REPOSITORY: ${{ github.repository }}
+          BRANCH: ${{ github.ref_name }}
+          COMMIT_SHA: ${{ github.sha }}
+          SERVER_URL: ${{ github.server_url }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          git fetch --depth=1 origin "$BRANCH"
+          git checkout -B "$BRANCH" "origin/$BRANCH"
+          mkdir -p handoffs/grok_inbox
+          while IFS= read -r package_file; do
+            [[ -n "$package_file" ]] || continue
+            export PACKAGE_FILE="$package_file" PROJECT_ID="$(basename "$package_file" .json)"
+            python - <<'PY'
+          import json, os, datetime
+          src_sha = os.environ["COMMIT_SHA"]
+          pf = os.environ["PACKAGE_FILE"]
+          marker = {
+              "event": "capcot.package.ready",
+              "status": "pending",
+              "receipt_id": f'repo-{os.environ["PROJECT_ID"]}-{src_sha[:12]}',
+              "created_at": datetime.datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ"),
+              "project_id": os.environ["PROJECT_ID"],
+              "repository": os.environ["REPOSITORY"],
+              "branch": os.environ["BRANCH"],
+              "commit_sha": src_sha,
+              "package_path": pf,
+              "package_url": f'{os.environ["SERVER_URL"]}/{os.environ["REPOSITORY"]}/blob/{src_sha}/{pf}',
+          }
+          out = f'handoffs/grok_inbox/{os.environ["PROJECT_ID"]}.json'
+          with open(out, "w", encoding="utf-8") as f:
+              json.dump(marker, f, ensure_ascii=False, indent=2)
+          print("Handoff:", out, marker["receipt_id"])
+          PY
+          done < /tmp/capcot-files.txt
+          git add handoffs/grok_inbox
+          if git diff --cached --quiet; then echo "Sin cambios en buzón."; exit 0; fi
+          git -c user.name="capcot-bot" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+            commit -m "handoff: paquete listo para Grok [skip ci]"
+          for i in 1 2 3; do git push origin "HEAD:$BRANCH" && exit 0; git pull --rebase origin "$BRANCH"; done
+          echo "::error::No se pudo publicar el handoff."; exit 1
+
+      - name: Webhook opcional (solo si existe GROK_WEBHOOK_URL)
+        id: hook
         env:
           WEBHOOK_URL: ${{ secrets.GROK_WEBHOOK_URL }}
           WEBHOOK_TOKEN: ${{ secrets.GROK_WEBHOOK_TOKEN }}
         run: |
-          set -euo pipefail
-          test -n "$WEBHOOK_URL" || { echo "::error::Falta configurar GROK_WEBHOOK_URL."; exit 1; }
-          case "$WEBHOOK_URL" in https://*) ;; *) echo "::error::GROK_WEBHOOK_URL debe usar HTTPS."; exit 1;; esac
-          test -n "$WEBHOOK_TOKEN" || { echo "::error::Falta configurar GROK_WEBHOOK_TOKEN."; exit 1; }
+          if [[ -n "$WEBHOOK_URL" && -n "$WEBHOOK_TOKEN" && "$WEBHOOK_URL" == https://* ]]; then
+            echo "enabled=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "Webhook no configurado: se usa solo el buzón handoffs/grok_inbox/ (modo gratis)."
+            echo "enabled=false" >> "$GITHUB_OUTPUT"
+          fi
 
       - name: Entregar paquetes y exigir acuse individual
+        if: steps.hook.outputs.enabled == 'true'
         env:
           WEBHOOK_URL: ${{ secrets.GROK_WEBHOOK_URL }}
           WEBHOOK_TOKEN: ${{ secrets.GROK_WEBHOOK_TOKEN }}
