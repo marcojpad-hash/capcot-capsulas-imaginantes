@@ -1497,5 +1497,56 @@
    ]
   ],
   "nota_flujo": "12 h con noche (20:04→08:13): YT +310 vistas, +2 likes, 0 comentarios, subs 70→70; desde cierre 23:03 solo +174. Xolo sigue liderando (817), lágrimas y papel picado P1 despertaron; leche/enchilado (slot 07:00) 3 vistas en su primera hora. Estancados: 23 de 41 Shorts en 0, incl. Kromdraai, mosquito, corneja, Voyager, jet lag. TT perfil: seguidores 21→24, likes 579→600."
+ },
+ {
+  "hora_cdmx": "2026-11-03T14:05-06:00",
+  "base_youtube": "2026-11-03T08:13",
+  "base_tiktok": "2026-11-03T08:13",
+  "youtube_totales": {
+   "view": 26856,
+   "like": 890,
+   "comment": 26
+  },
+  "suscriptores": 70,
+  "shorts_publicos": 42,
+  "delta_youtube": {
+   "view": 59,
+   "like": 3,
+   "comment": 0,
+   "suscriptores": 0
+  },
+  "tiktok_totales": null,
+  "seguidores_tiktok": 26,
+  "likes_perfil_tiktok": 622,
+  "videos_tiktok": 46,
+  "delta_tiktok": {
+   "seguidores": 2,
+   "likes_perfil": 22,
+   "videos": 3,
+   "nota": "Solo perfil público; sin vistas por video."
+  },
+  "ranking_crecimiento": [
+   [
+    "YT Murciélagos y sus virus",
+    14
+   ],
+   [
+    "YT Tiburón que vive siglos",
+    13
+   ],
+   [
+    "YT Papel picado parte 1",
+    8
+   ],
+   [
+    "YT Lágrimas",
+    5
+   ],
+   [
+    "YT El pan no solo se seca",
+    4
+   ]
+  ],
+  "nota_flujo": "Mañana floja: YT +59 vistas en 6 h (vs +310 la noche), +3 likes, 0 comentarios, subs 70 sin cambio. Xolo se frenó (+2). Leche/enchilado 5 vistas en 7 h; Maillard (13:30) 2 vistas. Estancados: 27 de 42 Shorts en 0. TT perfil: seguidores 24→26, likes 600→622, videos 43→46."
  }
 ]
