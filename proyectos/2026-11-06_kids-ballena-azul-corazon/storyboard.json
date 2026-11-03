@@ -245,5 +245,25 @@
     "scientific_turn": "En el ejemplar registrado, el pulso bajó durante las inmersiones y aumentó al salir a respirar.",
     "evidence_limit": "Los valores provienen de un solo ejemplar y de las condiciones del estudio; no describen a todas las ballenas azules.",
     "payoff": "El pulso cambia con la inmersión, pero la medición excepcional no es un promedio universal."
+  },
+  "narrative_qa": {
+    "status": "FAIL",
+    "score": 80,
+    "checks": {
+      "pregunta_central_reconstruible": true,
+      "apertura_in_medias_res": true,
+      "progresion_por_escena": true,
+      "transiciones_causales": true,
+      "giro_cientifico_explicado": true,
+      "limite_evidencia_explicito": true,
+      "payoff_cierre_apertura": false
+    },
+    "critical_flags": [
+      "PAYOFF_SOBREAFIRMA_CASI_SE_DETIENE"
+    ],
+    "review_notes": "La progresión de pulso durante inmersión y superficie se entiende; el cierre convierte 2 latidos/min en «casi se detiene», una intensificación que no paga con precisión la apertura.",
+    "review_basis": "lectura_en_frio_solo_narracion",
+    "reviewer_role": "auditor_capcot_independiente",
+    "reviewed_at": "2026-11-03T15:07:21-06:00"
   }
 }
