@@ -1603,5 +1603,60 @@
    ]
   ],
   "nota_flujo": "Tarde algo mejor que la mañana: YT +94 vistas en 6 h (vs +59), +3 likes, 0 comentarios, subs 70 sin cambio. Murciélagos sigue empujando; Maillard despertó (2→18). Estancados: 25 de 44 Shorts en 0, entre ellos SmartPE 0 y Capsaicina 4; leche salió del conteo público. TT perfil: seguidores 26→27, likes 622→672 (+50), videos 46."
+ },
+ {
+  "hora_cdmx": "2026-11-04T08:06-06:00",
+  "base_youtube": "2026-11-03T20:07",
+  "base_tiktok": "2026-11-03T20:07",
+  "youtube_totales": {
+   "view": 27063,
+   "like": 895,
+   "comment": 26
+  },
+  "suscriptores": 70,
+  "shorts_publicos": 46,
+  "delta_youtube": {
+   "view": 113,
+   "like": 2,
+   "comment": 0,
+   "suscriptores": 0
+  },
+  "tiktok_totales": null,
+  "seguidores_tiktok": 28,
+  "likes_perfil_tiktok": 685,
+  "videos_tiktok": 51,
+  "delta_tiktok": {
+   "seguidores": 1,
+   "likes_perfil": 13,
+   "videos": 5,
+   "nota": "Solo perfil público; sin vistas por video."
+  },
+  "ranking_crecimiento": [
+   [
+    "YT La frontera invisible de Júpiter",
+    24
+   ],
+   [
+    "YT SmartPE: edición genética más precisa en",
+    17
+   ],
+   [
+    "YT La química del dorado",
+    15
+   ],
+   [
+    "YT El polvo de África no viaja solo",
+    8
+   ],
+   [
+    "YT Un golpe bajo el agua",
+    7
+   ],
+   [
+    "YT El perro que guía a los muertos 🐕💀",
+    7
+   ]
+  ],
+  "nota_flujo": "Noche (12 h, 20:07→08:06): YT +113 vistas, +2 likes, 0 comentarios, subs 70 sin cambio. Arrastran los estrenos de ayer: Júpiter +24, SmartPE 0→17, Maillard +15; polvo de África (nuevo) 8 y el hipo (recién salido) en 0. 26 de 46 Shorts sin movimiento (incl. murciélagos casi frenado +6). TT perfil: seguidores 27→28, likes 672→685, videos 46→51."
  }
 ]
