@@ -90,6 +90,8 @@ Se hizo una nueva lectura independiente de la narración concatenada, sin usar t
 
 La revisión anterior del 3-nov había marcado nubes PASS 91. La lectura actual del storyboard canónico encuentra que su última escena vuelve a los 500,000 kg y a que no todas las nubes son iguales, ya expuestos, en lugar de cerrar con el mecanismo que explica por qué las gotas permanecen suspendidas. El JSON actual prevalece y queda en FAIL 78.
 
+Los campos estado/editorial_status de los doce borradores siguen conservando etiquetas de espera de auditor (con variación en árboles), aunque narrative_qa ya refleja esta lectura. No se modificaron esos campos: la compuerta estructural continúa cerrada y ningún paquete se marca como preparado.
+
 ### Identidad de árboles
 
 El storyboard canónico actual 2026-11-05_inter-arboles-se-comunican trata redes micorrícicas comunes / wood-wide web y coincide con el tema del horario. La variante sobre respiración nocturna está en cola/bloqueados/2026-11-05_inter-arboles-mito-respiran/, con otro project_id. La descripción previa que atribuía respiración al borrador canónico no coincide con el contenido vivo de GitHub. El canónico sigue en FAIL por su apertura genérica, no por desajuste temático.
