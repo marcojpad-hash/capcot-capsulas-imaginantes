@@ -1548,5 +1548,60 @@
    ]
   ],
   "nota_flujo": "Mañana floja: YT +59 vistas en 6 h (vs +310 la noche), +3 likes, 0 comentarios, subs 70 sin cambio. Xolo se frenó (+2). Leche/enchilado 5 vistas en 7 h; Maillard (13:30) 2 vistas. Estancados: 27 de 42 Shorts en 0. TT perfil: seguidores 24→26, likes 600→622, videos 43→46."
+ },
+ {
+  "hora_cdmx": "2026-11-03T20:07-06:00",
+  "base_youtube": "2026-11-03T14:05",
+  "base_tiktok": "2026-11-03T14:05",
+  "youtube_totales": {
+   "view": 26950,
+   "like": 893,
+   "comment": 26
+  },
+  "suscriptores": 70,
+  "shorts_publicos": 44,
+  "delta_youtube": {
+   "view": 94,
+   "like": 3,
+   "comment": 0,
+   "suscriptores": 0
+  },
+  "tiktok_totales": null,
+  "seguidores_tiktok": 27,
+  "likes_perfil_tiktok": 672,
+  "videos_tiktok": 46,
+  "delta_tiktok": {
+   "seguidores": 1,
+   "likes_perfil": 50,
+   "videos": 0,
+   "nota": "Solo perfil público; sin vistas por video."
+  },
+  "ranking_crecimiento": [
+   [
+    "YT Murciélagos y sus virus",
+    24
+   ],
+   [
+    "YT La química del dorado (Maillard)",
+    16
+   ],
+   [
+    "YT Júpiter (nuevo)",
+    10
+   ],
+   [
+    "YT Hielo/tres mantos",
+    8
+   ],
+   [
+    "YT Xolo",
+    6
+   ],
+   [
+    "YT Hongo gente diminuta",
+    6
+   ]
+  ],
+  "nota_flujo": "Tarde algo mejor que la mañana: YT +94 vistas en 6 h (vs +59), +3 likes, 0 comentarios, subs 70 sin cambio. Murciélagos sigue empujando; Maillard despertó (2→18). Estancados: 25 de 44 Shorts en 0, entre ellos SmartPE 0 y Capsaicina 4; leche salió del conteo público. TT perfil: seguidores 26→27, likes 622→672 (+50), videos 46."
  }
 ]
