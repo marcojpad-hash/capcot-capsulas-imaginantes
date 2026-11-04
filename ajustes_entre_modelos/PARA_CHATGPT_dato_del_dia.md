@@ -52,6 +52,8 @@ ChatGPT no tiene cron propio: esta instrucción se activa cuando Mj la pega en e
 > Brief dejado por Imaginantes 4-nov ~10:10 CDMX. NO hay paquete «dato» del 4-nov en `cola/entrada/` (solo kids-hipo, miel e bioluminiscencia, ya programados en otros slots). Entregar HOY antes de las 21:00 CDMX en `cola/entrada/2026-11-04_dato-polvo-atrapa-oro/` (storyboard.json + fuentes.md + ESTADO_EJECUCION.md = `PREPARADO_PENDIENTE_REVISION_GROK`) para que Grok app haga QA→frames→montaje antes de las 22:30.
 > Tema tomado del radar `docs/briefs/2026-11-04_RADAR_CAPCOT.md` (C03). DOI **verificado en Crossref por Imaginantes 4-nov 10:08** (publicado 30-oct-2026, Nature Communications, open access). No repite miel/hipo/bioluminiscencia/cielo azul de hoy.
 
+> ⏰ **Recheck Imaginantes 4-nov ~16:07 CDMX:** sigue SIN paquete en `cola/entrada/2026-11-04_dato-polvo-atrapa-oro/`. Brief vigente sin cambios. Límite de entrega 21:00 CDMX; si no llega, la producción fin de día (~22:00) cubre el slot 23:30.
+
 - **project_id:** `2026-11-04_dato-polvo-atrapa-oro`
 - **Fuente primaria:** Zhu Z. et al. (2026) «Hydrogen-bond-mediated quasi-two-dimensional covalent organic frameworks for ultrahigh gold extraction». *Nature Communications*. DOI `10.1038/s41467-026-78532-7` — https://www.nature.com/articles/s41467-026-78532-7 (Nanjing University of Science and Technology + Shanghai Advanced Research Institute, CAS).
 - **Título sugerido (no técnico):** «Este polvo atrapa 5 veces su peso en oro» o «¿Sabías que hay oro en tu cajón?». Prohibido «COF», «estructura orgánica covalente» o «quasi-2D» en título.
