@@ -250,6 +250,9 @@
   "narrative_qa": {
     "status": "FAIL",
     "score": 80,
+    "review_basis": "lectura_en_frio_solo_narracion",
+    "reviewer_role": "auditor_capcot_independiente",
+    "reviewed_at": "2026-11-04T15:58:40-06:00",
     "checks": {
       "pregunta_central_reconstruible": true,
       "apertura_in_medias_res": true,
@@ -260,12 +263,7 @@
       "payoff_cierre_apertura": false
     },
     "critical_flags": [
-      "REPETICION_DE_LIMITES_EN_ESCENAS_5_6",
-      "PAYOFF_VAGO_Y_PREGUNTA_ESPECULATIVA"
-    ],
-    "review_notes": "Los patrones observables no prueban sueños; las dos últimas explicaciones repiten límites y el cierre desplaza la respuesta hacia especulación subjetiva.",
-    "review_basis": "lectura_en_frio_solo_narracion",
-    "reviewer_role": "auditor_capcot_independiente",
-    "reviewed_at": "2026-11-03T15:07:21-06:00"
+      "REPETICION_ESCENAS_5_6_Y_PAYOFF_VAGO"
+    ]
   }
 }
