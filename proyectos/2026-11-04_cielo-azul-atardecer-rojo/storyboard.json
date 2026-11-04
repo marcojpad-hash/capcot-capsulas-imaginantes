@@ -417,5 +417,22 @@
     "Polvo, humo, aerosoles, gotas y nubes pueden modificar los tonos; no presentar el rojo del atardecer como pronóstico meteorológico.",
     "No marcar como contenido hecho para niños; el público previsto es general.",
     "Distinguir el espectro emitido por el Sol del color aparente del disco solar visto a través de la atmósfera."
-  ]
+  ],
+  "narrative_qa": {
+    "status": "PASS",
+    "score": 94,
+    "review_basis": "lectura_en_frio_solo_narracion",
+    "reviewer_role": "auditor_capcot_independiente",
+    "reviewed_at": "2026-11-04T15:58:40-06:00",
+    "checks": {
+      "pregunta_central_reconstruible": true,
+      "apertura_in_medias_res": true,
+      "progresion_por_escena": true,
+      "transiciones_causales": true,
+      "giro_cientifico_explicado": true,
+      "limite_evidencia_explicito": true,
+      "payoff_cierre_apertura": true
+    },
+    "critical_flags": []
+  }
 }
