@@ -249,6 +249,9 @@
   "narrative_qa": {
     "status": "PASS",
     "score": 88,
+    "review_basis": "lectura_en_frio_solo_narracion",
+    "reviewer_role": "auditor_capcot_independiente",
+    "reviewed_at": "2026-11-04T15:58:40-06:00",
     "checks": {
       "pregunta_central_reconstruible": true,
       "apertura_in_medias_res": true,
@@ -258,10 +261,6 @@
       "limite_evidencia_explicito": true,
       "payoff_cierre_apertura": true
     },
-    "critical_flags": [],
-    "review_notes": "La anomalía día sideral/año organiza una progresión clara; distingue día sideral y solar y devuelve el cierre al calendario venusino.",
-    "review_basis": "lectura_en_frio_solo_narracion",
-    "reviewer_role": "auditor_capcot_independiente",
-    "reviewed_at": "2026-11-03T15:07:21-06:00"
+    "critical_flags": []
   }
 }
