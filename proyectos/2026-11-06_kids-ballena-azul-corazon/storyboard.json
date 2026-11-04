@@ -249,6 +249,9 @@
   "narrative_qa": {
     "status": "FAIL",
     "score": 80,
+    "review_basis": "lectura_en_frio_solo_narracion",
+    "reviewer_role": "auditor_capcot_independiente",
+    "reviewed_at": "2026-11-04T15:58:40-06:00",
     "checks": {
       "pregunta_central_reconstruible": true,
       "apertura_in_medias_res": true,
@@ -260,10 +263,6 @@
     },
     "critical_flags": [
       "PAYOFF_SOBREAFIRMA_CASI_SE_DETIENE"
-    ],
-    "review_notes": "La progresión de pulso durante inmersión y superficie se entiende; el cierre convierte 2 latidos/min en «casi se detiene», una intensificación que no paga con precisión la apertura.",
-    "review_basis": "lectura_en_frio_solo_narracion",
-    "reviewer_role": "auditor_capcot_independiente",
-    "reviewed_at": "2026-11-03T15:07:21-06:00"
+    ]
   }
 }
