@@ -1,12 +1,12 @@
 {
   "fecha": "2026-11-04",
   "tipo": "endscreens_rotacion",
-  "actualizado_cdmx": "2026-11-04T09:46-06:00",
-  "motivo": "09:46 hipo Rg-iTgMExWw sigue en 0 vistas y sin entrantes → papel picado p1 i9QBFPljl6M (+6, 1362) ahora manda a hipo (antes AJR6kcnnDig, que conserva 6 entrantes). Fijos intactos.",
+  "actualizado_cdmx": "2026-11-04T14:00-06:00",
+  "motivo": "14:00 canal casi plano desde 09:46; aceleran SmartPE +12, Júpiter +10, polvo +7, dorado +5; hipo y miel (nuevo, público) en 0. SmartPE -WBW0X9KpLM ahora manda a miel jpDyCX6zSgQ (antes JOA1Bm6KYDs); miel recibe pantalla final nueva → hipo Rg-iTgMExWw. Fijos intactos.",
   "vistas_ref": {
-    "bpeRL5XtYLI": 34,
+    "bpeRL5XtYLI": 44,
     "7ay4KLS8h8I": 4,
-    "JOA1Bm6KYDs": 34,
+    "JOA1Bm6KYDs": 39,
     "OwfxfQ4RPSo": 23,
     "c-7pMF3-B-g": 94,
     "V9bO9EUN0JA": 43,
@@ -19,7 +19,7 @@
     "rLd9DVPXHb8": 48,
     "MBMjQ5vLZo0": 220,
     "G5is50omLo4": 279,
-    "Mz-IVFvFWH4": 128,
+    "Mz-IVFvFWH4": 129,
     "ZHdJXFrURk4": 22,
     "p4eXmoJ2f18": 612,
     "OFpAg4XA3AM": 30,
@@ -47,9 +47,10 @@
     "r1AhsPOAS_o": 1402,
     "ZrUtKs7Ty7U": 1344,
     "5D96DmjvioU": 632,
-    "-WBW0X9KpLM": 22,
-    "R76ivFX9nXo": 20,
-    "Rg-iTgMExWw": 0
+    "-WBW0X9KpLM": 34,
+    "R76ivFX9nXo": 27,
+    "Rg-iTgMExWw": 0,
+    "jpDyCX6zSgQ": 0
   },
   "mapa": {
     "r1AhsPOAS_o": "AJR6kcnnDig",
@@ -94,9 +95,10 @@
     "JOA1Bm6KYDs": "OwfxfQ4RPSo",
     "7ay4KLS8h8I": "V9bO9EUN0JA",
     "bpeRL5XtYLI": "7ay4KLS8h8I",
-    "-WBW0X9KpLM": "JOA1Bm6KYDs",
+    "-WBW0X9KpLM": "jpDyCX6zSgQ",
     "R76ivFX9nXo": "7ay4KLS8h8I",
-    "Rg-iTgMExWw": "-WBW0X9KpLM"
+    "Rg-iTgMExWw": "-WBW0X9KpLM",
+    "jpDyCX6zSgQ": "Rg-iTgMExWw"
   },
   "pendiente_studio": false,
   "nota": "Aplicado en YouTube Studio Editor > Pantalla final (video específico). Búsqueda: pegar youtube.com/watch?v=ID en 'Buscar vídeos de otros canales' (tus vídeos no lista Shorts). Sin suscripción ni tarjetas. Actualización 26-oct 19:49: la lista «Elegir un vídeo específico» ya muestra los Shorts.",
@@ -142,9 +144,10 @@
     "c-7pMF3-B-g": "aplicado_2026-11-03 14:57 (antes 7HfvkkR5Jf4, eliminado)",
     "7ay4KLS8h8I": "aplicado_nuevo_2026-11-03 14:57 → V9bO9EUN0JA",
     "bpeRL5XtYLI": "aplicado_nuevo_2026-11-03 17:53 → 7ay4KLS8h8I",
-    "-WBW0X9KpLM": "aplicado_nuevo_2026-11-03 21:47 → JOA1Bm6KYDs",
+    "-WBW0X9KpLM": "aplicado_2026-11-04 14:00 (antes JOA1Bm6KYDs)",
     "R76ivFX9nXo": "aplicado_nuevo_2026-11-03 23:48 → 7ay4KLS8h8I",
-    "Rg-iTgMExWw": "aplicado_nuevo_2026-11-04 07:54 → -WBW0X9KpLM (verificado en Studio)"
+    "Rg-iTgMExWw": "aplicado_nuevo_2026-11-04 07:54 → -WBW0X9KpLM (verificado en Studio)",
+    "jpDyCX6zSgQ": "aplicado_nuevo_2026-11-04 14:00 → Rg-iTgMExWw"
   },
   "fijos": {
     "Qe2Y9xDn9QQ": "gIjJ0YKYQ8M",
@@ -159,7 +162,7 @@
   ],
   "nota_excluidos": "Ave-dino / velociraptor: no mandar tráfico de pantallas finales (riesgo de parecer fusil). Preferir hongos y otros nuevos flojos.",
   "nota_studio": "Hongos destino confirmado en timeline. Origen hongos: Studio mostró título «¿Aves que temen a mujeres?» al pegar watch?v=O7TdKvuBjyg (mismo ID O7Td).",
-  "ultima_revision_cdmx": "2026-11-04T07:54-06:00 cambio: pantalla final nueva en Rg-iTgMExWw; Studio sin comentarios sin responder.",
+  "ultima_revision_cdmx": "2026-11-04T14:00-06:00 cambio: SmartPE→miel; miel nueva→hipo",
   "comentarios_ref_2026-11-01T21:52": {
     "oGFKLUgBdhA": 2,
     "xBqdEn1Dumg": 2,
