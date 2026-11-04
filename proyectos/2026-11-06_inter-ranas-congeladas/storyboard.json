@@ -249,6 +249,9 @@
   "narrative_qa": {
     "status": "FAIL",
     "score": 83,
+    "review_basis": "lectura_en_frio_solo_narracion",
+    "reviewer_role": "auditor_capcot_independiente",
+    "reviewed_at": "2026-11-04T15:58:40-06:00",
     "checks": {
       "pregunta_central_reconstruible": true,
       "apertura_in_medias_res": true,
@@ -259,11 +262,7 @@
       "payoff_cierre_apertura": true
     },
     "critical_flags": [
-      "ESCENAS_5_6_REITERAN_LIMITE_DE_ESPECIE_Y_CONDICIONES"
-    ],
-    "review_notes": "El mecanismo de crioprotección se entiende; las escenas 5 y 6 repiten la restricción de especie/condiciones sin un avance suficiente.",
-    "review_basis": "lectura_en_frio_solo_narracion",
-    "reviewer_role": "auditor_capcot_independiente",
-    "reviewed_at": "2026-11-03T15:07:21-06:00"
+      "REPETICION_ESCENAS_5_6_LIMITES_DE_ESPECIE_Y_CONDICIONES"
+    ]
   }
 }
