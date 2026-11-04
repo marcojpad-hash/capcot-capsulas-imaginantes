@@ -5,7 +5,7 @@
 > Lee antes: `PARA_CHATGPT_LINEA_EDITORIAL.md` (§1–9, en especial §8 figuras humanas / anti-LLM plano y §9 remontajes), `docs/RECETA_CAPSULA.md`, `docs/FLUJO_EXTERNO.md`.
 
 ## 0. HUECOS HOY 4-nov (madrugada 02:30 CDMX) — PRIORIDAD
-1. **4-nov 23:30 dato_del_dia** `2026-11-04_dato-TBD-news` — noticia científica ≤48h con fuente primaria (paper/agencia). Entregar guion antes de 16:00 CDMX con balazo + «¿y a mí qué?» temprano.
+1. **4-nov 23:30 dato_del_dia** `2026-11-04_dato-polvo-atrapa-oro` — brief completo (DOI verificado) en `PARA_CHATGPT_dato_del_dia.md` § «DATO DE HOY 4 nov» (10:10 CDMX). Entregar en `cola/entrada/2026-11-04_dato-polvo-atrapa-oro/` antes de 16:00 CDMX (límite duro 21:00) con balazo + «¿y a mí qué?» temprano.
 2. **4-nov 19:00 intermedio_2** — sin OK de Mj para Machu Picchu y el respaldo NO se entregó (vencía 3-nov 12:00). Entregar YA el respaldo `2026-11-04_inter-cielo-azul-atardecer` ("Por qué el cielo es azul y el atardecer rojo", NASA SpacePlace / NOAA), formato «¿sabías que…?» contradictorio. Límite: 4-nov 12:00 CDMX para que Grok monte y se programe a las 19:00.
 (kids 07:00, comida 13:30 e intermedio_1 17:00 ya están programados YT+TT+FB.)
 

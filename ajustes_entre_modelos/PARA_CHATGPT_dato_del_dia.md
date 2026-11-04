@@ -48,7 +48,40 @@ ChatGPT no tiene cron propio: esta instrucción se activa cuando Mj la pega en e
 
 ---
 
-## 📌 DATO DE HOY — 3 nov 2026, slot 23:30 CDMX (= 2026-11-04T05:30Z)
+## 📌 DATO DE HOY — 4 nov 2026, slot 23:30 CDMX (= 2026-11-05T05:30Z)
+> Brief dejado por Imaginantes 4-nov ~10:10 CDMX. NO hay paquete «dato» del 4-nov en `cola/entrada/` (solo kids-hipo, miel e bioluminiscencia, ya programados en otros slots). Entregar HOY antes de las 21:00 CDMX en `cola/entrada/2026-11-04_dato-polvo-atrapa-oro/` (storyboard.json + fuentes.md + ESTADO_EJECUCION.md = `PREPARADO_PENDIENTE_REVISION_GROK`) para que Grok app haga QA→frames→montaje antes de las 22:30.
+> Tema tomado del radar `docs/briefs/2026-11-04_RADAR_CAPCOT.md` (C03). DOI **verificado en Crossref por Imaginantes 4-nov 10:08** (publicado 30-oct-2026, Nature Communications, open access). No repite miel/hipo/bioluminiscencia/cielo azul de hoy.
+
+- **project_id:** `2026-11-04_dato-polvo-atrapa-oro`
+- **Fuente primaria:** Zhu Z. et al. (2026) «Hydrogen-bond-mediated quasi-two-dimensional covalent organic frameworks for ultrahigh gold extraction». *Nature Communications*. DOI `10.1038/s41467-026-78532-7` — https://www.nature.com/articles/s41467-026-78532-7 (Nanjing University of Science and Technology + Shanghai Advanced Research Institute, CAS).
+- **Título sugerido (no técnico):** «Este polvo atrapa 5 veces su peso en oro» o «¿Sabías que hay oro en tu cajón?». Prohibido «COF», «estructura orgánica covalente» o «quasi-2D» en título.
+- **Balazo (in medias res, sin «según un estudio»):** «Un gramo de este polvo amarillo se tragó cinco gramos de oro… y lo dejó convertido en pepitas.»
+- **¿Y a mí qué? (obligatorio en escenas 1–2):** el oro no solo está en anillos: hay oro en las placas de los celulares y aparatos viejos que guardas en un cajón. Para decirlo hay que **citar fuente oficial** en `fuentes.md` (p. ej. el *Global E-waste Monitor* de la ONU/UNITAR-ITU, o la EPA de EE. UU.). El paper NO habla de celulares: si no encuentras y verificas la fuente, usa solo el ancla «el oro de tus aretes o de un anillo» sin cifras.
+- **Hecho usable / wow (lo que sí dice el paper):**
+  - Es un material poroso de laboratorio (red orgánica tipo esponja/panal) diseñado para **atrapar oro disuelto** en agua (iones de oro).
+  - Truco del diseño: grupos que apuntan «hacia afuera» y puentes de hidrógeno entre cadenas lo vuelven **plano y ordenado**, así los «ganchos» quedan expuestos en vez de escondidos dentro de los poros.
+  - No solo lo atrapa: lo **reduce** a oro metálico; con calor suave y vibración se forman **nanopartículas de oro** que se juntan.
+  - Capacidad reportada: **5 082,32 mg de oro por gramo** de material ≈ **5 veces su propio peso**. (Esta conversión es aritmética de la cifra del abstract; dila así, sin redondear a «5 kilos» ni similares.)
+- **Límite / matiz (penúltima escena):** es un resultado de laboratorio en condiciones controladas; todavía no es una planta de reciclaje ni significa que puedas sacar oro de tu celular en casa.
+- **Giro final (última escena):** «La sorpresa no es encontrar oro, es diseñar una esponja que lo atrape solo a él.» + pregunta abierta («¿Cuántos celulares viejos tienes guardados?») + **«Esto fue Datos y ociosidades.»**
+- **Formato trend:** «¿sabías que…?» contradictorio + «qué pasa dentro de…» (zoom al material). Público general, no kids.
+- **Storyboard 8 escenas (texto, SIN frames):**
+  1. Balazo: polvo amarillo en una balanza que «se traga» oro; contador 1 g → 5 g.
+  2. ¿Y a mí qué?: cajón con celulares y cargadores viejos / anillo (según lo que verifiques).
+  3. El problema: oro disuelto en agua = invisible y difícil de recuperar.
+  4. Qué pasa dentro: esponja/panal molecular con ganchos escondidos en los poros (la versión vieja que se tapa).
+  5. El truco: puentes de hidrógeno «aplanan» las cadenas; ganchos al descubierto.
+  6. Atrapar y transformar: iones → nanopartículas de oro que se juntan con calor suave y vibración.
+  7. Matiz: laboratorio en Nanjing/Shanghái; aún no es industria ni truco casero.
+  8. Giro + pregunta + sello.
+- **Personajes Imaginantes:** usar los propios del canal (ver `PARA_CHATGPT_LINEA_EDITORIAL.md` §8); estilo CapCut con imágenes fijas o animación narrada, subtítulos abajo.
+- **Hashtags (solo alto volumen):** `#curiosidades #ciencia #datosinteresantes #sabiasque #shorts #oro`. Nada de `#COF` ni tags técnicos.
+- **No inventar:** ni cifras de cuánto oro tiene un celular sin fuente oficial citada, ni costos, ni fechas de aplicación industrial.
+- **Plan B (si el oro no cierra el enganche):** radar C02 murciélagos y sus virus (Nature Communications, DOI `10.1038/s41467-026-79059-7`, también verificado en Crossref): «no es lo que comen, es dónde viven». Murciélagos fue el Short ganador del 3-nov. Prohibido el tono de alarma de contagio.
+
+---
+
+## (Vencido) Dato 3 nov 2026, slot 23:30 CDMX (= 2026-11-04T05:30Z) — cubierto y programado (R76ivFX9nXo)
 > **Re-chequeo 3-nov ~16:05 CDMX (Imaginantes): SIGUE SIN paquete** `cola/entrada/2026-11-03_dato-polvo-africano-microbios/`. El brief de abajo sigue vigente; entregar antes de las 22:30 CDMX para que Grok app haga QA→frames→montaje a 23:30. El control de cola 16:23 (`docs/briefs/2026-11-03_CONTROL_COLA.md`) excluyó expresamente el dato del día: no cuenta como entrega.
 
 > Brief dejado por Imaginantes 3-nov ~10:15 CDMX. NO hay paquete «dato» del 3-nov en `cola/entrada/` (horario: `2026-11-03_dato-TBD-news` = `pendiente_dato_dia`). `2026-11-03_enzimas-incrustadas-oceano` NO cuenta: no está asignado a 23:30 y su guion quedó FAIL de enganche. Entregar hoy antes de las 22:30 CDMX.

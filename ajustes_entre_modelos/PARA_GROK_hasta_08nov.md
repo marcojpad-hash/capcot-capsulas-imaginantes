@@ -5,7 +5,7 @@
 
 ## 0. HUECOS HOY 4-nov (madrugada 02:30 CDMX)
 1. **19:00** `2026-11-04_inter-cielo-azul-atardecer` (respaldo de Machu Picchu, sin OK de Mj): montar en cuanto ChatGPT entregue el guion; mp4 listo antes de 16:00 CDMX.
-2. **23:30** `2026-11-04_dato-TBD-news`: montar el mismo día cuando ChatGPT entregue el dato; mp4 listo antes de 21:30 CDMX.
+2. **23:30** `2026-11-04_dato-polvo-atrapa-oro` (brief en `PARA_CHATGPT_dato_del_dia.md`, 10:10 CDMX): montar el mismo día cuando ChatGPT entregue en `cola/entrada/`; mp4 listo antes de 21:30 CDMX; YT+TT+FB 23:30 CDMX (TT AI ON y UI NY 00:30; FB sin AI).
 
 ## 1. Tu rol (cuando ChatGPT entregue un paquete en `cola/entrada/<pid>/`)
 1. **QA de arco y cierre**: paradoja al inicio, cableado entre escenas, antítesis y un cierre con eco (LINEA_EDITORIAL §8–9). Cuenta 205–235 palabras y revisa las fuentes. Si falla, lo devuelves con una nota en `BITACORA_COORDINACION.md`; no lo reescribas tú a fondo.
