@@ -1,21 +1,21 @@
 {
   "fecha": "2026-11-03",
   "tipo": "endscreens_rotacion",
-  "actualizado_cdmx": "2026-11-03T21:47-06:00",
-  "motivo": "21:47 nuevo Short SmartPE -WBW0X9KpLM (1 vista, sin pantalla final) → JOA1Bm6KYDs (Química del dorado, 12 vistas, solo 1 origen; Capsaicina ya recibe de 2). Resto plano. Fijos intactos.",
+  "actualizado_cdmx": "2026-11-03T23:48-06:00",
+  "motivo": "23:48 nuevo Short polvo de África R76ivFX9nXo (0 vistas, sin pantalla final) → 7ay4KLS8h8I (Capsaicina, 4 vistas, la más floja). Júpiter subió 8→22, SmartPE 1→13. Fijos intactos.",
   "vistas_ref": {
-    "bpeRL5XtYLI": 8,
+    "bpeRL5XtYLI": 22,
     "7ay4KLS8h8I": 4,
-    "JOA1Bm6KYDs": 12,
+    "JOA1Bm6KYDs": 21,
     "OwfxfQ4RPSo": 23,
     "c-7pMF3-B-g": 92,
-    "V9bO9EUN0JA": 42,
-    "5sxxx0vuXFE": 145,
+    "V9bO9EUN0JA": 43,
+    "5sxxx0vuXFE": 146,
     "GlBl4S4aDAs": 270,
-    "0x1B9_rMm-I": 213,
+    "0x1B9_rMm-I": 216,
     "HDQr9OGpFJM": 79,
     "PQzLUQnHbcA": 418,
-    "aZn5eTyiQPQ": 823,
+    "aZn5eTyiQPQ": 827,
     "rLd9DVPXHb8": 47,
     "MBMjQ5vLZo0": 220,
     "G5is50omLo4": 279,
@@ -47,7 +47,8 @@
     "r1AhsPOAS_o": 1402,
     "ZrUtKs7Ty7U": 1343,
     "5D96DmjvioU": 632,
-    "-WBW0X9KpLM": 1
+    "-WBW0X9KpLM": 13,
+    "R76ivFX9nXo": 0
   },
   "mapa": {
     "r1AhsPOAS_o": "AJR6kcnnDig",
@@ -92,7 +93,8 @@
     "JOA1Bm6KYDs": "OwfxfQ4RPSo",
     "7ay4KLS8h8I": "V9bO9EUN0JA",
     "bpeRL5XtYLI": "7ay4KLS8h8I",
-    "-WBW0X9KpLM": "JOA1Bm6KYDs"
+    "-WBW0X9KpLM": "JOA1Bm6KYDs",
+    "R76ivFX9nXo": "7ay4KLS8h8I"
   },
   "pendiente_studio": false,
   "nota": "Aplicado en YouTube Studio Editor > Pantalla final (video específico). Búsqueda: pegar youtube.com/watch?v=ID en 'Buscar vídeos de otros canales' (tus vídeos no lista Shorts). Sin suscripción ni tarjetas. Actualización 26-oct 19:49: la lista «Elegir un vídeo específico» ya muestra los Shorts.",
@@ -138,7 +140,8 @@
     "c-7pMF3-B-g": "aplicado_2026-11-03 14:57 (antes 7HfvkkR5Jf4, eliminado)",
     "7ay4KLS8h8I": "aplicado_nuevo_2026-11-03 14:57 → V9bO9EUN0JA",
     "bpeRL5XtYLI": "aplicado_nuevo_2026-11-03 17:53 → 7ay4KLS8h8I",
-    "-WBW0X9KpLM": "aplicado_nuevo_2026-11-03 21:47 → JOA1Bm6KYDs"
+    "-WBW0X9KpLM": "aplicado_nuevo_2026-11-03 21:47 → JOA1Bm6KYDs",
+    "R76ivFX9nXo": "aplicado_nuevo_2026-11-03 23:48 → 7ay4KLS8h8I"
   },
   "fijos": {
     "Qe2Y9xDn9QQ": "gIjJ0YKYQ8M",
@@ -153,7 +156,7 @@
   ],
   "nota_excluidos": "Ave-dino / velociraptor: no mandar tráfico de pantallas finales (riesgo de parecer fusil). Preferir hongos y otros nuevos flojos.",
   "nota_studio": "Hongos destino confirmado en timeline. Origen hongos: Studio mostró título «¿Aves que temen a mujeres?» al pegar watch?v=O7TdKvuBjyg (mismo ID O7Td).",
-  "ultima_revision_cdmx": "2026-11-03T21:47-06:00 cambio: pantalla final nueva en -WBW0X9KpLM; sin comentarios nuevos (conteos iguales).",
+  "ultima_revision_cdmx": "2026-11-03T23:48-06:00 cambio: pantalla final nueva en R76ivFX9nXo; Studio sin comentarios sin responder.",
   "comentarios_ref_2026-11-01T21:52": {
     "oGFKLUgBdhA": 2,
     "xBqdEn1Dumg": 2,
