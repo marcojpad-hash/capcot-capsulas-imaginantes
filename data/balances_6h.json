@@ -1658,5 +1658,56 @@
    ]
   ],
   "nota_flujo": "Noche (12 h, 20:07→08:06): YT +113 vistas, +2 likes, 0 comentarios, subs 70 sin cambio. Arrastran los estrenos de ayer: Júpiter +24, SmartPE 0→17, Maillard +15; polvo de África (nuevo) 8 y el hipo (recién salido) en 0. 26 de 46 Shorts sin movimiento (incl. murciélagos casi frenado +6). TT perfil: seguidores 27→28, likes 672→685, videos 46→51."
+ },
+ {
+  "hora_cdmx": "2026-11-04T14:06-06:00",
+  "base_youtube": "2026-11-04T08:06",
+  "base_tiktok": "2026-11-04T08:06",
+  "youtube_totales": {
+   "view": 27114,
+   "like": 896,
+   "comment": 26
+  },
+  "suscriptores": 70,
+  "shorts_publicos": 47,
+  "delta_youtube": {
+   "view": 51,
+   "like": 1,
+   "comment": 0,
+   "suscriptores": 0
+  },
+  "tiktok_totales": null,
+  "seguidores_tiktok": 28,
+  "likes_perfil_tiktok": 686,
+  "videos_tiktok": 51,
+  "delta_tiktok": {
+   "seguidores": 0,
+   "likes_perfil": 1,
+   "videos": 0,
+   "nota": "Solo perfil público; sin vistas por video."
+  },
+  "ranking_crecimiento": [
+   [
+    "YT El polvo de África no viaja solo",
+    20
+   ],
+   [
+    "YT SmartPE: edición genética más precisa",
+    17
+   ],
+   [
+    "YT La frontera invisible de Júpiter",
+    8
+   ],
+   [
+    "YT La química del dorado",
+    5
+   ],
+   [
+    "YT El coral blanqueado",
+    1
+   ]
+  ],
+  "nota_flujo": "Flujo casi plano (08:06→14:06): YT +51 vistas, +1 like, subs 70 sin cambio; solo 5 de 47 Shorts se movieron, todo de estrenos recientes (polvo de África 8→28, SmartPE 17→34). Hipo Rg-iTgMExWw sigue en 0 y miel jpDyCX6zSgQ (nueva) en 0. TT perfil plano: 28 seguidores, likes 685→686, 51 videos."
  }
 ]
