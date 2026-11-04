@@ -249,6 +249,9 @@
   "narrative_qa": {
     "status": "FAIL",
     "score": 82,
+    "review_basis": "lectura_en_frio_solo_narracion",
+    "reviewer_role": "auditor_capcot_independiente",
+    "reviewed_at": "2026-11-04T15:58:40-06:00",
     "checks": {
       "pregunta_central_reconstruible": true,
       "apertura_in_medias_res": true,
@@ -259,11 +262,7 @@
       "payoff_cierre_apertura": true
     },
     "critical_flags": [
-      "ESCENA_6_REPITE_LIMITE_DE_CONTEO_Y_FUSION_DE_ESCENA_5"
-    ],
-    "review_notes": "El contraste inicial y la fusión ósea explican la pregunta, pero la escena 6 repite el matiz de conteo de la escena 5.",
-    "review_basis": "lectura_en_frio_solo_narracion",
-    "reviewer_role": "auditor_capcot_independiente",
-    "reviewed_at": "2026-11-03T15:07:21-06:00"
+      "ESCENA_6_REPITE_VARIACION_DE_CONTEO_Y_FUSION"
+    ]
   }
 }
