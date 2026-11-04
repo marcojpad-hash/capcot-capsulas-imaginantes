@@ -1,0 +1,420 @@
+{
+  "_schema": "CAPCOT_STORYBOARD_TEXT_V2",
+  "project_id": "2026-11-04_cielo-azul-atardecer-rojo",
+  "fecha_objetivo": "2026-11-04",
+  "slot_local": "19:00",
+  "slot_cesta": "intermedio_2",
+  "origen": "externa",
+  "serie": "Datos y ociosidades",
+  "title": "Por qué el cielo es azul y el atardecer rojo",
+  "titulo": "Dos colores, un mismo Sol",
+  "language": "es-MX",
+  "aspect_ratio": "9:16",
+  "target_duration_seconds": 86,
+  "estructura": "mito_vs_dato",
+  "audience": "Público general; divulgación de física cotidiana para jóvenes y adultos.",
+  "occasion": "Respaldo editorial del slot intermedio_2 del 4 de noviembre; fenómeno visible al amanecer y al atardecer.",
+  "resumen": "Una misma luz solar produce un cielo azul y un horizonte rojo porque las moléculas del aire dispersan con más fuerza las longitudes de onda cortas; al bajar el Sol, el trayecto atmosférico se alarga y más azul sale de la línea directa de visión. Aerosoles y gotas modifican el resultado.",
+  "narrative_contract": {
+    "central_question": "¿Cómo puede la misma luz solar producir un cielo azul y un atardecer rojo al mismo tiempo?",
+    "promise": "El espectador comprenderá que el Sol no cambia de color: la atmósfera redistribuye la luz según la longitud de onda y el recorrido.",
+    "stakes": "La escena cotidiana deja de parecer contradictoria y el color del cielo se interpreta sin convertirlo en un pronóstico meteorológico.",
+    "scientific_turn": "La dispersión de Rayleigh favorece las ondas cortas; cuando el Sol está bajo, la luz atraviesa más atmósfera y más azul se desvía fuera de la línea directa.",
+    "evidence_limit": "La relación aproximada de cuatro a uno describe dispersión molecular azul/rojo, no brillo percibido ni una medición de un atardecer concreto. Polvo, humo, aerosoles, gotas y nubes añaden otros procesos.",
+    "payoff": "La apertura se resuelve con una sola causa: una fuente de luz, dos recorridos atmosféricos y dos colores percibidos."
+  },
+  "trend_source": {
+    "termino": "Respaldo programado: por qué el cielo es azul y el atardecer rojo",
+    "fecha_publicacion": "2025-08-31",
+    "url": "https://www.nesdis.noaa.gov/about/k-12-education/atmosphere/why-the-sky-blue"
+  },
+  "editorial_status": "PROPUESTA_PENDIENTE_DE_GROK",
+  "arco": {
+    "hook_medias_res": "El horizonte ya está rojo mientras el cielo sigue azul; la misma luz parece contradecirse.",
+    "desarrollo": "La atmósfera dispersa preferentemente las longitudes de onda cortas; al bajar el Sol, el trayecto más largo desvía más azul fuera de la línea directa.",
+    "cierre_historia": "Los tonos cálidos continúan hacia el observador; aerosoles, polvo y gotas modifican la mezcla.",
+    "reflexion_o_pregunta": "La próxima vez que el horizonte se encienda, pregúntate cuánto aire atravesó esa luz."
+  },
+  "estilo_id": "van_gogh",
+  "estilo_visual": "Noche estrellada (Van Gogh)",
+  "visual_identity": {
+    "style_id": "van_gogh",
+    "style_name": "Noche estrellada (Van Gogh)",
+    "prompt_base": "post-impressionist painting in the style of Van Gogh's Starry Night, swirling brushstrokes, deep blues and glowing yellows, vertical 9:16, no text",
+    "palette": "Azules profundos y amarillos luminosos; rojos y naranjas sólo en la franja del horizonte, dentro de la misma paleta postimpresionista.",
+    "lighting": "Contraluz solar cálido en el horizonte y azules profundos en el cenit; mantener la misma fuente de luz y continuidad cromática.",
+    "texture": "Pinceladas visibles en remolino, capas pictóricas postimpresionistas; sin acabado fotográfico ni grano de litografía.",
+    "composition": "Un disco solar como eje constante; horizonte en el tercio inferior; trazos curvos que muestran el recorrido de la luz; un foco visual dominante por plano.",
+    "negative_prompt": "No fotorealismo, no texto incrustado, no mezcla de estilos, no litografía, no mapas falsos, no iconografía de pronóstico meteorológico, no observatorios inventados.",
+    "reference_assets": [],
+    "seed": null,
+    "seed_policy": "Conservar el mismo patrón de remolino, paleta y dirección de pincelada en todas las escenas; Grok decide continuidad de semilla durante producción."
+  },
+  "typography_identity": {
+    "font_family": "DejaVu Sans",
+    "font_weight": "700 para gancho; 400 para subtítulos",
+    "title_style": "Gancho de cinco palabras; tipografía añadida en postproducción, no incrustada en la imagen.",
+    "subtitle_style": "Bloques de máximo tres palabras; zona segura inferior.",
+    "hierarchy": "Gancho > dato/etiqueta > subtítulos",
+    "animation": "Un movimiento por plano; tipografía en postproducción."
+  },
+  "voice": {
+    "engine": "edge-tts",
+    "voice_id": "es-MX-JorgeNeural",
+    "language": "es-MX",
+    "rate": "+7%",
+    "pitch": "-2Hz",
+    "pad_seconds": 0.3,
+    "modo_pausas": "continuo"
+  },
+  "sources": [
+    {
+      "id": "SRC-001",
+      "cita_corta": "NASA Space Place, Why Is the Sky Blue?",
+      "url": "https://spaceplace.nasa.gov/blue-sky/en/",
+      "doi": null,
+      "accessed": "2026-11-04",
+      "publication_date": null,
+      "article_last_updated": "2022-08-29",
+      "site_last_updated": "2026-07-31",
+      "supports": [
+        "La luz solar parece blanca porque contiene los colores visibles.",
+        "Las moléculas del aire dispersan la luz azul en muchas direcciones.",
+        "Al bajar el Sol, la luz atraviesa más atmósfera y más azul se dispersa fuera de la línea directa.",
+        "Polvo, contaminación y aerosoles pueden intensificar los tonos rojos y amarillos."
+      ],
+      "verification_status": "VERIFICADO_RESOLVEDOR"
+    },
+    {
+      "id": "SRC-002",
+      "cita_corta": "NOAA JetStream, The Color of Clouds",
+      "url": "https://www.noaa.gov/jetstream/clouds/color-of-clouds",
+      "doi": null,
+      "accessed": "2026-11-04",
+      "publication_date": null,
+      "supports": [
+        "La dispersión de Rayleigh ocurre cuando las moléculas atmosféricas son mucho menores que las longitudes de onda visibles.",
+        "La dispersión del azul es aproximadamente cuatro veces más intensa que la del rojo.",
+        "Las gotas de agua de las nubes producen dispersión de Mie y pueden modificar el color observado.",
+        "La trayectoria de la luz aumenta cuando el Sol está bajo."
+      ],
+      "verification_status": "VERIFICADO_RESOLVEDOR"
+    },
+    {
+      "id": "SRC-003",
+      "cita_corta": "NOAA NESDIS, Why Is the Sky Blue?",
+      "url": "https://www.nesdis.noaa.gov/about/k-12-education/atmosphere/why-the-sky-blue",
+      "doi": null,
+      "accessed": "2026-11-04",
+      "publication_date": "2025-08-31",
+      "supports": [
+        "La página usa aproximadamente 400 nm para azul/violeta y 750 nm para rojo como referencias ilustrativas.",
+        "Parte de la luz violeta se absorbe en la atmósfera alta y el ojo humano es menos sensible al violeta que al azul.",
+        "Al atardecer se dispersan más las longitudes de onda azules y violetas.",
+        "Polvo, contaminación y vapor de agua pueden modificar los tonos del horizonte."
+      ],
+      "verification_status": "VERIFICADO_RESOLVEDOR"
+    },
+    {
+      "id": "SRC-004",
+      "cita_corta": "OpenStreetMap, vista centrada en Ciudad de México",
+      "url": "https://www.openstreetmap.org/#map=12/19.4326/-99.1332",
+      "doi": null,
+      "accessed": "2026-11-04",
+      "publication_date": null,
+      "supports": [
+        "Vista cartográfica centrada en una coordenada urbana aproximada de Ciudad de México: 19.4326, -99.1332.",
+        "El pin sólo ubica una referencia geográfica para el público; no representa el origen físico del fenómeno ni un observatorio."
+      ],
+      "verification_status": "VERIFICADO_RESOLVEDOR"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_001",
+      "arc": "hook_medias_res",
+      "duration_seconds": 8,
+      "narration": "El horizonte ya se encendió en rojo, pero el Sol no cambió de color. Sobre tu cabeza, el cielo sigue azul. ¿Cómo caben ambos?",
+      "on_screen_text": "DOS COLORES",
+      "visual_description": "El horizonte ya aparece rojo-naranja mientras el cielo alto permanece azul; un único disco solar conserva su forma y luminosidad.",
+      "image_prompt": "post-impressionist painting in the style of Van Gogh's Starry Night, swirling brushstrokes, deep blues and glowing yellows, vertical 9:16, no text An open horizon under one unchanged pale sun; the lower horizon glows red-orange while the upper sky remains deep blue, a single continuous ray crosses both color fields, no labels, no text.",
+      "ambiente": "Viento de altura muy tenue, sin ambiente urbano identificable.",
+      "sfx": [
+        "pulso_luminoso_suave",
+        "whoosh_corto"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "van_gogh",
+      "dramatic_beat": "La doble coloración contradice la intuición de que cambió el Sol.",
+      "scene_function": "Abrir con la anomalía ya en curso, antes de definir el mecanismo.",
+      "causal_bridge_from_previous": "Apertura: el mismo Sol aparece sobre dos franjas de color; todavía no sabemos qué cambió.",
+      "question_state": "Se observa azul arriba y rojo abajo; la causa sigue abierta.",
+      "reason_to_continue": "Para resolverlo hay que seguir el trayecto de la luz hacia la atmósfera.",
+      "new_information": "Dos colores coexisten bajo una misma fuente de luz."
+    },
+    {
+      "id": "scene_002",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "La luz solar parece blanca porque reúne muchos colores. Al entrar en la atmósfera, encuentra moléculas diminutas de nitrógeno y oxígeno.",
+      "on_screen_text": "LUZ BLANCA",
+      "visual_description": "Sección atmosférica estilizada sobre el centro de Ciudad de México; moléculas diminutas de nitrógeno y oxígeno aparecen suspendidas en el aire. El pin sólo ubica una referencia urbana.",
+      "image_prompt": "post-impressionist painting in the style of Van Gogh's Starry Night, swirling brushstrokes, deep blues and glowing yellows, vertical 9:16, no text A stylized cross-section of Earth's atmosphere above central Mexico City, tiny nitrogen and oxygen molecules suspended in translucent blue air, a single white solar beam entering, no labels or text.",
+      "ambiente": "Aire abierto y viento suave, sin tráfico ni voces.",
+      "sfx": [
+        "whoosh_aire_suave",
+        "destello_breve"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-004"
+      ],
+      "style_id": "van_gogh",
+      "capa": {
+        "tipo": "mapa",
+        "region": [
+          -99.4,
+          19.2,
+          -98.9,
+          19.6
+        ],
+        "region_order": "bbox [oeste, sur, este, norte]",
+        "puntos": [
+          {
+            "nombre": "Centro de Ciudad de México",
+            "lat": 19.4326,
+            "lon": -99.1332,
+            "tipo": "referencia_urbana",
+            "nota": "Centro urbano aproximado; no señala el origen del fenómeno ni un sitio de medición."
+          }
+        ],
+        "titulo": "Ciudad de México: punto de observación de referencia",
+        "fuente": "OpenStreetMap; coordenada urbana aproximada, no una ubicación de observatorio."
+      },
+      "dramatic_beat": "La causa deja de estar en el Sol y pasa al medio que atraviesa la luz.",
+      "scene_function": "Identificar la atmósfera como escenario del mecanismo.",
+      "causal_bridge_from_previous": "La diferencia aparece al mirar a través del aire; por eso seguimos la luz hasta las moléculas.",
+      "question_state": "La atmósfera interviene, pero aún falta explicar por qué separa los colores.",
+      "reason_to_continue": "El tamaño de las moléculas y la longitud de onda decidirán qué color se desvía más.",
+      "new_information": "La luz blanca reúne muchos colores y atraviesa gases del aire."
+    },
+    {
+      "id": "scene_003",
+      "arc": "desarrollo",
+      "duration_seconds": 12,
+      "narration": "Esas moléculas dispersan más las ondas cortas. El azul se reparte por el cielo. Parte del violeta se absorbe arriba y nuestros ojos responden menos a él.",
+      "on_screen_text": "AZUL DISPERSO",
+      "visual_description": "Las moléculas redirigen ondas azules y violetas en muchas direcciones; el azul domina el campo visual y el violeta se atenúa en capas altas.",
+      "image_prompt": "post-impressionist painting in the style of Van Gogh's Starry Night, swirling brushstrokes, deep blues and glowing yellows, vertical 9:16, no text Tiny air molecules redirecting short blue and violet wave bands outward in many directions; blue strokes dominate the visible sky while violet fades higher above, no labels, no text.",
+      "ambiente": "Viento continuo muy tenue, con espacio abierto.",
+      "sfx": [
+        "destellos_dispersos_sutiles",
+        "aire_ascendente"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-003"
+      ],
+      "style_id": "van_gogh",
+      "dramatic_beat": "El azul deja de ser un color arbitrario: la atmósfera favorece las ondas cortas.",
+      "scene_function": "Explicar la dispersión molecular y por qué percibimos azul en lugar de violeta.",
+      "causal_bridge_from_previous": "Cuando el haz encuentra moléculas mucho menores que las longitudes de onda visibles, importa el tamaño de cada onda.",
+      "question_state": "Ya sabemos por qué el cielo se ve azul; el horizonte rojo sigue sin resolverse.",
+      "reason_to_continue": "El mismo mecanismo debe explicar qué ocurre cuando la luz recorre más atmósfera.",
+      "new_information": "El azul y el violeta se dispersan; la absorción parcial del violeta y la sensibilidad del ojo favorecen el azul."
+    },
+    {
+      "id": "scene_004",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "La NOAA resume la diferencia: en dispersión de Rayleigh, el azul se dispersa alrededor de cuatro veces más que el rojo. Es una relación aproximada, no el brillo del cielo.",
+      "on_screen_text": "≈4×",
+      "visual_description": "Comparación esquemática de dos haces que atraviesan moléculas de aire: el azul se ramifica más que el rojo. Las barras se añaden en postproducción; no son texto generado.",
+      "image_prompt": "post-impressionist painting in the style of Van Gogh's Starry Night, swirling brushstrokes, deep blues and glowing yellows, vertical 9:16, no text Two luminous wave ribbons passing through a field of tiny air molecules, the blue ribbon scattering into several stylized branches while the red ribbon continues more directly, balanced scientific composition, no labels, no numerals, no text.",
+      "ambiente": "Aire tenue y un pulso sonoro discreto.",
+      "sfx": [
+        "cuatro_destellos_suaves",
+        "tono_de_confirmacion"
+      ],
+      "source_ids": [
+        "SRC-002"
+      ],
+      "style_id": "van_gogh",
+      "capa": {
+        "tipo": "dato",
+        "valor": "≈4:1",
+        "etiqueta": "Dispersión relativa aproximada del azul frente al rojo por moléculas del aire (Rayleigh); no mide brillo percibido ni un atardecer específico.",
+        "fuente": "NOAA JetStream, The Color of Clouds.",
+        "grafico": {
+          "tipo": "barras",
+          "normalizacion": "Rojo = 1",
+          "datos": [
+            {
+              "categoria": "Azul",
+              "valor": 4
+            },
+            {
+              "categoria": "Rojo",
+              "valor": 1
+            }
+          ],
+          "nota": "Relación aproximada de dispersión molecular; no es una medición fotométrica del cielo."
+        }
+      },
+      "dramatic_beat": "La preferencia por el azul adquiere una magnitud aproximada.",
+      "scene_function": "Dar un ancla cuantitativa sin confundir dispersión con brillo.",
+      "causal_bridge_from_previous": "La escena anterior estableció qué color se dispersa más; NOAA resume la diferencia en una relación aproximada.",
+      "question_state": "La dispersión azul es mayor; falta ver qué cambia cuando el Sol baja.",
+      "reason_to_continue": "Alargar el recorrido de la luz permite comprobar cómo se transforma el haz directo.",
+      "new_information": "La dispersión azul es aproximadamente cuatro veces la roja en el modelo descrito por NOAA."
+    },
+    {
+      "id": "scene_005",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "Ahora baja el Sol. Su luz recorre una franja mayor de atmósfera; en ese trayecto, más azul se desvía fuera de tu línea directa de visión.",
+      "on_screen_text": "MÁS AIRE",
+      "visual_description": "El Sol se acerca al horizonte y su haz atraviesa una franja atmosférica larga; los trazos azules salen de la línea directa mientras otros continúan.",
+      "image_prompt": "post-impressionist painting in the style of Van Gogh's Starry Night, swirling brushstrokes, deep blues and glowing yellows, vertical 9:16, no text The sun near the horizon sends a long slanted beam through a thick atmospheric layer; blue strokes branch away from the direct path while red and orange continue toward an observer, no labels, no text.",
+      "ambiente": "Viento de tarde más perceptible, sin tormenta.",
+      "sfx": [
+        "whoosh_largo",
+        "desvio_de_luz_sutil"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "style_id": "van_gogh",
+      "dramatic_beat": "La misma dispersión actúa ahora durante un recorrido mucho más largo.",
+      "scene_function": "Mostrar por qué el atardecer no tiene el mismo color que el cielo alto.",
+      "causal_bridge_from_previous": "La preferencia por el azul se acumula a lo largo de una trayectoria atmosférica mayor.",
+      "question_state": "Más azul sale del haz directo; aún falta nombrar los colores que llegan al observador.",
+      "reason_to_continue": "Seguir la luz que sí alcanza los ojos revela el rojo del horizonte.",
+      "new_information": "Con el Sol bajo, la luz atraviesa más atmósfera y el azul se desvía fuera de la línea directa."
+    },
+    {
+      "id": "scene_006",
+      "arc": "cierre_historia",
+      "duration_seconds": 10,
+      "narration": "Por eso, hacia el horizonte, predominan los amarillos, naranjas y rojos que todavía llegan hasta ti. No se pintó el Sol: cambió el camino.",
+      "on_screen_text": "ROJO AL OJO",
+      "visual_description": "La línea de visión recibe los tonos cálidos que continúan por el haz; el disco solar no cambia de forma y el horizonte conserva el rojo-naranja.",
+      "image_prompt": "post-impressionist painting in the style of Van Gogh's Starry Night, swirling brushstrokes, deep blues and glowing yellows, vertical 9:16, no text The observer sees a warm red-orange horizon as longer wavelengths remain in the direct beam; the sun stays the same pale source behind the atmosphere, no labels, no text.",
+      "ambiente": "Viento de tarde suave, sin voces.",
+      "sfx": [
+        "resolucion_armonica",
+        "brillo_calido_suave"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-003"
+      ],
+      "style_id": "van_gogh",
+      "dramatic_beat": "La contradicción de apertura se resuelve con el mismo mecanismo.",
+      "scene_function": "Pagar la parte roja de la pregunta central.",
+      "causal_bridge_from_previous": "Como el azul se desvió fuera del haz directo, predominan las longitudes de onda más largas que continúan hacia el observador.",
+      "question_state": "Ambos colores ya tienen explicación; falta delimitar el modelo molecular en una atmósfera real.",
+      "reason_to_continue": "Polvo, humo y gotas pueden cambiar la mezcla y el aspecto final.",
+      "new_information": "Los tonos cálidos llegan al ojo porque el trayecto largo reduce el azul del haz directo."
+    },
+    {
+      "id": "scene_007",
+      "arc": "cierre_historia",
+      "duration_seconds": 10,
+      "narration": "El polvo, el humo y las gotas de agua pueden modificar esos tonos. Así que un atardecer rojo no es, por sí solo, un pronóstico del tiempo.",
+      "on_screen_text": "LÍMITE: AEROSOLES",
+      "visual_description": "Polvo fino, humo y gotas aparecen entre las capas de aire; las nubes reciben luz naranja sin convertir la escena en un desastre ni en un pronóstico.",
+      "image_prompt": "post-impressionist painting in the style of Van Gogh's Starry Night, swirling brushstrokes, deep blues and glowing yellows, vertical 9:16, no text Larger dust particles, faint smoke and water droplets among atmospheric layers alter the warm sunset colors; cloud edges glow orange while a calm blue remains above, no labels, no text.",
+      "ambiente": "Viento tenue y ambiente atmosférico amplio.",
+      "sfx": [
+        "particulas_suaves",
+        "transicion_de_nubes"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002",
+        "SRC-003"
+      ],
+      "style_id": "van_gogh",
+      "dramatic_beat": "El modelo simple encuentra su límite sin abrir otro tema.",
+      "scene_function": "Distinguir la dispersión molecular de los efectos de aerosoles y gotas.",
+      "causal_bridge_from_previous": "La explicación molecular resuelve el contraste principal, pero el aire real también contiene partículas mayores y gotas.",
+      "question_state": "El mecanismo está claro; la mezcla exacta depende de aerosoles, polvo, humo y nubes.",
+      "reason_to_continue": "Volver a la imagen inicial permite cerrar con una sola causa y su límite.",
+      "new_information": "Aerosoles y gotas añaden otros procesos de dispersión; el color por sí solo no pronostica el tiempo."
+    },
+    {
+      "id": "scene_008",
+      "arc": "reflexion_o_pregunta",
+      "duration_seconds": 10,
+      "narration": "El misterio inicial se resuelve: una misma luz, dos recorridos distintos por el aire. La próxima vez que el horizonte se encienda, pregúntate cuánto aire atravesó. Esto fue Datos y ociosidades.",
+      "on_screen_text": "MISMA LUZ",
+      "visual_description": "Regresa la composición inicial: cielo azul, horizonte rojo-naranja y un único Sol; dos trayectorias de distinta longitud quedan trazadas en el aire.",
+      "image_prompt": "post-impressionist painting in the style of Van Gogh's Starry Night, swirling brushstrokes, deep blues and glowing yellows, vertical 9:16, no text Return to the opening composition: one unchanged sun, deep blue overhead sky and red-orange horizon, a single beam traced along two different atmospheric path lengths, balanced final frame, no labels, no text.",
+      "ambiente": "Viento suave que se desvanece al final.",
+      "sfx": [
+        "cierre_armonico_breve"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "style_id": "van_gogh",
+      "dramatic_beat": "La imagen inicial deja de ser una contradicción y se convierte en la prueba visual del mecanismo.",
+      "scene_function": "Resolver la pregunta central y dejar una observación concreta.",
+      "causal_bridge_from_previous": "Los aerosoles modifican la intensidad de los tonos, pero la apertura se explica por el recorrido de la luz.",
+      "question_state": "La pregunta central queda respondida; permanece una pregunta de observación sobre la longitud del trayecto.",
+      "reason_to_continue": "La cortinilla identifica las fuentes que sostienen el mecanismo.",
+      "new_information": "Una misma fuente produce colores distintos porque la luz atraviesa recorridos atmosféricos diferentes."
+    }
+  ],
+  "cortinilla_fuentes": {
+    "duration_seconds": 6,
+    "titulo": "Fuentes",
+    "aviso": "Cortinilla tipográfica de seis segundos con las referencias consultadas; no se ha generado ningún medio.",
+    "firma": "Datos y ociosidades",
+    "source_ids": [
+      "SRC-001",
+      "SRC-002",
+      "SRC-003",
+      "SRC-004"
+    ]
+  },
+  "audio": {
+    "music_asset": null,
+    "cama_musical": "arpegio",
+    "music_plan": "Cama instrumental discreta de arpegio; selección o generación audiovisual corresponde a Grok en producción. No se adjunta audio.",
+    "music_license": null
+  },
+  "export": {
+    "resolution": "1080x1920",
+    "fps": 30,
+    "render_status": "NOT_GENERATED"
+  },
+  "publicacion": {
+    "status": "PENDIENTE_DECISION_GROK",
+    "platforms": [
+      "YouTube Shorts",
+      "TikTok",
+      "Facebook Reels"
+    ],
+    "note": "No publicar ni programar desde preproducción textual; decisión editorial final de Grok."
+  },
+  "estado": "PENDIENTE_QA_NARRATIVO_INDEPENDIENTE",
+  "production_mode": "storyboard_only",
+  "validation_notes": [
+    "Conteo estructural: 8 escenas, 210 palabras narradas, 80 segundos de escenas + 6 segundos de cortinilla = 86 segundos.",
+    "No se incluye narrative_qa: la lectura en frío y los siete checks corresponden al auditor independiente."
+  ],
+  "linea_tematica_provisional": "Dato científico — física de la atmósfera y percepción.",
+  "approved_assets": [],
+  "risk_notes": [
+    "La relación ≈4:1 es dispersión relativa aproximada de Rayleigh, no brillo percibido ni medición de un atardecer concreto.",
+    "El pin de Ciudad de México es una referencia urbana aproximada; no representa el origen del fenómeno ni un observatorio.",
+    "Polvo, humo, aerosoles, gotas y nubes pueden modificar los tonos; no presentar el rojo del atardecer como pronóstico meteorológico.",
+    "No marcar como contenido hecho para niños; el público previsto es general."
+  ]
+}
