@@ -3,6 +3,10 @@
 > Mj: el bot Imaginantes ya va en ~66% de créditos en 1.5 días. **Tú usas tus propios créditos** (GenerateImage de la app). Lo que hace el bot: docs y commits.
 > Estados: `data/horario_semana_2026-11-01_07.json`. Handoff base: `salidas/_ops/2026-10-28_HANDOFF_TOTAL_grok_principal.md`, `ajustes_entre_modelos/HANDOFF_GROK_PRODUCCION.md`, `docs/FLUJO_EXTERNO.md`, `docs/RECETA_CAPSULA.md`.
 
+## 0. HUECOS HOY 4-nov (madrugada 02:30 CDMX)
+1. **19:00** `2026-11-04_inter-cielo-azul-atardecer` (respaldo de Machu Picchu, sin OK de Mj): montar en cuanto ChatGPT entregue el guion; mp4 listo antes de 16:00 CDMX.
+2. **23:30** `2026-11-04_dato-TBD-news`: montar el mismo día cuando ChatGPT entregue el dato; mp4 listo antes de 21:30 CDMX.
+
 ## 1. Tu rol (cuando ChatGPT entregue un paquete en `cola/entrada/<pid>/`)
 1. **QA de arco y cierre**: paradoja al inicio, cableado entre escenas, antítesis y un cierre con eco (LINEA_EDITORIAL §8–9). Cuenta 205–235 palabras y revisa las fuentes. Si falla, lo devuelves con una nota en `BITACORA_COORDINACION.md`; no lo reescribas tú a fondo.
 2. **Frames** (8) con tu GenerateImage, en el estilo del prompt_visual.
