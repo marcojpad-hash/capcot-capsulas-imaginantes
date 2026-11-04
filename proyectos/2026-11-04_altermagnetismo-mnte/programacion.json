@@ -1,0 +1,13 @@
+{
+  "plataformas": ["yt", "tt"],
+  "publish_at": "2026-11-04T20:15:00Z",
+  "ventana": "mediodia",
+  "hora_cdmx": "14:15",
+  "caption_tt": "¿Y si los imanes no fueran solo de dos tipos? Científicos confirman el altermagnetismo en MnTe. #ciencia #fisica #magnetismo #datosyociosidades",
+  "titulo_yt": "El tercer tipo de magnetismo existe #Shorts",
+  "descripcion_yt": "Un equipo de SLAC confirma experimentalmente el altermagnetismo, un tercer tipo de orden magnético, en tellururo de manganeso (MnTe).\n\nEstudio: Jost et al., Science 29 oct 2026. DOI: 10.1126/science.adv3196\n\nTikTok: https://www.tiktok.com/@datosyociosidades",
+  "tags": ["ciencia", "fisica", "magnetismo", "altermagnetismo", "datosyociosidades"],
+  "privacidad": "private",
+  "estado": "programado_paquete",
+  "nota": "Falta montar mp4. YT programar a publish_at private→public. TT: Mj sube desde teléfono en slot."
+}
