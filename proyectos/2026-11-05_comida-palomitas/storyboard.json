@@ -250,21 +250,21 @@
   "narrative_qa": {
     "status": "FAIL",
     "score": 82,
+    "review_basis": "lectura_en_frio_solo_narracion",
+    "reviewer_role": "auditor_capcot_independiente",
+    "reviewed_at": "2026-11-04T15:58:40-06:00",
     "checks": {
       "pregunta_central_reconstruible": true,
       "apertura_in_medias_res": false,
-      "progresion_por_escena": true,
+      "progresion_por_escena": false,
       "transiciones_causales": true,
       "giro_cientifico_explicado": true,
       "limite_evidencia_explicito": true,
       "payoff_cierre_apertura": true
     },
     "critical_flags": [
-      "APERTURA_DEFINICIONAL_NO_IN_MEDIAS_RES"
-    ],
-    "review_notes": "La narración empieza describiendo el grano y su contenido; el proceso aparece después, no abre con la anomalía en curso.",
-    "review_basis": "lectura_en_frio_solo_narracion",
-    "reviewer_role": "auditor_capcot_independiente",
-    "reviewed_at": "2026-11-03T15:07:21-06:00"
+      "APERTURA_DEFINICIONAL_NO_IN_MEDIAS_RES",
+      "ESCENA_6_REITERA_CAUSAS_DE_GRANOS_NO_REVENTADOS_SIN_INFORMACION_NUEVA"
+    ]
   }
 }
