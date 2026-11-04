@@ -17,11 +17,11 @@
   "resumen": "Una misma luz solar produce un cielo azul y un horizonte rojo porque las moléculas del aire dispersan con más fuerza las longitudes de onda cortas; al bajar el Sol, el trayecto atmosférico se alarga y más azul sale de la línea directa de visión. Aerosoles y gotas modifican el resultado.",
   "narrative_contract": {
     "central_question": "¿Cómo puede la misma luz solar producir un cielo azul y un atardecer rojo al mismo tiempo?",
-    "promise": "El espectador comprenderá que el Sol no cambia de color: la atmósfera redistribuye la luz según la longitud de onda y el recorrido.",
+    "promise": "El espectador comprenderá que la fuente solar es la misma, pero la atmósfera redistribuye la luz según la longitud de onda y el recorrido.",
     "stakes": "La escena cotidiana deja de parecer contradictoria y el color del cielo se interpreta sin convertirlo en un pronóstico meteorológico.",
-    "scientific_turn": "La dispersión de Rayleigh favorece las ondas cortas; cuando el Sol está bajo, la luz atraviesa más atmósfera y más azul se desvía fuera de la línea directa.",
+    "scientific_turn": "La dispersión de Rayleigh favorece las ondas cortas; cuando el Sol está bajo, la luz atraviesa más atmósfera y más azul se desvía fuera de la línea directa, haciendo más cálido el haz que llega al ojo.",
     "evidence_limit": "La relación aproximada de cuatro a uno describe dispersión molecular azul/rojo, no brillo percibido ni una medición de un atardecer concreto. Polvo, humo, aerosoles, gotas y nubes añaden otros procesos.",
-    "payoff": "La apertura se resuelve con una sola causa: una fuente de luz, dos recorridos atmosféricos y dos colores percibidos."
+    "payoff": "La apertura se resuelve con una sola fuente, dos recorridos atmosféricos y dos mezclas de luz percibidas."
   },
   "trend_source": {
     "termino": "Respaldo programado: por qué el cielo es azul y el atardecer rojo",
@@ -30,9 +30,9 @@
   },
   "editorial_status": "PROPUESTA_PENDIENTE_DE_GROK",
   "arco": {
-    "hook_medias_res": "El horizonte ya está rojo mientras el cielo sigue azul; la misma luz parece contradecirse.",
+    "hook_medias_res": "El horizonte ya está rojo mientras el cielo alto sigue azul; una misma fuente ilumina ambos.",
     "desarrollo": "La atmósfera dispersa preferentemente las longitudes de onda cortas; al bajar el Sol, el trayecto más largo desvía más azul fuera de la línea directa.",
-    "cierre_historia": "Los tonos cálidos continúan hacia el observador; aerosoles, polvo y gotas modifican la mezcla.",
+    "cierre_historia": "Los tonos cálidos continúan hacia el observador; el disco solar también puede verse cálido por el recorrido atmosférico, mientras aerosoles, polvo y gotas modifican la mezcla.",
     "reflexion_o_pregunta": "La próxima vez que el horizonte se encienda, pregúntate cuánto aire atravesó esa luz."
   },
   "estilo_id": "van_gogh",
@@ -134,10 +134,10 @@
       "id": "scene_001",
       "arc": "hook_medias_res",
       "duration_seconds": 8,
-      "narration": "El horizonte ya se encendió en rojo, pero el Sol no cambió de color. Sobre tu cabeza, el cielo sigue azul. ¿Cómo caben ambos?",
+      "narration": "El horizonte ya se encendió en rojo, pero el cielo sobre tu cabeza sigue azul. El mismo Sol ilumina ambos. ¿Cómo caben?",
       "on_screen_text": "DOS COLORES",
-      "visual_description": "El horizonte ya aparece rojo-naranja mientras el cielo alto permanece azul; un único disco solar conserva su forma y luminosidad.",
-      "image_prompt": "post-impressionist painting in the style of Van Gogh's Starry Night, swirling brushstrokes, deep blues and glowing yellows, vertical 9:16, no text An open horizon under one unchanged pale sun; the lower horizon glows red-orange while the upper sky remains deep blue, a single continuous ray crosses both color fields, no labels, no text.",
+      "visual_description": "El horizonte ya aparece rojo-naranja mientras el cielo alto permanece azul; el disco solar cercano al horizonte puede verse cálido por el recorrido atmosférico.",
+      "image_prompt": "post-impressionist painting in the style of Van Gogh's Starry Night, swirling brushstrokes, deep blues and glowing yellows, vertical 9:16, no text An open horizon under one sun; the lower horizon glows red-orange while the upper sky remains deep blue; the solar disk appears warm through the atmospheric path, a single continuous ray crosses both color fields, no labels, no text.",
       "ambiente": "Viento de altura muy tenue, sin ambiente urbano identificable.",
       "sfx": [
         "pulso_luminoso_suave",
@@ -147,7 +147,7 @@
         "SRC-001"
       ],
       "style_id": "van_gogh",
-      "dramatic_beat": "La doble coloración contradice la intuición de que cambió el Sol.",
+      "dramatic_beat": "La doble coloración parece contradictoria aunque la fuente que ilumina ambas franjas es la misma.",
       "scene_function": "Abrir con la anomalía ya en curso, antes de definir el mecanismo.",
       "causal_bridge_from_previous": "Apertura: el mismo Sol aparece sobre dos franjas de color; todavía no sabemos qué cambió.",
       "question_state": "Se observa azul arriba y rojo abajo; la causa sigue abierta.",
@@ -299,10 +299,10 @@
       "id": "scene_006",
       "arc": "cierre_historia",
       "duration_seconds": 10,
-      "narration": "Por eso, hacia el horizonte, predominan los amarillos, naranjas y rojos que todavía llegan hasta ti. No se pintó el Sol: cambió el camino.",
+      "narration": "Por eso, hacia el horizonte, predominan los amarillos, naranjas y rojos que todavía llegan hasta ti. La fuente es la misma: cambió la mezcla que alcanza tus ojos.",
       "on_screen_text": "ROJO AL OJO",
-      "visual_description": "La línea de visión recibe los tonos cálidos que continúan por el haz; el disco solar no cambia de forma y el horizonte conserva el rojo-naranja.",
-      "image_prompt": "post-impressionist painting in the style of Van Gogh's Starry Night, swirling brushstrokes, deep blues and glowing yellows, vertical 9:16, no text The observer sees a warm red-orange horizon as longer wavelengths remain in the direct beam; the sun stays the same pale source behind the atmosphere, no labels, no text.",
+      "visual_description": "La línea de visión recibe los tonos cálidos que continúan por el haz; el disco solar también puede verse anaranjado por el mismo recorrido atmosférico.",
+      "image_prompt": "post-impressionist painting in the style of Van Gogh's Starry Night, swirling brushstrokes, deep blues and glowing yellows, vertical 9:16, no text The observer sees a warm red-orange horizon and a warm-toned solar disk filtered by the atmosphere; longer wavelengths remain in the direct beam while blue light scatters away, no labels, no text.",
       "ambiente": "Viento de tarde suave, sin voces.",
       "sfx": [
         "resolucion_armonica",
@@ -350,10 +350,10 @@
       "id": "scene_008",
       "arc": "reflexion_o_pregunta",
       "duration_seconds": 10,
-      "narration": "El misterio inicial se resuelve: una misma luz, dos recorridos distintos por el aire. La próxima vez que el horizonte se encienda, pregúntate cuánto aire atravesó. Esto fue Datos y ociosidades.",
+      "narration": "El misterio inicial se resuelve: una misma fuente, dos recorridos distintos por el aire. La próxima vez que el horizonte se encienda, pregúntate cuánto aire atravesó. Esto fue Datos y ociosidades.",
       "on_screen_text": "MISMA LUZ",
-      "visual_description": "Regresa la composición inicial: cielo azul, horizonte rojo-naranja y un único Sol; dos trayectorias de distinta longitud quedan trazadas en el aire.",
-      "image_prompt": "post-impressionist painting in the style of Van Gogh's Starry Night, swirling brushstrokes, deep blues and glowing yellows, vertical 9:16, no text Return to the opening composition: one unchanged sun, deep blue overhead sky and red-orange horizon, a single beam traced along two different atmospheric path lengths, balanced final frame, no labels, no text.",
+      "visual_description": "Regresa la composición inicial: cielo azul, horizonte rojo-naranja y un disco solar cálido por el trayecto atmosférico; dos recorridos de distinta longitud quedan trazados en el aire.",
+      "image_prompt": "post-impressionist painting in the style of Van Gogh's Starry Night, swirling brushstrokes, deep blues and glowing yellows, vertical 9:16, no text Return to the opening composition: one sun with a warm disk near the horizon, deep blue overhead sky and red-orange horizon, one beam traced along two different atmospheric path lengths, balanced final frame, no labels, no text.",
       "ambiente": "Viento suave que se desvanece al final.",
       "sfx": [
         "cierre_armonico_breve"
@@ -406,7 +406,7 @@
   "estado": "PENDIENTE_QA_NARRATIVO_INDEPENDIENTE",
   "production_mode": "storyboard_only",
   "validation_notes": [
-    "Conteo estructural: 8 escenas, 210 palabras narradas, 80 segundos de escenas + 6 segundos de cortinilla = 86 segundos.",
+    "Conteo estructural: 8 escenas, 212 palabras narradas, 80 segundos de escenas + 6 segundos de cortinilla = 86 segundos.",
     "No se incluye narrative_qa: la lectura en frío y los siete checks corresponden al auditor independiente."
   ],
   "linea_tematica_provisional": "Dato científico — física de la atmósfera y percepción.",
@@ -415,6 +415,7 @@
     "La relación ≈4:1 es dispersión relativa aproximada de Rayleigh, no brillo percibido ni medición de un atardecer concreto.",
     "El pin de Ciudad de México es una referencia urbana aproximada; no representa el origen del fenómeno ni un observatorio.",
     "Polvo, humo, aerosoles, gotas y nubes pueden modificar los tonos; no presentar el rojo del atardecer como pronóstico meteorológico.",
-    "No marcar como contenido hecho para niños; el público previsto es general."
+    "No marcar como contenido hecho para niños; el público previsto es general.",
+    "Distinguir el espectro emitido por el Sol del color aparente del disco solar visto a través de la atmósfera."
   ]
 }

@@ -157,7 +157,7 @@ Este bloque se conserva como evidencia histórica del brief anterior; no se reco
 - Ningún RSS XML se parseó. Google Trends se consultó sólo mediante la página oficial Trending Now, primera página de 25 resultados.
 - Los cinco DOI permanecen pendientes de Crossref/resolvedor; no se presentan como validados.
 - El storyboard de respaldo queda únicamente en proyectos/2026-11-04_cielo-azul-atardecer-rojo/storyboard.json. No se copia a cola/entrada/, no se marca preparado y no contiene narrative_qa.
-- El borrador tiene 8 escenas, 210 palabras narradas y 86 segundos totales (80 de escenas + 6 de cortinilla). Incluye mapa con coordenadas de referencia, dato/gráfico, fuentes por escena, voz y prompts de un único estilo literal del catálogo.
+- El borrador tiene 8 escenas, 212 palabras narradas y 86 segundos totales (80 de escenas + 6 de cortinilla). Incluye mapa con coordenadas de referencia, dato/gráfico, fuentes por escena, voz y prompts de un único estilo literal del catálogo.
 - El QA narrativo en frío queda pendiente del auditor independiente. No se declara PASS ni aceptación de Grok.
 - No se generaron imágenes, frames, audio, voz, video ni renders. approved_assets permanece vacío; export.render_status es NOT_GENERATED; publicacion.status es PENDIENTE_DECISION_GROK.
 - No se modificaron data/*.json, scripts, el informe técnico, main, motores ni otros proyectos.
