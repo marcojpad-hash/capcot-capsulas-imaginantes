@@ -8,3 +8,8 @@
 - TikTok y Facebook: programación vía UI (ver publicacion.json y el commit siguiente).
 - Pendiente: verificar en Studio que «Uso de IA» quede en Sí y que el post de TT quede Everyone.
 - Hashtags: #ciencia #curiosidades #sabiasque #naturaleza #shorts (TT/FB: #datosinteresantes en lugar de #shorts).
+
+## Verificación 3-nov ~22:16 CDMX
+- TikTok: programado para el 4-nov a las 00:30 NY (23:30 CDMX), Everyone, etiqueta IA ON en el formulario, sin revisión ni Only me.
+- Facebook Reel: programado para el 4-nov a las 0:30 NY, Público, en proceso.
+- YouTube R76ivFX9nXo: «Uso de IA» cambiado a Sí y guardado en Studio.
