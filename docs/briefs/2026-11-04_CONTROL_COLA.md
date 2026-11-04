@@ -63,6 +63,8 @@ proyectos/2026-11-04_cielo-azul-atardecer-rojo/storyboard.json:
 
 El horario no asigna ese ID al slot: conserva 2026-10-29_machu-picchu-fallas-pisa con estado pendiente_ok_mj y menciona el cielo rojo/azul como respaldo si no hay aprobación. No se revisó el storyboard de Machu Picchu, expresamente excluido. El respaldo del cielo permanece en proyectos/ y **no se promueve** mientras no exista selección editorial verificable.
 
+El storyboard del cielo conserva el campo estado=PENDIENTE_QA_NARRATIVO_INDEPENDIENTE pese al PASS 94 ya registrado; se deja intacto para no convertir un respaldo en seleccionado. La autoridad del QA es narrative_qa; la selección sigue pendiente. El árbol también contiene cola/bloqueados/2026-11-04_machu-picchu-fallas-pisa.json, mientras el horario referencia 2026-10-29_machu-picchu-fallas-pisa. No se equiparan esos IDs y no se abrió el archivo bloqueado por la exclusión expresa.
+
 ## 3. QA narrativo en frío del lote 5–7
 
 Se hizo una nueva lectura independiente de la narración concatenada, sin usar título, resumen, arco, notas ni narrative_contract para juzgar la historia. Los 13 JSON auditados registran:
