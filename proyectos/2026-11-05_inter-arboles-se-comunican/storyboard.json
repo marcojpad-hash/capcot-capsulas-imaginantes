@@ -272,6 +272,9 @@
   "narrative_qa": {
     "status": "FAIL",
     "score": 78,
+    "review_basis": "lectura_en_frio_solo_narracion",
+    "reviewer_role": "auditor_capcot_independiente",
+    "reviewed_at": "2026-11-04T15:58:40-06:00",
     "checks": {
       "pregunta_central_reconstruible": true,
       "apertura_in_medias_res": false,
@@ -283,10 +286,6 @@
     },
     "critical_flags": [
       "APERTURA_GENERICA_NO_IN_MEDIAS_RES"
-    ],
-    "review_notes": "La progresión distingue conexión micorrícica de afirmaciones populares, pero la apertura presenta una posibilidad general sin acción ni anomalía concreta.",
-    "review_basis": "lectura_en_frio_solo_narracion",
-    "reviewer_role": "auditor_capcot_independiente",
-    "reviewed_at": "2026-11-03T15:07:21-06:00"
+    ]
   }
 }
