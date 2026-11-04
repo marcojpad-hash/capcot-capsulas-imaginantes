@@ -141,7 +141,7 @@ No se contaron como candidatos de los últimos siete días aunque circularon en 
 ## 7. Seguimiento técnico Meta / Google Trends
 
 - **Google Trends API alpha:** la documentación oficial sigue describiendo acceso alfa limitado a solicitantes, ventana móvil de cinco años, agregaciones diarias/semanales/mensuales/anuales y comparaciones por países/subregiones. No se encontró una nueva versión pública ni un cambio que justifique modificar docs/INVESTIGACION_API_META_Y_GOOGLE_TRENDS.md.
-- **Meta Graph API / Instagram Insights / Facebook Pages Insights:** las rutas oficiales consultadas para Graph API changelog v25/v26, Instagram Platform changelog, referencia de Instagram Insights y Page Insights no pudieron leerse en esta corrida: respuestas «URL not accessible via this tool», HTTP 429 o redirección HTTP 500. Sin evidencia oficial nueva verificable, el documento técnico se deja intacto.
+- **Meta Graph API / Instagram Insights / Facebook Pages Insights:** las rutas oficiales consultadas tuvieron estos resultados: Graph API changelog v25/v26, referencia de Instagram Insights y Page Insights devolvieron «URL not accessible via this tool»; Instagram Platform changelog devolvió HTTP 429 Too Many Requests. Sin evidencia oficial nueva verificable, el documento técnico se deja intacto.
 
 ## 8. Contexto de radar de YouTube heredado (corte 3-nov, ~22:00 CDMX)
 
