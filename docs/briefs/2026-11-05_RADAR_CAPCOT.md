@@ -54,3 +54,33 @@ La frase anterior «cuatro paquetes textuales en cola» no acredita una entrega 
 ### Aclaración de jerarquía documental — 2-nov-2026
 
 Corrección a la nota anterior: la receta semanal del 31-oct es un documento de coordinación legado y contradice el contrato operativo unificado vigente desde 1-nov. La ruta activa es `proyectos/<project_id>/storyboard.json` → QA narrativo independiente PASS → `cola/entrada/<project_id>.json` (JSON de primer nivel). El workflow actual coincide con este contrato; no se debe modificar para aceptar carpetas. Los archivos observados en `cola/bloqueados/` son copias heredadas y no son borradores canónicos listos para promoción. Ver `docs/briefs/2026-11-02_CONTROL_COLA.md`.
+
+
+## Control de ejecución — 5-nov-2026, 07:59 CDMX
+
+**Resultado: NO_DUPLICAR.** No se creó un segundo storyboard ni se reescribió ninguno de los proyectos canónicos. El radar de esta fecha ya existía antes de esta ejecución; por tanto, tampoco se creó otro brief.
+
+### Inventario verificado del día
+
+| Proyecto canónico | Fecha objetivo | Slot local | Tratamiento |
+|---|---|---:|---|
+| `2026-11-05_kids-dia-en-venus` | 2026-11-05 | 07:00 | Preexistente; conservar |
+| `2026-11-05_comida-palomitas` | 2026-11-05 | 13:30 | Preexistente; conservar |
+| `2026-11-05_inter-arboles-se-comunican` | 2026-11-05 | 17:00 | Bloqueado por desajuste de contenido según la instrucción vigente; no equivale al tema asignado de red micorrícica/wood-wide web y Karst et al. 2023. No sustituir ni reescribir |
+| `2026-11-05_inter-rayo-globular` | 2026-11-05 | 17:45 | Preexistente; conservar |
+
+La fuente de horario `data/horario_semana_2026-11-01_07.json` confirma que el segundo slot intermedio se reubicó de 19:00 a **17:45** el 2-nov. Por tanto, la asignación de 19:00 de la sección anterior de este radar queda corregida por esta nota; 19:00 no es un slot libre del lote. El slot 23:30 está excluido de esta ejecución. No queda un slot libre y autorizado para desarrollar un quinto borrador.
+
+Inventario de rutas: los cuatro proyectos están en `proyectos/`; no hay proyecto del 5-nov en `salidas/` ni en `cola/entrada/`. Las variantes observadas en `cola/bloqueados/` no se consideran proyectos alternativos ni se promueven. No se modificó ningún storyboard ni archivo `data/*.json`.
+
+### Alcance de investigación de esta ejecución
+
+El radar preexistente conserva corte de investigación y Google Trends del **1-nov-2026**; no se presenta como una revisión fresca del 5-nov. La guardia anti-duplicación detuvo la creación de paquete porque el radar ya existe y los cuatro slots ordinarios están asignados. No se consultaron ni se parsearon RSS científicos o Google Trends RSS en esta ejecución; no se afirma una lectura XML ni una actualización de candidatos.
+
+### Seguimiento técnico incremental
+
+Consulta de documentación oficial realizada el 5-nov-2026:
+- Google Trends API: la documentación oficial sigue presentando acceso alfa limitado, ventana móvil de cinco años, agregaciones diaria/semanal/mensual/anual y desgloses geográficos. Los valores son interés de búsqueda escalado, no volúmenes absolutos. No se identificó un cambio respecto del informe técnico.
+- Meta: el changelog de Graph API v26 y las referencias de Instagram Insights y Facebook Page Insights no pudieron recuperarse desde el lector disponible; el changelog de Instagram Platform respondió HTTP 429. No se usa documentación secundaria como sustituto de confirmación oficial ni se atribuye un cambio nuevo a Meta.
+
+**Decisión técnica:** no actualizar `docs/INVESTIGACION_API_META_Y_GOOGLE_TRENDS.md`; no hay un cambio nuevo relevante sustentado por documentación oficial accesible en esta ejecución.
