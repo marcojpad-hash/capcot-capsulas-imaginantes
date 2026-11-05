@@ -66,7 +66,7 @@ Corrección a la nota anterior: la receta semanal del 31-oct es un documento de 
 |---|---|---:|---|
 | `2026-11-05_kids-dia-en-venus` | 2026-11-05 | 07:00 | Preexistente; conservar |
 | `2026-11-05_comida-palomitas` | 2026-11-05 | 13:30 | Preexistente; conservar |
-| `2026-11-05_inter-arboles-se-comunican` | 2026-11-05 | 17:00 | Bloqueado por desajuste de contenido según la instrucción vigente; no equivale al tema asignado de red micorrícica/wood-wide web y Karst et al. 2023. No sustituir ni reescribir |
+| `2026-11-05_inter-arboles-se-comunican` | 2026-11-05 | 17:00 | Tema correcto: red micorrícica común / wood-wide web, con Karst et al. 2023. QA narrativo independiente FAIL 78 por apertura genérica, no por desajuste temático; permanece fuera de cola hasta corregir narrativa y superar validación estructural. La variante de respiración nocturna es otro artefacto bloqueado y no es el storyboard canónico. |
 | `2026-11-05_inter-rayo-globular` | 2026-11-05 | 17:45 | Preexistente; conservar |
 
 La fuente de horario `data/horario_semana_2026-11-01_07.json` confirma que el segundo slot intermedio se reubicó de 19:00 a **17:45** el 2-nov. Por tanto, la asignación de 19:00 de la sección anterior de este radar queda corregida por esta nota; 19:00 no es un slot libre del lote. El slot 23:30 está excluido de esta ejecución. No queda un slot libre y autorizado para desarrollar un quinto borrador.
