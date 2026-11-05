@@ -1709,5 +1709,56 @@
    ]
   ],
   "nota_flujo": "Flujo casi plano (08:06→14:06): YT +51 vistas, +1 like, subs 70 sin cambio; solo 5 de 47 Shorts se movieron, todo de estrenos recientes (polvo de África 8→28, SmartPE 17→34). Hipo Rg-iTgMExWw sigue en 0 y miel jpDyCX6zSgQ (nueva) en 0. TT perfil plano: 28 seguidores, likes 685→686, 51 videos."
+ },
+ {
+  "hora_cdmx": "2026-11-04T20:08-06:00",
+  "base_youtube": "2026-11-04T14:06",
+  "base_tiktok": "2026-11-04T14:06",
+  "youtube_totales": {
+   "view": 27308,
+   "like": 901,
+   "comment": 26
+  },
+  "suscriptores": 72,
+  "shorts_publicos": 48,
+  "delta_youtube": {
+   "view": 194,
+   "like": 5,
+   "comment": 0,
+   "suscriptores": 2
+  },
+  "tiktok_totales": null,
+  "seguidores_tiktok": 28,
+  "likes_perfil_tiktok": 688,
+  "videos_tiktok": 51,
+  "delta_tiktok": {
+   "seguidores": 0,
+   "likes_perfil": 2,
+   "videos": 0,
+   "nota": "Solo perfil público; sin vistas por video."
+  },
+  "ranking_crecimiento": [
+   [
+    "YT El polvo de África no viaja solo",
+    117
+   ],
+   [
+    "YT ¿La miel nunca se echa a perder?",
+    16
+   ],
+   [
+    "YT El mar que fabrica luz (nuevo)",
+    16
+   ],
+   [
+    "YT La química del dorado",
+    15
+   ],
+   [
+    "YT SmartPE",
+    11
+   ]
+  ],
+  "nota_flujo": "Repunte de tarde (14:06→20:08): YT +194 vistas, +5 likes, subs 70→72. Lo empuja el polvo de África (28→145); miel despertó 0→16 y bioluminiscencia 4xylLT3vSIU estrenó con 16. Hipo Rg-iTgMExWw sigue en 0 todo el día. 14 de 48 Shorts se movieron; el catálogo viejo plano. TT perfil plano: 28 seguidores, likes 686→688, 51 videos."
  }
 ]
