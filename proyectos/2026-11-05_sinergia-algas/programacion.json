@@ -1,0 +1,14 @@
+{
+  "project_id": "2026-11-05_sinergia-algas",
+  "plataforma": ["youtube", "tiktok"],
+  "publish_at": "2026-11-05T19:45:00Z",
+  "hora_local_cdmx": "2026-11-05 13:45",
+  "ventana": "mediodia",
+  "privacidad": "private→public a publish_at",
+  "estado": "programado_paquete_listo_sin_montaje",
+  "titulo_yt": "Virus y bacterias colapsan el bloom de algas #Shorts",
+  "caption_tt": "En el mar, virus y bacterias se alían para apagar floraciones de algas más rápido. Nature acaba de mostrar cómo Alteromonas acelera el colapso y mueve el carbono oceánico. #ciencia #oceanos #algas #datosyociosidades",
+  "descripcion_yt": "Un estudio de Nature (4 nov 2026) muestra que bacterias como Alteromonas potencian la mortalidad viral en floraciones de Gephyrocapsa huxleyi y otras microalgas. Menos del 30 % de las células están infectadas, pero el bloom entero se desploma. Esto cambia el balance entre el reciclaje y la exportación de carbono. TikTok: https://www.tiktok.com/@datosyociosidades",
+  "tags": ["ciencia", "oceanos", "algas", "virus", "bacterias", "carbono", "Nature", "datosyociosidades"],
+  "nota_tiktok": "Mj sube desde teléfono en slot 13:45 CDMX. No publicar por API."
+}
