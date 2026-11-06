@@ -28,7 +28,7 @@
   "visual_identity": {
     "style_id": "papel_rasgado_capas",
     "style_name": "Diorama de papel rasgado en capas",
-    "prompt_base": "layered torn paper diorama, handcrafted cut paper illustration, visible paper fibers and torn edges, botanical underground cross section, tree roots and delicate fungal hyphae, scientifically grounded educational illustration, tactile paper depth, vertical 9:16 composition, no text",
+    "prompt_base": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text",
     "palette": "Tonos naturales de suelo, raíces, verdes vegetales y hongos; contraste suficiente para distinguir capas",
     "lighting": "Luz suave de estudio, volumen entre capas de papel",
     "texture": "Papel artesanal rasgado, fibras visibles, capas superpuestas",
@@ -92,7 +92,7 @@
       "narration": "Debajo de un bosque puede existir una conexión que no vemos: hongos asociados a las raíces de diferentes plantas.",
       "on_screen_text": "La red oculta",
       "visual_description": "Corte transversal de un bosque. Sobre el suelo aparecen varios árboles; debajo, sus raíces se extienden entre capas de tierra. La cámara desciende para revelar filamentos fúngicos finos.",
-      "image_prompt": "Layered torn paper diorama, vertical forest cross section, several trees above soil and visible roots below, delicate fungal filaments emerging through soil layers, handcrafted paper fibers, educational scientific illustration, no text, no anthropomorphic elements",
+      "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text, Layered torn paper diorama, vertical forest cross section, several trees above soil and visible roots below, delicate fungal filaments emerging through soil layers, handcrafted paper fibers, educational scientific illustration, no text, no anthropomorphic elements",
       "ambiente": "Ambiente discreto; voz al frente",
       "sfx": [],
       "source_ids": [
@@ -107,7 +107,7 @@
       "narration": "Algunos hongos forman asociaciones micorrícicas con las raíces. El hongo y la planta establecen una relación biológica que puede beneficiar a ambos.",
       "on_screen_text": "Una asociación real",
       "visual_description": "Acercamiento a una raíz con filamentos fúngicos finos alrededor y en contacto con ella. La escena muestra una asociación entre organismos, no una conexión eléctrica.",
-      "image_prompt": "Scientific close-up of a plant root associated with mycorrhizal fungal hyphae, layered torn paper cutaway, clearly distinguishable root tissue and delicate fungal filaments, accurate botanical educational illustration, vertical 9:16, no text",
+      "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text, Scientific close-up of a plant root associated with mycorrhizal fungal hyphae, layered torn paper cutaway, clearly distinguishable root tissue and delicate fungal filaments, accurate botanical educational illustration, vertical 9:16, no text",
       "ambiente": "Ambiente discreto; voz al frente",
       "sfx": [],
       "source_ids": [
@@ -122,7 +122,7 @@
       "narration": "Los filamentos de ciertos hongos pueden conectar raíces de varias plantas. A esa conexión se le llama red micorrícica común.",
       "on_screen_text": "Conexiones subterráneas",
       "visual_description": "Vista ampliada de varias raíces de plantas distintas conectadas por filamentos de un mismo sistema fúngico. Se muestra una conexión localizada, sin sugerir que todo el bosque esté conectado.",
-      "image_prompt": "Botanically grounded cross section showing fungal hyphae connecting roots of multiple plants, localized common mycorrhizal network, layered paper diorama, no glowing lines, no internet imagery, no text, vertical 9:16",
+      "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text, Botanically grounded cross section showing fungal hyphae connecting roots of multiple plants, localized common mycorrhizal network, layered paper diorama, no glowing lines, no internet imagery, no text, vertical 9:16",
       "ambiente": "Ambiente discreto; voz al frente",
       "sfx": [],
       "source_ids": [
@@ -137,7 +137,7 @@
       "narration": "La pregunta es qué puede circular por esas conexiones. Se investigan posibles movimientos de nutrientes y señales entre plantas.",
       "on_screen_text": "¿Qué puede circular?",
       "visual_description": "Los filamentos aparecen en primer plano. Pequeños indicadores gráficos neutros señalan que el movimiento de sustancias es una pregunta de investigación, no un flujo garantizado.",
-      "image_prompt": "Layered paper scientific illustration of mycorrhizal hyphae between plant roots, subtle neutral markers indicating a research question about possible nutrient movement, no arrows implying proven direction, no text, vertical 9:16",
+      "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text, Layered paper scientific illustration of mycorrhizal hyphae between plant roots, subtle neutral markers indicating a research question about possible nutrient movement, no arrows implying proven direction, no text, vertical 9:16",
       "ambiente": "Ambiente discreto; voz al frente",
       "sfx": [],
       "source_ids": [
@@ -152,7 +152,7 @@
       "narration": "Pero encontrar una conexión no demuestra por sí solo que exista una red extensa y funcional, ni que una planta reciba un beneficio.",
       "on_screen_text": "Conectar no es demostrar",
       "visual_description": "La escena separa visualmente tres niveles: raíces conectadas, posible movimiento de sustancias y un resultado medible en una planta. No se dibuja una causalidad automática entre ellos.",
-      "image_prompt": "Three-part layered paper scientific composition: connected roots, possible substance movement marked as uncertain, and a separate plant growth outcome requiring evidence; clear visual distinction between observation and causal proof, no text",
+      "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text, Three-part layered paper scientific composition: connected roots, possible substance movement marked as uncertain, and a separate plant growth outcome requiring evidence; clear visual distinction between observation and causal proof, no text",
       "ambiente": "Ambiente discreto; voz al frente",
       "sfx": [],
       "source_ids": [
@@ -167,7 +167,7 @@
       "narration": "En 2023, una revisión en Nature Ecology & Evolution examinó críticamente varias afirmaciones populares sobre estas redes.",
       "on_screen_text": "Una revisión crítica",
       "visual_description": "Representación editorial de un artículo científico abierto junto a una ilustración de raíces y hongos. Se destaca el año 2023 sin reproducir portadas ni logotipos.",
-      "image_prompt": "Layered torn paper diorama, scientific research paper represented as neutral printed pages beside a precise underground root and fungal network illustration, editorial academic atmosphere, year 2023 may be added in postproduction, no logos, no generated text",
+      "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text, Layered torn paper diorama, scientific research paper represented as neutral printed pages beside a precise underground root and fungal network illustration, editorial academic atmosphere, year 2023 may be added in postproduction, no logos, no generated text",
       "ambiente": "Ambiente discreto; voz al frente",
       "sfx": [],
       "source_ids": [
@@ -183,7 +183,7 @@
       "narration": "Sus autores advierten que no está demostrado que los árboles adultos alimenten preferentemente a sus crías o les envíen señales de defensa por esa red.",
       "on_screen_text": "El límite de la evidencia",
       "visual_description": "Un árbol adulto y una planta joven aparecen separados por capas de suelo. Entre sus raíces se observan filamentos, pero no flechas de alimento ni señales dirigidas. La composición evita atribuir intención a los árboles.",
-      "image_prompt": "Scientifically cautious layered paper forest cross section with mature tree and young plant, fungal hyphae visible in soil but no directional transfer arrows, no nurturing or human-like behavior, no anthropomorphism, vertical 9:16",
+      "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text, Scientifically cautious layered paper forest cross section with mature tree and young plant, fungal hyphae visible in soil but no directional transfer arrows, no nurturing or human-like behavior, no anthropomorphism, vertical 9:16",
       "ambiente": "Ambiente discreto; voz al frente",
       "sfx": [],
       "source_ids": [
@@ -198,7 +198,7 @@
       "narration": "Las conexiones subterráneas son reales; varias historias sobre ellas aún necesitan pruebas. ¿Qué más esconde el suelo de un bosque? Esto fue Datos y ociosidades.",
       "on_screen_text": "Lo que aún falta probar",
       "visual_description": "La cámara se aleja del corte transversal y muestra el bosque completo. Bajo el suelo quedan visibles las raíces y los filamentos, como una estructura compleja que todavía se investiga.",
-      "image_prompt": "Wide vertical layered torn paper diorama of a forest with a visible underground cross section, tree roots and delicate fungal hyphae, scientifically restrained, sense of discovery without fantasy, no text, no anthropomorphic trees",
+      "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text, Wide vertical layered torn paper diorama of a forest with a visible underground cross section, tree roots and delicate fungal hyphae, scientifically restrained, sense of discovery without fantasy, no text, no anthropomorphic trees",
       "ambiente": "Ambiente discreto; voz al frente",
       "sfx": [],
       "source_ids": [
@@ -274,7 +274,7 @@
     "score": 78,
     "review_basis": "lectura_en_frio_solo_narracion",
     "reviewer_role": "auditor_capcot_independiente",
-    "reviewed_at": "2026-11-05T15:18:57-06:00",
+    "reviewed_at": "2026-11-06T15:10:29-06:00",
     "checks": {
       "pregunta_central_reconstruible": true,
       "apertura_in_medias_res": false,
