@@ -14,7 +14,7 @@
   "trend_source": {
     "termino": "¿Sueñan los pulpos?",
     "fecha_publicacion": "",
-    "url": "https://doi.org/10.1016/j.isci.2021.102223"
+    "url": "https://www.nature.com/articles/s41586-023-06203-4"
   },
   "editorial_status": "BORRADOR_ESPERA_AUDITOR_PASS",
   "arco": {
@@ -252,7 +252,7 @@
     "score": 80,
     "review_basis": "lectura_en_frio_solo_narracion",
     "reviewer_role": "auditor_capcot_independiente",
-    "reviewed_at": "2026-11-05T15:18:57-06:00",
+    "reviewed_at": "2026-11-06T15:10:29-06:00",
     "checks": {
       "pregunta_central_reconstruible": true,
       "apertura_in_medias_res": true,
