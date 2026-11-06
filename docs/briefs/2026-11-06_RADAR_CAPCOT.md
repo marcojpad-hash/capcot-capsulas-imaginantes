@@ -54,3 +54,55 @@ La frase anterior «cuatro paquetes textuales en cola» no acredita una entrega 
 ### Aclaración de jerarquía documental — 2-nov-2026
 
 Corrección a la nota anterior: la receta semanal del 31-oct es un documento de coordinación legado y contradice el contrato operativo unificado vigente desde 1-nov. La ruta activa es `proyectos/<project_id>/storyboard.json` → QA narrativo independiente PASS → `cola/entrada/<project_id>.json` (JSON de primer nivel). El workflow actual coincide con este contrato; no se debe modificar para aceptar carpetas. Los archivos observados en `cola/bloqueados/` son copias heredadas y no son borradores canónicos listos para promoción. Ver `docs/briefs/2026-11-02_CONTROL_COLA.md`.
+
+
+---
+
+## Control de ejecución — 6-nov-2026, 07:55 CDMX
+
+**Resultado: NO_DUPLICAR.** El radar de la fecha ya existe y los cuatro slots ordinarios autorizados están ocupados por los storyboards canónicos de `proyectos/`. No se crea otro storyboard ni se modifica ninguno de esos proyectos. Esta anotación corrige la asignación horaria anterior de 19:00 y distingue los borradores de cualquier entrega a cola.
+
+### Inventario canónico comprobado en GitHub
+
+| project_id | fecha_objetivo | slot_local | ruta | estado editorial leído |
+|---|---|---:|---|---|
+| `2026-11-06_kids-ballena-azul-corazon` | 2026-11-06 | 07:00 | `proyectos/2026-11-06_kids-ballena-azul-corazon/storyboard.json` | `BORRADOR_ESPERA_AUDITOR_PASS` |
+| `2026-11-06_comida-aguacate-negro` | 2026-11-06 | 13:30 | `proyectos/2026-11-06_comida-aguacate-negro/storyboard.json` | `BORRADOR_ESPERA_AUDITOR_PASS` |
+| `2026-11-06_inter-ranas-congeladas` | 2026-11-06 | 17:00 | `proyectos/2026-11-06_inter-ranas-congeladas/storyboard.json` | `BORRADOR_ESPERA_AUDITOR_PASS` |
+| `2026-11-06_inter-arena-cantante` | 2026-11-06 | 17:45 | `proyectos/2026-11-06_inter-arena-cantante/storyboard.json` | `BORRADOR_ESPERA_AUDITOR_PASS` |
+
+Los cuatro JSON se releen desde la rama y sus campos `project_id`, `fecha_objetivo`, `slot_local`, `estilo_id` y estado editorial coinciden con la tabla. No se infiere QA PASS por la presencia del contrato narrativo. Permanecen en `proyectos/`, sujetos al auditor independiente.
+
+### Corrección de horario y rutas
+
+- `data/horario_semana_2026-11-01_07.json` asigna para el 6-nov 07:00, 13:30, 17:00 y 17:45. El segundo intermedio se movió de 19:00 a 17:45 desde el 5-nov; 19:00 no es un slot libre.
+- El quinto horario, 23:30, está excluido expresamente de esta ejecución.
+- El árbol de GitHub contiene `cola/entrada/.gitkeep`, sin paquetes de esta fecha; no hay storyboard del 6-nov en `salidas/`.
+- Hay copias heredadas en `cola/bloqueados/` para aguacate, ranas y arena, además de una variante histórica `2026-11-06_inter-corazon-ballena-azul`. No son proyectos canónicos alternativos ni se promueven. Las copias bloqueadas inspeccionadas no contienen `narrative_contract` ni `narrative_qa`.
+- `data/temas_del_dia.json` no llega al 6-nov; `data/rotacion.json` y `data/publicaciones.json` tampoco registran ese día. Esto no invalida los cuatro proyectos: `scripts/registro_editorial.py` define los storyboards de `proyectos/` como evidencia de rotación y propuesta, no como publicación. No se modificó ningún `data/*.json`.
+
+### Vigencia de la investigación existente
+
+El radar preexistente conserva corte de investigación y Trends del **1-nov-2026**. Los cuatro candidatos de su tabla (publicados el 27–29-oct) ya no están dentro de la ventana móvil de siete días al 6-nov. No se actualizan ni se presentan como candidatos recientes de esta ejecución: la guardia anti-duplicación encontró el radar existente y ningún slot ordinario libre. No se hizo una nueva verificación Crossref de esos DOI ni una nueva selección de 3–5 estudios.
+
+### Fuentes RSS y Google Trends — observación de esta ejecución
+
+No se afirma haber descargado ni parseado XML. El lector web disponible devolvió estos errores exactos al intentar abrir los feeds definidos en `scripts/tendencias.py`:
+
+- ScienceDaily ciencia, salud y espacio: `400 Unsupported content-type: application/xml`.
+- Phys.org: `400 Unsupported content-type: text/xml`.
+- NASA: `400 Unsupported content-type: application/rss+xml`.
+- Nature: `400 Unsupported content-type: application/rss+xml`.
+- UNAM Global: `400 Unsupported content-type: application/rss+xml`.
+- ESA Space Science: `404 Not Found`.
+- EurekAlert y SINC: `URL ... is not accessible via this tool`.
+- Google Trends RSS México (`https://trends.google.com/trending/rss?geo=MX`): `URL ... is not accessible via this tool`.
+
+Como respaldo, se abrió la página oficial [Trending Now de Google Trends México](https://trends.google.com.mx/trending?geo=MX&hl=es), configurada en últimas 24 horas. Entre las señales visibles: «cfe» (20 mil+ búsquedas, activa hace 10 h) y «sismo temblor hoy» (2 mil+, activa hace 14 h); la lista también está dominada por entretenimiento y deportes. Son consultas de búsqueda, no evidencia científica ni prueba de oportunidad editorial. No se fuerza una cápsula a partir de ellas.
+
+### Seguimiento técnico incremental
+
+- Google Trends API: la documentación oficial consultada sigue describiendo una alfa de acceso limitado, ventana móvil de cinco años, agregaciones diaria/semanal/mensual/anual, desgloses regionales y datos de interés escalados —no volúmenes absolutos—: [documentación oficial](https://developers.google.com/search/apis/trends). No se verificó un cambio nuevo respecto del informe del repositorio.
+- Meta: el changelog de Graph API no fue accesible; Instagram Platform changelog devolvió `429 Too Many Requests`; la referencia de Instagram Insights no fue accesible; Pages API devolvió `429 Too Many Requests`; la referencia de Page Insights no fue accesible. Sin acceso a las referencias oficiales no se atribuye un cambio nuevo ni se actualiza `docs/INVESTIGACION_API_META_Y_GOOGLE_TRENDS.md`.
+
+**Cierre:** NO_DUPLICAR. El único cambio de esta ejecución es esta anotación de control en el radar existente. No se creó ni reescribió ningún storyboard, no se escribió en `cola/entrada/`, no se añadió `narrative_qa`, no se promovió material y no se alteraron datos operativos.
