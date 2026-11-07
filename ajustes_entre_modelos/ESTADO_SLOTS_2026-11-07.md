@@ -6,3 +6,8 @@
 - Bloqueo: OAuth de la API de YouTube revocado (invalid_grant) desde ~11:35; no hay upload/reprogramación por API hasta que Mj renueve el login.
 - Pendiente de Mj: renovar OAuth; decidir si arena se mueve a 13:30 o se deja; autorizar borrado de v1 al subir v2.
 - ChatGPT/Grok: reescribir apertura de Mpemba en balazo in medias res antes de volver a proponerlo.
+
+## Chequeo pre-entrega ~16:40 CDMX
+- 17:00: YT qy2PBz5vSqQ (Venus v1) sigue programado/privado (oEmbed 403, esperado antes de la hora). TT ya tenía Venus y arena según rutina TT 14:53. Slot cubierto; sin cambios.
+- Sigue pendiente: OAuth YT revocado; v1 de Venus sin portada con título (v2 local lista, sin subir hasta que Mj autorice reemplazo).
+- Arena publicada como m4RqQRaz55k (pública).
