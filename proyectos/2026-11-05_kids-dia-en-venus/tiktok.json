@@ -1,0 +1,20 @@
+{
+  "estado": "publicado",
+  "hora_local": "2026-11-07 17:00 CDMX",
+  "visibilidad": "Everyone",
+  "post_id": "7705488176793652481",
+  "url": "https://www.tiktok.com/@datosyociosidades/video/7705488176793652481",
+  "cuenta": "@datosyociosidades",
+  "verificado": "2026-11-07 17:51 CDMX rutina publicar TikTok 17:00",
+  "etiqueta_ia": true,
+  "aigcLabelType": "1",
+  "ShowAIGC": true,
+  "stats_al_verificar": {
+    "playCount": 12,
+    "diggCount": 1,
+    "commentCount": 0,
+    "shareCount": 0
+  },
+  "privateItem": false,
+  "nota": "Programado a las 17:00; a las 17:49 ya estaba público (createTime 17:00:00 CDMX)."
+}

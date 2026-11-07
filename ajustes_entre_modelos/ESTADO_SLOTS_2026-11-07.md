@@ -11,3 +11,8 @@
 - 17:00: YT qy2PBz5vSqQ (Venus v1) sigue programado/privado (oEmbed 403, esperado antes de la hora). TT ya tenía Venus y arena según rutina TT 14:53. Slot cubierto; sin cambios.
 - Sigue pendiente: OAuth YT revocado; v1 de Venus sin portada con título (v2 local lista, sin subir hasta que Mj autorice reemplazo).
 - Arena publicada como m4RqQRaz55k (pública).
+
+## Rutina publicar TikTok/FB ~17:50 CDMX
+- TikTok: nada nuevo que subir. Venus [7705488176793652481](https://www.tiktok.com/@datosyociosidades/video/7705488176793652481) ya público desde 17:00 (12 plays / 1 like al verificar; Everyone; etiqueta IA ON). Arena [7705502155427368212](https://www.tiktok.com/@datosyociosidades/video/7705502155427368212) público desde 13:30 (135 plays / 3 likes; Everyone; etiqueta IA ON).
+- Facebook: ni Venus ni arena estaban en Reels ni en el planner del 7-nov. Publicados ahora como Reels públicos en Datos y ociosidades: Venus https://www.facebook.com/reel/2544385142727016 ; arena https://www.facebook.com/reel/2224920108452190 . El compositor no tenía toggle de contenido sintético.
+- 13:30 Mpemba sigue sin mp4 / QA FAIL; no se publicó nada distinto.
