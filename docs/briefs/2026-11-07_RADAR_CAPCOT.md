@@ -54,3 +54,138 @@ La frase anterior «cuatro paquetes textuales en cola» no acredita una entrega 
 ### Aclaración de jerarquía documental — 2-nov-2026
 
 Corrección a la nota anterior: la receta semanal del 31-oct es un documento de coordinación legado y contradice el contrato operativo unificado vigente desde 1-nov. La ruta activa es `proyectos/<project_id>/storyboard.json` → QA narrativo independiente PASS → `cola/entrada/<project_id>.json` (JSON de primer nivel). El workflow actual coincide con este contrato; no se debe modificar para aceptar carpetas. Los archivos observados en `cola/bloqueados/` son copias heredadas y no son borradores canónicos listos para promoción. Ver `docs/briefs/2026-11-02_CONTROL_COLA.md`.
+
+
+---
+
+## Registro de ejecución — 2026-11-07 08:03 CDMX
+
+### Resultado de guardia anti-duplicación: NO_DUPLICAR
+
+Se releyeron los cuatro storyboards canónicos de la fecha en `proyectos/` y se contrastaron sus metadatos internos con `data/horario_semana_2026-11-01_07.json`:
+
+| project_id | fecha_objetivo | slot_local | Estado de ubicación |
+|---|---|---:|---|
+| `2026-11-07_kids-huesos-bebe` | 2026-11-07 | 07:00 | `proyectos/<id>/storyboard.json` |
+| `2026-11-07_comida-hielo-caliente` | 2026-11-07 | 13:30 | `proyectos/<id>/storyboard.json` |
+| `2026-11-07_inter-pulpo-suenos` | 2026-11-07 | 17:00 | `proyectos/<id>/storyboard.json` |
+| `2026-11-07_inter-nubes-pesan` | 2026-11-07 | 17:45 | `proyectos/<id>/storyboard.json` |
+
+Los cuatro pares fecha/slot coinciden con la parrilla semanal. La decisión del 2-nov retiró la programación de 19:00 desde el 5-nov y reubicó intermedio_2 a 17:45; 23:30 queda excluido por la instrucción operativa vigente. No queda un slot autorizado libre para otro storyboard de esta fecha.
+
+Inventario de ubicaciones: `cola/entrada/` contiene únicamente `.gitkeep`; no hay entradas de esta fecha. `salidas/` no contiene proyectos del 5–7 nov. `cola/bloqueados/` conserva variantes heredadas, entre ellas `2026-11-07_inter-mpemba-mito`, `2026-11-07_inter-suenos-pulpo`, `2026-11-07_inter-nubes-pesan`, `2026-11-07_extra-nubes-pesan` y `2026-11-07_kids-huesos-bebe`; no se trataron como proyectos canónicos ni como slots libres. No se movió ni modificó ninguno.
+
+El radar de esta fecha ya existía, por lo que no se creó otro. Su corte científico y de Trends sigue siendo **2026-11-01**; los candidatos enumerados arriba no se presentan como una búsqueda nueva del 7-nov ni se certifican como dentro de la ventana móvil de siete días al día de hoy. No se hizo una nueva ingesta RSS ni una nueva selección científica porque todos los entregables aplicables ya existen y no hay slot autorizado libre. Este apéndice registra NO_DUPLICAR y corrige el estado operativo; no actualiza el radar científico.
+
+### Estado de narrative_qa releído desde los 12 JSON canónicos
+
+Se consultó directamente cada `proyectos/<project_id>/storyboard.json`. Los doce contienen `narrative_qa`; por tanto, ninguno queda como `PENDIENTE_AUDITOR`. En todos, `review_basis` es `lectura_en_frio_solo_narracion` y `reviewed_at` es `2026-11-06T15:10:29-06:00`. Los checks se consignan en el orden exacto de las claves del JSON:
+
+1. `pregunta_central_reconstruible`
+2. `apertura_in_medias_res`
+3. `progresion_por_escena`
+4. `transiciones_causales`
+5. `giro_cientifico_explicado`
+6. `limite_evidencia_explicito`
+7. `payoff_cierre_apertura`
+
+`true/false` conserva los booleanos del JSON; las banderas se reproducen literalmente.
+
+#### 5 de noviembre
+
+**2026-11-05_kids-dia-en-venus**
+- status: `PASS`; score: `88`.
+- review_basis: `lectura_en_frio_solo_narracion`.
+- reviewed_at: `2026-11-06T15:10:29-06:00`.
+- checks: `pregunta_central_reconstruible=true`, `apertura_in_medias_res=true`, `progresion_por_escena=true`, `transiciones_causales=true`, `giro_cientifico_explicado=true`, `limite_evidencia_explicito=true`, `payoff_cierre_apertura=true`.
+- critical_flags: `[]`.
+
+**2026-11-05_comida-palomitas**
+- status: `FAIL`; score: `82`.
+- review_basis: `lectura_en_frio_solo_narracion`.
+- reviewed_at: `2026-11-06T15:10:29-06:00`.
+- checks: `pregunta_central_reconstruible=true`, `apertura_in_medias_res=false`, `progresion_por_escena=false`, `transiciones_causales=true`, `giro_cientifico_explicado=true`, `limite_evidencia_explicito=true`, `payoff_cierre_apertura=true`.
+- critical_flags: `["APERTURA_DEFINICIONAL_NO_IN_MEDIAS_RES","ESCENA_6_REITERA_CAUSAS_DE_GRANOS_NO_REVENTADOS_SIN_INFORMACION_NUEVA"]`.
+
+**2026-11-05_inter-arboles-se-comunican**
+- status: `FAIL`; score: `78`.
+- review_basis: `lectura_en_frio_solo_narracion`.
+- reviewed_at: `2026-11-06T15:10:29-06:00`.
+- checks: `pregunta_central_reconstruible=true`, `apertura_in_medias_res=false`, `progresion_por_escena=true`, `transiciones_causales=true`, `giro_cientifico_explicado=true`, `limite_evidencia_explicito=true`, `payoff_cierre_apertura=true`.
+- critical_flags: `["APERTURA_GENERICA_NO_IN_MEDIAS_RES"]`.
+
+**2026-11-05_inter-rayo-globular**
+- status: `FAIL`; score: `81`.
+- review_basis: `lectura_en_frio_solo_narracion`.
+- reviewed_at: `2026-11-06T15:10:29-06:00`.
+- checks: `pregunta_central_reconstruible=true`, `apertura_in_medias_res=false`, `progresion_por_escena=true`, `transiciones_causales=true`, `giro_cientifico_explicado=true`, `limite_evidencia_explicito=true`, `payoff_cierre_apertura=true`.
+- critical_flags: `["APERTURA_HISTORICA_DESCRIPTIVA_NO_IN_MEDIAS_RES"]`.
+
+#### 6 de noviembre
+
+**2026-11-06_kids-ballena-azul-corazon**
+- status: `FAIL`; score: `80`.
+- review_basis: `lectura_en_frio_solo_narracion`.
+- reviewed_at: `2026-11-06T15:10:29-06:00`.
+- checks: `pregunta_central_reconstruible=true`, `apertura_in_medias_res=true`, `progresion_por_escena=true`, `transiciones_causales=true`, `giro_cientifico_explicado=true`, `limite_evidencia_explicito=true`, `payoff_cierre_apertura=false`.
+- critical_flags: `["PAYOFF_SOBREAFIRMA_CASI_SE_DETIENE"]`.
+
+**2026-11-06_comida-aguacate-negro**
+- status: `FAIL`; score: `79`.
+- review_basis: `lectura_en_frio_solo_narracion`.
+- reviewed_at: `2026-11-06T15:10:29-06:00`.
+- checks: `pregunta_central_reconstruible=true`, `apertura_in_medias_res=true`, `progresion_por_escena=false`, `transiciones_causales=false`, `giro_cientifico_explicado=true`, `limite_evidencia_explicito=true`, `payoff_cierre_apertura=true`.
+- critical_flags: `["REPETICION_ESCENAS_5_6_SIN_AVANCE_CAUSAL"]`.
+
+**2026-11-06_inter-ranas-congeladas**
+- status: `FAIL`; score: `83`.
+- review_basis: `lectura_en_frio_solo_narracion`.
+- reviewed_at: `2026-11-06T15:10:29-06:00`.
+- checks: `pregunta_central_reconstruible=true`, `apertura_in_medias_res=true`, `progresion_por_escena=false`, `transiciones_causales=false`, `giro_cientifico_explicado=true`, `limite_evidencia_explicito=true`, `payoff_cierre_apertura=true`.
+- critical_flags: `["REPETICION_ESCENAS_5_6_LIMITES_DE_ESPECIE_Y_CONDICIONES"]`.
+
+**2026-11-06_inter-arena-cantante**
+- status: `PASS`; score: `94`.
+- review_basis: `lectura_en_frio_solo_narracion`.
+- reviewed_at: `2026-11-06T15:10:29-06:00`.
+- checks: `pregunta_central_reconstruible=true`, `apertura_in_medias_res=true`, `progresion_por_escena=true`, `transiciones_causales=true`, `giro_cientifico_explicado=true`, `limite_evidencia_explicito=true`, `payoff_cierre_apertura=true`.
+- critical_flags: `[]`.
+
+#### 7 de noviembre
+
+**2026-11-07_kids-huesos-bebe**
+- status: `FAIL`; score: `82`.
+- review_basis: `lectura_en_frio_solo_narracion`.
+- reviewed_at: `2026-11-06T15:10:29-06:00`.
+- checks: `pregunta_central_reconstruible=true`, `apertura_in_medias_res=true`, `progresion_por_escena=false`, `transiciones_causales=false`, `giro_cientifico_explicado=true`, `limite_evidencia_explicito=true`, `payoff_cierre_apertura=true`.
+- critical_flags: `["ESCENA_6_REPITE_VARIACION_DE_CONTEO_Y_FUSION"]`.
+
+**2026-11-07_comida-hielo-caliente**
+- status: `FAIL`; score: `81`.
+- review_basis: `lectura_en_frio_solo_narracion`.
+- reviewed_at: `2026-11-06T15:10:29-06:00`.
+- checks: `pregunta_central_reconstruible=true`, `apertura_in_medias_res=false`, `progresion_por_escena=true`, `transiciones_causales=true`, `giro_cientifico_explicado=true`, `limite_evidencia_explicito=true`, `payoff_cierre_apertura=true`.
+- critical_flags: `["APERTURA_DE_CREENCIAS_NO_IN_MEDIAS_RES"]`.
+
+**2026-11-07_inter-pulpo-suenos**
+- status: `FAIL`; score: `80`.
+- review_basis: `lectura_en_frio_solo_narracion`.
+- reviewed_at: `2026-11-06T15:10:29-06:00`.
+- checks: `pregunta_central_reconstruible=true`, `apertura_in_medias_res=true`, `progresion_por_escena=false`, `transiciones_causales=false`, `giro_cientifico_explicado=true`, `limite_evidencia_explicito=true`, `payoff_cierre_apertura=false`.
+- critical_flags: `["REPETICION_ESCENAS_5_6_Y_PAYOFF_VAGO"]`.
+
+**2026-11-07_inter-nubes-pesan**
+- status: `FAIL`; score: `78`.
+- review_basis: `lectura_en_frio_solo_narracion`.
+- reviewed_at: `2026-11-06T15:10:29-06:00`.
+- checks: `pregunta_central_reconstruible=true`, `apertura_in_medias_res=true`, `progresion_por_escena=false`, `transiciones_causales=false`, `giro_cientifico_explicado=true`, `limite_evidencia_explicito=true`, `payoff_cierre_apertura=false`.
+- critical_flags: `["ESCENA_7_REITERA_CIFRA_Y_LIMITE_SIN_PAYOFF_DE_SUSPENSION"]`.
+
+**Balance leído:** 2 PASS (Venus y arena cantante) y 10 FAIL. Este registro reproduce el QA preexistente; no se ejecutó una nueva lectura narrativa, no se modificó `narrative_qa`, no se promovió ningún storyboard y no se tocó `cola/entrada/`.
+
+### Seguimiento técnico — 2026-11-07
+
+- **Google Trends API alfa:** la documentación oficial sigue ofreciendo acceso alfa por solicitud limitada, con ventana móvil de cinco años, agregación diaria/semanal/mensual/anual y desgloses regionales/subregionales. La página no anuncia apertura general ni cambio de especificación: https://developers.google.com/search/apis/trends
+- **Meta Graph API / Instagram Platform / Facebook Pages Insights:** los endpoints oficiales consultados no pudieron recuperarse en esta ejecución (la página de Instagram Platform devolvió HTTP 429; las referencias Graph API v26.0 y Page Insights no fueron accesibles). Los resultados secundarios describen cambios v26.0 y una fecha de aplicación general del 27-oct-2026, pero no se elevan a especificación CAPCOT sin revalidación directa en el changelog oficial.
+- **Decisión:** no se actualizó `docs/INVESTIGACION_API_META_Y_GOOGLE_TRENDS.md`; no hay cambio nuevo de Meta verificable directamente en la documentación oficial consultada. No se hicieron llamadas a activos privados ni se solicitaron credenciales.
+- No se ejecutaron cambios técnicos, no se modificó `data/*.json`, no se generaron medios ni se publicó/programó contenido.
