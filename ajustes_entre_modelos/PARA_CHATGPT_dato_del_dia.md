@@ -48,7 +48,43 @@ ChatGPT no tiene cron propio: esta instrucción se activa cuando Mj la pega en e
 
 ---
 
-## 📌 DATO DE HOY — 4 nov 2026, slot 23:30 CDMX (= 2026-11-05T05:30Z)
+## 📌 DATO DE HOY — 7 nov 2026, slot 23:30 CDMX (= 2026-11-08T05:30Z)
+> Brief dejado por Imaginantes 7-nov ~16:10 CDMX (la corrida de ~10:00 falló; este es el primer brief del día). **NO hay paquete «dato» del 7-nov** en `cola/entrada/` (hay `barreleye-4k`, `comida-hielo-caliente`/Mpemba y `arboles-comunicacion-bosque`; ninguno es `*_dato-*` ni está asignado a 23:30). El slot en `data/horario_semana_2026-11-01_07.json` sigue como `2026-11-07_dato-TBD-news` / `pendiente_dato_dia`.
+> Entregar HOY antes de las **21:00 CDMX** en `cola/entrada/2026-11-07_dato-clavo-te-cocina/` (`storyboard.json` + `fuentes.md` + `ESTADO_EJECUCION.md` = `PREPARADO_PENDIENTE_REVISION_GROK`) para que Grok app haga QA→frames→montaje→YT+TT+FB a **23:30 CDMX** (TT AI ON, FB sin AI; UI Nueva York = CDMX+1 h).
+> DOI **verificado en Crossref por Imaginantes 7-nov 16:10** (publicado 30-oct-2026, *BMC Microbiology*, open access CC BY 4.0). Tip cocina / superficie — hueco editorial del canal. No repite Mpemba, Venus, arena, huesos, nubes ni pulpo de la parrilla de hoy.
+
+- **project_id:** `2026-11-07_dato-clavo-te-cocina`
+- **Fuente primaria:** Sezer et al. (2026) «Antimicrobial and antibiofilm effects of clove tea on bacteria isolated from kitchen food-contact surfaces». *BMC Microbiology*. DOI `10.1186/s12866-026-05875-y` — https://doi.org/10.1186/s12866-026-05875-y · https://bmcmicrobiol.biomedcentral.com/articles/10.1186/s12866-026-05875-y
+- **Título sugerido (no técnico):** «El clavo que sobrevive a tu trapeador» o «¿Sabías que tras limpiar la cocina aún quedan bacterias?». Prohibido «MIC», «MBC», «biofilm» o «Staphylococcus» en el título.
+- **Balazo (in medias res, sin «según un estudio»):** «Acabas de limpiar la cocina… y bajo el trapo todavía hay un ejército invisible haciendo casa.»
+- **¿Y a mí qué? (obligatorio en escenas 1–2):** ancla cotidiana — la tarja, la tabla o la cubierta donde cortas verdura / dejas el plato. El tip es sobre lo que puede quedar **después** de la limpieza de siempre, no para asustar: para sumar un refuerzo barato.
+- **Hecho usable / wow (solo lo que dice el abstract; léelo entero antes de escribir):**
+  - Tomaron hisopos **después de la limpieza rutinaria** en superficies de contacto con comida de una cocina de comida preparada (50 puntos).
+  - Sacaron **22 aislados**: *Escherichia coli* y *Staphylococcus aureus*; **15 de 22** formaban biofilm (capa pegajosa).
+  - El **té de clavo** (clavo de olor infusionado) afectó esas bacterias de forma **dependiente de la concentración**.
+  - Concentración inhibitoria mínima media (**MIC**) ≈ **15 %**; bactericida media (**MBC**) ≈ **19,33 %**. Explica «MIC/MBC» en una frase llana una sola vez («la dosis con la que deja de crecer» / «la dosis con la que muere»).
+  - Más tiempo de contacto ayudó, pero **la concentración importó más**.
+- **Límite / matiz (penúltima escena, obligatorio):** el propio paper lo dice: es un refuerzo **además** de la limpieza de siempre, **no un reemplazo**. Estudio de laboratorio sobre aislados de una cocina; no promete desinfección hospitalaria ni que «el clavo mate todo».
+- **Giro final (última escena):** «La sorpresa no es que la cocina se ensucie: es que un té de clavo barato puede ayudar donde el trapeador ya pasó.» + pregunta abierta («¿Tú qué dejas «limpio» sin mirar dos veces?») + **«Esto fue Datos y ociosidades.»**
+- **Formato trend:** tip cocina usable + «¿sabías que…?» contradictorio (limpiaste y aún hay biofilm). Público general, no kids.
+- **Storyboard 8 escenas (texto, SIN frames):**
+  1. Balazo: trapeador / esponja; zoom a capa invisible que se pega.
+  2. ¿Y a mí qué?: tu tarja o tabla de picar; plato que «ya lavaste».
+  3. El problema: biofilm = bacterias haciendo «casita» pegajosa que el trapo no siempre arranca.
+  4. La escena del estudio: 50 puntos hisopados tras limpiar; aparecen E. coli y S. aureus (nómbralos una vez, luego «esas bacterias»).
+  5. El tip: infusionar clavo de olor (té de clavo) y probarlo contra esas bacterias / biofilms maduros.
+  6. Dato numérico: ~15 % para frenar el crecimiento, ~19 % para matar (medias del paper); más fuerte = más efecto.
+  7. Matiz: refuerzo post-limpieza, no sustituye jabón/cloro ni convierte tu cocina en quirófano.
+  8. Giro + pregunta + sello.
+- **Personajes Imaginantes:** usar los propios del canal (ver `PARA_CHATGPT_LINEA_EDITORIAL.md` §8); estilo CapCut con imágenes fijas o animación narrada, subtítulos abajo. **NO HyperFrames.**
+- **Hashtags (solo alto volumen):** `#curiosidades #ciencia #cocina #datosinteresantes #sabiasque #shorts`. Nada de `#biofilm` ni tags técnicos.
+- **No inventar:** ni «mata el 99,9 %», ni que sustituye desinfectante, ni cifras de casas mexicanas, ni que el clavo cura infecciones.
+- **Portada obligatoria (Mj 7-nov):** primera escena = portada con título grande en caja amarilla/crema y subrayado rojo; sin subtítulo encima (para la cuadrícula de Shorts/TT).
+- **Plan B (si el clavo no cierra el enganche):** Grove et al. (2026) «The neural basis of flavour–nutrient learning». *Nature*, publicado 4-nov-2026. DOI `10.1038/s41586-026-11229-5` — https://doi.org/10.1038/s41586-026-11229-5. Ángulo: la boca estima el nutriente por el sabor y el intestino lo confirma; un circuito de dopamina en la amígdala aprende el vínculo. Tip usable débil → prioriza paradoja «tu lengua adivina, tu panza califica». PROHIBIDO medicalizar o prometer control de antojos. Lee el artículo; no inventes regiones ni neurotransmisores que no estén ahí.
+
+---
+
+## (Vencido) Dato 4 nov 2026, slot 23:30 CDMX (= 2026-11-05T05:30Z) — cubierto en producción (polvo/oro Rv998OZDUYc)
 > Brief dejado por Imaginantes 4-nov ~10:10 CDMX. NO hay paquete «dato» del 4-nov en `cola/entrada/` (solo kids-hipo, miel e bioluminiscencia, ya programados en otros slots). Entregar HOY antes de las 21:00 CDMX en `cola/entrada/2026-11-04_dato-polvo-atrapa-oro/` (storyboard.json + fuentes.md + ESTADO_EJECUCION.md = `PREPARADO_PENDIENTE_REVISION_GROK`) para que Grok app haga QA→frames→montaje antes de las 22:30.
 > Tema tomado del radar `docs/briefs/2026-11-04_RADAR_CAPCOT.md` (C03). DOI **verificado en Crossref por Imaginantes 4-nov 10:08** (publicado 30-oct-2026, Nature Communications, open access). No repite miel/hipo/bioluminiscencia/cielo azul de hoy.
 
