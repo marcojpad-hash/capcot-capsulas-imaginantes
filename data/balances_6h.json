@@ -1760,5 +1760,70 @@
    ]
   ],
   "nota_flujo": "Repunte de tarde (14:06→20:08): YT +194 vistas, +5 likes, subs 70→72. Lo empuja el polvo de África (28→145); miel despertó 0→16 y bioluminiscencia 4xylLT3vSIU estrenó con 16. Hipo Rg-iTgMExWw sigue en 0 todo el día. 14 de 48 Shorts se movieron; el catálogo viejo plano. TT perfil plano: 28 seguidores, likes 686→688, 51 videos."
+ },
+ {
+  "hora_cdmx": "2026-11-07T14:10-06:00",
+  "base_youtube": "2026-11-04T20:08",
+  "base_tiktok": "2026-11-04T20:08",
+  "youtube_totales": {
+   "view": 27818,
+   "like": 910,
+   "comment": 26
+  },
+  "suscriptores": 72,
+  "shorts_publicos": 50,
+  "delta_youtube": {
+   "view": 510,
+   "like": 9,
+   "comment": 0,
+   "suscriptores": 0,
+   "horas_desde_base": 66,
+   "nota": "No es un Δ de 6 h: el corte previo guardado es 4-nov 20:08 CDMX."
+  },
+  "tiktok_totales": null,
+  "seguidores_tiktok": 28,
+  "likes_perfil_tiktok": 697,
+  "videos_tiktok": 53,
+  "delta_tiktok": {
+   "seguidores": 0,
+   "likes_perfil": 9,
+   "videos": 2,
+   "nota": "Solo perfil público; sin vistas por video."
+  },
+  "ranking_crecimiento": [
+   [
+    "YT El polvo de África no viaja solo",
+    123
+   ],
+   [
+    "YT Este polvo atrapa 5 veces su peso en oro (nuevo)",
+    111
+   ],
+   [
+    "YT ¿La miel nunca se echa a perder?",
+    43
+   ],
+   [
+    "YT El mar que fabrica luz",
+    42
+   ],
+   [
+    "YT La química del dorado",
+    37
+   ],
+   [
+    "YT Mariposas monarca: ¿las almas que regresan",
+    22
+   ],
+   [
+    "YT SmartPE: edición genética más precisa en p",
+    17
+   ],
+   [
+    "YT Papel picado, parte 1: nació en una tienda",
+    14
+   ]
+  ],
+  "nota_flujo": "Corte vs 4-nov 20:08 (~66 h; los balances 6h intermedios no se grabaron: OAuth YT revocado). YT 27,308→27,818 (+510 vistas), likes 901→910 (+9), subs 72→72 (+0). 50 Shorts públicos (2 nuevos). Lo empujan el polvo de África (145→268) y los recientes: polvo/oro Rv998OZDUYc 111 (nuevo), miel 16→59, bioluminiscencia 16→58, dorado 53→90. 36 de 50 se movieron; el catálogo viejo sigue casi plano. Hipo Rg-iTgMExWw 0→1; arena m4RqQRaz55k (nuevo) en 0. TT perfil: seguidores 28→28, likes 688→697 (+9), videos 51→53 (+2). Cifras YT por listado/metadatos públicos (API OAuth: invalid_grant)."
  }
 ]
