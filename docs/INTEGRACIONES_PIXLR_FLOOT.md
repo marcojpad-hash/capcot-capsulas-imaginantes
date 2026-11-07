@@ -99,3 +99,16 @@ Uso recomendado:
 ## 6. Regla de actualización
 
 Antes de recomendar pago o prometer capacidad gratuita, volver a comprobar precios, cuota visible de la cuenta y condiciones de publicación. La documentación pública puede cambiar. Mantener este archivo como registro de capacidades, no como autorización automática de gasto o publicación.
+
+
+## 7. Implementación auxiliar creada el 2026-11-06
+
+Se creó el proyecto Floot **CAPCOT Visual Desk** (`projectId: 4a26d671-0b07-490a-9aa1-59f3204e3cbe`) como panel auxiliar, sin publicar. Vista previa móvil: [abrir CAPCOT Visual Desk](https://floot.com/mcp-preview/4a26d671-0b07-490a-9aa1-59f3204e3cbe?ptoken=v3.4a26d671-0b07-490a-9aa1-59f3204e3cbe.0b5c258f-c661-44d5-9d27-3d1ffd41f72b.1794016439.1794621239.w-vJs7W2e2rK7Hl8_BmrOmf4P8pi7wZxXQAJlJaD84s)
+
+Alcance de la primera versión: panel de proyectos de muestra, estados de integración y espacio de catálogo de activos aún vacío. Los cuatro paquetes visibles son una fotografía de trabajo del corte 6-nov y están marcados expresamente como datos de muestra, no sincronizados ni autoritativos. GitHub sigue siendo la fuente de verdad.
+
+Se instaló `@pixlrlte/pixlr-sdk@1.3.2` en el proyecto Floot. El paquete instalado expone `Editor` y `Express`; la documentación del SDK describe el uso de `Editor.connect(token, iframe)` y exige generar el JWT en el servidor. No se activó el editor embebido aún: el repositorio público del SDK consultado no coincide completamente con su README en la exportación de la clase `Token`, así que no se improvisó la firma JWT.
+
+Se creó una solicitud segura de credenciales Pixlr para `PIXLR_CLIENT_KEY` y `PIXLR_CLIENT_SECRET`. El propietario debe completarla en Floot desde el enlace privado de conexión compartido en la conversación. Las claves no se enviaron al chat ni a GitHub. Tras la conexión, falta verificar el flujo real de token del SDK y activar el editor.
+
+Estado: proyecto Floot creado; paquete SDK instalado y sus exports comprobados; pantalla principal creada y tipado limpio; captura móvil no disponible hasta que el propietario abra la vista previa. No se publicaron medios, no se gastaron créditos Pixlr/IA y no se publicó la aplicación.
