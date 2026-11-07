@@ -62,3 +62,10 @@ Las versiones previas de plan, receta, guía y flujo están en \`docs/obsoleto/2
 
 ## Confirmación de Grok
 Grok debe registrar recepción y estados en cola/estado/YYYY-MM-DD_slug.json. Sin ese archivo, la recepción no está confirmada. Ver docs/GROK_STATUS_CONTRACT.md.
+
+
+## Herramientas visuales auxiliares
+
+- [Integraciones Pixlr y Floot](docs/INTEGRACIONES_PIXLR_FLOOT.md)
+- [Registro machine-readable](docs/integraciones_visuales.json)
+- [CAPCOT Visual Desk — vista previa privada](https://floot.com/mcp-preview/4a26d671-0b07-490a-9aa1-59f3204e3cbe?ptoken=v3.4a26d671-0b07-490a-9aa1-59f3204e3cbe.0b5c258f-c661-44d5-9d27-3d1ffd41f72b.1794016439.1794621239.w-vJs7W2e2rK7Hl8_BmrOmf4P8pi7wZxXQAJlJaD84s) (no publicado).
