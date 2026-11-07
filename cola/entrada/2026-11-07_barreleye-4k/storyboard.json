@@ -1,0 +1,144 @@
+{
+  "project_id": "2026-11-07_barreleye-4k",
+  "title": "El pez que mira a través de su cabeza",
+  "language": "es-MX",
+  "aspect_ratio": "9:16",
+  "target_duration_seconds": 82,
+  "trend_source": {
+    "tipo": "noticia_cientifica",
+    "medio": "MBARI",
+    "url": "https://www.mbari.org/news/mbari-researchers-film-rarely-seen-deep-sea-barreleye-fish-in-4k/",
+    "estudio_doi": null,
+    "fecha_publicacion": "2026-10-28",
+    "termino": "barreleye Macropinna 4K",
+    "fecha_consulta": "2026-11-07"
+  },
+  "estilo_id": "linograbado",
+  "estilo_visual": "Linograbado bitono",
+  "estructura": "pregunta",
+  "voice": {
+    "engine": "edge-tts",
+    "voice_id": "es-MX-JorgeNeural",
+    "rate": "+7%",
+    "pitch": "-2Hz",
+    "pad_seconds": 0.3,
+    "modo_pausas": "continuo"
+  },
+  "sources": [
+    {
+      "id": "SRC-001",
+      "cita_corta": "MBARI (2026). Researchers film rarely seen deep-sea barreleye fish in 4K.",
+      "url": "https://www.mbari.org/news/mbari-researchers-film-rarely-seen-deep-sea-barreleye-fish-in-4k/",
+      "doi": null,
+      "accessed": "2026-11-07",
+      "supports": ["11º avistamiento en 40 años", "filmado a 600 m en 4K por primera vez por MBARI", "ojos tubulares giratorios bajo cúpula transparente"],
+      "ref_display": "MBARI 2026"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_001",
+      "arc": "hook_medias_res",
+      "duration_seconds": 8.0,
+      "narration": "¿Cómo ve un pez a través de su propia cabeza?",
+      "on_screen_text": "¿Cabeza transparente?",
+      "visual_description": "Pez barreleye con cúpula transparente e ojos verdes visibles, linograbado índigo y ocre sobre crema, vertical 9:16.",
+      "image_prompt": "linocut print, two-tone indigo and ochre ink on cream paper, bold carved lines, visible gouge marks, high contrast, vertical 9:16 composition, no text + deep sea barreleye fish Macropinna with transparent head dome and green tubular eyes scanning upward, dark ocean background",
+      "source_ids": ["SRC-001"],
+      "asset_filename": "frames/scene_001.jpg",
+      "ambiente": "oceano",
+      "sfx": ["burbujas"]
+    },
+    {
+      "id": "scene_002",
+      "arc": "desarrollo",
+      "duration_seconds": 10.0,
+      "narration": "A seiscientos metros bajo Monterey, un ROV de MBARI encontró al barreleye Macropinna.",
+      "on_screen_text": "600 metros",
+      "visual_description": "ROV Doc Ricketts iluminando pez barreleye en zona crepuscular.",
+      "image_prompt": "linocut print, two-tone indigo and ochre ink on cream paper, bold carved lines, visible gouge marks, high contrast, vertical 9:16 composition, no text + ROV Doc Ricketts lights illuminating barreleye fish at 600 meters in twilight zone, Monterey Canyon",
+      "source_ids": ["SRC-001"],
+      "asset_filename": "frames/scene_002.jpg",
+      "ambiente": "oceano",
+      "sfx": ["motor"]
+    },
+    {
+      "id": "scene_003",
+      "arc": "desarrollo",
+      "duration_seconds": 9.0,
+      "narration": "Es el undécimo avistamiento en casi cuarenta años y siete mil inmersiones.",
+      "on_screen_text": "11 veces",
+      "visual_description": "Contador o mapa de inmersiones raras en océano profundo.",
+      "image_prompt": "linocut print, two-tone indigo and ochre ink on cream paper, bold carved lines, visible gouge marks, high contrast, vertical 9:16 composition, no text + sparse deep ocean map with rare barreleye sightings marked, dark indigo depths",
+      "source_ids": ["SRC-001"],
+      "asset_filename": "frames/scene_003.jpg",
+      "ambiente": "oceano",
+      "sfx": ["eco"]
+    },
+    {
+      "id": "scene_004",
+      "arc": "desarrollo",
+      "duration_seconds": 11.0,
+      "narration": "Sus ojos tubulares verdes giran bajo una cúpula transparente para seguir las siluetas de presas arriba.",
+      "on_screen_text": "Ojos que giran",
+      "visual_description": "Detalle de ojos giratorios dentro de cabeza transparente.",
+      "image_prompt": "linocut print, two-tone indigo and ochre ink on cream paper, bold carved lines, visible gouge marks, high contrast, vertical 9:16 composition, no text + close-up of barreleye transparent head with green tubular eyes rotating upward to track prey silhouettes",
+      "source_ids": ["SRC-001"],
+      "asset_filename": "frames/scene_004.jpg",
+      "ambiente": "oceano",
+      "sfx": ["agua"]
+    },
+    {
+      "id": "scene_005",
+      "arc": "desarrollo",
+      "duration_seconds": 10.0,
+      "narration": "La cúpula gelatinosa protege los ojos cuando pesca crustáceos entre tentáculos de sifonóforos.",
+      "on_screen_text": "Escudo protector",
+      "visual_description": "Pez barreleye cerca de sifonóforo, ojos protegidos.",
+      "image_prompt": "linocut print, two-tone indigo and ochre ink on cream paper, bold carved lines, visible gouge marks, high contrast, vertical 9:16 composition, no text + barreleye fish feeding near siphonophore tentacles, gelatinous shield protecting eyes, deep sea",
+      "source_ids": ["SRC-001"],
+      "asset_filename": "frames/scene_005.jpg",
+      "ambiente": "oceano",
+      "sfx": ["tentaculos"]
+    },
+    {
+      "id": "scene_006",
+      "arc": "cierre_historia",
+      "duration_seconds": 9.0,
+      "narration": "Esta vez lo filmaron veinte minutos en 4K desde el David Packard, primera vez en esa resolución para MBARI.",
+      "on_screen_text": "Primera en 4K",
+      "visual_description": "Buque David Packard y ROV grabando.",
+      "image_prompt": "linocut print, two-tone indigo and ochre ink on cream paper, bold carved lines, visible gouge marks, high contrast, vertical 9:16 composition, no text + research vessel David Packard with ROV Doc Ricketts filming barreleye in 4K, Pacific Ocean",
+      "source_ids": ["SRC-001"],
+      "asset_filename": "frames/scene_006.jpg",
+      "ambiente": "oceano",
+      "sfx": ["barco"]
+    },
+    {
+      "id": "scene_007",
+      "arc": "reflexion_o_pregunta",
+      "duration_seconds": 12.0,
+      "narration": "¿Cuántas formas de ver el mundo esconde el océano profundo? Esto fue Datos y ociosidades.",
+      "on_screen_text": "¿Qué más hay abajo?",
+      "visual_description": "Pez barreleye mirando hacia arriba en linograbado, cortinilla suave.",
+      "image_prompt": "linocut print, two-tone indigo and ochre ink on cream paper, bold carved lines, visible gouge marks, high contrast, vertical 9:16 composition, no text + barreleye fish gazing upward through transparent head into dim twilight zone, contemplative",
+      "source_ids": ["SRC-001"],
+      "asset_filename": "frames/scene_007.jpg",
+      "ambiente": "oceano",
+      "sfx": ["silencio"]
+    }
+  ],
+  "cortinilla_fuentes": {
+    "duration_seconds": 6,
+    "titulo": "Fuentes",
+    "aviso": "Imágenes generadas con IA. Voz sintética. Audio sintetizado.",
+    "firma": "Datos y ociosidades · @datosyociosidades"
+  },
+  "export": {
+    "filename": "capsula.mp4",
+    "resolution": "1080x1920",
+    "fps": 30,
+    "loudness_lufs": -14
+  },
+  "titulo": "Pez de cabeza transparente"
+}
