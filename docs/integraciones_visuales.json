@@ -1,0 +1,60 @@
+{
+  "schema_version": "1.0",
+  "updated_at": "2026-11-06",
+  "project": "CAPCOT / Datos y ociosidades",
+  "branch": "feature/capcot-video-discovery-continuity",
+  "tools": [
+    {
+      "id": "pixlr",
+      "role": "visual_asset_editor_and_generator",
+      "access": "manual_web_android",
+      "connector_available": false,
+      "free_status": {
+        "editor": "available_with_ads_and_limits",
+        "ai_generation": "small_or_unspecified_free_allowance",
+        "video_generation": "not_verified_as_recurring_free",
+        "known_android_save_limit": "3_per_day_reported_by_developer"
+      },
+      "usage_policy": "Check visible credit cost and balance before every generation; no paid credits or subscription without explicit approval.",
+      "urls": {
+        "home": "https://pixlr.com/es/",
+        "video": "https://pixlr.com/es/video-generator/",
+        "pricing": "https://pixlr.com/es/pricing/"
+      },
+      "integration": "Manual export/import; no direct Pixlr-GitHub or Pixlr-Floot connection verified."
+    },
+    {
+      "id": "floot",
+      "role": "internal_web_app_builder",
+      "access": "chatgpt_mcp_connector",
+      "connector_available": true,
+      "account_state_checked": "2026-11-06_no_projects",
+      "free_status": {
+        "build_actions_per_day": 100,
+        "monthly_ai_credits": 0,
+        "monthly_hosting_allowance_in_pricing_table": null,
+        "free_subdomain_documented": true,
+        "scheduled_jobs_require_paid_owner_plan": true
+      },
+      "usage_policy": "Use Free for prototypes and internal utilities; do not invoke credit-consuming AI features, paid hosting, scheduled jobs, payments, or public production without explicit approval.",
+      "urls": {
+        "pricing": "https://floot.com/es/pricing",
+        "docs": "https://floot.com/docs/getting-started/how-floot-works"
+      },
+      "integration": "ChatGPT connector available; no CAPCOT project created yet."
+    }
+  ],
+  "workflow": {
+    "source_of_truth": "GitHub CAPCOT repository",
+    "asset_creation": "Pixlr manual interface",
+    "internal_tools": "Floot connector",
+    "transfer_between_tools": "manual",
+    "paid_actions_require_explicit_approval": true
+  },
+  "evidence": {
+    "media_generated": false,
+    "floot_project_created": false,
+    "credits_spent": false,
+    "production_publish_performed": false
+  }
+}
