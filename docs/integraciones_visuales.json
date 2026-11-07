@@ -7,8 +7,8 @@
     {
       "id": "pixlr",
       "role": "visual_asset_editor_and_generator",
-      "access": "manual_web_android",
-      "connector_available": false,
+      "access": "pixlr_developer_api_pending_credentials",
+      "connector_available": true,
       "free_status": {
         "editor": "available_with_ads_and_limits",
         "ai_generation": "small_or_unspecified_free_allowance",
@@ -21,14 +21,14 @@
         "video": "https://pixlr.com/es/video-generator/",
         "pricing": "https://pixlr.com/es/pricing/"
       },
-      "integration": "Manual export/import; no direct Pixlr-GitHub or Pixlr-Floot connection verified."
+      "integration": "Official Pixlr SDK 1.3.2 installed in Floot CAPCOT Visual Desk; secure credential request created; embedded editor activation pending owner connection and verified server token flow."
     },
     {
       "id": "floot",
       "role": "internal_web_app_builder",
       "access": "chatgpt_mcp_connector",
       "connector_available": true,
-      "account_state_checked": "2026-11-06_no_projects",
+      "account_state_checked": "2026-11-06_project_created_CAPCOT_Visual_Desk",
       "free_status": {
         "build_actions_per_day": 100,
         "monthly_ai_credits": 0,
@@ -41,7 +41,7 @@
         "pricing": "https://floot.com/es/pricing",
         "docs": "https://floot.com/docs/getting-started/how-floot-works"
       },
-      "integration": "ChatGPT connector available; no CAPCOT project created yet."
+      "integration": "Floot MCP connector used to create CAPCOT Visual Desk auxiliary app; projectId 4a26d671-0b07-490a-9aa1-59f3204e3cbe; app preview available."
     }
   ],
   "workflow": {
@@ -53,7 +53,7 @@
   },
   "evidence": {
     "media_generated": false,
-    "floot_project_created": false,
+    "floot_project_created": true,
     "credits_spent": false,
     "production_publish_performed": false
   }
