@@ -10,6 +10,13 @@ Este repositorio mantiene la investigación, preproducción textual, producción
 
 ChatGPT no genera frames, imágenes, audio, voz, video o renders; no publica; no modifica \`data/*.json\`; no toca Motor U6 ni motores canónicos.
 
+## Herramientas externas complementarias
+
+- [Pixlr y Floot: capacidades, límites gratuitos y flujo de uso](docs/INTEGRACIONES_PIXLR_FLOOT.md)
+- [Registro machine-readable de integraciones](docs/integraciones_visuales.json)
+
+Pixlr se opera manualmente; Floot está conectado mediante MCP, pero la cuenta no tenía proyectos al corte del 6-nov-2026. Ninguno sustituye GitHub como fuente de verdad. Las acciones con créditos, hosting de pago o publicación requieren autorización específica.
+
 ## Fuente operativa
 
 Rama de trabajo: \`feature/capcot-video-discovery-continuity\`.
