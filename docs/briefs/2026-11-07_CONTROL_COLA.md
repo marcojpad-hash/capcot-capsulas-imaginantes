@@ -18,7 +18,7 @@
 
 ## 2. Inventario canónico, fechas y QA
 
-Los doce JSON comparan correctamente `project_id`, `fecha_objetivo`, `slot_local` y `slot_cesta) contra `data/horario_semana_2026-11-01_07.json`. La fecha de creación no es la fecha objetivo: el historial Git muestra que los doce archivos se incorporaron a `proyectos/` en el commit `7a415426f5907c2ab03687a47f3d160a595cb669`, el **2026-11-02 16:11:24 CDMX**. La última edición anterior del contenido fue el 6-nov, entre 15:17:19 y 15:17:52 CDMX. En esta auditoría solo se actualizó `narrative_qa.reviewed_at`; no se cambió narración, claim, fuente, tema ni decisión editorial.
+Los doce JSON comparan correctamente `project_id`, `fecha_objetivo`, `slot_local` y `slot_cesta` contra `data/horario_semana_2026-11-01_07.json`. La fecha de creación no es la fecha objetivo: el historial Git muestra que los doce archivos se incorporaron a `proyectos/` en el commit `7a415426f5907c2ab03687a47f3d160a595cb669`, el **2026-11-02 16:11:24 CDMX**. La última edición anterior del contenido fue el 6-nov, entre 15:17:19 y 15:17:52 CDMX. En esta auditoría solo se actualizó `narrative_qa.reviewed_at`; no se cambió narración, claim, fuente, tema ni decisión editorial.
 
 | ID canónico | Fecha objetivo | Slot / cesta | QA releído | Checks falsos / motivo crítico |
 |---|---|---|---|---|
