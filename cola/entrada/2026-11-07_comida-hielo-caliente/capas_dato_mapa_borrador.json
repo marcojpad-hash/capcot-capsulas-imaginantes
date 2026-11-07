@@ -1,0 +1,72 @@
+{
+  "verificacion": [
+    {
+      "scene_id": "scene_001",
+      "estado": "ok",
+      "motivo": "Confirmado por SRC-002: Erasto Mpemba en Tanzania notó el fenómeno con mezcla para helado."
+    },
+    {
+      "scene_id": "scene_002",
+      "estado": "ok",
+      "motivo": "Confirmado por SRC-002: Mpemba era estudiante y observó que la mezcla caliente congeló antes."
+    },
+    {
+      "scene_id": "scene_003",
+      "estado": "ok",
+      "motivo": "Confirmado por SRC-002: Denis Osborne colaboró con Mpemba y publicaron en 1969."
+    },
+    {
+      "scene_id": "scene_004",
+      "estado": "ok",
+      "motivo": "Es la premisa del problema científico descrito en ambas fuentes sobre la termodinámica del efecto."
+    },
+    {
+      "scene_id": "scene_005",
+      "estado": "ok",
+      "motivo": "Confirmado por SRC-001: Burridge y Linden (2016) no hallaron evidencia clara tras revisión."
+    },
+    {
+      "scene_id": "scene_006",
+      "estado": "ok",
+      "motivo": "Confirmado por SRC-001: El efecto sigue en disputa y sin definición aceptada."
+    }
+  ],
+  "capas": [
+    {
+      "scene_id": "scene_001",
+      "tipo": "mapa",
+      "texto": "Tanzania, África",
+      "source_id": "SRC-002"
+    },
+    {
+      "scene_id": "scene_002",
+      "tipo": "dato",
+      "texto": "Erasto Mpemba, estudiante",
+      "source_id": "SRC-002"
+    },
+    {
+      "scene_id": "scene_003",
+      "tipo": "dato",
+      "texto": "Mpemba y Osborne, 1969",
+      "source_id": "SRC-002"
+    },
+    {
+      "scene_id": "scene_004",
+      "tipo": null,
+      "texto": null,
+      "source_id": null
+    },
+    {
+      "scene_id": "scene_005",
+      "tipo": "dato",
+      "texto": "Burridge y Linden, 2016",
+      "source_id": "SRC-001"
+    },
+    {
+      "scene_id": "scene_006",
+      "tipo": "dato",
+      "texto": "Efecto aún en disputa",
+      "source_id": "SRC-001"
+    }
+  ]
+}
