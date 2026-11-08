@@ -31,11 +31,13 @@ También debe declarar `typography_identity`:
 
 Y `voice`:
 
-- Motor: `edge-tts`.
-- Voz: `es-MX-JorgeNeural`.
+- Motor primario: `edge-tts`.
+- Voz oficial: `es-MX-JorgeNeural`.
 - Idioma: `es-MX`.
 - Rate: `+7%`; pitch: `-2Hz`; pad: aproximadamente `0.3` s.
-- No sustituir por otra voz o idioma de forma silenciosa. Si falla la voz oficial, detener el montaje de voz y reportar el bloqueo para que el proceso oficial resuelva el respaldo autorizado.
+- Respaldo opcional: Piper local, únicamente cuando el agente de producción haya configurado e instalado un modelo ONNX compatible. La activación debe quedar registrada; nunca sustituir voz o motor silenciosamente. Sin modelo local configurado, detener el montaje y reportar el bloqueo.
+- Cliente reutilizable: `tools/tts/narrate.py`; dependencias y preparación: `tools/tts/requirements-edge.txt`, `tools/tts/requirements-piper.txt` y `tools/tts/fallback.md`.
+- Nota de integración: `scripts/montar_capsula.py` conserva actualmente su integración Edge TTS con marcas de tiempo por palabra. El cliente reutilizable sirve para síntesis de narración independiente; el respaldo Piper aún no está conectado al renderizador por escenas.
 
 ## Reglas de generación
 
@@ -47,6 +49,7 @@ Y `voice`:
 6. Reutilizar referencias, seed, personaje, objetos y rasgos visuales cuando aparezcan de nuevo.
 7. No cambiar idioma, voz, tipografía, paleta, iluminación o acabado entre escenas.
 8. Si un proveedor no puede mantener referencias o continuidad, usarlo solo para planos aislados que puedan igualarse en postproducción; si no se puede igualar, rechazarlo para esa cápsula.
+9. Para voz, Edge TTS sigue siendo el motor oficial. Piper puede usarse como respaldo explícito en síntesis independiente cuando exista un modelo local configurado; registrar motor real y archivo producido. No marcar Piper como voz Edge ni afirmar que conserva el timbre de Jorge.
 9. Para clips de video cortos, se permite generar por segmentos y ensamblar; cada segmento hereda la misma biblia audiovisual. Se puede continuar desde el último frame o usarlo como referencia.
 10. No permitir que una descripción abierta se convierta en collage, montaje de imágenes múltiples o secuencia de estilos no solicitada.
 
