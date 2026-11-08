@@ -92,8 +92,6 @@
 
 - Todo el contenido de CAPCOT es en español es-MX. No inventes datos, fuentes ni DOIs.
 
-- El Engine V5 canónico y el catálogo 244 son la referencia fija del motor: el trabajo se hace alrededor de ellos, no sobre ellos.
-
 - Explica en español sencillo antes de tocar algo cuando Marco dice que no entiende. Explica primero y toca después.
 
 - Cuando un login se atasca, redirige a Marco a la tarjeta segura. Nunca repitas ni guardes contraseñas o claves que pegue en el chat.
