@@ -22,6 +22,7 @@ Pixlr se opera manualmente; Floot está conectado mediante MCP, pero la cuenta n
 Rama de trabajo: \`feature/capcot-video-discovery-continuity\`.
 
 Lee primero:
+0. [Contrato de trabajo multi-modelo](https://github.com/marcojpad-hash/orquestador-central/blob/main/docs/CONTRATO_TRABAJO_MULTI_MODELO.md) y [capacidades verificadas](https://github.com/marcojpad-hash/orquestador-central/blob/main/docs/CAPACIDADES_MODELOS.md).
 1. [Plan maestro](docs/PLAN_MAESTRO_AUTOMATICO.md)
 2. [Receta](docs/RECETA_CAPSULA.md)
 3. [Guía externa](docs/GUIA_MODELO_EXTERNO.md)
