@@ -3,6 +3,10 @@
 Tablero vivo del callback. Quien delega escribe aquí. Quien recibe lee aquí.
 Reglas en `PROTOCOLO_CALLBACK.md`.
 
+Este tablero es de CAPCOT. El motor U6 es un proyecto aparte y no lleva
+delegaciones aquí. Si el callback se implementa en el motor después, será
+su propio tablero.
+
 ## Pendientes
 
 ### 1. Montar la cápsula Mpemba
@@ -21,17 +25,17 @@ Reglas en `PROTOCOLO_CALLBACK.md`.
 - ESTADO: PENDIENTE
 - NOTA: Imaginantes pausado por ahorro de créditos
 
-### 3. Subir los workflows de seguridad
+### 3. Subir los workflows de seguridad de CAPCOT
 - DE: Pecas
 - PARA: Marco (por navegador, la app de Muse no tiene permiso Workflows)
-- QUÉ: subir `gitleaks.yml` (ambos repos), `semgrep.yml` (CAPCOT) y `semgrep-motor.yml` (motor). Archivos listos en `~/workspace/security-upload/`
+- QUÉ: subir `gitleaks.yml` y `semgrep.yml` (CAPCOT). Archivos listos en `~/workspace/security-upload/`
 - PARA CUÁNDO: cuanto antes
 - ESTADO: PENDIENTE
 
 ### 4. Activar la seguridad nativa en GitHub
 - DE: Pecas
 - PARA: Marco (manual en Settings)
-- QUÉ: secret scanning y CodeQL en CAPCOT, alertas de Dependabot en ambos repos
+- QUÉ: secret scanning y CodeQL en CAPCOT, alertas de Dependabot en CAPCOT
 - PARA CUÁNDO: cuanto antes
 - ESTADO: PENDIENTE
 
@@ -39,20 +43,6 @@ Reglas en `PROTOCOLO_CALLBACK.md`.
 - DE: Pecas
 - PARA: Marco
 - QUÉ: crear la cuenta gratuita para probar el render del documento Mpemba (1080x1920, capas de texto/dato/mapa)
-- PARA CUÁNDO: sin fecha
-- ESTADO: PENDIENTE
-
-### 6. Verificar tokens.jsonl del motor
-- DE: Pecas
-- PARA: Marco
-- QUÉ: verificar `stinkbox/tokens.jsonl` del motor (17 MB). Si tiene tokens vivos, rotarlos y sacarlo del historial
-- PARA CUÁNDO: sin fecha
-- ESTADO: PENDIENTE
-
-### 7. Motor U6: lote diario automático
-- DE: Pecas
-- PARA: Copilot / motor
-- QUÉ: ponerle cron a `fabrica-lote-diario.yml` (hoy solo tiene workflow_dispatch), manifiesto de dependencias y rutas parametrizadas, cohorte de 20 casos ciegos
 - PARA CUÁNDO: sin fecha
 - ESTADO: PENDIENTE
 
