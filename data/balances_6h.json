@@ -1825,5 +1825,70 @@
    ]
   ],
   "nota_flujo": "Corte vs 4-nov 20:08 (~66 h; los balances 6h intermedios no se grabaron: OAuth YT revocado). YT 27,308→27,818 (+510 vistas), likes 901→910 (+9), subs 72→72 (+0). 50 Shorts públicos (2 nuevos). Lo empujan el polvo de África (145→268) y los recientes: polvo/oro Rv998OZDUYc 111 (nuevo), miel 16→59, bioluminiscencia 16→58, dorado 53→90. 36 de 50 se movieron; el catálogo viejo sigue casi plano. Hipo Rg-iTgMExWw 0→1; arena m4RqQRaz55k (nuevo) en 0. TT perfil: seguidores 28→28, likes 688→697 (+9), videos 51→53 (+2). Cifras YT por listado/metadatos públicos (API OAuth: invalid_grant)."
+ },
+ {
+  "hora_cdmx": "2026-11-07T20:14-06:00",
+  "base_youtube": "2026-11-07T14:10",
+  "base_tiktok": "2026-11-07T14:10",
+  "youtube_totales": {
+   "view": 27865,
+   "like": 911,
+   "comment": 26
+  },
+  "suscriptores": 72,
+  "shorts_publicos": 51,
+  "delta_youtube": {
+   "view": 47,
+   "like": 1,
+   "comment": 0,
+   "suscriptores": 0,
+   "horas_desde_base": 6,
+   "nota": "Δ de ~6 h vs el corte 7-nov 14:10 CDMX."
+  },
+  "tiktok_totales": null,
+  "seguidores_tiktok": 28,
+  "likes_perfil_tiktok": 701,
+  "videos_tiktok": 55,
+  "delta_tiktok": {
+   "seguidores": 0,
+   "likes_perfil": 4,
+   "videos": 2,
+   "nota": "Solo perfil público; sin vistas por video."
+  },
+  "ranking_crecimiento": [
+   [
+    "YT En Venus el año acaba antes de dos días (nuevo)",
+    16
+   ],
+   [
+    "YT Esta arena canta sin una sola bocina",
+    12
+   ],
+   [
+    "YT Papel picado, parte 1: nació en una tienda",
+    4
+   ],
+   [
+    "YT El coral blanqueado que volvió a recuperar",
+    2
+   ],
+   [
+    "YT El hongo que hace ver gente diminuta",
+    2
+   ],
+   [
+    "YT Un ave de hace 150 millones de años con di",
+    2
+   ],
+   [
+    "YT Serpientes que ruedan: el mito era real",
+    2
+   ],
+   [
+    "YT El pimiento verde y el rojo son el mismo f",
+    2
+   ]
+  ],
+  "nota_flujo": "Corte vs 7-nov 14:10 (~6 h). YT 27,818→27,865 (+47 vistas), likes 910→911 (+1), subs 72→72 (+0). 51 Shorts públicos (1 nuevo). Lo empujan Venus phVfyHp3CnY 16 (nuevo) y arena m4RqQRaz55k 0→12; el resto del catálogo apenas se mueve (papel picado parte 1 1376→1380; 13 de 51 se movieron, casi todo +1/+2). Hipo Rg-iTgMExWw 1→1. TT perfil: seguidores 28→28, likes 697→701 (+4), videos 53→55 (+2). Cifras YT por listado/metadatos públicos (API OAuth: invalid_grant)."
  }
 ]
