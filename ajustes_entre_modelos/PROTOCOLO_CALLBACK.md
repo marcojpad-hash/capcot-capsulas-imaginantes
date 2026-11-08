@@ -65,6 +65,17 @@ El workflow no se puede subir por API (la app de Muse no tiene permiso
 Workflows). Está listo en `~/workspace/callback-aviso/` para subirlo por
 navegador con la cuenta de Marco, igual que los workflows de seguridad.
 
+## El orquestador
+
+El orquestador es el script `tools/orquestador/orquestador.py` con el modelo
+abierto `openai/gpt-oss-120b` (pesos abiertos, Apache 2.0) por la API gratuita
+de Groq. Lee el tablero y el protocolo y escribe un reporte con qué está
+atorado, quién debe qué a quién y cuál es el siguiente paso de cada pendiente.
+
+Copilot ya NO es el orquestador: su uso libre es limitado y se murió en ese
+papel. Copilot sigue con el encargo del repositorio, pero la coordinación
+la lleva el orquestador, que no tiene saldo que se agote.
+
 ## El router
 
 Pecas es el router del callback. Revisa el tablero y el correo y avisa qué
