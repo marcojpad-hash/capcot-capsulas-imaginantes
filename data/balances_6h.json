@@ -1890,5 +1890,78 @@
    ]
   ],
   "nota_flujo": "Corte vs 7-nov 14:10 (~6 h). YT 27,818→27,865 (+47 vistas), likes 910→911 (+1), subs 72→72 (+0). 51 Shorts públicos (1 nuevo). Lo empujan Venus phVfyHp3CnY 16 (nuevo) y arena m4RqQRaz55k 0→12; el resto del catálogo apenas se mueve (papel picado parte 1 1376→1380; 13 de 51 se movieron, casi todo +1/+2). Hipo Rg-iTgMExWw 1→1. TT perfil: seguidores 28→28, likes 697→701 (+4), videos 53→55 (+2). Cifras YT por listado/metadatos públicos (API OAuth: invalid_grant)."
+ },
+ {
+  "hora_cdmx": "2026-11-08T08:07-06:00",
+  "base_youtube": "2026-11-07T20:14",
+  "base_tiktok": "2026-11-07T20:14",
+  "youtube_totales": {
+   "view": 27949,
+   "like": 911,
+   "comment": 26
+  },
+  "suscriptores": 72,
+  "shorts_publicos": 53,
+  "delta_youtube": {
+   "view": 84,
+   "like": 0,
+   "comment": 0,
+   "suscriptores": 0,
+   "horas_desde_base": 12,
+   "nota": "Δ de ~12 h vs el corte 7-nov 20:14 CDMX (entre 20:00 y 08:00 no hay corrida de balance 6h)."
+  },
+  "tiktok_totales": {
+   "view": 14024,
+   "like": 710,
+   "comment": 4
+  },
+  "seguidores_tiktok": null,
+  "likes_perfil_tiktok": null,
+  "videos_tiktok": 57,
+  "delta_tiktok": {
+   "seguidores": null,
+   "likes_perfil": null,
+   "videos": 2,
+   "nota": "Primera lectura con vistas/likes por video: 14024 vistas, 710 likes, 4 comentarios en 57 videos. No hay Δ de vistas comparable (el corte previo no traía desglose; solo perfil: 28 seguidores, 701 likes, 55 videos). Seguidores no se pudieron leer (WAF en la página de perfil)."
+  },
+  "ranking_crecimiento": [
+   [
+    "YT En Venus el año acaba antes de dos días",
+    38
+   ],
+   [
+    "YT Esta arena canta sin una sola bocina",
+    20
+   ],
+   [
+    "YT El refri puede endurecer tu pan más rápido (nuevo)",
+    17
+   ],
+   [
+    "YT Titanoboa: la serpiente más grande que exi",
+    3
+   ],
+   [
+    "YT Gusanos sin boca que se comen los huesos",
+    2
+   ],
+   [
+    "YT Serpiente voladora: cómo planea sin alas",
+    1
+   ],
+   [
+    "YT Las abejas de miel también hacen bullying",
+    1
+   ],
+   [
+    "YT ¿Aves que temen a mujeres?",
+    1
+   ],
+   [
+    "YT El mar que llegó en Navidad: El Niño",
+    1
+   ]
+  ],
+  "nota_flujo": "Corte vs 7-nov 20:14 (~12 h; entre 20:00 y 08:00 no hay corrida de balance). YT 27,865→27,949 (+84 vistas), likes 911→911 (+0), subs 72→72 (+0). 53 Shorts públicos (+2). Lo empujan Venus phVfyHp3CnY 16→54 (+38) y arena m4RqQRaz55k 12→32 (+20); el pan PTk2QNMkOn4 (dato de anoche) entra con 17 y las palomitas zTP5akrGA9M (07:00) salen en 0. Vs el snapshot de cierre 23:07 (27,903 vistas, 51 Shorts) hay +46 vistas, casi todo en Venus (+14), arena (+6) y el pan nuevo. El resto del catálogo sigue casi plano (Titanoboa +3, gusanos +2, y cuatro videos +1). Hipo Rg-iTgMExWw 1→1; polvo de África 268, polvo/oro 111 y miel 59 sin cambio. TT: primera lectura con vistas/likes por video (yt-dlp): 57 videos (+2), 14,024 vistas y 710 likes sumados; comentarios 4. No hubo lectura fresca de seguidores (WAF en la página de perfil); el corte 20:14 tenía 28 seguidores y 701 likes de perfil. Cifras YT por listado/metadatos públicos (API OAuth: invalid_grant)."
  }
 ]
