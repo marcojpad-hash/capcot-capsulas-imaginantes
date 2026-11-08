@@ -25,6 +25,6 @@ python tools/tts/narrate.py guion.txt audio/narracion.mp3 --engine auto --piper-
 - Para exigir Edge y bloquear cualquier sustitución: `--engine edge`.
 - Para ejecutar Piper directamente: `--engine piper --piper-model /ruta/modelo.onnx`.
 
-Catálogo y documentación: https://github.com/OHF-Voice/piper1-gpl · https://huggingface.co/rhasspy/piper-voices
+Catálogo y documentación: https://github.com/OHF-Voice/piper1-gpl · https://github.com/OHF-Voice/piper1-gpl/blob/main/docs/CLI.md · https://huggingface.co/rhasspy/piper-voices
 
 **Licencias:** revisar la licencia del modelo de voz concreto antes de usarlo en una publicación comercial. La licencia del runtime no sustituye la licencia del modelo.
