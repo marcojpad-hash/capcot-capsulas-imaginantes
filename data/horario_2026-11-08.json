@@ -1,0 +1,39 @@
+{
+  "fecha": "2026-11-08",
+  "tz": "America/Mexico_City",
+  "actualizado": "2026-11-08T07:53:00-06:00",
+  "nota": "Verificación rutina publicar TikTok 07:00 CDMX. Palomitas ya estaba en YT+TT+FB; no se subió nada.",
+  "slots": [
+    {
+      "hora": "07:00",
+      "cesta": "comida",
+      "id": "2026-11-05_comida-palomitas",
+      "titulo": "Tus palomitas explotan por dentro #Shorts",
+      "estado": "publicado_yt_tt_fb",
+      "yt_id": "zTP5akrGA9M",
+      "youtube_url": "https://youtube.com/shorts/zTP5akrGA9M",
+      "tiktok": "publicado",
+      "tiktok_url": "https://www.tiktok.com/@datosyociosidades/video/7705593452003691794",
+      "tiktok_post_id": "7705593452003691794",
+      "facebook": "publicado",
+      "mp4": "/workspace/capcot_prod_20261108_semana/palomitas/capsula_v2.mp4",
+      "facebook_url": "https://www.facebook.com/reel/1167496802382795/",
+      "facebook_post_id": "1167496802382795"
+    },
+    {
+      "hora": "23:30",
+      "cesta": "dato_del_dia",
+      "id": "2026-11-07_dato-clavo-te-cocina",
+      "titulo": "¿Qué queda en tu cocina después de limpiar? #shorts",
+      "estado": "programado_yt_tt",
+      "yt_id": "EwZ3dHalUn0",
+      "youtube_url": "https://youtube.com/shorts/EwZ3dHalUn0",
+      "tiktok": "programado",
+      "tiktok_ui": "Nov 9, 12:30 AM (GMT-5) New York",
+      "facebook": "programado",
+      "nota": "oEmbed YT 403 a las 07:49, coherente con programado/privado hasta las 23:30. Studio TT lo mostró Scheduled, Everyone, deshabilitado.",
+      "facebook_ui": "Sunday, Nov 8 at 11:30 PM",
+      "facebook_visibilidad": "Público"
+    }
+  ]
+}
