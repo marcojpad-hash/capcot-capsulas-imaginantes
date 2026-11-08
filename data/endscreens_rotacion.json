@@ -1,11 +1,11 @@
 {
-  "fecha": "2026-11-07",
+  "fecha": "2026-11-08",
   "tipo": "endscreens_rotacion",
-  "actualizado_cdmx": "2026-11-07T17:52-06:00",
-  "motivo": "17:52 Short nuevo «En Venus el año acaba antes de dos días» phVfyHp3CnY (1 vista) → arena m4RqQRaz55k (1). Vistas planas vs mapa 14:19 (Mz-IVF +2, -WBW +1, m4Rq 0→1, YKld +1); sin acelerados, no redirigí ganadores hacia Venus. Fijos intactos. OAuth YT API sigue invalid_grant.",
+  "actualizado_cdmx": "2026-11-08T07:45-06:00",
+  "motivo": "07:45 Short nuevo «El refri puede endurecer tu pan» PTk2QNMkOn4 (17 vistas) → capsaicina 7ay4KLS8h8I (10), vía campo Vídeo relacionado en Studio. Venus phVf 54 (ya apunta a arena m4Rq 32 → hipo Rg-iT 1). Palomitas zTP5akrGA9M recién publicado (0), sin destino aún. Fijos intactos.",
   "vistas_ref": {
-    "phVfyHp3CnY": 1,
-    "m4RqQRaz55k": 1,
+    "phVfyHp3CnY": 54,
+    "m4RqQRaz55k": 32,
     "Rv998OZDUYc": 111,
     "4xylLT3vSIU": 58,
     "jpDyCX6zSgQ": 59,
@@ -54,7 +54,9 @@
     "gIjJ0YKYQ8M": 1223,
     "3bhntOcKHPk": 1452,
     "r1AhsPOAS_o": 1402,
-    "ZrUtKs7Ty7U": 1345
+    "ZrUtKs7Ty7U": 1345,
+    "PTk2QNMkOn4": 17,
+    "zTP5akrGA9M": 0
   },
   "mapa": {
     "r1AhsPOAS_o": "AJR6kcnnDig",
@@ -106,7 +108,8 @@
     "4xylLT3vSIU": "OwfxfQ4RPSo",
     "Rv998OZDUYc": "7ay4KLS8h8I",
     "m4RqQRaz55k": "Rg-iTgMExWw",
-    "phVfyHp3CnY": "m4RqQRaz55k"
+    "phVfyHp3CnY": "m4RqQRaz55k",
+    "PTk2QNMkOn4": "7ay4KLS8h8I"
   },
   "pendiente_studio": false,
   "nota": "Aplicado en YouTube Studio Editor > Pantalla final (video específico). Búsqueda: pegar youtube.com/watch?v=ID en 'Buscar vídeos de otros canales' (tus vídeos no lista Shorts). Sin suscripción ni tarjetas. Actualización 26-oct 19:49: la lista «Elegir un vídeo específico» ya muestra los Shorts.",
