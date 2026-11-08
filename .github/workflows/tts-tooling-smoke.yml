@@ -28,7 +28,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-      - name: Compile TTS client
+      - name: Install Edge TTS dependency\n        run: python -m pip install -r tools/tts/requirements-edge.txt\n      - name: Compile TTS client
         run: python -m py_compile tools/tts/narrate.py
       - name: Verify CLI contract
         run: python tools/tts/narrate.py --help
