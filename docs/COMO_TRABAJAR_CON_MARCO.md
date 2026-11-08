@@ -82,7 +82,9 @@
 
 - Pecas prepara borradores, verifica fuentes y narraciones, coordina entre modelos y revisa YouTube Studio. Pecas no monta el MP4 final ni publica.
 
-- Copilot es el modelo nativo y gratuito de GitHub y es el que tiene el encargo del repositorio.
+- Copilot es el modelo nativo y gratuito de GitHub y es el que tiene el encargo del repositorio. Pero ya NO es el orquestador: su uso libre es limitado y se murió en ese papel.
+
+- El orquestador es un modelo abierto con API gratuita: `openai/gpt-oss-120b` (pesos abiertos, Apache 2.0) por Groq. No tiene saldo que se agote y no gasta tokens de Muse. El cableado es el script `tools/orquestador/orquestador.py`, que lee el tablero y escribe el reporte de qué está atorado.
 
 - Imaginantes puede estar pausado por ahorro de créditos. Eso no cambia el reparto, solo retrasa el montaje.
 
