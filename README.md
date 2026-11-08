@@ -12,7 +12,7 @@ ChatGPT no genera frames, imágenes, audio, voz, video o renders; no publica; no
 
 ## Voz y narración reutilizable
 
-- Cliente TTS versionado: [`tools/tts/narrate.py`](tools/tts/narrate.py).
+- Cliente TTS versionado: [`tools/tts/narrate.py`](tools/tts/narrate.py) y [guía operativa](docs/TTS_CAPCOT.md).
 - Skill de producción: [`.claude/skills/ai-video/SKILL.md`](.claude/skills/ai-video/SKILL.md).
 - Edge TTS es el motor primario; Piper local es un respaldo opcional cuando el agente configura un modelo ONNX. Preparación y licencias: [`tools/tts/fallback.md`](tools/tts/fallback.md).
 - Las dependencias se instalan en el entorno ejecutor desde los `requirements-*.txt`; el repositorio no contiene paquetes instalados ni modelos binarios.
