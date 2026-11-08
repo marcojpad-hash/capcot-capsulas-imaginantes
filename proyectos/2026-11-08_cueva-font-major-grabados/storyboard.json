@@ -1,0 +1,152 @@
+{
+  "project_id": "2026-11-08_cueva-font-major-grabados",
+  "title": "Grabados de 26 mil años escondidos a plena vista",
+  "language": "es-MX",
+  "aspect_ratio": "9:16",
+  "target_duration_seconds": 82,
+  "trend_source": {
+    "tipo": "noticia_cientifica",
+    "medio": "Nature / Antiquity",
+    "url": "https://www.nature.com/articles/d41586-026-03585-z",
+    "estudio_doi": "10.15184/aqy.2026.10447",
+    "fecha_publicacion": "2026-11-05",
+    "termino": "grabados paleoliticos Cova de la Font Major",
+    "fecha_consulta": "2026-11-08"
+  },
+  "estilo_id": "pintura_rupestre",
+  "estilo_visual": "Pintura rupestre",
+  "estructura": "historia",
+  "voice": {
+    "engine": "edge-tts",
+    "voice_id": "es-MX-JorgeNeural",
+    "rate": "+7%",
+    "pitch": "-2Hz",
+    "pad_seconds": 0.3,
+    "modo_pausas": "continuo"
+  },
+  "sources": [
+    {
+      "id": "SRC-001",
+      "cita_corta": "Vergès Bosch & Salas-Altès (2026). Filling gaps: the Palaeolithic rock art of the Cova de la Font Major. Antiquity.",
+      "url": "https://doi.org/10.15184/aqy.2026.10447",
+      "doi": "10.15184/aqy.2026.10447",
+      "accessed": "2026-11-08",
+      "supports": ["280 motivos grabados", "55 figuras de animales", "tercer mayor conjunto mediterráneo ibérico", "descubiertos en 2019", "presencia humana 40 810–25 850 cal BP"],
+      "ref_display": "Antiquity 2026 DOI 10.15184/aqy.2026.10447"
+    },
+    {
+      "id": "SRC-002",
+      "cita_corta": "Simms (2026). The palaeo cave art that hid in plain sight for 26,000 years. Nature.",
+      "url": "https://doi.org/10.1038/d41586-026-03585-z",
+      "doi": "10.1038/d41586-026-03585-z",
+      "accessed": "2026-11-08",
+      "supports": ["cientos de grabados en cueva visitada", "algunos con signos de animación"],
+      "ref_display": "Nature news 2026"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_001",
+      "arc": "hook_medias_res",
+      "duration_seconds": 8.0,
+      "narration": "Miles de turistas pasaron junto a caballos de 26 mil años y nadie los vio.",
+      "on_screen_text": "Caballos escondidos",
+      "visual_description": "Pared de cueva con grabado de caballo iluminado de lado, sombras profundas",
+      "image_prompt": "prehistoric cave painting on rough rock wall, red ochre and charcoal pigments, hand stencils, primitive figures, torchlight, vertical 9:16, no text + side-lit cave wall with engraved horse figure, deep shadows, rough rock texture",
+      "source_ids": ["SRC-001", "SRC-002"],
+      "asset_filename": "frames/scene_001.jpg",
+      "ambiente": "viento",
+      "sfx": ["cave_drip", "torch"]
+    },
+    {
+      "id": "scene_002",
+      "arc": "desarrollo",
+      "duration_seconds": 10.0,
+      "narration": "En la Cova de la Font Major, en Cataluña, arqueólogos del IPHES encontraron 280 grabados paleolíticos en 2019.",
+      "on_screen_text": "280 grabados",
+      "visual_description": "Entrada de cueva y galería interior con figuras grabadas",
+      "image_prompt": "prehistoric cave painting on rough rock wall, red ochre and charcoal pigments, hand stencils, primitive figures, torchlight, vertical 9:16, no text + cave entrance and gallery with multiple animal engravings on walls",
+      "source_ids": ["SRC-001"],
+      "asset_filename": "frames/scene_002.jpg",
+      "ambiente": "viento",
+      "sfx": ["echo", "footsteps"]
+    },
+    {
+      "id": "scene_003",
+      "arc": "desarrollo",
+      "duration_seconds": 12.0,
+      "narration": "Hay 55 figuras de animales: caballos, ciervos, uros y un oso frontal. Es el tercer conjunto más grande de la costa mediterránea ibérica.",
+      "on_screen_text": "55 animales",
+      "visual_description": "Detalle de grabados de caballo y oso en roca",
+      "image_prompt": "prehistoric cave painting on rough rock wall, red ochre and charcoal pigments, hand stencils, primitive figures, torchlight, vertical 9:16, no text + close-up of engraved horse and frontal bear on ochre rock",
+      "source_ids": ["SRC-001"],
+      "asset_filename": "frames/scene_003.jpg",
+      "ambiente": "viento",
+      "sfx": ["scratch", "torch"]
+    },
+    {
+      "id": "scene_004",
+      "arc": "desarrollo",
+      "duration_seconds": 11.0,
+      "narration": "Algunas secuencias muestran el mismo animal con patas y cabeza en distintas posiciones, como una animación primitiva.",
+      "on_screen_text": "Como animación",
+      "visual_description": "Secuencia de figuras de animal en movimiento sobre la pared",
+      "image_prompt": "prehistoric cave painting on rough rock wall, red ochre and charcoal pigments, hand stencils, primitive figures, torchlight, vertical 9:16, no text + sequence of animal figures suggesting movement on cave wall",
+      "source_ids": ["SRC-002"],
+      "asset_filename": "frames/scene_004.jpg",
+      "ambiente": "viento",
+      "sfx": ["wind", "drip"]
+    },
+    {
+      "id": "scene_005",
+      "arc": "cierre_historia",
+      "duration_seconds": 10.0,
+      "narration": "La presencia humana en la cueva data de entre 40 mil y 25 mil años atrás. Los grabados reescriben el mapa del arte paleolítico en el noreste ibérico.",
+      "on_screen_text": "Mapa reescrito",
+      "visual_description": "Mapa de la península ibérica con punto en Cataluña y figuras rupestres",
+      "image_prompt": "prehistoric cave painting on rough rock wall, red ochre and charcoal pigments, hand stencils, primitive figures, torchlight, vertical 9:16, no text + Iberian peninsula map with Catalonia highlighted and cave art motifs",
+      "source_ids": ["SRC-001"],
+      "asset_filename": "frames/scene_005.jpg",
+      "ambiente": "viento",
+      "sfx": ["map_rustle"]
+    },
+    {
+      "id": "scene_006",
+      "arc": "reflexion_o_pregunta",
+      "duration_seconds": 12.0,
+      "narration": "¿Cuántos secretos más caminamos sin ver cada día? Esto fue Datos y ociosidades.",
+      "on_screen_text": "¿Cuántos más?",
+      "visual_description": "Silueta de visitante pasando junto a la pared grabada sin notar las figuras",
+      "image_prompt": "prehistoric cave painting on rough rock wall, red ochre and charcoal pigments, hand stencils, primitive figures, torchlight, vertical 9:16, no text + silhouette of modern visitor walking past engraved cave wall without noticing",
+      "source_ids": ["SRC-001"],
+      "asset_filename": "frames/scene_006.jpg",
+      "ambiente": "viento",
+      "sfx": ["footsteps_fade"]
+    }
+  ],
+  "cortinilla_fuentes": {
+    "duration_seconds": 6,
+    "titulo": "Fuentes",
+    "aviso": "Imágenes generadas con IA. Voz sintética. Audio sintetizado.",
+    "firma": "Datos y ociosidades · @datosyociosidades"
+  },
+  "export": {
+    "filename": "capsula.mp4",
+    "resolution": "1080x1920",
+    "fps": 30,
+    "loudness_lufs": -14
+  },
+  "capas": [
+    {
+      "tipo": "mapa",
+      "region": [-10, 5, 35, 45],
+      "puntos": [{"lon": 1.1, "lat": 41.4, "etiqueta": "Cova de la Font Major"}]
+    },
+    {
+      "tipo": "dato",
+      "valor": "280",
+      "etiqueta": "motivos grabados",
+      "fuente": "SRC-001"
+    }
+  ]
+}
