@@ -48,7 +48,25 @@ ChatGPT no tiene cron propio: esta instrucción se activa cuando Mj la pega en e
 
 ---
 
-## (Cubierto con reserva) Dato 7 nov 2026, slot 23:30 CDMX — ChatGPT no entregó el paquete; reserva evergreen pan YT PTk2QNMkOn4 programada 23:30 CDMX
+## (Cubierto) Dato 8 nov 2026, slot 23:30 CDMX — NO entregar paquete nuevo
+
+> Recheck Imaginantes 8-nov ~10:05 CDMX (corrida ≈10:00 de la rutina «dato del día»).
+> **NO hay** `cola/entrada/2026-11-08_dato-*`. El único paquete «dato» en `cola/entrada/` es `2026-11-07_dato-clavo-te-cocina/` (fecha 7-nov).
+> El slot **23:30 de HOY ya está ocupado** por ese dato del 7-nov, que llegó tarde y se programó para el 8-nov 23:30 CDMX:
+> - project_id: `2026-11-07_dato-clavo-te-cocina`
+> - Título: «¿Qué queda en tu cocina después de limpiar?»
+> - YT [EwZ3dHalUn0](https://youtube.com/shorts/EwZ3dHalUn0) programado (oEmbed 403 coherente con privado/programado)
+> - TT Scheduled Nov 9, 12:30 AM GMT-5 New York (= 23:30 CDMX), Everyone
+> - FB Scheduled Sunday Nov 8 at 11:30 PM, Público
+> Fuente de verdad: `data/horario_2026-11-08.json` (actualizado 07:53 CDMX) y `docs/briefs/2026-11-08_RADAR_CAPCOT.md` (NO_DUPLICAR).
+> El 07:00 de hoy también está cubierto: palomitas `2026-11-05_comida-palomitas`, YT [zTP5akrGA9M](https://youtube.com/shorts/zTP5akrGA9M), publicado YT+TT+FB.
+>
+> **ChatGPT: NO generar ni entregar** un `cola/entrada/2026-11-08_dato-*`. No hay slot 23:30 libre el 8-nov. No preparar el dato del 9-nov hoy (regla: mismo día, sin anticipación).
+> **Grok app: NO montar, no regenerar frames ni reprogramar** el clavo; ya está en parrilla. El paquete textual en `cola/entrada/2026-11-07_dato-clavo-te-cocina/` es archivo, no pedido de producción.
+
+
+## (Cubierto con reserva) Dato 7 nov 2026, slot 23:30 CDMX — reserva evergreen pan YT PTk2QNMkOn4; el clavo se programó al 8-nov 23:30
+> Actualización 8-nov ~10:05: el paquete SÍ está en `cola/entrada/2026-11-07_dato-clavo-te-cocina/` y quedó programado para el **8-nov 23:30** (YT EwZ3dHalUn0, TT+FB). El 7-nov 23:30 se cubrió con la reserva pan (PTk2QNMkOn4). El brief de abajo sigue como registro, no como pedido vigente.
 > Guardia nocturna 7-nov ~22:20 CDMX: no hubo `cola/entrada/2026-11-07_dato-clavo-te-cocina/`. Se programó la reserva pan (capsula_v2) en YT+TT+FB a las 23:30 CDMX. El brief de abajo queda como registro, no como pedido vigente.
 > Brief dejado por Imaginantes 7-nov ~16:10 CDMX (la corrida de ~10:00 falló; este es el primer brief del día). **NO hay paquete «dato» del 7-nov** en `cola/entrada/` (hay `barreleye-4k`, `comida-hielo-caliente`/Mpemba y `arboles-comunicacion-bosque`; ninguno es `*_dato-*` ni está asignado a 23:30). El slot en `data/horario_semana_2026-11-01_07.json` sigue como `2026-11-07_dato-TBD-news` / `pendiente_dato_dia`.
 > Entregar HOY antes de las **21:00 CDMX** en `cola/entrada/2026-11-07_dato-clavo-te-cocina/` (`storyboard.json` + `fuentes.md` + `ESTADO_EJECUCION.md` = `PREPARADO_PENDIENTE_REVISION_GROK`) para que Grok app haga QA→frames→montaje→YT+TT+FB a **23:30 CDMX** (TT AI ON, FB sin AI; UI Nueva York = CDMX+1 h).

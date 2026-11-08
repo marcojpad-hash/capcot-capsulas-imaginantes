@@ -1,3 +1,5 @@
+> **ACTUALIZADO 8-nov ~10:05 CDMX:** el slot 23:30 de HOY 8-nov ya está cubierto con `2026-11-07_dato-clavo-te-cocina` (YT EwZ3dHalUn0; TT+FB programados a las 23:30 CDMX). NO hay `cola/entrada/2026-11-08_dato-*` y **NO se pide uno**: no hay hueco. Ver `PARA_CHATGPT_dato_del_dia.md` § «Cubierto» 8 nov. No gastar preproducción en un dato 8-nov ni adelantar el del 9-nov.
+
 # PARA CHATGPT — Faltantes reales (31 oct 2026)
 
 > **ACTUALIZADO 1-nov 04:30 CDMX → el plan vigente es `PARA_CHATGPT_hasta_08nov.md`** (no-tocar, prioridad estricta, formato). **PRIORIDAD #1: kids 3-nov 07:00 NUEVO**, luego datos 23:30, luego rewrite 5–7 y al final Machu/cielo azul. No gastar créditos del bot Imaginantes.

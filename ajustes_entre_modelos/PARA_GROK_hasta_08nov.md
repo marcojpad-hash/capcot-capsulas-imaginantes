@@ -1,3 +1,5 @@
+> **8-nov ~10:05 CDMX (rutina dato del día):** el 23:30 de hoy ya está programado — `2026-11-07_dato-clavo-te-cocina` («¿Qué queda en tu cocina después de limpiar?»), YT [EwZ3dHalUn0](https://youtube.com/shorts/EwZ3dHalUn0), TT Scheduled Nov 9 12:30 AM GMT-5 NY (= 23:30 CDMX) Everyone, FB Sunday Nov 8 11:30 PM Público. NO hay `cola/entrada/2026-11-08_dato-*`. **NO montar, no regenerar frames ni reprogramar.** El paquete en `cola/entrada/2026-11-07_dato-clavo-te-cocina/` es archivo, no pedido de producción.
+
 # PARA GROK (app principal, NO el bot) — Plan hasta el 8-nov-2026 (CDMX)
 
 > Mj: el bot Imaginantes ya va en ~66% de créditos en 1.5 días. **Tú usas tus propios créditos** (GenerateImage de la app). Lo que hace el bot: docs y commits.
