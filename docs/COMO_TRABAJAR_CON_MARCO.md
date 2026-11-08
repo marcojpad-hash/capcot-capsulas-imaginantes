@@ -42,6 +42,16 @@
 
 - Guarda el resultado donde corresponde: los informes y evaluaciones van al repo en docs, para que no se pierdan en el chat.
 
+## La voz se mete en el repo, no se descarga
+
+- La voz no es un archivo que se baja. edge-tts es un cliente que llama al servicio de Microsoft. El cliente sí se mete en el repo como script más requirements, para que cualquier modelo que abra el proyecto lo use sin instalar nada a mano.
+
+- Para narrar usa siempre `tools/tts/narrate.py` con la voz oficial es-MX-JorgeNeural, rate +7% y pitch -2Hz. No uses ElevenLabs, no uses OpenAI TTS, no inventes otra voz.
+
+- Si edge-tts falla por red o por cambio de endpoint, el fallback es Piper offline con `tools/tts/narrate_piper.py`. La voz es menos natural, pero el video sí se genera.
+
+- Nunca digas que no se puede sin haber probado el fallback y sin haber dejado el kit en el repo. El "no se puede aquí" no es "no se puede en ningún lado": en el box edge-tts sí corre.
+
 ## Quién hace qué
 
 - ChatGPT investiga y escribe el storyboard, y deja el paquete en cola/entrada.
