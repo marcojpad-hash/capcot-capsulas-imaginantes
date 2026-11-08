@@ -42,6 +42,22 @@
 
 - Guarda el resultado donde corresponde: los informes y evaluaciones van al repo en docs, para que no se pierdan en el chat.
 
+## Cuando algo no puede ser lo que es, busca lo que funciona igual
+
+- El método de Marco no es un bicondicional. No es "A si y solo si B". Es: cuando A se parece a B, por qué no podría funcionar como B.
+
+- Escribe primero qué tiene que HACER, no qué tiene que SER. La función, no el nombre. Narrar en español gratis, no "edge-tts".
+
+- Busca qué se le parece y en qué se parece. Ese es el análogo.
+
+- Nombra qué lo impide en este momento. La circunstancia: sin internet, sin clave, sin tokens, bloqueado en esta máquina. El impedimento es de circunstancia, no de la idea.
+
+- Pregunta de qué otra forma se puede presentar para que tenga la misma función. Un adaptador, un fallback, un envoltorio, otro motor. Si se presenta de otra manera y hace lo mismo, sirve.
+
+- Prueba la función, no el nombre. Si hace lo que tiene que hacer, es eso, aunque se llame distinto.
+
+- Esto ya existe y tiene nombre. En programación se llama duck typing: si camina como pato y suena como pato, es pato. Y el patrón adaptador: hacer que una cosa presente la misma cara que otra. Aquí se aplica igual: edge-tts no podía ser edge-tts en esta máquina, la función era narrar en español gratis, Piper hace esa función, así que Piper es la voz aquí.
+
 ## La voz se mete en el repo, no se descarga
 
 - La voz no es un archivo que se baja. edge-tts es un cliente que llama al servicio de Microsoft. El cliente sí se mete en el repo como script más requirements, para que cualquier modelo que abra el proyecto lo use sin instalar nada a mano.
