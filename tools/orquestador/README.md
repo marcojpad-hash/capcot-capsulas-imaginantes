@@ -21,6 +21,25 @@ pendiente.
 - No gasta tokens de Muse. Corre unas pocas veces al día, muy por debajo
   de los límites de velocidad de la API gratuita.
 
+## El análogo a costo cero de la máquina persistente
+
+Una máquina persistente de verdad no se puede crear de la nada a costo
+cero: alguien tiene que hospedarla. El análogo es GitHub Actions en este
+repo público: corre el orquestador por horario sin pagar VM y guarda el
+reporte en el repo.
+
+- El workflow es `.github/workflows/orquestador.yml` (listo en
+  `~/workspace/orquestador-workflow/`, se sube por navegador como los
+  demás workflows). Corre todos los días a las 07:00 CDMX y cuando se
+  dispare a mano.
+- Necesita el secreto `GROQ_API_KEY` en Settings > Secrets and variables >
+  Actions. La clave se crea en console.groq.com (nivel gratuito). Pecas
+  no puede ponerla: la clave guardada en la bóveda no se puede leer de
+  vuelta.
+- Para eso el script acepta `--api-key-env GROQ_API_KEY`: en Actions lee
+  la clave de esa variable y llama directo a la API. En la máquina de
+  Pecas no se usa: ahí va por el conector.
+
 ## Uso
 
 ```sh
