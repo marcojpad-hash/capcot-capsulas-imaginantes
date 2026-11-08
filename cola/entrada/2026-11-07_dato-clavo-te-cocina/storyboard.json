@@ -1,0 +1,274 @@
+{
+  "_schema": "CAPCOT_STORYBOARD_TEXT_V2",
+  "project_id": "2026-11-07_dato-clavo-te-cocina",
+  "serie": "Datos y ociosidades",
+  "title": "El clavo que encontró bacterias después de limpiar",
+  "titulo": "¿Qué queda en tu cocina después de limpiar?",
+  "language": "es-MX",
+  "aspect_ratio": "9:16",
+  "target_duration_seconds": 84,
+  "estructura": "pregunta",
+  "audience": "Público general",
+  "occasion": "Cápsula vertical de divulgación",
+  "resumen": "Un estudio aisló bacterias en superficies de una cocina después de la limpieza rutinaria y evaluó té de clavo en laboratorio. El resultado es prometedor, pero no valida una receta doméstica ni sustituye la limpieza.",
+  "trend_source": {
+    "termino": "té de clavo y bacterias en superficies de cocina",
+    "fecha_publicacion": "2026-10-30",
+    "url": "https://doi.org/10.1186/s12866-026-05875-y"
+  },
+  "editorial_status": "PREPARADO_PENDIENTE_REVISION_GROK",
+  "arco": {
+    "hook_medias_res": "Pasas el trapo por la cocina, guardas el jabón… y aun así pueden quedar bacterias pegadas a la superficie.",
+    "desarrollo": "Un equipo tomó muestras después de la limpieza rutinaria en cincuenta puntos de una cocina de comida preparada. Recuperó veintidós aislados de dos especies: Escherichia coli y Staphylococcus aureus. Quince podían formar biofilm, una capa pegajosa donde las bacterias se adhieren. Después probaron té de clavo preparado a distintas concentraciones. En las condiciones del laboratorio, su efecto contra las bacterias dependió de la concentración. La concentración inhibitoria mínima media fue de quince por ciento: la necesaria para frenar el crecimiento. La bactericida media fue de poco más de diecinueve por ciento: la necesaria para matar las bacterias evaluadas. El tiempo de contacto también influyó, pero la concentración pesó más.",
+    "cierre_historia": "El trabajo fue experimental y no demuestra que una infusión preparada en casa desinfecte una tabla, una tarja o cualquier cocina. El propio estudio plantea el clavo como complemento potencial, nunca como reemplazo de la limpieza rutinaria.",
+    "reflexion_o_pregunta": "La sorpresa no es que el trapo deje de limpiar: es que la ciencia esté probando qué puede reforzar esa limpieza. ¿Qué superficie de tu cocina revisarías dos veces? Esto fue Datos y ociosidades."
+  },
+  "estilo_id": "amigurumi",
+  "estilo_visual": "Personajes tejidos amigurumi en miniatura",
+  "visual_identity": {
+    "style_id": "amigurumi",
+    "style_name": "Personajes tejidos amigurumi en miniatura",
+    "prompt_base": "miniature handmade crochet amigurumi kitchen characters, macro photography, tactile yarn texture, expressive tiny kitchen sponge and clove characters, warm practical kitchen diorama, cinematic soft light, vertical 9:16, no text",
+    "palette": "Cálida, madera, crema y tonos naturales del clavo",
+    "lighting": "Luz cálida de cocina; contraste claro para revelar la capa invisible",
+    "texture": "Hilo tejido visible, miniaturas artesanales",
+    "composition": "Vertical 9:16; continuidad de personajes y utilería entre escenas",
+    "negative_prompt": "No texto generado, no marcas de agua, no bacterias monstruosas ni imágenes de terror, no representar la infusión como desinfectante doméstico probado",
+    "reference_assets": [],
+    "seed": null,
+    "seed_policy": "Continuidad entre escenas"
+  },
+  "typography_identity": {
+    "font_family": "DejaVu Sans",
+    "font_weight": "700 para gancho; 400 para subtítulos",
+    "title_style": "Primera escena como portada: título grande en caja amarilla/crema y subrayado rojo; sin subtítulo encima",
+    "subtitle_style": "Bloques de máximo tres palabras",
+    "hierarchy": "Gancho > dato > subtítulos",
+    "animation": "Un movimiento por plano; texto en postproducción"
+  },
+  "voice": {
+    "engine": "edge-tts",
+    "voice_id": "es-MX-JorgeNeural",
+    "language": "es-MX",
+    "rate": "+7%",
+    "pitch": "-2Hz",
+    "pad_seconds": 0.3,
+    "modo_pausas": "continuo"
+  },
+  "sources": [
+    {
+      "id": "SRC-001",
+      "cita_corta": "Sezer et al. (2026). Antimicrobial and antibiofilm effects of clove tea on bacteria isolated from kitchen food-contact surfaces. BMC Microbiology.",
+      "url": "https://doi.org/10.1186/s12866-026-05875-y",
+      "doi": "10.1186/s12866-026-05875-y",
+      "accessed": "2026-11-07",
+      "publication_date": "2026-10-30",
+      "supports": [
+        "Se tomaron muestras después de la limpieza rutinaria en 50 puntos de una cocina de comida preparada.",
+        "Se obtuvieron 22 aislados identificados como Escherichia coli y Staphylococcus aureus; 15 fueron positivos para formación de biofilm.",
+        "El efecto antimicrobiano del té de clavo fue dependiente de la concentración; MIC media 15% y MBC media 19.33%.",
+        "El estudio concluye que el té de clavo podría investigarse como aplicación adicional, no como reemplazo de la limpieza rutinaria."
+      ],
+      "verification_status": "VERIFICADO_FUENTE_PRIMARIA_EDITOR"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_001",
+      "arc": "hook_medias_res",
+      "duration_seconds": 10,
+      "narration": "Pasas el trapo por la cocina, guardas el jabón… y aun así pueden quedar bacterias pegadas a la superficie.",
+      "on_screen_text": "¿Limpiaste… de verdad?",
+      "visual_description": "Portada vertical: una esponja amigurumi acaba de limpiar una cubierta; una sombra microscópica queda adherida. Título grande en caja amarilla o crema, subrayado rojo, sin subtítulo superior.",
+      "image_prompt": "miniature handmade crochet amigurumi kitchen, tiny sponge character wiping a countertop, subtle translucent microscopic bacterial layer remaining on surface, warm cinematic macro photography, vertical 9:16, no text, cover composition with clear empty title area",
+      "ambiente": "Cocina discreta; voz al frente",
+      "sfx": [
+        "擦拭 suave"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "amigurumi"
+    },
+    {
+      "id": "scene_002",
+      "arc": "desarrollo",
+      "duration_seconds": 11,
+      "narration": "Y no es una cocina abandonada: el equipo tomó muestras justo después de la limpieza rutinaria, en cincuenta puntos de una cocina de comida preparada.",
+      "on_screen_text": "Después de limpiar",
+      "visual_description": "La esponja señala una cubierta, una tabla y una zona de preparación; aparecen cincuenta pequeños puntos de muestreo.",
+      "image_prompt": "miniature crochet amigurumi food-preparation kitchen, tiny researcher character taking swab samples from countertop and equipment after routine cleaning, fifty subtle sampling markers, macro handmade yarn detail, vertical 9:16, no text",
+      "ambiente": "Ambiente discreto; voz al frente",
+      "sfx": [
+        "toque breve de marcador"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "amigurumi"
+    },
+    {
+      "id": "scene_003",
+      "arc": "desarrollo",
+      "duration_seconds": 11,
+      "narration": "De ahí recuperaron veintidós aislados de dos especies bacterianas. Quince podían formar biofilm: una capa pegajosa donde las bacterias se adhieren.",
+      "on_screen_text": "Una capa pegajosa",
+      "visual_description": "Veintidós figuras microscópicas aparecen; quince se agrupan bajo una película translúcida adherida a una superficie.",
+      "image_prompt": "educational macro visualization of bacteria attached beneath a translucent sticky biofilm layer on a kitchen surface, crochet amigurumi visual metaphor, non-scary scientific illustration, vertical 9:16, no text",
+      "ambiente": "Cama tenue; voz al frente",
+      "sfx": [
+        "burbuja sutil"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "amigurumi"
+    },
+    {
+      "id": "scene_004",
+      "arc": "desarrollo",
+      "duration_seconds": 11,
+      "narration": "Pero el equipo no se quedó en el hallazgo. Preparó té de clavo a distintas concentraciones y lo probó en condiciones controladas de laboratorio.",
+      "on_screen_text": "Probaron té de clavo",
+      "visual_description": "Clavos de olor entran en agua caliente; varios recipientes representan concentraciones distintas, claramente dentro de un laboratorio.",
+      "image_prompt": "miniature crochet amigurumi clove buds steeping in small laboratory glass vessels with several concentration levels, careful experimental setup, warm macro photography, vertical 9:16, no text",
+      "ambiente": "Ambiente de laboratorio ligero",
+      "sfx": [
+        "agua vertiéndose"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "amigurumi"
+    },
+    {
+      "id": "scene_005",
+      "arc": "desarrollo",
+      "duration_seconds": 12,
+      "narration": "Y apareció la diferencia: cuanto mayor la concentración, mayor el efecto observado. La media para frenar el crecimiento fue de quince por ciento.",
+      "on_screen_text": "15 % para frenar",
+      "visual_description": "Una escala de concentración sube; las figuras bacterianas dejan de multiplicarse al alcanzar el umbral ilustrado.",
+      "image_prompt": "clear scientific educational visualization of concentration increasing and bacterial growth slowing at a marked fifteen percent threshold, miniature crochet style, uncluttered vertical 9:16, no text",
+      "ambiente": "Cama discreta; voz al frente",
+      "sfx": [
+        "clic de escala"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "amigurumi"
+    },
+    {
+      "id": "scene_006",
+      "arc": "desarrollo",
+      "duration_seconds": 11,
+      "narration": "Para matar las bacterias evaluadas, la media fue de poco más de diecinueve por ciento. El tiempo también contó, pero la concentración importó más.",
+      "on_screen_text": "19.33 % en promedio",
+      "visual_description": "La escala avanza a 19.33%; la animación diferencia frenar el crecimiento de eliminar bacterias viables.",
+      "image_prompt": "scientific infographic-like miniature scene showing concentration scale at 19.33 percent and distinction between inhibited growth and bacterial death, crochet amigurumi laboratory aesthetic, vertical 9:16, no text",
+      "ambiente": "Ambiente discreto; voz al frente",
+      "sfx": [
+        "clic suave"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "amigurumi"
+    },
+    {
+      "id": "scene_007",
+      "arc": "cierre_historia",
+      "duration_seconds": 9,
+      "narration": "Pero atención: fue un estudio experimental. No valida una receta casera para desinfectar tablas o tarjas; el clavo sería un complemento potencial, nunca un reemplazo de la limpieza.",
+      "on_screen_text": "No sustituye limpiar",
+      "visual_description": "El jabón y el agua permanecen como protagonistas; el frasco de clavo aparece a un lado, con una etiqueta visual de investigación pendiente.",
+      "image_prompt": "miniature crochet amigurumi kitchen sink with soap and cleaning cloth in foreground, small clove tea research flask set aside as experimental not household disinfectant, clear responsible visual hierarchy, vertical 9:16, no text",
+      "ambiente": "Música baja; voz al frente",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "amigurumi"
+    },
+    {
+      "id": "scene_008",
+      "arc": "reflexion_o_pregunta",
+      "duration_seconds": 9,
+      "narration": "La sorpresa no es que el trapo deje de limpiar: es que la ciencia busque cómo reforzarlo. ¿Qué superficie revisarías dos veces? Esto fue Datos y ociosidades.",
+      "on_screen_text": "La ciencia detrás de tu cocina",
+      "visual_description": "Eco circular: la esponja vuelve a pasar por la cubierta; ahora vemos la superficie con una lupa, sin prometer esterilización.",
+      "image_prompt": "miniature crochet amigurumi sponge character revisiting a clean kitchen countertop with a magnifying glass, warm intimate macro shot, visual echo of opening scene, vertical 9:16, no text",
+      "ambiente": "Cierre musical breve; voz al frente",
+      "sfx": [
+        "campanilla discreta"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "amigurumi"
+    }
+  ],
+  "cortinilla_fuentes": {
+    "duration_seconds": 6,
+    "titulo": "Fuentes",
+    "aviso": "Contenido realizado con apoyo de IA; declarar recursos sintéticos usados en versión final.",
+    "firma": "Datos y ociosidades",
+    "source_ids": [
+      "SRC-001"
+    ]
+  },
+  "audio": {
+    "music_asset": null,
+    "music_plan": "Cama discreta de cocina/laboratorio; selección y licencia por validar en montaje",
+    "music_license": null
+  },
+  "export": {
+    "resolution": "1080x1920",
+    "fps": 30,
+    "render_status": "NOT_GENERATED"
+  },
+  "publicacion": {
+    "status": "PENDIENTE_DECISION_GROK",
+    "platforms": [
+      "YouTube Shorts",
+      "TikTok",
+      "Facebook Reels"
+    ],
+    "note": "No publicar ni programar desde preproducción textual."
+  },
+  "estado": "PREPARADO_PENDIENTE_REVISION_GROK",
+  "production_mode": "storyboard_only",
+  "validation_notes": [
+    "8 escenas; objetivo 84 s total incluyendo cortinilla.",
+    "Primera escena diseñada como portada con caja amarilla/crema y subrayado rojo; sin subtítulo superior.",
+    "Narración es-MX-JorgeNeural a +7%, pausas continuas y pad 0.3 s.",
+    "No se proporciona receta doméstica ni se afirma que el té de clavo desinfecte superficies en uso real.",
+    "Cierre en dos escenas: matiz experimental en penúltima; giro, pregunta y sello literal en última."
+  ],
+  "linea_tematica_provisional": "Ciencia y cocina",
+  "approved_assets": [],
+  "risk_notes": [
+    "No convertir concentraciones de laboratorio en receta de uso doméstico.",
+    "No afirmar eliminación del 99.9%, desinfección garantizada ni sustitución de jabón o desinfectante autorizado.",
+    "El resultado no equivale a validación de seguridad o eficacia sobre superficies reales de cocinas domésticas."
+  ],
+  "thumbnail_source": "scene_001",
+  "fecha_objetivo": "2026-11-07",
+  "slot_local": "23:30",
+  "slot_hora_cdmx": "23:30",
+  "slot_cesta": "dato_dia",
+  "slot_timezone": "America/Mexico_City",
+  "narrative_contract": {
+    "target_words_min": 200,
+    "target_words_max": 235,
+    "target_chars_min": 1100,
+    "target_chars_max": 1300,
+    "closing_scenes": 2,
+    "final_scene_requires": [
+      "giro",
+      "pregunta",
+      "sello_literal"
+    ],
+    "seal": "Esto fue Datos y ociosidades."
+  }
+}
