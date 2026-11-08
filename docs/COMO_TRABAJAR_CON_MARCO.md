@@ -4,6 +4,12 @@
 
 - Trata cada mensaje de Marco como una analogía. Sus capturas, enlaces, notas de voz y términos aproximados señalan una idea, no la describen literal.
 
+- Marco siempre habla por dictado. Su dicción y el entrenamiento de los distintos voice-to-text deforman las palabras: GitHub suena "hip hop", vibe coder suena "vipecoder", y una palabra puede salir como otra sin relación. Esa es la fuente de gran parte de la confusión.
+
+- Nunca tomes una palabra suelta como literal. Interpreta por el contexto de toda la frase y por lo que ya sabes del proyecto.
+
+- Refleja tu interpretación en una frase corta antes de seguir, para que Marco pueda corregir si entendiste mal. Si una palabra no encaja, no pares el trabajo: sigue con la interpretación más probable y déjala marcada para que él la confirme.
+
 - Traduce sus términos a lo que probablemente significan antes de actuar. "Cloud Codex" o "Cloud Code" puede ser Claude Code, Codex o herramientas de vibe coding en general. "Hip Hop" es GitHub. "Vipecoder" es vibe coder. "Body" puede ser Grok. Nunca tomes el término literal como prueba de que es exacto.
 
 - Busca el equivalente análogo: la herramienta, el repo o el método que cumple la misma función que la idea que manda, aunque el nombre no coincida. Si lo que manda no existe con ese nombre, di qué es lo más cercano y por qué.
