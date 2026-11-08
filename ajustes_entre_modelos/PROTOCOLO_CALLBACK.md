@@ -45,10 +45,10 @@ Cada entrada en `DELEGACIONES.md` lleva:
 
 La plantilla está en `delegaciones/PLANTILLA.md`.
 
-## La alarma: cómo se despierta al modelo encargado
+## El aviso: cómo se despierta al modelo encargado
 
-El tablero por sí solo no despierta a nadie. La alarma es el workflow
-`.github/workflows/callback-alarma.yml`:
+El tablero por sí solo no despierta a nadie. El aviso es el workflow
+`.github/workflows/callback-aviso.yml`:
 
 - Se dispara cuando cambia `DELEGACIONES.md` y cada hora como respaldo.
 - Abre un issue con la etiqueta `callback` por cada delegación PENDIENTE
@@ -57,12 +57,12 @@ El tablero por sí solo no despierta a nadie. La alarma es el workflow
 - La indicación que sigue el modelo al despertar está en
   `.github/copilot-instructions.md` y en el cuerpo del issue.
 
-Para Imaginantes y para Marco la alarma es el tablero más el reporte de
+Para Imaginantes y para Marco el aviso es el tablero más el reporte de
 Pecas: Imaginantes no tiene buzón escribible y Marco lo ve en el reporte
 de la mañana.
 
 El workflow no se puede subir por API (la app de Muse no tiene permiso
-Workflows). Está listo en `~/workspace/callback-alarma/` para subirlo por
+Workflows). Está listo en `~/workspace/callback-aviso/` para subirlo por
 navegador con la cuenta de Marco, igual que los workflows de seguridad.
 
 ## El router
