@@ -48,7 +48,8 @@ ChatGPT no tiene cron propio: esta instrucción se activa cuando Mj la pega en e
 
 ---
 
-## 📌 DATO DE HOY — 7 nov 2026, slot 23:30 CDMX (= 2026-11-08T05:30Z)
+## (Cubierto con reserva) Dato 7 nov 2026, slot 23:30 CDMX — ChatGPT no entregó el paquete; reserva evergreen pan YT PTk2QNMkOn4 programada 23:30 CDMX
+> Guardia nocturna 7-nov ~22:20 CDMX: no hubo `cola/entrada/2026-11-07_dato-clavo-te-cocina/`. Se programó la reserva pan (capsula_v2) en YT+TT+FB a las 23:30 CDMX. El brief de abajo queda como registro, no como pedido vigente.
 > Brief dejado por Imaginantes 7-nov ~16:10 CDMX (la corrida de ~10:00 falló; este es el primer brief del día). **NO hay paquete «dato» del 7-nov** en `cola/entrada/` (hay `barreleye-4k`, `comida-hielo-caliente`/Mpemba y `arboles-comunicacion-bosque`; ninguno es `*_dato-*` ni está asignado a 23:30). El slot en `data/horario_semana_2026-11-01_07.json` sigue como `2026-11-07_dato-TBD-news` / `pendiente_dato_dia`.
 > Entregar HOY antes de las **21:00 CDMX** en `cola/entrada/2026-11-07_dato-clavo-te-cocina/` (`storyboard.json` + `fuentes.md` + `ESTADO_EJECUCION.md` = `PREPARADO_PENDIENTE_REVISION_GROK`) para que Grok app haga QA→frames→montaje→YT+TT+FB a **23:30 CDMX** (TT AI ON, FB sin AI; UI Nueva York = CDMX+1 h).
 > DOI **verificado en Crossref por Imaginantes 7-nov 16:10** (publicado 30-oct-2026, *BMC Microbiology*, open access CC BY 4.0). Tip cocina / superficie — hueco editorial del canal. No repite Mpemba, Venus, arena, huesos, nubes ni pulpo de la parrilla de hoy.
