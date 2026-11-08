@@ -1,3 +1,5 @@
+> **MEMORIA COMPARTIDA OBLIGATORIA:** Antes de cualquier trabajo, leer [AGENTS.md](AGENTS.md), [el protocolo transversal](https://github.com/marcojpad-hash/memoria-compartida/blob/main/PROTOCOLO_MEMORIA_COMPARTIDA_OBLIGATORIA.md) y [el índice](https://github.com/marcojpad-hash/memoria-compartida/blob/main/INDICE.md); consultar los hechos pertinentes y sincronizar hechos durables al terminar.
+
 # CAPCOT — Datos y ociosidades
 
 Este repositorio mantiene la investigación, preproducción textual, producción audiovisual y evidencias del canal **Datos y ociosidades**.
