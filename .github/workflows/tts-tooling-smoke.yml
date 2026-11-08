@@ -1,0 +1,38 @@
+name: CAPCOT — TTS tooling smoke check
+
+on:
+  push:
+    branches:
+      - feature/capcot-video-discovery-continuity
+    paths:
+      - "tools/tts/**"
+      - ".claude/skills/ai-video/**"
+      - "docs/TTS_CAPCOT.md"
+      - ".github/workflows/tts-tooling-smoke.yml"
+  pull_request:
+    paths:
+      - "tools/tts/**"
+      - ".claude/skills/ai-video/**"
+      - "docs/TTS_CAPCOT.md"
+      - ".github/workflows/tts-tooling-smoke.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Compile TTS client
+        run: python -m py_compile tools/tts/narrate.py
+      - name: Verify CLI contract
+        run: python tools/tts/narrate.py --help
+      - name: Validate dependency manifests
+        run: |
+          grep -q '^edge-tts>=7.0.0' tools/tts/requirements-edge.txt
+          grep -q '^piper-tts>=' tools/tts/requirements-piper.txt
