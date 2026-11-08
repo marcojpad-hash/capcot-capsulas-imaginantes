@@ -19,7 +19,6 @@ que te despertó. Sigue el protocolo en
 ## Reglas del repo
 
 - Todo el contenido es en español es-MX. No inventes datos, fuentes ni DOIs.
-- El motor U6 vive en su propio repo y se trabaja desde ahí, no desde este.
 - El montaje oficial del MP4, el QA oficial y la publicación son de
   Imaginantes, no tuyos. Tú preparas, verificas y dejas el trabajo en el
   repo.
