@@ -1963,5 +1963,81 @@
    ]
   ],
   "nota_flujo": "Corte vs 7-nov 20:14 (~12 h; entre 20:00 y 08:00 no hay corrida de balance). YT 27,865→27,949 (+84 vistas), likes 911→911 (+0), subs 72→72 (+0). 53 Shorts públicos (+2). Lo empujan Venus phVfyHp3CnY 16→54 (+38) y arena m4RqQRaz55k 12→32 (+20); el pan PTk2QNMkOn4 (dato de anoche) entra con 17 y las palomitas zTP5akrGA9M (07:00) salen en 0. Vs el snapshot de cierre 23:07 (27,903 vistas, 51 Shorts) hay +46 vistas, casi todo en Venus (+14), arena (+6) y el pan nuevo. El resto del catálogo sigue casi plano (Titanoboa +3, gusanos +2, y cuatro videos +1). Hipo Rg-iTgMExWw 1→1; polvo de África 268, polvo/oro 111 y miel 59 sin cambio. TT: primera lectura con vistas/likes por video (yt-dlp): 57 videos (+2), 14,024 vistas y 710 likes sumados; comentarios 4. No hubo lectura fresca de seguidores (WAF en la página de perfil); el corte 20:14 tenía 28 seguidores y 701 likes de perfil. Cifras YT por listado/metadatos públicos (API OAuth: invalid_grant)."
+ },
+ {
+  "hora_cdmx": "2026-11-08T13:53-06:00",
+  "base_youtube": "2026-11-08T08:07",
+  "base_tiktok": "2026-11-08T08:07",
+  "youtube_totales": {
+   "view": 28069,
+   "like": 911,
+   "comment": 26
+  },
+  "suscriptores": 72,
+  "shorts_publicos": 53,
+  "delta_youtube": {
+   "view": 120,
+   "like": 0,
+   "comment": 0,
+   "suscriptores": 0,
+   "horas_desde_base": 6,
+   "nota": "Δ de ~6 h vs el corte 8-nov 08:07 CDMX (08:07→13:53)."
+  },
+  "tiktok_totales": {
+   "view": 14085,
+   "like": 715,
+   "comment": 4
+  },
+  "seguidores_tiktok": null,
+  "likes_perfil_tiktok": null,
+  "videos_tiktok": 57,
+  "delta_tiktok": {
+   "view": 61,
+   "like": 5,
+   "comment": 0,
+   "seguidores": null,
+   "likes_perfil": null,
+   "videos": 0,
+   "nota": "Δ vs 08:07 (primera comparación con desglose por video): 14024→14085 vistas (+61), 710→715 likes (+5), comentarios 4→4, 57 videos (sin cambio). Seguidores no se pudieron leer."
+  },
+  "ranking_crecimiento": [
+   [
+    "YT Tus palomitas explotan por dentro",
+    60
+   ],
+   [
+    "YT El refri puede endurecer tu pan más rápido",
+    34
+   ],
+   [
+    "YT En Venus el año acaba antes de dos días",
+    16
+   ],
+   [
+    "YT Esta arena canta sin una sola bocina",
+    4
+   ],
+   [
+    "YT Serpiente voladora: cómo planea sin alas",
+    2
+   ],
+   [
+    "YT Este polvo atrapa 5 veces su peso en oro",
+    1
+   ],
+   [
+    "YT El polvo de África no viaja solo",
+    1
+   ],
+   [
+    "YT Capsaicina: ¿agua, refresco o leche?",
+    1
+   ],
+   [
+    "YT El gen que afina el oído del mosquito macho",
+    1
+   ]
+  ],
+  "nota_flujo": "Corte vs 8-nov 08:07 (~6 h; 08:07→13:53). YT 27,949→28,069 (+120 vistas), likes 911→911 (+0), comentarios 26→26 (+0), subs 72→72 (+0). 53 Shorts públicos (sin altas ni bajas). Lo empujan palomitas zTP5akrGA9M 0→60 (+60), pan PTk2QNMkOn4 17→51 (+34) y Venus phVfyHp3CnY 54→70 (+16); arena m4RqQRaz55k 32→36 (+4). El resto del catálogo sigue casi plano (serpiente voladora +2 y cuatro videos +1). Hipo Rg-iTgMExWw 1→1; miel jpDyCX6zSgQ 59 y papel picado i9QBFPljl6M 1,380 sin cambio; polvo África R76ivFX9nXo 268→269 y polvo/oro Rv998OZDUYc 111→112. TT (yt-dlp, listado público @datosyociosidades): 57 videos (sin cambio), 14,024→14,085 vistas (+61), 710→715 likes (+5), comentarios 4→4. En TT lo mueven Venus +26, pan +16 y palomitas +8. Seguidores no se pudieron leer (yt-dlp no trajo channel_follower_count; el último dato de perfil es 28 seguidores el 7-nov 20:14). Cifras YT por YouTube Data API con OAuth renovado (canal Datos y ociosidades UCU2ZI-6pBJEr9aSFsF6bxLw)."
  }
 ]
