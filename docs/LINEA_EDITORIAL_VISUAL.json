@@ -733,5 +733,23 @@
     "cierre": "Esto fue Datos y ociosidades.",
     "programacion": "Lote programado a las 07:00 en YouTube, TikTok y Facebook.",
     "qa": "El QA oficial lo corre Imaginantes (scripts/qa_capsula.py). La skill capcot-qa es la revisión previa, no el QA oficial."
+  },
+  "cableado_grok": {
+    "nota": "Grok (el modelo de grok.com, no solo el Grok Bot/Imaginantes) cableado al repositorio como otro modelo constructor, para aprovechar sus tokens: el trabajo de texto que hace Grok no gasta tokens de Muse.",
+    "via": "Conector GitHub en grok.com/connectors (lectura y escritura, incluye issues, nivel gratis). NO es la API de Grok: dos claves de API fueron rechazadas (400 Incorrect API key) y la API cobra por uso; la vía es el conector + el bus.",
+    "paso_de_marco": "Autorizar los repos en el conector de Grok (grok.com/connectors): capcot-capsulas-imaginantes, agente-cero-costo y memoria-compartida. Solo Marco puede autorizar cada app en su cuenta.",
+    "que_lee_grok": [
+      "El bus: conector/ESTADO.md y conector/estado.json (agente-cero-costo), y conector/bus/*.json (eventos).",
+      "Este JSON (docs/LINEA_EDITORIAL_VISUAL.json) y el storyboard de cada cápsula.",
+      "La cola (cola/entrada/) y los cierres (data/cierre_diario/)."
+    ],
+    "que_hace_grok": [
+      "Trabajo de texto con sus propios tokens (lado xAI, no Muse): investigación, storyboard, revisión, análisis de tendencias.",
+      "Emite por el bus: crea un Issue '[BUS] <tipo> - Grok' (el workflow github-native-agent-bus.yml lo convierte en conector/bus/gh-issue-N.json).",
+      "Puede escribir archivos directo por el conector (lectura y escritura)."
+    ],
+    "ejecucion_de_codigo": "Grok no corre código en el repo. Para ejecutar (correr scripts, montar, programar), delega por el bus a los modelos que sí corren código (Pecas, Copilot, Codex) o escribe el archivo por el conector y otro modelo lo ejecuta.",
+    "prueba_para_verificar": "Marco le pide a Grok: 'lee el INDICE.md del repo privado marcojpad-hash/memoria-compartida' y 'crea un Issue [BUS] hecho - Grok de prueba'. Si lee el privado y el Issue aparece como conector/bus/gh-issue-N.json, Grok está cableado.",
+    "distincion": "Grok (modelo, grok.com) es distinto de Grok Bot / Imaginantes (el bot que monta y publica, pausado por créditos). Los dos usan el bus, pero hacen trabajos distintos."
   }
 }
