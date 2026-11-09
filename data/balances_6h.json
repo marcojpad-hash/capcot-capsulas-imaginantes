@@ -2039,5 +2039,165 @@
    ]
   ],
   "nota_flujo": "Corte vs 8-nov 08:07 (~6 h; 08:07→13:53). YT 27,949→28,069 (+120 vistas), likes 911→911 (+0), comentarios 26→26 (+0), subs 72→72 (+0). 53 Shorts públicos (sin altas ni bajas). Lo empujan palomitas zTP5akrGA9M 0→60 (+60), pan PTk2QNMkOn4 17→51 (+34) y Venus phVfyHp3CnY 54→70 (+16); arena m4RqQRaz55k 32→36 (+4). El resto del catálogo sigue casi plano (serpiente voladora +2 y cuatro videos +1). Hipo Rg-iTgMExWw 1→1; miel jpDyCX6zSgQ 59 y papel picado i9QBFPljl6M 1,380 sin cambio; polvo África R76ivFX9nXo 268→269 y polvo/oro Rv998OZDUYc 111→112. TT (yt-dlp, listado público @datosyociosidades): 57 videos (sin cambio), 14,024→14,085 vistas (+61), 710→715 likes (+5), comentarios 4→4. En TT lo mueven Venus +26, pan +16 y palomitas +8. Seguidores no se pudieron leer (yt-dlp no trajo channel_follower_count; el último dato de perfil es 28 seguidores el 7-nov 20:14). Cifras YT por YouTube Data API con OAuth renovado (canal Datos y ociosidades UCU2ZI-6pBJEr9aSFsF6bxLw)."
+ },
+ {
+  "hora_cdmx": "2026-11-09T13:57-06:00",
+  "base_youtube": "2026-11-08T13:53",
+  "base_tiktok": "2026-11-08T13:53",
+  "youtube_totales": {
+   "view": 28305,
+   "like": 915,
+   "comment": 26
+  },
+  "suscriptores": 72,
+  "shorts_publicos": 55,
+  "delta_youtube": {
+   "view": 236,
+   "like": 4,
+   "comment": 0,
+   "suscriptores": 0,
+   "horas_desde_base": 24,
+   "nota": "Δ de ~24 h vs el corte 8-nov 13:53 CDMX (13:53→13:57). La rutina ahora corre una vez al día ~14:00."
+  },
+  "tiktok_totales": {
+   "view": 14401,
+   "like": 722,
+   "comment": 4
+  },
+  "seguidores_tiktok": null,
+  "likes_perfil_tiktok": null,
+  "videos_tiktok": 59,
+  "delta_tiktok": {
+   "view": 316,
+   "like": 7,
+   "comment": 0,
+   "seguidores": null,
+   "likes_perfil": null,
+   "videos": 2,
+   "nota": "Δ vs 8-nov 13:53 (~24 h): 14085→14401 vistas (+316), 715→722 likes (+7), comentarios 4→4, 57→59 videos (+2). Seguidores no se pudieron leer."
+  },
+  "ranking_crecimiento": [
+   [
+    "YT Tus palomitas explotan por dentro",
+    73
+   ],
+   [
+    "YT El refri puede endurecer tu pan más rápido",
+    40
+   ],
+   [
+    "YT ¿Qué queda en tu cocina después de limpiar?",
+    36
+   ],
+   [
+    "YT En Venus el año acaba antes de dos días",
+    21
+   ],
+   [
+    "YT Esta rana se congela y vuelve a saltar",
+    16
+   ],
+   [
+    "YT Esta arena canta sin una sola bocina",
+    8
+   ],
+   [
+    "YT Papel picado, parte 1: nació en una tienda de raya",
+    6
+   ],
+   [
+    "YT Capsaicina: ¿agua, refresco o leche?",
+    4
+   ],
+   [
+    "YT El hongo que hace ver gente diminuta",
+    4
+   ],
+   [
+    "YT El jet lag de las aves marinas",
+    3
+   ],
+   [
+    "YT Titanoboa: la serpiente más grande que existió",
+    3
+   ],
+   [
+    "YT Serpientes que ruedan: el mito era real",
+    3
+   ],
+   [
+    "YT SmartPE: edición genética más precisa en plantas",
+    2
+   ],
+   [
+    "YT El pimiento verde y el rojo son el mismo fruto",
+    2
+   ],
+   [
+    "YT Este polvo atrapa 5 veces su peso en oro",
+    1
+   ],
+   [
+    "YT Cuando el viento y el Sol fallan juntos",
+    1
+   ],
+   [
+    "YT El perro que guía a los muertos 🐕💀",
+    1
+   ],
+   [
+    "YT El coral blanqueado que volvió a recuperarse",
+    1
+   ],
+   [
+    "YT Mariposas monarca: ¿las almas que regresan en Día de Muertos?",
+    1
+   ],
+   [
+    "YT Anfibio marino: hallan el primero que vivió en el mar",
+    1
+   ],
+   [
+    "YT Día de Muertos, parte 3: en Pomuch bañan a sus muertos",
+    1
+   ],
+   [
+    "YT El campus más fotografiado de México es un libro de piedra (Muralismo CU)",
+    1
+   ],
+   [
+    "YT Ajolotes de laboratorio: todos vienen de 34 que viajaron a París",
+    1
+   ],
+   [
+    "YT Un ave de hace 150 millones de años con dientes de dinosaurio… y sin vuelo",
+    1
+   ],
+   [
+    "YT Papel picado, parte 2: los otros tres elementos (el camino de tu muerto)",
+    1
+   ],
+   [
+    "YT La Catrina no era un homenaje: era una burla",
+    1
+   ],
+   [
+    "YT Llegó la luz eléctrica y el sueño se acortó: 12 años midiendo a los qom",
+    1
+   ],
+   [
+    "YT Las abejas de miel también hacen bullying",
+    1
+   ],
+   [
+    "YT ¿Aves que temen a mujeres?",
+    1
+   ],
+   [
+    "YT La bacteria que come plástico… sin magia",
+    1
+   ]
+  ],
+  "nota_flujo": "Corte vs 8-nov 13:53 (~24 h; 13:53→13:57; la rutina de balance ahora corre una vez al día ~14:00). YT 28,069→28,305 (+236 vistas), likes 911→915 (+4), comentarios 26→26 (+0), subs 72→72 (+0). 53→55 Shorts públicos (+2: Esta rana se congela y vuelve a saltar UBFuKBU3cx0, ¿Qué queda en tu cocina después de limpiar? EwZ3dHalUn0). Lo empujan Tus palomitas explotan por dentro zTP5akrGA9M 60→133 (+73), El refri puede endurecer tu pan más rápido PTk2QNMkOn4 51→91 (+40) y ¿Qué queda en tu cocina después de limpiar? EwZ3dHalUn0 nuevo 36; también En Venus el año acaba antes de dos días phVfyHp3CnY 70→91 (+21), Esta rana se congela y vuelve a saltar UBFuKBU3cx0 nuevo 16 y Esta arena canta sin una sola bocina m4RqQRaz55k 36→44 (+8). Hipo Rg-iTgMExWw 1→1; miel jpDyCX6zSgQ 59→59; polvo África R76ivFX9nXo 269→269; polvo/oro Rv998OZDUYc 112→113; papel picado i9QBFPljl6M 1380→1386 (+6). De los 53 Shorts que ya estaban, 28 subieron algo, 24 quedaron planos y El mar que fabrica luz 4xylLT3vSIU 58→57 (−1, oscilación típica de conteo). TT (yt-dlp, listado público @datosyociosidades): 57→59 videos (+2), 14,085→14,401 vistas (+316), 715→722 likes (+7), comentarios 4→4. En TT lo mueven sobre todo los dos estrenos (clavo 7705655549571894529 0→160 y rana 7705596671807245586 0→82), más pan 7705650282348170516 153→177 (+24) y palomitas 7705593452003691794 96→114 (+18). Seguidores no se pudieron leer (yt-dlp no trajo channel_follower_count; el último dato de perfil es 28 seguidores el 7-nov 20:14). Cifras YT por YouTube Data API con OAuth (canal Datos y ociosidades UCU2ZI-6pBJEr9aSFsF6bxLw)."
  }
 ]
