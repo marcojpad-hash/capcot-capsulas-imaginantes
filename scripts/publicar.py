@@ -38,8 +38,41 @@ def verificar_yt():
     ids = [(c["id"], c["snippet"]["title"]) for c in r.get("items", [])]
     print("canales del token:", ids, "| OK" if any(i == CANAL_ID for i, _ in ids) else f"| NO coincide con {CANAL_ID}")
 
+def extraer_portada(mp4, out_jpg=None, t_candidates=(0.5, 0.3, 0.8, 1.0, 1.5)):
+    """Extrae frame de portada (título en caja crema/amarilla) del mp4. JPG 1080x1920 <2MB."""
+    import subprocess
+    if out_jpg is None:
+        out_jpg = os.path.join(os.path.dirname(os.path.abspath(mp4)), "portada_thumb.jpg")
+    last_err = None
+    for t in t_candidates:
+        cmd = [
+            "ffmpeg", "-y", "-ss", str(t), "-i", mp4, "-frames:v", "1", "-q:v", "2",
+            "-vf", "scale=1080:1920:force_original_aspect_ratio=decrease,pad=1080:1920:(ow-iw)/2:(oh-ih)/2",
+            out_jpg,
+        ]
+        r = subprocess.run(cmd, capture_output=True, text=True)
+        if r.returncode == 0 and os.path.exists(out_jpg) and os.path.getsize(out_jpg) > 1000:
+            print(f"[YT] portada extraída t={t}s -> {out_jpg} ({os.path.getsize(out_jpg)} bytes)")
+            return out_jpg, t
+        last_err = (r.returncode, (r.stderr or "")[-400:])
+    raise RuntimeError(f"no se pudo extraer portada de {mp4}: {last_err}")
+
+def yt_set_thumbnail(yt, video_id, jpg_path):
+    """Fija miniatura custom = portada con título. Obligatorio tras cada upload."""
+    from googleapiclient.http import MediaFileUpload
+    from googleapiclient.errors import HttpError
+    try:
+        r = yt.thumbnails().set(videoId=video_id, media_body=MediaFileUpload(jpg_path, mimetype="image/jpeg", resumable=True)).execute()
+        print(f"[YT] thumbnails.set OK {video_id} keys={list(r.get('items', [{}])[0].keys()) if r.get('items') else list(r.keys())}")
+        return {"ok": True, "response": r}
+    except HttpError as e:
+        err = {"ok": False, "status": e.resp.status, "content": e.content.decode(errors="replace")[:800]}
+        print(f"[YT] thumbnails.set ERROR {video_id} {err}")
+        return err
+
 def youtube(mp4, md, ejecutar, privacidad=None, publish_at=None, meta=None):
-    """privacidad: public|unlisted|private. publish_at (ISO 8601 UTC, futuro): programa la salida; YouTube exige privacyStatus=private."""
+    """privacidad: public|unlisted|private. publish_at (ISO 8601 UTC, futuro): programa la salida; YouTube exige privacyStatus=private.
+    Tras insert, SIEMPRE fija miniatura = frame de portada (título en caja crema/amarilla)."""
     META = meta if meta is not None else globals().get("META", {})
     priv = privacidad or META.get("privacyStatus", "private")
     st = {"privacyStatus": priv, "selfDeclaredMadeForKids": False, "containsSyntheticMedia": bool(META.get("contenido_sintetico", True))}
@@ -52,7 +85,19 @@ def youtube(mp4, md, ejecutar, privacidad=None, publish_at=None, meta=None):
     yt = yt_cliente()
     mine = [c["id"] for c in yt.channels().list(part="id", mine=True).execute().get("items", [])]
     if CANAL_ID not in mine: sys.exit(f"token no es del canal {CANAL_ID}: {mine}")
-    return yt.videos().insert(part="snippet,status", body=body, media_body=MediaFileUpload(mp4, resumable=True)).execute()
+    res = yt.videos().insert(part="snippet,status", body=body, media_body=MediaFileUpload(mp4, resumable=True)).execute()
+    vid = res.get("id")
+    if not vid:
+        print("[YT] insert sin id; no se pudo fijar miniatura")
+        return res
+    try:
+        jpg, t = extraer_portada(mp4)
+        thumb = yt_set_thumbnail(yt, vid, jpg)
+        res["portada_thumb"] = {"path": jpg, "t_seconds": t, "set": thumb}
+    except Exception as e:
+        print(f"[YT] FALLO portada/miniatura para {vid}: {e}")
+        res["portada_thumb"] = {"ok": False, "error": str(e)}
+    return res
 
 def tiktok(mp4, md, ejecutar):
     md = {**md, "caption": META.get("tiktok_caption", "")}

@@ -42,3 +42,7 @@ Costo: los frames extra salen de Grok/ChatGPT gratis; el montaje es ffmpeg local
 
 ## Duración y cierre (Mj 9-nov 01:20)
 Las nuevas duran 74–81 s (antes 84–93 s) y el cierre se siente apresurado. Objetivo: 85–90 s, y la última escena (cierre) de al menos 10 s con narración pausada, sin recortar el remate.
+
+
+## Miniatura = portada (9-nov)
+Mj: en toda subida/resubida YT la miniatura DEBE ser el primer frame (título en caja crema/amarilla + subrayado rojo). `scripts/publicar.py` ahora extrae ~0.5s y llama `thumbnails.set` tras el insert. Skill: entrega-de-cápsula-con-portada. Sin esto la entrega no está lista.
