@@ -1,118 +1,140 @@
-# CAPCOT — revisión de pendientes y disponibilidad
-**Fecha de corte:** 2026-11-09, 01:26 America/Mexico_City  
-**Repositorio:** `marcojpad-hash/capcot-capsulas-imaginantes`  
-**Rama:** `feature/capcot-video-discovery-continuity`  
-**HEAD revisado:** `7fa0b0097d9d95c8a5ca0f69b382126a1ed94887`  
-**Alcance:** revisión de pendientes operativos, staging, handoff, Actions, PR y documentación. Sin producción de medios, dispatch, publicación, gasto de créditos ni cambios a datos/workflows/estados de Grok.
+# CAPCOT — control de cola, rotación y dispatchabilidad
+
+**Corte de auditoría:** 2026-11-09 15:53:26 America/Mexico_City  
+**Repositorio y rama auditados:** marcojpad-hash/capcot-capsulas-imaginantes / feature/capcot-video-discovery-continuity  
+**HEAD al cerrar QA narrativo:** 934f7f7d4623c986b7f787c5dd20f2fa497b2796  
+**PR #3:** abierto, Draft, no merged, mergeable=false; 592 archivos, 58,061 adiciones, 1,694 eliminaciones. Comparación GitHub: 672 commits ahead y 125 behind de main.
 
 ## 1. Dictamen
 
-**NO ESTÁ TODO LISTO.** Hay avances verificables en TTS y en el diseño del buzón gratuito de Grok, pero el handoff aún no está demostrado, el workflow no acepta el formato de paquete que actualmente existe en cola, los storyboards 5–7 nov siguen bloqueados y el PR #3 no está listo para integrar.
+**NO LISTO PARA HANDOFF NI PRODUCCIÓN.** La lectura narrativa independiente quedó registrada para los doce proyectos del lote 5–7 nov. Dos pasan narrativa, pero ninguno pasa estructura; diez fallan narrativa. No se promovió ningún proyecto a cola.
 
-El último commit de la rama es el control de cola del 8-nov. No hay commits posteriores ni entregables del 9-nov en el árbol revisado.
+En la rama auditada no hay proyecto ni entrada de cola del 9-nov. Sí existe un paquete distinto del 9-nov en main, fuera de esta rama, con una copia anidada en cola y sin QA narrativo, contrato ni medios verificables. Esa divergencia entre ramas se registra abajo; no se modificó main.
 
-## 2. Inventario actual
+## 2. Briefs y día actual
 
-- `proyectos/`: conserva los doce storyboards canónicos del lote 5–7 nov y numerosos artefactos históricos. No existe proyecto con prefijo `2026-11-08` ni `2026-11-09`.
-- `docs/briefs/`: existen RADAR y CONTROL_COLA hasta el 8-nov. No existe RADAR ni CONTROL_COLA del 9-nov.
-- `cola/entrada/`: una carpeta anidada, `2026-11-07_dato-clavo-te-cocina/`, con storyboard, fuentes y estado documental. Es el slot 23:30 del 7-nov, ya cubierto/programado según los documentos del 8-nov. **Esta carpeta no cumple el formato canónico de handoff** (`cola/entrada/<project_id>.json`) y no debe redispatcharse.
-- `cola/estado/`: no contiene estados de Grok.
-- `handoffs/grok_inbox/`: solo contiene README; no hay marcadores `<project_id>.json`.
-- `handoffs/grok_done/`: solo contiene `.gitkeep`; no hay confirmaciones de finalización.
+En la rama feature existen:
+- docs/briefs/2026-11-09_RADAR_CAPCOT.md
+- docs/briefs/2026-11-09_CONTROL_COLA.md
 
-La existencia de la carpeta del dato de clavo no confirma recepción por Grok ni autoriza una segunda producción.
+El RADAR del 9-nov indica que no hay proyecto nuevo autorizado para esa fecha. La lectura del horario diario de la rama confirma que el slot de 07:00 corresponde a la publicación del proyecto de ranas del 6-nov. El slot 23:30 de dato del día queda excluido de esta auditoría de contenido, conforme a la instrucción; no se hizo QA ni copia de ese paquete.
 
-## 3. Lote obligatorio 5–7 nov
+**Inventario de la rama feature para 2026-11-09:** 0 borradores en proyectos y 0 entradas de cola del día. No se encontró un paquete plano ni una carpeta de cola del 9-nov en esta rama.
 
-El último control, del 8-nov, registró estos valores de narrative_qa. No se encontraron commits posteriores que cambien los storyboards del lote:
+**Discrepancia de main:** main contiene proyectos/2026-11-09_andes-virus-aminoacido/storyboard.json y cola/entrada/2026-11-09_andes-virus-aminoacido/storyboard.json. No están en feature. El storyboard de main tiene 7 escenas, 130 palabras, objetivo 82 s, carece de narrative_contract y narrative_qa y referencia siete frames que no existen en el árbol. Su programacion.json propone YT privado a las 14:15 CDMX (publish_at 20:15Z), pero no aporta ID/URL de plataforma; la rama feature no tiene slot de 14:15 en el horario del 9-nov. No existe cola/estado ni marcador inbox para ese ID. Clasificación: NOT_DISPATCHABLE, RECEPCION_GROK_NO_CONFIRMADA, MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO y no redispatchar hasta reconciliar la divergencia. No se escribió en main.
 
-| Proyecto | QA narrativo registrado |
-|---|---:|
-| 2026-11-05_kids-dia-en-venus | PASS 88 |
-| 2026-11-05_comida-palomitas | FAIL 82 |
-| 2026-11-05_inter-arboles-se-comunican | FAIL 78 |
-| 2026-11-05_inter-rayo-globular | FAIL 81 |
-| 2026-11-06_kids-ballena-azul-corazon | FAIL 80 |
-| 2026-11-06_comida-aguacate-negro | FAIL 79 |
-| 2026-11-06_inter-ranas-congeladas | FAIL 83 |
-| 2026-11-06_inter-arena-cantante | PASS 94 |
-| 2026-11-07_kids-huesos-bebe | FAIL 82 |
-| 2026-11-07_comida-hielo-caliente | FAIL 81 |
-| 2026-11-07_inter-pulpo-suenos | FAIL 80 |
-| 2026-11-07_inter-nubes-pesan | FAIL 78 |
+## 3. Lote obligatorio 5–7 nov: identidad y slots
 
-Estos son los valores del último reporte releído, no una nueva lectura narrativa ejecutada a las 01:26 del 9-nov.
+Los doce storyboard canónicos existen en proyectos/. Para los doce, project_id, fecha_objetivo, slot_local y slot_cesta coinciden con data/horario_semana_2026-11-01_07.json. No se encontró campo fecha_creacion en los storyboards; el prefijo del ID no demuestra la fecha de creación. narrative_qa.reviewed_at es fecha de revisión, no fecha de creación.
 
-Bloqueo estructural reportado: 0/12 aptos; faltan seis campos narrativos obligatorios en las 85 escenas (510 campos). Árboles tiene 169 palabras y carece de mapa y dato/gráfico. Los dos PASS narrativos tampoco pueden promocionarse por estructura. No se reescribieron narraciones ni claims.
+| Proyecto | Slot CDMX / cesta | Palabras | QA frío |
+|---|---|---:|---:|
+| 2026-11-05_kids-dia-en-venus | 05-nov 07:00 / kids | 170 | PASS 88 |
+| 2026-11-05_comida-palomitas | 05-nov 13:30 / comida_familia | 173 | FAIL 82 |
+| 2026-11-05_inter-arboles-se-comunican | 05-nov 17:00 / intermedio_1 | 169 | FAIL 78 |
+| 2026-11-05_inter-rayo-globular | 05-nov 17:45 / intermedio_2 | 197 | FAIL 81 |
+| 2026-11-06_kids-ballena-azul-corazon | 06-nov 07:00 / kids | 174 | FAIL 80 |
+| 2026-11-06_comida-aguacate-negro | 06-nov 13:30 / comida_familia | 170 | FAIL 79 |
+| 2026-11-06_inter-ranas-congeladas | 06-nov 17:00 / intermedio_1 | 177 | FAIL 83 |
+| 2026-11-06_inter-arena-cantante | 06-nov 17:45 / intermedio_2 | 206 | PASS 94 |
+| 2026-11-07_kids-huesos-bebe | 07-nov 07:00 / kids | 172 | FAIL 82 |
+| 2026-11-07_comida-hielo-caliente | 07-nov 13:30 / comida_familia | 172 | FAIL 81 |
+| 2026-11-07_inter-pulpo-suenos | 07-nov 17:00 / intermedio_1 | 170 | FAIL 80 |
+| 2026-11-07_inter-nubes-pesan | 07-nov 17:45 / intermedio_2 | 221 | FAIL 78 |
 
-## 4. Handoff Grok: diseño implementado, ejecución no demostrada
+Todos los registros narrative_qa fueron releídos desde GitHub y su reviewed_at se actualizó a 2026-11-09T15:53:26-06:00. Se conservaron scores, checks y flags existentes porque coinciden con la nueva lectura en frío. review_basis permanece lectura_en_frio_solo_narracion y reviewer_role auditor_capcot_independiente. No se cambió ninguna narración, claim, título, fuente ni decisión editorial.
 
-El documento `ajustes_entre_modelos/2026-11-02_GROK_HANDOFF_SIN_WEBHOOK.md` describe el flujo gratuito: Actions escribe un marcador en `handoffs/grok_inbox/<id>.json`; Grok/Imaginantes lo lee y, al terminar, lo mueve a `handoffs/grok_done/` y actualiza su estado.
+Bloqueos narrativos registrados:
+- Palomitas: apertura definicional y escena 6 repite causas sin información nueva.
+- Árboles: apertura genérica, no in medias res.
+- Rayo globular: apertura histórica descriptiva.
+- Ballena: payoff sobreafirma que el corazón casi se detiene.
+- Aguacate: escenas 5–6 repiten sin avance causal.
+- Ranas: escenas 5–6 repiten límites de especie y condiciones.
+- Huesos: escena 6 repite variación del conteo y fusión.
+- Hielo caliente/Mpemba: apertura de creencias, no in medias res.
+- Pulpo: repetición en escenas 5–6 y payoff vago.
+- Nubes: escena 7 repite cifra y límite sin pagar la pregunta de la suspensión.
+- Venus y arena cantante: los siete checks narrativos permanecen true y critical_flags=[].
 
-**Corrección tras releer el contrato operativo y el QA narrativo obligatorios:** el workflow no presenta un defecto de rutas respecto del formato canónico vigente. El contrato exige que el auditor independiente promueva únicamente un JSON aprobado a `cola/entrada/<project_id>.json`; el workflow escucha y procesa precisamente esos archivos de primer nivel. La carpeta `cola/entrada/2026-11-07_dato-clavo-te-cocina/` es un formato heredado/no conforme, no una razón para ampliar el workflow y saltarse el contrato.
+## 4. Validación estructural estática
 
-El paquete de clavo está marcado `PREPARADO_PENDIENTE_REVISION_GROK`, pero no contiene evidencia de `narrative_qa.status=PASS` ni de la revisión independiente requerida. El validador exige además `narrative_contract`, `narrative_qa` y otros campos estructurales. Por tanto, no se debe convertir ni enviar automáticamente ese paquete. La acción correcta es mantenerlo sin dispatch hasta que un auditor independiente haga la lectura en frío y el validador estructural dé PASS; si falla, debe preservarse y trasladarse a bloqueados conforme al contrato.
+No se ejecutó scripts/validar_storyboard.py ni la suite Python: no hay checkout local/runtime del repositorio conectado. Se hizo revisión estática de los doce JSON y del código del validador.
 
-**Evidencia de ejecución:**
-- No hay marcadores en inbox ni done.
-- No hay estados individuales en `cola/estado/`.
-- Último run del workflow de dispatch: run 41306776689, 1-nov, fallo en el paso «Verificar configuración del receptor»; el paso de entrega fue omitido.
-- Ese run es anterior a la versión actual del workflow, que ya escribe el marcador gratuito antes del webhook opcional. No existe un run posterior del dispatch que pruebe la nueva ruta.
-- Último run global visible: TTS smoke run 42447536352, 8-nov 04:37 UTC, SUCCESS.
+Hallazgos:
+- 12/12 tienen 7–8 escenas; cortinilla de 6 s; 78 s de escenas + 6 s = 84 s; target_duration_seconds=84.
+- 11/12 cumplen 170–235 palabras. Árboles tiene 169.
+- 12/12 cumplen gancho de máximo seis palabras, arco/cierre hablado, voz es-MX-JorgeNeural (+7%, -2Hz), source_ids conocidos y prompt_base literal del catálogo.
+- 12/12 tienen narrative_contract con los seis campos no vacíos.
+- 12/12 tienen approved_assets=[] y export.render_status=NOT_GENERATED; no declaran asset_filename, asset_type ni rutas de medios.
+- 11/12 tienen capa mapa y dato/gráfico con fuente. Árboles carece de ambas.
+- Las 85 escenas tienen ambiente no vacío. En 75/85, sfx es una lista vacía; solo diez escenas declaran efectos. La Receta pide que el silencio se exprese explícitamente, pero la plantilla inicia sfx como [] y el validador solo comprueba presencia del campo, no contenido.
+- Faltan en las 85 escenas los seis campos exigidos por el validador: dramatic_beat, scene_function, causal_bridge_from_previous, question_state, reason_to_continue y new_information. Total: 510 campos ausentes.
 
-Resultado: **RECEPCION_GROK_NO_CONFIRMADA** para cualquier paquete sin estado individual. No se crearon ni modificaron estados de Grok y no se disparó Actions.
+Resultado: 0/12 pasan el validador estructural. Venus y arena cantante pasan narrativa, pero no pueden promoverse. Los otros diez tampoco pueden promoverse por QA narrativo. No se creó ninguna entrada de cola.
 
-## 5. TTS y pruebas
+## 5. Fuentes y claims que requieren corrección del investigador
 
-El workflow `.github/workflows/tts-tooling-smoke.yml` terminó SUCCESS el 8-nov. Pasaron checkout, instalación de Edge TTS, compilación de `tools/tts/narrate.py`, CLI `--help` y comprobación de manifiestos de dependencias.
+Los nueve DOI distintos presentes en el lote se localizaron en registros de editoriales/PubMed; no se ejecutó Crossref ni el parámetro --check-doi. Las fuentes URL sin DOI siguen identificadas por URL.
 
-Esto verifica que el cliente TTS compila y que su interfaz responde; **no** demuestra generación de voz, audio final ni integración audiovisual. No se generó audio.
+- Ranas: la fuente SRC-001 es Costanzo, Lee & Lortz 1993, DOI 10.1242/jeb.181.1.245, sobre glucosa y tolerancia al congelamiento en la población de Ohio. La capa mapa/gráfico cita PubMed 23966588, DOI 10.1242/jeb.089342, estudio 2013 de Interior Alaska que respalda el valor de −16 °C. Ese segundo trabajo no está en sources y la capa lo atribuye al mismo SRC-001. Es una discrepancia de fuente y source_ids; no se corrigió.
+  Referencias: https://pubmed.ncbi.nlm.nih.gov/8409827/ y https://pubmed.ncbi.nlm.nih.gov/23966588/
+- Pulpo: el DOI 10.1038/s41586-023-06203-4 estudia Octopus laqueus; la narración menciona Octopus insularis. El artículo describe dos estados de sueño, pero no respalda esa identificación de especie. No se cambió el claim.
+  Referencia: https://www.nature.com/articles/s41586-023-06203-4
+- Ballena: PNAS 10.1073/pnas.1914273116 respalda 4–8 latidos/min durante inmersiones y un mínimo de 2; el cierre “casi se detiene” sigue siendo una sobreafirmación narrativa.
+- Huesos: OpenStax 6.2 sí indica 270–300 huesos al nacer y fusión hacia 206. La nota PENDING_SOURCE del horario semanal quedó desactualizada; el storyboard cita la página. Es fuente educativa secundaria, no estudio primario.
+  Referencia: https://openstax.org/books/anatomy-and-physiology-2e/pages/6-2-bone-classification
+- Árboles: el storyboard canónico trata redes micorrícicas y Karst et al. 2023; el tema coincide con el slot. No marcar desajuste temático. El artefacto bloqueado arboles-mito-respiran es otra propuesta y no debe confundirse con este ID.
 
-No hubo runtime local para ejecutar `validar_storyboard.py`, `procesar_cola.py` ni la suite completa en esta revisión. La validación de esos componentes es estática; el smoke TTS sí fue ejecutado en GitHub Actions.
+## 6. Producción preexistente, publicaciones y medios
 
-## 6. PR #3: no listo para merge
+En feature, para los doce IDs no existen programacion.json ni ESTADO_EJECUCION.md en proyectos; tampoco se encontraron los cinco archivos esperados de salidas (storyboard.json, qa.json, publicacion.json, metadata.json, licencias.json). No hay evidencia de salidas audiovisuales versionadas para esos doce.
 
-PR [#3](https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/pull/3):
-- Abierto y en estado Draft.
-- Head = HEAD de esta rama; base = `main`.
-- En el corte inicial del informe: 586 archivos cambiados; 57,587 adiciones y 1,683 eliminaciones. Tras los commits documentales de esta revisión, GitHub informa 587 archivos, 57,705 adiciones y 1,683 eliminaciones.
-- GitHub reporta `mergeable=false`.
-- El diff incluye diez archivos `data/*.json`, además de numerosos `_tmp/` logs/scripts y artefactos históricos.
+Dos proyectos sí tienen evidencia de publicación posterior a su fecha objetivo:
+- Palomitas: data/horario_2026-11-08 registra YouTube ID zTP5akrGA9M, TikTok ID 7705593452003691794 y Facebook post 1167496802382795. Clasificación: PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR.
+- Ranas: data/horario_2026-11-09 registra YouTube ID UBFuKBU3cx0 y TikTok ID 7705596671807245586; Facebook aparece como programado_lote_7nov, sin URL/ID de publicación en ese registro. Clasificación: PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR.
 
-Los cambios a `data/*.json` contradicen el contrato operativo vigente, que prohíbe a ChatGPT modificarlos. El propio cuerpo del PR ya identifica este bloqueo y pide restaurar esos registros desde la fuente operativa o separarlos antes del merge. No se modificó ni se aprobó el PR.
+El horario semanal conserva pedir_chatgpt para los doce, por lo que está desactualizado respecto de palomitas y ranas. Los archivos diarios 8 y 9 nov son la evidencia más reciente para esos dos estados.
 
-## 7. Pendientes heredados y clasificación
+En main hay además una copia de cola de 2026-11-07_comida-hielo-caliente, ausente de feature. Esa copia tiene seis escenas, 176 palabras y objetivo 80 s, sin narrative_contract ni narrative_qa. Su ESTADO_EJECUCION dice 6 escenas, 60 s y ~115 palabras, discrepante con el storyboard; reporta clips de prueba y QA local con Kokoro, pero declara QA oficial pendiente. Los seis frames y capsula.mp4 no existen en GitHub. Clasificación: PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR, NOT_DISPATCHABLE y MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO. No se movió ni editó porque está en main, fuera de la rama solicitada.
 
-| Pendiente | Estado |
-|---|---|
-| QA estructural/narrativo de los doce proyectos 5–7 nov | ABIERTO |
-| Handoff gratuito: primera ejecución que cree marcadores | NO DEMOSTRADO |
-| Consumo/acuse por Grok y movimiento a grok_done | NO CONFIRMADO |
-| Compatibilidad workflow con paquetes anidados | BLOQUEO DE CÓDIGO |
-| Estados individuales de Grok | AUSENTES |
-| Radar/brief y horario específico del 9-nov | AUSENTES en HEAD revisado |
-| PR #3 limpio y listo para merge | BLOQUEADO; incluye data/*.json y artefactos temporales |
-| Revisión de APIs comerciales Krea/Runway y credenciales | OPCIONAL/PENDIENTE; no bloquea el flujo textual ni el handoff gratuito |
-| Muse: permiso Contents: Read and write en CAPCOT | PENDIENTE DE VERIFICACIÓN; no se cambió ningún permiso |
-| Prototipo integral storyboard→MP4 y QA audiovisual automatizado | NO DEMOSTRADO por el smoke TTS |
+## 7. Cola, bloqueados y Grok
 
-## 8. Qué significa «listo»
+- Los doce proyectos canónicos no tienen copia en cola/entrada, ni como JSON plano ni como carpeta anidada.
+- No existe cola/estado/<project_id>.json para ninguno de los doce: RECEPCION_GROK_NO_CONFIRMADA en los doce casos.
+- En feature, handoffs/grok_inbox solo tiene README y handoffs/grok_done solo .gitkeep; no hay marcadores ni confirmaciones.
+- La única carpeta conocida en cola/entrada de feature es 2026-11-07_dato-clavo-te-cocina, anidada. Corresponde al slot 23:30 excluido; solo se inventarió la ruta, no se hizo QA de contenido ni se creó copia.
+- Hay copias bloqueadas exactas para rayo, aguacate, ranas, arena, huesos y nubes. Aguacate, ranas y huesos tienen además duplicado entre archivo plano y carpeta. Existen variantes con IDs distintos: palomitas-explotan, arboles-mito-respiran, venus-dia-largo, corazon-ballena-azul y suenos-pulpo. extra-nubes-pesan comparte el project_id canónico de nubes y es material de origen, no segundo proyecto. No se borró ni movió nada.
+- Ninguna copia de los doce está en cola, por lo que no hubo movimiento a bloqueados en esta pasada.
 
-Para declarar CAPCOT operativo de extremo a extremo aún hacen falta, como mínimo:
-1. Aplicar el formato canónico ya definido: solo promover a `cola/entrada/<project_id>.json` después de QA narrativo independiente PASS y validación estructural PASS; no ampliar el workflow para admitir carpetas heredadas.
-2. Ejecutar una prueba controlada de handoff que produzca un marcador verificable en inbox; después Grok debe leerlo y registrar su estado conforme al contrato.
-3. Corregir los doce storyboards y volver a pasar las compuertas narrativa y estructural; no promover los dos PASS narrativos hasta que también pasen estructura.
-4. Separar/restaurar los cambios prohibidos a `data/*.json` y limpiar artefactos no destinados al PR antes de considerar el merge.
-5. Confirmar el permiso de escritura de Muse por separado; no confundir el permiso del usuario conectado con el de la app Muse.
+**Dispatchabilidad:** el workflow .github/workflows/capcot-grok-dispatch.yml escucha solo cola/entrada/*.json; el modo all busca con maxdepth 1 y el selector individual construye cola/entrada/<project_id>.json. Por ruta, todos los storyboards que permanecen en proyectos son NOT_DISPATCHABLE. Los paquetes anidados de main tampoco cumplen esa ruta. main no tiene este workflow. El workflow solo valida sintaxis JSON; no ejecuta QA narrativo ni estructural antes de escribir el marcador inbox. El marcador inbox tampoco equivale a recepción Grok: solo cola/estado escrito por Grok confirma recepción.
 
-## 9. Integridad y límites de esta revisión
+## 8. Procesador, registro y contradicciones documentales
 
-No se generaron cápsulas, frames, imágenes, voz, audio, video ni renders. No se publicó, programó, disparó workflow, envió payload externo ni consumió créditos. No se modificaron `data/*.json`, `main`, workflows, secretos, permisos, estados de Grok, storyboards del lote ni decisiones editoriales.
+- scripts/procesar_cola.py usa la fecha CDMX actual por defecto y filtra por fecha; acepta --fecha, por lo que una invocación explícita puede seleccionar histórico. También admite entradas planas y anidadas, mientras el contrato canónico y el workflow autorizan solo JSON plano. No comprueba cola/estado ni salidas/publicaciones antes de procesar; existe riesgo de reprocesar si alguien invoca manualmente una fecha histórica.
+- scripts/registro_editorial.py lee rotacion, publicaciones, cola y storyboards de proyectos/entrada/salidas, pero no escanea cola/bloqueados ni los horarios diarios/semanales; deriva fecha del ID y no conserva fecha_objetivo, slot_local ni slot_cesta. No basta para la reconciliación requerida.
+- README todavía indica entregar directamente a cola/entrada; contradice Plan Maestro, Guía, QA en frío y Flujo Externo, que requieren staging en proyectos y promoción por auditor independiente.
+- La plantilla deja sfx=[] por defecto; la Receta exige declarar el silencio. El validador no detecta listas vacías.
+- No se encontró archivo historial_youtube. Ninguno de los doce renglones del horario semanal trae yt_id_historial. No se detectó un ID histórico de esos doce aún descrito como programado.
+- data/rotacion.json (27 registros) y data/publicaciones.json (22) llegan a 31-oct; temas_del_dia llega a 28-oct; vistas_historico y balances_6h llegan a 28-oct; data/cola tiene un registro de 31-oct. No sirven para certificar rotación/publicación del lote 5–7.
+- data/tendencias_estilos llega a 31-oct. Los doce estilo_id existen en el catálogo y los prompts coinciden con prompt_base; no se repite estilo dentro de cada día, pero no puede verificarse rotación reciente contra el historial posterior al 31-oct. El horario semanal no asigna estilo.
+- data/endscreens_rotacion llega al 8-nov y registra end screens, no rotación de estilos.
 
-No se revisaron APIs por no haber identificado en esta pasada un cambio oficial nuevo que justificara esa comprobación. No se ejecutó la suite local por ausencia de runtime. El inventario corresponde al HEAD indicado y puede cambiar si otro actor hace commits después del corte.
+## 9. Actions y handoff
 
-## 10. Corrección de diagnóstico — revisión de contratos
+- No hay ejecución PR-triggered asociada al HEAD actual 934f7f7. El conector consultado solo expone ejecuciones asociadas a PR, por lo que no certifica el inventario total de push/workflow_dispatch.
+- El run de dispatch 41306776689 (1-nov) falló con el texto literal: “Falta configurar GROK_WEBHOOK_URL.” En ese job GROK_WEBHOOK_TOKEN también aparecía sin configurar, sin un error separado. No se copian valores de secretos.
+- El smoke TTS 42447536352 (8-nov) fue SUCCESS en compilación/interfaz/CLI; no demuestra generación real de voz ni audio final.
+- La versión actual del workflow deja el marcador inbox antes del webhook opcional, pero no hay run posterior que pruebe ese camino. No se envió payload ni se disparó workflow.
 
-La primera lectura describió la diferencia entre la carpeta anidada y el selector del workflow como un defecto del workflow. Esa conclusión queda **reemplazada**: al leer `docs/CONTRATO_OPERATIVO_UNIFICADO.md`, `docs/QA_NARRATIVO_EN_FRIO.md` y `scripts/validar_storyboard.py`, se confirma que el formato autorizado es un archivo JSON plano en `cola/entrada/<project_id>.json`, y que la promoción depende de QA independiente PASS. El workflow actual se alinea con ese contrato. La carpeta anidada de clavo no está habilitada para dispatch y carece de evidencia de aprobación narrativa; no se debe modificar el workflow para aceptarla.
+## 10. Cambios efectuados y límites
 
-No se cambió el workflow, la cola, el storyboard ni los estados Grok. Esta corrección es documental y evita un cambio técnico que habría relajado indebidamente la compuerta editorial.
+Cambios realizados:
+1. Se actualizó únicamente narrative_qa.reviewed_at en los doce storyboard canónicos a 2026-11-09T15:53:26-06:00. Se conservaron exactamente status, score, checks, flags, narrativa y claims.
+2. Se reemplazó este control con el corte actual y se verificará su lectura de vuelta.
+
+No se modificaron data/*.json, main, workflows, secretos, permisos, cola/estado, handoffs, salidas, decisiones editoriales ni publicaciones. No se promovió ningún storyboard, no se movió ninguna copia y no se corrigieron claims.
+
+No se generaron cápsulas, frames, imágenes, voz, audio, video ni renders. No se publicó, programó, envió payload externo ni consumió créditos. No se revisaron APIs comerciales porque no se identificó un cambio oficial nuevo que justificara esa comprobación.
+
+**Conclusión:** 0/12 aptos para promoción; 2/12 PASS narrativo pero FAIL estructural; 10/12 FAIL narrativo y estructural. No hay handoff Grok confirmado. PR #3 permanece Draft y no integrable.
