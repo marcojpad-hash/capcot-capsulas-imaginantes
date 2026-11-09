@@ -128,7 +128,8 @@
       "new_information": "ASTRA realiza un ensamblaje estructural en órbita sin astronautas junto al mecanismo.",
       "id": "scene_001",
       "style_id": "art_deco_poster",
-      "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text, robotic manipulator joining a metal strut to a floating truss, Earth horizon, coherent gold and teal palette, consistent ASTRA machine design, no text"
+      "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text, robotic manipulator joining a metal strut to a floating truss, Earth horizon, coherent gold and teal palette, consistent ASTRA machine design, no text",
+      "narration": "Una pieza sale del dispensador; un brazo la alinea y la une a una estructura que flota. No hay astronauta junto a ella: el ensamblaje ocurre en órbita."
     },
     {
       "arc": "desarrollo",
@@ -169,7 +170,8 @@
         ],
         "titulo": "Vandenberg, California — punto de lanzamiento del 30 de marzo de 2026; no representa la ubicación de ASTRA en órbita",
         "fuente": "NASA NTRS, Launch Sites (1991), tabla de coordenadas aproximadas de Vandenberg: 34°46′ N, 120°36′ W. Pin general de base, no coordenada del pad."
-      }
+      },
+      "narration": "ASTRA salió de Vandenberg, California, el 30 de marzo de 2026. Viajó a órbita baja dentro del vehículo Vigoride 7, en la misión Transporter-16."
     },
     {
       "arc": "desarrollo",
@@ -193,7 +195,8 @@
       "new_information": "El ensamblaje en órbita ofrece una tercera vía frente a plegar o transportar estructuras en grandes secciones.",
       "id": "scene_003",
       "style_id": "art_deco_poster",
-      "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text, oversized reflector antenna beside a compact rocket fairing and modular sections, coherent gold and teal palette, consistent ASTRA machine design, no text"
+      "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text, oversized reflector antenna beside a compact rocket fairing and modular sections, coherent gold and teal palette, consistent ASTRA machine design, no text",
+      "narration": "El reto es el tamaño: la cofia de un cohete limita lo que puede llevar. Para construir antenas enormes, una opción es unir sus piezas donde funcionarán."
     },
     {
       "arc": "desarrollo",
@@ -216,7 +219,8 @@
       "new_information": "El payload llevaba dos tramos ya montados, un manipulador y dispensadores con piezas adicionales.",
       "id": "scene_004",
       "style_id": "art_deco_poster",
-      "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text, compact orbital payload opened to reveal two truss bays, robotic arm and parts dispensers, coherent gold and teal palette, consistent ASTRA machine design, no text"
+      "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text, compact orbital payload opened to reveal two truss bays, robotic arm and parts dispensers, coherent gold and teal palette, consistent ASTRA machine design, no text",
+      "narration": "El contenedor llevaba dos tramos prefabricados, un brazo manipulador y dispensadores con piezas. Ya en órbita, el equipo liberó los seguros y desplegó los tramos."
     },
     {
       "arc": "desarrollo",
@@ -240,7 +244,8 @@
       "new_information": "El manipulador ensambló el tercer tramo; ingenieros en tierra enviaban comandos y revisaban fotos.",
       "id": "scene_005",
       "style_id": "art_deco_poster",
-      "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text, robotic arm assembling a third truss bay from composite tubes and aluminum joints, coherent gold and teal palette, consistent ASTRA machine design, no text"
+      "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text, robotic arm assembling a third truss bay from composite tubes and aluminum joints, coherent gold and teal palette, consistent ASTRA machine design, no text",
+      "narration": "Después, el manipulador ensambló un tercer tramo con tubos compuestos y uniones de aluminio. El equipo en tierra enviaba comandos y revisaba fotografías del proceso."
     },
     {
       "arc": "desarrollo",
@@ -262,7 +267,8 @@
       "new_information": "El diseño usa película perforada de Kapton y resortes; requiere menos pretensión que una malla metálica.",
       "id": "scene_006",
       "style_id": "art_deco_poster",
-      "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text, perforated Kapton reflective film and spring-tensioned cable nets shown as a design diagram, coherent gold and teal palette, consistent ASTRA machine design, no text"
+      "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text, perforated Kapton reflective film and spring-tensioned cable nets shown as a design diagram, coherent gold and teal palette, consistent ASTRA machine design, no text",
+      "narration": "El diseño prevé una película perforada de Kapton, tensada como dos redes reflectoras con resortes. Esa solución necesita menos tensión que una malla metálica."
     },
     {
       "arc": "cierre_historia",
@@ -291,7 +297,8 @@
         "valor": "2 tramos prefabricados + 1 ensamblado en órbita; 11 previstos",
         "etiqueta": "Avance de ASTRA frente al diseño completo",
         "fuente": "Caltech, 5-nov-2026: dos bays prefabricados desplegados, ensamblaje del tercero y truss completo previsto con once bays."
-      }
+      },
+      "narration": "El reflector planeado mide 1.4 metros y requiere once tramos. La demostración construyó el tercero; Caltech considera improbable completar toda la antena antes de diciembre."
     },
     {
       "arc": "reflexion_o_pregunta",
@@ -314,7 +321,8 @@
       "new_information": "El valor demostrado es poder construir por partes en el lugar donde la estructura operará.",
       "id": "scene_008",
       "style_id": "art_deco_poster",
-      "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text, small completed truss section above Earth with faint future telescope and antenna silhouettes, coherent gold and teal palette, consistent ASTRA machine design, no text"
+      "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text, small completed truss section above Earth with faint future telescope and antenna silhouettes, coherent gold and teal palette, consistent ASTRA machine design, no text",
+      "narration": "La sorpresa no es tener una antena gigante lista: es poder construirla por partes donde va a funcionar. ¿Qué montarías allá arriba? Esto fue Datos y ociosidades."
     }
   ],
   "cortinilla_fuentes": {
