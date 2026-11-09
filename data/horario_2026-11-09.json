@@ -1,0 +1,48 @@
+{
+  "fecha": "2026-11-09",
+  "tz": "America/Mexico_City",
+  "actualizado": "2026-11-09T07:21:11-06:00",
+  "nota": "Verificación rutina publicar TikTok 07:00 CDMX. La rana ya estaba en YT+TT; no se subió nada. El clavo de anoche (23:30 del 8-nov) también ya estaba público en YT+TT. Facebook de la rana no se reabrió en esta corrida.",
+  "slots": [
+    {
+      "hora": "07:00",
+      "cesta": "inter",
+      "id": "2026-11-06_inter-ranas-congeladas",
+      "titulo": "Esta rana se congela y vuelve a saltar #Shorts",
+      "estado": "publicado_yt_tt",
+      "yt_id": "UBFuKBU3cx0",
+      "youtube_url": "https://youtube.com/shorts/UBFuKBU3cx0",
+      "tiktok": "publicado",
+      "tiktok_url": "https://www.tiktok.com/@datosyociosidades/video/7705596671807245586",
+      "tiktok_post_id": "7705596671807245586",
+      "facebook": "programado_lote_7nov",
+      "mp4": "/workspace/capcot_prod_20261108_semana/ranas/capsula_v2.mp4",
+      "nota": "YT público desde 2026-11-09T13:00:00Z (0 vistas al verificar). TT Everyone, createTime 07:00 CDMX, 1 vista. FB: las corridas de las 02:27 y 06:40 CDMX lo dieron por programado el lunes 9-nov (mismo lote que palomitas); esta corrida no abrió Facebook y no capturó URL del reel."
+    },
+    {
+      "hora": "23:30",
+      "cesta": "dato_del_dia",
+      "id": null,
+      "titulo": null,
+      "estado": "sin_paquete",
+      "nota": "No hay cola/entrada/2026-11-09_dato-*; el dato va el mismo día vía ChatGPT→Grok. Nada que subir a TT/FB en esta ventana."
+    }
+  ],
+  "atrasados_revisados": [
+    {
+      "hora_original": "2026-11-08 23:30",
+      "id": "2026-11-07_dato-clavo-te-cocina",
+      "titulo": "¿Qué queda en tu cocina después de limpiar? #shorts",
+      "estado": "publicado_yt_tt",
+      "yt_id": "EwZ3dHalUn0",
+      "youtube_url": "https://youtube.com/shorts/EwZ3dHalUn0",
+      "yt_vistas": 15,
+      "tiktok": "publicado",
+      "tiktok_url": "https://www.tiktok.com/@datosyociosidades/video/7705655549571894529",
+      "tiktok_post_id": "7705655549571894529",
+      "tt_vistas": 117,
+      "facebook": "programado_8nov_23:30",
+      "nota": "YT publicado a las 2026-11-09T05:30:22Z. TT Everyone, createTime 23:30 CDMX del 8-nov. No se reabrió Facebook; el 8-nov a las 07:53 quedó como Scheduled Sunday Nov 8 at 11:30 PM, Público."
+    }
+  ]
+}
