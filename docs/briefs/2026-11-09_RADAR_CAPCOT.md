@@ -220,3 +220,18 @@ La carpeta heredada de clavo no se convierte a la ruta plana de handoff ni se re
 - No se publica ni programa contenido; no se consumen créditos.
 - No se modifican `data/*.json`, `main`, workflows, motores ni Motor U6.
 - No se modifica el informe técnico de Meta/Google porque no apareció un cambio nuevo sustentado directamente por documentación oficial.
+
+## 10. Actualización de slot — 9-nov-2026, 16:41 CDMX
+
+**Cambio de instrucción:** después del corte de las 08:10, Mj asignó expresamente el slot `2026-11-09 23:30 CDMX` al dato del día. La tabla del horario sigue indicando `dato_del_dia / sin_paquete`; no se modifica `data/horario_2026-11-09.json`.
+
+**Tema preparado como borrador:** demostración ASTRA de ensamblaje robótico en órbita. El anuncio primario de Caltech es del 5-nov-2026; la investigación de actualidad realizada hoy encontró además la cobertura de ScienceDaily fechada 9-nov. No se presenta como paper académico ni se inventa DOI: la evidencia primaria consultada es institucional (Caltech y DARPA).
+
+- Fuente principal: https://www.caltech.edu/about/news/caltech-robotic-space-demo-successfully-builds-in-space
+- Contraste institucional: https://www.darpa.mil/news/2026/nom4d-program-demonstrates-automated-in-space-assembly
+- Fuente cartográfica para pin aproximado de Vandenberg: https://ntrs.nasa.gov/api/citations/19910012870/downloads/19910012870.pdf
+- Hecho central: ASTRA llevaba dos tramos prefabricados y un manipulador; el sistema ensambló un tercer tramo en órbita. El diseño completo prevé once; no se completó la antena de 1.4 m. El equipo en tierra enviaba comandos y revisaba fotografías.
+- Estilo elegido: `art_deco_poster`, distinto de `papel_rasgado_capas` (ranas, slot 07:00) y `amigurumi` (clavo, slot 23:30 anterior). Estructura: `historia`, no `pregunta`.
+- Storyboard creado en `proyectos/2026-11-09_dato-robot-ensambla-orbita/storyboard.json`; 8 escenas, 205 palabras, 78 s de escenas + 6 s de cortinilla = 84 s; gancho de 5 palabras. Fuentes y estado están dentro del JSON, conforme al contrato vigente; no se creó `fuentes.md` separado.
+- Estado del borrador: `BORRADOR_EN_PROYECTOS_NO_APTO_PARA_PROMOCION`. No contiene `narrative_qa`: corresponde al auditor independiente hacer lectura en frío. Por tanto, todavía no se copia a `cola/entrada/` ni se afirma que está recibido por Grok.
+- No se crearon estados de Grok, no se modificó `data/*.json`, no se disparó Actions y no se generaron medios.
