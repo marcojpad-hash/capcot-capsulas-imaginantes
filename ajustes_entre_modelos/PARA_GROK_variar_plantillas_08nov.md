@@ -39,3 +39,6 @@ Las cápsulas nuevas tienen 7 frames con planos de 2.5 s y punch-ins: se sienten
 - En el storyboard poner "export": {"plano_seconds": 5}. Con eso montar_capsula.py usa solo zoom/paneo lentos (sin punch-in): el mismo frame se recorre en 1-2 encuadres pausados.
 - Variar el encuadre dentro de cada frame (pedir imágenes con varios puntos de interés) para que el movimiento lento tenga a dónde ir.
 Costo: los frames extra salen de Grok/ChatGPT gratis; el montaje es ffmpeg local.
+
+## Duración y cierre (Mj 9-nov 01:20)
+Las nuevas duran 74–81 s (antes 84–93 s) y el cierre se siente apresurado. Objetivo: 85–90 s, y la última escena (cierre) de al menos 10 s con narración pausada, sin recortar el remate.
