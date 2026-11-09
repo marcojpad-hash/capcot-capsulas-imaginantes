@@ -23,3 +23,9 @@ Las escenas de los montajes salen todas con la **misma plantilla visual** y casi
 
 ## Entrega
 Hacer commit en `main` con el mensaje `revariar: <tema>`. Imaginantes revisa `cola/entrada/` todos los días. Monta y reemplaza en YT, TT y FB **solo** las cápsulas que aún no se publican, a la misma hora. No toca videos ya publicados.
+
+## Agregado 8-nov 23:30 (Mj): deriva visual confirmada + TIPS
+
+- Confirmado con fotogramas: desde Venus (7-nov) TODAS las cápsulas (Venus, palomitas, pan, clavo, ranas) usan la misma ilustración cálida y la misma muchacha de lentes. Del 1 al 4-nov había estilos distintos (crayón/tiburón, collage de papel/pan duro, bordado/miel). Volver a esa variedad: un estilo de scripts/estilos.json distinto por cápsula, y no siempre con personaje humano.
+- TIPS: Mj lleva tiempo pidiendo cápsulas de tips prácticos (solo salió la de capsaicina). Formato fijo: al menos 2 tips por semana (cocina/casa/salud cotidiana), mismo molde: portada, gancho, ¿y a mí qué?, tip accionable, cierre. Entregar en cola/entrada/2026-11-08_tip-<tema>/ para la semana 9–14 (slots que no estén publicados).
+- Estrategia: el canal se estanca cuando no hay estreno diario; temas de cocina «qué pasa por dentro de…» son los que hoy jalan.
