@@ -138,3 +138,93 @@ No se modificaron data/*.json, main, workflows, secretos, permisos, cola/estado,
 No se generaron cápsulas, frames, imágenes, voz, audio, video ni renders. No se publicó, programó, envió payload externo ni consumió créditos. No se revisaron APIs comerciales porque no se identificó un cambio oficial nuevo que justificara esa comprobación.
 
 **Conclusión:** 0/12 aptos para promoción; 2/12 PASS narrativo pero FAIL estructural; 10/12 FAIL narrativo y estructural. No hay handoff Grok confirmado. PR #3 permanece Draft y no integrable.
+
+
+## 11. Reauditoría complementaria — 2026-11-09 16:20 CDMX
+
+**Snapshot de entrada:** rama `feature/capcot-video-discovery-continuity`, HEAD `39023fa794bbe29f2e6217dac4d27464f0189518`; `main` observado solo en lectura, HEAD `dddb49a46e00fa8091fb753d42e0c905026ca9d5`. PR #3 sigue abierto, Draft, no merged, `mergeable=false`; 592 archivos, 58,083 adiciones y 1,694 eliminaciones. No se modificó `main` ni el PR.
+
+### 11.1 Inventario actual y fechas
+
+- En `feature`, el árbol contiene 57 `proyectos/*/storyboard.json`; ninguno tiene prefijo `2026-11-09_`. Hay 0 borradores y 0 entradas de cola del 9-nov en esta rama. El radar del día no autoriza un proyecto nuevo; el horario diario registra el slot 07:00 como publicación atrasada de ranas y el slot fijo 23:30 queda excluido por instrucción.
+- El único path visible en `cola/entrada/` de `feature` es la carpeta histórica `2026-11-07_dato-clavo-te-cocina/`; corresponde a un slot 23:30 excluido. No se le hizo QA ni se creó una copia bajo esta reauditoría.
+- Los doce storyboards obligatorios del lote 5–7 nov están en `proyectos/<project_id>/storyboard.json`, no en cola. Sus doce primeros commits de archivo apuntan al commit `7a4154...`, 2026-11-02 16:11:24 CDMX; los registros de QA fueron actualizados por el commit `934f7f7...`, 2026-11-09 15:53:26 CDMX. GitHub muestra la cuenta `marcojpad-hash` como actor de esos commits; no hay evidencia que permita atribuir la redacción a una automatización o modelo concreto.
+
+| Proyecto | Fecha objetivo / slot / cesta | QA frío releído | Estado estructural | Dispatch | Estado Grok |
+|---|---|---:|---|---|---|
+| `2026-11-05_kids-dia-en-venus` | 05-nov 07:00 / kids | PASS 88 | FAIL | NOT_DISPATCHABLE | RECEPCION_GROK_NO_CONFIRMADA |
+| `2026-11-05_comida-palomitas` | 05-nov 13:30 / comida_familia | FAIL 82 | FAIL | NOT_DISPATCHABLE | RECEPCION_GROK_NO_CONFIRMADA |
+| `2026-11-05_inter-arboles-se-comunican` | 05-nov 17:00 / intermedio_1 | FAIL 78 | FAIL | NOT_DISPATCHABLE | RECEPCION_GROK_NO_CONFIRMADA |
+| `2026-11-05_inter-rayo-globular` | 05-nov 17:45 / intermedio_2 | FAIL 81 | FAIL | NOT_DISPATCHABLE | RECEPCION_GROK_NO_CONFIRMADA |
+| `2026-11-06_kids-ballena-azul-corazon` | 06-nov 07:00 / kids | FAIL 80 | FAIL | NOT_DISPATCHABLE | RECEPCION_GROK_NO_CONFIRMADA |
+| `2026-11-06_comida-aguacate-negro` | 06-nov 13:30 / comida_familia | FAIL 79 | FAIL | NOT_DISPATCHABLE | RECEPCION_GROK_NO_CONFIRMADA |
+| `2026-11-06_inter-ranas-congeladas` | 06-nov 17:00 / intermedio_1 | FAIL 83 | FAIL | NOT_DISPATCHABLE | RECEPCION_GROK_NO_CONFIRMADA |
+| `2026-11-06_inter-arena-cantante` | 06-nov 17:45 / intermedio_2 | PASS 94 | FAIL | NOT_DISPATCHABLE | RECEPCION_GROK_NO_CONFIRMADA |
+| `2026-11-07_kids-huesos-bebe` | 07-nov 07:00 / kids | FAIL 82 | FAIL | NOT_DISPATCHABLE | RECEPCION_GROK_NO_CONFIRMADA |
+| `2026-11-07_comida-hielo-caliente` | 07-nov 13:30 / comida_familia | FAIL 81 | FAIL | NOT_DISPATCHABLE | RECEPCION_GROK_NO_CONFIRMADA |
+| `2026-11-07_inter-pulpo-suenos` | 07-nov 17:00 / intermedio_1 | FAIL 80 | FAIL | NOT_DISPATCHABLE | RECEPCION_GROK_NO_CONFIRMADA |
+| `2026-11-07_inter-nubes-pesan` | 07-nov 17:45 / intermedio_2 | FAIL 78 | FAIL | NOT_DISPATCHABLE | RECEPCION_GROK_NO_CONFIRMADA |
+
+Los doce `cola/estado/<project_id>.json` devolvieron 404. Se conserva el literal `RECEPCION_GROK_NO_CONFIRMADA` en los doce casos; no se creó ni modificó estado. Los valores de QA de la tabla coinciden con los JSON releídos. La relectura en frío de esta pasada no justificó cambiar scores/checks ni reescribir narraciones.
+
+### 11.2 Revalidación estructural y rotación
+
+- Los doce `project_id`, `fecha_objetivo`, `slot_local` y `slot_cesta` coinciden con `data/horario_semana_2026-11-01_07.json`. El horario actualizado ubica los slots intermedios 5, 6 y 7 nov en 17:45; el brief semanal antiguo conserva referencias a 19:00 y está desactualizado.
+- 12/12: 7–8 escenas; cortinilla de 6 s; escenas + cortinilla = 84 s; `target_duration_seconds=84`; gancho de hasta seis palabras; arco y cierre hablado presentes; voz `es-MX-JorgeNeural`, +7%, -2Hz; contrato narrativo con seis campos no vacíos; `source_ids` apuntan a IDs existentes; prompts comienzan con el `prompt_base` literal del catálogo; `ambiente` y `sfx` están presentes.
+- 11/12 cumplen 170–235 palabras. Árboles tiene 169, carece de capa mapa y de capa dato/gráfico. Las otras once tienen mapa y dato/gráfico con fuente.
+- Las 85 escenas carecen de los seis campos estructurales exigidos por `validar_storyboard.py`: `dramatic_beat`, `scene_function`, `causal_bridge_from_previous`, `question_state`, `reason_to_continue` y `new_information`. Total: 510 campos ausentes. Por eso 0/12 pasan estructura, incluidos Venus y arena aunque su QA narrativo sea PASS.
+- 12/12 mantienen `approved_assets=[]`, `export.render_status=NOT_GENERATED`, sin `asset_filename`, `asset_type` ni rutas de medios. No se contaron placeholders como medios. En las 12 biblias visuales `seed=null` y `reference_assets=[]`; no bloquea el contrato textual, pero la continuidad visual futura necesitará resolver semilla/referencias antes de producción.
+- 85/85 escenas declaran ambiente; 75 tienen `sfx=[]` y diez contienen efectos. La plantilla permite lista vacía y el validador comprueba presencia, no si el silencio está descrito de forma editorial.
+- Las doce declaran `estructura="pregunta"`: cuatro repeticiones el 5-nov, cuatro el 6-nov y cuatro el 7-nov. Esto incumple la rotación de estructura dentro del día. El estilo `papel_rasgado_capas` aparece en árboles (5-nov) y ranas (6-nov), posible repetición entre días. Los temas del lote son distintos. El storyboard canónico de árboles sigue siendo el de redes micorrícicas y Karst et al. 2023; no es un desajuste temático. `extra-nubes-pesan` conserva el mismo `project_id` canónico y es material de origen, no un segundo proyecto.
+
+### 11.3 Claims y trazabilidad de fuentes
+
+- Pulpo: la narración identifica `Octopus insularis`, pero el artículo de Nature DOI `10.1038/s41586-023-06203-4` estudia `Octopus laqueus`. No es una variante de nombre: es una discrepancia de especie. Fuente primaria: https://www.nature.com/articles/s41586-023-06203-4.
+- Ranas: la capa que muestra `Hasta −16 °C` cita PubMed 23966588 / DOI `10.1242/jeb.089342` (estudio de Interior Alaska, 2013), pero `sources[]` solo contiene el trabajo de 1993 DOI `10.1242/jeb.181.1.245`; el `source_ids` de la capa sigue siendo `SRC-001`. El dato tiene fuente externa identificable, pero no está registrado como segundo source_id. Referencia: https://pubmed.ncbi.nlm.nih.gov/23966588/.
+- Arena: `scene_002` coloca Agadir con una fuente que cita Douady et al. 2006 / DOI `10.1103/PhysRevLett.97.018002`, y `scene_004` narra sincronización de granos; ambas escenas solo declaran `source_ids=["SRC-001"]`, que corresponde a Andreotti 2004. La fuente `SRC-002` sí existe en `sources[]`, pero no está vinculada a esas escenas.
+- Aguacate: `sources[0].doi` está vacío, aunque el artículo de Heliyon 2025 enlazado por PMC tiene DOI `10.1016/j.heliyon.2025.e42588` (PMID 40034293). Además, el mapa pincha el Western Regional Research Center de Albany, pero las afiliaciones del artículo corresponden a instituciones colombianas; el pin no queda sustentado por esa fuente. Referencia: https://pubmed.ncbi.nlm.nih.gov/40034293/.
+- Ballena: se mantiene la sobreafirmación del cierre “casi se detiene”; el estudio registra un mínimo de 2 latidos/min en un ejemplar, no detención.
+- Los nueve DOI distintos declarados en `sources[]` siguen marcados como verificados por resolver en los JSON. Hay dos DOI adicionales relevantes que no están bien registrados: el de la capa de ranas y el omitido en la fuente de aguacate. No se ejecutó Crossref ni `--check-doi`.
+
+### 11.4 Producción preexistente: cuatro proyectos, no redispatch
+
+La lectura conjunta de JSON por plataforma, horarios diarios y `endscreens_rotacion.json` amplía la detección previa: son cuatro proyectos con evidencia de publicación/programación. Esta sección prevalece sobre cualquier resumen anterior que solo contara palomitas y ranas. Los cuatro se clasifican `PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR`, aunque sus `publicacion.status` en storyboard sigan como pendientes y no haya `salidas/<id>/` ni estado Grok.
+
+| Proyecto | Evidencia de plataforma en repo | Fecha/privacidad registrada |
+|---|---|---|
+| Venus | YouTube ID de referencia `phVfyHp3CnY` (54 vistas en end screens); TikTok `7705488176793652481`; Facebook `2544385142727016` | Facebook 07-nov 17:58 CDMX; TikTok sin hora en JSON; privacidad YouTube/TikTok/Facebook no registrada en estos archivos. `ai_label=false` en Facebook y `aigcLabelType=1` en TikTok: divulgación no uniforme. |
+| Palomitas | YouTube `zTP5akrGA9M`; TikTok `7705593452003691794`; Facebook `1167496802382795` | Horario diario 08-nov: `publicado_yt_tt_fb`; Facebook 08-nov 07:00 CDMX. Privacidad no registrada para este slot. |
+| Arena cantante | YouTube `m4RqQRaz55k` (33 vistas en end screens); TikTok `7705502155427368212`; Facebook `2224920108452190`; el registro de TikTok aún menciona otro YouTube ID `ztIkYcXB91U` como programado a las 19:00 | Facebook 07-nov 17:58 CDMX; TikTok sin hora en JSON; privacidad no registrada. Riesgo de duplicado entre ID público y ID que sigue descrito como programado. |
+| Ranas | YouTube `UBFuKBU3cx0`; TikTok `7705596671807245586`; Facebook programado sin URL/ID | Horario diario 09-nov: YouTube/TikTok `publicado` a las 07:00 CDMX; Facebook `programado_lote_7nov`. Privacidad no registrada. |
+
+En los cuatro casos, los JSON de plataforma apuntan a MP4/captions bajo `/workspace/...`, pero el árbol GitHub no contiene esos medios: `MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO`. No se afirma que el MP4 exista. Los horarios semanales todavía dicen `pedir_chatgpt` para esos slots; hay contradicción entre parrilla y registros posteriores. No se canceló ni borró nada.
+
+Las otras ocho propuestas no tienen `salidas/<id>/` ni JSON de publicación por plataforma en el árbol auditado. Para los doce no hay `cola/estado/<id>.json`; la evidencia de publicación externa no se atribuye a Grok sin ese estado.
+
+### 11.5 Divergencia adicional en `main`: Andes del 9-nov
+
+Se detectó en `main` un proyecto del día que no existe en `feature`: `proyectos/2026-11-09_andes-virus-aminoacido/` y una copia anidada `cola/entrada/2026-11-09_andes-virus-aminoacido/storyboard.json`. El commit de creación observado es `4b0ac906...`, 2026-11-09 10:36:22 CDMX, actor GitHub `marcojpad-hash`; no hay evidencia para atribuirlo a un modelo/automatización concreta.
+
+- El storyboard de `proyectos/` tiene 7 escenas, 130 palabras, 68 s de escenas + 6 s de cortinilla = 74 s, aunque declara objetivo 82 s. No contiene `narrative_contract` ni `narrative_qa`; declara `export.filename=capsula.mp4` y siete rutas `frames/scene_00x.jpg`.
+- La copia de cola no coincide: tiene una sola escena, 16 palabras y 8 s + 6 s = 14 s; conserva objetivo 82 s y una ruta `frames/scene_001.jpg`. No contiene QA narrativo ni contrato.
+- `programacion.json` declara `programado_paquete`, YouTube privado hasta 14:15 CDMX y subida TikTok desde teléfono, pero no aporta ID/URL de plataforma. El horario operativo actualizado del 9-nov solo mantiene 06:30–07:30, 16:30–18:00 y el slot fijo 23:30; 14:15 no pertenece a la política vigente. La hora declarada ya pasó y no hay confirmación de publicación.
+- `cola/estado/2026-11-09_andes-virus-aminoacido.json` devuelve 404: `RECEPCION_GROK_NO_CONFIRMADA`. No hay `salidas/` ni frames/MP4 en el árbol: `MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO`.
+
+Clasificación conservadora: `PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR` hasta reconciliar la programación declarada; `NOT_DISPATCHABLE` desde el workflow de `feature`, por estar en `main` y usar carpeta anidada, no JSON plano. No se modificó `main`.
+
+### 11.6 Workflow, Actions y helpers
+
+- `.github/workflows/capcot-grok-dispatch.yml` está limitado a la rama `feature/capcot-video-discovery-continuity`; `push.paths` escucha solo `cola/entrada/*.json`; `workflow_dispatch=all` usa `find cola/entrada -maxdepth 1 -type f -name '*.json'`; el selector individual construye `cola/entrada/<project_id>.json`. Ninguno de los doce borradores en `proyectos/` es dispatchable. Las carpetas anidadas de main tampoco lo son. El workflow crea un marcador `status=pending` en `handoffs/grok_inbox`; eso no equivale a recepción de Grok.
+- La consulta completa de Actions muestra el último run de dispatch como `41306776689`, 2026-11-01 12:29:58Z, FAIL. Error literal: `Falta configurar GROK_WEBHOOK_URL.` El paso termina antes de comprobar `GROK_WEBHOOK_TOKEN`; no se expone ningún valor. La versión actual del workflow hace el webhook opcional y permite buzón gratuito, pero no existe run posterior que pruebe esa versión. No hay dispatch desde 1-nov.
+- TTS smoke `42447536352`, 2026-11-08 04:37Z, SUCCESS: instalación, `py_compile`, `--help` y comprobación de manifiesto. No generó voz/audio. Los dos runs TTS fallidos anteriores no exponen jobs/logs (`total_count=0`).
+- `procesar_cola.py` por defecto toma la fecha CDMX actual y filtra por el prefijo de fecha del path; admite archivo plano y carpeta anidada. `--fecha` permite elegir otra fecha explícitamente y no compara `fecha_objetivo` dentro del JSON. El procesador no llama a `rotacion.diferencias_con_hoy`; no aplica la regla de estructura/estilo repetidos. `registro_editorial.py` no incorpora `cola/bloqueados`, JSON sociales ni `data/horario_*.json`; deriva fecha del ID, no fecha real de publicación. Esto explica por qué puede perder los cuatro procesamientos preexistentes.
+- Los registros canónicos siguen desfasados: `temas_del_dia` y `estilos_usados` llegan a 28-oct; `rotacion` y `publicaciones` a 31-oct; `cola` a 31-oct; `tendencias_estilos` a 31-oct; `endscreens_rotacion` a 08-nov; `horarios` y `horario_2026-11-09` a 09-nov. No se modificó ningún `data/*.json`.
+- Se intentó obtener checkout local para ejecutar Python, pero `git clone` falló con `Could not resolve host: github.com`. Por tanto no se ejecutaron `validar_storyboard.py`, `procesar_cola.py`, `registro_editorial.py` ni la suite. Los resultados de estructura son revisión estática de los JSON/código, no ejecución del validador.
+- No se revisaron APIs comerciales: no apareció en el repositorio un cambio oficial nuevo que activara esa revisión.
+
+### 11.7 Acciones de esta reauditoría
+
+- No se modificaron storyboards, `narrative_qa`, claims, fuentes, horarios, `data/*.json`, `cola/estado`, workflows, secretos, permisos, `main` ni decisiones editoriales.
+- No se promovió ni movió ningún paquete; no se disparó Actions ni se envió payload externo.
+- No se generaron cápsulas, frames, imágenes, voz, audio, video ni renders; no se publicó, programó ni consumieron créditos.
+- El estado de cierre sigue siendo 0/12 aptos para promoción: 2/12 PASS narrativo pero FAIL estructural; 10/12 FAIL narrativo y estructural. Cuatro proyectos tienen procesamiento/publicación preexistente y no deben redispatcharse. La divergencia Andes en `main` requiere reconciliación fuera de esta rama.
