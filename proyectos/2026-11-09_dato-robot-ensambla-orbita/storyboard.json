@@ -101,7 +101,7 @@
       "accessed": "2026-11-09",
       "publication_date": "1991-01-01",
       "supports": [
-        "Coordenadas aproximadas de Vandenberg: 34°35′ N, 120°38′ W; usadas únicamente para ubicar la base en el mapa, no la posición orbital ni el pad exacto."
+        "Coordenadas aproximadas de Vandenberg: 34°35′ N, 120°38′ W (34.5833, -120.6333); usadas únicamente para ubicar la base en el mapa, no la posición orbital ni el pad exacto."
       ],
       "verification_status": "VERIFICADO_FUENTE_PRIMARIA_URL"
     }
@@ -155,16 +155,16 @@
       "capa": {
         "tipo": "mapa",
         "region": [
-          34.4,
-          -121,
-          35,
+          34.3,
+          -120.9,
+          34.8,
           -120.3
         ],
         "puntos": [
           {
             "nombre": "Vandenberg Space Force Base (pin aproximado de la base, no de la posición orbital)",
-            "lat": 34.77,
-            "lon": -120.6
+            "lat": 34.5833,
+            "lon": -120.6333
           }
         ],
         "titulo": "Vandenberg, California — punto de lanzamiento del 30 de marzo de 2026; no representa la ubicación de ASTRA en órbita",
