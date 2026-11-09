@@ -1,0 +1,366 @@
+{
+  "_schema": "CAPCOT_STORYBOARD_TEXT_V2",
+  "project_id": "2026-11-09_dato-robot-ensambla-orbita",
+  "serie": "Datos y ociosidades",
+  "title": "Un robot ensambla una estructura en órbita",
+  "titulo": "Un robot construyó en órbita",
+  "language": "es-MX",
+  "aspect_ratio": "9:16",
+  "target_duration_seconds": 84,
+  "estructura": "historia",
+  "audience": "Público general interesado en ciencia y exploración espacial",
+  "occasion": "Actualidad científica y tecnológica; slot 23:30 CDMX del 9-nov-2026",
+  "resumen": "La demostración ASTRA de Caltech ensambló un tercer tramo de una estructura reflectora en órbita. El avance prueba una vía para construir estructuras modulares en el espacio, pero no completó la antena prevista.",
+  "narrative_contract": {
+    "central_question": "¿Puede un robot ensamblar una estructura útil directamente en órbita, sin que un astronauta una físicamente cada pieza?",
+    "promise": "Entender qué construyó ASTRA, cómo lo hizo y qué falta para completar el reflector.",
+    "stakes": "El volumen de las cofias de los cohetes limita el tamaño de estructuras que pueden lanzarse ya montadas.",
+    "scientific_turn": "El sistema no solo despliega piezas: su manipulador ensambló un tercer tramo en órbita, mientras el equipo supervisaba desde tierra.",
+    "evidence_limit": "La demostración construyó el tercer tramo de un diseño de once; no terminó la antena de 1.4 metros y no fue una operación sin supervisión humana.",
+    "payoff": "La novedad demostrada es construir por módulos en el lugar donde la estructura funcionará, no haber terminado ya un telescopio o una antena gigante."
+  },
+  "trend_source": {
+    "termino": "Demostración ASTRA de ensamblaje robótico en órbita",
+    "fecha_publicacion": "2026-11-05",
+    "url": "https://www.caltech.edu/about/news/caltech-robotic-space-demo-successfully-builds-in-space"
+  },
+  "editorial_status": "PROPUESTA_PENDIENTE_DE_GROK",
+  "arco": {
+    "hook_medias_res": "Una pieza se mueve y se une a una estructura flotante: el ensamblaje ocurre en órbita.",
+    "desarrollo": "El lanzamiento, el límite de tamaño de los cohetes y la configuración de ASTRA explican cómo el manipulador construyó un tercer tramo.",
+    "cierre_historia": "El diseño completo requiere once tramos; la prueba no terminó la antena.",
+    "reflexion_o_pregunta": "El logro es demostrar que se puede construir por partes donde la estructura funcionará."
+  },
+  "estilo_id": "art_deco_poster",
+  "estilo_visual": "Póster Art Déco",
+  "visual_identity": {
+    "style_id": "art_deco_poster",
+    "style_name": "Póster Art Déco",
+    "prompt_base": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text",
+    "palette": "teal, dorado, negro y crema; contraste constante",
+    "lighting": "Luz espacial limpia con brillos controlados sobre metal y película reflectora",
+    "texture": "Gradientes aerografiados y superficies geométricas limpias, sin fotorealismo",
+    "composition": "Un sujeto central grande por escena; líneas diagonales y formas geométricas; vertical 9:16",
+    "negative_prompt": "No astronautas manipulando piezas, no antena completa presentada como logro, no marcas comerciales, no texto generado, no logos, no fuego ni explosiones, no hiperrealismo",
+    "reference_assets": [],
+    "seed": 9112026,
+    "seed_policy": "Mantener la misma silueta del manipulador ASTRA, módulos y paleta; variar encuadre y fase de ensamblaje sin rediseñar el equipo."
+  },
+  "typography_identity": {
+    "font_family": "DejaVu Sans",
+    "font_weight": "700 para gancho; 400 para subtítulos",
+    "title_style": "Gancho de cinco palabras, presente desde frame 0 en postproducción",
+    "subtitle_style": "Bloques de máximo tres palabras; zona segura inferior",
+    "hierarchy": "Gancho > dato/etiqueta > subtítulos",
+    "animation": "Un movimiento por plano; tipografía en postproducción"
+  },
+  "voice": {
+    "engine": "edge-tts",
+    "voice_id": "es-MX-JorgeNeural",
+    "language": "es-MX",
+    "rate": "+7%",
+    "pitch": "-2Hz",
+    "pad_seconds": 0.3,
+    "modo_pausas": "continuo"
+  },
+  "sources": [
+    {
+      "id": "SRC-001",
+      "cita_corta": "California Institute of Technology. Caltech Robotic Space Demo Successfully Builds in Space. 5 nov 2026.",
+      "url": "https://www.caltech.edu/about/news/caltech-robotic-space-demo-successfully-builds-in-space",
+      "doi": null,
+      "accessed": "2026-11-09",
+      "publication_date": "2026-11-05",
+      "supports": [
+        "ASTRA es un constructor robótico de trusses desarrollado por Caltech y financiado por DARPA.",
+        "El payload viajó desde Vandenberg a órbita baja el 30-mar-2026 en Vigoride 7 dentro de Transporter-16.",
+        "Llevaba dos bays prefabricados, un manipulador y dispensadores; el equipo envió comandos desde tierra y revisó fotos.",
+        "El manipulador ensambló el tercer bay; el diseño completo requiere once bays y la antena reflectora prevista mide 1.4 metros.",
+        "La misión termina en diciembre y Caltech considera improbable completar el ensamblaje total."
+      ],
+      "verification_status": "VERIFICADO_FUENTE_PRIMARIA_URL"
+    },
+    {
+      "id": "SRC-002",
+      "cita_corta": "DARPA. NOM4D program demonstrates automated in-space assembly. 5 nov 2026.",
+      "url": "https://www.darpa.mil/news/2026/nom4d-program-demonstrates-automated-in-space-assembly",
+      "doi": null,
+      "accessed": "2026-11-09",
+      "publication_date": "2026-11-05",
+      "supports": [
+        "La demostración en órbita ensambló una estructura de celosía a partir de componentes individuales.",
+        "El sistema es una prueba de concepto para estructuras grandes y ligeras que se ensamblarían donde operarán; no demuestra estructuras de cientos de metros ya construidas."
+      ],
+      "verification_status": "VERIFICADO_FUENTE_PRIMARIA_URL"
+    },
+    {
+      "id": "SRC-003",
+      "cita_corta": "NASA Technical Reports Server. Appendix A — Launch Sites. Coordenadas aproximadas de Vandenberg.",
+      "url": "https://ntrs.nasa.gov/api/citations/19910012870/downloads/19910012870.pdf",
+      "doi": null,
+      "accessed": "2026-11-09",
+      "publication_date": "1991-01-01",
+      "supports": [
+        "Coordenadas aproximadas de Vandenberg: 34°35′ N, 120°38′ W; usadas únicamente para ubicar la base en el mapa, no la posición orbital ni el pad exacto."
+      ],
+      "verification_status": "VERIFICADO_FUENTE_PRIMARIA_URL"
+    }
+  ],
+  "scenes": [
+    {
+      "arc": "hook_medias_res",
+      "duration_seconds": 10,
+      "on_screen_text": "Un robot arma en órbita",
+      "visual_description": "Primer plano de un manipulador robótico tomando un tubo de un dispensador y uniéndolo a una celosía flotante; Tierra al fondo, sin astronautas en cuadro.",
+      "ambiente": "Zumbido mecánico tenue y silencio espacial sugerido, sin explosiones.",
+      "sfx": [
+        "clic metálico de unión",
+        "deslizamiento mecánico"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "dramatic_beat": "Una pieza pasa de estar suelta a formar parte de una estructura en microgravedad.",
+      "scene_function": "Abrir con la acción decisiva y presentar la anomalía: ensamblaje físico en órbita.",
+      "causal_bridge_from_previous": "Apertura directa: el manipulador ya está recogiendo y uniendo una pieza.",
+      "question_state": "Se observa que el robot ensambla; falta saber dónde comenzó y qué problema resuelve.",
+      "reason_to_continue": "La ubicación y el viaje explican cómo llegó el equipo a órbita.",
+      "new_information": "ASTRA realiza un ensamblaje estructural en órbita sin astronautas junto al mecanismo.",
+      "id": "scene_001",
+      "style_id": "art_deco_poster",
+      "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text, robotic manipulator joining a metal strut to a floating truss, Earth horizon, coherent gold and teal palette, consistent ASTRA machine design, no text"
+    },
+    {
+      "arc": "desarrollo",
+      "duration_seconds": 9,
+      "on_screen_text": "Vandenberg → órbita baja",
+      "visual_description": "Mapa sobrio de la costa central de California con un único pin aproximado en Vandenberg; línea esquemática hacia órbita, claramente ilustrativa y no una trayectoria orbital medida.",
+      "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text, minimal map of California central coast with Vandenberg launch site marked, illustrative orbit arc, coherent gold and teal palette, consistent ASTRA machine design, no text",
+      "ambiente": "Viento costero breve que se transforma en tono electrónico ascendente.",
+      "sfx": [
+        "pulso de despegue suave"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-003"
+      ],
+      "dramatic_beat": "La estructura deja de ser una idea de laboratorio y aparece en su contexto real de lanzamiento.",
+      "scene_function": "Ubicar el origen terrestre del experimento sin confundirlo con la posición orbital.",
+      "causal_bridge_from_previous": "La pieza que vimos ensamblarse pertenece a un sistema que primero tuvo que llegar al espacio.",
+      "question_state": "Se conoce el origen del experimento; queda explicar por qué construir allí arriba.",
+      "reason_to_continue": "El límite de tamaño de los cohetes da sentido al ensamblaje orbital.",
+      "new_information": "ASTRA partió de Vandenberg el 30 de marzo de 2026 a bordo de Vigoride 7.",
+      "id": "scene_002",
+      "style_id": "art_deco_poster",
+      "capa": {
+        "tipo": "mapa",
+        "region": [
+          34.4,
+          -121,
+          35,
+          -120.3
+        ],
+        "puntos": [
+          {
+            "nombre": "Vandenberg Space Force Base (pin aproximado de la base, no de la posición orbital)",
+            "lat": 34.77,
+            "lon": -120.6
+          }
+        ],
+        "titulo": "Vandenberg, California — punto de lanzamiento del 30 de marzo de 2026; no representa la ubicación de ASTRA en órbita",
+        "fuente": "NASA NTRS, Launch Sites (1991), tabla de coordenadas aproximadas de Vandenberg: 34°46′ N, 120°36′ W. Pin general de base, no coordenada del pad."
+      }
+    },
+    {
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "on_screen_text": "El límite: el tamaño",
+      "visual_description": "Comparación gráfica: una antena reflectora enorme no cabe dentro de la cofia de un cohete; piezas modulares aparecen separadas y luego alineadas.",
+      "ambiente": "Pulso rítmico de taller, sin voz adicional.",
+      "sfx": [
+        "golpe seco al cerrar una cofia",
+        "clics de piezas"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "dramatic_beat": "Aparece el obstáculo que la nueva técnica intenta superar.",
+      "scene_function": "Establecer stakes: el tamaño de lanzamiento limita estructuras que podrían ser mayores.",
+      "causal_bridge_from_previous": "Como ASTRA ya está en órbita, la pregunta pasa de cómo llegó a por qué conviene construir allí.",
+      "question_state": "El problema no es solo lanzar una antena, sino superar el volumen disponible dentro del cohete.",
+      "reason_to_continue": "La carga útil revela qué partes llevó el sistema para resolverlo.",
+      "new_information": "El ensamblaje en órbita ofrece una tercera vía frente a plegar o transportar estructuras en grandes secciones.",
+      "id": "scene_003",
+      "style_id": "art_deco_poster",
+      "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text, oversized reflector antenna beside a compact rocket fairing and modular sections, coherent gold and teal palette, consistent ASTRA machine design, no text"
+    },
+    {
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "on_screen_text": "Dos tramos y un brazo",
+      "visual_description": "Vista isométrica del módulo ASTRA como caja compacta abierta, dos tramos prefabricados, brazo manipulador y dispensadores motorizados; sin inventar astronautas.",
+      "ambiente": "Ventilación electrónica baja y vibración mecánica controlada.",
+      "sfx": [
+        "liberación de seguros",
+        "dos piezas desplegándose"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "dramatic_beat": "Se revela que el robot no llegó con la antena terminada, sino con un kit modular.",
+      "scene_function": "Explicar la configuración real del payload antes de mostrar el ensamblaje.",
+      "causal_bridge_from_previous": "El límite de volumen conduce a enviar un conjunto compacto de módulos y piezas.",
+      "question_state": "Ya se conocen los componentes; falta ver qué parte se construyó realmente.",
+      "reason_to_continue": "La tercera sección permite distinguir demostración real de diseño futuro.",
+      "new_information": "El payload llevaba dos tramos ya montados, un manipulador y dispensadores con piezas adicionales.",
+      "id": "scene_004",
+      "style_id": "art_deco_poster",
+      "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text, compact orbital payload opened to reveal two truss bays, robotic arm and parts dispensers, coherent gold and teal palette, consistent ASTRA machine design, no text"
+    },
+    {
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "on_screen_text": "El tercer tramo",
+      "visual_description": "El manipulador coloca tubos compuestos y uniones de aluminio en una placa de ensamblaje; una pequeña secuencia de pasos muestra el tercer tramo tomando forma.",
+      "ambiente": "Ambiente mecánico rítmico, sin dramatización de peligro.",
+      "sfx": [
+        "tubo encajando",
+        "unión asegurada"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "dramatic_beat": "El experimento cruza de despliegue a construcción: se arma una nueva sección en órbita.",
+      "scene_function": "Entregar el hallazgo central y mostrar la cooperación entre automatización y supervisión humana.",
+      "causal_bridge_from_previous": "Con el módulo abierto y las piezas disponibles, el manipulador puede ensamblar la siguiente sección.",
+      "question_state": "Se confirma que una sección se construyó en órbita; todavía no es una antena completa.",
+      "reason_to_continue": "La superficie reflectora explica para qué sirve la celosía.",
+      "new_information": "El manipulador ensambló el tercer tramo; ingenieros en tierra enviaban comandos y revisaban fotos.",
+      "id": "scene_005",
+      "style_id": "art_deco_poster",
+      "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text, robotic arm assembling a third truss bay from composite tubes and aluminum joints, coherent gold and teal palette, consistent ASTRA machine design, no text"
+    },
+    {
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "on_screen_text": "Una red reflectora ligera",
+      "visual_description": "Detalle técnico ilustrado de una película perforada de Kapton formando dos redes tensadas con resortes sobre la celosía; mostrarlo como diseño previsto, no como instalación ya completada.",
+      "ambiente": "Tono fino y aireado, con leve vibración de material.",
+      "sfx": [
+        "tensión elástica breve"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "dramatic_beat": "La estructura deja de ser solo un armazón y adquiere su función de reflector.",
+      "scene_function": "Explicar el mecanismo previsto y la ventaja de masa del diseño.",
+      "causal_bridge_from_previous": "El tercer tramo es parte de un reflector; la superficie que lo completa requiere una solución ligera.",
+      "question_state": "Se entiende el principio del reflector, pero no se ha demostrado la antena completa.",
+      "reason_to_continue": "La escala del diseño y el avance real fijan el límite de la hazaña.",
+      "new_information": "El diseño usa película perforada de Kapton y resortes; requiere menos pretensión que una malla metálica.",
+      "id": "scene_006",
+      "style_id": "art_deco_poster",
+      "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text, perforated Kapton reflective film and spring-tensioned cable nets shown as a design diagram, coherent gold and teal palette, consistent ASTRA machine design, no text"
+    },
+    {
+      "arc": "cierre_historia",
+      "duration_seconds": 10,
+      "on_screen_text": "3 de 11 tramos",
+      "visual_description": "Gráfico de once módulos lineales: dos prefabricados desplegados y un tercero ensamblado en órbita; los ocho restantes aparecen atenuados como plan, no como logro.",
+      "ambiente": "La música baja para dejar espacio al matiz.",
+      "sfx": [
+        "tres pulsos suaves"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "dramatic_beat": "La escala completa revela la distancia entre prueba de concepto y antena terminada.",
+      "scene_function": "Dar el dato de avance y delimitar lo que el equipo no alcanzó.",
+      "causal_bridge_from_previous": "La superficie reflectora tiene sentido solo al dimensionar el conjunto que se pretendía construir.",
+      "question_state": "Hay una demostración funcional de ensamblaje, no una antena de once tramos terminada.",
+      "reason_to_continue": "El cierre debe convertir ese límite en el verdadero significado del avance.",
+      "new_information": "El diseño contempla once tramos y 1.4 metros de diámetro; completar el conjunto antes de diciembre parece improbable.",
+      "id": "scene_007",
+      "style_id": "art_deco_poster",
+      "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text, eleven modular truss bays, two prefabricated and one assembled, remaining eight ghosted as plan, coherent gold and teal palette, consistent ASTRA machine design, no text",
+      "capa": {
+        "tipo": "dato",
+        "valor": "2 tramos prefabricados + 1 ensamblado en órbita; 11 previstos",
+        "etiqueta": "Avance de ASTRA frente al diseño completo",
+        "fuente": "Caltech, 5-nov-2026: dos bays prefabricados desplegados, ensamblaje del tercero y truss completo previsto con once bays."
+      }
+    },
+    {
+      "arc": "reflexion_o_pregunta",
+      "duration_seconds": 9,
+      "on_screen_text": "Construir donde funcionará",
+      "visual_description": "La pequeña celosía ensamblada flota sobre la Tierra; alrededor aparecen siluetas esquemáticas de una antena y un telescopio futuros, marcadas visualmente como posibilidades.",
+      "ambiente": "Cierre musical breve, limpio y ascendente.",
+      "sfx": [
+        "destello suave"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "dramatic_beat": "La hazaña cambia de una antena incompleta a una nueva manera de construir infraestructura espacial.",
+      "scene_function": "Pagar la apertura y dejar una pregunta que extiende la idea sin prometer resultados futuros.",
+      "causal_bridge_from_previous": "El límite de once tramos muestra que el logro es demostrar el método, no terminar el reflector.",
+      "question_state": "La pregunta inicial queda respondida: sí se puede ensamblar una sección en órbita, con supervisión desde tierra.",
+      "reason_to_continue": "No aplica: es el cierre con payoff.",
+      "new_information": "El valor demostrado es poder construir por partes en el lugar donde la estructura operará.",
+      "id": "scene_008",
+      "style_id": "art_deco_poster",
+      "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text, small completed truss section above Earth with faint future telescope and antenna silhouettes, coherent gold and teal palette, consistent ASTRA machine design, no text"
+    }
+  ],
+  "cortinilla_fuentes": {
+    "duration_seconds": 6,
+    "titulo": "Fuentes",
+    "aviso": "Fuentes mostradas en pantalla en la versión final; no hay medios generados en esta etapa.",
+    "firma": "Datos y ociosidades",
+    "source_ids": [
+      "SRC-001",
+      "SRC-002",
+      "SRC-003"
+    ]
+  },
+  "audio": {
+    "music_asset": null,
+    "music_plan": "Cama sintética de pulso tecnológico moderado; mantenerla debajo de la narración. Intención sonora solamente.",
+    "music_license": null
+  },
+  "export": {
+    "resolution": "1080x1920",
+    "fps": 30,
+    "render_status": "NOT_GENERATED"
+  },
+  "publicacion": {
+    "status": "PENDIENTE_DECISION_GROK",
+    "platforms": [
+      "YouTube Shorts",
+      "TikTok",
+      "Facebook Reels"
+    ],
+    "note": "No programar ni publicar desde preproducción textual."
+  },
+  "estado": "BORRADOR_EN_PROYECTOS_NO_APTO_PARA_PROMOCION",
+  "production_mode": "storyboard_only",
+  "validation_notes": [
+    "Borrador textual; narrative_qa se omite deliberadamente para que lo registre el auditor independiente después de leer solo la narración concatenada.",
+    "DOI no aplica a la demostración técnica; las fuentes primarias son páginas institucionales oficiales.",
+    "El mapa marca de forma aproximada la base de lanzamiento, no la posición de ASTRA en órbita."
+  ],
+  "linea_tematica_provisional": "Actualidad — demostración de ingeniería espacial; no se abre una línea temática nueva.",
+  "approved_assets": [],
+  "risk_notes": [
+    "No afirmar que ASTRA terminó la antena: el manipulador ensambló el tercer tramo y el diseño contempla once.",
+    "No presentar el sistema como completamente independiente de humanos: el equipo en tierra enviaba comandos y revisaba imágenes.",
+    "La película de Kapton y las dos redes reflectoras describen el diseño previsto; no afirmar que la antena completa fue instalada.",
+    "El pin de mapa es aproximado y representa Vandenberg, no la posición orbital.",
+    "No hay DOI académico asociado a la nota institucional de la demostración."
+  ]
+}
