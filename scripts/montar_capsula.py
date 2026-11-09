@@ -188,6 +188,8 @@ def cama_sonora(aud, base, total, tmp, durs=None):
 # Cada escena se parte en planos; cada plano usa un movimiento distinto sobre el mismo frame
 # (zoom in, zoom out, paneo, punch-in) para que haya un cambio visual cada 2-3 s sin transiciones.
 MOVS = ["zin", "pan_d", "punch", "zout", "pan_i", "punch_b"]
+# Modo pausado (Mj 9-nov): con plano_seconds >= 4 solo movimientos suaves, sin punch-in
+MOVS_SUAVES = ["zin", "pan_d", "zout", "pan_i"]
 
 def texto_png(text, out_png, gancho=False, estilo=None):
     # estilo (opcional, solo gancho): storyboard["titulo_estilo"] = {"font": ruta_ttf, "size": 92,
@@ -238,7 +240,8 @@ def escena_video(png, seconds, out_mp4, idx, texto="", plano_s=2.5, gancho=False
         if capa and k == min(int(capa.get("plano", n - 1)), n - 1):  # capa informativa (mapa/gráfico/dato), no Ken Burns
             sys.path.insert(0, os.path.dirname(os.path.abspath(__file__))); import capas_datos
             capas_datos.render_capa(capa, d, mp); parts.append(mp); continue
-        _plano(png, d, mp, MOVS[(idx * 2 + k) % len(MOVS)], con_txt); parts.append(mp)
+        movs = MOVS_SUAVES if plano_s >= 4 else MOVS
+        _plano(png, d, mp, movs[(idx * 2 + k) % len(movs)], con_txt); parts.append(mp)
     lst = os.path.join(tmpd, "l.txt"); open(lst, "w").writelines(f"file '{p}'\n" for p in parts)
     run(["ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", lst, "-c", "copy", out_mp4])
 

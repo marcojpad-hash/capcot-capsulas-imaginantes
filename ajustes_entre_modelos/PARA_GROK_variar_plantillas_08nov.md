@@ -32,3 +32,10 @@ Hacer commit en `main` con el mensaje `revariar: <tema>`. Imaginantes revisa `co
 
 ## Causa raíz encontrada (9-nov 01:15)
 Todos los storyboard.json desde el 7-nov traen el MISMO prompt_base: "Warm gouache editorial illustration, teal gold cream palette, textured paper, original recurring scientist, full bleed no text". Eso fija paleta (teal/dorado/crema), técnica (gouache), el personaje (científica recurrente) y el encuadre. Al rehacer: prompt_base distinto por cápsula tomado de scripts/estilos.json, variar paleta, tipo de toma (plano general, cenital, macro, contrapicado, detalle) y quitar "recurring scientist" salvo cuando el estilo lo pida.
+
+## Ritmo y número de frames (Mj 9-nov 01:18)
+Las cápsulas nuevas tienen 7 frames con planos de 2.5 s y punch-ins: se sienten rápidas. Para los storyboards revariados:
+- 9 a 10 escenas (frames) en vez de 7, ~8 s cada una.
+- En el storyboard poner "export": {"plano_seconds": 5}. Con eso montar_capsula.py usa solo zoom/paneo lentos (sin punch-in): el mismo frame se recorre en 1-2 encuadres pausados.
+- Variar el encuadre dentro de cada frame (pedir imágenes con varios puntos de interés) para que el movimiento lento tenga a dónde ir.
+Costo: los frames extra salen de Grok/ChatGPT gratis; el montaje es ffmpeg local.
