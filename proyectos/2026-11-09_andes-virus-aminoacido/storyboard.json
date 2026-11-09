@@ -1,0 +1,144 @@
+{
+  "project_id": "2026-11-09_andes-virus-aminoacido",
+  "title": "Un aminoácido cambia el virus Andes",
+  "titulo": "Un solo aminoácido",
+  "language": "es-MX",
+  "aspect_ratio": "9:16",
+  "target_duration_seconds": 82,
+  "estructura": "pregunta",
+  "trend_source": {
+    "tipo": "noticia_cientifica",
+    "medio": "Science Advances",
+    "url": "https://www.science.org/doi/10.1126/sciadv.aek2522",
+    "estudio_doi": "10.1126/sciadv.aek2522",
+    "fecha_publicacion": "2026-11-06",
+    "termino": "Andes virus amino acid glycoprotein",
+    "fecha_consulta": "2026-11-09"
+  },
+  "estilo_id": "linea_fina",
+  "estilo_visual": "Sketch de línea fina",
+  "voice": {
+    "engine": "edge-tts",
+    "voice_id": "es-MX-JorgeNeural",
+    "rate": "+7%",
+    "pitch": "-2Hz",
+    "pad_seconds": 0.3,
+    "modo_pausas": "continuo"
+  },
+  "sources": [
+    {
+      "id": "SRC-001",
+      "cita_corta": "Vidal-Freire et al. (2026). A single–amino acid difference between rodent and human Andes virus affects viral glycoprotein trafficking. Science Advances.",
+      "url": "https://www.science.org/doi/10.1126/sciadv.aek2522",
+      "doi": "10.1126/sciadv.aek2522",
+      "accessed": "2026-11-09",
+      "supports": ["un cambio de aminoácido T641I en la glicoproteína del virus Andes humano altera el tráfico en el Golgi y la liberación de partículas"],
+      "ref_display": "Vidal-Freire et al. Sci Adv 2026"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_001",
+      "arc": "hook_medias_res",
+      "duration_seconds": 8.0,
+      "narration": "¿Y si un solo aminoácido decide si el virus Andes sale más rápido de la célula?",
+      "on_screen_text": "Un solo aminoácido",
+      "visual_description": "Microscopio con célula y virus",
+      "image_prompt": "fine line pencil illustration on white paper, precise thin strokes, subtle graphite shading, minimal composition, vertical 9:16, no text + close-up of human cell with virus particles near Golgi apparatus, scientific sketch style",
+      "source_ids": ["SRC-001"],
+      "asset_filename": "frames/scene_001.jpg",
+      "ambiente": "laboratorio",
+      "sfx": ["lab_hum"]
+    },
+    {
+      "id": "scene_002",
+      "arc": "desarrollo",
+      "duration_seconds": 10.0,
+      "narration": "El virus Andes causa el síndrome pulmonar por hantavirus. Puede pasar de persona a persona, raro entre estos virus.",
+      "on_screen_text": "Virus Andes",
+      "visual_description": "Roedor y humano",
+      "image_prompt": "fine line pencil illustration on white paper, precise thin strokes, subtle graphite shading, minimal composition, vertical 9:16, no text + Andes virus particles on rodent and human silhouette, line drawing",
+      "source_ids": ["SRC-001"],
+      "asset_filename": "frames/scene_002.jpg",
+      "ambiente": "laboratorio",
+      "sfx": ["paper_rustle"]
+    },
+    {
+      "id": "scene_003",
+      "arc": "desarrollo",
+      "duration_seconds": 11.0,
+      "narration": "Científicos del Mount Sinai compararon un aislado humano de un brote en Argentina con uno de roedor. Encontraron 25 diferencias de aminoácidos.",
+      "on_screen_text": "25 diferencias",
+      "visual_description": "Comparación de secuencias",
+      "image_prompt": "fine line pencil illustration on white paper, precise thin strokes, subtle graphite shading, minimal composition, vertical 9:16, no text + two protein sequences side by side with one highlighted amino acid difference, sketch",
+      "source_ids": ["SRC-001"],
+      "asset_filename": "frames/scene_003.jpg",
+      "ambiente": "laboratorio",
+      "sfx": ["pencil_write"]
+    },
+    {
+      "id": "scene_004",
+      "arc": "desarrollo",
+      "duration_seconds": 12.0,
+      "narration": "Una sola, en la posición 641 de la glicoproteína, cerca del sitio de corte. Cambiarla de isoleucina a treonina reduce el tiempo en el Golgi.",
+      "on_screen_text": "Posición 641",
+      "visual_description": "Glicoproteína en Golgi",
+      "image_prompt": "fine line pencil illustration on white paper, precise thin strokes, subtle graphite shading, minimal composition, vertical 9:16, no text + glycoprotein molecule moving through Golgi apparatus in cell, detailed line art",
+      "source_ids": ["SRC-001"],
+      "asset_filename": "frames/scene_004.jpg",
+      "ambiente": "laboratorio",
+      "sfx": ["cell_movement"]
+    },
+    {
+      "id": "scene_005",
+      "arc": "desarrollo",
+      "duration_seconds": 10.0,
+      "narration": "Las partículas similares a virus se liberan más rápido. El virus humano tarda más en salir.",
+      "on_screen_text": "Liberación más rápida",
+      "visual_description": "Partículas saliendo",
+      "image_prompt": "fine line pencil illustration on white paper, precise thin strokes, subtle graphite shading, minimal composition, vertical 9:16, no text + virus-like particles exiting cell faster, scientific illustration sketch",
+      "source_ids": ["SRC-001"],
+      "asset_filename": "frames/scene_005.jpg",
+      "ambiente": "laboratorio",
+      "sfx": ["release_sound"]
+    },
+    {
+      "id": "scene_006",
+      "arc": "cierre_historia",
+      "duration_seconds": 9.0,
+      "narration": "Puede ser una adaptación humana que afecta el tráfico de la proteína y la salida del virus.",
+      "on_screen_text": "Adaptación humana",
+      "visual_description": "Célula humana",
+      "image_prompt": "fine line pencil illustration on white paper, precise thin strokes, subtle graphite shading, minimal composition, vertical 9:16, no text + human cell with adapted virus glycoprotein, line drawing",
+      "source_ids": ["SRC-001"],
+      "asset_filename": "frames/scene_006.jpg",
+      "ambiente": "laboratorio",
+      "sfx": ["subtle_hum"]
+    },
+    {
+      "id": "scene_007",
+      "arc": "reflexion_o_pregunta",
+      "duration_seconds": 8.0,
+      "narration": "Un cambio minúsculo puede alterar cómo se comporta el virus. Esto fue Datos y ociosidades.",
+      "on_screen_text": "Datos y ociosidades",
+      "visual_description": "Cierre",
+      "image_prompt": "fine line pencil illustration on white paper, precise thin strokes, subtle graphite shading, minimal composition, vertical 9:16, no text + abstract amino acid structure and virus, clean sketch",
+      "source_ids": ["SRC-001"],
+      "asset_filename": "frames/scene_007.jpg",
+      "ambiente": "laboratorio",
+      "sfx": []
+    }
+  ],
+  "cortinilla_fuentes": {
+    "duration_seconds": 6,
+    "titulo": "Fuentes",
+    "aviso": "Imágenes generadas con IA. Voz sintética. Audio sintetizado.",
+    "firma": "Datos y ociosidades · @datosyociosidades"
+  },
+  "export": {
+    "filename": "capsula.mp4",
+    "resolution": "1080x1920",
+    "fps": 30,
+    "loudness_lufs": -14
+  }
+}
