@@ -75,7 +75,7 @@ No hubo runtime local para ejecutar `validar_storyboard.py`, `procesar_cola.py` 
 PR [#3](https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/pull/3):
 - Abierto y en estado Draft.
 - Head = HEAD de esta rama; base = `main`.
-- 586 archivos cambiados; 57,587 adiciones y 1,683 eliminaciones.
+- En el corte inicial del informe: 586 archivos cambiados; 57,587 adiciones y 1,683 eliminaciones. Tras los commits documentales de esta revisión, GitHub informa 587 archivos, 57,705 adiciones y 1,683 eliminaciones.
 - GitHub reporta `mergeable=false`.
 - El diff incluye diez archivos `data/*.json`, además de numerosos `_tmp/` logs/scripts y artefactos históricos.
 
