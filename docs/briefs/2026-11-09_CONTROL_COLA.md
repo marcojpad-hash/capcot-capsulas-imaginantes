@@ -15,7 +15,7 @@ El último commit de la rama es el control de cola del 8-nov. No hay commits pos
 
 - `proyectos/`: conserva los doce storyboards canónicos del lote 5–7 nov y numerosos artefactos históricos. No existe proyecto con prefijo `2026-11-08` ni `2026-11-09`.
 - `docs/briefs/`: existen RADAR y CONTROL_COLA hasta el 8-nov. No existe RADAR ni CONTROL_COLA del 9-nov.
-- `cola/entrada/`: una sola carpeta anidada, `2026-11-07_dato-clavo-te-cocina/`, con storyboard, fuentes y estado documental. Es el slot 23:30 del 7-nov, ya cubierto/programado según los documentos del 8-nov; no se inspeccionó su storyboard ni se propone redispatch.
+- `cola/entrada/`: una carpeta anidada, `2026-11-07_dato-clavo-te-cocina/`, con storyboard, fuentes y estado documental. Es el slot 23:30 del 7-nov, ya cubierto/programado según los documentos del 8-nov. **Esta carpeta no cumple el formato canónico de handoff** (`cola/entrada/<project_id>.json`) y no debe redispatcharse.
 - `cola/estado/`: no contiene estados de Grok.
 - `handoffs/grok_inbox/`: solo contiene README; no hay marcadores `<project_id>.json`.
 - `handoffs/grok_done/`: solo contiene `.gitkeep`; no hay confirmaciones de finalización.
@@ -49,13 +49,9 @@ Bloqueo estructural reportado: 0/12 aptos; faltan seis campos narrativos obligat
 
 El documento `ajustes_entre_modelos/2026-11-02_GROK_HANDOFF_SIN_WEBHOOK.md` describe el flujo gratuito: Actions escribe un marcador en `handoffs/grok_inbox/<id>.json`; Grok/Imaginantes lo lee y, al terminar, lo mueve a `handoffs/grok_done/` y actualiza su estado.
 
-El workflow actual tiene un problema de compatibilidad de rutas:
-- El trigger `push.paths` escucha únicamente `cola/entrada/*.json`.
-- El modo `workflow_dispatch=all` busca únicamente archivos JSON de primer nivel (`find ... -maxdepth 1`).
-- El selector individual construye `cola/entrada/<project_id>.json`.
-- El paquete actualmente presente está en `cola/entrada/<project_id>/storyboard.json`, dentro de una carpeta.
+**Corrección tras releer el contrato operativo y el QA narrativo obligatorios:** el workflow no presenta un defecto de rutas respecto del formato canónico vigente. El contrato exige que el auditor independiente promueva únicamente un JSON aprobado a `cola/entrada/<project_id>.json`; el workflow escucha y procesa precisamente esos archivos de primer nivel. La carpeta `cola/entrada/2026-11-07_dato-clavo-te-cocina/` es un formato heredado/no conforme, no una razón para ampliar el workflow y saltarse el contrato.
 
-Por tanto, la carpeta anidada no dispara ni es seleccionada por el workflow actual. Los storyboards en `proyectos/` tampoco son dispatchables: deben superar QA y estructura antes de entrar a cola.
+El paquete de clavo está marcado `PREPARADO_PENDIENTE_REVISION_GROK`, pero no contiene evidencia de `narrative_qa.status=PASS` ni de la revisión independiente requerida. El validador exige además `narrative_contract`, `narrative_qa` y otros campos estructurales. Por tanto, no se debe convertir ni enviar automáticamente ese paquete. La acción correcta es mantenerlo sin dispatch hasta que un auditor independiente haga la lectura en frío y el validador estructural dé PASS; si falla, debe preservarse y trasladarse a bloqueados conforme al contrato.
 
 **Evidencia de ejecución:**
 - No hay marcadores en inbox ni done.
@@ -103,7 +99,7 @@ Los cambios a `data/*.json` contradicen el contrato operativo vigente, que proh�
 ## 8. Qué significa «listo»
 
 Para declarar CAPCOT operativo de extremo a extremo aún hacen falta, como mínimo:
-1. Resolver el contrato de rutas del workflow para el formato de paquete que se vaya a usar, sin saltar la compuerta de QA.
+1. Aplicar el formato canónico ya definido: solo promover a `cola/entrada/<project_id>.json` después de QA narrativo independiente PASS y validación estructural PASS; no ampliar el workflow para admitir carpetas heredadas.
 2. Ejecutar una prueba controlada de handoff que produzca un marcador verificable en inbox; después Grok debe leerlo y registrar su estado conforme al contrato.
 3. Corregir los doce storyboards y volver a pasar las compuertas narrativa y estructural; no promover los dos PASS narrativos hasta que también pasen estructura.
 4. Separar/restaurar los cambios prohibidos a `data/*.json` y limpiar artefactos no destinados al PR antes de considerar el merge.
@@ -114,3 +110,9 @@ Para declarar CAPCOT operativo de extremo a extremo aún hacen falta, como míni
 No se generaron cápsulas, frames, imágenes, voz, audio, video ni renders. No se publicó, programó, disparó workflow, envió payload externo ni consumió créditos. No se modificaron `data/*.json`, `main`, workflows, secretos, permisos, estados de Grok, storyboards del lote ni decisiones editoriales.
 
 No se revisaron APIs por no haber identificado en esta pasada un cambio oficial nuevo que justificara esa comprobación. No se ejecutó la suite local por ausencia de runtime. El inventario corresponde al HEAD indicado y puede cambiar si otro actor hace commits después del corte.
+
+## 10. Corrección de diagnóstico — revisión de contratos
+
+La primera lectura describió la diferencia entre la carpeta anidada y el selector del workflow como un defecto del workflow. Esa conclusión queda **reemplazada**: al leer `docs/CONTRATO_OPERATIVO_UNIFICADO.md`, `docs/QA_NARRATIVO_EN_FRIO.md` y `scripts/validar_storyboard.py`, se confirma que el formato autorizado es un archivo JSON plano en `cola/entrada/<project_id>.json`, y que la promoción depende de QA independiente PASS. El workflow actual se alinea con ese contrato. La carpeta anidada de clavo no está habilitada para dispatch y carece de evidencia de aprobación narrativa; no se debe modificar el workflow para aceptarla.
+
+No se cambió el workflow, la cola, el storyboard ni los estados Grok. Esta corrección es documental y evita un cambio técnico que habría relajado indebidamente la compuerta editorial.
