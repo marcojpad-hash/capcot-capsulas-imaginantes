@@ -1,0 +1,256 @@
+{
+ "project_id": "2026-11-07_arboles-comunicacion-bosque",
+ "serie": "Datos y ociosidades",
+ "title": "¿Los árboles hablan bajo tierra?",
+ "titulo": "¿Los árboles hablan?",
+ "language": "es-MX",
+ "estilo_id": "papel_rasgado_capas",
+ "estilo_visual": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text",
+ "estructura": "mito_vs_dato",
+ "aspect_ratio": "9:16",
+ "target_duration_seconds": 88,
+ "resumen": "Simard midió en 1997 un intercambio de carbono entre árboles vía hongos micorrícicos; en 2023, Karst y colegas advierten que las afirmaciones populares sobre esa red se han interpretado de más.",
+ "keywords": [
+  "árboles",
+  "micorrizas",
+  "bosque"
+ ],
+ "proveedor_imagenes": "generadas con IA (ilustración no realista, papel_rasgado_capas)",
+ "parece_real": false,
+ "export": {
+  "filename": "capsula.mp4",
+  "fps": 30,
+  "loudness_lufs": -14,
+  "resolution": "1080x1920",
+  "plano_seconds": 5,
+  "subtitle_max_words": 3
+ },
+ "voice": {
+  "engine": "edge-tts",
+  "modo_pausas": "continuo",
+  "pad_seconds": 0.3,
+  "pitch": "-2Hz",
+  "rate": "+7%",
+  "voice_id": "es-MX-JorgeNeural"
+ },
+ "audio": {
+  "music_asset": "sintetico:pizzicato",
+  "cama_musical": "pizzicato",
+  "music_lufs": -27,
+  "ambiente_lufs": -26
+ },
+ "cortinilla_fuentes": {
+  "duration_seconds": 6,
+  "titulo": "Fuentes",
+  "aviso": "Imágenes generadas con IA. Voz sintética. Audio sintetizado.",
+  "firma": "Datos y ociosidades · @datosyociosidades"
+ },
+ "sources": [
+  {
+   "id": "SRC-001",
+   "cita_corta": "Simard, S. W. et al. (1997). Net transfer of carbon between ectomycorrhizal tree species in the field. Nature 388, 579–582.",
+   "url": "https://doi.org/10.1038/41557",
+   "doi": "10.1038/41557",
+   "accessed": "2026-11-10",
+   "supports": [
+    "Transferencia bidireccional de carbono entre Betula papyrifera y Pseudotsuga menziesii en el campo, con ganancia neta del abeto de Douglas equivalente en promedio al 6% del carbono tomado por fotosíntesis; la magnitud cambia con la sombra; la vía principal parece ser la hifa directa."
+   ],
+   "ref_display": "Simard et al., Nature 1997"
+  },
+  {
+   "id": "SRC-002",
+   "cita_corta": "Karst, J., Jones, M. D. & Hoeksema, J. D. (2023). Positive citation bias and overinterpreted results lead to misinformation on common mycorrhizal networks in forests. Nature Ecology & Evolution 7, 501–511.",
+   "url": "https://doi.org/10.1038/s41559-023-01986-1",
+   "doi": "10.1038/s41559-023-01986-1",
+   "accessed": "2026-11-10",
+   "supports": [
+    "Una red micorrícica común se forma cuando las hifas conectan raíces de varias plantas. Las afirmaciones populares de que esas redes están muy extendidas, mejoran plántulas o permiten que los árboles adultos envíen recursos o señales de defensa a sus crías no están bien sostenidas; no hay evidencia revisada por pares de ese envío preferente a las crías; el conocimiento es demasiado escaso e inestable para informar el manejo forestal."
+   ],
+   "ref_display": "Karst et al., Nat. Ecol. Evol. 2023"
+  }
+ ],
+ "scenes": [
+  {
+   "id": "scene_001",
+   "arc": "hook_medias_res",
+   "duration_seconds": 8,
+   "asset_filename": "frames/frame_01.png",
+   "encuadre": "general",
+   "narration": "Dicen que los árboles se hablan bajo tierra. ¿Es mito o dato?",
+   "on_screen_text": "¿Los árboles hablan?",
+   "visual_description": "Bosque en capas de papel rasgado, con raíces bajo tierra; tercio superior libre para el título.",
+   "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, absolutely no text, no letters, no numbers, no typography, no watermarks + wide general forest of layered torn paper trees, roots hinted below the soil line, empty upper third for a title box, no people",
+   "source_ids": [
+    "SRC-001",
+    "SRC-002"
+   ],
+   "sfx": [
+    "viento_fuerte"
+   ]
+  },
+  {
+   "id": "scene_002",
+   "arc": "desarrollo",
+   "duration_seconds": 9,
+   "asset_filename": "frames/frame_02.png",
+   "encuadre": "cenital",
+   "narration": "En 1997, Simard y su equipo midieron en el campo un intercambio de carbono entre abedules y abetos de Douglas conectados por hongos micorrícicos.",
+   "on_screen_text": "Simard, 1997",
+   "visual_description": "Vista cenital de un bosque en papel, dos tipos de árboles y una red bajo el suelo.",
+   "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, absolutely no text, no letters, no numbers, no typography, no watermarks + overhead bird's-eye view of a torn-paper forest floor, birch and Douglas-fir silhouettes, faint fungal threads in the soil layer, no people, no labels",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "sfx": [
+    "silencio"
+   ],
+   "capa": {
+    "tipo": "mapa",
+    "region": [
+     -125.5,
+     -118.5,
+     47.5,
+     53.0
+    ],
+    "puntos": [
+     {
+      "nombre": "Columbia Británica",
+      "lat": 50.7,
+      "lon": -120.3
+     }
+    ],
+    "titulo": "Campo de Simard, 1997",
+    "fuente": "Simard et al., Nature 1997",
+    "plano": 0
+   }
+  },
+  {
+   "id": "scene_003",
+   "arc": "desarrollo",
+   "duration_seconds": 12,
+   "asset_filename": "frames/frame_03.png",
+   "encuadre": "detalle",
+   "narration": "El abeto recibió, en promedio, un neto equivalente al seis por ciento del carbono que tomaba por fotosíntesis. La transferencia era de ida y vuelta, y cambiaba si el abeto estaba a la sombra.",
+   "on_screen_text": "6% neto de carbono",
+   "visual_description": "Detalle de hilos de hongo uniendo dos plántulas de papel, una más a la sombra.",
+   "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, absolutely no text, no letters, no numbers, no typography, no watermarks + close detail of torn-paper seedlings, one slightly shaded, thin felt fungal threads connecting their roots in the soil layer, no numbers, no people",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "sfx": [
+    "silencio"
+   ],
+   "capa": {
+    "tipo": "dato",
+    "valor": "6%",
+    "etiqueta": "Ganancia neta de carbono del abeto de Douglas, en promedio",
+    "fuente": "Simard et al., Nature 1997",
+    "plano": 1
+   }
+  },
+  {
+   "id": "scene_004",
+   "arc": "desarrollo",
+   "duration_seconds": 9,
+   "asset_filename": "frames/frame_04.png",
+   "encuadre": "macro",
+   "narration": "Esa red se forma cuando las hifas de un hongo unen las raíces de varias plantas. No es telepatía: es un camino de hongos y química.",
+   "on_screen_text": "Hongos y química",
+   "visual_description": "Macro de hifas de papel conectando raíces.",
+   "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, absolutely no text, no letters, no numbers, no typography, no watermarks + extreme macro of torn-paper and felt fungal hyphae wrapping and linking tree roots in dark soil layers, no text, no people",
+   "source_ids": [
+    "SRC-002"
+   ],
+   "sfx": [
+    "silencio"
+   ]
+  },
+  {
+   "id": "scene_005",
+   "arc": "desarrollo",
+   "duration_seconds": 8,
+   "asset_filename": "frames/frame_05.png",
+   "encuadre": "general",
+   "narration": "Con el tiempo, esa idea se volvió una historia popular: que los árboles se avisan y se cuidan por una red bajo el suelo.",
+   "on_screen_text": "Una historia popular",
+   "visual_description": "Bosque de papel con una red subterránea estilizada, tono de cuento popular, sin letreros.",
+   "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, absolutely no text, no letters, no numbers, no typography, no watermarks + general fairy-tale-like torn-paper forest, glowing ochre threads running under the soil between many trees, slightly idealized, no people, no typography",
+   "source_ids": [
+    "SRC-002"
+   ],
+   "sfx": [
+    "viento_fuerte"
+   ]
+  },
+  {
+   "id": "scene_006",
+   "arc": "desarrollo",
+   "duration_seconds": 9,
+   "asset_filename": "frames/frame_06.png",
+   "encuadre": "detalle",
+   "narration": "En 2023, Karst, Jones y Hoeksema revisaron esas afirmaciones. Dijeron que los resultados de campo varían demasiado y que a menudo se interpretan de más.",
+   "on_screen_text": "Karst, 2023",
+   "visual_description": "Papeles científicos y un bosque en capas, sin texto legible.",
+   "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, absolutely no text, no letters, no numbers, no typography, no watermarks + detail of stacked blank torn-paper journals and a small layered forest diorama, no readable lettering, no people, no glasses scientist",
+   "source_ids": [
+    "SRC-002"
+   ],
+   "sfx": [
+    "silencio"
+   ]
+  },
+  {
+   "id": "scene_007",
+   "arc": "desarrollo",
+   "duration_seconds": 11,
+   "asset_filename": "frames/frame_07.png",
+   "encuadre": "contrapicado",
+   "narration": "Según esa revisión, no hay evidencia publicada y revisada por pares de que los árboles adultos envíen, de forma preferente, recursos o señales de defensa a sus crías por esa red.",
+   "on_screen_text": "Sin evidencia de ese aviso",
+   "visual_description": "Contrapicado de un árbol adulto y una plántula, sin señales dibujadas como texto.",
+   "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, absolutely no text, no letters, no numbers, no typography, no watermarks + low-angle contrapicado of a tall torn-paper mature tree and a small seedling at its feet, quiet forest, no glowing arrows, no typography, no people",
+   "source_ids": [
+    "SRC-002"
+   ],
+   "sfx": [
+    "silencio"
+   ]
+  },
+  {
+   "id": "scene_008",
+   "arc": "cierre_historia",
+   "duration_seconds": 8,
+   "asset_filename": "frames/frame_08.png",
+   "encuadre": "cenital",
+   "narration": "El conocimiento sobre esas redes, concluyen, aún es demasiado escaso e inestable para usarlo como guía de manejo forestal.",
+   "on_screen_text": "Aún es pronto",
+   "visual_description": "Cenital de un bosque amplio, la red del suelo apenas esbozada e incompleta.",
+   "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, absolutely no text, no letters, no numbers, no typography, no watermarks + overhead wide torn-paper forest canopy and a fragmentary, incomplete underground thread network, sparse not fully mapped, no labels",
+   "source_ids": [
+    "SRC-002"
+   ],
+   "sfx": [
+    "viento_fuerte"
+   ]
+  },
+  {
+   "id": "scene_009",
+   "arc": "reflexion_o_pregunta",
+   "duration_seconds": 12,
+   "asset_filename": "frames/frame_09.png",
+   "encuadre": "general",
+   "narration": "No es que el bosque esté mudo. Es que todavía no sabemos bien qué se comparte ahí abajo, ni cuánto. ¿Qué más damos por hecho sobre los árboles? Esto fue Datos y ociosidades.",
+   "on_screen_text": "¿Qué más damos por hecho?",
+   "visual_description": "Bosque en silencio, raíces apenas visibles, pregunta abierta sin signos dibujados.",
+   "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, absolutely no text, no letters, no numbers, no typography, no watermarks + quiet general torn-paper forest at dusk, roots barely visible under the soil, contemplative, no question-mark typography, no people",
+   "source_ids": [
+    "SRC-001",
+    "SRC-002"
+   ],
+   "sfx": [
+    "silencio"
+   ]
+  }
+ ],
+ "nota": "El paquete original traía un DOI de ejemplo (10.1126/example) y no se usó. Guion reelaborado solo con Simard 1997 y Karst 2023. Slot extra autorizado: 2026-11-13 13:30 hora CDMX."
+}

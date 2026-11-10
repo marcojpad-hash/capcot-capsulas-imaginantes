@@ -1,0 +1,125 @@
+{
+ "metadatos": {
+  "title": "El pez que mira a través de su cabeza #Shorts",
+  "description": "¿Cómo ve un pez a través de su propia cabeza?\n\nEl pez que mira a través de su cabeza. Una cápsula de Datos y ociosidades: datos verificados contados como historia.\n\nFuentes:\n• MBARI (2026). Researchers film rarely seen deep-sea barreleye fish in 4K. https://www.mbari.org/news/mbari-researchers-film-rarely-seen-deep-sea-barreleye-fish-in-4k/\n\nImágenes generadas con IA · voz sintética · audio sintetizado.\nSuscríbete: @datosyociosidades\nTikTok: https://www.tiktok.com/@datosyociosidades\n\n#DatosYOciosidades #Shorts #datos #ciencia #difusión #difusióncientífica #ia #BarreleyeMacropinna4k #Barreleye #Macropinna #PezProfundo",
+  "tags": [
+   "DatosYOciosidades",
+   "Shorts",
+   "datos",
+   "ciencia",
+   "difusión",
+   "difusióncientífica",
+   "ia",
+   "BarreleyeMacropinna4k",
+   "Barreleye",
+   "Macropinna",
+   "PezProfundo"
+  ]
+ },
+ "resultado": {
+  "youtube": {
+   "kind": "youtube#video",
+   "etag": "BEjIRv8xzn5r1zifoXVIdY4xMzE",
+   "id": "YV_3JgGv1kg",
+   "snippet": {
+    "publishedAt": "2026-11-10T21:14:00Z",
+    "channelId": "UCU2ZI-6pBJEr9aSFsF6bxLw",
+    "title": "El pez que mira a través de su cabeza #Shorts",
+    "description": "¿Cómo ve un pez a través de su propia cabeza?\n\nEl pez que mira a través de su cabeza. Una cápsula de Datos y ociosidades: datos verificados contados como historia.\n\nFuentes:\n• MBARI (2026). Researchers film rarely seen deep-sea barreleye fish in 4K. https://www.mbari.org/news/mbari-researchers-film-rarely-seen-deep-sea-barreleye-fish-in-4k/\n\nImágenes generadas con IA · voz sintética · audio sintetizado.\nSuscríbete: @datosyociosidades\nTikTok: https://www.tiktok.com/@datosyociosidades\n\n#DatosYOciosidades #Shorts #datos #ciencia #difusión #difusióncientífica #ia #BarreleyeMacropinna4k #Barreleye #Macropinna #PezProfundo",
+    "thumbnails": {
+     "default": {
+      "url": "https://i9.ytimg.com/vi/YV_3JgGv1kg/default.jpg?sqp=CKiQztcG&rs=AOn4CLC7R9HeDA4pMm8HVUF2d-6bor-JKQ",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i9.ytimg.com/vi/YV_3JgGv1kg/mqdefault.jpg?sqp=CKiQztcG&rs=AOn4CLA3ERhGR2faJ80tW8MesNxYGgHUyg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i9.ytimg.com/vi/YV_3JgGv1kg/hqdefault.jpg?sqp=CKiQztcG&rs=AOn4CLAqSLd7OiMARkw8nItyV53d86QtZw",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "Datos y ociosidades",
+    "tags": [
+     "Barreleye",
+     "BarreleyeMacropinna4k",
+     "DatosYOciosidades",
+     "Macropinna",
+     "PezProfundo",
+     "Shorts",
+     "ciencia",
+     "datos",
+     "difusión",
+     "difusióncientífica",
+     "ia"
+    ],
+    "categoryId": "27",
+    "liveBroadcastContent": "none",
+    "defaultLanguage": "es",
+    "localized": {
+     "title": "El pez que mira a través de su cabeza #Shorts",
+     "description": "¿Cómo ve un pez a través de su propia cabeza?\n\nEl pez que mira a través de su cabeza. Una cápsula de Datos y ociosidades: datos verificados contados como historia.\n\nFuentes:\n• MBARI (2026). Researchers film rarely seen deep-sea barreleye fish in 4K. https://www.mbari.org/news/mbari-researchers-film-rarely-seen-deep-sea-barreleye-fish-in-4k/\n\nImágenes generadas con IA · voz sintética · audio sintetizado.\nSuscríbete: @datosyociosidades\nTikTok: https://www.tiktok.com/@datosyociosidades\n\n#DatosYOciosidades #Shorts #datos #ciencia #difusión #difusióncientífica #ia #BarreleyeMacropinna4k #Barreleye #Macropinna #PezProfundo"
+    }
+   },
+   "status": {
+    "uploadStatus": "uploaded",
+    "privacyStatus": "private",
+    "publishAt": "2026-11-12T19:30:00Z",
+    "license": "youtube",
+    "embeddable": true,
+    "publicStatsViewable": true,
+    "selfDeclaredMadeForKids": false,
+    "containsSyntheticMedia": false
+   },
+   "portada_thumb": {
+    "path": "/workspace/capcot_main/salidas/2026-11-07_barreleye-4k/portada_thumb.jpg",
+    "t_seconds": 0.5,
+    "set": {
+     "ok": true,
+     "response": {
+      "kind": "youtube#thumbnailSetResponse",
+      "etag": "oT_agMN9j9Fg2pk_aZXIotz6I3w",
+      "items": [
+       {
+        "default": {
+         "url": "https://i9.ytimg.com/vi/YV_3JgGv1kg/default.jpg?sqp=CKiQztcG&rs=AOn4CLC7R9HeDA4pMm8HVUF2d-6bor-JKQ",
+         "width": 120,
+         "height": 90
+        },
+        "medium": {
+         "url": "https://i9.ytimg.com/vi/YV_3JgGv1kg/mqdefault.jpg?sqp=CKiQztcG&rs=AOn4CLA3ERhGR2faJ80tW8MesNxYGgHUyg",
+         "width": 320,
+         "height": 180
+        },
+        "high": {
+         "url": "https://i9.ytimg.com/vi/YV_3JgGv1kg/hqdefault.jpg?sqp=CKiQztcG&rs=AOn4CLAqSLd7OiMARkw8nItyV53d86QtZw",
+         "width": 480,
+         "height": 360
+        },
+        "standard": {
+         "url": "https://i9.ytimg.com/vi/YV_3JgGv1kg/sddefault.jpg?sqp=CKiQztcG&rs=AOn4CLD-UCwQ11cGMXQ2DzZybczL9mwXhQ",
+         "width": 640,
+         "height": 480
+        },
+        "maxres": {
+         "url": "https://i9.ytimg.com/vi/YV_3JgGv1kg/maxresdefault.jpg?sqp=CKiQztcG&rs=AOn4CLB-ldZ4alXaHGTrMLnB1zkbKcWqTQ",
+         "width": 1280,
+         "height": 720
+        },
+        "qhd": {
+         "url": "https://i9.ytimg.com/vi/YV_3JgGv1kg/qhddefault.jpg?sqp=CKiQztcG&rs=AOn4CLDyty5k8YykmYlwBvEP_nzc0boKGg",
+         "width": 2560,
+         "height": 1440
+        }
+       }
+      ]
+     }
+    }
+   }
+  }
+ }
+}

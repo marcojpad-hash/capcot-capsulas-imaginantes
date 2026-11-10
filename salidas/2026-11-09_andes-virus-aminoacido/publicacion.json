@@ -1,0 +1,123 @@
+{
+ "metadatos": {
+  "title": "Un aminoácido cambia el virus Andes #Shorts",
+  "description": "¿Y si un solo aminoácido cambia cómo el virus Andes sale de la célula?\n\nUn aminoácido cambia el virus Andes. Una cápsula de Datos y ociosidades: datos verificados contados como historia.\n\nFuentes:\n• Vidal-Freire et al. (2026). A single–amino acid difference between rodent and human Andes virus affects viral glycoprotein trafficking. Science Advances 12(45). https://doi.org/10.1126/sciadv.aek2522\n\nImágenes generadas con IA · voz sintética · audio sintetizado.\nSuscríbete: @datosyociosidades\nTikTok: https://www.tiktok.com/@datosyociosidades\n\n#DatosYOciosidades #Shorts #datos #ciencia #difusión #difusióncientífica #ia #VirusAndes #Hantavirus #Aminoácido",
+  "tags": [
+   "DatosYOciosidades",
+   "Shorts",
+   "datos",
+   "ciencia",
+   "difusión",
+   "difusióncientífica",
+   "ia",
+   "VirusAndes",
+   "Hantavirus",
+   "Aminoácido"
+  ]
+ },
+ "resultado": {
+  "youtube": {
+   "kind": "youtube#video",
+   "etag": "i1ZH8MODD2rbPTCU7lTS7hWpBpg",
+   "id": "8EcFyXTcSdM",
+   "snippet": {
+    "publishedAt": "2026-11-10T21:24:52Z",
+    "channelId": "UCU2ZI-6pBJEr9aSFsF6bxLw",
+    "title": "Un aminoácido cambia el virus Andes #Shorts",
+    "description": "¿Y si un solo aminoácido cambia cómo el virus Andes sale de la célula?\n\nUn aminoácido cambia el virus Andes. Una cápsula de Datos y ociosidades: datos verificados contados como historia.\n\nFuentes:\n• Vidal-Freire et al. (2026). A single–amino acid difference between rodent and human Andes virus affects viral glycoprotein trafficking. Science Advances 12(45). https://doi.org/10.1126/sciadv.aek2522\n\nImágenes generadas con IA · voz sintética · audio sintetizado.\nSuscríbete: @datosyociosidades\nTikTok: https://www.tiktok.com/@datosyociosidades\n\n#DatosYOciosidades #Shorts #datos #ciencia #difusión #difusióncientífica #ia #VirusAndes #Hantavirus #Aminoácido",
+    "thumbnails": {
+     "default": {
+      "url": "https://i9.ytimg.com/vi/8EcFyXTcSdM/default.jpg?sqp=CICVztcG&rs=AOn4CLCTT0H7mlZHYK_cflevCBGfbf_pvQ",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i9.ytimg.com/vi/8EcFyXTcSdM/mqdefault.jpg?sqp=CICVztcG&rs=AOn4CLA0BmjaagRXcSwQ1XXMvXuozPUTzg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i9.ytimg.com/vi/8EcFyXTcSdM/hqdefault.jpg?sqp=CICVztcG&rs=AOn4CLBC8RY7kvtfgZiEWJsAW44x3THwJw",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "Datos y ociosidades",
+    "tags": [
+     "Aminoácido",
+     "DatosYOciosidades",
+     "Hantavirus",
+     "Shorts",
+     "VirusAndes",
+     "ciencia",
+     "datos",
+     "difusión",
+     "difusióncientífica",
+     "ia"
+    ],
+    "categoryId": "27",
+    "liveBroadcastContent": "none",
+    "defaultLanguage": "es",
+    "localized": {
+     "title": "Un aminoácido cambia el virus Andes #Shorts",
+     "description": "¿Y si un solo aminoácido cambia cómo el virus Andes sale de la célula?\n\nUn aminoácido cambia el virus Andes. Una cápsula de Datos y ociosidades: datos verificados contados como historia.\n\nFuentes:\n• Vidal-Freire et al. (2026). A single–amino acid difference between rodent and human Andes virus affects viral glycoprotein trafficking. Science Advances 12(45). https://doi.org/10.1126/sciadv.aek2522\n\nImágenes generadas con IA · voz sintética · audio sintetizado.\nSuscríbete: @datosyociosidades\nTikTok: https://www.tiktok.com/@datosyociosidades\n\n#DatosYOciosidades #Shorts #datos #ciencia #difusión #difusióncientífica #ia #VirusAndes #Hantavirus #Aminoácido"
+    }
+   },
+   "status": {
+    "uploadStatus": "uploaded",
+    "privacyStatus": "private",
+    "publishAt": "2026-11-14T19:30:00Z",
+    "license": "youtube",
+    "embeddable": true,
+    "publicStatsViewable": true,
+    "selfDeclaredMadeForKids": false,
+    "containsSyntheticMedia": false
+   },
+   "portada_thumb": {
+    "path": "/workspace/capcot_main/salidas/2026-11-09_andes-virus-aminoacido/portada_thumb.jpg",
+    "t_seconds": 0.5,
+    "set": {
+     "ok": true,
+     "response": {
+      "kind": "youtube#thumbnailSetResponse",
+      "etag": "cMjBXVQKUREYDHirWRHSzEzbC-M",
+      "items": [
+       {
+        "default": {
+         "url": "https://i9.ytimg.com/vi/8EcFyXTcSdM/default.jpg?sqp=CICVztcG&rs=AOn4CLCTT0H7mlZHYK_cflevCBGfbf_pvQ",
+         "width": 120,
+         "height": 90
+        },
+        "medium": {
+         "url": "https://i9.ytimg.com/vi/8EcFyXTcSdM/mqdefault.jpg?sqp=CICVztcG&rs=AOn4CLA0BmjaagRXcSwQ1XXMvXuozPUTzg",
+         "width": 320,
+         "height": 180
+        },
+        "high": {
+         "url": "https://i9.ytimg.com/vi/8EcFyXTcSdM/hqdefault.jpg?sqp=CICVztcG&rs=AOn4CLBC8RY7kvtfgZiEWJsAW44x3THwJw",
+         "width": 480,
+         "height": 360
+        },
+        "standard": {
+         "url": "https://i9.ytimg.com/vi/8EcFyXTcSdM/sddefault.jpg?sqp=CICVztcG&rs=AOn4CLCOYSNfgByJ2BzbQkTQnxnziCBKtA",
+         "width": 640,
+         "height": 480
+        },
+        "maxres": {
+         "url": "https://i9.ytimg.com/vi/8EcFyXTcSdM/maxresdefault.jpg?sqp=CICVztcG&rs=AOn4CLDUtQ5kK1vFk47Q7bUpnpF31xHH6A",
+         "width": 1280,
+         "height": 720
+        },
+        "qhd": {
+         "url": "https://i9.ytimg.com/vi/8EcFyXTcSdM/qhddefault.jpg?sqp=CICVztcG&rs=AOn4CLAH-ikgIjw_3x3pCCJ66IJxTvQTwA",
+         "width": 2560,
+         "height": 1440
+        }
+       }
+      ]
+     }
+    }
+   }
+  }
+ }
+}

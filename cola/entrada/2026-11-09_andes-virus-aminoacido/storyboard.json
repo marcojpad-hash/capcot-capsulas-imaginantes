@@ -1,66 +1,248 @@
 {
-  "project_id": "2026-11-09_andes-virus-aminoacido",
-  "title": "Un amino\u00e1cido cambia el virus Andes",
-  "titulo": "Un solo amino\u00e1cido",
-  "language": "es-MX",
-  "aspect_ratio": "9:16",
-  "target_duration_seconds": 82,
-  "estructura": "pregunta",
-  "trend_source": {
-    "tipo": "noticia_cientifica",
-    "medio": "Science Advances",
-    "url": "https://www.science.org/doi/10.1126/sciadv.aek2522",
-    "estudio_doi": "10.1126/sciadv.aek2522",
-    "fecha_publicacion": "2026-11-06",
-    "termino": "Andes virus amino acid glycoprotein",
-    "fecha_consulta": "2026-11-09"
-  },
-  "estilo_id": "oleo_expresivo",
-  "estilo_visual": "\u00d3leo expresivo",
-  "voice": {
-    "engine": "edge-tts",
-    "voice_id": "es-MX-JorgeNeural",
-    "rate": "+7%",
-    "pitch": "-2Hz",
-    "pad_seconds": 0.3,
-    "modo_pausas": "continuo"
-  },
-  "sources": [
-    {
-      "id": "SRC-001",
-      "cita_corta": "Vidal-Freire et al. (2026). A single\u2013amino acid difference between rodent and human Andes virus affects viral glycoprotein trafficking. Science Advances.",
-      "url": "https://www.science.org/doi/10.1126/sciadv.aek2522",
-      "doi": "10.1126/sciadv.aek2522",
-      "accessed": "2026-11-09",
-      "supports": ["un cambio de amino\u00e1cido T641I en la glicoprote\u00edna del virus Andes humano altera el tr\u00e1fico en el Golgi y la liberaci\u00f3n de part\u00edculas"],
-      "ref_display": "Vidal-Freire et al. Sci Adv 2026"
-    }
-  ],
-  "scenes": [
-    {
-      "id": "scene_001",
-      "arc": "hook_medias_res",
-      "duration_seconds": 8.0,
-      "narration": "\u00bfY si un solo amino\u00e1cido decide si el virus Andes sale m\u00e1s r\u00e1pido de la c\u00e9lula?",
-      "on_screen_text": "Un solo amino\u00e1cido",
-      "visual_description": "Microscopio con c\u00e9lula y virus",
-      "image_prompt": "expressive oil painting, thick impasto brushstrokes, dramatic chiaroscuro lighting, rich earthy palette, vertical 9:16, no text + close-up of human cell with virus particles near Golgi apparatus, scientific sketch style",
-      "source_ids": ["SRC-001"],
-      "asset_filename": "frames/scene_001.jpg",
-      "ambiente": "laboratorio",
-      "sfx": ["lab_hum"]
-    }
-  ],
-  "cortinilla_fuentes": {
-    "duration_seconds": 6,
-    "titulo": "Fuentes",
-    "aviso": "Im\u00e1genes generadas con IA. Voz sint\u00e9tica. Audio sintetizado.",
-    "firma": "Datos y ociosidades \u00b7 @datosyociosidades"
-  },
-  "export": {
-    "filename": "capsula.mp4",
-    "resolution": "1080x1920",
-    "fps": 30,
-    "loudness_lufs": -14
+ "project_id": "2026-11-09_andes-virus-aminoacido",
+ "serie": "Datos y ociosidades",
+ "title": "Un aminoácido cambia el virus Andes",
+ "titulo": "Un solo aminoácido",
+ "language": "es-MX",
+ "estilo_id": "oleo_expresivo",
+ "estilo_visual": "expressive oil painting, thick impasto brushstrokes, dramatic chiaroscuro lighting, rich earthy palette, vertical 9:16, no text",
+ "estructura": "pregunta",
+ "aspect_ratio": "9:16",
+ "target_duration_seconds": 88,
+ "resumen": "Vidal-Freire et al. (2026) muestran que un cambio T641I en la glicoproteína del virus Andes humano se asocia con más retención en el Golgi y una salida más lenta de partículas; lo plantean como posible adaptación, aún sin prueba en virus completo.",
+ "keywords": [
+  "virus Andes",
+  "hantavirus",
+  "aminoácido"
+ ],
+ "proveedor_imagenes": "generadas con IA (ilustración no realista, oleo_expresivo)",
+ "parece_real": false,
+ "export": {
+  "filename": "capsula.mp4",
+  "fps": 30,
+  "loudness_lufs": -14,
+  "resolution": "1080x1920",
+  "plano_seconds": 5,
+  "subtitle_max_words": 3
+ },
+ "voice": {
+  "engine": "edge-tts",
+  "modo_pausas": "continuo",
+  "pad_seconds": 0.3,
+  "pitch": "-2Hz",
+  "rate": "+7%",
+  "voice_id": "es-MX-JorgeNeural"
+ },
+ "audio": {
+  "music_asset": "sintetico:tambor",
+  "cama_musical": "tambor",
+  "music_lufs": -27,
+  "ambiente_lufs": -26
+ },
+ "cortinilla_fuentes": {
+  "duration_seconds": 2.0,
+  "titulo": "Fuentes",
+  "aviso": "Imágenes generadas con IA. Voz sintética. Audio sintetizado.",
+  "firma": "Datos y ociosidades · @datosyociosidades"
+ },
+ "sources": [
+  {
+   "id": "SRC-001",
+   "cita_corta": "Vidal-Freire et al. (2026). A single–amino acid difference between rodent and human Andes virus affects viral glycoprotein trafficking. Science Advances 12(45).",
+   "url": "https://www.science.org/doi/10.1126/sciadv.aek2522",
+   "doi": "10.1126/sciadv.aek2522",
+   "accessed": "2026-11-10",
+   "supports": [
+    "ANDV causa HPS con letalidad reportada de 20 a 50%; es el único ortohantavirus con transmisión de persona a persona documentada",
+    "Brote de Epuyén 2018-19: 34 casos y 11 muertes, con transmisión entre personas",
+    "Comparación de aislado de roedor ANDV/ARG (colilargo, Patagonia) y aislado humano ANDV/ARG-Epuyén: 25 diferencias no sinónimas; foco en T641I cerca del sitio de corte WAASA",
+    "El aislado de roedor crecía más rápido; sin grandes diferencias en síntesis de ARN; la salida de partículas del aislado humano iba retrasada",
+    "I641T (devolver la posición a treonina) reduce la retención en el Golgi y acelera la liberación de VLP; T641I del aislado humano se plantea como posible mutación adaptativa",
+    "Limitación: no pudieron probar el cambio en un virus completo por falta de genética reversa"
+   ],
+   "ref_display": "Vidal-Freire et al., Sci. Adv. 2026"
   }
+ ],
+ "scenes": [
+  {
+   "id": "scene_001",
+   "arc": "hook_medias_res",
+   "duration_seconds": 8,
+   "asset_filename": "frames/frame_01.png",
+   "encuadre": "macro",
+   "narration": "¿Y si un solo aminoácido cambia cómo el virus Andes sale de la célula?",
+   "on_screen_text": "Un solo aminoácido",
+   "visual_description": "Macro pictórico de una célula y partículas virales cerca del Golgi; tercio superior libre para el título. Óleo expresivo.",
+   "image_prompt": "expressive oil painting, thick impasto brushstrokes, dramatic chiaroscuro lighting, rich earthy palette of umber, sienna, deep crimson and olive, vertical 9:16, absolutely no text, no letters, no numbers, no typography, no watermarks, not photorealistic + macro close-up of a painterly human cell interior, a Golgi apparatus like a stack of golden membranes, tiny virus-like particles nearby, empty upper third for a title box, no people, no scientist, no labels",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "sfx": [
+    "silencio"
+   ]
+  },
+  {
+   "id": "scene_002",
+   "arc": "desarrollo",
+   "duration_seconds": 9,
+   "asset_filename": "frames/frame_02.png",
+   "encuadre": "general",
+   "narration": "El virus Andes causa el síndrome pulmonar por hantavirus. La letalidad reportada está entre el veinte y el cincuenta por ciento.",
+   "on_screen_text": "Síndrome pulmonar por hantavirus",
+   "visual_description": "Paisaje de los Andes y un pulmón evocado de forma no gráfica, en óleo terroso, sin violencia visual.",
+   "image_prompt": "expressive oil painting, thick impasto brushstrokes, dramatic chiaroscuro lighting, rich earthy palette of umber, sienna, deep crimson and olive, vertical 9:16, absolutely no text, no letters, no numbers, no typography, no watermarks, not photorealistic + general Andean mountain landscape under heavy dramatic sky, a faint stylized ribcage or breath motif suggested in clouds, solemn not gory, no people, no text",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "sfx": [
+    "viento_fuerte"
+   ]
+  },
+  {
+   "id": "scene_003",
+   "arc": "desarrollo",
+   "duration_seconds": 14,
+   "asset_filename": "frames/frame_03.png",
+   "encuadre": "general",
+   "narration": "Es el único ortohantavirus del que se sabe que puede transmitirse de persona a persona. En Epuyén, Argentina, un brote de dos mil dieciocho y diecinueve dejó treinta y cuatro casos y once muertes, con transmisión entre personas.",
+   "on_screen_text": "Epuyén, 2018-2019",
+   "visual_description": "Pueblo andino de montaña al atardecer, óleo expresivo, sin retratos.",
+   "image_prompt": "expressive oil painting, thick impasto brushstrokes, dramatic chiaroscuro lighting, rich earthy palette of umber, sienna, deep crimson and olive, vertical 9:16, absolutely no text, no letters, no numbers, no typography, no watermarks, not photorealistic + general view of a small Andean town in a mountain valley at dusk, somber earthy light, no readable signs, no flags, no recognizable portraits",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "sfx": [
+    "silencio"
+   ],
+   "capa": {
+    "tipo": "mapa",
+    "region": [
+     -75.0,
+     -65.0,
+     -48.0,
+     -36.0
+    ],
+    "puntos": [
+     {
+      "nombre": "Epuyén, Chubut",
+      "lat": -42.23,
+      "lon": -71.38
+     }
+    ],
+    "titulo": "Patagonia argentina",
+    "fuente": "Vidal-Freire et al., Sci. Adv. 2026",
+    "plano": 0
+   }
+  },
+  {
+   "id": "scene_004",
+   "arc": "desarrollo",
+   "duration_seconds": 12,
+   "asset_filename": "frames/frame_04.png",
+   "encuadre": "detalle",
+   "narration": "Un estudio en Science Advances comparó un aislado de un colilargo de la Patagonia con un aislado humano de ese brote. Hay veinticinco diferencias de aminoácidos.",
+   "on_screen_text": "25 diferencias",
+   "visual_description": "Colilargo estilizado en un paisaje de Patagonia, no un retrato científico realista.",
+   "image_prompt": "expressive oil painting, thick impasto brushstrokes, dramatic chiaroscuro lighting, rich earthy palette of umber, sienna, deep crimson and olive, vertical 9:16, absolutely no text, no letters, no numbers, no typography, no watermarks, not photorealistic + detail of a long-tailed pygmy rice rat, a colilargo, in Patagonian scrub, painterly and not a field-guide plate, no labels, no people, no scientist",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "sfx": [
+    "silencio"
+   ],
+   "capa": {
+    "tipo": "dato",
+    "valor": "25",
+    "etiqueta": "Diferencias de aminoácidos entre el aislado de roedor y el humano",
+    "fuente": "Vidal-Freire et al., Sci. Adv. 2026",
+    "plano": 1
+   }
+  },
+  {
+   "id": "scene_005",
+   "arc": "desarrollo",
+   "duration_seconds": 12,
+   "asset_filename": "frames/frame_05.png",
+   "encuadre": "macro",
+   "narration": "Se fijaron en una: en la glicoproteína, el de roedor tiene treonina y el humano, isoleucina, cerca del sitio donde se corta esa proteína.",
+   "on_screen_text": "Posición 641",
+   "visual_description": "Macro de una proteína de membrana pintada como pliegues de óleo, sin letras ni números.",
+   "image_prompt": "expressive oil painting, thick impasto brushstrokes, dramatic chiaroscuro lighting, rich earthy palette of umber, sienna, deep crimson and olive, vertical 9:16, absolutely no text, no letters, no numbers, no typography, no watermarks, not photorealistic + extreme macro of a painterly membrane protein unfolding in thick paint, a single distinct pigment mark on a fold near a cleavage-like gap, no letters, no residue numbers, no people",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "sfx": [
+    "silencio"
+   ]
+  },
+  {
+   "id": "scene_006",
+   "arc": "desarrollo",
+   "duration_seconds": 11,
+   "asset_filename": "frames/frame_06.png",
+   "encuadre": "detalle",
+   "narration": "En cultivo, el virus de roedor crecía más rápido. No hallaron grandes diferencias en la síntesis de ARN, pero la salida de partículas del aislado humano iba retrasada.",
+   "on_screen_text": "La salida iba retrasada",
+   "visual_description": "Cultivo celular evocado en óleo, partículas saliendo despacio de una célula, sin texto.",
+   "image_prompt": "expressive oil painting, thick impasto brushstrokes, dramatic chiaroscuro lighting, rich earthy palette of umber, sienna, deep crimson and olive, vertical 9:16, absolutely no text, no letters, no numbers, no typography, no watermarks, not photorealistic + detail of painterly cells in a dish, virus-like particles lingering inside a cell more than leaving it, warm lamplight, no equipment labels, no people, no scientist with glasses",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "sfx": [
+    "silencio"
+   ]
+  },
+  {
+   "id": "scene_007",
+   "arc": "desarrollo",
+   "duration_seconds": 11,
+   "asset_filename": "frames/frame_07.png",
+   "encuadre": "cenital",
+   "narration": "En células humanas, si se devuelve esa posición a treonina, la glicoproteína se retiene menos en el Golgi y las partículas similares a virus se liberan más rápido.",
+   "on_screen_text": "Menos retención en el Golgi",
+   "visual_description": "Vista de un aparato de Golgi pictórico y partículas que se alejan, sin etiquetas.",
+   "image_prompt": "expressive oil painting, thick impasto brushstrokes, dramatic chiaroscuro lighting, rich earthy palette of umber, sienna, deep crimson and olive, vertical 9:16, absolutely no text, no letters, no numbers, no typography, no watermarks, not photorealistic + overhead view of a golden Golgi stack in a cell, painterly virus-like particles moving outward more freely, rich impasto, no labels, no people",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "sfx": [
+    "silencio"
+   ]
+  },
+  {
+   "id": "scene_008",
+   "arc": "cierre_historia",
+   "duration_seconds": 13,
+   "asset_filename": "frames/frame_08.png",
+   "encuadre": "general",
+   "narration": "Ese cambio del aislado humano podría ser una mutación adaptativa que influye en el tráfico de la proteína y en la salida de partículas. Los autores lo plantean como posibilidad.",
+   "on_screen_text": "Una posible adaptación",
+   "visual_description": "Cordillera de los Andes en contraluz, atmósfera de hipótesis abierta.",
+   "image_prompt": "expressive oil painting, thick impasto brushstrokes, dramatic chiaroscuro lighting, rich earthy palette of umber, sienna, deep crimson and olive, vertical 9:16, absolutely no text, no letters, no numbers, no typography, no watermarks, not photorealistic + general dramatic view of the Andes range at twilight, a single distant light in a valley, contemplative and unresolved, no text, no people close-up",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "sfx": [
+    "viento_fuerte"
+   ]
+  },
+  {
+   "id": "scene_009",
+   "arc": "reflexion_o_pregunta",
+   "duration_seconds": 12,
+   "asset_filename": "frames/frame_09.png",
+   "encuadre": "contrapicado",
+   "narration": "No pudieron probarlo en un virus completo: aún no hay genética reversa para estos virus. La pregunta queda abierta. ¿Cuánto puede cambiar un solo aminoácido? Esto fue Datos y ociosidades.",
+   "on_screen_text": "¿Cuánto cambia uno solo?",
+   "visual_description": "Contrapicado de una sola partícula pictórica frente a un cielo de óleo oscuro.",
+   "image_prompt": "expressive oil painting, thick impasto brushstrokes, dramatic chiaroscuro lighting, rich earthy palette of umber, sienna, deep crimson and olive, vertical 9:16, absolutely no text, no letters, no numbers, no typography, no watermarks, not photorealistic + low-angle contrapicado of a single small painterly virus-like particle against a vast dark oil-painted sky, contemplative, no typography, no people",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "sfx": [
+    "silencio"
+   ]
+  }
+ ],
+ "nota": "Guion de 9 escenas (2026-11-10) solo con el artículo de Science Advances. Se corrige la paráfrasis del paquete: T641I (aislado humano) se asocia con más retención en el Golgi y salida más lenta; I641T es el revertente que acelera la salida. Slot extra autorizado: 2026-11-14 13:30 hora CDMX."
 }

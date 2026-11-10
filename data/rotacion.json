@@ -229,5 +229,35 @@
   "tema": "efecto Mpemba agua caliente",
   "estilo": "linea_fina",
   "origen": "propia"
+ },
+ {
+  "fecha": "2026-11-12",
+  "project_id": "2026-11-07_barreleye-4k",
+  "estructura": "pregunta",
+  "cama": "marimba",
+  "duracion": 88,
+  "tema": "barreleye Macropinna cabeza transparente",
+  "estilo": "linograbado",
+  "origen": "propia"
+ },
+ {
+  "fecha": "2026-11-13",
+  "project_id": "2026-11-07_arboles-comunicacion-bosque",
+  "estructura": "mito_vs_dato",
+  "cama": "pizzicato",
+  "duracion": 88,
+  "tema": "árboles comunicación micorrizas",
+  "estilo": "papel_rasgado_capas",
+  "origen": "propia"
+ },
+ {
+  "fecha": "2026-11-14",
+  "project_id": "2026-11-09_andes-virus-aminoacido",
+  "estructura": "pregunta",
+  "cama": "tambor",
+  "duracion": 90,
+  "tema": "virus Andes aminoácido T641I",
+  "estilo": "oleo_expresivo",
+  "origen": "propia"
  }
 ]

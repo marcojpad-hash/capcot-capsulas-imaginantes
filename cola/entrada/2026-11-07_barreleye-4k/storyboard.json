@@ -1,144 +1,262 @@
 {
-  "project_id": "2026-11-07_barreleye-4k",
-  "title": "El pez que mira a través de su cabeza",
-  "language": "es-MX",
-  "aspect_ratio": "9:16",
-  "target_duration_seconds": 82,
-  "trend_source": {
-    "tipo": "noticia_cientifica",
-    "medio": "MBARI",
-    "url": "https://www.mbari.org/news/mbari-researchers-film-rarely-seen-deep-sea-barreleye-fish-in-4k/",
-    "estudio_doi": null,
-    "fecha_publicacion": "2026-10-28",
-    "termino": "barreleye Macropinna 4K",
-    "fecha_consulta": "2026-11-07"
+ "project_id": "2026-11-07_barreleye-4k",
+ "serie": "Datos y ociosidades",
+ "title": "El pez que mira a través de su cabeza",
+ "titulo": "Pez de cabeza transparente",
+ "language": "es-MX",
+ "estilo_id": "linograbado",
+ "estilo_visual": "linocut print, two-tone indigo and ochre ink on cream paper, bold carved lines, visible gouge marks, high contrast, vertical 9:16 composition, no text",
+ "estructura": "pregunta",
+ "aspect_ratio": "9:16",
+ "target_duration_seconds": 88,
+ "resumen": "MBARI filmó en 4K al barreleye Macropinna, un pez de cabeza transparente visto solo 11 veces en casi 40 años.",
+ "keywords": [
+  "barreleye",
+  "Macropinna",
+  "pez profundo"
+ ],
+ "proveedor_imagenes": "generadas con IA (ilustración no realista, linograbado)",
+ "parece_real": false,
+ "export": {
+  "filename": "capsula.mp4",
+  "fps": 30,
+  "loudness_lufs": -14,
+  "resolution": "1080x1920",
+  "plano_seconds": 5,
+  "subtitle_max_words": 3
+ },
+ "voice": {
+  "engine": "edge-tts",
+  "modo_pausas": "continuo",
+  "pad_seconds": 0.3,
+  "pitch": "-2Hz",
+  "rate": "+7%",
+  "voice_id": "es-MX-JorgeNeural"
+ },
+ "audio": {
+  "music_asset": "sintetico:marimba",
+  "cama_musical": "marimba",
+  "music_lufs": -27,
+  "ambiente_lufs": -26
+ },
+ "cortinilla_fuentes": {
+  "duration_seconds": 6,
+  "titulo": "Fuentes",
+  "aviso": "Imágenes generadas con IA. Voz sintética. Audio sintetizado.",
+  "firma": "Datos y ociosidades · @datosyociosidades"
+ },
+ "sources": [
+  {
+   "id": "SRC-001",
+   "cita_corta": "MBARI (2026). Researchers film rarely seen deep-sea barreleye fish in 4K.",
+   "url": "https://www.mbari.org/news/mbari-researchers-film-rarely-seen-deep-sea-barreleye-fish-in-4k/",
+   "accessed": "2026-11-10",
+   "supports": [
+    "Undécimo avistamiento de MBARI en casi 40 años, tras ~7.000 inmersiones y más de 41.000 horas de video; último avistamiento en 2021",
+    "Encontrado a ~600 m y ~90 km de la costa con el ROV Doc Ricketts, desde el buque David Packard, durante la expedición Diving Deep for Delicate Drifters",
+    "Ojos tubulares que giran bajo una cúpula transparente; aletas grandes; la cúpula protege al recoger crustáceos en tentáculos de sifonóforos",
+    "Lo observaron ~20 minutos y lo filmaron en 4K por primera vez; primera vez desde el nuevo buque insignia; no lo recolectaron",
+    "Nombre científico Macropinna microstoma: aletas grandes, boca pequeña; lo vio Shannon Johnson cuando el ROV subía"
+   ],
+   "ref_display": "MBARI, 28 oct 2026"
+  }
+ ],
+ "trend_source": {
+  "tipo": "noticia_cientifica",
+  "medio": "MBARI",
+  "url": "https://www.mbari.org/news/mbari-researchers-film-rarely-seen-deep-sea-barreleye-fish-in-4k/",
+  "estudio_doi": null,
+  "fecha_publicacion": "2026-10-28",
+  "termino": "barreleye Macropinna 4K",
+  "fecha_consulta": "2026-11-07"
+ },
+ "scenes": [
+  {
+   "id": "scene_001",
+   "arc": "hook_medias_res",
+   "duration_seconds": 8,
+   "asset_filename": "frames/frame_01.png",
+   "encuadre": "general",
+   "narration": "¿Cómo ve un pez a través de su propia cabeza? Se llama barreleye, Macropinna microstoma.",
+   "on_screen_text": "Pez de cabeza transparente",
+   "visual_description": "Plano general del barreleye en agua oscura, cúpula transparente y ojos tubulares; tercio superior libre para el título. Linograbado índigo y ocre.",
+   "image_prompt": "linocut print, two-tone indigo and ochre ink on cream paper, bold carved lines, visible gouge marks, high contrast, vertical 9:16 composition, absolutely no text, no letters, no numbers, no typography, no watermarks + wide general shot of a deep-sea barreleye fish with a transparent head dome and green tubular eyes, dark twilight-zone water, empty upper third for a title box",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "sfx": [
+    "oceano"
+   ]
   },
-  "estilo_id": "linograbado",
-  "estilo_visual": "Linograbado bitono",
-  "estructura": "pregunta",
-  "voice": {
-    "engine": "edge-tts",
-    "voice_id": "es-MX-JorgeNeural",
-    "rate": "+7%",
-    "pitch": "-2Hz",
-    "pad_seconds": 0.3,
-    "modo_pausas": "continuo"
+  {
+   "id": "scene_002",
+   "arc": "desarrollo",
+   "duration_seconds": 8,
+   "asset_filename": "frames/frame_02.png",
+   "encuadre": "contrapicado",
+   "narration": "Vive en la zona crepuscular del océano. Escanea el agua de arriba buscando las siluetas de sus presas.",
+   "on_screen_text": "Zona crepuscular",
+   "visual_description": "Contrapicado del pez mirando hacia la superficie en la zona crepuscular. Linograbado.",
+   "image_prompt": "linocut print, two-tone indigo and ochre ink on cream paper, bold carved lines, visible gouge marks, high contrast, vertical 9:16 composition, absolutely no text, no letters, no numbers, no typography, no watermarks + low-angle contrapicado of a barreleye fish looking upward through dim blue-black twilight-zone water toward faint silhouettes above, no people",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "sfx": [
+    "oceano"
+   ]
   },
-  "sources": [
-    {
-      "id": "SRC-001",
-      "cita_corta": "MBARI (2026). Researchers film rarely seen deep-sea barreleye fish in 4K.",
-      "url": "https://www.mbari.org/news/mbari-researchers-film-rarely-seen-deep-sea-barreleye-fish-in-4k/",
-      "doi": null,
-      "accessed": "2026-11-07",
-      "supports": ["11º avistamiento en 40 años", "filmado a 600 m en 4K por primera vez por MBARI", "ojos tubulares giratorios bajo cúpula transparente"],
-      "ref_display": "MBARI 2026"
-    }
-  ],
-  "scenes": [
-    {
-      "id": "scene_001",
-      "arc": "hook_medias_res",
-      "duration_seconds": 8.0,
-      "narration": "¿Cómo ve un pez a través de su propia cabeza?",
-      "on_screen_text": "¿Cabeza transparente?",
-      "visual_description": "Pez barreleye con cúpula transparente e ojos verdes visibles, linograbado índigo y ocre sobre crema, vertical 9:16.",
-      "image_prompt": "linocut print, two-tone indigo and ochre ink on cream paper, bold carved lines, visible gouge marks, high contrast, vertical 9:16 composition, no text + deep sea barreleye fish Macropinna with transparent head dome and green tubular eyes scanning upward, dark ocean background",
-      "source_ids": ["SRC-001"],
-      "asset_filename": "frames/scene_001.jpg",
-      "ambiente": "oceano",
-      "sfx": ["burbujas"]
-    },
-    {
-      "id": "scene_002",
-      "arc": "desarrollo",
-      "duration_seconds": 10.0,
-      "narration": "A seiscientos metros bajo Monterey, un ROV de MBARI encontró al barreleye Macropinna.",
-      "on_screen_text": "600 metros",
-      "visual_description": "ROV Doc Ricketts iluminando pez barreleye en zona crepuscular.",
-      "image_prompt": "linocut print, two-tone indigo and ochre ink on cream paper, bold carved lines, visible gouge marks, high contrast, vertical 9:16 composition, no text + ROV Doc Ricketts lights illuminating barreleye fish at 600 meters in twilight zone, Monterey Canyon",
-      "source_ids": ["SRC-001"],
-      "asset_filename": "frames/scene_002.jpg",
-      "ambiente": "oceano",
-      "sfx": ["motor"]
-    },
-    {
-      "id": "scene_003",
-      "arc": "desarrollo",
-      "duration_seconds": 9.0,
-      "narration": "Es el undécimo avistamiento en casi cuarenta años y siete mil inmersiones.",
-      "on_screen_text": "11 veces",
-      "visual_description": "Contador o mapa de inmersiones raras en océano profundo.",
-      "image_prompt": "linocut print, two-tone indigo and ochre ink on cream paper, bold carved lines, visible gouge marks, high contrast, vertical 9:16 composition, no text + sparse deep ocean map with rare barreleye sightings marked, dark indigo depths",
-      "source_ids": ["SRC-001"],
-      "asset_filename": "frames/scene_003.jpg",
-      "ambiente": "oceano",
-      "sfx": ["eco"]
-    },
-    {
-      "id": "scene_004",
-      "arc": "desarrollo",
-      "duration_seconds": 11.0,
-      "narration": "Sus ojos tubulares verdes giran bajo una cúpula transparente para seguir las siluetas de presas arriba.",
-      "on_screen_text": "Ojos que giran",
-      "visual_description": "Detalle de ojos giratorios dentro de cabeza transparente.",
-      "image_prompt": "linocut print, two-tone indigo and ochre ink on cream paper, bold carved lines, visible gouge marks, high contrast, vertical 9:16 composition, no text + close-up of barreleye transparent head with green tubular eyes rotating upward to track prey silhouettes",
-      "source_ids": ["SRC-001"],
-      "asset_filename": "frames/scene_004.jpg",
-      "ambiente": "oceano",
-      "sfx": ["agua"]
-    },
-    {
-      "id": "scene_005",
-      "arc": "desarrollo",
-      "duration_seconds": 10.0,
-      "narration": "La cúpula gelatinosa protege los ojos cuando pesca crustáceos entre tentáculos de sifonóforos.",
-      "on_screen_text": "Escudo protector",
-      "visual_description": "Pez barreleye cerca de sifonóforo, ojos protegidos.",
-      "image_prompt": "linocut print, two-tone indigo and ochre ink on cream paper, bold carved lines, visible gouge marks, high contrast, vertical 9:16 composition, no text + barreleye fish feeding near siphonophore tentacles, gelatinous shield protecting eyes, deep sea",
-      "source_ids": ["SRC-001"],
-      "asset_filename": "frames/scene_005.jpg",
-      "ambiente": "oceano",
-      "sfx": ["tentaculos"]
-    },
-    {
-      "id": "scene_006",
-      "arc": "cierre_historia",
-      "duration_seconds": 9.0,
-      "narration": "Esta vez lo filmaron veinte minutos en 4K desde el David Packard, primera vez en esa resolución para MBARI.",
-      "on_screen_text": "Primera en 4K",
-      "visual_description": "Buque David Packard y ROV grabando.",
-      "image_prompt": "linocut print, two-tone indigo and ochre ink on cream paper, bold carved lines, visible gouge marks, high contrast, vertical 9:16 composition, no text + research vessel David Packard with ROV Doc Ricketts filming barreleye in 4K, Pacific Ocean",
-      "source_ids": ["SRC-001"],
-      "asset_filename": "frames/scene_006.jpg",
-      "ambiente": "oceano",
-      "sfx": ["barco"]
-    },
-    {
-      "id": "scene_007",
-      "arc": "reflexion_o_pregunta",
-      "duration_seconds": 12.0,
-      "narration": "¿Cuántas formas de ver el mundo esconde el océano profundo? Esto fue Datos y ociosidades.",
-      "on_screen_text": "¿Qué más hay abajo?",
-      "visual_description": "Pez barreleye mirando hacia arriba en linograbado, cortinilla suave.",
-      "image_prompt": "linocut print, two-tone indigo and ochre ink on cream paper, bold carved lines, visible gouge marks, high contrast, vertical 9:16 composition, no text + barreleye fish gazing upward through transparent head into dim twilight zone, contemplative",
-      "source_ids": ["SRC-001"],
-      "asset_filename": "frames/scene_007.jpg",
-      "ambiente": "oceano",
-      "sfx": ["silencio"]
-    }
-  ],
-  "cortinilla_fuentes": {
-    "duration_seconds": 6,
-    "titulo": "Fuentes",
-    "aviso": "Imágenes generadas con IA. Voz sintética. Audio sintetizado.",
-    "firma": "Datos y ociosidades · @datosyociosidades"
+  {
+   "id": "scene_003",
+   "arc": "desarrollo",
+   "duration_seconds": 10,
+   "asset_filename": "frames/frame_03.png",
+   "encuadre": "general",
+   "narration": "En una expedición del buque David Packard, el ROV Doc Ricketts, de MBARI, lo encontró a unos seiscientos metros de profundidad, a unos noventa kilómetros de la costa.",
+   "on_screen_text": "600 metros",
+   "visual_description": "ROV con luces iluminando al barreleye en profundidad. Linograbado.",
+   "image_prompt": "linocut print, two-tone indigo and ochre ink on cream paper, bold carved lines, visible gouge marks, high contrast, vertical 9:16 composition, absolutely no text, no letters, no numbers, no typography, no watermarks + general shot of a boxy deep-sea ROV with bright lights illuminating a barreleye fish in dark water, no text on the vehicle, no people",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "sfx": [
+    "motor"
+   ],
+   "capa": {
+    "tipo": "dato",
+    "valor": "600 m",
+    "etiqueta": "Profundidad del avistamiento, ROV Doc Ricketts",
+    "fuente": "MBARI, 28 oct 2026",
+    "plano": 1
+   }
   },
-  "export": {
-    "filename": "capsula.mp4",
-    "resolution": "1080x1920",
-    "fps": 30,
-    "loudness_lufs": -14
+  {
+   "id": "scene_004",
+   "arc": "desarrollo",
+   "duration_seconds": 12,
+   "asset_filename": "frames/frame_04.png",
+   "encuadre": "cenital",
+   "narration": "Es el undécimo avistamiento de MBARI en casi cuarenta años, después de unas siete mil inmersiones y más de cuarenta y un mil horas de video. La última vez lo habían visto en 2021.",
+   "on_screen_text": "11 avistamientos",
+   "visual_description": "Vista amplia del océano profundo con pocos puntos de luz, idea de rareza, sin números. Linograbado.",
+   "image_prompt": "linocut print, two-tone indigo and ochre ink on cream paper, bold carved lines, visible gouge marks, high contrast, vertical 9:16 composition, absolutely no text, no letters, no numbers, no typography, no watermarks + overhead view of a vast dark ocean column with a single small illuminated fish and a few sparse distant light motes, sense of rarity, no map labels, no numbers",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "sfx": [
+    "silencio"
+   ],
+   "capa": {
+    "tipo": "dato",
+    "valor": "11",
+    "etiqueta": "Avistamientos de MBARI en casi 40 años y ~7.000 inmersiones",
+    "fuente": "MBARI, 28 oct 2026",
+    "plano": 1
+   }
   },
-  "titulo": "Pez de cabeza transparente"
+  {
+   "id": "scene_005",
+   "arc": "desarrollo",
+   "duration_seconds": 8,
+   "asset_filename": "frames/frame_05.png",
+   "encuadre": "detalle",
+   "narration": "Lo vio Shannon Johnson cuando el vehículo ya subía a la superficie. La tripulación se juntó en la sala de control, sorprendida.",
+   "on_screen_text": "Un hallazgo al subir",
+   "visual_description": "Detalle del ROV subiendo con un haz de luz que recorta al pez. Sin retratos. Linograbado.",
+   "image_prompt": "linocut print, two-tone indigo and ochre ink on cream paper, bold carved lines, visible gouge marks, high contrast, vertical 9:16 composition, absolutely no text, no letters, no numbers, no typography, no watermarks + detail of a deep-sea ROV rising through dark water, a cone of light catching a barreleye fish, no people, no readable markings",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "sfx": [
+    "motor"
+   ]
+  },
+  {
+   "id": "scene_006",
+   "arc": "desarrollo",
+   "duration_seconds": 10,
+   "asset_filename": "frames/frame_06.png",
+   "encuadre": "macro",
+   "narration": "Sus ojos tubulares verdes giran bajo una cúpula transparente para seguir a la presa. Las aletas grandes lo mantienen estable mientras flota en su sitio.",
+   "on_screen_text": "Ojos que giran",
+   "visual_description": "Macro de la cabeza transparente y los ojos tubulares verdes. Linograbado.",
+   "image_prompt": "linocut print, two-tone indigo and ochre ink on cream paper, bold carved lines, visible gouge marks, high contrast, vertical 9:16 composition, absolutely no text, no letters, no numbers, no typography, no watermarks + extreme macro close-up of a barreleye transparent gelatinous head shield with large green tubular eyes angled upward, no text",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "sfx": [
+    "oceano"
+   ]
+  },
+  {
+   "id": "scene_007",
+   "arc": "desarrollo",
+   "duration_seconds": 8,
+   "asset_filename": "frames/frame_07.png",
+   "encuadre": "detalle",
+   "narration": "Esa cúpula gelatinosa también protege los ojos cuando recoge crustáceos entre los tentáculos urticantes de sifonóforos.",
+   "on_screen_text": "Escudo protector",
+   "visual_description": "El barreleye junto a tentáculos de un sifonóforo. Linograbado.",
+   "image_prompt": "linocut print, two-tone indigo and ochre ink on cream paper, bold carved lines, visible gouge marks, high contrast, vertical 9:16 composition, absolutely no text, no letters, no numbers, no typography, no watermarks + barreleye fish beside long stinging siphonophore tentacles, gelatinous head shield visible, deep-sea darkness, no people, no text",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "sfx": [
+    "oceano"
+   ]
+  },
+  {
+   "id": "scene_008",
+   "arc": "cierre_historia",
+   "duration_seconds": 12,
+   "asset_filename": "frames/frame_08.png",
+   "encuadre": "general",
+   "narration": "Lo observaron unos veinte minutos y lo filmaron en 4K: es la primera vez que MBARI lo registra en esa resolución, y la primera desde su nuevo buque insignia. No lo recolectaron.",
+   "on_screen_text": "Primera vez en 4K",
+   "visual_description": "Buque de investigación en superficie y cable del ROV hacia el fondo. Linograbado.",
+   "image_prompt": "linocut print, two-tone indigo and ochre ink on cream paper, bold carved lines, visible gouge marks, high contrast, vertical 9:16 composition, absolutely no text, no letters, no numbers, no typography, no watermarks + research vessel on the Pacific surface at dusk, a ROV cable descending into dark water, no readable name on the hull, no people close-up, no typography",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "sfx": [
+    "puerto"
+   ],
+   "capa": {
+    "tipo": "mapa",
+    "region": [
+     -125.5,
+     -120.0,
+     34.8,
+     38.5
+    ],
+    "puntos": [
+     {
+      "nombre": "MBARI, Moss Landing",
+      "lat": 36.805,
+      "lon": -121.787
+     }
+    ],
+    "titulo": "Costa de California",
+    "fuente": "MBARI, 28 oct 2026",
+    "plano": 0
+   }
+  },
+  {
+   "id": "scene_009",
+   "arc": "reflexion_o_pregunta",
+   "duration_seconds": 12,
+   "asset_filename": "frames/frame_09.png",
+   "encuadre": "contrapicado",
+   "narration": "El nombre científico significa aletas grandes y boca pequeña. En décadas de exploración, este pez sigue siendo una rareza. ¿Cuántas formas de ver el mundo esconde el océano profundo? Esto fue Datos y ociosidades.",
+   "on_screen_text": "¿Qué más hay abajo?",
+   "visual_description": "Contrapicado del barreleye mirando hacia arriba, zona crepuscular. Linograbado.",
+   "image_prompt": "linocut print, two-tone indigo and ochre ink on cream paper, bold carved lines, visible gouge marks, high contrast, vertical 9:16 composition, absolutely no text, no letters, no numbers, no typography, no watermarks + low-angle contrapicado of a lone barreleye gazing upward through its transparent head into dim twilight water, contemplative, no text, no people",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "sfx": [
+    "silencio"
+   ]
+  }
+ ],
+ "nota": "Extensión a 9 escenas (2026-11-10) solo con hechos de la nota oficial de MBARI del 28-oct-2026. Slot extra autorizado: 2026-11-12 13:30 hora CDMX."
 }
