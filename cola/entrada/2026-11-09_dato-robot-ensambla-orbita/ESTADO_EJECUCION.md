@@ -26,3 +26,12 @@
 
 ## Actualización 2026-11-09 22:29 CST
 Frames generados por Grok en esta sesión. Subida al repo bloqueada por tamaño de PNG en el conector. Entrega visual en el chat.
+
+
+## Actualización 2026-11-10 — entrega de guion
+
+- Guion separado: `GUION_NARRACION.md` (9 escenas; 210 palabras; 82 s de escenas + 6 s de cortinilla).
+- El texto reproduce la narración del storyboard vigente; no cambia claims ni prompts.
+- **Frames:** no se regeneraron ni sustituyeron. La sesión previa registra 9 PNG generados por Grok y disponibles en el chat, pendientes de subida al repositorio por límite del conector. El usuario confirma que los nueve frames ya están cubiertos.
+- Esta actualización no acredita que los PNG estén dentro de `frames/`; la carpeta del repositorio debe seguir distinguiéndose de la entrega visual en el chat.
+- Audio, video y publicación permanecen sin generar/no realizados.
