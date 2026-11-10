@@ -348,5 +348,31 @@
     "No llamar universal al período de 25±9 min ni a la longitud de correlación de 1.5 mm.",
     "No confundir longitud de correlación del flujo con tamaño de una molécula.",
     "El pin Weizmann es afiliación institucional, no ubicación del experimento."
-  ]
+  ],
+  "narrative_qa": {
+    "status": "PASS",
+    "score": 91,
+    "review_basis": "lectura_en_frio_solo_narracion",
+    "checks": {
+      "pregunta_central_reconstruible": true,
+      "apertura_in_medias_res": true,
+      "progresion_por_escena": true,
+      "transiciones_causales": true,
+      "giro_cientifico_explicado": true,
+      "limite_evidencia_explicito": true,
+      "payoff_cierre_apertura": true
+    },
+    "critical_flags": [],
+    "reviewer_role": "auditor_capcot_independiente",
+    "reviewed_at": "2026-11-10T16:16:00-06:00",
+    "evidence": {
+      "pregunta_central_reconstruible": "La narración permite reconstruir cómo un flujo caótico pasa a oscilar coordinadamente.",
+      "apertura_in_medias_res": "Abre con filamentos en movimiento y una red que empieza a formarse; no inicia con definición.",
+      "progresion_por_escena": "Pasa de anomalía a componentes, mecanismo, retroalimentación, transición, medidas, límite y payoff.",
+      "transiciones_causales": "Cada escena introduce el siguiente eslabón del mecanismo o delimita la interpretación del anterior.",
+      "giro_cientifico_explicado": "La red viscoelástica de ADN retroalimenta el flujo y produce oscilaciones sincronizadas.",
+      "limite_evidencia_explicito": "Distingue sistema artificial de laboratorio y evita generalizar período y escala como constantes universales.",
+      "payoff_cierre_apertura": "El cierre resignifica el caos inicial como autoorganización mecánica y formula una pregunta derivada del hallazgo."
+    }
+  }
 }
