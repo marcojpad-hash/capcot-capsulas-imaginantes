@@ -1,0 +1,391 @@
+{
+  "_schema": "CAPCOT_STORYBOARD_TEXT_V2",
+  "project_id": "2026-11-10_comida-aprendizaje-sabor-nutriente",
+  "fecha_objetivo": "2026-11-10",
+  "slot_local": "13:30",
+  "slot_window_status": "VENTANA_MEDIODIA_EN_PRUEBA_13:30-15:00; borrador no programado",
+  "serie": "Datos y ociosidades",
+  "title": "Cómo el cerebro aprende el valor nutritivo del sabor",
+  "titulo": "El sabor llega primero",
+  "language": "es-MX",
+  "aspect_ratio": "9:16",
+  "target_duration_seconds": 84,
+  "estructura": "comparacion",
+  "audience": "Público general interesado en comida, cerebro y aprendizaje.",
+  "occasion": "Ventana de mediodía en prueba; cápsula de curiosidad científica cotidiana.",
+  "resumen": "Un estudio de Nature identifica una vía dopaminérgica que conecta el sabor oral con las señales nutritivas posteriores del intestino y permite aprender qué anuncia un sabor. El estudio no demuestra una preferencia concreta por café ni por otro alimento.",
+  "narrative_contract": {
+    "central_question": "¿Cómo aprende el cerebro qué nutrientes anuncia un sabor?",
+    "promise": "El espectador comprenderá cómo la boca aporta una primera señal y el intestino la completa mediante una vía dopaminérgica.",
+    "stakes": "El valor de un alimento no se aprende solo por su sabor inmediato; también importan las consecuencias nutritivas que llegan después.",
+    "scientific_turn": "En ratones, neuronas dopaminérgicas del área tegmental ventral y una región de la amígdala basolateral anterior izquierda son necesarias para el aprendizaje sabor-nutriente; estimular las terminales dopaminérgicas impulsa esa asociación.",
+    "evidence_limit": "La evidencia causal procede de experimentos en ratones. En humanos se observó activación preferente de la misma región ante nutrientes, pero eso no demuestra una preferencia conductual específica ni explica directamente el gusto por el café.",
+    "payoff": "La señal intestinal completa lo que la lengua empezó: el cerebro aprende qué consecuencia nutritiva puede anunciar un sabor."
+  },
+  "trend_source": {
+    "termino": "aprendizaje sabor-nutriente",
+    "fecha_publicacion": "2026-11-04",
+    "url": "https://www.nature.com/articles/s41586-026-11229-5"
+  },
+  "editorial_status": "PROPUESTA_PENDIENTE_DE_GROK",
+  "arco": {
+    "hook_medias_res": "El sabor ya llegó; la respuesta del intestino viene en camino.",
+    "desarrollo": "El estudio identifica una vía dopaminérgica que integra la señal gustativa con la información nutritiva post-ingestiva.",
+    "cierre_historia": "La región anterior de la amígdala recibe la señal y participa en el aprendizaje sabor-nutriente; en humanos se observa activación relacionada, sin demostrar una preferencia concreta.",
+    "reflexion_o_pregunta": "El gusto no termina en la lengua: ¿qué aprende el cerebro de lo que llega después?"
+  },
+  "estilo_id": "claymation",
+  "estilo_visual": "Claymation / plastilina (propio)",
+  "visual_identity": {
+    "style_id": "claymation",
+    "style_name": "Claymation / plastilina (propio)",
+    "prompt_base": "claymation stop-motion scene, plasticine characters and set with visible fingerprints, soft studio lighting, miniature handmade props, vertical 9:16, no text",
+    "palette": "Crema, coral suave, amarillo miel, verde salvia y azul petróleo; acento rojo discreto para la señal dopaminérgica.",
+    "lighting": "Luz de estudio suave; clave cálida y contraluz frío muy tenue en el circuito cerebral.",
+    "texture": "Plastilina mate con huellas dactilares visibles; utilería miniatura hecha a mano.",
+    "composition": "Vertical 9:16; un mecanismo central por plano; mantener escala, cámara y paleta; etiquetas y tipografía se agregan en postproducción.",
+    "negative_prompt": "Fotorrealismo anatómico, gore médico, texto incrustado, logotipos, etiquetas falsas, café presentado como objeto probado por el estudio, órganos extra o personajes antropomórficos.",
+    "reference_assets": [],
+    "seed": null,
+    "seed_policy": "No se fija seed en el borrador; mantener continuidad de paleta, escala y altura de cámara entre escenas. Grok decide continuidad técnica en producción."
+  },
+  "typography_identity": {
+    "font_family": "DejaVu Sans",
+    "font_weight": "700 para gancho; 400 para subtítulos",
+    "title_style": "Máximo seis palabras; presente desde frame 0 en postproducción",
+    "subtitle_style": "Bloques de máximo tres palabras; zona segura inferior",
+    "hierarchy": "Gancho > dato/etiqueta > subtítulos",
+    "animation": "Un movimiento por plano; tipografía en postproducción"
+  },
+  "voice": {
+    "engine": "edge-tts",
+    "voice_id": "es-MX-JorgeNeural",
+    "language": "es-MX",
+    "rate": "+7%",
+    "pitch": "-2Hz",
+    "pad_seconds": 0.3,
+    "modo_pausas": "continuo"
+  },
+  "sources": [
+    {
+      "id": "SRC-001",
+      "cita_corta": "Grove et al. The neural basis of flavour–nutrient learning. Nature (2026).",
+      "url": "https://www.nature.com/articles/s41586-026-11229-5",
+      "doi": "10.1038/s41586-026-11229-5",
+      "accessed": "2026-11-10",
+      "publication_date": "2026-11-04",
+      "supports": [
+        "La boca estima el contenido nutritivo por el sabor y el intestino aporta señales post-ingestivas.",
+        "Las neuronas dopaminérgicas del área tegmental ventral son necesarias para asociar nutrientes y sabores en ratones.",
+        "La dopamina post-ingestiva se libera selectivamente en la amígdala basolateral anterior izquierda.",
+        "La estimulación de terminales dopaminérgicas en la amígdala anterior impulsa el aprendizaje sabor-nutriente.",
+        "La región se activa preferentemente ante nutrientes en humanos, sin demostrar una preferencia conductual concreta."
+      ],
+      "verification_status": "PENDIENTE",
+      "verification_note": "Página primaria Nature y registro PubMed consultados; DOI mostrado por ambas fuentes. Crossref y resolvedor DOI no completaron acceso en esta ejecución."
+    },
+    {
+      "id": "SRC-002",
+      "cita_corta": "PubMed PMID 42983088 — registro bibliográfico del artículo Nature.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42983088/",
+      "doi": "10.1038/s41586-026-11229-5",
+      "accessed": "2026-11-10",
+      "publication_date": "2026-11-04",
+      "supports": [
+        "Fecha de publicación y metadatos bibliográficos del artículo; no sustituye la fuente primaria para las afirmaciones científicas."
+      ],
+      "verification_status": "PENDIENTE",
+      "verification_note": "El registro PubMed confirma DOI y fecha; no es Crossref ni resolvedor DOI."
+    },
+    {
+      "id": "SRC-003",
+      "cita_corta": "UCSF Health — Mission Bay Campus.",
+      "url": "https://www.ucsfhealth.org/locations/mission-bay-campus",
+      "doi": null,
+      "accessed": "2026-11-10",
+      "publication_date": null,
+      "supports": [
+        "Dirección institucional del campus Mission Bay, San Francisco; el artículo incluye afiliación a University of California, San Francisco."
+      ],
+      "verification_status": "PENDIENTE",
+      "verification_note": "Página institucional abierta y consultada; no aplica DOI."
+    },
+    {
+      "id": "SRC-004",
+      "cita_corta": "MapCarta — UCSF Mission Bay; coordenadas basadas en OpenStreetMap.",
+      "url": "https://mapcarta.com/W224832527",
+      "doi": null,
+      "accessed": "2026-11-10",
+      "publication_date": null,
+      "supports": [
+        "Punto cartográfico del campus UCSF Mission Bay: 37.76873, -122.39258; no es ubicación exacta de experimentación."
+      ],
+      "verification_status": "PENDIENTE",
+      "verification_note": "Página cartográfica abierta y coordenadas visibles; la página declara que el punto se basa en OpenStreetMap. No aplica DOI."
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_001",
+      "arc": "hook_medias_res",
+      "duration_seconds": 9,
+      "narration": "El sabor ya llegó a la lengua; la respuesta del intestino todavía viene en camino. El cerebro tiene una pista, pero aún no sabe qué nutrientes llegaron.",
+      "on_screen_text": "El sabor llega primero",
+      "visual_description": "Macro diorama de una pequeña porción de alimento junto a una lengua de plastilina; una señal cálida avanza hacia una silueta de intestino mientras el cerebro permanece parcialmente iluminado.",
+      "image_prompt": "claymation stop-motion scene, plasticine characters and set with visible fingerprints, soft studio lighting, miniature handmade props, vertical 9:16, no text, macro diorama of a small food morsel beside a simple clay tongue; a warm signal begins travelling toward a clay intestine while a clay brain remains partly unlit, clear single action, consistent miniature scale.",
+      "ambiente": "Ambiente íntimo de cocina, casi silencioso, con un pulso grave muy suave.",
+      "sfx": [
+        "Mordida sutil de textura blanda",
+        "Pulso corto cuando la señal inicia su recorrido"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "claymation",
+      "dramatic_beat": "La primera señal ya llegó, pero la explicación todavía está incompleta.",
+      "scene_function": "Abrir la historia con el desfase entre el sabor y la respuesta intestinal.",
+      "causal_bridge_from_previous": "Apertura en curso: el sabor ya fue detectado mientras la respuesta post-ingestiva aún no termina.",
+      "question_state": "Se sabe que la boca recibió el sabor; queda por saber cómo el cuerpo completa esa información.",
+      "reason_to_continue": "La respuesta que falta no viene de otra mordida, sino del intestino.",
+      "new_information": "El aprendizaje puede integrar una señal oral temprana y otra post-ingestiva más lenta."
+    },
+    {
+      "id": "scene_002",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "Primero, la boca estima el contenido nutritivo por el sabor. Después de tragar, señales más lentas del intestino informan qué nutrientes entraron realmente.",
+      "on_screen_text": "Boca → intestino",
+      "visual_description": "Diorama en dos planos conectados: la boca recibe la señal gustativa y el intestino aparece después como segundo sensor; un recuadro cartográfico ubica UCSF Mission Bay como afiliación institucional, no como sitio exacto del experimento.",
+      "image_prompt": "claymation stop-motion scene, plasticine characters and set with visible fingerprints, soft studio lighting, miniature handmade props, vertical 9:16, no text, a two-stage miniature clay cutaway showing mouth first and intestine second, connected by one clean curved signal path; small inset map of San Francisco with a single campus pin, map labels added later in post, no text in generated image.",
+      "ambiente": "Capa sonora cálida de cocina que se transforma en un tono interno suave.",
+      "sfx": [
+        "Deslizamiento corto al pasar de boca a intestino"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-003",
+        "SRC-004"
+      ],
+      "style_id": "claymation",
+      "capa": {
+        "tipo": "mapa",
+        "region": [
+          37.75873,
+          -122.40258,
+          37.77873,
+          -122.38258
+        ],
+        "puntos": [
+          {
+            "nombre": "UCSF Mission Bay Campus",
+            "lat": 37.76873,
+            "lon": -122.39258,
+            "funcion": "Afiliación institucional del artículo; no representa el lugar exacto de los experimentos"
+          }
+        ],
+        "titulo": "UCSF Mission Bay, San Francisco — afiliación institucional",
+        "fuente": "SRC-001 confirma afiliación a University of California, San Francisco; SRC-003 confirma el campus y su dirección; SRC-004 aporta el punto cartográfico basado en OpenStreetMap. El pin identifica el campus, no el laboratorio ni el lugar exacto de experimentación. El encuadre es aproximado."
+      },
+      "dramatic_beat": "La historia cambia de una sola señal a dos señales que llegan en momentos distintos.",
+      "scene_function": "Explicar la diferencia entre la estimación gustativa y la información post-ingestiva.",
+      "causal_bridge_from_previous": "La señal intestinal que faltaba en la apertura llega después de que el alimento se traga.",
+      "question_state": "La boca y el intestino aportan información distinta; aún falta saber dónde se conectan.",
+      "reason_to_continue": "El siguiente paso es localizar el circuito que recibe la señal tardía.",
+      "new_information": "El contenido nutritivo se estima primero por el sabor y vuelve a medirse mediante señales del intestino."
+    },
+    {
+      "id": "scene_003",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "En ratones, el equipo siguió esa segunda señal hasta neuronas dopaminérgicas del área tegmental ventral. Eran necesarias para asociar el nutriente con el sabor.",
+      "on_screen_text": "Una vía dopaminérgica",
+      "visual_description": "Un cerebro de plastilina en corte esquemático; un pequeño grupo de neuronas en el área tegmental ventral se ilumina y proyecta una ruta hacia otra región.",
+      "image_prompt": "claymation stop-motion scene, plasticine characters and set with visible fingerprints, soft studio lighting, miniature handmade props, vertical 9:16, no text, a simple clay brain cross-section with a small highlighted ventral tegmental area and one visible pathway extending toward another brain region, educational miniature diorama, anatomically schematic not photorealistic.",
+      "ambiente": "Zumbido tonal bajo que gana claridad al iluminarse la vía.",
+      "sfx": [
+        "Chispa suave al aparecer la ruta neuronal"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "claymation",
+      "dramatic_beat": "Aparece el primer nodo necesario para unir las dos señales.",
+      "scene_function": "Identificar el circuito dopaminérgico que participa en el aprendizaje.",
+      "causal_bridge_from_previous": "Una vez que el intestino informa qué nutrientes llegaron, el estudio rastrea esa señal en el cerebro.",
+      "question_state": "La vía del área tegmental ventral es necesaria; falta localizar dónde llega la señal.",
+      "reason_to_continue": "La dopamina no se reparte de manera uniforme: el destino concreto es el giro.",
+      "new_information": "Las neuronas dopaminérgicas del área tegmental ventral son necesarias para asociar nutrientes y sabores en ratones."
+    },
+    {
+      "id": "scene_004",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "Silenciar neuronas de la región receptora de la amígdala impidió ese aprendizaje. La lengua había detectado el sabor, pero la lección no se completaba.",
+      "on_screen_text": "Sin esa región, no aprende",
+      "visual_description": "La ruta llega a una pequeña zona marcada visualmente dentro de la amígdala; al silenciarse, la conexión entre el alimento y su señal nutritiva queda interrumpida.",
+      "image_prompt": "claymation stop-motion scene, plasticine characters and set with visible fingerprints, soft studio lighting, miniature handmade props, vertical 9:16, no text, clay brain cutaway with a small anterior basolateral amygdala region receiving a signal; the region gently dims and the connecting path stops, one clear causal visual, no text.",
+      "ambiente": "El tono continuo se corta brevemente y deja un silencio perceptible.",
+      "sfx": [
+        "Corte seco y breve de la señal"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "claymation",
+      "dramatic_beat": "La región receptora deja de responder y la asociación falla.",
+      "scene_function": "Mostrar que la región cerebral receptora es necesaria para el aprendizaje.",
+      "causal_bridge_from_previous": "La vía dopaminérgica identificada necesita un destino funcional; al silenciar la región receptora, la asociación se interrumpe.",
+      "question_state": "Ya se sabe que el aprendizaje necesita esa región; falta precisar qué señal llega allí.",
+      "reason_to_continue": "La localización de la dopamina revela el mecanismo más específico.",
+      "new_information": "Silenciar neuronas de la región anterior de la amígdala basolateral impide el aprendizaje sabor-nutriente."
+    },
+    {
+      "id": "scene_005",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "La dopamina no apareció por todo el circuito clásico de recompensa: llegó selectivamente a una pequeña región de la amígdala basolateral anterior izquierda.",
+      "on_screen_text": "Amígdala anterior izquierda",
+      "visual_description": "La región anterior izquierda de la amígdala se ilumina dentro de un cerebro de plastilina; otras zonas permanecen apagadas para mostrar la selectividad.",
+      "image_prompt": "claymation stop-motion scene, plasticine characters and set with visible fingerprints, soft studio lighting, miniature handmade props, vertical 9:16, no text, close clay brain diorama with only a small left anterior basolateral amygdala area glowing softly while surrounding regions remain matte and unlit, clean scientific cutaway, no labels.",
+      "ambiente": "Pulso discreto y localizado, sin crescendo triunfal.",
+      "sfx": [
+        "Tono breve al iluminarse la región específica"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "claymation",
+      "capa": {
+        "tipo": "dato",
+        "valor": "Boca → intestino → área tegmental ventral → amígdala basolateral anterior izquierda",
+        "etiqueta": "Ruta funcional del aprendizaje sabor–nutriente",
+        "unidad": "Secuencia conceptual; no es una escala ni una medición cuantitativa",
+        "fuente": "SRC-001",
+        "nota": "El esquema resume las regiones y la dirección funcional descritas en el artículo; no representa intensidad, distancia ni número de neuronas."
+      },
+      "dramatic_beat": "La señal deja de ser una idea general de recompensa y adquiere un destino cerebral preciso.",
+      "scene_function": "Explicar el hallazgo más específico del estudio y mostrar la ruta.",
+      "causal_bridge_from_previous": "La región cuyo silenciamiento impidió el aprendizaje es también el lugar donde se detectó la señal dopaminérgica selectiva.",
+      "question_state": "La ruta ya tiene un destino definido; falta saber si activarla basta para impulsar el aprendizaje.",
+      "reason_to_continue": "La manipulación experimental permite probar la función de esa conexión.",
+      "new_information": "La liberación de dopamina se concentró en una pequeña región de la amígdala basolateral anterior izquierda."
+    },
+    {
+      "id": "scene_006",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "Al estimular esas terminales dopaminérgicas, los investigadores impulsaron el aprendizaje sabor-nutriente, sin cambiar otros aspectos de la conducta alimentaria.",
+      "on_screen_text": "La conexión impulsa el aprendizaje",
+      "visual_description": "La terminal dopaminérgica se activa y dos piezas de plastilina —sabor y nutriente— quedan conectadas por una unión visible, sin representar una recompensa humana.",
+      "image_prompt": "claymation stop-motion scene, plasticine characters and set with visible fingerprints, soft studio lighting, miniature handmade props, vertical 9:16, no text, miniature clay experiment visualization: a small neural terminal lights up and connects two separate clay tokens representing flavour and nutrient, precise cause-and-effect, no anthropomorphic characters, no text.",
+      "ambiente": "El pulso regresa, ahora estable y conectado.",
+      "sfx": [
+        "Clic suave cuando se une cada ficha"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "claymation",
+      "dramatic_beat": "La conexión no solo acompaña el aprendizaje: estimularla lo impulsa.",
+      "scene_function": "Presentar la prueba funcional de la vía dopaminérgica.",
+      "causal_bridge_from_previous": "Después de localizar la señal, los investigadores estimularon sus terminales para comprobar qué podía causar.",
+      "question_state": "La estimulación impulsa el aprendizaje específico; falta separar el resultado en ratones de la evidencia humana.",
+      "reason_to_continue": "La respuesta humana aporta una comparación, pero no demuestra por sí sola la misma conducta.",
+      "new_information": "La estimulación de terminales dopaminérgicas en la amígdala anterior impulsa el aprendizaje sabor-nutriente, no otros aspectos de la alimentación."
+    },
+    {
+      "id": "scene_007",
+      "arc": "cierre_historia",
+      "duration_seconds": 9,
+      "narration": "En humanos, esa misma región también respondió preferentemente a los nutrientes ingeridos. Es una pista compartida, no una prueba de preferencias concretas.",
+      "on_screen_text": "Coincidencia no es causalidad",
+      "visual_description": "Dos siluetas esquemáticas de cerebro, una de ratón y otra humana, muestran la misma región resaltada; aparece una línea de comparación sin signo de igualdad total.",
+      "image_prompt": "claymation stop-motion scene, plasticine characters and set with visible fingerprints, soft studio lighting, miniature handmade props, vertical 9:16, no text, two simple clay brain silhouettes side by side, mouse and human represented schematically, the same small anterior region softly highlighted in both, comparison without implying identical behaviour, no text.",
+      "ambiente": "Ambiente sereno; baja la intensidad para dejar espacio al límite de evidencia.",
+      "sfx": [
+        "Campana tenue de comparación"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "claymation",
+      "dramatic_beat": "La evidencia se amplía a humanos, pero el límite impide convertir activación cerebral en una preferencia demostrada.",
+      "scene_function": "Separar el resultado causal en ratones de la observación de activación en humanos.",
+      "causal_bridge_from_previous": "Tras probar la conexión en ratones, el artículo compara la respuesta de la misma región en humanos.",
+      "question_state": "El circuito tiene apoyo en ambos grupos, pero no se ha demostrado una preferencia concreta por un alimento.",
+      "reason_to_continue": "El cierre debe devolver la historia a la primera señal: qué aprende el cerebro del sabor.",
+      "new_information": "La región también se activa preferentemente ante nutrientes en humanos, sin demostrar por sí sola una preferencia conductual específica."
+    },
+    {
+      "id": "scene_008",
+      "arc": "reflexion_o_pregunta",
+      "duration_seconds": 10,
+      "narration": "El giro es que el gusto no termina en la lengua: el intestino completa la señal y el cerebro aprende lo que ese sabor anuncia. Esto fue Datos y ociosidades.",
+      "on_screen_text": "El sabor también anuncia",
+      "visual_description": "La ruta completa vuelve a aparecer como un diorama continuo desde boca hasta intestino y cerebro; las dos señales convergen y la imagen cierra sobre la conexión.",
+      "image_prompt": "claymation stop-motion scene, plasticine characters and set with visible fingerprints, soft studio lighting, miniature handmade props, vertical 9:16, no text, complete miniature clay pathway from mouth to intestine to brain, two signal paths converging in one highlighted region, coherent final composition that visually pays the opening, no text.",
+      "ambiente": "Cama suave que resuelve en una nota cálida, sin golpe publicitario.",
+      "sfx": [
+        "Resolución musical breve al converger las señales"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "claymation",
+      "dramatic_beat": "La señal que faltaba completa la apertura y resuelve la pregunta.",
+      "scene_function": "Pagar la promesa y cerrar con el mecanismo, sin abrir otro tema.",
+      "causal_bridge_from_previous": "La comparación humana no prueba una preferencia concreta, pero confirma que la región responde a nutrientes; el cierre vuelve al mecanismo de aprendizaje.",
+      "question_state": "La pregunta queda respondida: el cerebro integra sabor y consecuencias nutritivas posteriores.",
+      "reason_to_continue": "La narración termina; no se introduce un tema nuevo.",
+      "new_information": "El sabor funciona como una predicción que el intestino ayuda a completar; cierre exacto de la serie."
+    }
+  ],
+  "cortinilla_fuentes": {
+    "duration_seconds": 6,
+    "titulo": "Fuentes",
+    "aviso": "Cortinilla textual prevista para producción; no se ha generado ningún medio.",
+    "firma": "Datos y ociosidades",
+    "source_ids": [
+      "SRC-001",
+      "SRC-002",
+      "SRC-003",
+      "SRC-004"
+    ]
+  },
+  "audio": {
+    "music_asset": null,
+    "music_plan": "Cama sintética de pulso neural suave, muy por debajo de la voz; selección, originalidad y licencia se validan en producción. No hay audio generado.",
+    "music_license": null,
+    "cama_musical": "circuito_neural"
+  },
+  "export": {
+    "resolution": "1080x1920",
+    "fps": 30,
+    "render_status": "NOT_GENERATED"
+  },
+  "publicacion": {
+    "status": "PENDIENTE_DECISION_GROK",
+    "platforms": [
+      "YouTube Shorts",
+      "TikTok",
+      "Facebook Reels"
+    ],
+    "note": "No publicar ni programar desde preproducción textual."
+  },
+  "estado": "BORRADOR_INVESTIGADOR_PENDIENTE_QA_NARRATIVO_INDEPENDIENTE",
+  "production_mode": "storyboard_only",
+  "validation_notes": [
+    "Borrador en proyectos; el auditor independiente debe realizar lectura en frío de la narración concatenada.",
+    "No se escribió narrative_qa ni se hizo autoevaluación.",
+    "Ventana 13:30-15:00 en prueba; este storyboard no equivale a programación ni publicación."
+  ],
+  "linea_tematica_provisional": "Dato científico; comida como contexto cotidiano, sin abrir una línea médica nueva.",
+  "approved_assets": [],
+  "risk_notes": [
+    "No afirmar que el estudio probó el gusto por el café: no es un experimento específico sobre café.",
+    "No convertir la activación de una región en humanos en prueba de preferencia conductual.",
+    "La evidencia causal principal es en ratones; conservar esa distinción en toda edición.",
+    "El pin del mapa representa la afiliación institucional UCSF Mission Bay, no el lugar exacto de experimentación.",
+    "DOI PENDIENTE_RESOLVEDOR; mantener la fuente primaria y el registro PubMed hasta que la verificación externa pueda completarse."
+  ]
+}
