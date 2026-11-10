@@ -1,62 +1,70 @@
 {
   "project_id": "2026-11-03_enzimas-incrustadas-oceano",
   "fecha": "2026-11-03",
-  "tema": "Enzimas incrustadas en poliésteres que se degradan solas en el océano profundo",
+  "tema": "Enzimas incrustadas en poli\u00e9steres que se degradan solas en el oc\u00e9ano profundo",
   "estructura": "mito_vs_dato",
-  "estilo": "claymation_stop_motion",
+  "estilo_id": "pixel_art",
+  "estilo_visual": "Pixel art",
+  "estilo": "pixel_art",
   "cama": "arpegio",
   "duracion_objetivo": 82,
   "voz": "edge-tts es-MX-JorgeNeural rate +7% pitch -2Hz",
   "hook_type": "afirmacion_negativa",
-  "open_loop": "No es la bacteria japonesa. Las enzimas van dentro del plástico.",
+  "open_loop": "No es la bacteria japonesa. Las enzimas van dentro del pl\u00e1stico.",
   "fuentes": ["DOI 10.1038/s41586-026-11192-1", "Nature 21-oct-2026"],
   "escenas": [
     {
       "id": "scene_001",
       "duracion_s": 6,
-      "narracion": "El plástico que tiramos se rompe solo en el fondo del mar. No es la bacteria japonesa.",
+      "narracion": "El pl\u00e1stico que tiramos se rompe solo en el fondo del mar. No es la bacteria japonesa.",
       "on_screen_text": "No es Ideonella",
-      "visual": "Claymation: botella de plastilina cayendo al fondo marino oscuro, con partículas doradas (enzimas) incrustadas que brillan.",
+      "visual": "pixel art: botella cayendo al fondo marino oscuro, con part\u00edculas doradas (enzimas) incrustadas que brillan.",
+      "image_prompt": "16-bit pixel art scene, limited retro palette, crisp pixels, side view video game style, dithering, vertical 9:16, no text + bottle falling into dark ocean floor with glowing golden enzyme particles inside",
       "source_ids": ["DOI 10.1038/s41586-026-11192-1"]
     },
     {
       "id": "scene_002",
       "duracion_s": 10,
-      "narracion": "Investigadores japoneses incrustaron enzimas dentro de poliésteres compostables. Las enzimas cortan los enlaces éster cuando el plástico llega al agua.",
+      "narracion": "Investigadores japoneses incrustaron enzimas dentro de poli\u00e9steres compostables. Las enzimas cortan los enlaces \u00e9ster cuando el pl\u00e1stico llega al agua.",
       "on_screen_text": "Enzimas dentro",
-      "visual": "Stop-motion: cadena de plastilina azul siendo cortada por tijeras de plastilina amarillas (enzimas) en el fondo marino.",
+      "visual": "pixel art: cadena azul siendo cortada por tijeras amarillas (enzimas) en el fondo marino.",
+      "image_prompt": "16-bit pixel art scene, limited retro palette, crisp pixels, side view video game style, dithering, vertical 9:16, no text + blue plastic chain being cut by yellow enzyme scissors on ocean floor",
       "source_ids": ["DOI 10.1038/s41586-026-11192-1"]
     },
     {
       "id": "scene_003",
       "duracion_s": 12,
-      "narracion": "A 757 metros de profundidad, películas con 3 por ciento de cutinasa perdieron casi toda su masa en cinco meses. Los controles sin enzima casi no se movieron.",
-      "on_screen_text": "757 m · 5 meses",
-      "visual": "Claymation: red de malla con muestras en el fondo, una se deshace en polvo de plastilina mientras la otra permanece intacta. Termómetro y profundidad en cartón.",
+      "narracion": "A 757 metros de profundidad, pel\u00edculas con 3 por ciento de cutinasa perdieron casi toda su masa en cinco meses. Los controles sin enzima casi no se movieron.",
+      "on_screen_text": "757 m \u00b7 5 meses",
+      "visual": "pixel art: red de malla con muestras en el fondo, una se deshace en polvo mientras la otra permanece intacta. Term\u00f3metro y profundidad sin texto.",
+      "image_prompt": "16-bit pixel art scene, limited retro palette, crisp pixels, side view video game style, dithering, vertical 9:16, no text + mesh net with samples on ocean floor, one dissolving into powder while other stays intact, thermometer and depth indicator without text",
       "source_ids": ["DOI 10.1038/s41586-026-11192-1"]
     },
     {
       "id": "scene_004",
       "duracion_s": 10,
-      "narracion": "Incluso a 5 503 metros las enzimas siguieron trabajando. El plástico normal no. La diferencia es que la enzima ya va adentro.",
+      "narracion": "Incluso a 5 503 metros las enzimas siguieron trabajando. El pl\u00e1stico normal no. La diferencia es que la enzima ya va adentro.",
       "on_screen_text": "5 503 m",
-      "visual": "Fondo marino profundo claymation: submarino de plastilina, muestras brillando y desintegrándose lentamente. Oscuridad con puntos de luz.",
+      "visual": "pixel art: fondo marino profundo, submarino, muestras brillando y desintegr\u00e1ndose lentamente. Oscuridad con puntos de luz.",
+      "image_prompt": "16-bit pixel art scene, limited retro palette, crisp pixels, side view video game style, dithering, vertical 9:16, no text + deep ocean floor with submarine, glowing samples slowly disintegrating, darkness with light points",
       "source_ids": ["DOI 10.1038/s41586-026-11192-1"]
     },
     {
       "id": "scene_005",
       "duracion_s": 10,
-      "narracion": "No es magia. Es diseño. Las enzimas se activan cuando el material se desgasta y entra en contacto con agua. Mientras se usa, se mantiene intacto.",
+      "narracion": "No es magia. Es dise\u00f1o. Las enzimas se activan cuando el material se desgasta y entra en contacto con agua. Mientras se usa, se mantiene intacto.",
       "on_screen_text": "Se activa al desgastarse",
-      "visual": "Close-up claymation: pieza de plastilina con bolitas amarillas adentro, se raya y las bolitas empiezan a moverse.",
+      "visual": "pixel art close-up: pieza con bolitas amarillas adentro, se raya y las bolitas empiezan a moverse.",
+      "image_prompt": "16-bit pixel art scene, limited retro palette, crisp pixels, side view video game style, dithering, vertical 9:16, no text + close-up of plastic piece with yellow enzyme balls inside, surface scratched and balls start moving",
       "source_ids": ["DOI 10.1038/s41586-026-11192-1"]
     },
     {
       "id": "scene_006",
       "duracion_s": 8,
-      "narracion": "¿Cuánto plástico podemos evitar tirar mientras estas enzimas trabajan? Esto fue Datos y ociosidades.",
+      "narracion": "\u00bfCu\u00e1nto pl\u00e1stico podemos evitar tirar mientras estas enzimas trabajan? Esto fue Datos y ociosidades.",
       "on_screen_text": "Datos y ociosidades",
-      "visual": "Playa de plastilina al atardecer, menos basura, sol de plastilina naranja. Firma en cartón.",
+      "visual": "pixel art: playa al atardecer, menos basura, sol naranja. Sin firma de texto.",
+      "image_prompt": "16-bit pixel art scene, limited retro palette, crisp pixels, side view video game style, dithering, vertical 9:16, no text + sunset beach with less plastic trash, orange sun, no text",
       "source_ids": []
     },
     {
@@ -64,7 +72,8 @@
       "duracion_s": 6,
       "narracion": "",
       "on_screen_text": "Nature 2026 \u00b7 DOI 10.1038/s41586-026-11192-1",
-      "visual": "Cortinilla de fuentes sobre fondo marino claymation.",
+      "visual": "pixel art cortinilla de fuentes sobre fondo marino.",
+      "image_prompt": "16-bit pixel art scene, limited retro palette, crisp pixels, side view video game style, dithering, vertical 9:16, no text + sources curtain on ocean background",
       "source_ids": ["DOI 10.1038/s41586-026-11192-1"]
     }
   ]
