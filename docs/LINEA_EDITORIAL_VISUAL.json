@@ -1,8 +1,8 @@
 {
   "formato": 1,
   "nombre": "Línea editorial visual — Datos y ociosidades (CAPCOT)",
-  "version": "1.0.0",
-  "fecha": "2026-11-08",
+  "version": "1.2.1",
+  "fecha": "2026-11-10",
   "fuentes": [
     "docs/BIBLIA_LINEA_EDITORIAL.md",
     "docs/ESTILOS_VISUALES.md",
@@ -32,7 +32,7 @@
     "voz_oficial": "es-MX-JorgeNeural",
     "voz_rate": "+7%",
     "voz_pitch": "-2Hz",
-    "voz_fallback": "es_MX-ald-medium (Piper, offline)",
+    "voz_fallback": "Kokoro em_santa speed 0.85 (local, relevo; Piper PROHIBIDA)",
     "cierre_hablado": "Esto fue Datos y ociosidades.",
     "cortinilla_fuentes": {
       "titulo": "Fuentes",
@@ -48,7 +48,7 @@
     "Rigor con fuentes: cada afirmación es DATO (sale de la fuente con URL) o INFERENCIA (criterio de diseño). No se inventan datos, fuentes ni DOIs.",
     "Máximo 2-3 cápsulas al día.",
     "La narración es exactamente el texto de 'narration' de cada escena del storyboard.json; no se reescribe ni se improvisa.",
-    "La voz es la oficial (es-MX-JorgeNeural) o el fallback Piper (es_MX-ald-medium). No se usa otra voz.",
+    "La voz es la oficial (es-MX-JorgeNeural) o el fallback Kokoro em_santa speed 0.85 (relevo). Piper está prohibida (puerta dura de QA). No se usa otra voz.",
     "La duración es 60-95 s (objetivo 75-90). No se cambia el rango.",
     "La plantilla visual sale del catálogo (prompt_base). No se inventa un estilo nuevo fuera del catálogo.",
     "La capa de tratamiento Nostalgia 85-95 se aplica en el montaje (rótulos, transiciones, apertura y cierre), nunca cambia el prompt_base.",
@@ -641,12 +641,12 @@
         "hace": "Genera las imágenes de cada escena con el prompt_base del estilo elegido.",
         "entrada": "storyboard.json (image_prompt por escena).",
         "salida": "frames/scene_001.jpg ... scene_006.jpg",
-        "estado": "explainroo es el candidato; NO instalado ni probado. Falta la prueba con Barreleye."
+        "estado": "explainroo probado 2026-11-09 con Barreleye: da diagrama vectorial, no lápiz; no adoptado como frames. Candidato actual: Nano Banana por la app de Gemini (probado 2026-11-10, estilo lápiz cercano a linea_fina)."
       },
       {
         "id": "capcot-narracion",
         "archivo": "~/workspace/custom-skills/capcot-narracion/SKILL.md",
-        "hace": "Narra el guion en es-MX, gratis y local (Piper es_MX-ald-medium; JorgeNeural donde edge-tts responde).",
+        "hace": "Narra el guion en es-MX, gratis y local (Kokoro em_santa speed 0.85 en relevo; JorgeNeural oficial donde edge-tts responde). Piper PROHIBIDA.",
         "entrada": "Narración de cada escena del storyboard.json.",
         "salida": "audio/narracion.mp3 (volumen a -6 dB)."
       },
