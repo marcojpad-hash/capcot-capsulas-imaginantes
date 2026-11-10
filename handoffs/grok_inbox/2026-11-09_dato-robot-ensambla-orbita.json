@@ -1,11 +1,11 @@
 {
   "event": "capcot.package.ready",
   "status": "pending",
-  "receipt_id": "repo-2026-11-09_dato-robot-ensambla-orbita-04e487c1b069",
+  "receipt_id": "repo-2026-11-09_dato-robot-ensambla-orbita-7ea62b5e0081",
   "created_at": "2026-11-09T18:39:54-06:00",
   "project_id": "2026-11-09_dato-robot-ensambla-orbita",
   "branch": "main",
-  "commit_sha": "04e487c1b0697e42da4f2fb01daca983bf5af0a9",
+  "commit_sha": "7ea62b5e008108341fc956bd2618e31bb7c77ed0",
   "package_path": "cola/entrada/2026-11-09_dato-robot-ensambla-orbita/",
   "package_url": "https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/tree/main/cola/entrada/2026-11-09_dato-robot-ensambla-orbita",
   "note": "Frames: Grok.com vía PARA_GROK.md. Montaje: Imaginantes ffmpeg. Slot 23:30 CDMX 9-nov."
