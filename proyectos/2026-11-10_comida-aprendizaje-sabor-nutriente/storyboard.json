@@ -387,5 +387,22 @@
     "La evidencia causal principal es en ratones; conservar esa distinción en toda edición.",
     "El pin del mapa representa la afiliación institucional UCSF Mission Bay, no el lugar exacto de experimentación.",
     "DOI PENDIENTE_RESOLVEDOR; mantener la fuente primaria y el registro PubMed hasta que la verificación externa pueda completarse."
-  ]
+  ],
+  "narrative_qa": {
+    "status": "PASS",
+    "score": 92,
+    "review_basis": "lectura_en_frio_solo_narracion",
+    "reviewer_role": "auditor_capcot_independiente",
+    "reviewed_at": "2026-11-10T15:47:50-06:00",
+    "checks": {
+      "pregunta_central_reconstruible": true,
+      "apertura_in_medias_res": true,
+      "progresion_por_escena": true,
+      "transiciones_causales": true,
+      "giro_cientifico_explicado": true,
+      "limite_evidencia_explicito": true,
+      "payoff_cierre_apertura": true
+    },
+    "critical_flags": []
+  }
 }
