@@ -4,7 +4,7 @@
 - **Serie:** Datos y ociosidades
 - **Fecha objetivo:** 2026-11-10
 - **Slot:** 23:30 America/Mexico_City
-- **Estado:** `BORRADOR_EN_PROYECTOS_PENDIENTE_QA_INDEPENDIENTE`
+- **Estado:** `QA_NARRATIVO_PASS_PENDIENTE_VALIDACION_ESTRUCTURAL_EJECUTADA`
 - **Preproducción textual:** storyboard, fuentes y estado guardados.
 - **Narrative QA:** PASS 91/100; siete checks true, critical_flags=[]; lectura en frío registrada por auditor CAPCOT independiente el 10-nov-2026.
 - **Estructura:** 8 escenas; 195 palabras; 78 s de escenas + 6 s de cortinilla = 84 s.
