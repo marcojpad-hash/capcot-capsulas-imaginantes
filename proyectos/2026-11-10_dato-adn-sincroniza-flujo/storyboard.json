@@ -1,0 +1,352 @@
+{
+  "_schema": "CAPCOT_STORYBOARD_TEXT_V2",
+  "project_id": "2026-11-10_dato-adn-sincroniza-flujo",
+  "fecha_objetivo": "2026-11-10",
+  "slot_local": "23:30",
+  "slot_window_status": "DATO_DEL_DIA_PERMANENTE; preparado el mismo día; no programado",
+  "serie": "Datos y ociosidades",
+  "title": "El ADN que sincroniza un fluido",
+  "titulo": "El ADN sincroniza el caos",
+  "language": "es-MX",
+  "aspect_ratio": "9:16",
+  "target_duration_seconds": 84,
+  "estructura": "sabias_que",
+  "audience": "Público general interesado en ciencia, materiales y fenómenos sorprendentes.",
+  "occasion": "Dato del día 23:30 CDMX; artículo primario publicado el 9-nov-2026.",
+  "resumen": "Un sistema artificial de microtúbulos, motores kinesina y ADN pasa de flujo turbulento a oscilaciones coordinadas porque el ADN forma una red viscoelástica que retroalimenta mecánicamente el movimiento.",
+  "narrative_contract": {
+    "central_question": "¿Cómo puede un fluido desordenado empezar a oscilar de forma coordinada?",
+    "promise": "Entender cómo una red de ADN creada dentro de un fluido activo transforma el movimiento colectivo.",
+    "stakes": "La coordinación a gran escala necesita transmitir fuerzas; aquí la estructura que lo permite emerge durante el experimento.",
+    "scientific_turn": "Los motores kinesina generan flujos que estiran y enredan el ADN; la red viscoelástica resultante retroalimenta el flujo y permite oscilaciones sincronizadas de escala milimétrica.",
+    "evidence_limit": "Es un material compuesto construido en laboratorio, no una célula ni un proceso biológico observado in vivo. El período y la longitud de correlación corresponden a las condiciones y geometría experimentales.",
+    "payoff": "El caos inicial se convierte en un material que construye su propia red mecánica y coordina el movimiento del conjunto."
+  },
+  "trend_source": {
+    "termino": "Active-flow-driven DNA remodelling generates millimetre-scale mechanical oscillations",
+    "fecha_publicacion": "2026-11-09",
+    "url": "https://www.nature.com/articles/s41567-026-03505-y"
+  },
+  "editorial_status": "BORRADOR_EN_PROYECTOS_PENDIENTE_QA_INDEPENDIENTE",
+  "arco": {
+    "hook_medias_res": "Un flujo parece caótico mientras el ADN comienza a formar una red.",
+    "desarrollo": "Motores kinesina mueven microtúbulos; el flujo estira y enreda ADN, creando una red que retroalimenta la dinámica.",
+    "cierre_historia": "La transición produce oscilaciones sincronizadas medibles bajo condiciones experimentales concretas.",
+    "reflexion_o_pregunta": "Una mezcla activa puede construir la estructura que necesita para coordinarse."
+  },
+  "estilo_id": "cubismo_collage",
+  "estilo_visual": "Cubismo con collage de periódico",
+  "visual_identity": {
+    "style_id": "cubismo_collage",
+    "style_name": "Cubismo con collage de periódico",
+    "prompt_base": "analytical cubism painting with newspaper collage fragments, fragmented geometric planes, ochre, slate blue and brown palette, textured oil paint, vertical 9:16, no text",
+    "palette": "Ocre, azul pizarra, marrón y papel periódico; acentos cian discretos para el ADN.",
+    "lighting": "Luz lateral de estudio con sombras entre planos geométricos.",
+    "texture": "Papel impreso, óleo texturizado y recortes superpuestos.",
+    "composition": "Un mecanismo central por escena; continuidad de escala y paleta; vertical 9:16.",
+    "negative_prompt": "No representar una célula, organismo vivo, ADN autónomo, moléculas con rostro, texto generado, micrografías falsas ni resultados universales.",
+    "reference_assets": [],
+    "seed": null,
+    "seed_policy": "Continuidad geométrica y de paleta; variar encuadres para mostrar causa, retroalimentación y transición."
+  },
+  "typography_identity": {
+    "font_family": "DejaVu Sans",
+    "font_weight": "700 para gancho; 400 para subtítulos",
+    "title_style": "Máximo seis palabras; presente desde frame 0 en postproducción",
+    "subtitle_style": "Bloques de máximo tres palabras; zona segura inferior",
+    "hierarchy": "Gancho > dato/etiqueta > subtítulos",
+    "animation": "Un movimiento por plano; tipografía en postproducción"
+  },
+  "voice": {
+    "engine": "edge-tts",
+    "voice_id": "es-MX-JorgeNeural",
+    "language": "es-MX",
+    "rate": "+7%",
+    "pitch": "-2Hz",
+    "pad_seconds": 0.3,
+    "modo_pausas": "continuo"
+  },
+  "sources": [
+    {
+      "id": "SRC-001",
+      "cita_corta": "Levanon et al. Active-flow-driven DNA remodelling generates millimetre-scale mechanical oscillations. Nature Physics (2026).",
+      "url": "https://www.nature.com/articles/s41567-026-03505-y",
+      "doi": "10.1038/s41567-026-03505-y",
+      "accessed": "2026-11-10",
+      "publication_date": "2026-11-09",
+      "supports": [
+        "Sistema compuesto de microtúbulos, motores kinesina y polímeros de ADN.",
+        "Los flujos activos estiran y enredan el ADN y forman una red viscoelástica autoorganizada.",
+        "La retroalimentación mecánica produce transición de turbulencia a oscilaciones sincronizadas.",
+        "Período característico T=25±9 min y longitud de correlación máxima aproximada ξv=1.5 mm en el canal estudiado.",
+        "El mecanismo emerge sin señalización química en el sistema experimental descrito."
+      ],
+      "verification_status": "VERIFICADO_FUENTE_PRIMARIA_URL; DOI visible por el editor, PENDIENTE_RESOLVEDOR",
+      "verification_note": "Artículo abierto consultado el 10-nov-2026; fecha de publicación 9-nov-2026. No se completó resolución independiente Crossref/doi.org en esta ejecución."
+    },
+    {
+      "id": "SRC-002",
+      "cita_corta": "Tel Aviv University — seminario de Alexandra Tayar, 18 nov 2026.",
+      "url": "https://en.cs.tau.ac.il/events_physics_biosoft_seminar_18_11_2026?gid=27&instance=1794992400",
+      "doi": null,
+      "accessed": "2026-11-10",
+      "publication_date": null,
+      "supports": [
+        "Identifica a Alexandra Tayar como investigadora del Department of Chemical and Biological Physics, Weizmann Institute of Science; se usa solo para afiliación institucional."
+      ],
+      "verification_status": "VERIFICADO_PAGINA_INSTITUCIONAL",
+      "verification_note": "No respalda claims experimentales ni demuestra que el experimento se realizara en el campus."
+    },
+    {
+      "id": "SRC-003",
+      "cita_corta": "Weizmann Institute of Science — Geographical Location.",
+      "url": "https://wis-wander.weizmann.ac.il/about/geographical-location",
+      "doi": null,
+      "accessed": "2026-11-10",
+      "publication_date": null,
+      "supports": [
+        "Coordenadas institucionales del campus en Rehovot: 31.89277 N, 34.81127 E; usadas solo para pin de afiliación."
+      ],
+      "verification_status": "VERIFICADO_PAGINA_INSTITUCIONAL",
+      "verification_note": "Fuente oficial del instituto; no es el sitio experimental."
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_001",
+      "arc": "hook_medias_res",
+      "duration_seconds": 10,
+      "narration": "El líquido parece caótico: filamentos giran y cambian de dirección. Pero el ADN empieza a tejer una red que acabará coordinando el movimiento.",
+      "on_screen_text": "El flujo pierde el caos",
+      "visual_description": "Corrientes irregulares de un fluido abstracto; filamentos de ADN empiezan a conectar zonas distantes. Reconstrucción conceptual, no micrografía.",
+      "image_prompt": "analytical cubism painting with newspaper collage fragments, fragmented geometric planes, ochre, slate blue and brown palette, textured oil paint, vertical 9:16, no text, conceptual editorial reconstruction, corrientes irregulares de un fluido abstracto; filamentos de adn empiezan a conectar zonas distantes. reconstrucción conceptual, no micrografía., coherent cut-paper geometry, no labels, no typography, no photorealistic microscopy",
+      "ambiente": "Pulso mecánico tenue y textura de laboratorio; sin dramatización de ciencia ficción.",
+      "sfx": [
+        "Zumbido irregular que se estabiliza"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "cubismo_collage",
+      "dramatic_beat": "El fluido ya está cambiando: el movimiento deja de ser puramente local.",
+      "scene_function": "Abrir con la anomalía en curso y fijar la pregunta visual.",
+      "causal_bridge_from_previous": "Apertura en medio del cambio; el espectador ve caos y una red emergente.",
+      "question_state": "Se observa coordinación naciente, pero no se conocen los componentes.",
+      "reason_to_continue": "Identificar qué material está formando la red.",
+      "new_information": "El ADN comienza a organizar una red mientras el fluido se mueve."
+    },
+    {
+      "id": "scene_002",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "No es una célula: es un material de laboratorio con microtúbulos, motores kinesina y largas cadenas de ADN dentro de un fluido activo.",
+      "on_screen_text": "No es una célula",
+      "visual_description": "Composición cubista de microtúbulos, motores kinesina y largas cadenas de ADN como piezas diferenciadas dentro de un canal de laboratorio abstracto.",
+      "image_prompt": "analytical cubism painting with newspaper collage fragments, fragmented geometric planes, ochre, slate blue and brown palette, textured oil paint, vertical 9:16, no text, conceptual editorial reconstruction, composición cubista de microtúbulos, motores kinesina y largas cadenas de adn como piezas diferenciadas dentro de un canal de laboratorio abstracto., coherent cut-paper geometry, no labels, no typography, no photorealistic microscopy",
+      "ambiente": "Pulso mecánico tenue y textura de laboratorio; sin dramatización de ciencia ficción.",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "cubismo_collage",
+      "dramatic_beat": "Se revela que el fenómeno ocurre en un material diseñado.",
+      "scene_function": "Delimitar el sistema experimental para evitar una lectura biológica errónea.",
+      "causal_bridge_from_previous": "La red observada tiene que explicarse por los componentes reales del montaje.",
+      "question_state": "Ya se conocen los componentes; falta su interacción.",
+      "reason_to_continue": "Mostrar qué pone el fluido en movimiento.",
+      "new_information": "El sistema combina microtúbulos, kinesinas y ADN."
+    },
+    {
+      "id": "scene_003",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "Las kinesinas deslizan los microtúbulos y generan corrientes. Estas estiran y enredan el ADN hasta formar una malla viscoelástica capaz de transmitir fuerzas.",
+      "on_screen_text": "Los motores crean corrientes",
+      "visual_description": "Kinesinas deslizando haces de microtúbulos; las cadenas de ADN se estiran y se enredan entre los flujos.",
+      "image_prompt": "analytical cubism painting with newspaper collage fragments, fragmented geometric planes, ochre, slate blue and brown palette, textured oil paint, vertical 9:16, no text, conceptual editorial reconstruction, kinesinas deslizando haces de microtúbulos; las cadenas de adn se estiran y se enredan entre los flujos., coherent cut-paper geometry, no labels, no typography, no photorealistic microscopy",
+      "ambiente": "Pulso mecánico tenue y textura de laboratorio; sin dramatización de ciencia ficción.",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "cubismo_collage",
+      "dramatic_beat": "Los motores convierten energía química en movimiento de filamentos.",
+      "scene_function": "Explicar el primer eslabón causal del mecanismo.",
+      "causal_bridge_from_previous": "Los componentes identificados producen corrientes que deforman el ADN.",
+      "question_state": "El ADN responde al flujo; todavía no se explica la sincronía.",
+      "reason_to_continue": "La red formada empieza a devolver fuerzas al fluido.",
+      "new_information": "Las corrientes estiran y enredan el ADN.",
+      "capa": {
+        "tipo": "mapa",
+        "region": [
+          31.8,
+          34.7,
+          32,
+          34.9
+        ],
+        "puntos": [
+          {
+            "nombre": "Weizmann Institute of Science, Rehovot",
+            "lat": 31.89277,
+            "lon": 34.81127,
+            "etiqueta": "Afiliación institucional de Alexandra Tayar"
+          }
+        ],
+        "titulo": "Institución de afiliación, no lugar exacto del experimento",
+        "fuente": "Weizmann Institute, https://wis-wander.weizmann.ac.il/about/geographical-location. El pin representa el campus institucional; no localiza el experimento."
+      }
+    },
+    {
+      "id": "scene_004",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "Al crecer, la malla resiste los empujes y devuelve fuerza al líquido. Esa retroalimentación mecánica transforma un flujo turbulento en movimiento coordinado.",
+      "on_screen_text": "La red devuelve fuerza",
+      "visual_description": "Una malla viscoelástica conecta zonas del canal; flechas de esfuerzo recorren la red y regresan a las corrientes.",
+      "image_prompt": "analytical cubism painting with newspaper collage fragments, fragmented geometric planes, ochre, slate blue and brown palette, textured oil paint, vertical 9:16, no text, conceptual editorial reconstruction, una malla viscoelástica conecta zonas del canal; flechas de esfuerzo recorren la red y regresan a las corrientes., coherent cut-paper geometry, no labels, no typography, no photorealistic microscopy",
+      "ambiente": "Pulso mecánico tenue y textura de laboratorio; sin dramatización de ciencia ficción.",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "cubismo_collage",
+      "dramatic_beat": "La estructura emergente modifica el movimiento que la produjo.",
+      "scene_function": "Hacer visible la retroalimentación mecánica.",
+      "causal_bridge_from_previous": "El ADN enredado ya no es solo carga: forma una red que transmite esfuerzos.",
+      "question_state": "Se entiende el bucle mecánico; falta ver su consecuencia colectiva.",
+      "reason_to_continue": "Mostrar el cambio de turbulencia a oscilación.",
+      "new_information": "La red viscoelástica retroalimenta el flujo."
+    },
+    {
+      "id": "scene_005",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "Regiones que se movían sin coordinación empiezan a oscilar juntas. El ritmo no depende de señales químicas: emerge de la interacción entre el flujo y la red.",
+      "on_screen_text": "Del caos a la sincronía",
+      "visual_description": "Transición integrada de remolinos desordenados a oscilaciones coordinadas en el canal; mismo encuadre y escala.",
+      "image_prompt": "analytical cubism painting with newspaper collage fragments, fragmented geometric planes, ochre, slate blue and brown palette, textured oil paint, vertical 9:16, no text, conceptual editorial reconstruction, transición integrada de remolinos desordenados a oscilaciones coordinadas en el canal; mismo encuadre y escala., coherent cut-paper geometry, no labels, no typography, no photorealistic microscopy",
+      "ambiente": "Pulso mecánico tenue y textura de laboratorio; sin dramatización de ciencia ficción.",
+      "sfx": [
+        "Pulso rítmico suave"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "cubismo_collage",
+      "dramatic_beat": "El sistema cambia de régimen dinámico.",
+      "scene_function": "Presentar el giro científico central.",
+      "causal_bridge_from_previous": "La retroalimentación entre flujo y red coordina regiones distantes.",
+      "question_state": "La sincronía aparece; falta dimensionar lo observado.",
+      "reason_to_continue": "Cuantificar el período y la escala del movimiento.",
+      "new_information": "El flujo pasa de turbulencia a oscilaciones sincronizadas."
+    },
+    {
+      "id": "scene_006",
+      "arc": "cierre_historia",
+      "duration_seconds": 10,
+      "narration": "En el canal experimental, el período fue de 25 ± 9 minutos. La longitud de correlación del movimiento alcanzó aproximadamente 1.5 milímetros.",
+      "on_screen_text": "Un ritmo medido",
+      "visual_description": "Curva temporal oscilante junto a una regla milimétrica y esquema del canal; cifras añadidas en postproducción.",
+      "image_prompt": "analytical cubism painting with newspaper collage fragments, fragmented geometric planes, ochre, slate blue and brown palette, textured oil paint, vertical 9:16, no text, conceptual editorial reconstruction, curva temporal oscilante junto a una regla milimétrica y esquema del canal; cifras añadidas en postproducción., coherent cut-paper geometry, no labels, no typography, no photorealistic microscopy",
+      "ambiente": "Pulso mecánico tenue y textura de laboratorio; sin dramatización de ciencia ficción.",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "cubismo_collage",
+      "dramatic_beat": "La coordinación deja de ser una impresión visual y adquiere medidas.",
+      "scene_function": "Dar magnitud al hallazgo con las variables correctas.",
+      "causal_bridge_from_previous": "La transición observada se expresa como período y longitud de correlación.",
+      "question_state": "Se conocen dos medidas del montaje; no son constantes universales.",
+      "reason_to_continue": "Precisar las condiciones y límites del experimento.",
+      "new_information": "Período 25 ± 9 min y longitud de correlación aproximada 1.5 mm.",
+      "capa": {
+        "tipo": "dato",
+        "valor": "25 ± 9 min; ξv,max ≈ 1.5 mm",
+        "etiqueta": "Período característico y longitud de correlación del flujo en el sistema experimental",
+        "fuente": "Levanon et al., Nature Physics (2026), https://www.nature.com/articles/s41567-026-03505-y, Fig. 1f–g."
+      }
+    },
+    {
+      "id": "scene_007",
+      "arc": "cierre_historia",
+      "duration_seconds": 9,
+      "narration": "No es una constante universal: depende de la geometría, la actividad y la longitud del ADN. Ocurrió en un sistema artificial y bajo condiciones controladas.",
+      "on_screen_text": "Un sistema controlado",
+      "visual_description": "Canal de laboratorio estilizado con cadenas de ADN de distintas longitudes; límites geométricos visibles y sin apariencia de célula.",
+      "image_prompt": "analytical cubism painting with newspaper collage fragments, fragmented geometric planes, ochre, slate blue and brown palette, textured oil paint, vertical 9:16, no text, conceptual editorial reconstruction, canal de laboratorio estilizado con cadenas de adn de distintas longitudes; límites geométricos visibles y sin apariencia de célula., coherent cut-paper geometry, no labels, no typography, no photorealistic microscopy",
+      "ambiente": "Pulso mecánico tenue y textura de laboratorio; sin dramatización de ciencia ficción.",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "cubismo_collage",
+      "dramatic_beat": "Se separa el resultado medido de cualquier generalización.",
+      "scene_function": "Delimitar condiciones experimentales y evitar sobreafirmaciones.",
+      "causal_bridge_from_previous": "Las medidas solo tienen sentido junto a la geometría y actividad del sistema.",
+      "question_state": "El fenómeno queda acotado al material artificial estudiado.",
+      "reason_to_continue": "Devolver la historia a la idea de autoorganización.",
+      "new_information": "El resultado depende de la geometría, la actividad y la longitud del ADN."
+    },
+    {
+      "id": "scene_008",
+      "arc": "reflexion_o_pregunta",
+      "duration_seconds": 9,
+      "narration": "La sorpresa no es que el ADN baile: es que la materia activa construya su propia red y se coordine. ¿Qué otros materiales podrían hacerlo? Esto fue Datos y ociosidades.",
+      "on_screen_text": "La materia se organiza",
+      "visual_description": "La red y el fluido aparecen como una estructura coordinada; la composición se abre para el cierre tipográfico.",
+      "image_prompt": "analytical cubism painting with newspaper collage fragments, fragmented geometric planes, ochre, slate blue and brown palette, textured oil paint, vertical 9:16, no text, conceptual editorial reconstruction, la red y el fluido aparecen como una estructura coordinada; la composición se abre para el cierre tipográfico., coherent cut-paper geometry, no labels, no typography, no photorealistic microscopy",
+      "ambiente": "Pulso mecánico tenue y textura de laboratorio; sin dramatización de ciencia ficción.",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "cubismo_collage",
+      "dramatic_beat": "El caos inicial se resignifica como autoorganización mecánica.",
+      "scene_function": "Pagar la apertura y cerrar con una pregunta que nace del hallazgo.",
+      "causal_bridge_from_previous": "La estructura que surgió del movimiento es también la que coordina el conjunto.",
+      "question_state": "La pregunta queda respondida dentro de los límites del experimento.",
+      "reason_to_continue": "Cierre.",
+      "new_information": "Una mezcla activa puede construir su propia red mecánica y coordinarse."
+    }
+  ],
+  "cortinilla_fuentes": {
+    "duration_seconds": 6,
+    "titulo": "Fuentes",
+    "aviso": "Mostrar únicamente la fuente primaria y la referencia institucional de afiliación/mapa.",
+    "firma": "Datos y ociosidades",
+    "source_ids": [
+      "SRC-001",
+      "SRC-002",
+      "SRC-003"
+    ]
+  },
+  "audio": {
+    "music_asset": null,
+    "music_plan": "Cama electrónica mínima, pulsos mecánicos lentos; producción audiovisual posterior.",
+    "music_license": null
+  },
+  "export": {
+    "resolution": "1080x1920",
+    "fps": 30,
+    "render_status": "NOT_GENERATED"
+  },
+  "publicacion": {
+    "status": "PENDIENTE_DECISION_GROK",
+    "platforms": [
+      "YouTube Shorts",
+      "TikTok",
+      "Facebook Reels"
+    ],
+    "note": "Preproducción textual; no publicar ni programar desde esta entrega."
+  },
+  "estado": "BORRADOR_EN_PROYECTOS_PENDIENTE_QA_INDEPENDIENTE",
+  "production_mode": "storyboard_only",
+  "approved_assets": [],
+  "risk_notes": [
+    "No afirmar que el ADN oscila por sí solo ni que el fenómeno ocurre dentro de células.",
+    "No llamar universal al período de 25±9 min ni a la longitud de correlación de 1.5 mm.",
+    "No confundir longitud de correlación del flujo con tamaño de una molécula.",
+    "El pin Weizmann es afiliación institucional, no ubicación del experimento."
+  ]
+}
