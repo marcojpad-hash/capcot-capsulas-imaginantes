@@ -273,8 +273,8 @@ Balance de los doce canónicos 5–7 nov: 2 PASS y 10 FAIL. El robot del 9-nov a
 
 - Se crean exactamente dos entregables de la fecha: docs/briefs/2026-11-10_RADAR_CAPCOT.md y proyectos/2026-11-10_comida-aprendizaje-sabor-nutriente/storyboard.json.
 - El borrador usa la ventana 13:30 en prueba; no se programa ni publica.
-- No se escribe ni modifica cola/entrada/, cola/bloqueados/, proyectos/ ni salidas/.
-- No se crea archivo *_fuentes.md; las fuentes de investigación están en este brief porque no hay storyboard.
+- No se escribe ni modifica cola/entrada/, cola/bloqueados/ ni salidas/. En proyectos/ solo se creó la carpeta 2026-11-10_comida-aprendizaje-sabor-nutriente con storyboard.json.
+- No se crea archivo *_fuentes.md; las fuentes científicas y cartográficas del candidato desarrollado están dentro del storyboard JSON. El brief conserva el radar de los cinco candidatos.
 - No se escribe ni modifica narrative_qa.
 - No se generan frames, imágenes, audio, voz, video ni renders.
 - No se publica ni programa contenido.
