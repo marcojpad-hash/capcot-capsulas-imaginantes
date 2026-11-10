@@ -135,3 +135,28 @@ Para los cinco: **PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR**. No existe `salid
 - **ASTRA 9-nov:** QA PASS 90 ya registrado, estructura estática compatible, pero handoff no confirmado, frames 0/9 y ruta no dispatchable.
 - **Cola del 10-nov:** 0 entradas.
 - El lote 5–7 permanece abierto hasta que se resuelvan los bloqueos estructurales; no se generaron ni se dejaron nuevas entradas de cola.
+
+
+## Addendum — entrega posterior de ASTRA y dato 23:30 (10-nov, 16:16 CDMX)
+
+### Dato del día 23:30 — `2026-11-10_dato-adn-sincroniza-flujo`
+
+- El borrador fue creado en `proyectos/2026-11-10_dato-adn-sincroniza-flujo/` con `storyboard.json`, `fuentes.md` y `ESTADO_EJECUCION.md`.
+- Lectura de vuelta desde GitHub: JSON parseado; 8 escenas; 195 palabras; 78 s de escenas + 6 s de cortinilla = 84 s.
+- QA en frío: **PASS 91/100**, siete checks true, `critical_flags=[]`, `review_basis=lectura_en_frio_solo_narracion`.
+- Los seis campos estructurales (`dramatic_beat`, `scene_function`, `causal_bridge_from_previous`, `question_state`, `reason_to_continue`, `new_information`) están presentes en las ocho escenas.
+- Revisión estática contra `scripts/validar_storyboard.py`: root fields, narrative_contract, QA, arcos, voz, fuentes, source_ids, prompt_base literal, mapa con coordenadas/fuente, capa de dato, duración, cortinilla, assets y estado de publicación cumplen el contrato inspeccionado. **El script Python no se ejecutó**: no había runtime local del repositorio.
+- `approved_assets=[]`, `export.render_status=NOT_GENERATED`, `publicacion.status=PENDIENTE_DECISION_GROK`.
+- **Dispatch:** `NOT_DISPATCHABLE` en su ubicación actual (`proyectos/`). El workflow solo escucha `cola/entrada/*.json` de primer nivel. No se creó copia plana en `cola/entrada/` ni se disparó workflow desde esta auditoría.
+- `cola/estado/2026-11-10_dato-adn-sincroniza-flujo.json`: 404; **RECEPCION_GROK_NO_CONFIRMADA**. No existe salida/QA audiovisual ni publicación para este ID.
+
+### ASTRA — `2026-11-09_dato-robot-ensambla-orbita`
+
+- El storyboard existente contiene nueve escenas y los seis campos narrativos obligatorios en todas.
+- Se entregó `GUION_NARRACION.md` como extracción del texto vigente: 210 palabras, 82 s de escenas + 6 s de cortinilla = 88 s.
+- No se regeneraron ni sustituyeron PNGs. El estado anterior registra nueve frames generados por Grok y disponibles en el chat; el usuario confirma que los nueve frames ya están cubiertos.
+- La carpeta GitHub `frames/` no se considera poblada por esa confirmación; no se atribuye una subida binaria inexistente.
+
+### Límites
+
+No se generaron medios, no se publicó ni programó, no se modificaron `data/*.json`, workflows, secretos, permisos ni archivos canónicos U6. No se escribió ningún `cola/estado/` de Grok.
