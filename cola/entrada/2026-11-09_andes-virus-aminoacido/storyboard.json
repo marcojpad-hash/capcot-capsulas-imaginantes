@@ -1,7 +1,7 @@
 {
   "project_id": "2026-11-09_andes-virus-aminoacido",
-  "title": "Un aminoácido cambia el virus Andes",
-  "titulo": "Un solo aminoácido",
+  "title": "Un amino\u00e1cido cambia el virus Andes",
+  "titulo": "Un solo amino\u00e1cido",
   "language": "es-MX",
   "aspect_ratio": "9:16",
   "target_duration_seconds": 82,
@@ -15,8 +15,8 @@
     "termino": "Andes virus amino acid glycoprotein",
     "fecha_consulta": "2026-11-09"
   },
-  "estilo_id": "linea_fina",
-  "estilo_visual": "Sketch de línea fina",
+  "estilo_id": "oleo_expresivo",
+  "estilo_visual": "\u00d3leo expresivo",
   "voice": {
     "engine": "edge-tts",
     "voice_id": "es-MX-JorgeNeural",
@@ -28,11 +28,11 @@
   "sources": [
     {
       "id": "SRC-001",
-      "cita_corta": "Vidal-Freire et al. (2026). A single–amino acid difference between rodent and human Andes virus affects viral glycoprotein trafficking. Science Advances.",
+      "cita_corta": "Vidal-Freire et al. (2026). A single\u2013amino acid difference between rodent and human Andes virus affects viral glycoprotein trafficking. Science Advances.",
       "url": "https://www.science.org/doi/10.1126/sciadv.aek2522",
       "doi": "10.1126/sciadv.aek2522",
       "accessed": "2026-11-09",
-      "supports": ["un cambio de aminoácido T641I en la glicoproteína del virus Andes humano altera el tráfico en el Golgi y la liberación de partículas"],
+      "supports": ["un cambio de amino\u00e1cido T641I en la glicoprote\u00edna del virus Andes humano altera el tr\u00e1fico en el Golgi y la liberaci\u00f3n de part\u00edculas"],
       "ref_display": "Vidal-Freire et al. Sci Adv 2026"
     }
   ],
@@ -41,10 +41,10 @@
       "id": "scene_001",
       "arc": "hook_medias_res",
       "duration_seconds": 8.0,
-      "narration": "¿Y si un solo aminoácido decide si el virus Andes sale más rápido de la célula?",
-      "on_screen_text": "Un solo aminoácido",
-      "visual_description": "Microscopio con célula y virus",
-      "image_prompt": "fine line pencil illustration on white paper, precise thin strokes, subtle graphite shading, minimal composition, vertical 9:16, no text + close-up of human cell with virus particles near Golgi apparatus, scientific sketch style",
+      "narration": "\u00bfY si un solo amino\u00e1cido decide si el virus Andes sale m\u00e1s r\u00e1pido de la c\u00e9lula?",
+      "on_screen_text": "Un solo amino\u00e1cido",
+      "visual_description": "Microscopio con c\u00e9lula y virus",
+      "image_prompt": "expressive oil painting, thick impasto brushstrokes, dramatic chiaroscuro lighting, rich earthy palette, vertical 9:16, no text + close-up of human cell with virus particles near Golgi apparatus, scientific sketch style",
       "source_ids": ["SRC-001"],
       "asset_filename": "frames/scene_001.jpg",
       "ambiente": "laboratorio",
@@ -54,8 +54,8 @@
   "cortinilla_fuentes": {
     "duration_seconds": 6,
     "titulo": "Fuentes",
-    "aviso": "Imágenes generadas con IA. Voz sintética. Audio sintetizado.",
-    "firma": "Datos y ociosidades · @datosyociosidades"
+    "aviso": "Im\u00e1genes generadas con IA. Voz sint\u00e9tica. Audio sintetizado.",
+    "firma": "Datos y ociosidades \u00b7 @datosyociosidades"
   },
   "export": {
     "filename": "capsula.mp4",
