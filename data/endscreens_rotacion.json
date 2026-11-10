@@ -1,8 +1,8 @@
 {
-  "fecha": "2026-11-08",
+  "fecha": "2026-11-10",
   "tipo": "endscreens_rotacion",
-  "actualizado_cdmx": "2026-11-08T09:54-06:00",
-  "motivo": "09:54 Short «Tus palomitas explotan por dentro» zTP5akrGA9M (28 vistas, era 0) → pan PTk2QNMkOn4 (17), vía campo Vídeo relacionado en Studio. Cadena palomitas 28 → pan 17 → capsaicina 7ay4 10. Venus phVf 54 → arena m4Rq 33 → hipo Rg-iT 1. Fijos intactos.",
+  "actualizado_cdmx": "2026-11-10T07:47-06:00",
+  "motivo": "07:47 rana UBFuKBU3cx0 (43 vistas, +11 de noche) → hipo 4lOWeMn2RCo (2 vistas en ~15 h), vía Vídeo relacionado en Studio (antes Ninguno). Fijos intactos.",
   "vistas_ref": {
     "phVfyHp3CnY": 54,
     "m4RqQRaz55k": 33,
@@ -55,8 +55,12 @@
     "3bhntOcKHPk": 1454,
     "r1AhsPOAS_o": 1404,
     "ZrUtKs7Ty7U": 1354,
-    "PTk2QNMkOn4": 17,
-    "zTP5akrGA9M": 28
+    "PTk2QNMkOn4": 98,
+    "zTP5akrGA9M": 136,
+    "UBFuKBU3cx0": 43,
+    "4lOWeMn2RCo": 2,
+    "EwZ3dHalUn0": 83,
+    "nSS_q2tj2P0": 1
   },
   "mapa": {
     "r1AhsPOAS_o": "AJR6kcnnDig",
@@ -110,7 +114,8 @@
     "m4RqQRaz55k": "Rg-iTgMExWw",
     "phVfyHp3CnY": "m4RqQRaz55k",
     "PTk2QNMkOn4": "7ay4KLS8h8I",
-    "zTP5akrGA9M": "PTk2QNMkOn4"
+    "zTP5akrGA9M": "PTk2QNMkOn4",
+    "UBFuKBU3cx0": "4lOWeMn2RCo"
   },
   "pendiente_studio": false,
   "nota": "Aplicado en YouTube Studio Editor > Pantalla final (video específico). Búsqueda: pegar youtube.com/watch?v=ID en 'Buscar vídeos de otros canales' (tus vídeos no lista Shorts). Sin suscripción ni tarjetas. Actualización 26-oct 19:49: la lista «Elegir un vídeo específico» ya muestra los Shorts.",
@@ -163,7 +168,8 @@
     "4xylLT3vSIU": "aplicado_studio_2026-11-04T19:51",
     "m4RqQRaz55k": "aplicado_nuevo_2026-11-07_14:19 → Rg-iTgMExWw",
     "phVfyHp3CnY": "aplicado_nuevo_2026-11-07_17:52 → m4RqQRaz55k",
-    "zTP5akrGA9M": "aplicado_nuevo_2026-11-08_0954 → PTk2QNMkOn4"
+    "zTP5akrGA9M": "aplicado_nuevo_2026-11-08_0954 → PTk2QNMkOn4",
+    "UBFuKBU3cx0": "aplicado_2026-11-10 07:47 → hipo 4lOWeMn2RCo"
   },
   "fijos": {
     "Qe2Y9xDn9QQ": "gIjJ0YKYQ8M",
@@ -178,7 +184,7 @@
   ],
   "nota_excluidos": "Ave-dino / velociraptor: no mandar tráfico de pantallas finales (riesgo de parecer fusil). Preferir hongos y otros nuevos flojos.",
   "nota_studio": "Hongos destino confirmado en timeline. Origen hongos: Studio mostró título «¿Aves que temen a mujeres?» al pegar watch?v=O7TdKvuBjyg (mismo ID O7Td).",
-  "ultima_revision_cdmx": "2026-11-08T09:54-06:00",
+  "ultima_revision_cdmx": "2026-11-10T07:47-06:00",
   "comentarios_ref_2026-11-01T21:52": {
     "oGFKLUgBdhA": 2,
     "xBqdEn1Dumg": 2,
