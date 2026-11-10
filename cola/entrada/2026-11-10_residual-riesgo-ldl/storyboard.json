@@ -1,0 +1,131 @@
+{
+  "project_id": "2026-11-10_residual-riesgo-ldl",
+  "title": "El riesgo que queda después del colesterol",
+  "language": "es-MX",
+  "aspect_ratio": "9:16",
+  "target_duration_seconds": 82,
+  "trend_source": {
+    "tipo": "noticia_cientifica",
+    "medio": "ScienceDaily / European Heart Journal",
+    "url": "https://www.sciencedaily.com/releases/2026/11/261109205415.htm",
+    "estudio_doi": "10.1093/eurheartj/ehag718",
+    "fecha_publicacion": "2026-11-09",
+    "termino": "riesgo residual LDL TRL Lp(a)",
+    "fecha_consulta": "2026-11-10"
+  },
+  "estilo_id": "risografia",
+  "estilo_visual": "Risografía",
+  "estructura": "mito_vs_dato",
+  "voice": {
+    "engine": "edge-tts",
+    "voice_id": "es-MX-JorgeNeural",
+    "rate": "+7%",
+    "pitch": "-2Hz",
+    "pad_seconds": 0.3,
+    "modo_pausas": "continuo"
+  },
+  "sources": [
+    {
+      "id": "SRC-001",
+      "cita_corta": "Wittenbecher et al. (2026). Apolipoprotein B-containing lipoproteins: distinct roles in atherosclerosis. Eur Heart J.",
+      "url": "https://doi.org/10.1093/eurheartj/ehag718",
+      "doi": "10.1093/eurheartj/ehag718",
+      "accessed": "2026-11-10",
+      "supports": ["TRL y Lp(a) más dañinos por partícula que LDL", "patrones proteicos asociados a inflamación vascular", "riesgo residual tras bajar LDL"],
+      "ref_display": "Eur Heart J 2026"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_001",
+      "arc": "hook_medias_res",
+      "duration_seconds": 8.0,
+      "narration": "¿Por qué un infarto llega con el colesterol ya bajo?",
+      "on_screen_text": "¿Colesterol bajo y infarto?",
+      "visual_description": "Torso abstracto con corazón brillante y partículas de lípidos flotantes en rosa y teal.",
+      "image_prompt": "risograph print, two-color fluorescent pink and teal overprint, misregistration, grainy texture, flat shapes, vertical 9:16, no text + abstract human torso with glowing heart and floating lipid particles in pink and teal",
+      "source_ids": ["SRC-001"],
+      "asset_filename": "frames/scene_001.jpg",
+      "ambiente": "laboratorio",
+      "sfx": ["latido"]
+    },
+    {
+      "id": "scene_002",
+      "arc": "desarrollo",
+      "duration_seconds": 10.0,
+      "narration": "Bajar el LDL reduce el riesgo, pero no lo borra del todo.",
+      "on_screen_text": "LDL no es todo",
+      "visual_description": "Pared de vaso con placas y partículas inflamatorias.",
+      "image_prompt": "risograph print, two-color fluorescent pink and teal overprint, misregistration, grainy texture, flat shapes, vertical 9:16, no text + blood vessel wall with cholesterol plaques and small inflammatory particles",
+      "source_ids": ["SRC-001"],
+      "asset_filename": "frames/scene_002.jpg",
+      "ambiente": "laboratorio",
+      "sfx": ["flujo"]
+    },
+    {
+      "id": "scene_003",
+      "arc": "desarrollo",
+      "duration_seconds": 11.0,
+      "narration": "Un estudio de Chalmers muestra que TRL y Lp(a) dañan más por partícula que el LDL.",
+      "on_screen_text": "TRL y Lp(a)",
+      "visual_description": "Laboratorio con tubos y estructuras moleculares de lipoproteínas.",
+      "image_prompt": "risograph print, two-color fluorescent pink and teal overprint, misregistration, grainy texture, flat shapes, vertical 9:16, no text + laboratory glassware with blood samples and molecular structures of lipoproteins",
+      "source_ids": ["SRC-001"],
+      "asset_filename": "frames/scene_003.jpg",
+      "ambiente": "laboratorio",
+      "sfx": ["burbujas"]
+    },
+    {
+      "id": "scene_004",
+      "arc": "desarrollo",
+      "duration_seconds": 10.0,
+      "narration": "Estas partículas llevan proteínas que atraen células inmunes e inflaman la pared arterial.",
+      "on_screen_text": "Inflamación oculta",
+      "visual_description": "Células inmunes acercándose a partículas de grasa en vaso.",
+      "image_prompt": "risograph print, two-color fluorescent pink and teal overprint, misregistration, grainy texture, flat shapes, vertical 9:16, no text + immune cells attracted to fat particles on artery wall, inflammation glow",
+      "source_ids": ["SRC-001"],
+      "asset_filename": "frames/scene_004.jpg",
+      "ambiente": "laboratorio",
+      "sfx": ["alerta"]
+    },
+    {
+      "id": "scene_005",
+      "arc": "cierre_historia",
+      "duration_seconds": 9.0,
+      "narration": "El riesgo residual no es mito: es biología que el LDL solo no cuenta.",
+      "on_screen_text": "Riesgo residual",
+      "visual_description": "Corazón protegido parcialmente, con partículas restantes.",
+      "image_prompt": "risograph print, two-color fluorescent pink and teal overprint, misregistration, grainy texture, flat shapes, vertical 9:16, no text + heart partially shielded with remaining floating particles around it",
+      "source_ids": ["SRC-001"],
+      "asset_filename": "frames/scene_005.jpg",
+      "ambiente": "laboratorio",
+      "sfx": ["silencio"]
+    },
+    {
+      "id": "scene_006",
+      "arc": "reflexion_o_pregunta",
+      "duration_seconds": 12.0,
+      "narration": "¿Qué otras partículas mides tú? Esto fue Datos y ociosidades.",
+      "on_screen_text": "¿Qué más mides?",
+      "visual_description": "Pregunta abierta con corazón y partículas en risografía.",
+      "image_prompt": "risograph print, two-color fluorescent pink and teal overprint, misregistration, grainy texture, flat shapes, vertical 9:16, no text + contemplative heart with floating particles and open space for reflection",
+      "source_ids": ["SRC-001"],
+      "asset_filename": "frames/scene_006.jpg",
+      "ambiente": "laboratorio",
+      "sfx": ["final"]
+    }
+  ],
+  "cortinilla_fuentes": {
+    "duration_seconds": 6,
+    "titulo": "Fuentes",
+    "aviso": "Imágenes generadas con IA. Voz sintética. Audio sintetizado.",
+    "firma": "Datos y ociosidades · @datosyociosidades"
+  },
+  "export": {
+    "filename": "capsula.mp4",
+    "resolution": "1080x1920",
+    "fps": 30,
+    "loudness_lufs": -14
+  },
+  "titulo": "Riesgo residual del colesterol"
+}
