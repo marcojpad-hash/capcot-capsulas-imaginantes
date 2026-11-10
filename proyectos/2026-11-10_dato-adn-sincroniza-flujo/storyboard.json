@@ -27,7 +27,7 @@
     "fecha_publicacion": "2026-11-09",
     "url": "https://www.nature.com/articles/s41567-026-03505-y"
   },
-  "editorial_status": "BORRADOR_EN_PROYECTOS_PENDIENTE_QA_INDEPENDIENTE",
+  "editorial_status": "QA_NARRATIVO_PASS_PENDIENTE_VALIDACION_ESTRUCTURAL_EJECUTADA",
   "arco": {
     "hook_medias_res": "Un flujo parece caótico mientras el ADN comienza a formar una red.",
     "desarrollo": "Motores kinesina mueven microtúbulos; el flujo estira y enreda ADN, creando una red que retroalimenta la dinámica.",
@@ -340,7 +340,7 @@
     ],
     "note": "Preproducción textual; no publicar ni programar desde esta entrega."
   },
-  "estado": "BORRADOR_EN_PROYECTOS_PENDIENTE_QA_INDEPENDIENTE",
+  "estado": "QA_NARRATIVO_PASS_PENDIENTE_VALIDACION_ESTRUCTURAL_EJECUTADA",
   "production_mode": "storyboard_only",
   "approved_assets": [],
   "risk_notes": [
