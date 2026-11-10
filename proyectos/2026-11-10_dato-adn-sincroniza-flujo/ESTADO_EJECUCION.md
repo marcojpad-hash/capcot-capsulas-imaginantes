@@ -6,7 +6,7 @@
 - **Slot:** 23:30 America/Mexico_City
 - **Estado:** `BORRADOR_EN_PROYECTOS_PENDIENTE_QA_INDEPENDIENTE`
 - **Preproducción textual:** storyboard, fuentes y estado guardados.
-- **Narrative QA:** pendiente de auditoría independiente; no se declara PASS antes de la lectura en frío.
+- **Narrative QA:** PASS 91/100; siete checks true, critical_flags=[]; lectura en frío registrada por auditor CAPCOT independiente el 10-nov-2026.
 - **Estructura:** 8 escenas; 195 palabras; 78 s de escenas + 6 s de cortinilla = 84 s.
 - **Campos obligatorios:** los seis campos estructurales están presentes en las 8 escenas.
 - **Fuente primaria:** Nature Physics, artículo publicado 9-nov-2026; DOI mostrado por el editor, resolución independiente pendiente.
@@ -22,3 +22,6 @@
 - El radar del 10-nov registra el artículo primario y la fecha de publicación.
 - El mapa usa un pin institucional de Weizmann, no la ubicación del experimento.
 - Los valores 25 ± 9 min y 1.5 mm son resultados de las condiciones experimentales descritas, no constantes universales.
+
+- **Revisión estructural:** PASS en revisión estática contra `scripts/validar_storyboard.py` (8 escenas, 195 palabras, 84 s, seis campos por escena, cuatro arcos, voz, fuentes, mapa, dato/gráfico, prompt_base literal, assets vacíos). El validador Python no se ejecutó porque esta sesión no dispone de runtime del repositorio.
+- **Dispatch:** permanece en `proyectos/`; no se creó copia en `cola/entrada/` ni se disparó workflow durante esta auditoría.
