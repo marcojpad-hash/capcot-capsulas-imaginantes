@@ -1,0 +1,46 @@
+{
+ "project_id": "2026-11-07_comida-hielo-caliente",
+ "musica": {
+  "cama": "pulso",
+  "origen": "síntesis propia (scripts/cama_sonora.py, numpy)",
+  "licencia": "obra propia de Datos y ociosidades",
+  "generada_por_ia": false
+ },
+ "sfx": {
+  "mercado": {
+   "origen": "síntesis propia (cama_sonora.py)",
+   "licencia": "obra propia"
+  },
+  "motor": {
+   "origen": "síntesis propia (cama_sonora.py)",
+   "licencia": "obra propia"
+  },
+  "silencio": {
+   "origen": "síntesis propia (cama_sonora.py)",
+   "licencia": "obra propia"
+  }
+ },
+ "imagenes": {
+  "origen": "generadas con IA (ilustración no realista, linea_fina)",
+  "estilo": "linea_fina",
+  "realista": false
+ },
+ "voz": {
+  "motor": "Microsoft Edge TTS",
+  "voz": "es-MX-JorgeNeural",
+  "nota": "voz sintética; no imita a una persona real"
+ },
+ "capas_datos": {
+  "tipos": [
+   "mapa",
+   "dato",
+   "dato"
+  ],
+  "mapa_base": "Natural Earth 110m (dominio público)",
+  "render": "matplotlib (propio)"
+ },
+ "fuentes_datos": [
+  "https://doi.org/10.1038/srep37665",
+  null
+ ]
+}

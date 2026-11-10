@@ -1,0 +1,123 @@
+{
+ "metadatos": {
+  "title": "¿El agua caliente se congela antes? #Shorts",
+  "description": "El agua caliente se congela antes que la fría.\n\n¿El agua caliente se congela antes?. Una cápsula de Datos y ociosidades: datos verificados contados como historia.\n\nFuentes:\n• Burridge, H. C. and Linden, P. F. (2016). Questioning the Mpemba effect: hot water does not cool more quickly than cold. Scientific Reports 6, 37665. https://doi.org/10.1038/srep37665\n• Mpemba, E. B. & Osborne, D. G. (1969). Cool? Physics Education 4, 172. https://doi.org/10.1088/0031-9120/4/3/312\n\nImágenes generadas con IA · voz sintética · audio sintetizado.\nSuscríbete: @datosyociosidades\nTikTok: https://www.tiktok.com/@datosyociosidades\n\n#DatosYOciosidades #Shorts #datos #ciencia #difusión #difusióncientífica #ia #EfectoMpemba #AguaCaliente #Física",
+  "tags": [
+   "DatosYOciosidades",
+   "Shorts",
+   "datos",
+   "ciencia",
+   "difusión",
+   "difusióncientífica",
+   "ia",
+   "EfectoMpemba",
+   "AguaCaliente",
+   "Física"
+  ]
+ },
+ "resultado": {
+  "youtube": {
+   "kind": "youtube#video",
+   "etag": "lT86d0xrAtefi0rKsn_QVUrXP6Q",
+   "id": "HSgrnejAcaI",
+   "snippet": {
+    "publishedAt": "2026-11-10T21:01:55Z",
+    "channelId": "UCU2ZI-6pBJEr9aSFsF6bxLw",
+    "title": "¿El agua caliente se congela antes? #Shorts",
+    "description": "El agua caliente se congela antes que la fría.\n\n¿El agua caliente se congela antes?. Una cápsula de Datos y ociosidades: datos verificados contados como historia.\n\nFuentes:\n• Burridge, H. C. and Linden, P. F. (2016). Questioning the Mpemba effect: hot water does not cool more quickly than cold. Scientific Reports 6, 37665. https://doi.org/10.1038/srep37665\n• Mpemba, E. B. & Osborne, D. G. (1969). Cool? Physics Education 4, 172. https://doi.org/10.1088/0031-9120/4/3/312\n\nImágenes generadas con IA · voz sintética · audio sintetizado.\nSuscríbete: @datosyociosidades\nTikTok: https://www.tiktok.com/@datosyociosidades\n\n#DatosYOciosidades #Shorts #datos #ciencia #difusión #difusióncientífica #ia #EfectoMpemba #AguaCaliente #Física",
+    "thumbnails": {
+     "default": {
+      "url": "https://i9.ytimg.com/vi/HSgrnejAcaI/default.jpg?sqp=CNCLztcG&rs=AOn4CLAa4cWx1EypQIxhEKbpBkgjp2A_jQ",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i9.ytimg.com/vi/HSgrnejAcaI/mqdefault.jpg?sqp=CNCLztcG&rs=AOn4CLCXXCI2oT5pb8L9fv_lBEnNApjMhQ",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i9.ytimg.com/vi/HSgrnejAcaI/hqdefault.jpg?sqp=CNCLztcG&rs=AOn4CLAilxPPUuo-j6GzgOHiTKY-kuAAyQ",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "Datos y ociosidades",
+    "tags": [
+     "AguaCaliente",
+     "DatosYOciosidades",
+     "EfectoMpemba",
+     "Física",
+     "Shorts",
+     "ciencia",
+     "datos",
+     "difusión",
+     "difusióncientífica",
+     "ia"
+    ],
+    "categoryId": "27",
+    "liveBroadcastContent": "none",
+    "defaultLanguage": "es",
+    "localized": {
+     "title": "¿El agua caliente se congela antes? #Shorts",
+     "description": "El agua caliente se congela antes que la fría.\n\n¿El agua caliente se congela antes?. Una cápsula de Datos y ociosidades: datos verificados contados como historia.\n\nFuentes:\n• Burridge, H. C. and Linden, P. F. (2016). Questioning the Mpemba effect: hot water does not cool more quickly than cold. Scientific Reports 6, 37665. https://doi.org/10.1038/srep37665\n• Mpemba, E. B. & Osborne, D. G. (1969). Cool? Physics Education 4, 172. https://doi.org/10.1088/0031-9120/4/3/312\n\nImágenes generadas con IA · voz sintética · audio sintetizado.\nSuscríbete: @datosyociosidades\nTikTok: https://www.tiktok.com/@datosyociosidades\n\n#DatosYOciosidades #Shorts #datos #ciencia #difusión #difusióncientífica #ia #EfectoMpemba #AguaCaliente #Física"
+    }
+   },
+   "status": {
+    "uploadStatus": "uploaded",
+    "privacyStatus": "private",
+    "publishAt": "2026-11-11T19:30:00Z",
+    "license": "youtube",
+    "embeddable": true,
+    "publicStatsViewable": true,
+    "selfDeclaredMadeForKids": false,
+    "containsSyntheticMedia": false
+   },
+   "portada_thumb": {
+    "path": "/workspace/capcot_main/salidas/2026-11-07_comida-hielo-caliente/portada_thumb.jpg",
+    "t_seconds": 0.5,
+    "set": {
+     "ok": true,
+     "response": {
+      "kind": "youtube#thumbnailSetResponse",
+      "etag": "69HAqd-HTGJ3-H40JFHv-q-IjVQ",
+      "items": [
+       {
+        "default": {
+         "url": "https://i9.ytimg.com/vi/HSgrnejAcaI/default.jpg?sqp=CNCLztcG&rs=AOn4CLAa4cWx1EypQIxhEKbpBkgjp2A_jQ",
+         "width": 120,
+         "height": 90
+        },
+        "medium": {
+         "url": "https://i9.ytimg.com/vi/HSgrnejAcaI/mqdefault.jpg?sqp=CNCLztcG&rs=AOn4CLCXXCI2oT5pb8L9fv_lBEnNApjMhQ",
+         "width": 320,
+         "height": 180
+        },
+        "high": {
+         "url": "https://i9.ytimg.com/vi/HSgrnejAcaI/hqdefault.jpg?sqp=CNCLztcG&rs=AOn4CLAilxPPUuo-j6GzgOHiTKY-kuAAyQ",
+         "width": 480,
+         "height": 360
+        },
+        "standard": {
+         "url": "https://i9.ytimg.com/vi/HSgrnejAcaI/sddefault.jpg?sqp=CNCLztcG&rs=AOn4CLDka8u6fFAvbfS4P5-tMgGy6z3GXQ",
+         "width": 640,
+         "height": 480
+        },
+        "maxres": {
+         "url": "https://i9.ytimg.com/vi/HSgrnejAcaI/maxresdefault.jpg?sqp=CNCLztcG&rs=AOn4CLDoE4jm_k33ZMY3dpGg1DhusWfiOw",
+         "width": 1280,
+         "height": 720
+        },
+        "qhd": {
+         "url": "https://i9.ytimg.com/vi/HSgrnejAcaI/qhddefault.jpg?sqp=CNCLztcG&rs=AOn4CLADXL1Em2DwC9CdchxExpQcD_342Q",
+         "width": 2560,
+         "height": 1440
+        }
+       }
+      ]
+     }
+    }
+   }
+  }
+ }
+}

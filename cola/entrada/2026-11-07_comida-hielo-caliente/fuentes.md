@@ -16,7 +16,9 @@ Respalda:
 
 ### SRC-002
 Mpemba, E. B. & Osborne, D. G. (1969). Cool? Physics Education 4, 172.
-Sin DOI verificado en este paquete; no se inventa DOI.
+DOI verificado el 2026-11-10 en IOP/IOPscience: 10.1088/0031-9120/4/3/312
+URL: https://doi.org/10.1088/0031-9120/4/3/312
+Acceso: 2026-11-10
 
 Respalda:
 - Erasto Mpemba, en Tanzania, notó con Osborne en 1969 que la mezcla caliente para helado se congeló antes que la fría.

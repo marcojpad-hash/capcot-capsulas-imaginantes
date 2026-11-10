@@ -1,0 +1,265 @@
+{
+ "project_id": "2026-11-07_comida-hielo-caliente",
+ "serie": "Datos y ociosidades",
+ "title": "¿El agua caliente se congela antes?",
+ "titulo": "¿Caliente se congela antes?",
+ "language": "es-MX",
+ "estilo_id": "linea_fina",
+ "estilo_visual": "fine line pencil illustration on white paper, precise thin strokes, subtle graphite shading, minimal composition, vertical 9:16, no text",
+ "estructura": "mito_vs_dato",
+ "aspect_ratio": "9:16",
+ "target_duration_seconds": 88,
+ "resumen": "El efecto Mpemba: un estudiante en Tanzania notó que la mezcla caliente para helado se congeló antes; en 2016, una revisión no halló evidencia clara y el efecto sigue en disputa.",
+ "keywords": [
+  "efecto Mpemba",
+  "agua caliente",
+  "física"
+ ],
+ "proveedor_imagenes": "generadas con IA (ilustración no realista, linea_fina)",
+ "parece_real": false,
+ "export": {
+  "filename": "capsula.mp4",
+  "fps": 30,
+  "loudness_lufs": -14,
+  "resolution": "1080x1920",
+  "plano_seconds": 5,
+  "subtitle_max_words": 3
+ },
+ "voice": {
+  "engine": "edge-tts",
+  "modo_pausas": "continuo",
+  "pad_seconds": 0.3,
+  "pitch": "-2Hz",
+  "rate": "+7%",
+  "voice_id": "es-MX-JorgeNeural"
+ },
+ "audio": {
+  "music_asset": "sintetico:pulso",
+  "cama_musical": "pulso",
+  "music_lufs": -27,
+  "ambiente_lufs": -26
+ },
+ "cortinilla_fuentes": {
+  "aviso": "Imágenes generadas con IA. Voz sintética.",
+  "duration_seconds": 6,
+  "firma": "Datos y ociosidades · @datosyociosidades",
+  "titulo": "Fuentes"
+ },
+ "sources": [
+  {
+   "accessed": "2026-11-06",
+   "cita_corta": "Burridge, H. C. and Linden, P. F. (2016). Questioning the Mpemba effect: hot water does not cool more quickly than cold. Scientific Reports 6, 37665.",
+   "doi": "10.1038/srep37665",
+   "id": "SRC-001",
+   "ref_display": "Sci Rep › Burridge & Linden 2016",
+   "supports": [
+    "Burridge y Linden revisaron estudios e hicieron experimentos controlados y no encontraron evidencia clara de que el agua caliente se enfríe más rápido",
+    "El efecto Mpemba sigue en disputa y no hay una definición única aceptada",
+    "Se han propuesto varias explicaciones del efecto (evaporación, convección, gases disueltos), revisadas en el artículo"
+   ],
+   "url": "https://doi.org/10.1038/srep37665"
+  },
+  {
+   "accessed": "2026-11-10",
+   "cita_corta": "Mpemba, E. B. & Osborne, D. G. (1969). Cool? Physics Education 4, 172.",
+   "id": "SRC-002",
+   "ref_display": "Physics Education › Mpemba & Osborne 1969",
+   "supports": [
+    "Erasto Mpemba, en Tanzania, notó con Osborne en 1969 que la mezcla caliente para helado se congeló antes que la fría",
+    "Osborne puso a prueba la observación y la publicaron juntos en 1969"
+   ],
+   "doi": "10.1088/0031-9120/4/3/312",
+   "url": "https://doi.org/10.1088/0031-9120/4/3/312"
+  }
+ ],
+ "scenes": [
+  {
+   "id": "scene_001",
+   "arc": "hook_medias_res",
+   "duration_seconds": 8,
+   "asset_filename": "frames/frame_01.png",
+   "encuadre": "general",
+   "narration": "El agua caliente se congela antes que la fría. ¿En serio? A eso se le llama el efecto Mpemba.",
+   "on_screen_text": "¿Caliente se congela antes?",
+   "visual_description": "Plano general del interior de un congelador: dos vasos iguales, uno humeante y otro frío, con escarcha. Zona superior libre para el título. Estilo linea_fina.",
+   "image_prompt": "fine line pencil illustration on white paper, precise thin strokes, subtle graphite shading, minimal composition, vertical 9:16, no text + two identical glasses in a freezer, one steaming hot water, one cold water, frost forming, empty upper third for title",
+   "source_ids": [
+    "SRC-001",
+    "SRC-002"
+   ],
+   "sfx": [
+    "motor"
+   ]
+  },
+  {
+   "id": "scene_002",
+   "arc": "desarrollo",
+   "duration_seconds": 8,
+   "asset_filename": "frames/frame_02.png",
+   "encuadre": "cenital",
+   "narration": "En Tanzania, en los años sesenta, un estudiante lo notó haciendo helado en la escuela, con una mezcla que todavía estaba caliente.",
+   "on_screen_text": "Tanzania, años 60",
+   "visual_description": "Plano cenital de una mesa de cocina escolar en los años sesenta: ollas, cuchara y recipientes de mezcla para helado. Estilo linea_fina.",
+   "image_prompt": "fine line pencil illustration on white paper, precise thin strokes, subtle graphite shading, minimal composition, vertical 9:16, no text + overhead view of 1960s school kitchen table with pots and ice cream mix containers",
+   "source_ids": [
+    "SRC-002"
+   ],
+   "sfx": [
+    "mercado"
+   ],
+   "capa": {
+    "tipo": "mapa",
+    "region": [
+     25,
+     48,
+     -15,
+     8
+    ],
+    "puntos": [
+     {
+      "nombre": "Tanzania",
+      "lat": -6.37,
+      "lon": 34.89
+     }
+    ],
+    "titulo": "Tanzania",
+    "fuente": "Mpemba & Osborne, Physics Education, 1969",
+    "plano": 0
+   }
+  },
+  {
+   "id": "scene_003",
+   "arc": "desarrollo",
+   "duration_seconds": 9,
+   "asset_filename": "frames/frame_03.png",
+   "encuadre": "medio",
+   "narration": "Erasto Mpemba hacía helado con sus compañeros. Un día metió la mezcla caliente al congelador, sin esperar a que se enfriara.",
+   "on_screen_text": "Erasto Mpemba, estudiante",
+   "visual_description": "Plano medio de un estudiante, de espaldas, vertiendo mezcla caliente para helado en un recipiente. Sin retrato reconocible. Estilo linea_fina.",
+   "image_prompt": "fine line pencil illustration on white paper, precise thin strokes, subtle graphite shading, minimal composition, vertical 9:16, no text + teenage boy from behind pouring hot ice cream mix",
+   "source_ids": [
+    "SRC-002"
+   ],
+   "sfx": [
+    "mercado"
+   ]
+  },
+  {
+   "id": "scene_004",
+   "arc": "desarrollo",
+   "duration_seconds": 8,
+   "asset_filename": "frames/frame_04.png",
+   "encuadre": "macro",
+   "narration": "La mezcla caliente se hizo hielo antes que la fría. Su profesor se rió de él.",
+   "on_screen_text": "Se hizo hielo antes",
+   "visual_description": "Macro de cristales de hielo formándose en la superficie de la mezcla. Estilo linea_fina.",
+   "image_prompt": "fine line pencil illustration on white paper, precise thin strokes, subtle graphite shading, minimal composition, vertical 9:16, no text + macro ice crystals forming on a dark liquid surface",
+   "source_ids": [
+    "SRC-002"
+   ],
+   "sfx": [
+    "motor"
+   ]
+  },
+  {
+   "id": "scene_005",
+   "arc": "desarrollo",
+   "duration_seconds": 8,
+   "asset_filename": "frames/frame_05.png",
+   "encuadre": "contrapicado",
+   "narration": "Pero un físico, Denis Osborne, lo escuchó, lo tomó en serio y lo puso a prueba con experimentos.",
+   "on_screen_text": "Osborne lo escuchó",
+   "visual_description": "Contrapicado de un aula: profesor y estudiante de espaldas ante un pizarrón en blanco. Sin retratos reconocibles. Estilo linea_fina.",
+   "image_prompt": "fine line pencil illustration on white paper, precise thin strokes, subtle graphite shading, minimal composition, vertical 9:16, no text + low-angle classroom, teacher and student seen from behind, blank chalkboard",
+   "source_ids": [
+    "SRC-002"
+   ],
+   "sfx": [
+    "silencio"
+   ]
+  },
+  {
+   "id": "scene_006",
+   "arc": "desarrollo",
+   "duration_seconds": 8,
+   "asset_filename": "frames/frame_06.png",
+   "encuadre": "detalle",
+   "narration": "En 1969, Mpemba y Osborne publicaron juntos el resultado en la revista Physics Education, volumen 4, página 172.",
+   "on_screen_text": "Mpemba y Osborne, 1969",
+   "visual_description": "Detalle de un escritorio con una revista científica de páginas en blanco, lápiz y manos pasando una hoja. Sin texto en la imagen. Estilo linea_fina.",
+   "image_prompt": "fine line pencil illustration on white paper, precise thin strokes, subtle graphite shading, minimal composition, vertical 9:16, no text + hands turning blank journal pages on a wooden desk",
+   "source_ids": [
+    "SRC-002"
+   ],
+   "sfx": [
+    "silencio"
+   ],
+   "capa": {
+    "tipo": "dato",
+    "valor": "1969",
+    "etiqueta": "Mpemba y Osborne · Physics Education",
+    "fuente": "Physics Education 4, 172",
+    "plano": 1
+   }
+  },
+  {
+   "id": "scene_007",
+   "arc": "desarrollo",
+   "duration_seconds": 10,
+   "asset_filename": "frames/frame_07.png",
+   "encuadre": "general",
+   "narration": "La lógica dice que lo caliente tarda más: hay que sacarle más calor antes de que se congele. Por eso el efecto parecía imposible.",
+   "on_screen_text": "Parecía imposible",
+   "visual_description": "Plano general de dos vasos y un termómetro sin números: uno con vapor y otro con cristales. Estilo linea_fina.",
+   "image_prompt": "fine line pencil illustration on white paper, precise thin strokes, subtle graphite shading, minimal composition, vertical 9:16, no text + two glasses and a thermometer, heat shimmer vs ice crystals, no numbers",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "sfx": [
+    "motor"
+   ]
+  },
+  {
+   "id": "scene_008",
+   "arc": "cierre_historia",
+   "duration_seconds": 14,
+   "asset_filename": "frames/frame_08.png",
+   "encuadre": "cenital",
+   "narration": "Se propusieron varias explicaciones: evaporación, corrientes o convección dentro del agua, y gases disueltos. En 2016, Burridge y Linden revisaron los estudios y hicieron experimentos controlados. No encontraron evidencia clara de que el agua caliente se enfríe más rápido que la fría.",
+   "on_screen_text": "Burridge y Linden, 2016",
+   "visual_description": "Vista de banco de laboratorio: dos vasos de precipitados en baño de hielo, cuaderno y gráfica sin números ni texto. Estilo linea_fina.",
+   "image_prompt": "fine line pencil illustration on white paper, precise thin strokes, subtle graphite shading, minimal composition, vertical 9:16, no text + two beakers in ice bath, blank notebook, untitled graph without numbers",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "sfx": [
+    "silencio"
+   ],
+   "capa": {
+    "tipo": "dato",
+    "valor": "2016",
+    "etiqueta": "Sin evidencia clara de que lo caliente se enfríe antes",
+    "fuente": "Burridge & Linden, Sci. Rep. 6, 37665",
+    "plano": 1
+   }
+  },
+  {
+   "id": "scene_009",
+   "arc": "reflexion_o_pregunta",
+   "duration_seconds": 11,
+   "asset_filename": "frames/frame_09.png",
+   "encuadre": "detalle",
+   "narration": "Hoy el efecto Mpemba sigue en disputa, y no hay una definición única aceptada de qué cuenta como ese efecto. La pregunta queda abierta. ¿Cuántas certezas se caen cuando se miden bien? Esto fue Datos y ociosidades.",
+   "on_screen_text": "¿Qué más damos por hecho?",
+   "visual_description": "Detalle de una mano cerrando la puerta de un congelador, con dos vasos apenas visibles adentro. Estilo linea_fina.",
+   "image_prompt": "fine line pencil illustration on white paper, precise thin strokes, subtle graphite shading, minimal composition, vertical 9:16, no text + hand closing a freezer door, two glasses visible inside",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "sfx": [
+    "motor"
+   ]
+  }
+ ],
+ "nota": "Extensión a 9 escenas (2026-11-10) a partir del borrador de 6, sin afirmaciones nuevas: solo se reparte y se aclara lo ya respaldado por SRC-001 y SRC-002. Voz oficial es-MX-JorgeNeural. Slot de programación: 2026-11-11 13:30 CDMX (extra autorizado por Mj)."
+}
