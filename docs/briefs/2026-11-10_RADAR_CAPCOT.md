@@ -3,8 +3,8 @@
 **Repositorio:** marcojpad-hash/capcot-capsulas-imaginantes  
 **Rama:** feature/capcot-video-discovery-continuity  
 **Corte de investigación:** 2026-11-10, 08:57 America/Mexico_City  
-**Resultado operativo:** NO_DUPLICAR  
-**Entregable de esta ejecución:** este brief. No se crea storyboard porque no hay un slot nuevo libre y autorizado.
+**Resultado operativo:** BORRADOR_EN_PROYECTOS; slot de prueba 13:30  
+**Entregables de esta ejecución:** este brief y un storyboard draft en proyectos/ para la ventana de mediodía en prueba. El borrador no está programado, no está en cola y no es una decisión editorial final.
 
 ## 1. Decisión de cupo y guardia anti-duplicación
 
@@ -13,12 +13,12 @@ Se leyó el horario diario vigente, data/horario_2026-11-10.json, actualizado a 
 | Slot | Registro del día | Estado observado | Tratamiento |
 |---|---|---|---|
 | 07:00 | 2026-11-06_comida-aguacate-negro | publicado_yt_tt; Facebook conserva el estado programado del lote anterior | Ocupado. No crear otro proyecto ni atribuir una nueva publicación a este investigador |
-| 13:30 | Sin asignación en el horario diario | No hay proyecto ni paquete asignado | No se interpreta como autorización |
+| 13:30 | Ventana mediodía 13:30–15:00 en prueba desde 9-nov (data/horarios.json) | Libre para staging; no hay proyecto 10-nov en esa hora | Se usa como slot de prueba para el borrador; no equivale a publicación programada |
 | 17:00 | capsaicina-resub | programado_yt_tt; resub aprobado, aún no publicado al corte | Ocupado. No duplicar ni intervenir |
 | 19:00 | Sin asignación en el horario diario | No hay proyecto ni paquete asignado | No se interpreta como autorización |
 | 23:30 | dato_del_dia | sin_paquete | Excluido expresamente por la instrucción vigente |
 
-Los cinco slots existen como capacidad general del código, pero el horario diario no asigna 13:30 ni 19:00. La ventana 23:30 está excluida. No se inventa una asignación a partir de la capacidad global.
+El contrato mantiene capacidad de hasta cinco slots. data/horarios.json marca 13:30–15:00 como ventana de prueba desde 9-nov; 19:00 está retirada salvo OK explícito; 23:30 está excluida. Se usa 13:30 únicamente como staging de prueba, sin tocar el horario ni programar publicación.
 
 Guardia de rutas para la fecha 2026-11-10:
 
@@ -29,7 +29,7 @@ Guardia de rutas para la fecha 2026-11-10:
 - El radar 2026-11-10_RADAR_CAPCOT.md no existía antes de esta escritura.
 - El paquete de robot en órbita del 9-nov existe tanto en proyectos como en cola/entrada; ambas rutas apuntan al mismo blob SHA fac47f592abdb6f6ea129bd242095da287a53595. Se conserva como material preexistente, no se vuelve a crear.
 
-**NO_DUPLICAR:** no hay un slot libre y autorizado. Se crea únicamente el radar faltante. No se crea proyectos/2026-11-10_*/storyboard.json, no se copia nada a cola/entrada y no se modifica material ajeno.
+**Guardia anti-duplicación:** no había proyecto del 10-nov en ninguna de las cuatro rutas. La ventana 13:30 en prueba está libre; por ello se creó un único borrador en proyectos/2026-11-10_comida-aprendizaje-sabor-nutriente/storyboard.json. No se copia a cola/entrada, no se programa y no se modifica material ajeno.
 
 ## 2. Rotación, memoria editorial y continuidad
 
@@ -52,7 +52,7 @@ Los candidatos de este radar no repiten literalmente los temas canónicos del lo
 - El candidato de aprendizaje sabor-nutriente tiene proximidad con la cesta comida y con aguacate, palomitas, hielo caliente y capsaicina. Se conserva por su mecanismo neurocientífico, pero no se prioriza mientras esa cesta esté tan reciente.
 - Los dos candidatos de clima-geo son distintos: uno trata el balance radiativo superficial después de incendios; el otro, la retirada repetida del sector del mar de Amundsen durante interglaciares. No se presentan como un mismo fenómeno.
 
-No se elige estilo ni estructura: al no existir slot autorizado, no se redacta storyboard. Por tanto, no se asigna ni repite un style_id en esta ejecución.
+Para el borrador de 13:30 se eligió estructura comparacion y style_id claymation con prompt_base literal del catálogo. Difiere del último estilo documentado del slot 07:00 (linea_fina) y de su estructura pregunta. La resub de 17:00 no tiene storyboard en esta rama; su estilo no es verificable aquí y no se afirma haberlo auditado.
 
 ## 3. RSS científicos: resultado exacto de acceso
 
@@ -160,19 +160,22 @@ La fecha corresponde a la publicación del artículo primario, no a la fecha en 
 - **Riesgos:** el estudio no demuestra directamente por qué las personas aprenden a amar el café amargo ni es un ensayo de preferencia por café. No decir que el café por sí mismo «libera dopamina» ni que se probó una conducta humana concreta. La evidencia causal descrita incluye experimentos en ratones; la activación de una región en humanos no equivale por sí sola a demostrar el mismo aprendizaje conductual.
 - **Verificación:** resumen y metadatos del artículo primario consultados; DOI pendiente de resolución independiente.
 
-## 6. Candidato principal recomendado — no ejecutado
+## 6. Candidato desarrollado en storyboard — borrador, no decisión editorial
 
-**Recomendación para el próximo slot que sea asignado expresamente:** remodelación mecánica de ADN en un fluido activo.
+Se eligió el candidato de aprendizaje sabor–nutriente para la ventana 13:30 en prueba, por su encaje con el contexto cotidiano de comida y porque el ángulo real es neurocientífico, no una afirmación sobre café.
 
-Motivos:
-1. Es el candidato más novedoso respecto de la rotación reciente; no repite el tema de un paquete del 5–9 nov.
-2. Tiene una pregunta única y un giro verificable: cómo un flujo desordenado puede adquirir coordinación de escala milimétrica mediante una red de ADN que emerge dentro del propio material.
-3. Permite explicar un mecanismo, no solo mostrar una cifra: microtúbulos y kinesina generan el flujo; el flujo estira y enreda el ADN; la red almacena y transmite esfuerzos; la retroalimentación organiza oscilaciones.
-4. La evidencia primaria permite expresar el límite con claridad: es un compuesto experimental construido en laboratorio, no una célula ni una función genética natural.
+- **project_id:** 2026-11-10_comida-aprendizaje-sabor-nutriente
+- **Ruta:** proyectos/2026-11-10_comida-aprendizaje-sabor-nutriente/storyboard.json
+- **Commit de creación:** 29a79447241ec2116c5b9e59a3773e1feb8c0c26
+- **Blob SHA releído:** 35a5128f7d87dac2ef829549698becffb597747c
+- **Estructura:** comparacion; **estilo:** claymation (prompt_base literal); **gancho:** «El sabor llega primero» (4 palabras).
+- **Narración:** 192 palabras; 8 escenas; 78 segundos de escenas + 6 segundos de cortinilla = 84 segundos totales; formato 9:16.
+- **Voz prevista:** edge-tts, es-MX-JorgeNeural, +7%, pitch -2Hz.
+- **Capas:** mapa con UCSF Mission Bay (37.76873, -122.39258), pin institucional y nota explícita de que no es el sitio exacto del experimento; diagrama de la ruta funcional boca → intestino → área tegmental ventral → amígdala basolateral anterior izquierda, rotulado como esquema conceptual y no como medida cuantitativa.
+- **Fuentes:** Nature primaria y registro PubMed dentro del JSON; DOI 10.1038/s41586-026-11229-5 sigue PENDIENTE_RESOLVEDOR porque Crossref y el resolvedor no completaron acceso.
+- **Comprobaciones de lectura posterior:** JSON parseado; source_ids válidos; 8 escenas; 192 palabras; 84 segundos totales; prompt_base exacto; voz exacta; mapa y capa dato presentes; approved_assets=[]; export.render_status=NOT_GENERATED; sin export.filename ni rutas de medios; publicacion.status=PENDIENTE_DECISION_GROK; narrative_qa ausente.
 
-**Límite que debe sostener cualquier futura narración:** el ADN no es el motor ni oscila de forma autónoma. La actividad la generan microtúbulos y motores de kinesina; el ADN reorganizado forma la red mecánica que retroalimenta el flujo. Los resultados dependen de longitud de polímero, concentración, geometría y actividad del sistema experimental.
-
-La recomendación no es una decisión editorial final de Grok. No se asignan título, arco, estilo, mapa ni storyboard porque no existe slot libre y autorizado el 10-nov.
+El borrador permanece únicamente en proyectos/. No se escribe narrative_qa ni se promueve a cola/entrada. El auditor independiente debe leer solo la narración concatenada y decidir PASS/FAIL. El candidato de ADN activo sigue como recomendación para un próximo slot no-comida, no como decisión de Grok.
 
 ## 7. DOI y verificación bibliográfica
 
@@ -268,8 +271,8 @@ Balance de los doce canónicos 5–7 nov: 2 PASS y 10 FAIL. El robot del 9-nov a
 
 ## 10. Integridad y límites de esta ejecución
 
-- Se crea únicamente docs/briefs/2026-11-10_RADAR_CAPCOT.md.
-- No se crea storyboard porque no existe slot libre y autorizado.
+- Se crean exactamente dos entregables de la fecha: docs/briefs/2026-11-10_RADAR_CAPCOT.md y proyectos/2026-11-10_comida-aprendizaje-sabor-nutriente/storyboard.json.
+- El borrador usa la ventana 13:30 en prueba; no se programa ni publica.
 - No se escribe ni modifica cola/entrada/, cola/bloqueados/, proyectos/ ni salidas/.
 - No se crea archivo *_fuentes.md; las fuentes de investigación están en este brief porque no hay storyboard.
 - No se escribe ni modifica narrative_qa.
@@ -279,4 +282,4 @@ Balance de los doce canónicos 5–7 nov: 2 PASS y 10 FAIL. El robot del 9-nov a
 - No se consumen créditos.
 - No se actualiza el informe técnico Meta/Google porque no se identificó un cambio nuevo sustentado directamente por documentación oficial.
 
-**Conclusión:** radar guardado; NO_DUPLICAR por ausencia de slot nuevo autorizado. La recomendación principal queda disponible para el próximo slot que sea asignado expresamente; no constituye decisión editorial final de Grok.
+**Conclusión:** radar y storyboard draft guardados. El borrador ocupa únicamente la ventana de prueba 13:30 en proyectos/; no está preparado, no está en cola y no constituye decisión editorial final de Grok. El auditor independiente conserva la lectura en frío y la decisión PASS/FAIL.
