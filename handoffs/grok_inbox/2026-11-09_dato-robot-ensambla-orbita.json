@@ -8,5 +8,7 @@
   "commit_sha": "7ea62b5e008108341fc956bd2618e31bb7c77ed0",
   "package_path": "cola/entrada/2026-11-09_dato-robot-ensambla-orbita/",
   "package_url": "https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/tree/main/cola/entrada/2026-11-09_dato-robot-ensambla-orbita",
-  "note": "Frames: Grok.com vía PARA_GROK.md. Montaje: Imaginantes ffmpeg. Slot 23:30 CDMX 9-nov. Paquete textual en 7ea62b5."
+  "note": "Frames: Grok.com vía PARA_GROK.md. Montaje: Imaginantes ffmpeg. Pedido registrado en el bus (Issue #18) el 2026-11-09 22:38 hora CDMX. Paquete textual en 7ea62b5. Frames aún no están en frames/.",
+  "bus_issue": "https://github.com/marcojpad-hash/agente-cero-costo/issues/18",
+  "bus_event": "conector/bus/gh-issue-18.json"
 }
