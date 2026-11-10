@@ -1,0 +1,17 @@
+{
+ "estado": "programado_lote_7nov",
+ "pagina": "Datos y ociosidades",
+ "formato": "Reels",
+ "visibilidad": "Público",
+ "url": null,
+ "post_id": null,
+ "publish_at_cdmx": "2026-11-10T07:00:00-06:00",
+ "hora_slot": "2026-11-10 07:00 CDMX",
+ "ui_shown": null,
+ "ai_label": null,
+ "mp4": "/workspace/capcot_prod_20261108_semana/aguacate/capsula_v2.mp4",
+ "caption_file": "/workspace/capcot_prod_20261108_semana/aguacate/caption_facebook.txt",
+ "verificado": "2026-11-10 07:26 CDMX rutina publicar TikTok 07:00",
+ "actualizado": "2026-11-10T07:26:41-06:00",
+ "nota": "No se reabrió Facebook en esta corrida y la página pública no expuso el ID del reel. Las rutinas de las 02:30 y 06:36 CDMX lo dieron por programado el martes 10-nov a las 8:00 Público (hora de Nueva York = 07:00 CDMX), mismo lote del 7-nov que publicó palomitas a su hora y programó la rana. No se volvió a subir para no duplicar."
+}
