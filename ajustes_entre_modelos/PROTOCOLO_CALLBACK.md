@@ -62,8 +62,9 @@ Pecas: Imaginantes no tiene buzón escribible y Marco lo ve en el reporte
 de la mañana.
 
 El workflow no se puede subir por API (la app de Muse no tiene permiso
-Workflows). Está listo en `~/workspace/callback-aviso/` para subirlo por
-navegador con la cuenta de Marco, igual que los workflows de seguridad.
+Workflows). Se sube por el bus a Copilot/Codex (escritura nativa) o por el
+navegador de Pecas. Marco no sube workflows. (Corregido 2026-11-10, G5:
+la regla vieja decía "por navegador con la cuenta de Marco".)
 
 ## El orquestador
 

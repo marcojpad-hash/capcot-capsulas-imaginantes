@@ -27,24 +27,27 @@ su propio tablero.
 
 ### 3. Subir los workflows de seguridad de CAPCOT
 - DE: Pecas
-- PARA: Marco (por navegador, la app de Muse no tiene permiso Workflows)
+- PARA: Pecas (por navegador; ruta probada con guardian.yml 2026-11-09)
 - QUÉ: subir `gitleaks.yml` y `semgrep.yml` (CAPCOT). Archivos listos en `~/workspace/security-upload/`
 - PARA CUÁNDO: cuanto antes
 - ESTADO: PENDIENTE
+- NOTA: reasignado 2026-11-10 (G3): Marco no es el autorizador ni sube nada; la vía del bus a Copilot/Codex no cerraba porque no puede leer el workspace de Pecas, así que va por el navegador de Pecas
 
 ### 4. Activar la seguridad nativa en GitHub
 - DE: Pecas
-- PARA: Marco (manual en Settings)
+- PARA: Pecas (por navegador, en Settings > Code security)
 - QUÉ: secret scanning y CodeQL en CAPCOT, alertas de Dependabot en CAPCOT
 - PARA CUÁNDO: cuanto antes
 - ESTADO: PENDIENTE
+- NOTA: reasignado 2026-11-10 (G3): Marco no es el autorizador; los toggles de Settings los activa el navegador de Pecas, no Marco
 
 ### 5. Crear cuenta gratuita de Clayzo
 - DE: Pecas
-- PARA: Marco
+- PARA: Marco (decide si se crea; si dice que sí, Pecas la crea por navegador)
 - QUÉ: crear la cuenta gratuita para probar el render del documento Mpemba (1080x1920, capas de texto/dato/mapa)
 - PARA CUÁNDO: sin fecha
 - ESTADO: PENDIENTE
+- NOTA: reasignado 2026-11-10 (G3): crear cuentas es decisión de Marco, no trabajo de autorización; la ejecución es de Pecas. Duda: Mpemba v2 ya se montó con los clips originales, ¿sigue haciendo falta esta prueba?
 
 ## En progreso
 
