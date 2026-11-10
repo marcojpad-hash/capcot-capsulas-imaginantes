@@ -222,3 +222,9 @@ Entrega: `cola/entrada/2026-11-02_dato-cempasuchil-raices/` con `storyboard.json
 
 Formato: 205–235 palabras, voz es-MX-JorgeNeural +7 % continuo, línea editorial `PARA_CHATGPT_LINEA_EDITORIAL.md` §8–9. Hashtags simples: `#ciencia #corazon #sueño #horario #datoscuriosos`.
 Entrega: `cola/entrada/2026-11-01_dato-cambio-horario-corazon/` con `storyboard.json`, `fuentes.md`, `ESTADO_EJECUCION.md` = `PREPARADO_PENDIENTE_REVISION_GROK`.
+
+## Brief del día 2026-11-10 (slot 23:30 CDMX) — sin paquete en cola a las 10:00
+- Pendiente: `cola/entrada/2026-11-10_dato-<slug>/` (storyboard.json, fuentes.md, ESTADO_EJECUCION.md).
+- Formato: tip práctico de cocina/hogar con ancla científica verificable (URL/DOI); 8 escenas, 85–90 s, cierre de 2 escenas (≥10 s) con «Esto fue Datos y ociosidades.».
+- Variedad: base distinta de las 50 plantillas, paleta y encuadres distintos a los de 7–9 nov (no gouache verde azulado/dorado, no la científica recurrente); 9–10 frames con plano_seconds=5 si aplica.
+- Sin frames, sin audio, sin publicar. Montaje/QA/publicación: Grok app.
