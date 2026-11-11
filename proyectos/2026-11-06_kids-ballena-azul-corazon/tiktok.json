@@ -1,0 +1,20 @@
+{
+ "estado": "publicado",
+ "hora_local": "2026-11-11 07:00 CDMX",
+ "visibilidad": "Everyone",
+ "post_id": "7705594333574991122",
+ "url": "https://www.tiktok.com/@datosyociosidades/video/7705594333574991122",
+ "cuenta": "@datosyociosidades",
+ "verificado": "2026-11-11 07:25 CDMX rutina publicar TikTok 07:00",
+ "etiqueta_ia": null,
+ "etiqueta_ia_nota": "La programación del lote el 7-nov se hizo con etiqueta IA ON. Esta verificación usó el listado público (yt-dlp) y no comprobó el distintivo en Studio.",
+ "stats_al_verificar": {
+  "playCount": 23
+ },
+ "createTime_cdmx": "2026-11-11T07:00:00-06:00",
+ "caption": "Esta ballena bajó a dos latidos por minuto. Tócate la muñeca y piensa en tu propio pulso. No intentes compararte como si fuera una competencia: tu cuerpo y el de este gigante resuelven necesidades muy distintas.\n\n#curiosidades #ciencia #datosinteresantes #shorts #animales",
+ "mp4": "/workspace/capcot_prod_20261108_semana/ballena/capsula_v2.mp4",
+ "yt_id": "wbFrlM2e_YE",
+ "youtube_url": "https://youtube.com/shorts/wbFrlM2e_YE",
+ "nota": "Ya estaba publicado como Everyone a las 07:00 CDMX; no se subió nada. 23 vistas al verificar. El listado público coincidió con el caption del lote."
+}

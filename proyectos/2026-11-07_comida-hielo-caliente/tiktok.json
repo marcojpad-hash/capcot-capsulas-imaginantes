@@ -1,0 +1,19 @@
+{
+ "estado": "programado",
+ "hora_local": "2026-11-11 13:30 CDMX",
+ "ui_timezone": "GMT-5 New York",
+ "ui_hora_mostrada": "2026-11-11 14:30",
+ "visibilidad": "Everyone",
+ "post_id": "7706905447424347393",
+ "url": "https://www.tiktok.com/@datosyociosidades/video/7706905447424347393",
+ "scheduled_list": "https://www.tiktok.com/tiktokstudio/content",
+ "cuenta": "@datosyociosidades",
+ "verificado": "2026-11-11 07:35 CDMX rutina publicar TikTok 07:00",
+ "etiqueta_ia": true,
+ "portada": "portada.jpg (primer frame con título ¿CALIENTE SE CONGELA ANTES?)",
+ "caption": "El agua caliente se congela antes que la fría.\n\nEl efecto Mpemba: un estudiante en Tanzania notó que la mezcla caliente para helado se congeló antes; en 2016, una revisión no halló evidencia clara y el efecto sigue en disputa.\n\nFuentes en YouTube @datosyociosidades\n\n#aprendeentiktok #sabiasque #ciencia #divulgacioncientifica #EfectoMpemba",
+ "mp4": "/workspace/capcot_main/salidas/2026-11-07_comida-hielo-caliente/capsula.mp4",
+ "yt_id": "HSgrnejAcaI",
+ "youtube_url": "https://youtube.com/shorts/HSgrnejAcaI",
+ "nota": "Programado en esta corrida (no había un post igual ya agendado). Studio mostró GMT-5 New York; se fijó 14:30 = 13:30 CDMX. Everyone, etiqueta de contenido generado por IA ON, portada subida (portada.jpg) con el título visible. No se publicó al momento."
+}

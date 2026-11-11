@@ -1,0 +1,22 @@
+{
+ "estado": "programado",
+ "pagina": "Datos y ociosidades",
+ "formato": "Reels",
+ "visibilidad": "Público",
+ "url": "https://business.facebook.com/latest/posts/scheduled_posts?asset_id=1460158683840154",
+ "post_id": null,
+ "asset_id_lista": "1460158683840154",
+ "publish_at_cdmx": "2026-11-11T13:30:00-06:00",
+ "hora_slot": "2026-11-11 13:30 CDMX",
+ "ui_timezone": "America/New_York",
+ "ui_hora_mostrada": "2026-11-11 14:30",
+ "ai_label": null,
+ "ai_label_nota": "Facebook Reels no ofreció sello de contenido IA.",
+ "portada": "portada.jpg (miniatura con título ¿CALIENTE SE CONGELA ANTES?)",
+ "mp4": "/workspace/capcot_main/salidas/2026-11-07_comida-hielo-caliente/capsula.mp4",
+ "caption_file": "/workspace/capcot_main/salidas/2026-11-07_comida-hielo-caliente/caption_facebook.txt",
+ "verificado": "2026-11-11 07:35 CDMX rutina publicar TikTok 07:00",
+ "actualizado": "2026-11-11T07:35:14-06:00",
+ "estado_ui": "En proceso…",
+ "nota": "Programado en esta corrida como Reel Público. El programador mostró America/New_York; se fijó 14:30 = 13:30 CDMX. Miniatura = portada.jpg con el título visible. La confirmación indicó que queda programado para el 11-nov tras procesar; la lista de programados muestra 14:30 y Público con estado «En proceso…». No se publicó al momento."
+}
