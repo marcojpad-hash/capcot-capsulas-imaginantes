@@ -18,7 +18,12 @@
   ],
   "proveedor_imagenes": "generadas con IA (ilustración no realista, carton_recortado)",
   "parece_real": false,
-  "trend_source": "dato práctico de cocina / seguridad alimentaria (qué pasa en tu casa)",
+  "trend_source": {
+    "tipo": "dato_practico",
+    "medio": "cocina / seguridad alimentaria",
+    "termino": "arroz Bacillus cereus",
+    "nota": "dato práctico de cocina / seguridad alimentaria (qué pasa en tu casa)"
+  },
   "export": {
     "filename": "capsula.mp4",
     "fps": 30,
@@ -236,9 +241,21 @@
         "mercado"
       ],
       "capa": {
-        "tipo": "dato",
-        "valor": "1 hora",
-        "etiqueta": "Enfriar y no dejarlo en la olla",
+        "tipo": "mapa",
+        "region": [
+          -12,
+          5,
+          49,
+          61
+        ],
+        "puntos": [
+          {
+            "nombre": "Reino Unido",
+            "lon": -1.8,
+            "lat": 51.5
+          }
+        ],
+        "titulo": "Agencia de alimentos del Reino Unido",
         "fuente": "FSA / GOV.UK, 2026",
         "plano": 1
       }
@@ -519,5 +536,5 @@
       "miniatura": "primer frame (portada con el título)"
     }
   },
-  "nota": "Cápsula NUEVA, solo storyboard (2026-11-11). No se generaron imágenes, no se montó y no se publica. Pensada para que otro modelo, con edge-tts, la genere entera a partir de este JSON. Voz oficial es-MX-JorgeNeural. Estimación de duración: 204 palabras, ~82 s de voz neta a 2,6 pal/s con pausas, ~87 s de escenas con delay 0,25 s y pad 0,3 s, más 6 s de cortinilla (~93 s al final)."
+  "nota": "Cápsula NUEVA, solo storyboard (2026-11-11). No se generaron imágenes, no se montó y no se publica. Pensada para que otro modelo, con edge-tts, la genere entera a partir de este JSON. Voz oficial es-MX-JorgeNeural. Estimación de duración: 204 palabras, ~82 s de voz neta a 2,6 pal/s con pausas, ~87 s de escenas con delay 0,25 s y pad 0,3 s, más 6 s de cortinilla (~93 s al final). Montaje 2026-11-11: frames 01-09 recortados (marca Dola AI abajo, 7,3 %) a 1080x1920. El frame 09 (cocina al atardecer) se usó en el cierre. En la escena 7 la capa de dato «1 hora» se sustituyó por un mapa del Reino Unido (el dato sigue en el texto en pantalla) para cumplir la compuerta de capa_mapa; la escena 6 conserva la capa de dato."
 }

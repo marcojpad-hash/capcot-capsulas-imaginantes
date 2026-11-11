@@ -66,6 +66,18 @@ def ts(t):
     ms = int(round(t * 1000)); h, ms = divmod(ms, 3600000); m, ms = divmod(ms, 60000); s, ms = divmod(ms, 1000)
     return f"{h:02}:{m:02}:{s:02},{ms:03}"
 
+def _expand_words(words):
+    """edge-tts a veces emite '24 horas' como un solo WordBoundary."""
+    flat = []
+    for s, e, w in words:
+        parts = [x for x in w.split() if x]
+        if len(parts) <= 1:
+            flat.append((s, e, w)); continue
+        dur = max(e - s, 1e-3); step = dur / len(parts)
+        for i, part in enumerate(parts):
+            flat.append((s + i * step, s + (i + 1) * step, part))
+    return flat
+
 def srt_from_words(words, max_words=3):
     out, i, n = [], 0, 1
     while i < len(words):
@@ -226,10 +238,14 @@ def _plano(png, seconds, out_mp4, mov, overlay=None, ov_hasta=None):
     run(["ffmpeg", "-y", "-loop", "1", "-i", png, *ins, "-filter_complex", fc, "-map", "[o]", "-frames:v", str(fr),
          "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-r", str(FPS), out_mp4])
 
-def n_planos(seconds, plano_s=2.5): return max(1, round(seconds / plano_s))
+def n_planos(seconds, plano_s=2.5, capa=None):
+    n = max(1, round(seconds / plano_s))
+    if capa:  # la capa sustituye un plano; hace falta al menos otro para que se vea el frame
+        n = max(n, 2)
+    return n
 
 def escena_video(png, seconds, out_mp4, idx, texto="", plano_s=2.5, gancho=False, capa=None, titulo_estilo=None):
-    tmpd = tempfile.mkdtemp(prefix="pl_"); n = n_planos(seconds, plano_s); parts = []
+    tmpd = tempfile.mkdtemp(prefix="pl_"); n = n_planos(seconds, plano_s, capa); parts = []
     ov = None
     if texto:
         ov = os.path.join(tmpd, "t.png"); texto_png(texto, ov, gancho, titulo_estilo)
@@ -262,8 +278,10 @@ def main():
         if continuo and words: sdur = adur + 0.25 + pad   # la escena dura lo que su voz: sin huecos
         elif continuo: sdur = float(sc.get("duration_seconds", 3))
         else: sdur = max(float(sc["duration_seconds"]), adur + pad)
+        words = _expand_words(words)
         toks = sc["narration"].split()  # recuperar puntuación del guion (edge-tts la omite)
         if len(toks) == len(words): words = [(s, e, tok) for (s, e, _), tok in zip(words, toks)]
+        elif words: print(f"AVISO: {sc['id']} palabras TTS {len(words)} != tokens {len(toks)}", file=sys.stderr)
         all_words += [(s + t + 0.25, e + t + 0.25, w) for s, e, w in words]
         wav = os.path.join(tmp, f"{sc['id']}.wav")
         src = ["-i", mp3] if words else ["-f", "lavfi", "-i", "anullsrc=r=48000:cl=mono"]
@@ -274,7 +292,7 @@ def main():
         escena_video(os.path.join(base, sc["asset_filename"]), sdur, mp4, i, titulo if i == 0 else sc.get("on_screen_text", ""),
                      float(sb.get("export", {}).get("plano_seconds", 2.5)), gancho=(i == 0), capa=sc.get("capa"),
                      titulo_estilo=sb.get("titulo_estilo")); clips.append(mp4)
-        ps = float(sb.get("export", {}).get("plano_seconds", 2.5)); n = n_planos(sdur, ps)
+        ps = float(sb.get("export", {}).get("plano_seconds", 2.5)); n = n_planos(sdur, ps, sc.get("capa"))
         sfx = sc.get("sfx") or [sc.get("ambiente") or "olas"]  # lista por plano; el último se repite
         durs += [(sfx[min(k, len(sfx) - 1)], sdur / n) for k in range(n)]
         print(f"{sc['id']}: voz {adur:.1f}s, escena {sdur:.1f}s"); t += sdur

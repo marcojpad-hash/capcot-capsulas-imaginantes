@@ -1,0 +1,51 @@
+{
+ "project_id": "2026-11-15_comida-arroz-olvidado",
+ "musica": {
+  "cama": "pulso",
+  "origen": "síntesis propia (scripts/cama_sonora.py, numpy)",
+  "licencia": "obra propia de Datos y ociosidades",
+  "generada_por_ia": false
+ },
+ "sfx": {
+  "mercado": {
+   "origen": "síntesis propia (cama_sonora.py)",
+   "licencia": "obra propia"
+  },
+  "reloj": {
+   "archivo": "reloj.ogg",
+   "commons": "File:Clock ticking.ogg",
+   "autor": "natalie",
+   "licencia": "Public domain",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/5/56/Clock_ticking.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Clock_ticking.ogg",
+   "licencia_verificada": "Public domain"
+  },
+  "silencio": {
+   "origen": "síntesis propia (cama_sonora.py)",
+   "licencia": "obra propia"
+  }
+ },
+ "imagenes": {
+  "origen": "generadas con IA (ilustración no realista, carton_recortado)",
+  "estilo": "carton_recortado",
+  "realista": false
+ },
+ "voz": {
+  "motor": "Microsoft Edge TTS",
+  "voz": "es-MX-JorgeNeural",
+  "nota": "voz sintética; no imita a una persona real"
+ },
+ "capas_datos": {
+  "tipos": [
+   "dato",
+   "mapa"
+  ],
+  "mapa_base": "Natural Earth 110m (dominio público)",
+  "render": "matplotlib (propio)"
+ },
+ "fuentes_datos": [
+  "https://www.gov.uk/government/publications/home-food-fact-checker/home-food-fact-checker",
+  "https://www.fda.gov/media/83271/download",
+  "https://doi.org/10.3390/foods12040833"
+ ]
+}
