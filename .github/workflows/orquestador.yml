@@ -1,0 +1,50 @@
+# Orquestador de CAPCOT, corriendo solo en GitHub Actions.
+#
+# Este es el análogo a costo cero de la máquina persistente: no hay VM que
+# pagar. GitHub Actions corre el orquestador por horario en el repo público
+# (minutos gratis) y guarda el reporte en el repo.
+#
+# NECESITA: el secreto GROQ_API_KEY en Settings > Secrets and variables >
+# Actions del repo. La clave se crea en console.groq.com (nivel gratuito).
+# Pecas no puede ponerla: la clave guardada en la bóveda no se puede leer
+# de vuelta, así que Marco crea o copia la clave en el secreto.
+#
+# ESTE ARCHIVO NO SE PUEDE SUBIR POR API (la app de Muse no tiene permiso
+# Workflows). Subirlo por navegador con la cuenta de Marco.
+
+name: Orquestador
+
+on:
+  schedule:
+    - cron: '0 13 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  reporte:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Correr el orquestador
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+        run: |
+          python3 tools/orquestador/orquestador.py \
+            --repo . \
+            --salida tools/orquestador/reporte.md \
+            --api-key-env GROQ_API_KEY
+
+      - name: Guardar el reporte en el repo
+        run: |
+          git config user.name "orquestador"
+          git config user.email "orquestador@capcot.local"
+          git add tools/orquestador/reporte.md
+          git diff --cached --quiet || git commit -m "Orquestador: reporte diario"
+          git push
