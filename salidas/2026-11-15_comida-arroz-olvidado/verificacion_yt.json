@@ -1,0 +1,138 @@
+{
+ "video_id": "maLtsoQpxwI",
+ "thumbnails_set_portada_v2": {
+  "ok": true,
+  "path": "/workspace/entregas/2026-11-15_arroz/portada_v2.jpg"
+ },
+ "videos_list": {
+  "id": "maLtsoQpxwI",
+  "channelId": "UCU2ZI-6pBJEr9aSFsF6bxLw",
+  "channelTitle": "Datos y ociosidades",
+  "title": "¿El arroz de ayer puede enfermarte? #Shorts",
+  "description_start": "El arroz que dejaste en la estufa puede enfermarte. El problema no es recalentarlo: es lo que pasó mientras se enfriaba.\n\n¿El arroz de ayer puede enfermarte?. Una cápsula de Datos ",
+  "tags": [
+   "Arroz",
+   "BacillusCereus",
+   "Cocina",
+   "DatosYOciosidades",
+   "Shorts",
+   "ciencia",
+   "datos",
+   "difusión",
+   "difusióncientífica",
+   "ia"
+  ],
+  "categoryId": "27",
+  "defaultLanguage": "es",
+  "publishedAt": "2026-11-11T19:55:39Z",
+  "privacyStatus": "private",
+  "publishAt": "2026-11-12T01:00:00Z",
+  "madeForKids": false,
+  "selfDeclaredMadeForKids": false,
+  "containsSyntheticMedia": null,
+  "uploadStatus": "uploaded",
+  "rejectionReason": null,
+  "embeddable": true,
+  "license": "youtube",
+  "duration": "P0D",
+  "definition": "sd",
+  "processingDetails": {
+   "processingStatus": "processing",
+   "processingProgress": {
+    "partsTotal": "1000",
+    "partsProcessed": "1000",
+    "timeLeftMs": "0"
+   },
+   "fileDetailsAvailability": "available",
+   "processingIssuesAvailability": "available",
+   "tagSuggestionsAvailability": "inProgress",
+   "editorSuggestionsAvailability": "inProgress",
+   "thumbnailsAvailability": "inProgress"
+  },
+  "thumbnails": {
+   "default": {
+    "url": "https://i9.ytimg.com/vi/maLtsoQpxwI/default.jpg?sqp=CJSQ09cG&rs=AOn4CLBBhz42oOf16KMh2HI2XeSxUTDS-g",
+    "width": 120,
+    "height": 90
+   },
+   "medium": {
+    "url": "https://i9.ytimg.com/vi/maLtsoQpxwI/mqdefault.jpg?sqp=CJSQ09cG&rs=AOn4CLAZpD3BOyQElII4LrZNs4e4gJq6Xg",
+    "width": 320,
+    "height": 180
+   },
+   "high": {
+    "url": "https://i9.ytimg.com/vi/maLtsoQpxwI/hqdefault.jpg?sqp=CJSQ09cG&rs=AOn4CLAvCQnVoTrjZ8Q8VWV2ohmJMQZWdw",
+    "width": 480,
+    "height": 360
+   },
+   "standard": {
+    "url": "https://i9.ytimg.com/vi/maLtsoQpxwI/sddefault.jpg?sqp=CJSQ09cG&rs=AOn4CLBev21W-IlnXwmImGSthvWej37OpQ",
+    "width": 640,
+    "height": 480
+   },
+   "maxres": {
+    "url": "https://i9.ytimg.com/vi/maLtsoQpxwI/maxresdefault.jpg?sqp=CJSQ09cG&rs=AOn4CLCMyli5aDrX6K8Ry6QJmLzDRMWvSw",
+    "width": 1280,
+    "height": 720
+   },
+   "qhd": {
+    "url": "https://i9.ytimg.com/vi/maLtsoQpxwI/qhddefault.jpg?sqp=CJSQ09cG&rs=AOn4CLBMbIlbZKkQDlM8cUenIQz3NRFZcA",
+    "width": 2560,
+    "height": 1440
+   }
+  }
+ },
+ "videos_list_after_processing": {
+  "id": "maLtsoQpxwI",
+  "channelId": "UCU2ZI-6pBJEr9aSFsF6bxLw",
+  "title": "¿El arroz de ayer puede enfermarte? #Shorts",
+  "privacyStatus": "private",
+  "publishAt": "2026-11-12T01:00:00Z",
+  "duration": "PT1M28S",
+  "definition": "hd",
+  "processingDetails": {
+   "processingStatus": "succeeded",
+   "fileDetailsAvailability": "available",
+   "processingIssuesAvailability": "available",
+   "tagSuggestionsAvailability": "inProgress",
+   "editorSuggestionsAvailability": "inProgress",
+   "thumbnailsAvailability": "available"
+  },
+  "containsSyntheticMedia": null,
+  "selfDeclaredMadeForKids": false,
+  "madeForKids": false,
+  "categoryId": "27",
+  "thumbnails": {
+   "default": {
+    "url": "https://i9.ytimg.com/vi/maLtsoQpxwI/default.jpg?sqp=CJSQ09cG&rs=AOn4CLBBhz42oOf16KMh2HI2XeSxUTDS-g",
+    "width": 120,
+    "height": 90
+   },
+   "medium": {
+    "url": "https://i9.ytimg.com/vi/maLtsoQpxwI/mqdefault.jpg?sqp=CJSQ09cG&rs=AOn4CLAZpD3BOyQElII4LrZNs4e4gJq6Xg",
+    "width": 320,
+    "height": 180
+   },
+   "high": {
+    "url": "https://i9.ytimg.com/vi/maLtsoQpxwI/hqdefault.jpg?sqp=CJSQ09cG&rs=AOn4CLAvCQnVoTrjZ8Q8VWV2ohmJMQZWdw",
+    "width": 480,
+    "height": 360
+   },
+   "standard": {
+    "url": "https://i9.ytimg.com/vi/maLtsoQpxwI/sddefault.jpg?sqp=CJSQ09cG&rs=AOn4CLBev21W-IlnXwmImGSthvWej37OpQ",
+    "width": 640,
+    "height": 480
+   },
+   "maxres": {
+    "url": "https://i9.ytimg.com/vi/maLtsoQpxwI/maxresdefault.jpg?sqp=CJSQ09cG&rs=AOn4CLCMyli5aDrX6K8Ry6QJmLzDRMWvSw",
+    "width": 1280,
+    "height": 720
+   },
+   "qhd": {
+    "url": "https://i9.ytimg.com/vi/maLtsoQpxwI/qhddefault.jpg?sqp=CJSQ09cG&rs=AOn4CLBMbIlbZKkQDlM8cUenIQz3NRFZcA",
+    "width": 2560,
+    "height": 1440
+   }
+  }
+ }
+}

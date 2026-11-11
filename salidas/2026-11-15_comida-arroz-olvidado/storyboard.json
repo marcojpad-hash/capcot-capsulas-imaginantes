@@ -1,0 +1,541 @@
+{
+  "project_id": "2026-11-15_comida-arroz-olvidado",
+  "serie": "Datos y ociosidades",
+  "title": "¿El arroz de ayer puede enfermarte?",
+  "titulo": "¿El arroz de ayer?",
+  "language": "es-MX",
+  "estilo_id": "carton_recortado",
+  "estilo_visual": "handmade figures cut from corrugated cardboard, raw torn edges, marker details, photographed on a table with soft light, kraft brown, warm ochre, faded red marker, cream and charcoal marker lines, vertical 9:16, no text, no letters, no numbers, no logos",
+  "estructura": "mito_vs_dato",
+  "aspect_ratio": "9:16",
+  "target_duration_seconds": 87,
+  "resumen": "El riesgo del arroz recocido no está en recalentarlo, sino en dejarlo enfriar lento a temperatura ambiente: las esporas de Bacillus cereus sobreviven la cocción, germinan y producen cereulida, una toxina que el fuego ya no destruye. La agencia de alimentos del Reino Unido recomienda enfriarlo de preferencia en una hora, refrigerarlo y comerlo en 24 horas.",
+  "keywords": [
+    "arroz",
+    "Bacillus cereus",
+    "cereulida",
+    "seguridad alimentaria"
+  ],
+  "proveedor_imagenes": "generadas con IA (ilustración no realista, carton_recortado)",
+  "parece_real": false,
+  "trend_source": {
+    "tipo": "dato_practico",
+    "medio": "cocina / seguridad alimentaria",
+    "termino": "arroz Bacillus cereus",
+    "nota": "dato práctico de cocina / seguridad alimentaria (qué pasa en tu casa)"
+  },
+  "export": {
+    "filename": "capsula.mp4",
+    "fps": 30,
+    "loudness_lufs": -14,
+    "resolution": "1080x1920",
+    "plano_seconds": 5,
+    "subtitle_max_words": 3
+  },
+  "voice": {
+    "engine": "edge-tts",
+    "modo_pausas": "continuo",
+    "pad_seconds": 0.3,
+    "pitch": "-2Hz",
+    "rate": "+7%",
+    "voice_id": "es-MX-JorgeNeural"
+  },
+  "audio": {
+    "music_asset": "sintetico:pulso",
+    "cama_musical": "pulso",
+    "music_lufs": -27,
+    "ambiente_lufs": -26
+  },
+  "cortinilla_fuentes": {
+    "aviso": "Imágenes generadas con IA. Voz sintética.",
+    "duration_seconds": 6,
+    "firma": "Datos y ociosidades · @datosyociosidades",
+    "titulo": "Fuentes",
+    "bg_rgb": [
+      18,
+      16,
+      14
+    ]
+  },
+  "sources": [
+    {
+      "accessed": "2026-11-11",
+      "cita_corta": "Food Standards Agency / GOV.UK (actualizado 21 agosto 2026). Home food fact checker, sección Rice.",
+      "id": "SRC-001",
+      "ref_display": "GOV.UK › FSA, Home food fact checker, 2026",
+      "supports": [
+        "En el arroz crudo pueden ir esporas de una bacteria llamada Bacillus cereus, que puede causar intoxicación alimentaria",
+        "Las esporas de Bacillus cereus pueden sobrevivir a la cocción",
+        "Cuanto más tiempo se deja el arroz cocido a temperatura ambiente, más probable es que las bacterias o las toxinas lo hagan inseguro",
+        "El problema no es el recalentamiento en sí, sino cómo se guardó el arroz antes de recalentarlo",
+        "Se puede recoger intoxicación al comer arroz recalentado si se almacenó mal",
+        "Se debe enfriar el arroz sobrante lo más rápido posible, de preferencia en una hora; dividirlo en porciones ayuda; no dejarlo enfriar en la olla, la vaporera ni la arrocera",
+        "Guardar el arroz en el refrigerador no más de un día y comerlo en las siguientes 24 horas; se puede comer frío si se enfrió rápido",
+        "Si se recalienta, que quede humeante por completo, y nunca más de una vez",
+        "Se puede congelar si se enfría rápido, de preferencia en una hora"
+      ],
+      "url": "https://www.gov.uk/government/publications/home-food-fact-checker/home-food-fact-checker"
+    },
+    {
+      "accessed": "2026-11-11",
+      "cita_corta": "Food and Drug Administration (2012). Bacillus cereus and other Bacillus species. In: Bad Bug Book, Foodborne Pathogenic Microorganisms and Natural Toxins. Second Edition.",
+      "id": "SRC-002",
+      "ref_display": "FDA › Bad Bug Book, 2.ª ed., 2012",
+      "supports": [
+        "Bacillus cereus es una bacteria formadora de endosporas, común en el ambiente y a menudo aislada del suelo y la vegetación",
+        "Hay dos cuadros: el emético, asociado a la cereulida ya formada en la comida, y el diarreico, por una toxina que se forma en el intestino",
+        "Los brotes de tipo emético se han asociado en general con productos de arroz, y también con otros almidones como papa y pasta",
+        "La cereulida es estable al pH y resistente al calor y a las proteasas; permanece estable tras calentar a 121 °C durante 30 minutos",
+        "El cuadro emético provoca náusea y vómito; el inicio es de 0,5 a 6 horas después de comer y los síntomas suelen ceder hacia las 24 horas",
+        "Cocinar puede matar las bacterias, pero podría no inactivar la toxina del cuadro emético",
+        "Se recomienda refrigerar los alimentos a 4 °C (40 °F) o menos"
+      ],
+      "url": "https://www.fda.gov/media/83271/download"
+    },
+    {
+      "accessed": "2026-11-11",
+      "cita_corta": "Yang, S., Wang, Y., Liu, Y., Jia, K., Zhang, Z. and Dong, Q. (2023). Cereulide and Emetic Bacillus cereus: Characterizations, Impacts and Public Precautions. Foods 12(4), 833.",
+      "doi": "10.3390/foods12040833",
+      "id": "SRC-003",
+      "ref_display": "Foods › Yang et al. 2023",
+      "supports": [
+        "La cereulida se produce en el alimento antes de comerlo y es muy improbable que se inactive en el procesado: es extremadamente estable al calor (incluso a 121 °C durante 2 h, al asado, al fritura y al microondas) y en un rango amplio de pH",
+        "Una vez formada la cereulida en la comida, no se puede eliminar con el procesado posterior; recalentar es ineficiente para destruir esa toxina",
+        "Las esporas de Bacillus cereus son muy tolerantes al calor; pueden germinar cuando la comida cocida se enfría despacio hasta temperatura ambiente y crecer rápido porque la cocción mató a las bacterias competidoras",
+        "El Bacillus cereus emético se ha detectado con frecuencia en el arroz",
+        "Las esporas y las células se encuentran de forma habitual en el suelo",
+        "Se recomienda comer el alimento justo después de cocinarlo, o enfriarlo lo más rápido posible y guardarlo en el refrigerador"
+      ],
+      "url": "https://doi.org/10.3390/foods12040833"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_001",
+      "arc": "hook_medias_res",
+      "duration_seconds": 9,
+      "asset_filename": "frames/frame_01.png",
+      "encuadre": "general",
+      "narration": "El arroz que dejaste en la estufa puede enfermarte. El problema no es recalentarlo: es lo que pasó mientras se enfriaba.",
+      "on_screen_text": "¿El arroz de ayer?",
+      "visual_description": "Plano general de una cocina de mesa: olla de cartón corrugado con arroz, todavía sobre la estufa apagada, vapor apenas visible. Tercio superior vacío para el título. Estilo carton_recortado. Sin texto en la imagen.",
+      "image_prompt": "handmade figures cut from corrugated cardboard, raw torn edges, marker details, photographed on a table with soft light, kraft brown, warm ochre, faded red marker, cream and charcoal marker lines, vertical 9:16, no text, no letters, no numbers, no logos + wide shot of a homemade kitchen table diorama, corrugated cardboard pot of cooked rice left on a cardboard stove, faint steam, empty upper third of the frame for a title, no people, no text",
+      "source_ids": [
+        "SRC-001"
+      ],
+      "sfx": [
+        "mercado"
+      ]
+    },
+    {
+      "id": "scene_002",
+      "arc": "desarrollo",
+      "duration_seconds": 9,
+      "asset_filename": "frames/frame_02.png",
+      "encuadre": "cenital",
+      "narration": "En el arroz crudo pueden ir esporas de una bacteria llamada Bacillus cereus. Vienen del suelo y de la vegetación, y resisten la cocción.",
+      "on_screen_text": "Esporas en el grano",
+      "visual_description": "Plano cenital de un puñado de granos de arroz crudo de cartón sobre una mesa, con un poco de tierra y una bolsa rasgada al lado. Sin texto ni letras en la imagen. Estilo carton_recortado.",
+      "image_prompt": "handmade figures cut from corrugated cardboard, raw torn edges, marker details, photographed on a table with soft light, kraft brown, warm ochre, faded red marker, cream and charcoal marker lines, vertical 9:16, no text, no letters, no numbers, no logos + overhead view of raw rice grains cut from corrugated cardboard on a wooden table, a little soil and a torn kraft bag beside them, no people, no text",
+      "source_ids": [
+        "SRC-001",
+        "SRC-002",
+        "SRC-003"
+      ],
+      "sfx": [
+        "mercado"
+      ]
+    },
+    {
+      "id": "scene_003",
+      "arc": "desarrollo",
+      "duration_seconds": 9,
+      "asset_filename": "frames/frame_03.png",
+      "encuadre": "macro",
+      "narration": "Al cocinar, se mueren muchas bacterias. Pero las esporas de Bacillus cereus sobreviven al hervor y quedan listas para despertar.",
+      "on_screen_text": "Sobreviven al hervor",
+      "visual_description": "Macro de arroz hirviendo en una olla de cartón: burbujas, vapor y bordes corrugados. Sin texto. Estilo carton_recortado.",
+      "image_prompt": "handmade figures cut from corrugated cardboard, raw torn edges, marker details, photographed on a table with soft light, kraft brown, warm ochre, faded red marker, cream and charcoal marker lines, vertical 9:16, no text, no letters, no numbers, no logos + extreme close-up of cooked rice boiling in a corrugated cardboard pot, bubbles and steam, raw cardboard edges, no people, no text",
+      "source_ids": [
+        "SRC-001",
+        "SRC-003"
+      ],
+      "sfx": [
+        "mercado"
+      ]
+    },
+    {
+      "id": "scene_004",
+      "arc": "desarrollo",
+      "duration_seconds": 9,
+      "asset_filename": "frames/frame_04.png",
+      "encuadre": "detalle",
+      "narration": "Si el arroz se queda a temperatura ambiente, las esporas germinan y la bacteria se multiplica. Ahí produce una toxina llamada cereulida.",
+      "on_screen_text": "Germinan al enfriarse",
+      "visual_description": "Detalle de la olla de arroz ya tibia sobre la encimera, junto a un reloj de cartón sin números ni letras. Estilo carton_recortado. Sin texto en la imagen.",
+      "image_prompt": "handmade figures cut from corrugated cardboard, raw torn edges, marker details, photographed on a table with soft light, kraft brown, warm ochre, faded red marker, cream and charcoal marker lines, vertical 9:16, no text, no letters, no numbers, no logos + close detail of a lukewarm cardboard pot of rice left on a kitchen counter, a cardboard clock without numbers beside it, afternoon window light, no people, no text",
+      "source_ids": [
+        "SRC-001",
+        "SRC-003"
+      ],
+      "sfx": [
+        "reloj"
+      ]
+    },
+    {
+      "id": "scene_005",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "asset_filename": "frames/frame_05.png",
+      "encuadre": "contrapicado",
+      "narration": "Esa toxina ya está en el arroz antes de comerlo. Resiste el sartén, el horno y el microondas: recalentar no la destruye.",
+      "on_screen_text": "Recalentar no la quita",
+      "visual_description": "Contrapicado de un sartén de cartón con arroz frito humeante, sobre una estufa de maqueta. Sin retratos ni texto. Estilo carton_recortado.",
+      "image_prompt": "handmade figures cut from corrugated cardboard, raw torn edges, marker details, photographed on a table with soft light, kraft brown, warm ochre, faded red marker, cream and charcoal marker lines, vertical 9:16, no text, no letters, no numbers, no logos + low-angle shot of a cardboard frying pan with steaming fried rice on a miniature cardboard stove, no people, no text",
+      "source_ids": [
+        "SRC-002",
+        "SRC-003"
+      ],
+      "sfx": [
+        "mercado"
+      ]
+    },
+    {
+      "id": "scene_006",
+      "arc": "desarrollo",
+      "duration_seconds": 9,
+      "asset_filename": "frames/frame_06.png",
+      "encuadre": "medio",
+      "narration": "Puede provocar náusea y vómito de media hora a seis horas después de comerlo. Suele pasar en un día, pero el malestar es real.",
+      "on_screen_text": "Náusea en pocas horas",
+      "visual_description": "Plano medio de una mesa puesta: un plato de arroz apenas tocado y una silla vacía, figura de cartón de espaldas al fondo, sin rostro reconocible. Sin texto. Estilo carton_recortado.",
+      "image_prompt": "handmade figures cut from corrugated cardboard, raw torn edges, marker details, photographed on a table with soft light, kraft brown, warm ochre, faded red marker, cream and charcoal marker lines, vertical 9:16, no text, no letters, no numbers, no logos + medium shot of a set kitchen table, a barely eaten plate of rice, empty chair, a cardboard figure seen from behind with no visible face, no text",
+      "source_ids": [
+        "SRC-002"
+      ],
+      "sfx": [
+        "silencio"
+      ],
+      "capa": {
+        "tipo": "dato",
+        "valor": "0,5 a 6 h",
+        "etiqueta": "Inicio de náusea o vómito (forma emética)",
+        "fuente": "FDA, Bad Bug Book, 2.ª ed., 2012",
+        "plano": 1
+      }
+    },
+    {
+      "id": "scene_007",
+      "arc": "desarrollo",
+      "duration_seconds": 9,
+      "asset_filename": "frames/frame_07.png",
+      "encuadre": "detalle",
+      "narration": "En el Reino Unido, la agencia de alimentos recomienda enfriarlo de preferencia en una hora, y no dejarlo en la olla. Dividirlo en porciones ayuda.",
+      "on_screen_text": "Enfríalo en una hora",
+      "visual_description": "Detalle de manos de cartón, sin rostro, pasando el arroz de la olla a recipientes pequeños sobre la mesa. Sin texto. Estilo carton_recortado.",
+      "image_prompt": "handmade figures cut from corrugated cardboard, raw torn edges, marker details, photographed on a table with soft light, kraft brown, warm ochre, faded red marker, cream and charcoal marker lines, vertical 9:16, no text, no letters, no numbers, no logos + close-up of cardboard hands with no face visible, scooping cooked rice from a pot into small containers on a table, no text",
+      "source_ids": [
+        "SRC-001"
+      ],
+      "sfx": [
+        "mercado"
+      ],
+      "capa": {
+        "tipo": "mapa",
+        "region": [
+          -12,
+          5,
+          49,
+          61
+        ],
+        "puntos": [
+          {
+            "nombre": "Reino Unido",
+            "lon": -1.8,
+            "lat": 51.5
+          }
+        ],
+        "titulo": "Agencia de alimentos del Reino Unido",
+        "fuente": "FSA / GOV.UK, 2026",
+        "plano": 1
+      }
+    },
+    {
+      "id": "scene_008",
+      "arc": "cierre_historia",
+      "duration_seconds": 10,
+      "asset_filename": "frames/frame_08.png",
+      "encuadre": "cenital",
+      "narration": "Guárdalo en el refrigerador, a 4 grados o menos, y cómelo en las siguientes 24 horas. Si lo recalientas, que quede humeante por completo, y solo una vez.",
+      "on_screen_text": "24 horas en el refri",
+      "visual_description": "Vista cenital de un refrigerador de cartón abierto: recipientes con arroz en un estante. Sin texto ni marcas. Estilo carton_recortado.",
+      "image_prompt": "handmade figures cut from corrugated cardboard, raw torn edges, marker details, photographed on a table with soft light, kraft brown, warm ochre, faded red marker, cream and charcoal marker lines, vertical 9:16, no text, no letters, no numbers, no logos + overhead view of an open cardboard refrigerator, small containers of cooked rice on a shelf, soft kitchen light, no logos, no text",
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "sfx": [
+        "silencio"
+      ]
+    },
+    {
+      "id": "scene_009",
+      "arc": "reflexion_o_pregunta",
+      "duration_seconds": 15,
+      "asset_filename": "frames/frame_09.png",
+      "encuadre": "general",
+      "narration": "El arroz de ayer sí se puede comer, si se enfrió pronto y se guardó en frío. También se puede comer frío. El dato no es para asustar: es para no olvidarlo en la estufa. Esto fue Datos y ociosidades.",
+      "on_screen_text": "No lo dejes en la estufa",
+      "visual_description": "Plano general de la misma cocina al atardecer: la olla ya no está en la estufa; los recipientes esperan junto al refrigerador de cartón. Sin texto. Estilo carton_recortado.",
+      "image_prompt": "handmade figures cut from corrugated cardboard, raw torn edges, marker details, photographed on a table with soft light, kraft brown, warm ochre, faded red marker, cream and charcoal marker lines, vertical 9:16, no text, no letters, no numbers, no logos + wide shot of the same cardboard kitchen at dusk, the stove empty, rice containers waiting beside a cardboard refrigerator, warm late light, no people, no text",
+      "source_ids": [
+        "SRC-001"
+      ],
+      "sfx": [
+        "silencio"
+      ]
+    }
+  ],
+  "especificacion_render": {
+    "nota": "Valores tomados del script real scripts/montar_capsula.py y de cama_sonora.py y capas_datos.py. No inventar otros. La duración real de cada escena, en modo continuo, es la de su audio de voz más 0,25 s de delay al inicio y pad_seconds (aquí 0,3 s); duration_seconds del storyboard es solo una estimación a 2,6 palabras/s con rate +7% y las pausas por puntuación.",
+    "voz": {
+      "motor": "edge-tts (API de Python, paquete edge-tts)",
+      "voice_id": "es-MX-JorgeNeural",
+      "rate": "+7%",
+      "pitch": "-2Hz",
+      "boundary": "WordBoundary",
+      "modo_pausas": "continuo",
+      "sintesis": "Frase por frase. edge-tts no acepta SSML <break>, así que se parte el texto y se insertan silencios según la puntuación final de cada frase.",
+      "regex_frases": "[^.?!…:;]+(?:\\.{3}|[.?!…:;]+)?",
+      "pausas_s": {
+        ".": 0.32,
+        "?": 0.35,
+        "!": 0.35,
+        "…": 0.35,
+        ":": 0.25,
+        ";": 0.25,
+        "otra": 0.15
+      },
+      "pausa_despues_de_la_ultima_frase": 0.0,
+      "recorte_silencios": "Tras obtener WordBoundary, recortar cada frase de (primer_inicio - 0,05 s, mínimo 0) a (ultimo_fin + 0,15 s, máximo la duración del mp3). Si no, las pausas se duplican unos 1 s.",
+      "afade_salida_frase_s": 0.04,
+      "audio_frase": "ffmpeg: atrim=inicio:fin, asetpts=PTS-STARTPTS, afade=t=out:st=max(d-0.04,0):d=0.04, apad=pad_dur=pausa; -ar 48000 -ac 1. Luego concat de las frases a mp3 (libmp3lame -q:a 2).",
+      "delay_inicio_escena_s": 0.25,
+      "pad_seconds": 0.3,
+      "adelay_ms": 250,
+      "escena_dura_lo_que_su_voz": "En modo continuo, sdur = duracion_del_mp3 + 0,25 + pad_seconds. Se aplica a la pista: adelay=250,apad y se corta a sdur. Voz a 48000 Hz, estéreo.",
+      "ejemplo_python": "import edge_tts\nasync def tts_one(text, out_mp3, voice='es-MX-JorgeNeural', rate='+7%', pitch='-2Hz'):\n    c = edge_tts.Communicate(text, voice, rate=rate, pitch=pitch, boundary='WordBoundary')\n    words = []\n    with open(out_mp3, 'wb') as f:\n        async for ch in c.stream():\n            if ch['type'] == 'audio':\n                f.write(ch['data'])\n            elif ch['type'] == 'WordBoundary':\n                words.append((ch['offset'] / 1e7, (ch['offset'] + ch['duration']) / 1e7, ch['text']))\n    return words  # (inicio_s, fin_s, palabra)",
+      "ejemplo_cli": "edge-tts --voice es-MX-JorgeNeural --rate=+7% --pitch=-2Hz --write-media escena.mp3 \"texto de la frase\"\n# El montaje oficial usa la API de Python con boundary=WordBoundary, no solo el CLI."
+    },
+    "video": {
+      "resolucion": "1080x1920",
+      "fps": 30,
+      "codec_final": "libx264",
+      "preset_final": "medium",
+      "preset_planos_intermedios": "veryfast",
+      "crf": 20,
+      "pix_fmt": "yuv420p",
+      "audio_final": "aac 160k, 48000 Hz, estéreo",
+      "movflags": "+faststart",
+      "flag_shortest": true,
+      "plano_seconds": 5,
+      "n_planos": "max(1, round(duracion_escena / plano_seconds))",
+      "duracion_de_cada_plano": "duracion_escena / n_planos (se reparte igual)",
+      "movimientos_suaves_si_plano_seconds_gte_4": [
+        "zin",
+        "pan_d",
+        "zout",
+        "pan_i"
+      ],
+      "nota_punch": "Con plano_seconds 5 solo se usan movimientos suaves; no usar punch ni punch_b.",
+      "rotacion": "El movimiento del plano k de la escena idx es MOVS_SUAVES[(idx * 2 + k) % 4].",
+      "formulas_zoompan": {
+        "comentario": "Antes de zoompan se escala a 2× (2160x3840) con force_original_aspect_ratio=increase y se recorta a 2160x3840. fr = max(round(segundos_del_plano * 30), 1). c = iw/2-(iw/zoom/2); m = ih/2-(ih/zoom/2). on es el número de frame en zoompan.",
+        "zin": {
+          "z": "1+0.10*on/fr",
+          "x": "iw/2-(iw/zoom/2)",
+          "y": "ih/2-(ih/zoom/2)",
+          "descripcion": "zoom 1,00 → 1,10, centrado"
+        },
+        "zout": {
+          "z": "1.10-0.10*on/fr",
+          "x": "iw/2-(iw/zoom/2)",
+          "y": "ih/2-(ih/zoom/2)",
+          "descripcion": "zoom 1,10 → 1,00, centrado"
+        },
+        "pan_d": {
+          "z": "1.15",
+          "x": "(iw-iw/zoom)*on/fr",
+          "y": "ih/2-(ih/zoom/2)",
+          "descripcion": "zoom fijo 1,15, paneo horizontal izquierda → derecha"
+        },
+        "pan_i": {
+          "z": "1.15",
+          "x": "(iw-iw/zoom)*(1-on/fr)",
+          "y": "ih/2-(ih/zoom/2)",
+          "descripcion": "zoom fijo 1,15, paneo horizontal derecha → izquierda"
+        }
+      },
+      "filtro_plano": "[0:v]scale=2160:3840:force_original_aspect_ratio=increase,crop=2160:3840,zoompan=z='Z':x='X':y='Y':d=fr:s=1080x1920:fps=30,format=yuv420p",
+      "cortes": "Cortes secos entre planos y entre escenas: concat con -c copy, sin transiciones, sin fundidos de video.",
+      "comando_final": "ffmpeg -i video_concat.mp4 -i voz.wav -i ambiente.wav -i musica.wav -filter_complex '...' -map [vout] -map [aout] -c:v libx264 -preset medium -crf 20 -pix_fmt yuv420p -r 30 -c:a aac -b:a 160k -ar 48000 -shortest -movflags +faststart capsula.mp4"
+    },
+    "portada_primer_frame": {
+      "regla": "El primer frame es la portada. Esa imagen (o un fotograma en 0,3–1,5 s del mp4 final) es la miniatura en YouTube, TikTok y Facebook. En YouTube hay que fijarla con thumbnails.set; en TT y FB se elige a mano el primer frame o se sube portada.jpg.",
+      "texto": "Usar el campo titulo (aquí: ¿El arroz de ayer?). Se pinta en MAYÚSCULAS.",
+      "fuente": "DejaVu Sans Bold, 92 px, archivo /usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
+      "caja": "Rectángulo redondeado (radio 14 px), color crema/amarillo RGB(240, 200, 120) alfa 235. Padding aprox. 18 px a los lados, 10 px arriba, 8 px bajo la línea.",
+      "color_texto": "RGB(20, 18, 16)",
+      "posicion": "x = 8 % del ancho (86 px en 1080), y inicial = 15 % del alto (288 px en 1920), ancho máximo del renglón 78 % (842 px). Interlineado 108 px + 6 px.",
+      "subrayado": "Bajo la última línea, trazo redondeado (radio 8 px) rojo RGB(200, 40, 40) alfa 245, de (x, y+4) a (x + ancho_de_la_ultima_linea, y+22), donde y ya avanzó después de pintar la última línea.",
+      "visibilidad": "El título se ve en los 2 primeros planos de la escena 1 (gancho). En las demás escenas, el texto en pantalla solo va en el primer plano."
+    },
+    "texto_en_pantalla_otras_escenas": {
+      "fuente": "DejaVu Sans Bold, 64 px",
+      "caja": "Rectángulo redondeado (radio 14 px) negro alfa 170",
+      "color_texto": "blanco RGB(255, 255, 255)",
+      "y_inicial": "12 % del alto (230 px en 1920)",
+      "x": "8 % del ancho, ancho máximo 78 %",
+      "interlineado_px": 78,
+      "visibilidad": "Solo en el primer plano de la escena (no en los siguientes).",
+      "contenido": "Campo on_screen_text de cada escena, sin forzar mayúsculas."
+    },
+    "subtitulos": {
+      "formato": "ASS, PlayResX 1080, PlayResY 1920, WrapStyle 0, ScaledBorderAndShadow yes",
+      "fuente": "DejaVu Sans, 72, bold (Bold=-1)",
+      "color_primario": "&H00FFFFFF (blanco)",
+      "contorno": "negro &H00000000, grosor 6",
+      "sombra": 2,
+      "alineacion": 2,
+      "margin_l": 90,
+      "margin_r": 170,
+      "margin_v": 620,
+      "linea_base_y_px": 1300,
+      "nota_margin_v": "MarginV = 1920 - 1300 = 620. El margen derecho 170 deja libre la zona de botones de TikTok.",
+      "max_palabras_por_bloque": 3,
+      "corte_en_puntuacion": "Si alguna de las hasta 3 palabras termina en . , ; : ? !, se corta el bloque ahí.",
+      "cola_s": 0.3,
+      "tiempos": "Salen de WordBoundary. Tras recortar silencios y sumar el delay de 0,25 s de cada escena, el fin de cada bloque es min(fin_ultima_palabra + 0,3 s, inicio_del_siguiente_bloque - 0,01 s).",
+      "puntuacion_del_guion": "Si el número de tokens de la narración coincide con el de WordBoundary, se sustituye el texto de cada palabra por el token del guion para recuperar comas y puntos (edge-tts omite la puntuación).",
+      "quemado": "Se queman en el mp4 final con -filter_complex ... ass=archivo.ass. También se escribe un .srt hermano del mp4."
+    },
+    "capas_dato_mapa": {
+      "uso_en_esta_capsula": "Dos capas tipo dato (escenas 6 y 7), en el plano indicado por capa.plano (aquí 1). Ese plano no lleva Ken Burns: lo renderiza matplotlib a 1080x1920.",
+      "tipos": [
+        "dato",
+        "mapa",
+        "grafico"
+      ],
+      "formato_dato": {
+        "tipo": "dato",
+        "valor": "texto grande",
+        "etiqueta": "texto menor",
+        "fuente": "cita corta",
+        "plano": "índice del plano, 0-based; por defecto el último"
+      },
+      "formato_mapa": {
+        "tipo": "mapa",
+        "region": [
+          "lon0",
+          "lon1",
+          "lat0",
+          "lat1"
+        ],
+        "puntos": [
+          {
+            "nombre": "",
+            "lat": 0,
+            "lon": 0
+          }
+        ],
+        "flechas": [
+          [
+            "lon0",
+            "lat0",
+            "lon1",
+            "lat1",
+            "etiqueta"
+          ]
+        ],
+        "titulo": "",
+        "fuente": "",
+        "plano": 0
+      },
+      "formato_grafico": {
+        "tipo": "grafico",
+        "x": [],
+        "y": [],
+        "titulo": "",
+        "unidad": "",
+        "fuente": "",
+        "plano": 0
+      },
+      "look": "Fondo papel #efe6d2, tinta #1f2a44, acento #d9a441, agua #c9d6df, fuente DejaVu Sans. Mapa base: Natural Earth 110m (dominio público). El dato agranda el valor en los primeros 35 % del plano; la etiqueta aparece después de t=30 %.",
+      "render": "matplotlib Agg, DPI 120, un fotograma cada 2 frames (15 fps de dibujo, luego fps=30), libx264 veryfast CRF 20."
+    },
+    "cortinilla_fuentes": {
+      "duration_seconds": 6,
+      "fondo": "RGB(18, 16, 14) (campo bg_rgb; este es el valor por defecto del script)",
+      "titulo": "Fuentes, DejaVu Sans Bold 64 px, RGB(240, 200, 120), x=8 % del ancho, y inicial=14 % del alto",
+      "citas": "cita_corta, DejaVu Sans 40 px, RGB(235, 235, 235), interlineado 52 px, ancho máximo 77 %",
+      "urls": "ref_display, o doi.org/DOI, o url; DejaVu Sans 34 px, azul claro RGB(160, 190, 230), interlineado 46 px",
+      "aviso": "Imágenes generadas con IA. Voz sintética. Color RGB(170, 170, 170), 34 px",
+      "firma": "Datos y ociosidades · @datosyociosidades, partida en el punto medio; DejaVu Sans Bold 46 px, RGB(240, 200, 120)",
+      "zona_segura": "No invadir el 20 % inferior ni el 15 % derecho (botones de TikTok) ni el 10 % superior.",
+      "audio": "Solo música de cama. La pista de voz de la cortinilla es silencio (anullsrc). El sfx de este tramo se registra como silencio.",
+      "video": "Imagen fija 6 s, 30 fps, format=yuv420p, libx264 preset veryfast (tramo intermedio; el encode final es medium CRF 20)."
+    },
+    "audio_mezcla": {
+      "voz_loudnorm": "I=-16, TP=-2 (antes del sidechain)",
+      "cama_musical": "Síntesis propia, plantilla pulso, BPM 92, timbre pad, batería lofi (scripts/cama_sonora.py). Se normaliza a music_lufs -27, TP=-3. Obra propia, sin derechos de terceros.",
+      "ambiente_por_escena": "Se arma una pista con el sfx de cada plano, crossfade 0,3 s, y se normaliza a ambiente_lufs -26, TP=-3.",
+      "sidechain": "sidechaincompress=threshold=0.015:ratio=8:attack=15:release=350:makeup=1. La cama (música + ambiente) se agacha cuando habla la voz.",
+      "filtro_complex": "[1:a]loudnorm=I=-16:TP=-2,asplit=2[v][sc];[2:a][3:a]amix=inputs=2:normalize=0[bed];[bed][sc]sidechaincompress=threshold=0.015:ratio=8:attack=15:release=350:makeup=1[duck];[v][duck]amix=inputs=2:duration=first:normalize=0,loudnorm=I=-14:TP=-1.5[aout]",
+      "mezcla_final_loudnorm": "I=-14, TP=-1.5",
+      "sfx_usados_en_esta_capsula": {
+        "mercado": "Sintético (cama_sonora.py): murmullo de voces filtrado en varias bandas. Se usa como ambiente de cocina.",
+        "reloj": "Grabación real de dominio público, File:Clock ticking.ogg, autor natalie, Wikimedia Commons. Efecto puntual de tictac, en la escena del arroz que espera.",
+        "silencio": "Sin ambiente. En la cortinilla final también va silencio en la pista de sfx: solo queda la música."
+      },
+      "otros_sfx_del_pipeline_no_usados_aqui": "Sintéticos: oceano, puerto, viento, viento_fuerte, lluvia, tormenta, motor, redes. Grabaciones CC0/dominio público (sfx_manifest.json): olas, gaviotas, gaviotas2, lluvia, tormenta, truenos, viento, viento_costa, campanas, pluma, madera."
+    },
+    "reglas": [
+      "Duración objetivo de la cápsula 85-90 s de narración/escenas; esta pieza estima ~87 s de escenas más 6 s de cortinilla (~93 s al final). El cierre (última escena) dura al menos 10 s, con narración más pausada, y termina en «Esto fue Datos y ociosidades.»",
+      "9 o 10 frames (aquí 9), cada uno en pantalla unos 8-10 s, partidos en planos de ~5 s (plano_seconds 5).",
+      "Las imágenes van sin texto, sin letras, sin números y sin logos: el título, el texto en pantalla y los subtítulos se superponen en el montaje.",
+      "Ilustración no realista; parece_real es false.",
+      "Declarar IA: aviso en la cortinilla «Imágenes generadas con IA. Voz sintética.»; en TikTok activar la etiqueta de contenido de IA; en YouTube marcar contenido sintético (containsSyntheticMedia) si el canal lo usa.",
+      "La miniatura es siempre la portada (primer frame con el título). No publicar sin thumbnails.set en YouTube y sin elegir esa portada en TikTok y Facebook.",
+      "No inventar cifras ni consejos que no estén en sources[].supports. Los tiempos de 1 hora y 24 horas salen solo de la guía de la FSA / GOV.UK (SRC-001). El intervalo 0,5 a 6 h sale del Bad Bug Book de la FDA (SRC-002).",
+      "Voz oficial es-MX-JorgeNeural; no cambiar."
+    ]
+  },
+  "publicacion": {
+    "youtube": {
+      "title": "¿El arroz de ayer puede enfermarte? #Shorts",
+      "description": "El arroz que dejaste en la estufa puede enfermarte. El problema no es recalentarlo: es lo que pasó mientras se enfriaba.\n\n¿El arroz de ayer puede enfermarte?. Una cápsula de Datos y ociosidades: datos verificados contados como historia.\n\nFuentes:\n• Food Standards Agency / GOV.UK (actualizado 21 agosto 2026). Home food fact checker, sección Rice. https://www.gov.uk/government/publications/home-food-fact-checker/home-food-fact-checker\n• Food and Drug Administration (2012). Bacillus cereus and other Bacillus species. In: Bad Bug Book, Foodborne Pathogenic Microorganisms and Natural Toxins. Second Edition. https://www.fda.gov/media/83271/download\n• Yang, S., Wang, Y., Liu, Y., Jia, K., Zhang, Z. and Dong, Q. (2023). Cereulide and Emetic Bacillus cereus: Characterizations, Impacts and Public Precautions. Foods 12(4), 833. https://doi.org/10.3390/foods12040833\n\nImágenes generadas con IA · voz sintética · audio sintetizado.\nSuscríbete: @datosyociosidades\nTikTok: https://www.tiktok.com/@datosyociosidades\n\n#DatosYOciosidades #Shorts #datos #ciencia #difusión #difusióncientífica #ia #Arroz #BacillusCereus #Cocina",
+      "tags": [
+        "DatosYOciosidades",
+        "Shorts",
+        "datos",
+        "ciencia",
+        "difusión",
+        "difusióncientífica",
+        "ia",
+        "Arroz",
+        "BacillusCereus",
+        "Cocina"
+      ]
+    },
+    "tiktok": {
+      "caption": "El arroz que dejaste en la estufa puede enfermarte. No es el recalentado: es una bacteria que ya estaba en el grano y una toxina que el fuego ya no quita. Enfríalo pronto y guárdalo en el refri. Esto es Datos y ociosidades.\n\n#aprendeentiktok #sabiasque #ciencia #divulgacioncientifica #cocina",
+      "etiqueta_ia": true,
+      "miniatura": "primer frame (portada con el título)"
+    },
+    "facebook": {
+      "caption": "El arroz que dejaste en la estufa puede enfermarte. El problema no es recalentarlo: es lo que pasó mientras se enfriaba. Las esporas de una bacteria resisten la cocción y, a temperatura ambiente, pueden dejar una toxina que el sartén ya no destruye. Enfríalo pronto, guárdalo en el refrigerador y cómelo al día siguiente.\n\nDatos y ociosidades",
+      "miniatura": "primer frame (portada con el título)"
+    }
+  },
+  "nota": "Cápsula NUEVA, solo storyboard (2026-11-11). No se generaron imágenes, no se montó y no se publica. Pensada para que otro modelo, con edge-tts, la genere entera a partir de este JSON. Voz oficial es-MX-JorgeNeural. Estimación de duración: 204 palabras, ~82 s de voz neta a 2,6 pal/s con pausas, ~87 s de escenas con delay 0,25 s y pad 0,3 s, más 6 s de cortinilla (~93 s al final). Montaje 2026-11-11: frames 01-09 recortados (marca Dola AI abajo, 7,3 %) a 1080x1920. El frame 09 (cocina al atardecer) se usó en el cierre. En la escena 7 la capa de dato «1 hora» se sustituyó por un mapa del Reino Unido (el dato sigue en el texto en pantalla) para cumplir la compuerta de capa_mapa; la escena 6 conserva la capa de dato. Versión 2 de narración (2026-11-11): se añadieron hechos ya respaldados en sources[] (vegetación, ventana de 0,5 a 6 h, porciones, 4 °C, se puede comer frío) para alargar la cápsula a 85–90 s, sin cambiar la voz ni rellenar con silencios."
+}
