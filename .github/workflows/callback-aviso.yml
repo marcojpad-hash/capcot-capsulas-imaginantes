@@ -1,0 +1,103 @@
+# Callback: aviso de delegaciones
+#
+# La aviso que despierta al modelo encargado cuando le llega algo.
+# Se dispara cuando cambia el tablero de delegaciones, y cada hora como
+# respaldo. Abre un issue con etiqueta `callback` por cada delegacion
+# PENDIENTE dirigida a Copilot y se lo asigna: ese issue es la llamada
+# que lo despierta. La indicacion que sigue al despertar esta en
+# .github/copilot-instructions.md y en ajustes_entre_modelos/PROTOCOLO_CALLBACK.md
+#
+# Las delegaciones para Imaginantes o para Marco no abren issue: su aviso
+# es el tablero mas el reporte de Pecas (Imaginantes no tiene buzon
+# escribible y Marco lo ve en el reporte de la manana).
+#
+# ESTE ARCHIVO NO SE PUEDE SUBIR POR API (la app de Muse no tiene permiso
+# Workflows). Subirlo por navegador con la cuenta de Marco, igual que los
+# workflows de seguridad.
+
+name: Callback - aviso de delegaciones
+
+on:
+  push:
+    paths:
+      - 'ajustes_entre_modelos/DELEGACIONES.md'
+  schedule:
+    - cron: '15 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  aviso:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Abrir issue por cada delegacion pendiente para Copilot
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python3 - <<'PY'
+          import re, subprocess
+
+          board = open('ajustes_entre_modelos/DELEGACIONES.md', encoding='utf-8').read()
+          blocks = re.split(r'(?m)^### ', board)
+          pending = []
+          for b in blocks[1:]:
+              title = b.split('\n', 1)[0].strip()
+              title = re.sub(r'^\d+\.\s*', '', title)
+
+              def field(k):
+                  m = re.search(rf'(?m)^- {k}:\s*(.*)$', b)
+                  return m.group(1).strip() if m else ''
+
+              if field('ESTADO') != 'PENDIENTE':
+                  continue
+              if 'Copilot' not in field('PARA'):
+                  continue
+              pending.append({
+                  'title': title,
+                  'de': field('DE'),
+                  'para': field('PARA'),
+                  'que': field('QUÉ'),
+                  'cuando': field('PARA CUÁNDO'),
+                  'nota': field('NOTA'),
+              })
+
+          def run(cmd):
+              return subprocess.run(cmd, shell=True, capture_output=True, text=True)
+
+          run("gh label create callback --color 0E8A16 --description 'Delegacion del protocolo callback' || true")
+          existing = run("gh issue list --state open --search '[callback] in:title' --json title --jq '.[].title'").stdout.splitlines()
+
+          for d in pending:
+              issue_title = f"[callback] {d['title']}"
+              if issue_title in existing:
+                  print(f"ya existe: {issue_title}")
+                  continue
+              body = (
+                  "Llego una delegacion por el protocolo callback. Eres el modelo encargado.\n\n"
+                  f"- DE: {d['de']}\n"
+                  f"- PARA: {d['para']}\n"
+                  f"- QUE: {d['que']}\n"
+                  f"- PARA CUANDO: {d['cuando']}\n"
+                  + (f"- NOTA: {d['nota']}\n" if d['nota'] else "")
+                  + "\nIndicacion al despertar:\n"
+                  "1. Lee ajustes_entre_modelos/DELEGACIONES.md y encuentra esta entrada.\n"
+                  "2. Haz la tarea.\n"
+                  "3. Marcala HECHA con la evidencia (commit o enlace) o BLOQUEADA con el motivo.\n"
+                  "4. No esperes a que Marco te lo recuerde: el tablero es la fuente.\n"
+              )
+              r = run(f"gh issue create --title {issue_title!r} --label callback --body {body!r}")
+              if r.returncode != 0:
+                  print(f"no se pudo crear el issue: {issue_title}\n{r.stderr}")
+                  continue
+              url = r.stdout.strip()
+              print(f"creado: {url}")
+              num = url.rstrip('/').split('/')[-1]
+              a = run(f"gh issue edit {num} --add-assignee copilot")
+              if a.returncode != 0:
+                  print("aviso: no se pudo asignar a Copilot. Revisa que el agente de codigo este activado en Settings > Copilot.")
+          PY
