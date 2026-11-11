@@ -1,13 +1,13 @@
-# Reporte del orquestador — 2026-11-11 05:19
+# Reporte del orquestador — 2026-11-11 14:08
 Modelo: openai/gpt-oss-120b (Groq, API gratuita)
 Tablero actualizado con git pull.
 
-1. **Atorado:** Imaginantes está pausado por ahorro de créditos; **quién debe qué:** ChatGPT/Grok le delegó a Imaginantes montar el MP4 de la cápsula Mpemba; **siguiente paso:** Pecas debe solicitar a Marco la liberación de créditos (o re‑programar el slot) para que Imaginantes pueda ejecutar la tarea.  
+- **Montar la cápsula Mpemba** – Atorado porque Imaginantes está “pausado por ahorro de créditos”. **Imaginantes** le debe el MP4 a **ChatGPT/Grok**. **Próximo paso:** Marco debe autorizar/reponer créditos para que Imaginantes reanude el proceso.
 
-2. **Atorado:** Imaginantes está pausado por ahorro de créditos; **quién debe qué:** ChatGPT/Grok le delegó a Imaginantes montar el MP4 de la cápsula Barreleye; **siguiente paso:** Pecas debe solicitar a Marco la liberación de créditos (o re‑programar el slot) para que Imaginantes pueda ejecutar la tarea.  
+- **Montar la cápsula Barreleye** – Atorado por la misma pausa de créditos de Imaginantes. **Imaginantes** le debe el MP4 a **ChatGPT/Grok**. **Próximo paso:** Marco debe autorizar/reponer créditos para que Imaginantes reanude el proceso.
 
-3. **Atorado:** Pendiente de acción de Pecas; **quién debe qué:** Pecas le debe a sí mismo subir los archivos `gitleaks.yml` y `semgrep.yml` a `.github/workflows/`; **siguiente paso:** Pecas abre el navegador y sube ambos archivos desde `~/workspace/security‑upload/`.  
+- **Subir los workflows de seguridad de CAPCOT** – Atorado porque Pecas no puede subir archivos `.github/workflows/` vía API. **Pecas** le debe subir `gitleaks.yml` y `semgrep.yml` a sí mismo (por navegador). **Próximo paso:** Pecas abre el navegador, navega al repositorio y sube esos dos archivos desde `~/workspace/security-upload/`.
 
-4. **Atorado:** Pendiente de activación en Settings; **quién debe qué:** Pecas le debe a sí mismo activar Secret Scanning, CodeQL y Dependabot en la sección Code security de GitHub; **siguiente paso:** Pecas ingresa a Settings > Code security y habilita los toggles correspondientes.  
+- **Activar la seguridad nativa en GitHub** – Atorado porque requiere interacción manual en Settings y Marco no tiene permiso. **Pecas** le debe activar secret scanning, CodeQL y Dependabot a sí mismo (por navegador). **Próximo paso:** Pecas abre Settings > Code security en GitHub y habilita los tres mecanismos.
 
-5. **Atorado:** Falta decisión de Marco; **quién debe qué:** Marco debe decidir si se crea la cuenta gratuita de Clayzo y, de ser afirmativa, Pecas debe crearla por navegador; **siguiente paso:** Marco responde “sí” o “no” a la solicitud; si dice sí, Pecas procede a crear la cuenta.
+- **Crear cuenta gratuita de Clayzo** – Atorado esperando la decisión de Marco sobre si crear la cuenta. **Marco** le debe a **Pecas** la autorización (sí/no). **Próximo paso:** Marco responde a Pecas con su decisión; si es “sí”, Pecas procede a crear la cuenta por el navegador.
