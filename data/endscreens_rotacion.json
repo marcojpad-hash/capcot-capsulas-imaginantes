@@ -1,8 +1,8 @@
 {
-  "fecha": "2026-11-10",
+  "fecha": "2026-11-11",
   "tipo": "endscreens_rotacion",
-  "actualizado_cdmx": "2026-11-10T10:49-06:00",
-  "motivo": "10:49 guacamole nSS_q2tj2P0 (30 vistas, +29 en ~1 h, acelera) → hipo 4lOWeMn2RCo (3 vistas), vía Vídeo relacionado en Studio (antes Ninguno). Fijos intactos.",
+  "actualizado_cdmx": "2026-11-11T07:45-06:00",
+  "motivo": "07:45 Mpemba V4h28RA8bq0 (149 vistas en ~9 h desde 23:00, el que más acelera) → capsaicina K2I_jgugiOU (7 vistas, sin entradas), pantalla final elemento de vídeo específico en Studio (antes Ninguno). Fijos intactos.",
   "vistas_ref": {
     "phVfyHp3CnY": 54,
     "m4RqQRaz55k": 33,
@@ -56,11 +56,14 @@
     "r1AhsPOAS_o": 1404,
     "ZrUtKs7Ty7U": 1354,
     "PTk2QNMkOn4": 98,
-    "zTP5akrGA9M": 136,
-    "UBFuKBU3cx0": 46,
-    "4lOWeMn2RCo": 3,
-    "EwZ3dHalUn0": 83,
-    "nSS_q2tj2P0": 30
+    "zTP5akrGA9M": 140,
+    "UBFuKBU3cx0": 107,
+    "4lOWeMn2RCo": 5,
+    "EwZ3dHalUn0": 131,
+    "nSS_q2tj2P0": 93,
+    "V4h28RA8bq0": 149,
+    "K2I_jgugiOU": 7,
+    "wbFrlM2e_YE": 1
   },
   "mapa": {
     "r1AhsPOAS_o": "AJR6kcnnDig",
@@ -116,7 +119,8 @@
     "PTk2QNMkOn4": "7ay4KLS8h8I",
     "zTP5akrGA9M": "PTk2QNMkOn4",
     "UBFuKBU3cx0": "4lOWeMn2RCo",
-    "nSS_q2tj2P0": "4lOWeMn2RCo"
+    "nSS_q2tj2P0": "4lOWeMn2RCo",
+    "V4h28RA8bq0": "K2I_jgugiOU"
   },
   "pendiente_studio": false,
   "nota": "Aplicado en YouTube Studio Editor > Pantalla final (video específico). Búsqueda: pegar youtube.com/watch?v=ID en 'Buscar vídeos de otros canales' (tus vídeos no lista Shorts). Sin suscripción ni tarjetas. Actualización 26-oct 19:49: la lista «Elegir un vídeo específico» ya muestra los Shorts.",
