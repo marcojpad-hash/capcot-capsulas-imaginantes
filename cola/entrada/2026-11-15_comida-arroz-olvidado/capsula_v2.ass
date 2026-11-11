@@ -1,0 +1,102 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Sub,DejaVu Sans,72,&H00FFFFFF,&H00FFFFFF,&H00000000,&H64000000,-1,0,0,0,100,100,0,0,1,6,2,2,90,170,620,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.30,0:00:00.87,Sub,,0,0,0,,El arroz que
+Dialogue: 0,0:00:00.88,0:00:01.44,Sub,,0,0,0,,dejaste en la
+Dialogue: 0,0:00:01.45,0:00:03.03,Sub,,0,0,0,,estufa puede enfermarte.
+Dialogue: 0,0:00:03.25,0:00:04.09,Sub,,0,0,0,,El problema no
+Dialogue: 0,0:00:04.10,0:00:05.29,Sub,,0,0,0,,es recalentarlo:
+Dialogue: 0,0:00:05.44,0:00:05.85,Sub,,0,0,0,,es lo que
+Dialogue: 0,0:00:05.86,0:00:06.58,Sub,,0,0,0,,pasó mientras se
+Dialogue: 0,0:00:06.59,0:00:07.38,Sub,,0,0,0,,enfriaba.
+Dialogue: 0,0:00:07.88,0:00:08.46,Sub,,0,0,0,,En el arroz
+Dialogue: 0,0:00:08.47,0:00:09.18,Sub,,0,0,0,,crudo pueden ir
+Dialogue: 0,0:00:09.19,0:00:09.89,Sub,,0,0,0,,esporas de una
+Dialogue: 0,0:00:09.90,0:00:11.19,Sub,,0,0,0,,bacteria llamada Bacillus
+Dialogue: 0,0:00:11.20,0:00:12.01,Sub,,0,0,0,,cereus.
+Dialogue: 0,0:00:12.23,0:00:13.04,Sub,,0,0,0,,Vienen del suelo
+Dialogue: 0,0:00:13.05,0:00:13.29,Sub,,0,0,0,,y de la
+Dialogue: 0,0:00:13.30,0:00:14.18,Sub,,0,0,0,,vegetación,
+Dialogue: 0,0:00:14.19,0:00:14.86,Sub,,0,0,0,,y resisten la
+Dialogue: 0,0:00:14.87,0:00:15.66,Sub,,0,0,0,,cocción.
+Dialogue: 0,0:00:16.16,0:00:17.05,Sub,,0,0,0,,Al cocinar,
+Dialogue: 0,0:00:17.06,0:00:17.87,Sub,,0,0,0,,se mueren muchas
+Dialogue: 0,0:00:17.88,0:00:18.86,Sub,,0,0,0,,bacterias.
+Dialogue: 0,0:00:19.08,0:00:19.84,Sub,,0,0,0,,Pero las esporas
+Dialogue: 0,0:00:19.85,0:00:20.71,Sub,,0,0,0,,de Bacillus cereus
+Dialogue: 0,0:00:20.72,0:00:21.69,Sub,,0,0,0,,sobreviven al hervor
+Dialogue: 0,0:00:21.70,0:00:22.53,Sub,,0,0,0,,y quedan listas
+Dialogue: 0,0:00:22.54,0:00:23.67,Sub,,0,0,0,,para despertar.
+Dialogue: 0,0:00:24.15,0:00:24.80,Sub,,0,0,0,,Si el arroz
+Dialogue: 0,0:00:24.81,0:00:25.25,Sub,,0,0,0,,se queda a
+Dialogue: 0,0:00:25.26,0:00:26.61,Sub,,0,0,0,,temperatura ambiente,
+Dialogue: 0,0:00:26.62,0:00:27.66,Sub,,0,0,0,,las esporas germinan
+Dialogue: 0,0:00:27.67,0:00:28.32,Sub,,0,0,0,,y la bacteria
+Dialogue: 0,0:00:28.33,0:00:29.42,Sub,,0,0,0,,se multiplica.
+Dialogue: 0,0:00:29.64,0:00:30.56,Sub,,0,0,0,,Ahí produce una
+Dialogue: 0,0:00:30.57,0:00:32.35,Sub,,0,0,0,,toxina llamada cereulida.
+Dialogue: 0,0:00:32.83,0:00:33.74,Sub,,0,0,0,,Esa toxina ya
+Dialogue: 0,0:00:33.75,0:00:34.26,Sub,,0,0,0,,está en el
+Dialogue: 0,0:00:34.27,0:00:35.01,Sub,,0,0,0,,arroz antes de
+Dialogue: 0,0:00:35.02,0:00:35.78,Sub,,0,0,0,,comerlo.
+Dialogue: 0,0:00:36.00,0:00:37.26,Sub,,0,0,0,,Resiste el sartén,
+Dialogue: 0,0:00:37.27,0:00:37.80,Sub,,0,0,0,,el horno y
+Dialogue: 0,0:00:37.81,0:00:38.92,Sub,,0,0,0,,el microondas:
+Dialogue: 0,0:00:39.07,0:00:39.98,Sub,,0,0,0,,recalentar no la
+Dialogue: 0,0:00:39.99,0:00:40.84,Sub,,0,0,0,,destruye.
+Dialogue: 0,0:00:41.33,0:00:42.45,Sub,,0,0,0,,Puede provocar náusea
+Dialogue: 0,0:00:42.46,0:00:43.01,Sub,,0,0,0,,y vómito de
+Dialogue: 0,0:00:43.02,0:00:43.68,Sub,,0,0,0,,media hora a
+Dialogue: 0,0:00:43.69,0:00:44.60,Sub,,0,0,0,,seis horas después
+Dialogue: 0,0:00:44.61,0:00:45.47,Sub,,0,0,0,,de comerlo.
+Dialogue: 0,0:00:45.69,0:00:46.45,Sub,,0,0,0,,Suele pasar en
+Dialogue: 0,0:00:46.46,0:00:47.15,Sub,,0,0,0,,un día,
+Dialogue: 0,0:00:47.16,0:00:47.90,Sub,,0,0,0,,pero el malestar
+Dialogue: 0,0:00:47.91,0:00:48.68,Sub,,0,0,0,,es real.
+Dialogue: 0,0:00:49.17,0:00:49.77,Sub,,0,0,0,,En el Reino
+Dialogue: 0,0:00:49.78,0:00:50.47,Sub,,0,0,0,,Unido,
+Dialogue: 0,0:00:50.48,0:00:51.04,Sub,,0,0,0,,la agencia de
+Dialogue: 0,0:00:51.05,0:00:52.44,Sub,,0,0,0,,alimentos recomienda enfriarlo
+Dialogue: 0,0:00:52.45,0:00:53.20,Sub,,0,0,0,,de preferencia en
+Dialogue: 0,0:00:53.21,0:00:53.95,Sub,,0,0,0,,una hora,
+Dialogue: 0,0:00:53.96,0:00:54.64,Sub,,0,0,0,,y no dejarlo
+Dialogue: 0,0:00:54.65,0:00:55.46,Sub,,0,0,0,,en la olla.
+Dialogue: 0,0:00:55.68,0:00:56.85,Sub,,0,0,0,,Dividirlo en porciones
+Dialogue: 0,0:00:56.86,0:00:57.57,Sub,,0,0,0,,ayuda.
+Dialogue: 0,0:00:58.05,0:00:58.71,Sub,,0,0,0,,Guárdalo en el
+Dialogue: 0,0:00:58.72,0:00:59.56,Sub,,0,0,0,,refrigerador,
+Dialogue: 0,0:00:59.57,0:01:00.31,Sub,,0,0,0,,a 4 grados
+Dialogue: 0,0:01:00.32,0:01:00.98,Sub,,0,0,0,,o menos,
+Dialogue: 0,0:01:00.99,0:01:01.57,Sub,,0,0,0,,y cómelo en
+Dialogue: 0,0:01:01.58,0:01:02.73,Sub,,0,0,0,,las siguientes 24
+Dialogue: 0,0:01:02.74,0:01:03.56,Sub,,0,0,0,,horas.
+Dialogue: 0,0:01:03.78,0:01:05.03,Sub,,0,0,0,,Si lo recalientas,
+Dialogue: 0,0:01:05.04,0:01:05.84,Sub,,0,0,0,,que quede humeante
+Dialogue: 0,0:01:05.85,0:01:06.76,Sub,,0,0,0,,por completo,
+Dialogue: 0,0:01:06.77,0:01:07.39,Sub,,0,0,0,,y solo una
+Dialogue: 0,0:01:07.40,0:01:08.09,Sub,,0,0,0,,vez.
+Dialogue: 0,0:01:08.58,0:01:09.12,Sub,,0,0,0,,El arroz de
+Dialogue: 0,0:01:09.13,0:01:09.67,Sub,,0,0,0,,ayer sí se
+Dialogue: 0,0:01:09.68,0:01:10.52,Sub,,0,0,0,,puede comer,
+Dialogue: 0,0:01:10.53,0:01:11.10,Sub,,0,0,0,,si se enfrió
+Dialogue: 0,0:01:11.11,0:01:11.70,Sub,,0,0,0,,pronto y se
+Dialogue: 0,0:01:11.71,0:01:12.82,Sub,,0,0,0,,guardó en frío.
+Dialogue: 0,0:01:13.04,0:01:13.82,Sub,,0,0,0,,También se puede
+Dialogue: 0,0:01:13.83,0:01:14.80,Sub,,0,0,0,,comer frío.
+Dialogue: 0,0:01:15.02,0:01:15.70,Sub,,0,0,0,,El dato no
+Dialogue: 0,0:01:15.71,0:01:16.86,Sub,,0,0,0,,es para asustar:
+Dialogue: 0,0:01:17.01,0:01:17.56,Sub,,0,0,0,,es para no
+Dialogue: 0,0:01:17.57,0:01:18.19,Sub,,0,0,0,,olvidarlo en la
+Dialogue: 0,0:01:18.20,0:01:18.98,Sub,,0,0,0,,estufa.
+Dialogue: 0,0:01:19.20,0:01:20.05,Sub,,0,0,0,,Esto fue Datos
+Dialogue: 0,0:01:20.06,0:01:21.21,Sub,,0,0,0,,y ociosidades.

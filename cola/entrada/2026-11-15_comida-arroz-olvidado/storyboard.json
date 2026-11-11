@@ -133,7 +133,7 @@
       "duration_seconds": 9,
       "asset_filename": "frames/frame_02.png",
       "encuadre": "cenital",
-      "narration": "En el arroz crudo pueden ir esporas de una bacteria llamada Bacillus cereus. Vienen del suelo y resisten la cocción.",
+      "narration": "En el arroz crudo pueden ir esporas de una bacteria llamada Bacillus cereus. Vienen del suelo y de la vegetación, y resisten la cocción.",
       "on_screen_text": "Esporas en el grano",
       "visual_description": "Plano cenital de un puñado de granos de arroz crudo de cartón sobre una mesa, con un poco de tierra y una bolsa rasgada al lado. Sin texto ni letras en la imagen. Estilo carton_recortado.",
       "image_prompt": "handmade figures cut from corrugated cardboard, raw torn edges, marker details, photographed on a table with soft light, kraft brown, warm ochre, faded red marker, cream and charcoal marker lines, vertical 9:16, no text, no letters, no numbers, no logos + overhead view of raw rice grains cut from corrugated cardboard on a wooden table, a little soil and a torn kraft bag beside them, no people, no text",
@@ -206,7 +206,7 @@
       "duration_seconds": 9,
       "asset_filename": "frames/frame_06.png",
       "encuadre": "medio",
-      "narration": "Puede provocar náusea y vómito en menos de seis horas. Suele pasar en un día, pero el malestar es real.",
+      "narration": "Puede provocar náusea y vómito de media hora a seis horas después de comerlo. Suele pasar en un día, pero el malestar es real.",
       "on_screen_text": "Náusea en pocas horas",
       "visual_description": "Plano medio de una mesa puesta: un plato de arroz apenas tocado y una silla vacía, figura de cartón de espaldas al fondo, sin rostro reconocible. Sin texto. Estilo carton_recortado.",
       "image_prompt": "handmade figures cut from corrugated cardboard, raw torn edges, marker details, photographed on a table with soft light, kraft brown, warm ochre, faded red marker, cream and charcoal marker lines, vertical 9:16, no text, no letters, no numbers, no logos + medium shot of a set kitchen table, a barely eaten plate of rice, empty chair, a cardboard figure seen from behind with no visible face, no text",
@@ -230,7 +230,7 @@
       "duration_seconds": 9,
       "asset_filename": "frames/frame_07.png",
       "encuadre": "detalle",
-      "narration": "En el Reino Unido, la agencia de alimentos recomienda enfriarlo de preferencia en una hora, y no dejarlo en la olla.",
+      "narration": "En el Reino Unido, la agencia de alimentos recomienda enfriarlo de preferencia en una hora, y no dejarlo en la olla. Dividirlo en porciones ayuda.",
       "on_screen_text": "Enfríalo en una hora",
       "visual_description": "Detalle de manos de cartón, sin rostro, pasando el arroz de la olla a recipientes pequeños sobre la mesa. Sin texto. Estilo carton_recortado.",
       "image_prompt": "handmade figures cut from corrugated cardboard, raw torn edges, marker details, photographed on a table with soft light, kraft brown, warm ochre, faded red marker, cream and charcoal marker lines, vertical 9:16, no text, no letters, no numbers, no logos + close-up of cardboard hands with no face visible, scooping cooked rice from a pot into small containers on a table, no text",
@@ -266,12 +266,13 @@
       "duration_seconds": 10,
       "asset_filename": "frames/frame_08.png",
       "encuadre": "cenital",
-      "narration": "Guárdalo en el refrigerador y cómelo en las siguientes 24 horas. Si lo recalientas, que quede humeante por completo, y solo una vez.",
+      "narration": "Guárdalo en el refrigerador, a 4 grados o menos, y cómelo en las siguientes 24 horas. Si lo recalientas, que quede humeante por completo, y solo una vez.",
       "on_screen_text": "24 horas en el refri",
       "visual_description": "Vista cenital de un refrigerador de cartón abierto: recipientes con arroz en un estante. Sin texto ni marcas. Estilo carton_recortado.",
       "image_prompt": "handmade figures cut from corrugated cardboard, raw torn edges, marker details, photographed on a table with soft light, kraft brown, warm ochre, faded red marker, cream and charcoal marker lines, vertical 9:16, no text, no letters, no numbers, no logos + overhead view of an open cardboard refrigerator, small containers of cooked rice on a shelf, soft kitchen light, no logos, no text",
       "source_ids": [
-        "SRC-001"
+        "SRC-001",
+        "SRC-002"
       ],
       "sfx": [
         "silencio"
@@ -283,7 +284,7 @@
       "duration_seconds": 15,
       "asset_filename": "frames/frame_09.png",
       "encuadre": "general",
-      "narration": "El arroz de ayer sí se puede comer, si se enfrió pronto y se guardó en frío. El dato no es para asustar: es para no olvidarlo en la estufa. Esto fue Datos y ociosidades.",
+      "narration": "El arroz de ayer sí se puede comer, si se enfrió pronto y se guardó en frío. También se puede comer frío. El dato no es para asustar: es para no olvidarlo en la estufa. Esto fue Datos y ociosidades.",
       "on_screen_text": "No lo dejes en la estufa",
       "visual_description": "Plano general de la misma cocina al atardecer: la olla ya no está en la estufa; los recipientes esperan junto al refrigerador de cartón. Sin texto. Estilo carton_recortado.",
       "image_prompt": "handmade figures cut from corrugated cardboard, raw torn edges, marker details, photographed on a table with soft light, kraft brown, warm ochre, faded red marker, cream and charcoal marker lines, vertical 9:16, no text, no letters, no numbers, no logos + wide shot of the same cardboard kitchen at dusk, the stove empty, rice containers waiting beside a cardboard refrigerator, warm late light, no people, no text",
@@ -536,5 +537,5 @@
       "miniatura": "primer frame (portada con el título)"
     }
   },
-  "nota": "Cápsula NUEVA, solo storyboard (2026-11-11). No se generaron imágenes, no se montó y no se publica. Pensada para que otro modelo, con edge-tts, la genere entera a partir de este JSON. Voz oficial es-MX-JorgeNeural. Estimación de duración: 204 palabras, ~82 s de voz neta a 2,6 pal/s con pausas, ~87 s de escenas con delay 0,25 s y pad 0,3 s, más 6 s de cortinilla (~93 s al final). Montaje 2026-11-11: frames 01-09 recortados (marca Dola AI abajo, 7,3 %) a 1080x1920. El frame 09 (cocina al atardecer) se usó en el cierre. En la escena 7 la capa de dato «1 hora» se sustituyó por un mapa del Reino Unido (el dato sigue en el texto en pantalla) para cumplir la compuerta de capa_mapa; la escena 6 conserva la capa de dato."
+  "nota": "Cápsula NUEVA, solo storyboard (2026-11-11). No se generaron imágenes, no se montó y no se publica. Pensada para que otro modelo, con edge-tts, la genere entera a partir de este JSON. Voz oficial es-MX-JorgeNeural. Estimación de duración: 204 palabras, ~82 s de voz neta a 2,6 pal/s con pausas, ~87 s de escenas con delay 0,25 s y pad 0,3 s, más 6 s de cortinilla (~93 s al final). Montaje 2026-11-11: frames 01-09 recortados (marca Dola AI abajo, 7,3 %) a 1080x1920. El frame 09 (cocina al atardecer) se usó en el cierre. En la escena 7 la capa de dato «1 hora» se sustituyó por un mapa del Reino Unido (el dato sigue en el texto en pantalla) para cumplir la compuerta de capa_mapa; la escena 6 conserva la capa de dato. Versión 2 de narración (2026-11-11): se añadieron hechos ya respaldados en sources[] (vegetación, ventana de 0,5 a 6 h, porciones, 4 °C, se puede comer frío) para alargar la cápsula a 85–90 s, sin cambiar la voz ni rellenar con silencios."
 }
