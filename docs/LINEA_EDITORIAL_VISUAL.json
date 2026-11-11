@@ -615,6 +615,42 @@
         "ambiente_sugerido": "viento",
         "musica_sugerida": "sintetico:menor_calma",
         "atractivo": 4
+      },
+      "grabado_dore": {
+        "nombre": "Grabado al estilo Gustave Doré",
+        "descripcion": "Grabado en madera o acero en blanco y negro, al estilo de las ilustraciones de Gustave Doré para la Divina Comedia: tramado denso, claroscuro dramático y escala romántica épica.",
+        "prompt_base": "19th-century wood and steel engraving in the style of Gustave Doré's illustrations for Dante's Divine Comedy, black and white ink on cream paper, dense crosshatching, dramatic chiaroscuro, epic romantic scale, monumental figures in vast sublime landscapes, fine engraved linework, not photorealistic, vertical 9:16, no text, no letters",
+        "referencia": "(propio; inspirado en los grabados de Gustave Doré para la Divina Comedia, dominio público, s. XIX)",
+        "temas": "mitos, literatura, religión, historia, drama, paisaje, filosofía, astronomía",
+        "paleta": "negro tinta, blanco, gris, papel crema",
+        "ambiente_sugerido": "",
+        "musica_sugerida": "sintetico:menor_calma",
+        "atractivo": 4,
+        "origen": "propuesta Mj 2026-11-11 (bitácora de imágenes)"
+      },
+      "simbolismo_moreau": {
+        "nombre": "Simbolismo al estilo Gustave Moreau",
+        "descripcion": "Pintura simbolista al óleo al estilo de Gustave Moreau: detalle enjoyado, acentos de hoja de oro, rojos y azules profundos, atmósfera mítica y onírica, textura de óleo.",
+        "prompt_base": "19th-century symbolist oil painting in the style of Gustave Moreau, jewel-like ornamented detail, gold leaf accents, deep crimsons and sapphires, mythic dreamlike atmosphere, rich oil-paint texture, ornate costumes and sacred architecture, luminous glaze, not photorealistic, vertical 9:16, no text, no letters",
+        "referencia": "(propio; inspirado en la pintura simbolista de Gustave Moreau, dominio público, s. XIX)",
+        "temas": "mitos, sueños, religión, arte, literatura, símbolos, biografías, filosofía",
+        "paleta": "rojo carmín, azul zafiro, oro hoja, violeta, negro, marfil",
+        "ambiente_sugerido": "",
+        "musica_sugerida": "sintetico:menor_calma",
+        "atractivo": 4,
+        "origen": "propuesta Mj 2026-11-11 (bitácora de imágenes)"
+      },
+      "carta_tarot": {
+        "nombre": "Carta de Tarot",
+        "descripcion": "Cada cuadro se compone como una carta de tarot vertical: orla ornamentada, numeral romano arriba y cartela inferior en blanco (o muy corta) para evitar texto inventado; colores planos al modo de naipes de principios del s. XX o trazo art nouveau.",
+        "prompt_base": "vertical tarot card composition, ornate art-nouveau rectangular border, a small roman numeral at the top, blank name banner at the bottom with no letters and no words, flat early-20th-century tarot colors and art-nouveau linework, symbolic central figure on cream card stock, not photorealistic, vertical 9:16, no text, no letters",
+        "referencia": "(propio; composición de carta de tarot con orla y colores planos de principios del s. XX, sin copiar naipes concretos)",
+        "temas": "símbolos, mitos, psicología, sueños, historia, ritos, literatura",
+        "paleta": "crema, rojo, azul, amarillo oro, verde, negro línea",
+        "ambiente_sugerido": "",
+        "musica_sugerida": "sintetico:menor_calma",
+        "atractivo": 4,
+        "origen": "propuesta Mj 2026-11-11 (bitácora de imágenes)"
       }
     }
   },

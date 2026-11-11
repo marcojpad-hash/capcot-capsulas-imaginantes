@@ -3,7 +3,7 @@
 **Quién:** el armado y el código lo hace Grok en grok.com o ChatGPT trabajando en este repo, para no gastar créditos del bot Imaginantes. Imaginantes solo monta con `scripts/montar_capsula.py` (ffmpeg local, sin costo) y reprograma.
 
 ## Problema (Mj)
-Las escenas de los montajes salen todas con la **misma plantilla visual** y casi siempre con un **personaje femenino**. Ya existen **50 estilos** en `scripts/estilos.json`, además de `docs/ESTILOS_VISUALES.md` y `docs/PROPUESTAS_PLANTILLAS_VISUALES.md`. La rotación (`scripts/rotar_estilo.py` y `scripts/rotacion.py`) no se está reflejando en las escenas generadas.
+Las escenas de los montajes salen todas con la **misma plantilla visual** y casi siempre con un **personaje femenino**. Ya existen **53 estilos** en `scripts/estilos.json`, además de `docs/ESTILOS_VISUALES.md` y `docs/PROPUESTAS_PLANTILLAS_VISUALES.md`. La rotación (`scripts/rotar_estilo.py` y `scripts/rotacion.py`) no se está reflejando en las escenas generadas.
 
 ## Tareas
 1. Encontrar por qué todas las escenas salen con el mismo estilo y personaje. Revisar `estilo_id` en cada `storyboard.json` y los prompts de imagen: si hay un personaje o referencia fija, si `rotar_estilo.py` no se usa, o si el prompt base está fijo en un JSON o template (`templates/storyboard_vertical.template.json`). Documentar la causa exacta.
