@@ -228,3 +228,9 @@ Entrega: `cola/entrada/2026-11-01_dato-cambio-horario-corazon/` con `storyboard.
 - Formato: tip práctico de cocina/hogar con ancla científica verificable (URL/DOI); 8 escenas, 85–90 s, cierre de 2 escenas (≥10 s) con «Esto fue Datos y ociosidades.».
 - Variedad: base distinta de las 50 plantillas, paleta y encuadres distintos a los de 7–9 nov (no gouache verde azulado/dorado, no la científica recurrente); 9–10 frames con plano_seconds=5 si aplica.
 - Sin frames, sin audio, sin publicar. Montaje/QA/publicación: Grok app.
+
+## Brief del día 2026-11-11 (slot 23:30 CDMX) — sin paquete en cola a las 10:00
+- Pendiente: `cola/entrada/2026-11-11_dato-<slug>/` (storyboard.json, fuentes.md, ESTADO_EJECUCION.md).
+- Formato: tip práctico de cocina/hogar con ancla científica verificable (URL/DOI); 8 escenas, 85–90 s, cierre de 2 escenas (≥10 s) con «Esto fue Datos y ociosidades.». No repetir Mpemba (ya programado 13:30), ballena, aguacate ni clavo.
+- Variedad: base distinta de las 50 plantillas, otra paleta y encuadres (general, cenital, macro, contrapicado, detalle); 9–10 frames con plano_seconds=5.
+- Sin frames, sin audio, sin publicar. Montaje/QA/publicación: Grok app.
