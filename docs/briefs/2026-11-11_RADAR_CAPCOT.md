@@ -180,7 +180,7 @@ Se comparó el corte anterior de docs/INVESTIGACION_API_META_Y_GOOGLE_TRENDS.md 
 
 - Archivo: docs/INVESTIGACION_API_META_Y_GOOGLE_TRENDS.md
 - Commit: 80c29b04c31c4e337c6c0bfa9cc397d991296213
-- Se documentaron: campo opcional is_ai_generated para editar Page posts en v27; retirada de total_video_consumption_rate a principios de noviembre sin reemplazo directo; seis funciones legacy que las apps nuevas ya no pueden usar desde 4-nov y que no deben introducirse en integraciones nuevas.
+- Se documentaron: campo opcional is_ai_generated para editar Page posts en v27; aviso de retirada de total_video_consumption_rate a principios de noviembre sin reemplazo directo (el tracker la marca Planned/Tentative, por lo que la fecha debe tratarse como tentativa); seis funciones legacy que las apps nuevas ya no pueden usar desde 4-nov y que no deben introducirse en integraciones nuevas.
 - **Caveat:** el anuncio oficial de Meta y las referencias de Graph API/Instagram/Page Insights devolvieron HTTP 429. El cambio se registra con la URL del anuncio oficial y contraste de trackers/cobertura técnica independiente; no se implementa nada hasta poder revalidar directamente en Meta.
 - Instagram Insights: no se encontró una métrica nueva posterior al corte 31-oct. El changelog incremental consultado muestra actualización 29-oct; el cambio 28-oct es de webhooks/handoff, no de Insights.
 - Facebook Pages Insights: no se confirmó un cambio Page-specific nuevo; no confundir la retirada general de video insights con un reemplazo de Page Insights.
