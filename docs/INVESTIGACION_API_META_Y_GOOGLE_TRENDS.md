@@ -227,3 +227,55 @@ No mezclar permisos entre flujos. Antes de persistir una métrica, validar el no
 - Cambios recientes de Facebook Page Insights: https://agencyreportr.com/blog/facebook-page-insights-api — **fuente secundaria**, alerta para pruebas, no contrato de implementación.
 
 **Estado al corte:** investigación y diseño actualizados; ninguna conexión privada Meta está activada ni ninguna métrica privada fue descargada en esta ejecución. El RSS es la ruta de Trends disponible sin credenciales. No se han consumido créditos ni se han publicado contenidos.
+
+
+## 9. Seguimiento incremental — 2026-11-11
+
+**Corte:** 2026-11-11, 08:05 America/Mexico_City. Esta sección añade únicamente cambios posteriores al corte 2026-10-31. No implica que CAPCOT tenga una Meta App, OAuth o recolector privado activo.
+
+### 9.1 Meta Graph API v27.0 — cambio detectado
+
+Se localizó el anuncio de Meta para Graph API v27.0 y Marketing API v27.0, fechado **4-nov-2026**:
+
+- Anuncio oficial: https://developers.facebook.com/blog/post/2026/11/04/introducing-graph-api-v27-and-marketing-api-v27/
+- Changelog general: https://developers.facebook.com/docs/graph-api/changelog/
+- Contraste independiente del anuncio y sus cambios: https://adstackwatch.com/platforms/meta/ y https://www.publisherinabox.com/facebook-ai-label-graph-api-v27-automated-pages-2026
+
+**Estado de acceso:** el enlace del anuncio oficial devolvió HTTP 429 durante esta consulta. Por ello, los puntos siguientes se registran como cambios reportados por el tracker de changelog y contrastados con cobertura técnica independiente que enlaza el anuncio; la confirmación directa en Meta queda pendiente antes de implementar.
+
+Cambios reportados:
+
+1. **Autodeclaración de IA en edición de Page posts:** Graph API v27.0 incorpora el booleano opcional `is_ai_generated` al editar una publicación de Page mediante `POST /{post-id}` o `POST /{page-post-id}`. `true` agrega la declaración; `false` la elimina; omitir el campo conserva el estado existente. Es una declaración del publicador, no detección automática. Es una superficie distinta del parámetro de Instagram Content Publishing ya documentado en §8.1. No asumir que el campo está disponible en versiones anteriores ni que modifica etiquetas de anuncios.
+2. **Métrica de video retirada:** `total_video_consumption_rate` dejó de devolver datos a principios de noviembre de 2026 en todas las versiones de Graph API, según el aviso de v27.0. No se anunció reemplazo directo. No incorporarla a adaptadores nuevos; si una respuesta histórica la omite, conservar `null`/«no disponible», nunca cero.
+3. **Funciones legacy de solicitudes:** desde 4-nov-2026, las apps nuevas no pueden usar multi-ID requests, date/time formatting, HTTP method override, field aliases, JSONP callbacks ni asynchronous batch requests; las apps existentes no pueden introducir nuevos casos de uso de esas funciones. La retirada completa se anuncia para v28.0. Los adaptadores nuevos deben evitar esas rutas.
+
+**Impacto CAPCOT:** el esquema actual no contiene `total_video_consumption_rate`, por lo que no requiere migración inmediata. La futura integración de publicación/insights debe fijar una versión explícita, evitar las seis funciones legacy y distinguir autodeclaración de IA en Instagram frente a edición de Page posts. No se hizo ninguna llamada de publicación ni se modificó código de integración.
+
+### 9.2 Instagram Insights / Instagram Platform
+
+- Se revisó el changelog de Instagram Platform y su registro incremental: https://developers.facebook.com/docs/instagram-platform/changelog/ y https://releasebot.io/updates/meta/instagram-platform
+- El tracker consultado muestra como última actualización **29-oct-2026**. El cambio del 28-oct se refiere a notificaciones de handoff de Meta Business Agent en webhooks; no añade una métrica de Insights. Los cambios del 20-oct (comentarios ordenados y captions de Stories) tampoco alteran las métricas de Reels del MVP.
+- No se identificó una nueva métrica de Instagram Insights posterior al corte 31-oct. La referencia oficial de Meta no pudo recuperarse directamente por HTTP 429; no se declara verificación directa del changelog.
+
+**Decisión:** mantener el inventario de métricas de Instagram ya documentado. No añadir campos ni permisos por inferencia a partir de cambios de webhooks o de Creator Marketplace.
+
+### 9.3 Facebook Pages Insights
+
+- Referencia oficial consultada: https://developers.facebook.com/docs/platform/insights/reference/page-insights/
+- La página oficial de Meta devolvió HTTP 429. No se encontró un cambio Page-specific nuevo, directamente verificable, posterior al corte anterior.
+- La retirada de `total_video_consumption_rate` se registra como cambio general de video insights de Graph API, sin inferir que exista una métrica Page Insights equivalente ni un reemplazo.
+- Se mantienen las cautelas de §8.2: no equiparar reach, impressions y media views; no asumir reemplazos de métricas retiradas; probar el nombre exacto en el activo propio autorizado antes de implementar.
+
+### 9.4 Google Trends API alfa
+
+- Documentación oficial: https://developers.google.com/search/apis/trends
+- Anuncio oficial de alfa: https://developers.google.com/search/blog/2025/07/trends-api
+
+No se encontró anuncio oficial nuevo que cambie el estado de acceso alfa limitada, la ventana móvil aproximada de cinco años, las agregaciones diaria/semanal/mensual/anual, los desgloses geográficos o la escala consistente entre consultas. La API sigue sin ser una dependencia disponible para CAPCOT. El RSS público México se mantiene como señal gratuita; cuando falle, usar la página oficial Trending Now y registrar el fallo exacto. No usar endpoints internos ni scrapers de evasión.
+
+### 9.5 Estado de implementación y confianza
+
+- **OBSERVADO:** el tracker de changelog sitúa el anuncio Graph API v27.0 el 4-nov-2026; dos fuentes técnicas independientes describen los cambios y enlazan el anuncio de Meta.
+- **BLOQUEO DE VERIFICACIÓN:** el anuncio oficial de Meta devolvió HTTP 429; las páginas oficiales de Graph API, Instagram Platform y Page Insights también limitaron el acceso. La confirmación directa de los detalles v27 queda pendiente.
+- **SIN CAMBIO:** no se modificó el contrato de datos, no se añadieron métricas, no se activó OAuth, no se descargaron Insights privados y no se publicaron contenidos.
+- **Siguiente criterio:** antes de implementar cualquier campo de v27, revalidar en el changelog oficial de Meta y hacer una prueba de lectura con un activo propio autorizado. Nunca enviar tokens por chat ni guardar secretos en Git.
