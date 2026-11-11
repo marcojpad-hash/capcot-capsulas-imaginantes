@@ -29,6 +29,7 @@ import json
 import os
 import subprocess
 import sys
+import urllib.error
 import urllib.request
 from datetime import datetime
 from pathlib import Path
@@ -63,10 +64,20 @@ def llamar_groq(prompt, model, api_key_env=None):
         }).encode("utf-8")
         req = urllib.request.Request(
             GROQ_URL, data=body,
-            headers={"Authorization": f"Bearer {key}", "Content-Type": "application/json", "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"},
+            headers={
+                "Authorization": f"Bearer {key}",
+                "Content-Type": "application/json",
+                "User-Agent": "capcot-orquestador/1.0",
+                "Accept": "application/json",
+            },
         )
-        with urllib.request.urlopen(req, timeout=300) as resp:
-            data = json.load(resp)
+        try:
+            with urllib.request.urlopen(req, timeout=300) as resp:
+                data = json.load(resp)
+        except urllib.error.HTTPError as e:
+            body_err = e.read()[:500]
+            print(f"HTTP {e.code} de Groq: {body_err.decode('utf-8', 'replace')}", file=sys.stderr)
+            raise
         return data["choices"][0]["message"]["content"]
     r = subprocess.run(
         [sys.executable, str(GROQ_CLIENT), "chat", "--model", model, "--prompt", prompt],
