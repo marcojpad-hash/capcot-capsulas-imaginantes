@@ -19,7 +19,7 @@ Se enumeraron las rutas completas antes de proponer un storyboard:
 | cola/bloqueados/ | 44 | 0 |
 | docs/briefs/ | 26 | 0 |
 
-El radar 2026-11-11 no existía antes de esta escritura. No hay storyboard del 11-nov en ninguna de las cuatro rutas de proyectos/producción/cola.
+El radar 2026-11-11 no existía antes de esta escritura. No hay storyboard del 11-nov en ninguna de las cuatro rutas de proyectos/producción/cola. Además de revisar los nombres de directorio, se inspeccionaron fecha_objetivo y slot_local en los 67 storyboards de proyectos/ y en los 16 registros únicos adicionales de salidas/, cola/entrada/ y cola/bloqueados/: ninguno declara fecha_objetivo 2026-11-11. En varios históricos ambos campos están ausentes; en esos casos no se inventó fecha ni slot y se contrastó el horario diario vigente.
 
 ### Horario diario observado
 
