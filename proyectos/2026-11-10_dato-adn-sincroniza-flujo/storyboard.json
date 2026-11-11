@@ -127,6 +127,7 @@
       "source_ids": [
         "SRC-001"
       ],
+      "asset_filename": "frames/scene_001.jpg",
       "style_id": "cubismo_collage",
       "dramatic_beat": "El fluido ya está cambiando: el movimiento deja de ser puramente local.",
       "scene_function": "Abrir con la anomalía en curso y fijar la pregunta visual.",
@@ -148,6 +149,7 @@
       "source_ids": [
         "SRC-001"
       ],
+      "asset_filename": "frames/scene_002.jpg",
       "style_id": "cubismo_collage",
       "dramatic_beat": "Se revela que el fenómeno ocurre en un material diseñado.",
       "scene_function": "Delimitar el sistema experimental para evitar una lectura biológica errónea.",
@@ -169,6 +171,7 @@
       "source_ids": [
         "SRC-001"
       ],
+      "asset_filename": "frames/scene_003.jpg",
       "style_id": "cubismo_collage",
       "dramatic_beat": "Los motores convierten energía química en movimiento de filamentos.",
       "scene_function": "Explicar el primer eslabón causal del mecanismo.",
@@ -209,6 +212,7 @@
       "source_ids": [
         "SRC-001"
       ],
+      "asset_filename": "frames/scene_004.jpg",
       "style_id": "cubismo_collage",
       "dramatic_beat": "La estructura emergente modifica el movimiento que la produjo.",
       "scene_function": "Hacer visible la retroalimentación mecánica.",
@@ -232,6 +236,7 @@
       "source_ids": [
         "SRC-001"
       ],
+      "asset_filename": "frames/scene_005.jpg",
       "style_id": "cubismo_collage",
       "dramatic_beat": "El sistema cambia de régimen dinámico.",
       "scene_function": "Presentar el giro científico central.",
@@ -253,6 +258,7 @@
       "source_ids": [
         "SRC-001"
       ],
+      "asset_filename": "frames/scene_006.jpg",
       "style_id": "cubismo_collage",
       "dramatic_beat": "La coordinación deja de ser una impresión visual y adquiere medidas.",
       "scene_function": "Dar magnitud al hallazgo con las variables correctas.",
@@ -280,6 +286,7 @@
       "source_ids": [
         "SRC-001"
       ],
+      "asset_filename": "frames/scene_007.jpg",
       "style_id": "cubismo_collage",
       "dramatic_beat": "Se separa el resultado medido de cualquier generalización.",
       "scene_function": "Delimitar condiciones experimentales y evitar sobreafirmaciones.",
@@ -301,6 +308,7 @@
       "source_ids": [
         "SRC-001"
       ],
+      "asset_filename": "frames/scene_008.jpg",
       "style_id": "cubismo_collage",
       "dramatic_beat": "El caos inicial se resignifica como autoorganización mecánica.",
       "scene_function": "Pagar la apertura y cerrar con una pregunta que nace del hallazgo.",
