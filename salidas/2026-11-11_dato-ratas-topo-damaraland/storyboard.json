@@ -1,0 +1,284 @@
+{
+ "project_id": "2026-11-11_dato-ratas-topo-damaraland",
+ "serie": "Datos y ociosidades",
+ "title": "¿Por qué trabajan más las ratas topo cuando nacen sus crías?",
+ "titulo": "Ratas topo: más trabajo tras el nacimiento",
+ "language": "es-MX",
+ "estilo_id": "grabado_dore",
+ "estilo_visual": "19th-century wood and steel engraving in the style of Gustave Doré's illustrations for Dante's Divine Comedy, black and white ink on cream paper, dense crosshatching, dramatic chiaroscuro, epic romantic scale, monumental figures in vast sublime landscapes, fine engraved linework, not photorealistic, vertical 9:16, no text, no letters, no humans, no scientists, no labels, no numbers, no logos",
+ "estructura": "comparacion",
+ "aspect_ratio": "9:16",
+ "target_duration_seconds": 88,
+ "resumen": "Un estudio de 2026 sobre ratas topo de Damaraland encontró que, poco después del nacimiento de las crías, los individuos no reproductores y los machos reproductores aumentan sus actividades de trabajo y pasan menos tiempo en el nido. No es que se conviertan en niñeras: ayudan indirectamente sosteniendo el trabajo del grupo mientras la hembra reproductora permanece más en el nido.",
+ "keywords": [
+  "ratas topo",
+  "cooperación animal",
+  "crías"
+ ],
+ "proveedor_imagenes": "generadas con IA (ilustración no realista, grabado_dore)",
+ "parece_real": false,
+ "trend_source": {
+  "tipo": "hallazgo_cientifico",
+  "medio": "Behavioral Ecology",
+  "termino": "ratas topo",
+  "nota": "Artículo científico recién publicado: Behavioral Ecology, 10 de noviembre de 2026."
+ },
+ "export": {
+  "filename": "capsula.mp4",
+  "fps": 30,
+  "loudness_lufs": -14,
+  "resolution": "1080x1920",
+  "plano_seconds": 5,
+  "subtitle_max_words": 3
+ },
+ "voice": {
+  "engine": "edge-tts",
+  "modo_pausas": "continuo",
+  "pad_seconds": 0.3,
+  "pitch": "-2Hz",
+  "rate": "+7%",
+  "voice_id": "es-MX-JorgeNeural"
+ },
+ "audio": {
+  "music_asset": "sintetico:pizzicato",
+  "cama_musical": "pizzicato",
+  "music_lufs": -27,
+  "ambiente_lufs": -26
+ },
+ "cortinilla_fuentes": {
+  "aviso": "Imágenes generadas con IA. Voz sintética.",
+  "bg_rgb": [
+   18,
+   16,
+   14
+  ],
+  "duration_seconds": 6,
+  "firma": "Datos y ociosidades · @datosyociosidades",
+  "titulo": "Fuentes"
+ },
+ "sources": [
+  {
+   "accessed": "2026-11-11",
+   "cita_corta": "Thorley, J. et al. (2026). Helpers at the nest? The activity patterns of Damaraland mole-rats across reproductive periods.",
+   "doi": "10.1093/beheco/arag140",
+   "id": "SRC-001",
+   "ref_display": "Behavioral Ecology · artículo original, publicado el 10 de noviembre de 2026",
+   "supports": [
+    "En aproximadamente 24.000 horas de observaciones de ratas topo de Damaraland en cautiverio, se compararon presupuestos de actividad entre periodos reproductivos.",
+    "Poco después del nacimiento, los individuos no reproductores de ambos sexos y los machos reproductores redujeron su tiempo de permanencia en el nido y aumentaron su esfuerzo de trabajo.",
+    "Durante esos mismos periodos, las hembras reproductoras pasaron más tiempo en el nido, redujeron conductas relacionadas con el trabajo y aumentaron la alimentación.",
+    "El estudio no encontró evidencia de que los no reproductores aumentaran la asistencia al nido como forma de cuidado directo; los autores proponen que el aumento del trabajo puede apoyar a los reproductores y facilitar el acceso de las crías a recursos alimentarios al salir del nido."
+   ],
+   "url": "https://doi.org/10.1093/beheco/arag140"
+  }
+ ],
+ "scenes": [
+  {
+   "id": "scene_001",
+   "arc": "hook_medias_res",
+   "duration_seconds": 10,
+   "asset_filename": "frames/frame_01.png",
+   "encuadre": "general",
+   "narration": "Cuando nacen las crías, en una colonia subterránea ocurre algo inesperado: varias ratas topo no se quedan cuidándolas. Se ponen a trabajar más.",
+   "on_screen_text": "Nacen las crías",
+   "visual_description": "Plano general en corte del subsuelo: cámara-nido con crías y túneles que se ramifican; tercio superior vacío para el título. Estilo grabado_dore. Sin texto en la imagen.",
+   "image_prompt": "19th-century wood and steel engraving in the style of Gustave Doré's illustrations for Dante's Divine Comedy, black and white ink on cream paper, dense crosshatching, dramatic chiaroscuro, epic romantic scale, monumental figures in vast sublime landscapes, fine engraved linework, not photorealistic, vertical 9:16, no text, no letters, no humans, no scientists, no labels, no numbers, no logos + wide cross-section of the underground world, a vaulted nest chamber deep in the earth with a Damaraland mole-rat family and tiny newborn pups in a bed of dry grass, branching tunnels radiating into darkness, epic chiaroscuro, empty upper third of the frame for a title",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "sfx": [
+    "silencio"
+   ]
+  },
+  {
+   "id": "scene_002",
+   "arc": "contexto",
+   "duration_seconds": 10,
+   "asset_filename": "frames/frame_02.png",
+   "encuadre": "general",
+   "narration": "Son las ratas topo de Damaraland, roedores africanos que viven en familia bajo tierra y excavan túneles para encontrar tubérculos.",
+   "on_screen_text": "Una vida bajo tierra",
+   "visual_description": "Gran paisaje en corte: superficie árida del Kalahari arriba y laberinto de galerías con tubérculos abajo. Estilo grabado_dore. Sin texto en la imagen.",
+   "image_prompt": "19th-century wood and steel engraving in the style of Gustave Doré's illustrations for Dante's Divine Comedy, black and white ink on cream paper, dense crosshatching, dramatic chiaroscuro, epic romantic scale, monumental figures in vast sublime landscapes, fine engraved linework, not photorealistic, vertical 9:16, no text, no letters, no humans, no scientists, no labels, no numbers, no logos + sublime vertical cutaway landscape, arid African savanna surface with acacia silhouettes at the top, beneath it a vast labyrinth of tunnels with hanging roots and large tubers, small mole-rats travelling through the galleries",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "sfx": [
+    "silencio"
+   ],
+   "capa": {
+    "tipo": "mapa",
+    "region": [
+     8,
+     42,
+     -36,
+     -6
+    ],
+    "puntos": [
+     {
+      "nombre": "Damaraland",
+      "lon": 14.5,
+      "lat": -20.5
+     }
+    ],
+    "titulo": "Damaraland, Namibia: de ahí su nombre",
+    "fuente": "Referencia geográfica del nombre común",
+    "plano": 1
+   }
+  },
+  {
+   "id": "scene_003",
+   "arc": "metodo",
+   "duration_seconds": 10,
+   "asset_filename": "frames/frame_03.png",
+   "encuadre": "macro",
+   "narration": "Jack Thorley y su equipo analizaron unas veinticuatro mil horas de observaciones de animales en cautiverio, en distintas etapas reproductivas.",
+   "on_screen_text": "24 mil horas observadas",
+   "visual_description": "Macro de una rata topo en un túnel, ojos diminutos, pelaje y dientes incisivos; textura de tramado. Estilo grabado_dore. Sin texto en la imagen.",
+   "image_prompt": "19th-century wood and steel engraving in the style of Gustave Doré's illustrations for Dante's Divine Comedy, black and white ink on cream paper, dense crosshatching, dramatic chiaroscuro, epic romantic scale, monumental figures in vast sublime landscapes, fine engraved linework, not photorealistic, vertical 9:16, no text, no letters, no humans, no scientists, no labels, no numbers, no logos + extreme close-up macro of a single Damaraland mole-rat head emerging from a tunnel, tiny eyes, prominent incisors, velvety fur rendered with dense crosshatching, dramatic side light",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "sfx": [
+    "silencio"
+   ],
+   "capa": {
+    "tipo": "dato",
+    "valor": "24 000 h",
+    "etiqueta": "de observaciones en cautiverio",
+    "fuente": "Thorley et al., Behavioral Ecology, 2026",
+    "plano": 1
+   }
+  },
+  {
+   "id": "scene_004",
+   "arc": "hallazgo",
+   "duration_seconds": 10,
+   "asset_filename": "frames/frame_04.png",
+   "encuadre": "contrapicado",
+   "narration": "El resultado: poco después del nacimiento, los que no se reproducen, hembras y machos, pasan menos tiempo en el nido y trabajan más.",
+   "on_screen_text": "Más trabajo en los túneles",
+   "visual_description": "Contrapicado desde el fondo de una galería: ratas topo excavan hacia arriba y empujan tierra; escala monumental. Estilo grabado_dore. Sin texto en la imagen.",
+   "image_prompt": "19th-century wood and steel engraving in the style of Gustave Doré's illustrations for Dante's Divine Comedy, black and white ink on cream paper, dense crosshatching, dramatic chiaroscuro, epic romantic scale, monumental figures in vast sublime landscapes, fine engraved linework, not photorealistic, vertical 9:16, no text, no letters, no humans, no scientists, no labels, no numbers, no logos + low-angle view from the bottom of a steep tunnel looking up, several mole-rats digging and kicking soil upward in a heroic monumental composition, falling earth, rays of faint light",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "sfx": [
+    "silencio"
+   ]
+  },
+  {
+   "id": "scene_005",
+   "arc": "hallazgo",
+   "duration_seconds": 10,
+   "asset_filename": "frames/frame_05.png",
+   "encuadre": "detalle",
+   "narration": "Los machos reproductores hacen lo mismo: menos tiempo en el nido y más esfuerzo de trabajo.",
+   "on_screen_text": "Los machos también",
+   "visual_description": "Detalle de patas excavando y terrones de tierra cayendo; un macho robusto empuja tierra con las patas traseras. Estilo grabado_dore. Sin texto en la imagen.",
+   "image_prompt": "19th-century wood and steel engraving in the style of Gustave Doré's illustrations for Dante's Divine Comedy, black and white ink on cream paper, dense crosshatching, dramatic chiaroscuro, epic romantic scale, monumental figures in vast sublime landscapes, fine engraved linework, not photorealistic, vertical 9:16, no text, no letters, no humans, no scientists, no labels, no numbers, no logos + detail shot of powerful mole-rat forepaws and claws scraping hard earth, clods of soil and small pebbles flying, one sturdy mole-rat pushing a pile of soil backwards",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "sfx": [
+    "silencio"
+   ]
+  },
+  {
+   "id": "scene_006",
+   "arc": "contraste",
+   "duration_seconds": 10,
+   "asset_filename": "frames/frame_06.png",
+   "encuadre": "cenital",
+   "narration": "Mientras tanto, la hembra reproductora pasa más tiempo dentro del nido, reduce conductas relacionadas con el trabajo y aumenta su actividad de alimentación.",
+   "on_screen_text": "La madre permanece más",
+   "visual_description": "Vista cenital del nido: la hembra reproductora acurrucada con las crías, rodeada de galerías vacías. Estilo grabado_dore. Sin texto en la imagen.",
+   "image_prompt": "19th-century wood and steel engraving in the style of Gustave Doré's illustrations for Dante's Divine Comedy, black and white ink on cream paper, dense crosshatching, dramatic chiaroscuro, epic romantic scale, monumental figures in vast sublime landscapes, fine engraved linework, not photorealistic, vertical 9:16, no text, no letters, no humans, no scientists, no labels, no numbers, no logos + overhead top-down view into a round nest chamber, the large breeding female mole-rat curled around tiny pups on dry grass, empty tunnels leading away in all directions, soft engraved light in the centre",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "sfx": [
+    "silencio"
+   ]
+  },
+  {
+   "id": "scene_007",
+   "arc": "correccion",
+   "duration_seconds": 10,
+   "asset_filename": "frames/frame_07.png",
+   "encuadre": "general",
+   "narration": "Ojo: el estudio no encontró que los no reproductores pasaran más tiempo junto a las crías. Su ayuda llega por otra vía: trabajar más.",
+   "on_screen_text": "Ayudar no es niñear",
+   "visual_description": "Plano general: el nido queda al fondo, lejos; en primer plano los ayudantes despejan una galería. Estilo grabado_dore. Sin texto en la imagen.",
+   "image_prompt": "19th-century wood and steel engraving in the style of Gustave Doré's illustrations for Dante's Divine Comedy, black and white ink on cream paper, dense crosshatching, dramatic chiaroscuro, epic romantic scale, monumental figures in vast sublime landscapes, fine engraved linework, not photorealistic, vertical 9:16, no text, no letters, no humans, no scientists, no labels, no numbers, no logos + wide shot of a long underground gallery, helper mole-rats in the foreground clearing soil and roots, the nest chamber small and distant at the far end, strong perspective",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "sfx": [
+    "silencio"
+   ]
+  },
+  {
+   "id": "scene_008",
+   "arc": "significado",
+   "duration_seconds": 10,
+   "asset_filename": "frames/frame_08.png",
+   "encuadre": "detalle",
+   "narration": "Los autores proponen que ese esfuerzo extra puede apoyar a la hembra cuando está más limitada y facilitar que las crías encuentren alimento cuando comiencen a salir del nido.",
+   "on_screen_text": "El grupo sostiene al grupo",
+   "visual_description": "Detalle de un gran tubérculo alcanzado por un túnel recién abierto, con raíces finas. Estilo grabado_dore. Sin texto en la imagen.",
+   "image_prompt": "19th-century wood and steel engraving in the style of Gustave Doré's illustrations for Dante's Divine Comedy, black and white ink on cream paper, dense crosshatching, dramatic chiaroscuro, epic romantic scale, monumental figures in vast sublime landscapes, fine engraved linework, not photorealistic, vertical 9:16, no text, no letters, no humans, no scientists, no labels, no numbers, no logos + close detail of a huge tuber embedded in the soil, a freshly dug tunnel reaching it, fine roots and grains of earth, a mole-rat snout touching the tuber, rich crosshatched texture",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "sfx": [
+    "silencio"
+   ]
+  },
+  {
+   "id": "scene_009",
+   "arc": "reflexion_o_pregunta",
+   "duration_seconds": 10,
+   "asset_filename": "frames/frame_09.png",
+   "encuadre": "contrapicado",
+   "narration": "En estas familias, cooperar no siempre significa cuidar directamente a los pequeños: a veces significa mantener funcionando la red que alimenta a todos. ¿Qué otras formas de ayuda invisible conoces? Esto fue Datos y ociosidades.",
+   "on_screen_text": "Cooperar también es trabajar",
+   "visual_description": "Contrapicado de una rata topo en la boca del túnel, con la red de galerías detrás; espacio limpio arriba. Estilo grabado_dore. Sin texto en la imagen.",
+   "image_prompt": "19th-century wood and steel engraving in the style of Gustave Doré's illustrations for Dante's Divine Comedy, black and white ink on cream paper, dense crosshatching, dramatic chiaroscuro, epic romantic scale, monumental figures in vast sublime landscapes, fine engraved linework, not photorealistic, vertical 9:16, no text, no letters, no humans, no scientists, no labels, no numbers, no logos + low-angle portrait of a single Damaraland mole-rat at the mouth of a tunnel, a cathedral-like network of branching galleries behind it, sublime romantic lighting, clean empty space at the top",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "sfx": [
+    "silencio"
+   ]
+  }
+ ],
+ "nota": "Dato del día 11-nov (llegó en feature/capcot-video-discovery-continuity, solo guion). Montado en main con voz es-MX-JorgeNeural (regla fija de Mj, sustituye VoxCPM2/narradora_es del paquete), estilo grabado_dore, 9 planos; escena 4 dividida (no reproductores de ambos sexos / machos reproductores) con hechos de fuentes.md. Se programa 2026-11-12 07:00 CDMX.",
+ "publicacion": {
+  "youtube": {
+   "title": "¿Por qué trabajan más las ratas topo cuando nacen sus crías? #Shorts",
+   "description": "Cuando nacen las crías, en una colonia subterránea ocurre algo inesperado: varias ratas topo no se quedan cuidándolas.\n\n¿Por qué trabajan más las ratas topo cuando nacen sus crías? Una cápsula de Datos y ociosidades: datos verificados contados como historia.\n\nFuentes:\n• Thorley, J. et al. (2026). Helpers at the nest? The activity patterns of Damaraland mole-rats across reproductive periods. https://doi.org/10.1093/beheco/arag140\n\nImágenes generadas con IA · voz sintética · audio sintetizado.\nSuscríbete: @datosyociosidades\nTikTok: https://www.tiktok.com/@datosyociosidades\n\n#DatosYOciosidades #Shorts #datos #ciencia #difusión #difusióncientífica #ia #RatasTopo #CooperaciónAnimal #Crías",
+   "tags": [
+    "DatosYOciosidades",
+    "Shorts",
+    "datos",
+    "ciencia",
+    "difusión",
+    "difusióncientífica",
+    "ia",
+    "RatasTopo",
+    "CooperaciónAnimal",
+    "Crías"
+   ]
+  },
+  "tiktok": {
+   "caption": "Cuando nacen las crías, varias ratas topo no se quedan en el nido: se ponen a trabajar más. Un estudio con 24 mil horas de observación encontró que la ayuda no es de niñera, sino de cuadrilla: excavar y sostener al grupo. Esto es Datos y ociosidades.\n\n#aprendeentiktok #sabiasque #ciencia #divulgacioncientifica #RatasTopo",
+   "etiqueta_ia": true,
+   "miniatura": "primer frame (portada con el título)"
+  },
+  "facebook": {
+   "caption": "Cuando nacen las crías, en una colonia de ratas topo de Damaraland ocurre algo inesperado: los que no se reproducen, y también los machos reproductores, pasan menos tiempo en el nido y trabajan más. La madre se queda más con las crías y come más. Cooperar no siempre es cuidar directamente: a veces es mantener funcionando la red que alimenta a todos.\n\nFuente: Thorley et al. (2026), Behavioral Ecology.\n\nDatos y ociosidades",
+   "miniatura": "primer frame (portada con el título)"
+  }
+ }
+}

@@ -1,0 +1,83 @@
+{
+ "kind": "youtube#video",
+ "etag": "N79ue-u4KLskXjrJohNms4hxFIA",
+ "id": "WcTviUWqbes",
+ "snippet": {
+  "publishedAt": "2026-11-12T04:22:18Z",
+  "channelId": "UCU2ZI-6pBJEr9aSFsF6bxLw",
+  "title": "¿Por qué trabajan más las ratas topo cuando nacen sus crías? #Shorts",
+  "description": "Cuando nacen las crías, en una colonia subterránea ocurre algo inesperado: varias ratas topo no se quedan cuidándolas.\n\n¿Por qué trabajan más las ratas topo cuando nacen sus crías? Una cápsula de Datos y ociosidades: datos verificados contados como historia.\n\nFuentes:\n• Thorley, J. et al. (2026). Helpers at the nest? The activity patterns of Damaraland mole-rats across reproductive periods. https://doi.org/10.1093/beheco/arag140\n\nImágenes generadas con IA · voz sintética · audio sintetizado.\nSuscríbete: @datosyociosidades\nTikTok: https://www.tiktok.com/@datosyociosidades\n\n#DatosYOciosidades #Shorts #datos #ciencia #difusión #difusióncientífica #ia #RatasTopo #CooperaciónAnimal #Crías",
+  "thumbnails": {
+   "default": {
+    "url": "https://i9.ytimg.com/vi/WcTviUWqbes/default.jpg?sqp=CPD81NcG&rs=AOn4CLBBz3RGnnuIiehKiqN509NIGVyQsg",
+    "width": 120,
+    "height": 90
+   },
+   "medium": {
+    "url": "https://i9.ytimg.com/vi/WcTviUWqbes/mqdefault.jpg?sqp=CPD81NcG&rs=AOn4CLCAHQR4G3Aq9PyXGdoKNAAOgFHG9Q",
+    "width": 320,
+    "height": 180
+   },
+   "high": {
+    "url": "https://i9.ytimg.com/vi/WcTviUWqbes/hqdefault.jpg?sqp=CPD81NcG&rs=AOn4CLCWMycRTOJq7BxxIvqMksCBKt0qfg",
+    "width": 480,
+    "height": 360
+   },
+   "standard": {
+    "url": "https://i9.ytimg.com/vi/WcTviUWqbes/sddefault.jpg?sqp=CPD81NcG&rs=AOn4CLBzDdSlba5uU0RNa-k5DY6F5xYslg",
+    "width": 640,
+    "height": 480
+   },
+   "maxres": {
+    "url": "https://i9.ytimg.com/vi/WcTviUWqbes/maxresdefault.jpg?sqp=CPD81NcG&rs=AOn4CLAo25VHghZiWR7nYvEZj-Qj9gSIaw",
+    "width": 1280,
+    "height": 720
+   },
+   "qhd": {
+    "url": "https://i9.ytimg.com/vi/WcTviUWqbes/qhddefault.jpg?sqp=CPD81NcG&rs=AOn4CLCoaMK1N-1D6RAGF706JXHA1RPmtQ",
+    "width": 2560,
+    "height": 1440
+   }
+  },
+  "channelTitle": "Datos y ociosidades",
+  "tags": [
+   "CooperaciónAnimal",
+   "Crías",
+   "DatosYOciosidades",
+   "RatasTopo",
+   "Shorts",
+   "ciencia",
+   "datos",
+   "difusión",
+   "difusióncientífica",
+   "ia"
+  ],
+  "categoryId": "27",
+  "liveBroadcastContent": "none",
+  "defaultLanguage": "es",
+  "localized": {
+   "title": "¿Por qué trabajan más las ratas topo cuando nacen sus crías? #Shorts",
+   "description": "Cuando nacen las crías, en una colonia subterránea ocurre algo inesperado: varias ratas topo no se quedan cuidándolas.\n\n¿Por qué trabajan más las ratas topo cuando nacen sus crías? Una cápsula de Datos y ociosidades: datos verificados contados como historia.\n\nFuentes:\n• Thorley, J. et al. (2026). Helpers at the nest? The activity patterns of Damaraland mole-rats across reproductive periods. https://doi.org/10.1093/beheco/arag140\n\nImágenes generadas con IA · voz sintética · audio sintetizado.\nSuscríbete: @datosyociosidades\nTikTok: https://www.tiktok.com/@datosyociosidades\n\n#DatosYOciosidades #Shorts #datos #ciencia #difusión #difusióncientífica #ia #RatasTopo #CooperaciónAnimal #Crías"
+  }
+ },
+ "contentDetails": {
+  "duration": "P0D",
+  "dimension": "2d",
+  "definition": "sd",
+  "caption": "false",
+  "licensedContent": false,
+  "contentRating": {},
+  "projection": "rectangular",
+  "hasCustomThumbnail": true
+ },
+ "status": {
+  "uploadStatus": "uploaded",
+  "privacyStatus": "private",
+  "publishAt": "2026-11-12T13:00:00Z",
+  "license": "youtube",
+  "embeddable": true,
+  "publicStatsViewable": true,
+  "madeForKids": false,
+  "selfDeclaredMadeForKids": false
+ }
+}

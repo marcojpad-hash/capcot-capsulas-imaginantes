@@ -1,0 +1,20 @@
+{
+ "project_id": "2026-11-11_dato-ratas-topo-damaraland",
+ "plataforma": [
+  "yt"
+ ],
+ "yt_id": "WcTviUWqbes",
+ "url": "https://youtube.com/shorts/WcTviUWqbes",
+ "publish_at": "2026-11-12T13:00:00Z",
+ "ventana": "mañana",
+ "hora_cdmx": "2026-11-12 07:00",
+ "titulo_yt": "¿Por qué trabajan más las ratas topo cuando nacen sus crías? #Shorts",
+ "privacidad": "private→público a las 07:00 CDMX",
+ "estado": "programado_yt",
+ "video": "capsula.mp4",
+ "miniatura": "portada.jpg (thumbnails.set OK)",
+ "yt_programado": true,
+ "tiktok": "pendiente",
+ "facebook": "pendiente",
+ "nota": "Dato del día 2026-11-11: llegó a las 19:27 CDMX en la rama feature/capcot-video-discovery-continuity (solo guion, sin video); se copió a main, se montó y se programó para 2026-11-12 07:00 CDMX. containsSyntheticMedia true enviado en insert. Voz es-MX-JorgeNeural (sustituye VoxCPM2/narradora_es del paquete por regla fija de Mj)."
+}
