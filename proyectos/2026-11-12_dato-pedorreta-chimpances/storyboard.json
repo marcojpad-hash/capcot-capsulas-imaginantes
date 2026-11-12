@@ -398,7 +398,7 @@
     "pitch": "-2Hz",
     "pad_seconds": 0.3,
     "pause_mode": "continuous",
-    "modo_pausas": "continuous"
+    "modo_pausas": "continuo"
   },
   "visual_identity": {
     "style_id": "collage_cientifico_vintage",
