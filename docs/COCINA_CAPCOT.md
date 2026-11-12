@@ -55,7 +55,7 @@ es un paso con entrada, salida y puertas de QA.
 - **Día de montaje: domingo.** Grok Bot monta y programa el lote de la semana;
   Pecas verifica en repo y monta el viral animado de la semana.
 - **Dato del día: todos los días.** Se arma con el dato más cercano a ese día;
-  si es de prevención, mejor, para que se sienta novedoso.
+  si es del mismo día, mejor aún, para que se sienta actual.
 - **Meta: 5 cápsulas/día** (canal en inglés, 35/semana). El canal en español
   mantiene sus propios slots.
 - **Revisión de créditos:** pendiente el saldo de Grok (solo está en la interfaz
@@ -65,3 +65,4 @@ es un paso con entrada, salida y puertas de QA.
 
 La skill en JSON está en templates/skill_capsula.json (misma semana, mismas
 estaciones, mismas puertas QA).
+
