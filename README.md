@@ -6,11 +6,11 @@ Este repositorio mantiene la investigación, preproducción textual, producción
 
 ## Flujo vigente
 
-- **ChatGPT:** radar científico, verificación, brief y storyboard JSON textual.
-- **Grok:** selección editorial, generación/edición audiovisual, QA oficial y publicación.
-- **GitHub:** registro y canal de handoff.
-
-ChatGPT no genera frames, imágenes, audio, voz, video o renders; no publica; no modifica \`data/*.json\`; no toca Motor U6 ni motores canónicos.
+- **Grok:** crea cápsulas y genera los frames/medios durante las tres semanas de stock.
+- **Grok Bot:** monta, programa y registra cada cápsula.
+- **Pecas:** verifica cada entrega directamente en el repositorio; además prepara un video viral animado semanal como stock.
+- **ChatGPT:** investigación y preproducción textual; montador de respaldo durante tres meses, limitado a ensamblar frames y audio ya disponibles con movimiento de cámara, subtítulos y FFmpeg. No sustituye a Grok ni genera frames por esta función.
+- **GitHub:** fuente de verdad; una entrega solo cuenta cuando el archivo y su commit se verifican en el repositorio.
 
 ## Voz y narración reutilizable
 
@@ -61,7 +61,7 @@ Los proyectos/colas cuentan como evidencia de tema y estilo propuestos; no prueb
 
 Hay automatizaciones de ChatGPT para investigación y control de cola. La automatización antigua de “tercera cápsula” fue reconvertida a auditoría de integridad para evitar producción duplicada y generación de medios por ChatGPT.
 
-El workflow de GitHub Actions está en esta rama de trabajo. Los eventos \`schedule\` y \`workflow_dispatch\` no se consideran operativos hasta que el workflow exista en la rama por defecto. No afirmar que su cron está ejecutándose mientras permanezca solo en esta rama.
+El workflow de montaje de respaldo de ChatGPT aún no existe. El script \`scripts/montar_capsula.py\` sí existe, pero no equivale a un workflow cableado. El montaje de respaldo solo se considera operativo cuando exista el workflow, se ejecute con assets reales, genere MP4 y QA, y esos resultados se verifiquen en el repositorio. El dispatch de respaldo será manual y no sustituirá el flujo Grok/Grok Bot.
 
 ## Estado de ramas
 
