@@ -2471,5 +2471,125 @@
    ]
   ],
   "nota_flujo": "Corte vs 10-nov 13:51 (~24 h; 13:51→13:53; la rutina de balance corre una vez al día ~14:00). YT 28,497→29,063 (+566 vistas), likes 917→937 (+20), comentarios 26→26 (+0), subs 72→74 (+2). 57→60 Shorts públicos (+3: El agua caliente se congela más rápido que la fría V4h28RA8bq0 a las 23:00 del 10-nov, Capsaicina: ¿agua, refresco o leche? K2I_jgugiOU resubido a las 17:00 del 10-nov, Esta ballena bajó a dos latidos por minuto wbFrlM2e_YE a las 07:00 del 11-nov). Lo empujan El agua caliente se congela más rápido que la fría V4h28RA8bq0 nuevo 282 (14 likes), Esta ballena bajó a dos latidos por minuto wbFrlM2e_YE nuevo 89 y El hueso no salva tu guacamole nSS_q2tj2P0 32→95 (+63); también Esta rana se congela y vuelve a saltar UBFuKBU3cx0 58→108 (+50) y ¿Qué queda en tu cocina después de limpiar? EwZ3dHalUn0 88→131 (+43). El resub de capsaicina K2I_jgugiOU va en 8 en YT. Hipo original Rg-iTgMExWw sigue en 1; el resubido 4lOWeMn2RCo 3→6; miel jpDyCX6zSgQ 59, pan PTk2QNMkOn4 98, Venus phVfyHp3CnY 94 y arena m4RqQRaz55k 47 sin cambio; palomitas zTP5akrGA9M 137→140 (+3); papel picado parte 1 i9QBFPljl6M 1392→1396 (+4); Titanoboa oGFKLUgBdhA 1378→1383 (+5). TT (yt-dlp, listado público @datosyociosidades): 61→64 videos (+3), 14,771→15,224 vistas (+453), 738→749 likes (+11), comentarios 4→4. En TT lo mueven el resub de capsaicina 7706268748067409170 nuevo 166, guacamole 7705594217136966920 161→251 (+90), el Mpemba de las 13:30 7706905447424347393 nuevo 89 y la ballena 7705594333574991122 nuevo 67. Seguidores no se pudieron leer (yt-dlp no trajo channel_follower_count). Cifras YT por YouTube Data API con OAuth renovado (canal Datos y ociosidades UCU2ZI-6pBJEr9aSFsF6bxLw)."
+ },
+ {
+  "hora_cdmx": "2026-11-12T13:55-06:00",
+  "base_youtube": "2026-11-11T13:53",
+  "base_tiktok": "2026-11-11T13:53",
+  "youtube_totales": {
+   "view": 30482,
+   "like": 967,
+   "comment": 26
+  },
+  "suscriptores": 78,
+  "shorts_publicos": 66,
+  "delta_youtube": {
+   "view": 1419,
+   "like": 30,
+   "comment": 0,
+   "suscriptores": 4,
+   "horas_desde_base": 24,
+   "nota": "Δ de ~24 h vs el corte 11-nov 13:53 CDMX (13:53→13:55). La rutina ahora corre una vez al día ~14:00. 60→66 Shorts (+6). Fuente: YouTube Data API (OAuth, canal Datos y ociosidades)."
+  },
+  "tiktok_totales": {
+   "view": 16785,
+   "like": 849,
+   "comment": 4
+  },
+  "seguidores_tiktok": null,
+  "likes_perfil_tiktok": null,
+  "videos_tiktok": 70,
+  "delta_tiktok": {
+   "view": 1561,
+   "like": 100,
+   "comment": 0,
+   "seguidores": null,
+   "likes_perfil": null,
+   "videos": 6,
+   "nota": "Δ vs 11-nov 13:53 (~24 h): 15224→16785 vistas (+1561), 749→849 likes (+100), comentarios 4→4, 64→70 videos (+6). Seguidores no se pudieron leer."
+  },
+  "ranking_crecimiento": [
+   [
+    "YT El agua caliente se congela más rápido que la fría",
+    661
+   ],
+   [
+    "YT ¿El arroz de ayer puede enfermarte?",
+    273
+   ],
+   [
+    "YT Ratas topo: más trabajo tras el nacimiento",
+    273
+   ],
+   [
+    "YT Esta ballena bajó a dos latidos por minuto",
+    117
+   ],
+   [
+    "YT El hueso no salva tu guacamole",
+    38
+   ],
+   [
+    "YT Esa nube puede cargar quinientas toneladas",
+    8
+   ],
+   [
+    "YT El gen que afina el oído del mosquito macho",
+    4
+   ],
+   [
+    "YT Capsaicina: ¿agua, refresco o leche?",
+    4
+   ],
+   [
+    "YT SmartPE: edición genética más precisa en plantas",
+    3
+   ],
+   [
+    "YT ¿Qué queda en tu cocina después de limpiar?",
+    3
+   ],
+   [
+    "YT El campus más fotografiado de México es un libro de piedra (Muralismo CU)",
+    3
+   ],
+   [
+    "YT ¿Por qué tenemos hipo?",
+    2
+   ],
+   [
+    "YT Anfibio marino: hallan el primero que vivió en el mar",
+    2
+   ],
+   [
+    "YT Capsaicina: ¿agua, refresco o leche?",
+    2
+   ],
+   [
+    "YT El hongo que hace ver gente diminuta",
+    2
+   ],
+   [
+    "YT El refri puede endurecer tu pan más rápido",
+    2
+   ],
+   [
+    "YT Esta rana se congela y vuelve a saltar",
+    2
+   ],
+   [
+    "YT Serpiente voladora: cómo planea sin alas",
+    1
+   ],
+   [
+    "YT Las abejas de miel también hacen bullying",
+    1
+   ],
+   [
+    "YT El mar que fabrica luz",
+    1
+   ]
+  ],
+  "nota_flujo": "Corte vs 11-nov 13:53 (~24 h; 13:53→13:55; la rutina de balance corre una vez al día ~14:00). YT 29,063→30,482 (+1,419 vistas), likes 937→967 (+30), comentarios 26→26 (+0), subs 74→78 (+4). 60→66 Shorts públicos (+6: ¿El arroz de ayer puede enfermarte? maLtsoQpxwI a las 19:00 del 11-nov, La corneja decide en 235 milisegundos wxnhEdlJYwU a las 17:00 del 11-nov, Ratas topo: más trabajo tras el nacimiento knAElNo4raI a las 23:30 del 11-nov, Esa nube puede cargar quinientas toneladas 4Qpl17Ts_vI y ¿Por qué trabajan más las ratas topo cuando nacen sus crías? WcTviUWqbes a las 07:00 del 12-nov, El pez que mira a través de su cabeza YV_3JgGv1kg a las 13:30 del 12-nov). Lo empujan El agua caliente se congela más rápido que la fría V4h28RA8bq0 282→943 (+661, 25 likes), ¿El arroz de ayer puede enfermarte? maLtsoQpxwI nuevo 273 (11 likes) y Ratas topo: más trabajo tras el nacimiento knAElNo4raI nuevo 273 (7 likes); también Esta ballena bajó a dos latidos por minuto wbFrlM2e_YE 89→206 (+117) y El hueso no salva tu guacamole nSS_q2tj2P0 95→133 (+38). En YT se estancaron La corneja wxnhEdlJYwU (0 vistas a ~21 h de publicada) y las ratas topo de las 07:00 WcTviUWqbes (1 vista a las ~7 h); el barreleye YV_3JgGv1kg va en 0, pero sale de hace ~20 min. Hipo original Rg-iTgMExWw sigue en 1; el resubido 4lOWeMn2RCo 6→8. TT (yt-dlp, listado público @datosyociosidades): 64→70 videos (+6), 15,224→16,785 vistas (+1,561), 749→849 likes (+100), comentarios 4→4. En TT lo mueven el Mpemba de las 13:30 7706905447424347393 89→683 (+594, 64 likes), el Mpemba de las 21:00 7707012649183137044 nuevo 381 (24 likes), el arroz 7707005233775332660 nuevo 159, la corneja 7706269072601763078 nuevo 141 y las ratas topo de las 07:00 7707137000121404680 nuevo 128; las nubes van en 68 y el barreleye de las 13:30 en 0."
  }
 ]

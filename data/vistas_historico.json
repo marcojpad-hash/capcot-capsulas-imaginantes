@@ -14169,5 +14169,719 @@
    "nota": "Seguidores y likes de perfil no disponibles (yt-dlp no trajo channel_follower_count). Δ vs 10-nov 13:51 (~24 h): 14771→15224 vistas (+453), 738→749 likes (+11), comentarios 4→4, 61→64 videos (+3)."
   },
   "nota": "Balance 6h 13:53 CDMX (~24 h vs el corte anterior; la rutina ahora corre una vez al día ~14:00). Fuente YT: YouTube Data API (OAuth, canal Datos y ociosidades UCU2ZI-6pBJEr9aSFsF6bxLw). TT: listado público con vistas y likes por video."
+ },
+ {
+  "timestamp_cdmx": "2026-11-12T13:55-06:00",
+  "youtube": {
+   "YV_3JgGv1kg": {
+    "view": 0,
+    "like": 0,
+    "comment": 0
+   },
+   "WcTviUWqbes": {
+    "view": 1,
+    "like": 0,
+    "comment": 0
+   },
+   "4Qpl17Ts_vI": {
+    "view": 8,
+    "like": 0,
+    "comment": 0
+   },
+   "knAElNo4raI": {
+    "view": 273,
+    "like": 7,
+    "comment": 0
+   },
+   "maLtsoQpxwI": {
+    "view": 273,
+    "like": 11,
+    "comment": 0
+   },
+   "wxnhEdlJYwU": {
+    "view": 0,
+    "like": 0,
+    "comment": 0
+   },
+   "wbFrlM2e_YE": {
+    "view": 206,
+    "like": 3,
+    "comment": 0
+   },
+   "V4h28RA8bq0": {
+    "view": 943,
+    "like": 25,
+    "comment": 0
+   },
+   "K2I_jgugiOU": {
+    "view": 12,
+    "like": 0,
+    "comment": 0
+   },
+   "nSS_q2tj2P0": {
+    "view": 133,
+    "like": 1,
+    "comment": 0
+   },
+   "4lOWeMn2RCo": {
+    "view": 8,
+    "like": 0,
+    "comment": 0
+   },
+   "UBFuKBU3cx0": {
+    "view": 110,
+    "like": 4,
+    "comment": 0
+   },
+   "EwZ3dHalUn0": {
+    "view": 134,
+    "like": 3,
+    "comment": 0
+   },
+   "zTP5akrGA9M": {
+    "view": 141,
+    "like": 1,
+    "comment": 0
+   },
+   "PTk2QNMkOn4": {
+    "view": 100,
+    "like": 0,
+    "comment": 0
+   },
+   "phVfyHp3CnY": {
+    "view": 94,
+    "like": 0,
+    "comment": 0
+   },
+   "m4RqQRaz55k": {
+    "view": 48,
+    "like": 0,
+    "comment": 0
+   },
+   "Rv998OZDUYc": {
+    "view": 119,
+    "like": 2,
+    "comment": 0
+   },
+   "4xylLT3vSIU": {
+    "view": 58,
+    "like": 2,
+    "comment": 0
+   },
+   "jpDyCX6zSgQ": {
+    "view": 59,
+    "like": 1,
+    "comment": 0
+   },
+   "Rg-iTgMExWw": {
+    "view": 1,
+    "like": 0,
+    "comment": 0
+   },
+   "R76ivFX9nXo": {
+    "view": 273,
+    "like": 7,
+    "comment": 0
+   },
+   "-WBW0X9KpLM": {
+    "view": 69,
+    "like": 1,
+    "comment": 0
+   },
+   "bpeRL5XtYLI": {
+    "view": 59,
+    "like": 4,
+    "comment": 0
+   },
+   "7ay4KLS8h8I": {
+    "view": 18,
+    "like": 0,
+    "comment": 0
+   },
+   "JOA1Bm6KYDs": {
+    "view": 91,
+    "like": 2,
+    "comment": 0
+   },
+   "OwfxfQ4RPSo": {
+    "view": 27,
+    "like": 1,
+    "comment": 0
+   },
+   "c-7pMF3-B-g": {
+    "view": 101,
+    "like": 1,
+    "comment": 0
+   },
+   "V9bO9EUN0JA": {
+    "view": 44,
+    "like": 1,
+    "comment": 0
+   },
+   "5sxxx0vuXFE": {
+    "view": 153,
+    "like": 2,
+    "comment": 0
+   },
+   "GlBl4S4aDAs": {
+    "view": 273,
+    "like": 12,
+    "comment": 0
+   },
+   "0x1B9_rMm-I": {
+    "view": 216,
+    "like": 8,
+    "comment": 0
+   },
+   "HDQr9OGpFJM": {
+    "view": 80,
+    "like": 2,
+    "comment": 0
+   },
+   "PQzLUQnHbcA": {
+    "view": 420,
+    "like": 9,
+    "comment": 0
+   },
+   "aZn5eTyiQPQ": {
+    "view": 842,
+    "like": 38,
+    "comment": 2
+   },
+   "rLd9DVPXHb8": {
+    "view": 54,
+    "like": 1,
+    "comment": 0
+   },
+   "MBMjQ5vLZo0": {
+    "view": 224,
+    "like": 4,
+    "comment": 0
+   },
+   "G5is50omLo4": {
+    "view": 285,
+    "like": 5,
+    "comment": 0
+   },
+   "Mz-IVFvFWH4": {
+    "view": 134,
+    "like": 2,
+    "comment": 0
+   },
+   "ZHdJXFrURk4": {
+    "view": 22,
+    "like": 0,
+    "comment": 0
+   },
+   "p4eXmoJ2f18": {
+    "view": 638,
+    "like": 13,
+    "comment": 0
+   },
+   "OFpAg4XA3AM": {
+    "view": 30,
+    "like": 3,
+    "comment": 0
+   },
+   "inzztxrxYfg": {
+    "view": 690,
+    "like": 13,
+    "comment": 0
+   },
+   "mWtf7Yta294": {
+    "view": 1001,
+    "like": 24,
+    "comment": 0
+   },
+   "RhiKtLt2UNQ": {
+    "view": 598,
+    "like": 19,
+    "comment": 0
+   },
+   "oGFKLUgBdhA": {
+    "view": 1383,
+    "like": 39,
+    "comment": 2
+   },
+   "5XQfUHpyTWs": {
+    "view": 986,
+    "like": 35,
+    "comment": 0
+   },
+   "YIoWXfZaMj0": {
+    "view": 560,
+    "like": 16,
+    "comment": 0
+   },
+   "v6t8jKMbrhw": {
+    "view": 984,
+    "like": 31,
+    "comment": 0
+   },
+   "xBqdEn1Dumg": {
+    "view": 1036,
+    "like": 71,
+    "comment": 2
+   },
+   "nY2UqhKmAKQ": {
+    "view": 1377,
+    "like": 67,
+    "comment": 2
+   },
+   "3RdSX40OCac": {
+    "view": 1060,
+    "like": 26,
+    "comment": 0
+   },
+   "YKldyldCeiQ": {
+    "view": 955,
+    "like": 20,
+    "comment": 0
+   },
+   "GYxjXDh1ahc": {
+    "view": 1058,
+    "like": 19,
+    "comment": 0
+   },
+   "ivVo2H9NaEU": {
+    "view": 725,
+    "like": 33,
+    "comment": 2
+   },
+   "PBDMJxOkCRk": {
+    "view": 1347,
+    "like": 28,
+    "comment": 4
+   },
+   "i9QBFPljl6M": {
+    "view": 1397,
+    "like": 24,
+    "comment": 0
+   },
+   "bYGd7QuenSk": {
+    "view": 1254,
+    "like": 31,
+    "comment": 0
+   },
+   "gIjJ0YKYQ8M": {
+    "view": 1223,
+    "like": 61,
+    "comment": 1
+   },
+   "AJR6kcnnDig": {
+    "view": 201,
+    "like": 13,
+    "comment": 0
+   },
+   "Qe2Y9xDn9QQ": {
+    "view": 990,
+    "like": 33,
+    "comment": 2
+   },
+   "3bhntOcKHPk": {
+    "view": 1458,
+    "like": 38,
+    "comment": 0
+   },
+   "O7TdKvuBjyg": {
+    "view": 24,
+    "like": 1,
+    "comment": 0
+   },
+   "r1AhsPOAS_o": {
+    "view": 1405,
+    "like": 73,
+    "comment": 4
+   },
+   "ZrUtKs7Ty7U": {
+    "view": 1358,
+    "like": 49,
+    "comment": 5
+   },
+   "5D96DmjvioU": {
+    "view": 638,
+    "like": 27,
+    "comment": 0
+   }
+  },
+  "youtube_totales": {
+   "view": 30482,
+   "like": 967,
+   "comment": 26
+  },
+  "suscriptores": 78,
+  "delta_vs_anterior": {
+   "base": "2026-11-11T13:53-06:00",
+   "view": 1419,
+   "like": 30,
+   "comment": 0,
+   "suscriptores": 4,
+   "nota": "Δ ~24 h vs el snapshot 2026-11-11T13:53-06:00. +6 Shorts nuevos (¿El arroz de ayer puede enfermarte? maLtsoQpxwI, La corneja decide en 235 milisegundos wxnhEdlJYwU, Ratas topo: más trabajo tras el nacimiento knAElNo4raI, Esa nube puede cargar quinientas toneladas 4Qpl17Ts_vI, ¿Por qué trabajan más las ratas topo cuando nacen sus crías? WcTviUWqbes, El pez que mira a través de su cabeza YV_3JgGv1kg). Fuente YT: YouTube Data API (OAuth, canal Datos y ociosidades)."
+  },
+  "tiktok": {
+   "fuente": "yt-dlp listado público tiktok.com/@datosyociosidades (vistas y likes por video)",
+   "videos": {
+    "7707280073446952213": {
+     "view": 0,
+     "like": 0,
+     "comment": 0
+    },
+    "7707137000121404680": {
+     "view": 128,
+     "like": 2,
+     "comment": 0
+    },
+    "7705597569203768597": {
+     "view": 68,
+     "like": 1,
+     "comment": 0
+    },
+    "7707012649183137044": {
+     "view": 381,
+     "like": 24,
+     "comment": 0
+    },
+    "7707005233775332660": {
+     "view": 159,
+     "like": 4,
+     "comment": 0
+    },
+    "7706269072601763078": {
+     "view": 141,
+     "like": 2,
+     "comment": 0
+    },
+    "7706905447424347393": {
+     "view": 683,
+     "like": 64,
+     "comment": 0
+    },
+    "7705594333574991122": {
+     "view": 99,
+     "like": 1,
+     "comment": 0
+    },
+    "7706268748067409170": {
+     "view": 187,
+     "like": 4,
+     "comment": 0
+    },
+    "7705594217136966920": {
+     "view": 255,
+     "like": 11,
+     "comment": 0
+    },
+    "7706268341152894215": {
+     "view": 112,
+     "like": 2,
+     "comment": 0
+    },
+    "7705596671807245586": {
+     "view": 100,
+     "like": 2,
+     "comment": 0
+    },
+    "7705655549571894529": {
+     "view": 223,
+     "like": 5,
+     "comment": 0
+    },
+    "7705593452003691794": {
+     "view": 116,
+     "like": 2,
+     "comment": 0
+    },
+    "7705650282348170516": {
+     "view": 178,
+     "like": 3,
+     "comment": 0
+    },
+    "7705488176793652481": {
+     "view": 206,
+     "like": 9,
+     "comment": 0
+    },
+    "7705502155427368212": {
+     "view": 164,
+     "like": 3,
+     "comment": 0
+    },
+    "7702976426730851605": {
+     "view": 187,
+     "like": 2,
+     "comment": 0
+    },
+    "7702976234682207509": {
+     "view": 181,
+     "like": 4,
+     "comment": 0
+    },
+    "7702976051953257748": {
+     "view": 4,
+     "like": 0,
+     "comment": 0
+    },
+    "7704164766893296902": {
+     "view": 1,
+     "like": 0,
+     "comment": 0
+    },
+    "7703010800650243349": {
+     "view": 6,
+     "like": 1,
+     "comment": 0
+    },
+    "7703010495036460308": {
+     "view": 1,
+     "like": 0,
+     "comment": 0
+    },
+    "7702975783198805268": {
+     "view": 6,
+     "like": 0,
+     "comment": 0
+    },
+    "7704024509996633352": {
+     "view": 515,
+     "like": 42,
+     "comment": 0
+    },
+    "7703996737895124231": {
+     "view": 484,
+     "like": 17,
+     "comment": 0
+    },
+    "7703799090567580949": {
+     "view": 6,
+     "like": 1,
+     "comment": 0
+    },
+    "7703837747034754325": {
+     "view": 6,
+     "like": 1,
+     "comment": 0
+    },
+    "7703837508785818901": {
+     "view": 0,
+     "like": 0,
+     "comment": 0
+    },
+    "7703837369589304597": {
+     "view": 0,
+     "like": 0,
+     "comment": 0
+    },
+    "7703837126491753748": {
+     "view": 164,
+     "like": 6,
+     "comment": 0
+    },
+    "7703836653256707348": {
+     "view": 144,
+     "like": 8,
+     "comment": 0
+    },
+    "7703009555319409940": {
+     "view": 237,
+     "like": 8,
+     "comment": 0
+    },
+    "7703009295595556116": {
+     "view": 677,
+     "like": 27,
+     "comment": 0
+    },
+    "7703008993609846037": {
+     "view": 255,
+     "like": 9,
+     "comment": 0
+    },
+    "7703008584606551317": {
+     "view": 146,
+     "like": 3,
+     "comment": 0
+    },
+    "7702906313113734420": {
+     "view": 159,
+     "like": 3,
+     "comment": 0
+    },
+    "7702904693218921735": {
+     "view": 156,
+     "like": 4,
+     "comment": 0
+    },
+    "7702904497282092340": {
+     "view": 184,
+     "like": 1,
+     "comment": 0
+    },
+    "7702925930045443336": {
+     "view": 165,
+     "like": 4,
+     "comment": 0
+    },
+    "7702904363831823623": {
+     "view": 261,
+     "like": 14,
+     "comment": 0
+    },
+    "7702903596249025810": {
+     "view": 232,
+     "like": 6,
+     "comment": 0
+    },
+    "7702692254871244084": {
+     "view": 562,
+     "like": 13,
+     "comment": 0
+    },
+    "7702542108728610055": {
+     "view": 542,
+     "like": 28,
+     "comment": 0
+    },
+    "7702330005044432134": {
+     "view": 491,
+     "like": 14,
+     "comment": 0
+    },
+    "7702208975848099090": {
+     "view": 522,
+     "like": 24,
+     "comment": 0
+    },
+    "7701629331411324180": {
+     "view": 2,
+     "like": 0,
+     "comment": 0
+    },
+    "7701630032619408661": {
+     "view": 4,
+     "like": 0,
+     "comment": 0
+    },
+    "7701629095628623124": {
+     "view": 11,
+     "like": 1,
+     "comment": 0
+    },
+    "7701628862572154133": {
+     "view": 30,
+     "like": 0,
+     "comment": 0
+    },
+    "7701628592215592212": {
+     "view": 7,
+     "like": 0,
+     "comment": 0
+    },
+    "7701628198106221845": {
+     "view": 9,
+     "like": 1,
+     "comment": 0
+    },
+    "7701492162986265863": {
+     "view": 239,
+     "like": 10,
+     "comment": 1
+    },
+    "7701491859582962962": {
+     "view": 94,
+     "like": 1,
+     "comment": 0
+    },
+    "7701491582918200594": {
+     "view": 226,
+     "like": 13,
+     "comment": 0
+    },
+    "7701491248481242375": {
+     "view": 819,
+     "like": 83,
+     "comment": 1
+    },
+    "7701457680061172999": {
+     "view": 1222,
+     "like": 79,
+     "comment": 2
+    },
+    "7701412000789794055": {
+     "view": 573,
+     "like": 38,
+     "comment": 0
+    },
+    "7700708931718450450": {
+     "view": 1,
+     "like": 0,
+     "comment": 0
+    },
+    "7701151716703538450": {
+     "view": 199,
+     "like": 14,
+     "comment": 0
+    },
+    "7701082282936782098": {
+     "view": 287,
+     "like": 18,
+     "comment": 0
+    },
+    "7700708627706907912": {
+     "view": 3,
+     "like": 0,
+     "comment": 0
+    },
+    "7700697251659762952": {
+     "view": 5,
+     "like": 0,
+     "comment": 0
+    },
+    "7700672844333681938": {
+     "view": 747,
+     "like": 76,
+     "comment": 0
+    },
+    "7700480107390995730": {
+     "view": 505,
+     "like": 25,
+     "comment": 0
+    },
+    "7700427892911639816": {
+     "view": 504,
+     "like": 23,
+     "comment": 0
+    },
+    "7700382152935886087": {
+     "view": 504,
+     "like": 38,
+     "comment": 0
+    },
+    "7700369791374150919": {
+     "view": 164,
+     "like": 3,
+     "comment": 0
+    },
+    "7700365502320741639": {
+     "view": 607,
+     "like": 34,
+     "comment": 0
+    },
+    "7700291249462447366": {
+     "view": 529,
+     "like": 13,
+     "comment": 0
+    }
+   },
+   "totales": {
+    "view": 16785,
+    "like": 849,
+    "comment": 4
+   },
+   "seguidores": null,
+   "likes_perfil": null,
+   "videos_publicados": 70,
+   "nota": "Seguidores y likes de perfil no disponibles (yt-dlp no trajo channel_follower_count). Δ vs 11-nov 13:53 (~24 h): 15224→16785 vistas (+1561), 749→849 likes (+100), comentarios 4→4, 64→70 videos (+6). Seguidores no se pudieron leer."
+  },
+  "nota": "Balance 6h 13:55 CDMX (~24 h vs el corte anterior; la rutina ahora corre una vez al día ~14:00). Fuente YT: YouTube Data API (OAuth, canal Datos y ociosidades UCU2ZI-6pBJEr9aSFsF6bxLw). TT: listado público con vistas y likes por video."
  }
 ]
