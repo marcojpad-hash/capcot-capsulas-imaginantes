@@ -1,0 +1,93 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Sub,DejaVu Sans,72,&H00FFFFFF,&H00FFFFFF,&H00000000,&H64000000,-1,0,0,0,100,100,0,0,1,6,2,2,90,170,620,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.30,0:00:01.02,Sub,,0,0,0,,Cuando nacen las
+Dialogue: 0,0:00:01.03,0:00:01.62,Sub,,0,0,0,,crías,
+Dialogue: 0,0:00:01.63,0:00:02.35,Sub,,0,0,0,,en una colonia
+Dialogue: 0,0:00:02.36,0:00:03.64,Sub,,0,0,0,,subterránea ocurre algo
+Dialogue: 0,0:00:03.65,0:00:04.61,Sub,,0,0,0,,inesperado:
+Dialogue: 0,0:00:04.76,0:00:05.78,Sub,,0,0,0,,varias ratas topo
+Dialogue: 0,0:00:05.79,0:00:06.40,Sub,,0,0,0,,no se quedan
+Dialogue: 0,0:00:06.41,0:00:07.44,Sub,,0,0,0,,cuidándolas.
+Dialogue: 0,0:00:07.66,0:00:08.24,Sub,,0,0,0,,Se ponen a
+Dialogue: 0,0:00:08.25,0:00:09.38,Sub,,0,0,0,,trabajar más.
+Dialogue: 0,0:00:09.87,0:00:10.62,Sub,,0,0,0,,Son las ratas
+Dialogue: 0,0:00:10.63,0:00:11.80,Sub,,0,0,0,,topo de Damaraland,
+Dialogue: 0,0:00:11.81,0:00:12.93,Sub,,0,0,0,,roedores africanos que
+Dialogue: 0,0:00:12.94,0:00:13.71,Sub,,0,0,0,,viven en familia
+Dialogue: 0,0:00:13.72,0:00:14.52,Sub,,0,0,0,,bajo tierra y
+Dialogue: 0,0:00:14.53,0:00:15.62,Sub,,0,0,0,,excavan túneles para
+Dialogue: 0,0:00:15.63,0:00:17.14,Sub,,0,0,0,,encontrar tubérculos.
+Dialogue: 0,0:00:17.62,0:00:18.37,Sub,,0,0,0,,Jack Thorley y
+Dialogue: 0,0:00:18.38,0:00:19.39,Sub,,0,0,0,,su equipo analizaron
+Dialogue: 0,0:00:19.40,0:00:20.40,Sub,,0,0,0,,unas veinticuatro mil
+Dialogue: 0,0:00:20.41,0:00:21.41,Sub,,0,0,0,,horas de observaciones
+Dialogue: 0,0:00:21.42,0:00:22.07,Sub,,0,0,0,,de animales en
+Dialogue: 0,0:00:22.08,0:00:22.96,Sub,,0,0,0,,cautiverio,
+Dialogue: 0,0:00:22.97,0:00:24.08,Sub,,0,0,0,,en distintas etapas
+Dialogue: 0,0:00:24.09,0:00:25.21,Sub,,0,0,0,,reproductivas.
+Dialogue: 0,0:00:25.71,0:00:26.86,Sub,,0,0,0,,El resultado:
+Dialogue: 0,0:00:27.01,0:00:27.75,Sub,,0,0,0,,poco después del
+Dialogue: 0,0:00:27.76,0:00:28.64,Sub,,0,0,0,,nacimiento,
+Dialogue: 0,0:00:28.66,0:00:29.05,Sub,,0,0,0,,los que no
+Dialogue: 0,0:00:29.06,0:00:30.05,Sub,,0,0,0,,se reproducen,
+Dialogue: 0,0:00:30.06,0:00:31.08,Sub,,0,0,0,,hembras y machos,
+Dialogue: 0,0:00:31.09,0:00:32.01,Sub,,0,0,0,,pasan menos tiempo
+Dialogue: 0,0:00:32.02,0:00:32.50,Sub,,0,0,0,,en el nido
+Dialogue: 0,0:00:32.51,0:00:33.75,Sub,,0,0,0,,y trabajan más.
+Dialogue: 0,0:00:34.22,0:00:35.52,Sub,,0,0,0,,Los machos reproductores
+Dialogue: 0,0:00:35.53,0:00:36.57,Sub,,0,0,0,,hacen lo mismo:
+Dialogue: 0,0:00:36.72,0:00:37.47,Sub,,0,0,0,,menos tiempo en
+Dialogue: 0,0:00:37.48,0:00:37.93,Sub,,0,0,0,,el nido y
+Dialogue: 0,0:00:37.94,0:00:38.76,Sub,,0,0,0,,más esfuerzo de
+Dialogue: 0,0:00:38.77,0:00:39.54,Sub,,0,0,0,,trabajo.
+Dialogue: 0,0:00:40.03,0:00:41.12,Sub,,0,0,0,,Mientras tanto,
+Dialogue: 0,0:00:41.14,0:00:42.15,Sub,,0,0,0,,la hembra reproductora
+Dialogue: 0,0:00:42.16,0:00:42.99,Sub,,0,0,0,,pasa más tiempo
+Dialogue: 0,0:00:43.00,0:00:44.01,Sub,,0,0,0,,dentro del nido,
+Dialogue: 0,0:00:44.02,0:00:45.58,Sub,,0,0,0,,reduce conductas relacionadas
+Dialogue: 0,0:00:45.59,0:00:46.34,Sub,,0,0,0,,con el trabajo
+Dialogue: 0,0:00:46.35,0:00:47.01,Sub,,0,0,0,,y aumenta su
+Dialogue: 0,0:00:47.02,0:00:48.62,Sub,,0,0,0,,actividad de alimentación.
+Dialogue: 0,0:00:49.10,0:00:49.81,Sub,,0,0,0,,Ojo:
+Dialogue: 0,0:00:49.96,0:00:50.63,Sub,,0,0,0,,el estudio no
+Dialogue: 0,0:00:50.64,0:00:51.39,Sub,,0,0,0,,encontró que los
+Dialogue: 0,0:00:51.40,0:00:52.69,Sub,,0,0,0,,no reproductores pasaran
+Dialogue: 0,0:00:52.70,0:00:53.55,Sub,,0,0,0,,más tiempo junto
+Dialogue: 0,0:00:53.56,0:00:54.52,Sub,,0,0,0,,a las crías.
+Dialogue: 0,0:00:54.74,0:00:55.56,Sub,,0,0,0,,Su ayuda llega
+Dialogue: 0,0:00:55.57,0:00:56.58,Sub,,0,0,0,,por otra vía:
+Dialogue: 0,0:00:56.73,0:00:57.92,Sub,,0,0,0,,trabajar más.
+Dialogue: 0,0:00:58.41,0:00:59.50,Sub,,0,0,0,,Los autores proponen
+Dialogue: 0,0:00:59.51,0:01:00.33,Sub,,0,0,0,,que ese esfuerzo
+Dialogue: 0,0:01:00.34,0:01:01.23,Sub,,0,0,0,,extra puede apoyar
+Dialogue: 0,0:01:01.24,0:01:01.69,Sub,,0,0,0,,a la hembra
+Dialogue: 0,0:01:01.70,0:01:02.43,Sub,,0,0,0,,cuando está más
+Dialogue: 0,0:01:02.44,0:01:03.50,Sub,,0,0,0,,limitada y facilitar
+Dialogue: 0,0:01:03.51,0:01:04.12,Sub,,0,0,0,,que las crías
+Dialogue: 0,0:01:04.13,0:01:05.40,Sub,,0,0,0,,encuentren alimento cuando
+Dialogue: 0,0:01:05.41,0:01:06.34,Sub,,0,0,0,,comiencen a salir
+Dialogue: 0,0:01:06.35,0:01:07.16,Sub,,0,0,0,,del nido.
+Dialogue: 0,0:01:07.65,0:01:08.88,Sub,,0,0,0,,En estas familias,
+Dialogue: 0,0:01:08.89,0:01:09.88,Sub,,0,0,0,,cooperar no siempre
+Dialogue: 0,0:01:09.89,0:01:11.48,Sub,,0,0,0,,significa cuidar directamente
+Dialogue: 0,0:01:11.49,0:01:12.61,Sub,,0,0,0,,a los pequeños:
+Dialogue: 0,0:01:12.76,0:01:13.74,Sub,,0,0,0,,a veces significa
+Dialogue: 0,0:01:13.75,0:01:14.90,Sub,,0,0,0,,mantener funcionando la
+Dialogue: 0,0:01:14.91,0:01:15.74,Sub,,0,0,0,,red que alimenta
+Dialogue: 0,0:01:15.75,0:01:16.61,Sub,,0,0,0,,a todos.
+Dialogue: 0,0:01:16.83,0:01:17.64,Sub,,0,0,0,,¿Qué otras formas
+Dialogue: 0,0:01:17.65,0:01:18.49,Sub,,0,0,0,,de ayuda invisible
+Dialogue: 0,0:01:18.50,0:01:19.42,Sub,,0,0,0,,conoces?
+Dialogue: 0,0:01:19.67,0:01:20.51,Sub,,0,0,0,,Esto fue Datos
+Dialogue: 0,0:01:20.52,0:01:21.68,Sub,,0,0,0,,y ociosidades.
