@@ -64,7 +64,9 @@
       "source_ids": [
         "SRC-001",
         "SRC-002"
-      ]
+      ],
+      "id": "scene_001",
+      "arc": "hook_medias_res"
     },
     {
       "scene_id": "scene_002",
@@ -87,7 +89,9 @@
       ],
       "source_ids": [
         "SRC-001"
-      ]
+      ],
+      "id": "scene_002",
+      "arc": "desarrollo"
     },
     {
       "scene_id": "scene_003",
@@ -148,7 +152,9 @@
           "SRC-003",
           "SRC-004"
         ]
-      }
+      },
+      "id": "scene_003",
+      "arc": "desarrollo"
     },
     {
       "scene_id": "scene_004",
@@ -183,7 +189,9 @@
           "SRC-001",
           "SRC-002"
         ]
-      }
+      },
+      "id": "scene_004",
+      "arc": "desarrollo"
     },
     {
       "scene_id": "scene_005",
@@ -207,7 +215,9 @@
       "source_ids": [
         "SRC-001",
         "SRC-002"
-      ]
+      ],
+      "id": "scene_005",
+      "arc": "desarrollo"
     },
     {
       "scene_id": "scene_006",
@@ -231,7 +241,9 @@
       "source_ids": [
         "SRC-001",
         "SRC-002"
-      ]
+      ],
+      "id": "scene_006",
+      "arc": "desarrollo"
     },
     {
       "scene_id": "scene_007",
@@ -255,7 +267,9 @@
       "source_ids": [
         "SRC-001",
         "SRC-002"
-      ]
+      ],
+      "id": "scene_007",
+      "arc": "cierre_historia"
     },
     {
       "scene_id": "scene_008",
@@ -278,7 +292,9 @@
       ],
       "source_ids": [
         "SRC-001"
-      ]
+      ],
+      "id": "scene_008",
+      "arc": "reflexion_o_pregunta"
     }
   ],
   "sources": [
@@ -298,7 +314,9 @@
         "uso estable y concentrado frente a uso más variable de llamadas sin voz",
         "diseño cuasiexperimental",
         "límites para inferir causalidad o lenguaje humano"
-      ]
+      ],
+      "id": "SRC-001",
+      "cita_corta": "Valet et al. (2026). A signal convention in natural chimpanzee communication. PNAS."
     },
     {
       "source_id": "SRC-002",
@@ -316,7 +334,9 @@
         "uso de la llamada durante grooming en los grupos silvestres",
         "uso en contextos más variados en los grupos de jóvenes sin modelos adultos",
         "cambio gradual tras incorporar un adulto a un grupo"
-      ]
+      ],
+      "id": "SRC-002",
+      "cita_corta": "University of Warwick (2026). Chimpanzees learn social conventions for using calls."
     },
     {
       "source_id": "SRC-003",
@@ -334,7 +354,9 @@
       },
       "supports": [
         "punto de referencia geográfica de Taï National Park"
-      ]
+      ],
+      "id": "SRC-003",
+      "cita_corta": "Mapcarta / OpenStreetMap. Taï National Park."
     },
     {
       "source_id": "SRC-004",
@@ -353,7 +375,9 @@
       "supports": [
         "nombre y ubicación general de Tacugama Chimpanzee Sanctuary",
         "punto de referencia cartográfica del santuario"
-      ]
+      ],
+      "id": "SRC-004",
+      "cita_corta": "Tacugama Chimpanzee Sanctuary. Contact Us."
     }
   ],
   "voice": {
@@ -425,7 +449,7 @@
   "validation_notes": [
     "Conteo estructural previsto: 198 palabras de narración; 8 escenas; 78 segundos de escenas + 6 segundos de cortinilla = 84 segundos.",
     "Cada escena contiene source_ids válidos; mapa y capa de dato están vinculados a fuentes.",
-    "No se escribe narrative_qa: la lectura en frío y los siete checks corresponden al auditor independiente."
+    "Lectura en frío independiente registrada en narrative_qa; no se modificaron narración ni claims."
   ],
   "risk_notes": [
     "No llamar a la señal una palabra ni afirmar que los chimpancés hablan lenguaje humano.",
@@ -434,5 +458,23 @@
     "El cambio tras la incorporación de un adulto se observó en un solo grupo.",
     "Las coordenadas del mapa son referencias de parque y santuario, no ubicaciones exactas de grupos u observaciones.",
     "No inferir que los ocho grupos tienen el mismo tamaño."
-  ]
+  ],
+  "estilo_id": "collage_cientifico_vintage",
+  "narrative_qa": {
+    "status": "PASS",
+    "score": 91,
+    "review_basis": "lectura_en_frio_solo_narracion",
+    "reviewer_role": "auditor_capcot_independiente",
+    "reviewed_at": "2026-11-12T15:38:50-06:00",
+    "checks": {
+      "pregunta_central_reconstruible": true,
+      "apertura_in_medias_res": true,
+      "progresion_por_escena": true,
+      "transiciones_causales": true,
+      "giro_cientifico_explicado": true,
+      "limite_evidencia_explicito": true,
+      "payoff_cierre_apertura": true
+    },
+    "critical_flags": []
+  }
 }
