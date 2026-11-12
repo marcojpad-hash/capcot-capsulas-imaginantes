@@ -149,3 +149,16 @@ Se revisaron los cambios oficiales disponibles de Meta Graph API, Instagram Insi
 - No se genera ni simula ningún frame, imagen, audio, video o render.
 - No se modifica `data/*.json`, `main`, workflows, motores canónicos ni Motor U6.
 - No se publica ni programa nada; no se consumen créditos.
+
+
+## Reejecución idempotente — 2026-11-12
+
+**Resultado: NO_DUPLICAR.** En esta reejecución ya existen el radar de esta fecha y el storyboard canónico `proyectos/2026-11-12_dato-pedorreta-chimpances/storyboard.json`. La carpeta del proyecto contiene únicamente `storyboard.json`; no hay otro proyecto de la fecha en `salidas/`, `cola/entrada/` ni `cola/bloqueados/`. El proyecto declara `fecha_objetivo=2026-11-12` y `slot_local=17:00`, que permanece como referencia de staging y no como programación.
+
+Se volvió a leer el JSON directamente desde GitHub y se comprobó: 8 escenas; 198 palabras de narración; 78 segundos de escenas + 6 de cortinilla = 84 segundos; estilo `collage_cientifico_vintage` con `prompt_base` idéntico al catálogo y distinto del estilo `linograbado` del paquete de 11-nov; fuentes y `source_ids` presentes; capas de mapa y dato/gráfico; voz `edge-tts / es-MX-JorgeNeural / +7% / -2Hz`; `approved_assets=[]`; `export.render_status=NOT_GENERATED`; ausencia de `export.filename` y rutas de medios; `publicacion.status=PENDIENTE_DECISION_GROK`.
+
+El storyboard no contiene `narrative_qa`: estado **PENDIENTE_AUDITOR**. No se realizó QA narrativo ni se modificó el storyboard. No se creó otra propuesta, copia de cola, archivo de fuentes ni medio.
+
+Seguimiento técnico de esta reejecución: las páginas oficiales de Graph API e Instagram Platform devolvieron HTTP 429; la referencia oficial de Page Insights no fue accesible; la página oficial de Google Trends confirma que la API sigue en alfa de acceso limitado. No se encontró un cambio nuevo sustentado respecto del corte técnico ya documentado; el informe técnico no se reescribe.
+
+No se modificaron `data/*.json`, `main`, workflows, motores canónicos ni Motor U6. No se publicó, programó ni consumió créditos.
