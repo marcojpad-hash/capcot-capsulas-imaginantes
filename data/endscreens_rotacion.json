@@ -1,8 +1,8 @@
 {
   "fecha": "2026-11-11",
   "tipo": "endscreens_rotacion",
-  "actualizado_cdmx": "2026-11-11T11:48-06:00",
-  "motivo": "11:48 ballena wbFrlM2e_YE (1→67 vistas desde 07:00, +36 última hora) → hipo Rg-iTgMExWw (1 vista), pantalla final elemento de vídeo específico en Studio (antes Ninguno). Mpemba V4h28RA8bq0 192 sigue → capsaicina K2I_jgugiOU 8. Fijos intactos.",
+  "actualizado_cdmx": "2026-11-11T19:46-06:00",
+  "motivo": "19:46 rotación: Mpemba V4h28RA8bq0 (529 vistas, +67 última hora) → corneja wxnhEdlJYwU (0 vistas) en Studio; antes → capsaicina K2I_jgugiOU, que quedó en 10 vistas sin mover 4 h. Ballena wbFrlM2e_YE sigue → hipo Rg-iTgMExWw. Fijos intactos.",
   "vistas_ref": {
     "phVfyHp3CnY": 54,
     "m4RqQRaz55k": 33,
@@ -58,12 +58,14 @@
     "PTk2QNMkOn4": 98,
     "zTP5akrGA9M": 140,
     "UBFuKBU3cx0": 108,
-    "4lOWeMn2RCo": 6,
+    "4lOWeMn2RCo": 7,
     "EwZ3dHalUn0": 131,
     "nSS_q2tj2P0": 95,
-    "V4h28RA8bq0": 192,
-    "K2I_jgugiOU": 8,
-    "wbFrlM2e_YE": 67
+    "V4h28RA8bq0": 529,
+    "K2I_jgugiOU": 10,
+    "wbFrlM2e_YE": 143,
+    "wxnhEdlJYwU": 0,
+    "maLtsoQpxwI": 0
   },
   "mapa": {
     "r1AhsPOAS_o": "AJR6kcnnDig",
@@ -120,7 +122,7 @@
     "zTP5akrGA9M": "PTk2QNMkOn4",
     "UBFuKBU3cx0": "4lOWeMn2RCo",
     "nSS_q2tj2P0": "4lOWeMn2RCo",
-    "V4h28RA8bq0": "K2I_jgugiOU",
+    "V4h28RA8bq0": "wxnhEdlJYwU",
     "wbFrlM2e_YE": "Rg-iTgMExWw"
   },
   "pendiente_studio": false,
