@@ -102,7 +102,7 @@ El equivalente estático de la validación estructural falla para los doce: los 
 
 ### Handoff, bloqueos y recepción Grok
 
-Los doce storyboards están en proyectos/, no en cola/entrada/. No existe copia de entrada para ninguno de los doce; por tanto, no había una copia heredada en cola/entrada que mover. Hay copias/variantes en cola/bloqueados para algunos IDs, que se conservaron sin cambios. Las tres carpetas bloqueadas exactas que contienen ESTADO_EJECUCION.md (aguacate, ranas y huesos) ya dicen BORRADOR_EN_PROYECTOS_NO_APTO_PARA_PROMOCION; no se modificaron.
+Los doce storyboards están en proyectos/, no en cola/entrada/. No existe copia de entrada para ninguno de los doce; por tanto, no había una copia heredada en cola/entrada que mover. Hay JSON bloqueados de nivel raíz para rayo-globular, aguacate-negro, ranas-congeladas, arena-cantante, nubes-pesan y huesos-bebe. Esos archivos bloqueados conservan estado=PENDIENTE_REVISION_GROK y no tienen narrative_qa; no se usaron como evidencia de QA ni se modificaron. Las carpetas bloqueadas exactas de aguacate, ranas y huesos incluyen ESTADO_EJECUCION.md con BORRADOR_EN_PROYECTOS_NO_APTO_PARA_PROMOCION, pero sus storyboard.json conservan el estado antiguo PENDIENTE_REVISION_GROK. Se registra la discrepancia documental y se dejan intactos. Las variantes de Venus, palomitas, árboles, ballena, hielo y pulpo tienen slugs distintos y no se contaron como copias canónicas de esos project_id.
 
 Para los doce IDs, cola/estado/<project_id>.json devolvió 404. Estado de cada uno: **RECEPCION_GROK_NO_CONFIRMADA**. No se atribuye recepción, selección, QA ni publicación a Grok por la existencia de un storyboard o una copia bloqueada.
 
