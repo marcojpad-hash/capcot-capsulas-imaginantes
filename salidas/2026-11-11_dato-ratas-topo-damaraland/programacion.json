@@ -10,11 +10,16 @@
  "hora_cdmx": "2026-11-12 07:00",
  "titulo_yt": "¿Por qué trabajan más las ratas topo cuando nacen sus crías? #Shorts",
  "privacidad": "private→público a las 07:00 CDMX",
- "estado": "programado_yt",
+ "estado": "publicado_yt_tt_fb",
  "video": "capsula.mp4",
  "miniatura": "portada.jpg (thumbnails.set OK)",
  "yt_programado": true,
- "tiktok": "pendiente",
- "facebook": "pendiente",
- "nota": "Dato del día 2026-11-11: llegó a las 19:27 CDMX en la rama feature/capcot-video-discovery-continuity (solo guion, sin video); se copió a main, se montó y se programó para 2026-11-12 07:00 CDMX. containsSyntheticMedia true enviado en insert. Voz es-MX-JorgeNeural (sustituye VoxCPM2/narradora_es del paquete por regla fija de Mj)."
+ "tiktok": "publicado",
+ "facebook": "publicado",
+ "nota": "Dato del día 2026-11-11: llegó a las 19:27 CDMX en la rama feature/capcot-video-discovery-continuity (solo guion, sin video); se copió a main, se montó y se programó para 2026-11-12 07:00 CDMX. containsSyntheticMedia true enviado en insert. Voz es-MX-JorgeNeural (sustituye VoxCPM2/narradora_es del paquete por regla fija de Mj).",
+ "tiktok_url": "https://www.tiktok.com/@datosyociosidades/video/7707137000121404680",
+ "tiktok_post_id": "7707137000121404680",
+ "facebook_content_id": "122109293493518983",
+ "actualizado": "2026-11-12T07:28:00-06:00",
+ "nota_rutina_2026-11-12": "Rutina 07:00 CDMX: confirmado público en YT, TT y FB. No se re-subió. Colisión de slot con nubes del lote semanal."
 }

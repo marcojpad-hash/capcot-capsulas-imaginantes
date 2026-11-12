@@ -1,0 +1,20 @@
+{
+ "estado": "programado",
+ "hora_local": "2026-11-12 13:30 CDMX",
+ "ui_timezone": "GMT-5 New York",
+ "ui_hora_mostrada": "2026-11-12 2:30 PM",
+ "visibilidad": "Everyone",
+ "post_id": "7707280073446952213",
+ "url": "https://www.tiktok.com/@datosyociosidades/video/7707280073446952213",
+ "scheduled_list": "https://www.tiktok.com/tiktokstudio/content",
+ "cuenta": "@datosyociosidades",
+ "verificado": "2026-11-12 07:43 CDMX rutina publicar TikTok 07:00",
+ "etiqueta_ia": true,
+ "portada": "portada con título PEZ DE CABEZA TRANSPARENTE",
+ "caption_file": "/workspace/capcot_main/salidas/2026-11-07_barreleye-4k/caption_tiktok.txt",
+ "mp4": "/workspace/capcot_main/salidas/2026-11-07_barreleye-4k/capsula.mp4",
+ "yt_id": "YV_3JgGv1kg",
+ "youtube_url": "https://youtube.com/shorts/YV_3JgGv1kg",
+ "actualizado": "2026-11-12T07:43:00-06:00",
+ "nota": "Programado en esta corrida (no había un post igual ya agendado). Studio mostró GMT-5 New York; se fijó 2:30 PM = 13:30 CDMX. Everyone, etiqueta de contenido generado por IA ON, portada con el título visible. No se publicó al momento."
+}

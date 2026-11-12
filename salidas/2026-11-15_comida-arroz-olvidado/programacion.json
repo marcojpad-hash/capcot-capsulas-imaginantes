@@ -1,20 +1,24 @@
 {
-  "project_id": "2026-11-15_comida-arroz-olvidado",
-  "plataforma": [
-    "yt"
-  ],
-  "yt_id": "maLtsoQpxwI",
-  "url": "https://youtube.com/shorts/maLtsoQpxwI",
-  "publish_at": "2026-11-12T01:00:00Z",
-  "ventana": "noche",
-  "hora_cdmx": "2026-11-11 19:00",
-  "titulo_yt": "¿El arroz de ayer puede enfermarte? #Shorts",
-  "privacidad": "private→público a las 19:00 CDMX",
-  "estado": "programado_yt",
-  "video": "capsula_v2.mp4",
-  "miniatura": "portada_v2.jpg (thumbnails.set OK)",
-  "yt_programado": true,
-  "tiktok": "pendiente",
-  "facebook": "pendiente",
-  "nota": "Mj aprobó programar hoy 19:00 en YT, TT y FB. En este paso solo YouTube. containsSyntheticMedia enviado true en insert."
+ "project_id": "2026-11-15_comida-arroz-olvidado",
+ "plataforma": [
+  "yt"
+ ],
+ "yt_id": "maLtsoQpxwI",
+ "url": "https://youtube.com/shorts/maLtsoQpxwI",
+ "publish_at": "2026-11-12T01:00:00Z",
+ "ventana": "noche",
+ "hora_cdmx": "2026-11-11 19:00",
+ "titulo_yt": "¿El arroz de ayer puede enfermarte? #Shorts",
+ "privacidad": "private→público a las 19:00 CDMX",
+ "estado": "publicado_yt_tt_fb",
+ "video": "capsula_v2.mp4",
+ "miniatura": "portada_v2.jpg (thumbnails.set OK)",
+ "yt_programado": true,
+ "tiktok": "publicado",
+ "facebook": "publicado",
+ "nota": "Mj aprobó programar hoy 19:00 en YT, TT y FB. En este paso solo YouTube. containsSyntheticMedia enviado true en insert.",
+ "tiktok_url": "https://www.tiktok.com/@datosyociosidades/video/7707005233775332660",
+ "tiktok_post_id": "7707005233775332660",
+ "facebook_content_id": "122109172491518983",
+ "actualizado": "2026-11-12T07:28:00-06:00"
 }

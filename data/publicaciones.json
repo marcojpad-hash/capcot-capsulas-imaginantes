@@ -349,7 +349,12 @@
   "aprobado_por": "Mj (widget t422s2041)",
   "nota": "REPOST nuevo upload; orig O7TdKvuBjyg intacto",
   "orig_yt_id": "O7TdKvuBjyg",
-  "origen": "repost"
+  "origen": "repost",
+  "tiktok": "programado_tiktok",
+  "tiktok_url": "https://www.tiktok.com/@datosyociosidades/video/7706269323030973714",
+  "tiktok_post_id": "7706269323030973714",
+  "tiktok_schedule_local": "2026-11-12 17:00 CDMX",
+  "facebook": "no_iba_en_el_resub"
  },
  {
   "fecha": "2026-11-11",
@@ -363,15 +368,17 @@
   "titulo": "¿El agua caliente se congela antes? #Shorts",
   "aprobado_por": "Mj (t435u: montadas y programadas, cápsula extra del día)",
   "origen": "propia",
-  "tiktok": "programado_tiktok",
-  "facebook": "programado_facebook",
+  "tiktok": "publicado",
+  "facebook": "publicado",
   "miniatura": "thumbnails.set OK portada.jpg t=0.5s",
   "tiktok_url": "https://www.tiktok.com/@datosyociosidades/video/7706905447424347393",
   "tiktok_post_id": "7706905447424347393",
   "tiktok_schedule_local": "2026-11-11 13:30 CDMX",
   "tiktok_nota": "Programado Studio 11-nov ~07:30 CDMX por Imaginantes; UI GMT-5 New York 14:30; AI label on; Everyone; portada con título",
   "facebook_nota": "Programado Reel Público 11-nov ~07:30 CDMX; UI America/New_York 14:30 = 13:30 CDMX; miniatura portada.jpg con título; estado UI En proceso…; sin sello IA (no lo ofrece Reels)",
-  "facebook_schedule_local": "2026-11-11 13:30 CDMX"
+  "facebook_schedule_local": "2026-11-11 13:30 CDMX",
+  "facebook_content_id": "122109123507518983",
+  "nota_yt": "El Short HSgrnejAcaI ya no aparece en el canal (videos.list no lo encontró el 12-nov 07:20 CDMX). El post de TT/FB de las 13:30 del 11-nov sí está publicado."
  },
  {
   "fecha": "2026-11-12",
@@ -385,9 +392,17 @@
   "titulo": "El pez que mira a través de su cabeza #Shorts",
   "aprobado_por": "Mj (t435u: montadas y programadas, cápsula extra del día)",
   "origen": "propia",
-  "tiktok": "pendiente_programar_navegador",
-  "facebook": "pendiente_programar_navegador",
-  "miniatura": "thumbnails.set OK portada.jpg t=0.5s"
+  "tiktok": "programado_tiktok",
+  "facebook": "programado_facebook",
+  "miniatura": "thumbnails.set OK portada.jpg t=0.5s",
+  "tiktok_url": "https://www.tiktok.com/@datosyociosidades/video/7707280073446952213",
+  "tiktok_post_id": "7707280073446952213",
+  "tiktok_schedule_local": "2026-11-12 13:30 CDMX",
+  "tiktok_nota": "Programado en esta corrida (no había un post igual ya agendado). Studio mostró GMT-5 New York; se fijó 2:30 PM = 13:30 CDMX. Everyone, etiqueta de contenido generado por IA ON, portada con el título visible. No se publicó al momento.",
+  "facebook_content_id": "4135110933287486",
+  "facebook_post_id": "1649350416850484",
+  "facebook_schedule_local": "2026-11-12 13:30 CDMX",
+  "facebook_nota": "Programado Reel Público 12-nov ~07:41 CDMX; UI America/New_York 14:30 = 13:30 CDMX; miniatura portada.jpg con título; estado UI En proceso…; sin sello IA."
  },
  {
   "fecha": "2026-11-13",
@@ -433,9 +448,12 @@
   "titulo": "¿El arroz de ayer puede enfermarte? #Shorts",
   "aprobado_por": "Mj (t455u: Prográmala hoy a las 19:00 en YT, TT y FB)",
   "origen": "propia",
-  "tiktok": "pendiente_programar_navegador",
-  "facebook": "pendiente_programar_navegador",
-  "miniatura": "thumbnails.set OK portada_v2.jpg (re-set oficial tras autoextract t=0.5s; título completo, sin subtítulos)"
+  "tiktok": "publicado",
+  "facebook": "publicado",
+  "miniatura": "thumbnails.set OK portada_v2.jpg (re-set oficial tras autoextract t=0.5s; título completo, sin subtítulos)",
+  "tiktok_url": "https://www.tiktok.com/@datosyociosidades/video/7707005233775332660",
+  "tiktok_post_id": "7707005233775332660",
+  "facebook_content_id": "122109172491518983"
  },
  {
   "fecha": "2026-11-12",
@@ -449,10 +467,33 @@
   "titulo": "¿Por qué trabajan más las ratas topo cuando nacen sus crías? #Shorts",
   "aprobado_por": "Mj (t461s2227: Monta las ratas topo y prográmala mañana a las 07:00 en YT, TT y FB)",
   "origen": "dato_del_dia",
-  "tiktok": "pendiente_programar_navegador",
-  "facebook": "pendiente_programar_navegador",
+  "tiktok": "publicado",
+  "facebook": "publicado",
   "miniatura": "thumbnails.set OK portada.jpg (t=0.5 s, título completo)",
   "containsSyntheticMedia": true,
-  "nota": "Dato del día 2026-11-11: llegó a las 19:27 CDMX en la rama feature/capcot-video-discovery-continuity (solo guion, sin video); se copió a main, se montó y se programó para 2026-11-12 07:00 CDMX."
+  "nota": "Dato del día 2026-11-11: llegó a las 19:27 CDMX en la rama feature/capcot-video-discovery-continuity (solo guion, sin video); se copió a main, se montó y se programó para 2026-11-12 07:00 CDMX.",
+  "tiktok_url": "https://www.tiktok.com/@datosyociosidades/video/7707137000121404680",
+  "tiktok_post_id": "7707137000121404680",
+  "facebook_content_id": "122109293493518983",
+  "tiktok_nota": "No se volvió a subir. Ya estaba público a las 07:00 CDMX. En el mismo slot también salió el lote semanal de nubes (TT 7705597569203768597 / YT 4Qpl17Ts_vI)."
+ },
+ {
+  "fecha": "2026-11-12",
+  "project_id": "2026-11-07_inter-nubes-pesan",
+  "yt_id": "4Qpl17Ts_vI",
+  "url": "https://youtube.com/shorts/4Qpl17Ts_vI",
+  "privacidad": "public",
+  "publishAt_utc": "2026-11-12T13:00:00Z",
+  "hora_local": "2026-11-12 07:00 (America/Mexico_City)",
+  "video": "capsula_v2.mp4",
+  "titulo": "Esa nube puede cargar quinientas toneladas #Shorts",
+  "origen": "lote_semana_8_14_nov",
+  "tiktok": "publicado",
+  "tiktok_url": "https://www.tiktok.com/@datosyociosidades/video/7705597569203768597",
+  "tiktok_post_id": "7705597569203768597",
+  "facebook": "publicado",
+  "facebook_content_id": "122109293529518983",
+  "miniatura": "custom thumbnail OK",
+  "nota": "Lote semanal 07:00 del 12-nov. Salió a la misma hora que las ratas topo (dato del día)."
  }
 ]

@@ -1,0 +1,22 @@
+{
+ "estado": "programado",
+ "tipo": "resub",
+ "hora_local": "2026-11-12 17:00 CDMX",
+ "ui_timezone": "GMT-6 Mexico City (según lista programados de Studio)",
+ "ui_hora_mostrada": "2026-11-12 5:00 PM",
+ "visibilidad": "Everyone",
+ "post_id": "7706269323030973714",
+ "url": "https://www.tiktok.com/@datosyociosidades/video/7706269323030973714",
+ "cuenta": "@datosyociosidades",
+ "verificado": "2026-11-12 07:28 CDMX rutina publicar TikTok 07:00 (Studio Scheduled)",
+ "etiqueta_ia": null,
+ "etiqueta_ia_nota": "La etiqueta IA no se veía en la lista de programados; no se reabrió el editor para no alterar el post ya agendado.",
+ "portada": "la miniatura de la lista parece la tarjeta de título",
+ "yt_id": "YVfUrd2NQJw",
+ "youtube_url": "https://youtube.com/shorts/YVfUrd2NQJw",
+ "facebook": "no_iba_en_el_resub",
+ "facebook_nota": "No apareció en Programadas de Facebook; no se programó FB, mismo criterio que capsaicina y corneja.",
+ "mp4": "/workspace/capcot/salidas/2026-10-24_aves-temen-mas-a-mujeres/capsula.mp4",
+ "actualizado": "2026-11-12T07:28:00-06:00",
+ "nota": "Resub aprobado (widget t422s2041) para el 12-nov 17:00. Ya estaba programado en TikTok; no se volvió a subir."
+}

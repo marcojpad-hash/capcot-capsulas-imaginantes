@@ -1,0 +1,23 @@
+{
+ "estado": "programado",
+ "pagina": "Datos y ociosidades",
+ "formato": "Reels",
+ "visibilidad": "Público",
+ "content_id": "4135110933287486",
+ "post_id": "1649350416850484",
+ "url": "https://business.facebook.com/latest/posts/scheduled_posts?asset_id=1460158683840154",
+ "asset_id_lista": "1460158683840154",
+ "publish_at_cdmx": "2026-11-12T13:30:00-06:00",
+ "hora_slot": "2026-11-12 13:30 CDMX",
+ "ui_timezone": "America/New_York",
+ "ui_hora_mostrada": "2026-11-12 14:30",
+ "ai_label": null,
+ "ai_label_nota": "Facebook Reels no ofreció sello de contenido IA.",
+ "portada": "portada.jpg subida como miniatura (título PEZ DE CABEZA TRANSPARENTE)",
+ "mp4": "/workspace/capcot_main/salidas/2026-11-07_barreleye-4k/capsula.mp4",
+ "caption_file": "/workspace/capcot_main/salidas/2026-11-07_barreleye-4k/caption_facebook.txt",
+ "verificado": "2026-11-12 07:43 CDMX rutina publicar TikTok 07:00",
+ "actualizado": "2026-11-12T07:43:00-06:00",
+ "estado_ui": "En proceso…",
+ "nota": "Programado en esta corrida como Reel Público. El programador mostró America/New_York; se fijó 14:30 = 13:30 CDMX. Miniatura = portada.jpg con el título visible. La lista de programados muestra el Reel con estado «En proceso…». No se publicó al momento. Un aviso de Suite («esta publicación no se puede usar en un anuncio») apareció al inspeccionar la fila; no se promocionó ni se cambió el post."
+}

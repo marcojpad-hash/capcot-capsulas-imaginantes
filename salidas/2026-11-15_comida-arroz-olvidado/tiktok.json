@@ -1,0 +1,20 @@
+{
+ "estado": "publicado",
+ "hora_local": "2026-11-11 19:00 CDMX",
+ "ui_timezone": "GMT-5 New York",
+ "ui_hora_mostrada": "2026-11-11 8:00 PM",
+ "visibilidad": "Everyone",
+ "post_id": "7707005233775332660",
+ "url": "https://www.tiktok.com/@datosyociosidades/video/7707005233775332660",
+ "cuenta": "@datosyociosidades",
+ "verificado": "2026-11-12 07:28 CDMX rutina publicar TikTok 07:00 (Studio Posts + yt-dlp)",
+ "etiqueta_ia": true,
+ "portada": "miniatura con tarjeta de título visible en Studio",
+ "mp4": "/workspace/capcot_main/salidas/2026-11-15_comida-arroz-olvidado/capsula_v2.mp4",
+ "yt_id": "maLtsoQpxwI",
+ "youtube_url": "https://youtube.com/shorts/maLtsoQpxwI",
+ "yt_estado": "público desde 2026-11-12T01:00:10Z, PT1M28S, miniatura personalizada, 254 vistas / 11 likes a las 07:20 CDMX",
+ "tt_vistas_yt_dlp": 153,
+ "actualizado": "2026-11-12T07:28:00-06:00",
+ "nota": "Ya estaba público; no se volvió a subir. El repo seguía en pendiente_programar_navegador."
+}
