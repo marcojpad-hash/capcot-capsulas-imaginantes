@@ -151,7 +151,8 @@
           "SRC-002",
           "SRC-003",
           "SRC-004"
-        ]
+        ],
+        "fuente": "PNAS (SRC-001); University of Warwick (SRC-002); Mapcarta/OpenStreetMap (SRC-003); Tacugama Chimpanzee Sanctuary (SRC-004)"
       },
       "id": "scene_003",
       "arc": "desarrollo"
@@ -188,7 +189,8 @@
         "source_ids": [
           "SRC-001",
           "SRC-002"
-        ]
+        ],
+        "fuente": "PNAS (SRC-001); University of Warwick (SRC-002)"
       },
       "id": "scene_004",
       "arc": "desarrollo"
