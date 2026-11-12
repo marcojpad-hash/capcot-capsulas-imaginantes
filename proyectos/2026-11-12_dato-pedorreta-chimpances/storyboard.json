@@ -1,0 +1,438 @@
+{
+  "project_id": "2026-11-12_dato-pedorreta-chimpances",
+  "serie": "Datos y ociosidades",
+  "titulo": "La pedorreta tiene reglas sociales",
+  "gancho": "La pedorreta tiene reglas sociales",
+  "title": "Los chimpancés aprenden cuándo usar una llamada",
+  "language": "es-MX",
+  "aspect_ratio": "9:16",
+  "fecha_objetivo": "2026-11-12",
+  "slot_local": "17:00",
+  "slot_window": "16:30–18:00 America/Mexico_City",
+  "slot_note": "17:00 es solo referencia de staging dentro de una ventana activa; no fija hora de publicación, no crea publishAt y no programa la pieza. Jueves no es día preferente de tarde, aunque la ventana permanece activa.",
+  "target_duration_seconds": 84,
+  "scene_total_seconds": 78,
+  "cortinilla_seconds": 6,
+  "word_count": 198,
+  "scene_count": 8,
+  "estructura": "pregunta",
+  "linea_tematica_provisional": "Naturaleza/bichos; actualidad científica (comunicación animal y aprendizaje social)",
+  "audience": "Público general interesado en animales, comportamiento y ciencia.",
+  "occasion": "Cápsula vertical de divulgación móvil; propuesta para revisión independiente antes de cualquier decisión editorial.",
+  "resumen": "Un estudio cuasiexperimental de 91 chimpancés en ocho grupos sugiere que los adultos ayudan a estabilizar el uso social de una llamada sin voz parecida a una pedorreta. El hallazgo se refiere a cuándo usar una señal existente, no a aprender lenguaje humano ni a producir un sonido nuevo.",
+  "trend_source": {
+    "termino": "A signal convention in natural chimpanzee communication",
+    "fecha_publicacion": "2026-11-09",
+    "url": "https://www.pnas.org/doi/10.1073/pnas.2606837123",
+    "fuente": "PNAS, artículo original"
+  },
+  "editorial_status": "PROPUESTA_PENDIENTE_DE_GROK",
+  "narrative_contract": {
+    "central_question": "¿Los chimpancés aprenden solo a producir sonidos o también cuándo usarlos?",
+    "promise": "Mostrar que la presencia de modelos adultos se asocia con un uso más estable de una llamada ya existente.",
+    "stakes": "Si la función de una señal se aprende socialmente, la comunicación animal tiene convenciones compartidas que no dependen solo de la biología individual.",
+    "scientific_turn": "En ocho grupos, las llamadas sin voz fueron estables y concentradas en un contexto donde había modelos adultos; sin esos modelos, su uso fue más variable. En un grupo del santuario, la incorporación de un adulto estuvo seguida por un uso más consistente.",
+    "evidence_limit": "Diseño cuasiexperimental, no asignación aleatoria; los grupos difieren en historia y entorno; el cambio tras la incorporación se observó en un solo grupo. No demuestra lenguaje humano ni aprendizaje de un sonido nuevo.",
+    "payoff": "La misma llamada puede adquirir una regla de uso compartida: los chimpancés pueden aprender socialmente cuándo usar un sonido que ya producen."
+  },
+  "arco": {
+    "hook_medias_res": "Una llamada sin voz parecida a una pedorreta aparece durante el acicalamiento en unos grupos y en contextos más variados en otros.",
+    "desarrollo": "La comparación de 91 chimpancés en ocho grupos muestra una asociación entre la presencia de modelos adultos y un uso más estable de la llamada.",
+    "cierre_historia": "La incorporación de un adulto a un grupo estuvo seguida por un patrón más consistente, pero el diseño cuasiexperimental limita la inferencia causal.",
+    "reflexion_o_pregunta": "La llamada ya existía; lo que puede aprenderse es cuándo usarla. ¿Qué otras reglas sociales animales pasan inadvertidas?"
+  },
+  "scenes": [
+    {
+      "scene_id": "scene_001",
+      "duration_seconds": 10,
+      "arco": "hook_medias_res",
+      "scene_function": "Abrir con una llamada en uso y la anomalía entre grupos.",
+      "dramatic_beat": "El mismo tipo de llamada aparece en contextos sociales distintos.",
+      "causal_bridge_from_previous": "Apertura en curso: la llamada ocurre durante el acicalamiento y el contraste entre grupos aparece desde el primer plano.",
+      "question_state": "Vemos una llamada tipo pedorreta en un contexto concreto y sabemos que otros grupos la usan de manera más amplia; aún no sabemos por qué.",
+      "reason_to_continue": "Para distinguir una diferencia de producción de una regla de uso, la siguiente escena formula la pregunta central.",
+      "new_information": "La diferencia que importa no es el sonido aislado, sino el contexto en que se utiliza.",
+      "narration": "Un chimpancé emite una llamada sin voz, parecida a una pedorreta, mientras acicala a otro. En otros grupos, el mismo sonido aparece en muchas situaciones distintas.",
+      "visual_description": "Lámina naturalista recortada: un chimpancé central en postura de acicalamiento; una segunda silueta parcial sugiere al compañero. Dos pequeñas viñetas de contexto contrastan el uso concentrado y el uso amplio. Representación de patrones del estudio, no episodio individual.",
+      "image_prompt": "vintage scientific collage, cut-out 19th century natural history engravings, botanical and anatomical plates, aged paper, muted pastel accents, one large specimen centered, plain background, not photorealistic, vertical 9:16, no text; central chimpanzee specimen grooming another, a small secondary silhouette only, a subtle acoustic ripple suggesting an unvoiced raspberry-like call, two small contextual vignettes in the background, no anthropomorphic pose, no invented individual or event",
+      "on_screen_text": "La pedorreta social",
+      "ambiente": "Ambiente de bosque tropical muy tenue, sin cantos de especies identificables ni grabaciones de animales.",
+      "sfx": [
+        "Soplido corto tipo pedorreta, síntesis original y no grabación de chimpancé",
+        "Corte suave del ambiente al aparecer el contraste"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ]
+    },
+    {
+      "scene_id": "scene_002",
+      "duration_seconds": 9,
+      "arco": "desarrollo",
+      "scene_function": "Precisar la pregunta: aprender el uso, no necesariamente producir el sonido.",
+      "dramatic_beat": "Se separa la capacidad vocal de la convención social.",
+      "causal_bridge_from_previous": "El contraste inicial obliga a preguntar si la diferencia está en producir la llamada o en aprender cuándo usarla.",
+      "question_state": "La pregunta central queda definida: ¿se aprende socialmente la ocasión de uso de una llamada que ya existe?",
+      "reason_to_continue": "La respuesta depende de comparar grupos con y sin modelos adultos, no de observar un solo llamado.",
+      "new_information": "El estudio trata sobre el contexto de uso de una llamada sin voz, no sobre aprender un sonido nuevo.",
+      "narration": "La pregunta no es si pueden producirla, sino si aprenden en qué situaciones usarla cuando hay adultos que sirven de modelo.",
+      "visual_description": "El mismo chimpancé central permanece; alrededor aparecen dos marcos de papel: uno representa producir la llamada y el otro elegir el contexto. No hay globos de diálogo ni símbolos de lenguaje humano.",
+      "image_prompt": "vintage scientific collage, cut-out 19th century natural history engravings, botanical and anatomical plates, aged paper, muted pastel accents, one large specimen centered, plain background, not photorealistic, vertical 9:16, no text; same central chimpanzee specimen, two restrained paper frames representing vocal production and social context, visual distinction between making a call and choosing when to use it, no speech bubbles, no human language symbols",
+      "on_screen_text": "¿Cuándo la usan?",
+      "ambiente": "Aire de bosque muy bajo con espacio limpio para la narración.",
+      "sfx": [
+        "Paso de página de papel",
+        "Dos pulsos discretos al separar sonido y contexto"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ]
+    },
+    {
+      "scene_id": "scene_003",
+      "duration_seconds": 10,
+      "arco": "desarrollo",
+      "scene_function": "Ubicar los dos sitios de estudio y anclar el tamaño de la comparación.",
+      "dramatic_beat": "La pregunta deja de ser anecdótica: se compararon grupos y contextos distintos.",
+      "causal_bridge_from_previous": "Para responder la pregunta sobre el uso social, el equipo comparó grupos concretos en dos sitios de África occidental.",
+      "question_state": "Ya conocemos el diseño general y los lugares; falta ver qué patrón de uso apareció en cada tipo de grupo.",
+      "reason_to_continue": "La siguiente escena muestra el tamaño de la muestra y permite comparar los grupos sin confundir sitios con individuos.",
+      "new_information": "El estudio reunió 91 chimpancés de ocho grupos entre Taï y Tacugama.",
+      "narration": "Un equipo comparó 91 chimpancés, de cero a 55 años, en ocho grupos: cuatro comunidades silvestres en Taï y cuatro grupos del santuario Tacugama.",
+      "visual_description": "Mapa de África occidental con dos pines: Parque Nacional Taï en Côte d’Ivoire y santuario Tacugama en Sierra Leone. Los pines son referencias de los sitios, no ubicaciones de individuos ni de observaciones puntuales.",
+      "image_prompt": "vintage scientific collage, cut-out 19th century natural history engravings, botanical and anatomical plates, aged paper, muted pastel accents, one large specimen centered, plain background, not photorealistic, vertical 9:16, no text; restrained West Africa map vignette in aged paper, two clearly separated location markers for Taï National Park in Côte d’Ivoire and Tacugama Chimpanzee Sanctuary in Sierra Leone, no invented roads, no exact observation points, labels added in post",
+      "on_screen_text": "Dos sitios de estudio",
+      "ambiente": "Ambiente documental de campo muy bajo, sin voces ni llamadas identificables.",
+      "sfx": [
+        "Despliegue suave de mapa de papel",
+        "Dos marcadores discretos al aparecer los sitios"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002",
+        "SRC-003",
+        "SRC-004"
+      ],
+      "capa": {
+        "tipo": "mapa",
+        "titulo": "Sitios de estudio",
+        "crs": "WGS84",
+        "region": [
+          4.5,
+          -14.5,
+          9.5,
+          -6
+        ],
+        "region_order": "lat_min, lon_min, lat_max, lon_max",
+        "puntos": [
+          {
+            "nombre": "Taï National Park, Côte d’Ivoire",
+            "lat": 5.7864,
+            "lon": -7.0997,
+            "precision": "Referencia geográfica del parque; no coordenada de una comunidad ni de una observación individual.",
+            "source_id": "SRC-003"
+          },
+          {
+            "nombre": "Tacugama Chimpanzee Sanctuary, Sierra Leone",
+            "lat": 8.416786,
+            "lon": -13.215086,
+            "precision": "Centro del mapa oficial incrustado en el sitio del santuario; referencia de ubicación, no coordenada de observaciones individuales.",
+            "source_id": "SRC-004"
+          }
+        ],
+        "nota": "Los dos sitios están respaldados por el estudio y el comunicado oficial. Los puntos son referencias geográficas de parque/santuario; no representan las posiciones exactas de los grupos ni de cada observación.",
+        "source_ids": [
+          "SRC-001",
+          "SRC-002",
+          "SRC-003",
+          "SRC-004"
+        ]
+      }
+    },
+    {
+      "scene_id": "scene_004",
+      "duration_seconds": 9,
+      "arco": "desarrollo",
+      "scene_function": "Presentar el tamaño de la muestra y el contraste entre grupos.",
+      "dramatic_beat": "La comparación se vuelve legible: cuatro grupos silvestres frente a cuatro grupos de santuario.",
+      "causal_bridge_from_previous": "Con los sitios definidos, se presenta el tamaño de la muestra antes de interpretar las diferencias de contexto.",
+      "question_state": "La muestra permite comparar patrones de uso; ahora falta observar en qué situaciones aparece la llamada.",
+      "reason_to_continue": "El contraste de contexto responde parcialmente la pregunta y abre la explicación del aprendizaje social.",
+      "new_information": "La muestra fue de 91 individuos y ocho grupos; cuatro grupos por sitio, sin asumir tamaños iguales.",
+      "narration": "En Taï, la llamada aparecía casi siempre durante el acicalamiento; entre jóvenes criados sin modelos adultos, surgía en contextos sociales mucho más variados.",
+      "visual_description": "Infografía editorial de dos columnas con cuatro marcas de grupo por lado y el total de 91 individuos. A la izquierda, el contexto de acicalamiento; a la derecha, varios contextos sociales. No dibujar barras con tamaños de grupo inventados.",
+      "image_prompt": "vintage scientific collage, cut-out 19th century natural history engravings, botanical and anatomical plates, aged paper, muted pastel accents, one large specimen centered, plain background, not photorealistic, vertical 9:16, no text; a single central chimpanzee specimen with two restrained context panels, one showing grooming as the dominant context and the other showing varied social contexts, four small group marks on each side, no proportional group sizes, no fabricated statistics",
+      "on_screen_text": "91 chimpancés",
+      "ambiente": "Cama documental ligera, con fondo de hojas y aire muy discreto.",
+      "sfx": [
+        "Cuatro marcas suaves para cada conjunto de grupos",
+        "Resalte breve del total de individuos"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "capa": {
+        "tipo": "dato",
+        "valor": "91 chimpancés · 8 grupos · 2 sitios",
+        "etiqueta": "Cuatro comunidades silvestres en Taï y cuatro grupos de santuario en Tacugama; edades de 0 a 55 años.",
+        "nota": "91 es el total de individuos de la muestra. Los ocho grupos no se presentan como si tuvieran el mismo tamaño.",
+        "grafico": "Comparación cualitativa de 4 grupos silvestres y 4 grupos de santuario; no usar barras de abundancia por grupo.",
+        "source_ids": [
+          "SRC-001",
+          "SRC-002"
+        ]
+      }
+    },
+    {
+      "scene_id": "scene_005",
+      "duration_seconds": 9,
+      "arco": "desarrollo",
+      "scene_function": "Mostrar el patrón de uso de la llamada según el contexto social.",
+      "dramatic_beat": "La misma llamada adquiere una distribución de uso distinta entre grupos.",
+      "causal_bridge_from_previous": "El tamaño y la composición de la muestra permiten interpretar el contraste de contextos sin reducirlo a un caso aislado.",
+      "question_state": "La llamada no aparece al azar: su contexto de uso se concentra en los grupos con modelos adultos y es más variable en los grupos sin ellos.",
+      "reason_to_continue": "La diferencia sugiere una regla social compartida; falta ver si un cambio de composición del grupo modifica el patrón.",
+      "new_information": "La presencia de modelos adultos se asocia con un uso más estable y concentrado de la llamada.",
+      "narration": "La diferencia sugiere que el sonido no basta: la comunidad puede enseñar la ocasión en que una llamada adquiere una función compartida.",
+      "visual_description": "Un mismo motivo acústico aparece sobre el chimpancé central, pero el fondo cambia: acicalamiento en un panel, varios contextos sociales en otro. No se muestra texto ni se atribuye intención humana.",
+      "image_prompt": "vintage scientific collage, cut-out 19th century natural history engravings, botanical and anatomical plates, aged paper, muted pastel accents, one large specimen centered, plain background, not photorealistic, vertical 9:16, no text; same central chimpanzee specimen and same small unvoiced-call motif, one context panel dominated by grooming and another with varied social settings, subtle repeated paper marks showing a learned social convention, no anthropomorphism",
+      "on_screen_text": "Uso aprendido",
+      "ambiente": "Ambiente de bosque tenue y estable, sin grabaciones de llamadas reales.",
+      "sfx": [
+        "Repetición breve del motivo sintético de pedorreta en dos contextos visuales",
+        "Transición suave entre paneles"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ]
+    },
+    {
+      "scene_id": "scene_006",
+      "duration_seconds": 10,
+      "arco": "desarrollo",
+      "scene_function": "Aportar el cambio temporal asociado con la llegada de un adulto.",
+      "dramatic_beat": "Un grupo modifica gradualmente su patrón cuando aparece un modelo adulto.",
+      "causal_bridge_from_previous": "La hipótesis de aprendizaje social gana apoyo cuando se observa un cambio de patrón después de incorporar un adulto a un grupo.",
+      "question_state": "El cambio temporal refuerza la interpretación, aunque todavía no elimina las diferencias de historia entre grupos.",
+      "reason_to_continue": "La siguiente escena delimita qué puede concluirse de este caso y qué permanece sin demostrar.",
+      "new_information": "En un grupo del santuario, el uso se volvió más consistente y parecido al del adulto recién incorporado.",
+      "narration": "En un grupo del santuario, al incorporarse un adulto, el uso se volvió gradualmente más consistente y empezó a parecerse al del recién llegado.",
+      "visual_description": "Una figura adulta de chimpancé entra en un grupo representado de forma general; las marcas de uso de la llamada pasan gradualmente de dispersas a más regulares. No se inventan nombres, individuos ni episodios.",
+      "image_prompt": "vintage scientific collage, cut-out 19th century natural history engravings, botanical and anatomical plates, aged paper, muted pastel accents, one large specimen centered, plain background, not photorealistic, vertical 9:16, no text; one adult chimpanzee specimen joining a generalized sanctuary group, visual marks for call use gradually becoming more regular, restrained and non-anthropomorphic, no named individual, no invented dramatic episode",
+      "on_screen_text": "Modelo adulto",
+      "ambiente": "Ambiente de santuario muy discreto, sin vocalizaciones reales.",
+      "sfx": [
+        "Entrada suave de una segunda capa de ambiente",
+        "Tres pulsos que se vuelven regulares, como metáfora visual del patrón"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ]
+    },
+    {
+      "scene_id": "scene_007",
+      "duration_seconds": 10,
+      "arco": "cierre_historia",
+      "scene_function": "Delimitar la evidencia y evitar la extrapolación a lenguaje humano.",
+      "dramatic_beat": "El hallazgo se vuelve más preciso al reconocer el límite del diseño.",
+      "causal_bridge_from_previous": "El cambio observado tras la llegada de un adulto refuerza la hipótesis, pero obliga a explicar las limitaciones del diseño cuasiexperimental.",
+      "question_state": "Sabemos qué sugiere el estudio y también qué no permite afirmar: no prueba lenguaje humano ni aprendizaje de un sonido nuevo.",
+      "reason_to_continue": "Con el límite aclarado, el final puede pagar la apertura sin exagerar el hallazgo.",
+      "new_information": "Los grupos tenían historias distintas y el caso de incorporación se observó en un solo grupo.",
+      "narration": "Pero el estudio es cuasiexperimental: compara grupos con historias distintas y ese cambio se observó en una sola incorporación; no demuestra lenguaje humano ni que aprendan un sonido nuevo.",
+      "visual_description": "Una lámina central enmarcada con dos grupos y una sola incorporación destacada; las flechas causales se evitan. El límite se expresa con una composición sobria, no con una gráfica de causalidad.",
+      "image_prompt": "vintage scientific collage, cut-out 19th century natural history engravings, botanical and anatomical plates, aged paper, muted pastel accents, one large specimen centered, plain background, not photorealistic, vertical 9:16, no text; a restrained paper frame around two chimpanzee group contexts and one adult introduction, no causal arrows, no speech or language symbols, visual emphasis on limited quasi-experimental evidence",
+      "on_screen_text": "Límite del estudio",
+      "ambiente": "Ambiente reducido, casi silencioso, para dejar espacio al límite metodológico.",
+      "sfx": [
+        "Corte breve de ambiente al mencionar el diseño cuasiexperimental",
+        "Un solo marcador suave para la incorporación observada"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ]
+    },
+    {
+      "scene_id": "scene_008",
+      "duration_seconds": 11,
+      "arco": "reflexion_o_pregunta",
+      "scene_function": "Pagar la apertura: la regla de uso puede aprenderse aunque la llamada ya exista.",
+      "dramatic_beat": "La misma llamada no cambia; cambia la convención social que la organiza.",
+      "causal_bridge_from_previous": "Con el límite aclarado, la respuesta vuelve a la apertura: la llamada ya existía; lo que puede aprenderse es su ocasión de uso.",
+      "question_state": "La pregunta central queda respondida con cautela: la evidencia es compatible con aprendizaje social de cuándo usar una llamada existente.",
+      "reason_to_continue": "Cierre; el payoff responde la pregunta y la reflexión final abre una curiosidad sin introducir otro tema.",
+      "new_information": "El aprendizaje observado concierne a las reglas sociales de uso de una llamada existente, no a inventar un sonido nuevo.",
+      "narration": "Lo que sí revela es más sutil: los chimpancés pueden aprender cuándo usar una llamada que ya producen. ¿Qué otras reglas animales pasan inadvertidas? Esto fue Datos y ociosidades.",
+      "visual_description": "Regresa el mismo chimpancé central de la apertura; el motivo acústico se mantiene, pero aparece en un contexto social compartido. El fondo de papel se calma y deja espacio para el cierre.",
+      "image_prompt": "vintage scientific collage, cut-out 19th century natural history engravings, botanical and anatomical plates, aged paper, muted pastel accents, one large specimen centered, plain background, not photorealistic, vertical 9:16, no text; return to the same central chimpanzee specimen from the opening, one existing unvoiced-call motif used in a shared social context, calm aged-paper background, visual payoff about learned use rather than a new sound",
+      "on_screen_text": "Reglas sociales",
+      "ambiente": "Bosque suave y aire limpio; la cama musical baja antes del cierre.",
+      "sfx": [
+        "Desvanecimiento del motivo sintético de pedorreta",
+        "Cierre de página de papel, sin golpe final estridente"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "SRC-001",
+      "tipo": "estudio_primario",
+      "cita_completa": "Valet, A.; Moore, R.; Bortolato, T.; Kleinhause Gedalyahou, T.; de Witasse-Thézy, A.; Girard-Buttoz, C.; Wittig, R. M.; Crockford, C. (2026). A signal convention in natural chimpanzee communication. Proceedings of the National Academy of Sciences, 123(47), e2606837123. Publicado el 9 de noviembre de 2026.",
+      "doi": "10.1073/pnas.2606837123",
+      "url": "https://www.pnas.org/doi/10.1073/pnas.2606837123",
+      "publication_date": "2026-11-09",
+      "accessed": "2026-11-12",
+      "verification_status": "PENDIENTE_RESOLVEDOR",
+      "verification_note": "La página editorial PNAS fue consultada y muestra el artículo y el DOI. El clic al resolvedor doi.org devolvió HTTP 500; no se obtuvo registro Crossref utilizable. El DOI no se presenta como validado por resolvedor; el enlace editorial es el acceso verificable al artículo.",
+      "supports": [
+        "91 chimpancés de 0 a 55 años en ocho grupos",
+        "comparación de grupos con y sin modelos adultos",
+        "uso estable y concentrado frente a uso más variable de llamadas sin voz",
+        "diseño cuasiexperimental",
+        "límites para inferir causalidad o lenguaje humano"
+      ]
+    },
+    {
+      "source_id": "SRC-002",
+      "tipo": "comunicado_oficial",
+      "cita_completa": "University of Warwick (2026). Chimpanzees learn social conventions for using calls. Comunicado institucional, 10 de noviembre de 2026.",
+      "doi": null,
+      "url": "https://warwick.ac.uk/news/pressreleases/chimpanzees-blowing-raspberries/",
+      "publication_date": "2026-11-10",
+      "accessed": "2026-11-12",
+      "verification_status": "VERIFICADO_URL",
+      "verification_note": "Comunicado institucional consultado; se usa para el contexto de grooming, los cuatro grupos silvestres de Taï, los cuatro grupos de Tacugama y el caso del adulto incorporado.",
+      "supports": [
+        "cuatro comunidades silvestres en Taï",
+        "cuatro grupos de santuario en Tacugama",
+        "uso de la llamada durante grooming en los grupos silvestres",
+        "uso en contextos más variados en los grupos de jóvenes sin modelos adultos",
+        "cambio gradual tras incorporar un adulto a un grupo"
+      ]
+    },
+    {
+      "source_id": "SRC-003",
+      "tipo": "cartografia_referencia",
+      "cita_completa": "Mapcarta / OpenStreetMap (s. f.). Taï National Park, Côte d’Ivoire. Coordenada de referencia del parque.",
+      "doi": null,
+      "url": "https://mapcarta.com/Ta%C3%AF_National_Park",
+      "publication_date": null,
+      "accessed": "2026-11-12",
+      "verification_status": "VERIFICADO_URL",
+      "verification_note": "Coordenada cartográfica de referencia del parque, no ubicación de una comunidad ni de una observación individual.",
+      "coordinates": {
+        "lat": 5.7864,
+        "lon": -7.0997
+      },
+      "supports": [
+        "punto de referencia geográfica de Taï National Park"
+      ]
+    },
+    {
+      "source_id": "SRC-004",
+      "tipo": "cartografia_oficial",
+      "cita_completa": "Tacugama Chimpanzee Sanctuary (s. f.). Contact Us; mapa de Google incrustado en el sitio oficial. Coordenada de centro del mapa como referencia del santuario.",
+      "doi": null,
+      "url": "https://www.tacugama.com/contact-us/",
+      "publication_date": null,
+      "accessed": "2026-11-12",
+      "verification_status": "VERIFICADO_URL",
+      "verification_note": "La página oficial contiene el mapa incrustado; se toma su centro como referencia geográfica aproximada, no como coordenada de observaciones individuales.",
+      "coordinates": {
+        "lat": 8.416786,
+        "lon": -13.215086
+      },
+      "supports": [
+        "nombre y ubicación general de Tacugama Chimpanzee Sanctuary",
+        "punto de referencia cartográfica del santuario"
+      ]
+    }
+  ],
+  "voice": {
+    "engine": "edge-tts",
+    "voice_id": "es-MX-JorgeNeural",
+    "language": "es-MX",
+    "rate": "+7%",
+    "pitch": "-2Hz",
+    "pad_seconds": 0.3,
+    "pause_mode": "continuous"
+  },
+  "visual_identity": {
+    "style_id": "collage_cientifico_vintage",
+    "style_name": "Collage científico vintage",
+    "prompt_base": "vintage scientific collage, cut-out 19th century natural history engravings, botanical and anatomical plates, aged paper, muted pastel accents, one large specimen centered, plain background, not photorealistic, vertical 9:16, no text",
+    "palette": "crema, sepia, verde salvia, rosa viejo",
+    "lighting": "Luz lateral suave y natural constante; sombras discretas de papel; sin cambios bruscos de temperatura de color.",
+    "texture": "Lámina naturalista recortada del siglo XIX, papel envejecido y grano fino; sin acabado fotográfico.",
+    "composition": "Vertical 9:16; un espécimen central por escena; el mismo chimpancé ilustrado reaparece como motivo visual; fondos simples y viñetas secundarias discretas; los mapas y gráficos se añaden como capas editoriales, no como texto dentro de la imagen.",
+    "negative_prompt": "fotografía, 3D fotorrealista, neón, estilo mezclado, litografía azul-dorado, texto dentro de imagen, logotipos, globos de diálogo, antropomorfismo humano, ropa humana, especies no mencionadas, ubicaciones de observación inventadas, tamaños de grupos inventados, anatomía o comportamiento no respaldado.",
+    "reference_assets": [],
+    "seed": null,
+    "seed_policy": "Grok fija una semilla al iniciar la producción y la reutiliza en todas las escenas; mantener el mismo espécimen central, paleta, grano de papel y escala. Variar solo contexto y composición, sin mezclar estilos."
+  },
+  "typography_identity": {
+    "font_family": "DejaVu Sans",
+    "font_weight": "700 para gancho y títulos; 400 para subtítulos.",
+    "title_style": "Gancho de cinco palabras como máximo en una o dos líneas; contraste sepia sobre crema o verde salvia oscuro sobre crema.",
+    "subtitle_style": "Subtítulos de narración en bloques breves, máximo dos líneas; no más de tres palabras por rótulo editorial.",
+    "safe_area": "Margen lateral mínimo 9%; margen superior 12%; margen inferior 16% para interfaces móviles.",
+    "animation": "Entrada y salida suave de rótulos; sin rebotes ni parpadeo; transiciones de papel consistentes con el collage."
+  },
+  "audio": {
+    "cama_musical": "arpegio",
+    "music_asset": null,
+    "music_plan": "Cama de arpegio sintético suave en menor calma; solo referencia de producción, no hay archivo musical generado.",
+    "music_license": null,
+    "mix_note": "La voz permanece al frente; ambiente y SFX muy bajos; el motivo tipo pedorreta es síntesis original, no grabación de un chimpancé."
+  },
+  "cortinilla_fuentes": {
+    "duration_seconds": 6,
+    "title": "Fuentes",
+    "aviso": "Fuentes editoriales y cartográficas consultadas; no se han generado medios en esta fase.",
+    "firma": "Datos y ociosidades",
+    "source_ids": [
+      "SRC-001",
+      "SRC-002",
+      "SRC-003",
+      "SRC-004"
+    ]
+  },
+  "export": {
+    "resolution": "1080x1920",
+    "fps": 30,
+    "render_status": "NOT_GENERATED"
+  },
+  "publicacion": {
+    "status": "PENDIENTE_DECISION_GROK",
+    "platforms": [
+      "YouTube Shorts",
+      "TikTok",
+      "Facebook Reels"
+    ],
+    "note": "No publicar ni programar desde preproducción textual. slot_local es una referencia interna de staging, no una hora de publicación."
+  },
+  "approved_assets": [],
+  "estado": "PENDIENTE_AUDITOR",
+  "production_mode": "storyboard_only",
+  "validation_notes": [
+    "Conteo estructural previsto: 198 palabras de narración; 8 escenas; 78 segundos de escenas + 6 segundos de cortinilla = 84 segundos.",
+    "Cada escena contiene source_ids válidos; mapa y capa de dato están vinculados a fuentes.",
+    "No se escribe narrative_qa: la lectura en frío y los siete checks corresponden al auditor independiente."
+  ],
+  "risk_notes": [
+    "No llamar a la señal una palabra ni afirmar que los chimpancés hablan lenguaje humano.",
+    "El hallazgo se refiere al uso social de una llamada existente, no al aprendizaje de producir un sonido nuevo.",
+    "El diseño es cuasiexperimental; los grupos difieren en historia y entorno.",
+    "El cambio tras la incorporación de un adulto se observó en un solo grupo.",
+    "Las coordenadas del mapa son referencias de parque y santuario, no ubicaciones exactas de grupos u observaciones.",
+    "No inferir que los ocho grupos tienen el mismo tamaño."
+  ]
+}
