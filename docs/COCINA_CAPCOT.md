@@ -45,3 +45,23 @@ es un paso con entrada, salida y puertas de QA.
 - Los locks no se tocan (voces Grok de la microserie; voz oficial JorgeNeural).
 - Stock: Grok crea en 3 semanas; Pecas monta 1 viral animado/semana.
 - La voz la decide el tema (docs/VOCES_POR_TEMA.md).
+
+
+## Semana de producción (Marco, 2026-11-11)
+
+- **Día de producción: sábado** (tras el reinicio semanal de Grok Bot, 10:18 CST).
+  Grok genera los paquetes de la semana (frames, guiones, voces). Se juntan
+  las salsas (estilos, voces) y los perecederos (datos frescos).
+- **Día de montaje: domingo.** Grok Bot monta y programa el lote de la semana;
+  Pecas verifica en repo y monta el viral animado de la semana.
+- **Dato del día: todos los días.** Se arma con el dato más cercano a ese día;
+  si es de prevención, mejor, para que se sienta novedoso.
+- **Meta: 5 cápsulas/día** (canal en inglés, 35/semana). El canal en español
+  mantiene sus propios slots.
+- **Revisión de créditos:** pendiente el saldo de Grok (solo está en la interfaz
+  de Marco) y el costo por cápsula de Grok Bot (no medido). La meta de 5/día se
+  confirma cuando lleguen esos dos números; mientras, el lote se organiza con lo
+  que los créditos permitan.
+
+La skill en JSON está en templates/skill_capsula.json (misma semana, mismas
+estaciones, mismas puertas QA).
