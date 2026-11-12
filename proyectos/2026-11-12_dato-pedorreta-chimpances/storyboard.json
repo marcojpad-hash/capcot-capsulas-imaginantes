@@ -66,7 +66,8 @@
         "SRC-002"
       ],
       "id": "scene_001",
-      "arc": "hook_medias_res"
+      "arc": "hook_medias_res",
+      "style_id": "collage_cientifico_vintage"
     },
     {
       "scene_id": "scene_002",
@@ -91,7 +92,8 @@
         "SRC-001"
       ],
       "id": "scene_002",
-      "arc": "desarrollo"
+      "arc": "desarrollo",
+      "style_id": "collage_cientifico_vintage"
     },
     {
       "scene_id": "scene_003",
@@ -155,7 +157,8 @@
         "fuente": "PNAS (SRC-001); University of Warwick (SRC-002); Mapcarta/OpenStreetMap (SRC-003); Tacugama Chimpanzee Sanctuary (SRC-004)"
       },
       "id": "scene_003",
-      "arc": "desarrollo"
+      "arc": "desarrollo",
+      "style_id": "collage_cientifico_vintage"
     },
     {
       "scene_id": "scene_004",
@@ -193,7 +196,8 @@
         "fuente": "PNAS (SRC-001); University of Warwick (SRC-002)"
       },
       "id": "scene_004",
-      "arc": "desarrollo"
+      "arc": "desarrollo",
+      "style_id": "collage_cientifico_vintage"
     },
     {
       "scene_id": "scene_005",
@@ -219,7 +223,8 @@
         "SRC-002"
       ],
       "id": "scene_005",
-      "arc": "desarrollo"
+      "arc": "desarrollo",
+      "style_id": "collage_cientifico_vintage"
     },
     {
       "scene_id": "scene_006",
@@ -245,7 +250,8 @@
         "SRC-002"
       ],
       "id": "scene_006",
-      "arc": "desarrollo"
+      "arc": "desarrollo",
+      "style_id": "collage_cientifico_vintage"
     },
     {
       "scene_id": "scene_007",
@@ -271,7 +277,8 @@
         "SRC-002"
       ],
       "id": "scene_007",
-      "arc": "cierre_historia"
+      "arc": "cierre_historia",
+      "style_id": "collage_cientifico_vintage"
     },
     {
       "scene_id": "scene_008",
@@ -296,7 +303,8 @@
         "SRC-001"
       ],
       "id": "scene_008",
-      "arc": "reflexion_o_pregunta"
+      "arc": "reflexion_o_pregunta",
+      "style_id": "collage_cientifico_vintage"
     }
   ],
   "sources": [
@@ -389,7 +397,8 @@
     "rate": "+7%",
     "pitch": "-2Hz",
     "pad_seconds": 0.3,
-    "pause_mode": "continuous"
+    "pause_mode": "continuous",
+    "modo_pausas": "continuous"
   },
   "visual_identity": {
     "style_id": "collage_cientifico_vintage",
@@ -478,5 +487,6 @@
       "payoff_cierre_apertura": true
     },
     "critical_flags": []
-  }
+  },
+  "estilo_visual": "Collage científico vintage"
 }
