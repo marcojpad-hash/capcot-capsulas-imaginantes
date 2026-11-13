@@ -118,19 +118,19 @@ Los 12 JSON conservan `review_basis=lectura_en_frio_solo_narracion`, siete check
 
 ### Producción preexistente y no redispatch
 
-Se amplía la detección anterior: hay evidencia de publicación/programación para **7/12**, no solo cinco. Seis asociaciones se hacen por coincidencia única de tema y slot entre el horario y los cierres diarios de `main`; esos cierres no guardan el `project_id`, por lo que la asociación se marca como inferida y conservadora. No se atribuye la producción a Grok.
+El cruce con los horarios diarios `data/horario_2026-11-08.json` a `data/horario_2026-11-11.json` permite enlazar por `project_id` exacto **5/12** proyectos. Los IDs de Venus (`phVfyHp3CnY`) y Arena (`m4RqQRaz55k`) aparecen en un cierre global, pero no están vinculados a `project_id` ni a los slots de esos horarios diarios; no se atribuyen a esos dos proyectos. No se atribuye la producción a Grok.
 
 | Proyecto del horario | ID de YouTube | Evidencia |
 |---|---|---|
-| Venus, 5-nov 07:00 | `phVfyHp3CnY` | `data/cierre_diario/2026-11-08.md` en `main`; asociación por tema/slot |
-| Palomitas, 5-nov 13:30 | `zTP5akrGA9M` | `data/cierre_diario/2026-11-08.md` en `main`; asociación por tema/slot |
-| Arena cantante, 6-nov 17:45 | `m4RqQRaz55k` | `data/cierre_diario/2026-11-08.md` en `main`; asociación por tema/slot |
-| Ranas congeladas, 6-nov 17:00 | `UBFuKBU3cx0` | `data/cierre_diario/2026-11-09.md` en `main`; asociación por tema/slot |
-| Aguacate negro, 6-nov 13:30 | `nSS_q2tj2P0` | `data/cierre_diario/2026-11-10.md` en `main`; asociación por tema/slot |
-| Ballena azul, 6-nov 07:00 | `wbFrlM2e_YE` | `data/cierre_diario/2026-11-11.md` en `main`; asociación por tema/slot |
+| Venus, 5-nov 07:00 | — | Sin vínculo exacto en los horarios diarios; ID global `phVfyHp3CnY` no atribuible |
+| Palomitas, 5-nov 13:30 | `zTP5akrGA9M` | `data/horario_2026-11-08.json`, vínculo exacto por `project_id` |
+| Arena cantante, 6-nov 17:45 | — | Sin vínculo exacto en los horarios diarios; ID global `m4RqQRaz55k` no atribuible |
+| Ranas congeladas, 6-nov 17:00 | `UBFuKBU3cx0` | `data/horario_2026-11-09.json`, vínculo exacto por `project_id` |
+| Aguacate negro, 6-nov 13:30 | `nSS_q2tj2P0` | `data/horario_2026-11-10.json`, vínculo exacto por `project_id` |
+| Ballena azul, 6-nov 07:00 | `wbFrlM2e_YE` | `data/horario_2026-11-11.json`, vínculo exacto por `project_id` |
 | Hielo caliente, 7-nov 13:30 | `HSgrnejAcaI` | vínculo exacto por `project_id` en `data/publicaciones.json` y `salidas/` de `main` |
 
-Los siete quedan como **PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR**. Los cinco sin evidencia localizada son Rayo globular, Árboles, Huesos bebé, Pulpo sueños y Nubes pesan. Los 12 estados `cola/estado/<project_id>.json` devuelven 404: **RECEPCION_GROK_NO_CONFIRMADA** en todos; una publicación no demuestra recepción de Grok.
+Los cinco con vínculo exacto quedan como **PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR**. Los otros siete sin evidencia de publicación enlazada por `project_id` son Venus, Arena, Rayo globular, Árboles, Huesos bebé, Pulpo sueños y Nubes pesan. Para Venus y Arena solo existen IDs globales no atribuibles. Los 12 estados `cola/estado/<project_id>.json` devuelven 404: **RECEPCION_GROK_NO_CONFIRMADA** en todos; una publicación no demuestra recepción de Grok.
 
 ### Caso Hielo caliente — discrepancias de salida
 
@@ -197,4 +197,4 @@ Los cierres diarios del 8–11 nov están en `main`, no en la rama feature. Esta
 2. En los doce storyboards del lote 5–7 se actualizó únicamente `narrative_qa.reviewed_at` a `2026-11-13T15:42:39-06:00`. Se releyeron los doce JSON; no se alteraron scores, statuses, checks, flags, narración ni claims.
 3. Se creó este informe en `docs/briefs/2026-11-13_CONTROL_COLA.md`; debe releerse después de la creación.
 
-**Conclusión:** el único borrador del 13-nov supera la lectura narrativa en frío, pero sigue siendo propuesta, con DOI pendiente y sin validación ejecutable; no se promovió para respetar la prohibición de disparar workflows. El lote 5–7 mantiene 2 PASS narrativos, 10 FAIL y 0/12 aptos estructuralmente. Siete proyectos tienen evidencia de procesamiento/publicación preexistente y quedan protegidos contra redispatch.
+**Conclusión:** el único borrador del 13-nov supera la lectura narrativa en frío, pero sigue siendo propuesta, con DOI pendiente y sin validación ejecutable; no se promovió para respetar la prohibición de disparar workflows. El lote 5–7 mantiene 2 PASS narrativos, 10 FAIL y 0/12 aptos estructuralmente. Cinco proyectos tienen evidencia de procesamiento/publicación preexistente y quedan protegidos contra redispatch.
