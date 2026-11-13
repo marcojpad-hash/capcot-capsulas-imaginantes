@@ -413,5 +413,22 @@
     "No presentar ovoviviparidad como parto observado; es una interpretación sustentada por el gradiente embrionario.",
     "La función amortiguadora de ceniza alcalina es inferida por los autores y debe narrarse como hipótesis tafonómica.",
     "El pin cartográfico es aproximado y no localiza especímenes individuales."
-  ]
+  ],
+  "narrative_qa": {
+    "status": "PASS",
+    "score": 91,
+    "review_basis": "lectura_en_frio_solo_narracion",
+    "reviewer_role": "auditor_capcot_independiente",
+    "reviewed_at": "2026-11-13T15:42:39-06:00",
+    "checks": {
+      "pregunta_central_reconstruible": true,
+      "apertura_in_medias_res": true,
+      "progresion_por_escena": true,
+      "transiciones_causales": true,
+      "giro_cientifico_explicado": true,
+      "limite_evidencia_explicito": true,
+      "payoff_cierre_apertura": true
+    },
+    "critical_flags": []
+  }
 }
