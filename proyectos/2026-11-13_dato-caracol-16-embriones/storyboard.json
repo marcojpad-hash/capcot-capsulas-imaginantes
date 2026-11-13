@@ -1,0 +1,417 @@
+{
+  "_schema": "CAPCOT_STORYBOARD_TEXT_V2",
+  "project_id": "2026-11-13_dato-caracol-16-embriones",
+  "serie": "Datos y ociosidades",
+  "title": "Una concha fósil conservó hasta 16 embriones",
+  "titulo": "La concha guardó 16 embriones",
+  "language": "es-MX",
+  "aspect_ratio": "9:16",
+  "target_duration_seconds": 84,
+  "estructura": "historia",
+  "audience": "Público general interesado en animales, paleontología y ciencia curiosa",
+  "occasion": "Ventana activa de tarde 16:30–18:00 CDMX; staging de referencia a las 17:00, no es programación",
+  "resumen": "Una tomografía de caracoles fósiles de la Formación Kitadani revela embriones dentro de la concha materna, un patrón compatible con ovoviviparidad y residuos digestivos que apuntan a varias estrategias de alimentación. La ceniza alcalina como explicación de la preservación es una inferencia tafonómica.",
+  "fecha_objetivo": "2026-11-13",
+  "slot_local": "17:00",
+  "narrative_contract": {
+    "central_question": "¿Cómo pudo una concha de hace unos 120 millones de años conservar embriones y pistas de alimentación dentro de su interior?",
+    "promise": "Seguir la tomografía desde el hallazgo de hasta 16 embriones hasta la explicación propuesta para la preservación excepcional.",
+    "stakes": "Sin esta conservación, la reproducción y parte de la dieta de estos caracoles del Cretácico quedarían fuera del registro fósil observable.",
+    "scientific_turn": "La posición y el gradiente de tamaño de los embriones dentro de la concha materna apoyan ovoviviparidad obligada; no son conchas juveniles mezcladas al azar.",
+    "evidence_limit": "Los embriones, el gradiente y los residuos digestivos se observaron en fósiles. La función amortiguadora de cenizas alcalinas es una hipótesis tafonómica. El pin cartográfico representa el área aproximada de la formación, no coordenadas de cada espécimen.",
+    "payoff": "La concha no solo conservó una forma: preservó evidencia de reproducción y alimentación, mientras que el mecanismo exacto de conservación sigue siendo una explicación inferida."
+  },
+  "trend_source": {
+    "termino": "caracoles fósiles con embriones internos; hallazgo paleontológico reciente",
+    "fecha_publicacion": "2026-11-10",
+    "url": "https://www.nature.com/articles/s42003-026-11188-7",
+    "nota": "No apareció como tendencia destacada en Google Trends México; se selecciona por relevancia científica y oportunidad narrativa, no por volumen de búsqueda."
+  },
+  "editorial_status": "PROPUESTA_PENDIENTE_DE_GROK",
+  "arco": {
+    "hook_medias_res": "La tomografía revela embriones dentro de una concha fósil.",
+    "desarrollo": "La muestra, el gradiente de tamaños y los residuos digestivos muestran reproducción y alimentación.",
+    "cierre_historia": "El patrón permite interpretar ovoviviparidad y abre la pregunta de cómo se conservaron los detalles.",
+    "reflexion_o_pregunta": "La ceniza alcalina es una explicación tafonómica inferida; el fósil conserva evidencia, no una observación directa del proceso."
+  },
+  "estilo_id": "dibujo_cientifico_scratchboard",
+  "estilo_visual": "Scratchboard científico",
+  "visual_identity": {
+    "style_id": "dibujo_cientifico_scratchboard",
+    "style_name": "Scratchboard científico",
+    "prompt_base": "scratchboard illustration, white lines scratched on black, fine cross-hatching, dramatic single subject filling frame, black background, not photorealistic, vertical 9:16, no text",
+    "palette": "negro, blanco, ámbar",
+    "lighting": "Luz lateral rasante ámbar sobre líneas blancas raspadas; fondo negro constante; contraste alto sin zonas quemadas.",
+    "texture": "Esgrafiado blanco sobre negro, líneas finas y cross-hatching; conservar el aspecto de grabado científico.",
+    "composition": "Un sujeto principal grande por plano; macro de concha y corte anatómico legible; continuidad de orientación de la concha cuando reaparece; sin mosaicos ni collage.",
+    "negative_prompt": "Fotografía, render 3D, color pleno, collage, acuarela, texto integrado en imagen, etiquetas generadas, anatomía fantástica, embriones fuera de la concha, especies modernas como protagonistas, manos o instrumentos inventados.",
+    "reference_assets": [],
+    "seed": null,
+    "seed_policy": "Grok debe fijar una semilla única al producir medios y conservar la misma morfología, orientación y escala de la concha en todas las escenas; no hay assets generados en este borrador."
+  },
+  "typography_identity": {
+    "font_family": "DejaVu Sans",
+    "font_weight": "700 para gancho; 400 para subtítulos",
+    "title_style": "Gancho de cinco palabras; alto contraste; se incorpora en postproducción desde el primer frame.",
+    "subtitle_style": "Bloques de máximo tres palabras; zona segura inferior; subtítulos en postproducción.",
+    "hierarchy": "Gancho > dato/etiqueta > subtítulos",
+    "animation": "Un movimiento por plano; tipografía en postproducción; cifras aparecen solo cuando se explican."
+  },
+  "voice": {
+    "engine": "edge-tts",
+    "voice_id": "es-MX-JorgeNeural",
+    "language": "es-MX",
+    "rate": "+7%",
+    "pitch": "-2Hz",
+    "pad_seconds": 0.3,
+    "modo_pausas": "continuo"
+  },
+  "sources": [
+    {
+      "id": "SRC-001",
+      "cita_corta": "Yoshimura, T. et al. (2026). Exceptional preservation reveals the deep-time reproductive ecology and trophic breadth of Early Cretaceous viviparid gastropods. Communications Biology 9, 1450.",
+      "url": "https://www.nature.com/articles/s42003-026-11188-7",
+      "doi": "10.1038/s42003-026-11188-7",
+      "accessed": "2026-11-13",
+      "publication_date": "2026-11-10",
+      "supports": [
+        "La Formación Kitadani, en Japón, contiene una asociación de caracoles de agua dulce de unos 120 Ma.",
+        "El estudio examinó 313 especímenes; 240 contenían embriones; tras excluir 45 con un solo embrión, se analizaron 195 individuos y la media fue 6.78 embriones.",
+        "El ejemplar de mayor tamaño (19.4 mm de altura de concha) conservaba hasta 16 embriones.",
+        "El gradiente axial de tamaño de los embriones dentro de la concha materna apoya ovoviviparidad obligada.",
+        "Los residuos gastrointestinales indican raspado de microalgas epilíticas, alimentación por suspensión y detritivoría.",
+        "La ceniza alcalina derivada de paleoincendios como amortiguador de acidez es una interpretación tafonómica propuesta por los autores."
+      ],
+      "verification_status": "PENDIENTE_RESOLVEDOR",
+      "verification_note": "La página editorial indexada muestra metadatos, resumen, DOI y detalles del estudio. La apertura directa redirigió a idp.nature.com y falló con HTTP 500; Crossref y doi.org no completaron una resolución independiente. No declarar DOI validado."
+    },
+    {
+      "id": "SRC-002",
+      "cita_corta": "Katsuyama City. Dinosaur fossil excavation site, Kitadani, Sugiyama. Página municipal oficial.",
+      "url": "https://www.city.katsuyama.fukui.jp/map/hakkutsuchi.html",
+      "doi": null,
+      "accessed": "2026-11-13",
+      "publication_date": "2020-03-02",
+      "supports": [
+        "La zona municipal del yacimiento de fósiles se ubica en Kitadani, Katsuyama, prefectura de Fukui, Japón."
+      ],
+      "verification_status": "VERIFICADO_URL_OFICIAL"
+    },
+    {
+      "id": "SRC-003",
+      "cita_corta": "Kitadani Formation. Public gazetteer entry with approximate formation coordinates.",
+      "url": "https://en.wikipedia.org/wiki/Kitadani_Formation",
+      "doi": null,
+      "accessed": "2026-11-13",
+      "publication_date": null,
+      "supports": [
+        "Coordenada cartográfica aproximada 36.1 N, 136.6 E para el área de la Formación Kitadani; no representa coordenadas de especímenes."
+      ],
+      "verification_status": "VERIFICADO_URL_SECUNDARIA",
+      "verification_note": "Coordenada de referencia regional; pin deliberadamente aproximado. La fuente municipal oficial confirma el topónimo y área, pero no publica coordenadas en el texto."
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_001",
+      "arc": "hook_medias_res",
+      "duration_seconds": 9,
+      "narration": "La tomografía acaba de abrir una concha fósil: dentro aparecen hasta dieciséis embriones, ordenados por tamaño, como una escalera diminuta.",
+      "on_screen_text": "16 embriones",
+      "visual_description": "Corte macro de una concha fósil; el interior aparece revelado por líneas de tomografía y hasta 16 formas embrionarias pequeñas, sin mostrar una reconstrucción anatómica no respaldada.",
+      "image_prompt": "scratchboard illustration, white lines scratched on black, fine cross-hatching, dramatic single subject filling frame, black background, not photorealistic, vertical 9:16, no text single fossil freshwater snail shell opened in a precise scientific cross-section, up to sixteen tiny embryonic shells visible inside the maternal body whorl, size gradient legible, amber accent only on the scan reveal, no labels",
+      "ambiente": "Zumbido tenue de tomógrafo en sala de laboratorio",
+      "sfx": [
+        "Pulso de escaneo suave",
+        "Clic seco de revelado"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "dibujo_cientifico_scratchboard",
+      "dramatic_beat": "La concha deja de ser una forma vacía: aparece una estructura interna inesperada.",
+      "scene_function": "Abrir la anomalía ya en curso, sin definición previa.",
+      "causal_bridge_from_previous": "La tomografía está revelando el interior de la concha en el mismo instante en que empieza la narración.",
+      "question_state": "Se sabe que hay hasta 16 formas internas; queda por explicar qué son y por qué están ordenadas.",
+      "reason_to_continue": "El espectador necesita saber si son embriones o restos mezclados.",
+      "new_information": "La imagen tomográfica y el gradiente de tamaño dentro de una concha materna."
+    },
+    {
+      "id": "scene_002",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "No es una reconstrucción artística: son caracoles de agua dulce de la Formación Kitadani, en Japón, que vivieron hace unos ciento veinte millones de años.",
+      "on_screen_text": "Kitadani, Japón",
+      "visual_description": "Mapa sobrio del centro de Honshu; acercamiento a Fukui y a la Formación Kitadani. El pin se muestra como referencia regional aproximada, no como punto de captura.",
+      "image_prompt": "scratchboard illustration, white lines scratched on black, fine cross-hatching, dramatic single subject filling frame, black background, not photorealistic, vertical 9:16, no text minimal antique-style scientific map of central Honshu Japan with Fukui Prefecture highlighted and a single approximate pin for the Kitadani Formation, no borders beyond geographic context, black scratchboard base with white etched coastlines and amber pin",
+      "ambiente": "Viento suave de valle, sin fauna añadida",
+      "sfx": [
+        "Trazo de mapa",
+        "Pin discreto"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002",
+        "SRC-003"
+      ],
+      "style_id": "dibujo_cientifico_scratchboard",
+      "dramatic_beat": "La imagen extraordinaria se ancla en un lugar y una edad reales.",
+      "scene_function": "Ubicar el conjunto fósil y evitar que parezca una reconstrucción inventada.",
+      "causal_bridge_from_previous": "La localización permite pasar de la concha aislada a la formación geológica donde se encontró el conjunto.",
+      "question_state": "Se sabe que la evidencia procede de caracoles de agua dulce de unos 120 Ma; falta dimensionar la muestra.",
+      "reason_to_continue": "La rareza del fósil requiere saber si fue un ejemplar aislado.",
+      "new_information": "El contexto espacial y temporal del conjunto fósil.",
+      "capa": {
+        "tipo": "mapa",
+        "region": [
+          36,
+          136.4,
+          36.2,
+          136.8
+        ],
+        "puntos": [
+          {
+            "nombre": "Formación Kitadani (aprox.)",
+            "lat": 36.1,
+            "lon": 136.6,
+            "nota": "Centro aproximado de la formación; no son coordenadas de cada espécimen."
+          }
+        ],
+        "titulo": "Formación Kitadani, Fukui, Japón",
+        "fuente": "SRC-002 confirma el área municipal del yacimiento; SRC-003 aporta coordenada regional aproximada. No representar precisión de excavación."
+      }
+    },
+    {
+      "id": "scene_003",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "El equipo examinó 313 fósiles. En 240 encontró embriones; al excluir los que conservaban solo uno, analizó 195 individuos y obtuvo una media de 6.78 embriones.",
+      "on_screen_text": "313 → 240 → 195",
+      "visual_description": "Secuencia visual de tres grupos de conchas grabadas: muestra total, especímenes con embriones y subconjunto con más de un embrión; el promedio aparece como resultado de ese subconjunto.",
+      "image_prompt": "scratchboard illustration, white lines scratched on black, fine cross-hatching, dramatic single subject filling frame, black background, not photorealistic, vertical 9:16, no text scientific scratchboard specimen series arranged in three clean groups representing 313 examined shells, 240 with embryos, and 195 multi-embryo individuals, precise engraved tally marks without generated text",
+      "ambiente": "Silencio de laboratorio con aire muy bajo",
+      "sfx": [
+        "Tres golpes de conteo suaves"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "dibujo_cientifico_scratchboard",
+      "dramatic_beat": "La escala de la muestra evita convertir el máximo en una regla general.",
+      "scene_function": "Explicar qué se examinó y sobre qué subconjunto se calculó la media.",
+      "causal_bridge_from_previous": "La primera sorpresa ya está situada; ahora la muestra establece cuán repetido fue el patrón.",
+      "question_state": "Se conocen 313 especímenes, 240 con embriones y 195 con más de uno; falta ver el máximo y la organización interna.",
+      "reason_to_continue": "El número máximo y la posición de los embriones deben resolver la interpretación.",
+      "new_information": "El tamaño de la muestra y la media de 6.78 embriones en 195 individuos con más de uno.",
+      "capa": {
+        "tipo": "dato",
+        "valor": "313 examinados; 240 con embriones; 195 con más de uno; media 6.78",
+        "etiqueta": "Conteo de fósiles y media del subconjunto con varios embriones",
+        "grafico": {
+          "tipo": "secuencia",
+          "valores": [
+            {
+              "etiqueta": "Examinados",
+              "valor": 313
+            },
+            {
+              "etiqueta": "Con embriones",
+              "valor": 240
+            },
+            {
+              "etiqueta": "Con más de uno",
+              "valor": 195
+            }
+          ],
+          "media": "6.78 embriones por individuo en el subconjunto de 195"
+        },
+        "fuente": "SRC-001; no presentar 6.78 como media de los 313 fósiles."
+      }
+    },
+    {
+      "id": "scene_004",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "La concha del mayor ejemplar medía 19.4 milímetros de alto y guardaba dieciséis. Dentro del cuerpo materno, los embriones pequeños quedaban lejos de la abertura y los grandes, cerca.",
+      "on_screen_text": "Máximo: 16",
+      "visual_description": "Corte de la concha materna de 19.4 mm de altura; los embriones se muestran en una secuencia de tamaños, pequeños hacia el fondo y mayores hacia la abertura.",
+      "image_prompt": "scratchboard illustration, white lines scratched on black, fine cross-hatching, dramatic single subject filling frame, black background, not photorealistic, vertical 9:16, no text macro scratchboard cross-section of a 19.4 millimeter freshwater snail shell with sixteen embryonic shells arranged along an axial size gradient, smaller away from aperture and larger near aperture, precise naturalistic scientific engraving",
+      "ambiente": "Silencio seco de sala de microscopía",
+      "sfx": [
+        "Clic de medición",
+        "Resonancia mineral tenue"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "dibujo_cientifico_scratchboard",
+      "dramatic_beat": "El máximo de 16 deja de ser un dato suelto: su posición contiene información.",
+      "scene_function": "Mostrar el patrón espacial que convierte el conteo en evidencia reproductiva.",
+      "causal_bridge_from_previous": "La muestra mostró que varios fósiles conservan embriones; este ejemplar revela cómo estaban organizados.",
+      "question_state": "Se observa un gradiente de tamaño dentro de la concha materna; falta interpretar qué significa biológicamente.",
+      "reason_to_continue": "La distribución ordenada debe distinguir desarrollo interno de una mezcla accidental.",
+      "new_information": "El gradiente axial de tamaño y el máximo de 16 en una concha de 19.4 mm.",
+      "capa": {
+        "tipo": "dato",
+        "valor": "16 embriones",
+        "etiqueta": "Máximo observado en una concha de 19.4 mm de altura; media 6.78 en 195 individuos con más de un embrión",
+        "grafico": {
+          "tipo": "comparacion",
+          "valores": [
+            {
+              "etiqueta": "Máximo en un individuo",
+              "valor": 16
+            },
+            {
+              "etiqueta": "Media del subconjunto",
+              "valor": 6.78
+            }
+          ],
+          "nota": "No comparar como si fueran la misma medida: máximo individual frente a media de 195 individuos."
+        },
+        "fuente": "SRC-001"
+      }
+    },
+    {
+      "id": "scene_005",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "Ese orden es la pista decisiva: no parece una acumulación accidental. El gradiente de tamaños apoya que los embriones se desarrollaban retenidos dentro de la madre: ovoviviparidad.",
+      "on_screen_text": "Ovoviviparidad",
+      "visual_description": "Esquema científico grabado de la concha materna con el gradiente de embriones; una línea de desarrollo conecta el tamaño y la posición, sin dibujar un parto ni un episodio no observado.",
+      "image_prompt": "scratchboard illustration, white lines scratched on black, fine cross-hatching, dramatic single subject filling frame, black background, not photorealistic, vertical 9:16, no text scientific scratchboard anatomical diagram of viviparid maternal shell showing embryonic size gradient inside body whorl, restrained amber arrows indicating developmental order, no external eggs and no birth scene",
+      "ambiente": "Cama de aire sostenida",
+      "sfx": [
+        "Tres pulsos pequeños en secuencia"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "dibujo_cientifico_scratchboard",
+      "dramatic_beat": "El gradiente transforma el hallazgo en una interpretación reproductiva concreta.",
+      "scene_function": "Explicar el giro científico y definir el término sin dramatizar un episodio inexistente.",
+      "causal_bridge_from_previous": "La escena anterior mostró el orden interno; esta explica por qué ese orden es evidencia de desarrollo retenido.",
+      "question_state": "La interpretación apoyada es ovoviviparidad obligada; no se observa directamente el nacimiento.",
+      "reason_to_continue": "La palabra técnica necesita una definición breve y comprensible.",
+      "new_information": "La ovoviviparidad como estrategia reproductiva inferida del patrón interno."
+    },
+    {
+      "id": "scene_006",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "El fósil guardó otra sorpresa: residuos digestivos que apuntan a tres formas de alimentarse, raspar microalgas adheridas, filtrar partículas suspendidas y consumir detritos.",
+      "on_screen_text": "Tres dietas posibles",
+      "visual_description": "La concha permanece como sujeto principal; a su alrededor aparecen tres detalles grabados conectados a residuos digestivos: microalgas adheridas, partículas suspendidas y detritos.",
+      "image_prompt": "scratchboard illustration, white lines scratched on black, fine cross-hatching, dramatic single subject filling frame, black background, not photorealistic, vertical 9:16, no text large scratchboard freshwater snail shell with three small etched dietary cues around it: epilithic microalgae on rock, suspended particles in water, detritus, all monochrome with limited amber accents",
+      "ambiente": "Agua lenta y filtración sutil",
+      "sfx": [
+        "Raspado leve",
+        "Burbujeo corto"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "dibujo_cientifico_scratchboard",
+      "dramatic_beat": "La preservación no revela solo reproducción: también conserva pistas de alimentación.",
+      "scene_function": "Añadir una dimensión ecológica nueva que amplía el valor del fósil.",
+      "causal_bridge_from_previous": "La reproducción ya tiene explicación; los residuos internos permiten preguntar cómo vivía y se alimentaba el animal.",
+      "question_state": "Los residuos apoyan tres modos de alimentación; no reconstruyen una comida concreta.",
+      "reason_to_continue": "La historia se amplía desde la reproducción hacia la ecología del caracol.",
+      "new_information": "Los residuos gastrointestinales y la flexibilidad trófica indicada por los autores."
+    },
+    {
+      "id": "scene_007",
+      "arc": "cierre_historia",
+      "duration_seconds": 10,
+      "narration": "Pero ¿cómo sobrevivió tanta información? Los autores proponen que cenizas alcalinas de antiguos incendios amortiguaron la acidez del agua y redujeron la disolución de las conchas.",
+      "on_screen_text": "Hipótesis de preservación",
+      "visual_description": "Capa de ceniza mineral sobre sedimento de agua dulce; el agua se representa como un medio cuya acidez se amortigua. La escena lleva una etiqueta visual de hipótesis, no de hecho observado.",
+      "image_prompt": "scratchboard illustration, white lines scratched on black, fine cross-hatching, dramatic single subject filling frame, black background, not photorealistic, vertical 9:16, no text scientific scratchboard geological cutaway of freshwater sediment with pale wildfire ash entering the deposit, shell fossil protected within mineral layers, restrained amber buffering arrows, no active fire scene",
+      "ambiente": "Viento antiguo y crujido mineral",
+      "sfx": [
+        "Caída de ceniza suave",
+        "Goteo breve"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "dibujo_cientifico_scratchboard",
+      "dramatic_beat": "La pregunta cambia: no solo qué revela el fósil, sino cómo pudo conservarlo.",
+      "scene_function": "Explicar la hipótesis tafonómica que conecta el ambiente con la preservación.",
+      "causal_bridge_from_previous": "Los detalles internos necesitan una condición de conservación excepcional; el artículo propone un mecanismo geológico.",
+      "question_state": "La ceniza alcalina es una inferencia de los autores, no una observación directa del incendio ni una causa demostrada experimentalmente.",
+      "reason_to_continue": "El límite debe quedar explícito antes del cierre.",
+      "new_information": "La hipótesis de amortiguación de acidez por ceniza alcalina de paleoincendios."
+    },
+    {
+      "id": "scene_008",
+      "arc": "reflexion_o_pregunta",
+      "duration_seconds": 9,
+      "narration": "Los embriones y residuos son evidencia observada; el efecto protector de la ceniza es una explicación tafonómica, no una causa observada directamente. Una concha diminuta conservó una vida entera. Esto fue Datos y ociosidades.",
+      "on_screen_text": "Una concha, una vida",
+      "visual_description": "Regreso a la misma concha y a la misma orientación de la primera escena; las líneas internas se apagan hasta dejar la silueta completa, cerrando la apertura.",
+      "image_prompt": "scratchboard illustration, white lines scratched on black, fine cross-hatching, dramatic single subject filling frame, black background, not photorealistic, vertical 9:16, no text same freshwater snail fossil shell from opening scene, same orientation and scale, interior embryo outlines fading into a single white engraved silhouette on black with one amber rim light, no text",
+      "ambiente": "Silencio breve que abre al motivo musical",
+      "sfx": [
+        "Cierre de concha suave"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "dibujo_cientifico_scratchboard",
+      "dramatic_beat": "La apertura se resignifica: el fósil conservó evidencia de una vida interna, aunque parte del mecanismo de conservación siga inferido.",
+      "scene_function": "Pagar la imagen inicial y distinguir observación de explicación.",
+      "causal_bridge_from_previous": "El mecanismo propuesto de preservación completa la cadena desde la concha abierta hasta el fósil que pudo conservarla.",
+      "question_state": "La evidencia observada son embriones y residuos; el efecto de la ceniza sigue siendo una hipótesis tafonómica.",
+      "reason_to_continue": "La concha vuelve a ser el centro y cierra la pregunta inicial.",
+      "new_information": "Una concha diminuta preservó información de reproducción y alimentación durante unos 120 millones de años."
+    }
+  ],
+  "cortinilla_fuentes": {
+    "duration_seconds": 6,
+    "titulo": "Fuentes",
+    "aviso": "Mostrar referencia editorial del estudio y ubicación del yacimiento; el DOI sigue pendiente de resolución independiente.",
+    "firma": "Datos y ociosidades",
+    "source_ids": [
+      "SRC-001",
+      "SRC-002",
+      "SRC-003"
+    ]
+  },
+  "audio": {
+    "cama_musical": "pizzicato",
+    "music_asset": null,
+    "music_plan": "Cama pizzicato sintética, ligera y curiosa, debajo de la voz; solo intención de producción, no hay archivo musical generado.",
+    "music_license": null,
+    "mix_note": "Voz al frente; ambientes y SFX bajos; no generar ni adjuntar audio en esta fase."
+  },
+  "export": {
+    "resolution": "1080x1920",
+    "fps": 30,
+    "render_status": "NOT_GENERATED"
+  },
+  "publicacion": {
+    "status": "PENDIENTE_DECISION_GROK",
+    "platforms": [
+      "YouTube Shorts",
+      "TikTok",
+      "Facebook Reels"
+    ],
+    "note": "No publicar ni programar desde preproducción textual; privacidad y horario de publicación quedan sin fijar."
+  },
+  "estado": "PENDIENTE_REVISION_GROK",
+  "production_mode": "storyboard_only",
+  "validation_notes": [
+    "DOI editorial mostrado pero no validado por Crossref ni por resolvedor; conservar PENDIENTE_RESOLVEDOR.",
+    "La coordenada 36.1 N, 136.6 E es aproximada para la Formación Kitadani; no representa coordenadas de especímenes.",
+    "No se ejecutó QA narrativo independiente ni se añadió narrative_qa; corresponde al Auditor CAPCOT."
+  ],
+  "linea_tematica_provisional": "Naturaleza/bichos + paleontología; evidencia fósil y ecología de invertebrados.",
+  "approved_assets": [],
+  "risk_notes": [
+    "16 es el máximo de un individuo, no el promedio; la media de 6.78 corresponde al subconjunto de 195 individuos con más de un embrión.",
+    "No presentar ovoviviparidad como parto observado; es una interpretación sustentada por el gradiente embrionario.",
+    "La función amortiguadora de ceniza alcalina es inferida por los autores y debe narrarse como hipótesis tafonómica.",
+    "El pin cartográfico es aproximado y no localiza especímenes individuales."
+  ]
+}
