@@ -206,18 +206,18 @@ Se releyeron los storyboards canónicos y las copias únicas en proyectos/, sali
 | 2026-11-02_camaron-mantis | PASS | 90 | lectura_en_frio_solo_narracion | AUSENTE_EN_JSON | [] |
 | 2026-11-02_comida-pan-duro | FAIL | 84 | lectura_en_frio_solo_narracion | AUSENTE_EN_JSON | [CIERRE_SOBREAFIRMA_Y_CONTRADICE_LIMITE_DE_SECADO] |
 | 2026-11-04_cielo-azul-atardecer-rojo | PASS | 94 | lectura_en_frio_solo_narracion | 2026-11-04T15:58:40-06:00 | [] |
-| 2026-11-05_comida-palomitas | FAIL | 82 | lectura_en_frio_solo_narracion | 2026-11-10T15:47:50-06:00 | [APERTURA_DEFINICIONAL_NO_IN_MEDIAS_RES, ESCENA_6_REITERA_CAUSAS_DE_GRANOS_NO_REVENTADOS_SIN_INFORMACION_NUEVA] |
-| 2026-11-05_inter-arboles-se-comunican | FAIL | 78 | lectura_en_frio_solo_narracion | 2026-11-10T15:47:50-06:00 | [APERTURA_GENERICA_NO_IN_MEDIAS_RES] |
-| 2026-11-05_inter-rayo-globular | FAIL | 81 | lectura_en_frio_solo_narracion | 2026-11-10T15:47:50-06:00 | [APERTURA_HISTORICA_DESCRIPTIVA_NO_IN_MEDIAS_RES] |
-| 2026-11-05_kids-dia-en-venus | PASS | 88 | lectura_en_frio_solo_narracion | 2026-11-10T15:47:50-06:00 | [] |
-| 2026-11-06_comida-aguacate-negro | FAIL | 79 | lectura_en_frio_solo_narracion | 2026-11-10T15:47:50-06:00 | [REPETICION_ESCENAS_5_6_SIN_AVANCE_CAUSAL] |
-| 2026-11-06_inter-arena-cantante | PASS | 94 | lectura_en_frio_solo_narracion | 2026-11-10T15:47:50-06:00 | [] |
-| 2026-11-06_inter-ranas-congeladas | FAIL | 83 | lectura_en_frio_solo_narracion | 2026-11-10T15:47:50-06:00 | [REPETICION_ESCENAS_5_6_LIMITES_DE_ESPECIE_Y_CONDICIONES] |
-| 2026-11-06_kids-ballena-azul-corazon | FAIL | 80 | lectura_en_frio_solo_narracion | 2026-11-10T15:47:50-06:00 | [PAYOFF_SOBREAFIRMA_CASI_SE_DETIENE] |
-| 2026-11-07_comida-hielo-caliente | FAIL | 81 | lectura_en_frio_solo_narracion | 2026-11-10T15:47:50-06:00 | [APERTURA_DE_CREENCIAS_NO_IN_MEDIAS_RES] |
-| 2026-11-07_inter-nubes-pesan | FAIL | 78 | lectura_en_frio_solo_narracion | 2026-11-10T15:47:50-06:00 | [ESCENA_7_REITERA_CIFRA_Y_LIMITE_SIN_PAYOFF_DE_SUSPENSION] |
-| 2026-11-07_inter-pulpo-suenos | FAIL | 80 | lectura_en_frio_solo_narracion | 2026-11-10T15:47:50-06:00 | [REPETICION_ESCENAS_5_6_Y_PAYOFF_VAGO] |
-| 2026-11-07_kids-huesos-bebe | FAIL | 82 | lectura_en_frio_solo_narracion | 2026-11-10T15:47:50-06:00 | [ESCENA_6_REPITE_VARIACION_DE_CONTEO_Y_FUSION] |
+| 2026-11-05_comida-palomitas | FAIL | 82 | lectura_en_frio_solo_narracion | 2026-11-12T15:38:50-06:00 | [APERTURA_DEFINICIONAL_NO_IN_MEDIAS_RES, ESCENA_6_REITERA_CAUSAS_DE_GRANOS_NO_REVENTADOS_SIN_INFORMACION_NUEVA] |
+| 2026-11-05_inter-arboles-se-comunican | FAIL | 78 | lectura_en_frio_solo_narracion | 2026-11-12T15:38:50-06:00 | [APERTURA_GENERICA_NO_IN_MEDIAS_RES] |
+| 2026-11-05_inter-rayo-globular | FAIL | 81 | lectura_en_frio_solo_narracion | 2026-11-12T15:38:50-06:00 | [APERTURA_HISTORICA_DESCRIPTIVA_NO_IN_MEDIAS_RES] |
+| 2026-11-05_kids-dia-en-venus | PASS | 88 | lectura_en_frio_solo_narracion | 2026-11-12T15:38:50-06:00 | [] |
+| 2026-11-06_comida-aguacate-negro | FAIL | 79 | lectura_en_frio_solo_narracion | 2026-11-12T15:38:50-06:00 | [REPETICION_ESCENAS_5_6_SIN_AVANCE_CAUSAL] |
+| 2026-11-06_inter-arena-cantante | PASS | 94 | lectura_en_frio_solo_narracion | 2026-11-12T15:38:50-06:00 | [] |
+| 2026-11-06_inter-ranas-congeladas | FAIL | 83 | lectura_en_frio_solo_narracion | 2026-11-12T15:38:50-06:00 | [REPETICION_ESCENAS_5_6_LIMITES_DE_ESPECIE_Y_CONDICIONES] |
+| 2026-11-06_kids-ballena-azul-corazon | FAIL | 80 | lectura_en_frio_solo_narracion | 2026-11-12T15:38:50-06:00 | [PAYOFF_SOBREAFIRMA_CASI_SE_DETIENE] |
+| 2026-11-07_comida-hielo-caliente | FAIL | 81 | lectura_en_frio_solo_narracion | 2026-11-12T15:38:50-06:00 | [APERTURA_DE_CREENCIAS_NO_IN_MEDIAS_RES] |
+| 2026-11-07_inter-nubes-pesan | FAIL | 78 | lectura_en_frio_solo_narracion | 2026-11-12T15:38:50-06:00 | [ESCENA_7_REITERA_CIFRA_Y_LIMITE_SIN_PAYOFF_DE_SUSPENSION] |
+| 2026-11-07_inter-pulpo-suenos | FAIL | 80 | lectura_en_frio_solo_narracion | 2026-11-12T15:38:50-06:00 | [REPETICION_ESCENAS_5_6_Y_PAYOFF_VAGO] |
+| 2026-11-07_kids-huesos-bebe | FAIL | 82 | lectura_en_frio_solo_narracion | 2026-11-12T15:38:50-06:00 | [ESCENA_6_REPITE_VARIACION_DE_CONTEO_Y_FUSION] |
 | 2026-11-09_dato-robot-ensambla-orbita | PASS | 90 | lectura_en_frio_solo_narracion | 2026-11-09T18:45:00-06:00 | [] |
 | 2026-11-10_comida-aprendizaje-sabor-nutriente | PASS | 92 | lectura_en_frio_solo_narracion | 2026-11-10T15:47:50-06:00 | [] |
 | 2026-11-10_dato-adn-sincroniza-flujo | PASS | 91 | lectura_en_frio_solo_narracion | 2026-11-10T16:16:00-06:00 | [] |
