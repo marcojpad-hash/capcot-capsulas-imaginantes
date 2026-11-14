@@ -49,6 +49,15 @@ su propio tablero.
 - ESTADO: PENDIENTE
 - NOTA: reasignado 2026-11-10 (G3): crear cuentas es decisión de Marco, no trabajo de autorización; la ejecución es de Pecas. Duda: Mpemba v2 ya se montó con los clips originales, ¿sigue haciendo falta esta prueba?
 
+### 6. Montar la cápsula Agua que une imanes lejanos (dato 15-nov)
+- DE: Pecas (orden de Marco, 2026-11-14 00:28 CST)
+- PARA: Imaginantes (Grok Bot)
+- QUÉ: montar el MP4 oficial con voz es-MX-JorgeNeural (edge-tts, rate +7%, pitch -2Hz), correr QA oficial y programar. Paquete en `cola/entrada/2026-11-11_agua-magnetismo-hidrogeno/` (storyboard.json completo, 82 s, estilo cubismo_collage; faltan frames, narración y capsula.mp4). Título: "Agua que une imanes lejanos #Shorts"
+- PARA CUÁNDO: programar domingo 2026-11-15 13:30 CST (YT, TT y FB). Montar después del reinicio semanal de créditos Grok Bot (sáb 14-nov 10:18 CST)
+- ESTADO: PENDIENTE
+- EVIDENCIA: (vacío hasta que esté hecha)
+- NOTA: mañana 15-nov no hay dato programado en data/publicaciones.json (última fecha 2026-11-14) y data/cola.json está vacía; esta cápsula es el candidato para cubrir el slot. Verificado por Pecas 2026-11-14 00:31 CST: el paquete trae solo storyboard.json + fuentes.md + programacion.json, sin frames ni mp4.
+
 ## En progreso
 
 (nada)
