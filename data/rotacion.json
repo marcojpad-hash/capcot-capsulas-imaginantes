@@ -309,5 +309,15 @@
     "tema": "MXenes descubiertos con IA",
     "estilo": "pixel_art",
     "origen": "propia"
+  },
+  {
+    "fecha": "2026-11-21",
+    "project_id": "2026-11-02_oxoboranos-estables",
+    "estructura": "mito_vs_dato",
+    "cama": "tambor",
+    "duracion": 91,
+    "tema": "oxoboranos estables aislados",
+    "estilo": "pop_art_comic",
+    "origen": "propia"
   }
 ]

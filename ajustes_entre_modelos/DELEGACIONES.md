@@ -49,24 +49,64 @@ su propio tablero.
 - ESTADO: PENDIENTE
 - NOTA: reasignado 2026-11-10 (G3): crear cuentas es decisión de Marco, no trabajo de autorización; la ejecución es de Pecas. Duda: Mpemba v2 ya se montó con los clips originales, ¿sigue haciendo falta esta prueba?
 
-### 7. Montar la semana 15–21 nov (lote oficial + reporte de créditos)
-- DE: Pecas (orden de Marco, 2026-11-14 ~16:38 CST)
-- PARA: Imaginantes (Grok Bot)
-- QUÉ: montar el MP4 oficial de cada cápsula con voz es-MX-JorgeNeural (edge-tts, rate +7%, pitch −2 Hz), correr QA oficial y programar en YT + TT + FB, slot 13:30 CST.
-  - PRIMERO, mínimo 2 (para medir cuántos créditos quedan): lun 16-nov `cola/entrada/2026-10-25_corales-contacto/` ("Un toque de vida") y mar 17-nov `cola/entrada/2026-10-26_baffin-bay-ice-shelf/` ("¿Qué sostuvo tres mantos?").
-  - LUEGO, según alcancen los créditos: jue 19-nov `cola/entrada/2026-10-29_juno-choque-proa/` ("La frontera invisible"), vie 20-nov `cola/entrada/2026-11-01_mxenes-ia-descubrimiento/` ("¿IA descubre materiales?"), sáb 21-nov `cola/entrada/2026-11-02_oxoboranos-estables/` ("¿Molécula imposible?").
-  - NO TOCAR: mié 18-nov, `cola/entrada/2026-10-28_mosquito-fruitless-audicion/` ("El mosquito que escucha") — ese lo monta Pecas como viral animado de la semana (ffmpeg + Kokoro/VoxCPM2 narradora_es). Regla anti-duplicado: paquete montado = paquete cerrado.
-  - El dom 15-nov ya está cubierto: agua (YT O9QlSaft5DY, 13:30; TT/FB pendientes).
-- CRÉDITOS (obligatorio): después de CADA montaje, reportar en el repo el saldo de Imaginantes antes y después. En el repo NO hay saldo de créditos (`data/balances_6h.json` es solo vistas/likes; último 2026-11-14 13:54 CDMX) y el costo por cápsula no está medido. Sin ese reporte no se puede saber cuántas cápsulas cubren los créditos que quedan.
-- PARA CUÁNDO: el lote de 2 primero (16–17 nov); el resto 19–21 nov según créditos.
-- ESTADO: PENDIENTE
-- NOTA: los paquetes de la semana ya existen en `cola/entrada/` (storyboard + fuentes; sin capsula.mp4; sin frames salvo robot). Stock restante tras esta semana: 8 paquetes (autismo-microbioma, enzimas-oceano, bacterias-plasticos, sinergia-algas, adn-myc, webb-exoplaneta, robot-orbita, ldl). El robot (`2026-11-09_dato-robot-ensambla-orbita`) NO tiene frames — sigue bloqueado por Issues #161/#164, no se monta hasta tenerlos. Grok debe seguir generando el paquete diario C1 para la semana siguiente (el stock cubre ~8 días más). Reparto completo de la semana en `docs/COCINA_CAPCOT.md` § "Reparto semana 15–21 nov 2026".
-
 ## En progreso
 
 (nada)
 
 ## Hechas
+
+### 7. Montar la semana 15–21 nov (lote oficial + reporte de créditos)
+- DE: Pecas (orden de Marco, 2026-11-14 ~16:38 CST)
+- PARA: Imaginantes (Grok Bot)
+- QUÉ: montar el MP4 oficial de cada cápsula con voz es-MX-JorgeNeural (edge-tts, rate +7%, pitch −2 Hz), correr QA oficial y programar en YT + TT + FB, slot 13:30 CST.
+- ESTADO: HECHA (mp4 en origin/main y YT programado en las 5 que tocan a Imaginantes; TT/FB pendientes de Studio). NO se tocó el mosquito del 18-nov.
+- CRÉDITOS (Grok Bot, cuota semanal incluida): antes del lote 13.5% usada; después de corales 15.2%; después de las 5, 20.4% usada. No hay on-demand. El reset es el sábado 21-nov a las 10:18 (hora de Mexico City).
+- EVIDENCIA:
+
+  1) Corales — `cola/entrada/2026-10-25_corales-contacto/capsula.mp4`
+     - commit mp4: `9e1fd2dfdc0b7e89570e1db52ff98e1ebc9a8bb7` (blob `73509135dfdede0fb18a0e710596776fb061fc00`, confirmado con `git ls-tree origin/main`)
+     - ffprobe: 90.00 s, 1080x1920, 30 fps, h264+aac
+     - voz: es-MX-JorgeNeural, edge-tts rate +7%, pitch -2Hz
+     - QA oficial: 21/21
+     - YT: `45WOvkNQTHo` (https://youtube.com/shorts/45WOvkNQTHo), private, publishAt `2026-11-16T19:30:00Z`, miniatura vertical sardefault = portada (título «Un toque de vida», sin subtítulo). Sin colisión. Token `~/.capcot/token.json`.
+     - local: `/workspace/entregas/2026-11-16_corales/`
+
+  2) Baffin — `cola/entrada/2026-10-26_baffin-bay-ice-shelf/capsula.mp4`
+     - commit mp4: `1c9fccb99454372e7b4d7d28b76bdd5172d9aec9` (blob `5db072f37fc9ca206b7e197aa558991b6360c0b9`)
+     - ffprobe: 90.17 s, 1080x1920, 30 fps, h264+aac (0.17 s sobre 90; cierre 10.1 s)
+     - voz: es-MX-JorgeNeural, edge-tts rate +7%, pitch -2Hz
+     - QA oficial: 21/21
+     - YT: `KnP1j4y72ug` (https://youtube.com/shorts/KnP1j4y72ug), private, publishAt `2026-11-17T19:30:00Z`, sardefault = portada (título «¿Qué sostuvo tres mantos?»). Sin colisión.
+     - local: `/workspace/entregas/2026-11-17_baffin/`
+
+  3) Juno — `cola/entrada/2026-10-29_juno-choque-proa/capsula.mp4`
+     - commit mp4: `bb8294c7b0bf0f282930aac863a1cf276f649101` (blob `69e74a55b6d523724ad354364e82462e232d0606`, confirmado con `git ls-tree origin/main`)
+     - ffprobe: 86.97 s, 1080x1920, 30 fps, h264+aac
+     - 8 frames (no se inventaron); cierre/cortinilla 16 s (voz termina ~70.8 s)
+     - voz: es-MX-JorgeNeural, edge-tts rate +7%, pitch -2Hz
+     - QA oficial: 21/21
+     - YT: `vj5RZDt-dfc` (https://youtube.com/shorts/vj5RZDt-dfc), private, publishAt `2026-11-19T19:30:00Z`, sardefault = portada (título «La frontera invisible»). Sin colisión.
+     - local: `/workspace/entregas/2026-11-19_juno/`
+
+  4) MXenes — `cola/entrada/2026-11-01_mxenes-ia-descubrimiento/capsula.mp4`
+     - commit mp4: `ecd7df67344b0c4fb194c11e0eb233f2b7972900` (blob `6fccddaffea4c99e92ca881dd0d41d56086268c3`, confirmado con `git ls-tree origin/main`)
+     - ffprobe: 89.00 s, 1080x1920, 30 fps, h264+aac
+     - 8 frames (no se inventaron); cierre ~11.8 s (voz termina ~77.2 s)
+     - voz: es-MX-JorgeNeural, edge-tts rate +7%, pitch -2Hz
+     - QA oficial: 21/21
+     - YT: `WTlFSZV9HYg` (https://youtube.com/shorts/WTlFSZV9HYg), private, publishAt `2026-11-20T19:30:00Z`, sardefault = portada (título «¿IA descubre materiales?»). Sin colisión.
+     - local: `/workspace/entregas/2026-11-20_mxenes/`
+
+  5) Oxoboranos — `cola/entrada/2026-11-02_oxoboranos-estables/capsula.mp4`
+     - commit mp4: `49aee3fd13668b0b79a302aef33f1da3a1e5ea96` (blob `7e1ab4b8f064bc64b0a7ef46b109ebc106d8780e`, confirmado con `git ls-tree origin/main`)
+     - ffprobe: 90.90 s, 1080x1920, 30 fps, h264+aac (0.90 s sobre 90 para no recortar el cierre de 10 s; voz termina ~80.87 s)
+     - 8 frames (no se inventaron)
+     - voz: es-MX-JorgeNeural, edge-tts rate +7%, pitch -2Hz
+     - QA oficial: 21/21
+     - YT: `K4qNkx2f4RI` (https://youtube.com/shorts/K4qNkx2f4RI), private, publishAt `2026-11-21T19:30:00Z`, sardefault = portada (título «¿Molécula imposible?»). Sin colisión.
+     - local: `/workspace/entregas/2026-11-21_oxoboranos/`
+
+- NOTA: TT y FB quedan pendientes en las 5, con portada = primer frame. No se tocó `2026-10-28_mosquito-fruitless-audicion/` ni el dato del día. Casilla YT de contenido sintético en «No» (ilustración no realista + aviso de IA en la descripción), igual que agua.
 
 ### 6. Montar la cápsula Agua que une imanes lejanos (dato 15-nov)
 - DE: Pecas (orden de Marco, 2026-11-14 00:28 CST)
