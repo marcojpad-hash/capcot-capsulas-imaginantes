@@ -1,8 +1,8 @@
 {
-  "fecha": "2026-11-12",
+  "fecha": "2026-11-14",
   "tipo": "endscreens_rotacion",
-  "actualizado_cdmx": "2026-11-12T18:45-06:00",
-  "motivo": "18:45 rotación: aves YVfUrd2NQJw (100 vistas en ~1.7 h, acelera) → pez cabeza YV_3JgGv1kg (3). Resto sin cambio. Fijos intactos.",
+  "actualizado_cdmx": "2026-11-14T10:47-06:00",
+  "motivo": "Huesos uEsoscBrfgU (759) y árboles EX0W3q-yKRw (461) jalaban sin pantalla → corneja wxnhEdlJYwU (0) e hipo 4lOWeMn2RCo (9). Verificado en Studio.",
   "vistas_ref": {
     "phVfyHp3CnY": 94,
     "m4RqQRaz55k": 48,
@@ -131,7 +131,9 @@
     "wbFrlM2e_YE": "Rg-iTgMExWw",
     "maLtsoQpxwI": "K2I_jgugiOU",
     "knAElNo4raI": "wxnhEdlJYwU",
-    "YVfUrd2NQJw": "YV_3JgGv1kg"
+    "YVfUrd2NQJw": "YV_3JgGv1kg",
+    "uEsoscBrfgU": "wxnhEdlJYwU",
+    "EX0W3q-yKRw": "4lOWeMn2RCo"
   },
   "pendiente_studio": false,
   "nota": "Aplicado en YouTube Studio Editor > Pantalla final (video específico). Búsqueda: pegar youtube.com/watch?v=ID en 'Buscar vídeos de otros canales' (tus vídeos no lista Shorts). Sin suscripción ni tarjetas. Actualización 26-oct 19:49: la lista «Elegir un vídeo específico» ya muestra los Shorts.",
