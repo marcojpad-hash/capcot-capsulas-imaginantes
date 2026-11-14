@@ -100,11 +100,10 @@
     "region": "Pantanal Sur",
     "coordinates": {
       "latitude": -19.33,
-      "longitude": -55.72,
-      "datum": "WGS84"
+      "longitude": -55.72
     },
     "coordinate_source_id": "SRC-001",
-    "coordinate_source_note": "Coordenadas numéricas publicadas en Methods del artículo de Nature. El texto imprime valores negativos con sufijos de hemisferio N/E inconsistentes; el mapa conserva el par numérico firmado y omite sufijos hemisféricos.",
+    "coordinate_source_note": "Coordenadas numéricas publicadas en Methods del artículo de Nature. El texto imprime valores negativos con sufijos de hemisferio N/E inconsistentes; el mapa conserva el par numérico firmado, omite sufijos hemisféricos y no atribuye datum no declarado.",
     "cartographic_sources": [
       {
         "name": "Natural Earth",
@@ -120,7 +119,8 @@
     "precision_note": "Pin regional del sitio de estudio, no coordenada de captura ni trayectoria GPS de un animal. No mostrarlo como localización exacta de individuos ni dibujar rutas no publicadas.",
     "source_ids": [
       "SRC-001"
-    ]
+    ],
+    "coordinate_reference": "Datum geodésico no especificado por la fuente; no se infiere."
   },
   "dato_grafico": {
     "tipo": "proporcion_particulas",
@@ -369,7 +369,8 @@
     "La narración tiene 194 palabras; ocho escenas suman 78 segundos y la cortinilla añade 6, total 84 segundos.",
     "El DOI aparece en la página editorial, pero permanece PENDIENTE_RESOLVEDOR porque Crossref y doi.org no completaron resolución independiente.",
     "El pin usa el sitio de campo del Pantanal; el artículo imprime coordenadas negativas con sufijos hemisféricos inconsistentes. No representa la ubicación de animales ni sus trayectorias.",
-    "No se añadió narrative_qa: la lectura en frío corresponde al Auditor independiente."
+    "No se añadió narrative_qa: la lectura en frío corresponde al Auditor independiente.",
+    "No se infiere datum geodésico: la fuente no lo especifica."
   ],
   "linea_tematica_provisional": "Dato científico / Naturaleza-bichos / ambiente; fauna silvestre y exposición a contaminantes móviles.",
   "risk_notes": [
