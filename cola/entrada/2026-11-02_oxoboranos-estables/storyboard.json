@@ -59,13 +59,18 @@
       "id": "scene_001",
       "arc": "hook_medias_res",
       "duration_seconds": 9.0,
-      "narration": "Durante más de sesenta años, los químicos creyeron imposible aislar oxoboranos. Estas moléculas con triple enlace entre boro y oxígeno se consideraban demasiado inestables para existir en el laboratorio.",
+      "narration": "Durante más de sesenta años, los químicos creyeron imposible aislar oxoboranos: moléculas con triple enlace entre boro y oxígeno, demasiado inestables para el laboratorio.",
       "on_screen_text": "¿Molécula imposible?",
       "visual_description": "pop art comic of frustrated chemists in lab with exploding molecule diagrams and bold POW effects",
       "image_prompt": "pop art comic book panel, Ben-Day halftone dots, bold black outlines, saturated primary colors, dramatic action burst background, vertical 9:16, no text + pop art comic of frustrated chemists in lab with exploding molecule diagrams and bold POW effects",
-      "source_ids": ["SRC-001", "SRC-002"],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
       "asset_filename": "frames/scene_001.jpg",
-      "sfx": ["explosión"],
+      "sfx": [
+        "silencio"
+      ],
       "ambiente": "viento"
     },
     {
@@ -76,14 +81,29 @@
       "on_screen_text": "Würzburg, Alemania",
       "visual_description": "pop art comic university building in Würzburg with comic speech bubbles of chemical reaction",
       "image_prompt": "pop art comic book panel, Ben-Day halftone dots, bold black outlines, saturated primary colors, dramatic action burst background, vertical 9:16, no text + pop art comic university building in Würzburg with comic speech bubbles of chemical reaction",
-      "source_ids": ["SRC-002"],
+      "source_ids": [
+        "SRC-002"
+      ],
       "asset_filename": "frames/scene_002.jpg",
-      "sfx": ["campanas"],
+      "sfx": [
+        "campanas"
+      ],
       "ambiente": "viento",
       "capa": {
         "tipo": "mapa",
-        "region": [8, 12, 48, 51],
-        "puntos": [{"nombre": "Würzburg", "lon": 9.93, "lat": 49.79}],
+        "region": [
+          8,
+          12,
+          48,
+          51
+        ],
+        "puntos": [
+          {
+            "nombre": "Würzburg",
+            "lon": 9.93,
+            "lat": 49.79
+          }
+        ],
         "titulo": "Universität Würzburg",
         "fuente": "Uni Würzburg · Natural Earth"
       }
@@ -92,13 +112,17 @@
       "id": "scene_003",
       "arc": "desarrollo",
       "duration_seconds": 10.0,
-      "narration": "La sorpresa fue total: formaron tres oxoboranos estables como sólidos cristalinos de color naranja y amarillo. Obtuvieron más del cincuenta por ciento de rendimiento aislado.",
+      "narration": "La sorpresa fue total: formaron tres oxoboranos estables como sólidos cristalinos naranja y amarillo, con más del cincuenta por ciento de rendimiento aislado.",
       "on_screen_text": "3 cristales estables",
       "visual_description": "pop art comic of glowing orange and yellow crystal solids popping out of a reaction flask",
       "image_prompt": "pop art comic book panel, Ben-Day halftone dots, bold black outlines, saturated primary colors, dramatic action burst background, vertical 9:16, no text + pop art comic of glowing orange and yellow crystal solids popping out of a reaction flask",
-      "source_ids": ["SRC-001"],
+      "source_ids": [
+        "SRC-001"
+      ],
       "asset_filename": "frames/scene_003.jpg",
-      "sfx": ["cristal"],
+      "sfx": [
+        "silencio"
+      ],
       "ambiente": "viento"
     },
     {
@@ -109,9 +133,13 @@
       "on_screen_text": "1.208 Å",
       "visual_description": "pop art comic close-up of B≡O triple bond with measurement lines and atomic models",
       "image_prompt": "pop art comic book panel, Ben-Day halftone dots, bold black outlines, saturated primary colors, dramatic action burst background, vertical 9:16, no text + pop art comic close-up of B triple bond O with measurement lines and atomic models",
-      "source_ids": ["SRC-001"],
+      "source_ids": [
+        "SRC-001"
+      ],
       "asset_filename": "frames/scene_004.jpg",
-      "sfx": ["medición"],
+      "sfx": [
+        "silencio"
+      ],
       "ambiente": "viento",
       "capa": {
         "tipo": "dato",
@@ -124,39 +152,51 @@
       "id": "scene_005",
       "arc": "desarrollo",
       "duration_seconds": 10.5,
-      "narration": "Antes, estas especies solo se habían detectado en fase gas o en matrices a temperaturas criogénicas. Nunca como compuestos estables a temperatura ambiente en condiciones de laboratorio.",
+      "narration": "Antes, estas especies solo se habían detectado en fase gas o en matrices criogénicas. Nunca como compuestos estables a temperatura ambiente.",
       "on_screen_text": "Antes: inestables",
       "visual_description": "pop art comic split panel of cold matrix isolation vs room temperature crystals",
       "image_prompt": "pop art comic book panel, Ben-Day halftone dots, bold black outlines, saturated primary colors, dramatic action burst background, vertical 9:16, no text + pop art comic split panel of cold matrix isolation versus room temperature crystals",
-      "source_ids": ["SRC-001"],
+      "source_ids": [
+        "SRC-001"
+      ],
       "asset_filename": "frames/scene_005.jpg",
-      "sfx": ["hielo"],
+      "sfx": [
+        "silencio"
+      ],
       "ambiente": "viento"
     },
     {
       "id": "scene_006",
       "arc": "cierre_historia",
       "duration_seconds": 10.0,
-      "narration": "El hallazgo abre caminos para preparar más moléculas elusivas del bloque p de la tabla periódica. Casi todos en el campo habían abandonado la búsqueda hace décadas.",
+      "narration": "El hallazgo abre caminos para preparar más moléculas elusivas del bloque p. Casi todos en el campo habían abandonado la búsqueda hace décadas.",
       "on_screen_text": "Búsqueda abandonada",
       "visual_description": "pop art comic of abandoned lab notebooks transforming into new molecular structures",
       "image_prompt": "pop art comic book panel, Ben-Day halftone dots, bold black outlines, saturated primary colors, dramatic action burst background, vertical 9:16, no text + pop art comic of abandoned lab notebooks transforming into new molecular structures",
-      "source_ids": ["SRC-002"],
+      "source_ids": [
+        "SRC-002"
+      ],
       "asset_filename": "frames/scene_006.jpg",
-      "sfx": ["página"],
+      "sfx": [
+        "silencio"
+      ],
       "ambiente": "viento"
     },
     {
       "id": "scene_007",
       "arc": "cierre_historia",
       "duration_seconds": 9.5,
-      "narration": "Ahora los químicos pueden estudiarlas en detalle, manipularlas y construir nuevas estructuras sobre ellas. Un paradigma de sesenta años de intentos fallidos se rompió de forma inesperada.",
+      "narration": "Ahora los químicos pueden estudiarlas, manipularlas y construir nuevas estructuras. Un paradigma de sesenta años de intentos fallidos se rompió de forma inesperada.",
       "on_screen_text": "Paradigma roto",
       "visual_description": "pop art comic of scientists celebrating with stable oxoborane models in hands",
       "image_prompt": "pop art comic book panel, Ben-Day halftone dots, bold black outlines, saturated primary colors, dramatic action burst background, vertical 9:16, no text + pop art comic of scientists celebrating with stable oxoborane models in hands",
-      "source_ids": ["SRC-001"],
+      "source_ids": [
+        "SRC-001"
+      ],
       "asset_filename": "frames/scene_007.jpg",
-      "sfx": ["aplausos"],
+      "sfx": [
+        "silencio"
+      ],
       "ambiente": "viento"
     },
     {
@@ -167,14 +207,18 @@
       "on_screen_text": "¿Qué más es posible?",
       "visual_description": "pop art comic night sky over lab with floating question mark made of atoms",
       "image_prompt": "pop art comic book panel, Ben-Day halftone dots, bold black outlines, saturated primary colors, dramatic action burst background, vertical 9:16, no text + pop art comic night sky over lab with floating question mark made of atoms",
-      "source_ids": ["SRC-001"],
+      "source_ids": [
+        "SRC-001"
+      ],
       "asset_filename": "frames/scene_008.jpg",
-      "sfx": ["estrellas"],
+      "sfx": [
+        "silencio"
+      ],
       "ambiente": "viento"
     }
   ],
   "cortinilla_fuentes": {
-    "duration_seconds": 6,
+    "duration_seconds": 10,
     "titulo": "Fuentes",
     "aviso": "Imágenes generadas con IA. Voz sintética. Audio sintetizado.",
     "firma": "Datos y ociosidades · @datosyociosidades"
@@ -183,6 +227,15 @@
     "filename": "capsula.mp4",
     "resolution": "1080x1920",
     "fps": 30,
-    "loudness_lufs": -14
+    "loudness_lufs": -14,
+    "plano_seconds": 5,
+    "subtitle_max_words": 3
+  },
+  "audio": {
+    "music_asset": "sintetico:tambor",
+    "cama_musical": "tambor",
+    "music_lufs": -27,
+    "ambiente_lufs": -30,
+    "music_protagonista": false
   }
 }

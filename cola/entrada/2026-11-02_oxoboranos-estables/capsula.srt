@@ -1,0 +1,275 @@
+1
+00:00:00,300 --> 00:00:01,026
+Durante más de
+
+2
+00:00:01,036 --> 00:00:02,148
+sesenta años,
+
+3
+00:00:02,157 --> 00:00:03,176
+los químicos creyeron
+
+4
+00:00:03,186 --> 00:00:05,156
+imposible aislar oxoboranos:
+
+5
+00:00:05,306 --> 00:00:06,336
+moléculas con triple
+
+6
+00:00:06,346 --> 00:00:07,235
+enlace entre boro
+
+7
+00:00:07,245 --> 00:00:08,147
+y oxígeno,
+
+8
+00:00:08,157 --> 00:00:09,420
+demasiado inestables para
+
+9
+00:00:09,430 --> 00:00:10,466
+el laboratorio.
+
+10
+00:00:10,954 --> 00:00:11,855
+En la Universidad
+
+11
+00:00:11,865 --> 00:00:12,749
+de Würzburg,
+
+12
+00:00:12,765 --> 00:00:13,327
+el equipo de
+
+13
+00:00:13,337 --> 00:00:14,495
+Holger Braunschweig,
+
+14
+00:00:14,505 --> 00:00:15,710
+con apoyo computacional
+
+15
+00:00:15,720 --> 00:00:16,505
+de Tezpur,
+
+16
+00:00:16,515 --> 00:00:17,930
+reaccionó un diboracumuleno
+
+17
+00:00:17,940 --> 00:00:19,051
+reactivo con cetonas
+
+18
+00:00:19,062 --> 00:00:20,208
+simples a temperatura
+
+19
+00:00:20,218 --> 00:00:21,032
+ambiente.
+
+20
+00:00:21,512 --> 00:00:22,320
+La sorpresa fue
+
+21
+00:00:22,330 --> 00:00:23,050
+total:
+
+22
+00:00:23,200 --> 00:00:24,592
+formaron tres oxoboranos
+
+23
+00:00:24,602 --> 00:00:25,749
+estables como sólidos
+
+24
+00:00:25,759 --> 00:00:26,905
+cristalinos naranja y
+
+25
+00:00:26,915 --> 00:00:27,630
+amarillo,
+
+26
+00:00:27,640 --> 00:00:28,167
+con más del
+
+27
+00:00:28,177 --> 00:00:29,195
+cincuenta por ciento
+
+28
+00:00:29,205 --> 00:00:30,650
+de rendimiento aislado.
+
+29
+00:00:31,134 --> 00:00:32,538
+Los enlaces boro-oxígeno
+
+30
+00:00:32,548 --> 00:00:33,782
+miden entre 1
+
+31
+00:00:34,002 --> 00:00:35,552
+208 y 1
+
+32
+00:00:35,772 --> 00:00:38,350
+217 angstroms Son
+
+33
+00:00:38,360 --> 00:00:39,647
+extremadamente cortos y
+
+34
+00:00:39,657 --> 00:00:41,422
+fuertes casi perfectamente
+
+35
+00:00:41,432 --> 00:00:42,871
+lineales con evidencia
+
+36
+00:00:42,881 --> 00:00:43,735
+de triple enlace
+
+37
+00:00:43,745 --> 00:00:45,587
+real Antes,
+
+38
+00:00:45,597 --> 00:00:46,627
+estas especies solo
+
+39
+00:00:46,637 --> 00:00:47,503
+se habían detectado
+
+40
+00:00:47,513 --> 00:00:48,216
+en fase gas
+
+41
+00:00:48,226 --> 00:00:48,905
+o en matrices
+
+42
+00:00:48,915 --> 00:00:49,986
+criogénicas.
+
+43
+00:00:50,206 --> 00:00:51,294
+Nunca como compuestos
+
+44
+00:00:51,304 --> 00:00:52,451
+estables a temperatura
+
+45
+00:00:52,461 --> 00:00:53,240
+ambiente.
+
+46
+00:00:53,714 --> 00:00:54,510
+El hallazgo abre
+
+47
+00:00:54,520 --> 00:00:55,632
+caminos para preparar
+
+48
+00:00:55,642 --> 00:00:56,952
+más moléculas elusivas
+
+49
+00:00:56,962 --> 00:00:57,986
+del bloque p.
+
+50
+00:00:58,206 --> 00:00:58,955
+Casi todos en
+
+51
+00:00:58,965 --> 00:00:59,668
+el campo habían
+
+52
+00:00:59,678 --> 00:01:00,813
+abandonado la búsqueda
+
+53
+00:01:00,823 --> 00:01:01,952
+hace décadas.
+
+54
+00:01:02,448 --> 00:01:03,431
+Ahora los químicos
+
+55
+00:01:03,441 --> 00:01:04,588
+pueden estudiarlas,
+
+56
+00:01:04,598 --> 00:01:05,978
+manipularlas y construir
+
+57
+00:01:05,988 --> 00:01:07,398
+nuevas estructuras.
+
+58
+00:01:07,618 --> 00:01:08,390
+Un paradigma de
+
+59
+00:01:08,400 --> 00:01:09,313
+sesenta años de
+
+60
+00:01:09,323 --> 00:01:10,353
+intentos fallidos se
+
+61
+00:01:10,363 --> 00:01:11,147
+rompió de forma
+
+62
+00:01:11,157 --> 00:01:12,135
+inesperada.
+
+63
+00:01:12,622 --> 00:01:13,558
+¿Qué otras moléculas
+
+64
+00:01:13,568 --> 00:01:14,797
+que creíamos imposibles
+
+65
+00:01:14,807 --> 00:01:16,035
+esperan simplemente una
+
+66
+00:01:16,045 --> 00:01:17,250
+reacción inesperada para
+
+67
+00:01:17,260 --> 00:01:18,611
+volverse reales?
+
+68
+00:01:18,861 --> 00:01:19,704
+Esto fue Datos
+
+69
+00:01:19,714 --> 00:01:20,867
+y ociosidades.

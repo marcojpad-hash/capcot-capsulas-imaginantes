@@ -1,11 +1,21 @@
 {
   "project_id": "2026-11-02_oxoboranos-estables",
-  "plataforma": ["youtube", "tiktok"],
-  "publish_at": "2026-11-03T01:30:00Z",
-  "ventana": "noche",
-  "hora_cdmx": "19:30",
-  "caption_tt": "¿Molécula imposible? Químicos aislan oxoboranos estables tras 60 años. #ciencia #quimica #oxoborano",
-  "titulo_yt": "¿Molécula imposible? Oxoboranos estables tras 60 años #Shorts",
-  "privacidad": "private",
-  "estado": "programado_paquete"
+  "plataforma": [
+    "yt",
+    "tt",
+    "fb"
+  ],
+  "publish_at": "2026-11-21T19:30:00Z",
+  "ventana": "tarde",
+  "hora_cdmx": "13:30",
+  "caption_tt": "Durante más de sesenta años, los químicos creyeron imposible aislar oxoboranos. #ciencia #quimica #datosyociosidades",
+  "titulo_yt": "Químicos aislan oxoboranos estables tras 60 años #Shorts",
+  "privacidad": "private→público a las 13:30 CST",
+  "estado": "montada",
+  "video": "capsula.mp4",
+  "miniatura": "portada.jpg (pendiente thumbnails.set)",
+  "yt_programado": false,
+  "tiktok": "pendiente",
+  "facebook": "pendiente",
+  "nota": "Montaje 2026-11-14, voz es-MX-JorgeNeural (edge-tts rate +7%, pitch -2Hz). 1080x1920 30fps, 90.90s, QA 21/21. 8 frames (sin inventar). plano_seconds 5, cierre 10s (voz termina ~80.87s). Guion recortado de 202 a 181 palabras; 90.90s queda 0.90 s sobre la banda 85-90 para no acortar el cierre de 10 s. Token ~/.capcot/token.json."
 }
