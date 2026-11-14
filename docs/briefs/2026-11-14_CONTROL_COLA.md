@@ -29,7 +29,7 @@ Precedencia aplicada: Contrato Operativo → Plan Maestro → Receta/Guía → F
 
 ### QA narrativo y validación estructural
 
-<badge>El JSON es la fuente de verdad</badge>
+**El JSON releído es la fuente de verdad.**
 
 Lectura en frío de la narración concatenada, sin título, resumen, arco, notas ni `narrative_contract`:
 
@@ -229,7 +229,7 @@ La vista de `registro_editorial.py` no cubre bloqueados, handoffs ni registros d
 - No había runtime local del repositorio. No se ejecutaron `scripts/validar_storyboard.py`, `procesar_cola.py`, helpers ni pruebas Python. Se hizo revisión estática, incluyendo reproducción manual de las condiciones estructurales del validador para el proyecto del día y el lote.
 - El storyboard del día pasa la revisión estática tras las correcciones; los 12 del lote fallan estructura por los 510 campos narrativos ausentes, además de los defectos indicados.
 - No se revisaron cambios de APIs: no apareció evidencia de un cambio oficial nuevo que lo justificara. La verificación del DOI del proyecto actual se hizo contra la página oficial de Nature, no mediante el helper Crossref.
-- No se dispararon workflows, no se enviaron payloads, no se consultaron ni cambiaron secretos, no se modificaron permisos, `main` ni `data/*.json`.
+- No se invocó manualmente el workflow de Grok ni se enviaron payloads; los commits de esta auditoría no modificaron `cola/entrada/` y no coinciden con el filtro de paths del dispatch. No se consultaron ni cambiaron secretos, no se modificaron permisos, `main` ni `data/*.json`.
 - No se generaron imágenes, frames, audio, voz, video ni renders; no se publicó, programó ni consumió créditos.
 
 ## 7. Decisión de auditoría
