@@ -1,0 +1,79 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Sub,DejaVu Sans,72,&H00FFFFFF,&H00FFFFFF,&H00000000,&H64000000,-1,0,0,0,100,100,0,0,1,6,2,2,90,170,620,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.30,0:00:01.37,Sub,,0,0,0,,¿Materiales de solo
+Dialogue: 0,0:00:01.38,0:00:02.17,Sub,,0,0,0,,átomos de grosor
+Dialogue: 0,0:00:02.18,0:00:03.22,Sub,,0,0,0,,escondidos en bases
+Dialogue: 0,0:00:03.23,0:00:04.47,Sub,,0,0,0,,de datos viejas?
+Dialogue: 0,0:00:04.72,0:00:05.29,Sub,,0,0,0,,Un equipo en
+Dialogue: 0,0:00:05.30,0:00:06.48,Sub,,0,0,0,,Suecia usó inteligencia
+Dialogue: 0,0:00:06.49,0:00:07.80,Sub,,0,0,0,,artificial para hallarlos
+Dialogue: 0,0:00:07.81,0:00:09.10,Sub,,0,0,0,,y redescubrirlos.
+Dialogue: 0,0:00:09.58,0:00:10.63,Sub,,0,0,0,,En Linköping,
+Dialogue: 0,0:00:10.64,0:00:12.91,Sub,,0,0,0,,investigadores buscaron MXenes:
+Dialogue: 0,0:00:13.06,0:00:13.92,Sub,,0,0,0,,láminas de metal
+Dialogue: 0,0:00:13.93,0:00:14.54,Sub,,0,0,0,,y carbono o
+Dialogue: 0,0:00:14.55,0:00:15.38,Sub,,0,0,0,,nitrógeno,
+Dialogue: 0,0:00:15.39,0:00:16.25,Sub,,0,0,0,,de pocas capas
+Dialogue: 0,0:00:16.26,0:00:17.25,Sub,,0,0,0,,atómicas.
+Dialogue: 0,0:00:17.47,0:00:18.52,Sub,,0,0,0,,Fueron descubiertas en
+Dialogue: 0,0:00:18.53,0:00:19.54,Sub,,0,0,0,,2011.
+Dialogue: 0,0:00:20.02,0:00:21.38,Sub,,0,0,0,,La inteligencia artificial
+Dialogue: 0,0:00:21.39,0:00:22.17,Sub,,0,0,0,,revisó bases de
+Dialogue: 0,0:00:22.18,0:00:23.54,Sub,,0,0,0,,datos cristalográficas y
+Dialogue: 0,0:00:23.55,0:00:25.22,Sub,,0,0,0,,encontró 33 MXenes
+Dialogue: 0,0:00:25.23,0:00:26.39,Sub,,0,0,0,,ya sintetizados pero
+Dialogue: 0,0:00:26.40,0:00:27.46,Sub,,0,0,0,,no reconocidos como
+Dialogue: 0,0:00:27.47,0:00:28.12,Sub,,0,0,0,,tales por la
+Dialogue: 0,0:00:28.13,0:00:29.65,Sub,,0,0,0,,comunidad científica.
+Dialogue: 0,0:00:30.15,0:00:31.21,Sub,,0,0,0,,Inspirados por esos
+Dialogue: 0,0:00:31.22,0:00:31.98,Sub,,0,0,0,,hallazgos,
+Dialogue: 0,0:00:31.99,0:00:33.48,Sub,,0,0,0,,crearon once nuevos.
+Dialogue: 0,0:00:33.70,0:00:34.83,Sub,,0,0,0,,Algunos usan tierras
+Dialogue: 0,0:00:34.84,0:00:36.04,Sub,,0,0,0,,raras como praseodimio
+Dialogue: 0,0:00:36.05,0:00:36.81,Sub,,0,0,0,,o neodimio y
+Dialogue: 0,0:00:36.82,0:00:38.30,Sub,,0,0,0,,pueden ser magnéticos,
+Dialogue: 0,0:00:38.31,0:00:40.16,Sub,,0,0,0,,ampliando las posibilidades.
+Dialogue: 0,0:00:40.66,0:00:41.43,Sub,,0,0,0,,Además,
+Dialogue: 0,0:00:41.44,0:00:42.53,Sub,,0,0,0,,inventaron un método
+Dialogue: 0,0:00:42.54,0:00:43.98,Sub,,0,0,0,,de síntesis rápido:
+Dialogue: 0,0:00:44.13,0:00:45.42,Sub,,0,0,0,,autopropagante de alta
+Dialogue: 0,0:00:45.43,0:00:46.43,Sub,,0,0,0,,temperatura.
+Dialogue: 0,0:00:46.65,0:00:47.87,Sub,,0,0,0,,No requiere calentamiento
+Dialogue: 0,0:00:47.88,0:00:48.96,Sub,,0,0,0,,externo prolongado y
+Dialogue: 0,0:00:48.97,0:00:50.38,Sub,,0,0,0,,termina en minutos.
+Dialogue: 0,0:00:50.88,0:00:51.98,Sub,,0,0,0,,Los MXenes tienen
+Dialogue: 0,0:00:51.99,0:00:53.51,Sub,,0,0,0,,enorme superficie relativa
+Dialogue: 0,0:00:53.52,0:00:54.31,Sub,,0,0,0,,al peso.
+Dialogue: 0,0:00:54.53,0:00:55.23,Sub,,0,0,0,,Un gramo puede
+Dialogue: 0,0:00:55.24,0:00:56.40,Sub,,0,0,0,,albergar áreas enormes
+Dialogue: 0,0:00:56.41,0:00:57.95,Sub,,0,0,0,,para reacciones químicas,
+Dialogue: 0,0:00:57.96,0:00:58.97,Sub,,0,0,0,,útiles en energía
+Dialogue: 0,0:00:58.98,0:00:59.85,Sub,,0,0,0,,o purificación de
+Dialogue: 0,0:00:59.86,0:01:00.48,Sub,,0,0,0,,agua.
+Dialogue: 0,0:01:00.98,0:01:01.79,Sub,,0,0,0,,El equipo llamó
+Dialogue: 0,0:01:01.80,0:01:02.71,Sub,,0,0,0,,al proyecto Treasure
+Dialogue: 0,0:01:02.72,0:01:03.44,Sub,,0,0,0,,Chest:
+Dialogue: 0,0:01:03.59,0:01:04.22,Sub,,0,0,0,,las bases de
+Dialogue: 0,0:01:04.23,0:01:04.77,Sub,,0,0,0,,datos y la
+Dialogue: 0,0:01:04.78,0:01:06.05,Sub,,0,0,0,,literatura antigua son
+Dialogue: 0,0:01:06.06,0:01:06.89,Sub,,0,0,0,,cofres de tesoro
+Dialogue: 0,0:01:06.90,0:01:07.87,Sub,,0,0,0,,si sabes abrirlas
+Dialogue: 0,0:01:07.88,0:01:09.65,Sub,,0,0,0,,con inteligencia artificial.
+Dialogue: 0,0:01:10.15,0:01:10.54,Sub,,0,0,0,,¿Qué más se
+Dialogue: 0,0:01:10.55,0:01:11.08,Sub,,0,0,0,,esconde en la
+Dialogue: 0,0:01:11.09,0:01:12.23,Sub,,0,0,0,,literatura antigua que
+Dialogue: 0,0:01:12.24,0:01:13.54,Sub,,0,0,0,,la inteligencia artificial
+Dialogue: 0,0:01:13.55,0:01:14.94,Sub,,0,0,0,,puede redescubrir hoy?
+Dialogue: 0,0:01:15.19,0:01:16.04,Sub,,0,0,0,,Esto fue Datos
+Dialogue: 0,0:01:16.05,0:01:17.20,Sub,,0,0,0,,y ociosidades.

@@ -1,0 +1,21 @@
+{
+  "project_id": "2026-11-01_mxenes-ia-descubrimiento",
+  "plataforma": [
+    "yt",
+    "tt",
+    "fb"
+  ],
+  "publish_at": "2026-11-20T19:30:00Z",
+  "ventana": "tarde",
+  "hora_cdmx": "13:30",
+  "caption_tt": "¿Materiales de solo átomos de grosor escondidos en bases de datos viejas? #ciencia #materiales #datosyociosidades",
+  "titulo_yt": "IA encuentra materiales 2D olvidados #Shorts",
+  "privacidad": "private→público a las 13:30 CST",
+  "estado": "montada",
+  "video": "capsula.mp4",
+  "miniatura": "portada.jpg (pendiente thumbnails.set)",
+  "yt_programado": false,
+  "tiktok": "pendiente",
+  "facebook": "pendiente",
+  "nota": "Montaje 2026-11-14, voz es-MX-JorgeNeural (edge-tts rate +7%, pitch -2Hz). 1080x1920 30fps, 89.00s, QA 21/21. 8 frames (sin inventar). plano_seconds 5, cierre ~11.8s (voz termina ~77.2s; cortinilla recortada de 18s para entrar en 85-90 s). Token ~/.capcot/token.json."
+}
