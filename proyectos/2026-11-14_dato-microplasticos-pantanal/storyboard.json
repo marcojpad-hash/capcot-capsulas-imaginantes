@@ -1,0 +1,384 @@
+{
+  "_schema": "capcot.storyboard.vertical.v1",
+  "project_id": "2026-11-14_dato-microplasticos-pantanal",
+  "fecha_objetivo": "2026-11-14",
+  "slot_local": "17:00",
+  "serie": "Datos y ociosidades",
+  "title": "El plástico llegó al Pantanal",
+  "titulo": "El plástico llegó al Pantanal",
+  "language": "es-MX",
+  "aspect_ratio": "9:16",
+  "target_duration_seconds": 84,
+  "scene_total_seconds": 78,
+  "cortinilla_seconds": 6,
+  "total_duration_seconds": 84,
+  "word_count": 194,
+  "estructura": "mito_vs_dato",
+  "audience": "Público general interesado en ciencia, fauna y ambiente.",
+  "occasion": "Sábado; ventana editorial de tarde 16:30–18:00 CDMX. 17:00 es el slot interno de staging, no una programación de publicación.",
+  "resumen": "Un estudio en Brasil relaciona la carga de microplásticos en sangre de tapires y osos hormigueros con la huella humana y la proximidad a infraestructura. El hallazgo en el Pantanal muestra que la distancia no basta para explicar la exposición.",
+  "narrative_contract": {
+    "central_question": "¿Cómo aparecen microplásticos en la sangre de fauna del Pantanal cuando los individuos muestreados vivían lejos de desarrollo e infraestructura de residuos?",
+    "promise": "Seguir el estudio desde las muestras de sangre y los datos GPS hasta el patrón observado y el límite de lo que puede explicarse.",
+    "stakes": "Si se confunde un paisaje remoto con un paisaje libre de exposición, se subestima la presencia de contaminantes móviles en refugios de fauna.",
+    "scientific_turn": "La carga se asocia con la huella humana y la proximidad a infraestructura, pero todos los individuos muestreados en el Pantanal tenían microplásticos pese a las distancias reportadas.",
+    "evidence_limit": "El estudio es observacional; empareja muestras de sangre y GPS, pero no rastrea el origen de cada partícula ni prueba una ruta causal única. Las distancias describen el sitio y los individuos muestreados, no rutas de dispersión.",
+    "payoff": "La sangre dio positivo en un sitio remoto; el mapa explica la distancia, pero no el trayecto. La pregunta final devuelve la apertura sin inventar una fuente."
+  },
+  "trend_source": {
+    "termino": "Human land use drives microplastic abundance in terrestrial wildlife",
+    "fecha_publicacion": "2026-11-11",
+    "url": "https://www.nature.com/articles/s41586-026-11285-x",
+    "tipo": "estudio_primario",
+    "google_trends_signal": false,
+    "nota": "Seleccionado por relevancia científica y oportunidad narrativa, no por volumen de búsqueda. Google Trends México no mostró una tendencia científica relacionada entre las primeras 25 consultas."
+  },
+  "editorial_status": "PROPUESTA_PENDIENTE_DE_GROK",
+  "arco": {
+    "hook_medias_res": "La sangre de fauna muestreada en el Pantanal dio positivo a microplásticos pese a la distancia de infraestructura.",
+    "desarrollo": "El estudio combina sangre, GPS y huella humana; presenta los conteos y la asociación observada.",
+    "cierre_historia": "El sitio remoto mantiene el hallazgo, pero el origen y la ruta de cada partícula no fueron rastreados.",
+    "reflexion_o_pregunta": "¿Qué caminos invisibles llevan plástico hasta refugios remotos?"
+  },
+  "estilo_id": "papel_rasgado_capas",
+  "estilo_visual": "Papel rasgado por capas (diorama)",
+  "visual_identity": {
+    "style_id": "papel_rasgado_capas",
+    "style_name": "Papel rasgado por capas (diorama)",
+    "prompt_base": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text",
+    "palette": "verde bosque, turquesa apagado, ocre, crema",
+    "lighting": "Luz lateral suave; sombras de profundidad entre capas; sin brillo plástico ni contraste fotográfico.",
+    "texture": "Bordes de papel rasgado, cartulina y fieltro; relieve de diorama con capas separadas.",
+    "composition": "Un sujeto o foco principal por plano; mapas y cifras como capas editoriales separadas en postproducción; continuidad de escala y paleta; no convertir cada plano en un collage de escenas.",
+    "negative_prompt": "Fotografía, render 3D, vector plano, scratchboard, acuarela, collage de estilos alternos, texto integrado en imagen, etiquetas generadas, logotipos, sangre gráfica, microfotografías inventadas, rutas GPS ficticias, atribución visual de una fuente concreta de contaminación.",
+    "reference_assets": [],
+    "seed": null,
+    "seed_policy": "Grok fija una semilla única para toda la cápsula y conserva la misma paleta, textura, escala de papel y morfología de los animales; este borrador no contiene assets generados."
+  },
+  "typography_identity": {
+    "font_family": "DejaVu Sans",
+    "font_weight": "700 para gancho; 400 para subtítulos",
+    "title_style": "Gancho de cinco palabras, alto contraste, añadido en postproducción.",
+    "subtitle_style": "Bloques de máximo tres palabras, zona segura inferior, añadidos en postproducción.",
+    "hierarchy": "Gancho > dato/etiqueta > subtítulos",
+    "animation": "Un movimiento por plano; las cifras aparecen únicamente cuando se explican."
+  },
+  "voice": {
+    "engine": "edge-tts",
+    "voice_id": "es-MX-JorgeNeural",
+    "language": "es-MX",
+    "rate": "+7%",
+    "pitch": "-2Hz",
+    "pad_seconds": 0.3,
+    "modo_pausas": "continuo"
+  },
+  "sources": [
+    {
+      "id": "SRC-001",
+      "cita_corta": "de Almeida Monteiro Melo Ferraz, M., Desbiez, A.L.J., Alves, M.H. et al. (2026). Human land use drives microplastic abundance in terrestrial wildlife. Nature.",
+      "url": "https://www.nature.com/articles/s41586-026-11285-x",
+      "doi": "10.1038/s41586-026-11285-x",
+      "accessed": "2026-11-14",
+      "publication_date": "2026-11-11",
+      "supports": [
+        "El estudio emparejó mediciones de microplásticos en sangre con datos GPS de tapires de tierras bajas y osos hormigueros gigantes en tres regiones de Brasil.",
+        "Se analizaron muestras de 47 animales; 40 tuvieron datos GPS suficientes para el análisis de uso del hábitat.",
+        "De 17,165 partículas con hit quality index (HQI) mayor de 75, 2,815 (16.4%) fueron identificadas como microplásticos.",
+        "Se detectaron microplásticos en la sangre de 43 de los 47 animales.",
+        "Las concentraciones se asociaron con la exposición a huella humana y la proximidad a desarrollo y a instalaciones de manejo de residuos.",
+        "Todos los individuos muestreados en el Pantanal tenían microplásticos, pese a vivir a más de 65 km del desarrollo más cercano y a más de 112 km de la instalación de manejo de residuos más cercana.",
+        "Los autores señalan que el muestreo ambiental emparejado fortalecería la inferencia causal; no se rastreó el origen de cada partícula.",
+        "El sitio de campo del Pantanal fue Baía das Pedras Ranch, Nhecolândia, Aquidauana, Mato Grosso do Sul; el artículo reporta el par numérico -19.33, -55.72 y cita Natural Earth y geobr como datos de mapa base."
+      ],
+      "verification_status": "PENDIENTE_RESOLVEDOR",
+      "verification_note": "La página editorial de Nature fue consultada y muestra título, autoría, fecha, resumen, métodos, resultados, coordenadas y DOI. Los intentos de resolución doi.org y Crossref no completaron la verificación independiente; el DOI se conserva como pendiente y no se declara validado."
+    }
+  ],
+  "mapa": {
+    "tipo": "pin_regional",
+    "sitio": "Baía das Pedras Ranch, Nhecolândia, Aquidauana, Mato Grosso do Sul, Brasil",
+    "region": "Pantanal Sur",
+    "coordinates": {
+      "latitude": -19.33,
+      "longitude": -55.72,
+      "datum": "WGS84"
+    },
+    "coordinate_source_id": "SRC-001",
+    "coordinate_source_note": "Coordenadas numéricas publicadas en Methods del artículo de Nature. El texto imprime valores negativos con sufijos de hemisferio N/E inconsistentes; el mapa conserva el par numérico firmado y omite sufijos hemisféricos.",
+    "cartographic_sources": [
+      {
+        "name": "Natural Earth",
+        "url": "https://www.naturalearthdata.com/",
+        "use": "Base cartográfica general; el artículo la cita entre los datos de mapa base."
+      },
+      {
+        "name": "geobr",
+        "url": "https://cran.r-project.org/web/packages/geobr/index.html",
+        "use": "Datos espaciales oficiales de Brasil; el artículo la cita entre los datos de mapa base."
+      }
+    ],
+    "precision_note": "Pin regional del sitio de estudio, no coordenada de captura ni trayectoria GPS de un animal. No mostrarlo como localización exacta de individuos ni dibujar rutas no publicadas.",
+    "source_ids": [
+      "SRC-001"
+    ]
+  },
+  "dato_grafico": {
+    "tipo": "proporcion_particulas",
+    "titulo": "2,815 de 17,165 partículas",
+    "numerador": 2815,
+    "denominador": 17165,
+    "porcentaje_publicado": 16.4,
+    "unidad": "partículas con HQI > 75",
+    "interpretacion": "El 16.4% de las partículas con HQI > 75 se clasificó como microplástico; no es el porcentaje de animales ni una concentración por mililitro.",
+    "metrica_secundaria": {
+      "numerador": 43,
+      "denominador": 47,
+      "unidad": "animales con microplásticos detectados en sangre"
+    },
+    "source_ids": [
+      "SRC-001"
+    ]
+  },
+  "scenes": [
+    {
+      "id": "scene_001",
+      "arc": "hook_medias_res",
+      "duration_seconds": 8,
+      "narration": "En el Pantanal, la sangre de la fauna muestreada dio positivo a microplásticos. El sitio estaba lejos de la infraestructura humana.",
+      "on_screen_text": "Sangre positiva",
+      "visual_description": "Primer plano de un tubo de muestra de sangre sin detalle gráfico; al fondo, siluetas sobrias de tapir y oso hormiguero dentro de un humedal remoto. La anomalía ya está presente en el primer fotograma.",
+      "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text Primer plano de un tubo de muestra de sangre sin detalle gráfico; al fondo, siluetas sobrias de tapir y oso hormiguero dentro de un humedal remoto. La anomalía ya está presente en el primer fotograma.",
+      "ambiente": "Viento leve del humedal y agua distante, sin voces ni fauna protagonista inventada.",
+      "sfx": [
+        "Golpe seco y breve al aparecer el resultado",
+        "Pulso sutil de laboratorio"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "papel_rasgado_capas",
+      "dramatic_beat": "La muestra ya dio positivo en un lugar que parece remoto.",
+      "scene_function": "Abrir con el resultado anómalo y plantear la contradicción entre distancia e identificación de microplásticos.",
+      "causal_bridge_from_previous": "Apertura de la historia: el resultado ya está ocurriendo y la distancia del sitio vuelve significativo el hallazgo.",
+      "question_state": "Se sabe que hay microplásticos en sangre; todavía no se sabe qué animales se estudiaron ni cómo se relacionó el resultado con el paisaje.",
+      "reason_to_continue": "Para entender la anomalía hay que conocer la muestra y el diseño del estudio.",
+      "new_information": "La detección ocurrió en fauna muestreada en el Pantanal, lejos de infraestructura humana."
+    },
+    {
+      "id": "scene_002",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "El estudio de Nature, publicado el 11 de noviembre, analizó 47 tapires y osos hormigueros gigantes de tres regiones de Brasil.",
+      "on_screen_text": "47 animales",
+      "visual_description": "Mapa en capas de Brasil con tres regiones de estudio diferenciadas por relieve de papel: Amazonía, Cerrado y Pantanal; sin rutas ni límites inventados. La cartografía se incorpora como capa editorial.",
+      "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text Mapa en capas de Brasil con tres regiones de estudio diferenciadas por relieve de papel: Amazonía, Cerrado y Pantanal; sin rutas ni límites inventados. La cartografía se incorpora como capa editorial.",
+      "ambiente": "Viento cálido de campo, discreto.",
+      "sfx": [
+        "Despliegue suave de una capa de papel",
+        "Tres pulsos de ubicación"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "papel_rasgado_capas",
+      "dramatic_beat": "El hallazgo deja de ser una anécdota y adquiere escala de estudio.",
+      "scene_function": "Presentar las especies, el tamaño de muestra y la cobertura espacial.",
+      "causal_bridge_from_previous": "La anomalía inicial exige identificar quiénes fueron muestreados y en qué regiones.",
+      "question_state": "Ya se conocen las especies y los tres paisajes; falta saber cómo conectaron las muestras con la exposición.",
+      "reason_to_continue": "El GPS permite pasar de una muestra aislada al paisaje recorrido por cada animal.",
+      "new_information": "El estudio analizó 47 tapires de tierras bajas y osos hormigueros gigantes de tres regiones brasileñas."
+    },
+    {
+      "id": "scene_003",
+      "arc": "desarrollo",
+      "duration_seconds": 9,
+      "narration": "El equipo tomó sangre y siguió por GPS a 40 animales para relacionar sus recorridos con la huella humana del paisaje.",
+      "on_screen_text": "40 con GPS",
+      "visual_description": "Collar GPS sobre la silueta de un tapir en un paisaje de papel; junto a él, una interfaz cartográfica abstracta sin trayectorias ni coordenadas animales inventadas.",
+      "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text Collar GPS sobre la silueta de un tapir en un paisaje de papel; junto a él, una interfaz cartográfica abstracta sin trayectorias ni coordenadas animales inventadas.",
+      "ambiente": "Viento bajo y ambiente abierto de sabana húmeda.",
+      "sfx": [
+        "Bip de localización aislado",
+        "Deslizamiento corto de mapa"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "papel_rasgado_capas",
+      "dramatic_beat": "La investigación une sangre y movimiento, no solo presencia o ausencia.",
+      "scene_function": "Explicar el método que permite relacionar la carga interna con el uso del paisaje.",
+      "causal_bridge_from_previous": "Después de conocer la muestra, el siguiente paso es entender cómo se vinculó cada animal con su entorno.",
+      "question_state": "Se sabe que 40 animales tuvieron datos GPS suficientes; todavía falta ver qué encontraron en las muestras.",
+      "reason_to_continue": "El análisis de partículas convierte las muestras en una medida comparable.",
+      "new_information": "Los investigadores emparejaron muestras de sangre con datos GPS de 40 animales."
+    },
+    {
+      "id": "scene_004",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "Identificó 17,165 partículas que superaron el índice de calidad 75; 2,815 eran microplásticos: 16.4%. Aparecieron en 43 de los 47 animales.",
+      "on_screen_text": "2,815 microplásticos",
+      "visual_description": "Mesa de análisis representada con capas de papel: espectro Raman abstracto, partículas clasificadas y una barra de proporción que se añadirá como gráfico en postproducción; no simular una microfotografía real.",
+      "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text Mesa de análisis representada con capas de papel: espectro Raman abstracto, partículas clasificadas y una barra de proporción que se añadirá como gráfico en postproducción; no simular una microfotografía real.",
+      "ambiente": "Ambiente de laboratorio controlado y casi silencioso.",
+      "sfx": [
+        "Clic de análisis",
+        "Tres pulsos breves al entrar las cifras"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "papel_rasgado_capas",
+      "dramatic_beat": "La escala del resultado aparece en dos conteos distintos: partículas y animales.",
+      "scene_function": "Entregar el dato cuantitativo y explicar qué representa cada denominador.",
+      "causal_bridge_from_previous": "Con muestras y recorridos relacionados, el equipo cuantificó las partículas presentes en sangre.",
+      "question_state": "Se conoce la frecuencia de detección y la proporción de partículas identificadas; falta explicar qué factores se relacionan con la carga.",
+      "reason_to_continue": "La distribución no fue uniforme y obliga a mirar el paisaje.",
+      "new_information": "De 17,165 partículas con HQI superior a 75, 2,815 fueron clasificadas como microplásticos; aparecieron en 43 de 47 animales."
+    },
+    {
+      "id": "scene_005",
+      "arc": "desarrollo",
+      "duration_seconds": 9,
+      "narration": "En conjunto, las concentraciones se asociaron con mayor presión humana y menor distancia a zonas de desarrollo y manejo de residuos.",
+      "on_screen_text": "Huella humana",
+      "visual_description": "Diorama de paisaje con un borde agrícola, una vía y una zona construida alejados entre sí; el gradiente de huella humana se añade como capa de datos, sin adjudicar una fuente concreta a ninguna partícula.",
+      "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text Diorama de paisaje con un borde agrícola, una vía y una zona construida alejados entre sí; el gradiente de huella humana se añade como capa de datos, sin adjudicar una fuente concreta a ninguna partícula.",
+      "ambiente": "Viento sobre pastizal y un fondo grave muy tenue.",
+      "sfx": [
+        "Transición de papel",
+        "Marcador discreto de distancia"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "papel_rasgado_capas",
+      "dramatic_beat": "La concentración se relaciona con la presión humana, pero no se convierte en una explicación única.",
+      "scene_function": "Mostrar la asociación estadística entre carga de microplásticos y huella humana/proximidad a infraestructura.",
+      "causal_bridge_from_previous": "Los conteos revelan que no todos los animales cargan la misma cantidad; el análisis busca qué condiciones acompañan esa diferencia.",
+      "question_state": "Hay una asociación con la presión humana y la cercanía a desarrollo y residuos; no se ha demostrado causalidad.",
+      "reason_to_continue": "El caso remoto del Pantanal complica una explicación basada solo en proximidad.",
+      "new_information": "Las concentraciones se asociaron con mayor huella humana y menor distancia a desarrollo y manejo de residuos."
+    },
+    {
+      "id": "scene_006",
+      "arc": "desarrollo",
+      "duration_seconds": 12,
+      "narration": "La sorpresa está en el Pantanal: todos los individuos muestreados allí tenían microplásticos, aunque vivían a más de 65 kilómetros del desarrollo y a más de 112 de una instalación de residuos.",
+      "on_screen_text": "Pantanal remoto",
+      "visual_description": "Mapa sobrio del Pantanal sur con un único pin regional en Baía das Pedras Ranch; dos anillos de distancia se rotulan en postproducción como distancias mínimas reportadas por el estudio, no como rutas de dispersión.",
+      "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text Mapa sobrio del Pantanal sur con un único pin regional en Baía das Pedras Ranch; dos anillos de distancia se rotulan en postproducción como distancias mínimas reportadas por el estudio, no como rutas de dispersión.",
+      "ambiente": "Agua de humedal, viento y aves lejanas sin protagonismo.",
+      "sfx": [
+        "Pin cartográfico suave",
+        "Dos pulsos espaciados para 65 y 112 kilómetros"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "papel_rasgado_capas",
+      "dramatic_beat": "El sitio remoto rompe la idea de que solo la cercanía a infraestructura explica la presencia.",
+      "scene_function": "Entregar el giro central: todos los individuos muestreados en el Pantanal tenían microplásticos pese a las distancias reportadas.",
+      "causal_bridge_from_previous": "La asociación con huella humana no explica por sí sola el hallazgo en el sitio más remoto del estudio.",
+      "question_state": "Se conoce el resultado remoto y las distancias; queda sin resolver por qué ruta llegaron las partículas.",
+      "reason_to_continue": "La distancia descarta una explicación simple, pero no identifica el transporte.",
+      "new_information": "Todos los individuos muestreados en el Pantanal tenían microplásticos; vivían a más de 65 km del desarrollo y 112 km de una instalación de residuos."
+    },
+    {
+      "id": "scene_007",
+      "arc": "cierre_historia",
+      "duration_seconds": 10,
+      "narration": "Eso no revela de dónde llegó cada partícula. El aire y el agua son rutas probables, pero el estudio no rastreó una fuente concreta ni probó una causa única.",
+      "on_screen_text": "Ruta sin rastrear",
+      "visual_description": "Dos capas posibles de transporte —aire y agua— atraviesan un paisaje de papel; se presentan como rutas plausibles descritas por los autores, no como trayectorias observadas en este estudio.",
+      "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text Dos capas posibles de transporte —aire y agua— atraviesan un paisaje de papel; se presentan como rutas plausibles descritas por los autores, no como trayectorias observadas en este estudio.",
+      "ambiente": "Viento y agua suave, sin crescendo alarmista.",
+      "sfx": [
+        "Corriente de aire discreta",
+        "Gota de agua aislada"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "papel_rasgado_capas",
+      "dramatic_beat": "La explicación se detiene en el límite real de la evidencia.",
+      "scene_function": "Cerrar la cadena causal sin atribuir un origen que el estudio no rastreó.",
+      "causal_bridge_from_previous": "El hallazgo remoto obliga a preguntar cómo llegan las partículas; los autores señalan rutas probables, pero no trazan una fuente concreta.",
+      "question_state": "El aire y el agua son rutas probables; el origen de cada partícula y la causalidad específica siguen sin determinarse.",
+      "reason_to_continue": "La historia debe terminar con la pregunta que el estudio deja abierta, no con una causa inventada.",
+      "new_information": "El estudio no rastreó la fuente de cada partícula ni probó una ruta causal única."
+    },
+    {
+      "id": "scene_008",
+      "arc": "reflexion_o_pregunta",
+      "duration_seconds": 10,
+      "narration": "El paisaje transformado se relaciona con la carga, pero no explica todo. ¿Qué caminos invisibles llevan plástico hasta refugios remotos? Esto fue Datos y ociosidades.",
+      "on_screen_text": "¿Qué camino?",
+      "visual_description": "Regreso al humedal remoto y al tubo de muestra del primer plano; la silueta del animal queda pequeña frente al paisaje, cerrando visualmente la distancia sin añadir un nuevo tema.",
+      "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text Regreso al humedal remoto y al tubo de muestra del primer plano; la silueta del animal queda pequeña frente al paisaje, cerrando visualmente la distancia sin añadir un nuevo tema.",
+      "ambiente": "El viento del inicio regresa y se apaga lentamente.",
+      "sfx": [
+        "Retorno del motivo sonoro inicial",
+        "Cierre musical breve"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "papel_rasgado_capas",
+      "dramatic_beat": "El final devuelve la anomalía inicial convertida en una pregunta de transporte ambiental.",
+      "scene_function": "Pagar la apertura: la sangre dio positivo, pero la ruta hasta el refugio sigue abierta.",
+      "causal_bridge_from_previous": "Como no se identificó la fuente, el resultado final es una pregunta sobre los caminos invisibles, no una atribución.",
+      "question_state": "La asociación con la huella humana está observada; el trayecto exacto hacia el sitio remoto permanece abierto.",
+      "reason_to_continue": "La pregunta cierra la cápsula y no introduce otro tema.",
+      "new_information": "La presencia en un refugio remoto exige estudiar rutas de transporte sin confundir asociación con causalidad."
+    }
+  ],
+  "cortinilla_fuentes": {
+    "duration_seconds": 6,
+    "titulo": "Fuentes",
+    "aviso": "Nature, 11 nov 2026. DOI pendiente de resolución independiente. Coordenada: sitio de estudio, no GPS animal.",
+    "firma": "Datos y ociosidades",
+    "source_ids": [
+      "SRC-001"
+    ]
+  },
+  "audio": {
+    "cama_musical": "circuito_neural",
+    "music_asset": null,
+    "music_plan": "Cama sintética menor y calmada, circuito_neural, muy baja debajo de la voz; intención sonora solamente, no hay audio generado.",
+    "music_license": null,
+    "mix_note": "Voz al frente; ambientes y SFX bajos; no generar ni adjuntar audio en esta fase."
+  },
+  "export": {
+    "resolution": "1080x1920",
+    "fps": 30,
+    "render_status": "NOT_GENERATED"
+  },
+  "publicacion": {
+    "status": "PENDIENTE_DECISION_GROK",
+    "platforms": [
+      "YouTube Shorts",
+      "TikTok",
+      "Facebook Reels"
+    ],
+    "note": "No publicar ni programar desde preproducción textual; privacidad y horario de publicación quedan sin fijar."
+  },
+  "estado": "PENDIENTE_AUDITOR",
+  "production_mode": "storyboard_only",
+  "validation_notes": [
+    "La narración tiene 194 palabras; ocho escenas suman 78 segundos y la cortinilla añade 6, total 84 segundos.",
+    "El DOI aparece en la página editorial, pero permanece PENDIENTE_RESOLVEDOR porque Crossref y doi.org no completaron resolución independiente.",
+    "El pin usa el sitio de campo del Pantanal; el artículo imprime coordenadas negativas con sufijos hemisféricos inconsistentes. No representa la ubicación de animales ni sus trayectorias.",
+    "No se añadió narrative_qa: la lectura en frío corresponde al Auditor independiente."
+  ],
+  "linea_tematica_provisional": "Dato científico / Naturaleza-bichos / ambiente; fauna silvestre y exposición a contaminantes móviles.",
+  "risk_notes": [
+    "No presentar asociación con huella humana como causalidad demostrada.",
+    "No afirmar que el estudio identificó el origen de cada partícula ni una ruta única de transporte.",
+    "No atribuir efectos clínicos o daño individual: el estudio mide microplásticos en sangre, no resultados de salud.",
+    "No confundir 16.4% de partículas con porcentaje de animales; 43/47 es la frecuencia de detección en animales.",
+    "Las distancias de 65 km y 112 km corresponden al contexto de los individuos muestreados en el Pantanal; no son rutas de dispersión.",
+    "La coordenada cartográfica es un pin regional del sitio de estudio y el texto fuente presenta sufijos hemisféricos inconsistentes."
+  ],
+  "approved_assets": []
+}
