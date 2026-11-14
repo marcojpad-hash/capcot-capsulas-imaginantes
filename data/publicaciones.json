@@ -495,5 +495,21 @@
   "facebook_content_id": "122109293529518983",
   "miniatura": "custom thumbnail OK",
   "nota": "Lote semanal 07:00 del 12-nov. Salió a la misma hora que las ratas topo (dato del día)."
+ },
+ {
+  "fecha": "2026-11-15",
+  "project_id": "2026-11-11_agua-magnetismo-hidrogeno",
+  "yt_id": "O9QlSaft5DY",
+  "url": "https://youtube.com/shorts/O9QlSaft5DY",
+  "privacidad": "private→public (publishAt)",
+  "publishAt_utc": "2026-11-15T19:30:00Z",
+  "hora_local": "2026-11-15 13:30 (America/Mexico_City)",
+  "video": "capsula.mp4",
+  "titulo": "Agua que une imanes lejanos #Shorts",
+  "origen": "propia",
+  "tiktok": "pendiente_programar_navegador",
+  "facebook": "pendiente_programar_navegador",
+  "miniatura": "thumbnails.set OK portada.jpg (primer frame)",
+  "nota": "Delegación #6 HECHA 2026-11-14: montaje Imaginantes 85.13 s, JorgeNeural, QA 21/21, commit 357a341. Registro tardío en este archivo: el orquestador no la anotó al programar (hueco de bookkeeping, corregido 2026-11-14)."
  }
 ]

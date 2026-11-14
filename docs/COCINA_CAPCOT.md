@@ -87,3 +87,38 @@ orden directa.
 
 La skill en JSON está en templates/skill_capsula.json (misma semana, mismas
 estaciones, mismas puertas QA).
+
+## Reparto semana 15–21 nov 2026 (orden de Marco, 2026-11-14 ~16:38–16:42 CST)
+
+Orden de la semana: FIFO por fecha de paquete. El dom 15-nov ya está cubierto
+(agua, Delegación #6). Slot español 13:30 CST todos los días.
+
+| Fecha | Cápsula (paquete) | Chef | Voz | Estado |
+|---|---|---|---|---|
+| dom 15-nov | Agua que une imanes lejanos (`2026-11-11_agua-magnetismo-hidrogeno`) | Imaginantes | JorgeNeural | HECHA (YT O9QlSaft5DY; TT/FB pendientes) |
+| lun 16-nov | Un toque de vida (`2026-10-25_corales-contacto`) | Imaginantes | JorgeNeural | Pendiente — lote mínimo de 2 |
+| mar 17-nov | ¿Qué sostuvo tres mantos? (`2026-10-26_baffin-bay-ice-shelf`) | Imaginantes | JorgeNeural | Pendiente — lote mínimo de 2 |
+| mié 18-nov | El mosquito que escucha (`2026-10-28_mosquito-fruitless-audicion`) | **Pecas — viral animado de la semana** | narradora_es (VoxCPM2 seed 52) | Pendiente |
+| jue 19-nov | La frontera invisible (`2026-10-29_juno-choque-proa`) | Imaginantes | JorgeNeural | Pendiente — según créditos |
+| vie 20-nov | ¿IA descubre materiales? (`2026-11-01_mxenes-ia-descubrimiento`) | Imaginantes | JorgeNeural | Pendiente — según créditos |
+| sáb 21-nov | ¿Molécula imposible? (`2026-11-02_oxoboranos-estables`) | Imaginantes | JorgeNeural | Pendiente — según créditos |
+
+- **Viral de Pecas (18-nov):** el mosquito es el paquete más completo de la
+  semana (kit CAPCUT + SRT + subtítulos) y su tema es biología, que según
+  `docs/VOCES_POR_TEMA.md` lleva narradora_es. Pecas lo monta con ffmpeg +
+  Kokoro/VoxCPM2 y deja `RELEVO.md` en el paquete. Imaginantes NO lo toca
+  (anti-duplicado).
+- **Canal en inglés (@datosyociosidadesEN, 5/día):** Pecas — traducción +
+  narración Kokoro am_adam / narrador_en (VoxCPM2 seed 53) a partir del ZIP
+  semanal de Imaginantes. El ritmo de 5/día se alimenta del catálogo completo
+  de montadas (71 Shorts públicos), no solo de las 6 de esta semana.
+- **Stock restante tras esta semana (8 paquetes):** autismo-microbioma-cerebro,
+  enzimas-incrustadas-oceano, bacterias-plasticos-oceano, sinergia-algas,
+  adn-sintetico-myc, telescopio-james-webb-exoplaneta, dato-robot-ensambla-orbita,
+  residual-riesgo-ldl. El robot NO tiene frames (Issues #161/#164): bloqueado
+  hasta tenerlos. Grok sigue generando el paquete diario C1 para la semana
+  siguiente.
+- **Créditos:** en el repo no hay saldo de Imaginantes (`data/balances_6h.json`
+  es solo vistas/likes) y el costo por cápsula no está medido. Imaginantes
+  reporta saldo antes/después de cada montaje (Delegación #7); con ese reporte
+  se sabrá cuántas cápsulas cubren los créditos que quedan.

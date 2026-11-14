@@ -49,6 +49,19 @@ su propio tablero.
 - ESTADO: PENDIENTE
 - NOTA: reasignado 2026-11-10 (G3): crear cuentas es decisión de Marco, no trabajo de autorización; la ejecución es de Pecas. Duda: Mpemba v2 ya se montó con los clips originales, ¿sigue haciendo falta esta prueba?
 
+### 7. Montar la semana 15–21 nov (lote oficial + reporte de créditos)
+- DE: Pecas (orden de Marco, 2026-11-14 ~16:38 CST)
+- PARA: Imaginantes (Grok Bot)
+- QUÉ: montar el MP4 oficial de cada cápsula con voz es-MX-JorgeNeural (edge-tts, rate +7%, pitch −2 Hz), correr QA oficial y programar en YT + TT + FB, slot 13:30 CST.
+  - PRIMERO, mínimo 2 (para medir cuántos créditos quedan): lun 16-nov `cola/entrada/2026-10-25_corales-contacto/` ("Un toque de vida") y mar 17-nov `cola/entrada/2026-10-26_baffin-bay-ice-shelf/` ("¿Qué sostuvo tres mantos?").
+  - LUEGO, según alcancen los créditos: jue 19-nov `cola/entrada/2026-10-29_juno-choque-proa/` ("La frontera invisible"), vie 20-nov `cola/entrada/2026-11-01_mxenes-ia-descubrimiento/` ("¿IA descubre materiales?"), sáb 21-nov `cola/entrada/2026-11-02_oxoboranos-estables/` ("¿Molécula imposible?").
+  - NO TOCAR: mié 18-nov, `cola/entrada/2026-10-28_mosquito-fruitless-audicion/` ("El mosquito que escucha") — ese lo monta Pecas como viral animado de la semana (ffmpeg + Kokoro/VoxCPM2 narradora_es). Regla anti-duplicado: paquete montado = paquete cerrado.
+  - El dom 15-nov ya está cubierto: agua (YT O9QlSaft5DY, 13:30; TT/FB pendientes).
+- CRÉDITOS (obligatorio): después de CADA montaje, reportar en el repo el saldo de Imaginantes antes y después. En el repo NO hay saldo de créditos (`data/balances_6h.json` es solo vistas/likes; último 2026-11-14 13:54 CDMX) y el costo por cápsula no está medido. Sin ese reporte no se puede saber cuántas cápsulas cubren los créditos que quedan.
+- PARA CUÁNDO: el lote de 2 primero (16–17 nov); el resto 19–21 nov según créditos.
+- ESTADO: PENDIENTE
+- NOTA: los paquetes de la semana ya existen en `cola/entrada/` (storyboard + fuentes; sin capsula.mp4; sin frames salvo robot). Stock restante tras esta semana: 8 paquetes (autismo-microbioma, enzimas-oceano, bacterias-plasticos, sinergia-algas, adn-myc, webb-exoplaneta, robot-orbita, ldl). El robot (`2026-11-09_dato-robot-ensambla-orbita`) NO tiene frames — sigue bloqueado por Issues #161/#164, no se monta hasta tenerlos. Grok debe seguir generando el paquete diario C1 para la semana siguiente (el stock cubre ~8 días más). Reparto completo de la semana en `docs/COCINA_CAPCOT.md` § "Reparto semana 15–21 nov 2026".
+
 ## En progreso
 
 (nada)
