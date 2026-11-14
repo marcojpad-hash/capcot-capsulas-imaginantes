@@ -11,11 +11,13 @@
   "caption_tt": "¿Qué pudo sostener tres enormes mantos de hielo? Una plataforma en la bahía de Baffin. #ciencia #hielo #datosyociosidades",
   "titulo_yt": "El hielo que sostuvo tres mantos #Shorts",
   "privacidad": "private→público a las 13:30 CST",
-  "estado": "montada",
+  "estado": "programado_yt",
   "video": "capsula.mp4",
-  "miniatura": "portada.jpg (pendiente thumbnails.set)",
-  "yt_programado": false,
+  "miniatura": "portada.jpg (thumbnails.set OK; shortsAspectRatio/sardefault.jpg 1080x1920 verificada = portada, título visible, sin subtítulo)",
+  "yt_programado": true,
   "tiktok": "pendiente",
   "facebook": "pendiente",
-  "nota": "Montaje 2026-11-14, voz es-MX-JorgeNeural (edge-tts rate +7%, pitch -2Hz). 1080x1920 30fps, 90.17s, QA 21/21. plano_seconds 5, cierre/cortinilla 10s (voz termina ~80.0s). Guion recortado de 215 a 199 palabras para entrar cerca de 85-90 s, conservando SRC-001/SRC-002. Token ~/.capcot/token.json."
+  "nota": "Montaje 2026-11-14, voz es-MX-JorgeNeural (edge-tts rate +7%, pitch -2Hz). 1080x1920 30fps, 90.17s, QA 21/21. plano_seconds 5, cierre/cortinilla 10s (voz termina ~80.0s). Guion recortado de 215 a 199 palabras para entrar cerca de 85-90 s, conservando SRC-001/SRC-002. Token ~/.capcot/token.json. YT KnP1j4y72ug private con publishAt 2026-11-17T19:30:00Z; thumbnails.set con portada.jpg (t=0 s). Token ~/.capcot/token.json. Sin colisión en ese slot. TT y FB pendientes.",
+  "yt_id": "KnP1j4y72ug",
+  "url": "https://youtube.com/shorts/KnP1j4y72ug"
 }

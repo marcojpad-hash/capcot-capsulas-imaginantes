@@ -527,5 +527,21 @@
     "facebook": "pendiente",
     "miniatura": "portada.jpg (sardefault verificada)",
     "nota": "Montaje 2026-11-14, JorgeNeural, 90.00s, QA 21/21. Token ~/.capcot/token.json. Delegación #7."
+  },
+  {
+    "fecha": "2026-11-17",
+    "project_id": "2026-10-26_baffin-bay-ice-shelf",
+    "yt_id": "KnP1j4y72ug",
+    "url": "https://youtube.com/shorts/KnP1j4y72ug",
+    "privacidad": "private→public (publishAt)",
+    "publishAt_utc": "2026-11-17T19:30:00Z",
+    "hora_local": "2026-11-17 13:30 (America/Mexico_City)",
+    "video": "capsula.mp4",
+    "titulo": "El hielo que sostuvo tres mantos #Shorts",
+    "origen": "propia",
+    "tiktok": "pendiente",
+    "facebook": "pendiente",
+    "miniatura": "portada.jpg (sardefault verificada)",
+    "nota": "Montaje 2026-11-14, JorgeNeural, 90.17s, QA 21/21. Token ~/.capcot/token.json. Delegación #7."
   }
 ]
