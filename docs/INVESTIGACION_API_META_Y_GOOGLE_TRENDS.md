@@ -279,3 +279,52 @@ No se encontró anuncio oficial nuevo que cambie el estado de acceso alfa limita
 - **BLOQUEO DE VERIFICACIÓN:** el anuncio oficial de Meta devolvió HTTP 429; las páginas oficiales de Graph API, Instagram Platform y Page Insights también limitaron el acceso. La confirmación directa de los detalles v27 queda pendiente.
 - **SIN CAMBIO:** no se modificó el contrato de datos, no se añadieron métricas, no se activó OAuth, no se descargaron Insights privados y no se publicaron contenidos.
 - **Siguiente criterio:** antes de implementar cualquier campo de v27, revalidar en el changelog oficial de Meta y hacer una prueba de lectura con un activo propio autorizado. Nunca enviar tokens por chat ni guardar secretos en Git.
+
+
+## 9.6. Verificación incremental de referencias oficiales — 2026-11-14
+
+Corte de lectura: 2026-11-14, aproximadamente 08:01, America/Mexico_City. Esta sección registra documentación visible en las referencias oficiales; no implica que se haya ejecutado una llamada autenticada a las APIs.
+
+### Meta — Facebook Pages Insights
+
+La referencia oficial de Page Insights muestra Graph API v27.0 y confirma estas restricciones operativas:
+
+- Los datos de Page Insights solo están disponibles para páginas con al menos 100 likes.
+- La mayoría de métricas se actualiza aproximadamente cada 24 horas.
+- Solo están disponibles los últimos dos años; una consulta con `since` y `until` puede abarcar como máximo 90 días.
+- Las métricas demográficas solo se devuelven cuando hay datos de 100 personas o más.
+- Se requieren `read_insights`, `pages_read_engagement` y la tarea de página `ANALYZE`.
+- **Las interacciones de Reels no están incluidas en Page Insights.** Por tanto, Page Insights no debe tratarse como una fuente completa de engagement de Facebook Reels. Cualquier endpoint alternativo de Reel/video debe verificarse por separado antes de incorporarlo.
+- La referencia marca `page_impressions_unique` como obsoleta por encima de Graph API v25.
+
+Este límite de Reels es relevante para CAPCOT: evita comparar una métrica incompleta de Page Insights con interacciones visibles en la interfaz como si fueran el mismo universo.
+
+Referencia: https://developers.facebook.com/docs/graph-api/reference/insights/
+
+### Meta — Instagram User Insights
+
+La referencia oficial consultada también declara Graph API v27.0. El parámetro `metric` enumera, entre otras, `reach`, `follower_count`, `website_clicks`, `profile_views`, `accounts_engaged`, `total_interactions`, `likes`, `comments`, `shares`, `saves`, `replies`, `follows_and_unfollows`, `profile_links_taps`, `views` y `content_views`; también aparecen métricas `threads_*` (`threads_likes`, `threads_replies`, `threads_followers`, `threads_views`, `threads_clicks`, `threads_reposts`, entre otras). Se requieren `metric` y `period`.
+
+La presencia de métricas Threads se registra como inventario de la referencia, no como autorización para añadir Threads a la distribución de CAPCOT ni como prueba de que todas sean aplicables a cada tipo de cuenta o medio. No se encontró en esta revisión un changelog fechado que permita afirmar cuándo se incorporaron; no se declara una novedad de producto por inferencia.
+
+Referencia: https://developers.facebook.com/docs/graph-api/reference/shadow-ig-user/insights/
+
+### Graph API changelog
+
+Las referencias específicas de Page Insights e Instagram User Insights muestran v27.0. La página general de changelog y el anuncio de versión no pudieron leerse en esta pasada por respuestas HTTP 429. Por ello no se atribuye a esta ejecución ningún cambio adicional de versión, deprecación ni fecha de retirada que no esté explícitamente respaldado por las referencias anteriores.
+
+Referencia: https://developers.facebook.com/docs/graph-api/changelog/
+
+### Google Trends API alpha
+
+La documentación oficial continúa describiendo una alpha con acceso limitado mediante solicitud. Mantiene la ventana móvil de cinco años, agregaciones diarias/semanales/mensuales/anuales, regiones y subregiones, y datos escalados consistentemente. No se encontró un anuncio oficial nuevo que cambie el estado de acceso o el contrato de la alpha.
+
+Referencias:
+- https://developers.google.com/search/apis/trends
+- https://developers.google.com/search/blog/2025/07/trends-api
+
+### Resultado de esta revisión
+
+- Cambio operativo relevante documentado: Page Insights excluye interacciones de Reels y tiene límites de elegibilidad, retención y rango de consulta que deben reflejarse en cualquier diseño de métricas.
+- Sin cambio de implementación: no se ejecutaron llamadas autenticadas, no se usaron credenciales y no se modificó ningún conector.
+- No se modificaron datos de publicación ni métricas históricas.
