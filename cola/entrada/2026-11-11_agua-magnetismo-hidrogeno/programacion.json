@@ -1,12 +1,21 @@
 {
   "project_id": "2026-11-11_agua-magnetismo-hidrogeno",
-  "plataforma": ["yt", "tt", "fb"],
+  "plataforma": [
+    "yt",
+    "tt",
+    "fb"
+  ],
   "publish_at": "2026-11-15T19:30:00Z",
   "ventana": "tarde",
   "hora_cdmx": "13:30",
   "caption_tt": "El agua ordena imanes lejanos en Sendai. ¿Qué más esconde una molécula simple? #ciencia #magnetismo #datosyociosidades",
   "titulo_yt": "Agua que une imanes lejanos #Shorts",
-  "privacidad": "private→público a esa hora",
+  "privacidad": "private→público a las 13:30 CST",
   "estado": "montada",
-  "nota": "Montaje Grok 2026-11-14 14:16 CST. 1080x1920 30fps, 55.9s (narración 38s). Voz Altair (no JorgeNeural: edge-tts no disponible aquí). capsula.mp4 en workspace; subida binaria pendiente por herramienta de texto."
+  "video": "capsula.mp4",
+  "miniatura": "portada.jpg (primer frame, título en caja crema)",
+  "yt_programado": false,
+  "tiktok": "pendiente",
+  "facebook": "pendiente",
+  "nota": "Montaje 2026-11-14, voz es-MX-JorgeNeural (edge-tts rate +7%, pitch -2Hz). 1080x1920 30fps, 85.13s, QA 21/21. El guion original del paquete (~91 palabras, 6 escenas) no alcanzaba ~82s en modo continuo sin huecos de voz; se amplió a 9 escenas y 203 palabras conservando solo los hechos de SRC-001/SRC-002. No se usó ni reutilizó la versión Altair de 55.9s (no había capsula.mp4 de Altair en el paquete ni en /workspace/artifacts). TT y FB se programan después, con portada = primer frame."
 }

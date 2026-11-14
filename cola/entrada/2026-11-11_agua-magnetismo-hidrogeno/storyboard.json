@@ -3,7 +3,7 @@
   "title": "Agua que une imanes lejanos",
   "language": "es-MX",
   "aspect_ratio": "9:16",
-  "target_duration_seconds": 82,
+  "target_duration_seconds": 88,
   "trend_source": {
     "tipo": "noticia_cientifica",
     "medio": "Phys.org / Inorganic Chemistry",
@@ -31,7 +31,10 @@
       "url": "https://doi.org/10.1021/acs.inorgchem.6c01062",
       "doi": "10.1021/acs.inorgchem.6c01062",
       "accessed": "2026-11-11",
-      "supports": ["pares antiferromagnéticos ~10 K mediados por H-bond al ordenar agua", "complejos Cu(II) fluorados"],
+      "supports": [
+        "pares antiferromagnéticos ~10 K mediados por H-bond al ordenar agua",
+        "complejos Cu(II) fluorados"
+      ],
       "ref_display": "DOI 10.1021/acs.inorgchem.6c01062"
     },
     {
@@ -39,7 +42,10 @@
       "cita_corta": "Phys.org (2026-11-10). Water molecules turn out to be secret messengers for magnetism.",
       "url": "https://phys.org/news/2026-11-molecules-secret-messengers-magnetism.html",
       "accessed": "2026-11-11",
-      "supports": ["noticia reciente Tohoku + Taipei Tech", "orientación de agua controla acoplamiento"],
+      "supports": [
+        "noticia reciente Tohoku + Taipei Tech",
+        "orientación de agua controla acoplamiento"
+      ],
       "ref_display": "Phys.org 10-nov-2026"
     }
   ],
@@ -47,83 +53,194 @@
     {
       "id": "scene_001",
       "arc": "hook_medias_res",
-      "duration_seconds": 9.0,
-      "narration": "En Sendai, el agua ordena imanes lejanos.",
+      "duration_seconds": 10,
+      "narration": "En Sendai, un equipo vio algo inesperado: el agua ordenó imanes lejanos, iones de cobre que no estaban unidos por un enlace fuerte.",
       "on_screen_text": "Agua une imanes",
-      "visual_description": "Fragmented geometric planes of copper ions and water molecules as newspaper collage faces interlocking.",
-      "image_prompt": "analytical cubism painting with newspaper collage fragments, fragmented geometric planes, ochre, slate blue and brown palette, textured oil paint, vertical 9:16, no text + copper ions linked by water molecules in cubist collage of scientific diagrams",
-      "source_ids": ["SRC-001", "SRC-002"],
+      "visual_description": "Iones de cobre distantes unidos solo por planos fragmentados de agua, como imanes que se atraen a través del vacío cubista.",
+      "image_prompt": "analytical cubism painting with newspaper collage fragments, fragmented geometric planes, ochre, slate blue and brown palette, textured oil paint, vertical 9:16, no text, no letters, no typography, no readable writing, no captions, no people with glasses + distant faceted copper-colored ion clusters on opposite sides of the canvas, linked only by fractured water-molecule planes and torn newspaper collage shards; interlocking geometric facets like magnets attracting across empty space; no people",
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
       "asset_filename": "frames/scene_001.jpg",
-      "ambiente": "laboratorio",
-      "sfx": ["campanas_suaves"]
+      "sfx": [
+        "silencio"
+      ]
     },
     {
       "id": "scene_002",
       "arc": "desarrollo",
-      "duration_seconds": 11.0,
-      "narration": "Investigadores de Tohoku University y Taipei Tech enfriaron complejos de cobre fluorado.",
-      "visual_description": "Cubist lab scene with scientists and cooling apparatus made of geometric facets and paper scraps.",
-      "image_prompt": "analytical cubism painting with newspaper collage fragments, fragmented geometric planes, ochre, slate blue and brown palette, textured oil paint, vertical 9:16, no text + laboratory with scientists cooling copper complex crystals in geometric cubist style",
-      "source_ids": ["SRC-001"],
+      "duration_seconds": 9,
+      "narration": "Investigadores de Tohoku University, en Japón, y de Taipei Tech enfriaron cristales de complejos de cobre fluorado para estudiar su magnetismo.",
+      "on_screen_text": "Tohoku y Taipei",
+      "visual_description": "Laboratorio cubista con aparatos de enfriamiento y cristales de cobre, sin rostros ni gafas.",
+      "image_prompt": "analytical cubism painting with newspaper collage fragments, fragmented geometric planes, ochre, slate blue and brown palette, textured oil paint, vertical 9:16, no text, no letters, no typography, no readable writing, no captions, no people with glasses + laboratory cooling apparatus and faceted copper-complex crystals built from geometric planes and torn newspaper, frost and copper ochre facets, glassware as angular planes, no human faces, no eyeglasses, no people",
+      "source_ids": [
+        "SRC-001"
+      ],
       "asset_filename": "frames/scene_002.jpg",
-      "ambiente": "laboratorio",
-      "sfx": ["hielo"]
+      "sfx": [
+        "silencio"
+      ],
+      "capa": {
+        "tipo": "mapa",
+        "region": [
+          139.5,
+          142.0,
+          37.0,
+          39.5
+        ],
+        "puntos": [
+          {
+            "nombre": "Tohoku Univ. Sendai",
+            "lon": 140.87,
+            "lat": 38.27
+          }
+        ],
+        "titulo": "Sendai, Japón",
+        "fuente": "Tohoku University (SRC-002)",
+        "plano": 1
+      }
     },
     {
       "id": "scene_003",
       "arc": "desarrollo",
-      "duration_seconds": 12.0,
-      "narration": "Bajo 260 kelvin las moléculas de agua se alinearon y formaron puentes de hidrógeno.",
-      "visual_description": "Ordered water molecules as cubist bridges connecting distant copper ions.",
-      "image_prompt": "analytical cubism painting with newspaper collage fragments, fragmented geometric planes, ochre, slate blue and brown palette, textured oil paint, vertical 9:16, no text + water molecules aligning into hydrogen bonds connecting copper ions in cubist planes",
-      "source_ids": ["SRC-001"],
+      "duration_seconds": 10,
+      "narration": "Cuando la temperatura bajó de 260 kelvin, las moléculas de agua se alinearon y formaron puentes de hidrógeno entre iones que antes no estaban ligados.",
+      "on_screen_text": "Agua se alinea",
+      "visual_description": "Moléculas de agua como puentes cubistas que se alinean entre iones de cobre distantes.",
+      "image_prompt": "analytical cubism painting with newspaper collage fragments, fragmented geometric planes, ochre, slate blue and brown palette, textured oil paint, vertical 9:16, no text, no letters, no typography, no readable writing, no captions, no people with glasses + water molecules as angular slate-blue cubist bridges aligning into hydrogen-bond straps that connect distant faceted copper ions; ordered rows of H2O planes against a colder brown-blue field; no people",
+      "source_ids": [
+        "SRC-001"
+      ],
       "asset_filename": "frames/scene_003.jpg",
-      "ambiente": "laboratorio",
-      "sfx": ["burbujas"]
+      "sfx": [
+        "silencio"
+      ]
     },
     {
       "id": "scene_004",
       "arc": "desarrollo",
-      "duration_seconds": 12.0,
-      "narration": "Esos puentes unieron iones de cobre no ligados y crearon pares antiferromagnéticos de unos 10 kelvin.",
-      "visual_description": "Magnetic moments canceling in cubist dimer pairs linked by H-bonds.",
-      "image_prompt": "analytical cubism painting with newspaper collage fragments, fragmented geometric planes, ochre, slate blue and brown palette, textured oil paint, vertical 9:16, no text + antiferromagnetic pairs of copper ions connected by hydrogen bond bridges in cubist collage",
-      "source_ids": ["SRC-001"],
+      "duration_seconds": 10,
+      "narration": "Esos puentes unieron iones de cobre distantes y crearon pares antiferromagnéticos: momentos magnéticos que se cancelan, con una fuerza de unos 10 kelvin.",
+      "on_screen_text": "Pares a 10 K",
+      "visual_description": "Pares de iones de cobre cuyos momentos se cancelan, unidos por puentes de hidrógeno.",
+      "image_prompt": "analytical cubism painting with newspaper collage fragments, fragmented geometric planes, ochre, slate blue and brown palette, textured oil paint, vertical 9:16, no text, no letters, no typography, no readable writing, no captions, no people with glasses + cubist dimer pairs of copper-ion polyhedra whose opposing angular facets cancel each other, linked by thin hydrogen-bond bridges; two mirrored metallic clusters in ochre and slate blue; no arrows with text, no people",
+      "source_ids": [
+        "SRC-001"
+      ],
       "asset_filename": "frames/scene_004.jpg",
-      "ambiente": "laboratorio",
-      "sfx": ["magnetismo"]
+      "sfx": [
+        "silencio"
+      ],
+      "capa": {
+        "tipo": "dato",
+        "valor": "~10 K",
+        "etiqueta": "fuerza del par antiferromagnético",
+        "fuente": "Nawa et al., Inorganic Chemistry, 2026",
+        "plano": 1
+      }
     },
     {
       "id": "scene_005",
-      "arc": "cierre_historia",
-      "duration_seconds": 10.0,
-      "narration": "La difracción de neutrones y la teoría DFT confirmaron el camino del hidrógeno.",
-      "visual_description": "Neutron diffraction patterns and DFT models as overlapping cubist layers.",
-      "image_prompt": "analytical cubism painting with newspaper collage fragments, fragmented geometric planes, ochre, slate blue and brown palette, textured oil paint, vertical 9:16, no text + neutron diffraction data and DFT calculations of hydrogen bonds in geometric collage",
-      "source_ids": ["SRC-001"],
+      "arc": "desarrollo",
+      "duration_seconds": 9,
+      "narration": "El estudio, publicado en Inorganic Chemistry por Nawa y colegas, muestra que la orientación del agua controla el acoplamiento magnético a distancia.",
+      "on_screen_text": "El agua orienta",
+      "visual_description": "Red cristalina de complejos de cobre fluorado; el agua como fragmentos que giran y cambian el acoplamiento.",
+      "image_prompt": "analytical cubism painting with newspaper collage fragments, fragmented geometric planes, ochre, slate blue and brown palette, textured oil paint, vertical 9:16, no text, no letters, no typography, no readable writing, no captions, no people with glasses + cubist crystalline lattice of fluorinated copper complexes, water molecules as rotating collage shards placed between metal centers, changing the coupling across distance; geometric crystal chemistry, no people, no readable journal titles",
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
       "asset_filename": "frames/scene_005.jpg",
-      "ambiente": "laboratorio",
-      "sfx": ["datos"]
+      "sfx": [
+        "silencio"
+      ]
     },
     {
       "id": "scene_006",
-      "arc": "reflexion_o_pregunta",
-      "duration_seconds": 12.0,
-      "narration": "El agua común puede sintonizar magnetismo sin enlaces fuertes. ¿Qué más esconde una molécula tan simple? Esto fue Datos y ociosidades.",
-      "on_screen_text": "¿Más secretos del agua?",
-      "visual_description": "Simple water molecule in vast cubist space of possible materials.",
-      "image_prompt": "analytical cubism painting with newspaper collage fragments, fragmented geometric planes, ochre, slate blue and brown palette, textured oil paint, vertical 9:16, no text + single water molecule floating in geometric space of magnetic materials collage",
-      "source_ids": ["SRC-001", "SRC-002"],
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "Lo confirmaron con difracción de neutrones, que localiza el hidrógeno, y con cálculos de teoría del funcional de la densidad, o DFT.",
+      "on_screen_text": "Neutrones y DFT",
+      "visual_description": "Patrones de difracción de neutrones y planos de cálculo DFT superpuestos en capas cubistas.",
+      "image_prompt": "analytical cubism painting with newspaper collage fragments, fragmented geometric planes, ochre, slate blue and brown palette, textured oil paint, vertical 9:16, no text, no letters, no typography, no readable writing, no captions, no people with glasses + overlapping cubist layers of circular neutron diffraction rings and geometric molecular-orbital density planes, torn newspaper diagram fragments with no readable characters, scientific instruments as faceted forms, no people",
+      "source_ids": [
+        "SRC-001"
+      ],
       "asset_filename": "frames/scene_006.jpg",
-      "ambiente": "laboratorio",
-      "sfx": ["reflexion"]
+      "sfx": [
+        "silencio"
+      ]
+    },
+    {
+      "id": "scene_007",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "No hace falta un enlace covalente rígido: al ordenarse, una molécula de agua común puede sintonizar cómo se hablan dos centros magnéticos.",
+      "on_screen_text": "Sin enlace fuerte",
+      "visual_description": "Una molécula de agua sencilla entre dos imanes metálicos cubistas, unida solo por filamentos tenues.",
+      "image_prompt": "analytical cubism painting with newspaper collage fragments, fragmented geometric planes, ochre, slate blue and brown palette, textured oil paint, vertical 9:16, no text, no letters, no typography, no readable writing, no captions, no people with glasses + a simple faceted water molecule hovering between two distant metallic cubist magnets, connected only by thin collage filaments instead of thick chemical bonds; spacious geometric composition, no people",
+      "source_ids": [
+        "SRC-001"
+      ],
+      "asset_filename": "frames/scene_007.jpg",
+      "sfx": [
+        "silencio"
+      ]
+    },
+    {
+      "id": "scene_008",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "Eso abre una pista para materiales magnéticos: mover u orientar el agua, no solo cambiar el metal o el ligando que lo rodea.",
+      "on_screen_text": "Una pista nueva",
+      "visual_description": "Paisaje cubista de materiales magnéticos, con planos de agua que se orientan entre cristales metálicos.",
+      "image_prompt": "analytical cubism painting with newspaper collage fragments, fragmented geometric planes, ochre, slate blue and brown palette, textured oil paint, vertical 9:16, no text, no letters, no typography, no readable writing, no captions, no people with glasses + a cubist landscape of magnetic materials, geometric metal crystals and water planes being rotated like interlocking puzzle facets between ligands; laboratory-to-material transition, no people, no readable labels",
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "asset_filename": "frames/scene_008.jpg",
+      "sfx": [
+        "silencio"
+      ]
+    },
+    {
+      "id": "scene_009",
+      "arc": "reflexion_o_pregunta",
+      "duration_seconds": 12,
+      "narration": "Así, el agua cotidiana puede sintonizar magnetismo sin enlaces fuertes. ¿Qué más esconde una molécula tan simple? Esto fue Datos y ociosidades.",
+      "on_screen_text": "¿Más secretos del agua?",
+      "visual_description": "Una sola molécula de agua en un espacio cubista amplio de posibles materiales magnéticos.",
+      "image_prompt": "analytical cubism painting with newspaper collage fragments, fragmented geometric planes, ochre, slate blue and brown palette, textured oil paint, vertical 9:16, no text, no letters, no typography, no readable writing, no captions, no people with glasses + a single monumental faceted water molecule floating in a vast geometric space of possible magnetic materials, quiet contemplative composition, ochre slate blue and brown newspaper collage, no people, no typography",
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "asset_filename": "frames/scene_009.jpg",
+      "sfx": [
+        "silencio"
+      ]
     }
   ],
   "capas": [
     {
       "tipo": "mapa",
-      "region": [140.7, 141.0, 38.1, 38.4],
-      "puntos": [{"lon": 140.87, "lat": 38.27, "label": "Tohoku Univ. Sendai"}]
+      "region": [
+        140.7,
+        141.0,
+        38.1,
+        38.4
+      ],
+      "puntos": [
+        {
+          "lon": 140.87,
+          "lat": 38.27,
+          "label": "Tohoku Univ. Sendai"
+        }
+      ]
     },
     {
       "tipo": "dato",
@@ -142,7 +259,25 @@
     "filename": "capsula.mp4",
     "resolution": "1080x1920",
     "fps": 30,
-    "loudness_lufs": -14
+    "loudness_lufs": -14,
+    "plano_seconds": 5,
+    "subtitle_max_words": 3
   },
-  "titulo": "Agua une imanes"
+  "titulo": "Agua une imanes",
+  "resumen": "En Sendai, moléculas de agua ordenadas formaron puentes de hidrógeno que acoplaron iones de cobre distantes y crearon pares antiferromagnéticos de unos 10 kelvin. Datos verificados contados como historia.",
+  "keywords": [
+    "magnetismo",
+    "agua",
+    "hidrógeno",
+    "Tohoku"
+  ],
+  "proveedor_imagenes": "generadas con IA (ilustración no realista, cubismo_collage)",
+  "parece_real": false,
+  "audio": {
+    "music_asset": "sintetico:arpegio",
+    "cama_musical": "arpegio",
+    "music_lufs": -27,
+    "ambiente_lufs": -26
+  },
+  "nota": "Guion original del paquete (~91 palabras, ~6 escenas) era demasiado corto para 82–88 s en modo continuo sin huecos de voz. Se amplió a 9 escenas y ~219 palabras conservando solo los hechos de SRC-001/SRC-002. Voz fija es-MX-JorgeNeural."
 }
