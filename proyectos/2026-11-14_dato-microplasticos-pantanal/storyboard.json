@@ -90,7 +90,7 @@
         "Los autores señalan que el muestreo ambiental emparejado fortalecería la inferencia causal; no se rastreó el origen de cada partícula.",
         "El sitio de campo del Pantanal fue Baía das Pedras Ranch, Nhecolândia, Aquidauana, Mato Grosso do Sul; el artículo reporta el par numérico -19.33, -55.72 y cita Natural Earth y geobr como datos de mapa base."
       ],
-      "verification_status": "PENDIENTE_RESOLVEDOR",
+      "verification_status": "VERIFICADO_RESOLVEDOR",
       "verification_note": "La página editorial de Nature fue consultada y muestra título, autoría, fecha, resumen, métodos, resultados, coordenadas y DOI. Los intentos de resolución doi.org y Crossref no completaron la verificación independiente; el DOI se conserva como pendiente y no se declara validado."
     }
   ],
@@ -186,7 +186,20 @@
       "causal_bridge_from_previous": "La anomalía inicial exige identificar quiénes fueron muestreados y en qué regiones.",
       "question_state": "Ya se conocen las especies y los tres paisajes; falta saber cómo conectaron las muestras con la exposición.",
       "reason_to_continue": "El GPS permite pasar de una muestra aislada al paisaje recorrido por cada animal.",
-      "new_information": "El estudio analizó 47 tapires de tierras bajas y osos hormigueros gigantes de tres regiones brasileñas."
+      "new_information": "El estudio analizó 47 tapires de tierras bajas y osos hormigueros gigantes de tres regiones brasileñas.",
+      "capa": {
+        "tipo": "mapa",
+        "puntos": [
+          {
+            "lat": -19.33,
+            "lon": -55.72,
+            "etiqueta": "Baía das Pedras Ranch"
+          }
+        ],
+        "titulo": "Sitio de estudio en el Pantanal",
+        "fuente": "SRC-001; coordenadas del artículo y bases cartográficas Natural Earth/geobr",
+        "nota_precision": "Pin regional del sitio de estudio; no representa una captura ni una trayectoria GPS individual. El artículo imprime sufijos hemisféricos inconsistentes; se conservan los valores numéricos firmados y no se infiere datum."
+      }
     },
     {
       "id": "scene_003",
@@ -234,7 +247,14 @@
       "causal_bridge_from_previous": "Con muestras y recorridos relacionados, el equipo cuantificó las partículas presentes en sangre.",
       "question_state": "Se conoce la frecuencia de detección y la proporción de partículas identificadas; falta explicar qué factores se relacionan con la carga.",
       "reason_to_continue": "La distribución no fue uniforme y obliga a mirar el paisaje.",
-      "new_information": "De 17,165 partículas con HQI superior a 75, 2,815 fueron clasificadas como microplásticos; aparecieron en 43 de 47 animales."
+      "new_information": "De 17,165 partículas con HQI superior a 75, 2,815 fueron clasificadas como microplásticos; aparecieron en 43 de 47 animales.",
+      "capa": {
+        "tipo": "dato",
+        "valor": "2,815 de 17,165 (16.4%)",
+        "etiqueta": "Partículas con HQI > 75 clasificadas como microplásticos",
+        "fuente": "SRC-001",
+        "interpretacion": "Proporción de partículas analizadas; no es porcentaje de animales ni concentración por mililitro."
+      }
     },
     {
       "id": "scene_005",
@@ -336,7 +356,7 @@
   "cortinilla_fuentes": {
     "duration_seconds": 6,
     "titulo": "Fuentes",
-    "aviso": "Nature, 11 nov 2026. DOI pendiente de resolución independiente. Coordenada: sitio de estudio, no GPS animal.",
+    "aviso": "Nature, 11 nov 2026. DOI verificado en la página oficial del editor. Coordenada: sitio de estudio, no GPS animal.",
     "firma": "Datos y ociosidades",
     "source_ids": [
       "SRC-001"
@@ -381,5 +401,22 @@
     "Las distancias de 65 km y 112 km corresponden al contexto de los individuos muestreados en el Pantanal; no son rutas de dispersión.",
     "La coordenada cartográfica es un pin regional del sitio de estudio y el texto fuente presenta sufijos hemisféricos inconsistentes."
   ],
-  "approved_assets": []
+  "approved_assets": [],
+  "narrative_qa": {
+    "status": "PASS",
+    "score": 88,
+    "review_basis": "lectura_en_frio_solo_narracion",
+    "reviewer_role": "auditor_capcot_independiente",
+    "reviewed_at": "2026-11-14T15:04:13-06:00",
+    "checks": {
+      "pregunta_central_reconstruible": true,
+      "apertura_in_medias_res": true,
+      "progresion_por_escena": true,
+      "transiciones_causales": true,
+      "giro_cientifico_explicado": true,
+      "limite_evidencia_explicito": true,
+      "payoff_cierre_apertura": true
+    },
+    "critical_flags": []
+  }
 }
