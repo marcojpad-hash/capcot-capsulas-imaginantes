@@ -12,7 +12,7 @@
   "scene_total_seconds": 78,
   "cortinilla_seconds": 6,
   "total_duration_seconds": 84,
-  "word_count": 194,
+  "word_count": 193,
   "estructura": "comparacion",
   "audience": "Público general interesado en ciencia, fauna y ambiente.",
   "occasion": "Sábado; ventana editorial de tarde 16:30–18:00 CDMX. 17:00 es el slot interno de staging, no una programación de publicación.",
@@ -383,14 +383,16 @@
     ],
     "note": "No publicar ni programar desde preproducción textual; privacidad y horario de publicación quedan sin fijar."
   },
-  "estado": "PENDIENTE_AUDITOR",
+  "estado": "QA_NARRATIVO_PASS_PENDIENTE_DECISION_GROK",
   "production_mode": "storyboard_only",
   "validation_notes": [
-    "La narración tiene 194 palabras; ocho escenas suman 78 segundos y la cortinilla añade 6, total 84 segundos.",
-    "El DOI aparece en la página editorial, pero permanece PENDIENTE_RESOLVEDOR porque Crossref y doi.org no completaron resolución independiente.",
+    "Conteo reproducible con el patrón de scripts/validar_storyboard.py: 193 palabras; ocho escenas suman 78 segundos y la cortinilla añade 6, total 84 segundos.",
+    "DOI 10.1038/s41586-026-11285-x verificado en la página oficial de Nature (publicación 11-nov-2026); el helper Crossref no se ejecutó porque no hubo runtime local.",
     "El pin usa el sitio de campo del Pantanal; el artículo imprime coordenadas negativas con sufijos hemisféricos inconsistentes. No representa la ubicación de animales ni sus trayectorias.",
-    "No se añadió narrative_qa: la lectura en frío corresponde al Auditor independiente.",
-    "No se infiere datum geodésico: la fuente no lo especifica."
+    "Lectura en frío independiente registrada: PASS 88/100, siete checks verdaderos y critical_flags vacío.",
+    "El mapa y la capa de dato se registran en las escenas 002 y 004 a partir de los metadatos ya existentes en el storyboard; no se añadieron claims.",
+    "No se promueve a cola: el proyecto sigue como propuesta, no tiene slot_cesta asignado y no se debe disparar el workflow en esta auditoría.",
+    "La validación fue estática; no se ejecutó scripts/validar_storyboard.py ni sus helpers en runtime local."
   ],
   "linea_tematica_provisional": "Dato científico / Naturaleza-bichos / ambiente; fauna silvestre y exposición a contaminantes móviles.",
   "risk_notes": [
