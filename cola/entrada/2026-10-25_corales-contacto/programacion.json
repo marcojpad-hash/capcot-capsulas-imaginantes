@@ -1,0 +1,21 @@
+{
+  "project_id": "2026-10-25_corales-contacto",
+  "plataforma": [
+    "yt",
+    "tt",
+    "fb"
+  ],
+  "publish_at": "2026-11-16T19:30:00Z",
+  "ventana": "tarde",
+  "hora_cdmx": "13:30",
+  "caption_tt": "En un acuario, dos corales se tocaron por accidente. El pálido se recuperó. #ciencia #corales #datosyociosidades",
+  "titulo_yt": "El coral blanqueado que volvió a recuperarse #Shorts",
+  "privacidad": "private→público a las 13:30 CST",
+  "estado": "montada",
+  "video": "capsula.mp4",
+  "miniatura": "portada.jpg (pendiente thumbnails.set)",
+  "yt_programado": false,
+  "tiktok": "pendiente",
+  "facebook": "pendiente",
+  "nota": "Montaje 2026-11-14, voz es-MX-JorgeNeural (edge-tts rate +7%, pitch -2Hz). 1080x1920 30fps, 90.00s, QA 21/21. plano_seconds 5, cierre/cortinilla 10s (voz termina ~79.7s). Se recortó el guion de 222 a 195 palabras para entrar en 85-90 s, conservando los hechos de SRC-001/SRC-002/SRC-003. Token ~/.capcot/token.json."
+}
