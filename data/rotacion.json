@@ -289,5 +289,15 @@
     "tema": "plataforma de hielo bahía de Baffin",
     "estilo": "art_deco_poster",
     "origen": "propia"
+  },
+  {
+    "fecha": "2026-11-19",
+    "project_id": "2026-10-29_juno-choque-proa",
+    "estructura": "sabias_que",
+    "cama": "pizzicato",
+    "duracion": 87,
+    "tema": "Juno choque de proa de Júpiter",
+    "estilo": "art_deco_poster",
+    "origen": "propia"
   }
 ]

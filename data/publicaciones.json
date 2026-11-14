@@ -543,5 +543,21 @@
     "facebook": "pendiente",
     "miniatura": "portada.jpg (sardefault verificada)",
     "nota": "Montaje 2026-11-14, JorgeNeural, 90.17s, QA 21/21. Token ~/.capcot/token.json. Delegación #7."
+  },
+  {
+    "fecha": "2026-11-19",
+    "project_id": "2026-10-29_juno-choque-proa",
+    "yt_id": "vj5RZDt-dfc",
+    "url": "https://youtube.com/shorts/vj5RZDt-dfc",
+    "privacidad": "private→public (publishAt)",
+    "publishAt_utc": "2026-11-19T19:30:00Z",
+    "hora_local": "2026-11-19 13:30 (America/Mexico_City)",
+    "video": "capsula.mp4",
+    "titulo": "Juno revela el choque invisible de Júpiter #Shorts",
+    "origen": "propia",
+    "tiktok": "pendiente",
+    "facebook": "pendiente",
+    "miniatura": "portada.jpg (sardefault verificada)",
+    "nota": "Montaje 2026-11-14, JorgeNeural, 86.97s, QA 21/21, 8 frames. Token ~/.capcot/token.json. Delegación #7."
   }
 ]

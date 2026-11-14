@@ -11,11 +11,13 @@
   "caption_tt": "Juno cruzó dos veces una frontera invisible frente a Júpiter. #ciencia #juno #datosyociosidades",
   "titulo_yt": "Juno revela el choque invisible de Júpiter #Shorts",
   "privacidad": "private→público a las 13:30 CST",
-  "estado": "montada",
+  "estado": "programado_yt",
   "video": "capsula.mp4",
-  "miniatura": "portada.jpg (pendiente thumbnails.set)",
-  "yt_programado": false,
+  "miniatura": "portada.jpg (thumbnails.set OK; shortsAspectRatio/sardefault.jpg 1080x1920 verificada = portada, título visible, sin subtítulo)",
+  "yt_programado": true,
   "tiktok": "pendiente",
   "facebook": "pendiente",
-  "nota": "Montaje 2026-11-14, voz es-MX-JorgeNeural (edge-tts rate +7%, pitch -2Hz). 1080x1920 30fps, 86.97s, QA 21/21. 8 frames (sin inventar). plano_seconds 5, cierre/cortinilla 16s para llegar a 85-90 s (voz termina ~70.8s). Token ~/.capcot/token.json."
+  "nota": "Montaje 2026-11-14, voz es-MX-JorgeNeural (edge-tts rate +7%, pitch -2Hz). 1080x1920 30fps, 86.97s, QA 21/21. 8 frames (sin inventar). plano_seconds 5, cierre/cortinilla 16s para llegar a 85-90 s (voz termina ~70.8s). Token ~/.capcot/token.json. YT vj5RZDt-dfc private con publishAt 2026-11-19T19:30:00Z; thumbnails.set con portada.jpg (t=0 s). Token ~/.capcot/token.json. Sin colisión en ese slot. TT y FB pendientes.",
+  "yt_id": "vj5RZDt-dfc",
+  "url": "https://youtube.com/shorts/vj5RZDt-dfc"
 }
