@@ -9,7 +9,7 @@ Corte: 2026-11-14, 08:01, America/Mexico_City. Repositorio: marcojpad-hash/capco
 - Anti-duplicación: no había proyecto, salida, entrada ni bloqueado con fecha_objetivo 2026-11-14 antes de esta ejecución. Después del staging existe únicamente el proyecto principal 2026-11-14_dato-microplasticos-pantanal.
 - Archivos base de esta fecha: este radar y proyectos/2026-11-14_dato-microplasticos-pantanal/storyboard.json. No se creó archivo *_fuentes.md.
 - El informe técnico se actualizó de forma incremental por un cambio operativo relevante de Page Insights; commit técnico: 9bf9ceb187c7b8f345bcb58dc77c14e846d59ca1.
-- Commit del storyboard: 6b8175f4be84e5c2fc1b6a8a10891936bb8f0783.
+- Commit del storyboard: 7accf0d0821a91da1f6dbdc807ef57c5e73e471f.
 
 ## Fuente de verdad, rotación y ocupación
 
@@ -101,7 +101,7 @@ Los cuatro DOI siguen **PENDIENTE_RESOLVEDOR**: las páginas editoriales muestra
 
 ### Recomendación editorial
 
-Usar el candidato 1, microplásticos en fauna terrestre. Es el único que combina evidencia primaria accesible, una pregunta central clara, cifras explicables, geografía de campo y un límite de causalidad explícito. Se preparó el storyboard para el slot interno 17:00 con estilo papel_rasgado_capas, estructura mito_vs_dato y cama circuito_neural. No se reutiliza el estilo scratchboard del 13-nov ni la estructura historia del 13-nov.
+Usar el candidato 1, microplásticos en fauna terrestre. Es el único que combina evidencia primaria accesible, una pregunta central clara, cifras explicables, geografía de campo y un límite de causalidad explícito. Se preparó el storyboard para el slot interno 17:00 con estilo papel_rasgado_capas, estructura comparacion y cama circuito_neural. No se reutiliza el estilo scratchboard del 13-nov ni la estructura historia del 13-nov.
 
 ## Slot 23:30 — dato_del_dia
 
