@@ -1,0 +1,119 @@
+{
+ "metadatos": {
+  "title": "IA encuentra materiales 2D olvidados #Shorts",
+  "description": "¿Materiales de solo átomos de grosor escondidos en bases de datos viejas?\n\nIA encuentra materiales 2D olvidados. Una cápsula de Datos y ociosidades: datos verificados contados como historia.\n\nFuentes:\n• Shamshirgar et al. (2026). Science 394, eaeh5957. https://doi.org/10.1126/science.aeh5957\n• Linköping University news (2026). Hidden MXenes with AI. https://liu.se/en/news-item/gomda-och-glomda-2d-material-upptacks-med-ai\n\nImágenes generadas con IA · voz sintética · audio sintetizado.\nSuscríbete: @datosyociosidades\nTikTok: https://www.tiktok.com/@datosyociosidades\n\n#DatosYOciosidades #Shorts #datos #ciencia #difusión #difusióncientífica #ia #MxenesAiDiscovery",
+  "tags": [
+   "DatosYOciosidades",
+   "Shorts",
+   "datos",
+   "ciencia",
+   "difusión",
+   "difusióncientífica",
+   "ia",
+   "MxenesAiDiscovery"
+  ]
+ },
+ "resultado": {
+  "youtube": {
+   "kind": "youtube#video",
+   "etag": "-PEUwucFIDgSymGHs4LBXoyLFsE",
+   "id": "WTlFSZV9HYg",
+   "snippet": {
+    "publishedAt": "2026-11-14T23:38:52Z",
+    "channelId": "UCU2ZI-6pBJEr9aSFsF6bxLw",
+    "title": "IA encuentra materiales 2D olvidados #Shorts",
+    "description": "¿Materiales de solo átomos de grosor escondidos en bases de datos viejas?\n\nIA encuentra materiales 2D olvidados. Una cápsula de Datos y ociosidades: datos verificados contados como historia.\n\nFuentes:\n• Shamshirgar et al. (2026). Science 394, eaeh5957. https://doi.org/10.1126/science.aeh5957\n• Linköping University news (2026). Hidden MXenes with AI. https://liu.se/en/news-item/gomda-och-glomda-2d-material-upptacks-med-ai\n\nImágenes generadas con IA · voz sintética · audio sintetizado.\nSuscríbete: @datosyociosidades\nTikTok: https://www.tiktok.com/@datosyociosidades\n\n#DatosYOciosidades #Shorts #datos #ciencia #difusión #difusióncientífica #ia #MxenesAiDiscovery",
+    "thumbnails": {
+     "default": {
+      "url": "https://i9.ytimg.com/vi/WTlFSZV9HYg/default.jpg?sqp=CKTg49cG&rs=AOn4CLDNgw4R6V8bJrc-JRWxMr-Sv96EzA",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i9.ytimg.com/vi/WTlFSZV9HYg/mqdefault.jpg?sqp=CKTg49cG&rs=AOn4CLBbVA-Ntc86OauoTMv8gjk0sgf66Q",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i9.ytimg.com/vi/WTlFSZV9HYg/hqdefault.jpg?sqp=CKTg49cG&rs=AOn4CLD4b277EPMefEapwJZ8lOH75Zr-_Q",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "Datos y ociosidades",
+    "tags": [
+     "DatosYOciosidades",
+     "MxenesAiDiscovery",
+     "Shorts",
+     "ciencia",
+     "datos",
+     "difusión",
+     "difusióncientífica",
+     "ia"
+    ],
+    "categoryId": "27",
+    "liveBroadcastContent": "none",
+    "defaultLanguage": "es",
+    "localized": {
+     "title": "IA encuentra materiales 2D olvidados #Shorts",
+     "description": "¿Materiales de solo átomos de grosor escondidos en bases de datos viejas?\n\nIA encuentra materiales 2D olvidados. Una cápsula de Datos y ociosidades: datos verificados contados como historia.\n\nFuentes:\n• Shamshirgar et al. (2026). Science 394, eaeh5957. https://doi.org/10.1126/science.aeh5957\n• Linköping University news (2026). Hidden MXenes with AI. https://liu.se/en/news-item/gomda-och-glomda-2d-material-upptacks-med-ai\n\nImágenes generadas con IA · voz sintética · audio sintetizado.\nSuscríbete: @datosyociosidades\nTikTok: https://www.tiktok.com/@datosyociosidades\n\n#DatosYOciosidades #Shorts #datos #ciencia #difusión #difusióncientífica #ia #MxenesAiDiscovery"
+    }
+   },
+   "status": {
+    "uploadStatus": "uploaded",
+    "privacyStatus": "private",
+    "publishAt": "2026-11-20T19:30:00Z",
+    "license": "youtube",
+    "embeddable": true,
+    "publicStatsViewable": true,
+    "selfDeclaredMadeForKids": false,
+    "containsSyntheticMedia": false
+   },
+   "portada_thumb": {
+    "path": "/workspace/capcot_main/cola/entrada/2026-11-01_mxenes-ia-descubrimiento/portada_thumb.jpg",
+    "t_seconds": 0.5,
+    "set": {
+     "ok": true,
+     "response": {
+      "kind": "youtube#thumbnailSetResponse",
+      "etag": "CG7TGoxthpZhPoHPZSoXpriwptA",
+      "items": [
+       {
+        "default": {
+         "url": "https://i9.ytimg.com/vi/WTlFSZV9HYg/default.jpg?sqp=CKTg49cG&rs=AOn4CLDNgw4R6V8bJrc-JRWxMr-Sv96EzA",
+         "width": 120,
+         "height": 90
+        },
+        "medium": {
+         "url": "https://i9.ytimg.com/vi/WTlFSZV9HYg/mqdefault.jpg?sqp=CKTg49cG&rs=AOn4CLBbVA-Ntc86OauoTMv8gjk0sgf66Q",
+         "width": 320,
+         "height": 180
+        },
+        "high": {
+         "url": "https://i9.ytimg.com/vi/WTlFSZV9HYg/hqdefault.jpg?sqp=CKTg49cG&rs=AOn4CLD4b277EPMefEapwJZ8lOH75Zr-_Q",
+         "width": 480,
+         "height": 360
+        },
+        "standard": {
+         "url": "https://i9.ytimg.com/vi/WTlFSZV9HYg/sddefault.jpg?sqp=CKTg49cG&rs=AOn4CLBHsVqYunIZNTejHLnddKHsXtkKVA",
+         "width": 640,
+         "height": 480
+        },
+        "maxres": {
+         "url": "https://i9.ytimg.com/vi/WTlFSZV9HYg/maxresdefault.jpg?sqp=CKTg49cG&rs=AOn4CLDoFaSX15LMbbMCN1CvJxjXmG3RHw",
+         "width": 1280,
+         "height": 720
+        },
+        "qhd": {
+         "url": "https://i9.ytimg.com/vi/WTlFSZV9HYg/qhddefault.jpg?sqp=CKTg49cG&rs=AOn4CLAPqCauae2m3uNkoCkmLdpz1xw2OQ",
+         "width": 2560,
+         "height": 1440
+        }
+       }
+      ]
+     }
+    }
+   }
+  }
+ }
+}

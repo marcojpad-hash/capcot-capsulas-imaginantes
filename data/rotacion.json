@@ -299,5 +299,15 @@
     "tema": "Juno choque de proa de Júpiter",
     "estilo": "art_deco_poster",
     "origen": "propia"
+  },
+  {
+    "fecha": "2026-11-20",
+    "project_id": "2026-11-01_mxenes-ia-descubrimiento",
+    "estructura": "pregunta",
+    "cama": "pulso",
+    "duracion": 89,
+    "tema": "MXenes descubiertos con IA",
+    "estilo": "pixel_art",
+    "origen": "propia"
   }
 ]

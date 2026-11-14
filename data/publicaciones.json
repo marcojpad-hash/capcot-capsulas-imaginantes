@@ -559,5 +559,21 @@
     "facebook": "pendiente",
     "miniatura": "portada.jpg (sardefault verificada)",
     "nota": "Montaje 2026-11-14, JorgeNeural, 86.97s, QA 21/21, 8 frames. Token ~/.capcot/token.json. Delegación #7."
+  },
+  {
+    "fecha": "2026-11-20",
+    "project_id": "2026-11-01_mxenes-ia-descubrimiento",
+    "yt_id": "WTlFSZV9HYg",
+    "url": "https://youtube.com/shorts/WTlFSZV9HYg",
+    "privacidad": "private→public (publishAt)",
+    "publishAt_utc": "2026-11-20T19:30:00Z",
+    "hora_local": "2026-11-20 13:30 (America/Mexico_City)",
+    "video": "capsula.mp4",
+    "titulo": "IA encuentra materiales 2D olvidados #Shorts",
+    "origen": "propia",
+    "tiktok": "pendiente",
+    "facebook": "pendiente",
+    "miniatura": "portada.jpg (sardefault verificada)",
+    "nota": "Montaje 2026-11-14, JorgeNeural, 89.00s, QA 21/21, 8 frames. Token ~/.capcot/token.json. Delegación #7."
   }
 ]
