@@ -122,3 +122,17 @@ Orden de la semana: FIFO por fecha de paquete. El dom 15-nov ya está cubierto
   es solo vistas/likes) y el costo por cápsula no está medido. Imaginantes
   reporta saldo antes/después de cada montaje (Delegación #7); con ese reporte
   se sabrá cuántas cápsulas cubren los créditos que quedan.
+
+## Ritmo semanal (orden de Marco, 2026-11-14 ~17:23 CST)
+
+- **Un día a la semana para CAPCOT y nada más:** en ese día queda TODA la
+  semana montada y programada en YouTube + TikTok + Facebook, lista, sin
+  pendientes día a día. El resto de la semana es para el motor U6, La Putiza
+  y los otros proyectos.
+- **Las de Pecas también quedan programadas en ese día:** el viral animado
+  de la semana (mosquito, 18-nov) y las versiones en inglés se montan y se
+  programan en sus plataformas en el mismo lote semanal, verificadas en el
+  repo antes de darse por hechas.
+- **El dato del día va aparte:** se monta diario porque depende de la
+  noticia del mismo día (cultural o científica); no se mezcla con el lote
+  semanal.
