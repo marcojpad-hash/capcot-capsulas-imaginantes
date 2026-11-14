@@ -159,8 +159,8 @@
       "capa": {
         "tipo": "grafico",
         "x": [
-          "Voyager",
-          "Juno / Waves"
+          1,
+          2
         ],
         "y": [
           28,
@@ -249,7 +249,7 @@
     }
   ],
   "cortinilla_fuentes": {
-    "duration_seconds": 6,
+    "duration_seconds": 16,
     "titulo": "Fuentes",
     "aviso": "Imágenes generadas con IA. Voz sintética. Música sintetizada.",
     "firma": "Datos y ociosidades · @datosyociosidades",
@@ -267,7 +267,8 @@
     "ambiente_lufs": -30,
     "ducking": "sidechaincompress; música por debajo de la voz",
     "music_volume": 0.22,
-    "nota_ambiente": "Se usa ambiente silenciado porque el espacio no transmite sonido; no se simula audio literal de Júpiter."
+    "nota_ambiente": "Se usa ambiente silenciado porque el espacio no transmite sonido; no se simula audio literal de Júpiter.",
+    "cama_musical": "pizzicato"
   },
   "export": {
     "filename": "capsula.mp4",
@@ -276,7 +277,8 @@
     "codec_video": "h264",
     "codec_audio": "aac",
     "loudness_lufs": -14,
-    "subtitle_max_words": 3
+    "subtitle_max_words": 3,
+    "plano_seconds": 5
   },
   "publicacion": {
     "estado": "BORRADOR_NO_PUBLICADO",
