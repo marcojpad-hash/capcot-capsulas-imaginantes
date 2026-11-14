@@ -1,0 +1,21 @@
+{
+  "project_id": "2026-10-26_baffin-bay-ice-shelf",
+  "plataforma": [
+    "yt",
+    "tt",
+    "fb"
+  ],
+  "publish_at": "2026-11-17T19:30:00Z",
+  "ventana": "tarde",
+  "hora_cdmx": "13:30",
+  "caption_tt": "¿Qué pudo sostener tres enormes mantos de hielo? Una plataforma en la bahía de Baffin. #ciencia #hielo #datosyociosidades",
+  "titulo_yt": "El hielo que sostuvo tres mantos #Shorts",
+  "privacidad": "private→público a las 13:30 CST",
+  "estado": "montada",
+  "video": "capsula.mp4",
+  "miniatura": "portada.jpg (pendiente thumbnails.set)",
+  "yt_programado": false,
+  "tiktok": "pendiente",
+  "facebook": "pendiente",
+  "nota": "Montaje 2026-11-14, voz es-MX-JorgeNeural (edge-tts rate +7%, pitch -2Hz). 1080x1920 30fps, 90.17s, QA 21/21. plano_seconds 5, cierre/cortinilla 10s (voz termina ~80.0s). Guion recortado de 215 a 199 palabras para entrar cerca de 85-90 s, conservando SRC-001/SRC-002. Token ~/.capcot/token.json."
+}

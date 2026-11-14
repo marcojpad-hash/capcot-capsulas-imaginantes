@@ -1,7 +1,7 @@
 {
   "project_id": "2026-10-26_baffin-bay-ice-shelf",
   "serie": "Datos y ociosidades",
-  "title": "El hielo que sostuvo tres mantos #Shorts",
+  "title": "El hielo que sostuvo tres mantos",
   "titulo": "¿Qué sostuvo tres mantos?",
   "language": "es-MX",
   "aspect_ratio": "9:16",
@@ -90,7 +90,7 @@
         "SRC-001",
         "SRC-002"
       ],
-      "asset_filename": "frames/scene_001.png",
+      "asset_filename": "frames/scene_001.jpg",
       "asset_type": "image",
       "motion": "kenburns_auto",
       "animated_hook": false,
@@ -104,7 +104,7 @@
       "id": "scene_002",
       "arc": "desarrollo",
       "duration_seconds": 9,
-      "narration": "Hoy, esa bahía separa Groenlandia de Canadá. Bajo el agua, el relieve conserva huellas de la plataforma que desapareció hace miles de años.",
+      "narration": "Hoy, esa bahía separa Groenlandia de Canadá. Bajo el agua, el relieve conserva huellas de la plataforma desaparecida hace miles de años.",
       "on_screen_text": "Bahía de Baffin",
       "visual_description": "A stylized aerial geography view of Baffin Bay between Greenland and northeastern Canada, with angular coastlines, glaciers, floating ice and dark teal water; leave clear central water for an overlaid map marker.",
       "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text + A stylized aerial geography view of Baffin Bay between Greenland and northeastern Canada, with angular coastlines, glaciers, floating ice and dark teal water; leave clear central water for an overlaid map marker. vertical 9:16, no text",
@@ -112,7 +112,7 @@
         "SRC-001",
         "SRC-003"
       ],
-      "asset_filename": "frames/scene_002.png",
+      "asset_filename": "frames/scene_002.jpg",
       "asset_type": "image",
       "motion": "kenburns_auto",
       "animated_hook": false,
@@ -151,7 +151,7 @@
       "source_ids": [
         "SRC-001"
       ],
-      "asset_filename": "frames/scene_003.png",
+      "asset_filename": "frames/scene_003.jpg",
       "asset_type": "image",
       "motion": "kenburns_auto",
       "animated_hook": false,
@@ -165,14 +165,14 @@
       "id": "scene_004",
       "arc": "desarrollo",
       "duration_seconds": 9,
-      "narration": "La reconstrucción apunta a una plataforma de unos ciento cincuenta mil kilómetros cuadrados. No era una franja estrecha: cubría una cuenca entera.",
+      "narration": "La reconstrucción apunta a una plataforma de unos ciento cincuenta mil kilómetros cuadrados: cubría una cuenca entera.",
       "on_screen_text": "150,000 km²",
       "visual_description": "A monumental flat ice shelf filling a broad polar basin, with scattered floes and distant angular mountain ranges; keep the center visually uncluttered for a sourced data overlay.",
       "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text + A monumental flat ice shelf filling a broad polar basin, with scattered floes and distant angular mountain ranges; keep the center visually uncluttered for a sourced data overlay. vertical 9:16, no text",
       "source_ids": [
         "SRC-001"
       ],
-      "asset_filename": "frames/scene_004.png",
+      "asset_filename": "frames/scene_004.jpg",
       "asset_type": "image",
       "motion": "kenburns_auto",
       "animated_hook": false,
@@ -192,14 +192,14 @@
       "id": "scene_005",
       "arc": "desarrollo",
       "duration_seconds": 9,
-      "narration": "Su espesor estimado alcanzaba entre 1.4 y 2.1 kilómetros, tras corregir los cambios del nivel relativo del mar. La escala es difícil de imaginar.",
+      "narration": "Su espesor estimado alcanzaba entre 1.4 y 2.1 kilómetros, tras corregir los cambios del nivel relativo del mar.",
       "on_screen_text": "1.4–2.1 km",
       "visual_description": "A cutaway of an immense ice shelf with a deep submerged blue-green body beneath its pale surface, a tiny ship and dark seabed to communicate scale without labels.",
       "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text + A cutaway of an immense ice shelf with a deep submerged blue-green body beneath its pale surface, a tiny ship and dark seabed to communicate scale without labels. vertical 9:16, no text",
       "source_ids": [
         "SRC-001"
       ],
-      "asset_filename": "frames/scene_005.png",
+      "asset_filename": "frames/scene_005.jpg",
       "asset_type": "image",
       "motion": "kenburns_auto",
       "animated_hook": false,
@@ -209,7 +209,7 @@
       ],
       "image_origen": "Generada con IA para este paquete; ilustración editorial, no fotografía ni imagen documental.",
       "capa": {
-        "tipo": "grafico",
+        "tipo": "dato",
         "valor": "1.4–2.1 km",
         "etiqueta": "Espesor estimado, corregido por nivel relativo del mar",
         "fuente": "Klotsko et al. (2026), Nature Geoscience, DOI 10.1038/s41561-026-02126-7"
@@ -226,7 +226,7 @@
       "source_ids": [
         "SRC-001"
       ],
-      "asset_filename": "frames/scene_006.png",
+      "asset_filename": "frames/scene_006.jpg",
       "asset_type": "image",
       "motion": "kenburns_auto",
       "animated_hook": false,
@@ -240,14 +240,14 @@
       "id": "scene_007",
       "arc": "cierre_historia",
       "duration_seconds": 9,
-      "narration": "Pero los autores infieren que el colapso de la plataforma desencadenó un retroceso rápido del hielo. Cuando se perdió el soporte, cambió la estabilidad del conjunto.",
+      "narration": "Los autores infieren que el colapso de la plataforma desencadenó un retroceso rápido del hielo. Cuando se perdió el soporte, cambió la estabilidad del conjunto.",
       "on_screen_text": "El soporte colapsó",
       "visual_description": "A fractured ancient ice shelf with separated angular floes and retreating glacier fronts, deep teal water and distant mountains under a muted golden sky; depict a geological reconstruction, not a witnessed event.",
       "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text + A fractured ancient ice shelf with separated angular floes and retreating glacier fronts, deep teal water and distant mountains under a muted golden sky; depict a geological reconstruction, not a witnessed event. vertical 9:16, no text",
       "source_ids": [
         "SRC-001"
       ],
-      "asset_filename": "frames/scene_007.png",
+      "asset_filename": "frames/scene_007.jpg",
       "asset_type": "image",
       "motion": "kenburns_auto",
       "animated_hook": false,
@@ -261,7 +261,7 @@
       "id": "scene_008",
       "arc": "reflexion_o_pregunta",
       "duration_seconds": 9,
-      "narration": "No significa que el Ártico antiguo sea un duplicado del presente. El estudio ofrece una analogía física para las plataformas que hoy sostienen el hielo antártico.",
+      "narration": "El Ártico antiguo no es un duplicado del presente. El estudio ofrece una analogía física para las plataformas que hoy sostienen el hielo antártico.",
       "on_screen_text": "Una analogía actual",
       "visual_description": "A present-day Antarctic floating ice shelf at the edge of a vast ice sheet, dark ocean, crevassed blue-white ice and distant mountains, a visual analogy rather than a literal reconstruction.",
       "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text + A present-day Antarctic floating ice shelf at the edge of a vast ice sheet, dark ocean, crevassed blue-white ice and distant mountains, a visual analogy rather than a literal reconstruction. vertical 9:16, no text",
@@ -269,7 +269,7 @@
         "SRC-001",
         "SRC-002"
       ],
-      "asset_filename": "frames/scene_008.png",
+      "asset_filename": "frames/scene_008.jpg",
       "asset_type": "image",
       "motion": "kenburns_auto",
       "animated_hook": false,
@@ -283,7 +283,7 @@
       "id": "scene_009",
       "arc": "reflexion_o_pregunta",
       "duration_seconds": 9,
-      "narration": "Si ese soporte se debilita, los glaciares pueden retroceder con mayor facilidad. El fondo marino guarda la memoria de lo que puede ocurrir cuando una barrera desaparece. Esto fue Datos y ociosidades.",
+      "narration": "Si ese soporte se debilita, los glaciares pueden retroceder con mayor facilidad. El fondo marino guarda la memoria de lo que ocurre cuando una barrera desaparece. Esto fue Datos y ociosidades.",
       "on_screen_text": "El hielo deja huellas",
       "visual_description": "A wide polar landscape where a vast ice shelf recedes toward distant glaciers, with a narrow band of open water and golden light across a dark teal sea, contemplative closing image.",
       "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text + A wide polar landscape where a vast ice shelf recedes toward distant glaciers, with a narrow band of open water and golden light across a dark teal sea, contemplative closing image. vertical 9:16, no text",
@@ -291,7 +291,7 @@
         "SRC-001",
         "SRC-002"
       ],
-      "asset_filename": "frames/scene_009.png",
+      "asset_filename": "frames/scene_009.jpg",
       "asset_type": "image",
       "motion": "kenburns_auto",
       "animated_hook": false,
@@ -303,7 +303,7 @@
     }
   ],
   "cortinilla_fuentes": {
-    "duration_seconds": 6,
+    "duration_seconds": 10,
     "titulo": "Fuentes",
     "aviso": "Imágenes generadas con IA. Voz sintética. Música sintetizada; efectos CC0/dominio público.",
     "firma": "Datos y ociosidades · @datosyociosidades",
@@ -333,7 +333,7 @@
     "video_codec": "h264",
     "audio_codec": "aac",
     "loudness_lufs": -14,
-    "plano_seconds": 2.5,
+    "plano_seconds": 5,
     "subtitle_max_words": 3
   },
   "proveedor_imagenes": "ChatGPT ImageGen; nueve imágenes ilustrativas generadas para este paquete y ajustadas a 1080x1920.",

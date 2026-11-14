@@ -1,0 +1,89 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Sub,DejaVu Sans,72,&H00FFFFFF,&H00FFFFFF,&H00000000,&H64000000,-1,0,0,0,100,100,0,0,1,6,2,2,90,170,620,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.30,0:00:01.17,Sub,,0,0,0,,¿Qué pudo sostener
+Dialogue: 0,0:00:01.18,0:00:02.26,Sub,,0,0,0,,tres enormes mantos
+Dialogue: 0,0:00:02.27,0:00:03.03,Sub,,0,0,0,,de hielo?
+Dialogue: 0,0:00:03.28,0:00:04.15,Sub,,0,0,0,,Durante la última
+Dialogue: 0,0:00:04.16,0:00:04.99,Sub,,0,0,0,,glaciación,
+Dialogue: 0,0:00:05.00,0:00:06.05,Sub,,0,0,0,,una plataforma helada
+Dialogue: 0,0:00:06.06,0:00:06.83,Sub,,0,0,0,,ocupó la bahía
+Dialogue: 0,0:00:06.84,0:00:07.71,Sub,,0,0,0,,de Baffin.
+Dialogue: 0,0:00:08.19,0:00:08.76,Sub,,0,0,0,,Hoy,
+Dialogue: 0,0:00:08.80,0:00:09.73,Sub,,0,0,0,,esa bahía separa
+Dialogue: 0,0:00:09.74,0:00:11.15,Sub,,0,0,0,,Groenlandia de Canadá.
+Dialogue: 0,0:00:11.37,0:00:12.30,Sub,,0,0,0,,Bajo el agua,
+Dialogue: 0,0:00:12.31,0:00:13.34,Sub,,0,0,0,,el relieve conserva
+Dialogue: 0,0:00:13.35,0:00:13.87,Sub,,0,0,0,,huellas de la
+Dialogue: 0,0:00:13.88,0:00:15.49,Sub,,0,0,0,,plataforma desaparecida hace
+Dialogue: 0,0:00:15.50,0:00:16.75,Sub,,0,0,0,,miles de años.
+Dialogue: 0,0:00:17.24,0:00:18.13,Sub,,0,0,0,,El equipo reunió
+Dialogue: 0,0:00:18.14,0:00:18.91,Sub,,0,0,0,,mapas del fondo
+Dialogue: 0,0:00:18.92,0:00:19.60,Sub,,0,0,0,,marino,
+Dialogue: 0,0:00:19.61,0:00:20.70,Sub,,0,0,0,,perfiles sísmicos y
+Dialogue: 0,0:00:20.71,0:00:21.77,Sub,,0,0,0,,núcleos de sedimento
+Dialogue: 0,0:00:21.78,0:00:22.90,Sub,,0,0,0,,para reconstruir dónde
+Dialogue: 0,0:00:22.91,0:00:23.55,Sub,,0,0,0,,se apoyaba el
+Dialogue: 0,0:00:23.56,0:00:24.19,Sub,,0,0,0,,hielo.
+Dialogue: 0,0:00:24.67,0:00:25.93,Sub,,0,0,0,,La reconstrucción apunta
+Dialogue: 0,0:00:25.94,0:00:26.80,Sub,,0,0,0,,a una plataforma
+Dialogue: 0,0:00:26.81,0:00:27.44,Sub,,0,0,0,,de unos ciento
+Dialogue: 0,0:00:27.45,0:00:28.73,Sub,,0,0,0,,cincuenta mil kilómetros
+Dialogue: 0,0:00:28.74,0:00:29.67,Sub,,0,0,0,,cuadrados:
+Dialogue: 0,0:00:29.82,0:00:30.71,Sub,,0,0,0,,cubría una cuenca
+Dialogue: 0,0:00:30.72,0:00:31.45,Sub,,0,0,0,,entera.
+Dialogue: 0,0:00:31.94,0:00:32.96,Sub,,0,0,0,,Su espesor estimado
+Dialogue: 0,0:00:32.97,0:00:34.37,Sub,,0,0,0,,alcanzaba entre 1
+Dialogue: 0,0:00:34.59,0:00:35.72,Sub,,0,0,0,,4 y 2
+Dialogue: 0,0:00:35.94,0:00:37.19,Sub,,0,0,0,,1 kilómetros tras
+Dialogue: 0,0:00:37.20,0:00:38.22,Sub,,0,0,0,,corregir los cambios
+Dialogue: 0,0:00:38.23,0:00:39.18,Sub,,0,0,0,,del nivel relativo
+Dialogue: 0,0:00:39.19,0:00:39.98,Sub,,0,0,0,,del mar.
+Dialogue: 0,0:00:40.46,0:00:41.81,Sub,,0,0,0,,Esa plataforma conectaba
+Dialogue: 0,0:00:41.82,0:00:43.17,Sub,,0,0,0,,los mantos Laurentide,
+Dialogue: 0,0:00:43.18,0:00:43.85,Sub,,0,0,0,,Innuitian y de
+Dialogue: 0,0:00:43.86,0:00:44.82,Sub,,0,0,0,,Groenlandia.
+Dialogue: 0,0:00:45.04,0:00:46.05,Sub,,0,0,0,,Al apoyarse contra
+Dialogue: 0,0:00:46.06,0:00:46.63,Sub,,0,0,0,,ellos,
+Dialogue: 0,0:00:46.64,0:00:47.57,Sub,,0,0,0,,funcionaba como un
+Dialogue: 0,0:00:47.58,0:00:48.46,Sub,,0,0,0,,tope que ayudaba
+Dialogue: 0,0:00:48.47,0:00:49.75,Sub,,0,0,0,,a estabilizarlos.
+Dialogue: 0,0:00:50.23,0:00:51.25,Sub,,0,0,0,,Los autores infieren
+Dialogue: 0,0:00:51.26,0:00:51.89,Sub,,0,0,0,,que el colapso
+Dialogue: 0,0:00:51.90,0:00:52.64,Sub,,0,0,0,,de la plataforma
+Dialogue: 0,0:00:52.65,0:00:54.00,Sub,,0,0,0,,desencadenó un retroceso
+Dialogue: 0,0:00:54.01,0:00:55.19,Sub,,0,0,0,,rápido del hielo.
+Dialogue: 0,0:00:55.41,0:00:56.15,Sub,,0,0,0,,Cuando se perdió
+Dialogue: 0,0:00:56.16,0:00:56.98,Sub,,0,0,0,,el soporte,
+Dialogue: 0,0:00:56.99,0:00:57.98,Sub,,0,0,0,,cambió la estabilidad
+Dialogue: 0,0:00:57.99,0:00:59.01,Sub,,0,0,0,,del conjunto.
+Dialogue: 0,0:00:59.49,0:01:00.47,Sub,,0,0,0,,El Ártico antiguo
+Dialogue: 0,0:01:00.48,0:01:00.95,Sub,,0,0,0,,no es un
+Dialogue: 0,0:01:00.96,0:01:02.46,Sub,,0,0,0,,duplicado del presente.
+Dialogue: 0,0:01:02.68,0:01:03.62,Sub,,0,0,0,,El estudio ofrece
+Dialogue: 0,0:01:03.63,0:01:04.80,Sub,,0,0,0,,una analogía física
+Dialogue: 0,0:01:04.81,0:01:05.82,Sub,,0,0,0,,para las plataformas
+Dialogue: 0,0:01:05.83,0:01:06.67,Sub,,0,0,0,,que hoy sostienen
+Dialogue: 0,0:01:06.68,0:01:07.96,Sub,,0,0,0,,el hielo antártico.
+Dialogue: 0,0:01:08.44,0:01:09.38,Sub,,0,0,0,,Si ese soporte
+Dialogue: 0,0:01:09.39,0:01:10.28,Sub,,0,0,0,,se debilita,
+Dialogue: 0,0:01:10.30,0:01:11.27,Sub,,0,0,0,,los glaciares pueden
+Dialogue: 0,0:01:11.28,0:01:12.37,Sub,,0,0,0,,retroceder con mayor
+Dialogue: 0,0:01:12.38,0:01:13.34,Sub,,0,0,0,,facilidad.
+Dialogue: 0,0:01:13.56,0:01:14.36,Sub,,0,0,0,,El fondo marino
+Dialogue: 0,0:01:14.37,0:01:15.20,Sub,,0,0,0,,guarda la memoria
+Dialogue: 0,0:01:15.21,0:01:15.51,Sub,,0,0,0,,de lo que
+Dialogue: 0,0:01:15.52,0:01:16.41,Sub,,0,0,0,,ocurre cuando una
+Dialogue: 0,0:01:16.42,0:01:17.81,Sub,,0,0,0,,barrera desaparece.
+Dialogue: 0,0:01:18.03,0:01:18.87,Sub,,0,0,0,,Esto fue Datos
+Dialogue: 0,0:01:18.88,0:01:20.04,Sub,,0,0,0,,y ociosidades.
