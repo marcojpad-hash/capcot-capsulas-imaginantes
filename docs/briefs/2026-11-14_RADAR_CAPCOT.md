@@ -9,7 +9,7 @@ Corte: 2026-11-14, 08:01, America/Mexico_City. Repositorio: marcojpad-hash/capco
 - Anti-duplicación: no había proyecto, salida, entrada ni bloqueado con fecha_objetivo 2026-11-14 antes de esta ejecución. Después del staging existe únicamente el proyecto principal 2026-11-14_dato-microplasticos-pantanal.
 - Archivos base de esta fecha: este radar y proyectos/2026-11-14_dato-microplasticos-pantanal/storyboard.json. No se creó archivo *_fuentes.md.
 - El informe técnico se actualizó de forma incremental por un cambio operativo relevante de Page Insights; commit técnico: 9bf9ceb187c7b8f345bcb58dc77c14e846d59ca1.
-- Commit del storyboard: 55d6e22be84ba3d48385976339fce55fa760f996.
+- Commit del storyboard: 6b8175f4be84e5c2fc1b6a8a10891936bb8f0783.
 
 ## Fuente de verdad, rotación y ocupación
 
@@ -118,7 +118,7 @@ Usar el candidato 1, microplásticos en fauna terrestre. Es el único que combin
 - Voz: edge-tts, es-MX-JorgeNeural, rate +7%, pitch -2Hz.
 - Estilo único: papel_rasgado_capas; prompt_base literal en todos los prompts.
 - Cama musical rotada: circuito_neural; ambientes y SFX por escena.
-- Mapa: Baía das Pedras Ranch, Nhecolândia, Aquidauana, Mato Grosso do Sul; par numérico reportado -19.33, -55.72. El artículo imprime sufijos N/E con signos negativos; el borrador conserva los números firmados y omite sufijos, y declara el pin como regional, no como GPS animal. El artículo cita Natural Earth y geobr como fuentes cartográficas.
+- Mapa: Baía das Pedras Ranch, Nhecolândia, Aquidauana, Mato Grosso do Sul; par numérico reportado -19.33, -55.72. El artículo imprime sufijos N/E con signos negativos; el borrador conserva los números firmados, omite sufijos y no infiere datum geodésico. El pin es regional, no GPS animal. El artículo cita Natural Earth y geobr como fuentes cartográficas.
 - Gráfico: 2,815 / 17,165 partículas con HQI >75 = 16.4%; métrica secundaria 43/47 animales con detección.
 - narrative_contract: los seis campos están completos.
 - No se escribió narrative_qa; estado PENDIENTE_AUDITOR. El auditor independiente decide PASS/FAIL.
