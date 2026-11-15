@@ -1,174 +1,249 @@
 {
-  "project_id": "2026-11-03_autismo-microbioma-cerebro",
-  "serie": "Datos y ociosidades",
-  "title": "Microbioma intestinal y cerebro en autismo",
-  "titulo": "¿El intestino habla al cerebro?",
-  "language": "es-MX",
-  "aspect_ratio": "9:16",
-  "target_duration_seconds": 82,
-  "estructura": "pregunta",
-  "estilo_id": "claymation",
-  "estilo_visual": "Claymation / plastilina",
-  "trend_source": {
-    "tipo": "noticia_cientifica",
-    "medio": "UCLA Health / Nature Communications",
-    "url": "https://www.uclahealth.org/news/article/kids-with-autism-gut-microbiome-brain",
-    "estudio_doi": "10.1038/s41467-025-58459-1",
-    "fecha_publicacion": "2026-10-30",
-    "termino": "autismo microbioma cerebral",
-    "fecha_consulta": "2026-11-03"
+ "project_id": "2026-11-03_autismo-microbioma-cerebro",
+ "serie": "Datos y ociosidades",
+ "title": "Microbioma intestinal y cerebro en autismo",
+ "titulo": "¿El intestino habla al cerebro?",
+ "language": "es-MX",
+ "aspect_ratio": "9:16",
+ "target_duration_seconds": 88,
+ "estructura": "pregunta",
+ "resumen": "Un estudio de UCLA y USC con 84 niños y adolescentes ligó metabolitos intestinales del triptófano con actividad cerebral y síntomas de autismo. Asociación, no causa.",
+ "keywords": [
+  "microbioma",
+  "autismo",
+  "cerebro"
+ ],
+ "trend_source": {
+  "termino": "microbioma y autismo",
+  "fecha_consulta": "2026-11-14"
+ },
+ "estilo_id": "microscopio_psicodelico",
+ "estilo_visual": "Microscopia psicodélica",
+ "voice": {
+  "engine": "edge-tts",
+  "voice_id": "es-MX-JorgeNeural",
+  "rate": "+7%",
+  "pitch": "-2Hz",
+  "pad_seconds": 0.3,
+  "modo_pausas": "continuo"
+ },
+ "sources": [
+  {
+   "id": "SRC-001",
+   "cita_corta": "Aziz-Zadeh et al. (2025). Relationships between brain activity, tryptophan-related gut metabolites, and autism symptomatology. Nature Communications.",
+   "doi": "10.1038/s41467-025-58459-1",
+   "url": "https://doi.org/10.1038/s41467-025-58459-1",
+   "accessed": "2026-11-14",
+   "ref_display": "Aziz-Zadeh et al., Nat Commun 2025"
   },
-  "voice": {
-    "engine": "edge-tts",
-    "voice_id": "es-MX-JorgeNeural",
-    "rate": "+7%",
-    "pitch": "-2Hz",
-    "pad_seconds": 0.3,
-    "modo_pausas": "continuo"
-  },
-  "sources": [
-    {
-      "id": "SRC-001",
-      "cita_corta": "Aziz-Zadeh et al. (2025). Nat Commun.",
-      "doi": "10.1038/s41467-025-58459-1",
-      "url": "https://doi.org/10.1038/s41467-025-58459-1",
-      "accessed": "2026-11-03",
-      "supports": [
-        "Niveles más bajos de metabolitos de triptófano (kynurenato) en heces de niños con TEA",
-        "Asociación con actividad cerebral alterada en ínsula y cíngulo",
-        "Correlación con mayor severidad de síntomas"
-      ],
-      "ref_display": "Aziz-Zadeh et al., Nat Commun 2025"
-    },
-    {
-      "id": "SRC-002",
-      "cita_corta": "UCLA Health (2026).",
-      "url": "https://www.uclahealth.org/news/article/kids-with-autism-gut-microbiome-brain",
-      "accessed": "2026-11-03",
-      "supports": [
-        "84 participantes de 8 a 17 años, mitad con TEA",
-        "Primer análisis integral cerebro-intestino-microbioma en TEA",
-        "Sugiere posible beneficio de dieta o probióticos"
-      ],
-      "ref_display": "UCLA Health 30 Oct 2026"
-    }
-  ],
-  "scenes": [
-    {
-      "id": "scene_001",
-      "arc": "hook_medias_res",
-      "duration_seconds": 9.0,
-      "narration": "¿Y si el intestino de un niño con autismo manda señales distintas al cerebro? Un estudio reciente encontró metabolitos más bajos.",
-      "on_screen_text": "¿El intestino habla al cerebro?",
-      "visual_description": "claymation child figure next to a glowing intestine model with tiny bacteria characters talking to a brain",
-      "image_prompt": "claymation stop-motion scene, plasticine characters and set with visible fingerprints, soft studio lighting, miniature handmade props, vertical 9:16, no text + claymation child figure next to a glowing intestine model with tiny bacteria characters talking to a brain",
-      "source_ids": ["SRC-001", "SRC-002"],
-      "asset_filename": "frames/scene_001.jpg",
-      "sfx": ["burbujas"],
-      "ambiente": "viento",
-      "capa": {
-        "tipo": "mapa",
-        "region": [-120, -115, 33, 35],
-        "puntos": [{"nombre": "UCLA / Los Ángeles", "lon": -118.4, "lat": 34.07}],
-        "titulo": "UCLA / USC, California",
-        "fuente": "UCLA Health · Natural Earth"
-      }
-    },
-    {
-      "id": "scene_002",
-      "arc": "desarrollo",
-      "duration_seconds": 10.5,
-      "narration": "Investigadores de UCLA y USC estudiaron a 84 chicos y chicas de 8 a 17 años. La mitad tenía diagnóstico de espectro autista.",
-      "on_screen_text": "84 participantes",
-      "visual_description": "claymation lab with two groups of small plasticine kids, half with subtle sensory props",
-      "image_prompt": "claymation stop-motion scene, plasticine characters and set with visible fingerprints, soft studio lighting, miniature handmade props, vertical 9:16, no text + claymation lab with two groups of small plasticine kids, half with subtle sensory props",
-      "source_ids": ["SRC-002"],
-      "asset_filename": "frames/scene_002.jpg",
-      "sfx": ["campanas"],
-      "ambiente": "viento"
-    },
-    {
-      "id": "scene_003",
-      "arc": "desarrollo",
-      "duration_seconds": 11.0,
-      "narration": "En las heces hallaron menos metabolitos de triptófano, como el kynurenato. El triptófano viene de la comida y los microbios lo transforman.",
-      "on_screen_text": "Menos kynurenato",
-      "visual_description": "claymation microscopic view of bacteria converting food into glowing metabolite molecules",
-      "image_prompt": "claymation stop-motion scene, plasticine characters and set with visible fingerprints, soft studio lighting, miniature handmade props, vertical 9:16, no text + claymation microscopic view of bacteria converting food into glowing metabolite molecules",
-      "source_ids": ["SRC-001"],
-      "asset_filename": "frames/scene_003.jpg",
-      "sfx": ["pluma"],
-      "ambiente": "viento",
-      "capa": {
-        "tipo": "dato",
-        "valor": "menor",
-        "etiqueta": "kynurenato en TEA",
-        "fuente": "Aziz-Zadeh et al. 2025"
-      }
-    },
-    {
-      "id": "scene_004",
-      "arc": "desarrollo",
-      "duration_seconds": 10.0,
-      "narration": "Esos metabolitos más bajos se asociaron a cambios en la actividad de la ínsula y el cíngulo, zonas del cerebro ligadas a las emociones y el cuerpo.",
-      "on_screen_text": "Ínsula y cíngulo",
-      "visual_description": "claymation brain with highlighted insula and cingulate areas lighting up while connected by thin threads to gut",
-      "image_prompt": "claymation stop-motion scene, plasticine characters and set with visible fingerprints, soft studio lighting, miniature handmade props, vertical 9:16, no text + claymation brain with highlighted insula and cingulate areas lighting up while connected by thin threads to gut",
-      "source_ids": ["SRC-001"],
-      "asset_filename": "frames/scene_004.jpg",
-      "sfx": ["pulso"],
-      "ambiente": "viento"
-    },
-    {
-      "id": "scene_005",
-      "arc": "cierre_historia",
-      "duration_seconds": 10.5,
-      "narration": "La menor concentración también correlacionó con más síntomas y mayor severidad. No prueba causa, pero apunta a un vínculo real.",
-      "on_screen_text": "Más síntomas",
-      "visual_description": "claymation scale showing higher symptom intensity next to lower metabolite levels",
-      "image_prompt": "claymation stop-motion scene, plasticine characters and set with visible fingerprints, soft studio lighting, miniature handmade props, vertical 9:16, no text + claymation scale showing higher symptom intensity next to lower metabolite levels",
-      "source_ids": ["SRC-001"],
-      "asset_filename": "frames/scene_005.jpg",
-      "sfx": ["reloj"],
-      "ambiente": "viento"
-    },
-    {
-      "id": "scene_006",
-      "arc": "cierre_historia",
-      "duration_seconds": 9.5,
-      "narration": "El equipo sugiere que cambiar la dieta o usar probióticos podría ayudar. Las sensibilidades sensoriales complican la comida, claro.",
-      "on_screen_text": "Dieta y probióticos",
-      "visual_description": "claymation plate with varied foods and small probiotic bottles next to a child figure",
-      "image_prompt": "claymation stop-motion scene, plasticine characters and set with visible fingerprints, soft studio lighting, miniature handmade props, vertical 9:16, no text + claymation plate with varied foods and small probiotic bottles next to a child figure",
-      "source_ids": ["SRC-002"],
-      "asset_filename": "frames/scene_006.jpg",
-      "sfx": ["madera"],
-      "ambiente": "viento"
-    },
-    {
-      "id": "scene_007",
-      "arc": "reflexion_o_pregunta",
-      "duration_seconds": 12.0,
-      "narration": "¿Hasta dónde el microbioma intestinal puede modular cómo el cerebro procesa el mundo en el autismo? Esto fue Datos y ociosidades.",
-      "on_screen_text": "¿Hasta dónde?",
-      "visual_description": "claymation night scene with a child looking at a starry sky connected by a glowing gut-brain path",
-      "image_prompt": "claymation stop-motion scene, plasticine characters and set with visible fingerprints, soft studio lighting, miniature handmade props, vertical 9:16, no text + claymation night scene with a child looking at a starry sky connected by a glowing gut-brain path",
-      "source_ids": ["SRC-001"],
-      "asset_filename": "frames/scene_007.jpg",
-      "sfx": ["estrellas"],
-      "ambiente": "viento"
-    }
-  ],
-  "cortinilla_fuentes": {
-    "duration_seconds": 6,
-    "titulo": "Fuentes",
-    "aviso": "Imágenes generadas con IA. Voz sintética. Audio sintetizado.",
-    "firma": "Datos y ociosidades · @datosyociosidades"
-  },
-  "export": {
-    "filename": "capsula.mp4",
-    "resolution": "1080x1920",
-    "fps": 30,
-    "loudness_lufs": -14
+  {
+   "id": "SRC-002",
+   "cita_corta": "UCLA Health (18-jun-2025). Kids with autism show altered gut microbiome-brain interactions, study shows.",
+   "url": "https://www.uclahealth.org/news/article/kids-with-autism-gut-microbiome-brain",
+   "accessed": "2026-11-14",
+   "ref_display": "uclahealth.org · 18 jun 2025"
   }
+ ],
+ "scenes": [
+  {
+   "id": "scene_001",
+   "arc": "hook_medias_res",
+   "duration_seconds": 9,
+   "narration": "¿Y si el intestino de un niño con autismo le mandara señales distintas al cerebro? UCLA y USC buscaron esa conversación.",
+   "on_screen_text": "¿El intestino habla al cerebro?",
+   "visual_description": "cover composition: a glowing human gut silhouette sending wavy luminous signal ribbons up to a stylized brain, swirling microbes around, large empty calm area in the upper third for a title",
+   "asset_filename": "frames/scene_001.jpg",
+   "source_ids": [
+    "SRC-001",
+    "SRC-002"
+   ],
+   "ambiente": "silencio",
+   "sfx": [],
+   "motion": "suave",
+   "image_prompt": "1960s psychedelic poster art, flowing organic shapes, vibrant complementary colors, microscopic organisms as large central motif, simple swirling background, illustrated, not photorealistic, vertical 9:16, no text, cover composition: a glowing human gut silhouette sending wavy luminous signal ribbons up to a stylized brain, swirling microbes around, large empty calm area in the upper third for a title, no text, no letters, no watermark, no logos, no people with glasses"
+  },
+  {
+   "id": "scene_002",
+   "arc": "desarrollo",
+   "duration_seconds": 9,
+   "narration": "Participaron 84 niños y adolescentes de 8 a 17 años. La mitad tenía diagnóstico de autismo; la otra mitad, no.",
+   "on_screen_text": "84 participantes",
+   "visual_description": "eighty-four abstract glowing seed-like dots arranged in two equal swirling groups, one warm and one cool, seen from above, no people faces",
+   "asset_filename": "frames/scene_002.jpg",
+   "source_ids": [
+    "SRC-001",
+    "SRC-002"
+   ],
+   "ambiente": "silencio",
+   "sfx": [],
+   "motion": "suave",
+   "image_prompt": "1960s psychedelic poster art, flowing organic shapes, vibrant complementary colors, microscopic organisms as large central motif, simple swirling background, illustrated, not photorealistic, vertical 9:16, no text, eighty-four abstract glowing seed-like dots arranged in two equal swirling groups, one warm and one cool, seen from above, no people faces, no text, no letters, no watermark, no logos, no people with glasses",
+   "capa": {
+    "tipo": "dato",
+    "valor": "84",
+    "etiqueta": "participantes de 8 a 17 años (mitad con autismo)",
+    "fuente": "UCLA Health (2025); Aziz-Zadeh et al., Nat Commun 2025"
+   }
+  },
+  {
+   "id": "scene_003",
+   "arc": "desarrollo",
+   "duration_seconds": 9,
+   "narration": "El equipo analizó muestras de heces, escaneó el cerebro de cada participante y midió su conducta.",
+   "on_screen_text": "Heces, cerebro y conducta",
+   "visual_description": "a petri dish full of swirling colorful microbes next to a glowing brain scan shape, close-up macro framing",
+   "asset_filename": "frames/scene_003.jpg",
+   "source_ids": [
+    "SRC-001",
+    "SRC-002"
+   ],
+   "ambiente": "silencio",
+   "sfx": [],
+   "motion": "suave",
+   "image_prompt": "1960s psychedelic poster art, flowing organic shapes, vibrant complementary colors, microscopic organisms as large central motif, simple swirling background, illustrated, not photorealistic, vertical 9:16, no text, a petri dish full of swirling colorful microbes next to a glowing brain scan shape, close-up macro framing, no text, no letters, no watermark, no logos, no people with glasses",
+   "capa": {
+    "tipo": "mapa",
+    "region": [
+     -125,
+     -105,
+     25,
+     45
+    ],
+    "puntos": [
+     {
+      "nombre": "UCLA y USC",
+      "lon": -118.3,
+      "lat": 34.05
+     }
+    ],
+    "titulo": "Equipo: UCLA y USC, Los Ángeles",
+    "fuente": "UCLA Health (2025). Coordenada aproximada. Base: Natural Earth 110m (dominio público)."
+   }
+  },
+  {
+   "id": "scene_004",
+   "arc": "desarrollo",
+   "duration_seconds": 9,
+   "narration": "En el grupo con autismo encontraron menos metabolitos que fabrican los microbios a partir del triptófano, un aminoácido que llega con la comida.",
+   "on_screen_text": "Menos triptófano microbiano",
+   "visual_description": "microscopic bacteria transforming small glowing amino acid beads into bright molecules, low angle view inside the gut lining",
+   "asset_filename": "frames/scene_004.jpg",
+   "source_ids": [
+    "SRC-001",
+    "SRC-002"
+   ],
+   "ambiente": "silencio",
+   "sfx": [],
+   "motion": "suave",
+   "image_prompt": "1960s psychedelic poster art, flowing organic shapes, vibrant complementary colors, microscopic organisms as large central motif, simple swirling background, illustrated, not photorealistic, vertical 9:16, no text, microscopic bacteria transforming small glowing amino acid beads into bright molecules, low angle view inside the gut lining, no text, no letters, no watermark, no logos, no people with glasses"
+  },
+  {
+   "id": "scene_005",
+   "arc": "desarrollo",
+   "duration_seconds": 9,
+   "narration": "Uno destacó: el kynurenato, de la vía de la kinurenina. Esa vía está ligada al procesamiento cerebral y a cambios cognitivos.",
+   "on_screen_text": "Kynurenato",
+   "visual_description": "a winding luminous pathway of molecules flowing like a river through psychedelic organic shapes, top-down overhead view",
+   "asset_filename": "frames/scene_005.jpg",
+   "source_ids": [
+    "SRC-001",
+    "SRC-002"
+   ],
+   "ambiente": "silencio",
+   "sfx": [],
+   "motion": "suave",
+   "image_prompt": "1960s psychedelic poster art, flowing organic shapes, vibrant complementary colors, microscopic organisms as large central motif, simple swirling background, illustrated, not photorealistic, vertical 9:16, no text, a winding luminous pathway of molecules flowing like a river through psychedelic organic shapes, top-down overhead view, no text, no letters, no watermark, no logos, no people with glasses"
+  },
+  {
+   "id": "scene_006",
+   "arc": "desarrollo",
+   "duration_seconds": 9,
+   "narration": "Los niveles más bajos se asociaron con cambios en la actividad de la ínsula y del cíngulo, zonas ligadas a las emociones y al cuerpo.",
+   "on_screen_text": "Ínsula y cíngulo",
+   "visual_description": "side profile of a stylized brain with two inner regions glowing intensely, ripples of color spreading outward, medium close-up",
+   "asset_filename": "frames/scene_006.jpg",
+   "source_ids": [
+    "SRC-001",
+    "SRC-002"
+   ],
+   "ambiente": "silencio",
+   "sfx": [],
+   "motion": "suave",
+   "image_prompt": "1960s psychedelic poster art, flowing organic shapes, vibrant complementary colors, microscopic organisms as large central motif, simple swirling background, illustrated, not photorealistic, vertical 9:16, no text, side profile of a stylized brain with two inner regions glowing intensely, ripples of color spreading outward, medium close-up, no text, no letters, no watermark, no logos, no people with glasses"
+  },
+  {
+   "id": "scene_007",
+   "arc": "desarrollo",
+   "duration_seconds": 9,
+   "narration": "Y mientras más bajos, más severos los síntomas. Ojo: no prueba que esos metabolitos causen el cambio; apunta a un vínculo.",
+   "on_screen_text": "Asociación, no causa",
+   "visual_description": "two swirling organic forms, a gut shape and a brain shape, connected by a dotted thread with a question-like gap in the middle, wide symmetrical framing",
+   "asset_filename": "frames/scene_007.jpg",
+   "source_ids": [
+    "SRC-001",
+    "SRC-002"
+   ],
+   "ambiente": "silencio",
+   "sfx": [],
+   "motion": "suave",
+   "image_prompt": "1960s psychedelic poster art, flowing organic shapes, vibrant complementary colors, microscopic organisms as large central motif, simple swirling background, illustrated, not photorealistic, vertical 9:16, no text, two swirling organic forms, a gut shape and a brain shape, connected by a dotted thread with a question-like gap in the middle, wide symmetrical framing, no text, no letters, no watermark, no logos, no people with glasses"
+  },
+  {
+   "id": "scene_008",
+   "arc": "cierre_historia",
+   "duration_seconds": 9,
+   "narration": "Los autores proponen investigar dietas, probióticos o simbióticos. Pero muchos niños con autismo tienen sensibilidades sensoriales que limitan lo que comen.",
+   "on_screen_text": "Dieta y probióticos",
+   "visual_description": "a bowl of colorful fruits, seeds and yogurt dissolving into swirling microbes and patterns, diagonal composition",
+   "asset_filename": "frames/scene_008.jpg",
+   "source_ids": [
+    "SRC-001",
+    "SRC-002"
+   ],
+   "ambiente": "silencio",
+   "sfx": [],
+   "motion": "suave",
+   "image_prompt": "1960s psychedelic poster art, flowing organic shapes, vibrant complementary colors, microscopic organisms as large central motif, simple swirling background, illustrated, not photorealistic, vertical 9:16, no text, a bowl of colorful fruits, seeds and yogurt dissolving into swirling microbes and patterns, diagonal composition, no text, no letters, no watermark, no logos, no people with glasses"
+  },
+  {
+   "id": "scene_009",
+   "arc": "reflexion_o_pregunta",
+   "duration_seconds": 9,
+   "narration": "Fue el primer análisis integral de cerebro, intestino y microbioma en autismo. ¿Hasta dónde los microbios moldean cómo el cerebro procesa el mundo? Esto fue Datos y ociosidades.",
+   "on_screen_text": "¿Hasta dónde?",
+   "visual_description": "a tiny planet-like sphere made of microbes orbiting a giant glowing brain-shaped nebula, very wide cosmic framing",
+   "asset_filename": "frames/scene_009.jpg",
+   "source_ids": [
+    "SRC-001",
+    "SRC-002"
+   ],
+   "ambiente": "silencio",
+   "sfx": [],
+   "motion": "suave",
+   "image_prompt": "1960s psychedelic poster art, flowing organic shapes, vibrant complementary colors, microscopic organisms as large central motif, simple swirling background, illustrated, not photorealistic, vertical 9:16, no text, a tiny planet-like sphere made of microbes orbiting a giant glowing brain-shaped nebula, very wide cosmic framing, no text, no letters, no watermark, no logos, no people with glasses"
+  }
+ ],
+ "cortinilla_fuentes": {
+  "duration_seconds": 11,
+  "titulo": "Fuentes",
+  "aviso": "Imágenes generadas con IA. Voz sintética. Música sintetizada.",
+  "firma": "Datos y ociosidades · @datosyociosidades"
+ },
+ "audio": {
+  "music_asset": "sintetico:marimba",
+  "cama_musical": "marimba",
+  "music_lufs": -27,
+  "ambiente_lufs": -30
+ },
+ "export": {
+  "filename": "capsula.mp4",
+  "resolution": "1080x1920",
+  "fps": 30,
+  "codec_video": "h264",
+  "codec_audio": "aac",
+  "loudness_lufs": -14,
+  "subtitle_max_words": 3,
+  "plano_seconds": 5
+ },
+ "nota_produccion": "Lote 19:00 del 14-nov-2026 (Grok Bot). Guion del stock ampliado a 9 escenas solo con hechos de las fuentes citadas (releídas el 14-nov) para llegar a 85–90 s. Original en storyboard_stock.json."
 }

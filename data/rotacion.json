@@ -329,5 +329,16 @@
     "tema": "oxoboranos estables aislados",
     "estilo": "pop_art_comic",
     "origen": "propia"
+  },
+  {
+    "fecha": "2026-11-15",
+    "project_id": "2026-11-03_autismo-microbioma-cerebro",
+    "estructura": "pregunta",
+    "cama": "marimba",
+    "duracion": 89,
+    "tema": "Microbioma intestinal y cerebro en autismo",
+    "estilo": "microscopio_psicodelico",
+    "origen": "propia",
+    "slot": "19:00"
   }
 ]
