@@ -328,3 +328,32 @@ Referencias:
 - Cambio operativo relevante documentado: Page Insights excluye interacciones de Reels y tiene límites de elegibilidad, retención y rango de consulta que deben reflejarse en cualquier diseño de métricas.
 - Sin cambio de implementación: no se ejecutaron llamadas autenticadas, no se usaron credenciales y no se modificó ningún conector.
 - No se modificaron datos de publicación ni métricas históricas.
+
+
+## 9.7 — Instagram Platform Insights: tres rutas de autenticación y límites operativos (verificado 2026-11-15)
+
+La guía oficial vigente de Meta para Instagram Insights documenta explícitamente **tres patrones de integración**, no solo Instagram Login y Facebook Login:
+
+1. **Unified Login**: Business Integration System User access token; host `graph.facebook.com`; flujo Facebook Login for Business; permisos `instagram_basic` y `instagram_manage_insights`.
+2. **Instagram Login**: Instagram User access token; host `graph.instagram.com`; flujo Business Login for Instagram; permisos `instagram_business_basic` y `instagram_business_manage_insights`.
+3. **Facebook Login**: Facebook User access token; host `graph.facebook.com`; permisos `instagram_basic`, `instagram_manage_insights` y `pages_read_engagement`. En determinados escenarios de rol de Page mediante Business Manager pueden requerirse `ads_management` o `ads_read`.
+
+La guía distingue Standard Access para cuentas propias/administradas añadidas a la app y Advanced Access para cuentas externas. La ruta no debe elegirse solo por el endpoint: depende del tipo de token, el flujo de login, la relación de la app con la cuenta y el nivel de acceso aprobado.
+
+**Límites de Account Insights que deben reflejarse en cualquier diseño de ingestión:**
+- Algunas métricas no están disponibles para cuentas con menos de 100 seguidores.
+- Los datos de Account Insights se conservan durante 90 días.
+- La consulta de Account Insights se realiza para un usuario de Instagram por solicitud.
+- Esta superficie no sustituye Facebook Pages Insights.
+- Una métrica no disponible puede producir un conjunto de datos vacío; no debe normalizarse automáticamente como cero.
+
+**Límites de Media Insights y eventos:**
+- Consultar medios propios de la cuenta profesional; no interpretar métricas de medios ajenos como disponibles.
+- Las métricas agregadas `total_*` relacionadas con medios promocionados dependen de Facebook Login.
+- Las métricas de vídeo en directo solo están disponibles mientras la transmisión está activa.
+- El webhook `story_insights` está limitado al flujo Facebook Login.
+- Los timestamps de Insights se entregan en UTC; la capa editorial debe convertirlos explícitamente a America/Mexico_City.
+
+**Implicación para CAPCOT:** el inventario de opciones de autenticación queda ampliado a tres rutas. Antes de implementar se debe decidir cuál corresponde al tipo de cuenta y al acceso realmente concedido; esta nota no afirma que exista una app configurada, que se hayan concedido permisos ni que se hayan creado o leído credenciales. No se cambió ninguna configuración ni se solicitó acceso.
+
+**Evidencia y límites de esta revisión:** guía oficial Meta, [Instagram Platform — Insights](https://developers.facebook.com/docs/instagram-platform/insights/), consultada el 2026-11-15. La apertura directa del changelog de Graph API y de la referencia de Page Insights devolvió HTTP 429; por ello no se afirma una nueva versión de Graph API ni un cambio de métricas de Page Insights en esta revisión. La documentación oficial de Google Trends API sigue describiendo acceso alfa limitado y no mostró un cambio nuevo relevante respecto de este informe.
