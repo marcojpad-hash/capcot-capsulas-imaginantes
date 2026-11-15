@@ -1,0 +1,25 @@
+{
+  "project_id": "2026-11-05_sinergia-algas",
+  "plataforma": [
+    "yt",
+    "tt",
+    "fb"
+  ],
+  "publish_at": "2026-11-19T01:00:00Z",
+  "ventana": "noche",
+  "hora_cdmx": "19:00",
+  "fecha_cdmx": "2026-11-18",
+  "titulo_yt": "Virus y bacterias colapsan el bloom #Shorts",
+  "privacidad": "private→público a las 19:00 CDMX",
+  "estado": "programado_yt",
+  "video": "capsula.mp4",
+  "miniatura": "portada.jpg (frame 0, título en caja crema con subrayado rojo); thumbnails.set OK; sardefault OK 1080x1920, igual a portada.jpg (dif media 0.1/255)",
+  "yt_programado": true,
+  "yt_id": "NKDhKlY1rVI",
+  "url": "https://youtube.com/shorts/NKDhKlY1rVI",
+  "tiktok": "pendiente",
+  "facebook": "pendiente",
+  "tiktok_id": null,
+  "facebook_id": null,
+  "nota": "Lote 19:00, montaje 2026-11-14 (Grok Bot). Voz es-MX-JorgeNeural (edge-tts +7%, -2Hz). 1080x1920 30fps, 89.37s, QA 21/21. Estilo papel_rasgado_capas, plano_seconds 5, movimientos suaves, cierre 10s. Token ~/.capcot/token.json. TikTok y Facebook todavía NO programados."
+}

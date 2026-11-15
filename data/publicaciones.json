@@ -710,5 +710,24 @@
   "nota": "Lote 19:00 montado 2026-11-14, JorgeNeural, 88.50s, QA 21/21, 9 frames risografia. Token ~/.capcot/token.json.",
   "tiktok_post_id": null,
   "facebook_content_id": null
+ },
+ {
+  "fecha": "2026-11-18",
+  "project_id": "2026-11-05_sinergia-algas",
+  "slot": "19:00",
+  "yt_id": "NKDhKlY1rVI",
+  "url": "https://youtube.com/shorts/NKDhKlY1rVI",
+  "privacidad": "private→public (publishAt)",
+  "publishAt_utc": "2026-11-19T01:00:00Z",
+  "hora_local": "2026-11-18 19:00 (America/Mexico_City)",
+  "video": "capsula.mp4",
+  "titulo": "Virus y bacterias colapsan el bloom #Shorts",
+  "origen": "propia",
+  "tiktok": "pendiente",
+  "facebook": "pendiente",
+  "miniatura": "portada.jpg (OK 1080x1920, igual a portada.jpg (dif media 0.1/255))",
+  "nota": "Lote 19:00 montado 2026-11-14, JorgeNeural, 89.37s, QA 21/21, 9 frames papel_rasgado_capas. Token ~/.capcot/token.json.",
+  "tiktok_post_id": null,
+  "facebook_content_id": null
  }
 ]
