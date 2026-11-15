@@ -1,0 +1,18 @@
+capsula_en .
+voz: Kokoro am_adam lang en-us
+duracion: 85.25s (target 85s)
+PASA: formato 1080x1920 30fps 9:16 1080x1920 30/1
+PASA: duracion 60-95s 85.25s
+PASA: duracion +-5s del target 85.25s vs target 85s (diff +0.25s)
+PASA: voz am_adam (no rechazada) Kokoro am_adam, lang en-us
+PASA: sin huecos de silencio >0.8s en narracion gaps: []
+PASA: loudness -14 LUFS +-1.5 input_i -14.95 LUFS
+PASA: subtitulos en ingles sincronizados 74 eventos
+PASA: cierre hablado en ingles 
+PASA: fuentes reales (sin inventar) 3 fuentes del storyboard
+PASA: frames = escenas 8 frames / 8 escenas
+VEREDICTO: PASA
+PASA: titulo en ingles verificado en cuadro (THE MOSQUITO THAT LISTENS, caja amarilla + subrayado rojo, t=1s)
+PASA: on-screen en ingles verificado en cuadro (The fruitless gene, t=40s)
+PASA: cortinilla en ingles verificada en cuadro (Sources + DOI 10.1371/journal.pbio.3004041 + @datosyociosidadesEN, t=84s)
+transcripcion faster-whisper base: ratio 0.921 (193 palabras guion / 187 oidas); unicas diferencias: Aedes aegypti->eats Egypti (nombre cientifico, artefacto ASR; respelling AY-deez AY-jip-tee probado aislado y salio peor: AYD's AYGIPT, no se aplica), female's/male's->females/males (posesivo, artefacto ASR), four hundred fifty/seven hundred fifty/twenty-seventh/one sixth->450/750/27th/1-6th (normalizacion de numeros del ASR), Datos y ociosidades->Dottos Y Oceosidades (marca en espanol, esperado). "fruitless" y "Johnston's organ" se oyen correctos (verificado aislado antes de narrar).
