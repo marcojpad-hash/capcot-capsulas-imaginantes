@@ -1,15 +1,15 @@
-# Reporte del orquestador — 2026-11-14 13:44
+# Reporte del orquestador — 2026-11-15 18:26
 Modelo: openai/gpt-oss-120b (Groq, API gratuita)
 Tablero actualizado con git pull.
 
-1. **Atorado:** Imaginantes no puede montar la cápsula Mpemba por pausa de créditos. **Deuda:** Imaginantes necesita que Marco libere créditos/gastos para Grok‑Imaginantes. **Siguiente paso:** Marco autoriza y habilita los créditos necesarios para que Imaginantes inicie el MP4.
+- **1. Montar la cápsula Mpemba** – Atorado porque **Imaginantes** está pausado por ahorro de créditos; debe montar el MP4 con voz es‑MX‑JorgeNeural y correr el QA. **Próximo paso:** Pecas registra la situación como **BLOQUEADA** y espera a que se liberen créditos para que Imaginantes continúe.  
 
-2. **Atorado:** Imaginantes está pausado y no monta la cápsula Barreleye. **Deuda:** Imaginantes necesita que Marco libere créditos/gastos. **Siguiente paso:** Marco aprueba y habilita los créditos para que Imaginantes ejecute el MP4.
+- **2. Montar la cápsula Barreleye** – Atorado por la misma razón: **Imaginantes** está sin créditos; debe montar el MP4 (con los dos arreglos de texto) y ejecutar el QA. **Próximo paso:** Pecas marca la tarea como **BLOQUEADA** y notifica que se reanudará cuando los créditos de Imaginantes estén disponibles.  
 
-3. **Atorado:** La subida de `gitleaks.yml` y `semgrep.yml` está pendiente. **Deuda:** Pecas debe subir los archivos vía navegador (cuenta con permisos). **Siguiente paso:** Pecas abre el navegador, navega a `.github/workflows/` y sube ambos archivos.
+- **3. Subir los workflows de seguridad de CAPCOT** – Pendiente porque **Pecas** (por navegador) aún no ha subido `gitleaks.yml` y `semgrep.yml`. **Próximo paso:** Pecas abre el navegador, sube ambos archivos al repositorio y confirma con un commit; luego actualiza `DELEGACIONES.md` a **HECHA** con el hash del commit.  
 
-4. **Atorado:** Activar secret scanning, CodeQL y Dependabot en Settings está pendiente. **Deuda:** Pecas debe activar esas opciones en la configuración de GitHub. **Siguiente paso:** Pecas entra a Settings > Code security y habilita secret scanning, CodeQL y Dependabot.
+- **4. Activar la seguridad nativa en GitHub** – Pendiente; corresponde a **Pecas** (por navegador, Settings > Code security) activar Secret Scanning, CodeQL y Dependabot. **Próximo paso:** Pecas entra a Settings, habilita esas opciones y documenta la acción con captura de pantalla y commit de configuración; marca la delegación como **HECHA**.  
 
-5. **Atorado:** Falta decisión sobre crear la cuenta gratuita de Clayzo. **Deuda:** Marco debe decidir si se crea la cuenta y comunicar la decisión a Pecas. **Siguiente paso:** Marco confirma (sí/no) la creación y notifica a Pecas.
+- **5. Crear cuenta gratuita de Clayzo** – Atascado porque **Marco** debe decidir si se crea la cuenta; si aprueba, **Pecas** la crea por navegador. **Próximo paso:** Marco revisa la solicitud y envía su decisión (“sí” o “no”) a Pecas; si responde “sí”, Pecas procede a crear la cuenta y registra el resultado en `DELEGACIONES.md`.  
 
-6. **Atorado:** Imaginantes no puede montar la cápsula “Agua que une imanes lejanos” porque está sin créditos y le faltan frames/narración. **Deuda:** (a) Marco debe liberar créditos para Imaginantes; (b) Pecas debe proveer los frames y la narración faltantes. **Siguiente paso:** Marco habilita los créditos y Pecas entrega los assets (frames y audio) al repositorio para que Imaginantes proceda.
+- **8. Versiones en inglés del backlog (FIFO, 7 paquetes)** – Parcialmente completado: el material ZIP está listo, pero **Imaginantes** aún no ha montado los MP4 en inglés ni los ha programado (créditos limitados). **Próximo paso:** Pecas marca la delegación como **BLOQUEADA** por falta de créditos y, al renovarse el límite (sábado 21‑nov 10:18 CST), Imaginantes debe montar cada MP4 en inglés y programar su publicación, añadiendo los commits de evidencia.
