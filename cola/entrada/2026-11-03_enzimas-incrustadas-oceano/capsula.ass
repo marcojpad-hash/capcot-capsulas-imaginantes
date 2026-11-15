@@ -1,0 +1,88 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Sub,DejaVu Sans,72,&H00FFFFFF,&H00FFFFFF,&H00000000,&H64000000,-1,0,0,0,100,100,0,0,1,6,2,2,90,170,620,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.30,0:00:01.17,Sub,,0,0,0,,El mito:
+Dialogue: 0,0:00:01.32,0:00:02.64,Sub,,0,0,0,,el plástico compostable
+Dialogue: 0,0:00:02.65,0:00:03.64,Sub,,0,0,0,,desaparece solo en
+Dialogue: 0,0:00:03.65,0:00:04.39,Sub,,0,0,0,,el mar.
+Dialogue: 0,0:00:04.61,0:00:05.49,Sub,,0,0,0,,El dato:
+Dialogue: 0,0:00:05.64,0:00:06.18,Sub,,0,0,0,,en el fondo
+Dialogue: 0,0:00:06.19,0:00:07.07,Sub,,0,0,0,,marino casi no
+Dialogue: 0,0:00:07.08,0:00:08.00,Sub,,0,0,0,,se degrada.
+Dialogue: 0,0:00:08.48,0:00:09.09,Sub,,0,0,0,,Un equipo de
+Dialogue: 0,0:00:09.10,0:00:09.92,Sub,,0,0,0,,la Universidad de
+Dialogue: 0,0:00:09.93,0:00:10.91,Sub,,0,0,0,,Tokio y JAMSTEC
+Dialogue: 0,0:00:10.92,0:00:12.19,Sub,,0,0,0,,probó otra idea:
+Dialogue: 0,0:00:12.34,0:00:13.16,Sub,,0,0,0,,meter la enzima
+Dialogue: 0,0:00:13.17,0:00:13.85,Sub,,0,0,0,,en el plástico
+Dialogue: 0,0:00:13.86,0:00:14.37,Sub,,0,0,0,,desde que se
+Dialogue: 0,0:00:14.38,0:00:15.17,Sub,,0,0,0,,fabrica.
+Dialogue: 0,0:00:15.65,0:00:16.90,Sub,,0,0,0,,Incrustaron enzimas como
+Dialogue: 0,0:00:16.91,0:00:17.60,Sub,,0,0,0,,la cutinasa en
+Dialogue: 0,0:00:17.61,0:00:19.71,Sub,,0,0,0,,cuatro poliésteres compostables.
+Dialogue: 0,0:00:19.93,0:00:21.07,Sub,,0,0,0,,Esas enzimas cortan
+Dialogue: 0,0:00:21.08,0:00:21.97,Sub,,0,0,0,,los enlaces éster
+Dialogue: 0,0:00:21.98,0:00:22.91,Sub,,0,0,0,,que mantienen unida
+Dialogue: 0,0:00:22.92,0:00:23.78,Sub,,0,0,0,,la cadena.
+Dialogue: 0,0:00:24.27,0:00:25.49,Sub,,0,0,0,,El sumergible tripulado
+Dialogue: 0,0:00:25.50,0:00:27.16,Sub,,0,0,0,,Shinkai 6500 dejó
+Dialogue: 0,0:00:27.17,0:00:27.92,Sub,,0,0,0,,las muestras en
+Dialogue: 0,0:00:27.93,0:00:28.98,Sub,,0,0,0,,el lecho marino,
+Dialogue: 0,0:00:29.00,0:00:29.72,Sub,,0,0,0,,desde la costa
+Dialogue: 0,0:00:29.73,0:00:31.67,Sub,,0,0,0,,hasta 5503 metros
+Dialogue: 0,0:00:31.68,0:00:32.79,Sub,,0,0,0,,de profundidad.
+Dialogue: 0,0:00:33.26,0:00:35.40,Sub,,0,0,0,,A 757 metros,
+Dialogue: 0,0:00:35.41,0:00:36.37,Sub,,0,0,0,,películas con 3
+Dialogue: 0,0:00:36.38,0:00:36.96,Sub,,0,0,0,,por ciento de
+Dialogue: 0,0:00:36.97,0:00:38.34,Sub,,0,0,0,,cutinasa perdieron casi
+Dialogue: 0,0:00:38.35,0:00:39.13,Sub,,0,0,0,,toda su masa
+Dialogue: 0,0:00:39.14,0:00:40.44,Sub,,0,0,0,,en cinco meses.
+Dialogue: 0,0:00:40.66,0:00:41.52,Sub,,0,0,0,,Los controles sin
+Dialogue: 0,0:00:41.53,0:00:43.21,Sub,,0,0,0,,enzima apenas cambiaron.
+Dialogue: 0,0:00:43.70,0:00:44.18,Sub,,0,0,0,,En el mar
+Dialogue: 0,0:00:44.19,0:00:44.98,Sub,,0,0,0,,profundo,
+Dialogue: 0,0:00:44.99,0:00:45.78,Sub,,0,0,0,,la degradación se
+Dialogue: 0,0:00:45.79,0:00:46.56,Sub,,0,0,0,,aceleró de 12
+Dialogue: 0,0:00:46.57,0:00:47.65,Sub,,0,0,0,,a 80 veces,
+Dialogue: 0,0:00:47.66,0:00:48.68,Sub,,0,0,0,,según el plástico
+Dialogue: 0,0:00:48.69,0:00:49.63,Sub,,0,0,0,,y la enzima.
+Dialogue: 0,0:00:50.11,0:00:51.15,Sub,,0,0,0,,Y a 5503
+Dialogue: 0,0:00:51.16,0:00:52.19,Sub,,0,0,0,,metros,
+Dialogue: 0,0:00:52.20,0:00:52.81,Sub,,0,0,0,,en la llanura
+Dialogue: 0,0:00:52.82,0:00:53.53,Sub,,0,0,0,,abisal,
+Dialogue: 0,0:00:53.54,0:00:54.71,Sub,,0,0,0,,también hubo degradación
+Dialogue: 0,0:00:54.72,0:00:55.89,Sub,,0,0,0,,moderada tras 18
+Dialogue: 0,0:00:55.90,0:00:56.50,Sub,,0,0,0,,meses,
+Dialogue: 0,0:00:56.51,0:00:57.77,Sub,,0,0,0,,aunque más lenta.
+Dialogue: 0,0:00:58.24,0:00:59.13,Sub,,0,0,0,,Lo ingenioso es
+Dialogue: 0,0:00:59.14,0:01:00.25,Sub,,0,0,0,,el interruptor:
+Dialogue: 0,0:01:00.40,0:01:01.22,Sub,,0,0,0,,sin agua,
+Dialogue: 0,0:01:01.23,0:01:01.88,Sub,,0,0,0,,la enzima no
+Dialogue: 0,0:01:01.89,0:01:02.68,Sub,,0,0,0,,trabaja.
+Dialogue: 0,0:01:02.90,0:01:03.86,Sub,,0,0,0,,El objeto resiste
+Dialogue: 0,0:01:03.87,0:01:04.63,Sub,,0,0,0,,mientras se usa
+Dialogue: 0,0:01:04.64,0:01:05.25,Sub,,0,0,0,,y se degrada
+Dialogue: 0,0:01:05.26,0:01:06.21,Sub,,0,0,0,,cuando se desgasta
+Dialogue: 0,0:01:06.22,0:01:06.72,Sub,,0,0,0,,y el agua
+Dialogue: 0,0:01:06.73,0:01:07.67,Sub,,0,0,0,,la alcanza.
+Dialogue: 0,0:01:08.15,0:01:08.78,Sub,,0,0,0,,No limpia el
+Dialogue: 0,0:01:08.79,0:01:09.58,Sub,,0,0,0,,plástico que ya
+Dialogue: 0,0:01:09.59,0:01:10.03,Sub,,0,0,0,,está en el
+Dialogue: 0,0:01:10.04,0:01:10.57,Sub,,0,0,0,,mar,
+Dialogue: 0,0:01:10.58,0:01:11.37,Sub,,0,0,0,,pero cambia cómo
+Dialogue: 0,0:01:11.38,0:01:12.39,Sub,,0,0,0,,podría fabricarse el
+Dialogue: 0,0:01:12.40,0:01:13.21,Sub,,0,0,0,,próximo.
+Dialogue: 0,0:01:13.43,0:01:14.50,Sub,,0,0,0,,¿Qué objeto cambiarías
+Dialogue: 0,0:01:14.51,0:01:15.27,Sub,,0,0,0,,primero?
+Dialogue: 0,0:01:15.52,0:01:16.36,Sub,,0,0,0,,Esto fue Datos
+Dialogue: 0,0:01:16.37,0:01:17.52,Sub,,0,0,0,,y ociosidades.

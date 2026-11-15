@@ -1,80 +1,281 @@
 {
-  "project_id": "2026-11-03_enzimas-incrustadas-oceano",
-  "fecha": "2026-11-03",
-  "tema": "Enzimas incrustadas en poli\u00e9steres que se degradan solas en el oc\u00e9ano profundo",
-  "estructura": "mito_vs_dato",
-  "estilo_id": "pixel_art",
-  "estilo_visual": "Pixel art",
-  "estilo": "pixel_art",
-  "cama": "arpegio",
-  "duracion_objetivo": 82,
-  "voz": "edge-tts es-MX-JorgeNeural rate +7% pitch -2Hz",
-  "hook_type": "afirmacion_negativa",
-  "open_loop": "No es la bacteria japonesa. Las enzimas van dentro del pl\u00e1stico.",
-  "fuentes": ["DOI 10.1038/s41586-026-11192-1", "Nature 21-oct-2026"],
-  "escenas": [
-    {
-      "id": "scene_001",
-      "duracion_s": 6,
-      "narracion": "El pl\u00e1stico que tiramos se rompe solo en el fondo del mar. No es la bacteria japonesa.",
-      "on_screen_text": "No es Ideonella",
-      "visual": "pixel art: botella cayendo al fondo marino oscuro, con part\u00edculas doradas (enzimas) incrustadas que brillan.",
-      "image_prompt": "16-bit pixel art scene, limited retro palette, crisp pixels, side view video game style, dithering, vertical 9:16, no text + bottle falling into dark ocean floor with glowing golden enzyme particles inside",
-      "source_ids": ["DOI 10.1038/s41586-026-11192-1"]
-    },
-    {
-      "id": "scene_002",
-      "duracion_s": 10,
-      "narracion": "Investigadores japoneses incrustaron enzimas dentro de poli\u00e9steres compostables. Las enzimas cortan los enlaces \u00e9ster cuando el pl\u00e1stico llega al agua.",
-      "on_screen_text": "Enzimas dentro",
-      "visual": "pixel art: cadena azul siendo cortada por tijeras amarillas (enzimas) en el fondo marino.",
-      "image_prompt": "16-bit pixel art scene, limited retro palette, crisp pixels, side view video game style, dithering, vertical 9:16, no text + blue plastic chain being cut by yellow enzyme scissors on ocean floor",
-      "source_ids": ["DOI 10.1038/s41586-026-11192-1"]
-    },
-    {
-      "id": "scene_003",
-      "duracion_s": 12,
-      "narracion": "A 757 metros de profundidad, pel\u00edculas con 3 por ciento de cutinasa perdieron casi toda su masa en cinco meses. Los controles sin enzima casi no se movieron.",
-      "on_screen_text": "757 m \u00b7 5 meses",
-      "visual": "pixel art: red de malla con muestras en el fondo, una se deshace en polvo mientras la otra permanece intacta. Term\u00f3metro y profundidad sin texto.",
-      "image_prompt": "16-bit pixel art scene, limited retro palette, crisp pixels, side view video game style, dithering, vertical 9:16, no text + mesh net with samples on ocean floor, one dissolving into powder while other stays intact, thermometer and depth indicator without text",
-      "source_ids": ["DOI 10.1038/s41586-026-11192-1"]
-    },
-    {
-      "id": "scene_004",
-      "duracion_s": 10,
-      "narracion": "Incluso a 5 503 metros las enzimas siguieron trabajando. El pl\u00e1stico normal no. La diferencia es que la enzima ya va adentro.",
-      "on_screen_text": "5 503 m",
-      "visual": "pixel art: fondo marino profundo, submarino, muestras brillando y desintegr\u00e1ndose lentamente. Oscuridad con puntos de luz.",
-      "image_prompt": "16-bit pixel art scene, limited retro palette, crisp pixels, side view video game style, dithering, vertical 9:16, no text + deep ocean floor with submarine, glowing samples slowly disintegrating, darkness with light points",
-      "source_ids": ["DOI 10.1038/s41586-026-11192-1"]
-    },
-    {
-      "id": "scene_005",
-      "duracion_s": 10,
-      "narracion": "No es magia. Es dise\u00f1o. Las enzimas se activan cuando el material se desgasta y entra en contacto con agua. Mientras se usa, se mantiene intacto.",
-      "on_screen_text": "Se activa al desgastarse",
-      "visual": "pixel art close-up: pieza con bolitas amarillas adentro, se raya y las bolitas empiezan a moverse.",
-      "image_prompt": "16-bit pixel art scene, limited retro palette, crisp pixels, side view video game style, dithering, vertical 9:16, no text + close-up of plastic piece with yellow enzyme balls inside, surface scratched and balls start moving",
-      "source_ids": ["DOI 10.1038/s41586-026-11192-1"]
-    },
-    {
-      "id": "scene_006",
-      "duracion_s": 8,
-      "narracion": "\u00bfCu\u00e1nto pl\u00e1stico podemos evitar tirar mientras estas enzimas trabajan? Esto fue Datos y ociosidades.",
-      "on_screen_text": "Datos y ociosidades",
-      "visual": "pixel art: playa al atardecer, menos basura, sol naranja. Sin firma de texto.",
-      "image_prompt": "16-bit pixel art scene, limited retro palette, crisp pixels, side view video game style, dithering, vertical 9:16, no text + sunset beach with less plastic trash, orange sun, no text",
-      "source_ids": []
-    },
-    {
-      "id": "scene_007",
-      "duracion_s": 6,
-      "narracion": "",
-      "on_screen_text": "Nature 2026 \u00b7 DOI 10.1038/s41586-026-11192-1",
-      "visual": "pixel art cortinilla de fuentes sobre fondo marino.",
-      "image_prompt": "16-bit pixel art scene, limited retro palette, crisp pixels, side view video game style, dithering, vertical 9:16, no text + sources curtain on ocean background",
-      "source_ids": ["DOI 10.1038/s41586-026-11192-1"]
-    }
-  ]
+ "project_id": "2026-11-03_enzimas-incrustadas-oceano",
+ "serie": "Datos y ociosidades",
+ "title": "Plástico con enzimas que se deshace en el mar profundo",
+ "titulo": "El plástico que se digiere solo",
+ "language": "es-MX",
+ "aspect_ratio": "9:16",
+ "target_duration_seconds": 88,
+ "estructura": "mito_vs_dato",
+ "resumen": "Universidad de Tokio y JAMSTEC incrustaron enzimas en poliésteres compostables: a 757 m se degradaron casi por completo en cinco meses.",
+ "keywords": [
+  "plástico",
+  "océano",
+  "enzimas"
+ ],
+ "trend_source": {
+  "termino": "plástico con enzimas",
+  "fecha_consulta": "2026-11-14"
+ },
+ "estilo_id": "ukiyo_e",
+ "estilo_visual": "Ukiyo-e (propio)",
+ "voice": {
+  "engine": "edge-tts",
+  "voice_id": "es-MX-JorgeNeural",
+  "rate": "+7%",
+  "pitch": "-2Hz",
+  "pad_seconds": 0.3,
+  "modo_pausas": "continuo"
+ },
+ "sources": [
+  {
+   "id": "SRC-001",
+   "cita_corta": "Huang, Q. et al. (2026). Enzyme-embedded polyesters for accelerated biodegradation in the deep sea. Nature.",
+   "doi": "10.1038/s41586-026-11192-1",
+   "url": "https://doi.org/10.1038/s41586-026-11192-1",
+   "accessed": "2026-11-14",
+   "ref_display": "Huang et al., Nature 2026"
+  },
+  {
+   "id": "SRC-002",
+   "cita_corta": "Nature Research Briefing (21-oct-2026).",
+   "url": "https://www.nature.com/articles/d41586-026-03282-x",
+   "accessed": "2026-11-14",
+   "ref_display": "Nature Research Briefing, 21 oct 2026"
+  },
+  {
+   "id": "SRC-003",
+   "cita_corta": "Phys.org (oct-2026). Embedded enzymes help plastics break down faster.",
+   "url": "https://phys.org/news/2026-10-embedded-enzymes-plastics-faster-deep.html",
+   "accessed": "2026-11-14",
+   "ref_display": "phys.org, oct 2026"
+  },
+  {
+   "id": "SRC-004",
+   "cita_corta": "Universidad de Tokio (22-oct-2026). Comunicado de prensa.",
+   "url": "https://www.a.u-tokyo.ac.jp/topics/topics_20261022-1.html",
+   "accessed": "2026-11-14",
+   "ref_display": "a.u-tokyo.ac.jp, 22 oct 2026"
+  }
+ ],
+ "scenes": [
+  {
+   "id": "scene_001",
+   "arc": "hook_medias_res",
+   "duration_seconds": 9,
+   "narration": "El mito: el plástico compostable desaparece solo en el mar. El dato: en el fondo marino casi no se degrada.",
+   "on_screen_text": "El plástico que se digiere solo",
+   "visual_description": "cover composition: a single plastic bottle sinking through great stylized indigo waves into the dark deep sea, tiny golden sparks inside the bottle, large empty calm sky area in the upper third for a title",
+   "asset_filename": "frames/scene_001.jpg",
+   "source_ids": [
+    "SRC-001",
+    "SRC-002",
+    "SRC-003",
+    "SRC-004"
+   ],
+   "ambiente": "silencio",
+   "sfx": [],
+   "motion": "suave",
+   "image_prompt": "ukiyo-e Japanese woodblock print, flat color areas, elegant outlines, stylized waves and clouds, washi paper texture, vertical 9:16, no text, cover composition: a single plastic bottle sinking through great stylized indigo waves into the dark deep sea, tiny golden sparks inside the bottle, large empty calm sky area in the upper third for a title, no text, no letters, no watermark, no logos, no people with glasses"
+  },
+  {
+   "id": "scene_002",
+   "arc": "desarrollo",
+   "duration_seconds": 9,
+   "narration": "Un equipo de la Universidad de Tokio y JAMSTEC probó otra idea: meter la enzima en el plástico desde que se fabrica.",
+   "on_screen_text": "Enzima desde la fábrica",
+   "visual_description": "a coastal research harbor with a white research ship and Mount Fuji far away, stylized clouds, wide landscape framing, no people",
+   "asset_filename": "frames/scene_002.jpg",
+   "source_ids": [
+    "SRC-001",
+    "SRC-002",
+    "SRC-003",
+    "SRC-004"
+   ],
+   "ambiente": "silencio",
+   "sfx": [],
+   "motion": "suave",
+   "image_prompt": "ukiyo-e Japanese woodblock print, flat color areas, elegant outlines, stylized waves and clouds, washi paper texture, vertical 9:16, no text, a coastal research harbor with a white research ship and Mount Fuji far away, stylized clouds, wide landscape framing, no people, no text, no letters, no watermark, no logos, no people with glasses",
+   "capa": {
+    "tipo": "mapa",
+    "region": [
+     128,
+     146,
+     28,
+     42
+    ],
+    "puntos": [
+     {
+      "nombre": "JAMSTEC Yokosuka",
+      "lon": 139.65,
+      "lat": 35.32
+     }
+    ],
+    "titulo": "Japón: Universidad de Tokio y JAMSTEC",
+    "fuente": "Huang et al., Nature 2026; coordenada aproximada de JAMSTEC Yokosuka. Base: Natural Earth 110m (dominio público)."
+   }
+  },
+  {
+   "id": "scene_003",
+   "arc": "desarrollo",
+   "duration_seconds": 9,
+   "narration": "Incrustaron enzimas como la cutinasa en cuatro poliésteres compostables. Esas enzimas cortan los enlaces éster que mantienen unida la cadena.",
+   "on_screen_text": "Tijeras moleculares",
+   "visual_description": "close-up of a long chain of beads like a pearl necklace being snipped by tiny golden scissor-like shapes, flowing water patterns behind",
+   "asset_filename": "frames/scene_003.jpg",
+   "source_ids": [
+    "SRC-001",
+    "SRC-002",
+    "SRC-003",
+    "SRC-004"
+   ],
+   "ambiente": "silencio",
+   "sfx": [],
+   "motion": "suave",
+   "image_prompt": "ukiyo-e Japanese woodblock print, flat color areas, elegant outlines, stylized waves and clouds, washi paper texture, vertical 9:16, no text, close-up of a long chain of beads like a pearl necklace being snipped by tiny golden scissor-like shapes, flowing water patterns behind, no text, no letters, no watermark, no logos, no people with glasses"
+  },
+  {
+   "id": "scene_004",
+   "arc": "desarrollo",
+   "duration_seconds": 9,
+   "narration": "El sumergible tripulado Shinkai 6500 dejó las muestras en el lecho marino, desde la costa hasta 5503 metros de profundidad.",
+   "on_screen_text": "Shinkai 6500",
+   "visual_description": "a small white deep-sea submersible with a robotic arm placing sample racks on the dark seafloor, beams of light, low angle",
+   "asset_filename": "frames/scene_004.jpg",
+   "source_ids": [
+    "SRC-001",
+    "SRC-002",
+    "SRC-003",
+    "SRC-004"
+   ],
+   "ambiente": "silencio",
+   "sfx": [],
+   "motion": "suave",
+   "image_prompt": "ukiyo-e Japanese woodblock print, flat color areas, elegant outlines, stylized waves and clouds, washi paper texture, vertical 9:16, no text, a small white deep-sea submersible with a robotic arm placing sample racks on the dark seafloor, beams of light, low angle, no text, no letters, no watermark, no logos, no people with glasses"
+  },
+  {
+   "id": "scene_005",
+   "arc": "desarrollo",
+   "duration_seconds": 9,
+   "narration": "A 757 metros, películas con 3 por ciento de cutinasa perdieron casi toda su masa en cinco meses. Los controles sin enzima apenas cambiaron.",
+   "on_screen_text": "757 m · 5 meses",
+   "visual_description": "two thin plastic sheets on the seafloor side by side, one crumbling into fine particles, the other intact, overhead top-down view",
+   "asset_filename": "frames/scene_005.jpg",
+   "source_ids": [
+    "SRC-001",
+    "SRC-002",
+    "SRC-003",
+    "SRC-004"
+   ],
+   "ambiente": "silencio",
+   "sfx": [],
+   "motion": "suave",
+   "image_prompt": "ukiyo-e Japanese woodblock print, flat color areas, elegant outlines, stylized waves and clouds, washi paper texture, vertical 9:16, no text, two thin plastic sheets on the seafloor side by side, one crumbling into fine particles, the other intact, overhead top-down view, no text, no letters, no watermark, no logos, no people with glasses",
+   "capa": {
+    "tipo": "dato",
+    "valor": "757 m · 5 meses",
+    "etiqueta": "degradación casi completa con enzima",
+    "fuente": "Huang et al., Nature 2026; Phys.org (2026)"
+   }
+  },
+  {
+   "id": "scene_006",
+   "arc": "desarrollo",
+   "duration_seconds": 9,
+   "narration": "En el mar profundo, la degradación se aceleró de 12 a 80 veces, según el plástico y la enzima.",
+   "on_screen_text": "De 12 a 80 veces",
+   "visual_description": "a huge stylized wave curling over fragments of plastic dissolving into foam, dynamic diagonal composition",
+   "asset_filename": "frames/scene_006.jpg",
+   "source_ids": [
+    "SRC-001",
+    "SRC-002",
+    "SRC-003",
+    "SRC-004"
+   ],
+   "ambiente": "silencio",
+   "sfx": [],
+   "motion": "suave",
+   "image_prompt": "ukiyo-e Japanese woodblock print, flat color areas, elegant outlines, stylized waves and clouds, washi paper texture, vertical 9:16, no text, a huge stylized wave curling over fragments of plastic dissolving into foam, dynamic diagonal composition, no text, no letters, no watermark, no logos, no people with glasses"
+  },
+  {
+   "id": "scene_007",
+   "arc": "desarrollo",
+   "duration_seconds": 9,
+   "narration": "Y a 5503 metros, en la llanura abisal, también hubo degradación moderada tras 18 meses, aunque más lenta.",
+   "on_screen_text": "5503 m · 18 meses",
+   "visual_description": "the deepest abyssal plain in near darkness, a single sample frame lit by a faint lantern-like glow, vast empty space, extreme wide shot",
+   "asset_filename": "frames/scene_007.jpg",
+   "source_ids": [
+    "SRC-001",
+    "SRC-002",
+    "SRC-003",
+    "SRC-004"
+   ],
+   "ambiente": "silencio",
+   "sfx": [],
+   "motion": "suave",
+   "image_prompt": "ukiyo-e Japanese woodblock print, flat color areas, elegant outlines, stylized waves and clouds, washi paper texture, vertical 9:16, no text, the deepest abyssal plain in near darkness, a single sample frame lit by a faint lantern-like glow, vast empty space, extreme wide shot, no text, no letters, no watermark, no logos, no people with glasses"
+  },
+  {
+   "id": "scene_008",
+   "arc": "cierre_historia",
+   "duration_seconds": 9,
+   "narration": "Lo ingenioso es el interruptor: sin agua, la enzima no trabaja. El objeto resiste mientras se usa y se degrada cuando se desgasta y el agua la alcanza.",
+   "on_screen_text": "Interruptor de agua",
+   "visual_description": "a drop of seawater falling onto a worn plastic surface that cracks open revealing glowing golden enzymes, macro close-up",
+   "asset_filename": "frames/scene_008.jpg",
+   "source_ids": [
+    "SRC-001",
+    "SRC-002",
+    "SRC-003",
+    "SRC-004"
+   ],
+   "ambiente": "silencio",
+   "sfx": [],
+   "motion": "suave",
+   "image_prompt": "ukiyo-e Japanese woodblock print, flat color areas, elegant outlines, stylized waves and clouds, washi paper texture, vertical 9:16, no text, a drop of seawater falling onto a worn plastic surface that cracks open revealing glowing golden enzymes, macro close-up, no text, no letters, no watermark, no logos, no people with glasses"
+  },
+  {
+   "id": "scene_009",
+   "arc": "reflexion_o_pregunta",
+   "duration_seconds": 9,
+   "narration": "No limpia el plástico que ya está en el mar, pero cambia cómo podría fabricarse el próximo. ¿Qué objeto cambiarías primero? Esto fue Datos y ociosidades.",
+   "on_screen_text": "¿Qué cambiarías primero?",
+   "visual_description": "a calm sea at sunrise with gentle stylized waves and a clean horizon, a single small cup floating and fading into the water, wide serene framing",
+   "asset_filename": "frames/scene_009.jpg",
+   "source_ids": [
+    "SRC-001",
+    "SRC-002",
+    "SRC-003",
+    "SRC-004"
+   ],
+   "ambiente": "silencio",
+   "sfx": [],
+   "motion": "suave",
+   "image_prompt": "ukiyo-e Japanese woodblock print, flat color areas, elegant outlines, stylized waves and clouds, washi paper texture, vertical 9:16, no text, a calm sea at sunrise with gentle stylized waves and a clean horizon, a single small cup floating and fading into the water, wide serene framing, no text, no letters, no watermark, no logos, no people with glasses"
+  }
+ ],
+ "cortinilla_fuentes": {
+  "duration_seconds": 11,
+  "titulo": "Fuentes",
+  "aviso": "Imágenes generadas con IA. Voz sintética. Música sintetizada.",
+  "firma": "Datos y ociosidades · @datosyociosidades"
+ },
+ "audio": {
+  "music_asset": "sintetico:arpegio",
+  "cama_musical": "arpegio",
+  "music_lufs": -27,
+  "ambiente_lufs": -30
+ },
+ "export": {
+  "filename": "capsula.mp4",
+  "resolution": "1080x1920",
+  "fps": 30,
+  "codec_video": "h264",
+  "codec_audio": "aac",
+  "loudness_lufs": -14,
+  "subtitle_max_words": 3,
+  "plano_seconds": 5
+ },
+ "nota_produccion": "Lote 19:00 del 14-nov-2026 (Grok Bot). Guion del stock ampliado a 9 escenas solo con hechos de las fuentes citadas (releídas el 14-nov) para llegar a 85–90 s. Original en storyboard_stock.json."
 }

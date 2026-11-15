@@ -340,5 +340,27 @@
     "estilo": "microscopio_psicodelico",
     "origen": "propia",
     "slot": "19:00"
+  },
+  {
+    "fecha": "2026-11-16",
+    "project_id": "2026-11-03_enzimas-incrustadas-oceano",
+    "estructura": "mito_vs_dato",
+    "cama": "arpegio",
+    "duracion": 89,
+    "tema": "Plástico con enzimas que se deshace en el mar profundo",
+    "estilo": "ukiyo_e",
+    "origen": "propia",
+    "slot": "19:00"
+  },
+  {
+    "fecha": "2026-11-17",
+    "project_id": "2026-11-10_residual-riesgo-ldl",
+    "estructura": "pregunta",
+    "cama": "circuito_neural",
+    "duracion": 88,
+    "tema": "El riesgo que queda después del colesterol",
+    "estilo": "risografia",
+    "origen": "propia",
+    "slot": "19:00"
   }
 ]
