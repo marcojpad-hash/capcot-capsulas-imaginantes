@@ -1,0 +1,14 @@
+{
+  "project_id": "2026-11-15_atlas-3d-cerebro",
+  "plataforma": ["yt", "tt"],
+  "publish_at": "2026-11-16T01:30:00Z",
+  "ventana": "noche",
+  "hora_cdmx": "2026-11-15 19:30",
+  "caption_tt": "El mapa del cerebro fetal que muestra cómo se reescribe el genoma y por qué importa para la esquizofrenia. Estudio en Cell. #Ciencia #Cerebro #Esquizofrenia #Shorts",
+  "titulo_yt": "El mapa 3D del cerebro fetal que revela el origen de la esquizofrenia #Shorts",
+  "privacidad": "private→público a las 19:30 CDMX",
+  "estado": "programado_repo",
+  "yt_programado": false,
+  "tiktok": "pendiente_mj",
+  "nota": "Paquete completo; falta montaje ffmpeg+edge-tts JorgeNeural. Mj sube TT desde teléfono en slot."
+}
