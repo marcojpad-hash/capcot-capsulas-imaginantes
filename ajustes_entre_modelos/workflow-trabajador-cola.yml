@@ -1,0 +1,45 @@
+# Trabajador de cola — CAPCOT (copia de staging).
+#
+# INSTALAR en .github/workflows/trabajador-cola.yml.
+# NO se puede subir por API: la app de Muse no tiene permiso Workflows (403).
+# Vías, en este orden:
+#   1. Delegar por el bus a Copilot/Codex con escritura nativa (Issue con este
+#      archivo y la instrucción de copiarlo a .github/workflows/).
+#   2. Subirlo por navegador con la sesión de GitHub.
+#
+# NECESITA: el secreto GROQ_API_KEY (ya existe en el repo, lo usa el
+# orquestador). GEMINI_API_KEY es opcional (segunda opinión).
+# GitHub Actions es gratis e ilimitado en repos públicos con runners estándar.
+
+name: Trabajador de cola
+
+on:
+  schedule:
+    - cron: '0 */2 * * *'
+  workflow_dispatch:
+  issues:
+    types: [labeled]
+
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+
+jobs:
+  trabajar:
+    if: github.event_name != 'issues' || github.event.label.name == 'cola'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Trabajar la cola
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 scripts/trabajador_cola.py
