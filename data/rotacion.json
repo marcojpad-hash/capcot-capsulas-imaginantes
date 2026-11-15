@@ -373,5 +373,16 @@
     "estilo": "papel_rasgado_capas",
     "origen": "propia",
     "slot": "19:00"
+  },
+  {
+    "fecha": "2026-11-19",
+    "project_id": "2026-11-06_adn-sintetico-myc",
+    "estructura": "historia",
+    "cama": "marimba",
+    "duracion": 89,
+    "tema": "ADN que apaga el gen del cáncer",
+    "estilo": "dibujo_cientifico_scratchboard",
+    "origen": "propia",
+    "slot": "19:00"
   }
 ]

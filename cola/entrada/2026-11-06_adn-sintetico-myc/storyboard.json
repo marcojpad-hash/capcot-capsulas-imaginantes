@@ -1,144 +1,249 @@
 {
-  "project_id": "2026-11-06_adn-sintetico-myc",
-  "title": "ADN que apaga el gen del cáncer",
-  "language": "es-MX",
-  "aspect_ratio": "9:16",
-  "target_duration_seconds": 82,
-  "trend_source": {
-    "tipo": "noticia_cientifica",
-    "medio": "Nucleic Acids Research / Phys.org",
-    "url": "https://phys.org/news/2026-11-scientists-revive-decades-approach-cancer.html",
-    "estudio_doi": "10.1093/nar/gkag998",
-    "fecha_publicacion": "2026-10-26",
-    "termino": "TFO ADN sintético MYC cáncer",
-    "fecha_consulta": "2026-11-06"
+ "project_id": "2026-11-06_adn-sintetico-myc",
+ "serie": "Datos y ociosidades",
+ "title": "ADN que apaga el gen del cáncer",
+ "titulo": "ADN que apaga un gen del cáncer",
+ "language": "es-MX",
+ "aspect_ratio": "9:16",
+ "target_duration_seconds": 88,
+ "estructura": "historia",
+ "resumen": "La Universidad de Portsmouth revivió los TFO con una base sintética Z: redujeron la actividad del gen MYC entre 50 y 80 % en laboratorio.",
+ "keywords": [
+  "ADN",
+  "cáncer",
+  "genética"
+ ],
+ "trend_source": {
+  "termino": "ADN sintético contra MYC",
+  "fecha_consulta": "2026-11-14"
+ },
+ "estilo_id": "dibujo_cientifico_scratchboard",
+ "estilo_visual": "Scratchboard científico",
+ "voice": {
+  "engine": "edge-tts",
+  "voice_id": "es-MX-JorgeNeural",
+  "rate": "+7%",
+  "pitch": "-2Hz",
+  "pad_seconds": 0.3,
+  "modo_pausas": "continuo"
+ },
+ "sources": [
+  {
+   "id": "SRC-001",
+   "cita_corta": "Ma, R. et al. (2026). Sequence-specific targeting of GC-rich gene loci by parallel triplex-forming oligonucleotides containing a modified nucleobase. Nucleic Acids Research.",
+   "doi": "10.1093/nar/gkag998",
+   "url": "https://doi.org/10.1093/nar/gkag998",
+   "accessed": "2026-11-14",
+   "ref_display": "Ma et al., NAR 2026"
   },
-  "estilo_id": "claymation",
-  "estilo_visual": "Claymation / plastilina",
-  "voice": {
-    "engine": "edge-tts",
-    "voice_id": "es-MX-JorgeNeural",
-    "rate": "+7%",
-    "pitch": "-2Hz",
-    "pad_seconds": 0.3,
-    "modo_pausas": "continuo"
+  {
+   "id": "SRC-002",
+   "cita_corta": "University of Portsmouth / Phys.org (3-nov-2026). Scientists revive decades-old approach to target cancer-linked genes using synthetic DNA.",
+   "url": "https://phys.org/news/2026-11-scientists-revive-decades-approach-cancer.html",
+   "accessed": "2026-11-14",
+   "ref_display": "phys.org, 3 nov 2026"
+  }
+ ],
+ "scenes": [
+  {
+   "id": "scene_001",
+   "arc": "hook_medias_res",
+   "duration_seconds": 9,
+   "narration": "Un pedazo de ADN artificial se enrosca sobre un gen del cáncer y le baja el volumen. La idea tenía décadas esperando.",
+   "on_screen_text": "ADN que apaga un gen del cáncer",
+   "visual_description": "cover composition: a DNA double helix with a third thin strand wrapping into its groove, glowing white lines on black, large empty black area in the upper third for a title",
+   "asset_filename": "frames/scene_001.jpg",
+   "source_ids": [
+    "SRC-001",
+    "SRC-002"
+   ],
+   "ambiente": "silencio",
+   "sfx": [],
+   "motion": "suave",
+   "image_prompt": "scratchboard illustration, white lines scratched on black, fine cross-hatching, dramatic single subject filling frame, black background, not photorealistic, vertical 9:16, no text, cover composition: a DNA double helix with a third thin strand wrapping into its groove, glowing white lines on black, large empty black area in the upper third for a title, no text, no letters, no watermark, no logos, no people with glasses"
   },
-  "sources": [
-    {
-      "id": "SRC-001",
-      "cita_corta": "Ma et al. (2026). Sequence-specific targeting of GC-rich gene loci by parallel triplex-forming oligonucleotides. Nucleic Acids Res.",
-      "url": "https://doi.org/10.1093/nar/gkag998",
-      "doi": "10.1093/nar/gkag998",
-      "accessed": "2026-11-06",
-      "supports": ["TFO con base Z reprime MYC 50-80%", "primer TFO paralelo que apaga gen endógeno", "triángulo estable a pH neutro"],
-      "ref_display": "Ma et al. NAR 2026"
-    }
-  ],
-  "scenes": [
-    {
-      "id": "scene_001",
-      "arc": "hook_medias_res",
-      "duration_seconds": 8.0,
-      "narration": "Un pedazo de ADN artificial se pega al gen y lo apaga.",
-      "on_screen_text": "ADN que apaga",
-      "visual_description": "plastilina de doble hélice con hilo morado pegándose",
-      "image_prompt": "claymation stop-motion scene, plasticine characters and set with visible fingerprints, soft studio lighting, miniature handmade props, vertical 9:16, no text + DNA double helix of colored clay with purple TFO strand attaching",
-      "source_ids": ["SRC-001"],
-      "asset_filename": "frames/scene_001.jpg",
-      "ambiente": "laboratorio",
-      "sfx": ["plop"]
-    },
-    {
-      "id": "scene_002",
-      "arc": "desarrollo",
-      "duration_seconds": 11.0,
-      "narration": "El gen MYC se enciende demasiado y empuja muchos cánceres. Es difícil apagarlo porque controla otras cosas.",
-      "on_screen_text": "MYC encendido",
-      "visual_description": "célula de plastilina con gen MYC brillante y tumores",
-      "image_prompt": "claymation stop-motion scene, plasticine characters and set with visible fingerprints, soft studio lighting, miniature handmade props, vertical 9:16, no text + clay cell with glowing MYC gene and small clay tumors",
-      "source_ids": ["SRC-001"],
-      "asset_filename": "frames/scene_002.jpg",
-      "ambiente": "laboratorio",
-      "sfx": ["zumbido"]
-    },
-    {
-      "id": "scene_003",
-      "arc": "desarrollo",
-      "duration_seconds": 10.0,
-      "narration": "Investigadores usaron oligo de ADN que forman triple hélice, TFO, con una base sintética llamada Z.",
-      "on_screen_text": "Base Z",
-      "visual_description": "molécula de plastilina Z encajando en triple hélice",
-      "image_prompt": "claymation stop-motion scene, plasticine characters and set with visible fingerprints, soft studio lighting, miniature handmade props, vertical 9:16, no text + plasticine triple helix with Z base fitting into GC pair",
-      "source_ids": ["SRC-001"],
-      "asset_filename": "frames/scene_003.jpg",
-      "ambiente": "laboratorio",
-      "sfx": ["clic"]
-    },
-    {
-      "id": "scene_004",
-      "arc": "desarrollo",
-      "duration_seconds": 10.0,
-      "narration": "La Z permite pegarse a zonas ricas en G y C a pH normal, sin ácido. Antes casi no se podía.",
-      "on_screen_text": "pH normal",
-      "visual_description": "TFO de plastilina abrazando el promotor MYC",
-      "image_prompt": "claymation stop-motion scene, plasticine characters and set with visible fingerprints, soft studio lighting, miniature handmade props, vertical 9:16, no text + clay TFO hugging MYC promoter DNA at neutral pH",
-      "source_ids": ["SRC-001"],
-      "asset_filename": "frames/scene_004.jpg",
-      "ambiente": "laboratorio",
-      "sfx": ["suave"]
-    },
-    {
-      "id": "scene_005",
-      "arc": "desarrollo",
-      "duration_seconds": 10.0,
-      "narration": "En células, bajaron la actividad del MYC entre 50 y 80 por ciento. También el ARN y la proteína.",
-      "on_screen_text": "50 a 80%",
-      "visual_description": "barras de plastilina bajando y células calmándose",
-      "image_prompt": "claymation stop-motion scene, plasticine characters and set with visible fingerprints, soft studio lighting, miniature handmade props, vertical 9:16, no text + clay bar graph dropping and quiet clay cells",
-      "source_ids": ["SRC-001"],
-      "asset_filename": "frames/scene_005.jpg",
-      "ambiente": "laboratorio",
-      "sfx": ["caida"]
-    },
-    {
-      "id": "scene_006",
-      "arc": "cierre_historia",
-      "duration_seconds": 9.0,
-      "narration": "Es la primera vez que un TFO paralelo con un solo cambio de base apaga un gen real dentro de la célula.",
-      "on_screen_text": "Primera vez",
-      "visual_description": "científicos de plastilina celebrando con microscopio",
-      "image_prompt": "claymation stop-motion scene, plasticine characters and set with visible fingerprints, soft studio lighting, miniature handmade props, vertical 9:16, no text + clay scientists celebrating with microscope and DNA model",
-      "source_ids": ["SRC-001"],
-      "asset_filename": "frames/scene_006.jpg",
-      "ambiente": "laboratorio",
-      "sfx": ["aplausos"]
-    },
-    {
-      "id": "scene_007",
-      "arc": "reflexion_o_pregunta",
-      "duration_seconds": 9.0,
-      "narration": "¿Podremos apagar genes problemáticos con pedazos de ADN a la medida? Esto fue Datos y ociosidades.",
-      "on_screen_text": "Datos y ociosidades",
-      "visual_description": "hélice de plastilina quieta al atardecer de lab",
-      "image_prompt": "claymation stop-motion scene, plasticine characters and set with visible fingerprints, soft studio lighting, miniature handmade props, vertical 9:16, no text + quiet clay DNA helix in lab at dusk with soft light",
-      "source_ids": ["SRC-001"],
-      "asset_filename": "frames/scene_007.jpg",
-      "ambiente": "laboratorio",
-      "sfx": ["silencio"]
-    }
-  ],
-  "cortinilla_fuentes": {
-    "duration_seconds": 6,
-    "titulo": "Fuentes",
-    "aviso": "Imágenes generadas con IA. Voz sintética. Audio sintetizado.",
-    "firma": "Datos y ociosidades · @datosyociosidades"
+  {
+   "id": "scene_002",
+   "arc": "desarrollo",
+   "duration_seconds": 9,
+   "narration": "Por más de 20 años, David Rusling, de la Universidad de Portsmouth, en Inglaterra, ha estudiado los oligonucleótidos que forman triple hélice.",
+   "on_screen_text": "Más de 20 años",
+   "visual_description": "an old harbor city waterfront with sailing ships and a lighthouse at night, scratched white lines, wide view, no people",
+   "asset_filename": "frames/scene_002.jpg",
+   "source_ids": [
+    "SRC-001",
+    "SRC-002"
+   ],
+   "ambiente": "silencio",
+   "sfx": [],
+   "motion": "suave",
+   "image_prompt": "scratchboard illustration, white lines scratched on black, fine cross-hatching, dramatic single subject filling frame, black background, not photorealistic, vertical 9:16, no text, an old harbor city waterfront with sailing ships and a lighthouse at night, scratched white lines, wide view, no people, no text, no letters, no watermark, no logos, no people with glasses",
+   "capa": {
+    "tipo": "mapa",
+    "region": [
+     -11,
+     4,
+     48,
+     59
+    ],
+    "puntos": [
+     {
+      "nombre": "Univ. de Portsmouth",
+      "lon": -1.09,
+      "lat": 50.8
+     }
+    ],
+    "titulo": "Universidad de Portsmouth, Inglaterra",
+    "fuente": "University of Portsmouth / Phys.org (2026). Coordenada aproximada. Base: Natural Earth 110m (dominio público)."
+   }
   },
-  "export": {
-    "filename": "capsula.mp4",
-    "resolution": "1080x1920",
-    "fps": 30,
-    "loudness_lufs": -14
+  {
+   "id": "scene_003",
+   "arc": "desarrollo",
+   "duration_seconds": 9,
+   "narration": "Se les llama TFO. Reconocen una secuencia exacta del ADN de doble cadena y se acomodan sobre ella como una tercera hebra.",
+   "on_screen_text": "Tercera hebra",
+   "visual_description": "macro detail of a third strand sliding along the major groove of a double helix like a key into a lock, extreme close-up",
+   "asset_filename": "frames/scene_003.jpg",
+   "source_ids": [
+    "SRC-001",
+    "SRC-002"
+   ],
+   "ambiente": "silencio",
+   "sfx": [],
+   "motion": "suave",
+   "image_prompt": "scratchboard illustration, white lines scratched on black, fine cross-hatching, dramatic single subject filling frame, black background, not photorealistic, vertical 9:16, no text, macro detail of a third strand sliding along the major groove of a double helix like a key into a lock, extreme close-up, no text, no letters, no watermark, no logos, no people with glasses"
   },
-  "estructura": "pregunta",
-  "titulo": "ADN que apaga MYC"
+  {
+   "id": "scene_004",
+   "arc": "desarrollo",
+   "duration_seconds": 9,
+   "narration": "En el tubo de ensayo funcionaban de maravilla. Pero dentro de las células, la química del ADN natural no los dejaba unirse con fuerza.",
+   "on_screen_text": "El tubo vs la célula",
+   "visual_description": "a laboratory test tube on the left and a large round cell on the right, the strand slipping off the DNA inside the cell, side by side composition",
+   "asset_filename": "frames/scene_004.jpg",
+   "source_ids": [
+    "SRC-001",
+    "SRC-002"
+   ],
+   "ambiente": "silencio",
+   "sfx": [],
+   "motion": "suave",
+   "image_prompt": "scratchboard illustration, white lines scratched on black, fine cross-hatching, dramatic single subject filling frame, black background, not photorealistic, vertical 9:16, no text, a laboratory test tube on the left and a large round cell on the right, the strand slipping off the DNA inside the cell, side by side composition, no text, no letters, no watermark, no logos, no people with glasses"
+  },
+  {
+   "id": "scene_005",
+   "arc": "desarrollo",
+   "duration_seconds": 9,
+   "narration": "Las zonas más difíciles eran las ricas en guanina y citosina, regiones que controlan cuándo se enciende un gen.",
+   "on_screen_text": "Zonas ricas en G y C",
+   "visual_description": "a dense tightly packed region of a DNA ladder with thick rungs, like a locked gate, overhead view",
+   "asset_filename": "frames/scene_005.jpg",
+   "source_ids": [
+    "SRC-001",
+    "SRC-002"
+   ],
+   "ambiente": "silencio",
+   "sfx": [],
+   "motion": "suave",
+   "image_prompt": "scratchboard illustration, white lines scratched on black, fine cross-hatching, dramatic single subject filling frame, black background, not photorealistic, vertical 9:16, no text, a dense tightly packed region of a DNA ladder with thick rungs, like a locked gate, overhead view, no text, no letters, no watermark, no logos, no people with glasses"
+  },
+  {
+   "id": "scene_006",
+   "arc": "desarrollo",
+   "duration_seconds": 9,
+   "narration": "El giro: el equipo agregó una base sintética llamada Z, que ya se vende comercialmente. Con ella, los TFO se unieron con más fuerza y precisión.",
+   "on_screen_text": "La base Z",
+   "visual_description": "a single new puzzle-piece shaped base glowing as it locks the third strand firmly onto the helix, dramatic low angle",
+   "asset_filename": "frames/scene_006.jpg",
+   "source_ids": [
+    "SRC-001",
+    "SRC-002"
+   ],
+   "ambiente": "silencio",
+   "sfx": [],
+   "motion": "suave",
+   "image_prompt": "scratchboard illustration, white lines scratched on black, fine cross-hatching, dramatic single subject filling frame, black background, not photorealistic, vertical 9:16, no text, a single new puzzle-piece shaped base glowing as it locks the third strand firmly onto the helix, dramatic low angle, no text, no letters, no watermark, no logos, no people with glasses"
+  },
+  {
+   "id": "scene_007",
+   "arc": "desarrollo",
+   "duration_seconds": 9,
+   "narration": "Lo probaron en MYC, un gen que impulsa muchos cánceres cuando se acelera. Su actividad bajó entre 50 y 80 por ciento en experimentos de laboratorio.",
+   "on_screen_text": "MYC: −50 a −80 %",
+   "visual_description": "a large dial or volume knob engraved in white lines being turned down, wires of DNA leading into it, medium shot",
+   "asset_filename": "frames/scene_007.jpg",
+   "source_ids": [
+    "SRC-001",
+    "SRC-002"
+   ],
+   "ambiente": "silencio",
+   "sfx": [],
+   "motion": "suave",
+   "image_prompt": "scratchboard illustration, white lines scratched on black, fine cross-hatching, dramatic single subject filling frame, black background, not photorealistic, vertical 9:16, no text, a large dial or volume knob engraved in white lines being turned down, wires of DNA leading into it, medium shot, no text, no letters, no watermark, no logos, no people with glasses",
+   "capa": {
+    "tipo": "dato",
+    "valor": "50–80 %",
+    "etiqueta": "menos actividad del gen MYC (laboratorio)",
+    "fuente": "Ma et al., NAR 2026; University of Portsmouth / Phys.org 2026"
+   }
+  },
+  {
+   "id": "scene_008",
+   "arc": "cierre_historia",
+   "duration_seconds": 9,
+   "narration": "Superaron al ADN sin modificar y a otros métodos previos. Aún falta mucha investigación antes de pensar en pacientes.",
+   "on_screen_text": "Aún no en pacientes",
+   "visual_description": "a long winding road made of DNA rungs stretching toward a distant horizon, very wide framing",
+   "asset_filename": "frames/scene_008.jpg",
+   "source_ids": [
+    "SRC-001",
+    "SRC-002"
+   ],
+   "ambiente": "silencio",
+   "sfx": [],
+   "motion": "suave",
+   "image_prompt": "scratchboard illustration, white lines scratched on black, fine cross-hatching, dramatic single subject filling frame, black background, not photorealistic, vertical 9:16, no text, a long winding road made of DNA rungs stretching toward a distant horizon, very wide framing, no text, no letters, no watermark, no logos, no people with glasses"
+  },
+  {
+   "id": "scene_009",
+   "arc": "reflexion_o_pregunta",
+   "duration_seconds": 9,
+   "narration": "Por ahora es una herramienta para apagar genes y estudiar qué pasa. ¿Qué gen te gustaría poder silenciar a la medida? Esto fue Datos y ociosidades.",
+   "on_screen_text": "¿Qué gen silenciarías?",
+   "visual_description": "a field of many DNA helices standing like trees at night, one of them dimmed, wide symmetrical framing",
+   "asset_filename": "frames/scene_009.jpg",
+   "source_ids": [
+    "SRC-001",
+    "SRC-002"
+   ],
+   "ambiente": "silencio",
+   "sfx": [],
+   "motion": "suave",
+   "image_prompt": "scratchboard illustration, white lines scratched on black, fine cross-hatching, dramatic single subject filling frame, black background, not photorealistic, vertical 9:16, no text, a field of many DNA helices standing like trees at night, one of them dimmed, wide symmetrical framing, no text, no letters, no watermark, no logos, no people with glasses"
+  }
+ ],
+ "cortinilla_fuentes": {
+  "duration_seconds": 11.5,
+  "titulo": "Fuentes",
+  "aviso": "Imágenes generadas con IA. Voz sintética. Música sintetizada.",
+  "firma": "Datos y ociosidades · @datosyociosidades"
+ },
+ "audio": {
+  "music_asset": "sintetico:marimba",
+  "cama_musical": "marimba",
+  "music_lufs": -27,
+  "ambiente_lufs": -30
+ },
+ "export": {
+  "filename": "capsula.mp4",
+  "resolution": "1080x1920",
+  "fps": 30,
+  "codec_video": "h264",
+  "codec_audio": "aac",
+  "loudness_lufs": -14,
+  "subtitle_max_words": 3,
+  "plano_seconds": 5
+ },
+ "nota_produccion": "Lote 19:00 del 14-nov-2026 (Grok Bot). Guion del stock ampliado a 9 escenas solo con hechos de las fuentes citadas (releídas el 14-nov) para llegar a 85–90 s. Original en storyboard_stock.json."
 }

@@ -1,0 +1,144 @@
+{
+  "project_id": "2026-11-06_adn-sintetico-myc",
+  "title": "ADN que apaga el gen del cáncer",
+  "language": "es-MX",
+  "aspect_ratio": "9:16",
+  "target_duration_seconds": 82,
+  "trend_source": {
+    "tipo": "noticia_cientifica",
+    "medio": "Nucleic Acids Research / Phys.org",
+    "url": "https://phys.org/news/2026-11-scientists-revive-decades-approach-cancer.html",
+    "estudio_doi": "10.1093/nar/gkag998",
+    "fecha_publicacion": "2026-10-26",
+    "termino": "TFO ADN sintético MYC cáncer",
+    "fecha_consulta": "2026-11-06"
+  },
+  "estilo_id": "claymation",
+  "estilo_visual": "Claymation / plastilina",
+  "voice": {
+    "engine": "edge-tts",
+    "voice_id": "es-MX-JorgeNeural",
+    "rate": "+7%",
+    "pitch": "-2Hz",
+    "pad_seconds": 0.3,
+    "modo_pausas": "continuo"
+  },
+  "sources": [
+    {
+      "id": "SRC-001",
+      "cita_corta": "Ma et al. (2026). Sequence-specific targeting of GC-rich gene loci by parallel triplex-forming oligonucleotides. Nucleic Acids Res.",
+      "url": "https://doi.org/10.1093/nar/gkag998",
+      "doi": "10.1093/nar/gkag998",
+      "accessed": "2026-11-06",
+      "supports": ["TFO con base Z reprime MYC 50-80%", "primer TFO paralelo que apaga gen endógeno", "triángulo estable a pH neutro"],
+      "ref_display": "Ma et al. NAR 2026"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_001",
+      "arc": "hook_medias_res",
+      "duration_seconds": 8.0,
+      "narration": "Un pedazo de ADN artificial se pega al gen y lo apaga.",
+      "on_screen_text": "ADN que apaga",
+      "visual_description": "plastilina de doble hélice con hilo morado pegándose",
+      "image_prompt": "claymation stop-motion scene, plasticine characters and set with visible fingerprints, soft studio lighting, miniature handmade props, vertical 9:16, no text + DNA double helix of colored clay with purple TFO strand attaching",
+      "source_ids": ["SRC-001"],
+      "asset_filename": "frames/scene_001.jpg",
+      "ambiente": "laboratorio",
+      "sfx": ["plop"]
+    },
+    {
+      "id": "scene_002",
+      "arc": "desarrollo",
+      "duration_seconds": 11.0,
+      "narration": "El gen MYC se enciende demasiado y empuja muchos cánceres. Es difícil apagarlo porque controla otras cosas.",
+      "on_screen_text": "MYC encendido",
+      "visual_description": "célula de plastilina con gen MYC brillante y tumores",
+      "image_prompt": "claymation stop-motion scene, plasticine characters and set with visible fingerprints, soft studio lighting, miniature handmade props, vertical 9:16, no text + clay cell with glowing MYC gene and small clay tumors",
+      "source_ids": ["SRC-001"],
+      "asset_filename": "frames/scene_002.jpg",
+      "ambiente": "laboratorio",
+      "sfx": ["zumbido"]
+    },
+    {
+      "id": "scene_003",
+      "arc": "desarrollo",
+      "duration_seconds": 10.0,
+      "narration": "Investigadores usaron oligo de ADN que forman triple hélice, TFO, con una base sintética llamada Z.",
+      "on_screen_text": "Base Z",
+      "visual_description": "molécula de plastilina Z encajando en triple hélice",
+      "image_prompt": "claymation stop-motion scene, plasticine characters and set with visible fingerprints, soft studio lighting, miniature handmade props, vertical 9:16, no text + plasticine triple helix with Z base fitting into GC pair",
+      "source_ids": ["SRC-001"],
+      "asset_filename": "frames/scene_003.jpg",
+      "ambiente": "laboratorio",
+      "sfx": ["clic"]
+    },
+    {
+      "id": "scene_004",
+      "arc": "desarrollo",
+      "duration_seconds": 10.0,
+      "narration": "La Z permite pegarse a zonas ricas en G y C a pH normal, sin ácido. Antes casi no se podía.",
+      "on_screen_text": "pH normal",
+      "visual_description": "TFO de plastilina abrazando el promotor MYC",
+      "image_prompt": "claymation stop-motion scene, plasticine characters and set with visible fingerprints, soft studio lighting, miniature handmade props, vertical 9:16, no text + clay TFO hugging MYC promoter DNA at neutral pH",
+      "source_ids": ["SRC-001"],
+      "asset_filename": "frames/scene_004.jpg",
+      "ambiente": "laboratorio",
+      "sfx": ["suave"]
+    },
+    {
+      "id": "scene_005",
+      "arc": "desarrollo",
+      "duration_seconds": 10.0,
+      "narration": "En células, bajaron la actividad del MYC entre 50 y 80 por ciento. También el ARN y la proteína.",
+      "on_screen_text": "50 a 80%",
+      "visual_description": "barras de plastilina bajando y células calmándose",
+      "image_prompt": "claymation stop-motion scene, plasticine characters and set with visible fingerprints, soft studio lighting, miniature handmade props, vertical 9:16, no text + clay bar graph dropping and quiet clay cells",
+      "source_ids": ["SRC-001"],
+      "asset_filename": "frames/scene_005.jpg",
+      "ambiente": "laboratorio",
+      "sfx": ["caida"]
+    },
+    {
+      "id": "scene_006",
+      "arc": "cierre_historia",
+      "duration_seconds": 9.0,
+      "narration": "Es la primera vez que un TFO paralelo con un solo cambio de base apaga un gen real dentro de la célula.",
+      "on_screen_text": "Primera vez",
+      "visual_description": "científicos de plastilina celebrando con microscopio",
+      "image_prompt": "claymation stop-motion scene, plasticine characters and set with visible fingerprints, soft studio lighting, miniature handmade props, vertical 9:16, no text + clay scientists celebrating with microscope and DNA model",
+      "source_ids": ["SRC-001"],
+      "asset_filename": "frames/scene_006.jpg",
+      "ambiente": "laboratorio",
+      "sfx": ["aplausos"]
+    },
+    {
+      "id": "scene_007",
+      "arc": "reflexion_o_pregunta",
+      "duration_seconds": 9.0,
+      "narration": "¿Podremos apagar genes problemáticos con pedazos de ADN a la medida? Esto fue Datos y ociosidades.",
+      "on_screen_text": "Datos y ociosidades",
+      "visual_description": "hélice de plastilina quieta al atardecer de lab",
+      "image_prompt": "claymation stop-motion scene, plasticine characters and set with visible fingerprints, soft studio lighting, miniature handmade props, vertical 9:16, no text + quiet clay DNA helix in lab at dusk with soft light",
+      "source_ids": ["SRC-001"],
+      "asset_filename": "frames/scene_007.jpg",
+      "ambiente": "laboratorio",
+      "sfx": ["silencio"]
+    }
+  ],
+  "cortinilla_fuentes": {
+    "duration_seconds": 6,
+    "titulo": "Fuentes",
+    "aviso": "Imágenes generadas con IA. Voz sintética. Audio sintetizado.",
+    "firma": "Datos y ociosidades · @datosyociosidades"
+  },
+  "export": {
+    "filename": "capsula.mp4",
+    "resolution": "1080x1920",
+    "fps": 30,
+    "loudness_lufs": -14
+  },
+  "estructura": "pregunta",
+  "titulo": "ADN que apaga MYC"
+}
