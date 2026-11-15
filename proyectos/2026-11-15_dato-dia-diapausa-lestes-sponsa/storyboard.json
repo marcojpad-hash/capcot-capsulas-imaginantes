@@ -362,7 +362,7 @@
     ],
     "note": "No publicar ni programar desde preproducción textual; privacidad y horario de publicación quedan sin fijar."
   },
-  "estado": "PENDIENTE_AUDITOR",
+  "estado": "PENDIENTE_VALIDACION_ESTRUCTURAL",
   "production_mode": "storyboard_only",
   "validation_notes": [
     "Borrador textual; no se generaron imágenes, frames, audio, voz, video ni render.",
@@ -370,7 +370,7 @@
     "El pin de Lund es solo una referencia regional; el artículo no proporciona coordenadas exactas del sitio de muestreo.",
     "La hipótesis de eclosión invernal bajo inviernos más cálidos no es una observación de campo ni prueba de causalidad climática.",
     "El estilo de la cápsula previa de las 07:00 (colibrí) no está registrado en el estado de slots ni existe su storyboard en este repositorio; la unicidad frente a esa pieza no es certificable. Este estilo sí difiere del último storyboard del repositorio y del otro borrador del día.",
-    "No se añade narrative_qa: la lectura en frío y la promoción corresponden al auditor independiente."
+    "La lectura narrativa independiente fue registrada por el auditor: PASS/90, siete checks true y critical_flags vacío. La validación estructural y la decisión editorial siguen pendientes."
   ],
   "linea_tematica_provisional": "Naturaleza, insectos y adaptación estacional",
   "risk_notes": [
