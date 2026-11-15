@@ -32,7 +32,7 @@
     "url": "https://www.nature.com/articles/s41598-026-80392-6",
     "tipo": "estudio_primario",
     "google_trends_signal": false,
-    "nota": "Candidato de dato_del_dia: la fuente primaria está publicada en la misma fecha del paquete; DOI pendiente de resolución independiente."
+    "nota": "Candidato de dato_del_dia: la fuente primaria está publicada el 15-nov-2026. La página oficial del editor confirma el DOI 10.1038/s41598-026-80392-6; el helper automatizado --check-doi (Crossref) aún no se ejecuta."
   },
   "editorial_status": "PENDIENTE_DECISION_GROK",
   "arco": {
@@ -90,7 +90,7 @@
         "Los autores reconocen una muestra materna pequeña y huevos agrupados."
       ],
       "verification_status": "PENDIENTE_RESOLVEDOR",
-      "verification_note": "La página editorial de Scientific Reports está accesible y muestra fecha 15-nov-2026 y DOI; api.crossref.org y doi.org no fueron accesibles en esta sesión. El DOI no se declara validado."
+      "verification_note": "Verificación editorial realizada el 15-nov-2026: la página oficial de Scientific Reports/Nature muestra el título, autores, volumen 16, artículo 37989, fecha de publicación 15-nov-2026 y el DOI 10.1038/s41598-026-80392-6. El DOI queda confirmado por la ficha del editor. No se ejecutó el helper --check-doi del repositorio, que consulta Crossref; por eso no se declara superado ese control automatizado."
     },
     {
       "id": "SRC-002",
@@ -335,7 +335,7 @@
   "cortinilla_fuentes": {
     "duration_seconds": 6,
     "titulo": "Fuente del día",
-    "aviso": "Norling & Sniegula, Scientific Reports (15 nov 2026). DOI 10.1038/s41598-026-80392-6 pendiente de resolución independiente.",
+    "aviso": "Norling & Sniegula, Scientific Reports (15 nov 2026). DOI 10.1038/s41598-026-80392-6, confirmado en la página oficial del editor.",
     "firma": "Datos y ociosidades",
     "source_ids": [
       "SRC-001"
@@ -366,7 +366,7 @@
   "production_mode": "storyboard_only",
   "validation_notes": [
     "Borrador textual; no se generaron imágenes, frames, audio, voz, video ni render.",
-    "La fuente primaria fue publicada el 15-nov-2026 y el enlace editorial está accesible; el DOI sigue pendiente de resolución independiente.",
+    "La página oficial de Scientific Reports/Nature confirma la publicación del 15-nov-2026 y muestra el DOI 10.1038/s41598-026-80392-6. El helper automatizado --check-doi del repositorio no se ejecutó; el control Crossref automatizado queda pendiente.",
     "El pin de Lund es solo una referencia regional; el artículo no proporciona coordenadas exactas del sitio de muestreo.",
     "La hipótesis de eclosión invernal bajo inviernos más cálidos no es una observación de campo ni prueba de causalidad climática.",
     "El estilo de la cápsula previa de las 07:00 (colibrí) no está registrado en el estado de slots ni existe su storyboard en este repositorio; la unicidad frente a esa pieza no es certificable. Este estilo sí difiere del último storyboard del repositorio y del otro borrador del día.",
@@ -376,7 +376,7 @@
   "risk_notes": [
     "Ensayo de laboratorio; no afirmar que el cambio climático ya esté causando eclosiones invernales en poblaciones silvestres.",
     "La muestra materna fue pequeña y los huevos se agruparon; no presentar la variación individual como universal.",
-    "El DOI 10.1038/s41598-026-80392-6 permanece PENDIENTE_RESOLVEDOR; el enlace editorial es accesible.",
+    "El DOI 10.1038/s41598-026-80392-6 aparece en la página oficial del editor; queda pendiente ejecutar el helper --check-doi que consulta Crossref.",
     "El punto de Lund es una referencia regional, no el sitio de muestreo.",
     "El estilo de la cápsula colibrí de las 07:00 no está documentado; unicidad visual respecto de esa pieza no certificable."
   ],
