@@ -1,0 +1,145 @@
+{
+ "aspect_ratio": "9:16",
+ "audio": {
+  "ambiente": "viento",
+  "ambiente_lufs": -28,
+  "cama_musical": "arpegio",
+  "music_asset": "sintetico:arpegio",
+  "music_bpm": 112,
+  "music_lufs": -27
+ },
+ "canal": {
+  "handle": "@datosyociosidades",
+  "nombre": "Datos y ociosidades"
+ },
+ "cortinilla_fuentes": {
+  "aviso": "Imágenes generadas con IA. Voz sintética. Música sintetizada.",
+  "bg_rgb": [
+   18,
+   16,
+   14
+  ],
+  "duration_seconds": 6,
+  "firma": "Datos y ociosidades · @datosyociosidades",
+  "titulo": "Fuentes"
+ },
+ "estado": "RELEVO_AMOR",
+ "estilo_id": "vitral",
+ "estilo_visual": "stained glass window, colorful glass pieces with thick black lead lines, light shining through, warm amber, rose and gold glass, vertical 9:16, no text",
+ "estructura": "dato_noticia",
+ "export": {
+  "filename": "capsula.mp4",
+  "fps": 30,
+  "loudness_lufs": -14,
+  "plano_seconds": 4.0,
+  "resolution": "1080x1920",
+  "subtitle_max_words": 3
+ },
+ "language": "es-MX",
+ "nota": "Relevo dato del día lun 16-nov-2026 07:00 CST. Noticia del día (sarampión en México, El Economista 15-nov-2026). Gancho al INICIO, directo al dato, sin '¿sabías que...?' ni 'sigue para la parte 2'. Hilación con conectores. Montaje local con Kokoro ef_dora (narradora_es); la subida a YouTube la hace el agente padre por navegador.",
+ "origen": "relevo",
+ "project_id": "2026-11-16_sarampion",
+ "proveedor_imagenes": "generadas con IA (ilustración no realista)",
+ "scenes": [
+  {
+   "arc": "hook_inicio",
+   "asset_filename": "frames/scene_001.jpg",
+   "duration_seconds": 15.36,
+   "id": "scene_001",
+   "image_prompt": "stained glass window, colorful glass pieces with thick black lead lines, light shining through, a glowing red spiky virus sphere in the center above a map of Mexico in colored glass, vertical 9:16, no text",
+   "narration": "El sarampión volvió a México después de treinta años. Desde febrero de 2025 se han confirmado más de veinte mil casos y cincuenta muertes, según la Secretaría de Salud.",
+   "on_screen_text": "El sarampión volvió",
+   "source_ids": [
+    "SRC-001"
+   ]
+  },
+  {
+   "arc": "dato_historia",
+   "asset_filename": "frames/scene_002.jpg",
+   "duration_seconds": 21.37,
+   "id": "scene_002",
+   "image_prompt": "stained glass window, colorful glass pieces with thick black lead lines, light shining through, a large glass shield slowly cracking, a plain blank calendar page in colored glass with no numbers and no letters, vertical 9:16, no text",
+   "narration": "México había cortado la transmisión en 1996, así que el virus no circulaba aquí, pero la protección se fue cayendo: la primera dosis pasó de más del noventa y cinco por ciento a ochenta y ocho, y la segunda se quedó en sesenta y nueve.",
+   "on_screen_text": "De 95% a 88%",
+   "source_ids": [
+    "SRC-001"
+   ]
+  },
+  {
+   "arc": "mecanismo",
+   "asset_filename": "frames/scene_003.jpg",
+   "duration_seconds": 11.79,
+   "id": "scene_003",
+   "image_prompt": "stained glass window, colorful glass pieces with thick black lead lines, light shining through, tiny glass virus particles drifting in the air between two people in silhouette, vertical 9:16, no text",
+   "narration": "Y cuando la protección baja, el virus encuentra por dónde entrar, porque se transmite por el aire y basta con estar cerca de alguien enfermo.",
+   "on_screen_text": "Se transmite por el aire",
+   "source_ids": [
+    "SRC-001"
+   ]
+  },
+  {
+   "arc": "quienes",
+   "asset_filename": "frames/scene_004.jpg",
+   "duration_seconds": 13.16,
+   "id": "scene_004",
+   "image_prompt": "stained glass window, colorful glass pieces with thick black lead lines, light shining through, a small child in warm amber and rose colored glass held protectively by large hands, vertical 9:16, no text",
+   "narration": "Por eso los más afectados son los más chicos: casi tres mil casos tienen entre uno y cuatro años, y la incidencia más alta está en los menores de un año.",
+   "on_screen_text": "Los más chicos",
+   "source_ids": [
+    "SRC-001"
+   ]
+  },
+  {
+   "arc": "donde_historia",
+   "asset_filename": "frames/scene_005.jpg",
+   "duration_seconds": 17.77,
+   "id": "scene_005",
+   "image_prompt": "stained glass window, colorful glass pieces with thick black lead lines, light shining through, a map of Mexico in colored glass with four regions glowing bright gold, vertical 9:16, no text",
+   "narration": "Jalisco lleva más de ocho mil, y le siguen Chihuahua, Chiapas y la Ciudad de México. En 1989 hubo casi noventa mil casos, así que no es nuevo: es el regreso de algo que ya estaba controlado.",
+   "on_screen_text": "Jalisco: más de 8,000",
+   "source_ids": [
+    "SRC-001"
+   ]
+  },
+  {
+   "arc": "cierre_significado",
+   "asset_filename": "frames/scene_006.jpg",
+   "duration_seconds": 8.87,
+   "id": "scene_006",
+   "image_prompt": "stained glass window, colorful glass pieces with thick black lead lines, light shining through, a golden sunrise of glass over a city skyline, a small glass shield being mended, vertical 9:16, no text",
+   "narration": "Y lo que lo trae de vuelta no es el virus, sino la cobertura que se perdió. Esto fue Datos y ociosidades.",
+   "on_screen_text": "No es el virus",
+   "source_ids": [
+    "SRC-001"
+   ]
+  }
+ ],
+ "serie": "Datos y ociosidades",
+ "sources": [
+  {
+   "cita_corta": "El Economista · Sarampión en México: brote suma 50 muertes",
+   "id": "SRC-001",
+   "ref_display": "eleconomista.com.mx · 15-nov-2026",
+   "title": "Sarampión en México: brote suma 50 muertes tras caída en cobertura de vacunación",
+   "url": "https://www.eleconomista.com.mx/politica/sarampion-mexico-brote-suma-50-muertes-caida-cobertura-vacunacion-20261115-844087.html"
+  },
+  {
+   "cita_corta": "INSP · La emergencia del sarampión en México (Salud Pública de México, 2026)",
+   "id": "SRC-002",
+   "nota": "Análisis de Sergio Meneses, Blanca Pelcastre y Lizbeth Grimaldo (INSP), citado y reseñado en El Economista 15-nov-2026. Sin URL directa localizada; corrobora lo esencial (cobertura, reaparición). Todas las cifras del guion vienen de SRC-001.",
+   "ref_display": "Salud Pública de México · 2026 (citado en El Economista)",
+   "title": "La emergencia del sarampión en México: una alerta sobre las fallas estructurales del sistema de salud"
+  }
+ ],
+ "target_duration_seconds": 94,
+ "title": "El sarampión volvió a México después de 30 años",
+ "titulo": "El sarampión volvió a México después de 30 años",
+ "titulo_estilo": null,
+ "voice": {
+  "engine": "kokoro",
+  "lang": "es",
+  "nota": "Relevo: voz local Kokoro ef_dora (narradora_es); la oficial es es-MX-JorgeNeural por Imaginantes",
+  "speed": 0.9,
+  "voice_id": "ef_dora"
+ }
+}
