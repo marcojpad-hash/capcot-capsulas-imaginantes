@@ -380,5 +380,22 @@
     "El punto de Lund es una referencia regional, no el sitio de muestreo.",
     "El estilo de la cápsula colibrí de las 07:00 no está documentado; unicidad visual respecto de esa pieza no certificable."
   ],
-  "approved_assets": []
+  "approved_assets": [],
+  "narrative_qa": {
+    "status": "PASS",
+    "score": 90,
+    "review_basis": "lectura_en_frio_solo_narracion",
+    "reviewer_role": "auditor_capcot_independiente",
+    "reviewed_at": "2026-11-15T15:51:23-06:00",
+    "checks": {
+      "pregunta_central_reconstruible": true,
+      "apertura_in_medias_res": true,
+      "progresion_por_escena": true,
+      "transiciones_causales": true,
+      "giro_cientifico_explicado": true,
+      "limite_evidencia_explicito": true,
+      "payoff_cierre_apertura": true
+    },
+    "critical_flags": []
+  }
 }
