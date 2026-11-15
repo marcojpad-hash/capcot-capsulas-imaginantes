@@ -357,3 +357,18 @@ La guía distingue Standard Access para cuentas propias/administradas añadidas 
 **Implicación para CAPCOT:** el inventario de opciones de autenticación queda ampliado a tres rutas. Antes de implementar se debe decidir cuál corresponde al tipo de cuenta y al acceso realmente concedido; esta nota no afirma que exista una app configurada, que se hayan concedido permisos ni que se hayan creado o leído credenciales. No se cambió ninguna configuración ni se solicitó acceso.
 
 **Evidencia y límites de esta revisión:** guía oficial Meta, [Instagram Platform — Insights](https://developers.facebook.com/docs/instagram-platform/insights/), consultada el 2026-11-15. La apertura directa del changelog de Graph API y de la referencia de Page Insights devolvió HTTP 429; por ello no se afirma una nueva versión de Graph API ni un cambio de métricas de Page Insights en esta revisión. La documentación oficial de Google Trends API sigue describiendo acceso alfa limitado y no mostró un cambio nuevo relevante respecto de este informe.
+
+## 9.8 — Discrepancia entre el overview y la tabla de versiones Graph API (verificado 2026-11-15)
+
+**OBSERVADO en documentación oficial de Meta:**
+- El overview de Graph API declara que la versión más reciente es **v27.0**: https://developers.facebook.com/docs/graph-api/.
+- La referencia oficial de Page Insights muestra el encabezado de versión **v27.0**, usa ejemplos GET v27.0/.../insights y conserva la limitación de que las interacciones de Reels no están incluidas: https://developers.facebook.com/docs/graph-api/reference/insights/.
+- La tabla oficial de versiones, en cambio, sigue mostrando **v26.0** como la versión Graph API más reciente de su tabla (lanzada el 29-jul-2026) y no presenta una fila v27.0: https://developers.facebook.com/docs/graph-api/changelog/versions/.
+
+**Límite de verificación:** en esta pasada, la apertura directa de la página general del changelog, la tabla de versiones y la guía de Instagram Platform Insights devolvió HTTP 429. La tabla de versiones se pudo consultar mediante el índice oficial de búsqueda; no se obtuvo el texto directo del changelog v27.0 en esta ejecución. No se infiere de esta discrepancia que v27.0 no funcione ni que todas las superficies tengan idéntica disponibilidad.
+
+**Interpretación:** existe una inconsistencia documental entre el overview/referencia de endpoint y la tabla de versiones. Puede ser una tabla no actualizada, pero eso no queda demostrado.
+
+**Recomendación operativa para CAPCOT:** no elegir la versión de integración usando exclusivamente la tabla de versiones. Contrastar el encabezado de versión del endpoint concreto, su referencia y el changelog aplicable; antes de implementar, probar en una app de desarrollo con permisos autorizados. Mantener anotada la discrepancia y no cambiar adaptadores ni credenciales por inferencia.
+
+**Sin cambio adicional:** la guía oficial de Instagram Insights no pudo abrirse por HTTP 429 en esta pasada; no se atribuye un cambio nuevo a Instagram Insights. La documentación oficial de Google Trends sigue describiendo acceso alfa limitado, ventana móvil de cinco años, agregaciones diarias/semanales/mensuales/anuales, regiones/subregiones y escala consistente: https://developers.google.com/search/apis/trends. No se detectó un cambio nuevo del contrato alfa.
