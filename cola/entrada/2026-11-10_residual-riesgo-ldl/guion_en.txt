@@ -1,0 +1,32 @@
+The risk that remains after cholesterol
+
+(Note: English narration translated from the current corrected Spanish script in storyboard.json, rewritten 14-nov with re-read sources. The original stock script remains in storyboard_stock.json in the repo. This is not a translation of the stock script.)
+
+Spoken close: That was Datos y ociosidades.
+
+[scene_001 | 9s]
+Why does a heart attack still come after bad cholesterol has already dropped? A team at Chalmers, in Sweden, looked for the answer in the blood.
+
+[scene_002 | 9s]
+Lowering LDL cholesterol does reduce the risk of a heart attack. But bringing it into the recommended range does not erase it: a residual risk remains.
+
+[scene_003 | 9s]
+Cholesterol does not travel alone: particles called lipoproteins carry it. Three types load a protein called apolipoprotein B.
+
+[scene_004 | 9s]
+They are LDL, triglyceride-rich lipoproteins, or TRL, and lipoprotein(a). All three can leave cholesterol in artery walls.
+
+[scene_005 | 9s]
+The team measured nearly 3,000 proteins in blood and crossed them with genetic data and health records.
+
+[scene_006 | 9s]
+The surprise: TRL and lipoprotein(a) showed very similar protein patterns, and those patterns were linked to later heart disease.
+
+[scene_007 | 9s]
+Those particles carry proteins that attract immune cells and could inflame the vessel wall, beyond depositing cholesterol.
+
+[scene_008 | 9s]
+LDL showed a different pattern, tied to accumulating cholesterol, and lowering it remains the foundation. The study did not prove a treatment or a clinical test.
+
+[scene_009 | 9s]
+But there are already clues to why residual risk remains. Which particles should we measure besides LDL? That was Datos y ociosidades.

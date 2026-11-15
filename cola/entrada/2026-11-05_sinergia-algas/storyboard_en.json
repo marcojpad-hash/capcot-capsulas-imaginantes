@@ -1,0 +1,235 @@
+{
+  "project_id": "2026-11-05_sinergia-algas_en",
+  "serie": "Datos y ociosidades",
+  "title": "Viruses and bacteria collapse the bloom",
+  "titulo": "The alliance that topples a bloom",
+  "language": "en-US",
+  "aspect_ratio": "9:16",
+  "target_duration_seconds": 88,
+  "estructura": "sabias_que",
+  "resumen": "Weizmann Institute: Alteromonas bacteria boost viral killing of microalgae and speed the collapse of blooms, with an effect on the carbon cycle.",
+  "keywords": [
+    "ocean",
+    "algae",
+    "carbon"
+  ],
+  "trend_source": {
+    "termino": "blooms de algas",
+    "fecha_consulta": "2026-11-14"
+  },
+  "estilo_id": "papel_rasgado_capas",
+  "estilo_visual": "Papel rasgado por capas (diorama)",
+  "voice": {
+    "engine": "kokoro-onnx",
+    "voice_id": "am_adam",
+    "lang": "en-us",
+    "speed": "tuned per capsule when mounting (see RELEVO_EN.md)"
+  },
+  "sources": [
+    {
+      "id": "SRC-001",
+      "cita_corta": "Kuhlisch, C., Soffer, E. et al. (2026). Synergy in viral–bacterial co-infection expedites algal bloom demise. Nature.",
+      "doi": "10.1038/s41586-026-11243-7",
+      "url": "https://www.nature.com/articles/s41586-026-11243-7",
+      "accessed": "2026-11-14",
+      "ref_display": "Kuhlisch et al., Nature 2026"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_001",
+      "arc": "hook_medias_res",
+      "duration_seconds": 9,
+      "narration": "An algal bloom that covers kilometers of sea collapses all at once. And viruses, on their own, cannot fully explain it.",
+      "on_screen_text": "The alliance that topples a bloom",
+      "visual_description": "cover composition: a vast milky turquoise algal bloom swirling on a dark sea seen from high above, layered torn paper waves, large empty calm area in the upper third for a title",
+      "asset_filename": "frames/scene_001.jpg",
+      "source_ids": [
+        "SRC-001"
+      ],
+      "ambiente": "silencio",
+      "sfx": [],
+      "motion": "suave",
+      "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text, cover composition: a vast milky turquoise algal bloom swirling on a dark sea seen from high above, layered torn paper waves, large empty calm area in the upper third for a title, no text, no letters, no watermark, no logos, no people with glasses"
+    },
+    {
+      "id": "scene_002",
+      "arc": "desarrollo",
+      "duration_seconds": 9,
+      "narration": "It is Gephyrocapsa huxleyi, a very abundant coccolithophore. When its bloom collapses, fewer than 30 percent of the cells have an active viral infection.",
+      "on_screen_text": "Less than 30%",
+      "visual_description": "a single round coccolithophore cell covered in plate-like scales, giant and centered, macro close-up",
+      "asset_filename": "frames/scene_002.jpg",
+      "source_ids": [
+        "SRC-001"
+      ],
+      "ambiente": "silencio",
+      "sfx": [],
+      "motion": "suave",
+      "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text, a single round coccolithophore cell covered in plate-like scales, giant and centered, macro close-up, no text, no letters, no watermark, no logos, no people with glasses",
+      "capa": {
+        "tipo": "dato",
+        "valor": "< 30 %",
+        "etiqueta": "de las células con infección viral activa",
+        "fuente": "Kuhlisch et al., Nature 2026"
+      }
+    },
+    {
+      "id": "scene_003",
+      "arc": "desarrollo",
+      "duration_seconds": 9,
+      "narration": "A team at the Weizmann Institute, in Israel, built a synthetic community with algae, viruses, and bacteria isolated from a real bloom.",
+      "on_screen_text": "Synthetic community",
+      "visual_description": "three small glass flasks on a lab bench holding green algae, tiny virus particles and rod-shaped bacteria rendered as paper cutouts, side view, no people",
+      "asset_filename": "frames/scene_003.jpg",
+      "source_ids": [
+        "SRC-001"
+      ],
+      "ambiente": "silencio",
+      "sfx": [],
+      "motion": "suave",
+      "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text, three small glass flasks on a lab bench holding green algae, tiny virus particles and rod-shaped bacteria rendered as paper cutouts, side view, no people, no text, no letters, no watermark, no logos, no people with glasses",
+      "capa": {
+        "tipo": "mapa",
+        "region": [
+          25,
+          45,
+          25,
+          40
+        ],
+        "puntos": [
+          {
+            "nombre": "Instituto Weizmann",
+            "lon": 34.81,
+            "lat": 31.9
+          }
+        ],
+        "titulo": "Equipo: Instituto Weizmann, Israel",
+        "fuente": "Kuhlisch et al., Nature 2026 (afiliación principal). Coordenada aproximada. Base: Natural Earth 110m (dominio público)."
+      }
+    },
+    {
+      "id": "scene_004",
+      "arc": "desarrollo",
+      "duration_seconds": 9,
+      "narration": "The result: bacteria significantly increased the algal death caused by the virus. It was not an attack, but a co-infection.",
+      "on_screen_text": "Co-infection",
+      "visual_description": "rod-shaped bacteria and spiky virus particles converging on a large algal cell from opposite sides, dramatic low angle",
+      "asset_filename": "frames/scene_004.jpg",
+      "source_ids": [
+        "SRC-001"
+      ],
+      "ambiente": "silencio",
+      "sfx": [],
+      "motion": "suave",
+      "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text, rod-shaped bacteria and spiky virus particles converging on a large algal cell from opposite sides, dramatic low angle, no text, no letters, no watermark, no logos, no people with glasses"
+    },
+    {
+      "id": "scene_005",
+      "arc": "desarrollo",
+      "duration_seconds": 9,
+      "narration": "To measure it they created two indices: a synergy index, which measures the strength of that alliance, and a benefit index, which measures how much the bacterium gains.",
+      "on_screen_text": "Synergy and benefit",
+      "visual_description": "two balanced paper scale pans holding paper cutout microbes, simple symmetrical composition, top-down view",
+      "asset_filename": "frames/scene_005.jpg",
+      "source_ids": [
+        "SRC-001"
+      ],
+      "ambiente": "silencio",
+      "sfx": [],
+      "motion": "suave",
+      "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text, two balanced paper scale pans holding paper cutout microbes, simple symmetrical composition, top-down view, no text, no letters, no watermark, no logos, no people with glasses"
+    },
+    {
+      "id": "scene_006",
+      "arc": "desarrollo",
+      "duration_seconds": 9,
+      "narration": "The champion was Alteromonas: extracts of infected cells attract it, it accumulates in the wreckage of the collapse, and it increases when the bloom falls.",
+      "on_screen_text": "Alteromonas",
+      "visual_description": "a swarm of small rod-shaped bacteria rushing toward a sinking clump of broken algal cells, diagonal motion, medium shot",
+      "asset_filename": "frames/scene_006.jpg",
+      "source_ids": [
+        "SRC-001"
+      ],
+      "ambiente": "silencio",
+      "sfx": [],
+      "motion": "suave",
+      "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text, a swarm of small rod-shaped bacteria rushing toward a sinking clump of broken algal cells, diagonal motion, medium shot, no text, no letters, no watermark, no logos, no people with glasses"
+    },
+    {
+      "id": "scene_007",
+      "arc": "desarrollo",
+      "duration_seconds": 9,
+      "narration": "And it is not an isolated case: the synergy also appeared in three other microalgae that are widespread across the planet.",
+      "on_screen_text": "Four microalgae",
+      "visual_description": "four different microalgae cells in a row, each a different torn paper shape and color, flat frontal framing",
+      "asset_filename": "frames/scene_007.jpg",
+      "source_ids": [
+        "SRC-001"
+      ],
+      "ambiente": "silencio",
+      "sfx": [],
+      "motion": "suave",
+      "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text, four different microalgae cells in a row, each a different torn paper shape and color, flat frontal framing, no text, no letters, no watermark, no logos, no people with glasses"
+    },
+    {
+      "id": "scene_008",
+      "arc": "cierre_historia",
+      "duration_seconds": 9,
+      "narration": "It matters because of carbon. Photosynthetic organisms in the sea fix about 50 gigatons of carbon a year, and much of that happens in blooms like this.",
+      "on_screen_text": "50 gigatons a year",
+      "visual_description": "the ocean surface glowing green with phytoplankton under a sun, layered paper clouds, wide horizon",
+      "asset_filename": "frames/scene_008.jpg",
+      "source_ids": [
+        "SRC-001"
+      ],
+      "ambiente": "silencio",
+      "sfx": [],
+      "motion": "suave",
+      "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text, the ocean surface glowing green with phytoplankton under a sun, layered paper clouds, wide horizon, no text, no letters, no watermark, no logos, no people with glasses"
+    },
+    {
+      "id": "scene_009",
+      "arc": "reflexion_o_pregunta",
+      "duration_seconds": 9,
+      "narration": "This alliance decides whether that carbon is recycled at the surface or sinks to the depths. How many invisible alliances move the climate? That was Datos y ociosidades.",
+      "on_screen_text": "Recycle or sink?",
+      "visual_description": "a vertical cross-section of the sea: particles swirling near the surface while others sink as marine snow into the dark depths, tall vertical framing",
+      "asset_filename": "frames/scene_009.jpg",
+      "source_ids": [
+        "SRC-001"
+      ],
+      "ambiente": "silencio",
+      "sfx": [],
+      "motion": "suave",
+      "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text, a vertical cross-section of the sea: particles swirling near the surface while others sink as marine snow into the dark depths, tall vertical framing, no text, no letters, no watermark, no logos, no people with glasses"
+    }
+  ],
+  "cortinilla_fuentes": {
+    "duration_seconds": 10,
+    "titulo": "Sources",
+    "aviso": "AI-generated images. Synthetic voice. Synthesized music and ambience.",
+    "firma": "Datos y ociosidades · @datosyociosidadesEN"
+  },
+  "audio": {
+    "music_asset": "sintetico:pulso",
+    "cama_musical": "pulso",
+    "music_lufs": -27,
+    "ambiente_lufs": -30
+  },
+  "export": {
+    "filename": "capsula_en.mp4",
+    "resolution": "1080x1920",
+    "fps": 30,
+    "codec_video": "h264",
+    "codec_audio": "aac",
+    "loudness_lufs": -14,
+    "subtitle_max_words": 3,
+    "plano_seconds": 5
+  },
+  "nota_produccion": "Lote 19:00 del 14-nov-2026 (Grok Bot). Guion del stock ampliado a 9 escenas solo con hechos de las fuentes citadas (releídas el 14-nov) para llegar a 85–90 s. Original en storyboard_stock.json.",
+  "canal": {
+    "handle": "@datosyociosidadesEN"
+  },
+  "nota": "English narration translated from the current corrected Spanish script in storyboard.json (rewritten 14-nov with re-read sources). Not translated from storyboard_stock.json. Sources and DOIs unchanged. Spoken close: “That was Datos y ociosidades.” No English MP4 in this package; timings in capsula_en.srt follow the Spanish voice window and should be recalibrated if English audio is mounted. Frames reused; no new images generated."
+}

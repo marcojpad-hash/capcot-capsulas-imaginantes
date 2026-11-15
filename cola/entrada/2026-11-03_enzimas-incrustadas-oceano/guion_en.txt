@@ -1,0 +1,32 @@
+Enzyme-embedded plastic that breaks down in the deep sea
+
+(Note: English narration translated from the current corrected Spanish script in storyboard.json, rewritten 14-nov with re-read sources. The original stock script remains in storyboard_stock.json in the repo. This is not a translation of the stock script.)
+
+Spoken close: That was Datos y ociosidades.
+
+[scene_001 | 9s]
+The myth: compostable plastic just disappears in the ocean. The fact: on the seafloor it barely degrades.
+
+[scene_002 | 9s]
+A team from the University of Tokyo and JAMSTEC tested another idea: put the enzyme into the plastic when it is made.
+
+[scene_003 | 9s]
+They embedded enzymes such as cutinase in four compostable polyesters. Those enzymes cut the ester bonds that hold the chain together.
+
+[scene_004 | 9s]
+The crewed submersible Shinkai 6500 left the samples on the seafloor, from the coast down to 5,503 meters deep.
+
+[scene_005 | 9s]
+At 757 meters, films with 3 percent cutinase lost almost all their mass in five months. The controls without enzyme barely changed.
+
+[scene_006 | 9s]
+In the deep sea, degradation sped up 12 to 80 times, depending on the plastic and the enzyme.
+
+[scene_007 | 9s]
+And at 5,503 meters, on the abyssal plain, there was also moderate degradation after 18 months, though slower.
+
+[scene_008 | 9s]
+The clever part is the switch: without water, the enzyme does not work. The object holds up while it is in use, and it breaks down when it wears and water can reach the enzyme.
+
+[scene_009 | 9s]
+It does not clean up the plastic already in the ocean, but it changes how the next generation could be made. Which object would you change first? That was Datos y ociosidades.

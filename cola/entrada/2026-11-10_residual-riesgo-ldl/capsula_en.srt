@@ -1,0 +1,263 @@
+1
+00:00:00,300 --> 00:00:00,933
+Why does a
+
+2
+00:00:00,943 --> 00:00:02,073
+heart attack still
+
+3
+00:00:02,083 --> 00:00:02,960
+come after bad
+
+4
+00:00:02,970 --> 00:00:04,417
+cholesterol has already
+
+5
+00:00:04,427 --> 00:00:05,367
+dropped? A team
+
+6
+00:00:05,377 --> 00:00:06,317
+at Chalmers, in
+
+7
+00:00:06,327 --> 00:00:07,457
+Sweden, looked for
+
+8
+00:00:07,467 --> 00:00:08,280
+the answer in
+
+9
+00:00:08,290 --> 00:00:08,913
+the blood.
+
+10
+00:00:08,923 --> 00:00:10,359
+Lowering LDL cholesterol
+
+11
+00:00:10,369 --> 00:00:11,262
+does reduce the
+
+12
+00:00:11,272 --> 00:00:11,805
+risk of a
+
+13
+00:00:11,815 --> 00:00:12,828
+heart attack. But
+
+14
+00:00:12,838 --> 00:00:13,792
+bringing it into
+
+15
+00:00:13,802 --> 00:00:15,057
+the recommended range
+
+16
+00:00:15,067 --> 00:00:15,900
+does not erase
+
+17
+00:00:15,910 --> 00:00:16,744
+it: a residual
+
+18
+00:00:16,754 --> 00:00:17,527
+risk remains.
+
+19
+00:00:17,537 --> 00:00:18,950
+Cholesterol does not
+
+20
+00:00:18,960 --> 00:00:20,588
+travel alone: particles
+
+21
+00:00:20,598 --> 00:00:22,367
+called lipoproteins carry
+
+22
+00:00:22,377 --> 00:00:23,435
+it. Three types
+
+23
+00:00:23,445 --> 00:00:24,432
+load a protein
+
+24
+00:00:24,442 --> 00:00:26,140
+called apolipoprotein B.
+
+25
+00:00:26,150 --> 00:00:27,097
+They are LDL,
+
+26
+00:00:27,107 --> 00:00:29,600
+triglyceride-rich lipoproteins, or
+
+27
+00:00:29,610 --> 00:00:31,367
+TRL, and lipoprotein(a).
+
+28
+00:00:31,377 --> 00:00:32,324
+All three can
+
+29
+00:00:32,334 --> 00:00:33,796
+leave cholesterol in
+
+30
+00:00:33,806 --> 00:00:34,753
+artery walls.
+
+31
+00:00:34,763 --> 00:00:36,247
+The team measured
+
+32
+00:00:36,257 --> 00:00:38,093
+nearly 3,000 proteins
+
+33
+00:00:38,103 --> 00:00:39,148
+in blood and
+
+34
+00:00:39,158 --> 00:00:40,642
+crossed them with
+
+35
+00:00:40,652 --> 00:00:42,048
+genetic data and
+
+36
+00:00:42,058 --> 00:00:43,367
+health records.
+
+37
+00:00:43,377 --> 00:00:44,557
+The surprise: TRL
+
+38
+00:00:44,567 --> 00:00:46,308
+and lipoprotein(a) showed
+
+39
+00:00:46,318 --> 00:00:47,708
+very similar protein
+
+40
+00:00:47,718 --> 00:00:49,039
+patterns, and those
+
+41
+00:00:49,049 --> 00:00:50,439
+patterns were linked
+
+42
+00:00:50,449 --> 00:00:51,420
+to later heart
+
+43
+00:00:51,430 --> 00:00:51,980
+disease.
+
+44
+00:00:51,990 --> 00:00:53,526
+Those particles carry
+
+45
+00:00:53,536 --> 00:00:55,072
+proteins that attract
+
+46
+00:00:55,082 --> 00:00:56,250
+immune cells and
+
+47
+00:00:56,260 --> 00:00:57,501
+could inflame the
+
+48
+00:00:57,511 --> 00:00:58,900
+vessel wall, beyond
+
+49
+00:00:58,910 --> 00:01:00,593
+depositing cholesterol.
+
+50
+00:01:00,603 --> 00:01:01,269
+LDL showed a
+
+51
+00:01:01,279 --> 00:01:02,564
+different pattern, tied
+
+52
+00:01:02,574 --> 00:01:04,140
+to accumulating cholesterol,
+
+53
+00:01:04,150 --> 00:01:04,984
+and lowering it
+
+54
+00:01:04,994 --> 00:01:06,279
+remains the foundation.
+
+55
+00:01:06,289 --> 00:01:07,011
+The study did
+
+56
+00:01:07,021 --> 00:01:07,630
+not prove a
+
+57
+00:01:07,640 --> 00:01:08,419
+treatment or a
+
+58
+00:01:08,429 --> 00:01:09,207
+clinical test.
+
+59
+00:01:09,217 --> 00:01:10,069
+But there are
+
+60
+00:01:10,079 --> 00:01:11,129
+already clues to
+
+61
+00:01:11,139 --> 00:01:12,256
+why residual risk
+
+62
+00:01:12,266 --> 00:01:13,847
+remains. Which particles
+
+63
+00:01:13,857 --> 00:01:14,974
+should we measure
+
+64
+00:01:14,984 --> 00:01:15,770
+besides LDL?
+
+65
+00:01:16,020 --> 00:01:16,776
+That was Datos
+
+66
+00:01:16,786 --> 00:01:17,820
+y ociosidades.

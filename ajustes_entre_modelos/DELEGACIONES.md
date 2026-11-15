@@ -65,8 +65,20 @@ su propio tablero.
   - Contexto: el canal en inglés @datosyociosidadesEN ya existe (creado 2026-11-14, ID UCa54OqVk1m-33E9PYApNl5A) con las 6 de la semana programadas a las 18:00 CST; la meta es 5 cápsulas/día en inglés, así que este es el backlog. Créditos de Imaginantes: 23.4% del límite semanal usado al 14-nov, reinicio sáb 21-nov 10:18 CST; avanzar conforme lo permitan los créditos.
   - NO tocar ningún paquete en español ni su capsula.mp4.
 - PARA CUÁNDO: conforme lo permitan los créditos (límite semanal, reinicio sáb 21-nov 10:18 CST)
-- ESTADO: PENDIENTE
-- EVIDENCIA: (vacío hasta que esté hecha)
+- ESTADO: HECHA en material ZIP (sin MP4 EN montado; sin programar). Alcance ajustado el 14-nov por la noche: incluir robot (ya hay frames); no hacer bacterias-plásticos ni James Webb (fuentes falsas); no tocar mosquito.
+- EVIDENCIA:
+  - Verificación del release `semana-2026-11-15_21-en`: los 6 ZIPs de las 19:00 existían, con frames limpios, storyboard/guion/srt en español del guion corregido (no stock) y portada, pero les faltaba el guion narrado en inglés, el .srt EN y el README con el cierre «That was Datos y ociosidades.».
+  - Se rehicieron y se reemplazaron en el release (más ZIP total `semana_2026-11-15_a_21_1900-en.zip` y MANIFEST actualizado). URL: https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/releases/tag/semana-2026-11-15_21-en
+  - En el repo, por paquete: `storyboard_en.json`, `guion_en.txt`, `capsula_en.srt`, `RELEVO_EN.md`. Traducción del `storyboard.json` actual (14-nov), no de `storyboard_stock.json`. Frames reutilizados; no se generaron imágenes.
+  - 1. `2026-11-03_autismo-microbioma-cerebro` — REHECHO — Gut microbiome and the brain in autism (193 palabras EN)
+  - 2. `2026-11-03_enzimas-incrustadas-oceano` — REHECHO — Enzyme-embedded plastic that breaks down in the deep sea (204 palabras EN)
+  - 3. `2026-11-05_bacterias-plasticos-oceano` — NO TOCAR (fuentes falsas)
+  - 4. `2026-11-05_sinergia-algas` — REHECHO — Viruses and bacteria collapse the bloom (216 palabras EN)
+  - 5. `2026-11-06_adn-sintetico-myc` — REHECHO — DNA that turns off a cancer gene (204 palabras EN)
+  - 6. `2026-11-06_telescopio-james-webb-exoplaneta` — NO TOCAR (fuentes falsas)
+  - 7. `2026-11-10_residual-riesgo-ldl` — REHECHO — The risk that remains after cholesterol (188 palabras EN)
+  - Extra pedido: `2026-11-09_dato-robot-ensambla-orbita` — REHECHO — A robot assembles a structure in orbit (185 palabras EN)
+  - No se tocó `2026-10-28_mosquito-fruitless-audicion`. No se subió ni programó nada en YouTube, TikTok ni Facebook.
 
 ## En progreso
 

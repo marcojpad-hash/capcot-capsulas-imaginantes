@@ -1,0 +1,32 @@
+DNA that turns off a cancer gene
+
+(Note: English narration translated from the current corrected Spanish script in storyboard.json, rewritten 14-nov with re-read sources. The original stock script remains in storyboard_stock.json in the repo. This is not a translation of the stock script.)
+
+Spoken close: That was Datos y ociosidades.
+
+[scene_001 | 9s]
+A piece of artificial DNA coils around a cancer gene and turns down the volume. The idea had been waiting for decades.
+
+[scene_002 | 9s]
+For more than 20 years, David Rusling, at the University of Portsmouth, in England, has studied oligonucleotides that form a triple helix.
+
+[scene_003 | 9s]
+They are called TFOs. They recognize an exact sequence of double-stranded DNA and settle onto it as a third strand.
+
+[scene_004 | 9s]
+In the test tube they worked beautifully. But inside cells, the chemistry of natural DNA would not let them bind with enough strength.
+
+[scene_005 | 9s]
+The hardest regions were those rich in guanine and cytosine, areas that control when a gene is switched on.
+
+[scene_006 | 9s]
+The twist: the team added a synthetic base called Z, which is already sold commercially. With it, the TFOs bound with more strength and precision.
+
+[scene_007 | 9s]
+They tested it on MYC, a gene that drives many cancers when it speeds up. Its activity dropped between 50 and 80 percent in lab experiments.
+
+[scene_008 | 9s]
+They outperformed unmodified DNA and earlier methods. A great deal of research is still needed before thinking about patients.
+
+[scene_009 | 9s]
+For now it is a tool for turning genes off and studying what happens. Which gene would you want to silence on demand? That was Datos y ociosidades.

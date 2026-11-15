@@ -1,0 +1,32 @@
+Gut microbiome and the brain in autism
+
+(Note: English narration translated from the current corrected Spanish script in storyboard.json, rewritten 14-nov with re-read sources. The original stock script remains in storyboard_stock.json in the repo. This is not a translation of the stock script.)
+
+Spoken close: That was Datos y ociosidades.
+
+[scene_001 | 9s]
+What if the gut of a child with autism sent different signals to the brain? UCLA and USC went looking for that conversation.
+
+[scene_002 | 9s]
+Eighty-four children and teenagers, ages 8 to 17, took part. Half had an autism diagnosis; the other half did not.
+
+[scene_003 | 9s]
+The team analyzed stool samples, scanned each participant's brain, and measured their behavior.
+
+[scene_004 | 9s]
+In the autism group they found fewer metabolites that microbes make from tryptophan, an amino acid that comes with food.
+
+[scene_005 | 9s]
+One stood out: kynurenate, from the kynurenine pathway. That pathway is tied to brain processing and to cognitive changes.
+
+[scene_006 | 9s]
+Lower levels were associated with changes in the activity of the insula and the cingulate, regions linked to emotions and the body.
+
+[scene_007 | 9s]
+And the lower they were, the more severe the symptoms. Careful: this does not prove those metabolites cause the change; it points to a link.
+
+[scene_008 | 9s]
+The authors propose studying diets, probiotics, or synbiotics. But many children with autism have sensory sensitivities that limit what they eat.
+
+[scene_009 | 9s]
+It was the first comprehensive analysis of brain, gut, and microbiome in autism. How far do microbes shape the way the brain processes the world? That was Datos y ociosidades.

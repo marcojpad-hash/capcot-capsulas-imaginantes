@@ -1,0 +1,251 @@
+{
+  "project_id": "2026-11-10_residual-riesgo-ldl_en",
+  "serie": "Datos y ociosidades",
+  "title": "The risk that remains after cholesterol",
+  "titulo": "Low cholesterol, risk still there",
+  "language": "en-US",
+  "aspect_ratio": "9:16",
+  "target_duration_seconds": 88,
+  "estructura": "pregunta",
+  "resumen": "Chalmers measured nearly 3,000 blood proteins: TRL and Lp(a) share inflammatory patterns that may explain the risk that remains after lowering LDL.",
+  "keywords": [
+    "cholesterol",
+    "heart",
+    "health"
+  ],
+  "trend_source": {
+    "termino": "riesgo residual colesterol",
+    "fecha_consulta": "2026-11-14"
+  },
+  "estilo_id": "risografia",
+  "estilo_visual": "Risografía (propio)",
+  "voice": {
+    "engine": "kokoro-onnx",
+    "voice_id": "am_adam",
+    "lang": "en-us",
+    "speed": "tuned per capsule when mounting (see RELEVO_EN.md)"
+  },
+  "sources": [
+    {
+      "id": "SRC-001",
+      "cita_corta": "Morze, J. et al. (2026). Apolipoprotein B-containing lipoproteins: distinct roles in atherosclerosis revealed by plasma proteomic profiling. European Heart Journal.",
+      "doi": "10.1093/eurheartj/ehag718",
+      "url": "https://doi.org/10.1093/eurheartj/ehag718",
+      "accessed": "2026-11-14",
+      "ref_display": "Morze et al., Eur Heart J 2026"
+    },
+    {
+      "id": "SRC-002",
+      "cita_corta": "Chalmers University of Technology / ScienceDaily (10-nov-2026). Why heart attacks can still happen even when bad cholesterol is low.",
+      "url": "https://www.sciencedaily.com/releases/2026/11/261109205415.htm",
+      "accessed": "2026-11-14",
+      "ref_display": "ScienceDaily, 10 nov 2026"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_001",
+      "arc": "hook_medias_res",
+      "duration_seconds": 9,
+      "narration": "Why does a heart attack still come after bad cholesterol has already dropped? A team at Chalmers, in Sweden, looked for the answer in the blood.",
+      "on_screen_text": "Low cholesterol, risk still there",
+      "visual_description": "cover composition: a stylized anatomical heart with a jagged pulse line, flat pink and teal overprint shapes, large empty area in the upper third for a title",
+      "asset_filename": "frames/scene_001.jpg",
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "ambiente": "silencio",
+      "sfx": [],
+      "motion": "suave",
+      "image_prompt": "risograph print, two-color fluorescent pink and teal overprint, misregistration, grainy texture, flat shapes, vertical 9:16, no text, cover composition: a stylized anatomical heart with a jagged pulse line, flat pink and teal overprint shapes, large empty area in the upper third for a title, no text, no letters, no watermark, no logos, no people with glasses"
+    },
+    {
+      "id": "scene_002",
+      "arc": "desarrollo",
+      "duration_seconds": 9,
+      "narration": "Lowering LDL cholesterol does reduce the risk of a heart attack. But bringing it into the recommended range does not erase it: a residual risk remains.",
+      "on_screen_text": "LDL is not everything",
+      "visual_description": "a descending staircase of flat shapes ending above a small remaining shadow, simple geometric metaphor, wide framing",
+      "asset_filename": "frames/scene_002.jpg",
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "ambiente": "silencio",
+      "sfx": [],
+      "motion": "suave",
+      "image_prompt": "risograph print, two-color fluorescent pink and teal overprint, misregistration, grainy texture, flat shapes, vertical 9:16, no text, a descending staircase of flat shapes ending above a small remaining shadow, simple geometric metaphor, wide framing, no text, no letters, no watermark, no logos, no people with glasses",
+      "capa": {
+        "tipo": "mapa",
+        "region": [
+          0,
+          25,
+          52,
+          64
+        ],
+        "puntos": [
+          {
+            "nombre": "Chalmers, Gotemburgo",
+            "lon": 11.97,
+            "lat": 57.69
+          }
+        ],
+        "titulo": "Equipo: Chalmers, Suecia",
+        "fuente": "Chalmers / ScienceDaily (2026). Coordenada aproximada. Base: Natural Earth 110m (dominio público)."
+      }
+    },
+    {
+      "id": "scene_003",
+      "arc": "desarrollo",
+      "duration_seconds": 9,
+      "narration": "Cholesterol does not travel alone: particles called lipoproteins carry it. Three types load a protein called apolipoprotein B.",
+      "on_screen_text": "Apolipoprotein B",
+      "visual_description": "round lipoprotein particles like little spheres covered in tiny protein knobs floating in a blood stream, close-up macro",
+      "asset_filename": "frames/scene_003.jpg",
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "ambiente": "silencio",
+      "sfx": [],
+      "motion": "suave",
+      "image_prompt": "risograph print, two-color fluorescent pink and teal overprint, misregistration, grainy texture, flat shapes, vertical 9:16, no text, round lipoprotein particles like little spheres covered in tiny protein knobs floating in a blood stream, close-up macro, no text, no letters, no watermark, no logos, no people with glasses"
+    },
+    {
+      "id": "scene_004",
+      "arc": "desarrollo",
+      "duration_seconds": 9,
+      "narration": "They are LDL, triglyceride-rich lipoproteins, or TRL, and lipoprotein(a). All three can leave cholesterol in artery walls.",
+      "on_screen_text": "LDL · TRL · Lp(a)",
+      "visual_description": "three different sized particles side by side drifting along an artery wall with small deposits, side cross-section view",
+      "asset_filename": "frames/scene_004.jpg",
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "ambiente": "silencio",
+      "sfx": [],
+      "motion": "suave",
+      "image_prompt": "risograph print, two-color fluorescent pink and teal overprint, misregistration, grainy texture, flat shapes, vertical 9:16, no text, three different sized particles side by side drifting along an artery wall with small deposits, side cross-section view, no text, no letters, no watermark, no logos, no people with glasses"
+    },
+    {
+      "id": "scene_005",
+      "arc": "desarrollo",
+      "duration_seconds": 9,
+      "narration": "The team measured nearly 3,000 proteins in blood and crossed them with genetic data and health records.",
+      "on_screen_text": "≈3,000 proteins",
+      "visual_description": "rows of blood sample tubes seen from above with a dense constellation of tiny dots spreading out from them, top-down view",
+      "asset_filename": "frames/scene_005.jpg",
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "ambiente": "silencio",
+      "sfx": [],
+      "motion": "suave",
+      "image_prompt": "risograph print, two-color fluorescent pink and teal overprint, misregistration, grainy texture, flat shapes, vertical 9:16, no text, rows of blood sample tubes seen from above with a dense constellation of tiny dots spreading out from them, top-down view, no text, no letters, no watermark, no logos, no people with glasses",
+      "capa": {
+        "tipo": "dato",
+        "valor": "≈3000",
+        "etiqueta": "proteínas medidas en sangre",
+        "fuente": "Morze et al., Eur Heart J 2026; Chalmers / ScienceDaily 2026"
+      }
+    },
+    {
+      "id": "scene_006",
+      "arc": "desarrollo",
+      "duration_seconds": 9,
+      "narration": "The surprise: TRL and lipoprotein(a) showed very similar protein patterns, and those patterns were linked to later heart disease.",
+      "on_screen_text": "Twin patterns",
+      "visual_description": "two overlapping patterned circles, one pink one teal, merging where they overlap, misregistered print look, centered composition",
+      "asset_filename": "frames/scene_006.jpg",
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "ambiente": "silencio",
+      "sfx": [],
+      "motion": "suave",
+      "image_prompt": "risograph print, two-color fluorescent pink and teal overprint, misregistration, grainy texture, flat shapes, vertical 9:16, no text, two overlapping patterned circles, one pink one teal, merging where they overlap, misregistered print look, centered composition, no text, no letters, no watermark, no logos, no people with glasses"
+    },
+    {
+      "id": "scene_007",
+      "arc": "desarrollo",
+      "duration_seconds": 9,
+      "narration": "Those particles carry proteins that attract immune cells and could inflame the vessel wall, beyond depositing cholesterol.",
+      "on_screen_text": "Inflammation",
+      "visual_description": "immune cells shaped like soft blobs gathering around a swollen glowing section of artery wall, medium close-up, low angle",
+      "asset_filename": "frames/scene_007.jpg",
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "ambiente": "silencio",
+      "sfx": [],
+      "motion": "suave",
+      "image_prompt": "risograph print, two-color fluorescent pink and teal overprint, misregistration, grainy texture, flat shapes, vertical 9:16, no text, immune cells shaped like soft blobs gathering around a swollen glowing section of artery wall, medium close-up, low angle, no text, no letters, no watermark, no logos, no people with glasses"
+    },
+    {
+      "id": "scene_008",
+      "arc": "cierre_historia",
+      "duration_seconds": 9,
+      "narration": "LDL showed a different pattern, tied to accumulating cholesterol, and lowering it remains the foundation. The study did not prove a treatment or a clinical test.",
+      "on_screen_text": "LDL is still the foundation",
+      "visual_description": "a single sturdy column holding up a simple roof, with two smaller columns still missing, architectural metaphor, wide framing",
+      "asset_filename": "frames/scene_008.jpg",
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "ambiente": "silencio",
+      "sfx": [],
+      "motion": "suave",
+      "image_prompt": "risograph print, two-color fluorescent pink and teal overprint, misregistration, grainy texture, flat shapes, vertical 9:16, no text, a single sturdy column holding up a simple roof, with two smaller columns still missing, architectural metaphor, wide framing, no text, no letters, no watermark, no logos, no people with glasses"
+    },
+    {
+      "id": "scene_009",
+      "arc": "reflexion_o_pregunta",
+      "duration_seconds": 9,
+      "narration": "But there are already clues to why residual risk remains. Which particles should we measure besides LDL? That was Datos y ociosidades.",
+      "on_screen_text": "What else should we measure?",
+      "visual_description": "a magnifying lens hovering over a flowing river of colorful particles, diagonal composition, plenty of space",
+      "asset_filename": "frames/scene_009.jpg",
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "ambiente": "silencio",
+      "sfx": [],
+      "motion": "suave",
+      "image_prompt": "risograph print, two-color fluorescent pink and teal overprint, misregistration, grainy texture, flat shapes, vertical 9:16, no text, a magnifying lens hovering over a flowing river of colorful particles, diagonal composition, plenty of space, no text, no letters, no watermark, no logos, no people with glasses"
+    }
+  ],
+  "cortinilla_fuentes": {
+    "duration_seconds": 10.5,
+    "titulo": "Sources",
+    "aviso": "AI-generated images. Synthetic voice. Synthesized music and ambience.",
+    "firma": "Datos y ociosidades · @datosyociosidadesEN"
+  },
+  "audio": {
+    "music_asset": "sintetico:circuito_neural",
+    "cama_musical": "circuito_neural",
+    "music_lufs": -27,
+    "ambiente_lufs": -30
+  },
+  "export": {
+    "filename": "capsula_en.mp4",
+    "resolution": "1080x1920",
+    "fps": 30,
+    "codec_video": "h264",
+    "codec_audio": "aac",
+    "loudness_lufs": -14,
+    "subtitle_max_words": 3,
+    "plano_seconds": 5
+  },
+  "nota_produccion": "Lote 19:00 del 14-nov-2026 (Grok Bot). Guion del stock ampliado a 9 escenas solo con hechos de las fuentes citadas (releídas el 14-nov) para llegar a 85–90 s. Original en storyboard_stock.json.",
+  "canal": {
+    "handle": "@datosyociosidadesEN"
+  },
+  "nota": "English narration translated from the current corrected Spanish script in storyboard.json (rewritten 14-nov with re-read sources). Not translated from storyboard_stock.json. Sources and DOIs unchanged. Spoken close: “That was Datos y ociosidades.” No English MP4 in this package; timings in capsula_en.srt follow the Spanish voice window and should be recalibrated if English audio is mounted. Frames reused; no new images generated."
+}

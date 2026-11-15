@@ -1,0 +1,32 @@
+A robot assembles a structure in orbit
+
+(Note: English narration translated from the current corrected Spanish script in storyboard.json, rewritten 14-nov with re-read sources. The original stock script remains in storyboard_stock.json in the repo. This is not a translation of the stock script.)
+
+Spoken close: That was Datos y ociosidades.
+
+[scene_001 | 8s]
+In orbit, a robot joins pieces with no astronauts beside it. It is Caltech's ASTRA demonstration.
+
+[scene_002 | 9s]
+A piece leaves the dispenser; the arm aligns it and locks it onto a floating truss.
+
+[scene_003 | 8s]
+ASTRA left Vandenberg, California, on March 30, 2026, headed for low Earth orbit aboard Vigoride 7.
+
+[scene_004 | 9s]
+The rocket's fairing limits what can be launched already assembled. A new path is to build the structure where it will operate.
+
+[scene_005 | 9s]
+It carried two prefabricated segments, a manipulator, and dispensers with parts. In orbit they deployed those two segments.
+
+[scene_006 | 10s]
+Then the manipulator assembled a third segment from composite-fiber tubes and aluminum joints. From the ground, the team sent commands and reviewed photographs.
+
+[scene_007 | 8s]
+The design calls for a perforated Kapton film in spring-loaded reflector meshes. That is the plan, not a finished antenna.
+
+[scene_008 | 10s]
+The planned reflector is 1.4 meters and needs eleven segments. The demonstration reached the third; finishing the full set before December looks unlikely.
+
+[scene_009 | 11s]
+The surprise is not a giant antenna ready to go: it is building in modules where the structure will work. What would you assemble up there? That was Datos y ociosidades.
