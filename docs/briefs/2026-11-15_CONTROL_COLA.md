@@ -161,7 +161,7 @@ Resultado del lote: **2 PASS y 10 FAIL**. El score del pulpo cambió de 80 (repo
 | `export.render_status` | NOT_GENERATED en los 12 |
 | Rutas/asset_filename/asset_type | ausentes |
 
-Los 510 campos narrativos faltantes hacen fallar el validador actual. El validador solo comprueba que exista la clave `sfx`, no que el array tenga un SFX ni que un array vacío declare silencio; por ello no detecta los 75 casos sin diseño sonoro explícito. No se añadieron campos interpretativos ni se reescribieron claims.
+**Resultado estructural: 0/12 aptos para promoción.** Los 510 campos narrativos faltantes hacen fallar el validador actual. El validador solo comprueba que exista la clave `sfx`, no que el array tenga un SFX ni que un array vacío declare silencio; por ello no detecta los 75 casos sin diseño sonoro explícito. No se añadieron campos interpretativos ni se reescribieron claims.
 
 ### Bloqueados y copias heredadas
 
