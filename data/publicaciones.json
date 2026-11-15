@@ -691,5 +691,24 @@
   "nota": "Lote 19:00 montado 2026-11-14, JorgeNeural, 88.80s, QA 21/21, 9 frames ukiyo_e. Token ~/.capcot/token.json.",
   "tiktok_post_id": null,
   "facebook_content_id": null
+ },
+ {
+  "fecha": "2026-11-17",
+  "project_id": "2026-11-10_residual-riesgo-ldl",
+  "slot": "19:00",
+  "yt_id": "25mWYJVOPLk",
+  "url": "https://youtube.com/shorts/25mWYJVOPLk",
+  "privacidad": "private→public (publishAt)",
+  "publishAt_utc": "2026-11-18T01:00:00Z",
+  "hora_local": "2026-11-17 19:00 (America/Mexico_City)",
+  "video": "capsula.mp4",
+  "titulo": "El riesgo que queda después del colesterol #Shorts",
+  "origen": "propia",
+  "tiktok": "pendiente",
+  "facebook": "pendiente",
+  "miniatura": "portada.jpg (OK 1080x1920, igual a portada.jpg (dif media 0.1/255))",
+  "nota": "Lote 19:00 montado 2026-11-14, JorgeNeural, 88.50s, QA 21/21, 9 frames risografia. Token ~/.capcot/token.json.",
+  "tiktok_post_id": null,
+  "facebook_content_id": null
  }
 ]
