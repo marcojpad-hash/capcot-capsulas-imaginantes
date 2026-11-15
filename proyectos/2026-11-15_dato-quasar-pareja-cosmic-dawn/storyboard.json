@@ -13,7 +13,7 @@
   "scene_total_seconds": 78,
   "cortinilla_seconds": 6,
   "total_duration_seconds": 84,
-  "word_count": 178,
+  "word_count": 180,
   "estructura": "pregunta",
   "audience": "Público general interesado en astronomía y ciencia.",
   "occasion": "Slot 17:00 CDMX, dentro de la ventana activa 16:30–18:00. Domingo no preferente, pero no excluido. Borrador textual, sin programación.",
@@ -397,5 +397,25 @@
     "Las masas son estimaciones espectrales de época única y no mediciones directas.",
     "El estilo de la cápsula colibrí de las 07:00 no está documentado; unicidad visual respecto de esa pieza no certificable."
   ],
-  "approved_assets": []
+  "approved_assets": [],
+  "narrative_qa": {
+    "status": "FAIL",
+    "score": 82,
+    "review_basis": "lectura_en_frio_solo_narracion",
+    "reviewer_role": "auditor_capcot_independiente",
+    "reviewed_at": "2026-11-15T15:51:23-06:00",
+    "checks": {
+      "pregunta_central_reconstruible": true,
+      "apertura_in_medias_res": true,
+      "progresion_por_escena": false,
+      "transiciones_causales": false,
+      "giro_cientifico_explicado": true,
+      "limite_evidencia_explicito": true,
+      "payoff_cierre_apertura": true
+    },
+    "critical_flags": [
+      "ESCENA_002_REITERA_GEMINI_NORTH_Y_NO_AVANZA_LA_PREGUNTA",
+      "TRANSICION_002_003_NO_CAUSAL"
+    ]
+  }
 }
