@@ -1,0 +1,25 @@
+{
+  "project_id": "2026-11-06_adn-sintetico-myc",
+  "plataforma": [
+    "yt",
+    "tt",
+    "fb"
+  ],
+  "publish_at": "2026-11-20T01:00:00Z",
+  "ventana": "noche",
+  "hora_cdmx": "19:00",
+  "fecha_cdmx": "2026-11-19",
+  "titulo_yt": "ADN que apaga el gen del cáncer #Shorts",
+  "privacidad": "private→público a las 19:00 CDMX",
+  "estado": "programado_yt",
+  "video": "capsula.mp4",
+  "miniatura": "portada.jpg (frame 0, título en caja crema con subrayado rojo); thumbnails.set OK; sardefault OK 1080x1920, igual a portada.jpg (dif media 0.0/255)",
+  "yt_programado": true,
+  "yt_id": "zyTl_cVGN6E",
+  "url": "https://youtube.com/shorts/zyTl_cVGN6E",
+  "tiktok": "pendiente",
+  "facebook": "pendiente",
+  "tiktok_id": null,
+  "facebook_id": null,
+  "nota": "Lote 19:00, montaje 2026-11-14 (Grok Bot). Voz es-MX-JorgeNeural (edge-tts +7%, -2Hz). 1080x1920 30fps, 88.60s, QA 21/21. Estilo dibujo_cientifico_scratchboard, plano_seconds 5, movimientos suaves, cierre 11.5s. Token ~/.capcot/token.json. TikTok y Facebook todavía NO programados."
+}
