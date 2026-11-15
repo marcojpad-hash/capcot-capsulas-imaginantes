@@ -26,3 +26,7 @@ assets/geo/
 
 # cola externa: solo json
 cola/*/frames/
+
+# evidencia de programación (capturas de Studio / Planificador)
+!data/evidencia/
+!data/evidencia/**
