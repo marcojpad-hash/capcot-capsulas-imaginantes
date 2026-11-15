@@ -416,9 +416,14 @@
     "titulo": "¿Los árboles hablan bajo tierra? #Shorts",
     "aprobado_por": "Mj (t435u: montadas y programadas, cápsula extra del día)",
     "origen": "propia",
-    "tiktok": "pendiente_programar_navegador",
-    "facebook": "pendiente_programar_navegador",
-    "miniatura": "thumbnails.set OK portada.jpg t=0.5s"
+    "tiktok": "publicado",
+    "facebook": "publicado",
+    "miniatura": "thumbnails.set OK portada.jpg t=0.5s",
+    "tiktok_post_id": "7708391972129639701",
+    "facebook_content_id": "122110375287518983",
+    "tiktok_url": "https://www.tiktok.com/@datosyociosidades/video/7708391972129639701",
+    "tiktok_nota": "Publicado al momento el 15-nov ~07:37 CDMX (slot original 13-nov 13:30 ya había pasado). Everyone, etiqueta IA, portada con título. Evidencia: data/evidencia/2026-11-15/tt_lista_despues.png",
+    "facebook_nota": "Reel público publicado el 15-nov ~07:42 CDMX. Miniatura portada limpia (sin subtítulo). content_id 122110375287518983."
   },
   {
     "fecha": "2026-11-14",
@@ -432,9 +437,14 @@
     "titulo": "Un aminoácido cambia el virus Andes #Shorts",
     "aprobado_por": "Mj (t435u: montadas y programadas, cápsula extra del día)",
     "origen": "propia",
-    "tiktok": "pendiente_programar_navegador",
-    "facebook": "pendiente_programar_navegador",
-    "miniatura": "thumbnails.set OK portada.jpg t=0.15s (limpia, sin subtítulo; re-set tras auto 0.5s)"
+    "tiktok": "publicado",
+    "facebook": "publicado",
+    "miniatura": "thumbnails.set OK portada.jpg t=0.15s (limpia, sin subtítulo; re-set tras auto 0.5s)",
+    "tiktok_post_id": "7708392379941719317",
+    "facebook_content_id": "122110375893518983",
+    "tiktok_url": "https://www.tiktok.com/@datosyociosidades/video/7708392379941719317",
+    "tiktok_nota": "Publicado al momento el 15-nov ~07:39 CDMX (slot original 14-nov 13:30 ya había pasado). Salió unos minutos como Content under review/Only me y luego Everyone. Etiqueta IA, portada con título. Evidencia: data/evidencia/2026-11-15/tt_lista_despues.png",
+    "facebook_nota": "Reel público publicado el 15-nov ~07:44 CDMX. Miniatura portada.jpg. content_id 122110375893518983. Tardó unos minutos en aparecer en Publicadas."
   },
   {
     "fecha": "2026-11-11",
@@ -498,6 +508,28 @@
   },
   {
     "fecha": "2026-11-15",
+    "project_id": "2026-11-14_colibri-se-enfria",
+    "slot": "07:00",
+    "yt_id": "es6hWxPdt2A",
+    "url": "https://youtube.com/shorts/es6hWxPdt2A",
+    "privacidad": "private→public (publishAt)",
+    "publishAt_utc": "2026-11-15T13:00:00Z",
+    "hora_local": "2026-11-15 07:00 (America/Mexico_City)",
+    "video": "/workspace/capcot_prod_20261114/colibri/capsula_final.mp4",
+    "titulo": "El colibrí que se enfría casi como una piedra #Shorts",
+    "origen": "evergreen_lote_14nov",
+    "tiktok": "publicado",
+    "facebook": "publicado",
+    "miniatura": "portada.jpg (thumbnails.set OK)",
+    "nota": "Chequeo pre-entrega 15-nov 06:24: el 07:00 estaba vacío; se cubrió con este evergreen ya montado. YT es6hWxPdt2A publishAt 13:00Z. TT y FB se publicaron al momento ~07:36–07:41 CDMX porque el slot ya había pasado.",
+    "tiktok_post_id": "7708391512161209620",
+    "facebook_content_id": "122110374789518983",
+    "tiktok_url": "https://www.tiktok.com/@datosyociosidades/video/7708391512161209620",
+    "tiktok_nota": "Publicado al momento el 15-nov ~07:36 CDMX. Everyone, etiqueta IA, portada con título EL COLIBRÍ QUE SE ENFRÍA DE NOCHE. Evidencia: data/evidencia/2026-11-15/tt_lista_despues.png",
+    "facebook_nota": "Reel público publicado el 15-nov ~07:41 CDMX. Miniatura portada.jpg. content_id 122110374789518983."
+  },
+  {
+    "fecha": "2026-11-15",
     "project_id": "2026-11-11_agua-magnetismo-hidrogeno",
     "yt_id": "O9QlSaft5DY",
     "url": "https://youtube.com/shorts/O9QlSaft5DY",
@@ -510,8 +542,8 @@
     "tiktok": "programado",
     "facebook": "programado",
     "miniatura": "thumbnails.set OK portada.jpg (primer frame)",
-    "nota": "Delegación #6 HECHA 2026-11-14: montaje Imaginantes 85.13 s, JorgeNeural, QA 21/21, commit 357a341. Registro tardío en este archivo: el orquestador no la anotó al programar (hueco de bookkeeping, corregido 2026-11-14).",
-    "tiktok_post_id": null,
+    "nota": "Delegación #6 HECHA 2026-11-14: montaje Imaginantes 85.13 s, JorgeNeural, QA 21/21, commit 357a341. Registro tardío en este archivo: el orquestador no la anotó al programar (hueco de bookkeeping, corregido 2026-11-14). ID de TikTok confirmado en Studio el 15-nov 07:36 CDMX (programado Nov 15 2:30 PM GMT-5 = 13:30 CDMX, Everyone): 7708126656916999425.",
+    "tiktok_post_id": "7708126656916999425",
     "facebook_content_id": null,
     "tiktok_schedule_utc": "2026-11-15T19:30:00Z",
     "facebook_schedule_utc": "2026-11-15T19:30:00Z",
@@ -522,7 +554,8 @@
     "tiktok_nota": "Programado en TikTok Studio (@datosyociosidades) el 14-nov. Everyone, etiqueta de contenido generado por IA ON, portada = primer frame con título. La UI muestra 14:30 GMT-5 (New York) = 13:30 CDMX del 2026-11-15. Verificado en la lista de Posts el 14-nov a las 18:10 CDMX. Todavía no hay id público.",
     "facebook_nota": "Reel de la Página «Datos y ociosidades» programado en el Planificador de Meta Business Suite el 14-nov. Público, miniatura portada.jpg. UI 14:30 GMT-5 = 13:30 CDMX del 2026-11-15. Meta confirmó cada uno; verificado en el Planificador el 14-nov a las 18:10 CDMX. Todavía no hay id público.",
     "tiktok_evidencia_semana": "data/evidencia/2026-11-14/tiktok_semana_2026-11-15_21.png",
-    "facebook_evidencia_semana": "data/evidencia/2026-11-14/facebook_planificador_semana_2026-11-15_21.png"
+    "facebook_evidencia_semana": "data/evidencia/2026-11-14/facebook_planificador_semana_2026-11-15_21.png",
+    "tiktok_url": "https://www.tiktok.com/@datosyociosidades/video/7708126656916999425"
   },
   {
     "fecha": "2026-11-16",
@@ -669,8 +702,8 @@
     "tiktok": "programado",
     "facebook": "programado",
     "miniatura": "portada.jpg (OK 1080x1920, igual a portada.jpg (dif media 0.1/255))",
-    "nota": "Lote 19:00 montado 2026-11-14, JorgeNeural, 88.67s, QA 21/21, 9 frames microscopio_psicodelico. Token ~/.capcot/token.json.",
-    "tiktok_post_id": null,
+    "nota": "Lote 19:00 montado 2026-11-14, JorgeNeural, 88.67s, QA 21/21, 9 frames microscopio_psicodelico. Token ~/.capcot/token.json. ID de TikTok confirmado en Studio el 15-nov 07:36 CDMX (programado Nov 15 8:00 PM GMT-5 = 19:00 CDMX, Everyone): 7708223881630207284.",
+    "tiktok_post_id": "7708223881630207284",
     "facebook_content_id": null,
     "tiktok_schedule_utc": "2026-11-16T01:00:00Z",
     "facebook_schedule_utc": "2026-11-16T01:00:00Z",
@@ -680,7 +713,8 @@
     "facebook_evidencia": "data/evidencia/2026-11-14/facebook_planificador_1900_semana_2026-11-15_21.png",
     "tiktok_nota": "Programado en TikTok Studio (@datosyociosidades) el 14-nov, alrededor de las 21:00 CDMX. Everyone, portada = primer frame con título. La UI muestra 8:00 PM GMT-5 (New York) = 19:00 CDMX del 2026-11-15. Verificado en la lista de Posts el 14-nov. Todavía no hay id público.",
     "facebook_nota": "Reel de la Página «Datos y ociosidades» programado en el Planificador de Meta Business Suite el 14-nov, alrededor de las 21:00 CDMX. Público, miniatura portada.jpg. UI 8:00 PM GMT-5 (New York) = 19:00 CDMX del 2026-11-15. Todavía no hay id público.",
-    "tiktok_evidencia_semana": "data/evidencia/2026-11-14/tiktok_1900_semana_2026-11-15_21.png"
+    "tiktok_evidencia_semana": "data/evidencia/2026-11-14/tiktok_1900_semana_2026-11-15_21.png",
+    "tiktok_url": "https://www.tiktok.com/@datosyociosidades/video/7708223881630207284"
   },
   {
     "fecha": "2026-11-16",

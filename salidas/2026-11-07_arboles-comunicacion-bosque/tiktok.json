@@ -1,0 +1,23 @@
+{
+ "estado": "publicado",
+ "hora_local": "2026-11-15 07:37 CDMX",
+ "hora_slot": "2026-11-13 13:30 CDMX (atrasado; publicado al momento)",
+ "ui_timezone": "GMT-5 New York",
+ "ui_hora_mostrada": "2026-11-15 8:37 AM",
+ "visibilidad": "Everyone",
+ "post_id": "7708391972129639701",
+ "url": "https://www.tiktok.com/@datosyociosidades/video/7708391972129639701",
+ "scheduled_list": "https://www.tiktok.com/tiktokstudio/content",
+ "cuenta": "@datosyociosidades",
+ "verificado": "2026-11-15 07:44 CDMX rutina publicar TikTok 07:00 (Studio Posts)",
+ "etiqueta_ia": true,
+ "etiqueta_ia_nota": "Activada en el interruptor antes de publicar; no se reabrió el post para reconfirmar.",
+ "portada": "primer frame (t=0) limpio, título ¿LOS ÁRBOLES HABLAN? sin subtítulo",
+ "mp4": "capsula.mp4",
+ "caption_file": "caption_tiktok.txt",
+ "yt_id": "EX0W3q-yKRw",
+ "youtube_url": "https://youtube.com/shorts/EX0W3q-yKRw",
+ "actualizado": "2026-11-15T07:44:00-06:00",
+ "evidencia": "data/evidencia/2026-11-15/tt_lista_despues.png",
+ "nota": "Estaba pendiente_programar_navegador desde el 13-nov 13:30. No estaba en Posts ni Drafts. Publicado al momento ~07:37 CDMX del 15-nov. Everyone, etiqueta IA, portada con título."
+}

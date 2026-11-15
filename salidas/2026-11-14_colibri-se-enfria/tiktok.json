@@ -1,0 +1,23 @@
+{
+ "estado": "publicado",
+ "hora_local": "2026-11-15 07:36 CDMX",
+ "hora_slot": "2026-11-15 07:00 CDMX",
+ "ui_timezone": "GMT-5 New York",
+ "ui_hora_mostrada": "2026-11-15 8:36 AM",
+ "visibilidad": "Everyone",
+ "post_id": "7708391512161209620",
+ "url": "https://www.tiktok.com/@datosyociosidades/video/7708391512161209620",
+ "scheduled_list": "https://www.tiktok.com/tiktokstudio/content",
+ "cuenta": "@datosyociosidades",
+ "verificado": "2026-11-15 07:44 CDMX rutina publicar TikTok 07:00 (Studio Posts)",
+ "etiqueta_ia": true,
+ "etiqueta_ia_nota": "Activada en el interruptor antes de publicar; no se reabrió el post para reconfirmar.",
+ "portada": "primer frame con título EL COLIBRÍ QUE SE ENFRÍA DE NOCHE",
+ "mp4": "/workspace/capcot_prod_20261114/colibri/capsula_final.mp4",
+ "caption_file": "caption_tiktok.txt",
+ "yt_id": "es6hWxPdt2A",
+ "youtube_url": "https://youtube.com/shorts/es6hWxPdt2A",
+ "actualizado": "2026-11-15T07:44:00-06:00",
+ "evidencia": "data/evidencia/2026-11-15/tt_lista_despues.png",
+ "nota": "El slot 07:00 CDMX ya había pasado (la cápsula se programó en YT a las 06:24 en el chequeo pre-entrega). Se publicó al momento ~07:36 CDMX. Everyone, etiqueta IA, portada con título."
+}

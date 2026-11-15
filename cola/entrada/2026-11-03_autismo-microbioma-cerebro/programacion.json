@@ -19,7 +19,7 @@
   "url": "https://youtube.com/shorts/aTau_z2yWq8",
   "tiktok": "programado",
   "facebook": "programado",
-  "tiktok_id": null,
+  "tiktok_id": "7708223881630207284",
   "facebook_id": null,
   "nota": "Lote 19:00, montaje 2026-11-14 (Grok Bot). Voz es-MX-JorgeNeural (edge-tts +7%, -2Hz). 1080x1920 30fps, 88.67s, QA 21/21. Estilo microscopio_psicodelico, plano_seconds 5, movimientos suaves, cierre 11s. Token ~/.capcot/token.json. TT y FB programados el 14-nov alrededor de las 21:00 CDMX: TikTok Studio @datosyociosidades, Everyone, portada = primer frame con título, 8:00 PM GMT-5 en la UI = 19:00 CDMX. Facebook Reels de la Página «Datos y ociosidades», públicos, con portada.jpg, en el Planificador de Meta Business Suite a la misma hora. Todavía no hay ids públicos (tiktok_id/facebook_id = null). Evidencia: data/evidencia/2026-11-14/tiktok_1900_semana_2026-11-15_21_15-16.png; data/evidencia/2026-11-14/facebook_planificador_1900_semana_2026-11-15_21.png.",
   "tiktok_schedule_utc": "2026-11-16T01:00:00Z",
@@ -27,5 +27,6 @@
   "tiktok_schedule_local": "2026-11-15 19:00 (America/Mexico_City)",
   "facebook_schedule_local": "2026-11-15 19:00 (America/Mexico_City)",
   "tiktok_evidencia": "data/evidencia/2026-11-14/tiktok_1900_semana_2026-11-15_21_15-16.png",
-  "facebook_evidencia": "data/evidencia/2026-11-14/facebook_planificador_1900_semana_2026-11-15_21.png"
+  "facebook_evidencia": "data/evidencia/2026-11-14/facebook_planificador_1900_semana_2026-11-15_21.png",
+  "tiktok_url": "https://www.tiktok.com/@datosyociosidades/video/7708223881630207284"
 }

@@ -1,0 +1,23 @@
+{
+ "estado": "publicado",
+ "hora_local": "2026-11-15 07:39 CDMX",
+ "hora_slot": "2026-11-14 13:30 CDMX (atrasado; publicado al momento)",
+ "ui_timezone": "GMT-5 New York",
+ "ui_hora_mostrada": "2026-11-15 8:39 AM",
+ "visibilidad": "Everyone",
+ "post_id": "7708392379941719317",
+ "url": "https://www.tiktok.com/@datosyociosidades/video/7708392379941719317",
+ "scheduled_list": "https://www.tiktok.com/tiktokstudio/content",
+ "cuenta": "@datosyociosidades",
+ "verificado": "2026-11-15 07:44 CDMX rutina publicar TikTok 07:00 (Studio Posts)",
+ "etiqueta_ia": true,
+ "etiqueta_ia_nota": "Activada en el interruptor antes de publicar. Al salir apareció unos minutos como «Content under review / Only me» y después ya figuraba como Everyone en la lista de Posts.",
+ "portada": "primer frame con título UN SOLO AMINOÁCIDO",
+ "mp4": "capsula.mp4",
+ "caption_file": "caption_tiktok.txt",
+ "yt_id": "8EcFyXTcSdM",
+ "youtube_url": "https://youtube.com/shorts/8EcFyXTcSdM",
+ "actualizado": "2026-11-15T07:44:00-06:00",
+ "evidencia": "data/evidencia/2026-11-15/tt_lista_despues.png",
+ "nota": "Estaba pendiente_programar_navegador desde el 14-nov 13:30. No estaba en Posts ni Drafts. Publicado al momento ~07:39 CDMX del 15-nov."
+}
