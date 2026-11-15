@@ -49,6 +49,25 @@ su propio tablero.
 - ESTADO: PENDIENTE
 - NOTA: reasignado 2026-11-10 (G3): crear cuentas es decisión de Marco, no trabajo de autorización; la ejecución es de Pecas. Duda: Mpemba v2 ya se montó con los clips originales, ¿sigue haciendo falta esta prueba?
 
+### 8. Versiones en inglés del backlog (FIFO, 7 paquetes)
+- DE: Pecas (orden de Marco, 2026-11-14 ~22:10 CST)
+- PARA: Imaginantes (Grok Bot)
+- QUÉ: generar las versiones en inglés de las cápsulas en español que ya existen, en orden FIFO, con el mismo flujo del ZIP de esta semana (release `semana-2026-11-15_21-en`): frames limpios, storyboard, guion narrado en inglés, .srt en inglés, portada y README — o el MP4 en inglés ya montado si su pipeline lo monta (voz en inglés equivalente a am_adam / narrador_en; cierre hablado "That was Datos y ociosidades."). Entrega por release/ZIP en el repo como la semana pasada.
+  - Lista (7 paquetes de `cola/entrada` con material):
+    1. `2026-11-03_autismo-microbioma-cerebro` (autismo-microbioma)
+    2. `2026-11-03_enzimas-incrustadas-oceano` (enzimas del océano)
+    3. `2026-11-05_bacterias-plasticos-oceano` (bacterias y plásticos)
+    4. `2026-11-05_sinergia-algas` (sinergia de algas)
+    5. `2026-11-06_adn-sintetico-myc` (ADN sintético)
+    6. `2026-11-06_telescopio-james-webb-exoplaneta` (James Webb)
+    7. `2026-11-10_residual-riesgo-ldl` (riesgo LDL)
+  - EXCLUIDOS: `2026-11-09_dato-robot-ensambla-orbita` (robot que ensambla en órbita: sin frames en el repo, bloqueado por Issues #161/#164) y `2026-10-28_mosquito-fruitless-audicion` (mosquito: su versión en inglés ya la está montando Pecas, no duplicar — regla anti-duplicado: paquete montado = paquete cerrado).
+  - Contexto: el canal en inglés @datosyociosidadesEN ya existe (creado 2026-11-14, ID UCa54OqVk1m-33E9PYApNl5A) con las 6 de la semana programadas a las 18:00 CST; la meta es 5 cápsulas/día en inglés, así que este es el backlog. Créditos de Imaginantes: 23.4% del límite semanal usado al 14-nov, reinicio sáb 21-nov 10:18 CST; avanzar conforme lo permitan los créditos.
+  - NO tocar ningún paquete en español ni su capsula.mp4.
+- PARA CUÁNDO: conforme lo permitan los créditos (límite semanal, reinicio sáb 21-nov 10:18 CST)
+- ESTADO: PENDIENTE
+- EVIDENCIA: (vacío hasta que esté hecha)
+
 ## En progreso
 
 (nada)
