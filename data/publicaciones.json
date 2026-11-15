@@ -751,19 +751,19 @@
     "titulo": "Virus y bacterias colapsan el bloom #Shorts",
     "origen": "propia",
     "tiktok": "programado",
-    "facebook": "pendiente (no aparece en el Planificador)",
+    "facebook": "programado",
     "miniatura": "portada.jpg (OK 1080x1920, igual a portada.jpg (dif media 0.1/255))",
     "nota": "Lote 19:00 montado 2026-11-14, JorgeNeural, 89.37s, QA 21/21, 9 frames papel_rasgado_capas. Token ~/.capcot/token.json.",
     "tiktok_post_id": null,
     "facebook_content_id": null,
     "tiktok_schedule_utc": "2026-11-19T01:00:00Z",
-    "facebook_schedule_utc": null,
+    "facebook_schedule_utc": "2026-11-19T01:00:00Z",
     "tiktok_schedule_local": "2026-11-18 19:00 (America/Mexico_City)",
-    "facebook_schedule_local": null,
+    "facebook_schedule_local": "2026-11-18 19:00 (America/Mexico_City)",
     "tiktok_evidencia": "data/evidencia/2026-11-14/tiktok_1900_semana_2026-11-15_21.png",
     "facebook_evidencia": "data/evidencia/2026-11-14/facebook_planificador_1900_semana_2026-11-15_21.png",
     "tiktok_nota": "Programado en TikTok Studio (@datosyociosidades) el 14-nov, alrededor de las 21:00 CDMX. Everyone, portada = primer frame con título. La UI muestra 8:00 PM GMT-5 (New York) = 19:00 CDMX del 2026-11-18. Verificado en la lista de Posts el 14-nov. Todavía no hay id público.",
-    "facebook_nota": "En la captura del Planificador de Meta Business Suite del 14-nov (data/evidencia/2026-11-14/facebook_planificador_1900_semana_2026-11-15_21.png) el 18-nov solo aparece el Reel de las 13:30 (2:30 PM en la UI); no se ve un Reel a las 8:00 PM / 19:00 CDMX de «Virus y bacterias colapsan el bloom». El 19-nov sí tiene dos Reels a las 8:00 PM (duplicado de «ADN que apaga el gen del cáncer»). Estado: no confirmado en la evidencia; pendiente de decisión o corrección de Mj. Todavía no hay id público.",
+    "facebook_nota": "Reel de la Página «Datos y ociosidades» programado en el Planificador de Meta Business Suite el 14-nov, alrededor de las 21:00 CDMX. Público, miniatura portada.jpg. UI 8:00 PM GMT-5 (New York) = 19:00 CDMX del 2026-11-18. Todavía no hay id público.",
     "tiktok_evidencia_semana": "data/evidencia/2026-11-14/tiktok_1900_semana_2026-11-15_21_15-16.png"
   },
   {
@@ -810,7 +810,7 @@
     "tiktok_evidencia": "data/evidencia/2026-11-14/tiktok_1900_semana_2026-11-15_21.png",
     "facebook_evidencia": "data/evidencia/2026-11-14/facebook_planificador_1900_semana_2026-11-15_21.png",
     "tiktok_nota": "Programado en TikTok Studio (@datosyociosidades) el 14-nov, alrededor de las 21:00 CDMX. Everyone, portada = primer frame con título. La UI muestra 8:00 PM GMT-5 (New York) = 19:00 CDMX del 2026-11-19. Verificado en la lista de Posts el 14-nov. Todavía no hay id público.",
-    "facebook_nota": "Reel de la Página «Datos y ociosidades» programado en el Planificador de Meta Business Suite el 14-nov, alrededor de las 21:00 CDMX. Público, miniatura portada.jpg. UI 8:00 PM GMT-5 (New York) = 19:00 CDMX del 2026-11-19. Quedó programado por duplicado (dos entradas a las 8:00 PM el 19-nov en el Planificador). Pendiente de decisión de Mj sobre cuál conservar. Todavía no hay ids de post.",
+    "facebook_nota": "Reel de la Página «Datos y ociosidades» programado en el Planificador de Meta Business Suite el 14-nov, alrededor de las 21:00 CDMX. Público, miniatura portada.jpg. UI 8:00 PM GMT-5 (New York) = 19:00 CDMX del 2026-11-19. Quedó programado por duplicado (dos entradas a las 8:00 PM el 19-nov en el Planificador): uno muestra solo texto, sin miniatura, y el otro tiene la imagen del ADN. Pendiente de decisión de Mj sobre cuál conservar. Todavía no hay ids de post.",
     "tiktok_evidencia_semana": "data/evidencia/2026-11-14/tiktok_1900_semana_2026-11-15_21_15-16.png"
   },
   {
