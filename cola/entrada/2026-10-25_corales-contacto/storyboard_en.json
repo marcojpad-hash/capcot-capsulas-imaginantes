@@ -1,0 +1,339 @@
+{
+  "project_id": "2026-10-25_corales-contacto_en",
+  "serie": "Datos y ociosidades",
+  "title": "The bleached coral that came back to life",
+  "titulo": "A touch of life",
+  "language": "en-US",
+  "aspect_ratio": "9:16",
+  "target_duration_seconds": 88,
+  "audience": "Público general curioso (YouTube Shorts / TikTok)",
+  "estructura": "historia",
+  "estilo_id": "linograbado",
+  "estilo_visual": "Linograbado bitono",
+  "trend_source": {
+    "tipo": "noticia_cientifica",
+    "medio": "ScienceDaily / Stanford Doerr School of Sustainability",
+    "url": "https://www.sciencedaily.com/releases/2026/10/261017230025.htm",
+    "estudio_doi": "10.1126/sciadv.aeh1580",
+    "fecha_publicacion": "2026-10-19",
+    "termino": "recuperación de coral blanqueado por contacto",
+    "fecha_consulta": "2026-10-25",
+    "puntaje": 8
+  },
+  "resumen": "Un experimento de laboratorio mostró que fragmentos de coral blanqueado pueden recuperarse tras el contacto con clones sanos genéticamente idénticos. Es una pista para investigar la restauración, no una solución lista para aplicarse a arrecifes completos.",
+  "keywords": [
+    "corales",
+    "blanqueamiento",
+    "restauración de arrecifes"
+  ],
+  "voice": {
+    "engine": "kokoro-onnx",
+    "voice_id": "am_adam",
+    "lang": "en-us",
+    "speed": "tuned per capsule (see RELEVO_EN.md)"
+  },
+  "sources": [
+    {
+      "id": "SRC-001",
+      "cita_corta": "Collins, D. S. et al. (2026). Rapid coral bleaching recovery via symbiont transfer from healthy corals. Science Advances 12(42), eaeh1580.",
+      "doi": "10.1126/sciadv.aeh1580",
+      "url": "https://doi.org/10.1126/sciadv.aeh1580",
+      "accessed": "2026-10-25",
+      "supports": [
+        "En el experimento principal, 5/5 fragmentos blanqueados en contacto con fragmentos sanos del mismo genotipo se recuperaron completamente; n=5 por grupo.",
+        "En el grupo sin contacto, 0/5 se recuperaron por completo al final de la prueba; dos murieron y tres presentaron sobrecrecimiento de algas.",
+        "El contacto entre corales del mismo genotipo permite fusión de tejidos y transferencia de simbiontes; se observaron algas en el fragmento blanqueado desde el día 3.",
+        "En un segundo ensayo, una semana de contacto (y en un caso cinco días) bastó para iniciar recuperación completa en siete semanas.",
+        "Los resultados son de laboratorio y el método no está listo para restauración a gran escala."
+      ],
+      "ref_display": "Science Advances · doi:10.1126/sciadv.aeh1580"
+    },
+    {
+      "id": "SRC-002",
+      "cita_corta": "Jewett, K. (2026-10-14). Stanford scientists discover a way to reverse coral bleaching at record speed. Stanford Doerr School of Sustainability.",
+      "url": "https://sustainability.stanford.edu/news/stanford-scientists-discover-way-reverse-coral-bleaching-record-speed/",
+      "accessed": "2026-10-25",
+      "supports": [
+        "La observación accidental de 2025 que motivó el estudio.",
+        "Resumen del experimento de contacto y recuperación en siete semanas.",
+        "Mecanismo de fusión tisular y limitaciones para escalar la intervención."
+      ],
+      "ref_display": "Stanford Doerr School of Sustainability"
+    },
+    {
+      "id": "SRC-003",
+      "cita_corta": "Hopkins Marine Station. Contacto y dirección oficial: 120 Ocean View Blvd, Pacific Grove, California.",
+      "url": "https://hopkinsmarinestation.stanford.edu/about/contact",
+      "accessed": "2026-10-25",
+      "supports": [
+        "La estación de investigación está en Pacific Grove; el artículo indica que los corales se mantuvieron en acuarios allí. El origen de recolección de los corales no estaba disponible."
+      ],
+      "ref_display": "Hopkins Marine Station · Stanford"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_001",
+      "arc": "hook_medias_res",
+      "duration_seconds": 7,
+      "narration": "In an aquarium, two corals touched by accident.",
+      "on_screen_text": "The accidental touch",
+      "visual_description": "Close view of two branching coral fragments almost touching, one chalk-white and bleached, the other vivid red-orange with green-gold polyps, deep indigo water and layered reef silhouettes.",
+      "image_prompt": "linocut print, two-tone indigo and ochre ink on cream paper, bold carved lines, visible gouge marks, high contrast, vertical 9:16 composition, no text + Close view of two branching coral fragments almost touching, one chalk-white and bleached, the other vivid red-orange with green-gold polyps, deep indigo water and layered reef silhouettes.",
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "asset_filename": "frames/scene_001.jpg",
+      "asset_type": "image",
+      "motion": "kenburns_auto",
+      "animated_hook": false,
+      "ambiente": "oceano",
+      "sfx": [
+        "olas"
+      ],
+      "image_origen": "Generada con IA para este storyboard; ilustración no fotorrealista."
+    },
+    {
+      "id": "scene_002",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "One was bleached; the other still kept its symbiotic algae. Steve Palumbi noticed that where they touched, the pale coral was starting to regain its color.",
+      "on_screen_text": "Pacific Grove, California",
+      "visual_description": "Two coral fragments in a laboratory aquarium, one bleached ivory and one healthy red-orange, their tips touching in a quiet research tank with glass reflections and soft light.",
+      "image_prompt": "linocut print, two-tone indigo and ochre ink on cream paper, bold carved lines, visible gouge marks, high contrast, vertical 9:16 composition, no text + Two coral fragments in a laboratory aquarium, one bleached ivory and one healthy red-orange, their tips touching in a quiet research tank with glass reflections and soft light.",
+      "source_ids": [
+        "SRC-001",
+        "SRC-002",
+        "SRC-003"
+      ],
+      "asset_filename": "frames/scene_002.jpg",
+      "asset_type": "image",
+      "motion": "kenburns_auto",
+      "animated_hook": false,
+      "ambiente": "oceano",
+      "sfx": [
+        "madera",
+        "olas"
+      ],
+      "image_origen": "Generada con IA para este storyboard; ilustración no fotorrealista.",
+      "capa": {
+        "tipo": "mapa",
+        "region": [
+          -122.2,
+          -121.5,
+          36.4,
+          37
+        ],
+        "puntos": [
+          {
+            "nombre": "Hopkins Marine Station",
+            "lon": -121.9045,
+            "lat": 36.6205
+          }
+        ],
+        "titulo": "Dónde se hizo el experimento",
+        "fuente": "Collins et al. (2026); Hopkins Marine Station (dirección oficial); Natural Earth 110m"
+      }
+    },
+    {
+      "id": "scene_003",
+      "arc": "desarrollo",
+      "duration_seconds": 9,
+      "narration": "The team turned that observation into an experiment: five bleached fragments touched healthy clones; five others stayed separated by millimeters.",
+      "on_screen_text": "Ten pairs, two groups",
+      "visual_description": "An overhead experimental tray divided into two clear groups: five pairs of pale coral fragments touching healthy red-orange clones on one side, and five separated pairs with visible small gaps on the other side, no labels.",
+      "image_prompt": "linocut print, two-tone indigo and ochre ink on cream paper, bold carved lines, visible gouge marks, high contrast, vertical 9:16 composition, no text + An overhead experimental tray divided into two clear groups: five pairs of pale coral fragments touching healthy red-orange clones on one side, and five separated pairs with visible small gaps on the other side, no labels.",
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "asset_filename": "frames/scene_003.jpg",
+      "asset_type": "image",
+      "motion": "kenburns_auto",
+      "animated_hook": false,
+      "ambiente": "oceano",
+      "sfx": [
+        "reloj",
+        "olas"
+      ],
+      "image_origen": "Generada con IA para este storyboard; ilustración no fotorrealista."
+    },
+    {
+      "id": "scene_004",
+      "arc": "desarrollo",
+      "duration_seconds": 11,
+      "narration": "The difference was radical. All five with contact recovered completely; none of the five isolated ones did. Two died and three were covered in algae.",
+      "on_screen_text": "5/5 vs 0/5",
+      "visual_description": "A strong visual comparison of five recovered colorful coral fragments against five bleached fragments with heavy algae overgrowth, arranged in two orderly groups on dark blue water, no labels or numerals.",
+      "image_prompt": "linocut print, two-tone indigo and ochre ink on cream paper, bold carved lines, visible gouge marks, high contrast, vertical 9:16 composition, no text + A strong visual comparison of five recovered colorful coral fragments against five bleached fragments with heavy algae overgrowth, arranged in two orderly groups on dark blue water, no labels or numerals.",
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "asset_filename": "frames/scene_004.jpg",
+      "asset_type": "image",
+      "motion": "kenburns_auto",
+      "animated_hook": false,
+      "ambiente": "oceano",
+      "sfx": [
+        "reloj"
+      ],
+      "image_origen": "Generada con IA para este storyboard; ilustración no fotorrealista.",
+      "capa": {
+        "tipo": "dato",
+        "valor": "5/5 vs 0/5",
+        "etiqueta": "Recuperación completa: contacto vs. sin contacto · n=5 por grupo · seguimiento 8–9 semanas",
+        "fuente": "Collins et al. (2026), Science Advances, doi:10.1126/sciadv.aeh1580"
+      }
+    },
+    {
+      "id": "scene_005",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "In a second test, one week of contact was enough: they healed completely in seven weeks, even after being separated.",
+      "on_screen_text": "Channels between tissues",
+      "visual_description": "Microscopic cutaway metaphor of two genetically identical coral tissues fusing at their contact point, tiny channels connecting the polyps and green-gold symbiotic algae moving through them.",
+      "image_prompt": "linocut print, two-tone indigo and ochre ink on cream paper, bold carved lines, visible gouge marks, high contrast, vertical 9:16 composition, no text + Microscopic cutaway metaphor of two genetically identical coral tissues fusing at their contact point, tiny channels connecting the polyps and green-gold symbiotic algae moving through them.",
+      "source_ids": [
+        "SRC-001"
+      ],
+      "asset_filename": "frames/scene_005.jpg",
+      "asset_type": "image",
+      "motion": "kenburns_auto",
+      "animated_hook": false,
+      "ambiente": "oceano",
+      "sfx": [
+        "olas"
+      ],
+      "image_origen": "Generada con IA para este storyboard; ilustración no fotorrealista."
+    },
+    {
+      "id": "scene_006",
+      "arc": "cierre_historia",
+      "duration_seconds": 8,
+      "narration": "The mechanism? The tissues of genetically identical corals are able to fuse and create channels through which beneficial algae pass.",
+      "on_screen_text": "The algae travel",
+      "visual_description": "Macro underwater view of green-gold symbiotic algae crossing from healthy orange coral into a pale bleached coral through a narrow connected tissue bridge, bubbles and indigo current.",
+      "image_prompt": "linocut print, two-tone indigo and ochre ink on cream paper, bold carved lines, visible gouge marks, high contrast, vertical 9:16 composition, no text + Macro underwater view of green-gold symbiotic algae crossing from healthy orange coral into a pale bleached coral through a narrow connected tissue bridge, bubbles and indigo current.",
+      "source_ids": [
+        "SRC-001"
+      ],
+      "asset_filename": "frames/scene_006.jpg",
+      "asset_type": "image",
+      "motion": "kenburns_auto",
+      "animated_hook": false,
+      "ambiente": "oceano",
+      "sfx": [
+        "olas"
+      ],
+      "image_origen": "Generada con IA para este storyboard; ilustración no fotorrealista."
+    },
+    {
+      "id": "scene_007",
+      "arc": "cierre_historia",
+      "duration_seconds": 9,
+      "narration": "Under the microscope, the algae showed up in the damaged coral from day three. Then they multiplied and gave energy back to their host.",
+      "on_screen_text": "Seven weeks",
+      "visual_description": "A coral fragment regaining red, orange and gold color from one branch across a formerly ivory-white surface, surrounded by deep blue water and textured reef stones.",
+      "image_prompt": "linocut print, two-tone indigo and ochre ink on cream paper, bold carved lines, visible gouge marks, high contrast, vertical 9:16 composition, no text + A coral fragment regaining red, orange and gold color from one branch across a formerly ivory-white surface, surrounded by deep blue water and textured reef stones.",
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "asset_filename": "frames/scene_007.jpg",
+      "asset_type": "image",
+      "motion": "kenburns_auto",
+      "animated_hook": false,
+      "ambiente": "oceano",
+      "sfx": [
+        "olas"
+      ],
+      "image_origen": "Generada con IA para este storyboard; ilustración no fotorrealista."
+    },
+    {
+      "id": "scene_008",
+      "arc": "reflexion_o_pregunta",
+      "duration_seconds": 9,
+      "narration": "But this is not a ready cure for reefs: the test was in the lab and depends on corals of the same genotype. A scalable way is still missing.",
+      "on_screen_text": "Not yet scalable",
+      "visual_description": "A marine laboratory with several small coral tanks, a scientist's gloved hands tending coral fragments, a few different coral colonies separated in glass compartments, conveying a controlled small-scale experiment.",
+      "image_prompt": "linocut print, two-tone indigo and ochre ink on cream paper, bold carved lines, visible gouge marks, high contrast, vertical 9:16 composition, no text + A marine laboratory with several small coral tanks, a scientist's gloved hands tending coral fragments, a few different coral colonies separated in glass compartments, conveying a controlled small-scale experiment.",
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "asset_filename": "frames/scene_008.jpg",
+      "asset_type": "image",
+      "motion": "kenburns_auto",
+      "animated_hook": false,
+      "ambiente": "oceano",
+      "sfx": [
+        "madera",
+        "reloj"
+      ],
+      "image_origen": "Generada con IA para este storyboard; ilustración no fotorrealista."
+    },
+    {
+      "id": "scene_009",
+      "arc": "reflexion_o_pregunta",
+      "duration_seconds": 9,
+      "narration": "The clue is not that coral is invincible: it is that recovery can start with one precise connection. Could we take that mechanism to the reef? That was Datos y ociosidades.",
+      "on_screen_text": "One connection changes everything",
+      "visual_description": "A broad underwater reef at dawn, richly colored coral branches in the foreground and a vast deep-blue reef fading into the distance, one small pale branch beginning to regain color, no text.",
+      "image_prompt": "linocut print, two-tone indigo and ochre ink on cream paper, bold carved lines, visible gouge marks, high contrast, vertical 9:16 composition, no text + A broad underwater reef at dawn, richly colored coral branches in the foreground and a vast deep-blue reef fading into the distance, one small pale branch beginning to regain color, no text.",
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "asset_filename": "frames/scene_009.jpg",
+      "asset_type": "image",
+      "motion": "kenburns_auto",
+      "animated_hook": false,
+      "ambiente": "oceano",
+      "sfx": [
+        "olas",
+        "gaviotas"
+      ],
+      "image_origen": "Generada con IA para este storyboard; ilustración no fotorrealista."
+    }
+  ],
+  "cortinilla_fuentes": {
+    "duration_seconds": 10,
+    "titulo": "Sources",
+    "aviso": "AI-generated images. Synthetic voice. Synthesized music and ambience.",
+    "bg_rgb": [
+      18,
+      29,
+      47
+    ],
+    "firma": "Datos y ociosidades · @datosyociosidadesEN"
+  },
+  "audio": {
+    "music_asset": "sintetico:arpegio",
+    "cama_musical": "arpegio",
+    "music_lufs": -27,
+    "ambiente_lufs": -28,
+    "music_license": "Prevista: sintetizada por scripts/cama_sonora.py (obra propia); no renderizada en este paquete.",
+    "sfx_license": "Efectos previstos desde Wikimedia Commons CC0/PD según scripts/sfx_manifest.json; descarga pendiente del pipeline.",
+    "music_protagonista": false
+  },
+  "export": {
+    "filename": "capsula.mp4",
+    "resolution": "1080x1920",
+    "fps": 30,
+    "video_codec": "h264",
+    "audio_codec": "aac",
+    "loudness_lufs": -14,
+    "plano_seconds": 5,
+    "subtitle_max_words": 3
+  },
+  "proveedor_imagenes": "ChatGPT image generation; 9 PNG preparados localmente a 1080x1920.",
+  "parece_real": false,
+  "canal": {
+    "nombre": "Datos y ociosidades",
+    "handle": "@datosyociosidadesEN",
+    "youtube_channel_id": "UCU2ZI-6pBJEr9aSFsF6bxLw"
+  },
+  "estado_produccion": "PAQUETE_PREPARADO_NO_RENDERIZADO_NO_PUBLICADO"
+}

@@ -1,0 +1,18 @@
+capsula_en 2026-10-25_corales-contacto
+voz: Kokoro am_adam lang en-us, speed 0.851 (calibrada: 69.6s @1.0 -> 77.5s @0.851; necesaria 77.7s)
+duracion: 87.77s (target 88s, diff -0.23s)
+PASA: formato 1080x1920 30fps 9:16 (1080x1920 30/1)
+PASA: duracion 60-95s (87.77s)
+PASA: duracion +-5s del target (87.77s vs target 88s, diff -0.23s)
+PASA: voz am_adam (no rechazada) (Kokoro am_adam, lang en-us)
+PASA: sin huecos de silencio >0.8s en narracion (gaps: [])
+PASA: loudness -14 LUFS +-1.5 (input_i -14.59 LUFS; ES publicada -14.46 LUFS; TP -0.60 dB)
+PASA: subtitulos en ingles sincronizados (76 eventos)
+PASA: cierre hablado en ingles (That was Datos y ociosidades.)
+PASA: fuentes reales (sin inventar) (3 fuentes del storyboard)
+PASA: frames = escenas (9 frames / 9 escenas)
+PASA: titulo en ingles verificado en cuadro (A TOUCH OF LIFE, caja amarilla + subrayado rojo, t=1s)
+PASA: on-screen en ingles verificado en cuadro (The algae travel, t=45s)
+PASA: cortinilla en ingles verificada en cuadro (Sources + @datosyociosidadesEN, t=84s)
+transcripcion faster-whisper base: ratio 0.978 (203 palabras guion / 202 oidas); unicas diferencias: Palumbi->Palembeye (nombre propio, artefacto ASR), a ready->already (frase aislada verificada correcta: "a ready cure" — artefacto de contexto del ASR), Datos->Dato's y ociosidades->Oceosidades (marca en espanol, esperado). "are able to fuse" se oye correcto (correccion del "can fuse"->"confuse" detectado en la primera version).
+VEREDICTO: PASA
