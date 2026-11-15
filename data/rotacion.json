@@ -384,5 +384,16 @@
     "estilo": "dibujo_cientifico_scratchboard",
     "origen": "propia",
     "slot": "19:00"
+  },
+  {
+    "fecha": "2026-11-21",
+    "project_id": "2026-11-09_dato-robot-ensambla-orbita",
+    "estructura": "comparacion",
+    "cama": "pizzicato",
+    "duracion": 88,
+    "tema": "Un robot ensambla una estructura en órbita",
+    "estilo": "neon_noir",
+    "origen": "propia",
+    "slot": "19:00"
   }
 ]

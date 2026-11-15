@@ -1,0 +1,84 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Sub,DejaVu Sans,72,&H00FFFFFF,&H00FFFFFF,&H00000000,&H64000000,-1,0,0,0,100,100,0,0,1,6,2,2,90,170,620,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.30,0:00:01.19,Sub,,0,0,0,,En órbita,
+Dialogue: 0,0:00:01.22,0:00:01.86,Sub,,0,0,0,,un robot une
+Dialogue: 0,0:00:01.87,0:00:03.08,Sub,,0,0,0,,piezas sin astronautas
+Dialogue: 0,0:00:03.09,0:00:03.94,Sub,,0,0,0,,a su lado.
+Dialogue: 0,0:00:04.16,0:00:05.07,Sub,,0,0,0,,Es la demostración
+Dialogue: 0,0:00:05.08,0:00:06.21,Sub,,0,0,0,,ASTRA de Caltech.
+Dialogue: 0,0:00:06.70,0:00:07.57,Sub,,0,0,0,,Una pieza sale
+Dialogue: 0,0:00:07.58,0:00:08.74,Sub,,0,0,0,,del dispensador;
+Dialogue: 0,0:00:08.89,0:00:09.50,Sub,,0,0,0,,el brazo la
+Dialogue: 0,0:00:09.51,0:00:10.17,Sub,,0,0,0,,alinea y la
+Dialogue: 0,0:00:10.18,0:00:10.84,Sub,,0,0,0,,fija a una
+Dialogue: 0,0:00:10.85,0:00:12.22,Sub,,0,0,0,,celosía que flota.
+Dialogue: 0,0:00:12.70,0:00:13.44,Sub,,0,0,0,,ASTRA salió de
+Dialogue: 0,0:00:13.45,0:00:14.27,Sub,,0,0,0,,Vandenberg,
+Dialogue: 0,0:00:14.28,0:00:15.17,Sub,,0,0,0,,California,
+Dialogue: 0,0:00:15.18,0:00:15.90,Sub,,0,0,0,,el 30 de
+Dialogue: 0,0:00:15.91,0:00:17.48,Sub,,0,0,0,,marzo de 2026,
+Dialogue: 0,0:00:17.49,0:00:18.26,Sub,,0,0,0,,rumbo a órbita
+Dialogue: 0,0:00:18.27,0:00:18.94,Sub,,0,0,0,,baja a bordo
+Dialogue: 0,0:00:18.95,0:00:20.27,Sub,,0,0,0,,de Vigoride 7.
+Dialogue: 0,0:00:20.76,0:00:21.38,Sub,,0,0,0,,La cofia del
+Dialogue: 0,0:00:21.39,0:00:22.22,Sub,,0,0,0,,cohete limita lo
+Dialogue: 0,0:00:22.23,0:00:22.71,Sub,,0,0,0,,que se puede
+Dialogue: 0,0:00:22.72,0:00:24.10,Sub,,0,0,0,,lanzar ya montado.
+Dialogue: 0,0:00:24.32,0:00:25.03,Sub,,0,0,0,,Una vía nueva
+Dialogue: 0,0:00:25.04,0:00:25.75,Sub,,0,0,0,,es construir la
+Dialogue: 0,0:00:25.76,0:00:26.73,Sub,,0,0,0,,estructura donde va
+Dialogue: 0,0:00:26.74,0:00:27.57,Sub,,0,0,0,,a operar.
+Dialogue: 0,0:00:28.06,0:00:28.98,Sub,,0,0,0,,Llevaba dos tramos
+Dialogue: 0,0:00:28.99,0:00:30.00,Sub,,0,0,0,,prefabricados,
+Dialogue: 0,0:00:30.01,0:00:30.71,Sub,,0,0,0,,un manipulador y
+Dialogue: 0,0:00:30.72,0:00:32.51,Sub,,0,0,0,,dispensadores con piezas.
+Dialogue: 0,0:00:32.73,0:00:33.87,Sub,,0,0,0,,En órbita desplegaron
+Dialogue: 0,0:00:33.88,0:00:35.20,Sub,,0,0,0,,esos dos tramos.
+Dialogue: 0,0:00:35.69,0:00:36.82,Sub,,0,0,0,,Después el manipulador
+Dialogue: 0,0:00:36.83,0:00:37.59,Sub,,0,0,0,,armó un tercer
+Dialogue: 0,0:00:37.60,0:00:38.43,Sub,,0,0,0,,tramo con tubos
+Dialogue: 0,0:00:38.44,0:00:39.37,Sub,,0,0,0,,de fibra compuesta
+Dialogue: 0,0:00:39.38,0:00:39.99,Sub,,0,0,0,,y uniones de
+Dialogue: 0,0:00:40.00,0:00:40.82,Sub,,0,0,0,,aluminio.
+Dialogue: 0,0:00:41.04,0:00:42.01,Sub,,0,0,0,,Desde tierra,
+Dialogue: 0,0:00:42.02,0:00:42.84,Sub,,0,0,0,,el equipo enviaba
+Dialogue: 0,0:00:42.85,0:00:44.01,Sub,,0,0,0,,comandos y revisaba
+Dialogue: 0,0:00:44.02,0:00:45.16,Sub,,0,0,0,,fotografías.
+Dialogue: 0,0:00:45.64,0:00:46.49,Sub,,0,0,0,,El diseño prevé
+Dialogue: 0,0:00:46.50,0:00:47.64,Sub,,0,0,0,,una película perforada
+Dialogue: 0,0:00:47.65,0:00:48.27,Sub,,0,0,0,,de Kapton en
+Dialogue: 0,0:00:48.28,0:00:49.36,Sub,,0,0,0,,redes reflectoras con
+Dialogue: 0,0:00:49.37,0:00:50.30,Sub,,0,0,0,,resortes.
+Dialogue: 0,0:00:50.52,0:00:51.05,Sub,,0,0,0,,Eso es el
+Dialogue: 0,0:00:51.06,0:00:51.62,Sub,,0,0,0,,plan,
+Dialogue: 0,0:00:51.63,0:00:52.37,Sub,,0,0,0,,no una antena
+Dialogue: 0,0:00:52.38,0:00:53.30,Sub,,0,0,0,,terminada.
+Dialogue: 0,0:00:53.78,0:00:54.92,Sub,,0,0,0,,El reflector planeado
+Dialogue: 0,0:00:54.93,0:00:56.43,Sub,,0,0,0,,mide 1 4
+Dialogue: 0,0:00:56.44,0:00:57.30,Sub,,0,0,0,,metros y requiere
+Dialogue: 0,0:00:57.31,0:00:58.77,Sub,,0,0,0,,once tramos La
+Dialogue: 0,0:00:58.78,0:00:59.81,Sub,,0,0,0,,demostración llegó al
+Dialogue: 0,0:00:59.82,0:01:01.34,Sub,,0,0,0,,tercero completar el
+Dialogue: 0,0:01:01.35,0:01:02.21,Sub,,0,0,0,,conjunto antes de
+Dialogue: 0,0:01:02.22,0:01:03.96,Sub,,0,0,0,,diciembre parece improbable
+Dialogue: 0,0:01:04.43,0:01:05.24,Sub,,0,0,0,,La sorpresa no
+Dialogue: 0,0:01:05.25,0:01:05.91,Sub,,0,0,0,,es una antena
+Dialogue: 0,0:01:05.92,0:01:07.04,Sub,,0,0,0,,gigante lista:
+Dialogue: 0,0:01:07.19,0:01:08.11,Sub,,0,0,0,,es construir por
+Dialogue: 0,0:01:08.12,0:01:08.88,Sub,,0,0,0,,módulos donde la
+Dialogue: 0,0:01:08.89,0:01:10.35,Sub,,0,0,0,,estructura funcionará.
+Dialogue: 0,0:01:10.57,0:01:11.45,Sub,,0,0,0,,¿Qué montarías allá
+Dialogue: 0,0:01:11.46,0:01:12.19,Sub,,0,0,0,,arriba?
+Dialogue: 0,0:01:12.44,0:01:13.28,Sub,,0,0,0,,Esto fue Datos
+Dialogue: 0,0:01:13.29,0:01:14.44,Sub,,0,0,0,,y ociosidades.

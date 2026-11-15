@@ -7,7 +7,7 @@
   "language": "es-MX",
   "aspect_ratio": "9:16",
   "target_duration_seconds": 88,
-  "estructura": "historia",
+  "estructura": "comparacion",
   "audience": "Público general interesado en ciencia y exploración espacial",
   "occasion": "Actualidad científica; slot 23:30 America/Mexico_City del 9-nov-2026",
   "resumen": "La demostración ASTRA de Caltech, dentro de NOM4D de DARPA, ensambló en órbita el tercer tramo de un reflector previsto de once. Prueba ensamblaje modular en el sitio de operación, con supervisión desde tierra; no terminó la antena de 1.4 m.",
@@ -20,7 +20,7 @@
     "payoff": "El logro es demostrar construcción modular donde la estructura operará, no haber terminado ya una antena gigante."
   },
   "trend_source": {
-    "termino": "Demostración ASTRA de ensamblaje robótico en órbita",
+    "termino": "ensamblaje robótico en órbita",
     "fecha_publicacion": "2026-11-05",
     "url": "https://www.caltech.edu/about/news/caltech-robotic-space-demo-successfully-builds-in-space"
   },
@@ -66,7 +66,7 @@
   "sources": [
     {
       "id": "SRC-001",
-      "cita_corta": "California Institute of Technology. Caltech Robotic Space Demo Successfully Builds in Space. 5 nov 2026.",
+      "cita_corta": "Caltech (5-nov-2026). Caltech robotic space demo successfully builds in space.",
       "url": "https://www.caltech.edu/about/news/caltech-robotic-space-demo-successfully-builds-in-space",
       "doi": null,
       "accessed": "2026-11-09",
@@ -83,7 +83,7 @@
     },
     {
       "id": "SRC-002",
-      "cita_corta": "DARPA. NOM4D program demonstrates automated in-space assembly. 5 nov 2026.",
+      "cita_corta": "DARPA (5-nov-2026). NOM4D program demonstrates automated in-space assembly.",
       "url": "https://www.darpa.mil/news/2026/nom4d-program-demonstrates-automated-in-space-assembly",
       "doi": null,
       "accessed": "2026-11-09",
@@ -98,7 +98,7 @@
     },
     {
       "id": "SRC-003",
-      "cita_corta": "NASA Technical Reports Server. Appendix A — Launch Sites. Coordenadas aproximadas de Vandenberg.",
+      "cita_corta": "NASA NTRS. Appendix A: Launch Sites (pin aproximado de Vandenberg).",
       "url": "https://ntrs.nasa.gov/api/citations/19910012870/downloads/19910012870.pdf",
       "doi": null,
       "accessed": "2026-11-09",
@@ -114,14 +114,12 @@
       "id": "scene_001",
       "arc": "hook_medias_res",
       "duration_seconds": 8,
-      "narration": "En órbita, un robot une piezas sin astronautas a su lado. Hoy: la demostración ASTRA de Caltech.",
+      "narration": "En órbita, un robot une piezas sin astronautas a su lado. Es la demostración ASTRA de Caltech.",
       "on_screen_text": "Un robot construyó en órbita",
       "visual_description": "PORTADA vertical 9:16: silueta del manipulador uniendo un tubo a una celosía sobre la Tierra; espacio vacío superior/central para título grande en caja crema/amarilla con subrayado rojo (tipografía en post). Sin subtítulo encima.",
-      "image_prompt": "neo-noir digital painting, dark rainy night, glowing magenta and cyan neon rim light, strong silhouette of a single subject, wet reflections, minimal background, painterly not photorealistic, vertical 9:16, no text, bold cover composition of robotic manipulator joining a strut to a floating orbital truss above Earth crescent, deep space black with magenta cyan neon rim light, clear empty central title area for postproduction typography, heroic single subject, coherent neon noir magenta cyan violet black palette, consistent ASTRA machine silhouette, no text, no watermarks",
-      "ambiente": "Silencio espacial con zumbido mecánico tenue",
-      "sfx": [
-        "clic metálico suave"
-      ],
+      "image_prompt": "neo-noir digital painting, dark rainy night, glowing magenta and cyan neon rim light, strong silhouette of a single subject, wet reflections, minimal background, painterly not photorealistic, vertical 9:16, no text, bold cover composition of robotic manipulator joining a strut to a floating orbital truss above Earth crescent, deep space black with magenta cyan neon rim light, clear empty central title area for postproduction typography, heroic single subject, coherent neon noir magenta cyan violet black palette, consistent ASTRA machine silhouette, no text, no watermarks, no letters, no numbers, no labels, no logos, no people with glasses",
+      "ambiente": "silencio",
+      "sfx": [],
       "source_ids": [
         "SRC-001"
       ],
@@ -132,21 +130,19 @@
       "causal_bridge_from_previous": "Apertura.",
       "question_state": "Se ve el ensamblaje; falta contexto.",
       "reason_to_continue": "El viaje explica el origen.",
-      "new_information": "ASTRA ensambla en órbita sin astronautas junto al mecanismo."
+      "new_information": "ASTRA ensambla en órbita sin astronautas junto al mecanismo.",
+      "asset_filename": "frames/scene_001.jpg"
     },
     {
       "id": "scene_002",
       "arc": "hook_medias_res",
       "duration_seconds": 9,
-      "narration": "Una pieza sale del dispensador; el brazo la alinea y la fija a una celosía que flota. El ensamblaje ocurre allá arriba.",
+      "narration": "Una pieza sale del dispensador; el brazo la alinea y la fija a una celosía que flota.",
       "on_screen_text": "Pieza a celosía",
       "visual_description": "Macro del dispensador soltando un tubo; el brazo lo alinea hacia la celosía; Tierra desenfocada al fondo; sin astronautas.",
-      "image_prompt": "neo-noir digital painting, dark rainy night, glowing magenta and cyan neon rim light, strong silhouette of a single subject, wet reflections, minimal background, painterly not photorealistic, vertical 9:16, no text, macro shot of motorized dispenser releasing a composite tube into a robotic gripper aligning it to a floating truss, Earth soft in background, magenta cyan neon rim light, deep space, single bold subject, coherent neon noir magenta cyan violet black palette, consistent ASTRA machine silhouette, no text, no watermarks",
-      "ambiente": "Deslizamiento mecánico bajo",
-      "sfx": [
-        "deslizamiento mecánico",
-        "clic de unión"
-      ],
+      "image_prompt": "neo-noir digital painting, dark rainy night, glowing magenta and cyan neon rim light, strong silhouette of a single subject, wet reflections, minimal background, painterly not photorealistic, vertical 9:16, no text, macro shot of motorized dispenser releasing a composite tube into a robotic gripper aligning it to a floating truss, Earth soft in background, magenta cyan neon rim light, deep space, single bold subject, coherent neon noir magenta cyan violet black palette, consistent ASTRA machine silhouette, no text, no watermarks, no letters, no numbers, no labels, no logos, no people with glasses",
+      "ambiente": "silencio",
+      "sfx": [],
       "source_ids": [
         "SRC-001"
       ],
@@ -157,20 +153,19 @@
       "causal_bridge_from_previous": "Tras el título, zoom a la unión concreta.",
       "question_state": "Cómo llegó ese equipo arriba.",
       "reason_to_continue": "El lanzamiento da el origen.",
-      "new_information": "El manipulador toma piezas de un dispensador y las une en microgravedad."
+      "new_information": "El manipulador toma piezas de un dispensador y las une en microgravedad.",
+      "asset_filename": "frames/scene_002.jpg"
     },
     {
       "id": "scene_003",
       "arc": "desarrollo",
       "duration_seconds": 8,
-      "narration": "ASTRA salió de Vandenberg, California, el 30 de marzo de 2026. Viajó a órbita baja a bordo de Vigoride 7, en la misión Transporter-16.",
+      "narration": "ASTRA salió de Vandenberg, California, el 30 de marzo de 2026, rumbo a órbita baja a bordo de Vigoride 7.",
       "on_screen_text": "Vandenberg → órbita baja",
       "visual_description": "Mapa sobrio costa central de California con un pin aproximado en Vandenberg; arco ilustrativo hacia órbita (no trayectoria medida).",
-      "image_prompt": "neo-noir digital painting, dark rainy night, glowing magenta and cyan neon rim light, strong silhouette of a single subject, wet reflections, minimal background, painterly not photorealistic, vertical 9:16, no text, minimal neo-noir map of California central coast with a single glowing cyan pin at Vandenberg, illustrative magenta arc toward orbit, dark background, not a measured trajectory, single bold subject, coherent neon noir magenta cyan violet black palette, consistent ASTRA machine silhouette, no text, no watermarks",
-      "ambiente": "Pulso electrónico breve",
-      "sfx": [
-        "pulso de despegue suave"
-      ],
+      "image_prompt": "neo-noir digital painting, glowing magenta and cyan neon rim light, strong silhouette of a single subject, minimal background, painterly not photorealistic, vertical 9:16, no text, the California coastline at night seen from high altitude, a single glowing cyan light point on the coast and a thin magenta arc rising from it toward orbit, deep black space above, coherent magenta cyan violet black palette, no letters, no numbers, no labels, no logos, no people with glasses",
+      "ambiente": "silencio",
+      "sfx": [],
       "source_ids": [
         "SRC-001",
         "SRC-003"
@@ -186,21 +181,22 @@
       "capa": {
         "tipo": "mapa",
         "region": [
-          34.3,
-          -120.9,
-          34.8,
-          -120.3
+          -130,
+          -105,
+          25,
+          45
         ],
         "puntos": [
           {
-            "nombre": "Vandenberg Space Force Base (pin aproximado de la base, no posición orbital)",
-            "lat": 34.5833,
-            "lon": -120.6333
+            "nombre": "Vandenberg",
+            "lon": -120.63,
+            "lat": 34.58
           }
         ],
-        "titulo": "Vandenberg, California — lanzamiento 30 mar 2026; no es la ubicación orbital de ASTRA",
-        "fuente": "NASA NTRS Launch Sites (1991): coordenadas aproximadas Vandenberg 34°35′ N, 120°38′ W (34.5833, -120.6333). Pin general de base, no pad."
-      }
+        "titulo": "Lanzamiento: Vandenberg, California (30 mar 2026)",
+        "fuente": "NASA NTRS: coordenada aproximada de la base, no posición orbital. Base: Natural Earth 110m (dominio público)."
+      },
+      "asset_filename": "frames/scene_003.jpg"
     },
     {
       "id": "scene_004",
@@ -209,11 +205,9 @@
       "narration": "La cofia del cohete limita lo que se puede lanzar ya montado. Una vía nueva es construir la estructura donde va a operar.",
       "on_screen_text": "El límite: el tamaño",
       "visual_description": "Comparación: reflector enorme vs cofia compacta; piezas modulares separadas alineándose.",
-      "image_prompt": "neo-noir digital painting, dark rainy night, glowing magenta and cyan neon rim light, strong silhouette of a single subject, wet reflections, minimal background, painterly not photorealistic, vertical 9:16, no text, oversized space reflector silhouette beside a compact rocket fairing, modular truss sections lined up as building kit, deep space neon rim light, single bold central comparison, coherent neon noir magenta cyan violet black palette, consistent ASTRA machine silhouette, no text, no watermarks",
-      "ambiente": "Pulso de taller",
-      "sfx": [
-        "golpe seco al cerrar cofia"
-      ],
+      "image_prompt": "neo-noir digital painting, dark rainy night, glowing magenta and cyan neon rim light, strong silhouette of a single subject, wet reflections, minimal background, painterly not photorealistic, vertical 9:16, no text, oversized space reflector silhouette beside a compact rocket fairing, modular truss sections lined up as building kit, deep space neon rim light, single bold central comparison, coherent neon noir magenta cyan violet black palette, consistent ASTRA machine silhouette, no text, no watermarks, no letters, no numbers, no labels, no logos, no people with glasses",
+      "ambiente": "silencio",
+      "sfx": [],
       "source_ids": [
         "SRC-001",
         "SRC-002"
@@ -225,21 +219,19 @@
       "causal_bridge_from_previous": "Ya en órbita, la pregunta es por qué construir allí.",
       "question_state": "Cómo se resuelve el volumen.",
       "reason_to_continue": "El kit del payload muestra la respuesta.",
-      "new_information": "Tercera vía: unir piezas donde la estructura operará."
+      "new_information": "Tercera vía: unir piezas donde la estructura operará.",
+      "asset_filename": "frames/scene_004.jpg"
     },
     {
       "id": "scene_005",
       "arc": "desarrollo",
       "duration_seconds": 9,
-      "narration": "El payload llevaba dos tramos prefabricados, un manipulador y dispensadores con piezas. En órbita liberaron los seguros y desplegaron esos dos tramos.",
+      "narration": "Llevaba dos tramos prefabricados, un manipulador y dispensadores con piezas. En órbita desplegaron esos dos tramos.",
       "on_screen_text": "Dos tramos y un brazo",
       "visual_description": "Vista isométrica/cenital del payload abierto: dos bays prefabricados, manipulador, dispensadores; sin astronautas.",
-      "image_prompt": "neo-noir digital painting, dark rainy night, glowing magenta and cyan neon rim light, strong silhouette of a single subject, wet reflections, minimal background, painterly not photorealistic, vertical 9:16, no text, top-down isometric view of compact orbital payload box opened, two prebuilt truss bays, gantry-like manipulator and motorized parts dispensers, magenta cyan neon accents, deep space, single bold subject, coherent neon noir magenta cyan violet black palette, consistent ASTRA machine silhouette, no text, no watermarks",
-      "ambiente": "Vibración mecánica controlada",
-      "sfx": [
-        "liberación de seguros",
-        "dos piezas desplegándose"
-      ],
+      "image_prompt": "neo-noir digital painting, dark rainy night, glowing magenta and cyan neon rim light, strong silhouette of a single subject, wet reflections, minimal background, painterly not photorealistic, vertical 9:16, no text, top-down isometric view of compact orbital payload box opened, two prebuilt truss bays, gantry-like manipulator and motorized parts dispensers, magenta cyan neon accents, deep space, single bold subject, coherent neon noir magenta cyan violet black palette, consistent ASTRA machine silhouette, no text, no watermarks, no letters, no numbers, no labels, no logos, no people with glasses",
+      "ambiente": "silencio",
+      "sfx": [],
       "source_ids": [
         "SRC-001"
       ],
@@ -250,7 +242,8 @@
       "causal_bridge_from_previous": "El límite de volumen obliga a un kit compacto.",
       "question_state": "Qué se construyó de verdad.",
       "reason_to_continue": "El tercer tramo es el hallazgo.",
-      "new_information": "Dos tramos prefabricados + manipulador + dispensadores; despliegue de los dos."
+      "new_information": "Dos tramos prefabricados + manipulador + dispensadores; despliegue de los dos.",
+      "asset_filename": "frames/scene_005.jpg"
     },
     {
       "id": "scene_006",
@@ -259,12 +252,9 @@
       "narration": "Después el manipulador armó un tercer tramo con tubos de fibra compuesta y uniones de aluminio. Desde tierra, el equipo enviaba comandos y revisaba fotografías.",
       "on_screen_text": "El tercer tramo",
       "visual_description": "Manipulador colocando tubos compuestos y uniones de aluminio en placa de ensamblaje; inserto pequeño de sala de control en tierra (pantallas/comandos), sin científica recurrente.",
-      "image_prompt": "neo-noir digital painting, dark rainy night, glowing magenta and cyan neon rim light, strong silhouette of a single subject, wet reflections, minimal background, painterly not photorealistic, vertical 9:16, no text, robotic gantry manipulator assembling a third truss bay from composite tubes and aluminum joints on an assembly plate in orbit, small inset of ground control screens sending commands, neon rim light, deep space, no recurring scientist character, coherent neon noir magenta cyan violet black palette, consistent ASTRA machine silhouette, no text, no watermarks",
-      "ambiente": "Ambiente mecánico rítmico",
-      "sfx": [
-        "tubo encajando",
-        "unión asegurada"
-      ],
+      "image_prompt": "neo-noir digital painting, dark rainy night, glowing magenta and cyan neon rim light, strong silhouette of a single subject, wet reflections, minimal background, painterly not photorealistic, vertical 9:16, no text, robotic gantry manipulator assembling a third truss bay from composite tubes and aluminum joints on an assembly plate in orbit, small inset of ground control screens sending commands, neon rim light, deep space, no recurring scientist character, coherent neon noir magenta cyan violet black palette, consistent ASTRA machine silhouette, no text, no watermarks, no letters, no numbers, no labels, no logos, no people with glasses",
+      "ambiente": "silencio",
+      "sfx": [],
       "source_ids": [
         "SRC-001",
         "SRC-002"
@@ -276,20 +266,19 @@
       "causal_bridge_from_previous": "Con el módulo abierto, el manipulador puede armar la siguiente sección.",
       "question_state": "Aún no es antena completa.",
       "reason_to_continue": "La superficie reflectora explica el para qué.",
-      "new_information": "Tercer tramo ensamblado; comandos y fotos desde tierra."
+      "new_information": "Tercer tramo ensamblado; comandos y fotos desde tierra.",
+      "asset_filename": "frames/scene_006.jpg"
     },
     {
       "id": "scene_007",
       "arc": "desarrollo",
       "duration_seconds": 8,
-      "narration": "El diseño prevé una película perforada de Kapton en dos redes reflectoras con resortes: menos pretensión que una malla metálica. Eso es el plan, no una antena terminada.",
+      "narration": "El diseño prevé una película perforada de Kapton en redes reflectoras con resortes. Eso es el plan, no una antena terminada.",
       "on_screen_text": "Película Kapton prevista",
       "visual_description": "Diagrama de diseño: película Kapton perforada y dos redes tensadas con resortes sobre celosía; marcado visualmente como plan, no como instalado.",
-      "image_prompt": "neo-noir digital painting, dark rainy night, glowing magenta and cyan neon rim light, strong silhouette of a single subject, wet reflections, minimal background, painterly not photorealistic, vertical 9:16, no text, design-diagram style perforated Kapton reflective film forming two spring-tensioned cable nets on a truss, labeled visually as planned concept not completed install, neon noir schematic, single bold subject, coherent neon noir magenta cyan violet black palette, consistent ASTRA machine silhouette, no text, no watermarks",
-      "ambiente": "Tono fino aireado",
-      "sfx": [
-        "tensión elástica breve"
-      ],
+      "image_prompt": "neo-noir digital painting, glowing magenta and cyan neon rim light, strong silhouette of a single subject, minimal background, painterly not photorealistic, vertical 9:16, no text, a perforated golden reflective film stretched across two spring-tensioned cable nets attached to a floating truss, rendered semi-transparent and ghostly as a planned concept, deep space, coherent magenta cyan violet black palette, no letters, no numbers, no labels, no logos, no people with glasses",
+      "ambiente": "silencio",
+      "sfx": [],
       "source_ids": [
         "SRC-001"
       ],
@@ -300,7 +289,8 @@
       "causal_bridge_from_previous": "El tercer tramo es parte de un reflector que necesita superficie ligera.",
       "question_state": "Escala real del avance.",
       "reason_to_continue": "11 tramos fijan el límite.",
-      "new_information": "Kapton perforado + resortes = diseño previsto; menos pretensión que malla metálica."
+      "new_information": "Kapton perforado + resortes = diseño previsto; menos pretensión que malla metálica.",
+      "asset_filename": "frames/scene_007.jpg"
     },
     {
       "id": "scene_008",
@@ -309,11 +299,9 @@
       "narration": "El reflector planeado mide 1.4 metros y requiere once tramos. La demostración llegó al tercero; completar el conjunto antes de diciembre parece improbable.",
       "on_screen_text": "3 de 11 tramos",
       "visual_description": "Gráfico de once módulos: dos prefabricados + uno ensamblado destacados; ocho atenuados como plan.",
-      "image_prompt": "neo-noir digital painting, dark rainy night, glowing magenta and cyan neon rim light, strong silhouette of a single subject, wet reflections, minimal background, painterly not photorealistic, vertical 9:16, no text, diagram of eleven modular truss bays in a ring, two prefabricated and one assembled glowing cyan, eight remaining ghosted as plan, 1.4 meter scale hint, neon noir infographic, single bold subject, coherent neon noir magenta cyan violet black palette, consistent ASTRA machine silhouette, no text, no watermarks",
-      "ambiente": "Música baja para el matiz",
-      "sfx": [
-        "tres pulsos suaves"
-      ],
+      "image_prompt": "neo-noir digital painting, glowing magenta and cyan neon rim light, strong silhouette of a single subject, minimal background, painterly not photorealistic, vertical 9:16, no text, a ring of eleven truss segments floating in orbit, three of them solid and glowing cyan, the other eight drawn as faint ghosted transparent outlines, Earth below, coherent magenta cyan violet black palette, no letters, no numbers, no labels, no logos, no people with glasses",
+      "ambiente": "silencio",
+      "sfx": [],
       "source_ids": [
         "SRC-001",
         "SRC-002"
@@ -328,23 +316,22 @@
       "new_information": "1.4 m y 11 tramos; improbable completar antes de diciembre.",
       "capa": {
         "tipo": "dato",
-        "valor": "2 prefabricados + 1 ensamblado en órbita; 11 previstos; Ø 1.4 m",
-        "etiqueta": "Avance ASTRA vs diseño completo",
-        "fuente": "Caltech 5-nov-2026: dos bays prefabricados desplegados, ensamblaje del tercero; truss completo = once bays; misión termina en diciembre."
-      }
+        "valor": "3 de 11",
+        "etiqueta": "tramos armados del reflector previsto (Ø 1.4 m)",
+        "fuente": "Caltech, 5-nov-2026"
+      },
+      "asset_filename": "frames/scene_008.jpg"
     },
     {
       "id": "scene_009",
       "arc": "reflexion_o_pregunta",
       "duration_seconds": 11,
-      "narration": "La sorpresa no es una antena gigante lista: es poder construir por módulos donde la estructura funcionará. ¿Qué montarías allá arriba? Esto fue Datos y ociosidades.",
+      "narration": "La sorpresa no es una antena gigante lista: es construir por módulos donde la estructura funcionará. ¿Qué montarías allá arriba? Esto fue Datos y ociosidades.",
       "on_screen_text": "Construir donde funcionará",
       "visual_description": "Celosía parcial sobre la Tierra; siluetas tenues de antena/telescopio futuros marcadas como posibilidades, no logros.",
-      "image_prompt": "neo-noir digital painting, dark rainy night, glowing magenta and cyan neon rim light, strong silhouette of a single subject, wet reflections, minimal background, painterly not photorealistic, vertical 9:16, no text, small assembled truss section floating above Earth with faint future antenna and telescope silhouettes marked as possibilities, magenta cyan neon rim light, deep space, hopeful single subject, wide establishing shot, coherent neon noir magenta cyan violet black palette, consistent ASTRA machine silhouette, no text, no watermarks",
-      "ambiente": "Cierre musical breve ascendente",
-      "sfx": [
-        "destello suave"
-      ],
+      "image_prompt": "neo-noir digital painting, dark rainy night, glowing magenta and cyan neon rim light, strong silhouette of a single subject, wet reflections, minimal background, painterly not photorealistic, vertical 9:16, no text, small assembled truss section floating above Earth with faint future antenna and telescope silhouettes marked as possibilities, magenta cyan neon rim light, deep space, hopeful single subject, wide establishing shot, coherent neon noir magenta cyan violet black palette, consistent ASTRA machine silhouette, no text, no watermarks, no letters, no numbers, no labels, no logos, no people with glasses",
+      "ambiente": "silencio",
+      "sfx": [],
       "source_ids": [
         "SRC-001",
         "SRC-002"
@@ -356,30 +343,31 @@
       "causal_bridge_from_previous": "El tope de once tramos muestra que el logro es el método.",
       "question_state": "Respondida: sí se puede armar una sección en órbita con supervisión terrestre.",
       "reason_to_continue": "Cierre.",
-      "new_information": "Valor demostrado: construir por partes donde operará."
+      "new_information": "Valor demostrado: construir por partes donde operará.",
+      "asset_filename": "frames/scene_009.jpg"
     }
   ],
   "cortinilla_fuentes": {
-    "duration_seconds": 6,
+    "duration_seconds": 13,
     "titulo": "Fuentes",
-    "aviso": "Caltech 5-nov-2026; DARPA NOM4D 5-nov-2026; pin Vandenberg aproximado (NASA NTRS).",
-    "firma": "Datos y ociosidades",
-    "source_ids": [
-      "SRC-001",
-      "SRC-002",
-      "SRC-003"
-    ]
+    "aviso": "Imágenes generadas con IA. Voz sintética. Música sintetizada.",
+    "firma": "Datos y ociosidades · @datosyociosidades"
   },
   "audio": {
-    "music_asset": null,
-    "music_plan": "Cama sintética neo-noir de pulso bajo; debajo de la narración. Solo intención sonora.",
-    "music_license": null
+    "music_asset": "sintetico:pizzicato",
+    "cama_musical": "pizzicato",
+    "music_lufs": -27,
+    "ambiente_lufs": -30
   },
   "export": {
+    "filename": "capsula.mp4",
     "resolution": "1080x1920",
     "fps": 30,
-    "plano_seconds": 5,
-    "render_status": "NOT_GENERATED"
+    "codec_video": "h264",
+    "codec_audio": "aac",
+    "loudness_lufs": -14,
+    "subtitle_max_words": 3,
+    "plano_seconds": 5
   },
   "publicacion": {
     "status": "PENDIENTE_DECISION_GROK",
@@ -446,5 +434,11 @@
     ],
     "reviewer_role": "auditor_capcot_independiente",
     "factual_review_note": "Contraste adicional Caltech/DARPA WebFetch 9-nov-2026 (no sustituye la lectura en frío)."
-  }
+  },
+  "keywords": [
+    "espacio",
+    "robótica",
+    "ingeniería"
+  ],
+  "nota_produccion": "Lote 19:00 del 14-nov-2026 (Grok Bot). Guion original sin cambios (QA narrativo PASS 9-nov). Mapa y dato corregidos al formato de capas_datos.py. Original en storyboard_stock.json."
 }

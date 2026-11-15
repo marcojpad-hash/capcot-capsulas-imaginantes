@@ -1,0 +1,38 @@
+{
+ "project_id": "2026-11-09_dato-robot-ensambla-orbita",
+ "musica": {
+  "cama": "pizzicato",
+  "origen": "síntesis propia (scripts/cama_sonora.py, numpy)",
+  "licencia": "obra propia de Datos y ociosidades",
+  "generada_por_ia": false
+ },
+ "sfx": {
+  "silencio": {
+   "origen": "síntesis propia (cama_sonora.py)",
+   "licencia": "obra propia"
+  }
+ },
+ "imagenes": {
+  "origen": "generadas con IA (ilustración no realista)",
+  "estilo": "neon_noir",
+  "realista": false
+ },
+ "voz": {
+  "motor": "Microsoft Edge TTS",
+  "voz": "es-MX-JorgeNeural",
+  "nota": "voz sintética; no imita a una persona real"
+ },
+ "capas_datos": {
+  "tipos": [
+   "mapa",
+   "dato"
+  ],
+  "mapa_base": "Natural Earth 110m (dominio público)",
+  "render": "matplotlib (propio)"
+ },
+ "fuentes_datos": [
+  "https://www.caltech.edu/about/news/caltech-robotic-space-demo-successfully-builds-in-space",
+  "https://www.darpa.mil/news/2026/nom4d-program-demonstrates-automated-in-space-assembly",
+  "https://ntrs.nasa.gov/api/citations/19910012870/downloads/19910012870.pdf"
+ ]
+}
