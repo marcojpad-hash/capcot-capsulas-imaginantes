@@ -1,0 +1,241 @@
+{
+  "project_id": "2026-11-01_mxenes-ia-descubrimiento_en",
+  "serie": "Datos y ociosidades",
+  "title": "AI finds forgotten 2D materials",
+  "titulo": "AI finds materials?",
+  "language": "en-US",
+  "aspect_ratio": "9:16",
+  "target_duration_seconds": 82,
+  "estructura": "pregunta",
+  "estilo_id": "pixel_art",
+  "estilo_visual": "Pixel art",
+  "trend_source": {
+    "tipo": "noticia_cientifica",
+    "medio": "Science / Linköping University",
+    "url": "https://liu.se/en/news-item/gomda-och-glomda-2d-material-upptacks-med-ai",
+    "estudio_doi": "10.1126/science.aeh5957",
+    "fecha_publicacion": "2026-10-29",
+    "termino": "MXenes AI discovery",
+    "fecha_consulta": "2026-11-01"
+  },
+  "voice": {
+    "engine": "kokoro-onnx",
+    "voice_id": "am_adam",
+    "lang": "en-us",
+    "speed": "tuned per capsule (see RELEVO_EN.md)"
+  },
+  "sources": [
+    {
+      "id": "SRC-001",
+      "cita_corta": "Shamshirgar et al. (2026). Science 394, eaeh5957.",
+      "doi": "10.1126/science.aeh5957",
+      "url": "https://doi.org/10.1126/science.aeh5957",
+      "accessed": "2026-11-01",
+      "supports": [
+        "Machine learning-assisted mining found 33 previously synthesized but unrecognized MXene candidates",
+        "Synthesized seven multilayer MXenes with rapid self-propagating method in minutes",
+        "Realized 11 new rare earth-based MXenes"
+      ],
+      "ref_display": "Shamshirgar et al., Science 2026"
+    },
+    {
+      "id": "SRC-002",
+      "cita_corta": "Linköping University news (2026). Hidden MXenes with AI.",
+      "url": "https://liu.se/en/news-item/gomda-och-glomda-2d-material-upptacks-med-ai",
+      "accessed": "2026-11-01",
+      "supports": [
+        "Researchers at Linköping University used AI and supercomputers",
+        "Project unofficially called Treasure Chest Project",
+        "MXenes have enormous surface area relative to weight"
+      ],
+      "ref_display": "LiU news 29 Oct 2026"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_001",
+      "arc": "hook_medias_res",
+      "duration_seconds": 9.5,
+      "narration": "Materials just atoms thick, hidden in old databases? A team in Sweden used artificial intelligence to find them and rediscover them.",
+      "on_screen_text": "AI finds materials?",
+      "visual_description": "pixel art scientist character at a retro computer screen showing glowing layered crystal structures",
+      "image_prompt": "16-bit pixel art scene, limited retro palette, crisp pixels, side view video game style, dithering, vertical 9:16, no text + pixel art scientist character at a retro computer screen showing glowing layered crystal structures",
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "asset_filename": "frames/scene_001.jpg",
+      "sfx": [
+        "silencio"
+      ],
+      "ambiente": "viento"
+    },
+    {
+      "id": "scene_002",
+      "arc": "desarrollo",
+      "duration_seconds": 10.0,
+      "narration": "In Linköping, researchers looked for em-ex-eens: sheets of metal and carbon or nitrogen, just a few atomic layers thick. They were discovered in twenty eleven.",
+      "on_screen_text": "Linköping, Sweden",
+      "visual_description": "pixel art university building with Swedish flag and a glowing 2D material sheet floating",
+      "image_prompt": "16-bit pixel art scene, limited retro palette, crisp pixels, side view video game style, dithering, vertical 9:16, no text + pixel art university building with Swedish flag and a glowing 2D material sheet floating",
+      "source_ids": [
+        "SRC-002"
+      ],
+      "asset_filename": "frames/scene_002.jpg",
+      "sfx": [
+        "campanas"
+      ],
+      "ambiente": "viento",
+      "capa": {
+        "tipo": "mapa",
+        "region": [
+          10,
+          20,
+          55,
+          62
+        ],
+        "puntos": [
+          {
+            "nombre": "Linköping",
+            "lon": 15.58,
+            "lat": 58.4
+          }
+        ],
+        "titulo": "Linköping University",
+        "fuente": "LiU · Natural Earth"
+      }
+    },
+    {
+      "id": "scene_003",
+      "arc": "desarrollo",
+      "duration_seconds": 10.5,
+      "narration": "The artificial intelligence scanned crystallographic databases and found thirty-three em-ex-eens already synthesized but not recognized as such by the scientific community.",
+      "on_screen_text": "33 hidden",
+      "visual_description": "pixel art AI neural net scanning old database folders revealing hidden crystal icons",
+      "image_prompt": "16-bit pixel art scene, limited retro palette, crisp pixels, side view video game style, dithering, vertical 9:16, no text + pixel art AI neural net scanning old database folders revealing hidden crystal icons",
+      "source_ids": [
+        "SRC-001"
+      ],
+      "asset_filename": "frames/scene_003.jpg",
+      "sfx": [
+        "silencio"
+      ],
+      "ambiente": "viento",
+      "capa": {
+        "tipo": "dato",
+        "valor": "33",
+        "etiqueta": "MXenes no reconocidos",
+        "fuente": "Shamshirgar et al., Science 2026"
+      }
+    },
+    {
+      "id": "scene_004",
+      "arc": "desarrollo",
+      "duration_seconds": 10.0,
+      "narration": "Inspired by those findings, they created eleven new ones. Some use rare earths like praseodymium or neodymium and can be magnetic, widening the possibilities.",
+      "on_screen_text": "11 new ones",
+      "visual_description": "pixel art lab with glowing new layered materials and rare earth symbols",
+      "image_prompt": "16-bit pixel art scene, limited retro palette, crisp pixels, side view video game style, dithering, vertical 9:16, no text + pixel art lab with glowing new layered materials and rare earth symbols",
+      "source_ids": [
+        "SRC-001"
+      ],
+      "asset_filename": "frames/scene_004.jpg",
+      "sfx": [
+        "pluma"
+      ],
+      "ambiente": "viento"
+    },
+    {
+      "id": "scene_005",
+      "arc": "desarrollo",
+      "duration_seconds": 10.5,
+      "narration": "They also invented a fast synthesis method: self-propagating high-temperature synthesis. It needs no prolonged external heating and finishes in minutes.",
+      "on_screen_text": "Synthesis in minutes",
+      "visual_description": "pixel art self-propagating reaction flame creating layered crystal in a simple reactor",
+      "image_prompt": "16-bit pixel art scene, limited retro palette, crisp pixels, side view video game style, dithering, vertical 9:16, no text + pixel art self-propagating reaction flame creating layered crystal in a simple reactor",
+      "source_ids": [
+        "SRC-001"
+      ],
+      "asset_filename": "frames/scene_005.jpg",
+      "sfx": [
+        "silencio"
+      ],
+      "ambiente": "viento"
+    },
+    {
+      "id": "scene_006",
+      "arc": "cierre_historia",
+      "duration_seconds": 10.0,
+      "narration": "em-ex-eens have an enormous surface for their weight. One gram can hold huge areas for chemical reactions, useful in energy or water purification.",
+      "on_screen_text": "Enormous surface",
+      "visual_description": "pixel art microscopic view of stacked layers with reaction particles bouncing",
+      "image_prompt": "16-bit pixel art scene, limited retro palette, crisp pixels, side view video game style, dithering, vertical 9:16, no text + pixel art microscopic view of stacked layers with reaction particles bouncing",
+      "source_ids": [
+        "SRC-002"
+      ],
+      "asset_filename": "frames/scene_006.jpg",
+      "sfx": [
+        "silencio"
+      ],
+      "ambiente": "viento"
+    },
+    {
+      "id": "scene_007",
+      "arc": "cierre_historia",
+      "duration_seconds": 9.0,
+      "narration": "The team called the project Treasure Chest: databases and old literature are treasure chests if you know how to open them with artificial intelligence.",
+      "on_screen_text": "Treasure Chest",
+      "visual_description": "pixel art treasure chest opening to reveal glowing 2D material sheets and data crystals",
+      "image_prompt": "16-bit pixel art scene, limited retro palette, crisp pixels, side view video game style, dithering, vertical 9:16, no text + pixel art treasure chest opening to reveal glowing 2D material sheets and data crystals",
+      "source_ids": [
+        "SRC-002"
+      ],
+      "asset_filename": "frames/scene_007.jpg",
+      "sfx": [
+        "silencio"
+      ],
+      "ambiente": "viento"
+    },
+    {
+      "id": "scene_008",
+      "arc": "reflexion_o_pregunta",
+      "duration_seconds": 12.0,
+      "narration": "What else is hiding in the old literature that artificial intelligence can rediscover today? That was Datos y ociosidades.",
+      "on_screen_text": "What else is hiding?",
+      "visual_description": "pixel art night sky with stars over a university, floating question mark made of crystals",
+      "image_prompt": "16-bit pixel art scene, limited retro palette, crisp pixels, side view video game style, dithering, vertical 9:16, no text + pixel art night sky with stars over a university, floating question mark made of crystals",
+      "source_ids": [
+        "SRC-001"
+      ],
+      "asset_filename": "frames/scene_008.jpg",
+      "sfx": [
+        "silencio"
+      ],
+      "ambiente": "viento"
+    }
+  ],
+  "cortinilla_fuentes": {
+    "duration_seconds": 12,
+    "titulo": "Sources",
+    "aviso": "AI-generated images. Synthetic voice. Synthesized music and ambience.",
+    "firma": "Datos y ociosidades · @datosyociosidadesEN"
+  },
+  "export": {
+    "filename": "capsula.mp4",
+    "resolution": "1080x1920",
+    "fps": 30,
+    "loudness_lufs": -14,
+    "plano_seconds": 5,
+    "subtitle_max_words": 3
+  },
+  "audio": {
+    "music_asset": "sintetico:pulso",
+    "cama_musical": "pulso",
+    "music_lufs": -27,
+    "ambiente_lufs": -30,
+    "music_protagonista": false
+  },
+  "canal": {
+    "handle": "@datosyociosidadesEN"
+  }
+}

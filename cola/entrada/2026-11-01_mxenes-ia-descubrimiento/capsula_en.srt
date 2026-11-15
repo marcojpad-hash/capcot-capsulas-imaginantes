@@ -1,0 +1,268 @@
+1
+00:00:00,300 --> 00:00:01,577
+Materials just atoms
+
+2
+00:00:01,577 --> 00:00:01,960
+thick,
+
+3
+00:00:01,960 --> 00:00:02,789
+hidden in old
+
+4
+00:00:02,789 --> 00:00:03,428
+databases?
+
+5
+00:00:03,428 --> 00:00:04,002
+A team in
+
+6
+00:00:04,002 --> 00:00:05,406
+Sweden used artificial
+
+7
+00:00:05,406 --> 00:00:06,683
+intelligence to find
+
+8
+00:00:06,683 --> 00:00:07,896
+them and rediscover
+
+9
+00:00:07,896 --> 00:00:08,215
+them.
+
+10
+00:00:08,215 --> 00:00:09,015
+In Linköping,
+
+11
+00:00:09,015 --> 00:00:10,370
+researchers looked for
+
+12
+00:00:10,370 --> 00:00:11,047
+MXenes:
+
+13
+00:00:11,047 --> 00:00:11,971
+sheets of metal
+
+14
+00:00:11,971 --> 00:00:12,772
+and carbon or
+
+15
+00:00:12,772 --> 00:00:13,326
+nitrogen,
+
+16
+00:00:13,326 --> 00:00:13,942
+just a few
+
+17
+00:00:13,942 --> 00:00:15,173
+atomic layers thick.
+
+18
+00:00:15,173 --> 00:00:16,405
+They were discovered
+
+19
+00:00:16,405 --> 00:00:17,452
+in twenty eleven.
+
+20
+00:00:17,452 --> 00:00:19,124
+The artificial intelligence
+
+21
+00:00:19,124 --> 00:00:21,231
+scanned crystallographic databases
+
+22
+00:00:21,231 --> 00:00:22,593
+and found thirty-three
+
+23
+00:00:22,593 --> 00:00:24,452
+MXenes already synthesized
+
+24
+00:00:24,452 --> 00:00:25,567
+but not recognized
+
+25
+00:00:25,567 --> 00:00:26,186
+as such by
+
+26
+00:00:26,186 --> 00:00:27,735
+the scientific community.
+
+27
+00:00:27,735 --> 00:00:28,849
+Inspired by those
+
+28
+00:00:28,849 --> 00:00:29,439
+findings,
+
+29
+00:00:29,439 --> 00:00:30,685
+they created eleven
+
+30
+00:00:30,685 --> 00:00:31,275
+new ones.
+
+31
+00:00:31,275 --> 00:00:32,127
+Some use rare
+
+32
+00:00:32,127 --> 00:00:33,701
+earths like praseodymium
+
+33
+00:00:33,701 --> 00:00:34,750
+or neodymium and
+
+34
+00:00:34,750 --> 00:00:35,799
+can be magnetic,
+
+35
+00:00:35,799 --> 00:00:37,569
+widening the possibilities.
+
+36
+00:00:37,569 --> 00:00:38,650
+They also invented
+
+37
+00:00:38,650 --> 00:00:39,610
+a fast synthesis
+
+38
+00:00:39,610 --> 00:00:40,030
+method:
+
+39
+00:00:40,030 --> 00:00:42,672
+self-propagating high-temperature synthesis.
+
+40
+00:00:42,672 --> 00:00:43,332
+It needs no
+
+41
+00:00:43,332 --> 00:00:44,893
+prolonged external heating
+
+42
+00:00:44,893 --> 00:00:45,793
+and finishes in
+
+43
+00:00:45,793 --> 00:00:46,273
+minutes.
+
+44
+00:00:46,273 --> 00:00:47,412
+MXenes have an
+
+45
+00:00:47,412 --> 00:00:48,676
+enormous surface for
+
+46
+00:00:48,676 --> 00:00:49,498
+their weight.
+
+47
+00:00:49,498 --> 00:00:50,257
+One gram can
+
+48
+00:00:50,257 --> 00:00:51,205
+hold huge areas
+
+49
+00:00:51,205 --> 00:00:52,660
+for chemical reactions,
+
+50
+00:00:52,660 --> 00:00:53,672
+useful in energy
+
+51
+00:00:53,672 --> 00:00:55,063
+or water purification.
+
+52
+00:00:55,063 --> 00:00:55,924
+The team called
+
+53
+00:00:55,924 --> 00:00:57,073
+the project Treasure
+
+54
+00:00:57,073 --> 00:00:57,423
+Chest:
+
+55
+00:00:57,423 --> 00:00:58,399
+databases and old
+
+56
+00:00:58,399 --> 00:00:59,720
+literature are treasure
+
+57
+00:00:59,720 --> 00:01:00,467
+chests if you
+
+58
+00:01:00,467 --> 00:01:01,099
+know how to
+
+59
+00:01:01,099 --> 00:01:01,903
+open them with
+
+60
+00:01:01,903 --> 00:01:03,276
+artificial intelligence.
+
+61
+00:01:03,276 --> 00:01:04,062
+What else is
+
+62
+00:01:04,062 --> 00:01:04,913
+hiding in the
+
+63
+00:01:04,913 --> 00:01:06,157
+old literature that
+
+64
+00:01:06,157 --> 00:01:07,924
+artificial intelligence can
+
+65
+00:01:07,924 --> 00:01:09,037
+rediscover today?
+
+66
+00:01:09,037 --> 00:01:09,954
+That was Datos
+
+67
+00:01:09,954 --> 00:01:10,871
+y ociosidades.
+

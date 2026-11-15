@@ -1,0 +1,18 @@
+capsula_en 2026-11-01_mxenes-ia-descubrimiento
+voz: Kokoro am_adam lang en-us, speed 1.05 (calibrada; necesaria 69.7s)
+duracion: 82.90s (target 82s, diff +0.90s)
+PASA: formato 1080x1920 30fps 9:16 1080x1920 30/1
+PASA: duracion 60-95s 82.90s
+PASA: duracion +-5s del target 82.90s vs target 82s (diff +0.90s)
+PASA: voz am_adam (no rechazada) Kokoro am_adam, lang en-us
+PASA: sin huecos de silencio >0.8s en narracion gaps: []
+PASA: loudness -14 LUFS +-1.5 input_i -15.35 LUFS; TP 0.0 dB tras trim
+PASA: subtitulos en ingles sincronizados 67 eventos (muestran "MXenes", no la grafia fonetica)
+PASA: cierre hablado en ingles 
+PASA: fuentes reales (sin inventar) 2 fuentes del storyboard
+PASA: frames = escenas 8 frames / 8 escenas
+PASA: titulo en ingles verificado en cuadro (AI FINDS / MATERIALS?, caja amarilla + subrayado rojo, t=1s)
+PASA: on-screen en ingles verificado en cuadro (Synthesis in minutes, t=40s)
+PASA: cortinilla en ingles verificada en cuadro (Sources + @datosyociosidadesEN, t=78s)
+transcripcion faster-whisper base: ratio 0.915 (187 palabras guion / 178 oidas); unicas diferencias: Link ping->Linkurping (nombre propio), em-ex-eens->MxCines (la grafia fonetica se oye como "em-ex-eens", pronunciacion correcta de MXenes), numeros normalizados por el ASR (2011, 33), Praseodymium->Pracidimium (nombre propio), marca en espanol. Antes del arreglo Kokoro decia "amzines" (MXenes mal pronunciado).
+VEREDICTO: PASA
