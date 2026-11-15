@@ -10,7 +10,7 @@
   "estructura": "comparacion",
   "audience": "Público general interesado en ciencia y exploración espacial",
   "occasion": "Actualidad científica; slot 23:30 America/Mexico_City del 9-nov-2026",
-  "resumen": "Caltech's ASTRA demonstration: a robot in orbit assembled a third truss segment with no astronauts beside it, under commands from the ground.",
+  "resumen": "La demostración ASTRA de Caltech, dentro de NOM4D de DARPA, ensambló en órbita el tercer tramo de un reflector previsto de once. Prueba ensamblaje modular en el sitio de operación, con supervisión desde tierra; no terminó la antena de 1.4 m.",
   "narrative_contract": {
     "central_question": "¿Puede un robot ensamblar una estructura útil en órbita sin que un astronauta una cada pieza?",
     "promise": "Entender qué construyó ASTRA, cómo lo hizo y qué falta para el reflector completo.",
@@ -58,7 +58,7 @@
     "engine": "kokoro-onnx",
     "voice_id": "am_adam",
     "lang": "en-us",
-    "speed": "tuned per capsule when mounting (see RELEVO_EN.md)"
+    "speed": "tuned per capsule (see RELEVO_EN.md)"
   },
   "sources": [
     {
@@ -111,7 +111,7 @@
       "id": "scene_001",
       "arc": "hook_medias_res",
       "duration_seconds": 8,
-      "narration": "In orbit, a robot joins pieces with no astronauts beside it. It is Caltech's ASTRA demonstration.",
+      "narration": "In orbit, a robot joins pieces with no astronauts beside it. This is Caltech's ASTRA demonstration.",
       "on_screen_text": "A robot built in orbit",
       "visual_description": "PORTADA vertical 9:16: silueta del manipulador uniendo un tubo a una celosía sobre la Tierra; espacio vacío superior/central para título grande en caja crema/amarilla con subrayado rojo (tipografía en post). Sin subtítulo encima.",
       "image_prompt": "neo-noir digital painting, dark rainy night, glowing magenta and cyan neon rim light, strong silhouette of a single subject, wet reflections, minimal background, painterly not photorealistic, vertical 9:16, no text, bold cover composition of robotic manipulator joining a strut to a floating orbital truss above Earth crescent, deep space black with magenta cyan neon rim light, clear empty central title area for postproduction typography, heroic single subject, coherent neon noir magenta cyan violet black palette, consistent ASTRA machine silhouette, no text, no watermarks, no letters, no numbers, no labels, no logos, no people with glasses",
@@ -134,8 +134,8 @@
       "id": "scene_002",
       "arc": "hook_medias_res",
       "duration_seconds": 9,
-      "narration": "A piece leaves the dispenser; the arm aligns it and locks it onto a floating truss.",
-      "on_screen_text": "Part to truss",
+      "narration": "A piece leaves the dispenser; the arm aligns it and fixes it to a floating truss.",
+      "on_screen_text": "From part to truss",
       "visual_description": "Macro del dispensador soltando un tubo; el brazo lo alinea hacia la celosía; Tierra desenfocada al fondo; sin astronautas.",
       "image_prompt": "neo-noir digital painting, dark rainy night, glowing magenta and cyan neon rim light, strong silhouette of a single subject, wet reflections, minimal background, painterly not photorealistic, vertical 9:16, no text, macro shot of motorized dispenser releasing a composite tube into a robotic gripper aligning it to a floating truss, Earth soft in background, magenta cyan neon rim light, deep space, single bold subject, coherent neon noir magenta cyan violet black palette, consistent ASTRA machine silhouette, no text, no watermarks, no letters, no numbers, no labels, no logos, no people with glasses",
       "ambiente": "silencio",
@@ -157,8 +157,8 @@
       "id": "scene_003",
       "arc": "desarrollo",
       "duration_seconds": 8,
-      "narration": "ASTRA left Vandenberg, California, on March 30, 2026, headed for low Earth orbit aboard Vigoride 7.",
-      "on_screen_text": "Vandenberg → low orbit",
+      "narration": "ASTRA left Vandenberg, California, on March 30, 2026, headed for low orbit aboard Vigoride 7.",
+      "on_screen_text": "Vandenberg to low orbit",
       "visual_description": "Mapa sobrio costa central de California con un pin aproximado en Vandenberg; arco ilustrativo hacia órbita (no trayectoria medida).",
       "image_prompt": "neo-noir digital painting, glowing magenta and cyan neon rim light, strong silhouette of a single subject, minimal background, painterly not photorealistic, vertical 9:16, no text, the California coastline at night seen from high altitude, a single glowing cyan light point on the coast and a thin magenta arc rising from it toward orbit, deep black space above, coherent magenta cyan violet black palette, no letters, no numbers, no labels, no logos, no people with glasses",
       "ambiente": "silencio",
@@ -199,7 +199,7 @@
       "id": "scene_004",
       "arc": "desarrollo",
       "duration_seconds": 9,
-      "narration": "The rocket's fairing limits what can be launched already assembled. A new path is to build the structure where it will operate.",
+      "narration": "The rocket's fairing limits what can be launched already assembled. A new way is to build the structure where it will operate.",
       "on_screen_text": "The limit: size",
       "visual_description": "Comparación: reflector enorme vs cofia compacta; piezas modulares separadas alineándose.",
       "image_prompt": "neo-noir digital painting, dark rainy night, glowing magenta and cyan neon rim light, strong silhouette of a single subject, wet reflections, minimal background, painterly not photorealistic, vertical 9:16, no text, oversized space reflector silhouette beside a compact rocket fairing, modular truss sections lined up as building kit, deep space neon rim light, single bold central comparison, coherent neon noir magenta cyan violet black palette, consistent ASTRA machine silhouette, no text, no watermarks, no letters, no numbers, no labels, no logos, no people with glasses",
@@ -223,8 +223,8 @@
       "id": "scene_005",
       "arc": "desarrollo",
       "duration_seconds": 9,
-      "narration": "It carried two prefabricated segments, a manipulator, and dispensers with parts. In orbit they deployed those two segments.",
-      "on_screen_text": "Two segments and an arm",
+      "narration": "It carried two prefabricated bays, a manipulator, and dispensers with parts. In orbit, those two bays were deployed.",
+      "on_screen_text": "Two bays and an arm",
       "visual_description": "Vista isométrica/cenital del payload abierto: dos bays prefabricados, manipulador, dispensadores; sin astronautas.",
       "image_prompt": "neo-noir digital painting, dark rainy night, glowing magenta and cyan neon rim light, strong silhouette of a single subject, wet reflections, minimal background, painterly not photorealistic, vertical 9:16, no text, top-down isometric view of compact orbital payload box opened, two prebuilt truss bays, gantry-like manipulator and motorized parts dispensers, magenta cyan neon accents, deep space, single bold subject, coherent neon noir magenta cyan violet black palette, consistent ASTRA machine silhouette, no text, no watermarks, no letters, no numbers, no labels, no logos, no people with glasses",
       "ambiente": "silencio",
@@ -246,8 +246,8 @@
       "id": "scene_006",
       "arc": "desarrollo",
       "duration_seconds": 10,
-      "narration": "Then the manipulator assembled a third segment from composite-fiber tubes and aluminum joints. From the ground, the team sent commands and reviewed photographs.",
-      "on_screen_text": "The third segment",
+      "narration": "Then the manipulator assembled a third bay with composite fiber tubes and aluminum joints. From the ground, the team sent commands and checked photographs.",
+      "on_screen_text": "The third bay",
       "visual_description": "Manipulador colocando tubos compuestos y uniones de aluminio en placa de ensamblaje; inserto pequeño de sala de control en tierra (pantallas/comandos), sin científica recurrente.",
       "image_prompt": "neo-noir digital painting, dark rainy night, glowing magenta and cyan neon rim light, strong silhouette of a single subject, wet reflections, minimal background, painterly not photorealistic, vertical 9:16, no text, robotic gantry manipulator assembling a third truss bay from composite tubes and aluminum joints on an assembly plate in orbit, small inset of ground control screens sending commands, neon rim light, deep space, no recurring scientist character, coherent neon noir magenta cyan violet black palette, consistent ASTRA machine silhouette, no text, no watermarks, no letters, no numbers, no labels, no logos, no people with glasses",
       "ambiente": "silencio",
@@ -270,8 +270,8 @@
       "id": "scene_007",
       "arc": "desarrollo",
       "duration_seconds": 8,
-      "narration": "The design calls for a perforated Kapton film in spring-loaded reflector meshes. That is the plan, not a finished antenna.",
-      "on_screen_text": "Planned Kapton film",
+      "narration": "The design foresees a perforated CAP-ton film in reflector nets held by springs. That is the plan, not a finished antenna.",
+      "on_screen_text": "Kapton film planned",
       "visual_description": "Diagrama de diseño: película Kapton perforada y dos redes tensadas con resortes sobre celosía; marcado visualmente como plan, no como instalado.",
       "image_prompt": "neo-noir digital painting, glowing magenta and cyan neon rim light, strong silhouette of a single subject, minimal background, painterly not photorealistic, vertical 9:16, no text, a perforated golden reflective film stretched across two spring-tensioned cable nets attached to a floating truss, rendered semi-transparent and ghostly as a planned concept, deep space, coherent magenta cyan violet black palette, no letters, no numbers, no labels, no logos, no people with glasses",
       "ambiente": "silencio",
@@ -293,8 +293,8 @@
       "id": "scene_008",
       "arc": "cierre_historia",
       "duration_seconds": 10,
-      "narration": "The planned reflector is 1.4 meters and needs eleven segments. The demonstration reached the third; finishing the full set before December looks unlikely.",
-      "on_screen_text": "3 of 11 segments",
+      "narration": "The planned reflector measures 1.4 meters and needs eleven bays. The demo reached the third; finishing the set before December looks unlikely.",
+      "on_screen_text": "3 of 11 bays",
       "visual_description": "Gráfico de once módulos: dos prefabricados + uno ensamblado destacados; ocho atenuados como plan.",
       "image_prompt": "neo-noir digital painting, glowing magenta and cyan neon rim light, strong silhouette of a single subject, minimal background, painterly not photorealistic, vertical 9:16, no text, a ring of eleven truss segments floating in orbit, three of them solid and glowing cyan, the other eight drawn as faint ghosted transparent outlines, Earth below, coherent magenta cyan violet black palette, no letters, no numbers, no labels, no logos, no people with glasses",
       "ambiente": "silencio",
@@ -357,7 +357,7 @@
     "ambiente_lufs": -30
   },
   "export": {
-    "filename": "capsula_en.mp4",
+    "filename": "capsula.mp4",
     "resolution": "1080x1920",
     "fps": 30,
     "codec_video": "h264",
@@ -433,13 +433,12 @@
     "factual_review_note": "Contraste adicional Caltech/DARPA WebFetch 9-nov-2026 (no sustituye la lectura en frío)."
   },
   "keywords": [
-    "robot",
-    "orbit",
-    "space"
+    "espacio",
+    "robótica",
+    "ingeniería"
   ],
   "nota_produccion": "Lote 19:00 del 14-nov-2026 (Grok Bot). Guion original sin cambios (QA narrativo PASS 9-nov). Mapa y dato corregidos al formato de capas_datos.py. Original en storyboard_stock.json.",
   "canal": {
     "handle": "@datosyociosidadesEN"
-  },
-  "nota": "English narration translated from the current corrected Spanish script in storyboard.json (rewritten 14-nov with re-read sources). Not translated from storyboard_stock.json. Sources and DOIs unchanged. Spoken close: “That was Datos y ociosidades.” No English MP4 in this package; timings in capsula_en.srt follow the Spanish voice window and should be recalibrated if English audio is mounted. Frames reused; no new images generated."
+  }
 }

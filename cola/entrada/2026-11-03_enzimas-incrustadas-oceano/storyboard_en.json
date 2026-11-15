@@ -1,17 +1,17 @@
 {
   "project_id": "2026-11-03_enzimas-incrustadas-oceano_en",
   "serie": "Datos y ociosidades",
-  "title": "Enzyme-embedded plastic that breaks down in the deep sea",
+  "title": "Plastic with enzymes that dissolves in the deep sea",
   "titulo": "Plastic that digests itself",
   "language": "en-US",
   "aspect_ratio": "9:16",
   "target_duration_seconds": 88,
   "estructura": "mito_vs_dato",
-  "resumen": "The University of Tokyo and JAMSTEC embedded enzymes in compostable polyesters: at 757 m they broke down almost completely in five months.",
+  "resumen": "Universidad de Tokio y JAMSTEC incrustaron enzimas en poliésteres compostables: a 757 m se degradaron casi por completo en cinco meses.",
   "keywords": [
-    "plastic",
-    "ocean",
-    "enzymes"
+    "plástico",
+    "océano",
+    "enzimas"
   ],
   "trend_source": {
     "termino": "plástico con enzimas",
@@ -23,7 +23,7 @@
     "engine": "kokoro-onnx",
     "voice_id": "am_adam",
     "lang": "en-us",
-    "speed": "tuned per capsule when mounting (see RELEVO_EN.md)"
+    "speed": "tuned per capsule (see RELEVO_EN.md)"
   },
   "sources": [
     {
@@ -61,7 +61,7 @@
       "id": "scene_001",
       "arc": "hook_medias_res",
       "duration_seconds": 9,
-      "narration": "The myth: compostable plastic just disappears in the ocean. The fact: on the seafloor it barely degrades.",
+      "narration": "The myth: compostable plastic disappears on its own in the sea. The fact: on the seafloor it barely breaks down.",
       "on_screen_text": "Plastic that digests itself",
       "visual_description": "cover composition: a single plastic bottle sinking through great stylized indigo waves into the dark deep sea, tiny golden sparks inside the bottle, large empty calm sky area in the upper third for a title",
       "asset_filename": "frames/scene_001.jpg",
@@ -80,7 +80,7 @@
       "id": "scene_002",
       "arc": "desarrollo",
       "duration_seconds": 9,
-      "narration": "A team from the University of Tokyo and JAMSTEC tested another idea: put the enzyme into the plastic when it is made.",
+      "narration": "A team from the University of Tokyo and JAMSTEC tried another idea: put the enzyme into the plastic as it is made.",
       "on_screen_text": "Enzyme from the factory",
       "visual_description": "a coastal research harbor with a white research ship and Mount Fuji far away, stylized clouds, wide landscape framing, no people",
       "asset_filename": "frames/scene_002.jpg",
@@ -117,7 +117,7 @@
       "id": "scene_003",
       "arc": "desarrollo",
       "duration_seconds": 9,
-      "narration": "They embedded enzymes such as cutinase in four compostable polyesters. Those enzymes cut the ester bonds that hold the chain together.",
+      "narration": "They embedded enzymes like cutinase in four compostable polyesters. Those enzymes cut the ester bonds that hold the chain together.",
       "on_screen_text": "Molecular scissors",
       "visual_description": "close-up of a long chain of beads like a pearl necklace being snipped by tiny golden scissor-like shapes, flowing water patterns behind",
       "asset_filename": "frames/scene_003.jpg",
@@ -136,7 +136,7 @@
       "id": "scene_004",
       "arc": "desarrollo",
       "duration_seconds": 9,
-      "narration": "The crewed submersible Shinkai 6500 left the samples on the seafloor, from the coast down to 5,503 meters deep.",
+      "narration": "The crewed submersible Shinkai 6500 left the samples on the seabed, from the coast down to five thousand five hundred three meters deep.",
       "on_screen_text": "Shinkai 6500",
       "visual_description": "a small white deep-sea submersible with a robotic arm placing sample racks on the dark seafloor, beams of light, low angle",
       "asset_filename": "frames/scene_004.jpg",
@@ -155,7 +155,7 @@
       "id": "scene_005",
       "arc": "desarrollo",
       "duration_seconds": 9,
-      "narration": "At 757 meters, films with 3 percent cutinase lost almost all their mass in five months. The controls without enzyme barely changed.",
+      "narration": "At seven hundred fifty-seven meters, films with 3 percent cutinase lost almost all their mass in five months. The controls without enzyme barely changed.",
       "on_screen_text": "757 m · 5 months",
       "visual_description": "two thin plastic sheets on the seafloor side by side, one crumbling into fine particles, the other intact, overhead top-down view",
       "asset_filename": "frames/scene_005.jpg",
@@ -180,7 +180,7 @@
       "id": "scene_006",
       "arc": "desarrollo",
       "duration_seconds": 9,
-      "narration": "In the deep sea, degradation sped up 12 to 80 times, depending on the plastic and the enzyme.",
+      "narration": "In the deep sea, breakdown sped up from 12 to 80 times, depending on the plastic and the enzyme.",
       "on_screen_text": "12 to 80 times faster",
       "visual_description": "a huge stylized wave curling over fragments of plastic dissolving into foam, dynamic diagonal composition",
       "asset_filename": "frames/scene_006.jpg",
@@ -199,8 +199,8 @@
       "id": "scene_007",
       "arc": "desarrollo",
       "duration_seconds": 9,
-      "narration": "And at 5,503 meters, on the abyssal plain, there was also moderate degradation after 18 months, though slower.",
-      "on_screen_text": "5,503 m · 18 months",
+      "narration": "And at five thousand five hundred three meters, on the abyssal plain, there was moderate breakdown after 18 months too, though slower.",
+      "on_screen_text": "5503 m · 18 months",
       "visual_description": "the deepest abyssal plain in near darkness, a single sample frame lit by a faint lantern-like glow, vast empty space, extreme wide shot",
       "asset_filename": "frames/scene_007.jpg",
       "source_ids": [
@@ -218,7 +218,7 @@
       "id": "scene_008",
       "arc": "cierre_historia",
       "duration_seconds": 9,
-      "narration": "The clever part is the switch: without water, the enzyme does not work. The object holds up while it is in use, and it breaks down when it wears and water can reach the enzyme.",
+      "narration": "The clever part is the switch: without water, the enzyme does not work. The object holds up while in use and breaks down once worn out and water reaches it.",
       "on_screen_text": "A water switch",
       "visual_description": "a drop of seawater falling onto a worn plastic surface that cracks open revealing glowing golden enzymes, macro close-up",
       "asset_filename": "frames/scene_008.jpg",
@@ -237,7 +237,7 @@
       "id": "scene_009",
       "arc": "reflexion_o_pregunta",
       "duration_seconds": 9,
-      "narration": "It does not clean up the plastic already in the ocean, but it changes how the next generation could be made. Which object would you change first? That was Datos y ociosidades.",
+      "narration": "It does not clean up the plastic already in the sea, but it changes how the next one could be made. What object would you change first? That was Datos y ociosidades.",
       "on_screen_text": "What would you change first?",
       "visual_description": "a calm sea at sunrise with gentle stylized waves and a clean horizon, a single small cup floating and fading into the water, wide serene framing",
       "asset_filename": "frames/scene_009.jpg",
@@ -266,7 +266,7 @@
     "ambiente_lufs": -30
   },
   "export": {
-    "filename": "capsula_en.mp4",
+    "filename": "capsula.mp4",
     "resolution": "1080x1920",
     "fps": 30,
     "codec_video": "h264",
@@ -278,6 +278,5 @@
   "nota_produccion": "Lote 19:00 del 14-nov-2026 (Grok Bot). Guion del stock ampliado a 9 escenas solo con hechos de las fuentes citadas (releídas el 14-nov) para llegar a 85–90 s. Original en storyboard_stock.json.",
   "canal": {
     "handle": "@datosyociosidadesEN"
-  },
-  "nota": "English narration translated from the current corrected Spanish script in storyboard.json (rewritten 14-nov with re-read sources). Not translated from storyboard_stock.json. Sources and DOIs unchanged. Spoken close: “That was Datos y ociosidades.” No English MP4 in this package; timings in capsula_en.srt follow the Spanish voice window and should be recalibrated if English audio is mounted. Frames reused; no new images generated."
+  }
 }

@@ -1,0 +1,18 @@
+capsula_en 2026-11-09_dato-robot-ensambla-orbita
+voz: Kokoro am_adam lang en-us
+duracion: 87.30s (target 88s)
+PASA: formato 1080x1920 30fps 9:16 1080x1920 30/1
+PASA: duracion 60-95s 87.30s
+PASA: duracion +-5s del target 87.30s vs target 88s (diff -0.70s)
+PASA: voz am_adam (no rechazada) Kokoro am_adam, lang en-us
+PASA: sin huecos de silencio >0.8s en narracion gaps: []
+PASA: loudness -14 LUFS +-1.5 input_i -14.61 LUFS (TP 0.84 dB; correccion +1.0 dB tras trim TP->0.0 que habia dejado -15.59, dentro del margen de overshoot AAC <=+1.0 dB del pipeline)
+PASA: subtitulos en ingles sincronizados 74 eventos
+PASA: cierre hablado en ingles 
+PASA: fuentes reales (sin inventar) 3 fuentes del storyboard
+PASA: frames = escenas 9 frames / 9 escenas
+VEREDICTO: PASA
+PASA: titulo en ingles verificado en cuadro (A ROBOT BUILT IN ORBIT, caja amarilla + subrayado rojo, t=1s)
+PASA: on-screen en ingles verificado en cuadro (Kapton film planned, t=45s)
+PASA: cortinilla en ingles verificada en cuadro (Sources + @datosyociosidadesEN, URLs con hard-break, t=84s)
+transcripcion faster-whisper base: ratio 0.968 (187 palabras guion / 187 oidas); unicas diferencias: "Caltech's"->"Coltex" (artefacto ASR), "CAP-ton"->"CAP-tun" (vocal reducida; en frase aislada se oye "CAP-ton" exacto), "eleven"->"11" (digitos), "Datos"->"Dato's", "ociosidades"->"Oceosidades" (marca en espanol, esperado).

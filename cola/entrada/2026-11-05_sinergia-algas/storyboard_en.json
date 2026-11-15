@@ -2,16 +2,16 @@
   "project_id": "2026-11-05_sinergia-algas_en",
   "serie": "Datos y ociosidades",
   "title": "Viruses and bacteria collapse the bloom",
-  "titulo": "The alliance that topples a bloom",
+  "titulo": "The alliance that sinks a bloom",
   "language": "en-US",
   "aspect_ratio": "9:16",
   "target_duration_seconds": 88,
   "estructura": "sabias_que",
-  "resumen": "Weizmann Institute: Alteromonas bacteria boost viral killing of microalgae and speed the collapse of blooms, with an effect on the carbon cycle.",
+  "resumen": "Instituto Weizmann: las bacterias Alteromonas potencian la muerte viral de microalgas y aceleran el colapso de los blooms, con efecto en el ciclo del carbono.",
   "keywords": [
-    "ocean",
-    "algae",
-    "carbon"
+    "océano",
+    "algas",
+    "carbono"
   ],
   "trend_source": {
     "termino": "blooms de algas",
@@ -23,7 +23,7 @@
     "engine": "kokoro-onnx",
     "voice_id": "am_adam",
     "lang": "en-us",
-    "speed": "tuned per capsule when mounting (see RELEVO_EN.md)"
+    "speed": "tuned per capsule (see RELEVO_EN.md)"
   },
   "sources": [
     {
@@ -40,8 +40,8 @@
       "id": "scene_001",
       "arc": "hook_medias_res",
       "duration_seconds": 9,
-      "narration": "An algal bloom that covers kilometers of sea collapses all at once. And viruses, on their own, cannot fully explain it.",
-      "on_screen_text": "The alliance that topples a bloom",
+      "narration": "An algal bloom covering kilometers of sea collapses all at once. And viruses alone cannot explain it.",
+      "on_screen_text": "The alliance that sinks a bloom",
       "visual_description": "cover composition: a vast milky turquoise algal bloom swirling on a dark sea seen from high above, layered torn paper waves, large empty calm area in the upper third for a title",
       "asset_filename": "frames/scene_001.jpg",
       "source_ids": [
@@ -56,7 +56,7 @@
       "id": "scene_002",
       "arc": "desarrollo",
       "duration_seconds": 9,
-      "narration": "It is Gephyrocapsa huxleyi, a very abundant coccolithophore. When its bloom collapses, fewer than 30 percent of the cells have an active viral infection.",
+      "narration": "It is Guefirocapsa huxleyi, a very abundant coccolithophore. When its bloom collapses, less than 30 percent of cells have an active viral infection.",
       "on_screen_text": "Less than 30%",
       "visual_description": "a single round coccolithophore cell covered in plate-like scales, giant and centered, macro close-up",
       "asset_filename": "frames/scene_002.jpg",
@@ -78,8 +78,8 @@
       "id": "scene_003",
       "arc": "desarrollo",
       "duration_seconds": 9,
-      "narration": "A team at the Weizmann Institute, in Israel, built a synthetic community with algae, viruses, and bacteria isolated from a real bloom.",
-      "on_screen_text": "Synthetic community",
+      "narration": "A team at the Weizmann Institute, in Israel, built a synthetic community with algae, viruses and bacteria isolated from a real bloom.",
+      "on_screen_text": "A synthetic community",
       "visual_description": "three small glass flasks on a lab bench holding green algae, tiny virus particles and rod-shaped bacteria rendered as paper cutouts, side view, no people",
       "asset_filename": "frames/scene_003.jpg",
       "source_ids": [
@@ -112,7 +112,7 @@
       "id": "scene_004",
       "arc": "desarrollo",
       "duration_seconds": 9,
-      "narration": "The result: bacteria significantly increased the algal death caused by the virus. It was not an attack, but a co-infection.",
+      "narration": "Result: the bacteria significantly increased the algal death caused by the virus. It was not an attack, but a co-infection.",
       "on_screen_text": "Co-infection",
       "visual_description": "rod-shaped bacteria and spiky virus particles converging on a large algal cell from opposite sides, dramatic low angle",
       "asset_filename": "frames/scene_004.jpg",
@@ -128,7 +128,7 @@
       "id": "scene_005",
       "arc": "desarrollo",
       "duration_seconds": 9,
-      "narration": "To measure it they created two indices: a synergy index, which measures the strength of that alliance, and a benefit index, which measures how much the bacterium gains.",
+      "narration": "To measure it they created two indices: the synergy index, which measures the strength of that alliance, and the benefit index, which measures how much the bacterium gains.",
       "on_screen_text": "Synergy and benefit",
       "visual_description": "two balanced paper scale pans holding paper cutout microbes, simple symmetrical composition, top-down view",
       "asset_filename": "frames/scene_005.jpg",
@@ -144,7 +144,7 @@
       "id": "scene_006",
       "arc": "desarrollo",
       "duration_seconds": 9,
-      "narration": "The champion was Alteromonas: extracts of infected cells attract it, it accumulates in the wreckage of the collapse, and it increases when the bloom falls.",
+      "narration": "The champion was Alteromonas: it is drawn to extracts from infected cells, gathers in the remains of the collapse, and grows as the bloom falls.",
       "on_screen_text": "Alteromonas",
       "visual_description": "a swarm of small rod-shaped bacteria rushing toward a sinking clump of broken algal cells, diagonal motion, medium shot",
       "asset_filename": "frames/scene_006.jpg",
@@ -160,7 +160,7 @@
       "id": "scene_007",
       "arc": "desarrollo",
       "duration_seconds": 9,
-      "narration": "And it is not an isolated case: the synergy also appeared in three other microalgae that are widespread across the planet.",
+      "narration": "And it is not an isolated case: the synergy also appeared in three other microalgae spread widely across the planet.",
       "on_screen_text": "Four microalgae",
       "visual_description": "four different microalgae cells in a row, each a different torn paper shape and color, flat frontal framing",
       "asset_filename": "frames/scene_007.jpg",
@@ -176,7 +176,7 @@
       "id": "scene_008",
       "arc": "cierre_historia",
       "duration_seconds": 9,
-      "narration": "It matters because of carbon. Photosynthetic organisms in the sea fix about 50 gigatons of carbon a year, and much of that happens in blooms like this.",
+      "narration": "It matters for carbon. Photosynthetic organisms in the sea fix about 50 gigatons of carbon a year, and much of it happens in blooms like this one.",
       "on_screen_text": "50 gigatons a year",
       "visual_description": "the ocean surface glowing green with phytoplankton under a sun, layered paper clouds, wide horizon",
       "asset_filename": "frames/scene_008.jpg",
@@ -192,7 +192,7 @@
       "id": "scene_009",
       "arc": "reflexion_o_pregunta",
       "duration_seconds": 9,
-      "narration": "This alliance decides whether that carbon is recycled at the surface or sinks to the depths. How many invisible alliances move the climate? That was Datos y ociosidades.",
+      "narration": "This alliance decides whether that carbon is recycled at the surface or sinks to the bottom. How many invisible alliances move the climate? That was Datos y ociosidades.",
       "on_screen_text": "Recycle or sink?",
       "visual_description": "a vertical cross-section of the sea: particles swirling near the surface while others sink as marine snow into the dark depths, tall vertical framing",
       "asset_filename": "frames/scene_009.jpg",
@@ -218,7 +218,7 @@
     "ambiente_lufs": -30
   },
   "export": {
-    "filename": "capsula_en.mp4",
+    "filename": "capsula.mp4",
     "resolution": "1080x1920",
     "fps": 30,
     "codec_video": "h264",
@@ -230,6 +230,5 @@
   "nota_produccion": "Lote 19:00 del 14-nov-2026 (Grok Bot). Guion del stock ampliado a 9 escenas solo con hechos de las fuentes citadas (releídas el 14-nov) para llegar a 85–90 s. Original en storyboard_stock.json.",
   "canal": {
     "handle": "@datosyociosidadesEN"
-  },
-  "nota": "English narration translated from the current corrected Spanish script in storyboard.json (rewritten 14-nov with re-read sources). Not translated from storyboard_stock.json. Sources and DOIs unchanged. Spoken close: “That was Datos y ociosidades.” No English MP4 in this package; timings in capsula_en.srt follow the Spanish voice window and should be recalibrated if English audio is mounted. Frames reused; no new images generated."
+  }
 }

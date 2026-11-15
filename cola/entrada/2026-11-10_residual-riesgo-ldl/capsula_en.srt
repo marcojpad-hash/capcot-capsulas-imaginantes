@@ -1,263 +1,284 @@
 1
-00:00:00,300 --> 00:00:00,933
+00:00:00,300 --> 00:00:00,950
 Why does a
 
 2
-00:00:00,943 --> 00:00:02,073
-heart attack still
+00:00:00,950 --> 00:00:02,185
+heart attack arrive
 
 3
-00:00:02,083 --> 00:00:02,960
-come after bad
+00:00:02,185 --> 00:00:03,095
+even after bad
 
 4
-00:00:02,970 --> 00:00:04,417
-cholesterol has already
+00:00:03,095 --> 00:00:04,395
+cholesterol has come
 
 5
-00:00:04,427 --> 00:00:05,367
-dropped? A team
+00:00:04,395 --> 00:00:04,745
+down?
 
 6
-00:00:05,377 --> 00:00:06,317
-at Chalmers, in
+00:00:04,745 --> 00:00:05,329
+A team at
 
 7
-00:00:06,327 --> 00:00:07,457
-Sweden, looked for
+00:00:05,329 --> 00:00:05,914
+Chalmers,
 
 8
-00:00:07,467 --> 00:00:08,280
-the answer in
+00:00:05,914 --> 00:00:06,564
+in Sweden,
 
 9
-00:00:08,290 --> 00:00:08,913
-the blood.
+00:00:06,564 --> 00:00:07,474
+looked for the
 
 10
-00:00:08,923 --> 00:00:10,359
-Lowering LDL cholesterol
+00:00:07,474 --> 00:00:08,319
+answer in the
 
 11
-00:00:10,369 --> 00:00:11,262
-does reduce the
+00:00:08,319 --> 00:00:08,684
+blood.
 
 12
-00:00:11,272 --> 00:00:11,805
-risk of a
+00:00:08,684 --> 00:00:10,419
+Lowering LDL cholesterol
 
 13
-00:00:11,815 --> 00:00:12,828
-heart attack. But
+00:00:10,419 --> 00:00:11,432
+does cut heart
 
 14
-00:00:12,838 --> 00:00:13,792
-bringing it into
+00:00:11,432 --> 00:00:12,299
+attack risk.
 
 15
-00:00:13,802 --> 00:00:15,057
-the recommended range
+00:00:12,299 --> 00:00:13,384
+But bringing it
 
 16
-00:00:15,067 --> 00:00:15,900
-does not erase
+00:00:13,384 --> 00:00:14,830
+into the recommended
 
 17
-00:00:15,910 --> 00:00:16,744
-it: a residual
+00:00:14,830 --> 00:00:15,842
+range does not
 
 18
-00:00:16,754 --> 00:00:17,527
-risk remains.
+00:00:15,842 --> 00:00:16,493
+erase it:
 
 19
-00:00:17,537 --> 00:00:18,950
-Cholesterol does not
+00:00:16,493 --> 00:00:17,578
+a residual risk
 
 20
-00:00:18,960 --> 00:00:20,588
-travel alone: particles
+00:00:17,578 --> 00:00:18,156
+remains.
 
 21
-00:00:20,598 --> 00:00:22,367
-called lipoproteins carry
+00:00:18,156 --> 00:00:19,629
+Cholesterol does not
 
 22
-00:00:22,377 --> 00:00:23,435
-it. Three types
+00:00:19,629 --> 00:00:20,586
+travel alone:
 
 23
-00:00:23,445 --> 00:00:24,432
-load a protein
+00:00:20,586 --> 00:00:21,396
+it rides in
 
 24
-00:00:24,442 --> 00:00:26,140
-called apolipoprotein B.
+00:00:21,396 --> 00:00:23,605
+particles called lipoproteins.
 
 25
-00:00:26,150 --> 00:00:27,097
-They are LDL,
+00:00:23,605 --> 00:00:24,857
+Three types carry
 
 26
-00:00:27,107 --> 00:00:29,600
-triglyceride-rich lipoproteins, or
+00:00:24,857 --> 00:00:26,035
+a protein called
 
 27
-00:00:29,610 --> 00:00:31,367
-TRL, and lipoprotein(a).
+00:00:26,035 --> 00:00:27,287
+apolipoprotein B.
 
 28
-00:00:31,377 --> 00:00:32,324
-All three can
+00:00:27,287 --> 00:00:28,285
+They are LDL,
 
 29
-00:00:32,334 --> 00:00:33,796
-leave cholesterol in
+00:00:28,285 --> 00:00:30,666
+triglyceride-rich lipoproteins,
 
 30
-00:00:33,806 --> 00:00:34,753
-artery walls.
+00:00:30,666 --> 00:00:31,203
+or TRL,
 
 31
-00:00:34,763 --> 00:00:36,247
-The team measured
+00:00:31,203 --> 00:00:32,586
+and lipoprotein a.
 
 32
-00:00:36,257 --> 00:00:38,093
-nearly 3,000 proteins
+00:00:32,586 --> 00:00:33,584
+All three can
 
 33
-00:00:38,103 --> 00:00:39,148
-in blood and
+00:00:33,584 --> 00:00:35,120
+leave cholesterol in
 
 34
-00:00:39,158 --> 00:00:40,642
-crossed them with
+00:00:35,120 --> 00:00:36,119
+artery walls.
 
 35
-00:00:40,652 --> 00:00:42,048
-genetic data and
+00:00:36,119 --> 00:00:37,132
+The team measured
 
 36
-00:00:42,058 --> 00:00:43,367
-health records.
+00:00:37,132 --> 00:00:38,384
+almost three thousand
 
 37
-00:00:43,377 --> 00:00:44,557
-The surprise: TRL
+00:00:38,384 --> 00:00:39,397
+proteins in blood
 
 38
-00:00:44,567 --> 00:00:46,308
-and lipoprotein(a) showed
+00:00:39,397 --> 00:00:40,351
+and crossed them
 
 39
-00:00:46,318 --> 00:00:47,708
-very similar protein
+00:00:40,351 --> 00:00:41,365
+with genetic data
 
 40
-00:00:47,718 --> 00:00:49,039
-patterns, and those
+00:00:41,365 --> 00:00:42,497
+and health records.
 
 41
-00:00:49,049 --> 00:00:50,439
-patterns were linked
+00:00:42,497 --> 00:00:43,404
+The surprise:
 
 42
-00:00:50,449 --> 00:00:51,420
-to later heart
+00:00:43,404 --> 00:00:44,730
+TRL and lipoprotein
 
 43
-00:00:51,430 --> 00:00:51,980
-disease.
+00:00:44,730 --> 00:00:45,637
+a showed very
 
 44
-00:00:51,990 --> 00:00:53,526
-Those particles carry
+00:00:45,637 --> 00:00:47,381
+similar protein patterns,
 
 45
-00:00:53,536 --> 00:00:55,072
-proteins that attract
+00:00:47,381 --> 00:00:48,637
+and those patterns
 
 46
-00:00:55,082 --> 00:00:56,250
-immune cells and
+00:00:48,637 --> 00:00:49,614
+were linked to
 
 47
-00:00:56,260 --> 00:00:57,501
-could inflame the
+00:00:49,614 --> 00:00:51,009
+later heart disease.
 
 48
-00:00:57,511 --> 00:00:58,900
-vessel wall, beyond
+00:00:51,009 --> 00:00:52,400
+Those particles carry
 
 49
-00:00:58,910 --> 00:01:00,593
-depositing cholesterol.
+00:00:52,400 --> 00:00:53,792
+proteins that attract
 
 50
-00:01:00,603 --> 00:01:01,269
-LDL showed a
+00:00:53,792 --> 00:00:54,852
+immune cells and
 
 51
-00:01:01,279 --> 00:01:02,564
-different pattern, tied
+00:00:54,852 --> 00:00:56,176
+could inflame vessel
 
 52
-00:01:02,574 --> 00:01:04,140
-to accumulating cholesterol,
+00:00:56,176 --> 00:00:56,574
+walls,
 
 53
-00:01:04,150 --> 00:01:04,984
-and lowering it
+00:00:56,574 --> 00:00:58,561
+beyond depositing cholesterol.
 
 54
-00:01:04,994 --> 00:01:06,279
-remains the foundation.
+00:00:58,561 --> 00:00:59,368
+LDL showed a
 
 55
-00:01:06,289 --> 00:01:07,011
-The study did
+00:00:59,368 --> 00:01:00,578
+different pattern,
 
 56
-00:01:07,021 --> 00:01:07,630
-not prove a
+00:01:00,578 --> 00:01:01,519
+tied to piling
 
 57
-00:01:07,640 --> 00:01:08,419
-treatment or a
+00:01:01,519 --> 00:01:02,527
+up cholesterol,
 
 58
-00:01:08,429 --> 00:01:09,207
-clinical test.
+00:01:02,527 --> 00:01:03,535
+and lowering it
 
 59
-00:01:09,217 --> 00:01:10,069
-But there are
+00:01:03,535 --> 00:01:04,342
+is still the
 
 60
-00:01:10,079 --> 00:01:11,129
-already clues to
+00:01:04,342 --> 00:01:05,081
+foundation.
 
 61
-00:01:11,139 --> 00:01:12,256
-why residual risk
+00:01:05,081 --> 00:01:06,157
+The study proved
 
 62
-00:01:12,266 --> 00:01:13,847
-remains. Which particles
+00:01:06,157 --> 00:01:07,232
+no treatment and
 
 63
-00:01:13,857 --> 00:01:14,974
-should we measure
+00:01:07,232 --> 00:01:08,375
+no clinical test.
 
 64
-00:01:14,984 --> 00:01:15,770
-besides LDL?
+00:01:08,375 --> 00:01:09,304
+But now there
 
 65
-00:01:16,020 --> 00:01:16,776
-That was Datos
+00:01:09,304 --> 00:01:10,162
+are clues to
 
 66
-00:01:16,786 --> 00:01:17,820
+00:01:10,162 --> 00:01:11,377
+why risk remains.
+
+67
+00:01:11,377 --> 00:01:12,950
+Which particles should
+
+68
+00:01:12,950 --> 00:01:14,236
+we measure besides
+
+69
+00:01:14,236 --> 00:01:14,586
+LDL?
+
+70
+00:01:14,586 --> 00:01:15,587
+That was Datos
+
+71
+00:01:15,587 --> 00:01:16,524
 y ociosidades.
+

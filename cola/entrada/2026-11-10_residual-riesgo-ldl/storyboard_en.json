@@ -1,17 +1,17 @@
 {
   "project_id": "2026-11-10_residual-riesgo-ldl_en",
   "serie": "Datos y ociosidades",
-  "title": "The risk that remains after cholesterol",
-  "titulo": "Low cholesterol, risk still there",
+  "title": "The risk that stays after cholesterol",
+  "titulo": "Low cholesterol, living risk",
   "language": "en-US",
   "aspect_ratio": "9:16",
   "target_duration_seconds": 88,
   "estructura": "pregunta",
-  "resumen": "Chalmers measured nearly 3,000 blood proteins: TRL and Lp(a) share inflammatory patterns that may explain the risk that remains after lowering LDL.",
+  "resumen": "Chalmers midió casi 3000 proteínas en sangre: TRL y Lp(a) comparten patrones inflamatorios que podrían explicar el riesgo que queda tras bajar el LDL.",
   "keywords": [
-    "cholesterol",
-    "heart",
-    "health"
+    "colesterol",
+    "corazón",
+    "salud"
   ],
   "trend_source": {
     "termino": "riesgo residual colesterol",
@@ -23,7 +23,7 @@
     "engine": "kokoro-onnx",
     "voice_id": "am_adam",
     "lang": "en-us",
-    "speed": "tuned per capsule when mounting (see RELEVO_EN.md)"
+    "speed": "tuned per capsule (see RELEVO_EN.md)"
   },
   "sources": [
     {
@@ -47,8 +47,8 @@
       "id": "scene_001",
       "arc": "hook_medias_res",
       "duration_seconds": 9,
-      "narration": "Why does a heart attack still come after bad cholesterol has already dropped? A team at Chalmers, in Sweden, looked for the answer in the blood.",
-      "on_screen_text": "Low cholesterol, risk still there",
+      "narration": "Why does a heart attack arrive even after bad cholesterol has come down? A team at Chalmers, in Sweden, looked for the answer in the blood.",
+      "on_screen_text": "Low cholesterol, living risk",
       "visual_description": "cover composition: a stylized anatomical heart with a jagged pulse line, flat pink and teal overprint shapes, large empty area in the upper third for a title",
       "asset_filename": "frames/scene_001.jpg",
       "source_ids": [
@@ -64,7 +64,7 @@
       "id": "scene_002",
       "arc": "desarrollo",
       "duration_seconds": 9,
-      "narration": "Lowering LDL cholesterol does reduce the risk of a heart attack. But bringing it into the recommended range does not erase it: a residual risk remains.",
+      "narration": "Lowering LDL cholesterol does cut heart attack risk. But bringing it into the recommended range does not erase it: a residual risk remains.",
       "on_screen_text": "LDL is not everything",
       "visual_description": "a descending staircase of flat shapes ending above a small remaining shadow, simple geometric metaphor, wide framing",
       "asset_filename": "frames/scene_002.jpg",
@@ -99,7 +99,7 @@
       "id": "scene_003",
       "arc": "desarrollo",
       "duration_seconds": 9,
-      "narration": "Cholesterol does not travel alone: particles called lipoproteins carry it. Three types load a protein called apolipoprotein B.",
+      "narration": "Cholesterol does not travel alone: it rides in particles called lipoproteins. Three types carry a protein called apolipoprotein B.",
       "on_screen_text": "Apolipoprotein B",
       "visual_description": "round lipoprotein particles like little spheres covered in tiny protein knobs floating in a blood stream, close-up macro",
       "asset_filename": "frames/scene_003.jpg",
@@ -116,7 +116,7 @@
       "id": "scene_004",
       "arc": "desarrollo",
       "duration_seconds": 9,
-      "narration": "They are LDL, triglyceride-rich lipoproteins, or TRL, and lipoprotein(a). All three can leave cholesterol in artery walls.",
+      "narration": "They are LDL, triglyceride-rich lipoproteins, or TRL, and lipoprotein a. All three can leave cholesterol in artery walls.",
       "on_screen_text": "LDL · TRL · Lp(a)",
       "visual_description": "three different sized particles side by side drifting along an artery wall with small deposits, side cross-section view",
       "asset_filename": "frames/scene_004.jpg",
@@ -133,8 +133,8 @@
       "id": "scene_005",
       "arc": "desarrollo",
       "duration_seconds": 9,
-      "narration": "The team measured nearly 3,000 proteins in blood and crossed them with genetic data and health records.",
-      "on_screen_text": "≈3,000 proteins",
+      "narration": "The team measured almost three thousand proteins in blood and crossed them with genetic data and health records.",
+      "on_screen_text": "About 3000 proteins",
       "visual_description": "rows of blood sample tubes seen from above with a dense constellation of tiny dots spreading out from them, top-down view",
       "asset_filename": "frames/scene_005.jpg",
       "source_ids": [
@@ -156,7 +156,7 @@
       "id": "scene_006",
       "arc": "desarrollo",
       "duration_seconds": 9,
-      "narration": "The surprise: TRL and lipoprotein(a) showed very similar protein patterns, and those patterns were linked to later heart disease.",
+      "narration": "The surprise: TRL and lipoprotein a showed very similar protein patterns, and those patterns were linked to later heart disease.",
       "on_screen_text": "Twin patterns",
       "visual_description": "two overlapping patterned circles, one pink one teal, merging where they overlap, misregistered print look, centered composition",
       "asset_filename": "frames/scene_006.jpg",
@@ -173,7 +173,7 @@
       "id": "scene_007",
       "arc": "desarrollo",
       "duration_seconds": 9,
-      "narration": "Those particles carry proteins that attract immune cells and could inflame the vessel wall, beyond depositing cholesterol.",
+      "narration": "Those particles carry proteins that attract immune cells and could inflame vessel walls, beyond depositing cholesterol.",
       "on_screen_text": "Inflammation",
       "visual_description": "immune cells shaped like soft blobs gathering around a swollen glowing section of artery wall, medium close-up, low angle",
       "asset_filename": "frames/scene_007.jpg",
@@ -190,8 +190,8 @@
       "id": "scene_008",
       "arc": "cierre_historia",
       "duration_seconds": 9,
-      "narration": "LDL showed a different pattern, tied to accumulating cholesterol, and lowering it remains the foundation. The study did not prove a treatment or a clinical test.",
-      "on_screen_text": "LDL is still the foundation",
+      "narration": "LDL showed a different pattern, tied to piling up cholesterol, and lowering it is still the foundation. The study proved no treatment and no clinical test.",
+      "on_screen_text": "LDL is still the base",
       "visual_description": "a single sturdy column holding up a simple roof, with two smaller columns still missing, architectural metaphor, wide framing",
       "asset_filename": "frames/scene_008.jpg",
       "source_ids": [
@@ -207,8 +207,8 @@
       "id": "scene_009",
       "arc": "reflexion_o_pregunta",
       "duration_seconds": 9,
-      "narration": "But there are already clues to why residual risk remains. Which particles should we measure besides LDL? That was Datos y ociosidades.",
-      "on_screen_text": "What else should we measure?",
+      "narration": "But now there are clues to why risk remains. Which particles should we measure besides LDL? That was Datos y ociosidades.",
+      "on_screen_text": "What else to measure?",
       "visual_description": "a magnifying lens hovering over a flowing river of colorful particles, diagonal composition, plenty of space",
       "asset_filename": "frames/scene_009.jpg",
       "source_ids": [
@@ -234,7 +234,7 @@
     "ambiente_lufs": -30
   },
   "export": {
-    "filename": "capsula_en.mp4",
+    "filename": "capsula.mp4",
     "resolution": "1080x1920",
     "fps": 30,
     "codec_video": "h264",
@@ -246,6 +246,5 @@
   "nota_produccion": "Lote 19:00 del 14-nov-2026 (Grok Bot). Guion del stock ampliado a 9 escenas solo con hechos de las fuentes citadas (releídas el 14-nov) para llegar a 85–90 s. Original en storyboard_stock.json.",
   "canal": {
     "handle": "@datosyociosidadesEN"
-  },
-  "nota": "English narration translated from the current corrected Spanish script in storyboard.json (rewritten 14-nov with re-read sources). Not translated from storyboard_stock.json. Sources and DOIs unchanged. Spoken close: “That was Datos y ociosidades.” No English MP4 in this package; timings in capsula_en.srt follow the Spanish voice window and should be recalibrated if English audio is mounted. Frames reused; no new images generated."
+  }
 }

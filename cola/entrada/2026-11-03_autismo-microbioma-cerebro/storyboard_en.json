@@ -1,17 +1,17 @@
 {
   "project_id": "2026-11-03_autismo-microbioma-cerebro_en",
   "serie": "Datos y ociosidades",
-  "title": "Gut microbiome and the brain in autism",
+  "title": "The gut talks to the brain in autism",
   "titulo": "Does the gut talk to the brain?",
   "language": "en-US",
   "aspect_ratio": "9:16",
   "target_duration_seconds": 88,
   "estructura": "pregunta",
-  "resumen": "A UCLA and USC study of 84 children and teenagers linked gut tryptophan metabolites with brain activity and autism symptoms. Association, not cause.",
+  "resumen": "Un estudio de UCLA y USC con 84 niños y adolescentes ligó metabolitos intestinales del triptófano con actividad cerebral y síntomas de autismo. Asociación, no causa.",
   "keywords": [
-    "microbiome",
-    "autism",
-    "brain"
+    "microbioma",
+    "autismo",
+    "cerebro"
   ],
   "trend_source": {
     "termino": "microbioma y autismo",
@@ -23,7 +23,7 @@
     "engine": "kokoro-onnx",
     "voice_id": "am_adam",
     "lang": "en-us",
-    "speed": "tuned per capsule when mounting (see RELEVO_EN.md)"
+    "speed": "tuned per capsule (see RELEVO_EN.md)"
   },
   "sources": [
     {
@@ -64,7 +64,7 @@
       "id": "scene_002",
       "arc": "desarrollo",
       "duration_seconds": 9,
-      "narration": "Eighty-four children and teenagers, ages 8 to 17, took part. Half had an autism diagnosis; the other half did not.",
+      "narration": "Eighty-four children and teenagers took part, aged eight to seventeen. Half had an autism diagnosis; the other half did not.",
       "on_screen_text": "84 participants",
       "visual_description": "eighty-four abstract glowing seed-like dots arranged in two equal swirling groups, one warm and one cool, seen from above, no people faces",
       "asset_filename": "frames/scene_002.jpg",
@@ -88,7 +88,7 @@
       "arc": "desarrollo",
       "duration_seconds": 9,
       "narration": "The team analyzed stool samples, scanned each participant's brain, and measured their behavior.",
-      "on_screen_text": "Stool, brain, and behavior",
+      "on_screen_text": "Stool, brain, behavior",
       "visual_description": "a petri dish full of swirling colorful microbes next to a glowing brain scan shape, close-up macro framing",
       "asset_filename": "frames/scene_003.jpg",
       "source_ids": [
@@ -139,7 +139,7 @@
       "id": "scene_005",
       "arc": "desarrollo",
       "duration_seconds": 9,
-      "narration": "One stood out: kynurenate, from the kynurenine pathway. That pathway is tied to brain processing and to cognitive changes.",
+      "narration": "One stood out: kinurenate, from the kinurenine pathway. That pathway is tied to brain processing and cognitive change.",
       "on_screen_text": "Kynurenate",
       "visual_description": "a winding luminous pathway of molecules flowing like a river through psychedelic organic shapes, top-down overhead view",
       "asset_filename": "frames/scene_005.jpg",
@@ -156,7 +156,7 @@
       "id": "scene_006",
       "arc": "desarrollo",
       "duration_seconds": 9,
-      "narration": "Lower levels were associated with changes in the activity of the insula and the cingulate, regions linked to emotions and the body.",
+      "narration": "Lower levels were linked to changes in activity in the insula and the cingulate, areas tied to emotions and the body.",
       "on_screen_text": "Insula and cingulate",
       "visual_description": "side profile of a stylized brain with two inner regions glowing intensely, ripples of color spreading outward, medium close-up",
       "asset_filename": "frames/scene_006.jpg",
@@ -190,7 +190,7 @@
       "id": "scene_008",
       "arc": "cierre_historia",
       "duration_seconds": 9,
-      "narration": "The authors propose studying diets, probiotics, or synbiotics. But many children with autism have sensory sensitivities that limit what they eat.",
+      "narration": "The authors propose studying diets, probiotics or synbiotics. But many children with autism have sensory sensitivities that limit what they eat.",
       "on_screen_text": "Diet and probiotics",
       "visual_description": "a bowl of colorful fruits, seeds and yogurt dissolving into swirling microbes and patterns, diagonal composition",
       "asset_filename": "frames/scene_008.jpg",
@@ -207,7 +207,7 @@
       "id": "scene_009",
       "arc": "reflexion_o_pregunta",
       "duration_seconds": 9,
-      "narration": "It was the first comprehensive analysis of brain, gut, and microbiome in autism. How far do microbes shape the way the brain processes the world? That was Datos y ociosidades.",
+      "narration": "It was the first full analysis of brain, gut and microbiome in autism. How far do microbes shape how the brain reads the world? That was Datos y ociosidades.",
       "on_screen_text": "How far?",
       "visual_description": "a tiny planet-like sphere made of microbes orbiting a giant glowing brain-shaped nebula, very wide cosmic framing",
       "asset_filename": "frames/scene_009.jpg",
@@ -234,7 +234,7 @@
     "ambiente_lufs": -30
   },
   "export": {
-    "filename": "capsula_en.mp4",
+    "filename": "capsula.mp4",
     "resolution": "1080x1920",
     "fps": 30,
     "codec_video": "h264",
@@ -246,6 +246,5 @@
   "nota_produccion": "Lote 19:00 del 14-nov-2026 (Grok Bot). Guion del stock ampliado a 9 escenas solo con hechos de las fuentes citadas (releídas el 14-nov) para llegar a 85–90 s. Original en storyboard_stock.json.",
   "canal": {
     "handle": "@datosyociosidadesEN"
-  },
-  "nota": "English narration translated from the current corrected Spanish script in storyboard.json (rewritten 14-nov with re-read sources). Not translated from storyboard_stock.json. Sources and DOIs unchanged. Spoken close: “That was Datos y ociosidades.” No English MP4 in this package; timings in capsula_en.srt follow the Spanish voice window and should be recalibrated if English audio is mounted. Frames reused; no new images generated."
+  }
 }

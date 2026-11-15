@@ -1,17 +1,17 @@
 {
   "project_id": "2026-11-06_adn-sintetico-myc_en",
   "serie": "Datos y ociosidades",
-  "title": "DNA that turns off a cancer gene",
-  "titulo": "DNA that turns off a cancer gene",
+  "title": "DNA that switches off a cancer gene",
+  "titulo": "DNA that switches off a cancer gene",
   "language": "en-US",
   "aspect_ratio": "9:16",
   "target_duration_seconds": 88,
   "estructura": "historia",
-  "resumen": "The University of Portsmouth revived TFOs with a synthetic base, Z: they cut MYC gene activity by 50 to 80 percent in the lab.",
+  "resumen": "La Universidad de Portsmouth revivió los TFO con una base sintética Z: redujeron la actividad del gen MYC entre 50 y 80 % en laboratorio.",
   "keywords": [
-    "DNA",
-    "cancer",
-    "genetics"
+    "ADN",
+    "cáncer",
+    "genética"
   ],
   "trend_source": {
     "termino": "ADN sintético contra MYC",
@@ -23,7 +23,7 @@
     "engine": "kokoro-onnx",
     "voice_id": "am_adam",
     "lang": "en-us",
-    "speed": "tuned per capsule when mounting (see RELEVO_EN.md)"
+    "speed": "tuned per capsule (see RELEVO_EN.md)"
   },
   "sources": [
     {
@@ -47,8 +47,8 @@
       "id": "scene_001",
       "arc": "hook_medias_res",
       "duration_seconds": 9,
-      "narration": "A piece of artificial DNA coils around a cancer gene and turns down the volume. The idea had been waiting for decades.",
-      "on_screen_text": "DNA that turns off a cancer gene",
+      "narration": "A piece of artificial DNA wraps around a cancer gene and turns its volume down. The idea waited for decades.",
+      "on_screen_text": "DNA that switches off a cancer gene",
       "visual_description": "cover composition: a DNA double helix with a third thin strand wrapping into its groove, glowing white lines on black, large empty black area in the upper third for a title",
       "asset_filename": "frames/scene_001.jpg",
       "source_ids": [
@@ -99,7 +99,7 @@
       "id": "scene_003",
       "arc": "desarrollo",
       "duration_seconds": 9,
-      "narration": "They are called TFOs. They recognize an exact sequence of double-stranded DNA and settle onto it as a third strand.",
+      "narration": "They are called TFOs. They recognize one exact sequence of double-stranded DNA and settle onto it like a third strand.",
       "on_screen_text": "A third strand",
       "visual_description": "macro detail of a third strand sliding along the major groove of a double helix like a key into a lock, extreme close-up",
       "asset_filename": "frames/scene_003.jpg",
@@ -116,8 +116,8 @@
       "id": "scene_004",
       "arc": "desarrollo",
       "duration_seconds": 9,
-      "narration": "In the test tube they worked beautifully. But inside cells, the chemistry of natural DNA would not let them bind with enough strength.",
-      "on_screen_text": "The tube vs the cell",
+      "narration": "In the test tube they worked beautifully. But inside cells, the chemistry of natural DNA would not let them bind strongly.",
+      "on_screen_text": "Test tube vs cell",
       "visual_description": "a laboratory test tube on the left and a large round cell on the right, the strand slipping off the DNA inside the cell, side by side composition",
       "asset_filename": "frames/scene_004.jpg",
       "source_ids": [
@@ -133,8 +133,8 @@
       "id": "scene_005",
       "arc": "desarrollo",
       "duration_seconds": 9,
-      "narration": "The hardest regions were those rich in guanine and cytosine, areas that control when a gene is switched on.",
-      "on_screen_text": "G- and C-rich regions",
+      "narration": "The hardest zones were the ones rich in guanine and cytosine, regions that control when a gene switches on.",
+      "on_screen_text": "G and C rich zones",
       "visual_description": "a dense tightly packed region of a DNA ladder with thick rungs, like a locked gate, overhead view",
       "asset_filename": "frames/scene_005.jpg",
       "source_ids": [
@@ -150,7 +150,7 @@
       "id": "scene_006",
       "arc": "desarrollo",
       "duration_seconds": 9,
-      "narration": "The twist: the team added a synthetic base called Z, which is already sold commercially. With it, the TFOs bound with more strength and precision.",
+      "narration": "The twist: the team added a synthetic base called Z, already sold commercially. With it, the TFOs bound more strongly and precisely.",
       "on_screen_text": "The Z base",
       "visual_description": "a single new puzzle-piece shaped base glowing as it locks the third strand firmly onto the helix, dramatic low angle",
       "asset_filename": "frames/scene_006.jpg",
@@ -167,8 +167,8 @@
       "id": "scene_007",
       "arc": "desarrollo",
       "duration_seconds": 9,
-      "narration": "They tested it on MYC, a gene that drives many cancers when it speeds up. Its activity dropped between 50 and 80 percent in lab experiments.",
-      "on_screen_text": "MYC: −50 to −80%",
+      "narration": "They tested it on mick, a gene that drives many cancers when it speeds up. Its activity fell between 50 and 80 percent in lab experiments.",
+      "on_screen_text": "MYC: down 50 to 80%",
       "visual_description": "a large dial or volume knob engraved in white lines being turned down, wires of DNA leading into it, medium shot",
       "asset_filename": "frames/scene_007.jpg",
       "source_ids": [
@@ -190,8 +190,8 @@
       "id": "scene_008",
       "arc": "cierre_historia",
       "duration_seconds": 9,
-      "narration": "They outperformed unmodified DNA and earlier methods. A great deal of research is still needed before thinking about patients.",
-      "on_screen_text": "Not in patients yet",
+      "narration": "They beat unmodified DNA and earlier methods. Much research is still needed before thinking about patients.",
+      "on_screen_text": "Not yet in patients",
       "visual_description": "a long winding road made of DNA rungs stretching toward a distant horizon, very wide framing",
       "asset_filename": "frames/scene_008.jpg",
       "source_ids": [
@@ -207,7 +207,7 @@
       "id": "scene_009",
       "arc": "reflexion_o_pregunta",
       "duration_seconds": 9,
-      "narration": "For now it is a tool for turning genes off and studying what happens. Which gene would you want to silence on demand? That was Datos y ociosidades.",
+      "narration": "For now it is a tool to switch genes off and study what happens. Which gene would you like to silence on demand? That was Datos y ociosidades.",
       "on_screen_text": "Which gene would you silence?",
       "visual_description": "a field of many DNA helices standing like trees at night, one of them dimmed, wide symmetrical framing",
       "asset_filename": "frames/scene_009.jpg",
@@ -234,7 +234,7 @@
     "ambiente_lufs": -30
   },
   "export": {
-    "filename": "capsula_en.mp4",
+    "filename": "capsula.mp4",
     "resolution": "1080x1920",
     "fps": 30,
     "codec_video": "h264",
@@ -246,6 +246,5 @@
   "nota_produccion": "Lote 19:00 del 14-nov-2026 (Grok Bot). Guion del stock ampliado a 9 escenas solo con hechos de las fuentes citadas (releídas el 14-nov) para llegar a 85–90 s. Original en storyboard_stock.json.",
   "canal": {
     "handle": "@datosyociosidadesEN"
-  },
-  "nota": "English narration translated from the current corrected Spanish script in storyboard.json (rewritten 14-nov with re-read sources). Not translated from storyboard_stock.json. Sources and DOIs unchanged. Spoken close: “That was Datos y ociosidades.” No English MP4 in this package; timings in capsula_en.srt follow the Spanish voice window and should be recalibrated if English audio is mounted. Frames reused; no new images generated."
+  }
 }
