@@ -362,5 +362,16 @@
     "estilo": "risografia",
     "origen": "propia",
     "slot": "19:00"
+  },
+  {
+    "fecha": "2026-11-18",
+    "project_id": "2026-11-05_sinergia-algas",
+    "estructura": "sabias_que",
+    "cama": "pulso",
+    "duracion": 89,
+    "tema": "Virus y bacterias colapsan el bloom",
+    "estilo": "papel_rasgado_capas",
+    "origen": "propia",
+    "slot": "19:00"
   }
 ]

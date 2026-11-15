@@ -1,144 +1,233 @@
 {
-  "project_id": "2026-11-05_sinergia-algas",
-  "title": "Virus y bacterias colapsan el bloom",
-  "language": "es-MX",
-  "aspect_ratio": "9:16",
-  "target_duration_seconds": 82,
-  "trend_source": {
-    "tipo": "noticia_cientifica",
-    "medio": "Nature",
-    "url": "https://www.nature.com/articles/s41586-026-11243-7",
-    "estudio_doi": "10.1038/s41586-026-11243-7",
-    "fecha_publicacion": "2026-11-04",
-    "termino": "sinergia viral bacteriana floraciones algas",
-    "fecha_consulta": "2026-11-05"
+ "project_id": "2026-11-05_sinergia-algas",
+ "serie": "Datos y ociosidades",
+ "title": "Virus y bacterias colapsan el bloom",
+ "titulo": "La alianza que tumba un bloom",
+ "language": "es-MX",
+ "aspect_ratio": "9:16",
+ "target_duration_seconds": 88,
+ "estructura": "sabias_que",
+ "resumen": "Instituto Weizmann: las bacterias Alteromonas potencian la muerte viral de microalgas y aceleran el colapso de los blooms, con efecto en el ciclo del carbono.",
+ "keywords": [
+  "océano",
+  "algas",
+  "carbono"
+ ],
+ "trend_source": {
+  "termino": "blooms de algas",
+  "fecha_consulta": "2026-11-14"
+ },
+ "estilo_id": "papel_rasgado_capas",
+ "estilo_visual": "Papel rasgado por capas (diorama)",
+ "voice": {
+  "engine": "edge-tts",
+  "voice_id": "es-MX-JorgeNeural",
+  "rate": "+7%",
+  "pitch": "-2Hz",
+  "pad_seconds": 0.3,
+  "modo_pausas": "continuo"
+ },
+ "sources": [
+  {
+   "id": "SRC-001",
+   "cita_corta": "Kuhlisch, C., Soffer, E. et al. (2026). Synergy in viral–bacterial co-infection expedites algal bloom demise. Nature.",
+   "doi": "10.1038/s41586-026-11243-7",
+   "url": "https://www.nature.com/articles/s41586-026-11243-7",
+   "accessed": "2026-11-14",
+   "ref_display": "Kuhlisch et al., Nature 2026"
+  }
+ ],
+ "scenes": [
+  {
+   "id": "scene_001",
+   "arc": "hook_medias_res",
+   "duration_seconds": 9,
+   "narration": "Un bloom de algas que cubre kilómetros de mar se desploma de golpe. Y los virus, por sí solos, no alcanzan a explicarlo.",
+   "on_screen_text": "La alianza que tumba un bloom",
+   "visual_description": "cover composition: a vast milky turquoise algal bloom swirling on a dark sea seen from high above, layered torn paper waves, large empty calm area in the upper third for a title",
+   "asset_filename": "frames/scene_001.jpg",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "ambiente": "silencio",
+   "sfx": [],
+   "motion": "suave",
+   "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text, cover composition: a vast milky turquoise algal bloom swirling on a dark sea seen from high above, layered torn paper waves, large empty calm area in the upper third for a title, no text, no letters, no watermark, no logos, no people with glasses"
   },
-  "estilo_id": "papel_rasgado_capas",
-  "estilo_visual": "Papel rasgado por capas (diorama)",
-  "voice": {
-    "engine": "edge-tts",
-    "voice_id": "es-MX-JorgeNeural",
-    "rate": "+7%",
-    "pitch": "-2Hz",
-    "pad_seconds": 0.3,
-    "modo_pausas": "continuo"
+  {
+   "id": "scene_002",
+   "arc": "desarrollo",
+   "duration_seconds": 9,
+   "narration": "Es Gephyrocapsa huxleyi, un cocolitóforo muy abundante. Cuando su bloom colapsa, menos del 30 por ciento de las células tiene infección viral activa.",
+   "on_screen_text": "Menos del 30 %",
+   "visual_description": "a single round coccolithophore cell covered in plate-like scales, giant and centered, macro close-up",
+   "asset_filename": "frames/scene_002.jpg",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "ambiente": "silencio",
+   "sfx": [],
+   "motion": "suave",
+   "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text, a single round coccolithophore cell covered in plate-like scales, giant and centered, macro close-up, no text, no letters, no watermark, no logos, no people with glasses",
+   "capa": {
+    "tipo": "dato",
+    "valor": "< 30 %",
+    "etiqueta": "de las células con infección viral activa",
+    "fuente": "Kuhlisch et al., Nature 2026"
+   }
   },
-  "sources": [
-    {
-      "id": "SRC-001",
-      "cita_corta": "Kuhlisch et al. (2026). Synergy in viral–bacterial co-infection expedites algal bloom demise. Nature.",
-      "url": "https://www.nature.com/articles/s41586-026-11243-7",
-      "doi": "10.1038/s41586-026-11243-7",
-      "accessed": "2026-11-05",
-      "supports": ["bacterias potencian mortalidad viral en G. huxleyi", "Alteromonas tiene alto synergy index", "afecta shunt y shuttle de carbono"],
-      "ref_display": "Kuhlisch et al. Nature 2026"
-    }
-  ],
-  "scenes": [
-    {
-      "id": "scene_001",
-      "arc": "hook_medias_res",
-      "duration_seconds": 8.0,
-      "narration": "En el mar, un bloom de algas se apaga más rápido de lo que el virus solo puede explicar.",
-      "on_screen_text": "Bloom que cae",
-      "visual_description": "océano con floración blanca de coccolitóforos que se oscurece",
-      "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text + ocean surface with white coccolithophore bloom darkening under stormy light",
-      "source_ids": ["SRC-001"],
-      "asset_filename": "frames/scene_001.jpg",
-      "ambiente": "oceano",
-      "sfx": ["olas"]
-    },
-    {
-      "id": "scene_002",
-      "arc": "desarrollo",
-      "duration_seconds": 10.0,
-      "narration": "Gephyrocapsa huxleyi cubre kilómetros. Menos del 30 por ciento de las células tienen virus activo, pero el bloom entero se desploma.",
-      "on_screen_text": "Menos del 30%",
-      "visual_description": "células de alga con placas de calcita y virus gigantes",
-      "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text + microscopic view of Gephyrocapsa huxleyi cells with calcite plates and large viruses",
-      "source_ids": ["SRC-001"],
-      "asset_filename": "frames/scene_002.jpg",
-      "ambiente": "oceano",
-      "sfx": ["burbujas"]
-    },
-    {
-      "id": "scene_003",
-      "arc": "desarrollo",
-      "duration_seconds": 11.0,
-      "narration": "Investigadores aislaron algas, virus EhV y bacterias del bloom. Con antibióticos la muerte bajó hasta 19 veces. Las bacterias aceleran el colapso.",
-      "on_screen_text": "Bacterias aceleran",
-      "visual_description": "laboratorio con cultivos y placas de Petri de Alteromonas",
-      "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text + lab petri dishes with Alteromonas bacteria colonies next to algal culture flasks",
-      "source_ids": ["SRC-001"],
-      "asset_filename": "frames/scene_003.jpg",
-      "ambiente": "laboratorio",
-      "sfx": ["vidrio"]
-    },
-    {
-      "id": "scene_004",
-      "arc": "desarrollo",
-      "duration_seconds": 10.0,
-      "narration": "Alteromonas tiene el synergy index más alto. Se siente atraída por las células infectadas y crece más cuando el virus está presente.",
-      "on_screen_text": "Alteromonas atraída",
-      "visual_description": "bacterias nadando hacia células de alga infectadas",
-      "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text + Alteromonas bacteria swimming toward infected algal cells in water",
-      "source_ids": ["SRC-001"],
-      "asset_filename": "frames/scene_004.jpg",
-      "ambiente": "oceano",
-      "sfx": ["corriente"]
-    },
-    {
-      "id": "scene_005",
-      "arc": "desarrollo",
-      "duration_seconds": 9.0,
-      "narration": "Lo mismo pasa en Phaeocystis, Micromonas y Ostreococcus. No es un caso aislado.",
-      "on_screen_text": "Cuatro algas",
-      "visual_description": "cuatro tipos de microalgas en diorama",
-      "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text + four different microalgae species floating in layered paper ocean",
-      "source_ids": ["SRC-001"],
-      "asset_filename": "frames/scene_005.jpg",
-      "ambiente": "oceano",
-      "sfx": ["olas"]
-    },
-    {
-      "id": "scene_006",
-      "arc": "cierre_historia",
-      "duration_seconds": 10.0,
-      "narration": "Esta sinergia mueve el balance entre el shunt viral que recicla carbono en superficie y el shuttle que lo hunde. Afecta el ciclo del carbono global.",
-      "on_screen_text": "Ciclo del carbono",
-      "visual_description": "partículas de bloom hundiéndose y reciclándose",
-      "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text + sinking algal bloom particles versus surface recycling in ocean diorama",
-      "source_ids": ["SRC-001"],
-      "asset_filename": "frames/scene_006.jpg",
-      "ambiente": "oceano",
-      "sfx": ["burbujas"]
-    },
-    {
-      "id": "scene_007",
-      "arc": "reflexion_o_pregunta",
-      "duration_seconds": 9.0,
-      "narration": "¿Cuántos blooms del océano dependen de esta alianza invisible? Esto fue Datos y ociosidades.",
-      "on_screen_text": "Datos y ociosidades",
-      "visual_description": "océano amplio al atardecer con capas de papel",
-      "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text + wide ocean horizon at dusk with layered paper clouds and calm surface",
-      "source_ids": ["SRC-001"],
-      "asset_filename": "frames/scene_007.jpg",
-      "ambiente": "oceano",
-      "sfx": ["viento"]
-    }
-  ],
-  "cortinilla_fuentes": {
-    "duration_seconds": 6,
-    "titulo": "Fuentes",
-    "aviso": "Imágenes generadas con IA. Voz sintética. Audio sintetizado.",
-    "firma": "Datos y ociosidades · @datosyociosidades"
+  {
+   "id": "scene_003",
+   "arc": "desarrollo",
+   "duration_seconds": 9,
+   "narration": "Un equipo del Instituto Weizmann, en Israel, armó una comunidad sintética con algas, virus y bacterias aislados de un bloom real.",
+   "on_screen_text": "Comunidad sintética",
+   "visual_description": "three small glass flasks on a lab bench holding green algae, tiny virus particles and rod-shaped bacteria rendered as paper cutouts, side view, no people",
+   "asset_filename": "frames/scene_003.jpg",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "ambiente": "silencio",
+   "sfx": [],
+   "motion": "suave",
+   "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text, three small glass flasks on a lab bench holding green algae, tiny virus particles and rod-shaped bacteria rendered as paper cutouts, side view, no people, no text, no letters, no watermark, no logos, no people with glasses",
+   "capa": {
+    "tipo": "mapa",
+    "region": [
+     25,
+     45,
+     25,
+     40
+    ],
+    "puntos": [
+     {
+      "nombre": "Instituto Weizmann",
+      "lon": 34.81,
+      "lat": 31.9
+     }
+    ],
+    "titulo": "Equipo: Instituto Weizmann, Israel",
+    "fuente": "Kuhlisch et al., Nature 2026 (afiliación principal). Coordenada aproximada. Base: Natural Earth 110m (dominio público)."
+   }
   },
-  "export": {
-    "filename": "capsula.mp4",
-    "resolution": "1080x1920",
-    "fps": 30,
-    "loudness_lufs": -14
+  {
+   "id": "scene_004",
+   "arc": "desarrollo",
+   "duration_seconds": 9,
+   "narration": "Resultado: las bacterias aumentaron significativamente la muerte de algas causada por el virus. No era un ataque, sino una coinfección.",
+   "on_screen_text": "Coinfección",
+   "visual_description": "rod-shaped bacteria and spiky virus particles converging on a large algal cell from opposite sides, dramatic low angle",
+   "asset_filename": "frames/scene_004.jpg",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "ambiente": "silencio",
+   "sfx": [],
+   "motion": "suave",
+   "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text, rod-shaped bacteria and spiky virus particles converging on a large algal cell from opposite sides, dramatic low angle, no text, no letters, no watermark, no logos, no people with glasses"
   },
-  "estructura": "historia",
-  "titulo": "Bloom que cae solo"
+  {
+   "id": "scene_005",
+   "arc": "desarrollo",
+   "duration_seconds": 9,
+   "narration": "Para medirlo crearon dos índices: el de sinergia, que mide la fuerza de esa alianza, y el de beneficio, que mide cuánto gana la bacteria.",
+   "on_screen_text": "Sinergia y beneficio",
+   "visual_description": "two balanced paper scale pans holding paper cutout microbes, simple symmetrical composition, top-down view",
+   "asset_filename": "frames/scene_005.jpg",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "ambiente": "silencio",
+   "sfx": [],
+   "motion": "suave",
+   "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text, two balanced paper scale pans holding paper cutout microbes, simple symmetrical composition, top-down view, no text, no letters, no watermark, no logos, no people with glasses"
+  },
+  {
+   "id": "scene_006",
+   "arc": "desarrollo",
+   "duration_seconds": 9,
+   "narration": "La campeona fue Alteromonas: la atraen extractos de células infectadas, se acumula en los restos del colapso y aumenta cuando el bloom cae.",
+   "on_screen_text": "Alteromonas",
+   "visual_description": "a swarm of small rod-shaped bacteria rushing toward a sinking clump of broken algal cells, diagonal motion, medium shot",
+   "asset_filename": "frames/scene_006.jpg",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "ambiente": "silencio",
+   "sfx": [],
+   "motion": "suave",
+   "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text, a swarm of small rod-shaped bacteria rushing toward a sinking clump of broken algal cells, diagonal motion, medium shot, no text, no letters, no watermark, no logos, no people with glasses"
+  },
+  {
+   "id": "scene_007",
+   "arc": "desarrollo",
+   "duration_seconds": 9,
+   "narration": "Y no es un caso aislado: la sinergia también apareció en otras tres microalgas muy extendidas por el planeta.",
+   "on_screen_text": "Cuatro microalgas",
+   "visual_description": "four different microalgae cells in a row, each a different torn paper shape and color, flat frontal framing",
+   "asset_filename": "frames/scene_007.jpg",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "ambiente": "silencio",
+   "sfx": [],
+   "motion": "suave",
+   "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text, four different microalgae cells in a row, each a different torn paper shape and color, flat frontal framing, no text, no letters, no watermark, no logos, no people with glasses"
+  },
+  {
+   "id": "scene_008",
+   "arc": "cierre_historia",
+   "duration_seconds": 9,
+   "narration": "Importa por el carbono. Los organismos fotosintéticos del mar fijan unos 50 gigatones de carbono al año, y buena parte ocurre en blooms como este.",
+   "on_screen_text": "50 gigatones al año",
+   "visual_description": "the ocean surface glowing green with phytoplankton under a sun, layered paper clouds, wide horizon",
+   "asset_filename": "frames/scene_008.jpg",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "ambiente": "silencio",
+   "sfx": [],
+   "motion": "suave",
+   "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text, the ocean surface glowing green with phytoplankton under a sun, layered paper clouds, wide horizon, no text, no letters, no watermark, no logos, no people with glasses"
+  },
+  {
+   "id": "scene_009",
+   "arc": "reflexion_o_pregunta",
+   "duration_seconds": 9,
+   "narration": "Esta alianza decide si ese carbono se recicla en la superficie o se hunde al fondo. ¿Cuántas alianzas invisibles mueven el clima? Esto fue Datos y ociosidades.",
+   "on_screen_text": "¿Reciclar o hundir?",
+   "visual_description": "a vertical cross-section of the sea: particles swirling near the surface while others sink as marine snow into the dark depths, tall vertical framing",
+   "asset_filename": "frames/scene_009.jpg",
+   "source_ids": [
+    "SRC-001"
+   ],
+   "ambiente": "silencio",
+   "sfx": [],
+   "motion": "suave",
+   "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text, a vertical cross-section of the sea: particles swirling near the surface while others sink as marine snow into the dark depths, tall vertical framing, no text, no letters, no watermark, no logos, no people with glasses"
+  }
+ ],
+ "cortinilla_fuentes": {
+  "duration_seconds": 10,
+  "titulo": "Fuentes",
+  "aviso": "Imágenes generadas con IA. Voz sintética. Música sintetizada.",
+  "firma": "Datos y ociosidades · @datosyociosidades"
+ },
+ "audio": {
+  "music_asset": "sintetico:pulso",
+  "cama_musical": "pulso",
+  "music_lufs": -27,
+  "ambiente_lufs": -30
+ },
+ "export": {
+  "filename": "capsula.mp4",
+  "resolution": "1080x1920",
+  "fps": 30,
+  "codec_video": "h264",
+  "codec_audio": "aac",
+  "loudness_lufs": -14,
+  "subtitle_max_words": 3,
+  "plano_seconds": 5
+ },
+ "nota_produccion": "Lote 19:00 del 14-nov-2026 (Grok Bot). Guion del stock ampliado a 9 escenas solo con hechos de las fuentes citadas (releídas el 14-nov) para llegar a 85–90 s. Original en storyboard_stock.json."
 }
