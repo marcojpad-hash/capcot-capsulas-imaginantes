@@ -559,6 +559,23 @@
   },
   {
     "fecha": "2026-11-16",
+    "project_id": "2026-11-16_sarampion",
+    "slot": "07:00",
+    "yt_id": "cci90_HP6R4",
+    "url": "https://youtube.com/shorts/cci90_HP6R4",
+    "privacidad": "private→public (publishAt)",
+    "publishAt_utc": "2026-11-16T13:00:00Z",
+    "hora_local": "2026-11-16 07:00 (America/Mexico_City)",
+    "video": "capsula.mp4",
+    "titulo": "El sarampión volvió a México después de 30 años #Shorts",
+    "origen": "dato_del_dia",
+    "tiktok": "pendiente",
+    "facebook": "pendiente",
+    "miniatura": "pendiente",
+    "nota": "Dato del día 16-nov, relevo de Amor: Kokoro ef_dora (narradora_es) speed 0.73, 94.27s, 133.4 ppm, estilo vitral, QA pasa. Fuentes: El Economista + INSP (SSA al 12-nov-2026: 20,701 casos, 50 muertes). Programado 16-nov 07:00 CST, yt_id cci90_HP6R4, verificado en YouTube Studio 2026-11-15."
+  },
+  {
+    "fecha": "2026-11-16",
     "project_id": "2026-10-25_corales-contacto",
     "yt_id": "45WOvkNQTHo",
     "url": "https://youtube.com/shorts/45WOvkNQTHo",
