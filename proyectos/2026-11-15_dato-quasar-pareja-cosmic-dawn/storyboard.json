@@ -13,7 +13,7 @@
   "scene_total_seconds": 78,
   "cortinilla_seconds": 6,
   "total_duration_seconds": 84,
-  "word_count": 180,
+  "word_count": 184,
   "estructura": "pregunta",
   "audience": "Público general interesado en astronomía y ciencia.",
   "occasion": "Slot 17:00 CDMX, dentro de la ventana activa 16:30–18:00. Domingo no preferente, pero no excluido. Borrador textual, sin programación.",
@@ -170,7 +170,7 @@
       "id": "scene_002",
       "arc": "desarrollo",
       "duration_seconds": 9,
-      "narration": "El seguimiento desde tierra se hizo con Gemini North, en Maunakea, Hawái.",
+      "narration": "La compañera era mucho más débil; dos noches de cielo excepcionalmente limpio permitieron estudiarla desde Maunakea.",
       "on_screen_text": "Gemini North · Maunakea",
       "visual_description": "Vista editorial de Maunakea con la cúpula de Gemini North bajo un cielo oscuro; el punto cartográfico identifica el observatorio terrestre, no la posición del par.",
       "image_prompt": "post-impressionist painting in the style of Van Gogh's Starry Night, swirling brushstrokes, deep blues and glowing yellows, vertical 9:16, no text Vista editorial de Maunakea con la cúpula de Gemini North bajo un cielo oscuro; el punto cartográfico identifica el observatorio terrestre, no la posición del par.",
@@ -183,12 +183,12 @@
         "SRC-003"
       ],
       "style_id": "van_gogh",
-      "dramatic_beat": "El seguimiento terrestre aporta el instrumento y el lugar de observación.",
-      "scene_function": "El seguimiento terrestre aporta el instrumento y el lugar de observación.",
-      "causal_bridge_from_previous": "Para saber qué separó las fuentes, se identifica el observatorio que hizo el seguimiento desde tierra.",
-      "question_state": "Se conoce el instrumento de seguimiento, no la naturaleza física del par.",
-      "reason_to_continue": "El lugar del seguimiento lleva a la época en que vemos el sistema.",
-      "new_information": "Gemini North está en Maunakea, Hawái; el mapa solo localiza el observatorio.",
+      "dramatic_beat": "La debilidad de la compañera vuelve decisivas las condiciones de observación: el seguimiento pudo medirla en solo dos noches.",
+      "scene_function": "La debilidad de la compañera vuelve decisivas las condiciones de observación: el seguimiento pudo medirla en solo dos noches.",
+      "causal_bridge_from_previous": "Resolver dos fuentes tan próximas no bastaba: la compañera era débil y necesitaba observaciones de seguimiento en condiciones excepcionales.",
+      "question_state": "La segunda fuente pudo estudiarse pese a su debilidad; todavía falta situar cuándo emitió esa luz.",
+      "reason_to_continue": "Una vez resuelta la dificultad observacional, la época cósmica revela por qué el hallazgo es extraordinario.",
+      "new_information": "El seguimiento aprovechó dos noches de condiciones excepcionalmente limpias en Maunakea para estudiar la fuente compañera.",
       "capa": {
         "tipo": "mapa",
         "puntos": [
@@ -220,11 +220,11 @@
         "SRC-002"
       ],
       "style_id": "van_gogh",
-      "dramatic_beat": "La distancia temporal vuelve extraordinario el hallazgo.",
-      "scene_function": "La distancia temporal vuelve extraordinario el hallazgo.",
-      "causal_bridge_from_previous": "El lugar de observación no explica el asombro; la época cósmica sí.",
-      "question_state": "Se sabe que la luz procede de una etapa muy temprana del universo.",
-      "reason_to_continue": "La edad del universo hace necesario conocer la búsqueda que lo reveló.",
+      "dramatic_beat": "La fecha cósmica transforma una observación difícil en una ventana al universo temprano.",
+      "scene_function": "La fecha cósmica transforma una observación difícil en una ventana al universo temprano.",
+      "causal_bridge_from_previous": "Con las dos fuentes ya estudiadas por separado, la pregunta pasa de cómo observarlas a cuándo emitieron la luz que recibimos.",
+      "question_state": "La luz procede de una etapa muy temprana: el universo tenía unos 900 millones de años.",
+      "reason_to_continue": "La época establece la importancia del sistema; ahora falta explicar cómo apareció el compañero en los datos.",
       "new_information": "El sistema se observa a z≈6.08, unos 900 millones de años después del Big Bang."
     },
     {
@@ -388,7 +388,8 @@
     "La separación se presenta como proyectada y la hipótesis de lente gravitacional permanece abierta.",
     "El DOI 10.3847/2041-8213/aeb11f permanece PENDIENTE_RESOLVEDOR; el enlace arXiv al manuscrito primario es accesible.",
     "El estilo de la cápsula previa de las 07:00 (colibrí) no está registrado en el estado de slots ni existe su storyboard en este repositorio; la unicidad frente a esa pieza no es certificable. Este estilo sí difiere del último storyboard del repositorio y del otro borrador del día.",
-    "No se añade narrative_qa: la lectura en frío y la promoción corresponden al auditor independiente."
+    "No se añade narrative_qa: la lectura en frío y la promoción corresponden al auditor independiente.",
+    "Revisión narrativa v2: se eliminó la repetición de Gemini North en escena 2 y se reconstruyó el puente 2→3 (dificultad de observación → época cósmica). narrative_qa histórico permanece FAIL/82; requiere nueva lectura en frío independiente. No promover ni redispatchar."
   ],
   "linea_tematica_provisional": "Espacio y astronomía",
   "risk_notes": [
