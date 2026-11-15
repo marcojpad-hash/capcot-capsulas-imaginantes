@@ -163,3 +163,33 @@ Se revisaron las páginas oficiales de Graph API, Instagram Insights, Facebook P
 - Los DOI de los dos storyboards permanecen `PENDIENTE_RESOLVEDOR`; las URL primarias están incluidas dentro de los JSON.
 - Los borradores permanecen únicamente en `proyectos/`; no se copiaron a `cola/entrada/`, no se marcaron preparados y no se aceptaron por Grok.
 - No se generaron frames, imágenes, audio, voz, video ni renders. No se publicó ni programó. No se modificaron `data/*.json`, `main`, workflows, motores canónicos ni Motor U6. No se consumieron créditos.
+
+## Reejecución de control — 15-nov-2026, 09:33 CDMX
+
+**Resultado: NO_DUPLICAR.** El RADAR de esta fecha ya existe y conserva sus cinco candidatos; los dos storyboards aplicables también existen. No se creó un segundo brief ni un tercer storyboard.
+
+La relectura de ajustes_entre_modelos/ESTADO_SLOTS_2026-11-15.md (corte 06:24 CDMX) y de los storyboards confirma cinco slots con registro:
+- **07:00:** colibrí es6hWxPdt2A, privado y programado para 13:00Z; no se declara publicación efectiva.
+- **13:30:** agua-imanes O9QlSaft5DY, slot de prueba ocupado.
+- **17:00:** 2026-11-15_dato-quasar-pareja-cosmic-dawn, existente en proyectos/.
+- **19:00:** autismo-microbioma aTau_z2yWq8, registrado en el estado del día aunque la ventana aparece retirada en la configuración actual.
+- **23:30:** 2026-11-15_dato-dia-diapausa-lestes-sponsa, existente en proyectos/, slot_cesta=dato_del_dia.
+
+El archivo específico data/horario_2026-11-15.json no existe; se mantiene la referencia al contrato y horario general. Los cinco slots ya tienen registro y el cupo diario global de cinco está alcanzado. Resultado por slot: 17:00 y 23:30 **NO_DUPLICAR**; 07:00, 13:30 y 19:00 ya están ocupados/registrados. No hay slot autorizado libre para otro storyboard.
+
+### Relectura de los dos storyboards existentes
+
+- **2026-11-15_dato-quasar-pareja-cosmic-dawn:** fecha_objetivo=2026-11-15, slot_local=17:00, 178 palabras, 8 escenas, 78 s de escenas + 6 s de cortinilla = 84 s.
+- **2026-11-15_dato-dia-diapausa-lestes-sponsa:** fecha_objetivo=2026-11-15, slot_local=23:30, slot_cesta=dato_del_dia, 183 palabras, 8 escenas, 78 s de escenas + 6 s de cortinilla = 84 s.
+
+Ambos conservan arcos completos, narrative_contract, source_ids válidos, estilo y prompt_base literal, voz edge-tts es-MX-JorgeNeural (+7%, -2Hz), mapa y capa de dato. En ambos se revalidó approved_assets=[], export.render_status=NOT_GENERATED, ausencia de export.filename, asset_filename, asset_type y rutas de medios, y publicacion.status=PENDIENTE_DECISION_GROK. Ninguno contiene narrative_qa: ambos siguen **PENDIENTE_AUDITOR**. No se modificaron sus archivos ni se promovieron a cola.
+
+### RSS y Google Trends — nueva comprobación
+
+Los diez RSS científicos y Google Trends RSS México se volvieron a consultar con las URL exactas de scripts/tendencias.py. Se reprodujeron los mismos fallos: ScienceDaily (3 feeds) HTTP 400 Unsupported content-type: application/xml; Phys.org HTTP 400 text/xml; NASA HTTP 400 application/rss+xml; ESA HTTP 404 Not Found; Nature HTTP 400 application/rss+xml; EurekAlert y SINC URL is not accessible via this tool; UNAM Global HTTP 400 application/rss+xml; Google Trends RSS México URL is not accessible via this tool. No se afirmó parseo XML.
+
+Como respaldo se consultó Trending Now oficial de México (últimas 24 h): **214 tendencias** en la vista. Las primeras 25 estuvieron dominadas por fútbol/deportes y entretenimiento; no apareció una señal inequívoca de ciencia o naturaleza. El snapshot no se interpreta como interés científico ni como validación de los candidatos.
+
+### Seguimiento técnico
+
+Se añadió la sección 9.8 a docs/INVESTIGACION_API_META_Y_GOOGLE_TRENDS.md para documentar la discrepancia oficial entre el overview y Page Insights (v27.0) y la tabla de versiones (v26.0). No se cambió ninguna integración. Instagram Insights y el changelog general devolvieron HTTP 429; Page Insights sí fue consultable y mantiene los límites ya registrados, incluida la exclusión de interacciones de Reels. Google Trends API continúa en alfa limitada sin cambio nuevo de contrato.
