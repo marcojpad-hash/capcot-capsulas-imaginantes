@@ -249,20 +249,21 @@
   },
   "narrative_qa": {
     "status": "FAIL",
-    "score": 80,
+    "score": 72,
     "review_basis": "lectura_en_frio_solo_narracion",
     "reviewer_role": "auditor_capcot_independiente",
-    "reviewed_at": "2026-11-14T15:04:13-06:00",
+    "reviewed_at": "2026-11-15T15:51:23-06:00",
     "checks": {
       "pregunta_central_reconstruible": true,
       "apertura_in_medias_res": true,
       "progresion_por_escena": false,
       "transiciones_causales": false,
-      "giro_cientifico_explicado": true,
-      "limite_evidencia_explicito": true,
+      "giro_cientifico_explicado": false,
+      "limite_evidencia_explicito": false,
       "payoff_cierre_apertura": false
     },
     "critical_flags": [
+      "FUENTE_PRIMARIA_CORRESPONDE_A_OCTOPUS_LAQUEUS_NO_INSULARIS",
       "REPETICION_ESCENAS_5_6_Y_PAYOFF_VAGO"
     ]
   }
