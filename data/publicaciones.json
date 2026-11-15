@@ -748,5 +748,24 @@
   "nota": "Lote 19:00 montado 2026-11-14, JorgeNeural, 88.60s, QA 21/21, 9 frames dibujo_cientifico_scratchboard. Token ~/.capcot/token.json.",
   "tiktok_post_id": null,
   "facebook_content_id": null
+ },
+ {
+  "fecha": "2026-11-21",
+  "project_id": "2026-11-09_dato-robot-ensambla-orbita",
+  "slot": "19:00",
+  "yt_id": "ZG4iQgmWrLI",
+  "url": "https://youtube.com/shorts/ZG4iQgmWrLI",
+  "privacidad": "private→public (publishAt)",
+  "publishAt_utc": "2026-11-22T01:00:00Z",
+  "hora_local": "2026-11-21 19:00 (America/Mexico_City)",
+  "video": "capsula.mp4",
+  "titulo": "Un robot ensambla una estructura en órbita #Shorts",
+  "origen": "propia",
+  "tiktok": "pendiente",
+  "facebook": "pendiente",
+  "miniatura": "portada.jpg (OK 1080x1920, igual a portada.jpg (dif media 0.1/255))",
+  "nota": "Lote 19:00 montado 2026-11-14, JorgeNeural, 87.57s, QA 21/21, 9 frames neon_noir. Token ~/.capcot/token.json.",
+  "tiktok_post_id": null,
+  "facebook_content_id": null
  }
 ]
