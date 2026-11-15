@@ -24,18 +24,3 @@ Proyecto para producir micro-cápsulas científicas verticales (9:16, 60–90 s)
 
 Los scripts de validación y montaje existen. El plan maestro documenta un prototipo probado; las corridas concretas deben distinguirse de los paquetes locales y verificarse por separado.
 **Para Grok / modelos externos:** ver `ajustes_entre_modelos/HANDOFF_GROK_PRODUCCION.md`.
-
-## Nuevos módulos — descubrimiento y continuidad
-- [Buscador de generadores de video](scripts/buscar_generadores_video.py): cataloga APIs, repositorios públicos, modelos abiertos y alternativas de ensamblaje; no contrata servicios ni consume créditos.
-- [Continuidad audiovisual](docs/CONTINUIDAD_AUDIOVISUAL.md): biblia visual, tipográfica y de voz, con reglas de consistencia de inicio a fin.
-- Validador: `python scripts/validar_continuidad_audiovisual.py <storyboard.json>`.
-- Workflow semanal: `.github/workflows/capcot-descubrimiento.yml` (requiere integrar esta rama a `main` para activar el calendario).
-
-
-## APIs de edición: Krea y Runway
-- [Investigación y decisión de integración](docs/API_EDITORES_KREA_RUNWAY.md).
-- [Activar las claves desde Android](docs/CONFIGURAR_APIS_DESDE_ANDROID.md).
-- Cliente API opcional: `scripts/media_api_clients.py` (Krea 3 y Runway/Bria FIBO Edit 1.5 para edición de imagen; Krea Seedance 2.5 para clips; Runway Aleph 2.0 para edición de video).
-- Credenciales solo como variables de entorno/Repository Secrets: `KREA_API_KEY` y `RUNWAYML_API_SECRET`. No se guardan en Git.
-- Las llamadas de generación son facturables y no se ejecutan en CI.
-- Migración y auditoría de continuidad: `scripts/migrar_storyboard_continuidad.py`, `scripts/validar_continuidad_audiovisual.py`, `scripts/auditar_assets_storyboard.py`.
