@@ -389,7 +389,7 @@
     "status": "PASS",
     "score": 91,
     "review_basis": "lectura_en_frio_solo_narracion",
-    "reviewed_at": "2026-11-16T15:18:26-06:00",
+    "reviewed_at": "2026-11-16T15:45:46-06:00",
     "reviewer_role": "auditor_capcot_independiente",
     "checks": {
       "pregunta_central_reconstruible": true,
