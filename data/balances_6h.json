@@ -2831,5 +2831,125 @@
    ]
   ],
   "nota_flujo": "Corte vs 14-nov 13:54 CDMX (~24 h; la rutina corre una vez al día ~14:00). YT 32,458→32,904 (+446 vistas), likes 1,017→1,026 (+9), comentarios 28→28 (+0), subs 83→84 (+1). 71→73 Shorts públicos (+2: Agua que une imanes lejanos O9QlSaft5DY a las 2026-11-15 13:30 CDMX (0 vistas, 0 likes); El colibrí que se enfría casi como una piedra es6hWxPdt2A a las 2026-11-15 07:00 CDMX (6 vistas, 2 likes)). Lo empujan TT El colibrí que se enfría casi como una piedra A ti te basta  7708391512161209620 nuevo 393 (3 likes); TT ¿Y si un solo aminoácido cambia cómo el virus Andes sale de  7708392379941719317 nuevo 391 (8 likes); TT Dicen que los árboles se hablan bajo tierra. Simard midió en 7708391972129639701 nuevo 265 (2 likes). En YT se estancó La corneja decide en 235 milisegundos wxnhEdlJYwU (sigue en 0); El rosa del flamenco viene de su comida JV8SB2EpPyI (sigue en 1); ¿Por qué tenemos hipo? Rg-iTgMExWw (sigue en 1). El nuevo Agua que une imanes lejanos O9QlSaft5DY va en 0 vista(s). TT (yt-dlp, listado público @datosyociosidades): 73→78 videos (+5), 17,203→18,454 vistas (+1,251), 864→899 likes (+35), comentarios 4→5. En TT lo mueven TT El colibrí que se enfría casi como una piedra A ti te basta  nuevo 393, TT ¿Y si un solo aminoácido cambia cómo el virus Andes sale de  nuevo 391, TT Dicen que los árboles se hablan bajo tierra. Simard midió en nuevo 265, TT ¿Se va la luz el 17 de noviembre por una IA que se escapó? E nuevo 173, TT El rosa del flamenco viene de su comida. Piensa en la zanaho 103→117 (+14). Seguidores de TT no se pudieron leer. Nota de fuente YT: el token OAuth (~/.capcot/token.json) está revocado; hay que volver a autorizar el canal para el flujo habitual de la API."
+ },
+ {
+  "hora_cdmx": "2026-11-16T14:03-06:00",
+  "base_youtube": "2026-11-15T14:00",
+  "base_tiktok": "2026-11-15T14:00",
+  "youtube_totales": {
+   "view": 34033,
+   "like": 1072,
+   "comment": 28
+  },
+  "suscriptores": 87,
+  "shorts_publicos": 82,
+  "delta_youtube": {
+   "view": 1129,
+   "like": 46,
+   "comment": 0,
+   "suscriptores": 3,
+   "horas_desde_base": 24.1,
+   "nota": "Δ de ~24 h vs el corte 15-nov 14:00 CDMX. La rutina corre una vez al día ~14:00. 73→82 Shorts públicos (+9). Fuente: YouTube Data API v3 OAuth ~/.capcot/token.json (youtube.readonly; canal Datos y ociosidades UCU2ZI-6pBJEr9aSFsF6bxLw). La playlist de uploads no trajo 3 Shorts que siguen públicos (7ay4KLS8h8I, GlBl4S4aDAs, 0x1B9_rMm-I) y se sumaron con videos.list. Nuevos: El coral blanqueado que volvió a recuperarse 45WOvkNQTHo a las 2026-11-16 13:30 CDMX (4 vistas, 1 likes); El sarampión volvió a México después de 30 años cci90_HP6R4 a las 2026-11-16 07:00 CDMX (56 vistas, 2 likes); El pulpo reparte el trabajo entre tres corazones THQxnLZEz3A a las 2026-11-15 23:30 CDMX (61 vistas, 5 likes); ¿Se va la luz el 17 de noviembre por una IA? #inteligenciaartificial hrUwoLgADBI a las 2026-11-15 21:00 CDMX (11 vistas, 0 likes); El agua que baila sobre el sartén t8nH76NOOH8 a las 2026-11-15 19:55 CDMX (715 vistas, 28 likes); No habrá apagón el 17 de noviembre Z-nt8t7qPx8 a las 2026-11-15 19:53 CDMX (5 vistas, 0 likes); El mapa 3D del cerebro fetal que revela el origen de la esquizofrenia N7a9o4xKTas a las 2026-11-15 19:30 CDMX (52 vistas, 2 likes); Microbioma intestinal y cerebro en autismo aTau_z2yWq8 a las 2026-11-15 19:00 CDMX (24 vistas, 1 likes); se fugo la ia jeUrM5zzkdA a las 2026-11-15 15:40 CDMX (0 vistas, 0 likes)."
+  },
+  "tiktok_totales": {
+   "view": 23513,
+   "like": 982,
+   "comment": 6
+  },
+  "seguidores_tiktok": null,
+  "likes_perfil_tiktok": null,
+  "videos_tiktok": 82,
+  "delta_tiktok": {
+   "view": 5059,
+   "like": 83,
+   "comment": 1,
+   "seguidores": null,
+   "likes_perfil": null,
+   "videos": 4,
+   "nota": "Δ vs 15-nov 14:00 (~24 h): 18454→23513 vistas (+5059), 899→982 likes (+83), comentarios 5→6, 78→82 videos (+4). Fuente: yt-dlp, listado público @datosyociosidades. Nuevos en el listado: El coral blanqueado que volvió a recuperarse Conte 7708177280417221894 (9 vistas, 0 likes); El sarampión volvió a México después de treinta añ 7708761702111759634 (2 vistas, 0 likes); El pulpo reparte el trabajo entre tres corazones.  7708616723385142580 (0 vistas, 0 likes); Microbioma intestinal y cerebro en autismo Conteni 7708223881630207284 (677 vistas, 9 likes). Seguidores no se pudieron leer."
+  },
+  "ranking_crecimiento": [
+   [
+    "TT ¿Se va la luz el 17 de noviembre por una IA que se escapó? E",
+    2714
+   ],
+   [
+    "YT El agua que baila sobre el sartén",
+    715
+   ],
+   [
+    "TT Microbioma intestinal y cerebro en autismo Contenido ilustra",
+    677
+   ],
+   [
+    "TT Agua que une imanes lejanos Contenido ilustrado con IA.",
+    665
+   ],
+   [
+    "TT Dicen que los árboles se hablan bajo tierra. Simard midió en",
+    395
+   ],
+   [
+    "TT ¿Y si un solo aminoácido cambia cómo el virus Andes sale de ",
+    320
+   ],
+   [
+    "TT El colibrí que se enfría casi como una piedra A ti te basta ",
+    272
+   ],
+   [
+    "YT El pulpo reparte el trabajo entre tres corazones",
+    61
+   ],
+   [
+    "YT El sarampión volvió a México después de 30 años",
+    56
+   ],
+   [
+    "YT El colibrí que se enfría casi como una piedra",
+    56
+   ],
+   [
+    "YT El mapa 3D del cerebro fetal que revela el origen de la esquizofrenia",
+    52
+   ],
+   [
+    "YT Agua que une imanes lejanos",
+    47
+   ],
+   [
+    "YT De bebé tenías más huesos que ahora",
+    44
+   ],
+   [
+    "YT Microbioma intestinal y cerebro en autismo",
+    24
+   ],
+   [
+    "YT Un aminoácido cambia el virus Andes",
+    23
+   ],
+   [
+    "YT ¿Se va la luz el 17 de noviembre por una IA? #inteligenciaartificial",
+    11
+   ],
+   [
+    "TT El coral blanqueado que volvió a recuperarse Contenido ilust",
+    9
+   ],
+   [
+    "YT ¿Los árboles hablan bajo tierra?",
+    7
+   ],
+   [
+    "YT No habrá apagón el 17 de noviembre",
+    5
+   ],
+   [
+    "YT El coral blanqueado que volvió a recuperarse",
+    4
+   ]
+  ],
+  "nota_flujo": "Corte vs 15-nov 14:00 CDMX (~24 h; la rutina corre una vez al día ~14:00). YT 32,904→34,033 (+1,129 vistas), likes 1,026→1,072 (+46), comentarios 28→28 (+0), subs 84→87 (+3). 73→82 Shorts públicos (+9: El coral blanqueado que volvió a recuperarse 45WOvkNQTHo a las 2026-11-16 13:30 CDMX (4 vistas, 1 likes); El sarampión volvió a México después de 30 años cci90_HP6R4 a las 2026-11-16 07:00 CDMX (56 vistas, 2 likes); El pulpo reparte el trabajo entre tres corazones THQxnLZEz3A a las 2026-11-15 23:30 CDMX (61 vistas, 5 likes); ¿Se va la luz el 17 de noviembre por una IA? #inteligenciaartificial hrUwoLgADBI a las 2026-11-15 21:00 CDMX (11 vistas, 0 likes); El agua que baila sobre el sartén t8nH76NOOH8 a las 2026-11-15 19:55 CDMX (715 vistas, 28 likes); No habrá apagón el 17 de noviembre Z-nt8t7qPx8 a las 2026-11-15 19:53 CDMX (5 vistas, 0 likes); El mapa 3D del cerebro fetal que revela el origen de la esquizofrenia N7a9o4xKTas a las 2026-11-15 19:30 CDMX (52 vistas, 2 likes); Microbioma intestinal y cerebro en autismo aTau_z2yWq8 a las 2026-11-15 19:00 CDMX (24 vistas, 1 likes); se fugo la ia jeUrM5zzkdA a las 2026-11-15 15:40 CDMX (0 vistas, 0 likes)). Lo empujan TT ¿Se va la luz el 17 de noviembre por una IA que se escapó? E 7708472528242593032 173→2887 (+2714); YT El agua que baila sobre el sartén t8nH76NOOH8 nuevo 715 (28 likes); TT Microbioma intestinal y cerebro en autismo Contenido ilustra 7708223881630207284 nuevo 677 (9 likes). En YT se estancó La corneja decide en 235 milisegundos wxnhEdlJYwU (sigue en 0); ¿Por qué tenemos hipo? Rg-iTgMExWw (sigue en 1). El nuevo El coral blanqueado que volvió a recuperarse 45WOvkNQTHo va en 4 vista(s). El nuevo No habrá apagón el 17 de noviembre Z-nt8t7qPx8 va en 5 vista(s). El nuevo se fugo la ia jeUrM5zzkdA va en 0 vista(s). TT (yt-dlp, listado público @datosyociosidades): 78→82 videos (+4), 18,454→23,513 vistas (+5,059), 899→982 likes (+83), comentarios 5→6. En TT lo mueven TT ¿Se va la luz el 17 de noviembre por una IA que se escapó? E 173→2887 (+2714), TT Microbioma intestinal y cerebro en autismo Contenido ilustra nuevo 677, TT Agua que une imanes lejanos Contenido ilustrado con IA. 5→670 (+665), TT Dicen que los árboles se hablan bajo tierra. Simard midió en 265→660 (+395), TT ¿Y si un solo aminoácido cambia cómo el virus Andes sale de  391→711 (+320). Seguidores de TT no se pudieron leer. Fuente YT: YouTube Data API v3 (token reautorizado el 16-nov)."
  }
 ]
