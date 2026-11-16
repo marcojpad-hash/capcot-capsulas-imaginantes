@@ -338,13 +338,23 @@ def commit_and_pr(gh, repo_root, number, files, title, body, dry_run=False):
     sh(["git", "config", "user.name", "trabajador-cola"], cwd=repo_root)
     sh(["git", "config", "user.email", "trabajador-cola@capcot.local"],
        cwd=repo_root)
-    sh(["git", "checkout", "-b", branch], cwd=repo_root)
+    # Si el Issue se re-encola, la rama remota ya existe con la corrida
+    # anterior: se borra para que el re-run empiece limpio y no abra el
+    # PR sobre el artefacto viejo. Si no existe, el borrado falla y no
+    # pasa nada. (Pasó con cuásares, 2026-11-15: el push fue rechazado
+    # por la rama existente, falló en silencio y el PR abrió sobre la
+    # auditoría inventada.)
+    sh(["git", "push", "origin", "--delete", branch], cwd=repo_root)
+    sh(["git", "checkout", "-B", branch], cwd=repo_root)
     for f in files:
         sh(["git", "add", f], cwd=repo_root)
     r = sh(["git", "commit", "-m", title], cwd=repo_root)
     if r.returncode != 0:
         raise RuntimeError("git commit falló: " + r.stderr.strip()[:500])
-    sh(["git", "push", "-u", "origin", branch], cwd=repo_root)
+    r = sh(["git", "push", "-u", "origin", branch], cwd=repo_root)
+    if r.returncode != 0:
+        raise RuntimeError("git push falló: " +
+                           (r.stdout + r.stderr).strip()[:500])
     return gh.open_pr(branch, title, body)
 
 
