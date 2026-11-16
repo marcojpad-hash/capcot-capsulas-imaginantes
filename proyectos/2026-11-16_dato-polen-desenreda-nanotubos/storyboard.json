@@ -1,0 +1,380 @@
+{
+  "schema_version": "storyboard_vertical_v1",
+  "project_id": "2026-11-16_dato-polen-desenreda-nanotubos",
+  "fecha_objetivo": "2026-11-16",
+  "slot_local": "17:00",
+  "slot_cesta": "intermedio_1",
+  "serie": "Datos y ociosidades",
+  "title": "El polen que desenreda nanotubos",
+  "titulo": "El polen desenreda nanotubos",
+  "language": "es-MX",
+  "aspect_ratio": "9:16",
+  "target_duration_seconds": 84,
+  "scene_total_seconds": 78,
+  "narration_word_count": 196,
+  "narration_character_count": 1255,
+  "gancho": "La tinta se apelmaza",
+  "gancho_word_count": 4,
+  "linea_tematica": "Actualidad — botánica y ciencia de materiales",
+  "audiencia": "Público general interesado en naturaleza, ciencia y tecnología.",
+  "ocasion": "Ventana de tarde; cápsula de ciencia de materiales con un mecanismo naturalista y visual.",
+  "resumen": "Microgeles de polen de girasol ayudan a dispersar nanotubos de carbono en agua mediante agitación suave; el alginato estabiliza la mezcla y permite formar tintas imprimibles. El polen no es el componente conductor.",
+  "estructura": "paradoja_mecanica",
+  "arco": "hook_medias_res → desarrollo → cierre_historia → reflexion_o_pregunta",
+  "narrative_contract": {
+    "central_question": "¿Puede la arquitectura del polen de girasol ayudar a separar nanotubos de carbono sin recurrir al ultrasonido de alta potencia?",
+    "promise": "Seguir el mecanismo que convierte un microgel de polen en dispersante y explicar qué parte de la tinta aporta la conductividad.",
+    "stakes": "Los nanotubos se agrupan en agua y esa agregación dificulta obtener tintas imprimibles; el método convencional puede requerir ultrasonido de alta potencia.",
+    "scientific_turn": "La superficie anfifílica y espinosa del polen impulsa captura-colisión-fricción con agitación suave; el alginato estabiliza electrostáticamente la dispersión.",
+    "evidence_limit": "El estudio demuestra un sistema experimental y estabilidad acuosa reportada por más de seis meses; no demuestra por sí solo vida útil comercial, impacto ambiental completo ni despliegue industrial.",
+    "payoff": "El polen no conduce por sí solo: ayuda a dispersar el material que sí conduce, los nanotubos de carbono."
+  },
+  "estilo_id": "collage_cientifico_vintage",
+  "visual_identity": {
+    "style_id": "collage_cientifico_vintage",
+    "style_name": "Collage científico vintage",
+    "prompt_base": "vintage scientific collage, cut-out 19th century natural history engravings, botanical and anatomical plates, aged paper, muted pastel accents, one large specimen centered, plain background, not photorealistic, vertical 9:16, no text",
+    "palette": "crema, sepia, verde salvia, rosa viejo",
+    "composition": "Un espécimen central por escena; los mecanismos se presentan como láminas recortadas y diagramas editoriales separados.",
+    "lighting": "Luz difusa de gabinete de historia natural, sin brillo futurista.",
+    "texture": "Papel envejecido, grabado botánico y recortes con bordes suaves.",
+    "negative_prompt": "No fotorealismo, no logos, no letras dentro de la imagen, no marcas comerciales, no estetoscopios, no equipos de laboratorio inventados, no mezclar estilos."
+  },
+  "typography_identity": {
+    "title_font": "Montserrat ExtraBold",
+    "body_font": "Source Sans 3",
+    "numeric_font": "IBM Plex Mono",
+    "title_case": "Sentence case",
+    "subtitle_position": "Tercio inferior con margen de seguridad",
+    "contrast_rule": "Texto editorial separado de la imagen; no incrustar texto en los prompts."
+  },
+  "voice": {
+    "engine": "edge-tts",
+    "voice_id": "es-MX-JorgeNeural",
+    "language": "es-MX",
+    "rate": "+7%",
+    "pitch": "-2Hz"
+  },
+  "cortinilla_fuentes": {
+    "duration_seconds": 6,
+    "source_ids": [
+      "SRC-001"
+    ],
+    "on_screen_text": "Gao et al. · Nature Communications · 14 nov 2026",
+    "visual_description": "Cortinilla de fuentes en el mismo collage naturalista; no se ha generado ningún medio.",
+    "style_id": "collage_cientifico_vintage"
+  },
+  "scenes": [
+    {
+      "id": "scene_001",
+      "arc": "hook_medias_res",
+      "duration_seconds": 9,
+      "narration": "La tinta negra se apelmaza en el vaso: los nanotubos de carbono se niegan a dispersarse.",
+      "on_screen_text": "La tinta se apelmaza",
+      "visual_description": "Primer plano de una gota de tinta acuosa; un cúmulo negro de nanotubos forma un grumo visible que no se dispersa, composición de lámina naturalista.",
+      "image_prompt": "vintage scientific collage, cut-out 19th century natural history engravings, botanical and anatomical plates, aged paper, muted pastel accents, one large specimen centered, plain background, not photorealistic, vertical 9:16, no text Primer plano de una gota de tinta acuosa; un cúmulo negro de nanotubos forma un grumo visible que no se dispersa, composición de lámina naturalista.",
+      "ambiente": "Burbujeo bajo de líquido espeso y cama musical discreta.",
+      "sfx": [
+        "Gota densa al caer"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "collage_cientifico_vintage",
+      "dramatic_beat": "La mezcla falla antes de que aparezca la solución.",
+      "scene_function": "Presentar la anomalía ya en curso: la tinta se apelmaza.",
+      "causal_bridge_from_previous": "La anomalía de la tinta exige identificar qué material se está agrupando.",
+      "question_state": "¿Por qué la tinta se apelmaza?",
+      "reason_to_continue": "Identificar el material permite entender el problema.",
+      "new_information": "Los nanotubos de carbono se agrupan en agua."
+    },
+    {
+      "id": "scene_002",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "Son excelentes conductores, pero en agua tienden a agruparse. Para separarlos suele recurrirse a ultrasonido de alta potencia.",
+      "on_screen_text": "Nanotubos: conductores, pero se agrupan",
+      "visual_description": "Dos estados del mismo líquido: nanotubos agrupados en agua y una onda de ultrasonido representada como vibración abstracta, sin aparatos ni etiquetas.",
+      "image_prompt": "vintage scientific collage, cut-out 19th century natural history engravings, botanical and anatomical plates, aged paper, muted pastel accents, one large specimen centered, plain background, not photorealistic, vertical 9:16, no text Dos estados del mismo líquido: nanotubos agrupados en agua y una onda de ultrasonido representada como vibración abstracta, sin aparatos ni etiquetas.",
+      "ambiente": "Zumbido breve de vibración, sin simular un equipo real.",
+      "sfx": [
+        "Vibración breve"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "collage_cientifico_vintage",
+      "dramatic_beat": "El obstáculo no es la conductividad, sino la agregación.",
+      "scene_function": "Definir el obstáculo físico y el método convencional que el estudio evita.",
+      "causal_bridge_from_previous": "Si los nanotubos se agrupan, la pregunta pasa a cómo separarlos sin el tratamiento habitual.",
+      "question_state": "¿Cómo se separan los nanotubos?",
+      "reason_to_continue": "El método convencional explica qué debe resolver la alternativa.",
+      "new_information": "El ultrasonido de alta potencia es un método convencional de dispersión."
+    },
+    {
+      "id": "scene_003",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "El estudio de Gao y colegas cambió el ayudante: microgeles de polen de girasol, usados como partículas granulares, sin extraer primero sus moléculas.",
+      "on_screen_text": "Polen de girasol en estado granular",
+      "visual_description": "Un grano de polen de girasol ampliado como espécimen central; alrededor, microgeles granulares como pequeñas esferas, sin representar un laboratorio específico.",
+      "image_prompt": "vintage scientific collage, cut-out 19th century natural history engravings, botanical and anatomical plates, aged paper, muted pastel accents, one large specimen centered, plain background, not photorealistic, vertical 9:16, no text Un grano de polen de girasol ampliado como espécimen central; alrededor, microgeles granulares como pequeñas esferas, sin representar un laboratorio específico.",
+      "ambiente": "Ambiente seco de lámina botánica y roce de papel.",
+      "sfx": [
+        "Apertura de lámina"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002",
+        "SRC-003"
+      ],
+      "style_id": "collage_cientifico_vintage",
+      "dramatic_beat": "El estudio cambia el dispersante, no el conductor.",
+      "scene_function": "Introducir el nuevo dispersante y ubicar la afiliación de los autores.",
+      "causal_bridge_from_previous": "El nuevo dispersante solo tiene sentido si su superficie explica la separación.",
+      "question_state": "¿Qué aporta el polen?",
+      "reason_to_continue": "La superficie del polen anticipa un mecanismo inesperado.",
+      "new_information": "El estudio utiliza microgeles de polen de girasol en estado granular nativo.",
+      "capa": {
+        "tipo": "mapa",
+        "puntos": [
+          {
+            "lat": 30.536077,
+            "lon": 114.353973,
+            "etiqueta": "Wuhan University (afiliación de autores; no sitio experimental)"
+          }
+        ],
+        "titulo": "Afiliación institucional en Wuhan, China",
+        "fuente": "SRC-001; SRC-002; SRC-003",
+        "nota_precision": "La coordenada es un punto georreferenciado dentro del campus. Se usa solo para ubicar la afiliación institucional; el artículo no sitúa allí el ensayo."
+      }
+    },
+    {
+      "id": "scene_004",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "Su superficie anfifílica y espinosa captura los cúmulos. Al agitar suavemente, los contactos producen choques blandos y fricción que los van deshaciendo.",
+      "on_screen_text": "Captura → colisión → fricción",
+      "visual_description": "Detalle macro de una superficie de polen anfifílica y espinosa que captura pequeños haces negros; flechas de movimiento se añadirán como overlay editorial separado.",
+      "image_prompt": "vintage scientific collage, cut-out 19th century natural history engravings, botanical and anatomical plates, aged paper, muted pastel accents, one large specimen centered, plain background, not photorealistic, vertical 9:16, no text Detalle macro de una superficie de polen anfifílica y espinosa que captura pequeños haces negros; flechas de movimiento se añadirán como overlay editorial separado.",
+      "ambiente": "Fricción granular suave, sin sonido mecánico agresivo.",
+      "sfx": [
+        "Tres roces granulares suaves"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "collage_cientifico_vintage",
+      "dramatic_beat": "La arquitectura del polen explica la primera separación.",
+      "scene_function": "Explicar el mecanismo de captura, colisión y fricción.",
+      "causal_bridge_from_previous": "Una vez separados, los nanotubos todavía podrían reagruparse; por eso entra el estabilizador.",
+      "question_state": "¿Cómo deshace los cúmulos?",
+      "reason_to_continue": "El mecanismo explica la separación, pero no la estabilidad.",
+      "new_information": "La superficie anfifílica y espinosa participa en captura-colisión-fricción con agitación suave."
+    },
+    {
+      "id": "scene_005",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "Pero separar no basta: el alginato se adsorbe y ayuda a estabilizar la dispersión, reduciendo que los nanotubos vuelvan a juntarse.",
+      "on_screen_text": "Alginato estabiliza la dispersión",
+      "visual_description": "Microgeles de polen y cadenas de alginato rodeando nanotubos ya separados; composición de mecanismo, no escala molecular literal.",
+      "image_prompt": "vintage scientific collage, cut-out 19th century natural history engravings, botanical and anatomical plates, aged paper, muted pastel accents, one large specimen centered, plain background, not photorealistic, vertical 9:16, no text Microgeles de polen y cadenas de alginato rodeando nanotubos ya separados; composición de mecanismo, no escala molecular literal.",
+      "ambiente": "Suspensión acuosa y un pulso suave al estabilizarse.",
+      "sfx": [
+        "Pulso de estabilización"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "collage_cientifico_vintage",
+      "dramatic_beat": "La estabilidad completa el mecanismo.",
+      "scene_function": "Mostrar por qué la separación necesita estabilización posterior.",
+      "causal_bridge_from_previous": "La estabilización permite evaluar si la mezcla puede comportarse como tinta imprimible.",
+      "question_state": "¿Cómo evita que vuelvan a juntarse?",
+      "reason_to_continue": "La mezcla ya dispersa necesita conservarse para imprimir.",
+      "new_information": "El alginato proporciona estabilización electrostática."
+    },
+    {
+      "id": "scene_006",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "Así obtuvieron una tinta de polen, alginato y nanotubos. Fluye bajo esfuerzo y recupera estructura al detenerse: esa tixotropía facilita la extrusión 3D y la serigrafía.",
+      "on_screen_text": "Extrusión 3D · serigrafía",
+      "visual_description": "Una boquilla de extrusión deposita una línea continua de tinta conductora y una pantalla de serigrafía imprime un patrón; el polen aparece como dispersante, los nanotubos como red conductora.",
+      "image_prompt": "vintage scientific collage, cut-out 19th century natural history engravings, botanical and anatomical plates, aged paper, muted pastel accents, one large specimen centered, plain background, not photorealistic, vertical 9:16, no text Una boquilla de extrusión deposita una línea continua de tinta conductora y una pantalla de serigrafía imprime un patrón; el polen aparece como dispersante, los nanotubos como red conductora.",
+      "ambiente": "Deslizamiento de tinta y contacto de rasero.",
+      "sfx": [
+        "Rasero de serigrafía"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "collage_cientifico_vintage",
+      "dramatic_beat": "La mezcla demuestra una función de tinta imprimible.",
+      "scene_function": "Conectar la reología de la tinta con su uso de impresión.",
+      "causal_bridge_from_previous": "La impresión muestra para qué sirve la reología; falta comprobar qué estructura queda al secarse.",
+      "question_state": "¿Puede convertirse en tinta imprimible?",
+      "reason_to_continue": "La tinta imprimible necesita mostrar su estructura final.",
+      "new_information": "La tinta PAC presenta tixotropía y alta viscoelasticidad, útiles para extrusión 3D y serigrafía."
+    },
+    {
+      "id": "scene_007",
+      "arc": "cierre_historia",
+      "duration_seconds": 10,
+      "narration": "Al secarse, forma capas ordenadas con redes conductoras. En el laboratorio, la dispersión acuosa permaneció estable más de seis meses; no es una garantía de vida útil comercial ni una evaluación ambiental completa.",
+      "on_screen_text": ">6 meses en dispersión acuosa de laboratorio",
+      "visual_description": "Una película seca con capas lamelares y red conductora; reloj de laboratorio como símbolo de estabilidad acuosa reportada, sin sugerir producto comercial.",
+      "image_prompt": "vintage scientific collage, cut-out 19th century natural history engravings, botanical and anatomical plates, aged paper, muted pastel accents, one large specimen centered, plain background, not photorealistic, vertical 9:16, no text Una película seca con capas lamelares y red conductora; reloj de laboratorio como símbolo de estabilidad acuosa reportada, sin sugerir producto comercial.",
+      "ambiente": "Ambiente quieto de laboratorio, reloj sutil.",
+      "sfx": [
+        "Tic de reloj amortiguado"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "collage_cientifico_vintage",
+      "dramatic_beat": "La prueba temporal respalda estabilidad experimental, no comercial.",
+      "scene_function": "Presentar el resultado medido y limitar su interpretación.",
+      "causal_bridge_from_previous": "El resultado de laboratorio permite cerrar el mecanismo, pero obliga a distinguir estabilidad experimental de producto comercial.",
+      "question_state": "¿Qué se demostró y qué no?",
+      "reason_to_continue": "La duración observada no equivale a una promesa comercial.",
+      "new_information": "El artículo reporta estabilidad de la dispersión acuosa por más de seis meses en condiciones experimentales.",
+      "capa": {
+        "tipo": "dato",
+        "valor": ">6 meses",
+        "etiqueta": "Estabilidad reportada de la dispersión acuosa PAC en laboratorio",
+        "fuente": "SRC-001",
+        "interpretacion": "El artículo reporta estabilidad de la dispersión acuosa durante más de seis meses en el sistema experimental; no equivale a vida útil comercial ni a evaluación ambiental."
+      }
+    },
+    {
+      "id": "scene_008",
+      "arc": "reflexion_o_pregunta",
+      "duration_seconds": 9,
+      "narration": "La sorpresa no es que el polen conduzca: no lo hace por sí solo. Su arquitectura ayuda a ordenar el material que sí conduce. ¿Qué otra estructura natural podría convertirse en herramienta? Esto fue Datos y ociosidades.",
+      "on_screen_text": "El polen dispersa; el nanotubo conduce",
+      "visual_description": "El grano de polen queda a un lado y la red de nanotubos al centro; la composición deja claro que el polen ayuda a dispersar, pero no es el conductor.",
+      "image_prompt": "vintage scientific collage, cut-out 19th century natural history engravings, botanical and anatomical plates, aged paper, muted pastel accents, one large specimen centered, plain background, not photorealistic, vertical 9:16, no text El grano de polen queda a un lado y la red de nanotubos al centro; la composición deja claro que el polen ayuda a dispersar, pero no es el conductor.",
+      "ambiente": "Cierre musical limpio y breve.",
+      "sfx": [
+        "Cierre tonal breve"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "collage_cientifico_vintage",
+      "dramatic_beat": "La sorpresa se resuelve sin atribuir conductividad al polen.",
+      "scene_function": "Pagar la apertura, separar dispersión de conductividad y cerrar con pregunta derivada.",
+      "causal_bridge_from_previous": "El límite evita confundir el papel del polen con la fuente de conductividad y devuelve la pregunta a la apertura.",
+      "question_state": "¿Qué hace realmente el polen?",
+      "reason_to_continue": "La respuesta final distingue el dispersante del conductor.",
+      "new_information": "El polen dispersa; los nanotubos son el componente conductor."
+    }
+  ],
+  "sources": [
+    {
+      "id": "SRC-001",
+      "type": "journal_article",
+      "title": "Sunflower pollen microgels enable sonication-free dispersion of carbon nanotubes for bio-based conductive inks",
+      "authors": [
+        "Changdan Gao",
+        "Di Yang",
+        "Jingwen Liang",
+        "Zongyu Wang",
+        "Mingyu Zhao",
+        "Ze Zhao",
+        "Hongbing Deng"
+      ],
+      "journal": "Nature Communications",
+      "publication_year": 2026,
+      "publication_date": "2026-11-14",
+      "doi": "10.1038/s41467-026-79607-1",
+      "url": "https://www.nature.com/articles/s41467-026-79607-1",
+      "full_text_url": "https://www.nature.com/articles/s41467-026-79607-1_reference.pdf",
+      "verification_status": "PENDIENTE_RESOLVEDOR",
+      "publisher_source_status": "PDF_EDITORIAL_ABIERTO_Y_CONTRASTADO",
+      "verification_detail": "Se abrió el PDF editorial de Nature Communications y se contrastaron título, autoría, fecha, mecanismo, reología, impresión y estabilidad acuosa. Los intentos de doi.org y Crossref devolvieron URL is not accessible via this tool; el DOI queda pendiente y no se declara validado por resolvedor.",
+      "supports": [
+        "Agregación de nanotubos de carbono en agua",
+        "Microgeles de polen de girasol en estado granular nativo",
+        "Mecanismo captura-colisión-fricción con agitación suave",
+        "Estabilización electrostática mediante alginato",
+        "Tixotropía, alta viscoelasticidad, extrusión 3D y serigrafía",
+        "Estabilidad de la dispersión acuosa por más de seis meses en el sistema experimental"
+      ],
+      "limitations": [
+        "El estudio es una demostración experimental; no equivale a producto comercial.",
+        "No se presenta una evaluación completa de ciclo de vida ni un despliegue industrial."
+      ]
+    },
+    {
+      "id": "SRC-002",
+      "type": "institutional_location",
+      "title": "Contact Us — Wuhan University",
+      "authors": [
+        "Wuhan University"
+      ],
+      "publication_year": null,
+      "publication_date": null,
+      "url": "https://en.whu.edu.cn/undergraduate/Contact_Us.htm",
+      "verification_status": "VERIFICADO_URL_OFICIAL",
+      "supports": [
+        "Dirección institucional de Wuhan University, Wuhan, Hubei, China."
+      ],
+      "limitations": [
+        "La afiliación institucional no identifica el lugar exacto del experimento."
+      ]
+    },
+    {
+      "id": "SRC-003",
+      "type": "geographic_coordinate",
+      "title": "Wuhan University main quad 2 — geotagged photograph",
+      "authors": [
+        "Howchou"
+      ],
+      "publication_year": 2018,
+      "publication_date": "2018-12-17",
+      "url": "https://commons.wikimedia.org/wiki/File:Wuhan_University_main_quad_2.jpg",
+      "coordinates": {
+        "lat": 30.536077,
+        "lon": 114.353973
+      },
+      "verification_status": "VERIFICADO_EN_METADATA_GEOETIQUETADA",
+      "supports": [
+        "Coordenada geográfica de un punto fotografiado dentro del campus de Wuhan University."
+      ],
+      "limitations": [
+        "El punto se usa como referencia de afiliación, no como sitio experimental."
+      ]
+    }
+  ],
+  "audio": {
+    "cama_musical": "sintetico:menor_calma",
+    "music_asset": null,
+    "mix_notes": "Cama instrumental discreta; voz al frente. No se ha generado audio.",
+    "ambience_rule": "Usar ambientes y SFX descritos por escena sin generar archivos."
+  },
+  "approved_assets": [],
+  "export": {
+    "resolution": "1080x1920",
+    "fps": 30,
+    "render_status": "NOT_GENERATED"
+  },
+  "publicacion": {
+    "status": "PENDIENTE_DECISION_GROK",
+    "platforms": [
+      "YouTube Shorts",
+      "TikTok",
+      "Facebook Reels"
+    ]
+  },
+  "editorial_status": "PENDIENTE_DECISION_GROK",
+  "estado": "BORRADOR_EN_PROYECTOS_PENDIENTE_AUDITOR",
+  "notas_de_control": [
+    "El DOI permanece PENDIENTE_RESOLVEDOR; la fuente primaria es el PDF editorial abierto.",
+    "El pin del mapa es una referencia geográfica de la afiliación institucional, no el sitio experimental.",
+    "No se incluye narrative_qa; la lectura en frío corresponde al auditor independiente.",
+    "No se generaron frames, imágenes, audio, voz, video ni renders."
+  ]
+}
