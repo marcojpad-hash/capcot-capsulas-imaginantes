@@ -223,31 +223,58 @@ def job_validar(ruta, repo_root):
 
 
 def job_texto(parsed, ruta, repo_root, dry_run=False):
-    """Genera el artefacto con Groq (Gemini como segunda opinión si hay clave)."""
+    """Genera el artefacto con Groq (Gemini como segunda opinión si hay clave).
+
+    tipo=texto: el artefacto ES el storyboard, se escribe en `ruta` y se
+    valida como storyboard antes del PR.
+    tipo=auditoria: el artefacto es un INFORME en prosa sobre el archivo de
+    `ruta`. NUNCA se escribe sobre `ruta` (eso destruía el storyboard y
+    luego el validador fallaba al leer prosa como JSON). El informe va a
+    AUDITORIA.md junto al archivo auditado y no se valida como storyboard.
+    """
     groq_key = os.environ.get("GROQ_API_KEY", "")
     if not groq_key:
         return (False,
                 "falta el secreto GROQ_API_KEY en el repo "
                 "(Settings > Secrets and variables > Actions).", [])
-    reglas = REGLAS_AUDITORIA if parsed["tipo"] == "auditoria" else REGLAS_TEXTO
+    es_auditoria = parsed["tipo"] == "auditoria"
+    reglas = REGLAS_AUDITORIA if es_auditoria else REGLAS_TEXTO
     prompt = reglas + "\nTAREA:\n" + parsed["tarea"]
     if dry_run:
         log("DRY-RUN: llamaría a Groq con un prompt de "
             f"{len(prompt)} caracteres para escribir {ruta}")
         return True, "dry-run: texto no generado", []
+    if es_auditoria:
+        # El archivo a auditar debe existir y leerse; si no, no hay
+        # auditoría que hacer. No se exige que pase el validador
+        # estructural: la auditoría narrativa puede (y debe) señalar
+        # esos problemas como hallazgos.
+        origen = Path(repo_root) / ruta
+        if not origen.exists():
+            return False, f"el archivo a auditar no existe: {ruta}", []
+        try:
+            if origen.suffix == ".json":
+                json.loads(origen.read_text(encoding="utf-8"))
+        except Exception as e:
+            return False, f"el archivo a auditar no es JSON válido: {e}", []
     try:
         texto = llamar_groq(prompt, groq_key)
     except Exception as e:
         return False, f"Groq no respondió: {e}", []
-    destino = Path(repo_root) / ruta
+    if es_auditoria:
+        destino = Path(repo_root) / Path(ruta).parent / "AUDITORIA.md"
+    else:
+        destino = Path(repo_root) / ruta
     destino.parent.mkdir(parents=True, exist_ok=True)
     destino.write_text(texto, encoding="utf-8")
-    # Verificar el artefacto antes de abrir el PR.
-    ok, salida, _ = job_validar(ruta, repo_root)
-    if not ok:
-        destino.unlink(missing_ok=True)
-        return False, ("el artefacto generado NO pasa su validador, "
-                       "no se abre PR:\n" + salida), []
+    if not es_auditoria:
+        # Verificar el artefacto antes de abrir el PR (solo cuando el
+        # artefacto es el storyboard generado, no un informe en prosa).
+        ok, salida, _ = job_validar(ruta, repo_root)
+        if not ok:
+            destino.unlink(missing_ok=True)
+            return False, ("el artefacto generado NO pasa su validador, "
+                           "no se abre PR:\n" + salida), []
     gemini_key = os.environ.get("GEMINI_API_KEY", "")
     nota = "Generado con Groq gpt-oss-120b"
     if gemini_key:
@@ -258,7 +285,8 @@ def job_texto(parsed, ruta, repo_root, dry_run=False):
             nota += f". Segunda opinión (Gemini): {segunda.strip()[:300]}"
         except Exception as e:
             nota += f". Gemini no respondió ({e}), se entrega solo con Groq."
-    return True, nota + f". Artefacto escrito en {ruta}.", [ruta]
+    rel = str(destino.relative_to(repo_root))
+    return True, nota + f". Artefacto escrito en {rel}.", [rel]
 
 
 def job_motor(parsed, ruta, repo_root, dry_run=False):
@@ -408,6 +436,36 @@ def self_test():
             check("validar storyboard real (Lestes) pasa", ok, salida[-300:])
         except Exception as e:
             check("validar storyboard real (Lestes) pasa", False, str(e)[:300])
+    # 4. tipo=auditoria: el informe va a AUDITORIA.md y NO toca el storyboard.
+    # (Bug 2026-11-15: job_texto escribía el informe sobre `ruta` y luego
+    # job_validar lo leía como JSON; siempre fallaba en el carácter 0.)
+    with tempfile.TemporaryDirectory() as tmp:
+        root = Path(tmp)
+        (root / "proyectos" / "prueba").mkdir(parents=True)
+        sb = root / "proyectos" / "prueba" / "storyboard.json"
+        sb.write_text('{"title": "prueba", "scenes": []}', encoding="utf-8")
+        antes = sb.read_text(encoding="utf-8")
+        real_groq = globals()["llamar_groq"]
+        globals()["llamar_groq"] = (
+            lambda prompt, key: "# Auditoría\n\nVeredicto: pasa.")
+        os.environ["GROQ_API_KEY"] = "test-sin-llamada"
+        os.environ.pop("GEMINI_API_KEY", None)
+        try:
+            ok_a, nota_a, files_a = job_texto(
+                {"tipo": "auditoria", "tarea": "Auditar el storyboard."},
+                "proyectos/prueba/storyboard.json", str(root))
+        finally:
+            globals()["llamar_groq"] = real_groq
+            os.environ.pop("GROQ_API_KEY", None)
+        informe = root / "proyectos" / "prueba" / "AUDITORIA.md"
+        check("auditoria no toca el storyboard",
+              sb.read_text(encoding="utf-8") == antes)
+        check("auditoria escribe AUDITORIA.md",
+              ok_a and informe.exists() and
+              "Auditoría" in informe.read_text(encoding="utf-8"),
+              nota_a[-200:])
+        check("auditoria devuelve el informe para el PR",
+              files_a == ["proyectos/prueba/AUDITORIA.md"], files_a)
     bad = [c for c in checks if not c[1]]
     print(f"SELF-TEST: {len(checks) - len(bad)}/{len(checks)} PASS")
     return 0 if not bad else 1
