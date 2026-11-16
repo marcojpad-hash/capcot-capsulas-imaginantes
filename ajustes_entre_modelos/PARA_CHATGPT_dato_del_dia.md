@@ -241,3 +241,9 @@ Entrega: `cola/entrada/2026-11-01_dato-cambio-horario-corazon/` con `storyboard.
 - Formato: descubrimiento o hecho relevante del mismo día o fechas muy recientes (≤48 h) con ancla científica verificable (URL/DOI); 8 escenas, 85–90 s, cierre de 2 escenas (≥10 s) con «Esto fue Datos y ociosidades.». No repetir ratas topo, clavo, robot-órbita, Mpemba, corales, Baffin, Juno, MXenes, oxoboranos ni agua-imanes.
 - Variedad: base y paleta distintas de las últimas plantillas; arco con tensión (in medias res, conflicto, límite, giro+pregunta+sello).
 - Sin frames, sin audio, sin publicar. Montaje/QA/publicación: Grok app.
+
+## Brief del día 2026-11-16 (slot 23:30 CDMX) — sin paquete en cola a las 02:37
+- Pendiente: `cola/entrada/2026-11-16_dato-<slug>/` (storyboard.json, fuentes.md, ESTADO_EJECUCION.md).
+- Formato: descubrimiento o hecho relevante del mismo día o fechas muy recientes (≤48 h) con ancla científica verificable (URL/DOI); 8 escenas, 85–90 s, cierre de 2 escenas (≥10 s) con «Esto fue Datos y ociosidades.». No repetir sarampión (ya va a las 07:00), apagón del 17-nov, cuásares, atlas-3d-cerebro, corales, Baffin, Juno, MXenes, oxoboranos, agua-imanes, enzimas, colibrí, ratas topo, Mpemba, arroz ni microbioma.
+- Variedad: base y paleta distintas de las últimas plantillas; arco con tensión (in medias res, conflicto, límite, giro+pregunta+sello).
+- Sin frames, sin audio, sin publicar. Montaje/QA/publicación: Grok app. Imaginantes no monta en la rutina de madrugada.
