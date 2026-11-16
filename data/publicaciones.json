@@ -891,5 +891,21 @@
     "tiktok_nota": "Programado en TikTok Studio (@datosyociosidades) el 14-nov, alrededor de las 21:00 CDMX. Everyone, portada = primer frame con título. La UI muestra 8:00 PM GMT-5 (New York) = 19:00 CDMX del 2026-11-21. Verificado en la lista de Posts el 14-nov. Todavía no hay id público.",
     "facebook_nota": "Reel de la Página «Datos y ociosidades» programado en el Planificador de Meta Business Suite el 14-nov, alrededor de las 21:00 CDMX. Público, miniatura portada.jpg. UI 8:00 PM GMT-5 (New York) = 19:00 CDMX del 2026-11-21. Todavía no hay id público.",
     "tiktok_evidencia_semana": "data/evidencia/2026-11-14/tiktok_1900_semana_2026-11-15_21_15-16.png"
+  },
+  {
+    "fecha": "2026-11-15",
+    "project_id": "2026-11-15_apagon-17nov",
+    "slot": "21:00",
+    "yt_id": "hrUwoLgADBI",
+    "url": "https://youtube.com/shorts/hrUwoLgADBI",
+    "privacidad": "private→public (publishAt)",
+    "publishAt_utc": "2026-11-16T03:00:00Z",
+    "hora_local": "2026-11-15 21:00 CDMX",
+    "video": "capsula.mp4",
+    "titulo": "¿Apagón el 17 de noviembre por una IA? #Shorts",
+    "origen": "TikTok 7708472528242593032 (ya publicado en TT; bajado con yt-dlp)",
+    "tiktok": "publicado 7708472528242593032",
+    "miniatura": "portada.jpg (primer frame)",
+    "nota": "Mj pidió 15-nov 19:07 subirlo a YT; hashtags cortos populares."
   }
 ]
