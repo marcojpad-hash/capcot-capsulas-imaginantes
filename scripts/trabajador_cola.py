@@ -249,14 +249,21 @@ def job_texto(parsed, ruta, repo_root, dry_run=False):
         # auditoría que hacer. No se exige que pase el validador
         # estructural: la auditoría narrativa puede (y debe) señalar
         # esos problemas como hallazgos.
+        # El modelo audita el CONTENIDO REAL del archivo, no la
+        # descripción del Issue: si no ve el archivo, inventa líneas,
+        # enlaces y números de PR (pasó con cuásares, 2026-11-15).
         origen = Path(repo_root) / ruta
         if not origen.exists():
             return False, f"el archivo a auditar no existe: {ruta}", []
         try:
+            contenido = origen.read_text(encoding="utf-8")
             if origen.suffix == ".json":
-                json.loads(origen.read_text(encoding="utf-8"))
+                json.loads(contenido)
         except Exception as e:
             return False, f"el archivo a auditar no es JSON válido: {e}", []
+        prompt += ("\nARCHIVO A AUDITAR (contenido real; cita solo lo que "
+                   "aparece aquí, no inventes líneas, enlaces ni números "
+                   "de PR):\n" + contenido[:30000])
     try:
         texto = llamar_groq(prompt, groq_key)
     except Exception as e:
@@ -446,8 +453,11 @@ def self_test():
         sb.write_text('{"title": "prueba", "scenes": []}', encoding="utf-8")
         antes = sb.read_text(encoding="utf-8")
         real_groq = globals()["llamar_groq"]
-        globals()["llamar_groq"] = (
-            lambda prompt, key: "# Auditoría\n\nVeredicto: pasa.")
+        prompts = []
+        def _fake_groq(prompt, key):
+            prompts.append(prompt)
+            return "# Auditoría\n\nVeredicto: pasa."
+        globals()["llamar_groq"] = _fake_groq
         os.environ["GROQ_API_KEY"] = "test-sin-llamada"
         os.environ.pop("GEMINI_API_KEY", None)
         try:
@@ -466,6 +476,9 @@ def self_test():
               nota_a[-200:])
         check("auditoria devuelve el informe para el PR",
               files_a == ["proyectos/prueba/AUDITORIA.md"], files_a)
+        check("auditoria manda el contenido real al modelo",
+              bool(prompts) and '"title": "prueba"' in prompts[0] and
+              "no inventes" in prompts[0])
     bad = [c for c in checks if not c[1]]
     print(f"SELF-TEST: {len(checks) - len(bad)}/{len(checks)} PASS")
     return 0 if not bad else 1
