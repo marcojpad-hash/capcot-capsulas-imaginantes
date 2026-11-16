@@ -1,0 +1,25 @@
+{
+ "project_id": "2026-11-16_sarampion",
+ "fecha": "2026-11-16",
+ "plataforma": [
+  "yt",
+  "tt",
+  "fb"
+ ],
+ "ventana": "07:00",
+ "publish_at": "2026-11-16T13:00:00Z",
+ "hora_cdmx": "2026-11-16 07:00",
+ "titulo_yt": "El sarampión volvió a México después de 30 años",
+ "privacidad": "público desde las 07:00 CDMX",
+ "estado": "publicado_yt_tt_fb",
+ "yt_id": "cci90_HP6R4",
+ "url": "https://youtube.com/shorts/cci90_HP6R4",
+ "tiktok": "publicado",
+ "facebook": "publicado",
+ "tiktok_id": "7708761702111759634",
+ "facebook_id": "981278908387787",
+ "facebook_content_id": "122110629909518983",
+ "video": "/workspace/entregas/2026-11-16_sarampion/capsula.mp4",
+ "miniatura": "portada.jpg (sardefault verificada)",
+ "nota": "Dato del día 16-nov. YT cci90_HP6R4 publishAt 2026-11-16T13:00Z, ya público a las 07:00. TT y FB se publicaron al momento ~07:32–07:36 CDMX (el slot ya había pasado). Miniatura YT corregida el 16-nov 07:30: portada con título, sardefault 1080×1920."
+}

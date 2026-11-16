@@ -1,0 +1,12 @@
+{
+ "videoId": "cci90_HP6R4",
+ "publishAt": "2026-11-16T13:00:00Z",
+ "hora_cdmx": "2026-11-16 07:00",
+ "privacy": "public",
+ "publishedAt": "2026-11-16T13:00:23Z",
+ "containsSyntheticMedia": null,
+ "containsSyntheticMedia_nota": "La API devolvió null; el token solo tiene scopes youtube.upload y youtube.readonly, y videos.update (para marcar IA) dio 403. No se cambió en Studio en esta corrida.",
+ "thumbnail": "OK portada.jpg (sardefault 1080×1920, dif media 1.244/255 vs portada; maxres también con título)",
+ "thumbnail_set_at": "2026-11-16T07:30:00-06:00",
+ "duration": "PT1M35S"
+}
