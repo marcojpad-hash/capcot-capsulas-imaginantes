@@ -16,7 +16,7 @@ Alcance: investigación, documentación y staging textual; no generación de med
 
 ### Entregables aplicables
 
-1. `proyectos/2026-11-16_dato-polen-desenreda-nanotubos/storyboard.json` — slot 17:00; commit `37ea4181a72da5cac82c044189e3a8608f5ee570`.
+1. `proyectos/2026-11-16_dato-polen-desenreda-nanotubos/storyboard.json` — slot 17:00; commit final `8a31a8e131cd3d16ee6015d093134066f92582b9` (creación `37ea4181a72da5cac82c044189e3a8608f5ee570`).
 2. `docs/briefs/2026-11-16_RADAR_CAPCOT.md` — este radar.
 
 No se creó `*_fuentes.md`. El candidato 23:30 quedó `PENDING_SOURCE`; no se inventó ni se adelantó noticia.
