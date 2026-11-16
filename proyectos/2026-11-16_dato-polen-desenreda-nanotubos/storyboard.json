@@ -306,7 +306,8 @@
       "limitations": [
         "El estudio es una demostración experimental; no equivale a producto comercial.",
         "No se presenta una evaluación completa de ciclo de vida ni un despliegue industrial."
-      ]
+      ],
+      "cita_corta": "Gao et al. (2026). Sunflower pollen microgels enable sonication-free dispersion of carbon nanotubes for bio-based conductive inks. Nature Communications, 14 Nov 2026."
     },
     {
       "id": "SRC-002",
@@ -324,7 +325,8 @@
       ],
       "limitations": [
         "La afiliación institucional no identifica el lugar exacto del experimento."
-      ]
+      ],
+      "cita_corta": "Wuhan University. Contact Us — información institucional de ubicación."
     },
     {
       "id": "SRC-003",
@@ -346,7 +348,8 @@
       ],
       "limitations": [
         "El punto se usa como referencia de afiliación, no como sitio experimental."
-      ]
+      ],
+      "cita_corta": "Howchou (2018). Wuhan University main quad 2 — fotografía georreferenciada. Wikimedia Commons."
     }
   ],
   "audio": {
@@ -370,11 +373,42 @@
     ]
   },
   "editorial_status": "PENDIENTE_DECISION_GROK",
-  "estado": "BORRADOR_EN_PROYECTOS_PENDIENTE_AUDITOR",
+  "estado": "BORRADOR_EN_PROYECTOS_PENDIENTE_VALIDACION_ESTRUCTURAL",
   "notas_de_control": [
     "El DOI permanece PENDIENTE_RESOLVEDOR; la fuente primaria es el PDF editorial abierto.",
     "El pin del mapa es una referencia geográfica de la afiliación institucional, no el sitio experimental.",
     "No se incluye narrative_qa; la lectura en frío corresponde al auditor independiente.",
     "No se generaron frames, imágenes, audio, voz, video ni renders."
-  ]
+  ],
+  "trend_source": {
+    "termino": "Microgeles de polen de girasol dispersan nanotubos de carbono sin sonicación",
+    "fecha_publicacion": "2026-11-14",
+    "url": "https://www.nature.com/articles/s41467-026-79607-1"
+  },
+  "narrative_qa": {
+    "status": "PASS",
+    "score": 91,
+    "review_basis": "lectura_en_frio_solo_narracion",
+    "reviewed_at": "2026-11-16T15:18:26-06:00",
+    "reviewer_role": "auditor_capcot_independiente",
+    "checks": {
+      "pregunta_central_reconstruible": true,
+      "apertura_in_medias_res": true,
+      "progresion_por_escena": true,
+      "transiciones_causales": true,
+      "giro_cientifico_explicado": true,
+      "limite_evidencia_explicito": true,
+      "payoff_cierre_apertura": true
+    },
+    "critical_flags": [],
+    "evidence_brief": {
+      "pregunta_central_reconstruible": "La narración permite reconstruir cómo dispersar nanotubos de carbono en agua sin sonicación de alta potencia.",
+      "apertura_in_medias_res": "Abre con la tinta negra apelmazándose en el vaso: el problema ya está ocurriendo.",
+      "progresion_por_escena": "Problema de agregación → límite de ultrasonido → microgel de polen → captura y fricción → estabilización con alginato → impresión → estabilidad y límite → aclaración de que el polen no conduce.",
+      "transiciones_causales": "Cada tramo responde al obstáculo anterior y plantea el siguiente requisito de la tinta.",
+      "giro_cientifico_explicado": "La superficie espinosa del microgel captura y ayuda a deshacer agregados con agitación suave; el alginato reduce la reagregación.",
+      "limite_evidencia_explicito": "La estabilidad superior a seis meses corresponde a la dispersión acuosa en el sistema experimental; no demuestra vida útil comercial ni evaluación ambiental completa.",
+      "payoff_cierre_apertura": "El cierre resuelve la tinta que se apelmazaba y aclara que el polen ayuda a dispersar el componente conductor, pero no es el conductor."
+    }
+  }
 }
