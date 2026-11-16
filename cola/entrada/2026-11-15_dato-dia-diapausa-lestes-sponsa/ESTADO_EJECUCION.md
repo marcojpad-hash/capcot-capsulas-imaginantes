@@ -16,4 +16,4 @@
 
 ## Recepción
 
-No existe `cola/estado/2026-11-15_dato-dia-diapausa-lestes-sponsa.json` ni acuse individual de Grok. La carpeta preparada no demuestra recepción. El workflow automático `capcot-grok-dispatch.yml` solo escucha JSON de primer nivel en `cola/entrada/*.json`; esta entrega está en formato de carpeta anidada. El procesador `scripts/procesar_cola.py` sí contempla `cola/entrada/<id>/storyboard.json`, pero no se ejecutó en esta sesión.
+No existe `cola/estado/2026-11-15_dato-dia-diapausa-lestes-sponsa.json`, `handoffs/grok_inbox/2026-11-15_dato-dia-diapausa-lestes-sponsa.json` ni acuse individual de Grok. La carpeta preparada no demuestra recepción. El workflow automático `capcot-grok-dispatch.yml` solo escucha JSON de primer nivel en `cola/entrada/*.json`; esta entrega está en formato de carpeta anidada. El procesador `scripts/procesar_cola.py` sí contempla `cola/entrada/<id>/storyboard.json`, pero no se ejecutó en esta sesión.
