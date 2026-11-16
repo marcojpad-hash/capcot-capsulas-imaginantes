@@ -32,7 +32,7 @@
     "url": "https://www.nature.com/articles/s41598-026-80392-6",
     "tipo": "estudio_primario",
     "google_trends_signal": false,
-    "nota": "Candidato de dato_del_dia: la fuente primaria está publicada el 15-nov-2026. La página oficial del editor confirma el DOI 10.1038/s41598-026-80392-6; el helper automatizado --check-doi (Crossref) aún no se ejecuta."
+    "nota": "Candidato de dato_del_dia: fuente primaria publicada el 15-nov-2026. El validador Python real del repositorio con --check-doi fue ejecutado localmente por Amor el 15-nov-2026: exit 0; el DOI resolvió."
   },
   "editorial_status": "PENDIENTE_DECISION_GROK",
   "arco": {
@@ -89,8 +89,8 @@
         "El artículo discute la posibilidad de eclosión invernal bajo inviernos más cálidos, sin demostrar que ocurra ya en campo.",
         "Los autores reconocen una muestra materna pequeña y huevos agrupados."
       ],
-      "verification_status": "PENDIENTE_RESOLVEDOR",
-      "verification_note": "Verificación editorial realizada el 15-nov-2026: la página oficial de Scientific Reports/Nature muestra el título, autores, volumen 16, artículo 37989, fecha de publicación 15-nov-2026 y el DOI 10.1038/s41598-026-80392-6. El DOI queda confirmado por la ficha del editor. No se ejecutó el helper --check-doi del repositorio, que consulta Crossref; por eso no se declara superado ese control automatizado."
+      "verification_status": "VERIFICADO_RESOLVEDOR",
+      "verification_note": "La ficha oficial de Scientific Reports/Nature confirma título, autores, volumen 16, artículo 37989, fecha de publicación 15-nov-2026 y DOI 10.1038/s41598-026-80392-6. Amor ejecutó localmente scripts/validar_storyboard.py con --check-doi el 15-nov-2026: exit 0; el DOI resolvió. La validación no generó medios."
     },
     {
       "id": "SRC-002",
@@ -370,21 +370,22 @@
     ],
     "note": "No publicar ni programar desde preproducción textual; privacidad y horario de publicación quedan sin fijar."
   },
-  "estado": "PENDIENTE_VALIDACION_ESTRUCTURAL",
+  "estado": "PENDIENTE_DECISION_GROK",
   "production_mode": "storyboard_only",
   "validation_notes": [
     "Borrador textual; no se generaron imágenes, frames, audio, voz, video ni render.",
-    "La página oficial de Scientific Reports/Nature confirma la publicación del 15-nov-2026 y muestra el DOI 10.1038/s41598-026-80392-6. El helper automatizado --check-doi del repositorio no se ejecutó; el control Crossref automatizado queda pendiente.",
+    "El validador Python real del repositorio, incluida la opción --check-doi, fue ejecutado localmente por Amor el 15-nov-2026: exit 0; el DOI 10.1038/s41598-026-80392-6 resolvió.",
     "El pin de Lund es solo una referencia regional; el artículo no proporciona coordenadas exactas del sitio de muestreo.",
     "La hipótesis de eclosión invernal bajo inviernos más cálidos no es una observación de campo ni prueba de causalidad climática.",
     "El estilo de la cápsula previa de las 07:00 (colibrí) no está registrado en el estado de slots ni existe su storyboard en este repositorio; la unicidad frente a esa pieza no es certificable. Este estilo sí difiere del último storyboard del repositorio y del otro borrador del día.",
-    "La lectura narrativa independiente fue registrada por el auditor: PASS/90, siete checks true y critical_flags vacío. La validación estructural y la decisión editorial siguen pendientes."
+    "La validación estructural y el control DOI están completados según la ejecución local de Amor; permanece pendiente la decisión editorial y la recepción individual de Grok.",
+    "Los ocho asset_filename son rutas previstas para producción; no existen frames todavía. No se generaron imágenes, audio, voz, vídeo ni render."
   ],
   "linea_tematica_provisional": "Naturaleza, insectos y adaptación estacional",
   "risk_notes": [
     "Ensayo de laboratorio; no afirmar que el cambio climático ya esté causando eclosiones invernales en poblaciones silvestres.",
     "La muestra materna fue pequeña y los huevos se agruparon; no presentar la variación individual como universal.",
-    "El DOI 10.1038/s41598-026-80392-6 aparece en la página oficial del editor; queda pendiente ejecutar el helper --check-doi que consulta Crossref.",
+    "El DOI 10.1038/s41598-026-80392-6 quedó confirmado por la ficha editorial y por la ejecución local de scripts/validar_storyboard.py --check-doi (exit 0, reportada por Amor el 15-nov-2026).",
     "El punto de Lund es una referencia regional, no el sitio de muestreo.",
     "El estilo de la cápsula colibrí de las 07:00 no está documentado; unicidad visual respecto de esa pieza no certificable."
   ],
