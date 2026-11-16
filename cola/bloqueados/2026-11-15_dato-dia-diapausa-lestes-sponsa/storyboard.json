@@ -1,0 +1,410 @@
+{
+  "_schema": "storyboard_vertical_v1",
+  "project_id": "2026-11-15_dato-dia-diapausa-lestes-sponsa",
+  "fecha_objetivo": "2026-11-15",
+  "slot_local": "23:30",
+  "slot_cesta": "dato_del_dia",
+  "serie": "Datos y ociosidades",
+  "title": "El huevo que espera al frío",
+  "titulo": "El huevo que espera al frío",
+  "language": "es-MX",
+  "aspect_ratio": "9:16",
+  "target_duration_seconds": 84,
+  "scene_total_seconds": 78,
+  "cortinilla_seconds": 6,
+  "total_duration_seconds": 84,
+  "word_count": 183,
+  "estructura": "historia",
+  "audience": "Público general interesado en naturaleza, insectos y adaptación estacional.",
+  "occasion": "Slot fijo 23:30 con slot_cesta=dato_del_dia. Fuente primaria publicada el 15-nov-2026, misma fecha CDMX y dentro de las 48 horas previas. Slot libre según el inventario de proyectos, salidas, colas y registros de rotación/publicación.",
+  "resumen": "Un experimento con huevos de Lestes sponsa muestra cómo el frío acumulado prepara la salida de la diapausa; el resultado sugiere una posibilidad ecológica, pero no demuestra cambios de campo.",
+  "narrative_contract": {
+    "central_question": "¿Qué hace que los huevos de Lestes sponsa salgan de la diapausa casi al mismo tiempo?",
+    "promise": "Mostrar cómo el frío acumulado, la temperatura y la duración del día se combinan en el experimento.",
+    "stakes": "La sincronía de la eclosión puede colocar a las larvas en una ventana estacional favorable; salir demasiado pronto podría exponerlas a condiciones inadecuadas.",
+    "scientific_turn": "Tras 19–21 semanas a 5 °C, el paso a 21 °C produjo eclosión casi completa en 2–4 días con fotoperiodos distintos; el frío no solo frena, también prepara la salida de la diapausa.",
+    "evidence_limit": "Es un ensayo de laboratorio con huevos de varias poblaciones; los autores reconocen una muestra materna pequeña y huevos agrupados. No demuestra cambios de campo ni que el cambio climático ya cause eclosiones invernales.",
+    "payoff": "La aparente pausa es un proceso fisiológico que acumula frío y responde a señales estacionales; el dato abre una hipótesis, no un pronóstico."
+  },
+  "trend_source": {
+    "termino": "Lestes sponsa embryonic diapause temperature photoperiod",
+    "fecha_publicacion": "2026-11-15",
+    "url": "https://www.nature.com/articles/s41598-026-80392-6",
+    "tipo": "estudio_primario",
+    "google_trends_signal": false,
+    "nota": "Candidato de dato_del_dia: fuente primaria publicada el 15-nov-2026. El validador Python real del repositorio con --check-doi fue ejecutado localmente por Amor el 15-nov-2026: exit 0; el DOI resolvió."
+  },
+  "editorial_status": "PENDIENTE_DECISION_GROK",
+  "arco": {
+    "hook_medias_res": "La incubadora sube a 21 °C y los huevos empiezan a abrirse casi al mismo tiempo.",
+    "desarrollo": "El enfriamiento prolongado, el fotoperiodo y la especie explican la preparación fisiológica.",
+    "cierre_historia": "El frío prolongado sincroniza la eclosión y algunas larvas toleran temperaturas cercanas a cero.",
+    "reflexion_o_pregunta": "¿Qué podría cambiar si los inviernos dejan de ser tan fríos?"
+  },
+  "estilo_id": "rubber_hose_1930s",
+  "estilo_visual": "Cartoon rubber hose 1930s",
+  "visual_identity": {
+    "style_id": "rubber_hose_1930s",
+    "style_name": "Cartoon rubber hose 1930s",
+    "prompt_base": "1930s rubber hose cartoon animation style, hand-inked bouncy characters with pie-cut eyes and white gloves, watercolor painted backgrounds, film grain, slight vignette, sepia-tinted vintage colors, single large character centered, simple background, flat illustrated, not photorealistic, vertical 9:16, no text",
+    "palette": "sepia suave, crema cálido, ocre, verde oliva apagado y tinta negra",
+    "lighting": "Iluminación plana y cálida de ilustración; sin dramatismo de terror ni brillo fotográfico.",
+    "texture": "Entintado manual, fondos de acuarela, grano de película y viñeta ligera.",
+    "composition": "Vertical 9:16; el huevo o la larva es el sujeto central. Mantener anatomía reconocible y no antropomorfizar huevos ni insectos.",
+    "negative_prompt": "Fotografía, render 3D, texto integrado, ojos o guantes antropomórficos en huevos o insectos, estilo claymation, collage, mezcla de estilos, hielo sólido cubriendo al organismo.",
+    "reference_assets": [],
+    "seed": null,
+    "seed_policy": "Conservar el entintado y la paleta sepia en todas las escenas; cambiar la composición sin alterar anatomía ni añadir protagonistas ficticios."
+  },
+  "typography_identity": {
+    "font_family": "DejaVu Sans",
+    "font_weight": "700 para gancho; 400 para subtítulos",
+    "title_style": "Gancho de seis palabras, alto contraste, añadido en postproducción.",
+    "subtitle_style": "Bloques breves en zona segura inferior, añadidos en postproducción.",
+    "hierarchy": "Gancho > dato/etiqueta > subtítulos",
+    "animation": "Un movimiento por plano; cifras y mapa como capas editoriales separadas."
+  },
+  "voice": {
+    "engine": "edge-tts",
+    "voice_id": "es-MX-JorgeNeural",
+    "language": "es-MX",
+    "rate": "+7%",
+    "pitch": "-2Hz",
+    "pad_seconds": 0.3,
+    "modo_pausas": "continuo"
+  },
+  "sources": [
+    {
+      "id": "SRC-001",
+      "cita_corta": "Norling, U. & Sniegula, S. (2026). Maintenance and termination of embryonic diapause in the damselfly Lestes sponsa: the role of temperature and photoperiod. Scientific Reports (15 nov 2026).",
+      "url": "https://www.nature.com/articles/s41598-026-80392-6",
+      "doi": "10.1038/s41598-026-80392-6",
+      "doi_url": "https://doi.org/10.1038/s41598-026-80392-6",
+      "accessed": "2026-11-15",
+      "publication_date": "2026-11-15",
+      "supports": [
+        "Huevos de Lestes sponsa depositados en vegetación sobre el agua y desarrollo embrionario en diapausa.",
+        "Tras 19–21 semanas a 5 °C, la eclosión fue casi completa en 2–4 días al transferir a 21 °C, independientemente del fotoperiodo probado.",
+        "Los huevos pudieron eclosionar a 5 °C y las larvas sobrevivieron dos semanas cerca de 0 °C.",
+        "El artículo discute la posibilidad de eclosión invernal bajo inviernos más cálidos, sin demostrar que ocurra ya en campo.",
+        "Los autores reconocen una muestra materna pequeña y huevos agrupados."
+      ],
+      "verification_status": "VERIFICADO_RESOLVEDOR",
+      "verification_note": "La ficha oficial de Scientific Reports/Nature confirma título, autores, volumen 16, artículo 37989, fecha de publicación 15-nov-2026 y DOI 10.1038/s41598-026-80392-6. Amor ejecutó localmente scripts/validar_storyboard.py con --check-doi el 15-nov-2026: exit 0; el DOI resolvió. La validación no generó medios."
+    },
+    {
+      "id": "SRC-002",
+      "cita_corta": "UNT Digital Library. Lund, Skåne, Sweden — geographic place record.",
+      "url": "https://digital.library.unt.edu/explore/locations/p09252/",
+      "doi": null,
+      "accessed": "2026-11-15",
+      "publication_date": null,
+      "supports": [
+        "Coordenadas de Lund 55.70584 N, 13.19321 E para referencia cartográfica regional; no son coordenadas del sitio de muestreo."
+      ],
+      "verification_status": "VERIFICADO_URL",
+      "verification_note": "El artículo solo sitúa parte de los huevos del sur de Suecia alrededor de 55°N; el pin de Lund se usa como referencia regional y no como lugar exacto de recolección."
+    }
+  ],
+  "mapa": {
+    "puntos": [
+      {
+        "lat": 55.70584,
+        "lon": 13.19321,
+        "etiqueta": "Lund, Skåne (referencia regional; no sitio de muestreo)"
+      }
+    ],
+    "titulo": "Referencia geográfica del sur de Suecia",
+    "fuente": "SRC-001; SRC-002",
+    "nota_precision": "El artículo indica huevos del sur de Suecia alrededor de 55°N, pero no publica aquí un punto exacto de muestreo. Lund es solo una referencia regional cartográfica, no el lugar confirmado de recolección."
+  },
+  "dato_grafico": {
+    "tipo": "dato",
+    "valor": "19–21 semanas a 5 °C → eclosión casi completa en 2–4 días tras pasar a 21 °C",
+    "etiqueta": "Tratamiento de frío y tiempo de eclosión",
+    "fuente": "SRC-001",
+    "interpretacion": "Ensayo de laboratorio con huevos sometidos a distintos fotoperiodos; no es una tasa de eclosión natural observada en campo."
+  },
+  "scenes": [
+    {
+      "id": "scene_001",
+      "arc": "hook_medias_res",
+      "duration_seconds": 9,
+      "narration": "La incubadora sube a 21 grados. Los huevos empiezan a abrirse casi al mismo tiempo.",
+      "on_screen_text": "21 °C: comienza la eclosión",
+      "visual_description": "Una cámara de incubación cambia de temperatura y un grupo de huevos comienza a abrirse; representar un experimento real, no una escena inventada.",
+      "image_prompt": "1930s rubber hose cartoon animation style, hand-inked bouncy characters with pie-cut eyes and white gloves, watercolor painted backgrounds, film grain, slight vignette, sepia-tinted vintage colors, single large character centered, simple background, flat illustrated, not photorealistic, vertical 9:16, no text Una cámara de incubación cambia de temperatura y un grupo de huevos comienza a abrirse; representar un experimento real, no una escena inventada.",
+      "ambiente": "Ambiente suave de incubadora, sin alarma ni sonido médico.",
+      "sfx": [
+        "Cambio térmico sutil"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "rubber_hose_1930s",
+      "dramatic_beat": "La incubadora cambia de temperatura y los huevos empiezan a abrirse: la acción inicial plantea qué los preparó.",
+      "scene_function": "La incubadora cambia de temperatura y los huevos empiezan a abrirse: la acción inicial plantea qué los preparó.",
+      "causal_bridge_from_previous": "Apertura: la eclosión ocurre en pocos días después de cambiar la temperatura.",
+      "question_state": "La eclosión ocurre; todavía no se conoce qué preparó a los huevos.",
+      "reason_to_continue": "El resultado necesita el antecedente experimental que lo hizo posible.",
+      "new_information": "Tras el cambio de temperatura, los huevos comienzan a eclosionar casi al mismo tiempo.",
+      "asset_filename": "frames/scene_001.jpg"
+    },
+    {
+      "id": "scene_002",
+      "arc": "desarrollo",
+      "duration_seconds": 9,
+      "narration": "No venían de una noche fría: habían pasado entre 19 y 21 semanas a cinco grados, en cámaras de laboratorio.",
+      "on_screen_text": "19–21 semanas a 5 °C",
+      "visual_description": "Detalle de huevos de Lestes sponsa adheridos a tejido vegetal en una cámara de laboratorio; el tiempo frío se sugiere con escarcha tenue, no hielo sólido.",
+      "image_prompt": "1930s rubber hose cartoon animation style, hand-inked bouncy characters with pie-cut eyes and white gloves, watercolor painted backgrounds, film grain, slight vignette, sepia-tinted vintage colors, single large character centered, simple background, flat illustrated, not photorealistic, vertical 9:16, no text Detalle de huevos de Lestes sponsa adheridos a tejido vegetal en una cámara de laboratorio; el tiempo frío se sugiere con escarcha tenue, no hielo sólido.",
+      "ambiente": "Silencio frío de laboratorio, cama musical discreta.",
+      "sfx": [
+        "Pulso largo y frío"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "rubber_hose_1930s",
+      "dramatic_beat": "El resultado parece rápido; el dato anterior revela que la preparación tomó meses.",
+      "scene_function": "El resultado parece rápido; el dato anterior revela que la preparación tomó meses.",
+      "causal_bridge_from_previous": "Para entender por qué la incubadora produce una respuesta rápida, se revela el periodo frío previo.",
+      "question_state": "Se conoce la duración y temperatura del enfriamiento previo.",
+      "reason_to_continue": "El frío acumulado necesita un organismo y una etapa biológica.",
+      "new_information": "El tratamiento clave fue un enfriamiento de 19–21 semanas a 5 °C en laboratorio.",
+      "asset_filename": "frames/scene_002.jpg"
+    },
+    {
+      "id": "scene_003",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "Son huevos de Lestes sponsa, un caballito del diablo que suele ponerlos en plantas sobre el agua; el embrión atraviesa una pausa llamada diapausa.",
+      "on_screen_text": "Lestes sponsa",
+      "visual_description": "Una planta acuática con huevos de Lestes sponsa sobre el tallo, a la orilla del agua; el embrión permanece dentro del huevo, sin antropomorfismo.",
+      "image_prompt": "1930s rubber hose cartoon animation style, hand-inked bouncy characters with pie-cut eyes and white gloves, watercolor painted backgrounds, film grain, slight vignette, sepia-tinted vintage colors, single large character centered, simple background, flat illustrated, not photorealistic, vertical 9:16, no text Una planta acuática con huevos de Lestes sponsa sobre el tallo, a la orilla del agua; el embrión permanece dentro del huevo, sin antropomorfismo.",
+      "ambiente": "Agua quieta y ambiente natural mínimo.",
+      "sfx": [
+        "Pequeño roce vegetal y agua"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "style_id": "rubber_hose_1930s",
+      "dramatic_beat": "La especie y su forma de poner huevos sitúan el fenómeno en una estrategia estacional concreta.",
+      "scene_function": "La especie y su forma de poner huevos sitúan el fenómeno en una estrategia estacional concreta.",
+      "causal_bridge_from_previous": "El periodo frío solo tiene sentido si sabemos qué organismo y qué etapa se estudian.",
+      "question_state": "Se identifica la especie y la etapa de desarrollo.",
+      "reason_to_continue": "La diapausa necesita explicarse mediante sus señales.",
+      "new_information": "Lestes sponsa deposita huevos en vegetación sobre el agua y atraviesa diapausa embrionaria.",
+      "capa": {
+        "tipo": "mapa",
+        "puntos": [
+          {
+            "lat": 55.70584,
+            "lon": 13.19321,
+            "etiqueta": "Lund, Skåne (referencia regional; no sitio de muestreo)"
+          }
+        ],
+        "titulo": "Referencia geográfica del sur de Suecia",
+        "fuente": "SRC-001; SRC-002",
+        "nota_precision": "El artículo indica huevos del sur de Suecia alrededor de 55°N, pero no publica aquí un punto exacto de muestreo. Lund es solo una referencia regional cartográfica, no el lugar confirmado de recolección."
+      },
+      "asset_filename": "frames/scene_003.jpg"
+    },
+    {
+      "id": "scene_004",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "El equipo comparó el frío acumulado, la temperatura y la duración del día para saber qué señales terminan esa pausa y sincronizan la eclosión.",
+      "on_screen_text": "Frío · temperatura · luz",
+      "visual_description": "Esquema editorial de tres señales experimentales: frío acumulado, temperatura y duración del día; sin texto incrustado en la ilustración.",
+      "image_prompt": "1930s rubber hose cartoon animation style, hand-inked bouncy characters with pie-cut eyes and white gloves, watercolor painted backgrounds, film grain, slight vignette, sepia-tinted vintage colors, single large character centered, simple background, flat illustrated, not photorealistic, vertical 9:16, no text Esquema editorial de tres señales experimentales: frío acumulado, temperatura y duración del día; sin texto incrustado en la ilustración.",
+      "ambiente": "Ambiente de laboratorio neutro, sin máquinas dominantes.",
+      "sfx": [
+        "Tres pulsos cortos para las variables"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "rubber_hose_1930s",
+      "dramatic_beat": "El experimento necesita separar tres señales para explicar qué termina la pausa.",
+      "scene_function": "El experimento necesita separar tres señales para explicar qué termina la pausa.",
+      "causal_bridge_from_previous": "Con el organismo situado, el siguiente paso es distinguir las señales que terminan la diapausa.",
+      "question_state": "Se conocen las variables que el equipo comparó.",
+      "reason_to_continue": "Las señales se entienden al comparar tratamientos.",
+      "new_information": "El estudio comparó temperatura, frío acumulado y fotoperiodo.",
+      "asset_filename": "frames/scene_004.jpg"
+    },
+    {
+      "id": "scene_005",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "Con menos enfriamiento, la duración del día seguía influyendo y la eclosión podía prolongarse durante semanas; el frío prolongado redujo esa dependencia.",
+      "on_screen_text": "El fotoperiodo aún influye",
+      "visual_description": "Dos líneas de tiempo comparan enfriamiento corto y prolongado; la luz del día aparece como variable que influye en la salida de la diapausa.",
+      "image_prompt": "1930s rubber hose cartoon animation style, hand-inked bouncy characters with pie-cut eyes and white gloves, watercolor painted backgrounds, film grain, slight vignette, sepia-tinted vintage colors, single large character centered, simple background, flat illustrated, not photorealistic, vertical 9:16, no text Dos líneas de tiempo comparan enfriamiento corto y prolongado; la luz del día aparece como variable que influye en la salida de la diapausa.",
+      "ambiente": "Cama musical rítmica, sin dramatizar el frío.",
+      "sfx": [
+        "Dos marcas de tiempo distintas"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "rubber_hose_1930s",
+      "dramatic_beat": "Las respuestas con menos frío muestran que el fotoperiodo aún influye; el frío prolongado cambia esa relación.",
+      "scene_function": "Las respuestas con menos frío muestran que el fotoperiodo aún influye; el frío prolongado cambia esa relación.",
+      "causal_bridge_from_previous": "Las señales no pesan igual en todas las condiciones; el contraste conduce al resultado principal.",
+      "question_state": "El fotoperiodo importa menos tras enfriamiento prolongado.",
+      "reason_to_continue": "El contraste prepara la cifra principal del estudio.",
+      "new_information": "Con menor enfriamiento, el fotoperiodo seguía influyendo; el frío prolongado redujo esa dependencia.",
+      "asset_filename": "frames/scene_005.jpg"
+    },
+    {
+      "id": "scene_006",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "Después de 19 a 21 semanas a cinco grados, casi todos eclosionaron en dos a cuatro días al pasar a 21 grados, incluso con fotoperiodos distintos.",
+      "on_screen_text": "2–4 días tras el frío",
+      "visual_description": "Gráfico de laboratorio: 19–21 semanas a 5 °C y, tras pasar a 21 °C, eclosión casi completa en 2–4 días con fotoperiodos distintos.",
+      "image_prompt": "1930s rubber hose cartoon animation style, hand-inked bouncy characters with pie-cut eyes and white gloves, watercolor painted backgrounds, film grain, slight vignette, sepia-tinted vintage colors, single large character centered, simple background, flat illustrated, not photorealistic, vertical 9:16, no text Gráfico de laboratorio: 19–21 semanas a 5 °C y, tras pasar a 21 °C, eclosión casi completa en 2–4 días con fotoperiodos distintos.",
+      "ambiente": "Ambiente claro y preciso para el dato medido.",
+      "sfx": [
+        "Clic suave al aparecer 2–4 días"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "rubber_hose_1930s",
+      "dramatic_beat": "El resultado cuantificado responde cuánto frío y cuánto tarda la eclosión.",
+      "scene_function": "El resultado cuantificado responde cuánto frío y cuánto tarda la eclosión.",
+      "causal_bridge_from_previous": "El resultado de eclosión rápida lleva a preguntar si los huevos pueden abrirse incluso con frío.",
+      "question_state": "La condición experimental produce eclosión casi completa en pocos días.",
+      "reason_to_continue": "La eclosión rápida abre una nueva pregunta sobre el frío extremo.",
+      "new_information": "Después de 19–21 semanas a 5 °C, la eclosión fue casi completa en 2–4 días al pasar a 21 °C, incluso con fotoperiodos distintos.",
+      "capa": {
+        "tipo": "dato",
+        "valor": "19–21 semanas a 5 °C → eclosión casi completa en 2–4 días tras pasar a 21 °C",
+        "etiqueta": "Tratamiento de frío y tiempo de eclosión",
+        "fuente": "SRC-001",
+        "interpretacion": "Ensayo de laboratorio con huevos sometidos a distintos fotoperiodos; no es una tasa de eclosión natural observada en campo."
+      },
+      "asset_filename": "frames/scene_006.jpg"
+    },
+    {
+      "id": "scene_007",
+      "arc": "cierre_historia",
+      "duration_seconds": 10,
+      "narration": "Además, hubo eclosión a cinco grados y las larvas recién nacidas sobrevivieron dos semanas cerca de cero: tolerancia al frío, no inmunidad.",
+      "on_screen_text": "Dos semanas cerca de 0 °C",
+      "visual_description": "Larva recién eclosionada cerca de agua fría; sugerir tolerancia a bajas temperaturas sin representar supervivencia ilimitada.",
+      "image_prompt": "1930s rubber hose cartoon animation style, hand-inked bouncy characters with pie-cut eyes and white gloves, watercolor painted backgrounds, film grain, slight vignette, sepia-tinted vintage colors, single large character centered, simple background, flat illustrated, not photorealistic, vertical 9:16, no text Larva recién eclosionada cerca de agua fría; sugerir tolerancia a bajas temperaturas sin representar supervivencia ilimitada.",
+      "ambiente": "Agua fría y aire suave, sin efecto de congelación extrema.",
+      "sfx": [
+        "Gota de agua breve"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "rubber_hose_1930s",
+      "dramatic_beat": "La tolerancia a temperaturas cercanas a cero amplía la pregunta, pero no implica inmunidad.",
+      "scene_function": "La tolerancia a temperaturas cercanas a cero amplía la pregunta, pero no implica inmunidad.",
+      "causal_bridge_from_previous": "La tolerancia observada permite plantear una consecuencia ecológica, pero exige limitar la inferencia.",
+      "question_state": "Hay tolerancia al frío, pero no inmunidad ni prueba de supervivencia ilimitada.",
+      "reason_to_continue": "La tolerancia observada lleva a una hipótesis, que debe limitarse.",
+      "new_information": "Los huevos también pudieron eclosionar a 5 °C; las larvas sobrevivieron dos semanas cerca de 0 °C.",
+      "asset_filename": "frames/scene_007.jpg"
+    },
+    {
+      "id": "scene_008",
+      "arc": "reflexion_o_pregunta",
+      "duration_seconds": 10,
+      "narration": "Los autores plantean que un invierno más templado podría permitir eclosiones invernales, pero el ensayo fue de laboratorio y la muestra materna fue pequeña. Esto fue Datos y ociosidades.",
+      "on_screen_text": "Posibilidad, no prueba de campo",
+      "visual_description": "El huevo se abre y deja ver la larva, mientras el fondo pasa del invierno a una primavera posible; la hipótesis climática queda señalada como posibilidad, no como hecho observado.",
+      "image_prompt": "1930s rubber hose cartoon animation style, hand-inked bouncy characters with pie-cut eyes and white gloves, watercolor painted backgrounds, film grain, slight vignette, sepia-tinted vintage colors, single large character centered, simple background, flat illustrated, not photorealistic, vertical 9:16, no text El huevo se abre y deja ver la larva, mientras el fondo pasa del invierno a una primavera posible; la hipótesis climática queda señalada como posibilidad, no como hecho observado.",
+      "ambiente": "La música se abre suavemente y baja antes de la limitación.",
+      "sfx": [
+        "Apertura delicada del cascarón, sin exageración"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "rubber_hose_1930s",
+      "dramatic_beat": "La hipótesis de inviernos más cálidos se paga con su límite: ensayo de laboratorio y muestra materna pequeña.",
+      "scene_function": "La hipótesis de inviernos más cálidos se paga con su límite: ensayo de laboratorio y muestra materna pequeña.",
+      "causal_bridge_from_previous": "El cierre vuelve a la apertura: la eclosión sincronizada existe en el ensayo, no como cambio de campo demostrado.",
+      "question_state": "La posible consecuencia ecológica queda como hipótesis, no como resultado de campo.",
+      "reason_to_continue": "El final devuelve la historia a la eclosión inicial y distingue dato de inferencia.",
+      "new_information": "Los autores plantean una posibilidad bajo inviernos más cálidos; no es una observación de campo ni prueba de causalidad climática.",
+      "asset_filename": "frames/scene_008.jpg"
+    }
+  ],
+  "cortinilla_fuentes": {
+    "duration_seconds": 6,
+    "titulo": "Fuente del día",
+    "aviso": "Norling & Sniegula, Scientific Reports (15 nov 2026). DOI 10.1038/s41598-026-80392-6, confirmado en la página oficial del editor.",
+    "firma": "Datos y ociosidades",
+    "source_ids": [
+      "SRC-001"
+    ]
+  },
+  "audio": {
+    "cama_musical": "pulso",
+    "music_asset": null,
+    "music_plan": "Pulso rítmico muy discreto, cálido y lento; intención sonora solamente, no hay audio generado.",
+    "music_license": null,
+    "mix_note": "Voz al frente; ambientes naturales mínimos; no generar ni adjuntar audio en esta fase."
+  },
+  "export": {
+    "resolution": "1080x1920",
+    "fps": 30,
+    "render_status": "NOT_GENERATED"
+  },
+  "publicacion": {
+    "status": "PENDIENTE_DECISION_GROK",
+    "platforms": [
+      "YouTube Shorts",
+      "TikTok",
+      "Facebook Reels"
+    ],
+    "note": "No publicar ni programar desde preproducción textual; privacidad y horario de publicación quedan sin fijar."
+  },
+  "estado": "PENDIENTE_DECISION_GROK",
+  "production_mode": "storyboard_only",
+  "validation_notes": [
+    "Borrador textual; no se generaron imágenes, frames, audio, voz, video ni render.",
+    "El validador Python real del repositorio, incluida la opción --check-doi, fue ejecutado localmente por Amor el 15-nov-2026: exit 0; el DOI 10.1038/s41598-026-80392-6 resolvió.",
+    "El pin de Lund es solo una referencia regional; el artículo no proporciona coordenadas exactas del sitio de muestreo.",
+    "La hipótesis de eclosión invernal bajo inviernos más cálidos no es una observación de campo ni prueba de causalidad climática.",
+    "El estilo de la cápsula previa de las 07:00 (colibrí) no está registrado en el estado de slots ni existe su storyboard en este repositorio; la unicidad frente a esa pieza no es certificable. Este estilo sí difiere del último storyboard del repositorio y del otro borrador del día.",
+    "La validación estructural y el control DOI están completados según la ejecución local de Amor; permanece pendiente la decisión editorial y la recepción individual de Grok.",
+    "Los ocho asset_filename son rutas previstas para producción; no existen frames todavía. No se generaron imágenes, audio, voz, vídeo ni render."
+  ],
+  "linea_tematica_provisional": "Naturaleza, insectos y adaptación estacional",
+  "risk_notes": [
+    "Ensayo de laboratorio; no afirmar que el cambio climático ya esté causando eclosiones invernales en poblaciones silvestres.",
+    "La muestra materna fue pequeña y los huevos se agruparon; no presentar la variación individual como universal.",
+    "El DOI 10.1038/s41598-026-80392-6 quedó confirmado por la ficha editorial y por la ejecución local de scripts/validar_storyboard.py --check-doi (exit 0, reportada por Amor el 15-nov-2026).",
+    "El punto de Lund es una referencia regional, no el sitio de muestreo.",
+    "El estilo de la cápsula colibrí de las 07:00 no está documentado; unicidad visual respecto de esa pieza no certificable."
+  ],
+  "approved_assets": [],
+  "narrative_qa": {
+    "status": "PASS",
+    "score": 90,
+    "review_basis": "lectura_en_frio_solo_narracion",
+    "reviewer_role": "auditor_capcot_independiente",
+    "reviewed_at": "2026-11-15T15:51:23-06:00",
+    "checks": {
+      "pregunta_central_reconstruible": true,
+      "apertura_in_medias_res": true,
+      "progresion_por_escena": true,
+      "transiciones_causales": true,
+      "giro_cientifico_explicado": true,
+      "limite_evidencia_explicito": true,
+      "payoff_cierre_apertura": true
+    },
+    "critical_flags": []
+  }
+}
