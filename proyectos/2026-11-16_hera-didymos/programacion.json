@@ -1,0 +1,13 @@
+{
+  "project_id": "2026-11-16_hera-didymos",
+  "plataforma": ["yt", "tt"],
+  "publish_at": "2026-11-16T19:15:00Z",
+  "ventana": "mediodia",
+  "hora_cdmx": "13:15",
+  "fecha_cdmx": "2026-11-16",
+  "caption_tt": "Hera de la ESA llegó a Didymos para ver qué le hizo DART en 2022. Primera foto cercana desde 60 km. #Hera #Didymos #DART #Ciencia #Shorts",
+  "titulo_yt": "Hera llega a ver el golpe de DART #Shorts",
+  "privacidad": "private→público a las 13:15 CDMX",
+  "estado": "programado_paquete",
+  "nota": "Falta montar (sin edge-tts JorgeNeural en este entorno). Mj sube TT desde teléfono."
+}
