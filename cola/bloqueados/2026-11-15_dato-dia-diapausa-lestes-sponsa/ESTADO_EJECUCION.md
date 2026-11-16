@@ -2,7 +2,7 @@
 
 - **Fecha:** 15-nov-2026
 - **Slot local propuesto:** 23:30, America/Mexico_City
-- **Estado:** BORRADOR_EN_PROYECTOS_NO_APTO_PARA_PROMOCION
+- **Estado:** PREPARADO_PENDIENTE_REVISION_GROK
 - **Medios:** NO_GENERADOS
 
 ## Comprobaciones
