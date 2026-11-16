@@ -1,8 +1,8 @@
 {
   "fecha": "2026-11-14",
   "tipo": "endscreens_rotacion",
-  "actualizado_cdmx": "2026-11-14T18:31-06:00",
-  "motivo": "18:31 rotación: huesos uEsoscBrfgU (846, +49 en 1 h, acelera) → ratas topo 2 WcTviUWqbes (15, sin pantallas entrantes); antes corneja wxnhEdlJYwU (0 vistas tras ~8 h). Verificado en Studio. Fijos intactos.",
+  "actualizado_cdmx": "2026-11-16T08:31-06:00",
+  "motivo": "agua que baila t8nH76NOOH8 (110 vistas, +29 en 1 h, sin pantalla) -> flamenco JV8SB2EpPyI (1 vista); verificado en Studio",
   "vistas_ref": {
     "phVfyHp3CnY": 94,
     "m4RqQRaz55k": 48,
@@ -138,7 +138,8 @@
     "YVfUrd2NQJw": "YV_3JgGv1kg",
     "uEsoscBrfgU": "WcTviUWqbes",
     "EX0W3q-yKRw": "JV8SB2EpPyI",
-    "8EcFyXTcSdM": "4Qpl17Ts_vI"
+    "8EcFyXTcSdM": "4Qpl17Ts_vI",
+    "t8nH76NOOH8": "JV8SB2EpPyI"
   },
   "pendiente_studio": false,
   "nota": "Aplicado en YouTube Studio Editor > Pantalla final (video específico). Búsqueda: pegar youtube.com/watch?v=ID en 'Buscar vídeos de otros canales' (tus vídeos no lista Shorts). Sin suscripción ni tarjetas. Actualización 26-oct 19:49: la lista «Elegir un vídeo específico» ya muestra los Shorts.",
@@ -211,7 +212,7 @@
   ],
   "nota_excluidos": "Ave-dino / velociraptor: no mandar tráfico de pantallas finales (riesgo de parecer fusil). Preferir hongos y otros nuevos flojos.",
   "nota_studio": "Hongos destino confirmado en timeline. Origen hongos: Studio mostró título «¿Aves que temen a mujeres?» al pegar watch?v=O7TdKvuBjyg (mismo ID O7Td).",
-  "ultima_revision_cdmx": "2026-11-14T17:37-06:00",
+  "ultima_revision_cdmx": "2026-11-16T08:31-06:00",
   "comentarios_ref_2026-11-01T21:52": {
     "oGFKLUgBdhA": 2,
     "xBqdEn1Dumg": 2,
