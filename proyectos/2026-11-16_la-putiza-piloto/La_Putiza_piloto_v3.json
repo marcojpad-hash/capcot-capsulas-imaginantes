@@ -40,7 +40,7 @@
       "id": "franco_escamilla",
       "name": "Franco Escamilla",
       "role": "Commentator 1",
-      "visual_description": "Clay figure with dark sunglasses, flat-brim cap, black hoodie, and a lit clay cigarette permanently in the corner of his mouth.",
+      "visual_description": "Clay figure with dark sunglasses, black fedora in classic 1920s New York gangster style, black hoodie, and a lit clay cigarette permanently in the corner of his mouth. Franco is the one smoking — the cigarette is his, not Ricardo’s (Ricardo smokes a giant joint, Franco smokes a cigarette).",
       "voice_profile": {
         "accent": "Mexican (Monterrey/Norteño)",
         "gender": "Male",
@@ -52,7 +52,7 @@
       "id": "la_mole",
       "name": "Iván Fematt 'La Mole'",
       "role": "Commentator 2",
-      "visual_description": "Massive broad-shouldered clay figure, huge grin, wearing a yellow and blue Tigres jersey.",
+      "visual_description": "Massive broad-shouldered clay figure, huge grin, very little dark hair neatly combed back, glasses, mustache, wearing a yellow and blue Tigres jersey with the word TIGRES written in big letters across the chest.",
       "voice_profile": {
         "accent": "Mexican (Monterrey/Norteño)",
         "gender": "Male",
@@ -72,7 +72,7 @@
       "technique": "90s MTV-style Stop-Motion Claymation",
       "textures": "Rough fingerprint-marked modeling clay, glossy thick red gelatin blood, exaggerated facial expressions"
     },
-    "version": "v3.1 — v3 + formato 9:16 vertical (decisión Marco 2026-11-16)",
+    "version": "v3.2 — v3.1 + correcciones Marco: fedora Franco, corte La Mole, TIGRES escrito en el jersey",
     "based_on": "v2 (corrección Charín)",
     "style_lock": "Celebrity Death Match (MTV 90s): claymation, exaggerated slow-motion on impacts, booth banter, crowd reactions, SPLAT finish, running gags (Charín, tanque de Zabaleta, Rulli, América). No recortar gags para ajustar tiempo: se ajusta el tiempo, no el chiste."
   },

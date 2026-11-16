@@ -96,5 +96,6 @@ FADE OUT.
 ## Notas (no tocar el guion, solo anotar)
 
 - **Voces cruzadas con VidoGrid:** la nasal/gangosa aquí es Gerry y la teatral es Slobotzky; en el JSON de VidoGrid (12-nov) era al revés (nasal/gangosa Slobotzky, teatral Franco). El piloto manda; al generar, usar las voces de ESTE piloto.
+- **Correcciones de Marco 2026-11-16 (v3.2):** sombrero de Franco = **fedora negra estilo gánster Nueva York años 20** (clip 2 CABINA de Flow, retrato de referencia), NO gorra plana; corte de La Mole = **poco pelo oscuro bien peinado hacia atrás + lentes + bigote**; **Franco es el que fuma el cigarro** (Ricardo fuma el porro gigante); jersey de La Mole **dice TIGRES en letras grandes** (excepción obligatoria a la regla de no texto en ropa).
 - **Aspect ratio decidido por Marco 2026-11-16: 9:16 vertical.** El JSON v3.1 ya dice 9:16; coincide con Flow y VidoGrid (vertical) y con Shorts/TikTok.
 - **Hook:** Ricardo entra con el tanque desde 0:00; el tanque es el arma del remate (2:50). La revisión de VidoGrid advertía no spoilear el remate en el hook; aquí el tanque se ve desde el inicio como utilería de Ricardo, no como arma de Slobo, así que el giro se mantiene.

@@ -1,6 +1,8 @@
 # LA PUTIZA — Prompts visuales por plano (v3.1, 9:16 vertical)
 
 **Base:** piloto v3.1 (Charín + mejoras de ritmo + 9:16). **23 planos, 4 escenas, 180 s.**
+**CORRECCIONES de Marco 2026-11-16 (revisado contra el clip 22 CABINA de Flow):** el sombrero de Franco es una **fedora negra estilo gánster años 20**, no gorra plana; **el corte de La Mole es poco pelo bien peinado + lentes + bigote**; **Franco es el que fuma el cigarro** (Ricardo fuma el porro); **el jersey de La Mole dice TIGRES escrito en letras grandes** (excepción a la regla de no texto en ropa).
+
 **Reglas de Marco aplicadas aquí:**
 - **Solo 4 escenas de historia, pero 23 planos de generación:** cada escena se parte en planos de ~8 s (un clip de Veo por plano). La escena es estructura; el plano es lo que se genera.
 - **Especificidad total:** cada plano trae personajes con su lock, cámara, movimiento, acción, diálogo exacto y qué NO debe aparecer.
@@ -16,9 +18,9 @@
 
 **GERRY (árbitro/productor):** chaparro, estresado, audífonos enormes de estudio, tabla con hojas, cronómetro, sudando. Voz nasal gangosa. NUNCA: camisa rayada, moño, silbato (eso era el Jerry viejo de Flow, no este Gerry).
 
-**FRANCO ESCAMILLA (comentarista 1) — lock de referente real:** alto y robusto, complexión grande, pecho ancho, pelo negro corto peinado hacia atrás, **bigote negro grueso inconfundible**, cejas marcadas, mandíbula ancha. En el piloto: lentes oscuros, gorra plana, hoodie negro, cigarro de plastilina prendido siempre en la comisura. Referente real: Franco Escamilla, el bigote y la corpulencia son lo que lo hace reconocible. NUNCA: sombrero vaquero, fedora, esmoquin, flaco, sin bigote, sin lentes.
+**FRANCO ESCAMILLA (comentarista 1) — lock de referente real (CORREGIDO 2026-11-16 por Marco):** alto y robusto, complexión grande, pecho ancho, pelo negro corto peinado hacia atrás, **bigote negro grueso inconfundible**, cejas marcadas, mandíbula ancha. **Sombrero: fedora negra estilo gánster de Nueva York años 20** (como en el clip 2 CABINA de Flow, el retrato de referencia de Franco) — NO gorra plana, eso era del JSON y estaba mal. Lentes oscuros, hoodie negro, **cigarro de plastilina prendido siempre en la comisura: Franco es el que fuma** (Ricardo fuma el porro gigante, Franco el cigarro). Referente real: Franco Escamilla, el bigote y la corpulencia son lo que lo hace reconocible. NUNCA: sombrero vaquero, gorra plana, esmoquin, flaco, sin bigote, sin lentes, sin fedora.
 
-**LA MOLE / IVÁN FEMATT (comentarista 2) — lock de referente real:** bajo y MUY robusto, panza enorme, cara redonda, barba corta oscura, pelo corto oscuro, sonrisa enorme. **Jersey amarillo y azul de los Tigres SIEMPRE** + gorra. Referente real: La Mole, panza + cara redonda + Tigres. NUNCA: playera negra, flaco, alto, sin panza.
+**LA MOLE / IVÁN FEMATT (comentarista 2) — lock de referente real (CORREGIDO 2026-11-16 por Marco):** bajo y MUY robusto, panza enorme, cara redonda, sonrisa enorme. **Corte: poco pelo oscuro, bien peinado hacia atrás** (así es el real: poco pelo pero bien peinado), **lentes y bigote**. **Jersey amarillo y azul de los Tigres SIEMPRE, con la palabra TIGRES escrita en letras grandes en el pecho** — el texto TIGRES en el jersey es obligatorio, no un error. Referente real: La Mole, panza + cara redonda + Tigres. NUNCA: playera negra, flaco, alto, sin panza, pelo largo, sin lentes.
 
 ## El público — amigos identificables (SOLO en planos de público)
 
@@ -37,13 +39,13 @@ Fuente de la lista: invitados/colaboradores documentados de La Cotorrisa (Sopita
 
 ## Negativos globales (en TODOS los planos)
 
-photorealistic human, flat 2D cartoon, smooth plastic skin, extra fingers, distorted face, watermark, logo, text on clothing, letters on cap, bare chest, bare belly, bare feet, clean-shaven Slobotzky, clean-shaven Ricardo, obese Slobotzky, torn jacket, ripped clothes, open jacket, slow motion (salvo que el plano lo pida), crowd visible in ring shots, other characters in booth shots, Celebrity Deathmatch / MTV / WWE logo.
+photorealistic human, flat 2D cartoon, smooth plastic skin, extra fingers, distorted face, watermark, logo, text on clothing (EXCEPCIÓN OBLIGATORIA: la palabra TIGRES en el jersey de La Mole sí va, en letras grandes), letters on cap, bare chest, bare belly, bare feet, clean-shaven Slobotzky, clean-shaven Ricardo, obese Slobotzky, torn jacket, ripped clothes, open jacket, slow motion (salvo que el plano lo pida), crowd visible in ring shots, other characters in booth shots, Celebrity Deathmatch / MTV / WWE logo.
 
 ## ESCENA 1 — 0:00-0:55 (7 planos)
 
 **1.1 — 0:00-0:08 — El letrero.** Vertical 9:16, arena oscura. Un letrero gigante de plastilina en llamas baja del techo, letras chorreando sangre de gelatina roja: "LA PUTIZA". Cámara: push-in lento. Sin diálogo. SFX: rugido pirotécnico.
 **1.2 — 0:08-0:16 — EL PÚBLICO.** Plano de público: Alex Fernández, Ricardo O'Farrill, Sofía Niño de Rivera, Daniel Sosa, Escorpión Dorado y El Capi Pérez en primera fila, rugiendo, aventando vasos de cerveza y cartas de Pokémon al ring. Cada uno con su rasgo (ver lista). Cámara: wide de grada, sin luchadores en cuadro. Sin diálogo. SFX: gritos, cláxones.
-**1.3 — 0:16-0:24 — Cabina, Franco abre.** Franco Escamilla (bigote grueso, lentes oscuros, gorra plana, hoodie negro, cigarro prendido) y La Mole (panza enorme, jersey Tigres, gorra) miran a cámara en la cabina. Sin público en cuadro. FRANCO: "¡Qué onda, banda! Bienvenidos a La Putiza. Hoy estos dos pendejos por fin se van a arreglar como hombres."
+**1.3 — 0:16-0:24 — Cabina, Franco abre.** Franco Escamilla (bigote grueso, fedora negra años 20, lentes oscuros, hoodie negro, cigarro prendido) y La Mole (panza enorme, jersey Tigres, gorra) miran a cámara en la cabina. Sin público en cuadro. FRANCO: "¡Qué onda, banda! Bienvenidos a La Putiza. Hoy estos dos pendejos por fin se van a arreglar como hombres."
 **1.4 — 0:24-0:32 — Cabina, La Mole + presentación Ricardo.** Mismo encuadre de cabina. LA MOLE: "¡A huevo, compadre! ¡Venimos a ver sangre de plastilina y a cobrar las apuestas! ¡Arriba el norte, cabrones!" FRANCO: "En la esquina roja, el fresa de Naucalpan, coleccionista de cartitas y experto en darle respiración de boca a boca a la tercera edad: ¡RICARDO PÉREZ!"
 **1.5 — 0:32-0:40 — Entrada de Ricardo, CAMINA por el ring.** Ricardo Pérez (2 m, gorra al revés, hoodie oversize, ojos rojos, Charizard holográfico en una mano, tanque de oxígeno portátil en la otra) CAMINA por la rampa y da la vuelta al ring saludando, encuadre cerrado al ring, fondo oscuro, NO se ve el público. RICARDO (riendo agudo): "¡Cámara, Slobo! ¡No me tardes que este tanque de oxígeno es de Zabaleta y si no se lo regreso antes de las siete se me desinfla en plena cena!"
 **1.6 — 0:40-0:48 — Cabina, presentación Slobo.** Cabina, sin público. LA MOLE: "¡Y en la esquina azul, el lobo judío más hipocondríaco de México, recién desinflado a base de pura inyección de Mounjaro: ¡JOSÉ LUIS SLOBOTZKY!"
@@ -56,7 +58,7 @@ photorealistic human, flat 2D cartoon, smooth plastic skin, extra fingers, disto
 **2.3 — 1:11-1:19 — La gorra volando.** Ricardo rebana la gorra de Slobo de un tajo con la carta de Charizard; la calva brillante reluce bajo los reflectores. Corte a cabina: La Mole grita. LA MOLE (eufórico): "¡Uff! ¡Le arrancó la tapa y la dignidad de un solo madrazo, compadre! ¡Brilla más que mi futuro!"
 **2.4 — 1:19-1:27 — Los tres rodillazos.** Ricardo le toma la cabeza pelona a Slobo y le estrella tres rodillazos en la nariz; chorro espeso de sangre de gelatina roja. RICARDO (burlón, fuerte): "¡Todo México vio cómo te babeabas por Sebastián Rulli en el Auditorio Nacional y aparte estás pelón, pinche clóset con patas!"
 **2.5 — 1:27-1:35 — Slobo en pánico.** Slobo de rodillas, sangrando de la nariz, tocándose el pecho. SLOBOTZKY (temblando, voz entrecortada): "¡Me estoy muriendo, Gerry! ¡Se me subió la presión! ¡Es un infarto fulminante! ¡Tengo el brazo izquierdo dormido!"
-**2.6 — 1:35-1:45 — Cabina, Franco analiza.** Cabina, Franco dándole una calada a su cigarro, La Mole a su lado. FRANCO: "¡Se la está aplicando bonito el fresa de Satélite! ¡Le pegó justo donde le duele: en la hipocondría y en el clóset!"
+**2.6 — 1:35-1:45 — Cabina, Franco analiza.** Cabina, Franco dándole una calada a su cigarro (Franco es el que fuma), La Mole a su lado. FRANCO: "¡Se la está aplicando bonito el fresa de Satélite! ¡Le pegó justo donde le duele: en la hipocondría y en el clóset!"
 
 ## ESCENA 3 — 1:45-2:20 (5 planos)
 
