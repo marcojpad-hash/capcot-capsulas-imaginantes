@@ -1,1 +1,144 @@
-PLACEHOLDER
+{
+  "project_id": "2026-11-16_hera-didymos",
+  "title": "Hera llega a ver el golpe de DART",
+  "language": "es-MX",
+  "aspect_ratio": "9:16",
+  "target_duration_seconds": 85,
+  "trend_source": {
+    "tipo": "noticia_cientifica",
+    "medio": "ESA",
+    "url": "https://www.esa.int/articles/about-us/directorates/operations/space-safety/hera/hera-s-first-close-up-view-of-didymos-asteroids",
+    "estudio_doi": null,
+    "fecha_publicacion": "2026-11-05",
+    "termino": "Hera Didymos",
+    "fecha_consulta": "2026-11-16"
+  },
+  "estilo_id": "pixel_art",
+  "estilo_visual": "16-bit pixel art scene, limited retro palette, crisp pixels, side view video game style, dithering, vertical 9:16, no text",
+  "estructura": "sabias_que",
+  "serie": "Datos y ociosidades",
+  "voice": {
+    "engine": "edge-tts",
+    "voice_id": "es-MX-JorgeNeural",
+    "rate": "+7%",
+    "pitch": "-2Hz",
+    "pad_seconds": 0.3,
+    "modo_pausas": "continuo"
+  },
+  "sources": [
+    {
+      "id": "SRC-001",
+      "cita_corta": "ESA (2026). Hera’s first close-up view of Didymos asteroids.",
+      "url": "https://www.esa.int/articles/about-us/directorates/operations/space-safety/hera/hera-s-first-close-up-view-of-didymos-asteroids",
+      "doi": null,
+      "accessed": "2026-11-16",
+      "supports": ["primera imagen cercana de Didymos", "distancia 60 km", "Didymos 780 m", "Dimorphos 151 m en sombra", "otro lado de Didymos", "llegada Hera"],
+      "ref_display": "ESA · 5-nov-2026"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_001",
+      "arc": "hook_medias_res",
+      "duration_seconds": 10,
+      "narration": "Una nave europea acaba de llegar a un asteroide que la NASA golpeó hace cuatro años.",
+      "on_screen_text": "Hera llegó",
+      "visual_description": "pixel art spacecraft approaching binary asteroid",
+      "image_prompt": "16-bit pixel art scene, limited retro palette, crisp pixels, side view video game style, dithering, vertical 9:16, no text + small pixel spacecraft approaching two rocky asteroids in space, one larger one smaller, stars background",
+      "source_ids": ["SRC-001"],
+      "asset_filename": "frames/scene_001.jpg",
+      "ambiente": "viento",
+      "sfx": ["motor"]
+    },
+    {
+      "id": "scene_002",
+      "arc": "desarrollo",
+      "duration_seconds": 12,
+      "narration": "Hera, de la ESA, tomó su primera foto cercana de Didymos el 5 de noviembre, desde unos sesenta kilómetros.",
+      "on_screen_text": "Primera foto cercana",
+      "visual_description": "pixel art camera view of asteroid",
+      "image_prompt": "16-bit pixel art scene, limited retro palette, crisp pixels, side view video game style, dithering, vertical 9:16, no text + monochrome-like pixel view of a large cratered asteroid with boulders and equatorial ridge, small moonlet in shadow",
+      "source_ids": ["SRC-001"],
+      "asset_filename": "frames/scene_002.jpg",
+      "ambiente": "espacio",
+      "sfx": ["camara"]
+    },
+    {
+      "id": "scene_003",
+      "arc": "desarrollo",
+      "duration_seconds": 11,
+      "narration": "Didymos mide unos setecientos ochenta metros; su luna Dimorphos, ciento cincuenta y uno, quedó casi toda en sombra.",
+      "on_screen_text": "780 m y 151 m",
+      "visual_description": "pixel art size comparison of two asteroids",
+      "image_prompt": "16-bit pixel art scene, limited retro palette, crisp pixels, side view video game style, dithering, vertical 9:16, no text + two pixel asteroids side by side, larger one clear with craters, smaller one half in shadow, space background",
+      "source_ids": ["SRC-001"],
+      "asset_filename": "frames/scene_003.jpg",
+      "ambiente": "espacio",
+      "sfx": ["beep"]
+    },
+    {
+      "id": "scene_004",
+      "arc": "desarrollo",
+      "duration_seconds": 12,
+      "narration": "La foto muestra el otro lado de Didymos, el que DART no vio justo antes del impacto en 2022.",
+      "on_screen_text": "El otro lado",
+      "visual_description": "pixel art different hemisphere of asteroid",
+      "image_prompt": "16-bit pixel art scene, limited retro palette, crisp pixels, side view video game style, dithering, vertical 9:16, no text + pixel asteroid with different surface: many boulders, grooves and craters on one side, equatorial ridge",
+      "source_ids": ["SRC-001"],
+      "asset_filename": "frames/scene_004.jpg",
+      "ambiente": "espacio",
+      "sfx": ["impacto"]
+    },
+    {
+      "id": "scene_005",
+      "arc": "desarrollo",
+      "duration_seconds": 11,
+      "narration": "DART cambió la órbita de Dimorphos en unos treinta y tres minutos. Hera va a medir bien el resultado.",
+      "on_screen_text": "Órbita 33 min más corta",
+      "visual_description": "pixel art impact aftermath and measurement",
+      "image_prompt": "16-bit pixel art scene, limited retro palette, crisp pixels, side view video game style, dithering, vertical 9:16, no text + pixel spacecraft scanning a small asteroid with impact crater debris floating, measurement lines",
+      "source_ids": ["SRC-001"],
+      "asset_filename": "frames/scene_005.jpg",
+      "ambiente": "espacio",
+      "sfx": ["scan"]
+    },
+    {
+      "id": "scene_006",
+      "arc": "cierre_historia",
+      "duration_seconds": 10,
+      "narration": "El 25 de noviembre van a mostrar las fotos detalladas de Dimorphos, el primer asteroide cuya órbita cambiamos a propósito.",
+      "on_screen_text": "Fotos el 25 nov",
+      "visual_description": "pixel art reveal of small asteroid",
+      "image_prompt": "16-bit pixel art scene, limited retro palette, crisp pixels, side view video game style, dithering, vertical 9:16, no text + close pixel view of small cratered asteroid moonlet emerging from shadow, spacecraft in distance",
+      "source_ids": ["SRC-001"],
+      "asset_filename": "frames/scene_006.jpg",
+      "ambiente": "espacio",
+      "sfx": ["revelacion"]
+    },
+    {
+      "id": "scene_007",
+      "arc": "reflexion_o_pregunta",
+      "duration_seconds": 9,
+      "narration": "¿Podemos mover un asteroide si amenaza la Tierra? Hera nos dirá cuánto de verdad podemos. Esto fue Datos y ociosidades.",
+      "on_screen_text": "Defensa planetaria",
+      "visual_description": "pixel art Earth and asteroid deflection",
+      "image_prompt": "16-bit pixel art scene, limited retro palette, crisp pixels, side view video game style, dithering, vertical 9:16, no text + pixel Earth in distance with small asteroid being nudged by a probe, protective feel",
+      "source_ids": ["SRC-001"],
+      "asset_filename": "frames/scene_007.jpg",
+      "ambiente": "espacio",
+      "sfx": ["final"]
+    }
+  ],
+  "cortinilla_fuentes": {
+    "duration_seconds": 6,
+    "titulo": "Fuentes",
+    "aviso": "Imágenes generadas con IA. Voz sintética. Audio sintetizado.",
+    "firma": "Datos y ociosidades · @datosyociosidades"
+  },
+  "export": {
+    "filename": "capsula.mp4",
+    "resolution": "1080x1920",
+    "fps": 30,
+    "loudness_lufs": -14
+  }
+}
