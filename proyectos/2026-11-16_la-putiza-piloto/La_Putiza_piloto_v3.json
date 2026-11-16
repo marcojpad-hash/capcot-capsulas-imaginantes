@@ -62,7 +62,7 @@
     }
   ],
   "project_metadata": {
-    "aspect_ratio": "16:9",
+    "aspect_ratio": "9:16",
     "duration_seconds": 180,
     "episode": "01 - Ricardo Pérez vs. José Luis Slobotzky",
     "title": "LA PUTIZA",
@@ -72,7 +72,7 @@
       "technique": "90s MTV-style Stop-Motion Claymation",
       "textures": "Rough fingerprint-marked modeling clay, glossy thick red gelatin blood, exaggerated facial expressions"
     },
-    "version": "v3 — basada en v2 (Charín) + mejoras de ritmo 2026-11-16",
+    "version": "v3.1 — v3 + formato 9:16 vertical (decisión Marco 2026-11-16)",
     "based_on": "v2 (corrección Charín)",
     "style_lock": "Celebrity Death Match (MTV 90s): claymation, exaggerated slow-motion on impacts, booth banter, crowd reactions, SPLAT finish, running gags (Charín, tanque de Zabaleta, Rulli, América). No recortar gags para ajustar tiempo: se ajusta el tiempo, no el chiste."
   },

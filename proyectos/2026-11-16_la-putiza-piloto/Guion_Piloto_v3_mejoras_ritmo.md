@@ -2,7 +2,7 @@
 
 **Base:** v2 (corrección Charín). **Aprobado por Marco:** aplicar las mejoras propuestas.
 **Regla de Marco al aplicarlas:** mantener el estilo Celebrity Death Match y que sirvan los gags de comedia. Por eso NO se recortó ningún chiste: el tiempo se ajustó a los gags, no los gags al tiempo.
-**Pendiente:** decidir 16:9 vs 9:16 antes de generar (el JSON sigue diciendo 16:9, Flow/VidoGrid son 9:16).
+**Pendiente:** ninguno de formato — Marco decidió 2026-11-16: **9:16 vertical**. El JSON v3.1 ya dice 9:16.
 
 ## Style lock — Celebrity Death Match (no tocar)
 
@@ -96,5 +96,5 @@ FADE OUT.
 ## Notas (no tocar el guion, solo anotar)
 
 - **Voces cruzadas con VidoGrid:** la nasal/gangosa aquí es Gerry y la teatral es Slobotzky; en el JSON de VidoGrid (12-nov) era al revés (nasal/gangosa Slobotzky, teatral Franco). El piloto manda; al generar, usar las voces de ESTE piloto.
-- **Aspect ratio pendiente:** el JSON dice 16:9; Flow y VidoGrid son 9:16 vertical. Decidir antes de generar.
+- **Aspect ratio decidido por Marco 2026-11-16: 9:16 vertical.** El JSON v3.1 ya dice 9:16; coincide con Flow y VidoGrid (vertical) y con Shorts/TikTok.
 - **Hook:** Ricardo entra con el tanque desde 0:00; el tanque es el arma del remate (2:50). La revisión de VidoGrid advertía no spoilear el remate en el hook; aquí el tanque se ve desde el inicio como utilería de Ricardo, no como arma de Slobo, así que el giro se mantiene.
