@@ -4,7 +4,7 @@
 - **Serie:** Datos y ociosidades
 - **Fecha objetivo:** 2026-11-07
 - **Slot:** 23:30 America/Mexico_City
-- **Estado:** `PREPARADO_PENDIENTE_REVISION_GROK`
+- **Estado:** `BORRADOR_EN_PROYECTOS_NO_APTO_PARA_PROMOCION`
 - **Preproducción textual:** COMPLETADA
 - **Fuente primaria:** VERIFICADA
 - **Medios:** `NO_GENERADOS`
