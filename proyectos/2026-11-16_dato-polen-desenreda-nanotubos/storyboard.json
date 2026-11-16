@@ -294,7 +294,7 @@
       "full_text_url": "https://www.nature.com/articles/s41467-026-79607-1_reference.pdf",
       "verification_status": "PENDIENTE_RESOLVEDOR",
       "publisher_source_status": "PDF_EDITORIAL_ABIERTO_Y_CONTRASTADO",
-      "verification_detail": "Se abrió el PDF editorial de Nature Communications y se contrastaron título, autoría, fecha, mecanismo, reología, impresión y estabilidad acuosa. Los intentos de doi.org y Crossref devolvieron URL is not accessible via this tool; el DOI queda pendiente y no se declara validado por resolvedor.",
+      "verification_detail": "Se abrió el PDF editorial de Nature Communications y se contrastaron título, autoría, fecha, mecanismo, reología, impresión y estabilidad acuosa. Los intentos de abrir doi.org y Crossref no devolvieron una respuesta verificable en esta sesión; el DOI queda pendiente y no se declara validado por resolvedor.",
       "supports": [
         "Agregación de nanotubos de carbono en agua",
         "Microgeles de polen de girasol en estado granular nativo",
