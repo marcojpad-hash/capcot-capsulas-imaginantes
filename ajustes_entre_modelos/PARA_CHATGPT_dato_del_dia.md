@@ -235,3 +235,10 @@ Entrega: `cola/entrada/2026-11-01_dato-cambio-horario-corazon/` con `storyboard.
 - Variedad: base distinta de las 50 plantillas, otra paleta y encuadres (general, cenital, macro, contrapicado, detalle); 9–10 frames con plano_seconds=5.
 - Sin frames, sin audio, sin publicar. Montaje/QA/publicación: Grok app.
 - 16:00 CDMX 11-nov: sigue sin paquete «dato» de hoy en cola/entrada.
+
+## DATO DE HOY 2026-11-17 (slot 23:30 CDMX) — sin paquete en cola a las 10:00
+- **Tema sugerido (tip usable):** efecto de producción — decir las palabras en voz alta las hace más recordables que leerlas en silencio.
+- **Ancla científica a verificar (ChatGPT confirma URL/DOI antes de usar, no inventar):** MacLeod, Gopie, Hourihan, Neary & Ozubko (2010), «The production effect: delineation of a phenomenon», J. Exp. Psychol.: Learning, Memory, and Cognition 36(3):671–685, DOI 10.1037/a0018785. Si no se verifica, cambiar de tema.
+- **Tip:** al estudiar una lista corta (nombres, vocabulario, pendientes), decir en voz alta solo lo importante, no todo.
+- **Storyboard 8 escenas (sin frames):** 1 in medias res (alguien susurra una lista que no recordará) · 2 contexto llano · 3 conflicto (leer en silencio parece suficiente) · 4 dato 1 · 5 dato 2 (contraste) · 6 giro (por qué: el acto de hablar vuelve la palabra distintiva) · 7 límite (120–170 car.: laboratorio, listas de palabras, efecto se diluye si todo se dice en voz alta) · 8 giro+pregunta+sello (110–170 car. antes de «Esto fue Datos y ociosidades.»).
+- **Entrega:** `cola/entrada/2026-11-17_dato-<slug>/` (storyboard.json, fuentes.md, ESTADO_EJECUCION.md = PREPARADO_PENDIENTE_REVISION_GROK) antes de 21:00 CDMX. Formato, voz y línea editorial como arriba. Sin frames, audio ni publicación. Montaje/QA/publicación: Grok app.
