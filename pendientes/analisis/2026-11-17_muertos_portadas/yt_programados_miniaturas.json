@@ -1,0 +1,102 @@
+{
+  "fecha": "2026-11-17",
+  "hora": "17:45 America/Mexico_City",
+  "canal": "UCU2ZI-6pBJEr9aSFsF6bxLw",
+  "accion": "solo thumbnails.set; no se tocó privacidad ni publishAt",
+  "programados_revisados": 12,
+  "ya_ok_sardefault_igual_a_portada": [
+    {
+      "id": "25mWYJVOPLk",
+      "titulo": "El riesgo que queda después del colesterol #Shorts",
+      "publish_cdmx": "2026-11-17 19:00",
+      "sar_diff": 0.93
+    },
+    {
+      "id": "NKDhKlY1rVI",
+      "titulo": "Virus y bacterias colapsan el bloom #Shorts",
+      "publish_cdmx": "2026-11-18 19:00",
+      "sar_diff": 0.91
+    },
+    {
+      "id": "vj5RZDt-dfc",
+      "titulo": "Juno revela el choque invisible de Júpiter #Shorts",
+      "publish_cdmx": "2026-11-19 13:30",
+      "sar_diff": 1.26
+    },
+    {
+      "id": "zyTl_cVGN6E",
+      "titulo": "ADN que apaga el gen del cáncer #Shorts",
+      "publish_cdmx": "2026-11-19 19:00",
+      "sar_diff": 0.63
+    },
+    {
+      "id": "WTlFSZV9HYg",
+      "titulo": "IA encuentra materiales 2D olvidados #Shorts",
+      "publish_cdmx": "2026-11-20 13:30",
+      "sar_diff": 0.7
+    },
+    {
+      "id": "K4qNkx2f4RI",
+      "titulo": "Químicos aislan oxoboranos estables tras 60 años #Shorts",
+      "publish_cdmx": "2026-11-21 13:30",
+      "sar_diff": 2.66
+    },
+    {
+      "id": "ZG4iQgmWrLI",
+      "titulo": "Un robot ensambla una estructura en órbita #Shorts",
+      "publish_cdmx": "2026-11-21 19:00",
+      "sar_diff": 0.65
+    }
+  ],
+  "corregidos_thumbnails_set": [
+    {
+      "id": "Vx8EhL4ib7I",
+      "titulo": "¿La IA nos va a matar? La advertencia de un directivo de OpenAI",
+      "publish_cdmx": "2026-11-17 23:30",
+      "antes": "solo 16:9 (qhd/maxres, sin título)",
+      "despues": "sardefault 1080x1920",
+      "sar_diff": 1.57,
+      "privacy_sigue": "private",
+      "publishAt_sigue": "2026-11-18T05:30:00Z"
+    },
+    {
+      "id": "41PYjWbQuJo",
+      "titulo": "¿Por qué tenemos hipo? #Shorts",
+      "publish_cdmx": "2026-11-18 07:00",
+      "antes": "solo 16:9 (qhd/maxres, sin título)",
+      "despues": "sardefault 1080x1920",
+      "sar_diff": 1.78,
+      "privacy_sigue": "private",
+      "publishAt_sigue": "2026-11-18T13:00:00Z"
+    },
+    {
+      "id": "AxgWdhqPhRI",
+      "titulo": "La corneja decide en 235 milisegundos #Shorts",
+      "publish_cdmx": "2026-11-19 07:00",
+      "antes": "solo 16:9 (qhd/maxres, sin título)",
+      "despues": "sardefault 1080x1920",
+      "sar_diff": 2.31,
+      "privacy_sigue": "private",
+      "publishAt_sigue": "2026-11-19T13:00:00Z"
+    },
+    {
+      "id": "msWV2AXr6Uk",
+      "titulo": "El rosa del flamenco viene de su comida #Shorts",
+      "publish_cdmx": "2026-11-20 07:00",
+      "antes": "solo 16:9 (qhd/maxres, sin título)",
+      "despues": "sardefault 1080x1920",
+      "sar_diff": 0.71,
+      "privacy_sigue": "private",
+      "publishAt_sigue": "2026-11-20T13:00:00Z"
+    }
+  ],
+  "sin_mp4": [
+    {
+      "id": "-fDL2pBjH30",
+      "titulo": "El mosquito que escucha",
+      "publish_cdmx": "2026-11-18 13:30",
+      "problema": "sin sardefault; miniatura actual es un frame de en medio (El gen fruitless), no la portada con título",
+      "mp4": "no está en esta máquina; según RELEVO vive en la VM de Pecas: ~/workspace/capcot-entregas/2026-11-18_mosquito/capsula.mp4 (87.30s, 23645149 bytes). No se usó el mp4 viejo de 83.2s."
+    }
+  ]
+}
