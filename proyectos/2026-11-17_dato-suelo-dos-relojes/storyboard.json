@@ -1,0 +1,409 @@
+{
+  "_schema": "CAPCOT_STORYBOARD_TEXT_V2",
+  "project_id": "2026-11-17_dato-suelo-dos-relojes",
+  "serie": "Datos y ociosidades",
+  "title": "El pulso de CO₂ no equivale al crecimiento microbiano",
+  "titulo": "El suelo tiene dos relojes",
+  "language": "es-MX",
+  "aspect_ratio": "9:16",
+  "target_duration_seconds": 84,
+  "estructura": "sabias_que",
+  "audience": "Público general interesado en naturaleza, ecología y ciencia.",
+  "occasion": "Slot principal de tarde, 17:00 CDMX; ventana operativa 16:30–18:00 de martes.",
+  "resumen": "En dos casos de campo de California, el CO₂ comenzó a salir del suelo rehidratado dentro de la primera hora, mientras que el máximo medido de crecimiento microbiano llegó a las seis horas en controles y a las 72 horas en la pastura sometida a sequía de alta intensidad. Parte del CO₂ más temprano podría ser gas relictual liberado físicamente.",
+  "narrative_contract": {
+    "central_question": "¿Por qué aparece CO₂ del suelo rehidratado antes de que la comunidad microbiana alcance su máximo medido de crecimiento?",
+    "promise": "Separar el pulso de gas de la producción de biomasa y mostrar cómo el historial de sequía cambia el retraso.",
+    "stakes": "Confundir la salida de CO₂ con el crecimiento microbiano puede distorsionar la interpretación del pulso de carbono que sigue a la rehidratación de suelos secos.",
+    "scientific_turn": "El aumento del CO₂ comienza dentro de la primera hora; el crecimiento máximo medido aparece a las seis horas en controles y a las 72 horas en la pastura de Jalama tras sequía de alta intensidad. El CO₂ temprano también podría incluir gas relictual.",
+    "evidence_limit": "Son dos casos de campo paralelos en biomas, usos y tratamientos distintos, con una parcela por condición y sitio. El control de nueve minutos se hizo en arena de sílice estéril, no en suelo vivo. El mecanismo de metabolitos es una hipótesis de los autores.",
+    "payoff": "El primer CO₂ no demuestra que la comunidad ya haya recuperado su crecimiento: gas y biomasa tienen relojes distintos, y parte del pulso inicial podría no ser respiración contemporánea."
+  },
+  "trend_source": {
+    "termino": "soil microbiome drought rehydration / microbial growth and CO2 flux",
+    "fecha_publicacion": "2026-11-12",
+    "url": "https://www.nature.com/articles/s41467-026-79474-w_reference.pdf"
+  },
+  "editorial_status": "PROPUESTA_PENDIENTE_DE_GROK",
+  "arco": {
+    "hook_medias_res": "El suelo rehidratado libera CO₂ antes de que el crecimiento microbiano alcance su máximo.",
+    "desarrollo": "Dos sitios y dos métodos separan el flujo de gas de la producción de biomasa; el historial de sequía modifica el retraso.",
+    "cierre_historia": "El CO₂ temprano puede incluir gas relictual; los metabolitos ofrecen una hipótesis adicional para la respiración posterior.",
+    "reflexion_o_pregunta": "¿Qué parte del primer CO₂ es actividad que vuelve y qué parte ya estaba atrapada?"
+  },
+  "estilo_id": "papel_stop_motion",
+  "estilo_visual": "Stop-motion de papel (propio)",
+  "visual_identity": {
+    "style_id": "papel_stop_motion",
+    "style_name": "Stop-motion de papel (propio)",
+    "prompt_base": "flat paper cut-out stop-motion animation frame, colored construction paper pieces, slight shadows, top-down view, vertical 9:16, no text",
+    "palette": "Crema papel, ocre seco, verde salvia, azul grisáceo y carbón; naranja apagado solo para la condición de sequía.",
+    "lighting": "Luz cenital suave y constante; sombras cortas y coherentes bajo cada recorte.",
+    "texture": "Papel de construcción mate con fibras visibles y bordes recortados; sin plastilina ni textura fotográfica.",
+    "composition": "Diorama cenital vertical 9:16; una acción principal por plano; dejar zona segura para rótulos añadidos en postproducción; repetir la misma placa de suelo como motivo de continuidad.",
+    "negative_prompt": "Fotorealismo, CGI 3D, plastilina, scratchboard, acuarela, collage de estilos, gradientes vectoriales, texto generado, letras, logotipos, marcas de agua, personajes antropomórficos.",
+    "reference_assets": [],
+    "seed": null,
+    "seed_policy": "No existen assets de referencia ni se generan medios en esta etapa. En producción, mantener una semilla global y la misma gramática de recorte, escala y luz en las ocho escenas."
+  },
+  "typography_identity": {
+    "font_family": "DejaVu Sans",
+    "font_weight": "700 para gancho; 400 para subtítulos",
+    "title_style": "Máximo seis palabras; gancho desde frame 0 en postproducción.",
+    "subtitle_style": "Bloques de máximo tres palabras; zona segura inferior.",
+    "hierarchy": "Gancho > dato/etiqueta > subtítulos.",
+    "animation": "Un movimiento por plano; tipografía en postproducción, nunca dentro del prompt visual."
+  },
+  "voice": {
+    "engine": "edge-tts",
+    "voice_id": "es-MX-JorgeNeural",
+    "language": "es-MX",
+    "rate": "+7%",
+    "pitch": "-2Hz",
+    "pad_seconds": 0.3,
+    "modo_pausas": "continuo"
+  },
+  "source_ids": [
+    "SRC-001"
+  ],
+  "sources": [
+    {
+      "id": "SRC-001",
+      "cita_corta": "Caro, T. A., Ibarra Arriaga, J., Solini, G., Shivji, Z., Grossman, E., Jhatro, A., Stewart, B., Fu, X., Sessions, A. L., & Karthikeyan, S. (2026). SIP-enabled multi-omics reveals soil microbiome responses to drought and rehydration. Nature Communications, Article in Press. Publicado en línea el 12 de noviembre de 2026. DOI: 10.1038/s41467-026-79474-w.",
+      "url": "https://www.nature.com/articles/s41467-026-79474-w_reference.pdf",
+      "editorial_url": "https://www.nature.com/articles/s41467-026-79474-w",
+      "doi": "10.1038/s41467-026-79474-w",
+      "doi_url": "https://doi.org/10.1038/s41467-026-79474-w",
+      "doi_status": "PENDIENTE_RESOLVEDOR",
+      "url_verification_status": "VERIFICADA_FUENTE_PRIMARIA_PDF",
+      "accessed": "2026-11-17",
+      "publication_date": "2026-11-12",
+      "supports": [
+        "Fig. 1 y texto: coordenadas reportadas para Jalama Canyon Ranch (34.579, -120.436) y Loma Ridge Global Change Experiment (33.740, -117.704).",
+        "Resultados: el aumento del flujo de CO2 comienza dentro de la primera hora tras la rehidratación en las condiciones estudiadas.",
+        "Resultados: el crecimiento microbiano máximo medido ocurre a las 6 h en parcelas de control y a las 72 h en la condición de sequía de alta intensidad en la pastura de Jalama.",
+        "Control abiótico: arena de sílice estéril libera CO2 por desorción/alteración de poros en aproximadamente 9 min; no es un resultado de suelo vivo.",
+        "Metabolómica y discusión: metabolitos/osmólitos disminuyen tras rehidratación; su movilización y respiración es una hipótesis explicativa, no causalidad demostrada.",
+        "Limitación: dos casos de campo paralelos, distintos biomas/usos/tratamientos y una parcela por condición en cada sitio."
+      ],
+      "verification_status": "PENDIENTE",
+      "verification_note": "Se abrió el PDF editorial primario y se contrastaron las afirmaciones con el texto, Fig. 1, Fig. 2 y discusión. El DOI aparece impreso en el PDF, pero Crossref y el resolvedor doi.org no fueron accesibles en esta sesión; no se declara DOI validado."
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_001",
+      "arc": "hook_medias_res",
+      "duration_seconds": 9,
+      "narration": "Se rehidrata el suelo seco. En la primera hora aparece CO₂ en el aire; pero eso no demuestra que los microbios ya estén creciendo al máximo.",
+      "on_screen_text": "EL SUELO EXHALA",
+      "visual_description": "La rehidratación ya está ocurriendo: una lámina de agua entra en una placa de suelo seco; una burbuja de CO2 aparece antes de que los recortes microbianos se multipliquen.",
+      "image_prompt": "flat paper cut-out stop-motion animation frame, colored construction paper pieces, slight shadows, top-down view, vertical 9:16, no text close top-down paper diorama of a dry soil slab already being rehydrated by a thin stream of water, one gas bubble rising immediately while tiny simple microbe cut-outs remain still, action already in progress, no anthropomorphic faces",
+      "ambiente": "Viento seco muy bajo y textura granular amortiguada.",
+      "sfx": [
+        "Agua entrando en tierra",
+        "Burbuja breve y seca"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "papel_stop_motion",
+      "dramatic_beat": "La señal visible aparece antes de la recuperación biológica esperada.",
+      "scene_function": "Abrir con la anomalía y plantear la pregunta central sin definición introductoria.",
+      "causal_bridge_from_previous": "Apertura: la rehidratación ya está en curso y el primer CO2 aparece antes del máximo de crecimiento.",
+      "question_state": "Se sabe que el gas aparece pronto; no se sabe si representa crecimiento microbiano activo.",
+      "reason_to_continue": "Para saber si el desfase es local o medido en más de un sitio, hay que ubicar el estudio.",
+      "new_information": "El inicio del flujo de CO2 no demuestra por sí solo que la biomasa microbiana ya creció."
+    },
+    {
+      "id": "scene_002",
+      "arc": "desarrollo",
+      "duration_seconds": 8,
+      "narration": "El equipo trabajó en dos sitios de California: Jalama Canyon Ranch y Loma Ridge. Comparó parcelas de control y sequía.",
+      "on_screen_text": "DOS SITIOS · CALIFORNIA",
+      "visual_description": "Mapa esquemático de California en papel recortado con dos pines: Jalama Canyon Ranch y Loma Ridge. Los pines representan sitios de estudio, no parcelas individuales.",
+      "image_prompt": "flat paper cut-out stop-motion animation frame, colored construction paper pieces, slight shadows, top-down view, vertical 9:16, no text simplified California silhouette made from cream and sage construction paper, two small orange map pins on the central coast and near the Santa Ana Mountains, sparse topographic cut-outs, no roads, no labels, no text",
+      "ambiente": "Aire abierto de pastizal, muy tenue.",
+      "sfx": [
+        "Primer pin de mapa",
+        "Segundo pin de mapa"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "papel_stop_motion",
+      "capa": {
+        "tipo": "mapa",
+        "region": [
+          33.6,
+          -120.6,
+          34.7,
+          -117.5
+        ],
+        "puntos": [
+          {
+            "id": "jalama",
+            "label": "Jalama Canyon Ranch — pastura",
+            "lat": 34.579,
+            "lon": -120.436,
+            "role": "sitio de estudio",
+            "precision_note": "Coordenadas reportadas por los autores a 0.001°; no indican la subparcela exacta."
+          },
+          {
+            "id": "loma",
+            "label": "Loma Ridge Global Change Experiment — pastizal",
+            "lat": 33.74,
+            "lon": -117.704,
+            "role": "sitio de estudio",
+            "precision_note": "Coordenadas reportadas por los autores a 0.001°; no indican la subparcela exacta."
+          }
+        ],
+        "titulo": "Dos sitios de campo, California",
+        "fuente": "SRC-001, figura 1; mapa esquemático original, coordenadas reportadas por los autores.",
+        "precision_note": "Los pines representan los sitios de estudio; no añadir carreteras, límites de parcelas ni precisión mayor que tres decimales."
+      },
+      "dramatic_beat": "La anomalía se apoya en dos casos de campo, no en una sola maceta aislada.",
+      "scene_function": "Situar los dos sitios y explicar que el estudio compara condiciones dentro de cada caso.",
+      "causal_bridge_from_previous": "La primera señal necesita contexto: el equipo observó la respuesta en dos sitios californianos.",
+      "question_state": "Se conocen los lugares; falta saber cómo distinguieron gas de crecimiento.",
+      "reason_to_continue": "La clave está en que midieron dos procesos por separado.",
+      "new_information": "Los casos son Jalama Canyon Ranch y Loma Ridge, con condiciones ecológicas distintas."
+    },
+    {
+      "id": "scene_003",
+      "arc": "desarrollo",
+      "duration_seconds": 7,
+      "narration": "Midió el flujo de gases y estimó la producción de biomasa microbiana con trazadores isotópicos: dos señales distintas.",
+      "on_screen_text": "GAS ≠ BIOMASA",
+      "visual_description": "Dos instrumentos de papel separados: un analizador de gases registra el flujo de CO2; un vial con agua isotópicamente marcada representa el trazador usado para estimar síntesis de biomasa.",
+      "image_prompt": "flat paper cut-out stop-motion animation frame, colored construction paper pieces, slight shadows, top-down view, vertical 9:16, no text two separate paper laboratory instruments on a neutral cream work surface, a gas analyzer chamber with a CO2 bubble track on one side and a small isotope-labeled water vial with microbe cut-outs on the other, clearly separate measurements, no text",
+      "ambiente": "Zumbido de laboratorio discreto.",
+      "sfx": [
+        "Clic de analizador",
+        "Pulso de vial"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "papel_stop_motion",
+      "capa": {
+        "tipo": "dato",
+        "valor": "Flujo de gases medido por CRDS; crecimiento de biomasa estimado mediante trazadores isotópicos (lipid-SIP/DNA-SIP).",
+        "etiqueta": "Dos señales distintas",
+        "fuente": "SRC-001, figura 1C y métodos.",
+        "interpretacion": "El flujo de CO2 no es una medida directa de producción de biomasa."
+      },
+      "dramatic_beat": "La medición se divide en dos relojes independientes.",
+      "scene_function": "Explicar el diseño de medición para que la comparación posterior sea inteligible.",
+      "causal_bridge_from_previous": "Después de ubicar los sitios, la historia requiere explicar qué midieron en cada muestra.",
+      "question_state": "Ahora sabemos que gas y biomasa son mediciones distintas; falta comparar sus tiempos.",
+      "reason_to_continue": "El control ofrece el punto de referencia.",
+      "new_information": "El CO2 se midió como flujo de gas y la biomasa mediante trazadores isotópicos."
+    },
+    {
+      "id": "scene_004",
+      "arc": "desarrollo",
+      "duration_seconds": 8,
+      "narration": "En los controles, el crecimiento alcanzó su máximo medido a las seis horas; el aumento del CO₂ ya había comenzado durante la primera.",
+      "on_screen_text": "CONTROL · 6 H",
+      "visual_description": "Una línea temporal de papel muestra el inicio del flujo de CO2 dentro de la primera hora y, más adelante, el máximo medido de crecimiento microbiano a las seis horas en los controles.",
+      "image_prompt": "flat paper cut-out stop-motion animation frame, colored construction paper pieces, slight shadows, top-down view, vertical 9:16, no text horizontal paper cut-out timeline viewed from above, a small gas bubble marker near the start and a cluster of microbe cut-outs reaching their largest group at a later six-hour marker, clean negative space, no numerals or text",
+      "ambiente": "Pulso suave y estable.",
+      "sfx": [
+        "Burbuja temprana",
+        "Tic a las seis horas"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "papel_stop_motion",
+      "dramatic_beat": "El control confirma que el gas empieza antes que el máximo de crecimiento.",
+      "scene_function": "Establecer la secuencia temporal de referencia.",
+      "causal_bridge_from_previous": "Con dos señales separadas, el control permite ver cuál aparece primero.",
+      "question_state": "El desfase existe incluso en controles; falta saber qué cambia con la sequía intensa.",
+      "reason_to_continue": "El tratamiento de sequía extrema amplía la distancia entre señales.",
+      "new_information": "En controles, el máximo medido de crecimiento llega a las seis horas; el CO2 comienza antes."
+    },
+    {
+      "id": "scene_005",
+      "arc": "desarrollo",
+      "duration_seconds": 9,
+      "narration": "En la pastura de Jalama, tras sequía de alta intensidad, el máximo medido de crecimiento no llegó hasta las 72 horas, aunque el CO₂ apareció antes.",
+      "on_screen_text": "SEQUÍA INTENSA · 72 H",
+      "visual_description": "La misma línea temporal se alarga para la pastura de Jalama con sequía de alta intensidad: el marcador de CO2 permanece temprano y el máximo medido de crecimiento aparece mucho después.",
+      "image_prompt": "flat paper cut-out stop-motion animation frame, colored construction paper pieces, slight shadows, top-down view, vertical 9:16, no text paper cut-out pasture soil timeline with a small early gas bubble and a long empty interval before the largest cluster of microbe cut-outs appears at the far end, muted orange drought marker, no text",
+      "ambiente": "Viento seco más presente, sin dramatización excesiva.",
+      "sfx": [
+        "Tic aislado",
+        "Desplazamiento largo de reloj"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "papel_stop_motion",
+      "dramatic_beat": "La sequía intensa estira el retraso del crecimiento hasta el último punto medido.",
+      "scene_function": "Entregar el dato que transforma la observación inicial en un problema ecológico.",
+      "causal_bridge_from_previous": "El control deja una referencia de seis horas; ahora la pastura de Jalama muestra el retraso bajo sequía intensa.",
+      "question_state": "El máximo de crecimiento aparece a las 72 horas; todavía no sabemos qué explica el CO2 temprano.",
+      "reason_to_continue": "La diferencia obliga a distinguir respiración, gas atrapado y producción de biomasa.",
+      "new_information": "En la pastura con sequía de alta intensidad, el máximo medido de crecimiento se observa a las 72 horas."
+    },
+    {
+      "id": "scene_006",
+      "arc": "desarrollo",
+      "duration_seconds": 13,
+      "narration": "El giro: respirar no equivale a fabricar biomasa. Parte del CO₂ temprano podría ser gas atrapado que el agua libera; los autores probaron arena de sílice estéril y observaron esa liberación en unos nueve minutos.",
+      "on_screen_text": "SÍLICE ESTÉRIL · ~9 MIN",
+      "visual_description": "Un vial de arena de sílice estéril, separado visualmente del suelo vivo, libera burbujas al entrar agua. Un rótulo posterior aclara que es un control abiótico, no un resultado de campo.",
+      "image_prompt": "flat paper cut-out stop-motion animation frame, colored construction paper pieces, slight shadows, top-down view, vertical 9:16, no text small transparent paper-cut vial filled with pale sterile silica sand, a thin water layer entering pores and a few tiny gas bubbles escaping, separate neutral background, no living microbe shapes in this vial, no text",
+      "ambiente": "Laboratorio silencioso con un leve siseo.",
+      "sfx": [
+        "Gota en vial",
+        "Liberación de microburbuja",
+        "Pequeño reloj"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "papel_stop_motion",
+      "capa": {
+        "tipo": "grafico",
+        "chart_type": "timeline_two_tracks",
+        "x_axis": "Tiempo desde la rehidratación",
+        "unit": "horas para suelos; minutos para el control abiótico separado",
+        "series": [
+          {
+            "track": "Suelos de campo",
+            "event": "Inicio del aumento del flujo de CO2",
+            "time_hours": 1,
+            "relation": "dentro de la primera hora",
+            "conditions": "Todas las condiciones estudiadas"
+          },
+          {
+            "track": "Crecimiento microbiano",
+            "event": "Máximo medido en controles",
+            "time_hours": 6,
+            "conditions": "Parcelas de control en ambos sitios"
+          },
+          {
+            "track": "Crecimiento microbiano",
+            "event": "Máximo medido en pastura con sequía de alta intensidad",
+            "time_hours": 72,
+            "conditions": "Jalama Canyon Ranch"
+          }
+        ],
+        "separate_control": {
+          "track": "Control abiótico",
+          "event": "Liberación de CO2 por desorción/alteración de poros",
+          "time_minutes": 9,
+          "approximate": true,
+          "conditions": "Arena de sílice estéril, no suelo vivo"
+        },
+        "fuente": "SRC-001, resultados y discusión; figura 2 y control abiótico de sílice.",
+        "interpretacion": "El marcador de ~9 min pertenece a arena estéril y no debe mezclarse con la serie de suelos vivos. El estudio considera improbable que el CO2 observado después de una hora sea solo desorción de gas relictual."
+      },
+      "dramatic_beat": "El primer CO2 deja de ser una prueba automática de respiración contemporánea.",
+      "scene_function": "Introducir la explicación alternativa y separar un control abiótico de los resultados de suelo vivo.",
+      "causal_bridge_from_previous": "El retraso de 72 horas plantea una duda: ¿todo el CO2 temprano proviene de microbios que respiran ahora?",
+      "question_state": "Una parte del gas temprano podría estar atrapada; el control de sílice muestra que la liberación física es posible.",
+      "reason_to_continue": "Aún queda una segunda pista biológica: los metabolitos que cambian al rehidratar.",
+      "new_information": "La arena de sílice estéril liberó CO2 abiótico en unos nueve minutos; es un control de mecanismo, no una medición de suelo vivo."
+    },
+    {
+      "id": "scene_007",
+      "arc": "cierre_historia",
+      "duration_seconds": 10,
+      "narration": "También encontraron metabolitos que caían al rehidratar; proponen que su movilización puede alimentar respiración posterior. Por eso, el pulso de gas y la recuperación del crecimiento tienen relojes distintos.",
+      "on_screen_text": "DOS RELOJES",
+      "visual_description": "Gotas pequeñas de metabolitos acumuladas en recortes de suelo seco se dispersan tras la rehidratación; dos relojes de papel siguen ritmos distintos, uno para el gas y otro para la biomasa.",
+      "image_prompt": "flat paper cut-out stop-motion animation frame, colored construction paper pieces, slight shadows, top-down view, vertical 9:16, no text paper cut-out soil cross-section with small colored metabolite droplets dispersing as water enters, two simple paper clock faces moving at different speeds beside the soil, consistent cream sage and muted orange palette, no text",
+      "ambiente": "Dos pulsos suaves ligeramente desfasados.",
+      "sfx": [
+        "Gotas que se dispersan",
+        "Dos tics asincrónicos"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "papel_stop_motion",
+      "dramatic_beat": "La evidencia química ofrece una hipótesis, no una causa demostrada.",
+      "scene_function": "Cerrar el mecanismo sin convertir la hipótesis de metabolitos en causalidad.",
+      "causal_bridge_from_previous": "Después del control abiótico, la metabolómica aporta otra pieza para explicar la respiración posterior.",
+      "question_state": "Se entiende por qué gas y biomasa pueden separarse; la explicación exacta sigue abierta.",
+      "reason_to_continue": "El cierre debe recordar el límite del diseño y devolver la pregunta al primer pulso.",
+      "new_information": "Los metabolitos disminuyen al rehidratar; su movilización puede contribuir a la respiración posterior, según la hipótesis de los autores."
+    },
+    {
+      "id": "scene_008",
+      "arc": "reflexion_o_pregunta",
+      "duration_seconds": 14,
+      "narration": "Son dos casos de campo paralelos, con una parcela por condición y sitio: no permiten generalizar. Entonces, ¿qué parte del primer CO₂ es vida que vuelve y qué parte ya estaba atrapada? Esto fue Datos y ociosidades.",
+      "on_screen_text": "¿QUÉ EXHALA EL SUELO?",
+      "visual_description": "Regreso a la misma placa de suelo de la primera escena. El agua ya está dentro; el gas y los recortes microbianos avanzan con dos ritmos distintos. La pregunta vuelve al origen y cierra con la firma de la serie.",
+      "image_prompt": "flat paper cut-out stop-motion animation frame, colored construction paper pieces, slight shadows, top-down view, vertical 9:16, no text return to the same paper soil slab from the opening, water settled in the pores, one gas bubble already outside and microbe cut-outs beginning to multiply later, two distinct visual rhythms, clean center space for postproduction question, no text",
+      "ambiente": "El viento desaparece y queda un pulso de suelo muy tenue.",
+      "sfx": [
+        "Agua asentándose",
+        "Exhalación suave de gas",
+        "Sello sonoro discreto"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "papel_stop_motion",
+      "dramatic_beat": "La pregunta inicial se resuelve como una distinción, no como una respuesta única.",
+      "scene_function": "Pagar la apertura, hacer explícito el límite y dejar una pregunta que vuelve al primer CO2.",
+      "causal_bridge_from_previous": "La hipótesis de metabolitos no elimina el límite: el estudio describe dos casos paralelos, no una regla universal.",
+      "question_state": "La audiencia distingue el pulso de gas del crecimiento y sabe que el primer CO2 puede tener más de una fuente.",
+      "reason_to_continue": "La pregunta final invita a mirar con cuidado qué mide realmente un pulso de CO2.",
+      "new_information": "Los resultados no se generalizan a todos los suelos; la apertura se paga distinguiendo gas que sale y biomasa que se recupera."
+    }
+  ],
+  "cortinilla_fuentes": {
+    "duration_seconds": 6,
+    "titulo": "Fuentes",
+    "aviso": "Caro et al., Nature Communications, publicado en línea el 12-nov-2026. URL editorial/PDF consultada; DOI pendiente de resolución independiente, no presentarlo como resuelto.",
+    "firma": "Datos y ociosidades",
+    "source_ids": [
+      "SRC-001"
+    ]
+  },
+  "audio": {
+    "cama_musical": "circuito_neural",
+    "music_asset": null,
+    "music_plan": "Cama circuito_neural discreta: dos pulsos rítmicos ligeramente desfasados para gas y biomasa; sin melodía reconocible. Solo planificación textual para producción posterior.",
+    "music_license": null
+  },
+  "export": {
+    "resolution": "1080x1920",
+    "fps": 30,
+    "render_status": "NOT_GENERATED"
+  },
+  "publicacion": {
+    "status": "PENDIENTE_DECISION_GROK",
+    "platforms": [
+      "YouTube Shorts",
+      "TikTok",
+      "Facebook Reels"
+    ],
+    "note": "No publicar ni programar desde preproducción textual."
+  },
+  "estado": "PENDIENTE_REVISION_GROK",
+  "production_mode": "storyboard_only",
+  "validation_notes": [
+    "Conteo de narración: 214 palabras; 8 escenas; 78 s de escenas + 6 s de cortinilla = 84 s.",
+    "DOI 10.1038/s41467-026-79474-w visible en el PDF editorial, pero Crossref y el resolvedor no fueron accesibles; no declararlo validado.",
+    "Mapa: coordenadas tomadas de la figura 1 del artículo; pines representan sitios de estudio, no subparcelas.",
+    "El control de ~9 minutos se realizó con arena de sílice estéril y no representa un resultado de suelo vivo.",
+    "No contiene narrative_qa; la lectura en frío corresponde al auditor independiente."
+  ],
+  "linea_tematica_provisional": "Actualidad; Naturaleza y ecología del suelo; Dato científico.",
+  "approved_assets": [],
+  "risk_notes": [
+    "No generalizar a todos los suelos: son dos casos de campo paralelos, biomas/usos/tratamientos distintos y una parcela por condición y sitio.",
+    "No equiparar flujo de CO2 con crecimiento microbiano ni con respiración contemporánea en el primer tramo.",
+    "El resultado de ~9 minutos pertenece a un control de arena de sílice estéril, un análogo imperfecto, no a suelo vivo.",
+    "La movilización de metabolitos como explicación del pulso es una hipótesis de los autores, no una causalidad demostrada.",
+    "Las 72 horas corresponden al máximo medido en el ensayo de rehidratación de la condición de sequía de alta intensidad, no a un tiempo universal de recuperación."
+  ]
+}
