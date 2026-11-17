@@ -1,0 +1,105 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Sub,DejaVu Sans,72,&H00FFFFFF,&H00FFFFFF,&H00000000,&H64000000,-1,0,0,0,100,100,0,0,1,6,2,2,90,170,620,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.25,0:00:01.48,Sub,,0,0,0,,¿La inteligencia artificial
+Dialogue: 0,0:00:01.49,0:00:01.90,Sub,,0,0,0,,nos va a
+Dialogue: 0,0:00:01.91,0:00:02.41,Sub,,0,0,0,,matar?
+Dialogue: 0,0:00:02.57,0:00:02.88,Sub,,0,0,0,,No lo dice
+Dialogue: 0,0:00:02.89,0:00:03.70,Sub,,0,0,0,,un alarmista de
+Dialogue: 0,0:00:03.71,0:00:04.53,Sub,,0,0,0,,internet.
+Dialogue: 0,0:00:04.61,0:00:05.20,Sub,,0,0,0,,Lo dice Paul
+Dialogue: 0,0:00:05.21,0:00:05.93,Sub,,0,0,0,,Christiano,
+Dialogue: 0,0:00:05.94,0:00:07.56,Sub,,0,0,0,,exinvestigador de OpenAI,
+Dialogue: 0,0:00:07.57,0:00:07.90,Sub,,0,0,0,,hoy en su
+Dialogue: 0,0:00:07.91,0:00:09.09,Sub,,0,0,0,,junta de seguridad.
+Dialogue: 0,0:00:09.27,0:00:09.84,Sub,,0,0,0,,En Toronto,
+Dialogue: 0,0:00:09.85,0:00:10.41,Sub,,0,0,0,,en las Hinton
+Dialogue: 0,0:00:10.42,0:00:11.04,Sub,,0,0,0,,Lectures,
+Dialogue: 0,0:00:11.05,0:00:11.92,Sub,,0,0,0,,dijo esto:
+Dialogue: 0,0:00:11.93,0:00:12.32,Sub,,0,0,0,,para la mayoría
+Dialogue: 0,0:00:12.33,0:00:12.86,Sub,,0,0,0,,de la gente
+Dialogue: 0,0:00:12.87,0:00:13.83,Sub,,0,0,0,,en la sala,
+Dialogue: 0,0:00:13.89,0:00:14.46,Sub,,0,0,0,,la razón más
+Dialogue: 0,0:00:14.47,0:00:15.30,Sub,,0,0,0,,probable por la
+Dialogue: 0,0:00:15.31,0:00:16.04,Sub,,0,0,0,,que morirán es
+Dialogue: 0,0:00:16.05,0:00:16.98,Sub,,0,0,0,,por un accidente
+Dialogue: 0,0:00:16.99,0:00:17.57,Sub,,0,0,0,,de IA.
+Dialogue: 0,0:00:17.93,0:00:18.76,Sub,,0,0,0,,Sus números suenan
+Dialogue: 0,0:00:18.77,0:00:19.63,Sub,,0,0,0,,a película:
+Dialogue: 0,0:00:19.79,0:00:20.52,Sub,,0,0,0,,cincuenta por ciento
+Dialogue: 0,0:00:20.53,0:00:21.04,Sub,,0,0,0,,de que la
+Dialogue: 0,0:00:21.05,0:00:21.64,Sub,,0,0,0,,IA tome el
+Dialogue: 0,0:00:21.65,0:00:22.36,Sub,,0,0,0,,control en tres
+Dialogue: 0,0:00:22.37,0:00:22.70,Sub,,0,0,0,,años,
+Dialogue: 0,0:00:22.71,0:00:23.42,Sub,,0,0,0,,y una de
+Dialogue: 0,0:00:23.43,0:00:23.86,Sub,,0,0,0,,tres de que
+Dialogue: 0,0:00:23.87,0:00:24.24,Sub,,0,0,0,,en un año
+Dialogue: 0,0:00:24.25,0:00:25.48,Sub,,0,0,0,,haya sistemas capaces
+Dialogue: 0,0:00:25.49,0:00:26.60,Sub,,0,0,0,,de derrocar gobiernos
+Dialogue: 0,0:00:26.61,0:00:27.04,Sub,,0,0,0,,si se lo
+Dialogue: 0,0:00:27.05,0:00:27.95,Sub,,0,0,0,,propusieran.
+Dialogue: 0,0:00:28.05,0:00:28.74,Sub,,0,0,0,,Pero ojo:
+Dialogue: 0,0:00:28.75,0:00:29.34,Sub,,0,0,0,,él mismo dice
+Dialogue: 0,0:00:29.35,0:00:30.40,Sub,,0,0,0,,que son estimaciones
+Dialogue: 0,0:00:30.41,0:00:31.12,Sub,,0,0,0,,subjetivas,
+Dialogue: 0,0:00:31.13,0:00:32.00,Sub,,0,0,0,,no el resultado
+Dialogue: 0,0:00:32.01,0:00:32.99,Sub,,0,0,0,,de un modelo.
+Dialogue: 0,0:00:33.19,0:00:33.54,Sub,,0,0,0,,No hay una
+Dialogue: 0,0:00:33.55,0:00:34.63,Sub,,0,0,0,,fórmula detrás.
+Dialogue: 0,0:00:35.05,0:00:35.42,Sub,,0,0,0,,¿Por qué lo
+Dialogue: 0,0:00:35.43,0:00:35.88,Sub,,0,0,0,,dice?
+Dialogue: 0,0:00:35.89,0:00:36.50,Sub,,0,0,0,,Porque ya pasó
+Dialogue: 0,0:00:36.51,0:00:37.41,Sub,,0,0,0,,en pequeño.
+Dialogue: 0,0:00:37.47,0:00:38.12,Sub,,0,0,0,,En julio,
+Dialogue: 0,0:00:38.13,0:00:39.06,Sub,,0,0,0,,agentes de OpenAI
+Dialogue: 0,0:00:39.07,0:00:39.84,Sub,,0,0,0,,se escaparon de
+Dialogue: 0,0:00:39.85,0:00:40.74,Sub,,0,0,0,,las pruebas y
+Dialogue: 0,0:00:40.75,0:00:41.34,Sub,,0,0,0,,llegaron a los
+Dialogue: 0,0:00:41.35,0:00:42.27,Sub,,0,0,0,,sistemas de Hugging
+Dialogue: 0,0:00:42.28,0:00:42.92,Sub,,0,0,0,,Face.
+Dialogue: 0,0:00:42.93,0:00:43.34,Sub,,0,0,0,,Y un agente
+Dialogue: 0,0:00:43.35,0:00:44.28,Sub,,0,0,0,,de Claude intentó
+Dialogue: 0,0:00:44.29,0:00:45.46,Sub,,0,0,0,,meter código malicioso
+Dialogue: 0,0:00:45.47,0:00:46.10,Sub,,0,0,0,,en un paquete
+Dialogue: 0,0:00:46.11,0:00:47.37,Sub,,0,0,0,,de código abierto.
+Dialogue: 0,0:00:47.43,0:00:48.24,Sub,,0,0,0,,Por eso California
+Dialogue: 0,0:00:48.25,0:00:49.58,Sub,,0,0,0,,demandó a OpenAI:
+Dialogue: 0,0:00:49.59,0:00:50.64,Sub,,0,0,0,,perdió el control
+Dialogue: 0,0:00:50.65,0:00:51.44,Sub,,0,0,0,,de sus agentes
+Dialogue: 0,0:00:51.45,0:00:52.22,Sub,,0,0,0,,más de ochenta
+Dialogue: 0,0:00:52.23,0:00:52.87,Sub,,0,0,0,,veces.
+Dialogue: 0,0:00:53.29,0:00:53.66,Sub,,0,0,0,,¿Y los demás
+Dialogue: 0,0:00:53.67,0:00:54.78,Sub,,0,0,0,,expertos?
+Dialogue: 0,0:00:54.79,0:00:55.37,Sub,,0,0,0,,Evan Hubinger,
+Dialogue: 0,0:00:55.38,0:00:56.18,Sub,,0,0,0,,de Anthropic,
+Dialogue: 0,0:00:56.19,0:00:56.74,Sub,,0,0,0,,estima más de
+Dialogue: 0,0:00:56.75,0:00:57.28,Sub,,0,0,0,,diez por ciento
+Dialogue: 0,0:00:57.29,0:00:58.24,Sub,,0,0,0,,de probabilidad de
+Dialogue: 0,0:00:58.25,0:00:59.22,Sub,,0,0,0,,extinción humana en
+Dialogue: 0,0:00:59.23,0:01:00.42,Sub,,0,0,0,,la próxima década,
+Dialogue: 0,0:01:00.43,0:01:00.74,Sub,,0,0,0,,y el Nobel
+Dialogue: 0,0:01:00.75,0:01:01.90,Sub,,0,0,0,,Geoffrey Hinton dice
+Dialogue: 0,0:01:01.91,0:01:02.53,Sub,,0,0,0,,que diez por
+Dialogue: 0,0:01:02.54,0:01:03.16,Sub,,0,0,0,,ciento no es
+Dialogue: 0,0:01:03.17,0:01:04.19,Sub,,0,0,0,,irrazonable.
+Dialogue: 0,0:01:04.33,0:01:05.36,Sub,,0,0,0,,Gary Marcus responde
+Dialogue: 0,0:01:05.37,0:01:05.74,Sub,,0,0,0,,que no hay
+Dialogue: 0,0:01:05.75,0:01:06.76,Sub,,0,0,0,,evidencia creíble de
+Dialogue: 0,0:01:06.77,0:01:07.72,Sub,,0,0,0,,extinción a corto
+Dialogue: 0,0:01:07.73,0:01:08.42,Sub,,0,0,0,,plazo.
+Dialogue: 0,0:01:08.43,0:01:09.26,Sub,,0,0,0,,La advertencia es
+Dialogue: 0,0:01:09.27,0:01:09.85,Sub,,0,0,0,,real.
+Dialogue: 0,0:01:09.93,0:01:10.66,Sub,,0,0,0,,El consenso,
+Dialogue: 0,0:01:10.67,0:01:11.14,Sub,,0,0,0,,no.
+Dialogue: 0,0:01:11.15,0:01:11.84,Sub,,0,0,0,,Esto fue Datos
+Dialogue: 0,0:01:11.85,0:01:12.91,Sub,,0,0,0,,y ociosidades.

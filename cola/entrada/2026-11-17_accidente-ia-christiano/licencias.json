@@ -1,0 +1,39 @@
+{
+ "project_id": "2026-11-17_accidente-ia-christiano",
+ "musica": {
+  "cama": "circuito_neural",
+  "origen": "síntesis propia (scripts/cama_sonora.py, numpy)",
+  "licencia": "obra propia de Datos y ociosidades",
+  "generada_por_ia": false
+ },
+ "sfx": {
+  "silencio": {
+   "origen": "síntesis propia (cama_sonora.py)",
+   "licencia": "obra propia"
+  }
+ },
+ "imagenes": {
+  "origen": "generadas con IA (ilustración no realista, risografía)",
+  "estilo": "risografia",
+  "realista": false
+ },
+ "voz": {
+  "motor": "Kokoro ONNX (local, modelo kokoro-v1.0.onnx)",
+  "voz": "em_santa",
+  "nota": "voz sintética; no imita a una persona real"
+ },
+ "capas_datos": {
+  "tipos": [
+   "dato",
+   "mapa"
+  ],
+  "mapa_base": "Natural Earth 110m (dominio público)",
+  "render": "matplotlib (propio)"
+ },
+ "fuentes_datos": [
+  "https://cibered.com/inteligencia-artificial/novedades-ia/exinvestigador-de-openai-advierte-de-que-la-causa-de-muerte-mas-probable-para-las-personas-vivas-sera-un-accidente-de-ia/",
+  "https://www.lanacion.com.ar/economia/IA/la-razon-mas-probable-por-la-que-moriran-es-por-un-accidente-de-ia-la-alarmante-advertencia-de-otro-nid17112026/",
+  "https://www.diariobitcoin.com/estados-unidos/integrante-de-la-junta-de-openai-advierte-de-un-posible-control-de-la-ia-en-tres-anos/",
+  "https://tokenreporter.ai/"
+ ]
+}
