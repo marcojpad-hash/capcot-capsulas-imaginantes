@@ -1,0 +1,248 @@
+{
+  "_comentario": "Paquete textual CAPCOT. Estructura basada en templates/storyboard_generico.template.json. Voz asignada por tema según docs/VOCES_POR_TEMA.md. No se han generado frames, audio ni MP4.",
+  "aspect_ratio": "9:16",
+  "audio": {
+    "ambiente_lufs": -26,
+    "cama_musical": "pulso",
+    "music_asset": "sintetico:pulso",
+    "music_lufs": -27
+  },
+  "cortinilla_fuentes": {
+    "aviso": "Imágenes generadas con IA. Voz sintética.",
+    "bg_rgb": [
+      18,
+      16,
+      14
+    ],
+    "duration_seconds": 6,
+    "firma": "Datos y ociosidades · @datosyociosidades",
+    "titulo": "Fuentes"
+  },
+  "especificacion_render": {
+    "nota": "Parámetros visuales y de exportación tomados de la plantilla. La voz de este paquete está asignada a narradora_es (VoxCPM2) por tratarse de biología; el bloque de síntesis Edge TTS de la plantilla no aplica a esta voz y requiere el adaptador VoxCPM2 antes de renderizar. No se deben inventar timestamps de palabras.",
+    "video": {
+      "audio_final": "aac 160k, 48000 Hz, estéreo",
+      "codec_final": "libx264",
+      "crf": 20,
+      "duracion_de_cada_plano": "duracion_escena / n_planos (se reparte igual)",
+      "flag_shortest": true,
+      "formulas_zoompan": {
+        "comentario": "Antes de zoompan se escala a 2× (2160x3840) con force_original_aspect_ratio=increase y se recorta a 2160x3840. fr = max(round(segundos_del_plano * 30), 1). c = iw/2-(iw/zoom/2); m = ih/2-(ih/zoom/2).",
+        "pan_d": "zoom=1.12, x=iw/2-(iw/zoom/2)+on*2, y=m",
+        "pan_i": "zoom=1.12, x=iw/2-(iw/zoom/2)-on*2, y=m",
+        "zin": "zoom=1+0.12*on/150, x=c, y=m",
+        "zout": "zoom=1.12-0.12*on/150, x=c, y=m"
+      },
+      "fps": 30,
+      "movflags": "+faststart",
+      "movimientos_suaves_si_plano_seconds_gte_4": [
+        "zin",
+        "pan_d",
+        "zout",
+        "pan_i"
+      ],
+      "n_planos": "max(1, round(duracion_escena / plano_seconds))",
+      "nota_punch": "Con plano_seconds 5 solo se usan movimientos suaves; no usar punch ni punch_b.",
+      "pix_fmt": "yuv420p",
+      "plano_seconds": 5,
+      "preset_final": "medium",
+      "preset_planos_intermedios": "veryfast",
+      "resolucion": "1080x1920",
+      "rotacion": "El movimiento del plano k de la escena idx es MOVS_SUAVES[(idx * 2 + k) % 4]."
+    },
+    "voz": {
+      "motor": "VoxCPM2",
+      "voice_id": "narradora_es",
+      "nota": "Voz de biología según VOCES_POR_TEMA.md. El montaje debe recibir audio VoxCPM2 generado con el lock de narradora_es; no sintetizar con Edge TTS ni sustituir por JorgeNeural. Los subtítulos requieren alineación real del audio final."
+    }
+  },
+  "estado": "PREPARADO_PENDIENTE_REVISION_GROK",
+  "estilo_id": "linograbado",
+  "estilo_visual": "Scientific natural-history linocut illustration, warm Kalahari earth palette, precise underground cutaway diagrams, tactile carved textures, restrained editorial composition, no lettering, no photorealistic humans.",
+  "estructura": "hallazgo_cientifico",
+  "export": {
+    "filename": "capsula.mp4",
+    "fps": 30,
+    "loudness_lufs": -14,
+    "plano_seconds": 5,
+    "resolution": "1080x1920",
+    "subtitle_max_words": 3
+  },
+  "keywords": [
+    "ratas topo",
+    "cooperación animal",
+    "crías"
+  ],
+  "language": "es-MX",
+  "nota": "Paquete textual preparado con fuente primaria y guion. Pendientes: revisión de Grok, generación de frames, audio VoxCPM2 con narradora_es, alineación real de subtítulos, montaje, QA y programación. Medios no generados.",
+  "parece_real": false,
+  "project_id": "2026-11-11_dato-ratas-topo-damaraland",
+  "proveedor_imagenes": "generadas con IA (ilustración no realista, linograbado)",
+  "resumen": "Un estudio de 2026 sobre ratas topo de Damaraland encontró que, poco después del nacimiento de las crías, los individuos no reproductores y los machos reproductores aumentan sus actividades de trabajo y pasan menos tiempo en el nido. No es que se conviertan en niñeras: ayudan indirectamente sosteniendo el trabajo del grupo mientras la hembra reproductora permanece más en el nido.",
+  "scenes": [
+    {
+      "arc": "hook_medias_res",
+      "asset_filename": "frames/frame_01.png",
+      "duration_seconds": 10,
+      "encuadre": "general",
+      "id": "scene_001",
+      "image_prompt": "Linocut natural-history illustration of a Damaraland mole-rat family in a subterranean nest, newborn pups suggested safely in a warm nest chamber, branching tunnels visible, dramatic editorial composition, no text.",
+      "narration": "Cuando nacen las crías, en una colonia subterránea ocurre algo inesperado: varias ratas topo no se quedan cuidándolas. Se ponen a trabajar más.",
+      "on_screen_text": "Nacen las crías",
+      "sfx": [
+        "tierra"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "visual_description": "Corte del subsuelo: cámara-nido con crías y túneles que se extienden hacia los lados. Dejar aire en el tercio superior para el título."
+    },
+    {
+      "arc": "contexto",
+      "asset_filename": "frames/frame_02.png",
+      "duration_seconds": 10,
+      "encuadre": "general",
+      "id": "scene_002",
+      "image_prompt": "Scientific linocut cutaway of Damaraland mole-rats moving through an underground tunnel network in the Kalahari, ochre soil layers and tuber roots, no text.",
+      "narration": "Son las ratas topo de Damaraland, roedores africanos que viven en grupos familiares bajo tierra. Su vida depende de excavar túneles para encontrar tubérculos y alimento.",
+      "on_screen_text": "Una vida bajo tierra",
+      "sfx": [
+        "túnel"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "visual_description": "Sistema de túneles bajo el suelo del Kalahari, con raíces y tubérculos; varios animales avanzan por galerías."
+    },
+    {
+      "arc": "metodo",
+      "asset_filename": "frames/frame_03.png",
+      "duration_seconds": 10,
+      "encuadre": "detalle",
+      "id": "scene_003",
+      "image_prompt": "Editorial scientific linocut showing tiny accelerometer logger attached to a mole-rat body, with observational timeline marks represented visually but no readable text, no text.",
+      "narration": "Jack Thorley y su equipo analizaron unas veinticuatro mil horas de observaciones de animales mantenidos en cautiverio, comparando su actividad en distintas etapas reproductivas.",
+      "on_screen_text": "24 mil horas observadas",
+      "sfx": [
+        "pulso"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "visual_description": "Roedor con pequeño sensor de investigación y, al fondo, una línea temporal visual que sugiere muchas horas de observación."
+    },
+    {
+      "arc": "hallazgo",
+      "asset_filename": "frames/frame_04.png",
+      "duration_seconds": 11,
+      "encuadre": "general",
+      "id": "scene_004",
+      "image_prompt": "Linocut scientific illustration of non-breeding Damaraland mole-rats digging and moving soil through a tunnel after pups are born, energetic coordinated activity, no text.",
+      "narration": "El resultado: poco después del nacimiento, los individuos que no se reproducen aumentan sus actividades de trabajo. Los machos reproductores también elevan ese esfuerzo.",
+      "on_screen_text": "Más trabajo en los túneles",
+      "sfx": [
+        "excavación"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "visual_description": "Dos o tres ratas topo empujan tierra y excavan en galerías; movimiento y esfuerzo claramente visibles."
+    },
+    {
+      "arc": "contraste",
+      "asset_filename": "frames/frame_05.png",
+      "duration_seconds": 10,
+      "encuadre": "detalle",
+      "id": "scene_005",
+      "image_prompt": "Contrasting split-scene linocut: breeding female mole-rat resting closer to pups in nest chamber, while other group members dig in distant tunnels, no text.",
+      "narration": "Mientras tanto, la hembra reproductora pasa más tiempo dentro del nido, reduce conductas relacionadas con el trabajo y aumenta su actividad de alimentación.",
+      "on_screen_text": "La madre permanece más",
+      "sfx": [
+        "silencio"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "visual_description": "Composición contrastada: hembra en la cámara del nido; al otro lado, ayudantes trabajando en los túneles."
+    },
+    {
+      "arc": "correccion",
+      "asset_filename": "frames/frame_06.png",
+      "duration_seconds": 10,
+      "encuadre": "general",
+      "id": "scene_006",
+      "image_prompt": "Scientific linocut showing mole-rat helpers passing through branching tunnels rather than directly tending pups, clear visual distinction between nest attendance and tunnel work, no text.",
+      "narration": "Ojo con la interpretación: el estudio no encontró que los no reproductores aumentaran su tiempo junto a las crías. Su ayuda parece llegar por otra vía: trabajar más.",
+      "on_screen_text": "Ayudar no es niñear",
+      "sfx": [
+        "tierra"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "visual_description": "Los ayudantes se muestran lejos del nido, excavando y despejando galerías; evitar representarlos cargando o alimentando crías."
+    },
+    {
+      "arc": "significado",
+      "asset_filename": "frames/frame_07.png",
+      "duration_seconds": 11,
+      "encuadre": "general",
+      "id": "scene_007",
+      "image_prompt": "Linocut underground ecological diagram: tunnel network reaches nutritious tubers, a family group shares access, small pups at nest chamber, warm Kalahari palette, no text.",
+      "narration": "Los autores proponen que ese esfuerzo extra puede apoyar a la hembra cuando está más limitada y facilitar que las crías encuentren alimento cuando comiencen a salir del nido.",
+      "on_screen_text": "El grupo sostiene al grupo",
+      "sfx": [
+        "pulso"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "visual_description": "Red de galerías conectando el nido con tubérculos; sugerir acceso futuro de las crías al alimento sin afirmar cuidado directo."
+    },
+    {
+      "arc": "cierre_historia",
+      "asset_filename": "frames/frame_08.png",
+      "duration_seconds": 12,
+      "encuadre": "general",
+      "id": "scene_008",
+      "image_prompt": "Elegant final linocut portrait of a Damaraland mole-rat at the entrance of an underground tunnel, branching paths behind it, warm earthy palette, clean upper space, no text.",
+      "narration": "En estas familias, cooperar no siempre significa cuidar directamente a los pequeños: a veces significa mantener funcionando la red que alimenta a todos. ¿Qué otras formas de ayuda invisible conoces? Esto fue Datos y ociosidades.",
+      "on_screen_text": "Cooperar también es trabajar",
+      "sfx": [
+        "silencio"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "visual_description": "Una rata topo en primer plano con la red subterránea al fondo; cierre limpio con espacio para sello del canal."
+    }
+  ],
+  "serie": "Datos y ociosidades",
+  "sources": [
+    {
+      "accessed": "2026-11-11",
+      "cita_corta": "Thorley, J. et al. (2026). Helpers at the nest? The activity patterns of Damaraland mole-rats across reproductive periods.",
+      "doi": "10.1093/beheco/arag140",
+      "id": "SRC-001",
+      "ref_display": "Behavioral Ecology · artículo original, publicado el 10 de noviembre de 2026",
+      "supports": [
+        "En aproximadamente 24.000 horas de observaciones de ratas topo de Damaraland en cautiverio, se compararon presupuestos de actividad entre periodos reproductivos.",
+        "Poco después del nacimiento, los individuos no reproductores de ambos sexos y los machos reproductores redujeron su tiempo de permanencia en el nido y aumentaron su esfuerzo de trabajo.",
+        "Durante esos mismos periodos, las hembras reproductoras pasaron más tiempo en el nido, redujeron conductas relacionadas con el trabajo y aumentaron la alimentación.",
+        "El estudio no encontró evidencia de que los no reproductores aumentaran la asistencia al nido como forma de cuidado directo; los autores proponen que el aumento del trabajo puede apoyar a los reproductores y facilitar el acceso de las crías a recursos alimentarios al salir del nido."
+      ],
+      "url": "https://doi.org/10.1093/beheco/arag140"
+    }
+  ],
+  "target_duration_seconds": 84,
+  "title": "¿Por qué trabajan más las ratas topo cuando nacen sus crías?",
+  "titulo": "Ratas topo: más trabajo tras el nacimiento",
+  "trend_source": "Artículo científico recién publicado: Behavioral Ecology, 10 de noviembre de 2026.",
+  "voice": {
+    "engine": "VoxCPM2",
+    "voice_id": "narradora_es",
+    "seed": 52,
+    "modo_pausas": "audio VoxCPM2 por escena; subtítulos con alineación real posterior",
+    "pad_seconds": 0.3
+  }
+}
