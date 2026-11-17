@@ -127,7 +127,7 @@ En YouTube:
   - El origen del tráfico (Para ti, perfil, búsqueda).
   - Posts a revisar:
     - Muertos: 7708616723385142580 (pulpo), 7708761702111759634 (sarampión), 7707280073446952213 (pez), 7703010495036460308 (frontera), 7704164766893296902 (polvo) y 7701628198106221845 (titanoboa).
-    - Vivos de control: 7708177280417221894 (coral) y 7709…/7703009295595556116 (murciélagos).
+    - Vivos de control: 7708177280417221894 (coral) y 7703009295595556116 (murciélagos).
   - Esto no está en el repo y se hace en el navegador.
 - **Quién y cómo subió cada post de TT.** El método no se registró de forma sistemática antes del 27-oct, y las resubidas de 10-29/10-30 y 11-03 no tienen registro. Desde ahora habría que guardar en `tiktok.json`: método (teléfono o Studio web), programado o inmediato, y caption exacto.
 - **Ediciones después de publicar** (caption o portada), **música y sonido**, y **borradores o posts borrados cerca de cada subida**: no hay registro de nada de esto.
