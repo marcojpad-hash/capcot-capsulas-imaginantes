@@ -414,36 +414,24 @@
     "score": 89,
     "review_basis": "lectura_en_frio_solo_narracion",
     "checks": {
-      "pregunta_central_reconstruible": {
-        "value": true,
-        "evidence": "La secuencia pregunta por qué el CO₂ aparece antes del máximo de crecimiento y promete distinguir gas de biomasa."
-      },
-      "apertura_in_medias_res": {
-        "value": true,
-        "evidence": "La rehidratación y la aparición temprana de CO₂ ya están ocurriendo en la primera frase."
-      },
-      "progresion_por_escena": {
-        "value": true,
-        "evidence": "Las ocho escenas avanzan de anomalía a sitios, métodos, controles, sequía intensa, mecanismo posible, hipótesis y límite."
-      },
-      "transiciones_causales": {
-        "value": true,
-        "evidence": "Cada tramo usa la incógnita anterior para introducir la comparación, el método, el desfase y su posible explicación."
-      },
-      "giro_cientifico_explicado": {
-        "value": true,
-        "evidence": "Distingue respiración de fabricación de biomasa y explica que el agua puede liberar gas atrapado; separa el control abiótico de suelo vivo."
-      },
-      "limite_evidencia_explicito": {
-        "value": true,
-        "evidence": "La narración identifica dos casos paralelos y una parcela por condición y sitio, y declara que no permiten generalizar."
-      },
-      "payoff_cierre_apertura": {
-        "value": true,
-        "evidence": "La pregunta final vuelve al primer CO₂ y contrapone actividad que retorna con gas previamente atrapado."
-      }
+      "pregunta_central_reconstruible": true,
+      "apertura_in_medias_res": true,
+      "progresion_por_escena": true,
+      "transiciones_causales": true,
+      "giro_cientifico_explicado": true,
+      "limite_evidencia_explicito": true,
+      "payoff_cierre_apertura": true
     },
     "critical_flags": [],
-    "reviewer_role": "auditor_capcot_independiente"
+    "reviewer_role": "auditor_capcot_independiente",
+    "evidence": {
+      "pregunta_central_reconstruible": "La secuencia pregunta por qué el CO₂ aparece antes del máximo de crecimiento y promete distinguir gas de biomasa.",
+      "apertura_in_medias_res": "La rehidratación y la aparición temprana de CO₂ ya están ocurriendo en la primera frase.",
+      "progresion_por_escena": "Las ocho escenas avanzan de anomalía a sitios, métodos, controles, sequía intensa, mecanismo posible, hipótesis y límite.",
+      "transiciones_causales": "Cada tramo usa la incógnita anterior para introducir la comparación, el método, el desfase y su posible explicación.",
+      "giro_cientifico_explicado": "Distingue respiración de fabricación de biomasa y explica que el agua puede liberar gas atrapado; separa el control abiótico de suelo vivo.",
+      "limite_evidencia_explicito": "La narración identifica dos casos paralelos y una parcela por condición y sitio, y declara que no permiten generalizar.",
+      "payoff_cierre_apertura": "La pregunta final vuelve al primer CO₂ y contrapone actividad que retorna con gas previamente atrapado."
+    }
   }
 }
