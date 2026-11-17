@@ -26,5 +26,14 @@
 ## TT/FB
 Portada registrada solo en las cápsulas del 7-nov en adelante (`tt_fb_portadas_registradas.txt`); las de 24–29-oct no tienen registro.
 
-## Resubidas (no subidas)
-`/workspace/entregas/resubidas_2026-11-17/<slug>/` con capsula.mp4 (recodificado, frame 0 = portada), portada.jpg y caption.txt; tabla `resubidas.json` (copia aquí). Esperan OK de Mj.
+## Resubidas
+`/workspace/entregas/resubidas_2026-11-17/<slug>/` con capsula.mp4 (recodificado, frame 0 = portada), portada.jpg y caption.txt; tabla `resubidas.json` (copia aquí).
+
+YT (canal UCU2ZI, token.json), programadas 17-nov 15:20 CDMX. Originales no se tocaron.
+| slug | id nuevo | publishAt UTC | hora CDMX | miniatura |
+|---|---|---|---|---|
+| hipo | [41PYjWbQuJo](https://youtu.be/41PYjWbQuJo) | 2026-11-18T13:00:00Z | 18-nov 07:00 | portada.jpg OK |
+| corneja | [AxgWdhqPhRI](https://youtu.be/AxgWdhqPhRI) | 2026-11-19T13:00:00Z | 19-nov 07:00 | portada.jpg OK |
+| flamenco | [msWV2AXr6Uk](https://youtu.be/msWV2AXr6Uk) | 2026-11-20T13:00:00Z | 20-nov 07:00 | portada.jpg OK |
+
+TT/FB (frontera-jupiter, polvo-africa, pulpo-tres-corazones, sarampion) siguen sin subir.

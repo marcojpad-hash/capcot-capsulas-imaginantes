@@ -1,6 +1,6 @@
 {
  "fecha": "2026-11-17",
- "estado": "preparadas, NO subidas (esperan OK de Mj)",
+ "estado": "YT hipo/corneja/flamenco programadas 18-20 nov 07:00 CDMX; TT/FB siguen sin subir",
  "recodificado": "x264 crf19 30fps, AAC 192k; primeros 2 s con zoom 2% + brillo/saturación leves; metadatos borrados; frame 0 = portada con título",
  "filas": [
   {
@@ -26,7 +26,20 @@
    "fuente_mp4": "/workspace/capcot/salidas/2026-11-04_kids-hipo-por-que/capsula.mp4",
    "md5_nuevo": "2fe7cba3a99b22b84cdf6b4c290fc18e",
    "md5_fuente": "b7fb641cdd23b025502a48d6665281ef",
-   "nota": "3.ª subida del hipo en YT: 4lOWeMn2RCo (mismo archivo exacto) sigue público con 8 vistas."
+   "nota": "3.ª subida del hipo en YT: 4lOWeMn2RCo (mismo archivo exacto) sigue público con 8 vistas.",
+   "id_nuevo": "41PYjWbQuJo",
+   "url": "https://youtu.be/41PYjWbQuJo",
+   "url_shorts": "https://youtube.com/shorts/41PYjWbQuJo",
+   "publishAt": "2026-11-18T13:00:00Z",
+   "hora_cdmx": "2026-11-18 07:00 (America/Mexico_City)",
+   "privacyStatus": "private",
+   "selfDeclaredMadeForKids": false,
+   "madeForKids": false,
+   "containsSyntheticMedia": true,
+   "thumbnail": "thumbnails.set OK con portada.jpg (maxres verifica portada con título)",
+   "duration_api": "PT1M23S",
+   "subido": "2026-11-17 15:20 America/Mexico_City",
+   "estado_fila": "programado_yt"
   },
   {
    "plataforma": "youtube",
@@ -50,7 +63,20 @@
    "fuente_mp4": "/workspace/capcot/salidas/2026-10-27_corneja-decision-rapida/capsula.mp4",
    "md5_nuevo": "e62f588276818bca340ce05ea3150457",
    "md5_fuente": "d7f2896e51ada8e61ef7d7210d3f6b48",
-   "nota": "El original ZHdJXFrURk4 sigue público (22 vistas); wxnh era el mismo archivo exacto. Sería la 3.ª corneja en YT."
+   "nota": "El original ZHdJXFrURk4 sigue público (22 vistas); wxnh era el mismo archivo exacto. Sería la 3.ª corneja en YT.",
+   "id_nuevo": "AxgWdhqPhRI",
+   "url": "https://youtu.be/AxgWdhqPhRI",
+   "url_shorts": "https://youtube.com/shorts/AxgWdhqPhRI",
+   "publishAt": "2026-11-19T13:00:00Z",
+   "hora_cdmx": "2026-11-19 07:00 (America/Mexico_City)",
+   "privacyStatus": "private",
+   "selfDeclaredMadeForKids": false,
+   "madeForKids": false,
+   "containsSyntheticMedia": true,
+   "thumbnail": "thumbnails.set OK con portada.jpg (maxres verifica portada con título)",
+   "duration_api": "PT1M28S",
+   "subido": "2026-11-17 15:20 America/Mexico_City",
+   "estado_fila": "programado_yt"
   },
   {
    "plataforma": "youtube",
@@ -66,7 +92,30 @@
    "fuente_mp4": "/workspace/capcot_prod_20261108_semana/flamencos/capsula_v2.mp4",
    "md5_nuevo": "f70758edc78b1254fb83468712467337",
    "md5_fuente": "6779c18c6235b9102117cc512cb03a28",
-   "nota": ""
+   "nota": "",
+   "id_nuevo": "msWV2AXr6Uk",
+   "url": "https://youtu.be/msWV2AXr6Uk",
+   "url_shorts": "https://youtube.com/shorts/msWV2AXr6Uk",
+   "publishAt": "2026-11-20T13:00:00Z",
+   "hora_cdmx": "2026-11-20 07:00 (America/Mexico_City)",
+   "privacyStatus": "private",
+   "selfDeclaredMadeForKids": false,
+   "madeForKids": false,
+   "containsSyntheticMedia": true,
+   "thumbnail": "thumbnails.set OK con portada.jpg (maxres verifica portada con título)",
+   "duration_api": "PT1M22S",
+   "subido": "2026-11-17 15:20 America/Mexico_City",
+   "estado_fila": "programado_yt",
+   "tags_usados": [
+    "DatosYOciosidades",
+    "Shorts",
+    "animales",
+    "ciencia",
+    "datos",
+    "curiosidades",
+    "flamenco",
+    "datosinteresantes"
+   ]
   },
   {
    "plataforma": "tiktok",
@@ -124,5 +173,11 @@
    "md5_fuente": "dfdd25160053294a235fa8da1c12767d",
    "nota": "Fuente: transcode 720×1280 de Studio (el 1080 original no está en la caja), reescalado a 1080×1920. Tema de salud: puede estar en revisión en TT."
   }
- ]
+ ],
+ "subida_yt": {
+  "cuando": "2026-11-17 15:20 America/Mexico_City",
+  "canal": "UCU2ZI-6pBJEr9aSFsF6bxLw",
+  "token": "~/.capcot/token.json",
+  "nota": "Originales no se tocaron (siguen públicos). containsSyntheticMedia=true y madeForKids=false en insert. Miniatura = portada.jpg."
+ }
 }
