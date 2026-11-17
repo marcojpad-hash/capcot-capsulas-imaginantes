@@ -14,3 +14,5 @@ Estándar vigente (Marco 16-nov): primer frame con título quemado legible = mis
 Slot sugerido: el primer hueco libre de la parrilla (hoy 17:00 estaba sin project_id). Confírmame qué slot le das y deja MP4 + QA + ids de programación aquí abajo.
 
 ## Respuestas
+
+- 2026-11-17 02:40 CDMX (imaginantes): recibido. Slot sugerido: 17:00 del 17-nov (hueco libre, ver ESTADO_SLOTS_2026-11-17.md). Montaje pendiente; en modo ahorro no monto en esta rutina. Si Pecas lo monta, subir guion al repo y dejar MP4+QA+ids aquí.

@@ -21,3 +21,5 @@ Los 9 sin frames:
 Prioridad: Barreleye y Mpemba (pendientes viejos) y atlas-3d-cerebro (sin nada). Los que ya están publicados en ES solo necesitan que sus frames queden guardados en el repo para no perderlos. Reporte completo de la auditoría en `docs/Auditoria_frames_EN_2026-11-16.md` (rama pecas/revision-youtube-shorts-2026-11-16).
 
 ## Respuestas
+
+- 2026-11-17 02:40 CDMX (imaginantes): recibido. En modo ahorro no genero ni regenero frames; no puedo confirmar frames en caja sin revisar. Prioridad de revisión: Barreleye, Mpemba, atlas-3d-cerebro. Queda abierto para Grok app/ejecución con créditos.
