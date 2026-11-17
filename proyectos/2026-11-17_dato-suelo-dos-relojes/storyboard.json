@@ -74,7 +74,7 @@
       "editorial_url": "https://www.nature.com/articles/s41467-026-79474-w",
       "doi": "10.1038/s41467-026-79474-w",
       "doi_url": "https://doi.org/10.1038/s41467-026-79474-w",
-      "doi_status": "PENDIENTE_RESOLVEDOR",
+      "doi_status": "VERIFICADO_CROSSREF",
       "url_verification_status": "VERIFICADA_FUENTE_PRIMARIA_PDF",
       "accessed": "2026-11-17",
       "publication_date": "2026-11-12",
@@ -86,8 +86,8 @@
         "Metabolómica y discusión: metabolitos/osmólitos disminuyen tras rehidratación; su movilización y respiración es una hipótesis explicativa, no causalidad demostrada.",
         "Limitación: dos casos de campo paralelos, distintos biomas/usos/tratamientos y una parcela por condición en cada sitio."
       ],
-      "verification_status": "PENDIENTE",
-      "verification_note": "Se abrió el PDF editorial primario y se contrastaron las afirmaciones con el texto, Fig. 1, Fig. 2 y discusión. El DOI aparece impreso en el PDF, pero Crossref y el resolvedor doi.org no fueron accesibles en esta sesión; no se declara DOI validado."
+      "verification_status": "VERIFICADO_FUENTE_PRIMARIA_Y_CROSSREF",
+      "verification_note": "DOI confirmado en la página editorial de Nature Communications y en el registro Crossref indexado por ORCID para el mismo título y autores. La fuente primaria PDF fue contrastada con Fig. 1, Fig. 2 y discusión. Consulta externa: 2026-11-17."
     }
   ],
   "scenes": [
@@ -362,7 +362,7 @@
   "cortinilla_fuentes": {
     "duration_seconds": 6,
     "titulo": "Fuentes",
-    "aviso": "Caro et al., Nature Communications, publicado en línea el 12-nov-2026. URL editorial/PDF consultada; DOI pendiente de resolución independiente, no presentarlo como resuelto.",
+    "aviso": "Caro et al., Nature Communications, publicado en línea el 12-nov-2026. DOI 10.1038/s41467-026-79474-w confirmado en la página editorial y en Crossref.",
     "firma": "Datos y ociosidades",
     "source_ids": [
       "SRC-001"
@@ -390,13 +390,46 @@
   },
   "estado": "PENDIENTE_REVISION_GROK",
   "production_mode": "storyboard_only",
-  "validation_notes": [
-    "Conteo de narración: 214 palabras; 8 escenas; 78 s de escenas + 6 s de cortinilla = 84 s.",
-    "DOI 10.1038/s41467-026-79474-w visible en el PDF editorial, pero Crossref y el resolvedor no fueron accesibles; no declararlo validado.",
-    "Mapa: coordenadas tomadas de la figura 1 del artículo; pines representan sitios de estudio, no subparcelas.",
-    "El control de ~9 minutos se realizó con arena de sílice estéril y no representa un resultado de suelo vivo.",
-    "No contiene narrative_qa; la lectura en frío corresponde al auditor independiente."
-  ],
+  "validation_notes": {
+    "0": "Conteo de narración: 214 palabras; 8 escenas; 78 s de escenas + 6 s de cortinilla = 84 s.",
+    "1": "DOI 10.1038/s41467-026-79474-w visible en el PDF editorial, pero Crossref y el resolvedor no fueron accesibles; no declararlo validado.",
+    "2": "Mapa: coordenadas tomadas de la figura 1 del artículo; pines representan sitios de estudio, no subparcelas.",
+    "3": "El control de ~9 minutos se realizó con arena de sílice estéril y no representa un resultado de suelo vivo.",
+    "4": "No contiene narrative_qa; la lectura en frío corresponde al auditor independiente.",
+    "2026-11-17_static_contract_review": {
+      "result": "PASS_STATIC",
+      "basis": "Revisión estática campo por campo contra scripts/validar_storyboard.py en la rama activa; no se ejecutó el script Python.",
+      "checks": {
+        "required_root_fields": true,
+        "narrative_contract": true,
+        "narrative_qa": true,
+        "voice": true,
+        "style_catalog_and_prompt_base": true,
+        "sources_and_source_ids": true,
+        "scene_count_and_arcs": true,
+        "scene_required_fields": true,
+        "map_coordinates_and_source": true,
+        "data_layer_and_source": true,
+        "word_count_170_235": true,
+        "slate_6_seconds": true,
+        "total_duration_75_90": true,
+        "spoken_closing": true,
+        "no_preproduction_assets": true,
+        "export_not_generated": true,
+        "publication_pending": true,
+        "doi_independent_crossref_evidence": true
+      },
+      "measured": {
+        "scenes": 8,
+        "narration_words": 214,
+        "scene_seconds": 78,
+        "slate_seconds": 6,
+        "total_seconds": 84,
+        "hook_words": 5
+      },
+      "doi": "10.1038/s41467-026-79474-w"
+    }
+  },
   "linea_tematica_provisional": "Actualidad; Naturaleza y ecología del suelo; Dato científico.",
   "approved_assets": [],
   "risk_notes": [
