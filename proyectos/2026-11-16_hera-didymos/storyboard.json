@@ -15,7 +15,7 @@
   },
   "estilo_id": "pixel_art",
   "estilo_visual": "16-bit pixel art scene, limited retro palette, crisp pixels, side view video game style, dithering, vertical 9:16, no text",
-  "estructura": "sabias_que",
+  "estructura": "arco_capcot",
   "serie": "Datos y ociosidades",
   "voice": {
     "engine": "edge-tts",
@@ -32,7 +32,20 @@
       "url": "https://www.esa.int/articles/about-us/directorates/operations/space-safety/hera/hera-s-first-close-up-view-of-didymos-asteroids",
       "doi": null,
       "accessed": "2026-11-16",
-      "supports": ["primera imagen cercana de Didymos", "distancia 60 km", "Didymos 780 m", "Dimorphos 151 m en sombra", "otro lado de Didymos", "llegada Hera"],
+      "supports": [
+        "primera imagen cercana de Didymos",
+        "distancia 60 km",
+        "Didymos 780 m",
+        "Dimorphos 151 m en sombra",
+        "otro lado de Didymos",
+        "llegada Hera",
+        "DART 26-sep-2022, 580 kg, 6.1 km/s",
+        "órbita de Dimorphos 33 min más corta, más de lo previsto",
+        "dos años de viaje",
+        "cresta ecuatorial, bloques, cráteres, surcos",
+        "material eyectado pudo cruzar ~1 km",
+        "fotos detalladas 25-nov"
+      ],
       "ref_display": "ESA · 5-nov-2026"
     }
   ],
@@ -41,92 +54,137 @@
       "id": "scene_001",
       "arc": "hook_medias_res",
       "duration_seconds": 10,
-      "narration": "Una nave europea acaba de llegar a un asteroide que la NASA golpeó hace cuatro años.",
+      "narration": "Una nave europea llegó a un asteroide que ya empujamos. Y encontró un lado que nadie había visto de cerca.",
       "on_screen_text": "Hera llegó",
-      "visual_description": "pixel art spacecraft approaching binary asteroid",
-      "image_prompt": "16-bit pixel art scene, limited retro palette, crisp pixels, side view video game style, dithering, vertical 9:16, no text + small pixel spacecraft approaching two rocky asteroids in space, one larger one smaller, stars background",
-      "source_ids": ["SRC-001"],
+      "image_prompt": "16-bit pixel art scene, limited retro palette, crisp pixels, side view video game style, dithering, vertical 9:16, no text + spacecraft approaching binary asteroid",
+      "source_ids": [
+        "SRC-001"
+      ],
       "asset_filename": "frames/scene_001.jpg",
       "ambiente": "viento",
-      "sfx": ["motor"]
+      "sfx": [
+        "viento"
+      ],
+      "visual_description": "pixel art spacecraft approaching binary asteroid"
     },
     {
       "id": "scene_002",
-      "arc": "desarrollo",
-      "duration_seconds": 12,
-      "narration": "Hera, de la ESA, tomó su primera foto cercana de Didymos el 5 de noviembre, desde unos sesenta kilómetros.",
-      "on_screen_text": "Primera foto cercana",
-      "visual_description": "pixel art camera view of asteroid",
-      "image_prompt": "16-bit pixel art scene, limited retro palette, crisp pixels, side view video game style, dithering, vertical 9:16, no text + monochrome-like pixel view of a large cratered asteroid with boulders and equatorial ridge, small moonlet in shadow",
-      "source_ids": ["SRC-001"],
+      "arc": "conflicto",
+      "duration_seconds": 10,
+      "narration": "En 2022, la NASA estrelló su nave DART, de quinientos ochenta kilos, contra Dimorphos, un asteroide pequeño, a seis kilómetros por segundo. Fue a propósito: querían saber si se puede desviar una roca así.",
+      "on_screen_text": "El choque de DART",
+      "image_prompt": "16-bit pixel art scene, limited retro palette, crisp pixels, side view video game style, dithering, vertical 9:16, no text + DART impact on moonlet with ejecta",
+      "source_ids": [
+        "SRC-001"
+      ],
       "asset_filename": "frames/scene_002.jpg",
-      "ambiente": "espacio",
-      "sfx": ["camara"]
+      "ambiente": "viento",
+      "sfx": [
+        "viento"
+      ],
+      "visual_description": "pixel art DART impact on moonlet with ejecta"
     },
     {
       "id": "scene_003",
       "arc": "desarrollo",
-      "duration_seconds": 11,
-      "narration": "Didymos mide unos setecientos ochenta metros; su luna Dimorphos, ciento cincuenta y uno, quedó casi toda en sombra.",
-      "on_screen_text": "780 m y 151 m",
-      "visual_description": "pixel art size comparison of two asteroids",
-      "image_prompt": "16-bit pixel art scene, limited retro palette, crisp pixels, side view video game style, dithering, vertical 9:16, no text + two pixel asteroids side by side, larger one clear with craters, smaller one half in shadow, space background",
-      "source_ids": ["SRC-001"],
+      "duration_seconds": 10,
+      "narration": "Y funcionó de más. Dimorphos da vueltas alrededor de otro asteroide, Didymos, y su vuelta se acortó treinta y tres minutos, mucho más de lo previsto.",
+      "on_screen_text": "33 minutos menos",
+      "image_prompt": "16-bit pixel art scene, limited retro palette, crisp pixels, side view video game style, dithering, vertical 9:16, no text + moonlet orbit shortened around big asteroid",
+      "source_ids": [
+        "SRC-001"
+      ],
       "asset_filename": "frames/scene_003.jpg",
-      "ambiente": "espacio",
-      "sfx": ["beep"]
+      "ambiente": "viento",
+      "sfx": [
+        "reloj"
+      ],
+      "visual_description": "pixel art moonlet orbit shortened around big asteroid"
     },
     {
       "id": "scene_004",
       "arc": "desarrollo",
-      "duration_seconds": 12,
-      "narration": "La foto muestra el otro lado de Didymos, el que DART no vio justo antes del impacto en 2022.",
-      "on_screen_text": "El otro lado",
-      "visual_description": "pixel art different hemisphere of asteroid",
-      "image_prompt": "16-bit pixel art scene, limited retro palette, crisp pixels, side view video game style, dithering, vertical 9:16, no text + pixel asteroid with different surface: many boulders, grooves and craters on one side, equatorial ridge",
-      "source_ids": ["SRC-001"],
+      "duration_seconds": 10,
+      "narration": "Ahora llegó Hera, de la Agencia Espacial Europea, tras dos años de viaje. Desde sesenta kilómetros tomó su primera foto cercana de los dos.",
+      "on_screen_text": "Primera foto cercana",
+      "image_prompt": "16-bit pixel art scene, limited retro palette, crisp pixels, side view video game style, dithering, vertical 9:16, no text + Hera camera pointing at the pair",
+      "source_ids": [
+        "SRC-001"
+      ],
       "asset_filename": "frames/scene_004.jpg",
-      "ambiente": "espacio",
-      "sfx": ["impacto"]
+      "ambiente": "viento",
+      "sfx": [
+        "viento"
+      ],
+      "visual_description": "pixel art Hera camera pointing at the pair"
     },
     {
       "id": "scene_005",
       "arc": "desarrollo",
-      "duration_seconds": 11,
-      "narration": "DART cambió la órbita de Dimorphos en unos treinta y tres minutos. Hera va a medir bien el resultado.",
-      "on_screen_text": "Órbita 33 min más corta",
-      "visual_description": "pixel art impact aftermath and measurement",
-      "image_prompt": "16-bit pixel art scene, limited retro palette, crisp pixels, side view video game style, dithering, vertical 9:16, no text + pixel spacecraft scanning a small asteroid with impact crater debris floating, measurement lines",
-      "source_ids": ["SRC-001"],
+      "duration_seconds": 10,
+      "narration": "Didymos mide unos setecientos ochenta metros. Dimorphos, ciento cincuenta y uno, quedó casi todo en sombra.",
+      "on_screen_text": "780 m y 151 m",
+      "image_prompt": "16-bit pixel art scene, limited retro palette, crisp pixels, side view video game style, dithering, vertical 9:16, no text + big asteroid lit, moonlet in shadow (monochrome)",
+      "source_ids": [
+        "SRC-001"
+      ],
       "asset_filename": "frames/scene_005.jpg",
-      "ambiente": "espacio",
-      "sfx": ["scan"]
+      "ambiente": "viento",
+      "sfx": [
+        "viento"
+      ],
+      "visual_description": "pixel art big asteroid lit, moonlet in shadow (monochrome)"
     },
     {
       "id": "scene_006",
-      "arc": "cierre_historia",
+      "arc": "giro",
       "duration_seconds": 10,
-      "narration": "El 25 de noviembre van a mostrar las fotos detalladas de Dimorphos, el primer asteroide cuya órbita cambiamos a propósito.",
-      "on_screen_text": "Fotos el 25 nov",
-      "visual_description": "pixel art reveal of small asteroid",
-      "image_prompt": "16-bit pixel art scene, limited retro palette, crisp pixels, side view video game style, dithering, vertical 9:16, no text + close pixel view of small cratered asteroid moonlet emerging from shadow, spacecraft in distance",
-      "source_ids": ["SRC-001"],
+      "narration": "La sorpresa está en Didymos: es el lado que DART nunca vio. Tiene la misma cresta en el ecuador, una especie de cinturón de roca, pero también piedras sueltas, cráteres y surcos.",
+      "on_screen_text": "El otro lado",
+      "image_prompt": "16-bit pixel art scene, limited retro palette, crisp pixels, side view video game style, dithering, vertical 9:16, no text + equatorial ridge, boulders, craters, grooves",
+      "source_ids": [
+        "SRC-001"
+      ],
       "asset_filename": "frames/scene_006.jpg",
-      "ambiente": "espacio",
-      "sfx": ["revelacion"]
+      "ambiente": "viento",
+      "sfx": [
+        "viento"
+      ],
+      "visual_description": "pixel art equatorial ridge, boulders, craters, grooves"
     },
     {
       "id": "scene_007",
-      "arc": "reflexion_o_pregunta",
-      "duration_seconds": 9,
-      "narration": "¿Podemos mover un asteroide si amenaza la Tierra? Hera nos dirá cuánto de verdad podemos. Esto fue Datos y ociosidades.",
-      "on_screen_text": "Defensa planetaria",
-      "visual_description": "pixel art Earth and asteroid deflection",
-      "image_prompt": "16-bit pixel art scene, limited retro palette, crisp pixels, side view video game style, dithering, vertical 9:16, no text + pixel Earth in distance with small asteroid being nudged by a probe, protective feel",
-      "source_ids": ["SRC-001"],
+      "arc": "cierre_historia",
+      "duration_seconds": 10,
+      "narration": "¿Vienen del choque? Los científicos creen que parte del material que salió disparado cruzó el kilómetro que separa a los dos. Todavía no lo saben. Las fotos detalladas salen el 25 de noviembre.",
+      "on_screen_text": "¿Restos del choque?",
+      "image_prompt": "16-bit pixel art scene, limited retro palette, crisp pixels, side view video game style, dithering, vertical 9:16, no text + debris stream from moonlet to big asteroid",
+      "source_ids": [
+        "SRC-001"
+      ],
       "asset_filename": "frames/scene_007.jpg",
-      "ambiente": "espacio",
-      "sfx": ["final"]
+      "ambiente": "viento",
+      "sfx": [
+        "viento"
+      ],
+      "visual_description": "pixel art debris stream from moonlet to big asteroid"
+    },
+    {
+      "id": "scene_008",
+      "arc": "reflexion_o_pregunta",
+      "duration_seconds": 10,
+      "narration": "Movimos una roca en el espacio, y quizá salpicamos a su vecina. ¿Qué más cambió ese golpe que todavía no vemos? Esto fue Datos y ociosidades.",
+      "on_screen_text": "¿Qué más cambió?",
+      "image_prompt": "16-bit pixel art scene, limited retro palette, crisp pixels, side view video game style, dithering, vertical 9:16, no text + Earth and asteroid being nudged",
+      "source_ids": [
+        "SRC-001"
+      ],
+      "asset_filename": "frames/scene_008.jpg",
+      "ambiente": "viento",
+      "sfx": [
+        "viento"
+      ],
+      "visual_description": "pixel art Earth and asteroid being nudged"
     }
   ],
   "cortinilla_fuentes": {
@@ -140,5 +198,6 @@
     "resolution": "1080x1920",
     "fps": 30,
     "loudness_lufs": -14
-  }
+  },
+  "titulo": "Hera fue a ver el golpe de DART"
 }

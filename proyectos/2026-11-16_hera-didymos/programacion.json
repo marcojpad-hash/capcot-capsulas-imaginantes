@@ -1,13 +1,38 @@
 {
   "project_id": "2026-11-16_hera-didymos",
-  "plataforma": ["yt", "tt"],
-  "publish_at": "2026-11-16T19:15:00Z",
-  "ventana": "mediodia",
-  "hora_cdmx": "13:15",
+  "plataforma": [
+    "yt",
+    "tt",
+    "fb"
+  ],
   "fecha_cdmx": "2026-11-16",
-  "caption_tt": "Hera de la ESA llegó a Didymos para ver qué le hizo DART en 2022. Primera foto cercana desde 60 km. #Hera #Didymos #DART #Ciencia #Shorts",
-  "titulo_yt": "Hera llega a ver el golpe de DART #Shorts",
-  "privacidad": "private→público a las 13:15 CDMX",
-  "estado": "programado_paquete",
-  "nota": "Falta montar (sin edge-tts JorgeNeural en este entorno). Mj sube TT desde teléfono."
+  "hora_cdmx": "23:30",
+  "ventana": "dato_del_dia",
+  "publish_at": "2026-11-17T05:30:00Z",
+  "yt": {
+    "video_id": "tiGeRapGRjM",
+    "privacyStatus": "private",
+    "publishAt": "2026-11-17T05:30:00Z",
+    "miniatura": "portada.jpg (thumbnails.set OK)",
+    "verificado": "2026-11-16 22:17 CDMX"
+  },
+  "tt": {
+    "estado": "pendiente (lo sube Imaginantes/Mj)",
+    "hora_ui_ny": "00:30 17-nov"
+  },
+  "fb": {
+    "estado": "pendiente",
+    "hora_ui_ny": "00:30 17-nov"
+  },
+  "titulo_yt": "Hera fue a ver el golpe de DART",
+  "caption_tt": "Una nave europea llegó al asteroide que la NASA golpeó en 2022 y encontró un lado que DART nunca vio. ¿Qué más cambió ese choque? #espacio #asteroide #NASA #ESA #astronomia #ciencia",
+  "caption_fb": "Una nave europea llegó al asteroide que la NASA golpeó en 2022 y encontró un lado que DART nunca vio. ¿Qué más cambió ese choque? #espacio #asteroide #NASA #ESA #astronomia #ciencia",
+  "duracion_s": 85.93,
+  "estado": "programado_yt",
+  "archivos": [
+    "capsula.mp4",
+    "portada.jpg",
+    "capsula.srt",
+    "capsula.ass"
+  ]
 }
