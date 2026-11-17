@@ -1,0 +1,21 @@
+{
+  "project_id": "2026-11-14_lote_ornitorrinco",
+  "fecha": "2026-11-17",
+  "plataforma": ["yt", "tt", "fb"],
+  "ventana": "07:00",
+  "publish_at": "2026-11-17T13:00:00Z",
+  "hora_cdmx": "2026-11-17 07:00",
+  "titulo_yt": "¿Sabías que el ornitorrinco brilla bajo luz UV? #Shorts",
+  "privacidad": "private→público a las 07:00 CDMX",
+  "estado": "publicado_yt_tt_fb",
+  "yt_id": "dz2C-Y8klXA",
+  "url": "https://youtube.com/shorts/dz2C-Y8klXA",
+  "tiktok": "publicado",
+  "facebook": "publicado",
+  "tiktok_id": "7709134278210194694",
+  "facebook_id": "122110856703518983",
+  "facebook_reel_id": "3107568679585550",
+  "video": "/workspace/capcot_prod_20261114/ornitorrinco/capsula_final.mp4",
+  "miniatura": "portada.jpg",
+  "nota": "Evergreen del lote 14-nov, usado en el chequeo pre-entrega 17-nov 06:26 para cubrir el 07:00 que estaba vacío. YT dz2C-Y8klXA publishAt 2026-11-17T13:00Z. TT y FB se publicaron al momento ~07:40–07:45 CDMX (el slot ya había pasado)."
+}
