@@ -1,0 +1,105 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Sub,DejaVu Sans,72,&H00FFFFFF,&H00FFFFFF,&H00000000,&H64000000,-1,0,0,0,100,100,0,0,1,6,2,2,90,170,620,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.25,0:00:00.84,Sub,,0,0,0,,¿El vikingo de
+Dialogue: 0,0:00:00.85,0:00:01.56,Sub,,0,0,0,,tu disfraz nunca
+Dialogue: 0,0:00:01.57,0:00:02.28,Sub,,0,0,0,,existió?
+Dialogue: 0,0:00:02.29,0:00:02.86,Sub,,0,0,0,,Mito.
+Dialogue: 0,0:00:02.87,0:00:03.60,Sub,,0,0,0,,Los vikingos no
+Dialogue: 0,0:00:03.61,0:00:04.62,Sub,,0,0,0,,usaban cascos con
+Dialogue: 0,0:00:04.63,0:00:05.42,Sub,,0,0,0,,cuernos.
+Dialogue: 0,0:00:05.43,0:00:06.04,Sub,,0,0,0,,La prueba está
+Dialogue: 0,0:00:06.05,0:00:06.89,Sub,,0,0,0,,en Noruega.
+Dialogue: 0,0:00:06.95,0:00:08.13,Sub,,0,0,0,,En 1943,
+Dialogue: 0,0:00:08.41,0:00:09.22,Sub,,0,0,0,,en Gjermundbu,
+Dialogue: 0,0:00:09.23,0:00:10.12,Sub,,0,0,0,,encontraron un casco
+Dialogue: 0,0:00:10.13,0:00:10.94,Sub,,0,0,0,,vikingo roto en
+Dialogue: 0,0:00:10.95,0:00:11.66,Sub,,0,0,0,,nueve pedazos,
+Dialogue: 0,0:00:11.67,0:00:12.28,Sub,,0,0,0,,dentro de una
+Dialogue: 0,0:00:12.29,0:00:13.01,Sub,,0,0,0,,tumba.
+Dialogue: 0,0:00:13.07,0:00:14.14,Sub,,0,0,0,,Lo reconstruyeron:
+Dialogue: 0,0:00:14.15,0:00:14.50,Sub,,0,0,0,,hierro,
+Dialogue: 0,0:00:14.51,0:00:15.38,Sub,,0,0,0,,cuatro placas,
+Dialogue: 0,0:00:15.39,0:00:16.18,Sub,,0,0,0,,cúpula redonda y
+Dialogue: 0,0:00:16.19,0:00:17.20,Sub,,0,0,0,,protección para ojos
+Dialogue: 0,0:00:17.21,0:00:18.03,Sub,,0,0,0,,y nariz.
+Dialogue: 0,0:00:18.17,0:00:18.56,Sub,,0,0,0,,Cuernos,
+Dialogue: 0,0:00:18.57,0:00:19.15,Sub,,0,0,0,,cero.
+Dialogue: 0,0:00:19.50,0:00:19.89,Sub,,0,0,0,,Y no es
+Dialogue: 0,0:00:19.90,0:00:20.56,Sub,,0,0,0,,el único.
+Dialogue: 0,0:00:20.72,0:00:21.09,Sub,,0,0,0,,En los años
+Dialogue: 0,0:00:21.10,0:00:21.78,Sub,,0,0,0,,cincuenta,
+Dialogue: 0,0:00:21.84,0:00:22.36,Sub,,0,0,0,,en Yarm,
+Dialogue: 0,0:00:22.37,0:00:22.93,Sub,,0,0,0,,Inglaterra,
+Dialogue: 0,0:00:22.94,0:00:23.97,Sub,,0,0,0,,unos obreros cavando
+Dialogue: 0,0:00:23.98,0:00:25.19,Sub,,0,0,0,,zanjas encontraron otro
+Dialogue: 0,0:00:25.20,0:00:26.03,Sub,,0,0,0,,casco del siglo
+Dialogue: 0,0:00:26.04,0:00:26.54,Sub,,0,0,0,,diez.
+Dialogue: 0,0:00:26.74,0:00:27.41,Sub,,0,0,0,,Lo estudiaron en
+Dialogue: 0,0:00:27.42,0:00:28.30,Sub,,0,0,0,,2020:
+Dialogue: 0,0:00:28.40,0:00:29.25,Sub,,0,0,0,,también es vikingo,
+Dialogue: 0,0:00:29.26,0:00:30.05,Sub,,0,0,0,,y tampoco tiene
+Dialogue: 0,0:00:30.06,0:00:30.87,Sub,,0,0,0,,cuernos.
+Dialogue: 0,0:00:30.88,0:00:31.75,Sub,,0,0,0,,En combate serían
+Dialogue: 0,0:00:31.76,0:00:32.62,Sub,,0,0,0,,un estorbo:
+Dialogue: 0,0:00:32.64,0:00:33.23,Sub,,0,0,0,,el enemigo te
+Dialogue: 0,0:00:33.24,0:00:33.93,Sub,,0,0,0,,agarra de ahí
+Dialogue: 0,0:00:33.94,0:00:34.49,Sub,,0,0,0,,y una hoja
+Dialogue: 0,0:00:34.50,0:00:35.50,Sub,,0,0,0,,se engancha.
+Dialogue: 0,0:00:35.64,0:00:36.73,Sub,,0,0,0,,Eran para sobrevivir,
+Dialogue: 0,0:00:36.74,0:00:37.80,Sub,,0,0,0,,no disfraces.
+Dialogue: 0,0:00:38.17,0:00:38.86,Sub,,0,0,0,,¿De dónde salió
+Dialogue: 0,0:00:38.87,0:00:39.34,Sub,,0,0,0,,la imagen?
+Dialogue: 0,0:00:39.35,0:00:41.03,Sub,,0,0,0,,Del siglo diecinueve.
+Dialogue: 0,0:00:41.27,0:00:42.81,Sub,,0,0,0,,En 1876,
+Dialogue: 0,0:00:42.82,0:00:43.70,Sub,,0,0,0,,Carl Emil Doepler
+Dialogue: 0,0:00:43.71,0:00:44.66,Sub,,0,0,0,,puso cascos con
+Dialogue: 0,0:00:44.67,0:00:45.28,Sub,,0,0,0,,cuernos a los
+Dialogue: 0,0:00:45.29,0:00:46.02,Sub,,0,0,0,,personajes de El
+Dialogue: 0,0:00:46.03,0:00:47.32,Sub,,0,0,0,,anillo del Nibelungo,
+Dialogue: 0,0:00:47.33,0:00:47.72,Sub,,0,0,0,,de Wagner,
+Dialogue: 0,0:00:47.73,0:00:48.72,Sub,,0,0,0,,en Bayreuth,
+Dialogue: 0,0:00:48.73,0:00:48.96,Sub,,0,0,0,,para que se
+Dialogue: 0,0:00:48.97,0:00:50.37,Sub,,0,0,0,,vieran más bárbaros.
+Dialogue: 0,0:00:50.43,0:00:50.92,Sub,,0,0,0,,Antes,
+Dialogue: 0,0:00:50.93,0:00:51.56,Sub,,0,0,0,,el sueco August
+Dialogue: 0,0:00:51.57,0:00:52.58,Sub,,0,0,0,,Malmström ya les
+Dialogue: 0,0:00:52.59,0:00:53.78,Sub,,0,0,0,,había puesto cuernos
+Dialogue: 0,0:00:53.79,0:00:54.58,Sub,,0,0,0,,al ilustrar la
+Dialogue: 0,0:00:54.59,0:00:55.73,Sub,,0,0,0,,Saga de Frithiof.
+Dialogue: 0,0:00:56.04,0:00:56.69,Sub,,0,0,0,,Sí hubo cascos
+Dialogue: 0,0:00:56.70,0:00:57.49,Sub,,0,0,0,,con cuernos en
+Dialogue: 0,0:00:57.50,0:00:58.11,Sub,,0,0,0,,el norte,
+Dialogue: 0,0:00:58.12,0:00:59.28,Sub,,0,0,0,,pero mucho antes:
+Dialogue: 0,0:00:59.34,0:00:59.99,Sub,,0,0,0,,los de Viksø,
+Dialogue: 0,0:01:00.00,0:01:00.63,Sub,,0,0,0,,Dinamarca,
+Dialogue: 0,0:01:00.64,0:01:01.19,Sub,,0,0,0,,de bronce,
+Dialogue: 0,0:01:01.20,0:01:01.83,Sub,,0,0,0,,de alrededor del
+Dialogue: 0,0:01:01.84,0:01:02.79,Sub,,0,0,0,,900 antes de
+Dialogue: 0,0:01:02.80,0:01:03.13,Sub,,0,0,0,,Cristo,
+Dialogue: 0,0:01:03.14,0:01:03.87,Sub,,0,0,0,,ceremoniales,
+Dialogue: 0,0:01:03.88,0:01:04.94,Sub,,0,0,0,,no para pelear.
+Dialogue: 0,0:01:05.04,0:01:05.61,Sub,,0,0,0,,Y los cuernos
+Dialogue: 0,0:01:05.62,0:01:06.23,Sub,,0,0,0,,sí se usaban…
+Dialogue: 0,0:01:06.24,0:01:06.71,Sub,,0,0,0,,para beber,
+Dialogue: 0,0:01:06.72,0:01:07.33,Sub,,0,0,0,,no para la
+Dialogue: 0,0:01:07.34,0:01:08.10,Sub,,0,0,0,,batalla.
+Dialogue: 0,0:01:08.12,0:01:08.71,Sub,,0,0,0,,El casco con
+Dialogue: 0,0:01:08.72,0:01:09.73,Sub,,0,0,0,,cuernos es invento
+Dialogue: 0,0:01:09.74,0:01:10.39,Sub,,0,0,0,,de una ópera,
+Dialogue: 0,0:01:10.40,0:01:10.75,Sub,,0,0,0,,no de los
+Dialogue: 0,0:01:10.76,0:01:11.68,Sub,,0,0,0,,vikingos.
+Dialogue: 0,0:01:11.76,0:01:12.65,Sub,,0,0,0,,Mito o verdad:
+Dialogue: 0,0:01:12.66,0:01:12.93,Sub,,0,0,0,,mito.
+Dialogue: 0,0:01:12.94,0:01:13.97,Sub,,0,0,0,,Esto fue Datos
+Dialogue: 0,0:01:13.98,0:01:15.06,Sub,,0,0,0,,y ociosidades.
