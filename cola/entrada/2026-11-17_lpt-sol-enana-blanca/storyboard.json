@@ -1,0 +1,165 @@
+{
+  "project_id": "2026-11-17_lpt-sol-enana-blanca",
+  "title": "La enana blanca que late junto al Sol",
+  "language": "es-MX",
+  "aspect_ratio": "9:16",
+  "target_duration_seconds": 85,
+  "trend_source": {
+    "tipo": "noticia_cientifica",
+    "medio": "Nature Astronomy",
+    "url": "https://www.nature.com/articles/s41550-026-03016-z",
+    "estudio_doi": "10.1038/s41550-026-03016-z",
+    "fecha_publicacion": "2026-11-12",
+    "termino": "long-period transient sun-like companion",
+    "fecha_consulta": "2026-11-17"
+  },
+  "estilo_id": "van_gogh",
+  "estilo_visual": "Noche estrellada (Van Gogh)",
+  "estructura": "historia",
+  "voice": {
+    "engine": "edge-tts",
+    "voice_id": "es-MX-JorgeNeural",
+    "rate": "+7%",
+    "pitch": "-2Hz",
+    "pad_seconds": 0.3,
+    "modo_pausas": "continuo"
+  },
+  "sources": [
+    {
+      "id": "SRC-001",
+      "cita_corta": "McSweeney et al. (2026). A long-period transient with a Sun-like companion. Nat Astron.",
+      "url": "https://www.nature.com/articles/s41550-026-03016-z",
+      "doi": "10.1038/s41550-026-03016-z",
+      "accessed": "2026-11-17",
+      "supports": ["pulses every 7.9 min", "white dwarf + G-type star", "orbital period ~1.3 days", "first with Sun-like companion"],
+      "ref_display": "McSweeney 2026 NatAstron"
+    },
+    {
+      "id": "SRC-002",
+      "cita_corta": "Hurley-Walker (2026). A dead star is flashing radio waves every 8 minutes. The Conversation / Phys.org.",
+      "url": "https://phys.org/news/2026-11-dead-star-radio-minutes-partner.html",
+      "doi": "",
+      "accessed": "2026-11-17",
+      "supports": ["detected by MWA", "distance >5000 ly", "white dwarf ~0.67 solar masses"],
+      "ref_display": "Phys.org 2026"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_001",
+      "arc": "hook_medias_res",
+      "duration_seconds": 8.0,
+      "narration": "En el desierto australiano, antenas captan latidos de radio cada ocho minutos.",
+      "on_screen_text": "Latidos cada 8 min",
+      "visual_description": "Telescopios radio bajo cielo Van Gogh",
+      "image_prompt": "post-impressionist painting in the style of Van Gogh's Starry Night, swirling brushstrokes, deep blues and glowing yellows, vertical 9:16, no text + radio telescopes in Australian outback under swirling night sky",
+      "source_ids": ["SRC-001", "SRC-002"],
+      "asset_filename": "frames/scene_001.jpg",
+      "ambiente": "viento",
+      "sfx": ["viento"]
+    },
+    {
+      "id": "scene_002",
+      "arc": "desarrollo",
+      "duration_seconds": 10.0,
+      "narration": "No es un púlsar común. Es una enana blanca orbitando una estrella casi idéntica a nuestro Sol.",
+      "on_screen_text": "Enana blanca + Sol",
+      "visual_description": "Sol y enana blanca girando",
+      "image_prompt": "post-impressionist painting in the style of Van Gogh's Starry Night, swirling brushstrokes, deep blues and glowing yellows, vertical 9:16, no text + bright sun-like star next to small white dwarf with radio beams",
+      "source_ids": ["SRC-001"],
+      "asset_filename": "frames/scene_002.jpg",
+      "ambiente": "espacio",
+      "sfx": ["pulso"]
+    },
+    {
+      "id": "scene_003",
+      "arc": "desarrollo",
+      "duration_seconds": 11.0,
+      "narration": "El sistema se llama GPM J071507-114153. Los pulsos duran solo una ventana de seis horas cada día y medio.",
+      "on_screen_text": "Cada 1.3 días",
+      "visual_description": "Órbita y pulsos",
+      "image_prompt": "post-impressionist painting in the style of Van Gogh's Starry Night, swirling brushstrokes, deep blues and glowing yellows, vertical 9:16, no text + orbiting binary stars with clock-like swirling pulses",
+      "source_ids": ["SRC-001"],
+      "asset_filename": "frames/scene_003.jpg",
+      "ambiente": "espacio",
+      "sfx": ["reloj"]
+    },
+    {
+      "id": "scene_004",
+      "arc": "desarrollo",
+      "duration_seconds": 10.0,
+      "narration": "Astrónomos del Murchison Widefield Array la detectaron. Luego el Keck confirmó que la compañera es tipo G, como el Sol.",
+      "on_screen_text": "Detectada en Australia",
+      "visual_description": "Antenas MWA",
+      "image_prompt": "post-impressionist painting in the style of Van Gogh's Starry Night, swirling brushstrokes, deep blues and glowing yellows, vertical 9:16, no text + Murchison Widefield Array antennas under starry sky",
+      "source_ids": ["SRC-002"],
+      "asset_filename": "frames/scene_004.jpg",
+      "ambiente": "viento",
+      "sfx": ["viento"]
+    },
+    {
+      "id": "scene_005",
+      "arc": "desarrollo",
+      "duration_seconds": 10.0,
+      "narration": "La enana blanca pesa unos dos tercios del Sol. Demasiado ligera para ser estrella de neutrones.",
+      "on_screen_text": "0.67 masas solares",
+      "visual_description": "Enana blanca brillante",
+      "image_prompt": "post-impressionist painting in the style of Van Gogh's Starry Night, swirling brushstrokes, deep blues and glowing yellows, vertical 9:16, no text + close-up white dwarf with magnetic radio beams",
+      "source_ids": ["SRC-001", "SRC-002"],
+      "asset_filename": "frames/scene_005.jpg",
+      "ambiente": "espacio",
+      "sfx": ["pulso"]
+    },
+    {
+      "id": "scene_006",
+      "arc": "cierre_historia",
+      "duration_seconds": 11.0,
+      "narration": "A más de cinco mil años luz, las ondas de radio atraviesan la corona de la estrella solar y revelan su clima.",
+      "on_screen_text": ">5000 años luz",
+      "visual_description": "Mapa y ondas",
+      "image_prompt": "post-impressionist painting in the style of Van Gogh's Starry Night, swirling brushstrokes, deep blues and glowing yellows, vertical 9:16, no text + abstract map of Western Australia with radio waves",
+      "source_ids": ["SRC-002"],
+      "asset_filename": "frames/scene_006.jpg",
+      "ambiente": "espacio",
+      "sfx": ["ondas"]
+    },
+    {
+      "id": "scene_007",
+      "arc": "reflexion_o_pregunta",
+      "duration_seconds": 12.0,
+      "narration": "Una estrella muerta todavía habla. ¿Cuántas más esconden el brillo de sus compañeras? Esto fue Datos y ociosidades.",
+      "on_screen_text": "Estrellas que aún hablan",
+      "visual_description": "Cielo reflexivo Van Gogh",
+      "image_prompt": "post-impressionist painting in the style of Van Gogh's Starry Night, swirling brushstrokes, deep blues and glowing yellows, vertical 9:16, no text + cosmic reflection of dead stars speaking with radio light",
+      "source_ids": ["SRC-001"],
+      "asset_filename": "frames/scene_007.jpg",
+      "ambiente": "viento",
+      "sfx": ["viento"]
+    }
+  ],
+  "cortinilla_fuentes": {
+    "duration_seconds": 6,
+    "titulo": "Fuentes",
+    "aviso": "Imágenes generadas con IA. Voz sintética. Audio sintetizado.",
+    "firma": "Datos y ociosidades · @datosyociosidades"
+  },
+  "export": {
+    "filename": "capsula.mp4",
+    "resolution": "1080x1920",
+    "fps": 30,
+    "loudness_lufs": -14
+  },
+  "capas": [
+    {
+      "tipo": "mapa",
+      "region": [116.0, 117.5, -27.5, -26.0],
+      "puntos": [{"lon": 116.67, "lat": -26.70, "label": "MWA"}]
+    },
+    {
+      "tipo": "dato",
+      "valor": "7.9 min",
+      "etiqueta": "periodo de pulso",
+      "fuente": "SRC-001"
+    }
+  ]
+}
