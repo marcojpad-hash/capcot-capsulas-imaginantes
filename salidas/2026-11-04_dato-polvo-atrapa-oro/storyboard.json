@@ -1,0 +1,336 @@
+{
+ "_schema": "CAPCOT_STORYBOARD_TEXT_V2",
+ "project_id": "2026-11-04_dato-polvo-atrapa-oro",
+ "serie": "Datos y ociosidades",
+ "title": "Este polvo atrapa 5 veces su peso en oro",
+ "titulo": "Este polvo atrapa 5 veces su peso en oro",
+ "language": "es-MX",
+ "aspect_ratio": "9:16",
+ "target_duration_seconds": 87,
+ "fecha_objetivo": "2026-11-04",
+ "slot_local": "23:30",
+ "slot_cesta": "dato_del_dia",
+ "audience": "Público general",
+ "occasion": "Dato del día, 4 de noviembre de 2026",
+ "estructura": "historia",
+ "resumen": "Un material poroso de laboratorio, diseñado para dejar sus 'ganchos' expuestos, atrapa oro disuelto y lo convierte en nanopartículas metálicas, con una capacidad reportada de 5082,32 mg de oro por gramo (unas cinco veces su peso). Es un resultado de laboratorio, aún no una planta de reciclaje.",
+ "narrative_contract": {
+  "central_question": "¿Cómo puede un polvo atrapar cinco veces su peso en oro?",
+  "promise": "Entender qué pasa dentro del material y por qué sus ganchos expuestos cambian todo.",
+  "stakes": "Recuperar oro de forma selectiva importa para el oro que usamos a diario, sin prometer aplicaciones caseras.",
+  "scientific_turn": "Puentes de hidrógeno aplanan las cadenas y dejan los sitios de captura al descubierto; el oro se reduce a nanopartículas.",
+  "evidence_limit": "Resultado de laboratorio en condiciones controladas; no es industria ni truco casero.",
+  "payoff": "Lo valioso no es el oro sino diseñar una esponja que lo atrape solo a él."
+ },
+ "trend_source": {
+  "termino": "",
+  "formato": "¿sabías que…? contradictorio + qué pasa dentro de…",
+  "fecha_publicacion": "2026-10-30",
+  "url": "https://www.nature.com/articles/s41467-026-78532-7"
+ },
+ "editorial_status": "ESCRITO_Y_MONTADO_POR_GROK_BOT_4NOV_2215_SLOT_DATO",
+ "arco": {
+  "hook_medias_res": "Un gramo de polvo atrapó cinco gramos de oro.",
+  "desarrollo": "Oro disuelto invisible; esponjas con ganchos escondidos; truco de puentes de hidrógeno; oro reducido a nanopartículas.",
+  "cierre_historia": "Es laboratorio, no industria.",
+  "reflexion_o_pregunta": "Una esponja que atrapa solo al oro."
+ },
+ "estilo_id": "ilustracion_editorial_calida",
+ "estilo_visual": "Ilustración editorial cálida (gouache)",
+ "visual_identity": {
+  "style_id": "ilustracion_editorial_calida",
+  "style_name": "Ilustración editorial cálida",
+  "prompt_base": "warm hand-painted editorial illustration, storybook gouache style, soft golden light, deep teal and gold palette, single large central motif, friendly curious scientist character with round glasses and lab coat (recurring narrator character), not photorealistic, vertical 9:16, no text, no letters, no numbers, no logos",
+  "palette": "teal profundo y oro",
+  "lighting": "iluminación suave y uniforme de lámina impresa",
+  "texture": "gouache pintado a mano",
+  "composition": "un motivo central grande, detalles cartográficos secundarios, vertical 9:16",
+  "negative_prompt": "fotografía realista, render 3D, texto, letras, números, logotipos, marcas de agua",
+  "reference_assets": [],
+  "seed": null,
+  "seed_policy": "Mismo personaje científica de lentes redondos, paleta teal/oro en las ocho escenas."
+ },
+ "typography_identity": {
+  "font_family": "DejaVu Sans",
+  "font_weight": "700 para gancho; 400 para subtítulos",
+  "title_style": "Máximo seis palabras; presente desde frame 0 en postproducción",
+  "subtitle_style": "Bloques de máximo tres palabras; zona segura inferior",
+  "hierarchy": "Gancho > dato/etiqueta > subtítulos",
+  "animation": "Un movimiento por plano; tipografía en postproducción"
+ },
+ "voice": {
+  "engine": "edge-tts",
+  "voice_id": "es-MX-JorgeNeural",
+  "language": "es-MX",
+  "rate": "+7%",
+  "pitch": "-2Hz",
+  "pad_seconds": 0.3,
+  "modo_pausas": "continuo"
+ },
+ "sources": [
+  {
+   "id": "SRC-001",
+   "cita_corta": "Zhu, Z. et al. (2026). Hydrogen-bond-mediated quasi-two-dimensional covalent organic frameworks for ultrahigh gold extraction. Nature Communications.",
+   "url": "https://www.nature.com/articles/s41467-026-78532-7",
+   "doi": "10.1038/s41467-026-78532-7",
+   "accessed": "2026-11-04",
+   "publication_date": "2026-10-30",
+   "supports": [
+    "Sitios de captura confinados en poros internos limitan acceso y capacidad.",
+    "Grupos hidroxilo hacia afuera + puentes de hidrógeno entre cadenas: estructura casi plana y ordenada con sitios expuestos.",
+    "Captura y reducción de [AuCl4]-.",
+    "Con estímulo térmico suave y vibratorio se forman nanopartículas de oro in situ que se agregan.",
+    "Capacidad de extracción de oro de 5082,32 mg/g (abstract, verificado 4-nov-2026).",
+    "Captura selectiva de oro; enfoque propuesto como escalable."
+   ],
+   "verification_status": "VERIFICADO_ABSTRACT_NATURE_4NOV",
+   "publication": "Nature Communications",
+   "article_url": "https://www.nature.com/articles/s41467-026-78532-7"
+  }
+ ],
+ "scenes": [
+  {
+   "id": "scene_001",
+   "arc": "hook_medias_res",
+   "duration_seconds": 7,
+   "narration": "Un gramo de este polvo atrapó más de cinco gramos de oro. Cinco veces su propio peso… sacado de agua donde el oro ni se veía.",
+   "on_screen_text": "ATRAPA 5 VECES SU PESO EN ORO",
+   "visual_description": "Balanza antigua: en un platillo una pizca de polvo, en el otro un montón de granitos de oro que la inclina; la científica mira asombrada.",
+   "image_prompt": "warm hand-painted editorial illustration, storybook gouache style, soft golden light, deep teal and gold palette, single large central motif, friendly curious scientist character with round glasses and lab coat (recurring narrator character), not photorealistic, vertical 9:16, no text, no letters, no numbers, no logos; Balanza antigua: en un platillo una pizca de polvo, en el otro un montón de granitos de oro que la inclina; la científica mira asombrada.",
+   "ambiente": "reloj",
+   "sfx": [
+    "reloj"
+   ],
+   "source_ids": [
+    "SRC-001"
+   ],
+   "style_id": "ilustracion_editorial_calida",
+   "dramatic_beat": "Ya ocurrió lo imposible: un gramo se tragó cinco de oro.",
+   "scene_function": "Abrir in medias res con la anomalía cuantitativa.",
+   "causal_bridge_from_previous": "Apertura in medias res: el resultado ya está sobre la balanza.",
+   "question_state": "¿Cómo un polvo atrapa más oro que lo que pesa?",
+   "reason_to_continue": "La desproporción exige una explicación.",
+   "new_information": "Capacidad reportada de 5082,32 mg de oro por gramo de material.",
+   "asset_filename": "frames/scene_001.png"
+  },
+  {
+   "id": "scene_002",
+   "arc": "desarrollo",
+   "duration_seconds": 11,
+   "narration": "¿Y a ti qué? El oro de tus aretes o de tu anillo estuvo escondido entre otras cosas. Separarlo, pizca por pizca, es el problema que este polvo quiere resolver.",
+   "on_screen_text": "¿Y TU ANILLO?",
+   "visual_description": "Primer plano de una mano con un anillo de oro y unos aretes sobre una mesa; detrás, en sombra, rocas y un frasco de agua con destellos dorados.",
+   "image_prompt": "warm hand-painted editorial illustration, storybook gouache style, soft golden light, deep teal and gold palette, single large central motif, friendly curious scientist character with round glasses and lab coat (recurring narrator character), not photorealistic, vertical 9:16, no text, no letters, no numbers, no logos; Primer plano de una mano con un anillo de oro y unos aretes sobre una mesa; detrás, en sombra, rocas y un frasco de agua con destellos dorados.",
+   "ambiente": "viento",
+   "sfx": [],
+   "source_ids": [
+    "SRC-001"
+   ],
+   "style_id": "ilustracion_editorial_calida",
+   "dramatic_beat": "El oro cotidiano tiene una historia de separación difícil.",
+   "scene_function": "Responder el ¿y a mí qué? con un objeto personal.",
+   "causal_bridge_from_previous": "Del oro en la balanza pasamos al oro que el espectador lleva puesto.",
+   "question_state": "El oro de todos los días tuvo que separarse; falta ver por qué cuesta.",
+   "reason_to_continue": "El espectador ya tiene un objeto propio en juego.",
+   "new_information": "El material está diseñado para recuperar oro de forma selectiva.",
+   "asset_filename": "frames/scene_002.png"
+  },
+  {
+   "id": "scene_003",
+   "arc": "desarrollo",
+   "duration_seconds": 11,
+   "narration": "Disuelto en agua, el oro se vuelve invisible: son iones, átomos con carga, flotando entre muchas otras cosas. Atraparlos es como pescar con las manos.",
+   "on_screen_text": "ORO INVISIBLE",
+   "visual_description": "Vaso de agua transparente visto de cerca; dentro flotan diminutas chispas doradas entre partículas de otros colores; la científica intenta atraparlas con las manos.",
+   "image_prompt": "warm hand-painted editorial illustration, storybook gouache style, soft golden light, deep teal and gold palette, single large central motif, friendly curious scientist character with round glasses and lab coat (recurring narrator character), not photorealistic, vertical 9:16, no text, no letters, no numbers, no logos; Vaso de agua transparente visto de cerca; dentro flotan diminutas chispas doradas entre partículas de otros colores; la científica intenta atraparlas con las manos.",
+   "ambiente": "olas",
+   "sfx": [
+    "olas"
+   ],
+   "source_ids": [
+    "SRC-001"
+   ],
+   "style_id": "ilustracion_editorial_calida",
+   "dramatic_beat": "El enemigo es invisible y escurridizo.",
+   "scene_function": "Plantear el problema concreto.",
+   "causal_bridge_from_previous": "Para separar el oro primero hay que entender dónde se esconde.",
+   "question_state": "El oro disuelto existe, pero ¿cómo se atrapa?",
+   "reason_to_continue": "Plantea un reto que pide una herramienta.",
+   "new_information": "El material captura iones de oro disueltos.",
+   "asset_filename": "frames/scene_003.png"
+  },
+  {
+   "id": "scene_004",
+   "arc": "desarrollo",
+   "duration_seconds": 12,
+   "narration": "¿Qué pasa dentro de estas esponjas? Son como panales con ganchos para el oro. El problema: muchos ganchos quedan escondidos en el fondo de los poros, y el oro no llega.",
+   "on_screen_text": "¿QUÉ PASA DENTRO?",
+   "visual_description": "Zoom a una esponja molecular en forma de panal hexagonal; ganchos dorados escondidos en el fondo de túneles estrechos y tapados; chispas de oro atoradas a la entrada.",
+   "image_prompt": "warm hand-painted editorial illustration, storybook gouache style, soft golden light, deep teal and gold palette, single large central motif, friendly curious scientist character with round glasses and lab coat (recurring narrator character), not photorealistic, vertical 9:16, no text, no letters, no numbers, no logos; Zoom a una esponja molecular en forma de panal hexagonal; ganchos dorados escondidos en el fondo de túneles estrechos y tapados; chispas de oro atoradas a la entrada.",
+   "ambiente": "viento",
+   "sfx": [],
+   "source_ids": [
+    "SRC-001"
+   ],
+   "style_id": "ilustracion_editorial_calida",
+   "dramatic_beat": "La herramienta existe, pero falla por dentro.",
+   "scene_function": "Mostrar qué pasa dentro de la versión vieja.",
+   "causal_bridge_from_previous": "La pregunta de cómo atrapar el oro lleva a las esponjas moleculares.",
+   "question_state": "Hay esponjas, pero sus ganchos están escondidos.",
+   "reason_to_continue": "Falta el truco que destape los ganchos.",
+   "new_information": "Los sitios de captura confinados en poros internos limitan el paso y la capacidad.",
+   "asset_filename": "frames/scene_004.png"
+  },
+  {
+   "id": "scene_005",
+   "arc": "desarrollo",
+   "duration_seconds": 12,
+   "narration": "El truco del equipo de Nanjing y Shanghái: grupos que apuntan hacia afuera. Entre las cadenas se forman puentes de hidrógeno que las dejan planas y ordenadas, y los ganchos quedan al descubierto.",
+   "on_screen_text": "GANCHOS AL DESCUBIERTO",
+   "visual_description": "Acercamiento a la boca del panal molecular: celdas hexagonales abiertas, con el oro brillando ya en la superficie, al alcance (encuadre derivado del frame 4).",
+   "image_prompt": "warm hand-painted editorial illustration, storybook gouache style, soft golden light, deep teal and gold palette, single large central motif, friendly curious scientist character with round glasses and lab coat (recurring narrator character), not photorealistic, vertical 9:16, no text, no letters, no numbers, no logos; Acercamiento a la boca del panal molecular: celdas hexagonales abiertas, con el oro brillando ya en la superficie, al alcance (encuadre derivado del frame 4).",
+   "ambiente": "viento",
+   "sfx": [
+    "madera"
+   ],
+   "source_ids": [
+    "SRC-001"
+   ],
+   "style_id": "ilustracion_editorial_calida",
+   "dramatic_beat": "Antítesis: de escondido y torcido a plano y abierto.",
+   "scene_function": "Revelar el truco del diseño.",
+   "causal_bridge_from_previous": "Si el problema eran ganchos escondidos, la solución es sacarlos.",
+   "question_state": "Los ganchos ya están expuestos; ¿qué hacen con el oro?",
+   "reason_to_continue": "Falta ver el momento en que el oro cambia.",
+   "new_information": "Grupos hidroxilo hacia afuera y puentes de hidrógeno entre cadenas generan una estructura plana y ordenada.",
+   "asset_filename": "frames/scene_005.png"
+  },
+  {
+   "id": "scene_006",
+   "arc": "desarrollo",
+   "duration_seconds": 12,
+   "narration": "Y no solo lo atrapa: lo transforma. Con calor suave y vibración, el oro disuelto se vuelve metal, en nanopartículas que se juntan. Así llegó a más de cinco mil miligramos por gramo.",
+   "on_screen_text": "DE INVISIBLE A METAL",
+   "visual_description": "Acercamiento al platillo de la balanza lleno de granitos de oro metálico que se juntan (encuadre derivado del frame 1).",
+   "image_prompt": "warm hand-painted editorial illustration, storybook gouache style, soft golden light, deep teal and gold palette, single large central motif, friendly curious scientist character with round glasses and lab coat (recurring narrator character), not photorealistic, vertical 9:16, no text, no letters, no numbers, no logos; Acercamiento al platillo de la balanza lleno de granitos de oro metálico que se juntan (encuadre derivado del frame 1).",
+   "ambiente": "viento",
+   "sfx": [
+    "campanas"
+   ],
+   "source_ids": [
+    "SRC-001"
+   ],
+   "style_id": "ilustracion_editorial_calida",
+   "dramatic_beat": "Clímax: el oro invisible se vuelve sólido.",
+   "scene_function": "Pagar la promesa del balazo con el mecanismo.",
+   "causal_bridge_from_previous": "Con los ganchos al descubierto, el oro llega y se transforma.",
+   "question_state": "Ya sabemos cómo; falta saber qué tan lejos está de usarse.",
+   "reason_to_continue": "El espectador quiere saber si esto llegará a su vida.",
+   "new_information": "Bajo calor suave y vibración se forman nanopartículas de oro in situ que se agregan; capacidad 5082,32 mg/g.",
+   "asset_filename": "frames/scene_006.png"
+  },
+  {
+   "id": "scene_007",
+   "arc": "desarrollo",
+   "duration_seconds": 11,
+   "narration": "Ojo: es un resultado de laboratorio, en condiciones controladas. Todavía no es una planta de reciclaje ni un truco para sacar oro en tu casa.",
+   "on_screen_text": "SOLO EN LABORATORIO",
+   "visual_description": "Acercamiento a la científica, mirada prudente junto al vaso del experimento (encuadre derivado del frame 3).",
+   "image_prompt": "warm hand-painted editorial illustration, storybook gouache style, soft golden light, deep teal and gold palette, single large central motif, friendly curious scientist character with round glasses and lab coat (recurring narrator character), not photorealistic, vertical 9:16, no text, no letters, no numbers, no logos; Acercamiento a la científica, mirada prudente junto al vaso del experimento (encuadre derivado del frame 3).",
+   "ambiente": "viento",
+   "sfx": [],
+   "source_ids": [
+    "SRC-001"
+   ],
+   "style_id": "ilustracion_editorial_calida",
+   "dramatic_beat": "Freno honesto: aún no sale del laboratorio.",
+   "scene_function": "Límite / matiz.",
+   "causal_bridge_from_previous": "Tras el clímax, toca medir el alcance real.",
+   "question_state": "El hallazgo es real pero limitado al laboratorio.",
+   "reason_to_continue": "El cierre resignifica el hallazgo.",
+   "new_information": "Resultado de laboratorio; el artículo propone un enfoque escalable, pero no reporta uso industrial.",
+   "asset_filename": "frames/scene_007.png"
+  },
+  {
+   "id": "scene_008",
+   "arc": "reflexion_o_pregunta",
+   "duration_seconds": 11,
+   "narration": "La sorpresa no es encontrar oro, es diseñar una esponja que lo atrape solo a él. ¿Qué otra cosa valiosa se nos escapa sin que la veamos? Esto fue Datos y ociosidades.",
+   "on_screen_text": "UNA ESPONJA PARA EL ORO",
+   "visual_description": "Eco circular: vuelve la balanza del inicio con la científica (frame 1 completo, tono más cálido).",
+   "image_prompt": "warm hand-painted editorial illustration, storybook gouache style, soft golden light, deep teal and gold palette, single large central motif, friendly curious scientist character with round glasses and lab coat (recurring narrator character), not photorealistic, vertical 9:16, no text, no letters, no numbers, no logos; Eco circular: vuelve la balanza del inicio con la científica (frame 1 completo, tono más cálido).",
+   "ambiente": "viento",
+   "sfx": [
+    "campanas"
+   ],
+   "source_ids": [
+    "SRC-001"
+   ],
+   "style_id": "ilustracion_editorial_calida",
+   "dramatic_beat": "Giro: lo valioso es la selectividad, no el oro.",
+   "scene_function": "Giro + pregunta + sello.",
+   "causal_bridge_from_previous": "Con el límite claro, la apertura se resignifica.",
+   "question_state": "Queda abierta la pregunta por lo valioso que no vemos.",
+   "reason_to_continue": "Cierre con eco del balazo y pregunta abierta.",
+   "new_information": "El material se diseñó para captura selectiva de oro.",
+   "asset_filename": "frames/scene_008.png"
+  }
+ ],
+ "cortinilla_fuentes": {
+  "duration_seconds": 6,
+  "titulo": "Fuentes",
+  "aviso": "Fuente científica primaria; sin cifras no verificadas.",
+  "firma": "Datos y ociosidades",
+  "source_ids": [
+   "SRC-001"
+  ]
+ },
+ "audio": {
+  "music_asset": null,
+  "music_plan": "Cama instrumental discreta.",
+  "music_license": null,
+  "mix_notes": "Voz al frente; ambiente bajo."
+ },
+ "export": {
+  "resolution": "1080x1920",
+  "fps": 30,
+  "render_status": "NOT_GENERATED"
+ },
+ "approved_assets": [],
+ "production_mode": "storyboard_only",
+ "estado": "MONTADO_GROK_BOT_4NOV",
+ "validation_notes": [
+  "Ancla celulares/e-waste NO usada: no se verificó fuente oficial a tiempo; se usa anillo/aretes sin cifras.",
+  "5 veces su peso = aritmética de 5082,32 mg/g del abstract."
+ ],
+ "risk_notes": [
+  "No prometer extracción casera de oro.",
+  "No dar fechas de uso industrial ni costos.",
+  "No cifras de oro en celulares."
+ ],
+ "hashtags": [
+  "#curiosidades",
+  "#ciencia",
+  "#datosinteresantes",
+  "#sabiasque",
+  "#shorts",
+  "#oro"
+ ],
+ "keywords": [],
+ "parece_real": false,
+ "publicacion": {
+  "status": "PENDIENTE",
+  "platforms": [
+   "YouTube Shorts",
+   "TikTok",
+   "Facebook Reels"
+  ]
+ },
+ "narrative_qa": {
+  "status": "PENDIENTE",
+  "review_basis": "lectura_en_frio_solo_narracion",
+  "reviewer_role": "pendiente_auditor_capcot_independiente",
+  "nota": "Sin auditor independiente disponible antes del slot; autoauditoría Grok Bot: balazo in medias res, ¿y a mí qué? en esc. 2, límite en esc. 7, giro+pregunta+sello en esc. 8."
+ },
+ "frames_nota": "Frames 1-4 generados con Canva generate-image (cuota agotada tras 4); 5-8 son reencuadres/zoom de 1-4."
+}
