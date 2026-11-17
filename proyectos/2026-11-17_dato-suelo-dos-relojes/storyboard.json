@@ -392,10 +392,10 @@
   "production_mode": "storyboard_only",
   "validation_notes": {
     "0": "Conteo de narración: 214 palabras; 8 escenas; 78 s de escenas + 6 s de cortinilla = 84 s.",
-    "1": "DOI 10.1038/s41467-026-79474-w visible en el PDF editorial, pero Crossref y el resolvedor no fueron accesibles; no declararlo validado.",
+    "1": "DOI 10.1038/s41467-026-79474-w aparece como VERIFICADO_CROSSREF y VERIFICADO_FUENTE_PRIMARIA_Y_CROSSREF en sources[0], según commit a8623cff del 17-nov-2026 15:09 CDMX. Esta nota sustituye el estado pendiente anterior; Crossref no se volvió a consultar en esta auditoría.",
     "2": "Mapa: coordenadas tomadas de la figura 1 del artículo; pines representan sitios de estudio, no subparcelas.",
     "3": "El control de ~9 minutos se realizó con arena de sílice estéril y no representa un resultado de suelo vivo.",
-    "4": "No contiene narrative_qa; la lectura en frío corresponde al auditor independiente.",
+    "4": "narrative_qa presente: PASS/89, siete checks true y critical_flags=[]. Lectura en frío independiente confirmada en auditoría del 17-nov-2026 15:35 CDMX.",
     "2026-11-17_static_contract_review": {
       "result": "PASS_STATIC",
       "basis": "Revisión estática campo por campo contra scripts/validar_storyboard.py en la rama activa; no se ejecutó el script Python.",
@@ -428,6 +428,46 @@
         "hook_words": 5
       },
       "doi": "10.1038/s41467-026-79474-w"
+    },
+    "2026-11-17_auditor_review": {
+      "result": "BLOCKED_CONTRACT_CONFLICT",
+      "basis": "Lectura en frío solo de narración y revisión estática de campos contra Receta, plantilla vertical, catálogo y mapa de voces vigente; no se ejecutó Python.",
+      "narrative_qa": {
+        "status": "PASS",
+        "score": 89,
+        "review_basis": "lectura_en_frio_solo_narracion",
+        "checks": {
+          "pregunta_central_reconstruible": true,
+          "apertura_in_medias_res": true,
+          "progresion_por_escena": true,
+          "transiciones_causales": true,
+          "giro_cientifico_explicado": true,
+          "limite_evidencia_explicito": true,
+          "payoff_cierre_apertura": true
+        },
+        "critical_flags": []
+      },
+      "checks": {
+        "narrative_contract": true,
+        "narrative_qa": true,
+        "scene_count_and_arcs": true,
+        "word_count_170_235": true,
+        "total_duration_75_90": true,
+        "hook_max_6": true,
+        "spoken_closing": true,
+        "source_ids_and_doi_recorded": true,
+        "style_catalog_and_prompt_base": true,
+        "map_and_data_graph_layers": true,
+        "ambience_and_sfx_present": true,
+        "approved_assets_empty": true,
+        "export_not_generated": true,
+        "no_asset_paths": true,
+        "voice_by_topic": false
+      },
+      "voice_conflict": "El tema es biología/ecología del suelo. docs/VOCES_POR_TEMA.md asigna narradora_es a biología; este storyboard usa es-MX-JorgeNeural. La Receta y scripts/validar_storyboard.py aún exigen JorgeNeural global. No se cambió la voz ni se resolvió unilateralmente la contradicción.",
+      "dispatchability": "NOT_DISPATCHABLE — el archivo permanece en proyectos/ y no existe entrada cola/entrada/<project_id>.json.",
+      "reception": "RECEPCION_GROK_NO_CONFIRMADA — no existe cola/estado/2026-11-17_dato-suelo-dos-relojes.json ni inbox.",
+      "runtime": "No había runtime local del repositorio; validación estática solamente."
     }
   },
   "linea_tematica_provisional": "Actualidad; Naturaleza y ecología del suelo; Dato científico.",
@@ -465,6 +505,7 @@
       "giro_cientifico_explicado": "Distingue respiración de fabricación de biomasa y explica que el agua puede liberar gas atrapado; separa el control abiótico de suelo vivo.",
       "limite_evidencia_explicito": "La narración identifica dos casos paralelos y una parcela por condición y sitio, y declara que no permiten generalizar.",
       "payoff_cierre_apertura": "La pregunta final vuelve al primer CO₂ y contrapone actividad que retorna con gas previamente atrapado."
-    }
+    },
+    "reviewed_at": "2026-11-17T15:35:22-06:00"
   }
 }
