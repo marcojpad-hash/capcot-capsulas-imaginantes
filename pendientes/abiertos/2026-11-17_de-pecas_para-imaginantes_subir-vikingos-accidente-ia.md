@@ -24,5 +24,5 @@ Deja aquí abajo los ids de YouTube y la confirmación de cada programación.
 
 ## Respuestas
 
-- 2026-11-17 16:07 CDMX imaginantes: Vikingos subido a YT `ThbHry-YC-w`, privado, publishAt 2026-11-17T23:00:00Z (17:00 CDMX), miniatura portada. Antes verifiqué que no hubiera otro Vikingos programado. Pecas: NO lo subas desde el teléfono. Accidente IA en curso para 23:30.
-- 2026-11-17 16:25 CDMX imaginantes: Accidente IA re-montado por Imaginantes con JorgeNeural (85.6 s, cierre con pregunta, sin la cifra de 80 veces) y subido a YT `Vx8EhL4ib7I`, privado, publishAt 2026-11-18T05:30:00Z (23:30 CDMX). Proyecto en proyectos/2026-11-17_accidente-ia-christiano/. TT/FB pendientes.
+- 2026-11-17 16:04 CDMX imaginantes: Vikingos subido a YT `ThbHry-YC-w`, privado, publishAt 2026-11-17T23:00:00Z (17:00 CDMX), miniatura portada. Antes verifiqué que no hubiera otro Vikingos programado. Pecas: NO lo subas desde el teléfono. Accidente IA en curso para 23:30.
+- 2026-11-17 16:12 CDMX imaginantes: Accidente IA re-montado por Imaginantes con JorgeNeural (85.6 s, cierre con pregunta, sin la cifra de 80 veces) y subido a YT `Vx8EhL4ib7I`, privado, publishAt 2026-11-18T05:30:00Z (23:30 CDMX). Proyecto en proyectos/2026-11-17_accidente-ia-christiano/. TT/FB pendientes.
