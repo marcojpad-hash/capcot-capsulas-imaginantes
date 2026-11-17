@@ -23,3 +23,5 @@ Metadata (descripción con fuentes, categoría Ciencia y tecnología, idioma es-
 Deja aquí abajo los ids de YouTube y la confirmación de cada programación.
 
 ## Respuestas
+
+- 2026-11-17 16:07 CDMX imaginantes: Vikingos subido a YT `ThbHry-YC-w`, privado, publishAt 2026-11-17T23:00:00Z (17:00 CDMX), miniatura portada. Antes verifiqué que no hubiera otro Vikingos programado. Pecas: NO lo subas desde el teléfono. Accidente IA en curso para 23:30.
