@@ -298,3 +298,27 @@ La carpeta `handoffs/grok_done/` no aparece en `main`; el marcador `grok_inbox` 
 ### Corrección de alcance de auditoría
 
 A partir de esta comparación, el estado de cualquier paquete se reconcilia entre `main`, la rama de trabajo, `proyectos/`, `cola/entrada/`, `salidas/`, el bus de Issues, marcadores de handoff, commits y sidecars. Un marcador antiguo o una rama parcial no sustituye esa reconciliación. Los IDs ASTRA y ratas topo quedan excluidos de cualquier redispatch o reprocesamiento duplicado.
+
+
+## Contraste del lote histórico 5–7 nov contra `main` — 18-nov-2026
+
+Se compararon los 12 IDs de `data/horario_semana_2026-11-01_07.json` con el árbol recursivo completo de `main`, además de `data/publicaciones.json`, `data/rotacion.json` y las salidas disponibles.
+
+### Coincidencias exactas y registros de publicación
+
+- `2026-11-07_comida-hielo-caliente`: sí existe en `cola/entrada/` y `salidas/`. `ESTADO_EJECUCION.md` registra montaje oficial, 9 frames, QA aprobado y programación YT para el 11-nov 13:30 CDMX. `data/publicaciones.json` registra TikTok y Facebook publicados, pero también anota que el Short de YouTube `HSgrnejAcaI` ya no aparecía en el canal al consultar el 12-nov 07:20 CDMX. `RELEVO_V2_APROBADO.md` prohíbe otro montaje y documenta una segunda versión de Pecas aprobada; la versión oficial de Imaginantes es la programada. No regenerar ni volver a montar.
+- `2026-11-07_inter-nubes-pesan`: no aparece una carpeta exacta en el árbol de `main`, pero sí hay registro explícito en `data/publicaciones.json`: YouTube `4Qpl17Ts_vI`, TikTok y Facebook registrados como publicados el 12-nov 07:00 CDMX. Es evidencia de publicación en el ledger, no una carpeta de salida versionada en esa rama.
+- `2026-11-05_inter-arboles-se-comunican`: no aparece con ese ID exacto en `main`. Sí existe `2026-11-07_arboles-comunicacion-bosque`, con salida, QA, metadata y publicación en YT/TT/FB; título y fuentes confirman el tema de comunicación/micorrizas. El ID y la fecha de proyecto son distintos. Se registra como **coincidencia temática / posible relevo**, no como equivalencia automática del ID programado.
+
+### Los otros nueve IDs del horario
+
+Los IDs exactos de Venus, palomitas, rayo globular, ballena azul, aguacate, ranas, arena cantante, huesos de bebé y sueños del pulpo no aparecen como rutas en el árbol recursivo de `main`. Algunos sí existen como proyectos o copias bloqueadas en la rama de trabajo, según el inventario de esa rama. La ausencia de esos nombres en `main` no invalida ni borra el trabajo que está en la otra rama, y no prueba ausencia de entrega externa.
+
+### Regla de reconciliación aplicada
+
+- Un registro en `data/publicaciones.json` puede acreditar un ID y un estado de plataforma aunque no haya carpeta `salidas/<id>/` en la misma rama.
+- Una carpeta de salida con otro ID y tema parecido no se fusiona con el ID del horario sin una relación explícita.
+- Una nota de desaparición de YouTube no se transforma en “nunca publicado”: se conserva el historial de publicación y el estado posterior documentado.
+- Los casos con relevo aprobado o duplicado autorizado quedan cerrados a nuevos montajes, salvo orden expresa.
+
+No se alteraron horarios, publicaciones, storyboards, estados ni archivos de `main`.
