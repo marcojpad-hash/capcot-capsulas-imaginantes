@@ -228,3 +228,30 @@ Conteos recalculados: 8 escenas; 222 palabras; 78 segundos de escenas; cortinill
 **Cola y recepción:** Kuroshio continúa en `proyectos/`; no aparece una copia del proyecto en `cola/entrada/`, ni una carpeta `cola/estado/` en esta rama, ni una salida con ese ID. Esto describe exclusivamente los registros del repositorio consultado. No se infiere de ello que no haya existido una entrega manual o por otro canal. No se creó handoff ni se envió payload.
 
 **Decisión operativa:** estructuralmente apto según la comprobación equivalente; QA narrativo PASS; promoción a cola todavía pendiente de ejecutar el validador real y de resolver Crossref. No se modificó el storyboard ni se duplicó el proyecto.
+
+
+## Reconciliación de tres paquetes históricos en cola — 18-nov-2026
+
+Se recorrieron los árboles reales de `cola/entrada/`, `cola/bloqueados/`, `proyectos/` y `handoffs/grok_inbox/` para los IDs del 7, 9 y 11 de noviembre. Se distingue contenido versionado, estado declarado y recepción externa.
+
+### 7-nov — `2026-11-07_dato-clavo-te-cocina`
+
+En `cola/entrada/<id>/` están `storyboard.json`, `fuentes.md` y `ESTADO_EJECUCION.md`. Este último registra `PREPARADO_PENDIENTE_REVISION_GROK`, medios no generados y recepción/montaje/publicación pendientes de confirmación externa. No hay PNG ni otros medios en ese directorio. Es el estado escrito en el paquete; no se extrapola a canales externos.
+
+### 9-nov — `2026-11-09_dato-robot-ensambla-orbita`
+
+La carpeta de cola contiene `storyboard.json`, `fuentes.md`, `PARA_GROK.md` y `frames/.gitkeep`; no contiene PNG de frames. `ESTADO_EJECUCION.md` registra frames pendientes. Existe además el marcador `handoffs/grok_inbox/2026-11-09_dato-robot-ensambla-orbita.json`, con `status=pending`, `receipt_id=repo-2026-11-09_dato-robot-ensambla-orbita-7ea62b5e0081` y referencia a un commit de `main`. Ese marcador no es un acuse confirmado ni demuestra que no haya existido otra entrega. También existe una copia del storyboard en `proyectos/`.
+
+### 11-nov — `2026-11-11_dato-ratas-topo-damaraland`
+
+La carpeta de cola conserva **ocho PNG reales** (`frame_01.png` a `frame_08.png`), con tamaños individuales aproximados entre 1.58 y 2.38 MB. Los commits del directorio `frames/` son:
+- `1c46be2607ad61394127b47298370fa770ada3ff` — creación de la carpeta, 12-nov-2026 04:34:34Z.
+- `a033a6b3325ecc9c2c2e0dfb638bece23fa0bd40` — “Add 8 Damaraland frames (frame_01.png-frame_08.png)”, 12-nov-2026 04:35:15Z.
+
+El storyboard conservado en `cola/bloqueados/<id>/storyboard.json` referencia los ocho nombres de archivo y declara `export.filename=capsula.mp4`. La carpeta bloqueada contiene `storyboard.json` y `fuentes.md`; la carpeta de entrada conserva los frames. No hay una carpeta `salidas/<id>/` en la rama consultada. Por tanto, **sí existe evidencia material de generación/incorporación de frames**, pero estos archivos por sí solos no prueban render, QA oficial ni publicación. No se mueven ni eliminan.
+
+### Límite común
+
+En esta rama no existe el directorio `cola/estado/`. No se encontraron estados machine-readable para estos tres IDs en esa ruta. Esto deja la recepción formal sin confirmación en el registro de esa rama; no permite concluir que no hubo entrega manual, lectura por Grok o trabajo externo. Tampoco se usa un fallo de Actions como sustituto de esa evidencia.
+
+**Corrección de auditoría:** el paquete de ratas topo no debe describirse como “medios no generados” ni como “sin trabajo audiovisual”: hay ocho PNG versionados desde el 12-nov. El estado de render/QA/publicación queda separado y no confirmado por esos PNG.
