@@ -1,0 +1,146 @@
+{
+  "project_id": "2026-11-18_hielo-sucio-beta-pictoris",
+  "serie": "Datos y ociosidades",
+  "title": "Hielo sucio alrededor de Beta Pictoris",
+  "titulo": "¿Hielo más viejo que la estrella?",
+  "language": "es-MX",
+  "aspect_ratio": "9:16",
+  "target_duration_seconds": 85,
+  "estructura": "pregunta",
+  "estilo_id": "van_gogh",
+  "estilo_visual": "Noche estrellada (Van Gogh)",
+  "trend_source": {
+    "tipo": "noticia_cientifica",
+    "medio": "Science / Phys.org",
+    "url": "https://phys.org/news/2026-11-dirty-ice-young-star-beta.html",
+    "estudio_doi": "10.1126/science.adw7770",
+    "fecha_publicacion": "2026-11-12",
+    "termino": "hielo sucio Beta Pictoris",
+    "fecha_consulta": "2026-11-18"
+  },
+  "voice": {
+    "engine": "edge-tts",
+    "voice_id": "es-MX-JorgeNeural",
+    "rate": "+7%",
+    "pitch": "-2Hz",
+    "pad_seconds": 0.3,
+    "modo_pausas": "continuo"
+  },
+  "sources": [
+    {
+      "id": "SRC-001",
+      "cita_corta": "Betti et al. (2026). Science 394, 742–745.",
+      "doi": "10.1126/science.adw7770",
+      "url": "https://doi.org/10.1126/science.adw7770",
+      "accessed": "2026-11-18",
+      "supports": ["Hielo de agua amorfo (<7% cristalino) y CO2 mezclado 1:10 en el disco de Beta Pictoris", "Formación en medio interestelar frío y colisiones frecuentes"]
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_001",
+      "arc": "hook_medias_res",
+      "duration_seconds": 9.0,
+      "narration": "¿Un hielo más viejo que la estrella que lo rodea? Suena imposible, pero el James Webb lo vio alrededor de Beta Pictoris.",
+      "on_screen_text": "¿Hielo más viejo?",
+      "visual_description": "swirling starry night sky with a bright young star and a dusty disk of icy particles in Van Gogh style",
+      "image_prompt": "post-impressionist painting in the style of Van Gogh's Starry Night, swirling brushstrokes, deep blues and glowing yellows, vertical 9:16, no text + swirling starry night sky with a bright young star and a dusty disk of icy particles",
+      "source_ids": ["SRC-001"],
+      "asset_filename": "frames/scene_001.jpg",
+      "sfx": ["viento"],
+      "ambiente": "viento"
+    },
+    {
+      "id": "scene_002",
+      "arc": "desarrollo",
+      "duration_seconds": 10.0,
+      "narration": "Beta Pictoris es una estrella joven a 63 años luz. Tiene un disco de escombros donde se forman planetas.",
+      "on_screen_text": "Beta Pictoris",
+      "visual_description": "Van Gogh style painting of a young star with a wide debris disk full of dust and ice chunks",
+      "image_prompt": "post-impressionist painting in the style of Van Gogh's Starry Night, swirling brushstrokes, deep blues and glowing yellows, vertical 9:16, no text + young star with a wide debris disk full of dust and ice chunks",
+      "source_ids": ["SRC-001"],
+      "asset_filename": "frames/scene_002.jpg",
+      "sfx": ["reloj"],
+      "ambiente": "viento",
+      "capa": {"tipo": "mapa", "region": [0, 10, -60, -50], "puntos": [{"nombre": "Beta Pictoris", "lon": 5.5, "lat": -51.1}], "titulo": "Beta Pictoris", "fuente": "Betti et al. 2026"}
+    },
+    {
+      "id": "scene_003",
+      "arc": "desarrollo",
+      "duration_seconds": 9.5,
+      "narration": "El telescopio James Webb detectó por primera vez hielo de agua y dióxido de carbono en ese disco.",
+      "on_screen_text": "Hielo detectado",
+      "visual_description": "telescope observing swirling icy disk in starry night style, glowing blue and yellow strokes",
+      "image_prompt": "post-impressionist painting in the style of Van Gogh's Starry Night, swirling brushstrokes, deep blues and glowing yellows, vertical 9:16, no text + telescope observing swirling icy disk",
+      "source_ids": ["SRC-001"],
+      "asset_filename": "frames/scene_003.jpg",
+      "sfx": ["pluma"],
+      "ambiente": "viento"
+    },
+    {
+      "id": "scene_004",
+      "arc": "desarrollo",
+      "duration_seconds": 10.0,
+      "narration": "El hielo de agua es casi todo amorfo, como vidrio, con menos del 7 por ciento cristalino. El CO2 está mezclado, una molécula por cada diez de agua.",
+      "on_screen_text": "Amorfo + CO2",
+      "visual_description": "close-up of swirling glassy ice mixed with sparkling CO2 particles in Van Gogh brushstrokes",
+      "image_prompt": "post-impressionist painting in the style of Van Gogh's Starry Night, swirling brushstrokes, deep blues and glowing yellows, vertical 9:16, no text + close-up of swirling glassy ice mixed with sparkling CO2 particles",
+      "source_ids": ["SRC-001"],
+      "asset_filename": "frames/scene_004.jpg",
+      "sfx": ["campanas"],
+      "ambiente": "viento",
+      "capa": {"tipo": "dato", "valor": "<7%", "etiqueta": "hielo cristalino", "fuente": "Betti et al., Science 2026"}
+    },
+    {
+      "id": "scene_005",
+      "arc": "desarrollo",
+      "duration_seconds": 9.0,
+      "narration": "Eso significa que el hielo se formó en el frío del medio interestelar, antes incluso de que naciera la estrella.",
+      "on_screen_text": "Del espacio profundo",
+      "visual_description": "dark interstellar cloud with swirling ice formation in starry night style, cold blue tones",
+      "image_prompt": "post-impressionist painting in the style of Van Gogh's Starry Night, swirling brushstrokes, deep blues and glowing yellows, vertical 9:16, no text + dark interstellar cloud with swirling ice formation",
+      "source_ids": ["SRC-001"],
+      "asset_filename": "frames/scene_005.jpg",
+      "sfx": ["viento"],
+      "ambiente": "viento"
+    },
+    {
+      "id": "scene_006",
+      "arc": "cierre_historia",
+      "duration_seconds": 10.0,
+      "narration": "Para que esté tan uniforme, los cuerpos de hielo chocan constantemente en el disco. El hielo sucio sobrevive y se reparte.",
+      "on_screen_text": "Colisiones constantes",
+      "visual_description": "icy comets and dust colliding in a swirling debris disk, Van Gogh style",
+      "image_prompt": "post-impressionist painting in the style of Van Gogh's Starry Night, swirling brushstrokes, deep blues and glowing yellows, vertical 9:16, no text + icy comets and dust colliding in a swirling debris disk",
+      "source_ids": ["SRC-001"],
+      "asset_filename": "frames/scene_006.jpg",
+      "sfx": ["motor"],
+      "ambiente": "viento"
+    },
+    {
+      "id": "scene_007",
+      "arc": "reflexion_o_pregunta",
+      "duration_seconds": 12.0,
+      "narration": "El mismo hielo que hay en nuestros cometas. ¿Cuántos sistemas heredan su agua del espacio profundo? Esto fue Datos y ociosidades.",
+      "on_screen_text": "¿Agua heredada?",
+      "visual_description": "Van Gogh starry night with a small icy comet and a young planetary system, reflective swirling skies",
+      "image_prompt": "post-impressionist painting in the style of Van Gogh's Starry Night, swirling brushstrokes, deep blues and glowing yellows, vertical 9:16, no text + starry night with a small icy comet and a young planetary system",
+      "source_ids": ["SRC-001"],
+      "asset_filename": "frames/scene_007.jpg",
+      "sfx": ["olas"],
+      "ambiente": "oceano"
+    }
+  ],
+  "cortinilla_fuentes": {
+    "duration_seconds": 6,
+    "titulo": "Fuentes",
+    "aviso": "Imágenes generadas con IA. Voz sintética. Audio sintetizado.",
+    "firma": "Datos y ociosidades · @datosyociosidades"
+  },
+  "export": {
+    "filename": "capsula.mp4",
+    "resolution": "1080x1920",
+    "fps": 30,
+    "loudness_lufs": -14
+  }
+}
