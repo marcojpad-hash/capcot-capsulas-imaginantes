@@ -29,3 +29,6 @@
 ## Horizonte (no es de hoy)
 - 07:00 de 17–21 nov vacíos. El ornitorrinco tiene `fecha_objetivo` 2026-11-17 y podría cubrir un 07:00 si se programa (no lo haga Imaginantes en esta rutina).
 - 20-nov 19:00 sigue vacío.
+
+## Actualización 2026-11-18 ~02:50 CDMX (Imaginantes, madrugada)
+Día 18-nov: 07:00 hipo, 13:30 mosquito y 19:00 algas ya programados YT (TT/FB según publicaciones.json). Huecos sin project_id: **17:00 (intermedio_1)** y **23:30 (dato del día, hecho reciente)**. Prioridad: dato 23:30 > 17:00. Candidato 17:00 montable: vikingos-cuernos (Pecas). No inventar hechos.

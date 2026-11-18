@@ -32,3 +32,6 @@ Kids 07:00 y comida 13:30 de hoy ya están cubiertos.
 - 07:00 de **17–21 nov**: sin nada programado en `data/publicaciones.json`.
 - 20-nov 19:00: sigue vacío (el planificador de FB del 14-nov tampoco lo tiene).
 - Respaldo montado **sin programar**: `2026-11-14_lote_ornitorrinco` («El ornitorrinco brilla con luz UV»), `fecha_objetivo` 2026-11-17, MP4 en `/workspace/capcot_prod_20261114/ornitorrinco/capsula_final.mp4`. El 15-nov se anotó como respaldo de los 07:00; no está asignado al 16-nov 17:00.
+
+## Actualización 2026-11-18 ~02:50 CDMX (Imaginantes, madrugada)
+Día 18-nov: 07:00 hipo, 13:30 mosquito y 19:00 algas ya programados YT (TT/FB según publicaciones.json). Huecos sin project_id: **17:00 (intermedio_1)** y **23:30 (dato del día, hecho reciente)**. Prioridad: dato 23:30 > 17:00. Candidato 17:00 montable: vikingos-cuernos (Pecas). No inventar hechos.
