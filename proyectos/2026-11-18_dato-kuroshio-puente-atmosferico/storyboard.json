@@ -134,45 +134,44 @@
       "scene_function": "Ubicar las dos regiones y fijar las condiciones del experimento.",
       "causal_bridge_from_previous": "La pregunta de la influencia remota exige saber qué regiones compararon y bajo qué simulación.",
       "question_state": "Ya conocemos las cajas de análisis y el control idealizado; falta el mecanismo atmosférico.",
-      "reason_to_continue": "La investigación usa un control preindustrial idealizado de cien años y diez miembros por experimento.",
-      "new_information": {
-        "capa": {
-          "tipo": "mapa",
-          "region": [
-            35,
-            -80,
-            45,
-            170
-          ],
-          "puntos": [],
-          "areas": [
-            {
-              "id": "kuroshio",
-              "label": "Kuroshio Extension",
-              "bounds": [
-                35,
-                140,
-                45,
-                170
-              ],
-              "bounds_label": "35–45°N; 140–170°E"
-            },
-            {
-              "id": "gulf_stream",
-              "label": "Gulf Stream",
-              "bounds": [
-                35,
-                -80,
-                45,
-                -50
-              ],
-              "bounds_label": "35–45°N; 50–80°W"
-            }
-          ],
-          "titulo": "Dos regiones de análisis",
-          "fuente": "SRC-001, figura 1a–b; cajas de análisis publicadas por los autores.",
-          "precision_note": "Los rectángulos representan regiones de promedio/análisis, no estaciones puntuales ni trayectorias. No añadir pines, rutas de agua ni precisión mayor que los límites publicados."
-        }
+      "reason_to_continue": "El mecanismo debe explicar la señal remota sin mover agua entre cuencas.",
+      "new_information": "La investigación usa un control preindustrial idealizado de cien años y diez miembros por experimento.",
+      "capa": {
+        "tipo": "mapa",
+        "region": [
+          35,
+          -80,
+          45,
+          170
+        ],
+        "puntos": [],
+        "areas": [
+          {
+            "id": "kuroshio",
+            "label": "Kuroshio Extension",
+            "bounds": [
+              35,
+              140,
+              45,
+              170
+            ],
+            "bounds_label": "35–45°N; 140–170°E"
+          },
+          {
+            "id": "gulf_stream",
+            "label": "Gulf Stream",
+            "bounds": [
+              35,
+              -80,
+              45,
+              -50
+            ],
+            "bounds_label": "35–45°N; 50–80°W"
+          }
+        ],
+        "titulo": "Dos regiones de análisis",
+        "fuente": "SRC-001, figura 1a–b; cajas de análisis publicadas por los autores.",
+        "precision_note": "Los rectángulos representan regiones de promedio/análisis, no estaciones puntuales ni trayectorias. No añadir pines, rutas de agua ni precisión mayor que los límites publicados."
       }
     },
     {
@@ -241,27 +240,26 @@
       "scene_function": "Cuantificar el efecto del Atlántico frente al forzamiento tropical del Pacífico.",
       "causal_bridge_from_previous": "Una vez mostrado el mecanismo, el estudio cuantifica su contribución relativa en la región de Kuroshio.",
       "question_state": "El resultado es 13% frente a 4%; ahora hay que aclarar qué variabilidad representa ese porcentaje.",
-      "reason_to_continue": "La cifra solo se interpreta correctamente si se identifica la variable, la región y las condiciones del modelo.",
-      "new_information": {
-        "capa": {
-          "tipo": "grafico",
-          "chart_type": "bar",
-          "x_axis": "Forzamiento en experimentos del modelo",
-          "unit": "% de varianza interna de TSM del Kuroshio",
-          "series": [
-            {
-              "label": "Atlántico Norte / Corriente del Golfo",
-              "value": 13
-            },
-            {
-              "label": "Pacífico tropical",
-              "value": 4
-            }
-          ],
-          "conditions": "MIROC6; control preindustrial idealizado de 100 años; experimentos NAGA y POGA con 10 miembros cada uno; variabilidad interna de temperatura superficial del mar a escalas mayores que la interanual.",
-          "fuente": "SRC-001, resultados; sección de contribución moduladora del Gulf Stream al Kuroshio.",
-          "interpretacion": "13% y 4% son fracciones de varianza interna modelada de la TSM en la región del Kuroshio; no son porcentajes del calentamiento global ni del calor total del océano."
-        }
+      "reason_to_continue": "La siguiente escena define el denominador para no confundirlo con calentamiento global.",
+      "new_information": "La señal del Atlántico explicó alrededor del 13% de la varianza interna de TSM del Kuroshio; el Pacífico tropical, 4%.",
+      "capa": {
+        "tipo": "grafico",
+        "chart_type": "bar",
+        "x_axis": "Forzamiento en experimentos del modelo",
+        "unit": "% de varianza interna de TSM del Kuroshio",
+        "series": [
+          {
+            "label": "Atlántico Norte / Corriente del Golfo",
+            "value": 13
+          },
+          {
+            "label": "Pacífico tropical",
+            "value": 4
+          }
+        ],
+        "conditions": "MIROC6; control preindustrial idealizado de 100 años; experimentos NAGA y POGA con 10 miembros cada uno; variabilidad interna de temperatura superficial del mar a escalas mayores que la interanual.",
+        "fuente": "SRC-001, resultados; sección de contribución moduladora del Gulf Stream al Kuroshio.",
+        "interpretacion": "13% y 4% son fracciones de varianza interna modelada de la TSM en la región del Kuroshio; no son porcentajes del calentamiento global ni del calor total del océano."
       }
     },
     {
