@@ -122,8 +122,17 @@
           0
         ],
         "puntos": [],
-        "titulo": "Lugar real y función del pin",
-        "fuente": "Fuente cartográfica oficial; aclarar precisión y qué representa el punto."
+        "areas": [
+          {
+            "id": "region_1",
+            "label": "Nombre de la región publicada",
+            "bounds": [],
+            "bounds_label": "Límites geográficos publicados"
+          }
+        ],
+        "titulo": "Punto o regiones de análisis",
+        "fuente": "Fuente cartográfica o figura científica primaria; indicar qué representa cada geometría.",
+        "precision_note": "Declarar la precisión y no inventar pines, centroides ni trayectorias cuando la fuente solo publica regiones."
       },
       "dramatic_beat": "Tensión o cambio dramático concreto de esta escena.",
       "scene_function": "Qué función cumple esta escena en la historia.",
