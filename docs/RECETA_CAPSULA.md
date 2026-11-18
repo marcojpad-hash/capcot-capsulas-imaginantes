@@ -30,7 +30,7 @@ No convertir una hipótesis de los autores en hecho probado.
 Cada fuente incluye \`id\`, \`cita_corta\`, \`url\`, DOI si existe, fecha de publicación/consulta, afirmaciones respaldadas y \`verification_status\`. Priorizar el artículo original; contrastar comunicados oficiales. Cada escena lleva \`source_ids\`. DOI pendiente no se etiqueta como verificado.
 
 ## Capas y continuidad
-Incluir mapa con coordenadas reales, fuente cartográfica y nota de precisión; declarar exactamente qué representa el pin. Incluir dato/gráfico con valor, unidad, fuente y límites de interpretación. Cada escena incluye \`visual_description\`, \`image_prompt\`, \`ambiente\`, \`sfx\` y \`source_ids\`.
+Incluir mapa con coordenadas reales, fuente y nota de precisión. La geometría puede ser un punto con latitud/longitud o una región con `bounds` en orden `[lat_min, lon_min, lat_max, lon_max]`; declarar qué representa cada geometría. No inventar pines, centroides ni trayectorias cuando la fuente solo publica cajas regionales. Incluir dato/gráfico con valor, unidad, fuente y límites de interpretación. Cada escena incluye \`visual_description\`, \`image_prompt\`, \`ambiente\`, \`sfx\` y \`source_ids\`.
 
 Un solo \`style_id\` para toda la cápsula. Cada \`image_prompt\` comienza con el \`prompt_base\` literal de \`scripts/estilos.json\`. Declarar paleta, luz, textura, composición, exclusiones y continuidad. La tipografía se añade en postproducción.
 
