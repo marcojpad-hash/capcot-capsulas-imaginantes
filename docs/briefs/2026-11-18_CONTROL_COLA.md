@@ -213,3 +213,18 @@ Blob actual: `3f2dae68e9e32257b1bff2f485e532c466467113`.
 ### Precisión adicional sobre el procesador
 
 `scripts/procesar_cola.py` usa por defecto la fecha CDMX actual y filtra por el prefijo de fecha de la ruta. Permite una fecha histórica explícita mediante `--fecha`; por tanto, no está limitado técnicamente a hoy cuando se proporciona ese argumento. Tampoco compara la fecha del nombre con un campo interno `fecha_objetivo` del JSON. La regla operativa correcta es: ejecución normal sin override = fecha actual; ejecución con `--fecha` = fecha solicitada explícitamente. No se modificó el procesador.
+
+
+## Addendum de comprobación estática equivalente — 18-nov-2026
+
+Se volvió a leer desde GitHub el storyboard, el validador actualizado y el catálogo de estilos. Se ejecutó una comprobación equivalente de las reglas estructurales del validador sobre el JSON parseado (no se ejecutó el archivo Python del repositorio).
+
+**Resultado de esa comprobación equivalente: PASS, cero errores estructurales.** Se verificaron los campos raíz obligatorios, los seis campos de `narrative_contract`, los siete checks del QA narrativo, score y flags, serie/idioma/formato, resolución 1080×1920, duración, gancho, escenas, voz, estilo y coincidencia literal de `prompt_base`, fuentes y referencias por escena, arco, campos narrativos por escena, mapa con bounds, gráfico con fuente, cortinilla, cierre, ausencia de rutas de assets, `approved_assets=[]`, estado de render y publicación pendiente.
+
+Conteos recalculados: 8 escenas; 222 palabras; 78 segundos de escenas; cortinilla de 6 segundos; total 84 segundos. Los bounds de ambas regiones pasan rangos y orden: Kuroshio [35, 140, 45, 170] y Gulf Stream [35, -80, 45, -50].
+
+**Aviso pendiente:** `SRC-001.verification_status=PENDIENTE`. La página primaria de Nature muestra el DOI `10.1038/s41561-026-02139-2`, autores, título y publicación el 17-nov-2026; el PDF editorial también reproduce el DOI. Sin embargo, la consulta directa a Crossref no fue accesible desde esta sesión. Por tanto, no se marca como Crossref validado ni se declara que `--check-doi` pase. La página editorial primaria confirma los metadatos bibliográficos, pero no sustituye la comprobación que hace el procesador contra Crossref.
+
+**Cola y recepción:** Kuroshio continúa en `proyectos/`; no aparece una copia del proyecto en `cola/entrada/`, ni una carpeta `cola/estado/` en esta rama, ni una salida con ese ID. Esto describe exclusivamente los registros del repositorio consultado. No se infiere de ello que no haya existido una entrega manual o por otro canal. No se creó handoff ni se envió payload.
+
+**Decisión operativa:** estructuralmente apto según la comprobación equivalente; QA narrativo PASS; promoción a cola todavía pendiente de ejecutar el validador real y de resolver Crossref. No se modificó el storyboard ni se duplicó el proyecto.
