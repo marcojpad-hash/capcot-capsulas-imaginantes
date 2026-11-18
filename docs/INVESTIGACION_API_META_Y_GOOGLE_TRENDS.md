@@ -372,3 +372,49 @@ La guía distingue Standard Access para cuentas propias/administradas añadidas 
 **Recomendación operativa para CAPCOT:** no elegir la versión de integración usando exclusivamente la tabla de versiones. Contrastar el encabezado de versión del endpoint concreto, su referencia y el changelog aplicable; antes de implementar, probar en una app de desarrollo con permisos autorizados. Mantener anotada la discrepancia y no cambiar adaptadores ni credenciales por inferencia.
 
 **Sin cambio adicional:** la guía oficial de Instagram Insights no pudo abrirse por HTTP 429 en esta pasada; no se atribuye un cambio nuevo a Instagram Insights. La documentación oficial de Google Trends sigue describiendo acceso alfa limitado, ventana móvil de cinco años, agregaciones diarias/semanales/mensuales/anuales, regiones/subregiones y escala consistente: https://developers.google.com/search/apis/trends. No se detectó un cambio nuevo del contrato alfa.
+
+
+## 9.9 — La tabla oficial de versiones ya incluye Graph API v27.0 (verificado 2026-11-18)
+
+**Corte:** 2026-11-18, 08:30 America/Mexico_City.
+
+### Graph API y Page Insights
+
+La página oficial del changelog de Graph API, ahora servida bajo `/documentation/development/graph-api/changelog`, declara v27.0 como versión más reciente y su tabla incluye:
+
+- v27.0 — introducida el 4-nov-2026.
+- v26.0 — introducida el 29-jul-2026.
+
+Esto **resuelve la discrepancia documental registrada en §9.8**: la tabla que el 15-nov todavía mostraba v26.0 ahora enumera v27.0. La referencia oficial de Page Insights también muestra encabezado y ejemplos de Graph API v27.0. No se infiere que todos los endpoints o permisos tengan idéntica disponibilidad; la versión aplicable debe seguir verificándose en la referencia del endpoint concreto.
+
+La referencia vigente de Page Insights mantiene estos límites relevantes para CAPCOT:
+
+- Page Insights requiere una Page con al menos 100 likes.
+- La mayoría de métricas se actualiza aproximadamente cada 24 horas.
+- La retención disponible es de hasta dos años y una consulta `since/until` no puede abarcar más de 90 días.
+- Las métricas demográficas requieren datos de 100 personas o más.
+- Las interacciones de Reels no están incluidas en Page Insights.
+- El endpoint requiere métricas explícitas; no asumir que una respuesta vacía equivale a cero.
+
+### Instagram Insights
+
+La guía oficial sigue documentando tres rutas: Unified Login, Instagram Login y Facebook Login, con tokens, hosts y permisos distintos. Mantiene los límites de cuenta con menos de 100 seguidores para ciertas métricas, retención de 90 días, una cuenta por solicitud y respuesta vacía —no cero— cuando una métrica no está disponible.
+
+El changelog oficial de Instagram Platform no muestra una entrada de Insights posterior a las ya registradas en este informe. Su entrada más reciente visible es la protección de `media_url` del 30-jul-2026, ya documentada en §8.1: el campo puede omitirse para contenido con audio protegido o Reels cuyo propietario desactivó las descargas, incluso con respuesta HTTP 200. No se añade una métrica nueva ni se cambia el inventario de Insights por esta revisión.
+
+### Google Trends API alfa
+
+La documentación oficial sigue invitando solicitudes para acceso alfa limitado y conserva la ventana móvil de cinco años, agregaciones diaria/semanal/mensual/anual, regiones/subregiones y datos escalados consistentemente. No se encontró un cambio nuevo del contrato alfa.
+
+### Evidencia y límites
+
+- Changelog oficial Graph API: https://developers.facebook.com/documentation/development/graph-api/changelog
+- Tabla oficial de versiones: https://developers.facebook.com/docs/graph-api/changelog/versions/
+- Referencia Page Insights: https://developers.facebook.com/docs/graph-api/reference/insights/
+- Guía oficial Instagram Insights: https://developers.facebook.com/documentation/instagram-platform/insights
+- Changelog oficial Instagram Platform: https://developers.facebook.com/documentation/instagram-platform/changelog
+- Google Trends API alfa: https://developers.google.com/search/apis/trends
+
+La página índice del changelog y las referencias de Page Insights, Instagram Insights y Google Trends fueron legibles en esta revisión. La página específica de cambios v27.0 no pudo abrirse directamente desde esta herramienta; por ello esta nota confirma la versión y la fecha de introducción indicadas por la tabla oficial, pero no atribuye a v27.0 cambios de endpoint que no se hayan leído en su changelog detallado.
+
+**Acción:** actualizar únicamente este registro documental. No se modificaron conectores, versiones configuradas, OAuth, permisos, credenciales ni adaptadores; tampoco se hicieron llamadas autenticadas o de publicación.
