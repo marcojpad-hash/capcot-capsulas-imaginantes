@@ -207,14 +207,32 @@ def validar(path, doi=False):
         kind = str(layer.get("tipo") or layer.get("type") or "").lower()
         if kind == "mapa":
             pts = layer.get("puntos") or layer.get("points") or []
-            if not pts or not (layer.get("fuente") or layer.get("source")):
-                errs.append(f"{sid}: mapa sin puntos o fuente")
+            areas = layer.get("areas") or layer.get("regions") or []
+            valid_areas = 0
+            if not (layer.get("fuente") or layer.get("source")):
+                errs.append(f"{sid}: mapa sin fuente")
             for pt in pts:
                 lat = pt.get("lat", pt.get("latitude"))
                 lon = pt.get("lon", pt.get("longitude"))
                 if lat is None or lon is None or not (-90 <= float(lat) <= 90) or not (-180 <= float(lon) <= 180):
                     errs.append(f"{sid}: coordenadas de mapa ausentes o fuera de rango")
-            if pts:
+            for area in areas:
+                bounds = area.get("bounds") if isinstance(area, dict) else None
+                if not isinstance(bounds, (list, tuple)) or len(bounds) != 4:
+                    errs.append(f"{sid}: región de mapa sin bounds [lat_min, lon_min, lat_max, lon_max]")
+                    continue
+                try:
+                    lat_min, lon_min, lat_max, lon_max = (float(value) for value in bounds)
+                except (TypeError, ValueError):
+                    errs.append(f"{sid}: bounds de región no numéricos")
+                    continue
+                if not (-90 <= lat_min < lat_max <= 90) or not (-180 <= lon_min < lon_max <= 180):
+                    errs.append(f"{sid}: bounds de región ausentes, invertidos o fuera de rango")
+                    continue
+                valid_areas += 1
+            if not pts and not valid_areas:
+                errs.append(f"{sid}: mapa sin puntos ni regiones delimitadas válidas")
+            if pts or valid_areas:
                 map_found = True
         if kind in {"dato", "grafico", "gráfico"}:
             if not (layer.get("fuente") or layer.get("source")):
@@ -231,7 +249,7 @@ def validar(path, doi=False):
                 errs.append(f"{sid}: asset declarado no existe ({af})")
 
     if not map_found:
-        errs.append("falta una capa mapa con coordenadas reales y fuente")
+        errs.append("falta una capa mapa con puntos o regiones delimitadas con coordenadas reales y fuente")
     if not data_found:
         errs.append("falta una capa dato/gráfico con fuente")
     if not 170 <= word_count <= 235:
