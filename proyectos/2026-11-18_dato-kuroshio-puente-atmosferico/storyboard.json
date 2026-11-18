@@ -377,5 +377,22 @@
   ],
   "fecha_objetivo": "2026-11-18",
   "slot_local": "17:00",
-  "slot_cesta": "intermedio_1"
+  "slot_cesta": "intermedio_1",
+  "narrative_qa": {
+    "status": "PASS",
+    "score": 90,
+    "review_basis": "lectura_en_frio_solo_narracion",
+    "reviewed_at": "2026-11-18T15:00:00-06:00",
+    "reviewer_role": "auditor_capcot_independiente",
+    "checks": {
+      "pregunta_central_reconstruible": true,
+      "apertura_in_medias_res": true,
+      "progresion_por_escena": true,
+      "transiciones_causales": true,
+      "giro_cientifico_explicado": true,
+      "limite_evidencia_explicito": true,
+      "payoff_cierre_apertura": true
+    },
+    "critical_flags": []
+  }
 }
