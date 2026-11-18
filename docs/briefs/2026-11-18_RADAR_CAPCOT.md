@@ -333,3 +333,62 @@ Los siguientes objetos reproducen status, score, review_basis, reviewed_at (si e
 ## Límites y seguridad
 
 No se solicitaron ni registraron credenciales. No se modificaron `data/*.json`, `main`, workflows, motores canónicos ni Motor U6. No hubo merge, publicación, programación ni consumo de créditos. El auditor independiente conserva la decisión narrativa y Grok conserva selección editorial, generación audiovisual, QA oficial y publicación.
+
+
+## Addendum de revalidación — 2026-11-18, 08:30 CDMX
+
+### Ocupación y slot 23:30
+
+- El slot principal de 17:00 sigue ocupado por `2026-11-18_dato-kuroshio-puente-atmosferico`. No se crea ni se reescribe un segundo storyboard para ese slot.
+- `data/horarios.json` confirma que 23:30 es el slot fijo `dato_del_dia`; no existe `data/horario_2026-11-18.json`. El slot 23:30 permanece libre por fecha/slot.
+- Se reconsultó el candidato de noticia del día: Fuchs et al., “The discovery of fourteen hydrothermal vent fields and associated polymetallic massive sulfides in the central Indian Ocean”, *Scientific Reports*, publicado el 18-11-2026, DOI mostrado por la editorial `10.1038/s41598-026-80304-8`, URL https://www.nature.com/articles/s41598-026-80304-8.
+- El resultado editorial indexado de Nature expuso autores, fecha, DOI y contenido del artículo. Sin embargo, la apertura directa volvió a redirigir a `idp.nature.com` con HTTP 500; Crossref y el resolvedor doi.org devolvieron “URL is not accessible via this tool”. El DOI no queda validado independientemente y la fuente sigue **PENDING_SOURCE** para la compuerta de 23:30. No se crea storyboard.
+- El artículo PIC-NIC de ADN también aparece publicado el 18-11-2026, pero su página editorial directa tuvo la misma redirección HTTP 500 y el DOI no se pudo resolver. No se usa para forzar el slot.
+
+### RSS científicos y Google Trends — reintento 08:30
+
+Los diez RSS de `scripts/tendencias.py` y Google Trends RSS México se intentaron abrir de nuevo. No se descargó ni se parseó XML. Los fallos exactos de esta vía de lectura fueron:
+
+- ScienceDaily Top Science: HTTP 400, `Unsupported content-type: application/xml`.
+- ScienceDaily Health: HTTP 400, `Unsupported content-type: application/xml`.
+- ScienceDaily Space & Time: HTTP 400, `Unsupported content-type: application/xml`.
+- Phys.org: HTTP 400, `Unsupported content-type: text/xml`.
+- NASA News Release: HTTP 400, `Unsupported content-type: application/rss+xml`.
+- ESA Space Science: HTTP 404, `Not Found`.
+- Nature RSS: HTTP 400, `Unsupported content-type: application/rss+xml`.
+- EurekAlert: `URL is not accessible via this tool`.
+- Agencia SINC: `URL is not accessible via this tool`.
+- UNAM Global: HTTP 400, `Unsupported content-type: application/rss+xml`.
+- Google Trends RSS México: `URL is not accessible via this tool`.
+
+Estos mensajes describen la respuesta de la herramienta de lectura; no demuestran que todos los servidores de origen estén caídos. No se afirma haber parseado XML.
+
+Como respaldo se abrió Trending Now oficial de México: https://trends.google.com/trending?geo=MX&hl=es-419. La página mostró **224 tendencias** (rango 1–25 de 224). Entre las primeras 25 se observaron “inundaciones en Veracruz” (100 mil+) y “ciclón extratropical” (5 mil+); el resto estuvo dominado principalmente por deportes, entretenimiento y conversación pública. No se encontró una señal inequívoca relacionada con Kuroshio, campos hidrotermales, PIC-NIC, abalones o Ras.
+
+### Relectura estructural del storyboard principal existente
+
+Se volvió a leer desde GitHub `proyectos/2026-11-18_dato-kuroshio-puente-atmosferico/storyboard.json`. Resultado:
+
+- 222 palabras de narración; 8 escenas; 84 segundos incluyendo la cortinilla de 6 segundos; formato 9:16.
+- Arco completo `hook_medias_res → desarrollo → cierre_historia → reflexion_o_pregunta`; gancho de cinco palabras; cierre hablado exacto.
+- `narrative_contract`: seis campos presentes y no vacíos.
+- Fuente `SRC-001` referenciada en las ocho escenas; DOI sigue `PENDIENTE_RESOLVEDOR`, con URL editorial y nota de limitación.
+- Voz edge-tts `es-MX-JorgeNeural`, rate `+7%`, pitch `-2Hz`, pad 0.3 s.
+- Estilo único `atlas_antiguo`; `prompt_base` coincide literalmente con el catálogo y encabeza los ocho `image_prompt`.
+- Capa de mapa en `scene_002.capa`: dos regiones de análisis con límites publicados (Kuroshio 35–45°N, 140–170°E; Gulf Stream 35–45°N, 50–80°W), fuente SRC-001 y nota que aclara que son cajas regionales, no pines ni trayectorias.
+- Capa de gráfico en `scene_005.capa`: barras 13% y 4%, unidad definida como fracción de varianza interna de TSM del Kuroshio, condiciones del modelo y límites de interpretación.
+- `approved_assets=[]`; `export.render_status=NOT_GENERATED`; no existe `export.filename` ni rutas de medios; `publicacion.status=PENDIENTE_DECISION_GROK`.
+- No contiene `narrative_qa`: **PENDIENTE_AUDITOR**. No se ejecutó QA en frío ni se promovió a cola.
+
+La comparación GitHub entre el commit base de esta auditoría (`247a4e9d25b694c4f400d2e0037b5393814c24eb`) y el HEAD previo a este addendum (`6d1dd8a9d6090239ae162dca812d2492d190614d`) muestra dos commits posteriores y **ningún cambio en storyboards**; el único archivo modificado fue este radar. Por tanto, el inventario QA leído en la auditoría anterior permanece sin cambios: 160 storyboard.json físicos revisados, 39 con `narrative_qa` (17 PASS, 20 FAIL, 2 PENDIENTE) y 121 sin `narrative_qa` (PENDIENTE_AUDITOR). El storyboard Kuroshio se mantiene además como PENDIENTE_AUDITOR; no se escribió QA.
+
+### Seguimiento técnico
+
+Se actualizó `docs/INVESTIGACION_API_META_Y_GOOGLE_TRENDS.md`, sección 9.9, commit `cedf9b673e2ee7294001ba730360d5cf2a38eb09`: la tabla oficial del changelog de Meta ya incluye Graph API v27.0 (introducida el 4-nov-2026), por lo que queda resuelta la discrepancia documentada el 15-nov. La página de Page Insights también muestra v27.0. Instagram Insights mantiene las tres rutas de autenticación y límites ya documentados; no apareció una métrica nueva de Insights. Google Trends API sigue en alfa limitada.
+
+### Resultado de esta revalidación
+
+- Slot principal: **NO_DUPLICAR**.
+- Slot 23:30: **PENDING_SOURCE**; no se crea storyboard.
+- No se modifica el storyboard canónico ni se crea una segunda versión.
+- Los dos entregables base de la fecha siguen siendo el radar y el storyboard principal. No se crea `*_fuentes.md` ni archivo adicional de paquete.
