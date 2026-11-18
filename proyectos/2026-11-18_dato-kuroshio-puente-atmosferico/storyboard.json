@@ -1,0 +1,383 @@
+{
+  "_schema": "CAPCOT_STORYBOARD_TEXT_V2",
+  "project_id": "2026-11-18_dato-kuroshio-puente-atmosferico",
+  "serie": "Datos y ociosidades",
+  "title": "La Corriente del Golfo y Kuroshio",
+  "titulo": "El puente invisible entre océanos",
+  "language": "es-MX",
+  "aspect_ratio": "9:16",
+  "target_duration_seconds": 84,
+  "estructura": "pregunta",
+  "audience": "Público general interesado en océanos, clima y ciencia del sistema terrestre.",
+  "occasion": "Cápsula de actualidad científica para la ventana de tarde; sin asociación forzada a una tendencia de búsqueda.",
+  "resumen": "Un estudio de modelación publicado el 17 de noviembre de 2026 encuentra que la variabilidad de la Corriente del Golfo puede modular la extensión de Kuroshio a través de una respuesta atmosférica sobre el hemisferio norte. El 13% se refiere a varianza interna modelada de temperatura superficial en la región de Kuroshio, no al calentamiento global.",
+  "narrative_contract": {
+    "central_question": "¿Cómo puede la variabilidad de la Corriente del Golfo modular la extensión de Kuroshio sin que el agua de un océano pase al otro?",
+    "promise": "Mostrar la ruta atmosférica que conecta dos corrientes y qué parte de la variabilidad térmica del Kuroshio explica el modelo.",
+    "stakes": "Entender teleconexiones oceánicas mejora la interpretación de la variabilidad térmica del Pacífico Norte y sus posibles fuentes de predictibilidad.",
+    "scientific_turn": "El puente no es agua que cruza el planeta, sino una respuesta atmosférica a anomalías térmicas del Atlántico que desplaza la extensión de Kuroshio.",
+    "evidence_limit": "Resultados de simulaciones idealizadas con un control preindustrial de 100 años y diez miembros por experimento. El 13% se refiere a varianza interna modelada de TSM en la región de Kuroshio a escalas mayores que la interanual; no es porcentaje del calentamiento global ni una atribución causal observacional directa.",
+    "payoff": "La atmósfera puede conectar corrientes separadas; la influencia observada en el modelo es asimétrica y depende de la resolución oceánica."
+  },
+  "trend_source": {
+    "termino": "Kuroshio Extension warming shaped by Gulf Stream variability via the Arctic atmosphere",
+    "fecha_publicacion": "2026-11-17",
+    "url": "https://www.nature.com/articles/s41561-026-02139-2"
+  },
+  "editorial_status": "PROPUESTA_PENDIENTE_DE_GROK",
+  "arco": {
+    "hook_medias_res": "La extensión de Kuroshio se desplaza al norte dentro de las simulaciones; la señal remota aparece en la Corriente del Golfo.",
+    "desarrollo": "El estudio conecta las anomalías cálidas del Atlántico con una respuesta atmosférica que debilita la baja de las Aleutianas y desplaza Kuroshio; el gráfico cuantifica varianza interna modelada.",
+    "cierre_historia": "La influencia es asimétrica y depende de la resolución del modelo; el 13% no representa una fracción del calentamiento global.",
+    "reflexion_o_pregunta": "La atmósfera funciona como puente entre corrientes que permanecen en cuencas separadas."
+  },
+  "estilo_id": "atlas_antiguo",
+  "estilo_visual": "Atlas antiguo grabado",
+  "visual_identity": {
+    "style_id": "atlas_antiguo",
+    "style_name": "Atlas antiguo grabado",
+    "prompt_base": "antique engraved atlas map illustration, hand-colored copperplate, compass rose, sea monsters, aged parchment, single large central motif, not photorealistic, vertical 9:16, no text",
+    "palette": "pergamino, sepia, verde mar, rojo lacre",
+    "lighting": "Iluminación uniforme de lámina cartográfica, sin neón ni brillo digital; resaltar las corrientes con tinta de color sobre el pergamino.",
+    "texture": "Grabado calcográfico en cobre, tramado fino, papel envejecido y color aplicado a mano.",
+    "composition": "Mapas de cuenca como motivo central; dos regiones de análisis separadas; el puente atmosférico se representa con arco punteado sobre el Ártico, nunca como transferencia de agua entre océanos.",
+    "negative_prompt": "Sin fotorrealismo, 3D, collage, estilos alternos, texto dentro de imágenes, coordenadas inventadas, trayectorias no publicadas ni flechas de agua que conecten directamente ambas cuencas. Si aparecen monstruos marinos por el prompt base, solo como ornamento marginal de atlas y nunca como sujeto.",
+    "reference_assets": [],
+    "seed": null,
+    "seed_policy": "Una sola semilla compartida para todas las escenas; Grok la definirá en producción. Este borrador no contiene seed ni referencias visuales materializadas."
+  },
+  "typography_identity": {
+    "font_family": "DejaVu Sans",
+    "font_weight": "700 para gancho; 400 para subtítulos",
+    "title_style": "Gancho de cinco palabras, alto contraste, presente desde frame 0 en postproducción.",
+    "subtitle_style": "Bloques de máximo tres palabras; zona segura inferior; español de México.",
+    "hierarchy": "Gancho > dato/etiqueta > subtítulos",
+    "animation": "Un movimiento por plano; tipografía en postproducción; nunca texto generado dentro de la imagen."
+  },
+  "voice": {
+    "engine": "edge-tts",
+    "voice_id": "es-MX-JorgeNeural",
+    "language": "es-MX",
+    "rate": "+7%",
+    "pitch": "-2Hz",
+    "pad_seconds": 0.3,
+    "modo_pausas": "continuo"
+  },
+  "source_ids": [
+    "SRC-001"
+  ],
+  "sources": [
+    {
+      "id": "SRC-001",
+      "cita_corta": "Yamagami, Y., Tatebe, H., Kohyama, T., Kido, S., Okajima, S. & Komuro, Y. (2026). Kuroshio Extension warming shaped by Gulf Stream variability via the Arctic atmosphere. Nature Geoscience.",
+      "url": "https://www.nature.com/articles/s41561-026-02139-2",
+      "doi": "10.1038/s41561-026-02139-2",
+      "accessed": "2026-11-18",
+      "publication_date": "2026-11-17",
+      "supports": [
+        "Publicado y versión de registro el 17 de noviembre de 2026.",
+        "Control preindustrial idealizado de 100 años; experimentos de conjunto con diez miembros.",
+        "La variabilidad de temperatura superficial del Gulf Stream modula remotamente la variabilidad de Kuroshio.",
+        "Anomalías cálidas del Gulf Stream excitan una respuesta atmosférica tipo Modo Anular del Norte y debilitan la baja de las Aleutianas.",
+        "El desplazamiento al norte de la extensión de Kuroshio aumenta el transporte de agua cálida hacia el Pacífico noroccidental.",
+        "La variabilidad del Atlántico explica aproximadamente 13% de la varianza interna de TSM del Kuroshio a escalas mayores que la interanual; el forzamiento del Pacífico tropical explica 4% en los experimentos comparados.",
+        "No se encontró evidencia de una modulación equivalente de Gulf Stream por Kuroshio; el acoplamiento se debilita en modelos oceánicos de menor resolución."
+      ],
+      "verification_status": "PENDIENTE",
+      "url_verification_status": "VERIFICADO_PAGINA_EDITORIAL",
+      "doi_verification_status": "PENDIENTE_RESOLVEDOR",
+      "verification_note": "La página editorial primaria se abrió y muestra autores, fecha de publicación, versión de registro, abstract, resultados, límites y DOI. La consulta directa a Crossref y al resolvedor doi.org devolvió URL no accesible desde esta ejecución; el DOI se conserva como cadena mostrada por la editorial, no como DOI validado independientemente.",
+      "license": "CC BY 4.0"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_001",
+      "arc": "hook_medias_res",
+      "duration_seconds": 9,
+      "narration": "En las simulaciones, la extensión de Kuroshio se desplaza al norte; la señal que la empuja empieza en el Atlántico. ¿Cómo puede una corriente influir en otra sin mezclar sus aguas?",
+      "on_screen_text": "Kuroshio al norte",
+      "visual_description": "Placa de atlas del Pacífico norte: la corriente de Kuroshio se curva hacia el norte junto a Japón; una pequeña anomalía cálida aparece en el Atlántico como señal remota, sin unir las masas de agua. El movimiento ya está en curso, no mostrar un episodio histórico inventado.",
+      "image_prompt": "antique engraved atlas map illustration, hand-colored copperplate, compass rose, sea monsters, aged parchment, single large central motif, not photorealistic, vertical 9:16, no text Placa de atlas del Pacífico norte: la corriente de Kuroshio se curva hacia el norte junto a Japón; una pequeña anomalía cálida aparece en el Atlántico como señal remota, sin unir las masas de agua. El movimiento ya está en curso, no mostrar un episodio histórico inventado. Añadir solo la descripción de esta escena; conservar grabado calcográfico, paleta de atlas y composición vertical; sin texto dentro de la imagen.",
+      "ambiente": "Corriente marina grave, muy tenue, con aire frío de fondo.",
+      "sfx": [
+        "Ascenso suave de corriente; el pulso no debe sonar como una explosión."
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "atlas_antiguo",
+      "dramatic_beat": "Una corriente cambia de posición y la señal aparece en otra cuenca oceánica.",
+      "scene_function": "Abrir con la anomalía ya en curso y formular una sola pregunta causal.",
+      "causal_bridge_from_previous": "Apertura: el desplazamiento existe dentro de las simulaciones; todavía no se explica la vía remota.",
+      "question_state": "Se sabe que el modelo desplaza Kuroshio al norte; queda por explicar cómo interviene el Atlántico.",
+      "reason_to_continue": "Para resolverlo hay que ubicar las dos regiones y conocer el diseño del estudio.",
+      "new_information": "La variabilidad del Gulf Stream aparece como señal remota asociada al desplazamiento modelado."
+    },
+    {
+      "id": "scene_002",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "Publicado el 17 de noviembre, el estudio compara el Kuroshio, al este de Japón, con la Corriente del Golfo en el Atlántico Norte. Usó un control idealizado de cien años y diez miembros por experimento.",
+      "on_screen_text": "Dos regiones, un modelo",
+      "visual_description": "Mapa de atlas mundial con dos rectángulos de análisis separados: Kuroshio al este de Japón y Corriente del Golfo en el Atlántico Norte. Un arco punteado atmosférico sobre el Ártico conecta las regiones; no dibujar transferencia de agua entre océanos.",
+      "image_prompt": "antique engraved atlas map illustration, hand-colored copperplate, compass rose, sea monsters, aged parchment, single large central motif, not photorealistic, vertical 9:16, no text Mapa de atlas mundial con dos rectángulos de análisis separados: Kuroshio al este de Japón y Corriente del Golfo en el Atlántico Norte. Un arco punteado atmosférico sobre el Ártico conecta las regiones; no dibujar transferencia de agua entre océanos. Añadir solo la descripción de esta escena; conservar grabado calcográfico, paleta de atlas y composición vertical; sin texto dentro de la imagen.",
+      "ambiente": "Viento polar suave sobre papel; base de mar muy baja.",
+      "sfx": [
+        "Dos pings cartográficos discretos, uno por región."
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "atlas_antiguo",
+      "dramatic_beat": "La anomalía deja de ser una coincidencia geográfica y se convierte en una comparación controlada.",
+      "scene_function": "Ubicar las dos regiones y fijar las condiciones del experimento.",
+      "causal_bridge_from_previous": "La pregunta de la influencia remota exige saber qué regiones compararon y bajo qué simulación.",
+      "question_state": "Ya conocemos las cajas de análisis y el control idealizado; falta el mecanismo atmosférico.",
+      "reason_to_continue": "La investigación usa un control preindustrial idealizado de cien años y diez miembros por experimento.",
+      "new_information": {
+        "capa": {
+          "tipo": "mapa",
+          "region": [
+            35,
+            -80,
+            45,
+            170
+          ],
+          "puntos": [],
+          "areas": [
+            {
+              "id": "kuroshio",
+              "label": "Kuroshio Extension",
+              "bounds": [
+                35,
+                140,
+                45,
+                170
+              ],
+              "bounds_label": "35–45°N; 140–170°E"
+            },
+            {
+              "id": "gulf_stream",
+              "label": "Gulf Stream",
+              "bounds": [
+                35,
+                -80,
+                45,
+                -50
+              ],
+              "bounds_label": "35–45°N; 50–80°W"
+            }
+          ],
+          "titulo": "Dos regiones de análisis",
+          "fuente": "SRC-001, figura 1a–b; cajas de análisis publicadas por los autores.",
+          "precision_note": "Los rectángulos representan regiones de promedio/análisis, no estaciones puntuales ni trayectorias. No añadir pines, rutas de agua ni precisión mayor que los límites publicados."
+        }
+      }
+    },
+    {
+      "id": "scene_003",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "El agua no cruza océanos. En el modelo, anomalías cálidas de la Corriente del Golfo activan una respuesta atmosférica tipo Modo Anular del Norte y debilitan la baja de las Aleutianas.",
+      "on_screen_text": "El puente es atmosférico",
+      "visual_description": "Placa de atlas en corte vertical de la atmósfera del hemisferio norte: anomalía cálida sobre la Corriente del Golfo, ondas atmosféricas arqueadas hacia el Ártico y baja de las Aleutianas debilitándose. No representar agua cruzando de una cuenca a otra.",
+      "image_prompt": "antique engraved atlas map illustration, hand-colored copperplate, compass rose, sea monsters, aged parchment, single large central motif, not photorealistic, vertical 9:16, no text Placa de atlas en corte vertical de la atmósfera del hemisferio norte: anomalía cálida sobre la Corriente del Golfo, ondas atmosféricas arqueadas hacia el Ártico y baja de las Aleutianas debilitándose. No representar agua cruzando de una cuenca a otra. Añadir solo la descripción de esta escena; conservar grabado calcográfico, paleta de atlas y composición vertical; sin texto dentro de la imagen.",
+      "ambiente": "Viento alto y continuo, sin oleaje dominante.",
+      "sfx": [
+        "Pulso de presión bajo que se atenúa al debilitarse la baja de las Aleutianas."
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "atlas_antiguo",
+      "dramatic_beat": "El giro científico cambia la explicación: la conexión no es una corriente de agua entre océanos.",
+      "scene_function": "Revelar el mecanismo atmosférico que une las variaciones de dos corrientes.",
+      "causal_bridge_from_previous": "El diseño compara regiones separadas; ahora se explica la vía que no requiere mezclar aguas.",
+      "question_state": "La anomalía cálida del Atlántico modifica la circulación atmosférica sobre el hemisferio norte.",
+      "reason_to_continue": "El siguiente paso es mostrar cómo esa respuesta atmosférica afecta la ruta de Kuroshio.",
+      "new_information": "En el modelo, anomalías cálidas de la Corriente del Golfo activan una respuesta atmosférica tipo Modo Anular del Norte y debilitan la baja de las Aleutianas."
+    },
+    {
+      "id": "scene_004",
+      "arc": "desarrollo",
+      "duration_seconds": 9,
+      "narration": "Con esa circulación reorganizada, la extensión de Kuroshio se desplaza al norte y transporta más agua cálida hacia el Pacífico noroccidental.",
+      "on_screen_text": "Kuroshio gira al norte",
+      "visual_description": "Mapa grabado del Pacífico noroccidental: la extensión de Kuroshio se desplaza hacia el norte junto a Japón y aumenta el transporte de agua cálida hacia latitudes más altas. Mantener el Atlántico fuera del plano para no sugerir transporte de agua entre cuencas.",
+      "image_prompt": "antique engraved atlas map illustration, hand-colored copperplate, compass rose, sea monsters, aged parchment, single large central motif, not photorealistic, vertical 9:16, no text Mapa grabado del Pacífico noroccidental: la extensión de Kuroshio se desplaza hacia el norte junto a Japón y aumenta el transporte de agua cálida hacia latitudes más altas. Mantener el Atlántico fuera del plano para no sugerir transporte de agua entre cuencas. Añadir solo la descripción de esta escena; conservar grabado calcográfico, paleta de atlas y composición vertical; sin texto dentro de la imagen.",
+      "ambiente": "Corriente oceánica grave que avanza de oeste a este.",
+      "sfx": [
+        "Deslizamiento corto de línea hacia el norte."
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "atlas_antiguo",
+      "dramatic_beat": "La circulación atmosférica produce una consecuencia oceánica concreta en el Pacífico.",
+      "scene_function": "Mostrar la consecuencia física de la respuesta atmosférica.",
+      "causal_bridge_from_previous": "La baja de las Aleutianas se debilita; esa reorganización atmosférica cambia la posición de Kuroshio.",
+      "question_state": "La vía remota ya está identificada y ahora se ve su efecto sobre el transporte cálido.",
+      "reason_to_continue": "Falta cuantificar cuánto de la variabilidad térmica del Kuroshio explica el modelo.",
+      "new_information": "La extensión de Kuroshio se desplaza al norte y favorece el transporte de agua cálida hacia el Pacífico noroccidental."
+    },
+    {
+      "id": "scene_005",
+      "arc": "desarrollo",
+      "duration_seconds": 12,
+      "narration": "El efecto se midió como varianza interna de temperatura superficial: la señal del Atlántico explicó alrededor del 13% en la región de Kuroshio; la del Pacífico tropical, 4%.",
+      "on_screen_text": "13% frente a 4%",
+      "visual_description": "Gráfico de barras de atlas con dos barras sin cifras impresas dentro de la imagen: Atlántico Norte/Corriente del Golfo y Pacífico tropical. Las etiquetas y valores se agregan en postproducción. La barra atlántica es más alta; no añadir otras series.",
+      "image_prompt": "antique engraved atlas map illustration, hand-colored copperplate, compass rose, sea monsters, aged parchment, single large central motif, not photorealistic, vertical 9:16, no text Gráfico de barras de atlas con dos barras sin cifras impresas dentro de la imagen: Atlántico Norte/Corriente del Golfo y Pacífico tropical. Las etiquetas y valores se agregan en postproducción. La barra atlántica es más alta; no añadir otras series. Añadir solo la descripción de esta escena; conservar grabado calcográfico, paleta de atlas y composición vertical; sin texto dentro de la imagen.",
+      "ambiente": "Pulso mínimo y estable, con espacio para la voz.",
+      "sfx": [
+        "Dos clics limpios al aparecer 13% y 4% en postproducción."
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "atlas_antiguo",
+      "dramatic_beat": "La conexión tiene magnitud medible, pero el porcentaje necesita un denominador preciso.",
+      "scene_function": "Cuantificar el efecto del Atlántico frente al forzamiento tropical del Pacífico.",
+      "causal_bridge_from_previous": "Una vez mostrado el mecanismo, el estudio cuantifica su contribución relativa en la región de Kuroshio.",
+      "question_state": "El resultado es 13% frente a 4%; ahora hay que aclarar qué variabilidad representa ese porcentaje.",
+      "reason_to_continue": "La cifra solo se interpreta correctamente si se identifica la variable, la región y las condiciones del modelo.",
+      "new_information": {
+        "capa": {
+          "tipo": "grafico",
+          "chart_type": "bar",
+          "x_axis": "Forzamiento en experimentos del modelo",
+          "unit": "% de varianza interna de TSM del Kuroshio",
+          "series": [
+            {
+              "label": "Atlántico Norte / Corriente del Golfo",
+              "value": 13
+            },
+            {
+              "label": "Pacífico tropical",
+              "value": 4
+            }
+          ],
+          "conditions": "MIROC6; control preindustrial idealizado de 100 años; experimentos NAGA y POGA con 10 miembros cada uno; variabilidad interna de temperatura superficial del mar a escalas mayores que la interanual.",
+          "fuente": "SRC-001, resultados; sección de contribución moduladora del Gulf Stream al Kuroshio.",
+          "interpretacion": "13% y 4% son fracciones de varianza interna modelada de la TSM en la región del Kuroshio; no son porcentajes del calentamiento global ni del calor total del océano."
+        }
+      }
+    },
+    {
+      "id": "scene_006",
+      "arc": "desarrollo",
+      "duration_seconds": 9,
+      "narration": "Eso no significa 13% del calentamiento global. Es una fracción de la variabilidad interna modelada en una región concreta y a escalas multianuales.",
+      "on_screen_text": "No es calentamiento global",
+      "visual_description": "La barra del 13% se encierra dentro de un recuadro que dice visualmente “variabilidad interna regional”; el globo completo queda fuera del recuadro. Texto final añadido en postproducción, no dentro de la ilustración.",
+      "image_prompt": "antique engraved atlas map illustration, hand-colored copperplate, compass rose, sea monsters, aged parchment, single large central motif, not photorealistic, vertical 9:16, no text La barra del 13% se encierra dentro de un recuadro que dice visualmente “variabilidad interna regional”; el globo completo queda fuera del recuadro. Texto final añadido en postproducción, no dentro de la ilustración. Añadir solo la descripción de esta escena; conservar grabado calcográfico, paleta de atlas y composición vertical; sin texto dentro de la imagen.",
+      "ambiente": "La cama baja un nivel para dejar espacio al límite de evidencia.",
+      "sfx": [
+        "Corte breve de la cama después de “calentamiento global”."
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "atlas_antiguo",
+      "dramatic_beat": "El porcentaje puede parecer mayor de lo que es si se omite su denominador.",
+      "scene_function": "Explicitar qué mide el porcentaje y qué no permite concluir.",
+      "causal_bridge_from_previous": "El gráfico muestra porcentajes; esta escena define su denominador y evita convertirlos en atribución global.",
+      "question_state": "Sabemos que se trata de variabilidad interna modelada en una región y en escalas multianuales.",
+      "reason_to_continue": "La última limitación es comprobar si la influencia es recíproca y si el resultado resiste cambios de resolución.",
+      "new_information": "El 13% no es calentamiento global: es una fracción de la variabilidad interna modelada en la región de Kuroshio y a escalas multianuales."
+    },
+    {
+      "id": "scene_007",
+      "arc": "cierre_historia",
+      "duration_seconds": 10,
+      "narration": "El giro es asimétrico: el estudio no encontró que Kuroshio modificara de forma equivalente a la Corriente del Golfo; además, el acoplamiento se debilitó en modelos oceánicos de menor resolución.",
+      "on_screen_text": "La conexión es asimétrica",
+      "visual_description": "Dos paneles de atlas: un modelo oceánico de alta resolución conserva el acoplamiento entre las corrientes; otro de menor resolución lo debilita. Flecha de influencia solo desde Corriente del Golfo hacia Kuroshio; no dibujar flecha inversa.",
+      "image_prompt": "antique engraved atlas map illustration, hand-colored copperplate, compass rose, sea monsters, aged parchment, single large central motif, not photorealistic, vertical 9:16, no text Dos paneles de atlas: un modelo oceánico de alta resolución conserva el acoplamiento entre las corrientes; otro de menor resolución lo debilita. Flecha de influencia solo desde Corriente del Golfo hacia Kuroshio; no dibujar flecha inversa. Añadir solo la descripción de esta escena; conservar grabado calcográfico, paleta de atlas y composición vertical; sin texto dentro de la imagen.",
+      "ambiente": "Viento polar estrecho y sobrio, sin dramatización.",
+      "sfx": [
+        "Tono corto y discreto al pasar al panel de menor resolución."
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "atlas_antiguo",
+      "dramatic_beat": "El estudio limita el hallazgo: no encontró una influencia equivalente en sentido inverso y la resolución importa.",
+      "scene_function": "Cerrar la explicación con la asimetría y la dependencia del modelo.",
+      "causal_bridge_from_previous": "Una vez definido el denominador, se comprueba si la influencia es simétrica y robusta entre modelos.",
+      "question_state": "El resultado es asimétrico y pierde fuerza en modelos oceánicos de menor resolución.",
+      "reason_to_continue": "La respuesta final debe conservar el mecanismo sin convertirlo en una ley universal.",
+      "new_information": "El estudio no encontró una modulación equivalente de Kuroshio sobre la Corriente del Golfo; el acoplamiento se debilitó en modelos de menor resolución."
+    },
+    {
+      "id": "scene_008",
+      "arc": "reflexion_o_pregunta",
+      "duration_seconds": 9,
+      "narration": "Así, dos corrientes separadas pueden conectarse por la atmósfera, pero el resultado depende de la resolución del modelo. Esto fue Datos y ociosidades.",
+      "on_screen_text": "Un puente de aire",
+      "visual_description": "Composición final de atlas: las dos corrientes permanecen en sus cuencas y una línea atmosférica punteada cruza el Ártico como puente; el mapa se cierra sobre pergamino, sin añadir un tercer fenómeno.",
+      "image_prompt": "antique engraved atlas map illustration, hand-colored copperplate, compass rose, sea monsters, aged parchment, single large central motif, not photorealistic, vertical 9:16, no text Composición final de atlas: las dos corrientes permanecen en sus cuencas y una línea atmosférica punteada cruza el Ártico como puente; el mapa se cierra sobre pergamino, sin añadir un tercer fenómeno. Añadir solo la descripción de esta escena; conservar grabado calcográfico, paleta de atlas y composición vertical; sin texto dentro de la imagen.",
+      "ambiente": "Corriente y viento se funden en un fade muy suave.",
+      "sfx": [
+        "Cierre corto, sin fanfarria ni golpe de tráiler."
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "atlas_antiguo",
+      "dramatic_beat": "La apertura se resuelve: las corrientes se conectan por la atmósfera, no por intercambio directo de agua.",
+      "scene_function": "Pagar la pregunta inicial y cerrar con el sello de la serie.",
+      "causal_bridge_from_previous": "Las limitaciones reducen el alcance del hallazgo, pero mantienen el mecanismo central dentro de las simulaciones.",
+      "question_state": "La pregunta queda respondida: la atmósfera conecta corrientes separadas, con un efecto dependiente del modelo.",
+      "reason_to_continue": "No se abre otro tema; el cierre devuelve al espectador a la anomalía inicial.",
+      "new_information": "Dos corrientes separadas pueden conectarse por la atmósfera, pero el resultado depende de la resolución del modelo. Esto fue Datos y ociosidades."
+    }
+  ],
+  "cortinilla_fuentes": {
+    "duration_seconds": 6,
+    "titulo": "Fuentes",
+    "aviso": "Referencia editorial visible en la cortinilla final; no se han generado imágenes, audio ni otros medios en esta etapa.",
+    "firma": "Datos y ociosidades",
+    "source_ids": [
+      "SRC-001"
+    ]
+  },
+  "audio": {
+    "music_asset": null,
+    "music_plan": "Cama de pulso grave y espaciado, muy baja bajo la voz; solo plan sonoro, no archivo.",
+    "cama_musical": "pulso",
+    "music_license": null,
+    "mix_notes": "Mantener la voz al frente. Los efectos no deben sugerir transferencia de agua entre océanos."
+  },
+  "export": {
+    "resolution": "1080x1920",
+    "fps": 30,
+    "render_status": "NOT_GENERATED"
+  },
+  "publicacion": {
+    "status": "PENDIENTE_DECISION_GROK",
+    "platforms": [
+      "YouTube Shorts",
+      "TikTok",
+      "Facebook Reels"
+    ],
+    "note": "No publicar ni programar desde preproducción textual. slot_local es metadata editorial de asignación, no programación ni privacidad."
+  },
+  "estado": "PENDIENTE_AUDITOR",
+  "production_mode": "storyboard_only",
+  "validation_notes": [],
+  "linea_tematica_provisional": "Actualidad / Dato científico; subtema clima-geo/atmosférico.",
+  "approved_assets": [],
+  "risk_notes": [
+    "El 13% se refiere a varianza interna modelada de TSM en la región de Kuroshio y a escalas mayores que la interanual; no es porcentaje del calentamiento global ni del calor total del océano.",
+    "La vía propuesta es atmosférica; no afirmar que agua del Atlántico se transporte físicamente al Pacífico.",
+    "El resultado procede de simulaciones idealizadas; no presentarlo como atribución causal observacional directa.",
+    "La influencia es asimétrica y depende de la resolución del modelo oceánico.",
+    "El DOI aparece en la página editorial, pero Crossref y doi.org no pudieron resolverse desde esta ejecución; mantenerlo pendiente.",
+    "Las regiones del mapa son cajas de análisis publicadas por los autores, no estaciones puntuales ni trayectorias."
+  ],
+  "fecha_objetivo": "2026-11-18",
+  "slot_local": "17:00",
+  "slot_cesta": "intermedio_1"
+}
