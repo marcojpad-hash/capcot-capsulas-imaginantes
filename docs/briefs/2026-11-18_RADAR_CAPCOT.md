@@ -102,21 +102,21 @@
 
 ## RSS científicos: fallos de lectura
 
-Se intentó abrir cada RSS declarado en `scripts/tendencias.py`. El lector rechazó los tipos XML o no permitió acceder a la URL; **no se parseó XML**. Los errores son del lector utilizado y no demuestran por sí solos que el servidor de origen esté caído.
+Se intentó consultar por HTTP los diez feeds científicos declarados en `scripts/tendencias.py` y el RSS de Google Trends México. La resolución DNS falló antes de recibir respuesta HTTP; **no se descargó ni se parseó XML**. Los errores exactos de `curl -I --max-time 6` fueron:
 
-- ScienceDaily Top Science: `Unsupported content-type: application/xml`.
-- ScienceDaily Health: `Unsupported content-type: application/rss+xml`.
-- ScienceDaily Space & Time: `Unsupported content-type: application/rss+xml`.
-- Phys.org: `Unsupported content-type: text/xml`.
-- NASA News Release: `Unsupported content-type: application/rss+xml`.
-- ESA Space Science: `404 Not Found`.
-- Nature RSS: `Unsupported content-type: application/rss+xml`.
-- EurekAlert: `URL is not accessible via this tool`.
-- Agencia SINC: `URL is not accessible via this tool`.
-- UNAM Global: `Unsupported content-type: application/rss+xml`.
+- ScienceDaily Top Science: `curl: (6) Could not resolve host: www.sciencedaily.com`.
+- ScienceDaily Health: `curl: (6) Could not resolve host: www.sciencedaily.com`.
+- ScienceDaily Space & Time: `curl: (6) Could not resolve host: www.sciencedaily.com`.
+- Phys.org: `curl: (6) Could not resolve host: phys.org`.
+- NASA News Release: `curl: (6) Could not resolve host: www.nasa.gov`.
+- ESA Space Science: `curl: (6) Could not resolve host: www.esa.int`.
+- Nature RSS: `curl: (6) Could not resolve host: www.nature.com`.
+- EurekAlert: `curl: (6) Could not resolve host: www.eurekalert.org`.
+- Agencia SINC: `curl: (6) Could not resolve host: www.agenciasinc.es`.
+- UNAM Global: `curl: (6) Could not resolve host: unamglobal.unam.mx`.
+- Google Trends RSS México: `curl: (6) Could not resolve host: trends.google.com`.
 
-No se afirmó haber parseado feeds ni se inventaron titulares procedentes de RSS.
-
+El fallo es de resolución DNS del entorno de ejecución y no demuestra que los servidores de origen estén caídos. Como respaldo, se consultó Trending Now oficial de México; no se inventaron titulares procedentes de RSS.
 ## Observado, cálculo, inferencia y recomendación
 
 - **Observado:** el artículo de Kuroshio presenta un resultado de modelación, las condiciones del experimento y los límites de resolución; la página editorial es accesible y contiene la fecha y el DOI.
