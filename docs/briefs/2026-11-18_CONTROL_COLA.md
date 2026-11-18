@@ -183,3 +183,33 @@ En esta auditoría:
 No se modificaron narraciones, claims, fuentes, decisiones editoriales, `data/*.json`, `cola/estado/`, workflows, secretos, permisos, `main`, medios ni publicaciones. No se creó ninguna entrada de cola, no se movió ninguna copia, no se generaron medios, no se publicó, no se enviaron payloads y no se consumieron créditos.
 
 **Resultado:** Kuroshio tiene QA narrativo PASS, pero sigue fuera de cola por la incompatibilidad mapa/validador. En el lote 5–7 hay 2 PASS narrativos, 10 FAIL y **0/12 estructuralmente aptos**. Siete proyectos ya tienen procesamiento/publicación/programación preexistente y no deben redispatcharse.
+
+
+## Addendum técnico — corrección del contrato de mapas, 18-nov-2026
+
+Después del corte de las 15:00 se revisó la causa del bloqueo estructural de Kuroshio contra el storyboard, la plantilla vertical, la Receta y el validador. Se confirmó una contradicción real: la receta exigía coordenadas reales y precisión; el storyboard describía dos regiones de análisis con límites publicados y advertía que no eran estaciones puntuales; pero el validador solo aceptaba pines individuales. La plantilla, además, mostraba `puntos=[]` sin ofrecer una estructura para regiones.
+
+### Corrección mecánica aplicada
+
+1. `scripts/validar_storyboard.py` ahora acepta dos geometrías cartográficas válidas: puntos con latitud/longitud, o regiones con `bounds=[lat_min, lon_min, lat_max, lon_max]`. Valida límites numéricos y rangos geográficos; sigue exigiendo fuente y al menos una geometría válida. No convierte regiones en pines.
+   - Commit: `c164c1b2dc4ea293af50154bd0ead3768fc2c356`.
+2. `templates/storyboard_vertical.template.json` ahora incluye el esquema de `areas` con bounds y nota de precisión, además de `puntos`.
+   - Commit: `82fa4f9df9bb627d8213dad325df08945cb15e53`.
+3. `docs/RECETA_CAPSULA.md` ahora define ambas geometrías y prohíbe inventar pines, centroides o trayectorias cuando la fuente solo publica regiones.
+   - Commit: `1fe58b94e6180a059e1bf1e33afbdf5fd585887d`.
+
+### Relectura estática del storyboard Kuroshio desde GitHub
+
+Blob actual: `3f2dae68e9e32257b1bff2f485e532c466467113`.
+
+- QA narrativo: `PASS`, score 90, siete checks true, `critical_flags=[]`, `review_basis=lectura_en_frio_solo_narracion`.
+- Estructura comprobada estáticamente: 8 escenas; 222 palabras; 78 s de escenas + 6 s de cortinilla = 84 s; gancho de 5 palabras.
+- Las dos regiones del mapa pasan el nuevo contrato de bounds: Kuroshio [35, 140, 45, 170] y Gulf Stream [35, -80, 45, -50]. Ambas proceden de las cajas regionales citadas en SRC-001. No se inventaron coordenadas puntuales.
+- Capa de gráfico, fuente, voice contract, prompt base, source_ids, `approved_assets=[]`, `export.render_status=NOT_GENERATED` y ausencia de rutas de medios: comprobados estáticamente.
+- DOI: permanece `PENDIENTE_RESOLVEDOR`; la verificación independiente no está resuelta. El validador no se ejecutó en runtime en esta sesión, y no se ejecutó `--check-doi`.
+
+**Estado operativo:** la causa específica “mapa sin puntos” quedó corregida en el validador y alineada con plantilla/receta. No declaro todavía “validador ejecutado PASS” ni promuevo a cola: falta ejecución real del helper y resolver la verificación DOI que el procesador exige con `--check-doi`. El proyecto permanece en `proyectos/`; no se creó handoff ni se disparó workflow.
+
+### Precisión adicional sobre el procesador
+
+`scripts/procesar_cola.py` usa por defecto la fecha CDMX actual y filtra por el prefijo de fecha de la ruta. Permite una fecha histórica explícita mediante `--fecha`; por tanto, no está limitado técnicamente a hoy cuando se proporciona ese argumento. Tampoco compara la fecha del nombre con un campo interno `fecha_objetivo` del JSON. La regla operativa correcta es: ejecución normal sin override = fecha actual; ejecución con `--fecha` = fecha solicitada explícitamente. No se modificó el procesador.
