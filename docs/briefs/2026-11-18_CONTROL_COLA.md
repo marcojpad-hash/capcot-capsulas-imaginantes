@@ -322,3 +322,14 @@ Los IDs exactos de Venus, palomitas, rayo globular, ballena azul, aguacate, rana
 - Los casos con relevo aprobado o duplicado autorizado quedan cerrados a nuevos montajes, salvo orden expresa.
 
 No se alteraron horarios, publicaciones, storyboards, estados ni archivos de `main`.
+
+
+## Addendum de evidencia positiva: nubes y árboles — 18-nov-2026
+
+Se reabrió el cruce del lote con lectura estructurada de los 48 registros actuales de `data/publicaciones.json` (no solo búsqueda de rutas). Esto corrige una conclusión demasiado estrecha del apartado anterior:
+
+- **Nubes — publicación acreditada:** `2026-11-07_inter-nubes-pesan` tiene registro explícito con fecha operativa 12-nov-2026, YouTube `4Qpl17Ts_vI` (https://youtube.com/shorts/4Qpl17Ts_vI), TikTok `7705597569203768597` y Facebook content ID `122109293529518983`; el ledger marca las tres plataformas como publicadas. El campo `origen` dice `lote_semana_8_14_nov`. Por tanto, no es correcto clasificarlo como “sin entrega”: hay publicación registrada aunque no exista carpeta con el ID original en `main`.
+- **Árboles — salida y publicación con ID distinto:** `2026-11-07_arboles-comunicacion-bosque` cuenta con carpeta tanto en `cola/entrada/` como en `salidas/`, y registro de publicación en YT `EX0W3q-yKRw`, TikTok `7708391972129639701` y Facebook content ID `122110375287518983`. Se mantiene como relevo/coincidencia temática del tema programado para el 5-nov; no se cambia el ID del horario ni se afirma identidad de proyecto.
+- **Pulpo — no confundir dos piezas:** el borrador `proyectos/2026-xx_kids_pulpo-tres-corazones/borrador.md` corresponde a “tres corazones y sangre azul”, mientras el slot del 7-nov es “¿Sueñan los pulpos?”. También existe un caption de pulpo en `pendientes/analisis/2026-11-17_muertos_portadas/portadas_resubidas/pulpo-tres-corazones.caption.txt`; ese archivo acredita material textual de una pieza distinta, no publicación del slot “sueñan los pulpos”. No fusionar.
+
+**Ajuste de clasificación:** nubes pasa a `PUBLICACION_REGISTRADA_YT_TT_FB`; árboles queda `SALIDA_Y_PUBLICACION_REGISTRADA_BAJO_ID_ALTERNO`; sueños del pulpo sigue sin evidencia suficiente de identidad o publicación en el ledger consultado. No se generó ni redispatchó ninguna cápsula y no se modificó `main`.
