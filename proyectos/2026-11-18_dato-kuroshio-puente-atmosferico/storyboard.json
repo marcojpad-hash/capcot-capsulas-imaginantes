@@ -83,10 +83,10 @@
         "La variabilidad del Atlántico explica aproximadamente 13% de la varianza interna de TSM del Kuroshio a escalas mayores que la interanual; el forzamiento del Pacífico tropical explica 4% en los experimentos comparados.",
         "No se encontró evidencia de una modulación equivalente de Gulf Stream por Kuroshio; el acoplamiento se debilita en modelos oceánicos de menor resolución."
       ],
-      "verification_status": "PENDIENTE",
+      "verification_status": "VERIFICADO_FUENTE_PRIMARIA",
       "url_verification_status": "VERIFICADO_PAGINA_EDITORIAL",
-      "doi_verification_status": "PENDIENTE_RESOLVEDOR",
-      "verification_note": "La página editorial primaria se abrió y muestra autores, fecha de publicación, versión de registro, abstract, resultados, límites y DOI. La consulta directa a Crossref y al resolvedor doi.org devolvió URL no accesible desde esta ejecución; el DOI se conserva como cadena mostrada por la editorial, no como DOI validado independientemente.",
+      "doi_verification_status": "DOI_VISIBLE_EN_PAGINA_EDITORIAL_Y_PDF; RESOLVEDOR_CROSSREF_NO_CONFIRMADO",
+      "verification_note": "La página editorial primaria de Nature Geoscience y el PDF oficial muestran el mismo DOI, título, autores y fecha de publicación (17-nov-2026), además del resumen y resultados usados. La resolución independiente vía Crossref/doi.org no se pudo completar en esta ejecución; por eso se verifica la identidad bibliográfica en la fuente primaria, no la respuesta del resolvedor.",
       "license": "CC BY 4.0"
     }
   ],
@@ -372,7 +372,7 @@
     "La vía propuesta es atmosférica; no afirmar que agua del Atlántico se transporte físicamente al Pacífico.",
     "El resultado procede de simulaciones idealizadas; no presentarlo como atribución causal observacional directa.",
     "La influencia es asimétrica y depende de la resolución del modelo oceánico.",
-    "El DOI aparece en la página editorial, pero Crossref y doi.org no pudieron resolverse desde esta ejecución; mantenerlo pendiente.",
+    "El DOI está impreso en la página editorial y en el PDF oficial; la resolución independiente vía Crossref/doi.org sigue sin confirmarse.",
     "Las regiones del mapa son cajas de análisis publicadas por los autores, no estaciones puntuales ni trayectorias."
   ],
   "fecha_objetivo": "2026-11-18",
