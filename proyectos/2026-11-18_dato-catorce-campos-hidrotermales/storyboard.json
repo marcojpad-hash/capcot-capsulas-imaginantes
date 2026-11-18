@@ -1,0 +1,358 @@
+{
+  "_schema": "capcot.storyboard.v2",
+  "project_id": "2026-11-18_dato-catorce-campos-hidrotermales",
+  "serie": "Datos y ociosidades",
+  "title": "Catorce campos bajo el Índico",
+  "titulo": "¿Catorce campos bajo el Índico?",
+  "language": "es-MX",
+  "aspect_ratio": "9:16",
+  "target_duration_seconds": 84,
+  "estructura": "pregunta",
+  "audience": "Público general interesado en océanos y geología.",
+  "occasion": "Dato del día; slot 23:30 CDMX.",
+  "resumen": "Catorce campos hidrotermales alrededor de la triple unión de Rodrigues; cuatro son ultramáficos y los montículos inactivos conservan una secuencia relativa de actividad.",
+  "narrative_contract": {
+    "central_question": "¿Qué cuentan los campos hidrotermales del Índico incluso cuando dejan de estar activos?",
+    "promise": "Mostrar cómo se localizaron catorce campos, qué diferencias geológicas y químicas presentan y qué revela su oxidación.",
+    "stakes": "Los campos hidrotermales ayudan a entender la formación de corteza oceánica y la circulación de fluidos.",
+    "scientific_turn": "Cuatro campos son ultramáficos y los sitios inactivos conservan una secuencia relativa de su actividad.",
+    "evidence_limit": "La oxidación no da edades absolutas. El punto del mapa ubica solo la triple unión regional, no los campos individuales.",
+    "payoff": "El fondo marino conserva huellas químicas y geológicas después de cesar la actividad hidrotermal."
+  },
+  "trend_source": {
+    "tipo": "articulo_cientifico_primario",
+    "medio": "Scientific Reports / Nature",
+    "url": "https://www.nature.com/articles/s41598-026-80304-8",
+    "estudio_doi": "10.1038/s41598-026-80304-8",
+    "fecha_publicacion": "2026-11-18",
+    "termino": "catorce campos hidrotermales en el Índico central",
+    "fecha_consulta": "2026-11-18"
+  },
+  "editorial_status": "BORRADOR_PREPRODUCCION_TEXTO",
+  "arco": [
+    "hook_medias_res",
+    "desarrollo",
+    "cierre_historia",
+    "reflexion_o_pregunta"
+  ],
+  "estilo_id": "papel_rasgado_capas",
+  "estilo_visual": "Diorama de papel rasgado por capas",
+  "visual_identity": {
+    "style_id": "papel_rasgado_capas",
+    "style_name": "Papel rasgado por capas (diorama)",
+    "prompt_base": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text",
+    "palette": "verde bosque, turquesa apagado, ocre, crema",
+    "lighting": "Luz lateral suave; legibilidad del fondo marino.",
+    "texture": "Bordes rasgados, cartulina y fieltro en capas.",
+    "composition": "Dioramas verticales del fondo oceánico y cortes geológicos; etiquetas en postproducción.",
+    "negative_prompt": "Sin fotorrealismo, 3D, texto dentro de la imagen, coordenadas inventadas de respiraderos ni edades absolutas.",
+    "reference_assets": [],
+    "seed": null,
+    "seed_policy": "Semilla común pendiente de producción."
+  },
+  "typography_identity": {
+    "font_family": "DejaVu Sans",
+    "font_weight": "700 para gancho; 400 para subtítulos",
+    "title_style": "Gancho de cinco palabras, en postproducción.",
+    "subtitle_style": "Máximo tres palabras por bloque; español de México.",
+    "hierarchy": "Gancho > dato > subtítulos",
+    "animation": "Tipografía añadida en postproducción."
+  },
+  "voice": {
+    "engine": "edge-tts",
+    "voice_id": "es-MX-JorgeNeural",
+    "language": "es-MX",
+    "rate": "+7%",
+    "pitch": "-2Hz",
+    "pad_seconds": 0.3,
+    "modo_pausas": "continuo"
+  },
+  "source_ids": [
+    "SRC-001",
+    "SRC-002"
+  ],
+  "sources": [
+    {
+      "id": "SRC-001",
+      "cita_corta": "Fuchs, S. et al. (2026). The discovery of fourteen hydrothermal vent fields and associated polymetallic massive sulfides in the central Indian Ocean. Scientific Reports.",
+      "doi": "10.1038/s41598-026-80304-8",
+      "url": "https://www.nature.com/articles/s41598-026-80304-8",
+      "accessed": "2026-11-18",
+      "verification_status": "VERIFICADO_EN_PAGINA_EDITORIAL_PRIMARIA",
+      "supports": [
+        "Catorce campos caracterizados alrededor de la triple unión de Rodrigues.",
+        "Cuatro campos ultramáficos; fluidos más fríos y pobres en metales.",
+        "Sulfuros ultramáficos enriquecidos en Sn y Au y empobrecidos en As, Tl, Sb, Mo y Se.",
+        "Sitios inactivos superan a activos en la mayoría de los campos; oxidación registra secuencia relativa."
+      ]
+    },
+    {
+      "id": "SRC-002",
+      "cita_corta": "IUGS. Rodrigues Triple Junction, Geoheritage Sites.",
+      "doi": null,
+      "url": "https://iugs-geoheritage.org/geoheritage_sites/rodrigues-triple-junction/",
+      "accessed": "2026-11-18",
+      "verification_status": "VERIFICADO_FUENTE_INSTITUCIONAL",
+      "supports": [
+        "Triple unión en 25°30′S, 70°00′E; convergencia de tres dorsales."
+      ]
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_001",
+      "arc": "hook_medias_res",
+      "duration_seconds": 9,
+      "narration": "Bajo el océano Índico encontraron catorce campos hidrotermales. Algunos están apagados, pero todavía guardan pistas de cómo funcionaron.",
+      "visual_description": "Dorsal oceánica oscura, chimeneas hidrotermales y montículos minerales; contraste entre un respiradero activo y otro apagado.",
+      "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text Dorsal oceánica oscura, chimeneas hidrotermales y montículos minerales; contraste entre un respiradero activo y otro apagado. Añadir solo esta escena; conservar diorama de papel rasgado, cartulina y fieltro; sin texto dentro de la imagen.",
+      "source_ids": [
+        "SRC-001"
+      ],
+      "ambiente": "Corriente submarina tenue.",
+      "sfx": [
+        "Pulso discreto de ambiente oceánico."
+      ],
+      "dramatic_beat": "La cifra abre el misterio.",
+      "scene_function": "Presentar el hallazgo.",
+      "causal_bridge_from_previous": "Apertura directa.",
+      "question_state": "La cifra abre el misterio.",
+      "reason_to_continue": "La siguiente escena aporta el paso necesario de la explicación.",
+      "new_information": "Bajo el océano Índico encontraron catorce campos hidrotermales. Algunos están apagados, pero todavía guardan pistas de cómo funcionaron."
+    },
+    {
+      "id": "scene_002",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "Están alrededor de la triple unión de Rodrigues, donde se encuentran tres grandes dorsales del fondo marino. No son volcanes en tierra: son sistemas submarinos.",
+      "visual_description": "Mapa regional del Índico con la triple unión de Rodrigues señalada; no ubicar los catorce campos como puntos individuales.",
+      "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text Mapa regional del Índico con la triple unión de Rodrigues señalada; no ubicar los catorce campos como puntos individuales. Añadir solo esta escena; conservar diorama de papel rasgado, cartulina y fieltro; sin texto dentro de la imagen.",
+      "source_ids": [
+        "SRC-001"
+      ],
+      "ambiente": "Corriente submarina tenue.",
+      "sfx": [
+        "Pulso discreto de ambiente oceánico."
+      ],
+      "dramatic_beat": "Ubicar sin fingir coordenadas de campos.",
+      "scene_function": "Situar la región general.",
+      "causal_bridge_from_previous": "La cifra abre el misterio.",
+      "question_state": "Ubicar sin fingir coordenadas de campos.",
+      "reason_to_continue": "La siguiente escena aporta el paso necesario de la explicación.",
+      "new_information": "Están alrededor de la triple unión de Rodrigues, donde se encuentran tres grandes dorsales del fondo marino. No son volcanes en tierra: son sistemas submarinos.",
+      "capa": {
+        "tipo": "mapa",
+        "puntos": [
+          {
+            "nombre": "Triple unión de Rodrigues (referencia regional)",
+            "lat": -25.5,
+            "lon": 70
+          }
+        ],
+        "areas": [],
+        "titulo": "Triple unión de Rodrigues",
+        "fuente": "SRC-002; coordenada regional IUGS, no ubicación de campos individuales.",
+        "precision_note": "El punto solo localiza la triple unión; no representa ninguno de los catorce campos."
+      }
+    },
+    {
+      "id": "scene_003",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "El equipo combinó mapas del relieve, señales químicas en el agua y mediciones eléctricas. Después envió vehículos operados a distancia para observar y tomar muestras.",
+      "visual_description": "Buque de investigación en superficie, instrumentos descendiendo y un vehículo operado a distancia iluminando el lecho marino.",
+      "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text Buque de investigación en superficie, instrumentos descendiendo y un vehículo operado a distancia iluminando el lecho marino. Añadir solo esta escena; conservar diorama de papel rasgado, cartulina y fieltro; sin texto dentro de la imagen.",
+      "source_ids": [
+        "SRC-001"
+      ],
+      "ambiente": "Corriente submarina tenue.",
+      "sfx": [
+        "Pulso discreto de ambiente oceánico."
+      ],
+      "dramatic_beat": "Método de detección y confirmación.",
+      "scene_function": "Explicar cómo se localizaron y confirmaron.",
+      "causal_bridge_from_previous": "Ubicar sin fingir coordenadas de campos.",
+      "question_state": "Método de detección y confirmación.",
+      "reason_to_continue": "La siguiente escena aporta el paso necesario de la explicación.",
+      "new_information": "El equipo combinó mapas del relieve, señales químicas en el agua y mediciones eléctricas. Después envió vehículos operados a distancia para observar y tomar muestras."
+    },
+    {
+      "id": "scene_004",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "La mayoría está asociada con basalto. Pero cuatro campos, cerca de la unión de las dorsales, aparecen sobre rocas ultramáficas: materiales profundos expuestos por grandes fallas.",
+      "visual_description": "Corte geológico en papel: chimeneas sobre basalto y bloques de peridotita y gabro expuestos por una falla.",
+      "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text Corte geológico en papel: chimeneas sobre basalto y bloques de peridotita y gabro expuestos por una falla. Añadir solo esta escena; conservar diorama de papel rasgado, cartulina y fieltro; sin texto dentro de la imagen.",
+      "source_ids": [
+        "SRC-001"
+      ],
+      "ambiente": "Corriente submarina tenue.",
+      "sfx": [
+        "Pulso discreto de ambiente oceánico."
+      ],
+      "dramatic_beat": "El tipo de roca cambia.",
+      "scene_function": "Contrastar roca basáltica y ultramáfica.",
+      "causal_bridge_from_previous": "Método de detección y confirmación.",
+      "question_state": "El tipo de roca cambia.",
+      "reason_to_continue": "La siguiente escena aporta el paso necesario de la explicación.",
+      "new_information": "La mayoría está asociada con basalto. Pero cuatro campos, cerca de la unión de las dorsales, aparecen sobre rocas ultramáficas: materiales profundos expuestos por grandes fallas."
+    },
+    {
+      "id": "scene_005",
+      "arc": "desarrollo",
+      "duration_seconds": 11,
+      "narration": "En los campos ultramáficos, los fluidos son más fríos y contienen menos metales. En cambio, sus sulfuros registran más estaño y oro, y menos varios otros elementos.",
+      "visual_description": "Comparación visual de dos grupos de roca; etiquetas de composición añadidas en postproducción, sin inventar concentraciones.",
+      "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text Comparación visual de dos grupos de roca; etiquetas de composición añadidas en postproducción, sin inventar concentraciones. Añadir solo esta escena; conservar diorama de papel rasgado, cartulina y fieltro; sin texto dentro de la imagen.",
+      "source_ids": [
+        "SRC-001"
+      ],
+      "ambiente": "Corriente submarina tenue.",
+      "sfx": [
+        "Pulso discreto de ambiente oceánico."
+      ],
+      "dramatic_beat": "Firma geoquímica distinta.",
+      "scene_function": "Mostrar diferencias químicas.",
+      "causal_bridge_from_previous": "El tipo de roca cambia.",
+      "question_state": "Firma geoquímica distinta.",
+      "reason_to_continue": "La siguiente escena aporta el paso necesario de la explicación.",
+      "new_information": "En los campos ultramáficos, los fluidos son más fríos y contienen menos metales. En cambio, sus sulfuros registran más estaño y oro, y menos varios otros elementos.",
+      "capa": {
+        "tipo": "dato",
+        "valor": "4 de 14",
+        "etiqueta": "campos ultramáficos",
+        "fuente": "SRC-001, resumen del artículo."
+      }
+    },
+    {
+      "id": "scene_006",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "También encontraron más sitios inactivos que activos en la mayoría de los campos. Aunque ya no emitan fluidos, sus montículos conservan señales de oxidación.",
+      "visual_description": "Montículo submarino activo junto a otro apagado con costras oxidadas; diorama por capas.",
+      "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text Montículo submarino activo junto a otro apagado con costras oxidadas; diorama por capas. Añadir solo esta escena; conservar diorama de papel rasgado, cartulina y fieltro; sin texto dentro de la imagen.",
+      "source_ids": [
+        "SRC-001"
+      ],
+      "ambiente": "Corriente submarina tenue.",
+      "sfx": [
+        "Pulso discreto de ambiente oceánico."
+      ],
+      "dramatic_beat": "Los sitios apagados conservan huellas.",
+      "scene_function": "Mostrar el registro de inactividad.",
+      "causal_bridge_from_previous": "Firma geoquímica distinta.",
+      "question_state": "Los sitios apagados conservan huellas.",
+      "reason_to_continue": "La siguiente escena aporta el paso necesario de la explicación.",
+      "new_information": "También encontraron más sitios inactivos que activos en la mayoría de los campos. Aunque ya no emitan fluidos, sus montículos conservan señales de oxidación."
+    },
+    {
+      "id": "scene_007",
+      "arc": "cierre_historia",
+      "duration_seconds": 10,
+      "narration": "La oxidación permite ordenar una secuencia relativa: de la actividad a montículos largamente inactivos. No entrega una edad exacta; cuenta el orden de los cambios.",
+      "visual_description": "Tres montículos en secuencia: activo, inactivo reciente y muy oxidado; sin fechas ni escala temporal absoluta.",
+      "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text Tres montículos en secuencia: activo, inactivo reciente y muy oxidado; sin fechas ni escala temporal absoluta. Añadir solo esta escena; conservar diorama de papel rasgado, cartulina y fieltro; sin texto dentro de la imagen.",
+      "source_ids": [
+        "SRC-001"
+      ],
+      "ambiente": "Corriente submarina tenue.",
+      "sfx": [
+        "Pulso discreto de ambiente oceánico."
+      ],
+      "dramatic_beat": "La oxidación ordena, no fecha.",
+      "scene_function": "Acotar la lectura de la oxidación.",
+      "causal_bridge_from_previous": "Los sitios apagados conservan huellas.",
+      "question_state": "La oxidación ordena, no fecha.",
+      "reason_to_continue": "La siguiente escena aporta el paso necesario de la explicación.",
+      "new_information": "La oxidación permite ordenar una secuencia relativa: de la actividad a montículos largamente inactivos. No entrega una edad exacta; cuenta el orden de los cambios."
+    },
+    {
+      "id": "scene_008",
+      "arc": "reflexion_o_pregunta",
+      "duration_seconds": 8,
+      "narration": "Catorce campos, cuatro con rocas del manto expuestas y muchos ya inactivos. El fondo marino conserva historias que aún estamos aprendiendo a leer. Esto fue Datos y ociosidades.",
+      "visual_description": "Dorsal submarina en capas de papel, montículos activos y apagados; cierre sobrio.",
+      "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text Dorsal submarina en capas de papel, montículos activos y apagados; cierre sobrio. Añadir solo esta escena; conservar diorama de papel rasgado, cartulina y fieltro; sin texto dentro de la imagen.",
+      "source_ids": [
+        "SRC-001"
+      ],
+      "ambiente": "Corriente submarina tenue.",
+      "sfx": [
+        "Pulso discreto de ambiente oceánico."
+      ],
+      "dramatic_beat": "Cierre que devuelve al hallazgo.",
+      "scene_function": "Pagar el gancho y cerrar.",
+      "causal_bridge_from_previous": "La oxidación ordena, no fecha.",
+      "question_state": "Cierre que devuelve al hallazgo.",
+      "reason_to_continue": "No se abre otro tema.",
+      "new_information": "Catorce campos, cuatro con rocas del manto expuestas y muchos ya inactivos. El fondo marino conserva historias que aún estamos aprendiendo a leer. Esto fue Datos y ociosidades."
+    }
+  ],
+  "cortinilla_fuentes": {
+    "duration_seconds": 6,
+    "titulo": "Fuentes",
+    "aviso": "Artículo científico primario y referencia geográfica institucional; no se han generado medios.",
+    "firma": "Datos y ociosidades",
+    "source_ids": [
+      "SRC-001",
+      "SRC-002"
+    ]
+  },
+  "audio": {
+    "music_asset": null,
+    "music_plan": "Cama submarina grave y tenue; solo plan sonoro.",
+    "cama_musical": "sintetico:menor_calma",
+    "music_license": null,
+    "mix_notes": "Voz al frente; evitar dramatización de peligro."
+  },
+  "export": {
+    "resolution": "1080x1920",
+    "fps": 30,
+    "render_status": "NOT_GENERATED"
+  },
+  "publicacion": {
+    "status": "PENDIENTE_DECISION_GROK",
+    "platforms": [
+      "YouTube Shorts",
+      "TikTok",
+      "Facebook Reels"
+    ],
+    "note": "No publicar ni programar desde preproducción textual."
+  },
+  "estado": "BORRADOR_PENDIENTE_QA_NARRATIVA",
+  "production_mode": "storyboard_only",
+  "validation_notes": [
+    "Borrador textual; pendiente lectura en frío independiente y ejecución del validador Python real.",
+    "El punto cartográfico identifica solo la triple unión regional."
+  ],
+  "linea_tematica_provisional": "Océanos / geología marina / sistemas hidrotermales.",
+  "approved_assets": [],
+  "risk_notes": [
+    "Catorce campos no significa catorce respiraderos individuales.",
+    "La oxidación describe secuencia relativa, no edades absolutas.",
+    "No asignar coordenadas individuales sin extraerlas de tablas o figuras suplementarias.",
+    "No convertir el hallazgo en evaluación ambiental ni autorización para minería submarina."
+  ],
+  "fecha_objetivo": "2026-11-18",
+  "slot_local": "23:30",
+  "slot_cesta": "dato_del_dia",
+  "narrative_qa": {
+    "status": "PENDING_INDEPENDENT_COLD_READ",
+    "score": null,
+    "review_basis": "pendiente_lectura_en_frio_solo_narracion",
+    "reviewed_at": null,
+    "reviewer_role": null,
+    "checks": {
+      "pregunta_central_reconstruible": false,
+      "apertura_in_medias_res": false,
+      "progresion_por_escena": false,
+      "transiciones_causales": false,
+      "giro_cientifico_explicado": false,
+      "limite_evidencia_explicito": false,
+      "payoff_cierre_apertura": false
+    },
+    "critical_flags": [
+      "QA narrativa independiente pendiente"
+    ]
+  }
+}
