@@ -1,0 +1,58 @@
+name: CAPCOT — validar preproducción Kuroshio
+
+on:
+  push:
+    branches:
+      - feature/capcot-video-discovery-continuity
+    paths:
+      - ".github/workflows/validar-kuroshio.yml"
+      - "proyectos/2026-11-18_dato-kuroshio-puente-atmosferico/**"
+      - "scripts/validar_storyboard.py"
+      - "scripts/estilos.json"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: capcot-validar-kuroshio
+  cancel-in-progress: false
+
+jobs:
+  validar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Validar storyboard textual
+        run: |
+          python scripts/validar_storyboard.py proyectos/2026-11-18_dato-kuroshio-puente-atmosferico/storyboard.json
+
+      - name: Verificar expediente textual y ausencia de medios declarados
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          root = Path("proyectos/2026-11-18_dato-kuroshio-puente-atmosferico")
+          required = ("storyboard.json", "fuentes.md", "ESTADO_EJECUCION.md")
+          missing = [name for name in required if not (root / name).is_file()]
+          if missing:
+              raise SystemExit("Faltan archivos del expediente: " + ", ".join(missing))
+          sb = json.loads((root / "storyboard.json").read_text(encoding="utf-8"))
+          if sb.get("production_mode") != "storyboard_only":
+              raise SystemExit("El expediente dejó de ser storyboard_only")
+          if sb.get("approved_assets") != []:
+              raise SystemExit("approved_assets debe permanecer vacío")
+          if sb.get("export", {}).get("render_status") != "NOT_GENERATED":
+              raise SystemExit("No declarar render generado en preproducción")
+          print("Expediente textual íntegro; medios no generados; publicación no autorizada.")
+          PY
