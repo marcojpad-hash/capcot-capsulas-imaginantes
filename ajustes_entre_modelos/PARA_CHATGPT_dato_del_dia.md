@@ -242,3 +242,11 @@ Entrega: `cola/entrada/2026-11-01_dato-cambio-horario-corazon/` con `storyboard.
 - **Tip:** al estudiar una lista corta (nombres, vocabulario, pendientes), decir en voz alta solo lo importante, no todo.
 - **Storyboard 8 escenas (sin frames):** 1 in medias res (alguien susurra una lista que no recordará) · 2 contexto llano · 3 conflicto (leer en silencio parece suficiente) · 4 dato 1 · 5 dato 2 (contraste) · 6 giro (por qué: el acto de hablar vuelve la palabra distintiva) · 7 límite (120–170 car.: laboratorio, listas de palabras, efecto se diluye si todo se dice en voz alta) · 8 giro+pregunta+sello (110–170 car. antes de «Esto fue Datos y ociosidades.»).
 - **Entrega:** `cola/entrada/2026-11-17_dato-<slug>/` (storyboard.json, fuentes.md, ESTADO_EJECUCION.md = PREPARADO_PENDIENTE_REVISION_GROK) antes de 21:00 CDMX. Formato, voz y línea editorial como arriba. Sin frames, audio ni publicación. Montaje/QA/publicación: Grok app.
+
+---
+## BRIEF HOY 2026-11-18 — slot 23:30 CDMX (sin paquete en cola a las 10:00)
+- **Estado:** no hay paquete `dato` del 18-nov en `cola/entrada/`. Kuroshio (proyectos/2026-11-18_dato-kuroshio-puente-atmosferico) ocupa 17:00; NO reutilizar para 23:30.
+- **Candidato (de docs/briefs/2026-11-18_RADAR_CAPCOT.md):** catorce campos hidrotermales nuevos en el Índico (artículo Nature publicado hoy). Fuente directa dio HTTP 500 y DOI sin resolver: **verifica URL/DOI primario tú mismo antes de escribir**; si no verificas, elige otro dato del 17–18 nov con fuente primaria. No inventes DOI ni cifras.
+- **Hecho usable:** explicar en una frase llana qué es un respiradero hidrotermal; qué cambia con el hallazgo; ancla científica; límite del estudio.
+- **Storyboard:** 8 escenas, sin frames. Arco: in medias res → conflicto → desarrollo → límite (penúltima) → giro + pregunta que atrape + sello «Esto fue Datos y ociosidades.» (última, 110–170 car. antes del sello). Estructura distinta a «¿Sabías qué?».
+- **Entrega:** `cola/entrada/2026-11-18_dato-<slug>/` con storyboard.json, fuentes.md, ESTADO_EJECUCION.md = PREPARADO_PENDIENTE_REVISION_GROK. TT AI ON / FB OFF. Hashtags 3–5.
