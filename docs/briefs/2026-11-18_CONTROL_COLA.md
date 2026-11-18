@@ -255,3 +255,46 @@ El storyboard conservado en `cola/bloqueados/<id>/storyboard.json` referencia lo
 En esta rama no existe el directorio `cola/estado/`. No se encontraron estados machine-readable para estos tres IDs en esa ruta. Esto deja la recepción formal sin confirmación en el registro de esa rama; no permite concluir que no hubo entrega manual, lectura por Grok o trabajo externo. Tampoco se usa un fallo de Actions como sustituto de esa evidencia.
 
 **Corrección de auditoría:** el paquete de ratas topo no debe describirse como “medios no generados” ni como “sin trabajo audiovisual”: hay ocho PNG versionados desde el 12-nov. El estado de render/QA/publicación queda separado y no confirmado por esos PNG.
+
+
+## Reconciliación obligatoria contra `main` — 18-nov-2026
+
+La revisión exclusiva de `feature/capcot-video-discovery-continuity` no representaba el estado operativo completo. Se consultó por separado `main` y se contrastaron árboles, sidecars y commits de ambos IDs. Esta sección prevalece sobre cualquier conclusión anterior de “sin procesamiento” basada únicamente en la rama de auditoría.
+
+### ASTRA / robot en órbita — 9-nov
+
+En `main`, `cola/entrada/2026-11-09_dato-robot-ensambla-orbita/` sí contiene:
+- 9 imágenes JPG `scene_001.jpg`–`scene_009.jpg` en `frames/`.
+- `capsula.mp4` (25,795,339 bytes), `portada.jpg`, subtítulos ES/EN, guiones, storyboards y sidecars.
+- `qa.json`: 21 comprobaciones, todas `ok=true`; duración 87.57 s, 1080×1920, H.264/AAC, 30 fps, -14.4 LUFS, cobertura de subtítulos 100%.
+- `programacion.json`: YouTube ID `ZG4iQgmWrLI`; URL https://youtube.com/shorts/ZG4iQgmWrLI; estado `programado`; YouTube, TikTok y Facebook programados para el 21-nov-2026 a las 19:00 CDMX. Los IDs finales de TikTok/Facebook todavía aparecen null, pero el sidecar registra las programaciones y apunta a capturas existentes en `data/evidencia/2026-11-14/`.
+
+La secuencia de commits confirma que el paquete fue montado después del marcador inicial: 14-nov-2026 20:38Z se registró el MP4 y QA 21/21; 14-nov-2026 20:44Z se registró el ID y programación de YouTube; 14-nov-2026 21:10Z se registraron las programaciones TT/FB; el 15-nov se añadió el release en inglés. La nota de `ESTADO_EJECUCION.md` y el marcador de `handoffs/grok_inbox/` conservan estados anteriores a esos cambios. El marcador `pending` no refleja el estado posterior del paquete.
+
+**Clasificación:** `PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR`; programación futura registrada. No crear otra cola ni volver a enviar el paquete.
+
+### Ratas topo de Damaraland — 11-nov
+
+En `main` hay evidencia de montaje, QA y publicación registrada:
+- `salidas/2026-11-11_dato-ratas-topo-damaraland/` contiene storyboard, `qa.json`, `programacion.json`, `publicacion.json`, `verificacion_yt.json`, metadata, licencias, TikTok y Facebook.
+- QA audiovisual: 21/21 comprobaciones `ok=true`; duración 87.90 s; 1080×1920; 30 fps; -14.3 LUFS; subtítulos con cobertura 100%.
+- YouTube ID oficial Grok Bot: `WcTviUWqbes`, https://youtube.com/shorts/WcTviUWqbes.
+- TikTok: https://www.tiktok.com/@datosyociosidades/video/7707137000121404680.
+- Facebook content ID: `122109293493518983`.
+- `programacion.json` registra `publicado_yt_tt_fb` y una actualización del 12-nov-2026 07:28 CDMX que confirma público en las tres plataformas. El historial del archivo muestra una actualización posterior, 12-nov 13:44Z, que dice explícitamente que YT, TT y FB ya estaban publicados. Los sidecars de YouTube con `privacyStatus=private` fueron escritos el 12-nov 04:22Z, antes de la hora programada 07:00 CDMX; no contradicen la confirmación posterior.
+- `RELEVO.md` registra también el video de Pecas `knAElNo4raI` y señala que Marco autorizó expresamente dejar ambos videos en vivo. Es un duplicado autorizado, no una duplicación que deba corregirse ni redispatcharse.
+- El MP4 no aparece en el árbol de `salidas/` consultado; el sidecar sí registra el video y hay evidencia de publicación en plataformas. No se afirma que el archivo maestro esté versionado en GitHub.
+
+Los commits de producción están fechados el 12-nov-2026 04:21–04:22Z; el commit de relevo identifica el montaje oficial y el duplicado autorizado el 13-nov.
+
+**Clasificación:** `PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR`; publicación en YT/TT/FB confirmada por el registro operativo posterior. Mantener los dos videos conforme a la autorización explícita.
+
+### Bus de Imaginantes — Issue #18
+
+Se leyó el Issue #18 de `marcojpad-hash/agente-cero-costo` y su evento `conector/bus/gh-issue-18.json`. El Issue sigue abierto y contiene la orden dirigida a Grok para subir los nueve frames ASTRA y, después, proponer el nuevo hook de paquetes por Issues. El comentario de GitHub Actions confirma que el evento se incorporó al bus. El evento no es un recibo de entrega audiovisual; sí demuestra que la instrucción quedó registrada en el bus compartido.
+
+La carpeta `handoffs/grok_done/` no aparece en `main`; el marcador `grok_inbox` conserva `pending`. Esos marcadores no se deben usar para negar el trabajo posterior, que está acreditado por los commits, MP4, QA, programación y publicaciones descritos arriba. No se modificó el Issue, el bus, los estados ni `main`.
+
+### Corrección de alcance de auditoría
+
+A partir de esta comparación, el estado de cualquier paquete se reconcilia entre `main`, la rama de trabajo, `proyectos/`, `cola/entrada/`, `salidas/`, el bus de Issues, marcadores de handoff, commits y sidecars. Un marcador antiguo o una rama parcial no sustituye esa reconciliación. Los IDs ASTRA y ratas topo quedan excluidos de cualquier redispatch o reprocesamiento duplicado.
