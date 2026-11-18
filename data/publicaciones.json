@@ -965,7 +965,20 @@
     "miniatura": "portada.jpg (thumbnails.set OK 17-nov 15:20 CDMX)",
     "containsSyntheticMedia": true,
     "selfDeclaredMadeForKids": false,
-    "nota": "Resubida recodificada (frame 0 = portada). Original Rg-iTgMExWw (1 vista) y 4lOWeMn2RCo (8 vistas) siguen públicos, no se tocaron. Orden Mj 17-nov 15:00. TT/FB no programados en esta pasada."
+    "nota": "Resubida recodificada (frame 0 = portada). Original Rg-iTgMExWw (1 vista) y 4lOWeMn2RCo (8 vistas) siguen públicos, no se tocaron. Orden Mj 17-nov 15:00. TT y FB se publicaron al momento ~07:36–07:42 CDMX el 18-nov porque el slot 07:00 ya había pasado.",
+    "tiktok": "publicado",
+    "facebook": "publicado",
+    "tiktok_post_id": "7709504808167689480",
+    "tiktok_url": "https://www.tiktok.com/@datosyociosidades/video/7709504808167689480",
+    "tiktok_schedule_local": "2026-11-18 07:36 CDMX (al momento; el slot 07:00 ya había pasado)",
+    "facebook_content_id": "122111130627518983",
+    "facebook_post_id": "3194312724106388",
+    "facebook_url": "https://www.facebook.com/reel/3194312724106388",
+    "facebook_schedule_local": "2026-11-18 07:42 CDMX (al momento; el slot 07:00 ya había pasado)",
+    "tiktok_evidencia": "data/evidencia/2026-11-18/tt_lista_despues.png",
+    "facebook_evidencia": "data/evidencia/2026-11-18/fb_publicadas.png",
+    "tiktok_nota": "Publicado al momento ~07:36 CDMX en TikTok Studio (@datosyociosidades). Everyone (pasó por Content under review/Only me y quedó Everyone), etiqueta de contenido generado por IA ON, portada = hipo_portada.jpg (título «¿QUIÉN DISPARA ESE HIC?»). Caption: dato + #hipo #cuerpo #ciencia #curiosidades #datosinteresantes (sin YouTube ni #shorts). Verificado en la lista de Posts el 18-nov a las 07:37 CDMX.",
+    "facebook_nota": "Reel de la Página «Datos y ociosidades» publicado al momento ~07:42 CDMX en Meta Business Suite. Público, miniatura portada del título, sin etiqueta IA. UI miércoles 18 de noviembre 7:42 (sin zona; coincide con CDMX). Verificado en Publicadas el 18-nov a las 07:45 CDMX. Permalink: https://www.facebook.com/reel/3194312724106388"
   },
   {
     "fecha": "2026-11-19",
