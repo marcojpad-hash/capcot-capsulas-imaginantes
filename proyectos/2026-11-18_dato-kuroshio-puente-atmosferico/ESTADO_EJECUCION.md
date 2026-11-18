@@ -22,7 +22,7 @@
 - Regiones del mapa tomadas de las cajas de análisis publicadas en la figura 1; representadas como regiones delimitadas, no como pines ni trayectorias.
 
 ## Pendiente bloqueante
-- Ejecutar realmente `python scripts/validar_storyboard.py proyectos/2026-11-18_dato-kuroshio-puente-atmosferico/storyboard.json` en un entorno Python del repositorio y conservar la salida.
+- Ejecutar realmente `python scripts/validar_storyboard.py proyectos/2026-11-18_dato-kuroshio-puente-atmosferico/storyboard.json` en un entorno Python del repositorio y conservar la salida. Se añadió `.github/workflows/validar-kuroshio.yml`, que ejecuta esta validación y comprueba la integridad del expediente en cada cambio de este proyecto o del validador.
 - No copiar a `cola/entrada` ni entregar a Grok hasta obtener ese resultado real.
 
 ## Alcance
