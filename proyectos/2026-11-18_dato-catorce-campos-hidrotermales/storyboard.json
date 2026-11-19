@@ -337,22 +337,26 @@
   "slot_local": "23:30",
   "slot_cesta": "dato_del_dia",
   "narrative_qa": {
-    "status": "PENDING_INDEPENDENT_COLD_READ",
-    "score": null,
-    "review_basis": "pendiente_lectura_en_frio_solo_narracion",
-    "reviewed_at": null,
-    "reviewer_role": null,
+    "status": "FAIL",
+    "score": 68,
+    "review_basis": "lectura_en_frio_solo_narracion",
+    "reviewer_role": "auditor_capcot_independiente",
+    "reviewed_at": "2026-11-19T15:04:50-06:00",
     "checks": {
       "pregunta_central_reconstruible": false,
-      "apertura_in_medias_res": false,
+      "apertura_in_medias_res": true,
       "progresion_por_escena": false,
       "transiciones_causales": false,
       "giro_cientifico_explicado": false,
-      "limite_evidencia_explicito": false,
+      "limite_evidencia_explicito": true,
       "payoff_cierre_apertura": false
     },
     "critical_flags": [
-      "QA narrativa independiente pendiente"
-    ]
+      "PREGUNTA_CENTRAL_NO_RECONSTRUIBLE",
+      "SECUENCIA_DE_HALLAZGOS_SIN_PROGRESION_CAUSAL",
+      "GIRO_CIENTIFICO_NOMBRADO_PERO_NO_EXPLICADO",
+      "CIERRE_RESUMEN_SIN_PAYOFF"
+    ],
+    "reviewer_notes": "La lectura concatenada identifica catorce campos y enumera localización, métodos, litologías, fluidos, actividad y oxidación, pero no sostiene una sola pregunta central. Las escenas agregan resultados en serie sin que cada hallazgo cause o complique el siguiente. La diferencia entre campos basálticos y ultramáficos se menciona, pero no se explica su mecanismo; el cierre resume el inventario en vez de pagar la apertura."
   }
 }
