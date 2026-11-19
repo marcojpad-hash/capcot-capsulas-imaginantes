@@ -362,5 +362,23 @@
     "No decir que el equipo fotografió dos estrellas dentro del gas; la secuencia se reconstruye con fotometría y espectros.",
     "Las masas son estimaciones del modelo que mejor explica los datos, no pesajes directos.",
     "No convertir la eyección estimada en una supernova ni presentar la velocidad como trayectoria cartografiada."
-  ]
+  ],
+  "narrative_qa": {
+    "status": "PASS",
+    "score": 90,
+    "review_basis": "lectura_en_frio_solo_narracion",
+    "reviewer_role": "auditor_capcot_independiente",
+    "reviewed_at": "2026-11-19T15:04:50-06:00",
+    "checks": {
+      "pregunta_central_reconstruible": true,
+      "apertura_in_medias_res": true,
+      "progresion_por_escena": true,
+      "transiciones_causales": true,
+      "giro_cientifico_explicado": true,
+      "limite_evidencia_explicito": true,
+      "payoff_cierre_apertura": true
+    },
+    "critical_flags": [],
+    "reviewer_notes": "El aumento de brillo ya en curso abre la pregunta sobre qué ocurre dentro de la gigante. La progresión conecta espectros, masas estimadas, espiralamiento, fricción, calentamiento, fusión y expulsión. El giro físico está explicado por la transferencia de energía orbital. La narración distingue la reconstrucción observacional de una imagen directa y conserva las masas/velocidades como estimaciones del modelo; el cierre regresa al brillo de siete años."
+  }
 }
