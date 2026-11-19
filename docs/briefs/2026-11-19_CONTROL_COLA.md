@@ -24,8 +24,8 @@ Los dos archivos tienen 8 escenas, 197 y 188 palabras respectivamente, 84 s tota
 La lectura en frío se registró directamente en ambos storyboard.json: los siete checks están en true, review_basis=lectura_en_frio_solo_narracion, critical_flags=[] y reviewer_role=auditor_capcot_independiente. No se reescribió narración ni claims.
 
 Bloqueos:
-- El storyboard de oro tiene DOI 10.1038/s41467-026-78158-9 con doi_validation_status=PENDIENTE_RESOLVEDOR. La página/PDF editorial fue consultada, pero no se confirmó el resolvedor/Crossref.
-- El storyboard de la estrella tiene DOI 10.1038/s41586-026-11221-z con verificación pendiente de resolvedor/Crossref.
+- El storyboard de oro tiene DOI 10.1038/s41467-026-78158-9 con doi_validation_status=PENDIENTE_RESOLVEDOR. La página/PDF editorial fue consultada, pero no se confirmó el resolvedor/Crossref. Main no contiene una publicación registrada para el 19-nov 23:30; tampoco se encontró un paquete con ese slot. Main sí conserva el proyecto msl-acetilacion del 19-nov sin slot_local, por lo que ese artefacto no permite descartar por sí solo una asignación no registrada.
+- El storyboard de la estrella tiene DOI 10.1038/s41586-026-11221-z con verificación pendiente de resolvedor/Crossref. Main no registra paquete para 19-nov 17:00; la parrilla pública de main muestra Juno a las 13:30 y ADN a las 19:00. No hay conflicto exacto de slot, pero art_deco_poster ya figura en la rotación de Juno ese mismo día.
 - El mapa celeste de la estrella usa coordenadas RA/Dec. El validador actual solo acepta lat/lon geográficas para puntos; la lectura estática devuelve scene_002:map_point. No se transforma RA/Dec en coordenadas terrestres ni se inventa una proyección.
 - art_deco_poster del storyboard de la estrella repite el estilo que main registra para Juno el mismo 19-nov a las 13:30. PLAN_MAESTRO prohíbe repetir estilo el mismo día. Es un conflicto de rotación, no un fallo de lectura narrativa.
 
@@ -67,7 +67,7 @@ Los proyectos del 14, 15 y 17-nov son los únicos de este grupo con QA PASS, rev
 
 ## 4. Lote obligatorio 5–7 noviembre
 
-Los 12 IDs se compararon con data/horario_semana_2026-11-01_07.json. project_id, fecha_objetivo, slot_local y slot_cesta coinciden. El slot 2026-11-07 17:45 corresponde exactamente a 2026-11-07_inter-nubes-pesan; extra-nubes-pesan es material de origen, no segundo proyecto. El storyboard canónico de árboles sigue tratando redes micorrícicas y Karst et al. 2023: no se marca desajuste temático. La variante de respiración nocturna en bloqueados es otro artefacto.
+Los 12 IDs se compararon con data/horario_semana_2026-11-01_07.json. project_id, fecha_objetivo, slot_local y slot_cesta coinciden. El slot 2026-11-07 17:45 corresponde exactamente a 2026-11-07_inter-nubes-pesan; extra-nubes-pesan es material de origen, no segundo proyecto. El storyboard canónico de árboles sigue tratando redes micorrícicas y Karst et al. 2023: no se marca desajuste temático. El blob SHA histórico indicado para el canónico es 854c12ed9b77f82f66ec736797dea4d700983d78; el blob actual de la copia con QA es 05618f1d5d2cd8f713ee43ac802bcfb04bb9bb1d. La diferencia corresponde al archivo actualizado, no a un cambio de tema. La variante de respiración nocturna en bloqueados es otro artefacto.
 
 Los 12 tienen 7–8 escenas, 170–221 palabras, 78 s de escenas + 6 s de cortinilla, ganchos de 3–5 palabras, approved_assets=[] y render_status=NOT_GENERATED. No hay asset_filename ni asset_type en estos storyboard.json. Sin embargo, todos omiten los seis campos narrativos obligatorios por escena (dramatic_beat, scene_function, causal_bridge_from_previous, question_state, reason_to_continue, new_information). Además, los arrays SFX están vacíos en la mayoría de las escenas; la Receta exige declarar el silencio explícitamente. El proyecto de árboles tampoco tiene capa de mapa ni de dato/gráfico. Por tanto, los dos QA PASS no superan la compuerta estructural.
 
@@ -130,7 +130,7 @@ Inventario en la rama de trabajo:
 
 La entrada de clavo fue creada el 7-nov 18:00 CDMX; el storyboard declara objetivo 7-nov 23:30, pero data/horario_2026-11-08 registra su programación para 8-nov 23:30 con YouTube EwZ3dHalUn0 y TikTok/Facebook programados. La fecha del ID/storyboard y la fecha efectiva del registro de programación discrepan. No se evalúa narrativamente por la exclusión 23:30; solo se constata que la ruta en carpeta no dispara el workflow.
 
-La entrada del robot se creó el 9-nov 18:40 CDMX para el slot original 23:30. En main hay un paquete completo de producción, con capsula.mp4 real en el árbol, y programación nueva para 21-nov 19:00. Se clasifica PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR.
+La entrada del robot se creó el 9-nov 18:40 CDMX para el slot original 23:30. En main hay un paquete completo de producción, con capsula.mp4 real en el árbol, y programación nueva para 21-nov 19:00. Se clasifica PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR. No existe archivo historial_youtube en el árbol; por ello no se puede certificar un inventario histórico completo de IDs. El segundo ID ztIkYcXB91U de Arena cantante, aún descrito como programado y sin privacidad, permanece como riesgo de duplicado.
 
 Última ejecución observada de capcot-grok-dispatch: 1-nov-2026, run 41306776689, failure. Error literal: “Falta configurar GROK_WEBHOOK_URL.” No hay ejecuciones de dispatch posteriores en la rama. El run antiguo no permite confirmar el estado actual de GROK_WEBHOOK_TOKEN; no se exponen valores de secretos.
 
@@ -145,7 +145,7 @@ registro_editorial.py combina proyectos, cola de entrada, salidas y data selecci
 - La rotación de main registra art_deco_poster para Juno el 19-nov 13:30; el borrador de estrella usa el mismo estilo a las 17:00. También main registra papel_rasgado_capas para sinergia-algas el 18-nov 19:00; catorce campos usa el mismo estilo a las 23:30. No se modifican decisiones ni data.
 - data/estilos_usados.json, temas_del_dia.json, rotacion.json y publicaciones.json de la rama de trabajo están atrasados respecto de proyectos/ y salidas/; main contiene registros más recientes. No se editan data ni main.
 - data/horario_semana_2026-11-01_07.json mantiene pedir_chatgpt en los 12 slots, pese a las salidas y sidecars señalados. No se altera la parrilla.
-- No se detectó una actualización oficial nueva que justificara revisar las integraciones de APIs en este run.
+- No se encontró en los documentos ni briefs del repositorio un aviso oficial nuevo que justificara revisar APIs. No se hizo una búsqueda externa de cambios de proveedor.
 
 ## 8. Cambios realizados y límites
 
@@ -158,7 +158,7 @@ Cambios realizados exclusivamente en la rama de trabajo:
 
 No se cambió narración, claims, fuentes, data/*.json, main, workflows, secretos, permisos, salidas ni estados Grok. No se creó ninguna entrada de cola, no se movió ningún archivo bloqueado, no se envió payload y no se generó medio.
 
-Incidencia de ejecución: la actualización de ESTADO_EJECUCION de Kuroshio coincidió con el path filter de validar-kuroshio.yml y disparó un workflow de validación (run 44617395667). Terminó con OK y solo ejecutó el validador estructural; no fue un dispatch a Grok ni generó medios. Esto no debió activarse bajo la instrucción de no disparar workflows y queda registrado. No se activaron más workflows.
+Incidencia de ejecución: la actualización de ESTADO_EJECUCION de Kuroshio coincidió con el path filter de validar-kuroshio.yml y disparó un workflow de validación (run 44617395667, commit 369d0da1007f6b2eafd3502bd369c4284d3acee1, 19-nov 15:18:16–15:18:35 CDMX). Comando exacto: python scripts/validar_storyboard.py proyectos/2026-11-18_dato-kuroshio-puente-atmosferico/storyboard.json. Resultado: OK, salida 0; no incluyó --check-doi. No fue un dispatch a Grok ni generó medios. Esto no debió activarse bajo la instrucción de no disparar workflows y queda registrado. No se activaron más workflows.
 
 ## 9. Decisión de handoff
 
