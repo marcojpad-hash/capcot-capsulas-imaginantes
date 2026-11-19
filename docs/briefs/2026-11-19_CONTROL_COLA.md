@@ -158,7 +158,7 @@ Cambios realizados exclusivamente en la rama de trabajo:
 
 No se cambió narración, claims, fuentes, data/*.json, main, workflows, secretos, permisos, salidas ni estados Grok. No se creó ninguna entrada de cola, no se movió ningún archivo bloqueado, no se envió payload y no se generó medio.
 
-Incidencia de ejecución: la actualización de ESTADO_EJECUCION de Kuroshio coincidió con el path filter de validar-kuroshio.yml y disparó un workflow de validación (run 44617395667, commit 369d0da1007f6b2eafd3502bd369c4284d3acee1, 19-nov 15:18:16–15:18:35 CDMX). Comando exacto: python scripts/validar_storyboard.py proyectos/2026-11-18_dato-kuroshio-puente-atmosferico/storyboard.json. Resultado: OK, salida 0; no incluyó --check-doi. No fue un dispatch a Grok ni generó medios. Esto no debió activarse bajo la instrucción de no disparar workflows y queda registrado. No se activaron más workflows.
+Incidencia de ejecución: las dos escrituras consecutivas de ESTADO_EJECUCION de Kuroshio coincidieron con el path filter de validar-kuroshio.yml y dispararon dos workflows de validación: run 44617395667, commit 369d0da1007f6b2eafd3502bd369c4284d3acee1, 19-nov 15:18:16–15:18:35 CDMX; y run 44617431497, commit b399dda95661b2e134a24c99d9ede803f597f1bb, 19-nov 15:18:28–15:18:44 CDMX. Ambos ejecutaron exactamente python scripts/validar_storyboard.py proyectos/2026-11-18_dato-kuroshio-puente-atmosferico/storyboard.json y ambos devolvieron OK, salida 0; ninguno incluyó --check-doi. No fueron dispatch a Grok ni generaron medios. Esto no debió activarse bajo la instrucción de no disparar workflows y queda registrado. No se activaron más workflows.
 
 ## 9. Decisión de handoff
 
