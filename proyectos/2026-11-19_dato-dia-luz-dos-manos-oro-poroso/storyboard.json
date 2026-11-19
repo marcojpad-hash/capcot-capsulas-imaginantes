@@ -393,5 +393,23 @@
     "El exceso enantiomérico >25% se limita a la fotocleavage de metalaxil bajo las condiciones del estudio; no generalizar a cualquier molécula.",
     "La detección en rango de attomoles no equivale a un límite universal para cualquier analito.",
     "El mapa usa centros urbanos de afiliación, no coordenadas de los laboratorios ni del experimento."
-  ]
+  ],
+  "narrative_qa": {
+    "status": "PASS",
+    "score": 91,
+    "review_basis": "lectura_en_frio_solo_narracion",
+    "reviewer_role": "auditor_capcot_independiente",
+    "reviewed_at": "2026-11-19T15:04:50-06:00",
+    "checks": {
+      "pregunta_central_reconstruible": true,
+      "apertura_in_medias_res": true,
+      "progresion_por_escena": true,
+      "transiciones_causales": true,
+      "giro_cientifico_explicado": true,
+      "limite_evidencia_explicito": true,
+      "payoff_cierre_apertura": true
+    },
+    "critical_flags": [],
+    "reviewer_notes": "La anomalía de señal casi ausente abre una pregunta concreta sobre cómo distinguir enantiómeros. La secuencia pasa de plantilla quiral y red porosa a interferencia, hotspots, medición y fotocleavage. El giro es la asimetría colectiva que no aporta cada componente por separado. El límite se mantiene en metalaxil racémico y condiciones experimentales específicas; el cierre vuelve a la señal inicial."
+  }
 }
