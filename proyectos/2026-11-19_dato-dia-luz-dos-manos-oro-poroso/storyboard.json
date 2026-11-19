@@ -1,0 +1,397 @@
+{
+  "_schema": "CAPCOT_STORYBOARD_TEXT_V2",
+  "project_id": "2026-11-19_dato-dia-luz-dos-manos-oro-poroso",
+  "fecha_objetivo": "2026-11-19",
+  "slot_local": "23:30",
+  "slot_cesta": "dato_del_dia",
+  "serie": "Datos y ociosidades",
+  "title": "Un sustrato de oro poroso amplifica la quiralidad óptica para distinguir enantiómeros",
+  "titulo": "La luz encontró dos manos",
+  "language": "es-MX",
+  "aspect_ratio": "9:16",
+  "target_duration_seconds": 84,
+  "estructura": "mecanismo_experimental",
+  "audience": "Público general interesado en química, óptica y materiales microscópicos.",
+  "occasion": "Dato científico del día; slot 23:30 autorizado.",
+  "resumen": "Un artículo de Nature Communications publicado el 19 de noviembre combina una plantilla quiral tipo shuriken con una red de oro nanoporoso. La interferencia de ambos componentes produce hotspots superquirales; el sustrato detecta señales en rango de attomoles y permite fotocleavage enantioselectivo de metalaxil bajo condiciones experimentales concretas.",
+  "narrative_contract": {
+    "central_question": "¿Cómo puede una superficie de oro ayudar a la luz a distinguir moléculas que son imágenes especulares?",
+    "promise": "Explicar cómo un patrón quiral y una red porosa producen campos superquirales que amplifican la respuesta óptica.",
+    "stakes": "Distinguir enantiómeros es difícil porque las moléculas quirales interactúan débilmente con la luz; mejorar esa señal abre posibilidades de detección y fotoquímica.",
+    "scientific_turn": "La plantilla shuriken y la red nanoporosa no bastan por separado: sus campos interfieren y crean hotspots donde la quiralidad óptica local aumenta.",
+    "evidence_limit": "El resultado procede de un sustrato experimental y de condiciones concretas: metalaxil racémico 10⁻⁴ M, luz continua linealmente polarizada de 780 nm y tres muestras independientes. No es un sensor clínico ni demuestra rendimiento universal.",
+    "payoff": "La superficie no cambia la molécula; organiza la luz para hacer visible una diferencia que antes casi se perdía, pagando la apertura."
+  },
+  "trend_source": {
+    "termino": "Chiral SERS and photochemistry via collective hotspot asymmetry",
+    "fecha_publicacion": "2026-11-19",
+    "url": "https://www.nature.com/articles/s41467-026-78158-9_reference.pdf"
+  },
+  "editorial_status": "PROPUESTA_PENDIENTE_DE_GROK",
+  "arco": {
+    "hook_medias_res": "La señal casi desaparece al intentar distinguir dos moléculas espejo.",
+    "desarrollo": "Una plantilla shuriken y una red de oro poroso crean campos superquirales mediante interferencia.",
+    "cierre_historia": "El sustrato detecta señales en rango de attomoles y permite fotocleavage enantioselectivo bajo condiciones controladas.",
+    "reflexion_o_pregunta": "La superficie no cambia la molécula: organiza la luz. El límite experimental queda explícito."
+  },
+  "estilo_id": "microscopio_psicodelico",
+  "estilo_visual": "Microscopia psicodélica",
+  "visual_identity": {
+    "style_id": "microscopio_psicodelico",
+    "style_name": "Microscopia psicodélica",
+    "prompt_base": "1960s psychedelic poster art, flowing organic shapes, vibrant complementary colors, microscopic organisms as large central motif, simple swirling background, illustrated, not photorealistic, vertical 9:16, no text",
+    "palette": "naranja, magenta, verde lima, violeta",
+    "lighting": "Campos luminosos localizados en los hotspots; mantener intensidad y dirección de luz constantes entre escenas.",
+    "texture": "Serigrafía psicodélica con grano de impresión y formas orgánicas ilustradas; no fotorealismo.",
+    "composition": "Motivo microscópico central; el mismo patrón shuriken y la misma red porosa reaparecen con continuidad geométrica; una idea visual por plano.",
+    "negative_prompt": "No fotografía, no 3D fotorealista, no texto integrado, no logos, no estilos alternos, no estructuras químicas inventadas, no sensor médico ni dispositivo clínico.",
+    "reference_assets": [],
+    "seed": null,
+    "seed_policy": "Una semilla fija por proyecto; Grok la registra antes de generar y la mantiene en las ocho escenas. No hay assets generados en esta fase."
+  },
+  "typography_identity": {
+    "font_family": "DejaVu Sans",
+    "font_weight": "700 para gancho; 400 para subtítulos",
+    "title_style": "Gancho de cinco palabras como máximo; texto compuesto en postproducción desde el primer plano.",
+    "subtitle_style": "Bloques de máximo tres palabras; zona segura inferior.",
+    "hierarchy": "Gancho > dato/etiqueta > subtítulos.",
+    "animation": "Un movimiento tipográfico por plano; tipografía en postproducción, nunca dentro de la imagen generada."
+  },
+  "voice": {
+    "engine": "edge-tts",
+    "voice_id": "es-MX-JorgeNeural",
+    "language": "es-MX",
+    "rate": "+7%",
+    "pitch": "-2Hz",
+    "pad_seconds": 0.3,
+    "modo_pausas": "continuo"
+  },
+  "sources": [
+    {
+      "id": "SRC-001",
+      "cita_corta": "Guselnikova, O. et al. “Chiral SERS and photochemistry via collective hotspot asymmetry in metasurface-templated gold networks with disordered nanoscale porosity”. Nature Communications (2026), Article in Press.",
+      "url": "https://www.nature.com/articles/s41467-026-78158-9_reference.pdf",
+      "doi": "10.1038/s41467-026-78158-9",
+      "accessed": "2026-11-19",
+      "publication_date": "2026-11-19",
+      "supports": [
+        "Publicación online el 19-nov-2026 y lista de autores/afiliaciones.",
+        "Combinación de patrón quiral tipo shuriken y red electrodepositada de oro nanoporoso.",
+        "Campos superquirales por interacción entre quiralidad geométrica, hotspots plasmónicos y término de interferencia.",
+        "Detección en rango de attomoles y fotocleavage enantioselectivo bajo luz continua linealmente polarizada.",
+        "Exceso enantiomérico superior a 25% para metalaxil racémico bajo las condiciones experimentales descritas."
+      ],
+      "verification_status": "VERIFICADO_URL",
+      "doi_validation_status": "PENDIENTE_RESOLVEDOR; DOI visible en el PDF editorial, pero doi.org y Crossref no fueron accesibles en esta revisión."
+    },
+    {
+      "id": "SRC-002",
+      "cita_corta": "GeoNames. Tsukuba, Japón (centro urbano; coordenadas de ciudad).",
+      "url": "https://www.geonames.org/2110681/tsukuba.html",
+      "doi": null,
+      "accessed": "2026-11-19",
+      "publication_date": null,
+      "supports": [
+        "Coordenadas de centro urbano de Tsukuba para ubicar la afiliación NIMS; no el laboratorio exacto."
+      ],
+      "verification_status": "VERIFICADO_URL"
+    },
+    {
+      "id": "SRC-003",
+      "cita_corta": "GeoNames. Glasgow City, Reino Unido (centro urbano; coordenadas de ciudad).",
+      "url": "https://www.geonames.org/3333231/glasgow-city.html",
+      "doi": null,
+      "accessed": "2026-11-19",
+      "publication_date": null,
+      "supports": [
+        "Coordenadas de centro urbano de Glasgow para ubicar la afiliación University of Glasgow; no el laboratorio exacto."
+      ],
+      "verification_status": "VERIFICADO_URL"
+    },
+    {
+      "id": "SRC-004",
+      "cita_corta": "GeoNames. Brisbane, Australia (centro urbano; coordenadas de ciudad).",
+      "url": "https://www.geonames.org/2174003/brisbane.html",
+      "doi": null,
+      "accessed": "2026-11-19",
+      "publication_date": null,
+      "supports": [
+        "Coordenadas de centro urbano de Brisbane para ubicar la afiliación The University of Queensland; no el laboratorio exacto."
+      ],
+      "verification_status": "VERIFICADO_URL"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_001",
+      "arc": "hook_medias_res",
+      "duration_seconds": 10,
+      "narration": "En la muestra, la señal casi desaparece: dos moléculas espejo interactúan tan débilmente con la luz que distinguirlas cuesta.",
+      "on_screen_text": "La señal casi desaparece",
+      "visual_description": "Dos señales especulares casi se confunden en una muestra; la diferencia se pierde en un campo de luz débil, sin mostrar un laboratorio fotográfico.",
+      "image_prompt": "1960s psychedelic poster art, flowing organic shapes, vibrant complementary colors, microscopic organisms as large central motif, simple swirling background, illustrated, not photorealistic, vertical 9:16, no text Dos señales especulares casi se confunden en una muestra; la diferencia se pierde en un campo de luz débil, sin mostrar un laboratorio fotográfico.",
+      "ambiente": "Zumbido electrónico tenue, casi inaudible.",
+      "sfx": [
+        "pulso muy corto"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "microscopio_psicodelico",
+      "dramatic_beat": "La señal débil ya está ocurriendo y plantea el problema experimental.",
+      "scene_function": "Abrir con la dificultad de distinguir dos enantiómeros mediante luz.",
+      "causal_bridge_from_previous": "La señal óptica es demasiado débil para separar fácilmente las dos formas espejo.",
+      "question_state": "Sabemos que la luz apenas distingue las moléculas; falta saber qué superficie puede amplificar la diferencia.",
+      "reason_to_continue": "La escena siguiente presenta la arquitectura que intenta resolverlo.",
+      "new_information": "La dificultad de partida es la interacción débil entre moléculas quirales y luz."
+    },
+    {
+      "id": "scene_002",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "El estudio publicado hoy combina un patrón microscópico de seis brazos, parecido a una estrella ninja, con una red tridimensional de oro poroso.",
+      "on_screen_text": "Shuriken + oro poroso",
+      "visual_description": "Mapa de afiliaciones de los autores correspondientes: Tsukuba, Glasgow y Brisbane. Mostrar tres puntos de ciudad, no ubicar un laboratorio ni un sitio de experimento.",
+      "image_prompt": "1960s psychedelic poster art, flowing organic shapes, vibrant complementary colors, microscopic organisms as large central motif, simple swirling background, illustrated, not photorealistic, vertical 9:16, no text Mapa de afiliaciones de los autores correspondientes: Tsukuba, Glasgow y Brisbane. Mostrar tres puntos de ciudad, no ubicar un laboratorio ni un sitio de experimento.",
+      "ambiente": "Ambiente de laboratorio abstracto con pulso lento.",
+      "sfx": [
+        "tres toques suaves"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002",
+        "SRC-003",
+        "SRC-004"
+      ],
+      "style_id": "microscopio_psicodelico",
+      "dramatic_beat": "Aparece una arquitectura híbrida que combina dos escalas.",
+      "scene_function": "Introducir las dos piezas del sustrato y ubicar las afiliaciones de la colaboración.",
+      "causal_bridge_from_previous": "La escena 1 presenta una señal insuficiente; la respuesta comienza con un diseño que combina una geometría quiral y una red porosa.",
+      "question_state": "El estudio une un patrón de seis brazos tipo shuriken con una red tridimensional de oro poroso.",
+      "reason_to_continue": "La siguiente escena explica qué aporta cada pieza por separado.",
+      "new_information": "La estructura combina una plantilla quiral y una red de oro con poros nanométricos.",
+      "capa": {
+        "tipo": "mapa",
+        "region": [],
+        "puntos": [
+          {
+            "id": "tsukuba",
+            "label": "Tsukuba · NIMS (afiliación)",
+            "lat": 36.08333,
+            "lon": 140.11667,
+            "precision": "centro urbano"
+          },
+          {
+            "id": "glasgow",
+            "label": "Glasgow · University of Glasgow (afiliación)",
+            "lat": 55.86667,
+            "lon": -4.25,
+            "precision": "centro urbano"
+          },
+          {
+            "id": "brisbane",
+            "label": "Brisbane · University of Queensland (afiliación)",
+            "lat": -27.46794,
+            "lon": 153.02809,
+            "precision": "centro urbano"
+          }
+        ],
+        "areas": [],
+        "titulo": "Ciudades de afiliación de autores correspondientes",
+        "fuente": "SRC-001 documenta las afiliaciones; SRC-002, SRC-003 y SRC-004 aportan coordenadas GeoNames de las ciudades.",
+        "precision_note": "Puntos a escala de centro urbano, no coordenadas de los laboratorios ni del lugar exacto de los experimentos. El artículo no identifica un único sitio experimental; no inferirlo desde las afiliaciones."
+      }
+    },
+    {
+      "id": "scene_003",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "La geometría aporta una primera asimetría óptica; los poros multiplican la dispersión y crean puntos diminutos donde el campo electromagnético se concentra.",
+      "on_screen_text": "Dos piezas, dos funciones",
+      "visual_description": "Una estrella de seis brazos aporta asimetría; una red porosa de oro crea cavidades y puntos de concentración. Mostrar ambas piezas por separado antes de unirlas.",
+      "image_prompt": "1960s psychedelic poster art, flowing organic shapes, vibrant complementary colors, microscopic organisms as large central motif, simple swirling background, illustrated, not photorealistic, vertical 9:16, no text Una estrella de seis brazos aporta asimetría; una red porosa de oro crea cavidades y puntos de concentración. Mostrar ambas piezas por separado antes de unirlas.",
+      "ambiente": "Textura de pulsos pequeños, sin música adicional.",
+      "sfx": [
+        "microclics repetidos"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "microscopio_psicodelico",
+      "dramatic_beat": "La explicación separa las contribuciones de cada componente.",
+      "scene_function": "Explicar la geometría del patrón y la concentración de campo en los poros.",
+      "causal_bridge_from_previous": "La escena 2 presentó la arquitectura híbrida; esta escena descompone lo que aporta cada componente.",
+      "question_state": "El patrón shuriken aporta quiralidad geométrica; la red porosa aporta hotspots plasmónicos y dispersión múltiple.",
+      "reason_to_continue": "La combinación debe demostrar algo que cada componente por separado no produce.",
+      "new_information": "Los poros concentran el campo electromagnético en puntos diminutos."
+    },
+    {
+      "id": "scene_004",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "Pero el giro no está en cada pieza por separado: los campos se superponen e interfieren. Juntos producen zonas de luz superquiral.",
+      "on_screen_text": "El giro está en la interferencia",
+      "visual_description": "Los campos de la plantilla y de la red porosa se superponen en puntos localizados; representar interferencia como patrón visual, no como medición directa de una imagen.",
+      "image_prompt": "1960s psychedelic poster art, flowing organic shapes, vibrant complementary colors, microscopic organisms as large central motif, simple swirling background, illustrated, not photorealistic, vertical 9:16, no text Los campos de la plantilla y de la red porosa se superponen en puntos localizados; representar interferencia como patrón visual, no como medición directa de una imagen.",
+      "ambiente": "Tono sostenido que se duplica y se desfasa.",
+      "sfx": [
+        "interferencia breve"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "microscopio_psicodelico",
+      "dramatic_beat": "La novedad aparece en la interacción entre piezas, no en una sola.",
+      "scene_function": "Explicar el término de interferencia que produce los campos superquirales.",
+      "causal_bridge_from_previous": "La escena 3 explica cada componente; el hallazgo surge cuando ambos campos se combinan.",
+      "question_state": "La interferencia entre la plantilla quiral y la red porosa aumenta localmente la quiralidad óptica.",
+      "reason_to_continue": "La consecuencia debe conectarse con la capacidad de distinguir moléculas espejo.",
+      "new_information": "La superquiralidad aparece por la acción conjunta de ambos componentes."
+    },
+    {
+      "id": "scene_005",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "En esas zonas, la interacción con moléculas quirales se vuelve más intensa. Así, el sustrato puede distinguir enantiómeros, dos versiones especulares de una molécula.",
+      "on_screen_text": "Dos versiones especulares",
+      "visual_description": "Dos moléculas espejo, R y S, reciben el mismo campo superquiral; la respuesta se separa en dos señales de distinta intensidad, sin afirmar que cambie la molécula.",
+      "image_prompt": "1960s psychedelic poster art, flowing organic shapes, vibrant complementary colors, microscopic organisms as large central motif, simple swirling background, illustrated, not photorealistic, vertical 9:16, no text Dos moléculas espejo, R y S, reciben el mismo campo superquiral; la respuesta se separa en dos señales de distinta intensidad, sin afirmar que cambie la molécula.",
+      "ambiente": "Pulso estéreo que separa dos tonos.",
+      "sfx": [
+        "dos tonos contrastantes"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "microscopio_psicodelico",
+      "dramatic_beat": "El mecanismo se traduce en una diferencia detectable.",
+      "scene_function": "Conectar la superquiralidad con la discriminación de enantiómeros.",
+      "causal_bridge_from_previous": "La escena 4 explicó el campo local; ahora se muestra qué puede hacer frente a dos formas especulares.",
+      "question_state": "El sustrato amplifica la interacción óptica con enantiómeros y puede distinguirlos.",
+      "reason_to_continue": "La escena siguiente cuantifica la capacidad demostrada en el experimento.",
+      "new_information": "La superficie mejora la respuesta óptica de moléculas quirales."
+    },
+    {
+      "id": "scene_006",
+      "arc": "cierre_historia",
+      "duration_seconds": 10,
+      "narration": "Los autores detectaron señales en el rango de attomoles y obtuvieron más de 25 por ciento de exceso enantiomérico al iluminar una mezcla de metalaxil.",
+      "on_screen_text": "Attomoles · >25% ee",
+      "visual_description": "Tarjeta de datos en postproducción sobre la misma lámina de oro; representar el resultado como dato experimental específico, no como promesa comercial.",
+      "image_prompt": "1960s psychedelic poster art, flowing organic shapes, vibrant complementary colors, microscopic organisms as large central motif, simple swirling background, illustrated, not photorealistic, vertical 9:16, no text Tarjeta de datos en postproducción sobre la misma lámina de oro; representar el resultado como dato experimental específico, no como promesa comercial.",
+      "ambiente": "Pulso grave y limpio, sin crescendo triunfal.",
+      "sfx": [
+        "marcador de dato"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "microscopio_psicodelico",
+      "dramatic_beat": "El mecanismo obtiene un resultado cuantificado en el sistema experimental.",
+      "scene_function": "Presentar la sensibilidad y el exceso enantiomérico medidos.",
+      "causal_bridge_from_previous": "La escena 5 mostró la discriminación; ahora se cuantifica el alcance observado.",
+      "question_state": "La plataforma detectó señales en rango de attomoles y obtuvo >25% de exceso enantiomérico en la fotocleavage de metalaxil racémico.",
+      "reason_to_continue": "Las condiciones experimentales determinan cuánto puede generalizarse el resultado.",
+      "new_information": "El valor de >25% corresponde a un experimento específico, no a todas las moléculas.",
+      "capa": {
+        "tipo": "dato",
+        "valor": ">25% de exceso enantiomérico; detección en rango de attomoles",
+        "etiqueta": "Fotocleavage de mezcla racémica de metalaxil; luz continua linealmente polarizada de 780 nm; metalaxil 10⁻⁴ M; N=3 muestras independientes.",
+        "fuente": "SRC-001, resumen y Fig. 5; el valor de exceso enantiomérico se limita a esas condiciones."
+      }
+    },
+    {
+      "id": "scene_007",
+      "arc": "cierre_historia",
+      "duration_seconds": 9,
+      "narration": "El resultado se obtuvo con luz linealmente polarizada y continua de 780 nanómetros, sobre metalaxil racémico a 10⁻⁴ molar. No es un resultado universal.",
+      "on_screen_text": "780 nm · 10⁻⁴ M · N=3",
+      "visual_description": "La etiqueta de condiciones aparece junto al mismo sustrato; no añadir nuevas moléculas ni extrapolar a dispositivos médicos.",
+      "image_prompt": "1960s psychedelic poster art, flowing organic shapes, vibrant complementary colors, microscopic organisms as large central motif, simple swirling background, illustrated, not photorealistic, vertical 9:16, no text La etiqueta de condiciones aparece junto al mismo sustrato; no añadir nuevas moléculas ni extrapolar a dispositivos médicos.",
+      "ambiente": "Ambiente controlado y estable.",
+      "sfx": [
+        "clic de cierre de medición"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "microscopio_psicodelico",
+      "dramatic_beat": "El límite experimental se vuelve explícito antes del cierre.",
+      "scene_function": "Precisar longitud de onda, mezcla y replicación para acotar la afirmación.",
+      "causal_bridge_from_previous": "La escena 6 entrega el resultado; esta escena delimita el sistema que lo produjo.",
+      "question_state": "La reacción se midió con luz continua linealmente polarizada de 780 nm, metalaxil racémico a 10⁻⁴ M y tres muestras independientes.",
+      "reason_to_continue": "El cierre debe explicar qué hace realmente la superficie y qué no demuestra.",
+      "new_information": "No se ha demostrado un sensor clínico ni un rendimiento universal para cualquier molécula."
+    },
+    {
+      "id": "scene_008",
+      "arc": "reflexion_o_pregunta",
+      "duration_seconds": 9,
+      "narration": "La superficie no cambia la molécula: organiza la luz para hacer visible su diferencia. Es una plataforma de laboratorio, no un sensor clínico listo. Esto fue Datos y ociosidades.",
+      "on_screen_text": "La superficie organiza la luz",
+      "visual_description": "La lámina vuelve a ocupar el centro; los dos tonos espejo se distinguen dentro del mismo campo, y la escena termina en silencio.",
+      "image_prompt": "1960s psychedelic poster art, flowing organic shapes, vibrant complementary colors, microscopic organisms as large central motif, simple swirling background, illustrated, not photorealistic, vertical 9:16, no text La lámina vuelve a ocupar el centro; los dos tonos espejo se distinguen dentro del mismo campo, y la escena termina en silencio.",
+      "ambiente": "La cama cae a silencio.",
+      "sfx": [
+        "nota final breve"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "microscopio_psicodelico",
+      "dramatic_beat": "La solución paga la apertura y no introduce una aplicación no demostrada.",
+      "scene_function": "Cerrar con el mecanismo real y el límite de la plataforma.",
+      "causal_bridge_from_previous": "La escena 7 acotó las condiciones; el cierre devuelve la respuesta al problema de la señal débil.",
+      "question_state": "La superficie no transforma la molécula: organiza el campo óptico para hacer visible una diferencia pequeña.",
+      "reason_to_continue": "La pregunta inicial queda resuelta sin prometer uso clínico; se sella la serie.",
+      "new_information": "La estructura de oro hace visible una diferencia óptica bajo condiciones controladas."
+    }
+  ],
+  "cortinilla_fuentes": {
+    "duration_seconds": 6,
+    "titulo": "Fuentes",
+    "aviso": "Cortinilla textual prevista para postproducción; no implica un asset generado.",
+    "firma": "Datos y ociosidades",
+    "source_ids": [
+      "SRC-001",
+      "SRC-002",
+      "SRC-003",
+      "SRC-004"
+    ]
+  },
+  "audio": {
+    "music_asset": null,
+    "music_plan": "sintetico:pulso, cama microscópica rítmica; plan para Grok, sin archivo de audio generado.",
+    "music_license": null
+  },
+  "export": {
+    "resolution": "1080x1920",
+    "fps": 30,
+    "render_status": "NOT_GENERATED"
+  },
+  "publicacion": {
+    "status": "PENDIENTE_DECISION_GROK",
+    "platforms": [
+      "YouTube Shorts",
+      "TikTok",
+      "Facebook Reels"
+    ],
+    "note": "No publicar ni programar desde preproducción textual."
+  },
+  "estado": "BORRADOR_INVESTIGADOR_PENDIENTE_AUDITOR",
+  "production_mode": "storyboard_only",
+  "validation_notes": [
+    "Storyboard independiente para slot 23:30; la fuente primaria fue publicada online el 19-nov-2026 y el PDF editorial fue leído.",
+    "DOI visible en la fuente editorial, pero su resolución independiente queda PENDIENTE_RESOLVEDOR.",
+    "El mapa representa ciudades de afiliación de autores correspondientes; no representa laboratorios ni el sitio experimental.",
+    "No incluye narrative_qa; queda para revisión en frío independiente."
+  ],
+  "linea_tematica_provisional": "Dato científico / química y óptica experimental; ampliación provisional de la marca, sin abrir una nueva línea aprobada.",
+  "approved_assets": [],
+  "risk_notes": [
+    "No afirmar que la superficie cambia la estructura de las moléculas; organiza el campo óptico.",
+    "El exceso enantiomérico >25% se limita a la fotocleavage de metalaxil bajo las condiciones del estudio; no generalizar a cualquier molécula.",
+    "La detección en rango de attomoles no equivale a un límite universal para cualquier analito.",
+    "El mapa usa centros urbanos de afiliación, no coordenadas de los laboratorios ni del experimento."
+  ]
+}
