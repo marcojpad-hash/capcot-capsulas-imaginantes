@@ -32,3 +32,6 @@
 
 ## Actualización 2026-11-18 ~02:50 CDMX (Imaginantes, madrugada)
 Día 18-nov: 07:00 hipo, 13:30 mosquito y 19:00 algas ya programados YT (TT/FB según publicaciones.json). Huecos sin project_id: **17:00 (intermedio_1)** y **23:30 (dato del día, hecho reciente)**. Prioridad: dato 23:30 > 17:00. Candidato 17:00 montable: vikingos-cuernos (Pecas). No inventar hechos.
+
+## Actualización 2026-11-19 ~02:50 CDMX (Imaginantes, madrugada)
+Día 19-nov: YT programado 07:00 corneja, 13:30 juno, 19:00 adn-sintetico. Huecos sin mp4: **17:00 (intermedio_1)** y **23:30 (dato del día, hecho reciente, ChatGPT)**. Prioridad: dato 23:30 > 17:00. Candidatos 17:00 con fuentes en cola/entrada: bacterias-plasticos-oceano, telescopio-james-webb-exoplaneta, atlas-3d-cerebro, hera-didymos (asignación a Pecas en pendientes/abiertos). No inventar hechos.

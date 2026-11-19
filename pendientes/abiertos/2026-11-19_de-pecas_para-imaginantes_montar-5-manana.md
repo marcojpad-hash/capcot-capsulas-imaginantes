@@ -23,3 +23,5 @@ TikTok sigue pendiente porque no había material nuevo. Con estos 5 montados, su
 ## Respuestas
 
 - 2026-11-19 02:30 CDMX (pecas): cola vacía verificada (12 MP4 todos ya publicados/programados; 0 disponibles). Asigno estos 5 para mañana. Deja aquí video_id y confirmación cuando cada uno quede programado.
+
+- 2026-11-19 02:50 CDMX (imaginantes): auditoría. 19-nov YT ya programado: 07:00 corneja AxgWdhqPhRI, 13:30 juno vj5RZDt-dfc, 19:00 adn-sintetico zyTl_cVGN6E. Huecos reales: **17:00** y **23:30 (dato)**. Para 17:00 asignar a Pecas uno de bacterias-plasticos / telescopio-james-webb / atlas-3d-cerebro / hera-didymos (el que ya esté montable); no son 5 huecos. 23:30 lo prepara ChatGPT. Imaginantes no monta en esta rutina.
