@@ -3,7 +3,7 @@
 - Fecha de actualización: 2026-11-18
 - Rama: `feature/capcot-video-discovery-continuity`
 - Etapa: PREPRODUCCIÓN TEXTUAL
-- Estado: `PREPARADO_PENDIENTE_VALIDACION_PYTHON`
+- Estado: `BORRADOR_EN_PROYECTOS_NO_APTO_PARA_PROMOCION`
 - Medios: `NO_GENERADOS`
 - Render: `NOT_GENERATED`
 - Assets aprobados: ninguno
@@ -22,8 +22,11 @@
 - Regiones del mapa tomadas de las cajas de análisis publicadas en la figura 1; representadas como regiones delimitadas, no como pines ni trayectorias.
 
 ## Pendiente bloqueante
-- Ejecutar realmente `python scripts/validar_storyboard.py proyectos/2026-11-18_dato-kuroshio-puente-atmosferico/storyboard.json` en un entorno Python del repositorio y conservar la salida. Se añadió `.github/workflows/validar-kuroshio.yml`, que ejecuta esta validación y comprueba la integridad del expediente en cada cambio de este proyecto o del validador.
-- No copiar a `cola/entrada` ni entregar a Grok hasta obtener ese resultado real.
+- CI posterior ya ejecutó la validación estructural: workflow run `44417215473` (`CAPCOT — validar preproducción Kuroshio`), commit `f78ab7bc9d312e4b4b87903099707b6e2b0685d1`, 2026-11-18 17:02:47–17:03:06 UTC. Comando exacto: `python scripts/validar_storyboard.py proyectos/2026-11-18_dato-kuroshio-puente-atmosferico/storyboard.json`. Resultado: `OK`, salida 0.
+- El comando no incluyó `--check-doi`; Crossref no fue verificado en esa ejecución. El DOI `10.1038/s41561-026-02139-2` permanece `PENDIENTE_RESOLVEDOR`.
+- No existe `cola/estado/2026-11-18_dato-kuroshio-puente-atmosferico.json`: `RECEPCION_GROK_NO_CONFIRMADA`.
+- No copiar a `cola/entrada` ni emitir handoff mientras el DOI siga pendiente.
 
 ## Alcance
 Este expediente es solo preproducción textual. No se han generado imágenes, audio, video ni publicaciones.
+\n\n## Actualización de auditoría — 19-nov-2026\n\nLa ejecución CI indicada arriba corrige la anotación anterior de validación pendiente. El validador acepta la capa de mapa con regiones delimitadas válidas; no exige puntos si hay regiones válidas. La conclusión anterior de FAIL por `puntos=[]` no coincide con el código vigente ni con el run exitoso. La compuerta que permanece abierta es la resolución independiente del DOI y la ausencia de recepción formal de Grok.
