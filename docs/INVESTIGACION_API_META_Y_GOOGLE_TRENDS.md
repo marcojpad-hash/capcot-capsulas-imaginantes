@@ -418,3 +418,37 @@ La documentación oficial sigue invitando solicitudes para acceso alfa limitado 
 La página índice del changelog y las referencias de Page Insights, Instagram Insights y Google Trends fueron legibles en esta revisión. La página específica de cambios v27.0 no pudo abrirse directamente desde esta herramienta; por ello esta nota confirma la versión y la fecha de introducción indicadas por la tabla oficial, pero no atribuye a v27.0 cambios de endpoint que no se hayan leído en su changelog detallado.
 
 **Acción:** actualizar únicamente este registro documental. No se modificaron conectores, versiones configuradas, OAuth, permisos, credenciales ni adaptadores; tampoco se hicieron llamadas autenticadas o de publicación.
+
+
+## 9.10 — La ruta heredada de versiones sigue desfasada frente al changelog canónico (verificado 2026-11-19)
+
+**Corte:** 2026-11-19, 07:56 America/Mexico_City.
+
+### Graph API y Page Insights
+
+La ruta canónica del changelog de Meta, `https://developers.facebook.com/documentation/development/graph-api/changelog`, declara v27.0 como versión más reciente y muestra v27.0 introducida el 4-nov-2026 y v26.0 introducida el 29-jul-2026. La referencia de Page Insights también muestra el encabezado v27.0.
+
+Sin embargo, la ruta heredada `https://developers.facebook.com/docs/graph-api/changelog/versions/` todavía muestra v26.0 como última fila y no incluye v27.0. Las dos rutas oficiales ofrecen tablas distintas. Para CAPCOT, usar como referencia primaria la ruta canónica nueva y verificar siempre el encabezado del endpoint concreto; no elegir v26.0 basándose únicamente en la página heredada.
+
+La referencia vigente de Page Insights conserva los límites ya registrados: mínimo de 100 likes para una Page, actualización aproximada cada 24 horas para la mayoría de métricas, retención de dos años, ventanas `since/until` de hasta 90 días, umbral de 100 personas para demografía y exclusión de interacciones de Reels. No se observó una métrica nueva en esta revisión.
+
+### Instagram Insights
+
+La guía oficial vigente documenta tres rutas distintas: Unified Login, Instagram Login y Facebook Login, con hosts, tokens y permisos propios. Mantiene el umbral de 100 seguidores para algunas métricas, retención de 90 días, una cuenta por solicitud y conjunto vacío en lugar de cero cuando un dato no está disponible. El changelog visible de Instagram Platform no muestra entradas posteriores al 30-jul-2026; no se atribuye un cambio nuevo de Insights.
+
+### Google Trends API alfa
+
+La documentación oficial continúa invitando a solicitar acceso alfa limitado y conserva ventana móvil de cinco años, agregaciones diarias/semanales/mensuales/anuales, regiones/subregiones y datos escalados consistentemente. No se observó un cambio nuevo del contrato alfa.
+
+### Evidencia y límites
+
+- Changelog canónico Graph API: https://developers.facebook.com/documentation/development/graph-api/changelog
+- Tabla heredada de versiones: https://developers.facebook.com/docs/graph-api/changelog/versions/
+- Referencia Page Insights: https://developers.facebook.com/docs/graph-api/reference/insights/
+- Guía Instagram Insights: https://developers.facebook.com/documentation/instagram-platform/insights
+- Changelog Instagram Platform: https://developers.facebook.com/documentation/instagram-platform/changelog
+- Google Trends API alfa: https://developers.google.com/search/apis/trends
+
+La página canónica del changelog, la referencia Page Insights, la guía de Instagram Insights, el changelog Instagram y la documentación de Google Trends fueron legibles. La página detallada de cambios v27.0 devolvió error 500/no accesible desde esta herramienta; por ello no se atribuyen cambios específicos de endpoint a v27.0 que no se hayan leído en el changelog detallado.
+
+**Acción:** actualización documental únicamente. No se cambiaron adaptadores, conectores, versiones configuradas, OAuth, permisos ni credenciales; no se realizaron llamadas autenticadas ni operaciones de publicación.
