@@ -1,1 +1,178 @@
-PLACEHOLDER_STORYBOARD
+{
+  "project_id": "2026-11-19_msl-acetilacion",
+  "title": "La marca que duplica los genes",
+  "language": "es-MX",
+  "aspect_ratio": "9:16",
+  "target_duration_seconds": 85,
+  "trend_source": {
+    "tipo": "noticia_cientifica",
+    "medio": "EMBL",
+    "url": "https://www.embl.org/news/science-technology/how-a-tiny-chemical-mark-is-placed-to-double-gene-activity/",
+    "estudio_doi": "10.1016/j.molcel.2026.09.019",
+    "fecha_publicacion": "2026-11-19",
+    "termino": "MSL complex histone acetylation",
+    "fecha_consulta": "2026-11-19"
+  },
+  "estilo_id": "linea_fina",
+  "estilo_visual": "Sketch de línea fina",
+  "voice": {
+    "engine": "edge-tts",
+    "voice_id": "es-MX-JorgeNeural",
+    "rate": "+7%",
+    "pitch": "-2Hz",
+    "pad_seconds": 0.3,
+    "modo_pausas": "continuo"
+  },
+  "estructura": "pregunta",
+  "titulo": "¿Cómo se duplican genes?",
+  "sources": [
+    {
+      "id": "SRC-001",
+      "cita_corta": "Müller et al. (2026). Molecular mechanism of residue-specific nucleosome acetylation. Molecular Cell.",
+      "url": "https://doi.org/10.1016/j.molcel.2026.09.019",
+      "doi": "10.1016/j.molcel.2026.09.019",
+      "accessed": "2026-11-19",
+      "supports": ["MSL complex places H4K16 acetylation", "dosage compensation in male Drosophila", "cryo-EM structure shows precision"],
+      "ref_display": "Müller et al. Mol Cell 2026"
+    },
+    {
+      "id": "SRC-002",
+      "cita_corta": "EMBL News (2026). How a tiny chemical mark is placed to double gene activity.",
+      "url": "https://www.embl.org/news/science-technology/how-a-tiny-chemical-mark-is-placed-to-double-gene-activity/",
+      "accessed": "2026-11-19",
+      "supports": ["MSL complex in fruit flies", "MOF enzyme adds acetyl group"],
+      "ref_display": "EMBL 2026"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_001",
+      "arc": "hook_medias_res",
+      "duration_seconds": 8.0,
+      "narration": "¿Cómo duplican los machos de mosca la actividad de sus genes?",
+      "on_screen_text": "¿Cómo se duplican?",
+      "visual_description": "Fruit fly male and female side by side with X chromosomes highlighted",
+      "image_prompt": "fine line pencil illustration on white paper, precise thin strokes, subtle graphite shading, minimal composition, vertical 9:16, no text + male and female fruit flies with highlighted X chromosomes",
+      "source_ids": ["SRC-001"],
+      "asset_filename": "frames/scene_001.jpg",
+      "ambiente": "viento",
+      "sfx": ["alas"]
+    },
+    {
+      "id": "scene_002",
+      "arc": "desarrollo",
+      "duration_seconds": 10.0,
+      "narration": "Las hembras tienen dos cromosomas X. Los machos solo uno. Deben compensar.",
+      "on_screen_text": "Dos X vs uno",
+      "visual_description": "Diagram of chromosomes, female two X, male one X",
+      "image_prompt": "fine line pencil illustration on white paper, precise thin strokes, subtle graphite shading, minimal composition, vertical 9:16, no text + chromosome diagrams showing two X in female and one in male fruit fly",
+      "source_ids": ["SRC-001", "SRC-002"],
+      "asset_filename": "frames/scene_002.jpg",
+      "ambiente": "viento",
+      "sfx": ["papel"]
+    },
+    {
+      "id": "scene_003",
+      "arc": "desarrollo",
+      "duration_seconds": 11.0,
+      "narration": "Una máquina molecular llamada complejo MSL coloca una marca química precisa en las histonas.",
+      "on_screen_text": "Marca en histonas",
+      "visual_description": "Nucleosome with MSL complex approaching to add mark",
+      "image_prompt": "fine line pencil illustration on white paper, precise thin strokes, subtle graphite shading, minimal composition, vertical 9:16, no text + nucleosome DNA wrapped around histones with molecular complex adding chemical mark",
+      "source_ids": ["SRC-001"],
+      "asset_filename": "frames/scene_003.jpg",
+      "ambiente": "viento",
+      "sfx": ["maquina"]
+    },
+    {
+      "id": "scene_004",
+      "arc": "desarrollo",
+      "duration_seconds": 10.0,
+      "narration": "La enzima MOF agrega un grupo acetilo en la posición H4K16. Eso abre el ADN y sube la expresión.",
+      "on_screen_text": "H4K16 acetilación",
+      "visual_description": "Close-up of histone H4 with acetyl group being attached",
+      "image_prompt": "fine line pencil illustration on white paper, precise thin strokes, subtle graphite shading, minimal composition, vertical 9:16, no text + close-up histone protein with acetyl chemical group being added at specific site",
+      "source_ids": ["SRC-001"],
+      "asset_filename": "frames/scene_004.jpg",
+      "ambiente": "viento",
+      "sfx": ["quimica"]
+    },
+    {
+      "id": "scene_005",
+      "arc": "desarrollo",
+      "duration_seconds": 9.0,
+      "narration": "Usaron criomicroscopía electrónica para ver cómo el complejo guía la marca al lugar exacto.",
+      "on_screen_text": "Visto con cryo-EM",
+      "visual_description": "Cryo-EM style molecular structure of MSL complex bound to nucleosome",
+      "image_prompt": "fine line pencil illustration on white paper, precise thin strokes, subtle graphite shading, minimal composition, vertical 9:16, no text + cryo-EM molecular structure of protein complex on nucleosome",
+      "source_ids": ["SRC-001"],
+      "asset_filename": "frames/scene_005.jpg",
+      "ambiente": "viento",
+      "sfx": ["electron"]
+    },
+    {
+      "id": "scene_006",
+      "arc": "cierre_historia",
+      "duration_seconds": 10.0,
+      "narration": "El complejo se queda unido después de actuar. Eso revela la precisión del reconocimiento.",
+      "on_screen_text": "Precisión molecular",
+      "visual_description": "MSL complex remaining bound after reaction",
+      "image_prompt": "fine line pencil illustration on white paper, precise thin strokes, subtle graphite shading, minimal composition, vertical 9:16, no text + molecular machine still attached to nucleosome after modification",
+      "source_ids": ["SRC-001"],
+      "asset_filename": "frames/scene_006.jpg",
+      "ambiente": "viento",
+      "sfx": ["cierre"]
+    },
+    {
+      "id": "scene_007",
+      "arc": "reflexion_o_pregunta",
+      "duration_seconds": 9.0,
+      "narration": "En humanos hay enzimas parecidas. Mutaciones podrían alterar esta regulación y afectar enfermedades.",
+      "on_screen_text": "¿Y en nosotros?",
+      "visual_description": "Human cells with similar molecular machinery",
+      "image_prompt": "fine line pencil illustration on white paper, precise thin strokes, subtle graphite shading, minimal composition, vertical 9:16, no text + human cell nucleus with similar histone modification enzymes",
+      "source_ids": ["SRC-001", "SRC-002"],
+      "asset_filename": "frames/scene_007.jpg",
+      "ambiente": "viento",
+      "sfx": ["celula"]
+    },
+    {
+      "id": "scene_008",
+      "arc": "reflexion_o_pregunta",
+      "duration_seconds": 8.0,
+      "narration": "Una marca minúscula controla la actividad génica. Esto fue Datos y ociosidades.",
+      "on_screen_text": "Datos y ociosidades",
+      "visual_description": "Simple elegant molecular mark floating",
+      "image_prompt": "fine line pencil illustration on white paper, precise thin strokes, subtle graphite shading, minimal composition, vertical 9:16, no text + tiny chemical mark on a histone floating simply",
+      "source_ids": ["SRC-001"],
+      "asset_filename": "frames/scene_008.jpg",
+      "ambiente": "viento",
+      "sfx": ["final"]
+    }
+  ],
+  "cortinilla_fuentes": {
+    "duration_seconds": 6,
+    "titulo": "Fuentes",
+    "aviso": "Imágenes generadas con IA. Voz sintética. Audio sintetizado.",
+    "firma": "Datos y ociosidades · @datosyociosidades"
+  },
+  "export": {
+    "filename": "capsula.mp4",
+    "resolution": "1080x1920",
+    "fps": 30,
+    "loudness_lufs": -14
+  },
+  "capas": [
+    {
+      "tipo": "mapa",
+      "region": [-10, 10, 48, 50],
+      "puntos": [{"lon": 8.67, "lat": 49.41, "etiqueta": "Heidelberg EMBL"}]
+    },
+    {
+      "tipo": "dato",
+      "valor": "H4K16",
+      "etiqueta": "posición de acetilación",
+      "fuente": "SRC-001"
+    }
+  ]
+}
