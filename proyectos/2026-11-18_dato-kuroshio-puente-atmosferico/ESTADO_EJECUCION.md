@@ -29,4 +29,8 @@
 
 ## Alcance
 Este expediente es solo preproducción textual. No se han generado imágenes, audio, video ni publicaciones.
-\n\n## Actualización de auditoría — 19-nov-2026\n\nLa ejecución CI indicada arriba corrige la anotación anterior de validación pendiente. El validador acepta la capa de mapa con regiones delimitadas válidas; no exige puntos si hay regiones válidas. La conclusión anterior de FAIL por `puntos=[]` no coincide con el código vigente ni con el run exitoso. La compuerta que permanece abierta es la resolución independiente del DOI y la ausencia de recepción formal de Grok.
+
+
+## Actualización de auditoría — 19-nov-2026
+
+La ejecución CI indicada arriba corrige la anotación anterior de validación pendiente. El validador acepta la capa de mapa con regiones delimitadas válidas; no exige puntos si hay regiones válidas. La conclusión anterior de FAIL por `puntos=[]` no coincide con el código vigente ni con el run exitoso. La compuerta que permanece abierta es la resolución independiente del DOI y la ausencia de recepción formal de Grok.
