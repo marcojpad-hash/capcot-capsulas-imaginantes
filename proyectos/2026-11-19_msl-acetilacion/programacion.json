@@ -1,1 +1,14 @@
-PLACEHOLDER_PROG
+{
+  "project_id": "2026-11-19_msl-acetilacion",
+  "plataformas": ["yt", "tt"],
+  "publish_at": "2026-11-19T19:30:00Z",
+  "ventana": "mediodia",
+  "hora_cdmx": "13:30",
+  "caption_tt": "¿Cómo duplican los machos de mosca la actividad de sus genes? Una marca química minúscula en las histonas. #ciencia #genetica #Shorts",
+  "titulo_yt": "La marca química que duplica los genes de la mosca #Shorts",
+  "descripcion_yt": "Investigadores de EMBL y LMU Munich revelaron cómo el complejo MSL coloca la acetilación H4K16 para compensar la dosis del cromosoma X en moscas macho.\n\nDOI: 10.1016/j.molcel.2026.09.019\nTikTok: https://www.tiktok.com/@datosyociosidades",
+  "tags": ["ciencia", "genética", "epigenética", "mosca de la fruta", "histonas", "Shorts"],
+  "privacidad": "private",
+  "estado": "programado_para_publicar",
+  "nota": "Falta montar mp4. TikTok: Mj sube desde teléfono a las 13:30 CDMX."
+}
