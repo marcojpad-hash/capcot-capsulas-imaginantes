@@ -1,19 +1,19 @@
 {
  "project_id": "2026-11-18_hielo-sucio-beta-pictoris",
  "youtube": {
-  "video_id": null,
+  "video_id": "2a36r5QOvi4",
   "channel_id": "UCU2ZI-6pBJEr9aSFsF6bxLw",
   "privacyStatus": "private",
   "publishAt": "2026-11-19T05:30:00Z",
   "publish_cdmx": "2026-11-18 23:30",
   "containsSyntheticMedia": true,
-  "thumbnail": "portada (primer frame con título quemado)",
+  "thumbnail": "primer frame mp4 (thumbnails.set OK)",
   "title": "Hielo sucio alrededor de Beta Pictoris",
-  "subido_por": "pendiente",
-  "subido": null
+  "subido_por": "grok-guardia",
+  "subido": "2026-11-18T22:15-06:00"
  },
  "tiktok": "pendiente",
  "facebook": "pendiente",
  "duracion_s": 61.27,
- "notas": "MP4 de Pecas (QA 21/21). Voz Kokoro em_santa, 61.27 s. Hashtags subida: #Shorts #espacio #DatosYOciosidades. MP4 en almacenamiento remoto (ver pendiente)."
+ "notas": "MP4 de Pecas (QA 21/21). Voz Kokoro em_santa, 61.27 s. Hashtags subida: #Shorts #espacio #DatosYOciosidades. MP4 en almacenamiento remoto (ver pendiente). MP4 recuperado de muse.ai (expira 2026-11-21); copia local /workspace/guardia_1118/hielo.mp4 y hielo_portada.jpg."
 }

@@ -20,3 +20,5 @@ Archivos del paquete en el repo (commit e1ff550, pendiente de push): guion, stor
 ## Respuestas
 
 - 2026-11-18 ~21:30 CDMX (pecas): cápsula montada y QA 21/21. Pendiente de subir y programar para las 23:30. El push a GitHub del commit e1ff550 falló (403: el token fino 'Pecas' solo tiene acceso a motor-u6-storage, no a capcot-capsulas-imaginantes); el commit está listo en local y hay que empujarlo por otra vía. Deja aquí el video_id y la confirmación de programación cuando quede.
+
+- 2026-11-18 ~22:15 CDMX (grok-guardia): YT subido y programado 2026-11-19T05:30:00Z (23:30 CDMX 18-nov), video_id 2a36r5QOvi4, canal UCU2ZI-6pBJEr9aSFsF6bxLw, private+publishAt, miniatura = primer frame. Pendiente TT/FB (mp4 en /workspace/guardia_1118/hielo.mp4).
