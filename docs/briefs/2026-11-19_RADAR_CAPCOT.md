@@ -182,3 +182,18 @@ Los dos borradores del 19-nov no contienen `narrative_qa` y quedan **PENDIENTE_A
 ## Seguridad y límites
 
 No se solicitaron ni copiaron credenciales. No se consumieron créditos. No se modificaron `main`, workflows, `data/*.json`, motores canónicos ni Motor U6. No se publicó ni programó contenido. Grok conserva selección editorial, producción audiovisual, QA oficial y publicación.
+
+
+### Checks explícitos de los storyboards releídos
+
+Los siguientes objetos reproducen los campos de QA presentes en cada JSON. El orden de checks es el que usa el contrato: pregunta central; apertura in medias res; progresión por escena; transiciones causales; giro científico; límite de evidencia; payoff del cierre.
+
+```json
+{"project_id":"2026-11-18_dato-kuroshio-puente-atmosferico","narrative_qa":{"status":"PASS","score":90,"review_basis":"lectura_en_frio_solo_narracion","reviewed_at":"2026-11-18T15:00:00-06:00","checks":{"pregunta_central_reconstruible":true,"apertura_in_medias_res":true,"progresion_por_escena":true,"transiciones_causales":true,"giro_cientifico_explicado":true,"limite_evidencia_explicito":true,"payoff_cierre_apertura":true},"critical_flags":[]}}
+{"project_id":"2026-11-18_dato-catorce-campos-hidrotermales","narrative_qa":{"status":"PENDING_INDEPENDENT_COLD_READ","score":null,"review_basis":"pendiente_lectura_en_frio_solo_narracion","reviewed_at":null,"checks":{"pregunta_central_reconstruible":false,"apertura_in_medias_res":false,"progresion_por_escena":false,"transiciones_causales":false,"giro_cientifico_explicado":false,"limite_evidencia_explicito":false,"payoff_cierre_apertura":false},"critical_flags":["QA narrativa independiente pendiente"]}}
+{"project_id":"2026-11-17_dato-suelo-dos-relojes","narrative_qa":{"status":"PASS","score":89,"review_basis":"lectura_en_frio_solo_narracion","reviewed_at":"2026-11-17T15:35:22-06:00","checks":{"pregunta_central_reconstruible":true,"apertura_in_medias_res":true,"progresion_por_escena":true,"transiciones_causales":true,"giro_cientifico_explicado":true,"limite_evidencia_explicito":true,"payoff_cierre_apertura":true},"critical_flags":[]}}
+{"project_id":"2026-11-16_dato-polen-desenreda-nanotubos","narrative_qa":{"status":"PASS","score":91,"review_basis":"lectura_en_frio_solo_narracion","checks":{"pregunta_central_reconstruible":true,"apertura_in_medias_res":true,"progresion_por_escena":true,"transiciones_causales":true,"giro_cientifico_explicado":true,"limite_evidencia_explicito":true,"payoff_cierre_apertura":true},"critical_flags":[]}}
+{"project_id":"2026-11-15_dato-dia-diapausa-lestes-sponsa","narrative_qa":{"status":"PASS","score":90,"review_basis":"lectura_en_frio_solo_narracion","reviewed_at":"2026-11-15T15:51:23-06:00","checks":{"pregunta_central_reconstruible":true,"apertura_in_medias_res":true,"progresion_por_escena":true,"transiciones_causales":true,"giro_cientifico_explicado":true,"limite_evidencia_explicito":true,"payoff_cierre_apertura":true},"critical_flags":[]}}
+```
+
+Tras añadir los dos borradores del 19-nov, el inventario contiene **164 storyboard.json físicos**: 41 con `narrative_qa` (18 PASS, 20 FAIL, 3 PENDIENTE) y 123 sin `narrative_qa` (`PENDIENTE_AUDITOR`). Los dos borradores nuevos están dentro de esos 123. No se alteró ningún QA existente.
