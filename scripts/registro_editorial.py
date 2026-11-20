@@ -59,7 +59,7 @@ def _storyboard_paths():
             if "pendiente" in p.parts:
                 continue
             found.add(p)
-        if base.name == "entrada":
+        if base.name in {"entrada", "bloqueados"}:
             for p in base.glob("*.json"):
                 found.add(p)
     return sorted(found, key=lambda p: str(p))
