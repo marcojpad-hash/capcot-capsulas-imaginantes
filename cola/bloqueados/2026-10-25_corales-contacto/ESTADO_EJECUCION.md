@@ -25,3 +25,12 @@ El experimento se hizo en laboratorio, con muestras pequeñas y corales del mism
 
 ## Procedencia de los frames
 Los `image_prompt` del storyboard están normalizados al formato exacto `prompt_base + " + " + descripción de escena` del catálogo `ukiyo_e`. Los PNG adjuntos se generaron con briefs visuales ampliados y coherentes con ese estilo; no fueron producidos por `scripts/generar_frames.py` ni por una corrida oficial.
+
+
+## Corrección de auditoría — 2026-11-20
+
+**Estado de preproducción:** `BORRADOR_EN_PROYECTOS_NO_APTO_PARA_PROMOCION`. **Clasificación de producción:** `PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR`. **Recepción Grok:** `RECEPCION_GROK_NO_CONFIRMADA`. **Medios:** `MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO`.
+
+- `salidas/2026-10-25_corales-contacto/publicacion.json` registra YouTube ID `Mz-IVFvFWH4`, privacidad `private`, `publishAt=2026-10-31T19:30:00Z` (13:30 CDMX). No se afirma publicación pública.
+- `qa.json` es QA audiovisual (21 checks, 95.03 s); no es narrative_qa y la duración excede el contrato 75–90 s.
+- El storyboard no tiene narrative_qa independiente y el árbol no contiene el MP4 referenciado. No crear una segunda entrada; no cancelar ni borrar el ID.
