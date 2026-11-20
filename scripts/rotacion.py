@@ -54,7 +54,12 @@ def hecha_hoy(fecha=None):
     f = fecha or datetime.date.today().isoformat()
     return registro_editorial.registros_dia(f)
 def exigir_cupo(fecha=None, origen="propia", project_id=None):
-    h = [x for x in hecha_hoy(fecha) if x.get("project_id") != project_id]
+    # Los borradores bloqueados siguen contando para anti-duplicación/rotación,
+    # pero no consumen un slot editorial ni el cupo diario de cápsulas.
+    h = [
+        x for x in hecha_hoy(fecha)
+        if x.get("project_id") != project_id and x.get("_source") != "bloqueado"
+    ]
     if os.environ.get("CAPCOT_FORZAR_CUPO") == "1": print("AVISO: cupo diario forzado por orden explícita de Mj"); return h
     n = sum(1 for x in h if x.get("origen", "propia") == origen)
     if len(h) >= MAX_POR_DIA: sys.exit(f"LÍMITE DURO: ya hay {len(h)} cápsulas el {fecha or 'hoy'} ({', '.join(x['project_id'] for x in h)}). Máximo {MAX_POR_DIA} por día.")
