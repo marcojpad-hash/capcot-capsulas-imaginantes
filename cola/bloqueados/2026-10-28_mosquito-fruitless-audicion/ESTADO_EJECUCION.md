@@ -29,3 +29,12 @@ Paquete candidato preparado con storyboard, ocho frames, fuentes, registro preli
 - Hay capa `mapa`, capa `grafico` y capa `dato`, todas con fuente.
 - `subtitulos_bloques.json` contiene bloques de 1–3 palabras sin timecodes; los timecodes deben salir de WordBoundary del TTS oficial.
 - No se añadieron registros a `data/cola.json`, `data/rotacion.json`, `data/publicaciones.json`, `data/temas_del_dia.json` ni `data/estilos_usados.json`. No se tocó motor U6.
+
+
+## Corrección de auditoría — 2026-11-20
+
+**Estado de preproducción:** `BORRADOR_EN_PROYECTOS_NO_APTO_PARA_PROMOCION`. **Clasificación de producción:** `PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR`. **Recepción Grok:** `RECEPCION_GROK_NO_CONFIRMADA`. **Medios:** `MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO`.
+
+- `salidas/2026-10-28_mosquito-fruitless-audicion/publicacion.json` registra YouTube ID `G5is50omLo4`, privacidad `private`, `publishAt=2026-10-31T23:00:00Z` (17:00 CDMX). No se afirma publicación pública.
+- `qa.json` es QA audiovisual (21 checks, 83.21 s; no todos pasan), no narrative_qa. El storyboard no tiene narrative_qa independiente.
+- El MP4 referenciado no aparece en el árbol GitHub. No crear otra entrada ni cancelar el ID.
