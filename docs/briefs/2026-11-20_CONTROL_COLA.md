@@ -188,4 +188,4 @@ Se corrigió una omisión descubierta al comparar el inventario de cola/bloquead
 - CI del commit 4102ff6abba32d2721931f983bad1755f96fa686: CodeQL, Analyze (python) y Analyze (actions) terminaron success (run #44733338122). Estas comprobaciones no ejecutan la suite de tests del repositorio; los ocho tests locales de los dos módulos sí pasaron sobre copias de código.
 - No se modificaron data/*.json, main, workflows, cola, estados Grok ni medios. Los markers de handoffs/grok_inbox/ siguen revisándose directamente por el auditor; no se incorporaron como storyboards de rotación.
 
-- El commit documental cf3de6efd69a314d44540fa69bc4ba05744c1646 generó run #44733428873: CodeQL neutral; Analyze (python) y Analyze (actions) seguían in_progress al último sondeo. No se declara CI completo para ese commit.
+- El commit documental cf3de6efd69a314d44540fa69bc4ba05744c1646 terminó run #44733428873 en success (CodeQL neutral; Analyze Python y Actions success). El commit de conciliación de CI `9c08be6dec250e3598af7b6bab8c6ad4955ce5c8` terminó run #44733560788 en success (CodeQL, Analyze Python y Actions). Son checks de análisis, no la suite de tests del repositorio.
