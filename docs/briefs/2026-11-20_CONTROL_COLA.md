@@ -288,3 +288,48 @@ Resultado para ambos: `RECEPCION_GROK_NO_CONFIRMADA`; `NOT_DISPATCHABLE` porque 
 - Operador único: run actual `936c994c-16f4-8327-a308-93d6cedc66be` sigue `in_progress`, sin `completed_at`.
 
 No se generaron medios, no se consumieron créditos, no se publicaron ni programaron piezas y no se modificaron `data/*.json`, `main`, workflow, secretos, permisos ni estados Grok.
+
+
+## Corrección de inventario — lote 5–7 nov revalidado (20-nov, 10:03 CDMX)
+
+Esta reconsulta corrige el conteo previo de siete sidecars. Se releyeron los 12 storyboards y el horario congelado; no se repitió la lectura narrativa.
+
+### Identidad, horario y QA vigente
+
+Los doce `project_id`, `fecha_objetivo`, `slot_local` y `slot_cesta` coinciden con `data/horario_semana_2026-11-01_07.json`. Los doce registros del horario siguen con estado `pedir_chatgpt`, sin yt_id ni publishAt. QA leído directamente de los JSON actuales:
+
+| project_id | QA vigente | Checks true | Palabras | Escenas | Total |
+|---|---:|---:|---:|---:|---:|
+| `2026-11-05_kids-dia-en-venus` | PASS 88 | 7/7 | 170 | 7 | 84 s |
+| `2026-11-05_comida-palomitas` | FAIL 82 | 5/7 | 173 | 7 | 84 s |
+| `2026-11-05_inter-arboles-se-comunican` | FAIL 78 | 6/7 | 170 | 8 | 84 s |
+| `2026-11-05_inter-rayo-globular` | FAIL 81 | 6/7 | 197 | 7 | 84 s |
+| `2026-11-06_kids-ballena-azul-corazon` | FAIL 80 | 6/7 | 174 | 7 | 84 s |
+| `2026-11-06_comida-aguacate-negro` | FAIL 79 | 5/7 | 170 | 7 | 84 s |
+| `2026-11-06_inter-ranas-congeladas` | FAIL 83 | 5/7 | 177 | 7 | 84 s |
+| `2026-11-06_inter-arena-cantante` | PASS 94 | 7/7 | 206 | 7 | 84 s |
+| `2026-11-07_kids-huesos-bebe` | FAIL 82 | 5/7 | 172 | 7 | 84 s |
+| `2026-11-07_comida-hielo-caliente` | FAIL 81 | 6/7 | 172 | 7 | 84 s |
+| `2026-11-07_inter-pulpo-suenos` | FAIL 72 | 2/7 | 170 | 7 | 84 s |
+| `2026-11-07_inter-nubes-pesan` | FAIL 78 | 4/7 | 221 | 7 | 84 s |
+
+Los doce archivos `cola/estado/<project_id>.json` volvieron a devolver 404: `RECEPCION_GROK_NO_CONFIRMADA`. No se repitió el QA narrativo de ningún PASS existente. La validación estructural oficial no se ejecutó en esta pasada; ningún proyecto se promueve.
+
+### Cola, bloqueados y salidas
+
+- `proyectos/` conserva los doce storyboard actuales.
+- `cola/entrada/` en feature solo tiene las carpetas anidadas de 09-nov robot orbital y 11-nov ratas topo; no hay entradas de estos doce IDs.
+- `salidas/` en feature no tiene ninguno de estos doce IDs.
+- `cola/bloqueados/` contiene borradores anteriores. Se verificaron seis variantes con nombres distintos —palomitas-explotan, árboles-mito-respiran, Venus-día-largo, corazón-ballena-azul, Mpemba-mito y sueños-pulpo—; sus `ESTADO_EJECUCION.md` dicen `BORRADOR_EN_PROYECTOS_NO_APTO_PARA_PROMOCION`, `NO_GENERADOS` y `PENDIENTE_DECISION_GROK`. No son los mismos project_id y no acreditan producción.
+- También existen copias bloqueadas de aguacate, ranas y huesos de bebé. Sus estados dicen NO_GENERADOS y no aptos. Las copias planas de arena cantante y nubes pesan conservan `approved_assets=[]`, `NOT_GENERATED` y `PENDIENTE_DECISION_GROK`.
+
+### Corrección de producción preexistente y conteo
+
+El conteo previo de **siete proyectos con sidecars** no se sostiene al cruzar los IDs exactos. La consulta actual de `main/data/publicaciones.json`, `main/cola/entrada/` y `main/salidas/` encontró evidencia de procesamiento para **dos** project_id exactos:
+
+1. **`2026-11-07_comida-hielo-caliente`**: en main existen `cola/entrada/<id>/` y `salidas/<id>/`. QA audiovisual 21/21, 89.83 s. YouTube `HSgrnejAcaI`, privado con `publishAt=2026-11-11T19:30:00Z`; TikTok `7706905447424347393` y Facebook `122109123507518983` figuran publicados. Clasificación: `PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR`. El QA audiovisual no reemplaza el FAIL/81 del storyboard de feature.
+2. **`2026-11-07_inter-nubes-pesan`**: `main/data/publicaciones.json` registra YouTube `4Qpl17Ts_vI`, TikTok `7705597569203768597` y Facebook `122109293529518983` como publicados el 12-nov. No existe `salidas/<id>/` ni carpeta de cola en main; por tanto: `PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR` y `MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO`. El storyboard de feature conserva FAIL/78.
+
+No se encontraron registros de publicación, salidas ni entradas en main para los otros diez IDs exactos. Los nombres de variantes bloqueadas no se deben convertir en evidencia de publicación del proyecto actual.
+
+**Decisión:** los doce siguen fuera de una nueva promoción en esta auditoría. Los dos PASS narrativos no tienen ejecución del validador estructural oficial demostrada; los dos project_id con producción/publicación previa quedan además protegidos contra redispatch. El snapshot `data/horario_semana_2026-11-01_07.json` conserva `pedir_chatgpt` para todos, por lo que no refleja los dos procesamientos posteriores observados en main. No se modificó ese JSON ni ningún otro `data/*.json`.
