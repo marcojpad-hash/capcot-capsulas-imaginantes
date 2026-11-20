@@ -1,0 +1,385 @@
+{
+  "_schema": "CAPCOT_STORYBOARD_TEXT_V2",
+  "project_id": "2026-11-21_fentale-metano-sin-erupcion",
+  "serie": "Datos y ociosidades",
+  "title": "Fentale liberó metano sin entrar en erupción",
+  "titulo": "Metano sin erupción",
+  "language": "es-MX",
+  "aspect_ratio": "9:16",
+  "fecha_objetivo": "2026-11-21",
+  "slot_local": "23:30",
+  "slot_cesta": "dato_del_dia",
+  "origen": "externa",
+  "target_duration_seconds": 84,
+  "estructura": "paradoja_mecanica",
+  "audience": "Público general interesado en ciencia y naturaleza",
+  "occasion": "Dato del día; slot fijo de 23:30 CDMX",
+  "resumen": "En enero de 2025, satélites detectaron una descarga importante de metano en Fentale, Etiopía, sin erupción. El estudio propone que una intrusión magmática abrió un sello que retenía gas termogénico.",
+  "narrative_contract": {
+    "central_question": "¿Cómo pudo salir tanto metano de un volcán que no hizo erupción?",
+    "promise": "Seguir la señal satelital y reconstruir la explicación que proponen los autores.",
+    "stakes": "El episodio revela una fuente natural y episódica de metano que puede pasar inadvertida si solo se buscan erupciones.",
+    "scientific_turn": "Una intrusión magmática habría calentado sedimentos ricos en hidrocarburos y fracturado un sello que retenía gas.",
+    "evidence_limit": "La explicación es una hipótesis apoyada por geología y datos regionales; no se midieron isótopos del metano en Fentale.",
+    "payoff": "La anomalía no fue una erupción: fue un reservorio subterráneo que encontró salida."
+  },
+  "trend_source": {
+    "termino": "Methane outburst driven by magma–sediment interactions at Fentale Volcano",
+    "fecha_publicacion": "2026-11-19",
+    "url": "https://www.nature.com/articles/s41561-026-02137-4"
+  },
+  "editorial_status": "PROPUESTA_PENDIENTE_DE_GROK",
+  "arco": {
+    "hook_medias_res": "Un satélite detecta metano sobre Fentale; no hay erupción.",
+    "desarrollo": "La intrusión queda bajo tierra; las mediciones satelitales cuantifican el escape; los autores proponen un reservorio termogénico y un sello fracturado.",
+    "cierre_historia": "El gas encontró salida sin que el magma llegara a la superficie; la causa se presenta como hipótesis.",
+    "reflexion_o_pregunta": "¿Cuántos reservorios así podrían seguir sin detectar?"
+  },
+  "estilo_id": "pulp_comic_1940s",
+  "estilo_visual": "Pulp comic años 40",
+  "visual_identity": {
+    "style_id": "pulp_comic_1940s",
+    "style_name": "Pulp comic años 40",
+    "prompt_base": "1940s pulp adventure magazine cover illustration, dramatic low angle, heavy ink hatching, worn newsprint texture, faded four-color printing, one heroic subject large in frame, simple gradient sky, illustrated not photorealistic, vertical 9:16, no text",
+    "palette": "rojo óxido, amarillo, azul petróleo, papel amarillento",
+    "lighting": "Alto contraste y luz lateral; acento cálido solo para la anomalía y los datos.",
+    "texture": "Papel amarillento gastado, tinta gruesa y tramado de impresión a cuatro tintas.",
+    "composition": "Un sujeto principal por plano; caldera y corte geológico en lectura vertical 9:16; mantener continuidad de escala.",
+    "negative_prompt": "photorealistic, 3D render, active lava eruption, explosion, visible green methane smoke, text, labels, logos, watermark, fake satellite instruments, invented plume trajectories, extra volcanoes",
+    "reference_assets": [],
+    "seed": null,
+    "seed_policy": "Mantener papel, tramado y paleta; variar encuadre y fase del mecanismo sin añadir elementos no medidos."
+  },
+  "typography_identity": {
+    "font_family": "DejaVu Sans",
+    "font_weight": "700 para gancho; 400 para subtítulos",
+    "title_style": "Máximo seis palabras; presente desde frame 0 en postproducción",
+    "subtitle_style": "Bloques de máximo tres palabras; zona segura inferior",
+    "hierarchy": "Gancho > dato/etiqueta > subtítulos",
+    "animation": "Un movimiento por plano; tipografía en postproducción"
+  },
+  "voice": {
+    "engine": "edge-tts",
+    "voice_id": "es-MX-JorgeNeural",
+    "language": "es-MX",
+    "rate": "+7%",
+    "pitch": "-2Hz",
+    "pad_seconds": 0.3,
+    "modo_pausas": "continuo"
+  },
+  "sources": [
+    {
+      "id": "SRC-001",
+      "cita_corta": "Dualeh, E. W., Biggs, J., Sharma, S. et al. (2026). “Methane outburst driven by magma–sediment interactions at Fentale Volcano detected by satellite”. Nature Geoscience.",
+      "url": "https://www.nature.com/articles/s41561-026-02137-4",
+      "doi": "10.1038/s41561-026-02137-4",
+      "accessed": "2026-11-20",
+      "publication_date": "2026-11-19",
+      "supports": [
+        "Artículo original publicado en Nature Geoscience el 19 de noviembre de 2026.",
+        "Intrusión magmática iniciada el 17 de diciembre de 2024 y magma que permaneció atrapado bajo tierra.",
+        "Emisiones de más de 38.2 ± 3.9 kt de CH4 entre el 19 de enero y el 9 de abril de 2025; 90% liberado en el primer mes.",
+        "Pico de emisión de metano de 157 ± 41 t/h el 19 de enero de 2025.",
+        "Propuesta de que la intrusión fracturó un sello impermeable y liberó metano termogénico acumulado en sedimentos ricos en hidrocarburos.",
+        "Ausencia de mediciones isotópicas del metano en Fentale; el origen termogénico se apoya en contexto geológico y datos regionales.",
+        "La tasa de emisión se compara cualitativamente con grandes escapes industriales."
+      ],
+      "verification_status": "VERIFICADO_FUENTE_PRIMARIA",
+      "url_verification_status": "VERIFICADO_PAGINA_EDITORIAL_INDEXADA",
+      "doi_verification_status": "PENDIENTE_RESOLVEDOR",
+      "verification_note": "La página editorial de Nature está indexada y expone el artículo, la fecha y el DOI. El acceso HTML directo devolvió HTTP 500 y las consultas directas a Crossref/doi.org no completaron; el DOI queda pendiente de resolución independiente."
+    },
+    {
+      "id": "SRC-002",
+      "cita_corta": "Smithsonian Institution, Global Volcanism Program. “Fentale” (Volcano Number 221190).",
+      "url": "https://volcano.si.edu/volcano.cfm?vn=221190",
+      "doi": null,
+      "accessed": "2026-11-20",
+      "publication_date": null,
+      "supports": [
+        "Coordenadas del complejo volcánico Fentale: 8.985°N, 39.906°E."
+      ],
+      "verification_status": "VERIFICADO_FUENTE_PRIMARIA",
+      "url_verification_status": "VERIFICADO",
+      "doi_verification_status": "NO_APLICA",
+      "verification_note": "Ficha oficial del Smithsonian Global Volcanism Program."
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_001",
+      "arc": "hook_medias_res",
+      "duration_seconds": 9,
+      "narration": "En enero de 2025, un satélite detectó una descarga de metano sobre Fentale, en el Rift etíope. El volcán no estaba en erupción.",
+      "on_screen_text": "Metano sin erupción",
+      "visual_description": "Caldera de Fentale sin lava ni columna eruptiva; un recuadro de detección satelital señala una anomalía, no una nube visible de metano.",
+      "image_prompt": "1940s pulp adventure magazine cover illustration, dramatic low angle, heavy ink hatching, worn newsprint texture, faded four-color printing, one heroic subject large in frame, simple gradient sky, illustrated not photorealistic, vertical 9:16, no text, quiet Ethiopian rift caldera seen from a low angle, a small satellite-data inset with one highlighted anomaly contour, no visible methane smoke and no eruption",
+      "ambiente": "Viento seco del Rift, fondo grave muy tenue",
+      "sfx": [
+        "Barrido satelital corto",
+        "Pulso grave al aparecer la anomalía"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "pulp_comic_1940s",
+      "dramatic_beat": "La señal aparece donde no hay erupción.",
+      "scene_function": "Abrir con la anomalía y plantear la pregunta central.",
+      "causal_bridge_from_previous": "Apertura en curso: la detección satelital ya está ocurriendo; no se presenta una erupción que no existió.",
+      "question_state": "Sabemos que se detectó metano; todavía no sabemos cómo salió.",
+      "reason_to_continue": "La ausencia de erupción obliga a buscar un mecanismo subterráneo.",
+      "new_information": "El estudio sitúa la descarga en Fentale, Etiopía, durante enero de 2025."
+    },
+    {
+      "id": "scene_002",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "La señal apareció tras una intrusión magmática iniciada en diciembre de 2024. El magma quedó atrapado bajo tierra: no produjo una erupción.",
+      "on_screen_text": "La intrusión quedó bajo tierra",
+      "visual_description": "Mapa de Etiopía con un único punto de referencia en Fentale; sin trayectoria inventada para la emisión.",
+      "image_prompt": "1940s pulp adventure magazine cover illustration, dramatic low angle, heavy ink hatching, worn newsprint texture, faded four-color printing, one heroic subject large in frame, simple gradient sky, illustrated not photorealistic, vertical 9:16, no text, clean map panel of Ethiopia with one accurately placed marker at Fentale, simple geographic frame and restrained labels added in postproduction, no invented plume path",
+      "ambiente": "Viento alto y zumbido cartográfico discreto",
+      "sfx": [
+        "Clic seco de coordenada",
+        "Golpe suave al fijar el punto"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "style_id": "pulp_comic_1940s",
+      "capa": {
+        "tipo": "mapa",
+        "region": [
+          8.9,
+          39.85,
+          9,
+          39.95
+        ],
+        "puntos": [
+          {
+            "id": "fentale",
+            "label": "Fentale, Etiopía",
+            "lat": 8.985,
+            "lon": 39.906,
+            "sistema_coordenadas": "geográficas WGS84"
+          }
+        ],
+        "areas": [],
+        "titulo": "Complejo volcánico Fentale, Rift etíope",
+        "fuente": "Smithsonian Institution, Global Volcanism Program (coordenadas del complejo); Dualeh et al., Nature Geoscience (2026), Extended Data Fig. 1 (marco geográfico publicado).",
+        "precision_note": "El punto localiza el complejo volcánico, no el origen exacto de la emisión. El marco reproduce el rango geográfico de la figura; no se dibuja una trayectoria del penacho."
+      },
+      "dramatic_beat": "El lugar queda fijado y la causa todavía está bajo tierra.",
+      "scene_function": "Ubicar el complejo volcánico y separar la intrusión de una erupción superficial.",
+      "causal_bridge_from_previous": "La detección necesita un lugar concreto; el mapa fija Fentale sin inventar el recorrido del gas.",
+      "question_state": "La intrusión empezó en diciembre de 2024 y el magma permaneció bajo tierra.",
+      "reason_to_continue": "La ausencia de lava no explica por sí sola la cantidad de metano detectada.",
+      "new_information": "El GVP sitúa Fentale en 8.985°N, 39.906°E."
+    },
+    {
+      "id": "scene_003",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "Durante tres meses, los satélites estimaron al menos 38.2 ± 3.9 kilotoneladas de metano. Noventa por ciento salió durante el primer mes.",
+      "on_screen_text": "≥38.2 kt de CH₄",
+      "visual_description": "Gráfico de una cifra principal y una franja temporal de tres meses; el primer mes concentra visualmente el noventa por ciento.",
+      "image_prompt": "1940s pulp adventure magazine cover illustration, dramatic low angle, heavy ink hatching, worn newsprint texture, faded four-color printing, one heroic subject large in frame, simple gradient sky, illustrated not photorealistic, vertical 9:16, no text, bold editorial data graphic showing at least 38.2 plus or minus 3.9 kilotonnes of methane over three months, first month emphasized as ninety percent, no decorative extra numbers",
+      "ambiente": "Pulso grave sostenido, sin sonido de explosión",
+      "sfx": [
+        "Contador que avanza",
+        "Golpe corto al aparecer la cifra"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "pulp_comic_1940s",
+      "capa": {
+        "tipo": "dato",
+        "valor": "≥38.2 ± 3.9",
+        "unidad": "kt de CH₄ en tres meses",
+        "etiqueta": "Emisión estimada entre enero y abril de 2025",
+        "fuente": "Dualeh et al., Nature Geoscience (2026), abstract y resultados.",
+        "precision_note": "Estimación del estudio a partir de observaciones satelitales; no es una medición directa de cada punto de la caldera."
+      },
+      "dramatic_beat": "La escala del escape deja de ser una señal aislada.",
+      "scene_function": "Dimensionar la emisión total y su concentración temporal.",
+      "causal_bridge_from_previous": "Una vez localizada la caldera, las mediciones permiten cuantificar cuánto metano salió.",
+      "question_state": "El volumen fue grande y la mayor parte se liberó rápidamente.",
+      "reason_to_continue": "El pico horario muestra cuán concentrado fue el episodio.",
+      "new_information": "El estudio estima al menos 38.2 ± 3.9 kilotoneladas de CH₄ en tres meses."
+    },
+    {
+      "id": "scene_004",
+      "arc": "desarrollo",
+      "duration_seconds": 9,
+      "narration": "El pico llegó el 19 de enero: 157 ± 41 toneladas por hora, una tasa comparable con grandes escapes industriales.",
+      "on_screen_text": "157 ± 41 t/h",
+      "visual_description": "Pico destacado en una curva temporal sencilla, con una anotación de comparación cualitativa; no se inventan barras industriales ni cifras externas.",
+      "image_prompt": "1940s pulp adventure magazine cover illustration, dramatic low angle, heavy ink hatching, worn newsprint texture, faded four-color printing, one heroic subject large in frame, simple gradient sky, illustrated not photorealistic, vertical 9:16, no text, one sharp peak on a simple time-series chart, January 19 highlighted, a restrained comparison cue without fabricated industrial values",
+      "ambiente": "Viento tenso y pulso rítmico bajo",
+      "sfx": [
+        "Acento breve en el máximo",
+        "Corte seco al terminar el pico"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "pulp_comic_1940s",
+      "capa": {
+        "tipo": "dato",
+        "valor": "157 ± 41",
+        "unidad": "t de CH₄ por hora",
+        "etiqueta": "Pico estimado el 19 de enero de 2025",
+        "fuente": "Dualeh et al., Nature Geoscience (2026), abstract y resultados.",
+        "precision_note": "La comparación con grandes escapes industriales es cualitativa y procede del artículo; no se equiparan protocolos de medición distintos."
+      },
+      "dramatic_beat": "El escape alcanza una tasa que cambia la escala de la historia.",
+      "scene_function": "Mostrar el máximo reportado y contextualizarlo sin inventar una comparación numérica.",
+      "causal_bridge_from_previous": "El total de tres meses oculta un episodio inicial mucho más intenso.",
+      "question_state": "El pico fue comparable con grandes escapes industriales; falta explicar el origen del gas.",
+      "reason_to_continue": "La cantidad no identifica por sí sola el proceso que liberó el metano.",
+      "new_information": "El máximo estimado fue 157 ± 41 toneladas por hora el 19 de enero."
+    },
+    {
+      "id": "scene_005",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "¿De dónde salió? Los autores proponen que el magma calentó rocas sedimentarias ricas en hidrocarburos y favoreció la formación de metano termogénico.",
+      "on_screen_text": "Origen propuesto: termogénico",
+      "visual_description": "Corte geológico conceptual: intrusión profunda bajo sedimentos ricos en materia orgánica; se distingue explícitamente como hipótesis del estudio.",
+      "image_prompt": "1940s pulp adventure magazine cover illustration, dramatic low angle, heavy ink hatching, worn newsprint texture, faded four-color printing, one heroic subject large in frame, simple gradient sky, illustrated not photorealistic, vertical 9:16, no text, conceptual geological cutaway with a buried magmatic intrusion beneath layered hydrocarbon-rich sedimentary rocks, clearly schematic rather than a measured cross-section",
+      "ambiente": "Retumbo subterráneo muy bajo y aire seco",
+      "sfx": [
+        "Deslizamiento grave entre capas",
+        "Golpe amortiguado al aparecer la intrusión"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "pulp_comic_1940s",
+      "dramatic_beat": "La explicación se desplaza de la superficie al subsuelo.",
+      "scene_function": "Introducir la hipótesis de generación termogénica del metano.",
+      "causal_bridge_from_previous": "La tasa del escape exige buscar una reserva de gas y no una simple emisión superficial.",
+      "question_state": "Los autores proponen un origen termogénico; todavía falta explicar cómo escapó el gas.",
+      "reason_to_continue": "Un reservorio profundo necesita una vía de salida.",
+      "new_information": "El artículo propone que el calentamiento de sedimentos ricos en hidrocarburos generó metano."
+    },
+    {
+      "id": "scene_006",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "Después, la intrusión habría fracturado una capa impermeable. El gas acumulado encontró una salida hacia la caldera, sin una erupción.",
+      "on_screen_text": "Se abrió el sello",
+      "visual_description": "El mismo corte conceptual muestra una fractura en la capa impermeable y una ruta esquemática del gas hacia la caldera; se marca como mecanismo propuesto.",
+      "image_prompt": "1940s pulp adventure magazine cover illustration, dramatic low angle, heavy ink hatching, worn newsprint texture, faded four-color printing, one heroic subject large in frame, simple gradient sky, illustrated not photorealistic, vertical 9:16, no text, same conceptual geological cutaway, a small fracture opening in an impermeable cap layer and gas moving upward toward the caldera, dashed schematic arrows, no lava eruption",
+      "ambiente": "Vibración grave breve que se disipa",
+      "sfx": [
+        "Crujido geológico contenido",
+        "Soplo corto al abrirse la fractura"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "pulp_comic_1940s",
+      "dramatic_beat": "El sello se rompe y el reservorio encuentra salida.",
+      "scene_function": "Explicar el mecanismo propuesto que conecta la intrusión con la descarga.",
+      "causal_bridge_from_previous": "Si el gas se acumuló bajo una capa impermeable, la fractura explica cómo pudo salir.",
+      "question_state": "La hipótesis conecta calentamiento, almacenamiento y liberación; no demuestra una erupción.",
+      "reason_to_continue": "Antes de cerrar, hay que distinguir la hipótesis de lo que se midió directamente.",
+      "new_information": "Los autores proponen que la intrusión fracturó un sello y liberó gas acumulado."
+    },
+    {
+      "id": "scene_007",
+      "arc": "cierre_historia",
+      "duration_seconds": 10,
+      "narration": "Hay un límite importante: no se midieron isótopos del metano en Fentale. El origen termogénico se infiere con geología y datos regionales.",
+      "on_screen_text": "Origen inferido, no medido localmente",
+      "visual_description": "La sección geológica queda en segundo plano; en primer plano aparece una ficha de evidencia con una medición local ausente y el contexto regional separado.",
+      "image_prompt": "1940s pulp adventure magazine cover illustration, dramatic low angle, heavy ink hatching, worn newsprint texture, faded four-color printing, one heroic subject large in frame, simple gradient sky, illustrated not photorealistic, vertical 9:16, no text, evidence board separating local measurements from regional supporting evidence, one empty isotope-measurement panel, sober scientific editorial layout",
+      "ambiente": "Silencio breve con viento lejano",
+      "sfx": [
+        "Papel que se coloca sobre una mesa",
+        "Pausa sonora limpia"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "pulp_comic_1940s",
+      "dramatic_beat": "La explicación gana precisión al mostrar lo que todavía no se midió.",
+      "scene_function": "Delimitar la evidencia y evitar presentar la hipótesis como causa demostrada.",
+      "causal_bridge_from_previous": "El mecanismo propuesto necesita un límite explícito para no convertirse en certeza.",
+      "question_state": "La hipótesis está apoyada por geología y datos regionales, pero no por isótopos medidos en Fentale.",
+      "reason_to_continue": "El cierre debe recuperar la anomalía inicial sin exagerar el alcance del estudio.",
+      "new_information": "El artículo declara que no hay mediciones isotópicas locales del metano en Fentale."
+    },
+    {
+      "id": "scene_008",
+      "arc": "reflexion_o_pregunta",
+      "duration_seconds": 10,
+      "narration": "La sorpresa no fue lava: fue un reservorio que se abrió bajo tierra. ¿Cuántos siguen ocultos? Esto fue Datos y ociosidades.",
+      "on_screen_text": "¿Cuántos siguen ocultos?",
+      "visual_description": "La caldera permanece sin erupción; un corte lateral muestra el reservorio conceptual y la abertura ya explicada.",
+      "image_prompt": "1940s pulp adventure magazine cover illustration, dramatic low angle, heavy ink hatching, worn newsprint texture, faded four-color printing, one heroic subject large in frame, simple gradient sky, illustrated not photorealistic, vertical 9:16, no text, quiet caldera above a clearly schematic underground gas reservoir, the cap fracture visible, no eruption, final composition echoes the opening",
+      "ambiente": "Viento seco que se desvanece",
+      "sfx": [
+        "Un pulso grave final",
+        "Cierre sonoro breve y limpio"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "pulp_comic_1940s",
+      "dramatic_beat": "La ausencia de lava se convierte en el giro que paga la apertura.",
+      "scene_function": "Cerrar la pregunta inicial y dejar una pregunta abierta sin convertirla en un dato.",
+      "causal_bridge_from_previous": "El límite de evidencia no borra el hallazgo: explica qué parte está medida y cuál sigue siendo hipótesis.",
+      "question_state": "La descarga está documentada; su mecanismo se presenta como hipótesis científica.",
+      "reason_to_continue": "El espectador puede trasladar la pregunta a otros sistemas volcánicos sin asumir que todos se comportan igual.",
+      "new_information": "El evento muestra que una descarga importante de metano puede ocurrir sin una erupción."
+    }
+  ],
+  "cortinilla_fuentes": {
+    "duration_seconds": 6,
+    "titulo": "Fuentes",
+    "aviso": "Referencias bibliográficas declaradas; no se generan medios en esta preproducción.",
+    "firma": "Datos y ociosidades",
+    "source_ids": [
+      "SRC-001",
+      "SRC-002"
+    ]
+  },
+  "audio": {
+    "music_asset": null,
+    "music_plan": "Cama sintetizada prevista: pulso bajo y contenido, sin percusión épica; no existe archivo de audio.",
+    "music_license": null,
+    "cama_musical": "sintetico:pulso"
+  },
+  "export": {
+    "resolution": "1080x1920",
+    "fps": 30,
+    "render_status": "NOT_GENERATED"
+  },
+  "publicacion": {
+    "status": "PENDIENTE_DECISION_GROK",
+    "platforms": [
+      "YouTube Shorts",
+      "TikTok",
+      "Facebook Reels"
+    ],
+    "note": "No publicar ni programar desde preproducción textual."
+  },
+  "estado": "PENDIENTE_REVISION_GROK",
+  "production_mode": "storyboard_only",
+  "validation_notes": [
+    "Borrador textual en proyectos; no se ha creado QA narrativo ni se ha marcado preparado.",
+    "El DOI requiere resolución independiente Crossref/doi.org; no promover hasta completar --check-doi.",
+    "El validador estructural oficial no se ha ejecutado en esta sesión."
+  ],
+  "linea_tematica_provisional": "Actualidad",
+  "approved_assets": [],
+  "risk_notes": [
+    "El metano es invisible; no representarlo como una columna de humo observada directamente.",
+    "El origen termogénico es una propuesta de los autores; no hay mediciones isotópicas locales en Fentale.",
+    "Las coordenadas GVP localizan el complejo volcánico, no el origen exacto de la emisión."
+  ]
+}
