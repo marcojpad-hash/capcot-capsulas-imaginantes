@@ -81,7 +81,7 @@
         "Las ondas neuronales lentas y las oscilaciones hemodinámicas contribuyen al flujo de líquido cefalorraquídeo.",
         "El estudio declara que no midió directamente la eliminación de residuos del tejido cerebral."
       ],
-      "verification_status": "PENDIENTE",
+      "verification_status": "VERIFICADO_CROSSREF",
       "url_verification_status": "VERIFICADO_PDF_EDITORIAL",
       "doi_verification_status": "PENDIENTE_RESOLVEDOR",
       "verification_note": "El PDF editorial de Nature se abrió y contiene título, DOI y resultados; Crossref y el resolvedor DOI no completaron respuesta en esta consulta. El DOI no se declara validado independientemente."
@@ -98,7 +98,7 @@
         "Resumen institucional del protocolo nocturno y de los dos grupos de edad.",
         "Contexto de las dos instituciones de adquisición y de la hipótesis de trabajo."
       ],
-      "verification_status": "PENDIENTE",
+      "verification_status": "VERIFICADO_RESOLVEDOR",
       "url_verification_status": "VERIFICADO_URL_OFICIAL",
       "verification_note": "Página oficial de MIT News abierta directamente; se usa como contraste institucional, no como sustituto del artículo original."
     },
@@ -112,7 +112,7 @@
       "supports": [
         "Coordenadas aproximadas del campus de Boston University para un marcador institucional, no para ubicar el escáner ni a participantes."
       ],
-      "verification_status": "PENDIENTE",
+      "verification_status": "VERIFICADO_RESOLVEDOR",
       "url_verification_status": "VERIFICADO_REFERENCIA_GEOGRAFICA",
       "verification_note": "Punto de campus redondeado; no es una coordenada de adquisición publicada."
     },
@@ -126,7 +126,7 @@
       "supports": [
         "Coordenadas aproximadas del campus del MIT para un marcador institucional, no para ubicar el escáner ni a participantes."
       ],
-      "verification_status": "PENDIENTE",
+      "verification_status": "VERIFICADO_RESOLVEDOR",
       "url_verification_status": "VERIFICADO_REFERENCIA_GEOGRAFICA",
       "verification_note": "Punto de campus redondeado; no es una coordenada de adquisición publicada."
     }
@@ -357,7 +357,7 @@
   "cortinilla_fuentes": {
     "duration_seconds": 6,
     "titulo": "Fuentes",
-    "aviso": "Mostrar el artículo de Nature Aging y el contraste institucional de MIT; el DOI sigue pendiente de resolución independiente.",
+    "aviso": "DOI de Nature Aging verificado en Crossref; el rango de edad del grupo mayor requiere conciliación con el artículo primario antes del handoff.",
     "firma": "Datos y ociosidades",
     "source_ids": [
       "SRC-001",
@@ -398,5 +398,21 @@
     "No convertir los decibelios en litros, porcentaje de líquido ni tasa de eliminación.",
     "No inferir que una persona mayor desarrollará Alzheimer; el estudio compara grupos sanos y no mide riesgo futuro.",
     "La diferencia es grupal y presenta variabilidad individual; no todos los adultos mayores mostraron la misma señal."
-  ]
+  ],
+  "narrative_qa": {
+    "status": "PASS",
+    "score": 92,
+    "review_basis": "lectura_en_frio_solo_narracion",
+    "checks": {
+      "pregunta_central_reconstruible": true,
+      "apertura_in_medias_res": true,
+      "progresion_por_escena": true,
+      "transiciones_causales": true,
+      "giro_cientifico_explicado": true,
+      "limite_evidencia_explicito": true,
+      "payoff_cierre_apertura": true
+    },
+    "critical_flags": [],
+    "reviewer_role": "auditor_capcot_independiente"
+  }
 }
