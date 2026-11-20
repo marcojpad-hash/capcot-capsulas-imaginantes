@@ -55,7 +55,9 @@ def _storyboard_paths():
     for base in patterns:
         if not base.exists():
             continue
-        for p in base.glob("*/storyboard.json"):
+        # Recorre cualquier profundidad: hay paquetes heredados anidados
+        # más de un nivel bajo cola/entrada, cola/bloqueados y salidas.
+        for p in base.rglob("storyboard.json"):
             if "pendiente" in p.parts:
                 continue
             found.add(p)
@@ -97,6 +99,32 @@ def _storyboard_record(path):
         "_source": source,
         "_path": str(path.relative_to(ROOT)),
     }
+
+def handoffs_grok_inbox():
+    """Inventario separado de markers; un marker pending nunca confirma recepción Grok."""
+    base = ROOT / "handoffs" / "grok_inbox"
+    if not base.exists():
+        return []
+    rows = []
+    for path in sorted(base.rglob("*.json")):
+        marker = _read(path, None)
+        if not isinstance(marker, dict):
+            continue
+        pid = marker.get("project_id") or path.stem
+        rows.append({
+            "project_id": str(pid),
+            "event": marker.get("event"),
+            "status": marker.get("status") or "unknown",
+            "created_at": marker.get("created_at"),
+            "branch": marker.get("branch"),
+            "commit_sha": marker.get("commit_sha"),
+            "package_path": marker.get("package_path"),
+            "marker_path": str(path.relative_to(ROOT)),
+            "receipt_confirmed": False,
+            "receipt_rule": "Solo cola/estado/<project_id>.json confirma recepción Grok.",
+        })
+    return rows
+
 
 def registros():
     """Registros unidos por project_id; la evidencia de storyboard completa campos faltantes."""
@@ -170,7 +198,13 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Vista reconciliada de rotación CAPCOT (solo lectura).")
     parser.add_argument("--fecha", help="Limitar la vista a YYYY-MM-DD.")
     args = parser.parse_args()
-    payload = {"registros": registros_dia(args.fecha) if args.fecha else registros()}
+    handoffs = handoffs_grok_inbox()
+    if args.fecha:
+        handoffs = [row for row in handoffs if _date(row.get("project_id")) == args.fecha]
+    payload = {
+        "registros": registros_dia(args.fecha) if args.fecha else registros(),
+        "handoffs_grok_inbox": handoffs,
+    }
     if args.fecha:
         payload["temas_del_dia"] = temas_dia(args.fecha)
     print(json.dumps(payload, ensure_ascii=False, indent=2))
