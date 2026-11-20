@@ -147,8 +147,7 @@
       "causal_bridge_from_previous": "Apertura: la eclosión ocurre en pocos días después de cambiar la temperatura.",
       "question_state": "La eclosión ocurre; todavía no se conoce qué preparó a los huevos.",
       "reason_to_continue": "El resultado necesita el antecedente experimental que lo hizo posible.",
-      "new_information": "Tras el cambio de temperatura, los huevos comienzan a eclosionar casi al mismo tiempo.",
-      "asset_filename": "frames/scene_001.jpg"
+      "new_information": "Tras el cambio de temperatura, los huevos comienzan a eclosionar casi al mismo tiempo."
     },
     {
       "id": "scene_002",
@@ -171,8 +170,7 @@
       "causal_bridge_from_previous": "Para entender por qué la incubadora produce una respuesta rápida, se revela el periodo frío previo.",
       "question_state": "Se conoce la duración y temperatura del enfriamiento previo.",
       "reason_to_continue": "El frío acumulado necesita un organismo y una etapa biológica.",
-      "new_information": "El tratamiento clave fue un enfriamiento de 19–21 semanas a 5 °C en laboratorio.",
-      "asset_filename": "frames/scene_002.jpg"
+      "new_information": "El tratamiento clave fue un enfriamiento de 19–21 semanas a 5 °C en laboratorio."
     },
     {
       "id": "scene_003",
@@ -209,8 +207,7 @@
         "titulo": "Referencia geográfica del sur de Suecia",
         "fuente": "SRC-001; SRC-002",
         "nota_precision": "El artículo indica huevos del sur de Suecia alrededor de 55°N, pero no publica aquí un punto exacto de muestreo. Lund es solo una referencia regional cartográfica, no el lugar confirmado de recolección."
-      },
-      "asset_filename": "frames/scene_003.jpg"
+      }
     },
     {
       "id": "scene_004",
@@ -233,8 +230,7 @@
       "causal_bridge_from_previous": "Con el organismo situado, el siguiente paso es distinguir las señales que terminan la diapausa.",
       "question_state": "Se conocen las variables que el equipo comparó.",
       "reason_to_continue": "Las señales se entienden al comparar tratamientos.",
-      "new_information": "El estudio comparó temperatura, frío acumulado y fotoperiodo.",
-      "asset_filename": "frames/scene_004.jpg"
+      "new_information": "El estudio comparó temperatura, frío acumulado y fotoperiodo."
     },
     {
       "id": "scene_005",
@@ -257,8 +253,7 @@
       "causal_bridge_from_previous": "Las señales no pesan igual en todas las condiciones; el contraste conduce al resultado principal.",
       "question_state": "El fotoperiodo importa menos tras enfriamiento prolongado.",
       "reason_to_continue": "El contraste prepara la cifra principal del estudio.",
-      "new_information": "Con menor enfriamiento, el fotoperiodo seguía influyendo; el frío prolongado redujo esa dependencia.",
-      "asset_filename": "frames/scene_005.jpg"
+      "new_information": "Con menor enfriamiento, el fotoperiodo seguía influyendo; el frío prolongado redujo esa dependencia."
     },
     {
       "id": "scene_006",
@@ -288,8 +283,7 @@
         "etiqueta": "Tratamiento de frío y tiempo de eclosión",
         "fuente": "SRC-001",
         "interpretacion": "Ensayo de laboratorio con huevos sometidos a distintos fotoperiodos; no es una tasa de eclosión natural observada en campo."
-      },
-      "asset_filename": "frames/scene_006.jpg"
+      }
     },
     {
       "id": "scene_007",
@@ -312,8 +306,7 @@
       "causal_bridge_from_previous": "La tolerancia observada permite plantear una consecuencia ecológica, pero exige limitar la inferencia.",
       "question_state": "Hay tolerancia al frío, pero no inmunidad ni prueba de supervivencia ilimitada.",
       "reason_to_continue": "La tolerancia observada lleva a una hipótesis, que debe limitarse.",
-      "new_information": "Los huevos también pudieron eclosionar a 5 °C; las larvas sobrevivieron dos semanas cerca de 0 °C.",
-      "asset_filename": "frames/scene_007.jpg"
+      "new_information": "Los huevos también pudieron eclosionar a 5 °C; las larvas sobrevivieron dos semanas cerca de 0 °C."
     },
     {
       "id": "scene_008",
@@ -336,8 +329,7 @@
       "causal_bridge_from_previous": "El cierre vuelve a la apertura: la eclosión sincronizada existe en el ensayo, no como cambio de campo demostrado.",
       "question_state": "La posible consecuencia ecológica queda como hipótesis, no como resultado de campo.",
       "reason_to_continue": "El final devuelve la historia a la eclosión inicial y distingue dato de inferencia.",
-      "new_information": "Los autores plantean una posibilidad bajo inviernos más cálidos; no es una observación de campo ni prueba de causalidad climática.",
-      "asset_filename": "frames/scene_008.jpg"
+      "new_information": "Los autores plantean una posibilidad bajo inviernos más cálidos; no es una observación de campo ni prueba de causalidad climática."
     }
   ],
   "cortinilla_fuentes": {
