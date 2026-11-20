@@ -381,5 +381,23 @@
     "El metano es invisible; no representarlo como una columna de humo observada directamente.",
     "El origen termogénico es una propuesta de los autores; no hay mediciones isotópicas locales en Fentale.",
     "Las coordenadas GVP localizan el complejo volcánico, no el origen exacto de la emisión."
-  ]
+  ],
+  "narrative_qa": {
+    "status": "PASS",
+    "score": 90,
+    "review_basis": "lectura_en_frio_solo_narracion",
+    "reviewer_role": "auditor_capcot_independiente",
+    "reviewed_at": "2026-11-20T16:11:24-06:00",
+    "checks": {
+      "pregunta_central_reconstruible": true,
+      "apertura_in_medias_res": true,
+      "progresion_por_escena": true,
+      "transiciones_causales": true,
+      "giro_cientifico_explicado": true,
+      "limite_evidencia_explicito": true,
+      "payoff_cierre_apertura": true
+    },
+    "critical_flags": [],
+    "reviewer_notes": "Lectura en frío realizada únicamente sobre la narración concatenada. La pregunta reconstruible es cómo se liberó metano sin erupción; la secuencia satélite→intrusión→cuantificación→pico→origen termogénico propuesto→fractura del sello→límite isotópico→payoff mantiene continuidad causal. El giro científico se explica y se mantiene como hipótesis; el límite de evidencia evita presentarlo como causa demostrada. No se modificó narración ni claims."
+  }
 }
