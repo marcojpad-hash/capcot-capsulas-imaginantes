@@ -122,5 +122,32 @@ class RegistroEditorialTests(unittest.TestCase):
 
 
 
+    def test_includes_flat_blocked_storyboards_in_rotation(self):
+        self.write_json(
+            registro_editorial.ROOT / "cola" / "bloqueados" / "2026-11-07_clavo.json",
+            {
+                "project_id": "2026-11-07_clavo",
+                "title": "Clavo de cocina",
+                "estilo_id": "linograbado",
+                "estructura": "historia",
+                "audio": {"cama_musical": "sintetico:pizzicato"},
+                "scenes": [{"duration_seconds": 78}],
+                "cortinilla_fuentes": {"duration_seconds": 6},
+            },
+        )
+        day = registro_editorial.registros_dia("2026-11-07")
+        self.assertEqual(len(day), 1)
+        self.assertEqual(day[0]["project_id"], "2026-11-07_clavo")
+        self.assertEqual(day[0]["_source"], "bloqueado")
+        self.assertEqual(day[0]["origen"], "externa")
+        self.assertEqual(day[0]["estilo"], "linograbado")
+        self.assertEqual(day[0]["cama"], "pizzicato")
+        self.assertEqual(
+            registro_editorial.temas_dia("2026-11-07")[0]["tema"],
+            "clavo de cocina",
+        )
+
+
+
 if __name__ == "__main__":
     unittest.main()
