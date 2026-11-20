@@ -57,3 +57,13 @@ Ninguno de los dos comandos incluyó `--check-doi`. Estos runs confirman la vali
 - Comparación de blobs entre el commit ejecutado y la rama actual: storyboard `2046152ade90fffaf9527d180e13cc5f6009fb60`, validador `28e3d600431b92d7bd0eca94f34d4ff5867c9cbf`, workflow `e8151c8eb1ee5a0893f3f800f4c625887427ecde`; los tres permanecen idénticos, por lo que el resultado estructural sigue aplicando al contenido vigente.
 - No existe `cola/estado/2026-11-18_dato-kuroshio-puente-atmosferico.json`: `RECEPCION_GROK_NO_CONFIRMADA`.
 - Estado sin cambio: `BORRADOR_EN_PROYECTOS_NO_APTO_PARA_PROMOCION`. No se copia a cola ni se emite handoff.
+
+
+## Actualización de auditoría — 20-nov-2026 (run #6)
+
+- Workflow: `CAPCOT — validar preproducción Kuroshio`; run `44828326509`, job `136606531020`, resultado `success`, creado `2026-11-20T22:21:50Z`.
+- Commit ejecutado: `4afd38844d615aeb18f68a9c7d61c21182ac9a91`.
+- Comando exacto: `python scripts/validar_storyboard.py proyectos/2026-11-18_dato-kuroshio-puente-atmosferico/storyboard.json`.
+- Log del paso **Validar storyboard textual**: `OK`, salida 0. El paso de expediente terminó con `Expediente textual íntegro; medios no generados; publicación no autorizada.`.
+- El comando no incluyó `--check-doi`. El DOI `10.1038/s41561-026-02139-2` sigue `PENDIENTE_RESOLVEDOR`; el run confirma estructura, no Crossref.
+- El blob del storyboard y el del validador coinciden con la rama actual; el resultado estructural aplica al contenido vigente. No se promueve ni se copia a cola.
