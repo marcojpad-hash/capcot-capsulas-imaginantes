@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Vista reconciliada de rotación CAPCOT sin modificar data/*.json.
 
-Une los registros canónicos con storyboards de cola, proyectos y salidas.
+Une los registros canónicos con storyboards de cola, proyectos, bloqueados y salidas.
 Los archivos de cola/proyecto cuentan como evidencia de tema/estilo/estructura
 aunque todavía no equivalgan a una publicación.
 """
@@ -38,7 +38,7 @@ def _normal_record(raw, source):
         "estilo": raw.get("estilo") or raw.get("estilo_id"),
         "cama": raw.get("cama") or raw.get("cama_musical"),
         "duracion": raw.get("duracion") or raw.get("target_duration_seconds"),
-        "origen": raw.get("origen") or ("externa" if source == "cola" else "propia"),
+        "origen": raw.get("origen") or ("externa" if source in {"cola", "bloqueado"} else "propia"),
         "estado": raw.get("estado") or raw.get("status"),
         "_source": source,
     }
@@ -47,6 +47,7 @@ def _storyboard_paths():
     patterns = (
         ROOT / "proyectos",
         ROOT / "cola" / "entrada",
+        ROOT / "cola" / "bloqueados",
         ROOT / "cola",
         ROOT / "salidas",
     )
@@ -75,7 +76,9 @@ def _storyboard_record(path):
         music = music.split(":", 1)[1]
     duration = sum(float(s.get("duration_seconds", 0) or 0) for s in sb.get("scenes", []) if isinstance(s, dict))
     duration += float((sb.get("cortinilla_fuentes") or {}).get("duration_seconds", 0) or 0)
-    if "entrada" in path.parts:
+    if "bloqueados" in path.parts:
+        source, default_origin = "bloqueado", "externa"
+    elif "entrada" in path.parts:
         source, default_origin = "cola", "externa"
     elif "proyectos" in path.parts:
         source, default_origin = "proyecto", "propia"
@@ -139,7 +142,7 @@ def registros_dia(fecha):
     return [r for r in registros() if r.get("fecha") == fecha]
 
 def temas_dia(fecha):
-    """Temas canónicos + temas de cola/proyectos; nunca escribe data/temas_del_dia.json."""
+    """Temas canónicos + temas de cola/proyectos/bloqueados; nunca escribe data/temas_del_dia.json."""
     raw = _read(ROOT / "data" / "temas_del_dia.json", {})
     base = raw.get(fecha, []) if isinstance(raw, dict) else []
     out = []
