@@ -173,7 +173,7 @@ Este addendum amplía el control anterior; no sustituye el corte inicial ni modi
 
 - Los datos de rotación no están actualizados a la fecha de este corte: `data/temas_del_dia.json` llega a 2026-10-28; `data/rotacion.json` llega a 2026-10-31; `data/estilos_usados.json` conserva 21 entradas y la última es 2026-10-28. `data/horarios.json` fue actualizado 2026-11-09. Se respetó la regla de solo lectura: ningún `data/*.json` fue modificado.
 - `scripts/rotacion.py` usa `registro_editorial.registros()` y `temas_dia()` en lugar de depender exclusivamente de esos archivos históricos. `registro_editorial.py` combina rotación, publicaciones, cola y storyboards de `proyectos/`, `cola/entrada/`, `cola/` y `salidas/`; `temas_dia()` combina el JSON con los registros encontrados.
-- Límite detectado: `_storyboard_paths()` no recorre `cola/bloqueados/<id>/storyboard.json` ni `handoffs/grok_inbox/`. Los expedientes que solo existan en bloqueados o en el buzón pueden quedar fuera de la vista combinada. El auditor debe seguir inspeccionando `cola/bloqueados/` y los handoffs directamente; no asumir que el registro combinado es exhaustivo.
+- Errata de alcance: el texto anterior quedó desactualizado tras la ampliación de `_storyboard_paths()`. El registro ya recorre `cola/bloqueados/<id>/storyboard.json` a un nivel; hasta este corte omitía los JSON planos `cola/bloqueados/*.json` y `handoffs/grok_inbox/`. El commit `e678b4ca7982e2f9c0b024d960694f4ef54d416d` añade los JSON planos de bloqueados y `6d40c5567fc8aa7c028567ceaaca906aa7d2bd87` agrega su prueba. Sigue sin recorrer `handoffs/grok_inbox/` ni profundidades mayores a un nivel; inspección directa de handoffs permanece obligatoria.
 - La rama conserva la instrucción de contrastar `fecha_objetivo` + `slot_local` en `feature` y `main` y de no modificar `data/*.json`.
 
 ## Addendum — registro editorial y capacidad de bloqueados (20-nov, operador)
@@ -189,3 +189,37 @@ Se corrigió una omisión descubierta al comparar el inventario de cola/bloquead
 - No se modificaron data/*.json, main, workflows, cola, estados Grok ni medios. Los markers de handoffs/grok_inbox/ siguen revisándose directamente por el auditor; no se incorporaron como storyboards de rotación.
 
 - El commit documental cf3de6efd69a314d44540fa69bc4ba05744c1646 terminó run #44733428873 en success (CodeQL neutral; Analyze Python y Actions success). El commit de conciliación de CI `9c08be6dec250e3598af7b6bab8c6ad4955ce5c8` terminó run #44733560788 en success (CodeQL, Analyze Python y Actions). Son checks de análisis, no la suite de tests del repositorio.
+
+## Reconsulta operativa — 20-nov-2026, 06:27–06:42 CDMX
+
+### Registro editorial: omisión corregida
+
+- Se comprobó que había archivos `cola/bloqueados/<project_id>.json` planos además de carpetas `<project_id>/storyboard.json`. El registro anterior solo incluía los segundos.
+- Se modificó únicamente `scripts/registro_editorial.py`: ahora `_storyboard_paths()` incluye JSON planos tanto de `cola/entrada/` como de `cola/bloqueados/`. No se tocaron `data/*.json`, rotación ni decisiones editoriales.
+- Se añadió `test_includes_flat_blocked_storyboards_in_rotation` a `tests/test_registro_editorial.py`.
+- Commits verificados: script `e678b4ca7982e2f9c0b024d960694f4ef54d416d`; prueba `6d40c5567fc8aa7c028567ceaaca906aa7d2bd87`.
+- Verificación de lectura: blob del script `a1419d0e5214d770cb4a0cb7e89c792313e794ca`; blob del test `2351b2c082c5e08a3f7376cabbe6e5a2c57ec50a`.
+- Prueba local aislada con el módulo y fixtures copiados: **5/5 PASS** (reconciliación con data histórica, origen externo, deduplicación, bloqueado anidado y JSON plano bloqueado). No es la suite completa ni un run de CI.
+
+### Lote de doce proyectos, relectura estática (sin repetir QA narrativo)
+
+Los doce IDs indicados por la auditoría siguen en `proyectos/`; sus QA existentes no se repitieron. Resultado leído de los storyboards actuales: **2 PASS** (Venus 88; arena cantante 94) y **10 FAIL** (palomitas 82, árboles 78, rayo globular 81, ballena 80, aguacate 79, ranas 83, huesos de bebé 82, hielo caliente 81, pulpo 72, nubes 78). Los doce archivos individuales `cola/estado/<project_id>.json` devolvieron 404: **RECEPCION_GROK_NO_CONFIRMADA** en los doce casos.
+
+- Revisión estructural estática: 170–221 palabras, 7–8 escenas, 84 s con cortinilla, voz JorgeNeural +7%/−2Hz, assets vacíos y `NOT_GENERATED` en los doce. El proyecto de árboles carece de mapa con coordenadas y de capa dato/gráfico; los otros once sí contienen ambos. No se ejecutó el validador estructural real ni se hizo una nueva lectura narrativa.
+- Siete proyectos conservan sidecars de plataforma y por eso se clasifican **PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR**: Venus, palomitas, ballena, aguacate, ranas, arena cantante e hielo caliente. Hay publicaciones verificadas en TikTok/Facebook y programaciones antiguas de Facebook/TikTok; los detalles y fechas siguen en los sidecars.
+- Los siete sidecars apuntan a MP4 en rutas de workspace, no a archivos presentes en el árbol GitHub: **MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO**. No se encontró `historial_youtube` en ninguna de las dos ramas. El sidecar de arena cantante menciona el ID YouTube `m4RqQRaz55k` como público y `ztIkYcXB91U` como programado; la disponibilidad actual no se pudo verificar con una conexión de YouTube, por lo que no se declara publicado ni cancelado.
+- No hay proyectos/entradas de 20 o 21-nov en `feature` ni en `main` al corte. El investigador de las 08:00 sigue habilitado y es responsable del dato del día; no se duplicó su trabajo.
+
+### PRs y CI
+
+- PR [#3](https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/pull/3): OPEN, DRAFT, NOT MERGEABLE; base `main`, head `feature/capcot-video-discovery-continuity`; 1,041 commits, 676 archivos, 72,326 adiciones y 1,693 eliminaciones. El diff incluye 13 `data/*.json`; esos datos permanecen fuera de este cambio y no se fusionó nada. Sus runs recientes de CodeQL/Analyze en verde no ejecutan la suite de pruebas CAPCOT.
+- PR [#14](https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/pull/14) sigue OPEN/NOT MERGED, apunta a `main` y conserva la incompatibilidad `asset_filename`/DOI ya documentada. PR #13 también sigue abierto y sin merge.
+- Gitleaks run [#44735449493](https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/actions/runs/44735449493) falló al escanear 1,727 commits y encontró un `generic-api-key` en el commit histórico `a4ccf1974a8966d5801a991ac25609ef4d7cdca7`, archivo `docs/SKILL_DRAFT_capsula_diaria.md`, línea 17. Se inspeccionó el texto histórico con el valor omitido: es el placeholder literal `CAPCOT_LLM_API_KEY=...`, no una credencial; el archivo actual tampoco contiene una cadena larga en esa línea. Clasificación: **FALSO_POSITIVO_CONFIRMADO_POR_CONTENIDO**. No se rotó ni cambió ningún secreto.
+- La diferencia entre los dos escaneos explica el resultado: el run anterior #44645952263, aunque verde, solo escaneó 1 commit; el nuevo recorrió la historia completa. No se modificó la configuración de Gitleaks ni se reescribió historia.
+
+### Automatizaciones y recepción
+
+- Investigador CAPCOT: habilitado; último run completado 19-nov 08:13 CDMX; próximo 20-nov 08:00.
+- Auditor CAPCOT: habilitado; último run completado 19-nov 15:27 CDMX; próximo 20-nov 15:00.
+- Operador único: este run permanece `in_progress` sin `completed_at`; no se registra como completado.
+- No se disparó dispatch. El workflow sigue seleccionando JSON planos de `cola/entrada/`; no se encontró un run de dispatch posterior al #147 (1-nov). Un marker de handoff no acredita recepción Grok.
