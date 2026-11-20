@@ -34,3 +34,12 @@ Este expediente es solo preproducción textual. No se han generado imágenes, au
 ## Actualización de auditoría — 19-nov-2026
 
 La ejecución CI indicada arriba corrige la anotación anterior de validación pendiente. El validador acepta la capa de mapa con regiones delimitadas válidas; no exige puntos si hay regiones válidas. La conclusión anterior de FAIL por `puntos=[]` no coincide con el código vigente ni con el run exitoso. La compuerta que permanece abierta es la resolución independiente del DOI y la ausencia de recepción formal de Grok.
+
+## Actualización de auditoría — 20-nov-2026
+
+Se releyeron las ejecuciones posteriores que no estaban reflejadas en la nota anterior:
+
+- **Run #3:** `44617395667`; commit `369d0da1007f6b2eafd3502bd369c4284d3acee1`; creado `2026-11-19T21:18:16Z`; comando exacto: `python scripts/validar_storyboard.py proyectos/2026-11-18_dato-kuroshio-puente-atmosferico/storyboard.json`; paso **Validar storyboard textual**: `OK`, salida 0.
+- **Run #4 (más reciente):** `44617431497`; commit `b399dda95661b2e134a24c99d9ede803f597f1bb`; creado `2026-11-19T21:18:28Z`; mismo comando exacto; paso **Validar storyboard textual**: `OK`, salida 0. El paso de expediente también terminó con `Expediente textual íntegro; medios no generados; publicación no autorizada.`.
+
+Ninguno de los dos comandos incluyó `--check-doi`. Estos runs confirman la validación estructural del storyboard en esos commits; no confirman Crossref/resolvedor ni levantan el bloqueo DOI. El DOI `10.1038/s41561-026-02139-2` permanece `PENDIENTE_RESOLVEDOR`. El estado permanece `BORRADOR_EN_PROYECTOS_NO_APTO_PARA_PROMOCION`; no se copia a cola ni se emite handoff.
