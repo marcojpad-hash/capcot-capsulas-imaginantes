@@ -428,3 +428,5 @@ Los 12 IDs del lote 5–7 nov conservan los mismos SHA/contenidos desde la pasad
 ### Resultado de promoción
 
 Ninguna pieza se promovió. Fentale tiene QA narrativo PASS, pero mantiene dos compuertas independientes pendientes: resolución DOI/Crossref y ejecución del validador estructural oficial. Los demás bloqueos de recepción, producción previa, fechas vencidas y selección por profundidad permanecen sin eludir.
+
+**Commits run 9:** storyboard Fentale `096612f3809fb16b47b66489fae497f669c9c688`; QA Fentale `18492e0d9f0db615f5af81cb420d48efaf07606a`; radar sincronizado `a6aeef2fe4eaee7cb44b398909cc527aa16091ca`; control de cola `9e4cd84783d2e8784ba6c0a746012bea9b16a11e`.
