@@ -149,5 +149,49 @@ class RegistroEditorialTests(unittest.TestCase):
 
 
 
+    def test_finds_storyboards_more_than_one_directory_level_deep(self):
+        self.write_json(
+            registro_editorial.ROOT / "proyectos" / "2026-11-20_nested" / "archive" / "review" / "storyboard.json",
+            {
+                "project_id": "2026-11-20_nested",
+                "title": "Nested storyboard",
+                "estilo_id": "linograbado",
+                "scenes": [{"duration_seconds": 78}],
+                "cortinilla_fuentes": {"duration_seconds": 6},
+            },
+        )
+        rows = registro_editorial.registros_dia("2026-11-20")
+        self.assertEqual(len(rows), 1)
+        self.assertEqual(rows[0]["project_id"], "2026-11-20_nested")
+        self.assertEqual(rows[0]["_source"], "proyecto")
+        self.assertEqual(
+            rows[0]["_path"],
+            "proyectos/2026-11-20_nested/archive/review/storyboard.json",
+        )
+
+    def test_handoff_markers_are_listed_separately_and_never_confirm_receipt(self):
+        self.write_json(
+            registro_editorial.ROOT / "handoffs" / "grok_inbox" / "2026-11-20_robot.json",
+            {
+                "event": "capcot.package.ready",
+                "status": "pending",
+                "project_id": "2026-11-20_robot",
+                "branch": "main",
+                "commit_sha": "abc123",
+                "package_path": "cola/entrada/2026-11-20_robot/",
+            },
+        )
+        self.assertEqual(registro_editorial.registros_dia("2026-11-20"), [])
+        markers = registro_editorial.handoffs_grok_inbox()
+        self.assertEqual(len(markers), 1)
+        self.assertEqual(markers[0]["status"], "pending")
+        self.assertFalse(markers[0]["receipt_confirmed"])
+        self.assertEqual(markers[0]["project_id"], "2026-11-20_robot")
+        self.assertEqual(
+            markers[0]["receipt_rule"],
+            "Solo cola/estado/<project_id>.json confirma recepción Grok.",
+        )
+
+
 if __name__ == "__main__":
     unittest.main()
