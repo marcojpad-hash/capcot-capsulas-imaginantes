@@ -81,10 +81,10 @@
         "Las ondas neuronales lentas y las oscilaciones hemodinámicas contribuyen al flujo de líquido cefalorraquídeo.",
         "El estudio declara que no midió directamente la eliminación de residuos del tejido cerebral."
       ],
-      "verification_status": "VERIFICADO_CROSSREF",
+      "verification_status": "VERIFICADO_FUENTE_PRIMARIA",
       "url_verification_status": "VERIFICADO_PDF_EDITORIAL",
       "doi_verification_status": "PENDIENTE_RESOLVEDOR",
-      "verification_note": "El PDF editorial de Nature se abrió y contiene título, DOI y resultados; Crossref y el resolvedor DOI no completaron respuesta en esta consulta. El DOI no se declara validado independientemente."
+      "verification_note": "Página y PDF editorial de Nature abiertos. El resumen presenta 60–84 años; Methods, después de excluir participantes por movimiento, indica que los 31 jóvenes (18–39) y 41 mayores (60–83) restantes integran el análisis. La narración 60–83 coincide con el grupo analítico final. El DOI es visible, pero Crossref/doi.org no completaron esta ejecución; doi_verification_status permanece PENDIENTE_RESOLVEDOR."
     },
     {
       "id": "SRC-002",
