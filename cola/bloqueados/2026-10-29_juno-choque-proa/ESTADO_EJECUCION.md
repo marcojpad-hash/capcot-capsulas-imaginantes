@@ -34,3 +34,12 @@ Paquete candidato preparado con storyboard, ocho frames, mapa esquemático, dos 
 - `subtitulos_bloques.json` contiene bloques de 1–3 palabras, sin marcas de tiempo. El TTS oficial debe generar WordBoundary.
 - El mapa local es un esquema de ubicación; la capa `mapa` del storyboard contiene coordenadas para que el pipeline oficial la renderice con Natural Earth.
 - No se modificaron `data/temas_del_dia.json`, `data/rotacion.json`, `data/publicaciones.json`, `data/cola.json`, `data/estilos_usados.json` ni el motor U6.
+
+
+## Corrección de auditoría — 2026-11-20
+
+**Estado de preproducción:** `BORRADOR_EN_PROYECTOS_NO_APTO_PARA_PROMOCION`. **Clasificación de producción:** `PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR`. **Recepción Grok:** `RECEPCION_GROK_NO_CONFIRMADA`. **Medios:** `MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO`.
+
+- `salidas/2026-10-29_juno-choque-proa/publicacion.json` registra YouTube ID `bpeRL5XtYLI`, privacidad `private`, `publishAt=2026-11-03T23:00:00Z` (17:00 CDMX). No se afirma publicación pública.
+- `qa.json` es QA audiovisual (21 checks, 91.84 s). Aunque el QA legado lo acepta, la duración excede el contrato editorial vigente de 75–90 s; no es narrative_qa.
+- El storyboard no tiene narrative_qa independiente y el MP4 referenciado no aparece en el árbol GitHub. No crear otra entrada ni cancelar el ID.
