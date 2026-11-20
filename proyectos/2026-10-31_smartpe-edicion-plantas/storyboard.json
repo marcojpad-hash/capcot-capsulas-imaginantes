@@ -83,8 +83,6 @@
         "SRC-003"
       ],
       "style_id": "pixel_art",
-      "asset_filename": "frames/scene_001.jpg",
-      "asset_type": "image",
       "motion": "kenburns_auto",
       "animated_hook": false,
       "image_origen": "Generada con IA para este paquete; ilustración editorial, no fotografía ni imagen documental."
@@ -107,8 +105,6 @@
         "SRC-003"
       ],
       "style_id": "pixel_art",
-      "asset_filename": "frames/scene_002.jpg",
-      "asset_type": "image",
       "motion": "kenburns_auto",
       "animated_hook": false,
       "image_origen": "Generada con IA para este paquete; ilustración editorial, no fotografía ni imagen documental."
@@ -131,8 +127,6 @@
         "SRC-003"
       ],
       "style_id": "pixel_art",
-      "asset_filename": "frames/scene_003.jpg",
-      "asset_type": "image",
       "motion": "kenburns_auto",
       "animated_hook": false,
       "image_origen": "Generada con IA para este paquete; ilustración editorial, no fotografía ni imagen documental."
@@ -155,8 +149,6 @@
         "SRC-003"
       ],
       "style_id": "pixel_art",
-      "asset_filename": "frames/scene_004.jpg",
-      "asset_type": "image",
       "motion": "kenburns_auto",
       "animated_hook": false,
       "image_origen": "Generada con IA para este paquete; ilustración editorial, no fotografía ni imagen documental."
@@ -179,8 +171,6 @@
         "SRC-003"
       ],
       "style_id": "pixel_art",
-      "asset_filename": "frames/scene_005.jpg",
-      "asset_type": "image",
       "motion": "kenburns_auto",
       "animated_hook": false,
       "image_origen": "Generada con IA para este paquete; ilustración editorial, no fotografía ni imagen documental."
@@ -203,8 +193,6 @@
         "SRC-003"
       ],
       "style_id": "pixel_art",
-      "asset_filename": "frames/scene_006.jpg",
-      "asset_type": "image",
       "motion": "kenburns_auto",
       "animated_hook": false,
       "image_origen": "Generada con IA para este paquete; ilustración editorial, no fotografía ni imagen documental."
@@ -227,8 +215,6 @@
         "SRC-003"
       ],
       "style_id": "pixel_art",
-      "asset_filename": "frames/scene_007.jpg",
-      "asset_type": "image",
       "motion": "kenburns_auto",
       "animated_hook": false,
       "image_origen": "Generada con IA para este paquete; ilustración editorial, no fotografía ni imagen documental."
@@ -251,8 +237,6 @@
         "SRC-003"
       ],
       "style_id": "pixel_art",
-      "asset_filename": "frames/scene_008.jpg",
-      "asset_type": "image",
       "motion": "kenburns_auto",
       "animated_hook": false,
       "image_origen": "Generada con IA para este paquete; ilustración editorial, no fotografía ni imagen documental."
@@ -284,14 +268,14 @@
     "music_protagonista": false
   },
   "export": {
-    "filename": "capsula.mp4",
     "resolution": "1080x1920",
     "fps": 30,
     "video_codec": "h264",
     "audio_codec": "aac",
     "loudness_lufs": -14,
     "plano_seconds": 2.5,
-    "subtitle_max_words": 3
+    "subtitle_max_words": 3,
+    "render_status": "NOT_GENERATED"
   },
   "proveedor_imagenes": "Generador de imágenes IA de Grok Bot; ocho imágenes ilustrativas generadas para este paquete y ajustadas a 1080x1920.",
   "parece_real": false,
@@ -316,5 +300,26 @@
     }
   },
   "estado_produccion": "MONTADO_PENDIENTE_PROGRAMAR",
-  "thumbnail_source": "scene_001"
+  "thumbnail_source": "scene_001",
+  "approved_assets": [],
+  "narrative_qa": {
+    "status": "FAIL",
+    "score": 80,
+    "review_basis": "lectura_en_frio_solo_narracion",
+    "reviewer_role": "auditor_capcot_independiente",
+    "checks": {
+      "pregunta_central_reconstruible": true,
+      "apertura_in_medias_res": false,
+      "progresion_por_escena": true,
+      "transiciones_causales": true,
+      "giro_cientifico_explicado": false,
+      "limite_evidencia_explicito": true,
+      "payoff_cierre_apertura": true
+    },
+    "critical_flags": [
+      "APERTURA_DEFINICIONAL_NO_IN_MEDIAS_RES",
+      "GIRO_CIENTIFICO_NOMBRADO_SIN_EXPLICAR_MECANISMO"
+    ],
+    "reviewer_notes": "Lectura en frío de la narración concatenada; título, resumen, arco, notas y narrative_contract excluidos de la evaluación."
+  }
 }
