@@ -1,0 +1,402 @@
+{
+  "_schema": "CAPCOT_STORYBOARD_TEXT_V2",
+  "project_id": "2026-11-20_dato-marea-cerebral-en-sueno",
+  "fecha_objetivo": "2026-11-20",
+  "slot_local": "17:00",
+  "slot_cesta": "intermedio_1",
+  "serie": "Datos y ociosidades",
+  "title": "El flujo del líquido cefalorraquídeo durante el sueño disminuye con la edad",
+  "titulo": "La marea cerebral se debilita",
+  "language": "es-MX",
+  "aspect_ratio": "9:16",
+  "target_duration_seconds": 84,
+  "estructura": "comparacion",
+  "audience": "Público general interesado en ciencia, sueño y cerebro",
+  "occasion": "Cápsula principal de tarde; consumo vertical de 75–90 segundos",
+  "resumen": "Un estudio con EEG y resonancia magnética rápida comparó adultos sanos jóvenes y mayores durante el sueño no REM. La potencia de la señal de flujo de líquido cefalorraquídeo aumentó menos en el grupo mayor. Los autores relacionan la diferencia con ondas neuronales lentas y oscilaciones vasculares; el estudio no midió la eliminación de residuos.",
+  "narrative_contract": {
+    "central_question": "¿Qué cambia en las ondas de flujo del líquido cefalorraquídeo cuando el cerebro envejece y entra en sueño no REM?",
+    "promise": "Explicar la cadena medible que conecta ondas neuronales, vasos sanguíneos y movimiento del líquido cefalorraquídeo.",
+    "stakes": "El flujo de este líquido cumple funciones de transporte y equilibrio cerebral; interpretar mal la señal podría convertir una medida fisiológica en una promesa médica no demostrada.",
+    "scientific_turn": "La diferencia asociada con la edad no se reduce a dormir menos: intervienen tanto las ondas neuronales lentas como las oscilaciones hemodinámicas que impulsan el flujo.",
+    "evidence_limit": "Se compararon grupos de adultos sanos con EEG y fMRI durante la noche; se midió potencia de una señal de flujo en el cuarto ventrículo, no la tasa de eliminación de residuos ni el riesgo futuro de demencia.",
+    "payoff": "La marea nocturna se debilita en promedio en el grupo mayor, pero el significado para la salud individual sigue siendo una pregunta abierta."
+  },
+  "trend_source": {
+    "termino": "Ondas de flujo de líquido cefalorraquídeo durante el sueño y envejecimiento",
+    "fecha_publicacion": "2026-11-13",
+    "url": "https://www.nature.com/articles/s43587-026-01270-4.pdf"
+  },
+  "editorial_status": "PROPUESTA_PENDIENTE_DE_GROK",
+  "arco": {
+    "hook_medias_res": "En el escáner, un voluntario se duerme y el equipo registra pulsos del líquido cefalorraquídeo.",
+    "desarrollo": "El estudio compara dos grupos de edad, explica el acoplamiento entre ondas neuronales, vasos sanguíneos y flujo, y muestra la diferencia medida.",
+    "cierre_historia": "La señal es de flujo en el cuarto ventrículo; no equivale a una medición directa de limpieza de residuos.",
+    "reflexion_o_pregunta": "La marea se debilita en promedio, pero falta establecer qué significa para la salud de cada persona."
+  },
+  "estilo_id": "neon_noir",
+  "estilo_visual": "Neon noir",
+  "visual_identity": {
+    "style_id": "neon_noir",
+    "style_name": "Neon noir",
+    "prompt_base": "neo-noir digital painting, dark rainy night, glowing magenta and cyan neon rim light, strong silhouette of a single subject, wet reflections, minimal background, painterly not photorealistic, vertical 9:16, no text",
+    "palette": "negro, magenta, cian, violeta",
+    "lighting": "Luz baja con contorno magenta y cian; contraste alto, reflejos húmedos discretos.",
+    "texture": "Pintura digital atmosférica, bordes pictóricos, no fotorealista.",
+    "composition": "Silueta única y centrada; profundidad vertical 9:16; la señal científica se integra como forma abstracta, no como texto.",
+    "negative_prompt": "Sin texto generado, sin logos, sin rostros identificables, sin anatomía fantástica, sin representar una limpieza visible de residuos.",
+    "reference_assets": [],
+    "seed": null,
+    "seed_policy": "Sin semilla fija; continuidad por paleta, iluminación y silueta. No reutilizar imágenes de otras cápsulas."
+  },
+  "typography_identity": {
+    "font_family": "DejaVu Sans",
+    "font_weight": "700 para gancho; 400 para subtítulos",
+    "title_style": "Máximo seis palabras; el gancho se incorpora en postproducción.",
+    "subtitle_style": "Bloques de máximo tres palabras; zona segura inferior.",
+    "hierarchy": "Gancho > dato/etiqueta > subtítulos",
+    "animation": "Un movimiento por plano; tipografía en postproducción."
+  },
+  "voice": {
+    "engine": "edge-tts",
+    "voice_id": "es-MX-JorgeNeural",
+    "language": "es-MX",
+    "rate": "+7%",
+    "pitch": "-2Hz",
+    "pad_seconds": 0.3,
+    "modo_pausas": "continuo"
+  },
+  "sources": [
+    {
+      "id": "SRC-001",
+      "cita_corta": "Bailes, S. M., Williams, S. D. et al. (2026). The aging human brain exhibits reduced hemodynamic and cerebrospinal fluid flow waves during sleep. Nature Aging.",
+      "url": "https://www.nature.com/articles/s43587-026-01270-4.pdf",
+      "doi": "10.1038/s43587-026-01270-4",
+      "accessed": "2026-11-20",
+      "publication_date": "2026-11-13",
+      "supports": [
+        "Análisis nocturno con 31 adultos jóvenes de 18–39 años y 41 adultos mayores de 60–83 años.",
+        "EEG y fMRI rápida midieron ondas neuronales, señal hemodinámica y flujo de líquido cefalorraquídeo en el cuarto ventrículo.",
+        "La potencia de la señal de flujo de baja frecuencia (0.01–0.1 Hz) aumentó en promedio 3.82 dB en jóvenes y 1.15 dB en mayores al pasar de vigilia a sueño no REM; diferencia entre grupos P=0.002.",
+        "Las ondas neuronales lentas y las oscilaciones hemodinámicas contribuyen al flujo de líquido cefalorraquídeo.",
+        "El estudio declara que no midió directamente la eliminación de residuos del tejido cerebral."
+      ],
+      "verification_status": "PENDIENTE",
+      "url_verification_status": "VERIFICADO_PDF_EDITORIAL",
+      "doi_verification_status": "PENDIENTE_RESOLVEDOR",
+      "verification_note": "El PDF editorial de Nature se abrió y contiene título, DOI y resultados; Crossref y el resolvedor DOI no completaron respuesta en esta consulta. El DOI no se declara validado independientemente."
+    },
+    {
+      "id": "SRC-002",
+      "cita_corta": "Trafton, A. (2026-11-13). Waves that clear waste from the brain during sleep are impaired in older adults. MIT News.",
+      "url": "https://news.mit.edu/2026/waste-clearing-waves-in-brain-during-sleep-are-impaired-in-older-adults-1113",
+      "doi": null,
+      "accessed": "2026-11-20",
+      "publication_date": "2026-11-13",
+      "supports": [
+        "Fecha de publicación del estudio y autoría principal/senior.",
+        "Resumen institucional del protocolo nocturno y de los dos grupos de edad.",
+        "Contexto de las dos instituciones de adquisición y de la hipótesis de trabajo."
+      ],
+      "verification_status": "PENDIENTE",
+      "url_verification_status": "VERIFICADO_URL_OFICIAL",
+      "verification_note": "Página oficial de MIT News abierta directamente; se usa como contraste institucional, no como sustituto del artículo original."
+    },
+    {
+      "id": "SRC-003",
+      "cita_corta": "Boston University — campus y coordenadas institucionales aproximadas.",
+      "url": "https://en.wikipedia.org/wiki/Boston_University",
+      "doi": null,
+      "accessed": "2026-11-20",
+      "publication_date": null,
+      "supports": [
+        "Coordenadas aproximadas del campus de Boston University para un marcador institucional, no para ubicar el escáner ni a participantes."
+      ],
+      "verification_status": "PENDIENTE",
+      "url_verification_status": "VERIFICADO_REFERENCIA_GEOGRAFICA",
+      "verification_note": "Punto de campus redondeado; no es una coordenada de adquisición publicada."
+    },
+    {
+      "id": "SRC-004",
+      "cita_corta": "Massachusetts Institute of Technology — campus y coordenadas institucionales aproximadas.",
+      "url": "https://en.wikipedia.org/wiki/Massachusetts_Institute_of_Technology",
+      "doi": null,
+      "accessed": "2026-11-20",
+      "publication_date": null,
+      "supports": [
+        "Coordenadas aproximadas del campus del MIT para un marcador institucional, no para ubicar el escáner ni a participantes."
+      ],
+      "verification_status": "PENDIENTE",
+      "url_verification_status": "VERIFICADO_REFERENCIA_GEOGRAFICA",
+      "verification_note": "Punto de campus redondeado; no es una coordenada de adquisición publicada."
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_001",
+      "arc": "hook_medias_res",
+      "duration_seconds": 9,
+      "narration": "En el escáner, una persona se duerme. Sus neuronas empiezan a oscilar lentamente y el líquido que rodea el cerebro responde con pulsos que el equipo puede medir.",
+      "on_screen_text": "La marea cerebral se debilita",
+      "visual_description": "Silueta de un voluntario dentro del escáner; una onda tenue aparece alrededor de la cabeza y comienza a oscilar.",
+      "image_prompt": "neo-noir digital painting, dark rainy night, glowing magenta and cyan neon rim light, strong silhouette of a single subject, wet reflections, minimal background, painterly not photorealistic, vertical 9:16, no text; escena: Silueta de un voluntario dentro del escáner; una onda tenue aparece alrededor de la cabeza y comienza a oscilar.",
+      "ambiente": "Zumbido amortiguado de resonancia y respiración tranquila",
+      "sfx": [
+        "Pulso grave tenue"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "style_id": "neon_noir",
+      "dramatic_beat": "La medición ya está ocurriendo: el sueño pone en marcha una señal de flujo.",
+      "scene_function": "Abrir con una acción experimental en curso y presentar el fenómeno medido.",
+      "causal_bridge_from_previous": "Apertura en curso; no hay escena previa. La señal aparece cuando el voluntario entra en sueño.",
+      "question_state": "Se sabe que el flujo produce pulsos medibles; aún no se sabe cómo cambia con la edad.",
+      "reason_to_continue": "Comparar grupos y descubrir qué parte de la señal cambia.",
+      "new_information": "El flujo de líquido cefalorraquídeo puede medirse durante la transición a sueño no REM."
+    },
+    {
+      "id": "scene_002",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "El análisis nocturno incluyó 31 adultos de 18 a 39 años y 41 de 60 a 83. Los midieron con electroencefalograma y resonancia magnética rápida.",
+      "on_screen_text": "Dos grupos, una señal",
+      "visual_description": "Dos franjas de edad convergen en un diagrama del escáner; el mapa marca los campus institucionales asociados al estudio, no ubicaciones de participantes.",
+      "image_prompt": "neo-noir digital painting, dark rainy night, glowing magenta and cyan neon rim light, strong silhouette of a single subject, wet reflections, minimal background, painterly not photorealistic, vertical 9:16, no text; escena: Dos franjas de edad convergen en un diagrama del escáner; el mapa marca los campus institucionales asociados al estudio, no ubicaciones de participantes.",
+      "ambiente": "Ambiente clínico bajo, sin voces ni alarmas",
+      "sfx": [
+        "Transición electrónica suave"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002",
+        "SRC-003",
+        "SRC-004"
+      ],
+      "style_id": "neon_noir",
+      "dramatic_beat": "La comparación define quiénes aportaron los datos y cómo se registró la señal.",
+      "scene_function": "Situar el diseño y la geografía institucional sin fingir coordenadas de escáner.",
+      "causal_bridge_from_previous": "La escena del escáner lleva a la comparación de los dos grupos medidos.",
+      "question_state": "Hay 31 participantes jóvenes y 41 mayores en el análisis nocturno.",
+      "reason_to_continue": "Ahora hace falta entender qué impulsa el pulso del líquido.",
+      "new_information": "El protocolo combinó EEG y fMRI rápida durante el sueño nocturno.",
+      "capa": {
+        "tipo": "mapa",
+        "region": [],
+        "puntos": [
+          {
+            "id": "BU",
+            "label": "Boston University · campus aproximado",
+            "lat": 42.34889,
+            "lon": -71.10028,
+            "source_id": "SRC-003"
+          },
+          {
+            "id": "MIT",
+            "label": "MIT · campus aproximado",
+            "lat": 42.3597,
+            "lon": -71.0919,
+            "source_id": "SRC-004"
+          }
+        ],
+        "areas": [],
+        "titulo": "Instituciones asociadas al estudio",
+        "fuente": "SRC-001, métodos: dos sitios de adquisición con aprobaciones institucionales de Boston University y MIT; SRC-003 y SRC-004: coordenadas aproximadas de campus.",
+        "precision_note": "Los pines ubican campus institucionales, no coordenadas exactas de escáner ni domicilios de participantes. El artículo no publica latitud/longitud de los escáneres."
+      }
+    },
+    {
+      "id": "scene_003",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "La cadena es mecánica: las ondas neuronales lentas acompañan cambios en los vasos sanguíneos; al variar el volumen de sangre dentro del cráneo, el líquido cefalorraquídeo se desplaza.",
+      "on_screen_text": "Neuronas, vasos, líquido",
+      "visual_description": "Secuencia esquemática de tres capas: ondas EEG, pulsación vascular y desplazamiento del líquido; sin representar una limpieza de residuos.",
+      "image_prompt": "neo-noir digital painting, dark rainy night, glowing magenta and cyan neon rim light, strong silhouette of a single subject, wet reflections, minimal background, painterly not photorealistic, vertical 9:16, no text; escena: Secuencia esquemática de tres capas: ondas EEG, pulsación vascular y desplazamiento del líquido; sin representar una limpieza de residuos.",
+      "ambiente": "Tono grave continuo con respiración rítmica",
+      "sfx": [
+        "Tres pulsos sincronizados"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "neon_noir",
+      "dramatic_beat": "La explicación pasa de una señal observada a la cadena fisiológica que la impulsa.",
+      "scene_function": "Explicar el mecanismo antes de presentar la diferencia entre grupos.",
+      "causal_bridge_from_previous": "Los dos grupos fueron medidos; ahora se explica qué relación física conecta las señales.",
+      "question_state": "Las ondas lentas se relacionan con oscilaciones vasculares que desplazan el líquido.",
+      "reason_to_continue": "La siguiente escena mostrará cuánto cambió esa señal entre grupos.",
+      "new_information": "El movimiento del líquido depende de la interacción entre actividad neuronal y volumen sanguíneo."
+    },
+    {
+      "id": "scene_004",
+      "arc": "desarrollo",
+      "duration_seconds": 11,
+      "narration": "En la banda de 0.01 a 0.1 hercios, la potencia de la señal de flujo en el cuarto ventrículo aumentó 3.82 decibelios en jóvenes, pero 1.15 en mayores al pasar de vigilia a sueño no REM.",
+      "on_screen_text": "3.82 dB frente a 1.15",
+      "visual_description": "Gráfico de dos barras para el cambio medio de potencia de la señal de flujo; la banda de frecuencia y el paso vigilia–NREM quedan rotulados en postproducción.",
+      "image_prompt": "neo-noir digital painting, dark rainy night, glowing magenta and cyan neon rim light, strong silhouette of a single subject, wet reflections, minimal background, painterly not photorealistic, vertical 9:16, no text; escena: Gráfico de dos barras para el cambio medio de potencia de la señal de flujo; la banda de frecuencia y el paso vigilia–NREM quedan rotulados en postproducción.",
+      "ambiente": "Cama neural estable",
+      "sfx": [
+        "Dos tonos breves al aparecer las barras"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "neon_noir",
+      "dramatic_beat": "El resultado cuantifica el contraste que la historia venía preparando.",
+      "scene_function": "Presentar el dato central con variable, banda y condición explícitas.",
+      "causal_bridge_from_previous": "La cadena fisiológica explica qué se mide; ahora aparece el contraste observado.",
+      "question_state": "El aumento medio de potencia fue menor en el grupo mayor.",
+      "reason_to_continue": "Hay que impedir que decibelios se confundan con litros o volumen total.",
+      "new_information": "La variable es potencia de señal de flujo de baja frecuencia en el cuarto ventrículo.",
+      "capa": {
+        "tipo": "dato",
+        "valor": "3.82 dB vs 1.15 dB",
+        "etiqueta": "Cambio medio de potencia de la señal de flujo de LCR (0.01–0.1 Hz), de vigilia a sueño no REM; jóvenes frente a mayores.",
+        "condiciones": "Análisis nocturno: 31 participantes de 18–39 años y 41 de 60–83 años; EEG y fMRI rápida; señal en el cuarto ventrículo.",
+        "interpretacion": "Es potencia de una señal, no litros de líquido ni tasa directa de eliminación de residuos.",
+        "fuente": "SRC-001, resultados y Fig. 2c."
+      }
+    },
+    {
+      "id": "scene_005",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "Y esos decibelios no son litros: describen el cambio de potencia de una señal, no el volumen total de líquido ni una tasa directa de limpieza.",
+      "on_screen_text": "Potencia no es volumen",
+      "visual_description": "Las barras se transforman en una onda de señal con escala logarítmica; no aparece un tanque ni una cantidad de líquido ficticia.",
+      "image_prompt": "neo-noir digital painting, dark rainy night, glowing magenta and cyan neon rim light, strong silhouette of a single subject, wet reflections, minimal background, painterly not photorealistic, vertical 9:16, no text; escena: Las barras se transforman en una onda de señal con escala logarítmica; no aparece un tanque ni una cantidad de líquido ficticia.",
+      "ambiente": "Tono electrónico contenido",
+      "sfx": [
+        "Pequeño corte de señal"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "neon_noir",
+      "dramatic_beat": "El dato se interpreta sin convertir una medida de señal en una cantidad de líquido.",
+      "scene_function": "Desactivar una lectura intuitiva pero incorrecta de los decibelios.",
+      "causal_bridge_from_previous": "El contraste numérico podría sugerir una cantidad de líquido; la escena aclara qué mide realmente.",
+      "question_state": "Los decibelios expresan potencia de señal, no litros ni volumen total.",
+      "reason_to_continue": "La historia necesita explicar por qué la diferencia no se reduce a dormir menos.",
+      "new_information": "La unidad y la señal observada limitan la interpretación del resultado."
+    },
+    {
+      "id": "scene_006",
+      "arc": "cierre_historia",
+      "duration_seconds": 10,
+      "narration": "La diferencia tampoco se explicó solo por dormir menos. El equipo encontró dos piezas relacionadas: ondas neuronales lentas más débiles y respuestas vasculares menos amplias.",
+      "on_screen_text": "Dos piezas del mecanismo",
+      "visual_description": "La onda EEG pierde amplitud y el contorno de los vasos responde con menor oscilación; el flujo resultante aparece atenuado.",
+      "image_prompt": "neo-noir digital painting, dark rainy night, glowing magenta and cyan neon rim light, strong silhouette of a single subject, wet reflections, minimal background, painterly not photorealistic, vertical 9:16, no text; escena: La onda EEG pierde amplitud y el contorno de los vasos responde con menor oscilación; el flujo resultante aparece atenuado.",
+      "ambiente": "Ambiente nocturno tenue, pulso más espaciado",
+      "sfx": [
+        "Dos pulsos que se reducen"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "style_id": "neon_noir",
+      "dramatic_beat": "El giro científico identifica dos mecanismos relacionados en lugar de atribuirlo todo a duración del sueño.",
+      "scene_function": "Explicar el giro científico sin convertir asociaciones en una intervención clínica.",
+      "causal_bridge_from_previous": "La escena anterior acotó la medida; ahora se explica qué factores se asociaron con el descenso.",
+      "question_state": "Tanto la actividad neuronal lenta como la respuesta vascular contribuyen a la diferencia.",
+      "reason_to_continue": "Falta separar el flujo medido de la función de limpieza que suele atribuírsele.",
+      "new_information": "El estudio relaciona el cambio con dos componentes de la cascada neurovascular."
+    },
+    {
+      "id": "scene_007",
+      "arc": "cierre_historia",
+      "duration_seconds": 9,
+      "narration": "Pero midieron el movimiento del líquido en el cuarto ventrículo, no cuánto desecho salió del tejido ni el riesgo futuro de Alzheimer.",
+      "on_screen_text": "El límite importa",
+      "visual_description": "La señal de flujo se detiene en el borde del cuarto ventrículo; fuera de ese marco, las rutas de residuos quedan sin dibujar.",
+      "image_prompt": "neo-noir digital painting, dark rainy night, glowing magenta and cyan neon rim light, strong silhouette of a single subject, wet reflections, minimal background, painterly not photorealistic, vertical 9:16, no text; escena: La señal de flujo se detiene en el borde del cuarto ventrículo; fuera de ese marco, las rutas de residuos quedan sin dibujar.",
+      "ambiente": "Silencio breve bajo el tono de sala",
+      "sfx": [
+        "Corte seco suave"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "neon_noir",
+      "dramatic_beat": "El límite de evidencia impide convertir el hallazgo en una promesa sobre demencia o limpieza cerebral.",
+      "scene_function": "Declarar lo que el estudio no midió.",
+      "causal_bridge_from_previous": "El mecanismo explica el flujo, pero no demuestra qué cantidad de residuos se elimina.",
+      "question_state": "La eliminación de residuos y el riesgo futuro de Alzheimer no fueron medidos.",
+      "reason_to_continue": "El cierre debe volver a la marea observada, no abrir un diagnóstico nuevo.",
+      "new_information": "El resultado es fisiológico y grupal; no predice el destino de una persona."
+    },
+    {
+      "id": "scene_008",
+      "arc": "reflexion_o_pregunta",
+      "duration_seconds": 9,
+      "narration": "Así que la marea nocturna se debilita en promedio con la edad; todavía falta saber qué significa para la salud de cada persona. Esto fue Datos y ociosidades.",
+      "on_screen_text": "Una pregunta abierta",
+      "visual_description": "La onda regresa, más tenue pero presente, y se desvanece en la silueta del escáner; cierre visual sobre la señal inicial.",
+      "image_prompt": "neo-noir digital painting, dark rainy night, glowing magenta and cyan neon rim light, strong silhouette of a single subject, wet reflections, minimal background, painterly not photorealistic, vertical 9:16, no text; escena: La onda regresa, más tenue pero presente, y se desvanece en la silueta del escáner; cierre visual sobre la señal inicial.",
+      "ambiente": "Cama neural que se apaga lentamente",
+      "sfx": [
+        "Un pulso final suave"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "neon_noir",
+      "dramatic_beat": "La última frase paga la imagen de la marea y conserva abierta la consecuencia clínica.",
+      "scene_function": "Cerrar la pregunta central sin introducir otro tema.",
+      "causal_bridge_from_previous": "El límite de medición conduce a una conclusión proporcional: la señal cambia, su consecuencia individual no está resuelta.",
+      "question_state": "La marea se debilita en promedio; el significado para la salud individual sigue abierto.",
+      "reason_to_continue": "La historia termina al devolver al espectador a la señal que abrió la cápsula.",
+      "new_information": "El cierre vuelve a la marea nocturna y al límite de evidencia."
+    }
+  ],
+  "cortinilla_fuentes": {
+    "duration_seconds": 6,
+    "titulo": "Fuentes",
+    "aviso": "Mostrar el artículo de Nature Aging y el contraste institucional de MIT; el DOI sigue pendiente de resolución independiente.",
+    "firma": "Datos y ociosidades",
+    "source_ids": [
+      "SRC-001",
+      "SRC-002"
+    ]
+  },
+  "audio": {
+    "music_asset": null,
+    "music_plan": "Cama sintetizada prevista tipo circuito_neural: pulso de baja frecuencia, estable y discreto; no existe archivo de audio en esta preproducción.",
+    "music_license": null,
+    "cama_musical": "circuito_neural"
+  },
+  "export": {
+    "resolution": "1080x1920",
+    "fps": 30,
+    "render_status": "NOT_GENERATED"
+  },
+  "publicacion": {
+    "status": "PENDIENTE_DECISION_GROK",
+    "platforms": [
+      "YouTube Shorts",
+      "TikTok",
+      "Facebook Reels"
+    ],
+    "note": "No publicar ni programar desde preproducción textual."
+  },
+  "estado": "PENDIENTE_REVISION_GROK",
+  "production_mode": "storyboard_only",
+  "validation_notes": [
+    "Borrador textual; no contiene narrative_qa. La revisión en frío corresponde al auditor independiente.",
+    "DOI visible en el PDF editorial, pero Crossref/resolvedor no completaron la validación independiente; no declarar el DOI validado.",
+    "Los pines del mapa son aproximaciones de campus institucionales, no coordenadas exactas de escáner ni de participantes."
+  ],
+  "linea_tematica_provisional": "Ciencia del cuerpo / sueño y neurociencia; subtema provisional sin abrir una línea temática nueva.",
+  "approved_assets": [],
+  "risk_notes": [
+    "No afirmar que el estudio midió la limpieza de residuos: el artículo declara expresamente que esa función no fue medida.",
+    "No convertir los decibelios en litros, porcentaje de líquido ni tasa de eliminación.",
+    "No inferir que una persona mayor desarrollará Alzheimer; el estudio compara grupos sanos y no mide riesgo futuro.",
+    "La diferencia es grupal y presenta variabilidad individual; no todos los adultos mayores mostraron la misma señal."
+  ]
+}
