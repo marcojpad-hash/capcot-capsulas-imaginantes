@@ -185,5 +185,7 @@ Se corrigió una omisión descubierta al comparar el inventario de cola/bloquead
 - Se añadieron pruebas de regresión en tests/test_registro_editorial.py y tests/test_rotacion_capacity.py.
 - Pruebas locales sobre las copias de los módulos: test_registro_editorial.py 4/4 PASS; comprobación aislada de capacidad 5 bloqueados → 0 plazas consumidas y tema/estilo conservados en rotación PASS. No equivale a la suite completa del repositorio.
 - Commits: a23708bb34bb865b3ca55d93a66f61a340d957cd (registro), da191306d4f5fa4ad6222e6de413bae4509d178e (test registro), bd26a2850fc6cdba047b20349338b5b5b11af088 (capacidad), 4102ff6abba32d2721931f983bad1755f96fa686 (test capacidad).
-- El run dinámico de PR #3 para 4102ff6 seguía in_progress en el último sondeo. No se atribuye éxito a CI.
+- CI del commit 4102ff6abba32d2721931f983bad1755f96fa686: CodeQL, Analyze (python) y Analyze (actions) terminaron success (run #44733338122). Estas comprobaciones no ejecutan la suite de tests del repositorio; los ocho tests locales de los dos módulos sí pasaron sobre copias de código.
 - No se modificaron data/*.json, main, workflows, cola, estados Grok ni medios. Los markers de handoffs/grok_inbox/ siguen revisándose directamente por el auditor; no se incorporaron como storyboards de rotación.
+
+- El commit documental cf3de6efd69a314d44540fa69bc4ba05744c1646 generó run #44733428873: CodeQL neutral; Analyze (python) y Analyze (actions) seguían in_progress al último sondeo. No se declara CI completo para ese commit.
