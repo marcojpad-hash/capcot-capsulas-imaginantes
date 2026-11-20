@@ -223,3 +223,13 @@ Los doce IDs indicados por la auditoría siguen en `proyectos/`; sus QA existent
 - Auditor CAPCOT: habilitado; último run completado 19-nov 15:27 CDMX; próximo 20-nov 15:00.
 - Operador único: este run permanece `in_progress` sin `completed_at`; no se registra como completado.
 - No se disparó dispatch. El workflow sigue seleccionando JSON planos de `cola/entrada/`; no se encontró un run de dispatch posterior al #147 (1-nov). Un marker de handoff no acredita recepción Grok.
+
+
+## Addendum de registro editorial recursivo — 20-nov-2026
+
+- Se amplió `scripts/registro_editorial.py`: ahora busca `storyboard.json` recursivamente bajo proyectos, cola y salidas, sin limitarse a `*/storyboard.json`. Conserva además la lectura de JSON planos de entrada/bloqueados.
+- Se añadió `handoffs_grok_inbox` como inventario separado en la salida CLI. Cada marker se expone con ruta, project_id, status, commit y package_path, pero siempre `receipt_confirmed=false`; el propio registro recuerda que solo `cola/estado/<project_id>.json` confirma recepción. Los markers no se incorporan a la rotación temática ni se confunden con storyboards.
+- Pruebas añadidas en `tests/test_registro_editorial.py`: profundidad superior a un nivel y separación de marker sin recepción.
+- Commits: script `d8f40e54ce9460d92b82b5a41ca7acad5e869f1d`; tests `83dc330ff05b99d386190195b42fb408947f1346`.
+- Lectura de vuelta: blob script `bbbb188ef03dd834266be985ff95bda994c9f30c`; blob tests `c27a68f983cf084d30176ac81cac5aec875c6208`.
+- Prueba local aislada de la lógica nueva: 2/2 checks PASS (storyboard anidado y marker separado con recepción false). **No** equivale a ejecutar la suite completa del repositorio. Los runs automáticos de análisis asociados a ambos commits seguían `queued` al corte; no se dispararon workflows manuales.
