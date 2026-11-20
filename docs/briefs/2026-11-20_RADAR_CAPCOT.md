@@ -174,3 +174,13 @@ Los QA PASS anteriores no se repitieron ni se transfirieron a otras versiones. L
 - No se creó `narrative_qa`, no se hizo promoción, no se creó ni editó `cola/estado/`, y no se declaró recepción de Grok.
 
 **Entregables de esta ejecución:** únicamente este radar. No se creó storyboard principal ni storyboard 23:30 porque los slots están ocupados.
+
+## Corrección de auditoría posterior — 2026-11-20, 12:26 CDMX
+
+Esta nota no cambia el storyboard ni repite su QA narrativo; corrige la interpretación de fuente y amplía la guardia de producción:
+
+- **Marea cerebral:** el abstract presenta el grupo mayor como 60–84 años, pero Methods §“Participant population and exclusion criteria”, después de excluir participantes por movimiento, deja 41 adultos mayores de 60–83 años en el análisis nocturno. La narración del storyboard (60–83) describe la muestra analítica final y es correcta; no hay discrepancia factual. El DOI aparece en la página/PDF editorial, pero Crossref/doi.org no completaron; `doi_verification_status` sigue `PENDIENTE_RESOLVEDOR`.
+- **Sapropeles:** Nature Geoscience muestra en su ficha editorial título, DOI y publicación/versión de registro del 20-nov-2026; la apertura HTML directa redirige a autenticación y Crossref/doi.org no completaron. Se conserva `PENDIENTE_RESOLVEDOR`; no se declara DOI verificado por Crossref.
+- **Guardia adicional en main:** `2026-11-20_react-proteinas-microbios` tiene `programacion.json` con 13:45 CDMX (`publish_at=2026-11-20T19:45:00Z`) y storyboard en `proyectos/` y `cola/entrada/`. Se clasifica `PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR`. El JSON declara `export.filename=capsula.mp4`, pero el MP4 no se encontró en `cola/entrada/<id>/`, `proyectos/<id>/` ni `salidas/<id>/`: `MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO`. No hay estado Grok individual ni publicación confirmada. No colisiona exactamente con los storyboards de feature de 17:00 y 23:30, pero se cuenta para la capacidad diaria.
+- **Recepción de los dos borradores feature:** `cola/estado/<project_id>.json`, `handoffs/grok_inbox/<project_id>.json` y las rutas de cola/salidas comprobadas devuelven 404. Ambos siguen `RECEPCION_GROK_NO_CONFIRMADA` y `NOT_DISPATCHABLE`; no se promueven.
+- **Horarios:** `feature/data/horarios.json` habilita 06:30–07:30 y 16:30–18:00 más 23:30 fijo; `main/data/horarios.json` habilita 06:30–07:30 y 13:00–14:30 más 23:30. `scripts/rotacion.py` conserva cinco ventanas de código (07:00, 13:30, 17:00, 19:00, 23:30). La divergencia permanece documentada; no se modificó ningún `data/*.json` ni el código de rotación.
