@@ -244,5 +244,31 @@
     "seed": 52,
     "modo_pausas": "audio VoxCPM2 por escena; subtítulos con alineación real posterior",
     "pad_seconds": 0.3
+  },
+  "narrative_qa": {
+    "status": "PASS",
+    "score": 91,
+    "review_basis": "lectura_en_frio_solo_narracion",
+    "reviewed_at": "2026-11-20T01:57:46-06:00",
+    "checks": {
+      "pregunta_central_reconstruible": true,
+      "apertura_in_medias_res": true,
+      "progresion_por_escena": true,
+      "transiciones_causales": true,
+      "giro_cientifico_explicado": true,
+      "limite_evidencia_explicito": true,
+      "payoff_cierre_apertura": true
+    },
+    "critical_flags": [],
+    "evidence_brief": {
+      "pregunta_central_reconstruible": "La pregunta reconstruible es cómo ayudan los miembros de la colonia cuando nacen las crías: cuidado directo o trabajo indirecto.",
+      "apertura_in_medias_res": "Abre con el nacimiento y la conducta inesperada de los ayudantes que se ponen a trabajar más.",
+      "progresion_por_escena": "Anomalía → contexto de la especie → observación cuantificada → respuesta por grupos → corrección de la interpretación → mecanismo cooperativo indirecto → payoff.",
+      "transiciones_causales": "La ecología subterránea explica por qué excavar importa; las observaciones comparadas explican quién cambia su actividad; la diferencia de conducta permite separar ayuda directa e indirecta.",
+      "giro_cientifico_explicado": "El giro es que los no reproductores no aumentan el cuidado junto a las crías: la ayuda aparece como más trabajo para sostener la red alimentaria.",
+      "limite_evidencia_explicito": "La observación se hizo con animales en cautiverio; los beneficios posteriores para la hembra y las crías se presentan como propuesta de los autores, no como causalidad demostrada.",
+      "payoff_cierre_apertura": "El cierre responde a la anomalía inicial: cooperar puede significar mantener la red de alimento, no permanecer junto a las crías."
+    },
+    "reviewer_role": "auditor_capcot_independiente"
   }
 }
