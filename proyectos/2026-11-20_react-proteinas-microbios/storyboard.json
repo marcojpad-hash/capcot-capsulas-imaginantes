@@ -1,1 +1,157 @@
-PLACEHOLDER_STORYBOARD
+{
+  "project_id": "2026-11-20_react-proteinas-microbios",
+  "title": "Bacterias que fabrican sus propios venenos",
+  "language": "es-MX",
+  "aspect_ratio": "9:16",
+  "target_duration_seconds": 85,
+  "trend_source": {
+    "tipo": "noticia_cientifica",
+    "medio": "Science / Phys.org",
+    "url": "https://phys.org/news/2026-11-microbes-drug-chemicals.html",
+    "estudio_doi": "10.1126/science.aee2641",
+    "fecha_publicacion": "2026-11-19",
+    "termino": "REACT proteins microbes drugs",
+    "fecha_consulta": "2026-11-20"
+  },
+  "estilo_id": "risografia",
+  "estilo_visual": "Risografía",
+  "voice": {
+    "engine": "edge-tts",
+    "voice_id": "es-MX-JorgeNeural",
+    "rate": "+7%",
+    "pitch": "-2Hz",
+    "pad_seconds": 0.3,
+    "modo_pausas": "continuo"
+  },
+  "sources": [
+    {
+      "id": "SRC-001",
+      "cita_corta": "Boesger et al. (2026). Balancing redox-mediated cytotoxicity and catalysis in natural product biosynthesis. Science.",
+      "url": "https://doi.org/10.1126/science.aee2641",
+      "doi": "10.1126/science.aee2641",
+      "accessed": "2026-11-20",
+      "supports": ["DnrV protege de ROS y mejora catálisis CYP450 en doxorubicina", "Familia REACT >40,000 proteínas en bacterias, hongos y plantas"],
+      "ref_display": "Boesger et al., Science 2026"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_001",
+      "arc": "hook_medias_res",
+      "duration_seconds": 8.0,
+      "narration": "¿Cómo fabrican las bacterias sus propios venenos sin morir?",
+      "on_screen_text": "¿Veneno propio sin morir?",
+      "visual_description": "Colonias de Streptomyces con moléculas brillantes protegidas",
+      "image_prompt": "risograph print, two-color fluorescent pink and teal overprint, misregistration, grainy texture, flat shapes, vertical 9:16, no text + close-up of Streptomyces bacteria colonies producing glowing drug molecules, protective protein shield, lab setting",
+      "source_ids": ["SRC-001"],
+      "asset_filename": "frames/scene_001.jpg",
+      "ambiente": "laboratorio",
+      "sfx": ["burbujas", "pluma"]
+    },
+    {
+      "id": "scene_002",
+      "arc": "desarrollo",
+      "duration_seconds": 12.0,
+      "narration": "En la Universidad de Michigan estudiaban la doxorubicina. Es un anticancerígeno que hacen bacterias Streptomyces.",
+      "on_screen_text": "Doxorrubicina anticancerígena",
+      "visual_description": "Molécula de doxorubicina y enzima",
+      "image_prompt": "risograph print, two-color fluorescent pink and teal overprint, misregistration, grainy texture, flat shapes, vertical 9:16, no text + doxorubicin molecule structure with CYP450 enzyme and REACT protein protecting it from ROS sparks",
+      "source_ids": ["SRC-001"],
+      "asset_filename": "frames/scene_002.jpg",
+      "ambiente": "laboratorio",
+      "sfx": ["reloj", "papel"]
+    },
+    {
+      "id": "scene_003",
+      "arc": "desarrollo",
+      "duration_seconds": 11.0,
+      "narration": "El problema: la enzima CYP450 que la fabrica genera oxígeno reactivo que daña todo, incluso el propio fármaco.",
+      "on_screen_text": "Oxígeno reactivo daña",
+      "visual_description": "Sparks de ROS dañando moléculas",
+      "image_prompt": "risograph print, two-color fluorescent pink and teal overprint, misregistration, grainy texture, flat shapes, vertical 9:16, no text + reactive oxygen species sparks damaging molecules in bacterial cell",
+      "source_ids": ["SRC-001"],
+      "asset_filename": "frames/scene_003.jpg",
+      "ambiente": "laboratorio",
+      "sfx": ["chispas", "alarma"]
+    },
+    {
+      "id": "scene_004",
+      "arc": "desarrollo",
+      "duration_seconds": 12.0,
+      "narration": "Descubrieron la proteína DnrV. Protege de los ROS, evita que se degrade el fármaco y acelera la reacción.",
+      "on_screen_text": "Proteína DnrV protege",
+      "visual_description": "Proteína REACT como escudo",
+      "image_prompt": "risograph print, two-color fluorescent pink and teal overprint, misregistration, grainy texture, flat shapes, vertical 9:16, no text + DnrV protein acting as shield around doxorubicin and CYP450",
+      "source_ids": ["SRC-001"],
+      "asset_filename": "frames/scene_004.jpg",
+      "ambiente": "laboratorio",
+      "sfx": ["escudo", "campana"]
+    },
+    {
+      "id": "scene_005",
+      "arc": "desarrollo",
+      "duration_seconds": 10.0,
+      "narration": "Más de cuarenta mil proteínas similares, la familia REACT, en bacterias, hongos y plantas.",
+      "on_screen_text": "Más de 40 mil REACT",
+      "visual_description": "Red de proteínas en plantas y microbios",
+      "image_prompt": "risograph print, two-color fluorescent pink and teal overprint, misregistration, grainy texture, flat shapes, vertical 9:16, no text + family of 40000 REACT proteins as colorful abstract network across plants bacteria fungi",
+      "source_ids": ["SRC-001"],
+      "asset_filename": "frames/scene_005.jpg",
+      "ambiente": "naturaleza",
+      "sfx": ["hojas", "burbujas"]
+    },
+    {
+      "id": "scene_006",
+      "arc": "cierre_historia",
+      "duration_seconds": 10.0,
+      "narration": "Ahora pueden buscar nuevos fármacos naturales solo buscando estos genes protectores en genomas.",
+      "on_screen_text": "Buscar genes REACT",
+      "visual_description": "Genoma con marcadores REACT",
+      "image_prompt": "risograph print, two-color fluorescent pink and teal overprint, misregistration, grainy texture, flat shapes, vertical 9:16, no text + DNA genome sequence with highlighted REACT gene markers for drug discovery",
+      "source_ids": ["SRC-001"],
+      "asset_filename": "frames/scene_006.jpg",
+      "ambiente": "laboratorio",
+      "sfx": ["computadora", "pluma"]
+    },
+    {
+      "id": "scene_007",
+      "arc": "reflexion_o_pregunta",
+      "duration_seconds": 12.0,
+      "narration": "Las bacterias inventaron un escudo químico para no envenenarse. ¿Qué más esconden sus genomas? Esto fue Datos y ociosidades.",
+      "on_screen_text": "¿Qué más esconden?",
+      "visual_description": "Cierre con logo y pregunta",
+      "image_prompt": "risograph print, two-color fluorescent pink and teal overprint, misregistration, grainy texture, flat shapes, vertical 9:16, no text + reflective scene of bacteria with protective shield and open question mark",
+      "source_ids": ["SRC-001"],
+      "asset_filename": "frames/scene_007.jpg",
+      "ambiente": "viento",
+      "sfx": ["campana", "papel"]
+    }
+  ],
+  "cortinilla_fuentes": {
+    "duration_seconds": 6,
+    "titulo": "Fuentes",
+    "aviso": "Imágenes generadas con IA. Voz sintética. Audio sintetizado.",
+    "firma": "Datos y ociosidades · @datosyociosidades"
+  },
+  "export": {
+    "filename": "capsula.mp4",
+    "resolution": "1080x1920",
+    "fps": 30,
+    "loudness_lufs": -14
+  },
+  "titulo": "Bacterias sin envenenarse",
+  "estructura": "pregunta",
+  "capas": [
+    {
+      "tipo": "mapa",
+      "region": [-84.0, -83.5, 42.2, 42.4],
+      "puntos": [{"lon": -83.74, "lat": 42.28, "etiqueta": "U Michigan"}]
+    },
+    {
+      "tipo": "dato",
+      "valor": ">40,000",
+      "etiqueta": "proteínas REACT",
+      "fuente": "SRC-001"
+    }
+  ]
+}
