@@ -1,1 +1,11 @@
-PLACEHOLDER_PROG
+{
+  "plataforma": ["youtube", "tiktok"],
+  "publish_at": "2026-11-20T19:45:00Z",
+  "ventana": "mediodia",
+  "hora_cdmx": "13:45",
+  "caption_tt": "¿Bacterias que hacen sus propios venenos sin morir? Proteínas REACT las protegen y aceleran la química. Ciencia fresca de Science. #Ciencia #Microbios #Farmacos",
+  "titulo_yt": "Bacterias que fabrican veneno sin morir #Shorts",
+  "privacidad": "private",
+  "estado": "programado_para_private_hasta_hora",
+  "nota": "Falta montar mp4 (edge-tts JorgeNeural + ffmpeg). Frames Imagine listos en local."
+}
