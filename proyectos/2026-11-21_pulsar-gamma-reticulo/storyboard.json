@@ -269,7 +269,7 @@
     },
     {
       "id": "scene_007",
-      "arc": "desarrollo",
+      "arc": "cierre_historia",
       "duration_seconds": 10,
       "narration": "Antes, una búsqueda semicoherente había fallado después de unos seiscientos años de CPU. Son recursos de cómputo, no siglos de espera en calendario.",
       "on_screen_text": "CPU: 10 h / 600 años",
@@ -300,7 +300,7 @@
     },
     {
       "id": "scene_008",
-      "arc": "cierre_historia",
+      "arc": "reflexion_o_pregunta",
       "duration_seconds": 9,
       "narration": "La respuesta fue geométrica: buscar vectores cortos entre datos dispersos. No garantiza hallar todos los púlsares; los autores esperan probarlo en sistemas binarios. ¿Qué otros ritmos siguen escondidos? Esto fue Datos y ociosidades.",
       "on_screen_text": "No es garantía",
@@ -363,5 +363,25 @@
     "No presentar los CPU-años como tiempo de calendario; son presupuestos de cómputo reportados.",
     "La posición del mapa es la localización nominal 4FGL publicada en Table I, no una posición final independiente del ajuste temporal.",
     "La extensión a sistemas binarios se presenta como posibilidad futura, no como resultado ya demostrado."
-  ]
+  ],
+  "narrative_qa": {
+    "status": "FAIL",
+    "score": 83,
+    "review_basis": "lectura_en_frio_solo_narracion",
+    "reviewer_role": "auditor_capcot_independiente",
+    "reviewed_at": "2026-11-20T15:41:24-06:00",
+    "checks": {
+      "pregunta_central_reconstruible": true,
+      "apertura_in_medias_res": true,
+      "progresion_por_escena": true,
+      "transiciones_causales": true,
+      "giro_cientifico_explicado": false,
+      "limite_evidencia_explicito": true,
+      "payoff_cierre_apertura": true
+    },
+    "critical_flags": [
+      "GIRO_CIENTIFICO_NOMBRADO_PERO_NO_EXPLICADO"
+    ],
+    "reviewer_notes": "Lectura realizada únicamente sobre la narración concatenada. La pregunta se reconstruye como cómo hallar un púlsar gamma cuando llegan muy pocos fotones; la secuencia causal, el límite de evidencia y el retorno al gancho son claros. El giro científico queda a medio explicar: se menciona que las combinaciones útiles se vuelven vectores cortos en una retícula, pero no se explica por qué ese patrón geométrico codifica la periodicidad de los tiempos de llegada. El mecanismo central queda nombrado más que explicado. No se alteraron narración ni claims."
+  }
 }
