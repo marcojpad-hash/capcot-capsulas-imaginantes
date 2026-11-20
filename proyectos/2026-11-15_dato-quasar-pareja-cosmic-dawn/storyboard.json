@@ -404,19 +404,20 @@
     "score": 82,
     "review_basis": "lectura_en_frio_solo_narracion",
     "reviewer_role": "auditor_capcot_independiente",
-    "reviewed_at": "2026-11-15T15:51:23-06:00",
+    "reviewed_at": "2026-11-20T11:58:38-06:00",
     "checks": {
       "pregunta_central_reconstruible": true,
       "apertura_in_medias_res": true,
-      "progresion_por_escena": false,
+      "progresion_por_escena": true,
       "transiciones_causales": false,
       "giro_cientifico_explicado": true,
       "limite_evidencia_explicito": true,
       "payoff_cierre_apertura": true
     },
     "critical_flags": [
-      "ESCENA_002_REITERA_GEMINI_NORTH_Y_NO_AVANZA_LA_PREGUNTA",
-      "TRANSICION_002_003_NO_CAUSAL"
+      "TRANSICION_002_003_NO_CAUSAL",
+      "TRANSICION_003_004_NO_CAUSAL"
     ]
-  }
+  },
+  "state": "BORRADOR_EN_PROYECTOS_NO_APTO_PARA_PROMOCION"
 }
