@@ -233,3 +233,58 @@ Los doce IDs indicados por la auditoría siguen en `proyectos/`; sus QA existent
 - Commits: script `d8f40e54ce9460d92b82b5a41ca7acad5e869f1d`; tests `83dc330ff05b99d386190195b42fb408947f1346`.
 - Lectura de vuelta: blob script `bbbb188ef03dd834266be985ff95bda994c9f30c`; blob tests `c27a68f983cf084d30176ac81cac5aec875c6208`.
 - Prueba local aislada de la lógica nueva: 2/2 checks PASS (storyboard anidado y marker separado con recepción false). **No** equivale a ejecutar la suite completa del repositorio. Los runs automáticos de análisis asociados a ambos commits seguían `queued` al corte; no se dispararon workflows manuales.
+
+
+## Addendum — auditoría independiente del 20-nov, 10:03 CDMX
+
+### 1. QA narrativo en frío registrado
+
+Se releyó cada narración concatenada ocultando título, resumen, arco, notas y `narrative_contract`. El revisor fue distinto del investigador de las 08:00. Se registraron los siete checks obligatorios, `review_basis=lectura_en_frio_solo_narracion`, reviewer_role `auditor_capcot_independiente` y flags vacías.
+
+| project_id | Resultado | Palabras | Escenas | Duración total |
+|---|---:|---:|---:|---:|
+| `2026-11-20_dato-marea-cerebral-en-sueno` | PASS 92/100 | 218 | 8 | 84 s |
+| `2026-11-20_dato-dia-atlantico-humedad-sapropeles` | PASS 91/100 | 215 | 8 | 84 s |
+
+Ambos JSON se releyeron después de la escritura y conservan siete checks true y `critical_flags=[]`.
+
+Commits de QA y estado de fuentes:
+- Marea cerebral: `a0ed3cd30bd001dea4a0c19056dd0e8b9642d226`; blob releído `813379e455ccab4304e3bf7a154b1f476b6f40d6`.
+- Sapropeles: `745b548e4d281f9f0d240cca324c60de4e40e88e`; blob releído `5adae8aa07cf13e2fce954b2daa9feea4adf85eb`.
+
+### 2. DOI y fidelidad de afirmaciones
+
+- **Marea cerebral:** DOI `10.1038/s43587-026-01270-4` resuelve en Crossref y corresponde al artículo primario de Nature Aging. La página MIT asociada y las páginas de coordenadas de BU/MIT resuelven. **Bloqueo factual detectado:** el artículo/Crossref describe el grupo mayor como 60–84 años; el storyboard dice 60–83 tanto en narración como en la capa de dato. No se corrigió la narración ni el claim durante la auditoría. El redactor debe reconciliar ese extremo con el paper antes de cualquier handoff.
+- **Sapropeles:** DOI `10.1038/s41561-026-02141-8` resuelve en Crossref y corresponde al artículo primario de Nature Geoscience. El URL oficial de IODP para Site U1385 resuelve y confirma las coordenadas utilizadas. Los estados de fuentes quedaron actualizados a `VERIFICADO_CROSSREF` / `VERIFICADO_RESOLVEDOR` según corresponda.
+
+Fuentes de verificación:
+- https://api.crossref.org/works/10.1038/s43587-026-01270-4
+- https://www.nature.com/articles/s43587-026-01270-4
+- https://news.mit.edu/2026/waste-clearing-waves-in-brain-during-sleep-are-impaired-in-older-adults-1113
+- https://api.crossref.org/works/10.1038/s41561-026-02141-8
+- https://www.nature.com/articles/s41561-026-02141-8
+- https://www.iodp.tamu.edu/scienceops/sitesumm/339/339_ss1385.html
+
+### 3. Revisión estructural y staging
+
+Se compararon ambos JSON con las reglas visibles de `scripts/validar_storyboard.py`: campos raíz, voz, estilo/prompt_base, 7–9 escenas, 170–235 palabras, arco, puentes por escena, source_ids, mapa con coordenadas, capa de dato, cortinilla de 6 s, 75–90 s, cierre hablado, assets vacíos, export NOT_GENERATED y estado de publicación pendiente. La reimplementación estática de esas reglas no encontró errores en los campos inspeccionados.
+
+**Límite:** no se ejecutó el archivo oficial `scripts/validar_storyboard.py` ni se disparó GitHub Actions. La revisión estática no se presenta como ejecución del validador. La verificación DOI sí se hizo directamente contra Crossref, de forma independiente.
+
+### 4. Slots, cola y recepción
+
+- 07:00: `main/data/publicaciones.json` registra flamenco, YouTube `msWV2AXr6Uk`, `publishAt=2026-11-20T13:00:00Z`.
+- 13:30: `main/data/publicaciones.json` registra mxenes, YouTube `WTlFSZV9HYg`, `publishAt=2026-11-20T19:30:00Z`, con TikTok y Facebook también programados.
+- 17:00 y 23:30: los dos storyboards de feature ya ocupan esos slots; no se crea una segunda propuesta.
+
+Para los dos project_id actuales, las rutas exactas de `cola/estado/`, `cola/entrada/`, `cola/bloqueados/` y `salidas/` devolvieron 404 en feature; también se comprobó ausencia de los mismos project_id en main. El buzón `handoffs/grok_inbox/` solo contiene el marker histórico del 09-nov y README.
+
+Resultado para ambos: `RECEPCION_GROK_NO_CONFIRMADA`; `NOT_DISPATCHABLE` porque siguen en `proyectos/` y el workflow solo selecciona JSON planos de primer nivel en `cola/entrada/*.json`. No se promovieron. El PASS narrativo de sapropeles no basta para promover sin ejecución del validador oficial; el storyboard de marea además conserva el bloqueo factual de edad.
+
+### 5. Automatizaciones observadas
+
+- Investigador CAPCOT: run `c691932a-cb50-8321-bf4e-977532ef080f`, COMPLETED el 20-nov 08:40 CDMX; entregó el radar y los dos storyboards ya auditados.
+- Auditor CAPCOT: último run COMPLETED el 19-nov; siguiente 20-nov 15:00 CDMX. Esta auditoría es una pasada independiente del investigador; el auditor programado debe conservar los PASS si la narración no cambió y revisar solo los bloqueos restantes.
+- Operador único: run actual `936c994c-16f4-8327-a308-93d6cedc66be` sigue `in_progress`, sin `completed_at`.
+
+No se generaron medios, no se consumieron créditos, no se publicaron ni programaron piezas y no se modificaron `data/*.json`, `main`, workflow, secretos, permisos ni estados Grok.
