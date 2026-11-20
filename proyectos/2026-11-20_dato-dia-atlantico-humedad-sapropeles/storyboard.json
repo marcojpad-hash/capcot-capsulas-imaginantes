@@ -241,9 +241,9 @@
       "arc": "cierre_historia",
       "duration_seconds": 10,
       "narration": "El giro: los episodios de baja salinidad y sapropeles coincidieron una y otra vez con más precipitación invernal en ese margen, puerta de entrada de humedad atlántica.",
-      "on_screen_text": "La señal llega del Atlántico",
-      "visual_description": "Las bandas de sedimento y salinidad se alinean en episodios; una trama de humedad entra desde el margen atlántico sin dibujar una corriente de agua.",
-      "image_prompt": "linocut print, two-tone indigo and ochre ink on cream paper, bold carved lines, visible gouge marks, high contrast, vertical 9:16 composition, no text; escena: Las bandas de sedimento y salinidad se alinean en episodios; una trama de humedad entra desde el margen atlántico sin dibujar una corriente de agua.",
+      "on_screen_text": "350 mil años",
+      "visual_description": "Dos registros alineados sobre una línea temporal de 350 mil años: baja salinidad del Mediterráneo occidental y mayor precipitación invernal en el margen ibérico; la coincidencia se muestra sin inventar valores intermedios.",
+      "image_prompt": "linocut print, two-tone indigo and ochre ink on cream paper, bold carved lines, visible gouge marks, high contrast, vertical 9:16 composition, no text; escena: Dos registros alineados sobre una línea temporal de 350 mil años: baja salinidad del Mediterráneo occidental y mayor precipitación invernal en el margen ibérico; la coincidencia se muestra sin inventar valores intermedios.",
       "ambiente": "Viento atlántico sostenido",
       "sfx": [
         "Acento de tinta al coincidir las bandas"
@@ -257,7 +257,15 @@
       "causal_bridge_from_previous": "El sitio y el proxy ya están definidos; ahora se revela la coincidencia con la salinidad mediterránea.",
       "question_state": "Los episodios de baja salinidad y sapropeles coinciden con más precipitación invernal en el margen ibérico.",
       "reason_to_continue": "Hace falta conectar la coincidencia con la ventilación profunda sin afirmar causalidad exclusiva.",
-      "new_information": "El resultado apoya una vía atmosférica adicional al aporte local y del Nilo."
+      "new_information": "El resultado apoya una vía atmosférica adicional al aporte local y del Nilo.",
+      "capa": {
+        "tipo": "dato",
+        "valor": "350,000 años",
+        "etiqueta": "Ventana temporal de la reconstrucción de precipitación invernal en Site U1385 y comparación con salinidad superficial del Mediterráneo occidental.",
+        "condiciones": "Registro sedimentario de Site U1385; indicador geoquímico Ln(Zr+Ti)/K; comparación con registros de salinidad del Mediterráneo occidental.",
+        "interpretacion": "Es una reconstrucción proxy a escala paleoclimática, no una medición continua de lluvia ni una observación directa del clima antiguo.",
+        "fuente": "SRC-001, resumen y descripción de datos extendidos."
+      }
     },
     {
       "id": "scene_007",
