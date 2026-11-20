@@ -1,15 +1,13 @@
-# Reporte del orquestador — 2026-11-19 21:13
+# Reporte del orquestador — 2026-11-20 20:57
 Modelo: openai/gpt-oss-120b (Groq, API gratuita)
 Tablero actualizado con git pull.
 
-1. **Montar la cápsula Mpemba** – Atorado porque Imaginantes está pausado por ahorro de créditos; Imaginantes debe montar el MP4 con voz es‑MX‑JorgeNeural y correr QA, pero no puede hacerlo. **Próximo paso:** Reprogramar la ejecución para el próximo slot disponible tras el reset de créditos (sábado 21‑nov 10:18 CST) y reactivar Imaginantes cuando haya créditos suficientes.  
+- **1. Montar la cápsula Mpemba** – atorado porque Imaginantes tiene la tarea pausada por ahorro de créditos; **Imaginantes** debe montar el MP4 con voz es‑MX‑JorgeNeural y correr el QA; **siguiente paso**: reactivar la ejecución tan pronto como el límite semanal de créditos se reinicie (sábado 21‑nov 10:18 CST) y volver a programar el slot.
 
-2. **Montar la cápsula Barreleye** – Atorado por la misma pausa de créditos de Imaginantes; Imaginantes debe montar el MP4, aplicar los ajustes de texto y ejecutar QA. **Próximo paso:** Igual que el caso 1: esperar el reset de créditos (21‑nov 10:18 CST) y reprogramar la tarea en el siguiente slot disponible.  
+- **2. Montar la cápsula Barreleye** – atorado por la misma pausa de créditos de Imaginantes; **Imaginantes** debe montar el MP4 con los ajustes de texto indicados y correr el QA; **siguiente paso**: reanudar la generación del MP4 cuando los créditos estén disponibles y re‑programar el slot propuesto para la semana 8‑14 nov.
 
-3. **Subir los workflows de seguridad (gitleaks.yml, semgrep.yml)** – Atorado porque aún no se han subido; Pecas es quien debe subirlos vía navegador. **Próximo paso:** Pecas abre el repositorio en el navegador, arrastra los archivos desde `~/workspace/security-upload/` y los confirma con un commit.  
+- **3. Subir los workflows de seguridad de CAPCOT** – atorado porque todavía no se han subido los archivos; **Pecas** (por navegador) debe subir `gitleaks.yml` y `semgrep.yml` desde `~/workspace/security-upload/` al repositorio; **siguiente paso**: Pecas abre la UI de GitHub, crea los archivos en la rama correspondiente y confirma con commit.
 
-4. **Activar la seguridad nativa en GitHub (Secret Scanning, CodeQL, Dependabot)** – Atorado porque los toggles no están activados; Pecas debe hacerlo en Settings > Code security. **Próximo paso:** Pecas accede a Settings del repo con su cuenta, habilita Secret Scanning, CodeQL y Dependabot y guarda los cambios.  
+- **4. Activar la seguridad nativa en GitHub** – atorado porque los toggles no se han activado; **Pecas** (por navegador, en Settings > Code security) debe habilitar Secret Scanning, CodeQL y Dependabot Alerts en el repo CAPCOT; **siguiente paso**: Pecas accede a Settings y activa esas opciones, verificando que queden marcadas.
 
-5. **Crear cuenta gratuita de Clayzo** – Atorado en la decisión; Marco debe aprobar o rechazar la creación y comunicarlo a Pecas, quien ejecutará la creación por navegador. **Próximo paso:** Marco revisa la solicitud y envía a Pecas la respuesta “aprobada” (o “rechazada”).  
-
-8. **Versiones en inglés del backlog (7 paquetes)** – Atorado porque los MP4 en inglés aún no están montados ni programados; Imaginantes necesita créditos (actualmente 23.4 % usado) para montar los videos y programar su publicación. **Próximo paso:** Esperar al reset de créditos (21‑nov 10:18 CST) o liberar créditos adicionales, luego Imaginantes retoma el montaje de los MP4 en inglés y su programación.
+- **5. Crear cuenta gratuita de Clayzo** – atorado esperando decisión de Marco; **Marco** debe decidir si se crea la cuenta; si la aprueba, **Pecas** la creará por navegador para probar el render del documento Mpemba; **siguiente paso**: Marco da su respuesta (sí/no) y, de ser afirmativa, Pecas procede a crear la cuenta.
