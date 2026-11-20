@@ -24,3 +24,12 @@ No existe `cola/estado/2026-11-15_dato-dia-diapausa-lestes-sponsa.json`, `handof
 - QA narrativo persistido: PASS/90, siete checks verdaderos y `critical_flags=[]`.
 - La validación estructural vigente falla: las ocho escenas declaran `asset_filename` en modo `storyboard_only`; no hay archivos de frames referenciados.
 - Paquete conservado íntegro en `cola/bloqueados/2026-11-15_dato-dia-diapausa-lestes-sponsa/`. No existe estado Grok ni recepción confirmada. No se ejecutó validador ni workflow en esta auditoría.
+
+
+## Corrección mecánica verificada — 2026-11-20
+
+- Se retiraron los ocho campos `asset_filename` que apuntaban a `frames/scene_001.jpg`–`scene_008.jpg`, inexistentes en el repositorio.
+- La corrección se aplicó y releyó tanto en `proyectos/2026-11-15_dato-dia-diapausa-lestes-sponsa/storyboard.json` como en esta copia bloqueada. Ambos blobs resultantes coinciden: `8a1d9fad63790bb4ba66504a14717c544f432a2c`.
+- No se generaron ni subieron medios. `approved_assets=[]` y `export.render_status=NOT_GENERATED` permanecen sin cambios.
+- La narración y el QA narrativo PASS/90 permanecen idénticos; no se repitió la lectura en frío.
+- No se ejecutó el validador oficial en este run. El proyecto sigue bloqueado y no se promueve: la fecha objetivo 15-nov ya pasó y no hay autorización para publicación retroactiva.
