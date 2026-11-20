@@ -56,8 +56,8 @@ La ventana de búsqueda fue 2026-11-13 a 2026-11-20, inclusive. Los dos primeros
 - **Oportunidad editorial:** alta, por el mecanismo acoplado de ondas neuronales, cambios vasculares y flujo de LCR.
 - **Público/ocasión:** público general interesado en sueño, cerebro y salud.
 - **Riesgos:** no afirmar que el estudio midió limpieza de desechos, eliminación de proteínas, prevención de Alzheimer ni riesgo individual. El resultado es una diferencia promedio de señal/flujo entre grupos.
-- **Material preexistente:** `2026-11-20_dato-marea-cerebral-en-sueno`, 17:00. El storyboard actual usa 218 palabras, 8 escenas y 84 s; estructura `comparacion`, estilo `neon_noir`. Su narración escribe 60–83 años, mientras el registro primario de PubMed indica 60–84. **Discrepancia factual para el auditor/autor; no se corrigió ni reescribió el storyboard.**
-- **QA narrativo:** `PENDIENTE_AUDITOR`; no existe `narrative_qa`.
+- **Material preexistente:** `2026-11-20_dato-marea-cerebral-en-sueno`, 17:00. El storyboard usa 218 palabras, 8 escenas y 84 s; estructura `comparacion`, estilo `neon_noir`. La narración 60–83 coincide con los 41 participantes mayores que permanecen en el análisis nocturno después de las exclusiones por movimiento descritas en Methods; el abstract presenta el grupo general como 60–84. No existe discrepancia factual para la muestra analítica narrada.
+- **QA narrativo:** `PASS 92/100` en auditoría independiente posterior al corte del radar; siete checks true y `critical_flags=[]`.
 
 ### Candidato B — Humedad atlántica, salinidad mediterránea y sapropeles
 
@@ -72,7 +72,7 @@ La ventana de búsqueda fue 2026-11-13 a 2026-11-20, inclusive. Los dos primeros
 - **Público/ocasión:** público general interesado en océanos, clima y pasado terrestre.
 - **Riesgos:** la precipitación se reconstruye mediante proxies; el clima antiguo no fue observado directamente. La asociación con fases negativas de la oscilación del Atlántico Norte se presenta como potencial, no como causa demostrada de cada evento.
 - **Material preexistente:** `2026-11-20_dato-dia-atlantico-humedad-sapropeles`, 23:30 / `dato_del_dia`. El storyboard actual usa 215 palabras, 8 escenas y 84 s; estructura `pregunta`, estilo `linograbado`. No se crea otra versión.
-- **QA narrativo:** `PENDIENTE_AUDITOR`; no existe `narrative_qa`.
+- **QA narrativo:** `PASS 91/100` en auditoría independiente posterior al corte del radar; siete checks true y `critical_flags=[]`.
 
 ### Candidato C — Una intrusión volcánica liberó metano sin erupción
 
@@ -141,9 +141,9 @@ Se compararon las referencias oficiales actuales con `docs/INVESTIGACION_API_MET
 
 **Decisión técnica:** no actualizar `docs/INVESTIGACION_API_META_Y_GOOGLE_TRENDS.md`. No se hicieron llamadas autenticadas, no se modificaron conectores, permisos, OAuth, versiones configuradas ni credenciales.
 
-## 6. Estado de QA narrativo preexistente
+## 6. Estado de QA narrativo al corte del radar (08:00 CDMX; histórico)
 
-No se ejecutó QA nuevo ni se alteró ningún `narrative_qa`. Los campos se transcriben de los JSON actuales. Los dos storyboards del 20-nov no tienen la propiedad `narrative_qa`, por lo que su estado es `PENDIENTE_AUDITOR`.
+No se ejecutó QA nuevo en la corrida del investigador de las 08:00 ni se alteró entonces ningún `narrative_qa`. La tabla siguiente conserva fielmente el estado observado en ese corte: los dos storyboards del 20-nov estaban `PENDIENTE_AUDITOR`. La auditoría independiente posterior los evaluó PASS; los resultados vigentes se indican en los candidatos A/B y en `docs/briefs/2026-11-20_CONTROL_COLA.md`.
 
 **Nombres de los siete checks, en este orden:** `pregunta_central_reconstruible`, `apertura_in_medias_res`, `progresion_por_escena`, `transiciones_causales`, `giro_cientifico_explicado`, `limite_evidencia_explicito`, `payoff_cierre_apertura`.
 
@@ -162,7 +162,7 @@ No se ejecutó QA nuevo ni se alteró ningún `narrative_qa`. Los campos se tran
 | `2026-11-11_dato-ratas-topo-damaraland` (bloqueados) | PASS / 91 | `lectura_en_frio_solo_narracion` | 2026-11-20T01:57:46-06:00 | true, true, true, true, true, true, true | [] |
 | `2026-11-07_dato-clavo-te-cocina` (bloqueados) | FAIL / 82 | `lectura_en_frio_solo_narracion` | 2026-11-20T01:57:46-06:00 | true, true, true, true, true, false, true | [`CIFRAS_SIN_UNIDAD_Y_CONDICIONES_DE_ENSAYO_INSUFICIENTES`] |
 
-Los QA PASS anteriores no se repitieron ni se transfirieron a otras versiones. Los dos proyectos actuales permanecen en `proyectos/`; ninguno fue promovido a `cola/entrada/`.
+Los QA PASS anteriores no se repitieron ni se transfirieron a otras versiones. Al corte de las 08:00, los dos proyectos actuales permanecían en `proyectos/`; ninguno fue promovido a `cola/entrada/`. La auditoría posterior no promovió ninguno.
 
 ## 7. Rotación, continuidad y límites de ejecución
 
@@ -171,7 +171,7 @@ Los QA PASS anteriores no se repitieron ni se transfirieron a otras versiones. L
 - Los estilos ya presentes hoy son `neon_noir` para 17:00 y `linograbado` para 23:30. No se selecciona ni repite estilo nuevo porque no se crea storyboard.
 - No se modificaron storyboards existentes, `data/*.json`, main, workflows, motores canónicos ni Motor U6.
 - No se crearon frames, imágenes, audio, voz, video ni renders; no se publicó ni programó contenido; no se consumieron créditos.
-- No se creó `narrative_qa`, no se hizo promoción, no se creó ni editó `cola/estado/`, y no se declaró recepción de Grok.
+- Al corte de las 08:00 no se creó `narrative_qa`, no se hizo promoción, no se creó ni editó `cola/estado/`, y no se declaró recepción de Grok. La auditoría posterior registró QA independiente en los storyboards, pero no creó estados Grok.
 
 **Entregables de esta ejecución:** únicamente este radar. No se creó storyboard principal ni storyboard 23:30 porque los slots están ocupados.
 
