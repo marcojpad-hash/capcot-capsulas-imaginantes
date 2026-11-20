@@ -90,8 +90,8 @@
         "Los autores señalan que el muestreo ambiental emparejado fortalecería la inferencia causal; no se rastreó el origen de cada partícula.",
         "El sitio de campo del Pantanal fue Baía das Pedras Ranch, Nhecolândia, Aquidauana, Mato Grosso do Sul; el artículo reporta el par numérico -19.33, -55.72 y cita Natural Earth y geobr como datos de mapa base."
       ],
-      "verification_status": "VERIFICADO_RESOLVEDOR",
-      "verification_note": "La página editorial de Nature fue consultada y muestra título, autoría, fecha, resumen, métodos, resultados, coordenadas y DOI. Los intentos de resolución doi.org y Crossref no completaron la verificación independiente; el DOI se conserva como pendiente y no se declara validado."
+      "verification_status": "VERIFICADO_FUENTE_PRIMARIA",
+      "verification_note": "La página editorial de Nature fue consultada y muestra título, autoría, fecha, resumen, métodos, resultados, coordenadas y DOI. La fuente primaria está identificada; los intentos de resolución doi.org y Crossref no completaron la verificación independiente. doi_verification_status permanece PENDIENTE_RESOLVEDOR."
     }
   ],
   "mapa": {
