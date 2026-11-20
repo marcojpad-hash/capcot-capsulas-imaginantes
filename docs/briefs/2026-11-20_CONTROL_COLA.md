@@ -398,3 +398,33 @@ Los 12 IDs del lote 5–7 nov conservan los mismos SHA/contenidos desde la pasad
 
 - `feature/data/horarios.json` (actualizado 09-nov) habilita 06:30–07:30 y 16:30–18:00, más 23:30 fijo. `main/data/horarios.json` (16-nov) habilita 06:30–07:30 y 13:00–14:30, más 23:30 fijo. `scripts/rotacion.py` aún conserva cinco ventanas (07:00, 13:30, 17:00, 19:00, 23:30). La discrepancia entre políticas por rama y ventanas de código permanece; no se modificaron `data/*.json` ni el código de rotación. 17:00 es válido dentro de la ventana activa de feature; 19:00 no se reutiliza.
 - La reserva main de REACT a las 13:45 está dentro de la ventana mediodía de main, pero no coincide exactamente con los slots 17:00 o 23:30 de feature. Considerando 07:00, 13:30, 13:45, 17:00 y 23:30, el inventario visible ya alcanza cinco piezas/reservas para la fecha; no se crea un sexto paquete.
+
+## RUN 9 — 20-nov-2026, 16:11 CDMX
+
+### Proyectos recientes y QA
+
+- El inventario de la rama no cambió en los proyectos anteriores a este run: la comparación desde `6b764c5` solo muestra la nueva pieza de Fentale y las actualizaciones de briefs/QA. Por ello no se repitieron los PASS vigentes de Marea cerebral (92), Sapropeles (91), Luz de dos manos (91) y Estrella dentro de estrella (90).
+- `2026-11-21_pulsar-gamma-reticulo`, slot 17:00: conserva `FAIL 83`, flag `GIRO_CIENTIFICO_NOMBRADO_PERO_NO_EXPLICADO`. No se reescribió la narración.
+- `2026-11-21_fentale-metano-sin-erupcion`, slot fijo 23:30: creado en `proyectos/` y QA independiente posterior, lectura en frío solo de narración: `PASS 90/100`, siete checks true, `critical_flags=[]`. 8 escenas, 170 palabras, 78 s de escenas + 6 s de cortinilla = 84 s. Estilo `pulp_comic_1940s`; mapa GVP 8.985°N, 39.906°E; datos 38.2 ± 3.9 kt CH₄ y pico 157 ± 41 t/h.
+- La fuente primaria Nature Geoscience (DOI `10.1038/s41561-026-02137-4`) está identificada y la página editorial está indexada. Crossref/doi.org no completaron; `doi_verification_status=PENDIENTE_RESOLVEDOR`. El validador estructural oficial no se ejecutó para esta pieza. No promover.
+- Fentale permanece en `proyectos/`, sin `cola/estado`, sin entrada en cola, sin handoff, sin medios y sin programación. `approved_assets=[]`, `render_status=NOT_GENERATED`, publicación `PENDIENTE_DECISION_GROK`.
+- El slot 21-nov 23:30 estaba libre al crear: en `main` se observaron publicaciones a 13:30 y 19:00, pero no `publishAt=2026-11-22T05:30:00Z`. No se detectó conflicto exacto de fecha+slot.
+
+### Recepción, cola y producción preexistente
+
+- Los 12 IDs del lote 5–7 nov siguen sin cambios desde la auditoría previa: 2 PASS y 10 FAIL; no se repitió QA de PASS. Ninguno tiene `cola/estado/<id>.json`; registrar `RECEPCION_GROK_NO_CONFIRMADA`. Los duplicados heredados permanecen en bloqueados; no promover por fechas vencidas ni alterar `data/*.json`.
+- `2026-11-09_dato-robot-ensambla-orbita`: entrada anidada, no seleccionada por el workflow actual; marcador en `handoffs/grok_inbox` en estado pendiente, pero sin `cola/estado` (no confirma recepción). Main conserva video_id `ZG4iQgmWrLI` y programación 21-nov 19:00; el MP4 y la portada sí están en el árbol. Clasificación: `NOT_DISPATCHABLE` y `PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR`.
+- `2026-11-11_dato-ratas-topo-damaraland`: entrada anidada, no seleccionada por el workflow; estado ausente y sin handoff. Main conserva publicación con video_id `WcTviUWqbes`, TikTok `7707137000121404680` y Facebook `122109293493518983` (12-nov 07:00). La referencia a `capsula.mp4` no tiene archivo correspondiente en el árbol: `MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO`. Clasificación: `NOT_DISPATCHABLE` y `PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR`.
+- REACT, 20-nov 13:45: la programación privada preexistente permanece; `capsula.mp4` no aparece en el árbol: `MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO`. No redispatchar ni cancelar.
+- No existe archivo `historial_youtube` en el árbol revisado; el cruce se hizo con `data/publicaciones.json` y los registros de programación disponibles.
+
+### Workflow, CI y PR
+
+- `.github/workflows/capcot-grok-dispatch.yml` selecciona solo `cola/entrada/*.json` en raíz y el modo manual usa profundidad máxima 1. No procesa las entradas anidadas actuales. Los storyboards que siguen únicamente en `proyectos/` son `NOT_DISPATCHABLE`.
+- No se encontraron ejecuciones de `capcot-grok-dispatch` entre las últimas 100 Actions consultadas. No se enviaron payloads ni se dispararon workflows; por tanto no se afirma presencia ni ausencia de los secretos `GROK_WEBHOOK_URL` y `GROK_WEBHOOK_TOKEN`.
+- `validar-kuroshio.yml` valida el proyecto Kuroshio, no Fentale, y ejecuta el validador sin `--check-doi`. CodeQL pasó para el commit de creación de Fentale; eso no es validación estructural ni DOI.
+- PR #3 sigue OPEN, draft y no mergeable; PR #6 OPEN/no mergeable con riesgo por `secrets: inherit` y permisos de escritura; PR #14 OPEN/no mergeable y conserva referencias `asset_filename` incompatibles. Issue #11 sigue OPEN con etiqueta `hecho`. No se fusionó ni cerró nada.
+
+### Resultado de promoción
+
+Ninguna pieza se promovió. Fentale tiene QA narrativo PASS, pero mantiene dos compuertas independientes pendientes: resolución DOI/Crossref y ejecución del validador estructural oficial. Los demás bloqueos de recepción, producción previa, fechas vencidas y selección por profundidad permanecen sin eludir.
