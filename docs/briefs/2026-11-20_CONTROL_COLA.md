@@ -175,3 +175,15 @@ Este addendum amplía el control anterior; no sustituye el corte inicial ni modi
 - `scripts/rotacion.py` usa `registro_editorial.registros()` y `temas_dia()` en lugar de depender exclusivamente de esos archivos históricos. `registro_editorial.py` combina rotación, publicaciones, cola y storyboards de `proyectos/`, `cola/entrada/`, `cola/` y `salidas/`; `temas_dia()` combina el JSON con los registros encontrados.
 - Límite detectado: `_storyboard_paths()` no recorre `cola/bloqueados/<id>/storyboard.json` ni `handoffs/grok_inbox/`. Los expedientes que solo existan en bloqueados o en el buzón pueden quedar fuera de la vista combinada. El auditor debe seguir inspeccionando `cola/bloqueados/` y los handoffs directamente; no asumir que el registro combinado es exhaustivo.
 - La rama conserva la instrucción de contrastar `fecha_objetivo` + `slot_local` en `feature` y `main` y de no modificar `data/*.json`.
+
+## Addendum — registro editorial y capacidad de bloqueados (20-nov, operador)
+
+Se corrigió una omisión descubierta al comparar el inventario de cola/bloqueados/ con el registro editorial:
+
+- scripts/registro_editorial.py ahora recorre cola/bloqueados/<project_id>/storyboard.json, conserva _source="bloqueado" y clasifica su origen por defecto como externa. Los bloqueados aportan tema, estructura, estilo y cama a la rotación para evitar duplicaciones.
+- scripts/rotacion.py::exigir_cupo() excluye _source="bloqueado" del conteo de slots/cupo diario. Un borrador bloqueado no consume una plaza de publicación, pero sigue siendo evidencia para evitar_hoy() y la comprobación de duplicados.
+- Se añadieron pruebas de regresión en tests/test_registro_editorial.py y tests/test_rotacion_capacity.py.
+- Pruebas locales sobre las copias de los módulos: test_registro_editorial.py 4/4 PASS; comprobación aislada de capacidad 5 bloqueados → 0 plazas consumidas y tema/estilo conservados en rotación PASS. No equivale a la suite completa del repositorio.
+- Commits: a23708bb34bb865b3ca55d93a66f61a340d957cd (registro), da191306d4f5fa4ad6222e6de413bae4509d178e (test registro), bd26a2850fc6cdba047b20349338b5b5b11af088 (capacidad), 4102ff6abba32d2721931f983bad1755f96fa686 (test capacidad).
+- El run dinámico de PR #3 para 4102ff6 seguía in_progress en el último sondeo. No se atribuye éxito a CI.
+- No se modificaron data/*.json, main, workflows, cola, estados Grok ni medios. Los markers de handoffs/grok_inbox/ siguen revisándose directamente por el auditor; no se incorporaron como storyboards de rotación.
