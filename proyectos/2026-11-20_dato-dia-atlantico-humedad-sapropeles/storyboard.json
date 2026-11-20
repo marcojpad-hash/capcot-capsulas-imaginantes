@@ -1,0 +1,355 @@
+{
+  "_schema": "CAPCOT_STORYBOARD_TEXT_V2",
+  "project_id": "2026-11-20_dato-dia-atlantico-humedad-sapropeles",
+  "fecha_objetivo": "2026-11-20",
+  "slot_local": "23:30",
+  "slot_cesta": "dato_del_dia",
+  "serie": "Datos y ociosidades",
+  "title": "La humedad atlántica y las antiguas caídas de salinidad del Mediterráneo",
+  "titulo": "El Atlántico le quitó sal",
+  "language": "es-MX",
+  "aspect_ratio": "9:16",
+  "target_duration_seconds": 84,
+  "estructura": "mito_vs_dato",
+  "audience": "Público general interesado en océanos, clima y geología",
+  "occasion": "Slot fijo 23:30; dato científico publicado el mismo día",
+  "resumen": "Un artículo de Nature Geoscience publicado el 20 de noviembre reconstruye la precipitación invernal del margen ibérico atlántico y la compara con registros de salinidad del Mediterráneo occidental durante 350 mil años. Los episodios de baja salinidad y sapropeles coinciden con mayor precipitación en la puerta atlántica de humedad. La conexión con fases negativas de la oscilación del Atlántico Norte se presenta como potencial.",
+  "narrative_contract": {
+    "central_question": "¿Qué aportó agua dulce a los episodios en que el Mediterráneo perdió salinidad y se formaron sapropeles?",
+    "promise": "Mostrar cómo una señal de lluvia en el margen ibérico conecta la atmósfera atlántica con la salinidad y la ventilación profunda del Mediterráneo.",
+    "stakes": "La salinidad condiciona la densidad y la renovación de las aguas profundas; sus cambios pueden favorecer anoxia y conservar capas orgánicas en el fondo.",
+    "scientific_turn": "Los episodios de baja salinidad y sapropeles coinciden con más precipitación invernal en el margen ibérico, la puerta de entrada de humedad atlántica, no solo con aportes locales o del Nilo.",
+    "evidence_limit": "El estudio reconstruye 350 mil años mediante indicadores geoquímicos en sedimentos de Site U1385 y registros de salinidad del Mediterráneo occidental; la relación con fases negativas de la oscilación del Atlántico Norte es potencial, no una causa demostrada para cada episodio.",
+    "payoff": "La sal del Mediterráneo también responde a humedad transportada desde el Atlántico; la huella aparece en los sedimentos, aunque el clima antiguo no se observó directamente."
+  },
+  "trend_source": {
+    "termino": "Mediterranean low-salinity and anoxic sapropel events triggered by Atlantic atmospheric moisture",
+    "fecha_publicacion": "2026-11-20",
+    "url": "https://www.nature.com/articles/s41561-026-02141-8"
+  },
+  "editorial_status": "PROPUESTA_PENDIENTE_DE_GROK",
+  "arco": {
+    "hook_medias_res": "El Mediterráneo se estaba volviendo menos salado y el fondo dejaba de renovarse.",
+    "desarrollo": "Los sapropeles plantean una pregunta sobre el origen del agua dulce; el estudio compara sedimentos del margen ibérico y salinidad del Mediterráneo occidental.",
+    "cierre_historia": "La coincidencia repetida con precipitación invernal atlántica propone un mecanismo atmosférico; la relación con la oscilación del Atlántico Norte sigue siendo potencial.",
+    "reflexion_o_pregunta": "El Atlántico dejó una huella en la sal mediterránea, reconstruida en sedimentos durante 350 mil años."
+  },
+  "estilo_id": "linograbado",
+  "estilo_visual": "Linograbado bitono",
+  "visual_identity": {
+    "style_id": "linograbado",
+    "style_name": "Linograbado bitono",
+    "prompt_base": "linocut print, two-tone indigo and ochre ink on cream paper, bold carved lines, visible gouge marks, high contrast, vertical 9:16 composition, no text",
+    "palette": "índigo, ocre, crema",
+    "lighting": "Alto contraste de tinta bitono; sin iluminación fotográfica.",
+    "texture": "Papel crema, cortes visibles de linóleo, tinta densa y bordes tallados.",
+    "composition": "Capas de mar y estratos sedimentarios en vertical; mapas esquemáticos solo con el punto publicado; sin trayectorias inventadas.",
+    "negative_prompt": "Sin fotorealismo, sin 3D, sin texto generado, sin mapas de corrientes no publicadas, sin inundaciones ni tormentas ficticias.",
+    "reference_assets": [],
+    "seed": null,
+    "seed_policy": "Sin semilla fija; continuidad por paleta índigo-ocre-crema y textura de linóleo. No reutilizar imágenes de otras cápsulas."
+  },
+  "typography_identity": {
+    "font_family": "DejaVu Sans",
+    "font_weight": "700 para gancho; 400 para subtítulos",
+    "title_style": "Máximo seis palabras; el gancho se incorpora en postproducción.",
+    "subtitle_style": "Bloques de máximo tres palabras; zona segura inferior.",
+    "hierarchy": "Gancho > dato/etiqueta > subtítulos",
+    "animation": "Un movimiento por plano; tipografía en postproducción."
+  },
+  "voice": {
+    "engine": "edge-tts",
+    "voice_id": "es-MX-JorgeNeural",
+    "language": "es-MX",
+    "rate": "+7%",
+    "pitch": "-2Hz",
+    "pad_seconds": 0.3,
+    "modo_pausas": "continuo"
+  },
+  "sources": [
+    {
+      "id": "SRC-001",
+      "cita_corta": "Sierro, F. J., Jimenez-Espejo, F. J., Tarruella, J. P. et al. (2026). Mediterranean low-salinity and anoxic sapropel events triggered by Atlantic atmospheric moisture. Nature Geoscience.",
+      "url": "https://www.nature.com/articles/s41561-026-02141-8",
+      "doi": "10.1038/s41561-026-02141-8",
+      "accessed": "2026-11-20",
+      "publication_date": "2026-11-20",
+      "supports": [
+        "Artículo original publicado el 20 de noviembre de 2026 en Nature Geoscience.",
+        "Reconstrucción de precipitación invernal del margen ibérico atlántico mediante el indicador Ln(Zr+Ti)/K en sedimentos de Site U1385.",
+        "Comparación con registros de salinidad superficial del Mediterráneo occidental durante los últimos 350 mil años.",
+        "Los episodios de baja salinidad y sapropeles coinciden con precipitación invernal elevada en el margen ibérico, principal puerta de entrada de humedad atlántica hacia la región mediterránea.",
+        "Los episodios se asocian con presiones invernales más bajas sobre el Atlántico medio; la relación con fases negativas de la North Atlantic–Arctic Oscillation se presenta como potencial."
+      ],
+      "verification_status": "PENDIENTE",
+      "url_verification_status": "VERIFICADO_PAGINA_EDITORIAL_INDEXADA",
+      "doi_verification_status": "PENDIENTE_RESOLVEDOR",
+      "verification_note": "La ficha editorial indexada de Nature muestra fecha, autoría, DOI y resumen completo; el acceso HTML directo devolvió HTTP 500 y Crossref/resolvedor no completaron. El DOI no se declara validado independientemente."
+    },
+    {
+      "id": "SRC-002",
+      "cita_corta": "International Ocean Discovery Program. Site U1385 Summary, Expedition 339.",
+      "url": "https://www.iodp.tamu.edu/scienceops/sitesumm/339/339_ss1385.html",
+      "doi": null,
+      "accessed": "2026-11-20",
+      "publication_date": null,
+      "supports": [
+        "Coordenadas publicadas de Site U1385: 37°34.285′N, 10°7.562′W.",
+        "Identificación del sitio en el margen ibérico suroccidental."
+      ],
+      "verification_status": "PENDIENTE",
+      "url_verification_status": "VERIFICADO_PAGINA_OFICIAL",
+      "verification_note": "Página oficial de IODP; las coordenadas DMS se convierten a grados decimales para el punto del mapa."
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_001",
+      "arc": "hook_medias_res",
+      "duration_seconds": 9,
+      "narration": "El Mediterráneo se estaba volviendo menos salado. En el fondo, el agua dejaba de renovarse y comenzaban a quedar capas oscuras de sedimento.",
+      "on_screen_text": "El Mediterráneo pierde sal",
+      "visual_description": "Mar oscuro en corte vertical; una capa de sedimento orgánico empieza a acumularse mientras la renovación del agua profunda se atenúa.",
+      "image_prompt": "linocut print, two-tone indigo and ochre ink on cream paper, bold carved lines, visible gouge marks, high contrast, vertical 9:16 composition, no text; escena: Mar oscuro en corte vertical; una capa de sedimento orgánico empieza a acumularse mientras la renovación del agua profunda se atenúa.",
+      "ambiente": "Oleaje grave y viento atlántico distante",
+      "sfx": [
+        "Golpe suave de agua"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "linograbado",
+      "dramatic_beat": "La anomalía ya está en curso: baja la salinidad y el fondo pierde ventilación.",
+      "scene_function": "Abrir con la consecuencia marina antes de nombrar la explicación.",
+      "causal_bridge_from_previous": "Apertura en curso; no hay escena previa. El mar ya está perdiendo salinidad y ventilación profunda.",
+      "question_state": "Se sabe que la baja salinidad acompaña la formación de capas oscuras; falta explicar de dónde llega el agua dulce.",
+      "reason_to_continue": "Identificar qué son esas capas y por qué revelan un cambio en el fondo.",
+      "new_information": "Los episodios de freshening se relacionan con menor ventilación profunda y depósito de sapropeles."
+    },
+    {
+      "id": "scene_002",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "Esas capas se llaman sapropeles: aparecen cuando el fondo queda pobre en oxígeno y la materia orgánica se conserva.",
+      "on_screen_text": "Capas sin oxígeno",
+      "visual_description": "Estratos bitono de sedimento se apilan; la capa oscura queda aislada bajo agua profunda de renovación débil.",
+      "image_prompt": "linocut print, two-tone indigo and ochre ink on cream paper, bold carved lines, visible gouge marks, high contrast, vertical 9:16 composition, no text; escena: Estratos bitono de sedimento se apilan; la capa oscura queda aislada bajo agua profunda de renovación débil.",
+      "ambiente": "Viento bajo y agua amortiguada",
+      "sfx": [
+        "Sedimento que cae"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "linograbado",
+      "dramatic_beat": "La capa oscura convierte el cambio de salinidad en una señal geológica persistente.",
+      "scene_function": "Explicar el término y el stake ambiental sin añadir otro fenómeno.",
+      "causal_bridge_from_previous": "La apertura mostró el fondo sin renovación; esta escena nombra la huella sedimentaria que deja.",
+      "question_state": "Los sapropeles se asocian con condiciones pobres en oxígeno y preservación de materia orgánica.",
+      "reason_to_continue": "La explicación histórica más conocida apunta a aportes del Nilo y lluvia regional.",
+      "new_information": "La pregunta sobre el origen del agua dulce sigue abierta."
+    },
+    {
+      "id": "scene_003",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "Durante mucho tiempo, esos episodios se explicaron sobre todo por más descarga del Nilo o lluvia sobre la propia cuenca.",
+      "on_screen_text": "La explicación habitual",
+      "visual_description": "Dos entradas de agua dulce aparecen sobre el mapa estilizado: una flecha del Nilo y lluvia sobre la cuenca; no se dibujan volúmenes.",
+      "image_prompt": "linocut print, two-tone indigo and ochre ink on cream paper, bold carved lines, visible gouge marks, high contrast, vertical 9:16 composition, no text; escena: Dos entradas de agua dulce aparecen sobre el mapa estilizado: una flecha del Nilo y lluvia sobre la cuenca; no se dibujan volúmenes.",
+      "ambiente": "Lluvia distante y corriente tenue",
+      "sfx": [
+        "Dos gotas y un flujo corto"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "linograbado",
+      "dramatic_beat": "La explicación habitual deja planteada la posibilidad de una fuente adicional.",
+      "scene_function": "Presentar la hipótesis previa con precisión, sin caricaturizarla ni declararla falsa.",
+      "causal_bridge_from_previous": "Las capas de sapropel necesitan una explicación; el relato pasa por los mecanismos tradicionalmente considerados.",
+      "question_state": "Nilo y precipitación regional eran las explicaciones tradicionales.",
+      "reason_to_continue": "El nuevo estudio prueba si la atmósfera atlántica también deja una señal.",
+      "new_information": "La hipótesis anterior no queda anulada; el trabajo evalúa otra vía."
+    },
+    {
+      "id": "scene_004",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "Un estudio publicado hoy comparó registros de salinidad del Mediterráneo occidental con señales de lluvia invernal conservadas en sedimentos del margen ibérico atlántico.",
+      "on_screen_text": "Una comparación de registros",
+      "visual_description": "Dos bandas paralelas: salinidad del Mediterráneo occidental y sedimento del margen ibérico; la composición se mantiene en tinta bitono.",
+      "image_prompt": "linocut print, two-tone indigo and ochre ink on cream paper, bold carved lines, visible gouge marks, high contrast, vertical 9:16 composition, no text; escena: Dos bandas paralelas: salinidad del Mediterráneo occidental y sedimento del margen ibérico; la composición se mantiene en tinta bitono.",
+      "ambiente": "Oleaje suave y viento más presente",
+      "sfx": [
+        "Deslizamiento de dos bandas"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "linograbado",
+      "dramatic_beat": "La pregunta se convierte en una comparación entre dos registros independientes.",
+      "scene_function": "Introducir el estudio y su estrategia de contraste.",
+      "causal_bridge_from_previous": "La explicación tradicional no resuelve el papel de la atmósfera atlántica; el artículo compara dos registros.",
+      "question_state": "La investigación no observa el clima antiguo directamente: compara indicadores preservados.",
+      "reason_to_continue": "Hace falta saber dónde se obtuvo el registro atlántico y qué periodo cubre.",
+      "new_information": "La comparación se centra en salinidad occidental y precipitación invernal del margen ibérico."
+    },
+    {
+      "id": "scene_005",
+      "arc": "desarrollo",
+      "duration_seconds": 11,
+      "narration": "En el sitio U1385, frente a Portugal, los investigadores analizaron el cociente de zirconio y titanio respecto al potasio en los sedimentos, un indicador de descarga de arcillas fluviales y lluvia invernal en la costa ibérica.",
+      "on_screen_text": "350 mil años de sedimento",
+      "visual_description": "Punto único en el margen ibérico suroccidental; una columna de sedimento se convierte en una línea temporal de 350 mil años.",
+      "image_prompt": "linocut print, two-tone indigo and ochre ink on cream paper, bold carved lines, visible gouge marks, high contrast, vertical 9:16 composition, no text; escena: Punto único en el margen ibérico suroccidental; una columna de sedimento se convierte en una línea temporal de 350 mil años.",
+      "ambiente": "Viento atlántico y textura de papel",
+      "sfx": [
+        "Marca breve sobre el punto del mapa"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "style_id": "linograbado",
+      "dramatic_beat": "El lugar y el proxy dan escala y método al registro.",
+      "scene_function": "Ubicar el núcleo y explicar qué se reconstruye, sin inventar una ruta atmosférica exacta.",
+      "causal_bridge_from_previous": "La comparación necesita un registro físico; Site U1385 aporta sedimentos del margen ibérico.",
+      "question_state": "El estudio usa Ln(Zr+Ti)/K como indicador geoquímico de descarga de arcillas fluviales y reconstruye una ventana de 350 mil años.",
+      "reason_to_continue": "El siguiente tramo revela si la señal coincide con los episodios de baja salinidad.",
+      "new_information": "El punto del mapa es un sitio de perforación, no toda el área de precipitación.",
+      "capa": {
+        "tipo": "mapa",
+        "region": [],
+        "puntos": [
+          {
+            "id": "U1385",
+            "label": "IODP Site U1385 · margen ibérico suroccidental",
+            "lat": 37.571415,
+            "lon": -10.1260267,
+            "source_id": "SRC-002"
+          }
+        ],
+        "areas": [],
+        "titulo": "Núcleo sedimentario Site U1385",
+        "fuente": "SRC-001 identifica Site U1385; SRC-002 publica 37°34.285′N, 10°7.562′W. Conversión DMS a grados decimales.",
+        "precision_note": "El punto representa el sitio de perforación del margen ibérico, no el área completa de lluvia ni una trayectoria de humedad."
+      }
+    },
+    {
+      "id": "scene_006",
+      "arc": "cierre_historia",
+      "duration_seconds": 10,
+      "narration": "El giro: los episodios de baja salinidad y sapropeles coincidieron una y otra vez con más precipitación invernal en ese margen, puerta de entrada de humedad atlántica.",
+      "on_screen_text": "La señal llega del Atlántico",
+      "visual_description": "Las bandas de sedimento y salinidad se alinean en episodios; una trama de humedad entra desde el margen atlántico sin dibujar una corriente de agua.",
+      "image_prompt": "linocut print, two-tone indigo and ochre ink on cream paper, bold carved lines, visible gouge marks, high contrast, vertical 9:16 composition, no text; escena: Las bandas de sedimento y salinidad se alinean en episodios; una trama de humedad entra desde el margen atlántico sin dibujar una corriente de agua.",
+      "ambiente": "Viento atlántico sostenido",
+      "sfx": [
+        "Acento de tinta al coincidir las bandas"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "linograbado",
+      "dramatic_beat": "La coincidencia repetida aporta el giro: el Atlántico atmosférico participa en el balance de agua.",
+      "scene_function": "Exponer el resultado principal del artículo.",
+      "causal_bridge_from_previous": "El sitio y el proxy ya están definidos; ahora se revela la coincidencia con la salinidad mediterránea.",
+      "question_state": "Los episodios de baja salinidad y sapropeles coinciden con más precipitación invernal en el margen ibérico.",
+      "reason_to_continue": "Hace falta conectar la coincidencia con la ventilación profunda sin afirmar causalidad exclusiva.",
+      "new_information": "El resultado apoya una vía atmosférica adicional al aporte local y del Nilo."
+    },
+    {
+      "id": "scene_007",
+      "arc": "cierre_historia",
+      "duration_seconds": 9,
+      "narration": "La explicación propuesta conecta presiones más bajas sobre el Atlántico medio, transporte de humedad hacia el Mediterráneo y menor ventilación de sus aguas profundas.",
+      "on_screen_text": "Humedad, salinidad, ventilación",
+      "visual_description": "Tres etapas enlazadas: presión atmosférica baja, humedad sobre el margen ibérico y cambio en la ventilación profunda; sin flechas de corriente no publicadas.",
+      "image_prompt": "linocut print, two-tone indigo and ochre ink on cream paper, bold carved lines, visible gouge marks, high contrast, vertical 9:16 composition, no text; escena: Tres etapas enlazadas: presión atmosférica baja, humedad sobre el margen ibérico y cambio en la ventilación profunda; sin flechas de corriente no publicadas.",
+      "ambiente": "Viento más intenso, agua grave",
+      "sfx": [
+        "Tres marcas de linóleo"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "linograbado",
+      "dramatic_beat": "El mecanismo atmosférico explica cómo la señal de lluvia puede relacionarse con el balance de sal.",
+      "scene_function": "Conectar el resultado con el mecanismo y evitar una causalidad absoluta.",
+      "causal_bridge_from_previous": "La coincidencia de registros plantea una ruta; la presión atlántica proporciona el mecanismo propuesto.",
+      "question_state": "Los autores relacionan la precipitación con presiones invernales más bajas sobre el Atlántico medio.",
+      "reason_to_continue": "El último tramo debe declarar qué es reconstrucción y qué relación sigue siendo potencial.",
+      "new_information": "La posible relación con fases negativas de la oscilación del Atlántico Norte no está demostrada."
+    },
+    {
+      "id": "scene_008",
+      "arc": "reflexion_o_pregunta",
+      "duration_seconds": 9,
+      "narration": "No observaron el clima antiguo en directo: reconstruyeron señales en núcleos sedimentarios; el vínculo con la oscilación del Atlántico Norte es potencial. El Atlántico también dejó su huella en la sal del Mediterráneo. Esto fue Datos y ociosidades.",
+      "on_screen_text": "La huella quedó en el fondo",
+      "visual_description": "La capa oscura se convierte en una sección de núcleo sedimentario; el punto U1385 queda visible y el mapa se cierra sin una trayectoria atmosférica inventada.",
+      "image_prompt": "linocut print, two-tone indigo and ochre ink on cream paper, bold carved lines, visible gouge marks, high contrast, vertical 9:16 composition, no text; escena: La capa oscura se convierte en una sección de núcleo sedimentario; el punto U1385 queda visible y el mapa se cierra sin una trayectoria atmosférica inventada.",
+      "ambiente": "Oleaje y viento se apagan lentamente",
+      "sfx": [
+        "Golpe final de papel"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "style_id": "linograbado",
+      "dramatic_beat": "El cierre paga la capa oscura inicial y conserva el límite de la reconstrucción.",
+      "scene_function": "Cerrar la pregunta sin introducir un tema nuevo.",
+      "causal_bridge_from_previous": "La explicación del transporte atlántico se devuelve al registro que abrió la historia: los sedimentos.",
+      "question_state": "La evidencia es una reconstrucción de 350 mil años; la conexión con la oscilación es potencial.",
+      "reason_to_continue": "La narración concluye con la huella sedimentaria que hizo visible el cambio.",
+      "new_information": "El Atlántico puede cambiar la sal mediterránea y el fondo conserva esa señal."
+    }
+  ],
+  "cortinilla_fuentes": {
+    "duration_seconds": 6,
+    "titulo": "Fuentes",
+    "aviso": "Ficha editorial de Nature Geoscience consultada; DOI pendiente de resolución independiente. Coordenadas del sitio tomadas de IODP.",
+    "firma": "Datos y ociosidades",
+    "source_ids": [
+      "SRC-001",
+      "SRC-002"
+    ]
+  },
+  "audio": {
+    "music_asset": null,
+    "music_plan": "Cama marimba minimalista y sostenida, cálida, sin percusión épica; no existe archivo de audio en esta preproducción.",
+    "music_license": null,
+    "cama_musical": "marimba"
+  },
+  "export": {
+    "resolution": "1080x1920",
+    "fps": 30,
+    "render_status": "NOT_GENERATED"
+  },
+  "publicacion": {
+    "status": "PENDIENTE_DECISION_GROK",
+    "platforms": [
+      "YouTube Shorts",
+      "TikTok",
+      "Facebook Reels"
+    ],
+    "note": "No publicar ni programar desde preproducción textual."
+  },
+  "estado": "PENDIENTE_REVISION_GROK",
+  "production_mode": "storyboard_only",
+  "validation_notes": [
+    "Borrador textual; no contiene narrative_qa. La revisión en frío corresponde al auditor independiente.",
+    "La URL editorial oficial aparece con fecha, autoría, DOI y resumen completo en el índice de Nature; el acceso HTML directo devolvió HTTP 500. Crossref/resolvedor no completaron; el DOI no se declara validado independientemente.",
+    "El punto cartográfico es Site U1385 y se convierte desde coordenadas DMS publicadas por IODP; no representa toda la región de precipitación."
+  ],
+  "linea_tematica_provisional": "Ciencia de la Tierra / paleoclima, océanos y geología marina; sin crear una línea temática nueva.",
+  "approved_assets": [],
+  "risk_notes": [
+    "No afirmar que el Nilo o la lluvia mediterránea dejan de importar; el estudio identifica una vía atmosférica atlántica adicional.",
+    "No presentar la relación con fases negativas de la North Atlantic–Arctic Oscillation como causalidad demostrada; el artículo la describe como potencial.",
+    "No generalizar el proxy de un sitio del margen ibérico a cada punto del Mediterráneo; la comparación se limita a los registros estudiados.",
+    "No presentar el registro sedimentario como observación directa del clima antiguo."
+  ]
+}
