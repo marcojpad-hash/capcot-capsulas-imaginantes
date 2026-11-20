@@ -333,3 +333,61 @@ El conteo previo de **siete proyectos con sidecars** no se sostiene al cruzar lo
 No se encontraron registros de publicación, salidas ni entradas en main para los otros diez IDs exactos. Los nombres de variantes bloqueadas no se deben convertir en evidencia de publicación del proyecto actual.
 
 **Decisión:** los doce siguen fuera de una nueva promoción en esta auditoría. Los dos PASS narrativos no tienen ejecución del validador estructural oficial demostrada; los dos project_id con producción/publicación previa quedan además protegidos contra redispatch. El snapshot `data/horario_semana_2026-11-01_07.json` conserva `pedir_chatgpt` para todos, por lo que no refleja los dos procesamientos posteriores observados en main. No se modificó ese JSON ni ningún otro `data/*.json`.
+
+
+## Run 8 — auditoría de backlog, cruces de main y correcciones de fuente (20-nov-2026, corte 12:14 CDMX)
+
+Esta sección **corrige y amplía** el corte anterior. No se repitieron PASS narrativos cuando la narración permanecía igual. No se promovió ningún proyecto ni se disparó workflow.
+
+### Cambios ejecutados y releídos en feature
+
+1. **Marea cerebral** — commit `2795358cb3c22f8a92caa16772162e2673340a28`.
+   - `SRC-001.verification_status` ahora es `VERIFICADO_FUENTE_PRIMARIA`; `doi_verification_status` permanece `PENDIENTE_RESOLVEDOR`.
+   - **Corrección de la auditoría anterior:** no existe discrepancia factual entre la narración y la muestra analizada. El resumen del artículo informa 60–84 años; la sección Methods, después de exclusiones por movimiento, describe 41 participantes mayores de 60–83. La narración usa 60–83 y coincide con la muestra final analizada. El DOI sigue sin resolución independiente Crossref/doi.org; no se declara verificado.
+2. **Sapropeles** — commit `f52e57dddf3354eeb00e715ab3779ffc3d52a326`.
+   - `SRC-001.verification_status` cambió de `VERIFICADO_CROSSREF` a `PENDIENTE`, porque la nota de fuente registraba que Crossref y el resolvedor no completaron. La ficha editorial indexada muestra título, fecha y DOI, pero el HTML devolvió HTTP 500 y la resolución independiente continúa pendiente.
+3. **Microplásticos del Pantanal** — commit `dcc9873dddf10d91d1187078a6f1650029cb777c`.
+   - `SRC-001.verification_status` cambió de `VERIFICADO_RESOLVEDOR` a `VERIFICADO_FUENTE_PRIMARIA`. La página editorial de Nature se consultó; Crossref/doi.org no completaron. El DOI sigue pendiente. No se altera la narración.
+4. **Pareja de cuásares** — commit `f69fd05dca6fbd13973b3aecfe2663b8f75b4f3a`.
+   - El storyboard había cambiado después del QA FAIL anterior (commit de revisión de transiciones posterior a la lectura). Se hizo una nueva lectura en frío usando solo la narración concatenada.
+   - Resultado actualizado: `FAIL 82`; checks: pregunta central true, apertura true, progresión true, transiciones causales false, giro true, límite true, payoff true. Flags: `TRANSICION_002_003_NO_CAUSAL` y `TRANSICION_003_004_NO_CAUSAL`. Estado: `BORRADOR_EN_PROYECTOS_NO_APTO_PARA_PROMOCION`. No se reescribió narración ni claims.
+
+### Inventario de proyectos y backlog 14–20 nov
+
+| Proyecto | Slot local | QA narrativo vigente | Bloqueo/disposición |
+|---|---:|---:|---|
+| `2026-11-14_dato-microplasticos-pantanal` | 17:00 | PASS 88 | Fuente primaria identificada; DOI pendiente. Fecha pasada y sin validador oficial demostrado. NOT_DISPATCHABLE. |
+| `2026-11-15_dato-dia-diapausa-lestes-sponsa` | 23:30 | PASS 90 | Consta validación local previa con `--check-doi` exit 0. Fecha pasada; no promover retroactivamente. |
+| `2026-11-15_dato-quasar-pareja-cosmic-dawn` | 17:00 | FAIL 82 | Nueva lectura en frío tras cambio de narración; dos transiciones no causales. NOT_DISPATCHABLE. |
+| `2026-11-16_dato-polen-desenreda-nanotubos` | 17:00 | PASS 91 | DOI pendiente y validación estructural oficial pendiente. Fecha pasada. NOT_DISPATCHABLE. |
+| `2026-11-17_dato-suelo-dos-relojes` | 17:00 | PASS 89 | Colisión exacta con programación de Vikingos en main para 17-nov 17:00. NOT_DISPATCHABLE. |
+| `2026-11-18_dato-catorce-campos-hidrotermales` | 23:30 | FAIL 68 | Colisión exacta con Beta Pictoris programado en main para 18-nov 23:30. NOT_DISPATCHABLE. |
+| `2026-11-18_dato-kuroshio-puente-atmosferico` | 17:00 | PASS 90 | DOI/resolvedor pendiente. El CI verde del 19-nov fue solo smoke check, no ejecutó `validar_storyboard.py` ni `--check-doi`. NOT_DISPATCHABLE. |
+| `2026-11-19_dato-dia-luz-dos-manos-oro-poroso` | 23:30 | PASS 91 | Sin conflicto exacto en main; no consta verificación DOI completa ni validador estructural oficial. NOT_DISPATCHABLE. |
+| `2026-11-19_dato-estrella-dentro-de-estrella` | 17:00 | PASS 90 | La capa mapa usa coordenadas no válidas como latitud/longitud; DOI pendiente. NOT_DISPATCHABLE. |
+| `2026-11-20_dato-marea-cerebral-en-sueno` | 17:00 | PASS 92 | La edad 60–83 sí coincide con la muestra analítica final. DOI pendiente; 17:00 pertenece a ventana de prueba. NOT_DISPATCHABLE. |
+| `2026-11-20_dato-dia-atlantico-humedad-sapropeles` | 23:30 | PASS 91 | Fuente editorial indexada, HTML 500, DOI pendiente. 23:30 es slot fijo, pero falta validación DOI oficial. NOT_DISPATCHABLE. |
+
+Se ejecutó una **comprobación estática equivalente** de campos/escenas/voz/arco/duración/mapa/dato/assets para los storyboards 14–20: 14, 15 Lestes, 15 Quasar, 16, 17, 18 hidrotermales, 18 Kuroshio, 19 oro, 19 estrella, 20 Marea y 20 Sapropeles. La única anomalía estructural detectada en esa comprobación fue el mapa de estrella dentro de estrella. Esta comprobación no ejecutó el script oficial; no se presenta como sustituto de `scripts/validar_storyboard.py`. El smoke check de Kuroshio tampoco equivale al validador estructural ni verifica DOI.
+
+Los 12 IDs del lote 5–7 nov conservan los mismos SHA/contenidos desde la pasada independiente del 18-nov: dos PASS (88 y 94), diez FAIL. Sus `narrative_qa.reviewed_at` sigue en 18-nov; no se repitió lectura narrativa. Los dos IDs exactos con procesamiento en main continúan siendo hielo caliente y nubes pesan; no se amplía el conteo a variantes bloqueadas.
+
+### Cruces de main y producción preexistente
+
+- **17-nov, 17:00 — Vikingos cuernos:** `main/cola/entrada/2026-11-16_vikingos-cuernos/programacion.json` registra video_id `ThbHry-YC-w`, publishAt `2026-11-17T23:00:00Z` (17:00 CDMX), 81.2 s y QA audiovisual 21/21. Coincide exactamente con `2026-11-17_dato-suelo-dos-relojes`. Clasificación del storyboard feature: `CONFLICTO_DE_SLOT_ENTRE_RAMAS`; Vikingos: `PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR`. El MP4 no aparece en el árbol de main: `MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO`.
+- **18-nov, 23:30 — Beta Pictoris:** la programación de cola en main registra video_id `2a36r5QOvi4`, publishAt `2026-11-19T05:30:00Z`, 61.27 s y QA 21/21. Coincide exactamente con hidrotermales. La duración medida queda fuera del contrato 75–90 s. Además, el `programacion.json` de proyecto dice 13:30, mientras el de cola dice 23:30: inconsistencia interna en main. Clasificación: `PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR`, `MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO` y `CONFLICTO_DE_SLOT_ENTRE_RAMAS` para hidrotermales.
+- **20-nov, 13:45 — React proteínas/microbios:** main contiene programación a 13:45, sin video_id ni MP4 en el árbol; el storyboard tiene 106 palabras, 7 escenas, `export.filename`, no tiene narrative_qa y `fuentes.md` enlaza Phys.org como nota secundaria. El MP4 se declara pendiente de montaje. No es dispatchable; `MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO`. Main ya tiene otro registro a 13:30 dentro de la misma ventana activa 13:00–14:30: posible sobrecarga de ventana, no conflicto de hora exacta. No se canceló ni alteró.
+- **16-nov — HERA/Didymos:** main programa 23:30 con video_id y duración 85.93 s; los assets sí aparecen en el árbol. No colisiona con polen 17:00.
+- **21-nov, 19:00 — Robot orbital:** main programa video_id `ZG4iQgmWrLI`, publishAt `2026-11-22T01:00:00Z`, 87.57 s, QA audiovisual 21/21 y assets visibles en el árbol. Es procesamiento preexistente: no redispatchar. En feature existe un marker `pending` en `handoffs/grok_inbox`, pero `cola/estado/2026-11-09_dato-robot-ensambla-orbita.json` devuelve 404: la recepción Grok no está confirmada.
+
+### Cola, handoff y datos
+
+- En feature, `cola/entrada/` solo contiene dos carpetas anidadas: robot orbital (con storyboard y paquete) y una carpeta de ocho PNG atribuida por nombre a ratas topo. Esta última no tiene storyboard ni carpeta de proyecto; es `ORPHAN_ASSETS_NO_STORYBOARD`, no una entrada dispatchable. No se movió porque no existe storyboard que preservar y no se pudo vincular con certeza a una publicación.
+- El ID `knAElNo4raI` aparece en `data/endscreens_rotacion.json` con 285 vistas y mapeo a `wxnhEdlJYwU`; el archivo no vincula ese ID con ratas topo. Se retira la atribución anterior no sustentada: no hay evidencia suficiente para asignarlo a ese tema.
+- No hay archivos `cola/estado/*.json` en el árbol feature; por tanto, para los proyectos revisados aplica `RECEPCION_GROK_NO_CONFIRMADA`. `salidas/` está vacío en feature y no existe `historial_youtube`.
+- `capcot-grok-dispatch.yml` selecciona JSON planos de primer nivel (`cola/entrada/*.json` / `find -maxdepth 1`); las carpetas anidadas observadas no son dispatchables. El marker de inbox no equivale a recepción. No se disparó workflow ni se envió payload.
+- Divergencia de horario: `feature/data/horarios.json` conserva versión del 09-nov; `main/data/horarios.json` está actualizado al 16-nov. En main la tarde 16:30–18:00 es ventana de prueba, el mediodía 13:00–14:30 es activo y 23:30 es slot fijo. No se modificó ningún `data/*.json`.
+- `data/rotacion.json`, `temas_del_dia.json`, `estilos_usados.json`, `vistas_historico.json` y `publicaciones.json` de feature conservan cortes de octubre; la rotación necesita contrastarse con main y el registro editorial. `registro_editorial.py` sí recorre storyboards recursivamente y separa los markers de handoff. No se ejecutó su suite en este run.
+- Actions: el smoke check de Kuroshio del 19-nov terminó verde, pero no ejecutó el validador real. En main, Semgrep terminó FAIL con 32 findings y no dejó artefacto SARIF descargable; Gitleaks terminó SUCCESS. No se modificó main.
+
+**Resultado:** ningún storyboard 14–20 es promovido. Los bloqueos restantes son verificables: dos colisiones exactas de slot, varios DOI/resolvedores pendientes, un QA FAIL actualizado, una capa de mapa inválida, ausencia de ejecución del validador oficial y recepción Grok no confirmada. No se generaron medios, no se consumieron créditos y no se alteraron publicaciones, programación ni estados Grok.
