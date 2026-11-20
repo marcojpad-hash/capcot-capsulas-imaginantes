@@ -1,6 +1,10 @@
 # Estado de ejecución — CAPCOT externa 2026-10-26
 
-**Estado:** `PAQUETE_PREPARADO_NO_RENDERIZADO_NO_PUBLICADO`. No hay MP4, voz, subtítulos temporizados ni QA oficial.
+**Estado:** `BORRADOR_EN_PROYECTOS_NO_APTO_PARA_PROMOCION`.
+
+**Clasificación de producción:** `PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR`. El registro de publicación y la carpeta `salidas/` ya existen; no crear otra entrada ni cancelar, borrar o reprogramar el registro externo.
+
+**Recepción Grok:** `RECEPCION_GROK_NO_CONFIRMADA`. No existe `cola/estado/2026-10-26_baffin-bay-ice-shelf.json`.
 
 ## Procedimiento leído
 
@@ -28,3 +32,12 @@ Tema: plataforma de hielo de la bahía de Baffin durante la última glaciación.
 ## Integridad y publicación
 
 No se publicaron videos. No se modificaron `data/temas_del_dia.json`, `data/rotacion.json`, `data/publicaciones.json` ni `data/cola.json`. No se tocó motor U6. Solo se preparan evidencias textuales para GitHub; las imágenes permanecen fuera del repositorio. El QA oficial sigue **PENDIENTE**, no aprobado.
+
+
+## Corrección de auditoría — 2026-11-20
+
+- La afirmación anterior `NO_RENDERIZADO_NO_PUBLICADO` queda obsoleta: `salidas/2026-10-26_baffin-bay-ice-shelf/publicacion.json` registra el video de YouTube `HDQr9OGpFJM`, privacidad `private`, cargado el 2026-10-31T17:01:45Z y con `publishAt=2026-11-01T23:00:00Z` (17:00 CDMX). No se afirma que haya llegado a público.
+- `salidas/.../qa.json` es QA audiovisual, no narrative_qa: 21 checks; duración medida 91.93 s. Está fuera del contrato editorial vigente de 75–90 s.
+- El storyboard en `proyectos/` no tiene `narrative_qa` independiente ni consta una ejecución estructural válida. El estado de preproducción no es apto para promoción.
+- El árbol GitHub no contiene `capsula.mp4` ni los medios referenciados: `MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO`.
+- No se creó ni modificó el estado Grok; la recepción sigue sin confirmación. No se canceló ni eliminó ningún ID.
