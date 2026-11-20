@@ -196,3 +196,12 @@ Esta nota no cambia el storyboard ni repite su QA narrativo; corrige la interpre
 - **Rotación:** estilo `pixel_art` no usado en los proyectos recientes; estructura `historia` (no repite la última `pregunta`); cama `sintetico:arpegio` (no coincide con las dos últimas camas registradas). No se modificó ningún `data/*.json`.
 - **Borrador creado:** `proyectos/2026-11-21_pulsar-gamma-reticulo/storyboard.json`, commit `404b9c0ad24d41604b20f9ab62176dfc93d1c1ec`. Lectura de vuelta: 8 escenas, 209 palabras, 78 s de escenas + 6 s de cortinilla = 84 s; gancho de 4 palabras; voz es-MX-JorgeNeural +7% / −2Hz; fuente en todas las escenas; mapa y dato; ambiente y SFX por escena.
 - **Estado deliberado:** solo preproducción textual. No contiene `narrative_qa`; queda para auditoría independiente. `approved_assets=[]`, `export.render_status=NOT_GENERATED`, publicación `PENDIENTE_DECISION_GROK`. No se creó entrada de cola, estado Grok ni medio.
+
+## Addendum de ejecución — 20 de noviembre de 2026, 16:00 CDMX
+
+- El slot fijo del dato del día **21-nov, 23:30 CDMX** estaba libre: el inventario de esta rama solo mostraba el proyecto de púlsar a las 17:00; en `main`, las publicaciones del 21-nov visibles son 13:30 y 19:00, sin programación a 23:30 (`publishAt=2026-11-22T05:30:00Z` no aparece).
+- Se creó y releyó `proyectos/2026-11-21_fentale-metano-sin-erupcion/storyboard.json` para 23:30. Commit: `096612f3809fb16b47b66489fae497f669c9c688`. Usa el estilo de catálogo `pulp_comic_1940s`, no repetido en los storyboards revisados del 5 al 21 de noviembre.
+- Preflight estático: 8 escenas, 170 palabras, 78 s de escenas + 6 s de cortinilla = 84 s; gancho de 3 palabras; voz es-MX-JorgeNeural +7% / -2Hz; mapa con coordenadas GVP 8.985°N, 39.906°E y capa de datos. No se ejecutó el validador oficial.
+- La página editorial primaria de Nature Geoscience está indexada y muestra el artículo y el DOI `10.1038/s41561-026-02137-4`; el acceso HTML directo y las consultas Crossref/doi.org no completaron. `doi_verification_status=PENDIENTE_RESOLVEDOR`. El borrador no es promocionable hasta completar esa verificación y el validador oficial.
+- El storyboard permanece solo en `proyectos/`: no se creó `narrative_qa`, estado Grok, entrada de cola ni medios; `approved_assets=[]`, `render_status=NOT_GENERATED`, publicación pendiente.
+- El proyecto de púlsar de 21-nov a las 17:00 sigue ocupando ese slot y tiene QA narrativo `FAIL 83`; no se reescribió su narración durante esta ejecución.
