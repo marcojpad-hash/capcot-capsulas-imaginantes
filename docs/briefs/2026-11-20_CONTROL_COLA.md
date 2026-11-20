@@ -105,3 +105,52 @@ No se declara que los medios referenciados estén disponibles fuera de sus ubica
 2. Resolver el mapa del storyboard de la estrella usando geometría válida respaldada por fuente, y resolver la repetición de estilo; no inventar coordenadas.
 3. Reconciliar el dispatch con el formato real de cola en una tarea autorizada posterior. La corrección requeriría cambiar workflow y/o normalizar entradas; esta auditoría no lo hace.
 4. Continuar el inventario interdiario y el backlog pendiente; no tratar el run `sin trabajo en cola` de main como procesamiento de feature.
+
+
+## Addendum — 2026-11-20, verificación de rutas heredadas y producción preexistente
+
+Este addendum amplía el control anterior; no sustituye el corte inicial ni modifica `data/*.json`, `main`, workflows, IDs de plataforma o estados Grok.
+
+### 1. Clavo de cocina — QA y salida de cola
+
+- Se hizo lectura en frío independiente solo de la narración concatenada. Resultado: `FAIL 82/100`; seis checks true y `limite_evidencia_explicito=false`; flag `CIFRAS_SIN_UNIDAD_Y_CONDICIONES_DE_ENSAYO_INSUFICIENTES`. Los porcentajes de concentración MIC/MBC no indican con precisión la base/unidad ni las condiciones asociadas a las medias.
+- La carpeta heredada `cola/entrada/2026-11-07_dato-clavo-te-cocina/` se trasladó a `cola/bloqueados/2026-11-07_dato-clavo-te-cocina/`: storyboard con QA, fuentes y estado se copiaron; las tres copias se leyeron de vuelta; después se retiraron los tres archivos de la ruta de entrada. La ruta de entrada ya no contiene el paquete.
+- Commits: `0d41041f7f4e14c39bf4969b561383b9cf7bbed1` (QA/storyboard), `86984b19400cc2d5193967821e2841525b071300` (fuentes), `fe92ee585c4e362927e09db7f338a71188c594d8` (estado), `8a4aa0298587ba56f840f557ab6f755aca335ff0`, `4fb106c8e8d6ec9c520ce45ac0c3c2c5a4d8c3f7` y `238e0b7469c07c454172b1222994c6a1cbd9b1c8` (retiro de origen tras verificación).
+- La revisión de `data/horario_2026-11-08.json` y `data/horario_2026-11-09.json` reveló procesamiento/publicación previa: YouTube `EwZ3dHalUn0` y TikTok `7705655549571894529` aparecen publicados; Facebook aparece programado sin confirmación final. `data/publicaciones.json` no contiene una entrada correspondiente. No hay `salidas/<id>/` ni MP4 en los árboles GitHub consultados: `MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO`.
+- `cola/estado/2026-11-07_dato-clavo-te-cocina.json` devuelve 404: `RECEPCION_GROK_NO_CONFIRMADA`. La publicación histórica no es acuse Grok. Clasificación: `PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR`; no reprogramar ni redispatchar.
+- `ESTADO_EJECUCION.md` en bloqueados fue reconciliado con esta evidencia (commit `4f3439cf43ed0919a86575172a642aa9d90cf4ca`).
+
+### 2. Robot ensambla órbita — producción en main
+
+- El storyboard de `feature` está en una carpeta anidada de cola, no en el JSON de primer nivel que selecciona Actions. Se verificó en `main` una producción posterior del mismo project_id: `capsula.mp4`, portada, nueve frames, subtítulos y QA audiovisual.
+- `main/cola/entrada/2026-11-09_dato-robot-ensambla-orbita/qa.json`: 21/21 checks true; duración 87.57 s, dentro del contrato 75–90 s.
+- `main/.../programacion.json`: YouTube ID `ZG4iQgmWrLI`, programado para 2026-11-21 19:00 CDMX; TikTok y Facebook figuran programados sin IDs de publicación.
+- `cola/estado/2026-11-09_dato-robot-ensambla-orbita.json` devuelve 404: `RECEPCION_GROK_NO_CONFIRMADA`. La producción en main no sustituye el acuse.
+- Se corrigió el estado documental de la copia `feature` para marcar `PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR`, sin tocar `main` ni el paquete publicado (commit `a78333cb8c7ee6124dab968fb04eeaf5f14a5894`).
+
+### 3. Ratas topo — producción publicada y versión distinta
+
+- En `main` existe paquete de producción y `salidas/2026-11-11_dato-ratas-topo-damaraland/`. La programación registra YouTube `WcTviUWqbes`, TikTok `7707137000121404680` y Facebook `122109293493518983`; el estado de salida indica `publicado_yt_tt_fb`.
+- Hay discrepancia temporal: `programacion.json` fija 12-nov 07:00 CDMX, mientras `publicacion.json` registra YouTube `publishedAt=2026-11-12T04:22:18Z` (11-nov 22:22 CDMX). No se infiere la hora efectiva sin reconciliar el historial de plataforma.
+- QA audiovisual: 21/21; 87.90 s. El MP4 está referenciado pero no aparece en el árbol GitHub: `MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO`.
+- El storyboard de `feature/cola/bloqueados/` tiene una narración distinta a la versión de producción en `main`. Se registró PASS 91/100 únicamente para el borrador bloqueado de `feature` (commit `ae75fcddb72cae0cb12630f02fe1d4318728d819`); ese QA no se transfiere a la versión de main.
+- `cola/estado/2026-11-11_dato-ratas-topo-damaraland.json` devuelve 404: `RECEPCION_GROK_NO_CONFIRMADA`. La carpeta de entrada en `feature` contiene frames, no un storyboard seleccionable. Se añadió `ESTADO_EJECUCION.md` a bloqueados con la clasificación `PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR` (commit `a160f67a90df799c916065b3b4e9633847119c6e`).
+
+### 4. Beta Pictoris — conflicto exacto de slot con hidrotermales
+
+- `main/cola/entrada/2026-11-18_hielo-sucio-beta-pictoris/programacion.json` contiene video_id `2a36r5QOvi4`, `publishAt=2026-11-19T05:30:00Z` (18-nov 23:30 CDMX) y privacidad `private`. Ocupa el mismo fecha_objetivo + slot que el borrador hidrotermal del 18-nov.
+- El QA audiovisual reporta 21/21 checks, pero mide 61.27 s; la comprobación del paquete solo exige 60–120 s y no satisface el contrato editorial 75–90 s.
+- El MP4 se referencia en almacenamiento remoto `/workspace/guardia_1118/hielo.mp4`; no aparece en el árbol GitHub: `MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO`.
+- `cola/estado/2026-11-18_hielo-sucio-beta-pictoris.json` devuelve 404. Clasificación: `CONFLICTO_DE_SLOT_ENTRE_RAMAS` y `PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR`. No cancelar, reprogramar ni duplicar.
+
+### 5. Lote 5–7 nov y backlog de 18 nov
+
+- Se releyeron los doce storyboard JSON actuales: dos conservan narrative QA PASS (88 y 94), diez FAIL (72–83). Ninguno tiene copia en `cola/entrada/`; todos permanecen en `proyectos/`. Los dos PASS siguen fallando la estructura por campos narrativos ausentes; siete proyectos tienen sidecars de plataforma y no deben redispatcharse. No se repitió ningún PASS válido ni se modificó `data/*.json`.
+- Kuroshio sigue PASS 90 y CI estructural exitoso, pero DOI resolver/Crossref pendiente; su estado ya dice no apto para promoción.
+- Catorce campos hidrotermales sigue FAIL 68 y fuera de cola; su estado ya dice no apto para promoción y el slot 23:30 está ocupado por Beta Pictoris en main.
+
+### 6. Dispatch y automatizaciones
+
+- El workflow actual `capcot-grok-dispatch.yml` selecciona exclusivamente `cola/entrada/*.json` a profundidad 1. El procesador `procesar_cola.py` también acepta carpetas anidadas y `--fecha` histórico. Esa diferencia sigue siendo un riesgo de selección manual, no una razón para ampliar el dispatch a carpetas heredadas.
+- El último run de dispatch encontrado es #147, 1-nov-2026, failure. Sus logs muestran la versión anterior del workflow, que exigía `GROK_WEBHOOK_URL` y `GROK_WEBHOOK_TOKEN`; el error literal fue `Falta configurar GROK_WEBHOOK_URL.` El workflow actual hace webhook opcional y escribe un marker `handoffs/grok_inbox/` con estado pending, pero no hay run posterior que verifique ese nuevo camino. Un marker pending no es recepción Grok.
+- Se reactivaron las automatizaciones existentes del investigador (08:00) y auditor (15:00), sin cambiar sus prompts ni horarios. La lectura de vuelta confirmó ambas habilitadas; el operador general sigue habilitado.
