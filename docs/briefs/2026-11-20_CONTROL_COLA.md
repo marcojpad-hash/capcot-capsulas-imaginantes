@@ -254,8 +254,8 @@ Commits de QA y estado de fuentes:
 
 ### 2. DOI y fidelidad de afirmaciones
 
-- **Marea cerebral:** DOI `10.1038/s43587-026-01270-4` resuelve en Crossref y corresponde al artículo primario de Nature Aging. La página MIT asociada y las páginas de coordenadas de BU/MIT resuelven. **Bloqueo factual detectado:** el artículo/Crossref describe el grupo mayor como 60–84 años; el storyboard dice 60–83 tanto en narración como en la capa de dato. No se corrigió la narración ni el claim durante la auditoría. El redactor debe reconciliar ese extremo con el paper antes de cualquier handoff.
-- **Sapropeles:** DOI `10.1038/s41561-026-02141-8` resuelve en Crossref y corresponde al artículo primario de Nature Geoscience. El URL oficial de IODP para Site U1385 resuelve y confirma las coordenadas utilizadas. Los estados de fuentes quedaron actualizados a `VERIFICADO_CROSSREF` / `VERIFICADO_RESOLVEDOR` según corresponda.
+- **Marea cerebral:** DOI `10.1038/s43587-026-01270-4` aparece en la página y PDF editorial de Nature Aging. La consulta directa Crossref/doi.org no se completó; `doi_verification_status` permanece `PENDIENTE_RESOLVEDOR`. El abstract resume el grupo mayor como 60–84; Methods, después de excluir participantes por movimiento, especifica que los 41 participantes mayores restantes tenían 60–83 años. El storyboard usa 60–83 y coincide con la muestra analítica final; queda retirada la discrepancia factual señalada en el primer corte.
+- **Sapropeles:** la página editorial indexada de Nature Geoscience muestra el título, DOI `10.1038/s41561-026-02141-8`, fecha de publicación y versión de registro del 20-nov-2026. La consulta directa Crossref/doi.org no se completó; `verification_status` permanece `PENDIENTE` y `doi_verification_status` `PENDIENTE_RESOLVEDOR`. La página oficial de IODP para Site U1385 sí se consultó y respalda las coordenadas usadas.
 
 Fuentes de verificación:
 - https://api.crossref.org/works/10.1038/s43587-026-01270-4
@@ -269,17 +269,18 @@ Fuentes de verificación:
 
 Se compararon ambos JSON con las reglas visibles de `scripts/validar_storyboard.py`: campos raíz, voz, estilo/prompt_base, 7–9 escenas, 170–235 palabras, arco, puentes por escena, source_ids, mapa con coordenadas, capa de dato, cortinilla de 6 s, 75–90 s, cierre hablado, assets vacíos, export NOT_GENERATED y estado de publicación pendiente. La reimplementación estática de esas reglas no encontró errores en los campos inspeccionados.
 
-**Límite:** no se ejecutó el archivo oficial `scripts/validar_storyboard.py` ni se disparó GitHub Actions. La revisión estática no se presenta como ejecución del validador. La verificación DOI sí se hizo directamente contra Crossref, de forma independiente.
+**Límite:** no se ejecutó el archivo oficial `scripts/validar_storyboard.py` ni se disparó GitHub Actions. La revisión estructural fue estática. Tampoco se completó una consulta directa Crossref/doi.org para ninguno de los dos DOI; se consultaron las páginas editoriales disponibles y el sitio oficial de IODP. No se declara validación Crossref.
 
 ### 4. Slots, cola y recepción
 
 - 07:00: `main/data/publicaciones.json` registra flamenco, YouTube `msWV2AXr6Uk`, `publishAt=2026-11-20T13:00:00Z`.
 - 13:30: `main/data/publicaciones.json` registra mxenes, YouTube `WTlFSZV9HYg`, `publishAt=2026-11-20T19:30:00Z`, con TikTok y Facebook también programados.
+- 13:45: en `main`, `2026-11-20_react-proteinas-microbios` tiene storyboard en `proyectos/` y `cola/entrada/` y `programacion.json` con `publish_at=2026-11-20T19:45:00Z` (13:45 CDMX), estado `programado_para_private_hasta_hora`. Es un procesamiento/programación preexistente: `PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR`. El storyboard declara `export.filename=capsula.mp4`, pero `capsula.mp4` no existe en `cola/entrada/<id>/`, `proyectos/<id>/` ni `salidas/<id>/`: `MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO`. No hay `cola/estado/<id>.json`; la programación no se eleva a recepción ni publicación confirmada.
 - 17:00 y 23:30: los dos storyboards de feature ya ocupan esos slots; no se crea una segunda propuesta.
 
-Para los dos project_id actuales, las rutas exactas de `cola/estado/`, `cola/entrada/`, `cola/bloqueados/` y `salidas/` devolvieron 404 en feature; también se comprobó ausencia de los mismos project_id en main. El buzón `handoffs/grok_inbox/` solo contiene el marker histórico del 09-nov y README.
+Para los dos project_id actuales, las rutas exactas de `cola/estado/`, `cola/entrada/`, `cola/bloqueados/` y `salidas/` devolvieron 404 tanto en feature como en main. Sus markers individuales en `handoffs/grok_inbox/` también devuelven 404. No se atribuye recepción Grok.
 
-Resultado para ambos: `RECEPCION_GROK_NO_CONFIRMADA`; `NOT_DISPATCHABLE` porque siguen en `proyectos/` y el workflow solo selecciona JSON planos de primer nivel en `cola/entrada/*.json`. No se promovieron. El PASS narrativo de sapropeles no basta para promover sin ejecución del validador oficial; el storyboard de marea además conserva el bloqueo factual de edad.
+Resultado para ambos: `RECEPCION_GROK_NO_CONFIRMADA`; `NOT_DISPATCHABLE` porque siguen en `proyectos/` y el workflow solo selecciona JSON planos de primer nivel en `cola/entrada/*.json`. No se promovieron. El QA narrativo PASS no basta para promoción sin validador estructural oficial y DOI verificado. La edad 60–83 de Marea sí coincide con la muestra analítica final del paper.
 
 ### 5. Automatizaciones observadas
 
@@ -391,3 +392,9 @@ Los 12 IDs del lote 5–7 nov conservan los mismos SHA/contenidos desde la pasad
 - Actions: el smoke check de Kuroshio del 19-nov terminó verde, pero no ejecutó el validador real. En main, Semgrep terminó FAIL con 32 findings y no dejó artefacto SARIF descargable; Gitleaks terminó SUCCESS. No se modificó main.
 
 **Resultado:** ningún storyboard 14–20 es promovido. Los bloqueos restantes son verificables: dos colisiones exactas de slot, varios DOI/resolvedores pendientes, un QA FAIL actualizado, una capa de mapa inválida, ausencia de ejecución del validador oficial y recepción Grok no confirmada. No se generaron medios, no se consumieron créditos y no se alteraron publicaciones, programación ni estados Grok.
+
+
+### Comprobación adicional de slots y capacidad — run operador 8
+
+- `feature/data/horarios.json` (actualizado 09-nov) habilita 06:30–07:30 y 16:30–18:00, más 23:30 fijo. `main/data/horarios.json` (16-nov) habilita 06:30–07:30 y 13:00–14:30, más 23:30 fijo. `scripts/rotacion.py` aún conserva cinco ventanas (07:00, 13:30, 17:00, 19:00, 23:30). La discrepancia entre políticas por rama y ventanas de código permanece; no se modificaron `data/*.json` ni el código de rotación. 17:00 es válido dentro de la ventana activa de feature; 19:00 no se reutiliza.
+- La reserva main de REACT a las 13:45 está dentro de la ventana mediodía de main, pero no coincide exactamente con los slots 17:00 o 23:30 de feature. Considerando 07:00, 13:30, 13:45, 17:00 y 23:30, el inventario visible ya alcanza cinco piezas/reservas para la fecha; no se crea un sexto paquete.
