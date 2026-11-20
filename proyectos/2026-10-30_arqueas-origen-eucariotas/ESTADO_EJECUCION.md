@@ -31,3 +31,13 @@ salidas/_ops/2026-10-28_HANDOFF_TOTAL_grok_principal.md asigna temporalmente la 
 - Capas: mapa con fuente oficial; gráfico 100 % vs 142 % con DOI; dato de dos cepas.
 - Los subtítulos no tienen timecodes; deben sincronizarse con WordBoundary del TTS oficial.
 - No se modificaron temas, rotación, publicaciones, cola, horarios ni motor U6. No se publicó nada.
+
+
+## Corrección de auditoría — 2026-11-20
+
+**Estado de preproducción:** `BORRADOR_EN_PROYECTOS_NO_APTO_PARA_PROMOCION`. **Clasificación de producción:** `PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR`. **Recepción Grok:** `RECEPCION_GROK_NO_CONFIRMADA`. **Medios:** `MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO`.
+
+- La afirmación anterior de que no había publicación queda contradicha por `salidas/2026-10-30_arqueas-origen-eucariotas/publicacion.json`: YouTube ID `bICGA3kIBcU`, privacidad `private`, `publishAt=2026-11-02T01:00:00Z` (1-nov, 19:00 CDMX). No se afirma que haya llegado a público.
+- El mismo registro conserva `historial_youtube` con `i2l4BkMvHp0` y `9XflXdWDM0A` todavía descritos como programados. Riesgo de duplicado; no borrar ni cancelar.
+- `salidas/.../qa.json` es QA audiovisual (21/21, 81.80 s), no narrative_qa. El storyboard no contiene narrative_qa independiente.
+- `SHA256SUMS.json` declara `media_committed_to_github=false`; no hay MP4/frames verificables en el árbol. No reabrir ni redispatchar el proyecto.
