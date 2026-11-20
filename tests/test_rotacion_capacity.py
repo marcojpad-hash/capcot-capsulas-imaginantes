@@ -53,5 +53,29 @@ class RotacionCapacityTests(unittest.TestCase):
         self.assertEqual(len({x["ventana"] for x in used}), 5)
 
 
+    def test_blocked_storyboards_do_not_consume_capacity_but_remain_rotation_evidence(self):
+        blocked = [
+            {
+                "project_id": f"blocked{i}",
+                "origen": "externa",
+                "tema": "tema bloqueado",
+                "estructura": "historia",
+                "estilo": "linograbado",
+                "cama": "pizzicato",
+                "_source": "bloqueado",
+            }
+            for i in range(5)
+        ]
+        with patch.object(rotacion, "hecha_hoy", return_value=blocked):
+            remaining = rotacion.exigir_cupo("2026-11-20", "externa")
+            with patch.object(rotacion, "temas_del_dia", return_value=[]):
+                evitar = rotacion.evitar_hoy("2026-11-20")
+        self.assertEqual(remaining, [])
+        self.assertIn("linograbado", evitar["estilo"])
+        self.assertIn("pizzicato", evitar["cama"])
+        self.assertIn("tema bloqueado", evitar["tema"])
+
+
+
 if __name__ == "__main__":
     unittest.main()
