@@ -1,0 +1,367 @@
+{
+  "_schema": "CAPCOT_STORYBOARD_TEXT_V2",
+  "project_id": "2026-11-21_pulsar-gamma-reticulo",
+  "serie": "Datos y ociosidades",
+  "title": "Un púlsar hallado entre fotones escasos",
+  "titulo": "Cien millones de giros",
+  "language": "es-MX",
+  "aspect_ratio": "9:16",
+  "fecha_objetivo": "2026-11-21",
+  "slot_local": "17:00",
+  "slot_cesta": "intermedio_1",
+  "origen": "externa",
+  "target_duration_seconds": 84,
+  "estructura": "historia",
+  "audience": "Público general interesado en astronomía, espacio y computación",
+  "occasion": "Cápsula intermedia de tarde; no corresponde al slot de dato del día de las 23:30",
+  "resumen": "Un equipo encontró PSR J1622−7204 en quince años de datos Fermi-LAT usando una búsqueda basada en vectores cortos de una retícula de alta dimensión.",
+  "narrative_contract": {
+    "central_question": "¿Cómo se detecta un púlsar gamma cuando, en promedio, apenas se observa un fotón por cada cien millones de rotaciones?",
+    "promise": "Entender cómo una búsqueda geométrica puede recuperar una periodicidad a partir de llegadas de fotones muy escasas.",
+    "stakes": "Muchos candidatos gamma siguen sin identificación porque sus pulsaciones son difíciles de distinguir en datos dispersos.",
+    "scientific_turn": "El equipo transformó la búsqueda de señales periódicas en un problema de vectores cortos sobre una retícula de alta dimensión.",
+    "evidence_limit": "El artículo demuestra un descubrimiento concreto de un púlsar aislado a 261 Hz con quince años de Fermi-LAT y unas diez horas de CPU; no demuestra que el método encuentre todos los púlsares ni que la extensión a sistemas binarios ya esté resuelta.",
+    "payoff": "La geometría permitió extraer un ritmo de fotones escasos; el resultado abre una vía de búsqueda, no una garantía universal."
+  },
+  "trend_source": {
+    "termino": "Púlsar gamma PSR J1622−7204 descubierto con un método basado en retículas",
+    "fecha_publicacion": "2026-11-19",
+    "url": "https://journals.aps.org/prl/abstract/10.1103/vlt2-xzgk"
+  },
+  "editorial_status": "PROPUESTA_PENDIENTE_DE_GROK",
+  "arco": {
+    "hook_medias_res": "Cien millones de giros. Un fotón.",
+    "desarrollo": "Quince años de Fermi-LAT, una fuente aislada y una retícula matemática que convierte tiempos dispersos en vectores comparables.",
+    "cierre_historia": "El método encuentra un púlsar, pero el artículo no promete que todos puedan descubrirse así.",
+    "reflexion_o_pregunta": "¿Qué otros ritmos siguen escondidos en los datos?"
+  },
+  "estilo_id": "pixel_art",
+  "estilo_visual": "Pixel art",
+  "visual_identity": {
+    "style_id": "pixel_art",
+    "style_name": "Pixel art",
+    "prompt_base": "16-bit pixel art scene, limited retro palette, crisp pixels, side view video game style, dithering, vertical 9:16, no text",
+    "palette": "azul noche, cian, magenta y blanco; contraste alto",
+    "lighting": "brillos puntuales de fotones sobre fondo oscuro; sin resplandor fotográfico",
+    "texture": "píxel nítido de 16 bits con dithering controlado",
+    "composition": "un foco principal por escena, lectura vertical 9:16, continuidad de escala y retícula",
+    "negative_prompt": "photorealistic, 3D render, text, labels, logos, watermark, invented constellation lines, extra planets, inaccurate telescope hardware",
+    "reference_assets": [],
+    "seed": null,
+    "seed_policy": "Mantener la misma cuadrícula, paleta y densidad de píxel; variar solo la composición y el movimiento sugerido."
+  },
+  "typography_identity": {
+    "font_family": "DejaVu Sans",
+    "font_weight": "700 para gancho; 400 para subtítulos",
+    "title_style": "Máximo seis palabras; presente desde frame 0 en postproducción",
+    "subtitle_style": "Bloques de máximo tres palabras; zona segura inferior",
+    "hierarchy": "Gancho > dato/etiqueta > subtítulos",
+    "animation": "Un movimiento por plano; tipografía en postproducción"
+  },
+  "voice": {
+    "engine": "edge-tts",
+    "voice_id": "es-MX-JorgeNeural",
+    "language": "es-MX",
+    "rate": "+7%",
+    "pitch": "-2Hz",
+    "pad_seconds": 0.3,
+    "modo_pausas": "continuo"
+  },
+  "sources": [
+    {
+      "id": "SRC-001",
+      "cita_corta": "Pook-Kolb, D. et al. (2026). “Gamma-Ray Pulsar Discovery Using a Lattice-Based Method”. Physical Review Letters 137, 211201.",
+      "url": "https://journals.aps.org/prl/abstract/10.1103/vlt2-xzgk",
+      "doi": "10.1103/vlt2-xzgk",
+      "accessed": "2026-11-20",
+      "publication_date": "2026-11-19",
+      "supports": [
+        "Aproximadamente un fotón gamma observado por cada 10^8 rotaciones de un púlsar.",
+        "Descubrimiento de PSR J1622−7204, aislado, con frecuencia de giro de 261 Hz.",
+        "Uso de quince años de datos Fermi-LAT y unas diez horas de CPU.",
+        "Búsqueda semicoherente previa fallida después de aproximadamente 600 CPU años.",
+        "Método basado en vectores cortos en retículas de alta dimensión.",
+        "Coordenadas nominales ICRS de la localización 4FGL en Table I, p. 3."
+      ],
+      "verification_status": "VERIFICADO_RESOLVEDOR",
+      "verification_details": "La página editorial APS muestra el DOI y el enlace DOI de la página redirige a la misma página editorial. El acceso directo al REST de Crossref no estuvo disponible en esta sesión; el chequeo oficial --check-doi de scripts/validar_storyboard.py sigue pendiente."
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_001",
+      "arc": "hook_medias_res",
+      "duration_seconds": 9,
+      "narration": "Cien millones de giros. Un fotón. En un púlsar gamma, suele llegar apenas un fotón por cada cien millones de rotaciones. Y este equipo encontró uno entre esos huecos.",
+      "on_screen_text": "Cien millones",
+      "visual_description": "A single gamma-ray photon crosses a dark field; a tiny neutron star rotates through a long sequence of empty beats, then flashes once.",
+      "image_prompt": "16-bit pixel art scene, limited retro palette, crisp pixels, side view video game style, dithering, vertical 9:16, no text, one isolated photon crossing a dark pixel field toward a tiny rotating neutron star, long empty rhythm marks, one bright flash, deep navy and cyan palette",
+      "ambiente": "silencio",
+      "sfx": [
+        "un pulso breve de fotón",
+        "clic grave al encenderse la estrella"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "pixel_art",
+      "dramatic_beat": "La señal aparece casi perdida entre enormes intervalos vacíos.",
+      "scene_function": "Plantear la anomalía que vuelve difícil detectar el púlsar.",
+      "causal_bridge_from_previous": "Apertura en curso: un fotón llega después de una cantidad inmensa de rotaciones.",
+      "question_state": "Sabemos que la señal es extremadamente escasa; aún no sabemos cómo reconstruir el ritmo.",
+      "reason_to_continue": "La escasez obliga a mirar el conjunto de datos, no un destello aislado.",
+      "new_information": "El artículo describe aproximadamente un fotón observado por cada 10^8 rotaciones."
+    },
+    {
+      "id": "scene_002",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "El Fermi-LAT acumuló quince años de llegadas de fotones. El reto no era ver un destello brillante: era reconstruir un ritmo con señales escasas y ruido de fondo.",
+      "on_screen_text": "15 años de datos",
+      "visual_description": "A small Fermi-LAT satellite silhouette collects isolated photon pixels across a long scrolling timeline; no fabricated light beam or visible pulse train.",
+      "image_prompt": "16-bit pixel art scene, limited retro palette, crisp pixels, side view video game style, dithering, vertical 9:16, no text, small gamma-ray space telescope silhouette collecting isolated photon pixels across a long scrolling timeline, sparse events, no visible continuous beam",
+      "ambiente": "silencio",
+      "sfx": [
+        "tics espaciados de registro",
+        "barrido digital suave"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "pixel_art",
+      "dramatic_beat": "La escala temporal crece mientras los eventos siguen separados.",
+      "scene_function": "Mostrar la materia prima observacional y el problema de muestreo.",
+      "causal_bridge_from_previous": "Como los fotones llegan aislados, el equipo acumula una serie temporal extensa.",
+      "question_state": "Hay quince años de datos, pero la periodicidad sigue oculta.",
+      "reason_to_continue": "Hace falta identificar qué fuente podría producir el patrón.",
+      "new_information": "El análisis utilizó quince años de datos de Fermi-LAT."
+    },
+    {
+      "id": "scene_003",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "El objetivo fue PSR J1622−7204, aislado y girando a 261 veces por segundo. Su posición nominal se estimó con datos del catálogo Fermi.",
+      "on_screen_text": "261 giros/seg",
+      "visual_description": "A celestial equirectangular grid shows one highlighted sky point for PSR J1622−7204; display the ICRS coordinate annotation in post, not inside the generated image.",
+      "image_prompt": "16-bit pixel art scene, limited retro palette, crisp pixels, side view video game style, dithering, vertical 9:16, no text, celestial coordinate grid with one highlighted isolated gamma-ray pulsar, deep navy background, cyan and magenta pixel stars, one bright pixel marker, clean 16-bit scientific atlas aesthetic",
+      "ambiente": "silencio",
+      "sfx": [
+        "marcador digital de coordenada",
+        "pulso corto y seco"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "pixel_art",
+      "capa": {
+        "tipo": "mapa",
+        "region": [
+          -90,
+          -180,
+          90,
+          180
+        ],
+        "puntos": [
+          {
+            "id": "psr-j1622-7204",
+            "label": "PSR J1622−7204",
+            "lat": -72.066,
+            "lon": -114.447,
+            "ra_deg": 245.553,
+            "dec_deg": -72.066,
+            "ra_hms": "16h22m12.72s",
+            "dec_dms": "−72°03′57.6″",
+            "sistema_coordenadas": "ICRS",
+            "proyeccion": "equirectangular_celeste",
+            "ra_wrap_note": "245.553° − 360° = −114.447° para mantener la coordenada de proyección en [-180°, 180°]."
+          }
+        ],
+        "areas": [],
+        "titulo": "Localización nominal en el cielo",
+        "fuente": "Pook-Kolb et al., Physical Review Letters 137, 211201 (2026), Table I, p. 3; coordenadas nominales tomadas de la localización 4FGL.",
+        "precision_note": "Coordenadas celestes ICRS, no geográficas. RA 16h22m12.72s = 245.553°; se envuelve a −114.447° solo para la proyección equirectangular. DEC −72°03′57.6″ = −72.066°. Es la localización nominal 4FGL, no una posición final independiente del ajuste temporal."
+      },
+      "dramatic_beat": "La señal deja de ser abstracta: tiene una posición nominal en el cielo.",
+      "scene_function": "Identificar el objeto del caso y anclarlo en coordenadas publicadas.",
+      "causal_bridge_from_previous": "Los quince años de datos se concentran en una fuente concreta del catálogo Fermi.",
+      "question_state": "El objeto está localizado y su frecuencia es conocida; falta explicar cómo extraer su ritmo.",
+      "reason_to_continue": "La localización permite definir el problema de búsqueda matemática.",
+      "new_information": "PSR J1622−7204 es aislado y gira a 261 Hz; la tabla publica una posición nominal ICRS."
+    },
+    {
+      "id": "scene_004",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "La salida no fue probar cada frecuencia a ciegas. El equipo tradujo los tiempos de llegada a un problema geométrico: una retícula de alta dimensión.",
+      "on_screen_text": "Retícula",
+      "visual_description": "Sparse photon timestamps transform into a high-dimensional lattice represented as layered pixel planes; show a geometric transformation, not a literal computer screen.",
+      "image_prompt": "16-bit pixel art scene, limited retro palette, crisp pixels, side view video game style, dithering, vertical 9:16, no text, sparse photon timestamps transforming into layered high-dimensional lattice planes, geometric pixel grid, crisp short vectors, no computer screen",
+      "ambiente": "silencio",
+      "sfx": [
+        "ensamble geométrico de bloques",
+        "clics de coordenadas"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "pixel_art",
+      "dramatic_beat": "El problema cambia de forma: de buscar pulsos a buscar geometría.",
+      "scene_function": "Presentar el giro metodológico central.",
+      "causal_bridge_from_previous": "Con la fuente delimitada, los investigadores reformulan cómo comparar los tiempos de llegada.",
+      "question_state": "La retícula organiza los datos; aún no sabemos qué patrón es físicamente válido.",
+      "reason_to_continue": "La siguiente escena explica qué señal geométrica se busca.",
+      "new_information": "El método convierte la búsqueda en un problema de vectores cortos en una retícula de alta dimensión."
+    },
+    {
+      "id": "scene_005",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "En esa retícula, las combinaciones útiles forman vectores cortos. La búsqueda reúne candidatos y después comprueba cuáles corresponden a una solución física.",
+      "on_screen_text": "Vectores cortos",
+      "visual_description": "Several short pixel vectors emerge from a lattice of evenly spaced points; most candidate paths fade, one remains for physical checks.",
+      "image_prompt": "16-bit pixel art scene, limited retro palette, crisp pixels, side view video game style, dithering, vertical 9:16, no text, several short pixel vectors emerge from a lattice of evenly spaced points, most candidates fade while one remains for physical checks, limited retro palette",
+      "ambiente": "silencio",
+      "sfx": [
+        "vectores que encajan",
+        "tono breve de selección"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "pixel_art",
+      "dramatic_beat": "Muchos candidatos se descartan; uno merece comprobación.",
+      "scene_function": "Explicar la operación matemática sin prometer una solución automática.",
+      "causal_bridge_from_previous": "La retícula permite comparar combinaciones de tiempos mediante la longitud de sus vectores.",
+      "question_state": "Hay candidatos geométricos, pero no todos representan un púlsar real.",
+      "reason_to_continue": "La solución debe superar una comprobación física y estadística.",
+      "new_information": "El artículo explica que se generan muchos vectores cortos y después se identifican soluciones físicas."
+    },
+    {
+      "id": "scene_006",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "El equipo reportó el primer púlsar gamma descubierto con esta extensión del método. Usó unas diez horas de CPU y datos acumulados durante quince años.",
+      "on_screen_text": "10 CPU horas",
+      "visual_description": "The pulsar's pulse pattern resolves into a crisp repeating waveform beside a compact 261 Hz counter; a timeline is marked as fifteen years of observations.",
+      "image_prompt": "16-bit pixel art scene, limited retro palette, crisp pixels, side view video game style, dithering, vertical 9:16, no text, repeating pixel waveform emerging from sparse photon dots, compact 261 Hz counter, long observation timeline, clear scientific data visualization",
+      "ambiente": "silencio",
+      "sfx": [
+        "secuencia de pulsos regulares",
+        "confirmación digital discreta"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "pixel_art",
+      "capa": {
+        "tipo": "dato",
+        "valor": "261 Hz",
+        "unidad": "Hz",
+        "etiqueta": "frecuencia de giro de PSR J1622−7204",
+        "fuente": "Pook-Kolb et al., Physical Review Letters 137, 211201 (2026), abstract."
+      },
+      "dramatic_beat": "La periodicidad aparece y el caso deja de ser solo una búsqueda.",
+      "scene_function": "Entregar el resultado cuantitativo y confirmar el descubrimiento.",
+      "causal_bridge_from_previous": "Los candidatos geométricos se someten a comprobaciones y revelan una solución coherente.",
+      "question_state": "El equipo encontró un púlsar gamma; falta dimensionar el costo computacional.",
+      "reason_to_continue": "La comparación de recursos muestra por qué el método importa.",
+      "new_information": "El púlsar aislado gira a 261 Hz y fue encontrado usando unas diez horas de CPU."
+    },
+    {
+      "id": "scene_007",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "Antes, una búsqueda semicoherente había fallado después de unos seiscientos años de CPU. Son recursos de cómputo, no siglos de espera en calendario.",
+      "on_screen_text": "CPU: 10 h / 600 años",
+      "visual_description": "Two pixel-art compute-budget columns: a compact ten-hour block and a vastly extended six-hundred-CPU-year block; label both as CPU budgets in post.",
+      "image_prompt": "16-bit pixel art scene, limited retro palette, crisp pixels, side view video game style, dithering, vertical 9:16, no text, two pixel-art compute budget columns, compact ten-hour block versus very long six-hundred CPU-year block, neutral scientific comparison, no misleading calendar imagery",
+      "ambiente": "silencio",
+      "sfx": [
+        "contador que se acelera y se detiene",
+        "golpe grave de contraste"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "pixel_art",
+      "capa": {
+        "tipo": "dato",
+        "valor": "≈10 CPU horas frente a ≈600 CPU años",
+        "etiqueta": "presupuestos de cómputo reportados; métodos distintos",
+        "fuente": "Pook-Kolb et al., Physical Review Letters 137, 211201 (2026), abstract.",
+        "precision_note": "La comparación expresa recursos de CPU reportados, no tiempo de calendario ni dos ejecuciones idénticas bajo el mismo protocolo."
+      },
+      "dramatic_beat": "La diferencia de escala vuelve visible la ventaja computacional reportada.",
+      "scene_function": "Dimensionar el resultado sin convertir CPU-años en espera de calendario.",
+      "causal_bridge_from_previous": "Después del hallazgo, el artículo compara el método con una búsqueda semicoherente anterior.",
+      "question_state": "La nueva búsqueda fue mucho menos costosa en CPU; no es una garantía universal.",
+      "reason_to_continue": "El cierre debe separar el resultado demostrado de lo que todavía es una posibilidad.",
+      "new_information": "La búsqueda semicoherente anterior había fallado tras aproximadamente 600 CPU años."
+    },
+    {
+      "id": "scene_008",
+      "arc": "cierre_historia",
+      "duration_seconds": 9,
+      "narration": "La respuesta fue geométrica: buscar vectores cortos entre datos dispersos. No garantiza hallar todos los púlsares; los autores esperan probarlo en sistemas binarios. ¿Qué otros ritmos siguen escondidos? Esto fue Datos y ociosidades.",
+      "on_screen_text": "No es garantía",
+      "visual_description": "One isolated pulsar remains visible while a few dim binary-system silhouettes appear as unconfirmed possibilities beyond it; keep the discovered source distinct from future targets.",
+      "image_prompt": "16-bit pixel art scene, limited retro palette, crisp pixels, side view video game style, dithering, vertical 9:16, no text, one discovered isolated pulsar remains bright while dim binary-system silhouettes stay distant and unconfirmed, restrained hopeful ending, same pixel grid",
+      "ambiente": "silencio",
+      "sfx": [
+        "eco breve del pulso",
+        "cierre digital suave"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "pixel_art",
+      "dramatic_beat": "El descubrimiento se convierte en una posibilidad de búsqueda, no en una promesa total.",
+      "scene_function": "Pagar la pregunta inicial, explicitar el límite y abrir una pregunta final.",
+      "causal_bridge_from_previous": "La comparación de CPU explica la utilidad del método; el límite evita extrapolar más allá del caso demostrado.",
+      "question_state": "Se encontró un púlsar aislado; la aplicación a sistemas binarios sigue siendo una posibilidad.",
+      "reason_to_continue": "La pregunta final invita a pensar qué otros ritmos pueden extraerse de datos escasos.",
+      "new_information": "El artículo presenta la extensión a más púlsares, incluidos sistemas binarios, como posibilidad futura."
+    }
+  ],
+  "cortinilla_fuentes": {
+    "duration_seconds": 6,
+    "titulo": "Fuentes",
+    "aviso": "Divulgación prevista para la versión final; declarar solo los recursos realmente generados.",
+    "firma": "Datos y ociosidades",
+    "source_ids": [
+      "SRC-001"
+    ]
+  },
+  "audio": {
+    "music_asset": null,
+    "cama_musical": "sintetico:arpegio",
+    "music_plan": "Cama sintetizada prevista: arpegio suave, 112 BPM, patrón discreto bajo la voz. Solo plan sonoro; no existe archivo de audio.",
+    "music_license": null
+  },
+  "export": {
+    "resolution": "1080x1920",
+    "fps": 30,
+    "render_status": "NOT_GENERATED"
+  },
+  "publicacion": {
+    "status": "PENDIENTE_DECISION_GROK",
+    "platforms": [
+      "YouTube Shorts",
+      "TikTok",
+      "Facebook Reels"
+    ],
+    "note": "No publicar ni programar desde preproducción textual."
+  },
+  "estado": "PENDIENTE_REVISION_GROK",
+  "production_mode": "storyboard_only",
+  "validation_notes": [
+    "El mapa usa coordenadas ecuatoriales ICRS: RA se envuelve a [-180°, 180°] para la proyección celeste; lat/lon no son coordenadas geográficas terrestres."
+  ],
+  "linea_tematica_provisional": "Actualidad",
+  "approved_assets": [],
+  "risk_notes": [
+    "No presentar los CPU-años como tiempo de calendario; son presupuestos de cómputo reportados.",
+    "La posición del mapa es la localización nominal 4FGL publicada en Table I, no una posición final independiente del ajuste temporal.",
+    "La extensión a sistemas binarios se presenta como posibilidad futura, no como resultado ya demostrado."
+  ]
+}
