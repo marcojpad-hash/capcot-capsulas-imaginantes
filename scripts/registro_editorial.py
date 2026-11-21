@@ -461,12 +461,14 @@ def _slot_evidence(raw, source_path, default_project_id=None):
     clock_value, clock_key = _pick_field(
         containers,
         ("slot_local", "hora_cdmx", "hora_local", "slot", "time_local",
-         "scheduled_time", "hora"),
+         "scheduled_time", "hora", "hora_original"),
     )
     timestamp_value, timestamp_key = _pick_field(
         containers,
         ("publish_at", "publishAt", "publishAt_utc", "publish_at_utc",
-         "scheduled_at", "scheduledAt", "published_at", "publishedAt"),
+         "scheduled_at", "scheduledAt", "published_at", "publishedAt",
+         "yt_publish_at", "yt_published_at", "tiktok_schedule_local",
+         "facebook_schedule_local", "tt_createTime_cdmx"),
     )
 
     local_dt = _local_timestamp(
