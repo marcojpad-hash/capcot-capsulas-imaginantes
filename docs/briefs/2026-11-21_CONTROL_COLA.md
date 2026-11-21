@@ -337,3 +337,23 @@ Los feeds definidos en `scripts/tendencias.py` y Google Trends RSS México no en
 ### No modificados
 
 `data/*.json`, `cola/entrada/`, `cola/estado/`, workflows, secretos, permisos, main, publicaciones y medios permanecen sin cambios por este run. No se disparó el workflow de dispatch ni se envió payload a Grok.
+
+## 11. Corrección técnica de ocupación horaria — run operador, 2026-11-21
+
+### Cambios ejecutados y leídos de vuelta
+
+- `scripts/registro_editorial.py`: `ocupacion_slots()` incorpora los snapshots `data/horario_*.json`, tanto `slots` como `atrasados_revisados`. Omite slots sin ID, conserva la fecha/hora original de atrasados y reconoce timestamps de YouTube/TikTok/Facebook.
+- La extracción de medios incluye `mp4`, rutas de video/audio y referencias de escena. La búsqueda comprueba rutas relativas desde la raíz del repositorio y desde la carpeta del proyecto. Cada evidencia conserva su archivo y posición de origen.
+- Se añade `politica_horaria` de solo lectura: fecha de corte, ventanas regulares, ventanas de prueba y slot fijo. Cada ocupación expone `coincidencia_horaria`, `estado_frescura_horaria` y `fecha_politica_horaria`; una política anterior a la fecha objetivo queda identificada y no se presenta como confirmación vigente.
+- `tests/test_registro_editorial.py`: tres pruebas nuevas cubren snapshots diarios/slots vacíos/atrasados, clasificación de ventanas y política con corte anterior.
+
+**Commits:** código final `0306cf7e46b0af826ebbdb6a4d7d50bd1ccffe57`; pruebas `e7e2fa36c57a8d799045aaf6f6d96a733e31f19`. La rama feature se comparó contra el commit final y devolvió `identical`. Lectura de vuelta: script blob `c95a5fbbd0e8366877fc4e64d2f96fe096fff668`; tests blob `b5908f4efb2713b4fd36ed97c8dd468c2e6f20b5`.
+
+### Verificación y límites
+
+- **Smoke aislado ejecutado:** cuatro clasificaciones de política (slot fijo, regular, prueba y fuera de ventana) dieron el resultado esperado. Una muestra de snapshot produjo dos ocupaciones con fecha/hora local correcta, omitió el slot sin ID y reconoció el ID de video. Esto prueba la lógica aislada, no la suite del repositorio.
+- **Pytest/CI:** no ejecutados. La consulta de runs asociados y estados de commit devolvió listas vacías para ambos commits; no se declara PASS de la suite.
+- **Política desfasada en feature:** `data/horarios.json` de esta rama tiene corte 2026-11-09; `main/data/horarios.json` consultado en solo lectura tiene corte 2026-11-16 y una política distinta. El nuevo campo `CORTE_ANTERIOR_A_FECHA_OBJETIVO` hace visible la limitación; el script no importa ni copia datos de main. No se modificó ningún `data/*.json`.
+- El snapshot diario 2026-11-11 fue localizado y leído; los intentos de leer `data/horario_2026-11-16.json` y `data/horario_2026-11-20.json` devolvieron 404. No se inventaron snapshots posteriores.
+
+No se modificaron `main`, workflow, cola, estados Grok, secretos ni permisos. No se promovió ni despachó ningún storyboard.
