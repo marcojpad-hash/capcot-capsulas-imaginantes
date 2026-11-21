@@ -217,3 +217,24 @@ Se releyeron los seis storyboards que siguen en `proyectos/`. Sus QA existentes 
 - Operación ejecutada: relectura de inventario, estados, PRs, Actions, logs y fuentes cruzadas; se añadió esta adenda al control existente.
 - No se ejecutó el validador Python en runtime ni `--check-doi`; los conteos anteriores son estáticos con la expresión del script.
 - No se promovió ni redispatchó, no se generaron medios, no se publicó, no se consumieron créditos, no se enviaron mensajes, no se cambiaron secretos/permisos y no se hizo merge.
+
+
+## 13. Compuertas estructurales de los cinco storyboards 21–22 nov — verificación estática
+
+Se releyeron los cinco JSON directamente desde GitHub y se contrastaron con la expresión de palabras de `scripts/validar_storyboard.py` y con `scripts/estilos.json`.
+
+| Proyecto | Slot | Palabras | Escenas | Duración total | Estilo/prompt | QA |
+|---|---:|---:|---:|---:|---|---|
+| Fentale | 21-nov 23:30 | 170 | 8 | 84 s | catálogo coincide | PASS/90 |
+| Homo erectus | 21-nov 07:00 | 196 | 8 | 84 s | catálogo coincide | FAIL/83 |
+| Púlsar gamma | 21-nov 17:00 | 209 | 8 | 84 s | catálogo coincide | FAIL/83 |
+| Voyager 1 | 22-nov 07:00 | 180 | 8 | 84 s | catálogo coincide | FAIL/83 |
+| Yubarta | 22-nov 17:00 | 180 | 8 | 84 s | catálogo coincide | PASS/90 |
+
+- Los cinco usan `edge-tts`, voz `es-MX-JorgeNeural`, rate `+7%`, pitch `-2Hz`; todos tienen cortinilla de 6 s, `approved_assets=[]`, `export.render_status=NOT_GENERATED`, `publicacion.status=PENDIENTE_DECISION_GROK` y no contienen `asset_filename`, `asset_type` ni `export.filename`.
+- En los cinco, `visual_identity.prompt_base` coincide exactamente con el estilo de `scripts/estilos.json`; las ocho escenas contienen ambiente y SFX; todos los `source_ids` de escena existen en `sources`.
+- Los cinco contienen capa de mapa y capa de dato: Fentale usa coordenadas GVP (localizan el complejo, no el punto exacto de emisión); Homo usa el sitio de referencia; el púlsar usa coordenadas celestes ICRS; Voyager usa tres puntos de trayectoria; yubarta usa límites regionales de referencia del catálogo Hakai, no coordenadas exactas de muestras. No se inventaron coordenadas.
+- Fentale y Yubarta conservan QA independiente en commits separados posteriores al borrador: `18492e0d9f0db615f5af81cb420d48efaf07606a` y `5abae820ba8ac3a244db8d081738c979d4d2aaff`, respectivamente. En ambos hay siete checks true, `review_basis=lectura_en_frio_solo_narracion` y `critical_flags=[]`; no se repitió la lectura narrativa.
+- Homo y púlsar conservan FAIL/83 por giro científico nombrado pero no explicado. Voyager conserva FAIL/83 por confundir fecha del hito con fecha de confirmación. No se reescribieron narraciones ni claims.
+- DOI: Homo, púlsar y yubarta conservan estado verificado; Voyager usa fuentes sin DOI; Fentale sigue `PENDIENTE_RESOLVEDOR`. Se intentaron rutas Crossref REST, página Crossref y doi.org; las tres fueron rechazadas por la herramienta web con `URL ... is not accessible via this tool`. No se marcó Fentale como verificado y no se ejecutó `--check-doi`.
+- Ninguna carpeta de proyecto 21–22 contiene `ESTADO_EJECUCION.md`; los cinco siguen como borradores en `proyectos/`. La revisión estructural de esta sección es estática, no una ejecución del validador Python.
