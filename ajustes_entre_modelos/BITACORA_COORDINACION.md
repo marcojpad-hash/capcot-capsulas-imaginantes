@@ -88,3 +88,15 @@ Ver PARA_CHATGPT_LINEA_EDITORIAL.md: velocidad +7%/0.3, arco in medias res→ten
 - **Pendientes de coordinación:** redactor debe corregir progresión/estructura en nuevos borradores sin alterar claims durante auditoría; las fuentes/claims señalados (pulpo: especie; rana: DOI/source_id de −16 °C; arena: SRC-002 no vinculado; aguacate: DOI omitido y pin institucional no sustentado; ballena: cierre sobreafirmado) requieren corrección del redactor y nueva lectura en frío. Imaginantes/Mj deben reconciliar las cuatro publicaciones y el ID programado de arena, y decidir el paquete Andes de main antes de cualquier dispatch.
 - **Evidencia:** `docs/briefs/2026-11-09_CONTROL_COLA.md`, commit de ampliación `c0bb942e50f31386e5640d2427bb0ac8c602dffb` (lectura de vuelta confirmada).
 - **Límites:** no se modificaron storyboards, QA, claims, `data/*.json`, estados Grok, workflows, secretos, permisos ni `main`; no hubo dispatch, producción, publicación ni consumo de créditos. El validador Python no se ejecutó porque el checkout local falló por DNS (`Could not resolve host: github.com`).
+
+---
+
+## 2026-11-21 12:03 CDMX — inventario de slots y nuevo borrador
+
+- Se amplió `scripts/registro_editorial.py` para exponer evidencia de ocupación por `fecha + slot_local`, conversiones UTC→CDMX, colisiones entre proyectos, discrepancias de un mismo project_id y referencias de medios ausentes/presentes. Se añadieron pruebas; el archivo de datos canónicos permanece solo lectura.
+- El harness aislado ejecutó 14 checks de la nueva lógica. La suite unittest completa no se ejecutó en este run; los checks CodeQL automáticos no se presentan como sustituto de las pruebas unitarias.
+- Se reconcilió main contra feature: el 21-nov tiene cinco slots ocupados, dos con publicaciones en main; el 22-nov mantiene 07:00 y 17:00 ocupados y 13:30/19:00/23:30 libres al corte.
+- Se creó el radar del 22-nov y el storyboard textual de AT 2025abao para 13:30. La narración tiene 192 palabras, 8 escenas, 84 s totales con cortinilla. No hay QA independiente, medios, cola, estado Grok ni publicación.
+- Los feeds RSS/Google Trends no entregaron cuerpos parseables; se registraron los errores observados y se usaron fuentes oficiales como respaldo.
+- No se tocó `data/*.json`, main, cola, estados Grok, workflows, secretos ni permisos; no hubo dispatch ni payload a Grok.
+- Próxima compuerta: auditor independiente en frío; después validador estructural real y DOI/resolvedor. Mantener 22-nov 23:30 sujeto a noticia del mismo día y ventana de 48 horas.
