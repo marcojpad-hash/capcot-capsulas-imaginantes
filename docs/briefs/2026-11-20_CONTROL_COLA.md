@@ -742,3 +742,32 @@ CodeQL terminó **SUCCESS** para los últimos tres commits de la revalidación: 
 - `1450f262` — storyboard Voyager 1, 22-nov 07:00.
 - `0768dd9d` — radar actualizado con errores de feeds, respaldo de Trends y candidato Voyager.
 - Este archivo se actualiza ahora para dejar continuidad de la auditoría.
+
+
+### Run 13 — 2026-11-20 22:44 CDMX
+
+#### Auditoría narrativa y estado de proyectos
+
+- `2026-11-22_voyager-1-un-dia-luz`: pasada en frío posterior al borrador, leyendo solo la narración concatenada. QA registrado **FAIL/83**; siete checks narrativos verdaderos, con `critical_flags=["FECHA_DE_HITO_Y_CONFIRMACION_CONFUNDIDAS"]`. La narración atribuye al 18-nov la confirmación de NASA; la fuente JPL distingue el cruce del umbral el 18-nov de la confirmación recibida por el equipo el 19-nov. No se reescribió la narración.
+- `2026-11-21_fentale-metano-sin-erupcion`: conserva PASS/90; no se repitió la revisión. Su estructura `paradoja_mecanica` no pertenece al conjunto admitido por `scripts/rotacion.py`; no se cambió durante auditoría.
+- `2026-11-21_homo-erectus-selva-tropical` y `2026-11-21_pulsar-gamma-reticulo`: conservan sus FAIL; no se reescribieron.
+- Lote 5–7-nov: los 12 IDs siguen con 2 PASS y 10 FAIL; los PASS existentes son Venus (88) y arena cantante (90). No se repitieron porque la narración no cambió desde el run 12. `inter-arboles-se-comunican` tiene 169 palabras, por debajo del mínimo estructural de 170.
+- La automatización Auditor CAPCOT conserva su último run como FAILED (20-nov 17:07 CDMX); el intento de `run_now` no creó un run nuevo. Esta pasada manual quedó registrada en el operador, separada de la redacción de Voyager.
+
+#### Cola, recepción y producción preexistente
+
+- Los storyboards nuevos permanecen en `proyectos/`; no existe evidencia de recepción individual Grok. Para Voyager y el nuevo borrador de yubarta: `RECEPCION_GROK_NO_CONFIRMADA`. No se creó ni editó `cola/estado/`.
+- El workflow `capcot-grok-dispatch.yml` selecciona JSON planos en la raíz de `cola/entrada/`; las carpetas anidadas no entran en ese selector. Ningún proyecto de `proyectos/` es `DISPATCHABLE` desde su ruta actual. No se disparó el workflow ni se envió payload.
+- Main conserva programación/producción preexistente para Oxoboranos (13:30) y Robot orbital (19:00) el 21-nov; no duplicar ni cancelar. Robot orbital tiene MP4 y programación registrados; no redispatchar.
+- REACT conserva programación privada previa y MP4 no verificable en el árbol. Ratas topo conserva referencias a medios ausentes en el árbol; no declarar MP4 verificado.
+- Main `data/publicaciones.json` contiene 48 registros y llega hasta la programación de Robot orbital del 21-nov 19:00; no contiene 22-nov 17:00. Main `data/rotacion.json` tiene 39 registros y llega al 21-nov; feature `data/rotacion.json` conserva 27 registros hasta 31-oct. Main `data/vistas_historico.json` tiene 106 registros y llega al 18-nov; feature tiene 74 y llega al 28-oct. Los `data/*.json` no se modificaron.
+- Desfase de horario: `data/horarios.json` declara como política vigente desde 9-nov las ventanas 06:30–07:30 y 16:30–18:00, más el slot fijo 23:30; `scripts/rotacion.py` conserva cinco ventanas antiguas (incluye 13:00–15:00 y 18:00–21:00) y no lee la política vigente. No se usó ese script para autorizar 13:30 ni 19:00. Corrección del script queda para una tarea controlada y probada; no se cambió el calendario ni `data/*.json`.
+
+#### CI, Actions, Issues y PRs
+
+- Worker `44839666536`: checkout de main y ejecución de comprobaciones sin generar trabajo ni cambios de cola.
+- Callback `44850289947`: no creó Issue nuevo.
+- Kuroshio: CodeQL SUCCESS; el run no ejecutó `--check-doi`, por lo que no acredita DOI.
+- Issues #11 y #10 siguen abiertos con etiqueta `hecho`; no se cerraron. PR #14 sigue abierto y conserva en su diff campos `asset_filename` en un storyboard. PR #6 sigue abierto con workflow reutilizable, `secrets: inherit` e `issues: write`; PR #3 sigue abierto en draft con 683 archivos cambiados y un workflow con `contents: write`; PR #4 sigue abierto y solo registra la ubicación histórica de frames que no están en GitHub. No se fusionó ni cerró nada.
+- No se generaron medios, no se programó, no se publicó, no se consumieron créditos y no se modificó `data/*.json`.
+

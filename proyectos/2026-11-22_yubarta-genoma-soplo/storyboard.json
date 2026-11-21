@@ -1,0 +1,386 @@
+{
+  "_schema": "CAPCOT_STORYBOARD_TEXT_V2",
+  "project_id": "2026-11-22_yubarta-genoma-soplo",
+  "serie": "Datos y ociosidades",
+  "title": "El genoma que viaja en el soplo",
+  "titulo": "Un genoma sin tocarla",
+  "language": "es-MX",
+  "aspect_ratio": "9:16",
+  "target_duration_seconds": 84,
+  "scene_total_seconds": 78,
+  "cortinilla_seconds": 6,
+  "total_duration_seconds": 84,
+  "narration_word_count": 180,
+  "estructura": "pregunta",
+  "audience": "Público general interesado en fauna marina y ciencia.",
+  "occasion": "Cápsula vespertina de actualidad científica; slot 17:00 CDMX.",
+  "resumen": "Un dron recoge gotas del soplo de yubartas en el Pacífico nororiental. El material contiene ADN endógeno suficiente para obtener genomas nucleares de baja cobertura y mitocondriales de alta cobertura, con límites de aplicación según especie y condiciones de superficie.",
+  "narrative_contract": {
+    "central_question": "¿Puede el soplo de una yubarta contener ADN suficiente para reconstruir información genómica sin tomarle una biopsia?",
+    "promise": "Mostrar cómo un dron recoge el soplo y qué información genética pudieron obtener los investigadores.",
+    "stakes": "El muestreo genético de cetáceos puede reducir la necesidad de acercamientos invasivos y facilitar estudios poblacionales.",
+    "scientific_turn": "Las gotas del soplo contienen ADN endógeno; su secuenciación permitió obtener genomas nucleares y mitocondriales.",
+    "evidence_limit": "El estudio analizó 58 muestras de 26 yubartas del Pacífico nororiental. La utilidad puede variar con la especie, su elusividad, tamaño y tiempo en superficie; no demuestra rendimiento universal.",
+    "payoff": "La respiración puede aportar información genética sin una biopsia, pero el método sigue condicionado por la especie y el contexto de muestreo."
+  },
+  "trend_source": {
+    "termino": "Genoma de yubarta obtenido desde muestras de soplo",
+    "fecha_publicacion": "2026-11-17",
+    "url": "https://doi.org/10.1111/1755-0998.70219"
+  },
+  "fecha_objetivo": "2026-11-22",
+  "slot_local": "17:00",
+  "slot_cesta": "intermedio_1",
+  "origen": "externa",
+  "created_at": "2026-11-20T22:44:44-06:00",
+  "editorial_status": "PROPUESTA_PENDIENTE_DE_GROK",
+  "estado": "BORRADOR_EN_PROYECTOS",
+  "arco": {
+    "hook_medias_res": "El dron atraviesa el soplo de una yubarta y recoge gotas sin tocar al animal.",
+    "desarrollo": "La pregunta es si esas gotas contienen ADN suficiente; el estudio muestra cómo se recolectaron y qué cobertura genómica alcanzaron.",
+    "cierre_historia": "La comparación con muestras repetidas y biopsias pareadas evalúa la fiabilidad, sin convertir el método en una solución universal.",
+    "reflexion_o_pregunta": "El aire exhalado puede ser una muestra genética. ¿Qué otras poblaciones podrán estudiarse así?"
+  },
+  "estilo_id": "tatuaje_acuarela",
+  "estilo_visual": "Tatuaje acuarela",
+  "visual_identity": {
+    "style_id": "tatuaje_acuarela",
+    "style_name": "Tatuaje acuarela",
+    "prompt_base": "watercolor sketch tattoo flash, rough black ink sketch of the subject with big loose watercolor blots of deep blue, coral and gold splashing behind like ink bursts, drips running down, splatter dots, color escaping the lines, guide lines and repeated strokes visible, white paper, readable subject, vertical 9:16, no text",
+    "palette": "Azul profundo, coral y oro sobre papel blanco.",
+    "lighting": "Luz difusa, sin brillos fotográficos.",
+    "texture": "Tinta negra de boceto, manchas de acuarela translúcidas y goteos controlados.",
+    "composition": "Una yubarta claramente legible como sujeto principal; el dron y las gotas se mantienen secundarios y consistentes entre escenas.",
+    "negative_prompt": "No texto, letras, logotipos, marcas de agua, fotorealismo, anatomía inventada, barcos invasivos ni pines geográficos no publicados.",
+    "reference_assets": [],
+    "seed": null,
+    "seed_policy": "Mantener la misma silueta de yubarta, el mismo dron y la misma paleta; cambiar solo el encuadre y la acción de cada escena."
+  },
+  "typography_identity": {
+    "font_family": "DejaVu Sans",
+    "font_weight": "700 para gancho; 400 para subtítulos",
+    "title_style": "Máximo seis palabras; presente desde frame 0 en postproducción",
+    "subtitle_style": "Bloques de máximo tres palabras; zona segura inferior",
+    "hierarchy": "Gancho > dato/etiqueta > subtítulos",
+    "animation": "Un movimiento por plano; tipografía en postproducción"
+  },
+  "voice": {
+    "engine": "edge-tts",
+    "voice_id": "es-MX-JorgeNeural",
+    "language": "es-MX",
+    "rate": "+7%",
+    "pitch": "-2Hz",
+    "pad_seconds": 0.3,
+    "modo_pausas": "continuo"
+  },
+  "sources": [
+    {
+      "id": "SRC-001",
+      "cita_corta": "O'Mahony et al. (2026), “Breath to Genome: Whole Genome Sequencing of Large Whales From Blow Sampling”, Molecular Ecology Resources, publicado el 17-nov-2026.",
+      "url": "https://doi.org/10.1111/1755-0998.70219",
+      "doi": "10.1111/1755-0998.70219",
+      "accessed": "2026-11-20",
+      "publication_date": "2026-11-17",
+      "supports": [
+        "58 muestras de soplo de 26 yubartas del Pacífico nororiental recolectadas con un dron.",
+        "Promedio de 84 por ciento de ADN endógeno en las lecturas.",
+        "Cobertura media de 2.3× para genomas nucleares y 94× para genomas mitocondriales.",
+        "Comparación de muestras repetidas de soplo y biopsias pareadas de dos individuos.",
+        "La aplicabilidad puede variar por especie, elusividad, tamaño corporal y tiempo en superficie."
+      ],
+      "verification_status": "VERIFICADO_RESOLVEDOR"
+    },
+    {
+      "id": "SRC-002",
+      "cita_corta": "Hakai Data Catalogue, Gitga'at Territory Coastal Mapping Project, DOI 10.21966/2aap-hn61.",
+      "url": "https://doi.org/10.21966/2aap-hn61",
+      "doi": "10.21966/2aap-hn61",
+      "accessed": "2026-11-20",
+      "publication_date": "2025-11-12",
+      "supports": [
+        "Extensión espacial regional usada solo como localizador del territorio Gitga'at; no representa coordenadas exactas de las 58 muestras."
+      ],
+      "verification_status": "VERIFICADO_RESOLVEDOR"
+    }
+  ],
+  "doi_verification_status": "VERIFICADO_RESOLVEDOR",
+  "analisis": {
+    "observacion": [
+      "El artículo informa 58 muestras de soplo correspondientes a 26 yubartas del Pacífico nororiental.",
+      "El ADN endógeno representó 84 por ciento de las lecturas en promedio.",
+      "La cobertura media informada fue 2.3× para genomas nucleares y 94× para mitocondriales."
+    ],
+    "calculo": [
+      "No se calcula una tasa por individuo: 58 muestras divididas entre 26 ballenas no implica una distribución uniforme de muestras."
+    ],
+    "inferencia": [
+      "El soplo puede aportar datos genómicos no invasivos en las yubartas y condiciones estudiadas; no se extrapola el mismo rendimiento a todas las especies."
+    ],
+    "recomendacion": [
+      "Presentar el método como una vía prometedora y acotada, no como sustituto universal de las biopsias."
+    ]
+  },
+  "scenes": [
+    {
+      "id": "scene_001",
+      "arc": "hook_medias_res",
+      "duration_seconds": 10,
+      "narration": "El dron no tocó a la ballena: atravesó su soplo y regresó con gotas. En ellas viajaba ADN de la propia yubarta.",
+      "on_screen_text": "Un genoma sin tocarla",
+      "visual_description": "Una yubarta emerge y exhala; un pequeño dron atraviesa la nube de gotas con una placa estéril visible, sin tocar al animal.",
+      "image_prompt": "watercolor sketch tattoo flash, rough black ink sketch of the subject with big loose watercolor blots of deep blue, coral and gold splashing behind like ink bursts, drips running down, splatter dots, color escaping the lines, guide lines and repeated strokes visible, white paper, readable subject, vertical 9:16, no text, Una yubarta emerge y exhala; un pequeño dron atraviesa la nube de gotas con una placa estéril visible, sin tocar al animal.",
+      "ambiente": "Oleaje abierto y respiración marina suave.",
+      "sfx": [
+        "zumbido_de_dron_suave",
+        "soplo_breve"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "tatuaje_acuarela",
+      "dramatic_beat": "La muestra aparece antes de explicar cómo funciona.",
+      "scene_function": "Abrir con una acción ya en curso y presentar la anomalía: una muestra obtenida sin tocar a la ballena.",
+      "causal_bridge_from_previous": "La escena comienza en el instante en que el dron cruza el soplo.",
+      "question_state": "Se sabe que el dron recoge gotas; aún no se sabe si contienen ADN útil.",
+      "reason_to_continue": "La pregunta sobre el contenido de la muestra impulsa la explicación.",
+      "new_information": "El muestreo ocurre mediante gotas del soplo, no mediante contacto físico."
+    },
+    {
+      "id": "scene_002",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "La pregunta era enorme: ¿puede una exhalación contener suficiente material para reconstruir un genoma sin lanzar un dardo ni tomar tejido?",
+      "on_screen_text": "¿ADN en el soplo?",
+      "visual_description": "Primer plano de gotas suspendidas sobre la placa; el fondo muestra la silueta de la yubarta, sin texto ni instrumentos invasivos.",
+      "image_prompt": "watercolor sketch tattoo flash, rough black ink sketch of the subject with big loose watercolor blots of deep blue, coral and gold splashing behind like ink bursts, drips running down, splatter dots, color escaping the lines, guide lines and repeated strokes visible, white paper, readable subject, vertical 9:16, no text, Primer plano de gotas suspendidas sobre la placa; el fondo muestra la silueta de la yubarta, sin texto ni instrumentos invasivos.",
+      "ambiente": "Ambiente submarino amortiguado y gotas aisladas.",
+      "sfx": [
+        "gota_sobre_placa"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "tatuaje_acuarela",
+      "dramatic_beat": "La curiosidad se convierte en una pregunta comprobable.",
+      "scene_function": "Formular la pregunta central y separar la expectativa de la evidencia.",
+      "causal_bridge_from_previous": "La muestra ya fue recogida; ahora se pregunta qué contiene.",
+      "question_state": "La posibilidad es reconstruir información genética sin tomar tejido.",
+      "reason_to_continue": "La respuesta depende de un protocolo de muestreo y secuenciación.",
+      "new_information": "La pregunta central queda explícita."
+    },
+    {
+      "id": "scene_003",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "El equipo trabajó en el sistema de fiordos Kitimat, Columbia Británica, usando un dron con una placa estéril justo en el paso del soplo.",
+      "on_screen_text": "Fiordos de Kitimat",
+      "visual_description": "Mapa regional sobrio de la costa norte de Columbia Británica; resaltar el área de referencia Gitga'at y el sistema de fiordos Kitimat, sin pines individuales.",
+      "image_prompt": "watercolor sketch tattoo flash, rough black ink sketch of the subject with big loose watercolor blots of deep blue, coral and gold splashing behind like ink bursts, drips running down, splatter dots, color escaping the lines, guide lines and repeated strokes visible, white paper, readable subject, vertical 9:16, no text, Mapa regional sobrio de la costa norte de Columbia Británica; resaltar el área de referencia Gitga'at y el sistema de fiordos Kitimat, sin pines individuales.",
+      "ambiente": "Viento costero tenue y oleaje distante.",
+      "sfx": [
+        "transicion_mapa_suave"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "style_id": "tatuaje_acuarela",
+      "capa": {
+        "tipo": "mapa",
+        "region": [
+          53.18,
+          -129.6,
+          53.68,
+          -129
+        ],
+        "puntos": [],
+        "areas": [
+          {
+            "id": "gitgaat_reference",
+            "label": "Territorio Gitga'at, área regional de referencia",
+            "bounds": [
+              -129.6,
+              53.18,
+              -129,
+              53.68
+            ],
+            "bounds_label": "Hakai Data Catalogue spatial extent; orden W,S,E,N."
+          }
+        ],
+        "titulo": "Sistema de fiordos Kitimat / territorio Gitga'at",
+        "fuente": "SRC-001 sitúa el muestreo en Kitimat/Gitga'at; SRC-002 aporta la extensión regional del área de referencia.",
+        "precision_note": "La caja regional no representa los puntos exactos de las 58 muestras. No se dibujan pines ni trayectorias de dron no publicados."
+      },
+      "dramatic_beat": "La historia deja el laboratorio y ubica el trabajo de campo.",
+      "scene_function": "Ubicar el estudio sin inventar sitios exactos de muestreo.",
+      "causal_bridge_from_previous": "La pregunta requiere saber dónde y cómo se recolectó la muestra.",
+      "question_state": "El artículo sitúa el trabajo en el sistema de fiordos Kitimat, dentro del territorio Gitga'at.",
+      "reason_to_continue": "El mapa ofrece contexto regional, no una ruta de vuelo ni los puntos de cada muestra.",
+      "new_information": "La ubicación publicada limita el alcance geográfico del resultado."
+    },
+    {
+      "id": "scene_004",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "Entre 2022 y 2023 reunió 58 muestras de soplo de 26 yubartas identificadas; algunas ballenas aportaron más de una muestra.",
+      "on_screen_text": "58 muestras · 26 yubartas",
+      "visual_description": "Secuencia de placas de muestreo que se agrupan en 26 siluetas distintas; algunas siluetas reciben más de una placa, sin sugerir 58 animales.",
+      "image_prompt": "watercolor sketch tattoo flash, rough black ink sketch of the subject with big loose watercolor blots of deep blue, coral and gold splashing behind like ink bursts, drips running down, splatter dots, color escaping the lines, guide lines and repeated strokes visible, white paper, readable subject, vertical 9:16, no text, Secuencia de placas de muestreo que se agrupan en 26 siluetas distintas; algunas siluetas reciben más de una placa, sin sugerir 58 animales.",
+      "ambiente": "Oleaje leve y clics discretos de registro.",
+      "sfx": [
+        "clic_de_registro",
+        "papel_suave"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "tatuaje_acuarela",
+      "dramatic_beat": "La escala del estudio se concreta y evita confundir muestras con animales.",
+      "scene_function": "Cuantificar la cohorte y aclarar que varias muestras pueden pertenecer a una misma ballena.",
+      "causal_bridge_from_previous": "Ya se conoce el área; ahora se dimensiona el conjunto analizado.",
+      "question_state": "Son 58 muestras de 26 individuos identificados.",
+      "reason_to_continue": "La cantidad de muestras no equivale a la cantidad de genomas completos ni a 58 animales distintos.",
+      "new_information": "La escala lleva a preguntar cuánto ADN propio contenían las gotas."
+    },
+    {
+      "id": "scene_005",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "En promedio, 84 por ciento de las lecturas correspondía a ADN endógeno de ballena: no era sólo agua salada ni material ambiental.",
+      "on_screen_text": "84% ADN endógeno",
+      "visual_description": "Gráfico limpio de una barra al 84 por ciento, rotulada como promedio de lecturas endógenas; el resto queda sin atribución específica.",
+      "image_prompt": "watercolor sketch tattoo flash, rough black ink sketch of the subject with big loose watercolor blots of deep blue, coral and gold splashing behind like ink bursts, drips running down, splatter dots, color escaping the lines, guide lines and repeated strokes visible, white paper, readable subject, vertical 9:16, no text, Gráfico limpio de una barra al 84 por ciento, rotulada como promedio de lecturas endógenas; el resto queda sin atribución específica.",
+      "ambiente": "Tono de laboratorio suave y un pulso breve.",
+      "sfx": [
+        "pulso_dato"
+      ],
+      "source_ids": "SRC-001",
+      "style_id": "tatuaje_acuarela",
+      "capa": {
+        "tipo": "dato",
+        "valor": "84%",
+        "etiqueta": "ADN endógeno promedio en las lecturas de soplo",
+        "fuente": "SRC-001; promedio publicado, no porcentaje de individuos."
+      },
+      "dramatic_beat": "El primer dato fuerte responde si la muestra contenía material de la ballena.",
+      "scene_function": "Mostrar el promedio de ADN endógeno sin convertirlo en porcentaje de muestras o individuos.",
+      "causal_bridge_from_previous": "Las 58 muestras ya están dimensionadas; falta saber si su ADN era propio de la yubarta.",
+      "question_state": "El promedio publicado es 84 por ciento de lecturas endógenas.",
+      "reason_to_continue": "El porcentaje es un promedio de lecturas, no una tasa por animal.",
+      "new_information": "El siguiente paso es explicar qué tipo de genoma pudo recuperarse."
+    },
+    {
+      "id": "scene_006",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "Con esas gotas obtuvieron genomas nucleares de baja cobertura, 2.3 veces en promedio, y genomas mitocondriales de alta cobertura, 94 veces.",
+      "on_screen_text": "2.3× nuclear · 94× mitocondrial",
+      "visual_description": "Dos escalas visuales separadas: una hélice nuclear con cobertura 2.3× y un círculo mitocondrial con cobertura 94×; etiquetas claras, sin insinuar cobertura uniforme.",
+      "image_prompt": "watercolor sketch tattoo flash, rough black ink sketch of the subject with big loose watercolor blots of deep blue, coral and gold splashing behind like ink bursts, drips running down, splatter dots, color escaping the lines, guide lines and repeated strokes visible, white paper, readable subject, vertical 9:16, no text, Dos escalas visuales separadas: una hélice nuclear con cobertura 2.3× y un círculo mitocondrial con cobertura 94×; etiquetas claras, sin insinuar cobertura uniforme.",
+      "ambiente": "Ambiente de laboratorio con dos tonos discretos.",
+      "sfx": [
+        "doble_pulso_dato"
+      ],
+      "source_ids": "SRC-001",
+      "style_id": "tatuaje_acuarela",
+      "capa": {
+        "tipo": "dato",
+        "valor": "2.3× nuclear / 94× mitocondrial",
+        "etiqueta": "Cobertura media de secuenciación",
+        "fuente": "SRC-001; coberturas medias reportadas."
+      },
+      "dramatic_beat": "El hallazgo pasa de detectar ADN a obtener información genómica diferenciada.",
+      "scene_function": "Explicar la diferencia entre cobertura nuclear y mitocondrial.",
+      "causal_bridge_from_previous": "El ADN endógeno está presente; ahora se muestra qué resolución alcanzó la secuenciación.",
+      "question_state": "La cobertura media fue 2.3× para nuclear y 94× para mitocondrial.",
+      "reason_to_continue": "Las dos cifras describen coberturas medias distintas, no genomas completos equivalentes.",
+      "new_information": "La fiabilidad debe contrastarse antes de presentar la técnica como útil."
+    },
+    {
+      "id": "scene_007",
+      "arc": "cierre_historia",
+      "duration_seconds": 9,
+      "narration": "El método puede variar con la especie, su elusividad, tamaño y tiempo en superficie; la fiabilidad se contrastó con muestras repetidas y biopsias pareadas de dos individuos.",
+      "on_screen_text": "Una señal contrastada",
+      "visual_description": "Muestras repetidas de soplo y dos pares de muestras de tejido aparecen lado a lado como comparación de validación, sin representar procedimientos adicionales.",
+      "image_prompt": "watercolor sketch tattoo flash, rough black ink sketch of the subject with big loose watercolor blots of deep blue, coral and gold splashing behind like ink bursts, drips running down, splatter dots, color escaping the lines, guide lines and repeated strokes visible, white paper, readable subject, vertical 9:16, no text, Muestras repetidas de soplo y dos pares de muestras de tejido aparecen lado a lado como comparación de validación, sin representar procedimientos adicionales.",
+      "ambiente": "Ambiente de laboratorio sobrio y roce leve de papel.",
+      "sfx": [
+        "dos_clics_de_comparacion"
+      ],
+      "source_ids": "SRC-001",
+      "style_id": "tatuaje_acuarela",
+      "dramatic_beat": "La evidencia se somete a contraste antes de extraer la conclusión.",
+      "scene_function": "Mostrar cómo se evaluó la consistencia de la señal genética.",
+      "causal_bridge_from_previous": "Ya conocemos la cobertura; falta saber si el resultado coincide entre muestras y con tejido.",
+      "question_state": "La fiabilidad se evaluó con muestras repetidas y biopsias pareadas de dos individuos.",
+      "reason_to_continue": "La validación es acotada y no convierte el método en universal.",
+      "new_information": "La limitación por especie y condiciones de muestreo prepara el cierre."
+    },
+    {
+      "id": "scene_008",
+      "arc": "reflexion_o_pregunta",
+      "duration_seconds": 9,
+      "narration": "El aliento puede aportar genomas sin una biopsia, aunque no es universal. ¿Qué otras poblaciones podrán estudiarse así? Esto fue Datos y ociosidades.",
+      "on_screen_text": "El aire también guarda ADN",
+      "visual_description": "La yubarta se sumerge; las gotas se transforman visualmente en una trama genética que se disuelve en el agua, sin añadir especies ni resultados nuevos.",
+      "image_prompt": "watercolor sketch tattoo flash, rough black ink sketch of the subject with big loose watercolor blots of deep blue, coral and gold splashing behind like ink bursts, drips running down, splatter dots, color escaping the lines, guide lines and repeated strokes visible, white paper, readable subject, vertical 9:16, no text, La yubarta se sumerge; las gotas se transforman visualmente en una trama genética que se disuelve en el agua, sin añadir especies ni resultados nuevos.",
+      "ambiente": "Oleaje que se aleja y cierre ambiental suave.",
+      "sfx": [
+        "ola_suave_final"
+      ],
+      "source_ids": "El cierre paga la promesa: una muestra genética puede viajar en el aire exhalado.",
+      "style_id": "tatuaje_acuarela",
+      "capa": "SRC-001",
+      "dramatic_beat": "La respuesta paga la pregunta inicial y devuelve la imagen del soplo.",
+      "scene_function": "Cerrar con el alcance real del método, formular la pregunta y colocar el sello de la serie.",
+      "causal_bridge_from_previous": "La comparación valida una posibilidad, pero la variación entre especies limita su alcance.",
+      "question_state": "El soplo puede aportar genomas sin biopsia, bajo condiciones específicas.",
+      "reason_to_continue": "No se afirma que funcione igual para todas las poblaciones.",
+      "new_information": "La pregunta final abre el tema sin añadir una afirmación nueva."
+    }
+  ],
+  "cortinilla_fuentes": {
+    "duration_seconds": 6,
+    "titulo": "Fuentes",
+    "aviso": "Referencias declaradas; no se generan medios en esta preproducción.",
+    "firma": "Datos y ociosidades",
+    "source_ids": [
+      "SRC-001",
+      "SRC-002"
+    ]
+  },
+  "audio": {
+    "cama": "arpegio",
+    "music_asset": null,
+    "music_plan": "Arpegio tenue y sostenido, con espacio para la narración; solo plan de producción, sin audio generado.",
+    "music_license": null
+  },
+  "export": {
+    "resolution": "1080x1920",
+    "fps": 30,
+    "render_status": "NOT_GENERATED"
+  },
+  "publicacion": {
+    "status": "PENDIENTE_DECISION_GROK",
+    "platforms": [
+      "YouTube Shorts",
+      "TikTok",
+      "Facebook Reels"
+    ],
+    "note": "No publicar ni programar desde preproducción textual."
+  },
+  "production_mode": "storyboard_only",
+  "validation_notes": [
+    "Borrador en proyectos; no contiene narrative_qa porque la revisión narrativa debe ocurrir en una pasada posterior e independiente.",
+    "No se ejecutó el validador estructural oficial en este run; no promover."
+  ],
+  "linea_tematica_provisional": "Naturaleza / bichos — mamíferos marinos y genómica no invasiva.",
+  "approved_assets": [],
+  "risk_notes": [
+    "El 84 por ciento es el promedio de lecturas endógenas; no es porcentaje de muestras ni de individuos.",
+    "Las coberturas 2.3× y 94× son promedios reportados; no implican cobertura uniforme ni genomas completos de las 58 muestras.",
+    "La geometría cartográfica es una caja regional de referencia; no son coordenadas exactas de las muestras.",
+    "La técnica no se presenta como sustituto universal de biopsias."
+  ]
+}

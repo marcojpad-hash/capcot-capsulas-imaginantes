@@ -298,3 +298,28 @@ El 22-nov 07:00 está libre en `main/data/publicaciones.json` y en `feature/proy
 Creado y releído `proyectos/2026-11-22_voyager-1-un-dia-luz/storyboard.json`, commit `1450f262225e16d08ee4a98148441d0a0a4ca0a4`. Tiene 8 escenas, 180 palabras, 78 s de escenas + 6 s de cortinilla = 84 s; estilo `risografia`, estructura `mito_vs_dato` y cama `pizzicato`. El mapa sitúa los tres complejos DSN con coordenadas publicadas de Goldstone (35.4266667, -116.89), Madrid (40.42917, -4.24972) y Canberra (-35.40139, 148.98167); la red y su separación se apoyan en NASA/JPL y las páginas cartográficas se usan solo como localizadores. Observación, cálculo, inferencia y recomendación quedaron separados en `analisis`.
 
 La pieza permanece en `proyectos/`: sin `narrative_qa` (corresponde a auditoría posterior), sin `ESTADO_EJECUCION`, sin medios, sin assets, sin cola y sin programación. No se ejecutó el validador estructural oficial ni se promovió.
+
+
+### Actualización de investigación y siguiente slot — run 13, 2026-11-20 22:44 CDMX
+
+#### Ingesta de feeds
+
+- Se reintentaron los feeds definidos en `scripts/tendencias.py`. En este entorno no se obtuvo XML utilizable para ScienceDaily, Phys.org, NASA, ESA, Nature, EurekAlert, SINC ni UNAM Global; no se inventan códigos HTTP cuando el lector no los expone.
+- Errores exactos ya registrados para esta ruta de ingesta: ScienceDaily Top Science devolvió `(400) Unsupported content-type: application/xml`; Google Trends RSS México devolvió `URL https://trends.google.com/trending/rss?geo=MX is not accessible via this tool`.
+- Respaldo oficial: la página HTML de Google Trends México abrió; las tendencias visibles no aportaron una señal científica nueva que justificara sustituir la selección por popularidad.
+
+#### Candidatos recientes revisados
+
+1. **ADN de yubarta desde el soplo** — *Molecular Ecology Resources*, 17-nov-2026, DOI [10.1111/1755-0998.70219](https://doi.org/10.1111/1755-0998.70219). Fuente primaria: 58 muestras de soplo de 26 yubartas; 84% de lecturas endógenas en promedio; cobertura media 2.3× nuclear y 94× mitocondrial; contraste con muestras repetidas y biopsias pareadas de dos individuos. DOI resuelto a la página editorial Wiley. **Seleccionado** para 22-nov 17:00.
+2. **Comunicación gravitatoria a través de una pared** — *Science Advances*, publicación 20-nov-2026, DOI 10.1126/sciadv.aee0802. PubMed confirma el artículo y su resumen: mensaje de unos 0.7 m a través de pared de ladrillo, a 1 bit/min. La resolución directa del DOI no quedó disponible en esta sesión; estado `PENDING_DOI_RESOLUTION`, no se creó storyboard.
+3. **Toxina que remodela la piel del pez pulmonado africano** — *Cell*, 17-nov-2026, DOI 10.1016/j.cell.2026.10.038. PubMed confirma el artículo y el mecanismo de Protop-CrTX-A; la resolución directa del DOI no quedó disponible en esta sesión. Estado `PENDING_DOI_RESOLUTION`, no se creó storyboard.
+4. **Lluvias y floración en Atacama asociadas a El Niño** — NASA Earth Observatory, 19-nov-2026. Fuente oficial, pero el tema El Niño ya tiene antecedente editorial en el canal; `NO_DUPLICAR` hasta una decisión editorial que justifique un ángulo distinto.
+5. **Nube de sodio de Europa** — nota del 20-nov; el estudio primario localizado está fechado el 10-oct-2026, fuera de la ventana de siete días para una novedad primaria. No seleccionado.
+
+#### Selección y rotación
+
+- Se creó `proyectos/2026-11-22_yubarta-genoma-soplo/storyboard.json` para el 22-nov 17:00 CDMX, dentro de la ventana activa 16:30–18:00. La consulta de `main/data/publicaciones.json` no encontró publicación ni programación para 22-nov 17:00; en feature solo estaba el borrador Voyager a las 07:00. El slot vespertino no presenta conflicto exacto.
+- Rotación: `tatuaje_acuarela` (catálogo, sublínea naturaleza/océano/biología), estructura `pregunta`, cama `arpegio`. El estilo no aparece entre los últimos 15 registros de rotación de main; la cama no está entre las dos últimas.
+- El mapa usa únicamente la caja regional publicada por Hakai para el territorio Gitga'at, no puntos de muestreo ni trayectorias inventadas. Fuentes: DOI primario del artículo y DOI del catálogo Hakai `10.21966/2aap-hn61`.
+- Borrador: 8 escenas, 180 palabras, 78 s de escenas + 6 s de cortinilla = 84 s. Voz `es-MX-JorgeNeural` +7%, pitch -2Hz. Sin `narrative_qa`, sin `ESTADO_EJECUCION.md`, sin medios, sin assets, sin cola y sin programación.
+

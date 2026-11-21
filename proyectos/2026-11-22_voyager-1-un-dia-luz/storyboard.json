@@ -430,5 +430,23 @@
     "No confundir señal portadora con recepción de datos científicos o de ingeniería.",
     "El mapa representa los tres complejos DSN y no identifica cuál recibió la señal concreta del hito.",
     "Las coordenadas de los complejos son localizadores cartográficos; los claims de red y comunicación se apoyan en NASA/JPL."
-  ]
+  ],
+  "narrative_qa": {
+    "status": "FAIL",
+    "score": 83,
+    "review_basis": "lectura_en_frio_solo_narracion",
+    "checks": {
+      "pregunta_central_reconstruible": true,
+      "apertura_in_medias_res": true,
+      "progresion_por_escena": true,
+      "transiciones_causales": true,
+      "giro_cientifico_explicado": true,
+      "limite_evidencia_explicito": true,
+      "payoff_cierre_apertura": true
+    },
+    "critical_flags": [
+      "FECHA_DE_HITO_Y_CONFIRMACION_CONFUNDIDAS"
+    ],
+    "reviewer_role": "auditor_capcot_independiente"
+  }
 }
