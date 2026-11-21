@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
 """Capas informativas animadas (no solo Ken Burns): mapa, gráfico y dato grande. Render con matplotlib -> mp4.
 Campo por escena en el storyboard: scenes[].capa = {"tipo": "mapa"|"grafico"|"dato", "plano": índice (def. último), ...}
-  mapa:    {"region": [lon0, lon1, lat0, lat1], "puntos": [{"nombre","lon","lat"}], "flechas": [[lon,lat,lon,lat,"etiqueta"]], "titulo"}
+  mapa:    terrestre: {"region": [lon0, lon1, lat0, lat1], "puntos": [{"nombre","lon","lat"}]}
+           celeste: {"puntos": [{"nombre","ra_deg","dec_deg","sistema_coordenadas"}], "region_ra_dec" opcional}
   grafico: {"x": [...], "y": [...], "titulo", "unidad", "fuente"}  (línea que se dibuja progresivamente)
   dato:    {"valor": "+0.5 °C", "etiqueta": "umbral de El Niño (NOAA)", "fuente"}
 Mapa base: Natural Earth 110m (dominio público), descargado a assets/geo/ (gitignored) por scripts/descargar_geo.sh."""
-import json, os, subprocess, tempfile
+import json, math, os, subprocess, tempfile
 import matplotlib; matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 from matplotlib.patches import FancyArrowPatch
@@ -21,8 +22,74 @@ def _texto(f, titulo, fuente=""):
     if titulo: f.text(0.08, 0.86, titulo, fontsize=30, weight="bold", color=TINTA, family=FONT, wrap=True)
     if fuente: f.text(0.08, 0.24, "Fuente: " + fuente, fontsize=15, color="#555", family=FONT)
 
+def _celestial_bounds(c):
+    """Devuelve [RA mínima, RA máxima, Dec mínima, Dec máxima] para una carta celeste."""
+    points = c.get("puntos", [])
+    celestial = any("ra_deg" in point or "dec_deg" in point for point in points)
+    if not celestial:
+        return None
+    if not points or any("ra_deg" not in point or "dec_deg" not in point for point in points):
+        raise ValueError("Una carta celeste requiere RA y Dec en todos sus puntos.")
+
+    ras, decs = [], []
+    for point in points:
+        ra, dec = float(point["ra_deg"]), float(point["dec_deg"])
+        if not math.isfinite(ra) or not 0 <= ra < 360:
+            raise ValueError(f"Ascensión recta fuera de rango: {ra}")
+        if not math.isfinite(dec) or not -90 <= dec <= 90:
+            raise ValueError(f"Declinación fuera de rango: {dec}")
+        ras.append(ra)
+        decs.append(dec)
+
+    region = c.get("region_ra_dec")
+    if isinstance(region, dict):
+        ra0, ra1 = float(region["ra_min"]), float(region["ra_max"])
+        dec0, dec1 = float(region["dec_min"]), float(region["dec_max"])
+    elif isinstance(region, (list, tuple)) and len(region) == 4:
+        ra0, ra1, dec0, dec1 = (float(value) for value in region)
+    else:
+        field = float(c.get("field_of_view_deg", 2.0))
+        if not math.isfinite(field) or field <= 0 or field > 180:
+            raise ValueError("field_of_view_deg debe estar entre 0 y 180 grados.")
+        dec_center = sum(decs) / len(decs)
+        ra_pad = min(180.0, field / (2 * max(abs(math.cos(math.radians(dec_center))), 0.15)))
+        dec_pad = field / 2
+        ra0, ra1 = max(0.0, min(ras) - ra_pad), min(360.0, max(ras) + ra_pad)
+        dec0, dec1 = max(-90.0, min(decs) - dec_pad), min(90.0, max(decs) + dec_pad)
+
+    if not (0 <= ra0 < ra1 <= 360 and -90 <= dec0 < dec1 <= 90):
+        raise ValueError("region_ra_dec debe ser [RA mínima, RA máxima, Dec mínima, Dec máxima] válida.")
+    return ra0, ra1, dec0, dec1
+
+
 def _mapa(f, c, p):
-    ax = f.add_axes([0.04, 0.36, 0.92, 0.46]); ax.set_facecolor(AGUA)
+    ax = f.add_axes([0.04, 0.36, 0.92, 0.46])
+    points = c.get("puntos", [])
+    celestial_bounds = _celestial_bounds(c)
+    if celestial_bounds is not None:
+        ra0, ra1, dec0, dec1 = celestial_bounds
+        ax.set_facecolor(TINTA)
+        ax.set_xlim(ra1, ra0)  # Convención de cartas celestes: RA aumenta hacia la izquierda.
+        ax.set_ylim(dec0, dec1)
+        ax.grid(True, color=AGUA, alpha=0.35, linestyle="--")
+        ax.set_xlabel("Ascensión recta (°)", fontsize=18, color=PAPEL)
+        ax.set_ylabel("Declinación (°)", fontsize=18, color=PAPEL)
+        ax.tick_params(labelsize=14, colors=PAPEL)
+        [spine.set_color(PAPEL) for spine in ax.spines.values()]
+        for point in points:
+            if p > 0.15:
+                ra, dec = float(point["ra_deg"]), float(point["dec_deg"])
+                ax.plot(ra, dec, "o", ms=14, color=ACENTO, mec=PAPEL, mew=2)
+                label = point.get("etiqueta") or point.get("nombre") or point.get("id", "Objeto")
+                coord = f"RA {ra:.4f}° · Dec {dec:+.4f}°"
+                ax.annotate(
+                    f"{label}\\n{coord}", (ra, dec), xytext=(0, 18),
+                    textcoords="offset points", fontsize=16, weight="bold",
+                    color=PAPEL, ha="center", family=FONT,
+                )
+        return
+
+    ax.set_facecolor(AGUA)
     gj = json.load(open(os.path.join(R, "assets", "geo", "ne_110m_land.geojson")))
     for ft in gj["features"]:
         g = ft["geometry"]; polys = g["coordinates"] if g["type"] == "MultiPolygon" else [g["coordinates"]]
