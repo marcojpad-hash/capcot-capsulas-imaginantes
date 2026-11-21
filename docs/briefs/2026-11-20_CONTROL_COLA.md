@@ -672,3 +672,7 @@ No se modificaron `data/*.json`, main, secretos, permisos, decisiones editoriale
 ### Actualización de CI posterior al run 11 — 20-nov-2026 20:20 CDMX
 
 Los checks dinámicos de PR #3 terminaron después de la primera lectura del run 11. CodeQL **SUCCESS** para los tres commits de contenido `9522502`, `db4f094` y `bdec12e`, con ambos jobs `Analyze (python)` y `Analyze (actions)` en SUCCESS. Los commits de radar y control (`c6b01d8` y `3169520`) también tienen CodeQL SUCCESS en ambos jobs. Esto es análisis estático de código; **no** ejecuta `validar_storyboard.py`, no comprueba DOI/Crossref ni sustituye narrative_qa. Se corrige así la nota anterior que decía que todavía no había status checks publicados.
+
+### Corrección de DOI del borrador Homo erectus — 20-nov-2026 20:22 CDMX
+
+El enlace DOI seguido desde PubMed resolvió y redirigió al artículo Nature correcto. Se actualizó y releyó `proyectos/2026-11-21_homo-erectus-selva-tropical/storyboard.json`: `sources[SRC-001].verification_status=VERIFICADO_RESOLVEDOR` y `doi_verification_status=VERIFICADO_RESOLVEDOR`. Crossref REST no fue accesible. La compuerta DOI queda cerrada por resolvedor; siguen pendientes la auditoría narrativa independiente y la ejecución del validador estructural oficial. No se creó QA ni se promovió.
