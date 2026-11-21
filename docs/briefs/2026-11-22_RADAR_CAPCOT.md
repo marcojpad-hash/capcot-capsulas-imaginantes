@@ -116,3 +116,18 @@ Se usaron páginas oficiales y artículos primarios como respaldo. El fallo de u
 - **Cálculo:** conversión RA/Dec a grados y razón aproximada de masas 0.10.
 - **Inferencia:** la envoltura común y la fusión son la interpretación del equipo del paper.
 - **Recomendación editorial:** usar AT 2025abao en 22-nov 13:30; mantener libres los demás slots hasta tener mapa y fuente temporalmente aptos.
+
+
+---
+
+## Corrección de ocupación desde main — 2026-11-21, corte 15:55 CDMX
+
+La tabla original de este radar no había reconciliado los tres horarios de main. El plan de producción de main, `docs/briefs/2026-11-21_PRODUCCION_SEMANA_23-28nov.md`, registra para el domingo 22 de noviembre: Salem 07:00, Gutenberg 13:30 y Ada 17:00 (programación reportada desde YouTube). Por tanto, los tres slots de la rama feature quedan bloqueados:
+
+- 07:00 — Voyager 1: `CONFLICTO_DE_SLOT_ENTRE_RAMAS` + `PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR`.
+- 13:30 — Bao: `CONFLICTO_DE_SLOT_ENTRE_RAMAS` + `PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR`.
+- 17:00 — Yubarta: `CONFLICTO_DE_SLOT_ENTRE_RAMAS` + `PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR`.
+
+No se reasigna ninguno a otra hora. El slot 19:00 permanece libre en el plan consultado; 23:30 sigue reservado para dato del día, sin candidato seleccionado. La programación de 22-nov está documentada en main, pero los IDs de plataforma de esos tres slots no aparecen en `data/publicaciones.json`; se conserva el bloqueo preventivo y no se afirma una verificación independiente de plataforma.
+
+Para el 23-nov, main registra Nudillos a las 07:00; el proyecto de biodiversidad a las 13:30 no comparte ese slot. Sigue `NOT_DISPATCHABLE` por QA narrativo FAIL/82 y fuente suplementaria `PENDING_SOURCE`.

@@ -686,3 +686,31 @@ El árbol completo de feature contiene exactamente ocho archivos de imagen: los 
 ## 12. Exclusiones del lote
 
 Se respetaron las exclusiones expresas: slots 23:30 de “dato del día” dentro del lote 5–7-nov, kids 03-nov 07:00 y Machu Picchu 04-nov 19:00. No se leyó su narración, no se registró QA, no se validó estructura ni se creó/movió/promovió ninguna copia para esos slots. La presencia de un nombre/ruta en el inventario de 88 es solo inventario de rutas; no implica auditoría de contenido del artefacto excluido.
+
+
+---
+
+## 21. Operador único — relectura y ejecución del 2026-11-21, 15:55–16:10 CDMX
+
+### Inventario y fuente de verdad
+- Releído el árbol recursivo de feature en HEAD inicial `6a13185adfb406d981352c6c8fc294e69560005a`: 101 directorios bajo `proyectos/`, 88 archivos `storyboard.json`; 13 directorios no contienen storyboard.
+- `cola/estado/`: cero archivos. Para los 88 storyboards, la recepción individual no está acreditada: `RECEPCION_GROK_NO_CONFIRMADA`. No se creó ni editó ningún estado Grok.
+- `cola/entrada/`: dos carpetas heredadas al inicio; ninguna entrada plana `*.json`. El paquete Robot 09-nov permanece anidado y `NOT_DISPATCHABLE`; su estado registra `PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR` y main contiene video_id/publishAt para 21-nov 19:00. No se tocó ni se canceló esa programación.
+- Ratas Topo 11-nov: la carpeta de entrada contenía únicamente `frames/` (ocho PNG y `.gitkeep`), mientras el storyboard, fuentes y estado ya estaban en `cola/bloqueados/`. Se completó el movimiento de esos nueve blobs a `cola/bloqueados/2026-11-11_dato-ratas-topo-damaraland/frames/`, usando los mismos SHA de Git; después se retiraron los nueve paths de entrada. Verificado: los nueve SHA están en bloqueados y cero paths originales permanecen en entrada. Commit de movimiento: `d6fea1f766d16e30b289e8656514b880d2208667`. No se generó ni alteró ningún medio.
+- `salidas/`: no hay salida del 21–23 nov para los siete proyectos actuales. Main sí conserva programación y publicaciones anteriores; no se deduce recepción Grok de ello.
+
+### Proyectos recientes y slots
+- 21-nov: Fentale 23:30 conserva QA PASS/90; DOI sigue `PENDIENTE_RESOLVEDOR`, no existe paquete plano y no se promovió. Homo erectus 07:00 y Pulsar 17:00 conservan QA FAIL. Los tres siguen `NOT_DISPATCHABLE`.
+- 22-nov: Voyager 07:00 FAIL/83, Bao 13:30 FAIL/84 y Yubarta 17:00 PASS/90. Main documenta Salem 07:00, Gutenberg 13:30 y Ada 17:00 en `docs/briefs/2026-11-21_PRODUCCION_SEMANA_23-28nov.md`; los tres slots feature quedan `CONFLICTO_DE_SLOT_ENTRE_RAMAS` y `PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR`. Se añadieron notas de riesgo a Voyager y Yubarta; Bao ya las tenía. No se reasignó ningún storyboard.
+- 23-nov: Biodiversidad 13:30 no colisiona con Nudillos 07:00 de main; conserva QA FAIL/82 y fuente suplementaria `PENDING_SOURCE`.
+- No se repitió ningún PASS narrativo sin cambio de narración. No se escribió en `cola/entrada`.
+
+### Radar y automatizaciones
+- Se reintentaron los RSS de `scripts/tendencias.py`; los errores exactos y su naturaleza de error del lector quedaron añadidos a `2026-11-21_RADAR_CAPCOT.md`. La página oficial HTML de Google Trends México mostró 229 tendencias; los primeros 25 resultados visibles fueron de fútbol/entretenimiento, sin candidato científico visible.
+- El commit `6a13185` añadió una instrucción de copiar Fentale a cola. No se ejecutó: la orden maestra vigente limita al investigador a `proyectos/`; la promoción exige compuertas independientes, DOI/resolver y ausencia de conflicto. Fentale conserva DOI pendiente; no se creó carpeta de cola.
+- No se disparó `capcot-grok-dispatch.yml`, no se enviaron payloads, no se consultaron valores de secretos y no se alteró `data/*.json`.
+- PR #3, #6, #13 y #14 siguen abiertos; no se fusionó ninguno. PR #14 conserva QA histórico FAIL/82 y declara que no ejecutó `validar_storyboard.py --check-doi`; no se atribuye validación estructural ni DOI.
+
+### Estado
+`VERIFICADO`: movimiento de Ratas Topo, hashes de destino, ausencia de paths originales, inventario de 88 storyboards, ausencia global de estados Grok, notas de conflicto en Voyager/Yubarta y corrección del radar 22-nov.
+`PENDIENTE`: resolver DOI de Fentale/Bao/biodiversidad, completar fuentes del suplemento, obtener acuses Grok observables, validar estructura mediante el script real y resolver los conflictos de slots en main. No hay autorización para redispatchar ni para modificar main.

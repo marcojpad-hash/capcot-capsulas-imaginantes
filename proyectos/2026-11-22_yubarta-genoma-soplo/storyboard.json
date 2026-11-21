@@ -388,7 +388,8 @@
     "El 84 por ciento es el promedio de lecturas endógenas; no es porcentaje de muestras ni de individuos.",
     "Las coberturas 2.3× y 94× son promedios reportados; no implican cobertura uniforme ni genomas completos de las 58 muestras.",
     "La geometría cartográfica es una caja regional de referencia; no son coordenadas exactas de las muestras.",
-    "La técnica no se presenta como sustituto universal de biopsias."
+    "La técnica no se presenta como sustituto universal de biopsias.",
+    "CONFLICTO_DE_SLOT_ENTRE_RAMAS: main/docs/briefs/2026-11-21_PRODUCCION_SEMANA_23-28nov.md registra Ada para 2026-11-22 17:00 CDMX. PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR: la agenda de main documenta programación en ese slot; no promover ni redispatchar Yubarta."
   ],
   "narrative_qa": {
     "status": "PASS",

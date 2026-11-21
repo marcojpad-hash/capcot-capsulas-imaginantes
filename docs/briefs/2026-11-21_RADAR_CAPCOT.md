@@ -257,3 +257,21 @@ La comprobación inicial del lead “Subsurface marine heat surge” solo encont
 - El storyboard Bao de 22-nov 13:30 queda marcado `CONFLICTO_DE_SLOT_ENTRE_RAMAS` en `risk_notes`.
 
 Esta corrección no modifica `data/*.json`, publicaciones, horarios ni decisiones editoriales.
+
+
+---
+
+## Reconsulta de respaldo oficial — 2026-11-21, 15:57 CDMX
+
+El RSS de Google Trends México no fue accesible mediante el lector de esta ejecución; se consultó la página oficial HTML de Tendencias actuales, México, últimas 24 horas. Mostró 229 tendencias, 25 por página. La primera página estuvo dominada por fútbol y entretenimiento; no apareció un candidato de ciencia o naturaleza entre los primeros 25. Esto no se usa como inferencia de audiencia ni sustituye fuentes científicas primarias.
+
+Errores observados al reintentar los RSS configurados en `scripts/tendencias.py`:
+- Google Trends RSS: URL no accesible mediante esta herramienta.
+- ScienceDaily (science, health y space): HTTP 400, tipo `application/xml` no admitido por el lector.
+- Phys.org: HTTP 400, tipo `text/xml` no admitido.
+- NASA News Release: HTTP 400, tipo `application/rss+xml` no admitido.
+- ESA Space Science: HTTP 404 Not Found.
+- Nature: HTTP 400, tipo `application/rss+xml` no admitido.
+- EurekAlert, SINC y UNAM Global: URL no accesible mediante esta herramienta.
+
+Estos son errores del lector/conector observado, no prueba de que los servidores de origen estén caídos. Se reutilizan los candidatos y fuentes primarias ya documentados en este radar; no se inventa un candidato ni se abre un slot ocupado.

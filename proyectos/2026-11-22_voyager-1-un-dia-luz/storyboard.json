@@ -429,7 +429,8 @@
     "No afirmar que Voyager 1 viaja a la velocidad de la luz; esa velocidad corresponde a la propagación de la señal.",
     "No confundir señal portadora con recepción de datos científicos o de ingeniería.",
     "El mapa representa los tres complejos DSN y no identifica cuál recibió la señal concreta del hito.",
-    "Las coordenadas de los complejos son localizadores cartográficos; los claims de red y comunicación se apoyan en NASA/JPL."
+    "Las coordenadas de los complejos son localizadores cartográficos; los claims de red y comunicación se apoyan en NASA/JPL.",
+    "CONFLICTO_DE_SLOT_ENTRE_RAMAS: main/docs/briefs/2026-11-21_PRODUCCION_SEMANA_23-28nov.md registra Salem para 2026-11-22 07:00 CDMX. PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR: la agenda de main documenta programación en ese slot; no promover ni redispatchar Voyager."
   ],
   "narrative_qa": {
     "status": "FAIL",
