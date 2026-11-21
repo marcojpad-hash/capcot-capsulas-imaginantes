@@ -85,7 +85,7 @@ Se usaron páginas oficiales y artículos primarios como respaldo. El fallo de u
 - **Proyecto:** `2026-11-22_bao-estrella-fusion-andromeda`
 - **Fecha objetivo / slot:** 2026-11-22 / 13:30 CDMX
 - **Estilo:** `art_deco_poster`, prompt_base copiado literalmente del catálogo.
-- **Narración:** 187 palabras; 8 escenas; 78 s de escenas + 6 s de cortinilla = 84 s.
+- **Narración:** 192 palabras; 8 escenas; 78 s de escenas + 6 s de cortinilla = 84 s.
 - **Gancho:** “Bao llevaba años cambiando de brillo” (6 palabras).
 - **Mapa:** punto celeste AT 2025abao con RA/Dec publicados por NASA y conversión explícita a grados.
 - **Dato/gráfico:** masas estimadas de 7 M☉ y 0.7 M☉; observación de Webb 47 días después del pico.
