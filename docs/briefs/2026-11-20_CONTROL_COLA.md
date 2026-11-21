@@ -778,3 +778,49 @@ CodeQL terminó **SUCCESS** para los últimos tres commits de la revalidación: 
 - La primera lectura detectó `source_ids` serializados como cadenas en escenas 5–8. La corrección intermedia reparó 5–6, pero la segunda lectura encontró todavía 7–8 y una propiedad `capa` de tipo cadena en la escena 8. Se corrigieron las cuatro referencias a arreglos y se retiró esa propiedad espuria.
 - Lectura final: las ocho escenas tienen `source_ids` como arreglos; las únicas capas son el mapa regional de la escena 3 y las tarjetas de datos de las escenas 5–6. La narración, los claims, las fuentes, el slot y las duraciones no cambiaron.
 - Commits: creación `2015a5a4b5a6df59e68d90d9fd26d6ea12e35c98`; corrección intermedia `510e7069dac5565191e5bd5e4bd51bcd87e7b02d`; corrección final `e94b1318a51c78f5a821a3d55ef69e010e8de839`.
+
+
+### Run 14 — 2026-11-21
+
+#### QA narrativa y correcciones verificadas
+
+- `2026-11-22_yubarta-genoma-soplo`: lectura en frío posterior al borrador, usando solo la narración concatenada. Se registró `narrative_qa=PASS`, score 90, siete checks verdaderos, `review_basis=lectura_en_frio_solo_narracion`, sin flags críticas. No se reescribió narración ni claims.
+- La misma revisión detectó que el mapa regional de Hakai tenía `bounds` en orden W,S,E,N, mientras el validador interpreta lat_min,lon_min,lat_max,lon_max. Se corrigió únicamente el orden de las coordenadas a `[53.18,-129.6,53.68,-129.0]`; el polígono de la fuente primaria del catálogo coincide con esos límites.
+- El DOI del estudio principal, `10.1111/1755-0998.70219`, aparece en PubMed y en la ficha editorial del artículo; no se ejecutó el validador oficial con `--check-doi`. No se declara validación estructural oficial.
+- Corrección de validador: `scripts/validar_storyboard.py` ahora acepta puntos celestes RA/Dec declarados (rango RA 0–<360°, Dec −90–90°) además de puntos terrestres lat/lon. Se añadieron tres pruebas unitarias para coordenadas terrestres, RA/Dec válidas y RA/Dec fuera de rango. Prueba local aislada del helper: 5/5 casos. El conjunto completo de tests del repositorio no se ejecutó.
+- La corrección elimina el falso rechazo de `2026-11-19_dato-estrella-dentro-de-estrella`: su punto NASA está expresado correctamente en RA/Dec J2000, no en latitud/longitud terrestre. Su DOI sigue pendiente y no se promueve.
+- Commits: `5abae820ba8ac3a244db8d081738c979d4d2aaff` (QA Yubarta y bounds), `45c8e81fb11ded7d85c1ec1732aa1e057ce3d966` (validador RA/Dec), `f630a99e01b07c6c5a9f17f395526c087479cf55` (pruebas RA/Dec). Lecturas de vuelta confirmaron los blobs.
+
+#### Estado de los proyectos recientes
+
+Inventario de 18–22-nov, 11 storyboards:
+
+| Proyecto | QA | Score | Resultado de esta revisión |
+|---|---:|---:|---|
+| Catorce campos hidrotermales | FAIL | 68 | No promover |
+| Kuroshio | PASS | 90 | Sin cambio narrativo; no repetir QA |
+| Oro poroso | PASS | 91 | Estructura `mecanismo_experimental` no reconocida por la rotación actual |
+| Estrella dentro de estrella | PASS | 90 | Coordenadas celestes admitidas por el validador actualizado; DOI pendiente |
+| Sapropeles | PASS | 91 | Sin cambio narrativo; no repetir QA |
+| Marea cerebral | PASS | 92 | Sin cambio narrativo; no repetir QA |
+| Fentale | PASS | 90 | `paradoja_mecanica` no reconocida por la rotación actual |
+| Homo erectus | FAIL | 83 | No promover |
+| Púlsar gamma | FAIL | 83 | No promover |
+| Voyager 1 | FAIL | 83 | No promover |
+| Yubarta | PASS | 90 | Slot no autorizado por el horario vigente de main; no promover |
+
+Los 11 archivos `cola/estado/<project_id>.json` devolvieron HTTP 404 y se registran como `RECEPCION_GROK_NO_CONFIRMADA`. No se creó ni editó ningún estado Grok.
+
+#### Lote 5–7-nov y producción previa
+
+- Los 12 project_id coinciden con los 12 slots de `data/horario_semana_2026-11-01_07.json`: 2 PASS (Venus 88, Arena cantante 94) y 10 FAIL. Sus narraciones no cambiaron desde el commit de QA del 18-nov; no se repitieron los PASS.
+- Los 12 estados Grok devolvieron HTTP 404: `RECEPCION_GROK_NO_CONFIRMADA`.
+- Siete expedientes conservan sidecars de TikTok/Facebook con estado publicado o programado: Venus, Palomitas, Ballena azul, Aguacate negro, Ranas congeladas, Arena cantante y Hielo caliente. Se clasifican como `PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR`; sus referencias de MP4 no prueban que los medios estén dentro del árbol GitHub.
+- Los otros cinco no tienen sidecars de plataforma en la rama; sus QA FAIL o fechas vencidas impiden promoción retroactiva. No se movió, canceló ni redispatchó ninguna pieza.
+
+#### Horarios, inventario y selector
+
+- `data/*.json` se leyó en solo lectura. La rama feature está atrasada respecto de main: feature tiene 22 publicaciones hasta 1-nov, 27 registros de rotación hasta 31-oct y 74 vistas hasta 28-oct; main tiene 48 publicaciones hasta 22-nov, 39 registros de rotación hasta 21-nov y 106 vistas hasta 18-nov.
+- `data/horarios.json` de feature conserva el corte del 9-nov; main fue actualizado el 16-nov (commit `8087ecb`) y declara ventanas vigentes 06:30–07:30 y 13:00–14:30 CDMX, con tarde a prueba. `scripts/rotacion.py` todavía codifica cinco ventanas antiguas. Por eso el slot 17:00 de Yubarta no queda autorizado por la política más reciente de main, aunque no exista colisión de publicación para ese project_id. No se cambió el slot ni ningún `data/*.json`.
+- `capcot-grok-dispatch.yml` sigue seleccionando solo JSON planos en la raíz de `cola/entrada`; no se disparó. Los proyectos permanecen en `proyectos/`, no son dispatchables desde esa ruta.
+- PR #3 sigue draft y abierto, con 684 archivos cambiados. PR #14 sigue abierto y conserva `asset_filename` en su diff; PR #6 y #4 siguen abiertos. Los checks CodeQL de PR #3 para los commits de storyboard, validador y tests terminaron SUCCESS; no son el validador estructural ni `--check-doi`. No se fusionó ni cerró ningún PR.
