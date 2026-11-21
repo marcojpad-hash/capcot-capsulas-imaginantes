@@ -7,8 +7,8 @@
 - **Estado:** `PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR`
 - **Preproducción textual:** COMPLETADA (QA factual + narrative_qa PASS)
 - **Fuente primaria:** VERIFICADA (Caltech + DARPA, WebFetch 9-nov)
-- **Medios:** VERIFICADOS EN `main` — `capsula.mp4`, `portada.jpg` y nueve frames `scene_001.jpg`–`scene_009.jpg`.
-- **Audio / video:** `capsula.mp4` existe en `main`; QA audiovisual registra 21/21 checks y duración 87.57 s.
+- **Medios:** `MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO` (reconciliación run 12: la carpeta `salidas/2026-11-09_dato-robot-ensambla-orbita/` y los archivos `capsula.mp4`/`portada.jpg` devuelven 404 en `main`; `frames/` en `feature` contiene solo `.gitkeep`).
+- **Audio / video:** no verificables en el árbol actual. Los 21/21 checks y 87.57 s quedan como registro histórico de QA, no como verificación reproducible del medio en el repositorio.
 - **Publicación/programación:** `PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR`; YouTube ID `ZG4iQgmWrLI`, programado para 2026-11-21 19:00 CDMX (2026-11-22T01:00:00Z). TikTok y Facebook también figuran programados para ese slot, sin IDs de publicación.
 
 ## Archivos del paquete
@@ -30,3 +30,12 @@ La versión `main` contiene producción posterior para este mismo project_id: `c
 El `qa.json` de `main` contiene 21/21 checks true y mide 87.57 s, dentro del contrato 75–90 s. Esto es QA audiovisual, independiente del `narrative_qa` PASS/90 del storyboard. El paquete no se redispatcha.
 
 En la rama `feature`, `cola/estado/2026-11-09_dato-robot-ensambla-orbita.json` devuelve 404: `RECEPCION_GROK_NO_CONFIRMADA`. La existencia de producción en `main` no sustituye el acuse de recepción.
+
+
+## Corrección de evidencia — run 12, 2026-11-20
+
+La reconciliación previa que afirmaba que los medios estaban en `main` no se pudo reproducir. Se consultaron directamente la carpeta de salida, `capsula.mp4` y `portada.jpg`; los tres recursos devolvieron HTTP 404. La carpeta de frames en la rama de trabajo solo contiene `.gitkeep`. Por tanto, el estado vigente es `MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO`; no se borró ni regeneró ningún recurso.
+
+Se conserva `PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR`: `main/data/publicaciones.json` mantiene el YouTube ID `ZG4iQgmWrLI` y `publishAt=2026-11-22T01:00:00Z` (21-nov, 19:00 CDMX), además de programación registrada para TikTok y Facebook. No cancelar ni redispatchar.
+
+`cola/estado/2026-11-09_dato-robot-ensambla-orbita.json` sigue devolviendo 404: `RECEPCION_GROK_NO_CONFIRMADA`. El marcador en `handoffs/grok_inbox` no sustituye el acuse de estado.
