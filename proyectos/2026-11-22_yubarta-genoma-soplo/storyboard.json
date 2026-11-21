@@ -312,7 +312,9 @@
       "sfx": [
         "dos_clics_de_comparacion"
       ],
-      "source_ids": "SRC-001",
+      "source_ids": [
+        "SRC-001"
+      ],
       "style_id": "tatuaje_acuarela",
       "dramatic_beat": "La evidencia se somete a contraste antes de extraer la conclusión.",
       "scene_function": "Mostrar cómo se evaluó la consistencia de la señal genética.",
@@ -333,9 +335,10 @@
       "sfx": [
         "ola_suave_final"
       ],
-      "source_ids": "El cierre paga la promesa: una muestra genética puede viajar en el aire exhalado.",
+      "source_ids": [
+        "SRC-001"
+      ],
       "style_id": "tatuaje_acuarela",
-      "capa": "SRC-001",
       "dramatic_beat": "La respuesta paga la pregunta inicial y devuelve la imagen del soplo.",
       "scene_function": "Cerrar con el alcance real del método, formular la pregunta y colocar el sello de la serie.",
       "causal_bridge_from_previous": "La comparación valida una posibilidad, pero la variación entre especies limita su alcance.",
