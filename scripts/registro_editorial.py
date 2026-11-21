@@ -278,7 +278,7 @@ def _media_reference_exists(reference, source_path, project_id):
     candidate = Path(reference)
     if candidate.is_absolute():
         return False
-    locations = [ROOT / Path(source_path).parent / candidate]
+    locations = [ROOT / candidate, ROOT / Path(source_path).parent / candidate]
     if project_id:
         locations.extend([
             ROOT / "proyectos" / project_id / candidate,
@@ -616,9 +616,10 @@ def ocupacion_slots(fecha=None):
                     merged["hora_local"] = item.get("hora_original")
                 else:
                     merged["fecha"] = item.get("fecha") or raw.get("fecha") or _date_in(path.stem)
-                source = f"{path.relative_to(ROOT)}#{group}[{index}]"
+                source = path.relative_to(ROOT)
                 rec = _slot_evidence(merged, source)
                 if rec:
+                    rec["source_path"] = f"{source}#{group}[{index}]"
                     evidence.append(rec)
 
     for base in (ROOT / "proyectos", ROOT / "cola", ROOT / "salidas"):
