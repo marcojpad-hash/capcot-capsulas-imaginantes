@@ -37,7 +37,7 @@ Los cinco candidatos siguientes ya tienen storyboard en `proyectos/`. Se documen
 - **Verificación:** página editorial indexada; `doi_verification_status=PENDIENTE_RESOLVEDOR`. La consulta directa a Crossref/doi.org no completó. La ficha oficial del Smithsonian Global Volcanism Program respalda el localizador cartográfico de Fentale.
 - **Cálculo:** no se recalcularon las emisiones; las cifras se conservan como estimaciones reportadas por los autores.
 - **Inferencia editorial:** el giro “metano sin erupción” es fuerte, pero no debe convertirse en “el magma produjo todo el metano”: el artículo señala que no hay mediciones isotópicas directas del metano en Fentale.
-- **Proyecto existente:** `2026-11-21_fentale-metano-sin-erupcion`, 23:30; narrative QA PASS 90/100; 7 escenas, 170 palabras, 84 s totales. El artículo es del 19-nov y no se dispone de hora editorial que permita confirmar la frescura del slot del 21-nov.
+- **Proyecto existente:** `2026-11-21_fentale-metano-sin-erupcion`, 23:30; narrative QA PASS 90/100; 8 escenas, 170 palabras, 84 s totales. El artículo es del 19-nov y no se dispone de hora editorial que permita confirmar la frescura del slot del 21-nov.
 - **Recomendación:** conservar en proyectos. No promover hasta resolver DOI y frescura.
 
 ### B — Homo erectus y selva tropical en el sur de China
@@ -108,3 +108,26 @@ Los cinco candidatos siguientes ya tienen storyboard en `proyectos/`. Se documen
 - Publicación/programación: no ejecutada.
 - Créditos: no consumidos.
 - `data/*.json`: solo lectura.
+
+
+## 6. Reconsulta de feeds — 21-nov-2026
+
+Se reintentaron las diez URL declaradas en `scripts/tendencias.py` desde el lector web de esta sesión. No se ejecutó el script Python ni se parseó XML; estos errores describen al lector, no necesariamente la disponibilidad de los servidores:
+
+| Feed | Resultado exacto |
+|---|---|
+| ScienceDaily Science | `(400) Unsupported content-type: application/xml` |
+| ScienceDaily Salud | `(400) Unsupported content-type: application/xml` |
+| ScienceDaily Espacio | `(400) Unsupported content-type: application/xml` |
+| Phys.org | `(400) Unsupported content-type: text/xml` |
+| NASA News Release | `(400) Unsupported content-type: application/rss+xml` |
+| ESA Space Science | `(404) Not Found` |
+| Nature RSS | `(400) Unsupported content-type: application/rss+xml` |
+| EurekAlert | `URL https://www.eurekalert.org/rss/news.xml is not accessible via this tool.` |
+| SINC | `URL https://www.agenciasinc.es/rss is not accessible via this tool.` |
+| UNAM Global | `(400) Unsupported content-type: application/rss+xml` |
+| Google Trends RSS MX | `URL https://trends.google.com/trending/rss?geo=MX is not accessible via this tool.` |
+
+**Respaldo oficial consultado:** [Google Trends — Tendencias actuales, México](https://trends.google.com/trending?geo=MX&hl=es), últimas 24 horas. La página muestra 185 tendencias; las primeras 25 están dominadas por fútbol, entretenimiento y actualidad. “Ola de frío” aparece activa con 10 mil+ búsquedas, pero no aporta por sí sola una fuente científica primaria. No se crea storyboard a partir de esa tendencia.
+
+**Fentale:** la página editorial de Nature es accesible y confirma la publicación del 19-nov-2026 y el DOI `10.1038/s41561-026-02137-4`. Las consultas directas a Crossref REST y al resolver `doi.org` no pudieron abrirse en el lector web; por eso se conserva `PENDIENTE_RESOLVEDOR` y no se habilita promoción. No se cambió el storyboard ni su estado.
