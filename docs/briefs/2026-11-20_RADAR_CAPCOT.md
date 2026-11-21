@@ -222,3 +222,42 @@ Los errores de RSS documentados arriba siguen siendo la referencia de ejecución
 - **Sapropeles** y **flujo de LCR durante el sueño** siguen como candidatos documentados A–D. No se creó un quinto storyboard ni se duplicó tema/slot en esta actualización.
 
 No se modificaron `data/*.json`, la rotación ni los storyboards en este addendum.
+
+
+---
+
+## Actualización de investigación — run 11, 20-nov-2026 20:08 CDMX
+
+### Feeds RSS y respaldo de tendencias
+
+Se intentaron las fuentes declaradas en `scripts/tendencias.py`. El lector no pudo entregar los XML; los errores observados fueron:
+
+- ScienceDaily `science.xml`, `health.xml` y `space_time.xml`: `(400) Unsupported content-type: application/xml`.
+- Phys.org `rss-feed/`: `(400) Unsupported content-type: text/xml`.
+- NASA `news-release/feed/`: `(400) Unsupported content-type: application/rss+xml`.
+- Nature `nature.rss` y UNAM Global `feed/`: `(400) Unsupported content-type: application/rss+xml`.
+- ESA Space Science RSS: `(404) Not Found`.
+- EurekAlert y Agencias SINC: `URL ... is not accessible via this tool`.
+- Google Trends RSS México: `URL ... is not accessible via this tool`.
+
+Estos son errores del acceso/lector disponible; no demuestran por sí solos que todos los servidores RSS estén caídos. Se usó como respaldo la página oficial [Google Trends México](https://trends.google.com/trending?geo=MX&hl=es): 178 tendencias visibles; “volcán” aparecía con más de 5 mil búsquedas y actividad iniciada unas 9 horas antes. Es una señal general, no evidencia de demanda específica para una cápsula sobre Homo erectus.
+
+### Candidatos recientes, 18–20 de noviembre
+
+1. **Rainforest adaptation in late Homo erectus from southern China** — *Nature*, 18-nov-2026. Artículo primario: [Nature](https://www.nature.com/articles/s41586-026-11155-6), DOI `10.1038/s41586-026-11155-6`; [registro PubMed](https://pubmed.ncbi.nlm.nih.gov/43052437/). El editor y PubMed muestran el mismo DOI y fecha. Las consultas directas a doi.org y Crossref REST no fueron accesibles en esta sesión, por lo que el DOI queda pendiente de resolución independiente; la URL editorial primaria sí fue verificada. Hallazgo: nueve dientes de homininos en dos cuevas de Guangxi, ocho identificados como H. erectus; 43 edades radiométricas mediante cinco técnicas; intervalos modelados 324–184 ka; fauna e isótopos compatibles con selva tropical de dosel cerrado. Candidato de naturaleza/paleontología sin ángulo social. Se creó borrador para el slot libre 21-nov 07:00: `proyectos/2026-11-21_homo-erectus-selva-tropical/storyboard.json`. Sigue sin narrative_qa y no es promocionable.
+
+2. **Welopōʻai, a peculiar triple system 8 pc from the Sun** — *Astronomy & Astrophysics*, 19-nov-2026, DOI `10.1051/0004-6361/202661214`. La investigación describe una enana roja y dos enanas blancas a unos 27.6 años luz. La página primaria A&A y el resolvedor DOI no se pudieron recuperar en esta sesión; hay comunicado institucional de la Université de Montréal y resumen de Phys.org proporcionado por la universidad. Estado: `PENDING_SOURCE`; no se creó storyboard.
+
+3. **Fundamental-mode lasing at 30 keV in an X-ray free-electron laser** — *Optica* 13(11), pp. 2271–2274, número fechado 20-nov-2026, DOI declarado `10.1364/optica.610411`. La página oficial del número confirma título, autores y fecha; la página HTML del artículo devolvió “Your token has expired or is invalid”. No se obtuvo resolución DOI/Crossref ni lectura primaria completa para los claims cuantitativos. Estado: `PENDING_SOURCE`; no se creó storyboard.
+
+4. **Fentale / metano sin erupción** — *Nature Geoscience*, 19-nov-2026, ya tiene borrador para 21-nov 23:30. `NO_DUPLICAR`; conserva QA independiente PASS 90. DOI/resolvedor sigue pendiente. Su campo de estructura `paradoja_mecanica` no pertenece a las cinco estructuras que admite `scripts/rotacion.py`; no se cambió porque requeriría una decisión editorial.
+
+5. **Púlsar gamma / retícula** — *Physical Review Letters*, 19-nov-2026, ya tiene borrador para 21-nov 17:00. `NO_DUPLICAR`; conserva FAIL 83 por giro científico insuficientemente explicado. No se reescribió la narración.
+
+Se descartaron como “recientes” Longipteryx y el estudio de mortalidad de murciélagos en turbinas: los artículos originales que respaldan esas notas están fechados el 27-oct-2026, fuera de la ventana de siete días.
+
+### Slot del 21 de noviembre
+
+El slot 07:00 cae dentro de la ventana matutina 06:30–07:30 y el sábado es día preferente. La revisión cruzada encontró ocupados 13:30 (oxoboranos, main), 17:00 (púlsar, proyecto feature), 19:00 (robot orbital, main) y 23:30 (Fentale, proyecto feature). 07:00 estaba libre. Con el nuevo borrador se alcanza el máximo de cinco piezas/reservas del día: dos propias y tres externas. No se deben añadir más proyectos para esa fecha.
+
+La rotación del nuevo borrador usa `papel_rasgado_capas`, estructura `sabias_que` y cama `circuito_neural`, sin repetir las combinaciones de los otros cuatro elementos del día.
