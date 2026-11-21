@@ -357,3 +357,28 @@ Los feeds definidos en `scripts/tendencias.py` y Google Trends RSS México no en
 - El snapshot diario 2026-11-11 fue localizado y leído; los intentos de leer `data/horario_2026-11-16.json` y `data/horario_2026-11-20.json` devolvieron 404. No se inventaron snapshots posteriores.
 
 No se modificaron `main`, workflow, cola, estados Grok, secretos ni permisos. No se promovió ni despachó ningún storyboard.
+
+## 17. Relectura de inventario y backlog — 2026-11-21, 12:30 CDMX
+
+Se releyeron los 12 storyboards del lote 5–7 nov, los seis borradores interdiarios 18–20 nov, los cinco storyboards 21–22 nov ya inventariados y el borrador Bao incorporado después del último corte: **24 storyboards**.
+
+- Los 12 del lote 5–7 nov conservan 2 QA PASS y 10 FAIL; no se recalculó ni se reescribió QA. Los seis interdiarios conservan 5 PASS y 1 FAIL. Los cinco iniciales 21–22 conservan 2 PASS y 3 FAIL. Bao no tiene narrative_qa.
+- Los 24 archivos individuales `cola/estado/<project_id>.json` consultados devolvieron 404. Se conserva la clasificación `RECEPCION_GROK_NO_CONFIRMADA`; no se crearon estados.
+- Se releyeron las 12 rutas originales de `cola/bloqueados/` y las nueve copias planas paralelas. Las copias leídas carecen de narrative_qa; no se promovieron, movieron ni eliminaron.
+- `data/horario_semana_2026-11-01_07.json` contiene los 12 IDs antiguos. La lectura de `main/data/publicaciones.json` confirma dos procesamientos preexistentes: hielo caliente, publicado/programado el 2026-11-11 a las 13:30 con video_id `HSgrnejAcaI`; nubes pesan, registro del 2026-11-12 a las 07:00 con video_id `4Qpl17Ts_vI`. Ambos quedan `PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR`.
+- En hielo caliente, `salidas/<id>/storyboard.json` referencia `capsula.mp4` y nueve frames; el MP4 y los frames no se pudieron verificar en el árbol. En nubes pesan, los archivos consultados bajo `salidas/<id>/` devolvieron 404 pese al registro de publicación en main. Ambos conservan `MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO` donde corresponde; no se duplicó ni canceló publicación.
+- La búsqueda de `historial_youtube` no encontró un archivo independiente en el repositorio; `data/publicaciones.json` sigue siendo la fuente disponible para reconciliar IDs y publicaciones. No se inventó un historial.
+- No se encontró una ocupación en main para el slot 2026-11-22 13:30. La política main consultada incluye 13:00–14:30 como ventana regular; esto no equivale a una reserva ni a recepción de Grok.
+
+## 18. Bao — auditoría estructural, fuentes y compatibilidad de carta celeste
+
+Proyecto releído: `2026-11-22_bao-estrella-fusion-andromeda`.
+
+- 8 escenas, 78 segundos de escenas + 6 segundos de cortinilla = 84 segundos; 192 palabras. Voz `es-MX-JorgeNeural`, rate +7%, pitch -2Hz; prompt_base coincide con `art_deco_poster`. Cada escena tiene ambiente y SFX. `approved_assets=[]`, `export.render_status=NOT_GENERATED`, sin archivo de render y `publicacion.status=PENDIENTE_DECISION_GROK`.
+- La capa de mapa contiene coordenadas ecuatoriales reales: RA 00:38:48.60 / 9.7025° y Dec +40:46:08.23 / +40.7689528°, con SRC-003. NASA publica esos valores y sitúa AT 2025abao en Andrómeda, a unos 2.5 millones de años luz: https://science.nasa.gov/asset/webb/at-2025abao-in-the-andromeda-galaxy/ (ficha consultada, campos de posición y distancia).
+- El renderer previo `scripts/capas_datos.py` trataba toda capa `mapa` como lon/lat terrestres y accedía a `puntos[].lon/lat`; la capa Bao usa correctamente `ra_deg/dec_deg`. Se añadió una rama de carta celeste que valida rangos RA/Dec, deriva una ventana de visualización y dibuja RA creciente hacia la izquierda. No carga Natural Earth ni convierte coordenadas celestes en terrestres.
+- Se creó `tests/test_capas_datos.py` con cinco pruebas de bounds, región explícita, mapa terrestre, mezcla inválida y coordenadas fuera de rango. **Smoke aislado ejecutado:** las cinco condiciones se comprobaron con el helper y pasaron. No se ejecutó pytest ni CI y no se llamó `render_capa`; no se generaron imágenes, frames, audio ni video.
+- Corrección de trazabilidad sin cambiar narración: la afirmación de 47 días después del pico quedó vinculada a SRC-001 (Nature, DOI 10.1038/s41586-026-11221-z); SRC-002 (NASA) conserva el soporte de la observación del 24 de diciembre de 2025. El DOI figura `VERIFICADO_RESOLVEDOR` en el storyboard; Nature/PubMed confirman el registro bibliográfico y NASA confirma las coordenadas. La API REST de Crossref no fue accesible desde esta ejecución; no se afirma una consulta API exitosa.
+- El slot 22-nov 13:30 no aparece ocupado en main. Aun así, Bao sigue `BORRADOR_EN_PROYECTOS_NO_APTO_PARA_PROMOCION` y **NOT_DISPATCHABLE**: falta una revisión narrativa independiente PASS y el estado Grok individual devuelve 404. No se creó narrative_qa, cola ni estado; tampoco se marcó preparado. `fuentes.md` y `ESTADO_EJECUCION.md` no existen en esa carpeta; las fuentes están incorporadas en el storyboard.
+
+Los cambios de código y metadatos permanecen en feature. No se modificaron `data/*.json`, main, workflows, secretos, permisos, publicaciones ni medios.
