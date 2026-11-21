@@ -676,3 +676,7 @@ Los checks dinámicos de PR #3 terminaron después de la primera lectura del run
 ### Corrección de DOI del borrador Homo erectus — 20-nov-2026 20:22 CDMX
 
 El enlace DOI seguido desde PubMed resolvió y redirigió al artículo Nature correcto. Se actualizó y releyó `proyectos/2026-11-21_homo-erectus-selva-tropical/storyboard.json`: `sources[SRC-001].verification_status=VERIFICADO_RESOLVEDOR` y `doi_verification_status=VERIFICADO_RESOLVEDOR`. Crossref REST no fue accesible. La compuerta DOI queda cerrada por resolvedor; siguen pendientes la auditoría narrativa independiente y la ejecución del validador estructural oficial. No se creó QA ni se promovió.
+
+### Corrección de estilo del nuevo borrador — 20-nov-2026 20:24 CDMX
+
+El estilo inicial `papel_rasgado_capas` se había usado el 14 y el 18-nov; no cumplía la rotación reciente. Se sustituyó por `dibujo_cientifico_scratchboard`, último uso visible 13-nov, y se releó el storyboard: raíz, `visual_identity` y las ocho escenas usan ahora ese `style_id` y el `prompt_base` literal del catálogo. La narración y las afirmaciones no cambiaron. Combinación vigente: `dibujo_cientifico_scratchboard` + `sabias_que` + `circuito_neural`.
