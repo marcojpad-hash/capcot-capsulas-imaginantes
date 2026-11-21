@@ -647,3 +647,38 @@ El prefijo es parte del ID; no se toma automáticamente como fecha de creación 
 ## 10. Cierre
 
 Resultado: **ninguna promoción ni redispatch**. Los bloqueos son narrativos, estructurales, DOI, slot ocupado o producción previa según cada proyecto. La recepción Grok no está confirmada para los proyectos revisados porque no existe `cola/estado/<project_id>.json`. Se conservan los archivos y decisiones editoriales; no se fabrican estados, placeholders ni medios.
+
+
+## 11. Aclaraciones finales de cruce y estados documentales
+
+### 11.1 Main: IDs, horarios y privacidad del 21-nov
+
+Los dos registros de `data/publicaciones.json` de main para 21-nov son slots distintos de los tres proyectos actuales de feature:
+
+- 13:30 CDMX: `2026-11-02_oxoboranos-estables`, YouTube `K4qNkx2f4RI`, privacidad `private`, publishAt `2026-11-21T19:30:00Z`.
+- 19:00 CDMX: `2026-11-09_dato-robot-ensambla-orbita`, YouTube `ZG4iQgmWrLI`, privacidad `private`, publishAt `2026-11-22T01:00:00Z`; TikTok/Facebook también constan programados.
+
+No ocupan 07:00, 17:00 ni 23:30; por tanto no son conflicto de slot para Homo, Pulsar o Fentale. El robot sí es procesamiento preexistente del mismo project_id y no debe redispatcharse.
+
+Para 22-nov, el brief de main nombra Salem/Gutenberg/Ada a 07:00/13:30/17:00, pero no hay IDs de YouTube, privacidad ni `programacion.json` individual en el árbol. Esa falta queda explícita; no se inventan IDs.
+
+### 11.2 Estados documentales que no equivalen a recepción o selección
+
+- `2026-11-01_red-electrica-pulso-minuto`: narrative_qa PASS 89, pero `editorial_status` sigue diciendo `BORRADOR_EN_PROYECTOS_PENDIENTE_QA_INDEPENDIENTE`. Contradicción documental; no promover retroactivamente.
+- Venus y Arena: narrative_qa PASS 88/94, pero `editorial_status` aún dice `BORRADOR_ESPERA_AUDITOR_PASS`. El PASS ya está en el JSON, pero los seis campos narrativos por escena faltan; no promover.
+- Los proyectos 03-nov con estado `MONTADO_POR_GROK_BOT` no tienen narrative_qa ni estado individual de Grok en el árbol auditado. El texto de estado no prueba recepción ni QA.
+- `2026-11-04_dato-polvo-atrapa-oro` conserva QA narrativo pendiente; su etiqueta de montaje no sustituye la lectura en frío.
+- `2026-11-10_dato-adn-sincroniza-flujo/ESTADO_EJECUCION.md` usa la etiqueta ambigua `QA_NARRATIVO_PASS_PENDIENTE_VALIDACION_ESTRUCTURAL_EJECUTADA`; el propio documento solo acredita revisión estructural estática, no ejecución local/CI en este corte. Se conserva pendiente.
+- `2026-11-02_camaron-mantis` tiene narrative_qa PASS 90, pero carece de `narrative_contract`; además ya tiene salida y IDs históricos programados. No es candidato a promoción.
+
+No se encontró un `ESTADO_EJECUCION.md` que afirmara `PREPARADO` sin PASS narrativo independiente y validador correcto para un proyecto aún no procesado. No se rebajó ningún estado editorial ni se reescribió ninguna narración.
+
+### 11.3 Verificación de los medios referenciados
+
+El árbol completo de feature contiene exactamente ocho archivos de imagen: los ocho PNG de frames de ratas-topo. No contiene MP4 ni audio. Los paths locales de portada/video en metadata y publicación quedan marcados `MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO`; los ocho PNG no se interpretan como render final. No se crearon placeholders.
+
+### 11.4 Commits de auditoría y relectura
+
+- Estado Kuroshio corregido y releído desde GitHub: commit `ed8659ec7184d51cdd84d3575a5ac57c1595ce2c`; blob final del documento `d73dc69e3747417070e500b9c690a40b20b515c0`.
+- Este control de cola fue actualizado y releído desde GitHub: commit `cf92c069061460148eb3e2fea8109a759ca44e6b`; blob del informe `03dfea65c38cafe4785c4006dd88697292fd1e98`.
+- HEAD de feature al cierre de esta actualización: `cf92c069061460148eb3e2fea8109a759ca44e6b`. Main permaneció sin cambios.
