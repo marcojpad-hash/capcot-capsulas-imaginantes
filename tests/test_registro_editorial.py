@@ -379,5 +379,21 @@ class RegistroEditorialTests(unittest.TestCase):
         self.assertEqual(verified["media_status"], "VERIFICADOS_EN_REPOSITORIO")
         self.assertEqual(verified["missing_media_references"], [])
 
+
+    def test_slot_occupancy_checks_scene_level_media_reference(self):
+        self.write_json(
+            registro_editorial.ROOT / "proyectos" / "2026-11-22_scene-media" / "storyboard.json",
+            {
+                "project_id": "2026-11-22_scene-media",
+                "fecha_objetivo": "2026-11-22",
+                "slot_local": "19:00",
+                "scenes": [{"asset_filename": "scene_001.png"}],
+            },
+        )
+        result = registro_editorial.ocupacion_slots("2026-11-22")
+        row = result["ocupaciones"][0]
+        self.assertEqual(row["missing_media_references"], ["scene_001.png"])
+        self.assertEqual(row["media_status"], "MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO")
+
 if __name__ == "__main__":
     unittest.main()
