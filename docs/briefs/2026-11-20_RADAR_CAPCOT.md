@@ -320,6 +320,6 @@ La pieza permanece en `proyectos/`: sin `narrative_qa` (corresponde a auditoría
 
 - Se creó `proyectos/2026-11-22_yubarta-genoma-soplo/storyboard.json` para el 22-nov 17:00 CDMX, dentro de la ventana activa 16:30–18:00. La consulta de `main/data/publicaciones.json` no encontró publicación ni programación para 22-nov 17:00; en feature solo estaba el borrador Voyager a las 07:00. El slot vespertino no presenta conflicto exacto.
 - Rotación: `tatuaje_acuarela` (catálogo, sublínea naturaleza/océano/biología), estructura `pregunta`, cama `arpegio`. El estilo no aparece entre los últimos 15 registros de rotación de main; la cama no está entre las dos últimas.
-- El mapa usa únicamente la caja regional publicada por Hakai para el territorio Gitga'at, no puntos de muestreo ni trayectorias inventadas. Fuentes: DOI primario del artículo y DOI del catálogo Hakai `10.21966/2aap-hn61`.
+- El mapa usa únicamente la caja regional publicada por Hakai para el territorio Gitga'at, no puntos de muestreo ni trayectorias inventadas. Fuentes: DOI primario del artículo y DOI del catálogo Hakai `10.21966/2aap-hn61`. Commits del borrador y su corrección de lectura de vuelta: `2015a5a4b5a6df59e68d90d9fd26d6ea12e35c98`, `510e7069dac5565191e5bd5e4bd51bcd87e7b02d`, `e94b1318a51c78f5a821a3d55ef69e010e8de839`.
 - Borrador: 8 escenas, 180 palabras, 78 s de escenas + 6 s de cortinilla = 84 s. Voz `es-MX-JorgeNeural` +7%, pitch -2Hz. Sin `narrative_qa`, sin `ESTADO_EJECUCION.md`, sin medios, sin assets, sin cola y sin programación.
 

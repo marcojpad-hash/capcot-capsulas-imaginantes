@@ -777,4 +777,4 @@ CodeQL terminó **SUCCESS** para los últimos tres commits de la revalidación: 
 
 - La primera lectura detectó `source_ids` serializados como cadenas en escenas 5–8. La corrección intermedia reparó 5–6, pero la segunda lectura encontró todavía 7–8 y una propiedad `capa` de tipo cadena en la escena 8. Se corrigieron las cuatro referencias a arreglos y se retiró esa propiedad espuria.
 - Lectura final: las ocho escenas tienen `source_ids` como arreglos; las únicas capas son el mapa regional de la escena 3 y las tarjetas de datos de las escenas 5–6. La narración, los claims, las fuentes, el slot y las duraciones no cambiaron.
-- Commits: creación `2015a5a4b5a6df59e68d90d9fd26d6ea12e35c98`; corrección intermedia `510e7069dac5565191e5bd5e4bd51bcd87e7b02d`; corrección final pendiente de esta operación.
+- Commits: creación `2015a5a4b5a6df59e68d90d9fd26d6ea12e35c98`; corrección intermedia `510e7069dac5565191e5bd5e4bd51bcd87e7b02d`; corrección final `e94b1318a51c78f5a821a3d55ef69e010e8de839`.
