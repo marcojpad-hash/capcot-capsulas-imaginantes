@@ -226,36 +226,19 @@ def _pick_field(containers, keys):
 
 
 def _slot_containers(raw):
-    containers = [raw]
-    for parent in list(containers):
-        for key in (
-            "publicacion", "publication", "programacion", "schedule",
-            "youtube", "yt", "tiktok", "facebook", "resultado",
-        ):
-            value = parent.get(key) if isinstance(parent, dict) else None
-            if isinstance(value, dict):
-                containers.append(value)
-                if key == "youtube":
-                    snippet = value.get("snippet")
-                    if isinstance(snippet, dict):
-                        containers.append(snippet)
-        result = parent.get("resultado") if isinstance(parent, dict) else None
-        if isinstance(result, dict):
-            for platform in ("youtube", "yt", "tiktok", "facebook"):
-                value = result.get(platform)
-                if isinstance(value, dict):
-                    containers.append(value)
-                    snippet = value.get("snippet")
-                    if isinstance(snippet, dict):
-                        containers.append(snippet)
-    unique = []
+    containers = []
+    pending = [raw]
     seen = set()
-    for container in containers:
-        marker = id(container)
-        if marker not in seen:
-            seen.add(marker)
-            unique.append(container)
-    return unique
+    while pending:
+        parent = pending.pop(0)
+        if not isinstance(parent, dict) or id(parent) in seen:
+            continue
+        seen.add(id(parent))
+        containers.append(parent)
+        for value in parent.values():
+            if isinstance(value, dict):
+                pending.append(value)
+    return containers
 
 
 def _media_references(raw):
