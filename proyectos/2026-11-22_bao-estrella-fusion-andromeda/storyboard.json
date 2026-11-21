@@ -75,7 +75,8 @@
         "La señal precursora de brillo gradual durante aproximadamente siete años.",
         "Las masas estimadas de la gigante y su compañera.",
         "La interpretación de una fase de envoltura común que termina en fusión.",
-        "La reconstrucción de la expulsión de material y la eficiencia de la evolución de envoltura común."
+        "La reconstrucción de la expulsión de material y la eficiencia de la evolución de envoltura común.",
+        "La observación de Webb el 24 de diciembre de 2025, 47 días después del pico en banda g."
       ],
       "verification_status": "VERIFICADO_RESOLVEDOR"
     },
@@ -88,7 +89,7 @@
       "publication_date": "2026-11-18",
       "supports": [
         "La distancia aproximada a Andrómeda.",
-        "La observación de Webb 47 días después del pico de la erupción.",
+        "La observación de Webb del sistema el 24 de diciembre de 2025.",
         "La cronología del aumento de brillo y la interpretación del equipo."
       ],
       "verification_status": "VERIFICADO_RESOLVEDOR"
@@ -267,6 +268,7 @@
         "Eco infrarrojo breve."
       ],
       "source_ids": [
+        "SRC-001",
         "SRC-002"
       ],
       "dramatic_beat": "Webb no observa el choque en directo; observa el polvo que quedó como evidencia.",
@@ -280,10 +282,11 @@
         "etiqueta": "Observación de Webb",
         "valor": "47 días",
         "unidad": "después del pico de la erupción",
-        "fuente": "SRC-002",
+        "fuente": "SRC-001; SRC-002",
         "source_ids": [
-          "SRC-002"
-        ],
+        "SRC-001",
+        "SRC-002"
+      ],
         "limite": "Observación posterior del polvo; no es una imagen del instante de fusión."
       },
       "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text Nube de polvo infrarroja estilizada alrededor de una pareja estelar, con luz tenue y sin representar el choque como una filmación.",
