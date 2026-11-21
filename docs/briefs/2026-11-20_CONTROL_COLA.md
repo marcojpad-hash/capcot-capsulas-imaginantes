@@ -639,3 +639,31 @@ Los siete proyectos con sidecars (Venus, palomitas, ballena, aguacate, ranas, ar
 - Issue #11 sigue abierto pese a conservar etiqueta `hecho`; no se cerró ni se modificó.
 
 No se modificaron `data/*.json`, main, secretos, permisos, decisiones editoriales ni estados Grok. No se publicaron ni programaron piezas, no se generaron medios y no se consumieron créditos.
+
+
+---
+
+## Revalidación del operador único — run 11 — 20-nov-2026 20:08 CDMX
+
+### 1. Cambios ejecutados y lectura de vuelta
+
+- **Nuevo borrador** `proyectos/2026-11-21_homo-erectus-selva-tropical/storyboard.json`, commit `bdec12ec9c81fab42cb9d5543532a3f929f24713`. Lectura de vuelta confirmada: 8 escenas, 196 palabras de narración, 78 s de escenas + 6 s de cortinilla = 84 s, gancho de 5 palabras, cierre hablado exacto, voz `es-MX-JorgeNeural` (+7%, −2 Hz), `papel_rasgado_capas`, mapa con localizador urbano real de Chongzuo y capa de cronología de los dos depósitos. La coordenada ubica la ciudad, no las cuevas. `approved_assets=[]`, `export.render_status=NOT_GENERATED`, sin nombres ni rutas de assets, `publicacion.status=PENDIENTE_DECISION_GROK`. No se creó `narrative_qa` ni `ESTADO_EJECUCION.md`; sigue en proyectos y no está preparado.
+- **Normalización mecánica de rotación**: Fentale `audio.cama_musical` `sintetico:pulso` → `pulso`, commit `9522502cf28361ef5ea47aca154fc413986c6d91`; Púlsar `sintetico:arpegio` → `arpegio`, commit `db4f09480971d4ea68d953980c8fffc9eb07c173`. La cama prevista no cambió; solo se normalizó la etiqueta que consume `scripts/rotacion.py`.
+- Fentale conserva QA independiente PASS 90; no se repitió. Su `estructura=paradoja_mecanica` no pertenece a `ESTRUCTURAS` en `scripts/rotacion.py`. No se cambió porque elegir otra estructura sería una decisión editorial. DOI/resolvedor y validador oficial siguen pendientes.
+- Púlsar conserva FAIL 83; no se reescribió la narración. Marea cerebral PASS 92 y Sapropeles PASS 91 permanecen sin cambios; no se repitieron.
+
+### 2. Slots, producción previa y recepción
+
+- Para 21-nov se verificaron cuatro ocupaciones existentes: Oxoboranos main 13:30 (YT `K4qNkx2f4RI`, publishAt `2026-11-21T19:30:00Z`, TT/FB programados); Púlsar feature 17:00; robot orbital main 19:00 (YT `ZG4iQgmWrLI`, publishAt `2026-11-22T01:00:00Z`, TT/FB programados); Fentale feature 23:30. El slot 07:00 está dentro de la ventana matutina 06:30–07:30 y no tiene conflicto exacto en main ni feature. Con el borrador nuevo se llega al máximo de cinco piezas/reservas del día (dos propias, tres externas); no crear más para 21-nov.
+- Para los cinco storyboards del 20–21 nov, las 5 lecturas de `cola/estado/<project_id>.json` devolvieron HTTP 404; registrar `RECEPCION_GROK_NO_CONFIRMADA`. También devolvieron 404 las rutas planas/anidadas de `cola/entrada`, `cola/bloqueados` y `salidas` para esos cinco IDs. No hay copia de cola ni salida; todos siguen `NOT_DISPATCHABLE`.
+- Los 12 IDs obligatorios del lote 5–7 nov conservan 2 PASS y 10 FAIL del run 10. Ninguno de los tres commits de este run tocó esos doce storyboards; las doce lecturas de estado devolvieron 404. No se repitió QA PASS ni se promovió ningún ID.
+- `main/data/publicaciones.json` no muestra otros `publishAt` futuros para 21-nov aparte de Oxoboranos 13:30 y robot 19:00. El ID `ztIkYcXB91U` continúa siendo solo un riesgo mencionado en un sidecar anterior; no aparece en el inventario actual de publicaciones y no se declara programado.
+- **Corrección de registro anterior:** `data/vistas_historico.json` no está vacío. En main contiene 106 snapshots, último `2026-11-18T13:56-06:00`; en feature contiene 74, último `2026-10-28T08:08-06:00`. La nota del run 10 que lo describió como vacío era incorrecta. No existe un archivo separado `historial_youtube.json`; el histórico de vistas está desactualizado y no permite confirmar publicaciones posteriores al 18-nov.
+
+### 3. Actions, workflow y CI
+
+- Worker main run `44839666536`: log literal `[trabajador] sin trabajo en cola.`; no procesó los borradores feature.
+- Callback main run `44850289947`: leyó `ajustes_entre_modelos/DELEGACIONES.md` y filtró entradas pendientes dirigidas a Copilot; no encontró ninguna, no creó Issues `[callback]` y no asignó trabajo. El workflow conserva `Issues: write`; si aparecen entradas `PARA: Copilot`, sí puede crear Issues automáticamente.
+- `.github/workflows/capcot-grok-dispatch.yml` no se disparó y no se enviaron webhooks. Su selector sigue limitado a JSON planos de primer nivel; las carpetas anidadas históricas no son dispatchables.
+- Los commits nuevos `bdec12e`, `db4f094` y `9522502` no tienen status checks publicados al momento de esta lectura; no se declara CI verde. PR #3 sigue OPEN/DRAFT con HEAD `bdec12e`; PR #14 sigue abierto y conserva `asset_filename` en preproducción; no se fusionó ni se disparó workflow.
+- La auditoría programada CAPCOT terminó FAILED a las 17:07 CDMX; este run hizo la relectura manual. No se generaron medios, no se consumieron créditos, no se alteraron `data/*.json`, publicaciones ni estados Grok.
