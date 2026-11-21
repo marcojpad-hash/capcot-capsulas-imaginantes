@@ -229,6 +229,8 @@ def _local_timestamp(value, assume_utc=False):
     if not isinstance(value, str) or not value.strip():
         return None
     raw = value.strip()
+    if not re.search(r"[T ]\d{1,2}:\d{2}", raw):
+        return None
     try:
         parsed = datetime.datetime.fromisoformat(raw.replace("Z", "+00:00"))
     except ValueError:
@@ -293,6 +295,13 @@ def _slot_evidence(raw, source_path, default_project_id=None):
     )
     fecha = _date_in(date_value) or _date_in(clock_value)
     slot_local = _clock_in(clock_value)
+    timestamp_local = local_dt.isoformat(timespec="minutes") if local_dt else None
+    timestamp_mismatch = bool(
+        local_dt and (
+            (fecha and fecha != local_dt.date().isoformat())
+            or (slot_local and slot_local != local_dt.strftime("%H:%M"))
+        )
+    )
     if local_dt:
         fecha = fecha or local_dt.date().isoformat()
         slot_local = slot_local or local_dt.strftime("%H:%M")
@@ -343,6 +352,8 @@ def _slot_evidence(raw, source_path, default_project_id=None):
         "date_field": date_key,
         "slot_field": clock_key,
         "timestamp_field": timestamp_key,
+        "timestamp_local": timestamp_local,
+        "timestamp_mismatch": timestamp_mismatch,
     }
 
 
@@ -419,11 +430,15 @@ def ocupacion_slots(fecha=None):
                 ],
                 "evidence": [row for row in evidence if row["project_id"] == pid],
             })
+    timestamp_mismatches = [
+        row for row in evidence if row.get("timestamp_mismatch")
+    ]
 
     return {
         "ocupaciones": evidence,
         "conflictos": conflicts,
         "discrepancias_por_project_id": discrepancies,
+        "inconsistencias_timestamp": timestamp_mismatches,
     }
 
 if __name__ == "__main__":
