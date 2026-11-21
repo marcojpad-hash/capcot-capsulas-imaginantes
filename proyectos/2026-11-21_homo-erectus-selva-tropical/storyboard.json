@@ -1,0 +1,391 @@
+{
+  "_schema": "CAPCOT_STORYBOARD_TEXT_V2",
+  "project_id": "2026-11-21_homo-erectus-selva-tropical",
+  "serie": "Datos y ociosidades",
+  "title": "Homo erectus sobrevivió en selva tropical",
+  "titulo": "Homo erectus vivió en selva",
+  "language": "es-MX",
+  "aspect_ratio": "9:16",
+  "fecha_objetivo": "2026-11-21",
+  "slot_local": "07:00",
+  "slot_cesta": "manana",
+  "origen": "externa",
+  "target_duration_seconds": 84,
+  "estructura": "sabias_que",
+  "audience": "Público general interesado en ciencia y naturaleza",
+  "occasion": "Ventana de mañana; sábado 07:00 CDMX",
+  "resumen": "Nueve dientes de homininos hallados en dos cuevas de Guangxi, ocho identificados como Homo erectus, sitúan a esta especie en el sur de China entre 324,000 y 184,000 años atrás. La fauna y los isótopos apuntan a ecosistemas de selva tropical cerrada, un ambiente que desafía la idea de que H. erectus dependía de paisajes abiertos.",
+  "narrative_contract": {
+    "central_question": "¿Podía Homo erectus persistir en una selva tropical de dosel cerrado?",
+    "promise": "Seguir los dientes, las fechas y la química que reconstruyen el ambiente de dos cuevas del sur de China.",
+    "stakes": "El hallazgo desafía la idea de que esta especie solo ocupaba paisajes abiertos.",
+    "scientific_turn": "La fauna y los isótopos indican que poblaciones de H. erectus explotaron ecosistemas de selva tropical cerrada.",
+    "evidence_limit": "El estudio analiza nueve dientes de homininos, ocho identificados como H. erectus; los datos isotópicos humanos son limitados y la movilidad se infiere a partir de cuatro individuos.",
+    "payoff": "Los dientes de dos cuevas muestran que la selva también formó parte del rango ecológico de H. erectus."
+  },
+  "trend_source": {
+    "termino": "Rainforest adaptation in late Homo erectus from southern China",
+    "fecha_publicacion": "2026-11-18",
+    "url": "https://www.nature.com/articles/s41586-026-11155-6"
+  },
+  "editorial_status": "PROPUESTA_PENDIENTE_DE_GROK",
+  "arco": {
+    "hook_medias_res": "Nueve dientes aparecen entre miles de fósiles.",
+    "desarrollo": "Ubicar las cuevas; fechar los depósitos con cinco técnicas y 43 edades; reconstruir el bosque con fauna e isótopos; explicar la inferencia de movilidad.",
+    "cierre_historia": "La evidencia sitúa a H. erectus en un ecosistema tropical cerrado, no solo en paisajes abiertos.",
+    "reflexion_o_pregunta": "¿Cuántos refugios tropicales más faltan por encontrar?"
+  },
+  "estilo_id": "papel_rasgado_capas",
+  "estilo_visual": "Papel rasgado por capas (diorama)",
+  "visual_identity": {
+    "style_id": "papel_rasgado_capas",
+    "style_name": "Papel rasgado por capas (diorama)",
+    "prompt_base": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text",
+    "palette": "verde bosque, turquesa apagado, ocre y crema",
+    "lighting": "Luz lateral suave; sombras profundas entre capas; sin brillo fotográfico.",
+    "texture": "Papel rasgado en capas, bordes irregulares, cartulina y fieltro.",
+    "composition": "Un foco por escena; mapa, cronología y cueva en lectura vertical 9:16; continuidad de escala.",
+    "negative_prompt": "photorealistic, 3D render, text, labels, logos, watermark, invented cave coordinates, exact cave entrances not sourced, human faces, modern clothing, invented tools, fake excavation equipment, dinosaur imagery, extra fossils",
+    "reference_assets": [],
+    "seed": null,
+    "seed_policy": "Mantener paleta, papel y profundidad de capas; variar encuadre y elementos sustentados, sin inventar rostros, rutas ni coordenadas."
+  },
+  "typography_identity": {
+    "font_family": "DejaVu Sans",
+    "font_weight": "700 para gancho; 400 para subtítulos",
+    "title_style": "Máximo seis palabras; presente desde frame 0 en postproducción",
+    "subtitle_style": "Bloques de máximo tres palabras; zona segura inferior",
+    "hierarchy": "Gancho > dato/etiqueta > subtítulos",
+    "animation": "Un movimiento por plano; tipografía en postproducción"
+  },
+  "voice": {
+    "engine": "edge-tts",
+    "voice_id": "es-MX-JorgeNeural",
+    "language": "es-MX",
+    "rate": "+7%",
+    "pitch": "-2Hz",
+    "pad_seconds": 0.3,
+    "modo_pausas": "continuo"
+  },
+  "sources": [
+    {
+      "id": "SRC-001",
+      "cita_corta": "Westaway, K.E., Joannes-Boyau, R., Liao, W. et al. (2026). “Rainforest adaptation in late Homo erectus from southern China”. Nature.",
+      "url": "https://www.nature.com/articles/s41586-026-11155-6",
+      "doi": "10.1038/s41586-026-11155-6",
+      "accessed": "2026-11-20",
+      "publication_date": "2026-11-18",
+      "supports": [
+        "Nueve dientes de homininos encontrados en dos cuevas de Guangxi; ocho identificados morfológica y genéticamente como H. erectus.",
+        "Más de 18,000 fósiles de mamíferos en los conjuntos de Baxian y Naxian.",
+        "43 edades radiométricas modeladas mediante cinco técnicas independientes.",
+        "Presencia regional de H. erectus entre 324 y 184 ka; Baxian 324–184 ka y Naxian 319–241 ka.",
+        "La fauna y los isótopos de carbono indican ecosistemas de selva tropical cerrada.",
+        "Tres dientes de H. erectus de Naxian presentan valores isotópicos consistentes con vegetación de dosel cerrado.",
+        "Los isótopos de estroncio de cuatro individuos sugieren movimiento entre regiones geológicamente distintas o consumo de recursos de varios lugares durante la infancia.",
+        "La muestra isotópica humana es limitada y la movilidad es una inferencia, no una ruta observada."
+      ],
+      "verification_status": "VERIFICADO_FUENTE_PRIMARIA_URL",
+      "url_verification_status": "VERIFICADO_PAGINA_EDITORIAL",
+      "doi_verification_status": "PENDIENTE_RESOLVEDOR",
+      "verification_note": "La página editorial de Nature muestra el artículo de acceso abierto, su fecha de publicación y el DOI; PubMed confirma los mismos metadatos. Las consultas directas a doi.org y Crossref REST no completaron en esta sesión. La URL primaria está verificada; el DOI queda pendiente de resolución independiente y bloquea la promoción."
+    },
+    {
+      "id": "SRC-002",
+      "cita_corta": "Mapcarta / OpenStreetMap. “Chongzuo”, Guangxi, China — coordenadas del centro urbano.",
+      "url": "https://mapcarta.com/Chongzuo",
+      "doi": null,
+      "accessed": "2026-11-20",
+      "publication_date": null,
+      "supports": [
+        "Coordenadas del localizador urbano de Chongzuo: 22.38° N, 107.3609° E."
+      ],
+      "verification_status": "VERIFICADO_URL",
+      "url_verification_status": "VERIFICADO",
+      "doi_verification_status": "NO_APLICA",
+      "verification_note": "El punto corresponde a la ciudad de Chongzuo como referencia regional, no a las cuevas de Naxian o Baxian."
+    },
+    {
+      "id": "SRC-003",
+      "cita_corta": "PubMed, PMID 43052437. Registro bibliográfico de “Rainforest adaptation in late Homo erectus from southern China”.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43052437/",
+      "doi": "10.1038/s41586-026-11155-6",
+      "accessed": "2026-11-20",
+      "publication_date": "2026-11-18",
+      "supports": [
+        "Verificación cruzada de revista, fecha de publicación y DOI."
+      ],
+      "verification_status": "VERIFICADO_URL",
+      "url_verification_status": "VERIFICADO",
+      "doi_verification_status": "PENDIENTE_RESOLVEDOR",
+      "verification_note": "Fuente bibliográfica secundaria; no sustituye al artículo primario ni a la resolución Crossref/doi.org."
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_001",
+      "arc": "hook_medias_res",
+      "duration_seconds": 9,
+      "narration": "En dos cuevas de Guangxi, nueve dientes de homininos aparecieron entre más de 18,000 fósiles de mamíferos. Ocho fueron identificados como Homo erectus.",
+      "on_screen_text": "Nueve dientes. Ocho Homo erectus.",
+      "visual_description": "Primer plano de dientes fósiles en una matriz de sedimento; al fondo, capas de restos de fauna sin inventar esqueletos completos.",
+      "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text, close-up of nine small hominin fossil teeth embedded in layered cave sediment, a dense field of subtle mammal fossil fragments in the background, no skulls, no people, no typography, no labels, no logos",
+      "ambiente": "Goteo de cueva y eco corto",
+      "sfx": [
+        "Golpe leve de roca",
+        "Pulso breve al aparecer los dientes"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "papel_rasgado_capas",
+      "dramatic_beat": "Los dientes aparecen dentro de un conjunto fósil mucho mayor.",
+      "scene_function": "Abrir con la anomalía material y presentar el hallazgo sin definir primero a la especie.",
+      "causal_bridge_from_previous": "Apertura en curso: el hallazgo ya está sobre la mesa; la cantidad de restos vuelve visible la pregunta.",
+      "question_state": "Sabemos que hay nueve dientes de homininos; todavía falta saber a qué especie pertenecen y en qué ambiente vivieron.",
+      "reason_to_continue": "La identificación de ocho dientes cambia la pregunta ecológica.",
+      "new_information": "Ocho de los nueve dientes fueron identificados como Homo erectus."
+    },
+    {
+      "id": "scene_002",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "La pregunta era incómoda: ¿podía esta especie vivir bajo una selva tropical cerrada, lejos del paisaje abierto que suele asociarse con ella?",
+      "on_screen_text": "¿Homo erectus en la selva?",
+      "visual_description": "Entrada de una cueva kárstica rodeada por vegetación tropical densa; no aparecen figuras humanas ni herramientas.",
+      "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text, layered paper diorama of a limestone cave entrance surrounded by a dense closed-canopy tropical rainforest, humid atmosphere, no human figures, no tools, no typography, no labels, no logos",
+      "ambiente": "Bosque húmedo con aves lejanas sin especie identificable",
+      "sfx": [
+        "Aire que se cierra entre las copas",
+        "Goteo breve al entrar en la cueva"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "papel_rasgado_capas",
+      "dramatic_beat": "El entorno contradice la imagen habitual de paisajes abiertos.",
+      "scene_function": "Plantear la pregunta central y el supuesto que el estudio pone a prueba.",
+      "causal_bridge_from_previous": "La identificación de H. erectus vuelve decisivo reconstruir el ambiente que rodeaba esos dientes.",
+      "question_state": "La presencia de la especie está identificada; el hábitat sigue por demostrar.",
+      "reason_to_continue": "La datación y la reconstrucción ambiental deben sostener la respuesta.",
+      "new_information": "El estudio prueba la posibilidad de persistencia en un bosque tropical cerrado."
+    },
+    {
+      "id": "scene_003",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "Las cuevas están cerca de Chongzuo, en el sur de China. Para fecharlas, el equipo combinó cinco técnicas y modeló 43 edades radiométricas.",
+      "on_screen_text": "Guangxi · 5 técnicas · 43 edades",
+      "visual_description": "Mapa regional de Guangxi con un único punto urbano de referencia en Chongzuo; las cuevas quedan como área de estudio sin coordenadas puntuales inventadas.",
+      "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text, minimal layered paper map of Guangxi in southern China with one locator point at Chongzuo city, surrounding karst landscape, no cave pins and no text, no typography, no labels, no logos",
+      "ambiente": "Ambiente de laboratorio tenue y papel de campo",
+      "sfx": [
+        "Clic cartográfico",
+        "Cinco pulsos suaves que marcan las técnicas"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "style_id": "papel_rasgado_capas",
+      "capa": {
+        "tipo": "mapa",
+        "puntos": [
+          {
+            "id": "chongzuo",
+            "label": "Chongzuo, Guangxi (localizador urbano)",
+            "lat": 22.38,
+            "lon": 107.3609,
+            "sistema_coordenadas": "WGS84"
+          }
+        ],
+        "areas": [],
+        "titulo": "Área de estudio en el sur de China",
+        "fuente": "Nature (2026), Fig. 1, para el área de estudio; Mapcarta/OpenStreetMap para las coordenadas del centro urbano de Chongzuo.",
+        "precision_note": "El punto ubica la ciudad como referencia regional. El artículo sitúa Naxian y Baxian en sus alrededores, pero no se dibujan coordenadas exactas de las cuevas."
+      },
+      "dramatic_beat": "El mapa fija el área y la cronología deja de depender de una sola medición.",
+      "scene_function": "Ubicar el estudio y explicar la base cronológica sin convertir el mapa en una ruta.",
+      "causal_bridge_from_previous": "La pregunta sobre el hábitat necesita saber cuándo estuvieron allí esos homininos.",
+      "question_state": "El equipo combinó cinco técnicas independientes y 43 edades radiométricas.",
+      "reason_to_continue": "Las edades permiten comparar los depósitos de las dos cuevas.",
+      "new_information": "Las cuevas están en Guangxi, cerca de Chongzuo, y fueron fechadas con cinco técnicas."
+    },
+    {
+      "id": "scene_004",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "El resultado no es un día exacto: sitúa la presencia regional entre 324 mil y 184 mil años atrás, con intervalos que se superponen entre las dos cuevas.",
+      "on_screen_text": "324,000–184,000 años",
+      "visual_description": "Cronología con dos bandas horizontales: Baxian de 324 a 184 mil años y Naxian de 319 a 241 mil; el solapamiento se destaca sin sugerir ocupación continua.",
+      "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text, clean layered paper timeline with two horizontal fossil-deposit bands and a clear overlap, no text or numbers rendered in the image, scientific editorial graphic, vertical 9:16, no typography, no labels, no logos",
+      "ambiente": "Vibración grave contenida",
+      "sfx": [
+        "Deslizamiento temporal suave",
+        "Acento corto al aparecer el intervalo"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "papel_rasgado_capas",
+      "capa": {
+        "tipo": "dato",
+        "valor": "Baxian 324–184 ka; Naxian 319–241 ka",
+        "unidad": "miles de años antes del presente",
+        "etiqueta": "Intervalos modelados de los depósitos fósiles",
+        "fuente": "Westaway et al., Nature (2026), Fig. 3 y resultados.",
+        "precision_note": "Son rangos modelados de los depósitos; no implican ocupación continua ni que cada diente tenga una fecha individual exacta."
+      },
+      "dramatic_beat": "La cronología coloca a H. erectus mucho más tarde de lo esperado en esta región.",
+      "scene_function": "Dar escala temporal y mostrar qué significa el intervalo sin fingir una fecha puntual.",
+      "causal_bridge_from_previous": "Las cinco técnicas y las 43 edades se integran en dos rangos comparables.",
+      "question_state": "La presencia regional queda situada entre 324 y 184 mil años atrás.",
+      "reason_to_continue": "La fecha no responde por sí sola cómo era el ambiente.",
+      "new_information": "Los intervalos de Baxian y Naxian se solapan y amplían el registro regional."
+    },
+    {
+      "id": "scene_005",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "La fauna y los isótopos de carbono apuntan a un bosque de dosel cerrado. Tres dientes de Naxian también encajan con esa vegetación.",
+      "on_screen_text": "Bosque tropical de dosel cerrado",
+      "visual_description": "Capas de copa forestal, suelo húmedo y fauna representada solo como siluetas discretas; la escena no inventa especies ni comportamientos.",
+      "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text, dense closed-canopy tropical rainforest diorama with layered leaves, humid forest floor and restrained mammal silhouettes, no people, no invented animal behavior, no typography, no labels, no logos",
+      "ambiente": "Insectos y goteo de bosque húmedo",
+      "sfx": [
+        "Hojas rozando suavemente",
+        "Pulso corto al cerrarse el dosel"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "papel_rasgado_capas",
+      "dramatic_beat": "La química y la fauna apuntan al bosque, no a una sabana abierta.",
+      "scene_function": "Presentar la evidencia ambiental que sostiene el giro científico.",
+      "causal_bridge_from_previous": "Una vez fechado el depósito, la fauna y la química de los dientes reconstruyen su entorno.",
+      "question_state": "El ambiente dominante fue de bosque de dosel cerrado.",
+      "reason_to_continue": "La evidencia cambia la interpretación de la flexibilidad ecológica de la especie.",
+      "new_information": "Tres dientes de Naxian presentan valores isotópicos consistentes con esa vegetación."
+    },
+    {
+      "id": "scene_006",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "Ese es el giro: Homo erectus no aparece solo en sabanas o bosques abiertos. La evidencia indica que también pudo explotar una selva tropical.",
+      "on_screen_text": "La selva también fue hábitat",
+      "visual_description": "La cueva y el dosel se conectan en un mismo diorama; el foco cambia del depósito fósil al ecosistema cerrado.",
+      "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text, same karst cave and closed-canopy rainforest in one layered paper diorama, visual transition from fossil sediment to living ecosystem, no human figures, no typography, no labels, no logos",
+      "ambiente": "Bosque profundo con eco de cueva",
+      "sfx": [
+        "Cierre suave de hojas",
+        "Golpe grave y breve del giro"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "papel_rasgado_capas",
+      "dramatic_beat": "La especie aparece en un ambiente que se consideraba difícil para ella.",
+      "scene_function": "Explicar el giro científico sin generalizar a todas las poblaciones de H. erectus.",
+      "causal_bridge_from_previous": "La reconstrucción ambiental convierte los isótopos y la fauna en una conclusión ecológica.",
+      "question_state": "La evidencia indica explotación de selva tropical cerrada en estas poblaciones.",
+      "reason_to_continue": "La movilidad aporta otra pista, pero exige un límite claro.",
+      "new_information": "El estudio desafía la idea de que H. erectus dependía de paisajes abiertos."
+    },
+    {
+      "id": "scene_007",
+      "arc": "cierre_historia",
+      "duration_seconds": 10,
+      "narration": "El estroncio de cuatro individuos sugiere movilidad entre regiones o recursos de varios lugares durante la infancia; no dibuja una ruta exacta. La muestra humana sigue siendo pequeña.",
+      "on_screen_text": "Movilidad sugerida, no ruta confirmada",
+      "visual_description": "Detalle de esmalte dental y un esquema de medición isotópica sin mapa de desplazamiento, sin cifras no publicadas y sin ruta trazada.",
+      "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text, scientific paper collage close-up of a fossil tooth enamel cross-section and abstract isotope measurement bands, no numerical labels, no route map, no invented instruments, no typography, no labels, no logos",
+      "ambiente": "Laboratorio silencioso con un fondo de bosque muy tenue",
+      "sfx": [
+        "Rasguido breve de gráfica",
+        "Pausa limpia antes del cierre"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "papel_rasgado_capas",
+      "dramatic_beat": "La movilidad amplía la historia, pero la muestra limita su alcance.",
+      "scene_function": "Separar la inferencia de movilidad de una ruta demostrada y reconocer el tamaño limitado de la evidencia.",
+      "causal_bridge_from_previous": "La adaptación al bosque no implica que conozcamos cada desplazamiento de esos individuos.",
+      "question_state": "El estroncio sugiere movimiento o recursos de varios lugares; no reconstruye una trayectoria exacta.",
+      "reason_to_continue": "El cierre debe volver a los dientes y pagar la pregunta inicial.",
+      "new_information": "Cuatro individuos aportan indicios de movilidad; la interpretación sigue siendo limitada."
+    },
+    {
+      "id": "scene_008",
+      "arc": "reflexion_o_pregunta",
+      "duration_seconds": 9,
+      "narration": "La selva no fue necesariamente su único hogar, pero sí uno de sus refugios. ¿Cuántos más faltan por encontrar? Esto fue Datos y ociosidades.",
+      "on_screen_text": "¿Cuántos refugios faltan?",
+      "visual_description": "La entrada de la cueva reaparece bajo el dosel cerrado; la composición recupera el sedimento del inicio y cierra el arco.",
+      "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text, return to the same layered limestone cave entrance under a dense rainforest canopy, subtle fossil sediment foreground, quiet closing composition, no people, no typography, no labels, no logos",
+      "ambiente": "Viento húmedo que se disipa y eco de cueva",
+      "sfx": [
+        "Eco final breve",
+        "Cierre sonoro limpio"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "papel_rasgado_capas",
+      "dramatic_beat": "Los dientes del inicio revelan un refugio ecológico inesperado.",
+      "scene_function": "Pagar la apertura, dejar una pregunta y cerrar con el sello exacto.",
+      "causal_bridge_from_previous": "El límite de evidencia no borra el hallazgo: muestra qué se sabe y qué queda por descubrir.",
+      "question_state": "La selva fue uno de los ambientes explotados por estas poblaciones de H. erectus.",
+      "reason_to_continue": "La pregunta abierta invita a buscar otros registros fósiles sin adelantar una respuesta.",
+      "new_information": "La selva amplía el mapa ecológico conocido de H. erectus."
+    }
+  ],
+  "cortinilla_fuentes": {
+    "duration_seconds": 6,
+    "titulo": "Fuentes",
+    "aviso": "Referencias bibliográficas declaradas; no se generan medios en esta preproducción.",
+    "firma": "Datos y ociosidades",
+    "source_ids": [
+      "SRC-001",
+      "SRC-002",
+      "SRC-003"
+    ]
+  },
+  "audio": {
+    "music_asset": null,
+    "music_plan": "Cama sintetizada discreta tipo circuito_neural, pulsos suaves y textura de laboratorio/bosque; sin percusión épica. No existe archivo de audio.",
+    "music_license": null,
+    "cama_musical": "circuito_neural"
+  },
+  "export": {
+    "resolution": "1080x1920",
+    "fps": 30,
+    "render_status": "NOT_GENERATED"
+  },
+  "publicacion": {
+    "status": "PENDIENTE_DECISION_GROK",
+    "platforms": [
+      "YouTube Shorts",
+      "TikTok",
+      "Facebook Reels"
+    ],
+    "note": "No publicar ni programar desde preproducción textual."
+  },
+  "estado": "BORRADOR_EN_PROYECTOS",
+  "production_mode": "storyboard_only",
+  "validation_notes": [
+    "Borrador textual; no se ha creado narrative_qa y no se ha marcado preparado.",
+    "La URL primaria de Nature está verificada; el DOI sigue pendiente de resolución Crossref/doi.org y bloquea la promoción.",
+    "El validador estructural oficial no se ha ejecutado en esta sesión.",
+    "La auditoría narrativa debe realizarse después, en una pasada independiente de lectura en frío."
+  ],
+  "linea_tematica_provisional": "Naturaleza / paleontología",
+  "approved_assets": [],
+  "risk_notes": [
+    "No afirmar que todas las poblaciones de Homo erectus vivían en selvas; el estudio se limita a dos cuevas del sur de China.",
+    "No presentar 324–184 ka como ocupación continua demostrada.",
+    "No convertir la inferencia de movilidad basada en estroncio en una ruta o migración confirmada.",
+    "El punto del mapa localiza Chongzuo como referencia urbana, no las cuevas; no inventar coordenadas de Naxian o Baxian.",
+    "No reconstruir rostros, vestimenta, herramientas ni conductas humanas no documentadas."
+  ]
+}
