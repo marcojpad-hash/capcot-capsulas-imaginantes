@@ -66,10 +66,10 @@ Ninguno de los dos comandos incluyó `--check-doi`. Estos runs confirman la vali
 - Comando exacto: `python scripts/validar_storyboard.py proyectos/2026-11-18_dato-kuroshio-puente-atmosferico/storyboard.json`.
 - Log del paso **Validar storyboard textual**: `OK`, salida 0. El paso de expediente terminó con `Expediente textual íntegro; medios no generados; publicación no autorizada.`.
 - El comando no incluyó `--check-doi`. El DOI `10.1038/s41561-026-02139-2` sigue `PENDIENTE_RESOLVEDOR`; el run confirma estructura, no Crossref.
-- En el corte del run #6, los blobs del storyboard y del validador coincidían con la rama entonces vigente. El run #7 posterior se documenta abajo; el validador actual cambió respecto del ejecutado en ese run, por lo que no se afirma validación con el hash actual. No se promueve ni se copia a cola.
+- En el corte del run #6, los blobs del storyboard y del validador coincidían con la rama entonces vigente. El run posterior posterior se documenta abajo; el validador actual cambió respecto del ejecutado en ese run, por lo que no se afirma validación con el hash actual. No se promueve ni se copia a cola.
 
 
-## Actualización de auditoría — 21-nov-2026 (run #7, revisión de obsolescencia)
+## Actualización de auditoría — 21-nov-2026 (run posterior, revisión de obsolescencia)
 
 - Workflow: `CAPCOT — validar preproducción Kuroshio`; run `44832382024`, job `136620265585`, resultado `success`.
 - Commit ejecutado: `30d0d5840a21388d8b45978c9ea4bab4fbda7bb9`; log de checkout: `HEAD is now at 30d0d58 Record latest Kuroshio structural CI run without DOI validation`.
@@ -78,4 +78,4 @@ Ninguno de los dos comandos incluyó `--check-doi`. Estos runs confirman la vali
 - El comando no incluyó `--check-doi`; el DOI `10.1038/s41561-026-02139-2` permanece `PENDIENTE_RESOLVEDOR`.
 - Comparación de blobs: storyboard del commit y actual = `2046152ade90fffaf9527d180e13cc5f6009fb60`; workflow = `e8151c8eb1ee5a0893f3f800f4c625887427ecde`; validador del run = `28e3d600431b92d7bd0eca94f34d4ff5867c9cbf`; validador actual = `50335bb620ea5b0fad395af71c0f0c764cf9b067`.
 - El validador actual cambió: encapsula la validación de puntos y añade coordenadas ecuatoriales RA/Dec. El mapa de este storyboard usa regiones terrestres delimitadas (35–45°N; 140–170°E y 35–45°N; 50–80°W), no puntos celestes; el cambio observado no parece afectar este caso, pero no existe una ejecución CI con el hash actual del validador.
-- Estado conservado: `BORRADOR_EN_PROYECTOS_NO_APTO_PARA_PROMOCION`. La validación del run #7 acredita la versión anterior del validador; no acredita Crossref ni elimina el bloqueo DOI. No se copia a cola ni se emite handoff.
+- Estado conservado: `BORRADOR_EN_PROYECTOS_NO_APTO_PARA_PROMOCION`. La validación del run posterior acredita la versión anterior del validador; no acredita Crossref ni elimina el bloqueo DOI. No se copia a cola ni se emite handoff.
