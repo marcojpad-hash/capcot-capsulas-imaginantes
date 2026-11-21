@@ -685,3 +685,60 @@ El estilo inicial `papel_rasgado_capas` se había usado el 14 y el 18-nov; no cu
 ### CI final del run 11 — 20-nov-2026 20:23 CDMX
 
 CodeQL terminó **SUCCESS** para los últimos tres commits de la revalidación: storyboard/style `d381e473`, radar `435d3e43` y control `fb5359c8`. En los tres pasaron `Analyze (python)` y `Analyze (actions)`. Este resultado no ejecuta el validador de storyboard ni la compuerta DOI/Crossref y no crea narrative_qa.
+
+
+## Run 12 — 2026-11-20, 22:06 CDMX
+
+### Estado de tareas
+
+- Investigador CAPCOT: última ejecución completada a las 08:40 CDMX.
+- Auditor CAPCOT: ejecución programada fallida; inicio 17:01 y fin 17:07 CDMX, mensaje `There was a problem with your scheduled task.`. La revisión de este run se realizó manualmente.
+- Operador único: este run inició a las 22:03 CDMX; el resultado anterior registrado correspondía al run 11.
+- El monitor diario de Issues a las 09:00 no existe. Se intentó crearlo; la herramienta respondió literalmente `Automation creation is unavailable during an automation run.`. No se creó una tarea.
+
+### Borrador nuevo y rotación
+
+- Creado y releído `proyectos/2026-11-22_voyager-1-un-dia-luz/storyboard.json`, commit `1450f262`.
+- Slot: 22-nov, 07:00 CDMX, ventana matutina activa y sin registro en main ni en feature. Es domingo, día no preferente, pero no excluido por la política. La franja 23:30 se dejó libre: la noticia de Voyager no sería del mismo día ni estaría dentro de las 48 horas de ese slot.
+- 8 escenas, 180 palabras, 78 segundos de escenas + 6 de cortinilla = 84 segundos. Voz `es-MX-JorgeNeural`, +7%, -2Hz; estilo `risografia`, estructura `mito_vs_dato`, cama `pizzicato`.
+- Incluye mapa de los tres complejos DSN con coordenadas; el artículo NASA/JPL sustenta la red y el hito, mientras que las páginas cartográficas se usan únicamente como localizadores. Observación, cálculo, inferencia y recomendación están separados en `analisis`.
+- Preflight estático de campos básicos: 8 escenas, 180 palabras, 84 s, prompt_base literal, ambiente/SFX por escena, fuentes referenciadas, mapa y capa de dato presentes, sin campos de assets/rutas, `approved_assets=[]`, `render_status=NOT_GENERATED` y publicación pendiente. **No equivale a ejecutar el validador oficial.**
+- No contiene `narrative_qa`, no tiene `ESTADO_EJECUCION.md`, no hay medios, no está en cola y no está programado. La auditoría narrativa y el validador estructural oficial siguen pendientes.
+
+### QA de proyectos recientes
+
+- Homo erectus, 21-nov 07:00: se registró lectura independiente en frío, commit `9b59e886`. Resultado **FAIL 83**; seis checks verdaderos y `giro_cientifico_explicado=false`, bandera `GIRO_CIENTIFICO_NOMBRADO_PERO_NO_EXPLICADO`. La narración no se modificó.
+- Fentale conserva PASS 90, pero `estructura=paradoja_mecanica` no pertenece al catálogo de rotación; el DOI/Crossref directo sigue pendiente. No promover.
+- Púlsar gamma conserva FAIL 83; no reescribir.
+- Marea cerebral y Sapropeles conservan PASS 92 y 91; no repetir la revisión porque sus narraciones no cambiaron. Sus compuertas DOI/estructura siguen pendientes.
+
+### Reconciliación del lote 5–7 de noviembre
+
+- Los 12 storyboards siguen en backlog: 2 PASS (Venus 90 y Arena 94) y 10 FAIL. Ninguno se promovió.
+- Se relevaron 7 proyectos con sidecars TikTok/Facebook: Venus, Palomitas, Ballena, Aguacate, Ranas, Arena y Hielo. Nubes es un octavo ID con publicación registrada en main. En total, ocho IDs exactos tienen evidencia de procesamiento/publicación/programación previa; no redispatchar.
+- Tres IDs sin evidencia exacta de procesamiento en esta revisión: Rayo globular, Pulpo sueños y Huesos bebé. Sus fechas ya pasaron y sus QA no autorizan promoción retroactiva.
+- El proyecto de árboles del 5-nov tiene posible solapamiento temático con la salida distinta `2026-11-07_arboles-comunicacion-bosque`, YouTube `EX0W3q-yKRw`; tratar como posible duplicación de tema, no como mismo `project_id`.
+- Los 12 estados `cola/estado/<id>.json` devolvieron 404: `RECEPCION_GROK_NO_CONFIRMADA`. La raíz de `cola/entrada` no contiene JSON planos; solo hay directorios anidados de robot orbital y ratas topo. El selector del workflow busca JSON en la raíz (`maxdepth 1)); no hay entradas dispatchables. El marcador de robot en `handoffs/grok_inbox` no prueba recepción.
+- `cola/bloqueados` conserva seis copias planas con IDs exactos (Rayo, Aguacate, Arena, Ranas, Nubes y Huesos) y seis variantes de slug con `project_id` distinto. No se alteraron ni retiraron.
+- Ratas topo: `salidas/2026-11-11_dato-ratas-topo-damaraland/` existe en main con `capsula.mp4`, `publicacion.json` y `verificacion_yt.json`; YouTube `WcTviUWqbes`, publicado/programado para 12-nov 07:00 CDMX. No redispatchar.
+- Nubes pesan: main registra YouTube `4Qpl17Ts_vI`, TikTok y Facebook publicados para 12-nov 07:00 CDMX. La carpeta `salidas/2026-11-07_inter-nubes-pesan/` devuelve 404; estado de medios: `MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO`. No redispatchar.
+- Hielo caliente: sidecars TT/FB y registro YouTube histórico `HSgrnejAcaI` (retirado del canal el 12-nov); la salida en main sí contiene el medio. No redispatchar.
+- Arena cantante: YouTube `m4RqQRaz55k` aparece público y en el histórico del 18-nov con 48 vistas. El sidecar también menciona `ztIkYcXB91U` como todavía programado; ese ID no aparece en `data/publicaciones.json` ni en `data/vistas_historico.json`. Estado: `RIESGO_ID_ANTIGUO_PROGRAMADO_NO_RESUELTO`; no cancelar ni asumir que ya no está programado.
+- Venus, Palomitas, Ballena, Aguacate y Ranas tienen sidecars con publicaciones o programación TT/FB; sus carpetas `salidas/<id>/` no existen en main. Sus rutas MP4 en sidecars apuntan a workspace, no al árbol GitHub: `MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO`.
+- Robot orbital: main conserva YouTube `ZG4iQgmWrLI` y programación TT/FB para 21-nov 19:00 CDMX. Se comprobaron 404 en `salidas/2026-11-09_dato-robot-ensambla-orbita/`, `capsula.mp4` y `portada.jpg`; `frames/` en feature solo tiene `.gitkeep`. Se corrigió `cola/entrada/2026-11-09_dato-robot-ensambla-orbita/ESTADO_EJECUCION.md` a `MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO`, commit `2ba20364`. Se mantiene `PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR`; no cancelar ni redispatchar.
+- `historial_youtube.json` no está disponible. `data/vistas_historico.json` tiene 106 registros en main, último 18-nov 13:56; feature tiene 74, último 28-oct. El histórico no permite resolver por sí solo el estado actual de IDs antiguos.
+
+### Workflow, CI y PR
+
+- `.github/workflows/capcot-grok-dispatch.yml` selecciona JSON planos de la raíz de `cola/entrada`; no se disparó ni se envió payload. Los secretos no se inspeccionaron ni se leyeron.
+- Worker de cola run `44839666536`: SUCCESS, log `sin trabajo en cola`. Callback run `44850289947`: SUCCESS, sin Issues nuevos.
+- Semgrep run `44843745822`: FAILURE, 32 hallazgos bloqueantes; no hay artefacto SARIF descargable para atribuirlos y corregirlos con precisión. Gitleaks run `44843745857`: SUCCESS.
+- El head actual de PR #3 es `0768dd9d`, sigue draft y sin checks combinados para ese commit. PR #14 conserva `asset_filename` incompatible con preproducción; PR #13 y #6 siguen abiertos. Issues #10 y #11 siguen abiertos con etiqueta `hecho`. No se fusionó ni cerró nada.
+
+### Commits de este run
+
+- `9b59e886` — QA independiente de Homo erectus, FAIL 83.
+- `2ba20364` — corrección de evidencia de medios de robot orbital.
+- `1450f262` — storyboard Voyager 1, 22-nov 07:00.
+- `0768dd9d` — radar actualizado con errores de feeds, respaldo de Trends y candidato Voyager.
+- Este archivo se actualiza ahora para dejar continuidad de la auditoría.
