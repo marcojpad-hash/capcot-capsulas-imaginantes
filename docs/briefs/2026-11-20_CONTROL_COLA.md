@@ -667,3 +667,8 @@ No se modificaron `data/*.json`, main, secretos, permisos, decisiones editoriale
 - `.github/workflows/capcot-grok-dispatch.yml` no se disparó y no se enviaron webhooks. Su selector sigue limitado a JSON planos de primer nivel; las carpetas anidadas históricas no son dispatchables.
 - Los commits nuevos `bdec12e`, `db4f094` y `9522502` no tienen status checks publicados al momento de esta lectura; no se declara CI verde. PR #3 sigue OPEN/DRAFT con HEAD `bdec12e`; PR #14 sigue abierto y conserva `asset_filename` en preproducción; no se fusionó ni se disparó workflow.
 - La auditoría programada CAPCOT terminó FAILED a las 17:07 CDMX; este run hizo la relectura manual. No se generaron medios, no se consumieron créditos, no se alteraron `data/*.json`, publicaciones ni estados Grok.
+
+
+### Actualización de CI posterior al run 11 — 20-nov-2026 20:20 CDMX
+
+Los checks dinámicos de PR #3 terminaron después de la primera lectura del run 11. CodeQL **SUCCESS** para los tres commits de contenido `9522502`, `db4f094` y `bdec12e`, con ambos jobs `Analyze (python)` y `Analyze (actions)` en SUCCESS. Los commits de radar y control (`c6b01d8` y `3169520`) también tienen CodeQL SUCCESS en ambos jobs. Esto es análisis estático de código; **no** ejecuta `validar_storyboard.py`, no comprueba DOI/Crossref ni sustituye narrative_qa. Se corrige así la nota anterior que decía que todavía no había status checks publicados.
