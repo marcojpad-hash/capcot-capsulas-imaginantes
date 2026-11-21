@@ -238,3 +238,28 @@ Se releyeron los cinco JSON directamente desde GitHub y se contrastaron con la e
 - Homo y púlsar conservan FAIL/83 por giro científico nombrado pero no explicado. Voyager conserva FAIL/83 por confundir fecha del hito con fecha de confirmación. No se reescribieron narraciones ni claims.
 - DOI: Homo, púlsar y yubarta conservan estado verificado; Voyager usa fuentes sin DOI; Fentale sigue `PENDIENTE_RESOLVEDOR`. Se intentaron rutas Crossref REST, página Crossref y doi.org; las tres fueron rechazadas por la herramienta web con `URL ... is not accessible via this tool`. No se marcó Fentale como verificado y no se ejecutó `--check-doi`.
 - Ninguna carpeta de proyecto 21–22 contiene `ESTADO_EJECUCION.md`; los cinco siguen como borradores en `proyectos/`. La revisión estructural de esta sección es estática, no una ejecución del validador Python.
+
+
+## 14. Reconciliación operativa posterior — 2026-11-21, 10:00 CDMX
+
+### Estado vivo de rama, slots y recepción
+
+- HEAD de `feature/capcot-video-discovery-continuity` sigue en `49db1df246b241e431683f7eb501911dcae72ec9`; no hubo commits posteriores a la adenda 13. Se releyó el inventario de `proyectos/`: los cinco storyboards 21–22 nov conservan los mismos blobs, estructura y QA; no se repitió lectura narrativa PASS.
+- Los cinco proyectos siguen sin `ESTADO_EJECUCION.md`; no existe un estado PREPARADO que requiera corrección.
+- Para los cinco IDs actuales, `cola/estado/<project_id>.json` devuelve 404: **RECEPCION_GROK_NO_CONFIRMADA**. No se creó ni modificó ningún estado.
+- `cola/entrada/` contiene `.gitkeep` y dos directorios heredados anidados (robot y ratas topo), pero ningún JSON plano en la raíz. `handoffs/grok_inbox/` contiene únicamente el marcador histórico del robot con estado `pending`; no acredita recepción.
+- Se releyó `data/publicaciones.json` de main: el 21-nov aparecen oxoboranos a las 13:30 y robot orbital a las 19:00, ambos con datos de publicación/programación. Ninguno coincide exactamente con los slots de los cinco borradores actuales (21-nov 07:00, 17:00, 23:30; 22-nov 07:00 y 17:00). Por tanto, no se registra conflicto de slot para esos cinco; el robot conserva **PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR**. No se duplicó ni canceló nada.
+- El trabajador de cola, run [44922052187](https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/actions/runs/44922052187), terminó SUCCESS en **main**. Su log contiene literalmente `[trabajador] sin trabajo en cola.`; no procesó la rama feature ni acredita recepción Grok.
+- La consulta de Actions entre el 1 y el 2 de noviembre devuelve 48 ejecuciones de `capcot-grok-dispatch`, todas FAILURE; entre el 20 y el 21 de noviembre no aparece ninguna. No se disparó el workflow. El estado actual de `GROK_WEBHOOK_URL` y `GROK_WEBHOOK_TOKEN` sigue sin inferirse.
+
+### Seguridad y calidad de código
+
+- Gitleaks, run [44901564264](https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/actions/runs/44901564264), terminó FAILURE por una regla `generic-api-key` en `docs/SKILL_DRAFT_capsula_diaria.md:17`, commit histórico `a4ccf1974a8966d5801a991ac25609ef4d7cdca7`. Se leyó ese blob histórico: la línea contiene únicamente el literal documental `CAPCOT_LLM_API_KEY=...`, no un valor de credencial. Clasificación: **FALSO_POSITIVO_PROBABLE**; se deja el hallazgo para triage del mantenedor, sin cerrar el finding, modificar secretos ni exponer valores.
+- CodeQL del PR #3, run [44912070522](https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/actions/runs/44912070522), terminó SUCCESS. No es una validación de DOI ni un dispatch.
+- `scripts/registro_editorial.py` normaliza publicaciones sin conservar `slot_local`, `publishAt` ni `video_id`, y no lee `data/horarios.json` ni `data/horario_*.json`. El snapshot de horarios de feature sigue fechado el 9-nov y no refleja los dos registros de publicación de main del 21-nov. Esto puede subcontar ocupación y rotación al usar el inventario de feature por sí solo. Se documenta como mejora pendiente de script y pruebas; no se modificó el script ni ningún `data/*.json`.
+- Se intentó ejecutar el validador estructural real fuera de Actions. `container.download` rechazó la URL porque no estaba disponible para lectura web; la alternativa `curl` devolvió literalmente `Could not resolve host: raw.githubusercontent.com`. No se disparó un workflow como alternativa. La revisión estructural permanece **ESTÁTICA**, no se declara ejecución del validador ni de `--check-doi`.
+- Las consultas Crossref REST y DOI resolver continuaron inaccesibles desde la herramienta web; las páginas editoriales/PubMed visibles corroboran los identificadores de los artículos correspondientes, pero no sustituyen la compuerta oficial `--check-doi`. Fentale conserva `PENDIENTE_RESOLVEDOR`.
+
+### Cierre de esta reconciliación
+
+No se promovió ningún storyboard, no se escribió en cola, no se creó estado Grok, no se envió webhook, no se publicaron ni programaron cápsulas, no se generaron medios, no se consumieron créditos y no se modificó main, `data/*.json`, workflows, secretos o permisos. El siguiente paso técnico de CAPCOT es corregir y probar el inventario de slots en `registro_editorial.py` en una revisión aislada, y ejecutar el validador real con `--check-doi` cuando exista una vía de ejecución autorizada.
