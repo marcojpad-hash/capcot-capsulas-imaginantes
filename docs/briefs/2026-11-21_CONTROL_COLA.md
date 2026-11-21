@@ -263,3 +263,18 @@ Se releyeron los cinco JSON directamente desde GitHub y se contrastaron con la e
 ### Cierre de esta reconciliación
 
 No se promovió ningún storyboard, no se escribió en cola, no se creó estado Grok, no se envió webhook, no se publicaron ni programaron cápsulas, no se generaron medios, no se consumieron créditos y no se modificó main, `data/*.json`, workflows, secretos o permisos. El siguiente paso técnico de CAPCOT es corregir y probar el inventario de slots en `registro_editorial.py` en una revisión aislada, y ejecutar el validador real con `--check-doi` cuando exista una vía de ejecución autorizada.
+
+
+## 15. Frescura de `data/*.json` — lectura 2026-11-21
+
+Se relevaron los JSON de `data/` sin modificarlos. La fotografía de rotación/publicación no está sincronizada con los proyectos actuales:
+
+- `horarios.json`: último dato 2026-11-09; no contiene 21–22 nov.
+- `horario_2026-11-11.json`: último archivo diario de horario; no hay archivos diarios 12–21 nov.
+- `horario_semana_2026-11-01_07.json`: cubre únicamente 1–7 nov.
+- `publicaciones.json` de feature: 22 registros, rango 24-oct–1-nov; no contiene los registros actuales del 21–22 nov que sí aparecen en main.
+- `rotacion.json`: rango 24–31 oct. `cola.json`: un registro del 31-oct. `temas_del_dia.json`: rango 24–28 oct. `estilos_usados.json`: 21 registros y rango 24–28 oct. `tendencias_estilos.json`: actualizado 31-oct.
+- `balances_6h.json` y `vistas_historico.json` terminan el 28-oct; `cierre_diario/` solo contiene 25, 26 y 27-oct. `reprogramacion_tt_fb_v4_2026-11-01_03.json` conserva el lote 1–3 nov.
+- `endscreens_rotacion.json` sí tiene actualización hasta 17-nov, pero es un registro de pantallas finales, no una parrilla de slots diarios.
+
+Conclusión: los JSON de rotación, horario, publicaciones e historial no pueden usarse como fuente actual única para reservar slots del 21–22 nov. Para esta reconciliación se contrastaron los storyboards vivos de feature con `data/publicaciones.json` de main. El inventario `registro_editorial.py` no lee los snapshots de horario ni conserva todos los campos de publicación, por lo que no detecta por sí solo esta divergencia. No se cambió ningún `data/*.json`.
