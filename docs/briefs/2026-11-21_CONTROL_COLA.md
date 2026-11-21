@@ -183,3 +183,37 @@ Se releyeron los seis storyboards que siguen en `proyectos/`. Sus QA existentes 
 - Rotación aún desfasada: `data/rotacion.json` llega al 31-oct, `data/estilos_usados.json` al 28-oct, `data/tendencias_estilos.json` al 31-oct y `data/cola.json` al 31-oct. Los archivos `data/*.json` permanecieron intactos.
 
 **Acciones de esta relectura:** solo consultas y comparación de blobs/logs. No se escribieron entradas de cola, estados Grok ni data; no se dispararon workflows, no se generaron medios, no se publicó ni se consumieron créditos.
+
+
+## 12. Relectura de Actions, PRs y producción heredada — 2026-11-21 (corte 08:02–08:06 CDMX)
+
+### Rama y ejecuciones
+- HEAD de feature al corte: `0516a346538a61f5a0ecd960c980fb1b64d8459c`; main permanece en `8ceba2a913806acb665c5491fca8a76f93fab2ba`. El commit de feature actualizó únicamente este RADAR existente (+114 líneas); no creó un segundo radar.
+- La automatización investigadora terminó a las 08:05:14 CDMX y su resultado atribuye el commit `0516a346` al radar del 21-nov. No se atribuye ese cambio a esta auditoría.
+- CodeQL del PR #3, run [44912070522](https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/actions/runs/44912070522), SUCCESS en los análisis Python y Actions. No es un dispatch Grok.
+- Gitleaks, run [44901564264](https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/actions/runs/44901564264), FAILURE: un hallazgo `generic-api-key` en `docs/SKILL_DRAFT_capsula_diaria.md:17`, asociado al commit histórico `a4ccf1974a8966d5801a991ac25609ef4d7cdca7`. La línea histórica es prosa documental que comienza «Con key:» y continúa con un comando Python; parece un falso positivo del patrón genérico, pero requiere triage del mantenedor. La versión actual de main tiene otra línea 17. No se reprodujo ni copió ningún valor, no se modificó ninguna credencial y no se declaró un secreto real.
+- El run del trabajador de cola [44875678607](https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/actions/runs/44875678607) terminó SUCCESS en main con `[trabajador] sin trabajo en cola.`; no acredita procesamiento de feature. En las 15 Actions recientes consultadas no aparece ejecución de `capcot-grok-dispatch`.
+- La consulta de inventario de secretos de Actions no está expuesta por el conector; devolvió literalmente `HTTP 400: GitHub Fetch URL is not an allowed public GitHub repository or search endpoint.` No se clasificó ningún nombre como ausente y no se leyó ningún valor.
+
+### Pull requests abiertos — relectura viva
+- **PR #3**, feature→main: OPEN, draft, `mergeable=false`; 686 archivos, 76,820 adiciones y 1,694 eliminaciones. El diff contiene 13 archivos `data/*.json` modificados/agregados y 78 artefactos bajo `_tmp/`. Esto contradice la regla vigente de solo lectura de data y deja el PR no apto para merge sin separar/restaurar esos cambios. No se modificó el PR ni sus datos.
+- **PR #14**, cuásares: OPEN, mergeable. Modifica el storyboard y el ledger; agrega `asset_filename` a las ocho escenas, conserva el `narrative_qa` histórico FAIL/82 y declara que no ejecutó `validar_storyboard.py --check-doi`. No cumple las compuertas actuales; no se promovió.
+- **PR #13**, auditoría independiente de cuásares: OPEN; agrega `AUDITORIA.md`, no actualiza por sí mismo el `narrative_qa` del storyboard ni habilita promoción.
+- **PR #4**, ubicación de frames ASTRA: OPEN. Cambia el estado del paquete robot para decir que los frames fueron generados en el chat de Grok, pero la carpeta `cola/entrada/2026-11-09_dato-robot-ensambla-orbita/frames/` contiene únicamente `.gitkeep`. Los binarios no están verificados en GitHub.
+- **PR #6**, supervisor genérico: OPEN hacia feature. Añade un workflow con `secrets: inherit` y permiso `issues: write`; el workflow reutilizable en `agente-cero-costo` puede crear/comentar una orden en el bus central al fallar, o hacerlo en el repo llamador si no dispone del token opcional. No se ejecutó. Queda como revisión de alcance/permisos antes de cualquier integración.
+- **PR #7, #8 y #9**, actualizaciones de Actions: OPEN, sin merge. No se alteraron dependencias ni workflows.
+
+### Inventario, slots y medios
+- Se releyeron los cinco storyboards del 21–22 nov con la expresión de palabras de `scripts/validar_storyboard.py`: Fentale 170, Homo erectus 196, púlsar 209, Voyager 180 y yubarta 180; los cinco tienen 8 escenas y 84 s. QA preexistente: 2 PASS / 3 FAIL. No se repitió lectura narrativa PASS.
+- El 21-nov sigue completamente ocupado: feature 07:00 Homo erectus, 17:00 púlsar y 23:30 Fentale; main 13:30 oxoboranos y 19:00 robot. Fentale conserva fuente del 19-nov, no apta para la regla de dato del día del 21. El 22-nov ya tiene Voyager 07:00 y yubarta 17:00 en proyectos; la ventana de yubarta sigue siendo de prueba. No se creó storyboard nuevo.
+- `cola/estado/` devuelve 404. `handoffs/grok_inbox/` contiene solo el marker histórico del robot con estado `pending`; no acredita recepción. No se creó ni modificó estado Grok.
+- `cola/entrada/` contiene dos carpetas anidadas heredadas y ningún JSON plano: robot y ratas topo. El workflow Grok selecciona JSON planos de primer nivel; las rutas anidadas no son dispatchables por ese selector.
+- Robot: main conserva programación del 21-nov 19:00 y YouTube ID `ZG4iQgmWrLI`; no hay salida del robot en main y los frames de feature son solo `.gitkeep`. Clasificación: `PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR` y `MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO`.
+- Ratas topo: main contiene `salidas/2026-11-11_dato-ratas-topo-damaraland/` con storyboard, QA, publicación y programación; feature conserva ocho PNG en su carpeta de frames. La pieza ya está publicada y el MP4 no aparece en el árbol. No redispatchar.
+- `cola/bloqueados/` tiene 47 entradas; los 12 IDs canónicos del 5–7 nov mantienen 2 PASS / 10 FAIL. Se releyeron sus storyboards canónicos y se compararon copias disponibles; las variantes de árboles y nubes siguen siendo distintas. No se fusionó, movió ni borró ninguna copia.
+- Los JSON de `data/`, main, workflows, estados Grok, medios, publicaciones y programación permanecieron intactos.
+
+### Resultado de esta auditoría
+- Operación ejecutada: relectura de inventario, estados, PRs, Actions, logs y fuentes cruzadas; se añadió esta adenda al control existente.
+- No se ejecutó el validador Python en runtime ni `--check-doi`; los conteos anteriores son estáticos con la expresión del script.
+- No se promovió ni redispatchó, no se generaron medios, no se publicó, no se consumieron créditos, no se enviaron mensajes, no se cambiaron secretos/permisos y no se hizo merge.
