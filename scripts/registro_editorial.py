@@ -238,6 +238,8 @@ def _slot_containers(raw):
         for value in parent.values():
             if isinstance(value, dict):
                 pending.append(value)
+            elif isinstance(value, list):
+                pending.extend(item for item in value if isinstance(item, dict))
     return containers
 
 
@@ -369,15 +371,17 @@ def _slot_evidence(raw, source_path, default_project_id=None):
     video_id, _ = _pick_field(
         containers, ("yt_id", "video_id", "youtube_id", "id_video")
     )
-    youtube_containers = [
+    platform_containers = [
         container for container in containers
-        if isinstance(container, dict) and (
-            container is raw.get("youtube") or container is raw.get("yt")
-            or container.get("kind") == "youtube#video"
+        if isinstance(container, dict) and any(
+            key in container for key in (
+                "privacyStatus", "publishAt", "publishedAt", "channelId",
+                "kind", "post_id", "video_id",
+            )
         )
     ]
     if not video_id:
-        video_id, _ = _pick_field(youtube_containers, ("id",))
+        video_id, _ = _pick_field(platform_containers, ("id",))
     state_value, _ = _pick_field(
         containers, ("estado", "status", "publication_status", "privacyStatus", "privacy")
     )
