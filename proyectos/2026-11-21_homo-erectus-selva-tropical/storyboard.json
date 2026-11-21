@@ -35,20 +35,20 @@
     "cierre_historia": "La evidencia sitúa a H. erectus en un ecosistema tropical cerrado, no solo en paisajes abiertos.",
     "reflexion_o_pregunta": "¿Cuántos refugios tropicales más faltan por encontrar?"
   },
-  "estilo_id": "papel_rasgado_capas",
-  "estilo_visual": "Papel rasgado por capas (diorama)",
+  "estilo_id": "dibujo_cientifico_scratchboard",
+  "estilo_visual": "Scratchboard científico",
   "visual_identity": {
-    "style_id": "papel_rasgado_capas",
-    "style_name": "Papel rasgado por capas (diorama)",
-    "prompt_base": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text",
-    "palette": "verde bosque, turquesa apagado, ocre y crema",
-    "lighting": "Luz lateral suave; sombras profundas entre capas; sin brillo fotográfico.",
-    "texture": "Papel rasgado en capas, bordes irregulares, cartulina y fieltro.",
-    "composition": "Un foco por escena; mapa, cronología y cueva en lectura vertical 9:16; continuidad de escala.",
-    "negative_prompt": "photorealistic, 3D render, text, labels, logos, watermark, invented cave coordinates, exact cave entrances not sourced, human faces, modern clothing, invented tools, fake excavation equipment, dinosaur imagery, extra fossils",
+    "style_id": "dibujo_cientifico_scratchboard",
+    "style_name": "Scratchboard científico",
+    "prompt_base": "scratchboard illustration, white lines scratched on black, fine cross-hatching, dramatic single subject filling frame, black background, not photorealistic, vertical 9:16, no text",
+    "palette": "negro, blanco y un acento ámbar discreto",
+    "lighting": "Alto contraste; fondo negro; líneas blancas esgrafiadas y sombreado cruzado.",
+    "texture": "Esgrafiado blanco sobre negro, rayado fino y cross-hatching.",
+    "composition": "Un sujeto científico dominante por escena; lectura vertical 9:16; mapas y cronologías con líneas claras y sin texto integrado.",
+    "negative_prompt": "photorealistic, 3D render, saturated full color, text, labels, logos, watermark, invented cave coordinates, exact cave entrances not sourced, human faces, modern clothing, invented tools, fake excavation equipment, dinosaur imagery, extra fossils",
     "reference_assets": [],
     "seed": null,
-    "seed_policy": "Mantener paleta, papel y profundidad de capas; variar encuadre y elementos sustentados, sin inventar rostros, rutas ni coordenadas."
+    "seed_policy": "Mantener fondo negro, línea blanca y sombreado cruzado; usar solo un acento ámbar si hace falta; variar encuadre sin inventar rostros, rutas ni coordenadas."
   },
   "typography_identity": {
     "font_family": "DejaVu Sans",
@@ -129,7 +129,7 @@
       "narration": "En dos cuevas de Guangxi, nueve dientes de homininos aparecieron entre más de 18,000 fósiles de mamíferos. Ocho fueron identificados como Homo erectus.",
       "on_screen_text": "Nueve dientes. Ocho Homo erectus.",
       "visual_description": "Primer plano de dientes fósiles en una matriz de sedimento; al fondo, capas de restos de fauna sin inventar esqueletos completos.",
-      "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text, close-up of nine small hominin fossil teeth embedded in layered cave sediment, a dense field of subtle mammal fossil fragments in the background, no skulls, no people, no typography, no labels, no logos",
+      "image_prompt": "scratchboard illustration, white lines scratched on black, fine cross-hatching, dramatic single subject filling frame, black background, not photorealistic, vertical 9:16, no text, close-up of nine small hominin fossil teeth embedded in layered cave sediment, subtle mammal fossil fragments behind them, no skulls, no people, no typography, no labels, no logos",
       "ambiente": "Goteo de cueva y eco corto",
       "sfx": [
         "Golpe leve de roca",
@@ -138,7 +138,7 @@
       "source_ids": [
         "SRC-001"
       ],
-      "style_id": "papel_rasgado_capas",
+      "style_id": "dibujo_cientifico_scratchboard",
       "dramatic_beat": "Los dientes aparecen dentro de un conjunto fósil mucho mayor.",
       "scene_function": "Abrir con la anomalía material y presentar el hallazgo sin definir primero a la especie.",
       "causal_bridge_from_previous": "Apertura en curso: el hallazgo ya está sobre la mesa; la cantidad de restos vuelve visible la pregunta.",
@@ -153,7 +153,7 @@
       "narration": "La pregunta era incómoda: ¿podía esta especie vivir bajo una selva tropical cerrada, lejos del paisaje abierto que suele asociarse con ella?",
       "on_screen_text": "¿Homo erectus en la selva?",
       "visual_description": "Entrada de una cueva kárstica rodeada por vegetación tropical densa; no aparecen figuras humanas ni herramientas.",
-      "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text, layered paper diorama of a limestone cave entrance surrounded by a dense closed-canopy tropical rainforest, humid atmosphere, no human figures, no tools, no typography, no labels, no logos",
+      "image_prompt": "scratchboard illustration, white lines scratched on black, fine cross-hatching, dramatic single subject filling frame, black background, not photorealistic, vertical 9:16, no text, limestone cave entrance surrounded by dense closed-canopy tropical rainforest, humid atmosphere, no human figures, no tools, no typography, no labels, no logos",
       "ambiente": "Bosque húmedo con aves lejanas sin especie identificable",
       "sfx": [
         "Aire que se cierra entre las copas",
@@ -162,7 +162,7 @@
       "source_ids": [
         "SRC-001"
       ],
-      "style_id": "papel_rasgado_capas",
+      "style_id": "dibujo_cientifico_scratchboard",
       "dramatic_beat": "El entorno contradice la imagen habitual de paisajes abiertos.",
       "scene_function": "Plantear la pregunta central y el supuesto que el estudio pone a prueba.",
       "causal_bridge_from_previous": "La identificación de H. erectus vuelve decisivo reconstruir el ambiente que rodeaba esos dientes.",
@@ -177,7 +177,7 @@
       "narration": "Las cuevas están cerca de Chongzuo, en el sur de China. Para fecharlas, el equipo combinó cinco técnicas y modeló 43 edades radiométricas.",
       "on_screen_text": "Guangxi · 5 técnicas · 43 edades",
       "visual_description": "Mapa regional de Guangxi con un único punto urbano de referencia en Chongzuo; las cuevas quedan como área de estudio sin coordenadas puntuales inventadas.",
-      "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text, minimal layered paper map of Guangxi in southern China with one locator point at Chongzuo city, surrounding karst landscape, no cave pins and no text, no typography, no labels, no logos",
+      "image_prompt": "scratchboard illustration, white lines scratched on black, fine cross-hatching, dramatic single subject filling frame, black background, not photorealistic, vertical 9:16, no text, minimal regional map of Guangxi in southern China with one locator point at Chongzuo city, karst landscape, no cave pins and no text, no typography, no labels, no logos",
       "ambiente": "Ambiente de laboratorio tenue y papel de campo",
       "sfx": [
         "Clic cartográfico",
@@ -187,7 +187,7 @@
         "SRC-001",
         "SRC-002"
       ],
-      "style_id": "papel_rasgado_capas",
+      "style_id": "dibujo_cientifico_scratchboard",
       "capa": {
         "tipo": "mapa",
         "puntos": [
@@ -218,7 +218,7 @@
       "narration": "El resultado no es un día exacto: sitúa la presencia regional entre 324 mil y 184 mil años atrás, con intervalos que se superponen entre las dos cuevas.",
       "on_screen_text": "324,000–184,000 años",
       "visual_description": "Cronología con dos bandas horizontales: Baxian de 324 a 184 mil años y Naxian de 319 a 241 mil; el solapamiento se destaca sin sugerir ocupación continua.",
-      "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text, clean layered paper timeline with two horizontal fossil-deposit bands and a clear overlap, no text or numbers rendered in the image, scientific editorial graphic, vertical 9:16, no typography, no labels, no logos",
+      "image_prompt": "scratchboard illustration, white lines scratched on black, fine cross-hatching, dramatic single subject filling frame, black background, not photorealistic, vertical 9:16, no text, scientific timeline with two horizontal fossil-deposit bands and a clear overlap, no numbers or labels rendered in the image, no typography, no labels, no logos",
       "ambiente": "Vibración grave contenida",
       "sfx": [
         "Deslizamiento temporal suave",
@@ -227,7 +227,7 @@
       "source_ids": [
         "SRC-001"
       ],
-      "style_id": "papel_rasgado_capas",
+      "style_id": "dibujo_cientifico_scratchboard",
       "capa": {
         "tipo": "dato",
         "valor": "Baxian 324–184 ka; Naxian 319–241 ka",
@@ -250,7 +250,7 @@
       "narration": "La fauna y los isótopos de carbono apuntan a un bosque de dosel cerrado. Tres dientes de Naxian también encajan con esa vegetación.",
       "on_screen_text": "Bosque tropical de dosel cerrado",
       "visual_description": "Capas de copa forestal, suelo húmedo y fauna representada solo como siluetas discretas; la escena no inventa especies ni comportamientos.",
-      "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text, dense closed-canopy tropical rainforest diorama with layered leaves, humid forest floor and restrained mammal silhouettes, no people, no invented animal behavior, no typography, no labels, no logos",
+      "image_prompt": "scratchboard illustration, white lines scratched on black, fine cross-hatching, dramatic single subject filling frame, black background, not photorealistic, vertical 9:16, no text, dense closed-canopy tropical rainforest with layered leaves and restrained mammal silhouettes, no people, no invented animal behavior, no typography, no labels, no logos",
       "ambiente": "Insectos y goteo de bosque húmedo",
       "sfx": [
         "Hojas rozando suavemente",
@@ -259,7 +259,7 @@
       "source_ids": [
         "SRC-001"
       ],
-      "style_id": "papel_rasgado_capas",
+      "style_id": "dibujo_cientifico_scratchboard",
       "dramatic_beat": "La química y la fauna apuntan al bosque, no a una sabana abierta.",
       "scene_function": "Presentar la evidencia ambiental que sostiene el giro científico.",
       "causal_bridge_from_previous": "Una vez fechado el depósito, la fauna y la química de los dientes reconstruyen su entorno.",
@@ -274,7 +274,7 @@
       "narration": "Ese es el giro: Homo erectus no aparece solo en sabanas o bosques abiertos. La evidencia indica que también pudo explotar una selva tropical.",
       "on_screen_text": "La selva también fue hábitat",
       "visual_description": "La cueva y el dosel se conectan en un mismo diorama; el foco cambia del depósito fósil al ecosistema cerrado.",
-      "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text, same karst cave and closed-canopy rainforest in one layered paper diorama, visual transition from fossil sediment to living ecosystem, no human figures, no typography, no labels, no logos",
+      "image_prompt": "scratchboard illustration, white lines scratched on black, fine cross-hatching, dramatic single subject filling frame, black background, not photorealistic, vertical 9:16, no text, same karst cave and closed-canopy rainforest in one high-contrast scratchboard illustration, transition from fossil sediment to ecosystem, no human figures, no typography, no labels, no logos",
       "ambiente": "Bosque profundo con eco de cueva",
       "sfx": [
         "Cierre suave de hojas",
@@ -283,7 +283,7 @@
       "source_ids": [
         "SRC-001"
       ],
-      "style_id": "papel_rasgado_capas",
+      "style_id": "dibujo_cientifico_scratchboard",
       "dramatic_beat": "La especie aparece en un ambiente que se consideraba difícil para ella.",
       "scene_function": "Explicar el giro científico sin generalizar a todas las poblaciones de H. erectus.",
       "causal_bridge_from_previous": "La reconstrucción ambiental convierte los isótopos y la fauna en una conclusión ecológica.",
@@ -298,7 +298,7 @@
       "narration": "El estroncio de cuatro individuos sugiere movilidad entre regiones o recursos de varios lugares durante la infancia; no dibuja una ruta exacta. La muestra humana sigue siendo pequeña.",
       "on_screen_text": "Movilidad sugerida, no ruta confirmada",
       "visual_description": "Detalle de esmalte dental y un esquema de medición isotópica sin mapa de desplazamiento, sin cifras no publicadas y sin ruta trazada.",
-      "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text, scientific paper collage close-up of a fossil tooth enamel cross-section and abstract isotope measurement bands, no numerical labels, no route map, no invented instruments, no typography, no labels, no logos",
+      "image_prompt": "scratchboard illustration, white lines scratched on black, fine cross-hatching, dramatic single subject filling frame, black background, not photorealistic, vertical 9:16, no text, scientific close-up of fossil tooth enamel cross-section and abstract isotope measurement bands, no numerical labels, no route map, no invented instruments, no typography, no labels, no logos",
       "ambiente": "Laboratorio silencioso con un fondo de bosque muy tenue",
       "sfx": [
         "Rasguido breve de gráfica",
@@ -307,7 +307,7 @@
       "source_ids": [
         "SRC-001"
       ],
-      "style_id": "papel_rasgado_capas",
+      "style_id": "dibujo_cientifico_scratchboard",
       "dramatic_beat": "La movilidad amplía la historia, pero la muestra limita su alcance.",
       "scene_function": "Separar la inferencia de movilidad de una ruta demostrada y reconocer el tamaño limitado de la evidencia.",
       "causal_bridge_from_previous": "La adaptación al bosque no implica que conozcamos cada desplazamiento de esos individuos.",
@@ -322,7 +322,7 @@
       "narration": "La selva no fue necesariamente su único hogar, pero sí uno de sus refugios. ¿Cuántos más faltan por encontrar? Esto fue Datos y ociosidades.",
       "on_screen_text": "¿Cuántos refugios faltan?",
       "visual_description": "La entrada de la cueva reaparece bajo el dosel cerrado; la composición recupera el sedimento del inicio y cierra el arco.",
-      "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text, return to the same layered limestone cave entrance under a dense rainforest canopy, subtle fossil sediment foreground, quiet closing composition, no people, no typography, no labels, no logos",
+      "image_prompt": "scratchboard illustration, white lines scratched on black, fine cross-hatching, dramatic single subject filling frame, black background, not photorealistic, vertical 9:16, no text, return to the same limestone cave entrance under dense rainforest canopy, subtle fossil sediment foreground, quiet closing composition, no people, no typography, no labels, no logos",
       "ambiente": "Viento húmedo que se disipa y eco de cueva",
       "sfx": [
         "Eco final breve",
@@ -331,7 +331,7 @@
       "source_ids": [
         "SRC-001"
       ],
-      "style_id": "papel_rasgado_capas",
+      "style_id": "dibujo_cientifico_scratchboard",
       "dramatic_beat": "Los dientes del inicio revelan un refugio ecológico inesperado.",
       "scene_function": "Pagar la apertura, dejar una pregunta y cerrar con el sello exacto.",
       "causal_bridge_from_previous": "El límite de evidencia no borra el hallazgo: muestra qué se sabe y qué queda por descubrir.",
@@ -377,7 +377,8 @@
     "Borrador textual; no se ha creado narrative_qa y no se ha marcado preparado.",
     "El DOI 10.1038/s41586-026-11155-6 resolvió hacia el artículo Nature correcto; Crossref REST no fue accesible.",
     "El validador estructural oficial no se ha ejecutado en esta sesión.",
-    "La auditoría narrativa debe realizarse después, en una pasada independiente de lectura en frío."
+    "La auditoría narrativa debe realizarse después, en una pasada independiente de lectura en frío.",
+    "Rotación visual corregida: scratchboard_cientifico no aparece en los estilos usados del 14–20 nov; su uso anterior visible es 13-nov. Se sustituyó papel_rasgado_capas, repetido el 14 y 18 nov."
   ],
   "linea_tematica_provisional": "Naturaleza / paleontología",
   "approved_assets": [],
