@@ -680,5 +680,4 @@ El árbol completo de feature contiene exactamente ocho archivos de imagen: los 
 ### 11.4 Commits de auditoría y relectura
 
 - Estado Kuroshio corregido y releído desde GitHub: commit `ed8659ec7184d51cdd84d3575a5ac57c1595ce2c`; blob final del documento `d73dc69e3747417070e500b9c690a40b20b515c0`.
-- Este control de cola fue actualizado y releído desde GitHub: commit `cf92c069061460148eb3e2fea8109a759ca44e6b`; blob del informe `03dfea65c38cafe4785c4006dd88697292fd1e98`.
-- HEAD de feature al cierre de esta actualización: `cf92c069061460148eb3e2fea8109a759ca44e6b`. Main permaneció sin cambios.
+- Este control de cola se actualizó con el último cruce y se releyó desde GitHub después de guardar la última versión. Main permaneció sin cambios.
