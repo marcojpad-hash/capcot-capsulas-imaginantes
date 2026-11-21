@@ -249,7 +249,10 @@ def _media_references(raw):
     for container in containers:
         if not isinstance(container, dict):
             continue
-        for key in ("asset_filename", "asset_path", "video", "video_file", "audio_asset"):
+        for key in (
+            "asset_filename", "asset_path", "video", "video_file", "audio_asset",
+            "mp4", "video_path", "audio_path", "frame_path",
+        ):
             value = container.get(key)
             if isinstance(value, str) and value.strip() and "://" not in value:
                 refs.append(value.strip())
@@ -317,6 +320,124 @@ def _clock_in(value):
     if not match:
         return None
     return f"{int(match.group(1)):02d}:{match.group(2)}"
+
+
+def _window_from_value(value, source):
+    if isinstance(value, dict):
+        start = value.get("inicio") or value.get("start")
+        end = value.get("fin") or value.get("end")
+        label = value.get("id") or value.get("nombre") or source
+    else:
+        match = re.search(r"(\\d{1,2}:\\d{2})\\s*[-–]\\s*(\\d{1,2}:\\d{2})", str(value or ""))
+        if not match:
+            return None
+        start, end = match.groups()
+        label = source
+    start_clock, end_clock = _clock_in(str(start or "")), _clock_in(str(end or ""))
+    if not start_clock or not end_clock:
+        return None
+    return {"id": str(label), "inicio": start_clock, "fin": end_clock, "fuente": source}
+
+
+def _clock_minutes(value):
+    clock = _clock_in(str(value or ""))
+    if not clock:
+        return None
+    hour, minute = (int(part) for part in clock.split(":"))
+    return hour * 60 + minute
+
+
+def politica_horaria(fecha=None):
+    """Lee la política horaria sin modificarla y expone su fecha de corte."""
+    path = ROOT / "data" / "horarios.json"
+    raw = _read(path, None)
+    if not isinstance(raw, dict):
+        return {
+            "estado": "POLITICA_NO_DISPONIBLE",
+            "source_path": "data/horarios.json",
+            "actualizado": None,
+            "fecha_politica": None,
+            "ventanas_activas": [],
+            "ventanas_en_prueba": [],
+            "slot_fijo": None,
+            "estado_frescura": "NO_VERIFICABLE",
+        }
+
+    target = _date(fecha)
+    policies = []
+    for key, value in raw.items():
+        match = re.fullmatch(r"politica_desde_(\\d{4}-\\d{2}-\\d{2})", str(key))
+        if match and isinstance(value, dict):
+            policies.append((match.group(1), key, value))
+    applicable = [item for item in policies if not target or item[0] <= target]
+    selected = max(applicable or policies, key=lambda item: item[0]) if policies else None
+    policy_date, policy_key, policy = selected if selected else (None, None, {})
+    active_values = policy.get("ventanas")
+    if not isinstance(active_values, list) or not active_values:
+        active_values = raw.get("ventanas", [])
+    active_windows = [
+        window for index, value in enumerate(active_values)
+        if (window := _window_from_value(value, f"ventana_{index + 1}")) is not None
+    ]
+    test_values = policy.get("ventanas_en_prueba", raw.get("ventanas_en_prueba", []))
+    test_windows = [
+        window for index, value in enumerate(test_values if isinstance(test_values, list) else [])
+        if (window := _window_from_value(value, f"prueba_{index + 1}")) is not None
+    ]
+
+    fixed_value = (
+        policy.get("slot_fijo_dato") or policy.get("slot_fijo")
+        or raw.get("slot_fijo_dato")
+    )
+    if isinstance(fixed_value, dict):
+        fixed_value = (
+            fixed_value.get("hora") or fixed_value.get("slot_local")
+            or fixed_value.get("slot")
+        )
+    fixed_slot = _clock_in(str(fixed_value or ""))
+
+    updated = _date(raw.get("actualizado"))
+    if not selected and active_windows:
+        policy_date = updated
+    if target and policy_date:
+        freshness = (
+            "CORTE_ANTERIOR_A_FECHA_OBJETIVO" if target > policy_date
+            else "OBJETIVO_ANTERIOR_A_POLITICA" if target < policy_date
+            else "AL_CORTE"
+        )
+    else:
+        freshness = "SIN_FECHA_OBJETIVO" if not target else "SIN_CORTE"
+    status = "CARGADA" if active_windows or test_windows or fixed_slot else "SIN_VENTANAS"
+    return {
+        "estado": status,
+        "source_path": "data/horarios.json",
+        "actualizado": updated,
+        "fecha_politica": policy_date,
+        "policy_key": policy_key,
+        "zona_horaria": raw.get("zona_horaria"),
+        "ventanas_activas": active_windows,
+        "ventanas_en_prueba": test_windows,
+        "slot_fijo": fixed_slot,
+        "estado_frescura": freshness,
+    }
+
+
+def _clasificar_ventana(slot_local, policy):
+    clock = _clock_in(str(slot_local or ""))
+    if not clock or policy.get("estado") != "CARGADA":
+        return "POLITICA_NO_DISPONIBLE"
+    if clock == policy.get("slot_fijo"):
+        return "SLOT_FIJO"
+    minute = _clock_minutes(clock)
+    for window in policy.get("ventanas_en_prueba", []):
+        start, end = _clock_minutes(window["inicio"]), _clock_minutes(window["fin"])
+        if start is not None and end is not None and start <= minute < end:
+            return "VENTANA_EN_PRUEBA"
+    for window in policy.get("ventanas_activas", []):
+        start, end = _clock_minutes(window["inicio"]), _clock_minutes(window["fin"])
+        if start is not None and end is not None and start <= minute < end:
+            return "VENTANA_REGULAR"
+    return "FUERA_DE_VENTANA"
 
 
 def _slot_evidence(raw, source_path, default_project_id=None):
@@ -387,7 +508,11 @@ def _slot_evidence(raw, source_path, default_project_id=None):
     )
     state_text = str(state_value or "").strip().lower()
     path_text = "/" + str(source_path).replace("\\", "/").strip("/") + "/"
-    published_at, _ = _pick_field(containers, ("published_at", "publishedAt"))
+    published_at, _ = _pick_field(
+        containers,
+        ("published_at", "publishedAt", "yt_published_at",
+         "tiktok_published_at", "facebook_published_at"),
+    )
     media_refs = _media_references(raw)
     missing_media = [
         ref for ref in media_refs
@@ -465,6 +590,35 @@ def ocupacion_slots(fecha=None):
                 if rec:
                     evidence.append(rec)
 
+    # Los snapshots diarios son evidencia de slots programados/publicados;
+    # se leen, pero nunca se modifican. Los slots sin ID son ventanas vacías.
+    for path in sorted(data.glob("horario_*.json")):
+        raw = _read(path, None)
+        if not isinstance(raw, dict):
+            continue
+        for group in ("slots", "atrasados_revisados"):
+            items = raw.get(group, [])
+            if not isinstance(items, list):
+                continue
+            for index, item in enumerate(items):
+                if not isinstance(item, dict):
+                    continue
+                project_id = item.get("project_id") or item.get("id") or item.get("proyecto")
+                if not project_id:
+                    continue
+                merged = dict(raw)
+                merged.update(item)
+                merged["project_id"] = project_id
+                if group == "atrasados_revisados" and item.get("hora_original"):
+                    merged["fecha"] = _date(item.get("hora_original")) or item.get("fecha") or raw.get("fecha")
+                    merged["hora_local"] = item.get("hora_original")
+                else:
+                    merged["fecha"] = item.get("fecha") or raw.get("fecha") or _date_in(path.stem)
+                source = f"{path.relative_to(ROOT)}#{group}[{index}]"
+                rec = _slot_evidence(merged, source)
+                if rec:
+                    evidence.append(rec)
+
     for base in (ROOT / "proyectos", ROOT / "cola", ROOT / "salidas"):
         if not base.exists():
             continue
@@ -484,6 +638,11 @@ def ocupacion_slots(fecha=None):
         row for row in evidence
         if not fecha or row["fecha"] == fecha
     ]
+    policy = politica_horaria(fecha)
+    for row in evidence:
+        row["coincidencia_horaria"] = _clasificar_ventana(row["slot_local"], policy)
+        row["estado_frescura_horaria"] = policy["estado_frescura"]
+        row["fecha_politica_horaria"] = policy["fecha_politica"]
     evidence.sort(
         key=lambda row: (
             row["fecha"], row["slot_local"], row["project_id"], row["source_path"]
@@ -530,6 +689,7 @@ def ocupacion_slots(fecha=None):
         "conflictos": conflicts,
         "discrepancias_por_project_id": discrepancies,
         "inconsistencias_timestamp": timestamp_mismatches,
+        "politica_horaria": policy,
     }
 
 if __name__ == "__main__":
