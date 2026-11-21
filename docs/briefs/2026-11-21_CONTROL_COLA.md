@@ -151,3 +151,35 @@ Se releyeron los seis storyboards que siguen en `proyectos/`. Sus QA existentes 
 - Issues abiertos con etiquetas `cola` o `bloqueado` en CAPCOT: cero. En el ledger de main, `CUASARES-AUDITORIA` pertenece a revisión independiente, `GROK-RECEPCION` está bloqueado en Grok y `MIGRACION-ACUSE` corresponde a otro modelo; ninguno está asignado a ChatGPT.
 
 **Cierre ampliado:** seis proyectos interdiarios re-leídos; 5 PASS preservados y 1 FAIL preservado. No se repitió QA narrativo, no se promovió ningún proyecto, no se generaron medios ni se consumieron créditos. Los JSON de `data/`, los workflows, main, los estados Grok y las decisiones editoriales permanecen intactos.
+
+
+## ADENDA DE RELECTURA — 2026-11-21 (verificación posterior)
+
+### Inventario y recepción
+
+- Relectura de **23 storyboards**: 5 del 21–22 nov, 6 interdiarios del 18–20 nov y los 12 canónicos del lote 5–7 nov. En los 23 casos, `cola/estado/<project_id>.json` devuelve 404: **RECEPCION_GROK_NO_CONFIRMADA**. No se creó ningún estado.
+- QA sin cambios: actuales **2 PASS / 3 FAIL**; interdiarios **5 PASS / 1 FAIL**; lote 5–7 nov **2 PASS / 10 FAIL**. No se repitió lectura narrativa PASS ni se promovió ningún storyboard.
+- No hay `ESTADO_EJECUCION.md` para los 12 canónicos del lote. Los dos expedientes interdiarios que sí lo tienen —catorce campos hidrotermales y Kuroshio— declaran `BORRADOR_EN_PROYECTOS_NO_APTO_PARA_PROMOCION`; no se encontró estado PREPARADO que requiriera corrección.
+
+### Lote 5–7 nov: copias bloqueadas
+
+- Se verificaron las **12 rutas heredadas** indicadas en `ajustes_entre_modelos/PARA_CHATGPT_5-7nov_PASS_auditor.md`. También existen **9 archivos .json paralelos** y la carpeta adicional `2026-11-07_extra-nubes-pesan/`.
+- Las copias bloqueadas no contienen `narrative_qa`. Al comparar narración con los 12 storyboards canónicos de `proyectos/`, diez conservan la misma narración; difieren las versiones bloqueadas de árboles (**182 frente a 170 palabras**) y nubes (**227 frente a 221 palabras**).
+- Todo permanece dentro de `cola/bloqueados/`; no se fusionó, sobrescribió ni eliminó ninguna variante. Las copias bloqueadas no se consideran recepción Grok ni habilitan despacho.
+
+### Producción previa y medios
+
+- `2026-11-07_comida-hielo-caliente` y `2026-11-07_inter-nubes-pesan` ya tienen registros de publicación en main (YouTube IDs `HSgrnejAcaI` y `4Qpl17Ts_vI`). Solo se encontró storyboard de salida para comida caliente; los MP4 referenciados no están en el árbol. **PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR / MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO**.
+- El paquete anidado de robot conserva QA PASS y un marcador de inbox con estado `pending`, pero no `cola/estado`. Main registra programación para el 21-nov a las 19:00 CDMX; no hay carpeta de salida ni `capsula.mp4` verificable. **PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR / MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO**.
+- Ratas topo ya aparece publicado el 12-nov a las 07:00 CDMX (YouTube `WcTviUWqbes`) y conserva storyboard, metadata, QA y publicación en `salidas/`; el MP4 no está en el árbol. **PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR / MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO**.
+- No se encontró salida para los cinco proyectos actuales ni los seis interdiarios.
+
+### Compuertas y automatización
+
+- La revisión estructural manual de Fentale y Yubarta da **84 s**, 8 escenas y **172 / 180 palabras**, con voz, capas de mapa/dato, ambiente/SFX, `approved_assets=[]` y `render_status=NOT_GENERATED`. Esto no sustituye una ejecución del validador.
+- Fentale mantiene DOI `10.1038/s41561-026-02137-4` pendiente de resolución independiente. Yubarta registra `VERIFICADO_RESOLVEDOR` para `10.1111/1755-0998.70219`; PubMed coincide con el DOI. El run de validación `44832382024` no usó `--check-doi`. Fentale (23:30 fijo) y Yubarta (17:00, ventana en prueba) siguen **NOT_DISPATCHABLE** por compuertas pendientes y ausencia de estado Grok.
+- El workflow `capcot-grok-dispatch.yml` solo selecciona JSON planos en la raíz de `cola/entrada/`; las carpetas anidadas no entran. Escribe un marcador `pending` en `handoffs/grok_inbox/`, no un estado Grok. No se disparó.
+- Actions verificadas: run `44875678607` terminó SUCCESS con `[trabajador] sin trabajo en cola`; run `44832382024` terminó SUCCESS con validación textual, sin DOI; CodeQL del PR #3 `44893426171` SUCCESS. Dependabot mantiene fallo de configuración. PR #3 y PR #14 siguen abiertos; no se hizo merge.
+- Rotación aún desfasada: `data/rotacion.json` llega al 31-oct, `data/estilos_usados.json` al 28-oct, `data/tendencias_estilos.json` al 31-oct y `data/cola.json` al 31-oct. Los archivos `data/*.json` permanecieron intactos.
+
+**Acciones de esta relectura:** solo consultas y comparación de blobs/logs. No se escribieron entradas de cola, estados Grok ni data; no se dispararon workflows, no se generaron medios, no se publicó ni se consumieron créditos.
