@@ -77,8 +77,8 @@
       ],
       "verification_status": "VERIFICADO_FUENTE_PRIMARIA",
       "url_verification_status": "VERIFICADO_PAGINA_EDITORIAL",
-      "doi_verification_status": "VERIFICADO_CROSSREF_API",
-      "verification_note": "Crossref API devuelve el mismo DOI, título, editorial y fecha de publicación; la página de Nature es la versión de registro."
+      "doi_verification_status": "PENDIENTE_RESOLVEDOR",
+      "verification_note": "Nature y PubMed confirman el DOI 10.1038/s41586-026-11298-6 y la fecha de publicación 2026-11-18. Crossref REST y doi.org no fueron accesibles en esta ejecución; no se ejecutó validar_storyboard.py --check-doi. No afirmar verificación automática del resolver hasta repetirla en un entorno con acceso."
     },
     {
       "id": "SRC-002",
@@ -91,10 +91,10 @@
         "Coordenadas DMS de la estación meteorológica PT REKI en el paisaje Harapan.",
         "Coordenadas DMS de la estación meteorológica L. Kepayang en el paisaje Bukit Duabelas."
       ],
-      "verification_status": "VERIFICADO_FUENTE_PRIMARIA",
-      "url_verification_status": "VERIFICADO_SUPLEMENTO_OFICIAL",
-      "doi_verification_status": "VERIFICADO_CROSSREF_API",
-      "verification_note": "Crossref confirma el DOI y la fecha. ESM Table S1 contiene las filas de estaciones; el mapa usa solo esos dos puntos, no las coordenadas de parcelas."
+      "verification_status": "PENDING_SOURCE",
+      "url_verification_status": "PENDIENTE_ACCESO",
+      "doi_verification_status": "PENDIENTE_RESOLVEDOR",
+      "verification_note": "El DOI 10.1098/rstb.2015.0275 está corroborado por registros bibliográficos secundarios, pero el endpoint doi.org devolvió 403 y el suplemento oficial de Royal Society no fue accesible en esta ejecución. Las coordenadas aparecen en una tesis que cita Drescher et al. (2016), no se verificaron contra ESM Table S1 primaria. Mantener PENDING_SOURCE y no promover hasta verificar el suplemento."
     }
   ],
   "scenes": [
@@ -398,5 +398,25 @@
     "La ESM de 2016 lista 33 parcelas core, mientras el artículo de 2026 informa 32 parcelas; por eso no se representan puntos de parcela ni se asume correspondencia exacta."
   ],
   "fecha_objetivo": "2026-11-23",
-  "slot_local": "13:30"
+  "slot_local": "13:30",
+  "narrative_qa": {
+    "status": "FAIL",
+    "score": 82,
+    "review_basis": "lectura_en_frio_solo_narracion",
+    "reviewer_role": "auditor_capcot_independiente",
+    "reviewed_at": "2026-11-21T14:24:25-06:00",
+    "checks": {
+      "pregunta_central_reconstruible": true,
+      "apertura_in_medias_res": true,
+      "progresion_por_escena": true,
+      "transiciones_causales": true,
+      "giro_cientifico_explicado": true,
+      "limite_evidencia_explicito": true,
+      "payoff_cierre_apertura": true
+    },
+    "critical_flags": [
+      "STAKES_NO_EXPLICADOS"
+    ],
+    "reviewer_notes": "La narración plantea con claridad la paradoja, describe el diseño y explica el cambio de recambio a anidamiento. Sin embargo, no explicita por qué la pérdida de multidiversidad importa para el funcionamiento del ecosistema o las decisiones de conservación; los stakes quedan inferidos. No reescribir durante auditoría."
+  }
 }
