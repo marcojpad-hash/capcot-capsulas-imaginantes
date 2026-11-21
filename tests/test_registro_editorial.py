@@ -395,5 +395,115 @@ class RegistroEditorialTests(unittest.TestCase):
         self.assertEqual(row["missing_media_references"], ["scene_001.png"])
         self.assertEqual(row["media_status"], "MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO")
 
+
+    def test_slot_occupancy_reads_daily_schedule_snapshots_and_skips_empty_slots(self):
+        self.write_json(
+            registro_editorial.ROOT / "data" / "horario_2026-11-11.json",
+            {
+                "fecha": "2026-11-11",
+                "slots": [
+                    {
+                        "hora": "07:00",
+                        "id": "2026-11-06_kids-ballena-azul-corazon",
+                        "estado": "publicado_yt_tt",
+                        "yt_id": "wbFrlM2e_YE",
+                        "yt_published_at": "2026-11-11T13:00:03Z",
+                        "mp4": "/workspace/capcot/ballena/capsula.mp4",
+                    },
+                    {"hora": "23:30", "id": None, "estado": "sin_paquete"},
+                ],
+                "atrasados_revisados": [
+                    {
+                        "hora_original": "2026-11-10 17:00",
+                        "id": "capsaicina-resub",
+                        "estado": "publicado_yt_tt",
+                        "yt_id": "K2I_jgugiOU",
+                        "yt_published_at": "2026-11-10T23:00:38Z",
+                    }
+                ],
+            },
+        )
+
+        rows = registro_editorial.ocupacion_slots()["ocupaciones"]
+        by_id = {row["project_id"]: row for row in rows}
+        self.assertEqual(
+            set(by_id),
+            {"2026-11-06_kids-ballena-azul-corazon", "capsaicina-resub"},
+        )
+        current = by_id["2026-11-06_kids-ballena-azul-corazon"]
+        self.assertEqual((current["fecha"], current["slot_local"]), ("2026-11-11", "07:00"))
+        self.assertEqual(current["estado_evidencia"], "PUBLICACION_REGISTRADA")
+        self.assertEqual(current["video_id"], "wbFrlM2e_YE")
+        self.assertEqual(current["media_status"], "MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO")
+        late = by_id["capsaicina-resub"]
+        self.assertEqual((late["fecha"], late["slot_local"]), ("2026-11-10", "17:00"))
+        self.assertEqual(late["video_id"], "K2I_jgugiOU")
+
+    def test_slot_occupancy_classifies_fixed_regular_test_and_outside_windows(self):
+        self.write_json(
+            registro_editorial.ROOT / "data" / "horarios.json",
+            {
+                "actualizado": "2026-11-09",
+                "zona_horaria": "America/Mexico_City",
+                "politica_desde_2026-11-09": {
+                    "ventanas": ["06:30-07:30", "16:30-18:00"],
+                    "slot_fijo": "23:30 dato del día",
+                },
+                "ventanas_en_prueba": [
+                    {"id": "noche", "inicio": "19:00", "fin": "21:00"}
+                ],
+            },
+        )
+        for project_id, slot in (
+            ("2026-11-09_fijo", "23:30"),
+            ("2026-11-09_regular", "07:00"),
+            ("2026-11-09_prueba", "19:30"),
+            ("2026-11-09_fuera", "13:30"),
+        ):
+            self.write_json(
+                registro_editorial.ROOT / "proyectos" / project_id / "storyboard.json",
+                {"project_id": project_id, "fecha_objetivo": "2026-11-09", "slot_local": slot},
+            )
+
+        result = registro_editorial.ocupacion_slots("2026-11-09")
+        self.assertEqual(result["politica_horaria"]["fecha_politica"], "2026-11-09")
+        rows = {row["project_id"]: row for row in result["ocupaciones"]}
+        self.assertEqual(rows["2026-11-09_fijo"]["coincidencia_horaria"], "SLOT_FIJO")
+        self.assertEqual(rows["2026-11-09_regular"]["coincidencia_horaria"], "VENTANA_REGULAR")
+        self.assertEqual(rows["2026-11-09_prueba"]["coincidencia_horaria"], "VENTANA_EN_PRUEBA")
+        self.assertEqual(rows["2026-11-09_fuera"]["coincidencia_horaria"], "FUERA_DE_VENTANA")
+
+    def test_slot_occupancy_exposes_policy_cut_older_than_target_date(self):
+        self.write_json(
+            registro_editorial.ROOT / "data" / "horarios.json",
+            {
+                "actualizado": "2026-11-09",
+                "politica_desde_2026-11-09": {
+                    "ventanas": ["06:30-07:30", "16:30-18:00"],
+                    "slot_fijo": "23:30",
+                },
+            },
+        )
+        self.write_json(
+            registro_editorial.ROOT / "proyectos" / "2026-11-21_tarde" / "storyboard.json",
+            {
+                "project_id": "2026-11-21_tarde",
+                "fecha_objetivo": "2026-11-21",
+                "slot_local": "17:00",
+            },
+        )
+        result = registro_editorial.ocupacion_slots("2026-11-21")
+        row = result["ocupaciones"][0]
+        self.assertEqual(
+            result["politica_horaria"]["estado_frescura"],
+            "CORTE_ANTERIOR_A_FECHA_OBJETIVO",
+        )
+        self.assertEqual(row["coincidencia_horaria"], "VENTANA_REGULAR")
+        self.assertEqual(
+            row["estado_frescura_horaria"],
+            "CORTE_ANTERIOR_A_FECHA_OBJETIVO",
+        )
+
+
 if __name__ == "__main__":
     unittest.main()
