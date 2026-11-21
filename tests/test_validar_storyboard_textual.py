@@ -25,6 +25,25 @@ class TextOnlyStoryboardContractTests(unittest.TestCase):
         }
         self.assertEqual(validar_storyboard.validar_narrative_qa(qa), [])
 
+    def test_valid_terrestrial_map_point_passes(self):
+        self.assertTrue(validar_storyboard.validar_punto_mapa({"lat": 53.5, "lon": -129.3}))
+
+    def test_valid_celestial_ra_dec_point_passes(self):
+        point = {
+            "ra_deg": 9.7025,
+            "dec_deg": 40.7689528,
+            "sistema_coordenadas": "Ecuatoriales J2000 (RA/Dec)",
+        }
+        self.assertTrue(validar_storyboard.validar_punto_mapa(point))
+
+    def test_invalid_celestial_ra_dec_point_is_rejected(self):
+        point = {
+            "ra_deg": 360,
+            "dec_deg": 91,
+            "sistema_coordenadas": "Ecuatoriales J2000 (RA/Dec)",
+        }
+        self.assertFalse(validar_storyboard.validar_punto_mapa(point))
+
     def test_missing_narrative_qa_is_rejected(self):
         self.assertTrue(validar_storyboard.validar_narrative_qa(None))
 
