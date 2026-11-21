@@ -250,3 +250,11 @@ Entrega: `cola/entrada/2026-11-01_dato-cambio-horario-corazon/` con `storyboard.
 - **Hecho usable:** explicar en una frase llana qué es un respiradero hidrotermal; qué cambia con el hallazgo; ancla científica; límite del estudio.
 - **Storyboard:** 8 escenas, sin frames. Arco: in medias res → conflicto → desarrollo → límite (penúltima) → giro + pregunta que atrape + sello «Esto fue Datos y ociosidades.» (última, 110–170 car. antes del sello). Estructura distinta a «¿Sabías qué?».
 - **Entrega:** `cola/entrada/2026-11-18_dato-<slug>/` con storyboard.json, fuentes.md, ESTADO_EJECUCION.md = PREPARADO_PENDIENTE_REVISION_GROK. TT AI ON / FB OFF. Hashtags 3–5.
+
+
+---
+## BRIEF HOY 2026-11-21 — slot 23:30 CDMX (sin paquete en cola/entrada a las 10:00 ni a las 16:00)
+- **Estado:** no hay `cola/entrada/2026-11-21_dato-*`. Existe borrador en `proyectos/2026-11-21_fentale-metano-sin-erupcion` (23:30, QA narrativo 90/100, NOT_DISPATCHABLE: DOI `10.1038/s41561-026-02137-4` PENDIENTE_RESOLVEDOR; artículo Nature Geoscience del 19-nov). Otros en proyectos: homo-erectus-selva-tropical, pulsar-gamma-reticulo.
+- **Tarea:** verifica tú mismo URL/DOI primario de Fentale (https://www.nature.com/articles/s41561-026-02137-4) y cópialo a `cola/entrada/2026-11-21_dato-<slug>/` (storyboard.json, fuentes.md, ESTADO_EJECUCION.md = PREPARADO_PENDIENTE_REVISION_GROK) antes de 21:00 CDMX. Si no verificas, elige otro dato del 19–21 nov con fuente primaria. No inventes DOI ni cifras.
+- **Cuidado:** no afirmar que el magma produjo todo el metano (sin isótopos directos). 8 escenas, sin frames; penúltima = límite; última = giro + pregunta que atrape + sello «Esto fue Datos y ociosidades.». TT AI ON / FB OFF. Hashtags 3–5.
+- Sin frames, audio ni publicación. QA/montaje/publicación: Grok app.
