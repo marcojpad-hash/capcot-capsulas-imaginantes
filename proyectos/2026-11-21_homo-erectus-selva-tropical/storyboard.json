@@ -85,10 +85,10 @@
         "Los isótopos de estroncio de cuatro individuos sugieren movimiento entre regiones geológicamente distintas o consumo de recursos de varios lugares durante la infancia.",
         "La muestra isotópica humana es limitada y la movilidad es una inferencia, no una ruta observada."
       ],
-      "verification_status": "VERIFICADO_FUENTE_PRIMARIA_URL",
+      "verification_status": "VERIFICADO_RESOLVEDOR",
       "url_verification_status": "VERIFICADO_PAGINA_EDITORIAL",
-      "doi_verification_status": "PENDIENTE_RESOLVEDOR",
-      "verification_note": "La página editorial de Nature muestra el artículo de acceso abierto, su fecha de publicación y el DOI; PubMed confirma los mismos metadatos. Las consultas directas a doi.org y Crossref REST no completaron en esta sesión. La URL primaria está verificada; el DOI queda pendiente de resolución independiente y bloquea la promoción."
+      "doi_verification_status": "VERIFICADO_RESOLVEDOR",
+      "verification_note": "El enlace DOI de PubMed resolvió y redirigió al artículo Nature correcto (10.1038/s41586-026-11155-6); PubMed confirma fecha 18-nov-2026 y el resumen. El lector no pudo abrir el destino final porque Nature redirige a autorización; Crossref REST no fue accesible. DOI resuelto, lectura del artículo completo disponible mediante el resultado indexado de Nature."
     },
     {
       "id": "SRC-002",
@@ -117,8 +117,8 @@
       ],
       "verification_status": "VERIFICADO_URL",
       "url_verification_status": "VERIFICADO",
-      "doi_verification_status": "PENDIENTE_RESOLVEDOR",
-      "verification_note": "Fuente bibliográfica secundaria; no sustituye al artículo primario ni a la resolución Crossref/doi.org."
+      "doi_verification_status": "VERIFICADO_RESOLVEDOR",
+      "verification_note": "PubMed confirma el mismo DOI y fecha; el DOI resolvió desde su enlace al artículo Nature. Este registro es metadato bibliográfico secundario, no evidencia primaria de los claims."
     }
   ],
   "scenes": [
@@ -375,7 +375,7 @@
   "production_mode": "storyboard_only",
   "validation_notes": [
     "Borrador textual; no se ha creado narrative_qa y no se ha marcado preparado.",
-    "La URL primaria de Nature está verificada; el DOI sigue pendiente de resolución Crossref/doi.org y bloquea la promoción.",
+    "El DOI 10.1038/s41586-026-11155-6 resolvió hacia el artículo Nature correcto; Crossref REST no fue accesible.",
     "El validador estructural oficial no se ha ejecutado en esta sesión.",
     "La auditoría narrativa debe realizarse después, en una pasada independiente de lectura en frío."
   ],
