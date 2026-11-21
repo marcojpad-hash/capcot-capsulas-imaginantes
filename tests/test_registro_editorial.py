@@ -296,5 +296,29 @@ class RegistroEditorialTests(unittest.TestCase):
         self.assertEqual(result["ocupaciones"][0]["estado_evidencia"], "BLOQUEADO")
         self.assertIsNone(result["ocupaciones"][0]["video_id"])
 
+
+    def test_slot_occupancy_reports_timestamp_mismatch_and_ignores_date_only(self):
+        self.write_json(
+            registro_editorial.ROOT / "data" / "publicaciones.json",
+            [
+                {
+                    "fecha": "2026-11-21",
+                    "project_id": "2026-11-21_mismatch",
+                    "hora_local": "2026-11-21 13:30 (America/Mexico_City)",
+                    "publishAt_utc": "2026-11-21T20:00:00Z",
+                    "yt_id": "video123",
+                },
+                {
+                    "fecha": "2026-11-21",
+                    "project_id": "2026-11-21_date_only",
+                    "publish_at": "2026-11-21",
+                },
+            ],
+        )
+        result = registro_editorial.ocupacion_slots("2026-11-21")
+        self.assertEqual(len(result["ocupaciones"]), 1)
+        self.assertEqual(result["ocupaciones"][0]["slot_local"], "13:30")
+        self.assertTrue(result["ocupaciones"][0]["timestamp_mismatch"])
+        self.assertEqual(len(result["inconsistencias_timestamp"]), 1)
 if __name__ == "__main__":
     unittest.main()
