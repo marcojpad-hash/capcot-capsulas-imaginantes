@@ -352,7 +352,7 @@
     "music_asset": null,
     "music_plan": "Cama sintetizada prevista: pulso bajo y contenido, sin percusión épica; no existe archivo de audio.",
     "music_license": null,
-    "cama_musical": "sintetico:pulso"
+    "cama_musical": "pulso"
   },
   "export": {
     "resolution": "1080x1920",
