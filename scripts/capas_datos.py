@@ -83,7 +83,7 @@ def _mapa(f, c, p):
                 label = point.get("etiqueta") or point.get("nombre") or point.get("id", "Objeto")
                 coord = f"RA {ra:.4f}° · Dec {dec:+.4f}°"
                 ax.annotate(
-                    f"{label}\\n{coord}", (ra, dec), xytext=(0, 18),
+                    f"{label}\n{coord}", (ra, dec), xytext=(0, 18),
                     textcoords="offset points", fontsize=16, weight="bold",
                     color=PAPEL, ha="center", family=FONT,
                 )
