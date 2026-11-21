@@ -1,0 +1,400 @@
+{
+  "_schema": "CAPCOT_STORYBOARD_TEXT_V2",
+  "project_id": "2026-11-23_tropical-biodiversity-turnover",
+  "serie": "Datos y ociosidades",
+  "title": "La paradoja de la multidiversidad",
+  "titulo": "Menos diversidad, no más iguales",
+  "language": "es-MX",
+  "aspect_ratio": "9:16",
+  "target_duration_seconds": 84,
+  "estructura": "pregunta",
+  "audience": "Público general interesado en naturaleza, biodiversidad y ciencia; no es contenido infantil.",
+  "occasion": "Ventana de mediodía 13:30 CDMX, 23 de noviembre de 2026; slot libre en la programación consultada.",
+  "resumen": "Un estudio multigrupo en dos paisajes de Jambi encontró pérdidas marcadas de multidiversidad sin homogenización consistente; en taxones sobre el suelo cambió el balance entre recambio y anidamiento.",
+  "narrative_contract": {
+    "central_question": "¿Cómo pueden los monocultivos perder multidiversidad sin que las comunidades se vuelvan sistemáticamente más parecidas?",
+    "promise": "Distinguir la pérdida de multidiversidad de la homogenización y entender qué cambia entre sitios.",
+    "stakes": "Si solo se mide la riqueza local, se pierde cómo se reorganiza la biodiversidad a escala del paisaje.",
+    "scientific_turn": "El estudio encontró pérdidas fuertes de multidiversidad sin homogenización consistente; en taxones sobre el suelo, el recambio cedió ante el anidamiento.",
+    "evidence_limit": "El estudio analizó 32 parcelas en dos paisajes de Jambi; no se generaliza a todas las selvas. Las cifras 78% y 50% son pérdidas de multidiversidad, no porcentajes de especies extintas. El mapa ubica dos estaciones EFForTS, no las 32 parcelas.",
+    "payoff": "El cierre responde la apertura: perder multidiversidad no hace que todos los sitios se vuelvan iguales; cambia la estructura de sus diferencias."
+  },
+  "trend_source": "Nature, artículo de investigación publicado el 18-nov-2026; DOI 10.1038/s41586-026-11298-6 verificado en Crossref.",
+  "editorial_status": "PROPUESTA_PENDIENTE_DE_GROK",
+  "arco": {
+    "hook_medias_res": "Los monocultivos pierden multidiversidad, pero las comunidades no se vuelven sistemáticamente más parecidas.",
+    "desarrollo": "El estudio compara 32 parcelas, dos paisajes y 24 grupos; cuantifica la pérdida y distingue recambio de anidamiento.",
+    "cierre_historia": "En los taxones sobre el suelo cambia la estructura de las diferencias entre sitios: menos recambio y más anidamiento.",
+    "reflexion_o_pregunta": "La conservación requiere mirar la red de sitios y no solo una parcela."
+  },
+  "estilo_id": "ligne_claire",
+  "estilo_visual": "Ligne claire",
+  "visual_identity": {
+    "style_id": "ligne_claire",
+    "style_name": "Ligne claire",
+    "prompt_base": "ligne claire European comic illustration, clean uniform black outlines, flat bright colors, no hatching, clear readable shapes, one main subject large, minimal background, illustrated, not photorealistic, vertical 9:16, no text",
+    "palette": "azul cielo, rojo, beige, verde claro",
+    "lighting": "Luz natural diurna y uniforme; sin gradación azul-dorada.",
+    "texture": "Tinta plana, papel mate y contornos limpios.",
+    "composition": "Composición editorial vertical; un foco principal por escena; mapas y gráficos se superponen en postproducción.",
+    "negative_prompt": "photorealism, 3D render, text, logos, watermarks, cluttered composition, blue-gold lithography, invented species, invented map boundaries",
+    "reference_assets": [],
+    "seed": null,
+    "seed_policy": "Mantener el mismo grosor de línea, paleta y escala visual en las ocho escenas; variar solo encuadre y foco."
+  },
+  "typography_identity": {
+    "font_family": "DejaVu Sans",
+    "font_weight": "700 para gancho; 400 para subtítulos",
+    "title_style": "Máximo seis palabras; presente desde frame 0 en postproducción",
+    "subtitle_style": "Bloques de máximo tres palabras; zona segura inferior",
+    "hierarchy": "Gancho > dato/etiqueta > subtítulos",
+    "animation": "Un movimiento por plano; tipografía en postproducción"
+  },
+  "voice": {
+    "engine": "edge-tts",
+    "voice_id": "es-MX-JorgeNeural",
+    "language": "es-MX",
+    "rate": "+7%",
+    "pitch": "-2Hz",
+    "pad_seconds": 0.3,
+    "modo_pausas": "continuo"
+  },
+  "sources": [
+    {
+      "id": "SRC-001",
+      "cita_corta": "Guerrero-Ramírez et al. (2026), Nature. Tropical land-use intensification restructures biodiversity.",
+      "url": "https://www.nature.com/articles/s41586-026-11298-6",
+      "doi": "10.1038/s41586-026-11298-6",
+      "accessed": "2026-11-21",
+      "publication_date": "2026-11-18",
+      "supports": [
+        "24 grupos taxonómicos a través de todos los dominios de la vida.",
+        "40,049 unidades tratadas como especies en el artículo, incluidas especies, morfoespecies y OTUs/ASVs.",
+        "32 parcelas en dos paisajes de Jambi y cuatro usos del suelo: bosque, caucho agroforestal, caucho y palma aceitera.",
+        "Pérdidas aproximadas de 78% en multidiversidad del paisaje y 50% en multidiversidad local en monocultivos respecto al bosque.",
+        "Ausencia de homogenización comunitaria consistente a escala del conjunto de grupos.",
+        "Cambio sistemático de recambio a anidamiento para taxones sobre el suelo."
+      ],
+      "verification_status": "VERIFICADO_FUENTE_PRIMARIA",
+      "url_verification_status": "VERIFICADO_PAGINA_EDITORIAL",
+      "doi_verification_status": "VERIFICADO_CROSSREF_API",
+      "verification_note": "Crossref API devuelve el mismo DOI, título, editorial y fecha de publicación; la página de Nature es la versión de registro."
+    },
+    {
+      "id": "SRC-002",
+      "cita_corta": "Drescher et al. (2016), Philosophical Transactions of the Royal Society B, ESM Table S1.",
+      "url": "https://royalsocietypublishing.org/rstb/article-supplement/22866/pdf/rstb20150275supp1/",
+      "doi": "10.1098/rstb.2015.0275",
+      "accessed": "2026-11-21",
+      "publication_date": "2016-05-19",
+      "supports": [
+        "Coordenadas DMS de la estación meteorológica PT REKI en el paisaje Harapan.",
+        "Coordenadas DMS de la estación meteorológica L. Kepayang en el paisaje Bukit Duabelas."
+      ],
+      "verification_status": "VERIFICADO_FUENTE_PRIMARIA",
+      "url_verification_status": "VERIFICADO_SUPLEMENTO_OFICIAL",
+      "doi_verification_status": "VERIFICADO_CROSSREF_API",
+      "verification_note": "Crossref confirma el DOI y la fecha. ESM Table S1 contiene las filas de estaciones; el mapa usa solo esos dos puntos, no las coordenadas de parcelas."
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_001",
+      "arc": "hook_medias_res",
+      "duration_seconds": 9,
+      "narration": "En Jambi, los monocultivos pierden multidiversidad, pero sus comunidades no se vuelven sistemáticamente más parecidas. ¿Cómo puede ocurrir?",
+      "on_screen_text": "Menos diversidad, no más iguales",
+      "visual_description": "Dos parcelas de monocultivo tropical con composiciones vegetales distintas; la pérdida de multidiversidad ya está en curso, sin representar especies concretas.",
+      "image_prompt": "ligne claire European comic illustration, clean uniform black outlines, flat bright colors, no hatching, clear readable shapes, one main subject large, minimal background, illustrated, not photorealistic, vertical 9:16, no text, Two contrasting tropical smallholder monoculture plots, visible differences in plant and organism richness, one dominant crop in each, the ecological anomaly already underway, no identifiable species, no labels.",
+      "ambiente": "Ambiente de bosque tropical con insectos suaves.",
+      "sfx": [
+        "hojas rozando",
+        "corte de transición leve"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "ligne_claire",
+      "dramatic_beat": "La pérdida ya ocurre, pero no produce automáticamente comunidades iguales.",
+      "scene_function": "Abrir la paradoja y plantear la pregunta central.",
+      "causal_bridge_from_previous": "Apertura en curso: la anomalía ya está ocurriendo.",
+      "question_state": "La multidiversidad cae; falta explicar por qué los sitios no se homogenizan.",
+      "reason_to_continue": "Para entender la paradoja, primero hay que ubicar dónde se midió.",
+      "new_information": "La pérdida de multidiversidad no implica automáticamente homogenización."
+    },
+    {
+      "id": "scene_002",
+      "arc": "desarrollo",
+      "duration_seconds": 9,
+      "narration": "El equipo comparó 32 parcelas en dos paisajes: bosque, caucho agroforestal, caucho intensivo y palma aceitera.",
+      "on_screen_text": "Jambi · 32 parcelas · 2 paisajes",
+      "visual_description": "Mapa localizador de Jambi, Sumatra, con dos puntos de estaciones meteorológicas EFForTS; no mostrar las 32 parcelas ni polígonos inventados.",
+      "image_prompt": "ligne claire European comic illustration, clean uniform black outlines, flat bright colors, no hatching, clear readable shapes, one main subject large, minimal background, illustrated, not photorealistic, vertical 9:16, no text, A clean vertical locator map of Jambi Province in Sumatra, Indonesia, with exactly two precise locator dots for the EFForTS meteorological stations PT REKI and L. Kepayang, simple coastline and island outline only, no invented plot dots, no boundaries, no labels in image.",
+      "ambiente": "Ambiente de campo tropical, viento suave.",
+      "sfx": [
+        "marcador cartográfico",
+        "paso sobre hojarasca"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "style_id": "ligne_claire",
+      "dramatic_beat": "La paradoja queda situada en dos paisajes de Jambi.",
+      "scene_function": "Ubicar el diseño de muestreo sin fingir coordenadas de parcela.",
+      "causal_bridge_from_previous": "Para entender esa paradoja, primero hay que ubicar la comparación.",
+      "question_state": "Ya sabemos dónde se realizó el estudio y qué paisajes comparó.",
+      "reason_to_continue": "La escala del inventario revela qué tan amplia fue la comparación.",
+      "new_information": "32 parcelas en dos paisajes y cuatro usos del suelo.",
+      "capa": {
+        "tipo": "mapa",
+        "titulo": "Dos paisajes de Jambi",
+        "fuente": "SRC-002",
+        "source_ids": [
+          "SRC-001",
+          "SRC-002"
+        ],
+        "puntos": [
+          {
+            "id": "pt_reki",
+            "nombre": "PT REKI",
+            "etiqueta": "Harapan · estación PT REKI",
+            "lat": -2.1261667,
+            "lon": 103.3690278,
+            "sistema_coordenadas": "Coordenadas geográficas DMS convertidas aritméticamente a decimal; datum no especificado en la fuente."
+          },
+          {
+            "id": "l_kepayang",
+            "nombre": "L. Kepayang",
+            "etiqueta": "Bukit Duabelas · estación L. Kepayang",
+            "lat": -2.0882222,
+            "lon": 102.7675278,
+            "sistema_coordenadas": "Coordenadas geográficas DMS convertidas aritméticamente a decimal; datum no especificado en la fuente."
+          }
+        ],
+        "areas": [],
+        "precision_note": "Son dos estaciones meteorológicas EFForTS, no las 32 parcelas ni centroides. El mapa solo localiza los paisajes y no representa la distribución del muestreo."
+      }
+    },
+    {
+      "id": "scene_003",
+      "arc": "desarrollo",
+      "duration_seconds": 9,
+      "narration": "El inventario reunió 24 grupos taxonómicos de todos los dominios y 40,049 unidades taxonómicas: especies, morfoespecies y OTUs microbianas.",
+      "on_screen_text": "24 grupos · 40,049 unidades",
+      "visual_description": "Infografía editorial con 24 grupos taxonómicos representados por iconos genéricos de suelo, plantas y animales; contador central de 40,049 unidades taxonómicas.",
+      "image_prompt": "ligne claire European comic illustration, clean uniform black outlines, flat bright colors, no hatching, clear readable shapes, one main subject large, minimal background, illustrated, not photorealistic, vertical 9:16, no text, A clear scientific infographic with a central counter and a ring of 24 generic taxonomic group symbols spanning soil, plants and animals, organized in a balanced editorial composition, no species-specific claims, no text.",
+      "ambiente": "Ambiente de laboratorio de campo, discreto.",
+      "sfx": [
+        "hojas de libreta",
+        "clic de conteo"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "ligne_claire",
+      "dramatic_beat": "La dimensión del inventario vuelve visible la escala del hallazgo.",
+      "scene_function": "Explicar el alcance taxonómico y cuantitativo del estudio.",
+      "causal_bridge_from_previous": "Una vez ubicado el muestreo, la escala taxonómica muestra qué se contó.",
+      "question_state": "El estudio abarcó 24 grupos y 40,049 unidades taxonómicas.",
+      "reason_to_continue": "La magnitud de la pérdida permite entender el tamaño del problema.",
+      "new_information": "El inventario incluye especies, morfoespecies y OTUs microbianas.",
+      "capa": {
+        "tipo": "dato",
+        "etiqueta": "24 grupos · 40,049 unidades",
+        "valor": "40,049",
+        "unidad": "unidades taxonómicas",
+        "fuente": "SRC-001",
+        "source_ids": [
+          "SRC-001"
+        ],
+        "limite": "El artículo agrupa especies, morfoespecies y OTUs/ASVs bajo el término species."
+      }
+    },
+    {
+      "id": "scene_004",
+      "arc": "desarrollo",
+      "duration_seconds": 11,
+      "narration": "En monocultivos de caucho y palma, la multidiversidad cayó cerca de 78% a escala del paisaje y 50% a escala local, respecto al bosque de referencia; no son especies extintas.",
+      "on_screen_text": "−78% paisaje · −50% local",
+      "visual_description": "Gráfico de dos barras, una para pérdida de multidiversidad a escala del paisaje y otra a escala local; pie visible que aclara que no son porcentajes de especies extintas.",
+      "image_prompt": "ligne claire European comic illustration, clean uniform black outlines, flat bright colors, no hatching, clear readable shapes, one main subject large, minimal background, illustrated, not photorealistic, vertical 9:16, no text, A simple two-bar scientific chart in a clean ligne claire editorial style, one taller bar marked visually for landscape scale and one shorter bar for local scale, neutral baseline and generous whitespace, no text or numeric labels rendered in the image.",
+      "ambiente": "Ambiente de medición con pulso sonoro bajo.",
+      "sfx": [
+        "golpe suave por barra",
+        "pulso grave"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "ligne_claire",
+      "dramatic_beat": "La cifra eleva las stakes y prepara el giro inesperado.",
+      "scene_function": "Cuantificar la caída de multidiversidad con su unidad correcta.",
+      "causal_bridge_from_previous": "Con la escala del inventario clara, aparece la magnitud de la pérdida.",
+      "question_state": "La pérdida es grande, pero todavía no sabemos si los sitios se vuelven iguales.",
+      "reason_to_continue": "El resultado inesperado aparece al comparar la composición entre sitios.",
+      "new_information": "Las caídas de 78% y 50% se refieren a multidiversidad, no a extinción de especies.",
+      "capa": {
+        "tipo": "grafico",
+        "chart_type": "bar",
+        "x_axis": "Escala de pérdida",
+        "unit": "Caída relativa de multidiversidad (%) respecto al bosque de referencia",
+        "series": [
+          {
+            "label": "Paisaje",
+            "value": 78
+          },
+          {
+            "label": "Local",
+            "value": 50
+          }
+        ],
+        "conditions": "Monocultivos de caucho y palma respecto al bosque de referencia en los paisajes estudiados de Jambi.",
+        "fuente": "SRC-001",
+        "source_ids": [
+          "SRC-001"
+        ],
+        "interpretacion": "No son porcentajes de especies extintas."
+      }
+    },
+    {
+      "id": "scene_005",
+      "arc": "desarrollo",
+      "duration_seconds": 9,
+      "narration": "Aun así, no hubo una homogenización consistente: perder multidiversidad no convirtió todos los sitios en la misma comunidad.",
+      "on_screen_text": "Sin homogenización consistente",
+      "visual_description": "Dos comunidades de organismos con combinaciones distintas; las dos muestran pérdida, pero no convergen en una composición idéntica.",
+      "image_prompt": "ligne claire European comic illustration, clean uniform black outlines, flat bright colors, no hatching, clear readable shapes, one main subject large, minimal background, illustrated, not photorealistic, vertical 9:16, no text, Two separate tropical ecological community panels with different generic organism silhouettes and distinct compositions, both simplified but not identical, no universal convergence, no labels.",
+      "ambiente": "Ambiente de paisaje agrícola con viento entre hojas.",
+      "sfx": [
+        "viento en hojas",
+        "corte suave"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "ligne_claire",
+      "dramatic_beat": "La expectativa de que todos los sitios se vuelvan parecidos no se cumple.",
+      "scene_function": "Presentar el resultado que cambia la interpretación de la pérdida.",
+      "causal_bridge_from_previous": "Pero la magnitud de la caída no responde si los sitios se vuelven iguales.",
+      "question_state": "No aparece una homogenización consistente entre todos los grupos.",
+      "reason_to_continue": "El patrón de los organismos sobre el suelo revela el giro científico.",
+      "new_information": "La pérdida no produjo una respuesta homogénea en todos los grupos."
+    },
+    {
+      "id": "scene_006",
+      "arc": "desarrollo",
+      "duration_seconds": 9,
+      "narration": "En los grupos sobre el suelo, sí cambió la estructura: disminuyó el recambio entre sitios y aumentó el anidamiento.",
+      "on_screen_text": "Menos recambio · más anidamiento",
+      "visual_description": "Organismos sobre el suelo y dos conjuntos de comunidades; una animación editorial sugerida muestra menos reemplazo entre sitios y más inclusión de conjuntos pequeños dentro de otros mayores.",
+      "image_prompt": "ligne claire European comic illustration, clean uniform black outlines, flat bright colors, no hatching, clear readable shapes, one main subject large, minimal background, illustrated, not photorealistic, vertical 9:16, no text, Aboveground ecological community symbols arranged in two side-by-side sets, showing reduced species replacement and a clearer nested subset relationship, clean educational illustration, no labels.",
+      "ambiente": "Ambiente de dosel y hojarasca.",
+      "sfx": [
+        "hojas moviéndose",
+        "dos clics de transición"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "ligne_claire",
+      "dramatic_beat": "La diferencia entre sitios cambia de forma, no desaparece en todos los grupos.",
+      "scene_function": "Explicar el giro: el recambio disminuye y el anidamiento aumenta en taxones sobre el suelo.",
+      "causal_bridge_from_previous": "La respuesta cambia al mirar la composición de los grupos sobre el suelo.",
+      "question_state": "En los grupos sobre el suelo disminuye el recambio y aumenta el anidamiento.",
+      "reason_to_continue": "Para entender el cambio hay que separar ambos componentes.",
+      "new_information": "El estudio reporta un desplazamiento sistemático de turnover a nestedness para taxones sobre el suelo."
+    },
+    {
+      "id": "scene_007",
+      "arc": "cierre_historia",
+      "duration_seconds": 11,
+      "narration": "El recambio significa que los sitios albergan especies distintas; el anidamiento, que las comunidades pobres conservan subconjuntos de las ricas.",
+      "on_screen_text": "Recambio ≠ anidamiento",
+      "visual_description": "Dos diagramas limpios: en uno, especies distintas se reemplazan entre sitios; en otro, el conjunto pequeño queda contenido en el grande.",
+      "image_prompt": "ligne claire European comic illustration, clean uniform black outlines, flat bright colors, no hatching, clear readable shapes, one main subject large, minimal background, illustrated, not photorealistic, vertical 9:16, no text, Two clear side-by-side ecological set diagrams made of simple organism icons, left panel shows species replacement between sites, right panel shows a smaller community as a subset of a larger one, minimal background, no text.",
+      "ambiente": "Ambiente de explicación visual, suave.",
+      "sfx": [
+        "fichas encajando",
+        "clic suave"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "ligne_claire",
+      "dramatic_beat": "El mecanismo se vuelve comprensible al separar los dos patrones.",
+      "scene_function": "Definir recambio y anidamiento sin tecnicismos innecesarios.",
+      "causal_bridge_from_previous": "Para entender ese cambio, hay que separar dos componentes de la diversidad beta.",
+      "question_state": "La diferencia entre sitios puede cambiar sin que todos se vuelvan iguales.",
+      "reason_to_continue": "El cierre debe conectar el mecanismo con la pregunta inicial y limitar la conclusión.",
+      "new_information": "Recambio es reemplazo entre sitios; anidamiento es inclusión de comunidades pobres dentro de las ricas."
+    },
+    {
+      "id": "scene_008",
+      "arc": "reflexion_o_pregunta",
+      "duration_seconds": 11,
+      "narration": "El estudio muestra una ruta en dos paisajes de Jambi, no una regla para todas las selvas. La apertura tenía razón: perder multidiversidad no siempre iguala. Esto fue Datos y ociosidades.",
+      "on_screen_text": "Dos paisajes; no todas las selvas",
+      "visual_description": "Plano amplio de dos paisajes tropicales distintos, conectados por una línea de observación; cierre visual que devuelve a la anomalía inicial.",
+      "image_prompt": "ligne claire European comic illustration, clean uniform black outlines, flat bright colors, no hatching, clear readable shapes, one main subject large, minimal background, illustrated, not photorealistic, vertical 9:16, no text, A broad editorial view of two distinct tropical landscapes in Sumatra, separate patches and different community textures, balanced composition, a subtle visual echo of the opening contrast, no labels, no text.",
+      "ambiente": "Ambiente de selva tropical que se desvanece lentamente.",
+      "sfx": [
+        "viento suave",
+        "cierre de libreta"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "ligne_claire",
+      "dramatic_beat": "La respuesta paga la apertura y limita el alcance del estudio.",
+      "scene_function": "Cerrar la pregunta sin generalizar más allá de los dos paisajes estudiados.",
+      "causal_bridge_from_previous": "Con la diferencia entre recambio y anidamiento, el cierre puede responder la apertura.",
+      "question_state": "La pérdida de multidiversidad no implica que todos los sitios se vuelvan iguales.",
+      "reason_to_continue": "Cierre.",
+      "new_information": "El resultado describe 32 parcelas en dos paisajes de Jambi, no todas las selvas tropicales."
+    }
+  ],
+  "cortinilla_fuentes": {
+    "duration_seconds": 6,
+    "titulo": "Fuentes",
+    "aviso": "Referencias de investigación; no se han generado imágenes, audio ni otros medios en esta etapa.",
+    "firma": "Datos y ociosidades",
+    "source_ids": [
+      "SRC-001",
+      "SRC-002"
+    ]
+  },
+  "audio": {
+    "music_asset": null,
+    "music_plan": "Cama orgánica discreta, sin dramatización excesiva; no generar en preproducción.",
+    "music_license": null
+  },
+  "export": {
+    "resolution": "1080x1920",
+    "fps": 30,
+    "render_status": "NOT_GENERATED",
+    "target_duration_seconds": 84
+  },
+  "publicacion": {
+    "status": "PENDIENTE_DECISION_GROK",
+    "platforms": [
+      "YouTube Shorts",
+      "TikTok",
+      "Facebook Reels"
+    ],
+    "note": "No publicar ni programar desde preproducción textual."
+  },
+  "estado": "BORRADOR_EN_PROYECTOS_NO_APTO_PARA_PROMOCION",
+  "production_mode": "storyboard_only",
+  "validation_notes": [
+    "Borrador del investigador: narrative_qa no se crea en esta fase.",
+    "No se ejecutó el validador estructural; la auditoría narrativa debe ser una pasada separada.",
+    "DOI de SRC-001 y SRC-002 verificados mediante Crossref; no se ha creado entrada de cola ni estado Grok."
+  ],
+  "linea_tematica_provisional": "Naturaleza / biodiversidad; subtema ecología de paisajes tropicales.",
+  "approved_assets": [],
+  "risk_notes": [
+    "La capa de mapa usa dos estaciones meteorológicas EFForTS, no las coordenadas de las 32 parcelas; el mapa solo localiza los dos paisajes.",
+    "La ESM de 2016 lista 33 parcelas core, mientras el artículo de 2026 informa 32 parcelas; por eso no se representan puntos de parcela ni se asume correspondencia exacta."
+  ]
+}
