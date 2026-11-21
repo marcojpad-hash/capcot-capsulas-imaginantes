@@ -383,3 +383,41 @@ Proyecto releído: `2026-11-22_bao-estrella-fusion-andromeda`.
 - Commits de esta corrección: renderer RA/Dec `fcab046d00056f7b8c7dbf10c879aa20e9565651`; pruebas `d36c1305b11f4be7d6be23f01025ed5e3bf98533`; atribución SRC-001/SRC-002 `1c01ec1162ad3186ada73c4485f9cde681ccb5b6` (blob storyboard `e125839a63564f45745c66589d0e673fe024f9be).
 
 Los cambios de código y metadatos permanecen en feature. No se modificaron `data/*.json`, main, workflows, secretos, permisos, publicaciones ni medios.
+
+
+## 19. Relectura de inventario, QA y trazabilidad — 2026-11-21, 14:24 CDMX
+
+Se releyó el directorio `proyectos/` en la rama feature (101 carpetas). Para el control temporal y el backlog interdiario quedan **25 storyboards**: 12 del lote 5–7 nov, seis del 18–20 nov, seis con fecha objetivo 21–22 nov y uno del 23 nov. Los `data/*.json` se consultaron en solo lectura.
+
+### QA narrativo vigente
+
+- Lote 5–7 nov: 2 PASS / 10 FAIL.
+- Backlog 18–20 nov: 5 PASS / 1 FAIL.
+- Fecha objetivo 21–22 nov: 2 PASS / 4 FAIL:
+  - Fentale (23:30): PASS 90.
+  - Homo erectus (07:00): FAIL 83, `GIRO_CIENTIFICO_NOMBRADO_PERO_NO_EXPLICADO`.
+  - Pulsar (17:00): FAIL 83, `GIRO_CIENTIFICO_NOMBRADO_PERO_NO_EXPLICADO`.
+  - Voyager (07:00): FAIL 83, `FECHA_DE_HITO_Y_CONFIRMACION_CONFUNDIDAS`.
+  - Yubarta (17:00): PASS 90.
+  - Bao (13:30): FAIL 84, `STAKES_NO_EXPLICADOS`; el registro ya existía al releerlo a las 14:24. No se repitió ni se alteró esa evaluación.
+- Fecha objetivo 23 nov, `2026-11-23_tropical-biodiversity-turnover`: lectura independiente posterior, ocultando título, resumen, arco, notas y narrative_contract y leyendo solo las ocho narraciones concatenadas. Resultado registrado: **FAIL 82**, siete checks true y `critical_flags=["STAKES_NO_EXPLICADOS"]`. La narración explica la paradoja y el cambio de recambio a anidamiento, pero no explica por qué la pérdida de multidiversidad importa para el funcionamiento del ecosistema o las decisiones de conservación. No se reescribió el texto.
+
+Recuento de la cohorte inventariada: **9 PASS / 16 FAIL**. Ningún FAIL se promovió. No se repitió PASS válido.
+
+### Fuentes y metadatos corregidos
+
+- Bao: Nature y PubMed confirman el DOI `10.1038/s41586-026-11221-z` y publicación el 18-nov-2026. Se corrigió `doi_verification_status` de la afirmación falsa `VERIFICADO_CROSSREF_API` a `PENDIENTE_RESOLVEDOR`. Crossref REST y doi.org no fueron accesibles en esta ejecución; no se ejecutó `--check-doi`. Commit `eef7e8568c8484e5ff581dc0755c011362fdc852`.
+- Biodiversidad tropical (23 nov): Nature y PubMed confirman el DOI `10.1038/s41586-026-11298-6` y publicación el 18-nov-2026; Crossref REST y doi.org quedaron inaccesibles, por lo que el DOI se marca `PENDIENTE_RESOLVEDOR`.
+- Fuente cartográfica de biodiversidad: el DOI `10.1098/rstb.2015.0275` aparece en registros bibliográficos secundarios, pero doi.org devolvió 403 y el suplemento oficial de Royal Society no fue accesible. Las coordenadas se encontraron en una tesis que cita Drescher et al. (2016), no en el suplemento primario. SRC-002 queda `PENDING_SOURCE`; no se considera verificada la coordenada contra ESM Table S1. Commit de storyboard y QA `b08951134e1c6071ad77144dfcc4c2ff466024f4`.
+- No se cambió ninguna narración, cifra, fecha objetivo ni decisión editorial.
+
+### Estructura, cola y dispatch
+
+- Biodiversidad (23 nov): 8 escenas, 172 palabras, 78 s de escenas + 6 s de cortinilla = 84 s; voz y prompt_base coinciden con el catálogo; hay mapa y capa de dato/gráfico; cada escena tiene ambiente, SFX y source_ids; `approved_assets=[]`, `export.render_status=NOT_GENERATED`, sin `asset_filename`, `asset_type` ni rutas de medios. La compuerta narrativa y SRC-002 impiden promoción.
+- Bao: 8 escenas, 192 palabras, 84 s; coordenadas ecuatoriales RA/Dec, renderer celeste ya corregido. QA FAIL y DOI pendiente impiden promoción.
+- Inventario de `cola/entrada/`: `.gitkeep` y dos directorios históricos (9 y 11 nov); no hay JSON plano nuevo. `cola/estado/` devuelve 404; `handoffs/grok_inbox/` contiene solo el marcador histórico del 9-nov; `salidas/` no muestra procesamiento de los proyectos 21–23 nov.
+- El workflow escucha únicamente `cola/entrada/*.json` plano en push, o `workflow_dispatch`; no se disparó ninguno. Los nuevos storyboards en `proyectos/` no son dispatchables por esa ruta. No se creó cola ni estado Grok.
+- En main, `data/publicaciones.json` contiene un slot del 21-nov 19:00 CDMX (22-nov 01:00Z), no una ocupación de 22-nov 13:30 ni 23-nov 13:30. `main/data/horarios.json` tiene ventana regular 13:00–14:30 y corte 16-nov; `feature/data/horarios.json` conserva corte 9-nov. Persiste la discrepancia de política horaria entre ramas; no se modificó ningún `data/*.json`.
+- La presencia de `GROK_WEBHOOK_URL` y `GROK_WEBHOOK_TOKEN` no pudo verificarse mediante la conexión GitHub disponible; no se declaran ausentes ni se exponen valores.
+
+No se dispararon workflows, no se enviaron payloads, no se generaron medios ni se modificaron publicaciones, permisos o secretos.
