@@ -170,9 +170,9 @@ Se releyeron los seis storyboards que siguen en `proyectos/`. Sus QA existentes 
 ### Producción previa y medios
 
 - `2026-11-07_comida-hielo-caliente` y `2026-11-07_inter-nubes-pesan` ya tienen registros de publicación en main (YouTube IDs `HSgrnejAcaI` y `4Qpl17Ts_vI`). Solo se encontró storyboard de salida para comida caliente; los MP4 referenciados no están en el árbol. **PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR / MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO**.
-- El paquete anidado de robot conserva QA PASS y un marcador de inbox con estado `pending`, pero no `cola/estado`. Main registra programación para el 21-nov a las 19:00 CDMX; no hay carpeta de salida ni `capsula.mp4` verificable. **PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR / MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO**.
+- El paquete anidado de robot conserva QA PASS y un marcador de inbox con estado `pending`, pero no `cola/estado`. Main registra programación para el 21-nov a las 19:00 CDMX; no se localizaron `publicacion.json`, `metadata.json`, `qa.json`, `storyboard.json` ni `capsula.mp4` bajo `salidas/<id>/`. **PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR / MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO**.
 - Ratas topo ya aparece publicado el 12-nov a las 07:00 CDMX (YouTube `WcTviUWqbes`) y conserva storyboard, metadata, QA y publicación en `salidas/`; el MP4 no está en el árbol. **PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR / MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO**.
-- No se encontró salida para los cinco proyectos actuales ni los seis interdiarios.
+- No se encontró `salidas/<id>/storyboard.json` ni registro en `data/publicaciones.json` para los cinco proyectos actuales y los seis interdiarios.
 
 ### Compuertas y automatización
 
