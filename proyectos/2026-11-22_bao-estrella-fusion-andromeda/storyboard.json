@@ -325,7 +325,8 @@
       "question_state": "Sabemos cómo pudo terminar AT 2025abao, no cómo terminarán todas las parejas.",
       "reason_to_continue": "La pregunta final invita a reconocer otras señales tempranas sin convertirlas en certezas.",
       "new_information": "Algunas compañeras pueden sobrevivir; el resultado depende de las condiciones del sistema.",
-      "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text Una pareja estelar estilizada y una estela de polvo que se desvanece; otras parejas quedan como siluetas lejanas, sin destino predeterminado."
+      "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text Una pareja estelar estilizada y una estela de polvo que se desvanece; otras parejas quedan como siluetas lejanas, sin destino predeterminado.",
+      "narration": "No significa que todas las parejas terminen así: este caso muestra una ruta, no una regla. Bao convirtió un brillo lento en una pista medible. Esto fue Datos y ociosidades."
     }
   ],
   "cortinilla_fuentes": {
@@ -370,7 +371,7 @@
   "approved_assets": [],
   "risk_notes": [
     "La fusión es la interpretación del equipo a partir de observaciones multibanda y modelos; no presentarla como una grabación directa del instante.",
-    "El resultado corresponde a AT 2025abao y no permite generalizar el desenlace a todas las binarias."
+    "El resultado corresponde a AT 2025abao; no generalizar esta ruta a todas las binarias."
   ],
   "fecha_objetivo": "2026-11-22",
   "slot_local": "13:30"
