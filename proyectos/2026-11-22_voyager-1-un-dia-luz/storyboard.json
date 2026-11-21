@@ -1,0 +1,434 @@
+{
+  "_schema": "CAPCOT_STORYBOARD_TEXT_V2",
+  "project_id": "2026-11-22_voyager-1-un-dia-luz",
+  "serie": "Datos y ociosidades",
+  "title": "Voyager 1 está a un día-luz de la Tierra",
+  "titulo": "24 horas de ida",
+  "language": "es-MX",
+  "aspect_ratio": "9:16",
+  "fecha_objetivo": "2026-11-22",
+  "slot_local": "07:00",
+  "slot_cesta": "manana",
+  "origen": "externa",
+  "target_duration_seconds": 84,
+  "estructura": "mito_vs_dato",
+  "audience": "Público general interesado en ciencia y espacio",
+  "occasion": "Cápsula matutina de ciencia espacial; no se usa como dato del día de las 23:30",
+  "resumen": "NASA/JPL informó que Voyager 1 alcanzó una distancia de un día-luz. La señal portadora tarda unas 24 horas por trayecto; una comunicación de ida y vuelta exige cerca de 48 horas. La nave no viaja a la velocidad de la luz.",
+  "trend_source": {
+    "termino": "NASA's Voyager 1 Makes History Reaching One Light-Day from Earth",
+    "fecha_publicacion": "2026-11-19",
+    "url": "https://www.jpl.nasa.gov/news/nasas-voyager-1-makes-history-reaching-one-light-day-from-earth/"
+  },
+  "editorial_status": "PROPUESTA_PENDIENTE_DE_GROK",
+  "arco": {
+    "hook_medias_res": "La portadora tarda casi un día en llegar; no es una falla, es distancia.",
+    "desarrollo": "NASA confirma un día-luz; el mapa ubica la red DSN; se explica la diferencia entre distancia, señal y velocidad de la nave.",
+    "cierre_historia": "La señal tarda unas 24 horas por tramo y un intercambio completo ronda las 48; la portadora sigue llegando aunque los datos científicos no.",
+    "reflexion_o_pregunta": "La espera no es un error de comunicación: es el tamaño del espacio entre la sonda y la Tierra."
+  },
+  "narrative_contract": {
+    "central_question": "¿Por qué una señal de Voyager 1 tarda casi un día en llegar y una respuesta completa exige cerca de dos?",
+    "promise": "Explicar qué significa un día-luz y separar la velocidad de la señal de la velocidad de la nave.",
+    "stakes": "La comunicación deja de ser en tiempo real: cada comando y su confirmación deben planearse con una demora enorme.",
+    "scientific_turn": "Un día-luz es una distancia; las ondas de radio viajan a la velocidad de la luz, pero Voyager 1 se desplaza mucho más despacio.",
+    "evidence_limit": "El hito se confirmó con la señal portadora y cálculos de trayectoria; NASA indicó que no recibía datos científicos ni de ingeniería desde el 14 de noviembre.",
+    "payoff": "La demora no es una falla de Voyager: es el tiempo que tarda la señal en cruzar un día-luz."
+  },
+  "analisis": {
+    "observacion": "NASA/JPL informó el 19-nov-2026 que Voyager 1 alcanzó el umbral de un día-luz el 18-nov-2026: aproximadamente 25.9 mil millones de kilómetros. La portadora seguía llegando; los datos científicos y de ingeniería no se recibían desde el 14-nov.",
+    "calculo": "Un día-luz equivale a unas 24 horas de viaje de la señal en un solo sentido. El trayecto de ida y vuelta ronda 48 horas. La conversión de 38,000 millas por hora equivale aproximadamente a 61,000 km/h.",
+    "inferencia": "El retraso de la comunicación se explica por la distancia, no por una avería ni porque la nave viaje a la velocidad de la luz.",
+    "recomendacion": "No afirmar que Voyager 1 viaja a la velocidad de la luz. Distinguir señal portadora de datos científicos y no atribuir la recepción del hito a una antena DSN concreta."
+  },
+  "estilo_id": "risografia",
+  "estilo_visual": "Risografía (propio)",
+  "visual_identity": {
+    "style_id": "risografia",
+    "style_name": "Risografía (propio)",
+    "prompt_base": "risograph print, two-color fluorescent pink and teal overprint, misregistration, grainy texture, flat shapes, vertical 9:16, no text",
+    "palette": "Rosa fluorescente y turquesa en sobreimpresión; papel granulado",
+    "lighting": "Contraste plano; los acentos de color separan señal, nave y estaciones terrestres.",
+    "texture": "Grano de risografía y desregistro visible entre tintas.",
+    "composition": "Diagramas geométricos limpios; un foco por plano; lectura vertical 9:16.",
+    "negative_prompt": "photorealistic, 3D render, invented antenna, invented spacecraft path, spacecraft moving at light speed, text, labels, logos, watermark, extra planets, explosions",
+    "reference_assets": [],
+    "seed": null,
+    "seed_policy": "Mantener dos tintas y grano; cambiar escala y composición sin añadir objetos no documentados."
+  },
+  "typography_identity": {
+    "font_family": "DejaVu Sans",
+    "font_weight": "700 para gancho; 400 para subtítulos",
+    "title_style": "Máximo seis palabras; presente desde frame 0 en postproducción",
+    "subtitle_style": "Bloques de máximo tres palabras; zona segura inferior",
+    "hierarchy": "Gancho > dato/etiqueta > subtítulos",
+    "animation": "Un movimiento por plano; tipografía en postproducción"
+  },
+  "voice": {
+    "engine": "edge-tts",
+    "voice_id": "es-MX-JorgeNeural",
+    "language": "es-MX",
+    "rate": "+7%",
+    "pitch": "-2Hz",
+    "pad_seconds": 0.3,
+    "modo_pausas": "continuo"
+  },
+  "sources": [
+    {
+      "id": "SRC-001",
+      "cita_corta": "NASA/JPL. “NASA's Voyager 1 Makes History Reaching One Light-Day from Earth” (19-nov-2026).",
+      "url": "https://www.jpl.nasa.gov/news/nasas-voyager-1-makes-history-reaching-one-light-day-from-earth/",
+      "doi": null,
+      "accessed": "2026-11-20",
+      "publication_date": "2026-11-19",
+      "supports": [
+        "Voyager 1 alcanzó el umbral de un día-luz de distancia el 18-nov-2026.",
+        "La distancia reportada es aproximadamente 16.1 mil millones de millas, equivalentes a 25.9 mil millones de kilómetros.",
+        "La señal tarda aproximadamente 24 horas en viajar en un solo sentido; una comunicación de ida y vuelta requiere cerca de 48 horas.",
+        "La nave se desplaza aproximadamente a 38,000 millas por hora; no viaja a la velocidad de la luz.",
+        "El hito se confirmó mediante la señal portadora y cálculos de trayectoria.",
+        "NASA/JPL indicó que no recibía datos científicos ni de ingeniería desde el 14-nov-2026, aunque la portadora seguía llegando.",
+        "La Red de Espacio Profundo utiliza los complejos de Goldstone, Madrid y Canberra, separados aproximadamente 120 grados de longitud."
+      ],
+      "verification_status": "VERIFICADO_FUENTE_PRIMARIA",
+      "url_verification_status": "VERIFICADO_PAGINA_JPL",
+      "doi_verification_status": "NO_APLICA",
+      "verification_note": "Fuente primaria de NASA/JPL; artículo y fecha de publicación visibles. No aplica DOI."
+    },
+    {
+      "id": "SRC-002",
+      "cita_corta": "Goldstone Deep Space Communications Complex — coordenadas del complejo.",
+      "url": "https://en.wikipedia.org/wiki/Goldstone_Deep_Space_Communications_Complex",
+      "doi": null,
+      "accessed": "2026-11-20",
+      "publication_date": null,
+      "supports": [
+        "Coordenadas de localización del complejo Goldstone: 35.4266667° N, 116.89° W."
+      ],
+      "verification_status": "VERIFICADO_MAPA_SECUNDARIO",
+      "url_verification_status": "VERIFICADO",
+      "doi_verification_status": "NO_APLICA",
+      "verification_note": "Fuente secundaria usada solo como localizador cartográfico; el papel de Goldstone dentro de la DSN se apoya en NASA/JPL."
+    },
+    {
+      "id": "SRC-003",
+      "cita_corta": "Madrid Deep Space Communications Complex — coordenadas del complejo.",
+      "url": "https://en.wikipedia.org/wiki/Madrid_Deep_Space_Communications_Complex",
+      "doi": null,
+      "accessed": "2026-11-20",
+      "publication_date": null,
+      "supports": [
+        "Coordenadas de localización del complejo Madrid: 40.42917° N, 4.24972° W."
+      ],
+      "verification_status": "VERIFICADO_MAPA_SECUNDARIO",
+      "url_verification_status": "VERIFICADO",
+      "doi_verification_status": "NO_APLICA",
+      "verification_note": "Fuente secundaria usada solo como localizador cartográfico; el papel de Madrid dentro de la DSN se apoya en NASA/JPL."
+    },
+    {
+      "id": "SRC-004",
+      "cita_corta": "Canberra Deep Space Communication Complex — coordenadas del complejo.",
+      "url": "https://en.wikipedia.org/wiki/Canberra_Deep_Space_Communication_Complex",
+      "doi": null,
+      "accessed": "2026-11-20",
+      "publication_date": null,
+      "supports": [
+        "Coordenadas de localización del complejo Canberra: 35.40139° S, 148.98167° E."
+      ],
+      "verification_status": "VERIFICADO_MAPA_SECUNDARIO",
+      "url_verification_status": "VERIFICADO",
+      "doi_verification_status": "NO_APLICA",
+      "verification_note": "Fuente secundaria usada solo como localizador cartográfico; el papel de Canberra dentro de la DSN se apoya en NASA/JPL."
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_001",
+      "arc": "hook_medias_res",
+      "duration_seconds": 9,
+      "narration": "La portadora de Voyager 1 tarda casi un día en llegar a la Tierra. No es una falla: es distancia.",
+      "on_screen_text": "24 horas de ida",
+      "visual_description": "Una señal tenue cruza un espacio negro y alcanza la Tierra; la nave aparece pequeña, sin efectos de velocidad luminosa.",
+      "image_prompt": "risograph print, two-color fluorescent pink and teal overprint, misregistration, grainy texture, flat shapes, vertical 9:16, no text, a tiny deep-space probe and a thin radio-wave line reaching a small blue Earth, vast negative space, no speed streaks, no logos, no watermark",
+      "ambiente": "Zumbido electrónico lejano y aire grave muy tenue",
+      "sfx": [
+        "Pulso corto al aparecer la señal",
+        "Eco breve al tocar la Tierra"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "risografia",
+      "dramatic_beat": "La demora ya está ocurriendo y obliga a preguntar por qué.",
+      "scene_function": "Abrir con la consecuencia medible: la señal tarda casi un día.",
+      "causal_bridge_from_previous": "La portadora llega con una demora extraordinaria.",
+      "question_state": "Todavía no sabemos si es un problema de la nave o la distancia.",
+      "reason_to_continue": "La explicación depende de cuánto espacio separa a Voyager 1 de la Tierra.",
+      "new_information": "La señal portadora tarda casi un día en llegar."
+    },
+    {
+      "id": "scene_002",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "El 18 de noviembre, NASA confirmó que la sonda alcanzó un día-luz: unos 25.9 mil millones de kilómetros.",
+      "on_screen_text": "Un día-luz de distancia",
+      "visual_description": "Voyager 1 aparece al borde de un diagrama de escala; la Tierra queda como punto pequeño y distante.",
+      "image_prompt": "risograph print, two-color fluorescent pink and teal overprint, misregistration, grainy texture, flat shapes, vertical 9:16, no text, editorial scale diagram with tiny Earth and Voyager 1 separated by a vast dark field, a single distance marker, no invented trajectory, no logos, no watermark",
+      "ambiente": "Viento espacial sintético, sin dramatismo épico",
+      "sfx": [
+        "Clic seco al fijar la fecha",
+        "Tono corto al aparecer la distancia"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "risografia",
+      "dramatic_beat": "La demora recibe una escala física concreta.",
+      "scene_function": "Fijar el hito y la distancia reportada por NASA/JPL.",
+      "causal_bridge_from_previous": "La sonda cruzó el umbral de un día-luz el 18 de noviembre.",
+      "question_state": "La distancia es enorme, pero todavía falta explicar qué significa un día-luz.",
+      "reason_to_continue": "El término puede confundirse con una velocidad o con el tiempo que tarda la nave.",
+      "new_information": "NASA/JPL reportó aproximadamente 25.9 mil millones de kilómetros."
+    },
+    {
+      "id": "scene_003",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "La Red de Espacio Profundo la escucha desde Goldstone, Madrid y Canberra. Sus tres complejos están separados por unos 120 grados.",
+      "on_screen_text": "Tres complejos DSN",
+      "visual_description": "Mapa mundial sobrio con tres puntos en California, España y Australia; no se dibuja una ruta ni se atribuye el contacto a una estación concreta.",
+      "image_prompt": "risograph print, two-color fluorescent pink and teal overprint, misregistration, grainy texture, flat shapes, vertical 9:16, no text, flat world map with three accurately placed deep-space antenna markers in California, central Spain and Australia, no routes, no labels, no extra stations, no logos, no watermark",
+      "ambiente": "Ambiente de sala de control muy bajo",
+      "sfx": [
+        "Tres pulsos discretos, uno por punto",
+        "Barrido suave de mapa"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002",
+        "SRC-003",
+        "SRC-004"
+      ],
+      "style_id": "risografia",
+      "dramatic_beat": "La distancia se conecta con la infraestructura que mantiene el contacto.",
+      "scene_function": "Ubicar la red terrestre que sigue sondas interplanetarias.",
+      "causal_bridge_from_previous": "La DSN dispone de tres complejos globales.",
+      "question_state": "No sabemos cuál antena recibió el carrier signal de este hito concreto.",
+      "reason_to_continue": "La separación de los complejos permite mantener cobertura mientras gira la Tierra.",
+      "new_information": "Goldstone, Madrid y Canberra forman la red de seguimiento.",
+      "capa": {
+        "tipo": "mapa",
+        "region": [
+          -35.40139,
+          -116.89,
+          40.42917,
+          148.98167
+        ],
+        "puntos": [
+          {
+            "id": "goldstone",
+            "label": "Goldstone, California",
+            "lat": 35.4266667,
+            "lon": -116.89,
+            "sistema_coordenadas": "WGS84"
+          },
+          {
+            "id": "madrid",
+            "label": "Madrid DSCC, España",
+            "lat": 40.42917,
+            "lon": -4.24972,
+            "sistema_coordenadas": "WGS84"
+          },
+          {
+            "id": "canberra",
+            "label": "Canberra DSCC, Australia",
+            "lat": -35.40139,
+            "lon": 148.98167,
+            "sistema_coordenadas": "WGS84"
+          }
+        ],
+        "areas": [],
+        "titulo": "Los tres complejos de la Red de Espacio Profundo",
+        "fuente": "NASA/JPL, artículo del hito Voyager 1 (red DSN y separación aproximada de 120°); coordenadas de localización: páginas de referencia de Goldstone, Madrid y Canberra.",
+        "precision_note": "Los puntos muestran la ubicación de los complejos, no la antena específica que recibió la señal del 18-nov-2026. La red y su función se atribuyen a NASA/JPL; las coordenadas son localizadores cartográficos."
+      }
+    },
+    {
+      "id": "scene_004",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "Un día-luz no es una velocidad: es la distancia que la luz recorre en 24 horas. La radio viaja a esa misma velocidad.",
+      "on_screen_text": "Un día-luz = 24 h",
+      "visual_description": "Una barra de distancia se llena con un pulso de radio; el gráfico distingue distancia recorrida de velocidad de la nave.",
+      "image_prompt": "risograph print, two-color fluorescent pink and teal overprint, misregistration, grainy texture, flat shapes, vertical 9:16, no text, clean risograph infographic of a one-day light-distance bar, a radio pulse crossing it, distinct from a small slow spacecraft icon, no logos, no watermark",
+      "ambiente": "Pulso estable, casi metronómico",
+      "sfx": [
+        "Marca de tiempo al completar 24 horas",
+        "Chasquido leve al separar distancia y velocidad"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "risografia",
+      "dramatic_beat": "La definición cambia la lectura del titular.",
+      "scene_function": "Explicar la unidad antes de calcular el retraso de comunicación.",
+      "causal_bridge_from_previous": "Un día-luz es una distancia, no una velocidad de la nave.",
+      "question_state": "La radio también se propaga a la velocidad de la luz.",
+      "reason_to_continue": "La distancia de un día-luz explica el tiempo de llegada de la señal.",
+      "new_information": "La luz y la señal de radio tardan unas 24 horas en cubrir ese tramo.",
+      "capa": {
+        "tipo": "dato",
+        "valor": 25.9,
+        "unidad": "mil millones de kilómetros",
+        "etiqueta": "Distancia aproximada de un día-luz",
+        "fuente": "NASA/JPL, “NASA's Voyager 1 Makes History Reaching One Light-Day from Earth” (19-nov-2026).",
+        "precision_note": "Valor reportado por NASA/JPL; no representa la velocidad de la nave."
+      }
+    },
+    {
+      "id": "scene_005",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "Por eso, la señal tarda unas 24 horas por trayecto. Enviar una orden y recibir respuesta exige cerca de 48 horas.",
+      "on_screen_text": "Ida y vuelta ≈48 h",
+      "visual_description": "Dos tramos consecutivos muestran primero la orden hacia la sonda y luego la respuesta de regreso, con el mismo intervalo en ambos.",
+      "image_prompt": "risograph print, two-color fluorescent pink and teal overprint, misregistration, grainy texture, flat shapes, vertical 9:16, no text, two-step radio signal diagram with equal outbound and return segments, simple 24-hour and 48-hour visual rhythm, no text, no logos, no watermark",
+      "ambiente": "Dos pulsos separados por silencio",
+      "sfx": [
+        "Pulso al salir la orden",
+        "Pulso al regresar la respuesta"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "risografia",
+      "dramatic_beat": "El cálculo convierte la distancia en una espera operativa.",
+      "scene_function": "Distinguir el tiempo de un solo trayecto del intercambio completo.",
+      "causal_bridge_from_previous": "Una señal tarda cerca de 24 horas en cada sentido.",
+      "question_state": "El ida y vuelta ronda dos días.",
+      "reason_to_continue": "No debe confundirse el tiempo de llegada de la señal con la duración de una conversación instantánea.",
+      "new_information": "La comunicación completa exige planear casi 48 horas.",
+      "capa": {
+        "tipo": "dato",
+        "valor": 48,
+        "unidad": "horas ida y vuelta",
+        "etiqueta": "24 h por trayecto × 2",
+        "fuente": "Cálculo a partir del umbral de un día-luz y del tiempo de propagación indicado por NASA/JPL.",
+        "precision_note": "Cálculo derivado; no es una medición de una respuesta concreta ni presupone demora adicional del equipo."
+      }
+    },
+    {
+      "id": "scene_006",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "La nave no va a la velocidad de la luz: avanza a unos 61 mil kilómetros por hora. Lo que cruza tan rápido es la señal.",
+      "on_screen_text": "La nave ≠ la señal",
+      "visual_description": "La sonda avanza lentamente en un diagrama; el pulso de radio cruza el espacio mucho más rápido, sin representar una trayectoria medida.",
+      "image_prompt": "risograph print, two-color fluorescent pink and teal overprint, misregistration, grainy texture, flat shapes, vertical 9:16, no text, small Voyager spacecraft moving slowly beside a fast radio pulse, clear visual contrast without speed labels or invented motion trails, no logos, no watermark",
+      "ambiente": "Motor grave suave, sin aceleración dramática",
+      "sfx": [
+        "Deslizamiento corto de la nave",
+        "Chispa electrónica al pasar la señal"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "risografia",
+      "dramatic_beat": "La comparación impide atribuir a la nave la velocidad de la señal.",
+      "scene_function": "Separar la velocidad de Voyager de la velocidad de la comunicación.",
+      "causal_bridge_from_previous": "Voyager se mueve a unos 61 mil kilómetros por hora.",
+      "question_state": "La señal de radio se propaga a la velocidad de la luz.",
+      "reason_to_continue": "Sin esta distinción, el titular puede producir una interpretación falsa.",
+      "new_information": "La nave no viaja a la velocidad de la luz."
+    },
+    {
+      "id": "scene_007",
+      "arc": "cierre_historia",
+      "duration_seconds": 9,
+      "narration": "Y hay un límite: la portadora sigue llegando, pero NASA no recibe datos científicos ni de ingeniería desde el 14 de noviembre.",
+      "on_screen_text": "Portadora sí; datos no",
+      "visual_description": "Una línea portadora continua queda separada de dos paneles vacíos rotulados en postproducción como ciencia e ingeniería.",
+      "image_prompt": "risograph print, two-color fluorescent pink and teal overprint, misregistration, grainy texture, flat shapes, vertical 9:16, no text, two-panel editorial diagram, continuous carrier waveform on one side and empty science telemetry panels on the other, sober and factual, no logos, no watermark",
+      "ambiente": "Silencio breve y tono de señal constante",
+      "sfx": [
+        "Tono continuo tenue",
+        "Corte seco al panel vacío"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "risografia",
+      "dramatic_beat": "La confirmación del hito no equivale a recibir datos científicos nuevos.",
+      "scene_function": "Delimitar exactamente qué señal estaba disponible para confirmar la distancia.",
+      "causal_bridge_from_previous": "La portadora seguía llegando.",
+      "question_state": "Los datos científicos y de ingeniería no se recibían desde el 14 de noviembre.",
+      "reason_to_continue": "El hito se confirmó con la portadora y el cálculo de trayectoria.",
+      "new_information": "La evidencia disponible era la portadora, no datos científicos recientes."
+    },
+    {
+      "id": "scene_008",
+      "arc": "reflexion_o_pregunta",
+      "duration_seconds": 10,
+      "narration": "El hito se confirmó con la portadora y el cálculo de trayectoria. Voyager 1 no está tardando en contestar: el espacio alarga cada intercambio. Esto fue Datos y ociosidades.",
+      "on_screen_text": "La distancia manda",
+      "visual_description": "La línea de radio vuelve a conectar la sonda y la Tierra; la composición repite el encuadre inicial, ahora con la escala comprendida.",
+      "image_prompt": "risograph print, two-color fluorescent pink and teal overprint, misregistration, grainy texture, flat shapes, vertical 9:16, no text, final echo of the opening composition, tiny spacecraft and Earth connected by one thin radio line across deep space, no extra objects, no logos, no watermark",
+      "ambiente": "Viento espacial que se desvanece",
+      "sfx": [
+        "Pulso final breve",
+        "Cierre sonoro limpio"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "risografia",
+      "dramatic_beat": "La explicación paga la anomalía inicial sin convertir la señal en un dato que no se recibió.",
+      "scene_function": "Cerrar la pregunta y devolver el significado al retraso.",
+      "causal_bridge_from_previous": "La distancia, no una falla, explica la espera.",
+      "question_state": "La comunicación completa ronda dos días.",
+      "reason_to_continue": "La apertura se resuelve: una señal necesita un día para cruzar un día-luz.",
+      "new_information": "La demora es el tamaño del espacio entre la Tierra y Voyager 1."
+    }
+  ],
+  "cortinilla_fuentes": {
+    "duration_seconds": 6,
+    "titulo": "Fuentes",
+    "aviso": "Referencias declaradas; no se generan medios en esta preproducción.",
+    "firma": "Datos y ociosidades",
+    "source_ids": [
+      "SRC-001",
+      "SRC-002",
+      "SRC-003",
+      "SRC-004"
+    ]
+  },
+  "audio": {
+    "music_asset": null,
+    "music_plan": "Cama prevista: pizzicato ligero y espaciado, sin archivo de audio ni render.",
+    "music_license": null,
+    "cama_musical": "pizzicato"
+  },
+  "export": {
+    "resolution": "1080x1920",
+    "fps": 30,
+    "render_status": "NOT_GENERATED"
+  },
+  "publicacion": {
+    "status": "PENDIENTE_DECISION_GROK",
+    "platforms": [
+      "YouTube Shorts",
+      "TikTok",
+      "Facebook Reels"
+    ],
+    "note": "No publicar ni programar desde preproducción textual."
+  },
+  "estado": "BORRADOR_EN_PROYECTOS",
+  "production_mode": "storyboard_only",
+  "approved_assets": [],
+  "risk_notes": [
+    "No afirmar que Voyager 1 viaja a la velocidad de la luz; esa velocidad corresponde a la propagación de la señal.",
+    "No confundir señal portadora con recepción de datos científicos o de ingeniería.",
+    "El mapa representa los tres complejos DSN y no identifica cuál recibió la señal concreta del hito.",
+    "Las coordenadas de los complejos son localizadores cartográficos; los claims de red y comunicación se apoyan en NASA/JPL."
+  ]
+}
