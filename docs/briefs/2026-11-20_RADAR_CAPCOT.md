@@ -269,3 +269,32 @@ El DOI `10.1038/s41586-026-11155-6` **sí resolvió**: al seguir el enlace DOI d
 ### Corrección de rotación visual — 20-nov-2026 20:24 CDMX
 
 Se detectó que `papel_rasgado_capas` había sido usado el 14 y el 18 de noviembre, por lo que no era una elección suficientemente rotada para el 21. Se sustituyó en el storyboard por `dibujo_cientifico_scratchboard`, estilo del catálogo apropiado para paleontología; su último uso visible fue el 13-nov, fuera de la ventana 14–20 nov. Se actualizaron `estilo_id`, `visual_identity` y los ocho `image_prompt` con el `prompt_base` literal del catálogo. Narración, claims, fuentes, estructura `sabias_que` y cama `circuito_neural` no cambiaron.
+
+
+### Actualización de investigación y siguiente slot — run 12, 2026-11-20 22:06 CDMX
+
+#### Ingesta de tendencias
+
+Se intentó leer cada feed definido en `scripts/tendencias.py`. La lectura XML no produjo cuerpos utilizables en este entorno. Errores visibles exactos: ScienceDaily Top Science devolvió `(400) Unsupported content-type: application/xml`; Google Trends RSS México devolvió `URL https://trends.google.com/trending/rss?geo=MX is not accessible via this tool`. Para los demás feeds el lector no expuso un cuerpo ni un error individual legible; no se inventa un código HTTP.
+
+Respaldo oficial: la página HTML de Google Trends México mostró 173 tendencias activas; `volcán` aparecía con más de 5 mil búsquedas en 11 horas y `ola de frío` con más de 10 mil en 8 horas. Ninguna de esas tendencias constituye evidencia científica ni cambia la selección editorial.
+
+#### Cinco candidatos revisados
+
+1. **Voyager 1 a un día-luz** — NASA/JPL, 19-nov-2026. Hito del 18-nov: aproximadamente 25.9 mil millones de km; señal de ida ≈24 h y comunicación de ida y vuelta ≈48 h. La portadora seguía llegando; los datos científicos y de ingeniería no se recibían desde el 14-nov. Fuente primaria: https://www.jpl.nasa.gov/news/nasas-voyager-1-makes-history-reaching-one-light-day-from-earth/. **Seleccionado** para 22-nov 07:00.
+2. **CGMap: priorización de genes** — *Nature Machine Intelligence*, 16-nov-2026, DOI 10.1038/s42256-026-01327-4. El artículo reporta 12,022 genes analizados y 70 candidatos; FN1 y TTN se examinaron en líneas celulares. No equivale a 70 tratamientos ni a validación clínica. Reserva, no duplicar con la pieza seleccionada.
+3. **Metano de Fentale sin erupción** — *Nature Geoscience*, 19-nov-2026. Ya reservado para 21-nov 23:30; conserva PASS narrativo 90, pero su estructura `paradoja_mecanica` no pertenece al catálogo de rotación y el DOI sigue pendiente. No duplicar.
+4. **Homo erectus en selva tropical** — *Nature*, 18-nov-2026. Ya reservado para 21-nov 07:00; QA narrativo FAIL 83. No reescribir durante auditoría.
+5. **Púlsar gamma y retícula** — *Physical Review Letters*, 19-nov-2026. Ya reservado para 21-nov 17:00; QA narrativo FAIL 83. No reescribir durante auditoría.
+
+Descartes de búsqueda: el artículo “Bridging Roche Lobe Overflow…” está fechado el 3-jun-2026, no es reciente; el candidato de nanopartículas/Claudin-4 no se pudo verificar en la página primaria de ACS, por lo que permanece `PENDING_SOURCE`.
+
+#### Slot siguiente y borrador creado
+
+El 21-nov ya tiene cinco reservas: 07:00 Homo, 13:30 oxoboranos en main, 17:00 púlsar, 19:00 robot orbital preexistente en main y 23:30 Fentale. No añadir más para esa fecha.
+
+El 22-nov 07:00 está libre en `main/data/publicaciones.json` y en `feature/proyectos/`; la ventana matutina sigue activa. Es domingo, día no preferente, pero no está excluido por la política. Se dejó libre 23:30: el artículo de Voyager no sería noticia del mismo día ni cumpliría la ventana de 48 horas para `dato del día`.
+
+Creado y releído `proyectos/2026-11-22_voyager-1-un-dia-luz/storyboard.json`, commit `1450f262225e16d08ee4a98148441d0a0a4ca0a4`. Tiene 8 escenas, 180 palabras, 78 s de escenas + 6 s de cortinilla = 84 s; estilo `risografia`, estructura `mito_vs_dato` y cama `pizzicato`. El mapa sitúa los tres complejos DSN con coordenadas publicadas de Goldstone (35.4266667, -116.89), Madrid (40.42917, -4.24972) y Canberra (-35.40139, 148.98167); la red y su separación se apoyan en NASA/JPL y las páginas cartográficas se usan solo como localizadores. Observación, cálculo, inferencia y recomendación quedaron separados en `analisis`.
+
+La pieza permanece en `proyectos/`: sin `narrative_qa` (corresponde a auditoría posterior), sin `ESTADO_EJECUCION`, sin medios, sin assets, sin cola y sin programación. No se ejecutó el validador estructural oficial ni se promovió.
