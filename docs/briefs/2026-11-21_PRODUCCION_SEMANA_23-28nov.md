@@ -20,3 +20,11 @@ Reservas evergreen (no se suben): `RESERVA_huevo.mp4` (yema verde, PASS 76.0 s),
 - Ventanas: `politica_desde_2026-11-09` (06:30–07:30, 16:30–18:00); se rota 07:00/17:00.
 - Radar YT MX 21-nov: cuerpo humano, animales y cocina son las búsquedas «qué pasa dentro»/«sabías que» con más vistas; los más vistos propios de la semana fueron «Hera/DART», «agua que baila en el sartén» y «coral».
 - QA automático (`qa21.py`): duración 60–90 s, 1080x1920, audio, primer frame = portada, subtítulos completos (palabras SRT = narración), no abre con «¿Sabías que?», cierre con pregunta, fuentes ≥1.
+
+
+## Estado final programación (21-nov ~19:21 CDMX)
+YT (API, canal UCU2ZI-6pBJEr9aSFsF6bxLw): dom22 Salem 07:00 / Gutenberg 13:30 / Ada 17:00 (previos); lun23 nudillos tmOji99zGPE 07:00; mar24 pollo _YzBY4OfUeo 17:00; mié25 medusa W9g2tPZTpD4 07:00; jue26 plátano -1DRh_qj7Bg 17:00; vie27 microondas nd0rs6iVy8E 07:00; sáb28 mareo fcSNbU809ao 17:00. containsSyntheticMedia=true enviado; la API no lo devuelve al releer; Studio bloqueado por verificación Google → sin verificar.
+TikTok @datosyociosidades (selector en CDMX GMT-6 esta sesión, no NY): dom22 RESERVA huevo 13:00 (7710703730752015668); lun–sáb mismos 6 a las mismas horas CDMX; Everyone + etiqueta IA.
+Facebook página Datos y ociosidades: mismos 7 Reels mismas horas CDMX, público.
+Reserva restante: RESERVA_tardigrado.mp4 (no subida).
+
