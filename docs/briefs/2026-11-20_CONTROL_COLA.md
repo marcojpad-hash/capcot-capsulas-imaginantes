@@ -752,7 +752,7 @@ CodeQL terminó **SUCCESS** para los últimos tres commits de la revalidación: 
 - `2026-11-21_fentale-metano-sin-erupcion`: conserva PASS/90; no se repitió la revisión. Su estructura `paradoja_mecanica` no pertenece al conjunto admitido por `scripts/rotacion.py`; no se cambió durante auditoría.
 - `2026-11-21_homo-erectus-selva-tropical` y `2026-11-21_pulsar-gamma-reticulo`: conservan sus FAIL; no se reescribieron.
 - Lote 5–7-nov: los 12 IDs siguen con 2 PASS y 10 FAIL; los PASS existentes son Venus (88) y arena cantante (90). No se repitieron porque la narración no cambió desde el run 12. `inter-arboles-se-comunican` tiene 169 palabras, por debajo del mínimo estructural de 170.
-- La automatización Auditor CAPCOT conserva su último run como FAILED (20-nov 17:07 CDMX); el intento de `run_now` no creó un run nuevo. Esta pasada manual quedó registrada en el operador, separada de la redacción de Voyager.
+- La automatización Auditor CAPCOT conserva el run `08b1bde6-cd98-8329-a43d-ec5f2a37b8e9` como FAILED (20-nov 17:07 CDMX); el mensaje literal del resultado es `There was a problem with your scheduled task.` El intento posterior de `run_now` no creó un run nuevo. Esta pasada manual quedó registrada en el operador, separada de la redacción de Voyager.
 
 #### Cola, recepción y producción preexistente
 
