@@ -421,3 +421,12 @@ Recuento de la cohorte inventariada: **9 PASS / 16 FAIL**. Ningún FAIL se promo
 - La presencia de `GROK_WEBHOOK_URL` y `GROK_WEBHOOK_TOKEN` no pudo verificarse mediante la conexión GitHub disponible; no se declaran ausentes ni se exponen valores.
 
 No se dispararon workflows, no se enviaron payloads, no se generaron medios ni se modificaron publicaciones, permisos o secretos.
+
+
+## 20. Entradas anidadas históricas y estado de pruebas — 2026-11-21
+
+- `cola/entrada/2026-11-09_dato-robot-ensambla-orbita/` contiene storyboard, fuentes, instrucciones y estado histórico. Su `ESTADO_EJECUCION.md` ya declara `PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR`; main conserva YouTube `ZG4iQgmWrLI` programado 21-nov 19:00 CDMX. La carpeta `frames/` de feature contiene solo `.gitkeep`; el estado documenta medios no verificados. Se conserva sin mover ni redispatchar.
+- `cola/entrada/2026-11-11_dato-ratas-topo-damaraland/` contiene únicamente `frames/` con ocho PNG y `.gitkeep`; no tiene `storyboard.json`, `ESTADO_EJECUCION.md` ni estado Grok. Es un directorio heredado incompleto, no una entrada canónica plana y no dispatchable. Se conserva intacto; no se infiere recepción ni procesamiento.
+- `cola/bloqueados/README.md` confirma que el reingreso exige narrative_contract completo, revisión independiente en frío, PASS >=85 con siete checks y flags vacías, además del validador estructural. No se reingresó ningún paquete.
+- La suite `tests/test_registro_editorial.py` tiene 20 funciones `test_*` después del commit `e7e2fa36c57a8d799045aaf6f6d96a733e31f19e` (mensaje: snapshots diarios y clasificación de horarios). El archivo se releyó y el SHA actual es `b5908f4efb2713b4fd36ed97c8dd468c2e6f20b5`.
+- La rama feature tiene HEAD `c970deb951ec3dcee24d558b482bf40d13cf557b` después de esta bitácora. Para ese commit, la consulta de workflow runs y combined status devolvió listas vacías; **pytest y CI no se ejecutaron**. No declarar suite aprobada.
