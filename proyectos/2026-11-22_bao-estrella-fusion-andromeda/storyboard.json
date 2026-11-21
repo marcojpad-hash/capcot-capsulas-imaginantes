@@ -384,7 +384,8 @@
   "approved_assets": [],
   "risk_notes": [
     "La fusión es la interpretación del equipo a partir de observaciones multibanda y modelos; no presentarla como una grabación directa del instante.",
-    "El resultado corresponde a AT 2025abao; no generalizar esta ruta a todas las binarias."
+    "El resultado corresponde a AT 2025abao; no generalizar esta ruta a todas las binarias.",
+    "CONFLICTO_DE_SLOT_ENTRE_RAMAS: main/docs/briefs/2026-11-21_PRODUCCION_SEMANA_23-28nov.md registra Gutenberg el 2026-11-22 a las 13:30 CDMX; no promover ni redispatchar Bao en ese slot."
   ],
   "fecha_objetivo": "2026-11-22",
   "slot_local": "13:30",
