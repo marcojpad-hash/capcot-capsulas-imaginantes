@@ -680,3 +680,8 @@ El enlace DOI seguido desde PubMed resolvió y redirigió al artículo Nature co
 ### Corrección de estilo del nuevo borrador — 20-nov-2026 20:24 CDMX
 
 El estilo inicial `papel_rasgado_capas` se había usado el 14 y el 18-nov; no cumplía la rotación reciente. Se sustituyó por `dibujo_cientifico_scratchboard`, último uso visible 13-nov, y se releó el storyboard: raíz, `visual_identity` y las ocho escenas usan ahora ese `style_id` y el `prompt_base` literal del catálogo. La narración y las afirmaciones no cambiaron. Combinación vigente: `dibujo_cientifico_scratchboard` + `sabias_que` + `circuito_neural`.
+
+
+### CI final del run 11 — 20-nov-2026 20:23 CDMX
+
+CodeQL terminó **SUCCESS** para los últimos tres commits de la revalidación: storyboard/style `d381e473`, radar `435d3e43` y control `fb5359c8`. En los tres pasaron `Analyze (python)` y `Analyze (actions)`. Este resultado no ejecuta el validador de storyboard ni la compuerta DOI/Crossref y no crea narrative_qa.
