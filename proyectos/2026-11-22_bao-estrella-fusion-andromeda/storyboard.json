@@ -128,7 +128,8 @@
       "question_state": "Se observa una subida lenta de brillo; su causa sigue sin resolverse.",
       "reason_to_continue": "La ubicación y las masas de las estrellas permitirán entender la escala del sistema.",
       "new_information": "La señal es un cambio gradual, no un destello aislado.",
-      "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text Dos esferas estelares estilizadas, una gigante y otra pequeña, unidas por una órbita que se estrecha."
+      "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text Dos esferas estelares estilizadas, una gigante y otra pequeña, unidas por una órbita que se estrecha.",
+      "narration": "Bao llevaba años cambiando de brillo. La luz subía poco a poco, como si una estrella estuviera perdiendo velocidad dentro de otra."
     },
     {
       "id": "scene_002",
@@ -170,7 +171,8 @@
         "areas": [],
         "precision_note": "NASA publica RA 00:38:48.60 y Dec +40:46:08.23; los grados son conversión aritmética directa. Son coordenadas celestes, no latitud/longitud terrestre."
       },
-      "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text Carta celeste art déco de Andrómeda, un único punto preciso para AT 2025abao, sin constelaciones inventadas."
+      "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text Carta celeste art déco de Andrómeda, un único punto preciso para AT 2025abao, sin constelaciones inventadas.",
+      "narration": "Está en Andrómeda, a unos 2.5 millones de años luz. La gigante tenía cerca de siete masas solares; su compañera, apenas 0.7."
     },
     {
       "id": "scene_003",
@@ -204,7 +206,8 @@
         ],
         "limite": "Estimaciones para AT 2025abao; no son valores universales."
       },
-      "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text Dos discos estelares art déco con barras de masa proporcionales, sin etiquetas numéricas generadas."
+      "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text Dos discos estelares art déco con barras de masa proporcionales, sin etiquetas numéricas generadas.",
+      "narration": "Cuando la pequeña rozó la atmósfera de la gigante, el gas la frenó. Cada vuelta le quitaba energía orbital y la acercaba al centro."
     },
     {
       "id": "scene_004",
@@ -226,7 +229,8 @@
       "question_state": "La envoltura compartida puede quitar energía orbital y encoger la órbita.",
       "reason_to_continue": "La señal de brillo permitirá comprobar que el proceso dejó una huella temporal.",
       "new_information": "El arrastre del gas puede llevar a las estrellas a una fusión.",
-      "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text Una envoltura de gas estilizada rodea a dos estrellas; una órbita geométrica se contrae hacia el núcleo."
+      "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text Una envoltura de gas estilizada rodea a dos estrellas; una órbita geométrica se contrae hacia el núcleo.",
+      "narration": "La fase se llama envoltura común. Las dos estrellas comparten gas, y ese arrastre puede encoger la órbita hasta provocar una fusión."
     },
     {
       "id": "scene_005",
@@ -248,7 +252,8 @@
       "question_state": "La luz subió durante años; la secuencia apunta a una evolución gradual.",
       "reason_to_continue": "La observación infrarroja posterior permite examinar el material expulsado.",
       "new_information": "El brillo aumentó desde 2018 durante aproximadamente siete años.",
-      "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text Línea temporal geométrica 2018–2025 con una luminosidad que aumenta gradualmente; siete marcas regulares."
+      "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text Línea temporal geométrica 2018–2025 con una luminosidad que aumenta gradualmente; siete marcas regulares.",
+      "narration": "El brillo empezó a subir en 2018 y continuó unos siete años. Tras el contacto, la compañera completó apenas siete órbitas antes de desaparecer."
     },
     {
       "id": "scene_006",
@@ -281,7 +286,8 @@
         ],
         "limite": "Observación posterior del polvo; no es una imagen del instante de fusión."
       },
-      "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text Nube de polvo infrarroja estilizada alrededor de una pareja estelar, con luz tenue y sin representar el choque como una filmación."
+      "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text Nube de polvo infrarroja estilizada alrededor de una pareja estelar, con luz tenue y sin representar el choque como una filmación.",
+      "narration": "Webb observó el sistema 47 días después del pico. Su luz infrarroja reveló el polvo expulsado, una pista de lo que había ocurrido dentro."
     },
     {
       "id": "scene_007",
@@ -304,7 +310,8 @@
       "question_state": "La interpretación de fusión está apoyada por varias observaciones, no por una sola imagen.",
       "reason_to_continue": "Falta delimitar qué puede concluirse de un caso excepcional.",
       "new_information": "El equipo reconstruyó la fusión y estimó la masa expulsada durante la evolución de envoltura común.",
-      "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text Envoltura de polvo art déco expandiéndose alrededor del sistema, con un diagrama geométrico de energía sin cifras decorativas."
+      "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text Envoltura de polvo art déco expandiéndose alrededor del sistema, con un diagrama geométrico de energía sin cifras decorativas.",
+      "narration": "Con esos datos y observaciones de otros telescopios, el equipo reconstruyó la fusión y midió cuánta masa salió durante la evolución de envoltura común."
     },
     {
       "id": "scene_008",
