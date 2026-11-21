@@ -193,5 +193,108 @@ class RegistroEditorialTests(unittest.TestCase):
         )
 
 
+
+    def test_slot_occupancy_reports_project_target_slot(self):
+        self.write_json(
+            registro_editorial.ROOT / "proyectos" / "2026-11-21_nuevo" / "storyboard.json",
+            {
+                "project_id": "2026-11-21_nuevo",
+                "fecha_objetivo": "2026-11-21",
+                "slot_local": "17:00",
+                "title": "Tema nuevo",
+                "publicacion": {"status": "PENDIENTE_DECISION_GROK"},
+            },
+        )
+        result = registro_editorial.ocupacion_slots("2026-11-21")
+        self.assertEqual(len(result["ocupaciones"]), 1)
+        row = result["ocupaciones"][0]
+        self.assertEqual((row["fecha"], row["slot_local"]), ("2026-11-21", "17:00"))
+        self.assertEqual(row["estado_evidencia"], "PROPUESTA_EN_PROYECTOS")
+        self.assertEqual(result["conflictos"], [])
+
+    def test_slot_occupancy_converts_utc_publication_to_local_slot(self):
+        self.write_json(
+            registro_editorial.ROOT / "data" / "publicaciones.json",
+            [{
+                "fecha": "2026-11-21",
+                "project_id": "2026-11-21_publicado",
+                "publishAt_utc": "2026-11-21T19:30:00Z",
+                "hora_local": "2026-11-21 13:30 (America/Mexico_City)",
+                "yt_id": "video123",
+            }],
+        )
+        result = registro_editorial.ocupacion_slots("2026-11-21")
+        row = result["ocupaciones"][0]
+        self.assertEqual(row["slot_local"], "13:30")
+        self.assertEqual(row["estado_evidencia"], "PUBLICADO_O_ID_REGISTRADO")
+        self.assertEqual(row["video_id"], "video123")
+
+    def test_slot_occupancy_detects_cross_project_conflict(self):
+        self.write_json(
+            registro_editorial.ROOT / "data" / "publicaciones.json",
+            [{
+                "fecha": "2026-11-21",
+                "project_id": "2026-11-21_publicado",
+                "hora_local": "2026-11-21 13:30 (America/Mexico_City)",
+                "yt_id": "video123",
+            }],
+        )
+        self.write_json(
+            registro_editorial.ROOT / "proyectos" / "2026-11-21_borrador" / "storyboard.json",
+            {
+                "project_id": "2026-11-21_borrador",
+                "fecha_objetivo": "2026-11-21",
+                "slot_local": "13:30",
+            },
+        )
+        result = registro_editorial.ocupacion_slots("2026-11-21")
+        self.assertEqual(len(result["conflictos"]), 1)
+        self.assertEqual(
+            result["conflictos"][0]["project_ids"],
+            ["2026-11-21_borrador", "2026-11-21_publicado"],
+        )
+
+    def test_slot_occupancy_flags_inconsistent_slots_for_same_project(self):
+        self.write_json(
+            registro_editorial.ROOT / "data" / "publicaciones.json",
+            [{
+                "fecha": "2026-11-21",
+                "project_id": "2026-11-21_mismo",
+                "hora_local": "2026-11-21 13:30 (America/Mexico_City)",
+                "yt_id": "video123",
+            }],
+        )
+        self.write_json(
+            registro_editorial.ROOT / "proyectos" / "2026-11-21_mismo" / "programacion.json",
+            {
+                "project_id": "2026-11-21_mismo",
+                "publish_at": "2026-11-22T01:00:00Z",
+                "hora_cdmx": "19:00",
+                "estado": "programado_para_publicar",
+            },
+        )
+        result = registro_editorial.ocupacion_slots("2026-11-21")
+        self.assertEqual(len(result["discrepancias_por_project_id"]), 1)
+        self.assertEqual(
+            result["discrepancias_por_project_id"][0]["slots"],
+            [
+                {"fecha": "2026-11-21", "slot_local": "13:30"},
+                {"fecha": "2026-11-21", "slot_local": "19:00"},
+            ],
+        )
+
+    def test_slot_occupancy_keeps_blocked_evidence_without_counting_it_as_publication(self):
+        self.write_json(
+            registro_editorial.ROOT / "cola" / "bloqueados" / "2026-11-21_bloqueado" / "storyboard.json",
+            {
+                "project_id": "2026-11-21_bloqueado",
+                "fecha_objetivo": "2026-11-21",
+                "slot_local": "23:30",
+            },
+        )
+        result = registro_editorial.ocupacion_slots("2026-11-21")
+        self.assertEqual(result["ocupaciones"][0]["estado_evidencia"], "BLOQUEADO")
+        self.assertIsNone(result["ocupaciones"][0]["video_id"])
+
 if __name__ == "__main__":
     unittest.main()
