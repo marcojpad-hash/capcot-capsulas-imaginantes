@@ -338,7 +338,7 @@ Los feeds definidos en `scripts/tendencias.py` y Google Trends RSS México no en
 
 `data/*.json`, `cola/entrada/`, `cola/estado/`, workflows, secretos, permisos, main, publicaciones y medios permanecen sin cambios por este run. No se disparó el workflow de dispatch ni se envió payload a Grok.
 
-## 11. Corrección técnica de ocupación horaria — run operador, 2026-11-21
+## 16. Corrección técnica de ocupación horaria — run operador, 2026-11-21
 
 ### Cambios ejecutados y leídos de vuelta
 
