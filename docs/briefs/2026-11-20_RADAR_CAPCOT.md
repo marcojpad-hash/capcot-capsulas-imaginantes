@@ -265,3 +265,7 @@ La rotación del nuevo borrador usa `papel_rasgado_capas`, estructura `sabias_qu
 ### Corrección de verificación — 20-nov-2026 20:22 CDMX
 
 El DOI `10.1038/s41586-026-11155-6` **sí resolvió**: al seguir el enlace DOI desde el registro PubMed, el resolvedor redirigió al artículo Nature correcto. El contenido final de Nature no pudo abrirse por redirección a autorización, pero el registro PubMed muestra DOI, fecha 18-nov-2026 y abstract; el resultado indexado del artículo Nature expone los detalles de métodos y resultados. Crossref REST siguió sin estar accesible. Se actualizó el storyboard: `doi_verification_status=VERIFICADO_RESOLVEDOR`. Esto cierra la compuerta DOI, pero no la revisión narrativa independiente ni el validador estructural oficial; la pieza sigue en proyectos y no se promueve.
+
+### Corrección de rotación visual — 20-nov-2026 20:24 CDMX
+
+Se detectó que `papel_rasgado_capas` había sido usado el 14 y el 18 de noviembre, por lo que no era una elección suficientemente rotada para el 21. Se sustituyó en el storyboard por `dibujo_cientifico_scratchboard`, estilo del catálogo apropiado para paleontología; su último uso visible fue el 13-nov, fuera de la ventana 14–20 nov. Se actualizaron `estilo_id`, `visual_identity` y los ocho `image_prompt` con el `prompt_base` literal del catálogo. Narración, claims, fuentes, estructura `sabias_que` y cama `circuito_neural` no cambiaron.
