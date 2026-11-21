@@ -388,5 +388,25 @@
     "No convertir la inferencia de movilidad basada en estroncio en una ruta o migración confirmada.",
     "El punto del mapa localiza Chongzuo como referencia urbana, no las cuevas; no inventar coordenadas de Naxian o Baxian.",
     "No reconstruir rostros, vestimenta, herramientas ni conductas humanas no documentadas."
-  ]
+  ],
+  "narrative_qa": {
+    "status": "FAIL",
+    "score": 83,
+    "review_basis": "lectura_en_frio_solo_narracion",
+    "reviewer_role": "auditor_capcot_independiente",
+    "reviewed_at": "2026-11-20T22:06:10-06:00",
+    "checks": {
+      "pregunta_central_reconstruible": true,
+      "apertura_in_medias_res": true,
+      "progresion_por_escena": true,
+      "transiciones_causales": true,
+      "giro_cientifico_explicado": false,
+      "limite_evidencia_explicito": true,
+      "payoff_cierre_apertura": true
+    },
+    "critical_flags": [
+      "GIRO_CIENTIFICO_NOMBRADO_PERO_NO_EXPLICADO"
+    ],
+    "reviewer_notes": "Lectura en frío realizada solo sobre la narración concatenada. La pregunta sobre la presencia de Homo erectus en una selva tropical se reconstruye y la secuencia hallazgos→datación→ambiente→movilidad→límite mantiene continuidad. El giro queda respaldado por fauna e isótopos de carbono, pero no se explica cómo el patrón isotópico permite inferir un dosel cerrado; se nombra la señal sin exponer el mecanismo de interpretación. No se modificaron narración ni claims."
+  }
 }
