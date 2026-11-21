@@ -245,3 +245,15 @@ No se encontró un cambio técnico nuevo que justifique actualizar docs/INVESTIG
 - QA nuevo, promoción, cola, medios, publicación y programación: no ejecutados.
 - data/*.json, main, workflows, motores y Motor U6: sin modificaciones.
 - Créditos: no consumidos.
+
+
+## 4. Corrección posterior de ocupación de slot — 2026-11-21
+
+La comprobación inicial del lead “Subsurface marine heat surge” solo encontró libre el 22-nov 13:30 en `main/data/publicaciones.json`. Una relectura posterior del documento de programación `main/docs/briefs/2026-11-21_PRODUCCION_SEMANA_23-28nov.md` muestra **Gutenberg programado el domingo 22-nov a las 13:30 CDMX**. La consulta de publicaciones JSON no era suficiente para declarar el slot libre.
+
+- Estado corregido del lead para 22-nov 13:30: **NO_DUPLICAR / SLOT_OCUPADO_EN_MAIN**.
+- No crear storyboard ni promover ese lead.
+- El proyecto distinto `2026-11-23_tropical-biodiversity-turnover` apunta a 23-nov 13:30; esa hora no coincide con los slots listados en el plan semanal (23-nov 07:00 nudillos). Sigue sujeto a sus propias compuertas de QA y fuente.
+- El storyboard Bao de 22-nov 13:30 queda marcado `CONFLICTO_DE_SLOT_ENTRE_RAMAS` en `risk_notes`.
+
+Esta corrección no modifica `data/*.json`, publicaciones, horarios ni decisiones editoriales.
