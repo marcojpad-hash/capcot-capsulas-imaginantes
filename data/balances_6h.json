@@ -3191,5 +3191,125 @@
    ]
   ],
   "nota_flujo": "Corte vs 17-nov 13:58 CDMX (~24 h; la rutina corre una vez al día ~14:00). YT 36,696→37,514 (+818 vistas), likes 1,139→1,163 (+24), comentarios 28→28 (+0), subs 93→97 (+4). 86→91 Shorts públicos (+5: El mosquito que escucha -fDL2pBjH30 a las 2026-11-18 13:30 CDMX (0 vistas, 0 likes); ¿Por qué tenemos hipo? 41PYjWbQuJo a las 2026-11-18 07:00 CDMX (0 vistas, 0 likes); ¿La IA nos va a matar? La advertencia de un directivo de OpenAI Vx8EhL4ib7I a las 2026-11-17 23:30 CDMX (1 vistas, 0 likes); El riesgo que queda después del colesterol 25mWYJVOPLk a las 2026-11-17 19:00 CDMX (32 vistas, 1 likes); Mito o verdad: ¿Los vikingos usaban cascos con cuernos? ThbHry-YC-w a las 2026-11-17 17:00 CDMX (73 vistas, 1 likes)). Lo empujan TT El riesgo que queda después del colesterol Contenido ilustra 7708224821372423425 nuevo 672 (5 likes); TT El vikingo de tu disfraz nunca existió? El casco vikingo rea 7709267794973445428 nuevo 646 (17 likes); TT ¿La inteligencia artificial nos va a matar? Paul Christiano, 7709267841710689588 nuevo 629 (6 likes). En YT se estancó se fugo la ia jeUrM5zzkdA (sigue en 0); La corneja decide en 235 milisegundos wxnhEdlJYwU (sigue en 0); ¿Por qué tenemos hipo? Rg-iTgMExWw (sigue en 1). El nuevo El mosquito que escucha -fDL2pBjH30 va en 0 vista(s). El nuevo ¿Por qué tenemos hipo? 41PYjWbQuJo va en 0 vista(s). El nuevo ¿La IA nos va a matar? La advertencia de un directivo de OpenAI Vx8EhL4ib7I va en 1 vista(s). TT (yt-dlp, listado público @datosyociosidades): 86→91 videos (+5), 26,126→29,550 vistas (+3,424), 1,000→1,033 likes (+33), comentarios 6→6. En TT lo mueven TT El riesgo que queda después del colesterol Contenido ilustra nuevo 672, TT El vikingo de tu disfraz nunca existió? El casco vikingo rea nuevo 646, TT ¿La inteligencia artificial nos va a matar? Paul Christiano, nuevo 629, TT Estás en plena clase, todo en silencio, y de pronto: ¡hic! ¿ nuevo 465, TT El sarampión volvió a México después de treinta años. Desde  nuevo 333. Seguidores de TT no se pudieron leer. Fuente YT: YouTube Data API v3 OAuth ~/.capcot/token.json."
+ },
+ {
+  "hora_cdmx": "2026-11-21T13:54-06:00",
+  "base_youtube": "2026-11-18T13:56",
+  "base_tiktok": "2026-11-18T13:56",
+  "youtube_totales": {
+   "view": 38138,
+   "like": 1180,
+   "comment": 28
+  },
+  "suscriptores": 97,
+  "shorts_publicos": 100,
+  "delta_youtube": {
+   "view": 624,
+   "like": 17,
+   "comment": 0,
+   "suscriptores": 0,
+   "horas_desde_base": 72.0,
+   "nota": "Δ de ~72.0 h vs el corte 18-nov 13:56 CDMX (último snapshot en vistas_historico/balances_6h; no hubo corte 6h registrado el 19-nov, el 20-nov ni a las 08:00 de hoy). 91→100 Shorts públicos (+10). Fuente: YouTube Data API v3 OAuth ~/.capcot/token.json (youtube.readonly; canal Datos y ociosidades UCU2ZI-6pBJEr9aSFsF6bxLw). La playlist de uploads no trajo 5 Shorts que siguen públicos (knAElNo4raI, maLtsoQpxwI, V4h28RA8bq0, nY2UqhKmAKQ, 3RdSX40OCac) y se sumaron con videos.list. Nuevos: Químicos aislan oxoboranos estables tras 60 años K4qNkx2f4RI a las 2026-11-21 13:30 CDMX (0 vistas, 0 likes); El tejón que se burló del zoológico 6XCBYrlO4Eg a las 2026-11-21 07:00 CDMX (192 vistas, 9 likes); La erupción invisible que liberó una nube de metano Eldk0fVWqpo a las 2026-11-20 23:30 CDMX (21 vistas, 0 likes); IA encuentra materiales 2D olvidados WTlFSZV9HYg a las 2026-11-20 13:30 CDMX (16 vistas, 0 likes); El rosa del flamenco viene de su comida msWV2AXr6Uk a las 2026-11-20 07:00 CDMX (53 vistas, 0 likes); ADN que apaga el gen del cáncer zyTl_cVGN6E a las 2026-11-19 19:00 CDMX (9 vistas, 2 likes); Juno revela el choque invisible de Júpiter vj5RZDt-dfc a las 2026-11-19 13:30 CDMX (13 vistas, 1 likes); La corneja decide en 235 milisegundos AxgWdhqPhRI a las 2026-11-19 07:00 CDMX (5 vistas, 0 likes); Hielo sucio alrededor de Beta Pictoris 2a36r5QOvi4 a las 2026-11-18 23:30 CDMX (16 vistas, 1 likes); Virus y bacterias colapsan el bloom NKDhKlY1rVI a las 2026-11-18 19:00 CDMX (14 vistas, 1 likes). Ya no aparecen en públicos: El mosquito que escucha -fDL2pBjH30 (private, 89 vistas)."
+  },
+  "tiktok_totales": {
+   "view": 34842,
+   "like": 1078,
+   "comment": 6
+  },
+  "seguidores_tiktok": null,
+  "likes_perfil_tiktok": null,
+  "videos_tiktok": 100,
+  "delta_tiktok": {
+   "view": 5292,
+   "like": 45,
+   "comment": 0,
+   "seguidores": null,
+   "likes_perfil": null,
+   "videos": 9,
+   "nota": "Δ vs 18-nov 13:56 (~72.0 h): 29550→34842 vistas (+5292), 1033→1078 likes (+45), comentarios 6→6, 91→100 videos (+9). Fuente: yt-dlp, listado público @datosyociosidades. Nuevos en el listado: Químicos aislan oxoboranos estables tras 60 años C 7708179212145872134 (3 vistas, 0 likes); El pulpo reparte el trabajo entre tres corazones.  7709254344046103829 (274 vistas, 0 likes); IA encuentra materiales 2D olvidados Contenido ilu 7708179422020406580 (612 vistas, 4 likes); Juno cruzó dos veces una frontera invisible frente 7709253948179320116 (647 vistas, 11 likes); ADN que apaga el gen del cáncer Contenido ilustrad 7708225104324447489 (648 vistas, 10 likes); Juno revela el choque invisible de Júpiter Conteni 7708177724325645574 (638 vistas, 3 likes); El polvo de África no viaja solo 🌍 Una nube cruzó  7709252552855915828 (626 vistas, 6 likes); ¿Un hielo más viejo que la estrella que lo rodea?  7709730950149655860 (619 vistas, 4 likes); Virus y bacterias colapsan el bloom Contenido ilus 7708225403294338356 (618 vistas, 3 likes). Seguidores no se pudieron leer."
+  },
+  "ranking_crecimiento": [
+   [
+    "TT ADN que apaga el gen del cáncer Contenido ilustrado con IA.",
+    648
+   ],
+   [
+    "TT Juno cruzó dos veces una frontera invisible frente a Júpiter",
+    647
+   ],
+   [
+    "TT Juno revela el choque invisible de Júpiter Contenido ilustra",
+    638
+   ],
+   [
+    "TT El polvo de África no viaja solo 🌍 Una nube cruzó el océano ",
+    626
+   ],
+   [
+    "TT ¿Un hielo más viejo que la estrella que lo rodea? Hielo suci",
+    619
+   ],
+   [
+    "TT Virus y bacterias colapsan el bloom Contenido ilustrado con ",
+    618
+   ],
+   [
+    "TT IA encuentra materiales 2D olvidados Contenido ilustrado con",
+    612
+   ],
+   [
+    "TT El sarampión volvió a México después de treinta años. Desde ",
+    321
+   ],
+   [
+    "TT El pulpo reparte el trabajo entre tres corazones. Tu pulso v",
+    274
+   ],
+   [
+    "TT Estás en plena clase, todo en silencio, y de pronto: ¡hic! ¿",
+    212
+   ],
+   [
+    "YT El tejón que se burló del zoológico",
+    192
+   ],
+   [
+    "YT El rosa del flamenco viene de su comida",
+    53
+   ],
+   [
+    "YT ¿La IA nos va a matar? La advertencia de un directivo de OpenAI",
+    37
+   ],
+   [
+    "YT Plástico con enzimas que se deshace en el mar profundo",
+    22
+   ],
+   [
+    "YT La erupción invisible que liberó una nube de metano",
+    21
+   ],
+   [
+    "YT El hongo que hace ver gente diminuta",
+    19
+   ],
+   [
+    "TT ¿Se va la luz el 17 de noviembre por una IA que se escapó? E",
+    19
+   ],
+   [
+    "YT Mito o verdad: ¿Los vikingos usaban cascos con cuernos?",
+    18
+   ],
+   [
+    "YT IA encuentra materiales 2D olvidados",
+    16
+   ],
+   [
+    "YT Hielo sucio alrededor de Beta Pictoris",
+    16
+   ]
+  ],
+  "nota_flujo": "Corte vs 18-nov 13:56 CDMX (~72.0 h; último registro 18-nov 13:56, sin snapshots 6h intermedios). YT 37,514→38,138 (+624 vistas), likes 1,163→1,180 (+17), comentarios 28→28 (+0), subs 97→97 (+0). 91→100 Shorts públicos (+10: Químicos aislan oxoboranos estables tras 60 años K4qNkx2f4RI a las 2026-11-21 13:30 CDMX (0 vistas, 0 likes); El tejón que se burló del zoológico 6XCBYrlO4Eg a las 2026-11-21 07:00 CDMX (192 vistas, 9 likes); La erupción invisible que liberó una nube de metano Eldk0fVWqpo a las 2026-11-20 23:30 CDMX (21 vistas, 0 likes); IA encuentra materiales 2D olvidados WTlFSZV9HYg a las 2026-11-20 13:30 CDMX (16 vistas, 0 likes); El rosa del flamenco viene de su comida msWV2AXr6Uk a las 2026-11-20 07:00 CDMX (53 vistas, 0 likes); ADN que apaga el gen del cáncer zyTl_cVGN6E a las 2026-11-19 19:00 CDMX (9 vistas, 2 likes); Juno revela el choque invisible de Júpiter vj5RZDt-dfc a las 2026-11-19 13:30 CDMX (13 vistas, 1 likes); La corneja decide en 235 milisegundos AxgWdhqPhRI a las 2026-11-19 07:00 CDMX (5 vistas, 0 likes); Hielo sucio alrededor de Beta Pictoris 2a36r5QOvi4 a las 2026-11-18 23:30 CDMX (16 vistas, 1 likes); Virus y bacterias colapsan el bloom NKDhKlY1rVI a las 2026-11-18 19:00 CDMX (14 vistas, 1 likes)). Lo empujan TT ADN que apaga el gen del cáncer Contenido ilustrado con IA. 7708225104324447489 nuevo 648 (10 likes); TT Juno cruzó dos veces una frontera invisible frente a Júpiter 7709253948179320116 nuevo 647 (11 likes); TT Juno revela el choque invisible de Júpiter Contenido ilustra 7708177724325645574 nuevo 638 (3 likes). En YT se estancó ¿Por qué tenemos hipo? 41PYjWbQuJo (sigue en 0); se fugo la ia jeUrM5zzkdA (sigue en 0); ¿Por qué tenemos hipo? Rg-iTgMExWw (sigue en 1). El nuevo Químicos aislan oxoboranos estables tras 60 años K4qNkx2f4RI va en 0 vista(s). El nuevo La corneja decide en 235 milisegundos AxgWdhqPhRI va en 5 vista(s). TT (yt-dlp, listado público @datosyociosidades): 91→100 videos (+9), 29,550→34,842 vistas (+5,292), 1,033→1,078 likes (+45), comentarios 6→6. En TT lo mueven TT ADN que apaga el gen del cáncer Contenido ilustrado con IA. nuevo 648, TT Juno cruzó dos veces una frontera invisible frente a Júpiter nuevo 647, TT Juno revela el choque invisible de Júpiter Contenido ilustra nuevo 638, TT El polvo de África no viaja solo 🌍 Una nube cruzó el océano  nuevo 626, TT ¿Un hielo más viejo que la estrella que lo rodea? Hielo suci nuevo 619. Seguidores de TT no se pudieron leer. Fuente YT: YouTube Data API v3 OAuth ~/.capcot/token.json."
  }
 ]
