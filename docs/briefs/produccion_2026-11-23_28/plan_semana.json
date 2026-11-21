@@ -1,0 +1,518 @@
+{
+ "semana": "2026-11-23 a 2026-11-28",
+ "generado": "2026-11-21 (CDMX)",
+ "canal": "Datos y ociosidades UCU2ZI-6pBJEr9aSFsF6bxLw",
+ "notas": [
+  "Guiones del lote 14-nov no publicados (render falló por TTS) reutilizados; cierres tipo encuesta reescritos (nudillos, pollo, mareo, huevo). Tardígrado nuevo.",
+  "Ventanas data/horarios.json politica_desde_2026-11-09: 06:30-07:30 y 16:30-18:00; se rota 07:00/17:00.",
+  "TikTok/FB: los programa Mj con el navegador (mismas horas que YT)."
+ ],
+ "capsulas": [
+  {
+   "tema": "nudillos",
+   "tipo": "programada",
+   "fecha": "2026-11-23",
+   "hora_cdmx": "07:00",
+   "titulo": "¿Qué pasa dentro cuando truenas los dedos?",
+   "titulo_yt": "¿Qué pasa dentro cuando truenas los dedos? #Shorts",
+   "portada": "¿QUÉ PASA CUANDO TRUENAS LOS DEDOS?",
+   "caption_tiktok_fb": "¿Qué pasa dentro cuando truenas los dedos?\nEn 2015, una resonancia magnética en tiempo real mostró que el crac de los nudillos se asocia a una cavidad que se forma en la articulación, no a una burbuja que revienta.\nImágenes y voz generadas con IA.\n#curiosidades #ciencia #datosinteresantes #shorts #cuerpohumano",
+   "mp4": "/workspace/capcot_prod_20261121/final/20261123_0700_nudillos.mp4",
+   "portada_jpg": "/workspace/capcot_prod_20261121/nudillos/portada.jpg",
+   "duracion_s": 77.5,
+   "qa": "PASS",
+   "qa_checks": {
+    "duracion_60_90": [
+     true,
+     77.5
+    ],
+    "vertical_1080x1920": [
+     true,
+     "1080x1920"
+    ],
+    "audio": [
+     true,
+     ""
+    ],
+    "primer_frame_es_portada": [
+     true,
+     1.2
+    ],
+    "subtitulos": [
+     true,
+     74
+    ],
+    "no_abre_sabias_que": [
+     true,
+     "Jalas un dedo, suena un crac y la articu"
+    ],
+    "cierre_pregunta": [
+     true,
+     ""
+    ],
+    "fuentes": [
+     true,
+     2
+    ]
+   },
+   "yt_videoId": null,
+   "yt_estado": null,
+   "fuentes": [
+    {
+     "cita": "Kawchuk G. N. et al. (2015). Real-Time Visualization of Joint Cavitation. PLOS ONE 10(4): e0119470.",
+     "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0119470",
+     "doi": "10.1371/journal.pone.0119470"
+    },
+    {
+     "cita": "deWeber K., Olszewski M., Ortolano R. (2011). Knuckle cracking and hand osteoarthritis. J Am Board Fam Med 24(2): 169-174.",
+     "url": "https://www.jabfm.org/content/24/2/169",
+     "doi": "10.3122/jabfm.2011.02.100156"
+    }
+   ]
+  },
+  {
+   "tema": "pollo",
+   "tipo": "programada",
+   "fecha": "2026-11-24",
+   "hora_cdmx": "17:00",
+   "titulo": "¿Lavas el pollo crudo? Mejor no",
+   "titulo_yt": "¿Lavas el pollo crudo? Mejor no #Shorts",
+   "portada": "¿LAVAS EL POLLO CRUDO? MEJOR NO",
+   "caption_tiktok_fb": "¿Lavas el pollo crudo? Mejor no\nEn un estudio del USDA con 300 personas, 26 % de quienes lavaron el pollo crudo pasaron bacterias a la lechuga de su ensalada.\nImágenes y voz generadas con IA.\n#curiosidades #ciencia #datosinteresantes #shorts #cocina",
+   "mp4": "/workspace/capcot_prod_20261121/final/20261124_1700_pollo.mp4",
+   "portada_jpg": "/workspace/capcot_prod_20261121/pollo/portada.jpg",
+   "duracion_s": 76.5,
+   "qa": "PASS",
+   "qa_checks": {
+    "duracion_60_90": [
+     true,
+     76.5
+    ],
+    "vertical_1080x1920": [
+     true,
+     "1080x1920"
+    ],
+    "audio": [
+     true,
+     ""
+    ],
+    "primer_frame_es_portada": [
+     true,
+     1.1
+    ],
+    "subtitulos": [
+     true,
+     73
+    ],
+    "no_abre_sabias_que": [
+     true,
+     "Pones el pollo crudo bajo el chorro y si"
+    ],
+    "cierre_pregunta": [
+     true,
+     ""
+    ],
+    "fuentes": [
+     true,
+     2
+    ]
+   },
+   "yt_videoId": null,
+   "yt_estado": null,
+   "fuentes": [
+    {
+     "cita": "USDA (20 ago 2019). Washing Raw Poultry: Our Science, Your Choice (comunicado).",
+     "url": "https://www.usda.gov/about-usda/news/press-releases/2019/08/20/washing-raw-poultry-our-science-your-choice",
+     "doi": null
+    },
+    {
+     "cita": "RTI International / NC State para USDA FSIS (2019). Food Safety Consumer Research Project: Meal Preparation Experiment, Year 2 Final Report.",
+     "url": "https://www.fsis.usda.gov/sites/default/files/media_file/2021-02/FSCRP_Year%2B2_Final_Aug2019.pdf",
+     "doi": null
+    }
+   ]
+  },
+  {
+   "tema": "medusa",
+   "tipo": "programada",
+   "fecha": "2026-11-25",
+   "hora_cdmx": "07:00",
+   "titulo": "Esta medusa vuelve a ser joven",
+   "titulo_yt": "Esta medusa vuelve a ser joven #Shorts",
+   "portada": "ESTA MEDUSA VUELVE A SER JOVEN",
+   "caption_tiktok_fb": "Esta medusa vuelve a ser joven\nLa medusa Turritopsis dohrnii mide 4-5 mm y, ante estrés o heridas, puede volver a su etapa de pólipo y empezar su vida otra vez.\nImágenes y voz generadas con IA.\n#curiosidades #ciencia #datosinteresantes #shorts #animales",
+   "mp4": "/workspace/capcot_prod_20261121/final/20261125_0700_medusa.mp4",
+   "portada_jpg": "/workspace/capcot_prod_20261121/medusa/portada.jpg",
+   "duracion_s": 76.1,
+   "qa": "PASS",
+   "qa_checks": {
+    "duracion_60_90": [
+     true,
+     76.1
+    ],
+    "vertical_1080x1920": [
+     true,
+     "1080x1920"
+    ],
+    "audio": [
+     true,
+     ""
+    ],
+    "primer_frame_es_portada": [
+     true,
+     1.3
+    ],
+    "subtitulos": [
+     true,
+     77
+    ],
+    "no_abre_sabias_que": [
+     true,
+     "Una medusa diminuta acaba de encogerse h"
+    ],
+    "cierre_pregunta": [
+     true,
+     ""
+    ],
+    "fuentes": [
+     true,
+     4
+    ]
+   },
+   "yt_videoId": null,
+   "yt_estado": null,
+   "fuentes": [
+    {
+     "cita": "Pascual-Torner M. et al. (2022). Comparative genomics of mortal and immortal cnidarians unveils novel keys behind rejuvenation. PNAS 119(36): e2118763119.",
+     "url": "https://www.pnas.org/doi/10.1073/pnas.2118763119",
+     "doi": "10.1073/pnas.2118763119"
+    },
+    {
+     "cita": "Institut de Ciències del Mar (ICM-CSIC). The immortal jellyfish: a tiny creature with infinite power.",
+     "url": "https://www.icm.csic.es/en/news/immortal-jellyfish-tiny-creature-infinite-power",
+     "doi": null
+    },
+    {
+     "cita": "Universidad de Oviedo (2022). Medusa inmortal: descifran su genoma.",
+     "url": "https://www.uniovi.es/actualidad/noticias/-/asset_publisher/Ru0cAJNPrm1m/content/id/1421525",
+     "doi": null
+    },
+    {
+     "cita": "Le Page M. (2022). Immortal jellyfish genes identified that may explain their long lives. New Scientist.",
+     "url": "https://www.newscientist.com/article/2335495-immortal-jellyfish-genes-identified-that-may-explain-their-long-lives/",
+     "doi": null
+    }
+   ]
+  },
+  {
+   "tema": "platano",
+   "tipo": "programada",
+   "fecha": "2026-11-26",
+   "hora_cdmx": "17:00",
+   "titulo": "¿Sabías que el plátano es una baya y la fresa no?",
+   "titulo_yt": "¿Sabías que el plátano es una baya y la fresa no? #Shorts",
+   "portada": "EL PLÁTANO ES BAYA; LA FRESA NO",
+   "caption_tiktok_fb": "¿Sabías que el plátano es una baya y la fresa no?\nPara la botánica, el plátano es una baya y la fresa no: es un fruto agregado y sus «semillitas» son aquenios.\nImágenes y voz generadas con IA.\n#curiosidades #ciencia #datosinteresantes #shorts #plantas",
+   "mp4": "/workspace/capcot_prod_20261121/final/20261126_1700_platano.mp4",
+   "portada_jpg": "/workspace/capcot_prod_20261121/platano/portada.jpg",
+   "duracion_s": 77.3,
+   "qa": "PASS",
+   "qa_checks": {
+    "duracion_60_90": [
+     true,
+     77.3
+    ],
+    "vertical_1080x1920": [
+     true,
+     "1080x1920"
+    ],
+    "audio": [
+     true,
+     ""
+    ],
+    "primer_frame_es_portada": [
+     true,
+     1.1
+    ],
+    "subtitulos": [
+     true,
+     77
+    ],
+    "no_abre_sabias_que": [
+     true,
+     "Para la botánica, el plátano de tu desay"
+    ],
+    "cierre_pregunta": [
+     true,
+     ""
+    ],
+    "fuentes": [
+     true,
+     2
+    ]
+   },
+   "yt_videoId": null,
+   "yt_estado": null,
+   "fuentes": [
+    {
+     "cita": "Geggel L. (act. 2024). Why are bananas berries but strawberries aren’t? Live Science (con J. Jernstedt, UC Davis, y C. Weber, Cornell).",
+     "url": "https://www.livescience.com/57477-why-are-bananas-considered-berries.html",
+     "doi": null
+    },
+    {
+     "cita": "University of Minnesota. The Science of Plants, 8.1 Fruit Morphology.",
+     "url": "https://open.lib.umn.edu/horticulture/chapter/8-1-fruit-morphology/",
+     "doi": null
+    }
+   ]
+  },
+  {
+   "tema": "microondas",
+   "tipo": "programada",
+   "fecha": "2026-11-27",
+   "hora_cdmx": "07:00",
+   "titulo": "¿El microondas calienta de adentro hacia afuera?",
+   "titulo_yt": "¿El microondas calienta de adentro hacia afuera? #Shorts",
+   "portada": "¿EL MICRO CALIENTA DE ADENTRO?",
+   "caption_tiktok_fb": "¿El microondas calienta de adentro hacia afuera?\nLas microondas solo penetran de 2.5 a 3.8 cm en la comida; el centro se calienta después, por conducción. Revuelve y deja reposar.\nImágenes y voz generadas con IA.\n#curiosidades #ciencia #datosinteresantes #shorts #tipsdecocina",
+   "mp4": "/workspace/capcot_prod_20261121/final/20261127_0700_microondas.mp4",
+   "portada_jpg": "/workspace/capcot_prod_20261121/microondas/portada.jpg",
+   "duracion_s": 77.0,
+   "qa": "PASS",
+   "qa_checks": {
+    "duracion_60_90": [
+     true,
+     77.0
+    ],
+    "vertical_1080x1920": [
+     true,
+     "1080x1920"
+    ],
+    "audio": [
+     true,
+     ""
+    ],
+    "primer_frame_es_portada": [
+     true,
+     1.3
+    ],
+    "subtitulos": [
+     true,
+     73
+    ],
+    "no_abre_sabias_que": [
+     true,
+     "Sacaste el plato del microondas: la oril"
+    ],
+    "cierre_pregunta": [
+     true,
+     ""
+    ],
+    "fuentes": [
+     true,
+     2
+    ]
+   },
+   "yt_videoId": null,
+   "yt_estado": null,
+   "fuentes": [
+    {
+     "cita": "USDA Food Safety and Inspection Service. Cooking with Microwave Ovens.",
+     "url": "https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/cooking-microwave-ovens",
+     "doi": null
+    },
+    {
+     "cita": "Centre for Food Safety, Hong Kong. Microwave Cooking and Food Safety.",
+     "url": "https://www.cfs.gov.hk/english/multimedia/multimedia_pub/multimedia_pub_fsf_43_02.html",
+     "doi": null
+    }
+   ]
+  },
+  {
+   "tema": "mareo",
+   "tipo": "programada",
+   "fecha": "2026-11-28",
+   "hora_cdmx": "17:00",
+   "titulo": "¿Por qué te mareas en el coche?",
+   "titulo_yt": "¿Por qué te mareas en el coche? #Shorts",
+   "portada": "¿POR QUÉ TE MAREAS EN EL COCHE?",
+   "caption_tiktok_fb": "¿Por qué te mareas en el coche?\nEl mareo en el coche aparece cuando tu oído interno siente movimiento y tus ojos le dicen al cerebro que estás quieto.\nImágenes y voz generadas con IA.\n#curiosidades #ciencia #datosinteresantes #shorts #cuerpohumano",
+   "mp4": "/workspace/capcot_prod_20261121/final/20261128_1700_mareo.mp4",
+   "portada_jpg": "/workspace/capcot_prod_20261121/mareo/portada.jpg",
+   "duracion_s": 79.8,
+   "qa": "PASS",
+   "qa_checks": {
+    "duracion_60_90": [
+     true,
+     79.8
+    ],
+    "vertical_1080x1920": [
+     true,
+     "1080x1920"
+    ],
+    "audio": [
+     true,
+     ""
+    ],
+    "primer_frame_es_portada": [
+     true,
+     1.2
+    ],
+    "subtitulos": [
+     true,
+     76
+    ],
+    "no_abre_sabias_que": [
+     true,
+     "Vas en el asiento de atrás, viendo el ce"
+    ],
+    "cierre_pregunta": [
+     true,
+     ""
+    ],
+    "fuentes": [
+     true,
+     1
+    ]
+   },
+   "yt_videoId": null,
+   "yt_estado": null,
+   "fuentes": [
+    {
+     "cita": "Golding J. F. (2025). Motion Sickness. CDC Yellow Book 2026: Health Information for International Travel.",
+     "url": "https://www.cdc.gov/yellow-book/hcp/travel-air-sea/motion-sickness.html",
+     "doi": null
+    }
+   ]
+  },
+  {
+   "tema": "huevo",
+   "tipo": "reserva",
+   "fecha": null,
+   "hora_cdmx": null,
+   "titulo": "¿Por qué se pone verde la yema del huevo duro?",
+   "titulo_yt": "¿Por qué se pone verde la yema del huevo duro? #Shorts",
+   "portada": "¿POR QUÉ SE PONE VERDE LA YEMA?",
+   "caption_tiktok_fb": "¿Por qué se pone verde la yema del huevo duro?\nEl anillo verde de la yema es sulfuro ferroso: azufre de la clara + hierro de la yema cuando el huevo se cuece de más. No es dañino.\nImágenes y voz generadas con IA.\n#curiosidades #ciencia #datosinteresantes #shorts #cocina",
+   "mp4": "/workspace/capcot_prod_20261121/final/RESERVA_huevo.mp4",
+   "portada_jpg": "/workspace/capcot_prod_20261121/huevo/portada.jpg",
+   "duracion_s": 76.0,
+   "qa": "PASS",
+   "qa_checks": {
+    "duracion_60_90": [
+     true,
+     76.0
+    ],
+    "vertical_1080x1920": [
+     true,
+     "1080x1920"
+    ],
+    "audio": [
+     true,
+     ""
+    ],
+    "primer_frame_es_portada": [
+     true,
+     1.4
+    ],
+    "subtitulos": [
+     true,
+     80
+    ],
+    "no_abre_sabias_que": [
+     true,
+     "Partiste el huevo duro y ahí está: un an"
+    ],
+    "cierre_pregunta": [
+     true,
+     ""
+    ],
+    "fuentes": [
+     true,
+     2
+    ]
+   },
+   "yt_videoId": null,
+   "yt_estado": null,
+   "fuentes": [
+    {
+     "cita": "Henneman A. (rev. 2024). How to Avoid a Green Ring on Hard-Boiled Egg Yolks. University of Nebraska–Lincoln, UNL Food.",
+     "url": "https://food.unl.edu/how-avoid-green-ring-hard-boiled-egg-yolks/",
+     "doi": null
+    },
+    {
+     "cita": "USDA FSIS. Shell Eggs from Farm to Table (GovInfo).",
+     "url": "https://www.govinfo.gov/content/pkg/GOVPUB-A110-PURL-gpo19093/pdf/GOVPUB-A110-PURL-gpo19093.pdf",
+     "doi": null
+    }
+   ]
+  },
+  {
+   "tema": "tardigrado",
+   "tipo": "reserva",
+   "fecha": null,
+   "hora_cdmx": null,
+   "titulo": "Revivió tras 30 años congelado: el tardígrado",
+   "titulo_yt": "Revivió tras 30 años congelado: el tardígrado #Shorts",
+   "portada": "REVIVIÓ TRAS 30 AÑOS CONGELADO",
+   "caption_tiktok_fb": "Revivió tras 30 años congelado: el tardígrado\nTardígrados de un musgo antártico congelado 30 años y medio revivieron y hasta se reprodujeron.\nImágenes y voz generadas con IA.\n#curiosidades #ciencia #datosinteresantes #shorts #animales",
+   "mp4": "/workspace/capcot_prod_20261121/final/RESERVA_tardigrado.mp4",
+   "portada_jpg": "/workspace/capcot_prod_20261121/tardigrado/portada.jpg",
+   "duracion_s": 81.2,
+   "qa": "PASS",
+   "qa_checks": {
+    "duracion_60_90": [
+     true,
+     81.2
+    ],
+    "vertical_1080x1920": [
+     true,
+     "1080x1920"
+    ],
+    "audio": [
+     true,
+     ""
+    ],
+    "primer_frame_es_portada": [
+     true,
+     1.2
+    ],
+    "subtitulos": [
+     true,
+     76
+    ],
+    "no_abre_sabias_que": [
+     true,
+     "Un musgo de la Antártida pasó treinta añ"
+    ],
+    "cierre_pregunta": [
+     true,
+     ""
+    ],
+    "fuentes": [
+     true,
+     3
+    ]
+   },
+   "yt_videoId": null,
+   "yt_estado": null,
+   "fuentes": [
+    {
+     "cita": "Tsujimoto M., Imura S., Kanda H. (2016). Recovery and reproduction of an Antarctic tardigrade retrieved from a moss sample frozen for over 30 years. Cryobiology 72(1): 78-81.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/26724522/",
+     "doi": "10.1016/j.cryobiol.2015.12.003"
+    },
+    {
+     "cita": "Boothby T. C. et al. (2017). Tardigrades Use Intrinsically Disordered Proteins to Survive Desiccation. Molecular Cell 65(6): 975-984.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/28306513/",
+     "doi": "10.1016/j.molcel.2017.02.018"
+    },
+    {
+     "cita": "Hashimoto T. et al. (2016). Extremotolerant tardigrade genome and improved radiotolerance of human cultured cells by tardigrade-unique protein. Nature Communications 7: 12808.",
+     "url": "https://www.nature.com/articles/ncomms12808",
+     "doi": "10.1038/ncomms12808"
+    }
+   ]
+  }
+ ]
+}
