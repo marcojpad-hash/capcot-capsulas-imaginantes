@@ -89,6 +89,33 @@ def validar_narrative_qa(qa):
         errs.append("narrative_qa.reviewer_role debe ser auditor_capcot_independiente")
     return errs
 
+def validar_punto_mapa(point):
+    """Acepta coordenadas terrestres lat/lon o celestes ecuatoriales RA/Dec."""
+    if not isinstance(point, dict):
+        return False
+    lat = point.get("lat", point.get("latitude"))
+    lon = point.get("lon", point.get("longitude"))
+    if lat is not None or lon is not None:
+        if lat is None or lon is None:
+            return False
+        try:
+            lat, lon = float(lat), float(lon)
+        except (TypeError, ValueError):
+            return False
+        return -90 <= lat <= 90 and -180 <= lon <= 180
+
+    ra = point.get("ra_deg")
+    dec = point.get("dec_deg")
+    system = str(point.get("sistema_coordenadas") or "").lower()
+    if ra is None or dec is None or not any(tag in system for tag in ("ra/dec", "ecuatorial", "equatorial")):
+        return False
+    try:
+        ra, dec = float(ra), float(dec)
+    except (TypeError, ValueError):
+        return False
+    return 0 <= ra < 360 and -90 <= dec <= 90
+
+
 def validar(path, doi=False):
     errs, warns = [], []
     with open(path, encoding="utf-8") as f:
@@ -212,10 +239,8 @@ def validar(path, doi=False):
             if not (layer.get("fuente") or layer.get("source")):
                 errs.append(f"{sid}: mapa sin fuente")
             for pt in pts:
-                lat = pt.get("lat", pt.get("latitude"))
-                lon = pt.get("lon", pt.get("longitude"))
-                if lat is None or lon is None or not (-90 <= float(lat) <= 90) or not (-180 <= float(lon) <= 180):
-                    errs.append(f"{sid}: coordenadas de mapa ausentes o fuera de rango")
+                if not validar_punto_mapa(pt):
+                    errs.append(f"{sid}: coordenadas de mapa ausentes, fuera de rango o sistema no declarado")
             for area in areas:
                 bounds = area.get("bounds") if isinstance(area, dict) else None
                 if not isinstance(bounds, (list, tuple)) or len(bounds) != 4:
