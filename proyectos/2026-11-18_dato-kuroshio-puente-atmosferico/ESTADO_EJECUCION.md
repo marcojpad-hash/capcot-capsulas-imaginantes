@@ -66,7 +66,7 @@ Ninguno de los dos comandos incluyó `--check-doi`. Estos runs confirman la vali
 - Comando exacto: `python scripts/validar_storyboard.py proyectos/2026-11-18_dato-kuroshio-puente-atmosferico/storyboard.json`.
 - Log del paso **Validar storyboard textual**: `OK`, salida 0. El paso de expediente terminó con `Expediente textual íntegro; medios no generados; publicación no autorizada.`.
 - El comando no incluyó `--check-doi`. El DOI `10.1038/s41561-026-02139-2` sigue `PENDIENTE_RESOLVEDOR`; el run confirma estructura, no Crossref.
-- El blob del storyboard y el del validador coinciden con la rama actual; el resultado estructural aplica al contenido vigente. No se promueve ni se copia a cola.
+- En el corte del run #6, los blobs del storyboard y del validador coincidían con la rama entonces vigente. El run #7 posterior se documenta abajo; el validador actual cambió respecto del ejecutado en ese run, por lo que no se afirma validación con el hash actual. No se promueve ni se copia a cola.
 
 
 ## Actualización de auditoría — 21-nov-2026 (run #7, revisión de obsolescencia)
