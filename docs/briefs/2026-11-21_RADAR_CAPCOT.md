@@ -131,3 +131,117 @@ Se reintentaron las diez URL declaradas en `scripts/tendencias.py` desde el lect
 **Respaldo oficial consultado:** [Google Trends — Tendencias actuales, México](https://trends.google.com/trending?geo=MX&hl=es), últimas 24 horas. La página muestra 185 tendencias; las primeras 25 están dominadas por fútbol, entretenimiento y actualidad. “Ola de frío” aparece activa con 10 mil+ búsquedas, pero no aporta por sí sola una fuente científica primaria. No se crea storyboard a partir de esa tendencia.
 
 **Fentale:** la página editorial de Nature es accesible y confirma la publicación del 19-nov-2026 y el DOI `10.1038/s41561-026-02137-4`. Las consultas directas a Crossref REST y al resolver `doi.org` no pudieron abrirse en el lector web; por eso se conserva `PENDIENTE_RESOLVEDOR` y no se habilita promoción. No se cambió el storyboard ni su estado.
+
+
+## 7. Revalidación de slots, QA y radar de candidatos — 2026-11-21
+
+Corte de esta pasada: rama feature HEAD 047275244d7c34430cec37fe4d9ad5e8cae3f203; main HEAD 8ceba2a913806acb665c5491fca8a76f93fab2ba. Se actualiza este RADAR existente; no se crea un segundo RADAR para la fecha.
+
+### 7.1 Inventario de la fecha y rotación
+
+- En proyectos/ hay exactamente tres storyboards con fecha_objetivo=2026-11-21: Fentale (23:30), Homo erectus (07:00) y púlsar gamma (17:00).
+- No hay storyboards del 21-nov en salidas/, cola/entrada/ ni cola/bloqueados/.
+- data/horario_2026-11-21.json no existe. El contrato operativo §3 autoriza cinco slots; scripts/rotacion.py declara las ventanas 07:00, 13:30, 17:00, 19:00 y 23:30. scripts/registro_editorial.py recorre recursivamente storyboards de proyectos, cola, bloqueados y salidas; se contrastó además main por separado.
+- Los JSON de rotación siguen atrasados: temas_del_dia.json termina el 28-oct; rotacion.json el 31-oct; estilos_usados.json el 28-oct; publicaciones.json de feature no registra el día 21. data/cola.json conserva solo el fallo del 31-oct. Se trataron como históricos, no como inventario completo.
+- handoffs/grok_inbox/ solo contiene el marker histórico del robot del 9-nov (status=pending), no markers de los tres proyectos del 21. Los tres cola/estado/<project_id>.json devuelven 404: RECEPCION_GROK_NO_CONFIRMADA. El marker antiguo no acredita recepción.
+
+### 7.2 Ocupación cruzada de los cinco slots
+
+| Slot CDMX | Evidencia encontrada | Estado operativo |
+|---|---|---|
+| 07:00 | Feature: 2026-11-21_homo-erectus-selva-tropical | NO_DUPLICAR; storyboard existente, QA FAIL |
+| 13:30 | Main: 2026-11-02_oxoboranos-estables, programacion.json, YouTube K4qNkx2f4RI, TikTok y Facebook programados para 13:30 | CONFLICTO_DE_SLOT_ENTRE_RAMAS / NO_DUPLICAR |
+| 17:00 | Feature: 2026-11-21_pulsar-gamma-reticulo; ventana identificada como prueba | NO_DUPLICAR; storyboard existente, QA FAIL |
+| 19:00 | Main: 2026-11-09_dato-robot-ensambla-orbita, programacion.json, YouTube ZG4iQgmWrLI, TikTok y Facebook programados para 19:00 | CONFLICTO_DE_SLOT_ENTRE_RAMAS / NO_DUPLICAR |
+| 23:30 | Feature: 2026-11-21_fentale-metano-sin-erupcion | NO_DUPLICAR; storyboard existente, QA PASS, pero la fuente es del 19-nov y no satisface la regla de publicación del mismo día para dato_del_dia |
+
+Para 13:30, publish_at=2026-11-21T19:30:00Z; para 19:00, publish_at=2026-11-22T01:00:00Z. Ambos paquetes de main conservan evidencia de programación multiplataforma y no se cancelan ni reprograman. Los cinco slots están ocupados; no hay storyboard nuevo autorizado para el 21-nov. El slot 23:30 está activo, pero su paquete preexistente no cumple la condición de fuente publicada el mismo día. No se crea una segunda versión ni se promueve la existente por esta revisión.
+
+### 7.3 Relectura estructural de los tres storyboards del día
+
+Conteo aplicado con la misma expresión de palabras de scripts/validar_storyboard.py, sin ejecutar el validador oficial:
+
+| Proyecto | Palabras | Escenas | Duración con cortinilla | Mapa / dato | Estilo del catálogo |
+|---|---:|---:|---:|---|---|
+| 2026-11-21_fentale-metano-sin-erupcion | 170 | 8 | 84 s | 1 mapa WGS84 / 2 capas de dato | pulp_comic_1940s, prompt_base literal |
+| 2026-11-21_homo-erectus-selva-tropical | 196 | 8 | 84 s | 1 mapa WGS84 / 1 capa de dato | dibujo_cientifico_scratchboard, prompt_base literal |
+| 2026-11-21_pulsar-gamma-reticulo | 209 | 8 | 84 s | 1 mapa celeste ICRS / 2 capas de dato | pixel_art, prompt_base literal |
+
+Los tres conservan narrative_contract con sus seis campos no vacíos, arco por escenas en el orden requerido, fuentes y source_ids válidos, voz edge-tts / es-MX-JorgeNeural / +7% / -2Hz, ambiente y SFX en las ocho escenas, cortinilla de seis segundos, approved_assets=[], export.render_status=NOT_GENERATED, ausencia de export.filename y rutas de medios, y publicacion.status=PENDIENTE_DECISION_GROK. No se modificaron los storyboards ni se ejecutó QA narrativo nuevo.
+
+### 7.4 Estado de QA narrativo preexistente — transcripción de los JSON
+
+**2026-11-21_fentale-metano-sin-erupcion**
+- status: PASS
+- score: 90
+- review_basis: lectura_en_frio_solo_narracion
+- reviewed_at: 2026-11-20T16:11:24-06:00
+- checks: pregunta_central_reconstruible=true; apertura_in_medias_res=true; progresion_por_escena=true; transiciones_causales=true; giro_cientifico_explicado=true; limite_evidencia_explicito=true; payoff_cierre_apertura=true.
+- critical_flags: [].
+- Nota de elegibilidad separada del QA: la fuente primaria está fechada 19-nov, no 21-nov; por ello no satisface la regla especial de frescura para el slot 23:30.
+
+**2026-11-21_homo-erectus-selva-tropical**
+- status: FAIL
+- score: 83
+- review_basis: lectura_en_frio_solo_narracion
+- reviewed_at: 2026-11-20T22:06:10-06:00
+- checks: pregunta_central_reconstruible=true; apertura_in_medias_res=true; progresion_por_escena=true; transiciones_causales=true; giro_cientifico_explicado=false; limite_evidencia_explicito=true; payoff_cierre_apertura=true.
+- critical_flags: ["GIRO_CIENTIFICO_NOMBRADO_PERO_NO_EXPLICADO"].
+
+**2026-11-21_pulsar-gamma-reticulo**
+- status: FAIL
+- score: 83
+- review_basis: lectura_en_frio_solo_narracion
+- reviewed_at: 2026-11-20T15:41:24-06:00
+- checks: pregunta_central_reconstruible=true; apertura_in_medias_res=true; progresion_por_escena=true; transiciones_causales=true; giro_cientifico_explicado=false; limite_evidencia_explicito=true; payoff_cierre_apertura=true.
+- critical_flags: ["GIRO_CIENTIFICO_NOMBRADO_PERO_NO_EXPLICADO"].
+
+Los tres estados se copiaron del JSON; no se reescribió narrative_qa, no se repitió la lectura en frío y no se promovió ningún paquete.
+
+### 7.5 Shortlist científica vigente (publicación dentro de los últimos siete días)
+
+| Candidato | Fuente primaria, fecha y DOI/URL | Tendencia / relevancia / oportunidad | Público y riesgo | Verificación |
+|---|---|---|---|---|
+| Intensificación del uso agrícola tropical y multidiversidad | Guerrero-Ramírez et al., Nature, 18-nov-2026. https://www.nature.com/articles/s41586-026-11298-6. DOI 10.1038/s41586-026-11298-6. | Tendencia: sin señal directa en Trends MX. Relevancia: alta. Oportunidad: alta; 24 grupos taxonómicos y 40,049 especies; pérdidas aproximadas de multidiversidad de 78% a escala de paisaje y 50% local en monocultivos. | Público de naturaleza y conservación. No traducir 78%/50% a porcentaje de especies extintas; son métricas de multidiversidad y el estudio cubre paisajes indonesios. | Página primaria indexada; PENDIENTE_RESOLVEDOR. Coordenadas exactas de las parcelas no verificadas; no está listo para storyboard. |
+| Descarga de metano en Fentale sin erupción | Dualeh et al., Nature Geoscience, 19-nov-2026. https://www.nature.com/articles/s41561-026-02137-4. DOI 10.1038/s41561-026-02137-4. | Tendencia: baja/no específica. Relevancia: alta. Oportunidad: alta por el mecanismo magma–sedimento. | Público de ciencias de la Tierra y clima. El evento medido ocurrió en 2025; el origen termogénico es propuesto y no se midieron isótopos locales de CH4. | Fuente primaria consultada; PENDIENTE_RESOLVEDOR. |
+| Adaptación de Homo erectus a selva tropical | Westaway et al., Nature, 18-nov-2026. https://www.nature.com/articles/s41586-026-11155-6. DOI 10.1038/s41586-026-11155-6. | Tendencia: baja/no específica. Relevancia: alta. Oportunidad: alta para evolución humana y paleoecología. | Público de evolución y naturaleza. Nueve dientes, ocho identificados como H. erectus; no generalizar a toda la especie. | VERIFICADO_RESOLVEDOR en el registro de fuente del storyboard existente. |
+| Descubrimiento del púlsar gamma PSR J1622−7204 | Pook-Kolb et al., Physical Review Letters 137, 211201, 19-nov-2026. https://journals.aps.org/prl/abstract/10.1103/vlt2-xzgk. DOI 10.1103/vlt2-xzgk. | Tendencia: baja/no específica. Relevancia: alta. Oportunidad: alta para astronomía y métodos computacionales. | Público de espacio y tecnología. La comparación de 10 horas de CPU frente a 600 años de CPU usa métodos distintos; no llamarlo IA ni tiempo de calendario. | Página primaria APS y VERIFICADO_RESOLVEDOR en el storyboard existente. |
+| Genomas de yubartas desde el soplo | O'Mahony et al., Molecular Ecology Resources, 17-nov-2026. https://onlinelibrary.wiley.com/doi/10.1111/1755-0998.70219. DOI 10.1111/1755-0998.70219. | Tendencia: baja/no específica. Relevancia: alta. Oportunidad: alta para conservación marina. | Público de océanos y biodiversidad. Son 58 muestras de 26 yubartas del Pacífico nororiental; la aplicabilidad puede variar por especie y condiciones. | VERIFICADO_RESOLVEDOR en el storyboard existente y página primaria Wiley consultada. |
+
+Recomendación para el siguiente slot que realmente quede libre: conservar como primer candidato el estudio de multidiversidad tropical, condicionado a resolver DOI y obtener del artículo/suplemento una localización cartográfica que no invente coordenadas. No se redacta hoy porque los cinco slots están ocupados. El proyecto Voyager del 22-nov permanece como propuesta preexistente separada y no se cuenta en esta shortlist del 21-nov.
+
+**Control de fecha:** el artículo de hormigas recolectoras sobre negative senescence tiene publicación/primera versión el 9-nov-2026, aunque hubo noticias secundarias esta semana; queda fuera de la ventana de siete días. No se reutiliza como candidato reciente.
+
+### 7.6 RSS y Google Trends — reintento de esta pasada
+
+Se reintentaron los diez RSS definidos por scripts/tendencias.py y el RSS MX. No se ejecutó el script Python ni se parseó XML. Resultados exactos del lector web:
+- ScienceDaily Science, Health y Space: (400) Unsupported content-type: application/xml.
+- Phys.org: (400) Unsupported content-type: text/xml.
+- NASA News Release y UNAM Global: (400) Unsupported content-type: application/rss+xml.
+- ESA Space Science: (404) Not Found.
+- Nature RSS: (400) Unsupported content-type: application/rss+xml.
+- EurekAlert y SINC: URL no accesible mediante esta herramienta.
+- Google Trends RSS MX: URL no accesible mediante esta herramienta.
+
+**Respaldo oficial:** https://trends.google.com/trending?geo=MX&hl=es, últimas 24 horas. La página muestra 184 tendencias, 25 por página. En la primera página dominan fútbol, entretenimiento, actualidad y búsquedas locales. Entre las consultas visibles aparecen ola de frío (10 mil+), volcán (5 mil+) y tormenta (2 mil+); ninguna aporta por sí sola una fuente científica primaria ni prueba demanda por una cápsula específica.
+
+### 7.7 Seguimiento técnico
+
+Se releyó el informe técnico y se contrastaron las referencias oficiales:
+- Graph API: la página canónica mantiene v27.0 como última versión, introducida el 4-nov-2026.
+- Page Insights: siguen visibles el umbral de 100 likes, actualización aproximada cada 24 h, retención de dos años, consultas de hasta 90 días y exclusión de interacciones de Reels.
+- Instagram Insights: siguen documentadas Unified Login, Instagram Login y Facebook Login; el changelog visible no muestra una entrada de Insights posterior a las ya registradas y la última entrada relevante de media_url sigue fechada 30-jul-2026.
+- Google Trends API: continúa en alfa de acceso limitado, con ventana móvil de cinco años, agregaciones periódicas y regiones/subregiones.
+
+No se encontró un cambio técnico nuevo que justifique actualizar docs/INVESTIGACION_API_META_Y_GOOGLE_TRENDS.md. El informe técnico queda intacto.
+
+### 7.8 Resultado de la pasada
+
+- Radar único de la fecha: actualizado en su ruta existente.
+- Storyboards nuevos: 0, por ocupación de los cinco slots.
+- Storyboards existentes del día: 3/3 releídos y parseados; compuertas estructurales estáticas verificadas; QA existente preservado.
+- NO_DUPLICAR: 07:00, 13:30, 17:00, 19:00 y 23:30.
+- Recepción Grok: no confirmada para los tres proyectos de feature.
+- QA nuevo, promoción, cola, medios, publicación y programación: no ejecutados.
+- data/*.json, main, workflows, motores y Motor U6: sin modificaciones.
+- Créditos: no consumidos.
