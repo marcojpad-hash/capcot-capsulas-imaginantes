@@ -78,7 +78,10 @@
         "La reconstrucción de la expulsión de material y la eficiencia de la evolución de envoltura común.",
         "La observación de Webb el 24 de diciembre de 2025, 47 días después del pico en banda g."
       ],
-      "verification_status": "VERIFICADO_RESOLVEDOR"
+      "verification_status": "VERIFICADO_FUENTE_PRIMARIA",
+      "url_verification_status": "VERIFICADO_PAGINA_EDITORIAL",
+      "doi_verification_status": "VERIFICADO_CROSSREF_API",
+      "verification_note": "Crossref API consultada el 2026-11-21: DOI, título, editorial y fecha de publicación 19-nov-2026 coinciden con la página de Nature."
     },
     {
       "id": "SRC-002",
@@ -284,9 +287,9 @@
         "unidad": "después del pico de la erupción",
         "fuente": "SRC-001; SRC-002",
         "source_ids": [
-        "SRC-001",
-        "SRC-002"
-      ],
+          "SRC-001",
+          "SRC-002"
+        ],
         "limite": "Observación posterior del polvo; no es una imagen del instante de fusión."
       },
       "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text Nube de polvo infrarroja estilizada alrededor de una pareja estelar, con luz tenue y sin representar el choque como una filmación.",
@@ -384,5 +387,25 @@
     "El resultado corresponde a AT 2025abao; no generalizar esta ruta a todas las binarias."
   ],
   "fecha_objetivo": "2026-11-22",
-  "slot_local": "13:30"
+  "slot_local": "13:30",
+  "narrative_qa": {
+    "status": "FAIL",
+    "score": 84,
+    "review_basis": "lectura_en_frio_solo_narracion",
+    "reviewer_role": "auditor_capcot_independiente",
+    "reviewed_at": "2026-11-21T13:56:37-06:00",
+    "checks": {
+      "pregunta_central_reconstruible": true,
+      "apertura_in_medias_res": true,
+      "progresion_por_escena": true,
+      "transiciones_causales": true,
+      "giro_cientifico_explicado": true,
+      "limite_evidencia_explicito": true,
+      "payoff_cierre_apertura": true
+    },
+    "critical_flags": [
+      "STAKES_NO_EXPLICADOS"
+    ],
+    "reviewer_notes": "La narración abre con una anomalía en curso, explica el arrastre orbital y la fase de envoltura común, y paga el brillo lento al cierre. Sin embargo, no explicita por qué medir la masa expulsada en esta fase cambia la comprensión del proceso o por qué el hallazgo importa; el stake queda inferido y no narrado. No reescribir durante auditoría."
+  }
 }
