@@ -80,8 +80,8 @@
       ],
       "verification_status": "VERIFICADO_FUENTE_PRIMARIA",
       "url_verification_status": "VERIFICADO_PAGINA_EDITORIAL",
-      "doi_verification_status": "VERIFICADO_CROSSREF_API",
-      "verification_note": "Crossref API consultada el 2026-11-21: DOI, título, editorial y fecha de publicación 19-nov-2026 coinciden con la página de Nature."
+      "doi_verification_status": "PENDIENTE_RESOLVEDOR",
+      "verification_note": "Nature y PubMed confirman el DOI 10.1038/s41586-026-11221-z y la fecha de publicación 2026-11-18. Crossref REST y doi.org no fueron accesibles en esta ejecución; no se ejecutó validar_storyboard.py --check-doi. No afirmar verificación automática del resolver hasta repetirla en un entorno con acceso."
     },
     {
       "id": "SRC-002",
