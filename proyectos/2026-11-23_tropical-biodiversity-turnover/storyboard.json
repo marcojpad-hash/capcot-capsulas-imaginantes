@@ -396,5 +396,7 @@
   "risk_notes": [
     "La capa de mapa usa dos estaciones meteorológicas EFForTS, no las coordenadas de las 32 parcelas; el mapa solo localiza los dos paisajes.",
     "La ESM de 2016 lista 33 parcelas core, mientras el artículo de 2026 informa 32 parcelas; por eso no se representan puntos de parcela ni se asume correspondencia exacta."
-  ]
+  ],
+  "fecha_objetivo": "2026-11-23",
+  "slot_local": "13:30"
 }
