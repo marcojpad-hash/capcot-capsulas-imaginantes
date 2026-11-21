@@ -278,3 +278,62 @@ Se relevaron los JSON de `data/` sin modificarlos. La fotografía de rotación/p
 - `endscreens_rotacion.json` sí tiene actualización hasta 17-nov, pero es un registro de pantallas finales, no una parrilla de slots diarios.
 
 Conclusión: los JSON de rotación, horario, publicaciones e historial no pueden usarse como fuente actual única para reservar slots del 21–22 nov. Para esta reconciliación se contrastaron los storyboards vivos de feature con `data/publicaciones.json` de main. El inventario `registro_editorial.py` no lee los snapshots de horario ni conserva todos los campos de publicación, por lo que no detecta por sí solo esta divergencia. No se cambió ningún `data/*.json`.
+
+
+---
+
+## Reconciliación adicional — 21-nov-2026, 12:03 CDMX
+
+### Cambios materiales en el inventario
+
+**EJECUTADO — `scripts/registro_editorial.py`**
+
+La vista de inventario ahora expone `ocupacion_slots` con:
+- evidencia de `data/publicaciones.json`, `data/rotacion.json` y `data/cola.json`;
+- storyboards y sidecars JSON bajo `proyectos/`, `cola/` y `salidas/`, incluida la profundidad anidada;
+- normalización de `publishAt`, `publishedAt` y timestamps UTC a `America/Mexico_City`;
+- conflictos entre proyectos distintos en el mismo `fecha + slot_local`;
+- discrepancias de slot entre evidencias del mismo project_id;
+- inconsistencias entre el timestamp publicado/programado y la fecha/hora local declarada;
+- referencias de medios presentes o ausentes en el árbol, con `MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO` cuando corresponde;
+- IDs y estados anidados de YouTube/TikTok/Facebook sin confundir IDs de fuentes con IDs de video.
+
+El CLI incluye ahora el inventario de slots. El código no escribe `data/*.json`; solo los lee. El inventario sigue siendo **local a la rama ejecutada**: la comparación contra main debe hacerse aparte y no se considera resuelta por la salida de feature.
+
+**EJECUTADO — pruebas**
+
+- `tests/test_registro_editorial.py` contiene 17 métodos de prueba.
+- Un harness Python aislado verificó 14 casos/condiciones: slots de storyboard, conversión UTC→CDMX, conflicto entre proyectos, discrepancia de un mismo proyecto, estados bloqueados, fecha sin hora, timestamp discordante, sidecars anidados de YouTube, publicación anidada, IDs de fuente no confundidos con video y referencias de medios presentes/ausentes.
+- **Límite:** no se ejecutó la suite unittest completa desde un checkout del repositorio. Los checks CodeQL automáticos de PR #3 completaron SUCCESS para varios commits; los runs más recientes siguen IN_PROGRESS. CodeQL no equivale a ejecutar las pruebas unitarias.
+
+### Ocupación confirmada
+
+- **21-nov:** 07:00 Homo erectus (feature); 13:30 oxoboranos (registro de publicación en main); 17:00 púlsar gamma (feature); 19:00 robot orbital (registro de publicación en main); 23:30 Fentale (feature). Los cinco slots están ocupados. No se creó otro proyecto para el 21.
+- **22-nov:** 07:00 Voyager 1 y 17:00 Yubarta ocupados en feature. 13:30, 19:00 y 23:30 no muestran ocupación en los inventarios visibles de ambas ramas al corte. 23:30 permanece reservado a un dato publicado el mismo día y dentro de 48 horas.
+
+### Auditoría de proyectos y handoffs
+
+- Cinco proyectos nuevos de 21–22 nov revisados. QA registrado: Fentale PASS/90; Homo erectus FAIL/83; Púlsar gamma FAIL/83; Voyager 1 FAIL/83; Yubarta PASS/90. Los cinco `cola/estado/<id>.json` devolvieron 404: `RECEPCION_GROK_NO_CONFIRMADA`. No hay entrada plana nueva para ellos y no se promovió ninguno.
+- Los doce storyboards del lote 5–7 nov fueron releídos; todos sus estados individuales de Grok devolvieron 404. Los siete proyectos con sidecars sociales conservan evidencia de publicaciones/programaciones preexistentes; no se redispatchó. Las copias heredadas ya presentes en `cola/bloqueados/` se dejaron intactas.
+- Nueve proyectos/paquetes de 15–20 nov en main fueron contrastados con `cola/entrada/`, `salidas/`, `programacion.json` y estados. No se modificó main. Hay paquetes con programación/IDs preexistentes, una divergencia de SHA entre proyecto y cola para Accidente IA, y referencias `capsula.mp4` que no aparecen en el árbol de algunos proyectos. Clasificación: `PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR`, `DIVERGENCIA_DE_COPIA_PROYECTO_COLA` o `MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO` según evidencia. Los estados Grok individuales ausentes se mantienen como `RECEPCION_GROK_NO_CONFIRMADA`.
+- Los registros de publicación en main para 21-nov confirman los slots 13:30 y 19:00. La copia de `data/publicaciones.json` en feature no incluye esos registros; por eso no se usó el inventario de feature como prueba suficiente de disponibilidad global.
+
+### Investigación y preproducción
+
+Se creó `docs/briefs/2026-11-22_RADAR_CAPCOT.md` y el borrador `proyectos/2026-11-22_bao-estrella-fusion-andromeda/storyboard.json`.
+
+- AT 2025abao, paper de Nature del 18-nov, seleccionado para 22-nov 13:30.
+- Narración verificada por conteo: 192 palabras; 8 escenas; 78 s de escenas + 6 s de cortinilla = 84 s; gancho de 6 palabras; cierre hablado exacto.
+- Voz `es-MX-JorgeNeural`, rate +7%, pitch -2Hz; estilo `art_deco_poster` del catálogo.
+- Mapa con RA/Dec de NASA (RA 00:38:48.60; Dec +40:46:08.23) y conversión aritmética explícita a grados.
+- Incluye dato/gráfico de masas estimadas y observación infrarroja de Webb 47 días después del pico.
+- **No** se creó `narrative_qa`; no hubo pasada independiente en frío. El proyecto permanece `BORRADOR_EN_PROYECTOS_NO_APTO_PARA_PROMOCION`, con `approved_assets=[]`, `export.render_status=NOT_GENERATED` y `publicacion.status=PENDIENTE_DECISION_GROK`.
+- No se creó cola, estado Grok, medio, render ni publicación.
+
+### Ingesta RSS y límites de verificación
+
+Los feeds definidos en `scripts/tendencias.py` y Google Trends RSS México no entregaron contenido utilizable en esta sesión: ScienceDaily `application/xml`; Phys.org `text/xml`; NASA/Nature/UNAM `application/rss+xml`; ESA `404 Not Found`; EurekAlert, SINC y Trends no devolvieron cuerpo parseable. La descarga alternativa de ScienceDaily terminó en `download failed`. Se usaron páginas oficiales y papers como respaldo; los fallos no se interpretaron como ausencia de noticias.
+
+### No modificados
+
+`data/*.json`, `cola/entrada/`, `cola/estado/`, workflows, secretos, permisos, main, publicaciones y medios permanecen sin cambios por este run. No se disparó el workflow de dispatch ni se envió payload a Grok.
