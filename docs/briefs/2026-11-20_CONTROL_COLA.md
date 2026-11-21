@@ -576,3 +576,66 @@ No se revisaron APIs: no apareció un cambio oficial nuevo sustentado en este co
 5. No se generaron cápsulas, frames, imágenes, voz, audio, video ni renders; no se publicó ni se consumieron créditos.
 
 **Resultado:** cero entradas nuevas de cola y cero dispatches. Los dos borradores del 20-nov quedan en proyectos hasta resolver DOI; los FAIL siguen fuera de cola; los proyectos con producción previa quedan bloqueados contra redispatch.
+
+
+## Revalidación del operador único — run 10 — 2026-11-20 18:05 CDMX
+
+### Ejecuciones y corte
+
+- Agente de investigación CAPCOT: última ejecución registrada **COMPLETED**, 20-nov 08:40 CDMX.
+- Auditor CAPCOT: última ejecución registrada terminó **FAILED** el 20-nov 17:07 CDMX. Este run realizó la relectura manual de inventario, storyboards, colas, publicaciones, workflows, CI y PRs; no disparó Actions.
+- Operador único: la ejecución anterior terminó 16:18 CDMX; el run actual inició 18:03 y este apéndice no le atribuye un `completed_at` que todavía no consta.
+
+### Storyboards recientes y slots del 21-nov
+
+La rama feature se releyó completa. Main conserva para el 21-nov dos asignaciones: `oxoboranos-estables` a las 13:30 y `robot-ensambla-orbita` a las 19:00. No hay una asignación de main a las 17:00 ni a las 23:30; por tanto, no se encontró colisión exacta para los dos borradores nuevos.
+
+| Proyecto | QA narrativo | Revisión estructural estática | Decisión |
+|---|---:|---|---|
+| `2026-11-21_fentale-metano-sin-erupcion` | PASS 90 | 8 escenas, 170 palabras, 78 s de escenas + 6 s de cortinilla = 84 s; voz, catálogo, prompt_base, mapa, capa de datos, fuentes y campos de escena presentes; sin medios ni rutas | Permanece en `proyectos/`. DOI primario identificado, pero `--check-doi`/Crossref no ejecutado. La página editorial fecha el artículo el 19-nov sin hora de publicación; no se puede certificar la ventana de actualidad de 48 h para el slot 21-nov 23:30. No promover |
+| `2026-11-21_pulsar-gamma-reticulo` | FAIL 83 | 8 escenas, 209 palabras, 84 s; estructura, mapa, datos y prompt_base presentes | Permanece en `proyectos/`; falla narrativa. No promover |
+
+En ambos casos: no existe `cola/estado/<project_id>.json`, no hay copia en `cola/entrada/`, no hay salida ni marker individual de Grok. Estado: **RECEPCION_GROK_NO_CONFIRMADA** y **NOT_DISPATCHABLE**. El preflight de estructura de esta relectura fue estático y no sustituye al validador Python oficial. No se generaron medios, frames, voz, audio ni vídeo.
+
+Los storyboards recientes restantes se releyeron sin repetir PASS válido cuando la narración no cambió: Lestes 90, Quasar 82 FAIL, polen 91, suelo 89, hidrotermales 68 FAIL, Kuroshio 90, oro poroso 91, estrella dentro de estrella 90, marea cerebral 92 y sapropeles 91. Kuroshio tiene CI estructural SUCCESS en run `44832382024`, pero el log ejecuta `scripts/validar_storyboard.py` sin `--check-doi`; no acredita DOI/Crossref.
+
+### Revalidación de los 12 IDs del lote 5–7 nov
+
+Los 12 storyboards siguen fuera de promoción. El preflight estático basado en las reglas del validador encontró **85 escenas, 510 campos narrativos ausentes** (seis por escena) y **75 SFX vacíos**. El proyecto de árboles además carece de capa de mapa y de datos. Dos QA PASS previos (Venus 88 y arena 94) se conservaron sin repetir; los otros diez siguen FAIL:
+
+| ID | QA vigente | Procesamiento previo / decisión |
+|---|---:|---|
+| `2026-11-05_kids-dia-en-venus` | PASS 88 | TikTok y Facebook publicados; YouTube ID `phVfyHp3CnY` en evidencia de analítica. No redispatch |
+| `2026-11-05_comida-palomitas` | FAIL 82 | YouTube, TikTok y Facebook publicados; sidecar refiere MP4 bajo `/workspace`, no verificable en el árbol. No redispatch |
+| `2026-11-05_inter-arboles-se-comunican` | FAIL 78 | Sin salida exacta; existe tema relacionado publicado el 7-nov bajo `arboles-comunicacion-bosque`. No duplicar tema |
+| `2026-11-05_inter-rayo-globular` | FAIL 81 | Sin evidencia de publicación o programación; fecha vencida y estructura inválida |
+| `2026-11-06_kids-ballena-azul-corazon` | FAIL 80 | YouTube y TikTok publicados; Facebook aparece programado, no confirmado. MP4 local no verificable en el árbol. No redispatch |
+| `2026-11-06_comida-aguacate-negro` | FAIL 79 | YouTube y TikTok publicados; Facebook aparece programado, no confirmado. MP4 local no verificable en el árbol. No redispatch |
+| `2026-11-06_inter-ranas-congeladas` | FAIL 83 | YouTube y TikTok publicados; Facebook aparece programado, no confirmado. MP4 local no verificable en el árbol. No redispatch |
+| `2026-11-06_inter-arena-cantante` | PASS 94 | YouTube, TikTok y Facebook publicados; además existe otro ID de YouTube `ztIkYcXB91U` programado a las 19:00: riesgo de duplicado pendiente, no cancelar |
+| `2026-11-07_kids-huesos-bebe` | FAIL 82 | Sin evidencia de publicación o programación; fecha vencida y estructura inválida |
+| `2026-11-07_comida-hielo-caliente` | FAIL 81 | YouTube privado con `publishAt`, TikTok programado y Facebook publicado. MP4 referenciado no está en el árbol. No redispatch |
+| `2026-11-07_inter-pulpo-suenos` | FAIL 72 | Sin evidencia de publicación o programación; fecha vencida y estructura inválida |
+| `2026-11-07_inter-nubes-pesan` | FAIL 78 | YouTube, TikTok y Facebook publicados el 12-nov; MP4 referenciado no está en el árbol. No redispatch |
+
+Los siete proyectos con sidecars (Venus, palomitas, ballena, aguacate, ranas, arena e hielo) y Nubes tienen evidencia de procesamiento/publicación o programación previa. Los estados de plataforma no son equivalentes: en ballena, aguacate y ranas Facebook sigue solo como programado; en hielo YouTube permanece privado/programado. No se afirma publicación donde el registro no la confirma. Los archivos `cola/estado/` siguen ausentes; no se infiere recepción Grok a partir de sidecars o IDs públicos.
+
+### Cola, producción preexistente y Grok
+
+- `cola/entrada/` en feature conserva únicamente dos carpetas anidadas: robot y ratas topo; **no hay JSON plano en la raíz**. El selector de `capcot-grok-dispatch.yml` usa `find -maxdepth 1` y `cola/entrada/*.json`; esas carpetas no son seleccionadas.
+- Robot: el estado de feature ya dice `PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR`. Main tiene el mismo proyecto y slot 21-nov 19:00, YouTube ID `ZG4iQgmWrLI`, programación privada y `capsula.mp4` presente. Clasificación: **CONFLICTO_DE_SLOT_ENTRE_RAMAS**; no redispatchar.
+- Ratas topo: la carpeta de entrada de feature contiene ocho PNG pero no storyboard; el storyboard PASS 91 está en bloqueados. Main conserva programación/publicación YT/TT/FB; el MP4 referenciado no existe en el árbol. Clasificación: **PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR** y **MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO**.
+- REACT: main mantiene programación privada a las 13:45 del 20-nov; no se encontró `capsula.mp4` en el árbol. No redispatchar; medios no verificados.
+- `handoffs/grok_inbox/` solo contiene el marker del robot. No es recibo de Grok. No hay archivos de estado individual.
+- El workflow actual admite fallback de inbox sin webhook; el último intento histórico disponible (1-nov, run `41306776689`) registró `GROK_WEBHOOK_URL` y `GROK_WEBHOOK_TOKEN` vacíos. No existe ejecución posterior del dispatcher en la rama feature. No se disparó workflow ni se envió payload.
+- No existe un archivo `historial_youtube.json` en los árboles main/feature; esta revalidación usó `data/publicaciones.json`, `data/horario_2026-11-12.json`, sidecars y registros `programacion/publicacion` disponibles.
+
+### CI, Issues y PRs
+
+- Run Kuroshio `44832382024`: SUCCESS estructural; el comando no incluyó `--check-doi`.
+- PR #3 sigue draft y abierto, con 681 archivos; contiene cambios amplios de datos/workflows. No fusionar.
+- PR #6 (supervisor/workflow), #13 (auditoría independiente) y #14 (correcciones Quasar) siguen abiertos. PR #14 añade `asset_filename` a escenas y contradice el contrato de preproducción; no fusionar.
+- PR #4 documental y Dependabot #7–#9 siguen abiertos; no se fusionó ninguno.
+- Issue #11 sigue abierto pese a conservar etiqueta `hecho`; no se cerró ni se modificó.
+
+No se modificaron `data/*.json`, main, secretos, permisos, decisiones editoriales ni estados Grok. No se publicaron ni programaron piezas, no se generaron medios y no se consumieron créditos.
