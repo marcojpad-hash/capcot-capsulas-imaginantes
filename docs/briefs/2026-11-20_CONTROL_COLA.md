@@ -771,3 +771,8 @@ CodeQL terminó **SUCCESS** para los últimos tres commits de la revalidación: 
 - Issues #11 y #10 siguen abiertos con etiqueta `hecho`; no se cerraron. PR #14 sigue abierto y conserva en su diff campos `asset_filename` en un storyboard. PR #6 sigue abierto con workflow reutilizable, `secrets: inherit` e `issues: write`; PR #3 sigue abierto en draft con 683 archivos cambiados y un workflow con `contents: write`; PR #4 sigue abierto y solo registra la ubicación histórica de frames que no están en GitHub. No se fusionó ni cerró nada.
 - No se generaron medios, no se programó, no se publicó, no se consumieron créditos y no se modificó `data/*.json`.
 
+
+
+#### Corrección de lectura de vuelta — 2026-11-20 22:47 CDMX
+
+- La primera lectura de vuelta del borrador de yubarta detectó que `source_ids` estaba serializado como cadena en escenas 5 y 6. Se corrigió a arreglos de identificadores y se volvió a leer el storyboard. No cambió la narración, los claims, el slot ni las fuentes. Commit de creación: `2015a5a4b5a6df59e68d90d9fd26d6ea12e35c98`; commit de corrección: pendiente de esta operación.

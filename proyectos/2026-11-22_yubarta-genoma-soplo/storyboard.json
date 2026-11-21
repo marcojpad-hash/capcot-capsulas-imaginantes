@@ -254,7 +254,9 @@
       "sfx": [
         "pulso_dato"
       ],
-      "source_ids": "SRC-001",
+      "source_ids": [
+        "SRC-001"
+      ],
       "style_id": "tatuaje_acuarela",
       "capa": {
         "tipo": "dato",
@@ -281,7 +283,9 @@
       "sfx": [
         "doble_pulso_dato"
       ],
-      "source_ids": "SRC-001",
+      "source_ids": [
+        "SRC-001"
+      ],
       "style_id": "tatuaje_acuarela",
       "capa": {
         "tipo": "dato",
