@@ -225,6 +225,82 @@ def _pick_field(containers, keys):
     return None, None
 
 
+def _slot_containers(raw):
+    containers = [raw]
+    for parent in list(containers):
+        for key in (
+            "publicacion", "publication", "programacion", "schedule",
+            "youtube", "yt", "tiktok", "facebook", "resultado",
+        ):
+            value = parent.get(key) if isinstance(parent, dict) else None
+            if isinstance(value, dict):
+                containers.append(value)
+                if key == "youtube":
+                    snippet = value.get("snippet")
+                    if isinstance(snippet, dict):
+                        containers.append(snippet)
+        result = parent.get("resultado") if isinstance(parent, dict) else None
+        if isinstance(result, dict):
+            for platform in ("youtube", "yt", "tiktok", "facebook"):
+                value = result.get(platform)
+                if isinstance(value, dict):
+                    containers.append(value)
+                    snippet = value.get("snippet")
+                    if isinstance(snippet, dict):
+                        containers.append(snippet)
+    unique = []
+    seen = set()
+    for container in containers:
+        marker = id(container)
+        if marker not in seen:
+            seen.add(marker)
+            unique.append(container)
+    return unique
+
+
+def _media_references(raw):
+    refs = []
+    containers = _slot_containers(raw)
+    for container in containers:
+        if not isinstance(container, dict):
+            continue
+        for key in ("asset_filename", "asset_path", "video", "video_file", "audio_asset"):
+            value = container.get(key)
+            if isinstance(value, str) and value.strip() and "://" not in value:
+                refs.append(value.strip())
+        export = container.get("export")
+        if isinstance(export, dict):
+            value = export.get("filename")
+            if isinstance(value, str) and value.strip() and "://" not in value:
+                refs.append(value.strip())
+        for key in ("approved_assets", "assets", "archivos"):
+            values = container.get(key)
+            if isinstance(values, list):
+                for item in values:
+                    if isinstance(item, str) and item.strip() and "://" not in item:
+                        refs.append(item.strip())
+                    elif isinstance(item, dict):
+                        value = item.get("filename") or item.get("path") or item.get("asset_filename")
+                        if isinstance(value, str) and value.strip() and "://" not in value:
+                            refs.append(value.strip())
+    return list(dict.fromkeys(refs))
+
+
+def _media_reference_exists(reference, source_path, project_id):
+    candidate = Path(reference)
+    if candidate.is_absolute():
+        return False
+    locations = [ROOT / Path(source_path).parent / candidate]
+    if project_id:
+        locations.extend([
+            ROOT / "proyectos" / project_id / candidate,
+            ROOT / "cola" / "entrada" / project_id / candidate,
+            ROOT / "cola" / "bloqueados" / project_id / candidate,
+            ROOT / "salidas" / project_id / candidate,
+        ])
+    return any(path.exists() for path in locations)
+
+
 def _local_timestamp(value, assume_utc=False):
     if not isinstance(value, str) or not value.strip():
         return None
@@ -263,9 +339,7 @@ def _slot_evidence(raw, source_path, default_project_id=None):
     if not isinstance(raw, dict):
         return None
 
-    publicacion = raw.get("publicacion") or raw.get("publication") or {}
-    programacion = raw.get("programacion") or raw.get("schedule") or {}
-    containers = [raw, publicacion, programacion]
+    containers = _slot_containers(raw)
     pid = (
         raw.get("project_id") or raw.get("id") or raw.get("proyecto")
         or default_project_id or _project_id_from_path(source_path)
@@ -312,14 +386,37 @@ def _slot_evidence(raw, source_path, default_project_id=None):
     video_id, _ = _pick_field(
         containers, ("yt_id", "video_id", "youtube_id", "id_video")
     )
-    state_value, _ = _pick_field(containers, ("estado", "status", "publication_status"))
+    youtube_containers = [
+        container for container in containers
+        if isinstance(container, dict) and (
+            container is raw.get("youtube") or container is raw.get("yt")
+            or container.get("kind") == "youtube#video"
+        )
+    ]
+    if not video_id:
+        video_id, _ = _pick_field(youtube_containers, ("id",))
+    state_value, _ = _pick_field(
+        containers, ("estado", "status", "publication_status", "privacyStatus", "privacy")
+    )
     state_text = str(state_value or "").strip().lower()
     path_text = "/" + str(source_path).replace("\\", "/").strip("/") + "/"
+    published_at, _ = _pick_field(containers, ("published_at", "publishedAt"))
+    media_refs = _media_references(raw)
+    missing_media = [
+        ref for ref in media_refs
+        if not _media_reference_exists(ref, source_path, str(pid))
+    ]
 
-    if video_id or "publicado" in state_text or "published" in state_text:
-        evidence_state = "PUBLICADO_O_ID_REGISTRADO"
+    if published_at or "publicado" in state_text or "published" in state_text:
+        evidence_state = "PUBLICACION_REGISTRADA"
+    elif video_id and timestamp_value:
+        evidence_state = "PROGRAMADO_CON_VIDEO_ID"
+    elif str(source_path).endswith("data/publicaciones.json") and video_id:
+        evidence_state = "PUBLICACION_REGISTRADA"
     elif timestamp_value or "programad" in state_text or "scheduled" in state_text:
         evidence_state = "PROGRAMADO_DECLARADO"
+    elif video_id:
+        evidence_state = "VIDEO_ID_REGISTRADO"
     elif "/estado/" in path_text:
         evidence_state = "ESTADO_GROK"
     elif "/bloqueados/" in path_text:
@@ -354,6 +451,13 @@ def _slot_evidence(raw, source_path, default_project_id=None):
         "timestamp_field": timestamp_key,
         "timestamp_local": timestamp_local,
         "timestamp_mismatch": timestamp_mismatch,
+        "media_references": media_refs,
+        "missing_media_references": missing_media,
+        "media_status": (
+            "MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO" if missing_media
+            else "VERIFICADOS_EN_REPOSITORIO" if media_refs
+            else "SIN_REFERENCIAS"
+        ),
     }
 
 
