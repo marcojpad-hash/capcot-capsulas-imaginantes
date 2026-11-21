@@ -244,7 +244,7 @@ Se releyeron los cinco JSON directamente desde GitHub y se contrastaron con la e
 
 ### Estado vivo de rama, slots y recepción
 
-- HEAD de `feature/capcot-video-discovery-continuity` sigue en `49db1df246b241e431683f7eb501911dcae72ec9`; no hubo commits posteriores a la adenda 13. Se releyó el inventario de `proyectos/`: los cinco storyboards 21–22 nov conservan los mismos blobs, estructura y QA; no se repitió lectura narrativa PASS.
+- HEAD de `feature/capcot-video-discovery-continuity` al inicio de esta reconciliación era `49db1df246b241e431683f7eb501911dcae72ec9`; no había commits de trabajo posteriores a la adenda 13. Esta reconciliación queda registrada en el commit `a6e86c01637aac47e89ee7f01910d8f33b8d6f35`. Se releyó el inventario de `proyectos/`: los cinco storyboards 21–22 nov conservan los mismos blobs, estructura y QA; no se repitió lectura narrativa PASS.
 - Los cinco proyectos siguen sin `ESTADO_EJECUCION.md`; no existe un estado PREPARADO que requiera corrección.
 - Para los cinco IDs actuales, `cola/estado/<project_id>.json` devuelve 404: **RECEPCION_GROK_NO_CONFIRMADA**. No se creó ni modificó ningún estado.
 - `cola/entrada/` contiene `.gitkeep` y dos directorios heredados anidados (robot y ratas topo), pero ningún JSON plano en la raíz. `handoffs/grok_inbox/` contiene únicamente el marcador histórico del robot con estado `pending`; no acredita recepción.
