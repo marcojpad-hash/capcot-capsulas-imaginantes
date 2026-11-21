@@ -681,3 +681,8 @@ El árbol completo de feature contiene exactamente ocho archivos de imagen: los 
 
 - Estado Kuroshio corregido y releído desde GitHub: commit `ed8659ec7184d51cdd84d3575a5ac57c1595ce2c`; blob final del documento `d73dc69e3747417070e500b9c690a40b20b515c0`.
 - Este control de cola se actualizó con el último cruce y se releyó desde GitHub después de guardar la última versión. Main permaneció sin cambios.
+
+
+## 12. Exclusiones del lote
+
+Se respetaron las exclusiones expresas: slots 23:30 de “dato del día” dentro del lote 5–7-nov, kids 03-nov 07:00 y Machu Picchu 04-nov 19:00. No se leyó su narración, no se registró QA, no se validó estructura ni se creó/movió/promovió ninguna copia para esos slots. La presencia de un nombre/ruta en el inventario de 88 es solo inventario de rutas; no implica auditoría de contenido del artefacto excluido.
