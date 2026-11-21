@@ -320,5 +320,64 @@ class RegistroEditorialTests(unittest.TestCase):
         self.assertEqual(result["ocupaciones"][0]["slot_local"], "13:30")
         self.assertTrue(result["ocupaciones"][0]["timestamp_mismatch"])
         self.assertEqual(len(result["inconsistencias_timestamp"]), 1)
+
+    def test_slot_occupancy_reads_nested_youtube_schedule(self):
+        self.write_json(
+            registro_editorial.ROOT / "proyectos" / "2026-11-17_nuevo" / "programacion.json",
+            {
+                "project_id": "2026-11-17_nuevo",
+                "slot": "dato del día 2026-11-17 23:30 CDMX",
+                "youtube": {
+                    "video_id": "abc123",
+                    "privacyStatus": "private",
+                    "publishAt": "2026-11-18T05:30:00Z",
+                },
+            },
+        )
+        result = registro_editorial.ocupacion_slots("2026-11-17")
+        row = result["ocupaciones"][0]
+        self.assertEqual(row["video_id"], "abc123")
+        self.assertEqual(row["slot_local"], "23:30")
+        self.assertEqual(row["estado_evidencia"], "PROGRAMADO_CON_VIDEO_ID")
+
+    def test_slot_occupancy_reads_nested_published_video_record(self):
+        self.write_json(
+            registro_editorial.ROOT / "salidas" / "2026-11-16_publicado" / "publicacion.json",
+            {
+                "project_id": "2026-11-16_publicado",
+                "resultado": {
+                    "youtube": {
+                        "kind": "youtube#video",
+                        "id": "video456",
+                        "snippet": {"publishedAt": "2026-11-16T13:00:23Z"},
+                    }
+                },
+            },
+        )
+        result = registro_editorial.ocupacion_slots("2026-11-16")
+        row = result["ocupaciones"][0]
+        self.assertEqual(row["video_id"], "video456")
+        self.assertEqual(row["slot_local"], "07:00")
+        self.assertEqual(row["estado_evidencia"], "PUBLICACION_REGISTRADA")
+
+    def test_slot_occupancy_checks_referenced_media_in_repository_tree(self):
+        project_dir = registro_editorial.ROOT / "proyectos" / "2026-11-22_media"
+        self.write_json(
+            project_dir / "storyboard.json",
+            {
+                "project_id": "2026-11-22_media",
+                "fecha_objetivo": "2026-11-22",
+                "slot_local": "13:30",
+                "asset_filename": "capsula.mp4",
+                "export": {"filename": "capsula.mp4"},
+            },
+        )
+        missing = registro_editorial.ocupacion_slots("2026-11-22")["ocupaciones"][0]
+        self.assertEqual(missing["media_status"], "MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO")
+        (project_dir / "capsula.mp4").write_bytes(b"test")
+        verified = registro_editorial.ocupacion_slots("2026-11-22")["ocupaciones"][0]
+        self.assertEqual(verified["media_status"], "VERIFICADOS_EN_REPOSITORIO")
+        self.assertEqual(verified["missing_media_references"], [])
+
 if __name__ == "__main__":
     unittest.main()
