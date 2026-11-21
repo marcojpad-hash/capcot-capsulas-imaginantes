@@ -115,3 +115,39 @@ La copia de `feature/data/horarios.json` conserva corte 2026-11-09. `scripts/rot
 3. Confirmar explícitamente si la ventana 16:30–18:00 se usa para publicaciones o sigue siendo solo prueba.
 4. Reconciliar el selector de rotación con la política fechada de horarios sin modificar `data/*.json` ni ampliar el dispatch a carpetas heredadas.
 5. Mantener los cinco storyboards fuera de cola hasta que todas las compuertas y la recepción estén respaldadas.
+
+
+## 10. Relectura del backlog interdiario 18–20 nov
+
+Se releyeron los seis storyboards que siguen en `proyectos/`. Sus QA existentes no cambiaron; no se repitió ninguna lectura PASS. Los SHA siguientes son los blobs leídos en esta revisión.
+
+| project_id | blob actual | slot | QA | estructura leída | compuerta pendiente |
+|---|---|---:|---:|---|---|
+| `2026-11-18_dato-catorce-campos-hidrotermales` | `912fb2222ea5106d763c9e94bd95d9f9d66ebe41` | 23:30 | FAIL 68 | 8 escenas, 198 palabras, 84 s; mapa con punto regional | QA FAIL y **CONFLICTO_DE_SLOT_ENTRE_RAMAS** con Beta Pictoris en main |
+| `2026-11-18_dato-kuroshio-puente-atmosferico` | `2046152ade90fffaf9527d180e13cc5f6009fb60` | 17:00 | PASS 90 | 8 escenas, 222 palabras, 84 s; capa de regiones válida | DOI `10.1038/s41561-026-02139-2` sigue `PENDIENTE_RESOLVEDOR`; 17:00 sigue siendo ventana de prueba |
+| `2026-11-19_dato-dia-luz-dos-manos-oro-poroso` | `a211420b3a8850a1866e9311b5930c4360b0703c` | 23:30 | PASS 91 | 8 escenas, 188 palabras, 84 s; puntos institucionales etiquetados como afiliaciones | DOI `10.1038/s41467-026-78158-9` sin resolver independientemente |
+| `2026-11-19_dato-estrella-dentro-de-estrella` | `b55ae1d811cd70fd8953efb1f443851478b611dd` | 17:00 | PASS 90 | 8 escenas, 197 palabras, 84 s; coordenadas ecuatoriales J2000 RA/Dec | DOI `10.1038/s41586-026-11221-z` pendiente y estilo repetido el mismo día |
+| `2026-11-20_dato-dia-atlantico-humedad-sapropeles` | `8f93c79d319da22c7af80e72f4b1a41c0446abda` | 23:30 | PASS 91 | 8 escenas, 215 palabras, 84 s; punto IODP U1385 | DOI `10.1038/s41561-026-02141-8` sin resolver independientemente |
+| `2026-11-20_dato-marea-cerebral-en-sueno` | `5941a27c80610e22402dd98d36150464bbd4fa48` | 17:00 | PASS 92 | 8 escenas, 218 palabras, 84 s; campus BU/MIT etiquetados como aproximados | DOI `10.1038/s43587-026-01270-4` pendiente y 17:00 sigue siendo ventana de prueba |
+
+**Corrección de mapa:** la capa de la estrella declara `Ecuatoriales J2000 (RA/Dec)`; el validador vigente acepta RA/Dec además de lat/lon. No se conserva la objeción anterior de que esa capa carece de coordenadas válidas. La compuerta DOI sigue abierta.
+
+**Rotación:** Juno, publicado en main el 19-nov a las 13:30, usa `art_deco_poster`; la estrella del 19-nov a las 17:00 usa el mismo estilo. La repetición queda confirmada por los dos storyboards y el registro de publicación de main, no por los JSON de rotación: `data/estilos_usados.json` termina el 28-oct y `data/rotacion.json` el 31-oct. Ambos siguen solo lectura y no se corrigieron.
+
+**Producción preexistente en main:**
+- Beta Pictoris ocupa el 18-nov 23:30 con YouTube ID `2a36r5QOvi4`, duración registrada 61.27 s y programación privada. No redispatchar.
+- REACT proteínas/microbios conserva programación para el 20-nov 13:45 (`publish_at=2026-11-20T19:45:00Z`). Su storyboard referencia `capsula.mp4`, pero el MP4 no aparece en el árbol de main: `PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR` y `MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO`.
+- Ninguno de los seis storyboards de 18–20 nov tiene entrada plana exacta, salida ni estado Grok en feature. `cola/estado/` contiene cero archivos en el árbol actual; la recepción sigue `RECEPCION_GROK_NO_CONFIRMADA`.
+
+## 11. Relectura de selector, Actions e Issues
+
+- `.github/workflows/capcot-grok-dispatch.yml` selecciona JSON planos de primer nivel en `cola/entrada/`; no recoge `proyectos/<id>/storyboard.json` ni JSON anidados. `scripts/procesar_cola.py` contempla el nivel raíz y un nivel anidado; `registro_editorial.py` recorre recursivamente. El selector del workflow no equivale a esos lectores. No se amplió el dispatch ni se modificó el workflow.
+- `Trabajador de cola`, run [44875678607](https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/actions/runs/44875678607), terminó SUCCESS con salida literal `[trabajador] sin trabajo en cola.`; corrió en main, no en feature.
+- Los checks CodeQL del PR #3 posteriores a los commits de documentación terminaron SUCCESS: runs 44892824568 y 44892820908. No fueron dispatches Grok.
+- Dependabot, run 44888462739, terminó FAILURE: `Failed to parse GITHUB_REGISTRIES_PROXY environment variable` y `dependency_file_not_found` para el directorio `/`. No se cambió configuración en main.
+- El callback programado 44890871984 terminó SUCCESS. Su workflow tiene permiso de Issues y contiene `gh issue create` para delegaciones; esta auditoría no lo disparó. La búsqueda actual no encontró Issues abiertos con etiqueta `callback`.
+- No se encontró ejecución reciente de `capcot-grok-dispatch` entre las 100 ejecuciones consultadas. El estado de `GROK_WEBHOOK_URL` y `GROK_WEBHOOK_TOKEN` sigue sin inferirse.
+- PRs abiertos sin merge: #3 (draft, feature→main), #13 y #14 (→main), #4 y #6 (feature). No se cambió ni aprobó ninguno.
+- Issues abiertos con etiquetas `cola` o `bloqueado` en CAPCOT: cero. En el ledger de main, `CUASARES-AUDITORIA` pertenece a revisión independiente, `GROK-RECEPCION` está bloqueado en Grok y `MIGRACION-ACUSE` corresponde a otro modelo; ninguno está asignado a ChatGPT.
+
+**Cierre ampliado:** seis proyectos interdiarios re-leídos; 5 PASS preservados y 1 FAIL preservado. No se repitió QA narrativo, no se promovió ningún proyecto, no se generaron medios ni se consumieron créditos. Los JSON de `data/`, los workflows, main, los estados Grok y las decisiones editoriales permanecen intactos.
