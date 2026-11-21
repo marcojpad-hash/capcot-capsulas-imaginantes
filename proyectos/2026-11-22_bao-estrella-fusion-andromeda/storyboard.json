@@ -1,0 +1,377 @@
+{
+  "_schema": "CAPCOT_STORYBOARD_TEXT_V2",
+  "project_id": "2026-11-22_bao-estrella-fusion-andromeda",
+  "serie": "Datos y ociosidades",
+  "title": "La estrella que se tragó a otra",
+  "titulo": "Bao llevaba años cambiando de brillo",
+  "language": "es-MX",
+  "aspect_ratio": "9:16",
+  "target_duration_seconds": 84,
+  "estructura": "pregunta",
+  "audience": "Público general con interés en astronomía y evolución estelar",
+  "occasion": "Cápsula vertical de divulgación científica para Shorts, TikTok y Reels",
+  "resumen": "AT 2025abao mostró un aumento gradual de brillo durante unos siete años. La combinación de fotometría, espectros y observaciones infrarrojas respalda que la compañera se hundió en la envoltura de una gigante y terminó fusionándose con ella.",
+  "narrative_contract": {
+    "central_question": "¿Cómo se puede reconstruir la fusión de dos estrellas a partir de un brillo que cambió durante años?",
+    "promise": "El espectador entenderá cómo el aumento gradual de brillo, la erupción y el polvo infrarrojo revelaron una fase de envoltura común.",
+    "stakes": "La fase de envoltura común es difícil de observar y ayuda a explicar cómo algunas parejas estelares terminan extremadamente juntas.",
+    "scientific_turn": "El brillo no fue solo un destello repentino: la señal gradual de unos siete años, seguida por la erupción y el polvo expulsado, respalda una evolución de envoltura común que terminó en fusión.",
+    "evidence_limit": "La reconstrucción combina fotometría, espectros y observaciones infrarrojas de un sistema concreto; no es una grabación directa del instante de fusión ni permite generalizar el desenlace a todas las binarias.",
+    "payoff": "El brillo lento que abrió la historia se entiende como huella del frenado orbital que llevó a la compañera hacia la gigante."
+  },
+  "trend_source": {
+    "termino": "AT 2025abao: brillo gradual y fusión en una envoltura común",
+    "fecha_publicacion": "2026-11-18",
+    "url": "https://doi.org/10.1038/s41586-026-11221-z"
+  },
+  "editorial_status": "PROPUESTA_PENDIENTE_DE_GROK",
+  "arco": {
+    "hook_medias_res": "El brillo de Bao lleva años aumentando y todavía no sabemos qué lo causa.",
+    "desarrollo": "La ubicación en Andrómeda, las masas estimadas y la pérdida de energía orbital explican cómo una compañera puede hundirse dentro de la envoltura de una gigante.",
+    "cierre_historia": "La señal gradual, la erupción y el polvo infrarrojo permiten reconstruir la fusión y la expulsión de material.",
+    "reflexion_o_pregunta": "El caso muestra una vía posible para la evolución de binarias, no una regla para todas."
+  },
+  "estilo_id": "art_deco_poster",
+  "estilo_visual": "Póster Art Déco",
+  "visual_identity": {
+    "style_id": "art_deco_poster",
+    "style_name": "Póster Art Déco",
+    "prompt_base": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text",
+    "palette": "teal, dorado, negro, crema",
+    "lighting": "Halo radial controlado alrededor de las estrellas; contraste alto, sin brillos tridimensionales.",
+    "texture": "Grano fino de impresión sobre papel mate; planos limpios y bordes geométricos.",
+    "composition": "Simetría radial art déco; un motivo central por plano; encuadre vertical 9:16 con espacio negativo para subtítulos.",
+    "negative_prompt": "undefined Sin texto generado, cifras flotantes, logotipos ni marcas de agua.",
+    "reference_assets": [],
+    "seed": null,
+    "seed_policy": "Mantener paleta, geometría y siluetas de la misma pareja estelar; variar solo escala, distancia y encuadre entre escenas."
+  },
+  "typography_identity": {
+    "font_family": "DejaVu Sans",
+    "font_weight": "700 para gancho; 400 para subtítulos",
+    "title_style": "Máximo seis palabras; presente desde frame 0 en postproducción",
+    "subtitle_style": "Bloques de máximo tres palabras; zona segura inferior",
+    "hierarchy": "Gancho > dato/etiqueta > subtítulos",
+    "animation": "Un movimiento por plano; tipografía en postproducción"
+  },
+  "voice": {
+    "engine": "edge-tts",
+    "voice_id": "es-MX-JorgeNeural",
+    "language": "es-MX",
+    "rate": "+7%",
+    "pitch": "-2Hz",
+    "pad_seconds": 0.3,
+    "modo_pausas": "continuo"
+  },
+  "sources": [
+    {
+      "id": "SRC-001",
+      "cita_corta": "An inspiral of a star inside a common envelope with its giant companion",
+      "url": "https://doi.org/10.1038/s41586-026-11221-z",
+      "doi": "10.1038/s41586-026-11221-z",
+      "accessed": "2026-11-21",
+      "publication_date": "2026-11-18",
+      "supports": [
+        "La señal precursora de brillo gradual durante aproximadamente siete años.",
+        "Las masas estimadas de la gigante y su compañera.",
+        "La interpretación de una fase de envoltura común que termina en fusión.",
+        "La reconstrucción de la expulsión de material y la eficiencia de la evolución de envoltura común."
+      ],
+      "verification_status": "VERIFICADO_RESOLVEDOR"
+    },
+    {
+      "id": "SRC-002",
+      "cita_corta": "NASA: Data Clinches First-of-Its-Kind Stellar Merger",
+      "url": "https://science.nasa.gov/missions/webb/nasa-data-clinches-first-of-its-kind-stellar-merger/",
+      "doi": null,
+      "accessed": "2026-11-21",
+      "publication_date": "2026-11-18",
+      "supports": [
+        "La distancia aproximada a Andrómeda.",
+        "La observación de Webb 47 días después del pico de la erupción.",
+        "La cronología del aumento de brillo y la interpretación del equipo."
+      ],
+      "verification_status": "VERIFICADO_RESOLVEDOR"
+    },
+    {
+      "id": "SRC-003",
+      "cita_corta": "NASA: AT 2025abao in the Andromeda Galaxy",
+      "url": "https://science.nasa.gov/asset/webb/at-2025abao-in-the-andromeda-galaxy/",
+      "doi": null,
+      "accessed": "2026-11-21",
+      "publication_date": "2026-11-18",
+      "supports": [
+        "La identificación de AT 2025abao en Andrómeda.",
+        "Las coordenadas ecuatoriales RA 00:38:48.60 y Dec +40:46:08.23."
+      ],
+      "verification_status": "VERIFICADO_RESOLVEDOR"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_001",
+      "arc": "hook_medias_res",
+      "duration_seconds": 8,
+      "on_screen_text": "Brillo en ascenso",
+      "visual_description": "Dos estrellas en órbita cerrada; la gigante ocupa casi todo el encuadre y la compañera deja un arco luminoso cada vez más estrecho. El brillo aumenta de forma gradual, sin explosión instantánea.",
+      "ambiente": "Pulso grave lento que crece casi imperceptiblemente.",
+      "sfx": [
+        "Pulso bajo ascendente."
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "dramatic_beat": "La luz cambia durante años, pero todavía no aparece una causa visible.",
+      "scene_function": "Abrir con la anomalía ya en curso y formular la pregunta causal.",
+      "causal_bridge_from_previous": "Apertura en curso: el aumento gradual de brillo exige averiguar qué está ocurriendo dentro del sistema.",
+      "question_state": "Se observa una subida lenta de brillo; su causa sigue sin resolverse.",
+      "reason_to_continue": "La ubicación y las masas de las estrellas permitirán entender la escala del sistema.",
+      "new_information": "La señal es un cambio gradual, no un destello aislado.",
+      "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text Dos esferas estelares estilizadas, una gigante y otra pequeña, unidas por una órbita que se estrecha."
+    },
+    {
+      "id": "scene_002",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "on_screen_text": "Andrómeda · AT 2025abao",
+      "visual_description": "Carta celeste de Andrómeda con un único punto marcado para AT 2025abao; el resto del mapa queda sobrio y sin pines adicionales.",
+      "ambiente": "Viento estelar tenue y estable.",
+      "sfx": [
+        "Tono breve de localización."
+      ],
+      "source_ids": [
+        "SRC-002",
+        "SRC-003"
+      ],
+      "dramatic_beat": "El fenómeno deja de ser abstracto: tiene una ubicación celeste y una pareja concreta.",
+      "scene_function": "Situar el sistema y preparar la comparación de masas.",
+      "causal_bridge_from_previous": "La anomalía de brillo pertenece a un sistema concreto, no a una estrella aislada.",
+      "question_state": "Ya sabemos dónde ocurre; falta entender qué cuerpos interactúan.",
+      "reason_to_continue": "La diferencia de masas explica por qué la compañera puede quedar envuelta por la gigante.",
+      "new_information": "AT 2025abao está en Andrómeda, a unos 2.5 millones de años luz.",
+      "capa": {
+        "tipo": "mapa",
+        "titulo": "Ubicación celeste de AT 2025abao",
+        "fuente": "SRC-003",
+        "source_ids": [
+          "SRC-003"
+        ],
+        "puntos": [
+          {
+            "id": "AT2025abao",
+            "nombre": "AT 2025abao",
+            "ra_deg": 9.7025,
+            "dec_deg": 40.7689528,
+            "sistema_coordenadas": "RA/Dec ecuatorial; época no especificada en la ficha NASA",
+            "etiqueta": "AT 2025abao"
+          }
+        ],
+        "areas": [],
+        "precision_note": "NASA publica RA 00:38:48.60 y Dec +40:46:08.23; los grados son conversión aritmética directa. Son coordenadas celestes, no latitud/longitud terrestre."
+      },
+      "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text Carta celeste art déco de Andrómeda, un único punto preciso para AT 2025abao, sin constelaciones inventadas."
+    },
+    {
+      "id": "scene_003",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "on_screen_text": "7 M☉ / 0.7 M☉",
+      "visual_description": "Comparación de dos discos estelares con barras proporcionales 10 a 1; la gigante domina el cuadro y la compañera aparece claramente menor.",
+      "ambiente": "Zumbido orbital con dos pulsos de distinta intensidad.",
+      "sfx": [
+        "Dos pulsos comparativos."
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "dramatic_beat": "La compañera es mucho menos masiva que la gigante que la rodea.",
+      "scene_function": "Contextualizar las masas antes de explicar el mecanismo.",
+      "causal_bridge_from_previous": "La ubicación ya está fijada; ahora las masas muestran la asimetría entre los dos cuerpos.",
+      "question_state": "La pareja es desigual; todavía falta explicar cómo se pierde la órbita.",
+      "reason_to_continue": "El gas de la gigante conecta las dos masas y actúa como freno.",
+      "new_information": "Las masas estimadas son aproximadamente siete y 0.7 masas solares.",
+      "capa": {
+        "tipo": "dato",
+        "etiqueta": "Masa estimada: gigante / compañera",
+        "valor": "≈7 M☉ / ≈0.7 M☉",
+        "unidad": "masas solares",
+        "fuente": "SRC-001; SRC-002",
+        "source_ids": [
+          "SRC-001",
+          "SRC-002"
+        ],
+        "limite": "Estimaciones para AT 2025abao; no son valores universales."
+      },
+      "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text Dos discos estelares art déco con barras de masa proporcionales, sin etiquetas numéricas generadas."
+    },
+    {
+      "id": "scene_004",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "on_screen_text": "Envoltura común",
+      "visual_description": "La compañera atraviesa capas de gas alrededor de la gigante; las líneas orbitales se comprimen hacia el centro y el gas forma una envoltura compartida.",
+      "ambiente": "Capa densa, opaca, con un zumbido grave.",
+      "sfx": [
+        "Arrastre grave corto.",
+        "Onda de compresión."
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "dramatic_beat": "El gas deja de ser fondo: se convierte en el freno que cambia la órbita.",
+      "scene_function": "Explicar el mecanismo físico central.",
+      "causal_bridge_from_previous": "La diferencia de masas importa porque la compañera se mueve dentro del gas de la gigante.",
+      "question_state": "La envoltura compartida puede quitar energía orbital y encoger la órbita.",
+      "reason_to_continue": "La señal de brillo permitirá comprobar que el proceso dejó una huella temporal.",
+      "new_information": "El arrastre del gas puede llevar a las estrellas a una fusión.",
+      "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text Una envoltura de gas estilizada rodea a dos estrellas; una órbita geométrica se contrae hacia el núcleo."
+    },
+    {
+      "id": "scene_005",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "on_screen_text": "2018 → 2025",
+      "visual_description": "Línea temporal horizontal de siete años con un brillo que crece de forma gradual; al final, la órbita se cierra en siete pasos discretos.",
+      "ambiente": "Tono ascendente sostenido, sin crescendo explosivo.",
+      "sfx": [
+        "Siete pulsos suaves y regulares."
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "dramatic_beat": "La duración del cambio de brillo convierte una anomalía en una pista temporal.",
+      "scene_function": "Conectar la evolución orbital con la observación de siete años.",
+      "causal_bridge_from_previous": "El arrastre del gas predice un cambio prolongado, no solo un destello repentino.",
+      "question_state": "La luz subió durante años; la secuencia apunta a una evolución gradual.",
+      "reason_to_continue": "La observación infrarroja posterior permite examinar el material expulsado.",
+      "new_information": "El brillo aumentó desde 2018 durante aproximadamente siete años.",
+      "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text Línea temporal geométrica 2018–2025 con una luminosidad que aumenta gradualmente; siete marcas regulares."
+    },
+    {
+      "id": "scene_006",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "on_screen_text": "47 días después",
+      "visual_description": "Representación infrarroja de polvo alrededor del sistema, observada después del pico; el encuadre muestra material expulsado, no el instante de la fusión.",
+      "ambiente": "Ruido suave de polvo expandiéndose.",
+      "sfx": [
+        "Destello amortiguado.",
+        "Eco infrarrojo breve."
+      ],
+      "source_ids": [
+        "SRC-002"
+      ],
+      "dramatic_beat": "Webb no observa el choque en directo; observa el polvo que quedó como evidencia.",
+      "scene_function": "Introducir la observación posterior que limita y fortalece la reconstrucción.",
+      "causal_bridge_from_previous": "La cronología termina en una erupción; el polvo posterior conserva señales del proceso interno.",
+      "question_state": "La fusión no se filmó en directo; hay datos infrarrojos posteriores.",
+      "reason_to_continue": "Al combinar el polvo con otros telescopios, el equipo puede reconstruir qué ocurrió.",
+      "new_information": "Webb observó el sistema 47 días después del pico de la erupción.",
+      "capa": {
+        "tipo": "dato",
+        "etiqueta": "Observación de Webb",
+        "valor": "47 días",
+        "unidad": "después del pico de la erupción",
+        "fuente": "SRC-002",
+        "source_ids": [
+          "SRC-002"
+        ],
+        "limite": "Observación posterior del polvo; no es una imagen del instante de fusión."
+      },
+      "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text Nube de polvo infrarroja estilizada alrededor de una pareja estelar, con luz tenue y sin representar el choque como una filmación."
+    },
+    {
+      "id": "scene_007",
+      "arc": "cierre_historia",
+      "duration_seconds": 10,
+      "on_screen_text": "Polvo expulsado",
+      "visual_description": "El polvo forma una envoltura amplia; líneas espectrales abstractas convergen en un diagrama de energía orbital y material expulsado.",
+      "ambiente": "Oleada breve que se disipa en partículas finas.",
+      "sfx": [
+        "Expansión corta.",
+        "Partículas que se apagan."
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "dramatic_beat": "Las observaciones encajan en una reconstrucción del material expulsado durante la fusión.",
+      "scene_function": "Pagar la promesa explicando qué se pudo medir.",
+      "causal_bridge_from_previous": "El polvo observado después del pico se compara con espectros y datos de otros telescopios.",
+      "question_state": "La interpretación de fusión está apoyada por varias observaciones, no por una sola imagen.",
+      "reason_to_continue": "Falta delimitar qué puede concluirse de un caso excepcional.",
+      "new_information": "El equipo reconstruyó la fusión y estimó la masa expulsada durante la evolución de envoltura común.",
+      "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text Envoltura de polvo art déco expandiéndose alrededor del sistema, con un diagrama geométrico de energía sin cifras decorativas."
+    },
+    {
+      "id": "scene_008",
+      "arc": "reflexion_o_pregunta",
+      "duration_seconds": 10,
+      "on_screen_text": "Caso singular",
+      "visual_description": "La compañera deja una estela de polvo; al fondo aparecen otras parejas estelares como siluetas neutras, sin sugerir que todas repetirán el mismo desenlace.",
+      "ambiente": "Silencio amplio con un eco final.",
+      "sfx": [
+        "Eco corto que se desvanece."
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "dramatic_beat": "La historia cierra con una explicación, pero conserva el límite de lo que un solo sistema permite afirmar.",
+      "scene_function": "Explicitar el límite de evidencia y devolver la atención a la anomalía inicial.",
+      "causal_bridge_from_previous": "La reconstrucción explica este sistema; no establece una regla universal para todas las binarias.",
+      "question_state": "Sabemos cómo pudo terminar AT 2025abao, no cómo terminarán todas las parejas.",
+      "reason_to_continue": "La pregunta final invita a reconocer otras señales tempranas sin convertirlas en certezas.",
+      "new_information": "Algunas compañeras pueden sobrevivir; el resultado depende de las condiciones del sistema.",
+      "image_prompt": "1920s art deco travel poster illustration, streamlined geometric shapes, gold and teal, airbrushed gradients, one bold central subject, minimal background, not photorealistic, vertical 9:16, no text Una pareja estelar estilizada y una estela de polvo que se desvanece; otras parejas quedan como siluetas lejanas, sin destino predeterminado."
+    }
+  ],
+  "cortinilla_fuentes": {
+    "duration_seconds": 6,
+    "titulo": "Fuentes",
+    "aviso": "Divulgación prevista para la versión final; declarar solo los recursos realmente generados.",
+    "firma": "Datos y ociosidades",
+    "source_ids": [
+      "SRC-001",
+      "SRC-002",
+      "SRC-003"
+    ]
+  },
+  "audio": {
+    "music_asset": null,
+    "music_plan": "Cama prevista; Grok la genera o selecciona en producción",
+    "music_license": null
+  },
+  "export": {
+    "resolution": "1080x1920",
+    "fps": 30,
+    "render_status": "NOT_GENERATED"
+  },
+  "publicacion": {
+    "status": "PENDIENTE_DECISION_GROK",
+    "platforms": [
+      "YouTube Shorts",
+      "TikTok",
+      "Facebook Reels"
+    ],
+    "note": "No publicar ni programar desde preproducción textual."
+  },
+  "estado": "BORRADOR_EN_PROYECTOS_NO_APTO_PARA_PROMOCION",
+  "production_mode": "storyboard_only",
+  "validation_notes": [
+    "Borrador de investigación; el investigador no realiza QA narrativo independiente ni crea narrative_qa.",
+    "Pendiente revisión en frío por un auditor distinto del redactor.",
+    "Pendiente validador estructural real y verificación DOI/Crossref en el entorno del repositorio.",
+    "No se generaron medios, renders, audio, video ni archivos auxiliares."
+  ],
+  "linea_tematica_provisional": "Actualidad",
+  "approved_assets": [],
+  "risk_notes": [
+    "La fusión es la interpretación del equipo a partir de observaciones multibanda y modelos; no presentarla como una grabación directa del instante.",
+    "El resultado corresponde a AT 2025abao y no permite generalizar el desenlace a todas las binarias."
+  ],
+  "fecha_objetivo": "2026-11-22",
+  "slot_local": "13:30"
+}
