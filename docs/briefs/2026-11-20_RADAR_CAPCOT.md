@@ -261,3 +261,7 @@ Se descartaron como “recientes” Longipteryx y el estudio de mortalidad de mu
 El slot 07:00 cae dentro de la ventana matutina 06:30–07:30 y el sábado es día preferente. La revisión cruzada encontró ocupados 13:30 (oxoboranos, main), 17:00 (púlsar, proyecto feature), 19:00 (robot orbital, main) y 23:30 (Fentale, proyecto feature). 07:00 estaba libre. Con el nuevo borrador se alcanza el máximo de cinco piezas/reservas del día: dos propias y tres externas. No se deben añadir más proyectos para esa fecha.
 
 La rotación del nuevo borrador usa `papel_rasgado_capas`, estructura `sabias_que` y cama `circuito_neural`, sin repetir las combinaciones de los otros cuatro elementos del día.
+
+### Corrección de verificación — 20-nov-2026 20:22 CDMX
+
+El DOI `10.1038/s41586-026-11155-6` **sí resolvió**: al seguir el enlace DOI desde el registro PubMed, el resolvedor redirigió al artículo Nature correcto. El contenido final de Nature no pudo abrirse por redirección a autorización, pero el registro PubMed muestra DOI, fecha 18-nov-2026 y abstract; el resultado indexado del artículo Nature expone los detalles de métodos y resultados. Crossref REST siguió sin estar accesible. Se actualizó el storyboard: `doi_verification_status=VERIFICADO_RESOLVEDOR`. Esto cierra la compuerta DOI, pero no la revisión narrativa independiente ni el validador estructural oficial; la pieza sigue en proyectos y no se promueve.
