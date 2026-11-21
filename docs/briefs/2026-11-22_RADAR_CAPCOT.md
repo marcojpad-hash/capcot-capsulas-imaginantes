@@ -56,26 +56,37 @@ Se usaron páginas oficiales y artículos primarios como respaldo. El fallo de u
 - **Inferencia:** las observaciones multibanda respaldan la interpretación de evolución de envoltura común y fusión; no son una grabación directa del instante.
 - **Recomendación:** SELECCIONADO para 22-nov, 13:30. El DOI resolver redirigió a la página Nature; el acceso a la página final quedó limitado por el intermediario. Crossref API no entregó respuesta utilizable en esta sesión.
 
-### 2. Egoviruses — parientes cercanos de los poxvirus en metagenomas intestinales
+
+### 2. Intensificación del uso agrícola tropical y multidiversidad
+- **Fuente primaria:** Nature, *Tropical land-use intensification restructures biodiversity*, publicado 18-nov-2026.
+- **DOI:** [10.1038/s41586-026-11298-6](https://doi.org/10.1038/s41586-026-11298-6).
+- **Datos asociados:** Figshare, [10.6084/m9.figshare.31784410](https://doi.org/10.6084/m9.figshare.31784410), publicado 19-nov-2026.
+- **Observación:** 24 grupos taxonómicos, 40.049 especies/OTU, 32 parcelas en dos paisajes de Jambi, Sumatra, comparando bosque, agroforestería de caucho, caucho y palma aceitera.
+- **Cálculo publicado:** la multidiversidad de paisaje cae aproximadamente 78% en monocultivos y la multidiversidad local cerca de 50%. Son índices compuestos estandarizados, no porcentajes de especies individuales desaparecidas.
+- **Inferencia:** la intensificación reorganiza la composición; el paper no encuentra una homogeneización consistente para todos los grupos.
+- **Mapa:** Extended Data Fig. 1 muestra las 32 parcelas y los paisajes Bukit Duabelas y Harapan, pero la figura no publica coordenadas numéricas. El dataset Figshare fue identificado, pero su inventario de archivos no pudo recuperarse en esta sesión.
+- **Decisión:** CANDIDATO prioritario para 22-nov 19:00 si se recuperan coordenadas de parcela verificables. Estado actual `PENDING_MAP_COORDINATES`; no crear storyboard ni sustituir parcelas por centroides.
+
+### 3. Egoviruses — parientes cercanos de los poxvirus en metagenomas intestinales
 - **Fuente primaria:** Nature, *Closest relatives of poxviruses prevail in human and animal guts worldwide*, 18-nov-2026.
 - **DOI:** [10.1038/s41586-026-11283-z](https://doi.org/10.1038/s41586-026-11283-z).
 - **Observación:** el estudio describe linajes virales relacionados con poxvirus en conjuntos de datos intestinales.
 - **Límite:** la predicción de hospedadores no equivale a demostrar infección humana; la distribución publicada no proporciona puntos geográficos precisos aptos para el mapa exigido.
 - **Decisión:** CANDIDATO; `PENDING_MAP_COORDINATES`. No crear storyboard ni convertir presencia en metagenomas en afirmación de enfermedad.
 
-### 3. Hielo antiguo más allá de Neptuno
+### 4. Hielo antiguo más allá de Neptuno
 - **Fuente primaria:** Science Advances, DOI [10.1126/sciadv.aeg1602](https://doi.org/10.1126/sciadv.aeg1602), publicado 11-nov-2026.
 - **Respaldo oficial:** NASA publicó la explicación el 18-nov-2026.
 - **Observación:** el trabajo analiza partículas de polvo interplanetario y proporciones isotópicas compatibles con material formado en regiones frías del Sistema Solar exterior.
 - **Límite:** el paper tiene diez días al corte y no se obtuvo una coordenada puntual de origen para un mapa sin inventar ubicación.
 - **Decisión:** CANDIDATO NO SELECCIONADO; no usar para 23:30 y no crear storyboard sin mapa respaldado.
 
-### 4. BepiColombo — fase de inserción orbital en Mercurio
+### 5. BepiColombo — fase de inserción orbital en Mercurio
 - **Fuente oficial:** ESA, *Quick look at Mercury orbit insertion*.
 - **Observación:** la página de misión identifica el 21-nov-2026 como fecha de la fase de inserción; al corte de 12:03 CDMX no se encontró confirmación oficial de resultado final.
 - **Decisión:** `PENDING_EVENT_CONFIRMATION`. No narrar éxito antes de confirmación; tampoco es candidato para el dato del día del 22-nov sin una publicación del propio 22-nov.
 
-### 5. Sonificación de estrellas bebé por Chandra
+### 6. Sonificación de estrellas bebé por Chandra
 - **Fuente oficial:** NASA/Chandra, publicación 17-nov-2026.
 - **Observación:** paquete de sonificación de datos astronómicos, no un hallazgo nuevo independiente.
 - **Decisión:** NO SELECCIONADO; material audiovisual de divulgación, no una historia científica nueva con evidencia y mapa suficientes.
