@@ -199,12 +199,12 @@
             "id": "gitgaat_reference",
             "label": "Territorio Gitga'at, área regional de referencia",
             "bounds": [
-              -129.6,
               53.18,
-              -129,
-              53.68
+              -129.6,
+              53.68,
+              -129
             ],
-            "bounds_label": "Hakai Data Catalogue spatial extent; orden W,S,E,N."
+            "bounds_label": "Hakai Data Catalogue spatial extent; orden lat_min, lon_min, lat_max, lon_max."
           }
         ],
         "titulo": "Sistema de fiordos Kitimat / territorio Gitga'at",
@@ -389,5 +389,31 @@
     "Las coberturas 2.3× y 94× son promedios reportados; no implican cobertura uniforme ni genomas completos de las 58 muestras.",
     "La geometría cartográfica es una caja regional de referencia; no son coordenadas exactas de las muestras.",
     "La técnica no se presenta como sustituto universal de biopsias."
-  ]
+  ],
+  "narrative_qa": {
+    "status": "PASS",
+    "score": 90,
+    "review_basis": "lectura_en_frio_solo_narracion",
+    "checks": {
+      "pregunta_central_reconstruible": true,
+      "apertura_in_medias_res": true,
+      "progresion_por_escena": true,
+      "transiciones_causales": true,
+      "giro_cientifico_explicado": true,
+      "limite_evidencia_explicito": true,
+      "payoff_cierre_apertura": true
+    },
+    "critical_flags": [],
+    "reviewer_role": "auditor_capcot_independiente",
+    "check_evidence": {
+      "pregunta_central_reconstruible": "La pregunta explícita de la escena 2 se desprende de la muestra recogida en la escena 1.",
+      "apertura_in_medias_res": "La primera frase abre con el dron cruzando el soplo y recuperando gotas.",
+      "progresion_por_escena": "La secuencia avanza de recolección a lugar, muestra, ADN endógeno, cobertura, límites y consecuencia.",
+      "transiciones_causales": "Cada tramo responde qué se recogió, dónde, cuánto material, qué contenía y qué permitió obtener.",
+      "giro_cientifico_explicado": "El ADN endógeno de las gotas permitió secuenciar genomas nucleares y mitocondriales, con coberturas diferenciadas.",
+      "limite_evidencia_explicito": "Se acota a 58 muestras de 26 yubartas y se explicita la variación esperable entre especies y condiciones.",
+      "payoff_cierre_apertura": "El cierre vuelve a la muestra no invasiva y limita su alcance; no abre un tema distinto."
+    },
+    "reviewed_on": "2026-11-21"
+  }
 }
