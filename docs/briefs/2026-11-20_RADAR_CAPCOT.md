@@ -205,3 +205,20 @@ Esta nota no cambia el storyboard ni repite su QA narrativo; corrige la interpre
 - La página editorial primaria de Nature Geoscience está indexada y muestra el artículo y el DOI `10.1038/s41561-026-02137-4`; el acceso HTML directo y las consultas Crossref/doi.org no completaron. `doi_verification_status=PENDIENTE_RESOLVEDOR`. El borrador no es promocionable hasta completar esa verificación y el validador oficial.
 - El storyboard permanece solo en `proyectos/`: después de crearlo, la auditoría independiente registró `narrative_qa=PASS 90/100` con siete checks true y flags vacías. No se creó estado Grok, entrada de cola ni medios; `approved_assets=[]`, `render_status=NOT_GENERATED`, publicación pendiente.
 - El proyecto de púlsar de 21-nov a las 17:00 sigue ocupando ese slot y tiene QA narrativo `FAIL 83`; no se reescribió su narración durante esta ejecución.
+
+
+## Addendum de actualización — 20-nov-2026, 18:05 CDMX
+
+### Respaldo oficial de Google Trends México
+
+La página HTML oficial de Trending Now volvió a cargar: **185 tendencias activas** en la ventana mostrada. `volcán` aparece con **2 mil+ búsquedas** y actividad de unas 7 horas. Es una señal temática general; no demuestra interés específico por Fentale ni valida por sí sola el candidato. [Google Trends México](https://trends.google.com/trending?geo=MX&hl=es).
+
+Los errores de RSS documentados arriba siguen siendo la referencia de ejecución previa. En este run no se ejecutó `scripts/tendencias.py`; el lector web tampoco interpreta directamente los cuerpos XML de los feeds. No se atribuye ese límite del lector a una caída nueva de cada proveedor.
+
+### Verificación de los candidatos que ya tienen storyboard
+
+- **Fentale:** la página editorial de Nature identifica el artículo primario y su fecha de publicación como 19-nov-2026. DOI `10.1038/s41561-026-02137-4`. La página no muestra hora de publicación; para el slot `2026-11-21 23:30` no se puede certificar la ventana editorial de 48 h. Crossref `--check-doi` sigue pendiente. No promover todavía.
+- **Púlsar gamma:** la página editorial de Physical Review Letters identifica el artículo y DOI `10.1103/vlt2-xzgk`, publicado el 19-nov-2026. El storyboard conserva QA narrativo FAIL 83; no promover.
+- **Sapropeles** y **flujo de LCR durante el sueño** siguen como candidatos documentados A–D. No se creó un quinto storyboard ni se duplicó tema/slot en esta actualización.
+
+No se modificaron `data/*.json`, la rotación ni los storyboards en este addendum.
