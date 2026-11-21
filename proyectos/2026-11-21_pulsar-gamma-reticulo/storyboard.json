@@ -334,7 +334,7 @@
   },
   "audio": {
     "music_asset": null,
-    "cama_musical": "sintetico:arpegio",
+    "cama_musical": "arpegio",
     "music_plan": "Cama sintetizada prevista: arpegio suave, 112 BPM, patrón discreto bajo la voz. Solo plan sonoro; no existe archivo de audio.",
     "music_license": null
   },
