@@ -328,7 +328,7 @@ def _window_from_value(value, source):
         end = value.get("fin") or value.get("end")
         label = value.get("id") or value.get("nombre") or source
     else:
-        match = re.search(r"(\\d{1,2}:\\d{2})\\s*[-–]\\s*(\\d{1,2}:\\d{2})", str(value or ""))
+        match = re.search(r"(\d{1,2}:\d{2})\s*[-–]\s*(\d{1,2}:\d{2})", str(value or ""))
         if not match:
             return None
         start, end = match.groups()
@@ -366,7 +366,7 @@ def politica_horaria(fecha=None):
     target = _date(fecha)
     policies = []
     for key, value in raw.items():
-        match = re.fullmatch(r"politica_desde_(\\d{4}-\\d{2}-\\d{2})", str(key))
+        match = re.fullmatch(r"politica_desde_(\d{4}-\d{2}-\d{2})", str(key))
         if match and isinstance(value, dict):
             policies.append((match.group(1), key, value))
     applicable = [item for item in policies if not target or item[0] <= target]
