@@ -15,15 +15,15 @@
 
 | Proyecto | Slot | QA existente | Defecto estructural / decisión |
 |---|---|---:|---|
-| `2026-11-21_fentale-metano-sin-erupcion` | 21 nov 23:30 | PASS 90 | Falta `prompt_base` y `map`; main ya contiene `Eldk0fVWqpo`: `PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR` |
-| `2026-11-21_homo-erectus-selva-tropical` | 21 nov 07:00 | FAIL 83 | Falta `prompt_base` y `map`; slot pasado |
-| `2026-11-21_pulsar-gamma-reticulo` | 21 nov 17:00 | FAIL 83 | Falta `prompt_base` y `map`; 17:00 sigue en prueba |
-| `2026-11-22_voyager-1-un-dia-luz` | 22 nov 07:00 | FAIL 83 | Falta `prompt_base` y `map`; main ocupa Salem |
-| `2026-11-22_bao-estrella-fusion-andromeda` | 22 nov 13:30 | FAIL 84 | Falta `prompt_base` y `map`; main ocupa Gutenberg |
-| `2026-11-22_yubarta-genoma-soplo` | 22 nov 17:00 | PASS 90 | Falta `prompt_base` y `map`; main ocupa Ada y 17:00 sigue en prueba |
-| `2026-11-23_tropical-biodiversity-turnover` | 23 nov 13:30 | FAIL 82 | `visual_identity.prompt_base` presente; escena 2 incluye capa `mapa` con dos coordenadas; `SRC-002=PENDING_SOURCE`; main ocupa Rosetta |
+| `2026-11-21_fentale-metano-sin-erupcion` | 21 nov 23:30 | PASS 90 | `prompt_base` y `scenes[1].capa.tipo=mapa` presentes; main ya contiene `Eldk0fVWqpo`: `PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR` |
+| `2026-11-21_homo-erectus-selva-tropical` | 21 nov 07:00 | FAIL 83 | `prompt_base` y mapa en `scenes[2].capa` presentes; `GIRO_CIENTIFICO_NOMBRADO_PERO_NO_EXPLICADO`; slot pasado |
+| `2026-11-21_pulsar-gamma-reticulo` | 21 nov 17:00 | FAIL 83 | `prompt_base` y mapa celeste ICRS en `scenes[2].capa` presentes; `GIRO_CIENTIFICO_NOMBRADO_PERO_NO_EXPLICADO`; 17:00 sigue en prueba |
+| `2026-11-22_voyager-1-un-dia-luz` | 22 nov 07:00 | FAIL 83 | `prompt_base` y mapa DSN con tres puntos WGS84 en `scenes[2].capa` presentes; `FECHA_DE_HITO_Y_CONFIRMACION_CONFUNDIDAS`; main ocupa Salem |
+| `2026-11-22_bao-estrella-fusion-andromeda` | 22 nov 13:30 | FAIL 84 | `prompt_base` y mapa celeste RA/Dec en `scenes[1].capa` presentes; `STAKES_NO_EXPLICADOS`; main ocupa Gutenberg |
+| `2026-11-22_yubarta-genoma-soplo` | 22 nov 17:00 | PASS 90 | `prompt_base` y mapa regional con bounding box en `scenes[2].capa` presentes; main ocupa Ada y 17:00 sigue en prueba |
+| `2026-11-23_tropical-biodiversity-turnover` | 23 nov 13:30 | FAIL 82 | `prompt_base` y mapa con dos puntos en `scenes[1].capa` presentes; `STAKES_NO_EXPLICADOS`; `SRC-002=PENDING_SOURCE`; main ocupa Rosetta |
 
-Los siete tienen 8 escenas y 171–208 palabras. Los seis campos narrativos por escena están presentes. No se repitió QA ni se reescribieron narraciones. **Corrección de auditoría:** la afirmación general de que los siete carecen de `prompt_base` y `map` no está sustentada. La lectura directa de `2026-11-23_tropical-biodiversity-turnover/storyboard.json` (blob `a9faa180671c3bedbf03535919534ca623ac0c45`) confirma `visual_identity.prompt_base` y una capa `mapa` en `scene_002`, con puntos PT REKI (-2.1261667, 103.3690278) y L. Kepayang (-2.0882222, 102.7675278). Para este proyecto, los bloqueos verificados son `narrative_qa=FAIL/82` (`STAKES_NO_EXPLICADOS`), `SRC-002=PENDING_SOURCE` y conflicto de slot con Rosetta en main. No se extrapola esta corrección a los otros seis proyectos sin releerlos.
+Los siete tienen 8 escenas y 171–208 palabras. Los seis campos narrativos por escena están presentes. No se repitió QA ni se reescribieron narraciones. **Corrección de auditoría tras lectura directa de los siete JSON:** los siete contienen `visual_identity.prompt_base` y una capa estructurada `scenes[n].capa.tipo=mapa`; por tanto, se retira el hallazgo previo de ausencia de `prompt_base` y mapa. Localización de capa: Fentale `scene_002`, Homo erectus `scene_003`, púlsar `scene_003`, Voyager `scene_003`, AT 2025abao `scene_002`, yubarta `scene_003`, biodiversidad `scene_002`. Los bloqueos reales son los consignados en cada fila: QA FAIL en Homo, púlsar, Voyager, Bao y biodiversidad; producción previa en Fentale; conflicto de slot en Voyager, Bao, Yubarta y biodiversidad; `SRC-002=PENDING_SOURCE` en biodiversidad. No se repitió QA ni se reescribió narración.
 
 ## Lote 5–7 nov: 12 IDs canónicos
 
