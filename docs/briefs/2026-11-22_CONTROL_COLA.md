@@ -103,3 +103,38 @@ No se reescribieron narraciones, no se alteraron estados Grok, no se promovió n
 **Actualización de fuente y cartografía (22-nov):** se retiraron las coordenadas PT REKI y L. Kepayang que dependían de una tesis secundaria y de un suplemento editorial no accesible. `SRC-002` ahora es Kurniawan et al. (2018), *Biogeosciences*, DOI `10.5194/bg-15-5131-2018`; la página editorial, sección 2.1, publica la coordenada regional de Jambi (2°00′57″ S, 103°15′33″ E) y confirma dos paisajes dentro de esa región. El mapa se redujo a un único localizador regional, sin fingir coordenadas de parcelas, estaciones ni centroide. Storyboard commit `3a0bbcc66f6fba5c52636a6fd0305fd079d24f68`, blob `3ced77b8dc314bcbb8ed594a7fb6f573415f8127`. QA narrativo sigue FAIL/82 por `STAKES_NO_EXPLICADOS`; no se modificó la narración ni se promovió el proyecto.
 
 **Preflight estático posterior al cambio (22-nov):** JSON releído y parseado. Campos raíz obligatorios: 21/21 presentes; campos narrativos y estructurales requeridos: completos en las ocho escenas; estilo del catálogo y prompt_base literal: coinciden; prefijo prompt_base en los ocho image_prompt: coincide; voz: coincide; 8 escenas; 172 palabras narradas; 78 s de escenas + 6 s de cortinilla = 84 s; una capa mapa con coordenadas dentro de rango y fuente; dos capas de dato/gráfico con fuente; source_ids resuelven a fuentes presentes. Este fue un preflight estático por lectura del JSON, **no** una ejecución de scripts/validar_storyboard.py. La compuerta narrativa oficial permanece FAIL/82 por STAKES_NO_EXPLICADOS; por eso no es apto para promoción aunque el preflight estructural revisado no muestra faltantes.
+
+
+## Addendum de auditoría de PR y Actions — 2026-11-22, 04:00 CDMX
+
+### Pull requests abiertos revisados
+
+- **PR #3**, base `main`, head `feature/capcot-video-discovery-continuity`: sigue OPEN/DRAFT, `mergeable=false`, `mergeable_state=dirty`; head `d30814995de642e3b6100d19d968115264a3d690`. El diff agrega workflows de descubrimiento, dispatch, Semgrep, TTS y validación Kuroshio, además de documentación y helpers. No aparece modificación de storyboards ni de `data/*.json` en los archivos revisados. CodeQL del PR terminó SUCCESS en run `45003635410`.
+- **PR #15**, base `feature/capcot-video-discovery-continuity`: sigue OPEN. Su diff se limita a `scripts/validar_storyboard.py` y `tests/test_validar_storyboard_textual.py`. Añade rechazo explícito de booleanos como coordenadas terrestres/celestes y bounds; fija el host HTTPS de Crossref y codifica el DOI antes de solicitarlo. No modifica storyboards ni datos. Semgrep run `45004335607`, commit `30101e9aca8aaafb8d1894df30574a66067ff4a8`, terminó FAILURE: 26 hallazgos bloqueantes en 1,097 archivos con 360 reglas. La carga SARIF terminó SUCCESS y dejó artifact `14746933868`. No se ejecutó aquí el validador ni la suite de pruebas de ese PR; no se declara apto para integrar.
+- **PR #14**, base `main`: sigue OPEN. Conserva `narrative_qa=FAIL/82`, añade `asset_filename` a ocho escenas y no ejecutó `validar_storyboard.py --check-doi`. Contradice el contrato vigente de preproducción; no promover ni integrar.
+- **PR #13**, base `main`: agrega solo `proyectos/2026-11-15_dato-quasar-pareja-cosmic-dawn/AUDITORIA.md`. El informe conserva nueve puntos pendientes y el storyboard sigue FAIL; no se atribuye una revisión nueva ni se integra.
+- **PR #6**, base `feature/capcot-video-discovery-continuity`: agrega `.github/workflows/supervisor.yml` y `guardia.config.json`. El workflow se activa en cada push y pull request, invoca un reusable workflow de `agente-cero-costo` y usa `secrets: inherit`. Ese repositorio es adicional y permanece solo lectura; no se auditó el contenido del reusable workflow. Riesgo de alcance de secretos pendiente de revisión antes de integrar.
+- **PR #4**, base `feature/capcot-video-discovery-continuity`: modifica el estado documental del robot del 9-nov y ubica los nueve frames en una conversación de Grok. La carpeta `frames/` sigue sin PNG/JPEG en GitHub; no se declara medio verificado. El slot ya pasó y existe procesamiento previo: no redispatchar.
+- **PR #7–#9**, base `main`: cambios Dependabot limitados a versiones de acciones en workflows; siguen OPEN y no se integran desde esta operación.
+
+### Dispatch y ejecuciones observadas
+
+- `.github/workflows/capcot-grok-dispatch.yml` en feature selecciona únicamente JSON planos de `cola/entrada/`: el trigger usa `cola/entrada/*.json` y la selección manual usa `find cola/entrada -maxdepth 1`. No cubre paquetes anidados. `scripts/registro_editorial.py` sí recorre `storyboard.json` a profundidad recursiva. Se conserva la discrepancia; no se modificó el workflow.
+- El workflow crea un marker `pending` en `handoffs/grok_inbox/` y hace push a la rama. Ese marker no acredita recepción: solo `cola/estado/<project_id>.json` confirma el acuse individual. No se crearon ni editaron estados Grok, ni se inspeccionaron valores de secretos.
+- El trabajador programado de **main** corrió en run `45008611769`, commit `22cc55e0185f438fae2f7e5b85d70917185b02eb`. Job `trabajar` SUCCESS; log literal: `[trabajador] sin trabajo en cola.` Esto no acredita ejecución sobre feature ni recepción de Grok.
+- No se disparó ningún workflow desde esta auditoría.
+
+### Radar incremental y no duplicación
+
+- NASA confirmó que Voyager 1 alcanzó una distancia de un día-luz el 18-nov; se excluye como candidato nuevo porque ya existe `2026-11-22_voyager-1-un-dia-luz` en proyectos.
+- Kilonova Catcher es un proyecto de ciencia ciudadana lanzado en 2019, no un descubrimiento reciente; se descarta como candidato del día.
+- Se añade como respaldo futuro el artículo primario de Nature Communications, publicado el 9-nov-2026: “Two functionally distinct amyloid-β intermediates link aggregation pathways to pathology in Alzheimer’s disease”, DOI visible `10.1038/s41467-026-79028-0`. El estudio identifica dos poblaciones de intermediarios en Aβ42 en sistemas recombinantes, modelo murino y tejido cerebral humano; solo una población se convierte en placas. La intervención farmacológica que redujo carga de placas y mejoró cognición se probó en ratones, no en personas. DOI/Crossref y resolvedor no quedaron confirmados en esta sesión: `PENDING_CROSSREF`. No hay storyboard ni asignación de slot.
+- Shortlist vigente para slots futuros: Curiosity (NASA, 20-nov), floración de Atacama (NASA, 19-nov), agua antigua más allá de Neptuno (NASA/Science Advances, `PENDING_CROSSREF`) e intermediarios Aβ (Nature Communications, `PENDING_CROSSREF`). Tardígrados y Júpiter se mantienen como NO_DUPLICAR por proyectos/salidas existentes.
+- No se creó storyboard adicional: los slots regulares consultados siguen ocupados y no hay autorización de slot nuevo.
+
+### Cierre de este addendum
+
+**EJECUTADO:** revisión de nueve PR abiertos, diff de PR #3/#4/#6/#13/#14/#15 y Dependabot #7–#9; lectura del workflow de dispatch, worker, logs de Actions y fuentes NASA/Nature.  
+**VERIFICADO:** PR #3 sigue draft/dirty; PR #15 tiene 26 hallazgos Semgrep y SARIF cargado; worker de main no encontró trabajo; el workflow de dispatch no selecciona carpetas anidadas; el robot conserva medios no verificados.  
+**PENDIENTE:** resolución de los 26 hallazgos Semgrep; revisión del reusable workflow externo y del alcance de `secrets: inherit`; Crossref para los dos DOI; acuse Grok individual; correcciones de storyboards por sus autores.  
+**SIN CAMBIOS:** no se modificaron storyboards, `data/*.json`, `cola/estado`, secretos, permisos, `main`, medios ni publicaciones. No hubo promoción ni redispatch.
