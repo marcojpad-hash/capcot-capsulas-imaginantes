@@ -24,7 +24,8 @@
     "fecha_publicacion": "2026-11-22",
     "url": "https://www.nature.com/articles/s41467-026-79465-x",
     "tipo": "artículo primario de investigación",
-    "nota": "DOI verificado mediante registro Crossref y página primaria de Nature Communications el 2026-11-22. El slot 23:30 sigue libre en main; narrative_qa y validación estructural final pendientes."
+    "nota": "DOI verificado mediante registro Crossref y página primaria de Nature Communications el 2026-11-22. El slot 23:30 sigue libre en main; narrative_qa y validación estructural final pendientes.",
+    "note": "DOI registrado como VERIFICADO_CROSSREF y página primaria accesible. Slot 23:30 sin publicación coincidente en main, pero el borrador no está seleccionado: narrative_qa FAIL/72. El validador oficial no se ejecutó en esta auditoría; no promover."
   },
   "editorial_status": "BORRADOR_EN_PROYECTOS",
   "estado": "BORRADOR_EN_PROYECTOS",
@@ -454,7 +455,7 @@
     "El artículo aparece como versión temprana de investigación aceptada y puede recibir ediciones."
   ],
   "validation_notes": [
-    "Borrador de investigación; narrative_qa deliberadamente ausente hasta auditoría fría independiente.",
+    "Lectura en frío independiente registrada por auditor: FAIL/72; no apto para promoción.",
     "8 escenas, 78 segundos de escenas + 6 segundos de cortinilla = 84 segundos.",
     "Narración concatenada: 170–235 palabras; no se generaron medios, imágenes, audio, voz ni video.",
     "No hay asset_filename, asset_type, rutas ni export.filename."
