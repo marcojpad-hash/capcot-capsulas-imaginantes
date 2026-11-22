@@ -482,3 +482,38 @@ Los JSON de data permanecen solo lectura. Feature conserva snapshots viejos (tem
 - Los cuatro proyectos de feature revisados (Bao, Voyager, Yubarta y Biodiversidad tropical) no incluyen `asset_filename`, `asset_type` ni rutas en sus escenas; todos tienen `approved_assets=[]` y `export.render_status=NOT_GENERATED`. Sus carpetas contienen únicamente `storyboard.json`; no hay `ESTADO_EJECUCION.md`.
 - El nuevo borrador de estatura tampoco tiene estado Grok: `cola/estado/2026-11-22_genes-estatura-etapas.json` devolvió 404. Registrar `RECEPCION_GROK_NO_CONFIRMADA`; no se creó ni modificó estado.
 
+
+
+## Actualización de ejecución — 22-nov-2026, 12:22 CDMX
+
+### Proyecto nuevo y compuertas
+
+Se auditó `proyectos/2026-11-22_genes-estatura-etapas/storyboard.json`, creado después del corte de la auditoría anterior.
+
+- **Fuente:** DOI `10.1038/s41467-026-79465-x` verificado en Crossref; título/editorial coinciden con Nature Communications y la página primaria fecha la publicación el 22-nov-2026.
+- **Mapa:** NIPH confirma oficialmente las direcciones de visita Lovisenberggata 6 y 8, Oslo. La coordenada Oslo es de nivel calle, no de edificio. UK Biobank confirma Greenheys, Manchester Science Park, Pencroft Way, M15 6GZ; su enlace oficial de Google Maps resuelve a 53.4630203, -2.23864. El mapa se etiqueta como ubicación institucional, no como ubicación de participantes.
+- **Correcciones mecánicas verificadas:** engine `edge-tts`; `voice_id=es-MX-JorgeNeural`, rate +7%, pitch -2Hz; `_schema=CAPCOT_STORYBOARD_TEXT_V2`; aliases de `estructura`, `estilo_id`, contrato narrativo, citas y `scene.id`; prompt_base copiado literalmente del catálogo `papel_stop_motion`; `word_count` corregido de 229 a 231. Narración, claims, título y arco permanecen sin cambios.
+- **Comprobación estructural manual previa a QA:** cero errores en campos requeridos, fuentes referenciadas, capa de mapa, capa de dato, coordenadas, prompts, voz, 231 palabras, 8 escenas, 78 segundos de escenas + 6 segundos de cortinilla = 84 segundos, cierre exacto, `approved_assets=[]`, `export.render_status=NOT_GENERATED` y publicación pendiente. Esto no equivale a ejecución del validador oficial.
+- **QA:** `narrative_qa` sigue ausente deliberadamente. No se hizo lectura independiente en frío porque corresponde al auditor separado. `scripts/validar_storyboard.py` exige `narrative_qa`; por tanto, su resultado final seguirá siendo FAIL hasta que exista esa revisión independiente y PASS válido. No se inventó QA.
+- **Handoff:** `cola/entrada/<id>.json` no existe; `cola/estado/2026-11-22_genes-estatura-etapas.json` devuelve 404; tampoco existe `ESTADO_EJECUCION.md` ni salida de medios. Estado: `NOT_DISPATCHABLE`, `RECEPCION_GROK_NO_CONFIRMADA`, `BORRADOR_EN_PROYECTOS`. No se promovió, despachó ni marcó preparado.
+
+Commits de este corte: `d130e72f62b324e44efb475f0c09faff899c7e4c` (metadatos y esquema), `dabeb4c3ee963931572a8780b09857c17a5057af` (radar y DOI).
+
+### Inventario y autoridad de datos
+
+- El inventario de proyectos de fecha actual/backlog interdiario y el lote antiguo contiene **26 proyectos**: 12 del 5–7-nov, 6 del 18–20-nov, 7 del 21–23-nov y el borrador adicional de genética de estatura del 22-nov. La auditoría anterior contabilizaba 25; se corrige a 26.
+- QA previo sin cambios en los 25 existentes: lote 5–7-nov = 2 PASS / 10 FAIL; 18–20-nov = 5 PASS / 1 FAIL; 21–23-nov = 2 PASS / 5 FAIL. El proyecto de genética queda **pendiente de auditor independiente**, no se suma a PASS ni FAIL. Total actual: 9 PASS, 16 FAIL, 1 pendiente.
+- Fuente de verdad main: `data/publicaciones.json` contiene **52** registros y `data/rotacion.json` **39**. La nota anterior de 48 publicaciones era incorrecta. Los snapshots feature tienen 22 publicaciones y 27 rotaciones; no se usan como autoridad de ocupación.
+- Main registra publicación 22-nov 07:00 Salem y `publishAt` 21:00 Cleopatra. El plan semanal mantiene 13:30 Gutenberg, 17:00 Ada y 19:00 Webb. En paralelo, `proyectos/2026-11-22_pulsar-criptografia/programacion.json` declara 13:30, pero `yt_programado=false`, `mp4=false` y privacidad `private`. La discrepancia de 13:30 queda abierta; no afecta el 23:30, que no aparece ocupado en main.
+
+### Actions, PR y dispatch
+
+- HEAD feature observado antes de este corte: `4771cd03`; main: `77bf85b`. Los commits de esta actualización quedaron en feature. No se escribió en main.
+- PR #3: 697 archivos cambiados, 13 archivos `data/*.json` y 145 rutas de cola; OPEN/DRAFT, dirty, base antigua `6397fbd`. No integrar.
+- PR #15: head `30101e9`, base `d308149` (no el HEAD actual de feature); GitHub informa `mergeable=true` pero `mergeable_state=unstable`. No hay CI de su head; sus 14 pruebas siguen sin evidencia de ejecución y Semgrep mantiene 32 hallazgos en el run de main. No integrar.
+- La última validación de feature disponible, run `44951621909`, corresponde al commit antiguo `ed8659ec` y al proyecto Kuroshio; no valida este storyboard ni el HEAD actual. Los checks SUCCESS de PR #3 ejecutados sobre main no se atribuyen a feature.
+- Worker main run `45050940152`: SUCCESS, log literal `sin trabajo en cola.` Semgrep main run `45048155842`: FAILURE, 32 hallazgos. Gitleaks main run `45048155922`: SUCCESS.
+- `capcot-grok-dispatch.yml` solo observa JSON planos de primer nivel en `cola/entrada/*.json`; el storyboard nuevo está exclusivamente en `proyectos/<id>/storyboard.json`. No es despachable por esa ruta. No se dispararon workflows ni se enviaron payloads.
+- Presencia de `GROK_WEBHOOK_URL` y `GROK_WEBHOOK_TOKEN`: no verificable mediante el listado disponible; no se declararon ausentes ni se consultaron valores.
+
+No se modificó ningún `data/*.json`, main, secreto, permiso, publicación ni medio.
