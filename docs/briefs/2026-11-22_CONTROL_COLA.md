@@ -431,3 +431,10 @@ La reconciliación y su corrección de atribución quedaron guardadas y releída
 ### Prueba adicional del resolvedor DOI — 22-nov-2026
 
 Se intentó además abrir directamente los cinco DOI del radar mediante `https://doi.org/<doi>`. Los cinco devolvieron el mismo error del lector: `URL https://doi.org/<doi> is not accessible via this tool`. DOI consultados: `10.1038/s41586-026-11221-z`, `10.1038/s41586-026-11298-6`, `10.1111/1755-0998.70219`, `10.1126/sciadv.aeg1602` y `10.3897/zookeys.1295.205902`. Esto **no demuestra que los DOI estén rotos**; demuestra que este lector no pudo verificar el salto del resolvedor. Los cinco siguen pendientes de una comprobación Crossref/resolvedor ejecutable.
+
+### Estado final de PRs y HEAD — 22-nov-2026
+
+- HEAD final de feature tras las adendas de control: `c36319fd4228e40dad031c062c80bdd610d533a0`.
+- PR #3: OPEN/DRAFT, `mergeable=false`, 1,246 commits y 696 archivos. No integrar.
+- PR #15: sigue OPEN, pero ahora `mergeable=false`. Su base registrada es `d30814995de642e3b6100d19d968115264a3d690`; feature está 26 commits por delante de esa base. No actualizar la rama del PR ni fusionar durante esta operación. Los 26 hallazgos Semgrep y la suite de 14 tests no ejecutada siguen abiertos.
+- Lectura de vuelta del control: el archivo incluye esta adenda y el HEAD coincide con el commit final.
