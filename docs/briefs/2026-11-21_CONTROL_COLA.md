@@ -880,3 +880,10 @@ Se usó main para conflictos y rotación sin escribir en main ni alterar `data/*
 3. Radar 21-nov: se añadieron cinco candidatos con DOI Crossref y la divergencia de snapshots. Commits `d650df2c9f4dd19608a453b3631a949754be06be` y `c62f67ce79e0bac63b34c3ac25027e2532d30c3b`; lecturas de vuelta confirmadas.
 
 No se crearon storyboards, entradas de cola, medios ni estados Grok. No se modificó `data/*.json`, main, secretos, permisos, programación ni publicación.
+
+
+## Addendum — 21-nov-2026 21:58 CDMX (run 11)
+
+- Semgrep main run `44974165982`: 32 findings bloqueantes; SARIF se generó pero el upload quedó omitido tras el exit code 1. Se preparó la corrección en feature: `.github/workflows/semgrep.yml`, commit `7760be51f95c88c5c3d1ed66c7ec4cf469eba2cf`. La corrección quedó releída; aún no se ejecuta ni se integra en main. Detalle: [SEMGREP_SARIF_FIX](2026-11-21_SEMGREP_SARIF_FIX.md).
+- Se detectó discrepancia adicional: `main/data/horarios.json` no declara 17:00, pero el plan semanal de main sí asigna 17:00 en varios días. No se modificaron los JSON; se mantiene cerrado ese slot hasta reconciliación editorial. Detalle: [CONFLICTO_HORARIOS](2026-11-21_CONFLICTO_HORARIOS.md).
+- El trabajador de cola en main terminó SUCCESS con `[trabajador] sin trabajo en cola.`; el smoke de Kuroshio no usó `--check-doi`. Los siete archivos de estado Grok de proyectos 21–23 nov devolvieron 404; recepción no confirmada.
