@@ -138,3 +138,26 @@ No se reescribieron narraciones, no se alteraron estados Grok, no se promovió n
 **VERIFICADO:** PR #3 sigue draft/dirty; PR #15 tiene 26 hallazgos Semgrep y SARIF cargado; worker de main no encontró trabajo; el workflow de dispatch no selecciona carpetas anidadas; el robot conserva medios no verificados.  
 **PENDIENTE:** resolución de los 26 hallazgos Semgrep; revisión del reusable workflow externo y del alcance de `secrets: inherit`; Crossref para los dos DOI; acuse Grok individual; correcciones de storyboards por sus autores.  
 **SIN CAMBIOS:** no se modificaron storyboards, `data/*.json`, `cola/estado`, secretos, permisos, `main`, medios ni publicaciones. No hubo promoción ni redispatch.
+
+
+## Verificación de feeds de tendencias — 2026-11-22, 04:00 CDMX
+
+Se intentó abrir cada URL declarada en `scripts/tendencias.py` y Google Trends RSS México mediante el lector web disponible. El lector rechazó varios formatos XML/RSS; esto **no demuestra que los servidores RSS estén caídos**. Tampoco se ejecutó localmente `scripts/tendencias.py`, porque esta sesión no dispone de un runtime de repositorio con salida de red comprobada.
+
+| Feed | Resultado literal del lector web |
+|---|---|
+| Google Trends México `https://trends.google.com/trending/rss?geo=MX` | `URL ... is not accessible via this tool.` |
+| ScienceDaily ciencia | `(400) Unsupported content-type: application/xml` |
+| ScienceDaily salud | `(400) Unsupported content-type: application/xml` |
+| ScienceDaily espacio | `(400) Unsupported content-type: application/xml` |
+| Phys.org | `(400) Unsupported content-type: text/xml` |
+| NASA News Release | `(400) Unsupported content-type: application/rss+xml` |
+| ESA Space Science | `(404) Not Found` |
+| Nature RSS | `(400) Unsupported content-type: application/rss+xml` |
+| EurekAlert | `URL ... is not accessible via this tool.` |
+| SINC | `URL ... is not accessible via this tool.` |
+| UNAM Global | `(400) Unsupported content-type: application/rss+xml` |
+
+**Respaldo oficial consultado:** NASA Science para el hito de Voyager 1 y las nubes crepusculares de Curiosity; NASA Science/Earth Observatory para hielo más allá de Neptuno y floración de Atacama; artículo primario de *Nature Communications* para los intermediarios Aβ. Las fuentes y límites de cada afirmación están en el radar. Voyager se excluyó por duplicación; el candidato Aβ queda `PENDING_CROSSREF`.
+
+**Estado:** RSS_XML_READER_LIMITATION; Google Trends sin lectura; ESA URL devuelve 404; ejecución real del script PENDIENTE. No se inventó que los feeds estuvieran caídos ni se generó storyboard a partir de una tendencia sin fuente primaria.
