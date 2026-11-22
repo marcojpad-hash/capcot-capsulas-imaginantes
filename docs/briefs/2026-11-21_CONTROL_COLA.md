@@ -778,3 +778,12 @@ No se dispararon workflows, no se modificó main, no se alteraron `data/*.json`,
 - Plantillas: `templates/storyboard_vertical.template.json` coincide con el contrato vigente 9:16/75–90 s; `templates/storyboard.template.json` conserva un esquema legado 16:9/120 s con rutas de medios. No se modificó ninguna plantilla.
 
 No se promovió el proyecto, no se creó estado Grok, no se disparó `workflow_dispatch`, no se modificaron `data/*.json`, main, medios, secretos ni permisos.
+
+
+## Frescura de política horaria — revalidación 2026-11-21
+
+- `scripts/registro_editorial.py::politica_horaria` lee `data/horarios.json` y clasifica un objetivo posterior al corte como `CORTE_ANTERIOR_A_FECHA_OBJETIVO`.
+- Feature: `data/horarios.json` actualizado 2026-11-09; última política `politica_desde_2026-11-09`. Main: actualizado 2026-11-16; última política `politica_desde_2026-11-16`. Para el objetivo 2026-11-23 ambas políticas están antes de la fecha objetivo; no se consideran una autorización horaria fresca.
+- Los snapshots `data/horario_*.json` llegan solo hasta 2026-11-11. No hay snapshot diario 21–23 nov. `data/temas_del_dia.json` llega hasta 2026-10-28; `data/rotacion.json` y `data/publicaciones.json` no tienen entradas 21–23 nov.
+- La parrilla semanal de main muestra 23-nov 07:00 (nudillos), sin fila 13:30; por tanto no se encontró conflicto explícito para el proyecto de 13:30, pero la política de horario y los snapshots no permiten certificar el slot con frescura suficiente. Mantener `NOT_DISPATCHABLE` por compuertas QA/fuentes/política; no promover ni inferir autorización desde la ausencia de una fila.
+- No se modificaron los JSON de datos ni la política horaria.
