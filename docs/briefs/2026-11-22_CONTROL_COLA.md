@@ -320,3 +320,17 @@ El aviso oficial de Page Insights se verificó: la referencia del endpoint muest
 ### Precisión de PR #15 — suite no ejecutada
 
 La lectura de `tests/test_validar_storyboard_textual.py` en la rama `fix/capcot-map-coordinate-types-20261122` confirma **14 métodos unittest** (contrato narrativo, QA, mapas terrestres/celestes, booleanos en coordenadas/bounds y DOI). `scripts/validar_storyboard.py` fija la conexión HTTPS a `api.crossref.org` y rechaza booleanos antes de convertir coordenadas. El commit `30101e9aca8aaafb8d1894df30574a66067ff4a8` no tiene checks combinados registrados (`state=none`, `statuses=[]`). Se intentó clonar la rama para ejecutar la suite; error literal: `Could not resolve host: github.com`. No se ejecutaron los 14 tests y no se declara el PR validado.
+
+
+### Cierre de estructura y fuentes de los siete proyectos 21–23 nov
+
+Lectura de vuelta de los siete `storyboard.json` contra `scripts/validar_storyboard.py`, `scripts/estilos.json` y el contrato editorial:
+- Los siete tienen 8 escenas, 171–208 palabras, 78 s de escenas + 6 s de cortinilla = 84 s; voz `es-MX-JorgeNeural`, `rate=+7%`, `pitch=-2Hz`; los seis campos narrativos por escena están completos.
+- En los siete, `visual_identity.prompt_base` coincide literalmente con el catálogo y cada `image_prompt` empieza con ese texto.
+- Todos tienen ambiente y SFX por escena, al menos una capa de dato/gráfico, `approved_assets=[]`, `export.render_status=NOT_GENERATED` y `publicacion.status=PENDIENTE_DECISION_GROK`.
+- La cartografía está presente y explícitamente limitada: Fentale WGS84 8.985, 39.906; Homo erectus usa el centro urbano de Chongzuo como localizador regional, no como coordenada de las cuevas; el púlsar usa ICRS RA 245.553° / DEC −72.066° con envoltura RA solo para proyección celeste; AT 2025abao usa RA 9.7025° / Dec 40.7689528° convertido de la ficha NASA; Voyager usa los tres complejos DSN WGS84; yubarta usa bounds regionales Hakai 53.18, −129.6 a 53.68, −129.0 sin pines de muestras; biodiversidad usa el localizador regional publicado de Jambi −2.0158333, 103.2591667, no un centroide de parcelas. No se inventaron puntos de muestreo.
+- Los QA PASS existentes de Fentale (90) y yubarta (90) conservan siete checks true, flags vacías y base de lectura en frío; no se repitieron. Homo erectus (83), púlsar (83), Voyager (83), AT 2025abao (84) y biodiversidad (82) conservan FAIL y sus flags originales.
+
+**Corrección de fuente para biodiversidad:** la entrada anterior `SRC-002=PENDING_SOURCE` era incorrecta. `SRC-002` (Kurniawan et al., Biogeosciences 2018, DOI 10.5194/bg-15-5131-2018) está verificada en página editorial y aporta únicamente la coordenada regional de Jambi. El DOI pendiente es `SRC-001` (Nature 2026, 10.1038/s41586-026-11298-6). En AT 2025abao el DOI pendiente es `SRC-001`; NASA `SRC-002` y `SRC-003` están verificadas. Fentale tiene Crossref verificado; Homo y púlsar tienen DOI resuelto; Voyager usa NASA/JPL sin DOI y fuentes secundarias solo para localizadores DSN; yubarta tiene ambos DOI resueltos.
+
+No se modificaron los siete storyboards: los cinco FAIL narrativos, los conflictos de slot, la duplicación temática de Fentale y los DOI pendientes siguen bloqueando cualquier promoción.
