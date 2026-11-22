@@ -16,10 +16,10 @@ Se añadió `.github/workflows/semgrep.yml` a `feature/capcot-video-discovery-co
 1. Permisos explícitos mínimos: `contents: read` y `security-events: write`.
 2. El upload a GitHub Code Scanning usa `if: always() && hashFiles('semgrep.sarif') != ''`, para ejecutarse aunque Semgrep devuelva código 1, siempre que el SARIF exista.
 3. Se conserva además `semgrep.sarif` como artifact descargable durante siete días.
-4. El workflow mantiene el disparador `push` limitado a `main`, además de PR y schedule. La escritura en la rama feature no lo dispara.
+4. Se usa `actions/checkout@v5`, ya observado en el trabajador de cola exitoso. El workflow mantiene el disparador `push` limitado a `main`, además de PR y schedule. La escritura en la rama feature no lo dispara.
 
-**Commit de la corrección:** `cccb3536d88b3e2dddd8665b7a1c2d1182efecce`.  
-**Lectura de vuelta:** blob `6a8797b11e56fb17527ce1dd319604e10f4ddd33`; permisos, condiciones de upload, artifact y ausencia de valores secretos comprobados.
+**Commit de la corrección:** `7760be51f95c88c5c3d1ed66c7ec4cf469eba2cf`.  
+**Lectura de vuelta:** blob `c08ab9613298e3ea97a834940c5050f9df549ef9`; permisos, condiciones de upload, artifact y ausencia de valores secretos comprobados.
 
 ## Límite de verificación
 
