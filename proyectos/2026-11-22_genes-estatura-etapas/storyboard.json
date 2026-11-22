@@ -462,5 +462,27 @@
   "_schema": "CAPCOT_STORYBOARD_TEXT_V2",
   "estructura": "pregunta",
   "estilo_id": "papel_stop_motion",
-  "estilo_visual": "Stop-motion de papel"
+  "estilo_visual": "Stop-motion de papel",
+  "narrative_qa": {
+    "status": "FAIL",
+    "score": 72,
+    "review_basis": "lectura_en_frio_solo_narracion",
+    "reviewer_role": "auditor_capcot_independiente",
+    "reviewed_at": "2026-11-22T15:54:03-06:00",
+    "checks": {
+      "pregunta_central_reconstruible": true,
+      "apertura_in_medias_res": false,
+      "progresion_por_escena": false,
+      "transiciones_causales": false,
+      "giro_cientifico_explicado": false,
+      "limite_evidencia_explicito": true,
+      "payoff_cierre_apertura": true
+    },
+    "critical_flags": [
+      "APERTURA_DEFINICIONAL_NO_IN_MEDIAS_RES",
+      "MAPA_DE_INSTITUCIONES_ROMPE_CONTINUIDAD_NARRATIVA",
+      "GIRO_CIENTIFICO_NOMBRADO_SIN_MECANISMO_EXPLICADO"
+    ],
+    "reviewer_notes": "Lectura en frío solo de la narración concatenada. La pregunta sobre el cambio de influencia genética por etapa se reconstruye y el cierre vuelve a esa idea. La apertura, sin embargo, comienza con una afirmación general y no con una anomalía o consecuencia ya en curso. La frase sobre el mapa de instituciones interrumpe la progresión causal. Los grupos temporales y las 106 proteínas se enumeran, pero no se explica el mecanismo que produce el cambio por etapa; la asociación con diabetes tipo 2 abre una consecuencia poblacional sin desarrollar su conexión con la pregunta inicial. El límite poblacional y la cautela sobre diagnóstico individual sí quedan explícitos. No reescribí narración ni claims."
+  }
 }
