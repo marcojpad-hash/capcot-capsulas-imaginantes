@@ -292,3 +292,75 @@ Se repitió la lectura de los diez feeds definidos en `scripts/tendencias.py` y 
 **Respaldo oficial:** la página HTML de Google Trends México sí abrió: 236 tendencias, 25 por página, últimas 24 horas. La primera página está dominada por fútbol, entretenimiento y búsquedas generales. “Perú” aparece con 10 mil+ y la consulta relacionada “terremoto peru”, pero no ofrece por sí sola un estudio primario ni un ángulo científico verificable para cápsula. Fuente: https://trends.google.com/trending?geo=MX&hl=es
 
 No se añadió candidato ni storyboard: se conservan los candidatos ya documentados en este radar y los cinco slots de la fecha siguen ocupados. Los errores son del lector/conector observado; no prueban caída de los servidores de origen.
+
+
+---
+
+## 8. Escaneo adicional de artículos publicados el 21-nov — Crossref
+
+Esta lista complementa los cinco candidatos ya documentados en las secciones 2 y 7. No reemplaza la rotación ni autoriza un nuevo storyboard. Los cinco DOI se consultaron en Crossref REST y devolvieron `status=ok`, título coincidente y publicación en línea el 2026-11-21.
+
+### 8.1 Biosíntesis de alcaloides de iboga
+
+- **Observación:** dos enzimas adicionales permiten reconstruir la biosíntesis de voacangina en un huésped heterólogo; cuatro enzimas más convierten un intermediario en ibophyllidine.
+- **Cálculo:** ninguno.
+- **Inferencia:** el trabajo completa partes de dos rutas biosintéticas; no demuestra eficacia clínica ni seguridad de un compuesto.
+- **Recomendación:** prioridad alta por el giro bioquímico. No desarrollar hasta obtener localidad de origen de la muestra y coordenadas cartográficas respaldadas.
+- **Fuente primaria:** https://www.nature.com/articles/s41467-026-79750-9
+- **DOI:** 10.1038/s41467-026-79750-9 — Crossref `status=ok`: https://api.crossref.org/works/10.1038/s41467-026-79750-9
+- **Estado:** `PENDING_MAP_SOURCE`.
+
+### 8.2 Firma metabólica de estrés por cadmio
+
+- **Observación:** metabolómica en células de mamífero y larvas de pez cebra; el estudio reporta reducción de glutamato/aspartato, acumulación de poliaminas y asociación con respuesta integrada al estrés y actividad de LAT1.
+- **Cálculo:** no se recalcularon dosis ni tamaños de efecto.
+- **Inferencia:** resultado en los modelos experimentales del artículo; no extrapolar a enfermedad ni a efectos individuales en humanos.
+- **Recomendación:** prioridad media. No desarrollar hasta verificar una localización experimental cartografiable y una pregunta narrativa concreta.
+- **Fuente primaria:** https://www.nature.com/articles/s41420-026-03456-6
+- **DOI:** 10.1038/s41420-026-03456-6 — Crossref `status=ok`: https://api.crossref.org/works/10.1038/s41420-026-03456-6
+- **Estado:** `PENDING_MAP_SOURCE`.
+
+### 8.3 Genoma y transcriptoma de *Pelodera strongyloides*
+
+- **Observación:** recurso de 177.6 Mb ensamblado en 11 cromosomas, 16,767 genes codificantes y transcriptómica de siete etapas; el aislado se reporta de Guangzhou.
+- **Cálculo:** ninguno.
+- **Inferencia:** recurso para estudios comparativos de parasitismo; no demuestra por sí mismo el mecanismo ni la transición evolutiva.
+- **Recomendación:** prioridad media-baja. Falta coordenada de recolección más precisa que la ciudad y un giro narrativo no técnico.
+- **Fuente primaria:** https://www.nature.com/articles/s41597-026-08770-3
+- **DOI:** 10.1038/s41597-026-08770-3 — Crossref `status=ok`: https://api.crossref.org/works/10.1038/s41597-026-08770-3
+- **Estado:** `PENDING_COLLECTION_COORDINATES`.
+
+### 8.4 Genoma y anotación de veneno de *Crotalus viridis*
+
+- **Observación:** Crossref confirma el artículo de *Scientific Data* “An improved genome and venom gene annotation for the Prairie Rattlesnake (*Crotalus viridis*)”, publicado en línea el 21-nov.
+- **Cálculo:** ninguno; no se atribuyen cifras ni funciones sin leer el artículo completo.
+- **Inferencia:** recurso genómico y de anotación, no evidencia automática de una función nueva de toxinas.
+- **Recomendación:** prioridad baja. Falta localidad exacta del espécimen y un hallazgo funcional narrable.
+- **Fuente primaria:** https://www.nature.com/articles/s41597-026-08647-5
+- **DOI:** 10.1038/s41597-026-08647-5 — Crossref `status=ok`: https://api.crossref.org/works/10.1038/s41597-026-08647-5
+- **Estado:** `PENDING_FULLTEXT_AND_SAMPLE_LOCALITY`.
+
+### 8.5 Ensamblaje genómico de *Squalidus argentatus*
+
+- **Observación:** Crossref confirma el artículo de *Scientific Data* “Chromosome-Level Genome Assembly and Annotation of *Squalidus argentatus*”, publicado en línea el 21-nov.
+- **Cálculo:** ninguno.
+- **Inferencia:** recurso de genoma; no se presenta como hallazgo funcional o adaptación demostrada.
+- **Recomendación:** prioridad baja. Falta localidad de muestreo y un ángulo narrativo distinto de enumerar métricas de ensamblaje.
+- **Fuente primaria:** https://www.nature.com/articles/s41597-026-08885-7
+- **DOI:** 10.1038/s41597-026-08885-7 — Crossref `status=ok`: https://api.crossref.org/works/10.1038/s41597-026-08885-7
+- **Estado:** `PENDING_SAMPLE_LOCALITY`.
+
+## 9. Monitor espacial — BepiColombo
+
+La página oficial de Quick Look de ESA mostraba la inserción orbital en Mercurio programada para el 21-nov; el corte recuperado estaba fechado 17:34 UTC, anterior a la maniobra programada. No se encontró confirmación oficial posterior al encendido en las fuentes consultadas. No afirmar éxito ni captura orbital hasta una actualización de ESA/JAXA. Fuente: https://bepicolombo.esac.esa.int/bscs-qla/home. Estado: `PENDING_EVENT_CONFIRMATION`. No cuenta como candidato de investigación ni como storyboard.
+
+## 10. Reconciliación final de slots — 2026-11-21 19:56 CDMX
+
+- 22-nov 07:00, 13:30 y 17:00: ocupados en main por Salem, Gutenberg y Ada; no duplicar.
+- 22-nov 19:00: retirado por la política vigente desde 2026-11-02; no es slot autorizado.
+- 22-nov 23:30: reservado para dato del día, que debe publicarse el propio 22-nov y cumplir la ventana de hasta 48 horas.
+- 23-nov 07:00: Nudillos ya programado en main.
+- 23-nov 13:30: lunes no es día preferente para mediodía; el proyecto de biodiversidad existente sigue FAIL/82, con SRC-002 `PENDING_SOURCE` y coordenadas no verificadas.
+- 21-nov 23:30 Fentale: DOI actualizado a `VERIFICADO_CROSSREF` en el storyboard, pero el artículo es del 19-nov y no cumple la regla de dato del día para el 21-nov. No promover.
+
+**Decisión:** no hay slot libre y autorizado con candidato, fuente primaria, mapa real y QA suficiente. No se creó storyboard nuevo, no se escribió en cola y no se disparó el workflow.
