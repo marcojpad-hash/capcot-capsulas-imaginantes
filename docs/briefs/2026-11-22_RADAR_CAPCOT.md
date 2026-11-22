@@ -383,3 +383,14 @@ Google Trends México sí permitió consultar la página oficial de tendencias: 
 ### Decisión
 
 No apareció un segundo hallazgo con fuente primaria del 22-nov que justifique otro storyboard. Se conserva el único borrador existente para 23:30, sin crear duplicado, sin promoverlo y sin generar medios. La reconsulta distingue errores del lector de fallos reales del proveedor.
+
+
+## Actualización de auditoría independiente — 22-nov-2026, 15:54 CDMX
+
+La nota anterior que dejaba la lectura narrativa pendiente queda sustituida por la revisión independiente registrada en el storyboard `proyectos/2026-11-22_genes-estatura-etapas/storyboard.json`.
+
+- `narrative_qa`: **FAIL/72**, `review_basis=lectura_en_frio_solo_narracion`. Checks: `pregunta_central_reconstruible=true`, `apertura_in_medias_res=false`, `progresion_por_escena=false`, `transiciones_causales=false`, `giro_cientifico_explicado=false`, `limite_evidencia_explicito=true`, `payoff_cierre_apertura=true`. Banderas: `APERTURA_DEFINICIONAL_NO_IN_MEDIAS_RES`, `MAPA_DE_INSTITUCIONES_ROMPE_CONTINUIDAD_NARRATIVA`, `GIRO_CIENTIFICO_NOMBRADO_SIN_MECANISMO_EXPLICADO`.
+- La narración y los claims no se reescribieron. El cierre vuelve a la idea inicial, pero la apertura es declarativa, el mapa institucional corta la progresión y el giro de asociación proteína/diabetes no explica el mecanismo que respondería la pregunta.
+- Preflight estático: 8 escenas, 231 palabras, 84 s totales (78 + 6), gancho de 5 palabras, voz oficial, `papel_stop_motion` presente en catálogo, prompt_base literal, mapa institucional y capa de dato, referencias internas consistentes, `approved_assets=[]`, `export.render_status=NOT_GENERATED` y sin rutas/nombres de medios.
+- No se ejecutó el validador oficial ni `--check-doi` en esta auditoría. El DOI sigue documentado como Crossref verificado en la investigación previa; no se afirma una nueva consulta en este run.
+- Estado: `BORRADOR_EN_PROYECTOS`, no seleccionado, no promovido, no recibido por Grok. `RECEPCION_GROK_NO_CONFIRMADA`. No existe conflicto de slot con una publicación en main a las 23:30, pero FAIL impide handoff.
