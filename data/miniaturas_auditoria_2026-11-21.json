@@ -1,0 +1,807 @@
+{
+ "fecha_cdmx": "2026-11-21 23:12 CST",
+ "canal": "UCU2ZI-6pBJEr9aSFsF6bxLw Datos y ociosidades",
+ "pedido": "t520u: Revisa las portadas en miniaturas que no están bien trabajadas",
+ "alcance": "Programados (private+publishAt) y públicos de los últimos ~14 días (desde 2026-11-07 00:00 CDMX). Se recuperaron 5 públicos que no salieron en la paginación del uploads playlist. Se revisó el mosquito privado sin cambiar privacidad. Excluidos jeUrM5zzkdA y Z-nt8t7qPx8. No se borró, movió, ni cambió privacidad o horario de nada.",
+ "metodo": "YouTube Data API con ~/.capcot/token.json. Miniaturas API + i.ytimg.com (maxres/sardefault/oardefault). mp4 local por fileDetails.fileSize. Portada = frame 0 (o portada.jpg oficial del lote) 1080×1920. phash promedio 16×16. thumbnails.set + verificación shortsAspectRatio y descarga de sar.",
+ "resumen": {
+  "corregidas_thumbnails_set": 9,
+  "siguen_mal_sin_mp4": 36,
+  "portada_mal_trabajada_necesita_rework": 4,
+  "ya_ok_sar_coincide_frame0": 41,
+  "colisiones_de_horario_detectadas": 6
+ },
+ "corregidas": [
+  {
+   "yt_id": "tmOji99zGPE",
+   "titulo": "¿Qué pasa dentro cuando truenas los dedos?",
+   "accion": "thumbnails.set",
+   "fuente": "oficial portada.jpg",
+   "jpg": "/workspace/capcot_prod_20261121/nudillos/portada.jpg",
+   "shortsAspectRatio": true,
+   "sar_verificada": true,
+   "phash_ham16_src_vs_sar": 0,
+   "hora_cdmx": "2026-11-21 23:10:39 CST"
+  },
+  {
+   "yt_id": "_YzBY4OfUeo",
+   "titulo": "¿Lavas el pollo crudo? Mejor no",
+   "accion": "thumbnails.set",
+   "fuente": "oficial portada.jpg",
+   "jpg": "/workspace/capcot_prod_20261121/pollo/portada.jpg",
+   "shortsAspectRatio": true,
+   "sar_verificada": true,
+   "phash_ham16_src_vs_sar": 0,
+   "hora_cdmx": "2026-11-21 23:10:44 CST"
+  },
+  {
+   "yt_id": "W9g2tPZTpD4",
+   "titulo": "Esta medusa vuelve a ser joven",
+   "accion": "thumbnails.set",
+   "fuente": "oficial portada.jpg",
+   "jpg": "/workspace/capcot_prod_20261121/medusa/portada.jpg",
+   "shortsAspectRatio": true,
+   "sar_verificada": true,
+   "phash_ham16_src_vs_sar": 0,
+   "hora_cdmx": "2026-11-21 23:10:48 CST"
+  },
+  {
+   "yt_id": "-1DRh_qj7Bg",
+   "titulo": "¿Sabías que el plátano es una baya y la fresa no?",
+   "accion": "thumbnails.set",
+   "fuente": "oficial portada.jpg",
+   "jpg": "/workspace/capcot_prod_20261121/platano/portada.jpg",
+   "shortsAspectRatio": true,
+   "sar_verificada": true,
+   "phash_ham16_src_vs_sar": 0,
+   "hora_cdmx": "2026-11-21 23:10:52 CST"
+  },
+  {
+   "yt_id": "nd0rs6iVy8E",
+   "titulo": "¿El microondas calienta de adentro hacia afuera?",
+   "accion": "thumbnails.set",
+   "fuente": "oficial portada.jpg",
+   "jpg": "/workspace/capcot_prod_20261121/microondas/portada.jpg",
+   "shortsAspectRatio": true,
+   "sar_verificada": true,
+   "phash_ham16_src_vs_sar": 0,
+   "hora_cdmx": "2026-11-21 23:10:57 CST"
+  },
+  {
+   "yt_id": "fcSNbU809ao",
+   "titulo": "¿Por qué te mareas en el coche?",
+   "accion": "thumbnails.set",
+   "fuente": "oficial portada.jpg",
+   "jpg": "/workspace/capcot_prod_20261121/mareo/portada.jpg",
+   "shortsAspectRatio": true,
+   "sar_verificada": true,
+   "phash_ham16_src_vs_sar": 0,
+   "hora_cdmx": "2026-11-21 23:11:00 CST"
+  },
+  {
+   "yt_id": "2a36r5QOvi4",
+   "titulo": "Hielo sucio alrededor de Beta Pictoris",
+   "accion": "thumbnails.set",
+   "fuente": "frame 0 del mp4",
+   "jpg": "/tmp/miniaturas_audit_20261121/portadas/2a36r5QOvi4_t0.0.jpg",
+   "shortsAspectRatio": true,
+   "sar_verificada": true,
+   "phash_ham16_src_vs_sar": 1,
+   "hora_cdmx": "2026-11-21 23:11:04 CST"
+  },
+  {
+   "yt_id": "IQEU2Bqy3v0",
+   "titulo": "¿La IA nos va a matar? La advertencia de un directivo de OpenAI",
+   "accion": "thumbnails.set",
+   "fuente": "frame 0 del mp4",
+   "jpg": "/tmp/miniaturas_audit_20261121/portadas/IQEU2Bqy3v0_t0.0.jpg",
+   "shortsAspectRatio": true,
+   "sar_verificada": true,
+   "phash_ham16_src_vs_sar": 0,
+   "hora_cdmx": "2026-11-21 23:11:09 CST"
+  },
+  {
+   "yt_id": "ThbHry-YC-w",
+   "titulo": "Mito o verdad: ¿Los vikingos usaban cascos con cuernos?",
+   "accion": "thumbnails.set",
+   "fuente": "frame 0 del mp4",
+   "jpg": "/tmp/miniaturas_audit_20261121/portadas/ThbHry-YC-w_t0.0.jpg",
+   "shortsAspectRatio": true,
+   "sar_verificada": true,
+   "phash_ham16_src_vs_sar": 0,
+   "hora_cdmx": "2026-11-21 23:11:13 CST"
+  }
+ ],
+ "siguen_mal_sin_mp4_no_se_invento": [
+  {
+   "yt_id": "gr3DmwXZLsY",
+   "titulo": "La Pirámide del Sol no siempre se llamó así #Shorts",
+   "estado": "programado",
+   "publishAt": "2026-11-30T01:00:00Z",
+   "hora_cdmx": "2026-11-29 19:00 CST",
+   "fileName": "capsula.mp4",
+   "fileSize": 33092420,
+   "motivo": "sin miniatura vertical (shortsAspectRatio) y el mp4 no está en esta caja; no se inventó portada. La maxres actual suele ser un fotograma automático 16:9."
+  },
+  {
+   "yt_id": "jNMThVLPXvc",
+   "titulo": "Los gladiadores NO siempre peleaban a muerte #Shorts",
+   "estado": "programado",
+   "publishAt": "2026-11-29T23:00:00Z",
+   "hora_cdmx": "2026-11-29 17:00 CST",
+   "fileName": "capsula.mp4",
+   "fileSize": 34051772,
+   "motivo": "sin miniatura vertical (shortsAspectRatio) y el mp4 no está en esta caja; no se inventó portada. La maxres actual suele ser un fotograma automático 16:9."
+  },
+  {
+   "yt_id": "2ugUwsX4k6g",
+   "titulo": "La Piedra del Sol NO es un calendario #Shorts",
+   "estado": "programado",
+   "publishAt": "2026-11-29T19:30:00Z",
+   "hora_cdmx": "2026-11-29 13:30 CST",
+   "fileName": "capsula.mp4",
+   "fileSize": 39536916,
+   "motivo": "sin miniatura vertical (shortsAspectRatio) y el mp4 no está en esta caja; no se inventó portada. La maxres actual suele ser un fotograma automático 16:9."
+  },
+  {
+   "yt_id": "U2p-lzkavbE",
+   "titulo": "Big Ben NO es la torre #Shorts",
+   "estado": "programado",
+   "publishAt": "2026-11-29T01:00:00Z",
+   "hora_cdmx": "2026-11-28 19:00 CST",
+   "fileName": "capsula.mp4",
+   "fileSize": 40948813,
+   "motivo": "sin miniatura vertical (shortsAspectRatio) y el mp4 no está en esta caja; no se inventó portada. La maxres actual suele ser un fotograma automático 16:9."
+  },
+  {
+   "yt_id": "gN6svdqe62Q",
+   "titulo": "El Cinco de Mayo NO es la Independencia #Shorts",
+   "estado": "programado",
+   "publishAt": "2026-11-28T23:00:00Z",
+   "hora_cdmx": "2026-11-28 17:00 CST",
+   "fileName": "capsula.mp4",
+   "fileSize": 24850277,
+   "motivo": "sin miniatura vertical (shortsAspectRatio) y el mp4 no está en esta caja; no se inventó portada. La maxres actual suele ser un fotograma automático 16:9."
+  },
+  {
+   "yt_id": "CcZ_jacsDXM",
+   "titulo": "Sor Juana defendió su derecho a pensar #Shorts",
+   "estado": "programado",
+   "publishAt": "2026-11-28T19:30:00Z",
+   "hora_cdmx": "2026-11-28 13:30 CST",
+   "fileName": "capsula.mp4",
+   "fileSize": 40226639,
+   "motivo": "sin miniatura vertical (shortsAspectRatio) y el mp4 no está en esta caja; no se inventó portada. La maxres actual suele ser un fotograma automático 16:9."
+  },
+  {
+   "yt_id": "HSCq0Q0lbO0",
+   "titulo": "La primera foto tardó 8 horas #Shorts",
+   "estado": "programado",
+   "publishAt": "2026-11-28T01:00:00Z",
+   "hora_cdmx": "2026-11-27 19:00 CST",
+   "fileName": "capsula.mp4",
+   "fileSize": 29103246,
+   "motivo": "sin miniatura vertical (shortsAspectRatio) y el mp4 no está en esta caja; no se inventó portada. La maxres actual suele ser un fotograma automático 16:9."
+  },
+  {
+   "yt_id": "_slEv21gbpM",
+   "titulo": "¿Todos los artistas odiaban la Torre Eiffel? #Shorts",
+   "estado": "programado",
+   "publishAt": "2026-11-27T23:00:00Z",
+   "hora_cdmx": "2026-11-27 17:00 CST",
+   "fileName": "capsula.mp4",
+   "fileSize": 35067082,
+   "motivo": "sin miniatura vertical (shortsAspectRatio) y el mp4 no está en esta caja; no se inventó portada. La maxres actual suele ser un fotograma automático 16:9."
+  },
+  {
+   "yt_id": "q5ZHy9oH6VM",
+   "titulo": "¿Los babilonios dibujaban mapas como los actuales? #Shorts",
+   "estado": "programado",
+   "publishAt": "2026-11-27T01:00:00Z",
+   "hora_cdmx": "2026-11-26 19:00 CST",
+   "fileName": "capsula.mp4",
+   "fileSize": 33272718,
+   "motivo": "sin miniatura vertical (shortsAspectRatio) y el mp4 no está en esta caja; no se inventó portada. La maxres actual suele ser un fotograma automático 16:9."
+  },
+  {
+   "yt_id": "JqlKsJOVmdE",
+   "titulo": "Magallanes NO completó la vuelta al mundo #Shorts",
+   "estado": "programado",
+   "publishAt": "2026-11-26T23:00:00Z",
+   "hora_cdmx": "2026-11-26 17:00 CST",
+   "fileName": "capsula.mp4",
+   "fileSize": 44269087,
+   "motivo": "sin miniatura vertical (shortsAspectRatio) y el mp4 no está en esta caja; no se inventó portada. La maxres actual suele ser un fotograma automático 16:9."
+  },
+  {
+   "yt_id": "A3JK0gYuqG8",
+   "titulo": "El camino inca no llevaba a Machu Picchu #Shorts",
+   "estado": "programado",
+   "publishAt": "2026-11-26T01:00:00Z",
+   "hora_cdmx": "2026-11-25 19:00 CST",
+   "fileName": "capsula.mp4",
+   "fileSize": 35360749,
+   "motivo": "sin miniatura vertical (shortsAspectRatio) y el mp4 no está en esta caja; no se inventó portada. La maxres actual suele ser un fotograma automático 16:9."
+  },
+  {
+   "yt_id": "L6ggmPAwBOA",
+   "titulo": "Francia NO pagó toda la Estatua de la Libertad #Shorts",
+   "estado": "programado",
+   "publishAt": "2026-11-25T23:00:00Z",
+   "hora_cdmx": "2026-11-25 17:00 CST",
+   "fileName": "capsula.mp4",
+   "fileSize": 34662710,
+   "motivo": "sin miniatura vertical (shortsAspectRatio) y el mp4 no está en esta caja; no se inventó portada. La maxres actual suele ser un fotograma automático 16:9."
+  },
+  {
+   "yt_id": "9W9nn72rmfE",
+   "titulo": "¿La reina Victoria inventó el vestido de novia? #Shorts",
+   "estado": "programado",
+   "publishAt": "2026-11-25T01:00:00Z",
+   "hora_cdmx": "2026-11-24 19:00 CST",
+   "fileName": "capsula.mp4",
+   "fileSize": 30616988,
+   "motivo": "sin miniatura vertical (shortsAspectRatio) y el mp4 no está en esta caja; no se inventó portada. La maxres actual suele ser un fotograma automático 16:9."
+  },
+  {
+   "yt_id": "cGb7Z0ZEz8w",
+   "titulo": "El vomitorium NO era para vomitar #Shorts",
+   "estado": "programado",
+   "publishAt": "2026-11-24T23:00:00Z",
+   "hora_cdmx": "2026-11-24 17:00 CST",
+   "fileName": "capsula.mp4",
+   "fileSize": 36029779,
+   "motivo": "sin miniatura vertical (shortsAspectRatio) y el mp4 no está en esta caja; no se inventó portada. La maxres actual suele ser un fotograma automático 16:9."
+  },
+  {
+   "yt_id": "i3SpxSQglm4",
+   "titulo": "La Biblia de Gutenberg NO fue el primer libro impreso #Shorts",
+   "estado": "programado",
+   "publishAt": "2026-11-24T01:00:00Z",
+   "hora_cdmx": "2026-11-23 19:00 CST",
+   "fileName": "capsula.mp4",
+   "fileSize": 32892265,
+   "motivo": "sin miniatura vertical (shortsAspectRatio) y el mp4 no está en esta caja; no se inventó portada. La maxres actual suele ser un fotograma automático 16:9."
+  },
+  {
+   "yt_id": "Jw_PpIT7JsI",
+   "titulo": "El teatro de Shakespeare NO tenía techo #Shorts",
+   "estado": "programado",
+   "publishAt": "2026-11-29T13:00:00Z",
+   "hora_cdmx": "2026-11-29 07:00 CST",
+   "fileName": "capsula.mp4",
+   "fileSize": 58072933,
+   "motivo": "sin miniatura vertical (shortsAspectRatio) y el mp4 no está en esta caja; no se inventó portada. La maxres actual suele ser un fotograma automático 16:9."
+  },
+  {
+   "yt_id": "LSbmUp1J5VY",
+   "titulo": "Una mujer ganó los Juegos Olímpicos antiguos #Shorts",
+   "estado": "programado",
+   "publishAt": "2026-11-28T13:00:00Z",
+   "hora_cdmx": "2026-11-28 07:00 CST",
+   "fileName": "capsula.mp4",
+   "fileSize": 37176355,
+   "motivo": "sin miniatura vertical (shortsAspectRatio) y el mp4 no está en esta caja; no se inventó portada. La maxres actual suele ser un fotograma automático 16:9."
+  },
+  {
+   "yt_id": "VHuJb2dh4E4",
+   "titulo": "La Biblioteca de Alejandría NO se quemó en una noche #Shorts",
+   "estado": "programado",
+   "publishAt": "2026-11-27T19:30:00Z",
+   "hora_cdmx": "2026-11-27 13:30 CST",
+   "fileName": "capsula.mp4",
+   "fileSize": 36739372,
+   "motivo": "sin miniatura vertical (shortsAspectRatio) y el mp4 no está en esta caja; no se inventó portada. La maxres actual suele ser un fotograma automático 16:9."
+  },
+  {
+   "yt_id": "jiX6RdwJ1gg",
+   "titulo": "¿Los caballeros necesitaban una grúa? #Shorts",
+   "estado": "programado",
+   "publishAt": "2026-11-27T13:00:00Z",
+   "hora_cdmx": "2026-11-27 07:00 CST",
+   "fileName": "capsula.mp4",
+   "fileSize": 49070906,
+   "motivo": "sin miniatura vertical (shortsAspectRatio) y el mp4 no está en esta caja; no se inventó portada. La maxres actual suele ser un fotograma automático 16:9."
+  },
+  {
+   "yt_id": "966qJDbIJp4",
+   "titulo": "¿Los museos públicos siempre existieron? #Shorts",
+   "estado": "programado",
+   "publishAt": "2026-11-26T19:30:00Z",
+   "hora_cdmx": "2026-11-26 13:30 CST",
+   "fileName": "capsula.mp4",
+   "fileSize": 34334640,
+   "motivo": "sin miniatura vertical (shortsAspectRatio) y el mp4 no está en esta caja; no se inventó portada. La maxres actual suele ser un fotograma automático 16:9."
+  },
+  {
+   "yt_id": "ZkrzVP6V5k8",
+   "titulo": "¿El cilindro de Ciro fue la primera declaración de derechos? #Shorts",
+   "estado": "programado",
+   "publishAt": "2026-11-26T13:00:00Z",
+   "hora_cdmx": "2026-11-26 07:00 CST",
+   "fileName": "capsula.mp4",
+   "fileSize": 35579037,
+   "motivo": "sin miniatura vertical (shortsAspectRatio) y el mp4 no está en esta caja; no se inventó portada. La maxres actual suele ser un fotograma automático 16:9."
+  },
+  {
+   "yt_id": "G1ByWhjfxls",
+   "titulo": "La Carta Magna NO creó la democracia #Shorts",
+   "estado": "programado",
+   "publishAt": "2026-11-25T19:30:00Z",
+   "hora_cdmx": "2026-11-25 13:30 CST",
+   "fileName": "capsula.mp4",
+   "fileSize": 61652125,
+   "motivo": "sin miniatura vertical (shortsAspectRatio) y el mp4 no está en esta caja; no se inventó portada. La maxres actual suele ser un fotograma automático 16:9."
+  },
+  {
+   "yt_id": "cPNiOFeY5_k",
+   "titulo": "Colón NO fue el primer europeo en América #Shorts",
+   "estado": "programado",
+   "publishAt": "2026-11-25T13:00:00Z",
+   "hora_cdmx": "2026-11-25 07:00 CST",
+   "fileName": "capsula.mp4",
+   "fileSize": 54023080,
+   "motivo": "sin miniatura vertical (shortsAspectRatio) y el mp4 no está en esta caja; no se inventó portada. La maxres actual suele ser un fotograma automático 16:9."
+  },
+  {
+   "yt_id": "WtuxaKrS4-Q",
+   "titulo": "El robo que hizo famosa a la Mona Lisa #Shorts",
+   "estado": "programado",
+   "publishAt": "2026-11-24T19:30:00Z",
+   "hora_cdmx": "2026-11-24 13:30 CST",
+   "fileName": "capsula.mp4",
+   "fileSize": 59395199,
+   "motivo": "sin miniatura vertical (shortsAspectRatio) y el mp4 no está en esta caja; no se inventó portada. La maxres actual suele ser un fotograma automático 16:9."
+  },
+  {
+   "yt_id": "RBUcAeptGAU",
+   "titulo": "El púrpura NO venía de piedras preciosas #Shorts",
+   "estado": "programado",
+   "publishAt": "2026-11-24T13:00:00Z",
+   "hora_cdmx": "2026-11-24 07:00 CST",
+   "fileName": "capsula.mp4",
+   "fileSize": 37622935,
+   "motivo": "sin miniatura vertical (shortsAspectRatio) y el mp4 no está en esta caja; no se inventó portada. La maxres actual suele ser un fotograma automático 16:9."
+  },
+  {
+   "yt_id": "gWJxoGjWQeM",
+   "titulo": "¿Las pirámides las hicieron esclavos? #Shorts",
+   "estado": "programado",
+   "publishAt": "2026-11-23T23:00:00Z",
+   "hora_cdmx": "2026-11-23 17:00 CST",
+   "fileName": "capsula.mp4",
+   "fileSize": 34167014,
+   "motivo": "sin miniatura vertical (shortsAspectRatio) y el mp4 no está en esta caja; no se inventó portada. La maxres actual suele ser un fotograma automático 16:9."
+  },
+  {
+   "yt_id": "8okieDXFIgU",
+   "titulo": "Napoleón NO era bajito #Shorts",
+   "estado": "público",
+   "publishAt": null,
+   "hora_cdmx": null,
+   "fileName": "capsula.mp4",
+   "fileSize": 27622974,
+   "motivo": "oardefault es un fotograma del medio (subtítulo), no la portada; no hay mp4 en la caja"
+  },
+  {
+   "yt_id": "p5PM4xZfDyc",
+   "titulo": "La piedra Rosetta NO era un diccionario #Shorts",
+   "estado": "programado",
+   "publishAt": "2026-11-23T19:30:00Z",
+   "hora_cdmx": "2026-11-23 13:30 CST",
+   "fileName": "capsula.mp4",
+   "fileSize": 48672627,
+   "motivo": "sin miniatura vertical (shortsAspectRatio) y el mp4 no está en esta caja; no se inventó portada. La maxres actual suele ser un fotograma automático 16:9."
+  },
+  {
+   "yt_id": "RwTTwSNGm10",
+   "titulo": "Colón NO llamó América al continente #Shorts",
+   "estado": "programado",
+   "publishAt": "2026-11-22T05:30:00Z",
+   "hora_cdmx": "2026-11-21 23:30 CST",
+   "fileName": "capsula.mp4",
+   "fileSize": 69297607,
+   "motivo": "sin SAR; maxres no es portada; no hay mp4 (size 69297607). Sale 21-nov 23:30 CDMX"
+  },
+  {
+   "yt_id": "BIwG7kgaLic",
+   "titulo": "¿Webb ve aire lejano? #Shorts",
+   "estado": "programado",
+   "publishAt": "2026-11-23T01:00:00Z",
+   "hora_cdmx": "2026-11-22 19:00 CST",
+   "fileName": "capsula.mp4",
+   "fileSize": 12586638,
+   "motivo": "sin SAR; no hay mp4. Sale 22-nov 19:00 CDMX"
+  },
+  {
+   "yt_id": "6XCBYrlO4Eg",
+   "titulo": "El tejón que se burló del zoológico #Shorts",
+   "estado": "público",
+   "publishAt": null,
+   "hora_cdmx": null,
+   "fileName": "capsula.mp4",
+   "fileSize": 21593252,
+   "motivo": "oardefault es un fotograma del medio (león/subtítulo); no hay mp4 en la caja"
+  },
+  {
+   "yt_id": "Eldk0fVWqpo",
+   "titulo": "La erupción invisible que liberó una nube de metano #Shorts",
+   "estado": "público",
+   "publishAt": null,
+   "hora_cdmx": null,
+   "fileName": "capsula.mp4",
+   "fileSize": 29474543,
+   "motivo": "oardefault es un fotograma del medio (satélite/subtítulo); no hay mp4 en la caja"
+  },
+  {
+   "yt_id": "N21TIYdONZo",
+   "titulo": "En Salem NO quemaron brujas #Shorts",
+   "estado": "programado",
+   "publishAt": "2026-11-22T13:00:00Z",
+   "hora_cdmx": "2026-11-22 07:00 CST",
+   "fileName": "capsula.mp4",
+   "fileSize": 27788814,
+   "motivo": "sin SAR; no hay mp4. Sale 22-nov 07:00 CDMX"
+  },
+  {
+   "yt_id": "Sc0cX9ejxuw",
+   "titulo": "Ada Lovelace escribió el primer programa #Shorts",
+   "estado": "programado",
+   "publishAt": "2026-11-22T23:00:00Z",
+   "hora_cdmx": "2026-11-22 17:00 CST",
+   "fileName": "capsula.mp4",
+   "fileSize": 44912569,
+   "motivo": "sin SAR; no hay mp4. Sale 22-nov 17:00 CDMX"
+  },
+  {
+   "yt_id": "YXndoPSSeaY",
+   "titulo": "Gutenberg NO inventó la imprenta #Shorts",
+   "estado": "programado",
+   "publishAt": "2026-11-22T19:30:00Z",
+   "hora_cdmx": "2026-11-22 13:30 CST",
+   "fileName": "capsula.mp4",
+   "fileSize": 29934500,
+   "motivo": "sin SAR; no hay mp4. Sale 22-nov 13:30 CDMX"
+  },
+  {
+   "yt_id": "-fDL2pBjH30",
+   "titulo": "El mosquito que escucha",
+   "estado": "privado sin publishAt (no se tocó privacidad)",
+   "publishAt": null,
+   "hora_cdmx": null,
+   "fileName": "capsula.mp4",
+   "fileSize": 23645149,
+   "motivo": "sin miniatura vertical ni mp4 local (size 23645149)"
+  }
+ ],
+ "portadas_que_necesitan_rework_de_Mj": [
+  {
+   "yt_id": "dz2C-Y8klXA",
+   "titulo": "¿Sabías que el ornitorrinco brilla bajo luz UV? #Shorts",
+   "miniatura": "ya es el frame 0 (SAR OK, phash 0)",
+   "problema": "el título de la portada parte la palabra (ORNITORRINC / O); no se rediseñó"
+  },
+  {
+   "yt_id": "t8nH76NOOH8",
+   "titulo": "El agua que baila sobre el sartén",
+   "miniatura": "SAR presente: tarjeta amarilla con título legible",
+   "problema": "estilo tarjeta tipográfica, no la caja crema sobre ilustración; el mp4 final no está en la caja (auditoría 17-nov). No se inventó otra portada."
+  },
+  {
+   "yt_id": "N7a9o4xKTas",
+   "titulo": "El mapa 3D del cerebro fetal que revela el origen de la esquizofrenia #Shorts",
+   "miniatura": "SAR presente: tarjeta amarilla con título legible",
+   "problema": "igual que t8nH76NOOH8; mp4 final no localizado por tamaño"
+  },
+  {
+   "yt_id": "V4h28RA8bq0",
+   "titulo": "El agua caliente se congela más rápido que la fría #Shorts",
+   "miniatura": "SAR presente: tarjeta amarilla con título legible",
+   "problema": "igual que t8nH76NOOH8; mp4 final no localizado por tamaño"
+  }
+ ],
+ "ya_ok_sar_vs_frame0": [
+  {
+   "yt_id": "ZG4iQgmWrLI",
+   "titulo": "Un robot ensambla una estructura en órbita #Shorts",
+   "ham16": 0
+  },
+  {
+   "yt_id": "K4qNkx2f4RI",
+   "titulo": "Químicos aislan oxoboranos estables tras 60 años #Shorts",
+   "ham16": 2
+  },
+  {
+   "yt_id": "WTlFSZV9HYg",
+   "titulo": "IA encuentra materiales 2D olvidados #Shorts",
+   "ham16": 0
+  },
+  {
+   "yt_id": "msWV2AXr6Uk",
+   "titulo": "El rosa del flamenco viene de su comida #Shorts",
+   "ham16": 0
+  },
+  {
+   "yt_id": "zyTl_cVGN6E",
+   "titulo": "ADN que apaga el gen del cáncer #Shorts",
+   "ham16": 0
+  },
+  {
+   "yt_id": "vj5RZDt-dfc",
+   "titulo": "Juno revela el choque invisible de Júpiter #Shorts",
+   "ham16": 0
+  },
+  {
+   "yt_id": "AxgWdhqPhRI",
+   "titulo": "La corneja decide en 235 milisegundos #Shorts",
+   "ham16": 4
+  },
+  {
+   "yt_id": "NKDhKlY1rVI",
+   "titulo": "Virus y bacterias colapsan el bloom #Shorts",
+   "ham16": 0
+  },
+  {
+   "yt_id": "25mWYJVOPLk",
+   "titulo": "El riesgo que queda después del colesterol #Shorts",
+   "ham16": 0
+  },
+  {
+   "yt_id": "KnP1j4y72ug",
+   "titulo": "El hielo que sostuvo tres mantos #Shorts",
+   "ham16": 0
+  },
+  {
+   "yt_id": "XL0f90ZtwpY",
+   "titulo": "Plástico con enzimas que se deshace en el mar profundo #Shorts",
+   "ham16": 0
+  },
+  {
+   "yt_id": "45WOvkNQTHo",
+   "titulo": "El coral blanqueado que volvió a recuperarse #Shorts",
+   "ham16": 0
+  },
+  {
+   "yt_id": "THQxnLZEz3A",
+   "titulo": "El pulpo reparte el trabajo entre tres corazones #Shorts",
+   "ham16": 0
+  },
+  {
+   "yt_id": "hrUwoLgADBI",
+   "titulo": "¿Se va la luz el 17 de noviembre por una IA? #inteligenciaartificial",
+   "ham16": 0
+  },
+  {
+   "yt_id": "aTau_z2yWq8",
+   "titulo": "Microbioma intestinal y cerebro en autismo #Shorts",
+   "ham16": 0
+  },
+  {
+   "yt_id": "O9QlSaft5DY",
+   "titulo": "Agua que une imanes lejanos #Shorts",
+   "ham16": 0
+  },
+  {
+   "yt_id": "es6hWxPdt2A",
+   "titulo": "El colibrí que se enfría casi como una piedra #Shorts",
+   "ham16": 0
+  },
+  {
+   "yt_id": "8EcFyXTcSdM",
+   "titulo": "Un aminoácido cambia el virus Andes #Shorts",
+   "ham16": 1
+  },
+  {
+   "yt_id": "JV8SB2EpPyI",
+   "titulo": "El rosa del flamenco viene de su comida #Shorts",
+   "ham16": 2
+  },
+  {
+   "yt_id": "EX0W3q-yKRw",
+   "titulo": "¿Los árboles hablan bajo tierra? #Shorts",
+   "ham16": 0
+  },
+  {
+   "yt_id": "uEsoscBrfgU",
+   "titulo": "De bebé tenías más huesos que ahora #Shorts",
+   "ham16": 0
+  },
+  {
+   "yt_id": "YVfUrd2NQJw",
+   "titulo": "¿Aves que temen a mujeres?",
+   "ham16": 0
+  },
+  {
+   "yt_id": "YV_3JgGv1kg",
+   "titulo": "El pez que mira a través de su cabeza #Shorts",
+   "ham16": 1
+  },
+  {
+   "yt_id": "WcTviUWqbes",
+   "titulo": "¿Por qué trabajan más las ratas topo cuando nacen sus crías? #Shorts",
+   "ham16": 0
+  },
+  {
+   "yt_id": "4Qpl17Ts_vI",
+   "titulo": "Esa nube puede cargar quinientas toneladas #Shorts",
+   "ham16": 0
+  },
+  {
+   "yt_id": "maLtsoQpxwI",
+   "titulo": "¿El arroz de ayer puede enfermarte? #Shorts",
+   "ham16": 3
+  },
+  {
+   "yt_id": "wxnhEdlJYwU",
+   "titulo": "La corneja decide en 235 milisegundos #Shorts",
+   "ham16": 0
+  },
+  {
+   "yt_id": "wbFrlM2e_YE",
+   "titulo": "Esta ballena bajó a dos latidos por minuto #Shorts",
+   "ham16": 0
+  },
+  {
+   "yt_id": "K2I_jgugiOU",
+   "titulo": "Capsaicina: ¿agua, refresco o leche?",
+   "ham16": 0
+  },
+  {
+   "yt_id": "nSS_q2tj2P0",
+   "titulo": "El hueso no salva tu guacamole #Shorts",
+   "ham16": 0
+  },
+  {
+   "yt_id": "4lOWeMn2RCo",
+   "titulo": "¿Por qué tenemos hipo? #Shorts",
+   "ham16": 0
+  },
+  {
+   "yt_id": "UBFuKBU3cx0",
+   "titulo": "Esta rana se congela y vuelve a saltar #Shorts",
+   "ham16": 0
+  },
+  {
+   "yt_id": "EwZ3dHalUn0",
+   "titulo": "¿Qué queda en tu cocina después de limpiar? #shorts",
+   "ham16": 0
+  },
+  {
+   "yt_id": "zTP5akrGA9M",
+   "titulo": "Tus palomitas explotan por dentro #Shorts",
+   "ham16": 0
+  },
+  {
+   "yt_id": "PTk2QNMkOn4",
+   "titulo": "El refri puede endurecer tu pan más rápido #Shorts",
+   "ham16": 0
+  },
+  {
+   "yt_id": "phVfyHp3CnY",
+   "titulo": "En Venus el año acaba antes de dos días #Shorts",
+   "ham16": 0
+  },
+  {
+   "yt_id": "m4RqQRaz55k",
+   "titulo": "Esta arena canta sin una sola bocina #Shorts",
+   "ham16": 1
+  },
+  {
+   "yt_id": "41PYjWbQuJo",
+   "titulo": "41PYjWbQuJo",
+   "ham16": 0
+  },
+  {
+   "yt_id": "Vx8EhL4ib7I",
+   "titulo": "Vx8EhL4ib7I",
+   "ham16": 0
+  },
+  {
+   "yt_id": "dz2C-Y8klXA",
+   "titulo": "dz2C-Y8klXA",
+   "ham16": 0
+  },
+  {
+   "yt_id": "tiGeRapGRjM",
+   "titulo": "tiGeRapGRjM",
+   "ham16": 0
+  }
+ ],
+ "excluidos": [
+  {
+   "yt_id": "jeUrM5zzkdA",
+   "motivo": "exclusión expresa; no se tocó"
+  },
+  {
+   "yt_id": "Z-nt8t7qPx8",
+   "motivo": "exclusión expresa; no se tocó"
+  }
+ ],
+ "colisiones_horario_mismo_publishAt": [
+  {
+   "publishAt": "2026-11-23T13:00:00Z",
+   "hora_cdmx": "2026-11-23 07:00 CST",
+   "videos": [
+    {
+     "yt_id": "IQEU2Bqy3v0",
+     "titulo": "¿La IA nos va a matar? La advertencia de un directivo de OpenAI #Shorts"
+    },
+    {
+     "yt_id": "tmOji99zGPE",
+     "titulo": "¿Qué pasa dentro cuando truenas los dedos? #Shorts"
+    }
+   ]
+  },
+  {
+   "publishAt": "2026-11-24T23:00:00Z",
+   "hora_cdmx": "2026-11-24 17:00 CST",
+   "videos": [
+    {
+     "yt_id": "cGb7Z0ZEz8w",
+     "titulo": "El vomitorium NO era para vomitar #Shorts"
+    },
+    {
+     "yt_id": "_YzBY4OfUeo",
+     "titulo": "¿Lavas el pollo crudo? Mejor no #Shorts"
+    }
+   ]
+  },
+  {
+   "publishAt": "2026-11-25T13:00:00Z",
+   "hora_cdmx": "2026-11-25 07:00 CST",
+   "videos": [
+    {
+     "yt_id": "cPNiOFeY5_k",
+     "titulo": "Colón NO fue el primer europeo en América #Shorts"
+    },
+    {
+     "yt_id": "W9g2tPZTpD4",
+     "titulo": "Esta medusa vuelve a ser joven #Shorts"
+    }
+   ]
+  },
+  {
+   "publishAt": "2026-11-26T23:00:00Z",
+   "hora_cdmx": "2026-11-26 17:00 CST",
+   "videos": [
+    {
+     "yt_id": "JqlKsJOVmdE",
+     "titulo": "Magallanes NO completó la vuelta al mundo #Shorts"
+    },
+    {
+     "yt_id": "-1DRh_qj7Bg",
+     "titulo": "¿Sabías que el plátano es una baya y la fresa no? #Shorts"
+    }
+   ]
+  },
+  {
+   "publishAt": "2026-11-27T13:00:00Z",
+   "hora_cdmx": "2026-11-27 07:00 CST",
+   "videos": [
+    {
+     "yt_id": "jiX6RdwJ1gg",
+     "titulo": "¿Los caballeros necesitaban una grúa? #Shorts"
+    },
+    {
+     "yt_id": "nd0rs6iVy8E",
+     "titulo": "¿El microondas calienta de adentro hacia afuera? #Shorts"
+    }
+   ]
+  },
+  {
+   "publishAt": "2026-11-28T23:00:00Z",
+   "hora_cdmx": "2026-11-28 17:00 CST",
+   "videos": [
+    {
+     "yt_id": "gN6svdqe62Q",
+     "titulo": "El Cinco de Mayo NO es la Independencia #Shorts"
+    },
+    {
+     "yt_id": "fcSNbU809ao",
+     "titulo": "¿Por qué te mareas en el coche? #Shorts"
+    }
+   ]
+  }
+ ],
+ "nota_studio": "Las 9 correcciones se hicieron por API; no hace falta Studio para la miniatura. El lote de mitos/historia (Salem, Gutenberg, Ada, Napoleón, Colón, Webb, etc.) no está en esta caja: para fijar su portada vertical hace falta el mp4 (o que quien lo subió deje el archivo). La API no puede crear una portada nueva."
+}
