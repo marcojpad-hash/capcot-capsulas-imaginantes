@@ -161,3 +161,16 @@ Se intentó abrir cada URL declarada en `scripts/tendencias.py` y Google Trends 
 **Respaldo oficial consultado:** NASA Science para el hito de Voyager 1 y las nubes crepusculares de Curiosity; NASA Science/Earth Observatory para hielo más allá de Neptuno y floración de Atacama; artículo primario de *Nature Communications* para los intermediarios Aβ. Las fuentes y límites de cada afirmación están en el radar. Voyager se excluyó por duplicación; el candidato Aβ queda `PENDING_CROSSREF`.
 
 **Estado:** RSS_XML_READER_LIMITATION; Google Trends sin lectura; ESA URL devuelve 404; ejecución real del script PENDIENTE. No se inventó que los feeds estuvieran caídos ni se generó storyboard a partir de una tendencia sin fuente primaria.
+
+
+## Reconciliación de datos main/feature — 2026-11-22, 04:00 CDMX
+
+Lectura de solo lectura de los inventarios JSON:
+
+- `data/horarios.json`: feature está fechado 2026-11-09; main está fechado 2026-11-16 y contiene una política adicional. La rama feature no es fuente suficiente para el calendario actual.
+- `data/publicaciones.json`: feature contiene 22 registros; main contiene 48. `data/rotacion.json`: feature contiene 27 registros; main contiene 39. `data/temas_del_dia.json` tiene el mismo blob SHA en ambas ramas (`38e14259090e643123c2004de5057626948e34ac`).
+- Main conserva el registro de producción del robot orbital del 21-nov 19:00, YouTube `ZG4iQgmWrLI`, con programación de TikTok/Facebook. Se clasifica `PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR`; los medios referenciados no se localizaron en el árbol de GitHub.
+- `data/resubidas_2026-11-21.json` registra dos resubidas ya programadas: oxoboranos el 22-nov 14:30 CDMX (YouTube `B-75KkHAVDo`) y Cleopatra el 22-nov 21:00 CDMX (YouTube `I8n_5nnUlbI`). Se mantienen intactas; no se creó ni alteró programación.
+- El mismo archivo propone 23-nov 14:30 para enana blanca, pero la fila está `bloqueado_sin_mp4`, sin ID nuevo y sin binario. Es propuesta bloqueada, no slot confirmado ni autorización para que el investigador genere otro storyboard.
+- `data/miniaturas_auditoria_2026-11-21.json` registra 6 colisiones de horario, 9 miniaturas corregidas, 36 pendientes por falta de MP4 y 4 con rework. Se conserva como trabajo preexistente; no se repitieron operaciones de Studio.
+- Los archivos `data/*.json` permanecieron intactos. La diferencia de inventario y calendario entre ramas se conserva explícita; no se sincronizó main con feature ni viceversa.
