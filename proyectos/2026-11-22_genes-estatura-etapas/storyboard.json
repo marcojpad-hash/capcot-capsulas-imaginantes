@@ -24,13 +24,13 @@
     "fecha_publicacion": "2026-11-22",
     "url": "https://www.nature.com/articles/s41467-026-79465-x",
     "tipo": "artículo primario de investigación",
-    "nota": "El slot 23:30 está libre en los registros de main; DOI resolver/Crossref aún pendientes."
+    "nota": "DOI verificado mediante registro Crossref y página primaria de Nature Communications el 2026-11-22. El slot 23:30 sigue libre en main; narrative_qa y validación estructural final pendientes."
   },
   "editorial_status": "BORRADOR_EN_PROYECTOS",
   "estado": "BORRADOR_EN_PROYECTOS",
   "production_mode": "storyboard_only",
   "voice": {
-    "engine": "Azure Neural TTS",
+    "engine": "edge-tts",
     "voice_id": "es-MX-JorgeNeural",
     "language": "es-MX",
     "rate": "+7%",
@@ -62,7 +62,11 @@
     "stakes": "La estatura parece una cifra simple, pero su desarrollo se relaciona con procesos biológicos y metabólicos; confundir asociaciones con pronósticos puede alarmar sin evidencia individual.",
     "giro_cientifico": "El estudio distingue tres agrupaciones temporales de influencia genética e identifica 106 proteínas asociadas con la estatura prepuberal.",
     "limite_evidencia": "Los resultados proceden de cohortes y modelos genéticos; la relación con diabetes tipo 2 no es un diagnóstico ni un pronóstico individual.",
-    "payoff": "La misma medida puede ocultar historias biológicas distintas; importa cuándo ocurre el crecimiento, no solo cuánto mide."
+    "payoff": "La misma medida puede ocultar historias biológicas distintas; importa cuándo ocurre el crecimiento, no solo cuánto mide.",
+    "central_question": "¿Por qué la influencia genética sobre la estatura cambia durante el crecimiento?",
+    "promise": "Mostrar cómo la arquitectura genética y las señales proteómicas varían por etapa, con una conexión poblacional con la salud metabólica.",
+    "scientific_turn": "El estudio distingue tres agrupaciones temporales de influencia genética e identifica 106 proteínas asociadas con la estatura prepuberal.",
+    "evidence_limit": "Los resultados proceden de cohortes y modelos genéticos; la relación con diabetes tipo 2 no es un diagnóstico ni un pronóstico individual."
   },
   "arco": {
     "hook_medias_res": "Tus genes no pesan igual.",
@@ -86,27 +90,40 @@
         "106 proteínas asociadas con estatura prepuberal, incluidas señales IGF1, IGF2 e IGFBP3",
         "análisis de aleatorización mendeliana y riesgo de diabetes tipo 2"
       ],
-      "verification_status": "PENDIENTE",
-      "verification_note": "La página editorial primaria está accesible; api.crossref.org y doi.org devolvieron URL no accesible mediante esta herramienta. No promover hasta verificar DOI."
+      "verification_status": "VERIFICADO_CROSSREF",
+      "verification_note": "Crossref REST record returned status=ok for DOI 10.1038/s41467-026-79465-x; title and publisher match Nature Communications. Nature article page confirms publication on 2026-11-22 and permanent DOI. Retrieved 2026-11-22.",
+      "cita_corta": "Nature Communications (2026), The genetic and proteomic determinants of pediatric stature development and their link to adult height and type 2 diabetes",
+      "accessed": "2026-11-22"
     },
     {
       "id": "SRC-002",
-      "citation_short": "Norwegian Institute of Public Health, About the Norwegian Institute of Public Health",
-      "url": "https://www.fhi.no/en/ab/niph/",
+      "citation_short": "Norwegian Institute of Public Health, Contact us / visiting addresses",
+      "url": "https://www.fhi.no/en/ab/niph/opening-hours-employees-addresses/",
       "accessed_at": "2026-11-22",
       "supports": [
-        "Afiliación institucional en Oslo y dirección oficial Lovisenberggata 8, 0456 Oslo, Norway"
-      ]
+        "Dirección oficial de visita: Lovisenberggata 6 y 8, 0456 Oslo, Norway."
+      ],
+      "cita_corta": "Norwegian Institute of Public Health, Contact us / visiting addresses",
+      "accessed": "2026-11-22",
+      "publication_date": "2023-04-18",
+      "verification_status": "VERIFICADO_FUENTE_OFICIAL",
+      "verification_note": "NIPH contact page, last updated 2023-04-18, lists visiting addresses Lovisenberggata 6 and 8, 0456 Oslo."
     },
     {
       "id": "SRC-003",
       "citation_short": "UK Biobank, Manchester office directions",
-      "url": "https://www.ukbiobank.ac.uk/contact-us/",
+      "url": "https://www.ukbiobank.ac.uk/about-us/contact-us/manchester-office-directions/",
       "accessed_at": "2026-11-22",
       "supports": [
         "Dirección oficial Greenheys, Manchester Science Park, Pencroft Way, Manchester M15 6GZ",
-        "la oficina de Manchester es administrativa; el sitio de participantes indicado por UK Biobank es distinto"
-      ]
+        "la oficina de Manchester es administrativa; el sitio de participantes indicado por UK Biobank es distinto",
+        "Google Maps destination for the official Manchester office: 53.4630203, -2.23864."
+      ],
+      "cita_corta": "UK Biobank, Manchester office directions",
+      "accessed": "2026-11-22",
+      "publication_date": "2026-10-29",
+      "verification_status": "VERIFICADO_FUENTE_OFICIAL_Y_MAPS",
+      "verification_note": "Official UK Biobank directions page lists Greenheys, Manchester Science Park, Pencroft Way, M15 6GZ. Its Google Maps link resolves to 53.4630203, -2.23864. This is the administrative office, not a participant location."
     },
     {
       "id": "SRC-004",
@@ -115,7 +132,12 @@
       "accessed_at": "2026-11-22",
       "supports": [
         "Coordenada de calle para Lovisenberggata, Oslo: 59.9333068, 10.7427136; precisión de calle, no de edificio"
-      ]
+      ],
+      "cita_corta": "Lokalhistoriewiki, Lovisenberggata (Oslo)",
+      "accessed": "2026-11-22",
+      "publication_date": null,
+      "verification_status": "VERIFICADO_REFERENCIA_GEOGRAFICA",
+      "verification_note": "Street-level coordinate 59.9333068, 10.7427136; not a building-level coordinate. Official NIPH contact page independently confirms the visiting address at Lovisenberggata 6 and 8."
     }
   ],
   "cortinilla_fuentes": {
@@ -151,7 +173,8 @@
       "causal_bridge_from_previous": "Apertura; el crecimiento ya está ocurriendo.",
       "question_state": "La audiencia sabe que la influencia genética no es constante, pero aún no sabe cómo se midió.",
       "reason_to_continue": "Necesita ver qué datos sostienen la anomalía.",
-      "new_information": "La influencia genética sobre la estatura varía con la etapa."
+      "new_information": "La influencia genética sobre la estatura varía con la etapa.",
+      "id": "S01"
     },
     {
       "scene_id": "S02",
@@ -187,7 +210,8 @@
       "causal_bridge_from_previous": "La pregunta exige saber si la observación procede de casos aislados o de una muestra amplia.",
       "question_state": "La muestra y las mediciones quedan establecidas.",
       "reason_to_continue": "Falta ubicar las instituciones que aportan el trabajo.",
-      "new_information": "El análisis reúne 72,704 participantes noruegos, 574,580 mediciones y datos de UK Biobank."
+      "new_information": "El análisis reúne 72,704 participantes noruegos, 574,580 mediciones y datos de UK Biobank.",
+      "id": "S02"
     },
     {
       "scene_id": "S03",
@@ -254,7 +278,8 @@
       "causal_bridge_from_previous": "Las fuentes de datos necesitan una referencia geográfica clara.",
       "question_state": "Queda claro qué instituciones se muestran y qué no representa el mapa.",
       "reason_to_continue": "La geografía no explica aún el cambio biológico.",
-      "new_information": "Los pines son institucionales, no ubicaciones de participantes."
+      "new_information": "Los pines son institucionales, no ubicaciones de participantes.",
+      "id": "S03"
     },
     {
       "scene_id": "S04",
@@ -280,7 +305,8 @@
       "causal_bridge_from_previous": "Una vez ubicadas las fuentes, la muestra revela patrones por etapa.",
       "question_state": "La influencia genética se divide en grupos temporales.",
       "reason_to_continue": "La audiencia necesita saber qué señales biológicas acompañan esos grupos.",
-      "new_information": "El estudio distingue tres agrupaciones temporales de influencia genética."
+      "new_information": "El estudio distingue tres agrupaciones temporales de influencia genética.",
+      "id": "S04"
     },
     {
       "scene_id": "S05",
@@ -315,7 +341,8 @@
       "causal_bridge_from_previous": "Los grupos temporales apuntan a mecanismos biológicos distintos.",
       "question_state": "La influencia por etapa también deja señales en proteínas circulantes.",
       "reason_to_continue": "Falta explicar por qué el hallazgo importa para la salud.",
-      "new_information": "Se identificaron 106 proteínas asociadas a la estatura prepuberal."
+      "new_information": "Se identificaron 106 proteínas asociadas a la estatura prepuberal.",
+      "id": "S05"
     },
     {
       "scene_id": "S06",
@@ -342,7 +369,8 @@
       "causal_bridge_from_previous": "Las proteínas y las etapas de crecimiento conducen a la pregunta por resultados posteriores.",
       "question_state": "Aparece una asociación de riesgo en el análisis genético.",
       "reason_to_continue": "Es necesario delimitar qué puede concluirse para una persona.",
-      "new_information": "El análisis de aleatorización mendeliana vinculó crecimiento fetal reducido y mayor estatura prepuberal con riesgo de diabetes tipo 2."
+      "new_information": "El análisis de aleatorización mendeliana vinculó crecimiento fetal reducido y mayor estatura prepuberal con riesgo de diabetes tipo 2.",
+      "id": "S06"
     },
     {
       "scene_id": "S07",
@@ -368,7 +396,8 @@
       "causal_bridge_from_previous": "La asociación de riesgo exige distinguir población de individuo.",
       "question_state": "La audiencia entiende qué no permite afirmar el estudio.",
       "reason_to_continue": "El cierre debe devolver la idea inicial con una conclusión clara.",
-      "new_information": "Los resultados no son un diagnóstico ni un pronóstico individual."
+      "new_information": "Los resultados no son un diagnóstico ni un pronóstico individual.",
+      "id": "S07"
     },
     {
       "scene_id": "S08",
@@ -394,7 +423,8 @@
       "causal_bridge_from_previous": "Tras delimitar el alcance, vuelve la imagen de la regla y revela su complejidad.",
       "question_state": "La pregunta central queda respondida: la influencia genética cambia por etapa.",
       "reason_to_continue": "No aplica; cierre final.",
-      "new_information": "La estatura debe entenderse como un proceso por etapas, no como un interruptor único."
+      "new_information": "La estatura debe entenderse como un proceso por etapas, no como un interruptor único.",
+      "id": "S08"
     }
   ],
   "audio": {
@@ -419,7 +449,6 @@
     ]
   },
   "risk_notes": [
-    "DOI pendiente de verificación Crossref/resolvedor; no promover.",
     "Los puntos del mapa son sedes institucionales/administrativas, no ubicaciones de participantes.",
     "La relación con diabetes tipo 2 es poblacional y no debe narrarse como pronóstico individual.",
     "El artículo aparece como versión temprana de investigación aceptada y puede recibir ediciones."
@@ -429,5 +458,9 @@
     "8 escenas, 78 segundos de escenas + 6 segundos de cortinilla = 84 segundos.",
     "Narración concatenada: 170–235 palabras; no se generaron medios, imágenes, audio, voz ni video.",
     "No hay asset_filename, asset_type, rutas ni export.filename."
-  ]
+  ],
+  "_schema": "CAPCOT_STORYBOARD_TEXT_V2",
+  "estructura": "pregunta",
+  "estilo_id": "papel_stop_motion",
+  "estilo_visual": "Stop-motion de papel"
 }
