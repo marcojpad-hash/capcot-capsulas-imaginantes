@@ -315,3 +315,8 @@ Google Trends oficial México, últimas 24 h, se abrió como respaldo: 263 tende
 El aviso oficial de Page Insights se verificó: la referencia del endpoint muestra Graph API v27.0 y anuncia deprecaciones para 15-jun-2026; la página detallada solo lista 15-jun-2025, 15-nov-2025 y 14-mar-2024; el blog enlazado devolvió HTTP 429. Se mantiene la discrepancia documental en `INVESTIGACION_API_META_Y_GOOGLE_TRENDS.md §9.11`; no se cambiaron integraciones.
 
 **Cierre:** no se promovió ni redispatchó contenido, no se generaron medios, no se modificaron `data/*.json`, main, estados Grok, programación, secretos ni permisos. El radar vigente queda con cinco candidatos y 23:30 `PENDING_SOURCE`; los conflictos de main quedan documentados para decisión, sin cancelaciones.
+
+
+### Precisión de PR #15 — suite no ejecutada
+
+La lectura de `tests/test_validar_storyboard_textual.py` en la rama `fix/capcot-map-coordinate-types-20261122` confirma **14 métodos unittest** (contrato narrativo, QA, mapas terrestres/celestes, booleanos en coordenadas/bounds y DOI). `scripts/validar_storyboard.py` fija la conexión HTTPS a `api.crossref.org` y rechaza booleanos antes de convertir coordenadas. El commit `30101e9aca8aaafb8d1894df30574a66067ff4a8` no tiene checks combinados registrados (`state=none`, `statuses=[]`). Se intentó clonar la rama para ejecutar la suite; error literal: `Could not resolve host: github.com`. No se ejecutaron los 14 tests y no se declara el PR validado.
