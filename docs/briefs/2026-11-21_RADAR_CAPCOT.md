@@ -377,3 +377,40 @@ Los tres archivos de datos son distintos entre `main` y la rama de trabajo; se d
 | `data/publicaciones.json` | `d51544b34ed9082285a23cc458475a36f7e8f3aa` | `a17dbe541d35b7e3d8a835756a06f0588039049a` | 48 registros en main frente a 22 en la rama; main contiene las programaciones del 21–23-nov ausentes en el snapshot de la rama. |
 
 **Decisión:** para prevenir duplicados se usó `main` en la comprobación de conflictos y el plan semanal, sin escribir en main ni sincronizar los JSON protegidos. La rama de trabajo debe considerarse desactualizada para rotación/horarios hasta una actualización autorizada de sus snapshots.
+
+
+## 7. Reconciliación de verificación y nueva lectura de tendencias — 21-nov-2026, run 11
+
+### Fentale: DOI actualizado con evidencia posterior al corte inicial
+
+El estado de la sección A queda superado por el commit `4626e44abb4d5c75b0f3aeb36fb84f62250244d9` del 21-nov:
+
+- Crossref REST devolvió `status=ok` en la consulta registrada por ese commit.
+- DOI exacto: `10.1038/s41561-026-02137-4`.
+- Coincidieron título del artículo, editorial Springer Nature y fecha de publicación 2026-11-19.
+- `doi_verification_status=VERIFICADO_CROSSREF`; la consulta a `doi.org` agotó tiempo, sin invalidar la respuesta Crossref.
+- Blob releído del storyboard: `769e4a785ca136f32eceaa1264fe985dedbbd064`.
+- La narración no cambió; se conserva el QA independiente `PASS/90`.
+- La verificación DOI no elimina el bloqueo editorial: el artículo es del 19-nov y el slot 23:30 del 21-nov exige dato publicado el mismo día. El validador estructural oficial no se ejecutó; el archivo de estado Grok sigue 404. Fentale permanece en proyectos, no dispatchable.
+
+### RSS y Google Trends: nueva lectura del lector web
+
+Se reintentaron las diez URL definidas en `scripts/tendencias.py`. Errores exactos de esta sesión:
+
+| Fuente | Error del lector |
+|---|---|
+| ScienceDaily Science / Health / Space | `(400) Unsupported content-type: application/xml` |
+| Phys.org | `(400) Unsupported content-type: text/xml` |
+| NASA News Release | `(400) Unsupported content-type: application/rss+xml` |
+| ESA Space Science | `(404) Not Found` |
+| Nature RSS | `(400) Unsupported content-type: application/rss+xml` |
+| EurekAlert | `URL https://www.eurekalert.org/rss/news.xml is not accessible via this tool.` |
+| SINC | `URL https://www.agenciasinc.es/rss is not accessible via this tool.` |
+| UNAM Global | `(400) Unsupported content-type: application/rss+xml` |
+| Google Trends RSS MX | `URL https://trends.google.com/trending/rss?geo=MX is not accessible via this tool.` |
+
+No se ejecutó el script Python ni se afirmó que los servidores estén caídos. Como respaldo se consultó [Google Trends México en HTML](https://trends.google.com/trending?geo=MX&hl=es): 239 tendencias, 25 visibles en la primera página; predominan fútbol, entretenimiento y actualidad. “meteorología” e “inundación” no aportaron una fuente científica primaria ni un ángulo suficiente para abrir otro proyecto. No se cambió la selección editorial.
+
+### Resultado
+
+Se conserva la shortlist existente de cinco candidatos y los dos leads clasificados en la sección 3. No hay nuevo slot autorizado y respaldado; no se crea storyboard ni se modifica `data/*.json`. No se generaron medios, no se publicó, no se programó y no se consumieron créditos.
