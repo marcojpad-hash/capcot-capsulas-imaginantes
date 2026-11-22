@@ -16,7 +16,7 @@ jobs:
     container:
       image: semgrep/semgrep:latest
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v5
 
       - name: Scan Semgrep
         run: semgrep scan --config p/default --config p/python --sarif --output semgrep.sarif --error
