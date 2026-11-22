@@ -204,3 +204,39 @@ El script no se ejecutó dentro del repositorio; este es el error de las solicit
 4. Intermediarios Aβ — *Nature Communications*, 9-nov-2026; `PENDING_CROSSREF`.
 
 Tardígrados marinos y APOD de Júpiter permanecen en el registro de descartes por duplicación. No se creó storyboard ni se reservó slot.
+
+## Revisión adicional de actualidad — 22 nov 2026, corte 05:55 CDMX
+
+### RSS y Google Trends — intento de esta ejecución
+
+Se consultaron las URL definidas por `scripts/tendencias.py` y el RSS de Google Trends México. La lectura RSS directa no fue posible con el lector web; errores exactos observados:
+
+- ScienceDaily ciencia, salud y espacio: `Unsupported content-type: application/xml`.
+- Phys.org: `Unsupported content-type: text/xml`.
+- NASA RSS: `Unsupported content-type: application/rss+xml`.
+- Nature RSS: `Unsupported content-type: application/rss+xml`.
+- UNAM Global RSS: `Unsupported content-type: application/rss+xml`.
+- ESA Space Science RSS: `404 Not Found`.
+- EurekAlert y Agencia SINC: `URL not accessible via this tool`.
+- Google Trends RSS México: `URL not accessible via this tool`.
+- Crossref REST API: `URL not accessible via this tool`.
+
+No se ejecutó localmente `scripts/tendencias.py`: el clon shallow por GitHub falló con `fatal: unable to access 'https://github.com/marcojpad-hash/capcot-capsulas-imaginantes.git/': Could not resolve host: github.com`. Se usaron páginas oficiales y artículos primarios como respaldo; no se marcaron como consultados los feeds que no entregaron XML.
+
+### Noticias indexadas con fecha 22-nov: comprobación de la fuente original
+
+Las siguientes páginas aparecen fechadas el 22-nov en ScienceDaily, pero su fuente institucional o artículo primario es anterior. No cumplen el corte editorial de noticia del mismo día para el slot 23:30:
+
+1. **Timina y daño UV en ADN.** ScienceDaily fecha la nota el 22-nov, pero el artículo PNAS DOI [10.1073/pnas.2615278123](https://doi.org/10.1073/pnas.2615278123) se publicó el 3-ago-2026 y el comunicado original de Texas A&M es del 10-oct-2026 ([comunicado](https://news.engineering.tamu.edu/news/2026/10/10/electrical-engineering-research-unlocks-dna-mystery/)). El experimento compara nucleobases bajo UVC controlado; no demuestra por sí solo supervivencia de organismos en la Tierra primitiva. **DESCARTADO_POR_FECHA_ORIGINAL**.
+2. **Colapso estelar sin supernova.** La nota de ScienceDaily tiene fecha 22-nov, pero Caltech publicó el comunicado el 10-nov y *Physical Review D* publicó el artículo DOI [10.1103/mnzq-w1b5](https://doi.org/10.1103/mnzq-w1b5) el 10-nov-2026 ([Caltech](https://www.caltech.edu/about/news/astronomers-find-hints-of-star-population-that-failed-to-explode), [APS](https://journals.aps.org/prd/abstract/10.1103/mnzq-w1b5)). El artículo primario usa 153 observaciones de GWTC-4.0; no usar las 257 fusiones del resumen secundario como si fueran el tamaño de muestra del artículo. La hipótesis de supernovas fallidas es compatible con la distribución, no una observación directa de una estrella que colapsó sin explotar. **DESCARTADO_POR_FECHA_ORIGINAL**.
+3. **Longevidad de Jonathan, la tortuga.** ScienceDaily fecha la nota el 22-nov, pero Cambridge publicó el comunicado y *Science Advances* el 7-oct-2026; DOI [10.1126/sciadv.adw8887](https://doi.org/10.1126/sciadv.adw8887) ([Cambridge](https://www.cam.ac.uk/research/news/genetic-analysis-of-the-worlds-oldest-land-animal-reveals-secret-of-living-194-years), [PubMed](https://pubmed.ncbi.nlm.nih.gov/42842650/)). **DESCARTADO_POR_FECHA_ORIGINAL**.
+4. **Degeneración retiniana EFEMP1.** ScienceDaily muestra fecha 22-nov, pero Penn Medicine publicó el comunicado el 11-sep y *JAMA Ophthalmology* publicó el artículo el 10-sep-2026; DOI [10.1001/jamaophthalmol.2026.3828](https://doi.org/10.1001/jamaophthalmol.2026.3828) ([Penn Medicine](https://www.pennmedicine.org/news/new-disease-causes-night-blindness-peripheral-vision-loss), [JAMA](https://jamanetwork.com/journals/jamaophthalmology/fullarticle/2853776)). El estudio es una serie de tres familias no relacionadas más una familia comparadora; la prevalencia poblacional sigue desconocida. **DESCARTADO_POR_FECHA_ORIGINAL**.
+
+El artículo NASA/APOD de 22-nov que apareció en el rastreo trata de Juno; se excluye por duplicación con el tema ya usado en octubre. No se encontró otra noticia primaria nueva del 22-nov que satisfaga fecha, rotación, fuente y mapa verificable.
+
+### Decisión editorial
+
+- Se conservan los cuatro candidatos del radar previo; no se añadió un quinto candidato solo por una republicación de una nota antigua.
+- El slot 22-nov 23:30 permanece sin storyboard: no hay candidato que cumpla noticia primaria del mismo día y no duplicación.
+- No se adelantó contenido al 23-nov. No se creó storyboard, QA, entrada de cola ni medio.
+- Los DOI anteriores se verificaron en páginas editoriales/resolvedores cuando fue posible; **Crossref sigue PENDIENTE** porque la API no fue accesible. La verificación de un DOI en el editor no se presenta como respuesta de Crossref.
