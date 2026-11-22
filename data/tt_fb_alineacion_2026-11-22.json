@@ -53,18 +53,6 @@
   ],
   "pendientes_hoy_sin_mp4_original_en_caja": [
     {
-      "tema": "gutenberg",
-      "yt_id": "YXndoPSSeaY",
-      "hora_cdmx": "2026-11-22 13:30",
-      "yt": "private+publishAt"
-    },
-    {
-      "tema": "ada",
-      "yt_id": "Sc0cX9ejxuw",
-      "hora_cdmx": "2026-11-22 17:00",
-      "yt": "private+publishAt"
-    },
-    {
       "tema": "webb",
       "yt_id": "BIwG7kgaLic",
       "hora_cdmx": "2026-11-22 19:00",
@@ -85,5 +73,22 @@
     "tt_etiqueta_ia": true,
     "fb_etiqueta_ia": false,
     "portada": "portada.jpg / frame 0 con título"
-  }
+  },
+  "programados_0827": [
+    {
+      "tema": "gutenberg",
+      "yt_id": "YXndoPSSeaY",
+      "hora_cdmx": "2026-11-22 13:30",
+      "tt": "programado, IA on, Todos, portada frame0",
+      "fb": "programado público, miniatura portada.jpg"
+    },
+    {
+      "tema": "ada",
+      "yt_id": "Sc0cX9ejxuw",
+      "hora_cdmx": "2026-11-22 17:00",
+      "tt": "programado, IA on, Todos, portada frame0",
+      "fb": "programado público, miniatura portada.jpg; en proceso al revisar"
+    }
+  ],
+  "webb_pendiente_ok_mj": "BIwG7kgaLic dura 31 s; no subido a TT/FB hasta OK de Mj"
 }
