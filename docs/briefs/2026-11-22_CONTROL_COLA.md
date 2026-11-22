@@ -476,3 +476,9 @@ Hallazgo de proceso: `scripts/validar_storyboard.py` exige `narrative_qa` inclus
 
 Los JSON de data permanecen solo lectura. Feature conserva snapshots viejos (temas hasta 28-oct, rotación hasta 31-oct y 22 publicaciones), mientras main tiene 48 publicaciones y una rotación más reciente de 39 entradas. Para el slot actual se usó main como cotejo de ocupación; el estilo `papel_stop_motion` no aparece en las 39 entradas consultadas ni en los proyectos activos. No se modificó ningún `data/*.json`.
 
+### Corrección de evidencia — medios y estado individual
+
+- El storyboard Pulsar de main contiene referencias de archivo, pero la carpeta de proyecto solo contiene `storyboard.json`, `programacion.json` y `fuentes.md`; `capsula.mp4` devuelve 404. Clasificación obligatoria: `MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO`. No se modifica ni se retira la copia de main.
+- Los cuatro proyectos de feature revisados (Bao, Voyager, Yubarta y Biodiversidad tropical) no incluyen `asset_filename`, `asset_type` ni rutas en sus escenas; todos tienen `approved_assets=[]` y `export.render_status=NOT_GENERATED`. Sus carpetas contienen únicamente `storyboard.json`; no hay `ESTADO_EJECUCION.md`.
+- El nuevo borrador de estatura tampoco tiene estado Grok: `cola/estado/2026-11-22_genes-estatura-etapas.json` devolvió 404. Registrar `RECEPCION_GROK_NO_CONFIRMADA`; no se creó ni modificó estado.
+
