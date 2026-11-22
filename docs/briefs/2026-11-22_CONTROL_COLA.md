@@ -423,3 +423,7 @@ El total de 26 respuestas 404 cubre los 25 storyboards en `proyectos/` más el r
 - El run `45020909784` no corresponde al HEAD actual de feature: la API lo identifica como workflow `PR #3`, evento `dynamic`, `head_branch=refs/pull/3/head`, SHA `1bc4e1ba6113ffc6afd71e8a653f8413ed49698f`. Su SUCCESS acredita ese commit del PR #3, no `8ff614d061b0430b5d18ce72f96f61e460351f58`.
 - `fetch_commit_workflow_runs` para el HEAD actual `8ff614d` devolvió lista vacía. La consulta de las últimas diez Actions filtradas por la rama feature mostró únicamente validaciones Kuroshio, con última ejecución el 21-nov 21:27:24Z; no mostró un check de CodeQL para el HEAD actual. Por tanto, no declarar CodeQL verificado en `8ff614d`.
 - La corrección no altera ningún workflow ni dispara ejecuciones.
+
+### Lectura de vuelta final de esta bitácora — 22-nov-2026
+
+La reconciliación y su corrección de atribución quedaron guardadas y releídas. El HEAD de `feature/capcot-video-discovery-continuity` después de ambas actualizaciones es `b7c38402f9fd2fba3d8caf82805de08e758350d7`; blob actual de este control: `a77794738961365c1deab3d01bbe0f95a381a84b`.
