@@ -98,6 +98,10 @@ def validar_punto_mapa(point):
     if lat is not None or lon is not None:
         if lat is None or lon is None:
             return False
+        # JSON booleans are Python ints; reject them instead of treating
+        # true/false as valid coordinates 1/0.
+        if isinstance(lat, bool) or isinstance(lon, bool):
+            return False
         try:
             lat, lon = float(lat), float(lon)
         except (TypeError, ValueError):
@@ -108,6 +112,8 @@ def validar_punto_mapa(point):
     dec = point.get("dec_deg")
     system = str(point.get("sistema_coordenadas") or "").lower()
     if ra is None or dec is None or not any(tag in system for tag in ("ra/dec", "ecuatorial", "equatorial")):
+        return False
+    if isinstance(ra, bool) or isinstance(dec, bool):
         return False
     try:
         ra, dec = float(ra), float(dec)
