@@ -23,7 +23,7 @@ Se añadió `.github/workflows/semgrep.yml` a `feature/capcot-video-discovery-co
 
 ## Límite de verificación
 
-La corrección está **EJECUTADA y VERIFICADA por lectura de vuelta**, pero no se ejecutó el workflow ni se modificó `main`. Por tanto, todavía no está comprobado el upload real de SARIF. La corrección solo tendrá efecto en `main) después de una integración autorizada; no se abrió PR ni se hizo merge.
+La corrección está **EJECUTADA y VERIFICADA por lectura de vuelta**, pero no se ejecutó el workflow ni se modificó `main`. Por tanto, todavía no está comprobado el upload real de SARIF. La corrección solo tendrá efecto en `main` después de una integración autorizada; no se abrió PR ni se hizo merge.
 
 ## Otras comprobaciones de esta pasada
 
