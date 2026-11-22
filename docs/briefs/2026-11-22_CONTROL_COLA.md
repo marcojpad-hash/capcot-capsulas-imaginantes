@@ -417,3 +417,9 @@ El total de 26 respuestas 404 cubre los 25 storyboards en `proyectos/` más el r
 - Los cinco endpoints DOI consultados en Crossref no fueron accesibles desde el lector actual (`URL ... is not accessible via this tool`). Los DOI que el radar mantiene como `PENDING_RESOLVER` siguen sin verificarse; no se sustituyó Crossref por una página editorial.
 
 **Cierre de esta reconciliación:** no se modificaron `data/*.json`, main, storyboards, estados Grok, cola, programación, workflows, secretos ni permisos. No se promovió, despachó, publicó ni generó medios.
+
+### Corrección de atribución de CodeQL — 22-nov-2026
+
+- El run `45020909784` no corresponde al HEAD actual de feature: la API lo identifica como workflow `PR #3`, evento `dynamic`, `head_branch=refs/pull/3/head`, SHA `1bc4e1ba6113ffc6afd71e8a653f8413ed49698f`. Su SUCCESS acredita ese commit del PR #3, no `8ff614d061b0430b5d18ce72f96f61e460351f58`.
+- `fetch_commit_workflow_runs` para el HEAD actual `8ff614d` devolvió lista vacía. La consulta de las últimas diez Actions filtradas por la rama feature mostró únicamente validaciones Kuroshio, con última ejecución el 21-nov 21:27:24Z; no mostró un check de CodeQL para el HEAD actual. Por tanto, no declarar CodeQL verificado en `8ff614d`.
+- La corrección no altera ningún workflow ni dispara ejecuciones.
