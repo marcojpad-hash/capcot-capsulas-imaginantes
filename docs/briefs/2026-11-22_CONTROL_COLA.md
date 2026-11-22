@@ -383,3 +383,10 @@ La comparación manual contra `main/data/rotacion.json` (39 registros; últimos 
 Estilos sin repetición en ese corte: `atlas_antiguo` (Kuroshio), `pulp_comic_1940s` (Fentale), `tatuaje_acuarela` (yubarta) y `ligne_claire` (biodiversidad). La repetición no se corrige cambiando el estilo en auditoría; requiere una decisión editorial del investigador. Los proyectos siguen bloqueados por sus respectivos slots, DOI y/o QA.
 
 Con estos seis expedientes, el inventario auditado del backlog interdiario pasa a 25 storyboards: 12 del lote 5–7 nov, seis del 18–20 nov y siete del 21–23 nov. Sumados al robot orbital, las lecturas de `cola/estado` son 26 respuestas 404; no hay recibo Grok confirmado.
+
+
+### Aclaración de asignación intermedia del 19-nov 17:00
+
+La búsqueda del registro `pendientes/abiertos/2026-11-19_de-pecas_para-imaginantes_montar-5-manana.md` revela una asignación previa a Pecas para `2026-11-05_bacterias-plasticos-oceano`; por tanto, el slot 19-nov 17:00 no era un hueco libre para reasignar a `2026-11-19_dato-estrella-dentro-de-estrella`. El proyecto preexistente está señalado `NO TOCAR (fuentes falsas)` en `ajustes_entre_modelos/DELEGACIONES.md`. El mismo registro reporta un MP4 local de 32.20 s, pero el árbol de main contiene únicamente `README.md`, `HYPERFRAMES.md` y `storyboard.json`: no contiene `capsula.mp4`, frames ni audio. Su `cola/estado/2026-11-05_bacterias-plasticos-oceano.json` devuelve 404. Resultado: `SLOT_RESERVADO_A_PECAS`, `MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO`, `RECEPCION_GROK_NO_CONFIRMADA`; no redispatchar ni sustituirlo con otro proyecto sin decisión editorial.
+
+La nota del 18-nov que propone Vikingos para 17:00 es obsoleta respecto de la rotación main: Vikingos ya aparece publicado el 17-nov 17:00. No se usa como ocupación del 18-nov. El 20-nov 17:00 no muestra otra asignación en los pendientes consultados, pero continúa siendo ventana en prueba. En consecuencia, los tres proyectos 17:00 (Kuroshio, estrella y marea cerebral) siguen sin autorización de promoción por política de slot; estrella añade la reserva previa a Pecas.
