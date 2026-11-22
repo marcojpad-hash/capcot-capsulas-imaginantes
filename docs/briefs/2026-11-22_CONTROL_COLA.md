@@ -390,3 +390,8 @@ Con estos seis expedientes, el inventario auditado del backlog interdiario pasa 
 La búsqueda del registro `pendientes/abiertos/2026-11-19_de-pecas_para-imaginantes_montar-5-manana.md` revela una asignación previa a Pecas para `2026-11-05_bacterias-plasticos-oceano`; por tanto, el slot 19-nov 17:00 no era un hueco libre para reasignar a `2026-11-19_dato-estrella-dentro-de-estrella`. El proyecto preexistente está señalado `NO TOCAR (fuentes falsas)` en `ajustes_entre_modelos/DELEGACIONES.md`. El mismo registro reporta un MP4 local de 32.20 s, pero el árbol de main contiene únicamente `README.md`, `HYPERFRAMES.md` y `storyboard.json`: no contiene `capsula.mp4`, frames ni audio. Su `cola/estado/2026-11-05_bacterias-plasticos-oceano.json` devuelve 404. Resultado: `SLOT_RESERVADO_A_PECAS`, `MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO`, `RECEPCION_GROK_NO_CONFIRMADA`; no redispatchar ni sustituirlo con otro proyecto sin decisión editorial.
 
 La nota del 18-nov que propone Vikingos para 17:00 es obsoleta respecto de la rotación main: Vikingos ya aparece publicado el 17-nov 17:00. No se usa como ocupación del 18-nov. El 20-nov 17:00 no muestra otra asignación en los pendientes consultados, pero continúa siendo ventana en prueba. En consecuencia, los tres proyectos 17:00 (Kuroshio, estrella y marea cerebral) siguen sin autorización de promoción por política de slot; estrella añade la reserva previa a Pecas.
+
+
+### Recuento final de recepción
+
+El total de 26 respuestas 404 cubre los 25 storyboards en `proyectos/` más el robot orbital. La consulta adicional del storyboard heredado `cola/entrada/2026-11-05_bacterias-plasticos-oceano/` también devolvió 404. Recuento ampliado: **27 estados Grok no confirmados**. No se creó ningún archivo de estado.
