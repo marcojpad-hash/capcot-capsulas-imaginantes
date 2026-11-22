@@ -438,3 +438,41 @@ Se intentó además abrir directamente los cinco DOI del radar mediante `https:/
 - PR #3: OPEN/DRAFT, `mergeable=false`, 1,246 commits y 696 archivos. No integrar.
 - PR #15: sigue OPEN, pero ahora `mergeable=false`. Su base registrada es `d30814995de642e3b6100d19d968115264a3d690`; feature está 26 commits por delante de esa base. No actualizar la rama del PR ni fusionar durante esta operación. Los 26 hallazgos Semgrep y la suite de 14 tests no ejecutada siguen abiertos.
 - Lectura de vuelta del control: el archivo incluye esta adenda y el HEAD coincide con el commit final.
+
+## Reconciliación adicional — 22-nov-2026, 11:55 CDMX
+
+### Autoridad de ramas y nuevos cambios en main
+
+- Feature estaba en `29cc2f3` antes del nuevo borrador; main avanzó hasta `77bf85b`. Se detectó un paquete nuevo en main, `2026-11-22_pulsar-criptografia`, tanto en `proyectos/` como en `cola/entrada/`; no se modificó main.
+- El paquete Pulsar declara 22-nov 13:30 en `programacion.json`, pero `yt_programado=false`, `mp4=false` y privacidad `private`. La carpeta de cola contiene solo `storyboard.json`; no hay `cola/estado/<id>.json`, salida, carpeta bloqueada ni handoff marker. Su storyboard tiene 7 escenas, 146 palabras y 78 s de escenas + 6 s de cortinilla = 84 s frente a objetivo 85; no tiene `narrative_qa`, `approved_assets` ni `export.render_status`, y conserva `asset_filename` y `export.filename`. Además carece de `fecha_objetivo` y `slot_local` en el JSON.
+- La programación de main ya ocupa 22-nov 13:30 con Gutenberg. Por tanto Pulsar es `NOT_DISPATCHABLE`, `PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR` y conflicto de slot con Gutenberg; no duplicar ni mover desde main.
+- Main también registra Salem publicado a 07:00, Ada programado a 17:00 y Webb con `publishAt`/privacidad privada a 19:00. La auditoría de miniaturas registra Rosetta el 23-nov a 13:30. No se canceló ni reprogramó ningún ID.
+
+### Reconciliación de los storyboards de feature
+
+| Proyecto | QA narrativo leído | Slot declarado | Reconciliación con main | Recepción |
+|---|---:|---:|---|---|
+| Voyager | FAIL 83 | 22-nov 07:00 | Salem ya publicado a 07:00; conflicto | `RECEPCION_GROK_NO_CONFIRMADA` (404) |
+| Bao | FAIL 84 | 22-nov 13:30 | Gutenberg programado y Pulsar planificado a 13:30; conflicto | `RECEPCION_GROK_NO_CONFIRMADA` (404) |
+| Yubarta | PASS 90 | 22-nov 17:00 | Ada programado a 17:00; conflicto | `RECEPCION_GROK_NO_CONFIRMADA` (404) |
+| Biodiversidad tropical | FAIL 82 | El texto de ocasión dice 23-nov 13:30, pero faltan `fecha_objetivo` y `slot_local` en el JSON | Rosetta aparece programado a 23-nov 13:30; conflicto inferido desde el texto, no normalizado en campos | `RECEPCION_GROK_NO_CONFIRMADA` (404) |
+
+Los cuatro directorios de proyecto no contienen `ESTADO_EJECUCION.md`; no se crearon estados Grok ni se promovió ninguna copia. El robot orbital conserva QA narrativo PASS 90, pero main contiene MP4, portada, frames y programación preexistente; el marker de handoff sigue `pending` y el estado Grok es 404. Se mantiene `PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR`.
+
+### Selector y automatizaciones
+
+- El run `45050940152` del trabajador terminó SUCCESS, pero el log dice literalmente `sin trabajo en cola`. `scripts/trabajador_cola.py` consulta Issues con etiqueta `cola`; no procesa los directorios anidados de `cola/entrada/`.
+- `.github/workflows/capcot-grok-dispatch.yml` escucha la rama feature y archivos planos `cola/entrada/*.json`; su selector manual usa profundidad máxima 1. No detecta el paquete Pulsar anidado en main ni el robot anidado.
+- Main Semgrep run `45048155842` terminó FAILURE con 32 hallazgos bloqueantes; Gitleaks `45048155841` terminó SUCCESS. El último validador de feature, run `44951621909`, corresponde al commit anterior `ed8659e`, no al HEAD actual; no acredita validación de los borradores nuevos.
+- PR #3 sigue draft/no mergeable (696 archivos, 13 JSON de data y 145 rutas de cola). PR #15 sigue abierto y desfasado respecto a feature (head `30101e9`, base `d308149`); su revisión anterior registró 27 hallazgos Semgrep y 14 pruebas sin ejecutar. PR #14 conserva QA FAIL 82; PR #13 aporta un informe separado con 13 hallazgos, nueve pendientes. PR #6 delega a un workflow reutilizable del repo adicional público `agente-cero-costo` mediante `secrets: inherit`; el workflow leído solo consume `BUS_GITHUB_TOKEN`, pero la herencia completa es más amplia de lo necesario. PR #4 conserva una actualización de estado del robot incompatible con la producción preexistente. No se fusionó ni cerró ningún PR.
+
+### Borrador nuevo y compuertas
+
+Se creó y leyó de vuelta `proyectos/2026-11-22_genes-estatura-etapas/storyboard.json` en el slot 23:30, libre en los registros de main. Tiene 8 escenas, 229 palabras, 84 s totales, voz `es-MX-JorgeNeural +7% / -2Hz`, prompt_base `papel_stop_motion`, mapa institucional con coordenadas, gráficos de 574,580 mediciones y 106 proteínas, ambiente/SFX por escena y cierre hablado exacto. No tiene `narrative_qa`, no está marcado PREPARADO, no contiene medios ni rutas, `approved_assets=[]`, `export.render_status=NOT_GENERATED` y `publicacion.status=PENDIENTE_DECISION_GROK`. El DOI sigue pendiente; no se promovió.
+
+Hallazgo de proceso: `scripts/validar_storyboard.py` exige `narrative_qa` incluso para un borrador, aunque el investigador tiene prohibido crear ese campo. La auditoría independiente debe añadir QA después; el validador actual acopla estructura y QA y no demuestra su independencia. No se cambió el script ni se disparó workflow en este run.
+
+### Datos de rotación y registros
+
+Los JSON de data permanecen solo lectura. Feature conserva snapshots viejos (temas hasta 28-oct, rotación hasta 31-oct y 22 publicaciones), mientras main tiene 48 publicaciones y una rotación más reciente de 39 entradas. Para el slot actual se usó main como cotejo de ocupación; el estilo `papel_stop_motion` no aparece en las 39 entradas consultadas ni en los proyectos activos. No se modificó ningún `data/*.json`.
+
