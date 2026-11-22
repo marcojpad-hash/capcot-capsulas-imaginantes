@@ -275,3 +275,20 @@ Errores observados al reintentar los RSS configurados en `scripts/tendencias.py`
 - EurekAlert, SINC y UNAM Global: URL no accesible mediante esta herramienta.
 
 Estos son errores del lector/conector observado, no prueba de que los servidores de origen estén caídos. Se reutilizan los candidatos y fuentes primarias ya documentados en este radar; no se inventa un candidato ni se abre un slot ocupado.
+
+
+## Reconsulta de RSS y Google Trends — 2026-11-21, 18:35 CDMX
+
+Se repitió la lectura de los diez feeds definidos en `scripts/tendencias.py` y del RSS de Google Trends México. Errores exactos del lector web en esta pasada:
+- ScienceDaily Science, Health y Space: HTTP 400, `Unsupported content-type: application/xml`.
+- Phys.org: HTTP 400, `Unsupported content-type: text/xml`.
+- NASA News Release: HTTP 400, `Unsupported content-type: application/rss+xml`.
+- ESA Space Science: HTTP 404, `Not Found`.
+- Nature RSS: HTTP 400, `Unsupported content-type: application/rss+xml`.
+- EurekAlert y SINC: URL no accesible mediante esta herramienta.
+- UNAM Global: HTTP 400, `Unsupported content-type: application/rss+xml`.
+- Google Trends RSS MX: URL no accesible mediante esta herramienta.
+
+**Respaldo oficial:** la página HTML de Google Trends México sí abrió: 236 tendencias, 25 por página, últimas 24 horas. La primera página está dominada por fútbol, entretenimiento y búsquedas generales. “Perú” aparece con 10 mil+ y la consulta relacionada “terremoto peru”, pero no ofrece por sí sola un estudio primario ni un ángulo científico verificable para cápsula. Fuente: https://trends.google.com/trending?geo=MX&hl=es
+
+No se añadió candidato ni storyboard: se conservan los candidatos ya documentados en este radar y los cinco slots de la fecha siguen ocupados. Los errores son del lector/conector observado; no prueban caída de los servidores de origen.
