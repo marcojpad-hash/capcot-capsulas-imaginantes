@@ -262,19 +262,8 @@ def validar(path, doi=False):
                     errs.append(f"{sid}: coordenadas de mapa ausentes, fuera de rango o sistema no declarado")
             for area in areas:
                 bounds = area.get("bounds") if isinstance(area, dict) else None
-                if not isinstance(bounds, (list, tuple)) or len(bounds) != 4:
-                    errs.append(f"{sid}: región de mapa sin bounds [lat_min, lon_min, lat_max, lon_max]")
-                    continue
-                if any(isinstance(value, bool) for value in bounds):
-                    errs.append(f"{sid}: bounds de región no numéricos")
-                    continue
-                try:
-                    lat_min, lon_min, lat_max, lon_max = (float(value) for value in bounds)
-                except (TypeError, ValueError):
-                    errs.append(f"{sid}: bounds de región no numéricos")
-                    continue
-                if not (-90 <= lat_min < lat_max <= 90) or not (-180 <= lon_min < lon_max <= 180):
-                    errs.append(f"{sid}: bounds de región ausentes, invertidos o fuera de rango")
+                if not validar_bounds_mapa(bounds):
+                    errs.append(f"{sid}: bounds de región ausentes, no numéricos, invertidos o fuera de rango")
                     continue
                 valid_areas += 1
             if not pts and not valid_areas:
