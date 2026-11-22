@@ -761,3 +761,20 @@ Se respetaron las exclusiones expresas: slots 23:30 de “dato del día” dentr
 - PR #3 tuvo un check dinámico success en run [#44966151794](https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/actions/runs/44966151794), sobre el HEAD feature citado; ese resultado no sustituye el Semgrep fallido de main.
 
 No se dispararon workflows, no se modificó main, no se alteraron `data/*.json`, secretos, permisos, storyboards ni decisiones editoriales. El siguiente paso técnico seguro para Semgrep es obtener el SARIF/listado de findings mediante una ejecución autorizada o un escaneo local reproducible; sin esos datos no se corrigen reglas a ciegas.
+
+
+## Verificación estructural y de slot — 2026-11-21, relectura posterior
+
+### Proyecto 2026-11-23 13:30
+- Revisión estática de campos del storyboard: **16/16 comprobaciones positivas**. 9:16; 84 s totales (78 s de escenas + 6 s de cortinilla); 8 escenas; 171 palabras; voz `edge-tts / es-MX-JorgeNeural / +7% / -2Hz`; estilo `ligne_claire` existente; `prompt_base` idéntico al catálogo y prefijado en los 8 prompts; ambiente/SFX y `source_ids` presentes; cierre exacto; `approved_assets=[]`; `render_status=NOT_GENERATED`; sin nombres ni rutas de medios.
+- Esto es una **revisión estática de campos**, no ejecución del validador. `scripts/validar_storyboard.py` dispone de `--check-doi`; los dos checks PR #3 posteriores a esta actualización (runs [#44967884552](https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/actions/runs/44967884552) y [#44967887135](https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/actions/runs/44967887135)) fueron CodeQL Analyze (Python/Actions), ambos success; no ejecutaron el validador ni Crossref.
+- La lectura narrativa existente sigue **FAIL 82**, con `STAKES_NO_EXPLICADOS`. No se repitió QA ni se reescribió narración.
+- `SRC-001`: página primaria consultable, pero DOI `10.1038/s41586-026-11298-6` sin confirmación de Crossref/resolvedor en esta pasada. `SRC-002`: `PENDING_SOURCE`; el PDF suplementario no abrió en PMC (reCAPTCHA), publisher ni Europe PMC. Los dos puntos del mapa dependen de ese suplemento; sus coordenadas no se consideran verificadas para promoción.
+- Main: la parrilla semanal muestra el 23-nov solo a nudillos 07:00; no se observó ocupación de 13:30. El proyecto no tiene conflicto de slot, pero sigue no apto por QA y fuentes.
+
+### Cobertura de los JSON de datos
+- `data/temas_del_dia.json` solo tiene claves hasta 2026-10-28.
+- `data/rotacion.json` y `data/publicaciones.json` no tienen entradas para 2026-11-21, 22 ni 23. No se usaron como prueba de unicidad; se contrastó la rama main, el inventario recursivo y los storyboards.
+- Plantillas: `templates/storyboard_vertical.template.json` coincide con el contrato vigente 9:16/75–90 s; `templates/storyboard.template.json` conserva un esquema legado 16:9/120 s con rutas de medios. No se modificó ninguna plantilla.
+
+No se promovió el proyecto, no se creó estado Grok, no se disparó `workflow_dispatch`, no se modificaron `data/*.json`, main, medios, secretos ni permisos.
