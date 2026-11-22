@@ -285,3 +285,29 @@ Graph API v27.0 frente a tabla heredada v26.0 y el estado alfa limitado de Googl
 
 ### Corrección de precisión — 08:10 CDMX
 Se ajustó la síntesis del candidato var2csa para distinguir asociación de transcripción y presencia de proteína/antígeno: el artículo informa asociación a nivel de transcrito y no demuestra necesariamente traducción a antígeno. También se hizo explícito el estado común de los cinco DOI: `PENDING_RESOLVER`; las URL primarias o bibliográficas están accesibles, pero no se declara validación Crossref.
+
+## Reconsulta operativa — 22-nov-2026, 11:55 CDMX
+
+### Feeds y respaldo
+
+Se reintentaron los endpoints definidos en `scripts/tendencias.py` y Google Trends RSS México. El lector devolvió:
+
+- ScienceDaily science, health y space: `(400) Unsupported content-type: application/xml`.
+- Phys.org: `(400) Unsupported content-type: text/xml`.
+- NASA News Release y Nature RSS: `(400) Unsupported content-type: application/rss+xml`.
+- ESA Space Science RSS: `(404) Not Found`.
+- EurekAlert, Agencia SINC y Google Trends RSS México: `URL ... is not accessible via this tool`.
+- UNAM Global RSS: `(400) Unsupported content-type: application/rss+xml`.
+
+Estos errores describen la limitación del lector RSS, no demuestran que las fuentes estén caídas. Como respaldo se consultó la página oficial de Google Trends México; las tendencias visibles estaban dominadas por fútbol/deportes y entretenimiento, sin una señal científica utilizable para seleccionar tema.
+
+### Candidato primario y borrador
+
+La página primaria de Nature Communications para **“The genetic and proteomic determinants of pediatric stature development and their link to adult height and type 2 diabetes”** está accesible y marca publicación el 22-nov-2026. El resumen respalda 72,704 niñas y niños noruegos, 574,580 mediciones, datos de UK Biobank, tres agrupaciones temporales, 106 proteínas asociadas con estatura prepuberal y el análisis de aleatorización mendeliana sobre diabetes tipo 2.
+
+El DOI `10.1038/s41467-026-79465-x` permanece `PENDING_RESOLVER`: Crossref API y doi.org devolvieron `URL ... is not accessible via this tool`. La URL editorial primaria sí abre. El artículo se presenta como versión temprana de investigación aceptada y puede recibir ediciones.
+
+Se creó el borrador `proyectos/2026-11-22_genes-estatura-etapas/storyboard.json` para el slot fijo 23:30, que no aparece ocupado en main ni en los registros de publicación del 22-nov. Tiene 8 escenas, 229 palabras y 84 s totales (78 s de escenas + 6 s de cortinilla). Usa `papel_stop_motion`, ausente de las 39 entradas de rotación consultadas y de los proyectos activos. El mapa marca únicamente sedes institucionales/administrativas en Oslo y Manchester; no representa ubicaciones de participantes.
+
+Estado: `BORRADOR_EN_PROYECTOS`, no seleccionado, sin `narrative_qa`, sin medios, `approved_assets=[]`, `export.render_status=NOT_GENERATED` y `publicacion.status=PENDIENTE_DECISION_GROK`. No promover hasta verificar DOI/Crossref y completar la auditoría narrativa independiente.
+
