@@ -10,6 +10,7 @@ import http.client
 import json
 import os
 import re
+import ssl
 import sys
 from urllib.parse import quote
 
@@ -23,7 +24,7 @@ def check_doi(doi):
         return False
     connection = None
     try:
-        connection = http.client.HTTPSConnection("api.crossref.org", timeout=20)
+        connection = http.client.HTTPSConnection("api.crossref.org", timeout=20, context=ssl.create_default_context())  # nosemgrep: python.lang.security.audit.httpsconnection-detected
         path = "/works/" + quote(doi, safe="/-._;()")
         connection.request("GET", path, headers={"User-Agent": "capcot-validador/2.0"})
         response = connection.getresponse()
