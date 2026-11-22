@@ -787,3 +787,96 @@ No se promovió el proyecto, no se creó estado Grok, no se disparó `workflow_d
 - Los snapshots `data/horario_*.json` llegan solo hasta 2026-11-11. No hay snapshot diario 21–23 nov. `data/temas_del_dia.json` llega hasta 2026-10-28; `data/rotacion.json` y `data/publicaciones.json` no tienen entradas 21–23 nov.
 - La parrilla semanal de main muestra 23-nov 07:00 (nudillos), sin fila 13:30; por tanto no se encontró conflicto explícito para el proyecto de 13:30, pero la política de horario y los snapshots no permiten certificar el slot con frescura suficiente. Mantener `NOT_DISPATCHABLE` por compuertas QA/fuentes/política; no promover ni inferir autorización desde la ausencia de una fila.
 - No se modificaron los JSON de datos ni la política horaria.
+
+
+---
+
+## Revalidación Run 11 — 2026-11-21 19:56 CDMX
+
+### Inventario de la rama
+
+Árbol Git completo del commit de trabajo auditado:
+
+| Ruta/objeto | Conteo actual |
+|---|---:|
+| Directorios de proyecto | 101 |
+| `storyboard.json` bajo `proyectos/` | 88 |
+| Directorios/IDs bajo `cola/bloqueados/` | 47 |
+| Archivos bajo `cola/bloqueados/` | 168 |
+| JSON planos en `cola/entrada/` | 0 |
+| Paquetes anidados en `cola/entrada/` | 1 paquete heredado: Robot 2026-11-09 |
+| Archivos en `cola/estado/` | 0 |
+| Salidas con fecha 21–23 nov | 0 |
+| Archivos en `handoffs/grok_inbox/` | 2 (README y marcador Robot) |
+| `historial_youtube` en el árbol | No encontrado |
+
+No hay `ESTADO_EJECUCION.md` para los siete proyectos del 21–23-nov. Los siete `cola/estado/<project_id>.json` consultados devolvieron 404; para los 88 storyboards, el árbol completo tampoco contiene ningún archivo de estado. Registrar `RECEPCION_GROK_NO_CONFIRMADA`; no crear ni modificar estados.
+
+### Proyectos del 21–23-nov
+
+| Proyecto | Slot | QA existente | Compuertas adicionales | Resultado |
+|---|---:|---|---|---|
+| `2026-11-21_fentale-metano-sin-erupcion` | 23:30 | PASS 90 | DOI Crossref verificado; artículo 19-nov, no cumple mismo día para dato del día; validador estructural oficial no ejecutado | NOT_DISPATCHABLE |
+| `2026-11-21_homo-erectus-selva-tropical` | 07:00 | FAIL 83; `GIRO_CIENTIFICO_NOMBRADO_PERO_NO_EXPLICADO` | DOI Crossref status=ok; fuente 18-nov | NOT_DISPATCHABLE |
+| `2026-11-21_pulsar-gamma-reticulo` | 17:00 | FAIL 83; `GIRO_CIENTIFICO_NOMBRADO_PERO_NO_EXPLICADO` | DOI Crossref status=ok, pero artículo publicado 22-sep; 17:00 no está en la política vigente | NOT_DISPATCHABLE |
+| `2026-11-22_voyager-1-un-dia-luz` | 07:00 | FAIL 83; `FECHA_DE_HITO_Y_CONFIRMACION_CONFUNDIDAS` | Sin DOI; fuente NASA; conflicto con main | NOT_DISPATCHABLE |
+| `2026-11-22_bao-estrella-fusion-andromeda` | 13:30 | FAIL 84; `STAKES_NO_EXPLICADOS` | DOI Crossref status=ok; conflicto con main | NOT_DISPATCHABLE |
+| `2026-11-22_yubarta-genoma-soplo` | 17:00 | PASS 90 | DOI Crossref status=ok; conflicto con main | NOT_DISPATCHABLE |
+| `2026-11-23_tropical-biodiversity-turnover` | 13:30 | FAIL 82 | DOI principal Crossref status=ok; SRC-002 sigue `PENDING_SOURCE`; coordenadas del mapa no verificadas; lunes no es día preferente de mediodía | NOT_DISPATCHABLE |
+
+Los valores QA se leyeron de los storyboards existentes; no se repitió PASS ni se reescribió narración. En el caso Fentale se actualizó solo la verificación bibliográfica y la nota de elegibilidad; la revisión narrativa PASS 90 quedó intacta.
+
+### Backlog 5–7 nov: 12 IDs
+
+Se releyeron los 12 storyboards de la instrucción vigente. El estado coincide con la auditoría anterior: 2 PASS (Venus 88 y Arena 94) y 10 FAIL. No se reejecutó QA ni se cambió narración.
+
+Siete proyectos conservan sidecars externos de plataforma:
+
+- Venus: Facebook y TikTok figuran publicados el 7-nov.
+- Palomitas: Facebook y TikTok figuran publicados el 8-nov; YouTube ID `zTP5akrGA9M`.
+- Ballena azul: TikTok publicado el 11-nov; Facebook conserva `programado_lote_7nov` para el 11-nov sin `post_id`; YouTube ID `wbFrlM2e_YE`.
+- Aguacate: TikTok publicado el 10-nov; Facebook conserva `programado_lote_7nov` para el 10-nov sin `post_id`; YouTube ID `nSS_q2tj2P0`.
+- Ranas: TikTok publicado el 9-nov; Facebook conserva `programado_lote_7nov` para el 9-nov sin `post_id`; YouTube ID `UBFuKBU3cx0`.
+- Arena cantante: Facebook y TikTok figuran publicados el 7-nov; YouTube público `m4RqQRaz55k` y un ID antiguo `ztIkYcXB91U` aún anotado como programado a las 19:00.
+- Hielo caliente: Facebook y TikTok siguen anotados como `programado` para el 11-nov; TikTok contiene `post_id=7706905447424347393` y YouTube ID `HSgrnejAcaI`.
+
+Todas las fechas de esos sidecars ya pasaron. Los estados `programado`/ `programado_lote_7nov` de Facebook y Hielo son desfasados y requieren comprobación directa en plataforma; no se cancelaron ni se asumieron publicados. El ID de YouTube `ztIkYcXB91U` es riesgo de programación antigua y posible duplicado; no se tocó. Los sidecars apuntan a rutas `/workspace/...` fuera del árbol Git: `MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO`. No redispatchar ninguno de los siete: `PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR`.
+
+### Programación y autoridad de slots
+
+`main/data/publicaciones.json` contiene los registros actuales del 21-nov (Oxoboranos 13:30 y Robot 19:00). El plan semanal de main asigna el 22-nov a Salem 07:00, Gutenberg 13:30 y Ada 17:00; el 23-nov asigna Nudillos 07:00. Estos registros prevalecen para evitar duplicación entre ramas.
+
+La política de main desde 2026-11-16 autoriza ventanas 06:30–07:30 y 13:00–14:30, más 23:30 para dato del día. 19:00 fue retirado el 2026-11-02. El 17:00 de Yubarta es un procesamiento planificado en main, no una nueva ventana abierta. El lunes 23-nov 13:30 no es día preferente para mediodía.
+
+### Divergencia de snapshots — no corregir aquí
+
+Los JSON de datos son solo lectura y difieren entre main y la rama:
+
+- `horarios.json`: main SHA `7baae556de18e0ddfadfd750568e4247a136d8fa`; rama SHA `550599906c26e747de71b6b962080b6bd469f23f`. La rama conserva la ventana 16:30–18:00 que main ya retiró.
+- `rotacion.json`: main tiene 39 registros; la rama 27 y no incluye las asignaciones 21–23-nov.
+- `publicaciones.json`: main tiene 48 registros; la rama 22 y omite programaciones recientes de main.
+
+Se usó main para conflictos y rotación sin escribir en main ni alterar `data/*.json`. La rama de trabajo está desactualizada para asignación de slots.
+
+### Workflow, selector y despacho
+
+- `.github/workflows/capcot-grok-dispatch.yml` escucha `push` en la rama de trabajo para `cola/entrada/*.json` planos. La selección no recoge el paquete Robot anidado ni storyboards dentro de `proyectos/`.
+- `scripts/procesar_cola.py` admite también paquetes anidados y llama al validador con `--check-doi`; ejecutar ese procesador puede avanzar hacia montaje/publicación. No se ejecutó.
+- La ruta plana dispararía el workflow al escribir un JSON; por eso no se promovió Fentale ni ningún otro proyecto. No se disparó workflow, no se envió payload y no se intentó leer valores de secretos.
+- La diferencia de profundidad entre el selector del workflow (plano) y el procesador (plano/anidado) queda documentada; no se modificó el workflow.
+
+### CI y seguridad
+
+- Semgrep run `44959731844`: 32 findings; el paso de upload SARIF quedó `skipped`; el run no produjo artifacts descargables. `fetch_workflow_run_artifacts` devolvió lista vacía.
+- Alternativa de Code Scanning API: `INVALID_ARGUMENT: HTTPError 400: GitHub Fetch URL contains an invalid repository path.`
+- Alternativa de ejecución local: `fatal: unable to access 'https://github.com/marcojpad-hash/capcot-capsulas-imaginantes.git/': Could not resolve host: github.com`. Por ello no se ejecutó localmente `scripts/validar_storyboard.py`; no se declara PASS estructural por el intento.
+- Gitleaks pasó. CodeQL de PR #3 pasó; ninguno sustituye la triage de Semgrep ni el validador estructural.
+- PR #14 sigue abierto y no mergeable; no se modificó ni fusionó.
+
+### Cambios materiales ejecutados y verificados en esta corrida
+
+1. Fentale: DOI de SRC-001 actualizado a `VERIFICADO_CROSSREF` tras respuesta Crossref `status=ok`; se corrigió la nota de elegibilidad 23:30 y se dejó explícito que el validador estructural oficial no se ejecutó. Commit `4626e44abb4d5c75b0f3aeb36fb84f62250244d9`; lectura de vuelta confirmó el nuevo blob y conservó `narrative_qa=PASS/90`.
+2. Radar 22-nov: se corrigió el estado de QA de Bao, Voyager y Yubarta, los conflictos de slots y la retirada del 19:00. Commit `e06491c91cb1936db0515640022806b65fe08223`; lectura de vuelta confirmada.
+3. Radar 21-nov: se añadieron cinco candidatos con DOI Crossref y la divergencia de snapshots. Commits `d650df2c9f4dd19608a453b3631a949754be06be` y `c62f67ce79e0bac63b34c3ac25027e2532d30c3b`; lecturas de vuelta confirmadas.
+
+No se crearon storyboards, entradas de cola, medios ni estados Grok. No se modificó `data/*.json`, main, secretos, permisos, programación ni publicación.
