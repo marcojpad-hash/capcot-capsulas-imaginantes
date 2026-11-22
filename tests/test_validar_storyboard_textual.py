@@ -57,6 +57,13 @@ class TextOnlyStoryboardContractTests(unittest.TestCase):
         }
         self.assertFalse(validar_storyboard.validar_punto_mapa(point))
 
+    def test_boolean_map_bounds_are_rejected(self):
+        self.assertFalse(validar_storyboard.validar_bounds_mapa([True, -70, 12, -60]))
+        self.assertFalse(validar_storyboard.validar_bounds_mapa([-10, -70, 12, False]))
+
+    def test_valid_map_bounds_pass(self):
+        self.assertTrue(validar_storyboard.validar_bounds_mapa([-10, -70, 12, -60]))
+
     def test_missing_narrative_qa_is_rejected(self):
         self.assertTrue(validar_storyboard.validar_narrative_qa(None))
 
