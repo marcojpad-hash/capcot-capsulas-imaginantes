@@ -131,3 +131,20 @@ La tabla original de este radar no había reconciliado los tres horarios de main
 No se reasigna ninguno a otra hora. El slot 19:00 permanece libre en el plan consultado; 23:30 sigue reservado para dato del día, sin candidato seleccionado. La programación de 22-nov está documentada en main, pero los IDs de plataforma de esos tres slots no aparecen en `data/publicaciones.json`; se conserva el bloqueo preventivo y no se afirma una verificación independiente de plataforma.
 
 Para el 23-nov, main registra Nudillos a las 07:00; el proyecto de biodiversidad a las 13:30 no comparte ese slot. Sigue `NOT_DISPATCHABLE` por QA narrativo FAIL/82 y fuente suplementaria `PENDING_SOURCE`.
+
+
+## Corrección de auditoría — 2026-11-21 19:56 CDMX
+
+Esta sección supersede cualquier nota anterior de este radar que indicara que aún no existía `narrative_qa` para los tres proyectos del 22-nov.
+
+| Proyecto | Slot | QA actual | Estado de promoción |
+|---|---:|---|---|
+| `2026-11-22_voyager-1-un-dia-luz` | 07:00 | FAIL 83; `FECHA_DE_HITO_Y_CONFIRMACION_CONFUNDIDAS` | NOT_DISPATCHABLE |
+| `2026-11-22_bao-estrella-fusion-andromeda` | 13:30 | FAIL 84; `STAKES_NO_EXPLICADOS` | NOT_DISPATCHABLE |
+| `2026-11-22_yubarta-genoma-soplo` | 17:00 | PASS 90; siete checks true y flags vacías | NOT_DISPATCHABLE por conflicto de slot |
+
+La rama `main` contiene el plan de producción del 22-nov con Salem 07:00, Gutenberg 13:30 y Ada 17:00. Los tres slots de esta rama chocan con esa programación: `CONFLICTO_DE_SLOT_ENTRE_RAMAS`. No se duplica, cancela ni promueve ninguno.
+
+La propuesta de 22-nov 19:00 tampoco queda autorizada: la política vigente en `main/data/horarios.json` retiró el slot 19:00 el 2026-11-02 y, desde el 2026-11-16, define ventanas 06:30–07:30 y 13:00–14:30, más el fijo 23:30 para dato del día. El slot 23:30 exige fuente publicada el mismo día y dentro de 48 horas; se espera la fecha del 22-nov para seleccionar ese dato.
+
+Para los tres proyectos, `cola/estado/<project_id>.json` devolvió 404: `RECEPCION_GROK_NO_CONFIRMADA`. No hay copias planas en `cola/entrada/`; el selector del workflow no toma storyboards anidados de `proyectos/`. No se disparó el workflow ni se envió payload.
