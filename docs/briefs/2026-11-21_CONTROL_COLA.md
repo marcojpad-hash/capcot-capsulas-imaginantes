@@ -887,3 +887,17 @@ No se crearon storyboards, entradas de cola, medios ni estados Grok. No se modif
 - Semgrep main run `44974165982`: 32 findings bloqueantes; SARIF se generó pero el upload quedó omitido tras el exit code 1. Se preparó la corrección en feature: `.github/workflows/semgrep.yml`, commit `7760be51f95c88c5c3d1ed66c7ec4cf469eba2cf`. La corrección quedó releída; aún no se ejecuta ni se integra en main. Detalle: [SEMGREP_SARIF_FIX](2026-11-21_SEMGREP_SARIF_FIX.md).
 - Se detectó discrepancia adicional: `main/data/horarios.json` no declara 17:00, pero el plan semanal de main sí asigna 17:00 en varios días. No se modificaron los JSON; se mantiene cerrado ese slot hasta reconciliación editorial. Detalle: [CONFLICTO_HORARIOS](2026-11-21_CONFLICTO_HORARIOS.md).
 - El trabajador de cola en main terminó SUCCESS con `[trabajador] sin trabajo en cola.`; el smoke de Kuroshio no usó `--check-doi`. Los siete archivos de estado Grok de proyectos 21–23 nov devolvieron 404; recepción no confirmada.
+
+
+## Reconciliación final de inventario — 21-nov-2026, corte posterior
+
+La lectura completa del árbol de la rama confirma el estado posterior al movimiento de Ratas Topo:
+
+- `proyectos/`: 88 storyboards.
+- `cola/entrada/`: cero JSON planos; queda un solo directorio anidado heredado, `2026-11-09_dato-robot-ensambla-orbita/`, más `.gitkeep`.
+- `cola/bloqueados/`: 47 IDs y 168 archivos. Los nueve blobs de Ratas Topo (ocho PNG y `.gitkeep`) están en bloqueados; ninguno de los paths originales permanece en entrada.
+- `cola/estado/`: cero archivos.
+- `salidas/`: 59 directorios.
+- Los siete proyectos de fechas 21–23 nov y los doce IDs del lote 5–7 nov consultados siguen sin estado Grok individual (404): `RECEPCION_GROK_NO_CONFIRMADA`.
+
+El trabajador de cola de main registró `sin trabajo en cola`. El único paquete anidado restante es el robot, cuya publicación/programación preexistente en main impide redispatch. No se creó JSON plano, no se modificó `cola/estado`, no se disparó el workflow Grok y no se generaron medios.
