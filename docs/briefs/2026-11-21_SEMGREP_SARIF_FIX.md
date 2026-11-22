@@ -29,5 +29,5 @@ La corrección está **EJECUTADA y VERIFICADA por lectura de vuelta**, pero no s
 
 - El trabajador de cola en `main`, run `44973903856`, terminó SUCCESS y registró literalmente `[trabajador] sin trabajo en cola.`.
 - El smoke de Kuroshio, run `44951621909`, terminó SUCCESS y ejecutó `python scripts/validar_storyboard.py ...` **sin** `--check-doi`; no acredita verificación DOI.
-- Los siete sidecars de estado consultados para proyectos 21–23 nov devolvieron 404: `RECEPCION_GROK_NO_CONFIRMADA`. No se crearon ni modificaron estados Grok.
+- Los siete archivos `cola/estado/<project_id>.json` consultados para proyectos 21–23 nov devolvieron 404: `RECEPCION_GROK_NO_CONFIRMADA`. No se crearon ni modificaron estados Grok.
 - No se promovió ningún storyboard, no se envió webhook, no se generaron medios y no se modificaron `data/*.json`.
