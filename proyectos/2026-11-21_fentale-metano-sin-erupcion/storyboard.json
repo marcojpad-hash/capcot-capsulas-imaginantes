@@ -73,7 +73,7 @@
       "cita_corta": "Dualeh, E. W., Biggs, J., Sharma, S. et al. (2026). “Methane outburst driven by magma–sediment interactions at Fentale Volcano detected by satellite”. Nature Geoscience.",
       "url": "https://www.nature.com/articles/s41561-026-02137-4",
       "doi": "10.1038/s41561-026-02137-4",
-      "accessed": "2026-11-20",
+      "accessed": "2026-11-21",
       "publication_date": "2026-11-19",
       "supports": [
         "Artículo original publicado en Nature Geoscience el 19 de noviembre de 2026.",
@@ -86,8 +86,8 @@
       ],
       "verification_status": "VERIFICADO_FUENTE_PRIMARIA",
       "url_verification_status": "VERIFICADO_PAGINA_EDITORIAL_INDEXADA",
-      "doi_verification_status": "PENDIENTE_RESOLVEDOR",
-      "verification_note": "La página editorial de Nature está indexada y expone el artículo, la fecha y el DOI. El acceso HTML directo devolvió HTTP 500 y las consultas directas a Crossref/doi.org no completaron; el DOI queda pendiente de resolución independiente."
+      "doi_verification_status": "VERIFICADO_CROSSREF",
+      "verification_note": "Crossref REST API respondió status=ok el 2026-11-21; el DOI exacto, título, editorial Springer Nature y fecha de publicación 2026-11-19 coinciden con el artículo de Nature Geoscience. La consulta directa a doi.org agotó tiempo; Crossref confirma el registro."
     },
     {
       "id": "SRC-002",
@@ -371,9 +371,11 @@
   "estado": "PENDIENTE_REVISION_GROK",
   "production_mode": "storyboard_only",
   "validation_notes": [
-    "Borrador textual en proyectos; no se ha creado QA narrativo ni se ha marcado preparado.",
-    "El DOI requiere resolución independiente Crossref/doi.org; no promover hasta completar --check-doi.",
-    "El validador estructural oficial no se ha ejecutado en esta sesión."
+    "Borrador textual en proyectos; narrative_qa PASS 90 independiente registrado el 2026-11-20; no se ha promovido a cola ni enviado a Grok.",
+    "DOI verificado por Crossref REST el 2026-11-21 (status=ok; DOI, título, editorial y fecha coinciden). La consulta directa a doi.org agotó tiempo.",
+    "El validador estructural oficial no se ejecutó en esta sesión; no promover hasta ejecutar la compuerta estructural.",
+    "No apto para el slot fijo 23:30 del 2026-11-21: fuente publicada el 2026-11-19; la política de dato del día exige publicación del mismo día y ventana de hasta 48 horas.",
+    "cola/estado/2026-11-21_fentale-metano-sin-erupcion.json no existe: RECEPCION_GROK_NO_CONFIRMADA; no se creó cola/entrada ni se disparó workflow."
   ],
   "linea_tematica_provisional": "Actualidad",
   "approved_assets": [],
