@@ -517,3 +517,37 @@ Commits de este corte: `d130e72f62b324e44efb475f0c09faff899c7e4c` (metadatos y e
 - Presencia de `GROK_WEBHOOK_URL` y `GROK_WEBHOOK_TOKEN`: no verificable mediante el listado disponible; no se declararon ausentes ni se consultaron valores.
 
 No se modificó ningún `data/*.json`, main, secreto, permiso, publicación ni medio.
+
+
+## Reconciliación del operador — 22-nov-2026, corte 14:04 CDMX
+
+### Proyecto 23:30 y QA
+
+- Releído desde GitHub `proyectos/2026-11-22_genes-estatura-etapas/storyboard.json`, blob `e0e32f9705bba8ccd87dfd6e24c2d36b11724346`. El JSON conserva 8 escenas, 231 palabras según la expresión regular del validador, 78 s de escenas + 6 s de cortinilla = 84 s, gancho de 5 palabras, voz `es-MX-JorgeNeural` +7% / -2Hz, prompt_base literal `papel_stop_motion`, mapa institucional con coordenadas, capa de dato/gráfico, ambiente/SFX por escena, cierre exacto, `approved_assets=[]`, `export.render_status=NOT_GENERATED`, sin nombres/rutas de medios y `publicacion.status=PENDIENTE_DECISION_GROK`.
+- El preflight estructural estático reprodujo las reglas relevantes del validador y no encontró errores de estructura, voz, estilo, prompt, arcos, referencias, mapa, dato, duración o assets. **No se ejecutó el script oficial** `validar_storyboard.py` ni CI con `--check-doi`; no se declara validación oficial.
+- No se escribió `narrative_qa`: este operador no es el Auditor CAPCOT independiente y no debe sustituirlo. Estado: `PENDIENTE_AUDITOR`. El borrador no se promueve ni se copia a cola. La lectura narrativa independiente queda para el auditor separado; no se reescribió narración ni claims.
+- La fuente primaria Nature Communications y el DOI constan en el storyboard como `VERIFICADO_CROSSREF`; el corte previo del radar registra `status=ok`. En este run, las aperturas del API Crossref y de doi.org no fueron accesibles mediante el lector (`URL ... is not accessible via this tool`); no se afirma una nueva verificación, pero tampoco se invalida la comprobación previa registrada.
+- El slot 22-nov 23:30 queda ocupado por este borrador: `NO_DUPLICAR`. No se creó una segunda versión.
+
+### Cruce de main, cola y producción
+
+- Main contiene `2026-11-22_pulsar-criptografia` con `programacion.json` para 13:30 CDMX, `yt_programado=false`, `mp4=false`, `export.filename=capsula.mp4` pero sin MP4 en el árbol ni carpeta `salidas/<id>/`. La copia de cola está anidada; el selector del workflow no la detecta. Se conserva `PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR` / `NOT_DISPATCHABLE_POR_SELECTOR` para ese paquete. Ocupa 13:30, no 23:30; no hay conflicto de slot con genética de estatura.
+- El robot orbital conserva producción verificable en `main/cola/entrada/2026-11-09_dato-robot-ensambla-orbita/`: MP4 de 25,795,339 bytes, portada, frames, subtítulos y QA audiovisual 21/21, duración 87.57 s. `programacion.json` registra YouTube `ZG4iQgmWrLI`, TikTok y Facebook programados para 21-nov 19:00 CDMX (`publish_at=2026-11-22T01:00:00Z`), timestamp ya vencido. La búsqueda pública del ID no devolvió resultados y `historial_youtube.json` no existe en ninguna de las dos ramas; estado público real no verificado. Clasificación: `PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR`; no cancelar ni reprogramar.
+- El paquete robot en feature contiene solo storyboard/textos y un directorio de frames; los medios se verifican en main, no en feature. El marker de `handoffs/grok_inbox` no equivale a recepción Grok.
+- Las 26 consultas individuales `cola/estado/<project_id>.json` de los storyboards auditados devolvieron 404; la consulta adicional del robot también devolvió 404. Total: **27 `RECEPCION_GROK_NO_CONFIRMADA`**. No se creó ni modificó ningún estado.
+
+### Inventario, datos y rotación
+
+- Inventario del alcance: **26 storyboards** (12 del 5–7 nov, 6 del 18–20 nov, 7 del 21–23 nov y el borrador de genética). QA existente: **9 PASS / 16 FAIL / 1 PENDIENTE_AUDITOR**. No se repitió ningún PASS ni se modificó narración.
+- Main: 52 publicaciones, 39 entradas de rotación y 32 estilos usados. Feature: 22 publicaciones, 27 entradas de rotación y 21 estilos usados. `temas_del_dia.json` continúa hasta 28-oct; los snapshots feature son incompletos y no sustituyen main. `historial_youtube.json` devuelve 404 en ambas ramas. Todos los `data/*.json` permanecen solo lectura.
+- `papel_stop_motion` existe en el catálogo y no aparece en las 39 entradas de rotación de main ni en el storyboard Pulsar de main (que usa `van_gogh`).
+
+### Issues, PR y CI
+
+- CAPCOT Issue #11 sigue OPEN con etiqueta `hecho`; su storyboard de cuásares ya conserva `narrative_qa` FAIL/82 y el PR #13 está OPEN/no mergeable. El ledger `ajustes_entre_modelos/LEDGER_ASIGNACIONES.md` de main todavía muestra `CUASARES-AUDITORIA` en `cola`; discrepancia documental, sin editar main.
+- PR #3 sigue OPEN/DRAFT/no mergeable. El listado actual devuelve 697 archivos, 13 JSON de `data/` y 145 rutas de cola; este run no modificó ningún JSON de data.
+- PR #15 sigue OPEN/no mergeable (head `30101e9`, base `d308149`), con solo `validar_storyboard.py` y su test en el diff; 27 hallazgos previos (26 activos y uno suprimido) y 14 pruebas sin evidencia de ejecución.
+- El HEAD actual de feature no tiene checks combinados registrados. La última validación disponible `44951621909` corresponde a `ed8659e`, no al HEAD actual. No se dispararon workflows ni se enviaron payloads.
+- Presencia de `GROK_WEBHOOK_URL` y `GROK_WEBHOOK_TOKEN` no verificada; no se declararon ausentes ni se consultaron valores.
+
+Cierre: no se promovió ni redispatchó contenido, no se generaron medios, no se publicó ni programó, no se modificó main, `data/*.json`, estados Grok, secretos, permisos ni workflows.
