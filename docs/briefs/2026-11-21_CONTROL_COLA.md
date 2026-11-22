@@ -743,3 +743,21 @@ Se respetaron las exclusiones expresas: slots 23:30 de “dato del día” dentr
 `VERIFICADO`: rutas y filtros del dispatch, estado preexistente de Robot, publicación main, 22-nov como conflicto de plan, slot libre 13:30 de 23-nov, QA actual de Biodiversidad, estado pendiente de SRC-001/SRC-002 y resultados de Actions.
 
 `PENDIENTE`: recuperar acceso al resolver Crossref/doi.org y al suplemento primario SRC-002; obtener SARIF o listado de findings de Semgrep para triage; recibir estados Grok individuales. No hay promoción ni redispatch autorizado.
+
+
+## Revalidación posterior a HEAD feature — 2026-11-21, 18:35 CDMX
+
+### Inventario leído de vuelta
+- Árbol recursivo de HEAD `5411548a0b08d3db045b766432e79dd51309ede4`: 1,332 entradas, sin truncamiento; 88 `proyectos/*/storyboard.json`.
+- `cola/entrada/`: solo el paquete anidado Robot del 9-nov, con `frames/.gitkeep`; no hay JSON plano despachable.
+- `cola/estado/`: cero archivos. La recepción individual sigue `RECEPCION_GROK_NO_CONFIRMADA` para los storyboards auditados.
+- `cola/bloqueados/`: 47 directorios y 139 archivos. `salidas/`: ningún archivo de fecha 21–23 nov.
+- `handoffs/grok_inbox/`: solo el marcador pending de Robot; no acredita recepción.
+
+### CI de seguridad en main
+- Semgrep run [#44959731844](https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/actions/runs/44959731844), commit main `b225066a4f3e8b3bc06195b29d6c490b9e6404ce`, job `137015664994`: escaneó 1,028 archivos con 361 reglas; informó **32 findings (32 blocking)** y terminó con exit code 1.
+- El paso `Upload SARIF` quedó **skipped** porque el paso de Semgrep falló; el log accesible no contiene el detalle por regla/archivo y no se obtuvo SARIF. No se clasifican los 32 findings como vulnerabilidades confirmadas ni se hizo triage a ciegas.
+- Gitleaks run [#44959731773](https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/actions/runs/44959731773): success.
+- PR #3 tuvo un check dinámico success en run [#44966151794](https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/actions/runs/44966151794), sobre el HEAD feature citado; ese resultado no sustituye el Semgrep fallido de main.
+
+No se dispararon workflows, no se modificó main, no se alteraron `data/*.json`, secretos, permisos, storyboards ni decisiones editoriales. El siguiente paso técnico seguro para Semgrep es obtener el SARIF/listado de findings mediante una ejecución autorizada o un escaneo local reproducible; sin esos datos no se corrigen reglas a ciegas.
