@@ -227,3 +227,11 @@ Evidencia de árbol `main`:
 El paquete de `main` está anidado en `cola/entrada/<id>/`; el workflow actual selecciona solo JSON planos de primer nivel, así que su ruta es `NOT_DISPATCHABLE_POR_SELECTOR`. El paquete de `feature` también es anidado y solo contiene storyboard/`.gitkeep`. El archivo de estado de `main` permanece con texto del 10-nov que dice audio/video no generados y frames pendientes; esa ficha es **DESACTUALIZADA** frente a los medios, QA y programación actuales. `cola/estado/<id>.json` sigue 404: `RECEPCION_GROK_NO_CONFIRMADA`. No se infiere recepción por la carpeta ni por GitHub.
 
 No es un segundo proyecto ni un slot nuevo: el mismo `project_id` conserva en storyboard el slot original 9-nov 23:30, mientras la programación de producción lo movió a 21-nov 19:00. La clasificación correcta sigue siendo `PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR`; no se declara conflicto entre proyectos distintos ni se altera `main`.
+
+
+## Actions posteriores a la reconciliación — 22 nov 2026, 06:10 CDMX
+
+- Los commits documentales `0c9d8f234893cdbac2d8050f1671b5667dd022b8` y `fefa616d43dc672906f8b3aaebbf8c30f3b45935` quedaron leídos de vuelta. CodeQL terminó SUCCESS en Python y Actions para ambos: runs `45020786264` y `45020789811`. No se hizo merge; PR #3 sigue OPEN/DRAFT/dirty.
+- PR #15 sigue OPEN y Semgrep FAILURE en run `45004335607`; el SARIF conserva 26 hallazgos. No se alteró su rama ni se eludió el control.
+- Worker de main `45008611769`: SUCCESS, log literal `[trabajador] sin trabajo en cola.` Callback `45016230714`: SUCCESS; la búsqueda de Issues no encontró títulos `[callback]` nuevos. No se disparó workflow manual ni webhook de Grok.
+- El workflow referencia `GROK_WEBHOOK_URL` y `GROK_WEBHOOK_TOKEN`. La consulta de nombres de secretos no fue autorizada por el conector (HTTP 400: `GitHub Fetch URL is not an allowed public GitHub repository or search endpoint`); por tanto, su presencia no está verificada y no se declaran faltantes. No se consultaron valores.
