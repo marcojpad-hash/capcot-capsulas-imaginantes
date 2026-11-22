@@ -82,19 +82,19 @@
     },
     {
       "id": "SRC-002",
-      "cita_corta": "Drescher et al. (2016), Philosophical Transactions of the Royal Society B, ESM Table S1.",
-      "url": "https://royalsocietypublishing.org/rstb/article-supplement/22866/pdf/rstb20150275supp1/",
-      "doi": "10.1098/rstb.2015.0275",
-      "accessed": "2026-11-21",
-      "publication_date": "2016-05-19",
+      "cita_corta": "Kurniawan et al. (2018), Biogeosciences. Conversion of tropical forests to smallholder rubber and oil palm plantations impacts nutrient leaching losses and nutrient retention efficiency in highly weathered soils.",
+      "url": "https://bg.copernicus.org/articles/15/5131/2018/",
+      "doi": "10.5194/bg-15-5131-2018",
+      "accessed": "2026-11-22",
+      "publication_date": "2018-08-27",
       "supports": [
-        "Coordenadas DMS de la estación meteorológica PT REKI en el paisaje Harapan.",
-        "Coordenadas DMS de la estación meteorológica L. Kepayang en el paisaje Bukit Duabelas."
+        "Coordenada publicada de la región de estudio en la provincia de Jambi: 2°00′57″ S, 103°15′33″ E.",
+        "El artículo identifica dos paisajes dentro de la región de estudio, diferenciados por textura de suelo."
       ],
-      "verification_status": "PENDING_SOURCE",
-      "url_verification_status": "PENDIENTE_ACCESO",
-      "doi_verification_status": "PENDIENTE_RESOLVEDOR",
-      "verification_note": "El DOI 10.1098/rstb.2015.0275 está corroborado por registros bibliográficos secundarios, pero el endpoint doi.org devolvió 403 y el suplemento oficial de Royal Society no fue accesible en esta ejecución. Las coordenadas aparecen en una tesis que cita Drescher et al. (2016), no se verificaron contra ESM Table S1 primaria. Mantener PENDING_SOURCE y no promover hasta verificar el suplemento."
+      "verification_status": "VERIFICADO_FUENTE_PRIMARIA",
+      "url_verification_status": "VERIFICADO_PAGINA_EDITORIAL",
+      "doi_verification_status": "VERIFICADO_PAGINA_EDITORIAL",
+      "verification_note": "La página editorial de Biogeosciences muestra DOI, fecha de publicación y sección 2.1 Study sites and experimental design. Allí se publica la coordenada de la región de estudio en Jambi y se indica que se seleccionaron dos paisajes. Se usa como localizador regional; no como coordenada de parcela ni de estación."
     }
   ],
   "scenes": [
@@ -128,8 +128,8 @@
       "duration_seconds": 9,
       "narration": "El equipo comparó 32 parcelas en dos paisajes: bosque, caucho agroforestal, caucho intensivo y palma aceitera.",
       "on_screen_text": "Jambi · 32 parcelas · 2 paisajes",
-      "visual_description": "Mapa localizador de Jambi, Sumatra, con dos puntos de estaciones meteorológicas EFForTS; no mostrar las 32 parcelas ni polígonos inventados.",
-      "image_prompt": "ligne claire European comic illustration, clean uniform black outlines, flat bright colors, no hatching, clear readable shapes, one main subject large, minimal background, illustrated, not photorealistic, vertical 9:16, no text, A clean vertical locator map of Jambi Province in Sumatra, Indonesia, with exactly two precise locator dots for the EFForTS meteorological stations PT REKI and L. Kepayang, simple coastline and island outline only, no invented plot dots, no boundaries, no labels in image.",
+      "visual_description": "Mapa localizador de la región de estudio en Jambi, Sumatra, con un único punto regional publicado; no mostrar las 32 parcelas ni estaciones específicas.",
+      "image_prompt": "ligne claire European comic illustration, clean uniform black outlines, flat bright colors, no hatching, clear readable shapes, one main subject large, minimal background, illustrated, not photorealistic, vertical 9:16, no text, A clean vertical locator map of Jambi Province in Sumatra, Indonesia, with exactly one regional locator dot for the EFForTS study region in Jambi, simple coastline and island outline only, no invented plot dots or station locations, no boundaries, no labels in image.",
       "ambiente": "Ambiente de campo tropical, viento suave.",
       "sfx": [
         "marcador cartográfico",
@@ -148,7 +148,7 @@
       "new_information": "32 parcelas en dos paisajes y cuatro usos del suelo.",
       "capa": {
         "tipo": "mapa",
-        "titulo": "Dos paisajes de Jambi",
+        "titulo": "Región de estudio EFForTS, Jambi",
         "fuente": "SRC-002",
         "source_ids": [
           "SRC-001",
@@ -156,24 +156,16 @@
         ],
         "puntos": [
           {
-            "id": "pt_reki",
-            "nombre": "PT REKI",
-            "etiqueta": "Harapan · estación PT REKI",
-            "lat": -2.1261667,
-            "lon": 103.3690278,
-            "sistema_coordenadas": "Coordenadas geográficas DMS convertidas aritméticamente a decimal; datum no especificado en la fuente."
-          },
-          {
-            "id": "l_kepayang",
-            "nombre": "L. Kepayang",
-            "etiqueta": "Bukit Duabelas · estación L. Kepayang",
-            "lat": -2.0882222,
-            "lon": 102.7675278,
-            "sistema_coordenadas": "Coordenadas geográficas DMS convertidas aritméticamente a decimal; datum no especificado en la fuente."
+            "id": "jambi_study_region",
+            "nombre": "Región de estudio EFForTS, Jambi",
+            "etiqueta": "Jambi · dos paisajes",
+            "lat": -2.0158333,
+            "lon": 103.2591667,
+            "sistema_coordenadas": "WGS84; coordenada regional publicada como 2°00′57″ S, 103°15′33″ E"
           }
         ],
         "areas": [],
-        "precision_note": "Son dos estaciones meteorológicas EFForTS, no las 32 parcelas ni centroides. El mapa solo localiza los paisajes y no representa la distribución del muestreo."
+        "precision_note": "La coordenada localiza la región de estudio publicada por Kurniawan et al. (2018), no el centroide calculado de los dos paisajes ni las 32 parcelas. El artículo confirma dos paisajes dentro de esa región. No se dibujan estaciones ni puntos de muestreo no publicados."
       }
     },
     {
