@@ -1,3 +1,4 @@
+import ssl
 import sys
 import unittest
 from unittest.mock import patch
@@ -93,7 +94,10 @@ class TextOnlyStoryboardContractTests(unittest.TestCase):
         with patch.object(validar_storyboard.http.client, "HTTPSConnection", side_effect=Connection) as factory:
             self.assertTrue(validar_storyboard.check_doi("10.5194/bg-15-5131-2018"))
             self.assertEqual(factory.call_args.args[0], "api.crossref.org")
-            self.assertEqual(factory.call_args.args[1], 20)
+            self.assertEqual(factory.call_args.kwargs["timeout"], 20)
+            context = factory.call_args.kwargs["context"]
+            self.assertTrue(context.check_hostname)
+            self.assertEqual(context.verify_mode, ssl.CERT_REQUIRED)
 
     def test_missing_narrative_qa_is_rejected(self):
         self.assertTrue(validar_storyboard.validar_narrative_qa(None))
