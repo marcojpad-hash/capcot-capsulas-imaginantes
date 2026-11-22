@@ -311,3 +311,35 @@ Se creó el borrador `proyectos/2026-11-22_genes-estatura-etapas/storyboard.json
 
 Estado: `BORRADOR_EN_PROYECTOS`, no seleccionado, sin `narrative_qa`, sin medios, `approved_assets=[]`, `export.render_status=NOT_GENERATED` y `publicacion.status=PENDIENTE_DECISION_GROK`. No promover hasta verificar DOI/Crossref y completar la auditoría narrativa independiente.
 
+
+
+## Corte operativo actualizado — 22-nov-2026, 12:22 CDMX
+
+Este corte sustituye los estados de verificación DOI anteriores cuando aquí se indica Crossref verificado. No cambia selección editorial ni autoriza promoción.
+
+### Feeds y tendencias
+
+- `scripts/tendencias.py`: ScienceDaily (science, health y space) y Phys.org se pudieron leer mediante el lector alternativo. ScienceDaily entrega entradas recientes hasta el 21-nov; no aportó una publicación primaria del 22-nov. Phys.org sí muestra entradas del 22-nov, pero son noticias secundarias y cada una se rastreó hasta su fuente original.
+- NASA RSS: feed accesible pero obsoleto; su último `lastBuildDate` visible es 2026-09-01.
+- UNAM Global RSS: obsoleto; última entrada visible 2026-05-18.
+- ESA RSS, EurekAlert RSS y SINC RSS: `CRAWL_NOT_FOUND`.
+- Nature RSS y Google Trends RSS México: `CRAWL_UNEXPECTED_CONTENT_TYPE`; la apertura directa del lector web también devolvió `Unsupported content-type`.
+- Respaldo oficial de Google Trends: la página HTML de México cargó con ventana “Past 24 hours”, 265 tendencias y 25 filas visibles. Predominan fútbol, entretenimiento y búsquedas generales; no apareció un tema científico/natural utilizable entre esas 25. Trends se usó como señal de interés, nunca como evidencia científica.
+
+### Shortlist vigente: cinco candidatos
+
+1. **Genética de la estatura por etapas — 22-nov, mismo día.** Nature Communications, DOI `10.1038/s41467-026-79465-x`, registro Crossref `status=ok` y coincidencia de título/editorial. La página primaria indica publicación 22-nov-2026. El estudio analiza 574,580 mediciones de 72,704 niñas y niños noruegos, distingue tres agrupaciones temporales y reporta 106 proteínas asociadas con estatura prepuberal. El análisis de aleatorización mendeliana vincula crecimiento fetal reducido y mayor estatura prepuberal con riesgo poblacional de diabetes tipo 2, no con pronóstico individual. **Proyecto existente:** `2026-11-22_genes-estatura-etapas`, slot candidato 23:30; no seleccionado para handoff mientras falte QA independiente.
+2. **Nitrógeno orgánico atmosférico en océanos — 19-nov.** Science, DOI `10.1126/science.aeg4265`, verificado en Crossref. El trabajo midió aerosoles marinos durante 21 cruceros y estimó deposición oceánica anual de 12.8 Tg N/año (rango 4.0–22.7), equivalente a 27% de la deposición total de nitrógeno (rango 11–40%). Las coordenadas de los puntos de muestreo requieren recuperar la tabla/suplemento primario; `PENDING_MAP_COORDINATES`.
+3. **Inspiral de una estrella dentro de la envoltura de su compañera — 18-nov.** Nature, DOI `10.1038/s41586-026-11221-z`, verificado en Crossref. AT 2025abao en Andrómeda muestra evidencia observacional de una fase de inspiral en una envoltura común; la interpretación describe una estrella AGB de aproximadamente 7 masas solares y una compañera de aproximadamente 0.7. Mantener el límite: la nota de prensa de Nature pide observaciones futuras para confirmar de forma concluyente la fusión final. Proyecto existente `2026-11-19_dato-estrella-dentro-de-estrella`; `NO_DUPLICAR`.
+4. **Intensificación del uso de suelo tropical y biodiversidad — 18-nov.** Nature, DOI `10.1038/s41586-026-11298-6`, verificado en Crossref. Compara 24 indicadores taxonómicos desde dosel hasta suelo y documenta descensos de multidiversidad desde bosque de tierras bajas hacia monocultivos; el artículo no encuentra una homogeneización comunitaria consistente. Faltan coordenadas publicadas de las parcelas para mapa; `PENDING_MAP_COORDINATES`.
+5. **Egovirus y evolución de poxvirus — 18-nov.** Nature, DOI `10.1038/s41586-026-11283-z`, verificado en Crossref. El análisis explora 85,123 ensamblajes metagenómicos y reporta egovirus en microbiomas digestivos humanos y animales. La relación con protistas hospedadores y el escenario evolutivo son inferencias filogenómicas, no demostración experimental de infección. Sin mapa de sitios de muestreo recuperado; `PENDING_MAP_COORDINATES`.
+
+### DOI adicionales comprobados, fuera de la shortlist de hoy
+
+- `10.1111/1755-0998.70219` — *Breath to Genome*, Molecular Ecology Resources; Crossref y PubMed coinciden. 58 muestras de soplo de 26 yubartas, con ADN endógeno promedio de 84%. Proyecto `2026-11-22_yubarta-genoma-soplo` ya existe y su slot 17:00 tiene conflicto con el plan de main; `NO_DUPLICAR`.
+- `10.1126/sciadv.aeg1602` — *A primordial heavy water reservoir in the outer solar system*, Science Advances; Crossref verificado, publicado 13-nov. Reserva, fuera de la ventana de 48 h para dato del día.
+- `10.3897/zookeys.1295.205902` — tardígrados del monte submarino Senghor, ZooKeys; Crossref verificado, publicado 27-oct. Fuera de recencia.
+
+### Decisión de slot
+
+El único candidato de la shortlist publicado el mismo 22-nov es genética de estatura. El borrador ya existe en `proyectos/2026-11-22_genes-estatura-etapas/storyboard.json`; no se creó otro storyboard. DOI y coordenadas institucionales se verificaron y se corrigieron metadatos, pero falta la lectura narrativa independiente. El proyecto permanece en `BORRADOR_EN_PROYECTOS`, sin cola ni recepción Grok confirmada. No usar los candidatos del 18–19-nov para presentarlos como noticia publicada hoy.
