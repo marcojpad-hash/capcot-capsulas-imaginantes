@@ -1,0 +1,280 @@
+[
+  {
+    "slug": "oxoboranos",
+    "id_viejo": "K4qNkx2f4RI",
+    "id_nuevo": "B-75KkHAVDo",
+    "url": "https://youtu.be/B-75KkHAVDo",
+    "url_shorts": "https://youtube.com/shorts/B-75KkHAVDo",
+    "publishAt": "2026-11-22T20:30:00Z",
+    "hora_cdmx": "2026-11-22 14:30 America/Mexico_City",
+    "privacyStatus": "private",
+    "selfDeclaredMadeForKids": false,
+    "madeForKids": false,
+    "containsSyntheticMedia": null,
+    "duration_api": "PT1M31S",
+    "thumb_keys": [
+      "default",
+      "medium",
+      "high",
+      "standard",
+      "maxres",
+      "shortsAspectRatio"
+    ],
+    "thumb_set": {
+      "first": {
+        "ok": true,
+        "keys": [
+          "default",
+          "medium",
+          "high",
+          "standard",
+          "maxres",
+          "qhd"
+        ],
+        "response": {
+          "kind": "youtube#thumbnailSetResponse",
+          "etag": "oLSaAYUkfw6ojEVcvc5sovwl91M",
+          "items": [
+            {
+              "default": {
+                "url": "https://i9.ytimg.com/vi/B-75KkHAVDo/default.jpg?sqp=CNT0idgG&rs=AOn4CLAFA2vsDt_gKNUd1jSkmeSmJ3kJuQ",
+                "width": 120,
+                "height": 90
+              },
+              "medium": {
+                "url": "https://i9.ytimg.com/vi/B-75KkHAVDo/mqdefault.jpg?sqp=CNT0idgG&rs=AOn4CLA91JwxOlcse2Cx_xdSULTm1Aam7w",
+                "width": 320,
+                "height": 180
+              },
+              "high": {
+                "url": "https://i9.ytimg.com/vi/B-75KkHAVDo/hqdefault.jpg?sqp=CNT0idgG&rs=AOn4CLCytPZdEpUTCHlDBqGryz6ahwvmgQ",
+                "width": 480,
+                "height": 360
+              },
+              "standard": {
+                "url": "https://i9.ytimg.com/vi/B-75KkHAVDo/sddefault.jpg?sqp=CNT0idgG&rs=AOn4CLAEJa-hQPjNS8-fCoGkeaMJakAvtA",
+                "width": 640,
+                "height": 480
+              },
+              "maxres": {
+                "url": "https://i9.ytimg.com/vi/B-75KkHAVDo/maxresdefault.jpg?sqp=CNT0idgG&rs=AOn4CLAg9OptrvX_OD-ZV5SlyMjNDpm4bg",
+                "width": 1280,
+                "height": 720
+              },
+              "qhd": {
+                "url": "https://i9.ytimg.com/vi/B-75KkHAVDo/qhddefault.jpg?sqp=CNT0idgG&rs=AOn4CLB6azc_N1sTTCmgPqkTPAL-p10DXA",
+                "width": 2560,
+                "height": 1440
+              }
+            }
+          ]
+        }
+      },
+      "retry": {
+        "ok": true,
+        "keys": [
+          "default",
+          "medium",
+          "high",
+          "standard",
+          "maxres",
+          "shortsAspectRatio"
+        ],
+        "response": {
+          "kind": "youtube#thumbnailSetResponse",
+          "etag": "oLMErG36Xw9YE1Ad3OXQMeEEH30",
+          "items": [
+            {
+              "default": {
+                "url": "https://i9.ytimg.com/vi/B-75KkHAVDo/default.jpg?sqp=CNT0idgG&rs=AOn4CLAFA2vsDt_gKNUd1jSkmeSmJ3kJuQ",
+                "width": 120,
+                "height": 90
+              },
+              "medium": {
+                "url": "https://i9.ytimg.com/vi/B-75KkHAVDo/mqdefault.jpg?sqp=CNT0idgG&rs=AOn4CLA91JwxOlcse2Cx_xdSULTm1Aam7w",
+                "width": 320,
+                "height": 180
+              },
+              "high": {
+                "url": "https://i9.ytimg.com/vi/B-75KkHAVDo/hqdefault.jpg?sqp=CNT0idgG&rs=AOn4CLCytPZdEpUTCHlDBqGryz6ahwvmgQ",
+                "width": 480,
+                "height": 360
+              },
+              "standard": {
+                "url": "https://i9.ytimg.com/vi/B-75KkHAVDo/sddefault.jpg?sqp=CNT0idgG&rs=AOn4CLAEJa-hQPjNS8-fCoGkeaMJakAvtA",
+                "width": 640,
+                "height": 480
+              },
+              "maxres": {
+                "url": "https://i9.ytimg.com/vi/B-75KkHAVDo/maxresdefault.jpg?sqp=CNT0idgG&rs=AOn4CLAg9OptrvX_OD-ZV5SlyMjNDpm4bg",
+                "width": 1280,
+                "height": 720
+              },
+              "shortsAspectRatio": {
+                "url": "https://i9.ytimg.com/vi/B-75KkHAVDo/sardefault.jpg?sqp=CNT0idgG&rs=AOn4CLClRBHBt3kjNrf9z78DAoRE2-iokA",
+                "width": 1080,
+                "height": 1920
+              }
+            }
+          ]
+        }
+      }
+    },
+    "sar_fetch": [
+      {
+        "url": "https://i.ytimg.com/vi/B-75KkHAVDo/sardefault.jpg",
+        "error": "HTTP Error 404: Not Found"
+      },
+      {
+        "url": "https://i.ytimg.com/vi/B-75KkHAVDo/oar2.jpg",
+        "error": "HTTP Error 404: Not Found"
+      },
+      {
+        "url": "https://i.ytimg.com/vi/B-75KkHAVDo/maxresdefault.jpg",
+        "error": "HTTP Error 404: Not Found"
+      }
+    ],
+    "mp4": "/workspace/entregas/resubidas_2026-11-21/oxoboranos/capsula.mp4",
+    "portada": "/workspace/entregas/resubidas_2026-11-21/oxoboranos/portada.jpg",
+    "original_intact": true
+  },
+  {
+    "slug": "cleopatra",
+    "id_viejo": "m8VAsrbfsbE",
+    "id_nuevo": "I8n_5nnUlbI",
+    "url": "https://youtu.be/I8n_5nnUlbI",
+    "url_shorts": "https://youtube.com/shorts/I8n_5nnUlbI",
+    "publishAt": "2026-11-23T03:00:00Z",
+    "hora_cdmx": "2026-11-22 21:00 America/Mexico_City",
+    "privacyStatus": "private",
+    "selfDeclaredMadeForKids": false,
+    "madeForKids": false,
+    "containsSyntheticMedia": null,
+    "duration_api": "PT1M26S",
+    "thumb_keys": [
+      "default",
+      "medium",
+      "high",
+      "standard",
+      "maxres",
+      "shortsAspectRatio"
+    ],
+    "thumb_set": {
+      "first": {
+        "ok": true,
+        "keys": [
+          "default",
+          "medium",
+          "high",
+          "standard",
+          "maxres",
+          "qhd"
+        ],
+        "response": {
+          "kind": "youtube#thumbnailSetResponse",
+          "etag": "y1H5cZZALCKKeTkW0J4cdywvgjs",
+          "items": [
+            {
+              "default": {
+                "url": "https://i9.ytimg.com/vi/I8n_5nnUlbI/default.jpg?sqp=CNT0idgG&rs=AOn4CLCbg1qT-XAhdavdlfh3zZB7-9KVNg",
+                "width": 120,
+                "height": 90
+              },
+              "medium": {
+                "url": "https://i9.ytimg.com/vi/I8n_5nnUlbI/mqdefault.jpg?sqp=CNT0idgG&rs=AOn4CLDNVRZjKGz8SGNHOea1milo9CDyyQ",
+                "width": 320,
+                "height": 180
+              },
+              "high": {
+                "url": "https://i9.ytimg.com/vi/I8n_5nnUlbI/hqdefault.jpg?sqp=CNT0idgG&rs=AOn4CLA158spPsaWVlJu76A929zon08UQQ",
+                "width": 480,
+                "height": 360
+              },
+              "standard": {
+                "url": "https://i9.ytimg.com/vi/I8n_5nnUlbI/sddefault.jpg?sqp=CNT0idgG&rs=AOn4CLAmAcejNTUG8HL8H95dFyKpBnuuDA",
+                "width": 640,
+                "height": 480
+              },
+              "maxres": {
+                "url": "https://i9.ytimg.com/vi/I8n_5nnUlbI/maxresdefault.jpg?sqp=CNT0idgG&rs=AOn4CLB4WvY3gBqJalPYBYYOxsBKkeyfDw",
+                "width": 1280,
+                "height": 720
+              },
+              "qhd": {
+                "url": "https://i9.ytimg.com/vi/I8n_5nnUlbI/qhddefault.jpg?sqp=CNT0idgG&rs=AOn4CLB8bZylhUO1NZwNpYVQfv5kpbSd6w",
+                "width": 2560,
+                "height": 1440
+              }
+            }
+          ]
+        }
+      },
+      "retry": {
+        "ok": true,
+        "keys": [
+          "default",
+          "medium",
+          "high",
+          "standard",
+          "maxres",
+          "shortsAspectRatio"
+        ],
+        "response": {
+          "kind": "youtube#thumbnailSetResponse",
+          "etag": "qby-DxRs3MFy8rnIOJ-Co3xaSJA",
+          "items": [
+            {
+              "default": {
+                "url": "https://i9.ytimg.com/vi/I8n_5nnUlbI/default.jpg?sqp=CNT0idgG&rs=AOn4CLCbg1qT-XAhdavdlfh3zZB7-9KVNg",
+                "width": 120,
+                "height": 90
+              },
+              "medium": {
+                "url": "https://i9.ytimg.com/vi/I8n_5nnUlbI/mqdefault.jpg?sqp=CNT0idgG&rs=AOn4CLDNVRZjKGz8SGNHOea1milo9CDyyQ",
+                "width": 320,
+                "height": 180
+              },
+              "high": {
+                "url": "https://i9.ytimg.com/vi/I8n_5nnUlbI/hqdefault.jpg?sqp=CNT0idgG&rs=AOn4CLA158spPsaWVlJu76A929zon08UQQ",
+                "width": 480,
+                "height": 360
+              },
+              "standard": {
+                "url": "https://i9.ytimg.com/vi/I8n_5nnUlbI/sddefault.jpg?sqp=CNT0idgG&rs=AOn4CLAmAcejNTUG8HL8H95dFyKpBnuuDA",
+                "width": 640,
+                "height": 480
+              },
+              "maxres": {
+                "url": "https://i9.ytimg.com/vi/I8n_5nnUlbI/maxresdefault.jpg?sqp=CNT0idgG&rs=AOn4CLB4WvY3gBqJalPYBYYOxsBKkeyfDw",
+                "width": 1280,
+                "height": 720
+              },
+              "shortsAspectRatio": {
+                "url": "https://i9.ytimg.com/vi/I8n_5nnUlbI/sardefault.jpg?sqp=CNT0idgG&rs=AOn4CLDKXf9VTy5508UUHMfO4agy282NQw",
+                "width": 1080,
+                "height": 1920
+              }
+            }
+          ]
+        }
+      }
+    },
+    "sar_fetch": [
+      {
+        "url": "https://i.ytimg.com/vi/I8n_5nnUlbI/sardefault.jpg",
+        "error": "HTTP Error 404: Not Found"
+      },
+      {
+        "url": "https://i.ytimg.com/vi/I8n_5nnUlbI/oar2.jpg",
+        "error": "HTTP Error 404: Not Found"
+      },
+      {
+        "url": "https://i.ytimg.com/vi/I8n_5nnUlbI/maxresdefault.jpg",
+        "error": "HTTP Error 404: Not Found"
+      }
+    ],
+    "mp4": "/workspace/entregas/resubidas_2026-11-21/cleopatra/origen_yt.mp4",
+    "portada": "/workspace/entregas/resubidas_2026-11-21/cleopatra/portada.jpg",
+    "original_intact": true
+  }
+]
