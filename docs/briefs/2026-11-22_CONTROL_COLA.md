@@ -21,7 +21,7 @@
 | `2026-11-22_voyager-1-un-dia-luz` | 22 nov 07:00 | FAIL 83 | `prompt_base` y mapa DSN con tres puntos WGS84 en `scenes[2].capa` presentes; `FECHA_DE_HITO_Y_CONFIRMACION_CONFUNDIDAS`; main ocupa Salem |
 | `2026-11-22_bao-estrella-fusion-andromeda` | 22 nov 13:30 | FAIL 84 | `prompt_base` y mapa celeste RA/Dec en `scenes[1].capa` presentes; `STAKES_NO_EXPLICADOS`; main ocupa Gutenberg |
 | `2026-11-22_yubarta-genoma-soplo` | 22 nov 17:00 | PASS 90 | `prompt_base` y mapa regional con bounding box en `scenes[2].capa` presentes; main ocupa Ada y 17:00 sigue en prueba |
-| `2026-11-23_tropical-biodiversity-turnover` | 23 nov 13:30 | FAIL 82 | `prompt_base` y mapa con dos puntos en `scenes[1].capa` presentes; `STAKES_NO_EXPLICADOS`; `SRC-002=PENDING_SOURCE`; main ocupa Rosetta |
+| `2026-11-23_tropical-biodiversity-turnover` | 23 nov 13:30 | FAIL 82 | `prompt_base` y mapa regional con un punto respaldado por fuente primaria en `scenes[1].capa`; `STAKES_NO_EXPLICADOS`; main ocupa Rosetta |
 
 Los siete tienen 8 escenas y 171–208 palabras. Los seis campos narrativos por escena están presentes. No se repitió QA ni se reescribieron narraciones. **Corrección de auditoría tras lectura directa de los siete JSON:** los siete contienen `visual_identity.prompt_base` y una capa estructurada `scenes[n].capa.tipo=mapa`; por tanto, se retira el hallazgo previo de ausencia de `prompt_base` y mapa. Localización de capa: Fentale `scene_002`, Homo erectus `scene_003`, púlsar `scene_003`, Voyager `scene_003`, AT 2025abao `scene_002`, yubarta `scene_003`, biodiversidad `scene_002`. Los bloqueos reales son los consignados en cada fila: QA FAIL en Homo, púlsar, Voyager, Bao y biodiversidad; producción previa en Fentale; conflicto de slot en Voyager, Bao, Yubarta y biodiversidad; `SRC-002=PENDING_SOURCE` en biodiversidad. No se repitió QA ni se reescribió narración.
 
@@ -98,3 +98,6 @@ Crossref API y resolvedor no pudieron consultarse. Error de red: `Temporary fail
 **PENDIENTE:** revisión narrativa independiente para borradores nuevos; corrección estructural por sus autores; vínculo inequívoco del video `4Qpl17Ts_vI`; acceso a RSS/Crossref; agenda confirmada a partir del 1 dic.
 
 No se reescribieron narraciones, no se alteraron estados Grok, no se promovió ni redispatchó ningún paquete.
+
+
+**Actualización de fuente y cartografía (22-nov):** se retiraron las coordenadas PT REKI y L. Kepayang que dependían de una tesis secundaria y de un suplemento editorial no accesible. `SRC-002` ahora es Kurniawan et al. (2018), *Biogeosciences*, DOI `10.5194/bg-15-5131-2018`; la página editorial, sección 2.1, publica la coordenada regional de Jambi (2°00′57″ S, 103°15′33″ E) y confirma dos paisajes dentro de esa región. El mapa se redujo a un único localizador regional, sin fingir coordenadas de parcelas, estaciones ni centroide. Storyboard commit `3a0bbcc66f6fba5c52636a6fd0305fd079d24f68`, blob `3ced77b8dc314bcbb8ed594a7fb6f573415f8127`. QA narrativo sigue FAIL/82 por `STAKES_NO_EXPLICADOS`; no se modificó la narración ni se promovió el proyecto.
