@@ -427,3 +427,7 @@ El total de 26 respuestas 404 cubre los 25 storyboards en `proyectos/` más el r
 ### Lectura de vuelta final de esta bitácora — 22-nov-2026
 
 La reconciliación y su corrección de atribución quedaron guardadas y releídas. El HEAD de `feature/capcot-video-discovery-continuity` después de ambas actualizaciones es `b7c38402f9fd2fba3d8caf82805de08e758350d7`; blob actual de este control: `a77794738961365c1deab3d01bbe0f95a381a84b`.
+
+### Prueba adicional del resolvedor DOI — 22-nov-2026
+
+Se intentó además abrir directamente los cinco DOI del radar mediante `https://doi.org/<doi>`. Los cinco devolvieron el mismo error del lector: `URL https://doi.org/<doi> is not accessible via this tool`. DOI consultados: `10.1038/s41586-026-11221-z`, `10.1038/s41586-026-11298-6`, `10.1111/1755-0998.70219`, `10.1126/sciadv.aeg1602` y `10.3897/zookeys.1295.205902`. Esto **no demuestra que los DOI estén rotos**; demuestra que este lector no pudo verificar el salto del resolvedor. Los cinco siguen pendientes de una comprobación Crossref/resolvedor ejecutable.
