@@ -551,3 +551,12 @@ No se modificó ningún `data/*.json`, main, secreto, permiso, publicación ni m
 - Presencia de `GROK_WEBHOOK_URL` y `GROK_WEBHOOK_TOKEN` no verificada; no se declararon ausentes ni se consultaron valores.
 
 Cierre: no se promovió ni redispatchó contenido, no se generaron medios, no se publicó ni programó, no se modificó main, `data/*.json`, estados Grok, secretos, permisos ni workflows.
+
+
+### Clasificación de handoff y cierre de commits
+
+- Los 12 IDs del lote 5–7 nov se cotejaron contra `main/data/horario_semana_2026-11-01_07.json` y `main/ajustes_entre_modelos/PARA_CHATGPT_semana_01-07nov.md`; coinciden con los 12 expedientes revisados.
+- Los 26 storyboards del alcance permanecen en `proyectos/<id>/storyboard.json`; no existe copia plana `cola/entrada/<id>.json` para ellos. Resultado de ruta: **26 NOT_DISPATCHABLE**. El paquete robot y el Pulsar de main están en carpetas anidadas, no en el selector plano. `scripts/procesar_cola.py` recorre anidados, pero `.github/workflows/capcot-grok-dispatch.yml` selecciona solo `cola/entrada/*.json` / profundidad 1. No se disparó el workflow.
+- `2026-11-22_genes-estatura-etapas`: `NOT_DISPATCHABLE` por ausencia de copia de cola y estado 404; `PENDIENTE_AUDITOR`. No hay conflicto con el proyecto Pulsar de main, cuyo `programacion.json` declara 13:30 CDMX.
+- Robot orbital: `NOT_DISPATCHABLE` por ruta anidada y `PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR`; el estado individual sigue 404 aunque haya marker de handoff y medios en main.
+- Commits de este corte: storyboard restaurado sin `narrative_qa` no independiente (blob `e0e32f9705bba8ccd87dfd6e24c2d36b11724346`); control actualizado en `401a1a79e14aef12c455a2153558d7b3579cea78`; radar actualizado en `8563d76f0503d924bdf0776f5568fa69a58efd11`. El HEAD de PR #3 quedó en el commit del radar. No se modificó `data/*.json`.
