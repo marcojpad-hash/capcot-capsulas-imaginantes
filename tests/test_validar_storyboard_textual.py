@@ -44,6 +44,19 @@ class TextOnlyStoryboardContractTests(unittest.TestCase):
         }
         self.assertFalse(validar_storyboard.validar_punto_mapa(point))
 
+
+    def test_boolean_terrestrial_coordinates_are_rejected(self):
+        self.assertFalse(validar_storyboard.validar_punto_mapa({"lat": True, "lon": -70}))
+        self.assertFalse(validar_storyboard.validar_punto_mapa({"lat": 10, "lon": False}))
+
+    def test_boolean_celestial_coordinates_are_rejected(self):
+        point = {
+            "ra_deg": True,
+            "dec_deg": 12.5,
+            "sistema_coordenadas": "Ecuatoriales J2000 (RA/Dec)",
+        }
+        self.assertFalse(validar_storyboard.validar_punto_mapa(point))
+
     def test_missing_narrative_qa_is_rejected(self):
         self.assertTrue(validar_storyboard.validar_narrative_qa(None))
 
