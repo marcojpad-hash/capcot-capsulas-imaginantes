@@ -235,3 +235,83 @@ No es un segundo proyecto ni un slot nuevo: el mismo `project_id` conserva en st
 - PR #15 sigue OPEN y Semgrep FAILURE en run `45004335607`; el SARIF conserva 26 hallazgos. No se alteró su rama ni se eludió el control.
 - Worker de main `45008611769`: SUCCESS, log literal `[trabajador] sin trabajo en cola.` Callback `45016230714`: SUCCESS; la búsqueda de Issues no encontró títulos `[callback]` nuevos. No se disparó workflow manual ni webhook de Grok.
 - El workflow referencia `GROK_WEBHOOK_URL` y `GROK_WEBHOOK_TOKEN`. La consulta de nombres de secretos no fue autorizada por el conector (HTTP 400: `GitHub Fetch URL is not an allowed public GitHub repository or search endpoint`); por tanto, su presencia no está verificada y no se declaran faltantes. No se consultaron valores.
+
+
+## Reconciliación independiente de agenda y rutas — 22-nov-2026
+
+### Corrección de ocupación por fecha + slot
+
+La lectura directa de `main/data/horarios.json`, `data/publicaciones.json`, `data/miniaturas_auditoria_2026-11-21.json`, `data/resubidas_2026-11-21.json`, `data/vistas_historico.json`, `data/cierre_diario/2026-11-21.md` y `docs/briefs/produccion_2026-11-23_28/plan_semana.json` corrige la tabla anterior. No se modificó ninguno de esos archivos.
+
+| Fecha / slot CDMX | Evidencia en main | Proyecto feature afectado | Clasificación |
+|---|---|---|---|
+| 21-nov 07:00 | Tejón, YouTube `6XCBYrlO4Eg`, aparece en vistas/histórico | `2026-11-21_homo-erectus-selva-tropical` | `CONFLICTO_DE_SLOT_ENTRE_RAMAS` |
+| 21-nov 13:30 | Oxoboranos, `K4qNkx2f4RI`, en publicaciones | — | Slot ocupado |
+| 21-nov 17:00 | Napoleón, `8okieDXFIgU`, en cierre/miniaturas | `2026-11-21_pulsar-gamma-reticulo` | `CONFLICTO_DE_SLOT_ENTRE_RAMAS` |
+| 21-nov 19:00 | Robot orbital, `ZG4iQgmWrLI`, programado | — | Procesamiento preexistente; no redispatchar |
+| 21-nov 23:30 | Colón, `RwTTwSNGm10`, programado | `2026-11-21_fentale-metano-sin-erupcion` | `CONFLICTO_DE_SLOT_ENTRE_RAMAS` |
+| 22-nov 07:00 | Salem, `N21TIYdONZo`, programado | `2026-11-22_voyager-1-un-dia-luz` | `CONFLICTO_DE_SLOT_ENTRE_RAMAS` |
+| 22-nov 13:30 | Gutenberg, `YXndoPSSeaY`, programado | `2026-11-22_bao-estrella-fusion-andromeda` | `CONFLICTO_DE_SLOT_ENTRE_RAMAS` |
+| 22-nov 17:00 | Ada, `Sc0cX9ejxuw`, programado | `2026-11-22_yubarta-genoma-soplo` | `CONFLICTO_DE_SLOT_ENTRE_RAMAS` |
+| 22-nov 19:00 | Webb, `BIwG7kgaLic`, programado | — | Preexistente fuera de la política vigente; no reutilizar |
+| 23-nov 07:00 | Nudillos, `tmOji99zGPE`, comparte `publishAt=2026-11-23T13:00:00Z` con AI warning, `IQEU2Bqy3v0` | — | `COLISION_DE_PROGRAMACION` dentro de main |
+| 23-nov 13:30 | Rosetta, `p5PM4xZfDyc`, programado | `2026-11-23_tropical-biodiversity-turnover` | `CONFLICTO_DE_SLOT_ENTRE_RAMAS` |
+| 23-nov 17:00 | Pirámides, `gWJxoGjWQeM`, programado | — | Preexistente en ventana de tarde en prueba |
+| 23-nov 19:00 | Gutenberg, `i3SpxSQglm4`, programado | — | Preexistente fuera de la política vigente; no reutilizar |
+
+**Corrección de Fentale:** `Eldk0fVWqpo` corresponde al 20-nov 23:30; no es el mismo slot del 21-nov. Sí existe duplicación temática de metano entre ambos proyectos, y el slot 21-nov 23:30 ya está ocupado por Colón. Se corrige la causalidad del bloqueo: duplicación temática + conflicto de slot, no identidad de fecha/slot con `Eldk0fVWqpo`.
+
+### Política vigente frente a programación heredada
+
+`main/data/horarios.json` actualizado el 16-nov declara ventanas activas 06:30–07:30 y 13:00–14:30, tarde 16:30–18:00 en prueba, slot fijo 23:30 y ventana 19:00 retirada desde el 5-nov. Sin embargo, main conserva elementos preexistentes a las 17:00, 19:00 y 21:00. Se registran como programación heredada; no constituyen autorización para crear nuevos paquetes en esos horarios. No se cancela ni reprograme nada.
+
+`data/resubidas_2026-11-21.json` registra además:
+- Oxoboranos nuevo ID `B-75KkHAVDo`, 22-nov 14:30.
+- Cleopatra nuevo ID `I8n_5nnUlbI`, 22-nov 21:00.
+- `originales_intactos=true`: los IDs originales siguen presentes. Esto crea riesgo de duplicación de publicación, no una autorización para cancelar los nuevos ni retirar los originales.
+- Enana blanca, 23-nov 14:30: `bloqueado_sin_mp4`, sin ID nuevo ni medio; es propuesta bloqueada, no programación confirmada.
+
+El 22-nov 23:30 no aparece ocupado en los inventarios consultados. Sigue activo como slot fijo, pero permanece `PENDING_SOURCE`: el radar vigente no tiene candidato del mismo día que supere resolución DOI y cartografía. No se creó storyboard.
+
+### Colisiones de programación posteriores
+
+`data/miniaturas_auditoria_2026-11-21.json` contiene seis colisiones exactas de `publishAt`; no se alteraron:
+- 23-nov 07:00: `IQEU2Bqy3v0` + `tmOji99zGPE`.
+- 24-nov 17:00: `cGb7Z0ZEz8w` + `_YzBY4OfUeo`.
+- 25-nov 07:00: `cPNiOFeY5_k` + `W9g2tPZTpD4`.
+- 26-nov 17:00: `JqlKsJOVmdE` + `-1DRh_qj7Bg`.
+- 27-nov 07:00: `jiX6RdwJ1gg` + `nd0rs6iVy8E`.
+- 28-nov 17:00: `gN6svdqe62Q` + `fcSNbU809ao`.
+
+La auditoría también registra 36 elementos sin MP4 local, 9 miniaturas corregidas y 4 con rework. No se repitieron operaciones de Studio.
+
+### Corrección del inventario de publicaciones
+
+- `main/data/publicaciones.json` contiene 48 registros totales, no dos; solo dos corresponden al 21-nov y no contiene el inventario programado del 22–23. La frase anterior «dos registros» se precisa como conteo de ese día, no del archivo completo.
+- `feature/data/publicaciones.json` contiene 22 registros.
+- La agenda 22–28 debe reconciliarse con `miniaturas_auditoria`, `resubidas` y el plan semanal; `publicaciones.json` por sí solo no es inventario completo.
+- `data/vistas_historico.json` tiene 107 entradas; incluye `6XCBYrlO4Eg`, no incluye `ZG4iQgmWrLI`, Napoleón ni Colón. Estos últimos se contrastaron con cierre diario, miniaturas y programación.
+- No existe `historial_youtube` en el árbol. No se afirma que el estado público del robot esté confirmado.
+
+### Robot orbital: estado de publicación sin resolver
+
+Se releyeron los blobs de main: `capsula.mp4` SHA `72d7ca5757a18b5d7a248503ac0e096dc0ac37ff` (25,795,339 bytes), portada, nueve frames, `programacion.json`, `qa.json` y `metadata.json`. La QA audiovisual es 21/21 y 87.57 s. `publish_at=2026-11-22T01:00:00Z` ya pasó; `programacion.json` conserva `estado=programado`, mientras `metadata.json` conserva `privacyStatus=private`. La apertura pública de YouTube devolvió `DisabledError`. Resultado: `PUBLICACION_REAL_NO_VERIFICADA / RIESGO_DE_ESTADO_PROGRAMADO_ANTIGUO`. No cancelar, reprogramar ni redispatchar. El estado de main que dice que los medios no se generaron está desactualizado frente a los blobs presentes.
+
+### Dispatch, recepción y acciones
+
+- Las 20 consultas `cola/estado/<id>.json` (12 IDs del lote 5–7 nov, siete proyectos 21–23 nov y robot) devolvieron 404. Todos conservan `RECEPCION_GROK_NO_CONFIRMADA`.
+- Los 19 storyboards de proyectos siguen en `proyectos/<id>/`, sin copia plana promovida. Son `NOT_DISPATCHABLE_NOT_IN_QUEUE`.
+- El robot está anidado en `cola/entrada/<id>/storyboard.json`; el workflow usa `cola/entrada/*.json` y `find -maxdepth 1`, por lo que es `NOT_DISPATCHABLE_POR_SELECTOR`. `scripts/procesar_cola.py` admite rutas anidadas, pero no se invocó.
+- El workflow no ejecuta `validar_storyboard.py --check-doi`, ni comprueba `narrative_qa`, conflicto de slot o producción previa antes del webhook; solo valida sintaxis JSON. Es una brecha de defensa en profundidad si alguien coloca manualmente un JSON plano en cola. No se modificó ni disparó el workflow.
+- El intento de listar el historial de Actions del workflow mediante el conector devolvió `HTTP 400: GitHub Fetch URL is not an allowed public GitHub repository or search endpoint`; no se infiere ausencia de ejecuciones. No se consultaron valores de secretos ni se declararon faltantes.
+- CodeQL del commit feature `1bc4e1ba`: ambos jobs SUCCESS. PR #15 continúa OPEN; Semgrep run `45004335607` mantiene 26 hallazgos activos y FAILURE. El clon local de solo lectura falló con `Could not resolve host: github.com`; no se ejecutó la suite de ese PR. PR #3 sigue OPEN/DRAFT/dirty; PR #14 sigue sin PASS narrativo. Issue #11 permanece OPEN con etiqueta `hecho`.
+
+### Radar y fuentes del corte
+
+El investigador completó el radar `775a76aadd34848aa01f247e88c68cecd9367989`: cinco candidatos del 18–22 nov; los cinco DOI permanecen `PENDING_RESOLVER`. Los cinco enlaces DOI consultados directamente devolvieron `URL ... is not accessible via this tool`; no se declara verificación Crossref/resolvedor. El candidato del 22-nov no se usa en 23:30 porque no tiene cartografía exacta verificable. No se creó storyboard.
+
+Google Trends oficial México, últimas 24 h, se abrió como respaldo: 263 tendencias, 25 por página; la primera página está dominada por fútbol/entretenimiento. `superluna` (2 mil+, +1.000 %) y `desierto de Atacama` (1 mil+, +200 %) son tendencias de búsqueda, no evidencia de un hallazgo científico nuevo. Fuente: https://trends.google.com/trending?geo=MX&hl=es
+
+El aviso oficial de Page Insights se verificó: la referencia del endpoint muestra Graph API v27.0 y anuncia deprecaciones para 15-jun-2026; la página detallada solo lista 15-jun-2025, 15-nov-2025 y 14-mar-2024; el blog enlazado devolvió HTTP 429. Se mantiene la discrepancia documental en `INVESTIGACION_API_META_Y_GOOGLE_TRENDS.md §9.11`; no se cambiaron integraciones.
+
+**Cierre:** no se promovió ni redispatchó contenido, no se generaron medios, no se modificaron `data/*.json`, main, estados Grok, programación, secretos ni permisos. El radar vigente queda con cinco candidatos y 23:30 `PENDING_SOURCE`; los conflictos de main quedan documentados para decisión, sin cancelaciones.
