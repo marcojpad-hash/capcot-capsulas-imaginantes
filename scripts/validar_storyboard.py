@@ -6,26 +6,33 @@ Uso:
   python3 scripts/validar_storyboard.py salidas/AAAA-MM-DD_slug/storyboard.json --check-doi
 La etapa de preproducción no requiere ni acepta rutas de assets inexistentes.
 """
+import http.client
 import json
 import os
 import re
 import sys
-import urllib.request
+from urllib.parse import quote
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ARC = ["hook_medias_res", "desarrollo", "cierre_historia", "reflexion_o_pregunta"]
 VOICE = {"engine": "edge-tts", "voice_id": "es-MX-JorgeNeural", "language": "es-MX", "rate": "+7%", "pitch": "-2Hz"}
 
 def check_doi(doi):
+    """Consulta Crossref por HTTPS fijo; el DOI nunca controla host ni esquema."""
+    if not isinstance(doi, str) or not re.fullmatch(r"10\\.\\d{4,9}/[^\\s?#\\\\]+", doi):
+        return False
+    connection = None
     try:
-        req = urllib.request.Request(
-            "https://api.crossref.org/works/" + doi,
-            headers={"User-Agent": "capcot-validador/2.0"}
-        )
-        with urllib.request.urlopen(req, timeout=20) as r:
-            return r.status == 200
+        connection = http.client.HTTPSConnection("api.crossref.org", timeout=20)
+        path = "/works/" + quote(doi, safe="/-._;()")
+        connection.request("GET", path, headers={"User-Agent": "capcot-validador/2.0"})
+        response = connection.getresponse()
+        return response.status == 200
     except Exception:
         return False
+    finally:
+        if connection is not None:
+            connection.close()
 
 def words(text):
     return re.findall(r"[A-Za-zÁÉÍÓÚÜÑáéíóúüñ0-9]+(?:['’.-][A-Za-zÁÉÍÓÚÜÑáéíóúüñ0-9]+)*", text or "")
