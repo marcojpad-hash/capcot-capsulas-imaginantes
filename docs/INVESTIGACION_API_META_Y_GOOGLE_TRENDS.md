@@ -452,3 +452,34 @@ La documentación oficial continúa invitando a solicitar acceso alfa limitado y
 La página canónica del changelog, la referencia Page Insights, la guía de Instagram Insights, el changelog Instagram y la documentación de Google Trends fueron legibles. La página detallada de cambios v27.0 devolvió error 500/no accesible desde esta herramienta; por ello no se atribuyen cambios específicos de endpoint a v27.0 que no se hayan leído en el changelog detallado.
 
 **Acción:** actualización documental únicamente. No se cambiaron adaptadores, conectores, versiones configuradas, OAuth, permisos ni credenciales; no se realizaron llamadas autenticadas ni operaciones de publicación.
+
+
+## 9.11. Aviso de deprecación de Page Insights con detalle no reconciliado (corte 2026-11-22)
+
+### Observación en documentación oficial
+
+La referencia vigente del endpoint Page Insights muestra Graph API v27.0 y añade un aviso: varias métricas de Page Insights se deprecarían para todas las versiones antes del **15 de junio de 2026**; al llamar una métrica retirada, la API devuelve un error de métrica inválida.
+
+- Referencia del endpoint: https://developers.facebook.com/docs/graph-api/reference/insights
+- Página enlazada de métricas deprecadas: https://developers.facebook.com/documentation/pages-api/platforminsights/page/deprecated-metrics
+- Entrada de blog enlazada desde la referencia: https://developers.facebook.com/blog/post/2026/02/18/introducing-graph-api-v25-and-marketing-api-v25/
+
+### Discrepancia comprobada
+
+La página detallada enlazada no ofrece una lista identificable con fecha 15-jun-2026. En su contenido visible enumera:
+- deprecaciones con fecha 15-jun-2025, incluidas métricas de impresiones únicas y sus alternativas;
+- deprecaciones con fecha 15-nov-2025, incluidas `page_fans` y varias métricas `page_impressions*` / `post_impressions*`;
+- un grupo anterior con fecha 14-mar-2024.
+
+La entrada de blog enlazada devolvió HTTP 429 en esta consulta, por lo que no se pudo contrastar el detalle. No se infiere que las métricas de las listas de 2025 sean las mismas del aviso 2026 ni se inventa una lista adicional.
+
+### Consecuencia operativa para CAPCOT
+
+1. Mantener el registro de métricas con nombre exacto, endpoint y versión de Graph API.
+2. Si una consulta devuelve error de métrica inválida, registrar esa métrica como no disponible/deprecada en esa respuesta; **no convertir el error en cero** ni sustituirla silenciosamente por otra.
+3. Usar las alternativas que Meta enumera explícitamente para las deprecaciones documentadas (por ejemplo, `page_total_media_view_unique`, `page_follows`, `page_media_view` y `post_media_view`) solo después de verificar que la métrica y el breakdown requerido están disponibles para el endpoint, versión, tipo de publicación y permisos aplicables.
+4. No cambiar adaptadores, permisos, OAuth ni versiones de integración a partir del aviso genérico de 2026 mientras la lista exacta siga sin reconciliarse.
+
+### Estado
+
+`DOCUMENTACION_OFICIAL_CON_DISCREPANCIA`. Hallazgo nuevo respecto del corte anterior, documentado sin inferir una deprecación específica ni afirmar que se ejecutó una llamada de API. La discrepancia Graph API v27.0 / tabla heredada v26.0 ya registrada en §9.10 no cambia en este corte. Instagram Insights no presenta una entrada nueva de changelog posterior al 30-jul-2026 y Google Trends API continúa en alfa limitada; no se realizaron cambios de integración.
