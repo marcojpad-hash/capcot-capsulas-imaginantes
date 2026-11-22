@@ -714,3 +714,32 @@ Se respetaron las exclusiones expresas: slots 23:30 de “dato del día” dentr
 ### Estado
 `VERIFICADO`: movimiento de Ratas Topo, hashes de destino, ausencia de paths originales, inventario de 88 storyboards, ausencia global de estados Grok, notas de conflicto en Voyager/Yubarta y corrección del radar 22-nov.
 `PENDIENTE`: resolver DOI de Fentale/Bao/biodiversidad, completar fuentes del suplemento, obtener acuses Grok observables, validar estructura mediante el script real y resolver los conflictos de slots en main. No hay autorización para redispatchar ni para modificar main.
+
+---
+
+## 22. Revalidación posterior — 2026-11-21, 18:10–18:20 CDMX
+
+### Inventario, workflow y Robot
+
+- Relectura del árbol en HEAD feature `d596fa260a2b34096240c8a76b0e9265381d39bb`: 88 `storyboard.json` bajo 101 directorios de `proyectos/`; 12 IDs del lote 5–7 nov siguen presentes. `cola/estado/` continúa sin archivos; la recepción Grok de los 88 proyectos sigue `RECEPCION_GROK_NO_CONFIRMADA`.
+- La única carpeta de entrada es el paquete anidado de Robot 09-nov; no hay `cola/entrada/*.json` plano. El workflow `.github/workflows/capcot-grok-dispatch.yml` filtra `cola/entrada/*.json` y su búsqueda manual usa `find -maxdepth 1 -type f -name '*.json'`. Robot es `NOT_DISPATCHABLE` por ruta. Su `ESTADO_EJECUCION.md` ya contiene `PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR`, `MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO` y `RECEPCION_GROK_NO_CONFIRMADA`. Main conserva YouTube `ZG4iQgmWrLI`, `publishAt=2026-11-22T01:00:00Z` (21-nov 19:00 CDMX), más TikTok/Facebook. No cancelar ni redispatchar.
+- Ratas Topo: nueve blobs siguen verificados en `cola/bloqueados/`; ninguno permanece en entrada. No se generaron medios.
+
+### Cruce de slots y proyecto 23-nov
+
+- 22-nov: el plan de producción de main `docs/briefs/2026-11-21_PRODUCCION_SEMANA_23-28nov.md` nombra Salem 07:00, Gutenberg 13:30 y Ada 17:00 como slots previos. No hay IDs de plataforma ni `programacion.json` individual para esos tres; por eso el conflicto es **de plan entre ramas**, no publicación comprobada. Se conserva el hold `CONFLICTO_DE_SLOT_ENTRE_RAMAS`; no se reasigna ni se inventan IDs.
+- `2026-11-23_tropical-biodiversity-turnover`: slot feature 13:30. Main solo tiene nudillos a 07:00 (`tmOji99zGPE`, `publishAt=2026-11-23T13:00:00Z)); no hay conflicto para 13:30. La QA actual, leída de vuelta, es FAIL/82, siete checks true y flag única `STAKES_NO_EXPLICADOS`. No se repitió ni cambió la QA.
+- SRC-001: Nature publica `10.1038/s41586-026-11298-6` en su página editorial, pero `doi_verification_status` sigue `PENDIENTE_RESOLVEDOR`; la consulta directa Crossref/doi.org devolvió `Internal Error`/URL no accesible. SRC-002 continúa `PENDING_SOURCE`: no se verificó el suplemento primario ESM Table S1. Se corrigió únicamente `validation_notes`, que afirmaba falsamente que ambos DOI estaban verificados por Crossref. No se cambió narración, claims, QA ni decisión editorial; no promover.
+
+### Actions de seguridad y validación
+
+- CAPCOT main commit escaneado: `b225066a4f3e8b3bc06195b29d6c490b9e6404ce`.
+- Semgrep run [#44959731844](https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/actions/runs/44959731844): FAILURE, 32 findings bloqueantes; el paso de SARIF fue SKIPPED y no hay artefacto para atribuir rutas/reglas individuales. No se inventa triage.
+- Gitleaks run [#44959731773](https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/actions/runs/44959731773): SUCCESS.
+- Validador de preproducción Kuroshio en feature: run `44951621909`, SUCCESS. No se disparó ningún workflow manual, no se enviaron payloads, no se leyeron secretos ni se modificó `data/*.json`.
+
+### Resultado
+
+`VERIFICADO`: rutas y filtros del dispatch, estado preexistente de Robot, publicación main, 22-nov como conflicto de plan, slot libre 13:30 de 23-nov, QA actual de Biodiversidad, estado pendiente de SRC-001/SRC-002 y resultados de Actions.
+
+`PENDIENTE`: recuperar acceso al resolver Crossref/doi.org y al suplemento primario SRC-002; obtener SARIF o listado de findings de Semgrep para triage; recibir estados Grok individuales. No hay promoción ni redispatch autorizado.

@@ -387,9 +387,9 @@
   "estado": "BORRADOR_EN_PROYECTOS_NO_APTO_PARA_PROMOCION",
   "production_mode": "storyboard_only",
   "validation_notes": [
-    "Borrador del investigador: narrative_qa no se crea en esta fase.",
-    "No se ejecutó el validador estructural; la auditoría narrativa debe ser una pasada separada.",
-    "DOI de SRC-001 y SRC-002 verificados mediante Crossref; no se ha creado entrada de cola ni estado Grok."
+    "Borrador redactado en proyectos; la revisión narrativa independiente se registra en narrative_qa y no se crea por el investigador.",
+    "No se ejecutó el validador estructural ni validar_storyboard.py --check-doi. La lectura narrativa en frío está registrada por separado; las compuertas estructural y DOI siguen pendientes.",
+    "SRC-001: la página editorial de Nature publica el DOI 10.1038/s41586-026-11298-6, pero el estado del resolver sigue PENDIENTE_RESOLVEDOR. SRC-002 permanece PENDING_SOURCE y PENDIENTE_RESOLVEDOR; no se verificó ESM Table S1 primaria. No hay entrada de cola ni estado Grok."
   ],
   "linea_tematica_provisional": "Naturaleza / biodiversidad; subtema ecología de paisajes tropicales.",
   "approved_assets": [],
