@@ -352,3 +352,34 @@ El proyecto `2026-11-22_genes-estatura-etapas` ya existe para el slot 23:30; por
 El DOI figura en el JSON como `VERIFICADO_CROSSREF` y el corte previo de este radar registra respuesta Crossref `status=ok`; la apertura del API/resolvedor no estuvo disponible en el lector de este run, así que no se declara una nueva comprobación. La fuente editorial primaria sí identifica la publicación del 22-nov-2026.
 
 Main contiene un proyecto distinto, Pulsar, a las 13:30 CDMX; no ocupa 23:30. Su cola está anidada y su programación/archivo declarado impiden redispatch, pero no constituye conflicto de slot para genética de estatura. No hay una segunda versión autorizada para 23:30.
+
+## Reconsulta vespertina de feeds — 22-nov-2026
+
+### Resultado de ingesta
+
+Se revisaron las diez URL definidas en `scripts/tendencias.py` mediante el lector web disponible. Esta herramienta no procesa XML/RSS como contenido navegable; los errores observados no demuestran por sí solos que los servidores RSS estén caídos:
+
+- ScienceDaily ciencia, salud y espacio: `400 Unsupported content-type: application/xml`.
+- Phys.org: `400 Unsupported content-type: text/xml`.
+- NASA News Release: `400 Unsupported content-type: application/rss+xml`.
+- ESA Space Science RSS: `404 Not Found`.
+- Nature RSS: `400 Unsupported content-type: application/rss+xml`.
+- EurekAlert y SINC: URL no accesible mediante el lector.
+- UNAM Global: `400 Unsupported content-type: application/rss+xml`.
+- Google Trends RSS México: `Internal Error: URL is not accessible via this tool`.
+
+La descarga directa de prueba también falló en el entorno disponible (`download failed`). No se atribuye el fallo a DNS, a una cuota ni a la disponibilidad real de cada proveedor. La ejecución de `scripts/tendencias.py` no quedó demostrada.
+
+### Respaldo oficial y candidatos
+
+- **Nature Communications, genética de estatura:** DOI `10.1038/s41467-026-79465-x`, publicado el 22-nov. Ya está documentado en `2026-11-22_genes-estatura-etapas`; no crear duplicado. Su slot 23:30 ya tiene storyboard.
+- **Bao, fusión estelar en Andrómeda:** comunicado institucional STScI/NASA del 18-nov. Es fuente primaria institucional, pero no cumple la fecha del dato del día 22-nov.
+- **BepiColombo, inserción orbital en Mercurio:** Reuters confirma el evento el 22-nov y reporta un apagado anticipado de propulsores por software. La página oficial de ESA consultada todavía conserva el calendario previo y no ofrece confirmación posterior al evento. Clasificación `PENDING_SOURCE`; no usar Reuters como sustituto de fuente primaria.
+- **APOD de Juno/Júpiter del 22-nov:** la imagen corresponde a una observación de 2018; no es un descubrimiento nuevo. Descartado para el dato del día.
+- **Teleconexiones oceánicas y clima invernal:** artículo de Scientific Reports publicado el 14-nov; queda como candidato de investigación de fondo, no para un slot que exija novedad del mismo día.
+
+Google Trends México sí permitió consultar la página oficial de tendencias: 263 registros, 25 visibles en la primera página. La muestra está dominada por fútbol, deportes y entretenimiento; no aporta una señal científica pertinente para seleccionar un tema.
+
+### Decisión
+
+No apareció un segundo hallazgo con fuente primaria del 22-nov que justifique otro storyboard. Se conserva el único borrador existente para 23:30, sin crear duplicado, sin promoverlo y sin generar medios. La reconsulta distingue errores del lector de fallos reales del proveedor.
