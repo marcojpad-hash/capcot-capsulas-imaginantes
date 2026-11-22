@@ -258,3 +258,12 @@ Entrega: `cola/entrada/2026-11-01_dato-cambio-horario-corazon/` con `storyboard.
 - **Tarea:** verifica tú mismo URL/DOI primario de Fentale (https://www.nature.com/articles/s41561-026-02137-4) y cópialo a `cola/entrada/2026-11-21_dato-<slug>/` (storyboard.json, fuentes.md, ESTADO_EJECUCION.md = PREPARADO_PENDIENTE_REVISION_GROK) antes de 21:00 CDMX. Si no verificas, elige otro dato del 19–21 nov con fuente primaria. No inventes DOI ni cifras.
 - **Cuidado:** no afirmar que el magma produjo todo el metano (sin isótopos directos). 8 escenas, sin frames; penúltima = límite; última = giro + pregunta que atrape + sello «Esto fue Datos y ociosidades.». TT AI ON / FB OFF. Hashtags 3–5.
 - Sin frames, audio ni publicación. QA/montaje/publicación: Grok app.
+
+
+---
+## BRIEF HOY 2026-11-22 — slot 23:30 CDMX (sin paquete en cola/entrada a las 10:00)
+- **Estado:** no hay `cola/entrada/2026-11-22_dato-*`. Slots 07:00 Voyager y 17:00 Yubarta ocupados (NO reutilizar). 23:30 reservado a dato del día con fuente del mismo 22-nov (ver docs/briefs/2026-11-22_RADAR_CAPCOT.md).
+- **Tarea:** elige un dato publicado 20–22 nov con fuente primaria (URL/DOI que tú verifiques). Hecho usable en una frase llana, ancla científica, límite del estudio. No inventes DOI ni cifras. Evita Voyager/yubarta/BAO.
+- **Storyboard:** 8 escenas, sin frames. Penúltima = límite (120–170 car.); última = giro + pregunta que atrape (110–170 car.) + sello «Esto fue Datos y ociosidades.». Estructura distinta a «¿Sabías qué?».
+- **Entrega:** `cola/entrada/2026-11-22_dato-<slug>/` con storyboard.json, fuentes.md, ESTADO_EJECUCION.md = PREPARADO_PENDIENTE_REVISION_GROK antes de 21:00 CDMX. TT AI ON / FB OFF. Hashtags 3–5.
+- Sin frames, audio ni publicación. QA/montaje/publicación: Grok app.
