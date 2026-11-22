@@ -13,7 +13,7 @@
   "scene_total_seconds": 78,
   "cortinilla_seconds": 6,
   "scene_count": 8,
-  "word_count": 229,
+  "word_count": 231,
   "linea_tematica_provisional": "Actualidad",
   "audience": "Público general interesado en ciencia y salud",
   "occasion": "Dato del día; 22 de noviembre de 2026, 23:30 CDMX",
@@ -40,7 +40,7 @@
   "visual_identity": {
     "style_id": "papel_stop_motion",
     "style_name": "Stop-motion de papel",
-    "prompt_base": "papel stop-motion de recortes, capas de papel de construcción, sombras suaves de papel, textura mate, movimiento artesanal, composición vertical 9:16, sin texto generado dentro de la imagen",
+    "prompt_base": "flat paper cut-out stop-motion animation frame, colored construction paper pieces, slight shadows, top-down view, vertical 9:16, no text",
     "palette": "papeles mate en crema, rojo óxido, verde salvia y azul petróleo",
     "texture": "papel de construcción recortado, bordes limpios y sombras suaves",
     "lighting": "luz cenital suave",
@@ -158,7 +158,7 @@
         "Tus genes no pesan igual"
       ],
       "visual_description": "Una silueta infantil de papel atraviesa una regla de altura sin números; tres capas de color se desplazan detrás de ella, como señales que toman turnos.",
-      "image_prompt": "papel stop-motion de recortes, capas de papel de construcción, sombras suaves de papel, textura mate, movimiento artesanal, composición vertical 9:16, sin texto generado dentro de la imagen, silueta infantil de papel recortado creciendo frente a una regla sin números, tres capas de papel de colores se desplazan detrás como señales biológicas, composición cenital, sin letras ni cifras",
+      "image_prompt": "flat paper cut-out stop-motion animation frame, colored construction paper pieces, slight shadows, top-down view, vertical 9:16, no text, silueta infantil de papel recortado creciendo frente a una regla sin números, tres capas de papel de colores se desplazan detrás como señales biológicas, composición cenital, sin letras ni cifras",
       "ambiente": "Pulso orgánico suave, papel rozando sobre mesa",
       "sfx": [
         "deslizamiento de papel",
@@ -186,7 +186,7 @@
         "574,580 mediciones"
       ],
       "visual_description": "Una pila de fichas de papel se ordena en una línea de crecimiento; dos carpetas rotuladas Noruega y UK Biobank se conectan con una línea de datos.",
-      "image_prompt": "papel stop-motion de recortes, capas de papel de construcción, sombras suaves de papel, textura mate, movimiento artesanal, composición vertical 9:16, sin texto generado dentro de la imagen, fichas de papel apiladas que forman una curva de crecimiento, dos carpetas abstractas Noruega y UK Biobank conectadas por una línea, sin texto legible, sin números inventados",
+      "image_prompt": "flat paper cut-out stop-motion animation frame, colored construction paper pieces, slight shadows, top-down view, vertical 9:16, no text, fichas de papel apiladas que forman una curva de crecimiento, dos carpetas abstractas Noruega y UK Biobank conectadas por una línea, sin texto legible, sin números inventados",
       "capa": {
         "tipo": "dato",
         "valor": "574,580",
@@ -223,7 +223,7 @@
         "No son sitios de reclutamiento"
       ],
       "visual_description": "Mapa sobrio del norte de Europa y Reino Unido con dos puntos institucionales; una nota visual aclara que no son ubicaciones de participantes.",
-      "image_prompt": "papel stop-motion de recortes, capas de papel de construcción, sombras suaves de papel, textura mate, movimiento artesanal, composición vertical 9:16, sin texto generado dentro de la imagen, mapa de papel del norte de Europa y Reino Unido con dos pines institucionales en Oslo y Manchester, etiquetas añadidas en postproducción, no representar domicilios ni participantes, sin texto generado",
+      "image_prompt": "flat paper cut-out stop-motion animation frame, colored construction paper pieces, slight shadows, top-down view, vertical 9:16, no text, mapa de papel del norte de Europa y Reino Unido con dos pines institucionales en Oslo y Manchester, etiquetas añadidas en postproducción, no representar domicilios ni participantes, sin texto generado",
       "capa": {
         "tipo": "mapa",
         "titulo": "Instituciones de referencia del estudio",
@@ -290,7 +290,7 @@
         "Tres grupos temporales"
       ],
       "visual_description": "Tres capas de papel se activan en secuencia: primera infancia, niñez y crecimiento de toda la vida; cada una ilumina una curva distinta.",
-      "image_prompt": "papel stop-motion de recortes, capas de papel de construcción, sombras suaves de papel, textura mate, movimiento artesanal, composición vertical 9:16, sin texto generado dentro de la imagen, tres capas de papel recortado que se activan en secuencia para representar primera infancia, niñez y crecimiento de toda la vida, curvas distintas sin números ni texto",
+      "image_prompt": "flat paper cut-out stop-motion animation frame, colored construction paper pieces, slight shadows, top-down view, vertical 9:16, no text, tres capas de papel recortado que se activan en secuencia para representar primera infancia, niñez y crecimiento de toda la vida, curvas distintas sin números ni texto",
       "ambiente": "Ritmo de capas que entran una tras otra",
       "sfx": [
         "tres golpes suaves",
@@ -317,7 +317,7 @@
         "106 proteínas asociadas"
       ],
       "visual_description": "Pequeñas piezas de papel forman una nube de proteínas; tres piezas resaltan como nodos conectados a una curva de crecimiento.",
-      "image_prompt": "papel stop-motion de recortes, capas de papel de construcción, sombras suaves de papel, textura mate, movimiento artesanal, composición vertical 9:16, sin texto generado dentro de la imagen, 106 pequeñas piezas de papel como proteínas alrededor de una curva de crecimiento, tres nodos resaltados para IGF1 IGF2 IGFBP3, sin letras ni cifras generadas",
+      "image_prompt": "flat paper cut-out stop-motion animation frame, colored construction paper pieces, slight shadows, top-down view, vertical 9:16, no text, 106 pequeñas piezas de papel como proteínas alrededor de una curva de crecimiento, tres nodos resaltados para IGF1 IGF2 IGFBP3, sin letras ni cifras generadas",
       "capa": {
         "tipo": "dato",
         "valor": "106",
@@ -354,7 +354,7 @@
         "No un destino individual"
       ],
       "visual_description": "Dos rutas de papel —crecimiento fetal y estatura prepuberal— convergen en un símbolo abstracto de salud metabólica; la conexión aparece como resultado estadístico, no como flecha determinista.",
-      "image_prompt": "papel stop-motion de recortes, capas de papel de construcción, sombras suaves de papel, textura mate, movimiento artesanal, composición vertical 9:16, sin texto generado dentro de la imagen, dos rutas de papel desde crecimiento fetal y estatura prepuberal hacia un símbolo abstracto de salud metabólica, conexión estadística punteada, no mostrar causalidad determinista ni diagnóstico",
+      "image_prompt": "flat paper cut-out stop-motion animation frame, colored construction paper pieces, slight shadows, top-down view, vertical 9:16, no text, dos rutas de papel desde crecimiento fetal y estatura prepuberal hacia un símbolo abstracto de salud metabólica, conexión estadística punteada, no mostrar causalidad determinista ni diagnóstico",
       "ambiente": "Pulso grave y controlado, sin alarma",
       "sfx": [
         "dos trazos que convergen",
@@ -381,7 +381,7 @@
         "Población ≠ individuo"
       ],
       "visual_description": "Una silueta individual queda fuera de una nube de datos poblacionales; el gráfico se atenúa y permanece una línea de evidencia con límites visibles.",
-      "image_prompt": "papel stop-motion de recortes, capas de papel de construcción, sombras suaves de papel, textura mate, movimiento artesanal, composición vertical 9:16, sin texto generado dentro de la imagen, una silueta individual separada de una nube de datos poblacionales de papel, gráfico tenue con límites visibles, sin símbolos médicos ni diagnóstico",
+      "image_prompt": "flat paper cut-out stop-motion animation frame, colored construction paper pieces, slight shadows, top-down view, vertical 9:16, no text, una silueta individual separada de una nube de datos poblacionales de papel, gráfico tenue con límites visibles, sin símbolos médicos ni diagnóstico",
       "ambiente": "El pulso baja y deja espacio a la voz",
       "sfx": [
         "papel que se detiene",
@@ -408,7 +408,7 @@
         "Importa cuándo creces"
       ],
       "visual_description": "La regla de papel de la apertura se transforma en tres capas superpuestas; la silueta termina su recorrido y la composición cierra el arco visual.",
-      "image_prompt": "papel stop-motion de recortes, capas de papel de construcción, sombras suaves de papel, textura mate, movimiento artesanal, composición vertical 9:16, sin texto generado dentro de la imagen, la regla de papel de la apertura se transforma en tres capas superpuestas alrededor de una silueta infantil, cierre visual circular, sin texto generado",
+      "image_prompt": "flat paper cut-out stop-motion animation frame, colored construction paper pieces, slight shadows, top-down view, vertical 9:16, no text, la regla de papel de la apertura se transforma en tres capas superpuestas alrededor de una silueta infantil, cierre visual circular, sin texto generado",
       "ambiente": "Resolución cálida y breve",
       "sfx": [
         "tres capas encajando",
