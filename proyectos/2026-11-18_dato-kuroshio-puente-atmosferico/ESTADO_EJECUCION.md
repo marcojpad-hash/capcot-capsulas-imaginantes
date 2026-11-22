@@ -79,3 +79,15 @@ Ninguno de los dos comandos incluyó `--check-doi`. Estos runs confirman la vali
 - Comparación de blobs: storyboard del commit y actual = `2046152ade90fffaf9527d180e13cc5f6009fb60`; workflow = `e8151c8eb1ee5a0893f3f800f4c625887427ecde`; validador del run = `28e3d600431b92d7bd0eca94f34d4ff5867c9cbf`; validador actual = `50335bb620ea5b0fad395af71c0f0c764cf9b067`.
 - El validador actual cambió: encapsula la validación de puntos y añade coordenadas ecuatoriales RA/Dec. El mapa de este storyboard usa regiones terrestres delimitadas (35–45°N; 140–170°E y 35–45°N; 50–80°W), no puntos celestes; el cambio observado no parece afectar este caso, pero no existe una ejecución CI con el hash actual del validador.
 - Estado conservado: `BORRADOR_EN_PROYECTOS_NO_APTO_PARA_PROMOCION`. La validación del run posterior acredita la versión anterior del validador; no acredita Crossref ni elimina el bloqueo DOI. No se copia a cola ni se emite handoff.
+
+
+## Actualización de auditoría — 22-nov-2026 (run #11; supersede la nota de obsolescencia del 21-nov)
+
+- Workflow: `CAPCOT — validar preproducción Kuroshio`; run `44951621909`, job `136990599397`, resultado `success`, creado `2026-11-21T21:27:24Z`.
+- Commit ejecutado: `ed8659ec7184d51cdd84d3575a5ac57c1595ce2c`.
+- Comando exacto: `python scripts/validar_storyboard.py proyectos/2026-11-18_dato-kuroshio-puente-atmosferico/storyboard.json`.
+- Paso **Validar storyboard textual**: `OK`, salida 0. Paso de expediente: `Expediente textual íntegro; medios no generados; publicación no autorizada.`.
+- Comparación de blobs entre el commit del run y la rama actual al corte de esta actualización: storyboard `2046152ade90fffaf9527d180e13cc5f6009fb60`, validador `50335bb620ea5b0fad395af71c0f0c764cf9b067`, workflow `e8151c8eb1ee5a0893f3f800f4c625887427ecde`; los tres coinciden. Por tanto, el run sí acredita la validación estructural del storyboard con el validador vigente.
+- El comando **no** incluyó `--check-doi`; no acredita Crossref. El DOI `10.1038/s41561-026-02139-2` permanece `PENDIENTE_RESOLVEDOR` y bloquea la promoción.
+- `cola/estado/2026-11-18_dato-kuroshio-puente-atmosferico.json` sigue sin existir: `RECEPCION_GROK_NO_CONFIRMADA`.
+- Estado conservado: `BORRADOR_EN_PROYECTOS_NO_APTO_PARA_PROMOCION`. No copiar a cola ni emitir handoff.
