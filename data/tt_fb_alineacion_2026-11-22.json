@@ -1,0 +1,89 @@
+{
+  "fecha_cdmx": "2026-11-22",
+  "hora_log": "2026-11-22 ~08:25 America/Mexico_City",
+  "rutina": "CAPCOT publicar TikTok (misma parrilla)",
+  "cuenta_tiktok": "@datosyociosidades",
+  "pagina_facebook": "Datos y ociosidades",
+  "reserva_huevo_intacta": {
+    "tiktok_id": "7710703730752015668",
+    "tiktok_url": "https://www.tiktok.com/@datosyociosidades/video/7710703730752015668",
+    "hora_cdmx": "2026-11-22 13:00",
+    "zona_ui": "GMT-6 Mexico City",
+    "facebook": "programado domingo 22-nov 13:00 Público"
+  },
+  "publicados_al_momento": [
+    {
+      "tema": "salem",
+      "yt_id": "N21TIYdONZo",
+      "slot_yt_cdmx": "2026-11-22 07:00",
+      "tiktok_url": "https://www.tiktok.com/@datosyociosidades/video/7710990697033108742",
+      "tiktok_id": "7710990697033108742",
+      "facebook_url": "https://www.facebook.com/reel/1954427242208863",
+      "facebook_content_id": "122112012195518983",
+      "tt_etiqueta_ia": true,
+      "fb_etiqueta_ia": false,
+      "portada": "primer frame con título"
+    },
+    {
+      "tema": "tejon",
+      "yt_id": "6XCBYrlO4Eg",
+      "slot_yt_cdmx": "2026-11-21 07:00",
+      "tiktok_url": "https://www.tiktok.com/@datosyociosidades/video/7710991265910820117",
+      "tiktok_id": "7710991265910820117",
+      "facebook_url": "https://www.facebook.com/reel/1735699911290179",
+      "facebook_content_id": "122112013155518983",
+      "tt_etiqueta_ia": true,
+      "fb_etiqueta_ia": false,
+      "portada": "primer frame con título",
+      "nota": "atrasado; TT 21-nov 07:00 era pulpo"
+    },
+    {
+      "tema": "colon",
+      "yt_id": "RwTTwSNGm10",
+      "slot_yt_cdmx": "2026-11-21 23:30",
+      "tiktok_url": "https://www.tiktok.com/@datosyociosidades/video/7710991947711778069",
+      "tiktok_id": "7710991947711778069",
+      "facebook_url": "https://www.facebook.com/reel/1463422276006785",
+      "facebook_content_id": "122112013461518983",
+      "tt_etiqueta_ia": true,
+      "fb_etiqueta_ia": false,
+      "portada": "primer frame con título",
+      "nota": "atrasado del dato 21-nov 23:30"
+    }
+  ],
+  "pendientes_hoy_sin_mp4_original_en_caja": [
+    {
+      "tema": "gutenberg",
+      "yt_id": "YXndoPSSeaY",
+      "hora_cdmx": "2026-11-22 13:30",
+      "yt": "private+publishAt"
+    },
+    {
+      "tema": "ada",
+      "yt_id": "Sc0cX9ejxuw",
+      "hora_cdmx": "2026-11-22 17:00",
+      "yt": "private+publishAt"
+    },
+    {
+      "tema": "webb",
+      "yt_id": "BIwG7kgaLic",
+      "hora_cdmx": "2026-11-22 19:00",
+      "yt": "private+publishAt",
+      "nota": "duración API PT32S"
+    }
+  ],
+  "nota_oxoboranos_1430": "B-75KkHAVDo es resubida YT del mismo tema ya publicado en TT 21-nov 13:30 (7708179212145872134); no se volvió a subir a TT/FB.",
+  "cleopatra_2100": {
+    "estado": "programado",
+    "yt_id": "I8n_5nnUlbI",
+    "hora_cdmx": "2026-11-22 21:00",
+    "tiktok_url": "https://www.tiktok.com/@datosyociosidades/video/7710997085197192466",
+    "tiktok_id": "7710997085197192466",
+    "tiktok_ui": "22-nov 9:00 PM (GMT-6) Mexico City",
+    "facebook_post_id": "1473122701620334",
+    "facebook_ui": "22-nov 21:00 America/Mexico_City, Público",
+    "tt_etiqueta_ia": true,
+    "fb_etiqueta_ia": false,
+    "portada": "portada.jpg / frame 0 con título"
+  }
+}
