@@ -1,0 +1,143 @@
+{
+  "project_id": "2026-11-22_pulsar-criptografia",
+  "title": "El pulsar que un algoritmo de criptografía encontró en horas",
+  "language": "es-MX",
+  "aspect_ratio": "9:16",
+  "target_duration_seconds": 85,
+  "trend_source": {
+    "tipo": "noticia_cientifica",
+    "medio": "Physical Review Letters / Phys.org",
+    "url": "https://phys.org/news/2026-11-cryptography-method-elusive-pulsars.html",
+    "estudio_doi": "10.1103/vlt2-xzgk",
+    "fecha_publicacion": "2026-11-19",
+    "termino": "pulsar criptografía Fermi",
+    "fecha_consulta": "2026-11-22"
+  },
+  "estilo_id": "van_gogh",
+  "estilo_visual": "Noche estrellada (Van Gogh)",
+  "estructura": "historia",
+  "voice": {
+    "engine": "edge-tts",
+    "voice_id": "es-MX-JorgeNeural",
+    "rate": "+7%",
+    "pitch": "-2Hz",
+    "pad_seconds": 0.3,
+    "modo_pausas": "continuo"
+  },
+  "sources": [
+    {
+      "id": "SRC-001",
+      "cita_corta": "Pook-Kolb et al. (2026). Gamma-Ray Pulsar Discovery Using a Lattice-Based Method. Phys. Rev. Lett. 137, 211201.",
+      "url": "https://doi.org/10.1103/vlt2-xzgk",
+      "doi": "10.1103/vlt2-xzgk",
+      "accessed": "2026-11-22",
+      "supports": ["método de lattice de criptografía encuentra pulsar en 10 horas vs 600 años", "PSR J1622-7204 gira 261 veces por segundo", "datos de 15 años de Fermi-LAT"],
+      "ref_display": "Pook-Kolb et al. PRL 2026"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_001",
+      "arc": "hook_medias_res",
+      "duration_seconds": 10,
+      "narration": "Un faro cósmico giraba 261 veces por segundo y nadie lo veía. Hasta que un algoritmo de criptografía lo encontró en horas.",
+      "on_screen_text": "El faro que nadie veía",
+      "visual_description": "Swirling Van Gogh sky with a bright pulsar beam like a lighthouse.",
+      "image_prompt": "post-impressionist painting in the style of Van Gogh's Starry Night, swirling brushstrokes, deep blues and glowing yellows, vertical 9:16, a cosmic lighthouse neutron star pulsar sweeping beams of light across the starry sky, no text",
+      "source_ids": ["SRC-001"],
+      "asset_filename": "frames/scene_001.jpg",
+      "ambiente": "viento",
+      "sfx": ["viento"]
+    },
+    {
+      "id": "scene_002",
+      "arc": "desarrollo",
+      "duration_seconds": 12,
+      "narration": "El telescopio Fermi de la NASA escanea el cielo en rayos gamma desde 2008. En 15 años de datos públicos había cientos de señales sin explicar.",
+      "on_screen_text": "Fermi escanea el cielo",
+      "visual_description": "Fermi satellite in Van Gogh style orbiting Earth.",
+      "image_prompt": "post-impressionist painting in the style of Van Gogh's Starry Night, swirling brushstrokes, deep blues and glowing yellows, vertical 9:16, NASA Fermi telescope orbiting Earth scanning the sky for gamma rays, no text",
+      "source_ids": ["SRC-001"],
+      "asset_filename": "frames/scene_002.jpg",
+      "ambiente": "viento",
+      "sfx": ["motor"]
+    },
+    {
+      "id": "scene_003",
+      "arc": "desarrollo",
+      "duration_seconds": 12,
+      "narration": "Buscar un púlsar es adivinar velocidad, desaceleración y posición a la vez. El método viejo necesitaba cientos de años de cómputo.",
+      "on_screen_text": "Búsqueda imposible",
+      "visual_description": "Abstract lattice of points in swirling stars representing the search space.",
+      "image_prompt": "post-impressionist painting in the style of Van Gogh's Starry Night, swirling brushstrokes, deep blues and glowing yellows, vertical 9:16, high-dimensional lattice of glowing points in starry night sky representing mathematical search, no text",
+      "source_ids": ["SRC-001"],
+      "asset_filename": "frames/scene_003.jpg",
+      "ambiente": "viento",
+      "sfx": ["pluma"]
+    },
+    {
+      "id": "scene_004",
+      "arc": "desarrollo",
+      "duration_seconds": 12,
+      "narration": "Dotan Gazith y Barak Zackay convirtieron el problema en encontrar el vector más corto en una red de puntos, un truco de criptografía.",
+      "on_screen_text": "El truco de criptografía",
+      "visual_description": "Scientists looking at a geometric lattice.",
+      "image_prompt": "post-impressionist painting in the style of Van Gogh's Starry Night, swirling brushstrokes, deep blues and glowing yellows, vertical 9:16, two scientists examining a glowing geometric lattice of points against starry sky, no text",
+      "source_ids": ["SRC-001"],
+      "asset_filename": "frames/scene_004.jpg",
+      "ambiente": "viento",
+      "sfx": ["papel"]
+    },
+    {
+      "id": "scene_005",
+      "arc": "desarrollo",
+      "duration_seconds": 12,
+      "narration": "Con solo 10 horas de un procesador normal encontraron PSR J1622-7204. El método anterior había fallado tras el equivalente a 600 años.",
+      "on_screen_text": "10 horas vs 600 años",
+      "visual_description": "Laptop glowing with the discovery versus a huge old computer.",
+      "image_prompt": "post-impressionist painting in the style of Van Gogh's Starry Night, swirling brushstrokes, deep blues and glowing yellows, vertical 9:16, a small laptop finding a bright pulsar while old supercomputers sit dark, no text",
+      "source_ids": ["SRC-001"],
+      "asset_filename": "frames/scene_005.jpg",
+      "ambiente": "viento",
+      "sfx": ["campanas"]
+    },
+    {
+      "id": "scene_006",
+      "arc": "cierre_historia",
+      "duration_seconds": 10,
+      "narration": "Ahora pueden buscar púlsares en sistemas binarios, algo que antes era casi imposible sin conocer la órbita de antemano.",
+      "on_screen_text": "El siguiente paso: binarios",
+      "visual_description": "Two stars orbiting with a pulsar beam.",
+      "image_prompt": "post-impressionist painting in the style of Van Gogh's Starry Night, swirling brushstrokes, deep blues and glowing yellows, vertical 9:16, binary star system with a pulsar sweeping beams, swirling night sky, no text",
+      "source_ids": ["SRC-001"],
+      "asset_filename": "frames/scene_006.jpg",
+      "ambiente": "viento",
+      "sfx": ["olas"]
+    },
+    {
+      "id": "scene_007",
+      "arc": "reflexion_o_pregunta",
+      "duration_seconds": 10,
+      "narration": "¿Cuántos faros cósmicos siguen escondidos en datos abiertos? Esto fue Datos y ociosidades.",
+      "on_screen_text": "¿Cuántos más?",
+      "visual_description": "Vast starry sky with many faint beams waiting to be found.",
+      "image_prompt": "post-impressionist painting in the style of Van Gogh's Starry Night, swirling brushstrokes, deep blues and glowing yellows, vertical 9:16, vast starry night with multiple faint lighthouse beams from distant pulsars, no text",
+      "source_ids": ["SRC-001"],
+      "asset_filename": "frames/scene_007.jpg",
+      "ambiente": "viento",
+      "sfx": ["viento"]
+    }
+  ],
+  "cortinilla_fuentes": {
+    "duration_seconds": 6,
+    "titulo": "Fuentes",
+    "aviso": "Imágenes generadas con IA. Voz sintética. Audio sintetizado.",
+    "firma": "Datos y ociosidades · @datosyociosidades"
+  },
+  "export": {
+    "filename": "capsula.mp4",
+    "resolution": "1080x1920",
+    "fps": 30,
+    "loudness_lufs": -14
+  }
+}
