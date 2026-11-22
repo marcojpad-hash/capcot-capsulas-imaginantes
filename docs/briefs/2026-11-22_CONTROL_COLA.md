@@ -21,9 +21,9 @@
 | `2026-11-22_voyager-1-un-dia-luz` | 22 nov 07:00 | FAIL 83 | Falta `prompt_base` y `map`; main ocupa Salem |
 | `2026-11-22_bao-estrella-fusion-andromeda` | 22 nov 13:30 | FAIL 84 | Falta `prompt_base` y `map`; main ocupa Gutenberg |
 | `2026-11-22_yubarta-genoma-soplo` | 22 nov 17:00 | PASS 90 | Falta `prompt_base` y `map`; main ocupa Ada y 17:00 sigue en prueba |
-| `2026-11-23_tropical-biodiversity-turnover` | 23 nov 13:30 | FAIL 82 | Falta `prompt_base` y `map`; `SRC-002=PENDING_SOURCE`; main ocupa Rosetta |
+| `2026-11-23_tropical-biodiversity-turnover` | 23 nov 13:30 | FAIL 82 | `visual_identity.prompt_base` presente; escena 2 incluye capa `mapa` con dos coordenadas; `SRC-002=PENDING_SOURCE`; main ocupa Rosetta |
 
-Los siete tienen 8 escenas y 171–208 palabras. Los seis campos narrativos por escena están presentes. No se repitió QA ni se reescribieron narraciones. Los PASS existentes no compensan la falta de mapa y `prompt_base`.
+Los siete tienen 8 escenas y 171–208 palabras. Los seis campos narrativos por escena están presentes. No se repitió QA ni se reescribieron narraciones. **Corrección de auditoría:** la afirmación general de que los siete carecen de `prompt_base` y `map` no está sustentada. La lectura directa de `2026-11-23_tropical-biodiversity-turnover/storyboard.json` (blob `a9faa180671c3bedbf03535919534ca623ac0c45`) confirma `visual_identity.prompt_base` y una capa `mapa` en `scene_002`, con puntos PT REKI (-2.1261667, 103.3690278) y L. Kepayang (-2.0882222, 102.7675278). Para este proyecto, los bloqueos verificados son `narrative_qa=FAIL/82` (`STAKES_NO_EXPLICADOS`), `SRC-002=PENDING_SOURCE` y conflicto de slot con Rosetta en main. No se extrapola esta corrección a los otros seis proyectos sin releerlos.
 
 ## Lote 5–7 nov: 12 IDs canónicos
 
