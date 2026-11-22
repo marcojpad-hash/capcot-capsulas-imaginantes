@@ -148,3 +148,33 @@ La rama `main` contiene el plan de producción del 22-nov con Salem 07:00, Guten
 La propuesta de 22-nov 19:00 tampoco queda autorizada: la política vigente en `main/data/horarios.json` retiró el slot 19:00 el 2026-11-02 y, desde el 2026-11-16, define ventanas 06:30–07:30 y 13:00–14:30, más el fijo 23:30 para dato del día. El slot 23:30 exige fuente publicada el mismo día y dentro de 48 horas; se espera la fecha del 22-nov para seleccionar ese dato.
 
 Para los tres proyectos, `cola/estado/<project_id>.json` devolvió 404: `RECEPCION_GROK_NO_CONFIRMADA`. No hay copias planas en `cola/entrada/`; el selector del workflow no toma storyboards anidados de `proyectos/`. No se disparó el workflow ni se envió payload.
+
+
+## Actualización de radar — 2026-11-22 01:58 CDMX
+
+Esta actualización supersede las notas anteriores que dejaban 19:00 como slot libre o consideraban libre el 23-nov 13:30. El snapshot más reciente de main ocupa 23-nov 13:30 con Rosetta; 19:00 fue retirado de la política. No se altera programación preexistente.
+
+### Recuperación de feeds
+
+Se intentó consultar por HTTP directo las ocho fuentes RSS de `scripts/tendencias.py` y Google Trends México. Los nueve endpoints devolvieron:
+
+`URLError: <urlopen error [Errno -3] Temporary failure in name resolution>`
+
+El script no se ejecutó dentro del repositorio; este es el error de las solicitudes directas de la sesión. Se usaron páginas oficiales como respaldo. Crossref API y resolvedor también quedaron inaccesibles por el mismo fallo de resolución DNS; ningún DOI se marcó como verificado por Crossref en este corte.
+
+### Candidatos recientes
+
+| Candidato | Fuente primaria / fecha | Dato y límite | Estado |
+|---|---|---|---|
+| Nubes crepusculares de Curiosity | NASA Photojournal, 20-nov-2026 — https://science.nasa.gov/resource/curiosity-spots-drifting-twilight-clouds/ | Imagen tomada el 31-oct-2026, sol 5061. NASA indica que estas nubes aparecen durante un periodo corto cada otoño sobre Gale Crater. Coordenada de referencia del aterrizaje: 4.6°S, 137.4°E; no representa la posición exacta de la nube. | Candidato para slot regular futuro; no usar como noticia del 22-nov |
+| Floración del desierto de Atacama | NASA Earth Observatory, 19-nov-2026 — https://earthobservatory.nasa.gov/ | Comparación Landsat 8/9 de 14-sep y 24-oct-2026. NASA compara el episodio con 13 floraciones detectadas entre 1981–2015 y lo describe como posiblemente el más extenso de la era satelital. | Candidato; falta slot regular confirmado |
+| Agua antigua más allá de Neptuno | NASA Science, 18-nov-2026; artículo en Science Advances, 11-nov-2026 — https://doi.org/10.1126/sciadv.aeg1602 | Doce partículas de polvo estratosférico; el origen en el cinturón de Kuiper se infiere por huellas de partículas energéticas, no por muestreo directo del cinturón. | PENDING_CROSSREF; no crear storyboard |
+| Dos especies de tardígrados marinos | Senckenberg / ZooKeys, 20-nov-2026 — https://doi.org/10.3897/zookeys.1295.205902 | Dos especies descritas en el monte submarino Senghor. | NO_DUPLICAR: ya existe una cápsula de tardígrados en salidas del 24-oct |
+| Colores de Júpiter en APOD | NASA APOD, 22-nov-2026 — https://apod.nasa.gov/apod/ap261122.html | Publicación del día sobre una imagen Juno del paso 14 de 2018; no es una observación nueva de 2026. | NO_DUPLICAR: ya existe proyecto/salida Juno del 29-oct |
+
+### Decisión de slots
+
+- 22-nov 23:30 no aparece ocupado en el snapshot de main, pero el APOD de Juno es la única pieza oficial encontrada con fecha de publicación del día y duplica la línea Juno ya trabajada. No se selecciona.
+- Los slots regulares 07:00 y 13:30 del 22–29 nov aparecen ocupados en el snapshot de main.
+- 1-dic no se considera libre: main todavía no contiene un plan que confirme ese horizonte.
+- No se creó storyboard ni se promovió nada. El control de cola y la auditoría de los 19 proyectos quedan en `docs/briefs/2026-11-22_CONTROL_COLA.md`.
