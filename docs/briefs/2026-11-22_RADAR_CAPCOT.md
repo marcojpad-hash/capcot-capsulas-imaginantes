@@ -343,3 +343,12 @@ Este corte sustituye los estados de verificación DOI anteriores cuando aquí se
 ### Decisión de slot
 
 El único candidato de la shortlist publicado el mismo 22-nov es genética de estatura. El borrador ya existe en `proyectos/2026-11-22_genes-estatura-etapas/storyboard.json`; no se creó otro storyboard. DOI y coordenadas institucionales se verificaron y se corrigieron metadatos, pero falta la lectura narrativa independiente. El proyecto permanece en `BORRADOR_EN_PROYECTOS`, sin cola ni recepción Grok confirmada. No usar los candidatos del 18–19-nov para presentarlos como noticia publicada hoy.
+
+
+### Addendum de cierre — 22-nov-2026
+
+El proyecto `2026-11-22_genes-estatura-etapas` ya existe para el slot 23:30; por tanto, el slot deja de ser un hueco de investigación y pasa a `NO_DUPLICAR`. El JSON conserva 8 escenas, 231 palabras según el validador, 84 s totales y estructura estática completa. La lectura narrativa queda `PENDIENTE_AUDITOR`: este operador no escribió `narrative_qa` ni promovió el borrador. La compuerta de QA independiente sigue siendo obligatoria.
+
+El DOI figura en el JSON como `VERIFICADO_CROSSREF` y el corte previo de este radar registra respuesta Crossref `status=ok`; la apertura del API/resolvedor no estuvo disponible en el lector de este run, así que no se declara una nueva comprobación. La fuente editorial primaria sí identifica la publicación del 22-nov-2026.
+
+Main contiene un proyecto distinto, Pulsar, a las 13:30 CDMX; no ocupa 23:30. Su cola está anidada y su programación/archivo declarado impiden redispatch, pero no constituye conflicto de slot para genética de estatura. No hay una segunda versión autorizada para 23:30.
