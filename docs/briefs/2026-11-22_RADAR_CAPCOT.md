@@ -178,3 +178,29 @@ El script no se ejecutó dentro del repositorio; este es el error de las solicit
 - Los slots regulares 07:00 y 13:30 del 22–29 nov aparecen ocupados en el snapshot de main.
 - 1-dic no se considera libre: main todavía no contiene un plan que confirme ese horizonte.
 - No se creó storyboard ni se promovió nada. El control de cola y la auditoría de los 19 proyectos quedan en `docs/briefs/2026-11-22_CONTROL_COLA.md`.
+
+
+## Actualización de shortlist — 2026-11-22, 04:00 CDMX
+
+### Candidato nuevo de respaldo (sin slot)
+
+**Intermediarios de amiloide-β con funciones distintas**  
+- Fuente primaria: Urbanek et al., *Nature Communications*, publicado en línea el 9-nov-2026. DOI indicado por el editor: `10.1038/s41467-026-79028-0`.  
+- URL editorial/PDF: https://www.nature.com/articles/s41467-026-79028-0.pdf  
+- Resultado observado: el estudio identifica dos poblaciones funcionalmente distintas de intermediarios Aβ42 en ensayos con péptido recombinante, un modelo knock-in de Alzheimer en ratón y tejido cerebral humano post mortem. Ambas pueden dañar membranas; solo una se convierte en placas. La intervención farmacológica que redujo placas y mejoró cognición se probó en ratones, no demuestra eficacia terapéutica en personas.  
+- Cálculo: no se añadió ningún cálculo independiente ni porcentaje derivado.  
+- Inferencia editorial: el giro potencial es que “intermediario tóxico” y “placa” no son la misma etapa; requiere explicar con cuidado el límite entre observación en tejido humano y prueba de intervención en ratones.  
+- Estado: `CANDIDATO_SIN_SLOT`; `PENDING_CROSSREF`. El endpoint Crossref y el resolvedor DOI no quedaron accesibles en esta sesión. No redactar storyboard hasta verificar DOI y disponer de slot libre.
+
+### Exclusiones recientes
+- Voyager 1 a un día-luz: fuente NASA del 19-nov confirma el hito del 18-nov, pero ya existe el proyecto `2026-11-22_voyager-1-un-dia-luz`; `NO_DUPLICAR`.
+- Kilonova Catcher: iniciativa de ciencia ciudadana lanzada en 2019, no noticia ni descubrimiento reciente; descartada para el radar actual.
+
+### Shortlist activa consolidada
+
+1. Curiosity y las nubes crepusculares — NASA, 20-nov-2026; candidato para slot regular futuro.
+2. Floración del desierto de Atacama — NASA Earth Observatory, 19-nov-2026; candidato, no apto como dato del día 22-nov.
+3. Indicios de hielo antiguo más allá de Neptuno — NASA Science, 18-nov-2026 + *Science Advances*, 11-nov-2026; `PENDING_CROSSREF`.
+4. Intermediarios Aβ — *Nature Communications*, 9-nov-2026; `PENDING_CROSSREF`.
+
+Tardígrados marinos y APOD de Júpiter permanecen en el registro de descartes por duplicación. No se creó storyboard ni se reservó slot.
