@@ -334,3 +334,18 @@ Lectura de vuelta de los siete `storyboard.json` contra `scripts/validar_storybo
 **Corrección de fuente para biodiversidad:** la entrada anterior `SRC-002=PENDING_SOURCE` era incorrecta. `SRC-002` (Kurniawan et al., Biogeosciences 2018, DOI 10.5194/bg-15-5131-2018) está verificada en página editorial y aporta únicamente la coordenada regional de Jambi. El DOI pendiente es `SRC-001` (Nature 2026, 10.1038/s41586-026-11298-6). En AT 2025abao el DOI pendiente es `SRC-001`; NASA `SRC-002` y `SRC-003` están verificadas. Fentale tiene Crossref verificado; Homo y púlsar tienen DOI resuelto; Voyager usa NASA/JPL sin DOI y fuentes secundarias solo para localizadores DSN; yubarta tiene ambos DOI resueltos.
 
 No se modificaron los siete storyboards: los cinco FAIL narrativos, los conflictos de slot, la duplicación temática de Fentale y los DOI pendientes siguen bloqueando cualquier promoción.
+
+
+### Integridad de copias heredadas en cola/bloqueados — lote 5–7 nov
+
+La lectura de árbol confirma siete artefactos bloqueados: cuatro carpetas con `storyboard.json` + `ESTADO_EJECUCION.md` + `fuentes.md`, y tres JSON planos sin carpeta. Los cuatro estados de carpeta revisados dicen `BORRADOR_EN_PROYECTOS_NO_APTO_PARA_PROMOCION`; no hay medios. Los tres JSON planos siguen bajo `cola/bloqueados`, no en `cola/entrada`.
+
+**No se borró ni sobrescribió ningún artefacto:** en las cuatro parejas que tienen JSON plano y storyboard de carpeta, los contenidos no son idénticos. Las diferencias observadas incluyen:
+- palomitas-explotan: 195 palabras en el JSON plano frente a 173 en la carpeta;
+- aguacate negro: 198 frente a 170;
+- ranas congeladas: 208 frente a 177 y dos fuentes frente a una;
+- huesos de bebé: 207 frente a 172.
+
+La variante `comida-palomitas-explotan` no comparte `project_id` con el storyboard canónico `comida-palomitas`. Rayo globular, arena cantante y nubes pesan como JSON plano solamente, sin carpeta/estado. Los otros cinco IDs canónicos del lote no tienen copia bloqueada.
+
+Resultado: `BLOQUEADO_DUPLICADO_DIVERGENTE` para las cuatro parejas; `BLOQUEADO_JSON_PLANO_SIN_CARPETA` para las otras tres. Como no existe copia activa en `cola/entrada`, no se hizo movimiento ni eliminación. Los 12 proyectos originales siguen en `proyectos/`; no tienen `ESTADO_EJECUCION.md` propio.
