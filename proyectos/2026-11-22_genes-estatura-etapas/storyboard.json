@@ -462,5 +462,26 @@
   "_schema": "CAPCOT_STORYBOARD_TEXT_V2",
   "estructura": "pregunta",
   "estilo_id": "papel_stop_motion",
-  "estilo_visual": "Stop-motion de papel"
+  "estilo_visual": "Stop-motion de papel",
+  "narrative_qa": {
+    "status": "FAIL",
+    "score": 60,
+    "review_basis": "lectura_en_frio_solo_narracion",
+    "checks": {
+      "pregunta_central_reconstruible": true,
+      "apertura_in_medias_res": false,
+      "progresion_por_escena": false,
+      "transiciones_causales": false,
+      "giro_cientifico_explicado": false,
+      "limite_evidencia_explicito": true,
+      "payoff_cierre_apertura": true
+    },
+    "critical_flags": [
+      "APERTURA_DEFINICIONAL_NO_IN_MEDIAS_RES",
+      "ESCENA_MAPA_NO_HACE_AVANZAR_LA_PREGUNTA_CENTRAL",
+      "TRANSICIONES_NO_SOSTIENEN_PROGRESION_CAUSAL",
+      "ALEATORIZACION_MENDELIANA_NOMBRADA_SIN_EXPLICAR_EL_MECANISMO"
+    ],
+    "reviewer_role": "auditor_capcot_independiente"
+  }
 }
