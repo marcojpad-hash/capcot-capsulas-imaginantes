@@ -240,3 +240,44 @@ El APOD oficial NASA del 22-nov presenta remolinos y colores de nubes jovianas e
 - El slot 22-nov 23:30 permanece sin storyboard: no hay candidato que cumpla noticia primaria del mismo día y no duplicación.
 - No se adelantó contenido al 23-nov. No se creó storyboard, QA, entrada de cola ni medio.
 - Los DOI anteriores se verificaron en páginas editoriales/resolvedores cuando fue posible; **Crossref sigue PENDIENTE** porque la API no fue accesible. La verificación de un DOI en el editor no se presenta como respuesta de Crossref.
+
+
+## Corte 08:05 CDMX — revalidación de slots, fuentes y QA
+
+### RSS y tendencias
+Se reintentaron las diez URL de `FEEDS_CIENCIA` en `scripts/tendencias.py` y el RSS de Google Trends México. No se obtuvo XML y no se ejecutó localmente el script. Errores del lector: ScienceDaily ciencia/salud/espacio `Unsupported content-type: application/xml`; Phys.org `Unsupported content-type: text/xml`; NASA y Nature `Unsupported content-type: application/rss+xml`; ESA `404 Not Found`; EurekAlert y SINC `URL not accessible via this tool`; UNAM Global `Unsupported content-type: application/rss+xml`; Trends RSS y Crossref REST `URL not accessible via this tool`. Son fallos del lector de esta sesión, no prueba de caída de todos los servidores.
+
+Respaldo oficial: [Google Trends México, últimas 24 h](https://trends.google.com/trending?geo=MX&hl=es), 263 tendencias (25 por página). La primera página está dominada por fútbol y entretenimiento. Entre las primeras 25: `superluna` 2 mil+ (+1.000 %) y `desierto de Atacama` 1 mil+ (+200 %). Son bandas de búsqueda, no métricas CAPCOT; Atacama coincide con una nota previa, no con un hallazgo publicado hoy.
+
+### Cinco candidatos publicados del 18 al 22 de noviembre
+
+1. **Estatura y genética por etapa del desarrollo — 22-nov.** [Nature Communications, PDF primario](https://www.nature.com/articles/s41467-026-79465-x_reference.pdf), DOI impreso `10.1038/s41467-026-79465-x`. Hasta 72.704 niños MoBa y 574.580 mediciones desde nacimiento a 8 años; heredabilidad SNP 0,16 al nacer y 0,41 a los 8 años; tres grupos de señales con trayectorias diferentes. Relevancia alta; oportunidad alta. Riesgos: no convertir heredabilidad poblacional en porcentaje de la estatura individual; muestra de ascendencia europea y límites de generalización. URL editorial accesible; Crossref/resolvedor no respondió: `PENDING_RESOLVER`.
+2. **Fenología foliar amazónica — 18-nov.** [Nature](https://www.nature.com/articles/s41586-026-11284-y), [PubMed 43052430](https://pubmed.ncbi.nlm.nih.gov/43052430/), DOI `10.1038/s41586-026-11284-y`. Sentinel-2 a 10 m; en 70,0 % del área amazónica analizada, la caída de hojas precede al reverdecimiento por al menos tres meses. Relevancia y oportunidad altas por la figura espacial. Riesgo: 70 % del área, no de árboles o especies; asociación ambiental no equivale a causalidad.
+3. **Egovirus, parientes evolutivos de poxvirus — 18-nov.** [Nature](https://www.nature.com/articles/s41586-026-11283-z), DOI `10.1038/s41586-026-11283-z`. 85.123 ensamblajes metagenómicos, 12 genomas completos y 864 ensamblajes positivos; los autores proponen el orden Egovirales y predicen vínculos con eucariotas unicelulares digestivos. Relevancia alta; oportunidad alta. Riesgo: no afirmar infección de células humanas ni enfermedad; la relación con hospedadores es inferida.
+4. **Código neural de la producción del habla en Wernicke — 19-nov.** [PubMed 43056455](https://pubmed.ncbi.nlm.nih.gov/43056455/), DOI `10.1126/science.aef8963`. Registros intracraneales, estimulación cortical y análisis de lesiones; la región temporal superior posterior izquierda participa antes del habla y codifica rasgos de palabras completas. Relevancia alta; oportunidad media-alta. Riesgo: no llamarlo lectura general de pensamientos ni tecnología clínica disponible.
+5. **var2csa y malaria cerebral — 20-nov.** [Nature Communications](https://www.nature.com/articles/s41467-026-78682-8), DOI `10.1038/s41467-026-78682-8`. RNA-seq en 13 pares emparejados y conjuntos de 25 casos/55 controles; el artículo vincula transcritos var/PfEMP1 con el cuadro cerebral. Relevancia alta; oportunidad media. Riesgo: muestra y contexto clínico específicos; no es prueba diagnóstica ni demuestra por sí sola causalidad clínica.
+
+Los DOI aparecen en las páginas editoriales o registros bibliográficos citados; no se declara una resolución Crossref independiente en este corte. Tendencia, relevancia científica y oportunidad editorial se mantienen separadas.
+
+### Ocupación y decisión de 23:30
+- Feature: 07:00 Voyager 1; 13:30 fusión estelar BAO; 17:00 genoma de yubarta. Main confirma Salem 07:00, Gutenberg 13:30 y Ada 17:00. Se registra `CONFLICTO_DE_SLOT_ENTRE_RAMAS` y `NO_DUPLICAR`; no se reescriben los tres proyectos.
+- 19:00 no es ventana activa en la política vigente; no se reasigna.
+- 23:30 sigue activo como `slot_fijo_dato` en `main/data/horarios.json`, y no aparece ocupado en proyectos, salidas, cola, handoffs, programaciones ni publicaciones de ambas ramas. No existe `data/horario_2026-11-22.json` en feature ni main.
+- El artículo de estatura es del 22-nov y el PDF primario está accesible, pero el DOI no pudo resolverse por Crossref/resolvedor. Además, los métodos identifican regiones de cohortes, no coordenadas exactas de participantes o reclutamiento; las anclas regionales no se han verificado. Estado 23:30: **`PENDING_SOURCE`**. No se crea storyboard adicional.
+- La programación principal de main para el día ya tiene Salem/Gutenberg/Ada; las resubidas 14:30 y 21:00 no ocupan 23:30.
+
+### QA narrativo preexistente — lectura literal
+Los tres JSON sí contienen `narrative_qa`; no se modificaron.
+
+| Proyecto | Estado | review_basis y fecha | Checks | critical_flags |
+|---|---|---|---|---|
+| `2026-11-22_voyager-1-un-dia-luz` | FAIL / 83 | `lectura_en_frio_solo_narracion`; `reviewed_at` ausente | Los siete checks son `true` | [`FECHA_DE_HITO_Y_CONFIRMACION_CONFUNDIDAS`] |
+| `2026-11-22_bao-estrella-fusion-andromeda` | FAIL / 84 | `lectura_en_frio_solo_narracion`; `reviewed_at=2026-11-21T13:56:37-06:00` | Los siete checks son `true` | [`STAKES_NO_EXPLICADOS`] |
+| `2026-11-22_yubarta-genoma-soplo` | PASS / 90 | `lectura_en_frio_solo_narracion`; `reviewed_on=2026-11-21`; `reviewed_at` ausente | Los siete checks son `true` | [] |
+
+Los tres indican `reviewer_role=auditor_capcot_independiente`. Los tres `cola/estado/<project_id>.json` devolvieron HTTP 404: `RECEPCION_GROK_NO_CONFIRMADA`. No se escribieron estados ni se promovió ningún paquete.
+
+### Seguimiento técnico
+Graph API v27.0 frente a tabla heredada v26.0 y el estado alfa limitado de Google Trends ya están documentados; no cambiaron. La referencia actual de Page Insights muestra un aviso de deprecación para el 15-jun-2026, pero su página enlazada solo enumera fechas 2025 y 2024; el blog enlazado devolvió HTTP 429. La discrepancia quedó registrada en el informe técnico §9.11, sin inferir nombres de métricas ni cambiar integraciones.
+
+**Decisión:** `NO_DUPLICAR` en los slots regulares ocupados; `PENDING_SOURCE` en 23:30. Se actualiza este radar existente. No se crea storyboard, no se escribe en cola, no se genera QA ni se producen medios.
