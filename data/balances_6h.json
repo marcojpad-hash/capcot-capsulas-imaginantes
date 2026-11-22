@@ -3311,5 +3311,125 @@
    ]
   ],
   "nota_flujo": "Corte vs 18-nov 13:56 CDMX (~72.0 h; último registro 18-nov 13:56, sin snapshots 6h intermedios). YT 37,514→38,138 (+624 vistas), likes 1,163→1,180 (+17), comentarios 28→28 (+0), subs 97→97 (+0). 91→100 Shorts públicos (+10: Químicos aislan oxoboranos estables tras 60 años K4qNkx2f4RI a las 2026-11-21 13:30 CDMX (0 vistas, 0 likes); El tejón que se burló del zoológico 6XCBYrlO4Eg a las 2026-11-21 07:00 CDMX (192 vistas, 9 likes); La erupción invisible que liberó una nube de metano Eldk0fVWqpo a las 2026-11-20 23:30 CDMX (21 vistas, 0 likes); IA encuentra materiales 2D olvidados WTlFSZV9HYg a las 2026-11-20 13:30 CDMX (16 vistas, 0 likes); El rosa del flamenco viene de su comida msWV2AXr6Uk a las 2026-11-20 07:00 CDMX (53 vistas, 0 likes); ADN que apaga el gen del cáncer zyTl_cVGN6E a las 2026-11-19 19:00 CDMX (9 vistas, 2 likes); Juno revela el choque invisible de Júpiter vj5RZDt-dfc a las 2026-11-19 13:30 CDMX (13 vistas, 1 likes); La corneja decide en 235 milisegundos AxgWdhqPhRI a las 2026-11-19 07:00 CDMX (5 vistas, 0 likes); Hielo sucio alrededor de Beta Pictoris 2a36r5QOvi4 a las 2026-11-18 23:30 CDMX (16 vistas, 1 likes); Virus y bacterias colapsan el bloom NKDhKlY1rVI a las 2026-11-18 19:00 CDMX (14 vistas, 1 likes)). Lo empujan TT ADN que apaga el gen del cáncer Contenido ilustrado con IA. 7708225104324447489 nuevo 648 (10 likes); TT Juno cruzó dos veces una frontera invisible frente a Júpiter 7709253948179320116 nuevo 647 (11 likes); TT Juno revela el choque invisible de Júpiter Contenido ilustra 7708177724325645574 nuevo 638 (3 likes). En YT se estancó ¿Por qué tenemos hipo? 41PYjWbQuJo (sigue en 0); se fugo la ia jeUrM5zzkdA (sigue en 0); ¿Por qué tenemos hipo? Rg-iTgMExWw (sigue en 1). El nuevo Químicos aislan oxoboranos estables tras 60 años K4qNkx2f4RI va en 0 vista(s). El nuevo La corneja decide en 235 milisegundos AxgWdhqPhRI va en 5 vista(s). TT (yt-dlp, listado público @datosyociosidades): 91→100 videos (+9), 29,550→34,842 vistas (+5,292), 1,033→1,078 likes (+45), comentarios 6→6. En TT lo mueven TT ADN que apaga el gen del cáncer Contenido ilustrado con IA. nuevo 648, TT Juno cruzó dos veces una frontera invisible frente a Júpiter nuevo 647, TT Juno revela el choque invisible de Júpiter Contenido ilustra nuevo 638, TT El polvo de África no viaja solo 🌍 Una nube cruzó el océano  nuevo 626, TT ¿Un hielo más viejo que la estrella que lo rodea? Hielo suci nuevo 619. Seguidores de TT no se pudieron leer. Fuente YT: YouTube Data API v3 OAuth ~/.capcot/token.json."
+ },
+ {
+  "hora_cdmx": "2026-11-22T13:50-06:00",
+  "base_youtube": "2026-11-21T13:54",
+  "base_tiktok": "2026-11-21T13:54",
+  "youtube_totales": {
+   "view": 39221,
+   "like": 1221,
+   "comment": 28
+  },
+  "suscriptores": 103,
+  "shorts_publicos": 105,
+  "delta_youtube": {
+   "view": 1083,
+   "like": 41,
+   "comment": 0,
+   "suscriptores": 6,
+   "horas_desde_base": 23.9,
+   "nota": "Δ de ~24 h vs el corte 21-nov 13:54 CDMX (último snapshot en vistas_historico/balances_6h; no hubo corte 6h registrado el 21-nov 20:00 ni a las 08:00 de hoy). 100→105 Shorts públicos (+5). Fuente: YouTube Data API v3 OAuth ~/.capcot/token.json (youtube.readonly; canal Datos y ociosidades UCU2ZI-6pBJEr9aSFsF6bxLw). La playlist de uploads no trajo 3 Shorts que siguen públicos (es6hWxPdt2A, inzztxrxYfg, mWtf7Yta294) y se sumaron con videos.list. Nuevos: Gutenberg NO inventó la imprenta YXndoPSSeaY a las 2026-11-22 13:30 CDMX (2 vistas, 0 likes); En Salem NO quemaron brujas N21TIYdONZo a las 2026-11-22 07:00 CDMX (8 vistas, 0 likes); Colón NO llamó América al continente RwTTwSNGm10 a las 2026-11-21 23:30 CDMX (28 vistas, 0 likes); Un robot ensambla una estructura en órbita ZG4iQgmWrLI a las 2026-11-21 19:00 CDMX (11 vistas, 0 likes); Napoleón NO era bajito 8okieDXFIgU a las 2026-11-21 17:00 CDMX (117 vistas, 4 likes)."
+  },
+  "tiktok_totales": {
+   "view": 37433,
+   "like": 1105,
+   "comment": 6
+  },
+  "seguidores_tiktok": null,
+  "likes_perfil_tiktok": null,
+  "videos_tiktok": 106,
+  "delta_tiktok": {
+   "view": 2591,
+   "like": 27,
+   "comment": 0,
+   "seguidores": null,
+   "likes_perfil": null,
+   "videos": 6,
+   "nota": "Δ vs 21-nov 13:54 (~24 h): 34842→37433 vistas (+2591), 1078→1105 likes (+27), comentarios 6→6, 100→106 videos (+6). Fuente: yt-dlp, listado público @datosyociosidades. Nuevos en el listado: Gutenberg NO inventó la imprenta. En 1377, en Core 7711000369249209606 (0 vistas, 0 likes); ¿Por qué se pone verde la yema del huevo duro? El  7710703730752015668 (37 vistas, 0 likes); ¿Colón llamó América al continente? No: el nombre  7710991947711778069 (364 vistas, 6 likes); ¿Un tejón le ganó a un zoológico entero? Stoffel,  7710991265910820117 (336 vistas, 4 likes); ¿En Salem quemaron brujas? En 1692, 19 personas fu 7710990697033108742 (259 vistas, 3 likes); Un robot ensambla una estructura en órbita Conteni 7708225068513496321 (653 vistas, 5 likes). Seguidores no se pudieron leer."
+  },
+  "ranking_crecimiento": [
+   [
+    "YT El tejón que se burló del zoológico",
+    751
+   ],
+   [
+    "TT Un robot ensambla una estructura en órbita Contenido ilustra",
+    653
+   ],
+   [
+    "TT Químicos aislan oxoboranos estables tras 60 años Contenido i",
+    602
+   ],
+   [
+    "TT ¿Colón llamó América al continente? No: el nombre nació en 1",
+    364
+   ],
+   [
+    "TT ¿Un tejón le ganó a un zoológico entero? Stoffel, el tejón d",
+    336
+   ],
+   [
+    "TT El pulpo reparte el trabajo entre tres corazones. Tu pulso v",
+    335
+   ],
+   [
+    "TT ¿En Salem quemaron brujas? En 1692, 19 personas fueron ahorc",
+    259
+   ],
+   [
+    "YT Napoleón NO era bajito",
+    117
+   ],
+   [
+    "YT El rosa del flamenco viene de su comida",
+    65
+   ],
+   [
+    "TT ¿Por qué se pone verde la yema del huevo duro? El anillo ver",
+    37
+   ],
+   [
+    "YT Colón NO llamó América al continente",
+    28
+   ],
+   [
+    "YT La erupción invisible que liberó una nube de metano",
+    16
+   ],
+   [
+    "YT Un robot ensambla una estructura en órbita",
+    11
+   ],
+   [
+    "YT ADN que apaga el gen del cáncer",
+    11
+   ],
+   [
+    "YT ¿El arroz de ayer puede enfermarte?",
+    11
+   ],
+   [
+    "YT En Salem NO quemaron brujas",
+    8
+   ],
+   [
+    "YT Papel picado, parte 1: nació en una tienda de raya",
+    6
+   ],
+   [
+    "YT Químicos aislan oxoboranos estables tras 60 años",
+    5
+   ],
+   [
+    "YT IA encuentra materiales 2D olvidados",
+    4
+   ],
+   [
+    "YT Juno revela el choque invisible de Júpiter",
+    4
+   ]
+  ],
+  "nota_flujo": "Corte vs 21-nov 13:54 CDMX (~24 h; no hubo corte 6h registrado el 21-nov 20:00 ni a las 08:00 de hoy). YT 38,138→39,221 (+1,083 vistas), likes 1,180→1,221 (+41), comentarios 28→28 (+0), subs 97→103 (+6). 100→105 Shorts públicos (+5: Gutenberg NO inventó la imprenta YXndoPSSeaY a las 2026-11-22 13:30 CDMX (2 vistas, 0 likes); En Salem NO quemaron brujas N21TIYdONZo a las 2026-11-22 07:00 CDMX (8 vistas, 0 likes); Colón NO llamó América al continente RwTTwSNGm10 a las 2026-11-21 23:30 CDMX (28 vistas, 0 likes); Un robot ensambla una estructura en órbita ZG4iQgmWrLI a las 2026-11-21 19:00 CDMX (11 vistas, 0 likes); Napoleón NO era bajito 8okieDXFIgU a las 2026-11-21 17:00 CDMX (117 vistas, 4 likes)). Lo empujan YT El tejón que se burló del zoológico 6XCBYrlO4Eg 192→943 (+751); TT Un robot ensambla una estructura en órbita Contenido ilustra 7708225068513496321 nuevo 653 (5 likes); TT Químicos aislan oxoboranos estables tras 60 años Contenido i 7708179212145872134 3→605 (+602). En YT se estancó ¿Por qué tenemos hipo? 41PYjWbQuJo (sigue en 0); se fugo la ia jeUrM5zzkdA (sigue en 0); ¿Por qué tenemos hipo? Rg-iTgMExWw (sigue en 1); La corneja decide en 235 milisegundos wxnhEdlJYwU (sigue en 1). El nuevo Gutenberg NO inventó la imprenta YXndoPSSeaY va en 2 vista(s). TT (yt-dlp, listado público @datosyociosidades): 100→106 videos (+6), 34,842→37,433 vistas (+2,591), 1,078→1,105 likes (+27), comentarios 6→6. En TT lo mueven TT Un robot ensambla una estructura en órbita Contenido ilustra nuevo 653, TT Químicos aislan oxoboranos estables tras 60 años Contenido i 3→605 (+602), TT ¿Colón llamó América al continente? No: el nombre nació en 1 nuevo 364, TT ¿Un tejón le ganó a un zoológico entero? Stoffel, el tejón d nuevo 336, TT El pulpo reparte el trabajo entre tres corazones. Tu pulso v 274→609 (+335). Seguidores de TT no se pudieron leer. Fuente YT: YouTube Data API v3 OAuth ~/.capcot/token.json."
  }
 ]
