@@ -395,3 +395,25 @@ La nota del 18-nov que propone Vikingos para 17:00 es obsoleta respecto de la ro
 ### Recuento final de recepción
 
 El total de 26 respuestas 404 cubre los 25 storyboards en `proyectos/` más el robot orbital. La consulta adicional del storyboard heredado `cola/entrada/2026-11-05_bacterias-plasticos-oceano/` también devolvió 404. Recuento ampliado: **27 estados Grok no confirmados**. No se creó ningún archivo de estado.
+
+
+### Reconciliación adicional — 22-nov-2026, 10:01 CDMX
+
+#### Ejecuciones y estado de rama
+- Investigador CAPCOT: última ejecución terminal observada **COMPLETED** el 22-nov a las 08:12 CDMX; su radar/API ya están incorporados en esta rama. Auditor CAPCOT: última ejecución terminal observada el 21-nov a las 15:30 CDMX; la siguiente ventana del 22-nov aún no había llegado al corte. No se atribuye QA nuevo al auditor.
+- HEAD feature observado: `8ff614d061b0430b5d18ce72f96f61e460351f58`; HEAD main observado: `f94300bfcbbd509fdd54c8963b948aadc1372fcf`.
+- PR #3 sigue OPEN/DRAFT y `mergeable=false`: 696 archivos, 1,242 commits; feature está 1,242 commits por delante y 512 por detrás de main. Su diff incluye **13 rutas `data/*.json`** y 145 rutas `cola/`. No integrar: el contrato de esta operación mantiene `data/*.json` en solo lectura y el diff no es integrable sin reconciliación independiente.
+
+#### PR #15 — Semgrep y pruebas
+- PR #15 sigue OPEN, no draft, mergeable=true; base `feature/capcot-video-discovery-continuity`, head `fix/capcot-map-coordinate-types-20261122`, commit `30101e9aca8aaafb8d1894df30574a66067ff4a8`; dos archivos modificados.
+- Run Semgrep `45004335607` terminó FAILURE. El SARIF descargado (artifact `14746933868`) contiene 27 resultados: **26 bloqueantes** y uno con `suppressions.kind=inSource` para `HTTPSConnection`. Los 26 bloqueantes se distribuyen en 11 referencias mutables de GitHub Actions, 11 usos dinámicos de urllib, 2 usos de subprocess, 1 acceso dinámico a globals y 1 uso de MD5. No se interpreta el resultado suprimido como hallazgo bloqueante ni se declara el PR limpio.
+- `tests/test_validar_storyboard_textual.py` contiene 14 métodos de prueba, pero el único workflow asociado al commit consultado es Semgrep; el estado combinado de checks del commit es `none` con `statuses=[]`. Se intentó clonar la rama para ejecutar los tests y falló literalmente: `Could not resolve host: github.com`. **Suite no ejecutada; PR no validado.** No se añadió workflow ni se disparó CI.
+
+#### Revalidación de proyectos y recepción
+- Se releen los cuatro storyboards de 22–23 nov. Bao (13:30) conserva QA FAIL/84; Voyager (07:00) FAIL/83; yubarta (17:00) PASS/90; biodiversidad (23-nov 13:30) FAIL/82. No se repitió QA ni se modificó narración.
+- Las cuatro consultas individuales `cola/estado/<project_id>.json` devolvieron HTTP 404 exacto; se conserva `RECEPCION_GROK_NO_CONFIRMADA`. No se creó estado ni entrada plana. Yubarta mantiene PASS narrativo, pero no se promueve por conflicto de slot/rotación y falta de recepción confirmada.
+- Los cuatro storyboards conservan `approved_assets=[]`, `export.render_status=NOT_GENERATED` y `publicacion.status=PENDIENTE_DECISION_GROK`. La entrada de cola existente sigue siendo el robot orbital anidado, con producción previa: no redispatchar.
+- La búsqueda del corte del 22-nov no encontró una fuente primaria de ciencia/naturaleza publicada ese mismo día apta para ocupar 23:30. Las fuentes recientes halladas son anteriores: [NASA, hielo antiguo más allá de Neptuno, 18-nov](https://science.nasa.gov/blogs/science-news/2026/11/18/nasa-scientists-find-clues-to-ancient-ice-beyond-neptune/), [ESA, Plasma Observatory, 19-nov](https://www.esa.int/articles/about-us/directorates/science/seven-spacecraft-observatory-to-study-plasma-universe) y [Reuters, fusión estelar Bao, 20-nov](https://www.reuters.com/science/astronomers-observe-huge-puffy-star-merge-with-smaller-companion-2026-11-20/); Bao ya tiene proyecto y QA FAIL. No se reutilizó material antiguo como dato del día.
+- Los cinco endpoints DOI consultados en Crossref no fueron accesibles desde el lector actual (`URL ... is not accessible via this tool`). Los DOI que el radar mantiene como `PENDING_RESOLVER` siguen sin verificarse; no se sustituyó Crossref por una página editorial.
+
+**Cierre de esta reconciliación:** no se modificaron `data/*.json`, main, storyboards, estados Grok, cola, programación, workflows, secretos ni permisos. No se promovió, despachó, publicó ni generó medios.
