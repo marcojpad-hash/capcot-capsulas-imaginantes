@@ -364,3 +364,16 @@ La página oficial de Quick Look de ESA mostraba la inserción orbital en Mercur
 - 21-nov 23:30 Fentale: DOI actualizado a `VERIFICADO_CROSSREF` en el storyboard, pero el artículo es del 19-nov y no cumple la regla de dato del día para el 21-nov. No promover.
 
 **Decisión:** no hay slot libre y autorizado con candidato, fuente primaria, mapa real y QA suficiente. No se creó storyboard nuevo, no se escribió en cola y no se disparó el workflow.
+
+
+## 11. Divergencia de snapshots de rotación — solo lectura
+
+Los tres archivos de datos son distintos entre `main` y la rama de trabajo; se dejaron intactos porque `data/*.json` es solo lectura:
+
+| Archivo | `main` | Rama de trabajo | Diferencia relevante |
+|---|---|---|---|
+| `data/horarios.json` | `7baae556de18e0ddfadfd750568e4247a136d8fa` | `550599906c26e747de71b6b962080b6bd469f23f` | `main` mantiene desde 16-nov las ventanas 06:30–07:30 y 13:00–14:30, más 23:30; la rama conserva una ventana de tarde 16:30–18:00 ya retirada. |
+| `data/rotacion.json` | `1cb16c1cfad8b968e24221793047df27d83eb5e0` | `01677e27569826e49736501a0c22c166f8015a45` | 39 registros en main frente a 27 en la rama; la rama no contiene las asignaciones 21–23-nov que sí aparecen en el registro principal. |
+| `data/publicaciones.json` | `d51544b34ed9082285a23cc458475a36f7e8f3aa` | `a17dbe541d35b7e3d8a835756a06f0588039049a` | 48 registros en main frente a 22 en la rama; main contiene las programaciones del 21–23-nov ausentes en el snapshot de la rama. |
+
+**Decisión:** para prevenir duplicados se usó `main` en la comprobación de conflictos y el plan semanal, sin escribir en main ni sincronizar los JSON protegidos. La rama de trabajo debe considerarse desactualizada para rotación/horarios hasta una actualización autorizada de sus snapshots.
