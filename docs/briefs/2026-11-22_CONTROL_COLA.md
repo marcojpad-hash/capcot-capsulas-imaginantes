@@ -187,3 +187,27 @@ Ejecuciones automáticas posteriores a los commits del control/radar:
 - Run `45010995845`, head `6e39551093c0a35b95a8344a5ee37ad90f361dd8`: ambos jobs SUCCESS; estado terminal consultado y verificado.
 
 La última ejecución de CodeQL cubre el commit final de esta actualización. No se observó un nuevo dispatch de Grok ni una ejecución del trabajador sobre feature. El fallo Semgrep de PR #15 (`45004335607`, 26 findings) permanece independiente y sin resolución.
+
+
+## Triage del artefacto Semgrep — 2026-11-22
+
+Se descargó y parseó el SARIF del artifact `14746933868` del run `45004335607` (commit de PR #15 `30101e9aca8aaafb8d1894df30574a66067ff4a8`). El archivo contiene 27 resultados: **26 activos** y 1 suprimido en código fuente. Los 26 activos coinciden con el mensaje del job.
+
+| Grupo | Activos | Ubicaciones |
+|---|---:|---|
+| Acciones GitHub con tag mutable | 11 | `capcot-descubrimiento.yml` (3), `capcot-grok-dispatch.yml` (1), `semgrep.yml` (3), `tts-tooling-smoke.yml` (2), `validar-kuroshio.yml` (2) |
+| URL dinámica en urllib | 11 | `buscar_generadores_video.py:80`; `descargar_sfx.py:12,16`; `generar_frames.py:23`; `generar_guion_llm.py:32`; `media_api_clients.py:29`; `publicar.py:82,85`; `tendencias.py:14,48`; `tendencias_estilos.py:16` |
+| subprocess con argumentos tainted | 2 | `capsula_diaria.py:110`; `procesar_cola.py:57` |
+| Índice dinámico de globals | 1 | `publicar.py:43` |
+| MD5 | 1 | `rotacion.py:22` |
+| Suprimido en fuente | 1 adicional, no activo | `validar_storyboard.py:27`, `HTTPSConnection` |
+
+**Clasificación estática inicial, no veredicto de seguridad:**
+- Las 11 referencias mutables son hallazgos de integridad de cadena de suministro y requieren pinning a SHA completo verificado antes de integrar los workflows.
+- Los dos `subprocess.run` reciben listas de argumentos y no pasan `shell=True`; el riesgo de shell injection parece un falso positivo, pero las rutas/argumentos siguen necesitando validación de raíz y límites.
+- `publicar.py:43` usa la clave literal `"META"` en `globals().get`; el hallazgo de índice dinámico parece falso positivo.
+- `rotacion.py:22` usa MD5 como semilla determinista de rotación, no como firma/integridad. Cambiarlo alteraría elecciones deterministas; no se cambia sin prueba de equivalencia.
+- Las URL de `tendencias.py`, `tendencias_estilos.py`, `buscar_generadores_video.py` y `media_api_clients.py` se construyen sobre hosts HTTPS fijos y parámetros codificados. En cambio, `generar_frames.py` y `generar_guion_llm.py` aceptan base URL desde variables de entorno; deben exigir HTTPS y rechazar esquemas locales. `descargar_sfx.py` consume una URL de la respuesta de Wikimedia y `publicar.py` consume `upload_url` de TikTok; ambos requieren allowlist de host/protocolo antes de descargar/subir.
+- El resultado suprimido de `HTTPSConnection` no cuenta entre los 26 activos.
+
+No se parcheó automáticamente: los hallazgos mezclan warnings de baja confianza, rutas configurables y acciones de workflow; no es seguro aplicar una sustitución global. La corrección debe ser por origen de URL, pinning de SHA verificado y pruebas específicas, sin ejecutar workflows ni despachar contenido.
