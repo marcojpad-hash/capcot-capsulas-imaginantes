@@ -122,6 +122,19 @@ def validar_punto_mapa(point):
     return 0 <= ra < 360 and -90 <= dec <= 90
 
 
+def validar_bounds_mapa(bounds):
+    """Valida bounds terrestres [lat_min, lon_min, lat_max, lon_max]."""
+    if not isinstance(bounds, (list, tuple)) or len(bounds) != 4:
+        return False
+    if any(isinstance(value, bool) for value in bounds):
+        return False
+    try:
+        lat_min, lon_min, lat_max, lon_max = (float(value) for value in bounds)
+    except (TypeError, ValueError):
+        return False
+    return (-90 <= lat_min < lat_max <= 90) and (-180 <= lon_min < lon_max <= 180)
+
+
 def validar(path, doi=False):
     errs, warns = [], []
     with open(path, encoding="utf-8") as f:
@@ -251,6 +264,9 @@ def validar(path, doi=False):
                 bounds = area.get("bounds") if isinstance(area, dict) else None
                 if not isinstance(bounds, (list, tuple)) or len(bounds) != 4:
                     errs.append(f"{sid}: región de mapa sin bounds [lat_min, lon_min, lat_max, lon_max]")
+                    continue
+                if any(isinstance(value, bool) for value in bounds):
+                    errs.append(f"{sid}: bounds de región no numéricos")
                     continue
                 try:
                     lat_min, lon_min, lat_max, lon_max = (float(value) for value in bounds)
