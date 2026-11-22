@@ -560,3 +560,94 @@ Cierre: no se promovió ni redispatchó contenido, no se generaron medios, no se
 - `2026-11-22_genes-estatura-etapas`: `NOT_DISPATCHABLE` por ausencia de copia de cola y estado 404; `PENDIENTE_AUDITOR`. No hay conflicto con el proyecto Pulsar de main, cuyo `programacion.json` declara 13:30 CDMX.
 - Robot orbital: `NOT_DISPATCHABLE` por ruta anidada y `PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR`; el estado individual sigue 404 aunque haya marker de handoff y medios en main.
 - Commits de este corte: storyboard restaurado sin `narrative_qa` no independiente (blob `e0e32f9705bba8ccd87dfd6e24c2d36b11724346`); control actualizado en `401a1a79e14aef12c455a2153558d7b3579cea78`; radar actualizado en `8563d76f0503d924bdf0776f5568fa69a58efd11`. El control y el radar se verificaron por lectura de vuelta. No se modificó `data/*.json`.
+
+
+## Corte de auditoría independiente — 22-nov-2026, 15:54 CDMX
+
+**Corte de contenido releído:** feature ``25e1ecfc96faf9a40f86a9feb0e30af90d9d608b``; main ``abc699b9f7523cd39477896492efd0f3c767cda0``. Este addendum sustituye los estados pendientes/obsoletos de los cortes anteriores cuando se contradigan con los JSON actuales.
+
+### Inventario vigente y proyectos del 22-nov
+
+El árbol feature contiene 89 ``proyectos/<id>/storyboard.json``. De ellos, cuatro corresponden a la fecha actual; no son tres:
+
+| Project ID | Slot / cesta | Narrativa | Preflight estático |
+|---|---|---:|---|
+| ``2026-11-22_voyager-1-un-dia-luz`` | 07:00 / ``manana`` | FAIL 83; ``FECHA_DE_HITO_Y_CONFIRMACION_CONFUNDIDAS`` | 8 escenas, 180 palabras, 84 s, gancho 4 |
+| ``2026-11-22_bao-estrella-fusion-andromeda`` | 13:30 / ``slot_cesta`` ausente | FAIL 84; ``STAKES_NO_EXPLICADOS`` | 8 escenas, 192 palabras, 84 s, gancho 6 |
+| ``2026-11-22_yubarta-genoma-soplo`` | 17:00 / ``intermedio_1`` | PASS 90; siete checks true, flags vacías | 8 escenas, 180 palabras, 84 s, gancho 4 |
+| ``2026-11-22_genes-estatura-etapas`` | 23:30 / ``slot_cesta`` ausente | **FAIL 72**, registrado en esta auditoría | 8 escenas, 231 palabras, 84 s, gancho 5 |
+
+En los cuatro, el preflight estático confirma voz ``edge-tts / es-MX-JorgeNeural / +7% / -2Hz``, estilo existente en catálogo, ``prompt_base`` literal, source_ids internos válidos, capa de mapa y capa de dato/gráfico, ``approved_assets=[]``, ``export.render_status=NOT_GENERATED`` y ausencia de ``asset_filename``, ``asset_type`` y rutas de medios. No se ejecutó el validador oficial para estos cuatro; esta comprobación no equivale a CI ni a ``--check-doi``.
+
+**QA independiente nuevo de genética de estatura:** lectura exclusiva de la narración concatenada; ``narrative_qa.status=FAIL``, ``score=72``, ``review_basis=lectura_en_frio_solo_narracion``. Checks exactos: ``pregunta_central_reconstruible=true``, ``apertura_in_medias_res=false``, ``progresion_por_escena=false``, ``transiciones_causales=false``, ``giro_cientifico_explicado=false``, ``limite_evidencia_explicito=true``, ``payoff_cierre_apertura=true``. ``critical_flags``: ``APERTURA_DEFINICIONAL_NO_IN_MEDIAS_RES``, ``MAPA_DE_INSTITUCIONES_ROMPE_CONTINUIDAD_NARRATIVA``, ``GIRO_CIENTIFICO_NOMBRADO_SIN_MECANISMO_EXPLICADO``. La pregunta se reconstruye y el final vuelve a la premisa, pero la apertura es declarativa, la frase del mapa interrumpe la narración y la asociación proteína/diabetes no explica el mecanismo. No se reescribieron narración ni claims. El JSON fue releído y conserva FAIL/72.
+
+Correcciones documentales sincronizadas en ese storyboard: se sustituyó la nota que decía que ``narrative_qa`` estaba deliberadamente ausente y se actualizó ``trend_source.note``; no se modificó la narración. El DOI ``10.1038/s41467-026-79465-x`` está registrado como ``VERIFICADO_CROSSREF`` por la investigación previa; no se hizo una nueva consulta Crossref en este run. El proyecto no tiene ``slot_cesta``; no está seleccionado ni promovido.
+
+### Cruce de slots con main
+
+``main/data/tt_fb_alineacion_2026-11-22.json`` y ``main/data/publicaciones.json`` muestran ocupación real/programada que bloquea tres slots:
+
+- 07:00: Salem, YouTube ``N21TIYdONZo``, público; TikTok y Facebook publicados. Conflicto con Voyager.
+- 13:30: Gutenberg, YouTube ``YXndoPSSeaY``, TikTok y Facebook programados. Conflicto con Bao. Además, ``main/proyectos/2026-11-22_pulsar-criptografia/programacion.json`` declara 13:30, pero registra ``yt_programado=false``, ``mp4=false`` y privacidad ``private``: discrepancia adicional del mismo slot, no resuelta.
+- 17:00: Ada, YouTube ``Sc0cX9ejxuw``, TikTok y Facebook programados. Conflicto con Yubarta, aunque su QA narrativo sea PASS.
+- 23:30: no aparece publicación coincidente en main para el 22-nov; el borrador de genética no puede ocuparlo porque su QA es FAIL/72.
+
+Bao comparte el DOI ``10.1038/s41586-026-11221-z`` y el tema de estrella dentro de estrella con el proyecto del 19-nov; queda señalado como duplicación temática interdiaria. El DOI de Bao continúa ``PENDIENTE_RESOLVEDOR``. No se promovió ninguno de los cuatro.
+
+### Lote obligatorio 5–7 noviembre: relectura estructural
+
+Los doce ``project_id``, ``fecha_objetivo``, ``slot_local`` y ``slot_cesta`` coinciden con los doce registros de ``data/horario_semana_2026-11-01_07.json``. El slot 7-nov 17:45 corresponde a ``2026-11-07_inter-nubes-pesan``. El storyboard canónico ``2026-11-05_inter-arboles-se-comunican`` sí trata redes micorrícicas y Karst et al. 2023; no hay desajuste de tema. ``2026-11-05_inter-arboles-mito-respiran`` es otra variante en bloqueados y no se confundió con el canónico.
+
+Se conservan los QA narrativos existentes sin repetir la lectura: Venus PASS/88; Arena cantante PASS/94; Palomitas FAIL/82; Árboles FAIL/78; Rayo globular FAIL/81; Ballena FAIL/80; Aguacate FAIL/79; Ranas FAIL/83; Huesos FAIL/82; Hielo caliente FAIL/81; Pulpo FAIL/72; Nubes FAIL/78. Los dos PASS no son promovibles por estructura.
+
+Conteo estático exacto: 85 escenas en los doce storyboards. Faltan en las 85 escenas los seis campos exigidos por la compuerta: ``dramatic_beat``, ``scene_function``, ``causal_bridge_from_previous``, ``question_state``, ``reason_to_continue`` y ``new_information`` (**510 campos ausentes**). Además, 75 escenas tienen ``sfx=[]``, que el validador actual trata como campo vacío (**75 fallos adicionales; 585 valores requeridos ausentes en total**). La voz, prompt_base y referencias de fuentes sí están presentes; hay mapas y capas de dato. ``approved_assets=[]``, render ``NOT_GENERATED`` y no hay rutas de medios. No se ejecutó el validador local; la estructura bloquea incluso a Venus y Arena. En ``2026-11-07_inter-pulpo-suenos``, el tema coincide, pero la fuente citada corresponde a *Octopus laqueus*, no a *Octopus insularis*: desajuste de especie/fuente que no se debe convertir en un desajuste de slot.
+
+### Backlog interdiario y CI
+
+- ``2026-11-18_dato-catorce-campos-hidrotermales``: el JSON actual ya contiene FAIL/68, cuatro flags y ``estado=BORRADOR_PENDIENTE_QA_NARRATIVA``; ``ESTADO_EJECUCION.md`` está corregido a ``BORRADOR_EN_PROYECTOS_NO_APTO_PARA_PROMOCION``. No se repitió su QA.
+- Kuroshio conserva PASS/90. Se verificó una ejecución posterior que faltaba en el estado documental: workflow run ``44951621909``, job ``136990599397``, commit ``ed8659ec7184d51cdd84d3575a5ac57c1595ce2c``, resultado SUCCESS. Comando exacto: ``python scripts/validar_storyboard.py proyectos/2026-11-18_dato-kuroshio-puente-atmosferico/storyboard.json``; log ``OK``, salida 0; el segundo paso concluyó ``Expediente textual íntegro; medios no generados; publicación no autorizada.``. Los blobs de storyboard, validador y workflow coinciden con la rama actual. **No** se usó ``--check-doi``; el DOI ``10.1038/s41561-026-02139-2`` sigue ``PENDIENTE_RESOLVEDOR``. Se actualizó ``ESTADO_EJECUCION.md``; el estado sigue no apto.
+- Los QA anteriores de 19–21-nov y 23-nov se conservaron; no se repitieron porque no se identificó cambio de narración. El inventario auditado sigue siendo 26 proyectos: **9 PASS / 17 FAIL / 0 pendientes**. El proyecto futuro 23-nov no se cuenta como proyecto del día actual.
+
+### Cola, dispatch y recepción
+
+Relectura del árbol: 89 storyboards en proyectos; **cero** JSON planos en ``cola/entrada/*.json``; un único paquete anidado ``cola/entrada/2026-11-09_dato-robot-ensambla-orbita/storyboard.json``; cero archivos en ``cola/estado/``; un marker en ``handoffs/grok_inbox/2026-11-09_dato-robot-ensambla-orbita.json``. No hay carpetas ``salidas/`` para los cuatro proyectos del 22-nov ni para el robot.
+
+``capcot-grok-dispatch.yml`` escucha ``cola/entrada/*.json`` y su selector de ``workflow_dispatch`` usa profundidad 1. Por tanto, el paquete robot anidado es ``NOT_DISPATCHABLE_POR_SELECTOR``; los cuatro proyectos del 22-nov y los doce del lote 5–7 son ``NOT_DISPATCHABLE`` porque solo están en ``proyectos/``. No se creó ninguna copia de cola. El marker robot dice ``pending``; solo acredita escritura del marker, no lectura por Grok.
+
+Para los 26 storyboards del alcance y el robot, ``cola/estado/<project_id>.json`` no existe: **27 ``RECEPCION_GROK_NO_CONFIRMADA``**. No se creó ni modificó ningún estado.
+
+``scripts/procesar_cola.py`` recorre tanto JSON planos como ``*/storyboard.json`` y compara el prefijo de fecha con ``--fecha``; por defecto usa la fecha CDMX actual y no selecciona historia anterior automáticamente. Sin embargo, permite sobrescribir ``--fecha`` con una fecha histórica: la restricción a hoy es el comportamiento predeterminado, no una prohibición absoluta del CLI.
+
+Corrección respecto del addendum del 20-nov: la versión actual de ``scripts/registro_editorial.py`` **sí** recorre ``handoffs/grok_inbox/`` con ``rglob("*.json")``, además de proyectos, entrada, bloqueados y salidas. El registro ahora descubre markers, pero no los convierte en recibos Grok.
+
+### Producción preexistente del robot — no redispatch
+
+En ``main/cola/entrada/2026-11-09_dato-robot-ensambla-orbita/`` se verificaron realmente ``capsula.mp4`` (25,795,339 bytes), portada, nueve frames, subtítulos, ``metadata.json``, ``programacion.json`` y ``qa.json``. QA audiovisual: 21/21, duración medida 87.57 s. YouTube ``ZG4iQgmWrLI``; ``publish_at=2026-11-22T01:00:00Z``, programado para 21-nov 19:00 CDMX. TikTok y Facebook figuran programados, pero sus IDs son null. Discrepancia: ``metadata.json`` conserva ``privacyStatus=private``, mientras ``programacion.json`` dice ``private→público`` y ``estado=programado``; no se verificó el estado público real. No existe ``salidas/<id>/``. Clasificación: ``PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR``; medios verificados en main, no en feature. No cancelar ni redispatchar.
+
+### Datos, estilos y rotación
+
+Main es la referencia de ocupación: 52 publicaciones, 39 registros de rotación y 32 estilos usados. Los snapshots feature tienen 22 publicaciones, 27 rotaciones y 21 estilos, por lo que no son autoridad para disponibilidad. ``temas_del_dia.json`` sigue limitado a 24–28 oct; ``horarios.json`` está actualizado al 9-nov; ``vistas_historico.json`` y ``balances_6h.json`` llegan a 28-oct; ``tendencias_estilos.json`` llega a 31-oct. ``data/cola.json`` conserva un registro fallido del 31-oct. ``endscreens_rotacion.json`` se actualizó el 22-nov 14:30, pero es rotación de end screens, no selección editorial. Ningún ``data/*.json`` fue modificado.
+
+En la rotación main, ``art_deco_poster`` aparece el 17 y 19-nov (repetición reciente para Bao); ``risografia`` aparece el 27-oct y 17-nov (Voyager); ``tatuaje_acuarela`` aparece el 24-oct (Yubarta); ``papel_stop_motion`` no aparece en los 39 registros ni en los 32 estilos usados, aunque sí existe en el catálogo. No se certifica unicidad a partir de los snapshots feature atrasados.
+
+``historial_youtube.json`` no está presente en el árbol consultado. Los snapshots antiguos conservan algunos ``yt_id_historial``; no se intentó borrar ni cancelar IDs externos.
+
+### Pull requests y Actions
+
+- PR #3: OPEN/DRAFT, base ``main``, 697 archivos, +81,195/-1,697, ``mergeable=false``, ``mergeable_state=dirty``. Es la rama operativa, pero no está integrada.
+- PR #14: OPEN hacia ``main``; modifica storyboard y ledger, añade ``asset_filename`` a las ocho escenas, conserva QA histórico FAIL/82 y no aporta ejecución ``--check-doi``. Rechazado como preproducción bajo el contrato actual.
+- PR #15: OPEN hacia feature; modifica solo ``scripts/validar_storyboard.py`` y su test. La propuesta de hardening no está integrada: el validador actual sigue en blob ``50335bb6``, mientras el head del PR ofrece ``a52a2f46``. Run Semgrep ``45004335607`` FAILURE; log literal: ``Findings: 26 (26 blocking)`` y ``Process completed with exit code 1.``. No se encontró ejecución de sus pruebas unitarias.
+- PR #4: OPEN; solo cambia el estado del robot para decir que los nueve frames permanecen en la conversación Grok. El propio diff reconoce que ``frames/`` está vacío en GitHub; no equivale a subida ni recepción.
+- PR #6: OPEN; añade ``.github/workflows/supervisor.yml`` para todos los pushes/PR y ``secrets: inherit``; no integrar sin revisión de seguridad.
+- PR #13: OPEN hacia main; solo añade el informe de auditoría de cuásares. PR #7–9: dependabot, actualizaciones de acciones. Ningún PR se fusionó.
+- Último run de dispatch accesible: ``41306776689``, 1-nov, FAILURE; error literal: ``Falta configurar GROK_WEBHOOK_URL.``. Es una ejecución histórica con una versión anterior del workflow. La versión actual trata el webhook como opcional y escribe marker; no hay run reciente que pruebe entrega. ``GROK_WEBHOOK_URL`` y ``GROK_WEBHOOK_TOKEN`` no se verificaron; no se consultaron ni registraron valores.
+- No hubo revisión de cambios de API porque no se identificó un cambio oficial nuevo que justificara abrir esa compuerta.
+
+### Cambios documentales de este corte
+
+- ``proyectos/2026-11-22_genes-estatura-etapas/storyboard.json``: QA independiente FAIL/72 y sincronización de las notas de estado; narración y claims intactos.
+- ``docs/briefs/2026-11-22_RADAR_CAPCOT.md``: addendum que sustituye la nota de QA pendiente.
+- ``proyectos/2026-11-18_dato-kuroshio-puente-atmosferico/ESTADO_EJECUCION.md``: run #11 y corrección de obsolescencia; estructura PASS, DOI aún bloqueante.
+- Este control: addendum de cierre, con scores y estados cotejados contra JSON releídos.
+
+No se promovió ni redispatchó contenido. No se dispararon workflows ni se enviaron payloads. No se generaron imágenes, frames, voz, audio, video ni renders; no se publicó, no se consumieron créditos, no se modificaron ``data/*.json``, main, secretos, permisos ni workflows.
