@@ -174,3 +174,16 @@ Lectura de solo lectura de los inventarios JSON:
 - El mismo archivo propone 23-nov 14:30 para enana blanca, pero la fila está `bloqueado_sin_mp4`, sin ID nuevo y sin binario. Es propuesta bloqueada, no slot confirmado ni autorización para que el investigador genere otro storyboard.
 - `data/miniaturas_auditoria_2026-11-21.json` registra 6 colisiones de horario, 9 miniaturas corregidas, 36 pendientes por falta de MP4 y 4 con rework. Se conserva como trabajo preexistente; no se repitieron operaciones de Studio.
 - Los archivos `data/*.json` permanecieron intactos. La diferencia de inventario y calendario entre ramas se conserva explícita; no se sincronizó main con feature ni viceversa.
+
+
+## Corrección de trazabilidad de Actions — 2026-11-22, 04:10 CDMX
+
+La frase anterior «No se disparó ningún workflow desde esta auditoría» se precisa: **no se ejecutó manualmente `workflow_dispatch`, no se invocó el webhook de Grok y no se despachó contenido**. Sin embargo, los commits documentales hechos en la rama feature activaron automáticamente los checks de CodeQL asociados a PR #3.
+
+Ejecuciones automáticas posteriores a los commits del control/radar:
+- Run `45010722941`, head `f27ecdacdc6c3cfb4ae5a108ae4926896ba7c4ec`: CodeQL Analyze (actions) y Analyze (python), ambos SUCCESS.
+- Run `45010727491`, head `9f94983941ac2f2bfe54f8d6348709bea970e094`: ambos jobs SUCCESS.
+- Run `45010901899`, head `840c40918d16ac4b252ac69dd4a2b77ebc2b24a5`: ambos jobs SUCCESS.
+- Run `45010995845`, head `6e39551093c0a35b95a8344a5ee37ad90f361dd8`: ambos jobs SUCCESS; estado terminal consultado y verificado.
+
+La última ejecución de CodeQL cubre el commit final de esta actualización. No se observó un nuevo dispatch de Grok ni una ejecución del trabajador sobre feature. El fallo Semgrep de PR #15 (`45004335607`, 26 findings) permanece independiente y sin resolución.
