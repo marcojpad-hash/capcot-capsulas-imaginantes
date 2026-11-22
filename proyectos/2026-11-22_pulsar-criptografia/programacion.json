@@ -1,0 +1,16 @@
+{
+  "project_id": "2026-11-22_pulsar-criptografia",
+  "plataforma": ["youtube", "tiktok"],
+  "publish_at": "2026-11-22T19:30:00Z",
+  "ventana": "mediodia",
+  "hora_cdmx": "2026-11-22 13:30",
+  "caption_tt": "Un algoritmo de criptografía encontró un púlsar que giraba 261 veces por segundo en solo 10 horas. El método viejo necesitaba 600 años. #Shorts #ciencia #pulsar #Fermi #astronomia",
+  "titulo_yt": "El púlsar que un truco de criptografía encontró en horas #Shorts",
+  "descripcion_yt": "Científicos usaron un método de lattice tomado de la criptografía para encontrar PSR J1622-7204 en datos públicos de Fermi en el equivalente a 10 horas de cómputo, contra 600 años del método anterior.\n\nDOI: 10.1103/vlt2-xzgk\nTikTok: https://www.tiktok.com/@datosyociosidades\n\nEsto fue Datos y ociosidades.",
+  "tags": ["pulsar", "criptografia", "Fermi", "NASA", "astronomia", "ciencia", "Shorts", "datosyociosidades"],
+  "privacidad": "private",
+  "estado": "programado_para_publicar",
+  "nota_tiktok": "Mj sube desde el teléfono en el slot 13:30 CDMX. No publicar por API.",
+  "mp4": false,
+  "yt_programado": false
+}
