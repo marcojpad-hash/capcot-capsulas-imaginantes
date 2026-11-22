@@ -24,7 +24,7 @@ def check_doi(doi):
         return False
     connection = None
     try:
-        connection = http.client.HTTPSConnection("api.crossref.org", timeout=20, context=ssl.create_default_context())  # nosemgrep: python.lang.security.audit.httpsconnection-detected
+        connection = http.client.HTTPSConnection("api.crossref.org", timeout=20, context=ssl.create_default_context())  # nosemgrep: python.lang.security.audit.httpsconnection-detected.httpsconnection-detected
         path = "/works/" + quote(doi, safe="/-._;()")
         connection.request("GET", path, headers={"User-Agent": "capcot-validador/2.0"})
         response = connection.getresponse()
