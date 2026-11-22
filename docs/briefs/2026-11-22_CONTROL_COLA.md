@@ -349,3 +349,37 @@ La lectura de árbol confirma siete artefactos bloqueados: cuatro carpetas con `
 La variante `comida-palomitas-explotan` no comparte `project_id` con el storyboard canónico `comida-palomitas`. Rayo globular, arena cantante y nubes pesan como JSON plano solamente, sin carpeta/estado. Los otros cinco IDs canónicos del lote no tienen copia bloqueada.
 
 Resultado: `BLOQUEADO_DUPLICADO_DIVERGENTE` para las cuatro parejas; `BLOQUEADO_JSON_PLANO_SIN_CARPETA` para las otras tres. Como no existe copia activa en `cola/entrada`, no se hizo movimiento ni eliminación. Los 12 proyectos originales siguen en `proyectos/`; no tienen `ESTADO_EJECUCION.md` propio.
+
+
+### Backlog interdiario adicional — 18–20 nov (seis proyectos)
+
+La inspección completa de `proyectos/` encontró seis storyboards posteriores al lote 5–7 nov que no estaban en la tabla anterior. Se leyeron narraciones en frío, QA existente, fuentes, catálogo, mapas, rotación y árbol de producción. No se repitió ningún PASS ni se reescribió narración.
+
+| Proyecto | Slot | QA existente | Estado de slot / compuertas |
+|---|---:|---|---|
+| `2026-11-18_dato-catorce-campos-hidrotermales` | 23:30 | FAIL 68 | Main ya tiene Hielo sucio `2a36r5QOvi4` a 23:30; conflicto de slot y estilo `papel_rasgado_capas` repetido por Sinergia de algas del 18-nov |
+| `2026-11-18_dato-kuroshio-puente-atmosferico` | 17:00 | PASS 90 | Sin video main encontrado al mismo slot; 17:00 sigue siendo ventana en prueba, no autorización regular; DOI visible pero Crossref/resolvedor no confirmado |
+| `2026-11-19_dato-dia-luz-dos-manos-oro-poroso` | 23:30 | PASS 91 | No se encontró publicación main al mismo slot; DOI `10.1038/s41467-026-78158-9` sin resolver; estilo `microscopio_psicodelico` repetido por Autismo/microbioma del 15-nov |
+| `2026-11-19_dato-estrella-dentro-de-estrella` | 17:00 | PASS 90 | 17:00 en prueba; DOI `10.1038/s41586-026-11221-z` sin resolver; `art_deco_poster` repetido por Baffin (17-nov) y Juno (19-nov) |
+| `2026-11-20_dato-dia-atlantico-humedad-sapropeles` | 23:30 | PASS 91 | Main ya tiene Metano `Eldk0fVWqpo` a 23:30; conflicto de slot; DOI `10.1038/s41561-026-02141-8` pendiente de resolvedor; `linograbado` repetido por Corales (16-nov) |
+| `2026-11-20_dato-marea-cerebral-en-sueno` | 17:00 | PASS 92 | 17:00 en prueba; DOI `10.1038/s43587-026-01270-4` pendiente de resolvedor; `neon_noir` coincide con Robot orbital del 21-nov |
+
+Los seis cumplen estructura: ocho escenas, 188–222 palabras, 78 s de escenas + 6 s de cortinilla, voz correcta, seis campos narrativos por escena, prompt_base del catálogo, mapa, capa de dato/gráfico, ambiente y SFX; `approved_assets=[]`, `NOT_GENERATED`, publicación pendiente. Los QA PASS tienen siete checks true y flags vacías; sus commits de QA son posteriores y separados de los commits redactores. Hidrotermales conserva FAIL 68 y sus cuatro flags. Los dos `ESTADO_EJECUCION.md` existentes (hidrotermales y Kuroshio) dicen BORRADOR; los otros cuatro no tienen ese archivo, permitido porque el Plan Maestro define el JSON como expediente de proyecto y las fuentes van incorporadas en él.
+
+Las seis consultas `cola/estado/<id>.json` devolvieron 404 exacto: `RECEPCION_GROK_NO_CONFIRMADA`. No hay copias en `cola/entrada/`, `cola/bloqueados/` ni `salidas/`. No se creó QA ni se promovió nada.
+
+### Rotación de estilos — contraste de 13 proyectos 18–23 nov
+
+La comparación manual contra `main/data/rotacion.json` (39 registros; últimos registros publicados 14–21 nov) detecta repeticiones recientes. `scripts/registro_editorial.py` es una vista de lectura y no aplica por sí sola un veto de estilo; se conserva la regla editorial explícita de no repetir:
+- `papel_rasgado_capas`: hidrotermales 18-nov / Sinergia de algas main 18-nov.
+- `microscopio_psicodelico`: oro poroso 19-nov / Autismo-microbioma main 15-nov.
+- `art_deco_poster`: estrella 19-nov y Bao 22-nov / Baffin main 17-nov y Juno main 19-nov.
+- `linograbado`: sapropeles 20-nov / Corales main 16-nov.
+- `neon_noir`: marea cerebral 20-nov / Robot main 21-nov.
+- `dibujo_cientifico_scratchboard`: Homo erectus 21-nov / ADN main 19-nov.
+- `pixel_art`: púlsar 21-nov / MXenes main 20-nov.
+- `risografia`: Voyager 22-nov / residual-LDL main 17-nov.
+
+Estilos sin repetición en ese corte: `atlas_antiguo` (Kuroshio), `pulp_comic_1940s` (Fentale), `tatuaje_acuarela` (yubarta) y `ligne_claire` (biodiversidad). La repetición no se corrige cambiando el estilo en auditoría; requiere una decisión editorial del investigador. Los proyectos siguen bloqueados por sus respectivos slots, DOI y/o QA.
+
+Con estos seis expedientes, el inventario auditado del backlog interdiario pasa a 25 storyboards: 12 del lote 5–7 nov, seis del 18–20 nov y siete del 21–23 nov. Sumados al robot orbital, las lecturas de `cola/estado` son 26 respuestas 404; no hay recibo Grok confirmado.
