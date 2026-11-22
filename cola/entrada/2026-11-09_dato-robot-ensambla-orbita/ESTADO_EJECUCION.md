@@ -39,3 +39,19 @@ La reconciliación previa que afirmaba que los medios estaban en `main` no se pu
 Se conserva `PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR`: `main/data/publicaciones.json` mantiene el YouTube ID `ZG4iQgmWrLI` y `publishAt=2026-11-22T01:00:00Z` (21-nov, 19:00 CDMX), además de programación registrada para TikTok y Facebook. No cancelar ni redispatchar.
 
 `cola/estado/2026-11-09_dato-robot-ensambla-orbita.json` sigue devolviendo 404: `RECEPCION_GROK_NO_CONFIRMADA`. El marcador en `handoffs/grok_inbox` no sustituye el acuse de estado.
+## Reconciliación de medios y programación — 22 nov 2026
+
+**Corrección de la clasificación de medios:** la búsqueda anterior se limitó a `salidas/2026-11-09_dato-robot-ensambla-orbita`, que no existe. La lectura del árbol completo de `main` encontró los medios en `cola/entrada/2026-11-09_dato-robot-ensambla-orbita/`; por tanto, el antiguo `MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO` queda **SUPERSEDIDO**. Estado actual: `MEDIOS_VERIFICADOS_EN_MAIN_COLA_ENTRADA; NO_PRESENTES_EN_FEATURE`.
+
+Evidencia de árbol `main`:
+- `capsula.mp4`: SHA `72d7ca5757a18b5d7a248503ac0e096dc0ac37ff`, 25,795,339 bytes.
+- `portada.jpg`: SHA `c8cd5a72f88c95c95b97f2ed81ee254c783f4a86`, 213,315 bytes.
+- Nueve frames `scene_001.jpg`–`scene_009.jpg` presentes.
+- `programacion.json`: SHA `395eed4055388a8eaab6b89a3008061e4097118b`; `qa.json`: SHA `9dc15174cf92bd354edd4bc0b8309fddceeeaf52`; `metadata.json`: SHA `5a6b2a08752a499aa2d18774705e091adc0f919c`.
+- QA audiovisual: 21/21 checks, 87.57 s. Esto no sustituye el `narrative_qa` PASS 90 del storyboard.
+
+**Producción preexistente, no redispatchar:** `programacion.json` mantiene `estado=programado`, YouTube `ZG4iQgmWrLI`, `publish_at=2026-11-22T01:00:00Z` (21-nov 19:00 CDMX), TikTok y Facebook programados. `publishAt` ya quedó en el pasado, pero no se confirmó el estado público: el fetch de la URL de YouTube devolvió `DisabledError`; no existe archivo `historial_youtube` en el árbol y `vistas_historico.json` no contiene ese ID. `metadata.json` conserva `privacyStatus=private` mientras `programacion.json` dice `programado`; se registra como **PUBLICACIÓN_REAL_NO_VERIFICADA / RIESGO_DE_ESTADO_PROGRAMADO_ANTIGUO**. No cancelar, reprogramar ni redispatchar.
+
+El paquete de `main` está anidado en `cola/entrada/<id>/`; el workflow actual selecciona solo JSON planos de primer nivel, así que su ruta es `NOT_DISPATCHABLE_POR_SELECTOR`. El paquete de `feature` también es anidado y solo contiene storyboard/`.gitkeep`. El archivo de estado de `main` permanece con texto del 10-nov que dice audio/video no generados y frames pendientes; esa ficha es **DESACTUALIZADA** frente a los medios, QA y programación actuales. `cola/estado/<id>.json` sigue 404: `RECEPCION_GROK_NO_CONFIRMADA`. No se infiere recepción por la carpeta ni por GitHub.
+
+No es un segundo proyecto ni un slot nuevo: el mismo `project_id` conserva en storyboard el slot original 9-nov 23:30, mientras la programación de producción lo movió a 21-nov 19:00. La clasificación correcta sigue siendo `PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR`; no se declara conflicto entre proyectos distintos ni se altera `main`.
