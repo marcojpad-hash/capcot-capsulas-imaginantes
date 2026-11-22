@@ -19,7 +19,7 @@ VOICE = {"engine": "edge-tts", "voice_id": "es-MX-JorgeNeural", "language": "es-
 
 def check_doi(doi):
     """Consulta Crossref por HTTPS fijo; el DOI nunca controla host ni esquema."""
-    if not isinstance(doi, str) or not re.fullmatch(r"10\\.\\d{4,9}/[^\\s?#\\\\]+", doi):
+    if not isinstance(doi, str) or not re.fullmatch(r"10\.\d{4,9}/[^\s?#\\]+", doi):
         return False
     connection = None
     try:
