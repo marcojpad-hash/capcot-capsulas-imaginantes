@@ -267,3 +267,5 @@ Entrega: `cola/entrada/2026-11-01_dato-cambio-horario-corazon/` con `storyboard.
 - **Storyboard:** 8 escenas, sin frames. Penúltima = límite (120–170 car.); última = giro + pregunta que atrape (110–170 car.) + sello «Esto fue Datos y ociosidades.». Estructura distinta a «¿Sabías qué?».
 - **Entrega:** `cola/entrada/2026-11-22_dato-<slug>/` con storyboard.json, fuentes.md, ESTADO_EJECUCION.md = PREPARADO_PENDIENTE_REVISION_GROK antes de 21:00 CDMX. TT AI ON / FB OFF. Hashtags 3–5.
 - Sin frames, audio ni publicación. QA/montaje/publicación: Grok app.
+
+> Imaginantes 22-nov ~16:00 CDMX: dato 23:30 = borrador existente `proyectos/2026-11-22_genes-estatura-etapas/storyboard.json` (Nature Communications, DOI 10.1038/s41467-026-79465-x, 8 escenas, ~84 s). NO duplicar ni crear otro brief. Falta QA narrativo independiente (PENDIENTE_AUDITOR) y paso a cola/entrada. Grok app: QA→frames→montaje→YT+TT+FB 23:30 CDMX (TT AI ON, FB sin AI, UI NY = CDMX+1h). Si no llega a cola antes de ~21:00, la guardia de 22:00 cubre con reserva.
