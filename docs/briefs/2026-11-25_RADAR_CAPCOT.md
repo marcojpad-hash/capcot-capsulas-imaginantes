@@ -4,7 +4,7 @@
 **Rama:** `feature/capcot-video-discovery-continuity`  
 **Fecha objetivo examinada:** 2026-11-25  
 **Resultado editorial:** cinco candidatos documentados; ninguno asignado a storyboard.  
-**Estado de cupo:** `NO_SLOT_AUTORIZADO` — seis programaciones registradas para el día frente a `MAX_POR_DIA=5`.
+**Estado de cupo:** `NO_SLOT_AUTORIZADO` — siete programaciones registradas para el día frente a `MAX_POR_DIA=5`.
 
 ## 1. Fuentes de tendencias y respaldo
 
@@ -93,8 +93,8 @@ Se intentó abrir Crossref REST y los resolvedores DOI desde esta sesión. Cross
 
 `scripts/rotacion.py` fija `MAX_POR_DIA=5`. Se contrastaron los registros de `main` en solo lectura:
 
-- **25-nov:** seis programaciones registradas (6/5): 07:00 `cPNiOFeY5_k`, 13:30 `G1ByWhjfxls`, 17:00 `L6ggmPAwBOA`, 19:00 `A3JK0gYuqG8`, más dos reworks con `publishAt` local 10:00 `9RxTSifAcpo` y 15:00 `3rwo_sK1e18`.
-- **26–28 nov:** cuatro programaciones del snapshot principal más dos reworks por día (6/5 cada día).
+- **25-nov:** siete programaciones registradas (7/5): cinco videos del snapshot principal —07:00 `cPNiOFeY5_k` y `W9g2tPZTpD4` (colisión, mismo `publishAt`), 13:30 `G1ByWhjfxls`, 17:00 `L6ggmPAwBOA` y 19:00 `A3JK0gYuqG8`— más dos reworks con `publishAt` local 10:00 `9RxTSifAcpo` y 15:00 `3rwo_sK1e18`.
+- **26–28 nov:** cinco videos del snapshot principal más dos reworks por día (7/5 cada día). El quinto video aparece en las colisiones del mismo `publishAt`: 26-nov 17:00 `-1DRh_qj7Bg`, 27-nov 07:00 `nd0rs6iVy8E` y 28-nov 17:00 `fcSNbU809ao`.
 - **29-nov:** cuatro programaciones del snapshot más un rework (5/5).
 
 Las programaciones provienen de `main/data/miniaturas_auditoria_2026-11-21.json` y `main/data/rehechos_2026-11-22.json`. Son evidencia de programación registrada; no se canceló, reprogramó ni duplicó nada. No hay slot autorizado para un nuevo storyboard el 25-nov.
