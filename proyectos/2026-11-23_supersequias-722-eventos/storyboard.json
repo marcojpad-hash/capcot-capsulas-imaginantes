@@ -1,0 +1,389 @@
+{
+  "_schema": "CAPCOT_STORYBOARD_TEXT_V2",
+  "project_id": "2026-11-23_supersequias-722-eventos",
+  "serie": "Datos y ociosidades",
+  "fecha_objetivo": "2026-11-23",
+  "slot_local": "23:30",
+  "title": "Una sequía, tres relojes",
+  "titulo": "Una sequía, tres relojes",
+  "gancho": "Una sequía, tres relojes",
+  "language": "es-MX",
+  "aspect_ratio": "9:16",
+  "target_duration_seconds": 84,
+  "estructura": "pregunta",
+  "audience": "Público general interesado en ciencia, clima y agua; no es contenido infantil.",
+  "occasion": "Slot 23:30 CDMX. Libre en los registros de main y feature al corte 2026-11-23 00:27; no se verificó YouTube Studio externo.",
+  "trend_source": "Nature Scientific Data, Niu et al. (2026), “Event inventory dataset of super drought under global warming”, publicado el 2026-11-23; DOI 10.1038/s41597-026-08886-6.",
+  "resumen": "Un inventario global identifica 722 eventos de supersequía entre 1961 y 2024 al exigir que un índice combinado cruce un umbral extremo en tres escalas temporales simultáneas. Dos eventos históricos permiten ver cómo funciona la definición y dónde tiene límites la validación.",
+  "narrative_contract": {
+    "central_question": "¿Cómo reconocer una sequía que se extiende al mismo tiempo por tres escalas temporales?",
+    "promise": "Seguir dos eventos históricos y descubrir la regla que permite reunirlos en un catálogo global.",
+    "stakes": "Una sola escala temporal puede ocultar un déficit persistente; una definición compuesta permite comparar episodios sin confundirlos con todos los desastres.",
+    "scientific_turn": "El catálogo exige CMI ≤ −1.8 simultáneamente en ventanas de 3, 6 y 12 meses y agrupa celdas vecinas en eventos.",
+    "evidence_limit": "Es un descriptor de datos, no una atribución causal de cada evento al calentamiento global. La coincidencia GDIS de 71% corresponde al subconjunto tras excluir África interior y zonas costeras; los centroides no son límites de impacto.",
+    "payoff": "La clave no es un mes seco: es que el déficit coincida en tres relojes."
+  },
+  "arco": {
+    "hook_medias_res": "En 2003, una sequía atravesó Europa; en 2006, otra golpeó el suroeste de China.",
+    "desarrollo": "Un catálogo reúne episodios que coinciden en escalas de 3, 6 y 12 meses.",
+    "giro": "No basta una sola escala: el índice debe cruzar el umbral extremo en las tres al mismo tiempo.",
+    "cierre_historia": "El inventario identifica 722 eventos con una duración media reportada de 6.9 meses.",
+    "reflexion_o_pregunta": "Una sequía puede apilar tres relojes; el catálogo permite compararla, pero no atribuye cada evento a una causa."
+  },
+  "linea_tematica_provisional": "Ciencia / clima / agua; clasificación de sequías compuestas y datos geográficos.",
+  "estilo_id": "collage_cientifico_vintage",
+  "estilo_visual": "Collage científico vintage",
+  "visual_identity": {
+    "style_id": "collage_cientifico_vintage",
+    "style_name": "Collage científico vintage",
+    "prompt_base": "vintage scientific collage, cut-out 19th century natural history engravings, botanical and anatomical plates, aged paper, muted pastel accents, one large specimen centered, plain background, not photorealistic, vertical 9:16, no text",
+    "palette": "crema, sepia, verde salvia, rosa viejo",
+    "lighting": "Luz de archivo cálida y uniforme; contraste suficiente para mapas y curvas, sin dramatización apocalíptica.",
+    "texture": "Papel envejecido, grabado de atlas, fibras visibles y tinta mate.",
+    "composition": "Composición editorial vertical; un foco visual por escena; mapa y gráficos como capas separadas; espacio limpio para subtítulos.",
+    "negative_prompt": "No photorealism, no 3D, no blue-gold lithography, no invented map boundaries, no invented event locations, no extra numerical labels, no watermark, no logo, no fake text, no apocalyptic imagery.",
+    "reference_assets": [],
+    "seed": null,
+    "seed_policy": "Sin semilla fija; consistencia por prompt_base y composición."
+  },
+  "typography_identity": {
+    "font_family": "DejaVu Sans",
+    "font_weight": "700 para gancho; 400 para subtítulos",
+    "title_style": "Máximo seis palabras; presente desde frame 0 en postproducción",
+    "subtitle_style": "Bloques de máximo tres palabras; zona segura inferior",
+    "hierarchy": "Gancho > dato/etiqueta > subtítulos",
+    "animation": "Un movimiento por plano; tipografía en postproducción"
+  },
+  "voice": {
+    "engine": "edge-tts",
+    "voice_id": "es-MX-JorgeNeural",
+    "language": "es-MX",
+    "rate": "+7%",
+    "pitch": "-2Hz",
+    "pad_seconds": 0.3,
+    "modo_pausas": "continuo"
+  },
+  "audio": {
+    "music_asset": null,
+    "music_plan": "sintetico:menor_calma; cama discreta, sin dramatización apocalíptica",
+    "ambience_plan": "Viento seco leve, papel de atlas y una gota aislada; diseño textual, sin audio generado."
+  },
+  "cortinilla_fuentes": {
+    "duration_seconds": 6,
+    "title": "Fuentes",
+    "source_ids": [
+      "SRC-001"
+    ],
+    "note": "Mostrar la referencia primaria y DOI; no generar ni adjuntar medio."
+  },
+  "sources": [
+    {
+      "id": "SRC-001",
+      "title": "Event inventory dataset of super drought under global warming",
+      "authors": "Niu et al.",
+      "journal": "Scientific Data",
+      "publication_date": "2026-11-23",
+      "doi": "10.1038/s41597-026-08886-6",
+      "doi_url": "https://doi.org/10.1038/s41597-026-08886-6",
+      "url": "https://www.nature.com/articles/s41597-026-08886-6",
+      "source_type": "primary_data_descriptor",
+      "primary_source": true,
+      "accessed_date": "2026-11-23",
+      "supports": [
+        "722 eventos identificados entre 1961 y 2024",
+        "duración media de 6.9 meses",
+        "definición CMI ≤ −1.8 simultánea a 3, 6 y 12 meses",
+        "centroide del evento europeo de 2003: 47°N, 15°E; periodo mayo–noviembre",
+        "centroide del evento del suroeste de China de 2006: 30°N, 104°E; periodo julio–octubre",
+        "139 de 234 registros GDIS coincidentes (59.4%); 71% después de excluir África interior y zonas costeras"
+      ],
+      "verification_status": "VERIFICADO_FUENTE_PRIMARIA",
+      "url_verification_status": "VERIFICADO_PAGINA_EDITORIAL",
+      "doi_verification_status": "PENDIENTE_RESOLVEDOR",
+      "verification_note": "La página editorial de Nature Scientific Data apareció como fuente primaria con título, fecha, DOI y contenido del artículo. La apertura directa de doi.org y el endpoint de Crossref no fueron accesibles mediante esta interfaz; no se declara el DOI verificado por resolvedor. No promover hasta cerrar esta comprobación."
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_001",
+      "arc": "hook",
+      "duration_seconds": 9,
+      "narration": "En 2003, una sequía atravesó Europa durante meses; en 2006, otra golpeó el suroeste de China. ¿Cómo reconocer cuándo el agua falta en varios plazos a la vez?",
+      "on_screen_text": "Dos sequías, dos épocas",
+      "visual_description": "Vintage atlas collage: Europe and southwest China as two separate drought episodes, cracked earth texture contained within abstract map fragments, no borders or labels, two distinct event marks.",
+      "image_prompt": "vintage scientific collage, cut-out 19th century natural history engravings, botanical and anatomical plates, aged paper, muted pastel accents, one large specimen centered, plain background, not photorealistic, vertical 9:16, no text, Vintage atlas collage: Europe and southwest China as two separate drought episodes, cracked earth texture contained within abstract map fragments, no borders or labels, two distinct event marks. Editorial vertical composition, accurate scientific visualization, no invented boundaries or labels.",
+      "capa": null,
+      "ambiente": "Viento seco leve, sin tono apocalíptico.",
+      "sfx": [
+        "ráfaga breve",
+        "golpe de papel"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "collage_cientifico_vintage",
+      "dramatic_beat": "hook",
+      "scene_function": "Abrir con dos eventos concretos ya ocurridos y plantear la pregunta central.",
+      "causal_bridge_from_previous": "Inicio: dos episodios históricos muestran que el problema no es un solo lugar.",
+      "question_state": "La pregunta queda abierta: ¿cómo se reconoce una sequía compuesta?",
+      "reason_to_continue": "La audiencia necesita una regla que una ambos casos.",
+      "new_information": "Se presentan dos episodios de validación del catálogo."
+    },
+    {
+      "id": "scene_002",
+      "arc": "question",
+      "duration_seconds": 9,
+      "narration": "Un equipo construyó un catálogo global que no cuenta cualquier periodo seco: busca sequías que coinciden en tres escalas, de tres, seis y doce meses.",
+      "on_screen_text": "Tres escalas",
+      "visual_description": "A single water drop over three stacked archival calendar strips labeled only by visual lengths, three, six and twelve month intervals, aged scientific plate collage.",
+      "image_prompt": "vintage scientific collage, cut-out 19th century natural history engravings, botanical and anatomical plates, aged paper, muted pastel accents, one large specimen centered, plain background, not photorealistic, vertical 9:16, no text, A single water drop over three stacked archival calendar strips labeled only by visual lengths, three, six and twelve month intervals, aged scientific plate collage. Editorial vertical composition, accurate scientific visualization, no invented boundaries or labels.",
+      "capa": null,
+      "ambiente": "Goteo aislado y viento de fondo.",
+      "sfx": [
+        "gota",
+        "paso suave"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "collage_cientifico_vintage",
+      "dramatic_beat": "question",
+      "scene_function": "Definir qué busca el inventario y prometer la explicación.",
+      "causal_bridge_from_previous": "Los casos de apertura llevan a la regla que los reúne.",
+      "question_state": "La pregunta se concreta: ¿qué significa coincidir en tres escalas?",
+      "reason_to_continue": "La regla debe distinguir un periodo seco común de una supersequía.",
+      "new_information": "El catálogo no cuenta cualquier periodo seco."
+    },
+    {
+      "id": "scene_003",
+      "arc": "method",
+      "duration_seconds": 10,
+      "narration": "La idea es seguir tres relojes del agua: señales meteorológicas, agrícolas e hidrológicas, aproximadas por esas escalas, no medidas independientes de lluvia, suelo y ríos.",
+      "on_screen_text": "Tres relojes del agua",
+      "visual_description": "Three parallel timeline bands of different lengths, rainfall, soil and reservoir motifs shown as conceptual icons rather than measured variables, vintage scientific collage.",
+      "image_prompt": "vintage scientific collage, cut-out 19th century natural history engravings, botanical and anatomical plates, aged paper, muted pastel accents, one large specimen centered, plain background, not photorealistic, vertical 9:16, no text, Three parallel timeline bands of different lengths, rainfall, soil and reservoir motifs shown as conceptual icons rather than measured variables, vintage scientific collage. Editorial vertical composition, accurate scientific visualization, no invented boundaries or labels.",
+      "capa": null,
+      "ambiente": "Ambiente de archivo, pulso discreto.",
+      "sfx": [
+        "clic de regla",
+        "papel deslizándose"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "collage_cientifico_vintage",
+      "dramatic_beat": "method",
+      "scene_function": "Explicar las escalas temporales sin convertirlas en mediciones directas independientes.",
+      "causal_bridge_from_previous": "La definición requiere entender qué representan las tres ventanas.",
+      "question_state": "La audiencia entiende que son escalas de tiempo aproximadas.",
+      "reason_to_continue": "Hace falta un umbral que convierta las tres señales en una regla.",
+      "new_information": "Las escalas son de 3, 6 y 12 meses; no son tres mediciones directas separadas."
+    },
+    {
+      "id": "scene_004",
+      "arc": "result",
+      "duration_seconds": 10,
+      "narration": "Con un índice combinado y agrupamiento espacial, el estudio identificó 722 eventos entre 1961 y 2024, con una duración media de 6.9 meses.",
+      "on_screen_text": "722 eventos · 6.9 meses",
+      "visual_description": "A global atlas page with a dense but legible field of 722 small event marks and a single large 6.9-month duration marker, no fabricated coastlines or event boundaries.",
+      "image_prompt": "vintage scientific collage, cut-out 19th century natural history engravings, botanical and anatomical plates, aged paper, muted pastel accents, one large specimen centered, plain background, not photorealistic, vertical 9:16, no text, A global atlas page with a dense but legible field of 722 small event marks and a single large 6.9-month duration marker, no fabricated coastlines or event boundaries. Editorial vertical composition, accurate scientific visualization, no invented boundaries or labels.",
+      "capa": {
+        "tipo": "dato",
+        "titulo": "Inventario global de supersequías",
+        "valor": "722",
+        "unidad": "eventos · 1961–2024",
+        "nota": "Duración media reportada: 6.9 meses. Eventos definidos por el umbral CMI simultáneo en tres escalas.",
+        "fuente": "SRC-001",
+        "source_ids": [
+          "SRC-001"
+        ]
+      },
+      "ambiente": "Viento bajo y lápiz sobre papel.",
+      "sfx": [
+        "marcas de lápiz",
+        "pulso breve"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "collage_cientifico_vintage",
+      "dramatic_beat": "result",
+      "scene_function": "Presentar el tamaño del inventario y la duración media reportada.",
+      "causal_bridge_from_previous": "Una vez definida la escala, aparece el resultado global.",
+      "question_state": "La audiencia conoce el alcance del catálogo.",
+      "reason_to_continue": "La cifra necesita una definición estricta para no confundirse con cualquier sequía.",
+      "new_information": "El inventario identifica 722 eventos entre 1961 y 2024; duración media 6.9 meses."
+    },
+    {
+      "id": "scene_005",
+      "arc": "threshold",
+      "duration_seconds": 10,
+      "narration": "El umbral fue estricto: el índice CMI debía llegar a menos 1.8 en las tres escalas al mismo tiempo. Así se excluyen sequías de un solo plazo.",
+      "on_screen_text": "CMI ≤ −1.8",
+      "visual_description": "Three parallel index traces crossing the same negative threshold at the same time, clean scientific diagram over aged paper, no fabricated observations or axis values.",
+      "image_prompt": "vintage scientific collage, cut-out 19th century natural history engravings, botanical and anatomical plates, aged paper, muted pastel accents, one large specimen centered, plain background, not photorealistic, vertical 9:16, no text, Three parallel index traces crossing the same negative threshold at the same time, clean scientific diagram over aged paper, no fabricated observations or axis values. Editorial vertical composition, accurate scientific visualization, no invented boundaries or labels.",
+      "capa": null,
+      "ambiente": "Tono bajo sostenido y leve raspado.",
+      "sfx": [
+        "tres pulsos alineados",
+        "clic"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "collage_cientifico_vintage",
+      "dramatic_beat": "threshold",
+      "scene_function": "Explicar la compuerta matemática que define el evento.",
+      "causal_bridge_from_previous": "El número 722 solo tiene sentido después de explicar el umbral.",
+      "question_state": "La audiencia entiende que la simultaneidad es esencial.",
+      "reason_to_continue": "La regla debe probarse con eventos históricos reconocibles.",
+      "new_information": "El CMI debe ser ≤ −1.8 en las tres escalas simultáneamente."
+    },
+    {
+      "id": "scene_006",
+      "arc": "validation_examples",
+      "duration_seconds": 10,
+      "narration": "El catálogo recuperó la sequía europea de 2003, de mayo a noviembre, y la del suroeste de China en 2006, de julio a octubre.",
+      "on_screen_text": "Europa · China",
+      "visual_description": "A restrained world map centered on Europe and East Asia with two exact centroid pins, 2003 Europe and 2006 southwest China, no invented event boundaries, no labels baked into artwork.",
+      "image_prompt": "vintage scientific collage, cut-out 19th century natural history engravings, botanical and anatomical plates, aged paper, muted pastel accents, one large specimen centered, plain background, not photorealistic, vertical 9:16, no text, A restrained world map centered on Europe and East Asia with two exact centroid pins, 2003 Europe and 2006 southwest China, no invented event boundaries, no labels baked into artwork. Editorial vertical composition, accurate scientific visualization, no invented boundaries or labels.",
+      "capa": {
+        "tipo": "mapa",
+        "titulo": "Dos eventos de validación",
+        "puntos": [
+          {
+            "id": "europa_2003",
+            "nombre": "Europa · 2003",
+            "etiqueta": "Centroide 47°N, 15°E",
+            "lat": 47,
+            "lon": 15,
+            "sistema_coordenadas": "WGS84; centroide publicado en el artículo"
+          },
+          {
+            "id": "china_2006",
+            "nombre": "Suroeste de China · 2006",
+            "etiqueta": "Centroide 30°N, 104°E",
+            "lat": 30,
+            "lon": 104,
+            "sistema_coordenadas": "WGS84; centroide publicado en el artículo"
+          }
+        ],
+        "areas": [],
+        "fuente": "SRC-001",
+        "source_ids": [
+          "SRC-001"
+        ],
+        "precision_note": "Los puntos son centroides de eventos de validación, no límites ni ubicaciones exactas de impacto. Para Europa el artículo reporta además un rango de 41.75°–52.25°N y 6.25°–22.25°E."
+      },
+      "ambiente": "Viento cartográfico suave.",
+      "sfx": [
+        "dos marcas de mapa",
+        "papel doblado"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "collage_cientifico_vintage",
+      "dramatic_beat": "validation_examples",
+      "scene_function": "Pagar la promesa con dos eventos concretos y sus fechas.",
+      "causal_bridge_from_previous": "El umbral produce un inventario; ahora se comprueba con ejemplos reconocibles.",
+      "question_state": "La audiencia conecta la definición con dos episodios reales.",
+      "reason_to_continue": "La validación externa debe mostrar cuánto coincide el catálogo con registros independientes.",
+      "new_information": "Se muestran dos centroides de eventos de validación publicados por el artículo."
+    },
+    {
+      "id": "scene_007",
+      "arc": "validation_limit",
+      "duration_seconds": 10,
+      "narration": "En el cruce con GDIS, 139 de 234 registros coincidieron (59.4%); al excluir África interior y zonas costeras, la tasa llegó a 71%.",
+      "on_screen_text": "59.4% → 71%",
+      "visual_description": "Two simple comparison bars for GDIS matching, overall 59.4 percent and 71 percent after excluding inland Africa and coastal areas, with the exclusion clearly annotated.",
+      "image_prompt": "vintage scientific collage, cut-out 19th century natural history engravings, botanical and anatomical plates, aged paper, muted pastel accents, one large specimen centered, plain background, not photorealistic, vertical 9:16, no text, Two simple comparison bars for GDIS matching, overall 59.4 percent and 71 percent after excluding inland Africa and coastal areas, with the exclusion clearly annotated. Editorial vertical composition, accurate scientific visualization, no invented boundaries or labels.",
+      "capa": {
+        "tipo": "dato",
+        "titulo": "Coincidencia con GDIS",
+        "valor": "59.4% / 71%",
+        "unidad": "139 de 234 registros GDIS (2001–2018); 71% tras excluir África interior y costas",
+        "nota": "El 71% no es la coincidencia global: corresponde al subconjunto después de excluir regiones con limitaciones conocidas.",
+        "fuente": "SRC-001",
+        "source_ids": [
+          "SRC-001"
+        ]
+      },
+      "ambiente": "Pulso de datos discreto.",
+      "sfx": [
+        "dos barras ascendentes",
+        "clic suave"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "collage_cientifico_vintage",
+      "dramatic_beat": "validation_limit",
+      "scene_function": "Mostrar la validación y su límite geográfico.",
+      "causal_bridge_from_previous": "Los ejemplos históricos llevan a la comparación con un registro independiente.",
+      "question_state": "La audiencia ve que la coincidencia depende del área evaluada.",
+      "reason_to_continue": "El porcentaje no debe confundirse con una tasa global sin exclusiones.",
+      "new_information": "El 71% corresponde al subconjunto tras excluir regiones con limitaciones de datos."
+    },
+    {
+      "id": "scene_008",
+      "arc": "payoff",
+      "duration_seconds": 10,
+      "narration": "No es una lista de todos los desastres ni prueba que cada evento lo causó el calentamiento global: es una definición física y un conjunto de datos para estudiarlos. La clave es el tiempo: una sequía puede apilar tres relojes. Esto fue Datos y ociosidades.",
+      "on_screen_text": "Tres relojes, una sequía",
+      "visual_description": "Three stacked archival clocks align over a single water droplet and a data ledger, calm scientific collage, no disaster imagery, no causal arrows to climate change.",
+      "image_prompt": "vintage scientific collage, cut-out 19th century natural history engravings, botanical and anatomical plates, aged paper, muted pastel accents, one large specimen centered, plain background, not photorealistic, vertical 9:16, no text, Three stacked archival clocks align over a single water droplet and a data ledger, calm scientific collage, no disaster imagery, no causal arrows to climate change. Editorial vertical composition, accurate scientific visualization, no invented boundaries or labels.",
+      "capa": null,
+      "ambiente": "El viento se apaga y queda una gota.",
+      "sfx": [
+        "gota final",
+        "cierre de papel"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "collage_cientifico_vintage",
+      "dramatic_beat": "payoff",
+      "scene_function": "Cerrar con el alcance real del dataset y pagar la pregunta inicial.",
+      "causal_bridge_from_previous": "La validación no elimina los límites; los vuelve explícitos.",
+      "question_state": "La pregunta queda respondida: la simultaneidad temporal define el evento.",
+      "reason_to_continue": "El cierre devuelve la atención a los tres relojes y evita una atribución causal no demostrada.",
+      "new_information": "El catálogo es una herramienta de clasificación y comparación, no una atribución causal para cada evento."
+    }
+  ],
+  "approved_assets": [],
+  "export": {
+    "render_status": "NOT_GENERATED",
+    "target_duration_seconds": 84,
+    "resolution": "1080x1920",
+    "fps": 30,
+    "aspect_ratio": "9:16"
+  },
+  "publicacion": {
+    "status": "PENDIENTE_DECISION_GROK",
+    "platforms": [
+      "YouTube Shorts",
+      "TikTok",
+      "Facebook Reels"
+    ]
+  },
+  "estado": "BORRADOR_EN_PROYECTOS_NO_APTO_PARA_PROMOCION",
+  "editorial_status": "PROPUESTA_PENDIENTE_DE_GROK",
+  "production_mode": "storyboard_only",
+  "validation_notes": [
+    "Narración: 220 palabras; 8 escenas; 78 segundos de escenas + 6 segundos de cortinilla = 84 segundos.",
+    "El DOI queda PENDIENTE_RESOLVEDOR; la URL editorial es fuente primaria. No promover mientras no se verifique el DOI.",
+    "El mapa usa centroides de eventos publicados por el artículo; no son límites ni ubicaciones exactas de impacto.",
+    "No se creó narrative_qa: la revisión en frío corresponde a una pasada independiente posterior.",
+    "No se ejecutó el validador estructural ni --check-doi en esta sesión."
+  ],
+  "risk_notes": [
+    "No afirmar que cada evento fue causado por el calentamiento global; el paper describe un inventario y una definición operacional.",
+    "No presentar 71% como coincidencia global: es el resultado tras excluir África interior y zonas costeras.",
+    "No convertir los centroides de validación en polígonos de impacto.",
+    "No llamar a todos los periodos secos supersequías: se exige CMI ≤ −1.8 simultáneamente en tres escalas."
+  ],
+  "narrative_word_count": 220,
+  "scene_total_duration_seconds": 78
+}
