@@ -1,0 +1,3339 @@
+{
+  "generado_cdmx": "2026-11-23 14:15:38 CST",
+  "zona": "America/Mexico_City (CST, UTC-6)",
+  "alcance": "Solo lectura. No se editó metadata, no se cambió privacidad, no se borró ni se movió ningún video.",
+  "fuente": {
+    "canal_es": {
+      "id": "UCU2ZI-6pBJEr9aSFsF6bxLw",
+      "handle": "@datosyociosidades",
+      "verificacion_token": "channels.list mine=true con /home/box/.capcot/token.json = UCU2ZI-6pBJEr9aSFsF6bxLw (Datos y ociosidades). No se usó token.marcojuarez_personal.json.",
+      "api": "YouTube Data API v3 part=snippet,status,contentDetails,statistics,topicDetails,processingDetails,fileDetails",
+      "analytics": "YouTube Analytics v2 ids=channel==MINE, dimensions=insightTrafficSourceType, metrics=views, startDate=2026-10-01, endDate=2026-11-23. La métrica impressions no está disponible en este proyecto (HTTP 400 Unknown identifier).",
+      "token_verificado": {
+        "channelId": "UCU2ZI-6pBJEr9aSFsF6bxLw",
+        "title": "Datos y ociosidades",
+        "customUrl": "@datosyociosidades",
+        "privacyStatus_canal": {
+          "privacyStatus": "public",
+          "isLinked": true,
+          "longUploadsStatus": "allowed",
+          "isChannelMonetizationEnabled": false
+        },
+        "estadisticas_canal": {
+          "viewCount": 38088,
+          "subscriberCount": 104,
+          "hiddenSubscriberCount": false,
+          "videoCount": 116
+        }
+      },
+      "nota_playlist_uploads": "La playlist de uploads no trajo 9 Shorts públicos (Vx8EhL4ib7I, ThbHry-YC-w, dz2C-Y8klXA, tiGeRapGRjM, THQxnLZEz3A, 7ay4KLS8h8I, GlBl4S4aDAs, 0x1B9_rMm-I, aZn5eTyiQPQ). Se añadieron desde el listado público de /shorts (yt-dlp, 116 Shorts = videoCount del canal) y se consultaron por videos.list. Ninguno de esos 9 está en 0-2 vistas de días."
+    },
+    "canal_en": {
+      "id": "UCa54OqVk1m-33E9PYApNl5A",
+      "handle": "@datosyociosidadesEN",
+      "metodo": "Sin token válido. Listado público yt-dlp de /channel/UCa54OqVk1m-33E9PYApNl5A/shorts y --skip-download por video (vistas, duración, language, fecha)."
+    }
+  },
+  "corte": {
+    "cdmx": "2026-11-23 14:15:38 CST",
+    "canal_es_api": {
+      "viewCount": 38088,
+      "subscriberCount": 104,
+      "hiddenSubscriberCount": false,
+      "videoCount": 116
+    },
+    "shorts_publicos_listado_yt_dlp": 116,
+    "publicos_0_vistas_con_mas_de_12h": [
+      "jeUrM5zzkdA",
+      "41PYjWbQuJo"
+    ],
+    "publicos_1_vista_con_mas_de_12h": [
+      "Rg-iTgMExWw",
+      "wxnhEdlJYwU"
+    ]
+  },
+  "tabla_focus": {
+    "41PYjWbQuJo": {
+      "id": "41PYjWbQuJo",
+      "url": "https://youtube.com/shorts/41PYjWbQuJo",
+      "tema": "hipo (resub 18-nov)",
+      "grupo": "flojo",
+      "title": "¿Por qué tenemos hipo? #Shorts",
+      "privacyStatus": "public",
+      "publishedAt_cdmx": "2026-11-18 07:00:37 CST",
+      "publishAt_cdmx": null,
+      "hours_since_publish_al_corte": 127.2,
+      "uploadStatus": "processed",
+      "rejectionReason": null,
+      "failureReason": null,
+      "processingStatus": "succeeded",
+      "processingFailureReason": null,
+      "madeForKids": false,
+      "selfDeclaredMadeForKids": false,
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": true,
+      "containsSyntheticMedia": null,
+      "nota_containsSyntheticMedia": "videos.list devuelve null en todos los Shorts revisados (flojos y los que jalan); no sirve para distinguir.",
+      "categoryId": "27",
+      "defaultLanguage": "es",
+      "defaultAudioLanguage": "es",
+      "duration_seconds": 83,
+      "is_shorts_length": true,
+      "width": 1080,
+      "height": 1920,
+      "aspectRatio": 0.5625,
+      "vertical_1080x1920": true,
+      "regionRestriction": null,
+      "contentRating": {},
+      "hashtags_title": [
+        "Shorts"
+      ],
+      "hashtags_description": [
+        "curiosidades",
+        "ciencia",
+        "datosinteresantes",
+        "cuerpo",
+        "shorts"
+      ],
+      "hashtags_unicos_case_insensitive": [
+        "Shorts",
+        "curiosidades",
+        "ciencia",
+        "datosinteresantes",
+        "cuerpo"
+      ],
+      "n_hashtags_unicos": 5,
+      "hashtags_over_15": false,
+      "has_Shorts_hashtag": true,
+      "n_tags": 8,
+      "tags": [
+        "DatosYOciosidades",
+        "Shorts",
+        "ciencia",
+        "datos",
+        "difusión",
+        "difusióncientífica",
+        "ia",
+        "porQuéTenemosHipo"
+      ],
+      "description_length": 581,
+      "links": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK538225/",
+        "https://doi.org/10.1136/gut.41.5.712",
+        "https://www.tiktok.com/@datosyociosidades"
+      ],
+      "fileSize": "37736117",
+      "statistics": {
+        "viewCount": 0,
+        "likeCount": 0,
+        "commentCount": 0,
+        "favoriteCount": 0
+      },
+      "analytics_traffic_source_views": {},
+      "analytics_traffic_total": 0,
+      "analytics_overview": {
+        "views": 0,
+        "averageViewDuration": 0,
+        "averageViewPercentage": 0,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "subscribersGained": 0
+      },
+      "vistas_feed_shorts_analytics": 0
+    },
+    "jeUrM5zzkdA": {
+      "id": "jeUrM5zzkdA",
+      "url": "https://youtube.com/shorts/jeUrM5zzkdA",
+      "tema": "se fugo la ia",
+      "grupo": "flojo",
+      "title": "se fugo la ia",
+      "privacyStatus": "public",
+      "publishedAt_cdmx": "2026-11-15 15:40:06 CST",
+      "publishAt_cdmx": null,
+      "hours_since_publish_al_corte": 190.6,
+      "uploadStatus": "processed",
+      "rejectionReason": null,
+      "failureReason": null,
+      "processingStatus": "succeeded",
+      "processingFailureReason": null,
+      "madeForKids": false,
+      "selfDeclaredMadeForKids": null,
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": true,
+      "containsSyntheticMedia": null,
+      "nota_containsSyntheticMedia": "videos.list devuelve null en todos los Shorts revisados (flojos y los que jalan); no sirve para distinguir.",
+      "categoryId": "27",
+      "defaultLanguage": "es",
+      "defaultAudioLanguage": "es",
+      "duration_seconds": 75,
+      "is_shorts_length": true,
+      "width": 1080,
+      "height": 1920,
+      "aspectRatio": 0.5625,
+      "vertical_1080x1920": true,
+      "regionRestriction": null,
+      "contentRating": {},
+      "hashtags_title": [],
+      "hashtags_description": [
+        "apagon",
+        "17denoviembre",
+        "inteligenciaartificial",
+        "IA",
+        "tecnologia",
+        "datosyociosidades"
+      ],
+      "hashtags_unicos_case_insensitive": [
+        "apagon",
+        "17denoviembre",
+        "inteligenciaartificial",
+        "IA",
+        "tecnologia",
+        "datosyociosidades"
+      ],
+      "n_hashtags_unicos": 6,
+      "hashtags_over_15": false,
+      "has_Shorts_hashtag": false,
+      "n_tags": 0,
+      "tags": [],
+      "description_length": 1086,
+      "links": [
+        "https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/",
+        "https://www.anthropic.com/research/self-replicating-ai",
+        "https://docs.fcc.gov/public/attachments/DA-26-989A1.txt",
+        "https://www.tiktok.com/@datosyociosidades"
+      ],
+      "fileSize": "25609422",
+      "statistics": {
+        "viewCount": 0,
+        "likeCount": 0,
+        "commentCount": 0,
+        "favoriteCount": 0
+      },
+      "analytics_traffic_source_views": {},
+      "analytics_traffic_total": 0,
+      "analytics_overview": {
+        "views": 0,
+        "averageViewDuration": 0,
+        "averageViewPercentage": 0,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "subscribersGained": 0
+      },
+      "vistas_feed_shorts_analytics": 0
+    },
+    "Rg-iTgMExWw": {
+      "id": "Rg-iTgMExWw",
+      "url": "https://youtube.com/shorts/Rg-iTgMExWw",
+      "tema": "hipo (orig)",
+      "grupo": "flojo",
+      "title": "¿Por qué tenemos hipo? #Shorts",
+      "privacyStatus": "public",
+      "publishedAt_cdmx": "2026-11-04 07:00:33 CST",
+      "publishAt_cdmx": null,
+      "hours_since_publish_al_corte": 463.2,
+      "uploadStatus": "processed",
+      "rejectionReason": null,
+      "failureReason": null,
+      "processingStatus": "succeeded",
+      "processingFailureReason": null,
+      "madeForKids": false,
+      "selfDeclaredMadeForKids": false,
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": true,
+      "containsSyntheticMedia": null,
+      "nota_containsSyntheticMedia": "videos.list devuelve null en todos los Shorts revisados (flojos y los que jalan); no sirve para distinguir.",
+      "categoryId": "27",
+      "defaultLanguage": "es",
+      "defaultAudioLanguage": null,
+      "duration_seconds": 83,
+      "is_shorts_length": true,
+      "width": null,
+      "height": null,
+      "aspectRatio": null,
+      "vertical_1080x1920": false,
+      "regionRestriction": null,
+      "contentRating": {},
+      "hashtags_title": [
+        "Shorts"
+      ],
+      "hashtags_description": [
+        "curiosidades",
+        "ciencia",
+        "datosinteresantes",
+        "cuerpo",
+        "shorts"
+      ],
+      "hashtags_unicos_case_insensitive": [
+        "Shorts",
+        "curiosidades",
+        "ciencia",
+        "datosinteresantes",
+        "cuerpo"
+      ],
+      "n_hashtags_unicos": 5,
+      "hashtags_over_15": false,
+      "has_Shorts_hashtag": true,
+      "n_tags": 8,
+      "tags": [
+        "DatosYOciosidades",
+        "Shorts",
+        "ciencia",
+        "datos",
+        "difusión",
+        "difusióncientífica",
+        "ia",
+        "porQuéTenemosHipo"
+      ],
+      "description_length": 581,
+      "links": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK538225/",
+        "https://doi.org/10.1136/gut.41.5.712",
+        "https://www.tiktok.com/@datosyociosidades"
+      ],
+      "fileSize": "33860080",
+      "statistics": {
+        "viewCount": 1,
+        "likeCount": 0,
+        "commentCount": 0,
+        "favoriteCount": 0
+      },
+      "analytics_traffic_source_views": {
+        "SHORTS": 1,
+        "NO_LINK_OTHER": 0
+      },
+      "analytics_traffic_total": 1,
+      "analytics_overview": {
+        "views": 1,
+        "averageViewDuration": 76,
+        "averageViewPercentage": 92.17,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "subscribersGained": 0
+      },
+      "vistas_feed_shorts_analytics": 1
+    },
+    "4lOWeMn2RCo": {
+      "id": "4lOWeMn2RCo",
+      "url": "https://youtube.com/shorts/4lOWeMn2RCo",
+      "tema": "hipo (resub archivo idéntico 9-nov)",
+      "grupo": "flojo_relacionado",
+      "title": "¿Por qué tenemos hipo? #Shorts",
+      "privacyStatus": "public",
+      "publishedAt_cdmx": "2026-11-09 17:00:39 CST",
+      "publishAt_cdmx": null,
+      "hours_since_publish_al_corte": 333.2,
+      "uploadStatus": "processed",
+      "rejectionReason": null,
+      "failureReason": null,
+      "processingStatus": "succeeded",
+      "processingFailureReason": null,
+      "madeForKids": false,
+      "selfDeclaredMadeForKids": false,
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": true,
+      "containsSyntheticMedia": null,
+      "nota_containsSyntheticMedia": "videos.list devuelve null en todos los Shorts revisados (flojos y los que jalan); no sirve para distinguir.",
+      "categoryId": "27",
+      "defaultLanguage": "es",
+      "defaultAudioLanguage": null,
+      "duration_seconds": 83,
+      "is_shorts_length": true,
+      "width": null,
+      "height": null,
+      "aspectRatio": null,
+      "vertical_1080x1920": false,
+      "regionRestriction": null,
+      "contentRating": {},
+      "hashtags_title": [
+        "Shorts"
+      ],
+      "hashtags_description": [
+        "curiosidades",
+        "ciencia",
+        "datosinteresantes",
+        "cuerpo",
+        "shorts",
+        "cuerpo",
+        "salud",
+        "biologia",
+        "ciencia",
+        "cuerpohumano",
+        "datosyociosidades",
+        "curiosidades"
+      ],
+      "hashtags_unicos_case_insensitive": [
+        "Shorts",
+        "curiosidades",
+        "ciencia",
+        "datosinteresantes",
+        "cuerpo",
+        "salud",
+        "biologia",
+        "cuerpohumano",
+        "datosyociosidades"
+      ],
+      "n_hashtags_unicos": 9,
+      "hashtags_over_15": false,
+      "has_Shorts_hashtag": true,
+      "n_tags": 8,
+      "tags": [
+        "DatosYOciosidades",
+        "Shorts",
+        "ciencia",
+        "datos",
+        "difusión",
+        "difusióncientífica",
+        "ia",
+        "porQuéTenemosHipo"
+      ],
+      "description_length": 667,
+      "links": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK538225/",
+        "https://doi.org/10.1136/gut.41.5.712",
+        "https://www.tiktok.com/@datosyociosidades"
+      ],
+      "fileSize": "33860080",
+      "statistics": {
+        "viewCount": 8,
+        "likeCount": 0,
+        "commentCount": 0,
+        "favoriteCount": 0
+      },
+      "analytics_traffic_source_views": {
+        "YT_SEARCH": 5,
+        "YT_CHANNEL": 3
+      },
+      "analytics_traffic_total": 8,
+      "analytics_overview": {
+        "views": 8,
+        "averageViewDuration": 14,
+        "averageViewPercentage": 16.95,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "subscribersGained": 0
+      },
+      "vistas_feed_shorts_analytics": 0
+    },
+    "wxnhEdlJYwU": {
+      "id": "wxnhEdlJYwU",
+      "url": "https://youtube.com/shorts/wxnhEdlJYwU",
+      "tema": "corneja (resub archivo idéntico 11-nov)",
+      "grupo": "flojo",
+      "title": "La corneja decide en 235 milisegundos #Shorts",
+      "privacyStatus": "public",
+      "publishedAt_cdmx": "2026-11-11 17:00:28 CST",
+      "publishAt_cdmx": null,
+      "hours_since_publish_al_corte": 285.3,
+      "uploadStatus": "processed",
+      "rejectionReason": null,
+      "failureReason": null,
+      "processingStatus": "succeeded",
+      "processingFailureReason": null,
+      "madeForKids": false,
+      "selfDeclaredMadeForKids": false,
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": true,
+      "containsSyntheticMedia": null,
+      "nota_containsSyntheticMedia": "videos.list devuelve null en todos los Shorts revisados (flojos y los que jalan); no sirve para distinguir.",
+      "categoryId": "27",
+      "defaultLanguage": "es",
+      "defaultAudioLanguage": null,
+      "duration_seconds": 88,
+      "is_shorts_length": true,
+      "width": null,
+      "height": null,
+      "aspectRatio": null,
+      "vertical_1080x1920": false,
+      "regionRestriction": null,
+      "contentRating": {},
+      "hashtags_title": [
+        "Shorts"
+      ],
+      "hashtags_description": [
+        "curiosidades",
+        "ciencia",
+        "datosinteresantes",
+        "animales",
+        "shorts",
+        "cuervos",
+        "corneja",
+        "aves",
+        "animales",
+        "inteligencia",
+        "cerebro",
+        "ciencia",
+        "datosyociosidades",
+        "curiosidades"
+      ],
+      "hashtags_unicos_case_insensitive": [
+        "Shorts",
+        "curiosidades",
+        "ciencia",
+        "datosinteresantes",
+        "animales",
+        "cuervos",
+        "corneja",
+        "aves",
+        "inteligencia",
+        "cerebro",
+        "datosyociosidades"
+      ],
+      "n_hashtags_unicos": 11,
+      "hashtags_over_15": false,
+      "has_Shorts_hashtag": true,
+      "n_tags": 7,
+      "tags": [
+        "DatosYOciosidades",
+        "Shorts",
+        "animales",
+        "ciencia",
+        "cuervos",
+        "datos",
+        "sabiasque"
+      ],
+      "description_length": 1241,
+      "links": [
+        "https://doi.org/10.1126/science.aed6459",
+        "https://uni-tuebingen.de/en/university/news-and-publications/press-releases/",
+        "https://arstechnica.com/science/2026/10/crows-can-evaluate-visual-info-twice-as-fast-as-mammals/",
+        "https://www.livescience.com/animals/birds/crows-may-make-lightning-fast-decisions-sometimes-twice-as-fast-as-humans-study-hints",
+        "https://www.tiktok.com/@datosyociosidades"
+      ],
+      "fileSize": "46751396",
+      "statistics": {
+        "viewCount": 1,
+        "likeCount": 0,
+        "commentCount": 0,
+        "favoriteCount": 0
+      },
+      "analytics_traffic_source_views": {
+        "YT_SEARCH": 1,
+        "YT_CHANNEL": 0
+      },
+      "analytics_traffic_total": 1,
+      "analytics_overview": {
+        "views": 1,
+        "averageViewDuration": 0,
+        "averageViewPercentage": 0,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "subscribersGained": 0
+      },
+      "vistas_feed_shorts_analytics": 0
+    },
+    "AxgWdhqPhRI": {
+      "id": "AxgWdhqPhRI",
+      "url": "https://youtube.com/shorts/AxgWdhqPhRI",
+      "tema": "corneja (resub recodificada 19-nov)",
+      "grupo": "flojo",
+      "title": "La corneja decide en 235 milisegundos #Shorts",
+      "privacyStatus": "public",
+      "publishedAt_cdmx": "2026-11-19 07:00:26 CST",
+      "publishAt_cdmx": null,
+      "hours_since_publish_al_corte": 103.3,
+      "uploadStatus": "processed",
+      "rejectionReason": null,
+      "failureReason": null,
+      "processingStatus": "succeeded",
+      "processingFailureReason": null,
+      "madeForKids": false,
+      "selfDeclaredMadeForKids": false,
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": true,
+      "containsSyntheticMedia": null,
+      "nota_containsSyntheticMedia": "videos.list devuelve null en todos los Shorts revisados (flojos y los que jalan); no sirve para distinguir.",
+      "categoryId": "27",
+      "defaultLanguage": "es",
+      "defaultAudioLanguage": "es",
+      "duration_seconds": 88,
+      "is_shorts_length": true,
+      "width": 1080,
+      "height": 1920,
+      "aspectRatio": 0.5625,
+      "vertical_1080x1920": true,
+      "regionRestriction": null,
+      "contentRating": {},
+      "hashtags_title": [
+        "Shorts"
+      ],
+      "hashtags_description": [
+        "curiosidades",
+        "ciencia",
+        "datosinteresantes",
+        "animales",
+        "shorts",
+        "cuervos",
+        "corneja",
+        "aves",
+        "animales",
+        "inteligencia",
+        "cerebro",
+        "ciencia",
+        "datosyociosidades",
+        "curiosidades"
+      ],
+      "hashtags_unicos_case_insensitive": [
+        "Shorts",
+        "curiosidades",
+        "ciencia",
+        "datosinteresantes",
+        "animales",
+        "cuervos",
+        "corneja",
+        "aves",
+        "inteligencia",
+        "cerebro",
+        "datosyociosidades"
+      ],
+      "n_hashtags_unicos": 11,
+      "hashtags_over_15": false,
+      "has_Shorts_hashtag": true,
+      "n_tags": 7,
+      "tags": [
+        "DatosYOciosidades",
+        "Shorts",
+        "animales",
+        "ciencia",
+        "cuervos",
+        "datos",
+        "sabiasque"
+      ],
+      "description_length": 1241,
+      "links": [
+        "https://doi.org/10.1126/science.aed6459",
+        "https://uni-tuebingen.de/en/university/news-and-publications/press-releases/",
+        "https://arstechnica.com/science/2026/10/crows-can-evaluate-visual-info-twice-as-fast-as-mammals/",
+        "https://www.livescience.com/animals/birds/crows-may-make-lightning-fast-decisions-sometimes-twice-as-fast-as-humans-study-hints",
+        "https://www.tiktok.com/@datosyociosidades"
+      ],
+      "fileSize": "50344129",
+      "statistics": {
+        "viewCount": 5,
+        "likeCount": 0,
+        "commentCount": 0,
+        "favoriteCount": 0
+      },
+      "analytics_traffic_source_views": {
+        "SHORTS": 4,
+        "NO_LINK_OTHER": 1
+      },
+      "analytics_traffic_total": 5,
+      "analytics_overview": {
+        "views": 5,
+        "averageViewDuration": 66,
+        "averageViewPercentage": 75.97,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "subscribersGained": 0
+      },
+      "vistas_feed_shorts_analytics": 4
+    },
+    "ZHdJXFrURk4": {
+      "id": "ZHdJXFrURk4",
+      "url": "https://youtube.com/shorts/ZHdJXFrURk4",
+      "tema": "corneja (orig)",
+      "grupo": "flojo_relacionado",
+      "title": "La corneja decide en 235 milisegundos #Shorts",
+      "privacyStatus": "public",
+      "publishedAt_cdmx": "2026-10-31 12:24:13 CST",
+      "publishAt_cdmx": null,
+      "hours_since_publish_al_corte": 553.9,
+      "uploadStatus": "processed",
+      "rejectionReason": null,
+      "failureReason": null,
+      "processingStatus": "succeeded",
+      "processingFailureReason": null,
+      "madeForKids": false,
+      "selfDeclaredMadeForKids": false,
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": true,
+      "containsSyntheticMedia": null,
+      "nota_containsSyntheticMedia": "videos.list devuelve null en todos los Shorts revisados (flojos y los que jalan); no sirve para distinguir.",
+      "categoryId": "27",
+      "defaultLanguage": "es",
+      "defaultAudioLanguage": null,
+      "duration_seconds": 88,
+      "is_shorts_length": true,
+      "width": null,
+      "height": null,
+      "aspectRatio": null,
+      "vertical_1080x1920": false,
+      "regionRestriction": null,
+      "contentRating": {},
+      "hashtags_title": [
+        "Shorts"
+      ],
+      "hashtags_description": [
+        "curiosidades",
+        "ciencia",
+        "datosinteresantes",
+        "animales",
+        "shorts"
+      ],
+      "hashtags_unicos_case_insensitive": [
+        "Shorts",
+        "curiosidades",
+        "ciencia",
+        "datosinteresantes",
+        "animales"
+      ],
+      "n_hashtags_unicos": 5,
+      "hashtags_over_15": false,
+      "has_Shorts_hashtag": true,
+      "n_tags": 7,
+      "tags": [
+        "DatosYOciosidades",
+        "Shorts",
+        "animales",
+        "ciencia",
+        "cuervos",
+        "datos",
+        "sabiasque"
+      ],
+      "description_length": 1141,
+      "links": [
+        "https://doi.org/10.1126/science.aed6459",
+        "https://uni-tuebingen.de/en/university/news-and-publications/press-releases/",
+        "https://arstechnica.com/science/2026/10/crows-can-evaluate-visual-info-twice-as-fast-as-mammals/",
+        "https://www.livescience.com/animals/birds/crows-may-make-lightning-fast-decisions-sometimes-twice-as-fast-as-humans-study-hints",
+        "https://www.tiktok.com/@datosyociosidades"
+      ],
+      "fileSize": "46751396",
+      "statistics": {
+        "viewCount": 22,
+        "likeCount": 0,
+        "commentCount": 0,
+        "favoriteCount": 0
+      },
+      "analytics_traffic_source_views": {
+        "SHORTS": 12,
+        "YT_CHANNEL": 6,
+        "YT_SEARCH": 4,
+        "NO_LINK_OTHER": 0
+      },
+      "analytics_traffic_total": 22,
+      "analytics_overview": {
+        "views": 22,
+        "averageViewDuration": 44,
+        "averageViewPercentage": 50.47999999999999,
+        "likes": 0,
+        "comments": 0,
+        "shares": 1,
+        "subscribersGained": 0
+      },
+      "vistas_feed_shorts_analytics": 12
+    },
+    "CW02WClntYA": {
+      "id": "CW02WClntYA",
+      "url": "https://youtube.com/shorts/CW02WClntYA",
+      "tema": "Bernabé (23-nov 09:00)",
+      "grupo": "flojo_hoy",
+      "title": "Bernabé llamó al orfismo religión del libro",
+      "privacyStatus": "public",
+      "publishedAt_cdmx": "2026-11-23 09:00:14 CST",
+      "publishAt_cdmx": null,
+      "hours_since_publish_al_corte": 5.3,
+      "uploadStatus": "processed",
+      "rejectionReason": null,
+      "failureReason": null,
+      "processingStatus": "succeeded",
+      "processingFailureReason": null,
+      "madeForKids": false,
+      "selfDeclaredMadeForKids": false,
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": true,
+      "containsSyntheticMedia": null,
+      "nota_containsSyntheticMedia": "videos.list devuelve null en todos los Shorts revisados (flojos y los que jalan); no sirve para distinguir.",
+      "categoryId": "27",
+      "defaultLanguage": "es",
+      "defaultAudioLanguage": "es",
+      "duration_seconds": 87,
+      "is_shorts_length": true,
+      "width": 1080,
+      "height": 1920,
+      "aspectRatio": 0.5625,
+      "vertical_1080x1920": true,
+      "regionRestriction": null,
+      "contentRating": {},
+      "hashtags_title": [],
+      "hashtags_description": [
+        "mitología",
+        "datos",
+        "historia",
+        "cultura",
+        "grecia"
+      ],
+      "hashtags_unicos_case_insensitive": [
+        "mitología",
+        "datos",
+        "historia",
+        "cultura",
+        "grecia"
+      ],
+      "n_hashtags_unicos": 5,
+      "hashtags_over_15": false,
+      "has_Shorts_hashtag": false,
+      "n_tags": 7,
+      "tags": [
+        "DatosYOciosidades",
+        "ceguera",
+        "cultura",
+        "datos",
+        "grecia",
+        "historia",
+        "mitología"
+      ],
+      "description_length": 2161,
+      "links": [
+        "https://revistas.ucm.es/index.php/ILUR/article/download/ILUR9595110023A/27200/28361",
+        "https://dialnet.unirioja.es/servlet/libro?codigo=199891",
+        "https://www.akal.com/libro/hieros-logos_32177/",
+        "https://doi.org/10.14195/0871-9527_26_1",
+        "https://commons.wikimedia.org/wiki/File:Savery,_Roelant_-_Orpheus_-_1628_(3180_%C3%97_2050",
+        "https://commons.wikimedia.org/wiki/File:The_Derveni_Papyrus.jpg",
+        "https://open.smk.dk/artwork/image/KMS1",
+        "https://commons.wikimedia.org/wiki/File:Gustave_Moreau_-_Orpheus_-_Google_Art_Project.jpg",
+        "https://www.tiktok.com/@datosyociosidades"
+      ],
+      "fileSize": "43746883",
+      "statistics": {
+        "viewCount": 2,
+        "likeCount": 0,
+        "commentCount": 0,
+        "favoriteCount": 0
+      },
+      "analytics_traffic_source_views": {},
+      "analytics_traffic_total": 0,
+      "analytics_overview": {
+        "views": 0,
+        "averageViewDuration": 0,
+        "averageViewPercentage": 0,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "subscribersGained": 0
+      },
+      "vistas_feed_shorts_analytics": 0
+    },
+    "Tq2ASLkFTbo": {
+      "id": "Tq2ASLkFTbo",
+      "url": "https://youtube.com/shorts/Tq2ASLkFTbo",
+      "tema": "Evémero (23-nov 11:00)",
+      "grupo": "flojo_hoy",
+      "title": "Dijo que los dioses habían sido reyes",
+      "privacyStatus": "public",
+      "publishedAt_cdmx": "2026-11-23 11:00:23 CST",
+      "publishAt_cdmx": null,
+      "hours_since_publish_al_corte": 3.3,
+      "uploadStatus": "processed",
+      "rejectionReason": null,
+      "failureReason": null,
+      "processingStatus": "succeeded",
+      "processingFailureReason": null,
+      "madeForKids": false,
+      "selfDeclaredMadeForKids": false,
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": true,
+      "containsSyntheticMedia": null,
+      "nota_containsSyntheticMedia": "videos.list devuelve null en todos los Shorts revisados (flojos y los que jalan); no sirve para distinguir.",
+      "categoryId": "27",
+      "defaultLanguage": "es",
+      "defaultAudioLanguage": "es",
+      "duration_seconds": 87,
+      "is_shorts_length": true,
+      "width": 1080,
+      "height": 1920,
+      "aspectRatio": 0.5625,
+      "vertical_1080x1920": true,
+      "regionRestriction": null,
+      "contentRating": {},
+      "hashtags_title": [],
+      "hashtags_description": [
+        "mitología",
+        "datos",
+        "historia",
+        "cultura",
+        "grecia"
+      ],
+      "hashtags_unicos_case_insensitive": [
+        "mitología",
+        "datos",
+        "historia",
+        "cultura",
+        "grecia"
+      ],
+      "n_hashtags_unicos": 5,
+      "hashtags_over_15": false,
+      "has_Shorts_hashtag": false,
+      "n_tags": 7,
+      "tags": [
+        "DatosYOciosidades",
+        "ceguera",
+        "cultura",
+        "datos",
+        "grecia",
+        "historia",
+        "mitología"
+      ],
+      "description_length": 1819,
+      "links": [
+        "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Diodorus_Siculus/5B*.html",
+        "https://www.tertullian.org/rpearse/eusebius_pe_02.htm",
+        "https://www.thelatinlibrary.com/lactantius/divinst1.shtml",
+        "https://commons.wikimedia.org/wiki/File:Zeus_Otricoli_Pio-Clementino_Inv257.jpg",
+        "https://commons.wikimedia.org/wiki/File:Temple_of_Concordia,_Agrigento_BW_2012-10-07_13-09-13.jpg",
+        "https://commons.wikimedia.org/wiki/File:Jupiter_and_Thetis_(Ingres",
+        "https://commons.wikimedia.org/wiki/File:Jean_Auguste_Dominique_Ingres,_Apotheosis_of_Homer,_1827.jpg",
+        "https://www.tiktok.com/@datosyociosidades"
+      ],
+      "fileSize": "44862633",
+      "statistics": {
+        "viewCount": 2,
+        "likeCount": 0,
+        "commentCount": 0,
+        "favoriteCount": 0
+      },
+      "analytics_traffic_source_views": {},
+      "analytics_traffic_total": 0,
+      "analytics_overview": {
+        "views": 0,
+        "averageViewDuration": 0,
+        "averageViewPercentage": 0,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "subscribersGained": 0
+      },
+      "vistas_feed_shorts_analytics": 0
+    },
+    "p5PM4xZfDyc": {
+      "id": "p5PM4xZfDyc",
+      "url": "https://youtube.com/shorts/p5PM4xZfDyc",
+      "tema": "Rosetta (23-nov 13:30)",
+      "grupo": "flojo_hoy",
+      "title": "La piedra Rosetta NO era un diccionario #Shorts",
+      "privacyStatus": "public",
+      "publishedAt_cdmx": "2026-11-23 13:30:17 CST",
+      "publishAt_cdmx": null,
+      "hours_since_publish_al_corte": 0.8,
+      "uploadStatus": "processed",
+      "rejectionReason": null,
+      "failureReason": null,
+      "processingStatus": "succeeded",
+      "processingFailureReason": null,
+      "madeForKids": false,
+      "selfDeclaredMadeForKids": false,
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": true,
+      "containsSyntheticMedia": null,
+      "nota_containsSyntheticMedia": "videos.list devuelve null en todos los Shorts revisados (flojos y los que jalan); no sirve para distinguir.",
+      "categoryId": "27",
+      "defaultLanguage": "es",
+      "defaultAudioLanguage": null,
+      "duration_seconds": 82,
+      "is_shorts_length": true,
+      "width": 1080,
+      "height": 1920,
+      "aspectRatio": 0.5625312621575057,
+      "vertical_1080x1920": true,
+      "regionRestriction": null,
+      "contentRating": {},
+      "hashtags_title": [
+        "Shorts"
+      ],
+      "hashtags_description": [
+        "Shorts",
+        "historia",
+        "DatosYOciosidades"
+      ],
+      "hashtags_unicos_case_insensitive": [
+        "Shorts",
+        "historia",
+        "DatosYOciosidades"
+      ],
+      "n_hashtags_unicos": 3,
+      "hashtags_over_15": false,
+      "has_Shorts_hashtag": true,
+      "n_tags": 0,
+      "tags": [],
+      "description_length": 1001,
+      "links": [
+        "https://www.britishmuseum.org/collection/object/Y_EA24",
+        "https://www.britishmuseum.org/exhibitions/hieroglyphs-unlocking-ancient-egypt",
+        "https://www.tiktok.com/@datosyociosidades"
+      ],
+      "fileSize": "48672627",
+      "statistics": {
+        "viewCount": 1,
+        "likeCount": 0,
+        "commentCount": 0,
+        "favoriteCount": 0
+      },
+      "analytics_traffic_source_views": {},
+      "analytics_traffic_total": 0,
+      "analytics_overview": {
+        "views": 0,
+        "averageViewDuration": 0,
+        "averageViewPercentage": 0,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "subscribersGained": 0
+      },
+      "vistas_feed_shorts_analytics": 0
+    },
+    "6OuHVN5dbbs": {
+      "id": "6OuHVN5dbbs",
+      "url": "https://youtube.com/shorts/6OuHVN5dbbs",
+      "tema": "Mitra/Alvar (23-nov 17:00)",
+      "grupo": "hoy_programado",
+      "title": "El Mitra romano no llegó ya hecho de Persia",
+      "privacyStatus": "private",
+      "publishedAt_cdmx": "2026-11-22 02:30:30 CST",
+      "publishAt_cdmx": "2026-11-23 17:00:00 CST",
+      "hours_since_publish_al_corte": 35.8,
+      "uploadStatus": "processed",
+      "rejectionReason": null,
+      "failureReason": null,
+      "processingStatus": "succeeded",
+      "processingFailureReason": null,
+      "madeForKids": false,
+      "selfDeclaredMadeForKids": false,
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": true,
+      "containsSyntheticMedia": null,
+      "nota_containsSyntheticMedia": "videos.list devuelve null en todos los Shorts revisados (flojos y los que jalan); no sirve para distinguir.",
+      "categoryId": "27",
+      "defaultLanguage": "es",
+      "defaultAudioLanguage": "es",
+      "duration_seconds": 88,
+      "is_shorts_length": true,
+      "width": 1080,
+      "height": 1920,
+      "aspectRatio": 0.5625,
+      "vertical_1080x1920": true,
+      "regionRestriction": null,
+      "contentRating": {},
+      "hashtags_title": [],
+      "hashtags_description": [
+        "mitología",
+        "datos",
+        "historia",
+        "cultura",
+        "roma"
+      ],
+      "hashtags_unicos_case_insensitive": [
+        "mitología",
+        "datos",
+        "historia",
+        "cultura",
+        "roma"
+      ],
+      "n_hashtags_unicos": 5,
+      "hashtags_over_15": false,
+      "has_Shorts_hashtag": false,
+      "n_tags": 7,
+      "tags": [
+        "DatosYOciosidades",
+        "ceguera",
+        "cultura",
+        "datos",
+        "historia",
+        "mitología",
+        "roma"
+      ],
+      "description_length": 2051,
+      "links": [
+        "https://www.planetadelibros.com/libro-los-misterios/16799",
+        "https://brill.com/display/title/14346",
+        "https://www.archaeopresspublishing.com/ojs/index.php/AntOr/article/download/1944/1521/14288",
+        "https://commons.wikimedia.org/wiki/File:Tauroctony_BM_Sc1720.jpg",
+        "https://commons.wikimedia.org/wiki/File:Ostia_Antica_Mithraeum.jpg",
+        "https://commons.wikimedia.org/wiki/File:Mithraeum_of_Felicissimus_04.jpg",
+        "https://commons.wikimedia.org/wiki/File:Mithraic_tauroctony_Louvre_AO22256_n05.jpg",
+        "https://www.tiktok.com/@datosyociosidades"
+      ],
+      "fileSize": "50922651",
+      "statistics": {
+        "viewCount": 3,
+        "likeCount": 0,
+        "commentCount": 0,
+        "favoriteCount": 0
+      },
+      "analytics_traffic_source_views": {},
+      "analytics_traffic_total": 0,
+      "analytics_overview": {
+        "views": 0,
+        "averageViewDuration": 0,
+        "averageViewPercentage": 0,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "subscribersGained": 0
+      },
+      "vistas_feed_shorts_analytics": 0
+    },
+    "4Vi_TnIl9FI": {
+      "id": "4Vi_TnIl9FI",
+      "url": "https://youtube.com/shorts/4Vi_TnIl9FI",
+      "tema": "pulpo Inky (22-nov 23:30)",
+      "grupo": "jala",
+      "title": "El pulpo que se fugó por el drenaje #Shorts",
+      "privacyStatus": "public",
+      "publishedAt_cdmx": "2026-11-22 23:30:16 CST",
+      "publishAt_cdmx": null,
+      "hours_since_publish_al_corte": 14.8,
+      "uploadStatus": "processed",
+      "rejectionReason": null,
+      "failureReason": null,
+      "processingStatus": "succeeded",
+      "processingFailureReason": null,
+      "madeForKids": false,
+      "selfDeclaredMadeForKids": false,
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": true,
+      "containsSyntheticMedia": null,
+      "nota_containsSyntheticMedia": "videos.list devuelve null en todos los Shorts revisados (flojos y los que jalan); no sirve para distinguir.",
+      "categoryId": "27",
+      "defaultLanguage": "es",
+      "defaultAudioLanguage": "es",
+      "duration_seconds": 72,
+      "is_shorts_length": true,
+      "width": 1080,
+      "height": 1920,
+      "aspectRatio": 0.5625,
+      "vertical_1080x1920": true,
+      "regionRestriction": null,
+      "contentRating": {},
+      "hashtags_title": [
+        "Shorts"
+      ],
+      "hashtags_description": [
+        "Shorts",
+        "animales",
+        "DatosYOciosidades"
+      ],
+      "hashtags_unicos_case_insensitive": [
+        "Shorts",
+        "animales",
+        "DatosYOciosidades"
+      ],
+      "n_hashtags_unicos": 3,
+      "hashtags_over_15": false,
+      "has_Shorts_hashtag": true,
+      "n_tags": 0,
+      "tags": [],
+      "description_length": 576,
+      "links": [
+        "https://www.tiktok.com/@datosyociosidades"
+      ],
+      "fileSize": "32423048",
+      "statistics": {
+        "viewCount": 267,
+        "likeCount": 8,
+        "commentCount": 0,
+        "favoriteCount": 0
+      },
+      "analytics_traffic_source_views": {
+        "YT_CHANNEL": 1
+      },
+      "analytics_traffic_total": 1,
+      "analytics_overview": {
+        "views": 1,
+        "averageViewDuration": 65,
+        "averageViewPercentage": 91.53,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "subscribersGained": 0
+      },
+      "vistas_feed_shorts_analytics": 0
+    },
+    "8okieDXFIgU": {
+      "id": "8okieDXFIgU",
+      "url": "https://youtube.com/shorts/8okieDXFIgU",
+      "tema": "Napoleón NO era bajito",
+      "grupo": "jala",
+      "title": "Napoleón NO era bajito #Shorts",
+      "privacyStatus": "public",
+      "publishedAt_cdmx": "2026-11-21 17:00:33 CST",
+      "publishAt_cdmx": null,
+      "hours_since_publish_al_corte": 45.2,
+      "uploadStatus": "processed",
+      "rejectionReason": null,
+      "failureReason": null,
+      "processingStatus": "succeeded",
+      "processingFailureReason": null,
+      "madeForKids": false,
+      "selfDeclaredMadeForKids": false,
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": true,
+      "containsSyntheticMedia": null,
+      "nota_containsSyntheticMedia": "videos.list devuelve null en todos los Shorts revisados (flojos y los que jalan); no sirve para distinguir.",
+      "categoryId": "27",
+      "defaultLanguage": "es",
+      "defaultAudioLanguage": "es-MX",
+      "duration_seconds": 73,
+      "is_shorts_length": true,
+      "width": 1080,
+      "height": 1920,
+      "aspectRatio": 0.5625,
+      "vertical_1080x1920": true,
+      "regionRestriction": null,
+      "contentRating": {},
+      "hashtags_title": [
+        "Shorts"
+      ],
+      "hashtags_description": [
+        "Shorts",
+        "mitooverdad",
+        "DatosYOciosidades"
+      ],
+      "hashtags_unicos_case_insensitive": [
+        "Shorts",
+        "mitooverdad",
+        "DatosYOciosidades"
+      ],
+      "n_hashtags_unicos": 3,
+      "hashtags_over_15": false,
+      "has_Shorts_hashtag": true,
+      "n_tags": 0,
+      "tags": [],
+      "description_length": 741,
+      "links": [
+        "https://es.wikipedia.org/wiki/Complejo_napoleónico",
+        "https://123viajando.com/francia/era-napoleon-bajo/",
+        "https://www.guioteca.com/mitos-y-enigmas/10-supuestos-hechos-historicos-que-se-transformaron-en-grandes-mitos-mundiales/",
+        "https://www.tiktok.com/@datosyociosidades"
+      ],
+      "fileSize": "27622974",
+      "statistics": {
+        "viewCount": 217,
+        "likeCount": 6,
+        "commentCount": 0,
+        "favoriteCount": 0
+      },
+      "analytics_traffic_source_views": {
+        "SHORTS": 47,
+        "YT_SEARCH": 2,
+        "YT_CHANNEL": 1,
+        "NO_LINK_OTHER": 0
+      },
+      "analytics_traffic_total": 50,
+      "analytics_overview": {
+        "views": 50,
+        "averageViewDuration": 46,
+        "averageViewPercentage": 63.83,
+        "likes": 2,
+        "comments": 0,
+        "shares": 0,
+        "subscribersGained": 1
+      },
+      "vistas_feed_shorts_analytics": 47
+    },
+    "N21TIYdONZo": {
+      "id": "N21TIYdONZo",
+      "url": "https://youtube.com/shorts/N21TIYdONZo",
+      "tema": "Salem",
+      "grupo": "jala",
+      "title": "En Salem NO quemaron brujas #Shorts",
+      "privacyStatus": "public",
+      "publishedAt_cdmx": "2026-11-22 07:00:22 CST",
+      "publishAt_cdmx": null,
+      "hours_since_publish_al_corte": 31.3,
+      "uploadStatus": "processed",
+      "rejectionReason": null,
+      "failureReason": null,
+      "processingStatus": "succeeded",
+      "processingFailureReason": null,
+      "madeForKids": false,
+      "selfDeclaredMadeForKids": false,
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": true,
+      "containsSyntheticMedia": null,
+      "nota_containsSyntheticMedia": "videos.list devuelve null en todos los Shorts revisados (flojos y los que jalan); no sirve para distinguir.",
+      "categoryId": "27",
+      "defaultLanguage": "es",
+      "defaultAudioLanguage": "es-MX",
+      "duration_seconds": 85,
+      "is_shorts_length": true,
+      "width": 1080,
+      "height": 1920,
+      "aspectRatio": 0.5625,
+      "vertical_1080x1920": true,
+      "regionRestriction": null,
+      "contentRating": {},
+      "hashtags_title": [
+        "Shorts"
+      ],
+      "hashtags_description": [
+        "DatosYOciosidades",
+        "Shorts",
+        "datos",
+        "historia",
+        "Salem",
+        "brujas",
+        "mitooverdad"
+      ],
+      "hashtags_unicos_case_insensitive": [
+        "Shorts",
+        "DatosYOciosidades",
+        "datos",
+        "historia",
+        "Salem",
+        "brujas",
+        "mitooverdad"
+      ],
+      "n_hashtags_unicos": 7,
+      "hashtags_over_15": false,
+      "has_Shorts_hashtag": true,
+      "n_tags": 7,
+      "tags": [
+        "DatosYOciosidades",
+        "Shorts",
+        "datos",
+        "historia",
+        "Salem",
+        "brujas",
+        "mitooverdad"
+      ],
+      "description_length": 860,
+      "links": [
+        "https://www.tiktok.com/@datosyociosidades"
+      ],
+      "fileSize": "27788814",
+      "statistics": {
+        "viewCount": 83,
+        "likeCount": 3,
+        "commentCount": 0,
+        "favoriteCount": 0
+      },
+      "analytics_traffic_source_views": {
+        "YT_CHANNEL": 0
+      },
+      "analytics_traffic_total": 0,
+      "analytics_overview": {
+        "views": 0,
+        "averageViewDuration": 0,
+        "averageViewPercentage": 0,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "subscribersGained": 0
+      },
+      "vistas_feed_shorts_analytics": 0
+    },
+    "6XCBYrlO4Eg": {
+      "id": "6XCBYrlO4Eg",
+      "url": "https://youtube.com/shorts/6XCBYrlO4Eg",
+      "tema": "tejón Stoffel",
+      "grupo": "jala",
+      "title": "El tejón que se burló del zoológico #Shorts",
+      "privacyStatus": "public",
+      "publishedAt_cdmx": "2026-11-21 07:00:30 CST",
+      "publishAt_cdmx": null,
+      "hours_since_publish_al_corte": 55.3,
+      "uploadStatus": "processed",
+      "rejectionReason": null,
+      "failureReason": null,
+      "processingStatus": "succeeded",
+      "processingFailureReason": null,
+      "madeForKids": false,
+      "selfDeclaredMadeForKids": false,
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": true,
+      "containsSyntheticMedia": null,
+      "nota_containsSyntheticMedia": "videos.list devuelve null en todos los Shorts revisados (flojos y los que jalan); no sirve para distinguir.",
+      "categoryId": "27",
+      "defaultLanguage": "es",
+      "defaultAudioLanguage": "es-MX",
+      "duration_seconds": 73,
+      "is_shorts_length": true,
+      "width": 1080,
+      "height": 1920,
+      "aspectRatio": 0.5625,
+      "vertical_1080x1920": true,
+      "regionRestriction": null,
+      "contentRating": {},
+      "hashtags_title": [
+        "Shorts"
+      ],
+      "hashtags_description": [
+        "DatosYOciosidades",
+        "Shorts",
+        "datos",
+        "ciencia",
+        "animales",
+        "tejon",
+        "Stoffel"
+      ],
+      "hashtags_unicos_case_insensitive": [
+        "Shorts",
+        "DatosYOciosidades",
+        "datos",
+        "ciencia",
+        "animales",
+        "tejon",
+        "Stoffel"
+      ],
+      "n_hashtags_unicos": 7,
+      "hashtags_over_15": false,
+      "has_Shorts_hashtag": true,
+      "n_tags": 7,
+      "tags": [
+        "DatosYOciosidades",
+        "Shorts",
+        "datos",
+        "ciencia",
+        "animales",
+        "tejon",
+        "Stoffel"
+      ],
+      "description_length": 733,
+      "links": [
+        "https://www.tiktok.com/@datosyociosidades"
+      ],
+      "fileSize": "21593252",
+      "statistics": {
+        "viewCount": 1014,
+        "likeCount": 45,
+        "commentCount": 0,
+        "favoriteCount": 0
+      },
+      "analytics_traffic_source_views": {
+        "SHORTS": 864,
+        "YT_SEARCH": 38,
+        "YT_OTHER_PAGE": 5,
+        "YT_CHANNEL": 2,
+        "NO_LINK_OTHER": 1,
+        "EXT_URL": 1,
+        "NOTIFICATION": 1
+      },
+      "analytics_traffic_total": 912,
+      "analytics_overview": {
+        "views": 912,
+        "averageViewDuration": 53,
+        "averageViewPercentage": 73.52,
+        "likes": 40,
+        "comments": 0,
+        "shares": 3,
+        "subscribersGained": 4
+      },
+      "vistas_feed_shorts_analytics": 864
+    },
+    "I8n_5nnUlbI": {
+      "id": "I8n_5nnUlbI",
+      "url": "https://youtube.com/shorts/I8n_5nnUlbI",
+      "tema": "Cleopatra ES (resub desde EN)",
+      "grupo": "cleopatra_es",
+      "title": "Cleopatra NO era egipcia #Shorts",
+      "privacyStatus": "public",
+      "publishedAt_cdmx": "2026-11-22 21:00:29 CST",
+      "publishAt_cdmx": null,
+      "hours_since_publish_al_corte": 17.3,
+      "uploadStatus": "processed",
+      "rejectionReason": null,
+      "failureReason": null,
+      "processingStatus": "succeeded",
+      "processingFailureReason": null,
+      "madeForKids": false,
+      "selfDeclaredMadeForKids": false,
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": true,
+      "containsSyntheticMedia": null,
+      "nota_containsSyntheticMedia": "videos.list devuelve null en todos los Shorts revisados (flojos y los que jalan); no sirve para distinguir.",
+      "categoryId": "27",
+      "defaultLanguage": "es",
+      "defaultAudioLanguage": "es",
+      "duration_seconds": 86,
+      "is_shorts_length": true,
+      "width": 1080,
+      "height": 1920,
+      "aspectRatio": 0.5625,
+      "vertical_1080x1920": true,
+      "regionRestriction": null,
+      "contentRating": {},
+      "hashtags_title": [
+        "Shorts"
+      ],
+      "hashtags_description": [
+        "curiosidades",
+        "historia",
+        "egipto",
+        "datosinteresantes"
+      ],
+      "hashtags_unicos_case_insensitive": [
+        "Shorts",
+        "curiosidades",
+        "historia",
+        "egipto",
+        "datosinteresantes"
+      ],
+      "n_hashtags_unicos": 5,
+      "hashtags_over_15": false,
+      "has_Shorts_hashtag": true,
+      "n_tags": 7,
+      "tags": [
+        "Cleopatra",
+        "DatosYOciosidades",
+        "Egipto",
+        "ciencia",
+        "curiosidades",
+        "datos",
+        "historia"
+      ],
+      "description_length": 535,
+      "links": [
+        "https://www.tiktok.com/@datosyociosidades"
+      ],
+      "fileSize": "29908441",
+      "statistics": {
+        "viewCount": 9,
+        "likeCount": 0,
+        "commentCount": 0,
+        "favoriteCount": 0
+      },
+      "analytics_traffic_source_views": {
+        "YT_CHANNEL": 1
+      },
+      "analytics_traffic_total": 1,
+      "analytics_overview": {
+        "views": 1,
+        "averageViewDuration": 82,
+        "averageViewPercentage": 95.93,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "subscribersGained": 0
+      },
+      "vistas_feed_shorts_analytics": 0
+    },
+    "IQEU2Bqy3v0": {
+      "id": "IQEU2Bqy3v0",
+      "url": "https://youtube.com/shorts/IQEU2Bqy3v0",
+      "tema": "¿La IA nos va a matar? (23-nov 07:00)",
+      "grupo": "hoy_otro",
+      "title": "¿La IA nos va a matar? La advertencia de un directivo de OpenAI #Shorts",
+      "privacyStatus": "public",
+      "publishedAt_cdmx": "2026-11-23 07:00:28 CST",
+      "publishAt_cdmx": null,
+      "hours_since_publish_al_corte": 7.3,
+      "uploadStatus": "processed",
+      "rejectionReason": null,
+      "failureReason": null,
+      "processingStatus": "succeeded",
+      "processingFailureReason": null,
+      "madeForKids": false,
+      "selfDeclaredMadeForKids": false,
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": true,
+      "containsSyntheticMedia": null,
+      "nota_containsSyntheticMedia": "videos.list devuelve null en todos los Shorts revisados (flojos y los que jalan); no sirve para distinguir.",
+      "categoryId": "27",
+      "defaultLanguage": "es",
+      "defaultAudioLanguage": "es-MX",
+      "duration_seconds": 80,
+      "is_shorts_length": true,
+      "width": 1080,
+      "height": 1920,
+      "aspectRatio": 0.5625,
+      "vertical_1080x1920": true,
+      "regionRestriction": null,
+      "contentRating": {},
+      "hashtags_title": [
+        "Shorts"
+      ],
+      "hashtags_description": [
+        "Shorts",
+        "ia",
+        "DatosYOciosidades"
+      ],
+      "hashtags_unicos_case_insensitive": [
+        "Shorts",
+        "ia",
+        "DatosYOciosidades"
+      ],
+      "n_hashtags_unicos": 3,
+      "hashtags_over_15": false,
+      "has_Shorts_hashtag": true,
+      "n_tags": 0,
+      "tags": [],
+      "description_length": 1270,
+      "links": [
+        "https://cibered.com/inteligencia-artificial/novedades-ia/exinvestigador-de-openai-advierte-de-que-la-causa-de-muerte-mas-probable-para-las-personas-vivas-sera-un-accidente-de-ia/",
+        "https://www.lanacion.com.ar/economia/IA/la-razon-mas-probable-por-la-que-moriran-es-por-un-accidente-de-ia-la-alarmante-advertencia-de-otro-nid17112026/",
+        "https://www.diariobitcoin.com/estados-unidos/integrante-de-la-junta-de-openai-advierte-de-un-posible-control-de-la-ia-en-tres-anos/",
+        "https://tokenreporter.ai/",
+        "https://www.tiktok.com/@datosyociosidades"
+      ],
+      "fileSize": "48002425",
+      "statistics": {
+        "viewCount": 4,
+        "likeCount": 0,
+        "commentCount": 0,
+        "favoriteCount": 0
+      },
+      "analytics_traffic_source_views": {
+        "YT_CHANNEL": 0
+      },
+      "analytics_traffic_total": 0,
+      "analytics_overview": {
+        "views": 0,
+        "averageViewDuration": 0,
+        "averageViewPercentage": 0,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "subscribersGained": 0
+      },
+      "vistas_feed_shorts_analytics": 0
+    },
+    "tmOji99zGPE": {
+      "id": "tmOji99zGPE",
+      "url": "https://youtube.com/shorts/tmOji99zGPE",
+      "tema": "truenas los dedos (23-nov 07:00)",
+      "grupo": "hoy_otro",
+      "title": "¿Qué pasa dentro cuando truenas los dedos? #Shorts",
+      "privacyStatus": "public",
+      "publishedAt_cdmx": "2026-11-23 07:00:07 CST",
+      "publishAt_cdmx": null,
+      "hours_since_publish_al_corte": 7.3,
+      "uploadStatus": "processed",
+      "rejectionReason": null,
+      "failureReason": null,
+      "processingStatus": "succeeded",
+      "processingFailureReason": null,
+      "madeForKids": false,
+      "selfDeclaredMadeForKids": false,
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": true,
+      "containsSyntheticMedia": null,
+      "nota_containsSyntheticMedia": "videos.list devuelve null en todos los Shorts revisados (flojos y los que jalan); no sirve para distinguir.",
+      "categoryId": "27",
+      "defaultLanguage": "es",
+      "defaultAudioLanguage": "es",
+      "duration_seconds": 78,
+      "is_shorts_length": true,
+      "width": 1080,
+      "height": 1920,
+      "aspectRatio": 0.5625,
+      "vertical_1080x1920": true,
+      "regionRestriction": null,
+      "contentRating": {},
+      "hashtags_title": [
+        "Shorts"
+      ],
+      "hashtags_description": [
+        "curiosidades",
+        "ciencia",
+        "datosinteresantes",
+        "shorts",
+        "cuerpohumano"
+      ],
+      "hashtags_unicos_case_insensitive": [
+        "Shorts",
+        "curiosidades",
+        "ciencia",
+        "datosinteresantes",
+        "cuerpohumano"
+      ],
+      "n_hashtags_unicos": 5,
+      "hashtags_over_15": false,
+      "has_Shorts_hashtag": true,
+      "n_tags": 6,
+      "tags": [
+        "Datos y ociosidades",
+        "ciencia",
+        "cuerpohumano",
+        "curiosidades",
+        "datosinteresantes",
+        "shorts"
+      ],
+      "description_length": 670,
+      "links": [
+        "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0119470",
+        "https://www.jabfm.org/content/24/2/169"
+      ],
+      "fileSize": "27981630",
+      "statistics": {
+        "viewCount": 9,
+        "likeCount": 1,
+        "commentCount": 0,
+        "favoriteCount": 0
+      },
+      "analytics_traffic_source_views": {
+        "YT_CHANNEL": 3
+      },
+      "analytics_traffic_total": 3,
+      "analytics_overview": {
+        "views": 3,
+        "averageViewDuration": 190,
+        "averageViewPercentage": 244.74,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "subscribersGained": 0
+      },
+      "vistas_feed_shorts_analytics": 0
+    },
+    "Z-nt8t7qPx8": {
+      "id": "Z-nt8t7qPx8",
+      "url": "https://youtube.com/shorts/Z-nt8t7qPx8",
+      "tema": "No habrá apagón (mismo archivo que se fugo la ia)",
+      "grupo": "flojo_relacionado",
+      "title": "No habrá apagón el 17 de noviembre",
+      "privacyStatus": "public",
+      "publishedAt_cdmx": "2026-11-15 19:53:06 CST",
+      "publishAt_cdmx": null,
+      "hours_since_publish_al_corte": 186.4,
+      "uploadStatus": "processed",
+      "rejectionReason": null,
+      "failureReason": null,
+      "processingStatus": "succeeded",
+      "processingFailureReason": null,
+      "madeForKids": false,
+      "selfDeclaredMadeForKids": false,
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": true,
+      "containsSyntheticMedia": null,
+      "nota_containsSyntheticMedia": "videos.list devuelve null en todos los Shorts revisados (flojos y los que jalan); no sirve para distinguir.",
+      "categoryId": "27",
+      "defaultLanguage": "es",
+      "defaultAudioLanguage": null,
+      "duration_seconds": 75,
+      "is_shorts_length": true,
+      "width": 1080,
+      "height": 1920,
+      "aspectRatio": 0.5625,
+      "vertical_1080x1920": true,
+      "regionRestriction": null,
+      "contentRating": {},
+      "hashtags_title": [],
+      "hashtags_description": [
+        "apagon",
+        "17denoviembre",
+        "inteligenciaartificial",
+        "IA",
+        "tecnologia",
+        "datosyociosidades"
+      ],
+      "hashtags_unicos_case_insensitive": [
+        "apagon",
+        "17denoviembre",
+        "inteligenciaartificial",
+        "IA",
+        "tecnologia",
+        "datosyociosidades"
+      ],
+      "n_hashtags_unicos": 6,
+      "hashtags_over_15": false,
+      "has_Shorts_hashtag": false,
+      "n_tags": 0,
+      "tags": [],
+      "description_length": 428,
+      "links": [],
+      "fileSize": "25609422",
+      "statistics": {
+        "viewCount": 14,
+        "likeCount": 1,
+        "commentCount": 0,
+        "favoriteCount": 0
+      },
+      "analytics_traffic_source_views": {
+        "YT_SEARCH": 13,
+        "YT_CHANNEL": 1,
+        "NO_LINK_OTHER": 0
+      },
+      "analytics_traffic_total": 14,
+      "analytics_overview": {
+        "views": 14,
+        "averageViewDuration": 81,
+        "averageViewPercentage": 109.00000000000001,
+        "likes": 1,
+        "comments": 0,
+        "shares": 0,
+        "subscribersGained": 0
+      },
+      "vistas_feed_shorts_analytics": 0
+    },
+    "hrUwoLgADBI": {
+      "id": "hrUwoLgADBI",
+      "url": "https://youtube.com/shorts/hrUwoLgADBI",
+      "tema": "¿Se va la luz el 17 de noviembre por una IA?",
+      "grupo": "flojo_relacionado",
+      "title": "¿Se va la luz el 17 de noviembre por una IA? #inteligenciaartificial",
+      "privacyStatus": "public",
+      "publishedAt_cdmx": "2026-11-15 21:00:28 CST",
+      "publishAt_cdmx": null,
+      "hours_since_publish_al_corte": 185.3,
+      "uploadStatus": "processed",
+      "rejectionReason": null,
+      "failureReason": null,
+      "processingStatus": "succeeded",
+      "processingFailureReason": null,
+      "madeForKids": false,
+      "selfDeclaredMadeForKids": false,
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": true,
+      "containsSyntheticMedia": null,
+      "nota_containsSyntheticMedia": "videos.list devuelve null en todos los Shorts revisados (flojos y los que jalan); no sirve para distinguir.",
+      "categoryId": "27",
+      "defaultLanguage": "es",
+      "defaultAudioLanguage": "es",
+      "duration_seconds": 75,
+      "is_shorts_length": true,
+      "width": 1080,
+      "height": 1920,
+      "aspectRatio": 0.5625,
+      "vertical_1080x1920": true,
+      "regionRestriction": null,
+      "contentRating": {},
+      "hashtags_title": [
+        "inteligenciaartificial"
+      ],
+      "hashtags_description": [
+        "inteligenciaartificial",
+        "chatgpt",
+        "misterio",
+        "datoscuriosos"
+      ],
+      "hashtags_unicos_case_insensitive": [
+        "inteligenciaartificial",
+        "chatgpt",
+        "misterio",
+        "datoscuriosos"
+      ],
+      "n_hashtags_unicos": 4,
+      "hashtags_over_15": false,
+      "has_Shorts_hashtag": false,
+      "n_tags": 6,
+      "tags": [
+        "inteligencia artificial",
+        "chatgpt",
+        "misterio",
+        "datos curiosos",
+        "17 de noviembre",
+        "IA"
+      ],
+      "description_length": 164,
+      "links": [],
+      "fileSize": "3231160",
+      "statistics": {
+        "viewCount": 46,
+        "likeCount": 1,
+        "commentCount": 0,
+        "favoriteCount": 0
+      },
+      "analytics_traffic_source_views": {
+        "YT_SEARCH": 45,
+        "YT_CHANNEL": 1,
+        "NO_LINK_OTHER": 0
+      },
+      "analytics_traffic_total": 46,
+      "analytics_overview": {
+        "views": 46,
+        "averageViewDuration": 37,
+        "averageViewPercentage": 49.37,
+        "likes": 1,
+        "comments": 0,
+        "shares": 0,
+        "subscribersGained": 0
+      },
+      "vistas_feed_shorts_analytics": 0
+    },
+    "YXndoPSSeaY": {
+      "id": "YXndoPSSeaY",
+      "url": "https://youtube.com/shorts/YXndoPSSeaY",
+      "tema": "Gutenberg",
+      "grupo": "contexto",
+      "title": "Gutenberg NO inventó la imprenta #Shorts",
+      "privacyStatus": "public",
+      "publishedAt_cdmx": "2026-11-22 13:30:14 CST",
+      "publishAt_cdmx": null,
+      "hours_since_publish_al_corte": 24.8,
+      "uploadStatus": "processed",
+      "rejectionReason": null,
+      "failureReason": null,
+      "processingStatus": "succeeded",
+      "processingFailureReason": null,
+      "madeForKids": false,
+      "selfDeclaredMadeForKids": false,
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": true,
+      "containsSyntheticMedia": null,
+      "nota_containsSyntheticMedia": "videos.list devuelve null en todos los Shorts revisados (flojos y los que jalan); no sirve para distinguir.",
+      "categoryId": "27",
+      "defaultLanguage": "es",
+      "defaultAudioLanguage": "es-MX",
+      "duration_seconds": 86,
+      "is_shorts_length": true,
+      "width": 1080,
+      "height": 1920,
+      "aspectRatio": 0.5625,
+      "vertical_1080x1920": true,
+      "regionRestriction": null,
+      "contentRating": {},
+      "hashtags_title": [
+        "Shorts"
+      ],
+      "hashtags_description": [
+        "DatosYOciosidades",
+        "Shorts",
+        "datos",
+        "historia",
+        "gutenberg",
+        "imprenta",
+        "Jikji"
+      ],
+      "hashtags_unicos_case_insensitive": [
+        "Shorts",
+        "DatosYOciosidades",
+        "datos",
+        "historia",
+        "gutenberg",
+        "imprenta",
+        "Jikji"
+      ],
+      "n_hashtags_unicos": 7,
+      "hashtags_over_15": false,
+      "has_Shorts_hashtag": true,
+      "n_tags": 7,
+      "tags": [
+        "DatosYOciosidades",
+        "Shorts",
+        "datos",
+        "historia",
+        "gutenberg",
+        "imprenta",
+        "Jikji"
+      ],
+      "description_length": 847,
+      "links": [
+        "https://www.tiktok.com/@datosyociosidades"
+      ],
+      "fileSize": "29934500",
+      "statistics": {
+        "viewCount": 56,
+        "likeCount": 1,
+        "commentCount": 0,
+        "favoriteCount": 0
+      },
+      "analytics_traffic_source_views": {},
+      "analytics_traffic_total": 0,
+      "analytics_overview": {
+        "views": 0,
+        "averageViewDuration": 0,
+        "averageViewPercentage": 0,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "subscribersGained": 0
+      },
+      "vistas_feed_shorts_analytics": 0
+    },
+    "B-75KkHAVDo": {
+      "id": "B-75KkHAVDo",
+      "url": "https://youtube.com/shorts/B-75KkHAVDo",
+      "tema": "oxoboranos",
+      "grupo": "contexto",
+      "title": "Químicos aislan oxoboranos estables tras 60 años #Shorts",
+      "privacyStatus": "public",
+      "publishedAt_cdmx": "2026-11-22 14:30:19 CST",
+      "publishAt_cdmx": null,
+      "hours_since_publish_al_corte": 23.8,
+      "uploadStatus": "processed",
+      "rejectionReason": null,
+      "failureReason": null,
+      "processingStatus": "succeeded",
+      "processingFailureReason": null,
+      "madeForKids": false,
+      "selfDeclaredMadeForKids": false,
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": true,
+      "containsSyntheticMedia": null,
+      "nota_containsSyntheticMedia": "videos.list devuelve null en todos los Shorts revisados (flojos y los que jalan); no sirve para distinguir.",
+      "categoryId": "27",
+      "defaultLanguage": "es",
+      "defaultAudioLanguage": "es",
+      "duration_seconds": 91,
+      "is_shorts_length": true,
+      "width": 1080,
+      "height": 1920,
+      "aspectRatio": 0.5625899280575539,
+      "vertical_1080x1920": true,
+      "regionRestriction": null,
+      "contentRating": {},
+      "hashtags_title": [
+        "Shorts"
+      ],
+      "hashtags_description": [
+        "curiosidades",
+        "ciencia",
+        "datosinteresantes",
+        "quimica"
+      ],
+      "hashtags_unicos_case_insensitive": [
+        "Shorts",
+        "curiosidades",
+        "ciencia",
+        "datosinteresantes",
+        "quimica"
+      ],
+      "n_hashtags_unicos": 5,
+      "hashtags_over_15": false,
+      "has_Shorts_hashtag": true,
+      "n_tags": 7,
+      "tags": [
+        "DatosYOciosidades",
+        "OxoboranosEstables",
+        "ciencia",
+        "datos",
+        "difusión",
+        "difusióncientífica",
+        "ia"
+      ],
+      "description_length": 780,
+      "links": [
+        "https://doi.org/10.1038/s41557-026-02272-w",
+        "https://www.uni-wuerzburg.de/en/news-and-events/news/detail/news/oxoboranes/",
+        "https://www.tiktok.com/@datosyociosidades"
+      ],
+      "fileSize": "55669959",
+      "statistics": {
+        "viewCount": 5,
+        "likeCount": 0,
+        "commentCount": 0,
+        "favoriteCount": 0
+      },
+      "analytics_traffic_source_views": {},
+      "analytics_traffic_total": 0,
+      "analytics_overview": {
+        "views": 0,
+        "averageViewDuration": 0,
+        "averageViewPercentage": 0,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "subscribersGained": 0
+      },
+      "vistas_feed_shorts_analytics": 0
+    },
+    "Sc0cX9ejxuw": {
+      "id": "Sc0cX9ejxuw",
+      "url": "https://youtube.com/shorts/Sc0cX9ejxuw",
+      "tema": "Ada Lovelace",
+      "grupo": "contexto",
+      "title": "Ada Lovelace escribió el primer programa #Shorts",
+      "privacyStatus": "public",
+      "publishedAt_cdmx": "2026-11-22 17:00:32 CST",
+      "publishAt_cdmx": null,
+      "hours_since_publish_al_corte": 21.2,
+      "uploadStatus": "processed",
+      "rejectionReason": null,
+      "failureReason": null,
+      "processingStatus": "succeeded",
+      "processingFailureReason": null,
+      "madeForKids": false,
+      "selfDeclaredMadeForKids": false,
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": true,
+      "containsSyntheticMedia": null,
+      "nota_containsSyntheticMedia": "videos.list devuelve null en todos los Shorts revisados (flojos y los que jalan); no sirve para distinguir.",
+      "categoryId": "27",
+      "defaultLanguage": "es",
+      "defaultAudioLanguage": "es-MX",
+      "duration_seconds": 82,
+      "is_shorts_length": true,
+      "width": 1080,
+      "height": 1920,
+      "aspectRatio": 0.5624740556247405,
+      "vertical_1080x1920": true,
+      "regionRestriction": null,
+      "contentRating": {},
+      "hashtags_title": [
+        "Shorts"
+      ],
+      "hashtags_description": [
+        "DatosYOciosidades",
+        "Shorts",
+        "datos",
+        "historia",
+        "AdaLovelace",
+        "programacion",
+        "mujeresenciencia"
+      ],
+      "hashtags_unicos_case_insensitive": [
+        "Shorts",
+        "DatosYOciosidades",
+        "datos",
+        "historia",
+        "AdaLovelace",
+        "programacion",
+        "mujeresenciencia"
+      ],
+      "n_hashtags_unicos": 7,
+      "hashtags_over_15": false,
+      "has_Shorts_hashtag": true,
+      "n_tags": 7,
+      "tags": [
+        "DatosYOciosidades",
+        "Shorts",
+        "datos",
+        "historia",
+        "AdaLovelace",
+        "programacion",
+        "mujeresenciencia"
+      ],
+      "description_length": 871,
+      "links": [
+        "https://www.tiktok.com/@datosyociosidades"
+      ],
+      "fileSize": "44912569",
+      "statistics": {
+        "viewCount": 48,
+        "likeCount": 2,
+        "commentCount": 0,
+        "favoriteCount": 0
+      },
+      "analytics_traffic_source_views": {
+        "SUBSCRIBER": 5,
+        "YT_CHANNEL": 1
+      },
+      "analytics_traffic_total": 6,
+      "analytics_overview": {
+        "views": 6,
+        "averageViewDuration": 212,
+        "averageViewPercentage": 258.63,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "subscribersGained": 0
+      },
+      "vistas_feed_shorts_analytics": 0
+    },
+    "BIwG7kgaLic": {
+      "id": "BIwG7kgaLic",
+      "url": "https://youtube.com/shorts/BIwG7kgaLic",
+      "tema": "Webb",
+      "grupo": "contexto",
+      "title": "¿Webb ve aire lejano? #Shorts",
+      "privacyStatus": "public",
+      "publishedAt_cdmx": "2026-11-22 19:00:02 CST",
+      "publishAt_cdmx": null,
+      "hours_since_publish_al_corte": 19.3,
+      "uploadStatus": "processed",
+      "rejectionReason": null,
+      "failureReason": null,
+      "processingStatus": "succeeded",
+      "processingFailureReason": null,
+      "madeForKids": false,
+      "selfDeclaredMadeForKids": false,
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": true,
+      "containsSyntheticMedia": null,
+      "nota_containsSyntheticMedia": "videos.list devuelve null en todos los Shorts revisados (flojos y los que jalan); no sirve para distinguir.",
+      "categoryId": "27",
+      "defaultLanguage": "es",
+      "defaultAudioLanguage": "es-MX",
+      "duration_seconds": 32,
+      "is_shorts_length": true,
+      "width": 1080,
+      "height": 1920,
+      "aspectRatio": 0.5625,
+      "vertical_1080x1920": true,
+      "regionRestriction": null,
+      "contentRating": {},
+      "hashtags_title": [
+        "Shorts"
+      ],
+      "hashtags_description": [
+        "Shorts",
+        "espacio",
+        "DatosYOciosidades"
+      ],
+      "hashtags_unicos_case_insensitive": [
+        "Shorts",
+        "espacio",
+        "DatosYOciosidades"
+      ],
+      "n_hashtags_unicos": 3,
+      "hashtags_over_15": false,
+      "has_Shorts_hashtag": true,
+      "n_tags": 0,
+      "tags": [],
+      "description_length": 574,
+      "links": [
+        "https://webb.nasa.gov/",
+        "https://www.tiktok.com/@datosyociosidades"
+      ],
+      "fileSize": "12586638",
+      "statistics": {
+        "viewCount": 61,
+        "likeCount": 0,
+        "commentCount": 0,
+        "favoriteCount": 0
+      },
+      "analytics_traffic_source_views": {
+        "YT_CHANNEL": 2
+      },
+      "analytics_traffic_total": 2,
+      "analytics_overview": {
+        "views": 2,
+        "averageViewDuration": 38,
+        "averageViewPercentage": 121.24999999999999,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "subscribersGained": 0
+      },
+      "vistas_feed_shorts_analytics": 0
+    },
+    "KvHvf2TJLqE": {
+      "id": "KvHvf2TJLqE",
+      "url": "https://youtube.com/shorts/KvHvf2TJLqE",
+      "tema": "Barbanegra",
+      "grupo": "contexto",
+      "title": "El pirata cuya cabeza colgó de un mástil #Shorts",
+      "privacyStatus": "public",
+      "publishedAt_cdmx": "2026-11-22 21:00:01 CST",
+      "publishAt_cdmx": null,
+      "hours_since_publish_al_corte": 17.3,
+      "uploadStatus": "processed",
+      "rejectionReason": null,
+      "failureReason": null,
+      "processingStatus": "succeeded",
+      "processingFailureReason": null,
+      "madeForKids": false,
+      "selfDeclaredMadeForKids": false,
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": true,
+      "containsSyntheticMedia": null,
+      "nota_containsSyntheticMedia": "videos.list devuelve null en todos los Shorts revisados (flojos y los que jalan); no sirve para distinguir.",
+      "categoryId": "27",
+      "defaultLanguage": "es",
+      "defaultAudioLanguage": null,
+      "duration_seconds": 83,
+      "is_shorts_length": true,
+      "width": 1080,
+      "height": 1920,
+      "aspectRatio": 0.5625,
+      "vertical_1080x1920": true,
+      "regionRestriction": null,
+      "contentRating": {},
+      "hashtags_title": [
+        "Shorts"
+      ],
+      "hashtags_description": [
+        "Shorts",
+        "historia",
+        "DatosYOciosidades"
+      ],
+      "hashtags_unicos_case_insensitive": [
+        "Shorts",
+        "historia",
+        "DatosYOciosidades"
+      ],
+      "n_hashtags_unicos": 3,
+      "hashtags_over_15": false,
+      "has_Shorts_hashtag": true,
+      "n_tags": 0,
+      "tags": [],
+      "description_length": 716,
+      "links": [
+        "https://www.tiktok.com/@datosyociosidades"
+      ],
+      "fileSize": "40842124",
+      "statistics": {
+        "viewCount": 14,
+        "likeCount": 0,
+        "commentCount": 0,
+        "favoriteCount": 0
+      },
+      "analytics_traffic_source_views": {},
+      "analytics_traffic_total": 0,
+      "analytics_overview": {
+        "views": 0,
+        "averageViewDuration": 0,
+        "averageViewPercentage": 0,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "subscribersGained": 0
+      },
+      "vistas_feed_shorts_analytics": 0
+    },
+    "RwTTwSNGm10": {
+      "id": "RwTTwSNGm10",
+      "url": "https://youtube.com/shorts/RwTTwSNGm10",
+      "tema": "Colón",
+      "grupo": "contexto",
+      "title": "Colón NO llamó América al continente #Shorts",
+      "privacyStatus": "public",
+      "publishedAt_cdmx": "2026-11-21 23:30:00 CST",
+      "publishAt_cdmx": null,
+      "hours_since_publish_al_corte": 38.8,
+      "uploadStatus": "processed",
+      "rejectionReason": null,
+      "failureReason": null,
+      "processingStatus": "succeeded",
+      "processingFailureReason": null,
+      "madeForKids": false,
+      "selfDeclaredMadeForKids": false,
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": true,
+      "containsSyntheticMedia": null,
+      "nota_containsSyntheticMedia": "videos.list devuelve null en todos los Shorts revisados (flojos y los que jalan); no sirve para distinguir.",
+      "categoryId": "27",
+      "defaultLanguage": "es",
+      "defaultAudioLanguage": "es-MX",
+      "duration_seconds": 85,
+      "is_shorts_length": true,
+      "width": 1080,
+      "height": 1920,
+      "aspectRatio": 0.5625266125871405,
+      "vertical_1080x1920": true,
+      "regionRestriction": null,
+      "contentRating": {},
+      "hashtags_title": [
+        "Shorts"
+      ],
+      "hashtags_description": [
+        "Shorts",
+        "historia",
+        "DatosYOciosidades"
+      ],
+      "hashtags_unicos_case_insensitive": [
+        "Shorts",
+        "historia",
+        "DatosYOciosidades"
+      ],
+      "n_hashtags_unicos": 3,
+      "hashtags_over_15": false,
+      "has_Shorts_hashtag": true,
+      "n_tags": 0,
+      "tags": [],
+      "description_length": 1330,
+      "links": [
+        "https://www.loc.gov/item/05016176/",
+        "https://www.loc.gov/collections/discovery-and-exploration/articles-and-essays/recognizing-and-naming-america/",
+        "https://newsroom.loc.gov/news/library-of-congress-to-unveil--voices-of-the-early-americas---featuring-rare-artifacts--maps-and-ind/s/5c73564c-f9f9-4270-ba24-355c36cca6bc",
+        "https://www.tiktok.com/@datosyociosidades"
+      ],
+      "fileSize": "69297607",
+      "statistics": {
+        "viewCount": 48,
+        "likeCount": 2,
+        "commentCount": 0,
+        "favoriteCount": 0
+      },
+      "analytics_traffic_source_views": {
+        "SHORTS": 12,
+        "YT_CHANNEL": 1,
+        "YT_OTHER_PAGE": 1,
+        "NO_LINK_OTHER": 0
+      },
+      "analytics_traffic_total": 14,
+      "analytics_overview": {
+        "views": 14,
+        "averageViewDuration": 64,
+        "averageViewPercentage": 75.58,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "subscribersGained": 1
+      },
+      "vistas_feed_shorts_analytics": 12
+    }
+  },
+  "duplicados_mismo_archivo_bytes": {
+    "25609422": [
+      {
+        "id": "Z-nt8t7qPx8",
+        "title": "No habrá apagón el 17 de noviembre",
+        "views": 14,
+        "privacy": "public"
+      },
+      {
+        "id": "jeUrM5zzkdA",
+        "title": "se fugo la ia",
+        "views": 0,
+        "privacy": "public"
+      }
+    ],
+    "46751396": [
+      {
+        "id": "wxnhEdlJYwU",
+        "title": "La corneja decide en 235 milisegundos #Shorts",
+        "views": 1,
+        "privacy": "public"
+      },
+      {
+        "id": "ZHdJXFrURk4",
+        "title": "La corneja decide en 235 milisegundos #Shorts",
+        "views": 22,
+        "privacy": "public"
+      }
+    ],
+    "33860080": [
+      {
+        "id": "4lOWeMn2RCo",
+        "title": "¿Por qué tenemos hipo? #Shorts",
+        "views": 8,
+        "privacy": "public"
+      },
+      {
+        "id": "Rg-iTgMExWw",
+        "title": "¿Por qué tenemos hipo? #Shorts",
+        "views": 1,
+        "privacy": "public"
+      }
+    ],
+    "23300715": [
+      {
+        "id": "zTP5akrGA9M",
+        "title": "Tus palomitas explotan por dentro #Shorts",
+        "views": 143,
+        "privacy": "public"
+      },
+      {
+        "id": "2CUYZZF-ZRE",
+        "title": "capsula v2",
+        "views": 0,
+        "privacy": "private"
+      },
+      {
+        "id": "kem67ZyHNB8",
+        "title": "capsula v2",
+        "views": 0,
+        "privacy": "private"
+      }
+    ]
+  },
+  "duplicados_mismo_titulo_normalizado_en_canal_es": {
+    "químicos aislan oxoboranos estables tras 60 años": [
+      {
+        "id": "B-75KkHAVDo",
+        "title": "Químicos aislan oxoboranos estables tras 60 años #Shorts",
+        "views": 5,
+        "privacy": "public",
+        "publishedAt_cdmx": "2026-11-22 14:30:19 CST",
+        "fileSize": "55669959"
+      },
+      {
+        "id": "K4qNkx2f4RI",
+        "title": "Químicos aislan oxoboranos estables tras 60 años #Shorts",
+        "views": 7,
+        "privacy": "public",
+        "publishedAt_cdmx": "2026-11-21 13:30:13 CST",
+        "fileSize": "51804654"
+      }
+    ],
+    "el rosa del flamenco viene de su comida": [
+      {
+        "id": "msWV2AXr6Uk",
+        "title": "El rosa del flamenco viene de su comida #Shorts",
+        "views": 118,
+        "privacy": "public",
+        "publishedAt_cdmx": "2026-11-20 07:00:37 CST",
+        "fileSize": "28557269"
+      },
+      {
+        "id": "JV8SB2EpPyI",
+        "title": "El rosa del flamenco viene de su comida #Shorts",
+        "views": 3,
+        "privacy": "public",
+        "publishedAt_cdmx": "2026-11-14 07:00:06 CST",
+        "fileSize": "24197344"
+      }
+    ],
+    "la corneja decide en 235 milisegundos": [
+      {
+        "id": "AxgWdhqPhRI",
+        "title": "La corneja decide en 235 milisegundos #Shorts",
+        "views": 5,
+        "privacy": "public",
+        "publishedAt_cdmx": "2026-11-19 07:00:26 CST",
+        "fileSize": "50344129"
+      },
+      {
+        "id": "wxnhEdlJYwU",
+        "title": "La corneja decide en 235 milisegundos #Shorts",
+        "views": 1,
+        "privacy": "public",
+        "publishedAt_cdmx": "2026-11-11 17:00:28 CST",
+        "fileSize": "46751396"
+      },
+      {
+        "id": "ZHdJXFrURk4",
+        "title": "La corneja decide en 235 milisegundos #Shorts",
+        "views": 22,
+        "privacy": "public",
+        "publishedAt_cdmx": "2026-10-31 12:24:13 CST",
+        "fileSize": "46751396"
+      }
+    ],
+    "el hielo que sostuvo tres mantos": [
+      {
+        "id": "KnP1j4y72ug",
+        "title": "El hielo que sostuvo tres mantos #Shorts",
+        "views": 95,
+        "privacy": "public",
+        "publishedAt_cdmx": "2026-11-17 13:30:05 CST",
+        "fileSize": "24281135"
+      },
+      {
+        "id": "HDQr9OGpFJM",
+        "title": "El hielo que sostuvo tres mantos #Shorts",
+        "views": 80,
+        "privacy": "public",
+        "publishedAt_cdmx": "2026-11-01 17:00:05 CST",
+        "fileSize": "24753049"
+      }
+    ],
+    "el coral blanqueado que volvió a recuperarse": [
+      {
+        "id": "45WOvkNQTHo",
+        "title": "El coral blanqueado que volvió a recuperarse #Shorts",
+        "views": 985,
+        "privacy": "public",
+        "publishedAt_cdmx": "2026-11-16 13:30:32 CST",
+        "fileSize": "50456713"
+      },
+      {
+        "id": "Mz-IVFvFWH4",
+        "title": "El coral blanqueado que volvió a recuperarse #Shorts",
+        "views": 137,
+        "privacy": "public",
+        "publishedAt_cdmx": "2026-10-31 13:30:24 CST",
+        "fileSize": "43593544"
+      }
+    ],
+    "¿aves que temen a mujeres?": [
+      {
+        "id": "YVfUrd2NQJw",
+        "title": "¿Aves que temen a mujeres?",
+        "views": 532,
+        "privacy": "public",
+        "publishedAt_cdmx": "2026-11-12 17:00:29 CST",
+        "fileSize": "39401003"
+      },
+      {
+        "id": "O7TdKvuBjyg",
+        "title": "¿Aves que temen a mujeres?",
+        "views": 25,
+        "privacy": "public",
+        "publishedAt_cdmx": "2026-10-24 17:59:18 CST",
+        "fileSize": "39401244"
+      }
+    ],
+    "¿por qué tenemos hipo?": [
+      {
+        "id": "4lOWeMn2RCo",
+        "title": "¿Por qué tenemos hipo? #Shorts",
+        "views": 8,
+        "privacy": "public",
+        "publishedAt_cdmx": "2026-11-09 17:00:39 CST",
+        "fileSize": "33860080"
+      },
+      {
+        "id": "Rg-iTgMExWw",
+        "title": "¿Por qué tenemos hipo? #Shorts",
+        "views": 1,
+        "privacy": "public",
+        "publishedAt_cdmx": "2026-11-04 07:00:33 CST",
+        "fileSize": "33860080"
+      },
+      {
+        "id": "41PYjWbQuJo",
+        "title": "¿Por qué tenemos hipo? #Shorts",
+        "views": 0,
+        "privacy": "public",
+        "publishedAt_cdmx": "2026-11-18 07:00:37 CST",
+        "fileSize": "37736117"
+      }
+    ],
+    "capsula v2": [
+      {
+        "id": "2CUYZZF-ZRE",
+        "title": "capsula v2",
+        "views": 0,
+        "privacy": "private",
+        "publishedAt_cdmx": "2026-11-07 18:22:07 CST",
+        "fileSize": "23300715"
+      },
+      {
+        "id": "kem67ZyHNB8",
+        "title": "capsula v2",
+        "views": 0,
+        "privacy": "private",
+        "publishedAt_cdmx": "2026-11-07 18:21:32 CST",
+        "fileSize": "23300715"
+      }
+    ]
+  },
+  "duplicados_entre_canales_o_copias_no_byte_identicas": [
+    {
+      "tema": "Cleopatra NO era egipcia",
+      "evidencia": "Título idéntico en español en ambos canales. El repo (data/resubidas_2026-11-21.md) registra que I8n_5nnUlbI es resubida al canal ES del video que sigue público en EN como m8VAsrbfsbE.",
+      "en": {
+        "id": "m8VAsrbfsbE",
+        "canal": "UCa54OqVk1m-33E9PYApNl5A",
+        "vistas_ytdlp": 460,
+        "likes_ytdlp": 23,
+        "upload_date": "2026-11-21",
+        "language_ytdlp": "es"
+      },
+      "es": {
+        "id": "I8n_5nnUlbI",
+        "canal": "UCU2ZI-6pBJEr9aSFsF6bxLw",
+        "vistas_api": 9,
+        "publicado_cdmx": "2026-11-22 21:00:29 CST",
+        "analytics_traffic": {
+          "YT_CHANNEL": 1
+        },
+        "nota": "A las ~17 h, Analytics no registra vistas del feed SHORTS; solo 1 del canal."
+      }
+    },
+    {
+      "tema": "La enana blanca que late junto al Sol",
+      "en": {
+        "id": "BMjcFp0WKD8",
+        "vistas_ytdlp": 20,
+        "upload_date": "2026-11-20",
+        "titulo": "La enana blanca que late junto al Sol #Shorts"
+      },
+      "es": "No hay copia en el canal ES (resubida pendiente por falta de mp4, según data/resubidas_2026-11-21.md)."
+    },
+    {
+      "tema": "¿La IA nos va a matar?",
+      "copias_en_es": [
+        {
+          "id": "Vx8EhL4ib7I",
+          "title": "¿La IA nos va a matar? La advertencia de un directivo de OpenAI",
+          "publicado_utc": "2026-11-18T05:30:16Z",
+          "vistas": 39,
+          "hashtag_Shorts_en_titulo": false
+        },
+        {
+          "id": "IQEU2Bqy3v0",
+          "title": "¿La IA nos va a matar? La advertencia de un directivo de OpenAI #Shorts",
+          "publicado_cdmx": "2026-11-23 07:00:28 CST",
+          "vistas": 4,
+          "hashtag_Shorts_en_titulo": true
+        }
+      ]
+    }
+  ],
+  "listado_publico_canal_en": [
+    {
+      "id": "TSw_rnH0qNE",
+      "title": "Will AI Kill Us? #Shorts",
+      "views": 0,
+      "duration_s": 92,
+      "language_ytdlp": "en",
+      "upload_date": "2026-11-23",
+      "idioma_titulo": "en"
+    },
+    {
+      "id": "_BTiK1eUmBA",
+      "title": "Blackbeard — The Pirate Whose Head Hung from a Mast #Shorts",
+      "views": 0,
+      "duration_s": 81,
+      "language_ytdlp": "en",
+      "upload_date": "2026-11-23",
+      "idioma_titulo": "en"
+    },
+    {
+      "id": "2OA6y1brE4o",
+      "title": "The alliance that sinks a bloom",
+      "views": 30,
+      "duration_s": 87,
+      "language_ytdlp": "en",
+      "upload_date": "2026-11-23",
+      "idioma_titulo": "en"
+    },
+    {
+      "id": "nePeFTvBPvw",
+      "title": "Chemists isolate stable oxoboranes after 60 years",
+      "views": 8,
+      "duration_s": 84,
+      "language_ytdlp": "en",
+      "upload_date": "2026-11-22",
+      "idioma_titulo": "en"
+    },
+    {
+      "id": "m8VAsrbfsbE",
+      "title": "Cleopatra NO era egipcia #Shorts",
+      "views": 460,
+      "likes": 23,
+      "duration_s": 85,
+      "language_ytdlp": "es",
+      "upload_date": "2026-11-21",
+      "idioma_titulo": "es",
+      "width": 1080,
+      "height": 1920,
+      "channelId": "UCa54OqVk1m-33E9PYApNl5A",
+      "nota": "Mismo título en español que I8n_5nnUlbI del canal ES. Listado público yt-dlp, sin token del canal EN."
+    },
+    {
+      "id": "CGkNPtNHbz0",
+      "title": "AI finds forgotten 2D materials",
+      "views": 3,
+      "duration_s": 83,
+      "language_ytdlp": "en",
+      "upload_date": "2026-11-21",
+      "idioma_titulo": "en"
+    },
+    {
+      "id": "BMjcFp0WKD8",
+      "title": "La enana blanca que late junto al Sol #Shorts",
+      "views": 20,
+      "likes": 1,
+      "duration_s": 74,
+      "language_ytdlp": "en",
+      "upload_date": "2026-11-20",
+      "idioma_titulo": "es",
+      "nota": "Título en español en el canal EN. En el repo quedó pendiente resubirlo al ES; aún no hay copia en el canal ES."
+    },
+    {
+      "id": "lIaooJHKEmo",
+      "title": "Juno reveals Jupiter's invisible bow shock",
+      "views": 1,
+      "duration_s": 85,
+      "language_ytdlp": "en",
+      "upload_date": "2026-11-20",
+      "idioma_titulo": "en"
+    },
+    {
+      "id": "XAnZNhEh1J4",
+      "title": "The mosquito that listens",
+      "views": 19,
+      "duration_s": 85,
+      "language_ytdlp": "en",
+      "upload_date": "2026-11-19",
+      "idioma_titulo": "en"
+    },
+    {
+      "id": "j5NOTorZqmU",
+      "title": "The risk that stays after cholesterol",
+      "views": 1,
+      "duration_s": 87,
+      "language_ytdlp": "en",
+      "upload_date": "2026-11-18",
+      "idioma_titulo": "en"
+    },
+    {
+      "id": "S0xlnZ_rjDU",
+      "title": "The ice that held three ice sheets",
+      "views": 5,
+      "duration_s": 88,
+      "language_ytdlp": "en",
+      "upload_date": "2026-11-18",
+      "idioma_titulo": "en"
+    },
+    {
+      "id": "fmwzg03f8ik",
+      "title": "Plastic with enzymes that dissolves in the deep sea",
+      "views": 25,
+      "duration_s": 88,
+      "language_ytdlp": "en",
+      "upload_date": "2026-11-17",
+      "idioma_titulo": "en"
+    },
+    {
+      "id": "GnrYz38Rkzg",
+      "title": "The bleached coral that came back to life",
+      "views": 15,
+      "duration_s": 88,
+      "language_ytdlp": "en",
+      "upload_date": "2026-11-17",
+      "idioma_titulo": "en"
+    },
+    {
+      "id": "MpK9KlciLVc",
+      "title": "The gut talks to the brain in autism",
+      "views": 13,
+      "duration_s": 88,
+      "language_ytdlp": "en",
+      "upload_date": "2026-11-16",
+      "idioma_titulo": "en"
+    },
+    {
+      "id": "mowsTARMRb8",
+      "title": "Water that links distant magnets",
+      "views": 12,
+      "duration_s": 87,
+      "language_ytdlp": "en",
+      "upload_date": "2026-11-16",
+      "idioma_titulo": "en"
+    }
+  ],
+  "shorts_publicos_fuera_de_playlist_uploads": [
+    {
+      "id": "Vx8EhL4ib7I",
+      "title": "¿La IA nos va a matar? La advertencia de un directivo de OpenAI",
+      "privacy": "public",
+      "publishedAt": "2026-11-18T05:30:16Z",
+      "uploadStatus": "processed",
+      "madeForKids": false,
+      "selfDeclaredMadeForKids": false,
+      "containsSyntheticMedia": null,
+      "duration": "PT1M26S",
+      "regionRestriction": null,
+      "contentRating": {},
+      "views": 39,
+      "likes": 2,
+      "lang": "es-MX",
+      "audioLang": "es-MX",
+      "categoryId": "27",
+      "n_tags": 7,
+      "fileSize": "52666558",
+      "streams": [
+        {
+          "widthPixels": 1080,
+          "heightPixels": 1920,
+          "aspectRatio": 0.5625
+        }
+      ],
+      "processing": "succeeded",
+      "desc_len": 1291,
+      "hashtags_title": []
+    },
+    {
+      "id": "ThbHry-YC-w",
+      "title": "Mito o verdad: ¿Los vikingos usaban cascos con cuernos?",
+      "privacy": "public",
+      "publishedAt": "2026-11-17T23:00:22Z",
+      "uploadStatus": "processed",
+      "madeForKids": false,
+      "selfDeclaredMadeForKids": false,
+      "containsSyntheticMedia": null,
+      "duration": "PT1M22S",
+      "regionRestriction": null,
+      "contentRating": {},
+      "views": 91,
+      "likes": 1,
+      "lang": "es-MX",
+      "audioLang": "es-MX",
+      "categoryId": "27",
+      "n_tags": 6,
+      "fileSize": "46676515",
+      "streams": [
+        {
+          "widthPixels": 1080,
+          "heightPixels": 1920,
+          "aspectRatio": 0.5625
+        }
+      ],
+      "processing": "succeeded",
+      "desc_len": 1004,
+      "hashtags_title": []
+    },
+    {
+      "id": "dz2C-Y8klXA",
+      "title": "¿Sabías que el ornitorrinco brilla bajo luz UV? #Shorts",
+      "privacy": "public",
+      "publishedAt": "2026-11-17T13:00:25Z",
+      "uploadStatus": "processed",
+      "madeForKids": false,
+      "selfDeclaredMadeForKids": false,
+      "containsSyntheticMedia": null,
+      "duration": "PT1M19S",
+      "regionRestriction": null,
+      "contentRating": {},
+      "views": 132,
+      "likes": 3,
+      "lang": "es",
+      "audioLang": "es",
+      "categoryId": "27",
+      "n_tags": 5,
+      "fileSize": "30405487",
+      "streams": [
+        {
+          "widthPixels": 1080,
+          "heightPixels": 1920,
+          "aspectRatio": 0.5625
+        }
+      ],
+      "processing": "succeeded",
+      "desc_len": 704,
+      "hashtags_title": [
+        "#Shorts"
+      ]
+    },
+    {
+      "id": "tiGeRapGRjM",
+      "title": "Hera fue a ver el golpe de DART",
+      "privacy": "public",
+      "publishedAt": "2026-11-17T05:30:10Z",
+      "uploadStatus": "processed",
+      "madeForKids": false,
+      "selfDeclaredMadeForKids": false,
+      "containsSyntheticMedia": null,
+      "duration": "PT1M26S",
+      "regionRestriction": null,
+      "contentRating": {},
+      "views": 1070,
+      "likes": 29,
+      "lang": "es",
+      "audioLang": "es",
+      "categoryId": "27",
+      "n_tags": 11,
+      "fileSize": "23241276",
+      "streams": [
+        {
+          "widthPixels": 1080,
+          "heightPixels": 1920,
+          "aspectRatio": 0.5625
+        }
+      ],
+      "processing": "succeeded",
+      "desc_len": 637,
+      "hashtags_title": []
+    },
+    {
+      "id": "THQxnLZEz3A",
+      "title": "El pulpo reparte el trabajo entre tres corazones #Shorts",
+      "privacy": "public",
+      "publishedAt": "2026-11-16T05:30:18Z",
+      "uploadStatus": "processed",
+      "madeForKids": false,
+      "selfDeclaredMadeForKids": false,
+      "containsSyntheticMedia": null,
+      "duration": "PT1M24S",
+      "regionRestriction": null,
+      "contentRating": {},
+      "views": 150,
+      "likes": 7,
+      "lang": "es",
+      "audioLang": "es",
+      "categoryId": "27",
+      "n_tags": 6,
+      "fileSize": "26045094",
+      "streams": [
+        {
+          "widthPixels": 1080,
+          "heightPixels": 1920,
+          "aspectRatio": 0.5625
+        }
+      ],
+      "processing": "succeeded",
+      "desc_len": 572,
+      "hashtags_title": [
+        "#Shorts"
+      ]
+    },
+    {
+      "id": "7ay4KLS8h8I",
+      "title": "Capsaicina: ¿agua, refresco o leche?",
+      "privacy": "public",
+      "publishedAt": "2026-11-03T20:18:59Z",
+      "uploadStatus": "processed",
+      "madeForKids": false,
+      "selfDeclaredMadeForKids": false,
+      "containsSyntheticMedia": null,
+      "duration": "PT1M43S",
+      "regionRestriction": null,
+      "contentRating": {},
+      "views": 24,
+      "likes": 0,
+      "lang": "es",
+      "audioLang": null,
+      "categoryId": "27",
+      "n_tags": 0,
+      "fileSize": "35395844",
+      "streams": [],
+      "processing": "succeeded",
+      "desc_len": 737,
+      "hashtags_title": []
+    },
+    {
+      "id": "GlBl4S4aDAs",
+      "title": "La química detrás de las lágrimas",
+      "privacy": "public",
+      "publishedAt": "2026-11-02T01:05:27Z",
+      "uploadStatus": "processed",
+      "madeForKids": false,
+      "selfDeclaredMadeForKids": false,
+      "containsSyntheticMedia": null,
+      "duration": "PT1M40S",
+      "regionRestriction": null,
+      "contentRating": {},
+      "views": 276,
+      "likes": 12,
+      "lang": "es",
+      "audioLang": null,
+      "categoryId": "27",
+      "n_tags": 0,
+      "fileSize": "10521721",
+      "streams": [],
+      "processing": "succeeded",
+      "desc_len": 864,
+      "hashtags_title": []
+    },
+    {
+      "id": "0x1B9_rMm-I",
+      "title": "El tiburón que vive siglos #Shorts",
+      "privacy": "public",
+      "publishedAt": "2026-11-02T01:00:26Z",
+      "uploadStatus": "processed",
+      "madeForKids": false,
+      "selfDeclaredMadeForKids": false,
+      "containsSyntheticMedia": null,
+      "duration": "PT1M34S",
+      "regionRestriction": null,
+      "contentRating": {},
+      "views": 218,
+      "likes": 8,
+      "lang": "es",
+      "audioLang": null,
+      "categoryId": "27",
+      "n_tags": 6,
+      "fileSize": "39844970",
+      "streams": [],
+      "processing": "succeeded",
+      "desc_len": 562,
+      "hashtags_title": [
+        "#Shorts"
+      ]
+    },
+    {
+      "id": "aZn5eTyiQPQ",
+      "title": "El perro que guía a los muertos 🐕💀 #Shorts",
+      "privacy": "public",
+      "publishedAt": "2026-11-01T09:00:06Z",
+      "uploadStatus": "processed",
+      "madeForKids": false,
+      "selfDeclaredMadeForKids": false,
+      "containsSyntheticMedia": null,
+      "duration": "PT1M31S",
+      "regionRestriction": null,
+      "contentRating": {},
+      "views": 857,
+      "likes": 38,
+      "lang": "es",
+      "audioLang": null,
+      "categoryId": "27",
+      "n_tags": 6,
+      "fileSize": "36556687",
+      "streams": [],
+      "processing": "succeeded",
+      "desc_len": 847,
+      "hashtags_title": [
+        "#Shorts"
+      ]
+    },
+    {
+      "id": "jeUrM5zzkdA",
+      "title": "se fugo la ia",
+      "privacy": "public",
+      "publishedAt": "2026-11-15T21:40:06Z",
+      "uploadStatus": "processed",
+      "madeForKids": false,
+      "selfDeclaredMadeForKids": null,
+      "containsSyntheticMedia": null,
+      "duration": "PT1M15S",
+      "regionRestriction": null,
+      "contentRating": {},
+      "views": 0,
+      "likes": 0,
+      "lang": "es",
+      "audioLang": "es",
+      "categoryId": "27",
+      "n_tags": 0,
+      "fileSize": "25609422",
+      "streams": [
+        {
+          "widthPixels": 1080,
+          "heightPixels": 1920,
+          "aspectRatio": 0.5625
+        }
+      ],
+      "processing": "succeeded",
+      "desc_len": 1086,
+      "hashtags_title": []
+    },
+    {
+      "id": "41PYjWbQuJo",
+      "title": "¿Por qué tenemos hipo? #Shorts",
+      "privacy": "public",
+      "publishedAt": "2026-11-18T13:00:37Z",
+      "uploadStatus": "processed",
+      "madeForKids": false,
+      "selfDeclaredMadeForKids": false,
+      "containsSyntheticMedia": null,
+      "duration": "PT1M23S",
+      "regionRestriction": null,
+      "contentRating": {},
+      "views": 0,
+      "likes": 0,
+      "lang": "es",
+      "audioLang": "es",
+      "categoryId": "27",
+      "n_tags": 8,
+      "fileSize": "37736117",
+      "streams": [
+        {
+          "widthPixels": 1080,
+          "heightPixels": 1920,
+          "aspectRatio": 0.5625
+        }
+      ],
+      "processing": "succeeded",
+      "desc_len": 581,
+      "hashtags_title": [
+        "#Shorts"
+      ]
+    }
+  ],
+  "volumen": {
+    "publicos_por_dia_cdmx_segun_publishedAt": {
+      "2026-10-24": 6,
+      "2026-10-25": 2,
+      "2026-10-26": 6,
+      "2026-10-27": 6,
+      "2026-10-28": 3,
+      "2026-10-29": 1,
+      "2026-10-30": 2,
+      "2026-10-31": 5,
+      "2026-11-01": 2,
+      "2026-11-02": 4,
+      "2026-11-03": 4,
+      "2026-11-04": 4,
+      "2026-11-07": 3,
+      "2026-11-08": 2,
+      "2026-11-09": 2,
+      "2026-11-10": 3,
+      "2026-11-11": 4,
+      "2026-11-12": 4,
+      "2026-11-13": 2,
+      "2026-11-14": 2,
+      "2026-11-15": 8,
+      "2026-11-16": 3,
+      "2026-11-17": 2,
+      "2026-11-18": 3,
+      "2026-11-19": 3,
+      "2026-11-20": 3,
+      "2026-11-21": 5,
+      "2026-11-22": 8,
+      "2026-11-23": 5
+    },
+    "todos_estados_por_publishedAt_incluye_privados_y_programados": {
+      "2026-10-24": 6,
+      "2026-10-25": 2,
+      "2026-10-26": 6,
+      "2026-10-27": 6,
+      "2026-10-28": 3,
+      "2026-10-29": 1,
+      "2026-10-30": 2,
+      "2026-10-31": 5,
+      "2026-11-01": 2,
+      "2026-11-02": 4,
+      "2026-11-03": 4,
+      "2026-11-04": 4,
+      "2026-11-07": 5,
+      "2026-11-08": 2,
+      "2026-11-09": 2,
+      "2026-11-10": 3,
+      "2026-11-11": 4,
+      "2026-11-12": 4,
+      "2026-11-13": 2,
+      "2026-11-14": 2,
+      "2026-11-15": 8,
+      "2026-11-16": 3,
+      "2026-11-17": 2,
+      "2026-11-18": 4,
+      "2026-11-19": 3,
+      "2026-11-20": 3,
+      "2026-11-21": 32,
+      "2026-11-22": 35,
+      "2026-11-23": 15
+    },
+    "nota_publishedAt_privados": "En videos aún privados, publishedAt suele ser la hora de subida, no la de estreno. Por eso el 21 y 22-nov aparecen 32 y 35 en 'todos los estados' frente a 5 y 8 públicos.",
+    "publicos_15_nov": 8,
+    "publicos_21_nov": 5,
+    "publicos_22_nov": 8,
+    "publicos_23_nov_al_corte": 5,
+    "choques_de_horario_ya_publicados": [
+      {
+        "fecha_cdmx": "2026-11-22 21:00",
+        "videos": [
+          {
+            "id": "KvHvf2TJLqE",
+            "title": "El pirata cuya cabeza colgó de un mástil #Shorts",
+            "views": 14
+          },
+          {
+            "id": "I8n_5nnUlbI",
+            "title": "Cleopatra NO era egipcia #Shorts",
+            "views": 9
+          }
+        ]
+      },
+      {
+        "fecha_cdmx": "2026-11-23 07:00",
+        "videos": [
+          {
+            "id": "tmOji99zGPE",
+            "title": "¿Qué pasa dentro cuando truenas los dedos? #Shorts",
+            "views": 9
+          },
+          {
+            "id": "IQEU2Bqy3v0",
+            "title": "¿La IA nos va a matar? La advertencia de un directivo de OpenAI #Shorts",
+            "views": 4
+          }
+        ]
+      }
+    ],
+    "choque_programado_hoy_17_00": [
+      {
+        "id": "gWJxoGjWQeM",
+        "title": "¿Las pirámides las hicieron esclavos? #Shorts",
+        "privacy": "private",
+        "publishAt_cdmx": "2026-11-23 17:00:00 CST"
+      },
+      {
+        "id": "6OuHVN5dbbs",
+        "title": "El Mitra romano no llegó ya hecho de Persia",
+        "privacy": "private",
+        "publishAt_cdmx": "2026-11-23 17:00:00 CST"
+      }
+    ],
+    "programados_hoy_despues_del_corte": [
+      {
+        "id": "gWJxoGjWQeM",
+        "title": "¿Las pirámides las hicieron esclavos? #Shorts",
+        "publishAt_cdmx": "2026-11-23 17:00:00 CST"
+      },
+      {
+        "id": "6OuHVN5dbbs",
+        "title": "El Mitra romano no llegó ya hecho de Persia",
+        "publishAt_cdmx": "2026-11-23 17:00:00 CST"
+      },
+      {
+        "id": "i3SpxSQglm4",
+        "title": "La Biblia de Gutenberg NO fue el primer libro impreso #Shorts",
+        "publishAt_cdmx": "2026-11-23 19:00:00 CST"
+      },
+      {
+        "id": "7azes5URgi4",
+        "title": "La ley que le quitó jueces propios a la Iglesia #Shorts",
+        "publishAt_cdmx": "2026-11-23 21:00:00 CST"
+      },
+      {
+        "id": "pTmQgkchC68",
+        "title": "El oso que el ejército hizo cabo #Shorts",
+        "publishAt_cdmx": "2026-11-23 23:30:00 CST"
+      }
+    ]
+  },
+  "flags_que_NO_separan_flojos_de_los_que_jalan": [
+    "privacyStatus=public (los flojos de días no están privados ni ocultos)",
+    "uploadStatus=processed y processingStatus=succeeded; rejectionReason y failureReason vacíos",
+    "madeForKids=false (ninguno está marcado para niños)",
+    "Sin regionRestriction y contentRating vacío (no hay bloqueo por país ni restricción de edad)",
+    "Duración 32–88 s, vertical 1080×1920: cumplen regla de Shorts (≤180 s)",
+    "categoryId=27 (Educación) en flojos y en los que jalan",
+    "license=youtube, embeddable=true",
+    "containsSyntheticMedia=null en todos (la API no lo devuelve)",
+    "Número de hashtags: nadie supera 15 únicos; tejón (1014) usa 7, pulpo (267) usa 3, Napoleón (217) usa 3; los flojos de hipo usan 5. Los hashtags no explican los ceros.",
+    "defaultLanguage es / es-MX o audio vacío aparece en ambos grupos (p. ej. pulpo es/es y Barbanegra es/None)",
+    "Tener o no tags internos: pulpo y Napoleón tienen 0 tags y sí jalaron"
+  ],
+  "diferencias_claras": [
+    {
+      "hallazgo": "Varias copias públicas del mismo contenido, a veces el mismo archivo byte a byte. Analytics muestra que las copias extra casi no entran al feed SHORTS.",
+      "casos": [
+        "Hipo: Rg-iTgMExWw (1 vista, orig, 4-nov, SHORTS=1, retención 92 % sobre 1 vista), 4lOWeMn2RCo (8 vistas, mismo fileSize 33860080, 9-nov, tráfico solo YT_SEARCH 5 + YT_CHANNEL 3, 0 SHORTS, retención 17 %), 41PYjWbQuJo (0 vistas, resub recodificada fileSize 37736117, 18-nov, 127 h, tráfico vacío).",
+        "Corneja: ZHdJXFrURk4 (22, orig, 31-oct, SHORTS=12), wxnhEdlJYwU (1, mismo fileSize 46751396, 11-nov, 285 h, YT_SEARCH 1, 0 SHORTS), AxgWdhqPhRI (5, recodificada fileSize 50344129, 19-nov, SHORTS=4).",
+        "Apagón: jeUrM5zzkdA y Z-nt8t7qPx8 son el mismo archivo (25609422 bytes). jeUr lleva 0 vistas en 190 h (tráfico vacío). Z-nt lleva 14, casi todas YT_SEARCH (13), 0 SHORTS. El 17-nov se pidió pasar ambas a privado y siguen públicas.",
+        "Oxoboranos: dos públicos con el mismo título, fileSize distinto: K4qNkx2f4RI (7, 21-nov) y B-75KkHAVDo (5, 22-nov).",
+        "¿La IA nos va a matar?: Vx8EhL4ib7I (39, 18-nov, sin #Shorts en título) y IQEU2Bqy3v0 (4, 23-nov 07:00, con #Shorts)."
+      ]
+    },
+    {
+      "hallazgo": "El mismo video en español vive en el canal EN y en el ES. El EN tiene muchas más vistas.",
+      "caso": "m8VAsrbfsbE (EN, título en español, 460 vistas desde 21-nov) vs I8n_5nnUlbI (ES, 9 vistas desde 22-nov 21:00 CST). En ES, Analytics al corte solo ve 1 vista YT_CHANNEL, 0 SHORTS."
+    },
+    {
+      "hallazgo": "«se fugo la ia» además tiene metadata peor que el resto del canal.",
+      "detalle": "Título en minúsculas y con typo, sin #Shorts, 0 tags, selfDeclaredMadeForKids=null (YouTube igual lo clasifica madeForKids=false). Es copia exacta de Z-nt8t7qPx8."
+    },
+    {
+      "hallazgo": "Los que sí jalan reciben el feed de Shorts.",
+      "casos": [
+        "tejón 6XCBYrlO4Eg: 1014 vistas, Analytics SHORTS=864 (más YT_SEARCH 38 y otros).",
+        "Napoleón 8okieDXFIgU: 217 vistas, SHORTS=47 (Analytics va atrasado respecto al total de la Data API).",
+        "pulpo 4Vi_TnIl9FI: 267 vistas en ~15 h; Analytics aún casi no lo cubre (solo YT_CHANNEL 1). El total de la Data API ya es alto, así que el atraso de Analytics no se puede leer como 'sin feed'.",
+        "Salem N21TIYdONZo: 83 vistas en ~31 h; Analytics al corte solo YT_CHANNEL 0 (también atrasado)."
+      ]
+    },
+    {
+      "hallazgo": "Bernabé, Evémero y Rosetta llevan pocas horas; no se pueden diagnosticar igual que los ceros de días.",
+      "detalle": "Bernabé CW02WClntYA 2 vistas / 5,3 h; Evémero Tq2ASLkFTbo 2 vistas / 3,3 h; Rosetta p5PM4xZfDyc 1–2 vistas / 0,8 h (yt-dlp ya marcaba 2 minutos después). Analytics todavía vacío (normal en el día). Bernabé y Evémero no tienen #Shorts en el título y el gancho es más académico. Mitra/Alvar 6OuHVN5dbbs sigue private, programado hoy 17:00 CST, y choca con gWJxoGjWQeM a la misma hora."
+    }
+  ],
+  "hipotesis": {
+    "principal": "YouTube está dejando fuera del feed de Shorts las copias de un video que ya existe público, en el mismo canal o en el canal EN, cuando el archivo es idéntico o el título/contenido es el mismo. No hay un error visible de privacidad, restricción, procesamiento o hashtags de más. Por eso Studio no muestra fallos y las vistas se quedan en 0–2 (o en unas pocas de búsqueda/canal).",
+    "evidencia": [
+      "De los Shorts públicos con más de 12 h, los únicos en 0 vistas son jeUrM5zzkdA (copia exacta + título malo) y 41PYjWbQuJo (tercera copia de hipo). Los únicos en 1 vista de días son Rg-iTgMExWw (orig hipo) y wxnhEdlJYwU (copia exacta de corneja).",
+      "Analytics: 41PYjWbQuJo y jeUrM5zzkdA tienen tráfico vacío. wxnhEdlJYwU y 4lOWeMn2RCo no tienen SHORTS; solo búsqueda o canal. El original de corneja sí tuvo SHORTS=12. El tejón y Napoleón sí tienen SHORTS.",
+      "Cleopatra en EN (español, 460) vs ES (9, sin SHORTS en Analytics) confirma el patrón que señaló Mj.",
+      "Los hashtags no son la causa: ninguno supera 15 únicos; los que jalaron usan 3–7, en el mismo rango que los flojos.",
+      "No hay regionRestriction, age-restriction, madeForKids, rejectionReason ni upload fallido en esos videos."
+    ],
+    "secundaria_hoy": "Bernabé/Evémero/Rosetta aún están en la ventana corta. 1–2 vistas en pocas horas no prueban supresión. Hay que mirarlos mañana. Sí hay un error de programación: dos videos a las 17:00 de hoy, y ya salieron dos a las 07:00 de hoy y dos a las 21:00 de ayer.",
+    "lo_que_no_se_puede_afirmar": [
+      "No se vio un aviso de 'contenido reutilizado' en la API (ese dato no viene en videos.list).",
+      "No hay impresiones (impressions) en esta API; el proxy es insightTrafficSourceType=SHORTS.",
+      "containsSyntheticMedia no se puede comprobar por API (sale null en todos).",
+      "No se comparó el hash del archivo de Cleopatra entre canales (no hay token EN ni se descargaron los mp4). La evidencia es el título idéntico, el idioma es, y el registro de la resubida en el repo."
+    ]
+  },
+  "acciones_propuestas_NO_EJECUTADAS": [
+    "Sin orden de Mj, no borrar, no pasar a privado ni editar nada.",
+    "Si Mj lo pide: dejar una sola copia pública de cada tema y pasar a privado las demás. Hipo: las tres (Rg-iTgMExWw, 4lOWeMn2RCo, 41PYjWbQuJo). Corneja: wxnhEdlJYwU y, si se quiere una sola, también AxgWdhqPhRI, dejando ZHdJXFrURk4 (22 vistas). Oxoboranos: una de las dos. IA-matar: decidir entre Vx8EhL4ib7I (39) e IQEU2Bqy3v0 (4, de hoy).",
+    "Honrar la orden del 17-nov: jeUrM5zzkdA («se fugo la ia») y Z-nt8t7qPx8 («No habrá apagón el 17 de noviembre») siguen públicos; pasarlos a privado solo si Mj lo confirma otra vez.",
+    "Cleopatra: no dejar el mismo video en español en los dos canales. O se deja solo en ES, o solo en EN, o en EN se sube una versión en inglés. Mientras m8VAsrbfsbE siga público, es poco probable que I8n_5nnUlbI entre bien al feed.",
+    "En el canal EN, no subir cápsulas con título y audio en español (Cleopatra ya; enana blanca BMjcFp0WKD8 también está en español ahí; no resubir esa misma al ES).",
+    "No resubir un Short si la versión anterior sigue pública. Si se va a resubir, primero (con orden de Mj) pasar a privado o unlisted la copia vieja, recodificar, y no repetir título exacto.",
+    "Hoy 23-nov 17:00 CST chocan gWJxoGjWQeM (pirámides) y 6OuHVN5dbbs (Mitra/Alvar). Mover uno a otro hueco antes de las 17:00.",
+    "Evitar dos Shorts a la misma hora (ya pasó el 22-nov 21:00 y el 23-nov 07:00).",
+    "Bernabé y Evémero: esperar 24 h. Si siguen en 2, el título sin #Shorts y el gancho académico pueden no ayudar, pero editar el título después no garantiza que arranque el feed. No concluyo que estén rotos hoy.",
+    "Hashtags de los ceros de días: no hace falta cambiarlos; no son el problema. Seguir con 3–6, #Shorts en título, nunca más de 15."
+  ],
+  "conclusion_para_mj": "Mj va bien encaminada: en los que llevan días en 0 o 1 vista no hay un error típico de YouTube (no están privados, no están bloqueados, no son para niños, no falló el procesamiento, y no tienen más de 15 hashtags). Lo que sí está mal es que hay varias copias del mismo video públicas al mismo tiempo, y YouTube no las está metiendo al feed de Shorts. Hipo está tres veces público: la del 18-nov (41PYjWbQuJo) lleva 5 días en 0 y Analytics no le registra ni una vista del feed. Corneja está tres veces; la copia idéntica del 11-nov (wxnhEdlJYwU) lleva 1 vista y no entró al feed. «se fugo la ia» (jeUrM5zzkdA) es el mismo archivo que «No habrá apagón el 17 de noviembre», el título está mal escrito y sin #Shorts, y lleva 8 días en 0. El 17-nov se había pedido pasar esas dos a privado y siguen públicas. Cleopatra es el caso que viste: el mismo video en español está en el canal EN (m8VAsrbfsbE, 460 vistas desde el 21-nov) y en el ES (I8n_5nnUlbI, 9 vistas desde anoche). En el ES, Analytics solo ve 1 vista del canal, no del feed de Shorts. Los hashtags no son la causa. Los que sí jalaron (tejón 1,014, pulpo 267, Napoleón 217, Salem 83) usan 3-7 hashtags, igual que los flojos. Bernabé, Evémero y Rosetta de hoy llevan pocas horas (1-2 vistas); eso todavía no prueba lo mismo. Bernabé y Evémero no tienen #Shorts en el título. Mitra/Alvar aún no sale: va a las 17:00 y chocó de horario con «¿Las pirámides las hicieron esclavos?», las dos programadas a las 17:00 (hora de Ciudad de México, CST). No cambié nada. Si quieres, el siguiente paso es pasar a privado las copias de más y mover una de las dos de las 17:00, cuando lo indiques."
+}
