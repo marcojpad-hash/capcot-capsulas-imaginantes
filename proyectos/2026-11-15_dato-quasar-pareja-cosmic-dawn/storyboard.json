@@ -381,7 +381,7 @@
     ],
     "note": "No publicar ni programar desde preproducción textual; privacidad y horario de publicación quedan sin fijar."
   },
-  "estado": "PENDIENTE_AUDITOR",
+  "estado": "BORRADOR_EN_PROYECTOS_NO_APTO_PARA_PROMOCION",
   "production_mode": "storyboard_only",
   "validation_notes": [
     "Borrador textual; no se generaron imágenes, frames, audio, voz, video ni render.",
@@ -401,23 +401,23 @@
   "approved_assets": [],
   "narrative_qa": {
     "status": "FAIL",
-    "score": 82,
+    "score": 0,
     "review_basis": "lectura_en_frio_solo_narracion",
-    "reviewer_role": "auditor_capcot_independiente",
-    "reviewed_at": "2026-11-20T11:58:38-06:00",
+    "reviewer_role": "control_compuerta_chatgpt_no_independiente",
+    "reviewed_at": "2026-11-23T04:02:29-06:00",
     "checks": {
-      "pregunta_central_reconstruible": true,
-      "apertura_in_medias_res": true,
-      "progresion_por_escena": true,
+      "pregunta_central_reconstruible": false,
+      "apertura_in_medias_res": false,
+      "progresion_por_escena": false,
       "transiciones_causales": false,
-      "giro_cientifico_explicado": true,
-      "limite_evidencia_explicito": true,
-      "payoff_cierre_apertura": true
+      "giro_cientifico_explicado": false,
+      "limite_evidencia_explicito": false,
+      "payoff_cierre_apertura": false
     },
     "critical_flags": [
-      "TRANSICION_002_003_NO_CAUSAL",
-      "TRANSICION_003_004_NO_CAUSAL"
-    ]
+      "REVISION_INDEPENDIENTE_AUSENTE"
+    ],
+    "reviewer_notes": "La narración se leyó concatenada y sin apoyarse en título, resumen, arco ni notas. Esta pasada es de ChatGPT y no sustituye la revisión externa requerida por el issue #11. La autoevaluación previa 82/100 no es independiente. El informe de Groq gpt-oss-120b en PR #13 inspecciona el storyboard completo y su metadata, por lo que no cumple la lectura en frío solo de narración; PR #12 quedó cerrado sin merge y PR #13 sigue abierto. Los siete false significan no acreditados por un auditor independiente, no un dictamen sustantivo de fallo individual. Narración y claims permanecen intactos."
   },
   "state": "BORRADOR_EN_PROYECTOS_NO_APTO_PARA_PROMOCION"
 }
