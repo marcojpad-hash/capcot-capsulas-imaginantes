@@ -415,3 +415,38 @@ La atribución anterior de **Oso Wojtek en main a las 23:30 del 23-nov** no se p
 - `2026-11-23_tropical-biodiversity-turnover`, 13:30: conserva **CONFLICTO_DE_SLOT_ENTRE_RAMAS** con Rosetta `p5PM4xZfDyc`; además 13:00–14:30 es ventana de prueba, no ventana activa de la política main del 23-nov.
 
 No se modificó main ni `data/*.json`; no se canceló ni reprogramó ningún contenido. No se promovió ni redispatchó el borrador de supersequías.
+
+## Reconciliación adicional de programación y Actions — 23-nov-2026, 11:59 CDMX
+
+### Corrección de la conclusión sobre 23:30
+
+La lectura directa de `main/data/tt_fb_alineacion_2026-11-23.json` (blob `3d44386a12298ee06b222ccabfaefb65fe61a6e8`) contradice la conclusión de que 23:30 está libre. En el bloque `hoy_en_yt_sin_mp4_local_ni_tt_fb` figura Oso Wojtek con `video_id=pTmQgkchC68` y `hora_cdmx=23:30`. Es un registro explícito de alineación de YouTube con ID y hora; la clasificación conservadora para ese slot es `PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR` y `CONFLICTO_DE_SLOT_ENTRE_RAMAS` mientras el registro siga vigente. Esto **supersede** la conclusión del commit `13095a5f5ba940ee4be9e56c7eb7155cf1a81a78` que retiró el conflicto por falta de corroboración en otros archivos.
+
+La discrepancia permanece abierta, no se convierte en una afirmación de publicación confirmada:
+- `main/data/publicaciones.json` (blob `774e3b7022c910d5b1b1d3f86a4590df0ee5847d`) contiene 55 registros totales y solo tres entradas del 23-nov; no incluye `pTmQgkchC68`.
+- `main/data/miniaturas_auditoria_2026-11-21.json` (blob `afc0a587025534eb5a338169383171bb0f38254c`) es un snapshot del 21-nov y no contiene Oso a las 23:30. Por ser anterior, no invalida el registro de alineación del 23-nov.
+- La misma alineación y el snapshot sí identifican a Rosetta (`WtuxaKrS4-Q`) a las 13:30; el borrador `2026-11-23_tropical-biodiversity-turnover` conserva conflicto de slot con main.
+- La alineación lista diez IDs de YouTube distribuidos en ocho horas locales (07:00 dos; 09:00; 11:00; 13:30; 17:00 dos; 19:00; 21:00; 23:30). No se afirma que sean diez cápsulas distintas, pero el registro excede las cinco ventanas autorizadas y no permite tratar otro slot como libre. `scripts/rotacion.py` mantiene `MAX_POR_DIA=5`.
+
+La rama feature no contiene los snapshots `tt_fb_alineacion` ni `miniaturas_auditoria` de main; sus datos locales incluyen únicamente `endscreens_rotacion.json`, `horarios.json`, `publicaciones.json`, `reprogramacion_tt_fb_v4_2026-11-01_03.json` y `rotacion.json`. Por tanto, `registro_editorial.py`/`rotacion.py` no pueden reconciliar por sí solos esos registros de main. La verificación cruzada manual sigue siendo obligatoria antes de asignar slots.
+
+### Estado de QA, recepción y rutas
+
+- Los 15 storyboards del 18–23 nov conservan los estados QA de la tabla de fuente de verdad incluida en la sección «Relectura y correcciones verificadas — 06:23 CDMX»; los dos borradores del 23-nov siguen FAIL/82. Los doce IDs del lote 5–7 nov permanecen en 2 PASS y 10 FAIL. No cambió ninguna narración ni se repitió un PASS.
+- El árbol actual de feature no contiene archivos en `cola/estado/`. Para los 15 proyectos recientes y los 12 IDs del lote 5–7 nov, la recepción se mantiene como `RECEPCION_GROK_NO_CONFIRMADA`.
+- No hay JSON plano actual en `cola/entrada/`; permanece únicamente la entrada histórica anidada del robot del 9-nov. No hay salida nueva para los dos borradores del 23-nov.
+- `proyectos/2026-11-23_supersequias-722-eventos/ESTADO_EJECUCION.md` y `fuentes.md`, y los equivalentes de biodiversidad, devuelven 404. No existe un estado `PREPARADO` que corregir. No se creó estado Grok ni entrada de cola.
+
+### Workflow y ejecuciones observadas
+
+- El workflow vigente de feature observa `cola/entrada/*.json` en primer nivel; su selector usa `find -maxdepth 1`. `scripts/procesar_cola.py` contempla profundidad adicional, por lo que la entrada histórica anidada sigue siendo `NOT_DISPATCHABLE`. No se disparó workflow ni se envió payload.
+- El último run de dispatch observado es `#41306776689`, push del 1-nov-2026 12:29Z en feature; falló con el error literal `Falta configurar GROK_WEBHOOK_URL.` La versión actual del workflow tiene un paso de webhook opcional. No se leyeron valores de secretos y la presencia actual de esa variable queda sin verificar; el fallo histórico no se atribuye automáticamente al estado actual.
+- El CI de feature `#45075532329` terminó SUCCESS para Kuroshio únicamente. Su workflow ejecuta `validar_storyboard.py` sin `--check-doi`; no valida los dos borradores actuales ni acredita DOI/Crossref.
+- En main, Semgrep `#45225684539` terminó FAILURE (exit code 1); los runs recientes de CodeQL y Gitleaks terminaron SUCCESS. PR #3 continúa OPEN/DRAFT/no mergeable. PR #15 continúa OPEN/NOT MERGED; es mergeable, pero sus pruebas unitarias siguen sin evidencia de ejecución. No se modificaron PRs.
+- La ejecución real del validador estructural sobre los dos borradores no se pudo completar en este entorno. Se leyó su código por GitHub; la descarga local alternativa falló por resolución DNS (`URLError: <urlopen error [Errno -3] Temporary failure in name resolution>`) y la apertura web del archivo devolvió `DisabledError`. La revisión manual de JSON no se presenta como ejecución del validador. No se usó workflow_dispatch ni se alteraron storyboards para forzar CI.
+
+### Decisión de este run
+
+Ambos borradores permanecen `NOT_DISPATCHABLE`: Supersequías por FAIL/82 y conflicto de 23:30 con el registro Oso en main; biodiversidad por FAIL/82 y conflicto de 13:30 con Rosetta. No se promovió, no se reescribió narración, no se modificó `data/*.json`, main, cola, estados Grok, programación, secretos ni permisos. No se generaron medios ni se consumieron créditos.
+
+Siguiente paso mínimo: reconciliar con Imaginantes/propietario el ID Oso de 23:30 y la discrepancia del registro de publicaciones; mantener ambos slots bloqueados hasta esa confirmación y hasta que cada storyboard tenga QA PASS, validador estructural real y DOI verificado.
