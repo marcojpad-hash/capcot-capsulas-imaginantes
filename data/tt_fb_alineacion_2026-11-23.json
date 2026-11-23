@@ -1,0 +1,121 @@
+{
+  "fecha_cdmx": "2026-11-23",
+  "hora_log": "2026-11-23 07:58 America/Mexico_City",
+  "rutina": "CAPCOT publicar TikTok (misma parrilla)",
+  "cuenta_tiktok": "@datosyociosidades",
+  "pagina_facebook": "Datos y ociosidades",
+  "ya_estaban": [
+    {
+      "tema": "nudillos",
+      "yt_id": "tmOji99zGPE",
+      "slot_yt_cdmx": "2026-11-23 07:00",
+      "tiktok_url": "https://www.tiktok.com/@datosyociosidades/video/7710702314381675828",
+      "tiktok_id": "7710702314381675828",
+      "facebook": "publicado reel, lunes 23 nov 7:00, página Datos y ociosidades",
+      "nota": "Ya estaba en TT y FB; no se volvió a subir."
+    },
+    {
+      "tema": "webb",
+      "yt_id": "BIwG7kgaLic",
+      "slot_yt_cdmx": "2026-11-22 19:00",
+      "tiktok_url": "https://www.tiktok.com/@datosyociosidades/video/7711073239539141889",
+      "tiktok_id": "7711073239539141889",
+      "facebook": "publicado reel, domingo 22 nov 19:00",
+      "nota": "Pendiente de duración el 22-nov por la mañana; ya estaba en TT y FB al revisar el 23-nov 07:00."
+    },
+    {
+      "tema": "ia-christiano",
+      "yt_id_resub_hoy": "IQEU2Bqy3v0",
+      "yt_id_original": "Vx8EhL4ib7I",
+      "slot_yt_cdmx": "2026-11-23 07:00 (resub YT del mismo tema)",
+      "tiktok_url": "https://www.tiktok.com/@datosyociosidades/video/7709267841710689588",
+      "tiktok_id": "7709267841710689588",
+      "nota": "No se resubió a TT/FB: el original ya salió el 17-nov 23:30 en TT y FB."
+    }
+  ],
+  "programados_esta_corrida": [
+    {
+      "tema": "bernabe",
+      "yt_id": "CW02WClntYA",
+      "hora_cdmx": "2026-11-23 09:00",
+      "tiktok_url": "https://www.tiktok.com/@datosyociosidades/video/7711362255790542087",
+      "tiktok_id": "7711362255790542087",
+      "tiktok_ui": "09:00 (GMT-6) Mexico City, Everyone",
+      "facebook_post_id": "2567513790393440",
+      "facebook_ui": "lunes 23-nov 09:00 America/Mexico_City, Público",
+      "tt_etiqueta_ia": true,
+      "fb_etiqueta_ia": false,
+      "portada": "primer frame con título: BERNABÉ LLAMÓ AL ORFISMO RELIGIÓN DEL LIBRO"
+    },
+    {
+      "tema": "evemerismo",
+      "yt_id": "Tq2ASLkFTbo",
+      "hora_cdmx": "2026-11-23 11:00",
+      "tiktok_url": "https://www.tiktok.com/@datosyociosidades/video/7711363084484447495",
+      "tiktok_id": "7711363084484447495",
+      "tiktok_ui": "11:00 (GMT-6) Mexico City, Everyone",
+      "facebook_post_id": "1533214399866677",
+      "facebook_ui": "lunes 23-nov 11:00 America/Mexico_City, Público",
+      "tt_etiqueta_ia": true,
+      "fb_etiqueta_ia": false,
+      "portada": "primer frame con título: DIJO QUE LOS DIOSES HABÍAN SIDO REYES"
+    },
+    {
+      "tema": "mitra",
+      "yt_id": "6OuHVN5dbbs",
+      "hora_cdmx": "2026-11-23 17:00",
+      "tiktok_url": "https://www.tiktok.com/@datosyociosidades/video/7711363491168324882",
+      "tiktok_id": "7711363491168324882",
+      "tiktok_ui": "17:00 (GMT-6) Mexico City, Everyone",
+      "facebook_post_id": "1168149849068171",
+      "facebook_ui": "lunes 23-nov 17:00 America/Mexico_City, Público",
+      "tt_etiqueta_ia": true,
+      "fb_etiqueta_ia": false,
+      "portada": "primer frame con título: EL MITRA ROMANO NO LLEGÓ YA HECHO DE PERSIA"
+    }
+  ],
+  "atrasados_sin_mp4_en_caja": [
+    {
+      "tema": "pulpo-drenaje-inky",
+      "yt_id": "4Vi_TnIl9FI",
+      "hora_cdmx": "2026-11-22 23:30",
+      "yt": "public",
+      "tt_fb": "no encontrado en Studio ni Business Suite (el pulpo de tres corazones sí está, es otra cápsula)"
+    },
+    {
+      "tema": "pirata-barbanegra",
+      "yt_id": "KvHvf2TJLqE",
+      "hora_cdmx": "2026-11-22 21:00",
+      "yt": "public",
+      "tt_fb": "no encontrado en Studio ni Business Suite"
+    }
+  ],
+  "hoy_en_yt_sin_mp4_local_ni_tt_fb": [
+    {
+      "tema": "rosetta",
+      "yt_id": "p5PM4xZfDyc",
+      "hora_cdmx": "2026-11-23 13:30"
+    },
+    {
+      "tema": "piramides-esclavos",
+      "yt_id": "gWJxoGjWQeM",
+      "hora_cdmx": "2026-11-23 17:00"
+    },
+    {
+      "tema": "gutenberg-primer-libro",
+      "yt_id": "i3SpxSQglm4",
+      "hora_cdmx": "2026-11-23 19:00"
+    },
+    {
+      "tema": "ley-juarez",
+      "yt_id": "7azes5URgi4",
+      "hora_cdmx": "2026-11-23 21:00"
+    },
+    {
+      "tema": "oso-wojtek",
+      "yt_id": "pTmQgkchC68",
+      "hora_cdmx": "2026-11-23 23:30"
+    }
+  ],
+  "nota": "Esta corrida programó en TT+FB las tres cápsulas de mitología con mp4 en caja (Bernabé 09:00, Evémero 11:00, Mitra 17:00). Nudillos 07:00 y Webb 22-nov 19:00 ya estaban. El resub de IA Christiano (IQEU2Bqy3v0) no se duplicó en TT/FB. Quedan pendientes pulpo-drenaje, pirata y cinco slots de hoy cuyo mp4 no está en esta caja."
+}
