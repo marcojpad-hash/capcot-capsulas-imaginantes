@@ -141,7 +141,7 @@ No se modificaron las copias heredadas, no se borraron duplicados y no se repiti
 - **Preflight verificado:** 220 palabras, 8 escenas, 84 s totales, 9:16, voz configurada, mapa con centroides publicados, capas de dato, `approved_assets=[]`, `export.render_status=NOT_GENERATED`, `publicacion.status=PENDIENTE_DECISION_GROK`.
 - **No creado:** `ESTADO_EJECUCION.md`, entrada de cola, estado Grok, medios o archivos de publicación. `narrative_qa` sí se registró como FAIL 82/100.
 - **No modificados:** `data/*.json`, main, bloqueados heredados, permisos, secretos y programación.
-- **Siguiente compuerta mínima:** resolver DOI por Crossref/resolvedor y realizar una revisión narrativa independiente en frío. Solo después podrá evaluarse la promoción; no se autoriza despacho en este estado.
+- **Siguiente compuerta mínima:** resolver DOI por Crossref/resolvedor, verificar la cifra 139/234 en la fuente primaria y ejecutar el validador estructural real. La revisión narrativa ya quedó registrada como FAIL; no repetirla mientras la narración no cambie. No se autoriza despacho en este estado.
 
 ## Correcciones y verificaciones del run — 2026-11-23 00:57 CDMX
 
