@@ -116,3 +116,8 @@ Las programaciones provienen de `main/data/miniaturas_auditoria_2026-11-21.json`
 - `main/data/rehechos_2026-11-22.json`: SHA `902a92411a516df4a3bf1046d8fec3ce1ee888c9`.
 - `main/data/publicaciones.json`: SHA `9acb10035cb0d375635ec7481527d60af648ea8f`.
 - `feature/scripts/rotacion.py`: SHA `f3e529e49cf825bdecc62a1d4669e5c59c6c28c3` (`MAX_POR_DIA=5`).
+
+
+## Reintento de resolver — 23-nov-2026, 04:29 CDMX
+
+Se intentó abrir Crossref REST `/works/{doi}` y `/v1/works/{doi}` para los DOI de los candidatos. El lector web devolvió `Internal Error` en ambos endpoints y no entregó una respuesta de Crossref; no se marcó ningún DOI como verificado. Se conserva `PENDIENTE_RESOLVEDOR` y no se crea storyboard sin resolver la fuente.
