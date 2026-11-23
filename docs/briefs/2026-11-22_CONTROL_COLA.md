@@ -724,3 +724,6 @@ Este corte es una auditoría documental posterior al horario; la verificación d
 ### Corrección de autoridad documental — 22-nov-2026
 
 `ajustes_entre_modelos/PARA_CHATGPT_dato_del_dia.md` conservaba instrucciones históricas incompatibles con la ficha maestra actual: entrega directa en `cola/entrada/`, creación de estado y marca `PREPARADO`. Se añadió un addendum de autoridad en commit `a8df6a33eaf6a380062ddf73cbf399aeb9c8646a`; lectura de vuelta verificada, blob `a614252ff3b6624eb1b2da485cfb617c30f604f8`. El investigador queda limitado a `proyectos/`; la promoción queda reservada al auditor después de todas las compuertas. El commit lleva `[skip ci]`; la consulta de estado devolvió cero workflow runs y cero checks. No se tocó `data/*.json`, cola ni estados Grok.
+
+
+La advertencia de autoridad también quedó colocada al inicio de `ajustes_entre_modelos/PARA_CHATGPT_dato_del_dia.md` para que preceda a los briefs históricos: commit `a1c1a4fa24ac9e1433365cb0230907ed9f8474e2`, lectura de vuelta verificada, blob `cb8b87030e38ce81683f855f4d054e4dab6242a8`. `[skip ci]`; consulta posterior: cero workflow runs y cero checks.
