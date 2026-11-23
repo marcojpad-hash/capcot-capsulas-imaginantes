@@ -631,3 +631,6 @@ Identidad y fuentes:
 ### Confirmación exhaustiva de estado Grok
 
 La relectura del árbol completo en HEAD `6577868ea826703fa512a2831e5e5ee7c19c6c79` confirma que **no existe ningún path bajo `cola/estado/`** y que `handoffs/grok_done/` solo contiene `.gitkeep`. Por tanto, los 15 IDs de la tabla 18–23 nov, los 12 IDs del lote 5–7 nov y el paquete histórico del robot quedan con **RECEPCION_GROK_NO_CONFIRMADA**. El único marker de `handoffs/grok_inbox/` es el del robot, con `status=pending`; prueba escritura del marker, no lectura por Grok. No se creó ni modificó ningún estado.
+
+
+**Trazabilidad de commits de auditoría:** el código y los paquetes se inspeccionaron inicialmente en HEAD `af1584ace60d349b07eff387799e9e06b6713618`. Las únicas escrituras posteriores fueron documentales: actualización de `proyectos/2026-11-18_dato-kuroshio-puente-atmosferico/ESTADO_EJECUCION.md` y este brief. HEAD final de la rama: `44a6413c670bfc1e63e72ce4336d759a1f7b5eb5`.
