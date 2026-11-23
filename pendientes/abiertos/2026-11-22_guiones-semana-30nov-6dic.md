@@ -35,3 +35,11 @@ Escena 4: En lugares como Ypres, en la actual Bélgica, existían redes de depó
 Escena 5: La cerveza y el vino eran bebidas habituales en muchas regiones, pero no eran la única opción. El acceso al agua dependía de la ciudad y de la época.
 Escena 6: Así que no: los europeos medievales no vivían exclusivamente de cerveza. Bebían agua cuando podían obtenerla de fuentes consideradas seguras, y también consumían bebidas fermentadas.
 Fuentes: Wellcome Collection, The Vilest of All Beverages: https://wellcomecollection.org/stories/the-vilest-of-all-beverages — David Gentilcore, Social History of Medicine: https://academic.oup.com/shm/article-abstract/33/3/683/5237763 — University of Sheffield: https://newhistories.sites.sheffield.ac.uk/volumes/2018-19/volume-8/the-medieval-beverage-of-choice-
+
+---
+
+## Nota Pecas (23-nov)
+- Recibido Grupo A comida (Nº 15, 31, 32, 42): guiones de Mj tal cual + EN, con montaje ES/EN, QA y metadata en proyectos/2026-11-23_comida-*.
+- Revisión de los logs de render: los 4 ES quedaron OK (60.87-66.57 s). Los 4 EN quedaron cortos: 54.27-58.57 s, todos con «ERROR: duración fuera de 60-120 s». Revisar el EN antes de subirlo (en Antonieta el log muestra varios reintentos de TTS con NoAudioReceived).
+- Grupo B también recibido (proyectos/2026-11-23_animal-* + wonder-woman-poligrafo): los 10 renders ES+EN quedaron OK (85-90 s). Queda pendiente que Mj confirme Cher Ami, que el 22-nov marcó como tema poco atractivo.
+- Aviso de nombre de archivo: este nombre era el que Pecas tenía en local para los 42 guiones verificados de la semana 30 nov-6 dic (con las 2 correcciones aplicadas: Calígula cónsul, Einstein). Esa versión nunca se subió al repo y solo existía en local; para que no se pierda, Pecas la dejó en `2026-11-22_guiones-semana-30nov-6dic-42-verificados.md`. Este archivo queda como está: el de Grupo A.
