@@ -1,6 +1,6 @@
 # La paloma que salvó a 194 soldados / The pigeon that saved 194 soldiers
 
-Hueco: 2026-11-26 23:30 (America/Mexico_City) · Portada: «UNA PALOMA SALVÓ A 194 SOLDADOS» / «A PIGEON SAVED 194 SOLDIERS»
+Hueco: 2026-11-30 23:30 (America/Mexico_City) = 2026-12-01T05:30:00Z (movida del 26-nov por Thanksgiving, orden Mj 23-nov) · Portada: «UNA PALOMA SALVÓ A 194 SOLDADOS» / «A PIGEON SAVED 194 SOLDIERS»
 
 ## Escena 1
 **ES:** Octubre de 1918. Casi doscientos soldados estadounidenses están atrapados en un bosque de Francia. Y su última esperanza no tiene radio ni teléfono: tiene plumas.

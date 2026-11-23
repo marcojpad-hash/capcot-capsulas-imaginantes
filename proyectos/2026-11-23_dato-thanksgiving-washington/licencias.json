@@ -1,0 +1,44 @@
+{
+ "project_id": "2026-11-23_dato-thanksgiving-washington",
+ "musica": {
+  "cama": "arpegio",
+  "origen": "síntesis propia (scripts/cama_sonora.py, numpy)",
+  "licencia": "obra propia de Datos y ociosidades",
+  "generada_por_ia": false
+ },
+ "sfx": {
+  "campanas": {
+   "archivo": "campanas.oga",
+   "commons": "File:Church bells - Leverkusen, 2007.oga",
+   "autor": "natalie",
+   "licencia": "Public domain",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/3/36/Church_bells_-_Leverkusen%2C_2007.oga?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Church_bells_-_Leverkusen,_2007.oga",
+   "licencia_verificada": "Public domain"
+  }
+ },
+ "imagenes": {
+  "origen": "Wikimedia Commons (PD/CC, créditos en creditos_imagenes.json)",
+  "estilo": "foto_commons",
+  "realista": true
+ },
+ "voz": {
+  "motor": "Microsoft Edge TTS",
+  "voz": "es-MX-JorgeNeural",
+  "nota": "voz sintética; no imita a una persona real"
+ },
+ "capas_datos": {
+  "tipos": [
+   "mapa",
+   "dato"
+  ],
+  "mapa_base": "Natural Earth 110m (dominio público)",
+  "render": "matplotlib (propio)"
+ },
+ "fuentes_datos": [
+  "https://www.archives.gov/legislative/features/thanksgiving",
+  "https://founders.archives.gov/documents/Washington/01-05-02-0005-0003-0026",
+  "https://www.mountvernon.org/library/digitalhistory/digital-encyclopedia/article/thanksgiving",
+  "https://www.loc.gov/resource/mgw8a.124/?sp=132&st=text"
+ ]
+}

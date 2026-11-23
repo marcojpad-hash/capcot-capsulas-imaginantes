@@ -2,7 +2,7 @@
 # scenes: (narr_es, narr_en, imagen Commons o 'IA:archivo', capa|None)
 SPECS = {
  "cher-ami": {
-  "hueco": "2026-11-26 23:30 (America/Mexico_City)", "cama": "pulso", "sfx": "viento",
+  "hueco": "2026-11-30 23:30 (America/Mexico_City) = 2026-12-01T05:30:00Z (movida del 26-nov por Thanksgiving, orden Mj 23-nov)", "publishAt_utc": "2026-12-01T05:30:00Z", "cama": "pulso", "sfx": "viento",
   "title_es": "La paloma que salvó a 194 soldados", "title_en": "The pigeon that saved 194 soldiers",
   "cover_es": "UNA PALOMA SALVÓ A 194 SOLDADOS", "cover_en": "A PIGEON SAVED 194 SOLDIERS",
   "tema": "palomas", "ht_es": ["#Shorts", "#animales", "#historia", "#PrimeraGuerraMundial", "#palomas"],
@@ -166,3 +166,42 @@ SPECS["wonder-woman"] = {
    ("En 1941, con el seudónimo Charles Moulton, creó a Wonder Woman, con un lazo dorado que obliga a decir la verdad. Y las pulseras, según él, venían de las que usaba Olive Byrne, su exalumna, que vivía con él y con Elizabeth. ¿Confiarías más en un lazo que en un polígrafo?",
     "In 1941, under the pen name Charles Moulton, he created Wonder Woman, with a golden lasso that compels the truth. And her bracelets, he said, came from the ones worn by Olive Byrne, his former student, who lived with him and Elizabeth. Would you trust a lasso more than a polygraph?",
     "File:William Marston Aug 1922 newspaper photo.jpg", None)]}
+
+# Cambio Mj 23-nov 09:41: dato del día Thanksgiving 26-nov-2026 (jueves 26 de noviembre, como en 1789).
+SPECS["thanksgiving"] = {
+  "dir": "2026-11-23_dato-thanksgiving-washington",
+  "hueco": "2026-11-26 23:30 (America/Mexico_City) = 2026-11-27T05:30:00Z", "publishAt_utc": "2026-11-27T05:30:00Z",
+  "cama": "arpegio", "sfx": "campanas",
+  "title_es": "Washington eligió este mismo jueves 26 de noviembre", "title_en": "Washington picked this very Thursday, November 26",
+  "cover_es": "WASHINGTON ELIGIÓ ESTE JUEVES 26", "cover_en": "WASHINGTON PICKED THIS THURSDAY",
+  "tema": "Thanksgiving", "ht_es": ["#Shorts", "#AcciónDeGracias", "#Thanksgiving", "#historia", "#datoDelDía"],
+  "ht_en": ["#Shorts", "#Thanksgiving", "#history", "#GeorgeWashington", "#funfacts"],
+  "caption_es": "Hoy es jueves 26 de noviembre, igual que el primer Día de Acción de Gracias que proclamó George Washington en 1789.",
+  "caption_en": "Today is Thursday, November 26, the same date as the first Thanksgiving George Washington proclaimed in 1789.",
+  "sources": [
+   {"id": "nara", "cita_corta": "National Archives: Congress Establishes Thanksgiving.", "url": "https://www.archives.gov/legislative/features/thanksgiving"},
+   {"id": "fo", "cita_corta": "Founders Online (National Archives): diario de George Washington, 26 de noviembre de 1789.", "url": "https://founders.archives.gov/documents/Washington/01-05-02-0005-0003-0026"},
+   {"id": "mv", "cita_corta": "George Washington's Mount Vernon: Thanksgiving (Digital Encyclopedia).", "url": "https://www.mountvernon.org/library/digitalhistory/digital-encyclopedia/article/thanksgiving"},
+   {"id": "loc", "cita_corta": "Library of Congress, George Washington Papers: Thanksgiving, 3 de octubre de 1789 (manuscrito).", "url": "https://www.loc.gov/resource/mgw8a.124/?sp=132&st=text"}],
+  "fuentes_extra": [{"cita_corta": "U.S. Statutes at Large, 55 Stat. 862 (H.J. Res. 41, 26-dic-1941): cuarto jueves de noviembre.", "url": "https://www.govinfo.gov/content/pkg/STATUTE-55/pdf/STATUTE-55-Pg862.pdf"}],
+  "scenes": [
+   ("Hoy, jueves 26 de noviembre, Estados Unidos celebra Acción de Gracias. Y hace 237 años, George Washington eligió la misma fecha: jueves 26 de noviembre.",
+    "Today, Thursday, November 26, the United States celebrates Thanksgiving. And 237 years ago, George Washington picked the exact same date: Thursday, November 26.",
+    "File:George Washington's October 3, 1789, Thanksgiving Day Proclamation. - NARA - 299956.jpg", None),
+   ("El 28 de septiembre de 1789, justo antes de irse de receso, el primer Congreso le pidió al presidente recomendar un día de acción de gracias. El motivo: haber podido establecer, en paz, un nuevo gobierno.",
+    "On September 28, 1789, just before leaving for recess, the first Congress asked the President to recommend a day of thanksgiving. The reason: they had peacefully established a new government.",
+    "File:Federal Hall, N.Y. 1789 ppmsca.15703.jpg",
+    {"tipo": "mapa", "plano": 2, "region": [-82, -66, 36, 46], "puntos": [{"nombre": "Nueva York", "lon": -74.0, "lat": 40.71}], "titulo": "Nueva York, 1789", "titulo_en": "New York, 1789", "fuente": "National Archives"}),
+   ("El 3 de octubre, en Nueva York, Washington firmó la proclamación: recomiendo y asigno el jueves 26 de noviembre próximo. Fue el primer Día de Acción de Gracias bajo la nueva Constitución.",
+    "On October 3, in New York, Washington signed the proclamation: I do recommend and assign Thursday the 26th day of November next. It was the first Thanksgiving under the new Constitution.",
+    "File:Gilbert Stuart - George Washington - Google Art Project.jpg", None),
+   ("¿Y cómo lo pasó él? Fue a la capilla de San Pablo, pero anotó en su diario que estaba tan tormentoso que llegó poca gente. Y donó siete libras, diez chelines y cuatro peniques para comida y cerveza de los presos por deudas.",
+    "And how did he spend it? He went to St. Paul's Chapel, but wrote in his diary that the day was so stormy that few people came. And he gave seven pounds, ten shillings and four pence for food and beer for prisoners jailed for debt.",
+    "File:St. Paul's Chapel - NYC (51522449420).jpg",
+    {"tipo": "dato", "plano": 3, "valor": "£7 10s 4d", "valor_en": "£7 10s 4d", "etiqueta": "comida y cerveza para presos por deudas", "etiqueta_en": "food and beer for debtors in jail", "fuente": "Founders Online, National Archives"}),
+   ("Pero no quedó como fiesta fija. Lincoln la puso el último jueves de noviembre en 1863. En 1939, Roosevelt la adelantó una semana para alargar las compras navideñas, y hubo dos Thanksgiving. En 1941, el Congreso la fijó en el cuarto jueves.",
+    "But it didn't become a fixed holiday. Lincoln set it on the last Thursday of November in 1863. In 1939, Roosevelt moved it a week earlier to stretch Christmas shopping, and there were two Thanksgivings. In 1941, Congress fixed it on the fourth Thursday.",
+    "File:President Abraham Lincoln's Thanksgiving Day Proclamation of October 3, 1863 (Presidential Proclamation 106)- 10-03-1863 (page 1 of 3) (4131303701).jpg", None),
+   ("Por eso hoy coincide todo con 1789: mismo mes, mismo día y mismo día de la semana. La vez anterior fue en 2020. ¿Ya sabes qué vas a agradecer?",
+    "That's why today matches 1789: same month, same day, same day of the week. The last time was in 2020. So, what are you thankful for?",
+    "File:Gilbert Stuart Williamstown Portrait of George Washington.jpg", None)]}

@@ -1,0 +1,232 @@
+{
+ "project_id": "2026-11-23_dato-thanksgiving-washington",
+ "serie": "Dato del día",
+ "title": "Washington eligió este mismo jueves 26 de noviembre",
+ "titulo": "WASHINGTON ELIGIÓ ESTE JUEVES 26",
+ "language": "es-MX",
+ "aspect_ratio": "9:16",
+ "target_duration_seconds": 88,
+ "estilo_id": "foto_commons",
+ "estilo_visual": "fotografías de dominio público o licencia libre",
+ "proveedor_imagenes": "Wikimedia Commons (PD/CC, créditos en creditos_imagenes.json)",
+ "parece_real": true,
+ "keywords": [
+  "Thanksgiving"
+ ],
+ "titulo_estilo": {
+  "size": 96,
+  "caja_rgb": [
+   205,
+   25,
+   25
+  ],
+  "texto_rgb": [
+   255,
+   222,
+   0
+  ],
+  "subrayado_rgb": [
+   255,
+   222,
+   0
+  ]
+ },
+ "voice": {
+  "engine": "edge-tts",
+  "voice_id": "es-MX-JorgeNeural",
+  "rate": "+7%",
+  "pitch": "-2Hz",
+  "pad_seconds": 0.3,
+  "modo_pausas": "continuo"
+ },
+ "audio": {
+  "music_asset": "sintetico:arpegio",
+  "cama_musical": "arpegio",
+  "music_bpm": 96,
+  "music_lufs": -27,
+  "ambiente_lufs": -31
+ },
+ "canal": {
+  "nombre": "Datos y ociosidades",
+  "handle": "@datosyociosidades"
+ },
+ "sources": [
+  {
+   "id": "nara",
+   "cita_corta": "National Archives: Congress Establishes Thanksgiving.",
+   "url": "https://www.archives.gov/legislative/features/thanksgiving"
+  },
+  {
+   "id": "fo",
+   "cita_corta": "Founders Online (National Archives): diario de George Washington, 26 de noviembre de 1789.",
+   "url": "https://founders.archives.gov/documents/Washington/01-05-02-0005-0003-0026"
+  },
+  {
+   "id": "mv",
+   "cita_corta": "George Washington's Mount Vernon: Thanksgiving (Digital Encyclopedia).",
+   "url": "https://www.mountvernon.org/library/digitalhistory/digital-encyclopedia/article/thanksgiving"
+  },
+  {
+   "id": "loc",
+   "cita_corta": "Library of Congress, George Washington Papers: Thanksgiving, 3 de octubre de 1789 (manuscrito).",
+   "url": "https://www.loc.gov/resource/mgw8a.124/?sp=132&st=text"
+  }
+ ],
+ "scenes": [
+  {
+   "id": "scene_001",
+   "arc": "hook_medias_res",
+   "duration_seconds": 10,
+   "narration": "Hoy, jueves 26 de noviembre, Estados Unidos celebra Acción de Gracias. Y hace 237 años, George Washington eligió la misma fecha: jueves 26 de noviembre.",
+   "on_screen_text": "",
+   "asset_filename": "frames/scene_001.jpg",
+   "sfx": [
+    "campanas"
+   ],
+   "source_ids": [
+    "nara",
+    "fo",
+    "mv",
+    "loc"
+   ],
+   "image_credit": "George Washington's October 3, 1789, Thanksgiving Day Proclamation. - NARA - 299956. Unknown authorUnknown author or not provided, Public domain. U.S. National Archives (NARA) vía Wikimedia Commons: https://commons.wikimedia.org/wiki/File:George_Washington%27s_October_3,_1789,_Thanksgiving_Day_Proclamation._-_NARA_-_299956.jpg"
+  },
+  {
+   "id": "scene_002",
+   "arc": "desarrollo",
+   "duration_seconds": 10,
+   "narration": "El 28 de septiembre de 1789, justo antes de irse de receso, el primer Congreso le pidió al presidente recomendar un día de acción de gracias. El motivo: haber podido establecer, en paz, un nuevo gobierno.",
+   "on_screen_text": "",
+   "asset_filename": "frames/scene_002.jpg",
+   "sfx": [
+    "campanas"
+   ],
+   "source_ids": [
+    "nara",
+    "fo",
+    "mv",
+    "loc"
+   ],
+   "image_credit": "Federal Hall, N.Y. 1789 ppmsca.15703. Amos Doolittle, Public domain. Library of Congress vía Wikimedia Commons: https://commons.wikimedia.org/wiki/File:Federal_Hall,_N.Y._1789_ppmsca.15703.jpg",
+   "capa": {
+    "tipo": "mapa",
+    "plano": 2,
+    "region": [
+     -82,
+     -66,
+     36,
+     46
+    ],
+    "puntos": [
+     {
+      "nombre": "Nueva York",
+      "lon": -74.0,
+      "lat": 40.71
+     }
+    ],
+    "titulo": "Nueva York, 1789",
+    "fuente": "National Archives"
+   }
+  },
+  {
+   "id": "scene_003",
+   "arc": "desarrollo",
+   "duration_seconds": 10,
+   "narration": "El 3 de octubre, en Nueva York, Washington firmó la proclamación: recomiendo y asigno el jueves 26 de noviembre próximo. Fue el primer Día de Acción de Gracias bajo la nueva Constitución.",
+   "on_screen_text": "",
+   "asset_filename": "frames/scene_003.jpg",
+   "sfx": [
+    "campanas"
+   ],
+   "source_ids": [
+    "nara",
+    "fo",
+    "mv",
+    "loc"
+   ],
+   "image_credit": "Gilbert Stuart - George Washington - Google Art Project. Gilbert Stuart, Public domain. Google Arts & Culture vía Wikimedia Commons: https://commons.wikimedia.org/wiki/File:Gilbert_Stuart_-_George_Washington_-_Google_Art_Project.jpg"
+  },
+  {
+   "id": "scene_004",
+   "arc": "desarrollo",
+   "duration_seconds": 10,
+   "narration": "¿Y cómo lo pasó él? Fue a la capilla de San Pablo, pero anotó en su diario que estaba tan tormentoso que llegó poca gente. Y donó siete libras, diez chelines y cuatro peniques para comida y cerveza de los presos por deudas.",
+   "on_screen_text": "",
+   "asset_filename": "frames/scene_004.jpg",
+   "sfx": [
+    "campanas"
+   ],
+   "source_ids": [
+    "nara",
+    "fo",
+    "mv",
+    "loc"
+   ],
+   "image_credit": "St. Paul's Chapel - NYC (51522449420). ajay_suresh, CC BY 2.0. Wikimedia Commons: https://commons.wikimedia.org/wiki/File:St._Paul%27s_Chapel_-_NYC_(51522449420).jpg",
+   "capa": {
+    "tipo": "dato",
+    "plano": 3,
+    "valor": "£7 10s 4d",
+    "etiqueta": "comida y cerveza para presos por deudas",
+    "fuente": "Founders Online, National Archives"
+   }
+  },
+  {
+   "id": "scene_005",
+   "arc": "desarrollo",
+   "duration_seconds": 10,
+   "narration": "Pero no quedó como fiesta fija. Lincoln la puso el último jueves de noviembre en 1863. En 1939, Roosevelt la adelantó una semana para alargar las compras navideñas, y hubo dos Thanksgiving. En 1941, el Congreso la fijó en el cuarto jueves.",
+   "on_screen_text": "",
+   "asset_filename": "frames/scene_005.jpg",
+   "sfx": [
+    "campanas"
+   ],
+   "source_ids": [
+    "nara",
+    "fo",
+    "mv",
+    "loc"
+   ],
+   "image_credit": "President Abraham Lincoln's Thanksgiving Day Proclamation of October 3, 1863 (Presidential Proclamation 106)- 10-03-1863 (page 1 of 3) (4131303701). The U.S. National Archives, Public domain. U.S. National Archives (NARA) vía Wikimedia Commons: https://commons.wikimedia.org/wiki/File:President_Abraham_Lincoln%27s_Thanksgiving_Day_Proclamation_of_October_3,_1863_(Presidential_Proclamation_106)-_10-03-1863_(page_1_of_3)_(4131303701).jpg"
+  },
+  {
+   "id": "scene_006",
+   "arc": "reflexion_o_pregunta",
+   "duration_seconds": 10,
+   "narration": "Por eso hoy coincide todo con 1789: mismo mes, mismo día y mismo día de la semana. La vez anterior fue en 2020. ¿Ya sabes qué vas a agradecer?",
+   "on_screen_text": "",
+   "asset_filename": "frames/scene_006.jpg",
+   "sfx": [
+    "campanas"
+   ],
+   "source_ids": [
+    "nara",
+    "fo",
+    "mv",
+    "loc"
+   ],
+   "image_credit": "Gilbert Stuart Williamstown Portrait of George Washington. Gilbert Stuart, Public domain. Wikimedia Commons: https://commons.wikimedia.org/wiki/File:Gilbert_Stuart_Williamstown_Portrait_of_George_Washington.jpg"
+  }
+ ],
+ "cortinilla_fuentes": {
+  "duration_seconds": 6,
+  "titulo": "Fuentes",
+  "aviso": "Imágenes de dominio público o licencia libre (Wikimedia Commons y archivos citados en la descripción). Voz sintética (IA).",
+  "firma": "Datos y ociosidades · @datosyociosidades",
+  "bg_rgb": [
+   18,
+   16,
+   14
+  ]
+ },
+ "export": {
+  "filename": "capsula.mp4",
+  "resolution": "1080x1920",
+  "fps": 30,
+  "loudness_lufs": -14,
+  "plano_seconds": 4.0,
+  "subtitle_max_words": 3
+ },
+ "estructura": "historia",
+ "hook_type": "animal_con_oficio_humano"
+}

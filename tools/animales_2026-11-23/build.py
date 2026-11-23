@@ -29,9 +29,11 @@ def frames(k):
             if not os.path.exists(raw):
                 open(raw, 'wb').write(urllib.request.urlopen(urllib.request.Request(m['thumb'], headers=UA), timeout=60).read())
             desc = m['artist']; lib = 'Wikimedia Commons'
-            if 'LCCN' in img: lib = 'Library of Congress vía Wikimedia Commons'
-            elif 'NARA' in img or 'Sig Corps' in img: lib = 'U.S. National Archives (NARA) / Signal Corps vía Wikimedia Commons'
+            if 'LCCN' in img or 'ppmsca' in img: lib = 'Library of Congress vía Wikimedia Commons'
+            elif 'Sig Corps' in img or ('NARA' in img and 'SC-' in img): lib = 'U.S. National Archives (NARA) / Signal Corps vía Wikimedia Commons'
+            elif 'NARA' in img or 'National Archives' in m['artist']: lib = 'U.S. National Archives (NARA) vía Wikimedia Commons'
             elif 'Medal of Honor' in img: lib = 'U.S. Army vía Wikimedia Commons'
+            elif 'Google Art Project' in img: lib = 'Google Arts & Culture vía Wikimedia Commons'
             elif 'IWM' in img: lib = 'Imperial War Museums vía Wikimedia Commons'
             elif 'Wellcome' in img: lib = 'Wellcome Collection vía Wikimedia Commons'
             elif 'geograph' in img: lib = 'Geograph Britain and Ireland vía Wikimedia Commons'
@@ -60,7 +62,7 @@ def sb(k, lang):
         scenes.append(x)
     aviso_es = 'Imágenes de dominio público o licencia libre (Wikimedia Commons y archivos citados en la descripción).' + (' Escena 1: ilustración generada con IA.' if k in ('billy', 'wonder-woman') else '') + ' Voz sintética (IA).'
     aviso_en = 'Public-domain or freely licensed images (Wikimedia Commons and archives credited in the description).' + (' Scene 1: AI-generated illustration.' if k in ('billy', 'wonder-woman') else '') + ' Synthetic voice (AI / IA).'
-    d = {'project_id': os.path.basename(pdir(k)) + ('_en' if en else ''), 'serie': 'Cómics y ciencia' if k == 'wonder-woman' else 'Animales con oficio humano (dato del día)', 'title': s['title_en' if en else 'title_es'],
+    d = {'project_id': os.path.basename(pdir(k)) + ('_en' if en else ''), 'serie': 'Cómics y ciencia' if k == 'wonder-woman' else 'Dato del día' if k == 'thanksgiving' else 'Animales con oficio humano (dato del día)', 'title': s['title_en' if en else 'title_es'],
          'titulo': s['cover_en' if en else 'cover_es'], 'language': 'en-US' if en else 'es-MX', 'aspect_ratio': '9:16', 'target_duration_seconds': 88,
          'estilo_id': 'foto_commons', 'estilo_visual': 'fotografías de dominio público o licencia libre', 'proveedor_imagenes': 'Wikimedia Commons (PD/CC, créditos en creditos_imagenes.json)' + ('; escena 1 ilustración IA' if k in ('billy', 'wonder-woman') else ''),
          'parece_real': True, 'keywords': [s['tema']],
