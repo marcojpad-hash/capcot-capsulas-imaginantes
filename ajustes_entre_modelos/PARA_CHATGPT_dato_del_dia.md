@@ -1,3 +1,7 @@
+> **AVISO DE AUTORIDAD — 22-nov-2026:** este archivo contiene briefs históricos. Para los runs actuales prevalece la ficha maestra del Operador Único. El investigador escribe solo en `proyectos/<project_id>/storyboard.json`; nunca en `cola/entrada/`, `cola/estado/`, `narrative_qa` ni `PREPARADO`. La auditoría narrativa debe ser posterior e independiente. Solo el auditor promueve a una copia plana de `cola/entrada/` después de QA PASS (≥85, siete checks verdaderos, flags vacías), validador estructural real, DOI/Crossref verificado y ausencia de producción previa/conflicto de slot. Nunca crear ni modificar estado Grok. Sin medios ni placeholders: `approved_assets=[]`, `export.render_status=NOT_GENERATED`, sin rutas/asset_filename, y `publicacion.status=PENDIENTE_DECISION_GROK`. Si el slot 23:30 ya está ocupado o no hay fuente primaria del mismo día, `NO_DUPLICAR`/`PENDING_SOURCE`; no generar reserva ni adelantar tema.
+
+---
+
 # PARA CHATGPT — Dato del día (instrucción PERMANENTE, diaria 23:30 CDMX)
 
 > Standing order. Aplica todos los días, no solo a una semana concreta. Pegar en el chat de ChatGPT o en Custom Instructions.
