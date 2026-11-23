@@ -663,3 +663,19 @@ No se promovió ni redispatchó contenido. No se dispararon workflows ni se envi
 - **Corrección de estado de fuentes del proyecto de biodiversidad.** La relectura del JSON muestra `SRC-001` y `SRC-002` como `VERIFICADO_FUENTE_PRIMARIA`; `SRC-001` tiene URL editorial verificada pero `doi_verification_status=PENDIENTE_RESOLVEDOR`; `SRC-002` tiene DOI visible/verificado en la página editorial de Biogeosciences y solo aporta un localizador regional, no coordenadas de parcelas. La mención previa `SRC-002=PENDING_SOURCE` no describe el estado actual de esa fuente. La compuerta DOI pendiente corresponde a `SRC-001`; no se ejecutó `--check-doi` ni se acreditó Crossref en este corte.
 
 No se consultaron ni alteraron secretos. No se publicaron, cancelaron, reprogramaron ni editaron etiquetas; se deja la verificación manual de Studio como acción pendiente de la cuenta propietaria.
+
+## Reintento RSS/Trends y respaldo oficial — 22-nov-2026, 20:02 CDMX
+
+Se reintentó la lectura de los **10 feeds** declarados en `scripts/tendencias.py` y Google Trends RSS México. La apertura de los endpoints desde esta sesión no entregó XML utilizable:
+
+- ScienceDaily science, health y space: `400 Unsupported content-type: application/xml`.
+- Phys.org: `400 Unsupported content-type: text/xml`.
+- NASA: `400 Unsupported content-type: application/rss+xml`.
+- ESA Space Science: `404 Not Found`.
+- Nature: `400 Unsupported content-type: application/rss+xml`.
+- UNAM Global: `400 Unsupported content-type: application/rss+xml`.
+- Google Trends RSS México, EurekAlert y SINC: `URL ... is not accessible via this tool`.
+
+Este corte fue una relectura de endpoints mediante el navegador de la sesión; **no se ejecutó** `scripts/tendencias.py`. El corte anterior del mismo día documentó la ejecución HTTP directa y su error literal `URLError: <urlopen error [Errno -3] Temporary failure in name resolution>`. No se interpretó el fallo de feeds como ausencia de noticias. Se conservan como respaldo los cinco candidatos ya documentados en `2026-11-22_RADAR_CAPCOT.md` (NASA Photojournal, NASA Earth Observatory, NASA Science/Science Advances, Nature y Senckenberg/ZooKeys), con sus estados de duplicación, mapa o Crossref; no se inventó un sexto candidato ni se abrió un storyboard nuevo.
+
+La reconciliación de main mantiene ocupados los slots regulares del 23–28-nov; el proyecto de biodiversidad del 23-nov 13:30 colisiona con Rosetta. La enana blanca propuesta para el 23-nov 14:30 sigue bloqueada por ausencia de MP4. No se creó paquete adicional ni se generaron medios.
