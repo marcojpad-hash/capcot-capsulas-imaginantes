@@ -64,6 +64,44 @@ class SnapshotProgrammingAuditTests(unittest.TestCase):
         self.assertEqual(row["source_kind"], "rehechos")
         self.assertEqual(path.read_bytes(), before)
 
+    def test_real_snapshot_collision_group_is_loaded(self):
+        self.write_json("miniaturas_auditoria_2026-11-21.json", {
+            "siguen_mal_sin_mp4_no_se_invento": [],
+            "colisiones_horario_mismo_publishAt": [{
+                "publishAt": "2026-11-23T13:00:00Z",
+                "hora_cdmx": "2026-11-23 07:00 CST",
+                "videos": [
+                    {"yt_id": "IQEU2Bqy3v0", "titulo": "Video A"},
+                    {"yt_id": "tmOji99zGPE", "titulo": "Video B"},
+                ],
+            }],
+        })
+        result = auditor.load_snapshots(self.root, "2026-11-23")
+        self.assertEqual(len(result["ocupaciones"]), 2)
+        self.assertEqual(len(result["conflictos"]), 1)
+        self.assertEqual(result["conflictos"][0]["slot_local"], "07:00")
+        self.assertEqual(
+            result["conflictos"][0]["video_ids"], ["IQEU2Bqy3v0", "tmOji99zGPE"]
+        )
+        self.assertTrue(all(x["source_kind"] == "miniaturas_colision" for x in result["ocupaciones"]))
+
+    def test_collision_group_and_missing_media_list_are_deduplicated(self):
+        item = {"yt_id": "video-same", "titulo": "Same", "estado": "programado",
+                "publishAt": "2026-11-23T13:00:00Z", "hora_cdmx": "2026-11-23 07:00 CST"}
+        self.write_json("miniaturas_auditoria_2026-11-21.json", {
+            "siguen_mal_sin_mp4_no_se_invento": [item],
+            "colisiones_horario_mismo_publishAt": [{
+                "publishAt": item["publishAt"], "hora_cdmx": item["hora_cdmx"],
+                "videos": [{"yt_id": "video-same", "titulo": "Same"},
+                           {"yt_id": "video-other", "titulo": "Other"}],
+            }],
+        })
+        result = auditor.load_snapshots(self.root, "2026-11-23")
+        same = [x for x in result["ocupaciones"] if x["video_id"] == "video-same"]
+        self.assertEqual(len(same), 1)
+        self.assertEqual(len(same[0]["source_files"]), 2)
+        self.assertEqual(len(result["conflictos"]), 1)
+
     def test_declared_local_time_mismatch_is_exposed(self):
         self.write_json("miniaturas_auditoria_2026-11-21.json", {
             "siguen_mal_sin_mp4_no_se_invento": [{
