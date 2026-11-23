@@ -98,11 +98,12 @@ No se encontró un archivo `historial_youtube` dedicado en el árbol consultado;
 - Siguiente paso mínimo: el investigador debe revisar stakes y la cifra 139/234 en supersequías sin que auditoría reescriba la narración; después ejecutar validador estructural y resolver DOI. Tropical requiere decisión editorial de slot, no una promoción automática.
 ## Commits y verificación de cierre
 
-- Rama feature HEAD: `aaf3ec57d49a4c72a1c5a31dbd3d5c60d3db20b2`.
+- Rama feature HEAD inmediatamente antes del registro de cierre: `aaf3ec57d49a4c72a1c5a31dbd3d5c60d3db20b2`; este registro de cierre quedó en `10958969d5c8f79924f7a64b3c11238cefa15a3f`.
 - Main HEAD consultado, sin escritura: `c371aec46595b092d0b4d2f74ac38670e8897754`.
 - `4abdb6c8594860abad18228ae29ee2e00c261e0d`: única adición de `narrative_qa` FAIL al storyboard de supersequías; el diff confirma que la narración y el resto del storyboard no cambiaron.
 - `2cdbc50f0f1a0ee7ac116e0b680c86836f006f3b` y `a283f8796ba1f80a9d0ad89d8d7fe21c7b1fb0b2`: corrección del radar y actualización de compuertas.
 - `9541695801d060e1c21b3b50a84e237c2435d04c`: errata de inventario/programación en el control del 22-nov.
 - `aaf3ec57d49a4c72a1c5a31dbd3d5c60d3db20b2`: creación de este control del 23-nov.
+- `10958969d5c8f79924f7a64b3c11238cefa15a3f`: registro de commits y verificación final.
 - Lecturas de vuelta verificadas para storyboard, radar, control del 22-nov y este control. Después de estos commits no apareció un nuevo run de Actions; el último run disponible sigue siendo la validación de Kuroshio `45075532329` sobre un commit anterior, sin `--check-doi`.
 - La ejecución RSS se hizo desde una copia temporal del contenido de `scripts/tendencias.py` leído de GitHub; el repositorio no se clonó por el error DNS. No se escribió ningún resultado temporal al repositorio.
