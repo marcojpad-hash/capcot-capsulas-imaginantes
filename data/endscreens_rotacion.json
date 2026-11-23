@@ -1,8 +1,8 @@
 {
   "fecha": "2026-11-14",
   "tipo": "endscreens_rotacion",
-  "actualizado_cdmx": "2026-11-22T14:30",
-  "motivo": "22-nov 14:30: Napoleón 8okieDXFIgU (117, +29 en 1 h; antes → hipo, fuera del mapa) → Gutenberg YXndoPSSeaY (2, recién público). Un elemento de video, sin suscripción. Verificado en Studio.",
+  "actualizado_cdmx": "2026-11-23T09:40",
+  "motivo": "23-nov 09:30: pulpo 4Vi_TnIl9FI (176, +108 en 1 h; sin pantalla) → hipo 41PYjWbQuJo (0 vistas en 5 días). Un elemento de video, sin suscripción. Verificado en Studio.",
   "vistas_ref": {
     "phVfyHp3CnY": 94,
     "m4RqQRaz55k": 48,
@@ -87,7 +87,9 @@
     "AxgWdhqPhRI": 5,
     "8okieDXFIgU": 117,
     "YXndoPSSeaY": 2,
-    "N21TIYdONZo": 16
+    "N21TIYdONZo": 16,
+    "4Vi_TnIl9FI": 176,
+    "41PYjWbQuJo": 0
   },
   "mapa": {
     "r1AhsPOAS_o": "AJR6kcnnDig",
@@ -157,7 +159,8 @@
     "tiGeRapGRjM": "dz2C-Y8klXA",
     "45WOvkNQTHo": "ThbHry-YC-w",
     "6XCBYrlO4Eg": "AxgWdhqPhRI",
-    "8okieDXFIgU": "YXndoPSSeaY"
+    "8okieDXFIgU": "YXndoPSSeaY",
+    "4Vi_TnIl9FI": "41PYjWbQuJo"
   },
   "pendiente_studio": false,
   "nota": "Aplicado en YouTube Studio Editor > Pantalla final (video específico). Búsqueda: pegar youtube.com/watch?v=ID en 'Buscar vídeos de otros canales' (tus vídeos no lista Shorts). Sin suscripción ni tarjetas. Actualización 26-oct 19:49: la lista «Elegir un vídeo específico» ya muestra los Shorts.",
@@ -232,7 +235,7 @@
   ],
   "nota_excluidos": "Ave-dino / velociraptor: no mandar tráfico de pantallas finales (riesgo de parecer fusil). Preferir hongos y otros nuevos flojos.",
   "nota_studio": "Hongos destino confirmado en timeline. Origen hongos: Studio mostró título «¿Aves que temen a mujeres?» al pegar watch?v=O7TdKvuBjyg (mismo ID O7Td).",
-  "ultima_revision_cdmx": "2026-11-22T14:30",
+  "ultima_revision_cdmx": "2026-11-23T09:40",
   "comentarios_ref_2026-11-01T21:52": {
     "oGFKLUgBdhA": 2,
     "xBqdEn1Dumg": 2,
