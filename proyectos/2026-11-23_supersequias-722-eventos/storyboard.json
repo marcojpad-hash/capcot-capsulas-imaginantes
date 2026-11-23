@@ -385,5 +385,25 @@
     "No llamar a todos los periodos secos supersequías: se exige CMI ≤ −1.8 simultáneamente en tres escalas."
   ],
   "narrative_word_count": 220,
-  "scene_total_duration_seconds": 78
+  "scene_total_duration_seconds": 78,
+  "narrative_qa": {
+    "status": "FAIL",
+    "score": 82,
+    "review_basis": "lectura_en_frio_solo_narracion",
+    "reviewer_role": "auditor_capcot_independiente",
+    "reviewed_at": "2026-11-23T00:57:16-06:00",
+    "checks": {
+      "pregunta_central_reconstruible": true,
+      "apertura_in_medias_res": true,
+      "progresion_por_escena": true,
+      "transiciones_causales": true,
+      "giro_cientifico_explicado": true,
+      "limite_evidencia_explicito": true,
+      "payoff_cierre_apertura": true
+    },
+    "critical_flags": [
+      "STAKES_NO_EXPLICADOS"
+    ],
+    "reviewer_notes": "La pregunta, el mecanismo de tres escalas y el límite de evidencia se reconstruyen desde la narración. Falta explicar qué consecuencia concreta hace importante reconocer una supersequía; los stakes quedan inferidos y no se pagan explícitamente. No reescribir durante auditoría."
+  }
 }
