@@ -206,3 +206,194 @@ Se reintentó la lectura de los endpoints definidos en `scripts/tendencias.py` y
 **Respaldo oficial disponible:** la página HTML de Google Trends para México sí abrió: últimas 24 horas, **271 tendencias** y 25 visibles en la primera página. Predominan deportes, entretenimiento y búsquedas sociales; “temperatura” y “electrificación” aparecen sin contexto suficiente para formular un dato científico verificable. No se convierten en candidatos CAPCOT por inferencia.
 
 Se conservan los cinco candidatos documentados previamente desde fuentes oficiales/primarias; no se agrega otro sin afirmación primaria fechada. No hay slot libre: 13:30 y 23:30 tienen conflicto entre ramas y el registro de main supera el cupo diario. Resultado de investigación de este corte: **sin storyboard nuevo**; no se inventa una fuente, DOI, coordenada ni decisión editorial.
+
+
+---
+
+## Addendum de relectura y verificación — 2026-11-23 08:02 CDMX
+
+Este addendum actualiza la evidencia de la misma ejecución sin crear un segundo radar ni reescribir los storyboards existentes. El archivo de radar ya existía en la rama; se conserva su historial y se añade esta lectura incremental.
+
+### 1. RSS y Google Trends
+
+**No se parseó XML en esta ejecución.** Se intentó abrir cada URL configurada en `scripts/tendencias.py`; los errores devueltos fueron:
+
+| Feed | Resultado literal de acceso |
+|---|---|
+| ScienceDaily — science.xml | `400 Unsupported content-type: application/xml` |
+| ScienceDaily — health.xml | `400 Unsupported content-type: application/xml` |
+| ScienceDaily — space_time.xml | `400 Unsupported content-type: application/xml` |
+| Phys.org | `400 Unsupported content-type: text/xml` |
+| NASA News Release | `400 Unsupported content-type: application/rss+xml` |
+| ESA Space Science | `404 Not Found` |
+| Nature RSS | `400 Unsupported content-type: application/rss+xml` |
+| EurekAlert | `URL is not accessible via this tool` |
+| SINC | `URL is not accessible via this tool` |
+| UNAM Global | `400 Unsupported content-type: application/rss+xml` |
+| Google Trends RSS México | `URL is not accessible via this tool` |
+
+Estos errores describen el acceso desde la herramienta de lectura; no demuestran por sí solos que los servidores RSS estén caídos.
+
+**Fallback oficial:** [Google Trends — Trending Now México](https://trends.google.com/trending?geo=MX), ventana «Past 24 hours». Dos lecturas de la página durante esta ejecución mostraron 280 y después 269 tendencias; el contador es dinámico. La segunda lectura mostraba 1–25 de 269. La primera página estaba dominada por deporte, entretenimiento y consultas meteorológicas; «electrificación» aparecía con 1K+ búsquedas y +200%, pero sin noticia científica primaria asociada. La búsqueda de texto en esa página no encontró «ciencia», «NASA» ni «espacio». No se infiere que las 269 tendencias carezcan de temas científicos: solo se afirma que no apareció uno verificable en el contenido visible de la primera página.
+
+### 2. Actualización de los cinco candidatos
+
+Los DOI que aparecen en las páginas editoriales no se marcan como verificados por Crossref/resolvedor. Se intentaron las rutas directas `doi.org`, `api.crossref.org` y `search.crossref.org`; el resolvedor no fue accesible desde esta herramienta y la API de Crossref devolvió «URL is not accessible via this tool». Por tanto, el estado de resolución sigue pendiente en los cinco casos.
+
+1. **Supersequías — candidato ya desarrollado, no duplicar.** *Scientific Data*, publicado el 23-11-2026. La página primaria confirma 722 eventos para 1961–2024, definidos con CMI ≤ −1.8 simultáneamente en escalas de 3, 6 y 12 meses; duración media de 6.9 meses. La validación GDIS compara 234 eventos físicos con 139 coincidencias (59.4%); el 71% solo corresponde al subconjunto de regiones interiores no africanas. Los 95 no coincidentes se concentran en África interior y zonas costeras, donde el artículo describe diferencias de vulnerabilidad y limitaciones del dato climático. No presentar 71% como tasa global ni equiparar sequía física con desastre socioeconómico. DOI visible en la página editorial: `10.1038/s41597-026-08886-6`; **PENDING_RESOLVEDOR**. Fuente primaria: https://www.nature.com/articles/s41597-026-08886-6
+
+2. **Microbiomas de esponjas profundas.** *Scientific Data*, publicado el 23-11-2026. La ficha primaria accesible en el índice editorial informa 1,719 genomas ensamblados desde metagenomas, 27 metagenomas y 17 especies. El descriptor abre un recurso genómico para estudiar capacidad funcional y posibles interacciones virus-hospedador; no demuestra por sí mismo fijación de carbono activa ni infección viral. DOI mostrado por la página editorial: `10.1038/s41597-026-08711-0`; **PENDING_RESOLVEDOR**. La apertura directa de la página fue redirigida a autenticación de Nature; falta comprobar el texto completo y la geometría de muestreo antes de considerar un mapa. Fuente primaria: https://www.nature.com/articles/s41597-026-08711-0
+
+3. **Microplásticos dietarios en tilapia.** *Scientific Reports*, publicado el 23-11-2026. El artículo primario describe un ensayo controlado de 49 días con dietas control, 3% y 6% de caolín, y 3% y 6% de PVC; informa diferencias en crecimiento, conducta alimentaria e histología. No equivale a exposición ambiental real ni permite extrapolar directamente a salud humana o poblaciones silvestres. Además, el tema se solapa con el proyecto del 14-11-2026 sobre microplásticos del Pantanal: **NO_DUPLICAR** salvo novedad editorial distinta y justificada. DOI visible: `10.1038/s41598-026-65376-w`; **PENDING_RESOLVEDOR**. Fuente primaria: https://www.nature.com/articles/s41598-026-65376-w
+
+4. **Interacción global entre glaciares y lagos.** *Nature Climate Change*, publicado el 20-11-2026. El resumen editorial informa, para 2000–2020, 3,567 lagos en contacto con hielo adicionales (+35%), +604 ± 22 km² de área (+9%) y +66 ± 5 km³ de volumen (+12%). En el análisis de pérdida de masa, el aporte de lagos se estima en 11 ± 7%, frente a 43 ± 10% de forzamiento climático y 46 ± 10% de geometría glaciar. No atribuir toda la pérdida a los lagos. La fuente organiza el análisis en 18 regiones RGI; la apertura directa del artículo fue redirigida a autenticación, así que faltan texto completo y geometrías cartográficas utilizables. DOI consignado por el radar: `10.1038/s41558-026-02808-5`; **PENDING_RESOLVEDOR / PENDING_FULLTEXT_ACCESS**. Fuente primaria: https://www.nature.com/articles/s41558-026-02808-5
+
+5. **Hipoxia y reproducción del ácaro Varroa.** *PLOS Biology*, publicado el 19-11-2026. El artículo primario informa experimentos de traslado entre cuatro altitudes; las condiciones hipóxicas por encima de 3,500 m redujeron la fecundidad del ácaro y detuvieron el desarrollo de parte de su descendencia. En una prueba controlada a 88 m, las colmenas hipóxicas alcanzaron aproximadamente 13.5 kPa de presión parcial de oxígeno frente a 20.4 kPa en controles; tras 11 días, el promedio fue 1.7 descendientes frente a 3.9 en controles. Los autores señalan que la base fisiológica requiere investigación adicional: no convertir el resultado en recomendación apícola inmediata. DOI visible: `10.1371/journal.pbio.3004091`; **PENDING_RESOLVEDOR**. Fuente primaria: https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3004091
+
+**Recomendación editorial actualizada:** conservar supersequías como el proyecto ya abierto, sin reescribirlo durante la auditoría. Para el siguiente slot realmente libre, Varroa ofrece el mecanismo más narrable con texto primario completo, condicionado a resolver DOI y verificar coordenadas de los sitios en material suplementario. Glaciares-lagos queda como segunda opción, condicionada a recuperar el artículo completo y geometrías publicadas. Es una recomendación de investigación, no selección editorial de Grok.
+
+### 3. Guardia de ocupación por slot: feature y main
+
+`data/horario_2026-11-23.json` no existe. El contrato operativo §3 conserva los cinco slots autorizados; `data/horarios.json` (actualizado el 09-11) distingue ventanas activas 06:30–07:30 y 16:30–18:00, más 23:30 fijo; 13:30 permanece como ventana de prueba y 19:00 aparece retirada. No se inventa un horario diario ausente.
+
+**Feature:** los únicos dos proyectos con fecha objetivo 23-11 son:
+- `2026-11-23_tropical-biodiversity-turnover`, `slot_local=13:30`.
+- `2026-11-23_supersequias-722-eventos`, `slot_local=23:30`, `slot_cesta=dato_del_dia`.
+
+`data/publicaciones.json`, `data/rotacion.json`, `data/temas_del_dia.json` y `data/cola.json` no contienen registros del 23-11; sus coberturas terminan antes de esta fecha. `salidas/` y `cola/entrada/` no aportan otro paquete de esta fecha. No existe `data/horario_2026-11-23.json`.
+
+**Main — consulta solo de lectura:** se encontraron identificadores y/o evidencia de programación para los cinco slots:
+- 07:00: `IQEU2Bqy3v0` y `tmOji99zGPE`.
+- 13:30: Rosetta, `p5PM4xZfDyc`.
+- 17:00: Pirámides, `gWJxoGjWQeM`, y Mitraísmo, `6OuHVN5dbbs`.
+- 19:00: Gutenberg, `i3SpxSQglm4`.
+- 23:30: Oso Wojtek, `pTmQgkchC68`.
+
+La evidencia procede de `data/tt_fb_alineacion_2026-11-23.json`, `data/miniaturas_auditoria_2026-11-21.json`, `data/publicaciones.json` y los `programacion.json` existentes. Hay dos elementos listados a las 07:00 y dos a las 17:00 en main; se registra la ocupación, no se intenta resolver ni reprogramar ese posible solapamiento.
+
+**Decisión de duplicación:** 13:30 y 23:30 tienen conflicto entre ramas; 07:00, 17:00 y 19:00 ya muestran evidencia de main. Resultado: `CONFLICTO_DE_SLOT_ENTRE_RAMAS / NO_DUPLICAR`. No se crea storyboard principal nuevo ni segundo storyboard 23:30. La fuente de supersequías sí cumple la fecha del día; la razón para no crear otra versión es la ocupación, no `PENDING_SOURCE`.
+
+No existen `cola/estado/2026-11-23_tropical-biodiversity-turnover.json` ni `cola/estado/2026-11-23_supersequias-722-eventos.json`: `RECEPCION_GROK_NO_CONFIRMADA` para ambos. El marker antiguo de `handoffs/grok_inbox/` no se interpreta como recepción. No se escribió ni modificó ningún estado de Grok.
+
+Los dos storyboards existentes se releen y conservan: ambos tienen `approved_assets=[]`, `export.render_status=NOT_GENERATED`, no tienen `export.filename` ni rutas/keys de assets, y `publicacion.status=PENDIENTE_DECISION_GROK`. Ambos mantienen `narrative_qa.status=FAIL`, score 82, los siete checks true y `critical_flags=["STAKES_NO_EXPLICADOS"]`. No se modificaron ni promovieron.
+
+### 4. Relectura completa de QA preexistente en proyectos/
+
+Se releyeron los 90 archivos `proyectos/*/storyboard.json` presentes en la rama. Resultado: **20 PASS, 27 FAIL, 1 PENDIENTE y 42 PENDIENTE_AUDITOR**. No se interpretó ningún `salidas/qa.json` como `narrative_qa`. En el registro siguiente, `checks` usa exactamente este orden de claves del JSON: `pregunta_central_reconstruible`, `apertura_in_medias_res`, `progresion_por_escena`, `transiciones_causales`, `giro_cientifico_explicado`, `limite_evidencia_explicito`, `payoff_cierre_apertura`. `reviewed_at: null` significa que la propiedad no existe en el JSON fuente; no es una fecha inferida.
+
+```json
+{
+  "qa_records": [
+    {"id":"2026-10-31_murcielagos-viroma-global","status":"FAIL","score":72,"review_basis":"lectura_en_frio_solo_narracion","reviewed_at":null,"checks":[true,false,true,false,false,true,true],"critical_flags":["APERTURA_ESTATICA_Y_ESCENARIO_NO_DOCUMENTADO","TRANSICIONES_GENERICAS","CIFRA_300000_SIN_UNIDAD_DE_ANALISIS","GIRO_COMPARATIVO_NO_EXPLICADO"]},
+    {"id":"2026-10-31_sequias-energia-renovable","status":"FAIL","score":56,"review_basis":"lectura_en_frio_solo_narracion","reviewed_at":null,"checks":[true,false,false,false,false,true,false],"critical_flags":["GANCHO_DEFINICIONAL","CIFRAS_SIN_DIRECCION_INTERPRETABLE","GIRO_SOLO_NOMBRADO","PAYOFF_NO_DERIVADO_DE_LA_EVIDENCIA"]},
+    {"id":"2026-10-31_smartpe-edicion-plantas","status":"FAIL","score":80,"review_basis":"lectura_en_frio_solo_narracion","reviewed_at":null,"checks":[true,false,true,true,false,true,true],"critical_flags":["APERTURA_DEFINICIONAL_NO_IN_MEDIAS_RES","GIRO_CIENTIFICO_NOMBRADO_SIN_EXPLICAR_MECANISMO"]},
+    {"id":"2026-11-01_dato-cambio-horario-corazon","status":"FAIL","score":84,"review_basis":"lectura_en_frio_solo_narracion","reviewed_at":"2026-11-01T18:08:00-06:00","checks":[true,true,true,true,true,true,true],"critical_flags":["CIERRE_PRESELLO_INFERIOR_A_110_CARACTERES"]},
+    {"id":"2026-11-01_llorar-cebolla-quimica","status":"FAIL","score":79,"review_basis":"lectura_en_frio_solo_narracion","reviewed_at":"2026-11-01T15:09:29-06:00","checks":[true,true,true,true,true,false,false],"critical_flags":["CIERRE_ATRIBUYE_INTENCION_EVOLUTIVA_NO_DEMOSTRADA","LIMITE_DE_EVIDENCIA_NO_EXPLICITO"]},
+    {"id":"2026-11-01_pulpo-tres-corazones","status":"FAIL","score":72,"review_basis":"lectura_en_frio_solo_narracion","reviewed_at":"2026-11-01T15:09:29-06:00","checks":[true,false,true,true,true,false,true],"critical_flags":["APERTURA_HIPOTETICA_NO_IN_MEDIAS_RES","ANALOGIA_BRANQUIAS_SACAR_AIRE_DEL_AGUA_IMPRECISA","AFIRMACION_CORAZONES_NO_SUSTITUIBLES_SIN_RESPALDO"]},
+    {"id":"2026-11-01_red-electrica-pulso-minuto","status":"PASS","score":89,"review_basis":"lectura_en_frio_solo_narracion","reviewed_at":"2026-11-01T15:09:29-06:00","checks":[true,true,true,true,true,true,true],"critical_flags":[]},
+    {"id":"2026-11-02_camaron-mantis","status":"PASS","score":90,"review_basis":"lectura_en_frio_solo_narracion","reviewed_at":null,"checks":[true,true,true,true,true,true,true],"critical_flags":[]},
+    {"id":"2026-11-02_comida-pan-duro","status":"FAIL","score":84,"review_basis":"lectura_en_frio_solo_narracion","reviewed_at":null,"checks":[true,true,true,true,true,true,true],"critical_flags":["CIERRE_SOBREAFIRMA_Y_CONTRADICE_LIMITE_DE_SECADO"]},
+    {"id":"2026-11-04_cielo-azul-atardecer-rojo","status":"PASS","score":94,"review_basis":"lectura_en_frio_solo_narracion","reviewed_at":"2026-11-04T15:58:40-06:00","checks":[true,true,true,true,true,true,true],"critical_flags":[]},
+    {"id":"2026-11-04_dato-polvo-atrapa-oro","status":"PENDIENTE","review_basis":"lectura_en_frio_solo_narracion","reviewed_at":null,"score":null,"checks":null,"critical_flags":null},
+    {"id":"2026-11-05_kids-dia-en-venus","status":"PASS","score":88,"review_basis":"lectura_en_frio_solo_narracion","reviewed_at":"2026-11-18T15:00:00-06:00","checks":[true,true,true,true,true,true,true],"critical_flags":[]},
+    {"id":"2026-11-05_comida-palomitas","status":"FAIL","score":82,"review_basis":"lectura_en_frio_solo_narracion","reviewed_at":"2026-11-18T15:00:00-06:00","checks":[true,false,false,true,true,true,true],"critical_flags":["APERTURA_DEFINICIONAL_NO_IN_MEDIAS_RES","ESCENA_6_REITERA_CAUSAS_DE_GRANOS_NO_REVENTADOS_SIN_INFORMACION_NUEVA"]},
+    {"id":"2026-11-05_inter-arboles-se-comunican","status":"FAIL","score":78,"review_basis":"lectura_en_frio_solo_narracion","reviewed_at":"2026-11-18T15:00:00-06:00","checks":[true,false,true,true,true,true,true],"critical_flags":["APERTURA_GENERICA_NO_IN_MEDIAS_RES"]},
+    {"id":"2026-11-05_inter-rayo-globular","status":"FAIL","score":81,"review_basis":"lectura_en_frio_solo_narracion","reviewed_at":"2026-11-18T15:00:00-06:00","checks":[true,false,true,true,true,true,true],"critical_flags":["APERTURA_HISTORICA_DESCRIPTIVA_NO_IN_MEDIAS_RES"]},
+    {"id":"2026-11-06_kids-ballena-azul-corazon","status":"FAIL","score":80,"review_basis":"lectura_en_frio_solo_narracion","reviewed_at":"2026-11-18T15:00:00-06:00","checks":[true,true,true,true,true,true,false],"critical_flags":["PAYOFF_SOBREAFIRMA_CASI_SE_DETIENE"]},
+    {"id":"2026-11-06_comida-aguacate-negro","status":"FAIL","score":79,"review_basis":"lectura_en_frio_solo_narracion","reviewed_at":"2026-11-18T15:00:00-06:00","checks":[true,true,false,false,true,true,true],"critical_flags":["REPETICION_ESCENAS_5_6_SIN_AVANCE_CAUSAL"]},
+    {"id":"2026-11-06_inter-ranas-congeladas","status":"FAIL","score":83,"review_basis":"lectura_en_frio_solo_narracion","reviewed_at":"2026-11-18T15:00:00-06:00","checks":[true,true,false,false,true,true,true],"critical_flags":["REPETICION_ESCENAS_5_6_LIMITES_DE_ESPECIE_Y_CONDICIONES"]},
+    {"id":"2026-11-06_inter-arena-cantante","status":"PASS","score":94,"review_basis":"lectura_en_frio_solo_narracion","reviewed_at":"2026-11-18T15:00:00-06:00","checks":[true,true,true,true,true,true,true],"critical_flags":[]},
+    {"id":"2026-11-07_kids-huesos-bebe","status":"FAIL","score":82,"review_basis":"lectura_en_frio_solo_narracion","reviewed_at":"2026-11-18T15:00:00-06:00","checks":[true,true,false,false,true,true,true],"critical_flags":["ESCENA_6_REPITE_VARIACION_DE_CONTEO_Y_FUSION"]},
+    {"id":"2026-11-07_comida-hielo-caliente","status":"FAIL","score":81,"review_basis":"lectura_en_frio_solo_narracion","reviewed_at":"2026-11-18T15:00:00-06:00","checks":[true,false,true,true,true,true,true],"critical_flags":["APERTURA_DE_CREENCIAS_NO_IN_MEDIAS_RES"]},
+    {"id":"2026-11-07_inter-pulpo-suenos","status":"FAIL","score":72,"review_basis":"lectura_en_frio_solo_narracion","reviewed_at":"2026-11-18T15:00:00-06:00","checks":[true,true,false,false,false,false,false],"critical_flags":["FUENTE_PRIMARIA_CORRESPONDE_A_OCTOPUS_LAQUEUS_NO_INSULARIS","REPETICION_ESCENAS_5_6_Y_PAYOFF_VAGO"]},
+    {"id":"2026-11-07_inter-nubes-pesan","status":"FAIL","score":78,"review_basis":"lectura_en_frio_solo_narracion","reviewed_at":"2026-11-18T15:00:00-06:00","checks":[true,true,false,false,true,true,false],"critical_flags":["ESCENA_7_REITERA_CIFRA_Y_LIMITE_SIN_PAYOFF_DE_SUSPENSION"]},
+    {"id":"2026-11-09_dato-robot-ensambla-orbita","status":"PASS","score":90,"review_basis":"lectura_en_frio_solo_narracion","reviewed_at":"2026-11-09T18:45:00-06:00","checks":[true,true,true,true,true,true,true],"critical_flags":[]},
+    {"id":"2026-11-10_comida-aprendizaje-sabor-nutriente","status":"PASS","score":92,"review_basis":"lectura_en_frio_solo_narracion","reviewed_at":"2026-11-10T15:47:50-06:00","checks":[true,true,true,true,true,true,true],"critical_flags":[]},
+    {"id":"2026-11-10_dato-adn-sincroniza-flujo","status":"PASS","score":91,"review_basis":"lectura_en_frio_solo_narracion","reviewed_at":"2026-11-10T16:16:00-06:00","checks":[true,true,true,true,true,true,true],"critical_flags":[]},
+    {"id":"2026-11-12_dato-pedorreta-chimpances","status":"PASS","score":91,"review_basis":"lectura_en_frio_solo_narracion","reviewed_at":"2026-11-12T15:38:50-06:00","checks":[true,true,true,true,true,true,true],"critical_flags":[]},
+    {"id":"2026-11-13_dato-caracol-16-embriones","status":"PASS","score":91,"review_basis":"lectura_en_frio_solo_narracion","reviewed_at":"2026-11-13T15:42:39-06:00","checks":[true,true,true,true,true,true,true],"critical_flags":[]},
+    {"id":"2026-11-14_dato-microplasticos-pantanal","status":"PASS","score":88,"review_basis":"lectura_en_frio_solo_narracion","reviewed_at":"2026-11-14T15:04:13-06:00","checks":[true,true,true,true,true,true,true],"critical_flags":[]},
+    {"id":"2026-11-15_dato-dia-diapausa-lestes-sponsa","status":"PASS","score":90,"review_basis":"lectura_en_frio_solo_narracion","reviewed_at":"2026-11-15T15:51:23-06:00","checks":[true,true,true,true,true,true,true],"critical_flags":[]},
+    {"id":"2026-11-15_dato-quasar-pareja-cosmic-dawn","status":"FAIL","score":0,"review_basis":"lectura_en_frio_solo_narracion","reviewed_at":"2026-11-23T04:02:29-06:00","reviewer_role":"control_compuerta_chatgpt_no_independiente","checks":[false,false,false,false,false,false,false],"critical_flags":["REVISION_INDEPENDIENTE_AUSENTE"]},
+    {"id":"2026-11-16_dato-polen-desenreda-nanotubos","status":"PASS","score":91,"review_basis":"lectura_en_frio_solo_narracion","reviewed_at":"2026-11-16T15:45:46-06:00","checks":[true,true,true,true,true,true,true],"critical_flags":[]},
+    {"id":"2026-11-17_dato-suelo-dos-relojes","status":"PASS","score":89,"review_basis":"lectura_en_frio_solo_narracion","reviewed_at":"2026-11-17T15:35:22-06:00","checks":[true,true,true,true,true,true,true],"critical_flags":[]},
+    {"id":"2026-11-18_dato-catorce-campos-hidrotermales","status":"FAIL","score":68,"review_basis":"lectura_en_frio_solo_narracion","reviewed_at":"2026-11-19T15:04:50-06:00","checks":[false,true,false,false,false,true,false],"critical_flags":["PREGUNTA_CENTRAL_NO_RECONSTRUIBLE","SECUENCIA_DE_HALLAZGOS_SIN_PROGRESION_CAUSAL","GIRO_CIENTIFICO_NOMBRADO_PERO_NO_EXPLICADO","CIERRE_RESUMEN_SIN_PAYOFF"]},
+    {"id":"2026-11-18_dato-kuroshio-puente-atmosferico","status":"PASS","score":90,"review_basis":"lectura_en_frio_solo_narracion","reviewed_at":"2026-11-18T15:00:00-06:00","checks":[true,true,true,true,true,true,true],"critical_flags":[]},
+    {"id":"2026-11-19_dato-dia-luz-dos-manos-oro-poroso","status":"PASS","score":91,"review_basis":"lectura_en_frio_solo_narracion","reviewed_at":"2026-11-19T15:04:50-06:00","checks":[true,true,true,true,true,true,true],"critical_flags":[]},
+    {"id":"2026-11-19_dato-estrella-dentro-de-estrella","status":"PASS","score":90,"review_basis":"lectura_en_frio_solo_narracion","reviewed_at":"2026-11-19T15:04:50-06:00","checks":[true,true,true,true,true,true,true],"critical_flags":[]},
+    {"id":"2026-11-20_dato-dia-atlantico-humedad-sapropeles","status":"PASS","score":91,"review_basis":"lectura_en_frio_solo_narracion","reviewed_at":null,"checks":[true,true,true,true,true,true,true],"critical_flags":[]},
+    {"id":"2026-11-20_dato-marea-cerebral-en-sueno","status":"FAIL","score":82,"review_basis":"lectura_en_frio_solo_narracion","reviewed_at":"2026-11-23T06:23:43-06:00","checks":[true,true,true,true,true,true,true],"critical_flags":["STAKES_NO_EXPLICADOS"]},
+    {"id":"2026-11-21_fentale-metano-sin-erupcion","status":"PASS","score":90,"review_basis":"lectura_en_frio_solo_narracion","reviewed_at":"2026-11-20T16:11:24-06:00","checks":[true,true,true,true,true,true,true],"critical_flags":[]},
+    {"id":"2026-11-21_homo-erectus-selva-tropical","status":"FAIL","score":83,"review_basis":"lectura_en_frio_solo_narracion","reviewed_at":"2026-11-20T22:06:10-06:00","checks":[true,true,true,true,false,true,true],"critical_flags":["GIRO_CIENTIFICO_NOMBRADO_PERO_NO_EXPLICADO"]},
+    {"id":"2026-11-21_pulsar-gamma-reticulo","status":"FAIL","score":83,"review_basis":"lectura_en_frio_solo_narracion","reviewed_at":"2026-11-20T15:41:24-06:00","checks":[true,true,true,true,false,true,true],"critical_flags":["GIRO_CIENTIFICO_NOMBRADO_PERO_NO_EXPLICADO"]},
+    {"id":"2026-11-22_bao-estrella-fusion-andromeda","status":"FAIL","score":84,"review_basis":"lectura_en_frio_solo_narracion","reviewed_at":"2026-11-21T13:56:37-06:00","checks":[true,true,true,true,true,true,true],"critical_flags":["STAKES_NO_EXPLICADOS"]},
+    {"id":"2026-11-22_genes-estatura-etapas","status":"FAIL","score":72,"review_basis":"lectura_en_frio_solo_narracion","reviewed_at":"2026-11-22T15:54:03-06:00","checks":[true,false,false,false,false,true,true],"critical_flags":["APERTURA_DEFINICIONAL_NO_IN_MEDIAS_RES","MAPA_DE_INSTITUCIONES_ROMPE_CONTINUIDAD_NARRATIVA","GIRO_CIENTIFICO_NOMBRADO_SIN_MECANISMO_EXPLICADO"]},
+    {"id":"2026-11-22_voyager-1-un-dia-luz","status":"FAIL","score":83,"review_basis":"lectura_en_frio_solo_narracion","reviewed_at":null,"checks":[true,true,true,true,true,true,true],"critical_flags":["FECHA_DE_HITO_Y_CONFIRMACION_CONFUNDIDAS"]},
+    {"id":"2026-11-22_yubarta-genoma-soplo","status":"PASS","score":90,"review_basis":"lectura_en_frio_solo_narracion","reviewed_at":null,"reviewed_on":"2026-11-21","checks":[true,true,true,true,true,true,true],"critical_flags":[]},
+    {"id":"2026-11-23_supersequias-722-eventos","status":"FAIL","score":82,"review_basis":"lectura_en_frio_solo_narracion","reviewed_at":"2026-11-23T00:57:16-06:00","checks":[true,true,true,true,true,true,true],"critical_flags":["STAKES_NO_EXPLICADOS"]},
+    {"id":"2026-11-23_tropical-biodiversity-turnover","status":"FAIL","score":82,"review_basis":"lectura_en_frio_solo_narracion","reviewed_at":"2026-11-21T14:24:25-06:00","checks":[true,true,true,true,true,true,true],"critical_flags":["STAKES_NO_EXPLICADOS"]}
+  ],
+  "pending_auditor": [
+    "2026-10-24_abejas-bullying",
+    "2026-10-24_ideonella-pet",
+    "2026-10-24_osedax-comehuesos",
+    "2026-10-24_serpientes-que-ruedan",
+    "2026-10-25_ave-jurasica-sin-vuelo",
+    "2026-10-25_corales-contacto",
+    "2026-10-25_reina-olor",
+    "2026-10-25_sueno-electricidad-qom",
+    "2026-10-26_baffin-bay-ice-shelf",
+    "2026-10-26_catrina-posada-monerismo",
+    "2026-10-26_hongo-gente-diminuta",
+    "2026-10-26_papel-picado-dia-muertos",
+    "2026-10-26_papel-picado-dia-muertos_parte2",
+    "2026-10-26_pimiento-verde-rojo",
+    "2026-10-27_cempasuchil-ciencia",
+    "2026-10-27_corneja-decision-rapida",
+    "2026-10-27_ddm-parte3-pomuch",
+    "2026-10-27_familia-ajolote",
+    "2026-10-27_kids-serpiente-voladora",
+    "2026-10-27_noct-anfibio-marino",
+    "2026-10-28_ddm-parte4-templo-mayor",
+    "2026-10-28_familia-voyager-disco-oro",
+    "2026-10-28_kids-titanoboa",
+    "2026-10-28_monarca-almas",
+    "2026-10-28_mosquito-fruitless-audicion",
+    "2026-10-28_noct-lince-milanos",
+    "2026-10-28_pan-de-muerto-huesos",
+    "2026-10-29_juno-choque-proa",
+    "2026-10-29_muralismo-cu",
+    "2026-10-30_arqueas-origen-eucariotas",
+    "2026-10-30_kromdraai-primera-fecha",
+    "2026-10-31_pardelas-jetlag-solar",
+    "2026-11-03_dato-polvo-africano-microbios",
+    "2026-11-03_kids-leche-enchilado",
+    "2026-11-xx_kids-flamencos-rosas_RESPALDO",
+    "demo-001",
+    "guiones_lote_01",
+    "lote01-01-el-nino",
+    "lote01-02-petroleo",
+    "lote01-03-balon-curva",
+    "lote01-04-tardigrado",
+    "lote01-05-chicxulub"
+  ],
+  "inventory": {"project_storyboards_read":90,"qa_present":48,"pass":20,"fail":27,"pending_status":1,"pending_auditor":42}
+}
+```
+
+### 5. Seguimiento técnico
+
+Se releyó `docs/INVESTIGACION_API_META_Y_GOOGLE_TRENDS.md` (corte 2026-11-22, §9.11) y se contrastó con documentación oficial actual:
+- La referencia de versionado de Meta declara Graph API v27.0 como versión actual; la ruta heredada `/docs/graph-api/changelog/versions/` aún muestra v26.0. Esta discrepancia ya está registrada en §9.8–9.10; no es un cambio nuevo en esta pasada.
+- Page Insights sigue mostrando el aviso de deprecación de métricas con fecha 15-06-2026 y las restricciones ya registradas en §9.11.
+- Instagram Insights mantiene referencias v27.0 y las métricas de vistas/interacciones ya documentadas; no apareció una entrada nueva de changelog posterior al corte registrado.
+- Google Trends API sigue en alfa limitada, con ventana móvil de cinco años, agregaciones diaria/semanal/mensual/anual, regiones/subregiones y escala consistente entre consultas.
+  
+**Resultado técnico:** no se encontró un cambio nuevo relevante y sustentado. No se reescribió `docs/INVESTIGACION_API_META_Y_GOOGLE_TRENDS.md`.
+
+### 6. Resultado de staging de esta ejecución
+
+- Se conserva exactamente un radar para 2026-11-23: este archivo, actualizado mediante addendum.
+- No se crea storyboard nuevo: todos los slots aplicables muestran ocupación o conflicto entre ramas.
+- No se reescriben los dos storyboards existentes, no se crea copia en `cola/entrada/`, no se escribe `narrative_qa`, no se crea estado Grok, no se generan medios y no se programa publicación.
+- No se modifican `main`, `data/*.json`, motores ni Motor U6.
