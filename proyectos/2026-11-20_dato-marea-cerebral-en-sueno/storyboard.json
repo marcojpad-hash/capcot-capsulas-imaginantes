@@ -400,9 +400,11 @@
     "La diferencia es grupal y presenta variabilidad individual; no todos los adultos mayores mostraron la misma señal."
   ],
   "narrative_qa": {
-    "status": "PASS",
-    "score": 92,
+    "status": "FAIL",
+    "score": 82,
     "review_basis": "lectura_en_frio_solo_narracion",
+    "reviewer_role": "auditor_capcot_independiente",
+    "reviewed_at": "2026-11-23T06:23:43-06:00",
     "checks": {
       "pregunta_central_reconstruible": true,
       "apertura_in_medias_res": true,
@@ -412,7 +414,9 @@
       "limite_evidencia_explicito": true,
       "payoff_cierre_apertura": true
     },
-    "critical_flags": [],
-    "reviewer_role": "auditor_capcot_independiente"
+    "critical_flags": [
+      "STAKES_NO_EXPLICADOS"
+    ],
+    "reviewer_notes": "Lectura en frío de la narración concatenada, sin usar título, resumen, arco, notas ni narrative_contract. Se reconstruye la relación entre oscilaciones neuronales lentas, cambios vasculares y desplazamiento del líquido cefalorraquídeo; el mecanismo, los datos y el límite de medición son comprensibles. La consecuencia concreta de la diferencia por edad para el funcionamiento o la salud no se explica. El cierre reconoce que falta conocer su significado, pero no paga esos stakes. No se reescribieron narración ni claims."
   }
 }
