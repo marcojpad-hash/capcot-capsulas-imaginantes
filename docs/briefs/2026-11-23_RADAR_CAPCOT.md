@@ -8,11 +8,11 @@
 
 | Fecha | Slot CDMX | Evidencia consultada | Decisión |
 |---|---:|---|---|
-| 23-nov | 07:00 | Plan semanal de `main`; dos IDs con el mismo `publishAt` en `data/resubidas_2026-11-21.md` | COLISION_PUBLISHAT; no tocar |
-| 23-nov | 13:30 | `proyectos/2026-11-23_tropical-biodiversity-turnover/storyboard.json` en feature | OCUPADO EN FEATURE; QA FAIL/82 |
-| 23-nov | 23:30 | Sin proyecto, entrada, salida ni publicación visible en main; sin proyecto/entrada/salida en feature | LIBRE EN LOS REGISTROS DEL REPOSITORIO; no se verificó Studio externo |
+| 23-nov | 07:00 | `data/miniaturas_auditoria_2026-11-21.json`: `IQEU2Bqy3v0` y `tmOji99zGPE` comparten `publishAt=2026-11-23T13:00:00Z` | COLISION_PUBLISHAT; no tocar |
+| 23-nov | 13:30 | Feature: `2026-11-23_tropical-biodiversity-turnover`; main: Rosetta `p5PM4xZfDyc` en `data/miniaturas_auditoria_2026-11-21.json` | CONFLICTO_DE_SLOT_ENTRE_RAMAS; no promover |
+| 23-nov | 23:30 | Main sin ocupación en el snapshot disponible; feature asignado a `2026-11-23_supersequias-722-eventos/storyboard.json` | OCUPADO_EN_FEATURE; no redispatch; Studio externo no verificado |
 
-El plan semanal de main muestra 23-nov 07:00, no 23-nov 23:30. La rama feature ya contiene el proyecto de biodiversidad para 13:30, pero no hay una ocupación de 23:30. La revisión actual de main tampoco encuentra el proyecto «Rosetta» ni otra entrada a las 13:30 del 23-nov; el conflicto con Rosetta mencionado en un reporte conversacional anterior no queda respaldado por el árbol actual ni por el plan semanal consultado. No se afirma disponibilidad externa de YouTube Studio.
+El snapshot de programación de main en `data/miniaturas_auditoria_2026-11-21.json` confirma 07:00 (dos IDs con el mismo `publishAt`), Rosetta a 13:30 (`p5PM4xZfDyc`), Pirámides a 17:00 (`gWJxoGjWQeM`) y Gutenberg a 19:00 (`i3SpxSQglm4`). Por tanto, el borrador tropical de feature a 13:30 tiene `CONFLICTO_DE_SLOT_ENTRE_RAMAS`. El slot 23:30 no aparece ocupado en main, pero ya está asignado en feature a supersequías. No se verificó Studio externo. No se afirma disponibilidad externa de YouTube Studio.
 
 ## Ingesta RSS y Trends
 
@@ -51,7 +51,7 @@ Se leyó `scripts/tendencias.py` para identificar los diez feeds configurados. N
 - **Verificación:** la página editorial primaria apareció con título, fecha, DOI y contenido del artículo. La apertura directa de doi.org y el endpoint Crossref no fueron accesibles en esta sesión. El DOI queda `PENDIENTE_RESOLVEDOR`; no promover hasta resolverlo.
 - **Borrador creado:** `proyectos/2026-11-23_supersequias-722-eventos/storyboard.json`.
 - **Preflight del borrador:** 8 escenas, 220 palabras, 78 s de escenas + 6 s de cortinilla = 84 s, 9:16, voz es-MX-JorgeNeural +7% / −2 Hz, estilo `collage_cientifico_vintage`, mapa con centroides publicados y dos capas de dato.
-- **Estado:** `BORRADOR_EN_PROYECTOS_NO_APTO_PARA_PROMOCION`. No contiene `narrative_qa`; requiere revisión independiente en frío. DOI pendiente; no hay copia en cola.
+- **Estado:** `BORRADOR_EN_PROYECTOS_NO_APTO_PARA_PROMOCION`. `narrative_qa` independiente registrado: FAIL 82/100, siete checks true, `critical_flags=[STAKES_NO_EXPLICADOS]`. DOI/resolvedor pendiente; la cifra 139/234 (59.4%) no se confirmó en el texto primario accesible. No hay copia en cola.
 
 ### 2. Microbiomas de esponjas de aguas profundas
 
@@ -69,12 +69,10 @@ Se leyó `scripts/tendencias.py` para identificar los diez feeds configurados. N
 - **Límite:** no extrapolar a peces silvestres ni a riesgo humano; algunos efectos también aparecen en grupos con caolín.
 - **Decisión:** `NO_DUPLICAR`; el tema de microplásticos en fauna ya se trató en `2026-11-14_dato-microplasticos-pantanal`. No crear storyboard.
 
-### 4. Agujero negro W2246-0526
-
-- **Fuente primaria:** Science Advances, publicado 20-nov-2026, DOI [10.1126/sciadv.aek9035](https://doi.org/10.1126/sciadv.aek9035); respaldo institucional de ALMA.
-- **Observación:** medición de la esfera de influencia de un agujero negro supermasivo en un cuásar oscurecido de alto corrimiento al rojo.
-- **Límite:** no es fuente publicada el 23-nov; el resolvedor DOI no entregó respuesta utilizable.
-- **Decisión:** candidato reciente para otra fecha; no usar en el slot de dato del día 23-nov.
+### 4. Interacción entre glaciares y lagos proglaciares
+- Fuente primaria: Nature Climate Change, DOI `10.1038/s41558-026-02808-5`, publicado el 20-nov-2026.
+- URL editorial: https://www.nature.com/articles/s41558-026-02808-5
+- Estado: CANDIDATO_PARA_SLOT_FUTURO; falta verificar DOI con Crossref/resolvedor y comprobar coordenadas aptas para el mapa.
 
 ### 5. Varroa y la hipoxia de altura
 
@@ -88,7 +86,7 @@ Se leyó `scripts/tendencias.py` para identificar los diez feeds configurados. N
 ## Auditoría de proyectos actuales y backlog 18–23 nov
 
 - `2026-11-23_tropical-biodiversity-turnover`: `FAIL/82`, flag `STAKES_NO_EXPLICADOS`; 13:30 en feature; sin entrada plana, sin salida y sin archivo individual de estado Grok. Clasificación `NOT_DISPATCHABLE`.
-- No se encontró un registro de main que ocupe 23-nov 13:30. No se confirma el conflicto con Rosetta mencionado en el reporte anterior.
+- Main sí registra Rosetta `p5PM4xZfDyc` a 13:30 en `data/miniaturas_auditoria_2026-11-21.json`; el borrador tropical de feature tiene `CONFLICTO_DE_SLOT_ENTRE_RAMAS`.
 - `2026-11-22_genes-estatura-etapas` corresponde al 22-nov 23:30; no ocupa el 23-nov 23:30.
 - El resto de los storyboards 18–22 nov conserva sus hashes y QA registrados en la rama; no se repitió un PASS válido ni se reescribieron narraciones.
 
@@ -127,7 +125,7 @@ No se modificaron las copias heredadas, no se borraron duplicados y no se repiti
 
 - `data/cola.json` está vacío.
 - `data/vistas_historico.json` conserva como último corte visible el 22-nov-2026, 13:50 CDMX; no hay lectura posterior a la hora de Cleopatra/Oxoboranos en los archivos consultados.
-- `data/resubidas_2026-11-21.md` registra una colisión de `publishAt` para 23-nov-2026 07:00 CDMX: `IQEU2Bqy3v0` (“¿La IA nos va a matar? La advertencia de un directivo de OpenAI”) y `tmOji99zGPE` (“¿Qué pasa dentro cuando truenas los dedos?”). No se cambió ni canceló ninguno.
+- `data/miniaturas_auditoria_2026-11-21.json` registra la colisión de `publishAt` para 23-nov-2026 07:00 CDMX: `IQEU2Bqy3v0` y `tmOji99zGPE`, ambos `2026-11-23T13:00:00Z`. La referencia anterior a `data/resubidas_2026-11-21.md` era incorrecta. No se cambió ni canceló ninguno.
 - `data/cierre_diario/2026-11-22.md` y `data/tt_fb_alineacion_2026-11-22.json` conservan registros de Cleopatra, Oxoboranos, Gutenberg y Ada; el estado posterior a la hora no quedó verificado en YouTube Studio dentro de esta sesión.
 - No se afirma publicación ni fallo a partir de un `publishAt` pasado. No se cambió privacidad, programación ni etiquetas.
 
@@ -141,6 +139,14 @@ No se modificaron las copias heredadas, no se borraron duplicados y no se repiti
 
 - **Creado y leído de vuelta:** `proyectos/2026-11-23_supersequias-722-eventos/storyboard.json`.
 - **Preflight verificado:** 220 palabras, 8 escenas, 84 s totales, 9:16, voz configurada, mapa con centroides publicados, capas de dato, `approved_assets=[]`, `export.render_status=NOT_GENERATED`, `publicacion.status=PENDIENTE_DECISION_GROK`.
-- **No creado:** `narrative_qa`, `ESTADO_EJECUCION.md`, entrada de cola, estado Grok, medios o archivos de publicación.
+- **No creado:** `ESTADO_EJECUCION.md`, entrada de cola, estado Grok, medios o archivos de publicación. `narrative_qa` sí se registró como FAIL 82/100.
 - **No modificados:** `data/*.json`, main, bloqueados heredados, permisos, secretos y programación.
 - **Siguiente compuerta mínima:** resolver DOI por Crossref/resolvedor y realizar una revisión narrativa independiente en frío. Solo después podrá evaluarse la promoción; no se autoriza despacho en este estado.
+
+## Correcciones y verificaciones del run — 2026-11-23 00:57 CDMX
+
+- **Inventario de slots:** 07:00 colisiona entre `IQEU2Bqy3v0` y `tmOji99zGPE` según `data/miniaturas_auditoria_2026-11-21.json`; la referencia anterior a `data/resubidas_2026-11-21.md` era incorrecta. 13:30 está ocupado por Rosetta en main y por el borrador tropical en feature: `CONFLICTO_DE_SLOT_ENTRE_RAMAS`. Main también registra Pirámides 17:00 y Gutenberg 19:00. 23:30 no aparece ocupado en el snapshot de main y queda asignado en feature al borrador de supersequías.
+- **QA supersequías:** FAIL 82, `STAKES_NO_EXPLICADOS`; la narración no se reescribió. DOI editorial `10.1038/s41597-026-08886-6` aparece en Nature, pero Crossref/resolvedor no pudo verificarse por DNS. La cifra 139/234 (59.4%) no aparece en el texto primario accesible y queda `PENDING_SOURCE`.
+- **RSS/Trends:** se ejecutó el contenido vigente de `scripts/tendencias.py` en runtime temporal. Los diez feeds (ScienceDaily general/salud/espacio, Phys.org, NASA, ESA, Nature, EurekAlert, SINC y UNAM Global) y Google Trends RSS México fallaron con `<urlopen error [Errno -3] Temporary failure in name resolution>`. No se escribió ningún JSON. Respaldo oficial consultado: Nature Scientific Data, Nature Climate Change, Scientific Reports y PLOS Biology.
+- **Candidato corregido:** se sustituyó el lead de W2246-0526, cuyo DOI `10.1126/sciadv.aek9035` no pudo localizarse en fuente primaria, por el artículo de glaciares-lagos de Nature Climate Change. W2246 queda `PENDING_SOURCE`, fuera de los cinco candidatos.
+- **Promoción:** no se creó entrada de cola. Supersequías no supera QA ni DOI; tropical no supera QA y además tiene conflicto de slot. No se ejecutó workflow ni se envió payload.
