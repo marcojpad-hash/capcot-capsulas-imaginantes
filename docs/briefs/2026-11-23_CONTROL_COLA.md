@@ -178,3 +178,10 @@ No se modificaron `data/*.json`, main, `cola/entrada`, `cola/estado`, bloqueados
 
 
 **Control histórico del PR #13:** la revisión de integración del 17-nov (comentario del propietario en el PR) ya había advertido que el informe Groq confunde duración de escena con aparición temporal del dato, no fija SHA reproducible, mezcla DOI pendiente con fuente inexistente y no demuestra varias transiciones. La instrucción explícita fue no aprobar ni fusionar y exigir reauditoría sobre el SHA exacto. Esa advertencia sigue vigente; no se aprobó ni fusionó el PR.
+
+
+### CI posterior a las actualizaciones
+
+- Los runs automáticos de PR #3 para los commits `721789a`, `359a5cf` y `d478f44` terminaron `success` en CodeQL. Esto acredita únicamente esos jobs de análisis; no acredita validador estructural, DOI/Crossref ni QA audiovisual.
+- PR #3 permanece abierto, Draft y `mergeable=false`. No se marcó listo ni se fusionó.
+- No aparece un run nuevo de `capcot-grok-dispatch`; los commits tocaron storyboard de proyecto y documentos, no `cola/entrada/*.json`.
