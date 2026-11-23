@@ -1,7 +1,7 @@
 {
  "fecha": "2026-10-28",
  "tipo": "endscreens_rotacion",
- "actualizado_cdmx": "2026-11-22 23:03",
+ "actualizado_cdmx": "2026-11-22 23:04",
  "motivo": "Nuevo 5XQfUHpyTWs (anfibio marino, 46 vistas, publicado 23:30) sin pantalla → 5D96DmjvioU (El Niño, 625, estancado +4 en 17 h). Resto sin cambios.",
  "vistas_ref": {
   "I8n_5nnUlbI": 3,
@@ -3327,28 +3327,28 @@
  },
  "propuesta_2026-11-22_23": {
   "aceleran": [
-   "mWtf7Yta294",
-   "inzztxrxYfg",
-   "BIwG7kgaLic"
+   "BIwG7kgaLic",
+   "6XCBYrlO4Eg",
+   "YXndoPSSeaY"
   ],
   "deltas": {
-   "mWtf7Yta294": 1002,
-   "inzztxrxYfg": 690,
-   "BIwG7kgaLic": 19
+   "BIwG7kgaLic": 19,
+   "6XCBYrlO4Eg": 11,
+   "YXndoPSSeaY": 10
   },
   "delta_vs": "snapshot_2026-11-22_20",
   "aceleran_a_flojo": {
-   "mWtf7Yta294": "KvHvf2TJLqE",
-   "inzztxrxYfg": "I8n_5nnUlbI",
-   "BIwG7kgaLic": "4lOWeMn2RCo"
+   "BIwG7kgaLic": "KvHvf2TJLqE",
+   "6XCBYrlO4Eg": "I8n_5nnUlbI",
+   "YXndoPSSeaY": "4lOWeMn2RCo"
   },
   "flojos_a_mas_acelera": {
-   "4Qpl17Ts_vI": "mWtf7Yta294",
-   "2a36r5QOvi4": "mWtf7Yta294",
-   "NKDhKlY1rVI": "mWtf7Yta294",
-   "vj5RZDt-dfc": "mWtf7Yta294",
-   "WcTviUWqbes": "mWtf7Yta294",
-   "Sc0cX9ejxuw": "mWtf7Yta294"
+   "4Qpl17Ts_vI": "BIwG7kgaLic",
+   "2a36r5QOvi4": "BIwG7kgaLic",
+   "NKDhKlY1rVI": "BIwG7kgaLic",
+   "vj5RZDt-dfc": "BIwG7kgaLic",
+   "WcTviUWqbes": "BIwG7kgaLic",
+   "Sc0cX9ejxuw": "BIwG7kgaLic"
   },
   "estado": "pendiente_studio",
   "nuevos": [
