@@ -3431,5 +3431,125 @@
    ]
   ],
   "nota_flujo": "Corte vs 21-nov 13:54 CDMX (~24 h; no hubo corte 6h registrado el 21-nov 20:00 ni a las 08:00 de hoy). YT 38,138→39,221 (+1,083 vistas), likes 1,180→1,221 (+41), comentarios 28→28 (+0), subs 97→103 (+6). 100→105 Shorts públicos (+5: Gutenberg NO inventó la imprenta YXndoPSSeaY a las 2026-11-22 13:30 CDMX (2 vistas, 0 likes); En Salem NO quemaron brujas N21TIYdONZo a las 2026-11-22 07:00 CDMX (8 vistas, 0 likes); Colón NO llamó América al continente RwTTwSNGm10 a las 2026-11-21 23:30 CDMX (28 vistas, 0 likes); Un robot ensambla una estructura en órbita ZG4iQgmWrLI a las 2026-11-21 19:00 CDMX (11 vistas, 0 likes); Napoleón NO era bajito 8okieDXFIgU a las 2026-11-21 17:00 CDMX (117 vistas, 4 likes)). Lo empujan YT El tejón que se burló del zoológico 6XCBYrlO4Eg 192→943 (+751); TT Un robot ensambla una estructura en órbita Contenido ilustra 7708225068513496321 nuevo 653 (5 likes); TT Químicos aislan oxoboranos estables tras 60 años Contenido i 7708179212145872134 3→605 (+602). En YT se estancó ¿Por qué tenemos hipo? 41PYjWbQuJo (sigue en 0); se fugo la ia jeUrM5zzkdA (sigue en 0); ¿Por qué tenemos hipo? Rg-iTgMExWw (sigue en 1); La corneja decide en 235 milisegundos wxnhEdlJYwU (sigue en 1). El nuevo Gutenberg NO inventó la imprenta YXndoPSSeaY va en 2 vista(s). TT (yt-dlp, listado público @datosyociosidades): 100→106 videos (+6), 34,842→37,433 vistas (+2,591), 1,078→1,105 likes (+27), comentarios 6→6. En TT lo mueven TT Un robot ensambla una estructura en órbita Contenido ilustra nuevo 653, TT Químicos aislan oxoboranos estables tras 60 años Contenido i 3→605 (+602), TT ¿Colón llamó América al continente? No: el nombre nació en 1 nuevo 364, TT ¿Un tejón le ganó a un zoológico entero? Stoffel, el tejón d nuevo 336, TT El pulpo reparte el trabajo entre tres corazones. Tu pulso v 274→609 (+335). Seguidores de TT no se pudieron leer. Fuente YT: YouTube Data API v3 OAuth ~/.capcot/token.json."
+ },
+ {
+  "hora_cdmx": "2026-11-23T14:01-06:00",
+  "base_youtube": "2026-11-22T13:50",
+  "base_tiktok": "2026-11-22T13:50",
+  "youtube_totales": {
+   "view": 40009,
+   "like": 1240,
+   "comment": 28
+  },
+  "suscriptores": 104,
+  "shorts_publicos": 116,
+  "delta_youtube": {
+   "view": 788,
+   "like": 19,
+   "comment": 0,
+   "suscriptores": 1,
+   "horas_desde_base": 24.2,
+   "nota": "Δ de ~24 h vs el corte 22-nov 13:50 CDMX (último snapshot en vistas_historico/balances_6h; no hubo corte 6h registrado el 22-nov 14:00, el 22-nov 20:00 ni a las 08:00 de hoy). 105→116 Shorts públicos (+11). Fuente: yt-dlp listado público youtube.com/channel/UCU2ZI-6pBJEr9aSFsF6bxLw/shorts (OAuth ~/.capcot/token.json devolvió invalid_grant: token expired or revoked; también fallaron los demás refresh tokens en ~/.capcot). Likes: yt-dlp no reportó like_count en 27/116 Shorts (se anotaron como 0; suma de likes reportados=1240). Comentarios: yt-dlp solo reportó comment_count en 11/116 (suma 28; el resto se anotó como 0). Nuevos: La piedra Rosetta NO era un diccionario p5PM4xZfDyc a las 2026-11-23 13:30 CDMX (2 vistas, 0 likes); Dijo que los dioses habían sido reyes Tq2ASLkFTbo a las 2026-11-23 11:00 CDMX (2 vistas, 0 likes); Bernabé llamó al orfismo religión del libro CW02WClntYA a las 2026-11-23 09:00 CDMX (2 vistas, 0 likes); ¿La IA nos va a matar? La advertencia de un directivo de OpenAI IQEU2Bqy3v0 a las 2026-11-23 07:00 CDMX (4 vistas, 0 likes); ¿Qué pasa dentro cuando truenas los dedos? tmOji99zGPE a las 2026-11-23 07:00 CDMX (9 vistas, 1 likes); El pulpo que se fugó por el drenaje 4Vi_TnIl9FI a las 2026-11-22 23:30 CDMX (239 vistas, 7 likes); Cleopatra NO era egipcia I8n_5nnUlbI a las 2026-11-22 21:00 CDMX (9 vistas, 0 likes); El pirata cuya cabeza colgó de un mástil KvHvf2TJLqE a las 2026-11-22 21:00 CDMX (14 vistas, 0 likes); ¿Webb ve aire lejano? BIwG7kgaLic a las 2026-11-22 19:00 CDMX (61 vistas, 0 likes); Ada Lovelace escribió el primer programa Sc0cX9ejxuw a las 2026-11-22 17:00 CDMX (47 vistas, 2 likes); Químicos aislan oxoboranos estables tras 60 años B-75KkHAVDo a las 2026-11-22 14:30 CDMX (5 vistas, 0 likes)."
+  },
+  "tiktok_totales": {
+   "view": 38892,
+   "like": 1124,
+   "comment": 6
+  },
+  "seguidores_tiktok": null,
+  "likes_perfil_tiktok": null,
+  "videos_tiktok": 115,
+  "delta_tiktok": {
+   "view": 1459,
+   "like": 19,
+   "comment": 0,
+   "seguidores": null,
+   "likes_perfil": null,
+   "videos": 9,
+   "nota": "Δ vs 22-nov 13:50 (~24 h): 37433→38892 vistas (+1459), 1105→1124 likes (+19), comentarios 6→6, 106→115 videos (+9). Fuente: yt-dlp, listado público @datosyociosidades. Nuevos en el listado: ¿La piedra Rosetta era un diccionario de jeroglífi 7711369929110326548 (0 vistas, 0 likes); En una isla que llamó Pancaya, Evémero de Mesene d 7711363084484447495 (0 vistas, 0 likes); El filólogo Alberto Bernabé llama al orfismo una r 7711362255790542087 (1 vistas, 0 likes); El 22 de noviembre de 1718 murió Barbanegra, Edwar 7711368919000567060 (0 vistas, 0 likes); Inky, un pulpo del Acuario Nacional de Napier, en  7711367792351628564 (1 vistas, 0 likes); ¿Qué pasa dentro cuando truenas los dedos? En 2015 7710702314381675828 (1 vistas, 1 likes); Cleopatra nació en Alejandría y gobernó Egipto cas 7710997085197192466 (2 vistas, 0 likes); ¿El telescopio James Webb puede ver el aire de un  7711073239539141889 (5 vistas, 0 likes); Ada Lovelace escribió el primer programa en 1843:  7711000749882264838 (0 vistas, 0 likes). Seguidores no se pudieron leer."
+  },
+  "ranking_crecimiento": [
+   [
+    "TT ¿Por qué se pone verde la yema del huevo duro? El anillo ver",
+    563
+   ],
+   [
+    "TT ¿En Salem quemaron brujas? En 1692, 19 personas fueron ahorc",
+    351
+   ],
+   [
+    "TT ¿Un tejón le ganó a un zoológico entero? Stoffel, el tejón d",
+    295
+   ],
+   [
+    "YT El pulpo que se fugó por el drenaje",
+    239
+   ],
+   [
+    "TT ¿Colón llamó América al continente? No: el nombre nació en 1",
+    226
+   ],
+   [
+    "YT Napoleón NO era bajito",
+    111
+   ],
+   [
+    "YT En Salem NO quemaron brujas",
+    75
+   ],
+   [
+    "YT El tejón que se burló del zoológico",
+    70
+   ],
+   [
+    "YT ¿Webb ve aire lejano?",
+    61
+   ],
+   [
+    "YT Gutenberg NO inventó la imprenta",
+    53
+   ],
+   [
+    "YT Ada Lovelace escribió el primer programa",
+    47
+   ],
+   [
+    "YT Colón NO llamó América al continente",
+    22
+   ],
+   [
+    "YT El pirata cuya cabeza colgó de un mástil",
+    14
+   ],
+   [
+    "YT Un robot ensambla una estructura en órbita",
+    14
+   ],
+   [
+    "YT La erupción invisible que liberó una nube de metano",
+    14
+   ],
+   [
+    "YT ¿Qué pasa dentro cuando truenas los dedos?",
+    9
+   ],
+   [
+    "YT Cleopatra NO era egipcia",
+    9
+   ],
+   [
+    "YT ¿El arroz de ayer puede enfermarte?",
+    6
+   ],
+   [
+    "TT ¿Se va la luz el 17 de noviembre por una IA que se escapó? E",
+    6
+   ],
+   [
+    "YT Químicos aislan oxoboranos estables tras 60 años",
+    5
+   ]
+  ],
+  "nota_flujo": "Corte vs 22-nov 13:50 CDMX (~24 h; no hubo corte 6h registrado el 22-nov 14:00, el 22-nov 20:00 ni a las 08:00 de hoy). YT 39,221→40,009 (+788 vistas), likes 1,221→1,240 (+19), comentarios 28→28 (+0), subs 103→104 (+1). 105→116 Shorts públicos (+11: La piedra Rosetta NO era un diccionario p5PM4xZfDyc a las 2026-11-23 13:30 CDMX (2 vistas, 0 likes); Dijo que los dioses habían sido reyes Tq2ASLkFTbo a las 2026-11-23 11:00 CDMX (2 vistas, 0 likes); Bernabé llamó al orfismo religión del libro CW02WClntYA a las 2026-11-23 09:00 CDMX (2 vistas, 0 likes); ¿La IA nos va a matar? La advertencia de un directivo de OpenAI IQEU2Bqy3v0 a las 2026-11-23 07:00 CDMX (4 vistas, 0 likes); ¿Qué pasa dentro cuando truenas los dedos? tmOji99zGPE a las 2026-11-23 07:00 CDMX (9 vistas, 1 likes); El pulpo que se fugó por el drenaje 4Vi_TnIl9FI a las 2026-11-22 23:30 CDMX (239 vistas, 7 likes); Cleopatra NO era egipcia I8n_5nnUlbI a las 2026-11-22 21:00 CDMX (9 vistas, 0 likes); El pirata cuya cabeza colgó de un mástil KvHvf2TJLqE a las 2026-11-22 21:00 CDMX (14 vistas, 0 likes); ¿Webb ve aire lejano? BIwG7kgaLic a las 2026-11-22 19:00 CDMX (61 vistas, 0 likes); Ada Lovelace escribió el primer programa Sc0cX9ejxuw a las 2026-11-22 17:00 CDMX (47 vistas, 2 likes); Químicos aislan oxoboranos estables tras 60 años B-75KkHAVDo a las 2026-11-22 14:30 CDMX (5 vistas, 0 likes)). Lo empujan TT ¿Por qué se pone verde la yema del huevo duro? El anillo ver 7710703730752015668 37→600 (+563); TT ¿En Salem quemaron brujas? En 1692, 19 personas fueron ahorc 7710990697033108742 259→610 (+351); TT ¿Un tejón le ganó a un zoológico entero? Stoffel, el tejón d 7710991265910820117 336→631 (+295). En YT se estancó ¿Por qué tenemos hipo? 41PYjWbQuJo (sigue en 0); se fugo la ia jeUrM5zzkdA (sigue en 0); ¿Por qué tenemos hipo? Rg-iTgMExWw (sigue en 1); La corneja decide en 235 milisegundos wxnhEdlJYwU (sigue en 1). El nuevo La piedra Rosetta NO era un diccionario p5PM4xZfDyc va en 2 vista(s). El nuevo Dijo que los dioses habían sido reyes Tq2ASLkFTbo va en 2 vista(s). El nuevo Bernabé llamó al orfismo religión del libro CW02WClntYA va en 2 vista(s). El nuevo ¿La IA nos va a matar? La advertencia de un directivo de OpenAI IQEU2Bqy3v0 va en 4 vista(s). El nuevo Químicos aislan oxoboranos estables tras 60 años B-75KkHAVDo va en 5 vista(s). TT (yt-dlp, listado público @datosyociosidades): 106→115 videos (+9), 37,433→38,892 vistas (+1,459), 1,105→1,124 likes (+19), comentarios 6→6. En TT lo mueven TT ¿Por qué se pone verde la yema del huevo duro? El anillo ver 37→600 (+563), TT ¿En Salem quemaron brujas? En 1692, 19 personas fueron ahorc 259→610 (+351), TT ¿Un tejón le ganó a un zoológico entero? Stoffel, el tejón d 336→631 (+295), TT ¿Colón llamó América al continente? No: el nombre nació en 1 364→590 (+226), TT ¿Se va la luz el 17 de noviembre por una IA que se escapó? E 3369→3375 (+6). Seguidores de TT no se pudieron leer. Fuente YT: yt-dlp listado público youtube.com/channel/UCU2ZI-6pBJEr9aSFsF6bxLw/shorts (OAuth ~/.capcot/token.json devolvió invalid_grant: token expired or revoked; también fallaron los demás refresh tokens en ~/.capcot). Likes: yt-dlp no reportó like_count en 27/116 Shorts (se anotaron como 0; suma de likes reportados=1240). Comentarios: yt-dlp solo reportó comment_count en 11/116 (suma 28; el resto se anotó como 0)."
  }
 ]
