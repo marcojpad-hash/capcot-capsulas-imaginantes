@@ -481,7 +481,7 @@ Releídos los dos storyboards sin volver a redactar ni repetir el QA:
 - PR #3 sigue OPEN/DRAFT, 704 archivos, `mergeable=false`; no se integra ni se modifica desde este run.
 - PR #15 sigue OPEN, `mergeable=true` pero `mergeable_state=unstable`; añade seis pruebas de coordenadas/DOI, pero no hay evidencia de ejecución de esas pruebas unitarias en su head. No se fusiona.
 - La auditoría de cuásares del 15-nov ya tiene artefacto de Groq en PR #13 y corrección narrativa abierta en PR #14. El issue #11 conserva etiqueta `hecho`; no se repite una auditoría ChatGPT donde el contrato del issue exige un auditor de modelo distinto.
-- El snapshot llamado `balances_6h.json` está fechado 14:01 CDMX, pero su base comparativa es 22-nov 13:50 (aprox. 24 h antes). No se interpreta como delta de seis horas. Totales leídos: YouTube 40,009 vistas / 1,240 likes / 28 comentarios; TikTok 38,892 vistas / 1,124 likes / 6 comentarios.
+- El snapshot llamado `balances_6h.json` está fechado 14:01 CDMX, pero su base comparativa es 22-nov 13:50 (24.2 h antes): no es un delta de seis horas. YouTube usa respaldo público de yt-dlp porque OAuth devolvió `invalid_grant`; faltan likes en 27/116 Shorts y comentarios en 105/116, así que 1,240 likes y 28 comentarios son sumas parciales, no totales completos. TikTok también procede del listado público yt-dlp; seguidores no disponibles. Vistas leídas: YouTube 40,009 y TikTok 38,892.
 - La verificación directa de Crossref/resolvedor no se pudo completar: los endpoints DOI devolvieron “not accessible” y la búsqueda no devolvió metadatos específicos. Los storyboards marcan fuente primaria verificada, pero eso no acredita la compuerta DOI/Crossref. No se promueve ninguno.
 
 ### Resultado de este corte
