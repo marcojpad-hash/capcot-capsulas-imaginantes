@@ -334,3 +334,12 @@ Main avanzó a `b85fcb0e117955def516790393a989d7d78cc93b`; el commit modificó �
 ### Corrección de atribución de Semgrep — PR #15
 
 Precisión sobre la sección anterior: los **27 hallazgos** pertenecen al run Semgrep `45004241269` citado en el cuerpo del PR. La consulta del head actual `30101e9aca8aaafb8d1894df30574a66067ff4a8` devuelve además el run `45004335607` con conclusión FAILURE, pero no se verificó en sus logs el mismo conteo. No se atribuyen los 27 hallazgos al run más reciente. Las pruebas unitarias del PR siguen pendientes.
+
+
+## Reauditoría de borrador modificado después del último corte — marea cerebral
+
+El commit `39e6566aedeab236284f905bf796bfe1872aff45` del 23-nov modificó solo `narrative_qa` de `proyectos/2026-11-20_dato-marea-cerebral-en-sueno/storyboard.json`; no cambió narración ni claims. El QA independiente ahora queda **FAIL/82**, `review_basis=lectura_en_frio_solo_narracion`, reviewer `auditor_capcot_independiente`, flag `STAKES_NO_EXPLICADOS`. No se repitió la lectura en frío porque el texto narrado no cambió.
+
+- Slot: 2026-11-20 17:00. El `data/publicaciones.json` actual de main contiene para esa fecha solo 07:00 y 13:30; no se encontró registro main a 17:00 ni colisión de `publishAt` en el snapshot disponible. No se declara `CONFLICTO_DE_SLOT_ENTRE_RAMAS` para este proyecto.
+- Lectura de vuelta: 84 s, 8 escenas, `approved_assets=[]`, `export.render_status=NOT_GENERATED`, publicación pendiente. `cola/estado/2026-11-20_dato-marea-cerebral-en-sueno.json` y `ESTADO_EJECUCION.md` devolvieron 404; **RECEPCION_GROK_NO_CONFIRMADA**. Clasificación: **NOT_DISPATCHABLE** por QA FAIL y ausencia de recepción confirmada.
+- No se modificó el storyboard, no se reescribió narración, no se promovió a cola y no se generaron medios.
