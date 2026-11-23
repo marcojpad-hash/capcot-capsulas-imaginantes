@@ -107,3 +107,29 @@ No se encontró un archivo `historial_youtube` dedicado en el árbol consultado;
 - `10958969d5c8f79924f7a64b3c11238cefa15a3f`: registro de commits y verificación final.
 - Lecturas de vuelta verificadas para storyboard, radar, control del 22-nov y este control. Después de estos commits no apareció un nuevo run de Actions; el último run disponible sigue siendo la validación de Kuroshio `45075532329` sobre un commit anterior, sin `--check-doi`.
 - La ejecución RSS se hizo desde una copia temporal del contenido de `scripts/tendencias.py` leído de GitHub; el repositorio no se clonó por el error DNS. No se escribió ningún resultado temporal al repositorio.
+
+## Revalidación del operador — 2026-11-23 01:56 CDMX
+
+### Inventario, cola y recepción
+
+- La rama feature estaba en `6182055130d0c00d78950c3e063110b6e86adca2` al comenzar esta revalidación. El único cambio de storyboard no ocurrió: el commit posterior a este control anterior solo había tocado el propio control. Los proyectos 20–23 fueron releídos; no apareció un proyecto del 24-nov.
+- Los 12 proyectos del lote 5–7 nov fueron releídos. Sus `cola/estado/<id>.json` siguen en 404. Hay copias heredadas en `cola/bloqueados/` para los 12 títulos, aunque varios usan un `project_id` histórico distinto al de `proyectos/`. No se movió ni borró ninguna copia. Los QA registrados en los 12 proyectos se mantienen en 2 PASS y 10 FAIL; no se reescribieron.
+- Reconciliación de video IDs: `main/data/publicaciones.json` confirma dos coincidencias exactas de `project_id` dentro de esos 12: `2026-11-07_comida-hielo-caliente` (`HSgrnejAcaI`; la nota del registro indica que ya no aparecía en el canal el 12-nov, aunque TT/FB sí constaban publicados) y `2026-11-07_inter-nubes-pesan` (`4Qpl17Ts_vI`; publicación/agenda registrada). El conteo anterior de 9/12 no se pudo reproducir con los archivos actuales: `data/vistas_historico.json` contiene 108 registros sin coincidencia por esos títulos y no se encontró un archivo separado `historial_youtube` en raíz ni en `data/`. No se atribuyen otros siete video IDs sin evidencia actual.
+- Para los dos proyectos nuevos del 23-nov: `supersequias` conserva `narrative_qa=FAIL/82`; `tropical-biodiversity-turnover` sigue sin QA independiente. No se promovieron.
+- `cola/entrada/` solo muestra la carpeta histórica `2026-11-09`; su contenido no existe en GitHub (404). `cola/estado/` y `publicaciones/` no existen en la rama. `salidas/` conserva únicamente artefactos antiguos, sin salida del 23/24-nov.
+- Worker main `45126580443`: SUCCESS; el log termina en `[trabajador] sin trabajo en cola.`. No hubo procesamiento nuevo.
+- `.github/workflows/capcot-grok-dispatch.yml` sigue filtrando únicamente `cola/entrada/*.json` (primer nivel); `scripts/procesar_cola.py` sí contempla profundidad adicional. La discrepancia permanece documentada; no se disparó workflow ni se envió payload.
+- PR #3 permanece OPEN/DRAFT/dirty y contiene cambios en archivos `data/*.json`, que siguen siendo solo lectura. No se fusionó ni se modificó.
+
+### Ocupación del 24-nov y radar
+
+- `main/data/miniaturas_auditoria_2026-11-21.json` confirma cinco videos programados para el 24-nov: 07:00 `RBUcAeptGAU`, 13:30 `WtuxaKrS4-Q`, 17:00 `cGb7Z0ZEz8w` y `_YzBY4OfUeo` (misma hora/publishAt), y 19:00 `9W9nn72rmfE`.
+- `scripts/rotacion.py` establece `MAX_POR_DIA=5`. El slot 23:30 no tiene video en el snapshot, pero el día ya está en 5/5; por eso no se creó storyboard. La colisión de 17:00 no se canceló ni reprogramó.
+- La rotación automática no ingiere `miniaturas_auditoria_*.json`; la ocupación de videos programados debe seguir reconciliándose manualmente antes de crear un sexto paquete.
+- Se creó y leyó de vuelta `docs/briefs/2026-11-24_RADAR_CAPCOT.md` (candidatos Varroa, plancton, lagos glaciares y grafito). Varroa queda recomendado, no asignado. Nature queda `PENDING_SOURCE` hasta acceso directo; grafito queda `PENDING_SOURCE`; el DOI de Varroa permanece pendiente de resolver.
+- Las diez URL RSS de `scripts/tendencias.py` y Google Trends México fallaron con `curl: (6) Could not resolve host: <host>`; Crossref y `doi.org` también fallaron por DNS. Los errores exactos y el respaldo editorial están en el radar.
+- No se creó storyboard, `narrative_qa`, entrada de cola, estado Grok, medio ni placeholder. No se leyeron valores de secretos.
+
+### Límites de esta revalidación
+
+No se cambió `data/*.json`, main, programación, publicaciones, bloqueados, estados Grok, secretos ni permisos. El siguiente paso es esperar un slot que esté libre tanto por fecha/hora como por cupo diario, y volver a resolver DOI antes de cualquier promoción.
