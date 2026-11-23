@@ -133,3 +133,10 @@ No se encontró un archivo `historial_youtube` dedicado en el árbol consultado;
 ### Límites de esta revalidación
 
 No se cambió `data/*.json`, main, programación, publicaciones, bloqueados, estados Grok, secretos ni permisos. El siguiente paso es esperar un slot que esté libre tanto por fecha/hora como por cupo diario, y volver a resolver DOI antes de cualquier promoción.
+
+### Commits y lectura de vuelta de esta revalidación
+
+- `36b29c21d02c63ee6468fc13a6072ba4595830a2`: creación de `2026-11-24_RADAR_CAPCOT.md`.
+- `30987a394651cfe974f22ef96a8b124348169d02`, `b2946e1d38737e7b806cc345b14a4bbb8553ff7b` y `46ae529355d98d777c3991c2c178261d2da58cdc`: correcciones sucesivas para separar acceso a fuente primaria, estado PENDING_SOURCE y DOI pendiente.
+- `63d54fbc0f3726bb0e3fa9b6beba4aecadbd15b3`: actualización de este control. El radar y el control se releen desde GitHub; los hashes de contenido se comprobaron en la respuesta de lectura de vuelta.
+- No hubo cambios de storyboard ni de `data/*.json` en estos commits.
