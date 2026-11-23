@@ -194,3 +194,10 @@ No se modificaron `data/*.json`, main, `cola/entrada`, `cola/estado`, bloqueados
 - El storyboard canónico conserva `narrative_qa.status=FAIL`, score 0, `reviewer_role=control_compuerta_chatgpt_no_independiente` y `critical_flags=[\"REVISION_INDEPENDIENTE_AUSENTE\"]`. Los siete checks false significan que no están acreditados por una auditoría válida, no un dictamen individual de fallo narrativo.
 - `cola/entrada/<id>`, `cola/estado/<id>.json` y `salidas/<id>` devuelven 404; `main/data/publicaciones.json` no tiene coincidencia por ese `project_id`. Clasificación: `NOT_DISPATCHABLE`; no se promovió ni se redispatchó.
 - No se disparó el worker, no se envió payload, no se modificó la etiqueta del Issue ni se alteró el estado de los PRs.
+
+
+## Verificación de Actions de capcot-grok-dispatch — 23-nov-2026
+
+- Se leyó `.github/workflows/capcot-grok-dispatch.yml`; su ruta de entrada de `push` observa `cola/entrada/*.json`. Los commits de esta revisión tocaron únicamente `docs/briefs/*.md`; no se modificó cola ni se lanzó el workflow.
+- La consulta de historial por GitHub Fetch devolvió literalmente `INVALID_ARGUMENT 400: GitHub Fetch URL is not an allowed public GitHub repository or search endpoint`. La apertura de la página de Actions devolvió `DisabledError`. Por ello, el listado completo de ejecuciones recientes de ese workflow queda **no verificado por el conector**; no se afirma que no existan runs.
+- No se envió payload, no se inspeccionaron valores de secretos y no se infirió recepción Grok a partir de commits o Actions.
