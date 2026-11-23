@@ -450,3 +450,44 @@ La rama feature no contiene los snapshots `tt_fb_alineacion` ni `miniaturas_audi
 Ambos borradores permanecen `NOT_DISPATCHABLE`: Supersequías por FAIL/82 y conflicto de 23:30 con el registro Oso en main; biodiversidad por FAIL/82 y conflicto de 13:30 con Rosetta. No se promovió, no se reescribió narración, no se modificó `data/*.json`, main, cola, estados Grok, programación, secretos ni permisos. No se generaron medios ni se consumieron créditos.
 
 Siguiente paso mínimo: reconciliar con Imaginantes/propietario el ID Oso de 23:30 y la discrepancia del registro de publicaciones; mantener ambos slots bloqueados hasta esa confirmación y hasta que cada storyboard tenga QA PASS, validador estructural real y DOI verificado.
+
+## Revalidación del operador único — 2026-11-23, 14:04 CDMX
+
+### Cambios posteriores al último corte
+
+- Rama operativa releída: `feature/capcot-video-discovery-continuity`, HEAD `94c0d04b4f708d7bddeb08d289ab9cf5476b8365`. El último commit de esta rama solo actualizó este control; no hay storyboard nuevo ni cambio narrativo posterior al QA registrado.
+- `main` releído: HEAD `01877b8764f3bea11ba0aa7a1c61b9e0721afe2a`. El commit añadió el snapshot de `data/balances_6h.json` y `data/vistas_historico.json`; no modificó la política horaria ni los registros de publicación.
+- Política vigente en `main/data/horarios.json` desde 23-nov: ventanas activas 06:30–07:30 y 16:30–18:00; 23:30 es el slot fijo del dato del día. 13:00–14:30 permanece como prueba reversible; 19:00 no se programa sin autorización puntual.
+- `main/data/tt_fb_alineacion_2026-11-23.json` conserva diez IDs de YouTube distribuidos en ocho horas. Entre ellos están Rosetta a las 13:30 (`p5PM4xZfDyc`) y Oso a las 23:30 (`pTmQgkchC68`). `main/data/publicaciones.json` solo contiene tres registros del día (09:00, 11:00 y 17:00); la alineación es evidencia adicional de video_id/programación, no prueba de publicación terminada.
+
+### Dos proyectos del 23-nov
+
+Releídos los dos storyboards sin volver a redactar ni repetir el QA:
+
+- `2026-11-23_supersequias-722-eventos`, 23:30: 8 escenas, 220 palabras, 78 s de escenas + 6 s de cortinilla = 84 s. Voz es-MX-JorgeNeural, +7 %, −2 Hz; prompt_base coincide con `collage_cientifico_vintage`; mapa con centroides WGS84 y nota de precisión respaldados por SRC-001; 2 gráficos; todas las escenas tienen source_ids, ambiente y SFX. `approved_assets=[]`, `render_status=NOT_GENERATED`, publicación pendiente. QA existente: FAIL/82, siete checks verdaderos, `STAKES_NO_EXPLICADOS`.
+- `2026-11-23_tropical-biodiversity-turnover`, 13:30: 8 escenas, 171 palabras, 78 s de escenas + 6 s de cortinilla = 84 s. Misma voz y parámetros; prompt_base coincide con `ligne_claire`; mapa WGS84 de la región de Jambi con precisión limitada explícitamente a la región publicada; 2 gráficos; source_ids, ambiente y SFX presentes en todas las escenas. `approved_assets=[]`, `render_status=NOT_GENERATED`, publicación pendiente. QA existente: FAIL/82, siete checks verdaderos, `STAKES_NO_EXPLICADOS`.
+- Los dos IDs aparecen en la alineación de `main`; se clasifican `CONFLICTO_DE_SLOT_ENTRE_RAMAS` y `PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR`. La propia alineación los lista sin MP4 local ni espejo TT/FB: `MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO`.
+- No se repitió el QA: ambas narraciones conservan el hash/estado de revisión documentado en el último corte. No se reescribieron claims ni narraciones.
+
+### Cola, Grok y Actions
+
+- Inventario de proyectos: 103 directorios; los únicos dos con fecha 23-nov son los anteriores. `cola/entrada/` solo contiene el paquete histórico anidado del robot del 09-nov; no existe JSON plano de ninguno de los dos proyectos actuales. `cola/estado/` no está presente (404): para ambos aplica exactamente `RECEPCION_GROK_NO_CONFIRMADA`.
+- `salidas/` no contiene proyectos del 23–25-nov en feature ni en main. `cola/bloqueados/` conserva el backlog previo. El selector del trabajador procesa entradas planas y paquetes anidados, pero el workflow de handoff observado en la rama opera sobre JSON plano; ninguno de los dos proyectos actuales está en una ruta de entrada.
+- Run `45254537410` (Trabajador de cola, main, 13:58 CDMX) terminó SUCCESS con “sin trabajo en cola”. No acredita recepción Grok ni procesamiento de la rama feature. No se observó un run reciente del workflow de dispatch; no se enviaron payloads ni se consultaron valores de secretos. La presencia actual de configuración de webhook queda **no verificada**, no declarada ausente.
+- En main, run Semgrep `45255115817` terminó FAILURE: 37 hallazgos bloqueantes en 1,236 archivos; la carga SARIF se omitió tras el fallo y el log disponible no expone el detalle por regla. Gitleaks `45255115860` terminó SUCCESS. El push de main `45255114848` terminó SUCCESS. No se reejecutó ningún workflow.
+
+### PRs, issues y datos operativos
+
+- PR #3 sigue OPEN/DRAFT, 704 archivos, `mergeable=false`; no se integra ni se modifica desde este run.
+- PR #15 sigue OPEN, `mergeable=true` pero `mergeable_state=unstable`; añade seis pruebas de coordenadas/DOI, pero no hay evidencia de ejecución de esas pruebas unitarias en su head. No se fusiona.
+- La auditoría de cuásares del 15-nov ya tiene artefacto de Groq en PR #13 y corrección narrativa abierta en PR #14. El issue #11 conserva etiqueta `hecho`; no se repite una auditoría ChatGPT donde el contrato del issue exige un auditor de modelo distinto.
+- El snapshot llamado `balances_6h.json` está fechado 14:01 CDMX, pero su base comparativa es 22-nov 13:50 (aprox. 24 h antes). No se interpreta como delta de seis horas. Totales leídos: YouTube 40,009 vistas / 1,240 likes / 28 comentarios; TikTok 38,892 vistas / 1,124 likes / 6 comentarios.
+- La verificación directa de Crossref/resolvedor no se pudo completar: los endpoints DOI devolvieron “not accessible” y la búsqueda no devolvió metadatos específicos. Los storyboards marcan fuente primaria verificada, pero eso no acredita la compuerta DOI/Crossref. No se promueve ninguno.
+
+### Resultado de este corte
+
+**EJECUTADO:** relectura de ramas, inventario, horarios, alineación, publicaciones, cola, salidas, bloqueados, workflow, Actions, PRs, issues y estructura de los dos storyboards; actualización de esta bitácora.
+
+**VERIFICADO:** no hay storyboard nuevo; ambos proyectos actuales siguen FAIL/82 y en conflicto de slot; no existe estado Grok individual; el trabajador no encontró entrada; no se generaron medios ni se promovió ningún paquete.
+
+**PENDIENTE:** revisión narrativa corregida por el autor en una nueva versión; resolución Crossref/DOI; decisión de slot tras reconciliar la alineación de main; confirmación de recepción/medios por Grok/Imaginantes. No se modifica `data/*.json`, main, estados Grok, secretos, permisos, medios ni programación.
