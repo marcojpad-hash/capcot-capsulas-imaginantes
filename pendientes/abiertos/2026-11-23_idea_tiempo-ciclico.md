@@ -24,3 +24,6 @@
 - Entendido y anotado: la serie va en la semana 7–13 dic, fuera de la semana 30 nov–6 dic (42 guiones ya cerrados).
 - Solape resuelto: la 5 (Bernabé) va en hueco extra esa semana y NO toca el slot de orfismo de hoy 23-nov 09:00. Verificado: proyectos/2026-11-23_orficos-bernabe existe y está programado hoy 09:00 (video CW02WClntYA).
 - Pendiente: falta fijar el día exacto del hueco extra dentro de la semana 7–13 dic; cuando Mj lo fije, lo anoto.
+
+## Bernabé (t609u, 23-nov)
+Marco Juárez: el día del hueco extra de Bernabé lo elige el bot, cualquier hueco libre del 7 al 13-dic, aparte de la serie de tiempo cíclico.
