@@ -45,7 +45,7 @@ La función `registro_editorial.registros()` reconcilia rotación, publicaciones
 - **Cálculo:** la configuración más compleja proyecta una caída 7.0 puntos porcentuales mayor que la configuración por defecto (12.8 − 5.8).
 - **Inferencia:** una representación demasiado simple de la red alimentaria puede subestimar el debilitamiento futuro de la exportación de carbono. Son proyecciones de modelo, no una medición de una caída observada hoy.
 - **Recomendación:** conservar como candidato posterior; requiere explicar con claridad la diferencia entre producción primaria, producción comunitaria y exportación de carbono.
-- **Estado de verificación:** página primaria del editor y DOI visibles en el resultado editorial; **PENDIENTE_RESOLVEDOR_CROSSREF** por fallo DNS.
+- **Estado de verificación:** texto completo de la página primaria PLOS consultado; DOI visible. **PENDIENTE_RESOLVEDOR_CROSSREF** por fallo DNS.
 
 ### 3. Lagos glaciares, clima y geometría de los glaciares
 
@@ -56,7 +56,7 @@ La función `registro_editorial.registros()` reconcilia rotación, publicaciones
 - **Cálculo:** el estudio atribuye 11 ± 7% de la pérdida de masa de los glaciares terminados en lagos a los lagos; clima explica 43 ± 10% y geometría glaciar 46 ± 10%.
 - **Inferencia:** el crecimiento de lagos importa, pero no es el impulsor dominante de la pérdida de masa en la comparación global del estudio.
 - **Recomendación:** candidato visual fuerte por mapas y barras regionales; conservar la distinción entre número, área, volumen y pérdida de masa.
-- **Estado de verificación:** página primaria del editor y DOI visibles; **PENDIENTE_RESOLVEDOR_CROSSREF** por fallo DNS.
+- **Estado de verificación:** resultado editorial indexado de Nature localizado; la apertura directa de la página completa no quedó disponible en esta sesión. Claims limitados al abstract indexado. **PENDING_SOURCE** para cualquier storyboard hasta lectura directa; resolver Crossref también pendiente por DNS.
 
 ### 4. Grafito de carga rápida mediante síntesis flash asistida por metales
 
@@ -82,7 +82,7 @@ Se consultaron las diez URL definidas en `scripts/tendencias.py` y Google Trends
 | UNAM Global | `https://unamglobal.unam.mx/feed/` | `curl: (6) Could not resolve host: unamglobal.unam.mx` |
 | Google Trends México | `https://trends.google.com/trending/rss?geo=MX` | `curl: (6) Could not resolve host: trends.google.com` |
 
-**Respaldo utilizado:** páginas editoriales primarias de PLOS Biology, Nature Communications y Nature Climate Change. PubMed se usó solo para identificar el registro bibliográfico del candidato de grafito, no como sustituto de la fuente primaria.
+**Respaldo utilizado:** texto completo de la fuente primaria PLOS Biology. Para Nature Communications y Nature Climate Change solo se consultaron resultados editoriales indexados; no se afirma lectura del texto completo y ambos candidatos quedan en **PENDING_SOURCE** para storyboard. PubMed se usó solo para identificar el registro bibliográfico del candidato de grafito, no como sustituto de la fuente primaria.
 
 ## Compuertas y decisión
 
