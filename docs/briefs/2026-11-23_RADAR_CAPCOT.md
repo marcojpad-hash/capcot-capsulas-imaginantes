@@ -180,3 +180,10 @@ Se reabrieron fuentes editoriales primarias para respaldar los candidatos ya lis
 - Nature Climate Change, *Climate and glacier geometry dominate global glacier–lake interactions*, publicado 20-nov-2026; DOI visible: `10.1038/s41558-026-02808-5`.
 
 El endpoint de Crossref y los resolutores `doi.org` no fueron accesibles en esta relectura; los cuatro DOI quedan `PENDIENTE_RESOLVEDOR` aunque la página primaria muestre el identificador. No se promovió ni se marcó un DOI como verificado por Crossref. El quinto candidato de esta fecha permanece `PENDING_MAP_COORDINATES`. No se creó otro storyboard: la parrilla registrada del 23 al 29-nov no ofrece un slot libre confirmado.
+
+
+## Corrección de ocupación de main — 23-nov-2026, 07:58 CDMX
+
+La tabla inicial de este radar indicaba que el slot 23:30 no aparecía ocupado en main. Esa observación quedó superada por la lectura posterior de main HEAD `20fa76409a620d909d690d3c04a87bb34f4b42c6` y de `data/tt_fb_alineacion_2026-11-23.json` (blob `3d44386a12298ee06b222ccabfaefb65fe61a6e8`): el registro de YouTube incluye Oso Wojtek a las 23:30. Por tanto, **supersequías 23:30 = CONFLICTO_DE_SLOT_ENTRE_RAMAS**, además de su FAIL narrativo y DOI/resolvedor pendiente. No está disponible para promoción.
+
+El mismo registro confirma Rosetta a las 13:30, que mantiene el conflicto con tropical. Main muestra ocho horarios distintos y diez video_id del día frente al límite documentado de cinco; se registra la discrepancia de capacidad sin intervenir en main ni en la programación. Todo procesamiento/ID preexistente bloquea redispatch. No se modificaron `data/*.json`, storyboards, estados Grok ni decisiones editoriales.
