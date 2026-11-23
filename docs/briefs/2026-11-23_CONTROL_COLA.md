@@ -455,7 +455,7 @@ Siguiente paso mínimo: reconciliar con Imaginantes/propietario el ID Oso de 23:
 
 ### Cambios posteriores al último corte
 
-- Rama operativa releída: `feature/capcot-video-discovery-continuity`, HEAD `94c0d04b4f708d7bddeb08d289ab9cf5476b8365`. El último commit de esta rama solo actualizó este control; no hay storyboard nuevo ni cambio narrativo posterior al QA registrado.
+- HEAD de partida de este corte: `94c0d04b4f708d7bddeb08d289ab9cf5476b8365`. Los tres commits posteriores de este run (`e320a9a`, `1b2fedb`, `567cd6f`) actualizaron únicamente este control; no hay storyboard nuevo ni cambio narrativo posterior al QA registrado.
 - `main` releído: HEAD `01877b8764f3bea11ba0aa7a1c61b9e0721afe2a`. El commit añadió el snapshot de `data/balances_6h.json` y `data/vistas_historico.json`; no modificó la política horaria ni los registros de publicación.
 - Política vigente en `main/data/horarios.json` desde 23-nov: ventanas activas 06:30–07:30 y 16:30–18:00; 23:30 es el slot fijo del dato del día. 13:00–14:30 permanece como prueba reversible; 19:00 no se programa sin autorización puntual.
 - `main/data/tt_fb_alineacion_2026-11-23.json` conserva diez IDs de YouTube distribuidos en ocho horas. Entre ellos están Rosetta a las 13:30 (`p5PM4xZfDyc`) y Oso a las 23:30 (`pTmQgkchC68`). `main/data/publicaciones.json` solo contiene tres registros del día (09:00, 11:00 y 17:00); la alineación es evidencia adicional de video_id/programación, no prueba de publicación terminada.
