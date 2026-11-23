@@ -651,3 +651,15 @@ En la rotación main, ``art_deco_poster`` aparece el 17 y 19-nov (repetición re
 - Este control: addendum de cierre, con scores y estados cotejados contra JSON releídos.
 
 No se promovió ni redispatchó contenido. No se dispararon workflows ni se enviaron payloads. No se generaron imágenes, frames, voz, audio, video ni renders; no se publicó, no se consumieron créditos, no se modificaron ``data/*.json``, main, secretos, permisos ni workflows.
+
+
+## Reconciliación de resubidas y etiquetas de IA — 22-nov-2026, 20:02 CDMX
+
+**Fuentes de solo lectura en `main`:** `data/resubidas_2026-11-21.json`, `data/resubidas_2026-11-21/upload_resultado.json`, `data/tt_fb_alineacion_2026-11-22.json`, `data/publicaciones.json`, `data/vistas_historico.json` y `data/miniaturas_auditoria_2026-11-21.json`. No se modificó ningún `data/*.json`.
+
+- **Cleopatra ES — riesgo de etiqueta IA antes del horario registrado.** El nuevo YouTube ID `I8n_5nnUlbI` figura `private` con `publishAt=2026-11-23T03:00:00Z`, equivalente a **22-nov 21:00 CDMX**. TikTok `7710997085197192466` y Facebook `1473122701620334` también figuran programados a las 21:00. El snapshot marca `tt_etiqueta_ia=true`, pero `fb_etiqueta_ia=false`; para YouTube, `containsSyntheticMedia` aparece `null` en el resultado de carga y el registro mantiene pendiente la confirmación en Studio de «Uso de IA = Sí». **Riesgo: etiquetado de IA inconsistente entre plataformas**. No se cambió programación, privacidad ni etiquetas. El original inglés `m8VAsrbfsbE` sigue público y sin cambios.
+- **Oxoboranos ES.** `B-75KkHAVDo` tenía `publishAt=2026-11-22T20:30:00Z` (14:30 CDMX), hora ya transcurrida al corte. El snapshot de carga conserva `privacyStatus=private`; `vistas_historico.json` no contiene ese ID y no hay una lectura posterior a la hora programada. Estado correcto: `ESTADO_POST_PUBLICACION_NO_VERIFICADO`; no afirmar que se publicó ni que falló.
+- **Rosetta — conflicto de biodiversidad confirmado.** YouTube `p5PM4xZfDyc` figura programado para `2026-11-23T19:30:00Z` (**13:30 CDMX**). Confirma el conflicto con `2026-11-23_tropical-biodiversity-turnover`, cuyo `slot_local=13:30`. Se mantiene `CONFLICTO_DE_SLOT_ENTRE_RAMAS`; no promover ni redispatchar.
+- **Corrección de estado de fuentes del proyecto de biodiversidad.** La relectura del JSON muestra `SRC-001` y `SRC-002` como `VERIFICADO_FUENTE_PRIMARIA`; `SRC-001` tiene URL editorial verificada pero `doi_verification_status=PENDIENTE_RESOLVEDOR`; `SRC-002` tiene DOI visible/verificado en la página editorial de Biogeosciences y solo aporta un localizador regional, no coordenadas de parcelas. La mención previa `SRC-002=PENDING_SOURCE` no describe el estado actual de esa fuente. La compuerta DOI pendiente corresponde a `SRC-001`; no se ejecutó `--check-doi` ni se acreditó Crossref en este corte.
+
+No se consultaron ni alteraron secretos. No se publicaron, cancelaron, reprogramaron ni editaron etiquetas; se deja la verificación manual de Studio como acción pendiente de la cuenta propietaria.
