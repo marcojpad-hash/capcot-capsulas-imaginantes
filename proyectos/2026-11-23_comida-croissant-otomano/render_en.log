@@ -1,9 +1,7 @@
-scene_001: voz 7.2s, escena 8.0s
-scene_002: voz 10.3s, escena 11.1s
-scene_003: voz 6.9s, escena 7.8s
-scene_004: voz 7.6s, escena 8.4s
-scene_005: voz 8.2s, escena 9.1s
-scene_006: voz 7.8s, escena 8.6s
-OK /workspace/capcot_main/proyectos/2026-11-23_comida-croissant-otomano/capsula_en.mp4 duración 57.90s
-reintento TTS 1 'The modern croissant developed in France from Central Europ NoAudioReceived
-ERROR: duración fuera de 60-120 s
+scene_001: voz 7.8s, escena 8.7s
+scene_002: voz 11.3s, escena 12.2s
+scene_003: voz 7.6s, escena 8.5s
+scene_004: voz 8.2s, escena 9.1s
+scene_005: voz 9.1s, escena 10.0s
+scene_006: voz 8.6s, escena 9.5s
+OK /workspace/capcot_main/proyectos/2026-11-23_comida-croissant-otomano/capsula_en.mp4 duración 63.02s

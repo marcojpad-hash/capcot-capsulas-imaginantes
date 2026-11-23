@@ -10,4 +10,7 @@ async def _tts_one(*a, **k):
             if t == 5: raise
             print('reintento TTS', t + 1, repr(a[0])[:60], type(e).__name__, file=sys.stderr); await asyncio.sleep(3 + 3 * t)
 mc._tts_one = _tts_one
+import os
+_x=float(os.environ.get('PAUSA_EXTRA','0'))
+if _x: mc.PAUSAS={k:v+_x for k,v in mc.PAUSAS.items()}  # pausas entre frases algo mayores (EN)
 mc.main()

@@ -17,9 +17,10 @@
  "voice": {
   "engine": "edge-tts",
   "voice_id": "en-US-AndrewNeural",
-  "rate": "+5%",
+  "rate": "-10%",
   "pitch": "-2Hz",
-  "pad_seconds": 0.6,
+  "pausa_extra": 0.2,
+  "pad_seconds": 0.7,
   "modo_pausas": "continuo"
  },
  "audio": {
@@ -200,7 +201,7 @@
   }
  ],
  "cortinilla_fuentes": {
-  "duration_seconds": 5,
+  "duration_seconds": 6,
   "titulo": "Sources",
   "aviso": "Images: public domain or free license (Wikimedia Commons). Synthetic AI voice (IA). Synthesized audio.",
   "firma": "Datos y ociosidades · @datosyociosidadesEN",

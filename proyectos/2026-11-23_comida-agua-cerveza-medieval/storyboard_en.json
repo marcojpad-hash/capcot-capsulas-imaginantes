@@ -17,9 +17,10 @@
  "voice": {
   "engine": "edge-tts",
   "voice_id": "en-US-AndrewNeural",
-  "rate": "+5%",
+  "rate": "-7%",
   "pitch": "-2Hz",
-  "pad_seconds": 0.7,
+  "pausa_extra": 0.15,
+  "pad_seconds": 0.65,
   "modo_pausas": "continuo"
  },
  "audio": {
@@ -163,14 +164,14 @@
     "SRC-002",
     "SRC-003"
    ],
-   "image_credit": "Herttel Pyrprew, Mendel Band I (1425), Seite 20v. Unknown authorUnknown author, Public domain. Wikimedia Commons · original: Stadtbibliothek Nürnberg (Hausbücher der Nürnberger Zwölfbrüderstiftungen). https://commons.wikimedia.org/wiki/File:Herttel_Pyrprew,_Mendel_Band_I_(1425),_Seite_20v.jpg",
+   "image_credit": "Herttel Pyrprew, Mendel Band I (1425), Seite 20v. autor desconocido, Public domain. Wikimedia Commons · original: Stadtbibliothek Nürnberg (Hausbücher der Nürnberger Zwölfbrüderstiftungen). https://commons.wikimedia.org/wiki/File:Herttel_Pyrprew,_Mendel_Band_I_(1425),_Seite_20v.jpg",
    "visual_description": "File:Herttel Pyrprew, Mendel Band I (1425), Seite 20v.jpg"
   },
   {
    "id": "scene_006",
    "arc": "reflexion_o_pregunta",
    "duration_seconds": 10,
-   "narration": "So no: medieval Europeans did not live on beer alone. They drank water when they could get it from sources considered safe, and they also had fermented drinks.",
+   "narration": "So no: medieval Europeans did not live on beer alone. They drank water when they could get it from sources considered safe, and they also consumed fermented drinks.",
    "on_screen_text": "Water from safe sources",
    "asset_filename": "frames/scene_006.jpg",
    "sfx": [
@@ -186,7 +187,7 @@
   }
  ],
  "cortinilla_fuentes": {
-  "duration_seconds": 5,
+  "duration_seconds": 6,
   "titulo": "Sources",
   "aviso": "Images: public domain or free license (Wikimedia Commons). Synthetic AI voice (IA). Synthesized audio.",
   "firma": "Datos y ociosidades · @datosyociosidadesEN",

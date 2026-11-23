@@ -57,10 +57,10 @@ def storyboard(s,out,cred,lang):
     return {'project_id':pid+('_en' if en else ''),'serie':'Comida: mito vs dato','numero_lista':s['n'],'title':title,'titulo':title,'language':'en-US' if en else 'es-MX',
         'aspect_ratio':'9:16','target_duration_seconds':88,'estilo_id':'foto_commons','estilo_visual':'obras y fotografías de dominio público o licencia libre (Wikimedia Commons)',
         'proveedor_imagenes':'Wikimedia Commons (dominio público o CC; archivo original citado en creditos_imagenes.json)','parece_real':True,'keywords':[s['slug']],
-        'voice':({'engine':'edge-tts','voice_id':'en-US-AndrewNeural','rate':'+5%','pitch':'-2Hz'} if en else {'engine':'edge-tts','voice_id':'es-MX-JorgeNeural','rate':'+7%','pitch':'-2Hz'})|{'pad_seconds':s.get('pad',0.6),'modo_pausas':'continuo'},
+        'voice':({'engine':'edge-tts','voice_id':'en-US-AndrewNeural','rate':s.get('en_rate','+5%'),'pitch':'-2Hz','pausa_extra':s.get('en_extra',0),'pad_seconds':s.get('en_pad',0.6)} if en else {'engine':'edge-tts','voice_id':'es-MX-JorgeNeural','rate':'+7%','pitch':'-2Hz'})|({} if en else {'pad_seconds':s.get('pad',0.6)})|{'modo_pausas':'continuo'},
         'audio':{'music_asset':'sintetico:'+s['cama'],'cama_musical':s['cama'],'music_bpm':s['bpm'],'music_lufs':-27,'ambiente_lufs':-30},
         'canal':{'nombre':'Datos y ociosidades','handle':'@datosyociosidadesEN' if en else '@datosyociosidades'},'sources':s['sources'],'scenes':scenes,
-        'cortinilla_fuentes':{'duration_seconds':s.get('cortinilla_s',5),'titulo':'Sources' if en else 'Fuentes',
+        'cortinilla_fuentes':{'duration_seconds':(s.get('en_cort',5) if en else s.get('cortinilla_s',5)),'titulo':'Sources' if en else 'Fuentes',
             'aviso':('Images: public domain or free license (Wikimedia Commons). Synthetic AI voice (IA). Synthesized audio.' if en else 'Imágenes de dominio público o con licencia libre (Wikimedia Commons). Voz sintética (IA). Audio sintetizado.'),
             'firma':'Datos y ociosidades · '+('@datosyociosidadesEN' if en else '@datosyociosidades'),'bg_rgb':[18,16,14]},
         'export':{'filename':'capsula_en.mp4' if en else 'capsula.mp4','resolution':'1080x1920','fps':30,'loudness_lufs':-14,'plano_seconds':4.0,'subtitle_max_words':3},
@@ -68,7 +68,8 @@ def storyboard(s,out,cred,lang):
 def render(out,lang):
     sbf=out+('/storyboard_en.json' if lang=='en' else '/storyboard.json'); mp4=out+('/capsula_en.mp4' if lang=='en' else '/capsula.mp4')
     lic=out+'/licencias.json'; keep=open(lic).read() if (lang=='en' and os.path.exists(lic)) else None
-    r=subprocess.run(['python3',os.path.dirname(os.path.abspath(__file__))+'/montar_reintentos.py',sbf,'-o',mp4],capture_output=True,text=True)
+    px=str(json.load(open(sbf))['voice'].get('pausa_extra',0))
+    r=subprocess.run(['python3',os.path.dirname(os.path.abspath(__file__))+'/montar_reintentos.py',sbf,'-o',mp4],capture_output=True,text=True,env=os.environ|{'PAUSA_EXTRA':px})
     open(out+f'/render_{lang}.log','w').write(r.stdout+r.stderr[-3000:])
     if lang=='en':
         shutil.move(lic,out+'/licencias_en.json')

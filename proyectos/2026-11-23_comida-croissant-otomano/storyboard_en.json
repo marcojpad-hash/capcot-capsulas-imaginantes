@@ -17,9 +17,10 @@
  "voice": {
   "engine": "edge-tts",
   "voice_id": "en-US-AndrewNeural",
-  "rate": "+5%",
+  "rate": "-4%",
   "pitch": "-2Hz",
-  "pad_seconds": 0.6,
+  "pausa_extra": 0.12,
+  "pad_seconds": 0.65,
   "modo_pausas": "continuo"
  },
  "audio": {
@@ -134,7 +135,7 @@
     "SRC-001",
     "SRC-002"
    ],
-   "image_credit": "Boulangerie de Paris, XIXe siècle, NJ9828(3). Unknown authorUnknown author, CC0. Wikimedia Commons · original: Paris Musées. https://commons.wikimedia.org/wiki/File:Boulangerie_de_Paris,_XIXe_si%C3%A8cle,_NJ9828(3).jpg",
+   "image_credit": "Boulangerie de Paris, XIXe siècle, NJ9828(3). autor desconocido, CC0. Wikimedia Commons · original: Paris Musées. https://commons.wikimedia.org/wiki/File:Boulangerie_de_Paris,_XIXe_si%C3%A8cle,_NJ9828(3).jpg",
    "visual_description": "File:Boulangerie de Paris, XIXe siècle, NJ9828(3).jpg",
    "capa": {
     "tipo": "mapa",

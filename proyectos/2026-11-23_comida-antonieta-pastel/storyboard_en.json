@@ -17,9 +17,10 @@
  "voice": {
   "engine": "edge-tts",
   "voice_id": "en-US-AndrewNeural",
-  "rate": "+5%",
+  "rate": "-1%",
   "pitch": "-2Hz",
-  "pad_seconds": 0.6,
+  "pausa_extra": 0.12,
+  "pad_seconds": 0.65,
   "modo_pausas": "continuo"
  },
  "audio": {
@@ -161,7 +162,7 @@
     "SRC-001",
     "SRC-002"
    ],
-   "image_credit": "Exécution de Marie Antoinette le 16 octobre 1793. Unknown authorUnknown author, Public domain. Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Ex%C3%A9cution_de_Marie_Antoinette_le_16_octobre_1793.jpg",
+   "image_credit": "Exécution de Marie Antoinette le 16 octobre 1793. autor desconocido, Public domain. Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Ex%C3%A9cution_de_Marie_Antoinette_le_16_octobre_1793.jpg",
    "visual_description": "File:Exécution de Marie Antoinette le 16 octobre 1793.jpg"
   },
   {

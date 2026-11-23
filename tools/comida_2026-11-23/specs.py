@@ -69,7 +69,7 @@ SPECS['agua']=S(42,'agua-cerveza-medieval','tambor',90,'In the Middle Ages, did 
   'But that does not mean people avoided water altogether. Medieval documents show that water was consumed in many contexts.',
   'In places like Ypres, in present-day Belgium, there were networks of reservoirs, pipes and cisterns. The authorities regulated access to water.',
   'Beer and wine were common drinks in many regions, but they were not the only option. Access to water depended on the city and the period.',
-  'So no: medieval Europeans did not live on beer alone. They drank water when they could get it from sources considered safe, and they also had fermented drinks.'],
+  'So no: medieval Europeans did not live on beer alone. They drank water when they could get it from sources considered safe, and they also consumed fermented drinks.'],
  ['','Fuentes contaminadas','El agua sí se bebía','Ypres: depósitos y tuberías','Cerveza y vino, no la única opción','Agua de fuentes seguras'],
  ['','Contaminated sources','Water was drunk','Ypres: reservoirs and pipes','Beer and wine, not the only option','Water from safe sources'],
  ['File:Sir Geoffrey Luttrell at table - Luttrell Psalter (c.1325-1335), f.208 - BL Add MS 42130.jpg','File:Woman drawing water from a well, from the manuscript De Universo or "De rerum naturis", Monte Cassino MS Casin 132.jpg',
@@ -80,3 +80,6 @@ SPECS['agua']=S(42,'agua-cerveza-medieval','tambor',90,'In the Middle Ages, did 
   2:dict(tipo='dato',valor='Agua',valor_en='Water',etiqueta='consumida en muchos contextos',etiqueta_en='consumed in many contexts',fuente='Wellcome Collection · New Histories (Sheffield)')})
 SPECS['agua']['pad']=0.7; SPECS['agua']['cortinilla_s']=6  # sin añadir texto: pausa entre escenas 0.7 s y cortinilla de 6 s (máx. permitido) para no quedar <60 s
 SPECS['croissant']['cama']='pulso'  # la última cápsula del registro de rotación usó pizzicato
+# EN rehecho (Mj pt606u): misma duración que ES (±1 s) bajando velocidad y abriendo pausas, sin añadir texto
+for _k,_r,_x,_p,_c in [('antonieta','-1%',0.12,0.65,5),('croissant','-4%',0.12,0.65,5),('agua','-7%',0.15,0.65,6),('fortuna','-10%',0.2,0.7,6)]:
+    SPECS[_k].update(en_rate=_r, en_extra=_x, en_pad=_p, en_cort=_c)

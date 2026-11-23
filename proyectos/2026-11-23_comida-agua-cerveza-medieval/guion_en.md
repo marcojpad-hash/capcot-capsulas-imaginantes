@@ -16,7 +16,7 @@ In places like Ypres, in present-day Belgium, there were networks of reservoirs,
 Beer and wine were common drinks in many regions, but they were not the only option. Access to water depended on the city and the period.
 
 **Water from safe sources**
-So no: medieval Europeans did not live on beer alone. They drank water when they could get it from sources considered safe, and they also had fermented drinks.
+So no: medieval Europeans did not live on beer alone. They drank water when they could get it from sources considered safe, and they also consumed fermented drinks.
 
 ## Fuentes
 - Wellcome Collection, The Vilest of All Beverages https://wellcomecollection.org/stories/the-vilest-of-all-beverages

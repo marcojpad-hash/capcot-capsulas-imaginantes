@@ -1,8 +1,8 @@
 [
  {
   "check": "duracion_>=60_<=120",
-  "ok": false,
-  "detalle": "57.90s (objetivo 88)"
+  "ok": true,
+  "detalle": "63.02s (objetivo 88)"
  },
  {
   "check": "resolucion_1080x1920",
@@ -47,7 +47,7 @@
  {
   "check": "sin_huecos_voz_<=0.9s",
   "ok": true,
-  "detalle": "hueco máx 0.79s"
+  "detalle": "hueco máx 0.84s"
  },
  {
   "check": "subs_cobertura_>=99%",
