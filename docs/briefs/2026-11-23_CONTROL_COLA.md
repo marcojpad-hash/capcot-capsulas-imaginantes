@@ -320,3 +320,12 @@ No hay evidencia de un dispatch de Grok en la ventana reciente de Actions. Con `
 - PR #3 continúa OPEN/DRAFT y no mergeable, con base `main`; su diff todavía contiene cambios a `data/*.json`, que siguen fuera de alcance de escritura. No se integró ni se modificó.
 - El último run de Actions visible en la rama feature sigue siendo la validación estructural Kuroshio `45075532329` (SUCCESS) sobre un commit anterior; no valida estos cambios de documentación ni acredita DOI. No apareció un run de `capcot-grok-dispatch.yml`; no hubo dispatch.
 - No se abrió/cerró/actualizó ningún PR, no se dispararon workflows y no se leyeron secretos.
+
+
+## Revisión adicional de rotación de end screens en main — 2026-11-23, 08:07 CDMX
+
+Main avanzó a `b85fcb0e117955def516790393a989d7d78cc93b`; el commit modificó únicamente `data/endscreens_rotacion.json` (blob `c985d2f509b6e55f2004a824c488d609fc2646de`). No cambió `publicaciones.json` ni la alineación horaria ya auditada.
+
+- El snapshot `snapshot_2026-11-23_08` y la propuesta correspondiente están guardados, pero `pendiente_studio=true` y la propuesta tiene estado `pendiente_studio`: no prueban que Studio haya aplicado el cambio.
+- **DISCREPANCIA DE REGISTRO:** el campo `motivo` afirma que el video `5XQfUHpyTWs` tiene 46 vistas y carece de pantalla final; el snapshot del mismo archivo registra 989 vistas para ese ID y `aplicado_studio` lo marca como aplicado el 28-oct-2026 hacia `5D96DmjvioU`. No se corrige `data/*.json`; queda como discrepancia de metadatos que requiere verificación en Studio.
+- No afecta los ocho horarios del día ya contabilizados. No se cambió main, el JSON ni la propuesta; no se ejecutó ninguna acción en Studio.
