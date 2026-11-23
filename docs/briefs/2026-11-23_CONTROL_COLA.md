@@ -400,3 +400,18 @@ La política activa de main desde 23-nov fija 06:30–07:30 y 16:30–18:00, con
 - El árbol no contiene un archivo dedicado `historial_youtube`; la auditoría usa `data/publicaciones.json`, snapshots de programación/miniaturas, `data/vistas_historico.json` y cierres diarios.
 
 **Decisión:** conservar main como autoridad de ocupación, mantener los dos borradores en `proyectos/` como **NOT_DISPATCHABLE**, no copiar datos entre ramas y no modificar `data/*.json`, main, cola, estados Grok, secretos ni programación externa.
+
+## Corrección de ocupación main para el slot 23:30 — 2026-11-23, revalidación posterior
+
+La atribución anterior de **Oso Wojtek en main a las 23:30 del 23-nov** no se pudo reproducir y queda **RETIRADA COMO CONFLICTO_VERIFICADO**. Se conserva el antecedente histórico, pero esta lectura de las fuentes actuales lo supersede:
+
+- `main/data/publicaciones.json` (blob `774e3b7022c910d5b1b1d3f86a4590df0ee5847d`): los registros con slot 23:30 corresponden a `2026-11-21_colon-no-llamo-america`, YT `RwTTwSNGm10`, publicado/programado el 21-nov 23:30 CDMX. No hay registro del 23-nov a las 23:30. Los tres registros del 23-nov siguen siendo 09:00, 11:00 y 17:00.
+- `main/data/miniaturas_auditoria_2026-11-21.json` (blob `afc0a587025534eb5a338169383171bb0f38254c`): confirma Rosetta `p5PM4xZfDyc` a las 13:30 del 23-nov; su entrada a 23:30 corresponde a otro día.
+- `main/data/horarios.json` (blob `2261993d542de445df23e0abbe63bca9b54c2ff1`): mantiene 23:30 como slot fijo del dato, pero no asigna allí un proyecto por nombre.
+- El árbol recursivo actual de main no contiene rutas con `Oso` ni `Wojtek`. El único texto “El oso que aprendió a no morir” hallado en publicaciones es un placeholder antiguo del tardígrado, fechado 25-oct, sin slot 23-nov.
+
+**Clasificación corregida:**
+- `2026-11-23_supersequias-722-eventos`, 23:30: **no hay CONFLICTO_DE_SLOT_ENTRE_RAMAS verificable en main**. Permanece asignado en feature y **NOT_DISPATCHABLE** por QA FAIL/82, DOI pendiente de resolvedor, cifra 139/234 aún `PENDING_SOURCE` y `RECEPCION_GROK_NO_CONFIRMADA`.
+- `2026-11-23_tropical-biodiversity-turnover`, 13:30: conserva **CONFLICTO_DE_SLOT_ENTRE_RAMAS** con Rosetta `p5PM4xZfDyc`; además 13:00–14:30 es ventana de prueba, no ventana activa de la política main del 23-nov.
+
+No se modificó main ni `data/*.json`; no se canceló ni reprogramó ningún contenido. No se promovió ni redispatchó el borrador de supersequías.
