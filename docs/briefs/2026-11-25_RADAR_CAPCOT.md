@@ -107,3 +107,12 @@ Las programaciones provienen de `main/data/miniaturas_auditoria_2026-11-21.json`
 - **Cola / Grok:** sin entradas nuevas; no se creó ni modificó `cola/estado`.
 - **Medios:** no se generaron imágenes, frames, voz, audio, video, renders ni placeholders.
 - **Estado de producción:** `approved_assets=[]`, `export.render_status=NOT_GENERATED`; no se creó ningún campo de ruta o nombre de asset.
+
+
+## 6. Huellas de evidencia del corte
+
+- HEAD de main consultado: `c371aec46595b092d0b4d2f74ac38670e8897754` — cierre del día 22-nov, 23-nov 05:22 UTC.
+- `main/data/miniaturas_auditoria_2026-11-21.json`: SHA `afc0a587025534eb5a338169383171bb0f38254c`.
+- `main/data/rehechos_2026-11-22.json`: SHA `902a92411a516df4a3bf1046d8fec3ce1ee888c9`.
+- `main/data/publicaciones.json`: SHA `9acb10035cb0d375635ec7481527d60af648ea8f`.
+- `feature/scripts/rotacion.py`: SHA `f3e529e49cf825bdecc62a1d4669e5c59c6c28c3` (`MAX_POR_DIA=5`).
