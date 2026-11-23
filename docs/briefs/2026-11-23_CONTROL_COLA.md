@@ -626,3 +626,8 @@ Identidad y fuentes:
 - `temas_del_dia.json` y `estilos_usados.json`: último corte 28-oct; `rotacion.json` y `tendencias_estilos.json`: 31-oct; `publicaciones.json` de feature: 31-oct; `horarios.json`: 9-nov; `vistas_historico.json`: 27-oct; `balances_6h.json`: 28-oct; reprogramación: 1–3 nov; `horario_semana_2026-11-01_07.json`: solo 1–7 nov. `endscreens_rotacion.json` sí tuvo actualización 23-nov 09:40. `data/cola.json` solo conserva el error histórico de Pardelas del 31-oct.
 - No hay runtime local en esta ejecución: revisión estática de estructura/código y lectura de resultados CI existentes. No se ejecutaron helpers localmente. No se revisaron APIs externas porque no apareció un cambio oficial nuevo sustentado.
 - No se promovió ningún proyecto, no se movieron copias, no se disparó workflow, no se enviaron payloads, no se modificó `data/*.json`, main, secretos, permisos ni decisiones editoriales. No se generaron medios ni se consumieron créditos.
+
+
+### Confirmación exhaustiva de estado Grok
+
+La relectura del árbol completo en HEAD `6577868ea826703fa512a2831e5e5ee7c19c6c79` confirma que **no existe ningún path bajo `cola/estado/`** y que `handoffs/grok_done/` solo contiene `.gitkeep`. Por tanto, los 15 IDs de la tabla 18–23 nov, los 12 IDs del lote 5–7 nov y el paquete histórico del robot quedan con **RECEPCION_GROK_NO_CONFIRMADA**. El único marker de `handoffs/grok_inbox/` es el del robot, con `status=pending`; prueba escritura del marker, no lectura por Grok. No se creó ni modificó ningún estado.
