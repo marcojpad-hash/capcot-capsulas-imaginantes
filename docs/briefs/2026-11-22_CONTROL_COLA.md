@@ -688,3 +688,34 @@ La reconciliación de main mantiene ocupados los slots regulares del 23–28-nov
 - En la rama de trabajo, el run Semgrep `45048155842` terminó `failure` con `Process completed with exit code 1.`; Gitleaks `45048155922` terminó `success`; el trabajador `45050940152` terminó `success`, pero su log dice literalmente `[trabajador] sin trabajo en cola.`.
 
 No se editó PR #15, no se dispararon workflows, no se hizo merge ni se modificó main. La corrección mínima pendiente del test es aceptar/validar el argumento `context` del constructor simulado y ejecutar la suite en un runner autorizado.
+
+## Reconsulta de RSS/Trends y publicaciones post-hora — 22-nov-2026, 22:01 CDMX
+
+### RSS científicos y respaldo de Trends
+
+Se reintentó la lectura de los diez endpoints declarados en `scripts/tendencias.py` mediante el navegador de esta sesión. Los errores exactos fueron:
+
+- ScienceDaily science, health y space: `400 Unsupported content-type: application/xml`.
+- Phys.org: `400 Unsupported content-type: text/xml`.
+- NASA News Release: `400 Unsupported content-type: application/rss+xml`.
+- ESA Space Science: `404 Not Found`.
+- Nature RSS: `400 Unsupported content-type: application/rss+xml`.
+- EurekAlert y SINC: `URL ... is not accessible via this tool`.
+- UNAM Global: `400 Unsupported content-type: application/rss+xml`.
+
+Google Trends RSS México devolvió `URL https://trends.google.com/trending/rss?geo=MX is not accessible via this tool`. Se usó como respaldo la página oficial Trending Now México: https://trends.google.com/trending?geo=MX&hl=es-419. El resultado expuso 258 tendencias; entre las señales no deportivas aparecen «desierto de Atacama» (1K+, activa hace 8 h), «superluna» (2K+, activa hace 13 h), «folclore» (20K+, activa hace 21 h) y «mercado navideño» (20K+, activa hace 23 h). La mayoría de las primeras posiciones corresponde a deportes y entretenimiento; ninguna tendencia aporta por sí sola una afirmación científica ni una fuente primaria.
+
+La página oficial de NASA Science para el 22-nov-2026 enumera el APOD «Swirls and Colors on Jupiter from Juno» y la pieza conmemorativa «65 Years of Human Spaceflight at NASA Johnson». No se encontró en ese corte una noticia/hallazgo científico publicado el mismo día con fuente primaria apta para el slot 23:30. APOD y aniversario no se convierten en hallazgo nuevo. Resultado: `PENDING_SOURCE`; no se creó storyboard adicional ni se adelantó una noticia.
+
+### Reconciliación después de los horarios programados
+
+A las 22:01 CDMX ya habían transcurrido los horarios de Oxoboranos (14:30) y Cleopatra (21:00). La evidencia disponible sigue siendo de programación/subida previa, no una lectura posterior a la hora:
+
+- YouTube Oxoboranos `B-75KkHAVDo`: `main/data/resubidas_2026-11-21.json` y su `upload_resultado.json` conservan `privacyStatus=private` y `publishAt=2026-11-22T20:30:00Z`. No se obtuvo lectura de Studio/API posterior a las 14:30.
+- YouTube Cleopatra `I8n_5nnUlbI`: el registro de subida conserva `privacyStatus=private`, `publishAt=2026-11-23T03:00:00Z` y `containsSyntheticMedia=null`. No se obtuvo lectura de Studio/API posterior a las 21:00.
+- TikTok Cleopatra `7710997085197192466` y Facebook `1473122701620334` figuran programados a las 21:00 en `main/data/tt_fb_alineacion_2026-11-22.json`; la etiqueta IA figura activa en TikTok y desactivada en Facebook. No hay lectura post-hora de ambas plataformas.
+- `main/data/publicaciones.json` conserva el registro de Cleopatra con `publishAt`, pero no prueba estado público actual. No se encontró el ID `B-75KkHAVDo` entre sus 52 registros; queda discrepancia entre el registro de resubida y el índice central de publicaciones.
+
+Los intentos de búsqueda pública por los IDs no devolvieron resultados indexados; esto tampoco demuestra que no se hayan publicado. Estado para ambos paquetes: `PUBLICACION_POST_HORA_NO_VERIFICADA`. No se cambió privacidad, etiqueta de IA, programación ni registro de publicación. No se creó ni modificó estado Grok, no se redispatchó, no se publicó y no se consumieron créditos.
+
+Este corte es una auditoría documental posterior al horario; la verificación definitiva requiere una lectura post-hora en Studio/API por el titular. No se atribuye a esta sesión una confirmación de publicación.
