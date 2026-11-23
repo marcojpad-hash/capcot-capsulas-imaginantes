@@ -91,3 +91,15 @@ Ninguno de los dos comandos incluyó `--check-doi`. Estos runs confirman la vali
 - El comando **no** incluyó `--check-doi`; no acredita Crossref. El DOI `10.1038/s41561-026-02139-2` permanece `PENDIENTE_RESOLVEDOR` y bloquea la promoción.
 - `cola/estado/2026-11-18_dato-kuroshio-puente-atmosferico.json` sigue sin existir: `RECEPCION_GROK_NO_CONFIRMADA`.
 - Estado conservado: `BORRADOR_EN_PROYECTOS_NO_APTO_PARA_PROMOCION`. No copiar a cola ni emitir handoff.
+
+
+## Reejecución CI posterior observada — run #45075532329
+
+- Fecha de ejecución: `2026-11-22T22:03:34Z`.
+- Commit validado: `25e1ecfc96faf9a40f86a9feb0e30af90d9d608b`.
+- Job: `137371796752`.
+- Comando estructural exacto: `python scripts/validar_storyboard.py proyectos/2026-11-18_dato-kuroshio-puente-atmosferico/storyboard.json`.
+- Resultado literal: `OK`.
+- Comprobación adicional del mismo job: `approved_assets=[]`, `export.render_status=NOT_GENERATED`; salida literal: `Expediente textual íntegro; medios no generados; publicación no autorizada.`
+- El run **no ejecutó `--check-doi`**. Por tanto, no acredita Crossref ni resolución DOI; el bloqueo DOI permanece.
+- Es una reejecución del mismo commit/archivos ya validados en el run #44951621909; no cambia el estado editorial ni autoriza promoción.
