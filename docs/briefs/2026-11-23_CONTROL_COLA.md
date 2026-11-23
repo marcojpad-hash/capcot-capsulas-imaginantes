@@ -287,3 +287,15 @@ Los radars 24 y 25 ya registran el cupo lleno; el snapshot también muestra ocup
 La relectura de RSS y Google Trends, con errores exactos y respaldo editorial primario, quedó añadida al radar 23-nov (commit `be49b2e3bb2124a7b4fdb942b0724724886ad831`). Google Trends HTML mostró 274 tendencias, 25 visibles; no se encontró tema científico/natural utilizable en esa primera página. Cuatro páginas primarias recientes (PLOS Biology, Nature Astronomy, Nature Communications y Nature Climate Change) mostraron sus DOI, pero Crossref y `doi.org` no fueron accesibles; los cuatro permanecen `PENDIENTE_RESOLVEDOR`. No se asignó candidato a un slot.
 
 **Resultado del corte:** QA y recepción revalidados; marea corregido a FAIL82 sin tocar narración; auditor de snapshots corregido y probado por lectura de vuelta; ningún proyecto actual es promocionable; ningún workflow ni publicación se ejecutó.
+
+
+## CI y asignaciones reconsultadas — 23-nov-2026, 06:23 CDMX
+
+- Semgrep de **main**, run `45117327158`, commit `c371aec`: FAILURE, 361 reglas sobre 1.103 archivos, **34 findings**. El paso de carga SARIF quedó `skipped`; el log no expone el detalle de reglas/ubicaciones y no se atribuyen esos hallazgos a la rama feature. Gitleaks de ese commit: SUCCESS (`45117327157`). No se modificó main.
+- Worker de cola main, run `45126580443`: SUCCESS; salida literal `[trabajador] sin trabajo en cola.`. Callback, run `45142865312`: SUCCESS; no se encontraron Issues abiertos con etiqueta `callback`. No se disparó manualmente ninguno de los workflows.
+- CodeQL de la rama feature: SUCCESS en los commits `3984468`, `28e10cb`, `39e6566`, `be49b2e` y `13b4faf`. La suite de tests de CAPCOT no se ejecutó en este corte; el workflow semanal de descubrimiento está programado para el lunes 14:30 UTC y no se adelantó.
+- `ajustes_entre_modelos/LEDGER_ASIGNACIONES.md` conserva `CUASARES-AUDITORIA` en cola para auditor distinto de ChatGPT, `GROK-RECEPCION` bloqueado y `MIGRACION-ACUSE` pendiente.
+- Issue #11 sigue OPEN con etiqueta `hecho`, sin assignee; PR #13 sigue OPEN. El informe de PR #13 inspecciona el storyboard completo, no solo la narración concatenada. El JSON vigente conserva `narrative_qa=FAIL/0`, `review_basis=lectura_en_frio_solo_narracion` y `critical_flags=[REVISION_INDEPENDIENTE_AUSENTE]`. No se cerró el Issue ni se cambió la etiqueta.
+- El tablero `ajustes_entre_modelos/DELEGACIONES.md` conserva pendientes antiguos de Mpemba, Barreleye, seguridad, cuenta Clayzo y backlog inglés. El callback no creó Issues nuevos; no se duplicó ni se reasignó trabajo.
+
+No hay evidencia de un dispatch de Grok en la ventana reciente de Actions. Con `cola/entrada/` sin JSON plano, el selector no tiene paquete que despachar. No se leyeron secretos ni se escribieron estados Grok.
