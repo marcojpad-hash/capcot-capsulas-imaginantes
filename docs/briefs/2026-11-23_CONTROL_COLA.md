@@ -311,3 +311,12 @@ No hay evidencia de un dispatch de Grok en la ventana reciente de Actions. Con `
 - `2026-11-23_tropical-biodiversity-turnover` (13:30) mantiene **CONFLICTO_DE_SLOT_ENTRE_RAMAS** con Rosetta en main. `2026-11-23_supersequias-722-eventos` (23:30) pasa de “sin ocupación observada” a **CONFLICTO_DE_SLOT_ENTRE_RAMAS** con Oso Wojtek en main. Esta corrección supersede la observación anterior de disponibilidad 23:30.
 - Lectura de vuelta de ambos storyboards: siguen `BORRADOR_EN_PROYECTOS_NO_APTO_PARA_PROMOCION`, `narrative_qa=FAIL/82`, siete checks true y `STAKES_NO_EXPLICADOS`; no se repitió QA porque la narración no cambió. Ambos `cola/estado/<project_id>.json` y ambos `ESTADO_EJECUCION.md` devolvieron 404; se conserva `RECEPCION_GROK_NO_CONFIRMADA`. Clasificación: **NOT_DISPATCHABLE**.
 - No se modificó main ni `data/*.json`; no se disparó workflow, no se envió payload y no se tocó programación externa.
+
+
+## Revalidación de PR y CI — 2026-11-23, corte posterior
+
+- Rama feature HEAD verificada tras las dos actualizaciones de este control: `7be3e48f79404589e68eb4f6f1467c4d6b683ddb`. Los dos commits de esta ejecución modificaron únicamente este control y el radar; no tocaron storyboards ni `data/*.json`.
+- PR #15 continúa OPEN y no mergeable. Su último Semgrep registrado, run `45004335607`, terminó FAILURE; el propio expediente registra 27 hallazgos. Las pruebas unitarias del cambio de coordenadas/DOI siguen pendientes, por lo que no se declara PASS.
+- PR #3 continúa OPEN/DRAFT y no mergeable, con base `main`; su diff todavía contiene cambios a `data/*.json`, que siguen fuera de alcance de escritura. No se integró ni se modificó.
+- El último run de Actions visible en la rama feature sigue siendo la validación estructural Kuroshio `45075532329` (SUCCESS) sobre un commit anterior; no valida estos cambios de documentación ni acredita DOI. No apareció un run de `capcot-grok-dispatch.yml`; no hubo dispatch.
+- No se abrió/cerró/actualizó ningún PR, no se dispararon workflows y no se leyeron secretos.
