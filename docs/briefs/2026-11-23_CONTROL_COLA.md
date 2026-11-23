@@ -373,3 +373,30 @@ El commit `39e6566aedeab236284f905bf796bfe1872aff45` del 23-nov modificó solo `
 - La página editorial de Nature para DOI `10.1038/s41597-026-08886-6` sí muestra el estudio de 722 eventos y los resultados de correspondencia publicados. Crossref API y `doi.org` siguen inaccesibles en esta verificación; el DOI permanece `PENDIENTE_RESOLVEDOR`. La cifra `139/234` no aparece en el HTML primario consultado y permanece `PENDING_SOURCE`. No se alteraron claims ni narración.
 
 **Resultado del corte:** sin promoción, redispatch, ejecución de workflow, generación de medios ni cambio de programación. No se leyeron secretos ni valores de webhook; no se consultaron ni modificaron estados Grok.
+
+
+## Revalidación de fuentes de programación entre ramas — 2026-11-23, 10:22 CDMX
+
+Esta pasada es de solo lectura para `main` y `data/*.json`. Se registra la divergencia para evitar usar snapshots antiguos de feature como autoridad de programación.
+
+| Fuente | main | feature/capcot-video-discovery-continuity | Resultado |
+|---|---|---|---|
+| `data/horarios.json` | blob `2261993d542de445df23e0abbe63bca9b54c2ff1`, actualizado 2026-11-23 | blob `550599906c26e747de71b6b962080b6bd469f23f`, actualizado 2026-11-09 | Feature no contiene la política del 23-nov |
+| `data/publicaciones.json` | blob `774e3b7022c910d5b1b1d3f86a4590df0ee5847d`, tres registros del 23-nov | blob `a17dbe541d35b7e3d8a835756a06f0588039049a`, cero registros del 23-nov | Usar main para ocupación; no copiar registros |
+| `data/vistas_historico.json` | blob `ce6859cae15e6b3914f7440e2fda0a43115eaf0c`, 108 registros, último corte 22-nov 13:50 | blob `ab48713b7d6f3a4604dacd606dff14817cbfb4e3`, 74 registros, último corte 28-oct 08:08 | Snapshot feature desfasado |
+| `data/cierre_diario/` | 19 archivos, hasta 22-nov | solo 25, 26 y 27-oct | El cierre 22-nov citado arriba pertenece a main, no a feature |
+
+### Programación ya existente en main
+
+`main/data/publicaciones.json` registra tres publicaciones/programaciones del 23-nov: 09:00 CDMX, `CW02WClntYA` (Orfismo); 11:00, `Tq2ASLkFTbo` (Evemerismo); y 17:00, `6OuHVN5dbbs` (Mitraísmo). Se clasifican como **PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR**. No sustituyen ni eliminan los conflictos ya identificados para feature: 13:30 con Rosetta y 23:30 con Oso Wojtek.
+
+La política activa de main desde 23-nov fija 06:30–07:30 y 16:30–18:00, conserva 23:30 como dato del día y evita 19:00 y 20:00–23:00. La ventana 13:00–14:30 aparece como prueba, no como ventana activa. Por tanto, el borrador tropical de 13:30 está además fuera de las ventanas activas, aparte de su conflicto con Rosetta.
+
+### Cola y recepción
+
+- `cola/entrada/` feature contiene `.gitkeep` y el paquete anidado `2026-11-09_dato-robot-ensambla-orbita/`; no hay JSON plano de primer nivel.
+- `cola/estado/` devuelve 404 en la rama feature; no existe directorio de estados visible. Para los dos borradores del 23-nov se conserva **RECEPCION_GROK_NO_CONFIRMADA**.
+- El workflow `capcot-grok-dispatch.yml` solo acepta JSON plano en `cola/entrada/*.json` por evento push; `workflow_dispatch` es otra ruta manual. El workflow tiene permisos de escritura para generar markers y no contiene una compuerta narrativa/slot equivalente a esta auditoría. No se disparó, no se envió payload y no se consultaron valores de secretos.
+- El árbol no contiene un archivo dedicado `historial_youtube`; la auditoría usa `data/publicaciones.json`, snapshots de programación/miniaturas, `data/vistas_historico.json` y cierres diarios.
+
+**Decisión:** conservar main como autoridad de ocupación, mantener los dos borradores en `proyectos/` como **NOT_DISPATCHABLE**, no copiar datos entre ramas y no modificar `data/*.json`, main, cola, estados Grok, secretos ni programación externa.
