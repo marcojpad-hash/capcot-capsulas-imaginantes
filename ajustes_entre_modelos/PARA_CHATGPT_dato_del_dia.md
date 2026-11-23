@@ -269,3 +269,16 @@ Entrega: `cola/entrada/2026-11-01_dato-cambio-horario-corazon/` con `storyboard.
 - Sin frames, audio ni publicación. QA/montaje/publicación: Grok app.
 
 > Imaginantes 22-nov ~16:00 CDMX: dato 23:30 = borrador existente `proyectos/2026-11-22_genes-estatura-etapas/storyboard.json` (Nature Communications, DOI 10.1038/s41467-026-79465-x, 8 escenas, ~84 s). NO duplicar ni crear otro brief. Falta QA narrativo independiente (PENDIENTE_AUDITOR) y paso a cola/entrada. Grok app: QA→frames→montaje→YT+TT+FB 23:30 CDMX (TT AI ON, FB sin AI, UI NY = CDMX+1h). Si no llega a cola antes de ~21:00, la guardia de 22:00 cubre con reserva.
+
+
+## Addendum de autoridad — 22-nov-2026
+
+Este archivo conserva briefs e instrucciones históricas del dato del día. Para los runs actuales prevalece la ficha maestra del Operador Único y sus compuertas CAPCOT:
+
+- El investigador escribe exclusivamente en `proyectos/<project_id>/storyboard.json`. No escribe en `cola/entrada/`, no crea ni modifica `cola/estado/`, no registra `narrative_qa` y no marca `PREPARADO`.
+- La revisión narrativa es una pasada posterior e independiente, ocultando título, resumen, arco, notas y contrato; se lee solo la narración concatenada. Sin revisión separada: `FAIL`, score 0 y `REVISION_INDEPENDIENTE_AUSENTE`. `PASS` requiere score ≥85, siete checks verdaderos y flags vacías.
+- Solo el auditor puede promover una copia plana a `cola/entrada/<project_id>.json`, y únicamente tras QA PASS, validador estructural real, DOI/Crossref verificado, ausencia de producción previa y conflicto de slot, y tratamiento documentado del estado/dispatch Grok. Nunca crear ni modificar `cola/estado/`.
+- Preproducción textual sin medios: `approved_assets=[]`, `export.render_status=NOT_GENERATED`, sin nombres ni rutas de assets, y `publicacion.status=PENDIENTE_DECISION_GROK`.
+- Para 23:30, si el slot ya tiene proyecto o no existe fuente primaria publicada el mismo día, usar `NO_DUPLICAR` o `PENDING_SOURCE`; no crear una reserva ni adelantar un tema.
+
+Las instrucciones antiguas de este documento que piden entregar directamente en `cola/entrada/`, crear estado o marcar `PREPARADO_PENDIENTE_REVISION_GROK` no son aplicables al flujo actual.
