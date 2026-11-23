@@ -719,3 +719,8 @@ A las 22:01 CDMX ya habían transcurrido los horarios de Oxoboranos (14:30) y Cl
 Los intentos de búsqueda pública por los IDs no devolvieron resultados indexados; esto tampoco demuestra que no se hayan publicado. Estado para ambos paquetes: `PUBLICACION_POST_HORA_NO_VERIFICADA`. No se cambió privacidad, etiqueta de IA, programación ni registro de publicación. No se creó ni modificó estado Grok, no se redispatchó, no se publicó y no se consumieron créditos.
 
 Este corte es una auditoría documental posterior al horario; la verificación definitiva requiere una lectura post-hora en Studio/API por el titular. No se atribuye a esta sesión una confirmación de publicación.
+
+
+### Corrección de autoridad documental — 22-nov-2026
+
+`ajustes_entre_modelos/PARA_CHATGPT_dato_del_dia.md` conservaba instrucciones históricas incompatibles con la ficha maestra actual: entrega directa en `cola/entrada/`, creación de estado y marca `PREPARADO`. Se añadió un addendum de autoridad en commit `a8df6a33eaf6a380062ddf73cbf399aeb9c8646a`; lectura de vuelta verificada, blob `a614252ff3b6624eb1b2da485cfb617c30f604f8`. El investigador queda limitado a `proyectos/`; la promoción queda reservada al auditor después de todas las compuertas. El commit lleva `[skip ci]`; la consulta de estado devolvió cero workflow runs y cero checks. No se tocó `data/*.json`, cola ni estados Grok.
