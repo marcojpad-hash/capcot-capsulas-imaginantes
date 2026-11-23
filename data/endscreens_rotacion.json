@@ -3350,13 +3350,14 @@
    "WcTviUWqbes": "6XCBYrlO4Eg",
    "Sc0cX9ejxuw": "6XCBYrlO4Eg"
   },
-  "estado": "pendiente_studio",
+  "estado": "aplicado_9de9",
   "nuevos": [
    "I8n_5nnUlbI",
    "KvHvf2TJLqE",
    "inzztxrxYfg",
    "mWtf7Yta294"
   ],
-  "nota": "destino fuerte = 6XCBY (985 vistas, mayor tracción); BIwG es 23 vistas"
+  "nota": "destino fuerte = 6XCBY (985 vistas, mayor tracción); BIwG es 23 vistas",
+  "aplicado_studio": true
  }
 }
