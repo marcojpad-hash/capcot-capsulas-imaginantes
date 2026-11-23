@@ -175,3 +175,6 @@ No se cambió `data/*.json`, main, programación, publicaciones, bloqueados, est
 ### Límites y acciones no ejecutadas
 
 No se modificaron `data/*.json`, main, `cola/entrada`, `cola/estado`, bloqueados, programación, publicaciones, workflows, secretos ni permisos. No se leyeron valores de `GROK_WEBHOOK_URL` ni `GROK_WEBHOOK_TOKEN`; su presencia no se infiere. No se generaron medios ni se consumieron créditos.
+
+
+**Control histórico del PR #13:** la revisión de integración del 17-nov (comentario del propietario en el PR) ya había advertido que el informe Groq confunde duración de escena con aparición temporal del dato, no fija SHA reproducible, mezcla DOI pendiente con fuente inexistente y no demuestra varias transiciones. La instrucción explícita fue no aprobar ni fusionar y exigir reauditoría sobre el SHA exacto. Esa advertencia sigue vigente; no se aprobó ni fusionó el PR.
