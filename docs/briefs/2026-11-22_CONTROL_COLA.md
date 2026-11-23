@@ -679,3 +679,12 @@ Se reintentó la lectura de los **10 feeds** declarados en `scripts/tendencias.p
 Este corte fue una relectura de endpoints mediante el navegador de la sesión; **no se ejecutó** `scripts/tendencias.py`. El corte anterior del mismo día documentó la ejecución HTTP directa y su error literal `URLError: <urlopen error [Errno -3] Temporary failure in name resolution>`. No se interpretó el fallo de feeds como ausencia de noticias. Se conservan como respaldo los cinco candidatos ya documentados en `2026-11-22_RADAR_CAPCOT.md` (NASA Photojournal, NASA Earth Observatory, NASA Science/Science Advances, Nature y Senckenberg/ZooKeys), con sus estados de duplicación, mapa o Crossref; no se inventó un sexto candidato ni se abrió un storyboard nuevo.
 
 La reconciliación de main mantiene ocupados los slots regulares del 23–28-nov; el proyecto de biodiversidad del 23-nov 13:30 colisiona con Rosetta. La enana blanca propuesta para el 23-nov 14:30 sigue bloqueada por ausencia de MP4. No se creó paquete adicional ni se generaron medios.
+
+## Revisión viva de PR #15 y Actions — 22-nov-2026, 20:02 CDMX
+
+- PR #15 sigue `OPEN`, sin merge, con head `30101e9aca8aaafb8d1894df30574a66067ff4a8` sobre base `d30814995de642e3b6100d19d968115264a3d690`; GitHub lo marca `mergeable=true`. El diff endurece `check_doi` con host HTTPS fijo y rechaza booleanos en coordenadas/bounds de mapas.
+- **Defecto detectado por inspección estática del test:** el mock `Connection.__init__(self, host, timeout)` no acepta `context`, pero el código productivo crea `HTTPSConnection(..., timeout=20, context=ssl.create_default_context())`. Si se ejecuta `test_check_doi_uses_fixed_https_host`, el mock puede fallar con `TypeError` por argumento inesperado `context`. No se afirma ejecución de pytest: el conector no ofrece runtime local y el intento de clonar el repositorio terminó con `Could not resolve host: github.com`.
+- Para el head del PR, el único workflow PR recuperado fue Semgrep `45004335607`, `completed/failure`; no apareció una ejecución de pruebas unitarias.
+- En la rama de trabajo, el run Semgrep `45048155842` terminó `failure` con `Process completed with exit code 1.`; Gitleaks `45048155922` terminó `success`; el trabajador `45050940152` terminó `success`, pero su log dice literalmente `[trabajador] sin trabajo en cola.`.
+
+No se editó PR #15, no se dispararon workflows, no se hizo merge ni se modificó main. La corrección mínima pendiente del test es aceptar/validar el argumento `context` del constructor simulado y ejecutar la suite en un runner autorizado.
