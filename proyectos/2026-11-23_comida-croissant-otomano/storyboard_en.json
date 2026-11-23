@@ -1,0 +1,212 @@
+{
+ "project_id": "2026-11-23_comida-croissant-otomano_en",
+ "serie": "Comida: mito vs dato",
+ "numero_lista": 32,
+ "title": "Was the croissant born to celebrate an Ottoman defeat?",
+ "titulo": "Was the croissant born to celebrate an Ottoman defeat?",
+ "language": "en-US",
+ "aspect_ratio": "9:16",
+ "target_duration_seconds": 88,
+ "estilo_id": "foto_commons",
+ "estilo_visual": "obras y fotografías de dominio público o licencia libre (Wikimedia Commons)",
+ "proveedor_imagenes": "Wikimedia Commons (dominio público o CC; archivo original citado en creditos_imagenes.json)",
+ "parece_real": true,
+ "keywords": [
+  "croissant-otomano"
+ ],
+ "voice": {
+  "engine": "edge-tts",
+  "voice_id": "en-US-AndrewNeural",
+  "rate": "+5%",
+  "pitch": "-2Hz",
+  "pad_seconds": 0.6,
+  "modo_pausas": "continuo"
+ },
+ "audio": {
+  "music_asset": "sintetico:pulso",
+  "cama_musical": "pulso",
+  "music_bpm": 100,
+  "music_lufs": -27,
+  "ambiente_lufs": -30
+ },
+ "canal": {
+  "nombre": "Datos y ociosidades",
+  "handle": "@datosyociosidadesEN"
+ },
+ "sources": [
+  {
+   "id": "SRC-001",
+   "cita_corta": "Europeana, The History of the Croissant",
+   "url": "https://www.europeana.eu/en/stories/the-history-of-the-croissant"
+  },
+  {
+   "id": "SRC-002",
+   "cita_corta": "Institute of Culinary Education",
+   "url": "https://www.ice.edu/blog/brief-history-croissant-austrian-kipferl-layered-french-luxury"
+  }
+ ],
+ "scenes": [
+  {
+   "id": "scene_001",
+   "arc": "hook_medias_res",
+   "duration_seconds": 10,
+   "narration": "A widely repeated story claims the croissant was invented to celebrate the Ottoman defeat during the siege of Vienna in 1683.",
+   "on_screen_text": "",
+   "asset_filename": "frames/scene_001.jpg",
+   "sfx": [
+    "madera"
+   ],
+   "source_ids": [
+    "SRC-001",
+    "SRC-002"
+   ],
+   "image_credit": "Croissants au beurre (18953292873). Herry Wibisono (herryway), CC0. Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Croissants_au_beurre_(18953292873).jpg",
+   "visual_description": "File:Croissants au beurre (18953292873).jpg",
+   "capa": {
+    "tipo": "dato",
+    "valor": "1683",
+    "etiqueta": "siege of Vienna",
+    "fuente": "Europeana"
+   }
+  },
+  {
+   "id": "scene_002",
+   "arc": "desarrollo",
+   "duration_seconds": 10,
+   "narration": "The legend says Viennese bakers, working before dawn, discovered an attack and raised the alarm. To celebrate, they created a bread shaped like a crescent moon, an Ottoman symbol.",
+   "on_screen_text": "The bakers' legend",
+   "asset_filename": "frames/scene_002.jpg",
+   "sfx": [
+    "tormenta"
+   ],
+   "source_ids": [
+    "SRC-001",
+    "SRC-002"
+   ],
+   "image_credit": "Martin Battle of Vienna. Pierre-Denis Martin, Public domain. Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Martin_Battle_of_Vienna.jpg",
+   "visual_description": "File:Martin Battle of Vienna.jpg"
+  },
+  {
+   "id": "scene_003",
+   "arc": "desarrollo",
+   "duration_seconds": 10,
+   "narration": "The problem is that there are no reliable documents confirming that story. It is an appealing tale, but not documented history.",
+   "on_screen_text": "No reliable documents",
+   "asset_filename": "frames/scene_003.jpg",
+   "sfx": [
+    "campanas"
+   ],
+   "source_ids": [
+    "SRC-001",
+    "SRC-002"
+   ],
+   "image_credit": "Vienna assediata dalle Armi Ottomane gli 12 Lugliio 1683. Giovanni Giacomo de Rossi, Public domain. Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Vienna_assediata_dalle_Armi_Ottomane_gli_12_Lugliio_1683.jpg",
+   "visual_description": "File:Vienna assediata dalle Armi Ottomane gli 12 Lugliio 1683.jpg"
+  },
+  {
+   "id": "scene_004",
+   "arc": "desarrollo",
+   "duration_seconds": 10,
+   "narration": "What we do know is that Austria had breads called kipferl, shaped like a crescent, long before the modern croissant became popular in France.",
+   "on_screen_text": "Austrian kipferl",
+   "asset_filename": "frames/scene_004.jpg",
+   "sfx": [
+    "madera"
+   ],
+   "source_ids": [
+    "SRC-001",
+    "SRC-002"
+   ],
+   "image_credit": "Topfenkolatsche und Wiener Kipferl IMG 7585. Politikaner, CC BY-SA 3.0. Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Topfenkolatsche_und_Wiener_Kipferl_IMG_7585.JPG",
+   "visual_description": "File:Topfenkolatsche und Wiener Kipferl IMG 7585.JPG"
+  },
+  {
+   "id": "scene_005",
+   "arc": "desarrollo",
+   "duration_seconds": 10,
+   "narration": "In the 19th century, the Austrian businessman August Zang opened a Viennese bakery in Paris. His products helped spread the crescent-shaped bread.",
+   "on_screen_text": "August Zang in Paris",
+   "asset_filename": "frames/scene_005.jpg",
+   "sfx": [
+    "madera"
+   ],
+   "source_ids": [
+    "SRC-001",
+    "SRC-002"
+   ],
+   "image_credit": "Boulangerie de Paris, XIXe siècle, NJ9828(3). Unknown authorUnknown author, CC0. Wikimedia Commons · original: Paris Musées. https://commons.wikimedia.org/wiki/File:Boulangerie_de_Paris,_XIXe_si%C3%A8cle,_NJ9828(3).jpg",
+   "visual_description": "File:Boulangerie de Paris, XIXe siècle, NJ9828(3).jpg",
+   "capa": {
+    "tipo": "mapa",
+    "region": [
+     -5,
+     25,
+     40,
+     55
+    ],
+    "puntos": [
+     {
+      "nombre": "Vienna",
+      "lon": 16.37,
+      "lat": 48.21
+     },
+     {
+      "nombre": "Paris",
+      "lon": 2.35,
+      "lat": 48.86
+     }
+    ],
+    "flechas": [
+     [
+      16.37,
+      48.21,
+      2.35,
+      48.86,
+      ""
+     ]
+    ],
+    "titulo": "From Vienna to Paris",
+    "fuente": "Europeana · Natural Earth",
+    "plano": 1
+   }
+  },
+  {
+   "id": "scene_006",
+   "arc": "reflexion_o_pregunta",
+   "duration_seconds": 10,
+   "narration": "The modern croissant developed in France from Central European traditions. The story of the siege of Vienna is a legend without solid evidence.",
+   "on_screen_text": "A legend without evidence",
+   "asset_filename": "frames/scene_006.jpg",
+   "sfx": [
+    "madera"
+   ],
+   "source_ids": [
+    "SRC-001",
+    "SRC-002"
+   ],
+   "image_credit": "Croissant 3. Maffeth.opiana, CC BY-SA 4.0. Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Croissant_3.jpg",
+   "visual_description": "File:Croissant 3.jpg"
+  }
+ ],
+ "cortinilla_fuentes": {
+  "duration_seconds": 5,
+  "titulo": "Sources",
+  "aviso": "Images: public domain or free license (Wikimedia Commons). Synthetic AI voice (IA). Synthesized audio.",
+  "firma": "Datos y ociosidades · @datosyociosidadesEN",
+  "bg_rgb": [
+   18,
+   16,
+   14
+  ]
+ },
+ "export": {
+  "filename": "capsula_en.mp4",
+  "resolution": "1080x1920",
+  "fps": 30,
+  "loudness_lufs": -14,
+  "plano_seconds": 4.0,
+  "subtitle_max_words": 3
+ },
+ "estructura": "mito_vs_dato",
+ "hook_type": "mito_vs_dato"
+}

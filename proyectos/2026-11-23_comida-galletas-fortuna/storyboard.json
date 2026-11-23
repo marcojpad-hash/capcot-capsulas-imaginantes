@@ -1,0 +1,223 @@
+{
+ "project_id": "2026-11-23_comida-galletas-fortuna",
+ "serie": "Comida: mito vs dato",
+ "numero_lista": 31,
+ "title": "¿Las galletas de la fortuna son realmente chinas?",
+ "titulo": "¿Las galletas de la fortuna son realmente chinas?",
+ "language": "es-MX",
+ "aspect_ratio": "9:16",
+ "target_duration_seconds": 88,
+ "estilo_id": "foto_commons",
+ "estilo_visual": "obras y fotografías de dominio público o licencia libre (Wikimedia Commons)",
+ "proveedor_imagenes": "Wikimedia Commons (dominio público o CC; archivo original citado en creditos_imagenes.json)",
+ "parece_real": true,
+ "keywords": [
+  "galletas-fortuna"
+ ],
+ "voice": {
+  "engine": "edge-tts",
+  "voice_id": "es-MX-JorgeNeural",
+  "rate": "+7%",
+  "pitch": "-2Hz",
+  "pad_seconds": 0.6,
+  "modo_pausas": "continuo"
+ },
+ "audio": {
+  "music_asset": "sintetico:arpegio",
+  "cama_musical": "arpegio",
+  "music_bpm": 94,
+  "music_lufs": -27,
+  "ambiente_lufs": -30
+ },
+ "canal": {
+  "nombre": "Datos y ociosidades",
+  "handle": "@datosyociosidades"
+ },
+ "sources": [
+  {
+   "id": "SRC-001",
+   "cita_corta": "Smithsonian National Museum of American History",
+   "url": "https://americanhistory.si.edu/explore/stories/origins-fortune-cookie"
+  },
+  {
+   "id": "SRC-002",
+   "cita_corta": "Smithsonian Magazine",
+   "url": "https://www.smithsonianmag.com/arts-culture/cracking-open-the-history-of-fortune-cookies-28538557/"
+  },
+  {
+   "id": "SRC-003",
+   "cita_corta": "Library of Congress",
+   "url": "https://www.loc.gov/everyday-mysteries/categories/food-and-nutrition/item/how-do-fortunes-get-inside"
+  }
+ ],
+ "scenes": [
+  {
+   "id": "scene_001",
+   "arc": "hook_medias_res",
+   "duration_seconds": 10,
+   "narration": "En muchos restaurantes chinos de Estados Unidos, la comida termina con una galleta que contiene un mensaje. Pero ¿son realmente chinas?",
+   "on_screen_text": "",
+   "asset_filename": "frames/scene_001.jpg",
+   "sfx": [
+    "madera"
+   ],
+   "source_ids": [
+    "SRC-001",
+    "SRC-002",
+    "SRC-003"
+   ],
+   "image_credit": "Fortune cookie broken 20040628 223252 1. User Lorax on en.wikipedia, CC BY-SA 3.0. Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Fortune_cookie_broken_20040628_223252_1.jpg",
+   "visual_description": "File:Fortune cookie broken 20040628 223252 1.jpg"
+  },
+  {
+   "id": "scene_002",
+   "arc": "desarrollo",
+   "duration_seconds": 10,
+   "narration": "Las galletas de la fortuna modernas tienen una historia relacionada con Japón y Estados Unidos. Existen varias teorías sobre su origen exacto.",
+   "on_screen_text": "Japón y Estados Unidos",
+   "asset_filename": "frames/scene_002.jpg",
+   "sfx": [
+    "campanas"
+   ],
+   "source_ids": [
+    "SRC-001",
+    "SRC-002",
+    "SRC-003"
+   ],
+   "image_credit": "Torii path with lantern at Fushimi Inari Taisha Shrine, Kyoto, Japan. Basile Morin, CC BY-SA 4.0. Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Torii_path_with_lantern_at_Fushimi_Inari_Taisha_Shrine,_Kyoto,_Japan.jpg",
+   "visual_description": "File:Torii path with lantern at Fushimi Inari Taisha Shrine, Kyoto, Japan.jpg",
+   "capa": {
+    "tipo": "mapa",
+    "region": [
+     125,
+     250,
+     15,
+     55
+    ],
+    "puntos": [
+     {
+      "nombre": "Japón",
+      "lon": 135.77,
+      "lat": 34.97
+     },
+     {
+      "nombre": "San Francisco",
+      "lon": 237.58,
+      "lat": 37.77
+     }
+    ],
+    "flechas": [
+     [
+      135.77,
+      34.97,
+      237.58,
+      37.77,
+      ""
+     ]
+    ],
+    "titulo": "Japón → Estados Unidos",
+    "fuente": "Smithsonian · Natural Earth",
+    "plano": 1
+   }
+  },
+  {
+   "id": "scene_003",
+   "arc": "desarrollo",
+   "duration_seconds": 10,
+   "narration": "Una tradición japonesa conocida como tsujiura senbei utilizaba galletas de arroz con mensajes. Se han encontrado representaciones de este tipo de dulces en grabados del siglo XIX.",
+   "on_screen_text": "Tsujiura senbei",
+   "asset_filename": "frames/scene_003.jpg",
+   "sfx": [
+    "madera"
+   ],
+   "source_ids": [
+    "SRC-001",
+    "SRC-002",
+    "SRC-003"
+   ],
+   "image_credit": "Fortune Cookie 1878. 孟斉芳虎・画, Public domain. Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Fortune_Cookie_1878.jpg",
+   "visual_description": "File:Fortune Cookie 1878.jpg",
+   "capa": {
+    "tipo": "dato",
+    "valor": "Siglo XIX",
+    "etiqueta": "grabados de tsujiura senbei",
+    "fuente": "Smithsonian Magazine"
+   }
+  },
+  {
+   "id": "scene_004",
+   "arc": "desarrollo",
+   "duration_seconds": 10,
+   "narration": "A comienzos del siglo XX, las galletas de la fortuna comenzaron a popularizarse en San Francisco. Makoto Hagiwara, un inmigrante japonés, es una de las figuras asociadas con su difusión.",
+   "on_screen_text": "Makoto Hagiwara, San Francisco",
+   "asset_filename": "frames/scene_004.jpg",
+   "sfx": [
+    "madera"
+   ],
+   "source_ids": [
+    "SRC-001",
+    "SRC-002",
+    "SRC-003"
+   ],
+   "image_credit": "Original Hagiwara fortune cookie press 01. Awkwafaba, CC BY-SA 4.0. Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Original_Hagiwara_fortune_cookie_press_01.jpg",
+   "visual_description": "File:Original Hagiwara fortune cookie press 01.jpg"
+  },
+  {
+   "id": "scene_005",
+   "arc": "desarrollo",
+   "duration_seconds": 10,
+   "narration": "Durante la Segunda Guerra Mundial, muchos japoneses estadounidenses fueron enviados a campos de internamiento. Las galletas pasaron a manos de empresas chinas estadounidenses, que las popularizaron.",
+   "on_screen_text": "Campos de internamiento",
+   "asset_filename": "frames/scene_005.jpg",
+   "sfx": [
+    "viento"
+   ],
+   "source_ids": [
+    "SRC-001",
+    "SRC-002",
+    "SRC-003"
+   ],
+   "image_credit": "Dorothea Lange, Japanese-American boarding up store front before relocation, San Francisco, 1942. Dorothea Lange, Public domain. Wikimedia Commons · original: National Archives / War Relocation Authority (Dorothea Lange). https://commons.wikimedia.org/wiki/File:Dorothea_Lange,_Japanese-American_boarding_up_store_front_before_relocation,_San_Francisco,_1942.jpg",
+   "visual_description": "File:Dorothea Lange, Japanese-American boarding up store front before relocation, San Francisco, 1942.jpg"
+  },
+  {
+   "id": "scene_006",
+   "arc": "reflexion_o_pregunta",
+   "duration_seconds": 10,
+   "narration": "Por eso, aunque hoy se asocian con restaurantes chinos, las galletas de la fortuna tienen raíces japonesas y una historia estadounidense.",
+   "on_screen_text": "Raíces japonesas",
+   "asset_filename": "frames/scene_006.jpg",
+   "sfx": [
+    "madera"
+   ],
+   "source_ids": [
+    "SRC-001",
+    "SRC-002",
+    "SRC-003"
+   ],
+   "image_credit": "Tsujiura senbei. Mark Yasuda, CC BY-SA 4.0. Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Tsujiura_senbei.jpg",
+   "visual_description": "File:Tsujiura senbei.jpg"
+  }
+ ],
+ "cortinilla_fuentes": {
+  "duration_seconds": 5,
+  "titulo": "Fuentes",
+  "aviso": "Imágenes de dominio público o con licencia libre (Wikimedia Commons). Voz sintética (IA). Audio sintetizado.",
+  "firma": "Datos y ociosidades · @datosyociosidades",
+  "bg_rgb": [
+   18,
+   16,
+   14
+  ]
+ },
+ "export": {
+  "filename": "capsula.mp4",
+  "resolution": "1080x1920",
+  "fps": 30,
+  "loudness_lufs": -14,
+  "plano_seconds": 4.0,
+  "subtitle_max_words": 3
+ },
+ "estructura": "mito_vs_dato",
+ "hook_type": "mito_vs_dato"
+}

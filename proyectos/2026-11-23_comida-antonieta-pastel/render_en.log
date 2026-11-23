@@ -1,0 +1,19 @@
+scene_001: voz 9.1s, escena 9.9s
+scene_002: voz 6.2s, escena 7.0s
+scene_003: voz 7.5s, escena 8.3s
+scene_004: voz 9.9s, escena 10.7s
+scene_005: voz 8.0s, escena 8.8s
+scene_006: voz 7.9s, escena 8.7s
+OK /workspace/capcot_main/proyectos/2026-11-23_comida-antonieta-pastel/capsula_en.mp4 duración 58.57s
+reintento TTS 1 'But did Marie Antoinette really say it?' NoAudioReceived
+reintento TTS 1 'There is no evidence that Marie Antoinette ever spoke those NoAudioReceived
+reintento TTS 2 'There is no evidence that Marie Antoinette ever spoke those NoAudioReceived
+reintento TTS 1 'The expression appears in texts written before she arrived  NoAudioReceived
+reintento TTS 1 'A similar version appears in the Confessions of Jean-Jacque NoAudioReceived
+reintento TTS 1 'Rousseau attributed the line to a "great princess," without NoAudioReceived
+reintento TTS 2 'Rousseau attributed the line to a "great princess," without NoAudioReceived
+reintento TTS 3 'Rousseau attributed the line to a "great princess," without NoAudioReceived
+reintento TTS 4 'Rousseau attributed the line to a "great princess," without NoAudioReceived
+reintento TTS 5 'Rousseau attributed the line to a "great princess," without NoAudioReceived
+reintento TTS 1 'It became a symbol of her supposed indifference.' NoAudioReceived
+ERROR: duración fuera de 60-120 s

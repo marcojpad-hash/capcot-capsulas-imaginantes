@@ -1,0 +1,212 @@
+{
+ "project_id": "2026-11-23_comida-antonieta-pastel_en",
+ "serie": "Comida: mito vs dato",
+ "numero_lista": 15,
+ "title": "Did Marie Antoinette say 'let them eat cake'?",
+ "titulo": "Did Marie Antoinette say 'let them eat cake'?",
+ "language": "en-US",
+ "aspect_ratio": "9:16",
+ "target_duration_seconds": 88,
+ "estilo_id": "foto_commons",
+ "estilo_visual": "obras y fotografías de dominio público o licencia libre (Wikimedia Commons)",
+ "proveedor_imagenes": "Wikimedia Commons (dominio público o CC; archivo original citado en creditos_imagenes.json)",
+ "parece_real": true,
+ "keywords": [
+  "antonieta-pastel"
+ ],
+ "voice": {
+  "engine": "edge-tts",
+  "voice_id": "en-US-AndrewNeural",
+  "rate": "+5%",
+  "pitch": "-2Hz",
+  "pad_seconds": 0.6,
+  "modo_pausas": "continuo"
+ },
+ "audio": {
+  "music_asset": "sintetico:marimba",
+  "cama_musical": "marimba",
+  "music_bpm": 96,
+  "music_lufs": -27,
+  "ambiente_lufs": -30
+ },
+ "canal": {
+  "nombre": "Datos y ociosidades",
+  "handle": "@datosyociosidadesEN"
+ },
+ "sources": [
+  {
+   "id": "SRC-001",
+   "cita_corta": "Britannica, Marie Antoinette",
+   "url": "https://www.britannica.com/biography/Marie-Antoinette"
+  },
+  {
+   "id": "SRC-002",
+   "cita_corta": "History.com, Did Marie Antoinette Really Say \"Let Them Eat Cake\"?",
+   "url": "https://www.history.com/news/did-marie-antoinette-really-say-let-them-eat-cake"
+  }
+ ],
+ "scenes": [
+  {
+   "id": "scene_001",
+   "arc": "hook_medias_res",
+   "duration_seconds": 10,
+   "narration": "It is one of the most famous lines in history: \"Let them eat cake.\" It is attributed to Marie Antoinette, queen of France, when she was told the people had no bread.",
+   "on_screen_text": "",
+   "asset_filename": "frames/scene_001.jpg",
+   "sfx": [
+    "pluma"
+   ],
+   "source_ids": [
+    "SRC-001",
+    "SRC-002"
+   ],
+   "image_credit": "Vigée Le Brun, Élisabeth - Marie-Antoinette en gaulle, 1783. Élisabeth Vigée Le Brun (1783; foto de Kaho Mitsuki), Public domain. Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Vig%C3%A9e_Le_Brun,_%C3%89lisabeth_-_Marie-Antoinette_en_gaulle,_1783.JPG",
+   "visual_description": "File:Vigée Le Brun, Élisabeth - Marie-Antoinette en gaulle, 1783.JPG"
+  },
+  {
+   "id": "scene_002",
+   "arc": "desarrollo",
+   "duration_seconds": 10,
+   "narration": "The line is used to stand for the monarchy's indifference to the suffering of the people. But did Marie Antoinette really say it?",
+   "on_screen_text": "The monarchy's indifference",
+   "asset_filename": "frames/scene_002.jpg",
+   "sfx": [
+    "madera"
+   ],
+   "source_ids": [
+    "SRC-001",
+    "SRC-002"
+   ],
+   "image_credit": "Marie Antoinette and her Children by Élisabeth Vigée-Lebrun. Élisabeth Louise Vigée Le Brun, Public domain. Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Marie_Antoinette_and_her_Children_by_%C3%89lisabeth_Vig%C3%A9e-Lebrun.jpg",
+   "visual_description": "File:Marie Antoinette and her Children by Élisabeth Vigée-Lebrun.jpg"
+  },
+  {
+   "id": "scene_003",
+   "arc": "desarrollo",
+   "duration_seconds": 10,
+   "narration": "There is no evidence that Marie Antoinette ever spoke those words. The expression appears in texts written before she arrived in France.",
+   "on_screen_text": "No evidence",
+   "asset_filename": "frames/scene_003.jpg",
+   "sfx": [
+    "campanas"
+   ],
+   "source_ids": [
+    "SRC-001",
+    "SRC-002"
+   ],
+   "image_credit": "Reinsperger - Carolina, Josepha and Antonia of Austria - Hofburg. Attributed to Johann Christoph von Reinsperger, Public domain. Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Reinsperger_-_Carolina,_Josepha_and_Antonia_of_Austria_-_Hofburg.png",
+   "visual_description": "File:Reinsperger - Carolina, Josepha and Antonia of Austria - Hofburg.png",
+   "capa": {
+    "tipo": "mapa",
+    "region": [
+     -5,
+     25,
+     40,
+     55
+    ],
+    "puntos": [
+     {
+      "nombre": "Vienna",
+      "lon": 16.37,
+      "lat": 48.21
+     },
+     {
+      "nombre": "Paris",
+      "lon": 2.35,
+      "lat": 48.86
+     }
+    ],
+    "flechas": [
+     [
+      16.37,
+      48.21,
+      2.35,
+      48.86,
+      ""
+     ]
+    ],
+    "titulo": "From Vienna to France",
+    "fuente": "Britannica · Natural Earth",
+    "plano": 1
+   }
+  },
+  {
+   "id": "scene_004",
+   "arc": "desarrollo",
+   "duration_seconds": 10,
+   "narration": "A similar version appears in the Confessions of Jean-Jacques Rousseau, published in the 18th century. Rousseau attributed the line to a \"great princess,\" without naming Marie Antoinette.",
+   "on_screen_text": "Rousseau: \"a great princess\"",
+   "asset_filename": "frames/scene_004.jpg",
+   "sfx": [
+    "pluma"
+   ],
+   "source_ids": [
+    "SRC-001",
+    "SRC-002"
+   ],
+   "image_credit": "Maurice Quentin de La Tour - Portrait de Jean-Jacques Rousseau (1712-1778), écrivain et philosophe - P210 - Musée Carnavalet. Maurice Quentin de La Tour, Public domain. Wikimedia Commons · original: Musée Carnavalet (Paris Musées). https://commons.wikimedia.org/wiki/File:Maurice_Quentin_de_La_Tour_-_Portrait_de_Jean-Jacques_Rousseau_(1712-1778),_%C3%A9crivain_et_philosophe_-_P210_-_Mus%C3%A9e_Carnavalet.jpg",
+   "visual_description": "File:Maurice Quentin de La Tour - Portrait de Jean-Jacques Rousseau (1712-1778), écrivain et philosophe - P210 - Musée Carnavalet.jpg"
+  },
+  {
+   "id": "scene_005",
+   "arc": "desarrollo",
+   "duration_seconds": 10,
+   "narration": "The line became linked to the queen during the French Revolution, when people sought to discredit the monarchy. It became a symbol of her supposed indifference.",
+   "on_screen_text": "French Revolution",
+   "asset_filename": "frames/scene_005.jpg",
+   "sfx": [
+    "tormenta"
+   ],
+   "source_ids": [
+    "SRC-001",
+    "SRC-002"
+   ],
+   "image_credit": "Exécution de Marie Antoinette le 16 octobre 1793. Unknown authorUnknown author, Public domain. Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Ex%C3%A9cution_de_Marie_Antoinette_le_16_octobre_1793.jpg",
+   "visual_description": "File:Exécution de Marie Antoinette le 16 octobre 1793.jpg"
+  },
+  {
+   "id": "scene_006",
+   "arc": "reflexion_o_pregunta",
+   "duration_seconds": 10,
+   "narration": "So no: there is no evidence that Marie Antoinette said \"let them eat cake.\" It is a line that was pinned on her to criticize the monarchy.",
+   "on_screen_text": "No evidence",
+   "asset_filename": "frames/scene_006.jpg",
+   "sfx": [
+    "madera"
+   ],
+   "source_ids": [
+    "SRC-001",
+    "SRC-002"
+   ],
+   "image_credit": "Brioche aux pépites de chocolat. Jebulon, Public domain. Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Brioche_aux_p%C3%A9pites_de_chocolat.jpg",
+   "visual_description": "File:Brioche aux pépites de chocolat.jpg",
+   "capa": {
+    "tipo": "dato",
+    "valor": "0 evidence",
+    "etiqueta": "that she said it",
+    "fuente": "Britannica · History.com"
+   }
+  }
+ ],
+ "cortinilla_fuentes": {
+  "duration_seconds": 5,
+  "titulo": "Sources",
+  "aviso": "Images: public domain or free license (Wikimedia Commons). Synthetic AI voice (IA). Synthesized audio.",
+  "firma": "Datos y ociosidades · @datosyociosidadesEN",
+  "bg_rgb": [
+   18,
+   16,
+   14
+  ]
+ },
+ "export": {
+  "filename": "capsula_en.mp4",
+  "resolution": "1080x1920",
+  "fps": 30,
+  "loudness_lufs": -14,
+  "plano_seconds": 4.0,
+  "subtitle_max_words": 3
+ },
+ "estructura": "mito_vs_dato",
+ "hook_type": "mito_vs_dato"
+}
