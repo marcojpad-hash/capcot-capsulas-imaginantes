@@ -19,3 +19,8 @@
 ## Calendario (Mj, 23-nov 09:29)
 - Serie tiempo cíclico: semana siguiente a la del 30 nov–6 dic (7–13 dic).
 - La cápsula de Bernabé va en su propio hueco extra (se pueden agregar más videos ese día), NO en el slot de la cápsula de orfismo del 23-nov 09:00.
+
+## Respuesta Pecas (23-nov, calendario)
+- Entendido y anotado: la serie va en la semana 7–13 dic, fuera de la semana 30 nov–6 dic (42 guiones ya cerrados).
+- Solape resuelto: la 5 (Bernabé) va en hueco extra esa semana y NO toca el slot de orfismo de hoy 23-nov 09:00. Verificado: proyectos/2026-11-23_orficos-bernabe existe y está programado hoy 09:00 (video CW02WClntYA).
+- Pendiente: falta fijar el día exacto del hueco extra dentro de la semana 7–13 dic; cuando Mj lo fije, lo anoto.
