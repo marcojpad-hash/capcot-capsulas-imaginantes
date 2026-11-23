@@ -187,3 +187,22 @@ El endpoint de Crossref y los resolutores `doi.org` no fueron accesibles en esta
 La tabla inicial de este radar indicaba que el slot 23:30 no aparecía ocupado en main. Esa observación quedó superada por la lectura posterior de main HEAD `20fa76409a620d909d690d3c04a87bb34f4b42c6` y de `data/tt_fb_alineacion_2026-11-23.json` (blob `3d44386a12298ee06b222ccabfaefb65fe61a6e8`): el registro de YouTube incluye Oso Wojtek a las 23:30. Por tanto, **supersequías 23:30 = CONFLICTO_DE_SLOT_ENTRE_RAMAS**, además de su FAIL narrativo y DOI/resolvedor pendiente. No está disponible para promoción.
 
 El mismo registro confirma Rosetta a las 13:30, que mantiene el conflicto con tropical. Main muestra ocho horarios distintos y diez video_id del día frente al límite documentado de cinco; se registra la discrepancia de capacidad sin intervenir en main ni en la programación. Todo procesamiento/ID preexistente bloquea redispatch. No se modificaron `data/*.json`, storyboards, estados Grok ni decisiones editoriales.
+
+
+## Reintento de fuentes RSS y respaldo oficial — 2026-11-23
+
+Se reintentó la lectura de los endpoints definidos en `scripts/tendencias.py` y Google Trends RSS México. Errores exactos del lector web:
+
+- ScienceDaily ciencia, salud y espacio: `400 Unsupported content-type: application/xml`.
+- Phys.org: `400 Unsupported content-type: text/xml`.
+- NASA: `400 Unsupported content-type: application/rss+xml`.
+- ESA Space Science: `404 Not Found`.
+- Nature RSS: `400 Unsupported content-type: application/rss+xml`.
+- EurekAlert y Agencia SINC: `URL ... is not accessible via this tool`.
+- UNAM Global: `400 Unsupported content-type: application/rss+xml`.
+- Google Trends RSS México: `URL https://trends.google.com/trending/rss?geo=MX is not accessible via this tool`.
+- Crossref API y `doi.org` para el DOI del candidato de sequías: `URL ... is not accessible via this tool`; el resolvedor sigue sin verificación independiente en este entorno.
+
+**Respaldo oficial disponible:** la página HTML de Google Trends para México sí abrió: últimas 24 horas, **271 tendencias** y 25 visibles en la primera página. Predominan deportes, entretenimiento y búsquedas sociales; “temperatura” y “electrificación” aparecen sin contexto suficiente para formular un dato científico verificable. No se convierten en candidatos CAPCOT por inferencia.
+
+Se conservan los cinco candidatos documentados previamente desde fuentes oficiales/primarias; no se agrega otro sin afirmación primaria fechada. No hay slot libre: 13:30 y 23:30 tienen conflicto entre ramas y el registro de main supera el cupo diario. Resultado de investigación de este corte: **sin storyboard nuevo**; no se inventa una fuente, DOI, coordenada ni decisión editorial.
