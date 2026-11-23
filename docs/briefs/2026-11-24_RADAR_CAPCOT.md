@@ -34,7 +34,7 @@ La función `registro_editorial.registros()` reconcilia rotación, publicaciones
 - **Cálculo:** el cambio de 9.3% a 0% equivale a −9.3 puntos porcentuales en la infestación de cría observada en ese sitio; no se extrapola a todas las colmenas ni a otras regiones.
 - **Inferencia:** la hipoxia es el factor causal principal apoyado por el ensayo de control; el mecanismo fisiológico exacto que detiene el desarrollo del ácaro permanece sin resolver.
 - **Recomendación:** mejor candidato narrativo por contraste entre parásito y abeja, experimento de control y límite de evidencia claro. No asignado a 24-nov por cupo agotado. Para un mapa futuro, usar únicamente centros urbanos de referencia (Lhasa y Yunjinghong/Xishuangbanna), nunca presentarlos como coordenadas exactas de apiarios.
-- **Estado de verificación:** página editorial primaria consultada y DOI visible; **PENDIENTE_RESOLVEDOR_CROSSREF**. El endpoint de Crossref y `doi.org` no resolvieron DNS en este run.
+- **Estado de verificación:** resultado editorial indexado de Nature localizado; la apertura directa de la página completa no quedó disponible en esta sesión. Claims limitados al abstract indexado. **PENDING_SOURCE** para cualquier storyboard hasta lectura directa; resolver Crossref también pendiente por DNS.
 
 ### 2. Complejidad del plancton y bomba biológica de carbono
 
