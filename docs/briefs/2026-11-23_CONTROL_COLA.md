@@ -201,3 +201,89 @@ No se modificaron `data/*.json`, main, `cola/entrada`, `cola/estado`, bloqueados
 - Se leyó `.github/workflows/capcot-grok-dispatch.yml`; su ruta de entrada de `push` observa `cola/entrada/*.json`. Los commits de esta revisión tocaron únicamente `docs/briefs/*.md`; no se modificó cola ni se lanzó el workflow.
 - La consulta de historial por GitHub Fetch devolvió literalmente `INVALID_ARGUMENT 400: GitHub Fetch URL is not an allowed public GitHub repository or search endpoint`. La apertura de la página de Actions devolvió `DisabledError`. Por ello, el listado completo de ejecuciones recientes de ese workflow queda **no verificado por el conector**; no se afirma que no existan runs.
 - No se envió payload, no se inspeccionaron valores de secretos y no se infirió recepción Grok a partir de commits o Actions.
+
+
+## Relectura y correcciones verificadas — 23-nov-2026, 06:23 CDMX
+
+### Fuente de verdad de QA: 15 storyboards del 18–23 nov
+
+La relectura de los 15 JSON encontró que la tabla anterior de este control tenía varios scores distintos de los almacenados en los storyboards. Para evitar conservar un reporte contradictorio, los valores vigentes de `narrative_qa` son:
+
+| Project ID | QA vigente en storyboard |
+|---|---:|
+| `2026-11-18_dato-catorce-campos-hidrotermales` | FAIL / 68 |
+| `2026-11-18_dato-kuroshio-puente-atmosferico` | PASS / 90 |
+| `2026-11-19_dato-dia-luz-dos-manos-oro-poroso` | PASS / 91 |
+| `2026-11-19_dato-estrella-dentro-de-estrella` | PASS / 90 |
+| `2026-11-20_dato-dia-atlantico-humedad-sapropeles` | PASS / 91 |
+| `2026-11-20_dato-marea-cerebral-en-sueno` | FAIL / 82 |
+| `2026-11-21_fentale-metano-sin-erupcion` | PASS / 90 |
+| `2026-11-21_homo-erectus-selva-tropical` | FAIL / 83 |
+| `2026-11-21_pulsar-gamma-reticulo` | FAIL / 83 |
+| `2026-11-22_bao-estrella-fusion-andromeda` | FAIL / 84 |
+| `2026-11-22_genes-estatura-etapas` | FAIL / 72 |
+| `2026-11-22_voyager-1-un-dia-luz` | FAIL / 83 |
+| `2026-11-22_yubarta-genoma-soplo` | PASS / 90 |
+| `2026-11-23_supersequias-722-eventos` | FAIL / 82 |
+| `2026-11-23_tropical-biodiversity-turnover` | FAIL / 82 |
+
+Se corrigió únicamente el QA de `2026-11-20_dato-marea-cerebral-en-sueno`: el JSON contenía PASS/92 sin `reviewed_at`, mientras la revisión anterior de este control registraba FAIL/82. Se realizó una nueva lectura en frío de la narración concatenada, sin usar título, resumen, arco, notas ni `narrative_contract`. Resultado: FAIL/82, siete checks verdaderos y `critical_flags=[STAKES_NO_EXPLICADOS]`. La consecuencia concreta de la diferencia por edad para el funcionamiento o la salud no queda explicada. Se comparó la narración antes/después y permaneció idéntica. Solo cambió `narrative_qa`; commit `39e6566aedeab236284f905bf796bfe1872aff45`, blob leído de vuelta `b751a2dc413ba8c607f8fe7fe89e264632d4945f`.
+
+No se repitieron los demás QA ya registrados ni se reescribieron narraciones o claims. Los dos `ESTADO_EJECUCION.md` presentes para el 18-nov ya dicen `BORRADOR_EN_PROYECTOS_NO_APTO_PARA_PROMOCION`; no requieren corrección. No hay `ESTADO_EJECUCION.md` para los otros trece proyectos.
+
+### Recepción, cola y producción
+
+- Los 15 archivos `cola/estado/<project_id>.json` de los proyectos 18–23 devolvieron 404; se conserva `RECEPCION_GROK_NO_CONFIRMADA` para cada uno.
+- Los 12 archivos `cola/estado/<project_id>.json` del lote 5–7 nov también devolvieron 404: 12/12 sin acuse individual.
+- El árbol vigente no contiene el directorio `cola/estado/`, JSON plano actual en `cola/entrada/` ni salidas de los proyectos 18–23. La única entrada heredada es el paquete anidado del 9-nov; no satisface el selector de `cola/entrada/*.json`.
+- El workflow `capcot-grok-dispatch.yml` solo selecciona JSON planos en el nivel superior de `cola/entrada/`. No se disparó workflow ni se envió payload. No se consultaron valores de secretos ni se afirmó que falten.
+
+### Lote interdiario de 12 IDs — relectura de los storyboards
+
+| Project ID | QA vigente |
+|---|---:|
+| `2026-11-05_kids-dia-en-venus` | PASS / 88 |
+| `2026-11-05_comida-palomitas` | FAIL / 82 |
+| `2026-11-05_inter-arboles-se-comunican` | FAIL / 78 |
+| `2026-11-05_inter-rayo-globular` | FAIL / 81 |
+| `2026-11-06_kids-ballena-azul-corazon` | FAIL / 80 |
+| `2026-11-06_comida-aguacate-negro` | FAIL / 79 |
+| `2026-11-06_inter-arena-cantante` | PASS / 94 |
+| `2026-11-06_inter-ranas-congeladas` | FAIL / 83 |
+| `2026-11-07_comida-hielo-caliente` | FAIL / 81 |
+| `2026-11-07_inter-nubes-pesan` | FAIL / 78 |
+| `2026-11-07_inter-pulpo-suenos` | FAIL / 72 |
+| `2026-11-07_kids-huesos-bebe` | FAIL / 82 |
+
+El lote suma 85 escenas. Las seis propiedades narrativas obligatorias `dramatic_beat`, `scene_function`, `causal_bridge_from_previous`, `question_state`, `reason_to_continue` y `new_information` faltan en todas las escenas: 510 ausencias. No se reabrió ningún slot pasado.
+
+Nueve video_id antiguos aparecen en los registros/snapshots de main: `zTP5akrGA9M`, `EX0W3q-yKRw`, `phVfyHp3CnY`, `m4RqQRaz55k`, `UBFuKBU3cx0`, `wbFrlM2e_YE`, `HSgrnejAcaI`, `4Qpl17Ts_vI` y `uEsoscBrfgU`. Tres proyectos no tienen video_id en `publicaciones.json`, `miniaturas_auditoria_2026-11-21.json` ni `rehechos_2026-11-22.json`: rayo globular, aguacate negro y pulpo-sueños. La ausencia de video_id no habilita redispatch: sus slots ya pasaron y sus QA son FAIL.
+
+### Programación preexistente de main y corrección del auditor de snapshots
+
+El snapshot de main `data/miniaturas_auditoria_2026-11-21.json` contiene seis grupos explícitos de colisión en `colisiones_horario_mismo_publishAt[].videos[]`:
+
+| Fecha / slot CDMX | IDs que comparten publishAt |
+|---|---|
+| 23-nov 07:00 | `IQEU2Bqy3v0`, `tmOji99zGPE` |
+| 24-nov 17:00 | `cGb7Z0ZEz8w`, `_YzBY4OfUeo` |
+| 25-nov 07:00 | `cPNiOFeY5_k`, `W9g2tPZTpD4` |
+| 26-nov 17:00 | `JqlKsJOVmdE`, `-1DRh_qj7Bg` |
+| 27-nov 07:00 | `jiX6RdwJ1gg`, `nd0rs6iVy8E` |
+| 28-nov 17:00 | `gN6svdqe62Q`, `fcSNbU809ao` |
+
+Además, `data/rehechos_2026-11-22.json` registra nueve reworks con video_id y publishAt entre el 25 y el 29-nov. Sus rutas declaradas apuntan a `/workspace/capcot_main/proyectos/.../capsula.mp4` y `portada.jpg`; el árbol Git contiene storyboard, metadata, créditos, licencias y `render.log`, pero no esos MP4/JPG. Se marca `MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO`; los video_id y publishAt bastan para bloquear cualquier redispatch. No se canceló ni movió ninguna programación.
+
+La relectura detectó un defecto real en `scripts/auditar_snapshots_programacion.py`: solo consumía `siguen_mal_sin_mp4_no_se_invento` y `rehechos_*.json`, omitiendo los grupos de colisión explícitos anteriores. Eso dejaba fuera publicaciones programadas que no pertenecen a la lista de medios faltantes. Se corrigió el parser para leer `colisiones_horario_mismo_publishAt[].videos[]`, producir una ocupación por video y deduplicar contra registros de la lista anterior. Se añadieron pruebas para el esquema real y la deduplicación:
+
+- Script: commit `39844689a604b8da71614b2547a7dcb85470754d`; lectura de vuelta confirmada.
+- Tests: commit `28e10cb03958ce2cd90ee63fd9f4da72cd55acd8`; lectura de vuelta confirmó las dos pruebas nuevas.
+- La suite no se ejecutó en esta sesión. CodeQL de los commits del script y tests terminó en success; eso no equivale a unittest. El workflow semanal `capcot-descubrimiento.yml` ejecuta `python -m unittest discover -s tests -p 'test_*.py' -v` los lunes a las 14:30 UTC (08:30 CDMX); no se disparó manualmente.
+
+Los radars 24 y 25 ya registran el cupo lleno; el snapshot también muestra ocupaciones/collisiones hasta el 29-nov. No se creó storyboard adicional ni se promovió el borrador de 23:30. `supersequias` y `tropical` siguen FAIL/82; el primero conserva DOI/resolvedor pendiente y el segundo tiene conflicto de slot con Rosetta en main. No hay slot libre confirmado.
+
+### Ingesta y cierre
+
+La relectura de RSS y Google Trends, con errores exactos y respaldo editorial primario, quedó añadida al radar 23-nov (commit `be49b2e3bb2124a7b4fdb942b0724724886ad831`). Google Trends HTML mostró 274 tendencias, 25 visibles; no se encontró tema científico/natural utilizable en esa primera página. Cuatro páginas primarias recientes (PLOS Biology, Nature Astronomy, Nature Communications y Nature Climate Change) mostraron sus DOI, pero Crossref y `doi.org` no fueron accesibles; los cuatro permanecen `PENDIENTE_RESOLVEDOR`. No se asignó candidato a un slot.
+
+**Resultado del corte:** QA y recepción revalidados; marea corregido a FAIL82 sin tocar narración; auditor de snapshots corregido y probado por lectura de vuelta; ningún proyecto actual es promocionable; ningún workflow ni publicación se ejecutó.
