@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-16",
+ "actualizado": "2026-11-23",
  "zona_horaria": "America/Mexico_City (UTC-6 todo el año, sin horario de verano)",
  "punto_de_partida_previo": [
   "12:00-14:00",
@@ -27,13 +27,15 @@
     "propio_yt_semana_26oct",
     "propio_yt_semana_02nov",
     "trendreport_mx_shorts_2026-11",
-    "propio_yt_semana_09nov"
+    "propio_yt_semana_09nov",
+    "trendreport_mx_2026-11-23",
+    "propio_yt_semana_16nov"
    ]
   },
   {
-   "id": "mediodia",
-   "inicio": "13:00",
-   "fin": "14:30",
+   "id": "tarde",
+   "inicio": "16:30",
+   "fin": "18:00",
    "plataformas": [
     "youtube_shorts",
     "tiktok"
@@ -41,15 +43,20 @@
    "dias_preferentes": [
     "mar",
     "mie",
-    "jue",
-    "vie",
     "sab"
    ],
-   "cubre": "Comida MX; SocialPilot 2026 Shorts 12-14 h local; ET 14:00-15:30 (invierno); España 20:00-21:30 CET.",
+   "cubre": "Salida de escuela/trabajo MX; 4 p.m. local Shorts (Adobe); educación TikTok mié 4-6 p.m. (Hootsuite); Sprout 15-18 h. España ya es 23-01 (no cubre).",
    "base": [
-    "socialpilot_shorts_2026",
-    "propio_yt_semana_09nov"
-   ]
+    "adobe_shorts",
+    "hootsuite_edu",
+    "sprout_via_m4e",
+    "buffer_youtube",
+    "sprout_2026",
+    "propio_yt_semana_02nov",
+    "propio_yt_semana_16nov"
+   ],
+   "estado": "activa de nuevo desde 23-nov",
+   "motivo": "semana 16-22 nov: 17:00 = 3 Shorts, mediana 91 vistas (91, 215, 42), la mejor mediana después de 07:00"
   }
  ],
  "regla_variable": "Rotar la hora exacta dentro de la ventana (p.ej. 12:15, 13:00, 13:40) y alternar ventana principal por día; registrar resultados en metricas.db y ajustar semanalmente.",
@@ -223,6 +230,12 @@
    "url": "https://clipiku.com/blog/mejor-hora-publicar-tiktok",
    "tz_original": "local",
    "dice": "Resume Sprout 2026 (307k perfiles: TikTok mar-jue 14-18 h local) y Buffer 2026 (7.1M posts: noches 18-23 h; tardes 12-17 h flojas); estudios no coinciden, verificar con analíticas propias."
+  },
+  {
+   "id": "trendreport_mx_2026-11-23",
+   "url": "https://trendreport.com/channels/best-time-to-upload/in-mexico/",
+   "tz_original": "CDMX",
+   "dice": "Actualizado 23-nov-2026, 15,927 subidas de 76 canales MX (23-nov-2025 a 21-nov-2026): largos mejor 6-9 a.m. (+26%), evitar 20-23 h (-9%); Shorts mejor 22-01 h (+11%), mejor día viernes (+4%); muestra chica, la hora importa poco."
   }
  ],
  "historial_ajustes": [
@@ -286,6 +299,18 @@
    ],
    "por_que": "YT propio 9-15 nov (26 Shorts, vistas al 16-nov ~10:30 vía yt-dlp, sesgo de edad y tema): 13:30 = 4 videos, media 236, mediana ~87 (árboles 749, Andes 138); 07:00 = 8, media 178, mediana ~70 (huesos bebé 919, ballena 208; varios <30); 17:00 = 4, mediana ~15; noche 19:00-23:30 = Mpemba 23:00 966, arroz 19:00 300, ratas 23:30 285. Público: TrendReport MX (15-nov) Shorts 4-7 a.m.; SocialPilot 2026 Shorts 12-14 h. Se oficializa mediodía y la tarde pasa a prueba.",
    "sin_datos": "Retención por hora no disponible (token OAuth YouTube revocado: invalid_grant). TikTok sin vistas por hora de publicación; solo totales 14,401→18,454 (9→15 nov)."
+  },
+  {
+   "fecha": "2026-11-23",
+   "antes": [
+    "06:30-07:30",
+    "13:00-14:30"
+   ],
+   "despues": [
+    "06:30-07:30",
+    "16:30-18:00"
+   ],
+   "por_que": "YT 16-22 nov por hora (mediana vistas): 07:00 92 (n6), 17:00 91 (n3), 23:30 48 (n6), 13:30 30 (n6), 19:00 31 (n6). Analytics semana: 4,873 vistas, +13 subs, 75% visto promedio."
   }
  ],
  "politica_desde_2026-11-05": {
@@ -316,9 +341,9 @@
    "motivo": "semana 26-oct a 1-nov: 19:00 promedió ~510 vistas (7 videos) vs ~920 a las 07:00 (3) y ~710 a mediodía (8); muestra chica y con sesgo de tema (series Día de Muertos)"
   },
   {
-   "id": "tarde",
-   "inicio": "16:30",
-   "fin": "18:00",
+   "id": "mediodia",
+   "inicio": "13:00",
+   "fin": "14:30",
    "plataformas": [
     "youtube_shorts",
     "tiktok"
@@ -326,19 +351,17 @@
    "dias_preferentes": [
     "mar",
     "mie",
+    "jue",
+    "vie",
     "sab"
    ],
-   "cubre": "Salida de escuela/trabajo MX; 4 p.m. local Shorts (Adobe); educación TikTok mié 4-6 p.m. (Hootsuite); Sprout 15-18 h. España ya es 23-01 (no cubre).",
+   "cubre": "Comida MX; SocialPilot 2026 Shorts 12-14 h local; ET 14:00-15:30 (invierno); España 20:00-21:30 CET.",
    "base": [
-    "adobe_shorts",
-    "hootsuite_edu",
-    "sprout_via_m4e",
-    "buffer_youtube",
-    "sprout_2026",
-    "propio_yt_semana_02nov"
+    "socialpilot_shorts_2026",
+    "propio_yt_semana_09nov"
    ],
-   "estado": "pasa a prueba desde 16-nov (17:00 fue la más floja 9-15 nov); reversible",
-   "motivo": "semana 9-15 nov: 17:00 = 4 Shorts, mediana ~15 vistas (8, 23, 0, 528); el único alto fue aves 528 por tema"
+   "estado": "pasa a prueba desde 23-nov; reversible",
+   "motivo": "semana 16-22 nov: 13:30 = 6 Shorts, mediana ~30 vistas (985, 95, 38, 21, 17, 7); solo el coral jaló"
   }
  ],
  "politica_desde_2026-11-09": {
@@ -367,5 +390,20 @@
   ],
   "tiktok_rutina": "07:00 sin cambio (cae en ventana mañana)",
   "decidio": "rutina ajuste semanal 16-nov (reversible por Mj)"
+ },
+ "politica_desde_2026-11-23": {
+  "ventanas": [
+   "06:30-07:30",
+   "16:30-18:00"
+  ],
+  "slot_fijo": "23:30 dato",
+  "tiktok_mirror": [
+   "07:00",
+   "17:00",
+   "23:30"
+  ],
+  "tiktok_rutina": "07:00 sin cambio (cae en ventana mañana)",
+  "evitar": "19:00 (mediana 31, n6) y 20-23 h (Trendreport -9%)",
+  "decidio": "rutina ajuste semanal 23-nov (reversible por Mj)"
  }
 }
