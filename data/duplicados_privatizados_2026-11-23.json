@@ -1,0 +1,582 @@
+{
+  "generado_cdmx": "2026-11-23 14:33:00 CST",
+  "zona": "America/Mexico_City (CST, UTC-6)",
+  "orden": "t613s2839 / t613u widget: pasar a privado las copias públicas de más (dejar UNA pública por tema, la de más vistas) y mover Mitra/Alvar 6OuHVN5dbbs de 17:00 a 18:00 CDMX del 23-nov. No borrar nada. No tocar canal EN ni Cleopatra.",
+  "fuente": {
+    "canal_es": "UCU2ZI-6pBJEr9aSFsF6bxLw",
+    "handle": "@datosyociosidades",
+    "token": "/home/box/.capcot/token.json",
+    "verificacion_token": "channels.list mine=true = UCU2ZI-6pBJEr9aSFsF6bxLw (Datos y ociosidades, @datosyociosidades). No se usó token.marcojuarez_personal.json.",
+    "api": "YouTube Data API v3 videos.list / videos.update part=status (se conservaron license, embeddable, publicStatsViewable, selfDeclaredMadeForKids y containsSyntheticMedia si existían)."
+  },
+  "temas": [
+    {
+      "tema": "Hipo",
+      "titulo": "¿Por qué tenemos hipo? #Shorts",
+      "criterio": "dejar pública la de más vistas",
+      "publico_que_quedo": {
+        "id": "4lOWeMn2RCo",
+        "vistas": 8,
+        "publishedAt": "2026-11-09T23:00:39Z",
+        "privacyStatus_despues": "public"
+      },
+      "privatizados": [
+        {
+          "id": "Rg-iTgMExWw",
+          "ok": true,
+          "antes": {
+            "id": "Rg-iTgMExWw",
+            "title": "¿Por qué tenemos hipo? #Shorts",
+            "privacyStatus": "public",
+            "publishAt": null,
+            "vistas": 1,
+            "likes": 0,
+            "publishedAt": "2026-11-04T13:00:33Z",
+            "license": "youtube",
+            "embeddable": true,
+            "publicStatsViewable": true,
+            "selfDeclaredMadeForKids": false,
+            "containsSyntheticMedia": null,
+            "madeForKids": false,
+            "channelId": "UCU2ZI-6pBJEr9aSFsF6bxLw"
+          },
+          "despues": {
+            "id": "Rg-iTgMExWw",
+            "title": "¿Por qué tenemos hipo? #Shorts",
+            "privacyStatus": "private",
+            "publishAt": null,
+            "vistas": 1,
+            "likes": 0,
+            "publishedAt": "2026-11-04T13:00:33Z",
+            "license": "youtube",
+            "embeddable": true,
+            "publicStatsViewable": true,
+            "selfDeclaredMadeForKids": false,
+            "containsSyntheticMedia": null,
+            "madeForKids": false,
+            "channelId": "UCU2ZI-6pBJEr9aSFsF6bxLw"
+          },
+          "status_enviado": {
+            "privacyStatus": "private",
+            "license": "youtube",
+            "embeddable": true,
+            "publicStatsViewable": true,
+            "selfDeclaredMadeForKids": false
+          }
+        },
+        {
+          "id": "41PYjWbQuJo",
+          "ok": true,
+          "antes": {
+            "id": "41PYjWbQuJo",
+            "title": "¿Por qué tenemos hipo? #Shorts",
+            "privacyStatus": "public",
+            "publishAt": null,
+            "vistas": 0,
+            "likes": 0,
+            "publishedAt": "2026-11-18T13:00:37Z",
+            "license": "youtube",
+            "embeddable": true,
+            "publicStatsViewable": true,
+            "selfDeclaredMadeForKids": false,
+            "containsSyntheticMedia": null,
+            "madeForKids": false,
+            "channelId": "UCU2ZI-6pBJEr9aSFsF6bxLw"
+          },
+          "despues": {
+            "id": "41PYjWbQuJo",
+            "title": "¿Por qué tenemos hipo? #Shorts",
+            "privacyStatus": "private",
+            "publishAt": null,
+            "vistas": 0,
+            "likes": 0,
+            "publishedAt": "2026-11-18T13:00:37Z",
+            "license": "youtube",
+            "embeddable": true,
+            "publicStatsViewable": true,
+            "selfDeclaredMadeForKids": false,
+            "containsSyntheticMedia": null,
+            "madeForKids": false,
+            "channelId": "UCU2ZI-6pBJEr9aSFsF6bxLw"
+          },
+          "status_enviado": {
+            "privacyStatus": "private",
+            "license": "youtube",
+            "embeddable": true,
+            "publicStatsViewable": true,
+            "selfDeclaredMadeForKids": false
+          }
+        }
+      ]
+    },
+    {
+      "tema": "Corneja",
+      "titulo": "La corneja decide en 235 milisegundos #Shorts",
+      "criterio": "dejar pública la de más vistas",
+      "publico_que_quedo": {
+        "id": "ZHdJXFrURk4",
+        "vistas": 22,
+        "publishedAt": "2026-10-31T18:24:13Z",
+        "privacyStatus_despues": "public"
+      },
+      "privatizados": [
+        {
+          "id": "wxnhEdlJYwU",
+          "ok": true,
+          "antes": {
+            "id": "wxnhEdlJYwU",
+            "title": "La corneja decide en 235 milisegundos #Shorts",
+            "privacyStatus": "public",
+            "publishAt": null,
+            "vistas": 1,
+            "likes": 0,
+            "publishedAt": "2026-11-11T23:00:28Z",
+            "license": "youtube",
+            "embeddable": true,
+            "publicStatsViewable": true,
+            "selfDeclaredMadeForKids": false,
+            "containsSyntheticMedia": null,
+            "madeForKids": false,
+            "channelId": "UCU2ZI-6pBJEr9aSFsF6bxLw"
+          },
+          "despues": {
+            "id": "wxnhEdlJYwU",
+            "title": "La corneja decide en 235 milisegundos #Shorts",
+            "privacyStatus": "private",
+            "publishAt": null,
+            "vistas": 1,
+            "likes": 0,
+            "publishedAt": "2026-11-11T23:00:28Z",
+            "license": "youtube",
+            "embeddable": true,
+            "publicStatsViewable": true,
+            "selfDeclaredMadeForKids": false,
+            "containsSyntheticMedia": null,
+            "madeForKids": false,
+            "channelId": "UCU2ZI-6pBJEr9aSFsF6bxLw"
+          },
+          "status_enviado": {
+            "privacyStatus": "private",
+            "license": "youtube",
+            "embeddable": true,
+            "publicStatsViewable": true,
+            "selfDeclaredMadeForKids": false
+          }
+        },
+        {
+          "id": "AxgWdhqPhRI",
+          "ok": true,
+          "antes": {
+            "id": "AxgWdhqPhRI",
+            "title": "La corneja decide en 235 milisegundos #Shorts",
+            "privacyStatus": "public",
+            "publishAt": null,
+            "vistas": 5,
+            "likes": 0,
+            "publishedAt": "2026-11-19T13:00:26Z",
+            "license": "youtube",
+            "embeddable": true,
+            "publicStatsViewable": true,
+            "selfDeclaredMadeForKids": false,
+            "containsSyntheticMedia": null,
+            "madeForKids": false,
+            "channelId": "UCU2ZI-6pBJEr9aSFsF6bxLw"
+          },
+          "despues": {
+            "id": "AxgWdhqPhRI",
+            "title": "La corneja decide en 235 milisegundos #Shorts",
+            "privacyStatus": "private",
+            "publishAt": null,
+            "vistas": 5,
+            "likes": 0,
+            "publishedAt": "2026-11-19T13:00:26Z",
+            "license": "youtube",
+            "embeddable": true,
+            "publicStatsViewable": true,
+            "selfDeclaredMadeForKids": false,
+            "containsSyntheticMedia": null,
+            "madeForKids": false,
+            "channelId": "UCU2ZI-6pBJEr9aSFsF6bxLw"
+          },
+          "status_enviado": {
+            "privacyStatus": "private",
+            "license": "youtube",
+            "embeddable": true,
+            "publicStatsViewable": true,
+            "selfDeclaredMadeForKids": false
+          }
+        }
+      ]
+    },
+    {
+      "tema": "Oxoboranos",
+      "titulo": "Químicos aislan oxoboranos estables tras 60 años #Shorts",
+      "criterio": "dejar pública la de más vistas",
+      "busqueda_tercera_copia": "En el canal ES (uploads + videos.list) solo hay 2 copias públicas de oxoboranos: K4qNkx2f4RI y B-75KkHAVDo. No hay una tercera.",
+      "publico_que_quedo": {
+        "id": "K4qNkx2f4RI",
+        "vistas": 7,
+        "publishedAt": "2026-11-21T19:30:13Z",
+        "privacyStatus_despues": "public"
+      },
+      "privatizados": [
+        {
+          "id": "B-75KkHAVDo",
+          "ok": true,
+          "antes": {
+            "id": "B-75KkHAVDo",
+            "title": "Químicos aislan oxoboranos estables tras 60 años #Shorts",
+            "privacyStatus": "public",
+            "publishAt": null,
+            "vistas": 5,
+            "likes": 0,
+            "publishedAt": "2026-11-22T20:30:19Z",
+            "license": "youtube",
+            "embeddable": true,
+            "publicStatsViewable": true,
+            "selfDeclaredMadeForKids": false,
+            "containsSyntheticMedia": null,
+            "madeForKids": false,
+            "channelId": "UCU2ZI-6pBJEr9aSFsF6bxLw"
+          },
+          "despues": {
+            "id": "B-75KkHAVDo",
+            "title": "Químicos aislan oxoboranos estables tras 60 años #Shorts",
+            "privacyStatus": "private",
+            "publishAt": null,
+            "vistas": 5,
+            "likes": 0,
+            "publishedAt": "2026-11-22T20:30:19Z",
+            "license": "youtube",
+            "embeddable": true,
+            "publicStatsViewable": true,
+            "selfDeclaredMadeForKids": false,
+            "containsSyntheticMedia": null,
+            "madeForKids": false,
+            "channelId": "UCU2ZI-6pBJEr9aSFsF6bxLw"
+          },
+          "status_enviado": {
+            "privacyStatus": "private",
+            "license": "youtube",
+            "embeddable": true,
+            "publicStatsViewable": true,
+            "selfDeclaredMadeForKids": false
+          }
+        }
+      ]
+    },
+    {
+      "tema": "¿La IA nos va a matar?",
+      "titulos": [
+        "¿La IA nos va a matar? La advertencia de un directivo de OpenAI",
+        "¿La IA nos va a matar? La advertencia de un directivo de OpenAI #Shorts"
+      ],
+      "criterio": "dejar pública la de más vistas",
+      "publico_que_quedo": {
+        "id": "Vx8EhL4ib7I",
+        "vistas": 39,
+        "publishedAt": "2026-11-18T05:30:16Z",
+        "privacyStatus_despues": "public",
+        "nota": "Título sin #Shorts; duración PT1M26S vs PT1M20S de la copia."
+      },
+      "privatizados": [
+        {
+          "id": "IQEU2Bqy3v0",
+          "ok": true,
+          "antes": {
+            "id": "IQEU2Bqy3v0",
+            "title": "¿La IA nos va a matar? La advertencia de un directivo de OpenAI #Shorts",
+            "privacyStatus": "public",
+            "publishAt": null,
+            "vistas": 4,
+            "likes": 0,
+            "publishedAt": "2026-11-23T13:00:28Z",
+            "license": "youtube",
+            "embeddable": true,
+            "publicStatsViewable": true,
+            "selfDeclaredMadeForKids": false,
+            "containsSyntheticMedia": null,
+            "madeForKids": false,
+            "channelId": "UCU2ZI-6pBJEr9aSFsF6bxLw"
+          },
+          "despues": {
+            "id": "IQEU2Bqy3v0",
+            "title": "¿La IA nos va a matar? La advertencia de un directivo de OpenAI #Shorts",
+            "privacyStatus": "private",
+            "publishAt": null,
+            "vistas": 4,
+            "likes": 0,
+            "publishedAt": "2026-11-23T13:00:28Z",
+            "license": "youtube",
+            "embeddable": true,
+            "publicStatsViewable": true,
+            "selfDeclaredMadeForKids": false,
+            "containsSyntheticMedia": null,
+            "madeForKids": false,
+            "channelId": "UCU2ZI-6pBJEr9aSFsF6bxLw"
+          },
+          "status_enviado": {
+            "privacyStatus": "private",
+            "license": "youtube",
+            "embeddable": true,
+            "publicStatsViewable": true,
+            "selfDeclaredMadeForKids": false
+          }
+        }
+      ]
+    },
+    {
+      "tema": "Apagón / «se fugo la ia»",
+      "criterio": "Orden explícita: dejar pública Z-nt8t7qPx8 (14 vistas) y privatizar jeUrM5zzkdA, aunque el 17-nov se había pedido pasar ambas a privado.",
+      "publico_que_quedo": {
+        "id": "Z-nt8t7qPx8",
+        "title": "No habrá apagón el 17 de noviembre",
+        "vistas": 14,
+        "publishedAt": "2026-11-16T01:53:06Z",
+        "privacyStatus_despues": "public"
+      },
+      "privatizados": [
+        {
+          "id": "jeUrM5zzkdA",
+          "ok": true,
+          "antes": {
+            "id": "jeUrM5zzkdA",
+            "title": "se fugo la ia",
+            "privacyStatus": "public",
+            "publishAt": null,
+            "vistas": 0,
+            "likes": 0,
+            "publishedAt": "2026-11-15T21:40:06Z",
+            "license": "youtube",
+            "embeddable": true,
+            "publicStatsViewable": true,
+            "selfDeclaredMadeForKids": null,
+            "containsSyntheticMedia": null,
+            "madeForKids": false,
+            "channelId": "UCU2ZI-6pBJEr9aSFsF6bxLw"
+          },
+          "despues": {
+            "id": "jeUrM5zzkdA",
+            "title": "se fugo la ia",
+            "privacyStatus": "private",
+            "publishAt": null,
+            "vistas": 0,
+            "likes": 0,
+            "publishedAt": "2026-11-15T21:40:06Z",
+            "license": "youtube",
+            "embeddable": true,
+            "publicStatsViewable": true,
+            "selfDeclaredMadeForKids": null,
+            "containsSyntheticMedia": null,
+            "madeForKids": false,
+            "channelId": "UCU2ZI-6pBJEr9aSFsF6bxLw"
+          },
+          "status_enviado": {
+            "privacyStatus": "private",
+            "license": "youtube",
+            "embeddable": true,
+            "publicStatsViewable": true
+          }
+        }
+      ]
+    }
+  ],
+  "mitra_alvar": {
+    "id": "6OuHVN5dbbs",
+    "title": "El Mitra romano no llegó ya hecho de Persia",
+    "accion": "reschedule",
+    "ok": true,
+    "antes": {
+      "privacyStatus": "private",
+      "publishAt": "2026-11-23T23:00:00Z",
+      "publishAt_cdmx": "2026-11-23 17:00:00 CST",
+      "vistas": 3
+    },
+    "despues": {
+      "privacyStatus": "private",
+      "publishAt": "2026-11-24T00:00:00Z",
+      "publishAt_cdmx": "2026-11-23 18:00:00 CST",
+      "vistas": 3
+    },
+    "verificado_videos_list": true,
+    "nota": "Sigue private+programado. El cambio se hizo a las ~14:33 CST, antes de las 17:00."
+  },
+  "verificacion_final_keepers": {
+    "4lOWeMn2RCo": {
+      "id": "4lOWeMn2RCo",
+      "title": "¿Por qué tenemos hipo? #Shorts",
+      "privacyStatus": "public",
+      "vistas": 8
+    },
+    "K4qNkx2f4RI": {
+      "id": "K4qNkx2f4RI",
+      "title": "Químicos aislan oxoboranos estables tras 60 años #Shorts",
+      "privacyStatus": "public",
+      "vistas": 7
+    },
+    "Vx8EhL4ib7I": {
+      "id": "Vx8EhL4ib7I",
+      "title": "¿La IA nos va a matar? La advertencia de un directivo de OpenAI",
+      "privacyStatus": "public",
+      "vistas": 39
+    },
+    "Z-nt8t7qPx8": {
+      "id": "Z-nt8t7qPx8",
+      "title": "No habrá apagón el 17 de noviembre",
+      "privacyStatus": "public",
+      "vistas": 14
+    },
+    "ZHdJXFrURk4": {
+      "id": "ZHdJXFrURk4",
+      "title": "La corneja decide en 235 milisegundos #Shorts",
+      "privacyStatus": "public",
+      "vistas": 22
+    }
+  },
+  "no_se_borro_nada": true,
+  "canal_en_y_cleopatra_no_tocados": true,
+  "otros_titulos_publicos_duplicados_no_tocados": [
+    {
+      "titulo": "El rosa del flamenco viene de su comida #Shorts",
+      "copias_publicas": [
+        {
+          "id": "msWV2AXr6Uk",
+          "vistas": 118,
+          "publishedAt": "2026-11-20T13:00:37Z",
+          "duration": "PT1M22S"
+        },
+        {
+          "id": "JV8SB2EpPyI",
+          "vistas": 3,
+          "publishedAt": "2026-11-14T13:00:06Z",
+          "duration": "PT1M22S"
+        }
+      ],
+      "nota": "Mismo título y misma duración. No se tocó."
+    },
+    {
+      "titulo": "¿Aves que temen a mujeres?",
+      "copias_publicas": [
+        {
+          "id": "YVfUrd2NQJw",
+          "vistas": 532,
+          "publishedAt": "2026-11-12T23:00:29Z",
+          "duration": "PT1M28S"
+        },
+        {
+          "id": "O7TdKvuBjyg",
+          "vistas": 25,
+          "publishedAt": "2026-10-24T23:59:18Z",
+          "duration": "PT1M28S"
+        }
+      ],
+      "nota": "Mismo título y misma duración. No se tocó."
+    },
+    {
+      "titulo": "El hielo que sostuvo tres mantos #Shorts",
+      "copias_publicas": [
+        {
+          "id": "KnP1j4y72ug",
+          "vistas": 95,
+          "publishedAt": "2026-11-17T19:30:05Z",
+          "duration": "PT1M31S"
+        },
+        {
+          "id": "HDQr9OGpFJM",
+          "vistas": 80,
+          "publishedAt": "2026-11-01T23:00:05Z",
+          "duration": "PT1M22S"
+        }
+      ],
+      "nota": "Mismo título, distinta duración (posible rehecho). No se tocó."
+    },
+    {
+      "titulo": "El coral blanqueado que volvió a recuperarse #Shorts",
+      "copias_publicas": [
+        {
+          "id": "45WOvkNQTHo",
+          "vistas": 985,
+          "publishedAt": "2026-11-16T19:30:32Z",
+          "duration": "PT1M31S"
+        },
+        {
+          "id": "Mz-IVFvFWH4",
+          "vistas": 137,
+          "publishedAt": "2026-10-31T19:30:24Z",
+          "duration": "PT1M36S"
+        }
+      ],
+      "nota": "Mismo título, distinta duración (posible rehecho). No se tocó."
+    }
+  ],
+  "pantallas_finales": {
+    "archivo": "data/endscreens_rotacion.json",
+    "nota": "No se corrigieron. Estado reconstruido reaplicando aplicado_studio_log más las propuestas aplicadas que no están en el log (propuesta_2026-11-22_23 y propuesta_2026-11-23_08), y luego la pasada de las 11:15 CST del 23-nov.",
+    "destino_ahora_privado": [
+      {
+        "origen": "YXndoPSSeaY",
+        "destino_privatizado": "Rg-iTgMExWw",
+        "ultima_aplicacion": "2026-11-23T11:15-06:00 (log, pasada 11h)",
+        "nota": "Gutenberg apunta al hipo copia. Confirmado en la última pasada de Studio."
+      },
+      {
+        "origen": "8okieDXFIgU",
+        "destino_privatizado": "IQEU2Bqy3v0",
+        "ultima_aplicacion": "2026-11-23 propuesta_08 (aplicado_9de9; no está en el log). La pasada de las 11h no tocó este origen."
+      },
+      {
+        "origen": "KnP1j4y72ug",
+        "destino_privatizado": "Rg-iTgMExWw",
+        "ultima_aplicacion": "2026-11-18T17:07-06:00 (log). No aparece en pasadas posteriores."
+      },
+      {
+        "origen": "45WOvkNQTHo",
+        "destino_privatizado": "41PYjWbQuJo",
+        "ultima_aplicacion": "2026-11-18 08:06 CDMX (log). No aparece en pasadas posteriores."
+      },
+      {
+        "origen": "dz2C-Y8klXA",
+        "destino_privatizado": "41PYjWbQuJo",
+        "ultima_aplicacion": "2026-11-18T23:05-06:00 (log). No aparece en pasadas posteriores."
+      },
+      {
+        "origen": "25mWYJVOPLk",
+        "destino_privatizado": "41PYjWbQuJo",
+        "ultima_aplicacion": "2026-11-18 14:12 CDMX (log). No aparece en pasadas posteriores."
+      },
+      {
+        "origen": "XL0f90ZtwpY",
+        "destino_privatizado": "wxnhEdlJYwU",
+        "ultima_aplicacion": "2026-11-18T23:05-06:00 (log). No aparece en pasadas posteriores."
+      }
+    ],
+    "origen_ahora_privado": [
+      {
+        "origen_privatizado": "wxnhEdlJYwU",
+        "destino": "4Vi_TnIl9FI",
+        "ultima_aplicacion": "2026-11-23T11:15-06:00"
+      },
+      {
+        "origen_privatizado": "AxgWdhqPhRI",
+        "destino": "4Vi_TnIl9FI",
+        "ultima_aplicacion": "2026-11-23T11:15-06:00"
+      },
+      {
+        "origen_privatizado": "B-75KkHAVDo",
+        "destino": "4Vi_TnIl9FI",
+        "ultima_aplicacion": "2026-11-23T11:15-06:00"
+      },
+      {
+        "origen_privatizado": "Rg-iTgMExWw",
+        "destino": "8okieDXFIgU",
+        "ultima_aplicacion": "2026-11-23 propuesta_08"
+      },
+      {
+        "origen_privatizado": "41PYjWbQuJo",
+        "destino": "8okieDXFIgU",
+        "ultima_aplicacion": "2026-11-22T17:22-06:00"
+      }
+    ],
+    "mapa_legacy_data_mapa": "El mapa histórico de octubre no incluye ninguno de estos ids. Las pantallas vigentes de Shorts están en las propuestas/log de noviembre."
+  }
+}
