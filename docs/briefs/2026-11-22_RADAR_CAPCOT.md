@@ -394,3 +394,11 @@ La nota anterior que dejaba la lectura narrativa pendiente queda sustituida por 
 - Preflight estático: 8 escenas, 231 palabras, 84 s totales (78 + 6), gancho de 5 palabras, voz oficial, `papel_stop_motion` presente en catálogo, prompt_base literal, mapa institucional y capa de dato, referencias internas consistentes, `approved_assets=[]`, `export.render_status=NOT_GENERATED` y sin rutas/nombres de medios.
 - No se ejecutó el validador oficial ni `--check-doi` en esta auditoría. El DOI sigue documentado como Crossref verificado en la investigación previa; no se afirma una nueva consulta en este run.
 - Estado: `BORRADOR_EN_PROYECTOS`, no seleccionado, no promovido, no recibido por Grok. `RECEPCION_GROK_NO_CONFIRMADA`. No existe conflicto de slot con una publicación en main a las 23:30, pero FAIL impide handoff.
+
+
+## Reconsulta final de señales — 22-nov-2026, 22:01 CDMX
+
+- Google Trends oficial México: https://trends.google.com/trending?geo=MX&hl=es-419 devolvió 258 tendencias (25 visibles en la primera página). El corte vespertino anterior registró 263; la variación del contador no cambia la selección editorial. Señales no deportivas visibles: «desierto de Atacama» (1K+, 8 h), «superluna» (2K+, 13 h), «folclore» y «mercado navideño» (20K+ cada una, 21–23 h). Ninguna aporta por sí sola un claim científico ni fuente primaria.
+- NASA Science para el 22-nov muestra APOD «Swirls and Colors on Jupiter from Juno» y la pieza conmemorativa «65 Years of Human Spaceflight at NASA Johnson». APOD remite a una observación de 2018; no es hallazgo nuevo. No se identificó otra noticia científica con fuente primaria publicada el mismo día.
+- El único candidato de la shortlist que sí se publicó el 22-nov es el borrador existente `2026-11-22_genes-estatura-etapas`. Su narración permanece idéntica al blob previo `e0e32f9705bba8ccd87dfd6e24c2d36b11724346`; QA independiente vigente `FAIL/72`. No repetir QA, no duplicar, no promover. Slot 23:30: `NO_DUPLICAR`; cualquier nuevo dato del día: `PENDING_SOURCE`.
+- Los errores exactos de RSS y la ausencia de lectura post-hora de publicaciones quedan documentados en `2026-11-22_CONTROL_COLA.md`. No se modificó ningún `data/*.json`, no se generaron medios ni se creó entrada/estado Grok.
