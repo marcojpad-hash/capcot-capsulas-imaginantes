@@ -34,7 +34,7 @@ La función `registro_editorial.registros()` reconcilia rotación, publicaciones
 - **Cálculo:** el cambio de 9.3% a 0% equivale a −9.3 puntos porcentuales en la infestación de cría observada en ese sitio; no se extrapola a todas las colmenas ni a otras regiones.
 - **Inferencia:** la hipoxia es el factor causal principal apoyado por el ensayo de control; el mecanismo fisiológico exacto que detiene el desarrollo del ácaro permanece sin resolver.
 - **Recomendación:** mejor candidato narrativo por contraste entre parásito y abeja, experimento de control y límite de evidencia claro. No asignado a 24-nov por cupo agotado. Para un mapa futuro, usar únicamente centros urbanos de referencia (Lhasa y Yunjinghong/Xishuangbanna), nunca presentarlos como coordenadas exactas de apiarios.
-- **Estado de verificación:** resultado editorial indexado de Nature localizado; la apertura directa de la página completa no quedó disponible en esta sesión. Claims limitados al abstract indexado. **PENDING_SOURCE** para cualquier storyboard hasta lectura directa; resolver Crossref también pendiente por DNS.
+- **Estado de verificación:** texto completo de la página primaria PLOS consultado; DOI visible. **PENDIENTE_RESOLVEDOR_CROSSREF** por fallo DNS.
 
 ### 2. Complejidad del plancton y bomba biológica de carbono
 
@@ -45,7 +45,7 @@ La función `registro_editorial.registros()` reconcilia rotación, publicaciones
 - **Cálculo:** la configuración más compleja proyecta una caída 7.0 puntos porcentuales mayor que la configuración por defecto (12.8 − 5.8).
 - **Inferencia:** una representación demasiado simple de la red alimentaria puede subestimar el debilitamiento futuro de la exportación de carbono. Son proyecciones de modelo, no una medición de una caída observada hoy.
 - **Recomendación:** conservar como candidato posterior; requiere explicar con claridad la diferencia entre producción primaria, producción comunitaria y exportación de carbono.
-- **Estado de verificación:** texto completo de la página primaria PLOS consultado; DOI visible. **PENDIENTE_RESOLVEDOR_CROSSREF** por fallo DNS.
+- **Estado de verificación:** resultado editorial indexado de Nature localizado; la apertura directa de la página completa no quedó disponible en esta sesión. Claims limitados al abstract indexado. **PENDING_SOURCE** para cualquier storyboard hasta lectura directa; resolver Crossref también pendiente por DNS.
 
 ### 3. Lagos glaciares, clima y geometría de los glaciares
 
