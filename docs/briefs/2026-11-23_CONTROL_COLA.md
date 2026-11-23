@@ -60,7 +60,7 @@ No se verificó YouTube Studio externo. El snapshot de miniaturas es evidencia d
 - `handoffs/grok_inbox/` contiene un marcador del robot del 9-nov. Un marcador GitHub no demuestra recepción Grok.
 - `capcot-grok-dispatch.yml` dispara por `cola/entrada/*.json` y selecciona con `find -maxdepth 1`; no recoge la entrada anidada. `scripts/procesar_cola.py` contempla JSON planos y `cola/entrada/*/storyboard.json`, por lo que hay discrepancia de profundidad entre procesador y workflow. No se modificó ni disparó el workflow.
 - El último run de dispatch disponible es del 1-nov y terminó FAILURE sin jobs/logs recuperables. No hay dispatch reciente en los runs consultados. La validación CI disponible más reciente es de Kuroshio, no de los proyectos 23-nov, y no ejecuta `--check-doi`.
-- Entrada heredada `cola/entrada/2026-11-09_dato-robot-ensambla-orbita`: QA PASS 90, pero main contiene MP4, portada, nueve frames, QA y programación con `publishAt` 21-nov 19:00 CDMX. Metadata aún marca `privacyStatus=private`; el estado Grok individual devuelve 404. Clasificación `PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR`; publicación real no confirmada. No cancelar ni duplicar.
+- Entrada heredada `cola/entrada/2026-11-09_dato-robot-ensambla-orbita`: conserva QA PASS 90 histórico. La relectura de main muestra `proyectos/<id>/` con `storyboard.json` y `fuentes.md`; no aparece `salidas/<id>/` (404), `frames/` en feature contiene solo `.gitkeep` y `main/salidas/` no contiene una salida identificable del robot. `main/data/publicaciones.json` registra `yt_id=ZG4iQgmWrLI` y `publishAt` para 21-nov 19:00 CDMX, pero ese registro no verifica que MP4/portada/nueve frames estén presentes ni confirma publicación efectiva. `cola/estado/<id>.json` devuelve 404. Clasificación: `PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR` + `MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO` + `RECEPCION_GROK_NO_CONFIRMADA`. No cancelar ni duplicar.
 - Entrada main `2026-11-22_pulsar-criptografia`: anidada, sin `narrative_qa`, sin fecha/slot y sin estado Grok; 7 escenas, 146 palabras, `export.filename` declarado, pero no hay MP4/portada en el árbol. `NOT_DISPATCHABLE` y `MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO`. Main se mantuvo solo lectura.
 
 ## Producción preexistente 25–29 nov
@@ -185,3 +185,12 @@ No se modificaron `data/*.json`, main, `cola/entrada`, `cola/estado`, bloqueados
 - Los runs automáticos de PR #3 para los commits `721789a`, `359a5cf` y `d478f44` terminaron `success` en CodeQL. Esto acredita únicamente esos jobs de análisis; no acredita validador estructural, DOI/Crossref ni QA audiovisual.
 - PR #3 permanece abierto, Draft y `mergeable=false`. No se marcó listo ni se fusionó.
 - No aparece un run nuevo de `capcot-grok-dispatch`; los commits tocaron storyboard de proyecto y documentos, no `cola/entrada/*.json`.
+
+
+## Auditoría de backlog adicional — Issue #11 (cuásares) — 23-nov-2026
+
+- Issue #11 sigue OPEN con etiqueta `hecho` y 10 comentarios. PR #13 sigue OPEN/NOT MERGED; PR #12 está CLOSED/NOT MERGED.
+- El artefacto `AUDITORIA.md` de la rama `trabajador/11`, generado por Groq gpt-oss-120b, inspecciona el storyboard completo: título, escenas, fuentes, metadata y líneas del JSON. No es una lectura en frío de la narración concatenada con título, resumen, arco, notas y `narrative_contract` ocultos; por tanto, no satisface la compuerta narrativa vigente.
+- El storyboard canónico conserva `narrative_qa.status=FAIL`, score 0, `reviewer_role=control_compuerta_chatgpt_no_independiente` y `critical_flags=[\"REVISION_INDEPENDIENTE_AUSENTE\"]`. Los siete checks false significan que no están acreditados por una auditoría válida, no un dictamen individual de fallo narrativo.
+- `cola/entrada/<id>`, `cola/estado/<id>.json` y `salidas/<id>` devuelven 404; `main/data/publicaciones.json` no tiene coincidencia por ese `project_id`. Clasificación: `NOT_DISPATCHABLE`; no se promovió ni se redispatchó.
+- No se disparó el worker, no se envió payload, no se modificó la etiqueta del Issue ni se alteró el estado de los PRs.
