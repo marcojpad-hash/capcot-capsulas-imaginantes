@@ -343,3 +343,33 @@ El commit `39e6566aedeab236284f905bf796bfe1872aff45` del 23-nov modificó solo `
 - Slot: 2026-11-20 17:00. El `data/publicaciones.json` actual de main contiene para esa fecha solo 07:00 y 13:30; no se encontró registro main a 17:00 ni colisión de `publishAt` en el snapshot disponible. No se declara `CONFLICTO_DE_SLOT_ENTRE_RAMAS` para este proyecto.
 - Lectura de vuelta: 84 s, 8 escenas, `approved_assets=[]`, `export.render_status=NOT_GENERATED`, publicación pendiente. `cola/estado/2026-11-20_dato-marea-cerebral-en-sueno.json` y `ESTADO_EJECUCION.md` devolvieron 404; **RECEPCION_GROK_NO_CONFIRMADA**. Clasificación: **NOT_DISPATCHABLE** por QA FAIL y ausencia de recepción confirmada.
 - No se modificó el storyboard, no se reescribió narración, no se promovió a cola y no se generaron medios.
+
+
+## Reauditoría posterior — 2026-11-23, 09:55 CDMX
+
+### Cambios posteriores al corte anterior
+
+- La rama feature avanzó a `083a59abd3ceac9f81ce3751a69b73621cb09cca` (09:44 CDMX). Ese commit modifica únicamente `data/endscreens_rotacion.json`: reasigna la pantalla final de `4Vi_TnIl9FI` a `41PYjWbQuJo`, con `actualizado_cdmx=09:40` y `pendiente_studio=false`. **DISCREPANCIA DE POLÍTICA:** `data/*.json` está definido como solo lectura. Se conserva el commit observado; este operador no editó, revirtió ni volvió a aplicar la acción de Studio.
+- El commit anterior `66b0aac` modificó únicamente este radar. No hay cambio de narración en los dos storyboards del 23-nov ni en los doce IDs del lote 5–7 nov.
+
+### Auditoría de los dos proyectos del 23-nov
+
+- Lectura de vuelta de `2026-11-23_supersequias-722-eventos`: 220 palabras concatenadas, 8 escenas, 84 s totales; voz `es-MX-JorgeNeural`, rate +7 %, pitch -2 Hz; `approved_assets=[]`, `export.render_status=NOT_GENERATED`, publicación pendiente y sin rutas de medios.
+- Lectura de vuelta de `2026-11-23_tropical-biodiversity-turnover`: 171 palabras, 8 escenas, 84 s; misma configuración de voz y controles de medios.
+- Ambos conservan `narrative_qa=FAIL/82`, `review_basis=lectura_en_frio_solo_narracion`, reviewer `auditor_capcot_independiente`, siete checks verdaderos y `critical_flags=[STAKES_NO_EXPLICADOS]`. La revisión existente sí identifica un auditor distinto; no se repitió QA porque la narración no cambió. El conteo estructural aquí es una inspección estática, no una ejecución del validador.
+- Conflictos vigentes: supersequías 23:30 con Oso Wojtek en main; biodiversidad tropical 13:30 con Rosetta en main. Ambos `NOT_DISPATCHABLE`. Sus `cola/estado/<id>.json` y `ESTADO_EJECUCION.md` siguen en 404: `RECEPCION_GROK_NO_CONFIRMADA`. No se promovió copia plana ni se disparó workflow.
+
+### Cola heredada y producción preexistente
+
+- La entrada anidada `2026-11-09_dato-robot-ensambla-orbita` conserva QA narrativo PASS/90, pero no es redispatchable. En feature, `frames/` contiene solo `.gitkeep`; los medios no están en ese árbol. En main existe una copia con `capsula.mp4`, subtítulos, QA, metadata y `programacion.json`, además de `video_id=ZG4iQgmWrLI` y `publishAt=2026-11-22T01:00:00Z`. Se mantiene `PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR` y `MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO` para la copia feature. Su estado Grok individual sigue en 404. No se movió ni duplicó.
+- `main/salidas/2026-11-07_comida-hielo-caliente/` conserva video, QA y registro de publicación; el lote 5–7 nov no se redispatcha. El corte previo de 12 IDs (2 PASS, 10 FAIL; nueve IDs de video en snapshots y tres sin video_id confirmado) no cambió.
+
+### CI y producción nueva en main
+
+- Main avanzó a `6a5de3f1bba7928ee73875ae68ede80f4e95c7c7` (09:54:59 CDMX), con cuatro variantes inglesas, sus `qa_en.json`, `render_en.log` y scripts de montaje. Los cuatro directorios no contienen `programacion.json`; se clasifican como producción/render preexistente, sin inferir un slot ni copiar/re-renderizar.
+- Semgrep main run `45210561724`: FAILURE, 37 findings bloqueantes sobre 1,145 archivos; la carga SARIF quedó skipped y no se produjo artifact. No se atribuyen hallazgos a feature ni se modificó main.
+- Gitleaks main run `45210561913`: SUCCESS, 1,149 archivos.
+- El último CI feature sigue siendo `45075532329` (SUCCESS) y valida únicamente Kuroshio. Su comando no incluye `--check-doi`; no acredita DOI ni valida los dos storyboards del 23-nov. No hay run de `capcot-grok-dispatch.yml`. El workflow de despacho continúa limitado a JSON plano en `cola/entrada/*.json`; la raíz no contiene paquete plano.
+- La página editorial de Nature para DOI `10.1038/s41597-026-08886-6` sí muestra el estudio de 722 eventos y los resultados de correspondencia publicados. Crossref API y `doi.org` siguen inaccesibles en esta verificación; el DOI permanece `PENDIENTE_RESOLVEDOR`. La cifra `139/234` no aparece en el HTML primario consultado y permanece `PENDING_SOURCE`. No se alteraron claims ni narración.
+
+**Resultado del corte:** sin promoción, redispatch, ejecución de workflow, generación de medios ni cambio de programación. No se leyeron secretos ni valores de webhook; no se consultaron ni modificaron estados Grok.
