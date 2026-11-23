@@ -493,3 +493,136 @@ Releídos los dos storyboards sin volver a redactar ni repetir el QA:
 **VERIFICADO:** no hay storyboard nuevo; ambos proyectos actuales siguen FAIL/82 y en conflicto de slot; no existe estado Grok individual; el trabajador no encontró entrada; no se generaron medios ni se promovió ningún paquete.
 
 **PENDIENTE:** revisión narrativa corregida por el autor en una nueva versión; resolución Crossref/DOI; decisión de slot tras reconciliar la alineación de main; confirmación de recepción/medios por Grok/Imaginantes. No se modifica `data/*.json`, main, estados Grok, secretos, permisos, medios ni programación.
+
+
+---
+
+## RECTIFICACIÓN DE AUDITORÍA — CORTE 2026-11-23
+
+Esta sección prevalece sobre cualquier cifra o resumen anterior de este archivo cuando exista discrepancia. Se releyeron los JSON actuales de GitHub. No se repitió QA narrativo ya registrado cuando la narración no cambió.
+
+### Inventario, creación, objetivo y cola
+
+- Rama auditada: `feature/capcot-video-discovery-continuity`, HEAD observado `af1584ace60d349b07eff387799e9e06b6713618`.
+- Árbol `proyectos/`: **103 directorios, 90 storyboard.json y 13 directorios sin storyboard.json**. Los directorios sin storyboard no se cuentan como borradores.
+- Fecha objetivo 23-nov: exactamente **2** storyboards:
+  - `2026-11-23_supersequias-722-eventos`: primer commit del storyboard `2026-11-23T06:51:31Z` (00:51:31 CDMX); objetivo 23-nov; slot 23:30; `slot_cesta` ausente.
+  - `2026-11-23_tropical-biodiversity-turnover`: primer commit `2026-11-21T20:21:12Z` (14:21:12 CDMX); objetivo 23-nov; slot 13:30; `slot_cesta` ausente.
+- `cola/entrada/`: **cero entradas del 23-nov**, tanto planas como anidadas. Solo permanece el paquete histórico anidado `cola/entrada/2026-11-09_dato-robot-ensambla-orbita/storyboard.json`.
+- Para los dos proyectos del día y para los storyboards vigentes auditados no hay archivos individuales en `cola/estado/<project_id>.json`: registrar literalmente **RECEPCION_GROK_NO_CONFIRMADA**. El marker de handoff del robot no sustituye el estado Grok.
+- Los dos storyboards del 23-nov son **NOT_DISPATCHABLE**: están en `proyectos/`, no en `cola/entrada/`. El robot anidado también es **NOT_DISPATCHABLE**: el workflow escucha `cola/entrada/*.json` y su selector manual usa `find -maxdepth 1`; no alcanza `cola/entrada/<project_id>/storyboard.json`.
+
+### QA y estructura de los dos proyectos del 23-nov
+
+Los dos JSON conservan `narrative_qa.status=FAIL`, `score=82`, los siete checks en true y `critical_flags=["STAKES_NO_EXPLICADOS"]`. El FAIL es correcto: una bandera crítica impide PASS aunque los checks estén true. No se reescribió narración ni se repitió la lectura en frío.
+
+| Proyecto | Escenas | Palabras | Escenas + cortinilla | Gancho | Resultado estructural estático |
+|---|---:|---:|---:|---:|---|
+| Supersequías | 8 | 220 | 78 + 6 = 84 s | 4 | FAIL: etiquetas de arco incompatibles con la secuencia del contrato |
+| Tropical biodiversity turnover | 8 | 171 | 78 + 6 = 84 s | 5 | Sin fallo de arco observado; DOI y validador ejecutado siguen pendientes |
+
+Ambos usan `es-MX-JorgeNeural`, tienen source_ids resolubles dentro del propio JSON, prompt_base coincidente con el catálogo, mapa y gráficos, ambiente y SFX no vacíos, `approved_assets=[]`, `export.render_status=NOT_GENERATED` y no contienen `asset_filename`, `asset_type`, nombres de exportación ni rutas de medios. El arco de Supersequías usa `hook/question/method/result/threshold/validation_examples/validation_limit/payoff`, no la secuencia contractual `hook_medias_res/desarrollo/cierre_historia/reflexion_o_pregunta`. Los DOI de ambos no tienen evidencia de una ejecución `--check-doi`; no se afirma verificación Crossref.
+
+**Cruce con main:** el slot 23-nov 13:30 está ocupado por Rosetta (`p5PM4xZfDyc`) y el 23:30 por Oso (`pTmQgkchC68`). Son paquetes distintos, no los IDs de estos dos borradores. La alineación de main los describe sin MP4 local: **MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO**. Se clasifican ambos slots como `CONFLICTO_DE_SLOT_ENTRE_RAMAS / PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR`; no se promueve ninguno.
+
+El archivo de alineación de main registra 10 IDs en ocho ventanas; `data/publicaciones.json` solo tiene tres registros del 23-nov. Además, la nota de duplicados mueve Mitra a 18:00, pero `programacion.json` y la alineación todavía muestran 17:00. La discrepancia permanece abierta.
+
+### Lectura autoritativa de narrative_qa: proyectos 18–23 nov
+
+Los scores siguientes son los valores releídos de cada `proyectos/<id>/storyboard.json`; prevalecen sobre la tabla anterior de este informe:
+
+| project_id | status | score |
+|---|---:|---:|
+| 2026-11-18_dato-catorce-campos-hidrotermales | FAIL | 68 |
+| 2026-11-18_dato-kuroshio-puente-atmosferico | PASS | 90 |
+| 2026-11-19_dato-dia-luz-dos-manos-oro-poroso | PASS | 91 |
+| 2026-11-19_dato-estrella-dentro-de-estrella | PASS | 90 |
+| 2026-11-20_dato-dia-atlantico-humedad-sapropeles | PASS | 91 |
+| 2026-11-20_dato-marea-cerebral-en-sueno | FAIL | 82 |
+| 2026-11-21_fentale-metano-sin-erupcion | PASS | 90 |
+| 2026-11-21_homo-erectus-selva-tropical | FAIL | 83 |
+| 2026-11-21_pulsar-gamma-reticulo | FAIL | 83 |
+| 2026-11-22_bao-estrella-fusion-andromeda | FAIL | 84 |
+| 2026-11-22_genes-estatura-etapas | FAIL | 72 |
+| 2026-11-22_voyager-1-un-dia-luz | FAIL | 83 |
+| 2026-11-22_yubarta-genoma-soplo | PASS | 90 |
+| 2026-11-23_supersequias-722-eventos | FAIL | 82 |
+| 2026-11-23_tropical-biodiversity-turnover | FAIL | 82 |
+
+Rectificaciones concretas frente al resumen anterior: catorce campos es **FAIL/68**, no PASS/90; luz es PASS/91, no 88; estrella es PASS/90, no 87; Fentale es PASS/90, no FAIL/82; Homo y Pulsar son FAIL/83; Yubarta es PASS/90, no 92. El JSON prevalece. En catorce campos, el campo documental `estado` sigue diciendo pendiente de QA aunque ya contiene FAIL/68; la discrepancia se registra, no se reescribe narración.
+
+Cruces de slot que impiden promoción aun donde el QA narrativo es PASS:
+- Fentale, 21-nov 23:30, coincide con Colón (`RwTTwSNGm10`) en main.
+- Bao, 22-nov 13:30, coincide con Gutenberg (`YXndoPSSeaY`).
+- Voyager, 22-nov 07:00, coincide con Salem (`N21TIYdONZo`).
+- Yubarta, 22-nov 17:00, coincide con Ada (`Sc0cX9ejxuw`).
+- Genes, 22-nov 23:30, no tiene paquete coincidente en la alineación consultada.
+- Kuroshio, luz, estrella y Atlántico no presentan coincidencia de slot en los paquetes main consultados; siguen sin promoción por los bloqueos estructurales/DOI y la falta de una ejecución completa de preproducción.
+
+### Lote obligatorio 5–7 nov: relectura de los 12 JSON
+
+Los doce `project_id`, `fecha_objetivo`, `slot_local` y `slot_cesta` coinciden con el horario de la rama feature. Se conservan los QA ya registrados; no se repitió lectura narrativa.
+
+| project_id | narrative_qa | score |
+|---|---:|---:|
+| 2026-11-05_kids-dia-en-venus | PASS | 88 |
+| 2026-11-05_comida-palomitas | FAIL | 82 |
+| 2026-11-05_inter-arboles-se-comunican | FAIL | 78 |
+| 2026-11-05_inter-rayo-globular | FAIL | 81 |
+| 2026-11-06_kids-ballena-azul-corazon | FAIL | 80 |
+| 2026-11-06_comida-aguacate-negro | FAIL | 79 |
+| 2026-11-06_inter-ranas-congeladas | FAIL | 83 |
+| 2026-11-06_inter-arena-cantante | PASS | 94 |
+| 2026-11-07_kids-huesos-bebe | FAIL | 82 |
+| 2026-11-07_comida-hielo-caliente | FAIL | 81 |
+| 2026-11-07_inter-pulpo-suenos | FAIL | 72 |
+| 2026-11-07_inter-nubes-pesan | FAIL | 78 |
+
+Validación estática conjunta: 85 escenas, 2,172 palabras, 84 s totales por paquete (78 s de escenas + cortinilla de 6 s), siete u ocho escenas por storyboard, voz `es-MX-JorgeNeural`, source_ids y prompt_base presentes, `approved_assets=[]`, `render_status=NOT_GENERATED` y sin rutas ni nombres de assets. Hallazgos estructurales: **510 campos narrativos obligatorios ausentes** (seis por escena), **75 escenas con SFX vacío** y el storyboard canónico de árboles carece de capa de mapa y de gráfico/dato. No se promovió Venus ni Arena pese a PASS narrativo.
+
+Identidad y fuentes:
+- `2026-11-05_inter-arboles-se-comunican` sí corresponde a redes micorrícicas comunes y Karst et al. 2023. No se marca desajuste temático. La variante de respiración nocturna es otro artefacto bloqueado.
+- `2026-11-07_inter-nubes-pesan` es el ID exacto del slot feature 17:45. `2026-11-07_extra-nubes-pesan` es material de origen, no un segundo proyecto.
+- En pulpos, la fuente primaria citada corresponde a *Octopus laqueus*, no a *Octopus insularis*: desajuste fuente-especie.
+
+**Cruce con main y producción preexistente (corrección del conteo anterior):**
+- Solo dos de los doce IDs canónicos tienen registro exacto en `data/publicaciones.json` de main: Hielo caliente (`HSgrnejAcaI`) y Nubes pesan (`4Qpl17Ts_vI`). No son nueve IDs canónicos.
+- Hielo caliente tiene `salidas/<id>/qa.json` audiovisual de 89.83 s y 21/21 checks; publicación privada programada para 11-nov 13:30 CDMX, TT/FB publicados y nota de que el Short ya no aparecía el 12-nov. El árbol GitHub no contiene el MP4 referenciado: **MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO**.
+- Nubes pesan tiene registro público `4Qpl17Ts_vI`, programado/publicado el 12-nov 07:00 CDMX, TT/FB publicados; no hay carpeta `salidas/<id>/` ni archivo de video en el árbol: **MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO**. Main cambió el slot de 17:45 a 19:00, mientras feature conserva el slot canónico 17:45.
+- Arena cantante aparece como original `m4RqQRaz55k` en `data/rehechos_2026-11-22.json`; el rework `6VUxaJtqbF0` está programado para 28-nov 10:00 CDMX. Su ruta MP4 está fuera del árbol GitHub: **MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO**.
+- El rework de Nubes usa el original `4Qpl17Ts_vI` y el nuevo ID `9RxTSifAcpo`, programado para 25-nov 10:00 CDMX; la ruta MP4 declarada tampoco está en GitHub: **MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO**.
+- Existe otro paquete de árboles, `2026-11-07_arboles-comunicacion-bosque`, con ID `EX0W3q-yKRw`, QA audiovisual de 87.50 s y publicación programada para 13-nov 13:30. Es otro `project_id`, pero trata el mismo tema micorrícico y usa Karst 2023: riesgo de duplicado temático, no desajuste del storyboard canónico. El MP4 referenciado no está en el árbol: **MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO**.
+- Los QA de Hielo y Árboles son audiovisuales, no narrative_qa. Sus duraciones medidas están dentro de 75–90 s; no sustituyen el QA narrativo.
+- Hay cinco copias planas antiguas en `cola/bloqueados/` con IDs canónicos (Rayo, Aguacate, Arena, Nubes y Huesos). Algunas difieren en narración; no se copiaron, sobrescribieron ni retiraron. Los demás nombres de variantes son artefactos distintos, no se fusionan con los canónicos.
+- Main cambió Rayo (5-nov), Arena (6-nov) y Nubes (7-nov) de 17:45 a 19:00. Se registra `CONFLICTO_DE_SLOT_ENTRE_RAMAS`; la identidad feature de Nubes a 17:45 se conserva.
+
+### Backlog interdiario anterior
+
+- **31 storyboards de 24–30 oct** carecen de `narrative_contract` y `narrative_qa`. Sus IDs son:
+  - 24-oct: `abejas-bullying`, `ideonella-pet`, `osedax-comehuesos`, `serpientes-que-ruedan`.
+  - 25-oct: `ave-jurasica-sin-vuelo`, `corales-contacto`, `reina-olor`, `sueno-electricidad-qom`.
+  - 26-oct: `baffin-bay-ice-shelf`, `catrina-posada-monerismo`, `hongo-gente-diminuta`, `papel-picado-dia-muertos`, `papel-picado-dia-muertos_parte2`, `pimiento-verde-rojo`.
+  - 27-oct: `cempasuchil-ciencia`, `corneja-decision-rapida`, `ddm-parte3-pomuch`, `familia-ajolote`, `kids-serpiente-voladora`, `noct-anfibio-marino`.
+  - 28-oct: `ddm-parte4-templo-mayor`, `familia-voyager-disco-oro`, `kids-titanoboa`, `monarca-almas`, `mosquito-fruitless-audicion`, `noct-lince-milanos`, `pan-de-muerto-huesos`.
+  - 29-oct: `juno-choque-proa`, `muralismo-cu`.
+  - 30-oct: `arqueas-origen-eucariotas`, `kromdraai-primera-fecha`.
+- De esos 31, 24 tienen `salidas/<id>/`, cinco también tienen copia bloqueada y siete no tienen ni salida ni copia bloqueada: OseDax, serpientes, ave jurásica, reina olor, sueño electricidad Qom, hongo gente diminuta y pimiento verde/rojo. Ninguno se promueve sin contrato y QA independiente.
+- 31-oct: cuatro borradores sin `narrative_contract`; uno carece de narrative_qa y tres conservan FAIL 77/78/81.
+- 1–2 nov: seis borradores; cinco carecen de `narrative_contract`; cuatro QA FAIL y dos PASS (89 y 90), pero estos dos PASS no habilitan promoción sin contrato/validación estructural.
+- 9–17 nov: diez borradores con contrato; nueve PASS (88–92) y Quasar FAIL/0 por revisión independiente ausente. Varios estados documentales siguen en pendiente pese a PASS; se conservan como bloqueos, no como recepción Grok.
+- El inventario 18–23 nov se detalla en la tabla autoritativa anterior. No se repitió QA válido con narración sin cambios.
+
+### Registro, procesador, Actions y PRs
+
+- `scripts/registro_editorial.py` actual sí recorre `handoffs/grok_inbox/` recursivamente y también las estructuras anidadas de storyboards. El addendum 20-nov que decía que no recorría handoffs/profundidades quedó obsoleto. Un marker sigue sin demostrar lectura de Grok.
+- `scripts/procesar_cola.py` usa la fecha CDMX actual por defecto y filtra por prefijo de fecha; el argumento `--fecha` permite seleccionar manualmente una fecha histórica. Por tanto, el comportamiento por defecto es del día actual, pero no existe un bloqueo absoluto contra una invocación histórica explícita.
+- Último dispatch de entrega observado: run `41306776689`, 1-nov 12:29:58Z, FAILURE. Error literal: `Falta configurar GROK_WEBHOOK_URL.` El log no llegó a probar si `GROK_WEBHOOK_TOKEN` faltaba; no se consultaron ni divulgaron valores. No hay dispatch posterior. El workflow actual limita paths y selector a JSON planos.
+- Worker main `45254537410`: SUCCESS, log indica que no había trabajo en cola. Semgrep `45255115817`: FAILURE, 37 hallazgos bloqueantes; Gitleaks `45255115860`: SUCCESS sin leaks; push main `45255114848`: SUCCESS.
+- PRs abiertos revisados: #3 (base main, head feature, draft, 704 archivos; 119 storyboards, 13 data JSON y cinco workflows; no merge); #4 (robot, solo estado documental; abierto); #6 (supervisor workflow; abierto); #13 (auditoría Grok, no sustituye narrative_qa; abierto); #14 (base main, head `chatgpt/quasar-audit-fixes-20261115`, añade `asset_filename` a ocho escenas, contrato incompatible; OPEN/NOT MERGED); #15 (base feature, head `fix/capcot-map-coordinate-types-20261122`, cambios de validador/DOI no integrados). #7–9 son dependencias. Ningún PR se integró.
+- El estado de Kuroshio se actualizó para registrar el run CI #45075532329, commit `25e1ecfc96faf9a40f86a9feb0e30af90d9d608b`, comando exacto y resultado. Fue validación estructural `OK`, **sin `--check-doi`**; DOI sigue pendiente.
+
+### Datos, ejecución y límites
+
+- `temas_del_dia.json` y `estilos_usados.json`: último corte 28-oct; `rotacion.json` y `tendencias_estilos.json`: 31-oct; `publicaciones.json` de feature: 31-oct; `horarios.json`: 9-nov; `vistas_historico.json`: 27-oct; `balances_6h.json`: 28-oct; reprogramación: 1–3 nov; `horario_semana_2026-11-01_07.json`: solo 1–7 nov. `endscreens_rotacion.json` sí tuvo actualización 23-nov 09:40. `data/cola.json` solo conserva el error histórico de Pardelas del 31-oct.
+- No hay runtime local en esta ejecución: revisión estática de estructura/código y lectura de resultados CI existentes. No se ejecutaron helpers localmente. No se revisaron APIs externas porque no apareció un cambio oficial nuevo sustentado.
+- No se promovió ningún proyecto, no se movieron copias, no se disparó workflow, no se enviaron payloads, no se modificó `data/*.json`, main, secretos, permisos ni decisiones editoriales. No se generaron medios ni se consumieron créditos.
