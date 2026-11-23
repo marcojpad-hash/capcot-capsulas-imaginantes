@@ -150,3 +150,33 @@ No se modificaron las copias heredadas, no se borraron duplicados y no se repiti
 - **RSS/Trends:** se ejecutó el contenido vigente de `scripts/tendencias.py` en runtime temporal. Los diez feeds (ScienceDaily general/salud/espacio, Phys.org, NASA, ESA, Nature, EurekAlert, SINC y UNAM Global) y Google Trends RSS México fallaron con `<urlopen error [Errno -3] Temporary failure in name resolution>`. No se escribió ningún JSON. Respaldo oficial consultado: Nature Scientific Data, Nature Climate Change, Scientific Reports y PLOS Biology.
 - **Candidato corregido:** se sustituyó el lead de W2246-0526, cuyo DOI `10.1126/sciadv.aek9035` no pudo localizarse en fuente primaria, por el artículo de glaciares-lagos de Nature Climate Change. W2246 queda `PENDING_SOURCE`, fuera de los cinco candidatos.
 - **Promoción:** no se creó entrada de cola. Supersequías no supera QA ni DOI; tropical no supera QA y además tiene conflicto de slot. No se ejecutó workflow ni se envió payload.
+
+
+## Relectura de fuentes — 23-nov-2026, 06:23 CDMX
+
+Se reintentó la lectura directa de los diez feeds configurados y Google Trends RSS México. Los errores observados en esta relectura fueron:
+
+| Feed | Resultado de esta relectura |
+|---|---|
+| ScienceDaily science | `400 Unsupported content-type: application/xml` |
+| ScienceDaily health | `400 Unsupported content-type: application/xml` |
+| ScienceDaily space | `400 Unsupported content-type: application/xml` |
+| Phys.org | `400 Unsupported content-type: text/xml` |
+| NASA RSS | `400 Unsupported content-type: application/rss+xml` |
+| ESA Space Science RSS | `404 Not Found` |
+| Nature RSS | `400 Unsupported content-type: application/rss+xml` |
+| EurekAlert | `URL is not accessible via this tool` |
+| Agencia SINC | `URL is not accessible via this tool` |
+| UNAM Global | `400 Unsupported content-type: application/rss+xml` |
+| Google Trends RSS México | `URL is not accessible via this tool` |
+
+La página HTML oficial de Google Trends México sí abrió: **274 tendencias** en las últimas 24 horas y 25 visibles en la primera página. Los términos visibles estuvieron dominados por fútbol, NFL, entretenimiento, clima y búsquedas generales; no apareció un tema científico/natural utilizable en esa primera página. No se extrapola esa observación a las 274 tendencias completas.
+
+Se reabrieron fuentes editoriales primarias para respaldar los candidatos ya listados, sin asignarles un slot nuevo:
+
+- PLOS Biology, *Altitude-induced hypoxia suppresses Varroa mite reproduction in Tibetan honey bees*, publicado 19-nov-2026; DOI visible en la página primaria: `10.1371/journal.pbio.3004091`.
+- Nature Astronomy, *The nature of the Norma arm as a bar-driven star-forming shock front*, publicado 20-nov-2026; DOI visible: `10.1038/s41550-026-03010-5`.
+- Nature Communications, *Plankton ecological complexity amplifies climate-driven weakening of the ocean biological pump*, publicado 21-nov-2026; DOI visible: `10.1038/s41467-026-79817-7`.
+- Nature Climate Change, *Climate and glacier geometry dominate global glacier–lake interactions*, publicado 20-nov-2026; DOI visible: `10.1038/s41558-026-02808-5`.
+
+El endpoint de Crossref y los resolutores `doi.org` no fueron accesibles en esta relectura; los cuatro DOI quedan `PENDIENTE_RESOLVEDOR` aunque la página primaria muestre el identificador. No se promovió ni se marcó un DOI como verificado por Crossref. El quinto candidato de esta fecha permanece `PENDING_MAP_COORDINATES`. No se creó otro storyboard: la parrilla registrada del 23 al 29-nov no ofrece un slot libre confirmado.
