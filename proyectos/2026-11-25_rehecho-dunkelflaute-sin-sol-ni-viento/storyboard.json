@@ -1,0 +1,179 @@
+{
+ "project_id": "2026-11-25_rehecho-dunkelflaute-sin-sol-ni-viento",
+ "serie": "Rehechos con gancho nuevo",
+ "rehecho_de": "OwfxfQ4RPSo",
+ "title": "El peor día de la energía limpia tiene nombre",
+ "titulo": "El peor día de la energía limpia tiene nombre",
+ "language": "es-MX",
+ "aspect_ratio": "9:16",
+ "target_duration_seconds": 88,
+ "estilo_id": "foto_commons",
+ "estilo_visual": "fotografías e ilustraciones de dominio público o licencia libre (Wikimedia Commons)",
+ "proveedor_imagenes": "Wikimedia Commons (dominio público o CC, créditos en metadata)",
+ "parece_real": true,
+ "keywords": [
+  "sequía renovable"
+ ],
+ "voice": {
+  "engine": "edge-tts",
+  "voice_id": "es-MX-JorgeNeural",
+  "rate": "+7%",
+  "pitch": "-2Hz",
+  "pad_seconds": 0.35,
+  "modo_pausas": "continuo"
+ },
+ "audio": {
+  "music_asset": "sintetico:pulso",
+  "cama_musical": "pulso",
+  "music_bpm": 92,
+  "music_lufs": -27,
+  "ambiente_lufs": -30
+ },
+ "canal": {
+  "nombre": "Datos y ociosidades",
+  "handle": "@datosyociosidades"
+ },
+ "sources": [
+  {
+   "id": "SRC-001",
+   "cita_corta": "Aminimehr, Hellinckx & Tabari (2026). Communications Earth & Environment.",
+   "url": "https://doi.org/10.1038/s43247-026-04183-7",
+   "doi": "10.1038/s43247-026-04183-7"
+  }
+ ],
+ "scenes": [
+  {
+   "id": "scene_001",
+   "arc": "hook_medias_res",
+   "duration_seconds": 10,
+   "narration": "Los alemanes tienen una palabra para el peor día de la energía limpia: Dunkelflaute. Oscuridad sin viento. Ni sol para los paneles, ni aire para las turbinas.",
+   "on_screen_text": "Dunkelflaute: oscuridad sin viento",
+   "asset_filename": "frames/scene_001.jpg",
+   "sfx": [
+    "viento"
+   ],
+   "source_ids": [
+    "SRC-001"
+   ],
+   "image_credit": "Morris wind turbine in fog with sun. Nic McPhee, CC BY-SA 2.0. https://commons.wikimedia.org/wiki/File:Morris_wind_turbine_in_fog_with_sun.jpg",
+   "visual_description": "File:Morris wind turbine in fog with sun.jpg"
+  },
+  {
+   "id": "scene_002",
+   "arc": "desarrollo",
+   "duration_seconds": 10,
+   "narration": "Los científicos le llaman sequía energética renovable compuesta: días en que la energía posible del viento y del Sol cae al mismo tiempo. La pregunta es si el calentamiento las hará más comunes.",
+   "on_screen_text": "Sin sol y sin viento a la vez",
+   "asset_filename": "frames/scene_002.jpg",
+   "sfx": [
+    "viento"
+   ],
+   "source_ids": [
+    "SRC-001"
+   ],
+   "image_credit": "Snow on solar panels in Tuntorp. W.carter, CC BY-SA 4.0. https://commons.wikimedia.org/wiki/File:Snow_on_solar_panels_in_Tuntorp.jpg",
+   "visual_description": "File:Snow on solar panels in Tuntorp.jpg"
+  },
+  {
+   "id": "scene_003",
+   "arc": "desarrollo",
+   "duration_seconds": 10,
+   "narration": "Un equipo encabezado por Aminimehr, Hellinckx y Tabari comparó simulaciones climáticas globales con uno punto cinco, dos y tres grados de calentamiento.",
+   "on_screen_text": "1.5, 2 y 3 °C",
+   "asset_filename": "frames/scene_003.jpg",
+   "sfx": [
+    "reloj"
+   ],
+   "source_ids": [
+    "SRC-001"
+   ],
+   "image_credit": "The Earth seen from Apollo 17. NASA/Apollo 17 crew; taken by either Harrison Schmitt or Ron Evans, Public domain. https://commons.wikimedia.org/wiki/File:The_Earth_seen_from_Apollo_17.jpg",
+   "visual_description": "File:The Earth seen from Apollo 17.jpg"
+  },
+  {
+   "id": "scene_004",
+   "arc": "desarrollo",
+   "duration_seconds": 10,
+   "narration": "Con tres grados, la duración de estos episodios cambiaría de forma significativa en el sesenta y nueve por ciento de la superficie terrestre. Casi siete de cada diez rincones.",
+   "on_screen_text": "Duración: 69 % de la tierra",
+   "asset_filename": "frames/scene_004.jpg",
+   "sfx": [
+    "viento"
+   ],
+   "source_ids": [
+    "SRC-001"
+   ],
+   "image_credit": "Roscoe Wind Farm in West Texas. Matthew T Rader, CC BY-SA 4.0. https://commons.wikimedia.org/wiki/File:Roscoe_Wind_Farm_in_West_Texas.jpg",
+   "visual_description": "File:Roscoe Wind Farm in West Texas.jpg"
+  },
+  {
+   "id": "scene_005",
+   "arc": "desarrollo",
+   "duration_seconds": 10,
+   "narration": "La frecuencia cambiaría en el setenta y cuatro por ciento del área terrestre, y la intensidad en la mitad. Y el culpable principal sorprende: no es el viento. Es la radiación solar la que más empuja la intensidad.",
+   "on_screen_text": "El culpable: la radiación solar",
+   "asset_filename": "frames/scene_005.jpg",
+   "sfx": [
+    "viento"
+   ],
+   "source_ids": [
+    "SRC-001"
+   ],
+   "image_credit": "Full disk view of the sun June 21, 2010 (4721839258). NASA Goddard Space Flight Center from Greenbelt, MD, USA, Public domain. https://commons.wikimedia.org/wiki/File:Full_disk_view_of_the_sun_June_21,_2010_(4721839258).jpg",
+   "visual_description": "File:Full disk view of the sun June 21, 2010 (4721839258).jpg"
+  },
+  {
+   "id": "scene_006",
+   "arc": "desarrollo",
+   "duration_seconds": 10,
+   "narration": "Pero ojo: el estudio mide recursos climáticos simulados, no redes eléctricas reales. Más sequías de sol y viento no significan, por sí solas, apagones. Una red también puede compensar con otras fuentes.",
+   "on_screen_text": "No es lo mismo que un apagón",
+   "asset_filename": "frames/scene_006.jpg",
+   "sfx": [
+    "viento"
+   ],
+   "source_ids": [
+    "SRC-001"
+   ],
+   "image_credit": "Pylons at dusk. HighVoltage 5576, CC BY-SA 4.0. https://commons.wikimedia.org/wiki/File:Pylons_at_dusk.jpg",
+   "visual_description": "File:Pylons at dusk.jpg"
+  },
+  {
+   "id": "scene_007",
+   "arc": "cierre",
+   "duration_seconds": 10,
+   "narration": "El reto ya no es solo producir energía limpia, sino guardarla, en baterías o en otras reservas, para los días en que el cielo no ayuda. ¿Tu ciudad aguantaría una Dunkelflaute? Esto fue Datos y ociosidades.",
+   "on_screen_text": "El reto: guardar energía",
+   "asset_filename": "frames/scene_007.jpg",
+   "sfx": [
+    "viento"
+   ],
+   "source_ids": [
+    "SRC-001"
+   ],
+   "image_credit": "Tesvolt battery energy storage system Rheineck. Kecko from Eastern Switzerland, CC BY 2.0. https://commons.wikimedia.org/wiki/File:Tesvolt_battery_energy_storage_system_Rheineck.jpg",
+   "visual_description": "File:Tesvolt battery energy storage system Rheineck.jpg"
+  }
+ ],
+ "cortinilla_fuentes": {
+  "duration_seconds": 6,
+  "titulo": "Fuentes",
+  "aviso": "Imágenes de dominio público o con licencia libre (Wikimedia Commons). Voz sintética (IA). Audio sintetizado.",
+  "firma": "Datos y ociosidades · @datosyociosidades",
+  "bg_rgb": [
+   18,
+   16,
+   14
+  ]
+ },
+ "export": {
+  "filename": "capsula.mp4",
+  "resolution": "1080x1920",
+  "fps": 30,
+  "loudness_lufs": -14,
+  "plano_seconds": 4.0,
+  "subtitle_max_words": 3
+ },
+ "estructura": "arco_narrativo",
+ "hook_type": "mito_vs_dato"
+}

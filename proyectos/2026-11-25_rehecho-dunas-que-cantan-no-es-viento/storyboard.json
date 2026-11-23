@@ -1,0 +1,192 @@
+{
+ "project_id": "2026-11-25_rehecho-dunas-que-cantan-no-es-viento",
+ "serie": "Rehechos con gancho nuevo",
+ "rehecho_de": "m4RqQRaz55k",
+ "title": "Hay dunas que cantan, y NO es el viento",
+ "titulo": "Hay dunas que cantan, y NO es el viento",
+ "language": "es-MX",
+ "aspect_ratio": "9:16",
+ "target_duration_seconds": 88,
+ "estilo_id": "foto_commons",
+ "estilo_visual": "fotografías e ilustraciones de dominio público o licencia libre (Wikimedia Commons)",
+ "proveedor_imagenes": "Wikimedia Commons (dominio público o CC, créditos en metadata)",
+ "parece_real": true,
+ "keywords": [
+  "dunas cantoras"
+ ],
+ "voice": {
+  "engine": "edge-tts",
+  "voice_id": "es-MX-JorgeNeural",
+  "rate": "+7%",
+  "pitch": "-2Hz",
+  "pad_seconds": 0.35,
+  "modo_pausas": "continuo"
+ },
+ "audio": {
+  "music_asset": "sintetico:pulso",
+  "cama_musical": "pulso",
+  "music_bpm": 92,
+  "music_lufs": -27,
+  "ambiente_lufs": -30
+ },
+ "canal": {
+  "nombre": "Datos y ociosidades",
+  "handle": "@datosyociosidades"
+ },
+ "sources": [
+  {
+   "id": "SRC-001",
+   "cita_corta": "Andreotti (2004). The song of dunes as a wave-particle mode locking. Physical Review Letters 93, 238001.",
+   "url": "https://doi.org/10.1103/PhysRevLett.93.238001",
+   "doi": "10.1103/PhysRevLett.93.238001"
+  },
+  {
+   "id": "SRC-002",
+   "cita_corta": "Douady et al. (2006). Song of the dunes as a self-synchronized instrument. Physical Review Letters 97, 018002.",
+   "url": "https://doi.org/10.1103/PhysRevLett.97.018002",
+   "doi": "10.1103/PhysRevLett.97.018002"
+  }
+ ],
+ "scenes": [
+  {
+   "id": "scene_001",
+   "arc": "hook_medias_res",
+   "duration_seconds": 10,
+   "narration": "Esta duna está cantando, y no es el viento. Una capa de arena resbala por la pendiente, y el desierto sostiene una nota grave, como una bocina gigante.",
+   "on_screen_text": "La duna canta",
+   "asset_filename": "frames/scene_001.jpg",
+   "sfx": [
+    "viento"
+   ],
+   "source_ids": [
+    "SRC-001",
+    "SRC-002"
+   ],
+   "image_credit": "Singing Sand Dunes from the north (20230918102219). N509FZ, CC BY-SA 4.0. https://commons.wikimedia.org/wiki/File:Singing_Sand_Dunes_from_the_north_(20230918102219).jpg",
+   "visual_description": "File:Singing Sand Dunes from the north (20230918102219).jpg"
+  },
+  {
+   "id": "scene_002",
+   "arc": "desarrollo",
+   "duration_seconds": 10,
+   "narration": "Lo fácil sería culpar al viento silbando alrededor de la duna. Pero el sonido nace de la arena misma, cuando se mueve.",
+   "on_screen_text": "El sonido sale de la arena",
+   "asset_filename": "frames/scene_002.jpg",
+   "sfx": [
+    "viento"
+   ],
+   "source_ids": [
+    "SRC-001",
+    "SRC-002"
+   ],
+   "image_credit": "Curving Dune Ridge (23991063297). Great Sand Dunes National Park and Preserve, Public domain. https://commons.wikimedia.org/wiki/File:Curving_Dune_Ridge_(23991063297).jpg",
+   "visual_description": "File:Curving Dune Ridge (23991063297).jpg"
+  },
+  {
+   "id": "scene_003",
+   "arc": "desarrollo",
+   "duration_seconds": 10,
+   "narration": "Piensa en la arena que sacas del zapato. Solo hace un roce. En ciertas dunas, los granos de una avalancha también chocan y se rozan, pero no al azar: su movimiento se organiza.",
+   "on_screen_text": "Granos que se organizan",
+   "asset_filename": "frames/scene_003.jpg",
+   "sfx": [
+    "viento"
+   ],
+   "source_ids": [
+    "SRC-001",
+    "SRC-002"
+   ],
+   "image_credit": "Macrophotography of grains of sand in polarised ligth. Jojowikiscience, CC BY-SA 4.0. https://commons.wikimedia.org/wiki/File:Macrophotography_of_grains_of_sand_in_polarised_ligth.jpg",
+   "visual_description": "File:Macrophotography of grains of sand in polarised ligth.jpg"
+  },
+  {
+   "id": "scene_004",
+   "arc": "desarrollo",
+   "duration_seconds": 10,
+   "narration": "Cuando muchos granos sincronizan sus movimientos, la capa que fluye vibra y empuja el aire, como la membrana de una bocina. Una bocina hecha de arena, sin electricidad.",
+   "on_screen_text": "Sincronía = sonido",
+   "asset_filename": "frames/scene_004.jpg",
+   "sfx": [
+    "viento"
+   ],
+   "source_ids": [
+    "SRC-001",
+    "SRC-002"
+   ],
+   "image_credit": "Sossusvlei Dune Rippled cropped. Daniel Kraft, CC BY-SA 3.0. https://commons.wikimedia.org/wiki/File:Sossusvlei_Dune_Rippled_cropped.jpg",
+   "visual_description": "File:Sossusvlei Dune Rippled cropped.jpg"
+  },
+  {
+   "id": "scene_005",
+   "arc": "desarrollo",
+   "duration_seconds": 10,
+   "narration": "Los físicos lo probaron en dunas reales y en el laboratorio. Bruno Andreotti publicó su estudio en dos mil cuatro, y el equipo de Stéphane Douady en dos mil seis. Empujaron arena preparada y obtuvieron tonos: no hacía falta la montaña entera.",
+   "on_screen_text": "Probado en laboratorio",
+   "asset_filename": "frames/scene_005.jpg",
+   "sfx": [
+    "reloj"
+   ],
+   "source_ids": [
+    "SRC-001",
+    "SRC-002"
+   ],
+   "image_credit": "Morocco Africa Flickr Rosino December 2005 84514010 edited by Buchling. Rosa Cabecinhas and Alcino Cunha, CC BY-SA 2.0. https://commons.wikimedia.org/wiki/File:Morocco_Africa_Flickr_Rosino_December_2005_84514010_edited_by_Buchling.jpg",
+   "visual_description": "File:Morocco Africa Flickr Rosino December 2005 84514010 edited by Buchling.jpg"
+  },
+  {
+   "id": "scene_006",
+   "arc": "desarrollo",
+   "duration_seconds": 10,
+   "narration": "Pero no sirve cualquier arena. Influyen el tamaño de los granos, su superficie, la humedad y cómo se deslizan. Si falla una condición, no hay concierto. No todas las dunas cantan.",
+   "on_screen_text": "No todas las dunas cantan",
+   "asset_filename": "frames/scene_006.jpg",
+   "sfx": [
+    "viento"
+   ],
+   "source_ids": [
+    "SRC-001",
+    "SRC-002"
+   ],
+   "image_credit": "Dunhuang Mingsha-shan 1995. Prince Roy, CC BY 2.0. https://commons.wikimedia.org/wiki/File:Dunhuang_Mingsha-shan_1995.jpg",
+   "visual_description": "File:Dunhuang Mingsha-shan 1995.jpg"
+  },
+  {
+   "id": "scene_007",
+   "arc": "cierre",
+   "duration_seconds": 10,
+   "narration": "Así que, si un día oyes zumbar el desierto, no es un fantasma ni el viento: es la sincronía de muchísimos granos. Tu zapato no canta; una duna, a veces, sí. Esto fue Datos y ociosidades.",
+   "on_screen_text": "Tu zapato no canta",
+   "asset_filename": "frames/scene_007.jpg",
+   "sfx": [
+    "viento"
+   ],
+   "source_ids": [
+    "SRC-001",
+    "SRC-002"
+   ],
+   "image_credit": "Camel convoys at Singing Sand Dunes (20230918084548). N509FZ, CC BY-SA 4.0. https://commons.wikimedia.org/wiki/File:Camel_convoys_at_Singing_Sand_Dunes_(20230918084548).jpg",
+   "visual_description": "File:Camel convoys at Singing Sand Dunes (20230918084548).jpg"
+  }
+ ],
+ "cortinilla_fuentes": {
+  "duration_seconds": 6,
+  "titulo": "Fuentes",
+  "aviso": "Imágenes de dominio público o con licencia libre (Wikimedia Commons). Voz sintética (IA). Audio sintetizado.",
+  "firma": "Datos y ociosidades · @datosyociosidades",
+  "bg_rgb": [
+   18,
+   16,
+   14
+  ]
+ },
+ "export": {
+  "filename": "capsula.mp4",
+  "resolution": "1080x1920",
+  "fps": 30,
+  "loudness_lufs": -14,
+  "plano_seconds": 4.0,
+  "subtitle_max_words": 3
+ },
+ "estructura": "arco_narrativo",
+ "hook_type": "mito_vs_dato"
+}

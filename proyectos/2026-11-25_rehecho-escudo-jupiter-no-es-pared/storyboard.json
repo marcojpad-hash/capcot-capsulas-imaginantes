@@ -1,0 +1,191 @@
+{
+ "project_id": "2026-11-25_rehecho-escudo-jupiter-no-es-pared",
+ "serie": "Rehechos con gancho nuevo",
+ "rehecho_de": "bpeRL5XtYLI",
+ "title": "El escudo invisible de Júpiter NO es una pared",
+ "titulo": "El escudo invisible de Júpiter NO es una pared",
+ "language": "es-MX",
+ "aspect_ratio": "9:16",
+ "target_duration_seconds": 88,
+ "estilo_id": "foto_commons",
+ "estilo_visual": "fotografías e ilustraciones de dominio público o licencia libre (Wikimedia Commons)",
+ "proveedor_imagenes": "Wikimedia Commons (dominio público o CC, créditos en metadata)",
+ "parece_real": true,
+ "keywords": [
+  "Juno"
+ ],
+ "voice": {
+  "engine": "edge-tts",
+  "voice_id": "es-MX-JorgeNeural",
+  "rate": "+7%",
+  "pitch": "-2Hz",
+  "pad_seconds": 0.35,
+  "modo_pausas": "continuo"
+ },
+ "audio": {
+  "music_asset": "sintetico:pulso",
+  "cama_musical": "pulso",
+  "music_bpm": 92,
+  "music_lufs": -27,
+  "ambiente_lufs": -30
+ },
+ "canal": {
+  "nombre": "Datos y ociosidades",
+  "handle": "@datosyociosidades"
+ },
+ "sources": [
+  {
+   "id": "SRC-001",
+   "cita_corta": "Joseph et al. (2026). Plasma wave observations from Juno spacecraft at the Jovian bow shock. Nature Communications 17, 9263.",
+   "url": "https://doi.org/10.1038/s41467-026-76223-x",
+   "doi": "10.1038/s41467-026-76223-x"
+  },
+  {
+   "id": "SRC-002",
+   "cita_corta": "University of Iowa (2026). NASA discovers Jupiter’s invisible shield is more complex than Earth’s. ScienceDaily.",
+   "url": "https://www.sciencedaily.com/releases/2026/10/261028232715.htm"
+  }
+ ],
+ "scenes": [
+  {
+   "id": "scene_001",
+   "arc": "hook_medias_res",
+   "duration_seconds": 10,
+   "narration": "Júpiter tiene un escudo invisible, y la nave Juno lo atravesó dos veces. Pero no es una pared. Es una frontera donde el viento del Sol choca y se frena.",
+   "on_screen_text": "Juno lo cruzó dos veces",
+   "asset_filename": "frames/scene_001.jpg",
+   "sfx": [
+    "truenos"
+   ],
+   "source_ids": [
+    "SRC-001",
+    "SRC-002"
+   ],
+   "image_credit": "Illustration of Juno spacecraft at Jupiter (PIA19639). NASA/JPL-Caltech, Public domain. https://commons.wikimedia.org/wiki/File:Illustration_of_Juno_spacecraft_at_Jupiter_(PIA19639).jpg",
+   "visual_description": "File:Illustration of Juno spacecraft at Jupiter (PIA19639).jpg"
+  },
+  {
+   "id": "scene_002",
+   "arc": "desarrollo",
+   "duration_seconds": 10,
+   "narration": "Se llama choque de proa. Ahí, el viento solar, un chorro de partículas que sale del Sol, encuentra el entorno magnético del planeta y empieza a frenarse, como el agua frente a la proa de un barco.",
+   "on_screen_text": "Choque de proa",
+   "asset_filename": "frames/scene_002.jpg",
+   "sfx": [
+    "viento"
+   ],
+   "source_ids": [
+    "SRC-001",
+    "SRC-002"
+   ],
+   "image_credit": "NASA magnetosphere plasma waves diagram. Credits: NASA’s Goddard Space Flight Center/Mary Pat Hrybyk-Keith, Public domain. https://commons.wikimedia.org/wiki/File:NASA_magnetosphere_plasma_waves_diagram.png",
+   "visual_description": "File:NASA magnetosphere plasma waves diagram.png"
+  },
+  {
+   "id": "scene_003",
+   "arc": "desarrollo",
+   "duration_seconds": 10,
+   "narration": "Juno lo cruzó el diez y el once de diciembre de dos mil veinticuatro, durante su misión alrededor del planeta gigante. Cada paso ofreció una mirada distinta al mismo límite.",
+   "on_screen_text": "10 y 11 de diciembre de 2024",
+   "asset_filename": "frames/scene_003.jpg",
+   "sfx": [
+    "reloj"
+   ],
+   "source_ids": [
+    "SRC-001",
+    "SRC-002"
+   ],
+   "image_credit": "Juno Spacecraft and Instruments. Image credit: NASA/JPL https://www.nasa.gov/mission_pages/juno/spacecraft/index.html, Public domain. https://commons.wikimedia.org/wiki/File:Juno_Spacecraft_and_Instruments.jpg",
+   "visual_description": "File:Juno Spacecraft and Instruments.jpg"
+  },
+  {
+   "id": "scene_004",
+   "arc": "desarrollo",
+   "duration_seconds": 10,
+   "narration": "Su instrumento de ondas registró el campo eléctrico a cincuenta mil muestras por segundo. Las misiones anteriores, en alta resolución, llegaban a veintiocho mil.",
+   "on_screen_text": "50 000 muestras por segundo",
+   "asset_filename": "frames/scene_004.jpg",
+   "sfx": [
+    "reloj"
+   ],
+   "source_ids": [
+    "SRC-001",
+    "SRC-002"
+   ],
+   "image_credit": "PIA21972 Jupiter Blues. NASA/JPL-Caltech/SwRI/MSSS/Gerald Eichstadt/Sean Doran, Public domain. https://commons.wikimedia.org/wiki/File:PIA21972_Jupiter_Blues.jpg",
+   "visual_description": "File:PIA21972 Jupiter Blues.jpg"
+  },
+  {
+   "id": "scene_005",
+   "arc": "desarrollo",
+   "duration_seconds": 10,
+   "narration": "Y escuchó de todo: ondas de Langmuir, ondas acústicas de iones y una inestabilidad que surge cuando electrones e iones se mueven de forma distinta. La sorpresa fueron los armónicos: varias frecuencias actuando juntas.",
+   "on_screen_text": "Sorpresa: armónicos",
+   "asset_filename": "frames/scene_005.jpg",
+   "sfx": [
+    "truenos"
+   ],
+   "source_ids": [
+    "SRC-001",
+    "SRC-002"
+   ],
+   "image_credit": "PIA20753 Data Recorded as Juno Crossed Jovian Bow Shock. NASA/JPL-Caltech/SwRI/Univ. of Iowa, Public domain. https://commons.wikimedia.org/wiki/File:PIA20753_Data_Recorded_as_Juno_Crossed_Jovian_Bow_Shock.png",
+   "visual_description": "File:PIA20753 Data Recorded as Juno Crossed Jovian Bow Shock.png"
+  },
+  {
+   "id": "scene_006",
+   "arc": "desarrollo",
+   "duration_seconds": 10,
+   "narration": "También aparecieron estructuras que se repetían más o menos cada ocho coma tres segundos. Esas ondas pasan energía del viento solar a las partículas: las calientan y las frenan. El choque de Júpiter resultó más intenso que el de la Tierra.",
+   "on_screen_text": "Más intenso que el de la Tierra",
+   "asset_filename": "frames/scene_006.jpg",
+   "sfx": [
+    "viento"
+   ],
+   "source_ids": [
+    "SRC-001",
+    "SRC-002"
+   ],
+   "image_credit": "Jupiter South Pole - Juno Perijove 4 - February 2 2017 (38605852072). Kevin Gill from Los Angeles, CA, United States, CC BY 2.0. https://commons.wikimedia.org/wiki/File:Jupiter_South_Pole_-_Juno_Perijove_4_-_February_2_2017_(38605852072).jpg",
+   "visual_description": "File:Jupiter South Pole - Juno Perijove 4 - February 2 2017 (38605852072).jpg"
+  },
+  {
+   "id": "scene_007",
+   "arc": "cierre",
+   "duration_seconds": 10,
+   "narration": "No es un escudo perfecto que detenga todo. Es un laboratorio natural para entender choques de plasma, incluso los que rodean restos de supernovas. Esto fue Datos y ociosidades.",
+   "on_screen_text": "Laboratorio natural",
+   "asset_filename": "frames/scene_007.jpg",
+   "sfx": [
+    "viento"
+   ],
+   "source_ids": [
+    "SRC-001",
+    "SRC-002"
+   ],
+   "image_credit": "Tycho-supernova-xray. NASA/CXC/Rutgers/J.Warren & J.Hughes et al., Public domain. https://commons.wikimedia.org/wiki/File:Tycho-supernova-xray.jpg",
+   "visual_description": "File:Tycho-supernova-xray.jpg"
+  }
+ ],
+ "cortinilla_fuentes": {
+  "duration_seconds": 6,
+  "titulo": "Fuentes",
+  "aviso": "Imágenes de dominio público o con licencia libre (Wikimedia Commons). Voz sintética (IA). Audio sintetizado.",
+  "firma": "Datos y ociosidades · @datosyociosidades",
+  "bg_rgb": [
+   18,
+   16,
+   14
+  ]
+ },
+ "export": {
+  "filename": "capsula.mp4",
+  "resolution": "1080x1920",
+  "fps": 30,
+  "loudness_lufs": -14,
+  "plano_seconds": 4.0,
+  "subtitle_max_words": 3
+ },
+ "estructura": "arco_narrativo",
+ "hook_type": "mito_vs_dato"
+}

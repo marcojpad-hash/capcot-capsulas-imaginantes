@@ -1,0 +1,190 @@
+{
+ "project_id": "2026-11-25_rehecho-miel-su-unico-enemigo",
+ "serie": "Rehechos con gancho nuevo",
+ "rehecho_de": "jpDyCX6zSgQ",
+ "title": "La miel NO es eterna: tiene un enemigo",
+ "titulo": "La miel NO es eterna: tiene un enemigo",
+ "language": "es-MX",
+ "aspect_ratio": "9:16",
+ "target_duration_seconds": 88,
+ "estilo_id": "foto_commons",
+ "estilo_visual": "fotografías e ilustraciones de dominio público o licencia libre (Wikimedia Commons)",
+ "proveedor_imagenes": "Wikimedia Commons (dominio público o CC, créditos en metadata)",
+ "parece_real": true,
+ "keywords": [
+  "miel"
+ ],
+ "voice": {
+  "engine": "edge-tts",
+  "voice_id": "es-MX-JorgeNeural",
+  "rate": "+7%",
+  "pitch": "-2Hz",
+  "pad_seconds": 0.35,
+  "modo_pausas": "continuo"
+ },
+ "audio": {
+  "music_asset": "sintetico:pulso",
+  "cama_musical": "pulso",
+  "music_bpm": 92,
+  "music_lufs": -27,
+  "ambiente_lufs": -30
+ },
+ "canal": {
+  "nombre": "Datos y ociosidades",
+  "handle": "@datosyociosidades"
+ },
+ "sources": [
+  {
+   "id": "SRC-001",
+   "cita_corta": "The role of honey in the ecology of the hive (2022). Revisión, PMC9359632.",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9359632/"
+  },
+  {
+   "id": "SRC-002",
+   "cita_corta": "A review of methodologies for assessing the antibacterial activity of honey (2022). PMC9312033.",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9312033/"
+  }
+ ],
+ "scenes": [
+  {
+   "id": "scene_001",
+   "arc": "hook_medias_res",
+   "duration_seconds": 10,
+   "narration": "La miel tiene fama de no caducar nunca. Casi es cierto. Pero tiene un enemigo que entra a tu casa sin que lo veas: el agua del aire.",
+   "on_screen_text": "Su enemigo: el agua",
+   "asset_filename": "frames/scene_001.jpg",
+   "sfx": [
+    "pluma"
+   ],
+   "source_ids": [
+    "SRC-001",
+    "SRC-002"
+   ],
+   "image_credit": "Three French monofloral honey jars. Hayden Soloviev, CC BY 4.0. https://commons.wikimedia.org/wiki/File:Three_French_monofloral_honey_jars.jpg",
+   "visual_description": "File:Three French monofloral honey jars.jpg"
+  },
+  {
+   "id": "scene_002",
+   "arc": "desarrollo",
+   "duration_seconds": 10,
+   "narration": "Todo empieza en la colmena. Las abejas toman néctar, que es casi agua con azúcar, y lo abanican con las alas hasta quitarle la mayor parte del agua. Luego la guardan en celdas de cera y las sellan.",
+   "on_screen_text": "Las abejas le quitan el agua",
+   "asset_filename": "frames/scene_002.jpg",
+   "sfx": [
+    "pluma"
+   ],
+   "source_ids": [
+    "SRC-001",
+    "SRC-002"
+   ],
+   "image_credit": "Western honey bee on a honeycomb. Matthew T Rader, CC BY-SA 4.0. https://commons.wikimedia.org/wiki/File:Western_honey_bee_on_a_honeycomb.jpg",
+   "visual_description": "File:Western honey bee on a honeycomb.jpg"
+  },
+  {
+   "id": "scene_003",
+   "arc": "desarrollo",
+   "duration_seconds": 10,
+   "narration": "Así queda tan poca agua libre que los microbios no encuentran de dónde beber. Para una bacteria, la miel es un desierto dulce: el azúcar le jala el agua hacia afuera.",
+   "on_screen_text": "Un desierto dulce",
+   "asset_filename": "frames/scene_003.jpg",
+   "sfx": [
+    "pluma"
+   ],
+   "source_ids": [
+    "SRC-001",
+    "SRC-002"
+   ],
+   "image_credit": "Fresh honeycomb dripping honey India. Vraj Acharya, CC BY-SA 4.0. https://commons.wikimedia.org/wiki/File:Fresh_honeycomb_dripping_honey_India.jpg",
+   "visual_description": "File:Fresh honeycomb dripping honey India.jpg"
+  },
+  {
+   "id": "scene_004",
+   "arc": "desarrollo",
+   "duration_seconds": 10,
+   "narration": "Y tiene más guardias. La miel es un poco ácida, y algunas producen sustancias que frenan a las bacterias. Una defensa doble contra los microbios.",
+   "on_screen_text": "Ácida y antibacteriana",
+   "asset_filename": "frames/scene_004.jpg",
+   "sfx": [
+    "pluma"
+   ],
+   "source_ids": [
+    "SRC-001",
+    "SRC-002"
+   ],
+   "image_credit": "Beekeeping in a bee suit while holding a honeycomb from a beehive. Matthew T Rader, CC BY-SA 4.0. https://commons.wikimedia.org/wiki/File:Beekeeping_in_a_bee_suit_while_holding_a_honeycomb_from_a_beehive.jpg",
+   "visual_description": "File:Beekeeping in a bee suit while holding a honeycomb from a beehive.jpg"
+  },
+  {
+   "id": "scene_005",
+   "arc": "desarrollo",
+   "duration_seconds": 10,
+   "narration": "Pero no es invencible. Hay levaduras, unos hongos diminutos, que aguantan el azúcar. Si la miel junta demasiada agua, pueden fermentarla. Ahí sí se echa a perder.",
+   "on_screen_text": "Las levaduras la fermentan",
+   "asset_filename": "frames/scene_005.jpg",
+   "sfx": [
+    "reloj"
+   ],
+   "source_ids": [
+    "SRC-001",
+    "SRC-002"
+   ],
+   "image_credit": "Baking yeast cells under 40x microscope objective. ~delta, CC BY-SA 4.0. https://commons.wikimedia.org/wiki/File:Baking_yeast_cells_under_40x_microscope_objective.jpg",
+   "visual_description": "File:Baking yeast cells under 40x microscope objective.jpg"
+  },
+  {
+   "id": "scene_006",
+   "arc": "desarrollo",
+   "duration_seconds": 10,
+   "narration": "Por eso el peligro es el frasco mal tapado. La miel absorbe humedad del aire, y la fortaleza se debilita sin que lo notes.",
+   "on_screen_text": "Ciérrala bien",
+   "asset_filename": "frames/scene_006.jpg",
+   "sfx": [
+    "pluma"
+   ],
+   "source_ids": [
+    "SRC-001",
+    "SRC-002"
+   ],
+   "image_credit": "Honey dipper. Matankic, CC0. https://commons.wikimedia.org/wiki/File:Honey_dipper.jpg",
+   "visual_description": "File:Honey dipper.jpg"
+  },
+  {
+   "id": "scene_007",
+   "arc": "cierre",
+   "duration_seconds": 10,
+   "narration": "¿Y si se pone dura y blanca? Eso no es echarse a perder: es cristalización. Sus azúcares se acomodaron en granitos. Tápala bien y, si quieres, entíbiala a baño maría. La miel no es eterna por magia: es un desierto que se defiende mientras no le abras la puerta al agua. Esto fue Datos y ociosidades.",
+   "on_screen_text": "Cristalizada no es echada a perder",
+   "asset_filename": "frames/scene_007.jpg",
+   "sfx": [
+    "pluma"
+   ],
+   "source_ids": [
+    "SRC-001",
+    "SRC-002"
+   ],
+   "image_credit": "Crystallized honey with close-up. Zaereth, CC0. https://commons.wikimedia.org/wiki/File:Crystallized_honey_with_close-up.jpg",
+   "visual_description": "File:Crystallized honey with close-up.jpg"
+  }
+ ],
+ "cortinilla_fuentes": {
+  "duration_seconds": 6,
+  "titulo": "Fuentes",
+  "aviso": "Imágenes de dominio público o con licencia libre (Wikimedia Commons). Voz sintética (IA). Audio sintetizado.",
+  "firma": "Datos y ociosidades · @datosyociosidades",
+  "bg_rgb": [
+   18,
+   16,
+   14
+  ]
+ },
+ "export": {
+  "filename": "capsula.mp4",
+  "resolution": "1080x1920",
+  "fps": 30,
+  "loudness_lufs": -14,
+  "plano_seconds": 4.0,
+  "subtitle_max_words": 3
+ },
+ "estructura": "arco_narrativo",
+ "hook_type": "mito_vs_dato"
+}

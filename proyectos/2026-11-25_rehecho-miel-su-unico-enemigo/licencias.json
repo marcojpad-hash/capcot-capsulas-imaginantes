@@ -1,0 +1,48 @@
+{
+ "project_id": "2026-11-25_rehecho-miel-su-unico-enemigo",
+ "musica": {
+  "cama": "pulso",
+  "origen": "síntesis propia (scripts/cama_sonora.py, numpy)",
+  "licencia": "obra propia de Datos y ociosidades",
+  "generada_por_ia": false
+ },
+ "sfx": {
+  "pluma": {
+   "archivo": "pluma.ogg",
+   "commons": "File:Writing with inkpen.ogg",
+   "autor": "stephan",
+   "licencia": "Public domain",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Writing_with_inkpen.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Writing_with_inkpen.ogg",
+   "licencia_verificada": "Public domain"
+  },
+  "reloj": {
+   "archivo": "reloj.ogg",
+   "commons": "File:Clock ticking.ogg",
+   "autor": "natalie",
+   "licencia": "Public domain",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/5/56/Clock_ticking.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Clock_ticking.ogg",
+   "licencia_verificada": "Public domain"
+  }
+ },
+ "imagenes": {
+  "origen": "Wikimedia Commons (dominio público o CC, créditos en metadata)",
+  "estilo": "foto_commons",
+  "realista": true
+ },
+ "voz": {
+  "motor": "Microsoft Edge TTS",
+  "voz": "es-MX-JorgeNeural",
+  "nota": "voz sintética; no imita a una persona real"
+ },
+ "capas_datos": {
+  "tipos": [],
+  "mapa_base": null,
+  "render": "matplotlib (propio)"
+ },
+ "fuentes_datos": [
+  "https://pmc.ncbi.nlm.nih.gov/articles/PMC9359632/",
+  "https://pmc.ncbi.nlm.nih.gov/articles/PMC9312033/"
+ ]
+}

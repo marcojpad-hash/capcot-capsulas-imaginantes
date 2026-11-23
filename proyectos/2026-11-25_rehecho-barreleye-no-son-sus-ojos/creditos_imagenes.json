@@ -1,0 +1,65 @@
+{
+ "scene_001": {
+  "file": "File:BarreleyeModelNHMLondon.jpg",
+  "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/BarreleyeModelNHMLondon.jpg/1920px-BarreleyeModelNHMLondon.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "w": 4364,
+  "h": 2304,
+  "artist": "Lusanaherandraton",
+  "lic": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:BarreleyeModelNHMLondon.jpg"
+ },
+ "scene_002": {
+  "file": "File:Monterey Canyon Bathymetric Chart.JPG",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/0/07/Monterey_Canyon_Bathymetric_Chart.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+  "w": 1192,
+  "h": 1767,
+  "artist": "National Oceanographic and Atmospheric Administration",
+  "lic": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:Monterey_Canyon_Bathymetric_Chart.JPG"
+ },
+ "scene_003": {
+  "file": "File:Opisthoproctidae soles.png",
+  "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Opisthoproctidae_soles.png/1920px-Opisthoproctidae_soles.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "w": 2250,
+  "h": 1021,
+  "artist": "S. Johnsen (Duke Uni.) for courtesy of photos, J. Hlidberg for courtesy of illustrations, K. and E. Hjørne for help with",
+  "lic": "CC BY 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Opisthoproctidae_soles.png"
+ },
+ "scene_004": {
+  "file": "File:ROV Tiburon in Western Flyer.jpg",
+  "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/ROV_Tiburon_in_Western_Flyer.jpg/1920px-ROV_Tiburon_in_Western_Flyer.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "w": 2168,
+  "h": 2484,
+  "artist": "Wusel007",
+  "lic": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:ROV_Tiburon_in_Western_Flyer.jpg"
+ },
+ "scene_005": {
+  "file": "File:Photographs of living siphonophores.jpg",
+  "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/Photographs_of_living_siphonophores.jpg/1920px-Photographs_of_living_siphonophores.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "w": 2192,
+  "h": 2685,
+  "artist": "C Munro, S Siebert, F Zapata, M Howison, A Serrano, S Church, F Goetz, P Pugh, S Haddock, C Dunn",
+  "lic": "CC BY 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Photographs_of_living_siphonophores.jpg"
+ },
+ "scene_007": {
+  "file": "File:ROV Ventana on Point Lobos.jpg",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/1/1f/ROV_Ventana_on_Point_Lobos.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+  "w": 1856,
+  "h": 2350,
+  "artist": "Wusel007",
+  "lic": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:ROV_Ventana_on_Point_Lobos.jpg"
+ },
+ "scene_006": {
+  "file": "File:Barreleye-fish GoK.jpg",
+  "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Barreleye-fish_GoK.jpg/1920px-Barreleye-fish_GoK.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "w": 4000,
+  "h": 3000,
+  "artist": "Unknown authorUnknown author",
+  "lic": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:Barreleye-fish_GoK.jpg"
+ }
+}

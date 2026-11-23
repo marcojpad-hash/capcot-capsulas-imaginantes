@@ -1,0 +1,65 @@
+{
+ "scene_001": {
+  "file": "File:Illustration of Juno spacecraft at Jupiter (PIA19639).jpg",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Illustration_of_Juno_spacecraft_at_Jupiter_%28PIA19639%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+  "w": 1920,
+  "h": 1080,
+  "artist": "NASA/JPL-Caltech",
+  "lic": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:Illustration_of_Juno_spacecraft_at_Jupiter_(PIA19639).jpg"
+ },
+ "scene_002": {
+  "file": "File:NASA magnetosphere plasma waves diagram.png",
+  "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/NASA_magnetosphere_plasma_waves_diagram.png/1920px-NASA_magnetosphere_plasma_waves_diagram.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "w": 3000,
+  "h": 2188,
+  "artist": "Credits: NASA’s Goddard Space Flight Center/Mary Pat Hrybyk-Keith",
+  "lic": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:NASA_magnetosphere_plasma_waves_diagram.png"
+ },
+ "scene_003": {
+  "file": "File:Juno Spacecraft and Instruments.jpg",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Juno_Spacecraft_and_Instruments.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+  "w": 1500,
+  "h": 1075,
+  "artist": "Image credit: NASA/JPL https://www.nasa.gov/mission_pages/juno/spacecraft/index.html",
+  "lic": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:Juno_Spacecraft_and_Instruments.jpg"
+ },
+ "scene_004": {
+  "file": "File:PIA21972 Jupiter Blues.jpg",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/5/5c/PIA21972_Jupiter_Blues.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+  "w": 1920,
+  "h": 1630,
+  "artist": "NASA/JPL-Caltech/SwRI/MSSS/Gerald Eichstadt/Sean Doran",
+  "lic": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:PIA21972_Jupiter_Blues.jpg"
+ },
+ "scene_005": {
+  "file": "File:PIA20753 Data Recorded as Juno Crossed Jovian Bow Shock.png",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/e/e2/PIA20753_Data_Recorded_as_Juno_Crossed_Jovian_Bow_Shock.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+  "w": 1140,
+  "h": 523,
+  "artist": "NASA/JPL-Caltech/SwRI/Univ. of Iowa",
+  "lic": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:PIA20753_Data_Recorded_as_Juno_Crossed_Jovian_Bow_Shock.png"
+ },
+ "scene_006": {
+  "file": "File:Jupiter South Pole - Juno Perijove 4 - February 2 2017 (38605852072).jpg",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Jupiter_South_Pole_-_Juno_Perijove_4_-_February_2_2017_%2838605852072%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+  "w": 1910,
+  "h": 1046,
+  "artist": "Kevin Gill from Los Angeles, CA, United States",
+  "lic": "CC BY 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Jupiter_South_Pole_-_Juno_Perijove_4_-_February_2_2017_(38605852072).jpg"
+ },
+ "scene_007": {
+  "file": "File:Tycho-supernova-xray.jpg",
+  "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Tycho-supernova-xray.jpg/1920px-Tycho-supernova-xray.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "w": 2400,
+  "h": 2400,
+  "artist": "NASA/CXC/Rutgers/J.Warren & J.Hughes et al.",
+  "lic": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:Tycho-supernova-xray.jpg"
+ }
+}

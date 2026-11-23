@@ -1,0 +1,65 @@
+{
+ "scene_001": {
+  "file": "File:Brot 001 2016 07 03.jpg",
+  "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Brot_001_2016_07_03.jpg/1920px-Brot_001_2016_07_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "w": 4460,
+  "h": 3149,
+  "artist": "Friedrich Haag",
+  "lic": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Brot_001_2016_07_03.jpg"
+ },
+ "scene_002": {
+  "file": "File:Bakery oven bread, 2013.jpg",
+  "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Bakery_oven_bread%2C_2013.jpg/1920px-Bakery_oven_bread%2C_2013.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "w": 3561,
+  "h": 5343,
+  "artist": "Jarkko Laine",
+  "lic": "CC BY 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Bakery_oven_bread,_2013.jpg"
+ },
+ "scene_003": {
+  "file": "File:Microscope images of starch 3.png",
+  "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Microscope_images_of_starch_3.png/1920px-Microscope_images_of_starch_3.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "w": 3631,
+  "h": 2733,
+  "artist": "Daniel Domene-López, Juan Carlos García-Quesada, Ignacio Martin-Gullon and Mercedes G. Montalbán",
+  "lic": "CC BY 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Microscope_images_of_starch_3.png"
+ },
+ "scene_004": {
+  "file": "File:Baguette mie.jpg",
+  "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Baguette_mie.jpg/1920px-Baguette_mie.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "w": 4477,
+  "h": 2579,
+  "artist": "Popo le Chien",
+  "lic": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Baguette_mie.jpg"
+ },
+ "scene_005": {
+  "file": "File:Open refrigerator with food at night.jpg",
+  "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Open_refrigerator_with_food_at_night.jpg/1920px-Open_refrigerator_with_food_at_night.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "w": 3465,
+  "h": 4598,
+  "artist": "W.carter",
+  "lic": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Open_refrigerator_with_food_at_night.jpg"
+ },
+ "scene_006": {
+  "file": "File:ToastedWhiteBread.jpg",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/8/8e/ToastedWhiteBread.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+  "w": 1737,
+  "h": 1704,
+  "artist": "Unknown authorUnknown author",
+  "lic": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:ToastedWhiteBread.jpg"
+ },
+ "scene_007": {
+  "file": "File:Fresh made bread 05.jpg",
+  "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Fresh_made_bread_05.jpg/1920px-Fresh_made_bread_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "w": 2526,
+  "h": 1684,
+  "artist": "FranHogan",
+  "lic": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Fresh_made_bread_05.jpg"
+ }
+}

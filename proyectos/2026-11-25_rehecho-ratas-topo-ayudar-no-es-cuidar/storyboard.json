@@ -1,0 +1,179 @@
+{
+ "project_id": "2026-11-25_rehecho-ratas-topo-ayudar-no-es-cuidar",
+ "serie": "Rehechos con gancho nuevo",
+ "rehecho_de": "WcTviUWqbes",
+ "title": "Ayudar con las crías NO era quedarse en el nido",
+ "titulo": "Ayudar con las crías NO era quedarse en el nido",
+ "language": "es-MX",
+ "aspect_ratio": "9:16",
+ "target_duration_seconds": 88,
+ "estilo_id": "foto_commons",
+ "estilo_visual": "fotografías e ilustraciones de dominio público o licencia libre (Wikimedia Commons)",
+ "proveedor_imagenes": "Wikimedia Commons (dominio público o CC, créditos en metadata)",
+ "parece_real": true,
+ "keywords": [
+  "ratas topo"
+ ],
+ "voice": {
+  "engine": "edge-tts",
+  "voice_id": "es-MX-JorgeNeural",
+  "rate": "+7%",
+  "pitch": "-2Hz",
+  "pad_seconds": 0.35,
+  "modo_pausas": "continuo"
+ },
+ "audio": {
+  "music_asset": "sintetico:pulso",
+  "cama_musical": "pulso",
+  "music_bpm": 92,
+  "music_lufs": -27,
+  "ambiente_lufs": -30
+ },
+ "canal": {
+  "nombre": "Datos y ociosidades",
+  "handle": "@datosyociosidades"
+ },
+ "sources": [
+  {
+   "id": "SRC-001",
+   "cita_corta": "Thorley, J. et al. (2026). Helpers at the nest? The activity patterns of Damaraland mole-rats across reproductive periods. Behavioral Ecology.",
+   "url": "https://doi.org/10.1093/beheco/arag140",
+   "doi": "10.1093/beheco/arag140"
+  }
+ ],
+ "scenes": [
+  {
+   "id": "scene_001",
+   "arc": "hook_medias_res",
+   "duration_seconds": 10,
+   "narration": "Nacen las crías, y sus hermanos mayores salen del nido. No las abandonan. Se van a cavar. Así ayudan las ratas topo de Damaraland.",
+   "on_screen_text": "Nacen las crías… y se van",
+   "asset_filename": "frames/scene_001.jpg",
+   "sfx": [
+    "madera"
+   ],
+   "source_ids": [
+    "SRC-001"
+   ],
+   "image_credit": "Fukomys damarensis. Albert Lechêne, CC BY-SA 4.0. https://commons.wikimedia.org/wiki/File:Fukomys_damarensis.jpg",
+   "visual_description": "File:Fukomys damarensis.jpg"
+  },
+  {
+   "id": "scene_002",
+   "arc": "desarrollo",
+   "duration_seconds": 10,
+   "narration": "Son roedores africanos que viven en familia bajo tierra. Excavan redes de túneles para encontrar tubérculos, su comida. En cada colonia, normalmente solo una hembra se reproduce.",
+   "on_screen_text": "Una sola madre por colonia",
+   "asset_filename": "frames/scene_002.jpg",
+   "sfx": [
+    "madera"
+   ],
+   "source_ids": [
+    "SRC-001"
+   ],
+   "image_credit": "Fukomys damarensis 175806223. Robert Taylor, CC BY 4.0. https://commons.wikimedia.org/wiki/File:Fukomys_damarensis_175806223.jpg",
+   "visual_description": "File:Fukomys damarensis 175806223.jpg"
+  },
+  {
+   "id": "scene_003",
+   "arc": "desarrollo",
+   "duration_seconds": 10,
+   "narration": "Jack Thorley y su equipo revisaron unas veinticuatro mil horas de observación de animales en cautiverio, en distintas etapas reproductivas. Querían saber quién hace qué cuando llegan los bebés.",
+   "on_screen_text": "24 000 horas de observación",
+   "asset_filename": "frames/scene_003.jpg",
+   "sfx": [
+    "reloj"
+   ],
+   "source_ids": [
+    "SRC-001"
+   ],
+   "image_credit": "Fukomys damarensis 175806169. Robert Taylor, CC BY 4.0. https://commons.wikimedia.org/wiki/File:Fukomys_damarensis_175806169.jpg",
+   "visual_description": "File:Fukomys damarensis 175806169.jpg"
+  },
+  {
+   "id": "scene_004",
+   "arc": "desarrollo",
+   "duration_seconds": 10,
+   "narration": "El resultado sorprendió: poco después del nacimiento, los que no se reproducen, hembras y machos, pasan menos tiempo en el nido y trabajan más. Los machos reproductores hacen lo mismo.",
+   "on_screen_text": "Menos nido, más trabajo",
+   "asset_filename": "frames/scene_004.jpg",
+   "sfx": [
+    "madera"
+   ],
+   "source_ids": [
+    "SRC-001"
+   ],
+   "image_credit": "Fukomys damarensis 175806182. Robert Taylor, CC BY 4.0. https://commons.wikimedia.org/wiki/File:Fukomys_damarensis_175806182.jpg",
+   "visual_description": "File:Fukomys damarensis 175806182.jpg"
+  },
+  {
+   "id": "scene_005",
+   "arc": "desarrollo",
+   "duration_seconds": 10,
+   "narration": "Mientras tanto, la madre se queda más tiempo dentro del nido, reduce el trabajo y aumenta su alimentación. Ella es la que amamanta a las crías.",
+   "on_screen_text": "La madre se queda y come",
+   "asset_filename": "frames/scene_005.jpg",
+   "sfx": [
+    "madera"
+   ],
+   "source_ids": [
+    "SRC-001"
+   ],
+   "image_credit": "Fukomys damarensis 12598488. Tony Rebelo, CC BY-SA 4.0. https://commons.wikimedia.org/wiki/File:Fukomys_damarensis_12598488.jpg",
+   "visual_description": "File:Fukomys damarensis 12598488.jpg"
+  },
+  {
+   "id": "scene_006",
+   "arc": "desarrollo",
+   "duration_seconds": 10,
+   "narration": "Ojo: el estudio no encontró que los ayudantes pasaran más tiempo junto a los bebés. Su ayuda llega por otra vía. Los autores proponen que ese esfuerzo extra apoya a la madre cuando está más limitada, y facilita que las crías encuentren alimento cuando empiecen a salir del nido.",
+   "on_screen_text": "Ayudar sin cargar al bebé",
+   "asset_filename": "frames/scene_006.jpg",
+   "sfx": [
+    "viento"
+   ],
+   "source_ids": [
+    "SRC-001"
+   ],
+   "image_credit": "Sand dune in the Kalahari Desert (Namibia). Olga Ernst & Hp.Baumeler, CC BY-SA 4.0. https://commons.wikimedia.org/wiki/File:Sand_dune_in_the_Kalahari_Desert_(Namibia).jpg",
+   "visual_description": "File:Sand dune in the Kalahari Desert (Namibia).jpg"
+  },
+  {
+   "id": "scene_007",
+   "arc": "cierre",
+   "duration_seconds": 10,
+   "narration": "En esta familia, cuidar no siempre significa cargar al bebé. A veces significa mantener funcionando la red que alimenta a todos. ¿En tu casa, quién cava los túneles? Esto fue Datos y ociosidades.",
+   "on_screen_text": "¿Quién cava en tu casa?",
+   "asset_filename": "frames/scene_007.jpg",
+   "sfx": [
+    "madera"
+   ],
+   "source_ids": [
+    "SRC-001"
+   ],
+   "image_credit": "Fukomys damarensis 175806205. Robert Taylor, CC BY 4.0. https://commons.wikimedia.org/wiki/File:Fukomys_damarensis_175806205.jpg",
+   "visual_description": "File:Fukomys damarensis 175806205.jpg"
+  }
+ ],
+ "cortinilla_fuentes": {
+  "duration_seconds": 6,
+  "titulo": "Fuentes",
+  "aviso": "Imágenes de dominio público o con licencia libre (Wikimedia Commons). Voz sintética (IA). Audio sintetizado.",
+  "firma": "Datos y ociosidades · @datosyociosidades",
+  "bg_rgb": [
+   18,
+   16,
+   14
+  ]
+ },
+ "export": {
+  "filename": "capsula.mp4",
+  "resolution": "1080x1920",
+  "fps": 30,
+  "loudness_lufs": -14,
+  "plano_seconds": 4.0,
+  "subtitle_max_words": 3
+ },
+ "estructura": "arco_narrativo",
+ "hook_type": "mito_vs_dato"
+}

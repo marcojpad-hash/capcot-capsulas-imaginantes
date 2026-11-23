@@ -1,0 +1,203 @@
+{
+ "project_id": "2026-11-25_rehecho-barreleye-no-son-sus-ojos",
+ "serie": "Rehechos con gancho nuevo",
+ "rehecho_de": "YV_3JgGv1kg",
+ "title": "Esos dos puntos NO son sus ojos",
+ "titulo": "Esos dos puntos NO son sus ojos",
+ "language": "es-MX",
+ "aspect_ratio": "9:16",
+ "target_duration_seconds": 88,
+ "estilo_id": "foto_commons",
+ "estilo_visual": "fotografías e ilustraciones de dominio público o licencia libre (Wikimedia Commons)",
+ "proveedor_imagenes": "Wikimedia Commons (dominio público o CC, créditos en metadata)",
+ "parece_real": true,
+ "keywords": [
+  "barreleye"
+ ],
+ "voice": {
+  "engine": "edge-tts",
+  "voice_id": "es-MX-JorgeNeural",
+  "rate": "+7%",
+  "pitch": "-2Hz",
+  "pad_seconds": 0.35,
+  "modo_pausas": "continuo"
+ },
+ "audio": {
+  "music_asset": "sintetico:pulso",
+  "cama_musical": "pulso",
+  "music_bpm": 92,
+  "music_lufs": -27,
+  "ambiente_lufs": -30
+ },
+ "canal": {
+  "nombre": "Datos y ociosidades",
+  "handle": "@datosyociosidades"
+ },
+ "sources": [
+  {
+   "id": "SRC-001",
+   "cita_corta": "MBARI (2009). Researchers solve mystery of deep-sea fish with tubular eyes and transparent head.",
+   "url": "https://www.mbari.org/news/researchers-solve-mystery-of-deep-sea-fish-with-tubular-eyes-and-transparent-head/"
+  },
+  {
+   "id": "SRC-002",
+   "cita_corta": "Robison & Reisenbichler (2008). Macropinna microstoma and the paradox of its tubular eyes. Copeia 2008(4): 780-784.",
+   "url": "https://doi.org/10.1643/CG-07-082",
+   "ref_display": "Copeia 2008(4): 780-784"
+  },
+  {
+   "id": "SRC-003",
+   "cita_corta": "MBARI (2026). Researchers film rarely seen deep-sea barreleye fish in 4K.",
+   "url": "https://www.mbari.org/news/mbari-researchers-film-rarely-seen-deep-sea-barreleye-fish-in-4k/"
+  }
+ ],
+ "scenes": [
+  {
+   "id": "scene_001",
+   "arc": "hook_medias_res",
+   "duration_seconds": 10,
+   "narration": "Si viste fotos de este pez, seguro creíste que los dos puntitos sobre su boca eran sus ojos. No lo son. Son sus narinas, el equivalente a nuestra nariz. Sus ojos de verdad están dentro de su cabeza transparente.",
+   "on_screen_text": "Eso es su nariz",
+   "asset_filename": "frames/scene_001.jpg",
+   "sfx": [
+    "olas"
+   ],
+   "source_ids": [
+    "SRC-001",
+    "SRC-002",
+    "SRC-003"
+   ],
+   "image_credit": "BarreleyeModelNHMLondon. Lusanaherandraton, CC BY-SA 4.0. https://commons.wikimedia.org/wiki/File:BarreleyeModelNHMLondon.jpg",
+   "visual_description": "File:BarreleyeModelNHMLondon.jpg"
+  },
+  {
+   "id": "scene_002",
+   "arc": "desarrollo",
+   "duration_seconds": 10,
+   "narration": "Es el pez barreleye, Macropinna microstoma. Vive donde la luz del Sol se apaga, a unos seiscientos metros bajo la bahía de Monterey, en California.",
+   "on_screen_text": "600 metros de profundidad",
+   "asset_filename": "frames/scene_002.jpg",
+   "sfx": [
+    "olas"
+   ],
+   "source_ids": [
+    "SRC-001",
+    "SRC-002",
+    "SRC-003"
+   ],
+   "image_credit": "Monterey Canyon Bathymetric Chart. National Oceanographic and Atmospheric Administration, Public domain. https://commons.wikimedia.org/wiki/File:Monterey_Canyon_Bathymetric_Chart.JPG",
+   "visual_description": "File:Monterey Canyon Bathymetric Chart.JPG"
+  },
+  {
+   "id": "scene_003",
+   "arc": "desarrollo",
+   "duration_seconds": 10,
+   "narration": "Sus ojos son dos tubos con lentes verdes brillantes. Están bajo una cúpula transparente, llena de líquido, que le cubre la parte de arriba de la cabeza.",
+   "on_screen_text": "Ojos tubulares verdes",
+   "asset_filename": "frames/scene_003.jpg",
+   "sfx": [
+    "olas"
+   ],
+   "source_ids": [
+    "SRC-001",
+    "SRC-002",
+    "SRC-003"
+   ],
+   "image_credit": "Opisthoproctidae soles. S. Johnsen (Duke Uni.) for courtesy of photos, J. Hlidberg for courtesy of illustrations, K. and E. Hjørne for help with, CC BY 4.0. https://commons.wikimedia.org/wiki/File:Opisthoproctidae_soles.png",
+   "visual_description": "File:Opisthoproctidae soles.png"
+  },
+  {
+   "id": "scene_004",
+   "arc": "desarrollo",
+   "duration_seconds": 10,
+   "narration": "Durante décadas se pensó que esos ojos estaban fijos y solo miraban hacia arriba. En dos mil ocho, Bruce Robison y Kim Reisenbichler, de MBARI, demostraron que pueden girar dentro de la cúpula.",
+   "on_screen_text": "Sí giran: Robison, 2008",
+   "asset_filename": "frames/scene_004.jpg",
+   "sfx": [
+    "reloj"
+   ],
+   "source_ids": [
+    "SRC-001",
+    "SRC-002",
+    "SRC-003"
+   ],
+   "image_credit": "ROV Tiburon in Western Flyer. Wusel007, CC BY-SA 3.0. https://commons.wikimedia.org/wiki/File:ROV_Tiburon_in_Western_Flyer.jpg",
+   "visual_description": "File:ROV Tiburon in Western Flyer.jpg"
+  },
+  {
+   "id": "scene_005",
+   "arc": "desarrollo",
+   "duration_seconds": 10,
+   "narration": "Miran hacia arriba para buscar siluetas de presas, y giran al frente para comer. La cúpula protege esos ojos cuando roba crustáceos entre los tentáculos de los sifonóforos.",
+   "on_screen_text": "Roba comida a sifonóforos",
+   "asset_filename": "frames/scene_005.jpg",
+   "sfx": [
+    "olas"
+   ],
+   "source_ids": [
+    "SRC-001",
+    "SRC-002",
+    "SRC-003"
+   ],
+   "image_credit": "Photographs of living siphonophores. C Munro, S Siebert, F Zapata, M Howison, A Serrano, S Church, F Goetz, P Pugh, S Haddock, C Dunn, CC BY 4.0. https://commons.wikimedia.org/wiki/File:Photographs_of_living_siphonophores.jpg",
+   "visual_description": "File:Photographs of living siphonophores.jpg"
+  },
+  {
+   "id": "scene_006",
+   "arc": "desarrollo",
+   "duration_seconds": 10,
+   "narration": "Casi nadie había visto esa cúpula, porque se destruía cuando subían al pez en redes. Por eso tantos dibujos viejos no la muestran.",
+   "on_screen_text": "La cúpula se rompía en las redes",
+   "asset_filename": "frames/scene_006.jpg",
+   "sfx": [
+    "olas"
+   ],
+   "source_ids": [
+    "SRC-001",
+    "SRC-002",
+    "SRC-003"
+   ],
+   "image_credit": "Barreleye-fish GoK. Unknown authorUnknown author, Public domain. https://commons.wikimedia.org/wiki/File:Barreleye-fish_GoK.jpg",
+   "visual_description": "File:Barreleye-fish GoK.jpg"
+  },
+  {
+   "id": "scene_007",
+   "arc": "cierre",
+   "duration_seconds": 10,
+   "narration": "Y verlo vivo sigue siendo rarísimo. En dos mil veintiséis, un robot submarino de MBARI lo filmó veinte minutos en 4K. Fue apenas el undécimo avistamiento en casi cuarenta años y siete mil inmersiones. ¿Tú habrías adivinado dónde estaban sus ojos? Esto fue Datos y ociosidades.",
+   "on_screen_text": "11 avistamientos en 40 años",
+   "asset_filename": "frames/scene_007.jpg",
+   "sfx": [
+    "olas"
+   ],
+   "source_ids": [
+    "SRC-001",
+    "SRC-002",
+    "SRC-003"
+   ],
+   "image_credit": "ROV Ventana on Point Lobos. Wusel007, CC BY-SA 3.0. https://commons.wikimedia.org/wiki/File:ROV_Ventana_on_Point_Lobos.jpg",
+   "visual_description": "File:ROV Ventana on Point Lobos.jpg"
+  }
+ ],
+ "cortinilla_fuentes": {
+  "duration_seconds": 6,
+  "titulo": "Fuentes",
+  "aviso": "Imágenes de dominio público o con licencia libre (Wikimedia Commons). Voz sintética (IA). Audio sintetizado.",
+  "firma": "Datos y ociosidades · @datosyociosidades",
+  "bg_rgb": [
+   18,
+   16,
+   14
+  ]
+ },
+ "export": {
+  "filename": "capsula.mp4",
+  "resolution": "1080x1920",
+  "fps": 30,
+  "loudness_lufs": -14,
+  "plano_seconds": 4.0,
+  "subtitle_max_words": 3
+ },
+ "estructura": "arco_narrativo",
+ "hook_type": "mito_vs_dato"
+}

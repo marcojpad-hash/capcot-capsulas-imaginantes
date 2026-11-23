@@ -1,0 +1,65 @@
+{
+ "scene_003": {
+  "file": "File:The Earth seen from Apollo 17.jpg",
+  "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/The_Earth_seen_from_Apollo_17.jpg/1920px-The_Earth_seen_from_Apollo_17.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "w": 3000,
+  "h": 3002,
+  "artist": "NASA/Apollo 17 crew; taken by either Harrison Schmitt or Ron Evans",
+  "lic": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:The_Earth_seen_from_Apollo_17.jpg"
+ },
+ "scene_005": {
+  "file": "File:Full disk view of the sun June 21, 2010 (4721839258).jpg",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Full_disk_view_of_the_sun_June_21%2C_2010_%284721839258%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+  "w": 1024,
+  "h": 1024,
+  "artist": "NASA Goddard Space Flight Center from Greenbelt, MD, USA",
+  "lic": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:Full_disk_view_of_the_sun_June_21,_2010_(4721839258).jpg"
+ },
+ "scene_006": {
+  "file": "File:Pylons at dusk.jpg",
+  "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Pylons_at_dusk.jpg/1920px-Pylons_at_dusk.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "w": 4224,
+  "h": 2368,
+  "artist": "HighVoltage 5576",
+  "lic": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Pylons_at_dusk.jpg"
+ },
+ "scene_007": {
+  "file": "File:Tesvolt battery energy storage system Rheineck.jpg",
+  "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Tesvolt_battery_energy_storage_system_Rheineck.jpg/1920px-Tesvolt_battery_energy_storage_system_Rheineck.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "w": 5472,
+  "h": 3079,
+  "artist": "Kecko from Eastern Switzerland",
+  "lic": "CC BY 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Tesvolt_battery_energy_storage_system_Rheineck.jpg"
+ },
+ "scene_001": {
+  "file": "File:Morris wind turbine in fog with sun.jpg",
+  "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Morris_wind_turbine_in_fog_with_sun.jpg/1920px-Morris_wind_turbine_in_fog_with_sun.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "w": 2272,
+  "h": 1704,
+  "artist": "Nic McPhee",
+  "lic": "CC BY-SA 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Morris_wind_turbine_in_fog_with_sun.jpg"
+ },
+ "scene_002": {
+  "file": "File:Snow on solar panels in Tuntorp.jpg",
+  "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Snow_on_solar_panels_in_Tuntorp.jpg/1920px-Snow_on_solar_panels_in_Tuntorp.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "w": 4658,
+  "h": 3105,
+  "artist": "W.carter",
+  "lic": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Snow_on_solar_panels_in_Tuntorp.jpg"
+ },
+ "scene_004": {
+  "file": "File:Roscoe Wind Farm in West Texas.jpg",
+  "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Roscoe_Wind_Farm_in_West_Texas.jpg/1920px-Roscoe_Wind_Farm_in_West_Texas.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "w": 2871,
+  "h": 1914,
+  "artist": "Matthew T Rader",
+  "lic": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Roscoe_Wind_Farm_in_West_Texas.jpg"
+ }
+}

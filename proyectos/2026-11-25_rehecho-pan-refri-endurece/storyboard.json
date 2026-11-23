@@ -1,0 +1,192 @@
+{
+ "project_id": "2026-11-25_rehecho-pan-refri-endurece",
+ "serie": "Rehechos con gancho nuevo",
+ "rehecho_de": "V9bO9EUN0JA",
+ "title": "El refri NO salva tu pan: lo endurece más rápido",
+ "titulo": "El refri NO salva tu pan: lo endurece más rápido",
+ "language": "es-MX",
+ "aspect_ratio": "9:16",
+ "target_duration_seconds": 88,
+ "estilo_id": "foto_commons",
+ "estilo_visual": "fotografías e ilustraciones de dominio público o licencia libre (Wikimedia Commons)",
+ "proveedor_imagenes": "Wikimedia Commons (dominio público o CC, créditos en metadata)",
+ "parece_real": true,
+ "keywords": [
+  "pan"
+ ],
+ "voice": {
+  "engine": "edge-tts",
+  "voice_id": "es-MX-JorgeNeural",
+  "rate": "+7%",
+  "pitch": "-2Hz",
+  "pad_seconds": 0.35,
+  "modo_pausas": "continuo"
+ },
+ "audio": {
+  "music_asset": "sintetico:pulso",
+  "cama_musical": "pulso",
+  "music_bpm": 92,
+  "music_lufs": -27,
+  "ambiente_lufs": -30
+ },
+ "canal": {
+  "nombre": "Datos y ociosidades",
+  "handle": "@datosyociosidades"
+ },
+ "sources": [
+  {
+   "id": "SRC-001",
+   "cita_corta": "Gray & BeMiller (2003). Bread Staling: Molecular Basis and Control. Comprehensive Reviews in Food Science and Food Safety 2(1): 1-21.",
+   "url": "https://doi.org/10.1111/j.1541-4337.2003.tb00011.x",
+   "doi": "10.1111/j.1541-4337.2003.tb00011.x"
+  },
+  {
+   "id": "SRC-002",
+   "cita_corta": "Aguirre, Osella, Carrara, Sánchez & Buera (2011). Effect of storage temperature on starch retrogradation of bread staling. Starch/Stärke.",
+   "url": "https://doi.org/10.1002/star.201100023",
+   "doi": "10.1002/star.201100023"
+  }
+ ],
+ "scenes": [
+  {
+   "id": "scene_001",
+   "arc": "hook_medias_res",
+   "duration_seconds": 10,
+   "narration": "Si guardas el pan en el refrigerador para que dure, lo estás endureciendo más rápido. Y no es porque se seque. El pan duro no está seco: está ordenado de más.",
+   "on_screen_text": "El refri lo endurece más rápido",
+   "asset_filename": "frames/scene_001.jpg",
+   "sfx": [
+    "madera"
+   ],
+   "source_ids": [
+    "SRC-001",
+    "SRC-002"
+   ],
+   "image_credit": "Brot 001 2016 07 03. Friedrich Haag, CC BY-SA 4.0. https://commons.wikimedia.org/wiki/File:Brot_001_2016_07_03.jpg",
+   "visual_description": "File:Brot 001 2016 07 03.jpg"
+  },
+  {
+   "id": "scene_002",
+   "arc": "desarrollo",
+   "duration_seconds": 10,
+   "narration": "Vuelve al horno. Ahí, el almidón de la harina se hincha con agua y deja la miga suave y esponjosa. Sus moléculas quedan sueltas, revueltas.",
+   "on_screen_text": "En el horno: miga suave",
+   "asset_filename": "frames/scene_002.jpg",
+   "sfx": [
+    "madera"
+   ],
+   "source_ids": [
+    "SRC-001",
+    "SRC-002"
+   ],
+   "image_credit": "Bakery oven bread, 2013. Jarkko Laine, CC BY 2.0. https://commons.wikimedia.org/wiki/File:Bakery_oven_bread,_2013.jpg",
+   "visual_description": "File:Bakery oven bread, 2013.jpg"
+  },
+  {
+   "id": "scene_003",
+   "arc": "desarrollo",
+   "duration_seconds": 10,
+   "narration": "Cuando el pan se enfría, empieza un cambio lento. Esas moléculas vuelven a acomodarse en filas ordenadas, como pequeños cristales. Se llama retrogradación: volver hacia atrás.",
+   "on_screen_text": "Retrogradación",
+   "asset_filename": "frames/scene_003.jpg",
+   "sfx": [
+    "reloj"
+   ],
+   "source_ids": [
+    "SRC-001",
+    "SRC-002"
+   ],
+   "image_credit": "Microscope images of starch 3. Daniel Domene-López, Juan Carlos García-Quesada, Ignacio Martin-Gullon and Mercedes G. Montalbán, CC BY 4.0. https://commons.wikimedia.org/wiki/File:Microscope_images_of_starch_3.png",
+   "visual_description": "File:Microscope images of starch 3.png"
+  },
+  {
+   "id": "scene_004",
+   "arc": "desarrollo",
+   "duration_seconds": 10,
+   "narration": "Y al ordenarse, esos cristales atrapan agua. El agua no desaparece: cambia de lugar dentro de la miga. Por eso un pan en bolsa cerrada también se pone duro.",
+   "on_screen_text": "El agua solo cambia de lugar",
+   "asset_filename": "frames/scene_004.jpg",
+   "sfx": [
+    "madera"
+   ],
+   "source_ids": [
+    "SRC-001",
+    "SRC-002"
+   ],
+   "image_credit": "Baguette mie. Popo le Chien, CC BY-SA 4.0. https://commons.wikimedia.org/wiki/File:Baguette_mie.jpg",
+   "visual_description": "File:Baguette mie.jpg"
+  },
+  {
+   "id": "scene_005",
+   "arc": "desarrollo",
+   "duration_seconds": 10,
+   "narration": "Aquí entra el refri. En un estudio con pan guardado a distintas temperaturas, a cuatro grados la recristalización del almidón fue la más rápida. El frío de refrigerador acelera el endurecimiento.",
+   "on_screen_text": "4 °C: el más rápido",
+   "asset_filename": "frames/scene_005.jpg",
+   "sfx": [
+    "reloj"
+   ],
+   "source_ids": [
+    "SRC-001",
+    "SRC-002"
+   ],
+   "image_credit": "Open refrigerator with food at night. W.carter, CC BY-SA 4.0. https://commons.wikimedia.org/wiki/File:Open_refrigerator_with_food_at_night.jpg",
+   "visual_description": "File:Open refrigerator with food at night.jpg"
+  },
+  {
+   "id": "scene_006",
+   "arc": "desarrollo",
+   "duration_seconds": 10,
+   "narration": "En cambio, en el congelador, a dieciocho grados bajo cero, se frena muchísimo: dejan de formarse cristales nuevos. Y el calor del horno o del comal desarma los que ya se formaron.",
+   "on_screen_text": "-18 °C: casi se detiene",
+   "asset_filename": "frames/scene_006.jpg",
+   "sfx": [
+    "madera"
+   ],
+   "source_ids": [
+    "SRC-001",
+    "SRC-002"
+   ],
+   "image_credit": "ToastedWhiteBread. Unknown authorUnknown author, Public domain. https://commons.wikimedia.org/wiki/File:ToastedWhiteBread.jpg",
+   "visual_description": "File:ToastedWhiteBread.jpg"
+  },
+  {
+   "id": "scene_007",
+   "arc": "cierre",
+   "duration_seconds": 10,
+   "narration": "Un matiz: los científicos que revisaron el tema dicen que el pan duro es un fenómeno complejo. El almidón es central, pero no el único culpable. Así que congela lo que no vas a comer pronto, y caliéntalo al servir. Esto fue Datos y ociosidades.",
+   "on_screen_text": "Congela y calienta",
+   "asset_filename": "frames/scene_007.jpg",
+   "sfx": [
+    "madera"
+   ],
+   "source_ids": [
+    "SRC-001",
+    "SRC-002"
+   ],
+   "image_credit": "Fresh made bread 05. FranHogan, CC BY-SA 4.0. https://commons.wikimedia.org/wiki/File:Fresh_made_bread_05.jpg",
+   "visual_description": "File:Fresh made bread 05.jpg"
+  }
+ ],
+ "cortinilla_fuentes": {
+  "duration_seconds": 6,
+  "titulo": "Fuentes",
+  "aviso": "Imágenes de dominio público o con licencia libre (Wikimedia Commons). Voz sintética (IA). Audio sintetizado.",
+  "firma": "Datos y ociosidades · @datosyociosidades",
+  "bg_rgb": [
+   18,
+   16,
+   14
+  ]
+ },
+ "export": {
+  "filename": "capsula.mp4",
+  "resolution": "1080x1920",
+  "fps": 30,
+  "loudness_lufs": -14,
+  "plano_seconds": 4.0,
+  "subtitle_max_words": 3
+ },
+ "estructura": "arco_narrativo",
+ "hook_type": "mito_vs_dato"
+}

@@ -1,0 +1,204 @@
+{
+ "project_id": "2026-11-25_rehecho-ola-azul-alarma-antirrobo",
+ "serie": "Rehechos con gancho nuevo",
+ "rehecho_de": "4xylLT3vSIU",
+ "title": "Esa ola azul es una alarma antirrobo",
+ "titulo": "Esa ola azul es una alarma antirrobo",
+ "language": "es-MX",
+ "aspect_ratio": "9:16",
+ "target_duration_seconds": 88,
+ "estilo_id": "foto_commons",
+ "estilo_visual": "fotografías e ilustraciones de dominio público o licencia libre (Wikimedia Commons)",
+ "proveedor_imagenes": "Wikimedia Commons (dominio público o CC, créditos en metadata)",
+ "parece_real": true,
+ "keywords": [
+  "bioluminiscencia"
+ ],
+ "voice": {
+  "engine": "edge-tts",
+  "voice_id": "es-MX-JorgeNeural",
+  "rate": "+7%",
+  "pitch": "-2Hz",
+  "pad_seconds": 0.35,
+  "modo_pausas": "continuo"
+ },
+ "audio": {
+  "music_asset": "sintetico:pulso",
+  "cama_musical": "pulso",
+  "music_bpm": 92,
+  "music_lufs": -27,
+  "ambiente_lufs": -30
+ },
+ "canal": {
+  "nombre": "Datos y ociosidades",
+  "handle": "@datosyociosidades"
+ },
+ "sources": [
+  {
+   "id": "SRC-001",
+   "cita_corta": "Widder, E. A. (2010). Bioluminescence in the ocean: origins of biological, chemical, and ecological diversity. Science 328: 704-708.",
+   "url": "https://doi.org/10.1126/science.1174269",
+   "doi": "10.1126/science.1174269"
+  },
+  {
+   "id": "SRC-002",
+   "cita_corta": "Duchatelet & Dupont (2024). Marine eukaryote bioluminescence. Marine Life Science & Technology.",
+   "url": "https://doi.org/10.1007/s42995-024-00250-0",
+   "doi": "10.1007/s42995-024-00250-0"
+  },
+  {
+   "id": "SRC-003",
+   "cita_corta": "NOAA Ocean Exploration. What is bioluminescence?",
+   "url": "https://oceanexplorer.noaa.gov/ocean-fact/bioluminescence/"
+  }
+ ],
+ "scenes": [
+  {
+   "id": "scene_001",
+   "arc": "hook_medias_res",
+   "duration_seconds": 10,
+   "narration": "Esa ola que brilla azul en la playa es una alarma antirrobo. Seres diminutos del plancton prenden su luz cuando algo los agita, y así delatan a quien los quiere comer.",
+   "on_screen_text": "Una alarma antirrobo viva",
+   "asset_filename": "frames/scene_001.jpg",
+   "sfx": [
+    "olas"
+   ],
+   "source_ids": [
+    "SRC-001",
+    "SRC-002",
+    "SRC-003"
+   ],
+   "image_credit": "Meeresleuchten auf Norderney 03. Stephan Sprinz, CC BY 4.0. https://commons.wikimedia.org/wiki/File:Meeresleuchten_auf_Norderney_03.jpg",
+   "visual_description": "File:Meeresleuchten auf Norderney 03.jpg"
+  },
+  {
+   "id": "scene_002",
+   "arc": "desarrollo",
+   "duration_seconds": 10,
+   "narration": "Se llama bioluminiscencia: luz hecha por seres vivos. Es un foco químico. Una molécula, la luciferina, reacciona con oxígeno gracias a una enzima, la luciferasa, y sale luz.",
+   "on_screen_text": "Luciferina + oxígeno = luz",
+   "asset_filename": "frames/scene_002.jpg",
+   "sfx": [
+    "olas"
+   ],
+   "source_ids": [
+    "SRC-001",
+    "SRC-002",
+    "SRC-003"
+   ],
+   "image_credit": "Noctiluque (Noctiluca scintillans) (Ifremer 00689-80077). Nadine Neaud-Masson, CC BY 4.0. https://commons.wikimedia.org/wiki/File:Noctiluque_(Noctiluca_scintillans)_(Ifremer_00689-80077).jpg",
+   "visual_description": "File:Noctiluque (Noctiluca scintillans) (Ifremer 00689-80077).jpg"
+  },
+  {
+   "id": "scene_003",
+   "arc": "desarrollo",
+   "duration_seconds": 10,
+   "narration": "Si un pequeño depredador muerde al plancton, el destello lo ilumina, como prender las luces a un ladrón. Entonces un depredador más grande puede verlo, y comérselo.",
+   "on_screen_text": "Delata al ladrón",
+   "asset_filename": "frames/scene_003.jpg",
+   "sfx": [
+    "olas"
+   ],
+   "source_ids": [
+    "SRC-001",
+    "SRC-002",
+    "SRC-003"
+   ],
+   "image_credit": "Mareel - Bioluminescence in Norra Grundsund harbor 2. W.carter, CC0. https://commons.wikimedia.org/wiki/File:Mareel_-_Bioluminescence_in_Norra_Grundsund_harbor_2.jpg",
+   "visual_description": "File:Mareel - Bioluminescence in Norra Grundsund harbor 2.jpg"
+  },
+  {
+   "id": "scene_004",
+   "arc": "desarrollo",
+   "duration_seconds": 10,
+   "narration": "Y no es un truco raro. En el mar, la luz sirve para cazar, como una carnada luminosa; para despistar a un enemigo; o para encontrar pareja en la oscuridad.",
+   "on_screen_text": "Cazar, huir o enamorar",
+   "asset_filename": "frames/scene_004.jpg",
+   "sfx": [
+    "olas"
+   ],
+   "source_ids": [
+    "SRC-001",
+    "SRC-002",
+    "SRC-003"
+   ],
+   "image_credit": "Crystal jelly. Julia Sumangil, CC BY-SA 4.0. https://commons.wikimedia.org/wiki/File:Crystal_jelly.jpg",
+   "visual_description": "File:Crystal jelly.jpg"
+  },
+  {
+   "id": "scene_005",
+   "arc": "desarrollo",
+   "duration_seconds": 10,
+   "narration": "Lo más extraño: la naturaleza inventó ese foco muchas veces, por caminos distintos. Según la revisión de Edith Widder en Science, la bioluminiscencia surgió de forma independiente al menos cuarenta veces.",
+   "on_screen_text": "Inventada 40 veces",
+   "asset_filename": "frames/scene_005.jpg",
+   "sfx": [
+    "olas"
+   ],
+   "source_ids": [
+    "SRC-001",
+    "SRC-002",
+    "SRC-003"
+   ],
+   "image_credit": "Watasenia scintillans 002. iNaturalist user: kamataryo, CC0. https://commons.wikimedia.org/wiki/File:Watasenia_scintillans_002.jpg",
+   "visual_description": "File:Watasenia scintillans 002.jpg"
+  },
+  {
+   "id": "scene_006",
+   "arc": "desarrollo",
+   "duration_seconds": 10,
+   "narration": "Hay casos dentro de un mismo animal: la hembra de un pez pescador de las profundidades tiene dos sistemas de luz distintos, uno en su señuelo y otro en la barbilla.",
+   "on_screen_text": "Dos luces en un mismo pez",
+   "asset_filename": "frames/scene_006.jpg",
+   "sfx": [
+    "olas"
+   ],
+   "source_ids": [
+    "SRC-001",
+    "SRC-002",
+    "SRC-003"
+   ],
+   "image_credit": "Linophryne-lucifer hg. Hannes Grobe/AWI, CC BY 3.0. https://commons.wikimedia.org/wiki/File:Linophryne-lucifer_hg.jpg",
+   "visual_description": "File:Linophryne-lucifer hg.jpg"
+  },
+  {
+   "id": "scene_007",
+   "arc": "cierre",
+   "duration_seconds": 10,
+   "narration": "Un matiz: no todo lo que brilla fabrica su luz. Algunos animales solo devuelven la que les llega, como un chaleco reflejante. Así que el mar de noche no está a oscuras: está lleno de faroles vivos. Esto fue Datos y ociosidades.",
+   "on_screen_text": "Faroles vivos",
+   "asset_filename": "frames/scene_007.jpg",
+   "sfx": [
+    "gaviotas"
+   ],
+   "source_ids": [
+    "SRC-001",
+    "SRC-002",
+    "SRC-003"
+   ],
+   "image_credit": "Meeresleuchten am Strand von Spiekeroog 06. Stephan Sprinz, CC BY 4.0. https://commons.wikimedia.org/wiki/File:Meeresleuchten_am_Strand_von_Spiekeroog_06.jpg",
+   "visual_description": "File:Meeresleuchten am Strand von Spiekeroog 06.jpg"
+  }
+ ],
+ "cortinilla_fuentes": {
+  "duration_seconds": 6,
+  "titulo": "Fuentes",
+  "aviso": "Imágenes de dominio público o con licencia libre (Wikimedia Commons). Voz sintética (IA). Audio sintetizado.",
+  "firma": "Datos y ociosidades · @datosyociosidades",
+  "bg_rgb": [
+   18,
+   16,
+   14
+  ]
+ },
+ "export": {
+  "filename": "capsula.mp4",
+  "resolution": "1080x1920",
+  "fps": 30,
+  "loudness_lufs": -14,
+  "plano_seconds": 4.0,
+  "subtitle_max_words": 3
+ },
+ "estructura": "arco_narrativo",
+ "hook_type": "mito_vs_dato"
+}
