@@ -1,0 +1,215 @@
+{
+ "project_id": "2026-11-23_animal-tama",
+ "serie": "Animales con oficio humano (dato del día)",
+ "title": "La gata que fue jefa de estación",
+ "titulo": "UNA GATA FUE JEFA DE ESTACIÓN",
+ "language": "es-MX",
+ "aspect_ratio": "9:16",
+ "target_duration_seconds": 88,
+ "estilo_id": "foto_commons",
+ "estilo_visual": "fotografías de dominio público o licencia libre",
+ "proveedor_imagenes": "Wikimedia Commons (PD/CC, créditos en creditos_imagenes.json)",
+ "parece_real": true,
+ "keywords": [
+  "gatos"
+ ],
+ "titulo_estilo": {
+  "size": 96,
+  "caja_rgb": [
+   205,
+   25,
+   25
+  ],
+  "texto_rgb": [
+   255,
+   222,
+   0
+  ],
+  "subrayado_rgb": [
+   255,
+   222,
+   0
+  ]
+ },
+ "voice": {
+  "engine": "edge-tts",
+  "voice_id": "es-MX-JorgeNeural",
+  "rate": "+7%",
+  "pitch": "-2Hz",
+  "pad_seconds": 0.3,
+  "modo_pausas": "continuo"
+ },
+ "audio": {
+  "music_asset": "sintetico:marimba",
+  "cama_musical": "marimba",
+  "music_bpm": 96,
+  "music_lufs": -27,
+  "ambiente_lufs": -31
+ },
+ "canal": {
+  "nombre": "Datos y ociosidades",
+  "handle": "@datosyociosidades"
+ },
+ "sources": [
+  {
+   "id": "gov",
+   "cita_corta": "Gobierno de Japón, Highlighting Japan (feb-2022): The Station with a Cat as Its Stationmaster.",
+   "url": "https://www.gov-online.go.jp/eng/publicity/book/hlj/html/202202/202202_07_en.html"
+  },
+  {
+   "id": "wer",
+   "cita_corta": "Wakayama Electric Railway: ねこ駅長について (historia de la jefa Tama).",
+   "url": "https://wakayama-dentetsu.co.jp/cat-stationmaster/"
+  }
+ ],
+ "scenes": [
+  {
+   "id": "scene_001",
+   "arc": "hook_medias_res",
+   "duration_seconds": 10,
+   "narration": "Una línea de tren en Japón estuvo a punto de desaparecer. Años después, su empleada estrella era una gata con gorra.",
+   "on_screen_text": "",
+   "asset_filename": "frames/scene_001.jpg",
+   "sfx": [
+    "campanas"
+   ],
+   "source_ids": [
+    "gov",
+    "wer"
+   ],
+   "image_credit": "Super Stationmaster Tama 20090104. Takobou, CC BY 2.5. Wikimedia Commons: https://commons.wikimedia.org/wiki/File:Super_Stationmaster_Tama_20090104.JPG"
+  },
+  {
+   "id": "scene_002",
+   "arc": "desarrollo",
+   "duration_seconds": 10,
+   "narration": "La línea Kishigawa, en Wakayama, mide 14 kilómetros. En 2004 su operador decidió cerrarla por falta de pasajeros. Los vecinos se opusieron, y en 2006 una nueva empresa la tomó.",
+   "on_screen_text": "",
+   "asset_filename": "frames/scene_002.jpg",
+   "sfx": [
+    "campanas"
+   ],
+   "source_ids": [
+    "gov",
+    "wer"
+   ],
+   "image_credit": "Wakayama Electric Railway Kishi Station 20120311. KishujiRapid, CC BY-SA 4.0. Wikimedia Commons: https://commons.wikimedia.org/wiki/File:Wakayama_Electric_Railway_Kishi_Station_20120311.JPG",
+   "capa": {
+    "tipo": "mapa",
+    "plano": 2,
+    "region": [
+     128,
+     145,
+     30,
+     42
+    ],
+    "puntos": [
+     {
+      "nombre": "Kishi",
+      "lon": 135.3,
+      "lat": 34.2
+     },
+     {
+      "nombre": "Tokio",
+      "lon": 139.7,
+      "lat": 35.7
+     }
+    ],
+    "titulo": "Estación Kishi, Wakayama",
+    "fuente": "Highlighting Japan (Gobierno de Japón)"
+   }
+  },
+  {
+   "id": "scene_003",
+   "arc": "desarrollo",
+   "duration_seconds": 10,
+   "narration": "Junto a la estación de Kishi vivían unas gatas que cuidaba la dueña de una tienda, y tenían que mudarse. El presidente de la empresa vio a una calicó llamada Tama y sintió que tenía mirada de buena empleada. En enero de 2007 la nombró jefa de estación.",
+   "on_screen_text": "",
+   "asset_filename": "frames/scene_003.jpg",
+   "sfx": [
+    "campanas"
+   ],
+   "source_ids": [
+    "gov",
+    "wer"
+   ],
+   "image_credit": "Stationmaster Tama 20110715. as365n2 from Nara Prefecture, Japan, CC BY-SA 2.0. Wikimedia Commons: https://commons.wikimedia.org/wiki/File:Stationmaster_Tama_20110715.jpg"
+  },
+  {
+   "id": "scene_004",
+   "arc": "desarrollo",
+   "duration_seconds": 10,
+   "narration": "Su puesto: el torniquete, recibiendo pasajeros con su gorrita oficial, de lunes a sábado, de diez a cuatro y media en invierno. Llegaron turistas de todo Japón y del extranjero. Un profesor de la Universidad Kansai calculó que solo en 2007 generó unos mil cien millones de yenes.",
+   "on_screen_text": "",
+   "asset_filename": "frames/scene_004.jpg",
+   "sfx": [
+    "campanas"
+   ],
+   "source_ids": [
+    "gov",
+    "wer"
+   ],
+   "image_credit": "WER Kishi station wicket and stationmaster's room. Twilight2640 at Japanese Wikipedia, CC BY-SA 3.0. Wikimedia Commons: https://commons.wikimedia.org/wiki/File:WER_Kishi_station_wicket_and_stationmaster%27s_room.jpg",
+   "capa": {
+    "tipo": "dato",
+    "plano": 3,
+    "valor": "¥1,100 millones",
+    "etiqueta": "efecto económico estimado en 2007",
+    "fuente": "Wakayama Electric Railway (estimación Univ. Kansai)"
+   }
+  },
+  {
+   "id": "scene_005",
+   "arc": "desarrollo",
+   "duration_seconds": 10,
+   "narration": "Luego, ascenso tras ascenso. En 2008 la nombraron caballero. En 2010 le hicieron una estación nueva con techo en forma de gato. Y en 2013 llegó a presidenta interina de la empresa.",
+   "on_screen_text": "",
+   "asset_filename": "frames/scene_005.jpg",
+   "sfx": [
+    "campanas"
+   ],
+   "source_ids": [
+    "gov",
+    "wer"
+   ],
+   "image_credit": "Wakayama Electric Railway Tama Densha (2010). Jody McIntyre from Montreal, Canada, CC BY-SA 2.0. Wikimedia Commons: https://commons.wikimedia.org/wiki/File:Wakayama_Electric_Railway_Tama_Densha_(2010).jpg"
+  },
+  {
+   "id": "scene_006",
+   "arc": "reflexion_o_pregunta",
+   "duration_seconds": 10,
+   "narration": "Tama murió en 2015. La nombraron jefa de estación honoraria eterna, y hoy tiene su propio santuario en el andén. Su sucesora, Nitama, heredó la gorra y el puesto. ¿Tu jefe tiene santuario?",
+   "on_screen_text": "",
+   "asset_filename": "frames/scene_006.jpg",
+   "sfx": [
+    "campanas"
+   ],
+   "source_ids": [
+    "gov",
+    "wer"
+   ],
+   "image_credit": "Wakayama railway Kishi station Tama and strawberry shrine. Niiryoku2910, CC BY-SA 4.0. Wikimedia Commons: https://commons.wikimedia.org/wiki/File:Wakayama_railway_Kishi_station_Tama_and_strawberry_shrine.jpg"
+  }
+ ],
+ "cortinilla_fuentes": {
+  "duration_seconds": 6,
+  "titulo": "Fuentes",
+  "aviso": "Imágenes de dominio público o licencia libre (Wikimedia Commons y archivos citados en la descripción). Voz sintética (IA).",
+  "firma": "Datos y ociosidades · @datosyociosidades",
+  "bg_rgb": [
+   18,
+   16,
+   14
+  ]
+ },
+ "export": {
+  "filename": "capsula.mp4",
+  "resolution": "1080x1920",
+  "fps": 30,
+  "loudness_lufs": -14,
+  "plano_seconds": 4.0,
+  "subtitle_max_words": 3
+ },
+ "estructura": "historia",
+ "hook_type": "animal_con_oficio_humano"
+}

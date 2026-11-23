@@ -1,0 +1,42 @@
+{
+ "project_id": "2026-11-23_animal-billy_en",
+ "musica": {
+  "cama": "tambor",
+  "origen": "síntesis propia (scripts/cama_sonora.py, numpy)",
+  "licencia": "obra propia de Datos y ociosidades",
+  "generada_por_ia": false
+ },
+ "sfx": {
+  "viento_costa": {
+   "archivo": "viento_costa.ogg",
+   "commons": "File:Killiney Hill Storm Floris 20250804 1537.ogg",
+   "autor": "Karlunun",
+   "licencia": "CC0",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/6/63/Killiney_Hill_Storm_Floris_20250804_1537.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Killiney_Hill_Storm_Floris_20250804_1537.ogg",
+   "licencia_verificada": "CC0"
+  }
+ },
+ "imagenes": {
+  "origen": "Wikimedia Commons (PD/CC, créditos en creditos_imagenes.json); escena 1 ilustración IA",
+  "estilo": "foto_commons",
+  "realista": true
+ },
+ "voz": {
+  "motor": "Microsoft Edge TTS",
+  "voz": "en-US-AndrewMultilingualNeural",
+  "nota": "voz sintética; no imita a una persona real"
+ },
+ "capas_datos": {
+  "tipos": [
+   "mapa",
+   "dato"
+  ],
+  "mapa_base": "Natural Earth 110m (dominio público)",
+  "render": "matplotlib (propio)"
+ },
+ "fuentes_datos": [
+  "http://news.bbc.co.uk/2/hi/uk/5113188.stm",
+  "https://www.countryfile.com/animals/this-animal-served-as-a-lance-corporal-in-the-british-army-before-receiving-a-demotion-for-lack-of-decorum-on-the-queens-birthday"
+ ]
+}

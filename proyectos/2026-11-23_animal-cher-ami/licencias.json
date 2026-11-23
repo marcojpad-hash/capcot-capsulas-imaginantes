@@ -1,0 +1,43 @@
+{
+ "project_id": "2026-11-23_animal-cher-ami_en",
+ "musica": {
+  "cama": "pulso",
+  "origen": "síntesis propia (scripts/cama_sonora.py, numpy)",
+  "licencia": "obra propia de Datos y ociosidades",
+  "generada_por_ia": false
+ },
+ "sfx": {
+  "viento": {
+   "archivo": "viento.ogg",
+   "commons": "File:Howling wind.ogg",
+   "autor": "Tvabutzku1234",
+   "licencia": "CC0",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Howling_wind.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Howling_wind.ogg",
+   "licencia_verificada": "CC0"
+  }
+ },
+ "imagenes": {
+  "origen": "Wikimedia Commons (PD/CC, créditos en creditos_imagenes.json)",
+  "estilo": "foto_commons",
+  "realista": true
+ },
+ "voz": {
+  "motor": "Microsoft Edge TTS",
+  "voz": "en-US-AndrewMultilingualNeural",
+  "nota": "voz sintética; no imita a una persona real"
+ },
+ "capas_datos": {
+  "tipos": [
+   "mapa",
+   "dato"
+  ],
+  "mapa_base": "Natural Earth 110m (dominio público)",
+  "render": "matplotlib (propio)"
+ },
+ "fuentes_datos": [
+  "https://americanhistory.si.edu/collections/object/nmah_425415",
+  "https://americanhistory.si.edu/press/fact-sheets/cher-ami-fact-sheet-century-myth-and-public-memory",
+  "https://www.smithsonianmag.com/air-space-magazine/spy-pigeons-167097967/"
+ ]
+}

@@ -1,0 +1,59 @@
+{
+ "scene_001": {
+  "file": "Ilustración propia generada con IA (lazo y baumanómetro; sin personaje ni arte de DC)",
+  "artist": "Datos y ociosidades (IA)",
+  "lic": "ilustración propia generada con IA",
+  "page": "",
+  "biblioteca": "ninguna: ilustración del canal"
+ },
+ "scene_002": {
+  "file": "File:Hugo Münsterberg Psychologe.jpg",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Hugo_M%C3%BCnsterberg_Psychologe.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+  "w": 1740,
+  "h": 2685,
+  "artist": "Unknown authorUnknown author",
+  "lic": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:Hugo_M%C3%BCnsterberg_Psychologe.jpg",
+  "biblioteca": "Wikimedia Commons"
+ },
+ "scene_003": {
+  "file": "File:William Moulton Marston and Elizabeth Holloway Marston.png",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/6/6e/William_Moulton_Marston_and_Elizabeth_Holloway_Marston.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+  "w": 1096,
+  "h": 644,
+  "artist": "Photo courtesy of Moulton \"Pete\" Marston",
+  "lic": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:William_Moulton_Marston_and_Elizabeth_Holloway_Marston.png",
+  "biblioteca": "Wikimedia Commons"
+ },
+ "scene_004": {
+  "file": "File:The Ink polygraph Wellcome L0004447.jpg",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/6/68/The_Ink_polygraph_Wellcome_L0004447.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+  "w": 1487,
+  "h": 1207,
+  "artist": "autor en Commons",
+  "lic": "CC BY 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:The_Ink_polygraph_Wellcome_L0004447.jpg",
+  "biblioteca": "Wellcome Collection vía Wikimedia Commons"
+ },
+ "scene_005": {
+  "file": "File:Lie detector test.jpg",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Lie_detector_test.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+  "w": 1920,
+  "h": 1440,
+  "artist": "Ed Westcott",
+  "lic": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:Lie_detector_test.jpg",
+  "biblioteca": "Wikimedia Commons"
+ },
+ "scene_006": {
+  "file": "File:William Marston Aug 1922 newspaper photo.jpg",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/c/c1/William_Marston_Aug_1922_newspaper_photo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+  "w": 1146,
+  "h": 950,
+  "artist": "The Morning Tulsa daily world",
+  "lic": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:William_Marston_Aug_1922_newspaper_photo.jpg",
+  "biblioteca": "Wikimedia Commons"
+ }
+}

@@ -1,0 +1,43 @@
+{
+ "project_id": "2026-11-23_animal-stubbs_en",
+ "musica": {
+  "cama": "arpegio",
+  "origen": "síntesis propia (scripts/cama_sonora.py, numpy)",
+  "licencia": "obra propia de Datos y ociosidades",
+  "generada_por_ia": false
+ },
+ "sfx": {
+  "madera": {
+   "archivo": "madera.ogg",
+   "commons": "File:Creaky wooden casket.ogg",
+   "autor": "stephan",
+   "licencia": "Public domain",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Creaky_wooden_casket.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Creaky_wooden_casket.ogg",
+   "licencia_verificada": "Public domain"
+  }
+ },
+ "imagenes": {
+  "origen": "Wikimedia Commons (PD/CC, créditos en creditos_imagenes.json)",
+  "estilo": "foto_commons",
+  "realista": true
+ },
+ "voz": {
+  "motor": "Microsoft Edge TTS",
+  "voz": "en-US-AndrewMultilingualNeural",
+  "nota": "voz sintética; no imita a una persona real"
+ },
+ "capas_datos": {
+  "tipos": [
+   "mapa",
+   "dato"
+  ],
+  "mapa_base": "Natural Earth 110m (dominio público)",
+  "render": "matplotlib (propio)"
+ },
+ "fuentes_datos": [
+  "https://apnews.com/general-news-2805409a4a1b4fc399728f4e31fc34ef",
+  "https://alaskapublic.org/news/2017-07-24/mayor-stubbs-the-cat-passes-away-at-20",
+  "https://www.cnn.com/2017/07/23/us/mayor-cat-stubbs-dies-at-20"
+ ]
+}

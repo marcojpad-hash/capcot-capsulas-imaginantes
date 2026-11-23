@@ -1,0 +1,226 @@
+{
+ "project_id": "2026-11-23_animal-cher-ami_en",
+ "serie": "Animales con oficio humano (dato del día)",
+ "title": "The pigeon that saved 194 soldiers",
+ "titulo": "A PIGEON SAVED 194 SOLDIERS",
+ "language": "en-US",
+ "aspect_ratio": "9:16",
+ "target_duration_seconds": 88,
+ "estilo_id": "foto_commons",
+ "estilo_visual": "fotografías de dominio público o licencia libre",
+ "proveedor_imagenes": "Wikimedia Commons (PD/CC, créditos en creditos_imagenes.json)",
+ "parece_real": true,
+ "keywords": [
+  "palomas"
+ ],
+ "titulo_estilo": {
+  "size": 96,
+  "caja_rgb": [
+   205,
+   25,
+   25
+  ],
+  "texto_rgb": [
+   255,
+   222,
+   0
+  ],
+  "subrayado_rgb": [
+   255,
+   222,
+   0
+  ]
+ },
+ "voice": {
+  "engine": "edge-tts",
+  "voice_id": "en-US-AndrewMultilingualNeural",
+  "rate": "+5%",
+  "pitch": "-2Hz",
+  "pad_seconds": 0.3,
+  "modo_pausas": "continuo"
+ },
+ "audio": {
+  "music_asset": "sintetico:pulso",
+  "cama_musical": "pulso",
+  "music_bpm": 96,
+  "music_lufs": -27,
+  "ambiente_lufs": -31
+ },
+ "canal": {
+  "nombre": "Datos y ociosidades",
+  "handle": "@datosyociosidades"
+ },
+ "sources": [
+  {
+   "id": "si_obj",
+   "cita_corta": "Smithsonian, National Museum of American History: Cher Ami (objeto nmah_425415).",
+   "url": "https://americanhistory.si.edu/collections/object/nmah_425415"
+  },
+  {
+   "id": "si_fact",
+   "cita_corta": "Smithsonian NMAH: Cher Ami Fact Sheet, A Century of Myth and Public Memory.",
+   "url": "https://americanhistory.si.edu/press/fact-sheets/cher-ami-fact-sheet-century-myth-and-public-memory"
+  },
+  {
+   "id": "si_mag",
+   "cita_corta": "Smithsonian Air & Space Magazine: Spy Pigeons (194 soldados).",
+   "url": "https://www.smithsonianmag.com/air-space-magazine/spy-pigeons-167097967/"
+  }
+ ],
+ "scenes": [
+  {
+   "id": "scene_001",
+   "arc": "hook_medias_res",
+   "duration_seconds": 10,
+   "narration": "October 1918. Nearly two hundred American soldiers are trapped in a forest in France. And their last hope has no radio and no telephone. It has feathers.",
+   "on_screen_text": "",
+   "asset_filename": "frames/scene_001.jpg",
+   "sfx": [
+    "viento"
+   ],
+   "source_ids": [
+    "si_obj",
+    "si_fact",
+    "si_mag"
+   ],
+   "image_credit": "Sgt. Stubby and Cher Ami on display at the NMAH. Laura A. Macaluso, Ph.D., CC BY-SA 4.0. Wikimedia Commons: https://commons.wikimedia.org/wiki/File:Sgt._Stubby_and_Cher_Ami_on_display_at_the_NMAH.jpg"
+  },
+  {
+   "id": "scene_002",
+   "arc": "desarrollo",
+   "duration_seconds": 10,
+   "narration": "They were the Lost Battalion, from the 77th Division, surrounded by German troops in the Argonne Forest. And to make it worse, their own artillery, using the wrong coordinates, started shelling them.",
+   "on_screen_text": "",
+   "asset_filename": "frames/scene_002.jpg",
+   "sfx": [
+    "viento"
+   ],
+   "source_ids": [
+    "si_obj",
+    "si_fact",
+    "si_mag"
+   ],
+   "image_credit": "302nd Eng. repairing road over trench and 92nd Div. (colored) machine gunners going into action, Argonne Forest, France LCCN2016645661. Miscellaneous Items in High Demand, PPOC, Library of Congress, Public domain. Library of Congress vía Wikimedia Commons: https://commons.wikimedia.org/wiki/File:302nd_Eng._repairing_road_over_trench_and_92nd_Div._(colored)_machine_gunners_going_into_action,_Argonne_Forest,_France_LCCN2016645661.jpg",
+   "capa": {
+    "tipo": "mapa",
+    "plano": 2,
+    "region": [
+     -6,
+     10,
+     42,
+     52
+    ],
+    "puntos": [
+     {
+      "nombre": "Argonne",
+      "lon": 4.9,
+      "lat": 49.25
+     },
+     {
+      "nombre": "París",
+      "lon": 2.35,
+      "lat": 48.85
+     }
+    ],
+    "titulo": "Argonne Forest, France (1918)",
+    "fuente": "Smithsonian NMAH"
+   }
+  },
+  {
+   "id": "scene_003",
+   "arc": "desarrollo",
+   "duration_seconds": 10,
+   "narration": "Major Charles Whittlesey wrote: our own artillery is dropping a barrage directly on us, for heaven's sake stop it. He put it in the tiny tube on the leg of a pigeon named Cher Ami, French for dear friend.",
+   "on_screen_text": "",
+   "asset_filename": "frames/scene_003.jpg",
+   "sfx": [
+    "viento"
+   ],
+   "source_ids": [
+    "si_obj",
+    "si_fact",
+    "si_mag"
+   ],
+   "image_credit": "Charles W. Whittlesey - WWI Medal of Honor recipient. United States Army, Public domain. U.S. Army vía Wikimedia Commons: https://commons.wikimedia.org/wiki/File:Charles_W._Whittlesey_-_WWI_Medal_of_Honor_recipient.jpg"
+  },
+  {
+   "id": "scene_004",
+   "arc": "desarrollo",
+   "duration_seconds": 10,
+   "narration": "He got shot. A bullet or shell fragment tore off his right leg and cut through his chest. Even so, about an hour later he reached his loft, with the message hanging from a tendon.",
+   "on_screen_text": "",
+   "asset_filename": "frames/scene_004.jpg",
+   "sfx": [
+    "viento"
+   ],
+   "source_ids": [
+    "si_obj",
+    "si_fact",
+    "si_mag"
+   ],
+   "image_credit": "World War I Carrier Pigeon Message Capsule with Original Message. Unknown authorUnknown author, Public domain. Wikimedia Commons: https://commons.wikimedia.org/wiki/File:World_War_I_Carrier_Pigeon_Message_Capsule_with_Original_Message.jpg",
+   "capa": {
+    "tipo": "dato",
+    "plano": 3,
+    "valor": "~1 hour",
+    "etiqueta": "wounded, back to his loft",
+    "fuente": "Smithsonian NMAH"
+   }
+  },
+  {
+   "id": "scene_005",
+   "arc": "desarrollo",
+   "duration_seconds": 10,
+   "narration": "The message gave the battalion's exact position, and on October 7 the rescue came. According to the Smithsonian, 194 men walked out. Records can't fully prove which pigeon carried it, but France awarded Cher Ami the Croix de Guerre with palm.",
+   "on_screen_text": "",
+   "asset_filename": "frames/scene_005.jpg",
+   "sfx": [
+    "viento"
+   ],
+   "source_ids": [
+    "si_obj",
+    "si_fact",
+    "si_mag"
+   ],
+   "image_credit": "Croix de guerre 1914 1918 avec palme de bronze. Cinqcents, CC BY-SA 4.0. Wikimedia Commons: https://commons.wikimedia.org/wiki/File:Croix_de_guerre_1914_1918_avec_palme_de_bronze.jpg"
+  },
+  {
+   "id": "scene_006",
+   "arc": "reflexion_o_pregunta",
+   "duration_seconds": 10,
+   "narration": "He died in June 1919 and today he's preserved at the Smithsonian. And the final twist: for a century many called him a she. In 2021, a DNA test confirmed he was male. Would you have flown with one leg missing?",
+   "on_screen_text": "",
+   "asset_filename": "frames/scene_006.jpg",
+   "sfx": [
+    "viento"
+   ],
+   "source_ids": [
+    "si_obj",
+    "si_fact",
+    "si_mag"
+   ],
+   "image_credit": "Messenger pigeon released from British tank 1918 IWM Q 9247. David McLellan, Public domain. Imperial War Museums vía Wikimedia Commons: https://commons.wikimedia.org/wiki/File:Messenger_pigeon_released_from_British_tank_1918_IWM_Q_9247.jpg"
+  }
+ ],
+ "cortinilla_fuentes": {
+  "duration_seconds": 6,
+  "titulo": "Sources",
+  "aviso": "Public-domain or freely licensed images (Wikimedia Commons and archives credited in the description). Synthetic voice (AI / IA).",
+  "firma": "Datos y ociosidades · @datosyociosidades",
+  "bg_rgb": [
+   18,
+   16,
+   14
+  ]
+ },
+ "export": {
+  "filename": "capsula_en.mp4",
+  "resolution": "1080x1920",
+  "fps": 30,
+  "loudness_lufs": -14,
+  "plano_seconds": 4.0,
+  "subtitle_max_words": 3
+ },
+ "estructura": "historia",
+ "hook_type": "animal_con_oficio_humano"
+}

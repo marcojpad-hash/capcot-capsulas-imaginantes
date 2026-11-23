@@ -1,0 +1,226 @@
+{
+ "project_id": "2026-11-23_animal-stubbs",
+ "serie": "Animales con oficio humano (dato del día)",
+ "title": "El gato que fue alcalde 20 años",
+ "titulo": "UN GATO FUE ALCALDE 20 AÑOS",
+ "language": "es-MX",
+ "aspect_ratio": "9:16",
+ "target_duration_seconds": 88,
+ "estilo_id": "foto_commons",
+ "estilo_visual": "fotografías de dominio público o licencia libre",
+ "proveedor_imagenes": "Wikimedia Commons (PD/CC, créditos en creditos_imagenes.json)",
+ "parece_real": true,
+ "keywords": [
+  "gatos"
+ ],
+ "titulo_estilo": {
+  "size": 96,
+  "caja_rgb": [
+   205,
+   25,
+   25
+  ],
+  "texto_rgb": [
+   255,
+   222,
+   0
+  ],
+  "subrayado_rgb": [
+   255,
+   222,
+   0
+  ]
+ },
+ "voice": {
+  "engine": "edge-tts",
+  "voice_id": "es-MX-JorgeNeural",
+  "rate": "+7%",
+  "pitch": "-2Hz",
+  "pad_seconds": 0.3,
+  "modo_pausas": "continuo"
+ },
+ "audio": {
+  "music_asset": "sintetico:arpegio",
+  "cama_musical": "arpegio",
+  "music_bpm": 96,
+  "music_lufs": -27,
+  "ambiente_lufs": -31
+ },
+ "canal": {
+  "nombre": "Datos y ociosidades",
+  "handle": "@datosyociosidades"
+ },
+ "sources": [
+  {
+   "id": "ap",
+   "cita_corta": "AP News, 23-jul-2017: He was purrfect: Honorary cat mayor in Alaska town dies.",
+   "url": "https://apnews.com/general-news-2805409a4a1b4fc399728f4e31fc34ef"
+  },
+  {
+   "id": "akpm",
+   "cita_corta": "Alaska Public Media, 24-jul-2017: 'Mayor' Stubbs the Cat passes away at 20.",
+   "url": "https://alaskapublic.org/news/2017-07-24/mayor-stubbs-the-cat-passes-away-at-20"
+  },
+  {
+   "id": "cnn",
+   "cita_corta": "CNN, 23-jul-2017: Honorary mayor, Stubbs the Cat, dies at 20.",
+   "url": "https://www.cnn.com/2017/07/23/us/mayor-cat-stubbs-dies-at-20"
+  }
+ ],
+ "scenes": [
+  {
+   "id": "scene_001",
+   "arc": "hook_medias_res",
+   "duration_seconds": 10,
+   "narration": "Un pueblo de Alaska tuvo el mismo alcalde durante unos veinte años. Nunca subió impuestos, nunca dio un discurso, y no tenía cola.",
+   "on_screen_text": "",
+   "asset_filename": "frames/scene_001.jpg",
+   "sfx": [
+    "madera"
+   ],
+   "source_ids": [
+    "ap",
+    "akpm",
+    "cnn"
+   ],
+   "image_credit": "Mayor Stubbs. Jenni Konrad, CC BY-SA 2.0. Wikimedia Commons: https://commons.wikimedia.org/wiki/File:Mayor_Stubbs.jpg"
+  },
+  {
+   "id": "scene_002",
+   "arc": "desarrollo",
+   "duration_seconds": 10,
+   "narration": "Talkeetna es un pueblito al norte de Anchorage, al pie de las montañas. No es municipio, así que oficialmente no tiene alcalde. Ese hueco lo iba a llenar alguien con bigotes.",
+   "on_screen_text": "",
+   "asset_filename": "frames/scene_002.jpg",
+   "sfx": [
+    "madera"
+   ],
+   "source_ids": [
+    "ap",
+    "akpm",
+    "cnn"
+   ],
+   "image_credit": "Talkeetna June 2015. Kolmkolm, CC BY-SA 4.0. Wikimedia Commons: https://commons.wikimedia.org/wiki/File:Talkeetna_June_2015.JPG",
+   "capa": {
+    "tipo": "mapa",
+    "plano": 2,
+    "region": [
+     -170,
+     -130,
+     52,
+     72
+    ],
+    "puntos": [
+     {
+      "nombre": "Talkeetna",
+      "lon": -150.1,
+      "lat": 62.32
+     },
+     {
+      "nombre": "Anchorage",
+      "lon": -149.9,
+      "lat": 61.2
+     }
+    ],
+    "titulo": "Talkeetna, Alaska",
+    "fuente": "Alaska Public Media"
+   }
+  },
+  {
+   "id": "scene_003",
+   "arc": "desarrollo",
+   "duration_seconds": 10,
+   "narration": "En 1997 llegó el candidato: un gato sin cola llamado Stubbs, que en inglés suena a muñón. Según CNN, los vecinos lo eligieron alcalde honorario por voto escrito, a falta de candidatos humanos que convencieran. Y el título se le quedó.",
+   "on_screen_text": "",
+   "asset_filename": "frames/scene_003.jpg",
+   "sfx": [
+    "madera"
+   ],
+   "source_ids": [
+    "ap",
+    "akpm",
+    "cnn"
+   ],
+   "image_credit": "Nagley's Store, Talkeetna, AK. Zeete, CC BY-SA 4.0. Wikimedia Commons: https://commons.wikimedia.org/wiki/File:Nagley%27s_Store,_Talkeetna,_AK.jpg"
+  },
+  {
+   "id": "scene_004",
+   "arc": "desarrollo",
+   "duration_seconds": 10,
+   "narration": "Su despacho era la tienda Nagley's y el bar de al lado, el West Rib. Su agenda: siestas, turistas y caricias. Los dueños de la tienda contaron que les preguntaban unas cien veces al día dónde estaba el alcalde.",
+   "on_screen_text": "",
+   "asset_filename": "frames/scene_004.jpg",
+   "sfx": [
+    "madera"
+   ],
+   "source_ids": [
+    "ap",
+    "akpm",
+    "cnn"
+   ],
+   "image_credit": "The inside of Nagley's Store on Main Street in Talkeetna. Will Koeppen, CC BY-SA 4.0. Wikimedia Commons: https://commons.wikimedia.org/wiki/File:The_inside_of_Nagley%27s_Store_on_Main_Street_in_Talkeetna.jpg",
+   "capa": {
+    "tipo": "dato",
+    "plano": 3,
+    "valor": "~100",
+    "etiqueta": "veces al día: ¿dónde está el alcalde?",
+    "fuente": "Alaska Public Media"
+   }
+  },
+  {
+   "id": "scene_005",
+   "arc": "desarrollo",
+   "duration_seconds": 10,
+   "narration": "Con los años bajó el ritmo y casi no iba a la tienda. En 2016 llegó un gatito, Denali, que sería su sucesor. Y en julio de 2017, según la agencia AP, Stubbs murió a los veinte años. Mientras dormía. Sus dueños escribieron que fue un luchador hasta el último día de su vida.",
+   "on_screen_text": "",
+   "asset_filename": "frames/scene_005.jpg",
+   "sfx": [
+    "madera"
+   ],
+   "source_ids": [
+    "ap",
+    "akpm",
+    "cnn"
+   ],
+   "image_credit": "Nagley's General Store at Night, Winter, Talkeetna, Alaska. Laura Alier, CC BY 4.0. Wikimedia Commons: https://commons.wikimedia.org/wiki/File:Nagley%27s_General_Store_at_Night,_Winter,_Talkeetna,_Alaska.jpg"
+  },
+  {
+   "id": "scene_006",
+   "arc": "reflexion_o_pregunta",
+   "duration_seconds": 10,
+   "narration": "Veinte años de mandato, y su única promesa de campaña fue la siesta. Pocos políticos humanos duran tanto en el cargo, y casi ninguno con tantas siestas. ¿Tú votarías por un gato?",
+   "on_screen_text": "",
+   "asset_filename": "frames/scene_006.jpg",
+   "sfx": [
+    "madera"
+   ],
+   "source_ids": [
+    "ap",
+    "akpm",
+    "cnn"
+   ],
+   "image_credit": "Mayor Stubbs. Jenni Konrad, CC BY-SA 2.0. Wikimedia Commons: https://commons.wikimedia.org/wiki/File:Mayor_Stubbs.jpg"
+  }
+ ],
+ "cortinilla_fuentes": {
+  "duration_seconds": 6,
+  "titulo": "Fuentes",
+  "aviso": "Imágenes de dominio público o licencia libre (Wikimedia Commons y archivos citados en la descripción). Voz sintética (IA).",
+  "firma": "Datos y ociosidades · @datosyociosidades",
+  "bg_rgb": [
+   18,
+   16,
+   14
+  ]
+ },
+ "export": {
+  "filename": "capsula.mp4",
+  "resolution": "1080x1920",
+  "fps": 30,
+  "loudness_lufs": -14,
+  "plano_seconds": 4.0,
+  "subtitle_max_words": 3
+ },
+ "estructura": "historia",
+ "hook_type": "animal_con_oficio_humano"
+}

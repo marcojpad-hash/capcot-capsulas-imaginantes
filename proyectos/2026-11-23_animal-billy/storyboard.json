@@ -1,0 +1,210 @@
+{
+ "project_id": "2026-11-23_animal-billy",
+ "serie": "Animales con oficio humano (dato del día)",
+ "title": "La cabra degradada por el ejército británico",
+ "titulo": "EL EJÉRCITO DEGRADÓ A UNA CABRA",
+ "language": "es-MX",
+ "aspect_ratio": "9:16",
+ "target_duration_seconds": 88,
+ "estilo_id": "foto_commons",
+ "estilo_visual": "fotografías de dominio público o licencia libre",
+ "proveedor_imagenes": "Wikimedia Commons (PD/CC, créditos en creditos_imagenes.json); escena 1 ilustración IA",
+ "parece_real": true,
+ "keywords": [
+  "cabras"
+ ],
+ "titulo_estilo": {
+  "size": 96,
+  "caja_rgb": [
+   205,
+   25,
+   25
+  ],
+  "texto_rgb": [
+   255,
+   222,
+   0
+  ],
+  "subrayado_rgb": [
+   255,
+   222,
+   0
+  ]
+ },
+ "voice": {
+  "engine": "edge-tts",
+  "voice_id": "es-MX-JorgeNeural",
+  "rate": "+7%",
+  "pitch": "-2Hz",
+  "pad_seconds": 0.3,
+  "modo_pausas": "continuo"
+ },
+ "audio": {
+  "music_asset": "sintetico:tambor",
+  "cama_musical": "tambor",
+  "music_bpm": 96,
+  "music_lufs": -27,
+  "ambiente_lufs": -31
+ },
+ "canal": {
+  "nombre": "Datos y ociosidades",
+  "handle": "@datosyociosidades"
+ },
+ "sources": [
+  {
+   "id": "bbc",
+   "cita_corta": "BBC News, 24-jun-2006: Gruff justice as Billy is demoted.",
+   "url": "http://news.bbc.co.uk/2/hi/uk/5113188.stm"
+  },
+  {
+   "id": "cf",
+   "cita_corta": "Countryfile.com: This animal served as a lance corporal in the British Army, before receiving a demotion.",
+   "url": "https://www.countryfile.com/animals/this-animal-served-as-a-lance-corporal-in-the-british-army-before-receiving-a-demotion-for-lack-of-decorum-on-the-queens-birthday"
+  }
+ ],
+ "scenes": [
+  {
+   "id": "scene_001",
+   "arc": "hook_medias_res",
+   "duration_seconds": 10,
+   "narration": "Junio de 2006. Desfile por el cumpleaños de la reina. Embajadores en primera fila. Y un cabo del ejército británico decide dar un cabezazo a un tamborilero.",
+   "on_screen_text": "",
+   "asset_filename": "frames/scene_001.jpg",
+   "sfx": [
+    "viento_costa"
+   ],
+   "source_ids": [
+    "bbc",
+    "cf"
+   ],
+   "image_credit": "Ilustración generada con IA (no es una foto de Billy)."
+  },
+  {
+   "id": "scene_002",
+   "arc": "desarrollo",
+   "duration_seconds": 10,
+   "narration": "El cabo se llamaba William Windsor, Billy para los amigos: una cabra de Cachemira, miembro con rango del primer batallón del Regimiento Real Galés, regalo de la reina Isabel Segunda en 2001.",
+   "on_screen_text": "",
+   "asset_filename": "frames/scene_002.jpg",
+   "sfx": [
+    "viento_costa"
+   ],
+   "source_ids": [
+    "bbc",
+    "cf"
+   ],
+   "image_credit": "Geifr Pen y Gogarth, Llandudno - semi feral Kashmir goats on Pen y Gogarth (recently translated to 'Great Orme'), Llandudno, Wales 03. Llywelyn2000, CC BY-SA 4.0. Wikimedia Commons: https://commons.wikimedia.org/wiki/File:Geifr_Pen_y_Gogarth,_Llandudno_-_semi_feral_Kashmir_goats_on_Pen_y_Gogarth_(recently_translated_to_%27Great_Orme%27),_Llandudno,_Wales_03.jpg"
+  },
+  {
+   "id": "scene_003",
+   "arc": "desarrollo",
+   "duration_seconds": 10,
+   "narration": "Era su primera misión en el extranjero: la base de Episkopi, en Chipre. El desfile fue el 16 de junio, ante los embajadores de España, Países Bajos y Suecia, y el comandante argentino de las fuerzas de la ONU en Chipre.",
+   "on_screen_text": "",
+   "asset_filename": "frames/scene_003.jpg",
+   "sfx": [
+    "viento_costa"
+   ],
+   "source_ids": [
+    "bbc",
+    "cf"
+   ],
+   "image_credit": "Episkopi Cyprus - road. Radosław Botev, CC BY 3.0 pl. Wikimedia Commons: https://commons.wikimedia.org/wiki/File:Episkopi_Cyprus_-_road.jpg",
+   "capa": {
+    "tipo": "mapa",
+    "plano": 2,
+    "region": [
+     20,
+     40,
+     28,
+     42
+    ],
+    "puntos": [
+     {
+      "nombre": "Episkopi",
+      "lon": 32.9,
+      "lat": 34.67
+     }
+    ],
+    "titulo": "Episkopi, Chipre (2006)",
+    "fuente": "BBC News"
+   }
+  },
+  {
+   "id": "scene_004",
+   "arc": "desarrollo",
+   "duration_seconds": 10,
+   "narration": "Billy no marchó al paso, se salió de la fila y, según Countryfile, intentó darle un cabezazo a un tamborilero. Su cuidador, el cabo Dai Davies, de 22 años, conocido como el mayor de la cabra, no pudo controlarlo.",
+   "on_screen_text": "",
+   "asset_filename": "frames/scene_004.jpg",
+   "sfx": [
+    "viento_costa"
+   ],
+   "source_ids": [
+    "bbc",
+    "cf"
+   ],
+   "image_credit": "RoyalRegimentWalesGoat gobeirne. Greg O'Beirne, CC BY 2.5. Wikimedia Commons: https://commons.wikimedia.org/wiki/File:RoyalRegimentWalesGoat_gobeirne.jpg"
+  },
+  {
+   "id": "scene_005",
+   "arc": "desarrollo",
+   "duration_seconds": 10,
+   "narration": "Los cargos: falta de decoro y desobedecer una orden directa. Lo degradaron de cabo a fusilero, y los soldados ya no tenían que cuadrarse a su paso.",
+   "on_screen_text": "",
+   "asset_filename": "frames/scene_005.jpg",
+   "sfx": [
+    "viento_costa"
+   ],
+   "source_ids": [
+    "bbc",
+    "cf"
+   ],
+   "image_credit": "Military goat. Southbanksteve from London, UK, CC BY-SA 2.0. Wikimedia Commons: https://commons.wikimedia.org/wiki/File:Military_goat.jpg",
+   "capa": {
+    "tipo": "dato",
+    "plano": 2,
+    "valor": "Cabo → Fusilero",
+    "etiqueta": "degradado por falta de decoro",
+    "fuente": "BBC News, 2006"
+   }
+  },
+  {
+   "id": "scene_006",
+   "arc": "reflexion_o_pregunta",
+   "duration_seconds": 10,
+   "narration": "Un grupo canadiense protestó: decían que solo estaba haciendo de cabra. Tres meses después, en el desfile del Día de Alma, marchó impecable y recuperó el rango. Un capitán dijo que había tenido todo el verano para reflexionar. En 2009 se jubiló en el zoológico de Whipsnade. ¿Tú le devolverías el ascenso?",
+   "on_screen_text": "",
+   "asset_filename": "frames/scene_006.jpg",
+   "sfx": [
+    "viento_costa"
+   ],
+   "source_ids": [
+    "bbc",
+    "cf"
+   ],
+   "image_credit": "Royal Welsh Fusiliers Goat. Robert French, Public domain. Wikimedia Commons: https://commons.wikimedia.org/wiki/File:Royal_Welsh_Fusiliers_Goat.jpg"
+  }
+ ],
+ "cortinilla_fuentes": {
+  "duration_seconds": 6,
+  "titulo": "Fuentes",
+  "aviso": "Imágenes de dominio público o licencia libre (Wikimedia Commons y archivos citados en la descripción). Escena 1: ilustración generada con IA. Voz sintética (IA).",
+  "firma": "Datos y ociosidades · @datosyociosidades",
+  "bg_rgb": [
+   18,
+   16,
+   14
+  ]
+ },
+ "export": {
+  "filename": "capsula.mp4",
+  "resolution": "1080x1920",
+  "fps": 30,
+  "loudness_lufs": -14,
+  "plano_seconds": 4.0,
+  "subtitle_max_words": 3
+ },
+ "estructura": "historia",
+ "hook_type": "animal_con_oficio_humano"
+}

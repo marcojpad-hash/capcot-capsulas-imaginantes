@@ -1,0 +1,246 @@
+{
+ "project_id": "2026-11-23_wonder-woman-poligrafo",
+ "serie": "Cómics y ciencia",
+ "title": "El lazo de la verdad tiene un origen real",
+ "titulo": "EL LAZO DE LA VERDAD ES REAL",
+ "language": "es-MX",
+ "aspect_ratio": "9:16",
+ "target_duration_seconds": 88,
+ "estilo_id": "foto_commons",
+ "estilo_visual": "fotografías de dominio público o licencia libre",
+ "proveedor_imagenes": "Wikimedia Commons (PD/CC, créditos en creditos_imagenes.json); escena 1 ilustración IA",
+ "parece_real": true,
+ "keywords": [
+  "WonderWoman"
+ ],
+ "titulo_estilo": {
+  "size": 96,
+  "caja_rgb": [
+   205,
+   25,
+   25
+  ],
+  "texto_rgb": [
+   255,
+   222,
+   0
+  ],
+  "subrayado_rgb": [
+   255,
+   222,
+   0
+  ]
+ },
+ "voice": {
+  "engine": "edge-tts",
+  "voice_id": "es-MX-JorgeNeural",
+  "rate": "+7%",
+  "pitch": "-2Hz",
+  "pad_seconds": 0.3,
+  "modo_pausas": "continuo"
+ },
+ "audio": {
+  "music_asset": "sintetico:circuito_neural",
+  "cama_musical": "circuito_neural",
+  "music_bpm": 96,
+  "music_lufs": -27,
+  "ambiente_lufs": -31
+ },
+ "canal": {
+  "nombre": "Datos y ociosidades",
+  "handle": "@datosyociosidades"
+ },
+ "sources": [
+  {
+   "id": "lepore",
+   "cita_corta": "Jill Lepore, Smithsonian Magazine (oct-2014): The Surprising Origin Story of Wonder Woman.",
+   "url": "https://www.smithsonianmag.com/arts-culture/origin-story-wonder-woman-180952710/"
+  },
+  {
+   "id": "saulny",
+   "cita_corta": "Smithsonian Magazine (nov-2024): Why the Creator of One of the First Lie Detectors Lived to Regret His Invention.",
+   "url": "https://www.smithsonianmag.com/smithsonian-institution/why-creator-first-lie-detectors-regret-invention-polygraph-machine-inventor-180985222/"
+  },
+  {
+   "id": "aps",
+   "cita_corta": "Association for Psychological Science, Observer: Wonder Woman's Secret Roots in Psychological Science.",
+   "url": "https://www.psychologicalscience.org/publications/observer/obsonline/wonder-womans-secret-roots-in-psychological-science.html"
+  },
+  {
+   "id": "wellcome",
+   "cita_corta": "Wellcome Collection (2016): Wonder Woman's wonder women.",
+   "url": "https://wellcomecollection.org/stories/wonder-womans-wonder-women"
+  }
+ ],
+ "scenes": [
+  {
+   "id": "scene_001",
+   "arc": "hook_medias_res",
+   "duration_seconds": 10,
+   "narration": "El lazo de la verdad de Wonder Woman tiene un origen real. No viene de una isla de amazonas: viene de un laboratorio de psicología en Harvard.",
+   "on_screen_text": "",
+   "asset_filename": "frames/scene_001.jpg",
+   "sfx": [
+    "reloj"
+   ],
+   "source_ids": [
+    "lepore",
+    "saulny",
+    "aps",
+    "wellcome"
+   ],
+   "image_credit": "Ilustración propia generada con IA (lazo y baumanómetro; sin personaje ni arte de DC)."
+  },
+  {
+   "id": "scene_002",
+   "arc": "desarrollo",
+   "duration_seconds": 10,
+   "narration": "Su creador, William Moulton Marston, tenía tres títulos de Harvard, incluido un doctorado en psicología. En el laboratorio de Hugo Münsterberg estudiaba una pregunta: ¿qué le pasa a la presión arterial cuando alguien miente?",
+   "on_screen_text": "",
+   "asset_filename": "frames/scene_002.jpg",
+   "sfx": [
+    "reloj"
+   ],
+   "source_ids": [
+    "lepore",
+    "saulny",
+    "aps",
+    "wellcome"
+   ],
+   "image_credit": "Hugo Münsterberg Psychologe. Unknown authorUnknown author, Public domain. Wikimedia Commons: https://commons.wikimedia.org/wiki/File:Hugo_M%C3%BCnsterberg_Psychologe.jpg"
+  },
+  {
+   "id": "scene_003",
+   "arc": "desarrollo",
+   "duration_seconds": 10,
+   "narration": "La pista vino de su esposa, Elizabeth Holloway, abogada y psicóloga: notaba que cuando se enojaba o se emocionaba, su presión parecía subir. Juntos publicaron experimentos sobre la presión sistólica y las emociones.",
+   "on_screen_text": "",
+   "asset_filename": "frames/scene_003.jpg",
+   "sfx": [
+    "reloj"
+   ],
+   "source_ids": [
+    "lepore",
+    "saulny",
+    "aps",
+    "wellcome"
+   ],
+   "image_credit": "William Moulton Marston and Elizabeth Holloway Marston. Photo courtesy of Moulton \"Pete\" Marston, Public domain. Wikimedia Commons: https://commons.wikimedia.org/wiki/File:William_Moulton_Marston_and_Elizabeth_Holloway_Marston.png"
+  },
+  {
+   "id": "scene_004",
+   "arc": "desarrollo",
+   "duration_seconds": 10,
+   "narration": "Marston medía con un baumanómetro común, a intervalos. En 1921, en Berkeley, el policía John Larson usó esa idea para armar el primer polígrafo de registro continuo, y luego Leonarde Keeler lo hizo portátil. O sea: Marston no lo inventó solo.",
+   "on_screen_text": "",
+   "asset_filename": "frames/scene_004.jpg",
+   "sfx": [
+    "reloj"
+   ],
+   "source_ids": [
+    "lepore",
+    "saulny",
+    "aps",
+    "wellcome"
+   ],
+   "image_credit": "The Ink polygraph Wellcome L0004447. autor en Commons, CC BY 4.0. Wellcome Collection vía Wikimedia Commons: https://commons.wikimedia.org/wiki/File:The_Ink_polygraph_Wellcome_L0004447.jpg",
+   "capa": {
+    "tipo": "mapa",
+    "plano": 2,
+    "region": [
+     -130,
+     -60,
+     22,
+     52
+    ],
+    "puntos": [
+     {
+      "nombre": "Harvard",
+      "lon": -71.1,
+      "lat": 42.37
+     },
+     {
+      "nombre": "Berkeley",
+      "lon": -122.27,
+      "lat": 37.87
+     }
+    ],
+    "flechas": [
+     [
+      -71.1,
+      42.37,
+      -122.27,
+      37.87,
+      "1921"
+     ]
+    ],
+    "titulo": "De Harvard a Berkeley",
+    "fuente": "Smithsonian Magazine; APS"
+   }
+  },
+  {
+   "id": "scene_005",
+   "arc": "desarrollo",
+   "duration_seconds": 10,
+   "narration": "En 1923, un tribunal de Washington rechazó los resultados de esta prueba en el caso Frye: no tenía aceptación general entre los expertos. Y hasta Larson desconfiaba de su máquina por su tasa de errores.",
+   "on_screen_text": "",
+   "asset_filename": "frames/scene_005.jpg",
+   "sfx": [
+    "reloj"
+   ],
+   "source_ids": [
+    "lepore",
+    "saulny",
+    "aps",
+    "wellcome"
+   ],
+   "image_credit": "Lie detector test. Ed Westcott, Public domain. Wikimedia Commons: https://commons.wikimedia.org/wiki/File:Lie_detector_test.jpg",
+   "capa": {
+    "tipo": "dato",
+    "plano": 2,
+    "valor": "1923",
+    "etiqueta": "caso Frye: prueba rechazada en tribunal",
+    "fuente": "Smithsonian Magazine"
+   }
+  },
+  {
+   "id": "scene_006",
+   "arc": "reflexion_o_pregunta",
+   "duration_seconds": 10,
+   "narration": "En 1941, con el seudónimo Charles Moulton, creó a Wonder Woman, con un lazo dorado que obliga a decir la verdad. Y las pulseras, según él, venían de las que usaba Olive Byrne, su exalumna, que vivía con él y con Elizabeth. ¿Confiarías más en un lazo que en un polígrafo?",
+   "on_screen_text": "",
+   "asset_filename": "frames/scene_006.jpg",
+   "sfx": [
+    "reloj"
+   ],
+   "source_ids": [
+    "lepore",
+    "saulny",
+    "aps",
+    "wellcome"
+   ],
+   "image_credit": "William Marston Aug 1922 newspaper photo. The Morning Tulsa daily world, Public domain. Wikimedia Commons: https://commons.wikimedia.org/wiki/File:William_Marston_Aug_1922_newspaper_photo.jpg"
+  }
+ ],
+ "cortinilla_fuentes": {
+  "duration_seconds": 6,
+  "titulo": "Fuentes",
+  "aviso": "Imágenes de dominio público o licencia libre (Wikimedia Commons y archivos citados en la descripción). Escena 1: ilustración generada con IA. Voz sintética (IA).",
+  "firma": "Datos y ociosidades · @datosyociosidades",
+  "bg_rgb": [
+   18,
+   16,
+   14
+  ]
+ },
+ "export": {
+  "filename": "capsula.mp4",
+  "resolution": "1080x1920",
+  "fps": 30,
+  "loudness_lufs": -14,
+  "plano_seconds": 4.0,
+  "subtitle_max_words": 3
+ },
+ "estructura": "historia",
+ "hook_type": "animal_con_oficio_humano"
+}
