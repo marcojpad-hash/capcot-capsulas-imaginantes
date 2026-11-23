@@ -329,3 +329,8 @@ Main avanzó a `b85fcb0e117955def516790393a989d7d78cc93b`; el commit modificó �
 - El snapshot `snapshot_2026-11-23_08` y la propuesta correspondiente están guardados, pero `pendiente_studio=true` y la propuesta tiene estado `pendiente_studio`: no prueban que Studio haya aplicado el cambio.
 - **DISCREPANCIA DE REGISTRO:** el campo `motivo` afirma que el video `5XQfUHpyTWs` tiene 46 vistas y carece de pantalla final; el snapshot del mismo archivo registra 989 vistas para ese ID y `aplicado_studio` lo marca como aplicado el 28-oct-2026 hacia `5D96DmjvioU`. No se corrige `data/*.json`; queda como discrepancia de metadatos que requiere verificación en Studio.
 - No afecta los ocho horarios del día ya contabilizados. No se cambió main, el JSON ni la propuesta; no se ejecutó ninguna acción en Studio.
+
+
+### Corrección de atribución de Semgrep — PR #15
+
+Precisión sobre la sección anterior: los **27 hallazgos** pertenecen al run Semgrep `45004241269` citado en el cuerpo del PR. La consulta del head actual `30101e9aca8aaafb8d1894df30574a66067ff4a8` devuelve además el run `45004335607` con conclusión FAILURE, pero no se verificó en sus logs el mismo conteo. No se atribuyen los 27 hallazgos al run más reciente. Las pruebas unitarias del PR siguen pendientes.
