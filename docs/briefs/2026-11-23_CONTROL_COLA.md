@@ -140,3 +140,38 @@ No se cambió `data/*.json`, main, programación, publicaciones, bloqueados, est
 - `30987a394651cfe974f22ef96a8b124348169d02`, `b2946e1d38737e7b806cc345b14a4bbb8553ff7b` y `46ae529355d98d777c3991c2c178261d2da58cdc`: correcciones sucesivas para separar acceso a fuente primaria, estado PENDING_SOURCE y DOI pendiente.
 - `63d54fbc0f3726bb0e3fa9b6beba4aecadbd15b3`: actualización de este control. El radar y el control se releen desde GitHub; los hashes de contenido se comprobaron en la respuesta de lectura de vuelta.
 - No hubo cambios de storyboard ni de `data/*.json` en estos commits.
+
+
+## Revalidación adicional — 23-nov-2026, 04:02 CDMX
+
+### Proyectos y lote 5–7 nov
+
+- Se releyeron los doce storyboards canónicos del lote 5–7 nov. Se mantienen **2 PASS y 10 FAIL**; no se repitió ninguna revisión PASS ni se alteró la narración.
+- Los doce `cola/estado/<project_id>.json` devolvieron HTTP 404. Clasificación para cada uno: `RECEPCION_GROK_NO_CONFIRMADA`.
+- La evidencia de `main/data/publicaciones.json` y `main/data/miniaturas_auditoria_2026-11-21.json` volvió a confirmar nueve IDs de video ya procesados/programados. Los tres sin video ID confirmado —rayo globular, aguacate negro y pulpos— no aparecen por título en esos registros. Ninguno se promovió ni redispatchó.
+- `cola/bloqueados/` conserva doce copias planas. Nueve tienen además carpeta anidada con `storyboard.json`, `fuentes.md` y `ESTADO_EJECUCION.md`; los nueve estados Markdown ya dicen `BORRADOR_EN_PROYECTOS_NO_APTO_PARA_PROMOCION`, pero sus JSON heredados aún dicen `PENDIENTE_REVISION_GROK` y no contienen `narrative_qa`. Se conserva la discrepancia, sin mover ni editar copias bloqueadas. Tres IDs solo tienen copia plana.
+- La comparación de commits desde el control anterior hasta el HEAD previo mostró únicamente cambios en este archivo de control; no hubo modificación de storyboards posteriores a la auditoría del 01:23 CDMX.
+
+### Entrada anidada del robot — 9 nov
+
+- Relectura de `cola/entrada/2026-11-09_dato-robot-ensambla-orbita/storyboard.json`: conserva QA PASS histórico y estado de publicación pendiente de decisión Grok.
+- `cola/estado/2026-11-09_dato-robot-ensambla-orbita.json` devuelve HTTP 404: `RECEPCION_GROK_NO_CONFIRMADA`.
+- La carpeta `frames/` contiene únicamente `.gitkeep`. La carpeta `salidas/2026-11-09_dato-robot-ensambla-orbita/` no existe en main (404). La fila de `main/data/publicaciones.json` sí conserva YouTube ID `ZG4iQgmWrLI`, con programación registrada para el 21-nov-2026 a las 19:00 CDMX.
+- Clasificación: `PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR` + `MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO`. Además, la entrada está anidada y el workflow solo acepta `cola/entrada/*.json` en primer nivel; por la ruta actual es `NOT_DISPATCHABLE`. No se disparó el workflow ni se envió payload.
+
+### Cupo futuro y radar del 25 nov
+
+- `scripts/rotacion.py` mantiene `MAX_POR_DIA=5`. La reconciliación de main muestra 25-nov con seis programaciones (6/5): cuatro del snapshot de miniaturas y dos reworks con `publishAt` (10:00 y 15:00 CDMX). Los días 26–28 también suman 6/5; el 29 suma 5/5. No hay cupo autorizable para un storyboard del 25 al 29-nov. No se cancela ni reprograma nada.
+- Se creó `docs/briefs/2026-11-25_RADAR_CAPCOT.md` con cinco candidatos primarios recientes: Varroa/hipoxia, Norma arm, plancton, lagos glaciares y Pantoea/quinoa. Varroa queda como primera recomendación de investigación, no como selección.
+- La apertura directa de los diez RSS definidos en `scripts/tendencias.py` devolvió errores de tipo de contenido, 404, redirección a IDP o URL no accesible; Google Trends RSS tampoco abrió. La página HTML oficial de Trends México sí abrió (277 tendencias, 25 visibles), sin tendencia pertinente para ciencia/naturaleza/cocina/cuerpo/espacio. No se afirma que el script se haya ejecutado.
+- Crossref REST y resolvedores DOI no devolvieron una verificación reproducible. Los DOI de los candidatos siguen `PENDIENTE_RESOLVEDOR`; los candidatos cuyo texto completo no se pudo leer siguen `PENDING_SOURCE`. No se creó storyboard, QA, entrada, estado Grok ni medio.
+
+### Issue #11 — cuásares
+
+- Issue #11 continúa abierto con etiqueta `hecho`. PR #12 está cerrado sin merge; PR #13 sigue abierto y sin merge. El informe externo de Groq en PR #13 inspecciona el storyboard completo y su metadata, por lo que no acredita la compuerta estricta de lectura en frío de narración concatenada.
+- No hay `cola/estado`, entrada, salida ni registro de publicación para `2026-11-15_dato-quasar-pareja-cosmic-dawn`.
+- **EJECUTADO y VERIFICADO:** se actualizó únicamente la compuerta del storyboard: `narrative_qa.status=FAIL`, `score=0`, `review_basis=lectura_en_frio_solo_narracion`, siete checks explícitos no acreditados y `critical_flags=[REVISION_INDEPENDIENTE_AUSENTE]`. El estado quedó `BORRADOR_EN_PROYECTOS_NO_APTO_PARA_PROMOCION`. La revisión de esta sesión es de ChatGPT y no se presenta como independiente; el informe de Groq no cumple el método de solo narración. Lectura de vuelta confirmó que la narración y los claims permanecen idénticos. No se modificó el issue ni los PRs.
+
+### Límites y acciones no ejecutadas
+
+No se modificaron `data/*.json`, main, `cola/entrada`, `cola/estado`, bloqueados, programación, publicaciones, workflows, secretos ni permisos. No se leyeron valores de `GROK_WEBHOOK_URL` ni `GROK_WEBHOOK_TOKEN`; su presencia no se infiere. No se generaron medios ni se consumieron créditos.
