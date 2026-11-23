@@ -299,3 +299,15 @@ La relectura de RSS y Google Trends, con errores exactos y respaldo editorial pr
 - El tablero `ajustes_entre_modelos/DELEGACIONES.md` conserva pendientes antiguos de Mpemba, Barreleye, seguridad, cuenta Clayzo y backlog inglés. El callback no creó Issues nuevos; no se duplicó ni se reasignó trabajo.
 
 No hay evidencia de un dispatch de Grok en la ventana reciente de Actions. Con `cola/entrada/` sin JSON plano, el selector no tiene paquete que despachar. No se leyeron secretos ni se escribieron estados Grok.
+
+
+## Revalidación de ocupación en main — 2026-11-23, 07:58 CDMX
+
+**Fuente de verdad consultada en solo lectura:** main HEAD `20fa76409a620d909d690d3c04a87bb34f4b42c6` (commit de programación TT+FB); `data/publicaciones.json` blob `774e3b7022c910d5b1b1d3f86a4590df0ee5847d`; `data/tt_fb_alineacion_2026-11-23.json` blob `3d44386a12298ee06b222ccabfaefb65fe61a6e8`.
+
+- El registro de alineación de main contiene **8 horarios CDMX distintos y 10 video_id del día**: 07:00, 09:00, 11:00, 13:30, 17:00, 19:00, 21:00 y 23:30. Los horarios 07:00 y 17:00 tienen dos IDs cada uno. Esto supera el límite documentado de cinco cápsulas diarias; se registra como **CAPACIDAD_5_DIA_SUPERADA_EN_MAIN** (observación de programación, no afirmación de que todos los videos estén ya públicos).
+- 09:00 Bernabé, 11:00 Evémero y 17:00 Mitra aparecen en `publicaciones.json` con `publishAt` y programación TT/FB. El mismo snapshot de alineación también registra Rosetta 13:30, Pirámides 17:00, Gutenberg 19:00, Ley Juárez 21:00 y Oso Wojtek 23:30 como IDs de YouTube sin MP4 local ni TT/FB verificados.
+- Para cualquier paquete que coincida con esos horarios se aplica **PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR**. Los medios de los cinco registros YT sin MP4 local quedan **MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO**.
+- `2026-11-23_tropical-biodiversity-turnover` (13:30) mantiene **CONFLICTO_DE_SLOT_ENTRE_RAMAS** con Rosetta en main. `2026-11-23_supersequias-722-eventos` (23:30) pasa de “sin ocupación observada” a **CONFLICTO_DE_SLOT_ENTRE_RAMAS** con Oso Wojtek en main. Esta corrección supersede la observación anterior de disponibilidad 23:30.
+- Lectura de vuelta de ambos storyboards: siguen `BORRADOR_EN_PROYECTOS_NO_APTO_PARA_PROMOCION`, `narrative_qa=FAIL/82`, siete checks true y `STAKES_NO_EXPLICADOS`; no se repitió QA porque la narración no cambió. Ambos `cola/estado/<project_id>.json` y ambos `ESTADO_EJECUCION.md` devolvieron 404; se conserva `RECEPCION_GROK_NO_CONFIRMADA`. Clasificación: **NOT_DISPATCHABLE**.
+- No se modificó main ni `data/*.json`; no se disparó workflow, no se envió payload y no se tocó programación externa.
