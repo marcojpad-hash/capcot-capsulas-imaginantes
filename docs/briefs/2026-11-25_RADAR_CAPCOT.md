@@ -121,3 +121,20 @@ Las programaciones provienen de `main/data/miniaturas_auditoria_2026-11-21.json`
 ## Reintento de resolver — 23-nov-2026, 04:29 CDMX
 
 Se intentó abrir Crossref REST `/works/{doi}` y `/v1/works/{doi}` para los DOI de los candidatos. El lector web devolvió `Internal Error` en ambos endpoints y no entregó una respuesta de Crossref; no se marcó ningún DOI como verificado. Se conserva `PENDIENTE_RESOLVEDOR` y no se crea storyboard sin resolver la fuente.
+
+## Revalidación de textos primarios — 2026-11-23 18:00 CDMX
+
+### Estado actualizado de los cinco candidatos
+- **Varroa / PLOS Biology:** texto primario completo consultado. El estudio reporta experimentos de traslado de colonias y de hipoxia; el resumen de la página especifica reducción de fecundidad del ácaro por encima de 3,500 m. DOI declarado, pero el resolvedor redirigió a una ruta no accesible; `PENDIENTE_RESOLVEDOR`.
+- **Brazo Norma / Nature Astronomy:** PDF primario completo consultado: https://www.nature.com/articles/s41550-026-03010-5.pdf. El trabajo usa simulaciones N-body e hidrodinámicas para proponer que los máseres trazan el frente de choque/barra y su carril de polvo; no es una observación directa que cierre el debate. DOI visible, resolvedor pendiente.
+- **Plankton / Nature Communications:** PDF primario completo consultado: https://www.nature.com/articles/s41467-026-79817-7_reference.pdf. Bajo SSP5-8.5, NCP cae 5.8%, 8.8% y 12.8% en las tres configuraciones; NPP cambia poco. El efecto se relaciona con fitoplancton más pequeño y mayor pastoreo de zooplancton. DOI visible, resolvedor pendiente.
+- **Glaciares y lagos / Nature Climate Change:** la página primaria deja leer el abstract y los datos globales, pero el texto completo permanece bajo suscripción. Conserva `PENDING_SOURCE`; no convertir el abstract en texto completo verificado.
+- **Pantoea 6PN asociada a quinoa / Scientific Reports:** PDF primario completo consultado: https://www.nature.com/articles/s41598-026-80573-3_reference.pdf. El aislado 6PN se obtuvo de quinoa, pero los ensayos de promoción de crecimiento se realizaron en *Arabidopsis thaliana* bajo 300 mM NaCl; no demuestra aumento de rendimiento de quinoa en campo. El efecto no fue significativo sin sal. DOI visible, resolvedor pendiente.
+
+### DOI, RSS y Google Trends
+- Los intentos de Crossref REST y DOI resolver no entregaron una respuesta verificable: `URL not accessible via this tool` / `Internal Error`; el click del DOI PLOS terminó en `500 Redirected to https://journals.plos.org/plosone/doi?id=10.1371/journal.pbio.3004091`, no accesible. Ningún candidato se marca `VERIFICADO_CROSSREF`.
+- Los RSS XML consultados devolvieron `400 Unsupported content-type: application/rss+xml`; Google Trends RSS devolvió `URL not accessible via this tool`. `scripts/tendencias.py` no se ejecutó en este run. El respaldo HTML México mostró 179 tendencias y ninguna señal elegible para la línea editorial.
+
+### Cupo y decisión
+- `main` HEAD `84731657f14e31f16984b95651bc4fe0c2b2c2c2`; el compare desde el HEAD anterior no muestra cambios en `data/miniaturas_auditoria_2026-11-21.json` ni `data/rehechos_2026-11-22.json`. `data/horarios.json` sí cambió y ahora documenta ventanas activas 06:30–07:30 y 16:30–18:00, más 23:30 fijo.
+- El conteo 25-nov sigue **7/5** por cinco registros del snapshot más dos reworks; no hay cupo. No se crea storyboard ni cola. La disponibilidad de texto primario no equivale a selección editorial ni a DOI resuelto.
