@@ -333,3 +333,38 @@ Se leyó el log de [run #45439255464](https://github.com/marcojpad-hash/capcot-c
 - PR #3 sigue OPEN, draft, no mergeable y con 706 archivos modificados.
 - No apareció ejecución nueva del workflow de preproducción ni del dispatch en feature después de los commits documentales. El último run sigue siendo #45392906745 sobre aabd4f5, anterior al validador con --check-doi y sin esa bandera.
 - Los dos documentos de esta corrida se releen en GitHub: CONTROL_COLA y RADAR_CAPCOT. No se modificó ningún storyboard, data/*.json, main, secreto, estado Grok ni medio.
+
+
+## Revalidación operativa posterior al corte 10:42 — 2026-11-24 12:00 CDMX
+
+### Autoridad de ramas y cambios nuevos en main
+
+- **main HEAD:** `a24d5ee2ad7f8a640d563ca8dda2cf96961638e0`.
+- Desde el HEAD anterior `0c5374e692a461b55a545c7a0cf5d12a616dbc88` entraron dos commits: `424908ae` (`pantallas ... pendiente_studio`) y `a24d5ee2` (`pantallas ... aplicadas en Studio (8/9, flamenco omitido)`). Ambos modifican únicamente `data/endscreens_rotacion.json`.
+- **Corrección de interpretación:** el 8/9 del mensaje de commit se refiere a asignaciones de pantallas finales, no a ocho de nueve videos publicados o programados. El archivo de main registra actualización 2026-11-24 11:07; la copia de feature conserva el corte 2026-11-23 16:30. `data/*.json` sigue en solo lectura; no se sincronizó.
+- **feature HEAD del PR #3:** `a4f8f1078ef787b8a45925685e45bdba24c4717b`. PR #3 continúa OPEN, draft y `mergeable=false`, con 706 archivos declarados. Compare main→feature: 1,373 commits ahead y 573 behind; ramas divergentes. No sincronizar ni integrar.
+
+### Paquete preexistente de magnetismo p-wave / EuSi
+
+Se releyeron las copias de proyecto y cola en main:
+
+- `proyectos/2026-11-24_magnetismo-p-wave-eusi/storyboard.json` y `cola/entrada/2026-11-24_magnetismo-p-wave-eusi/storyboard.json` tienen el mismo blob SHA `74ae31789be2d69ad984ee47a768ee21f6e525b8`; no cambió desde el QA anterior.
+- La narración conserva 6 escenas y 121 palabras. No se repitió la lectura en frío.
+- `programacion.json` conserva `publish_at=2026-11-24T23:15:00Z` (17:15 CDMX), plataformas YouTube/TikTok y `estado=programado_para_publicar`; la misma nota dice que falta montar el MP4. Es un registro documental de programación, no una verificación en Studio.
+- `cola/estado/2026-11-24_magnetismo-p-wave-eusi.json` devuelve 404: `RECEPCION_GROK_NO_CONFIRMADA`.
+- `salidas/2026-11-24_magnetismo-p-wave-eusi/` no existe; no se encontró MP4 en el árbol: `MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO`.
+- El paquete está dentro de un directorio anidado, no como `cola/entrada/<id>.json`. El workflow `.github/workflows/capcot-grok-dispatch.yml` usa `find cola/entrada -maxdepth 1 -type f -name '*.json'` y el filtro de push `^cola/entrada/[^/]+\.json$`. Por ruta, **NOT_DISPATCHABLE**.
+- El registro de programación y la copia heredada en cola hacen que aplique **PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR**. No se movió ni duplicó nada en main.
+
+### Worker y seguridad
+
+- Worker de cola [run #45447043932](https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/actions/runs/45447043932), 2026-11-24 11:18 CDMX: SUCCESS. El log dice literalmente `[trabajador] sin trabajo en cola.` Esto es coherente con que el paquete nuevo no sea un JSON plano en el nivel que selecciona el worker; no demuestra que no existan directorios anidados.
+- Gitleaks [run #45446747688](https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/actions/runs/45446747688): SUCCESS, pero el comando usa `--log-opts=-1`; el log confirma **1 commit scanned**, ~109.96 KB y `no leaks found`. No vuelve a escanear la línea 46 del archivo de auditoría ni limpia el historial. El hallazgo histórico `generic-api-key` sigue abierto; no se muestra ni modifica el valor.
+- Semgrep [run #45446747766](https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/actions/runs/45446747766): FAILURE, 37 hallazgos bloqueantes en 1,253 archivos; 37 archivos mayores de 1 MB fueron omitidos por el escáner.
+- Callback [run #45450386352](https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/actions/runs/45450386352): SUCCESS; el log muestra `pending = []`, sin nuevas tareas callback que crear.
+
+### Programación del 24-nov y recepción
+
+- El snapshot de alineación registra 2 IDs publicados a las 07:00, 1 ID programado a las 17:00 y 5 IDs privados programados en 13:30, 15:00, 17:00, 19:00 y 23:30: **8 IDs existentes**. El paquete EuSi añade un noveno registro planificado a las 17:15. Es una sobrecapacidad documental de 9 frente al límite 5; no equivale a 9 confirmaciones en vivo de Studio.
+- Issues [#1065](https://github.com/marcojpad-hash/agente-cero-costo/issues/1065) y [#1066](https://github.com/marcojpad-hash/agente-cero-costo/issues/1066) siguen abiertos. Los archivos del bus tienen versión 8 y tipo `indicacion`; no son recibos de ejecución. No se encontró confirmación individual Grok ni marcador `grok_done` que permita cambiar el estado.
+- No se creó storyboard nuevo, no se promovió paquete, no se disparó dispatch, no se modificó main, `data/*.json`, programación, secreto, permiso, estado Grok ni medio.
