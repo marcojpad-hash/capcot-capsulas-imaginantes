@@ -5,7 +5,7 @@ Uso:
   python3 scripts/validar_storyboard.py proyectos/AAAA-MM-DD_slug/storyboard.json --structural-only
   python3 scripts/validar_storyboard.py cola/entrada/AAAA-MM-DD_slug.json --check-doi
 --structural-only valida estructura sin exigir ni evaluar narrative_qa; no autoriza promoción.
-El modo completo sigue exigiendo narrative_qa PASS. --check-doi prueba Crossref y, si falla, el resolvedor doi.org.
+El modo completo sigue exigiendo narrative_qa PASS. --check-doi prueba DOI mediante Crossref/doi.org o URL primaria HTTP cuando no hay DOI.
 La etapa de preproducción no requiere ni acepta rutas de assets inexistentes.
 """
 import argparse
@@ -46,6 +46,23 @@ def check_doi(doi):
         except Exception:
             continue
     return False
+
+def check_url(url):
+    """Comprueba una URL primaria cuando la fuente no declara DOI."""
+    parsed = urllib.parse.urlparse(str(url or "").strip())
+    if parsed.scheme not in {"http", "https"} or not parsed.netloc:
+        return False
+    try:
+        req = urllib.request.Request(
+            url,
+            headers={"User-Agent": "capcot-validador/3.0", "Accept": "text/html,application/pdf,*/*;q=0.8"},
+        )
+        with urllib.request.urlopen(req, timeout=20) as response:
+            status = int(getattr(response, "status", 200))
+            return 200 <= status < 400
+    except Exception:
+        return False
+
 
 def words(text):
     return re.findall(r"[A-Za-zÁÉÍÓÚÜÑáéíóúüñ0-9]+(?:['’.-][A-Za-zÁÉÍÓÚÜÑáéíóúüñ0-9]+)*", text or "")
@@ -218,8 +235,12 @@ def validar(path, doi=False, structural_only=False):
         status = str(src.get("verification_status") or "").lower()
         if status and ("pendiente" in status or "pending" in status):
             warns.append(f"{sid}: verificación pendiente; no presentarla como DOI validado")
-        if doi and src.get("doi") and not check_doi(src["doi"]):
-            errs.append(f"DOI no confirmado por Crossref en esta ejecución: {src['doi']}")
+        if doi:
+            if src.get("doi"):
+                if not check_doi(src["doi"]):
+                    errs.append(f"DOI no confirmado por Crossref ni por doi.org en esta ejecución: {src['doi']}")
+            elif not check_url(src.get("url")):
+                errs.append(f"URL de fuente no confirmada por HTTP en esta ejecución: {src.get('url')}")
 
     arcs = [sc.get("arc") for sc in scenes]
     for arc in ARC:
@@ -338,7 +359,7 @@ def validar(path, doi=False, structural_only=False):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Validador estructural CAPCOT y compuertas de handoff.")
     parser.add_argument("storyboard", help="Ruta del storyboard JSON")
-    parser.add_argument("--check-doi", action="store_true", help="Verifica DOI mediante Crossref y fallback doi.org")
+    parser.add_argument("--check-doi", action="store_true", help="Verifica DOI con Crossref/doi.org o URL primaria si no hay DOI")
     parser.add_argument(
         "--structural-only",
         action="store_true",
