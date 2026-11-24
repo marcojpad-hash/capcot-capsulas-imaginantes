@@ -222,3 +222,50 @@ No se creó storyboard ni cola, no se registró narrative_qa, no se disparó wor
 - PR #3 recibió dos ejecuciones posteriores: [#45436538575](https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/actions/runs/45436538575) y [#45436549625](https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/actions/runs/45436549625). En ambas terminaron SUCCESS los jobs `Analyze (python)` y `Analyze (actions)`.
 - Estos jobs son análisis estático; no ejecutan `validar_storyboard.py --check-doi`, no hacen QA narrativo en frío y no resuelven el estado `dirty`/no mergeable de PR #3. No se atribuye validación estructural ni DOI.
 - No hubo cambios en `main`, `data/*.json`, storyboards, cola ni estados Grok por estas ejecuciones.
+
+
+## Corte operativo complementario — 2026-11-24 10:28 CDMX
+
+Este corte **supersede el conteo inicial de 24-nov 5/5** que aparece en una sección anterior: el cruce de snapshots de YouTube, resubidas y programación devuelve **8 ocupaciones frente a MAX_POR_DIA=5**.
+
+### Estado de ramas y cambios posteriores a la auditoría
+
+- feature/capcot-video-discovery-continuity HEAD: b04f269ad8663a7e20532f70327720b24f196bc0.
+- main HEAD: a450e6273d1bafc4a1fc5099cf69e959dbfde91f.
+- Compare actual: feature 1368 commits ahead / 569 behind, estado diverged; no integrar ni sincronizar por esta vía.
+- Desde la última auditoría 7777ce2, el compare muestra 31 commits adicionales y no reporta cambios en proyectos/**/storyboard.json. Por eso no se repitieron QA narrativos que siguen ligados a narraciones sin cambios.
+- Sí cambió data/endscreens_rotacion.json en feature, commit 9cdd371, aunque data/*.json es de solo lectura. La copia de feature indica 2026-11-23T16:30; la de main indica 2026-11-24 08:05 y contiene snapshots posteriores. No se corrigió ni sobrescribió; queda registrada la discrepancia de una copia de datos modificada y atrasada respecto de main.
+
+### Inventario, cola y Grok
+
+- Última auditoría completa: 103 directorios de proyecto y 90 storyboards.
+- Backlog 24–30 oct: 31 storyboards sin narrative_contract ni narrative_qa; siguen sin compuerta narrativa verificable.
+- Lote 5–7 nov: 12 IDs; 2 PASS y 10 FAIL. Se mantienen 510 campos dramáticos ausentes y 75 escenas con SFX vacío. Sin cambios de narración desde la auditoría anterior.
+- Proyectos 23-nov: supersequias-722-eventos y tropical-biodiversity-turnover, ambos FAIL/82; no se repitió el QA porque no cambió su narración.
+- Último inventario: 27 recepciones Grok no confirmadas. cola/estado/ no está disponible en feature; no se infiere recepción desde GitHub.
+- main/handoffs/grok_inbox/ contiene marcadores para robot orbital, Thomas Harris y evolución cuántica; los dos últimos están en estado pending. feature/handoffs/grok_inbox/ solo contiene el marcador orbital. grok_done/ contiene únicamente .gitkeep. Los Issues #1065 y #1066 siguen abiertos; los marcadores no son recibos de Grok.
+- main/cola/entrada/ contiene 32 directorios anidados; feature conserva el directorio anidado del robot orbital. cola/bloqueados/ contiene 47 entradas y salidas/ 59. La ruta del workflow busca exclusivamente cola/entrada/*.json en profundidad 1; el paquete orbital anidado es procesamiento preexistente y no es dispatchable. DISPATCHABLE: ninguno nuevo. NOT_DISPATCHABLE: paquetes anidados, bloqueados o sin estado Grok confirmado.
+- El webhook del workflow actual es opcional; no se consultaron valores de secretos. No se disparó workflow ni se envió payload.
+
+### Programación corregida
+
+- 24-nov: 8/5. Colisiones verificadas a las 07:00 (dos publicaciones) y 17:00 (dos ocupaciones); 13:30, 15:00 y 19:00 quedan fuera de ventanas ordinarias; 23:30 es slot fijo.
+- 25–28 nov: 7/5 por día.
+- 29-nov: 5/5.
+- No hay slot libre autorizado; no se creó storyboard ni copia de cola.
+- La auditoría de 12 IDs canónicos encontró coincidencia exacta de publicación para solo 2; las demás referencias incluyen variantes o regrabaciones. No contar nueve reworks como nueve IDs canónicos publicados.
+
+### Validador, CI y PRs
+
+- El código actual de scripts/validar_storyboard.py ya incluye --check-doi para Crossref/doi.org o URL primaria, y se añadieron pruebas en tests/test_validar_storyboard.py. No hay ejecución de esas pruebas en el HEAD actual.
+- Kuroshio run #45392906745 usó el commit anterior aabd4f5 y ejecutó python scripts/validar_storyboard.py ... sin --check-doi; pasó estructura y contrato storyboard_only, pero no verifica DOI ni narrative_qa.
+- PR #3 sigue OPEN/draft/no mergeable, 706 archivos modificados; el compare con main sigue divergente.
+- PR #13 sigue OPEN, con auditoría independiente de cuásares en una rama aparte; Issue #11 continúa OPEN pese a la etiqueta hecho. Ese documento no sustituye la lectura en frío solo de narración exigida por el contrato vigente.
+- PR #14 sigue OPEN contra main y conserva asset_filename, incompatible con el contrato de preproducción.
+- PR #15 sigue OPEN/no mergeable; Semgrep falló en su HEAD y no hay ejecución pytest verificable para sus seis pruebas nuevas.
+
+### Seguridad
+
+- En main HEAD a450e627, data/auditoria_hashtags_titulos_2026-11-24.json conserva un valor con patrón de credencial en línea 46. Gitleaks #45414450492 terminó FAILURE. No se reproduce el valor.
+- Semgrep #45412987352 terminó FAILURE con 37 hallazgos bloqueantes.
+- No se modificaron main, data/*.json, secretos, permisos, programación, salidas ni estados Grok.
