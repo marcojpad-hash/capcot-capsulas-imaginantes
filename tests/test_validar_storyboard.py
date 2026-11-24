@@ -4,7 +4,6 @@ import sys
 import tempfile
 import unittest
 from pathlib import Path
-from urllib.error import URLError
 from unittest import mock
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
@@ -270,26 +269,22 @@ class StoryboardValidatorTests(unittest.TestCase):
             )
 
     def test_doi_check_falls_back_from_crossref_to_resolver(self):
-        calls = []
-
-        def fake_urlopen(request, timeout=20):
-            calls.append(request.full_url)
-            if len(calls) == 1:
-                raise URLError("Crossref unavailable")
-            return FakeResponse()
-
-        with mock.patch.object(validator.urllib.request, "urlopen", side_effect=fake_urlopen):
+        with mock.patch.object(
+            validator, "_https_status",
+            side_effect=[(None, None), (302, "https://publisher.example/article")],
+        ) as request:
             self.assertTrue(validator.check_doi("10.1234/example"))
-        self.assertEqual(len(calls), 2)
-        self.assertIn("api.crossref.org", calls[0])
-        self.assertIn("doi.org", calls[1])
+        self.assertEqual(
+            request.call_args_list[0].args,
+            ("api.crossref.org", "/works/10.1234/example"),
+        )
+        self.assertEqual(
+            request.call_args_list[1].args,
+            ("doi.org", "/10.1234/example"),
+        )
 
     def test_doi_check_fails_if_both_endpoints_fail(self):
-        with mock.patch.object(
-            validator.urllib.request,
-            "urlopen",
-            side_effect=URLError("resolver unavailable"),
-        ):
+        with mock.patch.object(validator, "_https_status", return_value=(None, None)):
             self.assertFalse(validator.check_doi("10.1234/example"))
 
     def test_url_check_accepts_primary_http_response(self):
