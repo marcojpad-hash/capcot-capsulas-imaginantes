@@ -84,7 +84,7 @@ Crear exactamente:
 1. docs/briefs/YYYY-MM-DD_RADAR_CAPCOT.md: 3–5 candidatos, Trends, fallos/fallbacks, límites y recomendación.
 2. proyectos/YYYY-MM-DD_slug/storyboard.json: borrador completo con fuentes incorporadas en el propio JSON.
 
-El investigador no escribe en cola/entrada/. El auditor independiente realiza la lectura narrativa en frío y solo promueve el JSON a cola/entrada/<project_id>.json si narrative_qa.status=PASS, score >=85, los siete checks son true y critical_flags=[]. Si falla o no existe revisor independiente, permanece fuera de la cola. Los paquetes heredados que fallen se mueven a cola/bloqueados/<project_id>/storyboard.json, preservando su contenido. Ver docs/QA_NARRATIVO_EN_FRIO.md.
+El investigador no escribe en cola/entrada/ ni crea `narrative_qa`. Puede validar el borrador en `proyectos/` con `python3 scripts/validar_storyboard.py <ruta> --structural-only`; este modo comprueba estructura y ausencia de assets, pero no autoriza handoff. El auditor independiente realiza la lectura narrativa en frío y solo promueve el JSON a cola/entrada/<project_id>.json si el modo completo del validador confirma estructura, `--check-doi` confirma DOI por Crossref/doi.org (o URL primaria por HTTP si no hay DOI), `narrative_qa.status=PASS`, score >=85, los siete checks son true y critical_flags=[]. Si falla o no existe revisor independiente, permanece fuera de la cola. Los paquetes heredados que fallen se mueven a cola/bloqueados/<project_id>/storyboard.json, preservando su contenido. Ver docs/QA_NARRATIVO_EN_FRIO.md.
 
 No crear un archivo de fuentes separado salvo petición expresa.
 
