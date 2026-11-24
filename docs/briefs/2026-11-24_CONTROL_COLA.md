@@ -318,3 +318,8 @@ No se modificó main ni el paquete. El resultado no autoriza publicación, promo
 - Gitleaks #45439255464 terminó SUCCESS sobre el último commit, pero la línea 46 del archivo de auditoría sigue conteniendo un valor con patrón de credencial. El éxito del escaneo del último commit no elimina la exposición ni limpia el historial.
 - Semgrep #45439255716 terminó FAILURE.
 - No se revocaron secretos ni se alteraron datos.
+
+
+### Precisión de Gitleaks — 2026-11-24
+
+Se leyó el log de [run #45439255464](https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/actions/runs/45439255464). El comando usa --log-opts=-1 y el log confirma literalmente **1 commits scanned**, ~15.92 KB y no leaks found. El commit escaneado fue 0c5374e, que solo añadió el paquete de magnetismo; no volvió a escanear la línea 46 del archivo de auditoría. Por tanto, el SUCCESS no limpia ni invalida el hallazgo anterior. La copia actual de main sigue conservando el valor con patrón de credencial en esa línea.
