@@ -208,6 +208,22 @@ class StoryboardValidatorTests(unittest.TestCase):
         ):
             self.assertFalse(validator.check_doi("10.1234/example"))
 
+    def test_url_check_accepts_primary_http_response(self):
+        with mock.patch.object(validator.urllib.request, "urlopen", return_value=FakeResponse()):
+            self.assertTrue(validator.check_url("https://example.org/primary-source"))
+
+    def test_url_check_rejects_non_http_scheme(self):
+        self.assertFalse(validator.check_url("file:///etc/passwd"))
+
+    def test_check_doi_flag_checks_url_when_source_has_no_doi(self):
+        with mock.patch.object(validator, "check_url", return_value=False):
+            errors, _ = validator.validar(
+                str(self.storyboard_path),
+                doi=True,
+                structural_only=True,
+            )
+        self.assertTrue(any("URL de fuente no confirmada por HTTP" in error for error in errors))
+
 
 class FakeResponse:
     status = 200
