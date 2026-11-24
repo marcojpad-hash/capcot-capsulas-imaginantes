@@ -40,7 +40,12 @@ El storyboard declara intención sonora, no archivos. Cada escena tiene ambiente
 ## QA narrativo previo al handoff
 Aplicar obligatoriamente `docs/QA_NARRATIVO_EN_FRIO.md`: un revisor distinto del redactor oculta título, resumen, arco y notas y lee solo la narración concatenada. Registra siete checks, score y flags. Solo PASS (>=85, siete checks true, flags vacíos) permite entrar a `cola/entrada/`. Sin revisión independiente, FAIL. El validador estructural no sustituye esta lectura.
 
-## Validación
-7–9 escenas; 170–235 palabras; 75–90 s con cortinilla; gancho ≤6 palabras; `narrative_contract` completo; arco completo; cierre exacto; voz correcta; mapa y dato/gráfico con fuente; source_ids válidos; estilo y prompt_base exactos; sin rutas de assets; publicación pendiente de Grok; `narrative_qa` PASS.
+## Validación estructural y QA independiente
+
+- **Investigador / borrador en `proyectos/`:** ejecutar `python3 scripts/validar_storyboard.py proyectos/<project_id>/storyboard.json --structural-only`. Comprueba estructura, duración, palabras, escenas, fuentes por escena, mapa, dato/gráfico, voz, estilo y ausencia de assets. No exige ni evalúa `narrative_qa`; no autoriza promoción.
+- **Auditor / handoff:** ejecutar el modo completo, que exige `narrative_qa` PASS. Añadir `--check-doi` para verificar DOI con Crossref y fallback `doi.org`; si la fuente no declara DOI, se comprueba su URL primaria por HTTP. Si la compuerta no confirma, no se promueve.
+- `--structural-only` y QA narrativo son compuertas independientes. El investigador no crea ni simula `narrative_qa`.
+
+**Checklist estructural:** 7–9 escenas; 170–235 palabras; 75–90 s con cortinilla; gancho ≤6 palabras; `narrative_contract` completo; arco completo; cierre exacto; voz correcta; mapa y dato/gráfico con fuente; source_ids válidos; estilo y prompt_base exactos; `approved_assets=[]`; `export.render_status=NOT_GENERATED`; sin rutas de assets; publicación pendiente de Grok. QA narrativo PASS y DOI/URL confirmado se evalúan en sus compuertas separadas antes del handoff.
 
 Plantilla: \`templates/storyboard_vertical.template.json\`. Validador: \`scripts/validar_storyboard.py\`.
