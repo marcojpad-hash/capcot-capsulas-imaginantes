@@ -658,3 +658,11 @@ La relectura del árbol completo en HEAD `6577868ea826703fa512a2831e5e5ee7c19c6c
 
 ### Cierre de este corte
 - Sin promociones, redispatch, cambios en `main`, `data/*.json`, `cola/estado`, secretos, permisos o workflows; sin generación de medios ni consumo de créditos. Los dos storyboards del 23 siguen FAIL/82 y fuera de cola.
+
+## Corrección del auditor de snapshots — 2026-11-23 18:18 CDMX
+
+- Se detectó un defecto en `scripts/auditar_snapshots_programacion.py`: el bloque `colisiones_horario_mismo_publishAt` estaba fuera del bucle por archivo y solo procesaba el último `miniaturas_auditoria_*.json`. Con varios snapshots, las colisiones de los anteriores podían desaparecer del cálculo.
+- Corrección en commit `6f74591a184a4564826cc70f34d2a73869f7421c`: el bloque de colisiones ahora se procesa dentro del bucle de cada snapshot. Prueba de regresión añadida en `tests/test_auditar_snapshots_programacion.py` (commit `25653914aeb489baefe28da4512bbf46a5f98c68`): dos snapshots distintos deben producir cuatro ocupaciones y conflictos 07:00 y 17:00.
+- Verificación: lectura de vuelta de ambos archivos; CodeQL PR #3 run `45296045189` terminó `success`. Un harness local mínimo del recorrido por snapshots produjo 4 registros y 2 conflictos (`07:00`, `17:00`).
+- Límite de verificación: el conjunto `unittest` del repositorio no se ejecutó; no hay workflow de pruebas para este archivo y no se disparó ningún workflow manual. CodeQL acredita análisis estático/sintaxis, no el comportamiento completo de la suite.
+- No se modificaron `data/*.json`, snapshots, `main`, colas, programación ni workflows.
