@@ -376,3 +376,35 @@ Se releyeron las copias de proyecto y cola en main:
 - `handoffs/grok_inbox/2026-11-24_serie_cuantica_evolucion.json`: `status=pending`, receipt `repo-2026-11-24_serie_cuantica_evolucion-3f9c18520fc6`, asociado a Issue #1066.
 - `handoffs/grok_done/` devuelve 404. No existe evidencia de cierre de ninguno de los dos handoffs; los marcadores `pending` no son acuses.
 - El marcador heredado `handoffs/grok_inbox/2026-11-09_dato-robot-ensambla-orbita.json` también conserva `status=pending`; su nota declara que faltan frames. Las rutas consultadas `proyectos/<id>/programacion.json` y `salidas/<id>/` devolvieron 404. No se infiere producción ni publicación a partir de ese marcador.
+
+
+---
+
+## Corte operador único — 2026-11-24, 14:00 CDMX
+
+### CAPCOT — corrección de validador y verificación
+- **EJECUTADO:** `scripts/validar_storyboard.py` ahora rechaza booleanos como lat/lon, RA/Dec y bounds (Python trata `bool` como subclase de `int`); centraliza `validar_bounds_mapa`; consulta solo hosts HTTPS fijos `api.crossref.org` y `doi.org`, usa el contexto TLS predeterminado y no sigue redirecciones del resolvedor.
+- **EJECUTADO:** se añadieron regresiones para coordenadas booleanas, bounds, DOI inválido, TLS verificado y fallback a doi.org. Commits de la rama: validador `08d5cc016d69c59b5ad1f0aae0b2e3dbb50e14c3`; pruebas `05be0c168e312d605e032909b0b7803b7f325136`.
+- **VERIFICADO por lectura de vuelta:** los dos archivos contienen los cambios. Nueve pruebas aisladas de la lógica copiada del validador pasaron en Python. Esto no equivale a ejecutar el archivo completo de tests del repositorio.
+- **CI VERIFICADO:** `validar-kuroshio` run [#45477532530](https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/actions/runs/45477532530), SUCCESS sobre el commit del validador `08d5cc0`; ejecutó el validador de Kuroshio. El commit posterior que añadió los tests `05be0c1` no quedó incluido en ese run; suite unitaria completa **PENDIENTE**.
+- PR #15 continúa OPEN y no mergeable; su corrección quedó portada directamente a la rama de trabajo. PR #3 continúa OPEN/DRAFT, 706 archivos y no mergeable. No se hizo merge ni se cerró ningún PR.
+- Semgrep run [#45474972177](https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/actions/runs/45474972177): 37 hallazgos bloqueantes; el log no incluye ubicaciones individuales y no se publicó SARIF (artifacts=[]). No se aplicaron cambios a ciegas.
+- Gitleaks run [#45474974235](https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/actions/runs/45474974235): SUCCESS, sin hallazgo de secreto en el commit escaneado.
+- Worker run [#45447043932](https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/actions/runs/45447043932): SUCCESS, log indica que no encontró trabajo en cola.
+- No se disparó el workflow de Grok ni se envió payload.
+
+### CAPCOT — inventario main y auditoría nueva
+- Main HEAD verificado: `6bce6166d424a8a793a81e1f44cbc71031c88462`. La comparación desde `4860fa4` solo cambió `data/endscreens_rotacion.json`; no aparecieron storyboards nuevos después de ese commit.
+- Se corrigió el conteo de publicaciones del control anterior: `data/publicaciones.json` tiene **62**, `data/rotacion.json` **39**, `data/cola.json` **0**. El conteo previo de 52 publicaciones era incorrecto.
+- Se auditó el nuevo paquete de main: nueve proyectos rehechos del 25–29 nov. La auditoría en frío externa, los siete checks, scores, defectos estructurales, programación preexistente, 404 de `cola/estado` y medios no verificables quedaron en [AUDITORIA_MAIN_REHECHOS_25.md](2026-11-24_AUDITORIA_MAIN_REHECHOS_25.md). No se promovió ninguno.
+- Los nueve rehechos ya tienen `programado_CDMX`, IDs de YouTube y programación TT/FB en `data/rehechos_2026-11-22.json`: **PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR**. Los horarios 10:00/15:00 están fuera de las ventanas vigentes; no se cancelaron ni reprogramaron. Los MP4/portadas que el registro ubica en workspace no están verificables en el árbol GitHub.
+- `2026-11-24_yo-soy-sam` ya tiene publicación YT/TT/FB, pero carece de storyboard/fuentes y comparte 07:00 con `purpura-no-piedras`: **PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR**; medio no verificable en repo; además está fuera de la línea editorial de Datos y ociosidades.
+- `2026-11-24_magnetismo-p-wave-eusi` tiene copia anidada en `cola/entrada/`, programación 17:15 y nota de que falta montar MP4. El selector del workflow solo toma JSON plano raíz; `cola/estado` dio 404. Queda **NOT_DISPATCHABLE**, **RECEPCION_GROK_NO_CONFIRMADA**, **PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR** y **MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO**.
+- Se verificaron colisiones de slots 24–28 nov. 24: 07:00 (Yo soy Sam/Púrpura) y 17:00 (Pollo/Vomitorium); 25: 07:00; 26: 17:00; 27: 07:00; 28: 17:00. Los días 25–28 tienen seis horas ocupadas (07:00, 10:00, 13:30, 15:00, 17:00, 19:00) frente a máximo cinco; el slot fijo 23:30 está reservado pero no tiene proyecto individual identificado. El 29 tiene cinco horas ocupadas.
+- Los 12 IDs del lote 5–7 nov conservan el último resultado documentado (2 PASS/10 FAIL); no hubo cambios de storyboard en la rama de trabajo desde la auditoría previa, así que no se repitió PASS ni se reescribió QA.
+- No se modificaron main, data/*.json, storyboards de main, cola, estados Grok, medios, programación ni publicaciones.
+
+### CAPCOT — radar, RSS y DOI
+- Se intentó de nuevo el acceso a feeds: Nature RSS devolvió `DisabledError`; ScienceDaily `Unsupported content-type: application/xml`; NASA `Unsupported content-type: application/rss+xml`; EurekAlert y Google Trends MX devolvieron `URL not accessible via this tool`. No se cambió el contenido de `data/*.json`.
+- La búsqueda oficial de respaldo mantiene cinco candidatos en el radar; dos DOI tienen verificación disponible (APS, 21-nov; Nature Astronomy, 20-nov). Los DOI de HK97, lunar y pecio romano no devolvieron una coincidencia exacta verificable en esta pasada; quedan **PENDING_SOURCE**. Las llamadas directas a Crossref API tampoco fueron accesibles desde esta interfaz.
+- No hay slot libre autorizado; no se creó storyboard nuevo ni se seleccionó candidato para producción.
