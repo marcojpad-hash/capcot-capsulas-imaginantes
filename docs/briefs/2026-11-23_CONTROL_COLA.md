@@ -666,3 +666,12 @@ La relectura del árbol completo en HEAD `6577868ea826703fa512a2831e5e5ee7c19c6c
 - Verificación: lectura de vuelta de ambos archivos; CodeQL PR #3 run `45296045189` terminó `success`. Un harness local mínimo del recorrido por snapshots produjo 4 registros y 2 conflictos (`07:00`, `17:00`).
 - Límite de verificación: el conjunto `unittest` del repositorio no se ejecutó; no hay workflow de pruebas para este archivo y no se disparó ningún workflow manual. CodeQL acredita análisis estático/sintaxis, no el comportamiento completo de la suite.
 - No se modificaron `data/*.json`, snapshots, `main`, colas, programación ni workflows.
+
+
+## Verificación local posterior — 2026-11-23, 20:00 CDMX
+
+- Se recuperaron desde GitHub los blobs exactos del auditor `scripts/auditar_snapshots_programacion.py` (SHA `06040b7d02e343d12a7407ea450ffe6499df3515`) y su prueba `tests/test_auditar_snapshots_programacion.py` (SHA `1c1f02ce5bf81cfbb922fe03249f55c910b200e9`).
+- Se ejecutó la prueba dirigida en una copia temporal aislada: `python -m unittest -v tests/test_auditar_snapshots_programacion.py`.
+- Resultado observado: **11 tests, OK, 0 fallos**, 0.010 s. Incluye lectura de colisiones de dos snapshots, deduplicación, conversión UTC/CDMX, discrepancia de timestamp, rehechos, directorio ausente/vacío, JSON inválido y preservación de bytes de las fuentes.
+- La ejecución no necesitó red ni acceso a GitHub desde el runtime local. El intento separado de clonar el repositorio falló literalmente con `fatal: unable to access 'https://github.com/marcojpad-hash/capcot-capsulas-imaginantes.git/': Could not resolve host: github.com`; se usaron los blobs recuperados mediante el conector GitHub y se conservaron los mismos SHA.
+- Alcance: prueba dirigida del auditor de snapshots únicamente; **no equivale a ejecutar la suite completa del repositorio ni a verificar DOI/Crossref**. No se ejecutó Actions ni se modificó ningún archivo `data/*.json`.
