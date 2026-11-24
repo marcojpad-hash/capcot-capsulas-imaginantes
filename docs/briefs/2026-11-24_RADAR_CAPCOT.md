@@ -387,3 +387,29 @@ Los tres artículos siguientes aparecen como manuscritos aceptados de *Monthly N
 - DOI resolver: confirmado para `stag2241`, `stag2244` y `stag2245` mediante las rutas DOI que redirigen a Oxford Academic.
 - Crossref REST no fue accesible desde el lector web durante este corte; la verificación se apoya en el resolvedor DOI y la ficha editorial primaria.
 - Las páginas de Oxford identifican los tres como *accepted manuscript*; pueden existir cambios menores en la versión final tipográfica.
+
+
+## Actualización de señal de tendencia — 2026-11-24 10:28 CDMX
+
+### Candidato adicional: prueba formal de la hipótesis de Riemann
+
+**Señal de demanda:** la vista HTML oficial de Google Trends México muestra hipótesis de Riemann con más de 1,000 búsquedas y actividad aproximada de seis horas. Es una señal de interés, no evidencia científica.
+
+**Observación primaria:**
+- El comunicado conjunto de Lean y Mathlib, fechado 21-nov-2026, afirma que la comunidad certifica tanto el enunciado como la prueba formal de la hipótesis de Riemann. Describe una biblioteca Lean de unos 17 millones de líneas, dependiente directamente de Mathlib, y verificaciones con el kernel oficial de Lean y varios comprobadores independientes.
+- La página del Clay Mathematics Institute todavía muestra el problema como Active.
+- Las reglas oficiales del premio exigen publicación en un medio calificante, al menos dos años desde esa publicación y aceptación general en la comunidad matemática antes de que el instituto considere una solución para el premio.
+
+**Lectura editorial:** el ángulo no debe ser «la IA resolvió y ya ganó el millón». La distinción útil es entre la certificación formal comunicada por Lean/Mathlib y el procedimiento separado del premio Clay. No afirmar que el premio fue otorgado ni que Clay ya cambió el estado del problema. Tampoco presentar la falta de una explicación humana completa como refutación de la comprobación formal.
+
+**Fuentes primarias / URLs comprobadas:**
+- Lean community, comunicado conjunto Lean FRO + Mathlib Initiative (21-nov-2026): https://leanprover-community.github.io/blog/posts/riemann-hypothesis/
+- Clay Mathematics Institute, ficha oficial de Riemann: https://www.claymath.org/millennium/riemann-hypothesis/
+- Clay Mathematics Institute, reglas oficiales: https://www.claymath.org/millennium-problems/rules/
+- Google Trends México, señal de búsqueda: https://trends.google.com/trending?geo=MX
+
+**Estado editorial:** CANDIDATO_RECOMENDADO_PARA_EVALUAR_EN_FUTURO_SLOT; no seleccionado y sin storyboard. El calendario 24–29 nov continúa sin cupo autorizado.
+
+### RSS y límites de lectura de este corte
+
+Se reintentó la lectura directa de los feeds de scripts/tendencias.py. La herramienta lectora no procesa los tipos XML: ScienceDaily (tres feeds), Phys.org, NASA, Nature y UNAM devolvieron errores de tipo de contenido o redirección; ESA devolvió 404; EurekAlert y SINC no fueron accesibles. Google Trends RSS México tampoco fue accesible. Se usó la vista HTML oficial de Trends como respaldo de señal, nunca como fuente científica. Los tres DOI MNRAS 10.1093/mnras/stag2241, stag2244 y stag2245 permanecen registrados como resueltos por DOI resolver en el corte anterior; Crossref REST no fue accesible en esta lectura.
