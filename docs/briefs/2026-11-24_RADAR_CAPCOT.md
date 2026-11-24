@@ -473,3 +473,63 @@ No se trató el fallo del lector como ausencia de novedades. Se usó búsqueda o
 - Frontiers — recubrimientos de pecio romano, DOI `10.3389/fmats.2026.1758862`: coincidencia exacta Crossref no verificada en esta pasada; **PENDING_SOURCE**.
 
 Las llamadas directas a `api.crossref.org` para los tres DOI pendientes devolvieron `URL not accessible via this tool`. No se marcaron como verificados por el mero hecho de aparecer en una propuesta. Sin slot autorizado, no se preparó ningún storyboard.
+
+
+## Revalidación de investigación — 24-nov-2026, 14:27 CDMX
+
+Se conserva el radar previo de cinco candidatos. Este corte agrega tres hallazgos publicados o difundidos entre el 18 y el 23 de noviembre; ninguno se selecciona ni se convierte en storyboard porque la parrilla de `main` ya está ocupada.
+
+### Candidatos nuevos
+
+**1. Ensamblaje molecular del complejo USP7–MAGEL2**
+- **Fecha/fuente primaria:** 23-nov-2026, *Communications Biology*, acceso abierto: https://www.nature.com/articles/s42003-026-11332-3
+- **DOI visible:** 10.1038/s42003-026-11332-3. La página primaria muestra el DOI y el resumen; la consulta directa a Crossref y al resolvedor doi.org no fue accesible desde esta sesión. Estado: `PENDIENTE_RESOLVEDOR`.
+- **Observación:** el estudio combina RMN, calorimetría de titulación isotérmica, cristalografía de rayos X y ensayos celulares. Describe una interacción bivalente: dos dominios de USP7 reconocen dos regiones conservadas de MAGEL2; además, identifica mutaciones de USP7 vinculadas al síndrome de Hao-Fountain que interrumpen la formación del complejo en células.
+- **Cálculo:** no se realizó cálculo propio.
+- **Inferencia:** puede contarse como un mecanismo de acoplamiento molecular, no como una demostración de tratamiento o resultado clínico.
+- **Recomendación:** conservar como candidato de biología molecular; no seleccionarlo hasta resolver DOI y disponer de slot.
+- **Límite:** los resultados descritos son estructurales y celulares; no equivalen a eficacia terapéutica en pacientes.
+
+**2. Plataforma de modelos emparejados para tumores sólidos pediátricos**
+- **Fecha/fuente primaria:** 23-nov-2026, *Nature Communications* 17, artículo 11715: https://www.nature.com/articles/s41467-026-79414-8
+- **DOI visible:** 10.1038/s41467-026-79414-8. El índice de la página primaria expone el resumen completo, pero la apertura directa devolvió `500 Redirected to idp.nature.com/authorize?response_type=cookie...`; Crossref y doi.org no fueron accesibles. Estado: `PENDIENTE_RESOLVEDOR`.
+- **Observación:** el artículo informa 135 organoides 3D, 82 cultivos primarios 2D y 20 líneas celulares nuevas; 365 experimentos de secuenciación de célula/núcleo único abarcaron más de 2.2 millones de células. Más de 3,000 viales quedaron criopreservados para distribución por Childhood Solid Tumor Network.
+- **Cálculo:** no se recalcularon los recuentos; se conservan como cifras del artículo.
+- **Inferencia:** el aporte es una infraestructura preclínica para estudiar heterogeneidad y probar hipótesis, no una terapia ni un resultado clínico.
+- **Recomendación:** candidato de investigación biomédica, retenido hasta resolver DOI y confirmar espacio editorial.
+- **Límite:** modelos preclínicos; no afirmar beneficio para pacientes ni tratamientos probados.
+
+**3. Modelo de movimiento del suelo para sismos lunares superficiales**
+- **Fuente localizada:** nota secundaria de Phys.org sobre el trabajo de Tessa Williams et al., *Seismological Research Letters* (2026): https://phys.org/news/2026-11-lunar-specific-ground-motion-seismic.html
+- **DOI citado por la nota:** 10.1785/0220260181. La búsqueda no localizó una página primaria utilizable; Crossref no fue accesible y doi.org devolvió `403 Forbidden`. Estado: `PENDING_SOURCE`.
+- **Observación:** solo se conserva como pista de investigación; no se trasladan cifras ni conclusiones de la nota secundaria a un storyboard.
+- **Cálculo:** ninguno.
+- **Inferencia:** el tema podría conectar geología lunar y diseño de futuras estaciones, pero falta contrastarlo con el artículo primario.
+- **Recomendación:** mantener en espera; no usar hasta localizar y verificar la fuente primaria.
+
+### RSS científicos y Google Trends — reintento de este corte
+
+No se ejecutó localmente `scripts/tendencias.py`; se leyeron sus diez URL y se intentó abrir cada feed. Errores exactos del lector web:
+
+| Feed | Resultado observado |
+|---|---|
+| ScienceDaily science | `400 Unsupported content-type: application/xml` |
+| ScienceDaily health | `400 Unsupported content-type: application/xml` |
+| ScienceDaily space_time | `400 Unsupported content-type: application/xml` |
+| Phys.org | `400 Unsupported content-type: text/xml` |
+| NASA News Release | `400 Unsupported content-type: application/rss+xml` |
+| Nature | `400 Unsupported content-type: application/rss+xml` |
+| ESA Space Science | `404 Not Found` |
+| EurekAlert | `URL ... is not accessible via this tool` |
+| Agencia SINC | `URL ... is not accessible via this tool` |
+| UNAM Global | `400 Unsupported content-type: application/rss+xml` |
+| Google Trends RSS México | `URL https://trends.google.com/trending/rss?geo=MX is not accessible via this tool` |
+
+**Respaldo oficial:** Trending Now de Google Trends México (últimas 24 h) sí abrió en HTML y mostró 184 tendencias. Las primeras 25 estaban dominadas por fútbol, entretenimiento, música y consultas generales; ninguna correspondía a ciencia, naturaleza, cocina, cuerpo o espacio. No se fuerza una tendencia ajena a la línea editorial.
+
+### Decisión de producción
+
+- Ninguno de estos tres candidatos queda seleccionado.
+- No se creó storyboard ni se repitió QA narrativo.
+- Los DOI no se marcan como resueltos; los dos artículos primarios quedan `PENDIENTE_RESOLVEDOR` y el modelo lunar `PENDING_SOURCE`.
+- No se generaron medios, placeholders ni publicaciones.
