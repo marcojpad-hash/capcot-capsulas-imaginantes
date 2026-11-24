@@ -1,1 +1,13 @@
-PLACEHOLDER_PROG
+{
+  "plataforma": ["youtube", "tiktok"],
+  "publish_at": "2026-11-24T23:15:00Z",
+  "ventana": "tarde",
+  "hora_cdmx": "2026-11-24 17:15",
+  "caption_tt": "Un metal común esconde magnetismo de onda p. Electrones con espines opuestos y cero imán neto. Nature, 18 nov 2026. #ciencia #fisica #magnetismo #datosyociosidades",
+  "titulo_yt": "El metal que esconde un magnetismo raro #Shorts",
+  "descripcion_yt": "Científicos encuentran evidencia de magnetismo de onda p en el siliciuro de europio (EuSi). Una espiral magnética entre 33 y 62 K reconstruye las bandas electrónicas sin magnetización neta.\n\nEstudio: Cheng et al., Nature (2026). DOI: 10.1038/s41586-026-11295-9\n\nTikTok: https://www.tiktok.com/@datosyociosidades\n\nDatos y ociosidades.",
+  "tags": ["ciencia", "fisica", "magnetismo", "p-wave", "EuSi", "Nature", "datosyociosidades", "Shorts"],
+  "privacidad": "private",
+  "estado": "programado_para_publicar",
+  "nota": "Falta montar mp4 con pipeline oficial (JorgeNeural + FFmpeg). Mj sube TikTok en el slot."
+}

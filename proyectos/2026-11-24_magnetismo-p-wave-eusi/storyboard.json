@@ -1,1 +1,132 @@
-PLACEHOLDER_STORYBOARD
+{
+  "project_id": "2026-11-24_magnetismo-p-wave-eusi",
+  "title": "El metal que esconde un magnetismo raro",
+  "language": "es-MX",
+  "aspect_ratio": "9:16",
+  "target_duration_seconds": 85,
+  "trend_source": {
+    "tipo": "noticia_cientifica",
+    "medio": "Nature / EurekAlert",
+    "url": "https://www.eurekalert.org/news-releases/1152840",
+    "estudio_doi": "10.1038/s41586-026-11295-9",
+    "fecha_publicacion": "2026-11-18",
+    "termino": "p-wave magnetism EuSi",
+    "fecha_consulta": "2026-11-24"
+  },
+  "estilo_id": "cubismo_collage",
+  "estilo_visual": "Cubismo con collage de periódico",
+  "voice": {
+    "engine": "edge-tts",
+    "voice_id": "es-MX-JorgeNeural",
+    "rate": "+7%",
+    "pitch": "-2Hz",
+    "pad_seconds": 0.3,
+    "modo_pausas": "continuo"
+  },
+  "sources": [
+    {
+      "id": "SRC-001",
+      "cita_corta": "Cheng et al. (2026). Evidence for p-wave magnetism in electronic band structure of metallic EuSi. Nature.",
+      "url": "https://doi.org/10.1038/s41586-026-11295-9",
+      "doi": "10.1038/s41586-026-11295-9",
+      "accessed": "2026-11-24",
+      "supports": ["evidencia de p-wave magnetism en EuSi", "fase espiral entre 33.4 y 62 K", "reconstrucción electrónica >100 meV"],
+      "ref_display": "Cheng et al. Nature 2026"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_001",
+      "arc": "hook_medias_res",
+      "duration_seconds": 10,
+      "narration": "Imagina un metal común que parece normal. Pero dentro esconde un magnetismo que no suma a cero.",
+      "on_screen_text": "¿Magnetismo invisible?",
+      "visual_description": "Fragmented geometric planes of a simple metal crystal with swirling newspaper collage fragments of scientific papers, ochre and slate blue.",
+      "image_prompt": "analytical cubism painting with newspaper collage fragments, fragmented geometric planes, ochre, slate blue and brown palette, textured oil paint, vertical 9:16, no text + simple metallic crystal of europium silicide with invisible magnetic spiral arrows in cubist style",
+      "source_ids": ["SRC-001"],
+      "asset_filename": "frames/scene_001.jpg",
+      "ambiente": "laboratorio",
+      "sfx": ["papel"]
+    },
+    {
+      "id": "scene_002",
+      "arc": "desarrollo",
+      "duration_seconds": 12,
+      "narration": "En el siliciuro de europio, entre 33 y 62 kelvin, los momentos magnéticos forman una espiral ordenada. No hay imán neto, pero los electrones sí lo sienten.",
+      "on_screen_text": "Espiral a 33-62 K",
+      "visual_description": "Cubist depiction of europium atoms in a spiral magnetic arrangement with red and blue spin arrows canceling out.",
+      "image_prompt": "analytical cubism painting with newspaper collage fragments, fragmented geometric planes, ochre, slate blue and brown palette, textured oil paint, vertical 9:16, no text + spiral of europium atoms with opposing spin arrows in geometric planes",
+      "source_ids": ["SRC-001"],
+      "asset_filename": "frames/scene_002.jpg",
+      "ambiente": "viento",
+      "sfx": ["reloj"]
+    },
+    {
+      "id": "scene_003",
+      "arc": "desarrollo",
+      "duration_seconds": 11,
+      "narration": "Investigadores del Max Planck usaron difracción de neutrones y ARPES. Encontraron reconstrucción de bandas de más de 100 milielectronvoltios.",
+      "on_screen_text": "Más de 100 meV",
+      "visual_description": "Cubist collage of laboratory instruments and neutron beams probing a crystal, with energy bands splitting.",
+      "image_prompt": "analytical cubism painting with newspaper collage fragments, fragmented geometric planes, ochre, slate blue and brown palette, textured oil paint, vertical 9:16, no text + laboratory with neutron diffraction and photoemission on a metal crystal",
+      "source_ids": ["SRC-001"],
+      "asset_filename": "frames/scene_003.jpg",
+      "ambiente": "laboratorio",
+      "sfx": ["motor"]
+    },
+    {
+      "id": "scene_004",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "Los electrones que van en direcciones opuestas llevan espines opuestos. Es magnetismo de onda p, raro en un metal tan simple.",
+      "on_screen_text": "Espines opuestos",
+      "visual_description": "Cubist view of electrons traveling opposite ways with opposite spins, spiral magnetic domains of 10 micrometers.",
+      "image_prompt": "analytical cubism painting with newspaper collage fragments, fragmented geometric planes, ochre, slate blue and brown palette, textured oil paint, vertical 9:16, no text + opposite electrons with opposite spins in spiral magnetic domains",
+      "source_ids": ["SRC-001"],
+      "asset_filename": "frames/scene_004.jpg",
+      "ambiente": "viento",
+      "sfx": ["papel"]
+    },
+    {
+      "id": "scene_005",
+      "arc": "cierre_historia",
+      "duration_seconds": 12,
+      "narration": "Publicado en Nature el 18 de noviembre de 2026. Un cristal limpio y estequiométrico que abre camino a espintrónica y materiales cuánticos.",
+      "on_screen_text": "Nature, 18 nov 2026",
+      "visual_description": "Cubist collage of the Nature journal cover mixed with the EuSi crystal and quantum spin textures.",
+      "image_prompt": "analytical cubism painting with newspaper collage fragments, fragmented geometric planes, ochre, slate blue and brown palette, textured oil paint, vertical 9:16, no text + Nature journal and europium silicide crystal with p-wave spin texture",
+      "source_ids": ["SRC-001"],
+      "asset_filename": "frames/scene_005.jpg",
+      "ambiente": "mercado",
+      "sfx": ["campanas"]
+    },
+    {
+      "id": "scene_006",
+      "arc": "reflexion_o_pregunta",
+      "duration_seconds": 10,
+      "narration": "¿Qué otros materiales esconden propiedades cuánticas que aún no vemos? Esto fue Datos y ociosidades.",
+      "on_screen_text": "¿Qué más escondemos?",
+      "visual_description": "Cubist open question with fragmented metal pieces floating into a question mark of newspaper scraps.",
+      "image_prompt": "analytical cubism painting with newspaper collage fragments, fragmented geometric planes, ochre, slate blue and brown palette, textured oil paint, vertical 9:16, no text + fragmented metal pieces forming a question mark over a crystal",
+      "source_ids": ["SRC-001"],
+      "asset_filename": "frames/scene_006.jpg",
+      "ambiente": "viento",
+      "sfx": ["pluma"]
+    }
+  ],
+  "cortinilla_fuentes": {
+    "duration_seconds": 6,
+    "titulo": "Fuentes",
+    "aviso": "Imágenes generadas con IA. Voz sintética. Audio sintetizado.",
+    "firma": "Datos y ociosidades · @datosyociosidades"
+  },
+  "export": {
+    "filename": "capsula.mp4",
+    "resolution": "1080x1920",
+    "fps": 30,
+    "loudness_lufs": -14
+  },
+  "estructura": "historia",
+  "serie": "Datos y ociosidades",
+  "titulo": "Magnetismo que no suma"
+}
