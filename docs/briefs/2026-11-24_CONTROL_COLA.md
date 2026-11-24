@@ -137,3 +137,10 @@ Los estados QA son los ya registrados; no se repitió una revisión PASS ni se r
 ### Resultado del corte
 
 No se creó storyboard, no se registró narrative_qa, no se promovió ni redispatchó contenido, no se disparó workflow, no se generaron medios y no se consumieron créditos. Permanecen sin modificación main, `data/*.json`, secretos, permisos, estados Grok y decisiones editoriales.
+
+
+## Revalidación RSS/Trends vinculada al control — 2026-11-24 06:27 CDMX
+
+- Se reintentaron los 10 RSS científicos y Google Trends RSS México; los XML devolvieron errores de content-type/404/no accesible, documentados con detalle en `2026-11-24_RADAR_CAPCOT.md`.
+- El respaldo HTML oficial de Trends mostró 174 tendencias en 24 horas; la primera página no aportó tema admisible. No se añadió candidato ni se seleccionó un tema por fuerza.
+- Radar actualizado y releído en feature: commit `aebbcddb81c9bca1d087bd4d0d8853caec04cc3b`, blob `b3e2d90c19c4c0715543add4dfff4bd70c13533f`. Sin storyboard, sin QA narrativo y sin promoción.
