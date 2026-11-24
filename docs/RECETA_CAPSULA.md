@@ -99,12 +99,12 @@ Imágenes generadas con IA · voz sintética · audio sintetizado.
 Suscríbete: @datosyociosidades
 TikTok: https://www.tiktok.com/@datosyociosidades
 
-#DatosYOciosidades #Shorts #datos #ciencia #difusión #difusióncientífica #ia #<Tema> (hasta 4 de tema)
+#tema1 #tema2 #tema3 #sabiasque #Shorts
 ```
-Título YouTube = título + « #Shorts» (≤100 caracteres, sin `<` `>`; en URLs se codifican %3C/%3E). Descripción ≤5000 bytes; tags ≤500 caracteres.
-**YouTube** hashtags: `#DatosYOciosidades #Shorts #datos #ciencia #difusión #difusióncientífica #ia` + hasta 4 del tema.
-**TikTok** (Mj 24-oct-2026): **máximo 5 hashtags** por caption, elegidos por alcance. Fijos de alto alcance: `#aprendeentiktok #sabiasque #ciencia #divulgacioncientifica` + **1 del tema** (p. ej. `#abejas`). No gastar slots en marca (`#DatosYOciosidades` va en el texto del caption). Fuentes de priorización: estudios ES (aprendeentiktok ~78.9B, sabiasque ~28.4B, ciencia ~9.7B) y Toklytics 2026.
-**Caption TikTok** (≤2200): gancho + resumen (`"resumen"` opcional en el storyboard) + «Fuentes en YouTube @datosyociosidades» + esos 5 hashtags.
+Título YouTube (Mj 24-nov-2026): gancho de Short y, si se puede, de búsqueda (pregunta, mito «NO» o nombre/entidad conocida; escena clara tipo «El/La X que Y»). Sin jerga ni apellido suelto. Añadir « #Shorts» al final solo si cabe en 100 caracteres; nunca recortar a «#Short». Sin hashtags temáticos en el título. Sin `<` `>`; en URLs se codifican %3C/%3E. Descripción ≤5000 bytes; tags ≤500 caracteres.
+**YouTube** hashtags: **3 a 5 del tema** + `#sabiasque` + `#Shorts`. `#ia` / `#inteligenciaartificial` solo si el dato va de IA. Sin pack fijo (`#datos #difusión #difusióncientífica #DatosYOciosidades`) y sin camelcase de frase.
+**TikTok** (Mj 17-nov y 24-nov-2026): **4 a 5 hashtags**, sin `#Shorts` y **sin mencionar YouTube**. Por defecto: `#aprendeentiktok #sabiasque #ciencia #divulgacioncientifica` + **1 del tema** (p. ej. `#abejas`). No gastar slots en marca.
+**Caption TikTok** (≤2200): gancho + resumen (`"resumen"` opcional en el storyboard) + esos 4–5 hashtags. Las fuentes van en el perfil o en un comentario fijado, no en el caption.
 Publicación automática solo vía `capsula_diaria.py --publicar` cuando QA pasa. Máximo 3 al día (2 propias + 1 externa por cola/, ver docs/FLUJO_EXTERNO.md), en ventanas distintas; ningún tema repetido el mismo día (data/temas_del_dia.json).
 
 ## 7. (Eliminado) Versión para la voz de Mj

@@ -22,7 +22,7 @@ Fuente de verdad: docs/PLAN_MAESTRO_AUTOMATICO.md. Este draft = procedimiento pr
   + sidechain ducking → música ~22–24 dB bajo la voz.
 - **Cortinilla final 6 s:** Fuentes (cita corta + DOI/ref_display), aviso IA/voz/audio, firma del canal.
 - **Estilo visual:** distinto en cada cápsula; rotación con scripts/rotar_estilo.py (docs/ESTILOS_VISUALES.md).
-- **Publicación:** metadata.json (descripción + fuentes + hashtags + enlace al TikTok existente de Mj vía CAPCOT_TIKTOK_HANDLE) generado por scripts/metadata.py.
+- **Publicación:** metadata.json (descripción + fuentes + hashtags + enlace al TikTok existente de Mj vía CAPCOT_TIKTOK_HANDLE) generado por scripts/metadata.py. Títulos y hashtags según la regla del 24-nov-2026 en docs/RECETA_CAPSULA.md (pregunta / mito NO / nombre conocido; YT: 3–5 temas + #sabiasque + #Shorts; TikTok: 4–5, sin #Shorts y sin mencionar YouTube).
 
 ## Requisitos (instalados en el box)
 python3, ffmpeg/ffprobe, `pip install edge-tts pillow requests`. Voz: es-MX-JorgeNeural +8 %.

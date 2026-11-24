@@ -79,19 +79,28 @@ def render(out,lang):
     if lang=='es': subprocess.run(['ffmpeg','-y','-v','error','-i',mp4,'-frames:v','1','-q:v','2',out+'/portada.jpg'])
     else: subprocess.run(['ffmpeg','-y','-v','error','-i',mp4,'-frames:v','1','-q:v','2',out+'/portada_en.jpg'])
     return r.returncode, r.stdout.strip().splitlines()[-1:] , q.stdout
+def yt_tt_hashtags(raw):
+    temas=[h for h in (raw or []) if h.lower() not in ('#shorts','#short','#sabiasque')]
+    yt=temas[:5]+(['#sabiasque'] if '#sabiasque' not in [x.lower() for x in temas] else [])+['#Shorts']
+    tt=temas[:5]
+    if len(tt)<4:
+        for f in ('#comida','#historia','#sabiasque','#curiosidades'):
+            if f.lower() not in {x.lower() for x in tt} and len(tt)<4: tt.append(f)
+    return yt, tt[:5]
 def metadata(s,out,cred):
     imgs=[]; [imgs.append(credit(cred[k])) for k in sorted(cred) if credit(cred[k]) not in imgs]
     srcs="\n".join(f"• {x['cita_corta']} {x['url']}" for x in s['sources'])
     hook_es=s['scenes'][0]['es'].split('. ')[0].rstrip('.')+'.'; hook_en=s['scenes'][0]['en'].split('. ')[0].rstrip('.')+'.'
+    yt_es, tt_es = yt_tt_hashtags(s['ht_es']); yt_en, tt_en = yt_tt_hashtags(s['ht_en'])
     d_es=(f"{hook_es}\n\n{s['title_es']}\n\nFuentes:\n{srcs}\n\nImágenes (Wikimedia Commons; dominio público o licencia libre; archivo original indicado):\n"
-          +"\n".join(f"• {c}" for c in imgs)+"\n\nVoz sintética generada con IA · música y ambiente sintetizados.\nSuscríbete: @datosyociosidades\nTikTok: https://www.tiktok.com/@datosyociosidades\n\n#Shorts "+" ".join(s['ht_es']))
+          +"\n".join(f"• {c}" for c in imgs)+"\n\nVoz sintética generada con IA · música y ambiente sintetizados.\nSuscríbete: @datosyociosidades\nTikTok: https://www.tiktok.com/@datosyociosidades\n\n"+" ".join(yt_es))
     d_en=(f"{hook_en}\n\n{s['title_en']}\n\nSources:\n{srcs}\n\nImages (Wikimedia Commons; public domain or free license; original archive noted):\n"
-          +"\n".join(f"• {c}" for c in imgs)+"\n\nSynthetic AI-generated voice · synthesized music and ambience.\nSubscribe: @datosyociosidadesEN\nSpanish channel: @datosyociosidades\nTikTok: https://www.tiktok.com/@datosyociosidades\n\n#Shorts "+" ".join(s['ht_en']))
-    m={'numero_lista':s['n'],'titulo_es':s['title_es'],'youtube_title_es':(s['title_es']+' #Shorts')[:100],'descripcion_es':d_es,
-       'caption_tiktok_es':f"{s['title_es']} "+" ".join(s['ht_es'][:4])+" #fyp",'hashtags_es':s['ht_es'],
-       'titulo_en':s['title_en'],'youtube_title_en':(s['title_en']+' #Shorts')[:100],'descripcion_en':d_en,
-       'caption_tiktok_en':f"{s['title_en']} "+" ".join(s['ht_en'][:4])+" #fyp",'hashtags_en':s['ht_en'],
-       'tags_es':[h[1:] for h in s['ht_es']]+['DatosYOciosidades','shorts'],'tags_en':[h[1:] for h in s['ht_en']]+['DatosYOciosidades','shorts'],
+          +"\n".join(f"• {c}" for c in imgs)+"\n\nSynthetic AI-generated voice · synthesized music and ambience.\nSubscribe: @datosyociosidadesEN\nSpanish channel: @datosyociosidades\nTikTok: https://www.tiktok.com/@datosyociosidades\n\n"+" ".join(yt_en))
+    m={'numero_lista':s['n'],'titulo_es':s['title_es'],'youtube_title_es':(s['title_es']+' #Shorts')[:100] if len(s['title_es'])+8<=100 else s['title_es'],'descripcion_es':d_es,
+       'caption_tiktok_es':f"{s['title_es']} "+" ".join(tt_es),'hashtags_es':yt_es,
+       'titulo_en':s['title_en'],'youtube_title_en':(s['title_en']+' #Shorts')[:100] if len(s['title_en'])+8<=100 else s['title_en'],'descripcion_en':d_en,
+       'caption_tiktok_en':f"{s['title_en']} "+" ".join(tt_en),'hashtags_en':yt_en,
+       'tags_es':[h[1:] for h in yt_es],'tags_en':[h[1:] for h in yt_en],
        'contenido_sintetico':True,'aviso_ia':'Voz sintética (IA). Marcar «contenido alterado o sintético» al subir.',
        'palabras_es':sum(len(x['es'].split()) for x in s['scenes']),'palabras_en':sum(len(x['en'].split()) for x in s['scenes']),
        'nota_guion':'Narración ES = guion verificado de Mj, tal cual (pendientes/abiertos/2026-11-22_guiones-semana-30nov-6dic.md). EN = traducción fiel.'}

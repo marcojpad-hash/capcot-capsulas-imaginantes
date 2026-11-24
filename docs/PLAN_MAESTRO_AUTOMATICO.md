@@ -59,7 +59,7 @@ Fallo en cualquier compuerta → reintento (máx. 2) con la variable culpable (p
 - **Divulgación:** aviso "imágenes IA / voz sintética" en cortinilla; `is_aigc` (TikTok) y contenido sintético (YouTube).
 
 ## 6. Publicación
-- **YouTube:** Data API v3 `videos.insert` (OAuth de la cuenta del canal de Mj, una sola vez), `privacyStatus=public` o `publishAt`; título buscable + `#Shorts`; fuentes completas en la descripción.
+- **YouTube:** Data API v3 `videos.insert` (OAuth de la cuenta del canal de Mj, una sola vez), `privacyStatus=public` o `publishAt`; título con gancho (pregunta, mito «NO» o nombre conocido) + `#Shorts` si cabe; 3–5 hashtags de tema + `#sabiasque` + `#Shorts` en la descripción (regla Mj 24-nov-2026, ver docs/RECETA_CAPSULA.md); fuentes completas en la descripción.
 - **TikTok:** ~~Content Posting API en modo **upload/borrador** (llega al inbox; Mj publica con un toque) **o** un scheduler ya auditado (Buffer/Metricool/Later, por verificar). Direct Post solo tras auditoría (poco probable para uso propio). Fuentes en comentario fijado.~~ **Corrección 2026-10-24 (Mj): no se crea cuenta nueva de TikTok; no se publica en TikTok desde el sistema. Cada descripción de YouTube enlaza al TikTok existente de Mj (`CAPCOT_TIKTOK_HANDLE`, handle pendiente). TikTok desactivado por defecto en publicar.py.**
 
 ## 7. Ciclo de métricas (semanal, domingo)
