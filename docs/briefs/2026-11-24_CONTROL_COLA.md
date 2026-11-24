@@ -269,3 +269,52 @@ Este corte **supersede el conteo inicial de 24-nov 5/5** que aparece en una secc
 - En main HEAD a450e627, data/auditoria_hashtags_titulos_2026-11-24.json conserva un valor con patrón de credencial en línea 46. Gitleaks #45414450492 terminó FAILURE. No se reproduce el valor.
 - Semgrep #45412987352 terminó FAILURE con 37 hallazgos bloqueantes.
 - No se modificaron main, data/*.json, secretos, permisos, programación, salidas ni estados Grok.
+
+
+## Actualización de main posterior al corte 10:28 — 2026-11-24 10:40 CDMX
+
+### Nuevo paquete de 24-nov, solo lectura
+
+- main avanzó a HEAD 0c5374e692a461b55a545c7a0cf5d12a616dbc88 mediante el commit «Paquete 2026-11-24_magnetismo-p-wave-eusi ... 17:15 CDMX».
+- Añadió el mismo storyboard a proyectos/ y a cola/entrada/ en un directorio anidado. La cola main pasa de 32 a **33 directorios**. La copia de proyecto y la de cola tienen el mismo blob SHA.
+- programacion.json declara publish_at 2026-11-24T23:15:00Z / 17:15 CDMX, YouTube y TikTok, estado programado_para_publicar. La nota dice que falta montar el MP4. Esto es una programación documental previa, no prueba de que Studio tenga el video programado.
+- No existe ESTADO_EJECUCION.md, cola/estado/<id>.json, salida ni copia en bloqueados. Recepción Grok no confirmada.
+- El workflow solo acepta JSON plano directamente bajo cola/entrada/*.json; este paquete está anidado. NOT_DISPATCHABLE. Por tener programación previa y copia en cola: PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR. Por faltar MP4 en el árbol: MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO.
+- El paquete añade **una ocupación planificada** a las ocho ocupaciones ya verificadas del 24-nov: 9/5 planificadas. No afirmo que las nueve estén confirmadas en Studio. El slot 17:15 está dentro de la ventana tarde, pero no es el mismo slot_local que 17:00; no se marca colisión exacta entre ramas. Sí aumenta la sobrecapacidad diaria.
+- El compare actual entre main 0c5374e y feature 2dfd7c5 está diverged: feature 1370 commits ahead y 571 behind. No sincronizar ni integrar.
+
+### QA en frío — magnetismo p-wave / EuSi
+
+Lectura independiente realizada sobre la narración concatenada únicamente, sin título, resumen, arco, notas ni narrative_contract. El DOI 10.1038/s41586-026-11295-9 resuelve a la ficha primaria de Nature, publicada el 18-nov-2026; el artículo respalda la fase espiral 33.4–62 K, la reconstrucción electrónica >100 meV y la señal spin-ARPES de textura p-wave.
+
+Registro de auditoría de esta pasada (no escrito en main por la regla SOLO_CONSULTA):
+
+- status: FAIL
+- score: 25
+- review_basis: lectura_en_frio_solo_narracion
+- pregunta_central_reconstruible: false
+- apertura_in_medias_res: false
+- progresion_por_escena: false
+- transiciones_causales: false
+- giro_cientifico_explicado: true
+- limite_evidencia_explicito: false
+- payoff_cierre_apertura: false
+- critical_flags: GANCHO_DEFINICIONAL; STAKES_NO_EXPLICADOS; PROGRESION_NO_DRAMATICA; TRANSICIONES_CAUSALES_AUSENTES; LIMITE_EVIDENCIA_AUSENTE; PAYOFF_NO_PAGA_APERTURA; LONGITUD_Y_ESCENAS_FUERA_DE_CONTRATO.
+
+Comprobaciones estructurales:
+- 6 escenas y 121 palabras; contrato exige 7–9 escenas y 170–235 palabras.
+- target_duration_seconds declara 85, pero 121 palabras a 120–140 ppm equivalen aproximadamente a 52–61 s de voz; sumando 6 s de cortinilla, el total estimado es 58–67 s, no 85. Es una estimación, no duración medida.
+- Las seis escenas carecen de dramatic_beat, scene_function, causal_bridge_from_previous, question_state, reason_to_continue y new_information.
+- narrative_contract y narrative_qa ausentes.
+- map y prompt_base ausentes.
+- approved_assets ausente; export.filename está presente y export.render_status no está declarado. Ambos contradicen el contrato de preproducción.
+- Voz es-MX-JorgeNeural, +7%, -2Hz: coincide con el perfil solicitado.
+- No se encontraron medios montados; programacion.json indica que falta el MP4.
+
+No se modificó main ni el paquete. El resultado no autoriza publicación, promoción ni redispatch.
+
+### Seguridad posterior al nuevo commit
+
+- Gitleaks #45439255464 terminó SUCCESS sobre el último commit, pero la línea 46 del archivo de auditoría sigue conteniendo un valor con patrón de credencial. El éxito del escaneo del último commit no elimina la exposición ni limpia el historial.
+- Semgrep #45439255716 terminó FAILURE.
+- No se revocaron secretos ni se alteraron datos.
