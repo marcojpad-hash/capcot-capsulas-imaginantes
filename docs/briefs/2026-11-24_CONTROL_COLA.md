@@ -368,3 +368,11 @@ Se releyeron las copias de proyecto y cola en main:
 - El snapshot de alineación registra 2 IDs publicados a las 07:00, 1 ID programado a las 17:00 y 5 IDs privados programados en 13:30, 15:00, 17:00, 19:00 y 23:30: **8 IDs existentes**. El paquete EuSi añade un noveno registro planificado a las 17:15. Es una sobrecapacidad documental de 9 frente al límite 5; no equivale a 9 confirmaciones en vivo de Studio.
 - Issues [#1065](https://github.com/marcojpad-hash/agente-cero-costo/issues/1065) y [#1066](https://github.com/marcojpad-hash/agente-cero-costo/issues/1066) siguen abiertos. Los archivos del bus tienen versión 8 y tipo `indicacion`; no son recibos de ejecución. No se encontró confirmación individual Grok ni marcador `grok_done` que permita cambiar el estado.
 - No se creó storyboard nuevo, no se promovió paquete, no se disparó dispatch, no se modificó main, `data/*.json`, programación, secreto, permiso, estado Grok ni medio.
+
+
+### Verificación de marcadores de handoff — 2026-11-24 12:00 CDMX
+
+- `handoffs/grok_inbox/2026-11-24_serie_thomas_harris.json`: `status=pending`, receipt `repo-2026-11-24_serie_thomas_harris-3f9c18520fc6`, asociado a Issue #1065.
+- `handoffs/grok_inbox/2026-11-24_serie_cuantica_evolucion.json`: `status=pending`, receipt `repo-2026-11-24_serie_cuantica_evolucion-3f9c18520fc6`, asociado a Issue #1066.
+- `handoffs/grok_done/` devuelve 404. No existe evidencia de cierre de ninguno de los dos handoffs; los marcadores `pending` no son acuses.
+- El marcador heredado `handoffs/grok_inbox/2026-11-09_dato-robot-ensambla-orbita.json` también conserva `status=pending`; su nota declara que faltan frames. Las rutas consultadas `proyectos/<id>/programacion.json` y `salidas/<id>/` devolvieron 404. No se infiere producción ni publicación a partir de ese marcador.
