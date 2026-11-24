@@ -166,55 +166,55 @@ def load_snapshots(main_data_dir, fecha=None):
                     "publishAt y hora_cdmx ausentes o no interpretables"
                 )
 
-    # Colisiones explícitas del snapshot: estos IDs pueden no aparecer en
-    # siguen_mal_sin_mp4_no_se_invento porque esa lista solo contiene videos con
-    # miniatura/archivo problemático. Omitir este bloque deja fuera publicaciones
-    # programadas y hace que la auditoría declare slots libres incorrectamente.
-    collisions = raw.get("colisiones_horario_mismo_publishAt") or []
-    if not isinstance(collisions, list):
-        errors.append(f"{path}: colisiones_horario_mismo_publishAt no es una lista")
-    else:
-        for collision_index, collision in enumerate(collisions):
-            if not isinstance(collision, dict):
-                errors.append(
-                    f"{path}#colisiones_horario_mismo_publishAt[{collision_index}]: debe ser objeto"
-                )
-                continue
-            videos = collision.get("videos")
-            if not isinstance(videos, list) or len(videos) < 2:
-                errors.append(
-                    f"{path}#colisiones_horario_mismo_publishAt[{collision_index}]: "
-                    "se requieren al menos dos videos"
-                )
-                continue
-            for video_index, video in enumerate(videos):
-                if not isinstance(video, dict) or not video.get("yt_id"):
+        # Colisiones explícitas del snapshot: estos IDs pueden no aparecer en
+        # siguen_mal_sin_mp4_no_se_invento porque esa lista solo contiene videos con
+        # miniatura/archivo problemático. Omitir este bloque deja fuera publicaciones
+        # programadas y hace que la auditoría declare slots libres incorrectamente.
+        collisions = raw.get("colisiones_horario_mismo_publishAt") or []
+        if not isinstance(collisions, list):
+            errors.append(f"{path}: colisiones_horario_mismo_publishAt no es una lista")
+        else:
+            for collision_index, collision in enumerate(collisions):
+                if not isinstance(collision, dict):
                     errors.append(
-                        f"{path}#colisiones_horario_mismo_publishAt[{collision_index}]"
-                        f".videos[{video_index}]: falta yt_id"
+                        f"{path}#colisiones_horario_mismo_publishAt[{collision_index}]: debe ser objeto"
                     )
                     continue
-                video_id = video["yt_id"]
-                row = _record(
-                    project_id=f"yt:{video_id}",
-                    video_id=video_id,
-                    title=video.get("titulo"),
-                    publish_at=collision.get("publishAt"),
-                    local_hint=collision.get("hora_cdmx"),
-                    state=collision.get("estado"),
-                    source_file=(
-                        f"{path.name}#colisiones_horario_mismo_publishAt[{collision_index}]"
-                        f".videos[{video_index}]"
-                    ),
-                    source_kind="miniaturas_colision",
-                )
-                if row:
-                    records.append(row)
-                else:
+                videos = collision.get("videos")
+                if not isinstance(videos, list) or len(videos) < 2:
                     errors.append(
-                        f"{path}#colisiones_horario_mismo_publishAt[{collision_index}]"
-                        f".videos[{video_index}]: publishAt y hora_cdmx ausentes o no interpretables"
+                        f"{path}#colisiones_horario_mismo_publishAt[{collision_index}]: "
+                        "se requieren al menos dos videos"
                     )
+                    continue
+                for video_index, video in enumerate(videos):
+                    if not isinstance(video, dict) or not video.get("yt_id"):
+                        errors.append(
+                            f"{path}#colisiones_horario_mismo_publishAt[{collision_index}]"
+                            f".videos[{video_index}]: falta yt_id"
+                        )
+                        continue
+                    video_id = video["yt_id"]
+                    row = _record(
+                        project_id=f"yt:{video_id}",
+                        video_id=video_id,
+                        title=video.get("titulo"),
+                        publish_at=collision.get("publishAt"),
+                        local_hint=collision.get("hora_cdmx"),
+                        state=collision.get("estado"),
+                        source_file=(
+                            f"{path.name}#colisiones_horario_mismo_publishAt[{collision_index}]"
+                            f".videos[{video_index}]"
+                        ),
+                        source_kind="miniaturas_colision",
+                    )
+                    if row:
+                        records.append(row)
+                    else:
+                        errors.append(
+                            f"{path}#colisiones_horario_mismo_publishAt[{collision_index}]"
+                            f".videos[{video_index}]: publishAt y hora_cdmx ausentes o no interpretables"
+                        )
 
     for path in sorted(root.glob("rehechos_*.json")):
         raw = _read_json(path, errors)
