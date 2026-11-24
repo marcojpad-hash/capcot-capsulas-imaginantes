@@ -413,3 +413,39 @@ Los tres artículos siguientes aparecen como manuscritos aceptados de *Monthly N
 ### RSS y límites de lectura de este corte
 
 Se reintentó la lectura directa de los feeds de scripts/tendencias.py. La herramienta lectora no procesa los tipos XML: ScienceDaily (tres feeds), Phys.org, NASA, Nature y UNAM devolvieron errores de tipo de contenido o redirección; ESA devolvió 404; EurekAlert y SINC no fueron accesibles. Google Trends RSS México tampoco fue accesible. Se usó la vista HTML oficial de Trends como respaldo de señal, nunca como fuente científica. Los tres DOI MNRAS 10.1093/mnras/stag2241, stag2244 y stag2245 permanecen registrados como resueltos por DOI resolver en el corte anterior; Crossref REST no fue accesible en esta lectura.
+
+
+## Corte de investigación adicional — 2026-11-24 12:00 CDMX
+
+### Ingesta: RSS y respaldo de tendencias
+
+Se releyó `scripts/tendencias.py`; define feeds de ScienceDaily (ciencia, salud y espacio), Phys.org, NASA, ESA, Nature, EurekAlert, SINC y UNAM Global, además de Google Trends RSS México.
+
+- ScienceDaily (3 feeds): HTTP 400, `Unsupported content-type: application/xml`.
+- Phys.org: HTTP 400, `Unsupported content-type: text/xml`.
+- NASA y Nature: HTTP 400, `Unsupported content-type: application/rss+xml`.
+- ESA Space Science: HTTP 404, `Not Found`.
+- EurekAlert, SINC y Google Trends RSS México: URL no accesible mediante el lector.
+- UNAM Global: HTTP 400, `Unsupported content-type: application/rss+xml`.
+
+Estos son errores del lector web; **no se ejecutó el script Python** y no se atribuyen al origen RSS. Como respaldo, la vista HTML oficial de Google Trends México abrió y mostró 167 tendencias de las últimas 24 h. En los primeros 25 términos no apareció un candidato admisible de ciencia, naturaleza, cocina, cuerpo o espacio. La señal de Riemann documentada en el corte de 10:28 se conserva como señal histórica, no como tendencia actual confirmada en esta vista.
+
+### Cinco candidatos recientes — estado de fuente y rotación
+
+1. **La distribución de masas de agujeros negros podría incluir una población de supernovas fallidas.** Comunicado: 22-nov-2026; artículo primario en *Physical Review D*, publicado 10-nov-2026. DOI [10.1103/mnzq-w1b5](https://doi.org/10.1103/mnzq-w1b5), [ficha primaria APS](https://journals.aps.org/prd/abstract/10.1103/mnzq-w1b5). El artículo usa 153 observaciones GWTC-4.0; encuentra un pico alrededor de 10 masas solares y una caída compatible con cero al 90 % entre 12.0 y 16.1 masas solares. La subpoblación de agujeros negros de supernovas fallidas es una interpretación compatible, no una observación directa del mecanismo. El enlace DOI redirigió a la ficha editorial APS. **Estado:** fuente primaria y DOI por resolvedor verificados; no seleccionado por proximidad temática con cuásares, estrella dentro de estrella y púlsar recientes.
+
+2. **Una onda de choque del bar galáctico podría confundirse con parte del brazo Norma.** Comunicado de University of Sydney: 23-nov-2026. Artículo citado: Davis et al., *Nature Astronomy*, DOI [10.1038/s41550-026-03010-5](https://doi.org/10.1038/s41550-026-03010-5). El comunicado describe alineación de máseres con frentes de choque de simulaciones y formación estelar en una región donde los choques suelen inhibirla. El DOI redirigió a la pasarela de Nature no accesible (HTTP 500); no se obtuvo la ficha primaria. **Estado:** CANDIDATO / PENDING_SOURCE; no usar cifras ni mecanismo en storyboard hasta recuperar la fuente primaria.
+
+3. **Virus pequeños con proteínas HK97 podrían conectar evolutivamente virus y encapsulinas.** Comunicado de University of Miami: 23-nov-2026. Artículo citado: Aguilar et al., *Nature Communications*, DOI [10.1038/s41467-026-78136-1](https://doi.org/10.1038/s41467-026-78136-1). El comunicado presenta la bidireccionalidad evolutiva como modelo propuesto a partir de secuencias, estructura de proteínas y procápsides; las funciones metabólicas de algunas cápsides siguen siendo posibilidad, no demostración experimental. El DOI redirigió a la pasarela de Nature no accesible (HTTP 500). **Estado:** CANDIDATO / PENDING_SOURCE; la hipótesis no debe formularse como evolución demostrada.
+
+4. **Rocas del lado lejano lunar y cronología de impactos.** Comunicado de Curtin University: 24-nov-2026. Artículo citado: Zhang et al., *Science Advances*, DOI [10.1126/sciadv.aee8718](https://doi.org/10.1126/sciadv.aee8718). El comunicado sitúa los eventos fechados aproximadamente entre 4.33 y 1.13 mil millones de años y propone un descenso gradual de impactos, en lugar de un único episodio catastrófico. El DOI devolvió HTTP 403 al intentar llegar a la ficha de Science; no se verificó el artículo primario. **Estado:** CANDIDATO / PENDING_SOURCE; limitar cualquier interpretación al conjunto de muestras Chang'e-6 del lado lejano, no extrapolarlo como registro completo de toda la Luna.
+
+5. **Recubrimientos impermeables y polen en un naufragio romano de unos 2,200 años.** Comunicado de Frontiers: 24-nov-2026. Artículo primario en *Frontiers in Materials*, DOI [10.3389/fmats.2026.1758862](https://doi.org/10.3389/fmats.2026.1758862); publicado el 24-abr-2026, por lo que la novedad de este corte es el comunicado, no la fecha del artículo. Se analizaron diez muestras; se identificaron brea de pino y una mezcla con cera de abeja, y el polen ayudó a inferir varios lotes de aplicación/reparación. El DOI redirigió a la ficha primaria de Frontiers. **Estado:** fuente primaria y DOI por resolvedor verificados; ajuste editorial pendiente porque arqueología naval no está nombrada entre las categorías habituales de la serie.
+
+### Separación de estados y decisión
+
+- **Observación:** los cinco comunicados son recientes (22–24 nov); dos DOI redirigieron a fichas primarias accesibles (APS y Frontiers); tres no permitieron recuperar la ficha editorial.
+- **Cálculo:** no se calcularon magnitudes nuevas; las cifras citadas proceden de las fuentes, no de estimaciones propias.
+- **Inferencia:** el agujero negro y el bar galáctico compiten con una rotación astronómica reciente; la cápsula de virus ofrece mayor separación temática, pero carece de ficha primaria accesible; el naufragio tiene fuente primaria, pero su encaje editorial es dudoso.
+- **Recomendación:** no seleccionar ninguno en este corte. El 24-nov está sobreocupado (9 registros planificados frente al máximo 5) y el backlog 25–28 también excede el límite. No se crea storyboard, no se marca producción y no se convierte una fuente pendiente en `PASS`.
+
