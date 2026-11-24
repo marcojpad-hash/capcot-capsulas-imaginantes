@@ -103,3 +103,19 @@ Ninguno de los dos comandos incluyó `--check-doi`. Estos runs confirman la vali
 - Comprobación adicional del mismo job: `approved_assets=[]`, `export.render_status=NOT_GENERATED`; salida literal: `Expediente textual íntegro; medios no generados; publicación no autorizada.`
 - El run **no ejecutó `--check-doi`**. Por tanto, no acredita Crossref ni resolución DOI; el bloqueo DOI permanece.
 - Es una reejecución del mismo commit/archivos ya validados en el run #44951621909; no cambia el estado editorial ni autoriza promoción.
+
+
+
+## Revalidación CI — 24-nov-2026 (run #45477532530)
+
+- Workflow: `CAPCOT — validar preproducción Kuroshio`; run `45477532530`, job `138741609287`, resultado `success`.
+- Inicio: `2026-11-24T20:07:58Z`; finalización: `2026-11-24T20:08:16Z` (14:07:58–14:08:16 CDMX).
+- Rama: `feature/capcot-video-discovery-continuity`.
+- Commit ejecutado: `08d5cc016d69c59b5ad1f0aae0b2e3dbb50e14c3`.
+- Comando exacto: `python scripts/validar_storyboard.py proyectos/2026-11-18_dato-kuroshio-puente-atmosferico/storyboard.json`.
+- Resultado literal del validador: `OK`, salida 0. El paso adicional comprobó `production_mode=storyboard_only`, `approved_assets=[]` y `export.render_status=NOT_GENERATED`; salida literal: `Expediente textual íntegro; medios no generados; publicación no autorizada.`.
+- El comando no incluyó `--check-doi`; no acredita Crossref. El DOI `10.1038/s41561-026-02139-2` permanece `PENDIENTE_RESOLVEDOR`.
+- Comparación de blobs entre el commit ejecutado y la rama vigente: storyboard y `scripts/validar_storyboard.py` idénticos; `.github/workflows/validar-kuroshio.yml` idéntico. La validación aplica al contenido actual de este expediente.
+- El log no ejecutó `tests/test_validar_storyboard_textual.py`; no se declara suite de pruebas ejecutada.
+- `cola/estado/2026-11-18_dato-kuroshio-puente-atmosferico.json` sigue ausente: `RECEPCION_GROK_NO_CONFIRMADA`.
+- Estado conservado: `BORRADOR_EN_PROYECTOS_NO_APTO_PARA_PROMOCION`. No copiar a cola ni emitir handoff mientras el DOI siga pendiente.
