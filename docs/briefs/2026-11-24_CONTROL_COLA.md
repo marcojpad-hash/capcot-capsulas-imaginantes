@@ -410,3 +410,39 @@ Se releyeron las copias de proyecto y cola en main:
 - No hay slot libre autorizado; no se creó storyboard nuevo ni se seleccionó candidato para producción.
 
 - El cambio de main en `data/endscreens_rotacion.json` deja una asignación nueva marcada `pendiente_studio=true`; no se aplicó en YouTube Studio ni se realizó acción externa.
+
+
+## Revalidación del operador único — 24-nov-2026, 14:27 CDMX
+
+### Diferencias desde el corte anterior
+
+- `feature/capcot-video-discovery-continuity` estaba en HEAD `0343f45`. La comparación desde el corte anterior mostró cuatro commits de documentación; no cambiaron storyboards, cola, estados, medios ni `data/*.json`. Este run agregó el radar de investigación en commit `c09fe00a8f38eab110dc0a7a37e01bd8cea8b77e`.
+- `main` estaba en HEAD `269e0da`. La comparación con el corte anterior solo mostró `data/endscreens_rotacion.json`; no apareció un storyboard nuevo ni cambió la cola o la parrilla.
+- Se leyeron los 20 JSON de `data/` en la rama de trabajo como solo lectura. En `main` se releyeron horarios, publicaciones, rotación, miniaturas y plan semanal. No se escribió ningún JSON de datos.
+
+### Inventario, recepción y cola
+
+- La rama de trabajo conserva 90 storyboards en `proyectos/`; no hay storyboard nuevo desde el corte anterior.
+- `cola/entrada/` de la rama de trabajo conserva cero JSON planos y un único paquete anidado heredado, `2026-11-09_dato-robot-ensambla-orbita`. `cola/estado/` no existe. `cola/bloqueados/` conserva 47 entradas; `salidas/`, 59 entradas. `handoffs/grok_inbox/` contiene el marcador pendiente del robot y `handoffs/grok_done/` solo `.gitkeep`.
+- Se consultaron los doce IDs exactos del lote 5–7 nov definidos en `ajustes_entre_modelos/PARA_CHATGPT_5-7nov_PASS_auditor.md`. Los doce `cola/estado/<id>.json` devolvieron 404; se registra `RECEPCION_GROK_NO_CONFIRMADA` para cada uno. Se conserva el resultado de la última lectura fría: 2 PASS y 10 FAIL. No se repitió QA ni se promovió nada porque no cambió ninguna narración.
+- En `main`, `cola/entrada/` contiene 33 entradas. El paquete `2026-11-24_magnetismo-p-wave-eusi` ya estaba en la cola principal: su estado `cola/estado/2026-11-24_magnetismo-p-wave-eusi.json` devuelve 404 y no existe `ESTADO_EJECUCION.md`. El storyboard tiene 6 escenas, 121 palabras narradas y 65 s sumados en escenas frente a `target_duration_seconds=85`; contiene `asset_filename` en las seis escenas y `export.filename=capsula.mp4`, carece de `narrative_qa` y no cumple el contrato de preproducción. Clasificación: `NOT_DISPATCHABLE` y `PROCESSING_PREEXISTENTE_NO_REDISPATCHAR` por entrada heredada en main. No se editó ni movió porque main es solo consulta.
+- En `main/handoffs/grok_inbox/` hay dos paquetes con `status=pending`: `2026-11-24_serie_cuantica_evolucion` (Issue #1066) y `2026-11-24_serie_thomas_harris` (Issue #1065). Ambos Issues siguen abiertos; `handoffs/grok_done/` no existe en main y no hay recibo de cierre. No se disparó el webhook, no se enviaron payloads ni mensajes.
+- El inventario de `main/data/publicaciones.json`, `data/miniaturas_auditoria_2026-11-21.json` y `data/horarios.json` mantiene programación previa y colisiones para 24–28 nov. El plan semanal y los registros de publicación ocupan los slots; no se detectó una ventana libre para añadir un storyboard. No se canceló ni reprogramó nada.
+
+### Workflow, CI y PRs
+
+- La última ejecución de validación visible, run `45477532530`, terminó SUCCESS sobre el commit `08d5cc`, pero ejecutó `scripts/validar_storyboard.py --structural-only`: no ejecutó `--check-doi`, no acredita DOI y no corresponde al HEAD actual. No se disparó ningún workflow.
+- No hay ejecución reciente de `capcot-grok-dispatch.yml`; el último dispatch visible es del 1-nov y registró `Falta configurar GROK_WEBHOOK_URL`. Ese dato es histórico; el estado actual del secreto no se consultó. No se consultó ni se expuso ningún valor de secreto.
+- PR #3 continúa draft/no mergeable y abarca 707 archivos, incluidos JSON de datos; no se fusiona. PR #13 y PR #14 continúan abiertos y no hay una nueva lectura fría posterior a la última corrección narrativa. PR #15 continúa abierto/no mergeable; su cambio de validador no se portó porque no se ejecutaron sus pruebas. No se fusionó ni se modificó ningún PR.
+
+### Radar y decisión editorial
+
+- El corte adicional de investigación quedó registrado en `2026-11-24_RADAR_CAPCOT.md`, commit `c09fe00a8f38eab110dc0a7a37e01bd8cea8b77e`: dos artículos primarios de 23-nov (USP7–MAGEL2 y modelos pediátricos) con DOI visible pero resolución Crossref/doi.org pendiente, y un candidato lunar retenido como `PENDING_SOURCE` por falta de fuente primaria accesible.
+- Se intentaron las diez URL RSS definidas en `scripts/tendencias.py`; el lector web devolvió errores de tipo MIME (400), un 404 y dos URLs no accesibles. Google Trends RSS México tampoco abrió; su página HTML oficial sí mostró 184 tendencias y las primeras 25 no correspondían a la línea editorial. No se inventó respaldo ni se forzó un tema de tendencia.
+- No se creó storyboard, no se escribió `narrative_qa`, no se promovió a cola, no se generaron frames, audio, voz, video ni placeholders, y no se publicó ni programó.
+
+### Estado final del corte
+
+- **EJECUTADO:** lectura de fuentes de verdad, revalidación de ramas/colas/Issues/Actions, verificación de los doce estados 404 y actualización del radar de investigación.
+- **VERIFICADO:** commit del radar leído de vuelta; sin cambios de datos, storyboards ni estados Grok; slots ocupados y paquetes heredados identificados.
+- **PENDIENTE:** resolución de DOI para los dos artículos primarios; fuente primaria del candidato lunar; revisión narrativa independiente solo si cambia una narración; recepción Grok de los doce IDs y de los dos paquetes en main; decisión del propietario sobre los paquetes heredados de main.
