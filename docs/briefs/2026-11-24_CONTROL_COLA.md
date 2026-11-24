@@ -757,3 +757,9 @@ lote01-02-: `lote01-02-petroleo`
 lote01-03-: `lote01-03-balon-curva`
 lote01-04-: `lote01-04-tardigrado`
 lote01-05-: `lote01-05-chicxulub`
+
+### Inventario físico de medios en feature — verificación de árbol
+
+- El árbol feature contiene exactamente nueve archivos con extensiones de medio/subtítulo: un SRT (`cola/bloqueados/2026-10-28_mosquito-fruitless-audicion/CAPCUT_SUBTITULOS.srt`) y ocho PNG (`cola/bloqueados/2026-11-11_dato-ratas-topo-damaraland/frames/frame_01.png` a `frame_08.png`).
+- No hay MP4, MOV, MP3, WAV, JPG, portada ni audio en el árbol feature. Los ocho PNG y el SRT pertenecen a artefactos bloqueados; no son medios aprobados para ningún storyboard actual. No se cuentan placeholders, `README_FRAMES.md`, `.gitkeep`, `render.log` ni nombres de exportación como archivos de medio.
+- Cualquier `asset_filename`, `export.filename` o ruta de medio de los storyboards legacy que no coincide con esos nueve archivos queda como `MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO`. La existencia de medios del robot en main no se transfiere a feature.
