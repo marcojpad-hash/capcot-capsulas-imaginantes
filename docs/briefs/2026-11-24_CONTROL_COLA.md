@@ -613,3 +613,8 @@ Otros artefactos de proyecto/test/respaldo: 2026-11-xx_kids-flamencos-rosas_RESP
 - No se generaron cápsulas, frames, imágenes, voz, audio, video ni renders. No se publicaron contenidos, no se consumieron créditos, no se dispararon workflows ni se enviaron payloads.
 - No se modificaron data/*.json, storyboards, cola/estado, workflows, secretos, permisos ni main. No se movieron ni cancelaron publicaciones.
 - Únicos cambios en esta revalidación: este brief de control y la actualización documental de proyectos/2026-11-18_dato-kuroshio-puente-atmosferico/ESTADO_EJECUCION.md con el run #45477532530.
+
+
+### Corrección de procedencia de campos — robot orbital
+
+La revisión del sidecar exacto confirma que el video_id ZG4iQgmWrLI y el publishAt 2026-11-22T01:00:00Z proceden de data/publicaciones.json, no de programacion.json. programacion.json registra la programación del 21-nov 19:00 CDMX. data/publicaciones.json expresa privacidad “private→public (publishAt)”; metadata.json conserva privacyStatus=private. TikTok y Facebook figuran programados, sin IDs públicos. El archivo capsula.mp4 sí existe en main/cola/entrada con SHA 72d7ca5757a18b5d7a248503ac0e096dc0ac37ff y tamaño 25,795,339 bytes. El QA audiovisual es un arreglo de 21 checks; el registro de publicación informa 21/21 y 87.57 s. No se toma como narrative_qa ni como confirmación de que el video ya sea público.
