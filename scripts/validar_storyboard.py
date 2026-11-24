@@ -48,7 +48,7 @@ def check_doi(doi):
     if not isinstance(doi, str):
         return False
     doi = doi.strip()
-    if not re.fullmatch(r"10\\.\\d{4,9}/[^\\s?#\\\\]+", doi):
+    if not re.fullmatch(r"10\.\d{4,9}/[^\s?#\\]+", doi):
         return False
     encoded = urllib.parse.quote(doi, safe="/-._;()")
     status, _ = _https_status("api.crossref.org", "/works/" + encoded)
