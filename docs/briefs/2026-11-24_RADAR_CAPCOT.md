@@ -110,3 +110,38 @@ Se consultaron las diez URL definidas en `scripts/tendencias.py` y Google Trends
 ### Cupo y decisión
 - La evidencia de ocupación del 24-nov no cambió: cinco IDs para `MAX_POR_DIA=5`, con colisión a las 17:00. La política activa de `main/data/horarios.json` desde el 23-nov es 06:30–07:30 y 16:30–18:00, más el slot fijo 23:30; 13:00–14:30 sigue siendo prueba. El cupo diario ya está agotado.
 - No se creó storyboard ni entrada de cola. El candidato de plankton queda investigado, no seleccionado ni preparado. `data/*.json` y `main` permanecen solo lectura.
+
+## Revalidación de ingesta, resolvedor y cupo — 2026-11-24 04:00 CDMX
+
+### RSS científicos y Google Trends
+
+Se intentaron las diez URL definidas en `scripts/tendencias.py` y Google Trends RSS México. El lector no pudo ingerir los XML; errores exactos:
+
+| Fuente | Error observado |
+|---|---|
+| ScienceDaily ciencia | `400 Unsupported content-type: application/xml` |
+| ScienceDaily salud | `400 Unsupported content-type: application/xml` |
+| ScienceDaily espacio | `400 Unsupported content-type: application/xml` |
+| Phys.org | `400 Unsupported content-type: text/xml` |
+| NASA | `400 Unsupported content-type: application/rss+xml` |
+| ESA Space Science | `404 Not Found` |
+| Nature RSS | `400 Unsupported content-type: application/rss+xml` |
+| EurekAlert | `URL https://www.eurekalert.org/rss/news.xml is not accessible via this tool` |
+| SINC | `URL https://www.agenciasinc.es/rss is not accessible via this tool` |
+| UNAM Global | `400 Unsupported content-type: application/rss+xml` |
+| Google Trends RSS México | `URL https://trends.google.com/trending/rss?geo=MX is not accessible via this tool` |
+
+**Respaldo oficial:** se abrió la vista HTML de Google Trends México (`https://trends.google.com/trending?geo=MX`): 163 tendencias en la vista; las primeras 25 no aportaron un tema admisible para ciencia, naturaleza, cocina, cuerpo o espacio. No se forzó selección desde tendencias ajenas a la línea editorial.
+
+### Revalidación de candidatos
+
+- **Varroa / PLOS Biology:** se volvió a abrir la página primaria y se leyó el texto. El DOI `10.1371/journal.pbio.3004091` aparece en el artículo, pero Crossref REST devolvió `URL ... is not accessible via this tool`; `doi.org` devolvió `500 Redirected to https://journals.plos.org/plosone/doi?id=10.1371/journal.pbio.3004091`, destino no accesible. Se conserva `PENDIENTE_RESOLVEDOR`; la página primaria no sustituye Crossref/resolvedor.
+- **Plankton ecological complexity / Nature Communications:** el PDF editorial primario localizado en la revalidación del 23-nov sigue siendo la fuente de texto completo. DOI `10.1038/s41467-026-79817-7` continúa `PENDIENTE_RESOLVEDOR`; no se declara DOI resuelto.
+- **Glacial lakes / Nature Climate Change:** la página primaria no quedó accesible en esta revalidación; conserva `PENDING_SOURCE`.
+- **Grafito / Advanced Materials:** solo se conserva el registro bibliográfico de PubMed; sin lectura de la página primaria de Wiley, conserva `PENDING_SOURCE`.
+
+### Cupo y decisión
+
+- Ocupación de `main` consultada en solo lectura: 24-nov **5/5**; 25–28-nov **7/5** por día; 29-nov **5/5**. Las nueve reprogramaciones de `data/rehechos_2026-11-22.json` son procesamiento preexistente, no nuevos slots libres.
+- No se creó storyboard ni entrada de cola. No se creó `narrative_qa`, no se disparó workflow, no se generaron medios ni placeholders y no se consumieron créditos.
+- `data/*.json` y `main` permanecen solo lectura. Varroa y plankton siguen como candidatos investigados, no seleccionados ni preparados.
