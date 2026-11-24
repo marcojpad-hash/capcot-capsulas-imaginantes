@@ -145,3 +145,25 @@ Se intentaron las diez URL definidas en `scripts/tendencias.py` y Google Trends 
 - Ocupación de `main` consultada en solo lectura: 24-nov **5/5**; 25–28-nov **7/5** por día; 29-nov **5/5**. Las nueve reprogramaciones de `data/rehechos_2026-11-22.json` son procesamiento preexistente, no nuevos slots libres.
 - No se creó storyboard ni entrada de cola. No se creó `narrative_qa`, no se disparó workflow, no se generaron medios ni placeholders y no se consumieron créditos.
 - `data/*.json` y `main` permanecen solo lectura. Varroa y plankton siguen como candidatos investigados, no seleccionados ni preparados.
+
+## Revalidación de RSS y Google Trends — 2026-11-24 06:27 CDMX
+
+Se reintentaron las diez URL de `FEEDS_CIENCIA` de `scripts/tendencias.py` y Google Trends RSS México desde el lector web. Errores exactos:
+
+| Fuente | Resultado |
+|---|---|
+| ScienceDaily ciencia | `400 Unsupported content-type: application/xml` |
+| ScienceDaily salud | `400 Unsupported content-type: application/xml` |
+| ScienceDaily espacio | `400 Unsupported content-type: application/xml` |
+| Phys.org | `400 Unsupported content-type: text/xml` |
+| NASA | `400 Unsupported content-type: application/rss+xml` |
+| ESA Space Science | `404 Not Found` |
+| Nature | `400 Unsupported content-type: application/rss+xml` |
+| EurekAlert | `URL ... is not accessible via this tool` |
+| SINC | `URL ... is not accessible via this tool` |
+| UNAM Global | `400 Unsupported content-type: application/rss+xml` |
+| Google Trends RSS México | `URL ... is not accessible via this tool` |
+
+**Respaldo HTML oficial:** Google Trends México abrió correctamente en la vista «Past 24 hours»: 174 tendencias totales. La primera página (25 términos) contiene principalmente deportes, entretenimiento, trámites y consultas generales; «frío» es una señal meteorológica, no un candidato de la línea editorial. No se encontró un término elegible de ciencia, naturaleza, cocina, cuerpo o espacio. No se fuerza selección.
+
+Los cuatro candidatos ya documentados en este radar permanecen en sus estados previos: Varroa y plankton con texto primario consultado pero DOI/resolvedor pendiente; glaciares y grafito en `PENDING_SOURCE`. No se crea storyboard: el cupo 24–29 sigue agotado y ningún candidato supera todavía la compuerta independiente de DOI.
