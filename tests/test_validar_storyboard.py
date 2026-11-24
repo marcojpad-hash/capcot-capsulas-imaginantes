@@ -11,26 +11,26 @@ import validar_storyboard as validator
 
 
 PROMPT_BASE = "atlas test prompt"
+NARRATION = [
+    "La cámara del robot recorre una ladera submarina. A 6,148 metros, aparecen bordes lobulados de roca volcánica.",
+    "No está en el fondo de Challenger Deep: Jason/Medea trabaja en su antearco, donde el equipo buscaba rocas y señales geológicas.",
+    "En cinco inmersiones recorrió unos 300 kilómetros del segmento central y occidental, un entorno donde el volcanismo de antearco es inusual; tres de ellas recuperaron depósitos piroclásticos.",
+    "Una fotografía muestra láminas fracturadas a 6,334 metros; otra registra frentes de flujo de uno a dos metros de ancho.",
+    "Los autores los identifican como productos de volcanismo explosivo submarino, los más profundos conocidos hasta ahora.",
+    "Pero a seis kilómetros la presión dificulta la expansión de gases. El equipo propone fluidos supercríticos para explicar una fragmentación distinta.",
+    "Eso sigue siendo una hipótesis: no localizaron los conductos eruptivos ni observaron una erupción en marcha; reconstruyen el proceso desde las rocas.",
+    "El robot no llegó al fondo de la fosa, pero encontró una huella extraordinaria: la geología también deja archivos en el abismo. Esto fue Datos y ociosidades.",
+]
 
 
 def fixture_storyboard():
-    narration = [
-        "La cámara recorre una ladera submarina. A seis mil metros aparecen bordes lobulados de roca volcánica.",
-        "El vehículo trabaja en el antearco de la fosa, no en el punto más profundo de Challenger Deep.",
-        "Cinco inmersiones recorrieron cientos de kilómetros; tres recuperaron depósitos piroclásticos en la región.",
-        "Una imagen muestra láminas fracturadas; otra registra frentes de flujo con márgenes lobulados.",
-        "Los autores interpretan esas texturas como productos de volcanismo explosivo submarino profundo.",
-        "La presión dificulta la expansión de gases; los investigadores proponen fluidos supercríticos como explicación.",
-        "La hipótesis no equivale a una observación directa: los conductos eruptivos siguen sin localizarse.",
-        "El robot no filmó el estallido; encontró rocas que permiten reconstruirlo. Esto fue Datos y ociosidades.",
-    ]
     arcs = [
         "hook_medias_res", "desarrollo", "desarrollo", "desarrollo",
         "desarrollo", "desarrollo", "cierre_historia", "reflexion_o_pregunta",
     ]
     durations = [10, 10, 10, 10, 10, 10, 9, 9]
     scenes = []
-    for i, text in enumerate(narration):
+    for i, text in enumerate(NARRATION):
         scene = {
             "id": f"scene_{i+1:03d}",
             "arc": arcs[i],
@@ -41,6 +41,13 @@ def fixture_storyboard():
             "source_ids": ["SRC-001"],
             "ambiente": "Submarine low ambience.",
             "sfx": ["soft sonar pulse"],
+            "dramatic_beat": f"Beat {i+1}",
+            "scene_function": f"Function {i+1}",
+            "causal_bridge_from_previous": f"Bridge {i+1}",
+            "question_state": f"Question state {i+1}",
+            "reason_to_continue": f"Reason {i+1}",
+            "new_information": f"New information {i+1}",
+            "style_id": "atlas_antiguo",
         }
         if i == 0:
             scene["capa"] = {
@@ -159,7 +166,7 @@ class StoryboardValidatorTests(unittest.TestCase):
         )
         self.assertEqual(errors, [])
         self.assertNotIn("narrative_qa", fixture_storyboard())
-        self.assertTrue(any("DOI" in warning for warning in warnings) is False)
+        self.assertEqual(warnings, [])
 
     def test_full_mode_still_requires_independent_narrative_qa(self):
         errors, _ = validator.validar(str(self.storyboard_path))
