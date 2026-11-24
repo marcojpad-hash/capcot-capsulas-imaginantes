@@ -1,0 +1,154 @@
+{
+  "fecha_cdmx": "2026-11-24",
+  "hora_log": "2026-11-24 ~08:10 America/Mexico_City",
+  "rutina": "CAPCOT publicar TikTok (misma parrilla)",
+  "cuenta_tiktok": "@datosyociosidades",
+  "pagina_facebook": "Datos y ociosidades",
+  "publicados_esta_corrida": [
+    {
+      "tema": "yo-soy-sam",
+      "yt_id": "hY7UQAfRu-o",
+      "slot_yt_cdmx": "2026-11-24 07:00",
+      "tiktok_url": "https://www.tiktok.com/@datosyociosidades/video/7711731601956146484",
+      "tiktok_id": "7711731601956146484",
+      "tiktok_ui": "publicado 7:38 AM (GMT-6) Mexico City, Everyone",
+      "facebook_content_id": "122112456891518983",
+      "facebook_ui": "publicado martes 24-nov 07:41, Público",
+      "tt_etiqueta_ia": true,
+      "fb_etiqueta_ia": false,
+      "portada": "primer frame con título: UN SOLO DIOS CON MUCHOS DISFRACES"
+    },
+    {
+      "tema": "purpura",
+      "yt_id": "RBUcAeptGAU",
+      "slot_yt_cdmx": "2026-11-24 07:00",
+      "tiktok_url": "https://www.tiktok.com/@datosyociosidades/video/7711731417197137158",
+      "tiktok_id": "7711731417197137158",
+      "tiktok_ui": "publicado 7:39 AM (GMT-6) Mexico City, Everyone",
+      "facebook_content_id": "122112457185518983",
+      "facebook_ui": "publicado martes 24-nov 07:42, Público",
+      "tt_etiqueta_ia": true,
+      "fb_etiqueta_ia": false,
+      "portada": "primer frame con título: EL PÚRPURA NO VENÍA DE PIEDRAS PRECIOSAS #SHORTS"
+    },
+    {
+      "tema": "piramides-esclavos",
+      "yt_id": "gWJxoGjWQeM",
+      "slot_yt_cdmx": "2026-11-23 17:00",
+      "tiktok_url": "https://www.tiktok.com/@datosyociosidades/video/7711734559708335367",
+      "tiktok_id": "7711734559708335367",
+      "tiktok_ui": "publicado al momento 24-nov ~07:50-08:05, Everyone",
+      "facebook_content_id": "122112459603518983",
+      "facebook_ui": "publicado 24-nov ~07:50-08:05, Público",
+      "tt_etiqueta_ia": true,
+      "fb_etiqueta_ia": false,
+      "portada": "primer frame con título (caja incluye #SHORTS)"
+    },
+    {
+      "tema": "gutenberg-primer-libro",
+      "yt_id": "i3SpxSQglm4",
+      "slot_yt_cdmx": "2026-11-23 19:00",
+      "tiktok_url": "https://www.tiktok.com/@datosyociosidades/video/7711734803090951442",
+      "tiktok_id": "7711734803090951442",
+      "tiktok_ui": "publicado al momento 24-nov ~07:50-08:05, Everyone",
+      "facebook_content_id": "122112460113518983",
+      "facebook_ui": "publicado 24-nov ~07:50-08:05, Público",
+      "tt_etiqueta_ia": true,
+      "fb_etiqueta_ia": false,
+      "portada": "primer frame con título (caja incluye #SHORTS)"
+    },
+    {
+      "tema": "ley-juarez",
+      "yt_id": "7azes5URgi4",
+      "slot_yt_cdmx": "2026-11-23 21:00",
+      "tiktok_url": "https://www.tiktok.com/@datosyociosidades/video/7711734961388162312",
+      "tiktok_id": "7711734961388162312",
+      "tiktok_ui": "publicado al momento 24-nov ~07:50-08:05, Everyone",
+      "facebook_content_id": "122112460575518983",
+      "facebook_ui": "publicado 24-nov ~07:50-08:05, Público",
+      "tt_etiqueta_ia": true,
+      "fb_etiqueta_ia": false,
+      "portada": "primer frame con título (caja incluye #SHORTS)"
+    },
+    {
+      "tema": "oso-wojtek",
+      "yt_id": "pTmQgkchC68",
+      "slot_yt_cdmx": "2026-11-23 23:30",
+      "tiktok_url": "https://www.tiktok.com/@datosyociosidades/video/7711735181819874578",
+      "tiktok_id": "7711735181819874578",
+      "tiktok_ui": "publicado al momento 24-nov ~07:50-08:05, Everyone",
+      "facebook_content_id": "122112460857518983",
+      "facebook_ui": "publicado 24-nov ~07:50-08:05, Público",
+      "tt_etiqueta_ia": true,
+      "fb_etiqueta_ia": false,
+      "portada": "primer frame con título (caja incluye #SHORTS)"
+    }
+  ],
+  "ya_estaban": [
+    {
+      "tema": "pollo",
+      "yt_id": "_YzBY4OfUeo",
+      "slot_yt_cdmx": "2026-11-24 17:00",
+      "tiktok": "ya programado 24-nov 17:00 (GMT-6) Mexico City, Everyone; no se volvió a subir; id no anotado",
+      "facebook": "ya programado martes 24-nov 17:00, Público; el caption aún trae Imágenes y voz generadas con IA y #shorts; no se editó para no tocar la hora",
+      "nota": "Encontrado ya programado en la corrida 24-nov 07:00."
+    },
+    {
+      "tema": "pulpo-drenaje-inky",
+      "yt_id": "4Vi_TnIl9FI",
+      "slot_yt_cdmx": "2026-11-22 23:30",
+      "tiktok": "publicado 23-nov 8:05 AM (visto en Studio 24-nov 07:00)",
+      "facebook": "no visto en publicados ni en programados al revisar 24-nov 07:00; pendiente_fb",
+      "nota": "Atrasado que sí llegó a TT el 23-nov; FB no confirmado."
+    },
+    {
+      "tema": "pirata-barbanegra",
+      "yt_id": "KvHvf2TJLqE",
+      "slot_yt_cdmx": "2026-11-22 21:00",
+      "tiktok": "publicado 23-nov 8:09 AM (visto en Studio 24-nov 07:00)",
+      "facebook": "no visto al revisar 24-nov 07:00; pendiente_fb",
+      "nota": "Atrasado que sí llegó a TT el 23-nov; FB no confirmado."
+    },
+    {
+      "tema": "rosetta",
+      "yt_id": "p5PM4xZfDyc",
+      "slot_yt_cdmx": "2026-11-23 13:30",
+      "tiktok": "publicado 23-nov 1:30 PM (visto en Studio 24-nov 07:00)",
+      "facebook": "no visto al revisar 24-nov 07:00; pendiente_fb",
+      "nota": "Ya estaba en TT a su hora; FB no confirmado."
+    }
+  ],
+  "hoy_en_yt_sin_mp4_local": [
+    {
+      "tema": "mona-lisa",
+      "yt_id": "WtuxaKrS4-Q",
+      "hora_cdmx": "2026-11-24 13:30",
+      "yt": "private programado"
+    },
+    {
+      "tema": "emus",
+      "yt_id": "u0ej8YSZxOE",
+      "hora_cdmx": "2026-11-24 15:00",
+      "yt": "private programado"
+    },
+    {
+      "tema": "vomitorium",
+      "yt_id": "cGb7Z0ZEz8w",
+      "hora_cdmx": "2026-11-24 17:00",
+      "yt": "private programado (mismo slot que pollo)"
+    },
+    {
+      "tema": "reina-victoria-vestido",
+      "yt_id": "9W9nn72rmfE",
+      "hora_cdmx": "2026-11-24 19:00",
+      "yt": "private programado"
+    },
+    {
+      "tema": "perro-this-is-fine",
+      "yt_id": "qBLbjs8GiDM",
+      "hora_cdmx": "2026-11-24 23:30",
+      "yt": "private programado"
+    }
+  ],
+  "nota": "Corrida 24-nov 07:00: publicó en TT+FB Yo soy Sam y Púrpura (ambos YT 07:00 ya públicos) y los atrasados de 23-nov que faltaban (pirámides, Biblia Gutenberg, Ley Juárez, Wojtek). Pollo 17:00 ya estaba programado en TT+FB. Pulpo, pirata y Rosetta ya estaban en TT (23-nov) pero Facebook no se confirmó (pendiente_fb). Quedan cinco slots de hoy (13:30-23:30, salvo pollo) cuyo mp4 original no está en esta caja."
+}
