@@ -1,4 +1,5 @@
 import json
+import ssl
 import sys
 import tempfile
 import unittest
@@ -184,6 +185,89 @@ class StoryboardValidatorTests(unittest.TestCase):
             "export.render_status debe ser NOT_GENERATED en preproducción textual",
             errors,
         )
+
+    def test_boolean_terrestrial_coordinates_are_rejected(self):
+        self.assertFalse(validator.validar_punto_mapa({"lat": True, "lon": -70}))
+        self.assertFalse(validator.validar_punto_mapa({"lat": 10, "lon": False}))
+
+    def test_boolean_celestial_coordinates_are_rejected(self):
+        point = {
+            "ra_deg": True,
+            "dec_deg": 12.5,
+            "sistema_coordenadas": "Ecuatoriales J2000 (RA/Dec)",
+        }
+        self.assertFalse(validator.validar_punto_mapa(point))
+
+    def test_boolean_map_bounds_are_rejected(self):
+        self.assertFalse(validator.validar_bounds_mapa([True, -70, 12, -60]))
+        self.assertFalse(validator.validar_bounds_mapa([-10, -70, 12, False]))
+
+    def test_valid_map_bounds_pass(self):
+        self.assertTrue(validator.validar_bounds_mapa([-10, -70, 12, -60]))
+
+    def test_check_doi_rejects_untrusted_input_before_network(self):
+        with mock.patch.object(validator.http.client, "HTTPSConnection") as connection:
+            self.assertFalse(validator.check_doi("file:///etc/passwd"))
+            self.assertFalse(validator.check_doi("10.1234/example?next=https://evil.test"))
+            connection.assert_not_called()
+
+    def test_check_doi_uses_fixed_https_host_and_verified_tls(self):
+        class Response:
+            status = 200
+            def getheader(self, name):
+                return None
+
+        class Connection:
+            def __init__(self, host, timeout, context):
+                self.host = host
+                self.timeout = timeout
+                self.context = context
+            def request(self, method, path, headers):
+                self.request_args = (method, path, headers)
+            def getresponse(self):
+                return Response()
+            def close(self):
+                pass
+
+        with mock.patch.object(
+            validator.http.client, "HTTPSConnection", side_effect=Connection
+        ) as factory:
+            self.assertTrue(validator.check_doi("10.5194/bg-15-5131-2018"))
+            self.assertEqual(factory.call_args.args[0], "api.crossref.org")
+            self.assertEqual(factory.call_args.kwargs["timeout"], 20)
+            context = factory.call_args.kwargs["context"]
+            self.assertTrue(context.check_hostname)
+            self.assertEqual(context.verify_mode, ssl.CERT_REQUIRED)
+
+    def test_check_doi_uses_fixed_doi_resolver_without_following_redirect(self):
+        class Response:
+            def __init__(self, status, location=None):
+                self.status = status
+                self.location = location
+            def getheader(self, name):
+                return self.location if name.lower() == "location" else None
+
+        class Connection:
+            def __init__(self, host, timeout, context):
+                self.host = host
+                self.timeout = timeout
+            def request(self, method, path, headers):
+                self.request_args = (method, path, headers)
+            def getresponse(self):
+                if self.host == "api.crossref.org":
+                    raise OSError("Crossref unavailable")
+                return Response(302, "https://journals.example.org/article")
+            def close(self):
+                pass
+
+        with mock.patch.object(
+            validator.http.client, "HTTPSConnection", side_effect=Connection
+        ) as factory:
+            self.assertTrue(validator.check_doi("10.5194/bg-15-5131-2018"))
+            self.assertEqual(
+                [call.args[0] for call in factory.call_args_list],
+                ["api.crossref.org", "doi.org"],
+            )
 
     def test_doi_check_falls_back_from_crossref_to_resolver(self):
         calls = []
