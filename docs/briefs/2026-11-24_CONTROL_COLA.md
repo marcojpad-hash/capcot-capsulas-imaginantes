@@ -144,3 +144,31 @@ No se creó storyboard, no se registró narrative_qa, no se promovió ni redispa
 - Se reintentaron los 10 RSS científicos y Google Trends RSS México; los XML devolvieron errores de content-type/404/no accesible, documentados con detalle en `2026-11-24_RADAR_CAPCOT.md`.
 - El respaldo HTML oficial de Trends mostró 174 tendencias en 24 horas; la primera página no aportó tema admisible. No se añadió candidato ni se seleccionó un tema por fuerza.
 - Radar actualizado y releído en feature: commit `aebbcddb81c9bca1d087bd4d0d8853caec04cc3b`, blob `b3e2d90c19c4c0715543add4dfff4bd70c13533f`. Sin storyboard, sin QA narrativo y sin promoción.
+
+
+## Revalidación del operador único — 2026-11-24 08:08 CDMX
+
+### Radar y backlog
+- El radar del 24-nov fue actualizado por la ejecución independiente de investigación y releído desde GitHub: commit `bd8ab61e5760ab1d6fa441506184a7c5c3edc911`, blob `313e23805c2b62a26dd3d67907b04559b5a93d65`.
+- Se registran cinco candidatos recientes. El estudio sobre extracción oceánica de CO₂ queda como recomendación para un futuro slot libre, no como selección. Los DOI/Crossref no quedaron resueltos; Varroa conserva texto primario completo con resolvedor pendiente; los demás mantienen límites de lectura o `PENDING_SOURCE`. No se redactó storyboard.
+- La relectura del radar confirma 32 storyboards: 12 PASS y 20 FAIL. Los 32 archivos individuales `cola/estado/<project_id>.json` devolvieron 404; para todos corresponde `RECEPCION_GROK_NO_CONFIRMADA`. No se creó ni modificó ningún estado.
+- No hay storyboard nuevo para 24-nov: el cupo sigue agotado. No se creó cola, no se disparó dispatch y no se generaron medios.
+
+### Reconciliación de main
+- HEAD actual de CAPCOT main: `3cbc18edf321c89593bc325f479b045b32291fc3`. La comparación con el commit anterior `fb6d35e8` muestra que el cambio posterior fue `data/endscreens_rotacion.json`; no cambió la programación revisada.
+- `data/publicaciones.json`: 62 registros, tres con fecha 24-nov. `data/rotacion.json`: 39 registros. Ambos permanecen solo lectura.
+- `data/horarios.json` conserva ventanas activas 06:30–07:30 y 16:30–18:00, con dato fijo 23:30. La programación preexistente continúa: 24-nov 5/5; 25–28 nov 7/5 por cinco programaciones más dos reworks diarios; 29-nov 5/5. Los nueve reworks están a las 10:00/15:00, fuera de las ventanas activas. Persisten las colisiones de 24–28 ya descritas. No hay slot libre confirmado.
+
+### QA narrativo y PRs
+- PR #13 no satisface la auditoría en frío exigida: su `AUDITORIA.md` cita líneas del storyboard, estado DOI, metadatos y narrativa_qa, por lo que no demuestra lectura aislada de la narración concatenada. PR #14 conserva el `FAIL/82` histórico; no hay una nueva revisión independiente posterior a sus correcciones. Quásares no es promovible.
+- PR #3 sigue OPEN/DRAFT y no mergeable. Su HEAD es `bd8ab61e`; el listado completo muestra 706 archivos modificados, incluidos 13 `data/*.json`. No se fusiona. El run #45410383610 fue CodeQL, no una validación estructural/DOI de los storyboards.
+- PR #15 sigue OPEN/no mergeable. Su parche añade seis pruebas para coordenadas booleanas, bounds y fijación de HTTPS/Crossref; no hay ejecución CI de ese head y no se ejecutó la suite local. No se atribuye PASS.
+
+### Seguridad
+- El archivo `main/data/auditoria_hashtags_titulos_2026-11-24.json` sigue presente en main (blob prefijo `236f4c4d`, 447,466 bytes); no se reproduce ningún valor sensible.
+- Gitleaks run [#45410242032](https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/actions/runs/45410242032) terminó SUCCESS sobre HEAD `3cbc18e`, pero el log usa `--log-opts=-1`, informa un commit y ~85.90 KB escaneados. No vuelve a examinar el historial ni refuta el hallazgo anterior #45337473897; el archivo señalado no cambió en el commit analizado.
+- Semgrep run [#45410242244](https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/actions/runs/45410242244): FAILURE, 37 hallazgos bloqueantes, 361 reglas y 1,248 objetivos.
+- No se rotaron secretos, no se editó `data/*.json`, no se escribió en main y no se cambió ningún permiso.
+
+### Cierre de esta revalidación
+No se promovió ni redispatchó contenido. El radar queda como investigación, no selección; el slot queda agotado; los 32 recibos Grok siguen sin confirmación. La alerta Gitleaks y el bloqueo Semgrep permanecen abiertos.
