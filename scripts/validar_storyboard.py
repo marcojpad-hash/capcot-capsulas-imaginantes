@@ -9,9 +9,11 @@ El modo completo sigue exigiendo narrative_qa PASS. --check-doi prueba DOI media
 La etapa de preproducción no requiere ni acepta rutas de assets inexistentes.
 """
 import argparse
+import http.client
 import json
 import os
 import re
+import ssl
 import sys
 import urllib.parse
 import urllib.request
@@ -20,32 +22,43 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ARC = ["hook_medias_res", "desarrollo", "cierre_historia", "reflexion_o_pregunta"]
 VOICE = {"engine": "edge-tts", "voice_id": "es-MX-JorgeNeural", "language": "es-MX", "rate": "+7%", "pitch": "-2Hz"}
 
+def _https_status(host, path):
+    """Consulta un host fijo por HTTPS; no sigue redirecciones fuera del host."""
+    connection = None
+    try:
+        connection = http.client.HTTPSConnection(
+            host, timeout=20, context=ssl.create_default_context()
+        )
+        connection.request(
+            "GET",
+            path,
+            headers={"User-Agent": "capcot-validador/4.0", "Accept": "application/json, text/html;q=0.9"},
+        )
+        response = connection.getresponse()
+        return int(response.status), response.getheader("Location")
+    except Exception:
+        return None, None
+    finally:
+        if connection is not None:
+            connection.close()
+
+
 def check_doi(doi):
-    """Comprueba primero Crossref y después el resolvedor DOI como respaldo."""
-    doi = str(doi or "").strip()
-    if not re.fullmatch(r"10\.\d{4,9}/\S+", doi):
+    """Comprueba Crossref y, como respaldo, que doi.org resuelva por HTTPS."""
+    if not isinstance(doi, str):
         return False
-    encoded = urllib.parse.quote(doi, safe="/")
-    endpoints = (
-        "https://api.crossref.org/works/" + encoded,
-        "https://doi.org/" + encoded,
-    )
-    for url in endpoints:
-        try:
-            req = urllib.request.Request(
-                url,
-                headers={
-                    "User-Agent": "capcot-validador/3.0",
-                    "Accept": "application/json, text/html;q=0.9, */*;q=0.8",
-                },
-            )
-            with urllib.request.urlopen(req, timeout=20) as response:
-                status = int(getattr(response, "status", 200))
-                if 200 <= status < 400:
-                    return True
-        except Exception:
-            continue
-    return False
+    doi = doi.strip()
+    if not re.fullmatch(r"10\\.\\d{4,9}/[^\\s?#\\\\]+", doi):
+        return False
+    encoded = urllib.parse.quote(doi, safe="/-._;()")
+    status, _ = _https_status("api.crossref.org", "/works/" + encoded)
+    if status == 200:
+        return True
+    status, location = _https_status("doi.org", "/" + encoded)
+    if status not in {301, 302, 303, 307, 308} or not location:
+        return False
+    parsed = urllib.parse.urlparse(location)
+    return parsed.scheme == "https" and bool(parsed.netloc)
 
 def check_url(url):
     """Comprueba una URL primaria cuando la fuente no declara DOI."""
@@ -126,6 +139,20 @@ def validar_narrative_qa(qa):
         errs.append("narrative_qa.reviewer_role debe ser auditor_capcot_independiente")
     return errs
 
+def validar_bounds_mapa(bounds):
+    """Valida bounds terrestres [lat_min, lon_min, lat_max, lon_max]."""
+    if not isinstance(bounds, (list, tuple)) or len(bounds) != 4:
+        return False
+    # bool es subclase de int en Python; no debe convertirse en 0/1.
+    if any(isinstance(value, bool) for value in bounds):
+        return False
+    try:
+        lat_min, lon_min, lat_max, lon_max = (float(value) for value in bounds)
+    except (TypeError, ValueError):
+        return False
+    return (-90 <= lat_min < lat_max <= 90) and (-180 <= lon_min < lon_max <= 180)
+
+
 def validar_punto_mapa(point):
     """Acepta coordenadas terrestres lat/lon o celestes ecuatoriales RA/Dec."""
     if not isinstance(point, dict):
@@ -134,6 +161,8 @@ def validar_punto_mapa(point):
     lon = point.get("lon", point.get("longitude"))
     if lat is not None or lon is not None:
         if lat is None or lon is None:
+            return False
+        if isinstance(lat, bool) or isinstance(lon, bool):
             return False
         try:
             lat, lon = float(lat), float(lon)
@@ -145,6 +174,8 @@ def validar_punto_mapa(point):
     dec = point.get("dec_deg")
     system = str(point.get("sistema_coordenadas") or "").lower()
     if ra is None or dec is None or not any(tag in system for tag in ("ra/dec", "ecuatorial", "equatorial")):
+        return False
+    if isinstance(ra, bool) or isinstance(dec, bool):
         return False
     try:
         ra, dec = float(ra), float(dec)
@@ -290,16 +321,8 @@ def validar(path, doi=False, structural_only=False):
                     errs.append(f"{sid}: coordenadas de mapa ausentes, fuera de rango o sistema no declarado")
             for area in areas:
                 bounds = area.get("bounds") if isinstance(area, dict) else None
-                if not isinstance(bounds, (list, tuple)) or len(bounds) != 4:
-                    errs.append(f"{sid}: región de mapa sin bounds [lat_min, lon_min, lat_max, lon_max]")
-                    continue
-                try:
-                    lat_min, lon_min, lat_max, lon_max = (float(value) for value in bounds)
-                except (TypeError, ValueError):
-                    errs.append(f"{sid}: bounds de región no numéricos")
-                    continue
-                if not (-90 <= lat_min < lat_max <= 90) or not (-180 <= lon_min < lon_max <= 180):
-                    errs.append(f"{sid}: bounds de región ausentes, invertidos o fuera de rango")
+                if not validar_bounds_mapa(bounds):
+                    errs.append(f"{sid}: bounds de región ausentes, no numéricos, booleanos, invertidos o fuera de rango")
                     continue
                 valid_areas += 1
             if not pts and not valid_areas:
