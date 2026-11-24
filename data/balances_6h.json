@@ -3551,5 +3551,125 @@
    ]
   ],
   "nota_flujo": "Corte vs 22-nov 13:50 CDMX (~24 h; no hubo corte 6h registrado el 22-nov 14:00, el 22-nov 20:00 ni a las 08:00 de hoy). YT 39,221→40,009 (+788 vistas), likes 1,221→1,240 (+19), comentarios 28→28 (+0), subs 103→104 (+1). 105→116 Shorts públicos (+11: La piedra Rosetta NO era un diccionario p5PM4xZfDyc a las 2026-11-23 13:30 CDMX (2 vistas, 0 likes); Dijo que los dioses habían sido reyes Tq2ASLkFTbo a las 2026-11-23 11:00 CDMX (2 vistas, 0 likes); Bernabé llamó al orfismo religión del libro CW02WClntYA a las 2026-11-23 09:00 CDMX (2 vistas, 0 likes); ¿La IA nos va a matar? La advertencia de un directivo de OpenAI IQEU2Bqy3v0 a las 2026-11-23 07:00 CDMX (4 vistas, 0 likes); ¿Qué pasa dentro cuando truenas los dedos? tmOji99zGPE a las 2026-11-23 07:00 CDMX (9 vistas, 1 likes); El pulpo que se fugó por el drenaje 4Vi_TnIl9FI a las 2026-11-22 23:30 CDMX (239 vistas, 7 likes); Cleopatra NO era egipcia I8n_5nnUlbI a las 2026-11-22 21:00 CDMX (9 vistas, 0 likes); El pirata cuya cabeza colgó de un mástil KvHvf2TJLqE a las 2026-11-22 21:00 CDMX (14 vistas, 0 likes); ¿Webb ve aire lejano? BIwG7kgaLic a las 2026-11-22 19:00 CDMX (61 vistas, 0 likes); Ada Lovelace escribió el primer programa Sc0cX9ejxuw a las 2026-11-22 17:00 CDMX (47 vistas, 2 likes); Químicos aislan oxoboranos estables tras 60 años B-75KkHAVDo a las 2026-11-22 14:30 CDMX (5 vistas, 0 likes)). Lo empujan TT ¿Por qué se pone verde la yema del huevo duro? El anillo ver 7710703730752015668 37→600 (+563); TT ¿En Salem quemaron brujas? En 1692, 19 personas fueron ahorc 7710990697033108742 259→610 (+351); TT ¿Un tejón le ganó a un zoológico entero? Stoffel, el tejón d 7710991265910820117 336→631 (+295). En YT se estancó ¿Por qué tenemos hipo? 41PYjWbQuJo (sigue en 0); se fugo la ia jeUrM5zzkdA (sigue en 0); ¿Por qué tenemos hipo? Rg-iTgMExWw (sigue en 1); La corneja decide en 235 milisegundos wxnhEdlJYwU (sigue en 1). El nuevo La piedra Rosetta NO era un diccionario p5PM4xZfDyc va en 2 vista(s). El nuevo Dijo que los dioses habían sido reyes Tq2ASLkFTbo va en 2 vista(s). El nuevo Bernabé llamó al orfismo religión del libro CW02WClntYA va en 2 vista(s). El nuevo ¿La IA nos va a matar? La advertencia de un directivo de OpenAI IQEU2Bqy3v0 va en 4 vista(s). El nuevo Químicos aislan oxoboranos estables tras 60 años B-75KkHAVDo va en 5 vista(s). TT (yt-dlp, listado público @datosyociosidades): 106→115 videos (+9), 37,433→38,892 vistas (+1,459), 1,105→1,124 likes (+19), comentarios 6→6. En TT lo mueven TT ¿Por qué se pone verde la yema del huevo duro? El anillo ver 37→600 (+563), TT ¿En Salem quemaron brujas? En 1692, 19 personas fueron ahorc 259→610 (+351), TT ¿Un tejón le ganó a un zoológico entero? Stoffel, el tejón d 336→631 (+295), TT ¿Colón llamó América al continente? No: el nombre nació en 1 364→590 (+226), TT ¿Se va la luz el 17 de noviembre por una IA que se escapó? E 3369→3375 (+6). Seguidores de TT no se pudieron leer. Fuente YT: yt-dlp listado público youtube.com/channel/UCU2ZI-6pBJEr9aSFsF6bxLw/shorts (OAuth ~/.capcot/token.json devolvió invalid_grant: token expired or revoked; también fallaron los demás refresh tokens en ~/.capcot). Likes: yt-dlp no reportó like_count en 27/116 Shorts (se anotaron como 0; suma de likes reportados=1240). Comentarios: yt-dlp solo reportó comment_count en 11/116 (suma 28; el resto se anotó como 0)."
+ },
+ {
+  "hora_cdmx": "2026-11-24T13:53-06:00",
+  "base_youtube": "2026-11-23T14:01",
+  "base_tiktok": "2026-11-23T14:01",
+  "youtube_totales": {
+   "view": 40564,
+   "like": 1251,
+   "comment": 30
+  },
+  "suscriptores": 104,
+  "shorts_publicos": 117,
+  "delta_youtube": {
+   "view": 555,
+   "like": 11,
+   "comment": 2,
+   "suscriptores": 0,
+   "horas_desde_base": 23.9,
+   "nota": "Δ de ~24 h vs el corte 23-nov 14:01 CDMX (último snapshot en vistas_historico/balances_6h; no hubo corte 6h registrado el 23-nov 20:00 ni a las 08:00 de hoy). 116→117 Shorts públicos (+8). Fuente: YouTube Data API v3 OAuth ~/.capcot/token.json (scopes youtube.readonly + force-ssl) La playlist de uploads no trajo 8 Shorts que siguen públicos (2a36r5QOvi4, 41PYjWbQuJo, Vx8EhL4ib7I, ThbHry-YC-w, dz2C-Y8klXA, R76ivFX9nXo, 7ay4KLS8h8I, GlBl4S4aDAs) y se sumaron con videos.list. Nuevos: El robo que hizo famosa a la Mona Lisa WtuxaKrS4-Q a las 2026-11-24 13:30 CDMX (4 vistas, 0 likes); El púrpura NO venía de piedras preciosas RBUcAeptGAU a las 2026-11-24 07:00 CDMX (3 vistas, 0 likes); Un solo dios con muchos disfraces hY7UQAfRu-o a las 2026-11-24 07:00 CDMX (3 vistas, 0 likes); El oso que el ejército hizo cabo pTmQgkchC68 a las 2026-11-23 23:30 CDMX (4 vistas, 0 likes); La ley que le quitó jueces propios a la Iglesia 7azes5URgi4 a las 2026-11-23 21:00 CDMX (31 vistas, 0 likes); La Biblia de Gutenberg NO fue el primer libro impreso i3SpxSQglm4 a las 2026-11-23 19:00 CDMX (9 vistas, 1 likes); El Mitra romano no llegó ya hecho de Persia 6OuHVN5dbbs a las 2026-11-23 18:00 CDMX (7 vistas, 0 likes); ¿Las pirámides las hicieron esclavos? gWJxoGjWQeM a las 2026-11-23 17:00 CDMX (7 vistas, 0 likes). Ya no aparecen en públicos: ¿La IA nos va a matar? La advertencia de un directivo de OpenAI IQEU2Bqy3v0 (private, 4 vistas), Químicos aislan oxoboranos estables tras 60 años B-75KkHAVDo (private, 5 vistas), La corneja decide en 235 milisegundos AxgWdhqPhRI (private, 5 vistas), ¿Por qué tenemos hipo? 41PYjWbQuJo (private, 0 vistas), se fugo la ia jeUrM5zzkdA (private, 0 vistas), La corneja decide en 235 milisegundos wxnhEdlJYwU (private, 1 vistas), ¿Por qué tenemos hipo? Rg-iTgMExWw (private, 1 vistas)."
+  },
+  "tiktok_totales": {
+   "view": 38923,
+   "like": 1125,
+   "comment": 6
+  },
+  "seguidores_tiktok": null,
+  "likes_perfil_tiktok": null,
+  "videos_tiktok": 127,
+  "delta_tiktok": {
+   "view": 31,
+   "like": 1,
+   "comment": 0,
+   "seguidores": null,
+   "likes_perfil": null,
+   "videos": 12,
+   "nota": "Δ vs 23-nov 14:01 (~24 h): 38892→38923 vistas (+31), 1124→1125 likes (+1), comentarios 6→6, 115→127 videos (+12). Fuente: yt-dlp, listado público @datosyociosidades. Nuevos en el listado: ¿La Mona Lisa siempre fue el cuadro más famoso del 7711739720736214280 (0 vistas, 0 likes); Wojtek fue un oso pardo adoptado por soldados pola 7711735181819874578 (7 vistas, 0 likes); La Ley Juárez de 1855 limitó los fueros eclesiásti 7711734961388162312 (1 vistas, 0 likes); La Biblia de Gutenberg no fue el primer libro impr 7711734803090951442 (0 vistas, 0 likes); ¿Las pirámides de Egipto fueron construidas por es 7711734559708335367 (0 vistas, 0 likes); ¿El púrpura de los emperadores se fabricaba con pi 7711731417197137158 (0 vistas, 0 likes); En Azrael, el penúltimo relato de Yo soy Sam, de M 7711731601956146484 (0 vistas, 0 likes); ¿Las galletas de la fortuna son realmente chinas?  7711390165666696454 (1 vistas, 0 likes); ¿María Antonieta dijo «que coman pastel»? #histori 7711391533945343238 (7 vistas, 0 likes); ¿María Antonieta dijo «que coman pastel»? #histori 7711389290231614726 (1 vistas, 0 likes); En los mitreos del Imperio aparece una y otra vez  7711363928403610888 (0 vistas, 0 likes); En los mitreos del Imperio aparece una y otra vez  7711363491168324882 (2 vistas, 0 likes). Seguidores no se pudieron leer."
+  },
+  "ranking_crecimiento": [
+   [
+    "YT El pulpo que se fugó por el drenaje",
+    182
+   ],
+   [
+    "YT El pirata cuya cabeza colgó de un mástil",
+    57
+   ],
+   [
+    "YT La piedra Rosetta NO era un diccionario",
+    53
+   ],
+   [
+    "YT En Salem NO quemaron brujas",
+    40
+   ],
+   [
+    "YT Napoleón NO era bajito",
+    36
+   ],
+   [
+    "YT La ley que le quitó jueces propios a la Iglesia",
+    31
+   ],
+   [
+    "YT El tejón que se burló del zoológico",
+    24
+   ],
+   [
+    "YT Gutenberg NO inventó la imprenta",
+    16
+   ],
+   [
+    "YT ¿Y si los dioses griegos habían sido reyes?",
+    12
+   ],
+   [
+    "YT ¿Por qué truenan los dedos al jalarlos?",
+    10
+   ],
+   [
+    "YT La Biblia de Gutenberg NO fue el primer libro impreso",
+    9
+   ],
+   [
+    "YT ¿Webb ve aire lejano?",
+    8
+   ],
+   [
+    "YT El Mitra romano no llegó ya hecho de Persia",
+    7
+   ],
+   [
+    "YT ¿Las pirámides las hicieron esclavos?",
+    7
+   ],
+   [
+    "YT ¿El arroz de ayer puede enfermarte?",
+    7
+   ],
+   [
+    "TT Wojtek fue un oso pardo adoptado por soldados polacos en Irá",
+    7
+   ],
+   [
+    "TT ¿María Antonieta dijo «que coman pastel»? #historia #MariaAn",
+    7
+   ],
+   [
+    "YT ¿Ya hay un robot armando piezas en órbita?",
+    6
+   ],
+   [
+    "YT Cleopatra NO era egipcia",
+    5
+   ],
+   [
+    "YT El oso que el ejército hizo cabo",
+    4
+   ]
+  ],
+  "nota_flujo": "Corte vs 23-nov 14:01 CDMX (~24 h; no hubo corte 6h registrado el 23-nov 20:00 ni a las 08:00 de hoy). YT 40,009→40,564 (+555 vistas), likes 1,240→1,251 (+11), comentarios 28→30 (+2), subs 104→104 (+0). 116→117 Shorts públicos (+8: El robo que hizo famosa a la Mona Lisa WtuxaKrS4-Q a las 2026-11-24 13:30 CDMX (4 vistas, 0 likes); El púrpura NO venía de piedras preciosas RBUcAeptGAU a las 2026-11-24 07:00 CDMX (3 vistas, 0 likes); Un solo dios con muchos disfraces hY7UQAfRu-o a las 2026-11-24 07:00 CDMX (3 vistas, 0 likes); El oso que el ejército hizo cabo pTmQgkchC68 a las 2026-11-23 23:30 CDMX (4 vistas, 0 likes); La ley que le quitó jueces propios a la Iglesia 7azes5URgi4 a las 2026-11-23 21:00 CDMX (31 vistas, 0 likes); La Biblia de Gutenberg NO fue el primer libro impreso i3SpxSQglm4 a las 2026-11-23 19:00 CDMX (9 vistas, 1 likes); El Mitra romano no llegó ya hecho de Persia 6OuHVN5dbbs a las 2026-11-23 18:00 CDMX (7 vistas, 0 likes); ¿Las pirámides las hicieron esclavos? gWJxoGjWQeM a las 2026-11-23 17:00 CDMX (7 vistas, 0 likes)). Lo empujan YT El pulpo que se fugó por el drenaje 4Vi_TnIl9FI 239→421 (+182); YT El pirata cuya cabeza colgó de un mástil KvHvf2TJLqE 14→71 (+57); YT La piedra Rosetta NO era un diccionario p5PM4xZfDyc 2→55 (+53). El nuevo Un solo dios con muchos disfraces hY7UQAfRu-o va en 3 vista(s). El nuevo El oso que el ejército hizo cabo pTmQgkchC68 va en 4 vista(s). El nuevo El robo que hizo famosa a la Mona Lisa WtuxaKrS4-Q va en 4 vista(s). El nuevo El púrpura NO venía de piedras preciosas RBUcAeptGAU va en 3 vista(s). TT (yt-dlp, listado público @datosyociosidades): 115→127 videos (+12), 38,892→38,923 vistas (+31), 1,124→1,125 likes (+1), comentarios 6→6. En TT lo mueven TT Wojtek fue un oso pardo adoptado por soldados polacos en Irá nuevo 7, TT ¿María Antonieta dijo «que coman pastel»? #historia #MariaAn nuevo 7, TT En los mitreos del Imperio aparece una y otra vez la misma e nuevo 2, TT ¿La piedra Rosetta era un diccionario de jeroglíficos? No: e 0→2 (+2), TT ¿Un tejón le ganó a un zoológico entero? Stoffel, el tejón d 631→633 (+2). Seguidores de TT no se pudieron leer. Fuente YT: YouTube Data API v3 OAuth ~/.capcot/token.json (scopes youtube.readonly + force-ssl)"
  }
 ]
