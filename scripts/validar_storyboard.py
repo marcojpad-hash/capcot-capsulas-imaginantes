@@ -6,26 +6,34 @@ Uso:
   python3 scripts/validar_storyboard.py salidas/AAAA-MM-DD_slug/storyboard.json --check-doi
 La etapa de preproducción no requiere ni acepta rutas de assets inexistentes.
 """
+import http.client
 import json
 import os
 import re
+import ssl
 import sys
-import urllib.request
+from urllib.parse import quote
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ARC = ["hook_medias_res", "desarrollo", "cierre_historia", "reflexion_o_pregunta"]
 VOICE = {"engine": "edge-tts", "voice_id": "es-MX-JorgeNeural", "language": "es-MX", "rate": "+7%", "pitch": "-2Hz"}
 
 def check_doi(doi):
+    """Consulta Crossref por HTTPS fijo; el DOI nunca controla host ni esquema."""
+    if not isinstance(doi, str) or not re.fullmatch(r"10\.\d{4,9}/[^\s?#\\]+", doi):
+        return False
+    connection = None
     try:
-        req = urllib.request.Request(
-            "https://api.crossref.org/works/" + doi,
-            headers={"User-Agent": "capcot-validador/2.0"}
-        )
-        with urllib.request.urlopen(req, timeout=20) as r:
-            return r.status == 200
+        connection = http.client.HTTPSConnection("api.crossref.org", timeout=20, context=ssl.create_default_context())  # nosemgrep: python.lang.security.audit.httpsconnection-detected.httpsconnection-detected
+        path = "/works/" + quote(doi, safe="/-._;()")
+        connection.request("GET", path, headers={"User-Agent": "capcot-validador/2.0"})
+        response = connection.getresponse()
+        return response.status == 200
     except Exception:
         return False
+    finally:
+        if connection is not None:
+            connection.close()
 
 def words(text):
     return re.findall(r"[A-Za-zÁÉÍÓÚÜÑáéíóúüñ0-9]+(?:['’.-][A-Za-zÁÉÍÓÚÜÑáéíóúüñ0-9]+)*", text or "")
@@ -98,6 +106,10 @@ def validar_punto_mapa(point):
     if lat is not None or lon is not None:
         if lat is None or lon is None:
             return False
+        # JSON booleans are Python ints; reject them instead of treating
+        # true/false as valid coordinates 1/0.
+        if isinstance(lat, bool) or isinstance(lon, bool):
+            return False
         try:
             lat, lon = float(lat), float(lon)
         except (TypeError, ValueError):
@@ -109,11 +121,26 @@ def validar_punto_mapa(point):
     system = str(point.get("sistema_coordenadas") or "").lower()
     if ra is None or dec is None or not any(tag in system for tag in ("ra/dec", "ecuatorial", "equatorial")):
         return False
+    if isinstance(ra, bool) or isinstance(dec, bool):
+        return False
     try:
         ra, dec = float(ra), float(dec)
     except (TypeError, ValueError):
         return False
     return 0 <= ra < 360 and -90 <= dec <= 90
+
+
+def validar_bounds_mapa(bounds):
+    """Valida bounds terrestres [lat_min, lon_min, lat_max, lon_max]."""
+    if not isinstance(bounds, (list, tuple)) or len(bounds) != 4:
+        return False
+    if any(isinstance(value, bool) for value in bounds):
+        return False
+    try:
+        lat_min, lon_min, lat_max, lon_max = (float(value) for value in bounds)
+    except (TypeError, ValueError):
+        return False
+    return (-90 <= lat_min < lat_max <= 90) and (-180 <= lon_min < lon_max <= 180)
 
 
 def validar(path, doi=False):
@@ -243,16 +270,8 @@ def validar(path, doi=False):
                     errs.append(f"{sid}: coordenadas de mapa ausentes, fuera de rango o sistema no declarado")
             for area in areas:
                 bounds = area.get("bounds") if isinstance(area, dict) else None
-                if not isinstance(bounds, (list, tuple)) or len(bounds) != 4:
-                    errs.append(f"{sid}: región de mapa sin bounds [lat_min, lon_min, lat_max, lon_max]")
-                    continue
-                try:
-                    lat_min, lon_min, lat_max, lon_max = (float(value) for value in bounds)
-                except (TypeError, ValueError):
-                    errs.append(f"{sid}: bounds de región no numéricos")
-                    continue
-                if not (-90 <= lat_min < lat_max <= 90) or not (-180 <= lon_min < lon_max <= 180):
-                    errs.append(f"{sid}: bounds de región ausentes, invertidos o fuera de rango")
+                if not validar_bounds_mapa(bounds):
+                    errs.append(f"{sid}: bounds de región ausentes, no numéricos, invertidos o fuera de rango")
                     continue
                 valid_areas += 1
             if not pts and not valid_areas:
