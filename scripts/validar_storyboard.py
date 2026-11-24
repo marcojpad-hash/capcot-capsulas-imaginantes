@@ -2,14 +2,18 @@
 """Valida el contrato textual CAPCOT y, en producción, los assets ya generados.
 
 Uso:
-  python3 scripts/validar_storyboard.py cola/entrada/AAAA-MM-DD_slug.json
-  python3 scripts/validar_storyboard.py salidas/AAAA-MM-DD_slug/storyboard.json --check-doi
+  python3 scripts/validar_storyboard.py proyectos/AAAA-MM-DD_slug/storyboard.json --structural-only
+  python3 scripts/validar_storyboard.py cola/entrada/AAAA-MM-DD_slug.json --check-doi
+--structural-only valida estructura sin exigir ni evaluar narrative_qa; no autoriza promoción.
+El modo completo sigue exigiendo narrative_qa PASS. --check-doi prueba Crossref y, si falla, el resolvedor doi.org.
 La etapa de preproducción no requiere ni acepta rutas de assets inexistentes.
 """
+import argparse
 import json
 import os
 import re
 import sys
+import urllib.parse
 import urllib.request
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -17,15 +21,31 @@ ARC = ["hook_medias_res", "desarrollo", "cierre_historia", "reflexion_o_pregunta
 VOICE = {"engine": "edge-tts", "voice_id": "es-MX-JorgeNeural", "language": "es-MX", "rate": "+7%", "pitch": "-2Hz"}
 
 def check_doi(doi):
-    try:
-        req = urllib.request.Request(
-            "https://api.crossref.org/works/" + doi,
-            headers={"User-Agent": "capcot-validador/2.0"}
-        )
-        with urllib.request.urlopen(req, timeout=20) as r:
-            return r.status == 200
-    except Exception:
+    """Comprueba primero Crossref y después el resolvedor DOI como respaldo."""
+    doi = str(doi or "").strip()
+    if not re.fullmatch(r"10\.\d{4,9}/\S+", doi):
         return False
+    encoded = urllib.parse.quote(doi, safe="/")
+    endpoints = (
+        "https://api.crossref.org/works/" + encoded,
+        "https://doi.org/" + encoded,
+    )
+    for url in endpoints:
+        try:
+            req = urllib.request.Request(
+                url,
+                headers={
+                    "User-Agent": "capcot-validador/3.0",
+                    "Accept": "application/json, text/html;q=0.9, */*;q=0.8",
+                },
+            )
+            with urllib.request.urlopen(req, timeout=20) as response:
+                status = int(getattr(response, "status", 200))
+                if 200 <= status < 400:
+                    return True
+        except Exception:
+            continue
+    return False
 
 def words(text):
     return re.findall(r"[A-Za-zÁÉÍÓÚÜÑáéíóúüñ0-9]+(?:['’.-][A-Za-zÁÉÍÓÚÜÑáéíóúüñ0-9]+)*", text or "")
@@ -116,7 +136,7 @@ def validar_punto_mapa(point):
     return 0 <= ra < 360 and -90 <= dec <= 90
 
 
-def validar(path, doi=False):
+def validar(path, doi=False, structural_only=False):
     errs, warns = [], []
     with open(path, encoding="utf-8") as f:
         sb = json.load(f)
@@ -126,8 +146,10 @@ def validar(path, doi=False):
         "project_id", "serie", "title", "titulo", "language", "aspect_ratio",
         "target_duration_seconds", "estructura", "trend_source", "estilo_id",
         "visual_identity", "typography_identity", "voice", "sources", "scenes",
-        "cortinilla_fuentes", "audio", "export", "publicacion", "narrative_contract", "narrative_qa"
+        "cortinilla_fuentes", "audio", "export", "publicacion", "narrative_contract", "approved_assets"
     ]
+    if not structural_only:
+        required.append("narrative_qa")
     for key in required:
         if key not in sb:
             errs.append(f"falta campo raíz: {key}")
@@ -135,7 +157,8 @@ def validar(path, doi=False):
         return errs, warns
 
     errs.extend(validar_narrative_contract(sb.get("narrative_contract")))
-    errs.extend(validar_narrative_qa(sb.get("narrative_qa")))
+    if not structural_only:
+        errs.extend(validar_narrative_qa(sb.get("narrative_qa")))
 
     if sb["serie"] != "Datos y ociosidades":
         errs.append("serie debe ser exactamente 'Datos y ociosidades'")
@@ -145,6 +168,9 @@ def validar(path, doi=False):
         errs.append("aspect_ratio debe ser 9:16")
     if sb["export"].get("resolution") != "1080x1920":
         errs.append("export.resolution debe ser 1080x1920")
+    if sb.get("production_mode", "storyboard_only") == "storyboard_only":
+        if sb["export"].get("render_status") != "NOT_GENERATED":
+            errs.append("export.render_status debe ser NOT_GENERATED en preproducción textual")
     if not 75 <= float(sb["target_duration_seconds"]) <= 90:
         errs.append("target_duration_seconds debe estar entre 75 y 90 segundos")
     if not 1 <= len(words(sb.get("titulo", ""))) <= 6:
@@ -310,9 +336,22 @@ def validar(path, doi=False):
     return errs, warns
 
 if __name__ == "__main__":
-    if len(sys.argv) < 2:
-        sys.exit(__doc__)
-    errors, warnings = validar(sys.argv[1], "--check-doi" in sys.argv)
+    parser = argparse.ArgumentParser(description="Validador estructural CAPCOT y compuertas de handoff.")
+    parser.add_argument("storyboard", help="Ruta del storyboard JSON")
+    parser.add_argument("--check-doi", action="store_true", help="Verifica DOI mediante Crossref y fallback doi.org")
+    parser.add_argument(
+        "--structural-only",
+        action="store_true",
+        help="Valida estructura sin exigir ni evaluar narrative_qa; no autoriza handoff",
+    )
+    args = parser.parse_args()
+    errors, warnings = validar(
+        args.storyboard,
+        doi=args.check_doi,
+        structural_only=args.structural_only,
+    )
+    if args.structural_only:
+        print("MODO: structural-only; narrative_qa no evaluado")
     for item in warnings:
         print("AVISO:", item)
     for item in errors:
