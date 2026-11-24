@@ -323,3 +323,13 @@ No se modificó main ni el paquete. El resultado no autoriza publicación, promo
 ### Precisión de Gitleaks — 2026-11-24
 
 Se leyó el log de [run #45439255464](https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/actions/runs/45439255464). El comando usa --log-opts=-1 y el log confirma literalmente **1 commits scanned**, ~15.92 KB y no leaks found. El commit escaneado fue 0c5374e, que solo añadió el paquete de magnetismo; no volvió a escanear la línea 46 del archivo de auditoría. Por tanto, el SUCCESS no limpia ni invalida el hallazgo anterior. La copia actual de main sigue conservando el valor con patrón de credencial en esa línea.
+
+
+### Cierre de referencias — 2026-11-24 10:42 CDMX
+
+- HEAD final de feature después de las actualizaciones de control y radar: f6015de0c4deebbb3d54d3297f404a73e0ee0980.
+- main permanece en 0c5374e692a461b55a545c7a0cf5d12a616dbc88.
+- Compare final: feature 1372 commits ahead y 571 behind; ramas diverged.
+- PR #3 sigue OPEN, draft, no mergeable y con 706 archivos modificados.
+- No apareció ejecución nueva del workflow de preproducción ni del dispatch en feature después de los commits documentales. El último run sigue siendo #45392906745 sobre aabd4f5, anterior al validador con --check-doi y sin esa bandera.
+- Los dos documentos de esta corrida se releen en GitHub: CONTROL_COLA y RADAR_CAPCOT. No se modificó ningún storyboard, data/*.json, main, secreto, estado Grok ni medio.
