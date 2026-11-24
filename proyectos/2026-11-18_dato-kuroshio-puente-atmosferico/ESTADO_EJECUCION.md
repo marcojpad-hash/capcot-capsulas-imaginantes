@@ -119,3 +119,18 @@ Ninguno de los dos comandos incluyó `--check-doi`. Estos runs confirman la vali
 - El log no ejecutó `tests/test_validar_storyboard_textual.py`; no se declara suite de pruebas ejecutada.
 - `cola/estado/2026-11-18_dato-kuroshio-puente-atmosferico.json` sigue ausente: `RECEPCION_GROK_NO_CONFIRMADA`.
 - Estado conservado: `BORRADOR_EN_PROYECTOS_NO_APTO_PARA_PROMOCION`. No copiar a cola ni emitir handoff mientras el DOI siga pendiente.
+
+
+## Revalidación CI posterior — 24-nov-2026 (run #45500710272)
+
+- Workflow: `CAPCOT — validar preproducción Kuroshio`.
+- Run: `45500710272`; job: `138822927244`; resultado: `success`.
+- Inicio: `2026-11-24T22:24:55Z`; finalización: `2026-11-24T22:25:06Z` (16:24:55–16:25:06 CDMX).
+- Rama y commit ejecutados: `feature/capcot-video-discovery-continuity`, `ba92e02ac0076041a32ca809f91cc3e2d4cb89bf` (HEAD vigente al corte).
+- Comando exacto: `python scripts/validar_storyboard.py proyectos/2026-11-18_dato-kuroshio-puente-atmosferico/storyboard.json`.
+- Resultado literal del validador: `OK`, salida 0. No se usó `--structural-only`.
+- El paso adicional comprobó `production_mode=storyboard_only`, `approved_assets=[]` y `export.render_status=NOT_GENERATED`; resultado literal: `Expediente textual íntegro; medios no generados; publicación no autorizada.`
+- El comando **no** incluyó `--check-doi`. El DOI `10.1038/s41561-026-02139-2` permanece `PENDIENTE_RESOLVEDOR`; Crossref no está acreditado y continúa bloqueando la promoción.
+- El run no ejecutó la suite `tests/test_validar_storyboard.py`.
+- `cola/estado/2026-11-18_dato-kuroshio-puente-atmosferico.json` sigue ausente: `RECEPCION_GROK_NO_CONFIRMADA`.
+- Estado conservado: `BORRADOR_EN_PROYECTOS_NO_APTO_PARA_PROMOCION`. No copiar a cola ni emitir handoff.
