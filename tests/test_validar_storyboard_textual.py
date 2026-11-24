@@ -77,9 +77,10 @@ class TextOnlyStoryboardContractTests(unittest.TestCase):
             status = 200
 
         class Connection:
-            def __init__(self, host, timeout):
+            def __init__(self, host, timeout, context):
                 self.host = host
                 self.timeout = timeout
+                self.context = context
                 self.request_args = None
 
             def request(self, method, path, headers):
