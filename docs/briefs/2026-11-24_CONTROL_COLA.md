@@ -172,3 +172,45 @@ No se creó storyboard, no se registró narrative_qa, no se promovió ni redispa
 
 ### Cierre de esta revalidación
 No se promovió ni redispatchó contenido. El radar queda como investigación, no selección; el slot queda agotado; los 32 recibos Grok siguen sin confirmación. La alerta Gitleaks y el bloqueo Semgrep permanecen abiertos.
+
+
+## Reconciliación posterior — 2026-11-24 10:00 CDMX
+
+### Autoridad de datos y cambios desde el corte anterior
+- HEAD de `main` releído: `a450e6273d1bafc4a1fc5099cf69e959dbfde91f` (24-nov, 14:20:23Z). HEAD de esta rama feature: `b59425a3b52e30b8c170cfdd736fa15dd58d3a6c`.
+- La comparación desde el HEAD documentado en el corte de 06:27 registra 15 commits en feature y no muestra cambios bajo `proyectos/` ni storyboards. No se repitieron QA narrativos ni se atribuyeron borradores nuevos.
+- Para la programación se tomó `main` como autoridad de solo lectura: `data/horarios.json` (actualización 23-nov), `data/tt_fb_alineacion_2026-11-24.json`, `data/miniaturas_auditoria_2026-11-21.json`, `data/rehechos_2026-11-22.json`, `data/publicaciones.json` y `data/rotacion.json`. La copia de `data/` en feature está desfasada respecto de main.
+- `publicaciones.json`: 62 registros; `rotacion.json`: 39. `miniaturas_auditoria` contiene 36 programaciones revisadas y `rehechos` contiene 9 reworks. La rotación no representa por sí sola la parrilla futura del 25–29; se contrastaron los snapshots específicos.
+
+### Corrección de conteo y colisiones
+La cifra anterior de **24-nov 5/5 queda corregida y supersedida**: el snapshot `tt_fb_alineacion_2026-11-24.json` contiene 8 IDs únicos de YouTube para el día, frente al máximo `MAX_POR_DIA=5`:
+- Dos publicados en la ventana de 07:00.
+- Uno preexistente programado a las 17:00.
+- Cinco pendientes en el snapshot a las 13:30, 15:00, 17:00, 19:00 y 23:30.
+- Hay dos colisiones de hora: 07:00 (dos publicaciones) y 17:00 (dos videos programados). La lista `colisiones_horario_mismo_publishAt` de miniaturas solo registra la de 17:00; la de 07:00 se detecta al cruzar con `publicaciones.json` y el snapshot de alineación. Es una omisión del inventario de colisiones.
+- 13:30 está fuera de la ventana activa (solo aparece como ventana de prueba), 15:00 y 19:00 están fuera de las ventanas activas; 23:30 es el slot fijo.
+
+Recuento reconciliado:
+- 24-nov: **8/5**, con dos colisiones de hora.
+- 25–28 nov: **7/5 cada día** (cinco programaciones base, incluidas las colisiones documentadas, más dos reworks a las 10:00 y 15:00).
+- 29-nov: **5/5** (cuatro programaciones base y un rework).
+- Ventanas activas en `main/data/horarios.json`: 06:30–07:30 y 16:30–18:00; slot fijo 23:30. Los reworks de 10:00/15:00 y las programaciones a 13:30/19:00 no pertenecen a las ventanas activas.
+- No hay slot libre confirmado. No se canceló, reprogramó ni duplicó ninguna publicación.
+
+### Handoffs y recepción
+- La carpeta `cola/estado/` no existe en feature; los 32 IDs auditados en el corte anterior siguen sin un archivo de estado individual y sus storyboards no cambiaron en los commits comparados. Estado: `RECEPCION_GROK_NO_CONFIRMADA`; ningún marcador de handoff se toma como recibo.
+- Issues #1065 (Thomas Harris) y #1066 (evolución cuántica) siguen abiertos en `agente-cero-costo`; sus marcadores de `handoffs/grok_inbox/` continúan `pending`. No se declara recepción ni entrega completada.
+- El paquete orbital en `main/cola/entrada/2026-11-09_dato-robot-ensambla-orbita/` conserva procesamiento y publicación preexistentes. `PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR`; no se despachó de nuevo.
+
+### Seguridad y CI — nueva evidencia
+- Gitleaks run [#45414450492](https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/actions/runs/45414450492), sobre `main` HEAD `a450e627`: escaneó 2,147 commits y ~19.06 MB; FAILURE, **3 hallazgos `generic-api-key`**:
+  1. `data/diagnostico_bajas_vistas_2026-11-23.json`, línea 9, commit `20f9ea52959622645d3a832fcf863fff5e95260e`.
+  2. `data/auditoria_hashtags_titulos_2026-11-24.json`, línea 46, commit `052c2f9725250dee9440ab4492b1e7c9fc72ab3a`.
+  3. `docs/SKILL_DRAFT_capsula_diaria.md`, línea 17, commit `a4ccf1974a8966d5801a991ac25609ef4d7cdca7`.
+- Los dos hallazgos en `data/` contienen una referencia al token local de CAPCOT; el tercero está en un ejemplo de comando y requiere triage. Los valores no se copiaron. La credencial no fue revocada ni rotada; no se editaron `data/*.json`, secretos ni historial.
+- Semgrep run [#45412987352](https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/actions/runs/45412987352), mismo HEAD de main: FAILURE, 37 hallazgos bloqueantes en 1,248 objetivos.
+- PR #3 sigue OPEN/DRAFT, 706 archivos, 84,518 adiciones y 1,699 eliminaciones; `mergeable=false`, estado `dirty`. CodeQL y Analyze (Python/Actions) aprobaron el HEAD `b59425a`, pero esos checks no acreditan estructura/DOI ni resuelven conflictos.
+- PR #15 sigue OPEN/no mergeable, con dos archivos y seis pruebas nuevas. En su HEAD `947df50`, Semgrep OSS terminó SUCCESS y Semgrep terminó FAILURE; no aparece una ejecución de pytest en sus checks. No se atribuye PASS a las 14 funciones de prueba del archivo.
+
+### Cierre de esta reconciliación
+No se creó storyboard ni cola, no se registró narrative_qa, no se disparó workflow, no se enviaron payloads, no se generaron medios y no se consumieron créditos. `main` y `data/*.json` permanecen sin cambios. La rotación/triage de credenciales y la remediación de Semgrep siguen siendo acciones de seguridad separadas; no se tocaron secretos ni permisos.
