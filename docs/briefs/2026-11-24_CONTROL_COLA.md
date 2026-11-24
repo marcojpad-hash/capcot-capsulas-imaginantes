@@ -214,3 +214,11 @@ Recuento reconciliado:
 
 ### Cierre de esta reconciliación
 No se creó storyboard ni cola, no se registró narrative_qa, no se disparó workflow, no se enviaron payloads, no se generaron medios y no se consumieron créditos. `main` y `data/*.json` permanecen sin cambios. La rotación/triage de credenciales y la remediación de Semgrep siguen siendo acciones de seguridad separadas; no se tocaron secretos ni permisos.
+
+
+## CI posterior a la actualización documental — 2026-11-24 10:00 CDMX
+
+- HEAD de feature verificado después de los dos commits de documentación: `0effc37f11309a084c7cb80d74982f7d58d14471`.
+- PR #3 recibió dos ejecuciones posteriores: [#45436538575](https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/actions/runs/45436538575) y [#45436549625](https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/actions/runs/45436549625). En ambas terminaron SUCCESS los jobs `Analyze (python)` y `Analyze (actions)`.
+- Estos jobs son análisis estático; no ejecutan `validar_storyboard.py --check-doi`, no hacen QA narrativo en frío y no resuelven el estado `dirty`/no mergeable de PR #3. No se atribuye validación estructural ni DOI.
+- No hubo cambios en `main`, `data/*.json`, storyboards, cola ni estados Grok por estas ejecuciones.
