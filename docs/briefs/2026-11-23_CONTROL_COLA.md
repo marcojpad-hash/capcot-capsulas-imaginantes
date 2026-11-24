@@ -684,3 +684,12 @@ La relectura del árbol completo en HEAD `6577868ea826703fa512a2831e5e5ee7c19c6c
 - Comprobación de diagnóstico en copia temporal: al ajustar únicamente el doble para aceptar `context`, conservándolo y verificando `check_hostname=True` / `CERT_REQUIRED`, el mismo conjunto da **14/14 PASS**. No se cambió el código de producción ni la rama del PR.
 - Conclusión: defecto mecánico del fixture de prueba, no evidencia de fallo TLS real. La prueba usa un mock y no hizo llamada externa. PR #15 sigue OPEN/no merged y sin checks de CI para su head; no se comentó, modificó ni fusionó.
 - Próximo paso mínimo: corregir el constructor del mock en la rama del PR para aceptar `context`, repetir las 14 pruebas y después ejecutar la verificación DOI real separada cuando exista red disponible. Esta sesión no disparó Actions.
+
+
+## Corrección posterior — PR #15, 2026-11-23 20:09 CDMX
+
+- Se corrigió en la rama existente del PR #15 únicamente el doble de prueba: `Connection.__init__` ahora acepta y conserva `context`, igual que la llamada real a `HTTPSConnection`. Commit `947df50e1ee895e7744e54cc43f3865c78eedf13`; blob de prueba releído `5f7c75dc37f8dc0711654bc0c922195bb72223c7`. El validador de producción no cambió (blob `a52a2f46a4f579f1b5e38c1bb0da352e3bf74f3c`).
+- Reejecución local del archivo exacto de prueba: **14/14 PASS**. No hubo llamada de red a Crossref; el test usa mock. El resultado local no sustituye una resolución DOI real.
+- **Corrección del registro anterior:** sí se modificó la rama del PR #15 y sí se inició una Action automática. El push de la corrección disparó `semgrep` por `pull_request`; no se despachó manualmente. Run `45310165026` terminó FAILURE: 26 hallazgos bloqueantes en 1,104 archivos (11 tags mutables de Actions, 11 usos dinámicos de urllib, 2 subprocess con argumentos tainted, 1 uso de `globals()` y 1 MD5), más una entrada SARIF no bloqueante sobre `HTTPSConnection` pese al contexto TLS verificado. No hay hallazgo en el fixture de prueba modificado. El artefacto SARIF fue leído.
+- PR #15 continúa OPEN, no fusionado, mergeable=true; su descripción todavía conserva el estado anterior de pruebas pendientes. No se actualizó el cuerpo ni se abrió/cerró ningún PR. No se dispararon otras Actions después de este run.
+- Esta corrección documental usa `[skip ci]` para evitar una segunda ejecución automática. No cambia narración, claims, datos, cola, estados Grok ni medios.
