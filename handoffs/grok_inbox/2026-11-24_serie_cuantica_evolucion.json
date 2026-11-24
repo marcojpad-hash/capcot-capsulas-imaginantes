@@ -1,0 +1,14 @@
+{
+  "event": "capcot.package.ready",
+  "status": "pending",
+  "receipt_id": "repo-2026-11-24_serie_cuantica_evolucion-3f9c18520fc6",
+  "created_at": "2026-11-24T03:20:40-06:00",
+  "project_id": "2026-11-24_serie_cuantica_evolucion",
+  "branch": "main",
+  "commit_sha": "3f9c18520fc640e8dbcbeda9f2fc5b6208b7d6f9",
+  "package_path": "guiones/serie_cuantica_evolucion/BRIEF_PARA_GROK.md",
+  "package_url": "https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/blob/main/guiones/serie_cuantica_evolucion/BRIEF_PARA_GROK.md",
+  "note": "Pedido de serie (5 cápsulas) registrado en el bus (Issue #1066). Brief en commit 3f9c185. Grok debe devolver guion y frames/video en cola/entrada/; no publicar.",
+  "bus_issue": "https://github.com/marcojpad-hash/agente-cero-costo/issues/1066",
+  "bus_event": "conector/bus/gh-issue-1066.json"
+}
