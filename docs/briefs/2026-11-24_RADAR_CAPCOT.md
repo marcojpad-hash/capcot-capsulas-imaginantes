@@ -359,3 +359,31 @@ Se releen los 32 JSON existentes en `proyectos/`. Los 32 contienen `narrative_qa
 ### 7. Confirmación de recepción Grok
 
 Se consultaron los 32 paths `cola/estado/<project_id>.json` de estos proyectos; los 32 devolvieron HTTP 404 `Not Found`. Estado para cada uno: `RECEPCION_GROK_NO_CONFIRMADA`. No se creó ni editó ningún archivo de estado. Los marcadores de `handoffs/grok_inbox/` no sustituyen ese recibo.
+
+
+## Corte complementario de investigación — 2026-11-24 10:00 CDMX
+
+### Ingesta y señal de tendencias
+- Se releó `scripts/tendencias.py` y su lista de 10 feeds científicos: ScienceDaily (ciencia, salud y espacio), Phys.org, NASA, ESA, Nature, EurekAlert, SINC y UNAM Global; también Google Trends RSS México.
+- No se ejecutó el script Python en este entorno. Los intentos de lectura RSS mediante el lector web devolvieron: ScienceDaily (tres feeds) HTTP 400 `Unsupported content-type: application/xml`; Phys.org HTTP 400 `Unsupported content-type: text/xml`; NASA y Nature HTTP 400 `Unsupported content-type: application/rss+xml`; ESA HTTP 404 `Not Found`; EurekAlert, SINC y Google Trends RSS: URL no accesible por el lector. UNAM Global devolvió HTTP 400 `Unsupported content-type: application/rss+xml`. Estos errores describen el lector web, no una ejecución fallida del script.
+- Respaldo oficial: la página HTML de Google Trends México sí abrió. Muestra 167 tendencias de las últimas 24 h; la primera página (25 términos) está dominada por deportes, entretenimiento, noticias y comercio. No se encontró en esa primera página un tema admisible de ciencia/naturaleza/cocina/cuerpo/espacio. No se seleccionó tema a partir de Trends.
+
+### Tres candidatos científicos adicionales — fuentes primarias
+Los tres artículos siguientes aparecen como manuscritos aceptados de *Monthly Notices of the Royal Astronomical Society*, publicados en línea el 23-nov-2026. Sus DOI resuelven a la página editorial de Oxford Academic. No son storyboards ni selecciones; se conservan como candidatos para un slot futuro.
+
+1. **Dos ráfagas rápidas de radio muy dispersas.** Joscha N. Jahns-Schindler y colaboradores, DOI [10.1093/mnras/stag2241](https://doi.org/10.1093/mnras/stag2241), [artículo primario](https://academic.oup.com/mnras/advance-article/doi/10.1093/mnras/stag2241/9116689). El artículo informa dos FRB con tiempos de dispersión de 34 ± 6 ms y 300 ± 48 ms a 1 GHz. Para FRB 240312D, la pantalla dispersora se acota a unos 10 pc de la fuente; una nebulosa de viento de púlsar es la explicación más probable, pero los autores indican que el modelo no resulta completamente satisfactorio y requiere una orientación afinada. **Límite:** son dos eventos; no presentar el origen como resuelto.
+
+2. **Contaminación metálica que se hunde y se extiende en enanas blancas magnéticas.** Elad Shiftan y Sivan Ginzburg, DOI [10.1093/mnras/stag2245](https://doi.org/10.1093/mnras/stag2245), [artículo primario](https://academic.oup.com/mnras/advance-article/doi/10.1093/mnras/stag2245/9116670). El modelo obtiene (t_{\downarrow}/t_{\leftrightarrow}\propto T^{8/3}) para comparar hundimiento gravitacional y dispersión horizontal de metales; incorpora campos magnéticos en la estructura estelar. **Límite:** el propio artículo dice que el mecanismo calculado no basta para explicar las enanas blancas frías que muestran parches; la variación de acreción en escalas de una década es una posible solución, no una conclusión demostrada.
+
+3. **El corte ionosférico como posible tecnofirma de radio.** Michael A. Garrett, DOI [10.1093/mnras/stag2244](https://doi.org/10.1093/mnras/stag2244), [artículo primario](https://academic.oup.com/mnras/advance-article/doi/10.1093/mnras/stag2244/9116669). El modelo estima cortes de 5–40 MHz para la mayoría de planetas terrestres en zona habitable, potencialmente cerca de 100 MHz en entornos extremos; la frecuencia de semiescape podría variar alrededor de 40–50 % durante la órbita. **Límite:** es un diagnóstico teórico propuesto, no una detección de tecnología extraterrestre; un corte de baja frecuencia aislado no sería único.
+
+### Orden de investigación
+- Potencial narrativo más claro: FRB 240312D, por la distancia estimada de la pantalla dispersora y la hipótesis de un entorno cercano a la fuente; mantener explícita la incertidumbre del modelo.
+- Mejor visualización de mecanismo: metales que se hunden frente a los que se dispersan sobre una enana blanca; explicar que el modelo todavía no resuelve los casos fríos observados.
+- Gancho más llamativo, con mayor riesgo de sobreinterpretación: tecnofirma ionosférica; el guion tendría que empezar por la física del plasma y dejar claro que no se detectó ninguna señal extraterrestre.
+- Ninguno se selecciona: el calendario 24–29 nov no tiene cupo libre y presenta sobrecapacidad/conflictos ya documentados. No se creó storyboard ni se marcó producción.
+
+### Verificación DOI
+- DOI resolver: confirmado para `stag2241`, `stag2244` y `stag2245` mediante las rutas DOI que redirigen a Oxford Academic.
+- Crossref REST no fue accesible desde el lector web durante este corte; la verificación se apoya en el resolvedor DOI y la ficha editorial primaria.
+- Las páginas de Oxford identifican los tres como *accepted manuscript*; pueden existir cambios menores en la versión final tipográfica.
