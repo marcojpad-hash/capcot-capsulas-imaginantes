@@ -408,3 +408,5 @@ Se releyeron las copias de proyecto y cola en main:
 - Se intentó de nuevo el acceso a feeds: Nature RSS devolvió `DisabledError`; ScienceDaily `Unsupported content-type: application/xml`; NASA `Unsupported content-type: application/rss+xml`; EurekAlert y Google Trends MX devolvieron `URL not accessible via this tool`. No se cambió el contenido de `data/*.json`.
 - La búsqueda oficial de respaldo mantiene cinco candidatos en el radar; dos DOI tienen verificación disponible (APS, 21-nov; Nature Astronomy, 20-nov). Los DOI de HK97, lunar y pecio romano no devolvieron una coincidencia exacta verificable en esta pasada; quedan **PENDING_SOURCE**. Las llamadas directas a Crossref API tampoco fueron accesibles desde esta interfaz.
 - No hay slot libre autorizado; no se creó storyboard nuevo ni se seleccionó candidato para producción.
+
+- El cambio de main en `data/endscreens_rotacion.json` deja una asignación nueva marcada `pendiente_studio=true`; no se aplicó en YouTube Studio ni se realizó acción externa.
