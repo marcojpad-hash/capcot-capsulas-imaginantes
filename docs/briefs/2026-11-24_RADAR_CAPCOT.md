@@ -167,3 +167,195 @@ Se reintentaron las diez URL de `FEEDS_CIENCIA` de `scripts/tendencias.py` y Goo
 **Respaldo HTML oficial:** Google Trends México abrió correctamente en la vista «Past 24 hours»: 174 tendencias totales. La primera página (25 términos) contiene principalmente deportes, entretenimiento, trámites y consultas generales; «frío» es una señal meteorológica, no un candidato de la línea editorial. No se encontró un término elegible de ciencia, naturaleza, cocina, cuerpo o espacio. No se fuerza selección.
 
 Los cuatro candidatos ya documentados en este radar permanecen en sus estados previos: Varroa y plankton con texto primario consultado pero DOI/resolvedor pendiente; glaciares y grafito en `PENDING_SOURCE`. No se crea storyboard: el cupo 24–29 sigue agotado y ningún candidato supera todavía la compuerta independiente de DOI.
+
+
+## Actualización de ejecución — 2026-11-24 07:55 CDMX
+
+### 1. Slot, ocupación y decisión
+
+**Resultado: `NO_SLOT_POR_CUPO_DIARIO`; no crear storyboard principal ni storyboard `dato_del_dia` 23:30 para esta fecha.**
+
+- La rama `feature/capcot-video-discovery-continuity` ya contiene este radar. No se creó un segundo brief.
+- No existe `data/horario_2026-11-24.json` en la rama. El contrato operativo §3 conserva cinco slots diarios y `scripts/rotacion.py` fija `MAX_POR_DIA = 5`; `23:30` sigue siendo uno de los slots autorizados, no una exclusión global.
+- La comprobación de solo lectura de `main/data/miniaturas_auditoria_2026-11-21.json` registra cinco IDs con `publishAt` para el 24-nov:
+  - 07:00 — `RBUcAeptGAU`
+  - 13:30 — `WtuxaKrS4-Q`
+  - 17:00 — `cGb7Z0ZEz8w` y `_YzBY4OfUeo` (misma hora; colisión)
+  - 19:00 — `9W9nn72rmfE`
+- La cuenta es 5/5 IDs programados. La colisión de 17:00 permanece intacta. No se cancela, mueve ni reprograma nada. Aunque 23:30 no aparece como ID en ese snapshot, el cupo diario ya está agotado.
+- La política horaria de main actualizada el 23-nov mantiene mañana y tarde, con 23:30 fijo; 19:00 figura retirado y 13:30 en prueba. Los registros preexistentes siguen contando para el límite; no se reinterpretan como ventanas nuevas.
+- No se encontró proyecto, storyboard ni paquete de cola de fecha 24-nov en el árbol de main. Los dos marcadores de `main/handoffs/grok_inbox/` del 24-nov son solicitudes de series y muestran `status=pending`; no son recibos ni ocupan por sí mismos un slot editorial.
+- En feature no existe proyecto, salida ni entrada de cola para 24-nov. No hay estado Grok que crear. El slot 23:30 se deja `NO_SLOT_POR_CUPO_DIARIO`; además, la fuente de fecha actual propuesta abajo conserva `PENDING_SOURCE` por resolución DOI no completada.
+
+### 2. Ingesta RSS y Google Trends
+
+Se intentó abrir cada uno de los diez feeds científicos declarados en `scripts/tendencias.py`, además de Google Trends RSS México. **No se descargó ni parseó XML.** Errores exactos observados:
+
+| Feed | Error |
+|---|---|
+| ScienceDaily ciencia | `400 Unsupported content-type: application/xml` |
+| ScienceDaily salud | `400 Unsupported content-type: application/xml` |
+| ScienceDaily espacio | `400 Unsupported content-type: application/xml` |
+| Phys.org | `400 Unsupported content-type: text/xml` |
+| NASA | `400 Unsupported content-type: application/rss+xml` |
+| ESA Space Science | `404 Not Found` |
+| Nature RSS | `500 Redirected to https://idp.nature.com/authorize?response_type=cookie&client_id=grover&redirect_uri=https://www.nature.com/nature.rss`; destino no accesible |
+| EurekAlert | `URL https://www.eurekalert.org/rss/news.xml is not accessible via this tool` |
+| SINC | `URL https://www.agenciasinc.es/rss is not accessible via this tool` |
+| UNAM Global | `400 Unsupported content-type: application/rss+xml` |
+| Google Trends RSS México | `URL https://trends.google.com/trending/rss?geo=MX is not accessible via this tool` |
+
+**Respaldo oficial:** Google Trends Trending Now, México, últimas 24 horas, muestra 179 tendencias; la primera página contiene 25. La señal `frío` registra 2K+ búsquedas, +500%, iniciada hace 11 h, relacionada con masa de aire/aviso de frente frío. El resto visible se concentra en deporte, entretenimiento, trámites y actualidad general. No aparece un término elegible de ciencia, naturaleza, cocina, cuerpo o espacio. `frío` es una señal meteorológica, no evidencia de un paper ni una oportunidad científica suficiente por sí sola.
+
+### 3. Candidatos recientes (ventana 18–24 nov)
+
+Todos están dentro de los últimos siete días. Las URLs son páginas editoriales primarias identificadas en la búsqueda. El resolvedor `doi.org` devolvió `URL ... is not accessible via this tool` para los cinco DOI; los intentos a Crossref REST tampoco dieron respuesta verificable. Por tanto, **ningún DOI de esta lista se declara validado**. Los resultados de Nature se obtuvieron en extractos de sus páginas editoriales; las aperturas directas de varias páginas devolvieron redirección 500 a `idp.nature.com`.
+
+#### A. Evidencia de magnetismo p-wave en EuSi
+
+- **Línea:** Actualidad / dato científico / materiales y tecnología.
+- **Publicación:** Nature, 18-nov-2026.
+- **Fuente primaria:** https://www.nature.com/articles/s41586-026-11295-9
+- **DOI declarado por la página:** `10.1038/s41586-026-11295-9` — `PENDING_RESOLVEDOR`.
+- **Observado:** difracción de neutrones identifica una fase espiral quiral entre 33.4 y 62 K; ARPES y spin-ARPES aportan evidencia de una textura de espín p-wave; las separaciones de energía superan 100 meV y se observan dominios magnéticos de aproximadamente 10 μm.
+- **Cálculo:** no se añade cifra derivada.
+- **Inferencia permitida:** EuSi es una plataforma experimental para investigar magnetismo p-wave y posibles respuestas electrónicas; no demuestra un dispositivo ni una aplicación comercial.
+- **Tendencia:** sin señal directa en las primeras 25 tendencias de México.
+- **Oportunidad:** alto contraste narrativo entre un metal químicamente simple y una estructura magnética no convencional.
+- **Público/ocasión:** público adulto de ciencia, materiales y tecnología.
+- **Riesgos:** explicar que p-wave describe simetría/textura de espín; no confundirlo con superconductividad ya demostrada ni prometer tecnología disponible.
+- **Verificación:** página/abstract primario identificado; DOI sin resolver.
+
+#### B. Interacciones virus-huésped en sedimentos de montes submarinos
+
+- **Línea:** Actualidad / naturaleza / ecología marina.
+- **Publicación:** Communications Biology, 23-nov-2026.
+- **Fuente primaria:** https://www.nature.com/articles/s42003-026-11405-3
+- **DOI declarado:** `10.1038/s42003-026-11405-3` — `PENDING_RESOLVEDOR`.
+- **Observado:** análisis metagenómico y metatranscriptómico de sedimentos del mar de China Meridional recupera 85 genomas ensamblados, 1,592 unidades virales y 610 vínculos virus-huésped predichos. El artículo informa que 527 unidades (33%) codifican genes asociados con respuesta al estrés y reparación de ADN; una parte se clasifica como genes metabólicos auxiliares putativos.
+- **Cálculo:** 527 / 1,592 = 33.1%, consistente con el 33% redondeado del artículo.
+- **Inferencia permitida:** los resultados sugieren posibles contribuciones virales a procesos de adaptación microbiana; los vínculos son predichos y la señal transcripcional no prueba por sí sola que los virus aumenten la supervivencia del huésped.
+- **Tendencia:** sin señal directa en Trends MX visible.
+- **Oportunidad:** buen conflicto narrativo — virus no solo como agentes de infección, sino como posibles moduladores de comunidades microbianas extremas.
+- **Público/ocasión:** naturaleza, océano y microbiología para público general adulto.
+- **Riesgos:** no personificar virus, no afirmar simbiosis beneficiosa probada; faltan coordenadas de muestreo verificadas para una futura capa de mapa.
+- **Verificación:** abstract de la fuente primaria identificado; DOI sin resolver; mapa pendiente.
+
+#### C. Comparación global de eficiencias para retirar CO₂ mediante perturbaciones geoquímicas oceánicas
+
+- **Línea:** Actualidad / clima-geología / dato científico.
+- **Publicación:** Nature Communications, 24-nov-2026.
+- **Fuente primaria:** https://www.nature.com/articles/s41467-026-78856-4
+- **DOI declarado:** `10.1038/s41467-026-78856-4` — `PENDING_RESOLVEDOR`.
+- **Observado:** el estudio construye un marco con un modelo biogeoquímico oceánico global para comparar aumento de alcalinidad (OAE), extracción de carbono inorgánico disuelto (DOR) y adición combinada (ADA). Las simulaciones de 15 años muestran variación espacial y estacional; la eficiencia DOR es mayor en verano que en invierno en el modelo, con respuesta inicial más rápida en regiones ecuatoriales y subpolares y menor en zonas de formación de aguas profundas.
+- **Cálculo:** no se deriva una cifra adicional del extracto consultado.
+- **Inferencia permitida:** el resultado cuestiona tratar la retirada de CO₂ oceánica como una eficiencia uniforme: ubicación, estación y química de fondo importan.
+- **Tendencia:** sin señal directa en las primeras 25 tendencias de México.
+- **Oportunidad:** **recomendación principal para un próximo slot libre**, por mecanismo explicable y cartografía global/estacional compatible con mapa y gráfico.
+- **Público/ocasión:** público general adulto interesado en clima, océanos y soluciones climáticas.
+- **Riesgos:** es modelación, no ensayo de campo; no convertir eficiencia simulada en toneladas retiradas en el mundo real ni presentar una técnica como solución ya escalada.
+- **Verificación:** extracto de página editorial primaria con resultados; DOI sin resolver. No se redacta storyboard por el cupo agotado y por la compuerta DOI pendiente.
+
+#### D. Mapa de pausas de la replicación de ADN a escala de molécula individual
+
+- **Línea:** Actualidad / dato científico / cuerpo y biología molecular.
+- **Publicación:** Nature Communications, 24-nov-2026.
+- **Fuente primaria:** https://www.nature.com/articles/s41467-026-79296-w
+- **DOI declarado:** `10.1038/s41467-026-79296-w` — `PENDING_RESOLVEDOR`.
+- **Observado:** en levadura de gemación, el equipo analizó 330,000 trayectorias de replisomas e identificó alrededor de 17,000 pausas; la duración media estimada fue 4.4 ± 1.6 minutos. La técnica usa incorporación de BrdU y secuenciación de lectura larga para inferir ubicación, dirección y duración aproximada de las pausas.
+- **Cálculo:** 17,000 / 330,000 ≈ 5.15% de las trayectorias analizadas; el artículo lo resume como aproximadamente una pausa por cada 20 trayectorias. No extrapolar ese porcentaje a células humanas.
+- **Inferencia permitida:** los conflictos entre transcripción y replicación contribuyen a pausas; los conflictos de frente a frente son más problemáticos que los codireccionales en el sistema estudiado.
+- **Tendencia:** sin señal directa en Trends MX visible.
+- **Oportunidad:** visualización microscópica clara de una maquinaria que se detiene y reanuda; buen candidato para público adulto interesado en genética.
+- **Público/ocasión:** ciencia/cuerpo, público general adulto.
+- **Riesgos:** organismo de estudio = levadura; la duración es aproximada y depende de supuestos sobre velocidad de horquilla; no afirmar que cada pausa produce mutación o enfermedad.
+- **Verificación:** texto de la fuente primaria recuperado en extracto editorial amplio; DOI sin resolver.
+
+#### E. Huella de biodiversidad de la alimentación y crecimiento económico
+
+- **Línea:** Actualidad / naturaleza / alimentación y ambiente.
+- **Publicación:** Nature Food, 23-nov-2026.
+- **Fuente primaria:** https://www.nature.com/articles/s43016-026-01465-3
+- **DOI declarado:** `10.1038/s43016-026-01465-3` — `PENDING_RESOLVEDOR`.
+- **Observado:** el estudio cuantifica huellas de biodiversidad basadas en uso de suelo para consumo alimentario en 158 países entre 1995 y 2020. El desacoplamiento con el crecimiento económico es más probable a ingresos per cápita altos; es más fuerte para alimentos vegetales que animales y más débil para carne de rumiantes. Parte de la mejora doméstica de países de altos ingresos queda compensada por impactos desplazados mediante comercio internacional.
+- **Cálculo:** no se añade cifra derivada.
+- **Inferencia permitida:** reducir impactos locales no garantiza reducir la huella total si la producción se desplaza a otros países.
+- **Tendencia:** sin señal directa en Trends MX visible.
+- **Oportunidad:** conectar una decisión cotidiana de alimentación con la geografía invisible de su producción.
+- **Público/ocasión:** público general, alimentación y naturaleza.
+- **Riesgos:** el indicador se basa en uso de suelo; no cubre por sí solo todos los impulsores de pérdida de biodiversidad. No decir que los países ricos resolvieron el problema.
+- **Verificación:** abstract de la fuente primaria identificado; DOI sin resolver.
+
+**Candidato excluido por fecha:** la nota ScienceDaily del 24-nov sobre impermeabilizantes de un naufragio romano remite a un artículo original de *Frontiers in Materials* fechado 24-abr-2026, fuera de la ventana de siete días. No se cuenta como publicación nueva del 24-nov.
+
+### 4. Recomendación y límites de staging
+
+- **Recomendación editorial, no selección final:** reservar el estudio de eficiencia oceánica de CO₂ para el siguiente slot que realmente se libere. Ofrece un mecanismo único, un contraste estacional/latitudinal y una capa de mapa basada en resultados globales; antes de storyboard deben resolverse DOI/URL y leerse la fuente primaria completa.
+- El candidato de ADN ofrece una segunda ruta fuerte, pero la cartografía debe resolverse con coordenadas genómicas verificables; no sustituirlas por un mapa geográfico ficticio.
+- **23:30:** no crear proyecto separado para 24-nov. Motivo operativo: cupo diario 5/5. Motivo de fuente adicional: DOI de la fuente publicada hoy sigue `PENDING_RESOLVEDOR`. No se crea `narrative_qa`, no se promueve y no se deja nada en cola.
+- No se crea storyboard principal para el 24-nov: no existe slot/cupo libre. Se conserva el radar único existente y no se modifica ningún proyecto ajeno.
+
+### 5. Seguimiento técnico — sin cambio documental
+
+Revisión de documentación oficial al corte 07:55 CDMX:
+
+- **Graph API:** el changelog canónico oficial declara v27.0 como la versión más reciente, introducida el 4-nov-2026; ya está registrada en §9.9–9.10 de este informe técnico.
+- **Facebook Page Insights:** la referencia oficial v27.0 mantiene el aviso genérico de deprecación para el 15-jun-2026, junto con límites de 100 likes, actualización aproximada cada 24 h, retención de dos años, ventana de consulta de 90 días, umbral demográfico de 100 personas y exclusión de interacciones de Reels. La discrepancia de la lista detallada ya está documentada en §9.11; no apareció una lista reconciliada nueva.
+- **Instagram Insights:** la guía confirma las rutas Unified Login, Instagram Login y Facebook Login, además de 90 días de retención y respuestas vacías cuando un dato no existe. El changelog de Instagram no muestra una entrada posterior al 30-jul-2026; las notas de AI label y `link_clicks` ya están documentadas.
+- **Google Trends API alfa:** continúa limitada por solicitud, con ventana de cinco años, agregaciones diaria/semanal/mensual/anual, regiones/subregiones y escala consistente. No se observó cambio de contrato.
+- **Decisión:** no reescribir `docs/INVESTIGACION_API_META_Y_GOOGLE_TRENDS.md`; no apareció cambio nuevo relevante sustentado para el MVP.
+
+### 6. QA narrativo preexistente — relectura de 32 storyboards canónicos
+
+Se releen los 32 JSON existentes en `proyectos/`. Los 32 contienen `narrative_qa`; **12 PASS y 20 FAIL**. En todos, `review_basis` aparece literalmente como `lectura_en_frio_solo_narracion`. La columna `checks` codifica los siete booleanos en este orden exacto:
+
+1. `pregunta_central_reconstruible` (P)
+2. `apertura_in_medias_res` (IM)
+3. `progresion_por_escena` (PR)
+4. `transiciones_causales` (TC)
+5. `giro_cientifico_explicado` (GC)
+6. `limite_evidencia_explicito` (LE)
+7. `payoff_cierre_apertura` (PA)
+
+`1=true`; `0=false`. `reviewed_at=NO_PRESENTE_EN_JSON` significa que el campo no aparece en el JSON leído, no que se haya inferido una fecha.
+
+| project_id | status/score | reviewed_at | checks P-IM-PR-TC-GC-LE-PA | critical_flags |
+|---|---:|---|---|---|
+| 2026-11-05_comida-palomitas | FAIL/82 | 2026-11-18T15:00:00-06:00 | 1001111 | [`APERTURA_DEFINICIONAL_NO_IN_MEDIAS_RES`, `ESCENA_6_REITERA_CAUSAS_DE_GRANOS_NO_REVENTADOS_SIN_INFORMACION_NUEVA`] |
+| 2026-11-05_inter-arboles-se-comunican | FAIL/78 | 2026-11-18T15:00:00-06:00 | 1011111 | [`APERTURA_GENERICA_NO_IN_MEDIAS_RES`] |
+| 2026-11-05_inter-rayo-globular | FAIL/81 | 2026-11-18T15:00:00-06:00 | 1011111 | [`APERTURA_HISTORICA_DESCRIPTIVA_NO_IN_MEDIAS_RES`] |
+| 2026-11-05_kids-dia-en-venus | PASS/88 | 2026-11-18T15:00:00-06:00 | 1111111 | [] |
+| 2026-11-06_comida-aguacate-negro | FAIL/79 | 2026-11-18T15:00:00-06:00 | 1100111 | [`REPETICION_ESCENAS_5_6_SIN_AVANCE_CAUSAL`] |
+| 2026-11-06_inter-arena-cantante | PASS/94 | 2026-11-18T15:00:00-06:00 | 1111111 | [] |
+| 2026-11-06_inter-ranas-congeladas | FAIL/83 | 2026-11-18T15:00:00-06:00 | 1100111 | [`REPETICION_ESCENAS_5_6_LIMITES_DE_ESPECIE_Y_CONDICIONES`] |
+| 2026-11-06_kids-ballena-azul-corazon | FAIL/80 | 2026-11-18T15:00:00-06:00 | 1111110 | [`PAYOFF_SOBREAFIRMA_CASI_SE_DETIENE`] |
+| 2026-11-07_comida-hielo-caliente | FAIL/81 | 2026-11-18T15:00:00-06:00 | 1011111 | [`APERTURA_DE_CREENCIAS_NO_IN_MEDIAS_RES`] |
+| 2026-11-07_inter-nubes-pesan | FAIL/78 | 2026-11-18T15:00:00-06:00 | 1100110 | [`ESCENA_7_REITERA_CIFRA_Y_LIMITE_SIN_PAYOFF_DE_SUSPENSION`] |
+| 2026-11-07_inter-pulpo-suenos | FAIL/72 | 2026-11-18T15:00:00-06:00 | 1100000 | [`FUENTE_PRIMARIA_CORRESPONDE_A_OCTOPUS_LAQUEUS_NO_INSULARIS`, `REPETICION_ESCENAS_5_6_Y_PAYOFF_VAGO`] |
+| 2026-11-07_kids-huesos-bebe | FAIL/82 | 2026-11-18T15:00:00-06:00 | 1100111 | [`ESCENA_6_REPITE_VARIACION_DE_CONTEO_Y_FUSION`] |
+| 2026-11-14_dato-microplasticos-pantanal | PASS/88 | 2026-11-14T15:04:13-06:00 | 1111111 | [] |
+| 2026-11-15_dato-dia-diapausa-lestes-sponsa | PASS/90 | 2026-11-15T15:51:23-06:00 | 1111111 | [] |
+| 2026-11-15_dato-quasar-pareja-cosmic-dawn | FAIL/0 | 2026-11-23T04:02:29-06:00 | 0000000 | [`REVISION_INDEPENDIENTE_AUSENTE`] |
+| 2026-11-16_dato-polen-desenreda-nanotubos | PASS/91 | 2026-11-16T15:45:46-06:00 | 1111111 | [] |
+| 2026-11-17_dato-suelo-dos-relojes | PASS/89 | 2026-11-17T15:35:22-06:00 | 1111111 | [] |
+| 2026-11-18_dato-catorce-campos-hidrotermales | FAIL/68 | 2026-11-19T15:04:50-06:00 | 0100010 | [`PREGUNTA_CENTRAL_NO_RECONSTRUIBLE`, `SECUENCIA_DE_HALLAZGOS_SIN_PROGRESION_CAUSAL`, `GIRO_CIENTIFICO_NOMBRADO_PERO_NO_EXPLICADO`, `CIERRE_RESUMEN_SIN_PAYOFF`] |
+| 2026-11-18_dato-kuroshio-puente-atmosferico | PASS/90 | 2026-11-18T15:00:00-06:00 | 1111111 | [] |
+| 2026-11-19_dato-dia-luz-dos-manos-oro-poroso | PASS/91 | 2026-11-19T15:04:50-06:00 | 1111111 | [] |
+| 2026-11-19_dato-estrella-dentro-de-estrella | PASS/90 | 2026-11-19T15:04:50-06:00 | 1111111 | [] |
+| 2026-11-20_dato-dia-atlantico-humedad-sapropeles | PASS/91 | NO_PRESENTE_EN_JSON | 1111111 | [] |
+| 2026-11-20_dato-marea-cerebral-en-sueno | FAIL/82 | 2026-11-23T06:23:43-06:00 | 1111111 | [`STAKES_NO_EXPLICADOS`] |
+| 2026-11-21_fentale-metano-sin-erupcion | PASS/90 | 2026-11-20T16:11:24-06:00 | 1111111 | [] |
+| 2026-11-21_homo-erectus-selva-tropical | FAIL/83 | 2026-11-20T22:06:10-06:00 | 1111011 | [`GIRO_CIENTIFICO_NOMBRADO_PERO_NO_EXPLICADO`] |
+| 2026-11-21_pulsar-gamma-reticulo | FAIL/83 | 2026-11-20T15:41:24-06:00 | 1111011 | [`GIRO_CIENTIFICO_NOMBRADO_PERO_NO_EXPLICADO`] |
+| 2026-11-22_bao-estrella-fusion-andromeda | FAIL/84 | 2026-11-21T13:56:37-06:00 | 1111111 | [`STAKES_NO_EXPLICADOS`] |
+| 2026-11-22_genes-estatura-etapas | FAIL/72 | 2026-11-22T15:54:03-06:00 | 1000011 | [`APERTURA_DEFINICIONAL_NO_IN_MEDIAS_RES`, `MAPA_DE_INSTITUCIONES_ROMPE_CONTINUIDAD_NARRATIVA`, `GIRO_CIENTIFICO_NOMBRADO_SIN_MECANISMO_EXPLICADO`] |
+| 2026-11-22_voyager-1-un-dia-luz | FAIL/83 | NO_PRESENTE_EN_JSON | 1111111 | [`FECHA_DE_HITO_Y_CONFIRMACION_CONFUNDIDAS`] |
+| 2026-11-22_yubarta-genoma-soplo | PASS/90 | NO_PRESENTE_EN_JSON | 1111111 | [] |
+| 2026-11-23_supersequias-722-eventos | FAIL/82 | 2026-11-23T00:57:16-06:00 | 1111111 | [`STAKES_NO_EXPLICADOS`] |
+| 2026-11-23_tropical-biodiversity-turnover | FAIL/82 | 2026-11-21T14:24:25-06:00 | 1111111 | [`STAKES_NO_EXPLICADOS`] |
+
+**Nota de integridad histórica:** `2026-11-05_inter-arboles-se-comunican` sigue bloqueado por desajuste de tema: su storyboard trata respiración nocturna, mientras el horario canónico pide red micorrícica/wood-wide web y Karst et al. 2023. No se presenta como equivalente ni se modifica. La variante extra de nubes no se recrea.
+
+### 7. Confirmación de recepción Grok
+
+Se consultaron los 32 paths `cola/estado/<project_id>.json` de estos proyectos; los 32 devolvieron HTTP 404 `Not Found`. Estado para cada uno: `RECEPCION_GROK_NO_CONFIRMADA`. No se creó ni editó ningún archivo de estado. Los marcadores de `handoffs/grok_inbox/` no sustituyen ese recibo.
