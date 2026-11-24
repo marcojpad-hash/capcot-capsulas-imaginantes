@@ -397,3 +397,18 @@ Se releyó `docs/INVESTIGACION_API_META_Y_GOOGLE_TRENDS.md` (corte 2026-11-22, �
 - No se crea storyboard nuevo: todos los slots aplicables muestran ocupación o conflicto entre ramas.
 - No se reescriben los dos storyboards existentes, no se crea copia en `cola/entrada/`, no se escribe `narrative_qa`, no se crea estado Grok, no se generan medios y no se programa publicación.
 - No se modifican `main`, `data/*.json`, motores ni Motor U6.
+
+
+## Corrección de verificación primaria — 2026-11-23 22:00 CDMX
+
+La lectura completa de la fuente primaria de *Scientific Data*, sección de validación GDIS y Fig. 10, sí confirma el dato que antes quedó marcado como pendiente por falta de acceso al cuerpo del artículo:
+
+- **Observación:** el conjunto compara 234 eventos independientes con GDIS; 139 coinciden con los clusters del estudio.
+- **Cálculo reportado por el artículo:** 139/234 = **59.4%**.
+- **Resultado condicional:** la coincidencia sube a aproximadamente **71%** al restringir el análisis a regiones interiores no africanas; no es la tasa global.
+- **Validación inversa:** 74% de 96 eventos en cuatro regiones densamente pobladas tuvieron corroboración GDIS.
+- **Límite:** GDIS registra desastres con impacto socioeconómico, no intensidad/duración física; el artículo atribuye parte de las discrepancias a vulnerabilidad socioeconómica en África interior y limitaciones de datos costeros.
+
+Esto **sustituye** las notas anteriores de este radar que dejaban 139/234 y 59.4% como `PENDING_SOURCE`. La fuente primaria respalda el claim y el storyboard ya conserva `verification_status=VERIFICADO_FUENTE_PRIMARIA`; no se cambió su narración, claims ni `narrative_qa`. El DOI sigue en `PENDIENTE_RESOLVEDOR`: los endpoints de Crossref y doi.org no entregaron respuesta verificable. Por tanto, no se habilita promoción. El storyboard conserva FAIL/82, `STAKES_NO_EXPLICADOS`, y su slot está ocupado/conflictivo según la última evidencia de programación.
+
+Fuente primaria: https://www.nature.com/articles/s41597-026-08886-6 (Fig. 10 y sección GDIS, párrafos sobre los 234 eventos, 139 coincidencias y 71% condicional).
