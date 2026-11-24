@@ -158,5 +158,36 @@ class SnapshotProgrammingAuditTests(unittest.TestCase):
         self.assertIn(str(bad), result["errores"][0])
 
 
+    def test_collision_groups_are_loaded_from_every_miniaturas_snapshot(self):
+        self.write_json("miniaturas_auditoria_2026-11-21.json", {
+            "siguen_mal_sin_mp4_no_se_invento": [],
+            "colisiones_horario_mismo_publishAt": [{
+                "publishAt": "2026-11-23T13:00:00Z",
+                "hora_cdmx": "2026-11-23 07:00 CST",
+                "videos": [{"yt_id": "first-a"}, {"yt_id": "first-b"}],
+            }],
+        })
+        self.write_json("miniaturas_auditoria_2026-11-22.json", {
+            "siguen_mal_sin_mp4_no_se_invento": [],
+            "colisiones_horario_mismo_publishAt": [{
+                "publishAt": "2026-11-23T23:00:00Z",
+                "hora_cdmx": "2026-11-23 17:00 CST",
+                "videos": [{"yt_id": "second-a"}, {"yt_id": "second-b"}],
+            }],
+        })
+        result = auditor.load_snapshots(self.root, "2026-11-23")
+        self.assertEqual(len(result["ocupaciones"]), 4)
+        self.assertEqual(len(result["conflictos"]), 2)
+        self.assertEqual([x["slot_local"] for x in result["conflictos"]], ["07:00", "17:00"])
+        source_files = {
+            source.split("#", 1)[0]
+            for row in result["ocupaciones"]
+            for source in row["source_files"]
+        }
+        self.assertEqual(source_files, {
+            "miniaturas_auditoria_2026-11-21.json",
+            "miniaturas_auditoria_2026-11-22.json",
+        })
+
 if ( __name__ == "__main__" ):
     unittest.main()
