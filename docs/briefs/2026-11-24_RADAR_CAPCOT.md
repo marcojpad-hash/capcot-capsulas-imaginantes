@@ -449,3 +449,27 @@ Estos son errores del lector web; **no se ejecutó el script Python** y no se at
 - **Inferencia:** el agujero negro y el bar galáctico compiten con una rotación astronómica reciente; la cápsula de virus ofrece mayor separación temática, pero carece de ficha primaria accesible; el naufragio tiene fuente primaria, pero su encaje editorial es dudoso.
 - **Recomendación:** no seleccionar ninguno en este corte. El 24-nov está sobreocupado (9 registros planificados frente al máximo 5) y el backlog 25–28 también excede el límite. No se crea storyboard, no se marca producción y no se convierte una fuente pendiente en `PASS`.
 
+
+
+---
+
+## Reintento de feeds y compuerta DOI — 2026-11-24 14:00 CDMX
+
+### Acceso a fuentes RSS
+Se intentó leer los endpoints declarados en `scripts/tendencias.py` y Google Trends México. Errores exactos de esta interfaz:
+- Nature: `DisabledError`.
+- ScienceDaily: `Unsupported content-type: application/xml`.
+- NASA: `Unsupported content-type: application/rss+xml`.
+- EurekAlert: `URL not accessible via this tool`.
+- Google Trends RSS México: `URL not accessible via this tool`.
+
+No se trató el fallo del lector como ausencia de novedades. Se usó búsqueda oficial de respaldo y se mantuvieron los cinco candidatos ya documentados; no se abrió slot ni se creó storyboard.
+
+### Estado de verificación
+- APS — artículo de agujeros negros, DOI `10.1103/mnzq-w1b5`, publicación indicada 21-nov-2026: fuente primaria identificada y DOI con coincidencia disponible.
+- Nature Astronomy — barra galáctica/onda de choque, DOI `10.1038/s41550-026-03010-5`, publicación indicada 20-nov-2026: fuente primaria identificada y DOI con coincidencia disponible.
+- Nature Communications — HK97/encapsulinas, DOI `10.1038/s41467-026-78136-1`: coincidencia exacta Crossref no verificada en esta pasada; **PENDING_SOURCE**.
+- Science Advances — muestras lunares Chang'e-6, DOI `10.1126/sciadv.aee8718`: coincidencia exacta Crossref no verificada en esta pasada; **PENDING_SOURCE**.
+- Frontiers — recubrimientos de pecio romano, DOI `10.3389/fmats.2026.1758862`: coincidencia exacta Crossref no verificada en esta pasada; **PENDING_SOURCE**.
+
+Las llamadas directas a `api.crossref.org` para los tres DOI pendientes devolvieron `URL not accessible via this tool`. No se marcaron como verificados por el mero hecho de aparecer en una propuesta. Sin slot autorizado, no se preparó ningún storyboard.
