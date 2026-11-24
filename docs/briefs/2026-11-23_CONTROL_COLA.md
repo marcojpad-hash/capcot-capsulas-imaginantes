@@ -634,3 +634,27 @@ La relectura del árbol completo en HEAD `6577868ea826703fa512a2831e5e5ee7c19c6c
 
 
 **Trazabilidad de commits de auditoría:** el código y los paquetes se inspeccionaron inicialmente en HEAD `af1584ace60d349b07eff387799e9e06b6713618`. Las únicas escrituras posteriores fueron documentales: actualización de `proyectos/2026-11-18_dato-kuroshio-puente-atmosferico/ESTADO_EJECUCION.md` y este brief. El commit `15257001aeb984f5c04164ef0e545872124ffa6b` fue la versión inmediatamente anterior a esta última corrección documental. El HEAD definitivo es el commit que contiene esta corrección; después del corte `af1584a` no cambiaron storyboards, datos, workflows ni paquetes.
+
+## Revalidación del operador — 2026-11-23 18:00 CDMX
+
+### Corte de ramas y ejecuciones
+- Auditor CAPCOT: run `790874a5-6500-8327-8780-1e5678ecca67`, terminado 16:18 CDMX; commit `7777ce289c19e67cada531f36c24c12f6d47291e`. Investigador: run `aec348df-574c-8333-aab7-4a37c00aaed3`, terminado 08:22 CDMX; commit `66b0aac71cabd63942e73a2fe61f7c80245b383e`.
+- `feature/capcot-video-discovery-continuity` HEAD `9cdd37160048e6aa75a39c5875da34e89d173aa0`; `main` HEAD `84731657f14e31f16984b95651bc4fe0c2b2c2c2` (17:20 CDMX).
+- El diff `af1584a...9cdd371` contiene únicamente el brief de control, el `ESTADO_EJECUCION.md` de Kuroshio y `data/endscreens_rotacion.json`. No cambió ningún storyboard, cola, estado Grok ni workflow después del corte del auditor. No se repitió QA narrativo.
+
+### End screens: divergencia nueva entre ramas
+- En `feature`, `data/endscreens_rotacion.json` (blob `4c3a...`, solo lectura) deja `4Vi_TnIl9FI` → `CW02WClntYA` y marca `pendiente_studio=false`.
+- En `main`, `data/endscreens_rotacion.json` (blob `852c5a...`) incorpora `propuesta_2026-11-23_17` con estado `aplicado_studio_2026-11-23 17:20` y 14 aplicados/1 ya existente; sin embargo, el `mapa` y `aplicado_studio` canónicos no contienen las nuevas asignaciones. La propuesta trata `4Vi_TnIl9FI` como destino acelerador de los videos de bajo rendimiento, mientras `feature` conserva una asignación saliente de ese ID a `CW02WClntYA`. Es una divergencia de datos/Studio sin reconciliación verificable. No se modificó ninguna rama ni `data/*.json`.
+
+### Actions, PR e incidencias
+- `main` Semgrep run `45287956327`: **FAIL**, 37 hallazgos bloqueantes en 1,238 archivos / 361 reglas; exit code 1. El paso de carga SARIF fue `skipped` y no existe artifact; el log no expone rutas/reglas individuales. Gitleaks `45287956278`: success. No se ejecutó ni se alteró el workflow.
+- PR #15 sigue OPEN hacia `feature`, mergeable pero `unstable`; su diff añade rechazo de booleanos en coordenadas/bounds y fija el host HTTPS de Crossref, con pruebas. No se integró.
+- PR #3 sigue DRAFT/OPEN hacia `main`, 704 archivos, `mergeable=false`, `dirty`. PR #14 y PR #13 siguen OPEN hacia `main`; no se integraron. Issue #11 continúa OPEN con etiqueta `hecho`, pero la QA del storyboard de cuásares permanece FAIL/0 por `REVISION_INDEPENDIENTE_AUSENTE`; la etiqueta no equivale a cierre de la compuerta.
+- `capcot-grok-dispatch.yml` continúa limitado a `cola/entrada/*.json` y `find ... -maxdepth 1`; no selecciona entradas anidadas. No se disparó dispatch ni se enviaron payloads.
+
+### Tendencias y cupo
+- Google Trends HTML México (`geo=MX`) devolvió 179 tendencias en la vista consultada; no apareció tema elegible de ciencia/naturaleza/cocina/cuerpo/espacio. «Hipótesis de Riemann» es matemáticas y queda fuera del alcance editorial.
+- Se conserva la auditoría de ocupación del día ya registrada arriba: 10 IDs de YouTube en ocho horas, colisiones 07:00 y 17:00, y conflictos de los dos borradores feature. No hay slot nuevo autorizado. La nota de Mitra que lo mueve a 18:00 sigue en contradicción con `programacion.json` y la alineación, que conservan 17:00.
+
+### Cierre de este corte
+- Sin promociones, redispatch, cambios en `main`, `data/*.json`, `cola/estado`, secretos, permisos o workflows; sin generación de medios ni consumo de créditos. Los dos storyboards del 23 siguen FAIL/82 y fuera de cola.
