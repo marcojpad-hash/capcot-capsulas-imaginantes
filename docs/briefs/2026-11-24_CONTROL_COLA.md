@@ -107,3 +107,33 @@ Los estados QA son los ya registrados; no se repitió una revisión PASS ni se r
 - No se promovió, redispatchó ni modificó ninguna copia de cola; no se creó ni editó `cola/estado`.
 - No se modificaron `data/*.json`, `main`, workflows, secretos, permisos, decisiones editoriales ni medios.
 - Únicos cambios autorizados de este run: este control Markdown y la revalidación del radar 24-nov, ambos en `feature/capcot-video-discovery-continuity`.
+
+## Revalidación adicional — 2026-11-24 06:27 CDMX (operador único, run 3)
+
+### Rama, inventario y continuidad de QA
+
+- HEAD de feature observado: `4012ef00e99fcbd6f78a2ec3a338d37e5ebc4956`. HEAD de main consultado en solo lectura: `05c62dd` (prefijo).
+- Compare desde el HEAD registrado en este control (`44c7ee21`) hasta el HEAD actual: 10 commits adelantados, **ningún `proyectos/**/storyboard.json` modificado**. Los cambios fueron documentales y del validador/pruebas. Por ello se conservan los QA previos; no se repite PASS ni se atribuye una nueva auditoría narrativa.
+- Árbol actual de feature: 90 storyboards en `proyectos/`, 56 storyboards bajo `salidas/`, 28 copias `storyboard.json` en bloqueados (61 rutas/artefactos en total bajo `cola/bloqueados/`). La cola contiene una sola carpeta anidada: `2026-11-09_dato-robot-ensambla-orbita`; no hay JSON plano en la raíz ni archivos en `cola/estado/`.
+- **NOT_DISPATCHABLE:** la entrada anidada del robot no coincide con el selector del workflow, que escucha `cola/entrada/*.json` y busca con profundidad 1. Además, main contiene el paquete completo con `capsula.mp4`, nueve frames, portada, QA y programación; `data/publicaciones.json` registra el video `ZG4iQgmWrLI`, programado/publicado el 21-nov a las 19:00 CDMX. Clasificación: `PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR`; no duplicar ni cancelar.
+- La ausencia de `cola/estado/<project_id>.json` conserva `RECEPCION_GROK_NO_CONFIRMADA`. No se creó ni modificó estado. En feature solo existe el marker histórico del robot; no hay marker de finalización.
+- Los dos markers nuevos de Harris y evolución cuántica están únicamente en main, con `status=pending`, commit de paquete `3f9c1852` e Issues adicionales #1065/#1066 aún OPEN. No existe marker `grok_done` para ninguno; un marker pendiente y un Issue de asignación no prueban recepción ni entrega. No se enviaron payloads ni se despacharon workflows.
+
+### Programación y producción preexistente
+
+- `main/data/horarios.json` (SHA `226e...`) mantiene ventanas activas 06:30–07:30 y 16:30–18:00, slot fijo 23:30; 13:00–14:30 sigue en prueba y 19:00 debe evitarse salvo autorización puntual de Mj.
+- Reconciliación de `main/data/miniaturas_auditoria_2026-11-21.json` y `main/data/rehechos_2026-11-22.json`: 24-nov 5/5 con colisión a las 17:00; 25–28 nov 7/5 por cinco programaciones preexistentes más dos reworks diarios a las 10:00/15:00; 29-nov 5/5 por cuatro programaciones más un rework. También hay colisiones de hora en 25 (07:00), 26 (17:00), 27 (07:00) y 28 (17:00). Los 19:00 heredados están fuera de la política actual, pero no se cancelan desde esta auditoría.
+- Los nueve reworks tienen programación/plataformas y directorios en main con storyboard, metadata, licencias, créditos y render.log; el árbol GitHub no contiene sus MP4 ni portadas referenciados. Clasificación: `PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR` y `MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO`. No hay slot libre confirmado hasta el 29-nov.
+- `main/data/publicaciones.json`: 55 registros; `main/data/rotacion.json`: 39. No se modificó ningún `data/*.json`.
+
+### Seguridad y validación
+
+- `main/data/auditoria_hashtags_titulos_2026-11-24.json` sigue presente (blob `236f4c4d`, 443,162 caracteres). Contiene campos con valores tipo token y una referencia a un archivo local de credenciales; no se reproduce ningún valor. Gitleaks run `45337473897` detectó `generic-api-key` en línea 46, asociado al commit `052c2f9`.
+- El Gitleaks posterior `45364318217` terminó SUCCESS, pero su log ejecuta `--log-opts=-1`, reporta un solo commit y aproximadamente 1.66 KB escaneados. **No limpia ni refuta el hallazgo anterior**; el archivo sigue en main. La revocación/rotación y limpieza histórica no se ejecutaron por requerir autorización sobre secretos/datos.
+- Semgrep de main `45364318369`: FAILURE, 37 hallazgos bloqueantes en 1,244 archivos.
+- Validador Kuroshio `45392906745`: SUCCESS sobre el commit `aabd4f58`, pero el workflow invoca `validar_storyboard.py` sin `--check-doi` y solo verifica el expediente Kuroshio. No acredita Crossref ni valida todos los storyboards ni el HEAD actual `4012ef00`. `tests/test_validar_storyboard.py` está en el HEAD actual, pero no hay una ejecución CI observada de esa suite.
+- PR #15 continúa OPEN/no mergeable y declara sus pruebas unitarias pendientes. PR #3 continúa OPEN/DRAFT/no mergeable; PR #13 y #14 siguen OPEN. No se fusionó ni se cerró ningún PR.
+
+### Resultado del corte
+
+No se creó storyboard, no se registró narrative_qa, no se promovió ni redispatchó contenido, no se disparó workflow, no se generaron medios y no se consumieron créditos. Permanecen sin modificación main, `data/*.json`, secretos, permisos, estados Grok y decisiones editoriales.
