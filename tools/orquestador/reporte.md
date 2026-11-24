@@ -1,15 +1,13 @@
-# Reporte del orquestador — 2026-11-22 20:11
+# Reporte del orquestador — 2026-11-24 00:37
 Modelo: openai/gpt-oss-120b (Groq, API gratuita)
 Tablero actualizado con git pull.
 
-- **Pendiente 1 – Montar la cápsula Mpemba** – Atorado porque **Imaginantes** está pausado por ahorro de créditos; no se puede reasignar a otro modelo. **Imaginantes** debe retomar la tarea cuando los créditos se renueven. **Siguiente paso:** Marco verifica el consumo de créditos y avisa a Imaginantes que re‑active el proceso; Imaginantes vuelve a ejecutar el montaje del MP4 y el QA.  
+- **1. Montar la cápsula Mpemba** – atorado porque **Imaginantes** está **pausado por ahorro de créditos** y no puede montar el MP4 ni correr el QA. **Imaginantes** debe producir el MP4 con voz es‑MX‑JorgeNeural y ejecutar el QA. **Próximo paso:** **Pecas** (o Marco) solicita la liberación/reasignación de créditos y agenda un nuevo slot 13:30 CST para Imaginantes.  
 
-- **Pendiente 2 – Montar la cápsula Barreleye** – Atorado por la misma razón: **Imaginantes** está en pausa por falta de créditos. **Imaginantes** debe reanudar la tarea. **Siguiente paso:** Marco revisa el límite semanal, notifica a Imaginantes y este ejecuta el montaje del MP4 con los ajustes de texto y el QA.  
+- **2. Montar la cápsula Barreleye** – atorado por la misma razón: **Imaginantes** pausado por ahorro de créditos, por lo que no puede montar el MP4 ni ejecutar el QA. **Imaginantes** debe completar la producción del MP4 (incluyendo los dos arreglos de texto) y el QA. **Próximo paso:** **Pecas** (o Marco) solicita la reactivación de créditos y programa un slot disponible para Imaginantes.  
 
-- **Pendiente 3 – Subir los workflows de seguridad de CAPCOT** – Atorado porque aún no se han subido `gitleaks.yml` y `semgrep.yml`. **Pecas** debe subirlos al repositorio usando el navegador. **Siguiente paso:** Pecas abre GitHub en el navegador, arrastra los archivos desde `~/workspace/security-upload/` al árbol del repo, crea el commit y lo empuja a `origin/main`.  
+- **3. Subir los workflows de seguridad de CAPCOT** – atorado porque **Pecas** aún no ha subido los archivos `gitleaks.yml` y `semgrep.yml` al repositorio. **Pecas** debe, vía el navegador, subir esos archivos desde `~/workspace/security-upload/`, crear el commit y push al repo. **Próximo paso:** **Pecas** abre el navegador, realiza la subida y confirma el commit.  
 
-- **Pendiente 4 – Activar la seguridad nativa en GitHub** – Atorado porque los toggles de *secret scanning*, *CodeQL* y *Dependabot* no están activados. **Pecas** es quien debe activarlos desde Settings > Code security. **Siguiente paso:** Pecas ingresa a Settings del repositorio, habilita los tres mecanismos y confirma que aparecen como “Enabled”.  
+- **4. Activar la seguridad nativa en GitHub** – atorado porque **Pecas** no ha activado los toggles de *secret scanning*, *CodeQL* y *Dependabot* en Settings > Code security. **Pecas** debe entrar al repositorio con su cuenta, habilitar esas opciones y guardar los cambios. **Próximo paso:** **Pecas** accede a Settings, activa los tres mecanismos y verifica que queden activos.  
 
-- **Pendiente 5 – Crear cuenta gratuita de Clayzo** – Atorado porque falta la decisión de **Marco** sobre si crear la cuenta; sin su aprobación Pecas no puede proceder. **Marco** debe decidir (aprobar o rechazar) y comunicar la respuesta a Pecas; si aprueba, **Pecas** crea la cuenta por el navegador y la configura para la prueba de render.  
-
-*(Todas las demás delegaciones aparecen como HECHAS o sin registro en el tablero; por lo tanto no están atoradas.)*
+- **5. Crear cuenta gratuita de Clayzo** – atorado porque la decisión de crear la cuenta corresponde a **Marco**. **Marco** debe indicar si aprueba la creación; si la aprueba, **Pecas** ejecutará la creación por navegador y probará el render del documento Mpemba (1080×1920). **Próximo paso:** **Marco** responde “sí” o “no” a la solicitud; si “sí”, **Pecas** crea la cuenta y realiza la prueba.
