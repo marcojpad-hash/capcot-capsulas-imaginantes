@@ -693,3 +693,40 @@ La relectura del árbol completo en HEAD `6577868ea826703fa512a2831e5e5ee7c19c6c
 - **Corrección del registro anterior:** sí se modificó la rama del PR #15 y sí se inició una Action automática. El push de la corrección disparó `semgrep` por `pull_request`; no se despachó manualmente. Run `45310165026` terminó FAILURE: 26 hallazgos bloqueantes en 1,104 archivos (11 tags mutables de Actions, 11 usos dinámicos de urllib, 2 subprocess con argumentos tainted, 1 uso de `globals()` y 1 MD5), más una entrada SARIF no bloqueante sobre `HTTPSConnection` pese al contexto TLS verificado. No hay hallazgo en el fixture de prueba modificado. El artefacto SARIF fue leído.
 - PR #15 continúa OPEN, no fusionado, mergeable=true; su descripción todavía conserva el estado anterior de pruebas pendientes. No se actualizó el cuerpo ni se abrió/cerró ningún PR. No se dispararon otras Actions después de este run.
 - Esta corrección documental usa `[skip ci]` para evitar una segunda ejecución automática. No cambia narración, claims, datos, cola, estados Grok ni medios.
+
+
+## Revalidación del operador — 2026-11-23 22:00 CDMX
+
+### Ramas, programación y producción preexistente (solo lectura en main)
+
+- `feature/capcot-video-discovery-continuity` HEAD: `87a03fabcaea4c286e9736a185dac2e92d5d7796` antes de este addendum; main HEAD: `43b5e45434b85054a8cba64d48768d07d1df6541`. El commit nuevo de main cambió **solo** `data/endscreens_rotacion.json`; no cambió el snapshot de programación. El blob main `77cbcf1bde480b9159c7c9c8b58bd5edf09ab497` contiene `snapshot_2026-11-23_20` y `propuesta_2026-11-23_20`; feature conserva el blob `bb4eb4580f41423e6f7be4f2ca75c97e249b2e5e`. Los mapas difieren en múltiples asignaciones. No se sincronizaron ni modificaron `data/*.json`.
+- `main/data/publicaciones.json` tiene 55 registros (blob `774e3b7022c910d5b1b1d3f86a4590df0ee5847d`), frente a los 52 del corte anterior; tres filas son del 23-nov a 09:00, 11:00 y 17:00 CDMX. `main/data/rehechos_2026-11-22.json` (blob `902a92411a516df4a3bf1046d8fec3ce1ee888c9`) contiene nueve reworks con nuevo ID y `publishAt`:
+
+| Rework | Nuevo video_id | Programación CDMX |
+|---|---|---|
+| nube | `9RxTSifAcpo` | 25-nov 10:00 |
+| barreleye | `3rwo_sK1e18` | 25-nov 15:00 |
+| pan | `7pzPfqRSagU` | 26-nov 10:00 |
+| ratas | `MgHVHbeIVS0` | 26-nov 15:00 |
+| miel | `p06UCGu0-Og` | 27-nov 10:00 |
+| mar | `HKpani8TTeY` | 27-nov 15:00 |
+| arena | `6VUxaJtqbF0` | 28-nov 10:00 |
+| juno | `Dx3lqkAb8Sc` | 28-nov 15:00 |
+| viento | `m1FeS0mhfZ4` | 29-nov 10:00 |
+
+En cada uno de los nueve casos, `proyectos/<id>/` contiene storyboard, guion, metadata, licencias, créditos y `render.log`; `salidas/<id>/` devuelve 404 y no hay MP4 en el árbol GitHub. La ruta `/workspace/capcot_main/.../capsula.mp4` del JSON no es una ruta verificable del repositorio. Clasificación individual: **PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR** por ID/programación existente y **MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO** por ausencia del medio en GitHub.
+- Reconciliando `main/data/miniaturas_auditoria_2026-11-21.json` con esos nueve reworks y las colisiones de publishAt, la ocupación CDMX es: 24-nov **5/5**, 25–28-nov **7/5** por día, 29-nov **5/5**. No hay slot libre confirmado del 24 al 29; 25–28 exceden el límite diario. El 30-nov no tiene parrilla/slot del día confirmado y no se prepara anticipadamente el slot de dato del día. Se mantiene **NO_DUPLICAR**.
+- Los 27 paths individuales `cola/estado/<project_id>.json` (15 proyectos del 18–23 nov y 12 IDs canónicos del 5–7 nov) se consultaron de nuevo: los 27 devolvieron 404. Para todos se conserva exactamente **RECEPCION_GROK_NO_CONFIRMADA**. No se creó ni modificó ningún estado Grok ni entrada de cola.
+
+### Fuentes, RSS y radar
+
+- La lectura completa de la fuente primaria de supersequías, *Scientific Data*, Fig. 10/sección GDIS, confirma 234 eventos independientes, 139 coincidencias (59.4%), ~71% solo al restringir a regiones interiores no africanas y 74% de corroboración inversa en 96 eventos de cuatro regiones. Esto **corrige** la nota previa que dejaba 139/234 como `PENDING_SOURCE`; el claim está verificado en la fuente primaria. El DOI permanece `PENDIENTE_RESOLVEDOR` porque Crossref REST, search.crossref.org y doi.org no dieron respuesta verificable. El storyboard conserva FAIL/82 y `STAKES_NO_EXPLICADOS`; no se cambió narración ni QA. La corrección de fuente se registró en el radar y se leyó de vuelta en el commit `eb4192b455daa66cd63d8d804843987eea7dc339`.
+- `scripts/tendencias.py` define 10 feeds científicos y Google Trends RSS México. La apertura RSS en esta sesión fue rechazada por tipo XML/RSS en ScienceDaily, Phys.org, NASA, Nature y UNAM; ESA devolvió 404; EurekAlert, SINC y Google Trends RSS devolvieron `URL not accessible via this tool`. Como respaldo oficial sí se abrió Google Trends `Trending Now — Mexico` (168 tendencias, vista de 24 h); las primeras 25 no contienen un candidato de ciencia/naturaleza admisible. No se forzó una selección desde tendencias ajenas a la línea editorial. Los cinco candidatos ya documentados en los radares 23–25 se conservan; no se creó storyboard nuevo.
+
+### Semgrep y handoff
+
+- El artifact SARIF del run Semgrep de PR #15 (`45310165026`) contiene **27 resultados**, no 26: 11 referencias mutables de GitHub Actions, 11 usos dinámicos de urllib, dos subprocess con argumentos tainted, un uso de `globals()`, un MD5 y un aviso de `HTTPSConnection`. **26 son hallazgos de base** en workflows/scripts preexistentes; el único hallazgo en el archivo modificado por PR #15 está en `scripts/validar_storyboard.py:27` (`httpsconnection-detected`, advertencia de estabilidad de API). PR #15 sigue OPEN/NOT MERGED; sus 14 pruebas unitarias ya constan aprobadas, pero Semgrep no está verde. El run Semgrep de main `45311052122` reportó 37 hallazgos y no produjo artifact SARIF descargable.
+- El último dispatch observado sigue siendo el run histórico `41306776689` del 1-nov, con error literal `Falta configurar GROK_WEBHOOK_URL.`. El workflow vigente ya trata el webhook como opcional y usa `handoffs/grok_inbox/` como fallback; no hay dispatch posterior observado. No se disparó workflow, no se envió payload y no se consultaron valores de secretos.
+- No se ejecutó el validador estructural real ni `--check-doi` en este corte; la inspección de archivos y la lectura de fuentes no sustituyen esas compuertas. No se marcó DOI como verificado por Crossref.
+
+**Resultado:** sin storyboard nuevo, sin promoción, sin redispatch y sin medios generados. Se actualizaron únicamente los dos briefs Markdown de feature; `main`, `data/*.json`, cola, estados Grok, workflows, credenciales y decisiones editoriales permanecen intactos.
