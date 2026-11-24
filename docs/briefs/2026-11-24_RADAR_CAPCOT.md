@@ -94,3 +94,19 @@ Se consultaron las diez URL definidas en `scripts/tendencias.py` y Google Trends
 - **Medios:** no se generaron imágenes, audio, voz, video, frames, renders ni placeholders; no se consumieron créditos.
 
 **Siguiente paso mínimo:** cuando se libere un slot dentro del cupo diario, volver a comprobar el inventario y el resolvedor DOI. Varroa queda como candidato recomendado, no seleccionado ni preparado.
+
+## Revalidación de fuentes y señales — 2026-11-23 18:00 CDMX
+
+### Actualización de fuente primaria
+- El PDF de Nature Communications para «Plankton ecological complexity amplifies climate-driven weakening of the ocean biological pump» ya está accesible y fue leído: https://www.nature.com/articles/s41467-026-79817-7_reference.pdf. El texto completo confirma que, bajo SSP5-8.5, la producción comunitaria neta (NCP) cae 5.8%, 8.8% y 12.8% en las tres configuraciones; no son caídas de NPP. El mecanismo descrito es el cambio hacia fitoplancton más pequeño y mayor pastoreo de zooplancton, que retiene más carbono en la capa superior. Publicado en línea el 21-nov-2026.
+- El candidato pasa de `PENDING_SOURCE` por falta de texto a `TEXTO_PRIMARIO_COMPLETO_VERIFICADO`; permanece `PENDIENTE_RESOLVEDOR_CROSSREF`. No se autoriza storyboard mientras DOI/resolvedor siga pendiente.
+- El artículo PLOS Biology de Varroa mantiene texto primario completo accesible y DOI declarado en la página: https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3004091. El click al DOI falló con `500 Redirected to https://journals.plos.org/plosone/doi?id=10.1371/journal.pbio.3004091`, destino no accesible desde este lector. No se marca `VERIFICADO_CROSSREF`.
+
+### Resolvedor y tendencias
+- Los intentos directos a `api.crossref.org/works/{doi}` y `doi.org/{doi}` no entregaron respuesta verificable; errores observados: `URL not accessible via this tool` / `Internal Error`. Los DOI visibles en las páginas/PDF no sustituyen el resolvedor.
+- El lector web no pudo consumir los RSS: `400 Unsupported content-type: application/rss+xml` en los feeds XML consultados y `URL not accessible via this tool` para Google Trends RSS. Esto no es una ejecución de `scripts/tendencias.py`; se conserva como limitación del lector. El último run del investigador ya había registrado los errores de DNS del runtime.
+- Respaldo HTML Google Trends México: 179 tendencias en la vista consultada; no se identificó tema dentro del alcance editorial. No se añade candidato por la señal matemática «hipótesis de Riemann».
+
+### Cupo y decisión
+- La evidencia de ocupación del 24-nov no cambió: cinco IDs para `MAX_POR_DIA=5`, con colisión a las 17:00. La política activa de `main/data/horarios.json` desde el 23-nov es 06:30–07:30 y 16:30–18:00, más el slot fijo 23:30; 13:00–14:30 sigue siendo prueba. El cupo diario ya está agotado.
+- No se creó storyboard ni entrada de cola. El candidato de plankton queda investigado, no seleccionado ni preparado. `data/*.json` y `main` permanecen solo lectura.
