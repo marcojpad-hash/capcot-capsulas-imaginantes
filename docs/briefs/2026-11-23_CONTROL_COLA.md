@@ -675,3 +675,12 @@ La relectura del árbol completo en HEAD `6577868ea826703fa512a2831e5e5ee7c19c6c
 - Resultado observado: **11 tests, OK, 0 fallos**, 0.010 s. Incluye lectura de colisiones de dos snapshots, deduplicación, conversión UTC/CDMX, discrepancia de timestamp, rehechos, directorio ausente/vacío, JSON inválido y preservación de bytes de las fuentes.
 - La ejecución no necesitó red ni acceso a GitHub desde el runtime local. El intento separado de clonar el repositorio falló literalmente con `fatal: unable to access 'https://github.com/marcojpad-hash/capcot-capsulas-imaginantes.git/': Could not resolve host: github.com`; se usaron los blobs recuperados mediante el conector GitHub y se conservaron los mismos SHA.
 - Alcance: prueba dirigida del auditor de snapshots únicamente; **no equivale a ejecutar la suite completa del repositorio ni a verificar DOI/Crossref**. No se ejecutó Actions ni se modificó ningún archivo `data/*.json`.
+
+
+## Verificación local de PR #15 — 2026-11-23, 20:00 CDMX
+
+- Se recuperaron los blobs exactos del head `30101e9aca8aaafb8d1894df30574a66067ff4a8`: `scripts/validar_storyboard.py` (`a52a2f46a4f579f1b5e38c1bb0da352e3bf74f3c`) y `tests/test_validar_storyboard_textual.py` (`fc99125a8e47938433cd5857490ffd17d7c22452`).
+- Ejecución local sin red: `python -m unittest -v tests/test_validar_storyboard_textual.py`. Resultado sin alterar los blobs: **13/14 PASS; 1 FAIL** en `test_check_doi_uses_fixed_https_host`. El doble `Connection.__init__(host, timeout)` no acepta el argumento `context` que producción entrega a `HTTPSConnection`; el `TypeError` queda absorbido por `check_doi()` y la prueba recibe `False`.
+- Comprobación de diagnóstico en copia temporal: al ajustar únicamente el doble para aceptar `context`, conservándolo y verificando `check_hostname=True` / `CERT_REQUIRED`, el mismo conjunto da **14/14 PASS**. No se cambió el código de producción ni la rama del PR.
+- Conclusión: defecto mecánico del fixture de prueba, no evidencia de fallo TLS real. La prueba usa un mock y no hizo llamada externa. PR #15 sigue OPEN/no merged y sin checks de CI para su head; no se comentó, modificó ni fusionó.
+- Próximo paso mínimo: corregir el constructor del mock en la rama del PR para aceptar `context`, repetir las 14 pruebas y después ejecutar la verificación DOI real separada cuando exista red disponible. Esta sesión no disparó Actions.
