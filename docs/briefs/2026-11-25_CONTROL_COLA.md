@@ -273,3 +273,12 @@ Se consultaron los PR abiertos y sus diffs; ninguno se fusionó.
 3. No se modificaron storyboards, narrativa, claims, decisiones editoriales, `data/*.json`, estados Grok, workflow, secretos, permisos ni main.
 4. No se promovió ningún proyecto, no se movió ninguna entrada, no se disparó Actions, no se envió payload externo, no se generaron imágenes/frames/voz/audio/video/render, no se publicó y no se consumieron créditos.
 5. No se revisaron cambios de API porque no apareció una actualización oficial nueva sustentada.
+
+## 12. Precisión adicional: procedencia, privacidad e historial
+
+- El storyboard React y su copia de cola tienen el mismo blob. El commit de esos archivos está fechado 25-nov 10:37 CDMX y el autor registrado es `marcojpad-hash`; no hay evidencia para atribuirlos al investigador CAPCOT ni a Grok.
+- El registro del lote de nueve reworks declara creación 22-nov y fue committeado por Grok Bot. Eso prueba la autoría del registro, no la recepción formal por Grok ni la ejecución de QA narrativo. El prefijo 25-nov de los project_id no se toma como fecha de creación.
+- Para los nueve reworks, `data/rehechos_2026-11-22.json` registra privacidad `private→public` por publishAt y estados TikTok/Facebook como programados; no aporta IDs públicos de esas plataformas. No se verificó su estado externo. Los dos publishAt del 25-nov (10:00 y 15:00) ya vencieron al corte, pero el ledger de publicaciones no confirma esos dos IDs.
+- No hay `qa.json` audiovisual ni directorio `salidas/<project_id>/` para los nueve reworks. Render.log no sustituye un QA audiovisual ni verifica la existencia del MP4/portada/frame en GitHub.
+- Se buscó un archivo/ruta `historial_youtube` o equivalente y no se encontró en el árbol main. No es posible reconciliar IDs desde ese historial ausente. El ID del robot sí aparece en `data/publicaciones.json` y en `programacion.json`; su publishAt ya pasó, pero no se verificó el estado público actual. Se conserva el riesgo de programación histórica obsoleta; no se elimina ni cancela nada.
+- El paquete React mantiene privacidad local privada, sin video_id y sin prueba de montaje. Su reserva de 17:00 es local y colisiona con el ID existente `L6ggmPAwBOA`; no se interpreta como una segunda publicación ya programada en plataforma.
