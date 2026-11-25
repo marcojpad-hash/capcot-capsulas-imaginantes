@@ -213,3 +213,37 @@ Se consultó directamente la API de Crossref y el resolvedor DOI para los cinco 
 El candidato de glaciares pasa a reserva por texto completo inaccesible. Se conservan como reservas, no como candidatos de esta ventana de siete días: fotoluminiscencia de puercoespines (artículo primario 2026-11-16), rivalidad de hormigas invasoras (publicación primaria 2026-11-11), PET-trazador (2026-08-13), positrón (2026-10-21), cometa de Euclid (2026-10-18) y capa de agua sobre hielo (2026-11-03). La fecha de una nota RSS reciente no sustituye la fecha de publicación del estudio primario.
 
 **Decisión operativa:** el shortlist queda en investigación, no seleccionado. El corte del 25 de noviembre continúa sin slot libre; no se crea storyboard ni se cambia `ESTADO_EJECUCION`, `narrative_qa`, `cola/entrada` o `cola/estado`.
+
+
+## Revalidación adicional — 2026-11-25 09:01 CDMX
+
+### RSS y Google Trends
+
+Se reintentó la lectura directa de todas las URL declaradas en `scripts/tendencias.py` y Google Trends RSS México. Este lector devolvió:
+
+- ScienceDaily ciencia, salud y espacio: `400 Unsupported content-type: application/xml`.
+- Phys.org: `400 Unsupported content-type: text/xml`.
+- NASA: `400 Unsupported content-type: application/rss+xml`.
+- ESA Space Science: `404 Not Found`.
+- Nature: `500 Redirected to idp.nature.com/authorize`.
+- EurekAlert y SINC: `URL is not accessible via this tool`.
+- UNAM Global: `400 Unsupported content-type: application/rss+xml`.
+- Google Trends RSS México: `URL is not accessible via this tool`.
+
+No se declara que el script local se haya ejecutado: este corte fue una lectura externa de las URL. Como respaldo, la página HTML oficial de Google Trends México abrió y mostró 231 tendencias totales, con 25 visibles. La tendencia visible «fenómeno» (5K+) es demasiado genérica para convertirse en candidato sin una fuente científica identificable; las demás señales visibles no aportan un tema apto para la línea editorial. No se selecciona ningún tema por tendencia sola.
+
+### Candidato 5 — nueva fuente institucional
+
+Se localizó el comunicado de investigación del **Nanjing Institute of Geology and Palaeontology, Chinese Academy of Sciences**, fechado 2026-11-24: https://english.nigpas.cas.cn/new/hs/rp/202611/t20261124_1220626.html
+
+El comunicado identifica el artículo de Xu, Luo y Beutel, *Extreme morphological specialization in Mesozoic water-walking grasshoppers*, *Proceedings of the Royal Society B* (2026), DOI `10.1098/rspb.2026.0751`. Describe fósiles en ámbar de Kachin de aproximadamente 100 millones de años, una base morfo-ecológica de 195 especies y análisis filogenéticos, de morfoespacio e hidrodinámicos. Los cálculos publicados comparan fuerzas de curvatura de aproximadamente 222.78 y 157.46 dynes con pesos estimados de 3.20 y 2.03 dynes en dos especímenes. También informa al menos nueve individuos en una pieza de ámbar.
+
+**Límite:** la locomoción sobre el agua es una reconstrucción apoyada en morfología y análisis, no una conducta observada directamente. La fuente institucional mejora la trazabilidad del hallazgo, pero no sustituye el texto íntegro del artículo ni una respuesta verificable del resolvedor. Se conserva `PENDING_SOURCE` para storyboard; no se eleva a seleccionado.
+
+### Reintento DOI/resolvedor
+
+A las 09:01, el lector externo no pudo abrir los diez endpoints Crossref/doi.org correspondientes a los cinco DOI (`URL is not accessible via this tool`). Esto no invalida la verificación positiva registrada a las 08:30 para Varroa, Norma, plancton y Pantoea; tampoco añade una verificación nueva. El DOI del saltamontes conserva su estado pendiente de resolvedor. No se cambia ningún estado a partir de una respuesta de acceso fallida.
+
+### Decisión
+
+La ocupación documentada sigue en 7/5 para el 25–28 de noviembre y 5/5 el 29. No existe slot autorizado. No se crea storyboard, no se promueve cola, no se modifican `data/*.json`, no se crean estados Grok ni se generan medios.
