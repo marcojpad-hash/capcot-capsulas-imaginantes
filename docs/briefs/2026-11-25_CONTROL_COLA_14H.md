@@ -61,3 +61,21 @@
 - VERIFICADO: main cambió solo el snapshot de pantallas; los nueve reworks tienen render.log OK y programación previa; React sigue no despachable y en conflicto; no hay estado Grok ni salidas para los diez IDs.
 - PENDIENTE: resolver DOI de cuatro candidatos; aclarar colisiones/ocupación con la autoridad editorial; completar fuente de la cifra 4×; auditoría independiente embebida y estructural de React solo si vuelve a ser candidato; ejecutar el auditor de snapshots en un runner autorizado.
 - Sin cambios en data/*.json, main, cola/estado, cola/entrada, salidas, publicaciones, secretos, permisos ni workflows.
+
+## Detalle verificable de los nueve reworks
+
+| Clave | Slot CDMX | YouTube ID | Duración render |
+|---|---:|---|---:|
+| nube | 25 nov 10:00 | 9RxTSifAcpo | 86,80 s |
+| barreleye | 25 nov 15:00 | 3rwo_sK1e18 | 87,53 s |
+| pan | 26 nov 10:00 | 7pzPfqRSagU | 88,47 s |
+| ratas | 26 nov 15:00 | MgHVHbeIVS0 | 88,80 s |
+| miel | 27 nov 10:00 | p06UCGu0-Og | 86,47 s |
+| mar | 27 nov 15:00 | HKpani8TTeY | 87,17 s |
+| arena | 28 nov 10:00 | 6VUxaJtqbF0 | 86,70 s |
+| juno | 28 nov 15:00 | Dx3lqkAb8Sc | 87,40 s |
+| viento | 29 nov 10:00 | m1FeS0mhfZ4 | 88,77 s |
+
+- Cada render.log termina en OK y registra siete escenas. El rework barreleye también contiene el aviso «la cortinilla invade la zona segura inferior»; no se corrigió porque ya tiene YouTube ID y publishAt.
+- data/rehechos_2026-11-22.json referencia los MP4 mediante rutas absolutas bajo /workspace/capcot_main. Esas rutas no existen dentro del árbol GitHub consultado; por eso la existencia y el contenido audiovisual no quedan verificados por el repositorio.
+- La ficha declara estados programados en YouTube, TikTok y Facebook; no se consultaron APIs externas para confirmar el estado real de publicación.
