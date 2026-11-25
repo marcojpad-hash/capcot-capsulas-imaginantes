@@ -134,3 +134,13 @@ Ninguno de los dos comandos incluyó `--check-doi`. Estos runs confirman la vali
 - El run no ejecutó la suite `tests/test_validar_storyboard.py`.
 - `cola/estado/2026-11-18_dato-kuroshio-puente-atmosferico.json` sigue ausente: `RECEPCION_GROK_NO_CONFIRMADA`.
 - Estado conservado: `BORRADOR_EN_PROYECTOS_NO_APTO_PARA_PROMOCION`. No copiar a cola ni emitir handoff.
+
+## Revalidación CI posterior — 2026-11-24
+
+- Run más reciente localizado para este storyboard: [45502897065](https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/actions/runs/45502897065).
+- Commit ejecutado: `82db8f2aa2d6c58bb80a93b82a804fcc4df453c9` (`docs: registrar CI Kuroshio #45500710272 y bloqueo DOI`).
+- Comando exacto: `python scripts/validar_storyboard.py proyectos/2026-11-18_dato-kuroshio-puente-atmosferico/storyboard.json`.
+- Resultado del validador: `OK`; el chequeo posterior confirmó `approved_assets=[]` y `export.render_status=NOT_GENERATED`.
+- Comparación de blobs entre el commit del run y el HEAD actual de feature: storyboard `2046152d4cf918f6a3a3908c9a050a92f47c77a0` y validador `50335d4b0d4d7b85f36d0ad2d1c13ed11a87c0df` sin cambios. La validación estructural sigue aplicando al contenido actual.
+- El comando **no** incluyó `--check-doi`; no acredita consulta Crossref ni verificación DOI. DOI permanece `PENDIENTE_RESOLVEDOR`.
+- Este run sustituye a `45500710272` como última ejecución CI documentada. No cambia narrativa, claims ni decisión editorial. Kuroshio permanece fuera de cola y no apto para promoción hasta completar DOI.
