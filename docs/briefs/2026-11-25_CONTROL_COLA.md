@@ -282,3 +282,12 @@ Se consultaron los PR abiertos y sus diffs; ninguno se fusionó.
 - No hay `qa.json` audiovisual ni directorio `salidas/<project_id>/` para los nueve reworks. Render.log no sustituye un QA audiovisual ni verifica la existencia del MP4/portada/frame en GitHub.
 - Se buscó un archivo/ruta `historial_youtube` o equivalente y no se encontró en el árbol main. No es posible reconciliar IDs desde ese historial ausente. El ID del robot sí aparece en `data/publicaciones.json` y en `programacion.json`; su publishAt ya pasó, pero no se verificó el estado público actual. Se conserva el riesgo de programación histórica obsoleta; no se elimina ni cancela nada.
 - El paquete React mantiene privacidad local privada, sin video_id y sin prueba de montaje. Su reserva de 17:00 es local y colisiona con el ID existente `L6ggmPAwBOA`; no se interpreta como una segunda publicación ya programada en plataforma.
+
+
+## Revalidación de continuidad — 25-nov-2026 16:01 CDMX
+
+- HEAD de `main` al corte: `f4af1797e02fa3113f89385c3146ae0c4b49034e`. HEAD de feature antes de esta revalidación: `5412d56e52a7f1e3b994968cee6eafd78eeb35a7`. No se observó un cambio nuevo de storyboard, cola, programación o publicación en main después del control de 14H; el cambio de main sigue limitado al snapshot de pantallas de las 14:00.
+- El radar se revalidó y actualizó en el commit `b2ee813b28883be7e668da3d664edf3741649f97`; lectura de vuelta confirmada. Conserva cuatro candidatos sin selección, DOI/resolvedor pendiente y ningún slot autorizado. La página HTML oficial de Google Trends México mostró 221 tendencias, 25 visibles; ninguna aportó un hallazgo científico concreto.
+- El último CodeQL observado en PR #3 es run `45706674458`, SUCCESS sobre el HEAD de feature. Es análisis de seguridad; no valida estructura, DOI, narrativa, cola ni producción. Semgrep de main conserva el fallo `45692100140` con 37 hallazgos bloqueantes. PR #15 continúa abierto; no se ejecutó workflow ni se disparó CI manualmente.
+- Issue #16 continúa abierto con solicitudes de enlaces, reenvío de MP4 y resubidas a TikTok/Facebook. No se ejecutaron cargas, resubidas, publicaciones ni mensajes externos.
+- No se creó storyboard, no se promovió cola, no se creó/alteró estado Grok, no se generaron medios y no se modificó ningún `data/*.json`, proyecto o programación.
