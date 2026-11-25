@@ -51,7 +51,7 @@
 ## Radar y decisión de producción
 
 - Se probaron los diez RSS de scripts/tendencias.py. Errores exactos: ScienceDaily ciencia/salud/espacio = 400 Unsupported content-type application/xml; Phys.org = 400 Unsupported content-type text/xml; NASA = 400 Unsupported content-type application/rss+xml; ESA = 404 Not Found; Nature = 400 Unsupported content-type application/rss+xml; EurekAlert y SINC = URL not accessible via this tool; UNAM Global = 400 Unsupported content-type application/rss+xml. Google Trends RSS México = URL not accessible via this tool.
-- Respaldo HTML oficial Google Trends México: 240 tendencias, 25 visibles. Las señales «bienestar de los animales» y «primera tormenta invernal» no bastan para seleccionar una cápsula científica.
+- Respaldo HTML oficial Google Trends México: 240 tendencias, 25 visibles. En los primeros 25 resultados no se identificó un candidato científico concreto; no se seleccionó ningún tema a partir de tendencias.
 - Se añadieron cuatro candidatos al radar: agujero negro W2246-0526, maquinaria de transcripción del poxvirus, interfaz contorneada de batería de estado sólido y síntesis continua N-to-C de péptidos. Todos quedan PENDING_RESOLVER; no hay DOI verificado por Crossref/resolvedor en este corte.
 - No hay slot libre autorizado y no se cumplieron las compuertas de DOI/QA. No se creó storyboard, no se promovió cola, no se generaron medios y no se publicó ni programó nada.
 
