@@ -1,8 +1,8 @@
 {
   "fecha": "2026-11-14",
   "tipo": "endscreens_rotacion",
-  "actualizado_cdmx": "2026-11-23T16:30",
-  "motivo": "23-nov 16:30: pulpo 4Vi_TnIl9FI (292, +49 en 1 h) → Bernabé CW02WClntYA (2 vistas). Hipo 41PYjWbQuJo es privado; en Studio el pulpo apuntaba a Tq2ASLkFTbo (dioses-reyes). Un elemento de video, sin suscripción. Verificado en Studio.",
+  "actualizado_cdmx": "2026-11-25T08:30",
+  "motivo": "25-nov 08:30: Pancho lobo marino 9RBB5dFsWyA (482, +379 en 1 h, antes Ninguno) -> purpura RBUcAeptGAU (3); luz X7caJzr99to (82, +51 en 1 h, antes Ninguno) -> vomitorium cGb7Z0ZEz8w (4). Video relacionado en Studio, verificado. Sin suscripcion.",
   "vistas_ref": {
     "phVfyHp3CnY": 94,
     "m4RqQRaz55k": 48,
@@ -91,7 +91,11 @@
     "4Vi_TnIl9FI": 292,
     "41PYjWbQuJo": 0,
     "CW02WClntYA": 2,
-    "Tq2ASLkFTbo": 3
+    "Tq2ASLkFTbo": 3,
+    "9RBB5dFsWyA": 482,
+    "RBUcAeptGAU": 3,
+    "X7caJzr99to": 82,
+    "cGb7Z0ZEz8w": 4
   },
   "mapa": {
     "r1AhsPOAS_o": "AJR6kcnnDig",
@@ -162,7 +166,9 @@
     "45WOvkNQTHo": "ThbHry-YC-w",
     "6XCBYrlO4Eg": "AxgWdhqPhRI",
     "8okieDXFIgU": "YXndoPSSeaY",
-    "4Vi_TnIl9FI": "CW02WClntYA"
+    "4Vi_TnIl9FI": "CW02WClntYA",
+    "9RBB5dFsWyA": "RBUcAeptGAU",
+    "X7caJzr99to": "cGb7Z0ZEz8w"
   },
   "pendiente_studio": false,
   "nota": "Aplicado en YouTube Studio Editor > Pantalla final (video específico). Búsqueda: pegar youtube.com/watch?v=ID en 'Buscar vídeos de otros canales' (tus vídeos no lista Shorts). Sin suscripción ni tarjetas. Actualización 26-oct 19:49: la lista «Elegir un vídeo específico» ya muestra los Shorts.",
