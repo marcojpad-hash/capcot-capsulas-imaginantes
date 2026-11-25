@@ -247,3 +247,43 @@ A las 09:01, el lector externo no pudo abrir los diez endpoints Crossref/doi.org
 ### Decisión
 
 La ocupación documentada sigue en 7/5 para el 25–28 de noviembre y 5/5 el 29. No existe slot autorizado. No se crea storyboard, no se promueve cola, no se modifican `data/*.json`, no se crean estados Grok ni se generan medios.
+
+## Revalidación adicional — 2026-11-25 10:02 CDMX
+
+### RSS y Google Trends México
+
+Se intentó abrir cada URL configurada en `scripts/tendencias.py` y el RSS de Google Trends México. El lector web devolvió estos errores exactos:
+
+- ScienceDaily ciencia, salud y espacio: `400 Unsupported content-type: application/xml`.
+- Phys.org: `400 Unsupported content-type: text/xml`.
+- NASA RSS: `400 Unsupported content-type: application/rss+xml`.
+- ESA Space Science: `404 Not Found`.
+- Nature RSS: `500 Redirected to idp.nature.com/authorize`.
+- EurekAlert y SINC: `URL is not accessible via this tool`.
+- UNAM Global: `400 Unsupported content-type: application/rss+xml`.
+- Google Trends RSS México: `URL is not accessible via this tool`.
+
+No se declara ejecución local de `scripts/tendencias.py`. Como respaldo se abrió la página oficial HTML de Google Trends México: 237 tendencias totales, 25 visibles. Entre las señales visibles aparecen «marte» (5K+), «fenómeno» (5K+) y «bienestar de los animales» (1K+); ninguna identifica por sí sola un hallazgo científico verificable. No se selecciona tema por tendencia sola.
+
+### Sustitución del quinto candidato — Europa Clipper
+
+Se incorpora como quinto candidato activo, en sustitución del saltamontes acuático que pasa a reserva `PENDING_SOURCE`:
+
+- **Tema:** asistencia gravitatoria terrestre de Europa Clipper antes de continuar hacia Júpiter.
+- **Fuente primaria institucional:** NASA Jet Propulsion Laboratory, 25-nov-2026: https://www.jpl.nasa.gov/news/nasas-europa-clipper-zooming-by-earth-on-way-to-jupiters-icy-moon/
+- **Observación publicada:** sobrevuelo terrestre previsto para el 3-dic-2026; aproximación de 3,140–3,450 km, punto más cercano al oeste de África a las 3:14 p. m. EST; masa aproximada de 6,000 kg. La asistencia gravitatoria cambia la trayectoria y aumenta la velocidad hacia Júpiter. Los nueve instrumentos recogerán datos durante el paso para calibración.
+- **Límite:** es una actualización oficial de misión, no un nuevo artículo de investigación ni una observación de Europa. No afirmar que el sobrevuelo confirma el océano o vida; la misión investigará esos aspectos al llegar al sistema joviano.
+- **Posible eje narrativo:** la Tierra funciona como una honda gravitatoria que cambia la trayectoria de una nave sin combustible adicional para ese impulso.
+- **Estado de fuente:** URL primaria abierta y consultada; no hay DOI. La comprobación automática de URL del validador `--check-doi` no se ejecutó en este entorno, por lo que queda `VALIDACION_AUTOMATICA_PENDIENTE`.
+
+El buscador del repositorio no encontró «Europa Clipper» en los artefactos indexados; no se detectó duplicado textual. El tema queda como candidato de investigación, no seleccionado.
+
+### Candidato de antimateria descartado para esta ventana
+
+ScienceDaily publicó el 25-nov una nota sobre el ciclotrón cuántico de un positrón. La fuente primaria de *Physical Review Letters* confirma que el artículo «One-Positron Quantum Cyclotron» fue publicado el 21-oct-2026. La nota es reciente, pero el estudio no está dentro de la ventana de siete días; queda en reserva y no se presenta como descubrimiento de hoy. El experimento habilita una comparación futura de momentos magnéticos; no demuestra una diferencia materia-antimateria ni explica ya la asimetría cósmica.
+
+### Estado del shortlist y del cupo
+
+Shortlist activo: Varroa/hipoxia, brazo Norma, complejidad del plancton, Pantoea asociada a quinoa y Europa Clipper. Los cuatro primeros conservan la verificación positiva de Crossref/resolvedor registrada a las 08:30; este corte no pudo repetir el acceso a esos endpoints. Europa Clipper queda con URL primaria accesible y validación automática pendiente. Saltamontes acuáticos permanece en reserva hasta recuperar el texto primario completo y el resolvedor.
+
+La ocupación continúa en 7/5 del 25 al 28 de noviembre y 5/5 el 29. No existe slot autorizado. No se crea storyboard ni se promueve cola.
