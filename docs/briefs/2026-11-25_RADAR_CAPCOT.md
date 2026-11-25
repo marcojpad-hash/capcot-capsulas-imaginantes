@@ -138,3 +138,34 @@ Se intentó abrir Crossref REST `/works/{doi}` y `/v1/works/{doi}` para los DOI 
 ### Cupo y decisión
 - `main` HEAD `84731657f14e31f16984b95651bc4fe0c2b2c2c2`; el compare desde el HEAD anterior no muestra cambios en `data/miniaturas_auditoria_2026-11-21.json` ni `data/rehechos_2026-11-22.json`. `data/horarios.json` sí cambió y ahora documenta ventanas activas 06:30–07:30 y 16:30–18:00, más 23:30 fijo.
 - El conteo 25-nov sigue **7/5** por cinco registros del snapshot más dos reworks; no hay cupo. No se crea storyboard ni cola. La disponibilidad de texto primario no equivale a selección editorial ni a DOI resuelto.
+
+
+---
+
+## Revalidación 2026-11-25 00:03 CDMX
+
+### Fuentes de tendencia
+
+Se reintentaron los diez feeds declarados en scripts/tendencias.py y Google Trends RSS México. El runtime local devolvió error DNS 6 para cada host:
+
+- ScienceDaily ciencia, salud y espacio: curl (6), Could not resolve host: www.sciencedaily.com.
+- Phys.org: curl (6), Could not resolve host: phys.org.
+- NASA: curl (6), Could not resolve host: www.nasa.gov.
+- ESA: curl (6), Could not resolve host: www.esa.int.
+- Nature: curl (6), Could not resolve host: www.nature.com.
+- EurekAlert: curl (6), Could not resolve host: www.eurekalert.org.
+- SINC: curl (6), Could not resolve host: www.agenciasinc.es.
+- UNAM Global: curl (6), Could not resolve host: unamglobal.unam.mx.
+- Google Trends RSS México: curl (6), Could not resolve host: trends.google.com.
+
+El lector web tampoco pudo consumir varios XML por su tipo MIME. Google Trends HTML sí abrió como respaldo: 214 tendencias; las primeras 25 no aportaron un tema científico verificable. “Marte” y “fenómeno” no se promovieron sin una fuente científica primaria.
+
+### DOI y candidatos
+
+Crossref no se pudo consultar: curl (6), Could not resolve host: api.crossref.org. El resolvedor doi.org agotó el límite de cinco segundos: curl (28), Resolving timed out after 5000 milliseconds. Por tanto, ningún DOI queda marcado como verificado por Crossref/resolvedor.
+
+Revalidación de páginas editoriales: PLOS Biology y Nature Climate Change abrieron; las páginas de Nature Astronomy, Nature Communications y Scientific Reports devolvieron error 500 en el paso de autorización por cookies. Se conserva el estado documental previo de los cinco candidatos, sin elevar ninguno a seleccionado. El candidato de Nature Climate Change continúa PENDING_SOURCE para una narración que requiera más que el resumen.
+
+### Cupo y decisión
+
+La ocupación registrada sigue en 7/5 para el 25–28 de noviembre y 5/5 para el 29. No hay slot libre. No se creó storyboard ni se seleccionó candidato. El corte de este radar corresponde a feature HEAD 1bce9a7a200073d0a4286d0d69f027b7ea45ea93 y main HEAD 7b50235a1a46b4d759796253e0d036fb147c4401. La revisión de cola y producción preexistente queda en 2026-11-25_CONTROL_COLA_00H.md.
