@@ -287,3 +287,62 @@ ScienceDaily publicó el 25-nov una nota sobre el ciclotrón cuántico de un pos
 Shortlist activo: Varroa/hipoxia, brazo Norma, complejidad del plancton, Pantoea asociada a quinoa y Europa Clipper. Los cuatro primeros conservan la verificación positiva de Crossref/resolvedor registrada a las 08:30; este corte no pudo repetir el acceso a esos endpoints. Europa Clipper queda con URL primaria accesible y validación automática pendiente. Saltamontes acuáticos permanece en reserva hasta recuperar el texto primario completo y el resolvedor.
 
 La ocupación continúa en 7/5 del 25 al 28 de noviembre y 5/5 el 29. No existe slot autorizado. No se crea storyboard ni se promueve cola.
+
+## Exploración complementaria — 25 de noviembre, 14:09 CDMX
+
+### Fuentes de tendencia y errores de lectura
+
+Se leyó la lista de feeds de scripts/tendencias.py y se probaron directamente sus diez URLs. El lector no pudo consumir los XML/RSS; estos errores describen la limitación del lector, no demuestran que los servidores de origen estén caídos:
+
+- ScienceDaily ciencia, salud y espacio: HTTP 400, Unsupported content-type: application/xml.
+- Phys.org: HTTP 400, Unsupported content-type: text/xml.
+- NASA News Release: HTTP 400, Unsupported content-type: application/rss+xml.
+- ESA Space Science: HTTP 404, Not Found.
+- Nature RSS: HTTP 400, Unsupported content-type: application/rss+xml.
+- EurekAlert: URL not accessible via this tool.
+- Agencia SINC: URL not accessible via this tool.
+- UNAM Global: HTTP 400, Unsupported content-type: application/rss+xml.
+- Google Trends RSS México: URL not accessible via this tool.
+
+Respaldo oficial: Google Trends México, vista HTML de últimas 24 horas. Muestra 240 tendencias y 25 por página. En las primeras 25 no aparece un hallazgo científico identificable; «bienestar de los animales» (5 mil+) y «primera tormenta invernal» (10 mil+) son señales temáticas generales, no evidencia científica ni candidatos por sí solas.
+
+### Cuatro candidatos nuevos — no seleccionados
+
+1. **Un agujero negro de 6.500 millones de masas solares cuando el universo tenía 1.300 millones de años**
+   - Fecha: 20 nov 2026. Objeto: W2246-0526, cuásar oscurecido a z=4,6.
+   - Observación: ALMA resolvió movimientos de gas de carbono ionizado y CO en escalas de unos 700 años luz; el patrón de velocidades es coherente con la influencia gravitacional del agujero negro.
+   - Cálculo publicado: masa dinámica estimada de 6.500 millones de masas solares.
+   - Inferencia de los autores: la capa densa de polvo podría proteger trazadores gaseosos de la radiación X y permitir medir el entorno más cercano.
+   - Límite: no convertir la hipótesis de protección por polvo en mecanismo demostrado ni presentar la masa como medición directa del horizonte.
+   - Fuente institucional y enlace al artículo primario: https://www.almaobservatory.org/es/comunicados-de-prensa/alma-observa-la-esfera-de-influencia-gravitacional-de-un-agujero-negro-en-el-universo-temprano/
+   - Artículo: «Resolving the black hole sphere of influence in a hyperluminous obscured quasar at redshift 4.6», Science Advances, DOI 10.1126/sciadv.aek9035. DOI/resolvedor: PENDING_RESOLVER (Science.org respondió 403 en esta lectura).
+
+2. **La maquinaria de transcripción del poxvirus ya está empacada dentro de su cápside**
+   - Fecha: 23 nov 2026. Modelo estudiado: vaccinia, un poxvirus usado como modelo experimental.
+   - Observación: crio-tomografía electrónica reconstruyó dentro del núcleo viral la ARN-polimerasa en pares y el complejo de portal por el que se cree que sale el ARNm.
+   - Inferencia: el virus lleva un sistema de transcripción preparado para activarse después de entrar en la célula.
+   - Límite: no afirmar que el hallazgo ya sea un antiviral ni extrapolar sin matiz a todos los poxvirus; el estudio ofrece posibles blancos para investigación futura.
+   - Fuente institucional: https://www.ist.ac.at/en/news/inside-the-poxvirus-headquarters/
+   - Artículo: «Architecture of the poxvirus early-transcription machinery and portal complex», Nature, DOI 10.1038/s41586-026-11458-8. DOI/resolvedor: PENDING_RESOLVER (doi.org redirigió a una pantalla de autorización de Nature no accesible).
+
+3. **Una interfaz de batería con relieve tipo huevera retrasa diez veces el inicio de vacíos**
+   - Fecha: 23 nov 2026. Sistema: litio / electrolito cerámico Li6PS5Cl en baterías de estado sólido.
+   - Observación: una topografía 3D tipo egg-box elevó de 0,2 a 2 mA cm−2 la corriente de descarga a la que comienza el vaciado, a 2 MPa y 30 °C. El artículo aclara que no elimina los vacíos: reduce su crecimiento y la polarización.
+   - Cálculo: mejora de 10× bajo esas condiciones concretas; también se probaron pulsos y un perfil de conducción WLTP.
+   - Inferencia: la geometría de contacto puede mejorar el transporte de litio sin añadir una nueva composición de materiales.
+   - Límite: celdas y condiciones de laboratorio; no afirmar que ya sea una batería comercial ni que resuelva todos los modos de fallo.
+   - Artículo primario: https://www.nature.com/articles/s41560-026-02172-w — DOI 10.1038/s41560-026-02172-w. DOI/resolvedor: PENDING_RESOLVER; la página de Nature sí declara el DOI.
+
+4. **Síntesis continua de péptidos de N a C sin aislar cada intermedio**
+   - Fecha: 23 nov 2026. Método: NCPS con aminoácidos o fragmentos sin proteger ambos extremos.
+   - Observación: el artículo informa rendimiento promedio ≥95 % por acoplamiento, epimerización ≤1,0 % y siete acoplamientos consecutivos; demuestra fragmento de tirzepatida, degarelix, un macrociclo de 14 residuos y semaglutida.
+   - Cálculo publicado: aproximadamente 10× menos aislamientos y hasta 100× menos residuos.
+   - Inferencia: puede reducir etapas de proceso y desperdicio en síntesis de péptidos.
+   - Límite: demostración de química de proceso; no demuestra adopción comercial ni cambios en eficacia, seguridad o disponibilidad clínica de esos medicamentos.
+   - Artículo primario: https://www.nature.com/articles/s41586-026-11448-w — DOI 10.1038/s41586-026-11448-w. DOI/resolvedor: PENDING_RESOLVER; el resultado de Nature declara DOI permanente, pero el resolvedor no fue accesible.
+
+### Compuertas
+
+- Crossref REST y los resolvedores DOI se intentaron; las respuestas fueron errores internos, 403 o redirecciones de autorización. Ninguno de estos cuatro candidatos queda con DOI verificado por Crossref/resolvedor en este corte.
+- No se asigna fecha_objetivo ni slot_local. La ocupación del 25–29 nov supera la capacidad y hay colisiones documentadas; no hay slot libre autorizado.
+- No se crea storyboard. Los cuatro permanecen como candidatos de radar, no recibidos, seleccionados ni preparados.
