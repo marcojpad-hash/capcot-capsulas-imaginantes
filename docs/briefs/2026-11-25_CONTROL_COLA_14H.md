@@ -30,7 +30,7 @@
 - El storyboard mantiene seis escenas, 102 palabras y 66 s efectivos incluyendo cortinilla; declara objetivo de 85 s. El gancho tiene 11 palabras. No presenta mapa con coordenadas reales ni dato/gráfico suficiente.
 - Conserva asset_filename en escenas y export.filename; faltan approved_assets=[], export.render_status=NOT_GENERATED y publicacion.status=PENDIENTE_DECISION_GROK. No existe narrative_qa ni ESTADO_EJECUCION.
 - programacion.json reserva 17:00. data/miniaturas_auditoria_2026-11-21.json ya tiene L6ggmPAwBOA a las 17:00; además hay dos IDs en 07:00. Resultado: CONFLICTO_DE_SLOT_EN_MAIN y PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR.
-- cola/estado/<id>.json y salidas/<id>/ devuelven 404: RECEPCION_GROK_NO_CONFIRMADA. La copia anidada no satisface el selector de capcot-grok-dispatch.yml, que filtra cola/entrada/*.json y busca con profundidad 1. NOT_DISPATCHABLE.
+- cola/estado/<id>.json y salidas/<id>/ devuelven 404: RECEPCION_GROK_NO_CONFIRMADA. Los asset_filename/export.filename no tienen archivos correspondientes en el árbol: MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO. La copia anidada no satisface el selector de capcot-grok-dispatch.yml, que filtra cola/entrada/*.json y busca con profundidad 1. NOT_DISPATCHABLE.
 
 ## Horarios, cola y auditoría
 
