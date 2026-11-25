@@ -179,3 +179,37 @@ Se repitió el acceso directo a los diez feeds configurados y a Google Trends RS
 - Crossref API y el resolvedor `doi.org` también terminaron con `curl: (28) Resolving timed out after 6000 milliseconds`.
 
 Como respaldo se abrió el HTML oficial de Google Trends México: mostró 210 tendencias. La primera página no aporta un candidato científico apto sin una fuente primaria adicional. Se mantienen los cinco candidatos ya registrados; no se declara DOI verificado por Crossref/resolvedor y no se agrega storyboard. La ocupación sigue en 7/5 del 25 al 28 y 5/5 el 29, por lo que no existe slot autorizado.
+
+
+## Actualización de verificación — 2026-11-25 08:30 CDMX
+
+### Ingesta RSS y Google Trends
+
+No se ejecutó localmente `scripts/tendencias.py`: este entorno no dispone de un checkout ejecutable con red. Se hizo una lectura alternativa directa de las URLs declaradas en el script mediante un fetch externo, sin alterar el repositorio.
+
+- Lectura obtenida: ScienceDaily (science, health y space_time) y Phys.org.
+- Lectura obtenida pero desactualizada para este corte: NASA (último ítem visible 2026-09-01) y UNAM Global (2026-05-18).
+- Errores exactos de la alternativa: ESA RSS `CRAWL_NOT_FOUND`; Nature RSS `CRAWL_UNEXPECTED_CONTENT_TYPE`; EurekAlert RSS `CRAWL_UNEXPECTED_CONTENT_TYPE`; SINC RSS `CRAWL_NOT_FOUND`; Google Trends RSS México `CRAWL_NOT_FOUND`.
+- Respaldo oficial: [Google Trends México — página Trending Now](https://trends.google.com/trending?geo=MX), consultada en este corte. Mostró 25 tendencias; ninguna correspondió a ciencia, naturaleza o espacio con fuente primaria apta. “epicentro” apareció como tendencia, pero sin identificar un evento oficial concreto; no se convirtió en candidato.
+
+### Verificación DOI/Crossref
+
+Se consultó directamente la API de Crossref y el resolvedor DOI para los cinco candidatos originales:
+
+- Varroa — [Crossref](https://api.crossref.org/works/10.1371/journal.pbio.3004091) / [DOI](https://doi.org/10.1371/journal.pbio.3004091): `status=ok`; título resuelto coincide.
+- Norma — [Crossref](https://api.crossref.org/works/10.1038/s41550-026-03010-5) / [DOI](https://doi.org/10.1038/s41550-026-03010-5): `status=ok`; título resuelto coincide.
+- Plankton — [Crossref](https://api.crossref.org/works/10.1038/s41467-026-79817-7) / [DOI](https://doi.org/10.1038/s41467-026-79817-7): `status=ok`; título resuelto coincide.
+- Glaciares — [Crossref](https://api.crossref.org/works/10.1038/s41558-026-02808-5) / [DOI](https://doi.org/10.1038/s41558-026-02808-5): `status=ok`; título resuelto coincide. El texto completo sigue sin estar disponible en el acceso consultado; conserva `PENDING_SOURCE`.
+- Pantoea — [Crossref](https://api.crossref.org/works/10.1038/s41598-026-80573-3) / [DOI](https://doi.org/10.1038/s41598-026-80573-3): `status=ok`; título resuelto coincide.
+
+### Shortlist de investigación vigente (5)
+
+1. **Varroa / hipoxia** — publicación 2026-11-19; texto primario completo; Crossref y resolvedor verificados. Mantener el límite entre respuesta metabólica medida y cualquier inferencia sobre supervivencia de la colonia.
+2. **Brazo de Norma** — publicación 2026-11-20; fuente primaria de *Nature Astronomy*; Crossref y resolvedor verificados. Separar observación de rayos X, modelo geométrico e interpretación física.
+3. **Complejidad del plancton** — publicación 2026-11-21; fuente primaria de *Nature Communications*; Crossref y resolvedor verificados. Mantener las proyecciones como resultados del modelo, no como observaciones actuales.
+4. **Pantoea asociada a quinoa** — publicación 2026-11-22; texto primario completo; Crossref y resolvedor verificados. Límite obligatorio: el ensayo de crecimiento bajo estrés salino se realizó en *Arabidopsis thaliana*; no demuestra mayor rendimiento de quinoa en campo.
+5. **Saltamontes acuáticos del Mesozoico** — [Crossref](https://api.crossref.org/works/10.1098/rspb.2026.0751) `status=ok`; DOI `10.1098/rspb.2026.0751`; publicación impresa 2026-11-18 e indexación del registro 2026-11-25. El resumen primario atribuye locomoción sobre la superficie del agua a morfología funcional y análisis hidrodinámicos de fósiles en ámbar. El resolvedor y la página completa del editor agotaron tiempo de consulta (`CRAWL_LIVECRAWL_TIMEOUT`); por tanto permanece `PENDING_SOURCE` hasta recuperar el texto primario completo. No narrar como conducta observada en animales vivos.
+
+El candidato de glaciares pasa a reserva por texto completo inaccesible. Se conservan como reservas, no como candidatos de esta ventana de siete días: fotoluminiscencia de puercoespines (artículo primario 2026-11-16), rivalidad de hormigas invasoras (publicación primaria 2026-11-11), PET-trazador (2026-08-13), positrón (2026-10-21), cometa de Euclid (2026-10-18) y capa de agua sobre hielo (2026-11-03). La fecha de una nota RSS reciente no sustituye la fecha de publicación del estudio primario.
+
+**Decisión operativa:** el shortlist queda en investigación, no seleccionado. El corte del 25 de noviembre continúa sin slot libre; no se crea storyboard ni se cambia `ESTADO_EJECUCION`, `narrative_qa`, `cola/entrada` o `cola/estado`.
