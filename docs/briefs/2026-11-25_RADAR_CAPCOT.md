@@ -346,3 +346,67 @@ Respaldo oficial: Google Trends México, vista HTML de últimas 24 horas. Muestr
 - Crossref REST y los resolvedores DOI se intentaron; las respuestas fueron errores internos, 403 o redirecciones de autorización. Ninguno de estos cuatro candidatos queda con DOI verificado por Crossref/resolvedor en este corte.
 - No se asigna fecha_objetivo ni slot_local. La ocupación del 25–29 nov supera la capacidad y hay colisiones documentadas; no hay slot libre autorizado.
 - No se crea storyboard. Los cuatro permanecen como candidatos de radar, no recibidos, seleccionados ni preparados.
+
+## Revalidación adicional — 25-nov-2026 16:01 CDMX
+
+### RSS y Google Trends México
+
+No se ejecutó localmente `scripts/tendencias.py`: esta sesión no dispone de un checkout ejecutable con red. Se intentó abrir directamente cada URL configurada y Google Trends RSS México. Errores exactos del lector:
+
+- ScienceDaily ciencia, salud y espacio: `400 Unsupported content-type: application/xml`.
+- Phys.org: `400 Unsupported content-type: text/xml`.
+- NASA News Release: `400 Unsupported content-type: application/rss+xml`.
+- ESA Space Science: `404 Not Found`.
+- Nature RSS: `400 Unsupported content-type: application/rss+xml`.
+- EurekAlert y Agencia SINC: `URL ... is not accessible via this tool`.
+- UNAM Global: `400 Unsupported content-type: application/rss+xml`.
+- Google Trends RSS México: `URL ... is not accessible via this tool`.
+
+Respaldo oficial: [Google Trends México — Trending Now](https://trends.google.com/trending?geo=MX), vista HTML de últimas 24 horas. La página muestra 221 tendencias y 25 visibles. La mayoría de las primeras 25 son consultas deportivas o de actualidad general; «bienestar de los animales» aparece con 5K+, pero no identifica un hallazgo concreto. No se convirtió ninguna tendencia en candidato sin fuente científica primaria.
+
+### Revalidación de los cuatro candidatos del corte 14:09
+
+**1. W2246-0526 — esfera de influencia de un agujero negro temprano**
+
+- Fuente institucional primaria: [ALMA Observatory, 20-nov-2026](https://www.almaobservatory.org/es/comunicados-de-prensa/alma-observa-la-esfera-de-influencia-gravitacional-de-un-agujero-negro-en-el-universo-temprano/).
+- Registro bibliográfico: [PubMed PMID 43063285](https://pubmed.ncbi.nlm.nih.gov/43063285/), que identifica el artículo de *Science Advances* y el DOI `10.1126/sciadv.aek9035`.
+- Observación/cálculo publicado: movimientos de gas trazados con [C II] y CO; masa dinámica estimada de aproximadamente 6.5 mil millones de masas solares, en W2246-0526 a z=4.6, cuando el universo tenía cerca de 1.3 mil millones de años. La resolución citada por ALMA alcanza escalas de unos 700 años luz.
+- Inferencia de autores: el polvo denso podría proteger los trazadores gaseosos de parte de la radiación X. No presentarlo como mecanismo demostrado.
+- Límite: es una medición dinámica estimada a partir de gas, no una observación del horizonte ni una medición directa de la masa del horizonte.
+- DOI/resolvedor: `PENDING_RESOLVER`.
+
+**2. Vaccinia — maquinaria de transcripción dentro del núcleo del poxvirus**
+
+- Fuente primaria: [Nature, 23-nov-2026](https://www.nature.com/articles/s41586-026-11458-8).
+- Registro bibliográfico: [PubMed PMID 43072752](https://pubmed.ncbi.nlm.nih.gov/43072752/); DOI declarado `10.1038/s41586-026-11458-8`.
+- Respaldo institucional: [Institute of Science and Technology Austria](https://www.ist.ac.at/en/news/inside-the-poxvirus-headquarters/).
+- Observación: crio-tomografía y promediado de sub-tomogramas en núcleos de vaccinia revelan una ARN-polimerasa viral en dímero de reposo de 1.8 MDa, asociada con VETF; se describen además componentes VPK2/L4 y un complejo de portal de salida de ARNm.
+- Límite: el sistema experimental es vaccinia, usado como modelo; no generalizar cada detalle a todos los poxvirus ni presentarlo como antiviral disponible.
+- DOI/resolvedor: `PENDING_RESOLVER`.
+
+**3. Interfaz tipo huevera — vaciado en baterías de estado sólido**
+
+- Fuente primaria: [Nature, «Contouring mitigates voiding at the lithium/ceramic electrolyte interface on discharging solid-state batteries»](https://www.nature.com/articles/s41560-026-02172-w), DOI declarado `10.1038/s41560-026-02172-w`.
+- La discusión del artículo confirma el resultado de diez veces: con 2 MPa y 30 °C, la interfaz contorneada eleva la corriente de descarga a la que comienza el vaciado de 0.2 a 2 mA cm⁻² frente a una interfaz plana.
+- Condiciones que no deben mezclarse: el artículo también estudia pulsos de 3 mA cm⁻² a 2 MPa/30 °C y 8 mA cm⁻² a 2 MPa/60 °C; el perfil WLTP llega a pulsos de hasta 9 mA cm⁻² bajo 2 MPa/60 °C. No atribuir esos 9 mA cm⁻² al ensayo constante de 30 °C.
+- Límite: celdas y protocolos experimentales; no equivale a una batería comercial ni demuestra que se hayan eliminado todos los modos de fallo.
+- DOI/resolvedor: `PENDING_RESOLVER`.
+
+**4. Síntesis continua de péptidos de N a C**
+
+- Fuente primaria: [Nature, 23-nov-2026](https://www.nature.com/articles/s41586-026-11448-w).
+- Registro bibliográfico: [PubMed PMID 43072754](https://pubmed.ncbi.nlm.nih.gov/43072754/); DOI declarado `10.1038/s41586-026-11448-w`.
+- Observación del artículo: síntesis continua con aminoácidos o fragmentos sin proteger ambos extremos; rendimiento promedio ≥95 % por acoplamiento, epimerización ≤1.0 % y siete acoplamientos consecutivos. Se reportan ejemplos con fragmento de tirzepatida, degarelix, macrociclo de 14 residuos y semaglutida.
+- Cálculo reportado por los autores: alrededor de 10 veces menos aislamientos y hasta 100 veces menos residuos.
+- Límite: demostración de química de proceso; no demuestra adopción comercial ni cambios en eficacia, seguridad o disponibilidad clínica de esos fármacos.
+- DOI/resolvedor: `PENDING_RESOLVER`.
+
+### Compuerta DOI/Crossref
+
+Se intentó abrir `api.crossref.org/works/{doi}` y los cuatro enlaces `doi.org/{doi}). El lector devolvió `URL ... is not accessible via this tool` en todos los casos. Las páginas editoriales y los registros PubMed confirman los DOI declarados en tres candidatos; la página editorial confirma el del estudio de baterías. Eso no sustituye la compuerta exigida de Crossref/resolvedor. Ninguno se eleva a `VERIFICADO_CROSSREF`; los cuatro conservan `PENDING_RESOLVER`.
+
+### Decisión
+
+- Se mantienen cuatro candidatos recientes en el radar; ninguno queda seleccionado.
+- La ocupación del 25–28 nov continúa en 7/5 y el 29 nov en 5/5 según los registros de programación ya auditados. No hay `fecha_objetivo + slot_local` libre y autorizado.
+- No se crea storyboard, no se promueve cola, no se modifica `data/*.json`, no se crea/edita estado Grok y no se generan medios.
