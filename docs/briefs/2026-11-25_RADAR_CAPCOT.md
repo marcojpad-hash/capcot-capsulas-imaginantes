@@ -169,3 +169,13 @@ Revalidación de páginas editoriales: PLOS Biology y Nature Climate Change abri
 ### Cupo y decisión
 
 La ocupación registrada sigue en 7/5 para el 25–28 de noviembre y 5/5 para el 29. No hay slot libre. No se creó storyboard ni se seleccionó candidato. El corte de este radar corresponde a feature HEAD 1bce9a7a200073d0a4286d0d69f027b7ea45ea93 y main HEAD 7b50235a1a46b4d759796253e0d036fb147c4401. La revisión de cola y producción preexistente queda en 2026-11-25_CONTROL_COLA_00H.md.
+
+
+## Revalidación de feeds — 2026-11-25 04:06 CDMX
+
+Se repitió el acceso directo a los diez feeds configurados y a Google Trends RSS México. Errores exactos:
+- `curl: (6) Could not resolve host`: `https://www.sciencedaily.com/rss/top/science.xml`, `https://www.sciencedaily.com/rss/top/health.xml`, `https://www.esa.int/rssfeed/Our_Activities/Space_Science`, `https://www.agenciasinc.es/rss`, `https://unamglobal.unam.mx/feed/` y `https://trends.google.com/trending/rss?geo=MX`.
+- `curl: (28) Resolving timed out after 6000 milliseconds`: `https://www.sciencedaily.com/rss/space_time.xml`, `https://phys.org/rss-feed/`, `https://www.nasa.gov/news-release/feed/`, `https://www.nature.com/nature.rss` y `https://www.eurekalert.org/rss/news.xml`.
+- Crossref API y el resolvedor `doi.org` también terminaron con `curl: (28) Resolving timed out after 6000 milliseconds`.
+
+Como respaldo se abrió el HTML oficial de Google Trends México: mostró 210 tendencias. La primera página no aporta un candidato científico apto sin una fuente primaria adicional. Se mantienen los cinco candidatos ya registrados; no se declara DOI verificado por Crossref/resolvedor y no se agrega storyboard. La ocupación sigue en 7/5 del 25 al 28 y 5/5 el 29, por lo que no existe slot autorizado.
