@@ -42,7 +42,7 @@ No se ejecutó `validar_storyboard.py --check-doi`; esta es inspección estátic
 
 ### Fuente y afirmaciones
 
-- El DOI `10.1126/science.aee2641` y los metadatos del artículo de Science quedan corroborados por el registro PubMed y la nota institucional de University of Michigan (19-nov-2026). Crossref/resolvedor no se pudo completar desde este corte.
+- El DOI `10.1126/science.aee2641` y los metadatos del artículo de Science quedan corroborados por PubMed (https://pubmed.ncbi.nlm.nih.gov/43056466/) y la nota institucional de University of Michigan (https://www.lsi.umich.edu/news/2026-11/scientists-determine-how-microbes-make-drug-chemicals-without-damaging-themselves), ambos fechados 19-nov-2026. El editor declara el DOI en https://www.science.org/doi/10.1126/science.aee2641. Los endpoints intentados fueron https://api.crossref.org/works/10.1126/science.aee2641 y https://doi.org/10.1126/science.aee2641; Crossref/resolvedor no se pudo completar desde este corte.
 - La fuente accesible respalda que DnrV reduce especies reactivas de oxígeno y favorece la catálisis P450; la nota institucional respalda la familia REACT de más de 40,000 proteínas. La afirmación cuantitativa de aceleración de cuatro veces no quedó localizada en el abstract ni en la nota institucional consultada: **PENDING_SOURCE para esa cifra**.
 - La fuente no se eleva a compuerta DOI PASS sin resolver Crossref/DOI y sin documentar la cifra específica.
 
