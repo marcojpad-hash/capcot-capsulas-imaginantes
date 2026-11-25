@@ -533,3 +533,28 @@ No se ejecutó localmente `scripts/tendencias.py`; se leyeron sus diez URL y se 
 - No se creó storyboard ni se repitió QA narrativo.
 - Los DOI no se marcan como resueltos; los dos artículos primarios quedan `PENDIENTE_RESOLVEDOR` y el modelo lunar `PENDING_SOURCE`.
 - No se generaron medios, placeholders ni publicaciones.
+
+
+## Corte adicional de investigación — 2026-11-24 22:00 CDMX
+
+### Ingesta y respaldo
+- Se reintentaron los RSS definidos en `scripts/tendencias.py` y Google Trends RSS México. Se conservan los errores exactos del corte anterior: ScienceDaily `400 Unsupported content-type: application/xml`; Phys.org `400 Unsupported content-type: text/xml`; NASA/Nature/UNAM `400 Unsupported content-type: application/rss+xml`; ESA `404 Not Found`; Google Trends RSS: `URL https://trends.google.com/trending/rss?geo=MX is not accessible via this tool`.
+- La vista HTML oficial de [Google Trends México](https://trends.google.com/trending?geo=MX) sigue disponible como respaldo, pero sus primeras tendencias no ofrecen una señal admisible para esta línea editorial.
+- Crossref REST y el resolvedor DOI siguen sin acceso: `curl: (6) Could not resolve host: api.crossref.org`; el lector tampoco pudo abrir directamente `doi.org`. Los DOI listados abajo aparecen en las páginas editoriales primarias, pero permanecen **PENDING_RESOLVEDOR**. No se elevan a verificados.
+
+### Cinco candidatos adicionales, sin selección ni storyboard
+
+1. **El brazo Norma podría ser un frente de choque de formación estelar** — *Nature Astronomy*, 20-nov-2026. DOI declarado por la editorial: `10.1038/s41550-026-03010-5`. [Artículo primario](https://www.nature.com/articles/s41550-026-03010-5). Observación: el trabajo interpreta la estructura Norma como un frente de choque impulsado por la barra galáctica, apoyándose en mediciones de máseres. Inferencia: podría cambiar cómo se interpreta esa estructura de la Vía Láctea. Límite: es una interpretación de una estructura concreta, no una reclasificación de todos los brazos espirales. **PENDING_RESOLVEDOR; revisar rotación de temas espaciales.**
+
+2. **Menos hielo marino, mayor exposición a oleaje extremo** — *Communications Earth & Environment*, 23-nov-2026. DOI declarado: `10.1038/s43247-026-04146-y`. [Artículo primario](https://www.nature.com/articles/s43247-026-04146-y). Observación: el estudio modela el aumento de exposición a oleaje extremo para una comunidad inuit del extremo norte canadiense y proyecta un incremento de 41–62% hacia mediados de siglo bajo sus escenarios. Inferencia: temporadas de aguas abiertas más largas elevan la exposición local. Límite: resultado localizado y dependiente de escenarios; no generalizarlo a todo el Ártico. **PENDING_RESOLVEDOR; revisar proximidad temática con otros temas climáticos.**
+
+3. **Simulación analógica de campos cuánticos relativistas en 2+1 dimensiones** — *Nature*, 18-nov-2026. DOI declarado: `10.1038/s41586-026-11268-y`. [Artículo primario](https://www.nature.com/articles/s41586-026-11268-y). Observación: el experimento construye un sistema analógico de laboratorio para estudiar dinámica de campos cuánticos relativistas masivos en dos dimensiones espaciales y una temporal. Inferencia: permite probar fenómenos de una teoría de campos en un sistema controlable. Límite: el análogo de laboratorio no es un campo cósmico real. **PENDING_RESOLVEDOR; dificultad explicativa alta.**
+
+4. **Un eje neuroinmune artificial alimentado por glucosa** — *Nature*, 18-nov-2026. DOI declarado: `10.1038/s41586-026-11251-7`. [Artículo primario](https://www.nature.com/articles/s41586-026-11251-7). Observación: el trabajo describe un dispositivo bioelectrónico para control metabólico y presenta pruebas preclínicas en ratas diabéticas. Inferencia: una interfaz neuroinmune podría modular señales metabólicas. Límite: evidencia animal; no es tratamiento demostrado en humanos. **PENDING_RESOLVEDOR; no formular promesas clínicas.**
+
+5. **Ocupación catiónica y reparación de vacantes de oxígeno en cristales ópticos no lineales** — *Nature Communications*, 23-nov-2026. DOI declarado: `10.1038/s41467-026-79746-5`. [Artículo primario](https://www.nature.com/articles/s41467-026-79746-5). Observación: el artículo relaciona una ocupación catiónica cuasi-degenerada con la reparación de defectos de vacantes de oxígeno. Inferencia: el diseño de la red cristalina podría mejorar propiedades de materiales ópticos. Límite: mecanismo específico del material estudiado; no afirmar que cualquier cristal se autorrepara. **PENDING_RESOLVEDOR; dificultad explicativa alta.**
+
+### Decisión
+- Los cinco son candidatos de investigación, no temas seleccionados.
+- No hay slot autorizado libre en el 24-nov y la rama de trabajo no contiene storyboard nuevo para esa fecha. El calendario de `main` contiene programación previa y colisiones.
+- No se crea storyboard ni se promueve nada: todos permanecen pendientes de resolución DOI, rotación y slot real.
