@@ -403,7 +403,7 @@ Respaldo oficial: [Google Trends México — Trending Now](https://trends.google
 
 ### Compuerta DOI/Crossref
 
-Se intentó abrir `api.crossref.org/works/{doi}` y los cuatro enlaces `doi.org/{doi}). El lector devolvió `URL ... is not accessible via this tool` en todos los casos. Las páginas editoriales y los registros PubMed confirman los DOI declarados en tres candidatos; la página editorial confirma el del estudio de baterías. Eso no sustituye la compuerta exigida de Crossref/resolvedor. Ninguno se eleva a `VERIFICADO_CROSSREF`; los cuatro conservan `PENDING_RESOLVER`.
+Se intentó abrir `api.crossref.org/works/{doi}` y los cuatro enlaces `doi.org/{doi}`. El lector devolvió `URL ... is not accessible via this tool` en todos los casos. Las páginas editoriales y los registros PubMed confirman los DOI declarados en tres candidatos; la página editorial confirma el del estudio de baterías. Eso no sustituye la compuerta exigida de Crossref/resolvedor. Ninguno se eleva a `VERIFICADO_CROSSREF`; los cuatro conservan `PENDING_RESOLVER`.
 
 ### Decisión
 
