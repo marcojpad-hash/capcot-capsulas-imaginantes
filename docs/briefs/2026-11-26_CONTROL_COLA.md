@@ -116,3 +116,38 @@ No existe un archivo historial_youtube vigente en el árbol inspeccionado ni una
 - La cobertura nueva del PR (seis pruebas de booleanos y DOI/TLS) **no** está en `tests/test_validar_storyboard_textual.py` de la rama base; el archivo base conserva ocho métodos y ninguno cubre esos casos. Por tanto, el código está presente, pero la regresión específica sigue pendiente de incorporar/ejecutar.
 - No se fusionó ni cerró PR #15. No se disparó CI ni se afirmó que las pruebas nuevas hayan pasado.
 
+
+
+## Addendum de revalidación — 2026-11-26 04:00 CDMX
+
+### Rama, CI y handoff
+
+- HEAD revalidado de `feature/capcot-video-discovery-continuity`: `7cfdc3a085f230f732830a67248b91d1753bc8d7`. HEAD de `main`: `5667579d040c89907c5784b643a758be4aed5674`.
+- PR #3 continúa abierto y `mergeable=false`, `mergeable_state=dirty`: 1,435 commits, 718 archivos modificados. CodeQL del PR, run #45784089913, terminó `success` el 26-nov 08:32 UTC. No hubo run de dispatch Grok en las Actions consultadas.
+- PR #15 continúa abierto y dirty. La implementación de validación de booleanos/TLS ya está en la rama base, pero las pruebas nuevas siguen fuera de `tests/test_validar_storyboard_textual.py`; no se afirmó que esa regresión haya sido ejecutada.
+- Se verificaron los filtros de `capcot-grok-dispatch.yml`, `validar-kuroshio.yml`, `tts-tooling-smoke.yml` y `capcot-descubrimiento.yml`: `docs/briefs/**` no activa sus filtros de push. Este addendum no requiere disparar Actions.
+
+### Lote explícito 5–7 nov
+
+- Revisión de integridad: los 12 `storyboard.json` conservan como último commit el 18-nov-2026 21:58–21:59 UTC, y sus registros `narrative_qa` siguen fechados el 18-nov. No se detectó cambio de narración; se conservaron los 2 PASS y 10 FAIL sin repetir ni sobrescribir PASS.
+- No existe `ESTADO_EJECUCION.md` para ninguno de los 12 proyectos. Los 12 intentos de lectura de `cola/estado/<project_id>.json` devolvieron 404: `RECEPCION_GROK_NO_CONFIRMADA`. No hay JSON plano de entrada para esos IDs y no se promovió ninguno.
+- Persisten las seis omisiones estructurales por escena documentadas en el corte anterior (`dramatic_beat`, `scene_function`, `causal_bridge_from_previous`, `question_state`, `reason_to_continue`, `new_information`), además de las carencias de mapa/dato/SFX ya registradas. Los dos PASS narrativos continúan sin superar la compuerta estructural.
+
+### Expediente main-only del 25-nov: React/doxorrubicina
+
+- `proyectos/2026-11-25_react-bacterias-anticancer/storyboard.json` existe también como copia anidada en `cola/entrada/2026-11-25_react-bacterias-anticancer/storyboard.json`. No hay `ESTADO_EJECUCION.md`, `cola/estado/<id>.json` ni archivo de salida `capsula.mp4`.
+- `programacion.json` conserva `status=programado_paquete` y `publish_at=2026-11-25T23:00:00Z` (17:00 CDMX). Se clasifica `PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR`; el hecho de que la hora ya haya pasado no prueba publicación, porque no hay historial de YouTube ni lectura actual de Studio.
+- La copia de cola está anidada. El workflow solo consume `cola/entrada/*.json` y, en dispatch manual, busca con `find ... -maxdepth 1`; por tanto la ruta observada es `NOT_DISPATCHABLE`.
+- Lectura fría de la narración concatenada, sin título ni metadatos: FAIL/57. Checks: pregunta central true; apertura in medias res false; progresión por escena true; transiciones causales false; giro científico explicado true; límite de evidencia explícito true; payoff cierre-apertura false. No se escribió `narrative_qa` porque el expediente está en `main`, que permanece solo consulta.
+- Estructura observada: 6 escenas, 102 palabras y 66 s frente al contrato de 7–9 escenas, 170–235 palabras y 75–90 s. DOI `10.1126/science.aee2641` coincide con el artículo primario de *Science* publicado el 19-nov-2026 (registro PubMed); el endpoint Crossref no fue accesible en esta pasada. El abstract consultado no acredita por sí solo la cifra exacta de 40,000 proteínas: esa afirmación requiere texto completo/suplemento o queda `PENDING_SOURCE`. No hay medios binarios en el árbol: `MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO`.
+
+### Reworks programados del 26-nov y slot 23:30
+
+- `data/rehechos_2026-11-22.json` conserva dos paquetes para el 26-nov: 10:00 CDMX, video ID `7pzPfqRSagU`; y 15:00 CDMX, video ID `MgHVHbeIVS0`, ambos con `publishAt` y estado programado. Clasificación de ambos: `PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR`.
+- Los directorios de proyecto revisados contienen storyboard/metadata/registro de render, pero no `capsula.mp4` ni `portada`; tampoco hay salida correspondiente en `salidas/`. Se marca `MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO`; no se reenvía ni cancela.
+- No hay proyecto ni entrada para el 26-nov 23:30 en `main` o feature, ni registro 23:30 en los snapshots de publicaciones/rotación consultados. `historial_youtube` no existe en el árbol y no hay lectura actual de Studio. Se conserva `OCUPACION_23_30_NO_CONCILIADA`; no se creó storyboard.
+
+### Fuentes de tendencia: limitación de transporte
+
+- No se ejecutó `scripts/tendencias.py` en un runner. El visor web rechazó varios RSS por MIME XML (`400 Unsupported content-type`); el intento de descarga directa devolvió `ERROR: download failed`. Esto no demuestra que los feeds estén caídos.
+- Se usó búsqueda de respaldo en fuentes oficiales: ESA confirmó la actualización Hera del 25-nov ya incluida en el radar; la nota NASA sobre cultivos espaciales remite a estudios primarios de agosto/septiembre, por lo que no desplaza a los cinco candidatos actuales. Google Trends RSS México no quedó verificado en esta pasada. Se conservan los cinco candidatos del radar sin añadir un sexto ni crear storyboard.
