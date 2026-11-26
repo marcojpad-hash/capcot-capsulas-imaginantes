@@ -507,3 +507,31 @@ Todos son artículos de investigación de Nature con fecha de versión de regist
 - Los cinco candidatos tienen fuente primaria y fecha editorial reciente, pero los cinco siguen PENDING_RESOLVER.
 - Recomendación de orden para el siguiente slot que llegue a estar libre: turberas; después, circuito intestino-cerebro en Drosophila.
 - No se selecciona tema ni se crea storyboard: la ocupación de slots no está conciliada con todos los registros de programación y no hay una hora libre demostrada.
+
+
+## Revalidación 23:58 CDMX — 25-nov-2026
+
+### RSS y Google Trends México
+Se reintentaron las diez fuentes RSS declaradas en `scripts/tendencias.py` y el RSS de Google Trends:
+- ScienceDaily (ciencia, salud y espacio): `400 Unsupported content-type: application/xml`.
+- Phys.org: `400 Unsupported content-type: text/xml`.
+- NASA News Release: `400 Unsupported content-type: application/rss+xml`.
+- ESA Space Science: `404 Not Found`.
+- Nature RSS: `400 Unsupported content-type: application/rss+xml`.
+- EurekAlert, Agencia SINC y Google Trends RSS México: `URL ... is not accessible via this tool`.
+- UNAM Global: `400 Unsupported content-type: application/rss+xml`.
+
+El respaldo HTML de [Google Trends México — Trending Now](https://trends.google.com/trending?geo=MX) abrió con **242 tendencias y 25 visibles**. La primera página estuvo dominada por fútbol, clima y consultas de actualidad; «bienestar de los animales» apareció con 10K+, pero no identifica un estudio ni una fuente científica primaria. No se convierte esa tendencia en candidato.
+
+### Reintento DOI/Crossref
+Se intentaron los cinco endpoints `api.crossref.org/works/{doi}` y los cinco resolvedores `doi.org/{doi}` de los candidatos ya registrados:
+- `10.1038/s41586-026-11339-0`
+- `10.1038/s41586-026-11315-8`
+- `10.1038/s41586-026-11465-9`
+- `10.1038/s41586-026-11353-2`
+- `10.1038/s41586-026-11287-9`
+
+Los diez intentos devolvieron literalmente `URL ... is not accessible via this tool`. No se eleva ninguno a `VERIFICADO_CROSSREF` ni `VERIFICADO_RESOLVEDOR`; los cinco permanecen `PENDING_RESOLVER`.
+
+### Decisión
+No apareció un sexto candidato admisible ni una fuente nueva que supere la compuerta. Los cinco candidatos del corte 21:58 se conservan como candidatos, no seleccionados. No hay `fecha_objetivo + slot_local` autorizado: no se crea storyboard ni se promueve cola. No se generaron medios.
