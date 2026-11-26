@@ -291,9 +291,9 @@ Se contrastó la rama de trabajo contra `main/data/horarios.json` (actualizado 2
 El snapshot `main/data/miniaturas_auditoria_2026-11-21.json` y `main/data/rehechos_2026-11-22.json` muestran para el 26-nov:
 
 - 07:00 — `ZkrzVP6V5k8`, ya programado.
-- 10:00 — remontaje `2fQp5v9mQ6A`, preexistente y fuera de ventana.
+- 10:00 — el ID `2fQp5v9mQ6A` citado en el primer corte quedó NO_VERIFICADO; la fuente vigente main/data/rehechos_2026-11-22.json registra `7pzPfqRSagU`.
 - 13:30 — `966qJDbIJp4`, ventana de prueba ocupada.
-- 15:00 — remontaje `4vQ2M2t8m3A`, preexistente y fuera de ventana.
+- 15:00 — el ID `4vQ2M2t8m3A` citado en el primer corte quedó NO_VERIFICADO; la fuente vigente main/data/rehechos_2026-11-22.json registra `MgHVHbeIVS0`.
 - 17:00 — colisión de dos IDs: `JqlKsJOVmdE` y `-1DRh_qj7Bg`.
 - 19:00 — `q5ZHy9oH6VM` sigue programado pese a que la franja fue retirada; no cancelar ni duplicar desde esta auditoría.
 - 23:30 — `2026-11-23_dato-thanksgiving-washington`, `publishAt_utc=2026-11-27T05:30:00Z` (26-nov 23:30 CDMX).
@@ -312,3 +312,43 @@ Resultado: no existe slot libre verificable para crear storyboard el 26-nov. No 
 - La issue de reenvío/publicación externa sigue fuera de autorización. La auditoría narrativa de Cuásares sigue delegada a otra revisión; esta conversación no la sustituye.
 - PR #3 continúa draft/no mergeable y su diff incluye `data/*.json`; no se fusionó.
 - Los últimos commits de esta rama modifican documentación, no los 12 storyboards del lote 5–7-nov. Se conserva el resultado anterior de 2 PASS / 10 FAIL y 0/12 con estructura completa; no se repitió PASS ni se reescribió narración.
+
+
+
+## Addendum de conciliación de reworks — 2026-11-26 09:58 CDMX
+
+### Fuente de verdad y corrección de IDs
+
+Se releyó main/data/rehechos_2026-11-22.json (blob 902a92411a516df4a3bf1046d8fec3ce1ee888c9) y se cruzó contra los nueve directorios de proyecto, sus metadata.json y render.log. La fuente contiene nueve reworks con ID de YouTube y programación privada→pública; TikTok y Facebook también figuran como programados. Esto acredita procesamiento/programación preexistente, no que cada publicación ya se haya hecho pública.
+
+La línea del corte de las 09:39 que asignaba 2fQp5v9mQ6A a las 10:00 y 4vQ2M2t8m3A a las 15:00 no está respaldada por los archivos consultados ni por búsqueda de código en el repositorio. Se conserva como dato anterior NO_VERIFICADO. Los IDs respaldados por data/rehechos_2026-11-22.json son 7pzPfqRSagU y MgHVHbeIVS0.
+
+| Fecha / slot CDMX | Proyecto main | YouTube ID | Estado registrado |
+|---|---|---|---|
+| 25-nov 10:00 | 2026-11-25_rehecho-nube-500-toneladas | 9RxTSifAcpo | private→public programado |
+| 25-nov 15:00 | 2026-11-25_rehecho-barreleye-no-son-sus-ojos | 3rwo_sK1e18 | private→public programado |
+| 26-nov 10:00 | 2026-11-25_rehecho-pan-refri-endurece | 7pzPfqRSagU | private→public programado |
+| 26-nov 15:00 | 2026-11-25_rehecho-ratas-topo-ayudar-no-es-cuidar | MgHVHbeIVS0 | private→public programado |
+| 27-nov 10:00 | 2026-11-25_rehecho-miel-su-unico-enemigo | p06UCGu0-Og | private→public programado |
+| 27-nov 15:00 | 2026-11-25_rehecho-ola-azul-alarma-antirrobo | HKpani8TTeY | private→public programado |
+| 28-nov 10:00 | 2026-11-25_rehecho-dunas-que-cantan-no-es-viento | 6VUxaJtqbF0 | private→public programado |
+| 28-nov 15:00 | 2026-11-25_rehecho-escudo-jupiter-no-es-pared | Dx3lqkAb8Sc | private→public programado |
+| 29-nov 10:00 | 2026-11-25_rehecho-dunkelflaute-sin-sol-ni-viento | m1FeS0mhfZ4 | private→public programado |
+
+### Auditoría de los nueve expedientes
+
+- Los nueve storyboards tienen 7 escenas, 215–229 palabras, 9:16, voz es-MX-JorgeNeural a +7% / -2Hz y cortinilla de 6 s. Los render.log miden entre 86.47 y 88.80 s, dentro del rango audiovisual 75–90 s; la suma nominal de los tiempos de escena más cortinilla en el JSON es 76 s.
+- Los nueve contienen siete entradas SFX, pero no tienen prompt_base, mapa con coordenadas, dato/gráfico ni campo de ambiente por escena. Tampoco contienen narrative_qa; no hay evidencia de una revisión narrativa independiente registrada. Por contrato no se consideran PASS ni aptos para handoff.
+- Los JSON incluyen referencias asset_filename / export.filename=capsula.mp4, pero las carpetas GitHub no contienen capsula.mp4 ni portada; los logs apuntan a rutas de /workspace. Clasificación para los nueve: MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO.
+- Los nueve tienen ID, publishAt y programación de plataformas en el registro de reworks. Clasificación: PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR. No se intentó abrir Studio, publicar, cancelar ni reenviar.
+- Ninguno tiene JSON plano en cola/entrada; están en proyectos/, no en una ruta que active el workflow. Clasificación: NOT_DISPATCHABLE. El árbol cola/estado devuelve 404; recepción Grok: RECEPCION_GROK_NO_CONFIRMADA.
+
+### Conciliación del registro de publicaciones
+
+main/data/publicaciones.json (blob a822459849571a443196e6a5b5d4ee73d109b1cd) contiene 62 registros y termina el 23-nov; no contiene los nueve IDs del archivo de reworks ni registros del 25–26 nov. La programación está registrada en data/rehechos_2026-11-22.json, pero no reconciliada en data/publicaciones.json. Se registra como discrepancia documental; ambos JSON permanecen intactos.
+
+### Resultado
+
+- Los slots 26-nov 10:00 y 15:00 están ocupados por los reworks Pan y Ratas; no se asigna un storyboard nuevo.
+- Los demás reworks ocupan 25-nov 10:00/15:00, 27-nov 10:00/15:00, 28-nov 10:00/15:00 y 29-nov 10:00. No se duplican ni se cancelan.
+- No se creó storyboard, cola, estado Grok ni medio. No se disparó workflow ni se envió payload.
