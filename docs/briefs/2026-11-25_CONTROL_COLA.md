@@ -406,3 +406,10 @@ La propuesta de pantallas 20:00 sigue pendiente de Studio; el último registro a
 - **EJECUTADO:** comparación de ramas, lectura de inventarios de programación, cola, bloqueados, handoffs, estados Grok, issues, plantillas y Actions.
 - **VERIFICADO:** no hubo cambios de storyboard/cola/programación entre los HEAD comparados; no existe entrada plana ni estado Grok; no hay promoción segura.
 - **PENDIENTE:** reconciliar el inventario automático con los dos registros de main mediante una corrección probada; obtener acuses Grok reales; resolver DOI/Crossref; esperar decisión editorial/slot autorizado. No se generaron medios ni se publicó/programó nada.
+
+
+### Trazabilidad de este corte
+- Addendum de control guardado en commit `4decda619bb52f2aa27de96a26d1c0ee20b03ebd`; lectura de vuelta confirmó el bloque completo.
+- Revalidación RSS/Trends/DOI guardada en `docs/briefs/2026-11-25_RADAR_CAPCOT.md`, commit `f5a1650efbd5f7fb8fb9a059b8a3b533c6adddad`; lectura de vuelta confirmó el bloque completo.
+- HEAD de feature después de ambas escrituras: `f5a1650efbd5f7fb8fb9a059b8a3b533c6adddad`.
+- Ambas escrituras se limitaron a `docs/briefs/`; no tocaron `data/*.json`, storyboards, cola, estados Grok, workflow, secretos, permisos, main ni publicaciones. Los paths modificados no coinciden con los filtros de los workflows; no se disparó ninguno.
