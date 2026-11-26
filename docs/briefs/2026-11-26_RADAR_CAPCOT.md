@@ -291,3 +291,47 @@ El storyboard se actualizó y leyó de vuelta en el commit `01f0815756ddbd8d2a7d
 - `approved_assets=[]`, `render_status=NOT_GENERATED`, sin rutas ni medios.
 
 La verificación de DOI fue manual por Crossref/resolvedor; no se ejecutó `scripts/validar_storyboard.py --check-doi`. Tampoco se ejecutó el validador estructural Python. `narrative_qa` quedó `FAIL/0` con `REVISION_INDEPENDIENTE_AUSENTE`: no hubo una lectura ciega separada de solo la narración. No hay PASS ni autorización de promoción.
+
+
+---
+
+## Revalidación de fuentes y cartografía — 2026-11-26, 16:04 CDMX
+
+### Feeds y Trends
+
+No se ejecutó `scripts/tendencias.py`; se intentó leer cada endpoint definido por el script. Los errores pertenecen a la interfaz de recuperación web y no prueban por sí solos que los servidores RSS estén caídos:
+
+| Fuente | Respuesta observada |
+|---|---|
+| ScienceDaily science.xml | `400 Unsupported content-type: application/xml` |
+| ScienceDaily health.xml | `400 Unsupported content-type: application/xml` |
+| ScienceDaily space_time.xml | `400 Unsupported content-type: application/xml` |
+| Phys.org RSS | `400 Unsupported content-type: text/xml` |
+| NASA News Release RSS | `400 Unsupported content-type: application/rss+xml` |
+| ESA Space Science RSS | `404 Not Found` |
+| Nature RSS | `400 Unsupported content-type: application/rss+xml` |
+| EurekAlert RSS | `URL ... is not accessible via this tool` |
+| Agencia SINC RSS | `URL ... is not accessible via this tool` |
+| UNAM Global RSS | `400 Unsupported content-type: application/rss+xml` |
+| Google Trends RSS México | `URL ... is not accessible via this tool` |
+| Google Trends Trending Now HTML México | `URL ... is not accessible via this tool` |
+
+La última lectura oficial utilizable de Trends sigue siendo la del corte de 13:56: 25 tendencias, sin señal científica/naturaleza/espacio que justificara selección. No se atribuye ninguna tendencia nueva a este corte. Se conservan los cuatro candidatos primarios ya documentados; no se añade un candidato ni se abre otro slot.
+
+Crossref REST y el resolvedor DOI tampoco fueron accesibles en esta relectura. Se conserva como antecedente la verificación Crossref `status=ok` registrada a las 13:56 para los cuatro candidatos; no se declara una revalidación nueva.
+
+### Corrección cartográfica del borrador del 27-nov
+
+El dataset de cirrípedos `10.15468/jnzaw3` sí publica un bounding box GBIF IPT verificable: latitud 35.472–43.723 y longitud -9.466–-1.785. Se incorporó a la escena 3 junto con los otros dos datasets, sin inventar estaciones puntuales. El mapa ahora muestra tres extensiones publicadas y solapadas; la caja sur cubre Iberia y el norte de Marruecos.
+
+Lectura de vuelta:
+- Commit: `d57f1b9cf4c70e7539e3b6ca50aaaa3c118d37b8`.
+- Blob: `8ad79510f5b037b6455187dae97ac357394a6291`.
+- Narración sin cambios: 174 palabras, 8 escenas, 78 s de escenas + 6 s de cortinilla = 84 s.
+- `narrative_qa` sigue `FAIL/0` con `REVISION_INDEPENDIENTE_AUSENTE`; el cambio cartográfico no constituye una revisión narrativa.
+- `approved_assets=[]`, `render_status=NOT_GENERATED`; sin medios ni rutas.
+- No hay `cola/entrada`, marker de handoff ni estado individual Grok; `cola/estado/<project_id>.json` devuelve 404. `RECEPCION_GROK_NO_CONFIRMADA`; `NOT_DISPATCHABLE`.
+
+El slot 27-nov 23:30 sigue libre en los registros consultados de main: no hay proyecto, publicación ni rotación para esa combinación; los rehechos de 27-nov están a las 10:00 y 15:00. No existe archivo independiente `historial_youtube` en el árbol. La programación externa no queda certificada por esos registros. El paquete Thanksgiving 26-nov 23:30 es preexistente y distinto; no se duplica ni redispatcha.
+
+No se ejecutó el validador estructural para este storyboard ni `--check-doi`. El run Kuroshio exitoso posterior valida otro proyecto y no se atribuye a este borrador.
