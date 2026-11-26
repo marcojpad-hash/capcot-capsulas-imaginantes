@@ -352,3 +352,8 @@ main/data/publicaciones.json (blob a822459849571a443196e6a5b5d4ee73d109b1cd) con
 - Los slots 26-nov 10:00 y 15:00 están ocupados por los reworks Pan y Ratas; no se asigna un storyboard nuevo.
 - Los demás reworks ocupan 25-nov 10:00/15:00, 27-nov 10:00/15:00, 28-nov 10:00/15:00 y 29-nov 10:00. No se duplican ni se cancelan.
 - No se creó storyboard, cola, estado Grok ni medio. No se disparó workflow ni se envió payload.
+
+
+### Estado procedimental de QA narrativo — nueve reworks main-only
+
+La relectura de los nueve metadata.json y storyboard.json no encontró autor/modelo verificable, narrative_qa ni artefacto de auditoría independiente. No se realizó una pasada fría independiente de sus narraciones y no se inventan checks. Conforme al contrato, el estado efectivo de QA para cada uno es FAIL, score 0, critical_flags=["REVISION_INDEPENDIENTE_AUSENTE"]; review_basis y los siete checks quedan sin evaluación porque no existe una revisión separada acreditada. Esto es una clasificación procedimental, no una valoración del contenido narrativo. No se escribió narrative_qa en main ni se modificaron los storyboards.
