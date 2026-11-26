@@ -371,3 +371,38 @@ La propuesta de pantallas 20:00 sigue pendiente de Studio; el último registro a
 - Los estados individuales de Grok no existen en el árbol revisado; cualquier proyecto sin archivo individual conserva RECEPCION_GROK_NO_CONFIRMADA. Los handoff markers no sustituyen el acuse.
 - Se intentó consultar solo los nombres de secrets de Actions para comprobar GROK_WEBHOOK_URL y GROK_WEBHOOK_TOKEN. El endpoint de GitHub fue rechazado por el conector con INVALID_ARGUMENT: “GitHub Fetch URL is not an allowed public GitHub repository or search endpoint.” No se consultaron ni expusieron valores; la presencia de ambos nombres queda NO_VERIFICADA.
 - No se modificaron data/*.json, cola/entrada, cola/estado, salidas, main, secretos, permisos, programación, ni publicaciones.
+
+
+## Revalidación incremental — 25-nov-2026 23:58 CDMX
+
+### Ramas y delta de main
+- **Feature:** HEAD observado `1be854c5c41f87016532ff39fdef76e3f463e0f6`; sin commits nuevos desde el corte anterior.
+- **Main:** HEAD observado `a1ab8fd090f475d406cc29ab5b45194d42eb342d`. La comparación desde `f4af1797e02fa3113f89385c3146ae0c4b49034e` devuelve exactamente dos archivos: `data/endscreens_rotacion.json` y `tools/orquestador/reporte.md`. No aparecen cambios en storyboards, cola, salidas, programación, publicaciones, reworks ni miniaturas.
+- `data/endscreens_rotacion.json` ya contiene `snapshot_2026-11-25_23` y `propuesta_2026-11-25_23`. El último registro de aplicación en Studio sigue siendo 08:07. La propuesta de pantallas no es una publicación ni ocupa un slot.
+- `tools/orquestador/reporte.md` tiene corte 22:10 y aún dice esperar un reinicio de créditos del 21-nov. Ese dato ya es antiguo; el saldo actual no se verificó. No se consumieron créditos.
+
+### Reconciliación de cola y recepción
+- `cola/entrada/`: feature contiene solo `.gitkeep` y el directorio anidado del robot del 9-nov; main contiene `.gitkeep` y 33 directorios. **Cero JSON planos** en ambas ramas.
+- `cola/estado/` devuelve 404 en feature y main. Se mantiene `RECEPCION_GROK_NO_CONFIRMADA`; no se creó ni editó estado.
+- `handoffs/grok_inbox/`: dos archivos en feature y tres en main; son markers, no acuses individuales.
+- `cola/bloqueados/`: 47 entradas en feature; la ruta devuelve 404 en main.
+- El workflow Grok sigue filtrando `cola/entrada/*.json` en profundidad plana. No hay paquete plano que pueda despacharse; React permanece `NOT_DISPATCHABLE`. No se disparó workflow ni se envió payload.
+
+### Programación y ocupación
+- `data/rehechos_2026-11-22.json` conserva nueve reworks con video_id y publishAt; dos corresponden al 25-nov (10:00 y 15:00). Los nueve siguen siendo procesamiento preexistente y no se redispatchan.
+- `data/miniaturas_auditoria_2026-11-21.json` conserva seis pares de colisión entre el 23 y el 28-nov; el 25-nov registra la pareja de las 07:00. También identifica L6ggmPAwBOA a las 17:00 y A3JK0gYuqG8 a las 19:00. La reserva local de React a las 17:00 coincide con L6ggmPAwBOA, pero no demuestra una segunda programación externa.
+- La lectura manual de ambos inventarios da siete registros de video para el 25-nov; **no se declara 7/5 como verificación automática**. El defecto de `scripts/registro_editorial.py` permanece: no ingiere esos dos inventarios de main, por lo que la ocupación automática sigue `OCUPACION_NO_CONCILIADA`.
+- `data/horarios.json` mantiene ventanas 06:30–07:30 y 16:30–18:00, más el slot fijo 23:30. Los reworks de 10:00 y 15:00 están fuera de esas ventanas; son programaciones preexistentes y no se cancelan ni modifican.
+- `data/publicaciones.json` tiene 62 registros y ninguno fechado el 25-nov; no sustituye los inventarios de programación anteriores.
+
+### Issues, plantillas y CI
+- Issue #16 sigue abierto, sin comentarios; solicita MP4, resubidas de TikTok y publicaciones externas. No se ejecutó ninguna de esas acciones.
+- Issue #11 sigue abierto con etiqueta `hecho`; PR #13 y PR #14 continúan abiertos y `mergeable=false`. No se cerró ni modificó nada.
+- La plantilla canónica `templates/storyboard_vertical.template.json` conserva 9:16, 84 s, 7 escenas, cortinilla de 6 s, `approved_assets=[]` y `export.render_status=NOT_GENERATED`, sin rutas de assets.
+- `docs/GROK_STATUS_CONTRACT.md` referencia `templates/grok_status.template.json`, pero esa ruta devuelve 404. No se inventó la estructura ni se creó estado Grok. El `templates/storyboard.template.json` genérico es legado (16:9/120 s y campos de assets); no usarlo para la preproducción vertical vigente.
+- El job `validar` del run Kuroshio 45502897065 terminó SUCCESS; ejecutó validación textual y comprobación de ausencia de medios declarados. No acredita DOI/Crossref ni recepción Grok.
+
+### Cierre del corte
+- **EJECUTADO:** comparación de ramas, lectura de inventarios de programación, cola, bloqueados, handoffs, estados Grok, issues, plantillas y Actions.
+- **VERIFICADO:** no hubo cambios de storyboard/cola/programación entre los HEAD comparados; no existe entrada plana ni estado Grok; no hay promoción segura.
+- **PENDIENTE:** reconciliar el inventario automático con los dos registros de main mediante una corrección probada; obtener acuses Grok reales; resolver DOI/Crossref; esperar decisión editorial/slot autorizado. No se generaron medios ni se publicó/programó nada.
