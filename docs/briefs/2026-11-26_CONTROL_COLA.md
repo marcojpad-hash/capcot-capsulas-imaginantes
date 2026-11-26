@@ -794,3 +794,42 @@ Distribución leída de los JSON actuales: **20 PASS, 28 FAIL, 42 sin narrative_
 - `2026-11-27_dato-registros-intermareales-1950s`: creado el 26-nov a las 14:12:10 CDMX por commit `a801612f239004d71f56d27cac1864c0b138f656`; fecha objetivo 27-nov; slot 23:30. No se confunde la fecha de creación con la fecha objetivo.
 - Para los 12 IDs del lote 5–7-nov se cotejaron `fecha_objetivo`, `slot_local` y `slot_cesta` con el horario. El prefijo del ID coincide con la fecha objetivo, pero no se usa como sustituto de un timestamp de creación por commit.
 - No hay archivo independiente `historial_youtube` en el árbol actual; los IDs históricos se cotejaron en `data/publicaciones.json`, `data/miniaturas_auditoria_2026-11-21.json` y los paquetes de `salidas/`.
+
+
+---
+
+## Actualización del operador — 2026-11-26, 16:04 CDMX
+
+### Trabajo ejecutado y verificado
+
+- Se corrigió el mapa de `2026-11-27_dato-registros-intermareales-1950s`: se añadió la extensión GBIF IPT del dataset de cirrípedos `10.15468/jnzaw3` (35.472, -9.466, 43.723, -1.785). La escena 3 ahora cita los tres datasets y distingue bounding boxes publicados de estaciones puntuales.
+- Lectura de vuelta: commit `d57f1b9cf4c70e7539e3b6ca50aaaa3c118d37b8`, blob `8ad79510f5b037b6455187dae97ac357394a6291`.
+- La narración no cambió: 174 palabras, 8 escenas, 78 s + 6 s de cortinilla = 84 s. Voz, prompt base y estilo siguen coincidiendo con el catálogo. `approved_assets=[]`, `export.render_status=NOT_GENERATED`, sin nombres ni rutas de medios.
+- `narrative_qa` permanece `FAIL/0`, `REVISION_INDEPENDIENTE_AUSENTE`. No se repitió ni se presentó como evaluación sustantiva. No existe `ESTADO_EJECUCION.md` independiente para este proyecto.
+
+### Dispatch, slot y producción previa
+
+- Proyecto 27-nov: no hay copia en `cola/entrada/`, no hay marker en `handoffs/grok_inbox/`, y `cola/estado/2026-11-27_dato-registros-intermareales-1950s.json` devuelve 404. Registrar `RECEPCION_GROK_NO_CONFIRMADA`; clasificación `NOT_DISPATCHABLE`.
+- `.github/workflows/capcot-grok-dispatch.yml` filtra únicamente `cola/entrada/*.json` (profundidad plana). El proyecto sigue en `proyectos/`; no se envió payload ni se disparó workflow.
+- En main no hay proyecto, publicación ni rotación para 27-nov 23:30. `data/rehechos_2026-11-22.json` contiene 27-nov 10:00 y 15:00, no 23:30. El historial independiente de YouTube no existe en el árbol; no se afirma que el slot esté libre en Studio.
+- El paquete Thanksgiving 26-nov 23:30 permanece preexistente en main; no es el slot del 27-nov. NBP 26-nov 17:15 conserva programación preexistente y no se redispatcha.
+- La auditoría del 26-nov 15:14 ya registró 9 programaciones del día, la colisión 17:00 y la sobreasignación de la tarde. No se alteró programación ni se canceló ningún ID.
+
+### Actions y PR
+
+- Worker main `45896512901`: SUCCESS, sin trabajo en cola; no equivale a dispatch de Grok.
+- Kuroshio `45898334232`: SUCCESS, pero valida solo `2026-11-18_dato-kuroshio-puente-atmosferico`; no valida el proyecto 27-nov ni ejecuta `--check-doi`.
+- No se encontró ejecución de `capcot-grok-dispatch`.
+- PR #3: OPEN/DRAFT, `mergeable=false`, 719 archivos; no integrar.
+- PR #15: OPEN, `mergeable=false`; `Semgrep OSS` success, `semgrep` failure con 37 hallazgos bloqueantes en 1,277 archivos; no integrar ni atribuir pruebas a la rama activa.
+- Issues #11 y #16 continúan abiertos. El lote obligatorio 5–7 nov mantiene 2 PASS (Venus 88, Arena 94), 10 FAIL y 0/12 estructuralmente aptos. No se modificaron sus storyboards.
+
+### Investigación y límites de lectura
+
+Se intentaron los endpoints de RSS definidos en `scripts/tendencias.py` y Google Trends RSS México. La interfaz devolvió `400 Unsupported content-type` para feeds XML/RSS, `404 Not Found` para ESA Space Science RSS y `URL ... is not accessible via this tool` para EurekAlert, SINC y Google Trends. Google Trends HTML tampoco fue accesible en esta relectura. Estos errores describen la herramienta de lectura; no prueban que todos los feeds estén caídos. No se simuló una ejecución local de `scripts/tendencias.py`.
+
+Crossref REST y `doi.org` devolvieron `URL ... is not accessible via this tool`. Se conserva la verificación Crossref histórica `status=ok` del corte de 13:56; no se afirma una revalidación nueva. El validador estructural real no se ejecutó para el storyboard del 27-nov.
+
+### Integridad
+
+No se modificaron `data/*.json`, main, secretos, permisos, estados Grok, workflows, PRs ni publicaciones. No hubo dispatch, payload externo, generación de medios ni consumo de créditos.
