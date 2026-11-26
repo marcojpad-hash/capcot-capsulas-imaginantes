@@ -94,3 +94,44 @@ Los errores `CRAWL_*` describen la respuesta del recuperador; no prueban que el 
 - No hay un `historial_youtube` vigente ni lectura actual de YouTube Studio para descartar IDs antiguos todavía programados.
 
 **Resultado:** `OCUPACION_23_30_NO_CONCILIADA`. No se asigna el slot, no se crea storyboard y no se marca ningún candidato como seleccionado. C1 queda recomendado para el siguiente slot cuya ocupación se pueda verificar.
+
+
+## Addendum de radar y fuentes — 2026-11-26 05:55 CDMX
+
+### Relectura de feeds configurados
+
+La relectura de los RSS a través del lector web no pudo procesar los XML/RSS. Esto describe la limitación del lector, no demuestra que los servidores de origen estén caídos.
+
+| Feed | Error exacto observado en esta relectura |
+|---|---|
+| ScienceDaily science.xml | HTTP 400 — Unsupported content-type (XML) |
+| ScienceDaily health.xml | HTTP 400 — Unsupported content-type (XML) |
+| ScienceDaily space_time.xml | HTTP 400 — Unsupported content-type (XML) |
+| Phys.org rss-feed | HTTP 400 — Unsupported content-type (XML) |
+| NASA news-release/feed | HTTP 400 — Unsupported content-type (RSS/XML) |
+| ESA Space Science RSS | HTTP 404 — Not Found |
+| Nature nature.rss | HTTP 400 — Unsupported content-type (RSS/XML) |
+| EurekAlert news.xml | URL not accessible via the web tool |
+| Agencia SINC /rss | URL not accessible via the web tool |
+| UNAM Global /feed | HTTP 400 — Unsupported content-type (RSS/XML) |
+| Google Trends RSS México | URL not accessible via the web tool |
+
+La página HTML de Google Trends sí fue consultable: https://trends.google.com/trending?geo=MX. En el corte de las últimas 24 horas aparece “eclipse solar del 2 de agosto de 2027” (2K+, 13 h) y “bienestar de los animales” (10K+, 21 h). Son señales de interés, no fuentes de afirmaciones científicas.
+
+### Cinco candidatos priorizados para el siguiente slot realmente libre
+
+1. **Hera / Dimorphos — 25-nov.** Fuente primaria: ESA, https://www.esa.int/articles/about-us/directorates/operations/space-safety/hera/hera-reveals-stadium-sized-asteroid-crater-left-after-spacecraft-impact. Observación: la ESA publicó las primeras imágenes del estado de Dimorphos tras el impacto DART y describe el cráter como de escala comparable al cuerpo. No añadir medidas propias ni afirmar que la caracterización está cerrada. Recomendación: candidato visual y muy reciente.
+2. **Dragonfly — 24-nov.** Fuente primaria de misión: NASA, https://science.nasa.gov/missions/dragonfly/nasas-titan-bound-dragonfly-rotorcraft-gets-its-eyes/. Observación: NASA informa de siete cámaras integradas en el rotorcraft. Límite: no confundirlas con las cámaras de navegación adicionales ni presentar las pruebas terrestres como imágenes de Titán. Recomendación: candidato visual.
+3. **Comunicación gravitatoria — 20-nov.** Fuente primaria: Science Advances, “Unblockable communication with gravity”, DOI 10.1126/sciadv.aee0802; registro bibliográfico PubMed: https://pubmed.ncbi.nlm.nih.gov/43050522/. Observación: demostración de transmisión a través de un muro de ladrillo de 0.7 m a 1 bit/min. Límite: prueba de laboratorio extremadamente lenta, no una tecnología práctica de comunicación. Recomendación: mejor gancho contraintuitivo, siempre con la tasa y la distancia en contexto.
+4. **Guías electrónicas 1D en MoS2 — 21-nov.** Fuente primaria: Nature Communications, “Localized strain-engineered 1D electron guides in 2D MoS2 devices with synaptic memory and high-mobility transistor functionalities”, DOI 10.1038/s41467-026-79577-4; https://www.nature.com/articles/s41467-026-79577-4. Observación: ingeniería de deformación localizada para crear guías electrónicas unidimensionales en dispositivos de MoS2. Límite: resultado de dispositivo/material, no producto comercial. Recomendación: candidato técnico de reserva si se logra explicar sin inflar su madurez.
+5. **Organización de cromatina — 20-nov.** Fuente primaria: Nature Communications, “A genome-wide imaging screen reveals epigenetic and mechanistic partitioning of lamina-associated chromatin”, DOI 10.1038/s41467-026-79468-8; https://www.nature.com/articles/s41467-026-79468-8. Observación: cribado de más de cien genes y papel de hnRNPK en el posicionamiento de una fracción cercana a dos tercios de las regiones estudiadas. Límite: no extrapolar directamente el sistema celular a enfermedad humana. Recomendación: científicamente sólido, pero exige explicación visual cuidadosa.
+
+**Reserva no contada entre los cinco:** “Nanofriction strengthened mechanically adaptive electrolytes for safe lithium metal batteries”, Nature Communications, DOI 10.1038/s41467-026-78955-2. La verificación Crossref OK de la lectura anterior permanece en el radar; no se prioriza por ser más técnico que Hera/Dragonfly.
+
+### DOI y Crossref
+
+Los registros de PubMed y las páginas editoriales muestran título, fecha y DOI de los artículos anteriores. En esta relectura, el endpoint REST de Crossref y el resolvedor doi.org no fueron accesibles mediante el lector web; por tanto, no se declara una nueva verificación Crossref para el DOI de MoS2. Se conserva como histórica la verificación Crossref OK de los tres DOI ya comprobados en el radar original (gravedad, nanofriction y cromatina). Para MoS2: PENDING_CROSSREF_RECHECK antes de usarlo en un storyboard.
+
+### Decisión de producción corregida
+
+El slot fijo 23:30 del 26-nov no está libre: main contiene el expediente main-only 2026-11-23_dato-thanksgiving-washington con publishAt_utc=2026-11-27T05:30:00Z y render previo. Además, los snapshots conservan ocupación en 07:00 y 13:30, y una colisión de dos IDs en 17:00. El horario vigente no autoriza 19:00. No se crea storyboard ni se marca candidato como seleccionado; los cinco quedan como radar para el siguiente slot que se confirme libre.
