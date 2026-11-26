@@ -119,8 +119,9 @@
       "accessed": "2026-11-26",
       "publication_date": "2024-10-03",
       "supports": [
-        "Registros de presencia/ausencia y abundancia de 10 especies de cirrípedos en las costas atlánticas de España, Portugal y Marruecos entre 1949 y 1957",
-        "Dataset citado por el artículo primario; no se representa en el mapa porque no se recuperó un bounding box verificable"
+        "Cobertura geográfica del dataset de cirrípedos: costa atlántica de España y Portugal y norte de Marruecos, 1949–1957",
+        "Bounding box del dataset GBIF IPT usado en la escena 3: latitud 35.472–43.723 y longitud -9.466–-1.785",
+        "El registro describe el contexto histórico de las campañas; el artículo primario aclara que la abundancia no se incorporó a las tablas estandarizadas porque los métodos y términos no eran comparables"
       ],
       "verification_status": "VERIFICADO_RESOLVEDOR",
       "last_modified": "2026-11-02"
@@ -181,8 +182,8 @@
       "duration_seconds": 10,
       "narration": "Fischer-Piette y colegas registraron organismos en costas de Francia, España, Portugal y Marruecos; las publicaciones aparecieron entre 1956 y 1963.",
       "on_screen_text": "1949–1957",
-      "visual_description": "vertical engraved map of the northeastern Atlantic coast showing two shaded geographic bounding boxes for Atlantic France and northern Iberia, no station pins, no labels",
-      "image_prompt": "antique engraved atlas map illustration, hand-colored copperplate, compass rose, sea monsters, aged parchment, single large central motif, not photorealistic, vertical 9:16, no text, vertical engraved map of the northeastern Atlantic coast showing two shaded geographic bounding boxes for Atlantic France and northern Iberia, no station pins, no labels",
+      "visual_description": "vertical engraved map of the northeastern Atlantic coast showing three shaded geographic bounding boxes for Atlantic France, northern Iberia, and Iberia plus northern Morocco; overlapping dataset extents, no station pins, no labels",
+      "image_prompt": "antique engraved atlas map illustration, hand-colored copperplate, compass rose, sea monsters, aged parchment, single large central motif, not photorealistic, vertical 9:16, no text, vertical engraved map of the northeastern Atlantic coast showing three shaded geographic bounding boxes for Atlantic France, northern Iberia, and Iberia plus northern Morocco; overlapping dataset extents, no station pins, no labels",
       "ambiente": "viento costero",
       "sfx": [
         "brisa marina",
@@ -191,7 +192,8 @@
       "source_ids": [
         "SRC-001",
         "SRC-002",
-        "SRC-003"
+        "SRC-003",
+        "SRC-004"
       ],
       "style_id": "atlas_antiguo",
       "dramatic_beat": "La escala del rescate se vuelve visible: no fue una sola playa ni una sola temporada.",
@@ -203,8 +205,8 @@
       "capa": {
         "tipo": "mapa",
         "region": [
-          41.145885,
-          -9.260465,
+          35.472,
+          -9.466,
           48.559461,
           -0.744845
         ],
@@ -231,11 +233,22 @@
               -1.785448
             ],
             "bounds_label": "Latitud/longitud mínima y máxima publicadas por GBIF"
+          },
+          {
+            "id": "iberia_marruecos_cirripedos",
+            "label": "Iberia y norte de Marruecos (cirrípedos)",
+            "bounds": [
+              35.472,
+              -9.466,
+              43.723,
+              -1.785
+            ],
+            "bounds_label": "Límites publicados por GBIF IPT, versión 1.8; no son estaciones puntuales"
           }
         ],
-        "titulo": "Dos extensiones geográficas verificadas",
-        "fuente": "GBIF datasets DOI 10.15468/zdjtw4 y 10.15468/sgk2mz",
-        "precision_note": "Las cajas son límites publicados para dos datasets; no son estaciones puntuales ni representan toda la cobertura de los cuatro países. El dataset de cirrípedos se cita, pero no se traza porque no se recuperó un bounding box verificable en esta sesión."
+        "titulo": "Tres extensiones geográficas verificadas",
+        "fuente": "GBIF datasets DOI 10.15468/zdjtw4, 10.15468/sgk2mz y 10.15468/jnzaw3",
+        "precision_note": "Las cajas son límites publicados por GBIF para tres datasets; no son estaciones puntuales y sus extensiones se solapan. La caja de cirrípedos cubre Iberia y el norte de Marruecos. No representa cada playa ni demuestra que todas las localidades de las cuatro publicaciones estén georreferenciadas con la misma precisión."
       }
     },
     {
