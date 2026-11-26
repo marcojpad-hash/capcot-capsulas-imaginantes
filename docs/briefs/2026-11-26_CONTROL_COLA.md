@@ -833,3 +833,17 @@ Crossref REST y `doi.org` devolvieron `URL ... is not accessible via this tool`.
 ### Integridad
 
 No se modificaron `data/*.json`, main, secretos, permisos, estados Grok, workflows, PRs ni publicaciones. No hubo dispatch, payload externo, generación de medios ni consumo de créditos.
+
+
+---
+
+## Corrección de conflicto entre ramas — 2026-11-26, 16:18 CDMX
+
+**Corrección del apartado de slots de las 16:04:** la consulta de `proyectos/`, `data/publicaciones.json` y `data/rotacion.json` no bastó para declarar libre el 27-nov 23:30. Una inspección adicional de `main:tools/animales_2026-11-23/specs_animales.py` encontró `SPECS["stubbs"]` con `hueco="2026-11-27 23:30 (America/Mexico_City)"`. Es una asignación explícita de preproducción en main; no demuestra publicación efectiva, pero sí reserva editorial para evitar duplicación.
+
+- Clasificación del storyboard intermareal en feature: `CONFLICTO_DE_SLOT_ENTRE_RAMAS` y `NOT_DISPATCHABLE`.
+- El borrador permanece en `proyectos/`; no se crea entrada de cola ni se altera main.
+- `validation_notes` del storyboard se actualizó y leyó de vuelta en commit `f52be5584de9018e6d5439c3835ee9afdb3dc4fa`, blob `a486715cefbaf06252bb1956234dde245d33c8ea`.
+- La narración, `narrative_qa=FAIL/0`, fecha y slot no se modificaron.
+- La misma especificación de main reserva también 28, 29 y 30-nov a las 23:30; no se reasigna el borrador a otra fecha sin nueva conciliación.
+- La nota de las 16:04 que describía el slot como libre en main queda supersedida por esta corrección.
