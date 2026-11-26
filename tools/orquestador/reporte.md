@@ -1,15 +1,21 @@
-# Reporte del orquestador — 2026-11-25 22:10
+# Reporte del orquestador — 2026-11-26 22:09
 Modelo: openai/gpt-oss-120b (Groq, API gratuita)
 Tablero actualizado con git pull.
 
-- **1. Montar la cápsula Mpemba** – Imaginantes está **PAUSADO** por falta de créditos; debe **esperar al reinicio de créditos (21‑nov 10:18 CST) y reprogramar el slot** para montar el MP4 con voz es‑MX‑JorgeNeural.  
+1. **Montar la cápsula Mpemba** – Atorado porque *Imaginantes* está pausado por ahorro de créditos; *ChatGPT/Grok* le delegó la tarea a *Imaginantes*.  
+   **Próximo paso:** *Imaginantes* debe reactivar el montaje del MP4 con voz es‑MX‑JorgeNeural, correr el QA y subir el archivo a `origin/main` tan pronto como sus créditos lo permitan y re‑programar el slot.
 
-- **2. Montar la cápsula Barreleye** – Imaginantes también está **PAUSADO** por ahorro de créditos; debe **esperar al mismo reinicio de créditos y reprogramar el slot** para montar el MP4 y ejecutar QA.  
+2. **Montar la cápsula Barreleye** – Atorado por la misma pausa de créditos de *Imaginantes*; la delegación vino de *ChatGPT/Grok*.  
+   **Próximo paso:** *Imaginantes* debe retomar el montaje (aplicar los cambios de texto indicados, QA y programación) cuando recupere créditos suficientes y registrar el nuevo slot.
 
-- **3. Subir los workflows de seguridad de CAPCOT** – Pecas (por navegador) **debe subir** `gitleaks.yml` y `semgrep.yml` desde `~/workspace/security‑upload/` al repo y hacer **commit** con evidencia.  
+3. **Subir los workflows de seguridad de CAPCOT** – Atorado porque *Pecas* debe subir `gitleaks.yml` y `semgrep.yml` **por navegador** (no por API).  
+   **Próximo paso:** *Pecas* abre el navegador con la cuenta de Marco, navega a la raíz del repo y sube ambos archivos desde `~/workspace/security‑upload/`.
 
-- **4. Activar la seguridad nativa en GitHub** – Pecas (por navegador) **debe entrar a Settings > Code security** y activar **Secret Scanning, CodeQL y Dependabot alerts**, confirmando el cambio con evidencia (captura o commit).  
+4. **Activar la seguridad nativa en GitHub** – Atorado; la acción corresponde a *Pecas* (activar secret scanning, CodeQL y Dependabot en Settings).  
+   **Próximo paso:** *Pecas* ingresa a **Settings > Code security** del repo con su cuenta y habilita los toggles correspondientes.
 
-- **5. Crear cuenta gratuita de Clayzo** – Marco **debe decidir** si crea la cuenta; si la aprueba, debe **informar a Pecas** para que ella la cree por navegador (ejecutar creación y guardar credenciales).  
+5. **Crear cuenta gratuita de Clayzo** – Atorado porque falta la **decisión** de *Marco* (solo él decide si se crea).  
+   **Próximo paso:** *Marco* responde “sí” o “no”. Si responde “sí”, informa a *Pecas* para que cree la cuenta por navegador; si “no”, la tarea queda cancelada.
 
-- **8. Versiones en inglés del backlog (FIFO, 7 paquetes)** – Imaginantes (Grok Bot) tiene **créditos limitados**; debe **montar los MP4 en inglés** de los paquetes listados tan pronto como el límite semanal se reinicie (21‑nov 10:18 CST), correr QA oficial y programar en YT/TT/FB. Pecas debe **monitorizar el crédito** y notificar a Imaginantes cuando pueda reanudar.
+6. **Versiones en inglés del backlog (7 paquetes)** – Atorado parcialmente: el material ZIP está listo, pero los MP4 en inglés **no están montados** y los créditos de *Imaginantes* están al 23.4 % de su límite semanal. La delegación fue de *Pecas* a *Imaginantes* (Grok Bot).  
+   **Próximo paso:** *Imaginantes* revisa el crédito disponible; cuando haya suficiente, monta cada MP4 en inglés con la voz `am_adam`/`narrador_en`, corre el QA oficial y publica/programa los videos (YT/TT/FB) según el schedule.
