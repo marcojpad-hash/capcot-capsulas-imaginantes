@@ -135,3 +135,26 @@ Los registros de PubMed y las páginas editoriales muestran título, fecha y DOI
 ### Decisión de producción corregida
 
 El slot fijo 23:30 del 26-nov no está libre: main contiene el expediente main-only 2026-11-23_dato-thanksgiving-washington con publishAt_utc=2026-11-27T05:30:00Z y render previo. Además, los snapshots conservan ocupación en 07:00 y 13:30, y una colisión de dos IDs en 17:00. El horario vigente no autoriza 19:00. No se crea storyboard ni se marca candidato como seleccionado; los cinco quedan como radar para el siguiente slot que se confirme libre.
+
+
+### Relectura adicional de feeds y Trends — 2026-11-26 06:37 CDMX
+
+Se intentó consumir de nuevo cada URL configurada en `scripts/tendencias.py`. Los errores siguientes pertenecen al lector utilizado en esta pasada; no prueban por sí solos que el servidor de origen esté caído:
+
+| Feed | Resultado exacto |
+|---|---|
+| ScienceDaily ciencia, salud y espacio | HTTP 400 — Unsupported content-type: application/xml |
+| Phys.org | HTTP 400 — Unsupported content-type: text/xml |
+| NASA news-release | HTTP 400 — Unsupported content-type: application/rss+xml |
+| ESA Space Science | HTTP 404 — Not Found |
+| Nature nature.rss | HTTP 400 — Unsupported content-type: application/rss+xml |
+| EurekAlert | URL not accessible via this tool |
+| SINC | URL not accessible via this tool |
+| UNAM Global | HTTP 400 — Unsupported content-type: application/rss+xml |
+| Google Trends RSS México | URL not accessible via this tool |
+
+Se probó además una descarga directa de ScienceDaily mediante el contenedor: `ERROR: download failed` (sin cuerpo HTTP ni código de respuesta disponible). No se atribuye una caída general de los feeds a ese error.
+
+**Respaldo oficial de Trends:** la página HTML [Google Trends — Trending Now, México](https://trends.google.com/trending?geo=MX) sí abrió. El corte mostraba 248 tendencias en las últimas 24 horas; los primeros resultados estaban dominados por fútbol, entretenimiento y conversación general. Señales científicas/naturales potenciales: “eclipse solar del 2 de agosto de 2027” (2K+, 14 h) y “bienestar de los animales” (10K+, 22 h). Son señales de interés, no fuentes de afirmaciones ni candidatos seleccionados.
+
+Los cinco candidatos documentados arriba permanecen como radar. No se añadió ni seleccionó otro: el slot 23:30 sigue ocupado en `main` y no hay otro slot libre autorizado tras la conciliación horaria. No se creó storyboard.
