@@ -98,3 +98,21 @@ No existe un archivo historial_youtube vigente en el árbol inspeccionado ni una
 - **NOT_DISPATCHABLE:** todos los proyectos sin JSON plano de entrada y sin estado Grok individual.
 - **PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR:** paquete Robot/órbita, por MP4, QA y programación en main.
 - **PENDIENTE:** resolver la ocupación real del slot 23:30 con historial/Studio vigente; ejecutar el validador estructural real y DOI/Crossref en los expedientes que superen QA; corregir los campos estructurales de los 12 expedientes antiguos solo cuando se pueda hacer sin reescribir claims ni decisiones narrativas.
+
+
+## Addendum de verificación — 2026-11-26 02:24 CDMX
+
+### Quasar: alcance real de la revisión independiente
+
+- El registro actual de `narrative_qa` permanece **FAIL/82**, con seis checks verdaderos, `giro_cientifico_explicado=false` y `GIRO_CIENTIFICO_NOMBRADO_PERO_NO_EXPLICADO`. No se modificó la narración ni el score.
+- La pasada fría del 26-nov fue separada y leyó solo la narración concatenada, pero la ejecutó ChatGPT. El requisito específico del Issue #11 pide auditor de otro modelo (Grok/Gemini); ese requisito de diversidad de modelo sigue sin evidencia.
+- PR #12 (cerrado sin merge) y PR #13 (abierto, sin merge) contienen auditorías Groq gpt-oss-120b sobre el commit histórico `54c8ade`, pero usan el checklist anterior (hook/payoff, primer dato 5–8 s, fuentes) y referencias al storyboard completo. No acreditan la lectura ciega de solo narración ni los siete checks del contrato vigente.
+- **Estado del Issue #11: ABIERTO.** No se declara completada la auditoría externa de otro modelo y no se promueve Quasar.
+
+### PR #15: implementación ya presente; pruebas aún no incorporadas
+
+- PR #15 sigue abierto, `mergeable=false`, `mergeable_state=dirty`; su head es `947df50e` y su base es `feature/capcot-video-discovery-continuity`.
+- La implementación que propone ya está en la rama base: commits `b6d7fbb` (rechazo de coordenadas booleanas y endurecimiento Crossref) y `08d5cc0` (corrección del patrón DOI). La lectura actual de `scripts/validar_storyboard.py` confirma rechazo de booleanos en lat/lon, RA/Dec y bounds, además de HTTPS fijo con TLS verificado para Crossref.
+- La cobertura nueva del PR (seis pruebas de booleanos y DOI/TLS) **no** está en `tests/test_validar_storyboard_textual.py` de la rama base; el archivo base conserva ocho métodos y ninguno cubre esos casos. Por tanto, el código está presente, pero la regresión específica sigue pendiente de incorporar/ejecutar.
+- No se fusionó ni cerró PR #15. No se disparó CI ni se afirmó que las pruebas nuevas hayan pasado.
+
