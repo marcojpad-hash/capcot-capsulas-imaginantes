@@ -357,3 +357,43 @@ main/data/publicaciones.json (blob a822459849571a443196e6a5b5d4ee73d109b1cd) con
 ### Estado procedimental de QA narrativo — nueve reworks main-only
 
 La relectura de los nueve metadata.json y storyboard.json no encontró autor/modelo verificable, narrative_qa ni artefacto de auditoría independiente. No se realizó una pasada fría independiente de sus narraciones y no se inventan checks. Conforme al contrato, el estado efectivo de QA para cada uno es FAIL, score 0, critical_flags=["REVISION_INDEPENDIENTE_AUSENTE"]; review_basis y los siete checks quedan sin evaluación porque no existe una revisión separada acreditada. Esto es una clasificación procedimental, no una valoración del contenido narrativo. No se escribió narrative_qa en main ni se modificaron los storyboards.
+
+
+---
+
+## Addendum de auditoría · 2026-11-26 11:58 CDMX
+
+### Cambios desde la última revisión
+
+- La rama de trabajo sigue en `feature/capcot-video-discovery-continuity`; el último commit previo fue documental. No hubo cambios nuevos de storyboards en esa rama antes de esta ejecución.
+- `main` recibió el paquete `2026-11-26_nbp-nanocables` mediante el commit `04ea20a18c130a76047c4aeacc8421163c69a7bb` (Grok CAPCOT, 10:37 CDMX). El mismo ID aparece en `proyectos/`, `cola/entrada/` y `salidas/`.
+
+### NBP nanocables — auditoría de artefacto preexistente en main
+
+- Programación de paquete: 26-nov, 17:15 CDMX. `salidas/<id>/` y `programacion.json` existen: **PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR**.
+- La cola es anidada (`cola/entrada/<id>/storyboard.json`); el workflow de la rama de trabajo selecciona únicamente `cola/entrada/*.json` plano. **NOT_DISPATCHABLE** con la ruta actual.
+- `cola/estado/<id>.json` devuelve 404: **RECEPCION_GROK_NO_CONFIRMADA**. No existe marcador de recepción para NBP.
+- No hay MP4, imágenes ni frames en `proyectos/`, `cola/entrada/` o `salidas/`: **MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO**. El storyboard declara `asset_filename` y `export.filename` sin archivos correspondientes.
+- Revisión estructural estática: 124 palabras, 7 escenas, 67 s de escenas + 6 s de cortinilla = 73 s frente a 82 declarados; faltan `fecha_objetivo` y `slot_local`; no hay `narrative_qa`, `approved_assets` ni `export.render_status=NOT_GENERATED`. No apto.
+- Lectura en frío de narración concatenada, separada de título/resumen/arco: **FAIL / 57**. Checks: pregunta central true; apertura in medias res false; progresión por escena true; transiciones causales true; giro científico explicado true; límite de evidencia explícito false; payoff cierre-apertura false. Flags: `APERTURA_NO_IN_MEDIAS_RES`, `LIMITE_DE_EVIDENCIA_AUSENTE`, `PAYOFF_CIERRE_APERTURA_DEBIL`. La revisión no se escribió en `main` porque esa rama es de solo lectura.
+- NBP cae en la ventana de tarde 16:30–18:00 y se programa a 17:15; el registro de miniaturas ya muestra dos publicaciones a las 17:00. Es una **SOBREASIGNACION_DE_VENTANA_TARDE_EN_MAIN**, no un conflicto entre ramas: no hay paquete del 27-nov en `main` para el mismo slot 23:30.
+
+### Handoffs y publicación preexistente
+
+- El slot 26-nov 23:30 sigue ocupado por `2026-11-23_dato-thanksgiving-washington` en `main`; no crear otro paquete para ese slot.
+- `cola/estado/` no existe en las dos ramas revisadas. Los marcadores de `handoffs/grok_inbox/` son solicitudes pendientes, no recibos; clasificar esos IDs como **RECEPCION_GROK_NO_CONFIRMADA**.
+- El paquete robot del 09-nov ya tiene `capsula.mp4` y programación en `main`: **PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR**. Las dos series del 24-nov tienen marcadores pendientes, pero no estado de recepción; no se reenvían.
+- No se encontró archivo `historial_youtube` en el árbol del repositorio. La auditoría de miniaturas sí muestra IDs antiguos aún programados para 26-nov (17:00 y 19:00); no se cancelan. El estado real en YouTube Studio no se pudo verificar desde los conectores disponibles.
+
+### CI, Issues y PRs
+
+- Run `45705919466` (`validar-kuroshio`) terminó SUCCESS, pero ejecutó solo `--structural-only`; no ejecutó `--check-doi`. DOI de Kuroshio sigue pendiente.
+- En `main`, Semgrep `45864192131` falló con 37 hallazgos; el paso de subida SARIF quedó skipped y no se generó artefacto. Gitleaks `45864192057` terminó SUCCESS. CodeQL `45864191628` seguía queued al corte.
+- Issue #11 continúa OPEN aunque conserva etiqueta `hecho`. PR #13 (auditoría externa de cuásares) y PR #14 (corrección narrativa) siguen abiertos; no se acepta ni se fusiona. PR #15 (rechazo de booleanos en coordenadas) sigue abierto y no mergeable. PR #3 continúa draft.
+- Issue #16 sigue abierto: 17 MP4 no entregados y 10 resubidas TikTok solicitadas. No se enviaron archivos ni mensajes externos.
+
+### Lote 5–7 nov y cola heredada
+
+- Los 12 storyboards siguen sin cambios: 2 PASS narrativos (Venus 88; arena cantante 94) y 10 FAIL; estructura 0/12 apta. No hay entradas planas en `cola/entrada/` para ese lote. Las copias heredadas identificadas están en `cola/bloqueados/`; no se promovieron.
+- En ambas ramas no hay `cola/estado/<id>.json` para confirmar recepción. No se crearon estados ni se asumió recepción por la presencia de marcadores.
+- No se modificó ningún `data/*.json`, no se dispararon workflows, no se enviaron webhooks, no se crearon medios ni se publicó/programó nada desde esta ejecución.
