@@ -291,3 +291,32 @@ Se consultaron los PR abiertos y sus diffs; ninguno se fusionó.
 - El último CodeQL observado en PR #3 es run `45706674458`, SUCCESS sobre el HEAD de feature. Es análisis de seguridad; no valida estructura, DOI, narrativa, cola ni producción. Semgrep de main conserva el fallo `45692100140` con 37 hallazgos bloqueantes. PR #15 continúa abierto; no se ejecutó workflow ni se disparó CI manualmente.
 - Issue #16 continúa abierto con solicitudes de enlaces, reenvío de MP4 y resubidas a TikTok/Facebook. No se ejecutaron cargas, resubidas, publicaciones ni mensajes externos.
 - No se creó storyboard, no se promovió cola, no se creó/alteró estado Grok, no se generaron medios y no se modificó ningún `data/*.json`, proyecto o programación.
+
+
+## Revalidación de continuidad — 25-nov-2026 18:04 CDMX
+
+### Ramas y cambios posteriores al control de 16:01
+- HEAD de feature antes de este registro: `647961d73f34b1d964526dba4bbab422d70a5eed`. El compare desde el control de auditoría `5412d56e52a7f1e3b994968cee6eafd78eeb35a7` hasta ese HEAD muestra solo cambios en `docs/briefs/2026-11-25_CONTROL_COLA.md` y `docs/briefs/2026-11-25_RADAR_CAPCOT.md`; no cambió ningún storyboard, entrada de cola ni proyecto de feature.
+- HEAD de main: `8287da5dd25fa8304d9cb7b9a3b411a6ec16fe12`. El commit `pantallas 2026-11-25_17 pendiente_studio` modifica únicamente `data/endscreens_rotacion.json`: añade `snapshot_2026-11-25_17` y `propuesta_2026-11-25_17`, con `pendiente_studio=true`. No modifica storyboard, cola, horario ni publicación. La propuesta de pantallas no es una publicación ni una reserva de slot.
+- Discrepancia interna del snapshot: el campo textual `motivo` conserva la referencia a `5XQfUHpyTWs (46 vistas)`, mientras `vistas_ref` registra 989 para ese ID y el snapshot nuevo enumera otros IDs. Se conserva como texto posiblemente obsoleto; no se usa para decidir ni se modifica `data/*.json`.
+- La propuesta 17:00 mapea `9RBB5dFsWyA → 3rwo_sK1e18`, `qBLbjs8GiDM → L6ggmPAwBOA` y `9W9nn72rmfE → b0e7RHWudl8`; sigue pendiente de Studio. No se aplicó.
+
+### Actions, PRs e Issues
+- Worker de cola, run [45726069741](https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/actions/runs/45726069741): `completed/success`, 25-nov 18:04 CDMX. Log exacto: `[trabajador] sin trabajo en cola.` No procesó ni modificó paquetes.
+- Semgrep de main, run [45718781669](https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/actions/runs/45718781669): `failure`; 37 hallazgos bloqueantes, 361 reglas, 1.260 archivos escaneados y 37 archivos mayores de 1 MB omitidos; SARIF no se subió y el proceso terminó con `exit code 1`.
+- Gitleaks de main, run [45718781922](https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/actions/runs/45718781922): `success`.
+- PR #3 sigue draft y sin merge; conserva 1.420 commits ahead, 589 behind y 716 archivos cambiados. CodeQL de PR #3 terminó en éxito en los runs [45706674458](https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/actions/runs/45706674458) y [45710459092](https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/actions/runs/45710459092). CodeQL es análisis de seguridad, no QA narrativo, estructural, DOI ni prueba de dispatch.
+- PR #15 sigue abierto. Su HEAD `947df50e1ee895e7744e54cc43f3865c78eedf13` no tiene estados de commit; el único workflow asociado localizado es Semgrep run [45310165026](https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/actions/runs/45310165026), `failure`. No se encontró ejecución de pruebas unitarias/DOI para ese HEAD.
+- Issue #16 sigue abierto con solicitudes externas de MP4, enlaces y resubidas. No se cargó material, no se publicó, no se programó y no se enviaron mensajes externos.
+
+### Revalidación editorial
+- Los nueve reworks 25–29-nov y el paquete React permanecen sin cambios desde la auditoría de 15:42. Los reworks conservan procesamiento/programación preexistentes y medios no verificados en el árbol; no se redispatchan. React conserva FAIL/42, seis escenas, 102 palabras, 66 s efectivos, entrada anidada y conflicto de 17:00; sigue `NOT_DISPATCHABLE`, `CONFLICTO_DE_SLOT_EN_MAIN` y `RECEPCION_GROK_NO_CONFIRMADA`.
+- El lote 5–7-nov no cambió: 2 PASS narrativos y 10 FAIL; estructura 0/12 apta. No se repitieron PASS ni se modificaron narraciones.
+- El backlog de 40 rutas sin compuerta narrativa sigue igual. No hubo nuevos storyboards.
+- La ocupación 25–28-nov permanece 7/5 y 29-nov 5/5. No hay slot libre autorizado.
+
+### Estado de ejecución
+- **EJECUTADO:** relectura de ramas, compare de archivos, lectura de snapshot 17:00, inspección de Actions/logs, PRs, Issue #16, feeds RSS y Trends HTML; revalidación de candidatos por fecha primaria.
+- **VERIFICADO:** no cambió ningún storyboard desde el control de 16:01; el worker terminó sin trabajo; main solo añadió snapshot/propuesta de pantallas; no hubo nueva cola ni publicación.
+- **PENDIENTE:** resolver DOI/Crossref de los cuatro candidatos; resolver ocupación editorial; atender solicitudes externas solo con autorización; resolver PR #15/37 hallazgos Semgrep. No se ejecutó validador local porque no hubo checkout/runtime local disponible; la revisión fue estática y contrastada con Actions.
+- Sin cambios en `data/*.json`, storyboards, cola, estados Grok, workflow, secretos, permisos, main o publicación. No se disparó ningún workflow ni se generaron medios.

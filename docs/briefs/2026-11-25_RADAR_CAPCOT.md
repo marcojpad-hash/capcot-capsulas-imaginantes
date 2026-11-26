@@ -410,3 +410,30 @@ Se intentó abrir `api.crossref.org/works/{doi}` y los cuatro enlaces `doi.org/{
 - Se mantienen cuatro candidatos recientes en el radar; ninguno queda seleccionado.
 - La ocupación del 25–28 nov continúa en 7/5 y el 29 nov en 5/5 según los registros de programación ya auditados. No hay `fecha_objetivo + slot_local` libre y autorizado.
 - No se crea storyboard, no se promueve cola, no se modifica `data/*.json`, no se crea/edita estado Grok y no se generan medios.
+
+
+## Revalidación adicional — 25-nov-2026 18:04 CDMX
+
+### RSS y tendencias
+Se volvieron a intentar las diez URL configuradas en `scripts/tendencias.py`. Los errores son del lector/herramienta al consumir XML; no prueban que los servidores de origen estén caídos:
+
+- ScienceDaily ciencia, salud y espacio: `400 Unsupported content-type: application/xml`.
+- Phys.org: `400 Unsupported content-type: text/xml`.
+- NASA News Release: `400 Unsupported content-type: application/rss+xml`.
+- ESA Space Science: `404 Not Found`.
+- Nature RSS: `400 Unsupported content-type: application/rss+xml`.
+- EurekAlert y Agencia SINC: `URL ... is not accessible via this tool`.
+- UNAM Global: `400 Unsupported content-type: application/rss+xml`.
+- Google Trends RSS México: `URL ... is not accessible via this tool`.
+
+Respaldo oficial: [Google Trends México — Trending Now](https://trends.google.com/trending?geo=MX). La vista HTML mostró **210 tendencias y 25 visibles**; ninguna de las primeras 25 aportó un hallazgo científico concreto. No se convirtió una tendencia general en afirmación científica.
+
+### Falsos positivos de recencia descartados
+- [Eos: Degrading Rock Glaciers Place Himalayan Villages’ Water at Risk](https://eos.org/articles/degrading-rock-glaciers-place-himalayan-villages-water-at-risk), publicado el 25-nov, resume el estudio primario [Geophysical-based assessment of hydrological sustenance in inhabited relict rock glaciers...](https://pubmed.ncbi.nlm.nih.gov/42105420/), cuyo registro PubMed fecha la publicación el **15-jun-2026** (DOI 10.1016/j.scitotenv.2026.181863). La nota sí es reciente, pero el estudio primario no entra en la ventana de siete días; no se añade como candidato reciente.
+- [ScienceDaily: Depression may be an early warning sign of Alzheimer’s disease](https://www.sciencedaily.com/releases/2026/11/261121221134.htm) aparece fechado 23-nov, pero el artículo primario [Tracking the Continuous Time Dynamics of Tau and Depressive Symptoms...](https://pubmed.ncbi.nlm.nih.gov/42637557/) figura publicado el **9-sep-2026** (DOI 10.1523/JNEUROSCI.2309-25.2026). Es una republicación/noticia reciente sobre un estudio anterior; se descarta por recencia.
+- No se incorporó el resultado de ScienceDaily sobre líneas de transmisión: la fuente lo describe como un *Policy Forum*, no como un estudio empírico primario.
+
+### DOI y decisión
+Se reintentaron los cuatro endpoints `api.crossref.org/works/{doi}` y los cuatro resolvedores `doi.org/{doi}`. La herramienta devolvió `URL ... is not accessible via this tool` / redirección no accesible; no se obtuvo respuesta verificable de Crossref ni del resolvedor. Los cuatro candidatos del radar original permanecen `PENDING_RESOLVER`; no se les asigna `VERIFICADO_CROSSREF`.
+
+Los cuatro candidatos originales siguen dentro de la ventana temporal y no apareció un quinto candidato nuevo que superara la revisión de fuente primaria y fecha. No se asigna slot: la ocupación del 25–28-nov sigue en 7/5 y el 29-nov en 5/5. No se crea storyboard.
