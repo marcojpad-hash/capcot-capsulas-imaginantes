@@ -2,7 +2,7 @@
 
 **Corte:** 2026-11-26, 02:14 America/Mexico_City  
 **Rama de trabajo:** feature/capcot-video-discovery-continuity  
-**HEAD al cierre:** cd9ffa5e0fa4f498242b586347c2584923089d04  
+**HEAD de proyecto tras la auditoría de Quasar y antes de registrar los briefs:** cd9ffa5e0fa4f498242b586347c2584923089d04  
 **Regla:** solo lectura en main; sin dispatch, payload, publicación, programación, generación de medios ni consumo de créditos.
 
 ## 1. Ramas, CI y contratos
@@ -86,7 +86,13 @@ No existe un archivo historial_youtube vigente en el árbol inspeccionado ni una
 - No se enviaron mensajes externos, no se subieron archivos a plataformas, no se programó ni publicó, no se generaron medios ni placeholders y no se consumieron créditos.
 - No se modificó data/*.json, cola/entrada, cola/estado, cola/bloqueados, main, secretos ni permisos.
 
-## 6. Resultado del corte
+## 6. Commits materiales de este run
+
+- Quasar: 0caa26af40f1d6d1252f11867e1b2c85150820da (lectura fría) y cd9ffa5e0fa4f498242b586347c2584923089d04 (alineación del rol auditor).
+- Radar: 7737d2f5cfd3d4f0bea7214d2efe3302247dd180.
+- Primera escritura de este control: 8b19990be54551b43d3772a66d66614dd5199ba3; esta actualización corrige el registro de HEAD.
+
+## 7. Resultado del corte
 
 - **EJECUTADO Y VERIFICADO:** QA narrativo frío de Quasar, registrado y leído de vuelta; radar del 26-nov creado en docs/briefs/2026-11-26_RADAR_CAPCOT.md; este control creado en docs/briefs/2026-11-26_CONTROL_COLA.md.
 - **NOT_DISPATCHABLE:** todos los proyectos sin JSON plano de entrada y sin estado Grok individual.
