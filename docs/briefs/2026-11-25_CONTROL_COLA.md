@@ -320,3 +320,54 @@ Se consultaron los PR abiertos y sus diffs; ninguno se fusionó.
 - **VERIFICADO:** no cambió ningún storyboard desde el control de 16:01; el worker terminó sin trabajo; main solo añadió snapshot/propuesta de pantallas; no hubo nueva cola ni publicación.
 - **PENDIENTE:** resolver DOI/Crossref de los cuatro candidatos; resolver ocupación editorial; atender solicitudes externas solo con autorización; resolver PR #15/37 hallazgos Semgrep. No se ejecutó validador local porque no hubo checkout/runtime local disponible; la revisión fue estática y contrastada con Actions.
 - Sin cambios en `data/*.json`, storyboards, cola, estados Grok, workflow, secretos, permisos, main o publicación. No se disparó ningún workflow ni se generaron medios.
+
+
+## Revalidación 21:58 CDMX — correcciones y evidencia nueva
+
+### Estado de ramas y ejecución
+
+- CAPCOT feature: HEAD observado 813a89bf9eca09a8d9377f4b5f5f7987447f4e9b. No hay storyboard con fecha objetivo 25-nov en esta rama. El árbol contiene 90 storyboards de proyecto, una entrada antigua, 56 storyboards bajo salidas y 28 bloqueados.
+- CAPCOT main: HEAD observado bb5806f65a6e927ca7e03ce5157acef361785f34. Tiene 73 storyboards de proyecto, 33 en cola/entrada y 34 bajo salidas. No existe ruta cola/estado/ ni archivo historial_youtube en el árbol de main o feature.
+- La ejecución del trabajador 45726069741 terminó SUCCESS con “sin trabajo en cola”. Gitleaks terminó SUCCESS; Semgrep sigue FAILURE con 37 hallazgos bloqueantes. El último run de validar-kuroshio en feature terminó SUCCESS. No se disparó ningún workflow ni se envió payload.
+- El issue #16 sigue abierto con solicitudes de MP4, resubidas de TikTok y Pancho EN. No hubo carga, publicación ni mensaje externo.
+
+### React: conflicto confirmado y clasificación
+
+Se confirma que el paquete React de main y el video L6ggmPAwBOA reservan exactamente 2026-11-25 17:00 CDMX / 2026-11-25T23:00:00Z:
+
+- React: proyectos/2026-11-25_react-bacterias-anticancer/programacion.json declara fecha_objetivo 2026-11-25, slot_local 17:00 y publish_at 2026-11-25T23:00:00Z.
+- L6ggmPAwBOA: data/miniaturas_auditoria_2026-11-21.json lo identifica como “Francia NO pagó toda la Estatua de la Libertad #Shorts”, estado programado, publishAt 2026-11-25T23:00:00Z y hora CDMX 17:00.
+- La misma auditoría de miniaturas ya registraba otra colisión para el 25-nov a las 07:00: cPNiOFeY5_k y W9g2tPZTpD4. El archivo registra seis pares de colisión entre el 23 y el 28-nov.
+- La colisión de las 17:00 es interna a main. Feature no contiene un storyboard para ese mismo slot; por tanto, no se etiqueta como CONFLICTO_DE_SLOT_ENTRE_RAMAS.
+
+El paquete React permanece NOT_DISPATCHABLE y PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR: el storyboard tiene seis escenas, 102 palabras narradas y 66 segundos totales incluyendo cortinilla; contiene asset_filename y export.filename, carece de narrative_qa y narrative_contract, y la copia de cola es idéntica pero está anidada en cola/entrada/<project_id>/storyboard.json. El workflow solo recoge cola/entrada/*.json en profundidad plana. No existe cola/estado/<project_id>.json: RECEPCION_GROK_NO_CONFIRMADA. El estado externo del video L6ggm no pudo verificarse; el fetch de la página de YouTube devolvió DisabledError. No se presume que se haya publicado por haber pasado publishAt.
+
+### Nueve reworks: procesamiento previo, política horaria y medios
+
+Los nueve registros de data/rehechos_2026-11-22.json contienen video_id y publishAt; los nueve render.log del árbol terminan OK, con duraciones reportadas entre 86.47 y 88.80 s. Barreleye conserva un aviso de cortinilla fuera de zona segura. Los MP4 se referencian con rutas absolutas de /workspace, pero no aparecen en el árbol GitHub ni en salidas/<id>/: MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO. Los nueve se clasifican PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR.
+
+Sus horas programadas son 10:00 y 15:00 CDMX entre el 25 y el 29-nov. La política vigente en data/horarios.json, con corte 2026-11-23, solo declara ventanas 06:30–07:30 y 16:30–18:00, más el slot fijo 23:30. Las horas 10:00 y 15:00 quedan FUERA_DE_VENTANA. No se modifican ni cancelan programaciones preexistentes.
+
+### Defecto del inventario automático de ocupación
+
+scripts/registro_editorial.py no incorpora data/rehechos_2026-11-22.json ni data/miniaturas_auditoria_2026-11-21.json. registros() solo carga publicaciones.json, rotacion.json, cola.json y storyboards del árbol; ocupacion_slots() añade horario_*.json y JSON de proyectos/cola/salidas, pero no lee los dos inventarios que contienen los nueve publishAt y las seis colisiones.
+
+Consecuencia: el cálculo automático de ocupación no ve toda la programación real. Los valores 7/5 y 5/5 de controles anteriores no quedan reproducidos de manera independiente con el inventario actual; se reclasifican OCUPACION_NO_CONCILIADA, no como dato verificado. Para el 25-nov sí están comprobados el par de las 07:00, L6ggm a las 17:00 y la reserva duplicada de React a las 17:00. No se crea un storyboard porque no hay un slot libre demostrado. La corrección del lector de inventario requiere prueba unitaria antes de cablearse; no se modifica código en este run.
+
+### Reconciliación de anfibio marino y pantallas finales
+
+Se corrige la conclusión previa de que 5XQfUHpyTWs no tenía mapeo:
+
+- salidas/2026-10-27_noct-anfibio-marino/publicacion.json lo vincula con “Anfibio marino: hallan el primero que vivió en el mar”.
+- data/horario_2026-10-27.json registra el slot 23:30 y el video_id 5XQfUHpyTWs.
+- El snapshot de API de YouTube guardado en pendientes/analisis/datos_2026-11-17/yt_videos_api.json lo muestra público con 987 vistas; vistas_historico del 24-nov registra 989.
+- El publicacion.json de salidas sigue mostrando privacyStatus private y publishedAt 2026-10-27T05:31:36Z, en contradicción con el snapshot posterior y el horario de 2026-10-28T05:30:00Z. Se marca PUBLICACION_JSON_DESACTUALIZADO / TIMESTAMP_DISCREPANTE.
+- rotacion.json mantiene dos filas para noct-anfibio-marino con camas distintas y sin yt_id; publicaciones.json no contiene la entrada. El mapeo correcto está en salidas y horario, no en esas dos tablas.
+
+La propuesta de pantallas 20:00 sigue pendiente de Studio; el último registro aplicado continúa en 08:07. El snapshot 20:00 muestra 5XQfUHpyTWs=989, N21TIYdONZo=124, 5D96DmjvioU=641 y L6ggmPAwBOA=1. N21TIYdONZo corresponde a Salem. El motivo de la propuesta que atribuye 46 vistas a 5XQ está desactualizado; 46 pertenece a un valor antiguo de referencia y no coincide con el snapshot actual. No se modifica data/endscreens_rotacion.json ni se opera Studio.
+
+### Compuertas y secretos
+
+- Los estados individuales de Grok no existen en el árbol revisado; cualquier proyecto sin archivo individual conserva RECEPCION_GROK_NO_CONFIRMADA. Los handoff markers no sustituyen el acuse.
+- Se intentó consultar solo los nombres de secrets de Actions para comprobar GROK_WEBHOOK_URL y GROK_WEBHOOK_TOKEN. El endpoint de GitHub fue rechazado por el conector con INVALID_ARGUMENT: “GitHub Fetch URL is not an allowed public GitHub repository or search endpoint.” No se consultaron ni expusieron valores; la presencia de ambos nombres queda NO_VERIFICADA.
+- No se modificaron data/*.json, cola/entrada, cola/estado, salidas, main, secretos, permisos, programación, ni publicaciones.
