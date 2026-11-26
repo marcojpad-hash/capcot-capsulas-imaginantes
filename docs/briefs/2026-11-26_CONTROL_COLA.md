@@ -266,3 +266,17 @@ No hay storyboard nuevo del 26-nov en la rama de trabajo. El slot 23:30 del 26-n
 ### Estado Grok de la rama — 2026-11-26 06:42 CDMX
 
 La consulta de `cola/estado/` en la rama de trabajo devuelve 404 (`NOT_FOUND`). No existe un árbol de estados Grok en esta rama; para los storyboards de proyecto, la recepción queda **RECEPCION_GROK_NO_CONFIRMADA** hasta que exista el JSON individual en la fuente autorizada. No se creó ni editó ningún estado.
+
+
+### Reconciliación adicional de main, rotación y Actions — 2026-11-26 08:27 CDMX
+
+- La rama de trabajo no recibió storyboards ni proyectos nuevos desde la última auditoría; el único cambio previo fue documental. `main` sigue siendo solo lectura para esta revisión.
+- `main/data/endscreens_rotacion.json` se actualizó en el commit `1202ff151f04ce14127ed4f21bf03b0e067b3b1d`. El snapshot conserva `pendiente_studio=true`; no acredita que los cambios se hayan aplicado en YouTube Studio.
+- `main/data/rehechos_2026-11-22.json` contiene dos reworks preexistentes para el 26-nov: 10:00, video_id `7pzPfqRSagU`, publishAt `2026-11-26T16:00:00Z`; y 15:00, video_id `MgHVHbeIVS0`, publishAt `2026-11-26T21:00:00Z`. No son slots nuevos.
+- Los snapshots de `main/data/miniaturas_auditoria_2026-11-21.json` y `docs/briefs/produccion_2026-11-23_28/plan_semana.json` conservan ocupación el 26-nov: 07:00 `ZkrzVP6V5k8`; 13:30 `966qJDbIJp4`; 17:00 colisión entre `JqlKsJOVmdE` y `-1DRh_qj7Bg`, ambos con publishAt `2026-11-26T23:00:00Z`. No cancelar ni duplicar esos IDs.
+- El slot fijo 23:30 está ocupado por `proyectos/2026-11-23_dato-thanksgiving-washington`: metadata publishAt `2026-11-27T05:30:00Z` y `render.log` declara 89.56 s. La ruta MP4 declarada apunta fuera del árbol GitHub y no se encontró en `salidas/`: `PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR` + `MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO`.
+- La política vigente de `main/data/horarios.json` mantiene 06:30–07:30 y 16:30–18:00, prueba reversible 13:00–14:30 y 23:30 fijo; 19:00 no está autorizado. 07:00 está ocupado, 13:30 pertenece a la prueba y está ocupado, 17:00 tiene colisión y 23:30 está ocupado. No existe slot nuevo autorizable para hoy; no crear storyboard.
+- Corrección de inventario: `main/data/rotacion.json` contiene 39 registros y su último `fecha` es 2026-11-21, no 2026-11-23 como se indicó en el corte anterior. `main/data/publicaciones.json` conserva 62 registros, último 2026-11-23.
+- `cola/estado/` no existe en el árbol de la rama de trabajo; la recepción individual sigue como `RECEPCION_GROK_NO_CONFIRMADA`. No hay evidencia de `historial_youtube.json` ni confirmación de Studio.
+- Actions observadas: CodeQL `45784089913` SUCCESS; Gitleaks `45836080613` SUCCESS; Semgrep `45836080617` FAILURE con 37 hallazgos bloqueantes. El paso de carga SARIF fue omitido y el run no publicó artefacto SARIF, por lo que no hay lista verificable de hallazgos individuales. Se intentó reproducción local, pero no se pudo instalar Semgrep en el entorno; no se declara una segunda ejecución.
+- PR #15 sigue abierto/no mergeable: la corrección del validador ya está en la rama base de trabajo, pero la cobertura de regresión adicional sigue en el PR. No se fusionó ni se abrió/cerró ningún PR.
