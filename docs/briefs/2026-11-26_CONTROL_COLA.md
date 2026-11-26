@@ -229,3 +229,35 @@ data/publicaciones.json tiene 62 registros y el último es del 23-nov; no contie
 - PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR: Thanksgiving 23:30, React 25-nov y los dos reworks 10:00/15:00.
 - CONFLICTO_DE_SLOT_ENTRE_RAMAS: 23:30 main-only; colisión de IDs a las 17:00 en snapshots.
 - PENDIENTE: verificación de programación en YouTube Studio/historial vigente; incorporación del QA de reworks al expediente solo cuando la autoridad de rama/privacidad permita escritura; resolver la alerta de seguridad y las pruebas de PR #15. No hay slot autorizado libre para un storyboard nuevo el 26-nov.
+
+
+## Addendum de auditoría posterior — 2026-11-26 06:23 CDMX
+
+### Backlog interdiario adicional detectado en `main` (solo lectura)
+
+La revisión anterior no había incorporado los registros del 24-nov. Se inspeccionaron las carpetas de proyecto, programación, copias de cola y registros de publicación. No se modificó `main`.
+
+- **`2026-11-24_magnetismo-p-wave-eusi`**
+  - `proyectos/<id>/storyboard.json` y `cola/entrada/<id>/storyboard.json` tienen el mismo contenido; la copia está dentro de una carpeta anidada, no como `cola/entrada/<id>.json`.
+  - `programacion.json` declara `publish_at=2026-11-24T23:15:00Z` (17:15 CDMX), estado `programado_para_publicar` y nota de que falta montar el MP4. Por tanto: **PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR** y **CONFLICTO_DE_SLOT_ENTRE_RAMAS** para 24-nov 17:15.
+  - La ruta del workflow solo observa JSON planos de primer nivel en `cola/entrada/*.json`; esta copia anidada no satisface ese selector. Clasificación: **NOT_DISPATCHABLE** por ruta, sin disparar workflow.
+  - `cola/estado/2026-11-24_magnetismo-p-wave-eusi.json`: 404; registrar exactamente **RECEPCION_GROK_NO_CONFIRMADA**. `salidas/2026-11-24_magnetismo-p-wave-eusi/`: 404.
+  - El storyboard declara 6 escenas, 121 palabras y duración objetivo de 85 s; las duraciones de escena suman 65 s y la cortinilla declara 6 s: total declarado 71 s, inferior al contrato 75–90 s. No es duración audiovisual medida.
+  - Faltan `prompt_base`, `approved_assets=[]`, `export.render_status=NOT_GENERATED` y `publicacion.status=PENDIENTE_DECISION_GROK`; existen referencias `asset_filename` y `export.filename`, pero los medios no aparecen en el árbol del proyecto. Clasificación: **MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO**. No se verificó `fuentes.md`; el storyboard sí contiene un DOI, no revalidado con Crossref en esta pasada.
+  - Auditoría narrativa posterior y en frío, leyendo únicamente la narración concatenada (sin título, resumen, arco, notas ni contrato): `status=FAIL`, `score=43`, `review_basis=lectura_en_frio_solo_narracion`. Checks: `pregunta_central_reconstruible=true`, `apertura_in_medias_res=false`, `progresion_por_escena=true`, `transiciones_causales=false`, `giro_cientifico_explicado=false`, `limite_evidencia_explicito=false`, `payoff_cierre_apertura=true`. Flags: `APERTURA_DESCRIPTIVA`, `TRANSICIONES_CAUSALES_INSUFICIENTES`, `GIRO_CIENTIFICO_NO_EXPLICADO`, `LIMITE_EVIDENCIA_AUSENTE`. No se reescribió la narración. Este resultado queda registrado aquí; no se escribió `narrative_qa` en el storyboard porque pertenece a `main`, que es solo consulta.
+
+- **`2026-11-24_yo-soy-sam`**
+  - La carpeta contiene programación y sidecars de plataformas, pero no `storyboard.json`. La programación y `data/publicaciones.json` confirman publicación previa en YouTube, TikTok y Facebook. Clasificación: **PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR**. Sin storyboard no procede QA narrativo ni consulta de estado Grok por storyboard.
+
+- **`2026-11-24_purpura-no-piedras`** y **`2026-11-24_pollo-lavar`**
+  - No se encontraron carpetas de proyecto para esos IDs en `proyectos/`; sí existen registros previos en `data/publicaciones.json` (uno público y otro con transición privado→público programada). Clasificación: **PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR**; no crear storyboards sustitutos ni reencolar.
+
+### Deriva de horario entre ramas
+
+- La rama de trabajo conserva `data/horarios.json` con política fechada 2026-11-09; `scripts/rotacion.py` mantiene ventanas codificadas para 07:00, 13:30, 17:00, 19:00 y 23:30.
+- El `main` consultado contiene una política posterior, fechada 2026-11-23: ventanas activas 06:30–07:30 y 16:30–18:00, más el slot fijo 23:30; 13:30 y 19:00 ya no figuran como ventanas activas.
+- La rama de trabajo puede seguir proponiendo 13:30/19:00 desde su configuración antigua. No se asignó slot nuevo ni se cambió `data/*.json` o el script; queda **DERIVA_DE_HORARIO_ENTRE_RAMA_Y_MAIN** hasta reconciliación autorizada.
+
+### Cierre de este corte
+
+No hay storyboard nuevo del 26-nov en la rama de trabajo. El slot 23:30 del 26-nov continúa ocupado por el proyecto Thanksgiving ya registrado en `main`; el snapshot también conserva una colisión de 17:00. No se creó cola, no se tocó estado Grok, no se disparó workflow y no se produjo ningún medio.
