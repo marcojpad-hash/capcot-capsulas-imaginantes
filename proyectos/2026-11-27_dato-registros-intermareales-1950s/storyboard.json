@@ -195,7 +195,7 @@
       "causal_bridge_from_previous": "Una vez identificado el problema documental, la narración retrocede a las observaciones originales.",
       "question_state": "Conocemos el periodo y los cuatro países; todavía falta saber qué se recuperó.",
       "reason_to_continue": "Las publicaciones describían organismos, estaciones y fechas que debían reconstruirse con cuidado.",
-      "new_information": "Las campañas abarcaron Francia, España, Portugal y Marruecos entre 1949 y 1957.",
+      "new_information": "Las campañas cubrieron costas de Francia, España, Portugal y Marruecos entre 1949 y 1957; las publicaciones salieron entre 1956 y 1963.",
       "capa": {
         "tipo": "mapa",
         "region": [
@@ -256,7 +256,7 @@
       "causal_bridge_from_previous": "Las observaciones antiguas solo podían convertirse en datos comparables si se interpretaban y verificaban una por una.",
       "question_state": "Ya sabemos cómo se recuperó el material; ahora falta dimensionar el resultado.",
       "reason_to_continue": "El número de registros y localidades muestra la escala real del rescate.",
-      "new_information": "El equipo transcribió, tradujo y cotejó las interpretaciones con las publicaciones originales."
+      "new_information": "El equipo digitalizó los impresos, aplicó OCR, corrigió el texto, tradujo y cotejó cada pasaje con los originales franceses."
     },
     {
       "id": "scene_005",
