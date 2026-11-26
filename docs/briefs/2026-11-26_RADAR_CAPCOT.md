@@ -178,3 +178,19 @@ Se repitió la consulta de las fuentes configuradas en `scripts/tendencias.py`. 
 - **Microscopía MINSTED 3D — 24-nov.** Nature Communications, “3D-MINSTED nanoscopy and protein tracking in densely labelled living cells”, DOI [10.1038/s41467-026-79580-9](https://www.nature.com/articles/s41467-026-79580-9). La página editorial informa precisión de localización subnanométrica y seguimiento de pasos de kinesina de 16 nm. DOI visible en la página editorial; Crossref REST y doi.org no fueron accesibles en esta relectura: `PENDING_CROSSREF_RECHECK`.
 
 Ambos quedan como `PROPUESTA_RESERVA`, no seleccionados. No sustituyen todavía a los cinco candidatos priorizados ni habilitan storyboard: falta la compuerta independiente de Crossref/resolvedor y no existe slot autorizado libre el 26-nov. La verificación Crossref anterior de gravedad, nanofriction y cromatina se conserva como antecedente histórico, no como revalidación de hoy.
+
+
+## Revalidación de señales — 26-nov-2026, 09:39 CDMX
+
+La página oficial de Google Trends México volvió a responder por HTML: 262 tendencias visibles. Predominan fútbol y entretenimiento; «eclipse solar» aparece como señal secundaria (≈5 mil búsquedas, tendencia de ≈16 h). No se selecciona un tema editorial a partir de esa señal.
+
+La lectura directa de RSS no fue consumible desde el navegador en este run; se conserva el error del lector registrado en la corrida anterior y se usa la página HTML oficial como respaldo de Trends. Se cribaron titulares nuevos del 25–26-nov contra la fecha de publicación del estudio primario, no contra la fecha de republicación de la noticia:
+
+- Cuevas bajo Australia — DOI https://doi.org/10.1038/s43247-026-04016-7; el estudio original figura publicado el 17-sep-2026, fuera de la ventana móvil de siete días.
+- Lagos de salmuera del mar Rojo — DOI https://doi.org/10.1038/s43247-022-00482-x; estudio de 2022, republicación no elegible.
+- Campos hidrotermales del Índico — DOI https://doi.org/10.1038/s41598-026-80304-8; publicación 18-nov-2026, ocho días antes del corte.
+- Ensayo de reemplazo robótico de rodilla — DOI https://doi.org/10.1016/S0140-6736(26)00986-4; estudio publicado el 5-sep-2026.
+- Micotoxinas en alimentos vegetales — DOI https://doi.org/10.1016/j.foodcont.2025.111910; publicación primaria anterior al periodo.
+- Soledad y medicalización — DOI https://doi.org/10.1093/socpro/spag034; publicación primaria anterior al periodo y fuera del alcance temático de esta serie.
+
+Ninguno de esos titulares añade un estudio primario elegible a la ventana de siete días. Se conserva el conjunto de cinco candidatos ya documentado en este radar; no se añade un sexto, no se selecciona candidato y no se crea storyboard porque la conciliación de parrilla del mismo día no deja slot libre.
