@@ -36,21 +36,75 @@ class RotacionCapacityTests(unittest.TestCase):
             )
         self.assertEqual(len(remaining), 4)
 
-    def test_five_distinct_publication_windows_can_be_assigned(self):
-        now = datetime.datetime(2026, 11, 1, 6, 0, tzinfo=rotacion.datetime.timezone(
+    def test_three_current_windows_respect_minute_bounds_and_exclude_fixed_2330(self):
+        now = datetime.datetime(2026, 11, 26, 6, 0, tzinfo=rotacion.datetime.timezone(
             datetime.timedelta(hours=-6)
         ))
         used = []
-        for expected in range(5):
+        expected = [
+            ("manana", 6 * 60 + 30, 7 * 60 + 30),
+            ("mediodia", 13 * 60, 14 * 60 + 30),
+            ("tarde", 16 * 60 + 30, 18 * 60),
+        ]
+        for index, (window_id, start, end) in enumerate(expected):
             with patch.object(rotacion, "publicaciones", return_value=used):
                 local, utc, window = rotacion.hora_publicacion(
-                    "2026-11-01", ahora=now, semilla=expected
+                    "2026-11-26", ahora=now, semilla=index
                 )
             self.assertIsNotNone(local)
             self.assertIsNotNone(utc)
-            self.assertEqual(window, expected)
-            used.append({"fecha": "2026-11-01", "ventana": window})
-        self.assertEqual(len({x["ventana"] for x in used}), 5)
+            self.assertEqual(window, window_id)
+            local_dt = datetime.datetime.fromisoformat(local)
+            minute_of_day = local_dt.hour * 60 + local_dt.minute
+            self.assertGreaterEqual(minute_of_day, start)
+            self.assertLess(minute_of_day, end)
+            used.append({"fecha": "2026-11-26", "ventana": window})
+
+        with patch.object(rotacion, "publicaciones", return_value=used):
+            self.assertEqual(
+                rotacion.hora_publicacion("2026-11-26", ahora=now),
+                (None, None, None),
+            )
+
+    def test_legacy_window_indices_and_slot_times_prevent_duplicates(self):
+        used = [
+            {"fecha": "2026-11-26", "ventana": 0},
+            {"fecha": "2026-11-26", "ventana": 1},
+            {"fecha": "2026-11-26", "ventana": None, "slot": "17:00"},
+        ]
+        now = datetime.datetime(2026, 11, 26, 6, 0, tzinfo=rotacion.datetime.timezone(
+            datetime.timedelta(hours=-6)
+        ))
+        with patch.object(rotacion, "publicaciones", return_value=used):
+            self.assertEqual(
+                rotacion.hora_publicacion("2026-11-26", ahora=now),
+                (None, None, None),
+            )
+
+    def test_legacy_utc_publish_at_is_converted_to_cdmx_window(self):
+        used = [{
+            "fecha": "2026-11-26",
+            "ventana": None,
+            "publishAt_utc": "2026-11-26T23:00:00Z",
+        }]
+        now = datetime.datetime(2026, 11, 26, 16, 0, tzinfo=rotacion.datetime.timezone(
+            datetime.timedelta(hours=-6)
+        ))
+        with patch.object(rotacion, "publicaciones", return_value=used):
+            self.assertEqual(
+                rotacion.hora_publicacion("2026-11-26", ahora=now),
+                (None, None, None),
+            )
+
+    def test_fixed_2330_is_not_a_variable_window(self):
+        now = datetime.datetime(2026, 11, 26, 22, 0, tzinfo=rotacion.datetime.timezone(
+            datetime.timedelta(hours=-6)
+        ))
+        with patch.object(rotacion, "publicaciones", return_value=[]):
+            self.assertEqual(
+                rotacion.hora_publicacion("2026-11-26", ahora=now),
+                (None, None, None),
+            )
 
 
     def test_blocked_storyboards_do_not_consume_capacity_but_remain_rotation_evidence(self):
