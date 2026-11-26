@@ -104,29 +104,74 @@ if __name__ == "__main__":
         loc = utc = ven = None
         if a.programar:
             loc, utc, ven = rotacion.hora_publicacion(a.fecha)
-            if utc: cmd += ["--publish-at", utc]
-            else: print("sin ventana libre hoy: se publica inmediato")
-        if not a.dry_run: cmd.append("--ejecutar")
-        r = subprocess.run(cmd, capture_output=True, text=True); print(r.stdout[-1500:], r.stderr[-1500:])
-        yid = next((l.split()[1] for l in r.stdout.splitlines() if l.startswith("YT_ID ")), None)
-        pub = {"publicado": bool(yid), "dry_run": a.dry_run, "yt_id": yid, "publishAt_utc": utc, "hora_local": loc, "ventana": ven, "rc": r.returncode,
-               **({"error": (r.stderr or r.stdout)[-800:]} if r.returncode else {})}
-        if yid:
-            rotacion.registrar_publicacion({"fecha": a.fecha, "project_id": sb.get("project_id", os.path.basename(out)), "yt_id": yid, "url": f"https://youtube.com/shorts/{yid}",
-                "privacidad": "private→public (publishAt)" if utc else "public", "publishAt_utc": utc, "hora_local": loc, "ventana": ven,
-                "titulo": sb["title"], "tema": tema, "origen": a.origen, "tiktok": "pendiente_tiktok", "estructura": sb["estructura"], "estilo": sb["estilo_id"], "cama": sb["audio"].get("cama_musical")})
+        if a.programar and not utc:
+            # Fallo cerrado: no convertir una agenda llena en una publicación inmediata.
+            pub = {
+                "publicado": False,
+                "dry_run": a.dry_run,
+                "motivo": "NO_SLOT_DISPONIBLE",
+                "yt_id": None,
+                "publishAt_utc": None,
+                "hora_local": None,
+                "ventana": None,
+                "rc": None,
+            }
+            print("NO SE PUBLICA: no hay ventana autorizada libre; se bloquea en lugar de publicar en caliente.")
+        else:
+            if a.programar:
+                cmd += ["--publish-at", utc]
+            if not a.dry_run:
+                cmd.append("--ejecutar")
+            r = subprocess.run(cmd, capture_output=True, text=True)
+            print(r.stdout[-1500:], r.stderr[-1500:])
+            yid = next((l.split()[1] for l in r.stdout.splitlines() if l.startswith("YT_ID ")), None)
+            pub = {
+                "publicado": bool(yid),
+                "dry_run": a.dry_run,
+                "yt_id": yid,
+                "publishAt_utc": utc,
+                "hora_local": loc,
+                "ventana": ven,
+                "rc": r.returncode,
+                **({"error": (r.stderr or r.stdout)[-800:]} if r.returncode else {}),
+            }
+            if yid:
+                rotacion.registrar_publicacion({
+                    "fecha": a.fecha,
+                    "project_id": sb.get("project_id", os.path.basename(out)),
+                    "yt_id": yid,
+                    "url": f"https://youtube.com/shorts/{yid}",
+                    "privacidad": "private→public (publishAt)" if utc else "public",
+                    "publishAt_utc": utc,
+                    "hora_local": loc,
+                    "ventana": ven,
+                    "titulo": sb["title"],
+                    "tema": tema,
+                    "origen": a.origen,
+                    "tiktok": "pendiente_tiktok",
+                    "estructura": sb["estructura"],
+                    "estilo": sb["estilo_id"],
+                    "cama": sb["audio"].get("cama_musical"),
+                })
     md = json.load(open(os.path.join(out, "metadata.json"), encoding="utf-8"))
-    tk = {"estado": "pendiente_tiktok" if qa == 0 else "bloqueado_qa", "mp4": os.path.join(out, "capsula.mp4"), "caption": md["tiktok_caption"],
+    sin_slot = pub.get("motivo") == "NO_SLOT_DISPONIBLE"
+    estado_tk = "bloqueado_qa" if qa != 0 else ("bloqueado_sin_slot" if sin_slot else "pendiente_tiktok")
+    instruccion_tk = (
+        "No subir ni programar: no hay ventana autorizada libre. Esperar nueva asignación."
+        if sin_slot else
+        "Agente principal: subir por navegador (agente de escritorio) con este caption; al terminar poner estado='publicado_tiktok' y url."
+    )
+    tk = {"estado": estado_tk, "mp4": os.path.join(out, "capsula.mp4"), "caption": md["tiktok_caption"],
           "hashtags": md.get("tiktok_hashtags", []), "descripcion_completa": md.get("tiktok_descripcion_completa"), "cuenta": "@datosyociosidades",
           "hora_sugerida_local": pub.get("hora_local"), "yt_id": pub.get("yt_id"),
-          "instruccion": "Agente principal: subir por navegador (agente de escritorio) con este caption; al terminar poner estado='publicado_tiktok' y url."}
+          "instruccion": instruccion_tk}
     json.dump(tk, open(os.path.join(out, "tiktok.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     pub["tiktok"] = tk["estado"]
     open(os.path.join(out, "LEEME.md"), "w").write(f"Paquete {os.path.basename(out)} · QA {'OK' if qa == 0 else 'CON FALLAS (ver qa.json)'} · {'PUBLICADO ' + str(pub.get('yt_id')) if pub.get('publicado') else 'NO publicado'}.\n")
     qj = json.load(open(os.path.join(out, "qa.json"))) if os.path.exists(os.path.join(out, "qa.json")) else {}
     res = {"fecha": a.fecha, "paquete": out, "titulo": sb["title"], "estilo": sb.get("estilo_id"), "qa_ok": qa == 0, "qa": qj,
            "archivos": sorted(os.listdir(out)), **pub,
-           "comando_subida_manual": f"python3 scripts/publicar.py {os.path.relpath(out, R)}/ --plataforma yt --privacidad public --ejecutar",
+           "comando_subida_manual": None if pub.get("motivo") == "NO_SLOT_DISPONIBLE" else f"python3 scripts/publicar.py {os.path.relpath(out, R)}/ --plataforma yt --privacidad public --ejecutar",
            "estructura": sb["estructura"], "cama_musical": sb["audio"].get("cama_musical"),
            "tiktok_json": os.path.join(out, "tiktok.json")}
     json.dump(res, open(os.path.join(out, "resumen.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
