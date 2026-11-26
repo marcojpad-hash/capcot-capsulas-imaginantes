@@ -81,7 +81,7 @@
         "Presencia/ausencia; no se incluyó abundancia",
         "OCR, corrección manual, traducción y cotejo con originales; registros vagos excluidos"
       ],
-      "verification_status": "PENDIENTE"
+      "verification_status": "VERIFICADO_CROSSREF"
     },
     {
       "id": "SRC-002",
@@ -89,12 +89,13 @@
       "url": "https://www.gbif.org/dataset/d163196e-04ec-493d-bed2-4830dabd04f1",
       "doi": "10.15468/zdjtw4",
       "accessed": "2026-11-26",
-      "publication_date": "2026-07-06",
+      "publication_date": "2025-12-22",
       "supports": [
-        "Bounding box publicado para la costa atlántica francesa",
-        "114 estaciones de muestreo"
+        "Dataset de presencia/ausencia de especies intermareales rocosas en la costa atlántica occidental de Francia, derivado de Crisp y Fischer-Piette (1959)",
+        "Bounding box del dataset GBIF utilizado en la escena 3"
       ],
-      "verification_status": "PENDIENTE"
+      "verification_status": "VERIFICADO_RESOLVEDOR",
+      "last_modified": "2026-11-02"
     },
     {
       "id": "SRC-003",
@@ -102,12 +103,13 @@
       "url": "https://www.gbif.org/dataset/cc164e4e-60d6-4ec0-b5be-54d3817d5048",
       "doi": "10.15468/sgk2mz",
       "accessed": "2026-11-26",
-      "publication_date": "2026-11-02",
+      "publication_date": "2026-01-21",
       "supports": [
-        "Bounding box publicado para el norte ibérico",
-        "107 costas rocosas y 3,417 entradas"
+        "3,417 entradas de presencia/ausencia y notas ecológicas derivadas de un artículo histórico en francés",
+        "Bounding box del dataset GBIF utilizado en la escena 3"
       ],
-      "verification_status": "PENDIENTE"
+      "verification_status": "VERIFICADO_RESOLVEDOR",
+      "last_modified": "2026-11-02"
     },
     {
       "id": "SRC-004",
@@ -115,11 +117,13 @@
       "url": "https://ipt.gbif.pt/ipt/resource?r=fischer-piette_barnacles_1950s",
       "doi": "10.15468/jnzaw3",
       "accessed": "2026-11-26",
-      "publication_date": "2026-05-17",
+      "publication_date": "2024-10-03",
       "supports": [
-        "Tercer archivo GBIF citado en el artículo primario"
+        "Registros de presencia/ausencia y abundancia de 10 especies de cirrípedos en las costas atlánticas de España, Portugal y Marruecos entre 1949 y 1957",
+        "Dataset citado por el artículo primario; no se representa en el mapa porque no se recuperó un bounding box verificable"
       ],
-      "verification_status": "PENDIENTE"
+      "verification_status": "VERIFICADO_RESOLVEDOR",
+      "last_modified": "2026-11-02"
     }
   ],
   "scenes": [
@@ -397,9 +401,10 @@
   "estado": "BORRADOR",
   "production_mode": "storyboard_only",
   "validation_notes": [
-    "Fuente primaria confirmada en la página editorial de Nature Scientific Data, publicada el 2026-11-26; el DOI aparece en la página. Crossref/doi.org no respondió en esta sesión, por lo que verification_status permanece PENDIENTE hasta --check-doi.",
-    "El mapa solo dibuja dos bounding boxes publicados por GBIF; no representa estaciones puntuales ni la cobertura completa de los cuatro países.",
-    "No se ejecutó el validador Python ni --check-doi en esta sesión; revisión estructural estática únicamente."
+    "DOI/URL comprobados el 2026-11-26: SRC-001 devolvió status=ok en Crossref; SRC-002, SRC-003 y SRC-004 resolvieron a sus datasets GBIF. GBIF API confirma las fechas created y modified. Esta comprobación fue manual; no equivale a ejecutar scripts/validar_storyboard.py --check-doi.",
+    "El mapa dibuja dos bounding boxes de datasets GBIF; no representa estaciones puntuales ni la cobertura completa de los cuatro países. El tercer dataset está citado pero no se traza por falta de un bounding box verificable.",
+    "No se ejecutó el validador estructural Python en esta sesión; la inspección de estructura fue manual.",
+    "narrative_qa queda FAIL/0 con REVISION_INDEPENDIENTE_AUSENTE: el auditor ya había visto metadatos editoriales y no realizó una pasada ciega leyendo únicamente la narración concatenada. No habilita promoción."
   ],
   "linea_tematica_provisional": "Actualidad",
   "risk_notes": [
@@ -407,5 +412,25 @@
     "No afirmar que el clima causó cambios de distribución.",
     "No presentar las cajas geográficas como puntos exactos de muestreo.",
     "No inventar coordenadas para el dataset de cirrípedos; se cita, pero no se grafica."
-  ]
+  ],
+  "narrative_qa": {
+    "status": "FAIL",
+    "score": 0,
+    "review_basis": "lectura_en_frio_solo_narracion",
+    "reviewer_role": "auditor_capcot_independiente",
+    "checks": {
+      "pregunta_central_reconstruible": false,
+      "apertura_in_medias_res": false,
+      "progresion_por_escena": false,
+      "transiciones_causales": false,
+      "giro_cientifico_explicado": false,
+      "limite_evidencia_explicito": false,
+      "payoff_cierre_apertura": false
+    },
+    "critical_flags": [
+      "REVISION_INDEPENDIENTE_AUSENTE"
+    ],
+    "reviewed_at": "2026-11-26T13:56:16-06:00",
+    "notes": "No se realizó una revisión ciega separada de la narración; el auditor ya había accedido a título, resumen, arco, notas y narrative_contract. Este registro expresa ausencia de revisión independiente, no una evaluación narrativa sustantiva."
+  }
 }
