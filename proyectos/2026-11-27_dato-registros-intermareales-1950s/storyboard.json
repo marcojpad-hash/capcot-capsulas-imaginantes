@@ -13,7 +13,7 @@
   "estructura": "pregunta",
   "audience": "Público general interesado en naturaleza y ciencia",
   "occasion": "Dato del día; slot fijo 23:30 CDMX",
-  "resumen": "Un artículo de Scientific Data recupera y estandariza observaciones intermareales publicadas en francés entre 1949 y 1957. El conjunto reúne 6,925 registros de 272 localidades en Francia, España, Portugal y Marruecos.",
+  "resumen": "Un artículo de Scientific Data recupera y estandariza observaciones intermareales registradas entre 1949 y 1957 en cuatro publicaciones francesas publicadas entre 1956 y 1963. El conjunto reúne 6,925 registros de 272 localidades en Francia, España, Portugal y Marruecos.",
   "narrative_contract": {
     "central_question": "¿Qué puede revelar una costa observada hace setenta años cuando sus registros vuelven a ser comparables?",
     "promise": "Explicar cómo se rescataron observaciones históricas y qué permite comparar sin exagerar sus alcances.",
@@ -75,11 +75,11 @@
       "accessed": "2026-11-26",
       "publication_date": "2026-11-26",
       "supports": [
-        "Cuatro publicaciones francesas de 1949–1957",
+        "Cuatro publicaciones en francés, publicadas entre 1956 y 1963, que describen observaciones de 1949–1957",
         "6,925 registros de ocurrencia y 272 localidades",
         "Francia, España, Portugal y Marruecos",
         "Presencia/ausencia; no se incluyó abundancia",
-        "Registros vagos excluidos y transcripción/cotejo manual"
+        "OCR, corrección manual, traducción y cotejo con originales; registros vagos excluidos"
       ],
       "verification_status": "PENDIENTE"
     },
@@ -127,7 +127,7 @@
       "id": "scene_001",
       "arc": "hook_medias_res",
       "duration_seconds": 10,
-      "narration": "Cuatro publicaciones impresas de los años cincuenta acaban de volver al mapa. ¿Qué puede revelar una costa observada hace setenta años?",
+      "narration": "Cuatro publicaciones en francés acaban de devolver al mapa observaciones de 1949 a 1957. ¿Qué puede revelar una costa observada hace setenta años?",
       "on_screen_text": "Volvió al mapa",
       "visual_description": "four aged French scientific journal pages unfolding into an Atlantic coastline chart, red thread linking paper to map, one central paper stack",
       "image_prompt": "antique engraved atlas map illustration, hand-colored copperplate, compass rose, sea monsters, aged parchment, single large central motif, not photorealistic, vertical 9:16, no text, four aged French scientific journal pages unfolding into an Atlantic coastline chart, red thread linking paper to map, one central paper stack",
@@ -175,7 +175,7 @@
       "id": "scene_003",
       "arc": "desarrollo",
       "duration_seconds": 10,
-      "narration": "Entre 1949 y 1957, Fischer-Piette y colegas recorrieron costas de Francia, España, Portugal y Marruecos, registrando organismos de la zona intermareal.",
+      "narration": "Fischer-Piette y colegas registraron organismos en costas de Francia, España, Portugal y Marruecos; las publicaciones aparecieron entre 1956 y 1963.",
       "on_screen_text": "1949–1957",
       "visual_description": "vertical engraved map of the northeastern Atlantic coast showing two shaded geographic bounding boxes for Atlantic France and northern Iberia, no station pins, no labels",
       "image_prompt": "antique engraved atlas map illustration, hand-colored copperplate, compass rose, sea monsters, aged parchment, single large central motif, not photorealistic, vertical 9:16, no text, vertical engraved map of the northeastern Atlantic coast showing two shaded geographic bounding boxes for Atlantic France and northern Iberia, no station pins, no labels",
@@ -238,7 +238,7 @@
       "id": "scene_004",
       "arc": "desarrollo",
       "duration_seconds": 10,
-      "narration": "El equipo rescató las descripciones, tradujo pasajes, cotejó cada interpretación con los originales y convirtió lugares y fechas en registros estandarizados.",
+      "narration": "El equipo digitalizó los impresos, aplicó reconocimiento óptico, corrigió el texto, lo tradujo y cotejó cada pasaje con el francés original.",
       "on_screen_text": "Cotejo manual",
       "visual_description": "archival curator hands comparing a printed page with a translucent standardized data sheet, careful manual collation, no readable text",
       "image_prompt": "antique engraved atlas map illustration, hand-colored copperplate, compass rose, sea monsters, aged parchment, single large central motif, not photorealistic, vertical 9:16, no text, archival curator hands comparing a printed page with a translucent standardized data sheet, careful manual collation, no readable text",
@@ -293,7 +293,7 @@
       "id": "scene_006",
       "arc": "desarrollo",
       "duration_seconds": 10,
-      "narration": "No midieron abundancia: los métodos y términos variaban entre publicaciones. También excluyeron frases demasiado vagas para asignar una especie a un sitio.",
+      "narration": "No midieron abundancia: los métodos y términos variaban entre publicaciones. También excluyeron descripciones demasiado vagas para asignar una especie a un sitio.",
       "on_screen_text": "Presencia / ausencia",
       "visual_description": "engraved presence absence table with marked and empty cells beside a rocky shore, no abundance bars, no numbers, no readable text",
       "image_prompt": "antique engraved atlas map illustration, hand-colored copperplate, compass rose, sea monsters, aged parchment, single large central motif, not photorealistic, vertical 9:16, no text, engraved presence absence table with marked and empty cells beside a rocky shore, no abundance bars, no numbers, no readable text",
@@ -397,7 +397,7 @@
   "estado": "BORRADOR",
   "production_mode": "storyboard_only",
   "validation_notes": [
-    "Fuente primaria publicada el 2026-11-26; el DOI aparece en la página editorial, pero Crossref/doi.org no respondió en esta sesión. Mantener verification_status=PENDIENTE y no promover hasta confirmar.",
+    "Fuente primaria confirmada en la página editorial de Nature Scientific Data, publicada el 2026-11-26; el DOI aparece en la página. Crossref/doi.org no respondió en esta sesión, por lo que verification_status permanece PENDIENTE hasta --check-doi.",
     "El mapa solo dibuja dos bounding boxes publicados por GBIF; no representa estaciones puntuales ni la cobertura completa de los cuatro países.",
     "No se ejecutó el validador Python ni --check-doi en esta sesión; revisión estructural estática únicamente."
   ],
