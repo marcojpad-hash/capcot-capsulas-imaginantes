@@ -87,3 +87,16 @@ Actualización 31-oct-2026: puntos 1 y 2 implementados en rama (cupo 5, procesad
 ## 2A. Descarga de carga de Grok Bot
 
 El protocolo operativo detallado está en `docs/PROTOCOLO_DESCARGA_CARGA_GROK.md` y complementa este contrato. La división obligatoria es: ChatGPT entrega investigación verificada, guion final, storyboard completo, prompts por escena y metadata; Imaginantes/Grok Bot se concentra en recepción, generación audiovisual, montaje, render, QA, correcciones de producción y publicación autorizada. Bot no repite research ni reescribe guiones por rutina. Las devoluciones deben señalar el campo o escena exactos; ChatGPT resuelve faltantes de investigación y entrega parches. Las correcciones también consumen tokens, por lo que se limita el cambio al fragmento afectado. No rehacer escenas aprobadas ni paquetes completos salvo defecto demostrado.
+
+
+## Addendum 2026-11-26 — autoridad horaria vigente (supersede la parrilla fija antigua)
+
+La fuente de verdad horaria es `main/data/horarios.json`, actualizado el 23-nov-2026. La lista antigua de cinco horas fijas no debe usarse para asignar nuevos paquetes.
+
+- Ventanas activas: 06:30–07:30 y 16:30–18:00.
+- Ventana reversible de prueba: 13:00–14:30; solo se usa si la rotación y la ocupación de ambas ramas la dejan libre.
+- Dato del día: 23:30 fijo, separado de las ventanas variables.
+- 19:00: retirado; los paquetes que ya estén programados permanecen como procesamiento preexistente y no se cancelan desde el investigador.
+- `MAX_POR_DIA=5` es un límite superior, no una autorización para llenar cinco slots ni una prueba de disponibilidad.
+
+`scripts/rotacion.py` marca una ventana completa como usada cuando encuentra un registro dentro de ella. Si 17:00 está ocupado, no se debe inventar un segundo slot 17:45 en la misma ventana. Antes de declarar un slot libre, conciliar fecha + `slot_local` contra la rama de trabajo, `main` en solo lectura, snapshots de miniaturas, remontajes, metadatos de proyecto, `publishAt`, cola, salidas e historial disponible. Cualquier salida, video_id, montaje o programación preexistente impide redispatch; no cancelar ni duplicar.
