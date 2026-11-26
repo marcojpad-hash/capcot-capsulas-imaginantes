@@ -467,7 +467,7 @@ Resultado: 2 PASS y 10 FAIL. Los 12 siguen estructuralmente incompletos: cada es
 
 - Este archivo ya existía; se actualiza con el corte posterior y se vuelve a leer desde GitHub.
 - Referencias reconsultadas en `feature/capcot-video-discovery-continuity`: Plan Maestro, Receta, Guía de modelo externo, Flujo Externo, `docs/GROK_STATUS_CONTRACT.md`, plantilla storyboard, catálogo de generadores, `scripts/registro_editorial.py`, `scripts/procesar_cola.py`, `scripts/rotacion.py`, `scripts/estilos.json`, `.github/workflows/capcot-grok-dispatch.yml` y los JSON de `data/`.
-- HEAD de feature antes de este commit de informe: `8461bf23dcb99562340d751ebbbfb2731a085524`. No se modificó `main`.
+- HEAD de feature antes de este commit de informe: `67cfc0e374ca2432d5b3fe8b2ebad56d3bf67738`. No se modificó `main`.
 
 ### Inventario completo de proyectos en feature
 
@@ -781,3 +781,16 @@ Distribución leída de los JSON actuales: **20 PASS, 28 FAIL, 42 sin narrative_
 - No se revisaron APIs: no apareció un cambio oficial nuevo que justificara esa revisión.
 - Únicas escrituras de esta auditoría: este brief y la corrección documental de `ESTADO_EJECUCION.md` de Kuroshio. No se modificaron `data/*.json`, storyboards, cola, `cola/estado/`, workflows, secretos, permisos ni `main`.
 - No se dispararon workflows, no se enviaron payloads, no se generaron medios, no se publicó y no se consumieron créditos.
+
+
+### Trazabilidad de creación, objetivo y slot — paquetes del 26-nov
+
+- `2026-11-26_nbp-nanocables`: creado el 26-nov a las 10:37:18 CDMX por commit `04ea20a18c130a76047c4aeacc8421163c69a7bb`; fecha objetivo 26-nov; slot 17:15.
+- `2026-11-23_dato-thanksgiving-washington`: proyecto registrado el 23-nov; fecha objetivo 26-nov; slot 23:30. El render.log/QA pertenecen a ese paquete preexistente, no a una entrada nueva de cola.
+- Rehechos Pan y Ratas: registros en `data/rehechos_2026-11-22.json` (22-nov); proyectos con prefijo 25-nov; fecha objetivo 26-nov; slots 10:00 y 15:00 respectivamente.
+- Plátano: planificación registrada en `docs/briefs/produccion_2026-11-23_28/plan_semana.json` (23-nov); fecha objetivo 26-nov; slot 17:00.
+- Cyrus cylinder, Museums public, Magallanes y Babylonian maps: snapshot de miniaturas `data/miniaturas_auditoria_2026-11-21.json` (21-nov); fecha objetivo 26-nov; slots 07:00, 13:30, 17:00 y 19:00 respectivamente.
+- Thanksgiving es el paquete que ocupa el 26-nov 23:30 en `tools/animales_2026-11-23/specs_animales.py`; la paloma originalmente prevista para ese hueco fue movida al 30-nov, no es un segundo paquete del 26.
+- `2026-11-27_dato-registros-intermareales-1950s`: creado el 26-nov a las 14:12:10 CDMX por commit `a801612f239004d71f56d27cac1864c0b138f656`; fecha objetivo 27-nov; slot 23:30. No se confunde la fecha de creación con la fecha objetivo.
+- Para los 12 IDs del lote 5–7-nov se cotejaron `fecha_objetivo`, `slot_local` y `slot_cesta` con el horario. El prefijo del ID coincide con la fecha objetivo, pero no se usa como sustituto de un timestamp de creación por commit.
+- No hay archivo independiente `historial_youtube` en el árbol actual; los IDs históricos se cotejaron en `data/publicaciones.json`, `data/miniaturas_auditoria_2026-11-21.json` y los paquetes de `salidas/`.
