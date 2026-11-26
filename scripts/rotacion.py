@@ -6,7 +6,7 @@
 - límite DURO: 5 cápsulas por día (máx. 2 propias; externas hasta 5), autorizado por Mj el 2026-10-31; cada externa debe diferir en tema, estructura, estilo y música de las cápsulas propias del día
 - hora de publicación variable por ventanas (America/Mexico_City)
 Registro: data/rotacion.json (lista de {fecha, project_id, estructura, cama, duracion})."""
-import datetime, hashlib, json, os, sys
+import datetime, hashlib, json, os, re, sys, zoneinfo
 import registro_editorial
 R = os.path.dirname(os.path.dirname(os.path.abspath(__file__))); LOG = os.path.join(R, "data", "rotacion.json")
 ESTRUCTURAS = {
@@ -47,8 +47,69 @@ def tema_ocupado(fecha, tema, project_id=None):
     t = (tema or "").lower().strip()
     return any((x.get("tema") or "").lower() == t and x.get("project_id") != project_id for x in temas_del_dia(fecha)) or any((x.get("tema") or "").lower() == t and x.get("project_id") != project_id for x in hecha_hoy(fecha))
 PUB = os.path.join(R, "data", "publicaciones.json")
-VENTANAS = [(7, 9), (13, 15), (16, 18), (18, 21), (23, 24)]  # cinco ventanas para slots 07:00, 13:30, 17:00, 19:00 y 23:30 CDMX
+# Espejo operativo de main:data/horarios.json (actualizado 2026-11-23).
+# La ventana mediodia es de prueba; 23:30 es un slot fijo del dato del día,
+# nunca una ventana variable para esta función. data/*.json permanece de solo lectura.
+VENTANAS = (
+    ("manana", (6, 30), (7, 30)),
+    ("mediodia", (13, 0), (14, 30)),
+    ("tarde", (16, 30), (18, 0)),
+)
+VENTANAS_IDS = {v[0] for v in VENTANAS}
+LEGACY_VENTANAS = {0: "manana", 1: "mediodia", 2: "tarde"}
 def publicaciones(): return json.load(open(PUB)) if os.path.exists(PUB) else []
+
+def _ventana_por_hora(hora, minuto):
+    """Devuelve el ID de la ventana vigente que contiene la hora local."""
+    minutos = hora * 60 + minuto
+    for ventana_id, (h0, m0), (h1, m1) in VENTANAS:
+        if h0 * 60 + m0 <= minutos < h1 * 60 + m1:
+            return ventana_id
+    return None
+
+def _hora_de_registro(registro):
+    """Extrae una hora CDMX de los campos locales o convierte publishAt UTC."""
+    for campo in ("slot", "hora_local", "hora_cdmx", "hora"):
+        valor = registro.get(campo)
+        if isinstance(valor, str):
+            m = re.search(r"(?<!\\d)(\\d{1,2}):([0-5]\\d)(?!\\d)", valor)
+            if m:
+                return int(m.group(1)), int(m.group(2))
+    publicado = registro.get("publishAt_utc") or registro.get("publishAt")
+    if isinstance(publicado, str):
+        try:
+            dt = datetime.datetime.fromisoformat(publicado.replace("Z", "+00:00"))
+            dt = dt.astimezone(zoneinfo.ZoneInfo("America/Mexico_City"))
+            return dt.hour, dt.minute
+        except ValueError:
+            pass
+    return None
+
+def _ventanas_usadas(fecha):
+    """Normaliza IDs nuevos y los índices históricos 0–4 para evitar duplicados."""
+    usadas = set()
+    for registro in publicaciones():
+        if registro.get("fecha") != fecha:
+            continue
+        raw = registro.get("ventana")
+        ventana_id = None
+        if isinstance(raw, int):
+            ventana_id = LEGACY_VENTANAS.get(raw)
+        elif isinstance(raw, str):
+            valor = raw.strip().lower().replace("í", "i")
+            if valor.isdigit():
+                ventana_id = LEGACY_VENTANAS.get(int(valor))
+            elif valor in VENTANAS_IDS:
+                ventana_id = valor
+        if ventana_id in VENTANAS_IDS:
+            usadas.add(ventana_id)
+            continue
+        hm = _hora_de_registro(registro)
+        if hm:
+            ventana_id = _ventana_por_hora(*hm)
+            if ventana_id:
+                usadas.add(ventana_id)
+    return usadas
 def hecha_hoy(fecha=None):
     """Vista reconciliada: rotación, publicaciones, cola y storyboards del día."""
     f = fecha or datetime.date.today().isoformat()
@@ -80,20 +141,43 @@ def evitar_hoy(fecha, project_id=None):
     h = [x for x in hecha_hoy(fecha) if x.get("project_id") != project_id]; ev = {k: {x.get(k) for x in h} - {None} for k in ("tema", "estructura", "estilo", "cama")}
     ev["tema"] |= {x.get("tema") for x in temas_del_dia(fecha) if x.get("tema")}; return ev
 def hora_publicacion(fecha, ahora=None, semilla=None):
-    """Hora aleatoria dentro de una ventana no usada hoy y >=20 min en el futuro. Devuelve (local_iso, utc_iso 'Z')."""
-    import random, zoneinfo
-    tz = zoneinfo.ZoneInfo("America/Mexico_City"); ahora = ahora or datetime.datetime.now(tz)
-    usadas = {p.get("ventana") for p in publicaciones() if p.get("fecha") == fecha}
-    rnd = random.Random(semilla); d = datetime.date.fromisoformat(fecha)
-    for i, (h0, h1) in enumerate(VENTANAS):
-        if i in usadas: continue
-        ini = datetime.datetime(d.year, d.month, d.day, h0, tzinfo=tz); fin = (datetime.datetime(d.year, d.month, d.day, tzinfo=tz) + datetime.timedelta(days=1)) if h1 == 24 else datetime.datetime(d.year, d.month, d.day, h1, tzinfo=tz)
-        ini = max(ini, ahora + datetime.timedelta(minutes=20))
-        if ini >= fin: continue
-        t = ini + datetime.timedelta(seconds=rnd.randint(0, int((fin - ini).total_seconds())))
-        t = t.replace(second=0, microsecond=0)
-        return t.isoformat(), t.astimezone(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"), i
-    return None, None, None  # sin ventana disponible hoy
+    """Devuelve (local_iso, utc_iso, ventana_id) en una ventana vigente no ocupada.
+
+    Requiere 20 minutos de margen. El slot fijo de 23:30 no se asigna aquí.
+    """
+    import random
+    tz = zoneinfo.ZoneInfo("America/Mexico_City")
+    ahora = ahora or datetime.datetime.now(tz)
+    if ahora.tzinfo is None:
+        ahora = ahora.replace(tzinfo=tz)
+    else:
+        ahora = ahora.astimezone(tz)
+    usadas = _ventanas_usadas(fecha)
+    rnd = random.Random(semilla)
+    d = datetime.date.fromisoformat(fecha)
+    for ventana_id, (h0, m0), (h1, m1) in VENTANAS:
+        if ventana_id in usadas:
+            continue
+        ini = datetime.datetime(d.year, d.month, d.day, h0, m0, tzinfo=tz)
+        fin = datetime.datetime(d.year, d.month, d.day, h1, m1, tzinfo=tz)
+        minimo = ahora + datetime.timedelta(minutes=20)
+        if minimo > ini:
+            ini = minimo
+        if ini.second or ini.microsecond:
+            ini = ini.replace(second=0, microsecond=0) + datetime.timedelta(minutes=1)
+        if ini >= fin:
+            continue
+        max_minutos = int((fin - ini).total_seconds() // 60) - 1
+        if max_minutos < 0:
+            continue
+        t = ini + datetime.timedelta(minutes=rnd.randint(0, max_minutos))
+        return (
+            t.isoformat(),
+            t.astimezone(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+            ventana_id,
+        )
+    return None, None, None  # sin ventana variable disponible; nunca publicar en caliente
+
 def registrar_publicacion(rec):
     os.makedirs(os.path.dirname(PUB), exist_ok=True); l = publicaciones(); l.append(rec)
     json.dump(l, open(PUB, "w"), ensure_ascii=False, indent=1)
