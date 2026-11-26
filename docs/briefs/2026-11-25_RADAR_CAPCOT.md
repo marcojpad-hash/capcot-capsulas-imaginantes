@@ -437,3 +437,73 @@ Respaldo oficial: [Google Trends México — Trending Now](https://trends.google
 Se reintentaron los cuatro endpoints `api.crossref.org/works/{doi}` y los cuatro resolvedores `doi.org/{doi}`. La herramienta devolvió `URL ... is not accessible via this tool` / redirección no accesible; no se obtuvo respuesta verificable de Crossref ni del resolvedor. Los cuatro candidatos del radar original permanecen `PENDING_RESOLVER`; no se les asigna `VERIFICADO_CROSSREF`.
 
 Los cuatro candidatos originales siguen dentro de la ventana temporal y no apareció un quinto candidato nuevo que superara la revisión de fuente primaria y fecha. No se asigna slot: la ocupación del 25–28-nov sigue en 7/5 y el 29-nov en 5/5. No se crea storyboard.
+
+
+## Revalidación 21:58 CDMX — 25-nov-2026
+
+### RSS y respaldo
+
+Se reintentaron los feeds configurados en scripts/tendencias.py. Errores exactos observados:
+
+- ScienceDaily Top Science, Health y Space: 400, Unsupported content-type: application/xml.
+- Phys.org: 400, Unsupported content-type: text/xml.
+- NASA: 400, Unsupported content-type: application/rss+xml.
+- ESA Space Science: 404, Not Found.
+- Nature: 400, Unsupported content-type: application/rss+xml.
+- EurekAlert y SINC: URL not accessible via this tool.
+- UNAM Global: 400, Unsupported content-type: application/rss+xml.
+- Google Trends RSS México: URL not accessible via this tool.
+
+El respaldo HTML de Google Trends México cargó 238 tendencias; las primeras 25 estuvieron dominadas por fútbol, clima, protesta, entretenimiento y consultas políticas. No se identificó un tema científico admisible en esa muestra: https://trends.google.com/trending?geo=MX
+
+La portada HTML de ScienceDaily sí mostró titulares del 25-nov, pero se filtraron los falsos positivos de recencia: las piscinas de salmuera del mar Rojo remiten al estudio de 2022; Euclid publicó el hallazgo del cometa el 19-oct; y RACER-Knee se publicó en The Lancet el 20-ago. No se presentan como estudios primarios nuevos del 25-nov.
+
+### Cinco candidatos de fuente primaria
+
+Todos son artículos de investigación de Nature con fecha de versión de registro 25-nov-2026. El DOI aparece en la página editorial. Los endpoints de Crossref y doi.org se intentaron para cada DOI, pero la herramienta devolvió “URL ... is not accessible via this tool”; por tanto, todos conservan PENDING_RESOLVER y no se declaran verificados por Crossref.
+
+1. **El calentamiento que sigue produciendo drenar turberas**
+   - Fuente primaria: https://www.nature.com/articles/s41586-026-11339-0
+   - DOI declarado por el editor: 10.1038/s41586-026-11339-0.
+   - Observación: reconstrucción mundial de drenaje de turberas entre 1800 y 2020, combinando datos de flujos, modelos de CO2 y CH4 y estimaciones de extensión e intensidad del drenaje.
+   - Resultado cuantitativo reportado: forzamiento neto de +73 (48–99) mW m−2, equivalente a 2.7 (1.8–3.6)% del forzamiento radiativo de la era industrial; procede de 0.4–0.5% de la superficie terrestre mundial.
+   - Inferencia de los autores: mantener las áreas actualmente drenadas, aun sin ampliar el drenaje, podría casi duplicar el calentamiento acumulado atribuible a este proceso para 2100.
+   - Recomendación editorial: candidato prioritario; la historia puede explicar por qué una turbera drenada sigue liberando CO2 durante décadas o siglos. No convertir el 2.7% en porcentaje de temperatura ni extrapolarlo a cada turbera.
+
+2. **El intestino que le indica al cerebro cómo seguir comiendo azúcar**
+   - Fuente primaria: https://www.nature.com/articles/s41586-026-11315-8
+   - DOI declarado por el editor: 10.1038/s41586-026-11315-8.
+   - Observación: en Drosophila, neuronas sensoriales del intestino detectan azúcares durante la ingestión y excitan neuronas cerebrales IN1; estas inhiben neuronas motoras entéricas y relajan el conducto del buche.
+   - Resultado: el circuito facilita el paso sostenido del alimento hacia el buche.
+   - Inferencia de los autores: señales nutritivas intestinales participan en el control motor de la ingestión.
+   - Recomendación editorial: candidato de alta claridad visual y gancho. La cápsula debe decir explícitamente que el circuito fue estudiado en moscas; no extrapolarlo directamente a humanos.
+
+3. **Una molécula que ayuda a estabilizar células solares en tándem**
+   - Fuente primaria: https://www.nature.com/articles/s41586-026-11465-9
+   - DOI declarado por el editor: 10.1038/s41586-026-11465-9.
+   - Observación: p-aminobenzohidrazida se incorpora a la capa de transporte y se convierte in situ en p-aminobenzaldehído, mitigando defectos y oxidación en la interfaz de perovskita Sn-Pb.
+   - Resultado: eficiencia de conversión de 31.1% para la célula tándem; valor certificado de 30.8%.
+   - Inferencia de los autores: la conversión redox estabiliza la interfaz durante fabricación y operación.
+   - Recomendación editorial: candidato energético, pero conservar la diferencia entre 31.1% medido y 30.8% certificado, y la condición de estabilidad bajo atmósfera inerte.
+
+4. **Medir desplazamientos con estados de hasta 500 fotones**
+   - Fuente primaria: https://www.nature.com/articles/s41586-026-11353-2
+   - DOI declarado por el editor: 10.1038/s41586-026-11353-2.
+   - Observación: un circuito superconductivo prepara estados tipo Fock enfocados con número medio de fotones de hasta 500.
+   - Resultado: reducción de 21.5 ± 1.1 dB en la varianza del número de fotones frente a un estado coherente y ganancia de 19.20 ± 0.20 dB sobre el límite cuántico estándar para detección de desplazamiento.
+   - Inferencia de los autores: el protocolo hace más accesibles estados no gaussianos de alto número de fotones para medición de precisión.
+   - Recomendación editorial: candidato de alta curiosidad, pero requiere explicar “límite cuántico estándar” sin presentarlo como una cámara que ve mejor cualquier objeto.
+
+5. **Cómo se activa una maquinaria CRISPR que inserta ADN**
+   - Fuente primaria: https://www.nature.com/articles/s41586-026-11287-9
+   - DOI declarado por el editor: 10.1038/s41586-026-11287-9.
+   - Observación: estructura por crio-microscopía electrónica y ensayos funcionales del complejo de integración VchCAST tipo I-F3.
+   - Resultado: el rediseño computacional de TnsA elevó la actividad de integración casi dos órdenes de magnitud sin comprometer la especificidad en el sistema estudiado.
+   - Inferencia de los autores: la competencia catalítica depende del ensamblaje completo y de cambios conformacionales coordinados.
+   - Recomendación editorial: candidato de biología molecular; limitar las afirmaciones a VchCAST y no describirlo como terapia genética clínica.
+
+### Decisión editorial
+
+- Los cinco candidatos tienen fuente primaria y fecha editorial reciente, pero los cinco siguen PENDING_RESOLVER.
+- Recomendación de orden para el siguiente slot que llegue a estar libre: turberas; después, circuito intestino-cerebro en Drosophila.
+- No se selecciona tema ni se crea storyboard: la ocupación de slots no está conciliada con todos los registros de programación y no hay una hora libre demostrada.
