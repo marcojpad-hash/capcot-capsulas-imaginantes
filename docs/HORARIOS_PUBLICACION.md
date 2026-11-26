@@ -1,16 +1,21 @@
 # Horarios de publicación (TikTok y YouTube Shorts)
 
-Actualizado: 2026-10-24. Todas las horas finales están en **CDMX (UTC-6, sin horario de verano)**. Datos máquina: `data/horarios.json`.
+Actualizado: 2026-11-26. Todas las horas finales están en **CDMX (UTC-6, sin horario de verano)**.
 
-## Ventanas elegidas (CDMX)
+## Política operativa vigente (corte 2026-11-23)
 
-| Ventana | CDMX | Equivale a | Plataforma principal | Días preferentes |
-|---|---|---|---|---|
-| Mediodía | 12:00–14:00 | ET 13–15 / CT 12–14 / PT 10–12 (invierno EE.UU.); España 19–21 CET | TikTok + Shorts | mar–jue |
-| Tarde | 16:00–18:00 | ET 17–19 / PT 14–16; España 23–01 | Shorts (y TikTok) | mar, mié, sáb |
-| Noche | 19:30–21:30 | ET 20:30–22:30 / CT 19:30–21:30 / PT 17:30–19:30 | TikTok + Shorts | lun–jue, dom |
+Fuente de verdad consultada: `main:data/horarios.json`, actualización 2026-11-23. La copia `feature/data/horarios.json` es anterior y permanece sin modificar por la regla de solo lectura; el programador de la rama refleja explícitamente esta política vigente.
 
-Cambio respecto al punto de partida (12–14 h y 19–22 h): se mantiene el mediodía, se acota la noche a 19:30–21:30 y se agrega la tarde 16–18 h (respaldada por Adobe Shorts, Hootsuite educación y Sprout). **Variable**: rotar la hora exacta dentro de cada ventana y alternar la ventana principal por día. España solo se alcanza de forma útil con la ventana de mediodía.
+| Ventana | CDMX | Estado | Uso |
+|---|---|---|---|
+| Mañana | 06:30–07:30 | Activa | YouTube Shorts + TikTok espejo |
+| Mediodía | 13:00–14:30 | **Prueba reversible desde 23-nov** | Solo si fecha, rotación y conflictos de ambas ramas dejan el slot libre |
+| Tarde | 16:30–18:00 | Activa | YouTube Shorts + TikTok espejo |
+| Dato del día | 23:30 fijo | Slot separado | No lo asigna `hora_publicacion()`; requiere proyecto y evidencia propios |
+
+La ventana de prueba de mediodía sustituye el registro legado 13:30–15:00; 13:30 sigue siendo una hora posible dentro de 13:00–14:30, no una ventana independiente. La franja 19:00–21:00 está retirada desde 5-nov. El slot fijo 23:30 nunca se ofrece como ventana variable.
+
+Antes de asignar: comprobar `fecha_objetivo + slot_local`, rotación, publicaciones, programaciones y `main` de solo lectura. Si no queda una ventana autorizada, el resultado es `NO_SLOT_DISPONIBLE`: bloquear publicación y TikTok, nunca convertir la falta de slot en publicación inmediata.
 
 Conversión: con horario de verano en EE.UU. (mar–nov) sumar +1 h más a ET/CT/PT; España en verano (CEST) = CDMX+8.
 
@@ -52,5 +57,14 @@ Conversión: con horario de verano en EE.UU. (mar–nov) sumar +1 h más a ET/CT
 
 Estas ventanas son hipótesis iniciales. Se ajustarán **semanalmente** con YouTube Analytics (gráfico "Cuándo está conectada tu audiencia") y con las analíticas de TikTok (actividad de seguidores por hora) cuando se activen, registrando resultados en `data/metricas.db`.
 
-## Decisión Mj 2-nov-2026
+## Historial de decisiones — 2-nov-2026 (superado por la política 23-nov)
 Ventanas: 06:30–07:30 / 13:30–15:00 / 16:30–18:00 (CDMX). Lo programado a las 19:00 hasta el 4-nov inclusive se queda; desde el 5-nov no se programa 19:00 (los slots vacíos pasan a reserva). Noche solo a prueba con OK de Mj. TikTok espejo 07:00 / 14:00 / 17:00.
+
+
+## Reconciliación operativa — 2026-11-26
+
+- `main:data/horarios.json` incluye tres ventanas variables (mañana, mediodía de prueba y tarde) y el dato del día fijo 23:30.
+- `scripts/rotacion.py` usa IDs estables `manana`, `mediodia` y `tarde`, acepta índices históricos 0–2 y recupera la ventana desde `slot`/`hora_local`/`publishAt_utc` cuando falta el campo.
+- El slot 23:30 no forma parte del selector variable.
+- `scripts/capsula_diaria.py` bloquea el flujo de YouTube/TikTok cuando `--programar` no encuentra ventana; ya no publica inmediatamente como fallback.
+- Esta automatización no ejecuta publicaciones ni programa contenido.
