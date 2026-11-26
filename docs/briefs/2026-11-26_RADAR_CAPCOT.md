@@ -216,10 +216,10 @@ Respaldo oficial: Google Trends Trending Now México sí mostró señales del d�
 | Prioridad | Hallazgo | Fuente primaria y fecha | Observación verificable | Límite que debe conservarse |
 |---|---|---|---|---|
 | 1 | Rescate de registros intermareales de los años cincuenta | *Scientific Data*, 26-nov-2026. DOI 10.1038/s41597-026-08947-w. https://www.nature.com/articles/s41597-026-08947-w | Cuatro publicaciones históricas; 6,925 registros en 272 localidades de Francia, España, Portugal y Marruecos; datos de presencia/ausencia. | No es un inventario completo ni contiene abundancias comparables; no atribuye cambios al clima. |
-| 2 | Control de unidades motoras tras lesión medular cervical | *Nature Human Behaviour*, 25-nov-2026. DOI 10.1038/s41562-026-02626-x. https://www.nature.com/articles/s41562-026-02626-x | Prueba de concepto en tres participantes: registros no invasivos de EMG de alta densidad permitieron modular actividad de unidades motoras en músculos paralizados. | Tres participantes; no equivale a recuperar movimiento funcional de la mano ni a una terapia clínica disponible. |
-| 3 | Dos linajes arcaicos en el sur de China | *Nature*, 25-nov-2026. DOI 10.1038/s41586-026-11341-6. https://www.nature.com/articles/s41586-026-11341-6 | Evidencia proteómica en cuatro dientes; uno muestra afinidad denisovana y otro permanece como Homo arcaico no resuelto. | Muestra pequeña; no declarar una nueva especie ni convertir afinidad proteómica en genoma completo. |
-| 4 | Mapa unicelular de variantes reguladoras de enfermedad coronaria | *Nature*, 25-nov-2026. DOI 10.1038/s41586-026-11275-z. https://www.nature.com/articles/s41586-026-11275-z | Mapa de cromatina accesible y enlaces variante-potenciador-gen en tejido coronario humano. | Mapa molecular; no es predicción clínica ni demuestra que cada variante cause enfermedad. |
-| 5 | Clasificador de variantes SARS-CoV-2 por secuencia de espícula | *Scientific Reports*, 26-nov-2026. DOI 10.1038/s41598-026-80097-w. https://www.nature.com/articles/s41598-026-80097-w | Trabajo computacional de clasificación con alta exactitud reportada en el conjunto evaluado. | Versión de acceso anticipado; no presentar exactitud interna como desempeño clínico o validación externa. |
+
+| 2 | Dos linajes arcaicos en el sur de China | *Nature*, 25-nov-2026. DOI 10.1038/s41586-026-11341-6. https://www.nature.com/articles/s41586-026-11341-6 | Evidencia proteómica en cuatro dientes; uno muestra afinidad denisovana y otro permanece como Homo arcaico no resuelto. | Muestra pequeña; no declarar una nueva especie ni convertir afinidad proteómica en genoma completo. |
+| 3 | Mapa unicelular de variantes reguladoras de enfermedad coronaria | *Nature*, 25-nov-2026. DOI 10.1038/s41586-026-11275-z. https://www.nature.com/articles/s41586-026-11275-z | Mapa de cromatina accesible y enlaces variante-potenciador-gen en tejido coronario humano. | Mapa molecular; no es predicción clínica ni demuestra que cada variante cause enfermedad. |
+| 4 | Clasificador de variantes SARS-CoV-2 por secuencia de espícula | *Scientific Reports*, 26-nov-2026. DOI 10.1038/s41598-026-80097-w. https://www.nature.com/articles/s41598-026-80097-w | Trabajo computacional de clasificación con alta exactitud reportada en el conjunto evaluado. | Versión de acceso anticipado; no presentar exactitud interna como desempeño clínico o validación externa. |
 
 **Verificación DOI:** los DOI aparecen en las páginas editoriales primarias, pero las consultas directas a Crossref y `doi.org` no devolvieron respuesta utilizable desde esta sesión. Los cinco candidatos permanecen con `verification_status=PENDIENTE` hasta ejecutar el validador con `--check-doi`; no se afirma verificación Crossref.
 
@@ -233,7 +233,14 @@ Respaldo oficial: Google Trends Trending Now México sí mostró señales del d�
 
 `proyectos/2026-11-27_dato-registros-intermareales-1950s/storyboard.json`
 
-- 173 palabras; 8 escenas; 78 s de escenas + 6 s de cortinilla = 84 s.
+- 174 palabras; 8 escenas; 78 s de escenas + 6 s de cortinilla = 84 s.
 - Mapa con dos bounding boxes publicados por GBIF (costa atlántica francesa y norte ibérico); no se dibujan estaciones puntuales ni se inventa el límite del tercer dataset.
 - `approved_assets=[]`; `export.render_status=NOT_GENERATED`; `publicacion.status=PENDIENTE_DECISION_GROK`.
 - No se creó `narrative_qa`, `ESTADO_EJECUCION.md), `fuentes.md), cola ni medios. El DOI/Crossref sigue pendiente; el borrador no es apto para promoción.
+
+
+### Corrección de verificación de candidatos · 12:06 CDMX
+
+Se retiró el candidato provisional de control de unidades motoras: el DOI citado no resolvió a esa publicación y no se encontró una página primaria coincidente. No usarlo. Permanecen cuatro candidatos con páginas editoriales primarias localizadas (biodiversidad intermareal, Denisovanos, mapa unicelular de enfermedad coronaria y clasificador SARS-CoV-2). La selección para el borrador 27-nov sigue siendo el rescate de registros intermareales.
+
+Corrección cronológica del borrador: las cuatro publicaciones francesas fueron publicadas entre 1956 y 1963 y describen observaciones de 1949–1957. El método incluyó digitalización/OCR, corrección, traducción y cotejo con los originales. El guion se actualizó a 174 palabras. El DOI de la fuente primaria aparece en Nature; la compuerta Crossref/doi.org sigue pendiente y bloquea promoción.
