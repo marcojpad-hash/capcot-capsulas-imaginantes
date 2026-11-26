@@ -151,3 +151,81 @@ No existe un archivo historial_youtube vigente en el árbol inspeccionado ni una
 
 - No se ejecutó `scripts/tendencias.py` en un runner. El visor web rechazó varios RSS por MIME XML (`400 Unsupported content-type`); el intento de descarga directa devolvió `ERROR: download failed`. Esto no demuestra que los feeds estén caídos.
 - Se usó búsqueda de respaldo en fuentes oficiales: ESA confirmó la actualización Hera del 25-nov ya incluida en el radar; la nota NASA sobre cultivos espaciales remite a estudios primarios de agosto/septiembre, por lo que no desplaza a los cinco candidatos actuales. Google Trends RSS México no quedó verificado en esta pasada. Se conservan los cinco candidatos del radar sin añadir un sexto ni crear storyboard.
+
+
+## Addendum de auditoría ampliada — 2026-11-26 05:55 CDMX
+
+### Corrección de ocupación del slot 23:30
+
+La conclusión del corte de las 04:00 queda corregida: la búsqueda anterior no detectó un expediente main-only.
+
+- En main existe proyectos/2026-11-23_dato-thanksgiving-washington/storyboard.json; no existe copia equivalente en feature.
+- metadata.json fija publishAt_utc=2026-11-27T05:30:00Z, equivalente a 2026-11-26 23:30 CDMX. El proyecto está en proyectos/, no en una entrada plana de cola/entrada.
+- El storyboard tiene 6 escenas y 207 palabras. render.log informa duración medida de 89.56 s; qa_es.json y qa_en.json son QA audiovisual, no narrativa.
+- No existe cola/estado/2026-11-23_dato-thanksgiving-washington.json (404), ni carpeta correspondiente en salidas/, ni programacion.json. capsula.mp4 y capsula_en.mp4 no están en el árbol Git, aunque metadata y render logs los referencian.
+- No hay narrative_qa ni registro de revisión fría independiente. Estado de auditoría: FAIL, score 0, critical_flags=["REVISION_INDEPENDIENTE_AUSENTE"]. No se escribió el campo en main.
+- El tema es histórico/Thanksgiving y queda fuera de las categorías editoriales vigentes (ciencia, naturaleza, cocina, cuerpo y espacio).
+
+Clasificación: CONFLICTO_DE_SLOT_ENTRE_RAMAS; PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR; MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO; RECEPCION_GROK_NO_CONFIRMADA; NOT_DISPATCHABLE. No se duplicó, movió ni canceló nada.
+
+### Otros paquetes main-only del 25–26 nov
+
+- 2026-11-25_react-bacterias-anticancer: el storyboard aparece en cola/entrada/<id>/storyboard.json (ruta anidada), con programacion.json en status=programado_paquete y publish_at=2026-11-25T23:00:00Z. El estado Grok individual devuelve 404 y no hay carpeta salidas/<id>/. La ruta no coincide con cola/entrada/*.json ni con find -maxdepth 1. Se conserva la auditoría anterior FAIL/57; no cambió la narración y no se repitió la revisión.
+- 2026-11-25_rehecho-pan-refri-endurece: data/rehechos_2026-11-22.json mantiene programación 10:00 CDMX y video ID 7pzPfqRSagU.
+- 2026-11-25_rehecho-ratas-topo-ayudar-no-es-cuidar: el mismo registro mantiene programación 15:00 CDMX y video ID MgHVHbeIVS0.
+- Los dos reworks tienen render.log y duración medida de 88.47 s y 88.80 s. Sus MP4 no están en el árbol Git; no hay carpetas salidas/<id>/ ni estados Grok individuales (404). Ambos son PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR, MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO, RECEPCION_GROK_NO_CONFIRMADA y NOT_DISPATCHABLE.
+
+### QA narrativo frío separado de los dos reworks
+
+La lectura se hizo solo sobre la narración concatenada, sin título, resumen, arco, notas ni narrative_contract. No se modificaron claims ni storyboards.
+
+**Pan / refrigeración**
+
+- status=FAIL, score=82, review_basis=lectura_en_frio_solo_narracion.
+- Checks: pregunta_central_reconstruible=true; apertura_in_medias_res=true; progresion_por_escena=true; transiciones_causales=true; giro_cientifico_explicado=true; limite_evidencia_explicito=false; payoff_cierre_apertura=true.
+- critical_flags=["AFIRMACION_SEQUEDAD_ABSOLUTA_NO_SOSTENIDA"].
+- La frase “no es porque se seque” es demasiado absoluta: el estudio primario citado describe retrogradación del almidón y redistribución de humedad/deshidratación de la miga. No se reescribió.
+- Estructura observada: 7 escenas, 219 palabras, objetivo 88 s y render 88.47 s. La primera línea tiene 15 palabras y no hay campo gancho separado de máximo 6 palabras. Faltan prompt_base, mapa con coordenadas, dato/gráfico y ambiente por escena; no existe fuentes.md. Hay referencias de asset y export de producción preexistente.
+
+**Ratas topo de Damaraland**
+
+- status=PASS, score=90, review_basis=lectura_en_frio_solo_narracion.
+- Los siete checks son true: pregunta central, apertura, progresión, transiciones causales, giro científico, límite de evidencia y payoff. critical_flags=[].
+- La narración mantiene como propuesta de los autores la explicación de que el trabajo fuera del nido apoya a la madre; no lo presenta como prueba de cuidado directo.
+- Estructura observada: 7 escenas, 218 palabras, objetivo 88 s y render 88.80 s. El primer fragmento de gancho es “Nacen las crías” (3 palabras), pero no hay campo gancho independiente. Faltan prompt_base, mapa con coordenadas, dato/gráfico y ambiente por escena; no existe fuentes.md. Hay referencias de asset y export de producción preexistente.
+
+Los dos registros de QA se documentan aquí porque los expedientes están en main, que permanece SOLO_CONSULTA; no se escribió narrative_qa en esos storyboards.
+
+### Conciliación de horarios y riesgo de IDs antiguos
+
+La versión vigente de main/data/horarios.json (23-nov) define 06:30–07:30, una ventana de prueba 13:00–14:30, 16:30–18:00 y el slot fijo 23:30. El slot 19:00 fue retirado. Los reworks de 10:00 y 15:00 son producción preexistente, no nuevos slots autorizados.
+
+- 07:00: snapshot data/miniaturas_auditoria_2026-11-21.json conserva ID ZkrzVP6V5k8.
+- 13:30: el mismo snapshot conserva ID 966qJDbIJp4.
+- 17:00: docs/briefs/produccion_2026-11-23_28/plan_semana.json conserva -1DRh_qj7Bg; el snapshot de miniaturas conserva JqlKsJOVmdE, ambos con publishAt=2026-11-26T23:00:00Z. Colisión de dos IDs confirmada en los snapshots, no en YouTube Studio.
+- 23:30: expediente Thanksgiving main-only descrito arriba.
+
+data/publicaciones.json tiene 62 registros y el último es del 23-nov; no contiene estos registros del 26-nov. historial_youtube.json no existe en el árbol. No hay acceso a una lectura vigente de Studio, por lo que los IDs de los snapshots quedan como riesgo de programación antigua; no se cancelan ni se reprograman.
+
+### Rutas de Grok y dispatch
+
+- cola/entrada/ de main contiene 34 elementos, todos directorios; feature contiene .gitkeep y un directorio anidado. No hay JSON plano en la raíz de ninguna rama.
+- cola/estado/ no existe en las ramas inspeccionadas. Para los IDs examinados se confirma RECEPCION_GROK_NO_CONFIRMADA (404).
+- El único marcador handoffs/grok_inbox/2026-11-09_dato-robot-ensambla-orbita.json sigue en pending; no es acuse de Grok.
+- capcot-grok-dispatch.yml solo selecciona cola/entrada/*.json y, en despacho manual, usa profundidad máxima 1. La entrada anidada del robot y la del expediente React son NOT_DISPATCHABLE.
+- La última Action visible de feature, #45705919466, corresponde a Kuroshio, no al dispatch. No se inspeccionaron valores de secretos; no se afirma que GROK_WEBHOOK_URL o GROK_WEBHOOK_TOKEN falten.
+
+### Estado de rotación, ramas e Issues
+
+- HEAD de feature revalidado: b162a123e48bb4742a4d8596f8ff6337f76c5717; el commit de revalidación anterior solo modificó este control, no storyboards. Los 12 IDs del lote 5–7 nov permanecen sin cambios desde su auditoría del 18-nov.
+- HEAD de main: 5667579d040c89907c5784b643a758be4aed5674. main/data/horarios.json es del 23-nov y main/data/rotacion.json tiene 39 entradas hasta el 23-nov; feature conserva horarios del 9-nov y rotación de 27 entradas hasta el 31-oct. Los data/*.json permanecen solo lectura.
+- PR #3 sigue abierto/dirty; PR #13 abierto con estado inestable; PR #15 abierto/dirty. El comentario de Semgrep sobre HTTPSConnection sigue sin resolución verificada. Issue #11 sigue abierto. Issue #16 solicita envíos de medios y acciones de publicación/resubida; no se ejecutó nada externo.
+- No se promovió ningún paquete, no se disparó workflow, no se envió payload, no se publicó ni programó, no se generaron medios y no se consumieron créditos.
+
+### Resultado del corte
+
+- EJECUTADO Y VERIFICADO: inventario de ambas ramas y de proyectos/, cola/entrada/, cola/bloqueados/, salidas/, data/ y programación; lectura de vuelta de los proyectos main-only y estados Grok (404); QA narrativo frío de los dos reworks, documentado en este control.
+- NOT_DISPATCHABLE: entradas anidadas o ausencia de JSON plano y estado Grok.
+- PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR: Thanksgiving 23:30, React 25-nov y los dos reworks 10:00/15:00.
+- CONFLICTO_DE_SLOT_ENTRE_RAMAS: 23:30 main-only; colisión de IDs a las 17:00 en snapshots.
+- PENDIENTE: verificación de programación en YouTube Studio/historial vigente; incorporación del QA de reworks al expediente solo cuando la autoridad de rama/privacidad permita escritura; resolver la alerta de seguridad y las pruebas de PR #15. No hay slot autorizado libre para un storyboard nuevo el 26-nov.
