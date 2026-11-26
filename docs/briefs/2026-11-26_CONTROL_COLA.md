@@ -404,3 +404,56 @@ La relectura de los nueve metadata.json y storyboard.json no encontró autor/mod
 - Se retiró del radar el candidato provisional de control de unidades motoras: el DOI citado no resolvió a la publicación y no se localizó una página primaria coincidente. El radar queda con cuatro candidatos primarios verificables.
 - Se corrigió el storyboard `2026-11-27_dato-registros-intermareales-1950s`: las cuatro publicaciones en francés salieron entre 1956 y 1963 y describen observaciones de 1949–1957; el método se expresa como digitalización/OCR, corrección, traducción y cotejo con los originales. El guion queda en 174 palabras, 8 escenas y 84 s totales.
 - La fuente primaria y el DOI aparecen en Nature Scientific Data; la verificación Crossref/doi.org sigue pendiente. El storyboard permanece en BORRADOR, sin QA, sin cola y sin medios; no es promovible.
+
+
+---
+
+## Registro de ejecución — 2026-11-26, 13:56 CDMX
+
+### Storyboard del 27-nov
+
+- Proyecto: `2026-11-27_dato-registros-intermareales-1950s`.
+- Commit de actualización: `01f0815756ddbd8d2a7d408199b5e5925a28d6bb`; lectura de vuelta confirmada.
+- Se corrigieron las fechas de creación de los tres datasets GBIF y se registró la verificación manual de DOI: SRC-001 Crossref `status=ok`; SRC-002/003/004 resueltos a GBIF.
+- El storyboard permanece `BORRADOR`, `PROPUESTA_PENDIENTE_DE_GROK`; 8 escenas, 173 palabras, 84 s totales. Mapa con dos bounding boxes; tarjeta de datos 6,925 / 272. Sin medios ni placeholders.
+- `narrative_qa=FAIL`, score 0, `REVISION_INDEPENDIENTE_AUSENTE`. No hubo lectura ciega separada; no es una evaluación narrativa sustantiva ni habilita promoción.
+- No se ejecutaron el validador estructural Python ni `--check-doi`; la inspección estructural fue manual y la comprobación DOI fue manual por Crossref/resolvedor.
+- `cola/estado/2026-11-27_dato-registros-intermareales-1950s.json` devuelve 404: registrar `RECEPCION_GROK_NO_CONFIRMADA`. No existe entrada plana en `cola/entrada`, copia anidada, carpeta de salida ni copia en bloqueados para este ID. Clasificación: `NOT_DISPATCHABLE`. No se creó ni modificó estado Grok.
+- `main` no muestra proyecto, salida, publicación ni programación para 2026-11-27 23:30; por tanto no hay conflicto de slot entre ramas. El 2026-11-26 23:30 sí está ocupado por Thanksgiving. La ventana fija 23:30 está documentada en Plan Maestro/rotación, pero `data/horarios.json` no enumera esa ventana en su lista actual: discrepancia pendiente.
+- No se obtuvo lectura de YouTube Studio ni de `historial_youtube`; no se puede descartar por completo un ID antiguo aún programado fuera del repositorio.
+- `data/rotacion.json` y `data/temas_del_dia.json` de la rama de trabajo siguen con datos de octubre; no se modificaron.
+
+### Lote canónico 5–7 nov: 12 IDs
+
+Relectura de los 12 storyboards canónicos en `proyectos/`; no se repitió la auditoría narrativa porque sus narraciones no cambiaron desde la revisión registrada.
+
+| ID | QA vigente | Score |
+|---|---:|---:|
+| `2026-11-05_kids-dia-en-venus` | PASS | 88 |
+| `2026-11-05_comida-palomitas` | FAIL | 82 |
+| `2026-11-05_inter-arboles-se-comunican` | FAIL | 78 |
+| `2026-11-05_inter-rayo-globular` | FAIL | 81 |
+| `2026-11-06_kids-ballena-azul-corazon` | FAIL | 80 |
+| `2026-11-06_comida-aguacate-negro` | FAIL | 79 |
+| `2026-11-06_inter-ranas-congeladas` | FAIL | 83 |
+| `2026-11-06_inter-arena-cantante` | PASS | 94 |
+| `2026-11-07_kids-huesos-bebe` | FAIL | 82 |
+| `2026-11-07_comida-hielo-caliente` | FAIL | 81 |
+| `2026-11-07_inter-pulpo-suenos` | FAIL | 72 |
+| `2026-11-07_inter-nubes-pesan` | FAIL | 78 |
+
+Resultado: 2 PASS y 10 FAIL. Los 12 siguen estructuralmente incompletos: cada escena carece de los seis campos narrativos `dramatic_beat`, `scene_function`, `causal_bridge_from_previous`, `question_state`, `reason_to_continue` y `new_information` (42 o 48 campos ausentes por storyboard). Resultado estructural: 0/12 completos. Las copias de `cola/bloqueados` conservan nombres heredados distintos; no se renombraron ni movieron porque no son entradas planas activas y los 12 IDs canónicos están presentes en `proyectos/`.
+
+### Cola, Grok, producción y CI
+
+- `cola/entrada` de la rama de trabajo contiene una entrada anidada antigua del 09-nov; no hay JSON plano para el proyecto 27-nov.
+- El workflow `.github/workflows/capcot-grok-dispatch.yml` solo selecciona JSON planos en `cola/entrada/*.json`; el proyecto 27-nov no entra en su selector actual.
+- No hay estado Grok individual para el proyecto; `RECEPCION_GROK_NO_CONFIRMADA`. No se envió payload ni se disparó el workflow de Grok.
+- Issue #11 (auditoría independiente de cuásares) sigue OPEN; Issue #16 (17 MP4, 10 resubidas TikTok y Pancho EN) sigue OPEN, sin comentarios nuevos. No se enviaron medios ni enlaces externos.
+- PR #3 sigue OPEN, draft y `mergeable=false`; el commit de esta ejecución dejó el run dinámico #45888959774 en cola. No se fusionó.
+- En main: run dinámico #45888521806 SUCCESS; Gitleaks #45888521884 SUCCESS; Semgrep #45888521848 FAILURE. El fallo Semgrep mantiene 37 hallazgos reportados previamente; no se generó SARIF útil.
+
+### Límites de ejecución de esta sesión
+
+- No se modificó ningún `data/*.json`, `main`, secretos, permisos ni estados Grok.
+- No se crearon medios, no se publicaron cápsulas, no se consumieron créditos y no se enviaron mensajes externos.

@@ -244,3 +244,50 @@ Respaldo oficial: Google Trends Trending Now México sí mostró señales del d�
 Se retiró el candidato provisional de control de unidades motoras: el DOI citado no resolvió a esa publicación y no se encontró una página primaria coincidente. No usarlo. Permanecen cuatro candidatos con páginas editoriales primarias localizadas (biodiversidad intermareal, Denisovanos, mapa unicelular de enfermedad coronaria y clasificador SARS-CoV-2). La selección para el borrador 27-nov sigue siendo el rescate de registros intermareales.
 
 Corrección cronológica del borrador: las cuatro publicaciones francesas fueron publicadas entre 1956 y 1963 y describen observaciones de 1949–1957. El método incluyó digitalización/OCR, corrección, traducción y cotejo con los originales. El guion se actualizó a 174 palabras. El DOI de la fuente primaria aparece en Nature; la compuerta Crossref/doi.org sigue pendiente y bloquea promoción.
+
+
+---
+
+## Actualización de radar — 2026-11-26, 13:56 CDMX
+
+### Consulta de feeds y respaldo Trends
+
+Se consultaron los endpoints definidos en `scripts/tendencias.py` mediante recuperación web. El script Python no se ejecutó en esta sesión; estos resultados acreditan consulta de endpoints, no ejecución local del script.
+
+| Fuente | Resultado | Observación |
+|---|---|---|
+| ScienceDaily `science.xml`, `health.xml`, `space_time.xml` | RECUPERADO | Se contrastó la fecha del estudio primario antes de aceptar candidatos |
+| Phys.org RSS | RECUPERADO | Radar secundario, no fuente primaria |
+| NASA News Release RSS | RECUPERADO | Último elemento observado: 2026-09-01; fuera de ventana |
+| UNAM Global RSS | RECUPERADO | Último elemento observado: 2026-05-18; fuera de ventana |
+| ESA Space Science RSS | `CRAWL_NOT_FOUND` | Búsqueda oficial como respaldo |
+| EurekAlert RSS | `CRAWL_NOT_FOUND` | Búsqueda de fuente primaria como respaldo |
+| Agencia SINC RSS | `CRAWL_NOT_FOUND` | Sin candidato respaldado por ese feed |
+| Nature RSS | `CRAWL_UNEXPECTED_CONTENT_TYPE` | No se pudo procesar el RSS |
+| Google Trends RSS México | `CRAWL_UNEXPECTED_CONTENT_TYPE` | Se usó la página oficial Trending Now como respaldo |
+
+La página oficial de Google Trends México devolvió 25 tendencias en la consulta del 2026-11-25 a las 20:49; en ese primer bloque no apareció una tendencia de ciencia, naturaleza o espacio que justificara un dato CAPCOT. Trends no se usó como evidencia científica.
+
+### Candidatos primarios vigentes
+
+Se conservan cuatro candidatos dentro de la ventana 2026-11-20 a 2026-11-26. Los cuatro DOI devolvieron `status=ok` en Crossref:
+
+1. **Biodiversidad intermareal histórica** — 2026-11-26 — `10.1038/s41597-026-08947-w`. Fuente primaria: *Scientific Data*; 6,925 registros y 272 localidades.
+2. **Denisovanos** — 2026-11-25 — `10.1038/s41586-026-11341-6`. Fuente primaria: *Nature*.
+3. **Mapa unicelular de enfermedad coronaria** — 2026-11-25 — `10.1038/s41586-026-11275-z`. Fuente primaria: *Nature*.
+4. **Clasificación computacional de variantes SARS-CoV-2** — 2026-11-26 — `10.1038/s41598-026-80097-w`. Fuente primaria: *Scientific Reports*; tratar como clasificación computacional, no como validación clínica.
+
+Se excluyeron tres resultados que aparecían como novedades en feeds, pero cuyo trabajo primario quedaba fuera de los siete días: fósil de *Westlothiana* (estudio primario del 2026-09-30), piscinas de salmuera del mar Rojo (estudio primario del 2026-09-02) y cometa detectado por Euclid (publicación primaria del 2026-10-19). La fecha de una noticia o reemisión no sustituye la fecha de publicación del estudio.
+
+### Estado del storyboard intermareal del 27-nov
+
+El storyboard se actualizó y leyó de vuelta en el commit `01f0815756ddbd8d2a7d408199b5e5925a28d6bb`:
+
+- SRC-001: Crossref `status=ok`.
+- SRC-002, SRC-003 y SRC-004: DOI resuelto a los datasets GBIF; se corrigieron sus fechas de creación y se conservó la fecha de modificación 2026-11-02.
+- 8 escenas, 173 palabras de narración, 78 segundos de escenas + 6 segundos de cortinilla = 84 segundos.
+- Voz y prompt base coinciden con el contrato y catálogo.
+- El mapa contiene dos bounding boxes de datasets GBIF y una tarjeta de datos de 6,925 registros / 272 localidades. No representa estaciones puntuales ni la cobertura completa de los cuatro países.
+- `approved_assets=[]`, `render_status=NOT_GENERATED`, sin rutas ni medios.
+
+La verificación de DOI fue manual por Crossref/resolvedor; no se ejecutó `scripts/validar_storyboard.py --check-doi`. Tampoco se ejecutó el validador estructural Python. `narrative_qa` quedó `FAIL/0` con `REVISION_INDEPENDIENTE_AUSENTE`: no hubo una lectura ciega separada de solo la narración. No hay PASS ni autorización de promoción.
