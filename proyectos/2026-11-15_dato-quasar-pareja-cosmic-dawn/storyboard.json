@@ -403,7 +403,7 @@
     "status": "FAIL",
     "score": 82,
     "review_basis": "lectura_en_frio_solo_narracion",
-    "reviewer_role": "auditor_independiente_lectura_en_frio",
+    "reviewer_role": "auditor_capcot_independiente",
     "reviewed_at": "2026-11-26T02:13:59-06:00",
     "checks": {
       "pregunta_central_reconstruible": true,
