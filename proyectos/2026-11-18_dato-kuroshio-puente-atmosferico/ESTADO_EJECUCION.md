@@ -144,3 +144,17 @@ Ninguno de los dos comandos incluyó `--check-doi`. Estos runs confirman la vali
 - Comparación de blobs entre el commit del run y el HEAD actual de feature: storyboard `2046152d4cf918f6a3a3908c9a050a92f47c77a0` y validador `50335d4b0d4d7b85f36d0ad2d1c13ed11a87c0df` sin cambios. La validación estructural sigue aplicando al contenido actual.
 - El comando **no** incluyó `--check-doi`; no acredita consulta Crossref ni verificación DOI. DOI permanece `PENDIENTE_RESOLVEDOR`.
 - Este run sustituye a `45500710272` como última ejecución CI documentada. No cambia narrativa, claims ni decisión editorial. Kuroshio permanece fuera de cola y no apto para promoción hasta completar DOI.
+
+
+## Revalidación CI posterior — 2026-11-25 (run #45705919466)
+
+- Workflow: `CAPCOT — validar preproducción Kuroshio`.
+- Run: [45705919466](https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/actions/runs/45705919466); conclusión GitHub: `success`; job: `139527737115`, conclusión `success`.
+- Inicio registrado: `2026-11-25T21:36:40Z` (15:36:40 CDMX).
+- Rama/commit ejecutados: `feature/capcot-video-discovery-continuity`, `331cd68451a77894004866151bfa0474b32da97c`.
+- Comando exacto definido por el workflow en ese commit: `python scripts/validar_storyboard.py proyectos/2026-11-18_dato-kuroshio-puente-atmosferico/storyboard.json`.
+- El comando no incluyó `--check-doi`; por tanto, este run no acredita Crossref ni verificación DOI.
+- Comparación de blobs en el commit ejecutado y HEAD vigente: storyboard `2046152d4cf918f6a3a3908c9a050a92f47c77a0` y `scripts/validar_storyboard.py` `50335d4b0d4d7b85f36d0ad2d1c13ed11a87c0df` permanecen idénticos. La validación estructural del run aplica al contenido actual.
+- El endpoint de logs no devolvió texto legible en esta auditoría; se registra únicamente el resultado verificable de GitHub (`success`), sin inventar stdout literal.
+- No se encontró una ejecución posterior de este workflow para Kuroshio en el inventario reciente de Actions.
+- Bloqueo conservado: DOI `10.1038/s41561-026-02139-2` = `PENDIENTE_RESOLVEDOR`. Estado: `BORRADOR_EN_PROYECTOS_NO_APTO_PARA_PROMOCION`. No copiar a cola ni emitir handoff.
