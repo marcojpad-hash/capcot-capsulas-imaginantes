@@ -72,7 +72,7 @@ def _hora_de_registro(registro):
     for campo in ("slot", "hora_local", "hora_cdmx", "hora"):
         valor = registro.get(campo)
         if isinstance(valor, str):
-            m = re.search(r"(?<!\\d)(\\d{1,2}):([0-5]\\d)(?!\\d)", valor)
+            m = re.search(r"(?<!\d)(\d{1,2}):([0-5]\d)(?!\d)", valor)
             if m:
                 return int(m.group(1)), int(m.group(2))
     publicado = registro.get("publishAt_utc") or registro.get("publishAt")
