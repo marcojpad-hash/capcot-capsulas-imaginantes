@@ -163,3 +163,18 @@ Los cinco candidatos documentados arriba permanecen como radar. No se añadió n
 ### Aclaración de horario — 2026-11-26
 
 La presencia de un registro a las 13:30 en el snapshot histórico no lo convierte en ventana vigente. La política de `main/data/horarios.json` fechada 23-nov solo mantiene 06:30–07:30 y 16:30–18:00, más 23:30 fijo. Por tanto, 13:30 se conserva como **registro legado/ocupación histórica**, no como slot activo para nuevas asignaciones. 07:00 sigue dentro de ventana activa y ocupado; 17:00 conserva la colisión; 23:30 está ocupado; 19:00 no está autorizado.
+
+
+### Relectura adicional de respaldo — 2026-11-26 08:27 CDMX
+
+Se repitió la consulta de las fuentes configuradas en `scripts/tendencias.py`. Los errores del lector no cambiaron: ScienceDaily (ciencia, salud y espacio), Phys.org, NASA, Nature y UNAM devuelven `HTTP 400 — Unsupported content-type` para XML/RSS; ESA Space Science devuelve `HTTP 404 — Not Found`; EurekAlert, SINC y Google Trends RSS siguen como `URL not accessible via the web tool`. Esto no demuestra que los servidores de origen estén caídos.
+
+**Respaldo oficial de Google Trends:** la página HTML México abrió con 259 tendencias en las últimas 24 horas. La señal científica/natural visible fue “eclipse solar del 2 de agosto de 2027” (5K+, 15 h). Se conserva solo como señal de interés; no es fuente científica ni candidato por sí misma.
+
+**Dos fuentes primarias nuevas para reserva, sin ampliar el top-5 activo:**
+
+- **Batería de estado sólido a baja presión — 25-nov.** Nature Communications, “Low-pressure operation of all-solid-state batteries enabled by an organic electrode”, DOI [10.1038/s41467-026-79379-8](https://www.nature.com/articles/s41467-026-79379-8). La página editorial informa operación a 1 MPa y 80.3% de capacidad tras 100 ciclos a 0.5C; es un resultado de celda experimental, no una prestación comercial. DOI visible en la página editorial; Crossref REST y doi.org no fueron accesibles en esta relectura: `PENDING_CROSSREF_RECHECK`.
+
+- **Microscopía MINSTED 3D — 24-nov.** Nature Communications, “3D-MINSTED nanoscopy and protein tracking in densely labelled living cells”, DOI [10.1038/s41467-026-79580-9](https://www.nature.com/articles/s41467-026-79580-9). La página editorial informa precisión de localización subnanométrica y seguimiento de pasos de kinesina de 16 nm. DOI visible en la página editorial; Crossref REST y doi.org no fueron accesibles en esta relectura: `PENDING_CROSSREF_RECHECK`.
+
+Ambos quedan como `PROPUESTA_RESERVA`, no seleccionados. No sustituyen todavía a los cinco candidatos priorizados ni habilitan storyboard: falta la compuerta independiente de Crossref/resolvedor y no existe slot autorizado libre el 26-nov. La verificación Crossref anterior de gravedad, nanofriction y cromatina se conserva como antecedente histórico, no como revalidación de hoy.
