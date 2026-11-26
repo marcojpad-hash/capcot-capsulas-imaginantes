@@ -401,23 +401,23 @@
   "approved_assets": [],
   "narrative_qa": {
     "status": "FAIL",
-    "score": 0,
+    "score": 82,
     "review_basis": "lectura_en_frio_solo_narracion",
-    "reviewer_role": "control_compuerta_chatgpt_no_independiente",
-    "reviewed_at": "2026-11-23T04:02:29-06:00",
+    "reviewer_role": "auditor_independiente_lectura_en_frio",
+    "reviewed_at": "2026-11-26T02:13:59-06:00",
     "checks": {
-      "pregunta_central_reconstruible": false,
-      "apertura_in_medias_res": false,
-      "progresion_por_escena": false,
-      "transiciones_causales": false,
+      "pregunta_central_reconstruible": true,
+      "apertura_in_medias_res": true,
+      "progresion_por_escena": true,
+      "transiciones_causales": true,
       "giro_cientifico_explicado": false,
-      "limite_evidencia_explicito": false,
-      "payoff_cierre_apertura": false
+      "limite_evidencia_explicito": true,
+      "payoff_cierre_apertura": true
     },
     "critical_flags": [
-      "REVISION_INDEPENDIENTE_AUSENTE"
+      "GIRO_CIENTIFICO_NOMBRADO_PERO_NO_EXPLICADO"
     ],
-    "reviewer_notes": "La narración se leyó concatenada y sin apoyarse en título, resumen, arco ni notas. Esta pasada es de ChatGPT y no sustituye la revisión externa requerida por el issue #11. La autoevaluación previa 82/100 no es independiente. El informe de Groq gpt-oss-120b en PR #13 inspecciona el storyboard completo y su metadata, por lo que no cumple la lectura en frío solo de narración; PR #12 quedó cerrado sin merge y PR #13 sigue abierto. Los siete false significan no acreditados por un auditor independiente, no un dictamen sustantivo de fallo individual. Narración y claims permanecen intactos."
+    "reviewer_notes": "Pasada separada: se leyó únicamente la narración concatenada, sin título, resumen, arco, notas ni narrative_contract. La pregunta reconstruible es si las dos luces son dos cuásares reales o una imagen por lente gravitacional; la apertura entra con la separación ya en curso y la secuencia progresa desde detección hasta límite de evidencia. El punto que no pasa: las formas distintas de las alas azules de [O III] se nombran como pista decisiva, pero no se explica por qué distinguen dos fuentes de una lente. La lente sigue sin descartarse y el cierre evita afirmar una fusión demostrada. Narración y claims intactos."
   },
   "state": "BORRADOR_EN_PROYECTOS_NO_APTO_PARA_PROMOCION"
 }
