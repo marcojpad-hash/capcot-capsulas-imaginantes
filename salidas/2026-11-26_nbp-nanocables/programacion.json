@@ -1,0 +1,12 @@
+{
+  "project_id": "2026-11-26_nbp-nanocables",
+  "plataformas": ["yt", "tt"],
+  "publish_at": "2026-11-26T23:15:00Z",
+  "ventana": "tarde",
+  "hora_cdmx": "17:15",
+  "caption_tt": "¿Cables más delgados que conducen mejor? El NbP de Stanford rompe la regla del cobre. #ciencia #nanotecnología #datosyociosidades",
+  "titulo_yt": "Cables que mejoran al adelgazar #Shorts",
+  "privacidad": "private",
+  "estado": "programado_paquete",
+  "nota": "Falta montar mp4 (sin edge-tts en entorno). YT programar a publish_at private→public. TT: Mj sube desde teléfono en slot."
+}

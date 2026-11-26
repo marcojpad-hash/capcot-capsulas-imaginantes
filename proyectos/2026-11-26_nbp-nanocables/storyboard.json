@@ -1,0 +1,148 @@
+{
+  "project_id": "2026-11-26_nbp-nanocables",
+  "title": "Cables que mejoran al adelgazar",
+  "language": "es-MX",
+  "aspect_ratio": "9:16",
+  "target_duration_seconds": 82,
+  "trend_source": {
+    "tipo": "noticia_cientifica",
+    "medio": "Nature",
+    "url": "https://www.nature.com/articles/s41586-026-11288-8",
+    "estudio_doi": "10.1038/s41586-026-11288-8",
+    "fecha_publicacion": "2026-11-25",
+    "termino": "NbP nanoribbons resistivity",
+    "fecha_consulta": "2026-11-26"
+  },
+  "estilo_id": "risografia",
+  "estilo_visual": "Risografía",
+  "estructura": "mito_vs_dato",
+  "voice": {
+    "engine": "edge-tts",
+    "voice_id": "es-MX-JorgeNeural",
+    "rate": "+7%",
+    "pitch": "-2Hz",
+    "pad_seconds": 0.3,
+    "modo_pausas": "continuo"
+  },
+  "sources": [
+    {
+      "id": "SRC-001",
+      "cita_corta": "Su et al. (2026). Unconventional resistivity reduction in NbP semimetal nanoribbons. Nature.",
+      "url": "https://www.nature.com/articles/s41586-026-11288-8",
+      "doi": "10.1038/s41586-026-11288-8",
+      "accessed": "2026-11-26",
+      "supports": [
+        "resistividad de nanocintas NbP disminuye al reducir el ancho",
+        "alcanza 18 ± 4.1 μΩ cm en ~9 nm² a temperatura ambiente",
+        "contrario al comportamiento del cobre",
+        "contribución creciente de estados de superficie y borde"
+      ],
+      "ref_display": "Nature 2026"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_001",
+      "arc": "hook_medias_res",
+      "duration_seconds": 8.0,
+      "narration": "¿Y si el cable más delgado condujera mejor la electricidad?",
+      "on_screen_text": "¿Más delgado = mejor?",
+      "visual_description": "Nanocinta ultrafina brillante sobre placa de circuito",
+      "image_prompt": "risograph print, two-color fluorescent pink and teal overprint, misregistration, grainy texture, flat shapes, vertical 9:16, no text + close-up of ultra-thin glowing nanoribbon wire on a circuit board, electric current flowing brightly along the edges",
+      "source_ids": ["SRC-001"],
+      "asset_filename": "frames/scene_001.jpg",
+      "ambiente": "viento",
+      "sfx": ["electric_hum"]
+    },
+    {
+      "id": "scene_002",
+      "arc": "desarrollo",
+      "duration_seconds": 10.0,
+      "narration": "En el cobre, al estrechar el cable, los electrones rebotan más en las superficies y la resistencia sube.",
+      "on_screen_text": "Cobre: más delgado, peor",
+      "visual_description": "Sección de cable de cobre con electrones dispersándose",
+      "image_prompt": "risograph print, two-color fluorescent pink and teal overprint, misregistration, grainy texture, flat shapes, vertical 9:16, no text + thick copper wire cross-section showing electrons bouncing off rough surfaces and scattering",
+      "source_ids": ["SRC-001"],
+      "asset_filename": "frames/scene_002.jpg",
+      "ambiente": "viento",
+      "sfx": ["metal_scrape"]
+    },
+    {
+      "id": "scene_003",
+      "arc": "desarrollo",
+      "duration_seconds": 9.0,
+      "narration": "En Stanford fabricaron nanocintas de fosfuro de niobio, un semimetal topológico, de solo unos nanómetros de ancho.",
+      "on_screen_text": "NbP en Stanford",
+      "visual_description": "Fabricación top-down de cintas NbP bajo microscopio",
+      "image_prompt": "risograph print, two-color fluorescent pink and teal overprint, misregistration, grainy texture, flat shapes, vertical 9:16, no text + laboratory top-down nanofabrication of tiny NbP ribbons under microscope, glowing edges",
+      "source_ids": ["SRC-001"],
+      "asset_filename": "frames/scene_003.jpg",
+      "ambiente": "laboratorio",
+      "sfx": ["lab_beep"]
+    },
+    {
+      "id": "scene_004",
+      "arc": "desarrollo",
+      "duration_seconds": 11.0,
+      "narration": "Al reducir el ancho a unos 6 nanómetros, la resistividad bajó en lugar de subir, llegando a 18 microohmios centímetro en secciones de 9 nanómetros cuadrados.",
+      "on_screen_text": "Resistividad baja al estrechar",
+      "visual_description": "Gráfico de resistividad decreciente vs cobre",
+      "image_prompt": "risograph print, two-color fluorescent pink and teal overprint, misregistration, grainy texture, flat shapes, vertical 9:16, no text + graph of resistivity decreasing as width shrinks for NbP vs increasing for copper",
+      "source_ids": ["SRC-001"],
+      "asset_filename": "frames/scene_004.jpg",
+      "ambiente": "viento",
+      "sfx": ["data_beep"]
+    },
+    {
+      "id": "scene_005",
+      "arc": "desarrollo",
+      "duration_seconds": 10.0,
+      "narration": "Los estados de superficie y de borde del material topológico cargan más corriente cuando el cable es más fino, y toleran la rugosidad.",
+      "on_screen_text": "Estados de superficie",
+      "visual_description": "Canales de superficie brillantes en los bordes",
+      "image_prompt": "risograph print, two-color fluorescent pink and teal overprint, misregistration, grainy texture, flat shapes, vertical 9:16, no text + microscopic view of surface states carrying current on the edges of a thin semimetal ribbon",
+      "source_ids": ["SRC-001"],
+      "asset_filename": "frames/scene_005.jpg",
+      "ambiente": "viento",
+      "sfx": ["soft_glow"]
+    },
+    {
+      "id": "scene_006",
+      "arc": "cierre_historia",
+      "duration_seconds": 9.0,
+      "narration": "Esto abre camino a interconexiones más densas en chips futuros, donde el cobre falla.",
+      "on_screen_text": "Chips más densos",
+      "visual_description": "Chip futuro con interconexiones densas",
+      "image_prompt": "risograph print, two-color fluorescent pink and teal overprint, misregistration, grainy texture, flat shapes, vertical 9:16, no text + future computer chip with dense interconnects made of shiny topological wires",
+      "source_ids": ["SRC-001"],
+      "asset_filename": "frames/scene_006.jpg",
+      "ambiente": "viento",
+      "sfx": ["circuit_hum"]
+    },
+    {
+      "id": "scene_007",
+      "arc": "reflexion_o_pregunta",
+      "duration_seconds": 10.0,
+      "narration": "¿Cuántos otros materiales topológicos esconden ventajas que el cobre no tiene? Esto fue Datos y ociosidades.",
+      "on_screen_text": "¿Qué más escondemos?",
+      "visual_description": "Canales cuánticos abstractos brillantes",
+      "image_prompt": "risograph print, two-color fluorescent pink and teal overprint, misregistration, grainy texture, flat shapes, vertical 9:16, no text + abstract close of quantum surface channels glowing pink and teal on a nanoribbon",
+      "source_ids": ["SRC-001"],
+      "asset_filename": "frames/scene_007.jpg",
+      "ambiente": "viento",
+      "sfx": ["soft_tone"]
+    }
+  ],
+  "cortinilla_fuentes": {
+    "duration_seconds": 6,
+    "titulo": "Fuentes",
+    "aviso": "Imágenes generadas con IA. Voz sintética. Audio sintetizado.",
+    "firma": "Datos y ociosidades · @datosyociosidades"
+  },
+  "export": {
+    "filename": "capsula.mp4",
+    "resolution": "1080x1920",
+    "fps": 30,
+    "loudness_lufs": -14
+  }
+}
