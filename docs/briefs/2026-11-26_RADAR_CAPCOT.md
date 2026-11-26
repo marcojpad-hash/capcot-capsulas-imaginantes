@@ -158,3 +158,8 @@ Se probó además una descarga directa de ScienceDaily mediante el contenedor: `
 **Respaldo oficial de Trends:** la página HTML [Google Trends — Trending Now, México](https://trends.google.com/trending?geo=MX) sí abrió. El corte mostraba 248 tendencias en las últimas 24 horas; los primeros resultados estaban dominados por fútbol, entretenimiento y conversación general. Señales científicas/naturales potenciales: “eclipse solar del 2 de agosto de 2027” (2K+, 14 h) y “bienestar de los animales” (10K+, 22 h). Son señales de interés, no fuentes de afirmaciones ni candidatos seleccionados.
 
 Los cinco candidatos documentados arriba permanecen como radar. No se añadió ni seleccionó otro: el slot 23:30 sigue ocupado en `main` y no hay otro slot libre autorizado tras la conciliación horaria. No se creó storyboard.
+
+
+### Aclaración de horario — 2026-11-26
+
+La presencia de un registro a las 13:30 en el snapshot histórico no lo convierte en ventana vigente. La política de `main/data/horarios.json` fechada 23-nov solo mantiene 06:30–07:30 y 16:30–18:00, más 23:30 fijo. Por tanto, 13:30 se conserva como **registro legado/ocupación histórica**, no como slot activo para nuevas asignaciones. 07:00 sigue dentro de ventana activa y ocupado; 17:00 conserva la colisión; 23:30 está ocupado; 19:00 no está autorizado.
