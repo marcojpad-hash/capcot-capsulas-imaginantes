@@ -199,3 +199,41 @@ Ninguno de esos titulares añade un estudio primario elegible a la ventana de si
 ### Nota de integridad — DOI de titulares excluidos
 
 Los DOI de la lista de exclusiones se identificaron por búsqueda, pero Crossref REST y el resolvedor DOI no fueron accesibles en esta relectura. Por tanto, no se etiquetan como `DOI_VERIFIED`; las fechas asociadas son indicios bibliográficos y no una verificación Crossref de este run. Esos titulares permanecen excluidos y no se usaron para guion ni para seleccionar un candidato. Las dos reservas ya documentadas conservan `PENDING_CROSSREF_RECHECK`.
+
+
+---
+
+## Revalidación 2026-11-26 · 11:58 CDMX
+
+### Tendencias y feeds
+
+Se revisaron los feeds definidos en `scripts/tendencias.py`: ScienceDaily (science, health, space), Phys.org, NASA, ESA Space Science, Nature RSS, EurekAlert, Agencia SINC y UNAM Global, además de Google Trends RSS México. La lectura directa de los feeds no devolvió cuerpo utilizable ni código HTTP/exception visible en esta sesión; no se simula una ejecución de `scripts/tendencias.py`.
+
+Respaldo oficial: Google Trends Trending Now México sí mostró señales del día, entre ellas **Día de Acción de Gracias 2026** (20K+), **eclipse solar del 2 de agosto de 2027** (10K+) y **mar** (2K+). El trend de Thanksgiving coincide con un paquete preexistente en el slot 23:30 del 26-nov; no se reutiliza ese tema.
+
+### Candidatos primarios recientes
+
+| Prioridad | Hallazgo | Fuente primaria y fecha | Observación verificable | Límite que debe conservarse |
+|---|---|---|---|---|
+| 1 | Rescate de registros intermareales de los años cincuenta | *Scientific Data*, 26-nov-2026. DOI 10.1038/s41597-026-08947-w. https://www.nature.com/articles/s41597-026-08947-w | Cuatro publicaciones históricas; 6,925 registros en 272 localidades de Francia, España, Portugal y Marruecos; datos de presencia/ausencia. | No es un inventario completo ni contiene abundancias comparables; no atribuye cambios al clima. |
+| 2 | Control de unidades motoras tras lesión medular cervical | *Nature Human Behaviour*, 25-nov-2026. DOI 10.1038/s41562-026-02626-x. https://www.nature.com/articles/s41562-026-02626-x | Prueba de concepto en tres participantes: registros no invasivos de EMG de alta densidad permitieron modular actividad de unidades motoras en músculos paralizados. | Tres participantes; no equivale a recuperar movimiento funcional de la mano ni a una terapia clínica disponible. |
+| 3 | Dos linajes arcaicos en el sur de China | *Nature*, 25-nov-2026. DOI 10.1038/s41586-026-11341-6. https://www.nature.com/articles/s41586-026-11341-6 | Evidencia proteómica en cuatro dientes; uno muestra afinidad denisovana y otro permanece como Homo arcaico no resuelto. | Muestra pequeña; no declarar una nueva especie ni convertir afinidad proteómica en genoma completo. |
+| 4 | Mapa unicelular de variantes reguladoras de enfermedad coronaria | *Nature*, 25-nov-2026. DOI 10.1038/s41586-026-11275-z. https://www.nature.com/articles/s41586-026-11275-z | Mapa de cromatina accesible y enlaces variante-potenciador-gen en tejido coronario humano. | Mapa molecular; no es predicción clínica ni demuestra que cada variante cause enfermedad. |
+| 5 | Clasificador de variantes SARS-CoV-2 por secuencia de espícula | *Scientific Reports*, 26-nov-2026. DOI 10.1038/s41598-026-80097-w. https://www.nature.com/articles/s41598-026-80097-w | Trabajo computacional de clasificación con alta exactitud reportada en el conjunto evaluado. | Versión de acceso anticipado; no presentar exactitud interna como desempeño clínico o validación externa. |
+
+**Verificación DOI:** los DOI aparecen en las páginas editoriales primarias, pero las consultas directas a Crossref y `doi.org` no devolvieron respuesta utilizable desde esta sesión. Los cinco candidatos permanecen con `verification_status=PENDIENTE` hasta ejecutar el validador con `--check-doi`; no se afirma verificación Crossref.
+
+### Rotación y slots
+
+- **26-nov 23:30:** ocupado en `main` por `2026-11-23_dato-thanksgiving-washington`; no duplicar.
+- **27-nov 23:30:** libre en `main` y en la rama de trabajo al corte de esta revisión. En `data/rehechos_2026-11-22.json` hay publicaciones a las 10:00 y 15:00, pero ninguna a las 23:30; el límite de cinco piezas/día no se rebasa.
+- Estilo elegido para el borrador: `atlas_antiguo`, no aparece en el registro de estilos usados y no está asignado a los proyectos recientes revisados.
+
+### Borrador creado
+
+`proyectos/2026-11-27_dato-registros-intermareales-1950s/storyboard.json`
+
+- 173 palabras; 8 escenas; 78 s de escenas + 6 s de cortinilla = 84 s.
+- Mapa con dos bounding boxes publicados por GBIF (costa atlántica francesa y norte ibérico); no se dibujan estaciones puntuales ni se inventa el límite del tercer dataset.
+- `approved_assets=[]`; `export.render_status=NOT_GENERATED`; `publicacion.status=PENDIENTE_DECISION_GROK`.
+- No se creó `narrative_qa`, `ESTADO_EJECUCION.md), `fuentes.md), cola ni medios. El DOI/Crossref sigue pendiente; el borrador no es apto para promoción.
