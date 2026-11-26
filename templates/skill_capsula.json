@@ -1,1 +1,110 @@
-{"descripcion":"Skill completa de cápsulas de Datos y ociosidades, en JSON. Es la versión manejable por máquina de las skills capcot-guion, capcot-frames, capcot-manim, capcot-montaje, capcot-narracion y capcot-qa (que siguen en Markdown). La plantilla del short es templates/storyboard_generico.template.json. La organización de la cocina está en docs/COCINA_CAPCOT.md.","entrega":"Nada se da por entregado en chat; solo vale lo verificado en el repo (archivo + commit). Si algo 'no llegó', se revisa el repo primero. Ningún modelo tiene callback: Pecas entra a hablarles directo en su chat.","estaciones":[{"chef":"Grok","entrada":"tema + fuentes verificadas","salida":"paquete en cola/entrada/<id>/ (storyboard.json, frames, fuentes.md)","skill_md":"capcot-guion + capcot-frames","tarea":"Investiga, escribe el guion como storyboard.json, genera frames y clips"},{"chef":"Grok Bot (Imaginantes)","entrada":"paquete en cola/entrada/<id>/","salida":"MP4 oficial + programación","skill_md":"capcot-montaje + capcot-qa","tarea":"Montaje oficial con JorgeNeural + QA + programa/publica"},{"chef":"Pecas (chef ejecutiva)","entrada":"paquete o relevo","salida":"MP4 de relevo verificado + reporte","skill_md":"capcot-montaje + capcot-narracion + capcot-qa","tarea":"Coordina, verifica todo en repo, monta relevos con ffmpeg + Kokoro/VoxCPM2, hace callbacks por navegador"},{"chef":"ChatGPT (marcosabines)","entrada":"paquete o auditoría","salida":"scripts, auditorías, guiones; montaje cuando exista el workflow","skill_md":"capcot-guion + capcot-qa","tarea":"Auditor y montador de respaldo (workflow de montaje pendiente de cablear)"},{"chef":"Gemini","entrada":"tema o verificación","salida":"verificación, contexto, imágenes/video por app","skill_md":"capcot-guion","tarea":"Verificación y contexto; imagen/video por la app (Nano Banana, Flow/Veo)"},{"chef":"Groq","entrada":"tarea de orquestación","salida":"decisión / texto agregado","skill_md":"orquestador","tarea":"Orquestador (gpt-oss-120b) y agregador"}],"fecha":"2026-11-11","formato":{"aspect_ratio":"9:16","audio_final":"aac 160k, 48000 Hz","cierre_hablado_en":"That was Datos y ociosidades.","cierre_hablado_es":"Esto fue Datos y ociosidades.","duracion_objetivo_s":"75-90 (QA 60-95)","fps":30,"loudness_lufs":-14,"resolucion":"1080x1920"},"montaje":{"audio":"voz -16 LUFS, música -27 LUFS, ambiente -26 LUFS; sidechain threshold 0.015, ratio 8, attack 15 ms, release 350 ms; mezcla final -14 LUFS, TP -1.5","cortinilla_s":6,"escena":"duración = voz + 0.25 s delay + pad 0.35 s (~+0.6 s)","planos":"~2.5 s por plano; movimientos rotando zin, pan_d, punch, zout, pan_i, punch_b","receta":"frames + transición de cámara (zoom/paneo) + corte por segundos + subtítulos calibrados con el audio + render MP4 con ffmpeg. Sin CapCut, sin consola.","salida":"MP4 1080x1920, 30 fps, CRF 20, yuv420p, faststart","subtitulos":"ASS, DejaVu Sans 72 negrita, outline 6, shadow 2, máx 3 palabras/bloque, Y=1300, márgenes 90/170"},"plantilla_storyboard":"templates/storyboard_generico.template.json","qa_puertas_duras":["Duración real ±5 s del target","Voz rechazada (Piper) = NO PASA","Huecos de silencio ≥1 s = NO PASA","No inventar datos, fuentes ni DOIs","Un estilo visual por cápsula del catálogo (50 estilos), nunca el de la anterior","Sin texto dentro de la imagen (solo el título-gancho y los subtítulos quemados)","No existe 'PASA como borrador'"],"semana_produccion":{"dato_del_dia":"Todos los días: se arma con el dato más cercano a ese día; si es del mismo día, mejor aún, para que se sienta actual.","dia_montaje":"Domingo: Grok Bot monta y programa el lote de la semana; Pecas verifica en repo y monta el viral animado de la semana.","dia_produccion":"Sábado (tras el reinicio semanal de Grok Bot, 10:18 CST): Grok genera los paquetes de la semana (frames, guiones, voces). Se juntan las salsas (estilos, voces) y los perecederos (datos frescos).","meta_diaria":"5 cápsulas/día (canal en inglés, 35/semana). El canal en español mantiene sus propios slots.","revision_creditos":"Pendiente: Grok no ve su propio saldo (solo está en la interfaz de Marco); el costo por cápsula de Grok Bot no está medido. La meta de 5/día se confirma cuando lleguen esos dos números; mientras, el lote se organiza con lo que los créditos permitan."},"serie":"Datos y ociosidades","skill":"capcot-capsula","version":"1.0.0","voces_por_tema":{"JorgeNeural":"ciencia, física, química, astronomía (voz oficial CAPCOT)","narrador_en":"canal en inglés, alternando con Kokoro am_adam","narrador_es":"historia, historias, biografías","narradora_es":"biología, cocina / datos de cocina, hacks / life hacks, cultura, literatura"}}
+{
+  "descripcion": "Skill completa de cápsulas de Datos y ociosidades, en JSON. Es la versión manejable por máquina de las skills capcot-guion, capcot-frames, capcot-manim, capcot-montaje, capcot-narracion y capcot-qa (que siguen en Markdown). La plantilla del short es templates/storyboard_generico.template.json. La organización de la cocina está en docs/COCINA_CAPCOT.md.",
+  "entrega": "Nada se da por entregado en chat; solo vale lo verificado en el repo (archivo + commit). Si algo 'no llegó', se revisa el repo primero. Ningún modelo tiene callback: Pecas entra a hablarles directo en su chat.",
+  "estaciones": [
+    {
+      "chef": "Grok",
+      "entrada": "tema + fuentes verificadas",
+      "salida": "paquete en cola/entrada/<id>/ (storyboard.json, frames, fuentes.md)",
+      "skill_md": "capcot-guion + capcot-frames",
+      "tarea": "Investiga, escribe el guion como storyboard.json, genera frames y clips"
+    },
+    {
+      "chef": "Grok Bot (Imaginantes)",
+      "entrada": "paquete en cola/entrada/<id>/",
+      "salida": "MP4 oficial + programación",
+      "skill_md": "capcot-montaje + capcot-qa",
+      "tarea": "Montaje oficial con JorgeNeural + QA + programa/publica"
+    },
+    {
+      "chef": "Pecas (chef ejecutiva)",
+      "entrada": "paquete o relevo",
+      "salida": "MP4 de relevo verificado + reporte",
+      "skill_md": "capcot-montaje + capcot-narracion + capcot-qa",
+      "tarea": "Coordina, verifica todo en repo, monta relevos con ffmpeg + Kokoro/VoxCPM2, hace callbacks por navegador"
+    },
+    {
+      "chef": "ChatGPT (marcosabines)",
+      "entrada": "paquete o auditoría",
+      "salida": "scripts, auditorías, guiones; montaje cuando exista el workflow",
+      "skill_md": "capcot-guion + capcot-qa",
+      "tarea": "Auditor y montador de respaldo (workflow de montaje pendiente de cablear)"
+    },
+    {
+      "chef": "Gemini",
+      "entrada": "tema o verificación",
+      "salida": "verificación, contexto, imágenes/video por app",
+      "skill_md": "capcot-guion",
+      "tarea": "Verificación y contexto; imagen/video por la app (Nano Banana, Flow/Veo)"
+    },
+    {
+      "chef": "Groq",
+      "entrada": "tarea de orquestación",
+      "salida": "decisión / texto agregado",
+      "skill_md": "orquestador",
+      "tarea": "Orquestador (gpt-oss-120b) y agregador"
+    }
+  ],
+  "fecha": "2026-11-11",
+  "formato": {
+    "aspect_ratio": "9:16",
+    "audio_final": "aac 160k, 48000 Hz",
+    "cierre_hablado_en": "That was Datos y ociosidades.",
+    "cierre_hablado_es": "Esto fue Datos y ociosidades.",
+    "duracion_objetivo_s": "75-90 (QA 60-95)",
+    "palabras_guion_objetivo": "190-210 palabras de narracion (OBJETIVO EXPLICITO, no sugerencia: el guion adulto que tenga menos de 190 palabras NO PASA a montaje y se devuelve para ampliar con contenido real verificado). A ~2.4 palabras/s, 190-210 palabras dan ~80-88 s de voz (duracion objetivo 75-90 s). La ampliacion debe ser contenido real verificado que cubra mejor el tema, nunca palabras de relleno. No recortar el contenido para caber en un tiempo. El guion debe cubrir el tema completo, que se sienta completo y consistente, que no se sienta cortado ni falto, y que mantenga la atencion. Si el tema necesita mas tiempo, el video puede ser mas largo. Excepcion: serie infantil Bruno el Buho (~150 palabras, ~60 s). Regla puesta explicita por Marco 2026-11-23: los 42 guiones de la semana 30 nov-6 dic llegaron de 123-175 palabras (promedio 148) y salieron de ~60 s, ~20 s por debajo del objetivo; la verificacion de esa tanda reviso datos y duplicados pero no el largo.",
+    "fps": 30,
+    "loudness_lufs": -14,
+    "resolucion": "1080x1920"
+  },
+  "montaje": {
+    "audio": "voz -16 LUFS, música -27 LUFS, ambiente -26 LUFS; sidechain threshold 0.015, ratio 8, attack 15 ms, release 350 ms; mezcla final -14 LUFS, TP -1.5",
+    "cortinilla_s": 6,
+    "cierre_max_s": "6 (MAXIMO). Los cierres observados salieron de 10-16 s (Juno 16 s, MXenes 11.8 s, Oxoboranos 10 s) y eso es relleno: el cierre NO debe pasar de 6 s.",
+    "escena": "duración = voz + 0.25 s delay + pad 0.35 s (~+0.6 s)",
+    "planos": "~2.5 s por plano; movimientos rotando zin, pan_d, punch, zout, pan_i, punch_b",
+    "receta": "frames + transición de cámara (zoom/paneo) + corte por segundos + subtítulos calibrados con el audio + render MP4 con ffmpeg. Sin CapCut, sin consola.",
+    "salida": "MP4 1080x1920, 30 fps, CRF 20, yuv420p, faststart",
+    "subtitulos": "ASS, DejaVu Sans 72 negrita, outline 6, shadow 2, máx 3 palabras/bloque, Y=1300, márgenes 90/170"
+  },
+  "plantilla_storyboard": "templates/storyboard_generico.template.json",
+  "qa_puertas_duras": [
+    "Guion adulto con menos de 190 palabras de narracion = NO PASA (se amplia con contenido real verificado antes de montar; excepcion: Bruno el Buho ~150 palabras)",
+    "Duración real ±5 s del target",
+    "Voz rechazada (Piper) = NO PASA",
+    "Huecos de silencio ≥1 s = NO PASA",
+    "No inventar datos, fuentes ni DOIs",
+    "Un estilo visual por cápsula del catálogo (50 estilos), nunca el de la anterior",
+    "Sin texto dentro de la imagen (solo el título-gancho y los subtítulos quemados)",
+    "No existe 'PASA como borrador'",
+    "Cada imagen PD/CC citada por su biblioteca de origen (Wikimedia Commons, Library of Congress, etc.) en licencias.json y en la descripción del video; sin cita NO PASA",
+    "Hashtags en el idioma del video = NO PASA si el bloque trae tags en el otro idioma (ES: solo español; EN: solo inglés; se permiten nombres propios iguales en ambos idiomas, p. ej. #mexico, #titanic, #cancer). Cada hashtag con volumen verificado ≥100K menciones; el más grande DENTRO del idioma del video, nunca el más grande en general. ES y EN llevan bloques DISTINTOS; un solo bloque para los dos idiomas NO PASA. Sin 'préstamos' (un tag en inglés en un video en español no pasa aunque sea grande). Regla fijada por Marco 2026-11-25 tras el caso Pancho (#wildlife en video ES)"
+  ],
+  "hashtags": {
+    "regla": "El hashtag va en el idioma del video y es el más grande DENTRO de ese idioma, con volumen verificado ≥100K menciones (fuente: best-hashtags.com Hashtag report de la página propia del tag). Nunca se elige por el número más grande en general sin mirar el idioma: eso cruzó los idiomas en 2026-11-24 (#salud 22M → #health 145.8M) y dejó videos ES con tags en inglés y viceversa. ES y EN llevan bloques DISTINTOS, cada uno en su idioma. Prohibidos: genéricos sin volumen (#curiosidades, #datosinteresantes, #datos, #difusión, #difusióncientífica, #ia como tag), tags-frase, tags con typo, y tags en el otro idioma. La marca #DatosYOciosidades va al inicio del bloque y #Shorts al final. En YouTube el bloque lleva VARIOS tags del tema (7–8 verificados, no solo 3–5; YouTube admite más que las otras plataformas); en TikTok máximo 5. REGLA DE CAMPO SEMÁNTICO (Marco 2026-11-25): los tags salen del campo semántico del video — los nombres, personas, lugares y conceptos que REALMENTE se mencionan dentro del video. NO se usan tags paraguas como columna del bloque (#historia #ciencia #psicología #datos #cultura #mitología #naturaleza #animales): nadie busca así, la gente busca cosas más específicas dentro del tema. Cada tag debe ser una cosa específica (nombre, lugar, suceso, concepto concreto), corto, de una palabra — tampoco hashtags largos como frase. Los genéricos NO se eliminan como tal: se quedan en un papel menor de apoyo (máximo 1–2 por bloque); la eficiencia del bloque viene de los específicos. Un paraguas nunca sustituye a los específicos. Los tags deben usar las palabras que la gente realmente dice y busca, no el término técnicamente correcto (#pajaros, no #aves). Los nombres propios van como se escriben en el idioma del video (#titanic, #batman, #superman); SÍ se puede usar la marca del universo (#DC, #DCComics), porque es el universo al que pertenecen los personajes: van los nombres de los personajes Y la marca del universo. El bloque se escribe en el guion (ES y EN por separado) y se verifica en Studio tras subir, no solo en metadata.json.",
+    "fecha_regla": "2026-11-25",
+    "origen": "Marco, 2026-11-25 (casos: dedos tmOji99zGPE, Pancho 9RBB5dFsWyA)",
+    "pools_verificados": "pendientes/abiertos/2026-11-25_pools-hashtags-verificados.md (español verificado 25-nov: 29 + 58 tags; inglés: pool de la auditoría 2026-11-24, cifras best-hashtags con su inconsistencia interna conocida)"
+  },
+  "semana_produccion": {
+    "dato_del_dia": "Todos los días: se arma con el dato más cercano a ese día; si es del mismo día, mejor aún, para que se sienta actual.",
+    "dia_montaje": "Domingo: Grok Bot monta y programa el lote de la semana; Pecas verifica en repo y monta el viral animado de la semana.",
+    "dia_produccion": "Sábado (tras el reinicio semanal de Grok Bot, 10:18 CST): Grok genera los paquetes de la semana (frames, guiones, voces). Se juntan las salsas (estilos, voces) y los perecederos (datos frescos).",
+    "meta_diaria": "5 cápsulas/día (canal en inglés, 35/semana). El canal en español mantiene sus propios slots.",
+    "revision_creditos": "Pendiente: Grok no ve su propio saldo (solo está en la interfaz de Marco); el costo por cápsula de Grok Bot no está medido. La meta de 5/día se confirma cuando lleguen esos dos números; mientras, el lote se organiza con lo que los créditos permitan."
+  },
+  "serie": "Datos y ociosidades",
+  "skill": "capcot-capsula",
+  "version": "1.0.0",
+  "voces_por_tema": {
+    "JorgeNeural": "ciencia, física, química, astronomía (voz oficial CAPCOT)",
+    "narrador_en": "canal en inglés, alternando con Kokoro am_adam",
+    "narrador_es": "historia, historias, biografías",
+    "narradora_es": "biología, cocina / datos de cocina, hacks / life hacks, cultura, literatura"
+  },
+  "imagenes_publicas": {
+    "regla": "Citar la biblioteca de imágenes públicas que se usó. Cada foto, imagen o clip de dominio público o CC lleva su biblioteca de origen citada por nombre (p. ej. Wikimedia Commons, Library of Congress, Smithsonian, USGS, National Archives, Australian War Memorial, NASA). La cita va en DOS lugares: (1) licencias.json del paquete, por imagen, con su licencia exacta; (2) la descripción del video en YouTube, en la línea de imágenes (p. ej. 'Imágenes: Wikimedia Commons y Library of Congress (dominio público)'), no solo el genérico 'Imágenes de dominio público'. Sin la cita no pasa QA.",
+    "fecha_regla": "2026-11-22",
+    "origen": "Marco, 2026-11-22 23:44 CST"
+  }
+}
