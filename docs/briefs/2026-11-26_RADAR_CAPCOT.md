@@ -194,3 +194,8 @@ La lectura directa de RSS no fue consumible desde el navegador en este run; se c
 - Soledad y medicalización — DOI https://doi.org/10.1093/socpro/spag034; publicación primaria anterior al periodo y fuera del alcance temático de esta serie.
 
 Ninguno de esos titulares añade un estudio primario elegible a la ventana de siete días. Se conserva el conjunto de cinco candidatos ya documentado en este radar; no se añade un sexto, no se selecciona candidato y no se crea storyboard porque la conciliación de parrilla del mismo día no deja slot libre.
+
+
+### Nota de integridad — DOI de titulares excluidos
+
+Los DOI de la lista de exclusiones se identificaron por búsqueda, pero Crossref REST y el resolvedor DOI no fueron accesibles en esta relectura. Por tanto, no se etiquetan como `DOI_VERIFIED`; las fechas asociadas son indicios bibliográficos y no una verificación Crossref de este run. Esos titulares permanecen excluidos y no se usaron para guion ni para seleccionar un candidato. Las dos reservas ya documentadas conservan `PENDING_CROSSREF_RECHECK`.
