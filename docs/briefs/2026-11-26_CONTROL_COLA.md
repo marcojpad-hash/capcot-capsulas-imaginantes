@@ -280,3 +280,35 @@ La consulta de `cola/estado/` en la rama de trabajo devuelve 404 (`NOT_FOUND`). 
 - `cola/estado/` no existe en el árbol de la rama de trabajo; la recepción individual sigue como `RECEPCION_GROK_NO_CONFIRMADA`. No hay evidencia de `historial_youtube.json` ni confirmación de Studio.
 - Actions observadas: CodeQL `45784089913` SUCCESS; Gitleaks `45836080613` SUCCESS; Semgrep `45836080617` FAILURE con 37 hallazgos bloqueantes. El paso de carga SARIF fue omitido y el run no publicó artefacto SARIF, por lo que no hay lista verificable de hallazgos individuales. Se intentó reproducción local, pero no se pudo instalar Semgrep en el entorno; no se declara una segunda ejecución.
 - PR #15 sigue abierto/no mergeable: la corrección del validador ya está en la rama base de trabajo, pero la cobertura de regresión adicional sigue en el PR. No se fusionó ni se abrió/cerró ningún PR.
+
+
+## Addendum de verificación — 26-nov-2026, 09:39 CDMX
+
+### Ocupación y autoridad horaria
+
+Se contrastó la rama de trabajo contra `main/data/horarios.json` (actualizado 2026-11-23; lectura de solo consulta). La política vigente tiene ventanas activas 06:30–07:30 y 16:30–18:00; 13:00–14:30 es una ventana reversible de prueba; 23:30 es el slot fijo del dato del día; 19:00 está retirado.
+
+El snapshot `main/data/miniaturas_auditoria_2026-11-21.json` y `main/data/rehechos_2026-11-22.json` muestran para el 26-nov:
+
+- 07:00 — `ZkrzVP6V5k8`, ya programado.
+- 10:00 — remontaje `2fQp5v9mQ6A`, preexistente y fuera de ventana.
+- 13:30 — `966qJDbIJp4`, ventana de prueba ocupada.
+- 15:00 — remontaje `4vQ2M2t8m3A`, preexistente y fuera de ventana.
+- 17:00 — colisión de dos IDs: `JqlKsJOVmdE` y `-1DRh_qj7Bg`.
+- 19:00 — `q5ZHy9oH6VM` sigue programado pese a que la franja fue retirada; no cancelar ni duplicar desde esta auditoría.
+- 23:30 — `2026-11-23_dato-thanksgiving-washington`, `publishAt_utc=2026-11-27T05:30:00Z` (26-nov 23:30 CDMX).
+
+Para Thanksgiving, `render.log` mide 89.56 s y 207 palabras; `qa_es.json` contiene 21/21 checks audiovisuales positivos, pero el storyboard tiene 6 escenas y no contiene `narrative_qa`. El log conserva una advertencia de safe area. El MP4 se referencia bajo `/workspace` y no está en el árbol GitHub; clasificar `MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO`. Hay procesamiento y programación preexistentes: `PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR`.
+
+La función de rotación marca una ventana completa como usada al encontrar un slot dentro de ella; por tanto, 17:00 consume la ventana 16:30–18:00 y no queda un 17:45 alternativo. 13:30 no es una franja histórica retirada: pertenece a la ventana de prueba 13:00–14:30 y está ocupada. Esta precisión supersede la frase anterior de este informe que la calificaba como histórica/legada.
+
+Resultado: no existe slot libre verificable para crear storyboard el 26-nov. No se creó cola ni storyboard; no se canceló ni reenvió ningún paquete. `cola/estado/` continúa sin árbol/estado verificable: `RECEPCION_GROK_NO_CONFIRMADA`.
+
+### Actions, issues y cambios posteriores
+
+- El último commit de `main`, `1202ff151f04ce14127ed4f21bf03b0e067b3b1d`, solo añade la propuesta de end screens `propuesta_2026-11-26_08` con estado `pending_studio`; no demuestra aplicación en YouTube Studio.
+- Semgrep en `main`, run `45836080617`: falló con 37 hallazgos bloqueantes; la carga SARIF se omitió por el fallo previo, así que no hay desglose verificable en ese run. Gitleaks y CodeQL finalizaron correctamente.
+- `callback-aviso-delegaciones`, run `45845778090`: terminó correctamente. La búsqueda posterior conserva las dos issues abiertas existentes; no se observó issue nueva creada por ese run.
+- La issue de reenvío/publicación externa sigue fuera de autorización. La auditoría narrativa de Cuásares sigue delegada a otra revisión; esta conversación no la sustituye.
+- PR #3 continúa draft/no mergeable y su diff incluye `data/*.json`; no se fusionó.
+- Los últimos commits de esta rama modifican documentación, no los 12 storyboards del lote 5–7-nov. Se conserva el resultado anterior de 2 PASS / 10 FAIL y 0/12 con estructura completa; no se repitió PASS ni se reescribió narración.
