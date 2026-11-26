@@ -397,3 +397,10 @@ La relectura de los nueve metadata.json y storyboard.json no encontró autor/mod
 - Los 12 storyboards siguen sin cambios: 2 PASS narrativos (Venus 88; arena cantante 94) y 10 FAIL; estructura 0/12 apta. No hay entradas planas en `cola/entrada/` para ese lote. Las copias heredadas identificadas están en `cola/bloqueados/`; no se promovieron.
 - En ambas ramas no hay `cola/estado/<id>.json` para confirmar recepción. No se crearon estados ni se asumió recepción por la presencia de marcadores.
 - No se modificó ningún `data/*.json`, no se dispararon workflows, no se enviaron webhooks, no se crearon medios ni se publicó/programó nada desde esta ejecución.
+
+
+### Corrección editorial de radar y storyboard · 2026-11-26 12:06 CDMX
+
+- Se retiró del radar el candidato provisional de control de unidades motoras: el DOI citado no resolvió a la publicación y no se localizó una página primaria coincidente. El radar queda con cuatro candidatos primarios verificables.
+- Se corrigió el storyboard `2026-11-27_dato-registros-intermareales-1950s`: las cuatro publicaciones en francés salieron entre 1956 y 1963 y describen observaciones de 1949–1957; el método se expresa como digitalización/OCR, corrección, traducción y cotejo con los originales. El guion queda en 174 palabras, 8 escenas y 84 s totales.
+- La fuente primaria y el DOI aparecen en Nature Scientific Data; la verificación Crossref/doi.org sigue pendiente. El storyboard permanece en BORRADOR, sin QA, sin cola y sin medios; no es promovible.
