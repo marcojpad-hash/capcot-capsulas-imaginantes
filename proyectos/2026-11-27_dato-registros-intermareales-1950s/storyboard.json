@@ -414,10 +414,11 @@
   "estado": "BORRADOR",
   "production_mode": "storyboard_only",
   "validation_notes": [
-    "DOI/URL comprobados el 2026-11-26: SRC-001 devolvió status=ok en Crossref; SRC-002, SRC-003 y SRC-004 resolvieron a sus datasets GBIF. GBIF API confirma las fechas created y modified. Esta comprobación fue manual; no equivale a ejecutar scripts/validar_storyboard.py --check-doi.",
-    "El mapa dibuja dos bounding boxes de datasets GBIF; no representa estaciones puntuales ni la cobertura completa de los cuatro países. El tercer dataset está citado pero no se traza por falta de un bounding box verificable.",
-    "No se ejecutó el validador estructural Python en esta sesión; la inspección de estructura fue manual.",
-    "narrative_qa queda FAIL/0 con REVISION_INDEPENDIENTE_AUSENTE: el auditor ya había visto metadatos editoriales y no realizó una pasada ciega leyendo únicamente la narración concatenada. No habilita promoción."
+    "DOI/URL: verificación manual previa del 2026-11-26; SRC-001 devolvió status=ok en Crossref y SRC-002, SRC-003 y SRC-004 resolvieron a datasets GBIF. En la relectura 16:04, Crossref REST y doi.org no fueron accesibles desde la herramienta; no se ejecutó scripts/validar_storyboard.py --check-doi. Se conserva el resultado previo como antecedente, no como revalidación nueva.",
+    "El mapa incluye tres bounding boxes publicados por GBIF: costa atlántica francesa, norte ibérico e Iberia/norte de Marruecos (cirrípedos). Son extensiones de datasets, se solapan y no representan estaciones puntuales ni todas las localidades con precisión uniforme.",
+    "No se ejecutó el validador estructural Python para este storyboard; la inspección de estructura fue manual.",
+    "narrative_qa permanece FAIL/0 con REVISION_INDEPENDIENTE_AUSENTE: no hubo una pasada ciega separada leyendo únicamente la narración concatenada. No habilita promoción.",
+    "CONFLICTO_DE_SLOT_ENTRE_RAMAS: main contiene tools/animales_2026-11-23/specs_animales.py, SPECS['stubbs'], con hueco 2026-11-27 23:30 (America/Mexico_City). La afirmación anterior de que el slot estaba libre en main queda supersedida. No promover ni crear una segunda entrada para ese slot."
   ],
   "linea_tematica_provisional": "Actualidad",
   "risk_notes": [
