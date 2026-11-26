@@ -335,3 +335,18 @@ Lectura de vuelta:
 El slot 27-nov 23:30 sigue libre en los registros consultados de main: no hay proyecto, publicación ni rotación para esa combinación; los rehechos de 27-nov están a las 10:00 y 15:00. No existe archivo independiente `historial_youtube` en el árbol. La programación externa no queda certificada por esos registros. El paquete Thanksgiving 26-nov 23:30 es preexistente y distinto; no se duplica ni redispatcha.
 
 No se ejecutó el validador estructural para este storyboard ni `--check-doi`. El run Kuroshio exitoso posterior valida otro proyecto y no se atribuye a este borrador.
+
+
+---
+
+## Corrección de slot — 2026-11-26, 16:18 CDMX
+
+La afirmación anterior de que 27-nov 23:30 estaba libre en main queda **supersedida**. La inspección posterior de `main:tools/animales_2026-11-23/specs_animales.py` encontró `SPECS["stubbs"]` con `hueco="2026-11-27 23:30 (America/Mexico_City)"`. Es una asignación explícita de preproducción en main, aunque no demuestra por sí sola publicación efectiva.
+
+Clasificación del borrador intermareal de feature:
+- `CONFLICTO_DE_SLOT_ENTRE_RAMAS`.
+- `NOT_DISPATCHABLE`; permanece en `proyectos/`.
+- No promover, no crear copia de cola, no mover la reserva de main y no cancelar/reprogramar el paquete de main.
+- La metadata `validation_notes` del storyboard fue actualizada y releída para registrar el conflicto. Narración y QA no cambiaron.
+
+La misma especificación contiene reservas adicionales para 28, 29 y 30-nov a las 23:30. No se reasigna este borrador a otro día sin una conciliación nueva de slots y rotación.
