@@ -7,7 +7,7 @@
 
 ## 1. Ramas, CI y contratos
 
-- En la comparación main → feature, la rama feature tiene 1,431 commits exclusivos y main tiene 594 commits exclusivos. PR #3 sigue abierto y GitHub lo reporta mergeable=false. PR #3 sigue abierto y GitHub lo reporta mergeable=false. No fusionar ni sincronizar por fuerza.
+- En la comparación main → feature, la rama feature tiene 1,431 commits exclusivos y main tiene 594 commits exclusivos. PR #3 sigue abierto y GitHub lo reporta mergeable=false. No fusionar ni sincronizar por fuerza.
 - main está en 5667579d040c89907c5784b643a758be4aed5674. Ese commit añade skills/, templates/skill_capsula.json y LEEME_MODELOS.md. La nueva ficha propone 190–210 palabras para cápsulas adultas y asigna investigación/redacción a Grok, auditoría a ChatGPT y generación a Gemini. Esto difiere de la ficha maestra vigente, que asigna investigación a ChatGPT, auditoría a Grok y prohíbe generar medios en esta etapa. Se siguió la ficha maestra. Para trabajos futuros, 190–210 palabras satisface la intersección con el rango maestro 170–235; no se reescribieron expedientes existentes.
 - La última ejecución de Actions de feature es #45705919466, exitosa, sobre un SHA anterior (331cd6...). Su log valida únicamente Kuroshio y comprueba production_mode, approved_assets y render_status; no ejecuta --check-doi ni auditoría narrativa completa. No equivale a validar el backlog.
 - En main, Semgrep #45766124954 terminó con 37 hallazgos bloqueantes. El paso de subida SARIF quedó omitido; no hay evidencia descargable de los hallazgos individuales en ese run. No se modificó main.
