@@ -200,3 +200,18 @@ La fuente primaria conserva `doi_verification_status=DOI_VISIBLE_EN_PAGINA_EDITO
 - El DOI `10.1038/s41561-026-02139-2` conserva `DOI_VISIBLE_EN_PAGINA_EDITORIAL_Y_PDF; RESOLVEDOR_CROSSREF_NO_CONFIRMADO`. Estado final: **BORRADOR_EN_PROYECTOS_NO_APTO_PARA_PROMOCION**.
 
 No se modifican narración, claims, `data/*.json`, estado Grok ni decisión editorial.
+
+
+## Revalidación CI posterior — 2026-11-27 (run #24)
+
+- Workflow: `.github/workflows/validar-kuroshio.yml` — `CAPCOT — validar preproducción Kuroshio`.
+- Run: `46076761978`; job: `140766191962`; conclusión: `success`.
+- Inicio: `2026-11-27T22:27:35Z` (16:27:35 CDMX); fin: `2026-11-27T22:27:46Z`.
+- Rama: `feature/capcot-video-discovery-continuity`.
+- Commit ejecutado: `53ad156371717984ad8ed701099dc2bb79a4bfe3`.
+- Comando exacto: `python scripts/validar_storyboard.py proyectos/2026-11-18_dato-kuroshio-puente-atmosferico/storyboard.json`.
+- Resultado literal del paso de validación: `OK`, salida 0. Comprobación adicional: `Expediente textual íntegro; medios no generados; publicación no autorizada.`
+- El comando no incluyó `--check-doi`; acredita validación estructural/textual, no resolución Crossref/doi.org. El DOI `10.1038/s41561-026-02139-2` permanece `PENDIENTE_RESOLVEDOR`.
+- Comparación de blobs entre el commit ejecutado y el HEAD actual `2f49e05c5817d8846a043d8205b51f580a6ebb5f`: storyboard `2046152ade90fffaf9527d180e13cc5f6009fb60`, validador `72b0e3e9ad7f9cd9a436be86880cedc6889f3e35` y workflow `e8151c8eb1ee5a0893f3f800f4c625887427ecde`; los tres blobs son idénticos. El resultado estructural sigue aplicando al contenido actual.
+- `cola/estado/2026-11-18_dato-kuroshio-puente-atmosferico.json` sigue en 404: `RECEPCION_GROK_NO_CONFIRMADA`.
+- Estado sin cambio: `BORRADOR_EN_PROYECTOS_NO_APTO_PARA_PROMOCION`. No se copia a cola ni se emite handoff mientras el DOI siga pendiente.
