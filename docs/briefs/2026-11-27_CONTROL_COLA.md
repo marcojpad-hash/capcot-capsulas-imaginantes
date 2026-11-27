@@ -410,3 +410,12 @@ No se creó `narrative_qa` nuevo ni se promovió ningún storyboard. No se alter
 - **VERIFICADO:** cuatro 404 de estado Grok; un conflicto de slot entre ramas; cinco paquetes con producción/programación previa en main; worker sin trabajo; CodeQL exitoso sin validador estructural.
 - **PENDIENTE:** auditoría narrativa verdaderamente independiente para PAV1 y liquen; DOI/Crossref para liquen y rapaces; ejecución del validador oficial; confirmación externa del estado de IDs antiguos.
 - **NO REALIZADO:** promoción a cola, dispatch, publicación, reprogramación, cancelación, cambios en `data/*.json`, main, secretos o permisos.
+
+
+## Actualización de radar y Trends — 27-11-2026
+
+- Se abrió el respaldo HTML oficial de Google Trends México: 253 tendencias en las últimas 24 h. “agujero de la capa de ozono” aparece con 2K+ búsquedas y actividad aproximada de seis horas antes del corte.
+- Se localizó la fuente primaria oficial que faltaba: comunicado NOAA/NASA del 04-11-2026. Reporta el séptimo mayor agujero por área media estacional en 48 años; 9.6 millones de millas² de promedio (7-sep a 13-oct), máximo de 10.5 millones de millas² el 18-sep y mínimo de 105 DU sobre el Polo Sur el 17-oct. La explicación atribuye el tamaño inusual al vórtice polar y conserva la lectura de recuperación a largo plazo por el Protocolo de Montreal.
+- La señal cambia de `PENDING_SOURCE` a `SEÑAL_TREND_CON_FUENTE_PRIMARIA`, pero no entra a la shortlist de cinco ni se convierte en `DATO_DIA`: la fuente tiene 23 días y no satisface la ventana de 48 h. No se crea storyboard ni se asigna slot.
+- **EJECUTADO y VERIFICADO:** radar actualizado y leído de vuelta; commit `6c82ca9b80a2a518a0c8e05560380ca7ff5a9f69`, blob `dca4d3a89d5d19e4fbf6ba58920093f2a0e9fcb2`.
+- Los diez RSS de `scripts/tendencias.py` y Google Trends RSS fueron intentados por apertura directa; se conservan los errores exactos en el radar. El respaldo HTML sí abrió. No se afirma ejecución local de `tendencias.py`.
