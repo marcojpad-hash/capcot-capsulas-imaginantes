@@ -1,0 +1,351 @@
+{
+  "_schema": "capcot.storyboard.v4",
+  "project_id": "2026-11-27_dato-pav1-bacteriofago",
+  "fecha_objetivo": "2026-11-27",
+  "slot_local": "07:00",
+  "timezone": "America/Mexico_City",
+  "serie": "Datos y ociosidades",
+  "title": "Un virus frenó una bacteria",
+  "titulo": "Un virus frenó una bacteria",
+  "language": "es-MX",
+  "aspect_ratio": "9:16",
+  "target_duration_seconds": 84,
+  "estructura": "pregunta",
+  "audience": "Público general LATAM; divulgación científica; sin extrapolaciones clínicas ni agrícolas no probadas",
+  "occasion": "Cápsula matutina de ciencia y naturaleza; no corresponde al slot fijo de dato del día de las 23:30",
+  "slot_window": "06:30–07:30",
+  "hook": "Un virus frenó una bacteria.",
+  "hook_word_count": 5,
+  "resumen": "Un bacteriófago llamado PAV1 infecta Allorhizobium vitis, bacteria asociada con la agalla de la corona en vid. El artículo reporta inhibición in vitro superior al 98% y menor incidencia en ensayos preventivos con tomate; no demuestra eficacia de campo en viñedos.",
+  "narrative_contract": {
+    "central_question": "¿Puede un virus que infecta bacterias ayudar a frenar una enfermedad vegetal sin infectar la planta?",
+    "promise": "Explicar qué es PAV1, dónde se aisló y qué resultados obtuvo primero en laboratorio y después en tomate.",
+    "stakes": "La bacteria está asociada con la agalla de la corona en vid; un agente de biocontrol podría ser útil, pero el estudio aún no prueba eficacia en viñedos ni a escala de campo.",
+    "scientific_turn": "PAV1 es el primer bacteriófago descrito para Allorhizobium vitis; inhibió más del 98% del crecimiento de la cepa probada in vitro y redujo la incidencia en aplicaciones preventivas sobre tomate.",
+    "evidence_limit": "La inhibición >98% corresponde a un ensayo in vitro; los porcentajes de incidencia son de tomate a 25 días; no se evaluó curación de plantas ya enfermas ni eficacia de campo en viñedos; el artículo no publica coordenadas de los ensayos en tomate.",
+    "payoff": "El virus abre una vía experimental de biocontrol, pero la evidencia termina en laboratorio y tomate: la apertura se resuelve sin prometer una solución ya disponible para viñedos."
+  },
+  "trend_source": {
+    "termino": "PAV1, primer bacteriófago descrito contra Allorhizobium vitis",
+    "medio": "Frontiers in Plant Science",
+    "fecha_publicacion": "2026-11-26",
+    "url": "https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2026.2008228/full",
+    "tipo": "artículo original de investigación",
+    "status": "CANDIDATO_PRINCIPAL"
+  },
+  "editorial_status": "PROPUESTA_PENDIENTE_DE_GROK",
+  "arco": "Un virus aparece en aguas residuales; se identifica como bacteriófago de un patógeno vegetal; la actividad de laboratorio se contrasta con un ensayo preventivo en tomate; el cierre limita la extrapolación a viñedos y campo.",
+  "linea_tematica_provisional": "Naturaleza / bichos",
+  "estilo_id": "microscopio_psicodelico",
+  "estilo_visual": "Microscopia psicodélica",
+  "visual_identity": {
+    "style_id": "microscopio_psicodelico",
+    "style_name": "Microscopia psicodélica",
+    "prompt_base": "1960s psychedelic poster art, flowing organic shapes, vibrant complementary colors, microscopic organisms as large central motif, simple swirling background, illustrated, not photorealistic, vertical 9:16, no text",
+    "palette": "magenta, cian, amarillo limón, violeta y azul profundo; contraste alto para separar fago y bacteria",
+    "lighting": "luz fluorescente lateral con fondo oscuro; sin brillo que convierta al fago en una célula vegetal",
+    "texture": "grano de serigrafía y formas orgánicas fluidas",
+    "composition": "organismos ampliados en capas; bacteriófago claramente separado de la bacteria hospedera; una idea central por plano",
+    "negative_prompt": "fotorealismo, texto, logos, virus infectando células vegetales, plantas deformes, gore, claims visuales de curación o eficacia de campo",
+    "reference_assets": [],
+    "seed": null,
+    "seed_policy": "No asignar semilla hasta producción; mantener paleta, escala y morfología del bacteriófago consistentes entre escenas"
+  },
+  "typography_identity": {
+    "font_family": "DejaVu Sans",
+    "font_weight": "700 para gancho; 400 para subtítulos",
+    "title_style": "Máximo seis palabras; visible desde frame 0 en postproducción",
+    "subtitle_style": "Bloques de máximo tres palabras; zona segura inferior",
+    "hierarchy": "Gancho > dato/etiqueta > subtítulos",
+    "animation": "Un movimiento por plano; tipografía en postproducción"
+  },
+  "voice": {
+    "engine": "edge-tts",
+    "voice_id": "es-MX-JorgeNeural",
+    "language": "es-MX",
+    "rate": "+7%",
+    "pitch": "-2Hz",
+    "pad_seconds": 0.3,
+    "modo_pausas": "continuo"
+  },
+  "sources": [
+    {
+      "id": "SRC-001",
+      "cita_corta": "Sabri et al. (2026). Discovery of the first bacteriophage infecting Allorhizobium vitis and its potential for grapevine crown gall biocontrol. Frontiers in Plant Science 17. DOI: 10.3389/fpls.2026.2008228.",
+      "url": "https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2026.2008228/full",
+      "doi": "10.3389/fpls.2026.2008228",
+      "accessed": "2026-11-27",
+      "publication_date": "2026-11-26",
+      "supports": [
+        "PAV1 es el primer bacteriófago descrito que infecta Allorhizobium vitis.",
+        "Allorhizobium vitis es el agente causal de la agalla de la corona y un patógeno importante de la vid.",
+        "PAV1 inhibió más del 98% del crecimiento de la cepa probada en 48 horas in vitro.",
+        "A los 25 días, la incidencia en tomate fue 83.3% en controles, 46.7% con inyección preventiva del tallo y 50.0% con aspersión preventiva.",
+        "PAV1 se aisló de una muestra de aguas residuales recogida en noviembre de 2025 en la entrada de la planta municipal de tratamiento de Bari, Italia, coordenadas 41.1081 N, 16.2606 E."
+      ],
+      "verification_status": "VERIFICADO_URL"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "S01",
+      "arc": "hook_medias_res",
+      "duration_seconds": 9,
+      "narration": "Un virus frenó una bacteria. No atacó a una planta: atacó al microbio que causa la agalla de la corona en la vid.",
+      "on_screen_text": "Virus vs bacteria",
+      "visual_description": "Un bacteriófago se aproxima a una bacteria fitopatógena; la planta de vid aparece al fondo como contexto, sin mostrar al virus atacándola.",
+      "image_prompt": "1960s psychedelic poster art, flowing organic shapes, vibrant complementary colors, microscopic organisms as large central motif, simple swirling background, illustrated, not photorealistic, vertical 9:16, no text; Un bacteriófago se aproxima a una bacteria fitopatógena; la planta de vid aparece al fondo como contexto, sin mostrar al virus atacándola.; keep bacteriophage morphology distinct from plant cells; no text, no labels, no logos",
+      "ambiente": "Zumbido grave y breve, ambiente microscópico",
+      "sfx": "Impacto seco al encajar el fago en la bacteria",
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "microscopio_psicodelico",
+      "dramatic_beat": "Contradicción inmediata: un virus frena a una bacteria",
+      "scene_function": "Abrir con la anomalía y establecer el patógeno vegetal",
+      "causal_bridge_from_previous": "La pregunta nace del contraste entre virus y enfermedad de plantas",
+      "question_state": "¿Qué organismo está atacando el virus?",
+      "reason_to_continue": "La audiencia necesita saber si el virus afecta a la planta o a su bacteria",
+      "new_information": "PAV1 se dirige a una bacteria asociada con la agalla de la corona"
+    },
+    {
+      "id": "S02",
+      "arc": "desarrollo",
+      "duration_seconds": 9,
+      "narration": "Se llama PAV1: un bacteriófago, es decir, un virus que infecta bacterias. Lo aislaron en noviembre de 2025 en la entrada de una planta de aguas residuales de Bari, Italia.",
+      "on_screen_text": "Aguas residuales",
+      "visual_description": "Mapa de Bari con un único punto de aislamiento; la planta de tratamiento se etiqueta como origen de la muestra, no como lugar de ensayo en tomate.",
+      "image_prompt": "1960s psychedelic poster art, flowing organic shapes, vibrant complementary colors, microscopic organisms as large central motif, simple swirling background, illustrated, not photorealistic, vertical 9:16, no text; Mapa de Bari con un único punto de aislamiento; la planta de tratamiento se etiqueta como origen de la muestra, no como lugar de ensayo en tomate.; keep bacteriophage morphology distinct from plant cells; no text, no labels, no logos",
+      "ambiente": "Ambiente acuático bajo, sin música generada",
+      "sfx": "Pulso breve al aparecer el punto",
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "microscopio_psicodelico",
+      "dramatic_beat": "Ubicar el origen sin confundirlo con el ensayo",
+      "scene_function": "Explicar qué es un bacteriófago y dónde se aisló PAV1",
+      "causal_bridge_from_previous": "El origen de la muestra conecta la historia con un sitio real",
+      "question_state": "¿Qué encontró el equipo en esa muestra?",
+      "reason_to_continue": "El punto geográfico vuelve verificable el origen del fago",
+      "new_information": "PAV1 fue aislado en noviembre de 2025 en Bari, Italia",
+      "capa": {
+        "tipo": "mapa",
+        "titulo": "Sitio de aislamiento de PAV1 en Bari, Italia",
+        "region": null,
+        "puntos": [
+          {
+            "id": "bari_isolation",
+            "label": "Entrada de la planta municipal de tratamiento de aguas residuales, Bari",
+            "lat": 41.1081,
+            "lon": 16.2606,
+            "precision": "Coordenada publicada en el artículo; sitio de aislamiento del fago, no localización del ensayo en tomate"
+          }
+        ],
+        "areas": [],
+        "fuente": "SRC-001",
+        "precision_note": "El artículo publica esta coordenada para el punto de aislamiento de PAV1. No se publican coordenadas de los ensayos preventivos en tomate; no se dibuja un segundo sitio."
+      }
+    },
+    {
+      "id": "S03",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "En laboratorio, contra la cepa probada de Allorhizobium vitis, PAV1 inhibió más del 98 por ciento del crecimiento en 48 horas.",
+      "on_screen_text": "Más del 98%",
+      "visual_description": "Placa de cultivo estilizada con bacterias y partículas de fago; gráfico numérico aislado que distingue inhibición de crecimiento in vitro de eficacia vegetal.",
+      "image_prompt": "1960s psychedelic poster art, flowing organic shapes, vibrant complementary colors, microscopic organisms as large central motif, simple swirling background, illustrated, not photorealistic, vertical 9:16, no text; Placa de cultivo estilizada con bacterias y partículas de fago; gráfico numérico aislado que distingue inhibición de crecimiento in vitro de eficacia vegetal.; keep bacteriophage morphology distinct from plant cells; no text, no labels, no logos",
+      "ambiente": "Ambiente de laboratorio, tono sostenido",
+      "sfx": "Pulso ascendente al aparecer el porcentaje",
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "microscopio_psicodelico",
+      "dramatic_beat": "Primer resultado cuantitativo",
+      "scene_function": "Mostrar el efecto de PAV1 contra la cepa probada",
+      "causal_bridge_from_previous": "La pregunta cambia de origen a potencia experimental",
+      "question_state": "¿La actividad se limita a la placa?",
+      "reason_to_continue": "El resultado de laboratorio justifica el siguiente ensayo vegetal",
+      "new_information": "Inhibición superior al 98% en 48 horas in vitro",
+      "capa": {
+        "tipo": "dato",
+        "valor": ">98%",
+        "etiqueta": "Inhibición del crecimiento bacteriano in vitro a 48 h",
+        "detalle": "Resultado contra la cepa probada de Allorhizobium vitis; no equivale a eficacia de campo.",
+        "fuente": "SRC-001"
+      }
+    },
+    {
+      "id": "S04",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "Después probaron aplicaciones preventivas en plantas de tomate, antes de exponerlas a la bacteria. La prueba no fue en viñedos.",
+      "on_screen_text": "Prueba preventiva",
+      "visual_description": "Bandejas de plantas de tomate en condiciones experimentales; aplicación de fago antes del desafío bacteriano, sin mostrar coordenadas no publicadas.",
+      "image_prompt": "1960s psychedelic poster art, flowing organic shapes, vibrant complementary colors, microscopic organisms as large central motif, simple swirling background, illustrated, not photorealistic, vertical 9:16, no text; Bandejas de plantas de tomate en condiciones experimentales; aplicación de fago antes del desafío bacteriano, sin mostrar coordenadas no publicadas.; keep bacteriophage morphology distinct from plant cells; no text, no labels, no logos",
+      "ambiente": "Invernadero suave, hojas y ventilación",
+      "sfx": "Rociado breve y discreto",
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "microscopio_psicodelico",
+      "dramatic_beat": "Cambio de escala: de laboratorio a planta",
+      "scene_function": "Introducir el ensayo in planta y su especie hospedera experimental",
+      "causal_bridge_from_previous": "La evidencia pasa de bacteria en cultivo a incidencia de enfermedad",
+      "question_state": "¿Cuánto cambió la incidencia?",
+      "reason_to_continue": "El público necesita comparar el control con las aplicaciones",
+      "new_information": "Los ensayos preventivos se realizaron en tomate, no en viñedo"
+    },
+    {
+      "id": "S05",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "A los 25 días, la agalla apareció en 83.3 por ciento de los controles sin tratar; con inyección del tallo, bajó a 46.7 por ciento.",
+      "on_screen_text": "83.3% → 46.7%",
+      "visual_description": "Gráfico de barras con incidencia a 25 días: control sin tratar 83.3%, inyección preventiva del tallo 46.7%, aspersión preventiva 50.0%.",
+      "image_prompt": "1960s psychedelic poster art, flowing organic shapes, vibrant complementary colors, microscopic organisms as large central motif, simple swirling background, illustrated, not photorealistic, vertical 9:16, no text; Gráfico de barras con incidencia a 25 días: control sin tratar 83.3%, inyección preventiva del tallo 46.7%, aspersión preventiva 50.0%.; keep bacteriophage morphology distinct from plant cells; no text, no labels, no logos",
+      "ambiente": "Pulso de laboratorio moderado",
+      "sfx": "Tres golpes suaves al aparecer las barras",
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "microscopio_psicodelico",
+      "dramatic_beat": "El dato principal del ensayo vegetal",
+      "scene_function": "Comparar las incidencias reportadas por tratamiento",
+      "causal_bridge_from_previous": "El contraste cuantifica el efecto preventivo en tomate",
+      "question_state": "¿La otra aplicación produjo un resultado similar?",
+      "reason_to_continue": "La inyección reduce la incidencia respecto del control; falta contrastar la aspersión",
+      "new_information": "La incidencia con inyección preventiva fue 46.7% frente a 83.3% del control",
+      "capa": {
+        "tipo": "grafico",
+        "titulo": "Incidencia de agalla en tomate a 25 días",
+        "eje_y": "Incidencia (%)",
+        "series": [
+          {
+            "label": "Control sin tratar",
+            "value": 83.3
+          },
+          {
+            "label": "Inyección preventiva",
+            "value": 46.7
+          },
+          {
+            "label": "Aspersión preventiva",
+            "value": 50
+          }
+        ],
+        "unidad": "%",
+        "fuente": "SRC-001",
+        "precision_note": "Porcentajes de incidencia reportados para tomate a 25 días; no son porcentajes de curación ni resultados de campo en vid."
+      }
+    },
+    {
+      "id": "S06",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "Con aspersión foliar quedó en 50 por ciento. Son incidencias en tomate, no porcentajes de curación ni resultados de campo.",
+      "on_screen_text": "Tomate, no vid",
+      "visual_description": "Dos rótulos visuales separan claramente el ensayo de tomate de la enfermedad de la vid; el gráfico conserva el 50.0% de incidencia tras aspersión preventiva.",
+      "image_prompt": "1960s psychedelic poster art, flowing organic shapes, vibrant complementary colors, microscopic organisms as large central motif, simple swirling background, illustrated, not photorealistic, vertical 9:16, no text; Dos rótulos visuales separan claramente el ensayo de tomate de la enfermedad de la vid; el gráfico conserva el 50.0% de incidencia tras aspersión preventiva.; keep bacteriophage morphology distinct from plant cells; no text, no labels, no logos",
+      "ambiente": "Ambiente de invernadero",
+      "sfx": "Transición de hoja a gráfico",
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "microscopio_psicodelico",
+      "dramatic_beat": "Evitar la extrapolación indebida",
+      "scene_function": "Aclarar el resultado de aspersión y el tipo de medición",
+      "causal_bridge_from_previous": "La comparación ya no puede confundirse con curación o eficacia de campo",
+      "question_state": "¿Qué no demuestra este estudio?",
+      "reason_to_continue": "La evidencia muestra incidencia, no curación ni despliegue comercial",
+      "new_information": "La aspersión foliar dejó 50.0% de incidencia en tomate"
+    },
+    {
+      "id": "S07",
+      "arc": "cierre_historia",
+      "duration_seconds": 10,
+      "narration": "El giro importa: la bacteria afecta la vid, pero el ensayo vegetal fue en tomate. El artículo no ofrece coordenadas de esos ensayos.",
+      "on_screen_text": "Límite de evidencia",
+      "visual_description": "La vid se muestra como planta afectada por la bacteria; el tomate aparece en un recuadro separado como planta experimental; no se conectan ambos sitios con una ruta inventada.",
+      "image_prompt": "1960s psychedelic poster art, flowing organic shapes, vibrant complementary colors, microscopic organisms as large central motif, simple swirling background, illustrated, not photorealistic, vertical 9:16, no text; La vid se muestra como planta afectada por la bacteria; el tomate aparece en un recuadro separado como planta experimental; no se conectan ambos sitios con una ruta inventada.; keep bacteriophage morphology distinct from plant cells; no text, no labels, no logos",
+      "ambiente": "Ambiente sobrio, baja el pulso",
+      "sfx": "Corte breve al separar vid y tomate",
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "microscopio_psicodelico",
+      "dramatic_beat": "Giro de evidencia: huésped de la enfermedad y huésped del ensayo no son lo mismo",
+      "scene_function": "Exponer el límite antes de concluir",
+      "causal_bridge_from_previous": "El público debe distinguir potencial de demostración",
+      "question_state": "¿Hasta dónde llega la evidencia?",
+      "reason_to_continue": "La falta de ensayo en viñedos y de coordenadas para tomate impide afirmar eficacia de campo",
+      "new_information": "El artículo no ofrece coordenadas de los ensayos en tomate y no reporta una prueba de campo en viñedo"
+    },
+    {
+      "id": "S08",
+      "arc": "reflexion_o_pregunta",
+      "duration_seconds": 10,
+      "narration": "PAV1 podría servir como herramienta de biocontrol, pero falta probarlo en cultivos reales y confirmar su desempeño fuera del laboratorio. Esto fue Datos y ociosidades.",
+      "on_screen_text": "Biocontrol en prueba",
+      "visual_description": "Un bacteriófago junto a una bacteria, con una vid al fondo como horizonte de investigación; la planta no aparece curada ni protegida comercialmente.",
+      "image_prompt": "1960s psychedelic poster art, flowing organic shapes, vibrant complementary colors, microscopic organisms as large central motif, simple swirling background, illustrated, not photorealistic, vertical 9:16, no text; Un bacteriófago junto a una bacteria, con una vid al fondo como horizonte de investigación; la planta no aparece curada ni protegida comercialmente.; keep bacteriophage morphology distinct from plant cells; no text, no labels, no logos",
+      "ambiente": "Ambiente final abierto y tenue",
+      "sfx": "Resolución corta, sin fanfarria",
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "microscopio_psicodelico",
+      "dramatic_beat": "Payoff: potencial sin promesa",
+      "scene_function": "Cerrar con el alcance real del hallazgo",
+      "causal_bridge_from_previous": "La apertura se resuelve: un virus sí puede frenar bacterias, pero el salto a campo falta",
+      "question_state": "¿Qué faltaría probar después?",
+      "reason_to_continue": "La historia termina con una posibilidad experimental y su límite",
+      "new_information": "El biocontrol es potencial; falta validación en cultivos reales"
+    }
+  ],
+  "cortinilla_fuentes": {
+    "duration_seconds": 6,
+    "titulo": "Fuentes",
+    "aviso": "Fuente primaria: Frontiers in Plant Science; coordenada publicada para el sitio de aislamiento de PAV1.",
+    "firma": "Datos y ociosidades",
+    "source_ids": [
+      "SRC-001"
+    ]
+  },
+  "audio": {
+    "music_asset": null,
+    "music_plan": "No generar audio en preproducción; sugerencia ambiental pendiente de decisión de producción.",
+    "music_license": null,
+    "note": "Ambiente y SFX están descritos por escena; no se creó ni sintetizó audio."
+  },
+  "export": {
+    "resolution": "1080x1920",
+    "fps": 30,
+    "render_status": "NOT_GENERATED"
+  },
+  "publicacion": {
+    "status": "PENDIENTE_DECISION_GROK",
+    "platforms": [
+      "YouTube Shorts",
+      "TikTok",
+      "Facebook Reels"
+    ],
+    "note": "No publicar ni programar desde preproducción textual."
+  },
+  "approved_assets": [],
+  "estado": "BORRADOR_EN_PROYECTOS_NO_APTO_PARA_PROMOCION",
+  "production_mode": "TEXT_ONLY_PREPRODUCTION",
+  "validation_notes": [
+    "No se crea narrative_qa: el investigador no audita su propia narración. Requiere lectura independiente en frío de narración concatenada.",
+    "La página primaria de Frontiers está accesible y muestra DOI 10.3389/fpls.2026.2008228; el acceso directo a doi.org no estuvo disponible en la herramienta. Crossref y scripts/validar_storyboard.py --check-doi quedan pendientes.",
+    "El prechequeo de estructura se hizo sobre el esquema y campos requeridos; el validador Python real no se ejecutó porque el entorno no pudo recuperar GitHub (clon/Raw no accesibles). No equivale a PASS estructural.",
+    "El slot 07:00 está libre en la ventana 06:30–07:30 según proyectos, colas, salidas, rotación y main consultados. El slot fijo 23:30 del mismo día está ocupado por Stubbs en main."
+  ],
+  "risk_notes": [
+    "No afirmar eficacia de PAV1 en viñedos: el ensayo vegetal reportado fue en tomate.",
+    "El >98% corresponde a inhibición in vitro contra la cepa probada, no a control de campo.",
+    "Los porcentajes 83.3%, 46.7% y 50.0% son incidencias en tomate a 25 días, no porcentajes de curación.",
+    "El artículo no publica coordenadas de los ensayos en tomate; el único punto del mapa es el lugar de aislamiento de PAV1 en Bari.",
+    "No afirmar que PAV1 cura plantas ya enfermas ni que está listo para uso comercial."
+  ],
+  "source_policy": "Una fuente primaria para todas las afirmaciones; no extrapolar del ensayo en tomate a viñedos; el mapa usa solo la coordenada publicada del sitio de aislamiento."
+}
