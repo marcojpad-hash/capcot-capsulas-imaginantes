@@ -371,5 +371,24 @@
     "REVISION_INDEPENDIENTE_PENDIENTE",
     "RECEPCION_GROK_NO_CONFIRMADA",
     "NO_APTO_PARA_PROMOCION"
-  ]
+  ],
+  "narrative_qa": {
+    "status": "PASS",
+    "score": 93,
+    "review_basis": "lectura_en_frio_solo_narracion",
+    "reviewer_role": "auditor_capcot_independiente",
+    "reviewer_model": "GPT-6",
+    "reviewed_at": "2026-11-27T12:32:34-06:00",
+    "checks": {
+      "pregunta_central_reconstruible": true,
+      "apertura_in_medias_res": true,
+      "progresion_por_escena": true,
+      "transiciones_causales": true,
+      "giro_cientifico_explicado": true,
+      "limite_evidencia_explicito": true,
+      "payoff_cierre_apertura": true
+    },
+    "critical_flags": [],
+    "notes": "Pasada posterior y separada de la redacción. Se ocultaron título, resumen, arco, notas y narrative_contract; se leyó únicamente la narración concatenada. La pregunta reconstruible es cómo una instrucción genética de un liquen puede modificar la respuesta de un cultivo a la sequía. La secuencia conecta la deshidratación, el origen del gen, su función como factor de transcripción, los cambios observados en raíces y estomas y los ensayos de campo con riego limitado. El giro científico se explica sin atribuir al gen una función de aporte de agua. Los porcentajes se contextualizan frente a controles y el cierre paga la apertura; se limita el alcance al estado experimental, no comercial."
+  }
 }
