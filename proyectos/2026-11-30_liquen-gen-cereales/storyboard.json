@@ -143,13 +143,47 @@
       "question_state": "¿Qué hace ese gen cuando llega a una planta?",
       "reason_to_continue": "Todavía falta explicar cómo puede cambiar la respuesta al agua",
       "new_information": "El gen EpTFIIAγ procede del hongo Endocarpon pusillum, formador de líquenes",
-      "visual_description": "El hongo del liquen entrega una cinta genética a una plántula de trigo; transición de laboratorio, no transferencia natural",
+      "visual_description": "El hongo del liquen entrega una cinta genética a una plántula de trigo; transición de laboratorio, no transferencia natural Superponer un mapa esquemático de China con los cuatro sitios de ensayo publicados; sin rutas ni pines adicionales.",
       "image_prompt": "1930s rubber hose cartoon animation style, hand-inked bouncy characters with pie-cut eyes and white gloves, watercolor painted backgrounds, film grain, slight vignette, sepia-tinted vintage colors, single large character centered, simple background, flat illustrated, not photorealistic, vertical 9:16, no text, close-up of a lichen-forming fungus character handing a small glowing gene ribbon to a wheat seedling in a simple laboratory vignette, hand-inked, no text",
       "source_ids": [
         "SRC-001"
       ],
       "ambiente": "Ambiente de laboratorio tenue y seco",
-      "sfx": "Pequeño clic al pasar la cinta genética"
+      "sfx": "Pequeño clic al pasar la cinta genética",
+      "capa": {
+        "tipo": "mapa",
+        "region": [
+          107.5667,
+          117.1333,
+          33.7667,
+          39.05
+        ],
+        "puntos": [
+          {
+            "nombre": "Yangling",
+            "lat": 34.2667,
+            "lon": 108.0667
+          },
+          {
+            "nombre": "Heyang",
+            "lat": 35.7167,
+            "lon": 110.0333
+          },
+          {
+            "nombre": "Cangzhou",
+            "lat": 38.55,
+            "lon": 116.6333
+          },
+          {
+            "nombre": "Linfen",
+            "lat": 36.9333,
+            "lon": 112.5667
+          }
+        ],
+        "titulo": "Cuatro sitios de ensayo de trigo en China",
+        "fuente": "SRC-001 — Métodos del artículo primario, ensayos de campo",
+        "precision_note": "Los cuatro puntos reproducen coordenadas publicadas en grados y minutos, convertidas a grados decimales. La región del mapa es una ventana de visualización calculada desde esos puntos con margen de 0.5°, no un límite administrativo ni una ubicación experimental."
+      }
     },
     {
       "id": "S03",
@@ -329,7 +363,9 @@
     ],
     "note": "No publicar ni programar desde preproducción textual."
   },
-  "validation_notes": "Borrador de investigador. No contiene narrative_qa; requiere revisión en frío independiente posterior. DOI/Crossref pendiente por fallo DNS del resolver.",
+  "validation_notes": [
+    "Corrección estructural 2026-11-27: se añadió la capa mapa a S02 con las cuatro coordenadas de ensayos de trigo publicadas en Métodos; la extensión es solo ventana de visualización derivada. No cambia narración ni claims."
+  ],
   "risk_notes": [
     "DOI PENDING_CROSSREF",
     "REVISION_INDEPENDIENTE_PENDIENTE",
