@@ -179,7 +179,7 @@ La afirmación anterior de que no existía una ejecución posterior a `457059194
 
 La comparación de blobs entre el commit del run y el HEAD actual de esta rama confirma que no cambiaron desde esa ejecución:
 - `proyectos/2026-11-18_dato-kuroshio-puente-atmosferico/storyboard.json`: `2046152ade90fffaf9527d180e13cc5f6009fb60`
-- `scripts/validar_storyboard.py`: `c1d7a83f9d5c9e38f59a46d3b7b2b1a83a6f6a2c`
-- `.github/workflows/validar-kuroshio.yml`: `f3e2b6f4b7c2f3a8d1e5c0b8a2d1e6f5c4b3a291`
+- `scripts/validar_storyboard.py`: `72b0e3e9ad7f9cd9a436be86880cedc6889f3e35`
+- `.github/workflows/validar-kuroshio.yml`: `e8151c8eb1ee5a0893f3f800f4c625887427ecde`
 
 La fuente primaria conserva `doi_verification_status=DOI_VISIBLE_EN_PAGINA_EDITORIAL_Y_PDF; RESOLVEDOR_CROSSREF_NO_CONFIRMADO`. Por tanto, el DOI continúa pendiente y el estado documental sigue siendo **BORRADOR_EN_PROYECTOS_NO_APTO_PARA_PROMOCION**. No se modifica la narración, los claims, el estado Grok ni la decisión editorial.
