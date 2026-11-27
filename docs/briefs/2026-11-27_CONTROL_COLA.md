@@ -272,3 +272,42 @@ No se modificaron `main`, `data/*.json`, secretos, permisos, estados Grok, progr
 
 **Resultado del corte:** cero promociones y cero nuevos storyboards. PAV1 sigue fuera de promoción por QA independiente ausente y Crossref no confirmado; Intermareales no se redispatcha por conflicto y procesamiento previo.
 
+## Run 11 — 2026-11-27 07:59 CDMX
+
+### Inventario, rotación y slot
+
+- Se releyeron el inventario/control del 27-11, el plan semanal de main, `data/publicaciones.json`, `data/rehechos_2026-11-22.json`, `data/horarios.json`, la rotación y los storyboards de proyectos activos.
+- El slot 2026-11-28 23:30 está ocupado en main por `2026-11-23_animal-tama`; no se reutiliza. El slot 2026-11-27 23:30 también tiene procesamiento previo (Stubbs), según el inventario vigente.
+- El proyecto de rapaces de feature ocupa 2026-11-30 07:00. Su estructura/estilo son `pregunta` / `papel_rasgado_capas`.
+- Para 2026-11-30 17:00 no se encontró registro coincidente en `main/data/publicaciones.json` (sin registros 29–30 nov), el plan semanal consultado termina el 28-11, y las rutas main de proyecto/cola/salida consultadas para el proyecto de rapaces devolvieron 404. El horario maestro mantiene activa la ventana 16:30–18:00. Resultado: slot 17:00 sin conflicto encontrado en las fuentes de main consultadas; no se afirma ausencia absoluta fuera de esas fuentes.
+- El día 30 tiene un borrador existente a las 07:00; el nuevo borrador de las 17:00 usa tema, estructura `comparacion`, estilo `rubber_hose_1930s` y cama `pulso` distintos. El cupo diario configurado es cinco; no se superó.
+- `data/rotacion.json` y `data/temas_del_dia.json` conservan fechas históricas antiguas. No se modificaron: `scripts/registro_editorial.py` inspecciona recursivamente storyboards en proyectos, cola de entrada, bloqueados y salidas para construir el registro vigente.
+
+### Investigación y storyboard nuevo
+
+- Se probaron los diez RSS de `scripts/tendencias.py` y Google Trends RSS México; los once fallaron con `URLError(gaierror(-3, 'Temporary failure in name resolution'))`.
+- Respaldo oficial: Google Trends México HTML mostró 249 tendencias en 24 h; el primer bloque de 25 no ofreció tema científico.
+- El radar 2026-11-27 se actualizó con tres artículos primarios nuevos: EpTFIIAγ/cereales, m⁶A/YTH.2 en malaria y cPLA₂/LTA₄H. Se separaron observación, cálculo, inferencia y recomendación.
+- Se creó `proyectos/2026-11-30_liquen-gen-cereales/storyboard.json` para 17:00, como `PROPUESTA_PENDIENTE_DECISION_GROK`, no como selección final.
+- Lectura de vuelta confirma: 200 palabras de narración, 8 escenas, 78 s de escenas + 6 s de cortinilla = 84 s; gancho de seis palabras; voz `es-MX-JorgeNeural`, rate +7%, pitch -2Hz; prompt_base del catálogo; mapa con cuatro coordenadas publicadas en los Métodos; capa de dato con el rango 19.4–32.8%; ambiente y SFX en cada escena.
+- `approved_assets=[]`, `export.render_status=NOT_GENERATED`, sin `asset_filename`, `asset_type`, rutas ni `export.filename`; `publicacion.status=PENDIENTE_DECISION_GROK`. No se creó `narrative_qa`, `ESTADO_EJECUCION`, medios ni placeholders.
+- Se ejecutó un prechequeo estructural propio sobre el contenido leído de vuelta; pasó los conteos y campos anteriores. **No equivale al validador oficial** `scripts/validar_storyboard.py`; ese validador no se ejecutó en este run.
+- La fuente primaria de Nature es accesible y el artículo incluye DOI, resultados y coordenadas de los cuatro sitios. Crossref REST y doi.org fallaron con el error DNS exacto; DOI = `PENDING_CROSSREF`.
+
+### Handoff y producción previa
+
+- `cola/entrada/2026-11-30_liquen-gen-cereales.json`: 404; no se creó entrada.
+- `cola/estado/2026-11-30_liquen-gen-cereales.json`: 404; se registra `RECEPCION_GROK_NO_CONFIRMADA`. No se creó ni modificó estado Grok.
+- `cola/bloqueados/2026-11-30_liquen-gen-cereales/storyboard.json`: 404.
+- `salidas/2026-11-30_liquen-gen-cereales/metadata.json`: 404.
+- Clasificación: `NOT_DISPATCHABLE`. Faltan revisión narrativa independiente PASS, validador estructural oficial y DOI/Crossref; recepción Grok no confirmada. No se promovió copia a cola.
+- El workflow `.github/workflows/capcot-grok-dispatch.yml` fue leído: el disparador de entrada atiende `cola/entrada/*.json` plano; el borrador permanece en `proyectos/` y no dispara handoff. No se disparó workflow ni se envió payload.
+- El intento de consultar directamente el run de Actions devolvió `DisabledError`; no se atribuyó una ejecución nueva. El último estado de Actions conservado en este control sigue siendo el registrado en el corte anterior.
+- No se inspeccionaron ni revelaron valores de secretos; no se nombran variables por no existir evidencia de que falten.
+
+### Resultado del run
+
+- **EJECUTADO:** borrador textual en `proyectos/`, radar y control actualizados.
+- **VERIFICADO:** lectura de vuelta del storyboard, radar y control; slot consultado; ausencia de cola/estado/salida para el nuevo ID.
+- **PENDIENTE:** DOI/Crossref, validador oficial, revisión narrativa independiente y recepción individual Grok.
+- **NO REALIZADO:** render, audio, imágenes, video, publicación, programación, dispatch, cambios en `data/*.json`, main, secretos o permisos.
