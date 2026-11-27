@@ -883,3 +883,54 @@ No se modificaron `data/*.json`, main, secretos, permisos, estados Grok, workflo
 
 Reintentar resolución Crossref/DOI y ejecutar `validar_storyboard.py --check-doi` cuando el entorno de ejecución esté disponible; hacer QA narrativo independiente solo sobre la narración concatenada; confirmar un slot activo en main y la rotación antes de crear otro storyboard. Mantener NBP sin redispatch y el 27-nov 23:30 bloqueado por Stubbs.
 
+
+
+## Actualización de auditoría y preproducción — 2026-11-26, 20:08 CDMX
+
+### Revisión narrativa independiente: intermareal 27-nov
+
+Se realizó una lectura posterior y separada usando únicamente la narración concatenada de `proyectos/2026-11-27_dato-registros-intermareales-1950s/storyboard.json`; título, resumen, arco, notas y `narrative_contract` quedaron fuera de la revisión. Resultado registrado y leído de vuelta: `PASS/90`, los siete checks true y `critical_flags=[]`. La anotación anterior `FAIL/0 / REVISION_INDEPENDIENTE_AUSENTE` queda supersedida por esta revisión real. La narración no cambió.
+
+El PASS no habilita promoción. El slot 27-nov 23:30 está reservado en main por `tools/animales_2026-11-23/specs_animales.py`, `SPECS['stubbs']`; no hay estado Grok confirmado (404), no se ejecutó el validador estructural ni `--check-doi`, y el proyecto permanece en `proyectos/` como `NOT_DISPATCHABLE`.
+
+### Nuevo borrador textual: 30-nov 07:00
+
+Se creó y leyó de vuelta `proyectos/2026-11-30_rapaces-clima-reino-unido/storyboard.json` (commit de archivo `050ee21b77f2072f013d20fc2addbe0fec86bf05`).
+
+- 9:16; 8 escenas; 182 palabras; 78 segundos de escenas + 6 de cortinilla = 84 segundos.
+- Gancho de cinco palabras: «El clima no reparte igual».
+- Voz `es-MX-JorgeNeural`, rate `+7%`, pitch `-2Hz`.
+- Estilo `papel_rasgado_capas`, `prompt_base` copiado del catálogo; no aparece en los proyectos recientes 20–27-nov.
+- Mapa del dominio Reino Unido con bounding box WGS84 derivado de límites ONS; no se inventan puntos GBIF ni hotspots de idoneidad.
+- Datos: halcón peregrino +73.5 ± 17.0% y águila de cola blanca −97.2 ± 6.1% de área adecuada bajo SSP5-8.5, 2061–2080; 13/16 especies con TSS medio <0.40.
+- `approved_assets=[]`, `export.render_status=NOT_GENERATED`, `publicacion.status=PENDIENTE_DECISION_GROK`. No hay `narrative_qa`, `ESTADO_EJECUCION`, archivos de medios, rutas ni nombres de assets.
+
+El slot 30-nov 07:00 cae dentro de la ventana activa 06:30–07:30 y no aparece ocupado en los registros de main inspeccionados. El lunes no es día preferente de mañana. Main reserva 30-nov 23:30 para Cher Ami. No se encontró `historial_youtube`; por tanto, el borrador no se promueve hasta reconciliar la programación externa. No se creó cola ni estado Grok; `RECEPCION_GROK_NO_CONFIRMADA`, `NOT_DISPATCHABLE`. El DOI del artículo Frontiers redirigió a la página oficial y la URL primaria está disponible; Crossref no quedó confirmado y `--check-doi` no se ejecutó. El validador estructural real tampoco se ejecutó: el conteo de palabras y duración es una comprobación manual, no una validación estructural.
+
+### Auditoría de slots activos
+
+| Fecha | 07:00 | 17:00 | 23:30 |
+|---|---|---|---|
+| 27-nov | Ocupado (microondas) | Ocupado | Ocupado (Stubbs) |
+| 28-nov | Ocupado | Ocupado (mareo) | Ocupado (Tama) |
+| 29-nov | Ocupado (Shakespeare) | Ocupado (gladiadores) | Ocupado (cabra) |
+| 30-nov | Sin ocupación encontrada en registros del repo; borrador creado | Sin confirmación | Ocupado (Cher Ami) |
+
+No se reasignó el intermareal del 27-nov ni se canceló o modificó ninguna programación de main.
+
+### Backlog 5–7 nov y producción preexistente
+
+Relectura de los 12 IDs canónicos: 2 conservan `PASS` y 10 conservan `FAIL`; no se repitió un PASS válido y no hay entradas planas de cola para esos 12. Las copias antiguas que ya estaban en `cola/bloqueados/` se conservaron. La cola de la rama contiene una sola entrada heredada anidada del 09-nov; no se creó una nueva.
+
+NBP de 26-nov permanece como procesamiento preexistente: `cola/entrada/2026-11-26_nbp-nanocables/` está anidada y main contiene `salidas/2026-11-26_nbp-nanocables/metadata.json` y `programacion.json` para 17:15. No se encontró MP4, `video_id` ni `cola/estado`; no redispatchar. El workflow `capcot-grok-dispatch.yml` solo observa `cola/entrada/*.json` en profundidad plana, por lo que ni el borrador 30-nov en `proyectos/` ni la entrada NBP anidada activan dispatch.
+
+### CI, PRs e Issues
+
+- Kuroshio workflow run `45898334232` terminó en `success`, pero valida Kuroshio, no el nuevo storyboard de rapaces, y no ejecuta `--check-doi`.
+- PR #3 continúa abierto y en borrador; no se hizo merge. PR #13, #14 y #15 continúan abiertos; no se fusionaron.
+- Issues #11 y #16 continúan abiertos. No se enviaron mensajes, no se reenviaron MP4 ni se reprogramó TikTok.
+- No se modificó ningún `data/*.json`, main, estado Grok, secreto, permiso, cola ni medio.
+
+### RSS y Google Trends
+
+La lectura de los feeds definidos en `scripts/tendencias.py` devolvió: ScienceDaily Ciencia/Salud/Espacio 400 `Unsupported content-type: application/xml`; Phys.org 400 `text/xml`; NASA/Nature/UNAM Global 400 `application/rss+xml`; ESA 404; EurekAlert/SINC y Google Trends RSS no accesibles mediante la interfaz. El respaldo oficial Google Trends HTML México mostró 277 tendencias, primera página de 25 dominada por deportes/Thanksgiving y sin candidato científico/natural claro. Se añadieron cinco candidatos primarios al radar; no se confundió candidato de investigación con selección editorial ni con recepción Grok.
