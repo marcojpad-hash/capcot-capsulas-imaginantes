@@ -249,3 +249,26 @@ No se modificaron `main`, `data/*.json`, secretos, permisos, estados Grok, progr
 - `horarios.json` de feature sigue actualizado al 09-nov, mientras que `main/data/horarios.json` está actualizado al 23-nov; para el slot actual se usó main en solo lectura. `horario_2026-11-08/09/10/11.json` son cortes históricos, no programación de hoy.
 - `balances_6h.json` termina el 28-oct; `reprogramacion_tt_fb_v4_2026-11-01_03.json` es del 31-oct con 10 slots históricos; `cola.json` contiene una sola entrada fallida del 31-oct (`2026-10-31_pardelas-jetlag-solar`, rc=1). `endscreens_rotacion.json` tiene última revisión 23-nov y conserva mapeos fijos/exclusiones; no se tocaron.
 - La discrepancia `total=35` vs 36 slots y los JSON atrasados quedan documentados, no corregidos, por la regla de solo lectura de `data/*.json`.
+
+
+## Revalidación operador único — 27-11-2026, 05:58 CDMX (run 10)
+
+### CAPCOT: comprobaciones ejecutadas
+
+- Rama de trabajo observada sin cambios de storyboard desde el corte anterior. No se repitieron QA PASS ni se reescribieron narraciones.
+- **PAV1:** lectura de vuelta: 187 palabras, 8 escenas, 78 s de escenas + 6 s de cortinilla = 84 s; voz `es-MX-JorgeNeural`, rate `+7%`, pitch `-2Hz`; `9:16`; prompt_base coincide exactamente con `scripts/estilos.json`; mapa y gráfico citan SRC-001; coordenada del aislamiento confirmada en Métodos del artículo primario; ambiente y SFX presentes en las ocho escenas; cierre hablado exacto; `approved_assets=[]`, `NOT_GENERATED`, sin rutas de medios. La revisión narrativa permanece **FAIL/0** con `REVISION_INDEPENDIENTE_AUSENTE`; no se atribuyó independencia al redactor.
+- PAV1: el artículo completo de Frontiers figura como publicado el 26-11-2026 y contiene el DOI y la coordenada del sitio de aislamiento. El resolver DOI redirigió a la URL editorial; Crossref REST no pudo consultarse por DNS. Se conserva `VERIFICADO_URL`, sin afirmar verificación Crossref. El validador estructural real no se ejecutó en este runtime.
+- PAV1: `cola/estado/<project_id>.json`, `cola/entrada/<project_id>.json` y `salidas/<project_id>/` no existen (404). Estado: `RECEPCION_GROK_NO_CONFIRMADA`; **NOT_DISPATCHABLE**. No se creó entrada.
+- **Intermareales:** PASS/90 independiente conservado sin repetirlo; 173 palabras, 8 escenas y 84 s totales. En main, `2026-11-23_animal-stubbs` ocupa el 27-11-2026 23:30 y su `render.log` registra 86.13 s; `capsula.mp4` devuelve 404 en el árbol. Se confirma `CONFLICTO_DE_SLOT_ENTRE_RAMAS`, `PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR` y `MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO`. El estado Grok del proyecto también devuelve 404; **NOT_DISPATCHABLE**.
+- El siguiente slot de 23:30, 28-11-2026, está reservado en main por `2026-11-23_animal-tama`; su render.log registra 85.11 s y el MP4 referenciado tampoco está en el árbol. No se usó ese slot.
+- Actions: el trabajador de main run `45937300053` terminó SUCCESS con `[trabajador] sin trabajo en cola`. El validador run `45898334232` terminó SUCCESS sobre Kuroshio, pero ejecutó `python scripts/validar_storyboard.py ...` sin `--check-doi`; no acredita DOI ni valida PAV1. No se disparó ningún workflow ni se envió payload.
+- `registro_editorial.py` recorre storyboards a cualquier profundidad y separa markers de `handoffs/grok_inbox`; esos markers no confirman recepción. `capcot-grok-dispatch.yml` acepta entradas planas `cola/entrada/*.json`, no carpetas anidadas.
+
+### Radar y continuidad
+
+- La copia local del script de tendencias falló en los diez RSS científicos y en Google Trends RSS con `URLError(gaierror(-3, 'Temporary failure in name resolution'))`. El respaldo oficial HTML de Google Trends México mostró 249 tendencias en las últimas 24 h; las primeras 25 no ofrecieron candidato científico/natural admisible.
+- El lote 5–7 nov, rapaces y los demás proyectos sin cambios de narración permanecen con sus QA previos; no se repitieron PASS ni se promovieron copias.
+- No se modificaron `data/*.json`, storyboards, cola, estados Grok, main, workflows, secretos o permisos. No hubo medios, publicaciones, dispatches ni consumo de créditos.
+
+**Resultado del corte:** cero promociones y cero nuevos storyboards. PAV1 sigue fuera de promoción por QA independiente ausente y Crossref no confirmado; Intermareales no se redispatcha por conflicto y procesamiento previo.
+
