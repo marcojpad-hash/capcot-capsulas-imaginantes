@@ -934,3 +934,12 @@ NBP de 26-nov permanece como procesamiento preexistente: `cola/entrada/2026-11-2
 ### RSS y Google Trends
 
 La lectura de los feeds definidos en `scripts/tendencias.py` devolvió: ScienceDaily Ciencia/Salud/Espacio 400 `Unsupported content-type: application/xml`; Phys.org 400 `text/xml`; NASA/Nature/UNAM Global 400 `application/rss+xml`; ESA 404; EurekAlert/SINC y Google Trends RSS no accesibles mediante la interfaz. El respaldo oficial Google Trends HTML México mostró 277 tendencias, primera página de 25 dominada por deportes/Thanksgiving y sin candidato científico/natural claro. Se añadieron cinco candidatos primarios al radar; no se confundió candidato de investigación con selección editorial ni con recepción Grok.
+
+
+### Trazabilidad de commits — corte 2026-11-26 20:08 CDMX
+
+- QA narrativo independiente del intermareal: `4ba5b682c9f4b294bd183018f71151d062f0ba3f`.
+- Storyboard rapaces 30-nov 07:00: creación `050ee21b77f2072f013d20fc2addbe0fec86bf05`; corrección del conteo manual `1c7e0e550fe3165559b1e7809b7894afa6943e6c`.
+- Radar de cinco candidatos y revalidación de slots/RSS: `01639c18571d87a696e4044f5938eaeaf1784576`.
+- Control de cola y auditoría: actualización principal `6c1236c7b936afd8f0c47bf50e1ada77e7723e65`; precisión del conteo `25f4733af9b3ff723a78aa9575aab924a645bd8c`.
+- HEAD de `feature/capcot-video-discovery-continuity` después de ese corte: `25f4733af9b3ff723a78aa9575aab924a645bd8c`.
