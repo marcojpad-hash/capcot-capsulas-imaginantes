@@ -450,4 +450,4 @@ Resultado: no hay promoción segura ni slot libre para el 27-11. No se generaron
 
 ### Trazabilidad de esta revalidación
 - El paquete `2026-11-27_bacterias-vuelta-oxigeno` apareció en main mediante commit `0e5bc28010ee93896d041ed4f4b5f592d43fe2b0` (2026-11-27 16:37:55Z). El worker `46009658666` había checkout `92d6c034b12a86785a5d12eb22e634f8453cd510` antes de ese commit; su log “sin trabajo en cola” no cubre el estado posterior.
-- La revalidación se registró en feature mediante control commit `SHA_NO_RECUPERADO` y radar commit `SHA_NO_RECUPERADO`. PR #3 permanece OPEN/DRAFT, head `ba69d5754c7e81e4f8761dde55741d0ee5ab79a4`, mergeable=false; el commit documental no produjo ejecuciones de workflow.
+- La revalidación se registró en feature mediante control commit `SHA_NO_RECUPERADO` y radar commit `SHA_NO_RECUPERADO`. PR #3 permanece OPEN/DRAFT; no se hizo merge. Los commits documentales `5a3ff4cfb7efe62c708b196af582bb3509ebb74d` y `b51f69465606f25880b1394cfcb0eabaaf04c6ef` se verificaron por lectura de vuelta; `fetch_commit_workflow_runs` para el commit radar devolvió cero ejecuciones.
