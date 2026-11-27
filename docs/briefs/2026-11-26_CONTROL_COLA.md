@@ -847,3 +847,39 @@ No se modificaron `data/*.json`, main, secretos, permisos, estados Grok, workflo
 - La narración, `narrative_qa=FAIL/0`, fecha y slot no se modificaron.
 - La misma especificación de main reserva también 28, 29 y 30-nov a las 23:30; no se reasigna el borrador a otra fecha sin nueva conciliación.
 - La nota de las 16:04 que describía el slot como libre en main queda supersedida por esta corrección.
+
+
+## Actualización de control — run 4, 2026-11-26 17:59 CDMX
+
+### Estado de ramas e inventario
+
+- Rama de trabajo CAPCOT: `feature/capcot-video-discovery-continuity`, HEAD observado antes de este registro: `8f9b7d...`. Inventario: 91 storyboards bajo `proyectos/`, 0 entradas planas `cola/entrada/*.json`, 1 entrada anidada, 139 archivos bajo `cola/bloqueados/`, 501 archivos bajo `salidas/`; no existe archivo `historial_youtube` en el árbol.
+- `main` HEAD observado: `836f77a78e7039128416fec64c9f7ce2070d4e07`. Su último commit cambió únicamente `data/endscreens_rotacion.json`; no cambió el calendario ni el paquete NBP.
+- La rama feature conserva una copia antigua de `data/horarios.json`; la referencia operativa consultada es `main`. En main, `data/horarios.json` declara dos ventanas activas (06:30–07:30 y 16:30–18:00) y el slot fijo de dato del día a las 23:30. `MAX_POR_DIA=5` es un techo, no autorización para llenar cinco slots.
+- `data/rotacion.json` termina en registros del 21-nov; `data/temas_del_dia.json` conserva claves de octubre; `data/publicaciones.json` tiene 62 registros y no contiene entradas para 26–30-nov. No se usa esa información antigua para declarar libre un slot.
+- `tools/animales_2026-11-23/specs_animales.py` reserva 23:30 del 26 al 30-nov: Thanksgiving, Stubbs, Tama, cabra y Cher Ami, respectivamente. En particular, el 27-nov 23:30 entra en conflicto con el storyboard intermareal de feature. No mover ni duplicar esas reservas.
+
+### Proyectos activos y handoff
+
+- `2026-11-27_dato-registros-intermareales-1950s`: storyboard en `proyectos/`, 174 palabras, 8 escenas, 84 s; tres extensiones geográficas proceden de registros GBIF. Mantiene `narrative_qa=FAIL/0` con `REVISION_INDEPENDIENTE_AUSENTE`; no hubo lectura independiente en frío. Slot 27-nov 23:30: `CONFLICTO_DE_SLOT_ENTRE_RAMAS` por reserva Stubbs en main. No hay copia en cola; `cola/estado/<id>.json` devuelve 404: `RECEPCION_GROK_NO_CONFIRMADA`. `NOT_DISPATCHABLE`. No promover ni reprogramar.
+- `2026-11-26_nbp-nanocables` existe en main en proyecto, cola anidada y salida. Su `programacion.json` declara `publish_at=2026-11-26T23:15:00Z` (17:15 CDMX), pero el paquete sigue marcado como privado y no se encontró MP4 ni video_id. El storyboard heredado tiene 7 escenas, 124 palabras y 73 s incluyendo cortinilla, y contiene referencias `asset_filename`/`export.filename`. Clasificación: `PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR`, `MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO`, `RECEPCION_GROK_NO_CONFIRMADA`, `NOT_DISPATCHABLE`. No se infiere publicación a partir de la hora programada.
+- El selector de `capcot-grok-dispatch.yml` consume `cola/entrada/*.json` a profundidad 1; no consume el árbol anidado de NBP ni borradores en `proyectos/`. `scripts/registro_editorial.py` sí inspecciona rutas recursivas, pero no convierte eso en recepción Grok. No se confirmó ausencia de secretos; no se inspeccionaron valores.
+- Lote 5–7-nov: el control previo registra 2 PASS y 10 FAIL entre los 12 IDs; el HEAD de feature no cambió desde esa auditoría. Se conserva ese estado y no se repite un PASS válido.
+- Issues: #11 continúa abierto con etiqueta `hecho`; #16 continúa abierto con pendientes declarados de 17 MP4, 10 resubidas TikTok y Pancho EN. No se enviaron mensajes ni se actuó en plataformas externas.
+
+### CI y workflows
+
+- PR #3 continúa abierto y en borrador; el run de análisis asociado `45903693527` terminó success. PR #15 continúa abierto y no mergeable.
+- Semgrep `45908463294`: failure con 37 hallazgos; el log no expone el detalle porque el SARIF no se subió. Gitleaks `45908463316`: success. No se declara resuelto Semgrep.
+- No se hizo dispatch manual de `capcot-grok-dispatch`, no se enviaron payloads ni se modificaron estados Grok. Las actualizaciones de este documento y del radar no tocan `cola/entrada`.
+
+### Fuentes recientes
+
+- El radar actualizado en el mismo commit registra cinco artículos primarios del 26-nov. Los DOI aparecen en sus páginas editoriales, pero Crossref/doi.org no entregó confirmación utilizable; quedan `PENDING_CROSSREF`. No se creó storyboard nuevo.
+- La página oficial Google Trends México mostró 1–25 de 292 tendencias para las últimas 24 h; la primera página no ofrece un tema científico/natural claro. Los 11 RSS de `scripts/tendencias.py` se reintentaron, pero la interfaz no entregó cuerpos individuales; no se atribuyen estados HTTP no observados.
+- No se creó medio, frame, imagen, voz, audio, video, render ni placeholder; no se publicó ni programó contenido, no se consumieron créditos y no se modificó `data/*.json`.
+
+### Siguiente compuerta mínima
+
+Reintentar resolución Crossref/DOI y ejecutar `validar_storyboard.py --check-doi` cuando el entorno de ejecución esté disponible; hacer QA narrativo independiente solo sobre la narración concatenada; confirmar un slot activo en main y la rotación antes de crear otro storyboard. Mantener NBP sin redispatch y el 27-nov 23:30 bloqueado por Stubbs.
+
