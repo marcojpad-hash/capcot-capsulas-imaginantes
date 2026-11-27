@@ -347,5 +347,26 @@
     "El artículo no publica coordenadas de los ensayos en tomate; el único punto del mapa es el lugar de aislamiento de PAV1 en Bari.",
     "No afirmar que PAV1 cura plantas ya enfermas ni que está listo para uso comercial."
   ],
-  "source_policy": "Una fuente primaria para todas las afirmaciones; no extrapolar del ensayo en tomate a viñedos; el mapa usa solo la coordenada publicada del sitio de aislamiento."
+  "source_policy": "Una fuente primaria para todas las afirmaciones; no extrapolar del ensayo en tomate a viñedos; el mapa usa solo la coordenada publicada del sitio de aislamiento.",
+  "narrative_qa": {
+    "status": "FAIL",
+    "score": 0,
+    "review_basis": "lectura_en_frio_solo_narracion",
+    "reviewer_role": "auditor_no_independiente",
+    "reviewer_model": "GPT-6",
+    "reviewed_at": "2026-11-27T04:23:21-06:00",
+    "checks": {
+      "pregunta_central_reconstruible": false,
+      "apertura_in_medias_res": false,
+      "progresion_por_escena": false,
+      "transiciones_causales": false,
+      "giro_cientifico_explicado": false,
+      "limite_evidencia_explicito": false,
+      "payoff_cierre_apertura": false
+    },
+    "critical_flags": [
+      "REVISION_INDEPENDIENTE_AUSENTE"
+    ],
+    "notes": "No existe evidencia verificable de un auditor independiente distinto del redactor. Esta pasada no acredita independencia; por la compuerta obligatoria se registra FAIL/0. No se modifica narración ni claims."
+  }
 }
