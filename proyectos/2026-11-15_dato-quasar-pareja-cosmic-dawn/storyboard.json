@@ -401,23 +401,25 @@
   "approved_assets": [],
   "narrative_qa": {
     "status": "FAIL",
-    "score": 82,
+    "score": 0,
     "review_basis": "lectura_en_frio_solo_narracion",
-    "reviewer_role": "auditor_capcot_independiente",
-    "reviewed_at": "2026-11-26T02:13:59-06:00",
+    "reviewer_role": "auditor_no_independiente",
+    "reviewer_model": "GPT-6",
+    "reviewed_at": "2026-11-27T00:02:03-06:00",
     "checks": {
-      "pregunta_central_reconstruible": true,
-      "apertura_in_medias_res": true,
-      "progresion_por_escena": true,
-      "transiciones_causales": true,
+      "pregunta_central_reconstruible": false,
+      "apertura_in_medias_res": false,
+      "progresion_por_escena": false,
+      "transiciones_causales": false,
       "giro_cientifico_explicado": false,
-      "limite_evidencia_explicito": true,
-      "payoff_cierre_apertura": true
+      "limite_evidencia_explicito": false,
+      "payoff_cierre_apertura": false
     },
     "critical_flags": [
-      "GIRO_CIENTIFICO_NOMBRADO_PERO_NO_EXPLICADO"
+      "REVISION_INDEPENDIENTE_AUSENTE",
+      "REVISION_EN_FRIO_NO_ACREDITADA"
     ],
-    "reviewer_notes": "Pasada separada: se leyó únicamente la narración concatenada, sin título, resumen, arco, notas ni narrative_contract. La pregunta reconstruible es si las dos luces son dos cuásares reales o una imagen por lente gravitacional; la apertura entra con la separación ya en curso y la secuencia progresa desde detección hasta límite de evidencia. El punto que no pasa: las formas distintas de las alas azules de [O III] se nombran como pista decisiva, pero no se explica por qué distinguen dos fuentes de una lente. La lente sigue sin descartarse y el cierre evita afirmar una fusión demostrada. Narración y claims intactos."
+    "notes": "El score 82 anterior correspondía a autorrevisión de ChatGPT y no acredita la compuerta. Existe un informe de Groq en la rama worker/11 y PR #13, pero inspecciona metadatos y estructura junto con la narración; no demuestra lectura ciega de la narración concatenada con título, resumen, arco, notas y narrative_contract ocultos. Por tanto no se acepta como narrative_qa PASS. No se modificó narración ni claims."
   },
   "state": "BORRADOR_EN_PROYECTOS_NO_APTO_PARA_PROMOCION"
 }
