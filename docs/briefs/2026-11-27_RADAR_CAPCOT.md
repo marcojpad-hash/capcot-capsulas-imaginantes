@@ -180,3 +180,52 @@ Los cinco candidatos iniciales (turberas, cemento por plasma, complejidad de cop
 - PAV1: la página completa de Frontiers confirma publicación el 26-11-2026, DOI `10.3389/fpls.2026.2008228` y el punto de aislamiento `41.1081 N, 16.2606 E` en Métodos. El DOI resolver mostró redirección hacia la URL editorial de Frontiers; el runtime no pudo recuperar esa URL redirigida y Crossref REST siguió inaccesible por DNS. Se conserva `VERIFICADO_URL`; no se marca Crossref como verificado.
 - No se añade candidato ni storyboard nuevo: las demás candidaturas siguen con compuertas de fuente/DOI pendientes y el slot siguiente de 23:30 está ocupado en main.
 
+## Reconsulta del 27-11-2026, 07:59 CDMX — corte adicional
+
+### Ingesta y respaldo de tendencias
+
+Se probaron directamente los diez RSS definidos en `scripts/tendencias.py` (ScienceDaily ciencia/salud/espacio, Phys.org, NASA, ESA, Nature, EurekAlert, SINC y UNAM Global) y Google Trends RSS México. Los once endpoints devolvieron el mismo error exacto:
+
+`URLError(gaierror(-3, 'Temporary failure in name resolution'))`
+
+Respaldo oficial consultado: [Google Trends México, últimas 24 horas](https://trends.google.com/trending?geo=MX&hl=es). La página mostró 249 tendencias; el primer bloque de 25 estuvo dominado por fútbol, clima, aguinaldo y búsquedas de actualidad. No apareció un candidato científico útil. Los candidatos siguientes proceden de artículos primarios recientes, no de una tendencia social.
+
+### Tres candidatos primarios nuevos
+
+#### 1. EpTFIIAγ: un factor de un hongo formador de líquenes mejora el rendimiento bajo sequía
+
+- **Artículo:** Du et al., “An extremophile transgene improves drought resistance and yield in cereals”, *Nature*, publicado en línea el 25-11-2026.
+- **DOI:** 10.1038/s41586-026-11151-w.
+- **Fuente primaria:** https://www.nature.com/articles/s41586-026-11151-w.pdf
+- **Observación:** EpTFIIAγ procede del micobionte del liquen *Endocarpon pusillum*. En cinco fondos de trigo, el artículo reporta aumentos de 19.4–32.8% en rendimiento por parcela bajo condiciones de agua limitada; también informa aumentos de rendimiento por planta en arroz y maíz. En Yangling, las parcelas limitadas recibieron aproximadamente 30% del volumen de agua de las parcelas con riego completo. Los Métodos publican coordenadas de Yangling, Heyang, Cangzhou y Linfen.
+- **Cálculo:** las coordenadas DMS del artículo se convirtieron a decimal sin interpolar parcelas: Yangling 34.266667, 108.066667; Heyang 35.716667, 110.033333; Cangzhou 38.550000, 116.633333; Linfen 36.933333, 112.566667.
+- **Inferencia:** el factor podría ser un recurso para programas de mejoramiento, pero el estudio no demuestra una variedad comercial disponible ni una solución universal.
+- **Recomendación:** candidato principal para el slot libre 2026-11-30, 17:00. Se creó el borrador `proyectos/2026-11-30_liquen-gen-cereales/storyboard.json`; sigue como PROPUESTA_PENDIENTE_DECISION_GROK.
+- **Verificación:** URL primaria accesible y artículo completo inspeccionado. Crossref REST y doi.org no pudieron resolverse por DNS; estado DOI = PENDING_CROSSREF. No promover.
+
+#### 2. La marca m⁶A y la proteína YTH.2 preparan al parásito de malaria para el cambio de huésped
+
+- **Artículo:** Mussgnug et al., “Temperature-sensitive N6-methyladenosine interactions prime the malaria parasite for transmission”, *Nature Microbiology*, publicado en línea el 25-11-2026.
+- **DOI:** 10.1038/s41564-026-02516-y.
+- **Fuente primaria:** https://www.nature.com/articles/s41564-026-02516-y.pdf
+- **Observación:** en gametocitos masculinos de *Plasmodium falciparum*, YTH.2 reconoce transcritos marcados con m⁶A y reprime su traducción después de la ingestión por el mosquito. La interacción represora es sensible a la temperatura y requiere el descenso térmico asociado a la transmisión. El artículo distingue ese descenso del aumento de pH y del ácido xanturénico, que también participan en la activación.
+- **Inferencia:** el parásito prepara parte de su respuesta antes de entrar al mosquito; el hallazgo es un mecanismo celular, no un tratamiento ni una intervención de campo.
+- **Recomendación:** conservar como candidato para un slot posterior libre; no duplicar el slot de 30-11 ya asignado al borrador de EpTFIIAγ.
+- **Verificación:** PDF primario accesible e inspeccionado. DOI = PENDING_CROSSREF por el mismo fallo DNS.
+
+#### 3. Dos compuestos etiquetados como inhibidores de cPLA₂ también inhiben LTA₄H
+
+- **Artículo:** König et al., “Unmasking a molecular impostor: cPLA₂ inhibitors emerge as potent LTA₄H suppressors”, *Frontiers in Pharmacology*, investigación original publicada el 26-11-2026.
+- **DOI:** 10.3389/fphar.2026.1944522.
+- **Fuente primaria:** https://www.frontiersin.org/journals/pharmacology/articles/10.3389/fphar.2026.1944522/full
+- **Observación:** CAY10641 y CAY10650, descritos previamente como inhibidores de cPLA₂, suprimieron LTB₄ mediante inhibición de LTA₄H; los IC₅₀ reportados en PMNL estimulados fueron 37 ± 4 nM y 36 ± 4 nM, respectivamente.
+- **Inferencia:** algunos resultados farmacológicos previos podrían requerir reinterpretación por actividad fuera del blanco. La evidencia del artículo es experimental/in vitro; no demuestra eficacia clínica.
+- **Recomendación:** candidato de menor prioridad editorial por su complejidad bioquímica, pero útil para una cápsula sobre especificidad farmacológica.
+- **Verificación:** página primaria accesible e inspeccionada. DOI = PENDING_CROSSREF por el mismo fallo DNS.
+
+### Compuertas del corte
+
+- El acceso DNS fallido impidió ejecutar una verificación Crossref/resolvedor satisfactoria para los tres DOI. No se sustituyó esa compuerta por la mera presencia del DOI en el artículo.
+- El único storyboard nuevo es un borrador en `proyectos/`; no contiene `narrative_qa`, no está marcado PREPARADO y no tiene medios.
+- `approved_assets=[]`, `export.render_status=NOT_GENERATED` y `publicacion.status=PENDIENTE_DECISION_GROK`.
+- La promoción permanece bloqueada hasta DOI/Crossref, validador estructural real y revisión narrativa independiente PASS.
