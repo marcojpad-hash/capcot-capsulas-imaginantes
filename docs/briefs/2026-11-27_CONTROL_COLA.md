@@ -484,3 +484,41 @@ Los 16 accesos devolvieron HTTP 404. Se conserva exactamente `RECEPCION_GROK_NO_
 - El DOI de PAV1 (`10.3389/fpls.2026.2008228`) y el de EpTFIIAγ (`10.1038/s41586-026-11151-w`) aparecen en sus artículos primarios, pero Crossref/doi.org no fueron accesibles; siguen `PENDING_CROSSREF`.
 - `scripts/validar_storyboard.py` fue leído. `--structural-only` es una compuerta estructural distinta y no autoriza handoff; el modo completo con `--check-doi` es obligatorio. No se ejecutó el validador oficial ni se disparó CI en este corte. La recuperación local del repositorio sigue afectada por el error de DNS ya registrado (`Could not resolve host: github.com`); la lectura por GitHub no se presenta como ejecución del script.
 - No hubo promoción, dispatch, generación de medios, programación, publicación ni cambios en `data/*.json` o `main`.
+
+## Revalidación de backlog — lote 5–7 nov y proyectos interdiarios — 27-11-2026 12:36 CDMX
+
+### Lote obligatorio de 12 IDs
+
+Se releó `data/horario_semana_2026-11-01_07.json` (blob `a567b140bab9616ab8e52666925aa79dd267223e`) y los 12 `storyboard.json`. Los cuatro campos de identidad/slot (`project_id`, `fecha_objetivo`, `slot_local`, `slot_cesta`) coinciden con el horario en **12/12**. No se modificó el horario.
+
+| ID | Slot | QA vigente | Blob actual |
+|---|---|---:|---|
+| `2026-11-05_kids-dia-en-venus` | 05-nov 07:00 kids | PASS/88 | `3660c16f866d6ec74471e6ad88e640ea7df7df1d` |
+| `2026-11-05_comida-palomitas` | 05-nov 13:30 comida | FAIL/82 | `8c913dc8ad16b005735da9ebe882206d285c96bf` |
+| `2026-11-05_inter-arboles-se-comunican` | 05-nov 17:00 intermedio_1 | FAIL/78 | `05618f1d5d2cd8f713ee43ac802bcfb04bb9bb1d` |
+| `2026-11-05_inter-rayo-globular` | 05-nov 17:45 intermedio_2 | FAIL/81 | `5cd02d9a5d21ecdbd416a2858e433395cb9acc63` |
+| `2026-11-06_kids-ballena-azul-corazon` | 06-nov 07:00 kids | FAIL/80 | `37eda55883011c0f7a2ec022c43e880d33b58313` |
+| `2026-11-06_comida-aguacate-negro` | 06-nov 13:30 comida | FAIL/79 | `d63b2afcbf22a579b7d5d8ced11265aca8b3dc2a` |
+| `2026-11-06_inter-ranas-congeladas` | 06-nov 17:00 intermedio_1 | FAIL/83 | `84585c042be07fa1ea52f1c9de310e83a1105f16` |
+| `2026-11-06_inter-arena-cantante` | 06-nov 17:45 intermedio_2 | PASS/94 | `386ad015311e277782a09f82a72b7e1118b72e69` |
+| `2026-11-07_kids-huesos-bebe` | 07-nov 07:00 kids | FAIL/82 | `981f384d44db08469ef8290b988b96fd26bc4cd0` |
+| `2026-11-07_comida-hielo-caliente` | 07-nov 13:30 comida | FAIL/81 | `fe8baf47a0e97f4c3607a187f6bac5524546e875` |
+| `2026-11-07_inter-pulpo-suenos` | 07-nov 17:00 intermedio_1 | FAIL/72 | `89080ebda22783403d5d8033d52c93dd00bc5fde` |
+| `2026-11-07_inter-nubes-pesan` | 07-nov 17:45 intermedio_2 | FAIL/78 | `190090e434d16acb4126e83d86fea17ad6e8f4e6` |
+
+Los dos PASS (Venus 88 y arena 94) conservan siete checks true y flags vacías; no se repitió la lectura narrativa porque no cambió el contenido. Los diez FAIL conservan sus flags y no se reescribieron.
+
+Inventario estático, no ejecución del validador oficial: **85 escenas**, los seis campos dramáticos obligatorios ausentes en las 85 escenas (**510 omisiones**), y **75 escenas con SFX vacío**. Los 12 tienen `approved_assets=[]`, `export.render_status=NOT_GENERATED`, `export.filename` ausente y ninguna referencia `asset_filename`, `asset_type` ni ruta de asset. Esta comprobación estática no sustituye `scripts/validar_storyboard.py`; por los campos ausentes, ninguno pasa el precheck estructural.
+
+Los 12 archivos `cola/estado/<id>.json` devolvieron HTTP 404. `cola/entrada/` contiene solo `.gitkeep` y la carpeta heredada del 09-nov; no hay entradas planas de estos 12. En `main:data/publicaciones.json` aparecen `2026-11-07_comida-hielo-caliente` y `2026-11-07_inter-nubes-pesan`; el primero también aparece en `main:data/rotacion.json`. Se conserva el bloqueo de redispatch y la discrepancia histórica de publicación ya documentada. No se creó ninguna copia de cola.
+
+### Backlog interdiario
+
+- `2026-11-18_dato-catorce-campos-hidrotermales`: blob `912fb2222ea5106d763c9e94bd95d9f9d66ebe41`, 8 escenas/198 palabras, QA vigente FAIL/68 con cuatro flags; narración y QA sin cambio. `ESTADO_EJECUCION.md` ya dice `BORRADOR_EN_PROYECTOS_NO_APTO_PARA_PROMOCION`. Estado Grok, cola plana y cola anidada devolvieron 404. Se conserva fuera de cola.
+- `2026-11-15_dato-quasar-pareja-cosmic-dawn`: Issue #11 sigue abierto; PR #14 sigue OPEN/NOT MERGED y apunta a main. Su diff añade `asset_filename` a las ocho escenas, incompatible con el contrato de preproducción; tampoco ejecuta `--check-doi` y conserva FAIL/82 histórico. El issue exige auditor distinto de ChatGPT (Groq/Gemini); no se atribuye esa auditoría a este run. Estado Grok y ambas rutas de cola devolvieron 404. No merge, no promoción y no redispatch.
+
+### Resultado de backlog
+
+- Lote 5–7 nov: 12/12 identidades y slots correctos; 2 PASS narrativos, 10 FAIL; 0/12 supera el precheck estructural; 0/12 con recepción Grok confirmada.
+- Backlog interdiario comprobado: 18-nov sigue FAIL/68 y correctamente marcado como borrador; cuásares sigue pendiente de auditoría por modelo distinto y PR #14 no integrado.
+- No se modificaron `data/*.json`, main, cola/estado, narraciones, claims ni decisiones editoriales.
