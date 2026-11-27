@@ -401,3 +401,10 @@ La ventana 06:30–07:30 está activa en `main:data/horarios.json`. No se encont
 - Respaldo oficial: Google Trends HTML México, últimas 24 h, 277 tendencias; la primera página muestra 25 y está dominada por fútbol, NFL, Thanksgiving y búsquedas generales. `clima Guadalajara` es meteorología local, no un candidato de investigación. [Google Trends México](https://trends.google.com/trending?geo=MX).
 
 Los errores de RSS describen limitaciones de lectura de XML/RSS de esta interfaz; no prueban que los servidores de los feeds estén caídos. Se usaron páginas editoriales primarias como respaldo. El validador `--check-doi` no se ejecutó para el nuevo borrador; esa compuerta sigue pendiente.
+
+
+### Estado exacto de DOI/URL
+
+- Crossref API `https://api.crossref.org/works/{DOI}`: para los cinco DOI devolvió `URL is not accessible via this tool`.
+- DOI.org: para los cuatro DOI de Nature/Communications Biology devolvió `URL is not accessible via this tool`; para el DOI de Frontiers se observó redirección a la página oficial del editor, aunque la recuperación final falló.
+- Las cinco páginas editoriales primarias sí son accesibles. Por eso la fuente científica se conserva como candidata y el URL primario está comprobado, pero no se marca Crossref como verificado. El estado DOI de los cinco queda pendiente de `--check-doi` en un entorno con acceso al resolvedor/Crossref.
