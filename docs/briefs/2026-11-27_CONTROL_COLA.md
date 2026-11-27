@@ -64,10 +64,10 @@ Las copias de magnetismo, bacterias y NBP están en carpetas anidadas de `cola/e
 
 Los doce storyboards canónicos conservan su revisión fechada el 18-11-2026; no se repitió la lectura narrativa porque no se observó cambio de narración.
 
-- **PASS:** `2026-11-05_kids-dia-en-venus` (88) y `2026-11-07_inter-pulpo-suenos` (94).
+- **PASS:** `2026-11-05_kids-dia-en-venus` (88) y `2026-11-06_inter-arena-cantante` (94).
 - **FAIL:** los otros diez IDs.
 - Los doce carecen de los seis campos estructurales anteriores; los árboles del 5 nov también carecen de capa de mapa y dato/gráfico.
-- Siete copias heredadas permanecen en `cola/bloqueados/` en la rama de trabajo. No se movieron ni borraron duplicados.
+- El árbol de `cola/bloqueados/` conserva doce borradores heredados con slugs alternativos para el lote, además de `2026-11-07_extra-nubes-pesan` y `2026-11-07_dato-clavo-te-cocina`. Sus `project_id`, narraciones y contenidos no son copias idénticas de los storyboards canónicos de `proyectos/`; se preservan sin renombrar, fusionar ni borrar durante la auditoría.
 - Los doce `cola/estado/<id>.json` devuelven 404 → `RECEPCION_GROK_NO_CONFIRMADA`.
 - En `main` existe una copia anidada de `2026-11-07_comida-hielo-caliente` con video_id `HSgrnejAcaI` y `publishAt` 11-11-2026 19:30Z. Es procesamiento histórico preexistente: no redispatchar. El ID no aparece en `data/publicaciones.json`; no existe `historial_youtube` en el árbol para reconciliar el estado externo. No se consultó ni alteró YouTube.
 
@@ -142,3 +142,61 @@ No se modificaron `main`, `data/*.json`, secretos, permisos, estados Grok, progr
 
 - Rama de trabajo leída de vuelta: `feature/capcot-video-discovery-continuity` en `68674b8ebe93d386e1c21a6aff5c4f56777e2e43`.
 - PR #3 CodeQL: run 45962867108 (commit QA `bc0bed724a62a1408da6c3beae8a7a2a93a026cd`), 45962917048 (radar `b0e3de54d1b46394d8f67b4db7900a0407bc193e`) y 45962966589 (control `68674b8ebe93d386e1c21a6aff5c4f56777e2e43`) terminaron SUCCESS en los jobs Analyze (actions) y Analyze (python). Son análisis CodeQL; no ejecutan el validador estructural ni `--check-doi`.
+
+
+## Revalidación adicional y trabajo ejecutado — 27-11-2026 03:55 CDMX
+
+### Nuevo borrador PAV1 — 27 nov, 07:00
+
+- Slot 07:00 dentro de la ventana activa 06:30–07:30; no se encontró ocupación en main ni en la rama de trabajo para ese fecha+slot. El 23:30 sí está ocupado por Stubbs en main.
+- Fuente primaria: Frontiers in Plant Science, artículo original del 26-11-2026, DOI 10.3389/fpls.2026.2008228. La página primaria está accesible y muestra DOI, coordenada y resultados. El acceso directo a doi.org no estuvo disponible desde la herramienta; Crossref/`--check-doi` queda pendiente.
+- Creado `proyectos/2026-11-27_dato-pav1-bacteriofago/storyboard.json`, commit `fb4b39a920ae52e3b0c56adf307d49725b7fe2b1`. Lectura de vuelta: blob `060ac46a49e176d81905589d7c16aa19ff2a5388`; 187 palabras, 8 escenas, 78 s + 6 s = 84 s, gancho 5 palabras, voz exacta, mapa con 41.1081 N / 16.2606 E (sitio de aislamiento), dato >98% in vitro y gráfico de incidencia en tomate, ambiente/SFX por escena, `approved_assets=[]`, `export.render_status=NOT_GENERATED`, publicación pendiente.
+- No se creó `narrative_qa`, `ESTADO_EJECUCION.md`, carpeta de medios ni copia en `cola/entrada`. El investigador no se autoaudita ni marca preparado.
+- Clasificación: `NOT_DISPATCHABLE`; no hay `cola/estado/2026-11-27_dato-pav1-bacteriofago.json` (`RECEPCION_GROK_NO_CONFIRMADA)), no hay copia plana de cola y el validador estructural real/`--check-doi` no se ejecutó.
+
+### Intermareales — corrección de registro
+
+- Se conservó `narrative_qa=PASS/90` existente sin repetir la lectura.
+- Se retiraron dos notas históricas contradictorias que seguían diciendo FAIL/0 y revisión independiente ausente, porque una nota posterior ya registra la auditoría ciega PASS/90. El objeto `narrative_qa` no se modificó.
+- Sigue `CONFLICTO_DE_SLOT_ENTRE_RAMAS` por Stubbs en main el 27-11 23:30; el render de 86.13 s está registrado, pero el MP4 señalado no aparece en el árbol. Estilo `atlas_antiguo` repetido respecto del proyecto Kuroshio del 18-11. No promover.
+
+### Lote canónico 5–7 nov — corrección de inventario
+
+| Project ID | QA existente | Estructura estática |
+|---|---:|---|
+| `2026-11-05_kids-dia-en-venus` | PASS/88 | FAIL |
+| `2026-11-05_comida-palomitas` | FAIL/82 | FAIL |
+| `2026-11-05_inter-arboles-se-comunican` | FAIL/78 | FAIL |
+| `2026-11-05_inter-rayo-globular` | FAIL/0 | FAIL |
+| `2026-11-06_kids-ballena-azul-corazon` | FAIL/80 | FAIL |
+| `2026-11-06_comida-aguacate-negro` | FAIL/79 | FAIL |
+| `2026-11-06_inter-ranas-congeladas` | FAIL/83 | FAIL |
+| `2026-11-06_inter-arena-cantante` | PASS/94 | FAIL |
+| `2026-11-07_kids-huesos-bebe` | FAIL/0 | FAIL |
+| `2026-11-07_comida-hielo-caliente` | FAIL/0 | FAIL |
+| `2026-11-07_inter-pulpo-suenos` | FAIL/0 | FAIL |
+| `2026-11-07_inter-nubes-pesan` | FAIL/0 | FAIL |
+
+- Las dos PASS conservan siete checks verdaderos, score ≥85 y flags vacías; no se repitió QA.
+- Prechequeo estático contra los campos obligatorios actuales del validador: 0/12 estructuralmente aptos. Faltan seis campos narrativos por escena (`dramatic_beat`, `scene_function`, `causal_bridge_from_previous`, `question_state`, `reason_to_continue`, `new_information`): 510 omisiones en 85 escenas, más tres incidencias adicionales en el borrador de árboles. El script Python real no se ejecutó porque el clon/descarga de GitHub no estuvo disponible; este prechequeo no se reporta como ejecución del validador.
+- No hay rutas `cola/estado/<id>.json` en el árbol para los doce IDs: `RECEPCION_GROK_NO_CONFIRMADA` en todos. Ninguno se promueve.
+- Los doce borradores heredados de `cola/bloqueados/` tienen slugs alternativos y contenido distinto de los storyboards canónicos; se preservan sin fusionar ni renombrar durante esta pasada. `2026-11-07_comida-hielo-caliente` tiene además una copia producida en main: video_id `HSgrnejAcaI`, `publishAt=2026-11-11T19:30:00Z`, salida QA y programación; `PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR`. El MP4 no está en el árbol: `MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO`.
+- El extra `2026-11-07_dato-clavo-te-cocina` queda identificado como borrador bloqueado fuera del lote canónico; no se asigna slot ni se promueve.
+
+### 26 nov NBP/nanocables — main solo lectura
+
+- `proyectos/2026-11-26_nbp-nanocables`, `cola/entrada/2026-11-26_nbp-nanocables` y `salidas/2026-11-26_nbp-nanocables` contienen storyboard, programación y metadata de salida. El storyboard tiene 124 palabras, 7 escenas y 73 s; no tiene narrative_qa ni cumple duración/longitud. La carpeta de salida prueba procesamiento preexistente; el MP4 referenciado no aparece en el árbol. No redispatchar ni modificar main.
+- No se encontraron archivos `historial_youtube` en el árbol consultado. No se consultó YouTube Studio ni se infirió estado externo.
+
+### Selector, workflow y Actions
+
+- `.github/workflows/capcot-grok-dispatch.yml` mantiene el filtro `cola/entrada/*.json` (solo JSON plano en la raíz); las carpetas anidadas no satisfacen el trigger. No se disparó ningún workflow ni se envió payload.
+- La rama de trabajo HEAD actual es `d2cf42a2d994cd9ad86ecb21a243ce03bbcde950`. La consulta de Actions por rama no mostró ejecución posterior a ese HEAD; CodeQL de commits anteriores no acredita el validador ni DOI.
+- El repositorio sigue sin `historial_youtube` visible en el árbol; no se inventó estado de IDs antiguos.
+
+### Radar y tendencias
+
+- Google Trends HTML México: 257 tendencias en la consulta actual; las primeras 25 no mostraron tema científico/natural admisible.
+- Se reintentaron los RSS directos; permanecen errores XML/RSS, ESA 404 y URLs no accesibles. No se ejecutó `scripts/tendencias.py` localmente.
+- Radar actualizado con cinco candidatos activos: PAV1 (seleccionado para 07:00), riesgo genético mesopelágico, `Westlothiana`, L-BAIBA y `Uintatherium`. Los cinco candidatos del corte 00:02 siguen `PENDING_SOURCE` hasta resolver correspondencia DOI/URL.
+- No se generaron medios, no se publicó, no se programó y no se gastaron créditos.
