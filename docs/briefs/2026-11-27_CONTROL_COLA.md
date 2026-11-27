@@ -554,3 +554,11 @@ Se detectó un paquete adicional en `main`: `2026-11-27_bacterias-vuelta-oxigeno
 - **Publicación/rotación:** el proyecto no aparece en `main:data/publicaciones.json` ni en `main:data/rotacion.json`; esto no anula la programación individual de 17:00. Sin `video_id` observado. Clasificación final: `NOT_DISPATCHABLE`, `PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR`, `MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO`, `RECEPCION_GROK_NO_CONFIRMADA`; el slot 17:00 queda reservado contra cualquier paquete paralelo de feature.
 
 No se modificaron `main`, `data/*.json`, cola/estado, programación, medios ni decisiones editoriales. Las referencias de webhook del workflow están presentes; no se leyeron ni se expusieron valores de secretos.
+
+
+## PRs y CI revalidados — 27-11-2026 14:04 CDMX
+
+- **PR #15 — validador/DOI y coordenadas:** sigue OPEN, sin merge y `mergeable=false`; rama `fix/capcot-map-coordinate-types-20261122`, base feature. El último run de Semgrep (#45310165026, 24-nov) terminó FAILURE: 26 hallazgos bloqueantes, exit code 1; SARIF sí fue cargado. Ese workflow ejecutó Semgrep, no las pruebas unitarias. La supresión añadida para `HTTPSConnection` no produjo un CI verde. No se fusiona ni se declara verificado el cambio.
+- **PR #13 — auditoría cuásares:** sigue OPEN. Su informe no satisface la compuerta vigente de lectura en frío solo de narración: cita duración de escenas, metadatos y estado DOI; la revisión de integración también señaló rangos de líneas sin SHA reproducible y conclusiones que no se desprenden del dato citado. No se acredita como `narrative_qa` PASS.
+- **PR #14 — corrección cuásares:** sigue OPEN y no mergeable. Es posterior a la auditoría del blob `54c8ade`; no hay una revisión independiente posterior del storyboard corregido. Se conserva el estado no apto y no se repite el QA anterior como si cubriera el nuevo texto. La siguiente compuerta es una lectura en frío realizada por un revisor distinto del redactor, con solo narración concatenada.
+- Los PRs antiguos/dependencias (#3, #4–#9 y #37 en U7) permanecen fuera de esta acción; no se abrió, cerró ni fusionó ningún PR.
