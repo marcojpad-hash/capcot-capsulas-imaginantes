@@ -311,3 +311,10 @@ No se modificaron `main`, `data/*.json`, secretos, permisos, estados Grok, progr
 - **VERIFICADO:** lectura de vuelta del storyboard, radar y control; slot consultado; ausencia de cola/estado/salida para el nuevo ID.
 - **PENDIENTE:** DOI/Crossref, validador oficial, revisión narrativa independiente y recepción individual Grok.
 - **NO REALIZADO:** render, audio, imágenes, video, publicación, programación, dispatch, cambios en `data/*.json`, main, secretos o permisos.
+
+### Referencias de persistencia del run 11
+
+- Radar actualizado: commit `f370ca43b968054b1bff40d54f840e7ef4ca272a`; blob verificado `5ca46365bd4966d07ac18498af78fc1b6ae5898f`.
+- Control actualizado: commit anterior `317aa7d6455e5d52ec842de6659d3ae2ac6595ff`; blob actual previo a esta nota `f50ca4c7a065ade5f18ea8291e18b3fc68dd2c93`.
+- Storyboard `proyectos/2026-11-30_liquen-gen-cereales/storyboard.json`: blob verificado `5f9bd265a7af4379b8d83122ec93edb3d7a20c0f`.
+- Fuentes U6 inspeccionadas en solo lectura: `preparar_entrada_solo.py` blob `891e37a482207399f9f929824e0935486b4b95b1`; pruebas `test_preparar_entrada_solo.py` blob `6faa007e40a41c4648262df81302907c6c57fde6`; gate Z90 `5d4627514e7aa33500183fc395b6795bb4fb925d`. No se ejecutó ni modificó U6.
