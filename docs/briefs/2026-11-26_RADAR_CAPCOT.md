@@ -408,3 +408,11 @@ Los errores de RSS describen limitaciones de lectura de XML/RSS de esta interfaz
 - Crossref API `https://api.crossref.org/works/{DOI}`: para los cinco DOI devolvió `URL is not accessible via this tool`.
 - DOI.org: para los cuatro DOI de Nature/Communications Biology devolvió `URL is not accessible via this tool`; para el DOI de Frontiers se observó redirección a la página oficial del editor, aunque la recuperación final falló.
 - Las cinco páginas editoriales primarias sí son accesibles. Por eso la fuente científica se conserva como candidata y el URL primario está comprobado, pero no se marca Crossref como verificado. El estado DOI de los cinco queda pendiente de `--check-doi` en un entorno con acceso al resolvedor/Crossref.
+
+## Revalidación RSS/Trends — 2026-11-26, 22:04 CDMX
+
+Se reintentaron los diez feeds científicos y Google Trends RSS definidos en `scripts/tendencias.py`. Se reprodujeron los errores ya registrados: ScienceDaily (tres feeds) 400 por `application/xml`; Phys.org 400 por `text/xml`; NASA, Nature y UNAM Global 400 por `application/rss+xml`; ESA 404; EurekAlert, SINC y Google Trends RSS no accesibles mediante esta interfaz. Esto describe el límite de recuperación de XML/RSS; no demuestra que los servidores estén caídos.
+
+El respaldo oficial HTML de Google Trends México, filtro «Past 24 hours», muestra **259 tendencias** y 25 en la primera página. Predominan Liga MX, NFL, clima/tiempo y Thanksgiving; no aparece un candidato de ciencia, naturaleza o espacio en esas 25. El conteo anterior de 277 queda supersedido por esta lectura más reciente. [Google Trends México](https://trends.google.com/trending?geo=MX).
+
+No se añade candidato ni se selecciona editorialmente uno nuevo. Se conservan los cinco candidatos primarios del radar con `PENDING_CROSSREF`; el artículo de rapaces tiene página primaria de Frontiers accesible, pero Crossref/doi.org y `--check-doi` siguen sin confirmación en esta ejecución.
