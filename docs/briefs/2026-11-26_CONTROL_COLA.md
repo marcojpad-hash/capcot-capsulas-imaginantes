@@ -951,3 +951,26 @@ La lectura de los feeds definidos en `scripts/tendencias.py` devolvió: ScienceD
 - DOI.org: los cuatro DOI de Nature/Communications Biology devolvieron `URL is not accessible via this tool`; el DOI Frontiers redirigió a la página oficial, pero la recuperación final falló. Las páginas editoriales primarias sí están accesibles. No se marca Crossref como verificado; `--check-doi` sigue pendiente.
 - Radar actualizado con estos errores exactos y el estado de las cinco fuentes: commit `fdd3a11d2f8b8c003769391615b7bcd93c1af20b`.
 - El registro de trazabilidad anterior se guardó en `f703cfb04e161a457dd3dda3708481eca935671b`; ese fue el HEAD inmediatamente anterior a este addendum.
+
+## Addendum de auditoría — 2026-11-26, 22:04 CDMX
+
+### Rotación y autoridad de slots — corrección de implementación
+
+- Relectura de `feature/scripts/rotacion.py` (blob `f4fcbdfc9d1701f572d61b50f7225abcbc8622a5`): `VENTANAS` contiene solo tres ventanas variables: mañana 06:30–07:30, mediodía de prueba 13:00–14:30 y tarde 16:30–18:00. El slot 23:30 queda fuera de `hora_publicacion()` como fijo. No existe ventana 19:00 en este código.
+- Relectura de `main:data/horarios.json` (blob `2261993d542de445df23e0abbe63bca9b54c2ff1`): solo enumera mañana 06:30–07:30 y tarde 16:30–18:00; no enumera mediodía ni 19:00. La rama feature conserva un archivo de horarios anterior y su script añade la ventana de prueba. Por tanto, el comentario del script que lo llama «espejo operativo de main» no es exacto.
+- `MAX_POR_DIA=5` es un límite duro, no una definición de cinco ventanas autorizadas. Esta evidencia supersede la nota anterior que atribuía a `rotacion.py` ventanas para 07:00, 13:30, 17:00, 19:00 y 23:30. No modificar `data/*.json` ni inventar una ventana 19:00.
+- `scripts/registro_editorial.py` reconcilia el árbol y los datos de su propia rama; no inspecciona `pendientes/abiertos/` ni las reservas de `tools/animales_2026-11-23/specs_animales.py` en main. No basta por sí solo para certificar capacidad entre ramas.
+
+### 30-nov: capacidad no conciliada
+
+- `main:pendientes/abiertos/2026-11-22_guiones-semana-30nov-6dic-42-verificados.md` asigna seis guiones al lunes 30-nov, pero no les asigna `slot_local`. No se cuentan como seis publicaciones confirmadas; sí constituyen backlog editorial sin conciliación de cupo.
+- El proyecto `2026-11-30_rapaces-clima-reino-unido` sigue en `proyectos/`, 07:00, 184 palabras según el conteo del validador, 8 escenas y 78 s + 6 s de cortinilla = 84 s. No hay entrada de cola, estado Grok ni salida (404); `RECEPCION_GROK_NO_CONFIRMADA`, `NOT_DISPATCHABLE`.
+- Main reserva 30-nov 23:30 para Cher Ami mediante `publishAt_utc=2026-12-01T05:30:00Z`; la ruta MP4 se referencia en metadata/render.log, pero el archivo no está en GitHub. `PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR`, `MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO`, `RECEPCION_GROK_NO_CONFIRMADA`.
+- El slot 30-nov 07:00 no aparece ocupado en los registros de publicación consultados, pero el día completo no puede declararse conciliado por los seis guiones sin hora y la reserva 23:30. Clasificación adicional: `CAPACIDAD_DIARIA_NO_CONCILIADA`. No promover ni reasignar.
+
+### Fuentes, RSS y CI — lectura de las 22:04
+
+- En el storyboard de rapaces, `SRC-001.verification_status` se corrigió de `VERIFICADO_RESOLVEDOR` a `PENDING_CROSSREF` porque Crossref/doi.org no se confirmaron; la página primaria de Frontiers está accesible. Commit verificado: `a9b0377d09e3dc4b6ba7c6b69f443b155c34f908`. Claims, narración, mapa y coordenadas no cambiaron. La fuente cartográfica SRC-002 sigue apuntando a documentación del paquete `ukgeog` que describe el origen ONS; falta adjuntar el enlace directo al recurso ONS, sin alterar el bounding box existente.
+- Los diez feeds científicos y Google Trends RSS reprodujeron los errores exactos del corte anterior. El respaldo oficial Google Trends HTML México ahora muestra 259 tendencias (primeras 25: deportes, NFL, meteorología y Thanksgiving; sin tema científico/natural claro). El conteo anterior de 277 queda supersedido.
+- PR #3 continúa abierto/borrador; su HEAD `29245bb5765ae8f2d99f533f1d5f457e1240ddab` no tiene workflow runs ni estados nuevos asociados. PR #15 conserva 14 pruebas en su rama frente a 8 en feature; las seis pruebas nuevas no están incorporadas en feature. Su única ejecución consultada es Semgrep fallido; no hay ejecución de unit tests. No se hizo merge, cierre ni dispatch.
+- Thanksgiving del 26-nov 23:30 y Cher Ami del 30-nov 23:30 conservan metadata con `publishAt_utc` y rutas MP4; las rutas de `cola/estado`, `cola/entrada` y `salidas` devuelven 404, y los MP4 devuelven 404 en GitHub. Mantener `PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR`, `MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO`, `RECEPCION_GROK_NO_CONFIRMADA`. No cancelar ni redispatchar.
