@@ -415,23 +415,23 @@
   ],
   "narrative_qa": {
     "status": "FAIL",
-    "score": 0,
+    "score": 82,
     "review_basis": "lectura_en_frio_solo_narracion",
-    "reviewer_role": "auditor_no_independiente",
+    "reviewer_role": "auditor_capcot_independiente",
     "reviewer_model": "GPT-6",
-    "reviewed_at": "2026-11-27T00:02:03-06:00",
+    "reviewed_at": "2026-11-27T02:04:11-06:00",
     "checks": {
-      "pregunta_central_reconstruible": false,
-      "apertura_in_medias_res": false,
-      "progresion_por_escena": false,
-      "transiciones_causales": false,
+      "pregunta_central_reconstruible": true,
+      "apertura_in_medias_res": true,
+      "progresion_por_escena": true,
+      "transiciones_causales": true,
       "giro_cientifico_explicado": false,
-      "limite_evidencia_explicito": false,
-      "payoff_cierre_apertura": false
+      "limite_evidencia_explicito": true,
+      "payoff_cierre_apertura": true
     },
     "critical_flags": [
-      "REVISION_INDEPENDIENTE_AUSENTE"
+      "GIRO_CIENTIFICO_NOMBRADO_PERO_NO_EXPLICADO"
     ],
-    "notes": "No existe una revisión narrativa verdaderamente independiente del autor en este run. La marca FAIL/0 registra ausencia de compuerta válida; no es una evaluación negativa de la calidad del texto. Se requiere auditor distinto, lectura ciega de la narración concatenada y evaluación de los siete checks."
+    "notes": "Lectura fría de la narración concatenada únicamente, sin título, resumen, arco, notas ni narrative_contract. La pregunta central se reconstruye: cómo un mismo escenario climático puede proyectar cambios opuestos de idoneidad para dos rapaces del Reino Unido. La apertura instala el contraste; las escenas avanzan desde el objeto del estudio y el método hacia las proyecciones de ambas especies, la variación entre modelos, el desempeño limitado y el alcance de conservación. El límite de evidencia y el payoff son explícitos. El giro científico no queda explicado: la narración enumera clima, relieve y cobertura del suelo como entradas, y reporta +73.5% y −97.2%, pero no explica qué asociaciones ambientales específicas o qué rasgos de nicho producen la divergencia entre especies. El resultado está presentado, no explicado. FAIL por el check giro_cientifico_explicado=false; no se modificaron narración ni claims."
   }
 }
