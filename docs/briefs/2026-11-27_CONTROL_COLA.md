@@ -99,3 +99,40 @@ Los doce storyboards canónicos conservan su revisión fechada el 18-11-2026; no
 ## Restricciones respetadas
 
 No se modificaron `main`, `data/*.json`, secretos, permisos, estados Grok, programación externa ni medios. No se publicó ni se generó audio/video. Las únicas escrituras fueron en la rama de trabajo y en los archivos enumerados al inicio.
+
+
+## Revalidación y trabajo ejecutado — 27-11-2026 02:04 CDMX
+
+### QA narrativo independiente de rapaces
+
+- Se realizó una pasada separada leyendo únicamente la narración concatenada; no se usaron título, resumen, arco, notas ni `narrative_contract`.
+- Se actualizó `proyectos/2026-11-30_rapaces-clima-reino-unido/storyboard.json` con `narrative_qa=FAIL/82`, `review_basis=lectura_en_frio_solo_narracion`, seis checks verdaderos y `giro_cientifico_explicado=false`.
+- Flag: `GIRO_CIENTIFICO_NOMBRADO_PERO_NO_EXPLICADO`. La narración plantea el contraste entre halcón y águila y presenta método/resultados, pero no explica qué asociaciones ambientales o rasgos de nicho producen la divergencia. El hallazgo está reportado, no explicado. No se reescribieron narración ni claims.
+- Commit de registro QA: `bc0bed724a62a1408da6c3beae8a7a2a93a026cd`. Lectura de vuelta verificada: blob `0d20606559656a4f6070f033a4520fa9c8e463e2`; la narración quedó idéntica.
+
+### Revalidación estructural, rotación y handoff
+
+- Rapaces 30-nov: comprobación estática de 182 palabras, 8 escenas, 78 s de escenas + 6 s de cortinilla = 84 s, gancho de 5 palabras, voz es-MX-JorgeNeural +7% / −2Hz, prompt_base exacto y prefijos visuales correctos. La escena 3 contiene mapa con bounding box WGS84 derivado de ONS; escenas 4–7 contienen capas de datos; los source_ids referencian fuentes existentes. `approved_assets=[]`, `export.render_status=NOT_GENERATED`, publicación pendiente. No se ejecutó `scripts/validar_storyboard.py` ni `--check-doi`.
+- El estilo `papel_rasgado_capas` se repite respecto del proyecto 18-nov de campos hidrotermales. No se cambió: es una decisión editorial que debe resolver el redactor.
+- Intermareales 27-nov: PASS/90 existente y sin cambio de narración; no se repitió. Su estilo `atlas_antiguo` se repite respecto del proyecto Kuroshio del 18-nov. El slot 23:30 sigue reservado por Stubbs en main; el render de 86.13 s ya existe, aunque el MP4 señalado no está en el árbol. Se mantienen `CONFLICTO_DE_SLOT_ENTRE_RAMAS`, `PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR` y `MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO`.
+- Para ambos proyectos, `cola/estado/<project_id>.json` devuelve 404 (`RECEPCION_GROK_NO_CONFIRMADA`) y no existe copia plana en `cola/entrada/<project_id>.json`. Ambos siguen `NOT_DISPATCHABLE`; no se creó cola ni se modificó estado Grok.
+- El proyecto de rapaces no tiene conflicto de fecha+slot en main, pero no puede promoverse por QA FAIL, DOI pendiente y estilo repetido.
+- `data/estilos_usados.json` sigue congelado en octubre; la comparación real de estilos se hizo contra los storyboards de 18 y 23-nov. No se modificó ningún `data/*.json`.
+
+### Fuentes y tendencias
+
+- Reapertura directa de RSS: ScienceDaily Science/Health/Space devolvió `400 Unsupported content-type: application/xml`; Phys.org `400 Unsupported content-type: text/xml`; NASA `400 Unsupported content-type: application/rss+xml`; ESA `404 Not Found`; Nature `400 Unsupported content-type: application/rss+xml`; UNAM `400 Unsupported content-type: application/rss+xml`; EurekAlert y SINC devolvieron “URL ... is not accessible via this tool”. Google Trends RSS México devolvió el mismo tipo de inaccesibilidad.
+- La vista HTML oficial de Google Trends México mostró 253 tendencias; las primeras 25 no aportaron señal científica/natural admisible.
+- Se agregó a vigilancia, sin elevarlo a candidato principal, el artículo primario PAV1 de *Frontiers in Plant Science* (26-nov-2026), DOI declarado 10.3389/fpls.2026.2008228. El artículo informa >98% de inhibición in vitro en 48 h y menor incidencia de agalla en plantas de tomate bajo aplicación preventiva; no es evidencia de eficacia de campo en viñedos. La coordenada publicada 41.1081, 16.2606 corresponde al punto de aislamiento de aguas residuales en Bari, no al ensayo en tomate.
+- Crossref y `doi.org` devolvieron `Internal Error ()` / URL no accesible para los DOI intentados. PAV1 y SRC-001 de rapaces permanecen `PENDING_CROSSREF`. No se creó storyboard para el 28-nov 23:30 ni se seleccionó un sexto candidato.
+- Radar actualizado y releído en commit `b0e3de54d1b46394d8f67b4db7900a0407bc193e`.
+
+### Actions, main y backlog
+
+- Main HEAD `92d6c034b12a86785a5d12eb22e634f8453cd510`: el único archivo cambiado en ese commit es `data/endscreens_rotacion.json`; no cambió la ocupación de proyectos, cola, salidas, publicaciones ni programación.
+- Worker 45937300053: SUCCESS técnico; log literal `[trabajador] sin trabajo en cola.`
+- Semgrep 45944165855: FAILURE con 37 hallazgos bloqueantes; el paso de carga SARIF fue omitido. Gitleaks 45944165920: SUCCESS.
+- CodeQL PR #3, run 45951871951: SUCCESS en Python y Actions; no ejecuta el validador de storyboard ni verifica DOI.
+- PR #3 sigue OPEN/DRAFT; PR #15, #14 y #13 siguen abiertos. Issues #11 y #16 siguen abiertos. No se disparó workflow, no se envió payload y no se hizo merge.
+- El backlog 24–26 nov de main conserva los mismos 12 storyboards; el commit de main citado no tocó sus archivos. El lote canónico 5–7 nov conserva las revisiones del 18-nov; no se repitieron PASS válidos ni se modificaron copias heredadas.
+- No se modificaron main, `data/*.json`, cola, estados Grok, programación externa, secretos, permisos ni medios. No se generó ni publicó contenido.
