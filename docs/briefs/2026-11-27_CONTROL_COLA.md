@@ -10,7 +10,7 @@
 | Elemento | Resultado |
 |---|---|
 | `proyectos/2026-11-30_rapaces-clima-reino-unido/storyboard.json` | Se añadieron `new_information` a las ocho escenas y se normalizaron los cuatro valores de `arc` admitidos por el validador. No se cambió narración ni claims. Se sustituyó SRC-002 por la página oficial ONS de límites UK 2024. Lectura de vuelta: 182 palabras, 8 escenas, 78 s de escenas + 6 s de cortinilla = 84 s; los seis campos estructurales por escena están presentes; todos los arcos son válidos. |
-| QA de rapaces | `FAIL/0`, `REVISION_INDEPENDIENTE_AUSENTE`. No se atribuye una auditoría independiente a una revisión del mismo autor. |
+| QA de rapaces | JSON vigente: `FAIL/82`; revisor independiente; `giro_cientifico_explicado=false`; flag `GIRO_CIENTIFICO_NOMBRADO_PERO_NO_EXPLICADO`. El `FAIL/0` inicial quedó supersedido. |
 | `proyectos/2026-11-15_dato-quasar-pareja-cosmic-dawn/storyboard.json` | El score 82 anterior era autorrevisión. Se reemplazó por `FAIL/0` y flags de revisión independiente/en frío no acreditada. El informe Groq de PR #13 existe, pero revisa metadatos y estructura junto con narración; no demuestra la lectura ciega requerida. Narración y claims intactos. |
 | `docs/PLAN_MAESTRO_AUTOMATICO.md` | Se corrigió la tabla horaria antigua de cinco slots y se alineó con la fuente vigente `main:data/horarios.json`. |
 | Este radar y este control | Creados en `docs/briefs/` para el corte 27-11-2026. |
@@ -33,7 +33,7 @@
 - Slot 07:00 dentro de la ventana matutina activa; lunes no es día preferente, aunque no aparece conflicto de fecha+slot en `main`.
 - Esquema comprobado estáticamente después de la corrección: 182 palabras, 8 escenas, 84 s totales, 6 s de cortinilla, prompt base del catálogo, mapa y gráfico presentes, `approved_assets=[]`, `export.render_status=NOT_GENERATED`, publicación pendiente.
 - SRC-001 (artículo Frontiers) permanece `PENDING_CROSSREF`; la página editorial indica que la versión final formateada aparecerá después.
-- QA: `FAIL/0`, `REVISION_INDEPENDIENTE_AUSENTE`.
+- QA vigente: `FAIL/82`; revisor independiente; `giro_cientifico_explicado=false`; `critical_flags=[GIRO_CIENTIFICO_NOMBRADO_PERO_NO_EXPLICADO]`. El `FAIL/0` inicial quedó supersedido.
 - `cola/estado/2026-11-30_rapaces-clima-reino-unido.json`: 404 → `RECEPCION_GROK_NO_CONFIRMADA`.
 - Sin copia plana de entrada: `NOT_DISPATCHABLE`.
 - No se generaron medios ni se promovió el storyboard.
@@ -77,7 +77,7 @@ Los doce storyboards canónicos conservan su revisión fechada el 18-11-2026; no
 - Rama de trabajo: 2 directorios anidados, 8 archivos, cero JSON planos en la raíz.
 - `capcot-grok-dispatch.yml` escucha cambios en `cola/entrada/*.json`; las carpetas anidadas no satisfacen ese filtro.
 - Run del worker 45937300053: éxito técnico, resultado “No work in queue”. El resultado coincide con la ausencia de JSON planos.
-- `data/publicaciones.json`: 62 registros; los últimos registros visibles llegan al 23-11-2026. No contiene `HSgrnejAcaI`.
+- `data/publicaciones.json`: 62 registros; el campo `fecha` alcanza 24-11-2026 (los últimos elementos del array corresponden a 23-11 y `publishAt` alcanza 24-11).
 - No se encontró `historial_youtube` en el árbol. No hay conexión a YouTube Studio verificada en este run.
 - No se disparó Grok, no se enviaron payloads y no se inspeccionaron valores de secretos.
 
@@ -640,9 +640,9 @@ Se releen los 94 archivos proyectos/*/storyboard.json de feature. Distribución 
 | 2026-11-20_dato-dia-atlantico-humedad-sapropeles | PASS/91 |
 | 2026-11-21_fentale-metano-sin-erupcion | PASS/90 |
 | 2026-11-22_yubarta-genoma-soplo | PASS/90 |
-| 2026-11-27_dato-pav1-bacteriofago | PASS/90 — SFX vacíos, DOI no resuelto y conflicto de slot |
+| 2026-11-27_dato-pav1-bacteriofago | PASS/90 — SFX 8/8 y mapa/dato presentes; DOI `10.3389/fpls.2026.2008228` solo `VERIFICADO_URL` (Crossref pendiente); conflicto 07:00 |
 | 2026-11-27_dato-registros-intermareales-1950s | PASS/90 — conflicto de slot |
-| 2026-11-30_liquen-gen-cereales | PASS/93 — SFX vacíos, falta capa de dato/gráfico y DOI pendiente |
+| 2026-11-30_liquen-gen-cereales | PASS/93 — SFX 8/8, mapa y dato presentes; DOI `10.1038/s41586-026-11151-w` PENDING_CROSSREF; `slot_cesta` ausente |
 
 **FAIL — scores exactos**
 
@@ -737,23 +737,23 @@ Cuatro storyboards antiguos tienen project_id sin el prefijo de fecha de su carp
 
 **Feature, cola/entrada:** cero JSON planos y cero entradas anidadas del 27-nov. Solo permanece el paquete histórico anidado del robot orbital. **Main, cola/entrada:** cero JSON planos y una carpeta anidada del 27-nov, pero su storyboard es PLACEHOLDER. No hay paquete válido del día en cola.
 
-PAV1 tiene 8 escenas, 187 palabras, 78 s de escenas + cortinilla de 6 s = 84 s, título de 5 palabras, voz definida, mapa y capa de dato/gráfico, source_ids válidos, prompt_base consistente, seis campos narrativos por escena, approved_assets=[] y export.render_status=NOT_GENERATED. No contiene rutas de assets. Bloqueos: las ocho escenas tienen SFX vacío sin declaración explícita de silencio; el DOI 10.1126/science.abc… solo figura como VERIFICADO_URL, no como resolución Crossref/doi.org; no hay ejecución actual con --check-doi; falta slot_cesta. El slot 07:00 ya está ocupado en main por microondas.
+PAV1 tiene 8 escenas, 187 palabras, 78 s de escenas + cortinilla de 6 s = 84 s, título de 5 palabras, voz definida, mapa y capa de dato/gráfico, source_ids válidos, prompt_base consistente, seis campos narrativos por escena, SFX y ambiente presentes en 8/8, approved_assets=[] y export.render_status=NOT_GENERATED. No contiene rutas de assets. Bloqueos: el DOI correcto es `10.3389/fpls.2026.2008228` (`VERIFICADO_URL`); la página oficial de Frontiers lo identifica como artículo publicado el 26-11-2026, pero no hay resolución Crossref/doi.org ni ejecución `--check-doi`; falta `slot_cesta`. La anotación previa de SFX vacío y el DOI `10.1126/science.abc…` eran incorrectos. El slot 07:00 ya está ocupado en main por microondas.
 
 Intermareal tiene 8 escenas, 174 palabras, 78 + 6 = 84 s, título de 5 palabras, voz definida, mapa y capa de dato, SFX y ambiente presentes, source_ids válidos, prompt_base consistente, seis campos narrativos por escena, DOI con verificación Crossref/resolvedor registrada, approved_assets=[] y export.render_status=NOT_GENERATED; no contiene rutas de assets. Falta slot_cesta. Su slot 23:30 colisiona con el paquete de Stubbs, que ya tiene evidencia de render y QA audiovisual. No se promueve.
 
 El proyecto de main “bacterias-vuelta-oxigeno” tiene 7 escenas, 84 palabras, 74 s de escenas + 6 s de cortinilla = 80 s frente a 82 declarados, y título de 9 palabras. No declara fecha_objetivo, slot_local, slot_cesta, narrative_contract, narrative_qa, approved_assets ni export.render_status. Introduce asset_filename y export.filename; los archivos referenciados no están en el árbol. La programación marca 17:00, private, programado_sin_montar, sin video_id y publish_at 2026-11-27T23:00:00Z. La carpeta de cola anidada es solo placeholder y NOT_DISPATCHABLE.
 
-**Capacidad de main para el 27-nov: cinco slots ocupados.**
+**Main registra cinco paquetes para el 27-nov; solo tres ocupan ventanas vigentes.**
 
 | Slot CDMX | Paquete/evidencia | ID/privacidad/estado |
 |---|---|---|
 | 07:00 | Rehecho microondas, plan semanal | YouTube nd0rs6iVy8E; private; publishAt 13:00Z; QA audiovisual 77 s; MP4 referido fuera del árbol |
-| 10:00 | Rehecho miel | YouTube p06UCGu0-Og; private→public programado; publishAt 16:00Z; MP4 no verificado en GitHub |
-| 15:00 | Rehecho ola azul | YouTube HKpani8TTeY; private→public programado; publishAt 21:00Z; MP4 no verificado en GitHub |
+| 10:00 | Rehecho miel (fuera de ventana autorizada) |
+| 15:00 | Rehecho ola azul (fuera de ventana autorizada) |
 | 17:00 | Bacterias vuelta al oxígeno | Sin video_id; private; programado_sin_montar; no hay medios |
 | 23:30 | Animal Stubbs | Sin video_id ni publishAt; metadata y logs de render, QA audiovisual ES 86.13 s / EN 84.97 s; MP4 referido fuera del árbol |
 
-PAV1 colisiona con 07:00 e Intermareal con 23:30. No existe capacidad libre para promover otro paquete. Se marca MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO para microondas, miel, ola azul, bacterias y Stubbs: los paths referidos no están en el árbol GitHub. No se afirma que existan fuera de él.
+Las tres ventanas vigentes de main para el 27-nov —07:00, 17:00 y 23:30— ya están ocupadas por registros preexistentes (microondas, bacterias y Stubbs, respectivamente); PAV1 colisiona con 07:00 e Intermareal con 23:30. Los reworks de 10:00 y 15:00 son registros heredados fuera de ventanas activas y no cuentan como capacidad autorizada. No hay ventana activa libre. Los IDs originales de miel y ola azul (`jpDyCX6zSgQ`, `4xylLT3vSIU`) siguen descritos como intactos junto con los nuevos IDs (`p06UCGu0-Og`, `HKpani8TTeY`): riesgo de duplicado; no se borró/canceló nada ni se verificó Studio. Se marca MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO para microondas, miel, ola azul, bacterias y Stubbs: los paths referidos no están en el árbol GitHub. No se afirma que existan fuera de él.
 
 ### 3. Procesador, dispatch y handoffs
 
@@ -861,7 +861,7 @@ Main usa además plan_semana para microondas, data/rehechos_2026-11-22.json para
 
 **Actions**
 
-- Kuroshio run #23, 46073709847, job 140756420589, commit 2b8a289d752eb5b5c1a53f2af3e636b136abfa0c: SUCCESS. Comando exacto: python scripts/validar_storyboard.py proyectos/2026-11-18_dato-kuroshio-puente-atmosferico/storyboard.json. Resultado literal: OK. Comprobación adicional: “Expediente textual íntegro; medios no generados; publicación no autorizada.” No se usó --check-doi. ESTADO_EJECUCION.md fue actualizado y releído; DOI 10.1038/s41561-026-02139-2 sigue RESOLVEDOR_CROSSREF_NO_CONFIRMADO.
+- Kuroshio run #23 (`46073709847`, job `140756420589`) y revalidación posterior run #24 (`46076761978`, job `140766191962`): #24 concluyó SUCCESS el `2026-11-27T22:27:35Z`, commit `53ad156371717984ad8ed701099dc2bb79a4bfe3`; comando exacto `python scripts/validar_storyboard.py proyectos/2026-11-18_dato-kuroshio-puente-atmosferico/storyboard.json`; salida literal `OK` y `Expediente textual íntegro; medios no generados; publicación no autorizada.` No se usó `--check-doi`; el DOI sigue `RESOLVEDOR_CROSSREF_NO_CONFIRMADO`. Los blobs storyboard/validador/workflow coinciden con HEAD. `ESTADO_EJECUCION.md` actualizado y releído con run #24.
 - Semgrep run 46061613357, main commit 194257: FAILURE; 37 findings, 37 blocking, 1283 targets escaneados, 37 archivos grandes omitidos. Error literal: “Process completed with exit code 1.”
 - CodeQL run 460747 en PR #3: SUCCESS.
 - Worker run 460096: log “[trabajador] sin trabajo en cola.” No acredita cola CAPCOT vacía; el workflow es staging y el script relacionado procesa Issues.
@@ -869,7 +869,7 @@ Main usa además plan_semana para microondas, data/rehechos_2026-11-22.json para
 
 **Pull requests abiertos; ninguno se integró**
 
-- #3: OPEN/DRAFT, base main, head 35f59a22…, mergeable=false / dirty; 724 archivos, 1545 commits, 91,229 adiciones y 1,735 eliminaciones. Incluye cambios extensos de cola/bloqueados, data, proyectos, registro editorial, procesador, validador y dispatcher. CodeQL pasó, pero no es autorización de merge.
+- #3: OPEN/DRAFT, base `main`, head `feature/capcot-video-discovery-continuity` (`2f49e05c5817d8846a043d8205b51f580a6ebb5f`), mergeable=false; 724 archivos, 1547 commits, 91,535 adiciones y 1,735 eliminaciones.
 - #14: OPEN hacia main; añade asset_filename a ocho escenas y conserva narrative_qa histórico FAIL/82; no ejecuta --check-doi. Incompatible con preproducción.
 - #15: OPEN hacia feature; modifica validador y pruebas de coordenadas; no integrado.
 - #13: OPEN, documentación de auditoría; no sustituye lectura narrativa.
@@ -885,6 +885,51 @@ No se identificó cambio oficial nuevo de APIs que justificara revisión adicion
 - No se ejecutó procesador, validador local, workflow, dispatch ni envío externo.
 - No se promovió ni redispatchó ningún proyecto.
 - No se modificaron storyboards, cola/entrada, cola/estado, cola/bloqueados, data/*.json, workflows, secretos, permisos, PRs ni main.
-- Únicos cambios de este corte: documentación del control y actualización de ESTADO_EJECUCION.md de Kuroshio con el run CI #23.
+- Cambios de este corte: actualización documental de `CONTROL_COLA.md` y `ESTADO_EJECUCION.md` de Kuroshio con el run CI #24 y corrección de discrepancias del inventario. No se modificaron storyboards, `data/*.json`, cola, estados Grok, workflows, secretos, permisos, PRs ni `main`.
 - No se generaron cápsulas, frames, imágenes, voz, audio, video, renders ni publicaciones; no se consumieron créditos.
 
+
+
+
+## Revalidación del 27-nov-2026 — 16:35 CDMX
+
+### Estado actual de proyectos y QA
+
+- HEAD auditado antes de estas dos actualizaciones documentales: `2f49e05c5817d8846a043d8205b51f580a6ebb5f`. Se contaron 94 `proyectos/*/storyboard.json`: 23 PASS, 28 FAIL, 42 sin `narrative_qa` y 1 PENDING. Los scores/statuses de la tabla de inventario se cotejaron con los JSON vigentes.
+- Los dos borradores de feature para el 27-nov siguen con QA independiente PASS/90 y no se repitió la lectura narrativa: PAV1 (creado 27-nov 10:15:34Z; QA actualizado por commit `653a7ad38bb136229414bcd180aa9971d5d5f38e`) e Intermareal (creado 26-nov 22:11:55Z; QA PASS registrado en commit `4ba5b682c9f4b294bd183018f71151d062f0ba3f`; las modificaciones posteriores fueron limpieza de notas, no narración). Ambos tienen `slot_cesta` ausente.
+- PAV1: 8 escenas, 187 palabras, 78+6=84 s; 8/8 SFX y ambientes presentes; mapa y dato/gráfico presentes; seis campos dramáticos en todas las escenas; source_ids válidos; prompt_base exacto; `approved_assets=[]`, `render_status=NOT_GENERATED`, sin rutas de assets. Fuente primaria Sabri et al., Frontiers in Plant Science, publicada 26-nov-2026, DOI `10.3389/fpls.2026.2008228`, estado JSON `VERIFICADO_URL`; no se ejecutó Crossref/doi.org ni `--check-doi`. Enlace editorial: https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2026.2008228/full. Conflicto de slot con microondas en main a las 07:00. No promover.
+- Intermareal: 8 escenas, 174 palabras, 78+6=84 s; 8/8 SFX y ambientes; mapa y capa de dato; seis campos dramáticos; source_ids válidos; prompt_base exacto; `approved_assets=[]`, `render_status=NOT_GENERATED`, sin rutas. Fuente primaria Sinde-Mano et al. publicada 26-nov-2026, DOI `10.1038/s41597-026-08947-w` (`VERIFICADO_CROSSREF`); los tres datasets GBIF también conservan estado de resolvedor. Colisión de 23:30 con el proyecto Stubbs ya renderizado/QA en main. No promover.
+- Main contiene además `2026-11-27_bacterias-vuelta-oxigeno`: 7 escenas, 84 palabras, 74 s + cortinilla 6 = 80 s frente a 82 declarados, título de 9 palabras, sin `narrative_contract` ni `narrative_qa`, siete `asset_filename` y `export.filename`; `programacion.json` lo deja private/programado_sin_montar a las 17:00, sin video_id. Su copia anidada en `cola/entrada/<id>/storyboard.json` es el literal `PLACEHOLDER`, no JSON válido y NOT_DISPATCHABLE.
+- El JSON actual de Rapaces es `FAIL/82`, con `giro_cientifico_explicado=false` y `critical_flags=[GIRO_CIENTIFICO_NOMBRADO_PERO_NO_EXPLICADO]`. Las referencias iniciales a FAIL/0 eran el estado fail-closed anterior y quedaron supersedidas por el QA independiente registrado el 27-nov; el score actual del archivo es 82.
+- Liquen (30-nov) conserva PASS/93. Relectura estructural de metadatos: 8 escenas, 200 palabras, 78+6=84 s; seis campos dramáticos presentes; SFX y ambientes 8/8; mapa en escenas 2 y 5; capa de dato en escena 6; `approved_assets=[]`, `render_status=NOT_GENERATED`, sin rutas. El único bloqueo DOI es `10.1038/s41586-026-11151-w` (`VERIFICADO_URL; DOI PENDING_CROSSREF`); `slot_cesta` falta. Las notas previas que afirmaban SFX vacíos y ausencia de mapa/dato eran incorrectas.
+- El caso 2026-11-18_dato-catorce-campos-hidrotermales conserva FAIL/68 y estado documental `BORRADOR_EN_PROYECTOS_NO_APTO_PARA_PROMOCION`. Los ocho `ESTADO_EJECUCION.md` existentes en proyectos fueron revisados; no se encontró otro estado `PREPARADO` contradictorio que requiriera corrección.
+
+### Ventanas y reconciliación de main
+
+- El Plan Maestro vigente (revisión 27-nov) y `main:data/horarios.json` (actualizado 23-nov) definen solo tres ventanas autorizadas: 06:30–07:30, 16:30–18:00 y el slot fijo 23:30. 13:00–14:30 es experimental; 19:00–21:00 está retirado. La antigua cuenta de cinco slots es obsoleta.
+- Main tiene cinco registros del 27-nov, pero solo tres caen en ventanas autorizadas: 07:00 microondas (`nd0rs6iVy8E`, private, `publishAt=13:00Z`, QA audiovisual 77 s); 17:00 bacterias (sin video_id, private/programado_sin_montar); 23:30 Stubbs (sin video_id ni publishAt, pero metadata + render.log + QA audiovisual 86.13 s ES / 84.97 s EN). Los registros de miel 10:00 y ola azul 15:00 están fuera de ventanas autorizadas; no cuentan como capacidad productiva vigente.
+- Los reworks de miel y ola azul conservan IDs originales `jpDyCX6zSgQ` y `4xylLT3vSIU`, mientras sus nuevas copias tienen `p06UCGu0-Og` y `HKpani8TTeY`. Se marca riesgo de duplicado; los registros dicen que los originales siguen intactos. No se borró, canceló ni cambió privacidad; no se verificó YouTube Studio.
+- Las tres ventanas activas están ocupadas: PAV1 colisiona con microondas a las 07:00; 17:00 está ocupado por bacterias; Intermareal colisiona con Stubbs a las 23:30. No hay ventana activa libre. Los paths MP4 referidos por microondas, miel, ola azul, bacterias y Stubbs no aparecen en el árbol GitHub: `MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO`.
+- `main:data/publicaciones.json` tiene 62 registros y no contiene entradas del 27-nov; el último campo fecha llega a 24-nov. Feature conserva 22 registros hasta 31-oct (publishAt hasta 1-nov). No se usó el ledger como inventario exhaustivo.
+
+### Cola, estados, selector y Actions
+
+- Feature: cero entradas de 27-nov en `cola/entrada/*.json` y cero anidadas del día; permanece el paquete histórico anidado del robot orbital 9-nov. Main: una carpeta anidada del 27-nov, pero su archivo es `PLACEHOLDER`. Ninguno de esos paquetes es dispatchable.
+- El dispatcher de feature selecciona exclusivamente `cola/entrada/*.json`; para `workflow_dispatch` usa `find -maxdepth 1` y para push filtra `^cola/entrada/[^/]+\.json$`. No alcanza `cola/entrada/<id>/storyboard.json`. El procesador de feature filtra por fecha CDMX por defecto, aunque un `--fecha` explícito permite solicitar históricos; el procesador legacy de main usa `datetime.date.today()` solo para el registro y selecciona `ent[0]` sin filtro por fecha.
+- Los 18 estados consultados (dos proyectos actuales, main bacteria, Stubbs, Kuroshio, catorce y los doce IDs del lote 5–7 nov) devolvieron 404. Resultado exacto: `RECEPCION_GROK_NO_CONFIRMADA`. El único marker en `handoffs/grok_inbox/` es el del robot 9-nov con `status=pending`; solo prueba marker, no lectura/recepción de Grok.
+- En los últimos 100 Actions de feature no hay ejecuciones recientes del dispatcher; las 45 ejecuciones encontradas corresponden al 1-nov. La más reciente, run `41306776689`, falló en “Verificar configuración del receptor”; error literal: `Falta configurar GROK_WEBHOOK_URL.`. El chequeo posterior de `GROK_WEBHOOK_TOKEN` no llegó a ejecutarse; los logs muestran ambas variables de entorno vacías, pero no se exponen valores. El workflow actual de feature trata el webhook como opcional y no tiene ejecuciones recientes.
+- Kuroshio run #24 quedó registrado en `ESTADO_EJECUCION.md` y releído desde GitHub. Run `46076761978`, commit `53ad156371717984ad8ed701099dc2bb79a4bfe3`, comando sin `--check-doi`, resultado `OK`; los blobs del storyboard, validador y workflow coinciden con HEAD. DOI permanece pendiente.
+
+### Pull requests abiertos
+
+- #3 OPEN/DRAFT: base main, head feature, SHA `2f49e05c5817d8846a043d8205b51f580a6ebb5f`, 724 archivos, 1547 commits, 91,535 adiciones, 1,735 eliminaciones, mergeable=false; incluye cambios extensos de cola, datos, proyectos, procesador, registro y dispatcher. No integrar.
+- #14 OPEN hacia main: añade `asset_filename` a ocho escenas de Quasar y conserva FAIL/82; incompatible con preproducción.
+- #15 OPEN hacia feature: cambia validador/pruebas de tipos de coordenadas; no integrado.
+- #13 OPEN hacia main: informe documental; no sustituye QA narrativo.
+- #4 OPEN hacia feature: ubicación de frames ASTRA; #6 OPEN hacia feature: supervisor; #7–#9 OPEN hacia main: dependencias de workflows. Ninguno se integró.
+
+### Límites y resultado
+
+- No hubo runtime local; se hizo revisión estática y contraste con GitHub Actions. No se ejecutó validador local ni `--check-doi` para PAV1/Intermareal/Liquen.
+- No se modificaron storyboards, claims, `data/*.json`, cola/entrada, cola/estado, cola/bloqueados, workflows, secretos, permisos, PRs ni `main`. Solo se actualizaron este control y el expediente documental de Kuroshio.
+- No se promovieron paquetes, no se disparó dispatch, no se enviaron payloads, no se generaron medios ni se consumieron créditos. No se encontró cambio oficial de API que justificara revisión adicional.
