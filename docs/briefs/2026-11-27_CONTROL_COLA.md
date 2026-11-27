@@ -599,3 +599,292 @@ Se releyó el inventario de `feature/capcot-video-discovery-continuity` y se loc
 ### Discrepancia de inventario
 
 El radar del 27-nov describe EpTFIIAγ como el único borrador nuevo, pero el árbol de proyectos contiene además el borrador de rapaces para 30-nov 07:00. Se conserva como backlog ya existente, no se incorpora a la shortlist ni se crea un duplicado. Los slots 07:00 y 17:00 del 30-nov están ocupados en feature; no se promueve ninguno a cola. No se modificaron storyboards, `main`, `data/*.json`, estados Grok, cola, salidas, medios ni programación.
+
+
+---
+
+## Revalidación final — 27-nov-2026
+
+Corte de lectura: feature HEAD 53ad156371717984ad8ed701099dc2bb79a4bfe3; main HEAD 66b2cf076499e24f0b0d6bfa2f8e619df0c158aa. Esta sección prevalece sobre conteos anteriores del mismo informe cuando difieran.
+
+### 1. Inventario completo de proyectos
+
+Se releen los 94 archivos proyectos/*/storyboard.json de feature. Distribución exacta de narrative_qa leída desde cada JSON:
+
+- 23 PASS.
+- 28 FAIL.
+- 42 sin narrative_qa.
+- 1 PENDING, sin score válido.
+
+**PASS — scores exactos**
+
+| Proyecto | JSON |
+|---|---:|
+| 2026-11-01_red-electrica-pulso-minuto | PASS/89 |
+| 2026-11-02_camaron-mantis | PASS/90 — falta narrative_contract; no está preparado |
+| 2026-11-04_cielo-azul-atardecer-rojo | PASS/94 |
+| 2026-11-05_kids-dia-en-venus | PASS/88 |
+| 2026-11-06_inter-arena-cantante | PASS/94 |
+| 2026-11-09_dato-robot-ensambla-orbita | PASS/90 — procesamiento preexistente |
+| 2026-11-10_comida-aprendizaje-sabor-nutriente | PASS/92 |
+| 2026-11-10_dato-adn-sincroniza-flujo | PASS/91 |
+| 2026-11-12_dato-pedorreta-chimpances | PASS/91 |
+| 2026-11-13_dato-caracol-16-embriones | PASS/91 |
+| 2026-11-14_dato-microplasticos-pantanal | PASS/88 |
+| 2026-11-15_dato-dia-diapausa-lestes-sponsa | PASS/90 |
+| 2026-11-16_dato-polen-desenreda-nanotubos | PASS/91 |
+| 2026-11-17_dato-suelo-dos-relojes | PASS/89 |
+| 2026-11-18_dato-kuroshio-puente-atmosferico | PASS/90 — DOI pendiente |
+| 2026-11-19_dato-dia-luz-dos-manos-oro-poroso | PASS/91 |
+| 2026-11-19_dato-estrella-dentro-de-estrella | PASS/90 |
+| 2026-11-20_dato-dia-atlantico-humedad-sapropeles | PASS/91 |
+| 2026-11-21_fentale-metano-sin-erupcion | PASS/90 |
+| 2026-11-22_yubarta-genoma-soplo | PASS/90 |
+| 2026-11-27_dato-pav1-bacteriofago | PASS/90 — SFX vacíos, DOI no resuelto y conflicto de slot |
+| 2026-11-27_dato-registros-intermareales-1950s | PASS/90 — conflicto de slot |
+| 2026-11-30_liquen-gen-cereales | PASS/93 — SFX vacíos, falta capa de dato/gráfico y DOI pendiente |
+
+**FAIL — scores exactos**
+
+| Proyecto | JSON |
+|---|---:|
+| 2026-10-31_murcielagos-viroma-global | FAIL/72 |
+| 2026-10-31_sequias-energia-renovable | FAIL/56 |
+| 2026-10-31_smartpe-edicion-plantas | FAIL/80 |
+| 2026-11-01_dato-cambio-horario-corazon | FAIL/84 |
+| 2026-11-01_llorar-cebolla-quimica | FAIL/79 |
+| 2026-11-01_pulpo-tres-corazones | FAIL/72 |
+| 2026-11-02_comida-pan-duro | FAIL/84 |
+| 2026-11-05_comida-palomitas | FAIL/82 |
+| 2026-11-05_inter-arboles-se-comunican | FAIL/78 |
+| 2026-11-05_inter-rayo-globular | FAIL/81 |
+| 2026-11-06_comida-aguacate-negro | FAIL/79 |
+| 2026-11-06_inter-ranas-congeladas | FAIL/83 |
+| 2026-11-06_kids-ballena-azul-corazon | FAIL/80 |
+| 2026-11-07_comida-hielo-caliente | FAIL/81 |
+| 2026-11-07_inter-nubes-pesan | FAIL/78 |
+| 2026-11-07_inter-pulpo-suenos | FAIL/72 |
+| 2026-11-07_kids-huesos-bebe | FAIL/82 |
+| 2026-11-15_dato-quasar-pareja-cosmic-dawn | FAIL/0 |
+| 2026-11-18_dato-catorce-campos-hidrotermales | FAIL/68 |
+| 2026-11-20_dato-marea-cerebral-en-sueno | FAIL/82 |
+| 2026-11-21_homo-erectus-selva-tropical | FAIL/83 |
+| 2026-11-21_pulsar-gamma-reticulo | FAIL/83 |
+| 2026-11-22_bao-estrella-fusion-andromeda | FAIL/84 |
+| 2026-11-22_genes-estatura-etapas | FAIL/72 |
+| 2026-11-22_voyager-1-un-dia-luz | FAIL/83 |
+| 2026-11-23_supersequias-722-eventos | FAIL/82 |
+| 2026-11-23_tropical-biodiversity-turnover | FAIL/82 |
+| 2026-11-30_rapaces-clima-reino-unido | FAIL/82 |
+
+**Sin narrative_qa — 42 rutas**
+
+1. 2026-10-24_abejas-bullying
+2. 2026-10-24_ideonella-pet
+3. 2026-10-24_osedax-comehuesos
+4. 2026-10-24_serpientes-que-ruedan
+5. 2026-10-25_ave-jurasica-sin-vuelo
+6. 2026-10-25_corales-contacto
+7. 2026-10-25_reina-olor
+8. 2026-10-25_sueno-electricidad-qom
+9. 2026-10-26_baffin-bay-ice-shelf
+10. 2026-10-26_catrina-posada-monerismo
+11. 2026-10-26_hongo-gente-diminuta
+12. 2026-10-26_papel-picado-dia-muertos
+13. 2026-10-26_papel-picado-dia-muertos_parte2
+14. 2026-10-26_pimiento-verde-rojo
+15. 2026-10-27_cempasuchil-ciencia
+16. 2026-10-27_corneja-decision-rapida
+17. 2026-10-27_ddm-parte3-pomuch
+18. 2026-10-27_familia-ajolote
+19. 2026-10-27_kids-serpiente-voladora
+20. 2026-10-27_noct-anfibio-marino
+21. 2026-10-28_ddm-parte4-templo-mayor
+22. 2026-10-28_familia-voyager-disco-oro
+23. 2026-10-28_kids-titanoboa
+24. 2026-10-28_monarca-almas
+25. 2026-10-28_mosquito-fruitless-audicion
+26. 2026-10-28_noct-lince-milanos
+27. 2026-10-28_pan-de-muerto-huesos
+28. 2026-10-29_juno-choque-proa
+29. 2026-10-29_muralismo-cu
+30. 2026-10-30_arqueas-origen-eucariotas
+31. 2026-10-30_kromdraai-primera-fecha
+32. 2026-10-31_pardelas-jetlag-solar
+33. 2026-11-03_dato-polvo-africano-microbios
+34. 2026-11-03_kids-leche-enchilado
+35. 2026-11-xx_kids-flamencos-rosas_RESPALDO
+36. demo-001
+37. guiones_lote_01
+38. lote01-01-el-nino
+39. lote01-02-petroleo
+40. lote01-03-balon-curva
+41. lote01-04-tardigrado
+42. lote01-05-chicxulub
+
+El único PENDING es 2026-11-04_dato-polvo-atrapa-oro. De los 42 sin QA, 39 también carecen de narrative_contract; tres sí tienen contrato, pero no revisión. Camarón mantis conserva PASS/90 sin narrative_contract, por lo que tampoco está preparado. El directorio _RESPALDO de flamencos conserva un project_id sin el sufijo de respaldo: se trata como respaldo, no como proyecto editorial adicional.
+
+Cuatro storyboards antiguos tienen project_id sin el prefijo de fecha de su carpeta: cempasuchil-ciencia, familia-ajolote, kids-serpiente-voladora y noct-anfibio-marino. Sus fechas objetivo/slots no están completos; no se infieren desde el nombre de carpeta. El resto de los artefactos legacy también requiere cautela: la fecha del directorio no sustituye fecha_objetivo ni slot_local.
+
+### 2. Proyectos del 27-nov y entradas de cola
+
+| Rama/ruta | Creación Git | Fecha objetivo / slot | Estado |
+|---|---|---|---|
+| feature: proyectos/2026-11-27_dato-pav1-bacteriofago/storyboard.json | 2026-11-27 10:15:34Z (04:15:34 CDMX) | 27-nov, 07:00; slot_cesta ausente | PASS/90; no promovido |
+| feature: proyectos/2026-11-27_dato-registros-intermareales-1950s/storyboard.json | 2026-11-26 22:11:55Z (16:11:55 CDMX) | 27-nov, 23:30; slot_cesta ausente | PASS/90; no promovido |
+| main: proyectos/2026-11-27_bacterias-vuelta-oxigeno/storyboard.json | 2026-11-27 16:37:55Z (10:37:55 CDMX) | programacion indica 17:00; storyboard sin fecha_objetivo, slot_local ni slot_cesta | Sin narrative_contract ni narrative_qa |
+| main: cola/entrada/2026-11-27_bacterias-vuelta-oxigeno/storyboard.json | 2026-11-27 16:38:02Z | carpeta anidada | Contenido literal PLACEHOLDER; no es JSON válido |
+
+**Feature, cola/entrada:** cero JSON planos y cero entradas anidadas del 27-nov. Solo permanece el paquete histórico anidado del robot orbital. **Main, cola/entrada:** cero JSON planos y una carpeta anidada del 27-nov, pero su storyboard es PLACEHOLDER. No hay paquete válido del día en cola.
+
+PAV1 tiene 8 escenas, 187 palabras, 78 s de escenas + cortinilla de 6 s = 84 s, título de 5 palabras, voz definida, mapa y capa de dato/gráfico, source_ids válidos, prompt_base consistente, seis campos narrativos por escena, approved_assets=[] y export.render_status=NOT_GENERATED. No contiene rutas de assets. Bloqueos: las ocho escenas tienen SFX vacío sin declaración explícita de silencio; el DOI 10.1126/science.abc… solo figura como VERIFICADO_URL, no como resolución Crossref/doi.org; no hay ejecución actual con --check-doi; falta slot_cesta. El slot 07:00 ya está ocupado en main por microondas.
+
+Intermareal tiene 8 escenas, 174 palabras, 78 + 6 = 84 s, título de 5 palabras, voz definida, mapa y capa de dato, SFX y ambiente presentes, source_ids válidos, prompt_base consistente, seis campos narrativos por escena, DOI con verificación Crossref/resolvedor registrada, approved_assets=[] y export.render_status=NOT_GENERATED; no contiene rutas de assets. Falta slot_cesta. Su slot 23:30 colisiona con el paquete de Stubbs, que ya tiene evidencia de render y QA audiovisual. No se promueve.
+
+El proyecto de main “bacterias-vuelta-oxigeno” tiene 7 escenas, 84 palabras, 74 s de escenas + 6 s de cortinilla = 80 s frente a 82 declarados, y título de 9 palabras. No declara fecha_objetivo, slot_local, slot_cesta, narrative_contract, narrative_qa, approved_assets ni export.render_status. Introduce asset_filename y export.filename; los archivos referenciados no están en el árbol. La programación marca 17:00, private, programado_sin_montar, sin video_id y publish_at 2026-11-27T23:00:00Z. La carpeta de cola anidada es solo placeholder y NOT_DISPATCHABLE.
+
+**Capacidad de main para el 27-nov: cinco slots ocupados.**
+
+| Slot CDMX | Paquete/evidencia | ID/privacidad/estado |
+|---|---|---|
+| 07:00 | Rehecho microondas, plan semanal | YouTube nd0rs6iVy8E; private; publishAt 13:00Z; QA audiovisual 77 s; MP4 referido fuera del árbol |
+| 10:00 | Rehecho miel | YouTube p06UCGu0-Og; private→public programado; publishAt 16:00Z; MP4 no verificado en GitHub |
+| 15:00 | Rehecho ola azul | YouTube HKpani8TTeY; private→public programado; publishAt 21:00Z; MP4 no verificado en GitHub |
+| 17:00 | Bacterias vuelta al oxígeno | Sin video_id; private; programado_sin_montar; no hay medios |
+| 23:30 | Animal Stubbs | Sin video_id ni publishAt; metadata y logs de render, QA audiovisual ES 86.13 s / EN 84.97 s; MP4 referido fuera del árbol |
+
+PAV1 colisiona con 07:00 e Intermareal con 23:30. No existe capacidad libre para promover otro paquete. Se marca MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO para microondas, miel, ola azul, bacterias y Stubbs: los paths referidos no están en el árbol GitHub. No se afirma que existan fuera de él.
+
+### 3. Procesador, dispatch y handoffs
+
+La revisión cruzada detecta una diferencia importante entre ramas:
+
+- Feature, scripts/procesar_cola.py (blob 64c1f94…): usa fecha_actual_cdmx(), extrae la fecha del path y filtra candidatos por fecha_archivo == --fecha. La selección por defecto se limita al día CDMX. Un --fecha histórico explícito todavía puede solicitar una fecha anterior; no hay selección histórica automática.
+- Main, scripts/procesar_cola.py (blob fd567091…): versión legacy con datetime.date.today() y selección ent[0] sin filtro por fecha. Con la cola histórica actual puede tomar el primer storyboard antiguo. Esta versión no debe ejecutarse para producción. El cambio seguro está en el PR #3, que sigue abierto y no integrado.
+- docs/FLUJO_EXTERNO.md en feature describe el comportamiento nuevo y coincide con el script de feature.
+- capcot-grok-dispatch.yml existe en feature, no en main. Su trigger y selector solo aceptan JSON planos en cola/entrada/*.json; workflow_dispatch busca con profundidad máxima 1. No encuentra cola/entrada/<project_id>/storyboard.json. El procesador admite rutas anidadas, pero el dispatcher no: contrato de rutas inconsistente.
+- El registro editorial de feature recorre recursivamente proyectos, cola, cola/bloqueados, salidas y handoffs/grok_inbox. No se ejecutó porque no hay runtime local.
+- trabajador-cola.yml es una copia de staging, no está instalado en los workflows activos de main. scripts/trabajador_cola.py es un worker de Issues, no el procesador de paquetes CAPCOT. Su log histórico “sin trabajo en cola” no demuestra que cola/entrada esté vacía.
+
+En feature se verificó 404 para cola/estado de los dos proyectos del 27-nov, los dos del 30-nov, los dos casos del 18-nov, los doce IDs del lote 5–7 nov y el robot orbital. Para los 19 IDs consultados se registra exactamente: RECEPCION_GROK_NO_CONFIRMADA. No se crea ni modifica ningún estado.
+
+Markers actuales de main en handoffs/grok_inbox:
+- Robot orbital: status pending, branch main, package_path anidado; no confirma recepción.
+- Serie cuántica evolución: pending, Issue #1066, brief en guiones/serie_cuantica_evolucion.
+- Serie Thomas Harris: pending, Issue #1065, brief en guiones/serie_thomas_harris.
+
+handoffs/grok_done solo contiene .gitkeep. No hay archivos cola/estado. La presencia de markers no acredita lectura por Grok. La presencia de GROK_WEBHOOK_URL y GROK_WEBHOOK_TOKEN no pudo verificarse con los permisos disponibles; no se leyeron valores. No hubo ejecución de capcot-grok-dispatch en los últimos 100 runs consultados.
+
+### 4. Lote obligatorio 5–7 nov
+
+Se releyeron los doce storyboards y el horario semanal. project_id, fecha_objetivo/fecha, slot_local/hora y slot_cesta/cesta coinciden exactamente en los doce. Los scores/statuses conservados son:
+
+- PASS/88: 2026-11-05_kids-dia-en-venus.
+- PASS/94: 2026-11-06_inter-arena-cantante.
+- FAIL/82: 2026-11-05_comida-palomitas.
+- FAIL/78: 2026-11-05_inter-arboles-se-comunican.
+- FAIL/81: 2026-11-05_inter-rayo-globular.
+- FAIL/79: 2026-11-06_comida-aguacate-negro.
+- FAIL/83: 2026-11-06_inter-ranas-congeladas.
+- FAIL/80: 2026-11-06_kids-ballena-azul-corazon.
+- FAIL/81: 2026-11-07_comida-hielo-caliente.
+- FAIL/78: 2026-11-07_inter-nubes-pesan.
+- FAIL/72: 2026-11-07_inter-pulpo-suenos.
+- FAIL/82: 2026-11-07_kids-huesos-bebe.
+
+No se repitió lectura narrativa porque los JSON conservan los QA previos y no se identificó cambio de narración en esos doce archivos. Estructura revalidada estáticamente:
+
+- 85 escenas en total; todas las cápsulas tienen 7–9 escenas.
+- 170–221 palabras por narración.
+- 78 s de escenas + 6 s de cortinilla = 84 s.
+- Títulos dentro del máximo de seis palabras; voz, source_ids y prompt_base presentes.
+- 11/12 tienen mapa y capa de dato/gráfico. El storyboard canónico de redes micorrícicas es el único sin ambas capas.
+- Faltan los seis campos dramáticos obligatorios en las 85 escenas: 510 ausencias.
+- 75 escenas tienen SFX vacío sin silencio explícito; ambiente sí está presente.
+- Los doce tienen approved_assets=[], export.render_status=NOT_GENERATED y no incluyen rutas de assets.
+
+El canónico 2026-11-05_inter-arboles-se-comunican sigue correspondiendo a redes micorrícicas comunes y Karst et al. 2023. No se marca desajuste temático. La variante de respiración nocturna permanece como artefacto separado en bloqueados. Los dos PASS narrativos no pasan estructura; ninguno de los doce se promueve. Todos tienen RECEPCION_GROK_NO_CONFIRMADA.
+
+### 5. Producción preexistente y YouTube
+
+No existe archivo central historial_youtube en el árbol. Se inspeccionaron 51 programacion.json de main. Quince IDs antiguos siguen descritos como programados aunque su publishAt ya pasó; se registra riesgo de duplicado/estado obsoleto, sin borrar ni cancelar:
+
+| YouTube ID | Slot local registrado | Fecha programada |
+|---|---:|---|
+| 45WOvkNQTHo | 13:30 | 16-nov |
+| KnP1j4y72ug | 13:30 | 17-nov |
+| -fDL2pBjH30 | 13:30 | 18-nov |
+| vj5RZDt-dfc | 13:30 | 19-nov |
+| WTlFSZV9HYg | 13:30 | 20-nov |
+| K4qNkx2f4RI | 13:30 | 21-nov |
+| aTau_z2yWq8 | 19:00 | 15-nov |
+| XL0f90ZtwpY | 19:00 | 16-nov |
+| 25mWYJVOPLk | 19:00 | 17-nov |
+| NKDhKlY1rVI | 19:00 | 18-nov |
+| zyTl_cVGN6E | 19:00 | 19-nov |
+| ZG4iQgmWrLI | 19:00 | 21-nov |
+| O9QlSaft5DY | 13:30 | 15-nov |
+| WcTviUWqbes | 07:00 | 12-nov |
+| maLtsoQpxwI | 19:00 | 11-nov |
+
+Seis IDs aparecen además en registros de salidas como publicados: EX0W3q-yKRw, WcTviUWqbes, es6hWxPdt2A, dz2C-Y8klXA, maLtsoQpxwI y cci90_HP6R4. WcTviUWqbes y maLtsoQpxwI siguen simultáneamente en registros de cola como programados y en salidas como publicados; discrepancia de estado y riesgo de duplicado.
+
+**Robot orbital — discrepancia entre copias:**
+
+- El storyboard de proyectos en feature y main comparte el mismo blob, 9 escenas, 210 palabras, target 88 s, cortinilla 6 s y narrative_qa PASS/90. Aun así contiene asset_filename, por lo que no cumple contrato de preproducción.
+- La copia de cola/entrada en main tiene otro blob y otra narración: 9 escenas, 187 palabras, cortinilla 13 s, export.filename y media real. Conserva PASS/90 copiado, pero ese QA narrativo no corresponde a la narración alterada y no se revalida como PASS válido.
+- El QA audiovisual de esa copia registra 21/21 checks y 87.57 s. Es QA audiovisual, no narrativa. La duración medida cae dentro de 75–90, pero el storyboard de cola declara 82 s de escenas + 13 s de cortinilla = 95 s; discrepancia con la duración medida y con el contrato de cortinilla de 6 s.
+- La copia de cola incluye capsula.mp4, nueve frames, subtítulos y archivos de apoyo dentro de GitHub. No se marca MEDIOS_NO_VERIFICADOS para ese paquete.
+- programacion.json conserva ZG4iQgmWrLI, publish_at 2026-11-22T01:00:00Z (21-nov 19:00 CDMX), private→public programado. El marker de handoff, en cambio, identifica el paquete como 9-nov 23:30. El mismo project_id tiene discrepancia de fecha/slot entre marker, proyecto y programación.
+- No existe salidas/<project_id>/ para el robot; el paquete audiovisual está anidado en cola/entrada. Se clasifica PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR. No se modifica ni redispatcha.
+
+### 6. Datos, plantillas, Actions y PRs
+
+**Datos y estilos**
+
+| Fuente | Feature | Main |
+|---|---|---|
+| temas_del_dia.json | última fecha 28-oct | 28-oct |
+| rotacion.json | 31-oct | 21-nov |
+| estilos_usados.json | 28-oct | 11-nov |
+| horarios.json | 09-nov | 23-nov |
+| publicaciones.json | 01-nov | 24-nov |
+| cola.json | 31-oct | revisar: no es inventario exhaustivo |
+
+Main usa además plan_semana para microondas, data/rehechos_2026-11-22.json para miel y ola azul, programacion.json para bacterias y metadata/logs para Stubbs. No se alteró ningún data/*.json. La rotación de estilos no puede certificarse con data/estilos_usados por su antigüedad; se contrasta con los style_id presentes en proyectos.
+
+**Plantillas**
+
+- templates/storyboard_vertical.template.json es la plantilla alineada al contrato actual.
+- templates/storyboard.template.json conserva asset_filename, asset_type, rutas de audio y export.filename; es una plantilla legacy incompatible con preproducción.
+- templates/grok_status.template.json existe y coincide con el contrato: solo Grok escribe cola/estado.
+
+**Actions**
+
+- Kuroshio run #23, 46073709847, job 140756420589, commit 2b8a289d752eb5b5c1a53f2af3e636b136abfa0c: SUCCESS. Comando exacto: python scripts/validar_storyboard.py proyectos/2026-11-18_dato-kuroshio-puente-atmosferico/storyboard.json. Resultado literal: OK. Comprobación adicional: “Expediente textual íntegro; medios no generados; publicación no autorizada.” No se usó --check-doi. ESTADO_EJECUCION.md fue actualizado y releído; DOI 10.1038/s41561-026-02139-2 sigue RESOLVEDOR_CROSSREF_NO_CONFIRMADO.
+- Semgrep run 46061613357, main commit 194257: FAILURE; 37 findings, 37 blocking, 1283 targets escaneados, 37 archivos grandes omitidos. Error literal: “Process completed with exit code 1.”
+- CodeQL run 460747 en PR #3: SUCCESS.
+- Worker run 460096: log “[trabajador] sin trabajo en cola.” No acredita cola CAPCOT vacía; el workflow es staging y el script relacionado procesa Issues.
+- No se encontró ejecución de capcot-grok-dispatch en los últimos 100 runs.
+
+**Pull requests abiertos; ninguno se integró**
+
+- #3: OPEN/DRAFT, base main, head 35f59a22…, mergeable=false / dirty; 724 archivos, 1545 commits, 91,229 adiciones y 1,735 eliminaciones. Incluye cambios extensos de cola/bloqueados, data, proyectos, registro editorial, procesador, validador y dispatcher. CodeQL pasó, pero no es autorización de merge.
+- #14: OPEN hacia main; añade asset_filename a ocho escenas y conserva narrative_qa histórico FAIL/82; no ejecuta --check-doi. Incompatible con preproducción.
+- #15: OPEN hacia feature; modifica validador y pruebas de coordenadas; no integrado.
+- #13: OPEN, documentación de auditoría; no sustituye lectura narrativa.
+- #4: OPEN, documentación/paquete del robot; no se integra.
+- #6: OPEN, supervisor/workflow; no se integra.
+- #7–#9: actualizaciones de dependencias; no cambian QA narrativo ni se integran.
+
+No se identificó cambio oficial nuevo de APIs que justificara revisión adicional.
+
+### 7. Resultado y límites
+
+- No hubo runtime local. Revisión estática de todos los JSON indicados, scripts, workflows, plantillas, datos, briefs, handoffs y registros; contraste con ejecuciones CI existentes.
+- No se ejecutó procesador, validador local, workflow, dispatch ni envío externo.
+- No se promovió ni redispatchó ningún proyecto.
+- No se modificaron storyboards, cola/entrada, cola/estado, cola/bloqueados, data/*.json, workflows, secretos, permisos, PRs ni main.
+- Únicos cambios de este corte: documentación del control y actualización de ESTADO_EJECUCION.md de Kuroshio con el run CI #23.
+- No se generaron cápsulas, frames, imágenes, voz, audio, video, renders ni publicaciones; no se consumieron créditos.
+
