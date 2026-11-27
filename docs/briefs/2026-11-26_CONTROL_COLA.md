@@ -943,3 +943,11 @@ La lectura de los feeds definidos en `scripts/tendencias.py` devolvió: ScienceD
 - Radar de cinco candidatos y revalidación de slots/RSS: `01639c18571d87a696e4044f5938eaeaf1784576`.
 - Control de cola y auditoría: actualización principal `6c1236c7b936afd8f0c47bf50e1ada77e7723e65`; precisión del conteo `25f4733af9b3ff723a78aa9575aab924a645bd8c`.
 - HEAD de `feature/capcot-video-discovery-continuity` después de ese corte: `25f4733af9b3ff723a78aa9575aab924a645bd8c`.
+
+
+### Addendum DOI/Crossref y trazabilidad posterior
+
+- Crossref API `https://api.crossref.org/works/{DOI}`: los cinco candidatos devolvieron `URL is not accessible via this tool`.
+- DOI.org: los cuatro DOI de Nature/Communications Biology devolvieron `URL is not accessible via this tool`; el DOI Frontiers redirigió a la página oficial, pero la recuperación final falló. Las páginas editoriales primarias sí están accesibles. No se marca Crossref como verificado; `--check-doi` sigue pendiente.
+- Radar actualizado con estos errores exactos y el estado de las cinco fuentes: commit `fdd3a11d2f8b8c003769391615b7bcd93c1af20b`.
+- El registro de trazabilidad anterior se guardó en `f703cfb04e161a457dd3dda3708481eca935671b`; ese fue el HEAD inmediatamente anterior a este addendum.
