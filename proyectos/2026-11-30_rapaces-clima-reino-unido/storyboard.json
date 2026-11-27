@@ -87,7 +87,7 @@
         "TSS medio menor a 0.40 en 13 de 16 especies",
         "Las salidas representan idoneidad ambiental modelada, no abundancia poblacional ni localización garantizada"
       ],
-      "verification_status": "VERIFICADO_RESOLVEDOR"
+      "verification_status": "PENDING_CROSSREF"
     },
     {
       "id": "SRC-002",
