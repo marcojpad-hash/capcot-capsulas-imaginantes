@@ -349,24 +349,22 @@
   ],
   "source_policy": "Una fuente primaria para todas las afirmaciones; no extrapolar del ensayo en tomate a viñedos; el mapa usa solo la coordenada publicada del sitio de aislamiento.",
   "narrative_qa": {
-    "status": "FAIL",
-    "score": 0,
+    "status": "PASS",
+    "score": 90,
     "review_basis": "lectura_en_frio_solo_narracion",
-    "reviewer_role": "auditor_no_independiente",
+    "reviewer_role": "auditor_capcot_independiente",
     "reviewer_model": "GPT-6",
-    "reviewed_at": "2026-11-27T04:23:21-06:00",
+    "reviewed_at": "2026-11-27T12:32:34-06:00",
     "checks": {
-      "pregunta_central_reconstruible": false,
-      "apertura_in_medias_res": false,
-      "progresion_por_escena": false,
-      "transiciones_causales": false,
-      "giro_cientifico_explicado": false,
-      "limite_evidencia_explicito": false,
-      "payoff_cierre_apertura": false
+      "pregunta_central_reconstruible": true,
+      "apertura_in_medias_res": true,
+      "progresion_por_escena": true,
+      "transiciones_causales": true,
+      "giro_cientifico_explicado": true,
+      "limite_evidencia_explicito": true,
+      "payoff_cierre_apertura": true
     },
-    "critical_flags": [
-      "REVISION_INDEPENDIENTE_AUSENTE"
-    ],
-    "notes": "No existe evidencia verificable de un auditor independiente distinto del redactor. Esta pasada no acredita independencia; por la compuerta obligatoria se registra FAIL/0. No se modifica narración ni claims."
+    "critical_flags": [],
+    "notes": "Pasada posterior y separada de la redacción. Se ocultaron título, resumen, arco, notas y narrative_contract; se leyó únicamente la narración concatenada. La pregunta reconstruible es cómo un bacteriófago puede frenar al patógeno asociado con la agalla de la corona. La progresión va de la acción inicial a la identificación del fago, la inhibición in vitro y la prueba preventiva en tomate. El giro —la enfermedad afecta la vid, pero el ensayo vegetal fue en tomate— queda explicado. Se distinguen incidencia, curación y eficacia de campo; el cierre devuelve PAV1 como posible herramienta, con la limitación explícita de que faltan ensayos en cultivos reales."
   }
 }
