@@ -171,3 +171,12 @@ Los cinco candidatos iniciales (turberas, cemento por plasma, complejidad de cop
 - **Respaldo oficial:** la página HTML de Google Trends México sí respondió y mostró 260 tendencias; las primeras 25 se concentraron en deportes, clima, aguinaldo y actualidad general, sin candidato científico/natural admisible. No se añade tema por tendencia.
 - **PAV1:** el artículo primario de Frontiers está accesible, publicado el 26-11-2026, con DOI visible `10.3389/fpls.2026.2008228`. La consulta directa a Crossref REST falló por resolución DNS y la herramienta no confirmó la redirección `doi.org`; se mantiene `VERIFICADO_URL`, Crossref/`--check-doi` pendiente. El storyboard conserva el slot libre 07:00, pero su QA narrativo quedó `FAIL/0` por `REVISION_INDEPENDIENTE_AUSENTE`; no es apto para promoción.
 - Los cinco candidatos activos del radar se conservan sin añadir uno nuevo: PAV1, riesgo genético mesopelágico, `Westlothiana`, L-BAIBA y `Uintatherium`. Los otros cuatro continúan con la verificación DOI/Crossref pendiente; no se inventan resoluciones.
+
+
+## Revalidación de fuentes y tendencias — 27-11-2026, 05:58 CDMX
+
+- Se ejecutó una copia local del código vigente de `scripts/tendencias.py` con `--geo MX --dias 7`. Los diez RSS científicos configurados fallaron por DNS: `URLError(gaierror(-3, 'Temporary failure in name resolution'))`. Google Trends RSS devolvió el mismo error; salida del script: lista vacía. No se interpretó como ausencia de noticias.
+- Respaldo oficial: Google Trends HTML México, últimas 24 horas, mostró 249 tendencias. Las primeras 25 estuvieron dominadas por deportes, clima, asuntos de consumo y actualidad; no apareció un candidato científico/natural apto.
+- PAV1: la página completa de Frontiers confirma publicación el 26-11-2026, DOI `10.3389/fpls.2026.2008228` y el punto de aislamiento `41.1081 N, 16.2606 E` en Métodos. El DOI resolver mostró redirección hacia la URL editorial de Frontiers; el runtime no pudo recuperar esa URL redirigida y Crossref REST siguió inaccesible por DNS. Se conserva `VERIFICADO_URL`; no se marca Crossref como verificado.
+- No se añade candidato ni storyboard nuevo: las demás candidaturas siguen con compuertas de fuente/DOI pendientes y el slot siguiente de 23:30 está ocupado en main.
+
