@@ -419,3 +419,30 @@ No se creó `narrative_qa` nuevo ni se promovió ningún storyboard. No se alter
 - La señal cambia de `PENDING_SOURCE` a `SEÑAL_TREND_CON_FUENTE_PRIMARIA`, pero no entra a la shortlist de cinco ni se convierte en `DATO_DIA`: la fuente tiene 23 días y no satisface la ventana de 48 h. No se crea storyboard ni se asigna slot.
 - **EJECUTADO y VERIFICADO:** radar actualizado y leído de vuelta; commit `6c82ca9b80a2a518a0c8e05560380ca7ff5a9f69`, blob `dca4d3a89d5d19e4fbf6ba58920093f2a0e9fcb2`.
 - Los diez RSS de `scripts/tendencias.py` y Google Trends RSS fueron intentados por apertura directa; se conservan los errores exactos en el radar. El respaldo HTML sí abrió. No se afirma ejecución local de `tendencias.py`.
+
+
+## Revalidación de slots y Actions — 2026-11-27 12:13 CDMX
+
+Esta revalidación supersede la conclusión anterior de que main no ocupaba slots del 27-11. Se consultaron main y la rama de trabajo en solo lectura; no se modificaron main, data/*.json, cola ni estados Grok.
+
+### Main: ocupación real del 27-11
+- **07:00 — microondas.** `docs/briefs/produccion_2026-11-23_28/plan_semana.json` registra QA PASS, 77 s, `yt_videoId=nd0rs6iVy8E`, `publishAt=2026-11-27T13:00:00Z` y un MP4 bajo `/workspace/capcot_prod_20261121/`. El plan aún indica privacidad `private`; no hay `data/historial_youtube.json` ni resultados de búsqueda para `historial_youtube`. **No se afirma publicación pública**. El ID tiene `publishAt` vencido respecto del corte y su estado externo requiere revisión en YouTube Studio. El MP4 no está en el árbol Git: `MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO`. Esto invalida la conclusión previa de ausencia de conflicto para PAV1/07:00: **CONFLICTO_DE_SLOT_ENTRE_RAMAS** y `PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR`.
+- **17:00 — bacterias-vuelta-oxigeno.** Main contiene `proyectos/2026-11-27_bacterias-vuelta-oxigeno/`; `programacion.json` registra `programado_sin_montar` y `publish_at=2026-11-27T23:00:00Z`, sin `video_id`, render ni salida encontrada. Es una reserva/programación, no evidencia de producción montada; aun así ocupa el slot de main: **CONFLICTO_DE_SLOT_ENTRE_RAMAS** y no redispatchar. El storyboard tiene 84 palabras/7 escenas y no contiene `narrative_contract` ni `narrative_qa`: **NOT_DISPATCHABLE**. No se corrigió porque está en main.
+- **23:30 — animal-stubbs.** Main registra hueco 27-11 23:30 y `render.log` confirma 86.13 s; metadata apunta a un MP4 bajo `/workspace/capcot_main/`, ausente del árbol. Sin `video_id` ni `publishAt` en metadata. **PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR**, **MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO** y conflicto con intermareales/23:30. No se afirma publicación.
+
+### Rama feature: clasificación actual
+- `2026-11-27_dato-pav1-bacteriofago`, 07:00: 187 palabras/8 escenas; QA FAIL/0 por independencia no acreditada. Conflicto con microondas de main; **NOT_DISPATCHABLE**.
+- `2026-11-27_dato-registros-intermareales-1950s`, 23:30: PASS/90 previo sin cambio narrativo; conflicto con animal-stubbs de main; **NOT_DISPATCHABLE**.
+- `2026-11-30_rapaces-clima-reino-unido`, 07:00: FAIL/82; `giro_cientifico_explicado=false`; estilo `papel_rasgado_capas` repetido frente al proyecto hidrotermal del 18-11; **NOT_DISPATCHABLE**.
+- `2026-11-30_liquen-gen-cereales`, 17:00: 199 palabras/8 escenas; sin `narrative_qa`, DOI aún PENDING_CROSSREF; **NOT_DISPATCHABLE**.
+- Para los cuatro IDs anteriores, `cola/estado/<id>.json`, `cola/entrada/<id>.json` y `cola/entrada/<id>/storyboard.json` devolvieron 404. Registrar exactamente **RECEPCION_GROK_NO_CONFIRMADA**; no se crearon estados ni entradas.
+- Main reserva además animal-cher-ami/30-11 23:30; no coincide con rapaces/07:00 ni liquen/17:00. No se detectó conflicto de esos dos slots con main.
+
+### Acciones y límites
+- Worker run `46009658666`: job `trabajar` SUCCESS; log: `[trabajador] sin trabajo en cola.` Checkout de ese run fue main `92d6c034b12a86785a5d12eb22e634f8453cd510`, anterior a los paquetes que aparecen en el main actual; el resultado no acredita el estado posterior.
+- CodeQL run `46032854305`: Analyze (python) y Analyze (actions) SUCCESS; no ejecuta el validador estructural ni verifica DOI.
+- PR #3 sigue OPEN/DRAFT, head `c81026c88a9ef71ab56cf65b9fbfce685ad890e1`, mergeable=false. No se hizo merge ni dispatch.
+- `data/publicaciones.json` no refleja los registros de 27-11; `data/rotacion.json` y `data/estilos_usados.json` llegan aproximadamente al 21-11 y `data/temas_del_dia.json` al 28-10. Se consideran incompletos para estado actual; se mantienen solo lectura.
+- No se ejecutó `scripts/validar_storyboard.py`; el archivo se leyó por GitHub, pero no se obtuvo un runtime local del repositorio. No se atribuye PASS estructural a CI/CodeQL.
+
+Resultado: no hay promoción segura ni slot libre para el 27-11. No se generaron medios, no se creó cola, no se dispararon workflows y no se modificó main.
