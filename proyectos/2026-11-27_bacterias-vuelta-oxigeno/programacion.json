@@ -1,1 +1,15 @@
-PLACEHOLDER
+{
+  "plataforma": ["youtube", "tiktok"],
+  "publish_at": "2026-11-27T23:00:00Z",
+  "ventana": "tarde",
+  "hora_cdmx": "2026-11-27 17:00",
+  "caption_tt": "¿Te imaginas una colonia que se voltea sola cuando se acaba el aire? Las bacterias lo hacen con física pura. #ciencia #bacterias #curiosidades",
+  "titulo_yt": "Las bacterias que se voltean por falta de oxígeno #Shorts",
+  "privacidad": "private",
+  "nota_privacidad": "private hasta la hora programada, luego público",
+  "estado": "programado_sin_montar",
+  "project_id": "2026-11-27_bacterias-vuelta-oxigeno",
+  "tema": "bacterias colonia eversion oxigeno Neisseria",
+  "estilo": "claymation",
+  "estructura": "pregunta"
+}
