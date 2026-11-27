@@ -4,7 +4,7 @@
 
 ## Precedencia y capacidad reconciliada
 
-Consultar primero `docs/CONTRATO_OPERATIVO_UNIFICADO.md`. En esta rama, `scripts/rotacion.py` permite hasta cinco cápsulas por fecha (máximo dos propias y cinco externas, con tope global de cinco); `scripts/procesar_cola.py` procesa múltiples entradas de la fecha y conserva la entrada original cuando falla producción. La asignación horaria dispone de cinco ventanas, alineadas con los slots 07:00, 13:30, 17:00, 19:00 y 23:30 CDMX. Capacidad de código y programación no equivalen a publicaciones efectivas: cada publicación requiere QA y evidencia de plataforma. ChatGPT conserva el alcance textual descrito en este Plan; Imaginantes opera producción audiovisual, QA y publicación.
+- **Slots y autoridad horaria (revisión 2026-11-27):** la fuente vigente de ventanas activas es `main:data/horarios.json` (actualizada 2026-11-23): mañana 06:30–07:30 y tarde 16:30–18:00; 23:30 es el slot fijo de dato del día. La ventana 13:00–14:30 permanece experimental y 19:00–21:00 está retirada/no autorizada para producción automática. `scripts/rotacion.py` conserva 13:00–14:30 como ventana de prueba, no como slot de producción. Las preferencias de día (martes, miércoles, jueves y sábado) orientan la rotación, pero no sustituyen la comprobación de fecha+slot en `main`, cola, salidas y programación. La antigua tabla de cinco slots 07:00/13:30/17:00/19:00/23:30 queda supersedida.
 
 ## Objetivo y alcance
 CAPCOT / **Datos y ociosidades** produce cápsulas científicas y de naturaleza. ChatGPT es responsable de investigación, documentación y preproducción textual. Su entrega normal es un brief y un storyboard JSON verificables en GitHub.
