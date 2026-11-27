@@ -80,3 +80,37 @@ Frontiers in Materials aceptó el 26-11-2026 un artículo sobre compensación de
 2. El storyboard de rapaces del 30-11-2026 07:00 sigue en `proyectos/`; no está preparado ni promovido.
 3. No se generaron medios, frames, voz, audio, video, renders ni placeholders.
 4. Ningún candidato se marca como recibido por Grok, seleccionado, producido, aprobado o publicado.
+
+
+## Revalidación de fuentes y tendencias — 27-11-2026 02:04 CDMX
+
+**Alcance de esta reconsulta:** se intentó abrir directamente cada URL RSS definida en `scripts/tendencias.py`; no se ejecutó el script Python en un runtime del repositorio. Los resultados exactos fueron:
+
+| Fuente | Error de acceso |
+|---|---|
+| ScienceDaily Science | `400 Unsupported content-type: application/xml` |
+| ScienceDaily Health | `400 Unsupported content-type: application/xml` |
+| ScienceDaily Space | `400 Unsupported content-type: application/xml` |
+| Phys.org | `400 Unsupported content-type: text/xml` |
+| NASA | `400 Unsupported content-type: application/rss+xml` |
+| ESA Space Science | `404 Not Found` |
+| Nature RSS | `400 Unsupported content-type: application/rss+xml` |
+| EurekAlert | `URL ... is not accessible via this tool` |
+| Agencia SINC | `URL ... is not accessible via this tool` |
+| UNAM Global | `400 Unsupported content-type: application/rss+xml` |
+| Google Trends RSS México | `URL ... is not accessible via this tool` |
+
+El respaldo HTML oficial de [Google Trends México](https://trends.google.com/trending?geo=MX) mostró **253 tendencias**. Las primeras 25 siguieron dominadas por deportes, clima, actualidad, figuras públicas y entretenimiento; no se identificó una señal científica/natural admisible.
+
+### Vigilancia adicional — PAV1 y el patógeno de la agalla de la corona
+
+- **Fuente primaria:** Sabri et al., *Frontiers in Plant Science*, Original Research, publicado el 26-11-2026. DOI declarado por la página editorial: [10.3389/fpls.2026.2008228](https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2026.2008228/full).
+- **Observación:** el artículo describe PAV1 como el primer bacteriófago identificado que infecta *Allorhizobium vitis*. Reporta inhibición del crecimiento bacteriano superior al 98% en 48 h in vitro. En plantas de tomate, a los 25 días, la incidencia fue 83.3% en controles sin tratar y 46.7%/50.0% tras aplicaciones preventivas por inyección del tallo/aspersión foliar.
+- **Observación de procedencia:** el fago se aisló de una muestra de aguas residuales tomada en noviembre de 2025 en la entrada de la planta municipal de tratamiento de Bari, Italia (41.1081° N, 16.2606° E). Esa coordenada corresponde al punto de aislamiento, no al lugar de los ensayos en tomate.
+- **Límite:** el ensayo de biocontrol descrito es en tomate; no demuestra eficacia de campo en viñedos ni control de agalla en plantas de vid. No convertir los porcentajes en una promesa de tratamiento comercial.
+- **Cálculo CAPCOT:** ninguno.
+- **Inferencia:** candidato con giro visual fuerte —un virus bacteriano aislado de aguas residuales que reduce una enfermedad vegetal en condiciones experimentales—, pero requiere explicar la diferencia entre actividad in vitro y ensayo preventivo en tomate.
+- **Recomendación:** conservar como vigilancia, no añadirlo a los cinco candidatos principales ni crear storyboard todavía. No se identificó una ubicación publicada para los ensayos en tomate; el único pin verificable es el sitio de aislamiento en Bari.
+- **Estado DOI:** `PENDING_CROSSREF`. La apertura directa de Crossref y `doi.org` devolvió `Internal Error ()` y “URL ... is not accessible via this tool”; la página editorial primaria sí está accesible. No marcar el DOI como verificado.
+
+Los cinco candidatos principales del corte permanecen sin cambios y con Crossref pendiente. No se creó storyboard para el 28-11-2026 23:30 ni para otro slot.
