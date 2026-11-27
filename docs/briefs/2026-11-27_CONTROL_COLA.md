@@ -377,3 +377,36 @@ Se recuperó la lista canónica desde `ajustes_entre_modelos/PARA_CHATGPT_semana
 **Verificación Grok:** los doce `cola/estado/<id>.json` devolvieron HTTP 404; se conserva `RECEPCION_GROK_NO_CONFIRMADA` para cada uno. No se creó ni editó ningún estado.
 
 **Resultado:** 2 PASS / 10 FAIL, sin cambios narrativos ni nuevos PASS. Las doce copias heredadas con slugs alternativos permanecen en `cola/bloqueados/` sin renombrar, fusionar ni borrar; la copia anidada de `2026-11-07_comida-hielo-caliente` en main conserva el video_id y publishAt históricos ya documentados. No se redispatcha ninguna.
+
+
+## Revalidación complementaria — 27-11-2026 10:26 CDMX
+
+### Storyboards vigentes y compuertas
+
+Se releen los cuatro storyboards actuales del backlog y se consulta individualmente `cola/estado/<project_id>.json`. Los cuatro estados devolvieron HTTP 404; se conserva exactamente `RECEPCION_GROK_NO_CONFIRMADA` para cada ID. No se creó ni editó ningún estado.
+
+| project_id | slot | narración | duración total | narrative_qa | fuentes / handoff | decisión |
+|---|---:|---:|---:|---|---|---|
+| `2026-11-27_dato-pav1-bacteriofago` | 07:00 | 187 palabras / 8 escenas | 84 s | FAIL/0; `REVISION_INDEPENDIENTE_AUSENTE` | URL primaria verificada; DOI no acreditado por Crossref en esta sesión; estado 404 | `NOT_DISPATCHABLE`; slot ya transcurrido |
+| `2026-11-27_dato-registros-intermareales-1950s` | 23:30 | 173 palabras / 8 escenas | 84 s | PASS/90; siete checks true | cuatro fuentes con DOI/resolvedor registrados como verificados; estado 404 | `NOT_DISPATCHABLE`; `CONFLICTO_DE_SLOT_ENTRE_RAMAS` con Stubbs en main |
+| `2026-11-30_liquen-gen-cereales` | 17:00 | 199 palabras / 8 escenas | 84 s | ausente | Nature primaria accesible; DOI `10.1038/s41586-026-11151-w` sigue `PENDING_CROSSREF`; estado 404 | `NOT_DISPATCHABLE`; falta QA independiente y validación oficial |
+| `2026-11-30_rapaces-clima-reino-unido` | 07:00 | 182 palabras / 8 escenas | 84 s | FAIL/82; giro científico no explicado | DOI `10.3389/fevo.2026.1922294` sigue `PENDING_CROSSREF`; fuentes oficiales auxiliares accesibles; estado 404 | `NOT_DISPATCHABLE`; no reescribir ni repetir QA válido |
+
+En los cuatro casos se comprobó: voz `es-MX-JorgeNeural` (+7%, -2Hz), gancho de seis palabras o menos, estilo presente en catálogo, prefijo `prompt_base` en prompts, capa mapa con coordenadas/bounds y fuente, capa de dato/gráfico, ambiente y SFX por escena, 170–235 palabras, 7–9 escenas, cortinilla de 6 s, total de 75–90 s, `approved_assets=[]`, `export.render_status=NOT_GENERATED` y publicación pendiente. El prechequeo fue estático/parcial; **no es ejecución del validador oficial**.
+
+No se creó `narrative_qa` nuevo ni se promovió ningún storyboard. No se alteró la narración de PAV1, intermareales, liquen ni rapaces. El PASS/90 de intermareales se conserva sin repetirlo; el FAIL/82 de rapaces se conserva sin repetirlo.
+
+### Producción preexistente, slots y Actions
+
+- `main/data/rehechos_2026-11-22.json` confirma producción previa y programación: 27-nov 10:00 (miel, video_id `p06UCGu0-Og`) y 15:00 (ola azul, `HKpani8TTeY`); 28-nov 10:00 (dunas, `6VUxaJtqbF0`) y 15:00 (Júpiter, `Dx3lqkAb8Sc`); 29-nov 10:00 (Dunkelflaute, `m1FeS0mhfZ4`). Se clasifican `PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR`; no se duplican ni cancelan.
+- `main/data/publicaciones.json` no contiene todavía esos registros del 27–29 nov; no se usa por sí solo como prueba de ausencia. `main/data/duplicados_privatizados_2026-11-23.json` y `main/data/vistas_historico.json` no contienen los IDs originales ni los nuevos de esos cinco paquetes. El estado actual de los IDs antiguos no queda acreditado por esos archivos: riesgo de programación histórica **no verificado**, sin tocar videos.
+- El workflow `.github/workflows/capcot-grok-dispatch.yml` escucha JSON plano en `cola/entrada/*.json`; no se disparó ni se envió payload. El run `46009658666` de `Trabajador de cola` terminó SUCCESS, pero el log literal fue `[trabajador] sin trabajo en cola.`; no es acuse Grok.
+- El run `46032854305` de PR #3 terminó SUCCESS en CodeQL. PR #3 sigue abierto, draft y no mergeable; PR #15 sigue abierto y no mergeable. Ninguno acredita ejecución de `scripts/validar_storyboard.py`.
+- El intento de clonar el repositorio para ejecutar el validador local falló literalmente: `fatal: unable to access 'https://github.com/marcojpad-hash/capcot-capsulas-imaginantes.git/': Could not resolve host: github.com`. No se disparó CI como alternativa porque el workflow de dispatch puede escribir handoffs y enviar webhook.
+
+### Resultado
+
+- **EJECUTADO:** relectura de cuatro storyboards, cuatro consultas individuales de estado Grok, contraste con main, lectura de Actions/logs y prechequeo estructural parcial.
+- **VERIFICADO:** cuatro 404 de estado Grok; un conflicto de slot entre ramas; cinco paquetes con producción/programación previa en main; worker sin trabajo; CodeQL exitoso sin validador estructural.
+- **PENDIENTE:** auditoría narrativa verdaderamente independiente para PAV1 y liquen; DOI/Crossref para liquen y rapaces; ejecución del validador oficial; confirmación externa del estado de IDs antiguos.
+- **NO REALIZADO:** promoción a cola, dispatch, publicación, reprogramación, cancelación, cambios en `data/*.json`, main, secretos o permisos.
