@@ -357,3 +357,21 @@ Fuente primaria de vigilancia añadida: [NASA Science — NASA’s NG-25 Mission
 - **Trincheras del Nullarbor / cuevas profundas:** la nota de ScienceDaily/Conversation aparece el 26-11, pero el artículo primario de *Communications Earth & Environment* [10.1038/s43247-026-04016-7](https://www.nature.com/articles/s43247-026-04016-7) fue publicado el **17-09-2026**. Se excluye del corte reciente; no contar la republicación como descubrimiento nuevo.
 - **Google Trends México, respaldo HTML a las 12:32:** 240 tendencias en últimas 24 h. Las primeras 25 están dominadas por fútbol, actualidad, clima y entretenimiento. «agujero de la capa de ozono» aparece con 2K+ búsquedas y actividad hace 8 h; se mantiene como señal, no como claim ni DATO_DIA. La fuente NOAA/NASA correspondiente tiene fecha 04-11-2026 y queda fuera de la ventana de 48 h.
 - **DOI/Crossref:** se reintentaron los accesos directos Crossref/doi.org para los DOI de los borradores activos; el visor devolvió `Internal Error ()` / URL no accesible. Las páginas editoriales primarias son accesibles y muestran los DOI, pero no se marca `VERIFICADO_CROSSREF`. La shortlist de cinco candidatos no cambia.
+
+## Bitácora de lectura RSS — 27-11-2026 12:48 CDMX
+
+Se intentó recuperar directamente cada URL declarada en `scripts/tendencias.py` mediante el visor web. Los errores exactos del visor fueron:
+
+| Feed | Resultado exacto |
+|---|---|
+| ScienceDaily science / health / space_time | `400 Unsupported content-type: application/xml` |
+| Phys.org | `400 Unsupported content-type: text/xml` |
+| NASA news-release | `400 Unsupported content-type: application/rss+xml` |
+| ESA Space Science | `404 Not Found` |
+| Nature RSS | `400 Unsupported content-type: application/rss+xml` |
+| EurekAlert | `URL ... is not accessible via this tool` |
+| SINC | `URL ... is not accessible via this tool` |
+| UNAM Global | `400 Unsupported content-type: application/rss+xml` |
+| Google Trends RSS México | `URL https://trends.google.com/trending/rss?geo=MX is not accessible via this tool` |
+
+Esto documenta un fallo de lectura XML/RSS del visor; **no** se presenta como ejecución local de `scripts/tendencias.py`. No se disparó CI ni se simuló la ingesta. Como respaldo oficial se abrió la página HTML de Google Trends México y se consultaron páginas editoriales/primarias de Nature, Frontiers, NOAA y NASA; se conservaron los cinco candidatos vigentes y los descartes por fecha primaria indicados arriba.
