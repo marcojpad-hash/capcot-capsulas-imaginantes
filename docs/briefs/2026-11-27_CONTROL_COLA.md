@@ -136,3 +136,9 @@ No se modificaron `main`, `data/*.json`, secretos, permisos, estados Grok, progr
 - PR #3 sigue OPEN/DRAFT; PR #15, #14 y #13 siguen abiertos. Issues #11 y #16 siguen abiertos. No se disparó workflow, no se envió payload y no se hizo merge.
 - El backlog 24–26 nov de main conserva los mismos 12 storyboards; el commit de main citado no tocó sus archivos. El lote canónico 5–7 nov conserva las revisiones del 18-nov; no se repitieron PASS válidos ni se modificaron copias heredadas.
 - No se modificaron main, `data/*.json`, cola, estados Grok, programación externa, secretos, permisos ni medios. No se generó ni publicó contenido.
+
+
+### CI posterior a los commits de esta revalidación
+
+- Rama de trabajo leída de vuelta: `feature/capcot-video-discovery-continuity` en `68674b8ebe93d386e1c21a6aff5c4f56777e2e43`.
+- PR #3 CodeQL: run 45962867108 (commit QA `bc0bed724a62a1408da6c3beae8a7a2a93a026cd`), 45962917048 (radar `b0e3de54d1b46394d8f67b4db7900a0407bc193e`) y 45962966589 (control `68674b8ebe93d386e1c21a6aff5c4f56777e2e43`) terminaron SUCCESS en los jobs Analyze (actions) y Analyze (python). Son análisis CodeQL; no ejecutan el validador estructural ni `--check-doi`.
