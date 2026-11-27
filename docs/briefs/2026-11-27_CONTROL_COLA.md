@@ -441,7 +441,7 @@ Esta revalidación supersede la conclusión anterior de que main no ocupaba slot
 ### Acciones y límites
 - Worker run `46009658666`: job `trabajar` SUCCESS; log: `[trabajador] sin trabajo en cola.` Checkout de ese run fue main `92d6c034b12a86785a5d12eb22e634f8453cd510`, anterior a los paquetes que aparecen en el main actual; el resultado no acredita el estado posterior.
 - CodeQL run `46032854305`: Analyze (python) y Analyze (actions) SUCCESS; no ejecuta el validador estructural ni verifica DOI.
-- PR #3 sigue OPEN/DRAFT, head `c81026c88a9ef71ab56cf65b9fbfce685ad890e1`, mergeable=false. No se hizo merge ni dispatch.
+- Al corte inicial de esta revalidación, PR #3 seguía OPEN/DRAFT; no se hizo merge ni dispatch.
 - `data/publicaciones.json` no refleja los registros de 27-11; `data/rotacion.json` y `data/estilos_usados.json` llegan aproximadamente al 21-11 y `data/temas_del_dia.json` al 28-10. Se consideran incompletos para estado actual; se mantienen solo lectura.
 - No se ejecutó `scripts/validar_storyboard.py`; el archivo se leyó por GitHub, pero no se obtuvo un runtime local del repositorio. No se atribuye PASS estructural a CI/CodeQL.
 
