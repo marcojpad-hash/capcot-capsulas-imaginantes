@@ -183,3 +183,20 @@ La comparación de blobs entre el commit del run y el HEAD actual de esta rama c
 - `.github/workflows/validar-kuroshio.yml`: `e8151c8eb1ee5a0893f3f800f4c625887427ecde`
 
 La fuente primaria conserva `doi_verification_status=DOI_VISIBLE_EN_PAGINA_EDITORIAL_Y_PDF; RESOLVEDOR_CROSSREF_NO_CONFIRMADO`. Por tanto, el DOI continúa pendiente y el estado documental sigue siendo **BORRADOR_EN_PROYECTOS_NO_APTO_PARA_PROMOCION**. No se modifica la narración, los claims, el estado Grok ni la decisión editorial.
+
+
+## Revalidación CI posterior — run #23 (27-nov-2026)
+
+- Workflow: `.github/workflows/validar-kuroshio.yml`.
+- Run: `46073709847`; job: `140756420589`; conclusión: `success`.
+- Rama: `feature/capcot-video-discovery-continuity`.
+- Commit ejecutado: `2b8a289d752eb5b5c1a53f2af3e636b136abfa0c`.
+- Inicio: `2026-11-27T21:58:40Z` (15:58:40 CDMX).
+- Comando exacto: `python scripts/validar_storyboard.py proyectos/2026-11-18_dato-kuroshio-puente-atmosferico/storyboard.json`.
+- Resultado literal del validador: `OK`.
+- Comprobación adicional del contrato de preproducción: `Expediente textual íntegro; medios no generados; publicación no autorizada.`
+- **No se ejecutó `--check-doi`**. Este run acredita validación estructural, no resolución Crossref/doi.org.
+- La comparación del commit del run con el HEAD actual `35f59a22ac1cf65c0479dabf88eb2f3d49ba7c0c` muestra que los cambios posteriores se limitaron a `docs/briefs/2026-11-27_CONTROL_COLA.md`; no cambiaron el storyboard, el validador ni este workflow. Los blobs del storyboard, validador y workflow siguen siendo los registrados arriba.
+- El DOI `10.1038/s41561-026-02139-2` conserva `DOI_VISIBLE_EN_PAGINA_EDITORIAL_Y_PDF; RESOLVEDOR_CROSSREF_NO_CONFIRMADO`. Estado final: **BORRADOR_EN_PROYECTOS_NO_APTO_PARA_PROMOCION**.
+
+No se modifican narración, claims, `data/*.json`, estado Grok ni decisión editorial.
