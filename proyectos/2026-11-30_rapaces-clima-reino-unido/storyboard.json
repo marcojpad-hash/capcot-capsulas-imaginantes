@@ -389,7 +389,7 @@
   "validation_notes": [
     "Slot 2026-11-30 07:00: ventana activa 06:30–07:30 según main:data/horarios.json. No aparece ocupado en main:data/publicaciones.json, main:data/rotacion.json, main:data/cola.json, main:data/miniaturas_auditoria_2026-11-21.json, main:data/rehechos_2026-11-22.json, main:docs/briefs/produccion_2026-11-23_28/plan_semana.json, main:tools/animales_2026-11-23/specs_animales.py ni en proyectos/cola/salidas de ambas ramas. Main sí reserva 2026-11-30 23:30 para Cher Ami. El lunes no es día preferente de mañana, pero 07:00 cae dentro de la ventana activa. No se encontró historial_youtube; no hay verificación externa de YouTube Studio. Mantener como borrador y no promover hasta reconciliar programación externa.",
     "Fuente primaria Frontiers accesible y DOI visible; el enlace DOI redirigió a la página oficial del editor. Crossref REST no quedó confirmado; --check-doi no se ejecutó y permanece como compuerta independiente.",
-    "No se ejecutó el validador estructural real para este storyboard; el conteo local de palabras y duraciones es una comprobación manual preliminar.",
+    "Conteo manual con la misma expresión regular words() de scripts/validar_storyboard.py: 184 palabras; 8 escenas; 78 segundos de escena + 6 de cortinilla = 84. Esto no sustituye la ejecución del validador estructural real.",
     "No se realizó QA narrativo independiente en este run de autoría; narrative_qa se omite deliberadamente.",
     "No se creó cola/entrada ni cola/estado; recepción Grok no confirmada. No se generaron imágenes, voz, audio, video, frames ni renders."
   ],
