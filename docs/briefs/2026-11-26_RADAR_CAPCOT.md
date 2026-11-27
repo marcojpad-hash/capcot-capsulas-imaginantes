@@ -350,3 +350,25 @@ Clasificación del borrador intermareal de feature:
 - La metadata `validation_notes` del storyboard fue actualizada y releída para registrar el conflicto. Narración y QA no cambiaron.
 
 La misma especificación contiene reservas adicionales para 28, 29 y 30-nov a las 23:30. No se reasigna este borrador a otro día sin una conciliación nueva de slots y rotación.
+
+
+## Actualización de investigación — 2026-11-26, 17:59 CDMX
+
+**Estado:** cinco candidatos nuevos en radar; ninguno seleccionado; no se creó storyboard. Los cinco artículos primarios de Nature Communications / Communications Biology muestran fecha editorial de publicación 26-nov-2026 y DOI en su página de editor. La consulta directa a Crossref/doi.org no entregó un registro verificable en esta sesión; por tanto todos quedan `PENDING_CROSSREF`. No se interpreta esa falta de respuesta como DOI inválido.
+
+### Candidatos recientes
+
+1. **Biosensores bacterianos localizan ácido siálico en intestino inflamado.** Carreño et al., *Nature Communications*, 26-nov-2026. DOI: `10.1038/s41467-026-79508-3`. [Fuente primaria](https://www.nature.com/articles/s41467-026-79508-3). Observación: un biosensor de *E. coli* diseñado para responder al ácido siálico permaneció funcional al menos seis semanas en intestino de ratón; el mapeo a escala de órgano mostró que el máximo de señal microbiana y el principal foco de lesión inflamatoria no coincidían. Límite: modelos murinos; no equivale a una intervención probada en humanos. Potencial visual alto, pero revisar rotación por proximidad temática con microbioma.
+2. **DHA interactúa con un sitio específico del canal ASIC3.** Roth et al., *Communications Biology*, 26-nov-2026. DOI: `10.1038/s42003-026-11348-9`. [Fuente primaria](https://www.nature.com/articles/s42003-026-11348-9). Observación: simulaciones de dinámica molecular y electrofisiología localizaron una región de interacción de DHA en ASIC3; una mutación eliminó el enlentecimiento de la desensibilización mediado por DHA. Límite: mecanismo molecular; no demuestra un tratamiento contra el dolor.
+3. **Una mutación de histona se conecta con dependencia metabólica en un tumor cerebral pediátrico.** Mersich et al., *Nature Communications*, 26-nov-2026. DOI: `10.1038/s41467-026-79694-0`. [Fuente primaria](https://www.nature.com/articles/s41467-026-79694-0). Observación: H3K27M aumenta la actividad de NFI y reorganiza el metabolismo de purinas; inhibir la enzima ATIC redujo la aptitud de células tumorales y ralentizó tumores ortotópicos, prolongando supervivencia en ratones. Límite: evidencia preclínica; no presentar como tratamiento clínico disponible.
+4. **Aprendizaje profundo prioriza interacciones entre receptores GPCR y metabolitos.** Sakuma et al., *Communications Biology*, 26-nov-2026. DOI: `10.1038/s42003-026-11388-1`. [Fuente primaria](https://www.nature.com/articles/s42003-026-11388-1). Observación: G-LEAP combina secuencias de receptores y estructuras 3D de ligandos; genera más de 120 millones de pares receptor–metabolito predichos y prioriza candidatos. Límite: son predicciones para validación experimental; no demuestra unión para todos los pares ni clasifica por sí solo agonismo/antagonismo.
+5. **Materiales que se endurecen ante impactos mediante interacciones huésped–invitado.** Ji et al., *Nature Communications*, 26-nov-2026. DOI: `10.1038/s41467-026-78743-y`. [Fuente primaria](https://www.nature.com/articles/s41467-026-78743-y). Observación: en polipseudorotaxanos, la cinética de desensartado no alcanza a seguir la deformación rápida; el módulo de almacenamiento aumenta 48 veces entre 0.1 y 100 Hz a 25 °C. Límite: resultado del material y condiciones del ensayo; no acredita por sí solo protección certificada en uso real. Revisar rotación por proximidad a los temas recientes de materiales.
+
+### Señales de tendencias y compuertas
+
+- Google Trends México, página oficial «Trending Now», consulta de las últimas 24 h: 292 tendencias; la primera página muestra 1–25. Predominan fútbol, NFL, Thanksgiving y búsquedas generales; no aparece un candidato científico/natural claro entre esas 25. [Fuente oficial](https://trends.google.com/trending?geo=MX).
+- Se reintentó la lectura de los 11 RSS enumerados por `scripts/tendencias.py`; la interfaz no entregó los cuerpos individuales en esta pasada. No se afirma que los feeds estén caídos ni se inventan códigos HTTP.
+- Los cinco DOI están visibles en las páginas editoriales, pero la resolución Crossref/doi.org sigue pendiente. El validador estructural y `--check-doi` tampoco se ejecutaron.
+- La rotación y el mapa geográfico aún deben comprobarse para cualquier candidato. Estos artículos describen experimentos moleculares, celulares o en ratón; no se inventarán coordenadas ni se convertirá la ubicación institucional en un mapa de estudio.
+- **Recomendación de investigación, no selección editorial:** priorizar la lectura fría del artículo de ASIC3 y del biosensor bacteriano; mantener NFI con límite preclínico explícito; dejar GPCR como candidato técnico y materiales en reserva por rotación. Ninguno pasa todavía a `proyectos/`.
+
