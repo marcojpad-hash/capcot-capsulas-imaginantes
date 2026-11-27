@@ -1,7 +1,7 @@
 # RADAR CAPCOT — 2026-11-27
 
 **Corte:** 27 de noviembre de 2026, 00:02 CDMX.  
-**Estado al corte 03:55 CDMX:** cinco candidatos activos con fuente primaria identificada; PAV1 seleccionado para borrador matutino 07:00. La validación estructural real y `--check-doi` siguen pendientes; no hay promoción ni despacho.
+**Última actualización:** 27 de noviembre de 2026, 09:59 CDMX. Shortlist vigente de cinco candidatos del corte: EpTFIIAγ, malaria m⁶A/YTH.2, actividad fuera del blanco de CAY10641/CAY10650, ensamblaje de CAST tipo I-F y circuito intestino-cerebro de Drosophila. El borrador de EpTFIIAγ permanece en `proyectos/` para 30-11 17:00; no está seleccionado, preparado ni promovido. DOI/Crossref y validador estructural real pendientes.
 
 ## Método y fuentes
 
@@ -229,3 +229,82 @@ Respaldo oficial consultado: [Google Trends México, últimas 24 horas](https://
 - El único storyboard nuevo es un borrador en `proyectos/`; no contiene `narrative_qa`, no está marcado PREPARADO y no tiene medios.
 - `approved_assets=[]`, `export.render_status=NOT_GENERATED` y `publicacion.status=PENDIENTE_DECISION_GROK`.
 - La promoción permanece bloqueada hasta DOI/Crossref, validador estructural real y revisión narrativa independiente PASS.
+
+
+## Revalidación de fuentes y tendencias — 27-11-2026, 09:59 CDMX
+
+### Ingesta RSS y respaldo de tendencias
+
+Se intentó abrir cada URL declarada en `scripts/tendencias.py`. El visor web no pudo consumir los XML/RSS; los errores exactos fueron:
+
+| Feed | Resultado de apertura directa |
+|---|---|
+| ScienceDaily Science, Health y Space | `400 Unsupported content-type: application/xml` |
+| Phys.org | `400 Unsupported content-type: text/xml` |
+| NASA | `400 Unsupported content-type: application/rss+xml` |
+| ESA Space Science | `404 Not Found` |
+| Nature RSS | `400 Unsupported content-type: application/rss+xml` |
+| EurekAlert | `URL ... is not accessible via this tool` |
+| Agencia SINC | `URL ... is not accessible via this tool` |
+| UNAM Global | `400 Unsupported content-type: application/rss+xml` |
+| Google Trends RSS México | `URL ... is not accessible via this tool` |
+
+No se atribuyen los errores de tipo de contenido a una caída de los feeds. Tampoco se afirma una nueva ejecución local de `tendencias.py`: el intento de recuperar los scripts desde GitHub en el contenedor falló con `curl: (6) Could not resolve host: raw.githubusercontent.com`.
+
+**Respaldo oficial:** [Google Trends México, últimas 24 horas](https://trends.google.com/trending?geo=MX) mostró 250 tendencias. En las primeras 25, la señal científica/natural más clara fue “agujero de la capa de ozono” (2K+ búsquedas, activa unas 6 horas antes del corte). Se conserva solo como señal de tendencia: `PENDING_SOURCE`; no se encontró en este corte un artículo primario específico que permita convertirla en candidato.
+
+### Shortlist vigente del corte — cinco candidatos
+
+Los cinco elementos siguientes forman la shortlist de este corte. Los candidatos de cortes anteriores (PAV1, riesgo mesopelágico, `Westlothiana`, L-BAIBA, `Uintatherium`, turberas, cemento, copas forestales, coagulante algal y madera) permanecen como registros históricos/vigilancia; no se promueven ni se vuelven a contar en esta shortlist.
+
+#### 1. EpTFIIAγ de un hongo formador de líquenes — candidato principal ya en borrador
+
+- **Fuente primaria:** Du et al., *Nature*, publicado el 25-11-2026. [Artículo y PDF primarios](https://www.nature.com/articles/s41586-026-11151-w.pdf). DOI: `10.1038/s41586-026-11151-w`.
+- **Observación:** la expresión heteróloga de EpTFIIAγ mejoró el rendimiento por parcela de cinco cultivares de trigo bajo déficit hídrico en 19.4–32.8%; el artículo también informa aumentos de rendimiento por planta en arroz y maíz.
+- **Cálculo:** ninguno adicional; las cifras son las reportadas por el artículo. Las coordenadas de cuatro sitios de trigo se convirtieron de grados/minutos a decimales y se documentaron en el storyboard.
+- **Inferencia:** el factor puede ayudar a coordinar respuestas al estrés y programas de desarrollo; no demuestra una variedad comercial disponible ni una solución universal.
+- **Recomendación:** mantener como candidato principal para el slot de 30-11 17:00, sujeto a compuertas. El storyboard sigue siendo borrador.
+- **DOI:** `PENDING_CROSSREF`; la página/PDF primaria muestra el DOI, pero Crossref y `doi.org` no fueron accesibles en esta sesión.
+
+#### 2. m⁶A/YTH.2 y la transmisión de malaria
+
+- **Fuente primaria:** Mussgnug et al., *Nature Microbiology*, 25-11-2026. [Artículo primario](https://www.nature.com/articles/s41564-026-02516-y.pdf). DOI: `10.1038/s41564-026-02516-y`.
+- **Observación:** en gametocitos masculinos de *Plasmodium falciparum*, YTH.2 reconoce transcritos marcados con m⁶A y reprime su traducción; el descenso térmico asociado a la ingestión por el mosquito modifica esa interacción.
+- **Cálculo:** ninguno.
+- **Inferencia:** parte de la preparación para la transmisión depende de una respuesta molecular sensible a temperatura; no es evidencia de tratamiento ni de control del mosquito en campo.
+- **Recomendación:** candidato de prioridad media-alta para un slot posterior, sin duplicar el de EpTFIIAγ.
+- **DOI:** `PENDING_CROSSREF`.
+
+#### 3. Actividad fuera del blanco de inhibidores de cPLA₂
+
+- **Fuente primaria:** König et al., *Frontiers in Pharmacology*, Original Research, 26-11-2026. [Artículo primario](https://www.frontiersin.org/journals/pharmacology/articles/10.3389/fphar.2026.1944522/full). DOI: `10.3389/fphar.2026.1944522`.
+- **Observación:** CAY10641 y CAY10650, descritos como inhibidores de cPLA₂, también suprimieron LTB₄ mediante inhibición de LTA₄H; los IC₅₀ reportados en PMNL estimulados fueron 37 ± 4 nM y 36 ± 4 nM.
+- **Cálculo:** ninguno.
+- **Inferencia:** resultados farmacológicos previos pueden requerir reinterpretación por actividad fuera del blanco; la evidencia es experimental/in vitro y no demuestra eficacia clínica.
+- **Recomendación:** prioridad media por complejidad bioquímica; útil para explicar por qué “inhibidor selectivo” requiere comprobar el blanco real.
+- **DOI:** `PENDING_CROSSREF`.
+
+#### 4. Ensamblaje de transposasas CRISPR tipo I-F (CAST)
+
+- **Fuente primaria:** Finocchio et al., *Nature*, publicado el 25-11-2026. [Artículo primario](https://www.nature.com/articles/s41586-026-11196-x.pdf). DOI: `10.1038/s41586-026-11196-x`.
+- **Observación:** mediante cryo-EM y ensayos de transposición, el trabajo describe estados funcionales de PseCAST: formación de un R-loop, heptamerización de TnsC, reclutamiento de TnsAB y remodelación alostérica que activa la integración de ADN donador.
+- **Cálculo:** ninguno.
+- **Inferencia:** el mecanismo ofrece una base estructural para ingeniería de sistemas de integración guiados por ARN; no demuestra una terapia ni una edición clínica segura.
+- **Recomendación:** prioridad media-alta, condicionada a explicar que el resultado es mecanístico y estructural. No crear storyboard: no hay coordenadas geográficas de ensayo publicadas que respalden un mapa geográfico exigido por el contrato.
+- **DOI:** `PENDING_CROSSREF`; el PDF primario muestra el DOI, pero el resolvedor no se pudo consultar.
+
+#### 5. Circuito intestino-cerebro que regula la ingestión de azúcar en *Drosophila*
+
+- **Fuente primaria:** Cui et al., *Nature*, publicado el 25-11-2026. [Artículo primario](https://www.nature.com/articles/s41586-026-11315-8). DOI: `10.1038/s41586-026-11315-8`.
+- **Observación:** neuronas sensoriales entéricas que detectan azúcar envían señal excitatoria a neuronas cerebrales IN1; estas inhiben neuronas motoras entéricas que controlan el conducto del crop, relajan su musculatura y facilitan el paso de alimento al crop.
+- **Cálculo:** ninguno; no se añaden porcentajes ni tamaños de efecto ausentes del resumen consultado.
+- **Inferencia:** en moscas, la detección de nutrientes en el intestino puede modular directamente la salida motora que sostiene la ingestión; no extrapolar el circuito a humanos.
+- **Recomendación:** prioridad alta por su secuencia visual sensor → cerebro → músculo; no crear storyboard hasta disponer de un mapa/capa compatible con el contrato y de un slot verificado.
+- **DOI:** `PENDING_CROSSREF`.
+
+### Compuertas y decisiones del corte
+
+- Crossref REST y `doi.org` devolvieron “URL ... is not accessible via this tool”; no se marca ningún DOI nuevo como verificado por resolver.
+- No se creó storyboard para 27-11 17:00: aunque el horario maestro contempla la ventana 16:30–18:00 y los registros de main consultados no muestran ese slot, no existe en el árbol una fuente de historial/programación externa que permita descartar de forma suficiente un ID antiguo ya programado. Se deja sin desarrollar para no arriesgar duplicación.
+- El borrador de EpTFIIAγ del 30-11 17:00 sigue en `proyectos/`, sin `narrative_qa`, sin entrada plana en `cola/entrada/` y sin estado Grok confirmado. No es dispatchable.
+- No se generaron medios ni se consumieron créditos.
