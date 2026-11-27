@@ -372,3 +372,32 @@ La misma especificación contiene reservas adicionales para 28, 29 y 30-nov a la
 - La rotación y el mapa geográfico aún deben comprobarse para cualquier candidato. Estos artículos describen experimentos moleculares, celulares o en ratón; no se inventarán coordenadas ni se convertirá la ubicación institucional en un mapa de estudio.
 - **Recomendación de investigación, no selección editorial:** priorizar la lectura fría del artículo de ASIC3 y del biosensor bacteriano; mantener NFI con límite preclínico explícito; dejar GPCR como candidato técnico y materiales en reserva por rotación. Ninguno pasa todavía a `proyectos/`.
 
+
+
+## Revalidación de radar y disponibilidad — 2026-11-26, 20:08 CDMX
+
+### Cinco candidatos recientes (fuente primaria)
+
+1. **Respuestas opuestas de 16 rapaces del Reino Unido ante escenarios climáticos.** Panter, *Frontiers in Ecology and Evolution*, 26-nov-2026. DOI `10.3389/fevo.2026.1922294`. [Artículo primario](https://www.frontiersin.org/journals/ecology-and-evolution/articles/10.3389/fevo.2026.1922294/full). Observación: bajo SSP5-8.5 para 2061–2080, el área ambientalmente adecuada para el halcón peregrino aumenta 73.5 ± 17.0%, mientras la del águila de cola blanca cae 97.2 ± 6.1% desde una base de 2,306 km². Límite: es idoneidad MaxEnt, no abundancia ni predicción individual; 13/16 especies tienen TSS medio <0.40. El DOI redirigió a la página oficial del editor; Crossref no se confirmó en esta sesión.
+2. **Biosensores bacterianos localizan ácido siálico en intestino inflamado.** Carreño et al., *Nature Communications*, 26-nov-2026. DOI `10.1038/s41467-026-79508-3`. [Fuente primaria](https://www.nature.com/articles/s41467-026-79508-3). Límite: modelo murino; no equivale a intervención humana. `PENDING_CROSSREF`.
+3. **DHA interactúa con un sitio específico del canal ASIC3.** Roth et al., *Communications Biology*, 26-nov-2026. DOI `10.1038/s42003-026-11348-9`. [Fuente primaria](https://www.nature.com/articles/s42003-026-11348-9). Límite: mecanismo molecular; no demuestra tratamiento contra el dolor. `PENDING_CROSSREF`.
+4. **H3K27M conecta una mutación de histona con dependencia metabólica en un tumor cerebral pediátrico.** Mersich et al., *Nature Communications*, 26-nov-2026. DOI `10.1038/s41467-026-79694-0`. [Fuente primaria](https://www.nature.com/articles/s41467-026-79694-0). Límite: evidencia preclínica en células y ratones; no tratamiento clínico. `PENDING_CROSSREF`.
+5. **G-LEAP prioriza interacciones entre receptores GPCR y metabolitos.** Sakuma et al., *Communications Biology*, 26-nov-2026. DOI `10.1038/s42003-026-11388-1`. [Fuente primaria](https://www.nature.com/articles/s42003-026-11388-1). Límite: más de 120 millones de pares predichos; requieren validación experimental. `PENDING_CROSSREF`.
+
+El candidato 1 se desarrolló como borrador textual para `2026-11-30_rapaces-clima-reino-unido`, fecha objetivo 30-nov, slot 07:00 CDMX. No está seleccionado por Grok ni promovido. El material huésped–invitado del bloque anterior se conserva como reserva, pero no entra en esta selección por proximidad temática con materiales recientes.
+
+### Slot 30-nov 07:00
+
+La ventana 06:30–07:30 está activa en `main:data/horarios.json`. No se encontró ocupación para 30-nov 07:00 en `data/publicaciones.json`, `data/rotacion.json`, `data/cola.json`, la instantánea de miniaturas del 21-nov, el plan semanal 23–28, `data/rehechos_2026-11-22.json`, ni `tools/animales_2026-11-23/specs_animales.py`. Main sí reserva 30-nov 23:30 para Cher Ami. El lunes no es día preferente de mañana, aunque 07:00 cae dentro de la ventana activa. No existe archivo `historial_youtube` en el árbol consultado; por eso el slot solo se considera libre en los registros del repositorio y el borrador no se promueve hasta reconciliar la programación externa.
+
+### RSS y tendencias: errores exactos y respaldo
+
+- ScienceDaily Ciencia, Salud y Espacio: `HTTP 400 — Unsupported content-type: application/xml`.
+- Phys.org: `HTTP 400 — Unsupported content-type: text/xml`.
+- NASA, Nature y UNAM Global: `HTTP 400 — Unsupported content-type: application/rss+xml`.
+- ESA Space Science: `HTTP 404 — Not Found`.
+- EurekAlert y SINC: URL no accesible mediante la interfaz.
+- Google Trends RSS México: URL no accesible mediante la interfaz.
+- Respaldo oficial: Google Trends HTML México, últimas 24 h, 277 tendencias; la primera página muestra 25 y está dominada por fútbol, NFL, Thanksgiving y búsquedas generales. `clima Guadalajara` es meteorología local, no un candidato de investigación. [Google Trends México](https://trends.google.com/trending?geo=MX).
+
+Los errores de RSS describen limitaciones de lectura de XML/RSS de esta interfaz; no prueban que los servidores de los feeds estén caídos. Se usaron páginas editoriales primarias como respaldo. El validador `--check-doi` no se ejecutó para el nuevo borrador; esa compuerta sigue pendiente.
