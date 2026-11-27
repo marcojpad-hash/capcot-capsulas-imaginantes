@@ -522,3 +522,11 @@ Los 12 archivos `cola/estado/<id>.json` devolvieron HTTP 404. `cola/entrada/` co
 - Lote 5–7 nov: 12/12 identidades y slots correctos; 2 PASS narrativos, 10 FAIL; 0/12 supera el precheck estructural; 0/12 con recepción Grok confirmada.
 - Backlog interdiario comprobado: 18-nov sigue FAIL/68 y correctamente marcado como borrador; cuásares sigue pendiente de auditoría por modelo distinto y PR #14 no integrado.
 - No se modificaron `data/*.json`, main, cola/estado, narraciones, claims ni decisiones editoriales.
+
+## Revalidación de profundidad del handoff — 27-11-2026 12:36 CDMX
+
+- `.github/workflows/capcot-grok-dispatch.yml` blob `47bbd228cfce5a1d402dc952e283e8d0f8e37030`: el trigger `push.paths` observa solo `cola/entrada/*.json`; tanto el selector del evento como `workflow_dispatch` enumeran archivos con `find cola/entrada -maxdepth 1 -type f -name '*.json'`. Las carpetas anidadas no disparan ni entran en la selección plana del workflow.
+- `scripts/procesar_cola.py` blob `64c1f94c3cf60adee25f5a869cb03633a420db97` sí admite dos formas: `cola/entrada/<id>.json` y `cola/entrada/<id>/storyboard.json`. Esta capacidad del procesador no corrige la profundidad plana del workflow.
+- `scripts/registro_editorial.py` blob `c95a5fbbd0e8366877fc4e64d2f96fe096fff668` ya recorre recursivamente `storyboard.json` y dispone de `handoffs_grok_inbox()` con lectura recursiva. Esto supersede la nota obsoleta del prompt de auditoría que afirmaba que el registro no recorría `handoffs/grok_inbox/`.
+- Un marker en `handoffs/grok_inbox/` sigue siendo solo un payload/marker pendiente. La única confirmación individual de recepción es `cola/estado/<project_id>.json`; nunca se crea ni modifica desde este operador.
+- Clasificación por ruta: los cuatro borradores de `proyectos/` no son dispatchables; la entrada heredada anidada del 09-nov no activa el workflow de push ni la selección plana de `workflow_dispatch`. No se disparó workflow ni se envió payload.
