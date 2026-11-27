@@ -1,1 +1,144 @@
-PLACEHOLDER
+{
+  "project_id": "2026-11-27_bacterias-vuelta-oxigeno",
+  "title": "Las bacterias que se voltean por falta de aire",
+  "language": "es-MX",
+  "aspect_ratio": "9:16",
+  "target_duration_seconds": 82,
+  "trend_source": {
+    "tipo": "noticia_cientifica",
+    "medio": "EurekAlert / Nature Physics",
+    "url": "https://www.eurekalert.org/news-releases/1153443",
+    "estudio_doi": "10.1038/s41567-026-03530-x",
+    "fecha_publicacion": "2026-11-27",
+    "termino": "bacterias colonia eversion oxigeno",
+    "fecha_consulta": "2026-11-27"
+  },
+  "estilo_id": "claymation",
+  "estilo_visual": "Claymation / plastilina",
+  "estructura": "pregunta",
+  "serie": "Datos y ociosidades",
+  "voice": {
+    "engine": "edge-tts",
+    "voice_id": "es-MX-JorgeNeural",
+    "rate": "+7%",
+    "pitch": "-2Hz",
+    "pad_seconds": 0.3,
+    "modo_pausas": "continuo"
+  },
+  "sources": [
+    {
+      "id": "SRC-001",
+      "cita_corta": "Wimmi et al. (2026). Differential active adhesion... Nature Physics.",
+      "url": "https://doi.org/10.1038/s41567-026-03530-x",
+      "doi": "10.1038/s41567-026-03530-x",
+      "accessed": "2026-11-27",
+      "supports": ["reducción de pili tipo 4 en centro", "inestabilidad capilar", "eversión de la colonia"],
+      "ref_display": "Nature Physics 2026"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_001",
+      "arc": "hook_medias_res",
+      "duration_seconds": 8.0,
+      "narration": "¿Te imaginas una colonia que se voltea sola?",
+      "on_screen_text": "¿Se voltean solas?",
+      "visual_description": "Colonia de bacterias de plastilina vista de cerca, empezando a deformarse",
+      "image_prompt": "claymation stop-motion scene, plasticine characters and set with visible fingerprints, soft studio lighting, miniature handmade props, vertical 9:16, no text + close-up of round plasticine bacterial colony starting to deform and bulge outward on a petri dish",
+      "source_ids": ["SRC-001"],
+      "asset_filename": "frames/scene_001.jpg",
+      "ambiente": "laboratorio",
+      "sfx": ["microscopio"]
+    },
+    {
+      "id": "scene_002",
+      "arc": "desarrollo",
+      "duration_seconds": 10.0,
+      "narration": "En el centro se acaba el oxígeno. Las bacterias respiran y lo agotan rápido.",
+      "on_screen_text": "Oxígeno se acaba",
+      "visual_description": "Interior de colonia oscuro, bacterias de plastilina quietas",
+      "image_prompt": "claymation stop-motion scene, plasticine characters and set with visible fingerprints, soft studio lighting, miniature handmade props, vertical 9:16, no text + cross-section of plasticine bacterial colony with dark center and lighter outer ring",
+      "source_ids": ["SRC-001"],
+      "asset_filename": "frames/scene_002.jpg",
+      "ambiente": "laboratorio",
+      "sfx": ["burbujas"]
+    },
+    {
+      "id": "scene_003",
+      "arc": "desarrollo",
+      "duration_seconds": 11.0,
+      "narration": "Entonces dejan de hacer tantos pili. Esos hilos que las pegan entre sí.",
+      "on_screen_text": "Menos pili",
+      "visual_description": "Bacterias de plastilina con menos hilos conectándolas en el centro",
+      "image_prompt": "claymation stop-motion scene, plasticine characters and set with visible fingerprints, soft studio lighting, miniature handmade props, vertical 9:16, no text + plasticine bacteria connected by fewer thin threads in the center of a colony",
+      "source_ids": ["SRC-001"],
+      "asset_filename": "frames/scene_003.jpg",
+      "ambiente": "laboratorio",
+      "sfx": ["pluma"]
+    },
+    {
+      "id": "scene_004",
+      "arc": "desarrollo",
+      "duration_seconds": 12.0,
+      "narration": "La adhesión baja en el medio. Aparece una inestabilidad capilar. Como cuando se rompe una gota.",
+      "on_screen_text": "Inestabilidad",
+      "visual_description": "Colonia de plastilina formando un chorro hacia afuera",
+      "image_prompt": "claymation stop-motion scene, plasticine characters and set with visible fingerprints, soft studio lighting, miniature handmade props, vertical 9:16, no text + plasticine bacterial colony ejecting a jet of cells outward like a bursting droplet",
+      "source_ids": ["SRC-001"],
+      "asset_filename": "frames/scene_004.jpg",
+      "ambiente": "laboratorio",
+      "sfx": ["agua"]
+    },
+    {
+      "id": "scene_005",
+      "arc": "desarrollo",
+      "duration_seconds": 11.0,
+      "narration": "Las del centro fluyen hacia la superficie. Donde todavía hay aire.",
+      "on_screen_text": "Fluyen afuera",
+      "visual_description": "Células de plastilina moviéndose del centro al borde",
+      "image_prompt": "claymation stop-motion scene, plasticine characters and set with visible fingerprints, soft studio lighting, miniature handmade props, vertical 9:16, no text + plasticine bacteria flowing from dark center to bright outer edge of colony",
+      "source_ids": ["SRC-001"],
+      "asset_filename": "frames/scene_005.jpg",
+      "ambiente": "laboratorio",
+      "sfx": ["flujo"]
+    },
+    {
+      "id": "scene_006",
+      "arc": "cierre_historia",
+      "duration_seconds": 10.0,
+      "narration": "La colonia entera se everte. Se voltea de adentro hacia afuera.",
+      "on_screen_text": "Se voltea",
+      "visual_description": "Colonia de plastilina completamente invertida",
+      "image_prompt": "claymation stop-motion scene, plasticine characters and set with visible fingerprints, soft studio lighting, miniature handmade props, vertical 9:16, no text + fully everted plasticine bacterial colony turned inside out on lab surface",
+      "source_ids": ["SRC-001"],
+      "asset_filename": "frames/scene_006.jpg",
+      "ambiente": "laboratorio",
+      "sfx": ["plop"]
+    },
+    {
+      "id": "scene_007",
+      "arc": "reflexion_o_pregunta",
+      "duration_seconds": 12.0,
+      "narration": "Un truco físico simple para sobrevivir. Esto fue Datos y ociosidades.",
+      "on_screen_text": "Datos y ociosidades",
+      "visual_description": "Colonia final de plastilina con firma de estilo",
+      "image_prompt": "claymation stop-motion scene, plasticine characters and set with visible fingerprints, soft studio lighting, miniature handmade props, vertical 9:16, no text + finished plasticine bacterial colony scene with soft light and miniature lab props",
+      "source_ids": ["SRC-001"],
+      "asset_filename": "frames/scene_007.jpg",
+      "ambiente": "laboratorio",
+      "sfx": ["campana"]
+    }
+  ],
+  "cortinilla_fuentes": {
+    "duration_seconds": 6,
+    "titulo": "Fuentes",
+    "aviso": "Imágenes generadas con IA. Voz sintética. Audio sintetizado.",
+    "firma": "Datos y ociosidades · @datosyociosidades"
+  },
+  "export": {
+    "filename": "capsula.mp4",
+    "resolution": "1080x1920",
+    "fps": 30,
+    "loudness_lufs": -14
+  }
+}
