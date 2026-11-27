@@ -530,3 +530,12 @@ Los 12 archivos `cola/estado/<id>.json` devolvieron HTTP 404. `cola/entrada/` co
 - `scripts/registro_editorial.py` blob `c95a5fbbd0e8366877fc4e64d2f96fe096fff668` ya recorre recursivamente `storyboard.json` y dispone de `handoffs_grok_inbox()` con lectura recursiva. Esto supersede la nota obsoleta del prompt de auditoría que afirmaba que el registro no recorría `handoffs/grok_inbox/`.
 - Un marker en `handoffs/grok_inbox/` sigue siendo solo un payload/marker pendiente. La única confirmación individual de recepción es `cola/estado/<project_id>.json`; nunca se crea ni modifica desde este operador.
 - Clasificación por ruta: los cuatro borradores de `proyectos/` no son dispatchables; la entrada heredada anidada del 09-nov no activa el workflow de push ni la selección plana de `workflow_dispatch`. No se disparó workflow ni se envió payload.
+
+## Historial de publicación y riesgo de IDs antiguos — 27-11-2026 12:47 CDMX
+
+No existe un archivo separado `historial_youtube` en el árbol de esta rama ni en `main` (ruta/directorio 404). La trazabilidad disponible se verificó en `main:data/publicaciones.json` (blob `a822459849571a443196e6a5b5d4ee73d109b1cd`), `main:data/rotacion.json` (blob `1cb16c1cfad8b968e24221793047df27d83eb5e0`) y los horarios/histórico de vistas. Esto no equivale a una consulta actual de la API de YouTube.
+
+- `2026-11-07_comida-hielo-caliente`: registro de publicación del 11-11, YouTube ID `HSgrnejAcaI`, `publishAt_utc=2026-11-11T19:30:00Z`; la nota almacenada dice que `videos.list` no lo encontró el 12-11 07:20 CDMX, mientras TikTok y Facebook figuran publicados. El estado actual del ID de YouTube no se pudo confirmar.
+- `2026-11-07_inter-nubes-pesan`: YouTube ID `4Qpl17Ts_vI`, `publishAt_utc=2026-11-12T13:00:00Z`; TikTok y Facebook figuran publicados.
+
+Ambos son `PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR`; no cancelar, duplicar ni reprogramar. La ausencia de un `historial_youtube` separado queda como limitación de trazabilidad, no como evidencia de que un ID esté libre.
