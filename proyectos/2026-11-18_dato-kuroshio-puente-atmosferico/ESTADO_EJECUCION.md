@@ -158,3 +158,28 @@ Ninguno de los dos comandos incluyó `--check-doi`. Estos runs confirman la vali
 - El endpoint de logs no devolvió texto legible en esta auditoría; se registra únicamente el resultado verificable de GitHub (`success`), sin inventar stdout literal.
 - No se encontró una ejecución posterior de este workflow para Kuroshio en el inventario reciente de Actions.
 - Bloqueo conservado: DOI `10.1038/s41561-026-02139-2` = `PENDIENTE_RESOLVEDOR`. Estado: `BORRADOR_EN_PROYECTOS_NO_APTO_PARA_PROMOCION`. No copiar a cola ni emitir handoff.
+
+## Actualización de auditoría — 2026-11-27 15:37 CDMX
+
+La afirmación anterior de que no existía una ejecución posterior a `45705919466` queda **SUPERSEDIDA** por la siguiente ejecución posterior, localizada en GitHub Actions:
+
+- Run: `45898334232`
+- Workflow: `.github/workflows/validar-kuroshio.yml`
+- Inicio: `2026-11-26T21:28:04Z`
+- Fin: `2026-11-26T21:28:15Z`
+- Rama: `feature/capcot-video-discovery-continuity`
+- Commit ejecutado: `8461bf23dcb99562340d751ebbbfb2731a085524`
+- Job: `Validar storyboard textual` (`140177699026`)
+- Resultado del run/job: `success`
+- Comando literal ejecutado: `python scripts/validar_storyboard.py proyectos/2026-11-18_dato-kuroshio-puente-atmosferico/storyboard.json`
+- Salida literal relevante: `OK`
+- Salida adicional: `Expediente textual íntegro; medios no generados; publicación no autorizada.`
+
+**Alcance exacto:** el comando no incluye `--check-doi`. Acredita la validación estructural/textual que ejecutó ese workflow; no acredita consulta Crossref ni resolución independiente del DOI.
+
+La comparación de blobs entre el commit del run y el HEAD actual de esta rama confirma que no cambiaron desde esa ejecución:
+- `proyectos/2026-11-18_dato-kuroshio-puente-atmosferico/storyboard.json`: `2046152ade90fffaf9527d180e13cc5f6009fb60`
+- `scripts/validar_storyboard.py`: `c1d7a83f9d5c9e38f59a46d3b7b2b1a83a6f6a2c`
+- `.github/workflows/validar-kuroshio.yml`: `f3e2b6f4b7c2f3a8d1e5c0b8a2d1e6f5c4b3a291`
+
+La fuente primaria conserva `doi_verification_status=DOI_VISIBLE_EN_PAGINA_EDITORIAL_Y_PDF; RESOLVEDOR_CROSSREF_NO_CONFIRMADO`. Por tanto, el DOI continúa pendiente y el estado documental sigue siendo **BORRADOR_EN_PROYECTOS_NO_APTO_PARA_PROMOCION**. No se modifica la narración, los claims, el estado Grok ni la decisión editorial.
