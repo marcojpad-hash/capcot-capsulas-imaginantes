@@ -336,3 +336,13 @@ Se intentaron abrir los diez RSS definidos en `scripts/tendencias.py` y Google T
 - Google Trends RSS México: `URL https://trends.google.com/trending/rss?geo=MX is not accessible via this tool`.
 
 El respaldo HTML oficial de Google Trends sí abrió y mostró la tabla de México. No se afirma que `scripts/tendencias.py` se haya ejecutado localmente; el intento de clonar el repositorio para ejecutarlo falló por DNS (`Could not resolve host: github.com`). La señal anterior `PENDING_SOURCE` queda sustituida por esta fuente oficial, pero no se promueve a la shortlist.
+
+
+## Revalidación de señales y feeds — 2026-11-27 12:13 CDMX
+
+- Se releó `scripts/tendencias.py`; las pruebas directas de feeds desde el visor devolvieron errores de tipo/contenido: ScienceDaily (application/xml), Phys.org (text/xml), NASA/Nature/UNAM (application/rss+xml), ESA (404 Not Found) y EurekAlert/SINC/Google Trends RSS no accesibles. **No se afirma que el script local se haya ejecutado**; se usó respaldo oficial donde estuvo disponible.
+- Google Trends HTML México sí respondió: 240 tendencias en la página consultada. «agujero de la capa de ozono» aparece con más de 2,000 búsquedas y actividad reciente (8 h); es señal de interés, no una fuente científica nueva. La fuente NOAA/NASA disponible para 2026 tiene fecha 04-11, por lo que no cumple la ventana de 48 h para dato-día. Se mantiene como señal, no como claim nuevo.
+- Respaldo oficial reciente: NASA publicó el 27-11 información de la misión NG-25 que transportará investigación sobre cultivos espaciales. Se conserva como candidato de vigilancia, no como storyboard: el comunicado no proporciona DOI ni coordenadas de mapa suficientes para el contrato de producción y los slots del 27/30-11 están ocupados.
+- El comunicado de prensa sobre el rompecabezas del escarabajo joya está fechado 27-11, pero el artículo primario enlazado indica publicación online 31-08-2026; se excluye de la shortlist de investigación publicada en las últimas 48 h.
+- Se intentaron resolver en Crossref y DOI.org los cinco DOI del radar; el acceso directo devolvió `Internal Error ()` / URL no accesible. Las páginas editoriales de Nature/Frontiers sí son accesibles y muestran los identificadores, pero eso **no equivale a verificación Crossref**. Los cinco permanecen `PENDING_CROSSREF`; no se promovió ninguno por esa vía.
+- La shortlist existente de cinco candidatos se conserva sin duplicar temas/estilos. No se añadió storyboard: los slots del 27-11 están ocupados en main y los borradores del 30-11 ya reservan 07:00 y 17:00 en feature.
