@@ -353,3 +353,27 @@ No se modificaron `main`, `data/*.json`, secretos, permisos, estados Grok, progr
 - Intermareales 27-nov 23:30: `PASS/90` existente, sin cambio de narración; no repetir. Sigue el conflicto con Stubbs en main, procesamiento previo y medios no verificados.
 - Lote 5–7 nov: 12 proyectos sin cambios narrativos posteriores al último control; se conservan los QA previos (2 PASS / 10 FAIL), sin repetir PASS ni modificar copias bloqueadas.
 - No se disparó workflow, no se envió payload, no se creó ni modificó `cola/estado`, no se generaron medios ni se consumieron créditos.
+
+
+### Relectura individual del lote canónico 5–7 nov — 27-11 09:59 CDMX
+
+Se recuperó la lista canónica desde `ajustes_entre_modelos/PARA_CHATGPT_semana_01-07nov.md` y se leyeron los doce `proyectos/<id>/storyboard.json`. No se repitió la evaluación narrativa: se inspeccionó el registro existente y no se reescribió ninguna narración.
+
+| project_id | narrative_qa | score | checks true | flags |
+|---|---:|---:|---:|---|
+| `2026-11-05_kids-dia-en-venus` | PASS | 88 | 7/7 | — |
+| `2026-11-05_comida-palomitas` | FAIL | 82 | 5/7 | `APERTURA_DEFINICIONAL_NO_IN_MEDIAS_RES`; `ESCENA_6_REITERA_CAUSAS_DE_GRANOS_NO_REVENTADOS_SIN_INFORMACION_NUEVA` |
+| `2026-11-05_inter-arboles-se-comunican` | FAIL | 78 | 6/7 | `APERTURA_GENERICA_NO_IN_MEDIAS_RES` |
+| `2026-11-05_inter-rayo-globular` | FAIL | 81 | 6/7 | `APERTURA_HISTORICA_DESCRIPTIVA_NO_IN_MEDIAS_RES` |
+| `2026-11-06_kids-ballena-azul-corazon` | FAIL | 80 | 6/7 | `PAYOFF_SOBREAFIRMA_CASI_SE_DETIENE` |
+| `2026-11-06_comida-aguacate-negro` | FAIL | 79 | 5/7 | `REPETICION_ESCENAS_5_6_SIN_AVANCE_CAUSAL` |
+| `2026-11-06_inter-ranas-congeladas` | FAIL | 83 | 5/7 | `REPETICION_ESCENAS_5_6_LIMITES_DE_ESPECIE_Y_CONDICIONES` |
+| `2026-11-06_inter-arena-cantante` | PASS | 94 | 7/7 | — |
+| `2026-11-07_kids-huesos-bebe` | FAIL | 82 | 5/7 | `ESCENA_6_REPITE_VARIACION_DE_CONTEO_Y_FUSION` |
+| `2026-11-07_comida-hielo-caliente` | FAIL | 81 | 6/7 | `APERTURA_DE_CREENCIAS_NO_IN_MEDIAS_RES` |
+| `2026-11-07_inter-pulpo-suenos` | FAIL | 72 | 2/7 | `FUENTE_PRIMARIA_CORRESPONDE_A_OCTOPUS_LAQUEUS_NO_INSULARIS`; `REPETICION_ESCENAS_5_6_Y_PAYOFF_VAGO` |
+| `2026-11-07_inter-nubes-pesan` | FAIL | 78 | 4/7 | `ESCENA_7_REITERA_CIFRA_Y_LIMITE_SIN_PAYOFF_DE_SUSPENSION` |
+
+**Verificación Grok:** los doce `cola/estado/<id>.json` devolvieron HTTP 404; se conserva `RECEPCION_GROK_NO_CONFIRMADA` para cada uno. No se creó ni editó ningún estado.
+
+**Resultado:** 2 PASS / 10 FAIL, sin cambios narrativos ni nuevos PASS. Las doce copias heredadas con slugs alternativos permanecen en `cola/bloqueados/` sin renombrar, fusionar ni borrar; la copia anidada de `2026-11-07_comida-hielo-caliente` en main conserva el video_id y publishAt históricos ya documentados. No se redispatcha ninguna.
