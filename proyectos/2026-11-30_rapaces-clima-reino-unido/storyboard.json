@@ -1,0 +1,403 @@
+{
+  "_schema": "CAPCOT_STORYBOARD_TEXT_V2",
+  "project_id": "2026-11-30_rapaces-clima-reino-unido",
+  "fecha_objetivo": "2026-11-30",
+  "slot_local": "07:00",
+  "timezone": "America/Mexico_City",
+  "serie": "Datos y ociosidades",
+  "title": "Rapaces del Reino Unido ante el clima futuro",
+  "titulo": "El clima no reparte igual",
+  "language": "es-MX",
+  "aspect_ratio": "9:16",
+  "target_duration_seconds": 84,
+  "estructura": "pregunta",
+  "audience": "Público general interesado en ciencia y naturaleza; no requiere conocimientos previos de ecología.",
+  "occasion": "Ventana de mañana 06:30–07:30 CDMX; el lunes no es día preferente, pero la ventana permanece activa.",
+  "resumen": "Un estudio modela cómo podrían cambiar las áreas ambientalmente adecuadas para dieciséis rapaces reproductoras del Reino Unido. El halcón peregrino y el águila de cola blanca muestran respuestas opuestas, pero las cifras describen idoneidad modelada, no abundancia ni predicciones individuales.",
+  "narrative_contract": {
+    "central_question": "¿Cómo puede el mismo escenario climático ampliar el área ambientalmente adecuada para una rapaz y reducirla para otra?",
+    "promise": "Explicar el contraste entre el halcón peregrino y el águila de cola blanca, y qué mide realmente el modelo.",
+    "stakes": "Si se confunde idoneidad ambiental con población, se pueden convertir escenarios de conservación en pronósticos falsos.",
+    "scientific_turn": "Bajo SSP5-8.5 para 2061–2080, el área adecuada para el halcón peregrino aumenta en promedio 73.5%, mientras la del águila de cola blanca cae 97.2% desde una base pequeña.",
+    "evidence_limit": "MaxEnt estima idoneidad ambiental, no abundancia ni ubicación futura garantizada. Trece de dieciséis especies tienen TSS medio menor a 0.40; las proyecciones varían entre cinco GCMs.",
+    "payoff": "El mapa compara escenarios de hábitat y deja claro por qué las respuestas de conservación deben ser específicas por especie."
+  },
+  "trend_source": {
+    "tipo": "articulo_cientifico",
+    "medio": "Frontiers in Ecology and Evolution",
+    "url": "https://www.frontiersin.org/journals/ecology-and-evolution/articles/10.3389/fevo.2026.1922294/full",
+    "doi": "10.3389/fevo.2026.1922294",
+    "fecha_publicacion": "2026-11-26",
+    "termino": "rapaces del Reino Unido y cambio climático",
+    "fecha_consulta": "2026-11-26"
+  },
+  "editorial_status": "PROPUESTA_PENDIENTE_DE_GROK",
+  "arco": {
+    "hook_medias_res": "El clima no reparte igual",
+    "desarrollo": "Dieciséis rapaces, cinco modelos climáticos y dos respuestas opuestas de área ambientalmente adecuada.",
+    "cierre_historia": "La idoneidad modelada no equivale a abundancia ni a una predicción individual.",
+    "reflexion_o_pregunta": "¿Qué necesita cada especie cuando el hábitat adecuado cambia en direcciones opuestas?"
+  },
+  "estilo_id": "papel_rasgado_capas",
+  "estilo_visual": "Papel rasgado por capas (diorama)",
+  "visual_identity": {
+    "style_id": "papel_rasgado_capas",
+    "style_name": "Papel rasgado por capas (diorama)",
+    "prompt_base": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text",
+    "palette": "verde bosque, turquesa apagado, ocre, crema",
+    "lighting": "luz lateral suave con sombras de profundidad entre capas",
+    "texture": "bordes de papel rasgado, fieltro y cartulina",
+    "composition": "vertical 9:16; mapa general del Reino Unido como dominio; rapaces en capas separadas; barras de datos sin hotspots geográficos inventados",
+    "negative_prompt": "sin texto legible, sin pines, sin coordenadas inventadas, sin fotorealismo, sin especies adicionales, sin mapas de idoneidad no publicados, sin representar población como superficie",
+    "reference_assets": [],
+    "seed": null,
+    "seed_policy": "mantener la misma paleta, materialidad y profundidad de capas; variar encuadre y especie por escena"
+  },
+  "typography_identity": {
+    "font_family": "DejaVu Sans",
+    "font_weight": "700 para gancho; 400 para subtítulos",
+    "title_style": "Máximo seis palabras; presente desde frame 0 en postproducción",
+    "subtitle_style": "Bloques de máximo tres palabras; zona segura inferior",
+    "hierarchy": "Gancho > dato/etiqueta > subtítulos",
+    "animation": "Un movimiento por plano; tipografía en postproducción"
+  },
+  "voice": {
+    "engine": "edge-tts",
+    "voice_id": "es-MX-JorgeNeural",
+    "language": "es-MX",
+    "rate": "+7%",
+    "pitch": "-2Hz",
+    "pad_seconds": 0.3,
+    "modo_pausas": "continuo"
+  },
+  "sources": [
+    {
+      "id": "SRC-001",
+      "cita_corta": "Panter (2026), Contrasting projections of environmental suitability across a breeding raptor assemblage under climate change",
+      "url": "https://www.frontiersin.org/journals/ecology-and-evolution/articles/10.3389/fevo.2026.1922294/full",
+      "doi": "10.3389/fevo.2026.1922294",
+      "accessed": "2026-11-26",
+      "publication_date": "2026-11-26",
+      "supports": [
+        "Modelado MaxEnt de 16 especies de rapaces reproductoras en el Reino Unido",
+        "Registros georreferenciados de GBIF de 2005 a 2025 y variables ambientales",
+        "Cinco modelos climáticos globales, dos escenarios de emisiones y dos periodos futuros",
+        "Bajo SSP5-8.5 para 2061–2080, el área adecuada para el halcón peregrino aumenta 73.5 ± 17.0%",
+        "Bajo el mismo escenario, el área adecuada para el águila de cola blanca disminuye 97.2 ± 6.1% desde una base de 2,306 km²",
+        "TSS medio menor a 0.40 en 13 de 16 especies",
+        "Las salidas representan idoneidad ambiental modelada, no abundancia poblacional ni localización garantizada"
+      ],
+      "verification_status": "VERIFICADO_RESOLVEDOR"
+    },
+    {
+      "id": "SRC-002",
+      "cita_corta": "ONS Open Geography Portal — UK nations boundary, consultada mediante ukgeog::read_sf('NAT')",
+      "url": "https://l-hodge.github.io/ukgeog/reference/read_sf.html",
+      "accessed": "2026-11-26",
+      "supports": [
+        "Bounding box WGS84 del límite nacional generalizado: latitud 49.86479–60.86078; longitud −8.649996–1.763706",
+        "El paquete obtiene los límites nacionales del ONS Open Geography Portal; el contorno se usa solo como dominio del estudio"
+      ],
+      "verification_status": "VERIFICADO_RESOLVEDOR"
+    },
+    {
+      "id": "SRC-003",
+      "cita_corta": "UK Geospatial Data Standards Register — referencia de coordenadas WGS84/EPSG:4326",
+      "url": "https://www.gov.uk/government/publications/uk-geospatial-data-standards-register/national-geospatial-data-standards-register",
+      "accessed": "2026-11-26",
+      "supports": [
+        "Referencia del sistema de coordenadas geográficas WGS84/EPSG:4326 para la cartografía"
+      ],
+      "verification_status": "VERIFICADO_RESOLVEDOR"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_001",
+      "arc": "hook_medias_res",
+      "duration_seconds": 9,
+      "narration": "En el mismo Reino Unido, el clima futuro podría abrirle terreno a un halcón y cerrárselo a un águila. ¿Cómo puede pasar?",
+      "on_screen_text": "¿Quién gana terreno?",
+      "visual_description": "Mapa de papel rasgado del Reino Unido; dos siluetas precisas, un halcón peregrino y un águila de cola blanca, separadas por una franja de clima futuro; sin zonas de idoneidad inventadas.",
+      "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text, mapa de papel rasgado del reino unido; dos siluetas precisas, un halcón peregrino y un águila de cola blanca, separadas por una franja de clima futuro; sin zonas de idoneidad inventadas., accurate raptor silhouettes, no invented spatial suitability hotspots, no readable labels",
+      "ambiente": "viento sobre páramo británico",
+      "sfx": [
+        "batir de alas",
+        "ráfaga breve"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "papel_rasgado_capas",
+      "dramatic_beat": "Abrir con respuestas opuestas y plantear la pregunta.",
+      "scene_function": "La tensión ya está en marcha: un mismo escenario climático puede producir respuestas distintas entre especies.",
+      "causal_bridge_from_previous": "Sabemos que las respuestas divergen; falta saber qué midió el estudio.",
+      "question_state": "Para entender el contraste, primero hay que distinguir hábitat adecuado de número de aves.",
+      "reason_to_continue": "El clima futuro podría abrir terreno adecuado para una rapaz y cerrárselo a otra."
+    },
+    {
+      "id": "scene_002",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "Un estudio publicado el 26 de noviembre modeló la idoneidad ambiental de 16 rapaces reproductoras; no contó aves ni nidos.",
+      "on_screen_text": "16 rapaces",
+      "visual_description": "Dieciséis siluetas de rapaces reproductoras en tarjetas de cartulina, sobre un contorno sencillo del Reino Unido; no representar un censo de individuos.",
+      "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text, dieciséis siluetas de rapaces reproductoras en tarjetas de cartulina, sobre un contorno sencillo del reino unido; no representar un censo de individuos., accurate raptor silhouettes, no invented spatial suitability hotspots, no readable labels",
+      "ambiente": "ambiente de estudio, papel y lápiz",
+      "sfx": [
+        "pasar página",
+        "dieciséis pulsos suaves"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "papel_rasgado_capas",
+      "dramatic_beat": "Precisar el objeto medido y evitar confundir idoneidad con población.",
+      "scene_function": "El contraste solo se interpreta correctamente si sabemos que el estudio modela condiciones ambientales.",
+      "causal_bridge_from_previous": "Ahora sabemos que el conjunto es de dieciséis especies; falta ver de dónde salen las observaciones.",
+      "question_state": "Los registros de presencia y las variables ambientales alimentan el modelo.",
+      "reason_to_continue": "El estudio modeló idoneidad ambiental de dieciséis especies reproductoras, no abundancia."
+    },
+    {
+      "id": "scene_003",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "Combinó registros georreferenciados de GBIF, de 2005 a 2025, con clima, relieve y cobertura del suelo; probó cinco modelos climáticos.",
+      "on_screen_text": "GBIF · 2005–2025",
+      "visual_description": "Mapa vertical del Reino Unido con un único contorno nacional y caja geográfica WGS84; no colocar puntos GBIF ni rasteres de idoneidad. Mostrar el mapa como dominio del estudio, no como predicción espacial.",
+      "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text, mapa vertical del reino unido con un único contorno nacional y caja geográfica wgs84; no colocar puntos gbif ni rasteres de idoneidad. mostrar el mapa como dominio del estudio, no como predicción espacial., accurate raptor silhouettes, no invented spatial suitability hotspots, no readable labels",
+      "ambiente": "viento cartográfico suave",
+      "sfx": [
+        "trazo de mapa",
+        "clic de ficha"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002",
+        "SRC-003"
+      ],
+      "style_id": "papel_rasgado_capas",
+      "dramatic_beat": "Situar el dominio geográfico y resumir la construcción del modelo.",
+      "scene_function": "Una vez definido el objeto, se muestra cómo se construyeron las capas de entrada.",
+      "causal_bridge_from_previous": "El mapa delimita el Reino Unido; no localiza nidos ni zonas futuras de cada especie.",
+      "question_state": "Registros georreferenciados y capas ambientales se combinaron en cinco modelos climáticos.",
+      "reason_to_continue": "El estudio combinó GBIF 2005–2025, clima, relieve y cobertura del suelo; probó cinco modelos.",
+      "capa": {
+        "tipo": "mapa",
+        "region": [
+          49.86479,
+          -8.649996,
+          60.86078,
+          1.763706
+        ],
+        "puntos": [],
+        "areas": [
+          {
+            "id": "reino_unido",
+            "label": "Reino Unido — dominio del estudio",
+            "bounds": [
+              49.86479,
+              -8.649996,
+              60.86078,
+              1.763706
+            ],
+            "bounds_label": "Bounding box WGS84 del límite nacional generalizado de ONS"
+          }
+        ],
+        "titulo": "Dominio del estudio: Reino Unido",
+        "fuente": "SRC-001; ONS Open Geography Portal vía ukgeog::read_sf('NAT'); CRS 4326: SRC-002 y SRC-003",
+        "precision_note": "La caja delimita el dominio nacional general; no representa puntos de ocurrencia GBIF ni el raster de idoneidad por especie. No se dibujan hotspots ni ubicaciones de nidos."
+      }
+    },
+    {
+      "id": "scene_004",
+      "arc": "giro_cientifico",
+      "duration_seconds": 10,
+      "narration": "Bajo emisiones altas, para 2061–2080, el área adecuada para el halcón peregrino aumentaría 73.5 por ciento, en promedio.",
+      "on_screen_text": "Halcón: +73.5%",
+      "visual_description": "Halcón peregrino de papel en planeo sobre el contorno del Reino Unido; a un lado, una barra positiva de área ambientalmente adecuada; no pintar hotspots geográficos no publicados.",
+      "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text, halcón peregrino de papel en planeo sobre el contorno del reino unido; a un lado, una barra positiva de área ambientalmente adecuada; no pintar hotspots geográficos no publicados., accurate raptor silhouettes, no invented spatial suitability hotspots, no readable labels",
+      "ambiente": "viento de altura",
+      "sfx": [
+        "aleteo rápido",
+        "pulso ascendente"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "papel_rasgado_capas",
+      "dramatic_beat": "Presentar el primer resultado cuantitativo bajo el escenario de emisiones altas.",
+      "scene_function": "Los modelos producen resultados por especie; el primer contraste aparece en el halcón peregrino.",
+      "causal_bridge_from_previous": "El área adecuada para el halcón aumenta en el escenario más alto; falta expresar la variación.",
+      "question_state": "La cifra es un promedio entre cinco modelos climáticos.",
+      "reason_to_continue": "Bajo SSP5-8.5 y 2061–2080, el área adecuada para el halcón peregrino aumentaría 73.5% en promedio.",
+      "capa": {
+        "tipo": "dato",
+        "valor": "+73.5%",
+        "etiqueta": "Cambio medio del área adecuada para halcón peregrino; SSP5-8.5, 2061–2080",
+        "detalle": "Media entre cinco GCM; desviación estándar ±17.0 puntos porcentuales. No es aumento de población.",
+        "fuente": "SRC-001"
+      }
+    },
+    {
+      "id": "scene_005",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "La desviación estándar entre los cinco modelos fue de 17 puntos porcentuales; por eso, ese aumento no es una promesa ni una cifra de población.",
+      "on_screen_text": "±17 puntos",
+      "visual_description": "Cinco tiras de papel superpuestas representan los cinco modelos climáticos; una banda de variación rodea la barra del halcón, sin sugerir intervalo de confianza.",
+      "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text, cinco tiras de papel superpuestas representan los cinco modelos climáticos; una banda de variación rodea la barra del halcón, sin sugerir intervalo de confianza., accurate raptor silhouettes, no invented spatial suitability hotspots, no readable labels",
+      "ambiente": "ambiente sobrio de análisis",
+      "sfx": [
+        "cinco clics suaves",
+        "marcador de gráfica"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "papel_rasgado_capas",
+      "dramatic_beat": "Explicar la dispersión entre modelos y evitar una lectura determinista.",
+      "scene_function": "El promedio aislado parece preciso; la variación entre modelos obliga a matizarlo.",
+      "causal_bridge_from_previous": "La proyección tiene dispersión y no equivale a crecimiento poblacional.",
+      "question_state": "La desviación estándar entre GCMs es de 17 puntos porcentuales.",
+      "reason_to_continue": "La variación entre modelos impide presentar el aumento como certeza o como número de aves.",
+      "capa": {
+        "tipo": "dato",
+        "valor": "±17.0 pp",
+        "etiqueta": "Desviación estándar entre cinco modelos climáticos",
+        "detalle": "Describe variación entre GCMs; no es intervalo de confianza ni certeza del cambio.",
+        "fuente": "SRC-001"
+      }
+    },
+    {
+      "id": "scene_006",
+      "arc": "giro_cientifico",
+      "duration_seconds": 10,
+      "narration": "Para el águila de cola blanca, el mismo escenario proyectó una caída de 97.2 por ciento, desde una base pequeña: 2,306 kilómetros cuadrados adecuados.",
+      "on_screen_text": "Águila: −97.2%",
+      "visual_description": "Águila de cola blanca en silueta sobre una barra negativa; al pie, una pequeña base de papel representa 2,306 km² de área adecuada de referencia.",
+      "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text, águila de cola blanca en silueta sobre una barra negativa; al pie, una pequeña base de papel representa 2,306 km² de área adecuada de referencia., accurate raptor silhouettes, no invented spatial suitability hotspots, no readable labels",
+      "ambiente": "viento costero, tono grave",
+      "sfx": [
+        "aleteo grave",
+        "pulso descendente"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "papel_rasgado_capas",
+      "dramatic_beat": "Mostrar la respuesta opuesta y contextualizar la base pequeña.",
+      "scene_function": "El mismo escenario no produce una respuesta uniforme: el segundo ejemplo invierte el signo.",
+      "causal_bridge_from_previous": "El águila de cola blanca pierde área adecuada modelada, pero parte de una base pequeña.",
+      "question_state": "El valor se refiere a superficie adecuada, no a población ni a mortalidad.",
+      "reason_to_continue": "El modelo proyecta una caída de 97.2% en área adecuada para el águila de cola blanca, desde 2,306 km².",
+      "capa": {
+        "tipo": "dato",
+        "valor": "−97.2%",
+        "etiqueta": "Cambio medio del área adecuada para águila de cola blanca; SSP5-8.5, 2061–2080",
+        "detalle": "Media ±6.1 puntos porcentuales; área adecuada de referencia: 2,306 km². No es descenso poblacional.",
+        "fuente": "SRC-001"
+      }
+    },
+    {
+      "id": "scene_007",
+      "arc": "limite_evidencia",
+      "duration_seconds": 9,
+      "narration": "La cautela importa: trece de las dieciséis especies tuvieron TSS medio menor a 0.40, una medida de qué tan bien el modelo distingue hábitats adecuados.",
+      "on_screen_text": "13/16 · TSS < 0.40",
+      "visual_description": "Trece de dieciséis fichas muestran una señal de evaluación baja; la escala se presenta como rendimiento discriminatorio, no como porcentaje de acierto.",
+      "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text, trece de dieciséis fichas muestran una señal de evaluación baja; la escala se presenta como rendimiento discriminatorio, no como porcentaje de acierto., accurate raptor silhouettes, no invented spatial suitability hotspots, no readable labels",
+      "ambiente": "silencio de laboratorio",
+      "sfx": [
+        "bip tenue",
+        "papel que se detiene"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "papel_rasgado_capas",
+      "dramatic_beat": "Introducir el límite principal del modelo antes de la conclusión.",
+      "scene_function": "Los contrastes son llamativos, pero la calidad predictiva impone una cautela mayor.",
+      "causal_bridge_from_previous": "La mayoría de especies tuvo TSS medio menor de 0.40.",
+      "question_state": "La evaluación espacial fue limitada para trece especies.",
+      "reason_to_continue": "Trece de dieciséis especies tuvieron TSS medio menor de 0.40, una medida de discriminación limitada.",
+      "capa": {
+        "tipo": "dato",
+        "valor": "13/16",
+        "etiqueta": "Especies con TSS medio menor a 0.40",
+        "detalle": "TSS mide la capacidad de distinguir sitios adecuados y no adecuados; la mayoría de los modelos mostró desempeño limitado.",
+        "fuente": "SRC-001"
+      }
+    },
+    {
+      "id": "scene_008",
+      "arc": "payoff",
+      "duration_seconds": 10,
+      "narration": "El mapa no predice dónde habrá aves; compara escenarios de hábitat y muestra por qué la conservación necesita respuestas distintas para cada especie. Esto fue Datos y ociosidades.",
+      "on_screen_text": "Hábitat ≠ población",
+      "visual_description": "Dos siluetas de rapaces en capas distintas sobre el mapa general del Reino Unido; el mapa permanece sin hotspots ni puntos, y las barras se convierten en rutas de conservación diferenciadas.",
+      "image_prompt": "layered torn paper collage diorama, deckled paper edges, felt and cardstock textures, muted teal, forest green, ochre and cream, soft side light with depth shadows between layers, vertical 9:16, no text, dos siluetas de rapaces en capas distintas sobre el mapa general del reino unido; el mapa permanece sin hotspots ni puntos, y las barras se convierten en rutas de conservación diferenciadas., accurate raptor silhouettes, no invented spatial suitability hotspots, no readable labels",
+      "ambiente": "viento abierto que se apaga",
+      "sfx": [
+        "dos aleteos",
+        "cierre de papel"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "papel_rasgado_capas",
+      "dramatic_beat": "Pagar el contraste y cerrar con el límite de evidencia.",
+      "scene_function": "Con los dos resultados y la limitación explícita, la conclusión no es una carrera de ganadores.",
+      "causal_bridge_from_previous": "La proyección compara escenarios de hábitat, no predice dónde habrá aves.",
+      "question_state": "La conservación requiere respuestas específicas sin convertir el modelo en pronóstico individual.",
+      "reason_to_continue": "El mapa compara escenarios de hábitat; no predice poblaciones ni lugares exactos de anidación."
+    }
+  ],
+  "cortinilla_fuentes": {
+    "duration_seconds": 6,
+    "titulo": "Fuentes",
+    "aviso": "Estudio primario y cartografía oficial; no se han generado medios.",
+    "firma": "Datos y ociosidades",
+    "source_ids": [
+      "SRC-001",
+      "SRC-002",
+      "SRC-003"
+    ]
+  },
+  "audio": {
+    "music_asset": null,
+    "music_plan": "No generar audio en preproducción; sugerencia ambiental pendiente de decisión de producción.",
+    "music_license": null
+  },
+  "export": {
+    "resolution": "1080x1920",
+    "fps": 30,
+    "render_status": "NOT_GENERATED"
+  },
+  "publicacion": {
+    "status": "PENDIENTE_DECISION_GROK",
+    "platforms": [
+      "YouTube Shorts",
+      "TikTok",
+      "Facebook Reels"
+    ],
+    "note": "No publicar ni programar desde preproducción textual."
+  },
+  "approved_assets": [],
+  "estado": "BORRADOR",
+  "production_mode": "storyboard_only",
+  "validation_notes": [
+    "Slot 2026-11-30 07:00: ventana activa 06:30–07:30 según main:data/horarios.json. No aparece ocupado en main:data/publicaciones.json, main:data/rotacion.json, main:data/cola.json, main:data/miniaturas_auditoria_2026-11-21.json, main:data/rehechos_2026-11-22.json, main:docs/briefs/produccion_2026-11-23_28/plan_semana.json, main:tools/animales_2026-11-23/specs_animales.py ni en proyectos/cola/salidas de ambas ramas. Main sí reserva 2026-11-30 23:30 para Cher Ami. El lunes no es día preferente de mañana, pero 07:00 cae dentro de la ventana activa. No se encontró historial_youtube; no hay verificación externa de YouTube Studio. Mantener como borrador y no promover hasta reconciliar programación externa.",
+    "Fuente primaria Frontiers accesible y DOI visible; el enlace DOI redirigió a la página oficial del editor. Crossref REST no quedó confirmado; --check-doi no se ejecutó y permanece como compuerta independiente.",
+    "No se ejecutó el validador estructural real para este storyboard; el conteo local de palabras y duraciones es una comprobación manual preliminar.",
+    "No se realizó QA narrativo independiente en este run de autoría; narrative_qa se omite deliberadamente.",
+    "No se creó cola/entrada ni cola/estado; recepción Grok no confirmada. No se generaron imágenes, voz, audio, video, frames ni renders."
+  ],
+  "linea_tematica_provisional": "Naturaleza / ecología / cambio climático",
+  "risk_notes": [
+    "Las cifras se refieren a área ambientalmente adecuada estimada por MaxEnt, no a abundancia, población ni colonización observada.",
+    "El aumento de 73.5% para el halcón peregrino tiene desviación estándar de 17.0 puntos porcentuales entre cinco GCMs.",
+    "La caída de 97.2% del águila de cola blanca parte de una base pequeña de 2,306 km² de área adecuada.",
+    "TSS medio menor a 0.40 en 13 de 16 especies: desempeño discriminatorio limitado para la mayoría de las especies."
+  ]
+}
