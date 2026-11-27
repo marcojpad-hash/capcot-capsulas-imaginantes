@@ -92,13 +92,17 @@
     {
       "id": "SRC-002",
       "cita_corta": "ONS Open Geography Portal — UK nations boundary, consultada mediante ukgeog::read_sf('NAT')",
-      "url": "https://l-hodge.github.io/ukgeog/reference/read_sf.html",
+      "url": "https://www.data.gov.uk/dataset/d03eb8db-ebbe-4976-b9ca-32274b2b1078/countries-december-2024-boundaries-uk-bsc",
       "accessed": "2026-11-26",
       "supports": [
         "Bounding box WGS84 del límite nacional generalizado: latitud 49.86479–60.86078; longitud −8.649996–1.763706",
         "El paquete obtiene los límites nacionales del ONS Open Geography Portal; el contorno se usa solo como dominio del estudio"
       ],
-      "verification_status": "VERIFICADO_RESOLVEDOR"
+      "verification_status": "VERIFICADO_URL",
+      "title": "Countries (December 2024) Boundaries UK BSC",
+      "publisher": "Office for National Statistics (ONS)",
+      "verification_note": "Página oficial del dataset ONS consultada; el bounding box WGS84 del storyboard se deriva de esta geometría.",
+      "claim": "Fuente oficial de límites nacionales usada para derivar el extent cartográfico del Reino Unido."
     },
     {
       "id": "SRC-003",
@@ -133,7 +137,8 @@
       "scene_function": "La tensión ya está en marcha: un mismo escenario climático puede producir respuestas distintas entre especies.",
       "causal_bridge_from_previous": "Sabemos que las respuestas divergen; falta saber qué midió el estudio.",
       "question_state": "Para entender el contraste, primero hay que distinguir hábitat adecuado de número de aves.",
-      "reason_to_continue": "El clima futuro podría abrir terreno adecuado para una rapaz y cerrárselo a otra."
+      "reason_to_continue": "El clima futuro podría abrir terreno adecuado para una rapaz y cerrárselo a otra.",
+      "new_information": "Establece el contraste central: bajo el mismo cambio climático, la idoneidad ambiental puede favorecer al halcón peregrino y perjudicar al águila de cola blanca."
     },
     {
       "id": "scene_002",
@@ -156,7 +161,8 @@
       "scene_function": "El contraste solo se interpreta correctamente si sabemos que el estudio modela condiciones ambientales.",
       "causal_bridge_from_previous": "Ahora sabemos que el conjunto es de dieciséis especies; falta ver de dónde salen las observaciones.",
       "question_state": "Los registros de presencia y las variables ambientales alimentan el modelo.",
-      "reason_to_continue": "El estudio modeló idoneidad ambiental de dieciséis especies reproductoras, no abundancia."
+      "reason_to_continue": "El estudio modeló idoneidad ambiental de dieciséis especies reproductoras, no abundancia.",
+      "new_information": "Delimita la muestra a 16 especies de rapaces del Reino Unido y la variable a idoneidad climática, no censos poblacionales."
     },
     {
       "id": "scene_003",
@@ -205,13 +211,14 @@
           }
         ],
         "titulo": "Dominio del estudio: Reino Unido",
-        "fuente": "SRC-001; ONS Open Geography Portal vía ukgeog::read_sf('NAT'); CRS 4326: SRC-002 y SRC-003",
+        "fuente": "ONS, Countries (December 2024) Boundaries UK BSC: https://www.data.gov.uk/dataset/d03eb8db-ebbe-4976-b9ca-32274b2b1078/countries-december-2024-boundaries-uk-bsc; extent WGS84 derivado de la geometría del dataset (SRC-002).",
         "precision_note": "La caja delimita el dominio nacional general; no representa puntos de ocurrencia GBIF ni el raster de idoneidad por especie. No se dibujan hotspots ni ubicaciones de nidos."
-      }
+      },
+      "new_information": "Fija el horizonte de 2061–2080 y el escenario SSP5-8.5 que condiciona las proyecciones."
     },
     {
       "id": "scene_004",
-      "arc": "giro_cientifico",
+      "arc": "desarrollo",
       "duration_seconds": 10,
       "narration": "Bajo emisiones altas, para 2061–2080, el área adecuada para el halcón peregrino aumentaría 73.5 por ciento, en promedio.",
       "on_screen_text": "Halcón: +73.5%",
@@ -237,7 +244,8 @@
         "etiqueta": "Cambio medio del área adecuada para halcón peregrino; SSP5-8.5, 2061–2080",
         "detalle": "Media entre cinco GCM; desviación estándar ±17.0 puntos porcentuales. No es aumento de población.",
         "fuente": "SRC-001"
-      }
+      },
+      "new_information": "Cuantifica el aumento proyectado de 73.5 ± 17.0% del área ambientalmente adecuada para el halcón peregrino."
     },
     {
       "id": "scene_005",
@@ -267,11 +275,12 @@
         "etiqueta": "Desviación estándar entre cinco modelos climáticos",
         "detalle": "Describe variación entre GCMs; no es intervalo de confianza ni certeza del cambio.",
         "fuente": "SRC-001"
-      }
+      },
+      "new_information": "Aclara que el cambio porcentual describe superficie adecuada y no un aumento equivalente de individuos."
     },
     {
       "id": "scene_006",
-      "arc": "giro_cientifico",
+      "arc": "desarrollo",
       "duration_seconds": 10,
       "narration": "Para el águila de cola blanca, el mismo escenario proyectó una caída de 97.2 por ciento, desde una base pequeña: 2,306 kilómetros cuadrados adecuados.",
       "on_screen_text": "Águila: −97.2%",
@@ -297,11 +306,12 @@
         "etiqueta": "Cambio medio del área adecuada para águila de cola blanca; SSP5-8.5, 2061–2080",
         "detalle": "Media ±6.1 puntos porcentuales; área adecuada de referencia: 2,306 km². No es descenso poblacional.",
         "fuente": "SRC-001"
-      }
+      },
+      "new_information": "Cuantifica la reducción proyectada de 97.2 ± 6.1% del área adecuada para el águila de cola blanca, desde una base de 2,306 km²."
     },
     {
       "id": "scene_007",
-      "arc": "limite_evidencia",
+      "arc": "cierre_historia",
       "duration_seconds": 9,
       "narration": "La cautela importa: trece de las dieciséis especies tuvieron TSS medio menor a 0.40, una medida de qué tan bien el modelo distingue hábitats adecuados.",
       "on_screen_text": "13/16 · TSS < 0.40",
@@ -327,11 +337,12 @@
         "etiqueta": "Especies con TSS medio menor a 0.40",
         "detalle": "TSS mide la capacidad de distinguir sitios adecuados y no adecuados; la mayoría de los modelos mostró desempeño limitado.",
         "fuente": "SRC-001"
-      }
+      },
+      "new_information": "Expone el límite del modelo: 13 de las 16 especies presentan TSS medio inferior a 0.40."
     },
     {
       "id": "scene_008",
-      "arc": "payoff",
+      "arc": "reflexion_o_pregunta",
       "duration_seconds": 10,
       "narration": "El mapa no predice dónde habrá aves; compara escenarios de hábitat y muestra por qué la conservación necesita respuestas distintas para cada especie. Esto fue Datos y ociosidades.",
       "on_screen_text": "Hábitat ≠ población",
@@ -350,7 +361,8 @@
       "scene_function": "Con los dos resultados y la limitación explícita, la conclusión no es una carrera de ganadores.",
       "causal_bridge_from_previous": "La proyección compara escenarios de hábitat, no predice dónde habrá aves.",
       "question_state": "La conservación requiere respuestas específicas sin convertir el modelo en pronóstico individual.",
-      "reason_to_continue": "El mapa compara escenarios de hábitat; no predice poblaciones ni lugares exactos de anidación."
+      "reason_to_continue": "El mapa compara escenarios de hábitat; no predice poblaciones ni lugares exactos de anidación.",
+      "new_information": "Cierra la proyección sin confundir idoneidad ambiental con abundancia, supervivencia o destino individual de cada rapaz."
     }
   ],
   "cortinilla_fuentes": {
@@ -391,7 +403,8 @@
     "Fuente primaria Frontiers accesible y DOI visible; el enlace DOI redirigió a la página oficial del editor. Crossref REST no quedó confirmado; --check-doi no se ejecutó y permanece como compuerta independiente.",
     "Conteo manual con la misma expresión regular words() de scripts/validar_storyboard.py: 184 palabras; 8 escenas; 78 segundos de escena + 6 de cortinilla = 84. Esto no sustituye la ejecución del validador estructural real.",
     "No se realizó QA narrativo independiente en este run de autoría; narrative_qa se omite deliberadamente.",
-    "No se creó cola/entrada ni cola/estado; recepción Grok no confirmada. No se generaron imágenes, voz, audio, video, frames ni renders."
+    "No se creó cola/entrada ni cola/estado; recepción Grok no confirmada. No se generaron imágenes, voz, audio, video, frames ni renders.",
+    "2026-11-27: corrección mecánica de esquema. Se añadieron new_information a las ocho escenas y se normalizaron los arc al conjunto permitido por scripts/validar_storyboard.py; no se modificó la narración ni los claims. SRC-002 se sustituyó por la página oficial del dataset ONS 2024. Validador estructural no ejecutado; DOI/Crossref de SRC-001 sigue pendiente; narrative_qa FAIL/0 por REVISION_INDEPENDIENTE_AUSENTE. No apto para promoción."
   ],
   "linea_tematica_provisional": "Naturaleza / ecología / cambio climático",
   "risk_notes": [
@@ -399,5 +412,26 @@
     "El aumento de 73.5% para el halcón peregrino tiene desviación estándar de 17.0 puntos porcentuales entre cinco GCMs.",
     "La caída de 97.2% del águila de cola blanca parte de una base pequeña de 2,306 km² de área adecuada.",
     "TSS medio menor a 0.40 en 13 de 16 especies: desempeño discriminatorio limitado para la mayoría de las especies."
-  ]
+  ],
+  "narrative_qa": {
+    "status": "FAIL",
+    "score": 0,
+    "review_basis": "lectura_en_frio_solo_narracion",
+    "reviewer_role": "auditor_no_independiente",
+    "reviewer_model": "GPT-6",
+    "reviewed_at": "2026-11-27T00:02:03-06:00",
+    "checks": {
+      "pregunta_central_reconstruible": false,
+      "apertura_in_medias_res": false,
+      "progresion_por_escena": false,
+      "transiciones_causales": false,
+      "giro_cientifico_explicado": false,
+      "limite_evidencia_explicito": false,
+      "payoff_cierre_apertura": false
+    },
+    "critical_flags": [
+      "REVISION_INDEPENDIENTE_AUSENTE"
+    ],
+    "notes": "No existe una revisión narrativa verdaderamente independiente del autor en este run. La marca FAIL/0 registra ausencia de compuerta válida; no es una evaluación negativa de la calidad del texto. Se requiere auditor distinto, lectura ciega de la narración concatenada y evaluación de los siete checks."
+  }
 }
