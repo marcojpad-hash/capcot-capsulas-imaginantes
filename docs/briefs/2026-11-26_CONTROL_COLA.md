@@ -897,7 +897,7 @@ El PASS no habilita promoción. El slot 27-nov 23:30 está reservado en main por
 
 Se creó y leyó de vuelta `proyectos/2026-11-30_rapaces-clima-reino-unido/storyboard.json` (commit de archivo `050ee21b77f2072f013d20fc2addbe0fec86bf05`).
 
-- 9:16; 8 escenas; 182 palabras; 78 segundos de escenas + 6 de cortinilla = 84 segundos.
+- 9:16; 8 escenas; 184 palabras (conteo manual con la regex words() del validador); 78 segundos de escenas + 6 de cortinilla = 84 segundos.
 - Gancho de cinco palabras: «El clima no reparte igual».
 - Voz `es-MX-JorgeNeural`, rate `+7%`, pitch `-2Hz`.
 - Estilo `papel_rasgado_capas`, `prompt_base` copiado del catálogo; no aparece en los proyectos recientes 20–27-nov.
