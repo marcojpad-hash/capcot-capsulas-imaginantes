@@ -308,3 +308,31 @@ Los cinco elementos siguientes forman la shortlist de este corte. Los candidatos
 - No se creó storyboard para 27-11 17:00: aunque el horario maestro contempla la ventana 16:30–18:00 y los registros de main consultados no muestran ese slot, no existe en el árbol una fuente de historial/programación externa que permita descartar de forma suficiente un ID antiguo ya programado. Se deja sin desarrollar para no arriesgar duplicación.
 - El borrador de EpTFIIAγ del 30-11 17:00 sigue en `proyectos/`, sin `narrative_qa`, sin entrada plana en `cola/entrada/` y sin estado Grok confirmado. No es dispatchable.
 - No se generaron medios ni se consumieron créditos.
+
+
+## Actualización de señal Trends — 27-11-2026 10:26 CDMX
+
+### Agujero de ozono antártico 2026 — señal respaldada, fuera de shortlist
+
+- **Observación de tendencia:** Google Trends México, categoría Todas, ventana últimas 24 h, muestra 253 tendencias. “agujero de la capa de ozono” aparece con 2K+ búsquedas, activa unas seis horas antes del corte. Las primeras posiciones siguen dominadas por fútbol, clima y actualidad; no se infiere interés científico general a partir de un solo término.
+- **Fuente primaria oficial encontrada:** NOAA, comunicado conjunto con NASA del 04-11-2026: [NOAA — mediciones del agujero de ozono 2026](https://www.noaa.gov/news-release/noaa-nasa-release-measurements-of-2026-ozone-hole). NASA mantiene el resumen de misión y visualización: [NASA Science — 2026 Antarctic Ozone Hole](https://science.nasa.gov/earth/2026-ozone-hole/); datos de seguimiento: [NASA Ozone Watch — 2026 Antarctic OMPS/MERRA-2](https://ozonewatch.gsfc.nasa.gov/meteorology/SH.html).
+- **Observación científica reportada:** el promedio del área del agujero entre 7-sep y 13-oct fue de aproximadamente 9.6 millones de millas² (25 millones de km²); el máximo diario fue 10.5 millones de millas² (27.1 millones de km²) el 18-sep. Por área media estacional quedó séptimo entre 48 años de seguimiento. El mínimo de ozono medido sobre el Polo Sur fue 105 DU el 17-oct; el comunicado aclara que el agujero fue grande, pero menos profundo que varios eventos históricos.
+- **Mecanismo descrito por NOAA/NASA:** un vórtice polar antártico inusualmente fuerte y una débil perturbación de ondas planetarias favorecieron condiciones frías y persistentes para la pérdida de ozono. La reducción histórica de sustancias agotadoras de ozono bajo el Protocolo de Montreal evitó un agujero mayor; el dato no contradice la recuperación a largo plazo.
+- **Cálculo:** no se recalculan cifras ni se extrapola una tendencia; se conservan las unidades y periodos publicados por NOAA/NASA.
+- **Inferencia:** el término de Trends puede estar reaccionando al comunicado o a su difusión, pero Trends no demuestra esa causalidad ni que el agujero siga creciendo el 27-nov.
+- **Recomendación:** clasificar como `SEÑAL_TREND_CON_FUENTE_PRIMARIA`, no como `DATO_DIA` ni como candidato añadido a la shortlist de cinco. El comunicado tiene 23 días al corte y no cumple la ventana de 48 h para dato-día. Mantener fuera de producción hasta verificar slot futuro y construir una capa geográfica basada en los datos oficiales, sin inventar coordenadas.
+
+### Acceso a feeds — corte 10:26
+
+Se intentaron abrir los diez RSS definidos en `scripts/tendencias.py` y Google Trends RSS México. El visor rechazó los tipos XML/RSS; errores exactos:
+
+- ScienceDaily ciencia, salud y espacio: HTTP 400, `Unsupported content-type: application/xml`.
+- Phys.org: HTTP 400, `Unsupported content-type: text/xml`.
+- NASA: HTTP 400, `Unsupported content-type: application/rss+xml`.
+- ESA: HTTP 404, `Not Found`.
+- Nature: HTTP 400, `Unsupported content-type: application/rss+xml`.
+- EurekAlert y SINC: `URL ... is not accessible via this tool`.
+- UNAM Global: HTTP 400, `Unsupported content-type: application/rss+xml`.
+- Google Trends RSS México: `URL https://trends.google.com/trending/rss?geo=MX is not accessible via this tool`.
+
+El respaldo HTML oficial de Google Trends sí abrió y mostró la tabla de México. No se afirma que `scripts/tendencias.py` se haya ejecutado localmente; el intento de clonar el repositorio para ejecutarlo falló por DNS (`Could not resolve host: github.com`). La señal anterior `PENDING_SOURCE` queda sustituida por esta fuente oficial, pero no se promueve a la shortlist.
