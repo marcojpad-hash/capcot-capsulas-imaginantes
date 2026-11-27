@@ -91,12 +91,12 @@
     },
     {
       "id": "SRC-002",
-      "cita_corta": "ONS Open Geography Portal — UK nations boundary, consultada mediante ukgeog::read_sf('NAT')",
+      "cita_corta": "Office for National Statistics — Countries (December 2024) Boundaries UK BSC.",
       "url": "https://www.data.gov.uk/dataset/d03eb8db-ebbe-4976-b9ca-32274b2b1078/countries-december-2024-boundaries-uk-bsc",
       "accessed": "2026-11-26",
       "supports": [
-        "Bounding box WGS84 del límite nacional generalizado: latitud 49.86479–60.86078; longitud −8.649996–1.763706",
-        "El paquete obtiene los límites nacionales del ONS Open Geography Portal; el contorno se usa solo como dominio del estudio"
+        "Geometría oficial de límites nacionales del Reino Unido usada para el mapa.",
+        "El extent WGS84 del storyboard se deriva de la geometría del dataset: latitud 49.86479–60.86078 y longitud −8.649996–1.763706."
       ],
       "verification_status": "VERIFICADO_URL",
       "title": "Countries (December 2024) Boundaries UK BSC",
