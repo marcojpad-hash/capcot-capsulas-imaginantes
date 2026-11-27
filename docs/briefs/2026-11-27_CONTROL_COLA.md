@@ -451,3 +451,36 @@ Resultado: no hay promoción segura ni slot libre para el 27-11. No se generaron
 ### Trazabilidad de esta revalidación
 - El paquete `2026-11-27_bacterias-vuelta-oxigeno` apareció en main mediante commit `0e5bc28010ee93896d041ed4f4b5f592d43fe2b0` (2026-11-27 16:37:55Z). El worker `46009658666` había checkout `92d6c034b12a86785a5d12eb22e634f8453cd510` antes de ese commit; su log “sin trabajo en cola” no cubre el estado posterior.
 - La revalidación quedó registrada y verificada por lectura de vuelta: radar en commit `b51f69465606f25880b1394cfcb0eabaaf04c6ef`; control/trazabilidad en commits `5a3ff4cfb7efe62c708b196af582bb3509ebb74d`, `ed119363c1fc16ba2fb2a2edf7cf9098f5d462dc` y `caef06be256dfcece28ddbfb8cf1d1df741e4352`. PR #3 permanece OPEN/DRAFT; no se hizo merge ni dispatch.
+
+
+## QA narrativo independiente — 27-11-2026 12:32 CDMX
+
+Esta sección supersede los estados narrativos anteriores de PAV1 y EpTFIIAγ. Se realizó una ejecución/conversación distinta de la redacción, ocultando título, resumen, arco, notas y `narrative_contract`; la revisión leyó únicamente la narración concatenada de cada storyboard. No se cambió narración, claims, estructura de escenas ni decisiones editoriales.
+
+| project_id | QA anterior | QA actual | checks | commit / blob verificado |
+|---|---|---|---:|---|
+| `2026-11-27_dato-pav1-bacteriofago` | FAIL/0 por revisión independiente ausente | **PASS/90** | 7/7 | `653a7ad38bb136229414bcd180aa9971d5d5f38e` / `0ed2ef7b88a27d24997cfe7e0f9a019a0408d141` |
+| `2026-11-30_liquen-gen-cereales` | QA ausente | **PASS/93** | 7/7 | `a3d9e5cb991f29a296a06a52a9a045378a7a16d4` / `20ea3a0e9b78f9b583565f5c74f89b1abff971ad` |
+
+En ambos registros se guardó `review_basis=lectura_en_frio_solo_narracion`, `reviewer_role=auditor_capcot_independiente`, siete checks true y `critical_flags=[]`. PAV1 conserva explícito el límite: el ensayo preventivo fue en tomate; no demuestra eficacia de campo en viñedos. EpTFIIAγ conserva el límite: líneas experimentales, no variedad comercial. No se repitió el PASS/90 de intermareales ni el FAIL/82 de rapaces porque sus narraciones no cambiaron.
+
+### Relectura de handoff y estado Grok
+
+Se consultaron individualmente para los cuatro storyboards vigentes:
+- `cola/estado/<project_id>.json`;
+- `cola/entrada/<project_id>.json`;
+- `cola/entrada/<project_id>/storyboard.json`;
+- `salidas/<project_id>/`.
+
+Los 16 accesos devolvieron HTTP 404. Se conserva exactamente `RECEPCION_GROK_NO_CONFIRMADA` para cada ID; no se creó ni editó ningún estado Grok ni entrada de cola. Clasificación: los cuatro continúan `NOT_DISPATCHABLE`.
+
+- PAV1 / 27-11 07:00: QA narrativo ahora PASS/90, pero slot en conflicto con microondas de main y procesamiento previo; no redispatchar.
+- Intermareales / 27-11 23:30: PASS/90 previo sin cambio; conflicto con Stubbs de main y medios no verificados; no redispatchar.
+- EpTFIIAγ / 30-11 17:00: QA narrativo ahora PASS/93; no se encontró conflicto de slot en main. Continúa bloqueado por DOI/Crossref y validador estructural oficial no ejecutado.
+- Rapaces / 30-11 07:00: FAIL/82 y estilo repetido; no reescribir ni repetir QA.
+
+### Compuertas que siguen separadas
+
+- El DOI de PAV1 (`10.3389/fpls.2026.2008228`) y el de EpTFIIAγ (`10.1038/s41586-026-11151-w`) aparecen en sus artículos primarios, pero Crossref/doi.org no fueron accesibles; siguen `PENDING_CROSSREF`.
+- `scripts/validar_storyboard.py` fue leído. `--structural-only` es una compuerta estructural distinta y no autoriza handoff; el modo completo con `--check-doi` es obligatorio. No se ejecutó el validador oficial ni se disparó CI en este corte. La recuperación local del repositorio sigue afectada por el error de DNS ya registrado (`Could not resolve host: github.com`); la lectura por GitHub no se presenta como ejecución del script.
+- No hubo promoción, dispatch, generación de medios, programación, publicación ni cambios en `data/*.json` o `main`.
