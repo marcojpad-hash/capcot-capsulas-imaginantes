@@ -418,7 +418,8 @@
     "El mapa incluye tres bounding boxes publicados por GBIF: costa atlántica francesa, norte ibérico e Iberia/norte de Marruecos (cirrípedos). Son extensiones de datasets, se solapan y no representan estaciones puntuales ni todas las localidades con precisión uniforme.",
     "No se ejecutó el validador estructural Python para este storyboard; la inspección de estructura fue manual.",
     "narrative_qa permanece FAIL/0 con REVISION_INDEPENDIENTE_AUSENTE: no hubo una pasada ciega separada leyendo únicamente la narración concatenada. No habilita promoción.",
-    "CONFLICTO_DE_SLOT_ENTRE_RAMAS: main contiene tools/animales_2026-11-23/specs_animales.py, SPECS['stubbs'], con hueco 2026-11-27 23:30 (America/Mexico_City). La afirmación anterior de que el slot estaba libre en main queda supersedida. No promover ni crear una segunda entrada para ese slot."
+    "CONFLICTO_DE_SLOT_ENTRE_RAMAS: main contiene tools/animales_2026-11-23/specs_animales.py, SPECS['stubbs'], con hueco 2026-11-27 23:30 (America/Mexico_City). La afirmación anterior de que el slot estaba libre en main queda supersedida. No promover ni crear una segunda entrada para ese slot.",
+    "2026-11-26 20:08 CDMX: lectura narrativa independiente en frío completada; narrative_qa=PASS/90, siete checks true y critical_flags vacías. No autoriza promoción: el slot 2026-11-27 23:30 sigue en conflicto con main, no hay estado Grok confirmado y la validación estructural/DOI independiente sigue pendiente."
   ],
   "linea_tematica_provisional": "Actualidad",
   "risk_notes": [
@@ -428,23 +429,21 @@
     "No inventar coordenadas para el dataset de cirrípedos; se cita, pero no se grafica."
   ],
   "narrative_qa": {
-    "status": "FAIL",
-    "score": 0,
+    "status": "PASS",
+    "score": 90,
     "review_basis": "lectura_en_frio_solo_narracion",
     "reviewer_role": "auditor_capcot_independiente",
     "checks": {
-      "pregunta_central_reconstruible": false,
-      "apertura_in_medias_res": false,
-      "progresion_por_escena": false,
-      "transiciones_causales": false,
-      "giro_cientifico_explicado": false,
-      "limite_evidencia_explicito": false,
-      "payoff_cierre_apertura": false
+      "pregunta_central_reconstruible": true,
+      "apertura_in_medias_res": true,
+      "progresion_por_escena": true,
+      "transiciones_causales": true,
+      "giro_cientifico_explicado": true,
+      "limite_evidencia_explicito": true,
+      "payoff_cierre_apertura": true
     },
-    "critical_flags": [
-      "REVISION_INDEPENDIENTE_AUSENTE"
-    ],
-    "reviewed_at": "2026-11-26T13:56:16-06:00",
-    "notes": "No se realizó una revisión ciega separada de la narración; el auditor ya había accedido a título, resumen, arco, notas y narrative_contract. Este registro expresa ausencia de revisión independiente, no una evaluación narrativa sustantiva."
+    "critical_flags": [],
+    "reviewed_at": "2026-11-26T20:08:37-06:00",
+    "notes": "Lectura ciega de la narración concatenada, sin título, resumen, arco, notas ni narrative_contract. La pregunta sobre qué revela una costa observada hace setenta años se mantiene; la progresión va del archivo impreso a la digitalización, los registros recuperados y sus límites. La distinción presencia/ausencia frente a abundancia está explícita y el cierre paga la imagen de la línea base devuelta al mapa. Esta revisión sustituye el registro anterior de ausencia de revisión independiente."
   }
 }
