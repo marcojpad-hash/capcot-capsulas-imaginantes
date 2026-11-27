@@ -289,7 +289,7 @@ No se modificaron `main`, `data/*.json`, secretos, permisos, estados Grok, progr
 - Respaldo oficial: Google Trends México HTML mostró 249 tendencias en 24 h; el primer bloque de 25 no ofreció tema científico.
 - El radar 2026-11-27 se actualizó con tres artículos primarios nuevos: EpTFIIAγ/cereales, m⁶A/YTH.2 en malaria y cPLA₂/LTA₄H. Se separaron observación, cálculo, inferencia y recomendación.
 - Se creó `proyectos/2026-11-30_liquen-gen-cereales/storyboard.json` para 17:00, como `PROPUESTA_PENDIENTE_DECISION_GROK`, no como selección final.
-- Lectura de vuelta confirma: 200 palabras de narración, 8 escenas, 78 s de escenas + 6 s de cortinilla = 84 s; gancho de seis palabras; voz `es-MX-JorgeNeural`, rate +7%, pitch -2Hz; prompt_base del catálogo; mapa con cuatro coordenadas publicadas en los Métodos; capa de dato con el rango 19.4–32.8%; ambiente y SFX en cada escena.
+- Relectura del JSON el 27-11 09:59: 199 palabras de narración (no 200), 8 escenas, 78 s de escenas + 6 s de cortinilla = 84 s; gancho de seis palabras; voz `es-MX-JorgeNeural`, rate +7%, pitch -2Hz; `visual_identity.prompt_base` coincide con catálogo; capa de dato 19.4–32.8%; ambiente y SFX en cada escena. **La capa mapa no estaba en el JSON**, aunque el reporte anterior la había dado por presente; se corrigió después con un commit independiente.
 - `approved_assets=[]`, `export.render_status=NOT_GENERATED`, sin `asset_filename`, `asset_type`, rutas ni `export.filename`; `publicacion.status=PENDIENTE_DECISION_GROK`. No se creó `narrative_qa`, `ESTADO_EJECUCION`, medios ni placeholders.
 - Se ejecutó un prechequeo estructural propio sobre el contenido leído de vuelta; pasó los conteos y campos anteriores. **No equivale al validador oficial** `scripts/validar_storyboard.py`; ese validador no se ejecutó en este run.
 - La fuente primaria de Nature es accesible y el artículo incluye DOI, resultados y coordenadas de los cuatro sitios. Crossref REST y doi.org fallaron con el error DNS exacto; DOI = `PENDING_CROSSREF`.
@@ -318,3 +318,38 @@ No se modificaron `main`, `data/*.json`, secretos, permisos, estados Grok, progr
 - Control actualizado: commit anterior `317aa7d6455e5d52ec842de6659d3ae2ac6595ff`; blob actual previo a esta nota `f50ca4c7a065ade5f18ea8291e18b3fc68dd2c93`.
 - Storyboard `proyectos/2026-11-30_liquen-gen-cereales/storyboard.json`: blob verificado `5f9bd265a7af4379b8d83122ec93edb3d7a20c0f`.
 - Fuentes U6 inspeccionadas en solo lectura: `preparar_entrada_solo.py` blob `891e37a482207399f9f929824e0935486b4b95b1`; pruebas `test_preparar_entrada_solo.py` blob `6faa007e40a41c4648262df81302907c6c57fde6`; gate Z90 `5d4627514e7aa33500183fc395b6795bb4fb925d`. No se ejecutó ni modificó U6.
+
+
+## Revalidación operativa — 27-11-2026 09:59 CDMX
+
+### Borrador EpTFIIAγ — corrección estructural verificada
+
+- Se releyó `proyectos/2026-11-30_liquen-gen-cereales/storyboard.json` y se detectó que no tenía ninguna `scenes[].capa` de tipo `mapa`; el control anterior afirmaba erróneamente que ya existía.
+- **EJECUTADO:** se añadió la capa `mapa` a S02, sin cambiar narración ni claims. Incluye cuatro puntos publicados en Métodos de Du et al. (Nature, 25-11-2026): Yangling (34.2667, 108.0667), Heyang (35.7167, 110.0333), Cangzhou (38.5500, 116.6333) y Linfen (36.9333, 112.5667). La ventana `region` se calcula desde esos puntos con margen de 0.5° y se declara como extensión de visualización, no como límite administrativo.
+- **VERIFICADO:** commit `e2ef0e4a074ef614c641f70ee8e68852b58a9bc5`; blob leído de vuelta `4fb4e1aaf7580251995c29062c211948846e8181`. El recuento real de narración es 199 palabras; 8 escenas; 78 s + 6 s = 84 s; 4 coordenadas válidas; una capa de dato; `visual_identity.prompt_base` y los ocho `image_prompt` coinciden con el catálogo; voz, ambiente, SFX, `approved_assets=[]`, `NOT_GENERATED` y publicación pendiente se conservan.
+- **PENDIENTE:** no se ejecutó `scripts/validar_storyboard.py --structural-only`. El intento de recuperar el script desde GitHub en el contenedor falló literalmente con `curl: (6) Could not resolve host: raw.githubusercontent.com`; el visor web rechazó los archivos raw con `DisabledError`. La consulta de Actions para el commit devolvió `workflow_runs=[]`. La revisión estática de campos no se presenta como ejecución del validador oficial.
+- **PENDIENTE:** Crossref REST y `doi.org` no fueron accesibles desde esta sesión; DOI `10.1038/s41586-026-11151-w` sigue `PENDING_CROSSREF`. La página/PDF primaria sí muestra el DOI y los cuatro sitios.
+- **QA y handoff:** `narrative_qa` continúa ausente; no se realizó una pasada independiente posterior. `cola/estado/2026-11-30_liquen-gen-cereales.json` sigue 404 (`RECEPCION_GROK_NO_CONFIRMADA`); no existe entrada plana, salida ni copia bloqueada. Clasificación `NOT_DISPATCHABLE`; no promover.
+
+### Revalidación de agenda y rotación
+
+- `main/data/horarios.json` mantiene ventanas 06:30–07:30 y 16:30–18:00; 17:00 es un horario permitido, no una asignación por fecha.
+- `main/data/rehechos_2026-11-22.json` contiene nueve paquetes y no registra 27-11 17:00 ni 30-11 17:00. `main/data/publicaciones.json` contiene 62 registros y no presenta entradas 27–30 nov. Esto no acredita ausencia de IDs externos programados.
+- No se creó storyboard para 27-11 17:00: falta una fuente de historial/programación externa que permita descartar con seguridad un ID antiguo. El slot 30-11 17:00 sigue sin conflicto encontrado en las fuentes de main consultadas, no como ausencia absoluta fuera de ellas.
+- `feature/data/rotacion.json`, `data/temas_del_dia.json` y `data/estilos_usados.json` siguen desactualizados respecto de noviembre (últimos registros en octubre). No se modificaron. La rotación se contrastó con los storyboards recientes: rapaces usa `papel_rasgado_capas`, intermareales `atlas_antiguo`, PAV1 `microscopio_psicodelico` y EpTFIIAγ `rubber_hose_1930s`; no se repitió el estilo en este nuevo borrador.
+
+### Radar científico y señales de tendencia — 09:59 CDMX
+
+- Se actualizó `docs/briefs/2026-11-27_RADAR_CAPCOT.md`, commit `90c4114b13ce4c08c2f3bafeb766e4e6395f4637`, con shortlist vigente de cinco candidatos: EpTFIIAγ, malaria m⁶A/YTH.2, actividad fuera del blanco de CAY10641/CAY10650, CAST tipo I-F y circuito intestino-cerebro de Drosophila. Los candidatos históricos previos permanecen sin cambio y no se cuentan de nuevo.
+- Los dos candidatos añadidos se respaldan en artículos primarios de Nature publicados el 25-11-2026: DOI `10.1038/s41586-026-11196-x` (CAST) y `10.1038/s41586-026-11315-8` (circuito intestino-cerebro). No se creó storyboard para ninguno: no hay coordenadas geográficas de ensayo publicadas para satisfacer el mapa exigido.
+- Apertura directa de RSS en esta sesión: ScienceDaily (tres feeds) 400 `Unsupported content-type: application/xml`; Phys.org 400 `text/xml`; NASA 400 `application/rss+xml`; ESA 404; Nature RSS 400 `application/rss+xml`; UNAM Global 400 `application/rss+xml`; EurekAlert, SINC y Google Trends RSS no accesibles desde esta herramienta. No se ejecutó localmente `tendencias.py` en este corte.
+- Respaldo HTML oficial de Google Trends México: 250 tendencias en las últimas 24 h; “agujero de la capa de ozono” aparece con 2K+ búsquedas y actividad unas 6 h antes. Se registra como señal `PENDING_SOURCE`, no como candidato.
+- Crossref y `doi.org` devolvieron “URL ... is not accessible via this tool”; ningún DOI nuevo se marca verificado por resolver.
+
+### Estado de los proyectos existentes
+
+- Rapaces 30-nov: `FAIL/82`, una revisión fría independiente registrada el 27-11 02:04; no repetir ni reescribir.
+- PAV1 27-nov: `FAIL/0`, `REVISION_INDEPENDIENTE_AUSENTE`; no promover.
+- Intermareales 27-nov 23:30: `PASS/90` existente, sin cambio de narración; no repetir. Sigue el conflicto con Stubbs en main, procesamiento previo y medios no verificados.
+- Lote 5–7 nov: 12 proyectos sin cambios narrativos posteriores al último control; se conservan los QA previos (2 PASS / 10 FAIL), sin repetir PASS ni modificar copias bloqueadas.
+- No se disparó workflow, no se envió payload, no se creó ni modificó `cola/estado`, no se generaron medios ni se consumieron créditos.
