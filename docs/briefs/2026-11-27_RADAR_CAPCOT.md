@@ -1,7 +1,7 @@
 # RADAR CAPCOT — 2026-11-27
 
 **Corte:** 27 de noviembre de 2026, 00:02 CDMX.  
-**Estado:** investigación documental; ningún candidato cruza todavía todas las compuertas para storyboard.
+**Estado al corte 03:55 CDMX:** cinco candidatos activos con fuente primaria identificada; PAV1 seleccionado para borrador matutino 07:00. La validación estructural real y `--check-doi` siguen pendientes; no hay promoción ni despacho.
 
 ## Método y fuentes
 
@@ -114,3 +114,52 @@ El respaldo HTML oficial de [Google Trends México](https://trends.google.com/tr
 - **Estado DOI:** `PENDING_CROSSREF`. La apertura directa de Crossref y `doi.org` devolvió `Internal Error ()` y “URL ... is not accessible via this tool”; la página editorial primaria sí está accesible. No marcar el DOI como verificado.
 
 Los cinco candidatos principales del corte permanecen sin cambios y con Crossref pendiente. No se creó storyboard para el 28-11-2026 23:30 ni para otro slot.
+
+
+## Corte adicional — 27-11-2026 03:55 CDMX
+
+**RSS y respaldo:** se reintentó abrir directamente las URL RSS de `scripts/tendencias.py`; se mantuvieron los errores de tipo de contenido XML/RSS, ESA 404 y las URL no accesibles de EurekAlert/SINC/Google Trends RSS. No se ejecutó el script Python porque el entorno no pudo recuperar GitHub por DNS; por tanto, estos son resultados de apertura directa, no una ejecución de `tendencias.py`. La vista HTML oficial de [Google Trends México](https://trends.google.com/trending?geo=MX) mostró **257 tendencias**; las primeras 25 no aportaron señal científica/natural admisible.
+
+### Cinco candidatos activos del corte
+
+1. **PAV1: bacteriófago contra `Allorhizobium vitis` — seleccionado para borrador 27-11 07:00.**
+   - Fuente primaria: Sabri et al., *Frontiers in Plant Science*, Original Research, publicado 26-11-2026. DOI 10.3389/fpls.2026.2008228. [Artículo primario](https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2026.2008228/full).
+   - Observación: primer bacteriófago descrito para `A. vitis`; inhibición de crecimiento superior al 98% en 48 h in vitro contra la cepa probada; a 25 días, incidencia en tomate de 83.3% en controles, 46.7% con inyección preventiva y 50.0% con aspersión preventiva.
+   - Mapa: el artículo publica 41.1081° N, 16.2606° E para la entrada de la planta municipal de tratamiento de aguas residuales de Bari, donde se aisló PAV1 en noviembre de 2025. Esa coordenada **no** es el lugar del ensayo en tomate.
+   - Límite: ensayo preventivo en tomate; no demuestra eficacia en viñedos, curación de plantas ya enfermas ni control de campo. El artículo no publica coordenadas del ensayo en tomate.
+   - Verificación: página primaria accesible y DOI visible en el encabezado; el acceso directo a `doi.org` no estuvo disponible desde esta herramienta. Estado de DOI: `VERIFICADO_URL`; Crossref/`--check-doi` pendiente.
+   - Decisión: se creó únicamente `proyectos/2026-11-27_dato-pav1-bacteriofago/storyboard.json` para el slot libre 07:00. No se creó narrative_qa, ESTADO_EJECUCION ni entrada de cola.
+
+2. **Riesgo genético en fauna mesopelágica del Golfo de México.**
+   - Fuente primaria: *Nature Communications*, DOI 10.1038/s41467-026-79098-0. [Artículo editorial](https://www.nature.com/articles/s41467-026-79098-0). Cobertura de ScienceDaily, 26-11-2026: [nota](https://www.sciencedaily.com/releases/2026/11/261125045249.htm).
+   - Observación: 486 ejemplares, cinco especies, datos de 2011–2023; pérdida neta cercana al 8% en tres métricas para `Diaphus dumerilii`; los modelos proyectan menor hábitat adecuado para cuatro de cinco especies, con cambios dependientes de especie y escenario.
+   - Límite: no atribuir el cambio a Deepwater Horizon; los autores no pueden establecer causalidad por falta de muestras genéticas anteriores al derrame. El mapa de crucero DP02 2015 es solo una ventana contextual, no todas las estaciones de la serie.
+   - Verificación: el enlace DOI redirigió al dominio editorial; PDF primario accesible. Crossref REST no se obtuvo directamente.
+
+3. **Reclasificación de `Westlothiana`, fósil de aproximadamente 345 millones de años.**
+   - Fuente primaria: *Nature*, DOI 10.1038/s41586-026-11090-6. Cobertura de ScienceDaily, 26-11-2026: [nota](https://www.sciencedaily.com/releases/2026/11/261125045239.htm).
+   - Observación: la nueva evidencia anatómica lo ubica como tetrápodo troncal, no como el reptil más antiguo.
+   - Límite: no convertir la reclasificación en una afirmación de que ya era un amniota o un reptil temprano.
+   - Verificación: enlace DOI redirigió a Nature; Crossref REST pendiente.
+
+4. **L-BAIBA y adaptación muscular asociada al ejercicio.**
+   - Fuente primaria: *Nature Communications*, DOI 10.1038/s41467-026-76307-8. Cobertura de ScienceDaily, 26-11-2026: [nota](https://www.sciencedaily.com/releases/2026/11/261125045244.htm).
+   - Observación: el estudio investiga una molécula asociada al ejercicio y respuestas metabólicas/musculares en modelos experimentales.
+   - Límite: no recomendar suplementos ni extrapolar eficacia a humanos sin evidencia clínica.
+   - Verificación: enlace DOI redirigió a Nature; Crossref REST pendiente.
+
+5. **Dimorfismo sexual en `Uintatherium`.**
+   - Fuente primaria: *PLOS ONE*, DOI 10.1371/journal.pone.0345236. [Artículo primario](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0345236). Cobertura de ScienceDaily, 26-11-2026: [nota](https://www.sciencedaily.com/releases/2026/11/261125045251.htm).
+   - Observación: el análisis morfométrico no respalda una separación extrema y simple entre cráneos masculinos y femeninos.
+   - Límite: no asignar sexo a cada cráneo individual ni presentar la discusión como resuelta por completo.
+   - Verificación: enlace DOI redirigió a PLOS; Crossref REST pendiente.
+
+### Reclasificación del corte inicial 00:02
+
+Los cinco candidatos iniciales (turberas, cemento por plasma, complejidad de copas, coagulante de algas y madera) se conservan como históricos, pero siguen `PENDING_SOURCE` hasta comprobar que cada DOI/URL conduce al artículo que afirma la ficha. No se usaron para el storyboard matutino. PAV1 deja de ser solo vigilancia y pasa a candidato principal por artículo original del 26-11, DOI visible, resultados explícitos y coordenada de aislamiento publicada.
+
+### Decisión de slot
+
+- **27-11 07:00:** libre en la ventana activa 06:30–07:30; se creó borrador PAV1 en `proyectos/`.
+- **27-11 23:30:** no disponible; main reserva el mismo fecha+slot para Stubbs, con render reportado de 86.13 s. No crear una segunda entrada para ese slot.
+- El borrador PAV1 queda `BORRADOR_EN_PROYECTOS_NO_APTO_PARA_PROMOCION`: 187 palabras, 8 escenas, 78 s de escenas + 6 s de cortinilla = 84 s, gancho de 5 palabras, voz es-MX-JorgeNeural +7%/-2Hz, mapa con la coordenada publicada de aislamiento, dato/gráfico, ambiente y SFX por escena, `approved_assets=[]`, `export.render_status=NOT_GENERATED`, publicación pendiente. No se ejecutó el validador Python real ni `--check-doi`; no hay narrative_qa por rol de investigador.
