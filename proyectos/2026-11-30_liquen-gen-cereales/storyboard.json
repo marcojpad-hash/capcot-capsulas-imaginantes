@@ -1,0 +1,338 @@
+{
+  "schema": "CAPCOT_STORYBOARD_TEXT_V2",
+  "project_id": "2026-11-30_liquen-gen-cereales",
+  "serie": "Datos y ociosidades",
+  "language": "es-MX",
+  "aspect_ratio": "9:16",
+  "fecha_objetivo": "2026-11-30",
+  "slot_local": "17:00",
+  "timezone": "America/Mexico_City",
+  "slot_window": "16:30–18:00",
+  "target_duration_seconds": 84,
+  "title": "Un gen de un hongo de liquen ayuda al trigo",
+  "titulo": "Un gen de liquen para trigo",
+  "hook": "Un gen de liquen para trigo",
+  "estructura": "comparacion",
+  "arco": {
+    "hook_medias_res": "La sequía ya afecta al cultivo y la pista aparece en un hongo formador de líquenes.",
+    "desarrollo": "El gen del hongo se introduce en cereales y coordina programas de respuesta al estrés y desarrollo.",
+    "cierre_historia": "Los ensayos de trigo muestran mayor rendimiento por parcela bajo agua limitada.",
+    "reflexion_o_pregunta": "La evidencia es experimental; no equivale a una variedad comercial ni a una solución universal."
+  },
+  "resumen": "Un factor de transcripción procedente del hongo formador del liquen Endocarpon pusillum mejoró rasgos de respuesta a sequía y rendimiento en líneas experimentales de cereales. En cinco cultivares de trigo, los ensayos de campo de Yangling reportaron 19.4–32.8% más grano por parcela bajo agua limitada.",
+  "linea_tematica_provisional": "Ciencia vegetal, biotecnología agrícola y sequía",
+  "audience": "Público general; distinguir líneas transgénicas experimentales de variedades comerciales disponibles.",
+  "occasion": "Ventana de tarde 16:30–18:00 CDMX; 17:00 es un slot distinto del proyecto de rapaces de las 07:00. Lunes no preferente, pero ventana activa y sin conflicto de fecha+slot en los registros de main consultados.",
+  "editorial_status": "PROPUESTA_PENDIENTE_DECISION_GROK",
+  "estado": "BORRADOR_EN_PROYECTOS_NO_APTO_PARA_PROMOCION",
+  "production_mode": "storyboard_only",
+  "trend_source": {
+    "termino": "gen de hongo formador de liquen mejora respuesta a sequía y rendimiento de cereales",
+    "medio": "Nature",
+    "fecha_publicacion": "2026-11-25",
+    "fecha_consulta": "2026-11-27",
+    "tipo": "artículo original de investigación",
+    "url": "https://www.nature.com/articles/s41586-026-11151-w.pdf",
+    "doi": "10.1038/s41586-026-11151-w",
+    "status": "CANDIDATO_PRINCIPAL; URL PRIMARIA VERIFICADA; DOI PENDING_CROSSREF"
+  },
+  "narrative_contract": {
+    "central_question": "¿Puede un gen de un hongo formador de líquenes ayudar a que los cereales mantengan su rendimiento cuando falta agua?",
+    "promise": "Explicar de dónde sale EpTFIIAγ, qué cambia en la planta y qué ocurrió en ensayos de trigo bajo agua limitada.",
+    "stakes": "La sequía amenaza la producción agrícola; resistir sin conservar el rendimiento no resuelve el problema.",
+    "scientific_turn": "EpTFIIAγ codifica un factor de transcripción que coordina programas de estrés, desarrollo y fotosíntesis; en cinco cultivares de trigo, el rendimiento por parcela aumentó 19.4–32.8% bajo agua limitada.",
+    "evidence_limit": "Los resultados corresponden a líneas transgénicas experimentales y ensayos concretos; no prueban una variedad comercial disponible ni una solución universal. Las coordenadas son sitios de ensayo publicados, no polígonos de parcelas.",
+    "payoff": "El hongo no aporta agua: aporta una instrucción genética que cambió la respuesta de la planta; la apertura se resuelve sin prometer disponibilidad comercial."
+  },
+  "sources": [
+    {
+      "id": "SRC-001",
+      "type": "primary_research_article",
+      "title": "An extremophile transgene improves drought resistance and yield in cereals",
+      "authors": "Du et al.",
+      "publication": "Nature",
+      "publication_date": "2026-11-25",
+      "url": "https://www.nature.com/articles/s41586-026-11151-w.pdf",
+      "doi": "10.1038/s41586-026-11151-w",
+      "verification_status": "VERIFICADO_URL; DOI PENDING_CROSSREF",
+      "supports": [
+        "origen del gen EpTFIIAγ",
+        "rasgos fisiológicos",
+        "ensayos de campo y coordenadas publicadas",
+        "rango de rendimiento por parcela",
+        "resultados reportados en arroz y maíz"
+      ]
+    }
+  ],
+  "estilo_id": "rubber_hose_1930s",
+  "estilo_visual": "Cartoon rubber hose años 20-30",
+  "visual_identity": {
+    "style_id": "rubber_hose_1930s",
+    "style_name": "Cartoon rubber hose años 20-30",
+    "prompt_base": "1930s rubber hose cartoon animation style, hand-inked bouncy characters with pie-cut eyes and white gloves, watercolor painted backgrounds, film grain, slight vignette, sepia-tinted vintage colors, single large character centered, simple background, flat illustrated, not photorealistic, vertical 9:16, no text",
+    "palette": "sepia, rojo tomate, amarillo mostaza, negro tinta, crema",
+    "lighting": "Luz cálida lateral de estudio, sombras suaves y viñeta discreta",
+    "texture": "Tinta dibujada a mano, fondos de acuarela, grano de película",
+    "composition": "Personajes grandes y simples, una figura dominante por plano, lectura vertical 9:16; el hongo formador de liquen conserva silueta y rasgos en todas las escenas",
+    "negative_prompt": "photorealism, text, logos, fabricated yield numbers, invented field plots, commercial seed packaging, rain or irrigation effects not supported by the study",
+    "reference_assets": [],
+    "seed_policy": "Sin semilla ni assets de referencia en preproducción; mantener el mismo diseño del hongo y del trigo entre escenas."
+  },
+  "typography_identity": {
+    "font_family": "DejaVu Sans",
+    "font_weight": "700 para gancho; 400 para subtítulos",
+    "title_style": "Máximo seis palabras; visible desde frame 0 en postproducción",
+    "subtitle_style": "Bloques de máximo tres palabras; zona segura inferior",
+    "hierarchy": "Gancho > dato/etiqueta > subtítulos",
+    "animation": "Un movimiento por plano; tipografía en postproducción"
+  },
+  "voice": {
+    "engine": "edge-tts",
+    "voice_id": "es-MX-JorgeNeural",
+    "language": "es-MX",
+    "rate": "+7%",
+    "pitch": "-2Hz",
+    "pad_seconds": 0.3,
+    "modo_pausas": "continuo"
+  },
+  "cortinilla_fuentes": {
+    "duration_seconds": 6,
+    "titulo": "Fuentes",
+    "aviso": "Fuente primaria: Nature, artículo original publicado el 25 de noviembre de 2026. Coordenadas de los sitios de ensayo tomadas del apartado de Métodos.",
+    "firma": "Datos y ociosidades",
+    "source_ids": [
+      "SRC-001"
+    ]
+  },
+  "audio": {
+    "cama_musical": "pulso",
+    "music_asset": null,
+    "music_plan": "Sugerencia de pulso sintético suave y ascendente; no generar audio en esta etapa.",
+    "music_license": null,
+    "note": "No se creó ni sintetizó audio."
+  },
+  "scenes": [
+    {
+      "id": "S01",
+      "arc": "hook_medias_res",
+      "duration_seconds": 9,
+      "narration": "Una sequía golpea un cultivo y las hojas empiezan a perder agua. La pista para resistir no apareció en el trigo: estaba escondida en un liquen.",
+      "dramatic_beat": "La sequía ya está dañando el cultivo",
+      "scene_function": "Abrir con la consecuencia en curso, no con una definición",
+      "causal_bridge_from_previous": "Inicio: el trigo ya enfrenta déficit hídrico",
+      "question_state": "¿De dónde puede venir una pista para resistir?",
+      "reason_to_continue": "La pista no procede del propio trigo",
+      "new_information": "El origen de la pista está en un organismo asociado a un liquen",
+      "visual_description": "Campo de trigo con hojas encogidas por déficit hídrico; un pequeño hongo liquenizado aparece en primer plano como personaje, sin lluvia ni rescate mágico",
+      "image_prompt": "1930s rubber hose cartoon animation style, hand-inked bouncy characters with pie-cut eyes and white gloves, watercolor painted backgrounds, film grain, slight vignette, sepia-tinted vintage colors, single large character centered, simple background, flat illustrated, not photorealistic, vertical 9:16, no text, drought-stressed wheat field, curled dry leaves in foreground, one small lichen-forming fungus character looking toward the crop, clear visual contrast, no text, no logos",
+      "source_ids": [
+        "SRC-001"
+      ],
+      "ambiente": "Viento seco entre espigas, sin tormenta ni lluvia",
+      "sfx": "Roce de hojas secas y una ráfaga corta"
+    },
+    {
+      "id": "S02",
+      "arc": "desarrollo",
+      "duration_seconds": 9,
+      "narration": "El equipo aisló un gen de Endocarpon pusillum, un hongo que forma un liquen y resiste la deshidratación. Lo introdujo en plantas.",
+      "dramatic_beat": "La pista genética aparece fuera del cereal",
+      "scene_function": "Identificar el organismo y el origen del gen",
+      "causal_bridge_from_previous": "La pregunta sobre el origen conduce al organismo de donde salió el gen",
+      "question_state": "¿Qué hace ese gen cuando llega a una planta?",
+      "reason_to_continue": "Todavía falta explicar cómo puede cambiar la respuesta al agua",
+      "new_information": "El gen EpTFIIAγ procede del hongo Endocarpon pusillum, formador de líquenes",
+      "visual_description": "El hongo del liquen entrega una cinta genética a una plántula de trigo; transición de laboratorio, no transferencia natural",
+      "image_prompt": "1930s rubber hose cartoon animation style, hand-inked bouncy characters with pie-cut eyes and white gloves, watercolor painted backgrounds, film grain, slight vignette, sepia-tinted vintage colors, single large character centered, simple background, flat illustrated, not photorealistic, vertical 9:16, no text, close-up of a lichen-forming fungus character handing a small glowing gene ribbon to a wheat seedling in a simple laboratory vignette, hand-inked, no text",
+      "source_ids": [
+        "SRC-001"
+      ],
+      "ambiente": "Ambiente de laboratorio tenue y seco",
+      "sfx": "Pequeño clic al pasar la cinta genética"
+    },
+    {
+      "id": "S03",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "El gen codifica un factor de transcripción: una proteína que ayuda a coordinar qué genes se activan. No añade agua; cambia cómo responde la planta.",
+      "dramatic_beat": "La instrucción cambia la coordinación interna",
+      "scene_function": "Traducir el factor de transcripción a una imagen comprensible",
+      "causal_bridge_from_previous": "El gen introducido necesita un mecanismo para influir en la planta",
+      "question_state": "¿Qué respuesta observable produce?",
+      "reason_to_continue": "El mecanismo debe verse en raíces, hojas y pérdida de agua",
+      "new_information": "EpTFIIAγ codifica un factor de transcripción que coordina programas de genes",
+      "visual_description": "Una proteína-personaje dirige interruptores sencillos en una célula vegetal; no mostrar una secuencia molecular inventada",
+      "image_prompt": "1930s rubber hose cartoon animation style, hand-inked bouncy characters with pie-cut eyes and white gloves, watercolor painted backgrounds, film grain, slight vignette, sepia-tinted vintage colors, single large character centered, simple background, flat illustrated, not photorealistic, vertical 9:16, no text, friendly transcription-factor protein character coordinating a few simple gene switches inside a stylized plant cell, vintage cartoon science illustration, no letters, no text",
+      "source_ids": [
+        "SRC-001"
+      ],
+      "ambiente": "Zumbido suave de laboratorio",
+      "sfx": "Tres clics discretos de interruptores"
+    },
+    {
+      "id": "S04",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "En las líneas modificadas observaron raíces más desarrolladas, estomas menos abiertos y menor pérdida de agua bajo sequía. La planta responde distinto al estrés.",
+      "dramatic_beat": "La planta muestra cambios medibles",
+      "scene_function": "Conectar el mecanismo con rasgos fisiológicos observados",
+      "causal_bridge_from_previous": "La coordinación genética se refleja en rasgos de la planta",
+      "question_state": "¿Esos rasgos se traducen en cosecha?",
+      "reason_to_continue": "Resistir no basta si el rendimiento cae",
+      "new_information": "Se observaron mayor crecimiento de raíces y menor apertura estomática y transpiración",
+      "visual_description": "Corte lateral de raíz más desarrollada y estomas menos abiertos; comparar líneas transgénicas y controles sin añadir valores no publicados",
+      "image_prompt": "1930s rubber hose cartoon animation style, hand-inked bouncy characters with pie-cut eyes and white gloves, watercolor painted backgrounds, film grain, slight vignette, sepia-tinted vintage colors, single large character centered, simple background, flat illustrated, not photorealistic, vertical 9:16, no text, side-by-side stylized wheat seedlings with deeper roots and more closed stomata in the experimental line, simple botanical cutaway, no labels or text",
+      "source_ids": [
+        "SRC-001"
+      ],
+      "ambiente": "Tierra seca y hojas moviéndose suavemente",
+      "sfx": "Crujido breve de suelo y hojas"
+    },
+    {
+      "id": "S05",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "Pero sobrevivir no bastaba. El equipo comparó cinco cultivares de trigo durante tres años, con riego completo y agua limitada, en ensayos de campo en China.",
+      "dramatic_beat": "La prueba sale del laboratorio",
+      "scene_function": "Situar los ensayos de campo y su extensión temporal",
+      "causal_bridge_from_previous": "Los rasgos fisiológicos deben sostenerse en parcelas reales",
+      "question_state": "¿Qué ocurrió con el grano bajo menos agua?",
+      "reason_to_continue": "El ensayo compara cinco cultivares y varias regiones",
+      "new_information": "Los ensayos de trigo se realizaron en Yangling entre 2023 y 2025 y en tres regiones áridas adicionales en 2025",
+      "visual_description": "Mapa de China con cuatro puntos publicados para los sitios de ensayo de trigo; los puntos son referencias de sitio, no límites de parcela",
+      "image_prompt": "1930s rubber hose cartoon animation style, hand-inked bouncy characters with pie-cut eyes and white gloves, watercolor painted backgrounds, film grain, slight vignette, sepia-tinted vintage colors, single large character centered, simple background, flat illustrated, not photorealistic, vertical 9:16, no text, clean illustrated map of northern China with four precise location markers and wheat-field vignettes, educational atlas composition, no text, no invented boundaries",
+      "source_ids": [
+        "SRC-001"
+      ],
+      "ambiente": "Ambiente de campo abierto, viento bajo",
+      "sfx": "Transición corta de mapa y un golpe suave",
+      "capa": {
+        "type": "mapa",
+        "source": "SRC-001",
+        "title": "Sitios de ensayo de trigo publicados en Métodos",
+        "coordinate_system": "WGS84",
+        "precision_note": "Coordenadas DMS del artículo convertidas a decimal; son referencias de sitio, no polígonos de parcelas.",
+        "points": [
+          {
+            "lat": 34.266667,
+            "lon": 108.066667,
+            "label": "Yangling, Shaanxi — ensayo principal 2023–2025",
+            "note": "34°16′ N, 108°04′ E; referencia de sitio publicada"
+          },
+          {
+            "lat": 35.716667,
+            "lon": 110.033333,
+            "label": "Heyang, Shaanxi — ensayo adicional 2025",
+            "note": "35°43′ N, 110°02′ E; referencia de sitio publicada"
+          },
+          {
+            "lat": 38.55,
+            "lon": 116.633333,
+            "label": "Cangzhou, Hebei — ensayo adicional 2025",
+            "note": "38°33′ N, 116°38′ E; referencia de sitio publicada"
+          },
+          {
+            "lat": 36.933333,
+            "lon": 112.566667,
+            "label": "Linfen, Shanxi — ensayo adicional 2025",
+            "note": "36°56′ N, 112°34′ E; referencia de sitio publicada"
+          }
+        ],
+        "bounds": [
+          34.266667,
+          108.066667,
+          38.55,
+          116.633333
+        ]
+      }
+    },
+    {
+      "id": "S06",
+      "arc": "cierre_historia",
+      "duration_seconds": 10,
+      "narration": "En Yangling, las parcelas limitadas recibieron cerca del 30% del volumen del riego completo. Aun así, rindieron 19.4–32.8% más grano por parcela que sus controles.",
+      "dramatic_beat": "La cosecha responde aun con agua limitada",
+      "scene_function": "Entregar el giro cuantitativo con comparación contextualizada",
+      "causal_bridge_from_previous": "El mapa lleva al ensayo de tres años en Yangling",
+      "question_state": "¿La resistencia también conservó el rendimiento?",
+      "reason_to_continue": "El rango de aumento debe entenderse frente al control y al agua recibida",
+      "new_information": "Cinco cultivares de trigo mostraron 19.4–32.8% más rendimiento por parcela bajo agua limitada; esas parcelas recibieron aproximadamente 30% del volumen del riego completo",
+      "visual_description": "Gráfico de rango 19.4–32.8% de aumento de rendimiento por parcela frente a controles; etiqueta contextual de 30% del volumen de agua del riego completo, sin asignar un valor por cultivar",
+      "image_prompt": "1930s rubber hose cartoon animation style, hand-inked bouncy characters with pie-cut eyes and white gloves, watercolor painted backgrounds, film grain, slight vignette, sepia-tinted vintage colors, single large character centered, simple background, flat illustrated, not photorealistic, vertical 9:16, no text, bold simple range chart with wheat ears, visual range from 19.4 to 32.8 percent and a smaller 30 percent water-volume cue, vintage hand-inked infographic, no extra statistics, no text baked into image",
+      "source_ids": [
+        "SRC-001"
+      ],
+      "ambiente": "Pulso musical ligero sugerido, sin audio generado",
+      "sfx": "Golpe de percusión suave al aparecer el rango",
+      "capa": {
+        "type": "dato",
+        "source": "SRC-001",
+        "titulo": "Rendimiento por parcela bajo agua limitada",
+        "valor": "19.4–32.8%",
+        "unidad": "más grano por parcela frente a controles",
+        "contexto": "Cinco cultivares de trigo; ensayos de tres años en Yangling; parcelas limitadas con cerca de 30% del volumen de riego completo",
+        "nota": "El rango es agregado; no asignar porcentajes individuales a cada cultivar"
+      }
+    },
+    {
+      "id": "S07",
+      "arc": "cierre_historia",
+      "duration_seconds": 10,
+      "narration": "El trabajo también reportó aumentos de rendimiento por planta en arroz y maíz. El gen parece conectar respuestas al estrés con desarrollo y fotosíntesis.",
+      "dramatic_beat": "El efecto no se limita al trigo",
+      "scene_function": "Ampliar el alcance sin convertirlo en promesa universal",
+      "causal_bridge_from_previous": "El resultado en trigo abre la pregunta por otros cereales",
+      "question_state": "¿La estrategia aparece también en otros cultivos?",
+      "reason_to_continue": "Falta delimitar qué significa la amplitud del resultado",
+      "new_information": "El artículo también reporta aumentos de rendimiento por planta en arroz y maíz",
+      "visual_description": "Tres plantas diferenciadas —trigo, arroz y maíz— conectadas por una misma cinta genética; no mostrar porcentajes adicionales",
+      "image_prompt": "1930s rubber hose cartoon animation style, hand-inked bouncy characters with pie-cut eyes and white gloves, watercolor painted backgrounds, film grain, slight vignette, sepia-tinted vintage colors, single large character centered, simple background, flat illustrated, not photorealistic, vertical 9:16, no text, three distinct cereal plants wheat rice and maize connected by one small gene ribbon, balanced vintage cartoon composition, no numbers, no text",
+      "source_ids": [
+        "SRC-001"
+      ],
+      "ambiente": "Campo con insectos leves y brisa",
+      "sfx": "Tres notas breves al aparecer cada cereal"
+    },
+    {
+      "id": "S08",
+      "arc": "reflexion_o_pregunta",
+      "duration_seconds": 10,
+      "narration": "El liquen no prestó agua: prestó una instrucción para responder mejor a la sequía. Aún son líneas experimentales, no una variedad comercial. Esto fue Datos y ociosidades.",
+      "dramatic_beat": "La promesa queda acotada a líneas experimentales",
+      "scene_function": "Pagar la apertura y dejar explícito el límite de evidencia",
+      "causal_bridge_from_previous": "La amplitud entre cereales no elimina la etapa experimental",
+      "question_state": "¿Puede llegar a variedades agrícolas disponibles? El estudio no responde todavía",
+      "reason_to_continue": "La audiencia conserva la diferencia entre resultado experimental y disponibilidad comercial",
+      "new_information": "La investigación no demuestra una variedad comercial lista ni una solución universal",
+      "visual_description": "Regreso al campo inicial: el hongo del liquen y la planta aparecen juntos; la cosecha mejora en el esquema, pero una etiqueta visual de laboratorio mantiene el límite experimental sin texto",
+      "image_prompt": "1930s rubber hose cartoon animation style, hand-inked bouncy characters with pie-cut eyes and white gloves, watercolor painted backgrounds, film grain, slight vignette, sepia-tinted vintage colors, single large character centered, simple background, flat illustrated, not photorealistic, vertical 9:16, no text, return to the opening drought-stressed wheat field, the lichen-forming fungus and experimental wheat plant stand together, restrained hopeful ending, laboratory glass silhouette in background, no text, no logos",
+      "source_ids": [
+        "SRC-001"
+      ],
+      "ambiente": "El viento baja y queda un ambiente sereno",
+      "sfx": "Cierre musical seco, sin voz adicional"
+    }
+  ],
+  "approved_assets": [],
+  "export": {
+    "resolution": "1080x1920",
+    "fps": 30,
+    "render_status": "NOT_GENERATED"
+  },
+  "publicacion": {
+    "status": "PENDIENTE_DECISION_GROK",
+    "platforms": [
+      "YouTube Shorts",
+      "TikTok",
+      "Facebook Reels"
+    ],
+    "note": "No publicar ni programar desde preproducción textual."
+  },
+  "validation_notes": "Borrador de investigador. No contiene narrative_qa; requiere revisión en frío independiente posterior. DOI/Crossref pendiente por fallo DNS del resolver.",
+  "risk_notes": [
+    "DOI PENDING_CROSSREF",
+    "REVISION_INDEPENDIENTE_PENDIENTE",
+    "RECEPCION_GROK_NO_CONFIRMADA",
+    "NO_APTO_PARA_PROMOCION"
+  ]
+}
