@@ -574,3 +574,28 @@ No se modificaron `main`, `data/*.json`, cola/estado, programación, medios ni d
 - El único registro SARIF dentro de los dos archivos modificados por PR #15 es `python.lang.security.audit.httpsconnection-detected.httpsconnection-detected` en `scripts/validar_storyboard.py:27`. El cambio fija el host `api.crossref.org` y usa contexto TLS verificado, pero Semgrep sigue marcándolo pese al comentario de supresión. Los demás hallazgos están en otros archivos del árbol; no se atribuyen todos al diff de PR #15. No se modificó la rama del PR ni se relajó el escaneo.
 - **Kuroshio:** la actualización de `ESTADO_EJECUCION.md` registra el run `45898334232` (SUCCESS), commit ejecutado `8461bf23dcb99562340d751ebbbfb2731a085524`, comando textual sin `--check-doi` y salida `OK`. La estructura sigue acreditada para el blob ejecutado; DOI `10.1038/s41561-026-02139-2` continúa `PENDIENTE_RESOLVEDOR` y el estado permanece `BORRADOR_EN_PROYECTOS_NO_APTO_PARA_PROMOCION`.
 - No se modificaron `main`, `data/*.json`, storyboards, cola, estados Grok, workflows, secretos, medios ni programación. No hubo dispatch, publicación, merge ni generación de medios.
+
+
+## Revalidación de backlog 30-nov — 27-11-2026
+
+Se releyó el inventario de `feature/capcot-video-discovery-continuity` y se localizaron **dos** borradores para el 30-nov, no uno. La rama `main` no contiene proyectos, entradas ni salidas para esos IDs; `main:data/publicaciones.json` y `main:data/rotacion.json` tampoco contienen registros del 30-nov. No hay conflicto de slot entre ramas en este corte.
+
+### `2026-11-30_rapaces-clima-reino-unido` — 07:00 CDMX
+
+- 8 escenas, 182 palabras, 84 s declarados, 9:16 y voz `es-MX-JorgeNeural` `+7%` / `-2Hz`.
+- `narrative_qa` ya persistido: **FAIL/82**; `giro_cientifico_explicado=false`; `critical_flags=["GIRO_CIENTIFICO_NOMBRADO_PERO_NO_EXPLICADO"]`. La revisión se registró en un commit posterior al borrador; no se repitió ni se reescribió la narración.
+- Fuente primaria declarada: Frontiers, DOI `10.3389/fevo.2026.1922294`; estado `PENDING_CROSSREF`.
+- `approved_assets=[]`, `export.render_status=NOT_GENERATED`, `publicacion.status=PENDIENTE_DECISION_GROK`.
+- `cola/estado/2026-11-30_rapaces-clima-reino-unido.json` y `cola/entrada/2026-11-30_rapaces-clima-reino-unido.json`: HTTP 404. No hay ruta anidada ni salida en el árbol. `RECEPCION_GROK_NO_CONFIRMADA`; `NOT_DISPATCHABLE`.
+
+### `2026-11-30_liquen-gen-cereales` — 17:00 CDMX
+
+- 8 escenas, 199 palabras, 84 s declarados, 9:16 y voz `es-MX-JorgeNeural` `+7%` / `-2Hz`.
+- `narrative_qa` ya persistido: **PASS/93**, siete checks true y flags vacías. El registro declara lectura en frío posterior y separada; existe un commit de QA posterior al commit inicial del borrador. No se repitió el PASS. GitHub no registra el modelo/identidad del redactor, por lo que la separación queda documentada por la pasada posterior y su rol, no por una atribución verificable del autor original.
+- Fuente primaria: Du et al., *Nature*, DOI `10.1038/s41586-026-11151-w`. El PDF primario se abrió y se verificó el método en p. 5 / texto de métodos: las coordenadas publicadas son Yangling (34°16′N, 108°04′E), Heyang (35°43′N, 110°02′E), Cangzhou (38°33′N, 116°38′E) y Linfen (36°56′N, 112°34′E). Las cuatro parejas WGS84 del storyboard coinciden con esas coordenadas convertidas a decimales. El artículo también reporta aumentos de 19.4–32.8% en rendimiento por parcela bajo agua limitada (resumen y resultados). DOI visible en el PDF editorial; Crossref y `doi.org` no fueron accesibles, por lo que el estado sigue `PENDING_CROSSREF`.
+- `approved_assets=[]`, `export.render_status=NOT_GENERATED`, `publicacion.status=PENDIENTE_DECISION_GROK`.
+- `cola/estado/2026-11-30_liquen-gen-cereales.json` y `cola/entrada/2026-11-30_liquen-gen-cereales.json`: HTTP 404. No hay ruta anidada ni salida en el árbol. `RECEPCION_GROK_NO_CONFIRMADA`; `NOT_DISPATCHABLE` hasta ejecutar el validador estructural real y completar Crossref/doi.org.
+
+### Discrepancia de inventario
+
+El radar del 27-nov describe EpTFIIAγ como el único borrador nuevo, pero el árbol de proyectos contiene además el borrador de rapaces para 30-nov 07:00. Se conserva como backlog ya existente, no se incorpora a la shortlist ni se crea un duplicado. Los slots 07:00 y 17:00 del 30-nov están ocupados en feature; no se promueve ninguno a cola. No se modificaron storyboards, `main`, `data/*.json`, estados Grok, cola, salidas, medios ni programación.
