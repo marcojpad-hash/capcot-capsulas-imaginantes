@@ -1,0 +1,281 @@
+{
+  "project_id": "2026-12-12_lang-mitos-sol",
+  "serie": "Tiempo cíclico",
+  "title": "¿Todos los mitos hablan del Sol? NO",
+  "titulo": "¿Todos los mitos hablan del Sol? NO",
+  "title_en": "Are all myths about the Sun? NO",
+  "portada_texto": "¿TODOS LOS MITOS HABLAN DEL SOL? NO",
+  "portada_texto_en": "ARE ALL MYTHS ABOUT THE SUN? NO",
+  "language": "es-MX",
+  "aspect_ratio": "9:16",
+  "target_duration_seconds": 86,
+  "target_duration_seconds_en_estimado": 83,
+  "trend_source": {
+    "tipo": "efemeride_verificada",
+    "termino": "Gemínidas",
+    "fecha_consulta": "2026-11-28",
+    "fuente": "NASA Science, «Geminids» (pico 13-14 dic 2026; origen 3200 Phaethon; nombrado por el personaje que condujo el carro de Helios). International Meteor Organization, calendario 2026/2027 (pico 13-14 dic; Luna 15 % iluminada).",
+    "url": "https://science.nasa.gov/solar-system/meteors-meteorites/geminids/",
+    "serie": "Tiempo cíclico"
+  },
+  "estilo_id": "pintura_historica_commons",
+  "estilo_visual": "pinturas, grabados, manuscritos y relieves de dominio público o licencia libre (Wikimedia Commons)",
+  "proveedor_imagenes": "Wikimedia Commons (dominio público o CC, créditos en metadata)",
+  "parece_real": false,
+  "keywords": [
+    "Andrew Lang",
+    "Max Müller",
+    "mito solar",
+    "Gemínidas"
+  ],
+  "voice": {
+    "engine": "edge-tts",
+    "voice_id": "es-MX-JorgeNeural",
+    "rate": "+7%",
+    "pitch": "-2Hz",
+    "pad_seconds": 0.35,
+    "modo_pausas": "continuo"
+  },
+  "voice_en": {
+    "engine": "kokoro",
+    "voice_id": "am_adam",
+    "nota": "firma «That was Datos y ociosidades.»"
+  },
+  "audio": {
+    "music_asset": "sintetico:pulso",
+    "cama_musical": "pulso",
+    "music_bpm": 92,
+    "music_lufs": -27,
+    "ambiente_lufs": -30
+  },
+  "canal": {
+    "nombre": "Datos y ociosidades",
+    "handle": "@datosyociosidades"
+  },
+  "sources": [
+    {
+      "id": "SRC-001",
+      "cita_corta": "NASA Science, «Geminids Meteor Shower» (2026); International Meteor Organization, 2026/2027 Meteor Shower Calendar.",
+      "url": "https://science.nasa.gov/solar-system/meteors-meteorites/geminids/",
+      "accessed": "2026-11-28",
+      "supports": [
+        "Gemínidas: pico 13-14 dic 2026, activas 4-17 dic; origen 3200 Phaethon; el asteroide lleva el nombre del personaje que condujo el carro de Helios por su acercamiento al Sol"
+      ],
+      "ref_display": "NASA; IMO"
+    },
+    {
+      "id": "SRC-002",
+      "cita_corta": "Andrew Lang, Myth, Ritual and Religion, 2 vols., Longmans, Green, Londres, 1887 (índice y capítulos I-V en Wikisource).",
+      "url": "https://en.wikisource.org/wiki/Myth,_Ritual_and_Religion",
+      "accessed": "2026-11-28",
+      "supports": [
+        "cap. I: crítica a los filólogos Kuhn, Schwartz y Max Müller («limitations of philology»); cap. II: nuevo método comparado; cap. III-IV: mentalidad de confusión entre todas las cosas y metamorfosis; cap. V: «Sun-myths» asiáticos, australianos, africanos, melanesios, indios, californianos, brasileños, maoríes, samoanos"
+      ],
+      "ref_display": "Lang 1887"
+    },
+    {
+      "id": "SRC-003",
+      "cita_corta": "Resumen del debate: Cambridge Core (European Journal of Sociology), «Some third thoughts on Max Müller and solar mythology»; y Britannica, «Andrew Lang» (Custom and Myth, 1884; Myth, Ritual and Religion, 1887).",
+      "url": "https://www.cambridge.org/core/journals/european-journal-of-sociology-archives-europeennes-de-sociologie/article/abs/some-third-thoughts-on-max-muller-and-solar-mythology/B433CA017BC06A67BC66B6BA5043A760",
+      "accessed": "2026-11-28",
+      "supports": [
+        "Lang respondió a la mitología solar de Max Müller; Littledale la parodió"
+      ],
+      "ref_display": "Cambridge Core; Britannica"
+    },
+    {
+      "id": "SRC-004",
+      "cita_corta": "R. F. Littledale, «The Oxford Solar Myth», Kottabos (1870); reimpresa como apéndice de Max Müller, Comparative Mythology. Explicación en languagehat.com.",
+      "url": "https://languagehat.com/max-muller-as-a-solar-myth/",
+      "accessed": "2026-11-28",
+      "supports": [
+        "parodia que convierte a Max Müller en mito solar con su propio método; «Müller» = molinero/el que muele"
+      ],
+      "ref_display": "Littledale 1870"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_001",
+      "arc": "hook_medias_res",
+      "duration_seconds": 8.5,
+      "duration_seconds_en": 8.0,
+      "narration": "Este fin de semana llueven estrellas fugaces. Vienen de un asteroide llamado Faetón, como el hijo del Sol en el mito griego.",
+      "narration_en": "This weekend, shooting stars rain down. They come from an asteroid named Phaethon, like the Sun's son in Greek myth.",
+      "on_screen_text": "Gemínidas: lluvia de estrellas",
+      "on_screen_text_en": "Geminids meteor shower",
+      "asset_filename": "frames/scene_001.jpg",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "image_credit": "Geminids Over Kitt Peak National Observatory (iotw2352a). KPNO/NOIRLab/NSF/AURA/R. Sparks (NSF’s NOIRLab). CC BY 4.0. https://commons.wikimedia.org/wiki/File:Geminids_Over_Kitt_Peak_National_Observatory_(iotw2352a).jpg",
+      "image_caption_es": "Gemínidas sobre el Observatorio Nacional de Kitt Peak (NOIRLab/NSF/AURA/R. Sparks, CC BY 4.0).",
+      "visual_description": "File:Geminids Over Kitt Peak National Observatory (iotw2352a).jpg",
+      "image_prompt": "NO IA: archivo de Wikimedia Commons «Geminids Over Kitt Peak National Observatory (iotw2352a).jpg» (CC BY 4.0); recorte vertical 9:16 con movimiento lento, sin generar imagen."
+    },
+    {
+      "id": "scene_002",
+      "arc": "desarrollo",
+      "duration_seconds": 8.5,
+      "duration_seconds_en": 9.0,
+      "narration": "Faetón quiso conducir el carro de su padre, el Sol, y cayó. El asteroide recibió su nombre por acercarse tanto al Sol.",
+      "narration_en": "Phaethon tried to drive his father's chariot, the Sun, and fell. The asteroid got his name for passing so close to the Sun.",
+      "on_screen_text": "Faetón: el hijo del Sol",
+      "on_screen_text_en": "Phaethon: the Sun's son",
+      "asset_filename": "frames/scene_002.jpg",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "image_credit": "Sir Peter Paul Rubens, The Fall of Phaeton, c. 1604-1605, probably reworked c. 1606-1608, NGA 71349. Peter Paul Rubens. CC0. https://commons.wikimedia.org/wiki/File:Sir_Peter_Paul_Rubens,_The_Fall_of_Phaeton,_c._1604-1605,_probably_reworked_c._1606-1608,_NGA_71349.jpg",
+      "image_caption_es": "La caída de Faetón, Rubens (c. 1604-1608), National Gallery of Art (CC0).",
+      "visual_description": "File:Sir Peter Paul Rubens, The Fall of Phaeton, c. 1604-1605, probably reworked c. 1606-1608, NGA 71349.jpg",
+      "image_prompt": "NO IA: archivo de Wikimedia Commons «Sir Peter Paul Rubens, The Fall of Phaeton, c. 1604-1605, probably reworked c. 1606-1608, NGA 71349.jpg» (CC0); recorte vertical 9:16 con movimiento lento, sin generar imagen."
+    },
+    {
+      "id": "scene_003",
+      "arc": "desarrollo",
+      "duration_seconds": 11.0,
+      "duration_seconds_en": 9.5,
+      "narration": "En el siglo diecinueve, el filólogo Max Müller sostuvo que muchos mitos eran, en el fondo, el Sol: amaneceres y atardeceres contados con metáforas que los pueblos olvidaron.",
+      "narration_en": "In the nineteenth century, philologist Max Müller held that many myths were, deep down, the Sun: sunrises and sunsets told in metaphors that peoples forgot.",
+      "on_screen_text": "Müller: el mito es el Sol",
+      "on_screen_text_en": "Müller: myth is the Sun",
+      "asset_filename": "frames/scene_003.jpg",
+      "sfx": [],
+      "source_ids": [
+        "SRC-002",
+        "SRC-003"
+      ],
+      "image_credit": "Friedrich Max-Müller, negative, 1883 (by Alexander Bassano; NPG x96551). Alexander Bassano. Public domain. https://commons.wikimedia.org/wiki/File:Friedrich_Max-M%C3%BCller,_negative,_1883_(by_Alexander_Bassano;_NPG_x96551).png",
+      "image_caption_es": "Friedrich Max Müller, Alexander Bassano (1883), National Portrait Gallery, Londres.",
+      "visual_description": "File:Friedrich Max-Müller, negative, 1883 (by Alexander Bassano; NPG x96551).png",
+      "image_prompt": "NO IA: archivo de Wikimedia Commons «Friedrich Max-Müller, negative, 1883 (by Alexander Bassano; NPG x96551).png» (Public domain); recorte vertical 9:16 con movimiento lento, sin generar imagen."
+    },
+    {
+      "id": "scene_004",
+      "arc": "desarrollo",
+      "duration_seconds": 13.0,
+      "duration_seconds_en": 12.5,
+      "narration": "En 1887, Andrew Lang publicó Mito, rito y religión y lo desmontó. Propuso comparar los mitos con las costumbres de pueblos de todo el mundo, en lugar de adivinar su origen en las palabras.",
+      "narration_en": "In 1887, Andrew Lang published Myth, Ritual and Religion and took it apart. He proposed comparing myths with the customs of peoples around the world, instead of guessing their origin from words.",
+      "on_screen_text": "Lang: comparar, no adivinar",
+      "on_screen_text_en": "Lang: compare, don't guess",
+      "asset_filename": "frames/scene_004.jpg",
+      "sfx": [],
+      "source_ids": [
+        "SRC-002"
+      ],
+      "image_credit": "Portrait of Andrew Lang. Elliott & Fry. Public domain. https://commons.wikimedia.org/wiki/File:Portrait_of_Andrew_Lang.jpg",
+      "image_caption_es": "Andrew Lang, Elliott & Fry (siglo XIX).",
+      "visual_description": "File:Portrait of Andrew Lang.jpg",
+      "image_prompt": "NO IA: archivo de Wikimedia Commons «Portrait of Andrew Lang.jpg» (Public domain); recorte vertical 9:16 con movimiento lento, sin generar imagen."
+    },
+    {
+      "id": "scene_005",
+      "arc": "desarrollo",
+      "duration_seconds": 9.0,
+      "duration_seconds_en": 9.5,
+      "narration": "Lang no negó que hubiera mitos del Sol: su libro reúne varios, de Asia, Australia, África y América. Negó que todos lo fueran.",
+      "narration_en": "Lang did not deny that sun myths exist: his book collects several, from Asia, Australia, Africa and the Americas. He denied that all were.",
+      "on_screen_text": "Mitos solares sí; todos, no",
+      "on_screen_text_en": "Sun myths yes; all, no",
+      "asset_filename": "frames/scene_005.jpg",
+      "sfx": [],
+      "source_ids": [
+        "SRC-002"
+      ],
+      "image_credit": "Guido Reni (1575-1642) (after) - Aurora - 719805 - National Trust. anonymous. Public domain. https://commons.wikimedia.org/wiki/File:Guido_Reni_(1575-1642)_(after)_-_Aurora_-_719805_-_National_Trust.jpg",
+      "image_caption_es": "Aurora y el carro del Sol, copia según Guido Reni (National Trust).",
+      "visual_description": "File:Guido Reni (1575-1642) (after) - Aurora - 719805 - National Trust.jpg",
+      "image_prompt": "NO IA: archivo de Wikimedia Commons «Guido Reni (1575-1642) (after) - Aurora - 719805 - National Trust.jpg» (Public domain); recorte vertical 9:16 con movimiento lento, sin generar imagen."
+    },
+    {
+      "id": "scene_006",
+      "arc": "desarrollo",
+      "duration_seconds": 9.0,
+      "duration_seconds_en": 8.0,
+      "narration": "Para él, los mitos más extraños, dioses que se vuelven animales o piedra, nacían de un modo de pensar donde todo tiene vida.",
+      "narration_en": "For him, the strangest myths, gods turning into animals or stone, came from a way of thinking where everything is alive.",
+      "on_screen_text": "Todo tiene vida",
+      "on_screen_text_en": "Everything is alive",
+      "asset_filename": "frames/scene_006.jpg",
+      "sfx": [],
+      "source_ids": [
+        "SRC-002"
+      ],
+      "image_credit": "Barque solaire contre Apopi. Soutekh67. CC BY-SA 4.0. https://commons.wikimedia.org/wiki/File:Barque_solaire_contre_Apopi.jpg",
+      "image_caption_es": "Barca solar de Ra contra Apofis, papiro egipcio (Soutekh67, CC BY-SA 4.0).",
+      "visual_description": "File:Barque solaire contre Apopi.jpg",
+      "image_prompt": "NO IA: archivo de Wikimedia Commons «Barque solaire contre Apopi.jpg» (CC BY-SA 4.0); recorte vertical 9:16 con movimiento lento, sin generar imagen."
+    },
+    {
+      "id": "scene_007",
+      "arc": "cierre_historia",
+      "duration_seconds": 15.5,
+      "duration_seconds_en": 14.0,
+      "narration": "En 1870, R. F. Littledale se burló de la teoría: con el método de Müller, probó que el propio Müller era un mito solar, porque «Müller» significa el que muele. Que el Sol dé vueltas no vuelve solar cada mito.",
+      "narration_en": "In 1870, R. F. Littledale mocked the theory: using Müller's own method, he showed Müller himself was a solar myth, since “Müller” means “the one who grinds”. The Sun going around does not make every myth solar.",
+      "on_screen_text": "La parodia: Müller, mito solar",
+      "on_screen_text_en": "The parody: Müller, a sun myth",
+      "asset_filename": "frames/scene_007.jpg",
+      "sfx": [],
+      "source_ids": [
+        "SRC-003",
+        "SRC-004"
+      ],
+      "image_credit": "Friedrich Max-Müller by George Frederic Watts. George Frederic Watts. Public domain. https://commons.wikimedia.org/wiki/File:Friedrich_Max-M%C3%BCller_by_George_Frederic_Watts.jpg",
+      "image_caption_es": "Friedrich Max Müller, retrato de George Frederic Watts.",
+      "visual_description": "File:Friedrich Max-Müller by George Frederic Watts.jpg",
+      "image_prompt": "NO IA: archivo de Wikimedia Commons «Friedrich Max-Müller by George Frederic Watts.jpg» (Public domain); recorte vertical 9:16 con movimiento lento, sin generar imagen."
+    },
+    {
+      "id": "scene_008",
+      "arc": "reflexion_o_pregunta",
+      "duration_seconds": 5.5,
+      "duration_seconds_en": 6.5,
+      "narration": "¿Cuánto del cielo ves, y cuánto pones tú? Esto fue Datos y ociosidades.",
+      "narration_en": "How much sky do you see, how much do you add? That was Datos y ociosidades.",
+      "on_screen_text": "Serie: tiempo cíclico",
+      "on_screen_text_en": "Series: cyclical time",
+      "asset_filename": "frames/scene_008.jpg",
+      "sfx": [],
+      "source_ids": [
+        "SRC-002"
+      ],
+      "image_credit": "Century Mag Andrew Lang at work. Drawing by Burne Murdock; engraving by J. F. Jungling.. Public domain. https://commons.wikimedia.org/wiki/File:Century_Mag_Andrew_Lang_at_work.png",
+      "image_caption_es": "Andrew Lang trabajando, dibujo de Burne Murdock (The Century Magazine).",
+      "visual_description": "File:Century Mag Andrew Lang at work.png",
+      "image_prompt": "NO IA: archivo de Wikimedia Commons «Century Mag Andrew Lang at work.png» (Public domain); recorte vertical 9:16 con movimiento lento, sin generar imagen."
+    }
+  ],
+  "cortinilla_fuentes": {
+    "duration_seconds": 6,
+    "titulo": "Fuentes",
+    "aviso": "Imágenes de dominio público o con licencia libre (Wikimedia Commons). Voz sintética. Audio sintetizado.",
+    "firma": "Datos y ociosidades · @datosyociosidades",
+    "bg_rgb": [
+      18,
+      16,
+      14
+    ],
+    "source_ids_visibles": [
+      "SRC-001",
+      "SRC-002",
+      "SRC-003",
+      "SRC-004"
+    ]
+  },
+  "export": {
+    "filename": "capsula.mp4",
+    "resolution": "1080x1920",
+    "fps": 30,
+    "loudness_lufs": -14,
+    "plano_seconds": 4.0
+  },
+  "estructura": "arco_narrativo",
+  "hook_type": "afirmacion",
+  "tipo_titulo": "mito NO",
+  "estado": "PROPUESTA — sin render, sin subir, sin programar"
+}

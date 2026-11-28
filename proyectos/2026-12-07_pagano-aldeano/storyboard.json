@@ -1,0 +1,271 @@
+{
+  "project_id": "2026-12-07_pagano-aldeano",
+  "serie": "Tiempo cíclico",
+  "title": "¿Por qué «pagano» significaba aldeano?",
+  "titulo": "¿Por qué «pagano» significaba aldeano?",
+  "title_en": "Why did “pagan” mean villager?",
+  "portada_texto": "¿POR QUÉ «PAGANO» SIGNIFICABA ALDEANO?",
+  "portada_texto_en": "WHY DID “PAGAN” MEAN VILLAGER?",
+  "language": "es-MX",
+  "aspect_ratio": "9:16",
+  "target_duration_seconds": 82,
+  "target_duration_seconds_en_estimado": 80,
+  "trend_source": {
+    "tipo": "efemeride_verificada",
+    "termino": "Las posadas empiezan el 16 de diciembre (hasta el 24) y con la Navidad vuelve la pregunta de qué es «pagano». Se usa la fecha como gancho; la voz no afirma que sea tendencia.",
+    "fecha_consulta": "2026-11-28",
+    "fuente": "UnoTV, 26-nov-2026: «Posadas 2026: cuándo comienzan, cuándo terminan y cuál es su origen».",
+    "url": "https://www.unotv.com/cultura/posadas-2026-cuando-comienzan-cuando-terminan-y-cual-es-su-origen/",
+    "serie": "Tiempo cíclico"
+  },
+  "estilo_id": "pintura_historica_commons",
+  "estilo_visual": "pinturas, grabados, manuscritos y relieves de dominio público o licencia libre (Wikimedia Commons)",
+  "proveedor_imagenes": "Wikimedia Commons (dominio público o CC, créditos en metadata)",
+  "parece_real": false,
+  "keywords": [
+    "pagano",
+    "paganus",
+    "etimología",
+    "Roma"
+  ],
+  "voice": {
+    "engine": "edge-tts",
+    "voice_id": "es-MX-JorgeNeural",
+    "rate": "+7%",
+    "pitch": "-2Hz",
+    "pad_seconds": 0.35,
+    "modo_pausas": "continuo"
+  },
+  "voice_en": {
+    "engine": "kokoro",
+    "voice_id": "am_adam",
+    "nota": "firma «That was Datos y ociosidades.»"
+  },
+  "audio": {
+    "music_asset": "sintetico:pulso",
+    "cama_musical": "pulso",
+    "music_bpm": 92,
+    "music_lufs": -27,
+    "ambiente_lufs": -30
+  },
+  "canal": {
+    "nombre": "Datos y ociosidades",
+    "handle": "@datosyociosidades"
+  },
+  "sources": [
+    {
+      "id": "SRC-001",
+      "cita_corta": "James J. O'Donnell, «Paganus», Classical Folia 31 (1977), pp. 163-169.",
+      "url": "https://faculty.georgetown.edu/jod/paganus.html",
+      "accessed": "2026-11-28",
+      "supports": [
+        "paganus = rústico, luego «civil»; tres interpretaciones sin consenso; primer uso cristiano literario hacia el 360 (Mario Victorino) y ley de 370 (Código Teodosiano); Agustín y Prudencio evitan la palabra al persuadir; hipótesis de O'Donnell: burla incluso a senadores"
+      ],
+      "ref_display": "O'Donnell 1977"
+    },
+    {
+      "id": "SRC-002",
+      "cita_corta": "Wordorigins.org, «pagan» (2-feb-2022); cita Lewis & Short, A Latin Dictionary (1879) y OED.",
+      "url": "https://www.wordorigins.org/big-list-entries/pagan",
+      "accessed": "2026-11-28",
+      "supports": [
+        "paganus = rústico/del campo; luego «civil» frente a miles; sentido religioso hacia el siglo IV; el porqué es incierto"
+      ],
+      "ref_display": "Wordorigins"
+    },
+    {
+      "id": "SRC-003",
+      "cita_corta": "C. Robert Phillips, «Paganalia», Oxford Classical Dictionary (2016).",
+      "url": "https://doi.org/10.1093/acrefore/9780199381135.013.4649",
+      "accessed": "2026-11-28",
+      "supports": [
+        "fiesta pública de los pagi, celebrada por todo el pagus en los campos (Varrón, De lingua Latina 6.26); fecha incierta"
+      ],
+      "ref_display": "OCD «Paganalia»"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_001",
+      "arc": "hook_medias_res",
+      "duration_seconds": 5.5,
+      "duration_seconds_en": 6.0,
+      "narration": "«Pagano» quería decir aldeano. ¿Cómo acabó nombrando a quien rezaba a otros dioses?",
+      "narration_en": "“Pagan” meant villager. How did it end up naming anyone who prayed to other gods?",
+      "on_screen_text": "«Pagano» = aldeano",
+      "on_screen_text_en": "“Pagan” = villager",
+      "asset_filename": "frames/scene_001.jpg",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "image_credit": "Les Très Riches Heures du duc de Berry octobre. Limbourg brothers / Barthélemy d'Eyck. Public domain. https://commons.wikimedia.org/wiki/File:Les_Tr%C3%A8s_Riches_Heures_du_duc_de_Berry_octobre.jpg",
+      "image_caption_es": "Siembra de otoño, Les Très Riches Heures du duc de Berry (c. 1412-1416, mes de octubre).",
+      "visual_description": "File:Les Très Riches Heures du duc de Berry octobre.jpg",
+      "image_prompt": "NO IA: archivo de Wikimedia Commons «Les Très Riches Heures du duc de Berry octobre.jpg» (Public domain); recorte vertical 9:16 con movimiento lento, sin generar imagen."
+    },
+    {
+      "id": "scene_002",
+      "arc": "desarrollo",
+      "duration_seconds": 5.5,
+      "duration_seconds_en": 6.5,
+      "narration": "Viene del latín pagus: el distrito rural, la aldea. Ya aparece en inscripciones romanas.",
+      "narration_en": "It comes from Latin pagus: the rural district, the village. It already appears in Roman inscriptions.",
+      "on_screen_text": "Pagus: la aldea",
+      "on_screen_text_en": "Pagus: the village",
+      "asset_filename": "frames/scene_002.jpg",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "image_credit": "Inscription evoking the pagus Condrustis, found in Hoeilaart, Brabant, sandstone - Cinquantenaire Museum - Brussels, Belgium - DSC08720. Daderot. Public domain. https://commons.wikimedia.org/wiki/File:Inscription_evoking_the_pagus_Condrustis,_found_in_Hoeilaart,_Brabant,_sandstone_-_Cinquantenaire_Museum_-_Brussels,_Belgium_-_DSC08720.jpg",
+      "image_caption_es": "Inscripción romana que menciona un pagus (pagus Condrustis), Museo del Cincuentenario, Bruselas.",
+      "visual_description": "File:Inscription evoking the pagus Condrustis, found in Hoeilaart, Brabant, sandstone - Cinquantenaire Museum - Brussels, Belgium - DSC08720.jpg",
+      "image_prompt": "NO IA: archivo de Wikimedia Commons «Inscription evoking the pagus Condrustis, found in Hoeilaart, Brabant, sandstone - Cinquantenaire Museum - Brussels, Belgium - DSC08720.jpg» (Public domain); recorte vertical 9:16 con movimiento lento, sin generar imagen."
+    },
+    {
+      "id": "scene_003",
+      "arc": "desarrollo",
+      "duration_seconds": 10.0,
+      "duration_seconds_en": 11.0,
+      "narration": "Esos aldeanos vivían al ritmo del campo: siembra, cosecha, otra vez siembra. Tenían su fiesta, las Paganalia, que cada comunidad rural celebraba en sus propios campos.",
+      "narration_en": "Those villagers lived by the rhythm of the fields: sowing, harvest, sowing again. They had their own festival, the Paganalia, which each rural community held in its own fields.",
+      "on_screen_text": "Siembra, cosecha, siembra",
+      "on_screen_text_en": "Sow, harvest, sow again",
+      "asset_filename": "frames/scene_003.jpg",
+      "sfx": [],
+      "source_ids": [
+        "SRC-003"
+      ],
+      "image_credit": "Les Très Riches Heures du duc de Berry juin. Limbourg brothers / Barthélemy d'Eyck / Jean Colombe. Public domain. https://commons.wikimedia.org/wiki/File:Les_Tr%C3%A8s_Riches_Heures_du_duc_de_Berry_juin.jpg",
+      "image_caption_es": "Trabajos del campo, Les Très Riches Heures du duc de Berry (mes de junio). Imagen medieval como evocación del año agrario.",
+      "visual_description": "File:Les Très Riches Heures du duc de Berry juin.jpg",
+      "image_prompt": "NO IA: archivo de Wikimedia Commons «Les Très Riches Heures du duc de Berry juin.jpg» (Public domain); recorte vertical 9:16 con movimiento lento, sin generar imagen."
+    },
+    {
+      "id": "scene_004",
+      "arc": "desarrollo",
+      "duration_seconds": 8.5,
+      "duration_seconds_en": 9.5,
+      "narration": "Con el Imperio, paganus tomó otro sentido: civil, alguien que no era soldado. Tertuliano lo usa así a comienzos del siglo tercero.",
+      "narration_en": "Under the Empire, paganus took another meaning: civilian, someone who was not a soldier. Tertullian uses it that way in the early third century.",
+      "on_screen_text": "Paganus: el civil",
+      "on_screen_text_en": "Paganus: the civilian",
+      "asset_filename": "frames/scene_004.jpg",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "image_credit": "Trajan's Column - NMR - panel 057 A. Joe Mabel. Public domain. https://commons.wikimedia.org/wiki/File:Trajan%27s_Column_-_NMR_-_panel_057_A.jpg",
+      "image_caption_es": "Soldados romanos, réplica de la Columna de Trajano (original c. 113 d. C.), Museo Nacional de Historia de Rumanía.",
+      "visual_description": "File:Trajan's Column - NMR - panel 057 A.jpg",
+      "image_prompt": "NO IA: archivo de Wikimedia Commons «Trajan's Column - NMR - panel 057 A.jpg» (Public domain); recorte vertical 9:16 con movimiento lento, sin generar imagen."
+    },
+    {
+      "id": "scene_005",
+      "arc": "desarrollo",
+      "duration_seconds": 8.5,
+      "duration_seconds_en": 7.5,
+      "narration": "Hacia el año 360, autores cristianos ya lo usan para quien no era cristiano; en 370 lo recoge una ley imperial.",
+      "narration_en": "Around the year 360, Christian authors already use it for non-Christians; in 370 an imperial law picks it up.",
+      "on_screen_text": "Hacia el 360, ya es cristiano",
+      "on_screen_text_en": "By 360, a Christian term",
+      "asset_filename": "frames/scene_005.jpg",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "image_credit": "SIR PETER PAUL RUBENS SIEGEN 1577 - 1640 ANTWERP CONSTANTINE PRESENTING THE LABARUM TO HIS TROOPS. Peter Paul Rubens. Public domain. https://commons.wikimedia.org/wiki/File:SIR_PETER_PAUL_RUBENS_SIEGEN_1577_-_1640_ANTWERP_CONSTANTINE_PRESENTING_THE_LABARUM_TO_HIS_TROOPS.jpg",
+      "image_caption_es": "Constantino presenta el lábaro a sus tropas, Rubens (c. 1622). Obra posterior, solo ilustra el mundo cristiano del imperio.",
+      "visual_description": "File:SIR PETER PAUL RUBENS SIEGEN 1577 - 1640 ANTWERP CONSTANTINE PRESENTING THE LABARUM TO HIS TROOPS.jpg",
+      "image_prompt": "NO IA: archivo de Wikimedia Commons «SIR PETER PAUL RUBENS SIEGEN 1577 - 1640 ANTWERP CONSTANTINE PRESENTING THE LABARUM TO HIS TROOPS.jpg» (Public domain); recorte vertical 9:16 con movimiento lento, sin generar imagen."
+    },
+    {
+      "id": "scene_006",
+      "arc": "desarrollo",
+      "duration_seconds": 14.5,
+      "duration_seconds_en": 13.5,
+      "narration": "¿Por qué «aldeano»? Se discute. Los escritores de entonces creían que los cultos antiguos resistían más en el campo. Otros proponen «civil», quien no era soldado de Cristo. Otros, simplemente «el de fuera». Ninguna teoría ha ganado.",
+      "narration_en": "Why “villager”? It's debated. Writers of the time believed the old cults held out longest in the countryside. Others propose “civilian”: someone who was not a soldier of Christ. Others, simply “outsider”. No theory has won.",
+      "on_screen_text": "¿Aldeano, civil o de fuera?",
+      "on_screen_text_en": "Villager, civilian or outsider?",
+      "asset_filename": "frames/scene_006.jpg",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "image_credit": "Tertullian2. André Thevet. Public domain. https://commons.wikimedia.org/wiki/File:Tertullian2.png",
+      "image_caption_es": "Tertuliano, grabado de André Thevet (siglo XVI).",
+      "visual_description": "File:Tertullian2.png",
+      "image_prompt": "NO IA: archivo de Wikimedia Commons «Tertullian2.png» (Public domain); recorte vertical 9:16 con movimiento lento, sin generar imagen."
+    },
+    {
+      "id": "scene_007",
+      "arc": "cierre_historia",
+      "duration_seconds": 18.0,
+      "duration_seconds_en": 15.5,
+      "narration": "El historiador James O'Donnell propone, como hipótesis, otra cosa: una burla, lanzada incluso a senadores de ciudad. Una pista: autores como Agustín casi evitaban la palabra al tratar de convencer a los no cristianos. Llamar «paleto» a un senador era gracioso e hiriente a la vez.",
+      "narration_en": "Historian James O'Donnell proposes, as a hypothesis, something else: a jibe, thrown even at city senators. One clue: authors like Augustine almost avoided the word when trying to persuade non-Christians. Calling a senator a “hick” was funny and cutting at once.",
+      "on_screen_text": "Una burla, incluso a senadores",
+      "on_screen_text_en": "A jibe, even at senators",
+      "asset_filename": "frames/scene_007.jpg",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "image_credit": "Diptych NicoSym engraving. Autor desconocido. Public domain. https://commons.wikimedia.org/wiki/File:Diptych_NicoSym_engraving.jpg",
+      "image_caption_es": "Díptico de los Símacos y los Nicómacos (c. 400), grabado antiguo. Familias senatoriales romanas.",
+      "visual_description": "File:Diptych NicoSym engraving.jpg",
+      "image_prompt": "NO IA: archivo de Wikimedia Commons «Diptych NicoSym engraving.jpg» (Public domain); recorte vertical 9:16 con movimiento lento, sin generar imagen."
+    },
+    {
+      "id": "scene_008",
+      "arc": "reflexion_o_pregunta",
+      "duration_seconds": 5.5,
+      "duration_seconds_en": 5.0,
+      "narration": "¿Quién decide cuándo un nombre se vuelve insulto? Esto fue Datos y ociosidades.",
+      "narration_en": "Who decides when a name becomes an insult? That was Datos y ociosidades.",
+      "on_screen_text": "Serie: tiempo cíclico",
+      "on_screen_text_en": "Series: cyclical time",
+      "asset_filename": "frames/scene_008.jpg",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "image_credit": "Labors of the months in Tres Riches Heures du Duc de Berry1. Limbourg brothers and others. Public domain. https://commons.wikimedia.org/wiki/File:Labors_of_the_months_in_Tres_Riches_Heures_du_Duc_de_Berry1.jpg",
+      "image_caption_es": "Trabajos de los meses, Les Très Riches Heures du duc de Berry (composición).",
+      "visual_description": "File:Labors of the months in Tres Riches Heures du Duc de Berry1.jpg",
+      "image_prompt": "NO IA: archivo de Wikimedia Commons «Labors of the months in Tres Riches Heures du Duc de Berry1.jpg» (Public domain); recorte vertical 9:16 con movimiento lento, sin generar imagen."
+    }
+  ],
+  "cortinilla_fuentes": {
+    "duration_seconds": 6,
+    "titulo": "Fuentes",
+    "aviso": "Imágenes de dominio público o con licencia libre (Wikimedia Commons). Voz sintética. Audio sintetizado.",
+    "firma": "Datos y ociosidades · @datosyociosidades",
+    "bg_rgb": [
+      18,
+      16,
+      14
+    ],
+    "source_ids_visibles": [
+      "SRC-001",
+      "SRC-002",
+      "SRC-003"
+    ]
+  },
+  "export": {
+    "filename": "capsula.mp4",
+    "resolution": "1080x1920",
+    "fps": 30,
+    "loudness_lufs": -14,
+    "plano_seconds": 4.0
+  },
+  "estructura": "arco_narrativo",
+  "hook_type": "afirmacion",
+  "tipo_titulo": "pregunta",
+  "estado": "PROPUESTA — sin render, sin subir, sin programar"
+}

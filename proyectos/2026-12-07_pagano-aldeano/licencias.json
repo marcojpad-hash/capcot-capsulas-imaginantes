@@ -1,0 +1,132 @@
+{
+  "project_id": "2026-12-07_pagano-aldeano",
+  "musica": {
+    "cama": "pulso",
+    "origen": "síntesis propia (scripts/cama_sonora.py, numpy)",
+    "licencia": "obra propia de Datos y ociosidades",
+    "generada_por_ia": false
+  },
+  "sfx": {},
+  "imagenes": {
+    "origen": "Wikimedia Commons (dominio público o CC, créditos en metadata)",
+    "estilo": "pintura_historica_commons",
+    "realista": false,
+    "generada_por_ia": false,
+    "archivos": [
+      {
+        "file": "File:Les Très Riches Heures du duc de Berry octobre.jpg",
+        "titulo": "Les Très Riches Heures du duc de Berry octobre",
+        "autor": "Limbourg brothers / Barthélemy d'Eyck",
+        "licencia": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Les_Tr%C3%A8s_Riches_Heures_du_duc_de_Berry_octobre.jpg",
+        "w": 1140,
+        "h": 1900,
+        "accessed": "2026-11-28",
+        "generada_por_ia": false,
+        "requiere_credito": false
+      },
+      {
+        "file": "File:Inscription evoking the pagus Condrustis, found in Hoeilaart, Brabant, sandstone - Cinquantenaire Museum - Brussels, Belgium - DSC08720.jpg",
+        "titulo": "Inscription evoking the pagus Condrustis, found in Hoeilaart, Brabant, sandstone - Cinquantenaire Museum - Brussels, Belgium - DSC08720",
+        "autor": "Daderot",
+        "licencia": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Inscription_evoking_the_pagus_Condrustis,_found_in_Hoeilaart,_Brabant,_sandstone_-_Cinquantenaire_Museum_-_Brussels,_Belgium_-_DSC08720.jpg",
+        "w": 3615,
+        "h": 5019,
+        "accessed": "2026-11-28",
+        "generada_por_ia": false,
+        "requiere_credito": false
+      },
+      {
+        "file": "File:Les Très Riches Heures du duc de Berry juin.jpg",
+        "titulo": "Les Très Riches Heures du duc de Berry juin",
+        "autor": "Limbourg brothers / Barthélemy d'Eyck / Jean Colombe",
+        "licencia": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Les_Tr%C3%A8s_Riches_Heures_du_duc_de_Berry_juin.jpg",
+        "w": 1167,
+        "h": 1884,
+        "accessed": "2026-11-28",
+        "generada_por_ia": false,
+        "requiere_credito": false
+      },
+      {
+        "file": "File:Trajan's Column - NMR - panel 057 A.jpg",
+        "titulo": "Trajan's Column - NMR - panel 057 A",
+        "autor": "Joe Mabel",
+        "licencia": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Trajan%27s_Column_-_NMR_-_panel_057_A.jpg",
+        "w": 5074,
+        "h": 3913,
+        "accessed": "2026-11-28",
+        "generada_por_ia": false,
+        "requiere_credito": false
+      },
+      {
+        "file": "File:SIR PETER PAUL RUBENS SIEGEN 1577 - 1640 ANTWERP CONSTANTINE PRESENTING THE LABARUM TO HIS TROOPS.jpg",
+        "titulo": "SIR PETER PAUL RUBENS SIEGEN 1577 - 1640 ANTWERP CONSTANTINE PRESENTING THE LABARUM TO HIS TROOPS",
+        "autor": "Peter Paul Rubens",
+        "licencia": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:SIR_PETER_PAUL_RUBENS_SIEGEN_1577_-_1640_ANTWERP_CONSTANTINE_PRESENTING_THE_LABARUM_TO_HIS_TROOPS.jpg",
+        "w": 1570,
+        "h": 2000,
+        "accessed": "2026-11-28",
+        "generada_por_ia": false,
+        "requiere_credito": false
+      },
+      {
+        "file": "File:Tertullian2.png",
+        "titulo": "Tertullian2",
+        "autor": "André Thevet",
+        "licencia": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Tertullian2.png",
+        "w": 1670,
+        "h": 2041,
+        "accessed": "2026-11-28",
+        "generada_por_ia": false,
+        "requiere_credito": false
+      },
+      {
+        "file": "File:Diptych NicoSym engraving.jpg",
+        "titulo": "Diptych NicoSym engraving",
+        "autor": "Autor desconocido",
+        "licencia": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Diptych_NicoSym_engraving.jpg",
+        "w": 1824,
+        "h": 2167,
+        "accessed": "2026-11-28",
+        "generada_por_ia": false,
+        "requiere_credito": false
+      },
+      {
+        "file": "File:Labors of the months in Tres Riches Heures du Duc de Berry1.jpg",
+        "titulo": "Labors of the months in Tres Riches Heures du Duc de Berry1",
+        "autor": "Limbourg brothers and others",
+        "licencia": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Labors_of_the_months_in_Tres_Riches_Heures_du_Duc_de_Berry1.jpg",
+        "w": 2184,
+        "h": 2616,
+        "accessed": "2026-11-28",
+        "generada_por_ia": false,
+        "requiere_credito": false
+      }
+    ]
+  },
+  "voz": {
+    "motor": "Microsoft Edge TTS",
+    "voz": "es-MX-JorgeNeural",
+    "motor_en": "Kokoro (am_adam)",
+    "nota": "voz sintética; no imita a una persona real"
+  },
+  "capas_datos": {
+    "tipos": [],
+    "mapa_base": null,
+    "render": "matplotlib (propio)"
+  },
+  "fuentes_datos": [
+    "https://faculty.georgetown.edu/jod/paganus.html",
+    "https://www.wordorigins.org/big-list-entries/pagan",
+    "https://doi.org/10.1093/acrefore/9780199381135.013.4649",
+    "https://www.unotv.com/cultura/posadas-2026-cuando-comienzan-cuando-terminan-y-cual-es-su-origen/"
+  ],
+  "verificacion": "Licencias leídas de la API de Wikimedia Commons el 2026-11-28; reconfirmar al renderizar."
+}

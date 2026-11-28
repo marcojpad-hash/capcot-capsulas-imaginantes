@@ -1,0 +1,301 @@
+{
+  "project_id": "2026-12-08_orfismo-rueda-nacimientos",
+  "serie": "Tiempo cíclico",
+  "title": "¿Creían los griegos en una rueda de renacimientos?",
+  "titulo": "¿Creían los griegos en una rueda de renacimientos?",
+  "title_en": "Did the Greeks believe in a wheel of rebirths?",
+  "portada_texto": "¿CREÍAN LOS GRIEGOS EN UNA RUEDA DE RENACIMIENTOS?",
+  "portada_texto_en": "DID THE GREEKS BELIEVE IN A WHEEL OF REBIRTHS?",
+  "language": "es-MX",
+  "aspect_ratio": "9:16",
+  "target_duration_seconds": 88,
+  "target_duration_seconds_en_estimado": 82,
+  "trend_source": {
+    "tipo": "efemeride_verificada",
+    "termino": "8 de diciembre de 2026",
+    "fecha_consulta": "2026-11-28",
+    "fuente": "Harvard Divinity School, Multifaith Calendar: «Bodhi Day (Rohatsu), Tue., Dec. 8, 2026».",
+    "url": "https://www.hds.harvard.edu/community-life/religious-and-spiritual-life/multifaith-calendar",
+    "serie": "Tiempo cíclico"
+  },
+  "estilo_id": "pintura_historica_commons",
+  "estilo_visual": "pinturas, grabados, manuscritos y relieves de dominio público o licencia libre (Wikimedia Commons)",
+  "proveedor_imagenes": "Wikimedia Commons (dominio público o CC, créditos en metadata)",
+  "parece_real": false,
+  "keywords": [
+    "orfismo",
+    "Bernabé",
+    "reencarnación",
+    "laminillas de oro"
+  ],
+  "voice": {
+    "engine": "edge-tts",
+    "voice_id": "es-MX-JorgeNeural",
+    "rate": "+7%",
+    "pitch": "-2Hz",
+    "pad_seconds": 0.35,
+    "modo_pausas": "continuo"
+  },
+  "voice_en": {
+    "engine": "kokoro",
+    "voice_id": "am_adam",
+    "nota": "firma «That was Datos y ociosidades.»"
+  },
+  "audio": {
+    "music_asset": "sintetico:pulso",
+    "cama_musical": "pulso",
+    "music_bpm": 92,
+    "music_lufs": -27,
+    "ambiente_lufs": -30
+  },
+  "canal": {
+    "nombre": "Datos y ociosidades",
+    "handle": "@datosyociosidades"
+  },
+  "sources": [
+    {
+      "id": "SRC-001",
+      "cita_corta": "Harvard Divinity School, Multifaith Calendar (diciembre 2026): Bodhi Day (Rohatsu), martes 8-dic-2026.",
+      "url": "https://www.hds.harvard.edu/community-life/religious-and-spiritual-life/multifaith-calendar",
+      "accessed": "2026-11-28",
+      "supports": [
+        "Bodhi Day el 8-dic-2026 en las tradiciones del norte; en el budismo, el despertar es salir del ciclo de renacimientos (samsara)"
+      ],
+      "ref_display": "HDS 2026"
+    },
+    {
+      "id": "SRC-002",
+      "cita_corta": "Radcliffe G. Edmonds III (ed.), The «Orphic» Gold Tablets and Greek Religion: Further along the Path, Cambridge University Press, 2011, cap. 1 (texto de la tablilla A1 de Turios; edición Bernabé 2004-2007).",
+      "url": "https://assets.cambridge.org/97805215/18314/excerpt/9780521518314_excerpt.htm",
+      "accessed": "2026-11-28",
+      "supports": [
+        "Turios A1: «I flew out of the circle of wearying heavy grief; I came on with swift feet to the desired crown…»; descubrimiento en 1879"
+      ],
+      "ref_display": "Edmonds 2011"
+    },
+    {
+      "id": "SRC-003",
+      "cita_corta": "Radcliffe G. Edmonds III, reseña de Bernabé y Jiménez San Cristóbal, Instructions for the Netherworld, Bryn Mawr Classical Review 2008.10.16.",
+      "url": "https://bmcr.brynmawr.edu/2008/2008.10.16/",
+      "accessed": "2026-11-28",
+      "supports": [
+        "Bernabé y Jiménez: ven una escapatoria del ciclo de reencarnaciones como recompensa; apoyo en Proclo (in Remp. II 338 = OF 338 I B; in Tim. III 296.7 = OF 348) y Simplicio (in Cael. 377.12); Edmonds: es la única laminilla con «círculo», y es más verosímil leerlo como vaivén de la vida y las estaciones; fuentes neoplatónicas dudosas"
+      ],
+      "ref_display": "Edmonds, BMCR 2008"
+    },
+    {
+      "id": "SRC-004",
+      "cita_corta": "Alberto Bernabé y Ana Isabel Jiménez San Cristóbal, Instrucciones para el más allá: las laminillas órficas de oro, Ediciones Clásicas, Madrid, 2001; ed. inglesa Instructions for the Netherworld, Brill, 2008 (RGRW 162).",
+      "url": "https://bmcr.brynmawr.edu/2008/2008.10.16/",
+      "accessed": "2026-11-28",
+      "supports": [
+        "libro citado en el guion; su tesis se lee a través de la reseña de Edmonds (BMCR) y debe cotejarse con el libro"
+      ],
+      "ref_display": "Bernabé–Jiménez 2001/2008"
+    },
+    {
+      "id": "SRC-005",
+      "cita_corta": "Otto Kern, Orphicorum Fragmenta (1922), fr. 230: Simplicio, in Aristotelis De caelo 377.12 Heiberg (= verso órfico «κύκλου τ᾽ ἀλλῆξαι καὶ ἀναψῦξαι κακότητος τὰς ἀνθρωπίνας ψυχάς»).",
+      "url": "https://www.hellenicgods.org/orphic-fragment-230---otto-kern",
+      "accessed": "2026-11-28",
+      "supports": [
+        "verso órfico citado por Simplicio sobre la rueda del destino y la generación y la liberación de las almas del «círculo»"
+      ],
+      "ref_display": "Kern 230"
+    },
+    {
+      "id": "SRC-006",
+      "cita_corta": "Píndaro, Olímpica 2.68-70 (476 a. C.); texto griego «ἐστρίς ἑκατέρωθι μείναντες»; trad. inglesa de C. A. Wheelwright, 1846 (muy libre).",
+      "url": "https://en.wikisource.org/wiki/Pindar_and_Anacreon/Pindar/Olympic_Odes/2",
+      "accessed": "2026-11-28",
+      "supports": [
+        "almas que han permanecido tres veces a cada lado (en la tierra y bajo ella) libres de injusticia van a la isla de los Bienaventurados"
+      ],
+      "ref_display": "Píndaro, Ol. 2"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_001",
+      "arc": "hook_medias_res",
+      "duration_seconds": 9.0,
+      "duration_seconds_en": 7.5,
+      "narration": "Hoy, 8 de diciembre, se recuerda el despertar del Buda. Para una parte del budismo, despertar es salir del ciclo de los renacimientos.",
+      "narration_en": "Today, December 8, the Buddha's awakening is remembered. For part of Buddhism, awakening means leaving the cycle of rebirths.",
+      "on_screen_text": "Bodhi Day: salir del ciclo",
+      "on_screen_text_en": "Bodhi Day: leaving the cycle",
+      "asset_filename": "frames/scene_001.jpg",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "image_credit": "A small temple beneath the Bodhi tree, Bodh Gaya, c. 1810. Autor desconocido. Public domain. https://commons.wikimedia.org/wiki/File:A_small_temple_beneath_the_Bodhi_tree,_Bodh_Gaya,_c._1810.jpg",
+      "image_caption_es": "Pequeño templo bajo el árbol Bodhi, Bodh Gaya (c. 1810).",
+      "visual_description": "File:A small temple beneath the Bodhi tree, Bodh Gaya, c. 1810.jpg",
+      "image_prompt": "NO IA: archivo de Wikimedia Commons «A small temple beneath the Bodhi tree, Bodh Gaya, c. 1810.jpg» (Public domain); recorte vertical 9:16 con movimiento lento, sin generar imagen."
+    },
+    {
+      "id": "scene_002",
+      "arc": "desarrollo",
+      "duration_seconds": 13.5,
+      "duration_seconds_en": 12.5,
+      "narration": "En tumbas griegas del siglo cuarto antes de nuestra era aparecieron laminillas de oro con instrucciones para el alma. Una, de Turios, en el sur de Italia, dice: «Salí volando del círculo del pesado dolor».",
+      "narration_en": "In Greek tombs of the fourth century BCE, gold leaves appeared with instructions for the soul. One, from Thurii in southern Italy, says: “I flew out of the circle of heavy grief.”",
+      "on_screen_text": "«Salí del círculo del dolor»",
+      "on_screen_text_en": "“I flew out of the circle”",
+      "asset_filename": "frames/scene_002.jpg",
+      "sfx": [],
+      "source_ids": [
+        "SRC-002"
+      ],
+      "image_credit": "Orphic Gold Tablet (Hipponion-Museo Archeologico Statale Capialbi, Vibo Valentia). Autor desconocido. Public domain. https://commons.wikimedia.org/wiki/File:Orphic_Gold_Tablet_(Hipponion-Museo_Archeologico_Statale_Capialbi,_Vibo_Valentia).jpg",
+      "image_caption_es": "Laminilla órfica de Hiponio (Vibo Valentia). Es otra laminilla, no la de Turios; ilustra el género.",
+      "visual_description": "File:Orphic Gold Tablet (Hipponion-Museo Archeologico Statale Capialbi, Vibo Valentia).jpg",
+      "image_prompt": "NO IA: archivo de Wikimedia Commons «Orphic Gold Tablet (Hipponion-Museo Archeologico Statale Capialbi, Vibo Valentia).jpg» (Public domain); recorte vertical 9:16 con movimiento lento, sin generar imagen."
+    },
+    {
+      "id": "scene_003",
+      "arc": "desarrollo",
+      "duration_seconds": 11.5,
+      "duration_seconds_en": 11.0,
+      "narration": "Para Alberto Bernabé y Ana Isabel Jiménez San Cristóbal, ese círculo es el ciclo de las reencarnaciones, una rueda de nacimientos. La recompensa de la iniciación sería salir de ella.",
+      "narration_en": "For Alberto Bernabé and Ana Isabel Jiménez San Cristóbal, that circle is the cycle of reincarnations, a wheel of births. The reward of initiation would be to leave it.",
+      "on_screen_text": "Bernabé: la rueda de nacimientos",
+      "on_screen_text_en": "Bernabé: the wheel of births",
+      "asset_filename": "frames/scene_003.jpg",
+      "sfx": [],
+      "source_ids": [
+        "SRC-003",
+        "SRC-004"
+      ],
+      "image_credit": "Orphic Gold Tablet (Petelia - British Museum, London). Jononmac46. CC BY-SA 3.0. https://commons.wikimedia.org/wiki/File:Orphic_Gold_Tablet_(Petelia_-_British_Museum,_London).jpg",
+      "image_caption_es": "Laminilla órfica de Petelia, Museo Británico (Jononmac46, CC BY-SA 3.0).",
+      "visual_description": "File:Orphic Gold Tablet (Petelia - British Museum, London).jpg",
+      "image_prompt": "NO IA: archivo de Wikimedia Commons «Orphic Gold Tablet (Petelia - British Museum, London).jpg» (CC BY-SA 3.0); recorte vertical 9:16 con movimiento lento, sin generar imagen."
+    },
+    {
+      "id": "scene_004",
+      "arc": "desarrollo",
+      "duration_seconds": 11.5,
+      "duration_seconds_en": 11.0,
+      "narration": "Se apoyan en textos tardíos de Proclo y de Simplicio, que citan un verso atribuido a Orfeo sobre liberar a las almas humanas «del círculo» y darles respiro del mal.",
+      "narration_en": "They rely on late texts by Proclus and Simplicius, which quote a verse attributed to Orpheus about freeing human souls “from the circle” and giving them relief from misery.",
+      "on_screen_text": "Proclo y Simplicio, siglos después",
+      "on_screen_text_en": "Proclus, Simplicius: centuries later",
+      "asset_filename": "frames/scene_004.jpg",
+      "sfx": [],
+      "source_ids": [
+        "SRC-003",
+        "SRC-005"
+      ],
+      "image_credit": "Simplicius Commentary on Aristotle De Caelo. Simplicius of Cilicia, copied in the 14th century. Public domain. https://commons.wikimedia.org/wiki/File:Simplicius_Commentary_on_Aristotle_De_Caelo.jpg",
+      "image_caption_es": "Comentario de Simplicio al De caelo de Aristóteles, copia del siglo XIV.",
+      "visual_description": "File:Simplicius Commentary on Aristotle De Caelo.jpg",
+      "image_prompt": "NO IA: archivo de Wikimedia Commons «Simplicius Commentary on Aristotle De Caelo.jpg» (Public domain); recorte vertical 9:16 con movimiento lento, sin generar imagen."
+    },
+    {
+      "id": "scene_005",
+      "arc": "desarrollo",
+      "duration_seconds": 12.5,
+      "duration_seconds_en": 9.5,
+      "narration": "Píndaro, en el 476 antes de nuestra era, habla de almas que vivieron tres veces a cada lado de la muerte sin hacer daño, y llegan a las Islas de los Bienaventurados.",
+      "narration_en": "Pindar, in 476 BCE, speaks of souls that lived three times on each side of death without wrongdoing and reach the Isles of the Blessed.",
+      "on_screen_text": "Píndaro: tres vidas a cada lado",
+      "on_screen_text_en": "Pindar: three lives each side",
+      "asset_filename": "frames/scene_005.jpg",
+      "sfx": [],
+      "source_ids": [
+        "SRC-006"
+      ],
+      "image_credit": "Pindar Musei Capitolini MC586. Autor desconocido. Public domain. https://commons.wikimedia.org/wiki/File:Pindar_Musei_Capitolini_MC586.jpg",
+      "image_caption_es": "Píndaro, busto de los Museos Capitolinos.",
+      "visual_description": "File:Pindar Musei Capitolini MC586.jpg",
+      "image_prompt": "NO IA: archivo de Wikimedia Commons «Pindar Musei Capitolini MC586.jpg» (Public domain); recorte vertical 9:16 con movimiento lento, sin generar imagen."
+    },
+    {
+      "id": "scene_006",
+      "arc": "cierre_historia",
+      "duration_seconds": 12.0,
+      "duration_seconds_en": 13.0,
+      "narration": "Pero Radcliffe Edmonds, otro especialista, señala que es la única laminilla que habla de círculo, que Proclo y Simplicio escriben siglos después, y que podría ser el vaivén de la vida.",
+      "narration_en": "But Radcliffe Edmonds, another scholar, notes that it is the only leaf that mentions a circle, that Proclus and Simplicius write centuries later, and that it could mean the ups and downs of life.",
+      "on_screen_text": "Edmonds: ¿o sube y baja?",
+      "on_screen_text_en": "Edmonds: or life's ups and downs?",
+      "asset_filename": "frames/scene_006.jpg",
+      "sfx": [],
+      "source_ids": [
+        "SRC-003"
+      ],
+      "image_credit": "Orpheus and the Thracian woman, Attic red-figure neck-amphora, by the Painter of the Berlin Hydria, 460-450 BC - Museo Gregoriano Etrusco - Vatican Museums - DSC01028. Daderot. Public domain. https://commons.wikimedia.org/wiki/File:Orpheus_and_the_Thracian_woman,_Attic_red-figure_neck-amphora,_by_the_Painter_of_the_Berlin_Hydria,_460-450_BC_-_Museo_Gregoriano_Etrusco_-_Vatican_Museums_-_DSC01028.jpg",
+      "image_caption_es": "Orfeo y la tracia, ánfora ática de figuras rojas (460-450 a. C.), Museos Vaticanos.",
+      "visual_description": "File:Orpheus and the Thracian woman, Attic red-figure neck-amphora, by the Painter of the Berlin Hydria, 460-450 BC - Museo Gregoriano Etrusco - Vatican Museums - DSC01028.jpg",
+      "image_prompt": "NO IA: archivo de Wikimedia Commons «Orpheus and the Thracian woman, Attic red-figure neck-amphora, by the Painter of the Berlin Hydria, 460-450 BC - Museo Gregoriano Etrusco - Vatican Museums - DSC01028.jpg» (Public domain); recorte vertical 9:16 con movimiento lento, sin generar imagen."
+    },
+    {
+      "id": "scene_007",
+      "arc": "cierre_historia",
+      "duration_seconds": 6.5,
+      "duration_seconds_en": 6.5,
+      "narration": "No hay prueba de que el budismo y los griegos se influyeran: la comparación es nuestra.",
+      "narration_en": "There is no proof that Buddhism and the Greeks influenced each other: the comparison is ours.",
+      "on_screen_text": "Comparación nuestra, sin prueba",
+      "on_screen_text_en": "Our comparison, not proof",
+      "asset_filename": "frames/scene_007.jpg",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "image_credit": "Wheel of Existence. Eastern Tibetan origin. Public domain. https://commons.wikimedia.org/wiki/File:Wheel_of_Existence.jpg",
+      "image_caption_es": "Rueda de la existencia (bhavacakra), pintura tibetana oriental. Pertenece al budismo, no al orfismo.",
+      "visual_description": "File:Wheel of Existence.jpg",
+      "image_prompt": "NO IA: archivo de Wikimedia Commons «Wheel of Existence.jpg» (Public domain); recorte vertical 9:16 con movimiento lento, sin generar imagen."
+    },
+    {
+      "id": "scene_008",
+      "arc": "reflexion_o_pregunta",
+      "duration_seconds": 5.5,
+      "duration_seconds_en": 5.5,
+      "narration": "¿La rueda era de vidas, o de dolor? Esto fue Datos y ociosidades.",
+      "narration_en": "Was the wheel one of lives, or of pain? That was Datos y ociosidades.",
+      "on_screen_text": "Serie: tiempo cíclico",
+      "on_screen_text_en": "Series: cyclical time",
+      "asset_filename": "frames/scene_008.jpg",
+      "sfx": [],
+      "source_ids": [
+        "SRC-002"
+      ],
+      "image_credit": "Arnold Böcklin - The Isle of the Dead - WGA3029. Arnold Böcklin. Public domain. https://commons.wikimedia.org/wiki/File:Arnold_B%C3%B6cklin_-_The_Isle_of_the_Dead_-_WGA3029.jpg",
+      "image_caption_es": "La isla de los muertos, Arnold Böcklin (1883). Evocación; no ilustra el pasaje de Píndaro.",
+      "visual_description": "File:Arnold Böcklin - The Isle of the Dead - WGA3029.jpg",
+      "image_prompt": "NO IA: archivo de Wikimedia Commons «Arnold Böcklin - The Isle of the Dead - WGA3029.jpg» (Public domain); recorte vertical 9:16 con movimiento lento, sin generar imagen."
+    }
+  ],
+  "cortinilla_fuentes": {
+    "duration_seconds": 6,
+    "titulo": "Fuentes",
+    "aviso": "Imágenes de dominio público o con licencia libre (Wikimedia Commons). Voz sintética. Audio sintetizado.",
+    "firma": "Datos y ociosidades · @datosyociosidades",
+    "bg_rgb": [
+      18,
+      16,
+      14
+    ],
+    "source_ids_visibles": [
+      "SRC-001",
+      "SRC-002",
+      "SRC-003",
+      "SRC-004"
+    ]
+  },
+  "export": {
+    "filename": "capsula.mp4",
+    "resolution": "1080x1920",
+    "fps": 30,
+    "loudness_lufs": -14,
+    "plano_seconds": 4.0
+  },
+  "estructura": "arco_narrativo",
+  "hook_type": "afirmacion",
+  "tipo_titulo": "pregunta",
+  "estado": "PROPUESTA — sin render, sin subir, sin programar"
+}

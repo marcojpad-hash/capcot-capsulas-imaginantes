@@ -1,0 +1,291 @@
+{
+  "project_id": "2026-12-09_eliade-ano-nuevo-crea-mundo",
+  "serie": "Tiempo cíclico",
+  "title": "¿El Año Nuevo volvía a crear el mundo?",
+  "titulo": "¿El Año Nuevo volvía a crear el mundo?",
+  "title_en": "Did New Year create the world again?",
+  "portada_texto": "¿EL AÑO NUEVO VOLVÍA A CREAR EL MUNDO?",
+  "portada_texto_en": "DID NEW YEAR CREATE THE WORLD AGAIN?",
+  "language": "es-MX",
+  "aspect_ratio": "9:16",
+  "target_duration_seconds": 80,
+  "target_duration_seconds_en_estimado": 76,
+  "trend_source": {
+    "tipo": "efemeride_verificada",
+    "termino": "El Adviento empezó el domingo 29-nov-2026",
+    "fecha_consulta": "2026-11-28",
+    "fuente": "USCCB, «What is Advent?» (domingo 29-nov a jueves 24-dic de 2026; «Beginning the Church's liturgical year»).",
+    "url": "https://www.usccb.org/prayer-worship/liturgical-year/advent",
+    "serie": "Tiempo cíclico"
+  },
+  "estilo_id": "pintura_historica_commons",
+  "estilo_visual": "pinturas, grabados, manuscritos y relieves de dominio público o licencia libre (Wikimedia Commons)",
+  "proveedor_imagenes": "Wikimedia Commons (dominio público o CC, créditos en metadata)",
+  "parece_real": false,
+  "keywords": [
+    "Eliade",
+    "Año Nuevo",
+    "Babilonia",
+    "tiempo cíclico"
+  ],
+  "voice": {
+    "engine": "edge-tts",
+    "voice_id": "es-MX-JorgeNeural",
+    "rate": "+7%",
+    "pitch": "-2Hz",
+    "pad_seconds": 0.35,
+    "modo_pausas": "continuo"
+  },
+  "voice_en": {
+    "engine": "kokoro",
+    "voice_id": "am_adam",
+    "nota": "firma «That was Datos y ociosidades.»"
+  },
+  "audio": {
+    "music_asset": "sintetico:pulso",
+    "cama_musical": "pulso",
+    "music_bpm": 92,
+    "music_lufs": -27,
+    "ambiente_lufs": -30
+  },
+  "canal": {
+    "nombre": "Datos y ociosidades",
+    "handle": "@datosyociosidades"
+  },
+  "sources": [
+    {
+      "id": "SRC-001",
+      "cita_corta": "Mircea Eliade, Le mythe de l'éternel retour: archétypes et répétition, Gallimard, París, 1949; trad. inglesa de Willard R. Trask, The Myth of the Eternal Return (1954; reed. Cosmos and History, Harper Torchbooks, 1959). Prefacio a la edición Torchbook y cap. 2 «The Regeneration of Time».",
+      "url": "http://users.uoa.gr/~cdokou/MythLitMA/Eliade-EternalReturn.pdf",
+      "accessed": "2026-11-28",
+      "supports": [
+        "en la mayoría de las sociedades primitivas el Año Nuevo equivale a levantar el tabú de la cosecha nueva; el akitu babilonio repite la cosmogonía («el combate, la victoria y la creación tuvieron lugar en ese mismo momento»); sociedad arcaica ligada al ritmo cósmico frente al hombre moderno ligado solo a la Historia; advertencia de Eliade sobre el título"
+      ],
+      "ref_display": "Eliade 1949/1954"
+    },
+    {
+      "id": "SRC-002",
+      "cita_corta": "Livius.org, «Akitu Festival».",
+      "url": "https://www.livius.org/articles/religion/akitu",
+      "accessed": "2026-11-28",
+      "supports": [
+        "en el Akitu (mes de Nisannu), el cuarto día, el sumo sacerdote recita el Enuma Elish ante la estatua de Marduk en el Esagila"
+      ],
+      "ref_display": "Livius"
+    },
+    {
+      "id": "SRC-003",
+      "cita_corta": "Johannes Haubold, Sophus Helle, Enrique Jiménez y Selena Wisnom (eds.), Enuma Elish: The Babylonian Epic of Creation, Oxford (ORA).",
+      "url": "https://ora.ox.ac.uk/objects/uuid:ef3bd89d-69c6-46c3-925d-42df59e12fa6/files/svh53wz218",
+      "accessed": "2026-11-28",
+      "supports": [
+        "la recitación del Enuma Elish formaba parte del programa ritual del Akitu"
+      ],
+      "ref_display": "Haubold et al."
+    },
+    {
+      "id": "SRC-004",
+      "cita_corta": "USCCB, «What is Advent?» (2026).",
+      "url": "https://www.usccb.org/prayer-worship/liturgical-year/advent",
+      "accessed": "2026-11-28",
+      "supports": [
+        "el Adviento 2026 va del domingo 29-nov al 24-dic y «begins the Church's liturgical year»"
+      ],
+      "ref_display": "USCCB"
+    },
+    {
+      "id": "SRC-005",
+      "cita_corta": "Edmund R. Leach, «Sermons by a Man on a Ladder», The New York Review of Books, 20-oct-1966.",
+      "url": "https://www.nybooks.com/articles/1966/10/20/sermons-by-a-man-on-a-ladder/",
+      "accessed": "2026-11-28",
+      "supports": [
+        "Leach: «there has never been a radical discordance between Christian cosmology and cyclical notions of time»; «it is not true that the cosmologies of archaic man always incorporate notions of cyclical time»"
+      ],
+      "ref_display": "Leach 1966"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_001",
+      "arc": "hook_medias_res",
+      "duration_seconds": 4.5,
+      "duration_seconds_en": 4.0,
+      "narration": "En Babilonia, cada Año Nuevo, el mundo se creaba otra vez.",
+      "narration_en": "In Babylon, every New Year, the world was created again.",
+      "on_screen_text": "Cada año, el mundo de nuevo",
+      "on_screen_text_en": "Every year, the world again",
+      "asset_filename": "frames/scene_001.jpg",
+      "sfx": [],
+      "source_ids": [
+        "SRC-002"
+      ],
+      "image_credit": "Glazed Brick Relief of Mushkhushshu Dragon from Ishtar Gate Babylon Istanbul Archaeology Museums. Ywpark2003. CC0. https://commons.wikimedia.org/wiki/File:Glazed_Brick_Relief_of_Mushkhushshu_Dragon_from_Ishtar_Gate_Babylon_Istanbul_Archaeology_Museums.jpg",
+      "image_caption_es": "Dragón mušḫuššu, animal de Marduk, relieve de ladrillo vidriado de la Puerta de Ishtar (Babilonia, siglo VI a. C.), Museos Arqueológicos de Estambul.",
+      "visual_description": "File:Glazed Brick Relief of Mushkhushshu Dragon from Ishtar Gate Babylon Istanbul Archaeology Museums.jpg",
+      "image_prompt": "NO IA: archivo de Wikimedia Commons «Glazed Brick Relief of Mushkhushshu Dragon from Ishtar Gate Babylon Istanbul Archaeology Museums.jpg» (CC0); recorte vertical 9:16 con movimiento lento, sin generar imagen."
+    },
+    {
+      "id": "scene_002",
+      "arc": "desarrollo",
+      "duration_seconds": 9.5,
+      "duration_seconds_en": 9.0,
+      "narration": "En el festival del Akitu, el cuarto día, el sacerdote recitaba ante la estatua de Marduk el poema de la creación: el Enuma Elish.",
+      "narration_en": "At the Akitu festival, on the fourth day, the priest recited the poem of creation before the statue of Marduk: the Enuma Elish.",
+      "on_screen_text": "Akitu: se recita la creación",
+      "on_screen_text_en": "Akitu: creation recited",
+      "asset_filename": "frames/scene_002.jpg",
+      "sfx": [],
+      "source_ids": [
+        "SRC-002",
+        "SRC-003"
+      ],
+      "image_credit": "Enuma elish AN1926.373. Zunkir. CC BY-SA 4.0. https://commons.wikimedia.org/wiki/File:Enuma_elish_AN1926.373.jpg",
+      "image_caption_es": "Tablilla con el Enuma Elish (AN1926.373).",
+      "visual_description": "File:Enuma elish AN1926.373.jpg",
+      "image_prompt": "NO IA: archivo de Wikimedia Commons «Enuma elish AN1926.373.jpg» (CC BY-SA 4.0); recorte vertical 9:16 con movimiento lento, sin generar imagen."
+    },
+    {
+      "id": "scene_003",
+      "arc": "desarrollo",
+      "duration_seconds": 12.5,
+      "duration_seconds_en": 13.5,
+      "narration": "Para el rumano Mircea Eliade, que lo analizó en El mito del eterno retorno, en 1949, aquello no era recordar: el combate, la victoria y la creación ocurrían en ese mismo momento.",
+      "narration_en": "For the Romanian scholar Mircea Eliade, who analyzed it in The Myth of the Eternal Return in 1949, this was not remembering: the combat, the victory and the creation took place at that very moment.",
+      "on_screen_text": "Ocurría en ese momento",
+      "on_screen_text_en": "It happened right then",
+      "asset_filename": "frames/scene_003.jpg",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "image_credit": "Chaos Monster and Sun God. editor Austen Henry Layard , drawing by L. Gruner. Public domain. https://commons.wikimedia.org/wiki/File:Chaos_Monster_and_Sun_God.png",
+      "image_caption_es": "Dios y monstruo del caos, relieve asirio de Nimrud (dibujo de A. H. Layard). Ilustra el tema del combate divino; no se afirma que sea Marduk y Tiamat.",
+      "visual_description": "File:Chaos Monster and Sun God.png",
+      "image_prompt": "NO IA: archivo de Wikimedia Commons «Chaos Monster and Sun God.png» (Public domain); recorte vertical 9:16 con movimiento lento, sin generar imagen."
+    },
+    {
+      "id": "scene_004",
+      "arc": "desarrollo",
+      "duration_seconds": 10.5,
+      "duration_seconds_en": 9.5,
+      "narration": "Eliade sostuvo que, en muchas sociedades tradicionales, el año se medía por la cosecha: el Año Nuevo era el día en que el grano nuevo podía comerse.",
+      "narration_en": "Eliade argued that in many traditional societies the year was measured by the harvest: New Year was the day the new grain could be eaten.",
+      "on_screen_text": "El año sigue la cosecha",
+      "on_screen_text_en": "The year follows the harvest",
+      "asset_filename": "frames/scene_004.jpg",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "image_credit": "Mircea Eliade from Horia Photo 3 English (cropped). TanasescuFamily. CC BY-SA 4.0. https://commons.wikimedia.org/wiki/File:Mircea_Eliade_from_Horia_Photo_3_English_(cropped).jpg",
+      "image_caption_es": "Mircea Eliade (fotografía de la familia Tănăsescu, CC BY-SA 4.0).",
+      "visual_description": "File:Mircea Eliade from Horia Photo 3 English (cropped).jpg",
+      "image_prompt": "NO IA: archivo de Wikimedia Commons «Mircea Eliade from Horia Photo 3 English (cropped).jpg» (CC BY-SA 4.0); recorte vertical 9:16 con movimiento lento, sin generar imagen."
+    },
+    {
+      "id": "scene_005",
+      "arc": "desarrollo",
+      "duration_seconds": 11.5,
+      "duration_seconds_en": 11.0,
+      "narration": "Su idea: para ellas el tiempo no era una línea, sino un ritmo del cosmos que los ritos renovaban. Para el hombre moderno, de herencia judeocristiana, solo existe la historia.",
+      "narration_en": "His idea: for them time was not a line but a rhythm of the cosmos, which rituals renewed. For modern man, heir to Judeo-Christian tradition, only history exists.",
+      "on_screen_text": "Ritmo del cosmos vs. historia",
+      "on_screen_text_en": "Cosmic rhythm vs. history",
+      "asset_filename": "frames/scene_005.jpg",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "image_credit": "Les Très Riches Heures du duc de Berry septembre. Limbourg brothers / Barthélemy d'Eyck / Jean Colombe. Public domain. https://commons.wikimedia.org/wiki/File:Les_Tr%C3%A8s_Riches_Heures_du_duc_de_Berry_septembre.jpg",
+      "image_caption_es": "Vendimia, Les Très Riches Heures du duc de Berry (mes de septiembre). Imagen medieval como evocación de la cosecha.",
+      "visual_description": "File:Les Très Riches Heures du duc de Berry septembre.jpg",
+      "image_prompt": "NO IA: archivo de Wikimedia Commons «Les Très Riches Heures du duc de Berry septembre.jpg» (Public domain); recorte vertical 9:16 con movimiento lento, sin generar imagen."
+    },
+    {
+      "id": "scene_006",
+      "arc": "cierre_historia",
+      "duration_seconds": 7.0,
+      "duration_seconds_en": 6.5,
+      "narration": "Este año, el Adviento empezó el 29 de noviembre: para la Iglesia católica, comenzó un año litúrgico nuevo.",
+      "narration_en": "This year, Advent began on November 29: for the Catholic Church, a new liturgical year started.",
+      "on_screen_text": "29 de noviembre: año litúrgico nuevo",
+      "on_screen_text_en": "Nov. 29: a new liturgical year",
+      "asset_filename": "frames/scene_006.jpg",
+      "sfx": [],
+      "source_ids": [
+        "SRC-004"
+      ],
+      "image_credit": "Fra Angelico - The Annunciation - WGA0455. Fra Angelico. Public domain. https://commons.wikimedia.org/wiki/File:Fra_Angelico_-_The_Annunciation_-_WGA0455.jpg",
+      "image_caption_es": "La Anunciación, Fra Angelico (c. 1425-1426), Museo del Prado.",
+      "visual_description": "File:Fra Angelico - The Annunciation - WGA0455.jpg",
+      "image_prompt": "NO IA: archivo de Wikimedia Commons «Fra Angelico - The Annunciation - WGA0455.jpg» (Public domain); recorte vertical 9:16 con movimiento lento, sin generar imagen."
+    },
+    {
+      "id": "scene_007",
+      "arc": "cierre_historia",
+      "duration_seconds": 13.0,
+      "duration_seconds_en": 11.5,
+      "narration": "Pero el antropólogo Edmund Leach objetó en 1966 que no todas las culturas piensan así, y que el cristianismo siempre convivió con el tiempo cíclico. El propio Eliade admitió que su título podía confundir.",
+      "narration_en": "But anthropologist Edmund Leach objected in 1966 that not all cultures think this way, and that Christianity always lived alongside cyclical time. Eliade himself admitted his title could be confusing.",
+      "on_screen_text": "Leach: no todos piensan así",
+      "on_screen_text_en": "Leach: not all cultures do",
+      "asset_filename": "frames/scene_007.jpg",
+      "sfx": [],
+      "source_ids": [
+        "SRC-005",
+        "SRC-001"
+      ],
+      "image_credit": "Les Très Riches Heures du duc de Berry mars. Limbourg brothers / Barthélemy d'Eyck. Public domain. https://commons.wikimedia.org/wiki/File:Les_Tr%C3%A8s_Riches_Heures_du_duc_de_Berry_mars.jpg",
+      "image_caption_es": "Labores de marzo, Les Très Riches Heures du duc de Berry.",
+      "visual_description": "File:Les Très Riches Heures du duc de Berry mars.jpg",
+      "image_prompt": "NO IA: archivo de Wikimedia Commons «Les Très Riches Heures du duc de Berry mars.jpg» (Public domain); recorte vertical 9:16 con movimiento lento, sin generar imagen."
+    },
+    {
+      "id": "scene_008",
+      "arc": "reflexion_o_pregunta",
+      "duration_seconds": 5.0,
+      "duration_seconds_en": 5.0,
+      "narration": "¿Qué repites tú cada 31 de diciembre? Esto fue Datos y ociosidades.",
+      "narration_en": "What do you repeat every December 31? That was Datos y ociosidades.",
+      "on_screen_text": "Serie: tiempo cíclico",
+      "on_screen_text_en": "Series: cyclical time",
+      "asset_filename": "frames/scene_008.jpg",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "image_credit": "Les Très Riches Heures du duc de Berry - Janvier. Limbourg brothers. Public domain. https://commons.wikimedia.org/wiki/File:Les_Tr%C3%A8s_Riches_Heures_du_duc_de_Berry_-_Janvier.jpg",
+      "image_caption_es": "Enero, Les Très Riches Heures du duc de Berry (con el arco zodiacal).",
+      "visual_description": "File:Les Très Riches Heures du duc de Berry - Janvier.jpg",
+      "image_prompt": "NO IA: archivo de Wikimedia Commons «Les Très Riches Heures du duc de Berry - Janvier.jpg» (Public domain); recorte vertical 9:16 con movimiento lento, sin generar imagen."
+    }
+  ],
+  "cortinilla_fuentes": {
+    "duration_seconds": 6,
+    "titulo": "Fuentes",
+    "aviso": "Imágenes de dominio público o con licencia libre (Wikimedia Commons). Voz sintética. Audio sintetizado.",
+    "firma": "Datos y ociosidades · @datosyociosidades",
+    "bg_rgb": [
+      18,
+      16,
+      14
+    ],
+    "source_ids_visibles": [
+      "SRC-001",
+      "SRC-002",
+      "SRC-003",
+      "SRC-004"
+    ]
+  },
+  "export": {
+    "filename": "capsula.mp4",
+    "resolution": "1080x1920",
+    "fps": 30,
+    "loudness_lufs": -14,
+    "plano_seconds": 4.0
+  },
+  "estructura": "arco_narrativo",
+  "hook_type": "afirmacion",
+  "tipo_titulo": "pregunta",
+  "estado": "PROPUESTA — sin render, sin subir, sin programar"
+}

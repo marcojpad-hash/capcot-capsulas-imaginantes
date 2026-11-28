@@ -1,0 +1,134 @@
+{
+  "project_id": "2026-12-10_baldr-muerdago-frazer",
+  "musica": {
+    "cama": "pulso",
+    "origen": "síntesis propia (scripts/cama_sonora.py, numpy)",
+    "licencia": "obra propia de Datos y ociosidades",
+    "generada_por_ia": false
+  },
+  "sfx": {},
+  "imagenes": {
+    "origen": "Wikimedia Commons (dominio público o CC, créditos en metadata)",
+    "estilo": "pintura_historica_commons",
+    "realista": false,
+    "generada_por_ia": false,
+    "archivos": [
+      {
+        "file": "File:Baldr dead by Eckersberg.jpg",
+        "titulo": "Baldr dead by Eckersberg",
+        "autor": "Christoffer Wilhelm Eckersberg",
+        "licencia": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Baldr_dead_by_Eckersberg.jpg",
+        "w": 3778,
+        "h": 2993,
+        "accessed": "2026-11-28",
+        "generada_por_ia": false,
+        "requiere_credito": false
+      },
+      {
+        "file": "File:Baldr's death by Doepler.jpg",
+        "titulo": "Baldr's death by Doepler",
+        "autor": "Carl Emil Doepler (1824-1905)",
+        "licencia": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Baldr%27s_death_by_Doepler.jpg",
+        "w": 836,
+        "h": 1014,
+        "accessed": "2026-11-28",
+        "generada_por_ia": false,
+        "requiere_credito": false
+      },
+      {
+        "file": "File:Motte Druide coupant le gui au 6e jour de la lune.jpg",
+        "titulo": "Motte Druide coupant le gui au 6e jour de la lune",
+        "autor": "Henri-Paul Motte (1846-1922)",
+        "licencia": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Motte_Druide_coupant_le_gui_au_6e_jour_de_la_lune.jpg",
+        "w": 1638,
+        "h": 2103,
+        "accessed": "2026-11-28",
+        "generada_por_ia": false,
+        "requiere_credito": false
+      },
+      {
+        "file": "File:Golden bough.jpg",
+        "titulo": "Golden bough",
+        "autor": "J. M. W. Turner",
+        "licencia": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Golden_bough.jpg",
+        "w": 1536,
+        "h": 958,
+        "accessed": "2026-11-28",
+        "generada_por_ia": false,
+        "requiere_credito": false
+      },
+      {
+        "file": "File:Johannes gehrts ragnarok mindre.JPG",
+        "titulo": "Johannes gehrts ragnarok mindre",
+        "autor": "Johannes Gehrts",
+        "licencia": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Johannes_gehrts_ragnarok_mindre.JPG",
+        "w": 2879,
+        "h": 2078,
+        "accessed": "2026-11-28",
+        "generada_por_ia": false,
+        "requiere_credito": false
+      },
+      {
+        "file": "File:AM 738 4to, 36v, BW Baldr.jpeg",
+        "titulo": "AM 738 4to, 36v, BW Baldr",
+        "autor": "Autor desconocido",
+        "licencia": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:AM_738_4to,_36v,_BW_Baldr.jpeg",
+        "w": 444,
+        "h": 908,
+        "accessed": "2026-11-28",
+        "generada_por_ia": false,
+        "requiere_credito": false
+      },
+      {
+        "file": "File:Viscum album - Köhler–s Medizinal-Pflanzen-281.jpg",
+        "titulo": "Viscum album - Köhler–s Medizinal-Pflanzen-281",
+        "autor": "Walther Otto Müller",
+        "licencia": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Viscum_album_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-281.jpg",
+        "w": 506,
+        "h": 592,
+        "accessed": "2026-11-28",
+        "generada_por_ia": false,
+        "requiere_credito": false
+      },
+      {
+        "file": "File:Les Très Riches Heures du duc de Berry décembre.jpg",
+        "titulo": "Les Très Riches Heures du duc de Berry décembre",
+        "autor": "Barthélemy d'Eyck",
+        "licencia": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Les_Tr%C3%A8s_Riches_Heures_du_duc_de_Berry_d%C3%A9cembre.jpg",
+        "w": 1110,
+        "h": 1907,
+        "accessed": "2026-11-28",
+        "generada_por_ia": false,
+        "requiere_credito": false
+      }
+    ]
+  },
+  "voz": {
+    "motor": "Microsoft Edge TTS",
+    "voz": "es-MX-JorgeNeural",
+    "motor_en": "Kokoro (am_adam)",
+    "nota": "voz sintética; no imita a una persona real"
+  },
+  "capas_datos": {
+    "tipos": [],
+    "mapa_base": null,
+    "render": "matplotlib (propio)"
+  },
+  "fuentes_datos": [
+    "https://openedda.is/gylfaginning/49/",
+    "https://peterburk.github.io/pliny/ChaptersHtml/16.%20Book%20XVI.%20The%20Natural%20History%20Of%20The%20Forest%20Trees./95.%20Chap.%2095.-Historical%20Facts%20Connected%20With%20The%20Mistletoe..html",
+    "https://en.wikisource.org/wiki/The_Golden_Bough/Balder_and_the_Mistletoe",
+    "https://www.gealdyr.com/poetic-edda/voluspa/",
+    "https://aa.usno.navy.mil/calculated/seasons?dst=false&submit=Get+Data&tz=0&tz_label=true&tz_sign=1&year=2026",
+    "https://aa.usno.navy.mil/calculated/seasons?dst=false&submit=Get+Data&tz=0&tz_label=true&tz_sign=1&year=2026"
+  ],
+  "verificacion": "Licencias leídas de la API de Wikimedia Commons el 2026-11-28; reconfirmar al renderizar."
+}

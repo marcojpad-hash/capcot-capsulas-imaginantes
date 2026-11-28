@@ -1,0 +1,133 @@
+{
+  "project_id": "2026-12-12_lang-mitos-sol",
+  "musica": {
+    "cama": "pulso",
+    "origen": "síntesis propia (scripts/cama_sonora.py, numpy)",
+    "licencia": "obra propia de Datos y ociosidades",
+    "generada_por_ia": false
+  },
+  "sfx": {},
+  "imagenes": {
+    "origen": "Wikimedia Commons (dominio público o CC, créditos en metadata)",
+    "estilo": "pintura_historica_commons",
+    "realista": false,
+    "generada_por_ia": false,
+    "archivos": [
+      {
+        "file": "File:Geminids Over Kitt Peak National Observatory (iotw2352a).jpg",
+        "titulo": "Geminids Over Kitt Peak National Observatory (iotw2352a)",
+        "autor": "KPNO/NOIRLab/NSF/AURA/R. Sparks (NSF’s NOIRLab)",
+        "licencia": "CC BY 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Geminids_Over_Kitt_Peak_National_Observatory_(iotw2352a).jpg",
+        "w": 6960,
+        "h": 4640,
+        "accessed": "2026-11-28",
+        "generada_por_ia": false,
+        "requiere_credito": true
+      },
+      {
+        "file": "File:Sir Peter Paul Rubens, The Fall of Phaeton, c. 1604-1605, probably reworked c. 1606-1608, NGA 71349.jpg",
+        "titulo": "Sir Peter Paul Rubens, The Fall of Phaeton, c. 1604-1605, probably reworked c. 1606-1608, NGA 71349",
+        "autor": "Peter Paul Rubens",
+        "licencia": "CC0",
+        "url": "https://commons.wikimedia.org/wiki/File:Sir_Peter_Paul_Rubens,_The_Fall_of_Phaeton,_c._1604-1605,_probably_reworked_c._1606-1608,_NGA_71349.jpg",
+        "w": 4000,
+        "h": 3023,
+        "accessed": "2026-11-28",
+        "generada_por_ia": false,
+        "requiere_credito": false
+      },
+      {
+        "file": "File:Friedrich Max-Müller, negative, 1883 (by Alexander Bassano; NPG x96551).png",
+        "titulo": "Friedrich Max-Müller, negative, 1883 (by Alexander Bassano; NPG x96551)",
+        "autor": "Alexander Bassano",
+        "licencia": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Friedrich_Max-M%C3%BCller,_negative,_1883_(by_Alexander_Bassano;_NPG_x96551).png",
+        "w": 2400,
+        "h": 3225,
+        "accessed": "2026-11-28",
+        "generada_por_ia": false,
+        "requiere_credito": false
+      },
+      {
+        "file": "File:Portrait of Andrew Lang.jpg",
+        "titulo": "Portrait of Andrew Lang",
+        "autor": "Elliott & Fry",
+        "licencia": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Portrait_of_Andrew_Lang.jpg",
+        "w": 811,
+        "h": 1283,
+        "accessed": "2026-11-28",
+        "generada_por_ia": false,
+        "requiere_credito": false
+      },
+      {
+        "file": "File:Guido Reni (1575-1642) (after) - Aurora - 719805 - National Trust.jpg",
+        "titulo": "Guido Reni (1575-1642) (after) - Aurora - 719805 - National Trust",
+        "autor": "anonymous",
+        "licencia": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Guido_Reni_(1575-1642)_(after)_-_Aurora_-_719805_-_National_Trust.jpg",
+        "w": 1200,
+        "h": 640,
+        "accessed": "2026-11-28",
+        "generada_por_ia": false,
+        "requiere_credito": false
+      },
+      {
+        "file": "File:Barque solaire contre Apopi.jpg",
+        "titulo": "Barque solaire contre Apopi",
+        "autor": "Soutekh67",
+        "licencia": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Barque_solaire_contre_Apopi.jpg",
+        "w": 473,
+        "h": 182,
+        "accessed": "2026-11-28",
+        "generada_por_ia": false,
+        "requiere_credito": true
+      },
+      {
+        "file": "File:Friedrich Max-Müller by George Frederic Watts.jpg",
+        "titulo": "Friedrich Max-Müller by George Frederic Watts",
+        "autor": "George Frederic Watts",
+        "licencia": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Friedrich_Max-M%C3%BCller_by_George_Frederic_Watts.jpg",
+        "w": 2400,
+        "h": 2813,
+        "accessed": "2026-11-28",
+        "generada_por_ia": false,
+        "requiere_credito": false
+      },
+      {
+        "file": "File:Century Mag Andrew Lang at work.png",
+        "titulo": "Century Mag Andrew Lang at work",
+        "autor": "Drawing by Burne Murdock; engraving by J. F. Jungling.",
+        "licencia": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Century_Mag_Andrew_Lang_at_work.png",
+        "w": 667,
+        "h": 448,
+        "accessed": "2026-11-28",
+        "generada_por_ia": false,
+        "requiere_credito": false
+      }
+    ]
+  },
+  "voz": {
+    "motor": "Microsoft Edge TTS",
+    "voz": "es-MX-JorgeNeural",
+    "motor_en": "Kokoro (am_adam)",
+    "nota": "voz sintética; no imita a una persona real"
+  },
+  "capas_datos": {
+    "tipos": [],
+    "mapa_base": null,
+    "render": "matplotlib (propio)"
+  },
+  "fuentes_datos": [
+    "https://science.nasa.gov/solar-system/meteors-meteorites/geminids/",
+    "https://en.wikisource.org/wiki/Myth,_Ritual_and_Religion",
+    "https://www.cambridge.org/core/journals/european-journal-of-sociology-archives-europeennes-de-sociologie/article/abs/some-third-thoughts-on-max-muller-and-solar-mythology/B433CA017BC06A67BC66B6BA5043A760",
+    "https://languagehat.com/max-muller-as-a-solar-myth/",
+    "https://science.nasa.gov/solar-system/meteors-meteorites/geminids/"
+  ],
+  "verificacion": "Licencias leídas de la API de Wikimedia Commons el 2026-11-28; reconfirmar al renderizar."
+}

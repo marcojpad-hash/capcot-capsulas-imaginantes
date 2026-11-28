@@ -1,0 +1,290 @@
+{
+  "project_id": "2026-12-10_baldr-muerdago-frazer",
+  "serie": "Tiempo cíclico",
+  "title": "¿Un muérdago mató a un dios?",
+  "titulo": "¿Un muérdago mató a un dios?",
+  "title_en": "Did a mistletoe kill a god?",
+  "portada_texto": "¿UN MUÉRDAGO MATÓ A UN DIOS?",
+  "portada_texto_en": "DID A MISTLETOE KILL A GOD?",
+  "language": "es-MX",
+  "aspect_ratio": "9:16",
+  "target_duration_seconds": 87,
+  "target_duration_seconds_en_estimado": 78,
+  "trend_source": {
+    "tipo": "efemeride_verificada",
+    "termino": "Solsticio de invierno",
+    "fecha_consulta": "2026-11-28",
+    "fuente": "U.S. Naval Observatory, «Earth's Seasons» 2026: solsticio 21-dic, 20:50 UT.",
+    "url": "https://aa.usno.navy.mil/calculated/seasons?dst=false&submit=Get+Data&tz=0&tz_label=true&tz_sign=1&year=2026",
+    "serie": "Tiempo cíclico"
+  },
+  "estilo_id": "pintura_historica_commons",
+  "estilo_visual": "pinturas, grabados, manuscritos y relieves de dominio público o licencia libre (Wikimedia Commons)",
+  "proveedor_imagenes": "Wikimedia Commons (dominio público o CC, créditos en metadata)",
+  "parece_real": false,
+  "keywords": [
+    "muérdago",
+    "Baldr",
+    "Frazer",
+    "solsticio"
+  ],
+  "voice": {
+    "engine": "edge-tts",
+    "voice_id": "es-MX-JorgeNeural",
+    "rate": "+7%",
+    "pitch": "-2Hz",
+    "pad_seconds": 0.35,
+    "modo_pausas": "continuo"
+  },
+  "voice_en": {
+    "engine": "kokoro",
+    "voice_id": "am_adam",
+    "nota": "firma «That was Datos y ociosidades.»"
+  },
+  "audio": {
+    "music_asset": "sintetico:pulso",
+    "cama_musical": "pulso",
+    "music_bpm": 92,
+    "music_lufs": -27,
+    "ambiente_lufs": -30
+  },
+  "canal": {
+    "nombre": "Datos y ociosidades",
+    "handle": "@datosyociosidades"
+  },
+  "sources": [
+    {
+      "id": "SRC-001",
+      "cita_corta": "Snorri Sturluson, Edda en prosa, Gylfaginning 49 (trad. inglesa Brodeur, 1916).",
+      "url": "https://openedda.is/gylfaginning/49/",
+      "accessed": "2026-11-28",
+      "supports": [
+        "Frigg obtiene juramentos de todas las cosas salvo un brote de muérdago; Loki lo arranca y guía a Höðr, ciego, que dispara; Baldr muere"
+      ],
+      "ref_display": "Gylfaginning 49"
+    },
+    {
+      "id": "SRC-002",
+      "cita_corta": "Plinio el Viejo, Naturalis historia 16.95 (16.249).",
+      "url": "https://peterburk.github.io/pliny/ChaptersHtml/16.%20Book%20XVI.%20The%20Natural%20History%20Of%20The%20Forest%20Trees./95.%20Chap.%2095.-Historical%20Facts%20Connected%20With%20The%20Mistletoe..html",
+      "accessed": "2026-11-28",
+      "supports": [
+        "los druidas recogen el muérdago del roble con hoz de oro el sexto día de la luna, con la que fechan meses, años y su ciclo de treinta años (texto citado también por Frazer, cap. 65)"
+      ],
+      "ref_display": "Plinio, NH 16.95"
+    },
+    {
+      "id": "SRC-003",
+      "cita_corta": "James G. Frazer, The Golden Bough (1.ª ed. 1890; 3.ª ed. 1906-1915; ed. abreviada 1922), cap. 65 «Balder and the Mistletoe».",
+      "url": "https://en.wikisource.org/wiki/The_Golden_Bough/Balder_and_the_Mistletoe",
+      "accessed": "2026-11-28",
+      "supports": [
+        "Frazer: «the invulnerable Balder is neither more nor less than a personification of a mistletoe-bearing oak»"
+      ],
+      "ref_display": "Frazer, cap. 65"
+    },
+    {
+      "id": "SRC-004",
+      "cita_corta": "Edda poética, Völuspá, estrofas 59-62 (trad. inglesa de Henry Adams Bellows, 1923); manuscrito Codex Regius, siglo XIII.",
+      "url": "https://www.gealdyr.com/poetic-edda/voluspa/",
+      "accessed": "2026-11-28",
+      "supports": [
+        "la tierra verde resurge del mar; los campos sin sembrar dan fruto; «Baldr comes back»; poema compuesto hacia el año 1000 y puesto por escrito en el siglo XIII"
+      ],
+      "ref_display": "Völuspá 59-62"
+    },
+    {
+      "id": "SRC-005",
+      "cita_corta": "U.S. Naval Observatory, «Earth's Seasons — Equinoxes, Solstices, Perihelion, and Aphelion» (2026).",
+      "url": "https://aa.usno.navy.mil/calculated/seasons?dst=false&submit=Get+Data&tz=0&tz_label=true&tz_sign=1&year=2026",
+      "accessed": "2026-11-28",
+      "supports": [
+        "solsticio de diciembre 2026: 21-dic, 20:50 UT (= 14:50 hora de la Ciudad de México, UTC-6)"
+      ],
+      "ref_display": "USNO 2026"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_001",
+      "arc": "hook_medias_res",
+      "duration_seconds": 6.5,
+      "duration_seconds_en": 6.0,
+      "narration": "Un muérdago mató a un dios. Era Baldr, hijo de Odín, al que nada podía herir.",
+      "narration_en": "A mistletoe killed a god. He was Baldr, son of Odin, whom nothing could harm.",
+      "on_screen_text": "Un muérdago mató a un dios",
+      "on_screen_text_en": "A mistletoe killed a god",
+      "asset_filename": "frames/scene_001.jpg",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "image_credit": "Baldr dead by Eckersberg. Christoffer Wilhelm Eckersberg. Public domain. https://commons.wikimedia.org/wiki/File:Baldr_dead_by_Eckersberg.jpg",
+      "image_caption_es": "La muerte de Baldr, C. W. Eckersberg (1817).",
+      "visual_description": "File:Baldr dead by Eckersberg.jpg",
+      "image_prompt": "NO IA: archivo de Wikimedia Commons «Baldr dead by Eckersberg.jpg» (Public domain); recorte vertical 9:16 con movimiento lento, sin generar imagen."
+    },
+    {
+      "id": "scene_002",
+      "arc": "desarrollo",
+      "duration_seconds": 15.0,
+      "duration_seconds_en": 14.5,
+      "narration": "Su madre, Frigg, había hecho jurar a todas las cosas que no le dañarían, pero pasó por alto un brote de muérdago. Loki lo arrancó y puso el dardo en manos de Höðr, un dios ciego. Baldr cayó muerto.",
+      "narration_en": "His mother, Frigg, had made every thing swear not to hurt him, but she overlooked a sprig of mistletoe. Loki pulled it up and put the dart in the hands of Höðr, a blind god. Baldr fell dead.",
+      "on_screen_text": "Loki, Höðr ciego y un dardo",
+      "on_screen_text_en": "Loki, blind Höðr, a dart",
+      "asset_filename": "frames/scene_002.jpg",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "image_credit": "Baldr's death by Doepler. Carl Emil Doepler (1824-1905). Public domain. https://commons.wikimedia.org/wiki/File:Baldr%27s_death_by_Doepler.jpg",
+      "image_caption_es": "La muerte de Baldr, Carl Emil Doepler (ilustración de Walhall, 1901).",
+      "visual_description": "File:Baldr's death by Doepler.jpg",
+      "image_prompt": "NO IA: archivo de Wikimedia Commons «Baldr's death by Doepler.jpg» (Public domain); recorte vertical 9:16 con movimiento lento, sin generar imagen."
+    },
+    {
+      "id": "scene_003",
+      "arc": "desarrollo",
+      "duration_seconds": 14.5,
+      "duration_seconds_en": 13.5,
+      "narration": "Siglos antes, Plinio el Viejo escribió que los druidas cortaban muérdago de roble con una hoz de oro, el sexto día de la luna. Con esa luna contaban sus meses, sus años y un ciclo de treinta años.",
+      "narration_en": "Centuries earlier, Pliny the Elder wrote that the Druids cut oak mistletoe with a golden sickle on the sixth day of the moon. By that moon they counted their months, their years, and a thirty-year cycle.",
+      "on_screen_text": "Sexto día de la luna",
+      "on_screen_text_en": "Sixth day of the moon",
+      "asset_filename": "frames/scene_003.jpg",
+      "sfx": [],
+      "source_ids": [
+        "SRC-002"
+      ],
+      "image_credit": "Motte Druide coupant le gui au 6e jour de la lune. Henri-Paul Motte (1846-1922). Public domain. https://commons.wikimedia.org/wiki/File:Motte_Druide_coupant_le_gui_au_6e_jour_de_la_lune.jpg",
+      "image_caption_es": "Druida cortando el muérdago el sexto día de la luna, Henri-Paul Motte (1900). Reconstrucción artística moderna.",
+      "visual_description": "File:Motte Druide coupant le gui au 6e jour de la lune.jpg",
+      "image_prompt": "NO IA: archivo de Wikimedia Commons «Motte Druide coupant le gui au 6e jour de la lune.jpg» (Public domain); recorte vertical 9:16 con movimiento lento, sin generar imagen."
+    },
+    {
+      "id": "scene_004",
+      "arc": "desarrollo",
+      "duration_seconds": 10.0,
+      "duration_seconds_en": 9.0,
+      "narration": "En La rama dorada, James Frazer juntó ambas piezas: para él, Baldr era un roble con su muérdago, un dios de la vegetación que muere.",
+      "narration_en": "In The Golden Bough, James Frazer joined both pieces: for him, Baldr was an oak with its mistletoe, a vegetation god who dies.",
+      "on_screen_text": "Frazer: Baldr = el roble",
+      "on_screen_text_en": "Frazer: Baldr = the oak",
+      "asset_filename": "frames/scene_004.jpg",
+      "sfx": [],
+      "source_ids": [
+        "SRC-003"
+      ],
+      "image_credit": "Golden bough. J. M. W. Turner. Public domain. https://commons.wikimedia.org/wiki/File:Golden_bough.jpg",
+      "image_caption_es": "La rama dorada, J. M. W. Turner (1834), Tate Britain.",
+      "visual_description": "File:Golden bough.jpg",
+      "image_prompt": "NO IA: archivo de Wikimedia Commons «Golden bough.jpg» (Public domain); recorte vertical 9:16 con movimiento lento, sin generar imagen."
+    },
+    {
+      "id": "scene_005",
+      "arc": "desarrollo",
+      "duration_seconds": 10.0,
+      "duration_seconds_en": 8.5,
+      "narration": "En el poema Völuspá, cuando el mundo acaba, la tierra verde vuelve a salir del mar, los campos sin sembrar dan fruto y Baldr regresa.",
+      "narration_en": "In the poem Völuspá, when the world ends, green earth rises again from the sea, unsown fields bear fruit, and Baldr returns.",
+      "on_screen_text": "El mundo acaba… y vuelve",
+      "on_screen_text_en": "The world ends… and returns",
+      "asset_filename": "frames/scene_005.jpg",
+      "sfx": [],
+      "source_ids": [
+        "SRC-004"
+      ],
+      "image_credit": "Johannes gehrts ragnarok mindre. Johannes Gehrts. Public domain. https://commons.wikimedia.org/wiki/File:Johannes_gehrts_ragnarok_mindre.JPG",
+      "image_caption_es": "Ragnarök, Johannes Gehrts (1901).",
+      "visual_description": "File:Johannes gehrts ragnarok mindre.JPG",
+      "image_prompt": "NO IA: archivo de Wikimedia Commons «Johannes gehrts ragnarok mindre.JPG» (Public domain); recorte vertical 9:16 con movimiento lento, sin generar imagen."
+    },
+    {
+      "id": "scene_006",
+      "arc": "cierre_historia",
+      "duration_seconds": 12.0,
+      "duration_seconds_en": 10.5,
+      "narration": "Pero la Edda se puso por escrito en el siglo trece, ya en tiempos cristianos, y Plinio no nombra a Baldr. Unir las piezas es lectura de Frazer, no un dato.",
+      "narration_en": "But the Edda was written down in the thirteenth century, in Christian times, and Pliny never mentions Baldr. Joining the pieces is Frazer's reading, not a fact.",
+      "on_screen_text": "Lectura de Frazer, no dato",
+      "on_screen_text_en": "Frazer's reading, not a fact",
+      "asset_filename": "frames/scene_006.jpg",
+      "sfx": [],
+      "source_ids": [
+        "SRC-001",
+        "SRC-004"
+      ],
+      "image_credit": "AM 738 4to, 36v, BW Baldr. Autor desconocido. Public domain. https://commons.wikimedia.org/wiki/File:AM_738_4to,_36v,_BW_Baldr.jpeg",
+      "image_caption_es": "Baldr, manuscrito islandés AM 738 4to (hacia 1680), Instituto Árni Magnússon.",
+      "visual_description": "File:AM 738 4to, 36v, BW Baldr.jpeg",
+      "image_prompt": "NO IA: archivo de Wikimedia Commons «AM 738 4to, 36v, BW Baldr.jpeg» (Public domain); recorte vertical 9:16 con movimiento lento, sin generar imagen."
+    },
+    {
+      "id": "scene_007",
+      "arc": "cierre_historia",
+      "duration_seconds": 8.5,
+      "duration_seconds_en": 5.0,
+      "narration": "El 21 de diciembre, a las 14:50 en la Ciudad de México, llega el solsticio de invierno: el día más corto.",
+      "narration_en": "On December 21, at 20:50 UTC, comes the winter solstice: the shortest day.",
+      "on_screen_text": "21 dic: solsticio de invierno",
+      "on_screen_text_en": "Dec. 21: winter solstice",
+      "asset_filename": "frames/scene_007.jpg",
+      "sfx": [],
+      "source_ids": [
+        "SRC-005"
+      ],
+      "image_credit": "Viscum album - Köhler–s Medizinal-Pflanzen-281. Walther Otto Müller. Public domain. https://commons.wikimedia.org/wiki/File:Viscum_album_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-281.jpg",
+      "image_caption_es": "Muérdago (Viscum album), lámina de Köhler's Medizinal-Pflanzen.",
+      "visual_description": "File:Viscum album - Köhler–s Medizinal-Pflanzen-281.jpg",
+      "image_prompt": "NO IA: archivo de Wikimedia Commons «Viscum album - Köhler–s Medizinal-Pflanzen-281.jpg» (Public domain); recorte vertical 9:16 con movimiento lento, sin generar imagen."
+    },
+    {
+      "id": "scene_008",
+      "arc": "reflexion_o_pregunta",
+      "duration_seconds": 4.5,
+      "duration_seconds_en": 5.0,
+      "narration": "¿Qué repites al colgar un muérdago? Esto fue Datos y ociosidades.",
+      "narration_en": "What do you repeat when you hang mistletoe? That was Datos y ociosidades.",
+      "on_screen_text": "Serie: tiempo cíclico",
+      "on_screen_text_en": "Series: cyclical time",
+      "asset_filename": "frames/scene_008.jpg",
+      "sfx": [],
+      "source_ids": [
+        "SRC-003"
+      ],
+      "image_credit": "Les Très Riches Heures du duc de Berry décembre. Barthélemy d'Eyck. Public domain. https://commons.wikimedia.org/wiki/File:Les_Tr%C3%A8s_Riches_Heures_du_duc_de_Berry_d%C3%A9cembre.jpg",
+      "image_caption_es": "Diciembre, Les Très Riches Heures du duc de Berry.",
+      "visual_description": "File:Les Très Riches Heures du duc de Berry décembre.jpg",
+      "image_prompt": "NO IA: archivo de Wikimedia Commons «Les Très Riches Heures du duc de Berry décembre.jpg» (Public domain); recorte vertical 9:16 con movimiento lento, sin generar imagen."
+    }
+  ],
+  "cortinilla_fuentes": {
+    "duration_seconds": 6,
+    "titulo": "Fuentes",
+    "aviso": "Imágenes de dominio público o con licencia libre (Wikimedia Commons). Voz sintética. Audio sintetizado.",
+    "firma": "Datos y ociosidades · @datosyociosidades",
+    "bg_rgb": [
+      18,
+      16,
+      14
+    ],
+    "source_ids_visibles": [
+      "SRC-001",
+      "SRC-002",
+      "SRC-003",
+      "SRC-004"
+    ]
+  },
+  "export": {
+    "filename": "capsula.mp4",
+    "resolution": "1080x1920",
+    "fps": 30,
+    "loudness_lufs": -14,
+    "plano_seconds": 4.0
+  },
+  "estructura": "arco_narrativo",
+  "hook_type": "afirmacion",
+  "tipo_titulo": "pregunta",
+  "estado": "PROPUESTA — sin render, sin subir, sin programar"
+}

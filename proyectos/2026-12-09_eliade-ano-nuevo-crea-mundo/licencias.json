@@ -1,0 +1,134 @@
+{
+  "project_id": "2026-12-09_eliade-ano-nuevo-crea-mundo",
+  "musica": {
+    "cama": "pulso",
+    "origen": "síntesis propia (scripts/cama_sonora.py, numpy)",
+    "licencia": "obra propia de Datos y ociosidades",
+    "generada_por_ia": false
+  },
+  "sfx": {},
+  "imagenes": {
+    "origen": "Wikimedia Commons (dominio público o CC, créditos en metadata)",
+    "estilo": "pintura_historica_commons",
+    "realista": false,
+    "generada_por_ia": false,
+    "archivos": [
+      {
+        "file": "File:Glazed Brick Relief of Mushkhushshu Dragon from Ishtar Gate Babylon Istanbul Archaeology Museums.jpg",
+        "titulo": "Glazed Brick Relief of Mushkhushshu Dragon from Ishtar Gate Babylon Istanbul Archaeology Museums",
+        "autor": "Ywpark2003",
+        "licencia": "CC0",
+        "url": "https://commons.wikimedia.org/wiki/File:Glazed_Brick_Relief_of_Mushkhushshu_Dragon_from_Ishtar_Gate_Babylon_Istanbul_Archaeology_Museums.jpg",
+        "w": 2800,
+        "h": 1417,
+        "accessed": "2026-11-28",
+        "generada_por_ia": false,
+        "requiere_credito": false
+      },
+      {
+        "file": "File:Enuma elish AN1926.373.jpg",
+        "titulo": "Enuma elish AN1926.373",
+        "autor": "Zunkir",
+        "licencia": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Enuma_elish_AN1926.373.jpg",
+        "w": 2219,
+        "h": 4654,
+        "accessed": "2026-11-28",
+        "generada_por_ia": false,
+        "requiere_credito": true
+      },
+      {
+        "file": "File:Chaos Monster and Sun God.png",
+        "titulo": "Chaos Monster and Sun God",
+        "autor": "editor Austen Henry Layard , drawing by L. Gruner",
+        "licencia": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Chaos_Monster_and_Sun_God.png",
+        "w": 2012,
+        "h": 1484,
+        "accessed": "2026-11-28",
+        "generada_por_ia": false,
+        "requiere_credito": false
+      },
+      {
+        "file": "File:Mircea Eliade from Horia Photo 3 English (cropped).jpg",
+        "titulo": "Mircea Eliade from Horia Photo 3 English (cropped)",
+        "autor": "TanasescuFamily",
+        "licencia": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Mircea_Eliade_from_Horia_Photo_3_English_(cropped).jpg",
+        "w": 459,
+        "h": 552,
+        "accessed": "2026-11-28",
+        "generada_por_ia": false,
+        "requiere_credito": true
+      },
+      {
+        "file": "File:Les Très Riches Heures du duc de Berry septembre.jpg",
+        "titulo": "Les Très Riches Heures du duc de Berry septembre",
+        "autor": "Limbourg brothers / Barthélemy d'Eyck / Jean Colombe",
+        "licencia": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Les_Tr%C3%A8s_Riches_Heures_du_duc_de_Berry_septembre.jpg",
+        "w": 1159,
+        "h": 1922,
+        "accessed": "2026-11-28",
+        "generada_por_ia": false,
+        "requiere_credito": false
+      },
+      {
+        "file": "File:Fra Angelico - The Annunciation - WGA0455.jpg",
+        "titulo": "Fra Angelico - The Annunciation - WGA0455",
+        "autor": "Fra Angelico",
+        "licencia": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Fra_Angelico_-_The_Annunciation_-_WGA0455.jpg",
+        "w": 1200,
+        "h": 950,
+        "accessed": "2026-11-28",
+        "generada_por_ia": false,
+        "requiere_credito": false
+      },
+      {
+        "file": "File:Les Très Riches Heures du duc de Berry mars.jpg",
+        "titulo": "Les Très Riches Heures du duc de Berry mars",
+        "autor": "Limbourg brothers / Barthélemy d'Eyck",
+        "licencia": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Les_Tr%C3%A8s_Riches_Heures_du_duc_de_Berry_mars.jpg",
+        "w": 1144,
+        "h": 1847,
+        "accessed": "2026-11-28",
+        "generada_por_ia": false,
+        "requiere_credito": false
+      },
+      {
+        "file": "File:Les Très Riches Heures du duc de Berry - Janvier.jpg",
+        "titulo": "Les Très Riches Heures du duc de Berry - Janvier",
+        "autor": "Limbourg brothers",
+        "licencia": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Les_Tr%C3%A8s_Riches_Heures_du_duc_de_Berry_-_Janvier.jpg",
+        "w": 1283,
+        "h": 1442,
+        "accessed": "2026-11-28",
+        "generada_por_ia": false,
+        "requiere_credito": false
+      }
+    ]
+  },
+  "voz": {
+    "motor": "Microsoft Edge TTS",
+    "voz": "es-MX-JorgeNeural",
+    "motor_en": "Kokoro (am_adam)",
+    "nota": "voz sintética; no imita a una persona real"
+  },
+  "capas_datos": {
+    "tipos": [],
+    "mapa_base": null,
+    "render": "matplotlib (propio)"
+  },
+  "fuentes_datos": [
+    "http://users.uoa.gr/~cdokou/MythLitMA/Eliade-EternalReturn.pdf",
+    "https://www.livius.org/articles/religion/akitu",
+    "https://ora.ox.ac.uk/objects/uuid:ef3bd89d-69c6-46c3-925d-42df59e12fa6/files/svh53wz218",
+    "https://www.usccb.org/prayer-worship/liturgical-year/advent",
+    "https://www.nybooks.com/articles/1966/10/20/sermons-by-a-man-on-a-ladder/",
+    "https://www.usccb.org/prayer-worship/liturgical-year/advent"
+  ],
+  "verificacion": "Licencias leídas de la API de Wikimedia Commons el 2026-11-28; reconfirmar al renderizar."
+}

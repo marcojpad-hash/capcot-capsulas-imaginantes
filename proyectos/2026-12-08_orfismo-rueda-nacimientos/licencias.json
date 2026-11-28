@@ -1,0 +1,135 @@
+{
+  "project_id": "2026-12-08_orfismo-rueda-nacimientos",
+  "musica": {
+    "cama": "pulso",
+    "origen": "síntesis propia (scripts/cama_sonora.py, numpy)",
+    "licencia": "obra propia de Datos y ociosidades",
+    "generada_por_ia": false
+  },
+  "sfx": {},
+  "imagenes": {
+    "origen": "Wikimedia Commons (dominio público o CC, créditos en metadata)",
+    "estilo": "pintura_historica_commons",
+    "realista": false,
+    "generada_por_ia": false,
+    "archivos": [
+      {
+        "file": "File:A small temple beneath the Bodhi tree, Bodh Gaya, c. 1810.jpg",
+        "titulo": "A small temple beneath the Bodhi tree, Bodh Gaya, c. 1810",
+        "autor": "Autor desconocido",
+        "licencia": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:A_small_temple_beneath_the_Bodhi_tree,_Bodh_Gaya,_c._1810.jpg",
+        "w": 924,
+        "h": 712,
+        "accessed": "2026-11-28",
+        "generada_por_ia": false,
+        "requiere_credito": false
+      },
+      {
+        "file": "File:Orphic Gold Tablet (Hipponion-Museo Archeologico Statale Capialbi, Vibo Valentia).jpg",
+        "titulo": "Orphic Gold Tablet (Hipponion-Museo Archeologico Statale Capialbi, Vibo Valentia)",
+        "autor": "Autor desconocido",
+        "licencia": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Orphic_Gold_Tablet_(Hipponion-Museo_Archeologico_Statale_Capialbi,_Vibo_Valentia).jpg",
+        "w": 561,
+        "h": 318,
+        "accessed": "2026-11-28",
+        "generada_por_ia": false,
+        "requiere_credito": false
+      },
+      {
+        "file": "File:Orphic Gold Tablet (Petelia - British Museum, London).jpg",
+        "titulo": "Orphic Gold Tablet (Petelia - British Museum, London)",
+        "autor": "Jononmac46",
+        "licencia": "CC BY-SA 3.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Orphic_Gold_Tablet_(Petelia_-_British_Museum,_London).jpg",
+        "w": 4000,
+        "h": 3000,
+        "accessed": "2026-11-28",
+        "generada_por_ia": false,
+        "requiere_credito": true
+      },
+      {
+        "file": "File:Simplicius Commentary on Aristotle De Caelo.jpg",
+        "titulo": "Simplicius Commentary on Aristotle De Caelo",
+        "autor": "Simplicius of Cilicia, copied in the 14th century",
+        "licencia": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Simplicius_Commentary_on_Aristotle_De_Caelo.jpg",
+        "w": 1141,
+        "h": 1699,
+        "accessed": "2026-11-28",
+        "generada_por_ia": false,
+        "requiere_credito": false
+      },
+      {
+        "file": "File:Pindar Musei Capitolini MC586.jpg",
+        "titulo": "Pindar Musei Capitolini MC586",
+        "autor": "Autor desconocido",
+        "licencia": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Pindar_Musei_Capitolini_MC586.jpg",
+        "w": 1850,
+        "h": 2800,
+        "accessed": "2026-11-28",
+        "generada_por_ia": false,
+        "requiere_credito": false
+      },
+      {
+        "file": "File:Orpheus and the Thracian woman, Attic red-figure neck-amphora, by the Painter of the Berlin Hydria, 460-450 BC - Museo Gregoriano Etrusco - Vatican Museums - DSC01028.jpg",
+        "titulo": "Orpheus and the Thracian woman, Attic red-figure neck-amphora, by the Painter of the Berlin Hydria, 460-450 BC - Museo Gregoriano Etrusco - Vatican Museums - DSC01028",
+        "autor": "Daderot",
+        "licencia": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Orpheus_and_the_Thracian_woman,_Attic_red-figure_neck-amphora,_by_the_Painter_of_the_Berlin_Hydria,_460-450_BC_-_Museo_Gregoriano_Etrusco_-_Vatican_Museums_-_DSC01028.jpg",
+        "w": 3275,
+        "h": 5432,
+        "accessed": "2026-11-28",
+        "generada_por_ia": false,
+        "requiere_credito": false
+      },
+      {
+        "file": "File:Wheel of Existence.jpg",
+        "titulo": "Wheel of Existence",
+        "autor": "Eastern Tibetan origin",
+        "licencia": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Wheel_of_Existence.jpg",
+        "w": 889,
+        "h": 1200,
+        "accessed": "2026-11-28",
+        "generada_por_ia": false,
+        "requiere_credito": false
+      },
+      {
+        "file": "File:Arnold Böcklin - The Isle of the Dead - WGA3029.jpg",
+        "titulo": "Arnold Böcklin - The Isle of the Dead - WGA3029",
+        "autor": "Arnold Böcklin",
+        "licencia": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Arnold_B%C3%B6cklin_-_The_Isle_of_the_Dead_-_WGA3029.jpg",
+        "w": 1431,
+        "h": 770,
+        "accessed": "2026-11-28",
+        "generada_por_ia": false,
+        "requiere_credito": false
+      }
+    ]
+  },
+  "voz": {
+    "motor": "Microsoft Edge TTS",
+    "voz": "es-MX-JorgeNeural",
+    "motor_en": "Kokoro (am_adam)",
+    "nota": "voz sintética; no imita a una persona real"
+  },
+  "capas_datos": {
+    "tipos": [],
+    "mapa_base": null,
+    "render": "matplotlib (propio)"
+  },
+  "fuentes_datos": [
+    "https://www.hds.harvard.edu/community-life/religious-and-spiritual-life/multifaith-calendar",
+    "https://assets.cambridge.org/97805215/18314/excerpt/9780521518314_excerpt.htm",
+    "https://bmcr.brynmawr.edu/2008/2008.10.16/",
+    "https://bmcr.brynmawr.edu/2008/2008.10.16/",
+    "https://www.hellenicgods.org/orphic-fragment-230---otto-kern",
+    "https://en.wikisource.org/wiki/Pindar_and_Anacreon/Pindar/Olympic_Odes/2",
+    "https://www.hds.harvard.edu/community-life/religious-and-spiritual-life/multifaith-calendar"
+  ],
+  "verificacion": "Licencias leídas de la API de Wikimedia Commons el 2026-11-28; reconfirmar al renderizar."
+}
