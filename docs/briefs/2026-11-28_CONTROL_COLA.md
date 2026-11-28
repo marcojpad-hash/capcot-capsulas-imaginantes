@@ -263,3 +263,11 @@ No se modificó ni canceló ningún video. La ausencia de una entrada en el snap
 - RSS ScienceDaily ciencia y Google Trends RSS México devolvieron `URLError(gaierror(-3, 'Temporary failure in name resolution'))`. No se interpreta como caída global de los servicios.
 - Respaldo Exa en fuentes oficiales: Crossref REST y resolvedor DOI verificaron cuatro artículos de Nature/Nature Physics/Nature Cell Biology/Nature Astronomy/Nature Plants. Se añadieron al radar tres alternativas no seleccionadas (agregados bacterianos, VEXAS y materia oscura); el candidato de materia oscura supera 48 h y el de PM2.5/greening se marcó `NO_DUPLICAR` por solapamiento con la rotación.
 - No se creó storyboard adicional: el slot 28-nov 23:30 ya está asignado a llantas/albedo y no se abrió otro slot. Radar actualizado y leído de vuelta en commit `06fc5b0ebcec0a4a035fd5fa2a2038e321af5605`.
+
+
+### Precisión de producción preexistente — main / Bacterias 27-nov 17:00
+
+- `main/proyectos/2026-11-27_bacterias-vuelta-oxigeno/programacion.json` confirma `publish_at=2026-11-27T23:00:00Z` (17:00 CDMX) y `estado=programado_sin_montar`. Por existir programación, clasificar `PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR`, aunque no se verificó un video_id ni un montaje terminado.
+- El storyboard de main referencia `asset_filename` y `export.filename`; la carpeta `salidas/2026-11-27_bacterias-vuelta-oxigeno/` no existe y los medios no aparecen en el árbol: `MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO`.
+- La copia anidada de `cola/entrada/` contiene `PLACEHOLDER` en `storyboard.json` y `fuentes.md`; no es un paquete JSON dispatchable. `cola/estado` devuelve 404.
+- El snapshot de miniaturas registra además `_slEv21gbpM` a 17:00; se conserva como posible colisión interna del plan de main, sin cancelar ni redispatchar. No hay un proyecto de feature a las 17:00, por lo que no se declara `CONFLICTO_DE_SLOT_ENTRE_RAMAS` para Bacterias.
