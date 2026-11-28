@@ -2,11 +2,11 @@
 
 **Serie:** Datos y ociosidades  
 **Ventana revisada:** slot 23:30 CDMX  
-**Estado:** sin candidato autorizado para storyboard. El slot aparece libre en plan_semana y rotación; no se crea storyboard hasta que una fuente primaria, su frescura, el mapa y la verificación DOI/URL sean suficientes.
+**Estado:** borrador de investigación creado en proyectos para el slot libre 23:30 CDMX; no apto para promoción hasta completar DOI/Crossref, validador estructural y QA narrativo independiente.
 
 ## Recuperación de tendencias
 
-Los RSS científicos de scripts/tendencias.py y Google Trends RSS México fallaron en el entorno de lectura. Los errores literales y el respaldo HTML oficial están registrados en 2026-11-27_RADAR_CAPCOT.md. La página HTML de Google Trends mostró principalmente clima, deportes y búsquedas generales; no aportó un dato científico verificable.
+Los RSS científicos de scripts/tendencias.py y Google Trends RSS México fallaron en el lector de esta ejecución. El respaldo HTML oficial de Google Trends sí mostró 254 tendencias; “agujero de la capa de ozono” apareció con 2K+ búsquedas y actividad de hace 13 h. Es una señal secundaria, no evidencia científica. La fuente ESA asociada está fechada 26-nov sin hora verificable; no se puede garantizar que siga dentro de 48 h para el slot 28-nov 23:30, por lo que no se selecciona.
 
 ## Candidatos recientes
 
@@ -34,14 +34,17 @@ Los RSS científicos de scripts/tendencias.py y Google Trends RSS México fallar
 - **Estado:** NO_DUPLICAR. La línea temática de enzimas bacterianas/antimicrobianos se solapa con PAV1 y el proyecto Bacterias de la rotación activa.
 - **Decisión:** conservar como candidato observado, no ocupar un slot con un tema redundante.
 
-### 4. Dos grupos humanos arcaicos en el sur de China
+### 4. Partículas de desgaste de neumáticos oscurecen la criosfera
 
-- **Observación:** artículo primario de Nature publicado el 25-nov-2026; el PDF completo fue accesible. Informa cuatro dientes de dos cuevas de Guangxi; dos dientes de Longchuandong muestran afinidad denisovana y los de Chuanshandong quedan como Homo arcaico no resuelto. Los autores califican la inferencia evolutiva como preliminar.
-- **Identificador:** DOI 10.1038/s41586-026-11341-6.
-- **Fuente primaria:** https://www.nature.com/articles/s41586-026-11341-6.pdf
-- **Mapa:** la Figura 1 ubica aproximadamente Chuanshandong cerca de 108°E, 20°N y Longchuandong cerca de 110°E, 21°N. Son coordenadas aproximadas leídas del mapa del paper, no GPS exacto de las entradas de las cuevas.
-- **Estado:** OUT_OF_WINDOW para 28-nov 23:30: el paper está fechado 25-nov y no puede acreditarse que siga dentro de las 48 horas del slot. Además, PENDING_CROSSREF: api.crossref.org devolvió Internal Error y doi.org no completó una resolución verificable en este entorno.
-- **Decisión:** no usar para el dato del día 28; conservar para una ventana posterior si la regla de frescura lo permite y se completa Crossref.
+- **Observación:** artículo primario de Nature Climate Change publicado el 27-nov-2026. El texto indexado de la página de Nature expone el resumen, las figuras globales 1–3 y la disponibilidad de datos. El estudio combina mediciones ópticas de partículas individuales, cálculos de transferencia radiativa en nieve y simulaciones globales del sistema terrestre.
+- **Resultados reportados:** a 550 nm, las partículas absorben aproximadamente la mitad de la radiación por unidad de masa que el carbono negro; el modelo estima 1.22 ± 0.91 ng/g de concentración media anual en la criosfera, reducción de albedo de 0.16 ± 0.12%, forzamiento radiativo de 0.015 ± 0.012 W/m² (~17.4% del carbono negro) y aceleración de fusión de 0.19 ± 0.14 mm de equivalente de agua por día.
+- **Identificador:** DOI 10.1038/s41558-026-02800-z.
+- **Datos primarios:** Zenodo, registro 23299235, publicado 11-oct-2026; contiene source data de figuras 1–3, tablas y código. URL del registro accesible: https://zenodo.org/records/23299235.
+- **Frescura:** publicado 27-nov-2026; para el slot 28-nov 23:30, la edad máxima compatible con la fecha editorial es 47.5 h.
+- **DOI/Crossref:** PENDING_CROSSREF. La apertura directa de Nature devolvió HTTP 500 con redirección a idp.nature.com; api.crossref.org y doi.org no fueron accesibles en este entorno. El artículo primario sí quedó recuperado desde el índice de Nature, pero no se atribuye verificación Crossref.
+- **Mapa:** las figuras 2–3 presentan distribución global modelada de emisiones, transporte, depósito y efectos en la criosfera. Se usa únicamente la extensión cartográfica global [-90,-180,90,180], sin pines ni puntos de muestreo inventados.
+- **Estado:** candidato seleccionado para borrador textual en proyectos/2026-11-28_llantas-hielo-albedo/storyboard.json; no apto para promoción hasta completar DOI/Crossref, validador estructural y QA narrativo independiente.
+- **Decisión:** desarrollar solo el borrador en proyectos; no crear cola, medios ni handoff.
 
 ## Separación de evidencia
 
@@ -86,3 +89,29 @@ Los RSS científicos de scripts/tendencias.py y Google Trends RSS México fallar
 - Crossref REST: URL https://api.crossref.org/works/10.1038%2Fs41597-026-08658-2 is not accessible via this tool. El DOI aparece en la ficha editorial primaria, pero esto no equivale a verificación Crossref.
 - Estado sin cambio: PENDING_MAP + PENDING_CROSSREF. El candidato sigue observado, no seleccionado. El slot 2026-11-28 23:30 continúa libre según el último cruce de ocupación; el commit más reciente de main (ec466b5e08bf2d0668a9535fb3ed7fe65c64bda9) solo cambió data/endscreens_rotacion.json, sin modificar proyectos, cola, publicaciones ni programación.
 - Decisión: no storyboard, no handoff, no medios. La falta de asignación muestra→institución y de verificación Crossref mantiene cerradas las compuertas.
+
+
+## Reintento RSS y Trends — 27-nov-2026, cierre del día
+
+- Se inspeccionó scripts/tendencias.py y se intentó abrir cada URL FEEDS_CIENCIA y el RSS de Google Trends México. Errores literales del lector web:
+- ScienceDaily ciencia, salud y espacio: HTTP 400, Unsupported content-type: application/xml.
+- Phys.org: HTTP 400, Unsupported content-type: text/xml.
+- NASA: HTTP 400, Unsupported content-type: application/rss+xml.
+- ESA: HTTP 404, Not Found.
+- Nature: HTTP 400, Unsupported content-type: application/rss+xml.
+- EurekAlert: URL no accesible mediante esta herramienta.
+- SINC: URL no accesible mediante esta herramienta.
+- UNAM Global: HTTP 400, Unsupported content-type: application/rss+xml.
+- Google Trends RSS (geo=MX): URL no accesible mediante esta herramienta.
+- Respaldo oficial: https://trends.google.com/trending?hl=es-MX; el índice devolvió 254 tendencias y “agujero de la capa de ozono” con 2K+ búsquedas, activo desde hace 13 h. La tendencia no acredita la hora de publicación de la nota ESA del 26-nov.
+- La ejecución local de scripts/tendencias.py no pudo realizarse porque el intento de sparse clone falló: Could not resolve host: github.com. No se atribuye una corrida del script.
+
+## Backlog fuera de la ventana del slot
+
+- Dos grupos humanos arcaicos en el sur de China, DOI 10.1038/s41586-026-11341-6, publicado 25-nov-2026. Se conserva como backlog, no como candidato del slot 28-nov 23:30: no puede acreditarse frescura ≤48 h; Crossref sigue pendiente y las coordenadas de la figura son aproximadas, no GPS de las cuevas.
+
+## Revalidación final del slot 28-nov-2026 23:30
+
+- La programación/main sigue sin ocupar ese slot; el último commit de main revisado solo cambió data/endscreens_rotacion.json.
+- Borrador textual creado: 2026-11-28_llantas-hielo-albedo/storyboard.json. Siete escenas, 221 palabras de narración, 78 s de escenas + 6 s de cortinilla = 84 s; estilo stencil_banksy, sin assets.
+- Estado: BORRADOR_EN_PROYECTOS_NO_APTO_PARA_PROMOCION. DOI del artículo PENDING_CROSSREF; validador estructural real no ejecutado por fallo DNS; narrative_qa ausente por separación de funciones. No se creó cola ni se disparó workflow.
