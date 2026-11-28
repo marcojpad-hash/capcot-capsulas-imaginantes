@@ -116,3 +116,12 @@ Los RSS científicos de scripts/tendencias.py y Google Trends RSS México fallar
 - Borrador textual creado: 2026-11-28_llantas-hielo-albedo/storyboard.json. Siete escenas, 225 palabras de narración, 78 s de escenas + 6 s de cortinilla = 84 s; estilo stencil_banksy, sin assets.
 - Estado: BORRADOR_EN_PROYECTOS_NO_APTO_PARA_PROMOCION. DOI del artículo PENDING_CROSSREF; validador estructural real no ejecutado por fallo DNS; narrative_qa ausente por separación de funciones. No se creó cola ni se disparó workflow.
 - Storyboard commit verificado: fea121c6ef2412f4385ef92f83cdb796c55ce9c6; lectura de vuelta confirma 7 escenas, 225 palabras, 84 s totales, approved_assets=[], render NOT_GENERATED y ausencia de narrative_qa.
+
+
+## Verificación de handoff del borrador 2026-11-28_llantas-hielo-albedo
+
+- cola/estado/2026-11-28_llantas-hielo-albedo.json: HTTP 404 (GitHub Contents API, NOT_FOUND). Estado operativo registrado: RECEPCION_GROK_NO_CONFIRMADA. No se creó ni editó estado Grok.
+- Clasificación: NOT_DISPATCHABLE. Evidencia: el único archivo del proyecto está en proyectos/2026-11-28_llantas-hielo-albedo/storyboard.json; cola/entrada contiene .gitkeep y el directorio anidado 2026-11-09_dato-robot-ensambla-orbita, sin archivo plano 2026-11-28_llantas-hielo-albedo.json. El workflow solo selecciona JSON planos de primer nivel.
+- cola/bloqueados no contiene este project_id; salidas no contiene este project_id; el directorio publicaciones/ devuelve 404 y data/publicaciones.json en main no contiene el proyecto. No hay procesamiento/publicación previa detectada para este borrador.
+- No hay medios referenciados: approved_assets=[] y export.render_status=NOT_GENERATED; MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO no aplica porque no se declara ningún medio.
+- No se promueve ni se crea cola/entrada. El borrador queda exclusivamente en proyectos hasta resolver DOI, validador estructural y QA narrativo independiente.
