@@ -1122,3 +1122,17 @@ Para los cuatro IDs, cola/estado/<project_id>.json devolvió 404 y ESTADO_EJECUC
 - El lote 5–7-nov conserva su auditoría vigente: 2 PASS y 10 FAIL; no se repitió QA ni se alteraron sus copias bloqueadas.
 
 No se modificaron main, cola/estado, secretos, permisos, medios, publicaciones, programación ni workflows. No se disparó Grok ni se generaron assets.
+
+
+## Integración de auditoría automática posterior — 27-nov-2026 16:52 CDMX
+
+Se incorporó el resultado del run Auditor CAPCOT 6c66c79b-88ec-832b-a795-630cd86aa966, completado 16:52 CDMX, posterior al corte anterior:
+
+- Inventario: 94 storyboards en proyectos; 23 narrative PASS, 28 FAIL y 43 sin PASS válido/QA pendiente. El lote 5–7-nov conserva 2 PASS y 10 FAIL; 85 escenas, 510 campos dramáticos ausentes, 75 escenas sin SFX y 0/12 estructuralmente aptos. No se repitió QA ni se modificaron esas copias.
+- PAV1 e Intermareal tienen SFX y ambiente en 8/8 escenas; ambos carecen de slot_cesta. Este campo ausente se suma a sus bloqueos ya registrados. No se infirió que SFX/ambiente estuvieran vacíos.
+- 18 estados individuales Grok consultados por el auditor devolvieron 404. No hay recepción confirmada. El último dispatch observado (1-nov) registró literalmente “Falta configurar GROK_WEBHOOK_URL”; GROK_WEBHOOK_TOKEN no llegó a comprobarse. Esto no demuestra el estado actual de los secretos; no se consultaron valores.
+- Main registra cinco paquetes para 27-nov, con tres ventanas autorizadas: Microondas 07:00, Bacterias 17:00 y Stubbs 23:30. Los reworks heredados de Miel y Ola Azul conservan riesgo de duplicación entre IDs antiguos y nuevos; no se cancelaron ni modificaron.
+- PRs abiertos observados: #3, #4, #6, #7, #8, #9, #13, #14 y #15; ninguno se fusionó. PR #15 conserva Semgrep FAILURE (26 hallazgos); PR #13 no acredita QA narrativo en frío; PR #14 espera revisión independiente posterior a la corrección.
+- Esta integración no sustituye la revalidación puntual de 22:37: los cuatro storyboard actuales siguen sin estado Grok individual y no fueron promovidos. La validación Python estructural no se ejecutó en este run.
+
+No se disparó dispatch, no se enviaron payloads, no se modificaron estados Grok, programación, publicaciones, medios, data/*.json, secretos ni permisos.
