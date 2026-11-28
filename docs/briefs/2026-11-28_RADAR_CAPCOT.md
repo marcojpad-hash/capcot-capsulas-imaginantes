@@ -113,5 +113,6 @@ Los RSS científicos de scripts/tendencias.py y Google Trends RSS México fallar
 ## Revalidación final del slot 28-nov-2026 23:30
 
 - La programación/main sigue sin ocupar ese slot; el último commit de main revisado solo cambió data/endscreens_rotacion.json.
-- Borrador textual creado: 2026-11-28_llantas-hielo-albedo/storyboard.json. Siete escenas, 221 palabras de narración, 78 s de escenas + 6 s de cortinilla = 84 s; estilo stencil_banksy, sin assets.
+- Borrador textual creado: 2026-11-28_llantas-hielo-albedo/storyboard.json. Siete escenas, 225 palabras de narración, 78 s de escenas + 6 s de cortinilla = 84 s; estilo stencil_banksy, sin assets.
 - Estado: BORRADOR_EN_PROYECTOS_NO_APTO_PARA_PROMOCION. DOI del artículo PENDING_CROSSREF; validador estructural real no ejecutado por fallo DNS; narrative_qa ausente por separación de funciones. No se creó cola ni se disparó workflow.
+- Storyboard commit verificado: fea121c6ef2412f4385ef92f83cdb796c55ce9c6; lectura de vuelta confirma 7 escenas, 225 palabras, 84 s totales, approved_assets=[], render NOT_GENERATED y ausencia de narrative_qa.
