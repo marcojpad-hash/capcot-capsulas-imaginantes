@@ -344,5 +344,23 @@
     "El texto primario fue recuperado desde el índice de Nature; la lectura directa completa de la página quedó bloqueada. El registro Zenodo de datos sí fue abierto y contiene source data de figuras 1–3.",
     "El mapa usa la extensión global de las figuras 2–3; no representa un sitio de muestreo ni una distribución uniforme.",
     "No narrative_qa; no promoción; no cola; no medios; no publicación."
-  ]
+  ],
+  "narrative_qa": {
+    "status": "PASS",
+    "score": 90,
+    "reviewer_role": "auditor_capcot_independiente",
+    "reviewer_model": "GPT-6",
+    "review_basis": "lectura_en_frio_solo_narracion",
+    "checks": {
+      "pregunta_central_reconstruible": true,
+      "apertura_in_medias_res": true,
+      "progresion_por_escena": true,
+      "transiciones_causales": true,
+      "giro_cientifico_explicado": true,
+      "limite_evidencia_explicito": true,
+      "payoff_cierre_apertura": true
+    },
+    "critical_flags": [],
+    "notes": "Lectura en frío de la narración concatenada, sin usar título, resumen, arco, notas ni narrative_contract. La pregunta sobre el transporte de partículas de desgaste y la fusión de nieve se reconstruye; la apertura presenta la anomalía en curso; la progresión enlaza absorción óptica, depósito, albedo, forzamiento y fusión; los resultados se sitúan como modelados, se explicita variación regional y se limita su poder explicativo; el cierre devuelve la atención a la nieve lejos de la carretera."
+  }
 }
