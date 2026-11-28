@@ -2,7 +2,7 @@
 
 **Serie:** Datos y ociosidades  
 **Ventana revisada:** slot 23:30 CDMX  
-**Estado actual:** storyboard textual creado en `proyectos/2026-11-28_llantas-hielo-albedo/storyboard.json` para 23:30 CDMX (7 escenas, 229 palabras, 84 s); QA PASS/90 y DOI/Crossref + resolvedor verificados. No promocionable hasta ejecutar el validador estructural real y confirmar el estado Grok individual.
+**Estado actual:** storyboard textual en `proyectos/2026-11-28_llantas-hielo-albedo/storyboard.json` (7 escenas, 229 palabras, 84 s); QA PASS/90 y fuentes registradas como `VERIFICADO_CROSSREF` / `VERIFICADO_RESOLVEDOR`. **NOT_DISPATCHABLE** por conflicto con la reserva y producción preexistente de Tama en main; además, el validador estructural real no se ejecutó y el estado Grok devuelve 404.
 
 ## Recuperación de tendencias
 
@@ -41,9 +41,9 @@ Los RSS científicos de scripts/tendencias.py y Google Trends RSS México fallar
 - **Identificador:** DOI 10.1038/s41558-026-02800-z.
 - **Datos primarios:** Zenodo, registro 23299235, publicado 11-oct-2026; contiene source data de figuras 1–3, tablas y código. URL del registro accesible: https://zenodo.org/records/23299235.
 - **Frescura:** publicado 27-nov-2026; para el slot 28-nov 23:30, la edad máxima compatible con la fecha editorial es 47.5 h.
-- **DOI/Crossref:** PENDING_CROSSREF. La apertura directa de Nature devolvió HTTP 500 con redirección a idp.nature.com; api.crossref.org y doi.org no fueron accesibles en este entorno. El artículo primario sí quedó recuperado desde el índice de Nature, pero no se atribuye verificación Crossref.
+- **DOI/Crossref:** SRC-001 figura `VERIFICADO_CROSSREF` en el storyboard vigente (commit `329fd501c48d3ac61f681212701fa6c50d209f0c`); SRC-002 figura `VERIFICADO_RESOLVEDOR`. No se ejecutó de nuevo `scripts/validar_storyboard.py --check-doi` en este corte.
 - **Mapa:** las figuras 2–3 presentan distribución global modelada de emisiones, transporte, depósito y efectos en la criosfera. Se usa únicamente la extensión cartográfica global [-90,-180,90,180], sin pines ni puntos de muestreo inventados.
-- **Estado:** candidato seleccionado para borrador textual en proyectos/2026-11-28_llantas-hielo-albedo/storyboard.json; no apto para promoción hasta completar DOI/Crossref, validador estructural y QA narrativo independiente.
+- **Estado:** borrador textual existente en proyectos/2026-11-28_llantas-hielo-albedo/storyboard.json; QA narrativo PASS/90 y fuentes con estados verificados en el JSON. No apto para handoff: el validador estructural real no se ejecutó y el mismo slot está reservado en main por Tama con render preexistente.
 - **Decisión:** desarrollar solo el borrador en proyectos; no crear cola, medios ni handoff.
 
 ## Separación de evidencia
@@ -51,7 +51,7 @@ Los RSS científicos de scripts/tendencias.py y Google Trends RSS México fallar
 - **Observación:** fechas, títulos, DOI y accesibilidad indicados arriba proceden de registros editoriales o del PDF primario cuando se especifica.
 - **Cálculo:** el paper de Denisovan fechado el 25-nov queda fuera de la ventana de 48 horas para el slot del 28-nov 23:30; el horario exacto de publicación no está disponible, por lo que no se presume elegibilidad.
 - **Inferencia:** la diversidad de temas no basta para seleccionar un candidato; la falta de texto primario, coordenadas o DOI verificado impide cerrar las compuertas.
-- **Recomendación:** mantener libre el slot 28-nov 23:30. No crear storyboard, no crear cola y no marcar preparado. Revaluar con una fuente primaria publicada dentro de la ventana, claims verificables y coordenadas sustentadas.
+- **Recomendación:** no crear otro storyboard ni cola. Llantas ocupa el slot 28-nov 23:30 en esta rama y main también lo reserva para Tama; resolver el conflicto corresponde al operador del calendario, no al investigador. No redispatchar ninguna de las dos piezas.
 
 ## Estado de producción — lectura de vuelta 28-nov-2026 06:03 CDMX
 
@@ -141,7 +141,7 @@ Los RSS científicos de scripts/tendencias.py y Google Trends RSS México fallar
 - Revisión narrativa independiente posterior, leyendo solo la narración concatenada: PASS, score 90/100, siete checks true, critical_flags vacías. El registro quedó en narrative_qa; la narración y sus claims no se modificaron.
 - Inspección estructural estática: 225 palabras, 7 escenas, 78 s de escenas + 6 s de cortinilla = 84 s; voz, prompt_base, mapa con bounds globales, capa de dato, fuentes por escena, ambiente/SFX, approved_assets=[] y export NOT_GENERATED presentes; no se encontraron rutas ni nombres de assets. Esto NO sustituye ejecutar scripts/validar_storyboard.py.
 - El workflow de validación disponible ejecutó solo el proyecto Kuroshio (run 46078959750) y no incluye --check-doi; no valida este storyboard. El validador real para llantas y la compuerta Crossref quedan pendientes.
-- El slot 2026-11-28 23:30 sigue libre en main: el paquete Mareo de main ocupa 17:00, no el slot fijo 23:30. El borrador sigue en proyectos; cola/estado devuelve 404, no existe entrada plana y no se crea handoff. Clasificación: NOT_DISPATCHABLE.
+- El slot 2026-11-28 23:30 no está libre en main: `proyectos/2026-11-23_animal-tama/metadata.json` reserva ese hueco y `render.log` registra producción de 85.11 s. El borrador sigue en proyectos; cola/estado devuelve 404, no existe entrada plana y no se crea handoff. Clasificación: NOT_DISPATCHABLE.
 - Estado final del borrador: QA narrativo PASS; estructura formal y DOI todavía no verificados por sus compuertas independientes; sin promoción, sin medios y sin publicación.
 
 
@@ -233,3 +233,12 @@ Corte de investigación: 2026-11-28 04:40 CDMX. Los cinco registros siguientes s
 - **Cálculo:** las edades de publicación se calcularon contra el corte 28-nov-2026 06:03 CDMX; el artículo de materia oscura supera 48 h, los de bacterias y VEXAS permanecen dentro de esa ventana.
 - **Inferencia:** los candidatos de bacterias y VEXAS son temáticamente distintos de llantas/albedo, liquen y rapaces; no se afirma que sus coordenadas de investigación estén verificadas.
 - **Recomendación:** no crear otro storyboard: el 28-nov 23:30 ya está asignado a llantas/albedo y los slots restantes de hoy tienen ocupación histórica. Conservar bacterias y VEXAS como alternativas para una fecha futura, sujetas a mapa sustentado y slot libre; no promoverlas ahora.
+
+
+## Corrección de auditoría — 2026-11-28 08:03 CDMX
+
+- **Slot 28-nov 23:30:** la rama main sí contiene una reserva concurrente para `2026-11-23_animal-tama`. Evidencia: metadata `hueco=2026-11-28 23:30` (blob `091b10c0e51cf19dcc0f69073cfdcdd2a495e4d3`) y guion con el mismo hueco (blob `455e98fbe46a9ba03d468374a9e08ffe770d5da1`). Quedan supersedidas las notas previas que afirmaban que main estaba libre.
+- Tama tiene procesamiento preexistente: `render.log` registra 85.11 s y `qa_es.json` contiene checks audiovisuales en true. El árbol GitHub no contiene el MP4 al que apunta la metadata; por tanto, para llantas/albedo se registra `CONFLICTO_DE_SLOT_ENTRE_RAMAS`, `PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR` y `MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO`. `publishAt_utc=null`; no se afirma publicación ni programación.
+- El storyboard de llantas sigue con 229 palabras, 7 escenas, 78 s + 6 s de cortinilla, título/gancho de 5 palabras, mapa global con bounds y fuente, capa de dato, voz y prompt_base correctos; narrativa PASS/90, SRC-001 `VERIFICADO_CROSSREF`, SRC-002 `VERIFICADO_RESOLVEDOR`. Estado `BORRADOR_EN_PROYECTOS_NO_APTO_PARA_PROMOCION`.
+- `cola/entrada/<project_id>.json` y `cola/estado/<project_id>.json` devuelven 404. No se creó estado Grok, entrada plana ni handoff. El validador estructural Python real no se ejecutó; no promover.
+- En este corte, el lector web rechazó los RSS XML de ScienceDaily/Phys.org/NASA por `400 Unsupported content-type` y no pudo abrir Google Trends RSS México. Se usó búsqueda de respaldo; no se seleccionó ni desarrolló otro candidato.
