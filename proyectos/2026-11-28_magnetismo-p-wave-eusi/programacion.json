@@ -1,0 +1,14 @@
+{
+  "project_id": "2026-11-28_magnetismo-p-wave-eusi",
+  "plataformas": ["youtube", "tiktok"],
+  "publish_at": "2026-11-28T23:15:00Z",
+  "ventana": "tarde",
+  "hora_cdmx": "17:15",
+  "caption_tt": "Un metal simple esconde magnetismo p-wave. Entre 33 y 62 K su espiral controla electrones sin imán neto. #ciencia #fisica #magnetismo #datosyociosidades",
+  "titulo_yt": "El metal simple que esconde un magnetismo raro #Shorts",
+  "descripcion_yt": "Científicos en Dresde descubren evidencia de magnetismo p-wave en siliciuro de europio (EuSi). No atrae como un imán común, pero reordena los electrones. Fuente: Cheng et al., Nature 2026, DOI 10.1038/s41586-026-11295-9.\n\nTikTok: https://www.tiktok.com/@datosyociosidades",
+  "tags": ["ciencia", "física", "magnetismo", "cuántica", "EuSi", "Datos y ociosidades"],
+  "privacidad": "private",
+  "estado": "programado_paquete",
+  "nota": "Publicar private hasta publish_at; TikTok lo sube Mj desde teléfono en el slot."
+}

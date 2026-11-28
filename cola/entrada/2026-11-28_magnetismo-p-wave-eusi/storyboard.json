@@ -1,0 +1,152 @@
+{
+  "project_id": "2026-11-28_magnetismo-p-wave-eusi",
+  "title": "El metal simple que esconde un magnetismo raro",
+  "titulo": "Magnetismo sin imán",
+  "language": "es-MX",
+  "aspect_ratio": "9:16",
+  "target_duration_seconds": 82,
+  "estructura": "historia",
+  "trend_source": {
+    "tipo": "noticia_cientifica",
+    "medio": "Nature / ScienceDaily / EurekAlert",
+    "url": "https://www.sciencedaily.com/releases/2026/11/261123005341.htm",
+    "estudio_doi": "10.1038/s41586-026-11295-9",
+    "fecha_publicacion": "2026-11-18",
+    "termino": "magnetismo p-wave EuSi",
+    "fecha_consulta": "2026-11-28"
+  },
+  "estilo_id": "pixel_art",
+  "estilo_visual": "Pixel art",
+  "voice": {
+    "engine": "edge-tts",
+    "voice_id": "es-MX-JorgeNeural",
+    "rate": "+7%",
+    "pitch": "-2Hz",
+    "pad_seconds": 0.3,
+    "modo_pausas": "continuo"
+  },
+  "sources": [
+    {
+      "id": "SRC-001",
+      "cita_corta": "Cheng et al. (2026). Evidence for p-wave magnetism in electronic band structure of metallic EuSi. Nature.",
+      "url": "https://doi.org/10.1038/s41586-026-11295-9",
+      "doi": "10.1038/s41586-026-11295-9",
+      "accessed": "2026-11-28",
+      "supports": ["evidencia de magnetismo p-wave en EuSi", "fase espiral quiral 33.4-62 K", "separaciones energéticas >100 meV"],
+      "ref_display": "Cheng et al. Nature 2026"
+    },
+    {
+      "id": "SRC-002",
+      "cita_corta": "Max Planck Institute / ScienceDaily (2026). A simple metal is hiding a strange new form of magnetism.",
+      "url": "https://www.sciencedaily.com/releases/2026/11/261123005341.htm",
+      "accessed": "2026-11-28",
+      "supports": ["descubrimiento en MPI CPfS Dresden", "plataforma para espintrónica"],
+      "ref_display": "ScienceDaily 2026"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_001",
+      "arc": "hook_medias_res",
+      "duration_seconds": 8.0,
+      "narration": "En un laboratorio de Dresde, un metal común escondía un magnetismo que no atrae clavos.",
+      "on_screen_text": "Magnetismo sin imán",
+      "visual_description": "Científicos pixelados observan un cristal metálico bajo microscopio en lab oscuro.",
+      "image_prompt": "16-bit pixel art scene, limited retro palette, crisp pixels, side view video game style, dithering, vertical 9:16, no text + scientists in white coats examining a glowing metal crystal under microscope in a dark retro lab with screens",
+      "source_ids": ["SRC-001", "SRC-002"],
+      "asset_filename": "frames/scene_001.jpg",
+      "ambiente": "laboratorio",
+      "sfx": ["beep_computadora", "cristal_tintineo"]
+    },
+    {
+      "id": "scene_002",
+      "arc": "desarrollo",
+      "duration_seconds": 12.0,
+      "narration": "Se llama siliciuro de europio. Entre 33 y 62 kelvin, sus momentos magnéticos forman una espiral quiral.",
+      "on_screen_text": "Espiral quiral",
+      "visual_description": "Estructura de red con flechas rojas y azules en espiral.",
+      "image_prompt": "16-bit pixel art scene, limited retro palette, crisp pixels, side view video game style, dithering, vertical 9:16, no text + chiral spiral of red and blue magnetic arrows inside white sphere lattice of metal",
+      "source_ids": ["SRC-001"],
+      "asset_filename": "frames/scene_002.jpg",
+      "ambiente": "viento",
+      "sfx": ["zumbido_bajo"]
+    },
+    {
+      "id": "scene_003",
+      "arc": "desarrollo",
+      "duration_seconds": 11.0,
+      "narration": "No produce magnetización neta. Pero reconstruye la banda electrónica con saltos de más de 100 milielectronvoltios.",
+      "on_screen_text": ">100 meV",
+      "visual_description": "Gráfico pixelado de bandas electrónicas con separación grande.",
+      "image_prompt": "16-bit pixel art scene, limited retro palette, crisp pixels, side view video game style, dithering, vertical 9:16, no text + retro pixel graph of electron energy bands with large gap highlighted in neon",
+      "source_ids": ["SRC-001"],
+      "asset_filename": "frames/scene_003.jpg",
+      "ambiente": "",
+      "sfx": ["click_datos"]
+    },
+    {
+      "id": "scene_004",
+      "arc": "desarrollo",
+      "duration_seconds": 10.0,
+      "narration": "La polarización de espín cambia de signo entre zonas de Brillouin. Eso es la textura de onda p.",
+      "on_screen_text": "Onda p",
+      "visual_description": "Electrones con flechas de espín opuestas según dirección.",
+      "image_prompt": "16-bit pixel art scene, limited retro palette, crisp pixels, side view video game style, dithering, vertical 9:16, no text + electrons as pixel particles with opposite spin arrows traveling left and right",
+      "source_ids": ["SRC-001"],
+      "asset_filename": "frames/scene_004.jpg",
+      "ambiente": "",
+      "sfx": ["whoosh_electron"]
+    },
+    {
+      "id": "scene_005",
+      "arc": "cierre_historia",
+      "duration_seconds": 12.0,
+      "narration": "Lo descubrieron con neutrones, ARPES de espín y microscopia. En el Instituto Max Planck de Dresde.",
+      "on_screen_text": "Dresde, Alemania",
+      "visual_description": "Mapa pixel de Europa con pin en Dresde y edificio del lab.",
+      "image_prompt": "16-bit pixel art scene, limited retro palette, crisp pixels, side view video game style, dithering, vertical 9:16, no text + pixel map of Europe with marker on Dresden and small lab building icon",
+      "source_ids": ["SRC-002"],
+      "asset_filename": "frames/scene_005.jpg",
+      "ambiente": "",
+      "sfx": ["mapa_despliegue"]
+    },
+    {
+      "id": "scene_006",
+      "arc": "reflexion_o_pregunta",
+      "duration_seconds": 14.0,
+      "narration": "Un metal simple abre puerta a espintrónica sin campo externo. ¿Qué más esconde la materia? Esto fue Datos y ociosidades.",
+      "on_screen_text": "Datos y ociosidades",
+      "visual_description": "Cristal pixelado brillando con espirales magnéticas y logo simple.",
+      "image_prompt": "16-bit pixel art scene, limited retro palette, crisp pixels, side view video game style, dithering, vertical 9:16, no text + glowing metal crystal with magnetic spirals and retro game end screen feel",
+      "source_ids": ["SRC-001"],
+      "asset_filename": "frames/scene_006.jpg",
+      "ambiente": "",
+      "sfx": ["cierre_chime"]
+    }
+  ],
+  "capas": [
+    {
+      "tipo": "mapa",
+      "region": [13.5, 14.0, 50.9, 51.2],
+      "puntos": [{"lon": 13.719, "lat": 51.026, "etiqueta": "MPI CPfS Dresde"}]
+    },
+    {
+      "tipo": "dato",
+      "valor": "33.4–62 K",
+      "etiqueta": "fase espiral p-wave",
+      "fuente": "SRC-001"
+    }
+  ],
+  "cortinilla_fuentes": {
+    "duration_seconds": 6,
+    "titulo": "Fuentes",
+    "aviso": "Imágenes generadas con IA. Voz sintética. Audio sintetizado.",
+    "firma": "Datos y ociosidades · @datosyociosidades"
+  },
+  "export": {
+    "filename": "capsula.mp4",
+    "resolution": "1080x1920",
+    "fps": 30,
+    "loudness_lufs": -14
+  }
+}
