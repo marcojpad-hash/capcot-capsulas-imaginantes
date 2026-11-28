@@ -249,3 +249,10 @@ No se modificó ni canceló ningún video. La ausencia de una entrada en el snap
 - PR #15 de coordenadas booleanas sigue abierto. La rama activa ya contiene validación de booleanos y bounds; no se fusionó ni cerró el PR.
 - Para el 28-nov no se creó otro storyboard: los registros históricos ocupan 07:00, 13:30, 17:00 y 19:00; 23:30 ya está asignado a llantas/albedo en esta rama.
 - No se modificaron `data/*.json`, `main`, estados Grok, colas, salidas, secretos ni permisos. No se generaron medios, no se enviaron webhooks y no se consumieron créditos.
+
+
+### Issues abiertas revisadas en este run
+
+- **#11 — auditoría narrativa independiente de cuásares:** sigue OPEN. El storyboard fue corregido por ChatGPT y su QA previo fue FAIL/82; la auditoría solicitada debe realizarla otro modelo. No se emitió una segunda revisión de ChatGPT ni se marcó PASS.
+- **#16 — handoff Imaginantes:** sigue OPEN. Solicita enlaces externos, reenvío de 17 MP4 y 10 resubidas a TikTok. No se generaron ni enviaron medios, no se publicaron/resubieron piezas y no se enviaron mensajes externos.
+- Commits de este run, ambos leídos de vuelta: storyboard `b018aa1f0c7d72078ad36fb783b792d237a7747c`; control de cola `de910f0ad073c1b594a992b89fef15b5fca00032`.
