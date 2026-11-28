@@ -95,3 +95,13 @@ Se buscó cada uno de los 12 project_id canónicos en `data/publicaciones.json`,
 - `cola/bloqueados/` conserva copias para `2026-11-05_inter-rayo-globular`, `2026-11-06_comida-aguacate-negro`, `2026-11-06_inter-ranas-congeladas`, `2026-11-06_inter-arena-cantante`, `2026-11-07_kids-huesos-bebe` y `2026-11-07_inter-nubes-pesan`, además de una variante `2026-11-05_comida-palomitas-explotan` (no es el project_id canónico). Las copias permanecen intactas; no se movieron ni renombraron.
 - No hay entradas planas de esos IDs en `cola/entrada/`. Los dos IDs con publicación histórica no deben volver a procesarse; las demás copias heredadas permanecen bloqueadas.
 
+
+
+## Reconciliación posterior — 2026-11-28 04:11 CDMX
+
+- **DOI del proyecto de llantas:** SRC-001 queda `VERIFICADO_CROSSREF` (Crossref REST devolvió el DOI, título y fecha de publicación 27-nov-2026); SRC-002 queda `VERIFICADO_RESOLVEDOR` (el DOI resuelve al registro Zenodo 23299235). Se actualizaron los dos estados de fuente en `storyboard.json`; no se tocaron claims ni narración.
+- **Estructura:** espejo estático de las reglas del validador: cero errores, 225 palabras, 7 escenas, 78 s + cortinilla de 6 s = 84 s, voz y prompt_base coincidentes, mapa con bounds globales válidos, dato/gráfico con fuente, 7 checks narrativos true, approved_assets vacío y render NOT_GENERATED. El script Python real no se ejecutó; el intento local de acceso a raw.githubusercontent.com falló con `Temporary failure in name resolution`. El espejo no autoriza handoff.
+- **Main / slot:** la parrilla semanal de main conserva Mareo en 2026-11-28 17:00 CDMX (video ID `fcSNbU809ao`, `publishAt=2026-11-28T23:00:00Z`). No ocupa el slot fijo de dato 23:30. No aparece una publicación de main para 23:30; el slot sigue libre para este borrador.
+- **Worker:** Actions run `46119729030`, job `140901360903`, terminó SUCCESS, pero el log dice literalmente `[trabajador] sin trabajo en cola.`. No acredita recepción Grok ni producción.
+- **Handoff:** `cola/entrada` no contiene una entrada plana del proyecto y `cola/estado/2026-11-28_llantas-hielo-albedo.json` no existe (404): `RECEPCION_GROK_NO_CONFIRMADA`. El workflow de dispatch escucha únicamente `cola/entrada/*.json`; el buzón de repo escribe un marker `pending`, que no equivale a acuse de Grok. No se disparó workflow ni webhook.
+- **Estado:** `NOT_DISPATCHABLE` por falta de validador estructural ejecutado y recepción Grok confirmada. No se promovió, no se generaron medios y no se publicó.
