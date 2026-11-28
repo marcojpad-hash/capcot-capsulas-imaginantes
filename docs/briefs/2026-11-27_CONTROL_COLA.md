@@ -1160,3 +1160,10 @@ No se disparó dispatch, no se enviaron payloads, no se modificaron estados Grok
 - Lectura de vuelta: 7 escenas, 225 palabras, 78 s de escenas + 6 s de cortinilla = 84 s; título de 5 palabras; estilo stencil_banksy; mapa global con bounds válidos; capa de dato en la escena de fusión; voz es-MX-JorgeNeural, rate +7%, pitch -2Hz.
 - Estado BORRADOR_EN_PROYECTOS_NO_APTO_PARA_PROMOCION; SRC-001 verification_status=PENDIENTE (DOI 10.1038/s41558-026-02800-z); SRC-002 Zenodo URL VERIFICADO_RESOLVEDOR. approved_assets=[]; export.render_status=NOT_GENERATED; narrative_qa ausente por separación de funciones.
 - No se creó cola/entrada, no se leyó ni modificó cola/estado, no se disparó workflow, no se generaron medios y no se publicó/programó. El validador estructural real permanece sin ejecutar por el error DNS documentado.
+
+
+## Handoff check — borrador llantas/hielo
+
+- Se leyó cola/estado/2026-11-28_llantas-hielo-albedo.json y el resultado fue 404 NOT_FOUND. Registro: RECEPCION_GROK_NO_CONFIRMADA; no se creó ni editó el estado.
+- Clasificación NOT_DISPATCHABLE: solo existe el storyboard bajo proyectos/; no hay JSON plano del proyecto en cola/entrada. cola/bloqueados y salidas no contienen el project_id; publicaciones/ no existe y data/publicaciones.json main no contiene el proyecto.
+- No hay medios declarados ni procesamiento previo detectado. No se creó cola, no se ejecutó workflow y no se realizó handoff.
