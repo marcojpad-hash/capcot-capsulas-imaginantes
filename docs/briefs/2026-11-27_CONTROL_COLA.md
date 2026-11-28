@@ -1152,3 +1152,11 @@ No se disparó dispatch, no se enviaron payloads, no se modificaron estados Grok
 - GROK_STATUS_CONTRACT.md mantiene la regla de que la ausencia de cola/estado/<project_id>.json significa recepción no confirmada; no se crean estados ni se infiere recepción por markers pending.
 - Se inspeccionó el contrato del validador: --structural-only no sustituye narrative_qa; el modo completo exige PASS y --check-doi es una comprobación independiente. Se intentó ejecutar el validador real en una copia local de solo lectura mediante sparse clone, pero el entorno no pudo resolver github.com: fatal: unable to access 'https://github.com/marcojpad-hash/capcot-capsulas-imaginantes.git/': Could not resolve host: github.com. No se ejecutó el validador ni se atribuye PASS estructural/DOI. No se disparó Actions como alternativa.
 - Resultado: los cuatro storyboards del último corte permanecen sin promoción; los estados Grok individuales siguen sujetos a la evidencia 404 ya registrada. Próximo paso mínimo: habilitar una vía de ejecución local con el repositorio ya disponible en el entorno, o un run de CI autorizado que ejecute explícitamente el validador y --check-doi. Hasta entonces, no promover.
+
+
+## Nuevo borrador de investigación — slot 2026-11-28 23:30
+
+- Se creó únicamente proyectos/2026-11-28_llantas-hielo-albedo/storyboard.json en la rama feature. Commit final del storyboard: fea121c6ef2412f4385ef92f83cdb796c55ce9c6.
+- Lectura de vuelta: 7 escenas, 225 palabras, 78 s de escenas + 6 s de cortinilla = 84 s; título de 5 palabras; estilo stencil_banksy; mapa global con bounds válidos; capa de dato en la escena de fusión; voz es-MX-JorgeNeural, rate +7%, pitch -2Hz.
+- Estado BORRADOR_EN_PROYECTOS_NO_APTO_PARA_PROMOCION; SRC-001 verification_status=PENDIENTE (DOI 10.1038/s41558-026-02800-z); SRC-002 Zenodo URL VERIFICADO_RESOLVEDOR. approved_assets=[]; export.render_status=NOT_GENERATED; narrative_qa ausente por separación de funciones.
+- No se creó cola/entrada, no se leyó ni modificó cola/estado, no se disparó workflow, no se generaron medios y no se publicó/programó. El validador estructural real permanece sin ejecutar por el error DNS documentado.
