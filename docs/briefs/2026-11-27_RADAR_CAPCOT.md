@@ -412,3 +412,26 @@ Se reabrieron páginas editoriales primarias para confirmar fecha, alcance y cif
 **Proyecto existente PAV1:** la versión final de Frontiers está publicada desde el 26 nov 2026. El artículo informa inhibición in vitro superior a 98% a 48 h y, en tomate, incidencia de agalla de 83.3% en controles frente a 46.7%/50.0% con aplicación preventiva; no es una prueba de eficacia en vid de campo. DOI: `10.3389/fpls.2026.2008228`. La página primaria abre; el clic al DOI devolvió `500 Redirected to https://www.frontiersin.org/articles/10.3389/fpls.2026.2008228/full which is not accessible via this tool`.
 
 **Compuerta:** las páginas editoriales confirman los DOI escritos, pero esto no sustituye la respuesta de Crossref/resolvedor. Los tres candidatos permanecen `PENDING_CROSSREF`; PAV1 conserva esa misma compuerta. El slot 28 nov 23:30 sigue libre, pero no hay candidato que supere todas las compuertas. No se creó storyboard.
+
+
+## Reintento RSS y Trends México — 27 nov 2026, corte 20:12 CDMX
+
+Los endpoints declarados en `scripts/tendencias.py` y Google Trends RSS México se consultaron directamente. Errores exactos de lectura en este entorno:
+
+| Fuente | Resultado |
+|---|---|
+| ScienceDaily `top/science.xml` | `(400) Unsupported content-type: application/xml` |
+| ScienceDaily `top/health.xml` | `(400) Unsupported content-type: application/xml` |
+| ScienceDaily `space_time.xml` | `(400) Unsupported content-type: application/xml` |
+| Phys.org `rss-feed/` | `(400) Unsupported content-type: text/xml` |
+| NASA `news-release/feed/` | `(400) Unsupported content-type: application/rss+xml` |
+| ESA Space Science RSS | `(404) Not Found` |
+| Nature `nature.rss` | `(400) Unsupported content-type: application/rss+xml` |
+| EurekAlert `rss/news.xml` | `URL is not accessible via this tool` |
+| SINC `/rss` | `URL is not accessible via this tool` |
+| UNAM Global `/feed/` | `(400) Unsupported content-type: application/rss+xml` |
+| Google Trends RSS México `trending/rss?geo=MX` | `URL is not accessible via this tool` |
+
+**Respaldo oficial:** la página HTML de Google Trends México sí abrió: [Tendencias actuales](https://trends.google.com/trending?geo=MX&hl=en-US). Los temas visibles en este corte fueron principalmente deportes, consumo y búsquedas generales; ninguno se convirtió en claim científico. Para investigación científica se usaron las páginas editoriales primarias enlazadas en la sección anterior. No se mezcló popularidad de búsqueda con evidencia científica.
+
+Nota operativa: estos errores corresponden a la recuperación directa de endpoints desde el entorno de lectura; no se afirma que los servidores RSS estén caídos para todos los clientes. No se modificó `scripts/tendencias.py` ni ningún `data/*.json`.
