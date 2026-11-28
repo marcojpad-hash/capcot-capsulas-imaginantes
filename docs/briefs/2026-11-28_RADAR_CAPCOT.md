@@ -53,12 +53,13 @@ Los RSS científicos de scripts/tendencias.py y Google Trends RSS México fallar
 - **Inferencia:** la diversidad de temas no basta para seleccionar un candidato; la falta de texto primario, coordenadas o DOI verificado impide cerrar las compuertas.
 - **Recomendación:** mantener libre el slot 28-nov 23:30. No crear storyboard, no crear cola y no marcar preparado. Revaluar con una fuente primaria publicada dentro de la ventana, claims verificables y coordenadas sustentadas.
 
-## Estado de producción
+## Estado de producción — lectura de vuelta 28-nov-2026 06:03 CDMX
 
-- Storyboards nuevos: ninguno.
-- approved_assets: no aplica; no se creó proyecto.
-- Medios, frames, audio, voz, renders y placeholders: no generados.
-- Publicación/programación: ninguna.
+- Storyboard textual: 1, `proyectos/2026-11-28_llantas-hielo-albedo/storyboard.json`; 7 escenas, 229 palabras, 78 s de escenas + 6 s de cortinilla = 84 s.
+- QA narrativo: PASS/90 válido; la narración no cambió desde esa revisión.
+- DOI `10.1038/s41558-026-02800-z`: `VERIFICADO_CROSSREF`; Zenodo `10.5281/zenodo.23299235`: `VERIFICADO_RESOLVEDOR`.
+- `approved_assets=[]`; `export.render_status=NOT_GENERATED`; no se generaron medios, frames, imágenes, voz, audio, video, renders ni placeholders.
+- `publicacion.status=PENDIENTE_DECISION_GROK`; sin JSON plano en `cola/entrada/`, sin estado Grok individual y sin promoción. El validador estructural real sigue pendiente.
 
 
 ## Actualización de candidatos — 27-nov-2026 22:37 CDMX
@@ -209,3 +210,26 @@ Corte de investigación: 2026-11-28 04:40 CDMX. Los cinco registros siguientes s
 - Fallback Exa: ScienceDaily ciencia/salud/espacio y Phys.org devolvieron feeds hasta 27-nov; NASA devolvió entradas hasta 28-nov 05:05Z; UNAM Global permanece en 18-may-2026 y se clasifica STALE. Nature, ESA, EurekAlert y SINC no fueron recuperables por Exa (`CRAWL_UNEXPECTED_CONTENT_TYPE` o `CRAWL_NOT_FOUND`). No se atribuyen a esos feeds artículos que no aparecieron en sus respuestas.
 - Google Trends RSS devolvió `CRAWL_UNEXPECTED_CONTENT_TYPE`. Respaldo HTML oficial México: “agujero de la capa de ozono”, 2K+ búsquedas y actividad reciente (~8 h). Es señal de interés, no fuente científica. La referencia ESA disponible es del 26-nov y no se usa para un slot de dato-día que exija publicación dentro de 48 h.
 - Para el slot fijo 2026-11-28 23:30, el borrador de llantas ya ocupa la propuesta y no se crea duplicado. El candidato de elefantes se reserva solo como borrador textual para 2026-12-01 07:00, ventana matutina preferente del martes; no es dato-día de 23:30.
+
+
+## Revisión RSS y respaldo de fuentes primarias — 28-nov-2026 06:03 CDMX
+
+### Acceso a feeds
+
+- Se leyó `scripts/tendencias.py`: ScienceDaily (ciencia/salud/espacio), Phys.org, NASA, ESA, Nature, EurekAlert, SINC, UNAM Global y Google Trends RSS México.
+- Reintento directo de ScienceDaily ciencia y Google Trends RSS `geo=MX`: ambos devolvieron exactamente `URLError(gaierror(-3, 'Temporary failure in name resolution'))`. Esto demuestra un fallo DNS del entorno de ejecución, no una caída global de los feeds.
+- Respaldo: búsqueda en páginas oficiales de Nature y Phys.org mediante Exa; Crossref REST y resolvedor DOI respondieron para los candidatos listados abajo. Google Trends RSS no aportó una señal verificable en este corte.
+
+### Candidatos de respaldo (no sustituyen el shortlist activo de cinco)
+
+1. **Chemical gradients turn bacterial aggregates inside out** — Nature Physics, 27-nov-2026 09:22Z. DOI `10.1038/s41567-026-03531-w`. El artículo primario describe que, al crecer el agregado de *Neisseria gonorrhoeae*, la adhesión celular más débil en el núcleo privado de oxígeno impulsa a las células interiores hacia fuera y produce eversión de la colonia. Crossref `status=ok`; el resolvedor DOI abrió la página primaria. Frescura calculada al corte: ~26 h 40 min. **Candidato biológico para un slot posterior; PENDING_MAP** hasta contar con localización de laboratorio/muestra sustentada, sin inventar coordenadas.
+2. **Cell-autonomous inflammation in VEXAS is mediated by ERAD failure and cGAS–STING** — Nature Cell Biology, open access, 27-nov-2026 10:54Z. DOI `10.1038/s41556-026-02122-4`. El paper primario relaciona pérdida de actividad citoplasmática de UBA1 con fallo ERAD, alteración mitocondrial, señalización cGAS–STING e inflamación. Crossref `status=ok`; resolvedor DOI abrió el artículo primario. Frescura calculada: ~25 h 09 min. **Candidato de biología/cuerpo; PENDING_MAP** y requiere simplificación narrativa sin convertir mecanismo experimental en consejo médico.
+3. **Lower central dark matter densities in nearby galaxies than predicted by simulations** — Nature Astronomy, 26-nov-2026 10:02Z. DOI `10.1038/s41550-026-03017-y`. El estudio combina trazadores estelares e hidrógeno neutro en 136 galaxias; informa densidades centrales de materia oscura inferiores a las predichas por varias simulaciones en sistemas masivos. Crossref `status=ok`; resolvedor DOI abrió la página primaria. Frescura calculada: ~50 h 01 min: **fuera de la ventana de 48 h para dato-día 23:30**; conservar solo como backlog espacial, PENDING_MAP.
+4. **PM2.5 air pollution weakens global spring greening** — Nature Plants, 27-nov-2026 18:20Z. DOI `10.1038/s41477-026-02464-9`; Crossref `status=ok` y resolvedor DOI confirmado. Aunque es primario y reciente, se clasifica `NO_DUPLICAR` en esta rotación por solapamiento temático con los candidatos actuales de estomas, partículas y contaminación.
+
+### Separación de evidencia y decisión
+
+- **Observación:** títulos, fechas, DOI, resúmenes y resultados anteriores proceden de las páginas editoriales primarias y de Crossref; la nota Phys.org identifica el estudio de PM2.5 de Nature Plants, pero el DOI se verificó contra la ficha primaria.
+- **Cálculo:** las edades de publicación se calcularon contra el corte 28-nov-2026 06:03 CDMX; el artículo de materia oscura supera 48 h, los de bacterias y VEXAS permanecen dentro de esa ventana.
+- **Inferencia:** los candidatos de bacterias y VEXAS son temáticamente distintos de llantas/albedo, liquen y rapaces; no se afirma que sus coordenadas de investigación estén verificadas.
+- **Recomendación:** no crear otro storyboard: el 28-nov 23:30 ya está asignado a llantas/albedo y los slots restantes de hoy tienen ocupación histórica. Conservar bacterias y VEXAS como alternativas para una fecha futura, sujetas a mapa sustentado y slot libre; no promoverlas ahora.
