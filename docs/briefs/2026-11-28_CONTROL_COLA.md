@@ -220,3 +220,32 @@ No se modificó ni canceló ningún video. La ausencia de una entrada en el snap
 - Consulta individual de `cola/estado/2026-12-01_elefantes-huerfanos-integracion-social.json` devolvió literalmente `HTTP 404: Not Found`; estado registrado: `RECEPCION_GROK_NO_CONFIRMADA`. `cola/entrada` plano/anidado y `cola/bloqueados` también devolvieron 404; el árbol de la rama no contiene salida. Clasificación: NOT_DISPATCHABLE. No se creó ni editó ningún estado Grok.
 - GitHub Actions automáticas de CodeQL asociadas a los cuatro commits del cambio terminaron SUCCESS: `46137479201`, `46137482402`, `46137484046`, `46137486217`. Cada ejecución solo muestra jobs `Analyze (python)` y `Analyze (actions)`; no ejecutó `scripts/validar_storyboard.py`, `--check-doi` ni QA narrativo.
 - HEAD de feature después de la lectura de vuelta: `f84854b95b0fab6d7cf6f5b7646194bf801641cf`. El proyecto permanece exclusivamente en `proyectos/`; no hay promoción, webhook, render ni publicación.
+
+
+## Auditoría posterior — 2026-11-28 06:03 CDMX
+
+### 1-dic — QA y lectura estructural manual
+
+- Se registró en el storyboard `narrative_qa=FAIL/0`, `review_basis=lectura_en_frio_solo_narracion`, los siete checks false y `critical_flags=["REVISION_INDEPENDIENTE_AUSENTE"]`. No se acreditó una revisión en conversación separada; el cero es fail-closed y no una valoración de calidad del guion. No se emitió PASS.
+- Lectura de vuelta: 8 escenas, 189 palabras, 78 s + 6 s = 84 s, título de 6 palabras, voz `es-MX-JorgeNeural` +7%/-2Hz, resolución 1080x1920, arco completo, seis campos narrativos por escena presentes, cierre exacto, estilo coincidente con catálogo, mapa en escena 2 (bounds regionales publicados SRC-002) y capa de dato cualitativa en escena 5 (SRC-001). `approved_assets=[]`, `render_status=NOT_GENERATED`, publicación pendiente.
+- El mapa usa [1.04, 37.75, 1.66, 37.92] como límites publicados del santuario; no son coordenadas GPS del estudio de 2026. El gráfico declara concentraciones comparables para fGCM y fT3, sin valores numéricos añadidos.
+- `cola/estado/2026-12-01_elefantes-huerfanos-integracion-social.json` sigue 404 → `RECEPCION_GROK_NO_CONFIRMADA`; no hay entrada plana, salida ni promoción. `NOT_DISPATCHABLE`.
+- El validador Python real no se ejecutó. `web.open` de GitHub Raw devolvió `DisabledError`; la descarga local devolvió `URLError: <urlopen error [Errno -3] Temporary failure in name resolution>`. La inspección manual del código y campos no se presenta como ejecución de `--structural-only` ni `--check-doi`.
+
+### Backlog y lote canónico
+
+- 27-nov PAV1 e intermareal: ambos siguen en `proyectos/`; sus estados Grok individuales devolvieron 404. Intermareal conserva conflicto de slot 23:30 con producción preexistente de main; no redispatchar.
+- 28-nov llantas/albedo: PASS/90 y DOI verificados en el registro previo; no se repitió QA porque la narración no cambió. Sigue sin entrada plana ni acuse Grok.
+- 30-nov liquen: PASS/93 existente, DOI/Crossref pendiente; no promover. 30-nov rapaces: FAIL/82 existente; no reescribir narración ni repetir QA.
+- Lote canónico 5–7 nov: se releyeron los 12 storyboards y sus 12 estados. Los blobs narrativos/QA siguen fechados el 18-nov: 2 PASS (88, 94) y 10 FAIL; no se repitió QA. Los doce estados devolvieron 404 → `RECEPCION_GROK_NO_CONFIRMADA`.
+- Dos IDs del lote tienen procesamiento histórico en `main:data/publicaciones.json`: nubes (`4Qpl17Ts_vI`, 12-nov 13:00Z) y hielo caliente (`HSgrnejAcaI`, 11-nov 19:30Z; la nota posterior indica que ya no aparece en el canal, mientras TikTok/Facebook constan publicados). Ambos: `PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR`.
+- `historial_youtube/` y `publicaciones/` no existen en el árbol (404). `data/publicaciones.json` tiene 62 registros y llega hasta 24-nov; no hay conexión de YouTube Studio verificada. El snapshot histórico del 21-nov conserva IDs de slots del 28-nov, pero su vigencia externa no está confirmada.
+
+### Actions y PR
+
+- Worker `46119729030`: SUCCESS, salida literal `[trabajador] sin trabajo en cola.`; no fue dispatch Grok.
+- CodeQL PR #3 `46137567879`: SUCCESS en `Analyze (python)` y `Analyze (actions)`; no ejecutó el validador ni Crossref.
+- PR #3 sigue abierto, en borrador y con `mergeable_state=dirty`; no se integró. No se disparó `capcot-grok-dispatch.yml`.
+- PR #15 de coordenadas booleanas sigue abierto. La rama activa ya contiene validación de booleanos y bounds; no se fusionó ni cerró el PR.
+- Para el 28-nov no se creó otro storyboard: los registros históricos ocupan 07:00, 13:30, 17:00 y 19:00; 23:30 ya está asignado a llantas/albedo en esta rama.
+- No se modificaron `data/*.json`, `main`, estados Grok, colas, salidas, secretos ni permisos. No se generaron medios, no se enviaron webhooks y no se consumieron créditos.
