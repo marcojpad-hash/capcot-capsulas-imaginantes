@@ -56,3 +56,23 @@ Los RSS científicos de scripts/tendencias.py y Google Trends RSS México fallar
 - approved_assets: no aplica; no se creó proyecto.
 - Medios, frames, audio, voz, renders y placeholders: no generados.
 - Publicación/programación: ninguna.
+
+
+## Actualización de candidatos — 27-nov-2026 22:37 CDMX
+
+### 5. Primer genoma cromosómico de un tucán
+
+- **Observación primaria:** Scientific Data publicó el 27-nov-2026 un Data Descriptor con el primer ensamblaje de referencia a nivel cromosómico para la familia Ramphastidae. El ensamblaje mide 1.467 Gb; contiene 266 scaffolds, de los cuales 57 son de escala cromosómica (55 autosomas y cromosomas sexuales Z/W). El análisis citogenético confirma 2n=112; BUSCO recupera 99.5% de genes completos. Se anotaron 19,606 genes, incluidos 17,193 codificantes.
+- **Fuente primaria:** https://www.nature.com/articles/s41597-026-08658-2
+- **DOI:** 10.1038/s41597-026-08658-2.
+- **Frescura:** publicado el 27-nov; para el slot 28-nov 23:30, la edad máxima compatible con la fecha editorial es 47.5 h. La hora exacta de publicación no está indicada.
+- **Mapa:** el paper informa ocho individuos cautivos y selecciona RT01 para el ensamblaje, pero el texto recuperable no asigna RT01 a una institución ni aporta coordenadas de origen. Los agradecimientos nombran tres zoológicos, sin vincular cada muestra con uno. La Tabla 1 no pudo recuperarse desde la página directa; no se asignan coordenadas ni se usa el rango continental como sustituto del origen de las muestras.
+- **DOI/Crossref:** PENDING_CROSSREF. El artículo primario aparece indexado con DOI y fecha; la apertura directa de api.crossref.org/doi.org devolvió Internal Error o no completó la redirección en este entorno.
+- **Estado:** candidato observado, no seleccionado; PENDING_MAP + PENDING_CROSSREF.
+- **Decisión:** no crear storyboard. Sin asignación verificable de muestra a lugar no existe mapa de investigación defendible, y la compuerta DOI sigue pendiente.
+
+## Reintento de tendencias — 27-nov-2026 22:37 CDMX
+
+- Google Trends HTML oficial para México abrió en ventana de 24 h y mostró 181 tendencias (25 visibles en la página). Las primeras posiciones fueron clima, deportes, entretenimiento, actualidad y búsquedas generales; no apareció una señal científica/natural admisible. No se convirtió popularidad de búsqueda en evidencia científica.
+- Google Trends RSS México siguió sin ser accesible mediante el lector. El reintento directo de Nature RSS devolvió literalmente: Failed to fetch https://www.nature.com/nature.rss: (400) Unsupported content-type: application/rss+xml. Los errores previos de los demás feeds permanecen detallados en 2026-11-27_RADAR_CAPCOT.md; no se afirma que los servidores RSS estén caídos globalmente.
+- **Recomendación:** mantener libre el slot 28-nov 23:30. Cinco candidatos observados no equivalen a un candidato autorizado; ninguno supera simultáneamente fuente primaria utilizable, mapa sustentado y DOI/Crossref. No storyboard, cola, medios ni programación.
