@@ -1136,3 +1136,11 @@ Se incorporó el resultado del run Auditor CAPCOT 6c66c79b-88ec-832b-a795-630cd8
 - Esta integración no sustituye la revalidación puntual de 22:37: los cuatro storyboard actuales siguen sin estado Grok individual y no fueron promovidos. La validación Python estructural no se ejecutó en este run.
 
 No se disparó dispatch, no se enviaron payloads, no se modificaron estados Grok, programación, publicaciones, medios, data/*.json, secretos ni permisos.
+
+
+## Revalidación de seguridad — Actions main, 27-nov-2026 23:02 CDMX
+
+- Push de main: run 46110301482 SUCCESS. Gitleaks: run 46110301445 SUCCESS.
+- Semgrep: run 46110301476 FAILURE; job 140872107104. Log de cierre: 37 findings (37 blocking), 361 reglas, 1,283 archivos rastreados; 37 archivos de más de 1 MB quedaron fuera del escaneo. La etapa Upload SARIF fue omitida y el proceso terminó con exit code 1. El log descargado no incluye el detalle individual de los 37 findings; no se inventa una lista ni se atribuyen todos a PR #15.
+- El run corresponde al commit de main ec466b5e08bf2d0668a9535fb3ed7fe65c64bda9, cuyo único archivo cambiado es data/endscreens_rotacion.json. No se modificó main desde esta ejecución ni se disparó workflow manualmente.
+- Esta comprobación no cambia las compuertas editoriales ni confirma recepción Grok. No se leyeron valores de secretos; no se modificaron secretos, permisos, workflows, programación, publicaciones ni data/*.json.
