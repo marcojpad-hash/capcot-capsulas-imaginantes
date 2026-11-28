@@ -1002,3 +1002,11 @@ No se identificó cambio oficial nuevo de APIs que justificara revisión adicion
 - En el nuevo commit de main, Semgrep (46096596549) volvió a fallar con **37 hallazgos bloqueantes**; Gitleaks y CodeQL terminaron success. No se alteraron hallazgos ni configuración.
 - PR #3 continúa draft/open y no mergeable. Los checks dinámicos para los commits documentales de este corte quedaron en curso/cola al momento de esta lectura; no se hizo merge ni se disparó el dispatcher Grok.
 - La nueva entrada `pendiente_studio` no cambia los conflictos de PAV1/Intermareal ni habilita Liquen/Rapaces. Los slots y clasificaciones de la sección anterior se mantienen.
+
+
+## Cierre de CI documental — 27 nov 2026, corte 20:10 CDMX
+
+- Los checks dinámicos de PR #3 para los commits documentales `23ab8d70`, `b14af794`, `d9071f89`, `87e576a9`, `704d07b0` y `d8849bf2` terminaron `success`; el último es run `46096768749`.
+- PR #3 continúa `draft/open`, `mergeable=false`; no se hizo merge. La Action verde no acredita `--check-doi` ni cambia los estados editoriales.
+- HEAD de feature al cierre de esta lectura: `d8849bf2459cb8d46e8637f5e0c2cc6642e9a56a`. HEAD de main permanece `2b30693dac44d3a60271065369f0465b7ba0b174`.
+- No se ejecutó `capcot-grok-dispatch`; el resultado de CI corresponde a documentación del PR, no a recepción Grok ni a producción.
