@@ -372,3 +372,11 @@ Los archivos `data/*.json` se mantuvieron en solo lectura. El snapshot de featur
 - Liquen (30-nov 17:00) conserva PASS/93; Rapaces (30-nov 07:00), FAIL/82 por giro científico no explicado. Ambos caen en lunes, fuera de los días preferentes de la ventana actual; no se promovieron ni reescribieron.
 
 No se modificaron main, `data/*.json`, estados Grok, bloqueados, workflow, medios, secretos ni permisos. No hubo redispatch, publicación ni programación.
+
+
+## Revisión estática de PR #15 — 2026-11-28 10:00 CDMX
+
+- PR #15 sigue OPEN, 12 commits, 2 archivos, HEAD `947df50e1ee895e7744e54cc43f3865c78eedf13`; no se ejecutaron sus pruebas y no se fusionó.
+- El diff rechaza booleanos en coordenadas terrestres/celestes y bounds, y fija la consulta a `https://api.crossref.org` mediante HTTPS con verificación TLS.
+- Hallazgo de revisión: `check_doi()` devuelve PASS únicamente por `HTTP 200`; no parsea el JSON de Crossref ni compara `message.DOI` con el DOI solicitado. La prueba añadida simula solo `status=200`. Para que `--check-doi` pruebe el registro correcto, falta validar el cuerpo JSON y la coincidencia del DOI devuelto, además de probar respuesta 200 sin registro o con DOI distinto. Este hallazgo es estático; no se atribuye una prueba ejecutada.
+- PR #3 sigue DRAFT contra main, 728 archivos cambiados y su propio cuerpo reconoce cambios a `data/*.json` incompatibles con el contrato. No se fusionó.
