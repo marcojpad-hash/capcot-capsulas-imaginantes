@@ -242,3 +242,26 @@ Corte de investigación: 2026-11-28 04:40 CDMX. Los cinco registros siguientes s
 - El storyboard de llantas sigue con 229 palabras, 7 escenas, 78 s + 6 s de cortinilla, título/gancho de 5 palabras, mapa global con bounds y fuente, capa de dato, voz y prompt_base correctos; narrativa PASS/90, SRC-001 `VERIFICADO_CROSSREF`, SRC-002 `VERIFICADO_RESOLVEDOR`. Estado `BORRADOR_EN_PROYECTOS_NO_APTO_PARA_PROMOCION`.
 - `cola/entrada/<project_id>.json` y `cola/estado/<project_id>.json` devuelven 404. No se creó estado Grok, entrada plana ni handoff. El validador estructural Python real no se ejecutó; no promover.
 - En este corte, el lector web rechazó los RSS XML de ScienceDaily/Phys.org/NASA por `400 Unsupported content-type` y no pudo abrir Google Trends RSS México. Se usó búsqueda de respaldo; no se seleccionó ni desarrolló otro candidato.
+
+
+## Reintento de RSS y respaldo oficial de Google Trends — 2026-11-28 10:00 CDMX
+
+Se reintentó la lectura de los feeds configurados en `scripts/tendencias.py`. Los siguientes errores corresponden al lector disponible en esta ejecución; no prueban que los sitios de origen estén caídos:
+
+| Feed | Error literal |
+|---|---|
+| ScienceDaily science | `Failed to fetch https://www.sciencedaily.com/rss/top/science.xml: (400) Unsupported content-type: application/xml` |
+| ScienceDaily health | `Failed to fetch https://www.sciencedaily.com/rss/top/health.xml: (400) Unsupported content-type: application/xml` |
+| ScienceDaily space | `Failed to fetch https://www.sciencedaily.com/rss/space_time.xml: (400) Unsupported content-type: application/xml` |
+| Phys.org | `Failed to fetch https://phys.org/rss-feed/: (400) Unsupported content-type: text/xml` |
+| NASA | `Failed to fetch https://www.nasa.gov/news-release/feed/: (400) Unsupported content-type: application/rss+xml` |
+| ESA Space Science | `Failed to fetch https://www.esa.int/rssfeed/Our_Activities/Space_Science: (404) Not Found` |
+| Nature | `Failed to fetch https://www.nature.com/nature.rss: (400) Unsupported content-type: application/rss+xml` |
+| EurekAlert | `URL https://www.eurekalert.org/rss/news.xml is not accessible via this tool` |
+| SINC | `URL https://www.agenciasinc.es/rss is not accessible via this tool` |
+| UNAM Global | `Failed to fetch https://unamglobal.unam.mx/feed/: (400) Unsupported content-type: application/rss+xml` |
+| Google Trends RSS México | `URL https://trends.google.com/trending/rss?geo=MX is not accessible via this tool` |
+
+Respaldo oficial: [Google Trends — Trending Now, México](https://trends.google.com/trending?geo=MX). El HTML disponible mostraba un snapshot de 28-nov 09:00 UTC (03:00 CDMX), 198 tendencias en las últimas 24 h. Entre las primeras 25: `clima` (2M+), `epicentro temblor hoy` (100K+), `nevada de la Ciudad de México de 1967` (2K+) y búsquedas deportivas/entretenimiento. No aparece un tema científico claro entre esas primeras tendencias. El snapshot es anterior al corte de Trends de 06:03 CDMX ya documentado arriba; no lo sustituye ni justifica cambiar el tema.
+
+Se revisaron además listados secundarios de papers recientes, pero no se agregó un candidato sin lectura/verificación de su fuente primaria. No hay slot libre hoy: 17:00 tiene colisión en la programación de main y 23:30 está reservado por Tama en main. Resultado: no se creó storyboard adicional, no se reescribieron claims y no se generaron medios.
