@@ -333,7 +333,7 @@
   "estado": "BORRADOR_EN_PROYECTOS_NO_APTO_PARA_PROMOCION",
   "production_mode": "storyboard_only",
   "validation_notes": [
-    "Preflight manual: 7 escenas; 224 palabras de narración; 78 s de escenas + 6 s de cortinilla = 84 s; gancho de 5 palabras; mapa global con bounds válidos; capa de dato en escena de fusión.",
+    "Preflight manual: 7 escenas; 225 palabras de narración; 78 s de escenas + 6 s de cortinilla = 84 s; gancho de 5 palabras; mapa global con bounds válidos; capa de dato en escena de fusión.",
     "El validador estructural real no se ejecutó porque el entorno no pudo clonar el repositorio (Could not resolve host: github.com). No se atribuye PASS estructural.",
     "No se registró narrative_qa: la lectura en frío corresponde a un auditor independiente posterior."
   ],
