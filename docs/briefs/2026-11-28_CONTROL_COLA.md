@@ -285,3 +285,39 @@ No se modificó ni canceló ningún video. La ausencia de una entrada en el snap
 - **Handoff:** `cola/entrada/2026-11-28_llantas-hielo-albedo.json` y `cola/estado/2026-11-28_llantas-hielo-albedo.json` devolvieron 404. No se creó entrada ni estado. El workflow acepta únicamente JSON plano en `cola/entrada/*.json`; no se disparó.
 - **Feeds de este corte:** ScienceDaily y Phys.org rechazaron la lectura RSS por tipo XML (`400 Unsupported content-type`); NASA devolvió `400 Unsupported content-type: application/rss+xml`; Google Trends RSS México no fue accesible por este lector. Se usó búsqueda de respaldo; no se eligió candidato adicional ni se abrió otro storyboard.
 - No se modificaron main, `data/*.json`, cola, estados Grok, workflow, secretos, permisos ni medios. No se publicó, programó ni redispatchó nada.
+
+
+## Relectura de backlog y estados Grok — 2026-11-28 08:03 CDMX
+
+### Lote canónico 5–7 nov (12 IDs)
+
+Se releyeron los 12 storyboards actuales. No se recalculó narrative_qa ni se repitieron PASS; se conservaron los dictámenes ya registrados.
+
+| project_id | Blob SHA | QA vigente | Palabras / escenas / s |
+|---|---|---:|---:|
+| 2026-11-05_comida-palomitas | `8c913dc8ad16b005735da9ebe882206d285c96bf` | FAIL 82 | 173 / 7 / 84 |
+| 2026-11-05_inter-arboles-se-comunican | `05618f1d5d2cd8f713ee43ac802bcfb04bb9bb1d` | FAIL 78 | 170 / 8 / 84 |
+| 2026-11-05_inter-rayo-globular | `5cd02d9a5d21ecdbd416a2858e433395cb9acc63` | FAIL 81 | 197 / 7 / 84 |
+| 2026-11-05_kids-dia-en-venus | `3660c16f866d6ec74471e6ad88e640ea7df7df1d` | PASS 88 | 170 / 7 / 84 |
+| 2026-11-06_comida-aguacate-negro | `d63b2afcbf22a579b7d5d8ced11265aca8b3dc2a` | FAIL 79 | 170 / 7 / 84 |
+| 2026-11-06_inter-arena-cantante | `386ad015311e277782a09f82a72b7e1118b72e69` | PASS 94 | 206 / 7 / 84 |
+| 2026-11-06_inter-ranas-congeladas | `84585c042be07fa1ea52f1c9de310e83a1105f16` | FAIL 83 | 177 / 7 / 84 |
+| 2026-11-06_kids-ballena-azul-corazon | `37eda55883011c0f7a2ec022c43e880d33b58313` | FAIL 80 | 174 / 7 / 84 |
+| 2026-11-07_comida-hielo-caliente | `fe8baf47a0e97f4c3607a187f6bac5524546e875` | FAIL 81 | 172 / 7 / 84 |
+| 2026-11-07_inter-nubes-pesan | `190090e434d16acb4126e83d86fea17ad6e8f4e6` | FAIL 78 | 221 / 7 / 84 |
+| 2026-11-07_inter-pulpo-suenos | `89080ebda22783403d5d8033d52c93dd00bc5fde` | FAIL 72 | 170 / 7 / 84 |
+| 2026-11-07_kids-huesos-bebe | `981f384d44db08469ef8290b988b96fd26bc4cd0` | FAIL 82 | 172 / 7 / 84 |
+
+Resultado: 2 PASS y 10 FAIL. Los 12 `cola/estado/<project_id>.json` devolvieron 404 → `RECEPCION_GROK_NO_CONFIRMADA`. Ninguno tiene entrada plana en `cola/entrada/`. Las copias bloqueadas siguen intactas; no se movió ni borró ninguna. `data/publicaciones.json` en main conserva dos registros históricos: hielo caliente (`HSgrnejAcaI`) y nubes (`4Qpl17Ts_vI`); ambos siguen protegidos contra redispatch.
+
+### Proyectos recientes y próximos
+
+| project_id | QA / estado | Hallazgo de handoff |
+|---|---|---|
+| 2026-11-27_dato-pav1-bacteriofago | PASS 90; 187 palabras; 8 escenas; 84 s | Grok 404; main reserva 07:00 para Microondas → `CONFLICTO_DE_SLOT_ENTRE_RAMAS` |
+| 2026-11-27_dato-registros-intermareales-1950s | PASS 90; 173 palabras; 8 escenas; 84 s | Grok 404; main reserva 23:30 para Stubbs y tiene render preexistente → `CONFLICTO_DE_SLOT_ENTRE_RAMAS` + `PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR` |
+| 2026-11-30_liquen-gen-cereales | PASS 93; 199 palabras; 8 escenas; 84 s | Grok 404; lunes fuera de días preferentes; no promover |
+| 2026-11-30_rapaces-clima-reino-unido | FAIL 82; 182 palabras; 8 escenas; 84 s | Giro científico no explicado; Grok 404; no reescribir durante auditoría |
+| 2026-12-01_elefantes-huerfanos-integracion-social | FAIL 0 por `REVISION_INDEPENDIENTE_AUSENTE`; 189 palabras; 8 escenas; 84 s | Grok 404; main no contiene reserva 1-dic 07:00 en el árbol consultado; no promover por ausencia de revisión independiente |
+
+No se repitieron auditorías narrativas. Los 5 estados Grok anteriores devolvieron 404. No se creó cola ni se cambió el estado de ningún proyecto.
