@@ -178,3 +178,12 @@ La verificación DOI no sustituye la lectura completa de métodos ni resuelve la
 - Respaldo oficial de Google Trends HTML, México, últimas 24 h: 173 tendencias; la primera página no mostró una tendencia científica. `epicentro temblor hoy` apareció con 5 mil+ búsquedas y 13 h, pero no se usó como afirmación científica ni como noticia de sismo sin fuente oficial.
 
 No se abrió un nuevo storyboard: el slot de 28-nov 23:30 ya está ocupado por el borrador de llantas y los slots de 29-nov y 30-nov se encontraron reservados en main o fuera de rotación preferente.
+
+
+## Estado vigente — 2026-11-28 04:11 CDMX
+
+- Cinco candidatos del radar con DOI Crossref verificado; el candidato de llantas está desarrollado en `proyectos/2026-11-28_llantas-hielo-albedo/storyboard.json` con narrative_qa PASS90 y SRC-001/SRC-002 verificados por Crossref/resolvedor.
+- La compuerta estructural Python real sigue pendiente. El espejo estático no la sustituye.
+- El respaldo HTML oficial de Google Trends más reciente mostró 173 tendencias sin señal científica en la primera página; el snapshot anterior de 254 tendencias queda como histórico.
+- Los titulares recientes de narval, PVC y EHT son reanuncios de papers primarios de agosto/septiembre; no son candidatos nuevos de 48 h. Los demás feeds fallidos y la no ejecución local de `scripts/tendencias.py` están documentados más abajo.
+- No se crea un segundo storyboard: el 28-nov 23:30 ya está reservado por Llantas; 29-nov tiene slots ocupados en main y 30-nov 23:30 está reservado por Cher Ami.
