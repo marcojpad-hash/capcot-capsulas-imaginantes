@@ -143,3 +143,12 @@ Los RSS científicos de scripts/tendencias.py y Google Trends RSS México fallar
 - El slot 2026-11-28 23:30 sigue libre en main: el paquete Mareo de main ocupa 17:00, no el slot fijo 23:30. El borrador sigue en proyectos; cola/estado devuelve 404, no existe entrada plana y no se crea handoff. Clasificación: NOT_DISPATCHABLE.
 - Estado final del borrador: QA narrativo PASS; estructura formal y DOI todavía no verificados por sus compuertas independientes; sin promoción, sin medios y sin publicación.
 
+
+
+## Verificación DOI independiente — 2026-11-28 04:11 CDMX
+
+- **SRC-001 — artículo primario:** `VERIFICADO_CROSSREF`. La consulta REST de Crossref a `https://api.crossref.org/works/10.1038/s41558-026-02800-z` devolvió `status=ok`, tipo `journal-article`, título coincidente y `published-online=2026-11-27`; el DOI y el editor Springer Nature coinciden con la ficha.
+- **SRC-002 — dataset:** `VERIFICADO_RESOLVEDOR`. `https://doi.org/10.5281/zenodo.23299235` resolvió al registro Zenodo 23299235, publicado el 11-oct-2026. La consulta de metadatos Crossref para este DOI no devolvió un registro utilizable en esta comprobación; por eso se conserva el nivel de verificación por resolvedor, no Crossref.
+- Se actualizaron únicamente los campos `verification_status` de ambas fuentes en el storyboard. Narración, claims, cifras y QA no cambiaron.
+- La inspección estática que replica las comprobaciones estructurales del validador encontró cero errores: 225 palabras según la expresión del script, 7 escenas, 78 s de escenas + 6 s de cortinilla = 84 s, cuatro arcos, voz, prompt_base, mapa con bounds válidos, capa de dato, source_ids, assets vacíos y render NOT_GENERATED. **No equivale a ejecutar** `scripts/validar_storyboard.py`; esa ejecución sigue pendiente por fallo DNS del entorno local.
+- La verificación DOI independiente ya está resuelta; la compuerta estructural real sigue pendiente. No se promueve el paquete ni se crea entrada de cola.
