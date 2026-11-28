@@ -417,3 +417,11 @@ Secuencia de cierre: `84f97ab13561cf8f77aa55da0a54ed379d142aa1` añadió esta tr
 - **CI automático observado:** run [#46173968948](https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/actions/runs/46173968948) SUCCESS. Su job valida estructuralmente el storyboard Kuroshio; no usa `--check-doi` ni ejecuta la suite de pruebas nueva. No se disparó manualmente.
 - PR #15 permanece OPEN y sin merge; su rama de trabajo es anterior a la corrección aplicada directamente en la rama feature. No se abrió, cerró ni fusionó ningún PR.
 
+### Corrección adicional de duración de cortinilla — 2026-11-28 12:16 CDMX
+
+- **EJECUTADO / VERIFICADO:** el renderer `scripts/montar_capsula.py` tenía fallback de 5 s cuando faltaba `cortinilla_fuentes.duration_seconds`; se cambió a 6 s. Lectura de vuelta confirma la línea 284 con el valor 6.
+- La compuerta de `scripts/validar_storyboard.py` ya exige exactamente 6 s (línea 365); el cambio alinea el fallback del renderer con la validación.
+- Se aclaró `docs/ESTRUCTURA_VISUAL_TRENDS.md`: la referencia histórica de 5 s queda obsoleta y el contrato vigente es 6 s. Lectura de vuelta confirma la aclaración.
+- Commits: `717008b671ee8b5d15a87b817ffb5bc6cd5aeb45` (renderer) y `292e633fbe3f38513c8adad31972bd0e2baf1b8a` (documentación).
+- No se generó medio ni se ejecutó el renderer. El workflow de validación Kuroshio no incluye `scripts/montar_capsula.py` en sus paths; no se atribuye un CI inexistente a este cambio.
+- HEAD de feature al cierre: `292e633fbe3f38513c8adad31972bd0e2baf1b8a`. Los commits de radar, control, validador DOI y pruebas permanecen en el historial de la misma rama.
