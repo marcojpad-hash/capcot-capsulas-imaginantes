@@ -435,3 +435,28 @@ Los endpoints declarados en `scripts/tendencias.py` y Google Trends RSS México 
 **Respaldo oficial:** la página HTML de Google Trends México sí abrió: [Tendencias actuales](https://trends.google.com/trending?geo=MX&hl=en-US). Los temas visibles en este corte fueron principalmente deportes, consumo y búsquedas generales; ninguno se convirtió en claim científico. Para investigación científica se usaron las páginas editoriales primarias enlazadas en la sección anterior. No se mezcló popularidad de búsqueda con evidencia científica.
 
 Nota operativa: estos errores corresponden a la recuperación directa de endpoints desde el entorno de lectura; no se afirma que los servidores RSS estén caídos para todos los clientes. No se modificó `scripts/tendencias.py` ni ningún `data/*.json`.
+
+
+## Reintento adicional de RSS y Trends México — 27 nov 2026
+
+Se repitió la consulta directa de los endpoints definidos en scripts/tendencias.py y Google Trends RSS. Resultados de este reintento:
+
+| Fuente | Error literal |
+|---|---|
+| ScienceDaily top/science.xml | Failed to fetch: (400) Unsupported content-type: application/xml |
+| ScienceDaily top/health.xml | Failed to fetch: (400) Unsupported content-type: application/xml |
+| ScienceDaily space_time.xml | Failed to fetch: (400) Unsupported content-type: application/xml |
+| Phys.org rss-feed/ | Failed to fetch: (400) Unsupported content-type: text/xml |
+| NASA news-release/feed/ | Failed to fetch: (400) Unsupported content-type: application/rss+xml |
+| ESA Space Science RSS | Failed to fetch: Timeout fetching |
+| Nature nature.rss | Failed to fetch: (400) Unsupported content-type: application/rss+xml |
+| EurekAlert rss/news.xml | URL is not accessible via this tool |
+| Agencia SINC /rss | URL is not accessible via this tool |
+| UNAM Global /feed/ | Failed to fetch: (400) Unsupported content-type: application/rss+xml |
+| Google Trends RSS México | URL is not accessible via this tool |
+
+La página HTML oficial de Google Trends México sí respondió. Mostró México, ventana de 24 horas y 181 tendencias; los primeros resultados visibles fueron clima, deportes, entretenimiento y búsquedas generales. No apareció un tema científico que sirviera como claim. La popularidad de búsqueda no se usó como evidencia científica.
+
+El error de ESA cambió respecto del corte anterior: el registro previo decía 404 Not Found; este reintento devolvió Timeout fetching. No se afirma caída general de los servidores. No se modificaron scripts/tendencias.py ni ningún data/*.json.
+
+La verificación Crossref/resolvedor también se reintentó para el DOI 10.1038/s41586-026-11341-6: api.crossref.org devolvió Internal Error; doi.org redirigió a la página editorial que no pudo resolverse en este entorno; search.crossref.org no entregó el registro del DOI. Se mantiene PENDING_CROSSREF. La URL del PDF primario de Nature sí fue accesible.

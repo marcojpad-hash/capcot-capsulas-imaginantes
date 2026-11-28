@@ -1031,3 +1031,71 @@ La lectura directa de los JSON de main corrige una fecha desactualizada de un co
 - `data/endscreens_rotacion.json` recibió el snapshot `pendiente_studio` del 27-nov 20:00 en el commit de Grok Bot ya descrito.
 
 Los dos registros de rotación/estilo siguen sin cubrir los proyectos del 27 y 30-nov; se consideran incompletos para certificar rotación actual. Se conserva solo lectura y no se modifica ningún `data/*.json`.
+
+
+## Revalidación operativa posterior al corte 20:14 — 27 nov 2026
+
+### Storyboards de proyectos vigentes
+
+| Proyecto | QA narrativo | Slot / producción | Recepción y decisión |
+|---|---|---|---|
+| 2026-11-27_dato-pav1-bacteriofago | PASS/90; siete checks true; flags vacías | 27-nov 07:00; conflicto con Microondas en main; DOI/Crossref pendiente | estado individual 404: RECEPCION_GROK_NO_CONFIRMADA; NOT_DISPATCHABLE |
+| 2026-11-27_dato-registros-intermareales-1950s | PASS/90; siete checks true; flags vacías | 27-nov 23:30; conflicto con Stubbs en main; render preexistente medido 86.13 s | estado individual 404: RECEPCION_GROK_NO_CONFIRMADA; PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR |
+| 2026-11-30_liquen-gen-cereales | PASS/93; siete checks true; flags vacías | 30-nov 17:00; sin salida main localizada; DOI/Crossref pendiente | estado individual 404: RECEPCION_GROK_NO_CONFIRMADA; no promover |
+| 2026-11-30_rapaces-clima-reino-unido | FAIL/82; giro_cientifico_explicado=false; flags críticas vigentes | 30-nov 07:00; sin salida main localizada | estado individual 404: RECEPCION_GROK_NO_CONFIRMADA; no promover |
+
+Los cuatro proyectos carecen de ESTADO_EJECUCION.md en la rama auditada. No se creó ni modificó ningún estado Grok, narrative_qa, archivo de cola ni data/*.json.
+
+### Slots y procesamiento preexistente en main
+
+- El plan semanal de main mantiene Microondas el 27-nov a las 07:00 y Mareo el 28-nov a las 17:00.
+- Stubbs ocupa el 27-nov 23:30 y tiene render preexistente de 86.13 s.
+- Bacterias figura el 27-nov 17:00 como programado_sin_montar.
+- Mareo conserva video_id y publishAt para el 28-nov 17:00.
+- El slot 28-nov 23:30 está libre en el plan y en la rotación consultada; no hay candidato que supere frescura, fuente primaria, mapa y DOI/Crossref. No se creó storyboard.
+
+### Cola, profundidad y estados
+
+- cola/entrada contiene .gitkeep y la carpeta anidada 2026-11-09_dato-robot-ensambla-orbita; no hay JSON plano en la raíz.
+- capcot-grok-dispatch escucha cola/entrada/*.json y usa find con maxdepth 1. La carpeta anidada no es despachable por ese workflow.
+- No se encontró ejecución del dispatcher en las últimas 100 Actions consultadas. No se disparó workflow_dispatch ni se enviaron payloads.
+- Los estados individuales de los cuatro proyectos vigentes, los 12 IDs del lote 5–7 nov y la entrada anidada del 9-nov devolvieron 404. Se conserva RECEPCION_GROK_NO_CONFIRMADA; no se infiere recepción desde GitHub.
+- Los 12 IDs del lote 5–7 nov mantienen 2 PASS y 10 FAIL; los 12 siguen sin los seis campos estructurales de escena señalados en la auditoría previa. No se repitió ningún PASS.
+- La entrada anidada del 9-nov conserva video_id y publishAt preexistentes; no se redispatcha.
+- salidas/main no muestra una salida nueva para los slots 27–28 auditados. No se retiró ni canceló ningún procesamiento previo.
+
+### Lectura narrativa independiente de PR #14 — Cuásares
+
+Se realizó una lectura en frío separada, exponiendo únicamente la narración concatenada de la revisión en la rama chatgpt/quasar-audit-fixes-20261115. No se leyó título, resumen, arco, notas ni narrative_contract durante la pasada.
+
+- Versión revisada: 175 palabras, 8 escenas.
+- Resultado de auditoría independiente: FAIL, score 71/100.
+- Checks:
+  - pregunta_central_reconstruible: true
+  - apertura_in_medias_res: true
+  - progresion_por_escena: true
+  - transiciones_causales: false
+  - giro_cientifico_explicado: false
+  - limite_evidencia_explicito: true
+  - payoff_cierre_apertura: false
+- critical_flags: TRANSICIONES_CAUSALES_DEBILES; GIRO_CIENTIFICO_NO_EXPLICADO; PAYOFF_CIERRE_NO_PAGA_APERTURA.
+- Motivo: la secuencia presenta la observación y varias medidas, pero no enlaza causalmente los datos intermedios; la diferencia espectral se enuncia sin explicar por qué discrimina dos fuentes; el cierre cambia a una pregunta general sobre crecimiento de agujeros negros y no paga la pregunta inicial de pareja frente a lente.
+- La rama de PR #14 no es la rama activa autorizada. No se escribió narrative_qa en esa rama ni se modificó su storyboard. La versión anterior en feature sigue FAIL/0 con REVISION_INDEPENDIENTE_AUSENTE. No hay promoción ni merge.
+
+### Actions y bloqueos de CI
+
+- PR #3: run 46097113585, success. Es una comprobación de PR; no verifica DOI ni recepción Grok. PR #3 continúa draft/open y no mergeable.
+- Semgrep en main: run 46096596549, failure; 37 findings (37 blocking), 361 reglas sobre 1,283 archivos. No se modificó main.
+- Gitleaks main: run 46096596531, success. Push main: run 46096597045, success.
+- PR #15 permanece abierto para endurecimiento de coordenadas/DOI; no se consideró integrado ni validado por CI.
+- La presencia de los secretos GROK_WEBHOOK_URL y GROK_WEBHOOK_TOKEN no es consultable con las acciones disponibles del conector. No se declara que falten y no se accedió a sus valores.
+
+### Inventario de solo lectura
+
+- data/publicaciones.json: 62 registros; fecha más reciente 2026-11-24.
+- data/rotacion.json: 39 registros; último 2026-11-21.
+- data/estilos_usados.json: 32 registros; último 2026-11-21.
+- data/endscreens_rotacion.json conserva el snapshot pendiente_studio del 27-nov 20:00 creado por una Action externa.
+- No existe directorio publicaciones/ ni archivo independiente historial_youtube en el árbol consultado.
+- Ningún data/*.json fue modificado. Main, permisos, secretos y workflows permanecen intactos.
+- El radar 28-nov y el reintento exacto de RSS/Trends quedan en docs/briefs/2026-11-28_RADAR_CAPCOT.md y en el apéndice de 27-nov.
