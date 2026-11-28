@@ -154,3 +154,14 @@ Esta sección **supersede las líneas anteriores de este control** cuando difier
 - `feature/cola/bloqueados` tiene 47 entradas y 9 pares de copias JSON/directorio con nombres heredados; varias variantes no coinciden con los 12 IDs canónicos. No se movió ni borró nada.
 - `main/data/publicaciones.json` conserva 62 registros (última fecha observada 24-nov); dos de los 12 IDs canónicos tienen publicación histórica. `data/vistas_historico.json` tiene 110 registros y ninguno de los 12 IDs. No existen directorios separados `publicaciones/` ni `historial_youtube/`.
 - El worker de cola `46119729030` terminó SUCCESS, pero su log dice `[trabajador] sin trabajo en cola.`; no prueba recepción ni dispatch. El workflow Grok selecciona JSON planos de primer nivel; no se disparó workflow ni webhook.
+
+
+## Corrección adicional: colisiones internas de main — 2026-11-28 04:11 CDMX
+
+La comparación entre el plan semanal y `data/miniaturas_auditoria_2026-11-21.json` muestra tres discrepancias internas en main; no se debe tratar un único registro como calendario definitivo:
+
+- **27-nov 07:00:** plan semanal registra Microondas `nd0rs6iVy8E`; la auditoría de miniaturas registra `jiX6RdwJ1gg` (“¿Los caballeros necesitaban una grúa?”) con `hora_cdmx=2026-11-27 07:00 CST`.
+- **27-nov 17:00:** el plan semanal refiere Bacterias, pero `main/cola/entrada/2026-11-27_bacterias-vuelta-oxigeno/` contiene solo placeholders; la auditoría de miniaturas registra `_slEv21gbpM` (“¿Todos los artistas odiaban la Torre Eiffel?”) a 17:00.
+- **28-nov 17:00:** plan semanal registra Mareo `fcSNbU809ao`; la auditoría de miniaturas registra `gN6svdqe62Q` (“El Cinco de Mayo NO es la Independencia”) a 17:00.
+
+Los registros no se editaron. Las tres horas se consideran ocupadas/conflictivas para CAPCOT; la discrepancia interna de main debe resolverse por el operador del calendario, no por este investigador. La reserva de Llantas para 28-nov 23:30 sigue libre de conflicto en main.
