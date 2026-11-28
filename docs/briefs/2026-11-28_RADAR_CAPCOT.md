@@ -131,3 +131,15 @@ Los RSS científicos de scripts/tendencias.py y Google Trends RSS México fallar
 
 - El análisis CodeQL automático del commit del storyboard terminó SUCCESS (run 46115595793; jobs Analyze actions/python). Los runs 46115611009 y 46115666229 de commits posteriores de documentación seguían in_progress al último chequeo.
 - CodeQL no ejecuta validar_storyboard.py ni --check-doi; el estado del borrador no cambia. No hubo dispatch Grok ni handoff.
+
+## Actualización de auditoría — 2026-11-28
+
+- Google Trends HTML oficial (México, últimas 24 h): 254 tendencias indexadas; «agujero de la capa de ozono» aparece con 2K+ búsquedas y actividad reciente. La mayoría del listado está dominada por deportes, clima y consultas generales; no se incorpora otro tema sin fuente científica primaria reciente. <https://trends.google.com/trending?geo=MX&hl=es>
+- Los endpoints RSS se intentaron consultar desde el lector web, pero este no procesa sus respuestas XML: ScienceDaily devolvió 400 Unsupported content-type: application/xml; Phys.org 400 text/xml; NASA, Nature y UNAM 400 application/rss+xml; ESA 404; Google Trends RSS, EurekAlert y SINC no fueron accesibles mediante esta herramienta. Esto no demuestra por sí solo que urllib/feedparser falle. La ejecución local de tendencias.py no se realizó: curl a raw.githubusercontent.com devolvió «Could not resolve host: raw.githubusercontent.com».
+- El registro Zenodo 23299235 está accesible y expone el DOI 10.5281/zenodo.23299235. El artículo primario de Nature Climate Change aparece indexado con DOI 10.1038/s41558-026-02800-z y publicación del 27-nov-2026; Crossref API y doi.org no fueron accesibles en esta ejecución, por lo que SRC-001 continúa PENDING_CROSSREF. No se declara verificación DOI.
+- Revisión narrativa independiente posterior, leyendo solo la narración concatenada: PASS, score 90/100, siete checks true, critical_flags vacías. El registro quedó en narrative_qa; la narración y sus claims no se modificaron.
+- Inspección estructural estática: 225 palabras, 7 escenas, 78 s de escenas + 6 s de cortinilla = 84 s; voz, prompt_base, mapa con bounds globales, capa de dato, fuentes por escena, ambiente/SFX, approved_assets=[] y export NOT_GENERATED presentes; no se encontraron rutas ni nombres de assets. Esto NO sustituye ejecutar scripts/validar_storyboard.py.
+- El workflow de validación disponible ejecutó solo el proyecto Kuroshio (run 46078959750) y no incluye --check-doi; no valida este storyboard. El validador real para llantas y la compuerta Crossref quedan pendientes.
+- El slot 2026-11-28 23:30 sigue libre en main: el paquete Mareo de main ocupa 17:00, no el slot fijo 23:30. El borrador sigue en proyectos; cola/estado devuelve 404, no existe entrada plana y no se crea handoff. Clasificación: NOT_DISPATCHABLE.
+- Estado final del borrador: QA narrativo PASS; estructura formal y DOI todavía no verificados por sus compuertas independientes; sin promoción, sin medios y sin publicación.
+
