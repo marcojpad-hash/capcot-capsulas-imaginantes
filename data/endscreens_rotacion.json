@@ -1,8 +1,8 @@
 {
   "fecha": "2026-11-14",
   "tipo": "endscreens_rotacion",
-  "actualizado_cdmx": "2026-11-25T08:30",
-  "motivo": "25-nov 08:30: Pancho lobo marino 9RBB5dFsWyA (482, +379 en 1 h, antes Ninguno) -> purpura RBUcAeptGAU (3); luz X7caJzr99to (82, +51 en 1 h, antes Ninguno) -> vomitorium cGb7Z0ZEz8w (4). Video relacionado en Studio, verificado. Sin suscripcion.",
+  "actualizado_cdmx": "2026-11-28T10:40",
+  "motivo": "28-nov 10:40: orca okcitPbGfHY (3164 en ~42 h, antes Ninguno) -> ola azul HKpani8TTeY (2); monos aulladores q1DsTsF93Ps (209 en ~2.5 h, antes Ninguno) -> platano -1DRh_qj7Bg (2). Video relacionado en Studio, verificado. Sin suscripcion.",
   "vistas_ref": {
     "phVfyHp3CnY": 94,
     "m4RqQRaz55k": 48,
@@ -95,7 +95,11 @@
     "9RBB5dFsWyA": 482,
     "RBUcAeptGAU": 3,
     "X7caJzr99to": 82,
-    "cGb7Z0ZEz8w": 4
+    "cGb7Z0ZEz8w": 4,
+    "okcitPbGfHY": 3164,
+    "HKpani8TTeY": 2,
+    "q1DsTsF93Ps": 209,
+    "-1DRh_qj7Bg": 2
   },
   "mapa": {
     "r1AhsPOAS_o": "AJR6kcnnDig",
@@ -168,7 +172,9 @@
     "8okieDXFIgU": "YXndoPSSeaY",
     "4Vi_TnIl9FI": "CW02WClntYA",
     "9RBB5dFsWyA": "RBUcAeptGAU",
-    "X7caJzr99to": "cGb7Z0ZEz8w"
+    "X7caJzr99to": "cGb7Z0ZEz8w",
+    "okcitPbGfHY": "HKpani8TTeY",
+    "q1DsTsF93Ps": "-1DRh_qj7Bg"
   },
   "pendiente_studio": false,
   "nota": "Aplicado en YouTube Studio Editor > Pantalla final (video específico). Búsqueda: pegar youtube.com/watch?v=ID en 'Buscar vídeos de otros canales' (tus vídeos no lista Shorts). Sin suscripción ni tarjetas. Actualización 26-oct 19:49: la lista «Elegir un vídeo específico» ya muestra los Shorts.",
