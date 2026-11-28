@@ -964,3 +964,32 @@ No se identificó cambio oficial nuevo de APIs que justificara revisión adicion
 
 - El radar recibió tres candidatos nuevos y el corte de Google Trends en docs/briefs/2026-11-27_RADAR_CAPCOT.md. Crossref REST y doi.org devolvieron Internal Error () para los tres DOI; el slot 28-nov 23:30 queda libre, sin selección ni storyboard.
 - No se generaron medios, frames, imágenes, voz, audio, video, renders ni placeholders. No se disparó el workflow Grok, no se enviaron payloads, no se publicó ni programó, no se modificó main, data/*.json, secretos o permisos.
+
+
+## Revalidación de inventario y compuertas — 27 nov 2026, corte 19:56 CDMX
+
+### Estado remoto y rutas
+
+- HEAD de `feature/capcot-video-discovery-continuity`: `d9071f894a992e061bc183d56b01363f1cbde286`. HEAD de `main`: `6a96b3eb18b0bf3369e454269649663295685207`.
+- En feature siguen cuatro proyectos con solo `storyboard.json`; no existe `ESTADO_EJECUCION.md` en esas carpetas. QA sin cambios: PAV1 PASS/90, Intermareal PASS/90, Liquen PASS/93, Rapaces FAIL/82. No se repitió PASS porque las narraciones no cambiaron.
+- Los seis estados consultados (PAV1, Intermareal, Liquen, Rapaces, Stubbs y Bacterias) devolvieron 404. Clasificación literal: `RECEPCION_GROK_NO_CONFIRMADA`. No se crearon ni editaron estados.
+- Feature `cola/entrada`: 2 elementos, ninguno es JSON plano en la raíz; los proyectos actuales no están en cola. `cola/bloqueados`: 47 elementos; `salidas`: 59; sin coincidencias para los cuatro IDs actuales. La carpeta `cola/estado` no existe en esta rama.
+- El workflow escucha `cola/entrada/*.json` y selecciona archivos con profundidad máxima 1. Por evidencia de ruta, los cuatro proyectos siguen `NOT_DISPATCHABLE`; no se disparó workflow ni se envió payload.
+- `GROK_WEBHOOK_URL` y `GROK_WEBHOOK_TOKEN` son los nombres referenciados por el workflow. El último error histórico registrado señala ausente `GROK_WEBHOOK_URL`; presencia actual del URL y del token no se puede confirmar sin ejecución. No se consultaron valores.
+
+### Conflictos y procesamiento preexistente en main
+
+- **PAV1 — 27 nov 07:00:** conflicto de slot con Microondas, que figura en `plan_semana.json` con `videoId=nd0rs6iVy8E` y `publishAt=2026-11-27T13:00:00Z`. `PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR`; el medio referenciado no está en el árbol: `MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO`.
+- **Intermareal — 27 nov 23:30:** conflicto con Stubbs en main. `metadata.json` y `render.log` registran render de 86.13 s; el MP4 referenciado está fuera del árbol. `PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR`, `CONFLICTO_DE_SLOT_ENTRE_RAMAS`, `MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO`.
+- **Bacterias — 27 nov 17:00:** main conserva `programado_sin_montar` y una copia anidada placeholder; no es entrada plana despachable. Se mantiene `PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR`; medios referenciados no verificados en el árbol.
+- **Mareo — 28 nov 17:00:** `plan_semana.json` contiene `videoId=fcSNbU809ao` y `publishAt`; slot ocupado, no redispatchar.
+- **28 nov 23:30:** libre en main y feature, pero sin candidato con DOI/Crossref resuelto. Estado editorial: `PENDING_CROSSREF`; no se creó storyboard.
+- **Liquen — 30 nov 17:00:** PASS/93 y estructura previamente validada, pero DOI/Crossref pendiente; no promover.
+- **Rapaces — 30 nov 07:00:** FAIL/82 y DOI/Crossref pendiente; no promover.
+
+### Inventario, Actions y rotación
+
+- No apareció ningún JSON plano nuevo ni ejecución del dispatcher. La última Action de main es `Callback - aviso de delegaciones` (run 46095573475, success), no un dispatch. Los tres checks dinámicos recientes de PR #3 concluyeron success; PR #3 sigue draft/open y no mergeable. PR #13, #14 y #15 siguen abiertos. En main, Semgrep sigue failure (run 46080610450); Gitleaks y CodeQL success.
+- `data/publicaciones.json` conserva 62 registros y no hay archivo separado `historial_youtube` en el inventario leído. `data/rotacion.json` y `data/estilos_usados.json` siguen atrasados respecto del backlog; no se modificaron y no se certifica rotación con ellos.
+- El corte anterior de los 12 IDs del 5–7 nov permanece en 2 PASS / 10 FAIL; no se reescribieron narraciones ni se repitió QA válido.
+- No se modificó `data/*.json`, main, secretos, estados Grok, colas, salidas ni medios. No se creó ni promovió storyboard.
