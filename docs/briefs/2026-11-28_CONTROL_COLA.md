@@ -424,4 +424,4 @@ Secuencia de cierre: `84f97ab13561cf8f77aa55da0a54ed379d142aa1` añadió esta tr
 - Se aclaró `docs/ESTRUCTURA_VISUAL_TRENDS.md`: la referencia histórica de 5 s queda obsoleta y el contrato vigente es 6 s. Lectura de vuelta confirma la aclaración.
 - Commits: `717008b671ee8b5d15a87b817ffb5bc6cd5aeb45` (renderer) y `292e633fbe3f38513c8adad31972bd0e2baf1b8a` (documentación).
 - No se generó medio ni se ejecutó el renderer. El workflow de validación Kuroshio no incluye `scripts/montar_capsula.py` en sus paths; no se atribuye un CI inexistente a este cambio.
-- HEAD de feature al cierre: `292e633fbe3f38513c8adad31972bd0e2baf1b8a`. Los commits de radar, control, validador DOI y pruebas permanecen en el historial de la misma rama.
+- HEAD de feature antes de este registro de cierre: `292e633fbe3f38513c8adad31972bd0e2baf1b8a`; el commit de esta bitácora es posterior. Los commits de radar, control, validador DOI y pruebas permanecen en el historial de la misma rama.
