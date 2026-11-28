@@ -271,3 +271,6 @@ No se modificó ni canceló ningún video. La ausencia de una entrada en el snap
 - El storyboard de main referencia `asset_filename` y `export.filename`; la carpeta `salidas/2026-11-27_bacterias-vuelta-oxigeno/` no existe y los medios no aparecen en el árbol: `MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO`.
 - La copia anidada de `cola/entrada/` contiene `PLACEHOLDER` en `storyboard.json` y `fuentes.md`; no es un paquete JSON dispatchable. `cola/estado` devuelve 404.
 - El snapshot de miniaturas registra además `_slEv21gbpM` a 17:00; se conserva como posible colisión interna del plan de main, sin cancelar ni redispatchar. No hay un proyecto de feature a las 17:00, por lo que no se declara `CONFLICTO_DE_SLOT_ENTRE_RAMAS` para Bacterias.
+
+
+- Corrección final de encabezado del radar: se sustituyó el estado inicial obsoleto (“borrador sin DOI/QA”) por el estado verificado de llantas/albedo: 7 escenas, 229 palabras, 84 s, PASS/90 y DOI/resolvedor verificados; siguen pendientes el validador estructural real y el estado Grok. Lectura de vuelta en commit `33b44c7b5c084036a4cfc6bcea0fe7335afb032c`.
