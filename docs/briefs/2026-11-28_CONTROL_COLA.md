@@ -7,7 +7,7 @@
 ## Resultado ejecutivo
 
 - Se completó una pasada narrativa independiente en frío para `2026-11-28_llantas-hielo-albedo`: **PASS 90/100**, siete checks true y flags vacías. El registro quedó en `storyboard.json`; no se modificó narración ni claims.
-- Se corrigieron solo metadatos de fuente: el DOI del dataset Zenodo quedó consignado y la fuente primaria quedó explícitamente `PENDING_CROSSREF`.
+- El storyboard vigente registra SRC-001 `VERIFICADO_CROSSREF` y SRC-002 `VERIFICADO_RESOLVEDOR` (ver commits de verificación del propio storyboard). El validador estructural real y su ejecución `--check-doi` no se ejecutaron en este corte.
 - Ningún proyecto se promovió a `cola/entrada`. No hay entrada JSON plana, no hay recepción Grok confirmada y las compuertas estructural y DOI del borrador del día siguen sin verificación real.
 - No se generaron medios, no se ejecutaron workflows, no se enviaron payloads, no se publicaron ni programaron videos y no se modificó `main` ni `data/*.json`.
 
@@ -17,7 +17,7 @@
 |---|---|---|---|---|
 | `2026-11-27_dato-pav1-bacteriofago` | 27-nov / 07:00 | PASS 90 | 187 palabras, 8 escenas, 84 s | NOT_DISPATCHABLE: conflicto de slot con Microondas en main; DOI solo marcado VERIFICADO_URL |
 | `2026-11-27_dato-registros-intermareales-1950s` | 27-nov / 23:30 | PASS 90 | 174 palabras, 8 escenas, 84 s | NOT_DISPATCHABLE: conflicto con Stubbs en main y procesamiento preexistente |
-| `2026-11-28_llantas-hielo-albedo` | 28-nov / 23:30 | **PASS 90 nuevo** | 225 palabras, 7 escenas, 78 s + 6 s de cortinilla = 84 s | NOT_DISPATCHABLE: DOI Crossref y validador estructural real pendientes; recepción 404 |
+| `2026-11-28_llantas-hielo-albedo` | 28-nov / 23:30 | **PASS 90 vigente** | 229 palabras, 7 escenas, 78 s + 6 s de cortinilla = 84 s | NOT_DISPATCHABLE: conflicto con `2026-11-23_animal-tama` en main; producción previa y medios no verificables; sin entrada plana; estado Grok 404; validador real no ejecutado |
 | `2026-11-30_liquen-gen-cereales` | 30-nov / 17:00 | PASS 93 existente | 200 palabras, 8 escenas, 84 s | NOT_DISPATCHABLE: DOI PENDING_CROSSREF; lunes fuera de días preferentes |
 | `2026-11-30_rapaces-clima-reino-unido` | 30-nov / 07:00 | FAIL 82 existente | 184 palabras, 8 escenas, 84 s | NOT_DISPATCHABLE: `GIRO_CIENTIFICO_NOMBRADO_PERO_NO_EXPLICADO`; DOI PENDING_CROSSREF; lunes fuera de días preferentes |
 
@@ -28,7 +28,7 @@ No se repitió QA en los proyectos con revisión vigente y narración sin cambio
 - **27-nov 07:00 — Microondas:** el plan semanal de main contiene un video ID `nd0rs6iVy8E` y `publishAt=2026-11-27T13:00:00Z`. Ocupa el mismo fecha+slot que PAV1. Clasificación para PAV1: `CONFLICTO_DE_SLOT_ENTRE_RAMAS` y `NOT_DISPATCHABLE`. El plan referencia un MP4 fuera del árbol GitHub: `MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO`.
 - **27-nov 23:30 — Animal Stubbs:** `proyectos/2026-11-23_animal-stubbs/metadata.json` reserva ese hueco y referencia MP4/portada; `render.log` registra 86.13 s. Los medios no aparecen en el árbol del repositorio. Para el proyecto intermareal: `PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR`, `CONFLICTO_DE_SLOT_ENTRE_RAMAS` y `MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO`.
 - **27-nov 17:00 — Bacterias:** existe programación en main, pero no colisiona con los slots 07:00 ni 23:30 auditados.
-- **28-nov 17:00 — Mareo:** el plan semanal contiene video ID `fcSNbU809ao` y `publishAt=2026-11-28T23:00:00Z`. No colisiona con el slot fijo 23:30 de Llantas. El slot 28-nov 23:30 permanece libre en main.
+- **28-nov 17:00 — Mareo:** el plan semanal contiene video ID `fcSNbU809ao` y `publishAt=2026-11-28T23:00:00Z`. Además, la relectura de `main/proyectos/2026-11-23_animal-tama/metadata.json` encontró `hueco=2026-11-28 23:30`; el slot de Llantas **no está libre en main** y queda `CONFLICTO_DE_SLOT_ENTRE_RAMAS`.
 - No se encontró paquete de main para 30-nov. Los slots 07:00 y 17:00 de ese lunes están dentro de ventanas activas, pero el lunes no figura entre los días preferentes de esas ventanas.
 
 ## Revalidación de los 12 IDs canónicos del lote 5–7 nov
@@ -71,7 +71,7 @@ Los 12 storyboards se volvieron a leer y sus últimos commits siguen fechados el
 ## Estado final del borrador 28-nov
 
 - Narrativa: PASS 90/100, siete checks true, flags vacías.
-- Inspección estática: 225 palabras, 7 escenas, 84 s totales, voz es-MX-JorgeNeural +7% pitch -2Hz, prompt_base del catálogo, bounds globales, capa de dato, fuentes por escena, ambiente/SFX por escena, approved_assets=[], render NOT_GENERATED y ausencia de rutas/asset_filename/asset_type.
+- Inspección estática recontada desde el JSON: 229 palabras, 7 escenas, 78 s de escenas + 6 s de cortinilla = 84 s, voz es-MX-JorgeNeural +7% pitch -2Hz, prompt_base del catálogo, mapa global con bounds y fuente, capa de dato, fuentes por escena, ambiente/SFX por escena, approved_assets=[], render NOT_GENERATED y ausencia de rutas/asset_filename/asset_type.
 - **Validador estructural real: PENDIENTE.** No se pudo ejecutar localmente por el error DNS; la inspección estática no se declara como PASS del validador.
 - **DOI/Crossref: PENDIENTE** para SRC-001.
 - **Handoff: NOT_DISPATCHABLE** y `RECEPCION_GROK_NO_CONFIRMADA`.
@@ -274,3 +274,14 @@ No se modificó ni canceló ningún video. La ausencia de una entrada en el snap
 
 
 - Corrección final de encabezado del radar: se sustituyó el estado inicial obsoleto (“borrador sin DOI/QA”) por el estado verificado de llantas/albedo: 7 escenas, 229 palabras, 84 s, PASS/90 y DOI/resolvedor verificados; siguen pendientes el validador estructural real y el estado Grok. Lectura de vuelta en commit `33b44c7b5c084036a4cfc6bcea0fe7335afb032c`.
+
+
+## Corrección de auditoría — 2026-11-28 08:03 CDMX (supersede las conclusiones previas sobre el slot 23:30)
+
+- **Conflicto de slot confirmado en main:** `proyectos/2026-11-23_animal-tama/metadata.json` (blob `091b10c0e51cf19dcc0f69073cfdcdd2a495e4d3`) reserva explícitamente `2026-11-28 23:30 (America/Mexico_City)`; `guion.md` (blob `455e98fbe46a9ba03d468374a9e08ffe770d5da1`) repite el mismo hueco. Esto corrige y deja sin efecto las notas anteriores que decían que main estaba libre a las 23:30.
+- **Producción preexistente en main:** `render.log` (blob `604813b1c4b623d47d2bc1bf8cb134d9779aa0ba`) registra `OK ... capsula.mp4 duración 85.11s`; `qa_es.json` (blob `ba1eab3d853e14d1aea0969693539f81c40e8051`) registra los checks audiovisuales en true. La metadata declara `mp4_es=/workspace/capcot_main/proyectos/2026-11-23_animal-tama/capsula.mp4` y duración 85.11 s, pero el árbol GitHub actual contiene logs/QA y **no** el MP4: `MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO`.
+- **Clasificación para Llantas/albedo:** `CONFLICTO_DE_SLOT_ENTRE_RAMAS` + `PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR` + `MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO` + `NOT_DISPATCHABLE`. `publishAt_utc=null` en Tama: no se afirma que esté programado o publicado; el conflicto se funda en la reserva explícita del hueco y el render preexistente.
+- **Lectura de vuelta del storyboard feature:** blob `aa85beae3b0c3517ceb742bafe9c6187728c98c1`; 229 palabras, 7 escenas, 78 s + 6 s = 84 s, título de 5 palabras, overlay inicial de 5 palabras, prompt_base literal del catálogo, mapa global y capa de dato con fuente, siete checks narrativos true, PASS/90, SRC-001 `VERIFICADO_CROSSREF`, SRC-002 `VERIFICADO_RESOLVEDOR`, `approved_assets=[]`, `render_status=NOT_GENERATED`, estado `BORRADOR_EN_PROYECTOS_NO_APTO_PARA_PROMOCION`. Es una inspección estática; no sustituye el validador Python.
+- **Handoff:** `cola/entrada/2026-11-28_llantas-hielo-albedo.json` y `cola/estado/2026-11-28_llantas-hielo-albedo.json` devolvieron 404. No se creó entrada ni estado. El workflow acepta únicamente JSON plano en `cola/entrada/*.json`; no se disparó.
+- **Feeds de este corte:** ScienceDaily y Phys.org rechazaron la lectura RSS por tipo XML (`400 Unsupported content-type`); NASA devolvió `400 Unsupported content-type: application/rss+xml`; Google Trends RSS México no fue accesible por este lector. Se usó búsqueda de respaldo; no se eligió candidato adicional ni se abrió otro storyboard.
+- No se modificaron main, `data/*.json`, cola, estados Grok, workflow, secretos, permisos ni medios. No se publicó, programó ni redispatchó nada.
