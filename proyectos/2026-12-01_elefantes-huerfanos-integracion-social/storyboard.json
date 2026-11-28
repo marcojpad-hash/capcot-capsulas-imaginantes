@@ -1,0 +1,369 @@
+{
+  "_schema": "CAPCOT_STORYBOARD_TEXT_V2",
+  "project_id": "2026-12-01_elefantes-huerfanos-integracion-social",
+  "serie": "Datos y ociosidades",
+  "title": "Integración social y fisiología de elefantes huérfanos tras su liberación",
+  "titulo": "Los huérfanos ya volvieron al monte",
+  "language": "es-MX",
+  "aspect_ratio": "9:16",
+  "fecha_objetivo": "2026-12-01",
+  "slot_local": "07:00",
+  "timezone": "America/Mexico_City",
+  "target_duration_seconds": 84,
+  "estructura": "pregunta",
+  "audience": "Público general de México; explicación accesible a nivel bachillerato",
+  "occasion": "Ventana matutina 06:30–07:30; martes preferente; slot propuesto 07:00 CDMX",
+  "resumen": "Un estudio en Sera Wildlife Conservancy comparó metabolitos fecales de elefantes juveniles huérfanos y no huérfanos tres años después de una liberación gradual. Encontró concentraciones comparables entre grupos y asociaciones entre vínculos sociales y señales fisiológicas; no demuestra causalidad ni permite generalizar fuera de esa conservancy.",
+  "narrative_contract": {
+    "central_question": "¿Cómo sabemos si un elefante huérfano se adaptó después de volver a la vida silvestre?",
+    "promise": "Explicar qué señales fisiológicas se compararon tres años después de la liberación y qué relación apareció con los vínculos sociales.",
+    "stakes": "La liberación no termina al abrir la cerca: el bienestar y la reintegración necesitan evaluación, no solo observar que el animal camina libre.",
+    "scientific_turn": "Los metabolitos fecales de glucocorticoides y triyodotironina fueron comparables entre huérfanos y no huérfanos; los lazos sociales más fuertes se asociaron con menor fGCM y mayor fT3.",
+    "evidence_limit": "Estudio observacional en una sola conservancy. Las asociaciones no prueban causalidad y no se generalizan automáticamente a todas las poblaciones de elefantes.",
+    "payoff": "La vuelta al paisaje es solo el inicio: la integración social y el entorno también se relacionan con señales fisiológicas."
+  },
+  "trend_source": {
+    "termino": "Elefantes huérfanos: integración social y fisiología postliberación (fuente primaria; no señal de Google Trends)",
+    "fecha_publicacion": "2026-11-28",
+    "url": "https://www.nature.com/articles/s41598-026-81354-8"
+  },
+  "editorial_status": "PROPUESTA_PENDIENTE_DE_GROK",
+  "arco": {
+    "hook_medias_res": "Los huérfanos ya volvieron al monte; falta saber si su fisiología se parece a la de otros juveniles.",
+    "desarrollo": "Ubicar el estudio, explicar los metabolitos fecales, la comparación entre grupos y la asociación con vínculos sociales y entorno.",
+    "cierre_historia": "Los grupos mostraron concentraciones comparables tres años después; los vínculos sociales se asociaron con parte de la variación.",
+    "reflexion_o_pregunta": "La reintegración se evalúa en contexto: una asociación no es una causa ni una garantía universal."
+  },
+  "estilo_id": "amigurumi",
+  "estilo_visual": "Muñecos tejidos amigurumi en miniatura",
+  "visual_identity": {
+    "style_id": "amigurumi",
+    "style_name": "Muñecos tejidos amigurumi en miniatura",
+    "prompt_base": "miniature crochet amigurumi characters, macro photography, shallow depth of field, soft natural window light turning to warm firelight, handmade yarn texture, cozy diorama props, vertical 9:16, no text",
+    "palette": "cálida → oscura con luz de fuego; crema, arena, ocre, marrón y verde apagado",
+    "lighting": "Luz natural suave que evoluciona a una luz cálida de tarde; sin dramatizar la pérdida ni convertirla en melodrama.",
+    "texture": "Hilo de algodón y puntadas de crochet visibles; diorama miniatura; materialidad consistente entre escenas.",
+    "composition": "Elefantes con anatomía reconocible y postura natural; un grupo por plano; escala y proporciones constantes; vertical 9:16.",
+    "negative_prompt": "texto, logotipos, nombres propios de animales, accesorios no documentados, collares inventados, rasgos humanos, lágrimas, gestos antropomórficos, escenas de rescate inventadas, pines GPS, rutas o puntos de muestreo no publicados",
+    "reference_assets": [],
+    "seed": null,
+    "seed_policy": "Sin semilla fija; conservar escala de tejido, paleta, proporciones y anatomía entre escenas."
+  },
+  "typography_identity": {
+    "font_family": "DejaVu Sans",
+    "font_weight": "700 para gancho; 400 para subtítulos",
+    "title_style": "Máximo seis palabras; presente desde frame 0 en postproducción",
+    "subtitle_style": "Bloques de máximo tres palabras; zona segura inferior",
+    "hierarchy": "Gancho > dato/etiqueta > subtítulos",
+    "animation": "Un movimiento por plano; tipografía en postproducción"
+  },
+  "voice": {
+    "engine": "edge-tts",
+    "voice_id": "es-MX-JorgeNeural",
+    "language": "es-MX",
+    "rate": "+7%",
+    "pitch": "-2Hz",
+    "pad_seconds": 0.3,
+    "modo_pausas": "continuo"
+  },
+  "sources": [
+    {
+      "id": "SRC-001",
+      "cita_corta": "Oduor et al. (2026), “Social integration and physiological variation in post-release orphaned and non-orphaned juvenile African savanna elephants”, Scientific Reports, first online 28-nov-2026.",
+      "url": "https://www.nature.com/articles/s41598-026-81354-8",
+      "doi": "10.1038/s41598-026-81354-8",
+      "accessed": "2026-11-28",
+      "publication_date": "2026-11-28",
+      "supports": [
+        "El estudio se realizó en un santuario de rinocerontes en Sera Wildlife Conservancy, norte de Kenia.",
+        "Comparó metabolitos fecales de glucocorticoides y triyodotironina en juveniles huérfanos y no huérfanos tres años después de la liberación gradual.",
+        "Las concentraciones de ambos metabolitos fueron comparables entre grupos y no hubo diferencias estadísticamente significativas entre huérfanos y controles.",
+        "Los vínculos sociales más fuertes se asociaron con menores metabolitos fecales de glucocorticoides y mayores metabolitos fecales de triyodotironina.",
+        "Tamaño de grupo y verdor de la vegetación también se asociaron con la variación de triyodotironina; el diseño no establece causalidad."
+      ],
+      "verification_status": "VERIFICADO_CROSSREF"
+    },
+    {
+      "id": "SRC-002",
+      "cita_corta": "Goldenberg et al. (2021), “Movement of Rehabilitated African Elephant Calves Following Soft Release Into a Wildlife Sanctuary”, Frontiers in Conservation Science 2, 720202.",
+      "url": "https://www.frontiersin.org/journals/conservation-science/articles/10.3389/fcosc.2021.720202/full",
+      "doi": "10.3389/fcosc.2021.720202",
+      "accessed": "2026-11-28",
+      "publication_date": "2021-09-28",
+      "supports": [
+        "Sera Rhino Sanctuary se encuentra dentro de Sera Wildlife Conservancy, en el norte de Kenia.",
+        "El artículo publica los límites del santuario como 1.04–1.66°N y 37.75–37.92°E; esos límites se usan solo como referencia geográfica, no como puntos GPS del estudio de 2026."
+      ],
+      "verification_status": "VERIFICADO_CROSSREF"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_001",
+      "arc": "hook_medias_res",
+      "duration_seconds": 10,
+      "narration": "La cría ya volvió al monte. Pero, después de perder a su madre, ¿cómo sabemos si su cuerpo también logró adaptarse a la vida en manada?",
+      "on_screen_text": "¿Se adaptaron?",
+      "visual_description": "Grupo pequeño de elefantes africanos jóvenes que avanza entre adultos por una sabana semiárida; escena en curso, sin mostrar rescate ni pérdida; figuras de crochet sin rasgos humanos.",
+      "image_prompt": "miniature crochet amigurumi characters, macro photography, shallow depth of field, soft natural window light turning to warm firelight, handmade yarn texture, cozy diorama props, vertical 9:16, no text; Grupo pequeño de elefantes africanos jóvenes que avanza entre adultos por una sabana semiárida; escena en curso, sin mostrar rescate ni pérdida; figuras de crochet sin rasgos humanos.; anatomically recognizable African savanna elephants, neutral natural posture, no anthropomorphic expressions, no named individuals",
+      "ambiente": "Viento suave de sabana y aves lejanas.",
+      "sfx": [
+        "Pasos suaves sobre hierba seca",
+        "Rumor distante de manada"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "amigurumi",
+      "dramatic_beat": "La liberación ya ocurrió; la duda aparece después, en el cuerpo.",
+      "scene_function": "Abrir con la consecuencia en marcha y plantear la pregunta central.",
+      "causal_bridge_from_previous": "La manada y el paisaje ya están presentes; todavía no sabemos qué indican las señales fisiológicas.",
+      "question_state": "Se sabe que los animales fueron liberados; queda por resolver si sus señales fisiológicas se parecen a las de otros juveniles.",
+      "reason_to_continue": "La pregunta lleva a ubicar el estudio y su población.",
+      "new_information": "El estudio evalúa juveniles huérfanos después de su liberación gradual."
+    },
+    {
+      "id": "scene_002",
+      "arc": "desarrollo",
+      "duration_seconds": 9,
+      "narration": "En Sera Wildlife Conservancy, al norte de Kenia, investigadores estudiaron elefantes huérfanos criados a mano y liberados gradualmente tres años antes.",
+      "on_screen_text": "Sera, Kenia",
+      "visual_description": "Mapa esquemático de África oriental y norte de Kenia; resaltar el área de Sera Rhino Sanctuary dentro de Sera Wildlife Conservancy con una caja regional, sin pines ni trayectorias; elefantes tejidos como escala visual secundaria.",
+      "image_prompt": "miniature crochet amigurumi characters, macro photography, shallow depth of field, soft natural window light turning to warm firelight, handmade yarn texture, cozy diorama props, vertical 9:16, no text; Mapa esquemático de África oriental y norte de Kenia; resaltar el área de Sera Rhino Sanctuary dentro de Sera Wildlife Conservancy con una caja regional, sin pines ni trayectorias; elefantes tejidos como escala visual secundaria.; anatomically recognizable African savanna elephants, neutral natural posture, no anthropomorphic expressions, no named individuals",
+      "ambiente": "Viento seco, insectos y aves lejanas.",
+      "sfx": [
+        "Barrido cartográfico suave",
+        "Golpe sutil de transición"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "style_id": "amigurumi",
+      "dramatic_beat": "El lugar y el tiempo convierten la escena inicial en un estudio concreto.",
+      "scene_function": "Ubicar la investigación y precisar la ventana temporal.",
+      "causal_bridge_from_previous": "La liberación gradual ocurrió en un santuario de rinocerontes dentro de una conservancy del norte de Kenia.",
+      "question_state": "Se conoce la población y el sitio; falta saber qué midieron.",
+      "reason_to_continue": "La pregunta pasa de la ubicación a las señales fisiológicas.",
+      "new_information": "La investigación compara juveniles huérfanos y no huérfanos tres años después de la liberación.",
+      "capa": {
+        "tipo": "mapa",
+        "region": [
+          1.04,
+          37.75,
+          1.66,
+          37.92
+        ],
+        "puntos": [],
+        "areas": [
+          {
+            "id": "sera_rhino_sanctuary",
+            "label": "Sera Rhino Sanctuary dentro de Sera Wildlife Conservancy, norte de Kenia",
+            "bounds": [
+              1.04,
+              37.75,
+              1.66,
+              37.92
+            ],
+            "bounds_label": "Límites publicados: 1.04–1.66°N, 37.75–37.92°E (SRC-002)"
+          }
+        ],
+        "titulo": "Sera Rhino Sanctuary, Sera Wildlife Conservancy, Kenia",
+        "fuente": "SRC-002 — Goldenberg et al. (2021), Frontiers in Conservation Science, DOI 10.3389/fcosc.2021.720202; bounds publicados para el santuario.",
+        "precision_note": "El artículo de 2026 identifica Sera Wildlife Conservancy pero no publica aquí puntos GPS de muestreo. La capa usa los límites del Sera Rhino Sanctuary publicados en SRC-002, dentro de la misma conservancy; no representa puntos de muestreo ni trayectorias GPS del estudio de 2026."
+      }
+    },
+    {
+      "id": "scene_003",
+      "arc": "desarrollo",
+      "duration_seconds": 9,
+      "narration": "Analizaron metabolitos fecales de glucocorticoides, ligados a la respuesta al estrés, y de triyodotironina, una hormona relacionada con el metabolismo.",
+      "on_screen_text": "Señales fecales",
+      "visual_description": "Diorama de laboratorio de campo: guantes y tubos de muestra sin etiquetas legibles, junto a dos diagramas abstractos que representan metabolitos de glucocorticoides y triyodotironina; no mostrar animales individuales ni cifras.",
+      "image_prompt": "miniature crochet amigurumi characters, macro photography, shallow depth of field, soft natural window light turning to warm firelight, handmade yarn texture, cozy diorama props, vertical 9:16, no text; Diorama de laboratorio de campo: guantes y tubos de muestra sin etiquetas legibles, junto a dos diagramas abstractos que representan metabolitos de glucocorticoides y triyodotironina; no mostrar animales individuales ni cifras.; anatomically recognizable African savanna elephants, neutral natural posture, no anthropomorphic expressions, no named individuals",
+      "ambiente": "Ambiente de laboratorio tenue mezclado con viento exterior.",
+      "sfx": [
+        "Clic suave de vial",
+        "Pulso grave breve"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "amigurumi",
+      "dramatic_beat": "La pregunta se vuelve medible: no se trata solo de conducta visible.",
+      "scene_function": "Explicar los dos indicadores biológicos sin exagerar su alcance.",
+      "causal_bridge_from_previous": "El equipo analizó metabolitos fecales relacionados con respuesta al estrés y metabolismo.",
+      "question_state": "Se sabe qué indicadores se midieron; falta conocer cómo se compararon.",
+      "reason_to_continue": "La comparación entre grupos dará el giro.",
+      "new_information": "Los indicadores fueron fGCM y fT3 en muestras fecales."
+    },
+    {
+      "id": "scene_004",
+      "arc": "desarrollo",
+      "duration_seconds": 10,
+      "narration": "Los compararon con elefantes no huérfanos de edad y sexo semejantes, dentro de la misma conservancy. La comparación se hizo tres años después de la liberación.",
+      "on_screen_text": "Tres años después",
+      "visual_description": "Dos grupos esquemáticos de elefantes juveniles de edad y sexo comparables, separados por una línea fina; ambos en el mismo paisaje, sin representar tamaños muestrales ni identidades individuales.",
+      "image_prompt": "miniature crochet amigurumi characters, macro photography, shallow depth of field, soft natural window light turning to warm firelight, handmade yarn texture, cozy diorama props, vertical 9:16, no text; Dos grupos esquemáticos de elefantes juveniles de edad y sexo comparables, separados por una línea fina; ambos en el mismo paisaje, sin representar tamaños muestrales ni identidades individuales.; anatomically recognizable African savanna elephants, neutral natural posture, no anthropomorphic expressions, no named individuals",
+      "ambiente": "Viento de sabana constante, hojas secas.",
+      "sfx": [
+        "Dos golpes suaves sincronizados"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "amigurumi",
+      "dramatic_beat": "La medición adquiere contexto porque existe un grupo de comparación.",
+      "scene_function": "Mostrar el diseño comparativo y el momento posterior a la liberación.",
+      "causal_bridge_from_previous": "Los juveniles huérfanos se compararon con no huérfanos de edad y sexo semejantes en la misma conservancy.",
+      "question_state": "Se conoce la comparación; falta el resultado.",
+      "reason_to_continue": "La respuesta estadística cambia la expectativa inicial.",
+      "new_information": "La comparación se realizó tres años después de la liberación gradual."
+    },
+    {
+      "id": "scene_005",
+      "arc": "desarrollo",
+      "duration_seconds": 9,
+      "narration": "El giro: las concentraciones de ambos metabolitos fueron comparables entre grupos; el estudio no encontró diferencias estadísticamente significativas entre huérfanos y no huérfanos.",
+      "on_screen_text": "Sin diferencia significativa",
+      "visual_description": "Gráfico cualitativo de dos columnas del mismo nivel, sin valores numéricos ni barras inventadas; etiquetas fGCM y fT3 añadidas en postproducción; elefantes de crochet en segundo plano.",
+      "image_prompt": "miniature crochet amigurumi characters, macro photography, shallow depth of field, soft natural window light turning to warm firelight, handmade yarn texture, cozy diorama props, vertical 9:16, no text; Gráfico cualitativo de dos columnas del mismo nivel, sin valores numéricos ni barras inventadas; etiquetas fGCM y fT3 añadidas en postproducción; elefantes de crochet en segundo plano.; anatomically recognizable African savanna elephants, neutral natural posture, no anthropomorphic expressions, no named individuals",
+      "ambiente": "Tono ambiental contenido, sin música triunfal.",
+      "sfx": [
+        "Pulso doble muy suave"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "amigurumi",
+      "dramatic_beat": "El resultado contradice la expectativa de una diferencia clara entre grupos.",
+      "scene_function": "Presentar el giro científico con precisión estadística.",
+      "causal_bridge_from_previous": "Las concentraciones de ambos metabolitos fueron comparables; no se detectaron diferencias estadísticamente significativas entre grupos.",
+      "question_state": "Se responde la comparación principal; falta entender qué variables sí se relacionaron con las señales.",
+      "reason_to_continue": "El giro abre la dimensión social.",
+      "new_information": "El resultado no equivale a demostrar recuperación completa ni ausencia de estrés.",
+      "capa": {
+        "tipo": "dato",
+        "valor": "Concentraciones comparables entre grupos; sin diferencias estadísticamente significativas.",
+        "etiqueta": "Metabolitos fecales de glucocorticoides (fGCM) y triyodotironina (fT3), tres años después de la liberación.",
+        "fuente": "SRC-001 — Oduor et al. (2026), Scientific Reports, early access 28-nov-2026."
+      }
+    },
+    {
+      "id": "scene_006",
+      "arc": "desarrollo",
+      "duration_seconds": 9,
+      "narration": "Pero los vínculos sociales sí se relacionaron con las señales: lazos más fuertes coincidieron con menos glucocorticoides y más triyodotironina en heces.",
+      "on_screen_text": "Lazos sociales",
+      "visual_description": "Grupo de elefantes de crochet en proximidad natural, con dos animales caminando juntos y otros a distancia; composición observacional, sin gestos humanos ni flechas causales.",
+      "image_prompt": "miniature crochet amigurumi characters, macro photography, shallow depth of field, soft natural window light turning to warm firelight, handmade yarn texture, cozy diorama props, vertical 9:16, no text; Grupo de elefantes de crochet en proximidad natural, con dos animales caminando juntos y otros a distancia; composición observacional, sin gestos humanos ni flechas causales.; anatomically recognizable African savanna elephants, neutral natural posture, no anthropomorphic expressions, no named individuals",
+      "ambiente": "Rumor de hojas, pasos suaves y aves lejanas.",
+      "sfx": [
+        "Pasos sincronizados"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "amigurumi",
+      "dramatic_beat": "La ausencia de diferencia entre grupos no agota la explicación.",
+      "scene_function": "Mostrar la asociación entre lazos sociales y metabolitos.",
+      "causal_bridge_from_previous": "Los lazos sociales más fuertes se asociaron con menor fGCM y mayor fT3.",
+      "question_state": "Se conoce una asociación; no se ha establecido causalidad.",
+      "reason_to_continue": "La escena siguiente limita la interpretación y añade el entorno.",
+      "new_information": "La integración social se relacionó con ambas señales fisiológicas."
+    },
+    {
+      "id": "scene_007",
+      "arc": "cierre_historia",
+      "duration_seconds": 10,
+      "narration": "Eso no demuestra que los vínculos causen el cambio. Grupos más grandes y mayor verdor también se asociaron con menor triyodotironina.",
+      "on_screen_text": "No es causalidad",
+      "visual_description": "Composición con un grupo algo mayor y vegetación más verde en el fondo; dos capas separadas, sin flechas de causa; mantener la misma escala de crochet.",
+      "image_prompt": "miniature crochet amigurumi characters, macro photography, shallow depth of field, soft natural window light turning to warm firelight, handmade yarn texture, cozy diorama props, vertical 9:16, no text; Composición con un grupo algo mayor y vegetación más verde en el fondo; dos capas separadas, sin flechas de causa; mantener la misma escala de crochet.; anatomically recognizable African savanna elephants, neutral natural posture, no anthropomorphic expressions, no named individuals",
+      "ambiente": "Viento leve y textura de hojas.",
+      "sfx": [
+        "Cambio de ambiente gradual"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "amigurumi",
+      "dramatic_beat": "La asociación social convive con otras variables del entorno.",
+      "scene_function": "Evitar una explicación monocausal y explicitar el límite.",
+      "causal_bridge_from_previous": "Tamaño de grupo y verdor también se asociaron con menor triyodotironina; no se demuestra que los vínculos causen el cambio.",
+      "question_state": "Se conoce el límite de evidencia; falta cerrar la pregunta sin generalizar.",
+      "reason_to_continue": "El cierre debe devolver la atención a la población estudiada.",
+      "new_information": "El estudio es observacional y se limita a una conservancy."
+    },
+    {
+      "id": "scene_008",
+      "arc": "reflexion_o_pregunta",
+      "duration_seconds": 12,
+      "narration": "El resultado no borra la pérdida ni garantiza lo mismo en todas partes: muestra que la integración social y el entorno importan en esta población. Esto fue Datos y ociosidades.",
+      "on_screen_text": "Integración y entorno",
+      "visual_description": "Plano amplio del grupo de elefantes alejándose por la sabana, con el área de Sera sugerida como paisaje y sin dramatización; composición final estable, sin nuevos datos ni animales identificables.",
+      "image_prompt": "miniature crochet amigurumi characters, macro photography, shallow depth of field, soft natural window light turning to warm firelight, handmade yarn texture, cozy diorama props, vertical 9:16, no text; Plano amplio del grupo de elefantes alejándose por la sabana, con el área de Sera sugerida como paisaje y sin dramatización; composición final estable, sin nuevos datos ni animales identificables.; anatomically recognizable African savanna elephants, neutral natural posture, no anthropomorphic expressions, no named individuals",
+      "ambiente": "Viento de sabana y aves lejanas que se atenúan.",
+      "sfx": [
+        "Pasos que se alejan",
+        "Cola sonora breve"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "style_id": "amigurumi",
+      "dramatic_beat": "La respuesta no es una garantía universal: es una relación observada en una población concreta.",
+      "scene_function": "Pagar la pregunta inicial y cerrar con el límite explícito.",
+      "causal_bridge_from_previous": "La reintegración se relaciona con el entorno social y señales fisiológicas, pero no se convierte en una ley para todos los elefantes.",
+      "question_state": "La pregunta queda respondida dentro del alcance del estudio.",
+      "reason_to_continue": "La frase de cierre completa la cápsula.",
+      "new_information": "El resultado es contextual y no causal."
+    }
+  ],
+  "cortinilla_fuentes": {
+    "duration_seconds": 6,
+    "titulo": "Fuentes",
+    "aviso": "Divulgación prevista para la versión final; declarar solo los recursos realmente generados.",
+    "firma": "Datos y ociosidades",
+    "source_ids": [
+      "SRC-001",
+      "SRC-002"
+    ]
+  },
+  "audio": {
+    "music_asset": null,
+    "music_plan": "sintetico:menor_calma; intención sonora solamente, sin archivo generado.",
+    "music_license": null
+  },
+  "export": {
+    "resolution": "1080x1920",
+    "fps": 30,
+    "render_status": "NOT_GENERATED"
+  },
+  "publicacion": {
+    "status": "PENDIENTE_DECISION_GROK",
+    "platforms": [
+      "YouTube Shorts",
+      "TikTok",
+      "Facebook Reels"
+    ],
+    "note": "No publicar ni programar desde preproducción textual."
+  },
+  "estado": "BORRADOR_EN_PROYECTOS_NO_APTO_PARA_PROMOCION",
+  "production_mode": "storyboard_only",
+  "validation_notes": [
+    "Borrador de investigación; no se ha realizado narrative_qa independiente y no se marca como preparado.",
+    "Preflight manual: 8 escenas, 189 palabras, 78 s de escenas + 6 s de cortinilla = 84 s; gancho de 6 palabras; capas de mapa y dato presentes. No sustituye scripts/validar_storyboard.py.",
+    "Los DOI SRC-001 y SRC-002 se contrastaron con Crossref REST; el validador estructural Python real no se ejecutó en esta sesión.",
+    "El mapa usa límites geográficos publicados para Sera Rhino Sanctuary en SRC-002; no representa puntos GPS del estudio de 2026."
+  ],
+  "linea_tematica_provisional": "Naturaleza / bichos",
+  "approved_assets": [],
+  "risk_notes": [
+    "SRC-001 es una versión early access; puede recibir cambios antes de la versión de registro.",
+    "El estudio de 2026 se limita a una conservancy y es observacional; las asociaciones no prueban causalidad ni garantizan el mismo resultado en otras poblaciones.",
+    "Los límites del mapa provienen de un estudio primario de 2021 sobre Sera Rhino Sanctuary dentro de la misma conservancy; no son coordenadas de muestreo del estudio de 2026.",
+    "No hay narrative_qa independiente, validador estructural real, recibo Grok ni promoción a cola; mantener el proyecto en borrador."
+  ]
+}
