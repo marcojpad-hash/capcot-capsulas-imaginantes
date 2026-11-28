@@ -314,10 +314,19 @@ Resultado: 2 PASS y 10 FAIL. Los 12 `cola/estado/<project_id>.json` devolvieron 
 
 | project_id | QA / estado | Hallazgo de handoff |
 |---|---|---|
-| 2026-11-27_dato-pav1-bacteriofago | PASS 90; 187 palabras; 8 escenas; 84 s | Grok 404; main reserva 07:00 para Microondas → `CONFLICTO_DE_SLOT_ENTRE_RAMAS` |
-| 2026-11-27_dato-registros-intermareales-1950s | PASS 90; 173 palabras; 8 escenas; 84 s | Grok 404; main reserva 23:30 para Stubbs y tiene render preexistente → `CONFLICTO_DE_SLOT_ENTRE_RAMAS` + `PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR` |
+| 2026-11-27_dato-pav1-bacteriofago | PASS 90; 187 palabras; 8 escenas; 84 s | Grok 404; main tiene Microondas con videoId + publishAt a 07:00 y snapshot de colisión con otro ID → `CONFLICTO_DE_SLOT_ENTRE_RAMAS` + `PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR` + `COLISION_HORARIA_NO_RESUELTA` |
+| 2026-11-27_dato-registros-intermareales-1950s | PASS 90; 173 palabras; 8 escenas; 84 s | Grok 404; main reserva 23:30 para Stubbs y tiene render preexistente; MP4 no está en árbol → `CONFLICTO_DE_SLOT_ENTRE_RAMAS` + `PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR` + `MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO` |
 | 2026-11-30_liquen-gen-cereales | PASS 93; 199 palabras; 8 escenas; 84 s | Grok 404; lunes fuera de días preferentes; no promover |
 | 2026-11-30_rapaces-clima-reino-unido | FAIL 82; 182 palabras; 8 escenas; 84 s | Giro científico no explicado; Grok 404; no reescribir durante auditoría |
 | 2026-12-01_elefantes-huerfanos-integracion-social | FAIL 0 por `REVISION_INDEPENDIENTE_AUSENTE`; 189 palabras; 8 escenas; 84 s | Grok 404; main no contiene reserva 1-dic 07:00 en el árbol consultado; no promover por ausencia de revisión independiente |
 
 No se repitieron auditorías narrativas. Los 5 estados Grok anteriores devolvieron 404. No se creó cola ni se cambió el estado de ningún proyecto.
+
+
+## Revisión de programación e IDs de YouTube — 2026-11-28 08:03 CDMX
+
+- No existe archivo `historial_youtube` en el árbol actual de CAPCOT. La fuente disponible más reciente para IDs programados es `docs/briefs/produccion_2026-11-23_28/plan_semana.json` (blob `ed4467d1dc91a176de8da0c681ed3cf3467ae0bd`, generado 21-nov) y el snapshot `data/miniaturas_auditoria_2026-11-21.json` (blob `afc0a587025534eb5a338169383171bb0f38254c`).
+- El plan registra seis IDs con `publishAt` y `publishAt_leido`: `tmOji99zGPE` (23-nov 07:00), `_YzBY4OfUeo` (24-nov 17:00), `W9g2tPZTpD4` (25-nov 07:00), `-1DRh_qj7Bg` (26-nov 17:00), `nd0rs6iVy8E` (27-nov 07:00) y `fcSNbU809ao` (28-nov 17:00). El snapshot del 21-nov los registra privados/programados. `data/publicaciones.json` solo contiene un registro de esos seis: `_YzBY4OfUeo`; los otros cinco no tienen confirmación en ese ledger.
+- El snapshot de miniaturas registra seis colisiones de `publishAt`. La del 28-nov 17:00 CDMX enfrenta `gN6svdqe62Q` y `fcSNbU809ao`, ambos anotados como `programado`; la del 27-nov 07:00 enfrenta `jiX6RdwJ1gg` y `nd0rs6iVy8E`. Son hallazgos de un snapshot del 21-nov, no lectura actual de YouTube Studio: registrar `RIESGO_IDS_ANTIGUOS_AUN_PROGRAMADOS` y `COLISION_HORARIA_NO_RESUELTA`, sin afirmar que hoy siguen activos.
+- El paquete de Microondas en main conserva `videoId=nd0rs6iVy8E` y `publishAt=2026-11-27T13:00:00Z`; por eso PAV1 no se redispatcha. Stubbs conserva `render.log` y `qa_es.json` con 86.13 s, pero su MP4 referido no aparece en el árbol; no se redispatcha.
+- El ID `fcSNbU809ao` tiene reserva del 28-nov 17:00 en el plan, pero el snapshot registra otra cápsula a la misma hora. No se cambió horario, privacidad, miniatura, video ni publicación. Requiere comprobación del propietario en YouTube Studio para resolver la colisión y reconciliar los cinco IDs sin registro de publicación.
