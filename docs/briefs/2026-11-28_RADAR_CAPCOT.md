@@ -265,3 +265,49 @@ Se reintentó la lectura de los feeds configurados en `scripts/tendencias.py`. L
 Respaldo oficial: [Google Trends — Trending Now, México](https://trends.google.com/trending?geo=MX). El HTML disponible mostraba un snapshot de 28-nov 09:00 UTC (03:00 CDMX), 198 tendencias en las últimas 24 h. Entre las primeras 25: `clima` (2M+), `epicentro temblor hoy` (100K+), `nevada de la Ciudad de México de 1967` (2K+) y búsquedas deportivas/entretenimiento. No aparece un tema científico claro entre esas primeras tendencias. El snapshot es anterior al corte de Trends de 06:03 CDMX ya documentado arriba; no lo sustituye ni justifica cambiar el tema.
 
 Se revisaron además listados secundarios de papers recientes, pero no se agregó un candidato sin lectura/verificación de su fuente primaria. No hay slot libre hoy: 17:00 tiene colisión en la programación de main y 23:30 está reservado por Tama en main. Resultado: no se creó storyboard adicional, no se reescribieron claims y no se generaron medios.
+
+## Corte incremental de radar — 2026-11-28 12:02 CDMX
+
+### Acceso a RSS y respaldo oficial
+
+- Se releyó la lista de feeds de `scripts/tendencias.py`. El lector web rechazó los RSS XML; estos errores describen la interfaz de lectura disponible, no prueban que los servidores de origen estén caídos:
+  - ScienceDaily ciencia, salud y espacio: `400 Unsupported content-type: application/xml`.
+  - Phys.org: `400 Unsupported content-type: text/xml`.
+  - NASA: `400 Unsupported content-type: application/rss+xml`.
+  - ESA Space Science: `404 Not Found`.
+  - Nature: `400 Unsupported content-type: application/rss+xml`.
+  - EurekAlert y SINC: URL no accesible mediante el lector.
+  - UNAM Global: `400 Unsupported content-type: application/rss+xml`.
+  - Google Trends RSS México: URL no accesible mediante el lector.
+- `scripts/tendencias.py` no se ejecutó localmente en este corte; no se atribuye al script un error que solo observó el lector web.
+- Respaldo oficial actualizado: [Google Trends — Trending Now, México](https://trends.google.com/trending?geo=MX). El HTML consultado muestra 215 tendencias en las últimas 24 h. Entre las primeras 25 predominan deportes, entretenimiento y clima; aparecen `clima` (2M+) y `epicentro temblor hoy` (100K+), pero no un tema científico inequívoco. La palabra `fenómeno` es demasiado ambigua para convertirla en candidato.
+
+### Candidatos incrementales
+
+1. **Age-dependent progenitor switching shapes adult brown adipose tissue heterogeneity** — Nature Metabolism, 27-nov-2026. DOI identificado en la página editorial: `10.1038/s42255-026-01669-8`. [Artículo primario](https://www.nature.com/articles/s42255-026-01669-8).
+   - **Observación:** el estudio identifica células progenitoras Myl1+ que emergen con la edad y pasan a ser una fuente principal de adipocitos pardos en ratones adultos y de mediana edad; su ablación reduce masa de tejido adiposo pardo y deteriora el control de glucosa.
+   - **Límite:** la evidencia causal principal es en ratones. Los datos humanos descritos en la página no autorizan trasladar el resultado a tratamientos ni a pérdida de peso.
+   - **Cálculo:** la fecha editorial es del 27-nov; está dentro de las 48 h del corte, pero no es una publicación del 28-nov.
+   - **Estado:** fuente primaria apta; DOI/URL Crossref-resolvedor pendiente por indisponibilidad del endpoint en esta ejecución; PENDING_MAP para cualquier mapa de laboratorio.
+
+2. **New technology unearths surprising complexity in small earthquakes** — Rice University, 26-nov-2026; estudio publicado en *Science*. DOI candidato: `10.1126/science.aei0507`. [Comunicado institucional primario](https://news.rice.edu/news/2026/new-technology-unearths-surprising-complexity-small-earthquakes).
+   - **Observación:** una fibra óptica de 28 km junto a una falla de la zona sísmica de Brawley registró 16 sismos pequeños durante tres horas; el mayor fue M2 y mostró dos etapas de ruptura separadas por 42 ms. Los autores proponen que la primera pudo disparar la segunda.
+   - **Límite:** un evento M2 y una secuencia local; no demuestra capacidad de predicción de terremotos. La página editorial de *Science* devolvió 403; se conserva el comunicado de Rice como fuente institucional primaria y el DOI queda PENDING_CROSSREF.
+   - **Cálculo:** publicación fechada 26-nov, límite de 48 h; la hora exacta no está indicada, por lo que no se afirma que cumpla la ventana estricta.
+
+3. **Euclid: Discovery of a quasar at z = 8.13 hosting a 360-million solar-mass black hole** — Astronomy & Astrophysics, 24-nov-2026. DOI citado por ESA: `10.1051/0004-6361/202662243`. [Comunicado primario de ESA](https://www.esa.int/articles/about-us/directorates/science/euclid/euclid-breaks-own-quasar-record-by-40-million-years).
+   - **Observación:** el objeto J1504+6252 se observa a z=8.13, cuando el universo tenía aproximadamente 630 millones de años; el seguimiento con Keck, LBT, Hubble y Webb estima un agujero negro de unos 360 millones de masas solares.
+   - **Límite:** un cuásar; la masa es una estimación del sistema observado, no una regla general sobre todos los agujeros negros tempranos.
+   - **Cálculo:** cuatro días desde la publicación; fuera de la ventana de 48 h para dato-día.
+   - **Estado:** fuente institucional primaria apta; DOI visible en el comunicado ESA, Crossref/resolvedor pendientes por fallo de acceso.
+
+4. **NASA’s NG-25 Mission to Launch Pioneering Space Crops Research** — NASA Science, 27-nov-2026. [Fuente oficial](https://science.nasa.gov/science-research/biological-physical-sciences/nasas-ng-25-mission-to-launch-pioneering-space-crops-research/).
+   - **Observación:** la misión llevará el prototipo Ohalo III para validar entrega de agua y optimización de volumen en cultivo vegetal en microgravedad; también incluye una investigación de manejo de fluidos para mantener modelos de tejido cerebral.
+   - **Límite:** la página describe objetivos experimentales, no resultados obtenidos; no se atribuye éxito al experimento ni una fecha/hora de lanzamiento que la fuente no declara.
+   - **Estado:** URL oficial primaria apta, sin DOI; candidato para revisar después de la confirmación de vuelo, no para narrar resultados anticipados.
+
+### Verificación DOI y decisión editorial
+
+- Los tres intentos REST de Crossref terminaron con el error literal `URLError: <urlopen error [Errno -3] Temporary failure in name resolution>`. Los intentos del resolvedor DOI mediante el lector web devolvieron `403 Forbidden`.
+- No se marca ningún DOI nuevo como `VERIFICADO_CROSSREF` en este corte. Las páginas editoriales/ESA identifican los DOI, pero la compuerta Crossref-resolvedor queda pendiente.
+- **Recomendación:** conservar los cuatro como candidatos documentales; no crear storyboard. El 28-nov 07:00 ya pasó, la ventana de tarde tiene paquetes programados en main y el slot fijo 23:30 está reservado en main. No hay slot autorizado libre para hoy.
