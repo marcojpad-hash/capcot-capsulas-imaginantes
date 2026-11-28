@@ -165,3 +165,11 @@ La comparación entre el plan semanal y `data/miniaturas_auditoria_2026-11-21.js
 - **28-nov 17:00:** plan semanal registra Mareo `fcSNbU809ao`; la auditoría de miniaturas registra `gN6svdqe62Q` (“El Cinco de Mayo NO es la Independencia”) a 17:00.
 
 Los registros no se editaron. Las tres horas se consideran ocupadas/conflictivas para CAPCOT; la discrepancia interna de main debe resolverse por el operador del calendario, no por este investigador. La reserva de Llantas para 28-nov 23:30 sigue libre de conflicto en main.
+
+
+## Conteo exacto de cola por rama — 2026-11-28 04:11 CDMX
+
+- `main/cola/entrada/`: 36 entradas: un `.gitkeep` y 35 directorios anidados; **cero JSON planos** en el primer nivel.
+- `feature/capcot-video-discovery-continuity/cola/entrada/`: 2 entradas: un `.gitkeep` y el directorio anidado del 09-nov; **cero JSON planos**.
+- `main/cola/estado/2026-11-09_dato-robot-ensambla-orbita.json` y `main/cola/estado/2026-11-27_bacterias-vuelta-oxigeno.json` devuelven HTTP 404. No crear ni corregir estados.
+- El selector del workflow escucha `cola/entrada/*.json` de primer nivel. Por tanto, los 35 paquetes anidados de main y el paquete anidado de feature no disparan el dispatch actual; el SUCCESS del worker con `sin trabajo en cola` es coherente con ese selector.
