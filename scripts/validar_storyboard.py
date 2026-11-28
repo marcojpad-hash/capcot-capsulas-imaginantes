@@ -35,9 +35,10 @@ def _https_status(host, path):
             headers={"User-Agent": "capcot-validador/4.0", "Accept": "application/json, text/html;q=0.9"},
         )
         response = connection.getresponse()
-        return int(response.status), response.getheader("Location")
+        body = response.read()
+        return int(response.status), response.getheader("Location"), body
     except Exception:
-        return None, None
+        return None, None, None
     finally:
         if connection is not None:
             connection.close()
@@ -51,10 +52,19 @@ def check_doi(doi):
     if not re.fullmatch(r"10\.\d{4,9}/[^\s?#\\]+", doi):
         return False
     encoded = urllib.parse.quote(doi, safe="/-._;()")
-    status, _ = _https_status("api.crossref.org", "/works/" + encoded)
+    status, _, body = _https_status("api.crossref.org", "/works/" + encoded)
     if status == 200:
-        return True
-    status, location = _https_status("doi.org", "/" + encoded)
+        try:
+            payload = json.loads(body)
+        except (TypeError, ValueError, UnicodeDecodeError):
+            return False
+        message = payload.get("message") if isinstance(payload, dict) else None
+        registered_doi = message.get("DOI") if isinstance(message, dict) else None
+        return (
+            isinstance(registered_doi, str)
+            and registered_doi.strip().casefold() == doi.casefold()
+        )
+    status, location, _ = _https_status("doi.org", "/" + encoded)
     if status not in {301, 302, 303, 307, 308} or not location:
         return False
     parsed = urllib.parse.urlparse(location)
