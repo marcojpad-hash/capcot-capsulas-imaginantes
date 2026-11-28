@@ -933,3 +933,34 @@ No se identificó cambio oficial nuevo de APIs que justificara revisión adicion
 - No hubo runtime local; se hizo revisión estática y contraste con GitHub Actions. No se ejecutó validador local ni `--check-doi` para PAV1/Intermareal/Liquen.
 - No se modificaron storyboards, claims, `data/*.json`, cola/entrada, cola/estado, cola/bloqueados, workflows, secretos, permisos, PRs ni `main`. Solo se actualizaron este control y el expediente documental de Kuroshio.
 - No se promovieron paquetes, no se disparó dispatch, no se enviaron payloads, no se generaron medios ni se consumieron créditos. No se encontró cambio oficial de API que justificara revisión adicional.
+
+
+## Revalidación 27-nov-2026 — 17:57 CDMX
+
+### Ramas, PR y CI
+
+- La rama de trabajo sigue siendo **feature/capcot-video-discovery-continuity**. Antes de este corte, HEAD era **22dbaea61d3bb870dbd5a3ff93a8ea67ccdb5499**; ese commit modificó únicamente este control (58 altas, 13 bajas), no storyboards. Este run actualizó el radar en **23ab8d705efd98b59546cef2648ae1c6d5a93e9f** y corrigió su título/cifras en **b14af7946b5bfda4da8e10a8400d862e110013e2**.
+- **main** permanece solo lectura. Su HEAD **6a96b3eb18b0bf3369e454269649663295685207** cambió únicamente **data/endscreens_rotacion.json**, por el commit “pantallas 2026-11-27_17 pendiente_studio”; no se tocó ese archivo.
+- La última CI de feature consultada (**46078959750**) terminó SUCCESS en SHA **1003644ee**, anterior al HEAD documental 22dbaea y a los dos commits de radar. Su comando no incluye **--check-doi**; no acredita DOI.
+- Semgrep **46080610450** terminó FAILURE en main, SHA **6a96b3eb**, con **37 hallazgos bloqueantes** y SARIF no publicado por fallo. CodeQL **46080611866** terminó SUCCESS sobre el mismo SHA. La falla Semgrep es de main; no se atribuye a PR #15.
+- PR #3 continúa abierto y mergeable_state=dirty (724 archivos; no integrar). PR #13, #14 y #15 continúan abiertos; no se fusionó ni cerró ninguno.
+- Issue #16 sigue abierto, sin comentarios nuevos: lote Imaginantes de 17 MP4, 10 resubidas TikTok y Pancho EN con chat Grok bloqueado. No se enviaron mensajes ni se hicieron resubidas.
+
+### Reconciliación de fechas, slots y producción previa
+
+- **27-nov, 07:00 — Microondas en main:** plan_semana.json conserva videoId=nd0rs6iVy8E, publishAt=2026-11-27T13:00:00Z y QA audiovisual de 77 s. El MP4 referenciado vive bajo /workspace, fuera del árbol Git. Resultado: **PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR** + **MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO**.
+- **27-nov, 17:00 — Bacterias en main:** programacion.json conserva publish_at=2026-11-27T23:00:00Z, privacidad private y estado programado_sin_montar, sin video_id. El storyboard de proyecto contiene siete escenas, asset_filename y export.filename; las duraciones de escena suman 74 s y la cortinilla 6 s (80 s frente a target_duration_seconds=82). La carpeta anidada de cola/entrada contiene un storyboard.json literal PLACEHOLDER, no una copia JSON válida; no existe MP4 verificable en el árbol. Resultado: **PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR**, **MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO**, **NOT_DISPATCHABLE** y **RECEPCION_GROK_NO_CONFIRMADA** (estado 404). No se corrigió ni canceló la programación de main.
+- **27-nov, 23:30 — Stubbs en main:** existe render previo con duración registrada de 86,13 s; el medio referenciado no está en el árbol. Resultado: **PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR** + **MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO**.
+- **28-nov, 17:00 — Mareo en main:** plan_semana.json conserva videoId=fcSNbU809ao, publishAt=2026-11-28T23:00:00Z y QA audiovisual de 79,8 s. El MP4 referenciado está fuera del árbol. No cancelar ni redispatchar. El slot fijo **28-nov, 23:30** permanece libre en los registros consultados.
+- **Proyectos en feature:** PAV1 (27-nov 07:00) mantiene PASS/90, 8 escenas y 187 palabras; conflicto con Microondas en main. Intermareal (27-nov 23:30) mantiene PASS/90, 8 escenas y 173 palabras; conflicto con Stubbs en main. Liquen (30-nov 17:00) mantiene PASS/93, 8 escenas y 199 palabras, pero DOI PENDING_CROSSREF y slot_cesta ausente. Rapaces (30-nov 07:00) mantiene FAIL/82, 8 escenas y 182 palabras, flag GIRO_CIENTIFICO_NOMBRADO_PERO_NO_EXPLICADO, DOI PENDING_CROSSREF y slot_cesta ausente.
+- Se consultó cola/estado/<project_id>.json para PAV1, Intermareal, Liquen, Rapaces y Bacterias; los cinco devolvieron 404. Registrar en todos: **RECEPCION_GROK_NO_CONFIRMADA**.
+- El workflow escucha cola/entrada/*.json y su selector usa find -maxdepth 1; las carpetas anidadas no son dispatchables. Feature no tiene entradas planas nuevas; la entrada de Bacterias en main también es anidada. No se creó cola ni se promovió ningún storyboard.
+- data/rotacion.json de main llega hasta 21-nov y data/estilos_usados.json hasta 09-nov; no acreditan rotación actual para el 27–30. Se contrastaron los proyectos y la parrilla real; no se modificó ningún data/*.json.
+- No existe archivo independiente historial_youtube en el árbol consultado. Las fuentes disponibles para historial/programación son data/publicaciones.json (62 registros) y docs/briefs/produccion_2026-11-23_28/plan_semana.json.
+- Los 12 IDs del lote 5–7 nov permanecen en el resultado ya registrado: 2 PASS y 10 FAIL. El commit previo de feature modificó solo este control, no sus storyboards; no se repitió PASS ni se generó nueva QA. No hubo promoción.
+- Los cuatro proyectos de feature consultados no contienen ESTADO_EJECUCION.md; no había un estado PREPARADO que corregir.
+
+### Radar y cierre
+
+- El radar recibió tres candidatos nuevos y el corte de Google Trends en docs/briefs/2026-11-27_RADAR_CAPCOT.md. Crossref REST y doi.org devolvieron Internal Error () para los tres DOI; el slot 28-nov 23:30 queda libre, sin selección ni storyboard.
+- No se generaron medios, frames, imágenes, voz, audio, video, renders ni placeholders. No se disparó el workflow Grok, no se enviaron payloads, no se publicó ni programó, no se modificó main, data/*.json, secretos o permisos.
