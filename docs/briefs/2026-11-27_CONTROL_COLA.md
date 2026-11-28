@@ -1167,3 +1167,10 @@ No se disparó dispatch, no se enviaron payloads, no se modificaron estados Grok
 - Se leyó cola/estado/2026-11-28_llantas-hielo-albedo.json y el resultado fue 404 NOT_FOUND. Registro: RECEPCION_GROK_NO_CONFIRMADA; no se creó ni editó el estado.
 - Clasificación NOT_DISPATCHABLE: solo existe el storyboard bajo proyectos/; no hay JSON plano del proyecto en cola/entrada. cola/bloqueados y salidas no contienen el project_id; publicaciones/ no existe y data/publicaciones.json main no contiene el proyecto.
 - No hay medios declarados ni procesamiento previo detectado. No se creó cola, no se ejecutó workflow y no se realizó handoff.
+
+
+## Actions automáticas posteriores al borrador — CodeQL
+
+- El commit del storyboard fea121c6ef2412f4385ef92f83cdb796c55ce9c6 disparó automáticamente el workflow dinámico PR #3. Run 46115595793 terminó SUCCESS con jobs Analyze (actions) y Analyze (python). El log confirma CodeQL; no es el validador estructural ni la comprobación DOI/Crossref.
+- Los commits de documentación 507ab3a049ee050816e47b5db9d7cf2fe3d2b7e7, 9c15f7d4f5364d6825cc3c51e0d6610e9f5801de, 6ce91389c2bdaa3c159c64ebb734ff0516777eb3 y dc62fd82a340b225ce2af618481052f3ab6a02b7 generaron análisis CodeQL adicionales. En la última lectura, runs 46115611009 y 46115666229 seguían in_progress; no se atribuye resultado final.
+- No se disparó manualmente ningún workflow y no se observó un nuevo run Grok en los 15 Actions más recientes. El selector de dispatch no recibe cambios porque no se tocó cola/entrada.
