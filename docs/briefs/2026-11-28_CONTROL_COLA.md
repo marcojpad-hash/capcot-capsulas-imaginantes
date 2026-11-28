@@ -124,3 +124,33 @@ Se buscó cada uno de los 12 project_id canónicos en `data/publicaciones.json`,
 
 - PAV1 `10.3389/fpls.2026.2008228`: Crossref REST devolvió `status=ok`, tipo `journal-article`, título coincidente, publisher Frontiers Media SA y registro creado/publicado el 26-nov-2026. Se actualizó únicamente `sources[0].verification_status=VERIFICADO_CROSSREF`; QA PASS90 y narración permanecen sin cambios. El conflicto de slot con main y el procesamiento previo siguen impidiendo promoción.
 - Intermareales mantiene SRC-001 `VERIFICADO_CROSSREF` y SRC-002/SRC-004 `VERIFICADO_RESOLVEDOR`; no se modificaron.
+
+
+## Corrección de fuente de programación y estado vigente — 2026-11-28 04:11 CDMX
+
+Esta sección **supersede las líneas anteriores de este control** cuando difieran; conserva el historial de observaciones previas.
+
+### Estado vigente de los cinco proyectos
+
+- **PAV1 (27-nov 07:00):** DOI `10.3389/fpls.2026.2008228` verificado por Crossref; QA PASS90 sin cambios. Main mantiene dos registros para el mismo `publishAt=2026-11-27T13:00:00Z`: Microondas `nd0rs6iVy8E` en el plan semanal y `jiX6RdwJ1gg` en `data/miniaturas_auditoria_2026-11-21.json`. La duplicidad interna de main no libera el slot; PAV1 sigue `CONFLICTO_DE_SLOT_ENTRE_RAMAS` y `NOT_DISPATCHABLE`.
+- **Intermareales (27-nov 23:30):** main reserva ese hueco con `2026-11-23_animal-stubbs`. Su metadata indica `hueco=2026-11-27 23:30`, hay `render.log` y `render_en.log`, pero los MP4 referenciados no aparecen en la carpeta del proyecto ni en `salidas/`: `PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR` + `MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO`. Para Intermareales: `CONFLICTO_DE_SLOT_ENTRE_RAMAS` y `NOT_DISPATCHABLE`.
+- **Llantas (28-nov 23:30):** PASS90; SRC-001 `VERIFICADO_CROSSREF`, SRC-002 `VERIFICADO_RESOLVEDOR`; 225 palabras, 7 escenas y 84 s totales en inspección estática. El validador Python real sigue sin ejecutarse; no promover.
+- **Líquenes (30-nov 17:00):** PASS93 conservado; DOI `10.1038/s41586-026-11151-w` `VERIFICADO_CROSSREF` (publicación 25-nov). Lunes fuera de días preferentes; no promover.
+- **Rapaces (30-nov 07:00):** FAIL82 conservado; DOI `10.3389/fevo.2026.1922294` `VERIFICADO_CROSSREF` (publicación 26-nov). No reescribir narración; lunes fuera de días preferentes; no promover.
+
+### Main: horarios, reservas y producción preexistente
+
+- **27-nov 17:00 — Bacterias:** la carpeta `main/cola/entrada/2026-11-27_bacterias-vuelta-oxigeno/` contiene literalmente `PLACEHOLDER` en `storyboard.json` y `fuentes.md`; no es JSON válido ni paquete dispatchable. No se cuenta como producción ni como reserva confirmada de slot.
+- **28-nov:** Mareo `fcSNbU809ao` ocupa 17:00; el slot 23:30 de Llantas no tiene conflicto en main. La auditoría de miniaturas también registra Big Ben a 19:00; no colisiona con 23:30.
+- **29-nov:** main tiene `Jw_PpIT7JsI` a 07:00, `m1FeS0mhfZ4` a 10:00 (archivo `data/rehechos_2026-11-22.json`), `2ugUwsX4k6g` a 13:30, `jNMThVLPXvc` a 17:00 y `gr3DmwXZLsY` a 19:00. Además, `2026-11-23_animal-billy` reserva 23:30 con render logs y MP4 referenciado fuera del árbol GitHub. No hay slot libre para un storyboard nuevo ese día.
+- **30-nov 23:30:** Cher Ami está programado con `publishAt_utc=2026-12-01T05:30:00Z`; hay render logs y referencia a MP4, pero el archivo no aparece en el directorio del proyecto: `PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR` + `MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO`. Los slots 07:00/17:00 de ese lunes no tienen reserva main observada, pero lunes no es día preferente.
+- Los proyectos main Stubbs, Billy y Cher Ami tienen `render.log`/ `render_en.log` y referencias `mp4_es`/ `mp4_en`; no hay MP4 en sus carpetas GitHub. No inferir que el medio existe por el path de workspace.
+- La auditoría de miniaturas de main contiene 36 registros con MP4 no presente en esa caja ni miniatura vertical: 32 `programado`, 3 `público` y 1 `privado sin publishAt`. No regenerar ni cancelar; clasificar los medios como `MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO`.
+
+### Inventario heredado y selector
+
+- `main/cola/entrada` tiene paquetes anidados; el subdirectorio `2026-11-27_bacterias-vuelta-oxigeno` es el placeholder anterior. `feature/cola/entrada` solo conserva el paquete anidado del 09-nov; no hay JSON plano actual en primer nivel.
+- El paquete 09-nov `2026-11-09_dato-robot-ensambla-orbita` tiene producción real en `main/cola/entrada/<id>/` (MP4, portada y nueve frames); su YouTube ID `ZG4iQgmWrLI` tiene programación histórica para 21-nov 19:00, ya pasada. `metadata.json` conserva `privacyStatus=private` mientras `programacion.json` dice `programado`; el estado público no está verificado. En feature, la carpeta `frames/` solo tiene `.gitkeep`; el estado individual Grok sigue 404. Clasificación: `PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR`, `NOT_DISPATCHABLE_POR_SELECTOR`, y no inferir recepción.
+- `feature/cola/bloqueados` tiene 47 entradas y 9 pares de copias JSON/directorio con nombres heredados; varias variantes no coinciden con los 12 IDs canónicos. No se movió ni borró nada.
+- `main/data/publicaciones.json` conserva 62 registros (última fecha observada 24-nov); dos de los 12 IDs canónicos tienen publicación histórica. `data/vistas_historico.json` tiene 110 registros y ninguno de los 12 IDs. No existen directorios separados `publicaciones/` ni `historial_youtube/`.
+- El worker de cola `46119729030` terminó SUCCESS, pero su log dice `[trabajador] sin trabajo en cola.`; no prueba recepción ni dispatch. El workflow Grok selecciona JSON planos de primer nivel; no se disparó workflow ni webhook.
