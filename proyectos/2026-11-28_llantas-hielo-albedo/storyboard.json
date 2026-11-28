@@ -126,7 +126,7 @@
       "id": "scene_002",
       "arc": "desarrollo",
       "duration_seconds": 12,
-      "narration": "Los autores midieron propiedades ópticas de esas partículas y combinaron los resultados con cálculos de radiación en nieve y simulaciones globales. No estudiaron una sola montaña: modelaron la criosfera.",
+      "narration": "Los autores midieron propiedades ópticas de esas partículas y las combinaron con cálculos de radiación en nieve y simulaciones globales. El modelo estima el efecto en la criosfera, no en un solo glaciar.",
       "on_screen_text": "Del asfalto al hielo",
       "visual_description": "Dos planos conectados: neumático en carretera y partículas suspendidas que alcanzan una superficie de nieve remota; representación esquemática del transporte atmosférico.",
       "image_prompt": "Banksy-style street stencil art on a weathered concrete wall, black spray paint with a single red accent, drips, vertical 9:16, no text; split composition of a road tire shedding tiny black particles and wind carrying them toward a remote snow and ice field, one red accent, no text, no logos.",
@@ -243,14 +243,7 @@
       "causal_bridge_from_previous": "El cambio de albedo se conecta con el forzamiento radiativo estimado.",
       "question_state": "Se conoce la reducción de reflexión y el forzamiento; falta la consecuencia en la fusión.",
       "reason_to_continue": "La escena siguiente mide la respuesta de fusión y su variación regional.",
-      "new_information": "El paper estima reducción de albedo de 0.16 ± 0.12% y forzamiento de 0.015 ± 0.012 W/m² (~17.4% del carbono negro).",
-      "capa": {
-        "tipo": "dato",
-        "valor": "0.19 ± 0.14",
-        "unidad": "mm de equivalente de agua por día",
-        "etiqueta": "Aceleración modelada de la fusión atribuida a partículas de desgaste",
-        "fuente": "Liu et al., Nature Climate Change (2026), resumen y Fig. 3; Zenodo 23299235."
-      }
+      "new_information": "El paper estima reducción de albedo de 0.16 ± 0.12% y forzamiento de 0.015 ± 0.012 W/m² (~17.4% del carbono negro)."
     },
     {
       "id": "scene_006",
@@ -274,7 +267,14 @@
       "causal_bridge_from_previous": "El dato de fusión se interpreta como estimación modelada y variable por región.",
       "question_state": "Se sabe que el efecto existe en el modelo; no que todos los glaciares respondan igual.",
       "reason_to_continue": "El cierre debe volver al asfalto y pagar la pregunta inicial.",
-      "new_information": "La fuente indica que en regiones clave de latitud media y alta el forzamiento puede rivalizar o superar al carbono negro."
+      "new_information": "La fuente indica que en regiones clave de latitud media y alta el forzamiento puede rivalizar o superar al carbono negro.",
+      "capa": {
+        "tipo": "dato",
+        "valor": "0.19 ± 0.14",
+        "unidad": "mm de equivalente de agua por día",
+        "etiqueta": "Aceleración modelada de la fusión atribuida a partículas de desgaste",
+        "fuente": "Liu et al., Nature Climate Change (2026), resumen y Fig. 3; Zenodo 23299235."
+      }
     },
     {
       "id": "scene_007",
@@ -333,7 +333,7 @@
   "estado": "BORRADOR_EN_PROYECTOS_NO_APTO_PARA_PROMOCION",
   "production_mode": "storyboard_only",
   "validation_notes": [
-    "Preflight manual: 7 escenas; 221 palabras de narración; 78 s de escenas + 6 s de cortinilla = 84 s; gancho de 5 palabras; mapa global con bounds válidos; capa de dato presente.",
+    "Preflight manual: 7 escenas; 224 palabras de narración; 78 s de escenas + 6 s de cortinilla = 84 s; gancho de 5 palabras; mapa global con bounds válidos; capa de dato en escena de fusión.",
     "El validador estructural real no se ejecutó porque el entorno no pudo clonar el repositorio (Could not resolve host: github.com). No se atribuye PASS estructural.",
     "No se registró narrative_qa: la lectura en frío corresponde a un auditor independiente posterior."
   ],
