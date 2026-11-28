@@ -152,3 +152,29 @@ Los RSS científicos de scripts/tendencias.py y Google Trends RSS México fallar
 - Se actualizaron únicamente los campos `verification_status` de ambas fuentes en el storyboard. Narración, claims, cifras y QA no cambiaron.
 - La inspección estática que replica las comprobaciones estructurales del validador encontró cero errores: 225 palabras según la expresión del script, 7 escenas, 78 s de escenas + 6 s de cortinilla = 84 s, cuatro arcos, voz, prompt_base, mapa con bounds válidos, capa de dato, source_ids, assets vacíos y render NOT_GENERATED. **No equivale a ejecutar** `scripts/validar_storyboard.py`; esa ejecución sigue pendiente por fallo DNS del entorno local.
 - La verificación DOI independiente ya está resuelta; la compuerta estructural real sigue pendiente. No se promueve el paquete ni se crea entrada de cola.
+
+
+## Revalidación RSS, tendencias y Crossref — 2026-11-28 04:11 CDMX
+
+### Cinco candidatos recientes: DOI verificados
+
+Las cinco referencias primarias del radar quedaron contrastadas contra Crossref REST. Los metadatos devueltos coinciden con DOI y título; las fechas primarias se encuentran entre el 26 y el 27 de noviembre:
+
+1. **Bosques y resiliencia:** `10.1038/s41559-026-03254-4`, `published-online=2026-11-27`, Nature Ecology & Evolution. Artículo primario accesible; 0.7 millones de parcelas, asociación positiva en 51.5% de bosques y negativa en 48.5%. La relación no es universal; conservar la diferencia entre asociación observada y proyección de escenarios.
+2. **Cohesión cromosómica en óvulos envejecidos:** `10.1126/science.aei5852`, `published-print=2026-11-26`, Science. Artículo primario accesible; el sistema artificial reduce PSSC en óvulos de ratón envejecidos y se adaptó como prueba de principio a cromosomas humanos. No presentarlo como tratamiento clínico.
+3. **Evolución funcional de OXA-48:** `10.1038/s41467-026-78841-x`, `published-online=2026-11-27`, Nature Communications. Artículo primario accesible; el resultado central es un intercambio funcional entre subestados catalíticos. Mantener pendiente la decisión editorial por proximidad temática con cápsulas antimicrobianas previas.
+4. **Partículas de llantas y criósfera:** `10.1038/s41558-026-02800-z`, `published-online=2026-11-27`, Nature Climate Change. DOI Crossref verificado; dataset `10.5281/zenodo.23299235` verificado por resolvedor a Zenodo. Es el candidato desarrollado para 28-nov 23:30.
+5. **Genoma del tucán toco:** `10.1038/s41597-026-08658-2`, `published-online=2026-11-27`, Scientific Data. Artículo primario accesible; ensamblaje cromosómico de 1.47 Gb, 57 scaffolds cromosómicos y BUSCO 99.5%. Sigue `PENDING_MAP`: la ficha no vincula de forma inequívoca el individuo usado para el ensamblaje con una procedencia cartografiable.
+
+La verificación DOI no sustituye la lectura completa de métodos ni resuelve las compuertas editoriales o cartográficas pendientes.
+
+### Reintento de feeds y descarte de falsos recientes
+
+- Consulta alternativa de RSS mediante Exa: ScienceDaily ciencia/salud/espacio, Phys.org, NASA y UNAM Global devolvieron contenido. UNAM Global no aportó un ítem reciente; el feed visible estaba desactualizado.
+- Errores exactos de la alternativa: Nature RSS `CRAWL_UNEXPECTED_CONTENT_TYPE`; ESA RSS `CRAWL_NOT_FOUND`; EurekAlert RSS `CRAWL_NOT_FOUND`; SINC RSS `CRAWL_NOT_FOUND`; Google Trends RSS `CRAWL_UNEXPECTED_CONTENT_TYPE`.
+- El script `scripts/tendencias.py` no se ejecutó en este entorno: la alternativa local de red falló con `Temporary failure in name resolution`. No se atribuye a ese script el resultado de Exa.
+- Tres titulares recientes resultaron ser reanuncios de trabajos primarios antiguos: narval (`10.1038/s41467-026-75689-z`, artículo primario publicado 18-ago-2026), PVC a lubricante (`10.1038/s41586-026-10867-z`, artículo primario publicado 05-ago-2026) y jet de 3C 279 (`10.1051/0004-6361/202660360`, publicado en septiembre de 2026). No califican como investigación nueva para el dato del día.
+- El artículo de tiempo de pantalla se publicó el 26-nov y queda fuera de la ventana de 48 h para 28-nov 23:30; el prototipo smartJAN se apoya en un artículo de 2025; el cometa de Euclid se publicó el 25-nov y también queda fuera de esa ventana.
+- Respaldo oficial de Google Trends HTML, México, últimas 24 h: 173 tendencias; la primera página no mostró una tendencia científica. `epicentro temblor hoy` apareció con 5 mil+ búsquedas y 13 h, pero no se usó como afirmación científica ni como noticia de sismo sin fuente oficial.
+
+No se abrió un nuevo storyboard: el slot de 28-nov 23:30 ya está ocupado por el borrador de llantas y los slots de 29-nov y 30-nov se encontraron reservados en main o fuera de rotación preferente.
