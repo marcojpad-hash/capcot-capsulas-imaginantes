@@ -330,3 +330,12 @@ No se repitieron auditorías narrativas. Los 5 estados Grok anteriores devolvier
 - El snapshot de miniaturas registra seis colisiones de `publishAt`. La del 28-nov 17:00 CDMX enfrenta `gN6svdqe62Q` y `fcSNbU809ao`, ambos anotados como `programado`; la del 27-nov 07:00 enfrenta `jiX6RdwJ1gg` y `nd0rs6iVy8E`. Son hallazgos de un snapshot del 21-nov, no lectura actual de YouTube Studio: registrar `RIESGO_IDS_ANTIGUOS_AUN_PROGRAMADOS` y `COLISION_HORARIA_NO_RESUELTA`, sin afirmar que hoy siguen activos.
 - El paquete de Microondas en main conserva `videoId=nd0rs6iVy8E` y `publishAt=2026-11-27T13:00:00Z`; por eso PAV1 no se redispatcha. Stubbs conserva `render.log` y `qa_es.json` con 86.13 s, pero su MP4 referido no aparece en el árbol; no se redispatcha.
 - El ID `fcSNbU809ao` tiene reserva del 28-nov 17:00 en el plan, pero el snapshot registra otra cápsula a la misma hora. No se cambió horario, privacidad, miniatura, video ni publicación. Requiere comprobación del propietario en YouTube Studio para resolver la colisión y reconciliar los cinco IDs sin registro de publicación.
+
+
+## Issue #11 — cuásares: revisión de independencia — 2026-11-28 08:03 CDMX
+
+- Issue #11 sigue abierto aunque conserva la etiqueta `hecho`; su cuerpo exige auditor Groq/Gemini distinto de ChatGPT y lectura independiente.
+- PR #12 está cerrado sin merge. PR #13 sigue abierto sin merge; ambos contienen `AUDITORIA.md` en sus ramas de trabajador, no en el árbol actual de feature.
+- El informe de PR #13 fue generado por Groq `gpt-oss-120b`, pero revisa título, estructura, líneas y metadatos del storyboard. No acredita lectura ciega de la narración concatenada con título, resumen, arco, notas y `narrative_contract` ocultos.
+- El storyboard actual (blob `91a366af5993f934722227026566ae2034880263`) conserva `narrative_qa=FAIL`, score 0, `review_basis=lectura_en_frio_solo_narracion`, flags `REVISION_INDEPENDIENTE_AUSENTE` y `REVISION_EN_FRIO_NO_ACREDITADA`. No se repitió PASS ni se alteró el guion.
+- No se cerró el Issue, no se fusionó PR #13 ni se cambió la etiqueta. La única acción que puede levantar la compuerta es una revisión verdaderamente ciega por un modelo/revisor distinto, usando solo la narración concatenada.
