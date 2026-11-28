@@ -1018,3 +1018,16 @@ No se identificó cambio oficial nuevo de APIs que justificara revisión adicion
 - Ese commit pasó CodeQL en PR #3: run `46096979237`, conclusión `success`. PR #3 sigue draft/open y no mergeable.
 - HEAD de feature al cierre de la verificación: `f2eda23ebb6b3f401a5afc54037ffec52621e81b`; main permanece en `2b30693dac44d3a60271065369f0465b7ba0b174`.
 - El resultado es CI documental, no validación DOI, recepción Grok ni autorización de producción. No se disparó dispatcher.
+
+
+## Corrección de fechas de rotación — 27 nov 2026
+
+La lectura directa de los JSON de main corrige una fecha desactualizada de un corte anterior:
+
+- `data/rotacion.json`: 39 registros; último `fecha=2026-11-21`.
+- `data/estilos_usados.json`: 32 registros; último proyecto fechado 2026-11-21. La mención anterior de 09-nov no corresponde al contenido actual.
+- `data/publicaciones.json`: 62 registros; fecha más reciente 2026-11-24.
+- No existe directorio `publicaciones/` ni archivo independiente `historial_youtube` en el árbol consultado.
+- `data/endscreens_rotacion.json` recibió el snapshot `pendiente_studio` del 27-nov 20:00 en el commit de Grok Bot ya descrito.
+
+Los dos registros de rotación/estilo siguen sin cubrir los proyectos del 27 y 30-nov; se consideran incompletos para certificar rotación actual. Se conserva solo lectura y no se modifica ningún `data/*.json`.
