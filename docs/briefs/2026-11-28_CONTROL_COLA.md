@@ -181,3 +181,34 @@ Los registros no se editaron. Las tres horas se consideran ocupadas/conflictivas
 - Esos checks son CodeQL, no el validador estructural de storyboards. `validar-kuroshio.yml` solo cubre el expediente Kuroshio del 18-nov y ejecuta `validar_storyboard.py` sin `--check-doi`; no valida el storyboard de llantas ni acredita DOI.
 - `capcot-descubrimiento.yml` tiene `schedule: 30 14 * * 1`, `permissions.contents: write` y un paso que hace commit/push a `GITHUB_REF_NAME`. En una ejecución `schedule`, la rama de referencia predeterminada es main; por tanto, el workflow puede escribir el catálogo en main aunque la política operativa declare main de solo consulta. No se disparó ni modificó ese workflow.
 - `capcot-grok-dispatch.yml` sigue limitado a JSON planos de primer nivel en push; no se ejecutó manualmente y no se envió webhook.
+
+
+## Reconciliación de cola y programación — 2026-11-28 04:40 CDMX
+
+### Slots de main revalidados con evidencia histórica
+El snapshot `data/miniaturas_auditoria_2026-11-21.json` no es una consulta en vivo de YouTube; se registra como último estado histórico disponible. En ese snapshot, el 28-nov contiene además de los elementos ya recogidos en este control:
+- 07:00 CDMX — `LSbmUp1J5VY`, `publishAt=2026-11-28T13:00:00Z`.
+- 13:30 CDMX — `CcZ_jacsDXM`, `publishAt=2026-11-28T19:30:00Z` (fuera de la ventana activa actual, pero programado en el snapshot).
+- 17:00 CDMX — `fcSNbU809ao` y `gN6svdqe62Q` aparecen en el mismo horario; se conserva el conflicto interno de main, sin cancelar ni duplicar.
+- 19:00 CDMX — `U2p-lzkavbE`, `publishAt=2026-11-29T01:00:00Z`; pertenece a una ventana retirada y queda como riesgo de ID antiguo todavía programado en el último snapshot.
+No se modificó ni canceló ningún video. La ausencia de una entrada en el snapshot no prueba que YouTube no tenga una programación posterior.
+
+### Slot nuevo y borrador de 1-dic
+- `data/horarios.json` en main mantiene la ventana 06:30–07:30 y martes como día preferente. El 1-dic-2026 es martes.
+- La búsqueda de main, `proyectos/`, `cola/entrada/`, `cola/bloqueados/`, `salidas/`, `data/publicaciones.json`, `data/rotacion.json` y el snapshot de miniaturas no encontró una ocupación de GitHub para 1-dic 07:00. La única programación con fecha UTC 1-dic hallada es Cher Ami de 30-nov 23:30 (`publishAt=2026-12-01T05:30:00Z`), que no coincide con 07:00 CDMX.
+- Se creó `proyectos/2026-12-01_elefantes-huerfanos-integracion-social/storyboard.json` como BORRADOR_EN_PROYECTOS_NO_APTO_PARA_PROMOCION: 8 escenas, 189 palabras, 78 s de escenas + 6 s de cortinilla = 84 s, gancho de 6 palabras, mapa con bounds publicados y capa de dato. DOI SRC-001/SRC-002 contrastados con Crossref REST. No se creó `narrative_qa`, `ESTADO_EJECUCION`, cola, estado Grok, medios ni programación. El snapshot de YouTube es histórico; no se afirma que el slot esté confirmado libre en vivo.
+- Rotación: main conserva 39 registros y no contiene elefantes/Sera/Kenia; el catálogo de estilos usados contiene 32 registros y no incluye `amigurumi`. La rama feature mantiene snapshots más antiguos (27 rotación/21 estilos); no se modificó ningún `data/*.json`.
+
+### Reconciliación de llantas/albedo
+- El storyboard ya contiene `narrative_qa` PASS/90 y las dos fuentes muestran verificación DOI (SRC-001 Crossref; SRC-002 resolver). Se realizó una lectura en frío separada de la narración concatenada y se confirmó que el QA existente sigue sustentado; no se alteró la narración ni se repitió el objeto PASS.
+- El validador estructural Python real no se ejecutó; el proyecto continúa sin promoción. Se corrigieron únicamente las notas de validación/riesgo que decían erróneamente que faltaba narrative_qa y que el DOI seguía pendiente.
+
+### Workflows y Actions
+- `.github/workflows/capcot-grok-dispatch.yml` existe en feature, no en main; no se disparó ni se envió payload. La cola continúa vacía y el estado Grok individual no se crea desde este rol.
+- `.github/workflows/capcot-descubrimiento.yml` existe en feature y PR #3 sigue OPEN/DRAFT. Su run más reciente `46135943670` terminó SUCCESS solo en dos jobs CodeQL (Python y Actions); no ejecutó el validador de storyboard ni `--check-doi`.
+- El workflow de descubrimiento contiene permisos `contents: write` y una ruta de push basada en `GITHUB_REF_NAME`. Si se integra, el evento schedule corre sobre la rama por defecto; eso podría escribir en main, que permanece SOLO_CONSULTA. No se fusionó ni se disparó el workflow. PR #3 conserva además modificaciones a `data/*.json`, contrarias a la regla de solo lectura; no debe integrarse hasta separar/restaurar esos cambios.
+- El estado actual de secretos no es observable. El último reporte histórico registró `GROK_WEBHOOK_URL` ausente y no confirmó `GROK_WEBHOOK_TOKEN`; no se atribuye ese estado al presente.
+
+### Clasificación
+- Nuevo borrador 1-dic: NOT_DISPATCHABLE; permanece solo en `proyectos/`, sin QA independiente, validador estructural, JSON plano, receipt Grok ni promoción.
+- Llantas/albedo: NOT_DISPATCHABLE; solo en `proyectos/`, sin entrada plana ni receipt Grok. `RECEPCION_GROK_NO_CONFIRMADA` permanece.
