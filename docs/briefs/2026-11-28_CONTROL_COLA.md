@@ -256,3 +256,10 @@ No se modificó ni canceló ningún video. La ausencia de una entrada en el snap
 - **#11 — auditoría narrativa independiente de cuásares:** sigue OPEN. El storyboard fue corregido por ChatGPT y su QA previo fue FAIL/82; la auditoría solicitada debe realizarla otro modelo. No se emitió una segunda revisión de ChatGPT ni se marcó PASS.
 - **#16 — handoff Imaginantes:** sigue OPEN. Solicita enlaces externos, reenvío de 17 MP4 y 10 resubidas a TikTok. No se generaron ni enviaron medios, no se publicaron/resubieron piezas y no se enviaron mensajes externos.
 - Commits de este run, ambos leídos de vuelta: storyboard `b018aa1f0c7d72078ad36fb783b792d237a7747c`; control de cola `de910f0ad073c1b594a992b89fef15b5fca00032`.
+
+
+### Reintento de fuentes — 2026-11-28 06:03 CDMX
+
+- RSS ScienceDaily ciencia y Google Trends RSS México devolvieron `URLError(gaierror(-3, 'Temporary failure in name resolution'))`. No se interpreta como caída global de los servicios.
+- Respaldo Exa en fuentes oficiales: Crossref REST y resolvedor DOI verificaron cuatro artículos de Nature/Nature Physics/Nature Cell Biology/Nature Astronomy/Nature Plants. Se añadieron al radar tres alternativas no seleccionadas (agregados bacterianos, VEXAS y materia oscura); el candidato de materia oscura supera 48 h y el de PM2.5/greening se marcó `NO_DUPLICAR` por solapamiento con la rotación.
+- No se creó storyboard adicional: el slot 28-nov 23:30 ya está asignado a llantas/albedo y no se abrió otro slot. Radar actualizado y leído de vuelta en commit `06fc5b0ebcec0a4a035fd5fa2a2038e321af5605`.
