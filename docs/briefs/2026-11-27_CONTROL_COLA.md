@@ -1099,3 +1099,26 @@ Se realizó una lectura en frío separada, exponiendo únicamente la narración 
 - No existe directorio publicaciones/ ni archivo independiente historial_youtube en el árbol consultado.
 - Ningún data/*.json fue modificado. Main, permisos, secretos y workflows permanecen intactos.
 - El radar 28-nov y el reintento exacto de RSS/Trends quedan en docs/briefs/2026-11-28_RADAR_CAPCOT.md y en el apéndice de 27-nov.
+
+
+## Revalidación de proyectos, slots y recepción — 27-nov-2026 22:37 CDMX
+
+### Storyboards en feature
+
+- 2026-11-27_dato-pav1-bacteriofago: 07:00; 187 palabras, 8 escenas, 84 s con cortinilla; narrative QA PASS/90. DOI 10.3389/fpls.2026.2008228 permanece VERIFICADO_URL, no Crossref. El slot colisiona con Microondas de main (video ID nd0rs6iVy8E, publishAt 13:00Z). NOT_DISPATCHABLE; no duplicar.
+- 2026-11-27_dato-registros-intermareales-1950s: 23:30; 173 palabras, 8 escenas, 84 s; narrative QA PASS/90; DOI principal 10.1038/s41597-026-08947-w en VERIFICADO_CROSSREF, datasets con resolvedor verificado. El slot colisiona con Stubbs en main. Stubbs conserva metadata para 27-nov 23:30 y render.log con 86.13 s; la ruta MP4 referida no existe en el árbol consultado. Clasificación: PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR + MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO. NOT_DISPATCHABLE; no duplicar.
+- 2026-11-30_liquen-gen-cereales: 17:00; 199 palabras, 8 escenas, 84 s; narrative QA PASS/93. DOI 10.1038/s41586-026-11151-w sigue VERIFICADO_URL; DOI PENDING_CROSSREF. Sin conflicto de slot observado; no promover por DOI pendiente.
+- 2026-11-30_rapaces-clima-reino-unido: 07:00; 182 palabras, 8 escenas, 84 s; narrative QA FAIL/82, flag GIRO_CIENTIFICO_NOMBRADO_PERO_NO_EXPLICADO. DOI 10.3389/fevo.2026.1922294 en PENDING_CROSSREF. No promover.
+
+En los cuatro proyectos se releyeron approved_assets=[], export.render_status=NOT_GENERATED, ausencia de export.filename y ausencia de asset_filename/asset_type por escena. El prechequeo estático encontró los campos raíz y de escena requeridos por el esquema; esto no se declara como ejecución del validador Python. scripts/validar_storyboard.py no se ejecutó en este run, así que no se atribuye PASS estructural ni DOI por CI.
+
+Para los cuatro IDs, cola/estado/<project_id>.json devolvió 404 y ESTADO_EJECUCION.md no existe: RECEPCION_GROK_NO_CONFIRMADA. No se crearon estados ni recibos. No hay JSON plano nuevo en la raíz de cola/entrada/; las entradas históricas siguen anidadas y el workflow no las selecciona.
+
+### Main, producción previa y ocupación
+
+- Microondas ocupa 27-nov 07:00 con video ID y publishAt; Stubbs conserva procesamiento previo en 27-nov 23:30 y medio no verificado en el árbol; Bacterias ocupa 27-nov 17:00 con programación programado_sin_montar; Mareo ocupa 28-nov 17:00 con video ID fcSNbU809ao y publishAt 23:00Z. Ninguno se cancela ni redispatcha.
+- El slot 28-nov 23:30 permanece libre en main y feature. El candidato nuevo de tucán queda en radar como PENDING_MAP/PENDING_CROSSREF; no se crea storyboard.
+- Inventario de solo lectura: data/publicaciones.json conserva 62 registros y su fecha más reciente es 24-nov; data/rotacion.json y data/estilos_usados.json terminan el 21-nov. No se modificó ningún data/*.json.
+- El lote 5–7-nov conserva su auditoría vigente: 2 PASS y 10 FAIL; no se repitió QA ni se alteraron sus copias bloqueadas.
+
+No se modificaron main, cola/estado, secretos, permisos, medios, publicaciones, programación ni workflows. No se disparó Grok ni se generaron assets.
