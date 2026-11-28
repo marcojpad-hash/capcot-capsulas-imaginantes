@@ -125,3 +125,9 @@ Los RSS científicos de scripts/tendencias.py y Google Trends RSS México fallar
 - cola/bloqueados no contiene este project_id; salidas no contiene este project_id; el directorio publicaciones/ devuelve 404 y data/publicaciones.json en main no contiene el proyecto. No hay procesamiento/publicación previa detectada para este borrador.
 - No hay medios referenciados: approved_assets=[] y export.render_status=NOT_GENERATED; MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO no aplica porque no se declara ningún medio.
 - No se promueve ni se crea cola/entrada. El borrador queda exclusivamente en proyectos hasta resolver DOI, validador estructural y QA narrativo independiente.
+
+
+## Actions automáticas — CodeQL no sustituye las compuertas editoriales
+
+- El análisis CodeQL automático del commit del storyboard terminó SUCCESS (run 46115595793; jobs Analyze actions/python). Los runs 46115611009 y 46115666229 de commits posteriores de documentación seguían in_progress al último chequeo.
+- CodeQL no ejecuta validar_storyboard.py ni --check-doi; el estado del borrador no cambia. No hubo dispatch Grok ni handoff.
