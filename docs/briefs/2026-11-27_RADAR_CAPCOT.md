@@ -375,3 +375,27 @@ Se intentó recuperar directamente cada URL declarada en `scripts/tendencias.py`
 | Google Trends RSS México | `URL https://trends.google.com/trending/rss?geo=MX is not accessible via this tool` |
 
 Esto documenta un fallo de lectura XML/RSS del visor; **no** se presenta como ejecución local de `scripts/tendencias.py`. No se disparó CI ni se simuló la ingesta. Como respaldo oficial se abrió la página HTML de Google Trends México y se consultaron páginas editoriales/primarias de Nature, Frontiers, NOAA y NASA; se conservaron los cinco candidatos vigentes y los descartes por fecha primaria indicados arriba.
+
+## Corte adicional — 27-nov-2026, 17:57 CDMX
+
+### Google Trends México: respaldo HTML oficial
+
+- RSS configurado: \`https://trends.google.com/trending/rss?geo=MX\` — el lector devolvió \`Internal Error ()\`; no se obtuvo XML parseable.
+- Respaldo oficial consultado: [Google Trends — Tendencias México](https://trends.google.com/trending?geo=MX). La página abrió y mostró 186 tendencias.
+- Señales relevantes del corte: \`temperatura CDMX\` (2M+, 12 h), \`agujero de la capa de ozono\` (2K+, 14 h), \`invierno\` (5K+, 3 h) y \`epicentro temblor hoy\` (2K+, 2 h).
+- No convertir volumen de búsqueda en evidencia científica. La referencia oficial localizada para ozono sigue fuera de la ventana de 48 h; no es dato-día. La búsqueda de evento sísmico reciente no produjo confirmación oficial del SSN para el 27-nov; el término queda como tendencia, no como hecho.
+
+### Nuevos candidatos primarios (no seleccionados)
+
+1. **Marsh–seawall y reducción de inundación costera** — *Optimized marsh-seawall designs differ widely in mitigating coastal flooding and enhancing ecosystem services*, publicado el 26-nov-2026. El estudio modela un dominio de 2,2 km² en Longport, Nueva Jersey. El diseño con muro de 1,0 m y vegetación densa redujo el overtopping 88–86% frente al escenario sin intervención y redujo hasta 10 h la duración media de inundación. El artículo enlaza datos en Figshare (33716539) y código reproducible. Fuente primaria: [Nature](https://www.nature.com/articles/s44458-026-00172-1). DOI visible en la página editorial: \`10.1038/s44458-026-00172-1\`. Estado: \`PENDING_SOURCE\` — Crossref/doi.org devolvieron \`Internal Error ()\`; coordenadas numéricas del dominio pendientes de recuperar del dataset; no storyboard.
+
+2. **Complejidad del plancton y bomba biológica oceánica** — *Plankton ecological complexity amplifies climate-driven weakening of the ocean biological pump*, publicado el 21-nov-2026. En el escenario SSP5-8.5, la producción comunitaria neta global cae 5,8%, 8,8% y 12,8% en las tres configuraciones de complejidad creciente; el artículo muestra mapas globales con retícula explícita de latitud y longitud. Los resultados reproducibles están depositados en Zenodo 21756864. Fuente primaria: [Nature Communications](https://www.nature.com/articles/s41467-026-79817-7). DOI: \`10.1038/s41467-026-79817-7\`. Estado: \`PENDING_SOURCE\` — Crossref/doi.org devolvieron \`Internal Error ()\`; la figura cartográfica sí aporta retícula global, pero el DOI no supera la compuerta externa; no storyboard.
+
+3. **Reorganización de biodiversidad por intensificación agrícola tropical** — *Tropical land-use intensification restructures biodiversity*, publicado el 18-nov-2026. Evalúa 24 grupos taxonómicos y 40.049 especies en paisajes indonesios; reporta pérdidas aproximadas de 78% en multidiversidad de paisaje y 50% en multidiversidad local en monocultivos, sin evidencia de homogenización comunitaria consistente. El mapa de Extended Data Fig. 1 ubica parcelas en Bukit Duabelas y Harapan, Jambi, Sumatra; los datos y código se enlazan en Figshare 31784410. Fuente primaria: [Nature](https://www.nature.com/articles/s41586-026-11298-6). DOI: \`10.1038/s41586-026-11298-6\`. Estado: \`PENDING_SOURCE\` — Crossref/doi.org devolvieron \`Internal Error ()\`; las coordenadas numéricas de parcelas no quedaron recuperadas del repositorio de datos; no storyboard.
+
+### Resultado de las compuertas
+
+- Se intentaron Crossref REST y el resolvedor DOI para los candidatos; las aperturas directas devolvieron \`Internal Error ()\`. Los DOI visibles en páginas editoriales no se contabilizan como verificación Crossref/resolvedor.
+- El slot fijo del 28-nov a las 23:30 permanece libre en los registros consultados. Ninguno de los candidatos supera todavía la compuerta DOI; por tanto, no se crea \`storyboard.json\` ni se selecciona tema.
+- Los RSS científicos definidos en \`scripts/tendencias.py\` se intentaron de nuevo. El lector no entregó XML parseable; Nature RSS devolvió \`Internal Error ()\`. Se usaron páginas editoriales primarias como respaldo de investigación, sin rebajar la compuerta DOI.
+- Estado del corte: candidatos documentados; selección y preproducción pendientes de verificación DOI y, donde aplique, coordenadas de fuente primaria.
