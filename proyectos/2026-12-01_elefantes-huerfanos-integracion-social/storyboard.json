@@ -353,7 +353,7 @@
   "estado": "BORRADOR_EN_PROYECTOS_NO_APTO_PARA_PROMOCION",
   "production_mode": "storyboard_only",
   "validation_notes": [
-    "Borrador de investigación; no se ha realizado narrative_qa independiente y no se marca como preparado.",
+    "Se registró narrative_qa FAIL/0 por ausencia de revisión independiente en conversación separada; no se marca como preparado.",
     "Preflight manual: 8 escenas, 189 palabras, 78 s de escenas + 6 s de cortinilla = 84 s; gancho de 6 palabras; capas de mapa y dato presentes. No sustituye scripts/validar_storyboard.py.",
     "Los DOI SRC-001 y SRC-002 se contrastaron con Crossref REST; el validador estructural Python real no se ejecutó en esta sesión.",
     "El mapa usa límites geográficos publicados para Sera Rhino Sanctuary en SRC-002; no representa puntos GPS del estudio de 2026."
@@ -365,5 +365,25 @@
     "El estudio de 2026 se limita a una conservancy y es observacional; las asociaciones no prueban causalidad ni garantizan el mismo resultado en otras poblaciones.",
     "Los límites del mapa provienen de un estudio primario de 2021 sobre Sera Rhino Sanctuary dentro de la misma conservancy; no son coordenadas de muestreo del estudio de 2026.",
     "No hay narrative_qa independiente, validador estructural real, recibo Grok ni promoción a cola; mantener el proyecto en borrador."
-  ]
+  ],
+  "narrative_qa": {
+    "status": "FAIL",
+    "score": 0,
+    "review_basis": "lectura_en_frio_solo_narracion",
+    "checks": {
+      "pregunta_central_reconstruible": false,
+      "apertura_in_medias_res": false,
+      "progresion_por_escena": false,
+      "transiciones_causales": false,
+      "giro_cientifico_explicado": false,
+      "limite_evidencia_explicito": false,
+      "payoff_cierre_apertura": false
+    },
+    "critical_flags": [
+      "REVISION_INDEPENDIENTE_AUSENTE"
+    ],
+    "reviewer_role": "auditor_capcot_independiente",
+    "reviewed_at": "2026-11-28T06:03:16-06:00",
+    "reviewer_note": "No se acreditó una revisión en conversación separada. FAIL/0 se aplica por ausencia de revisor independiente; las siete comprobaciones no se acreditan y esto no constituye una puntuación de calidad narrativa."
+  }
 }
