@@ -380,3 +380,14 @@ No se modificaron main, `data/*.json`, estados Grok, bloqueados, workflow, medio
 - El diff rechaza booleanos en coordenadas terrestres/celestes y bounds, y fija la consulta a `https://api.crossref.org` mediante HTTPS con verificación TLS.
 - Hallazgo de revisión: `check_doi()` devuelve PASS únicamente por `HTTP 200`; no parsea el JSON de Crossref ni compara `message.DOI` con el DOI solicitado. La prueba añadida simula solo `status=200`. Para que `--check-doi` pruebe el registro correcto, falta validar el cuerpo JSON y la coincidencia del DOI devuelto, además de probar respuesta 200 sin registro o con DOI distinto. Este hallazgo es estático; no se atribuye una prueba ejecutada.
 - PR #3 sigue DRAFT contra main, 728 archivos cambiados y su propio cuerpo reconoce cambios a `data/*.json` incompatibles con el contrato. No se fusionó.
+
+
+## Trazabilidad de esta ejecución — 2026-11-28
+
+Commits creados en la rama de trabajo y leídos de vuelta:
+- `0fa99d80daa5aae84308bbe9a0dea8aa4ebed038` — precisión de cola, bloqueados y diferencia entre ramas.
+- `dcf42c6f3643f3d713d6b4b95849147c2f5d8b51` — errores exactos de RSS y respaldo HTML de Trends.
+- `0a510bfc66c8173321b6ad27c6897481a7f4f97d` — corrección de la referencia al blob de programación de Bacterias.
+- `ca66e3238246a075c55764e1adb9206720838fcc` — revisión estática del control Crossref en PR #15.
+
+HEAD observado al cierre documental: `ca66e3238246a075c55764e1adb9206720838fcc`. No se modificó `main`, `data/*.json`, cola operativa, estados Grok ni medios.
