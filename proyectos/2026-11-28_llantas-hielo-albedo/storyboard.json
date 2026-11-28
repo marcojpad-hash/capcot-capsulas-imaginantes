@@ -1,0 +1,348 @@
+{
+  "_schema": "CAPCOT_STORYBOARD_TEXT_V2",
+  "project_id": "2026-11-28_llantas-hielo-albedo",
+  "serie": "Datos y ociosidades",
+  "fecha_objetivo": "2026-11-28",
+  "slot_local": "23:30",
+  "slot_timezone": "America/Mexico_City",
+  "title": "Partículas de desgaste de llantas y deshielo remoto",
+  "titulo": "Llantas que oscurecen la nieve",
+  "language": "es-MX",
+  "aspect_ratio": "9:16",
+  "target_duration_seconds": 84,
+  "estructura": "pregunta",
+  "audience": "Público general; explicación accesible a nivel bachillerato",
+  "occasion": "Dato del día; slot 23:30 CDMX",
+  "learning_objective": "Explicar cómo partículas del desgaste de neumáticos pueden oscurecer nieve y hielo, reducir el albedo y acelerar la fusión en estimaciones globales.",
+  "resumen": "El desgaste de neumáticos libera partículas carbonosas que pueden viajar por la atmósfera y depositarse en superficies criosféricas. Un estudio combina mediciones ópticas, cálculos de transferencia radiativa en nieve y simulaciones globales para estimar su efecto sobre el albedo, el forzamiento radiativo y la fusión; el impacto varía regionalmente.",
+  "narrative_contract": {
+    "central_question": "¿Puede el desgaste de las llantas acelerar el deshielo lejos de las carreteras?",
+    "promise": "Mostrar cómo partículas emitidas por el tráfico llegan a nieve y hielo y modifican la energía que absorben.",
+    "stakes": "El albedo regula cuánta radiación solar se refleja; reducirlo aumenta la energía absorbida por la superficie.",
+    "scientific_turn": "El estudio combina mediciones ópticas de partículas individuales, cálculos de transferencia radiativa en nieve y simulaciones globales; estima una contribución medible de las partículas de desgaste a la oscuridad y fusión de la criosfera.",
+    "evidence_limit": "Los valores globales son estimaciones modeladas y promedios; no implican el mismo efecto en todos los glaciares, nevados o regiones ni explican por sí solos todo el deshielo.",
+    "payoff": "La carretera no termina en el asfalto: una parte del desgaste viaja, se deposita y cambia cuánto sol absorben la nieve y el hielo."
+  },
+  "trend_source": {
+    "termino": "partículas de desgaste de llantas y oscurecimiento de nieve y hielo",
+    "fecha_publicacion": "2026-11-27",
+    "url": "https://www.nature.com/articles/s41558-026-02800-z"
+  },
+  "editorial_status": "PROPUESTA_PENDIENTE_DE_GROK",
+  "arco": {
+    "hook_medias_res": "La nieve puede oscurecerse lejos de la carretera.",
+    "desarrollo": "Partículas del desgaste de neumáticos viajan, absorben luz y reducen el albedo de la nieve; el estudio cuantifica su efecto global.",
+    "cierre_historia": "Las cifras son estimaciones globales con variación regional, no una explicación única del deshielo.",
+    "reflexion_o_pregunta": "El desgaste de una llanta puede terminar en una superficie helada muy lejos de la carretera."
+  },
+  "estilo_id": "stencil_banksy",
+  "estilo_visual": "Stencil grafiti tipo Banksy",
+  "visual_identity": {
+    "style_id": "stencil_banksy",
+    "style_name": "Stencil grafiti tipo Banksy",
+    "prompt_base": "Banksy-style street stencil art on a weathered concrete wall, black spray paint with a single red accent, drips, vertical 9:16, no text",
+    "palette": "negro, blanco y un único acento rojo",
+    "lighting": "luz fría lateral sobre nieve; sombras duras y contraste alto",
+    "texture": "spray sobre concreto erosionado, bordes de esténcil y goteos controlados",
+    "composition": "una silueta principal por plano; contraste carretera-remoto; mapas globales esquemáticos sin pines inventados; vertical 9:16",
+    "negative_prompt": "sin texto integrado, sin logotipos, sin marcas comerciales de neumáticos, sin puntos de muestreo inventados, sin mapas de fantasía, sin fotorealismo",
+    "reference_assets": [],
+    "seed": null,
+    "seed_policy": "Sin semilla fija; conservar el mismo trazo de esténcil, paleta y acento rojo en todas las escenas."
+  },
+  "typography_identity": {
+    "font_family": "DejaVu Sans",
+    "font_weight": "700 para gancho; 400 para subtítulos",
+    "title_style": "Máximo seis palabras; presente desde frame 0 en postproducción",
+    "subtitle_style": "Bloques de máximo tres palabras; zona segura inferior",
+    "hierarchy": "Gancho > dato/etiqueta > subtítulos",
+    "animation": "Un movimiento por plano; tipografía en postproducción"
+  },
+  "voice": {
+    "engine": "edge-tts",
+    "voice_id": "es-MX-JorgeNeural",
+    "language": "es-MX",
+    "rate": "+7%",
+    "pitch": "-2Hz",
+    "pad_seconds": 0.3,
+    "modo_pausas": "continuo"
+  },
+  "sources": [
+    {
+      "id": "SRC-001",
+      "cita_corta": "Liu et al., Nature Climate Change (publicado en línea 27-nov-2026), Tyre wear particles as important contributors to cryosphere darkening.",
+      "url": "https://www.nature.com/articles/s41558-026-02800-z",
+      "doi": "10.1038/s41558-026-02800-z",
+      "accessed": "2026-11-27",
+      "publication_date": "2026-11-27",
+      "supports": [
+        "Las partículas de desgaste de neumáticos son carbonosas, pueden transportarse a larga distancia y depositarse en superficies criosféricas.",
+        "A 550 nm absorben aproximadamente la mitad de la radiación por unidad de masa que el carbono negro.",
+        "La simulación global estima 1.22 ± 0.91 ng/g de concentración media anual en la criosfera y una reducción de albedo de 0.16 ± 0.12%.",
+        "El forzamiento radiativo estimado es 0.015 ± 0.012 W/m², equivalente a ~17.4% del forzamiento del carbono negro.",
+        "La aceleración de fusión estimada es 0.19 ± 0.14 mm de equivalente de agua por día; en regiones de latitud media y alta el efecto puede rivalizar o superar al carbono negro."
+      ],
+      "verification_status": "PENDING_CROSSREF"
+    },
+    {
+      "id": "SRC-002",
+      "cita_corta": "Liu, Yu. Tire Wear Particles as Important Contributors to Cryosphere Darkening. Zenodo record 23299235.",
+      "url": "https://zenodo.org/records/23299235",
+      "doi": null,
+      "accessed": "2026-11-27",
+      "publication_date": "2026-10-11",
+      "supports": [
+        "Registro de datos y código asociados al estudio; contiene source data de figuras 1–3 y archivos de datos extendidos."
+      ],
+      "verification_status": "VERIFICADO_RESOLVEDOR"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_001",
+      "arc": "hook_medias_res",
+      "duration_seconds": 10,
+      "narration": "La nieve puede oscurecerse lejos de la carretera. Partículas del desgaste de llantas viajan por el aire y alcanzan superficies de hielo. ¿Pueden acelerar el deshielo?",
+      "on_screen_text": "La nieve se oscurece lejos",
+      "visual_description": "Nieve blanca en primer plano; una estela negra de partículas llega desde una carretera distante y se mezcla con el hielo, sin sugerir un sitio específico.",
+      "image_prompt": "Banksy-style street stencil art on a weathered concrete wall, black spray paint with a single red accent, drips, vertical 9:16, no text; white snowfield in foreground, a black tire-tread stencil trail carried by wind toward remote ice, one red accent, no text, no logos, dramatic high contrast.",
+      "ambiente": "viento frío con un zumbido lejano de tráfico",
+      "sfx": [
+        "paso breve de neumático",
+        "whoosh de partículas"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "stencil_banksy",
+      "dramatic_beat": "Una superficie remota cambia de color antes de explicar por qué.",
+      "scene_function": "Abrir con la consecuencia visible y formular la pregunta causal.",
+      "causal_bridge_from_previous": "La estela llega desde la carretera sin ubicar un sitio concreto.",
+      "question_state": "La audiencia sabe que el desgaste puede viajar, pero no cómo altera la nieve.",
+      "reason_to_continue": "La pregunta exige conocer qué son las partículas y cómo llegan.",
+      "new_information": "El estudio trata partículas carbonosas transportadas a larga distancia y depositadas en la criosfera."
+    },
+    {
+      "id": "scene_002",
+      "arc": "desarrollo",
+      "duration_seconds": 12,
+      "narration": "Los autores midieron propiedades ópticas de esas partículas y combinaron los resultados con cálculos de radiación en nieve y simulaciones globales. No estudiaron una sola montaña: modelaron la criosfera.",
+      "on_screen_text": "Del asfalto al hielo",
+      "visual_description": "Dos planos conectados: neumático en carretera y partículas suspendidas que alcanzan una superficie de nieve remota; representación esquemática del transporte atmosférico.",
+      "image_prompt": "Banksy-style street stencil art on a weathered concrete wall, black spray paint with a single red accent, drips, vertical 9:16, no text; split composition of a road tire shedding tiny black particles and wind carrying them toward a remote snow and ice field, one red accent, no text, no logos.",
+      "ambiente": "viento de montaña con tráfico muy lejano",
+      "sfx": [
+        "ráfaga ascendente",
+        "grano fino"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "stencil_banksy",
+      "dramatic_beat": "La partícula no necesita quedarse junto a la carretera.",
+      "scene_function": "Explicar el mecanismo de transporte y el diseño del estudio.",
+      "causal_bridge_from_previous": "La pregunta pasa de la distancia al comportamiento óptico de la partícula.",
+      "question_state": "Se conoce el método general: medición óptica, transferencia radiativa y simulación global.",
+      "reason_to_continue": "Ahora falta saber si esas partículas absorben suficiente luz para importar.",
+      "new_information": "El estudio combina mediciones de partículas individuales, cálculos en nieve y simulaciones globales."
+    },
+    {
+      "id": "scene_003",
+      "arc": "desarrollo",
+      "duration_seconds": 12,
+      "narration": "A 550 nanómetros, cada gramo de partículas absorbe aproximadamente la mitad de la luz que absorbe un gramo de carbono negro. Esa capacidad convierte una mota oscura en un problema energético.",
+      "on_screen_text": "Absorben luz",
+      "visual_description": "Partícula oscura sobre cristal de nieve; rayos de luz llegan y una parte es absorbida; comparación visual sobria con carbono negro, sin escala numérica falsa.",
+      "image_prompt": "Banksy-style street stencil art on a weathered concrete wall, black spray paint with a single red accent, drips, vertical 9:16, no text; close-up stencil illustration of a dark carbon-rich particle on a snow crystal absorbing sunlight, contrasting white reflective snow and black particle, one red accent, no text.",
+      "ambiente": "ambiente de laboratorio silencioso",
+      "sfx": [
+        "clic de instrumento",
+        "pulso de luz"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "stencil_banksy",
+      "dramatic_beat": "La partícula deja de ser un residuo inerte en la escena.",
+      "scene_function": "Explicar la propiedad óptica que conecta el residuo con el balance energético.",
+      "causal_bridge_from_previous": "La absorción por masa se compara con carbono negro a una longitud de onda concreta.",
+      "question_state": "Se sabe que absorbe luz; aún falta medir cuánto cambia la superficie.",
+      "reason_to_continue": "La siguiente escena muestra la escala global del depósito modelado.",
+      "new_information": "A 550 nm, la absorción por unidad de masa es aproximadamente la mitad de la del carbono negro."
+    },
+    {
+      "id": "scene_004",
+      "arc": "desarrollo",
+      "duration_seconds": 12,
+      "narration": "El modelo estima una concentración media anual de 1.22 ± 0.91 nanogramos por gramo en la criosfera. Ese depósito redujo el albedo de nieve y hielo en 0.16 ± 0.12 por ciento.",
+      "on_screen_text": "Una huella global",
+      "visual_description": "Mapa mundial en proyección plana con distribución de emisiones, transporte y depósito en regiones frías; solo patrones globales del paper, sin pines ni coordenadas puntuales.",
+      "image_prompt": "Banksy-style street stencil art on a weathered concrete wall, black spray paint with a single red accent, drips, vertical 9:16, no text; global world map stencil with modeled high-latitude cryosphere deposition bands and dark particle speckles, white ice regions, black continents, one red accent, no text, no invented pins.",
+      "ambiente": "viento alto sobre una superficie helada",
+      "sfx": [
+        "barrido cartográfico",
+        "golpe suave"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "style_id": "stencil_banksy",
+      "dramatic_beat": "La absorción óptica se convierte en una estimación de depósito global.",
+      "scene_function": "Mostrar que el fenómeno no depende de un único glaciar o carretera.",
+      "causal_bridge_from_previous": "El mapa pasa de una partícula a una distribución modelada global.",
+      "question_state": "Se conoce la extensión global del modelo, no la concentración de cada sitio.",
+      "reason_to_continue": "El dato siguiente cuantifica qué cambia cuando la nieve refleja menos luz.",
+      "new_information": "La figura 2 del paper presenta mapas globales de emisiones, transporte, depósito y carga criosférica.",
+      "capa": {
+        "tipo": "mapa",
+        "region": [
+          -90,
+          -180,
+          90,
+          180
+        ],
+        "puntos": [],
+        "areas": [
+          {
+            "id": "global_cryosphere_model",
+            "label": "Distribución global modelada de emisiones, transporte y depósito en la criosfera",
+            "bounds": [
+              -90,
+              -180,
+              90,
+              180
+            ],
+            "bounds_label": "Extensión cartográfica global de las figuras 2–3; no es un área de impacto uniforme."
+          }
+        ],
+        "titulo": "Distribución global modelada de partículas de desgaste de neumáticos",
+        "fuente": "Liu et al., Nature Climate Change (2026), Fig. 2; datos fuente asociados en Zenodo 23299235.",
+        "precision_note": "El rectángulo representa solo la extensión cartográfica global de la figura; las concentraciones y efectos varían por región. No se añaden pines ni ubicaciones de muestreo."
+      }
+    },
+    {
+      "id": "scene_005",
+      "arc": "desarrollo",
+      "duration_seconds": 12,
+      "narration": "Menos albedo significa menos luz reflejada. El efecto calculado produjo un forzamiento radiativo de 0.015 ± 0.012 vatios por metro cuadrado: alrededor del 17.4 por ciento del forzamiento del carbono negro.",
+      "on_screen_text": "Menos reflexión",
+      "visual_description": "Dos superficies de nieve: una clara refleja más radiación; otra oscurecida absorbe más. La diferencia se expresa como cambio de albedo, no como temperatura local.",
+      "image_prompt": "Banksy-style street stencil art on a weathered concrete wall, black spray paint with a single red accent, drips, vertical 9:16, no text; two-panel stencil comparison of bright reflective snow and darkened snow absorbing more sunlight, simple solar rays, one red accent, no text.",
+      "ambiente": "viento sobre nieve compacta",
+      "sfx": [
+        "reflejo corto",
+        "pulso grave"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "stencil_banksy",
+      "dramatic_beat": "El depósito ya tiene una consecuencia energética cuantificada.",
+      "scene_function": "Traducir albedo y forzamiento radiativo a una relación visual clara.",
+      "causal_bridge_from_previous": "El cambio de albedo se conecta con el forzamiento radiativo estimado.",
+      "question_state": "Se conoce la reducción de reflexión y el forzamiento; falta la consecuencia en la fusión.",
+      "reason_to_continue": "La escena siguiente mide la respuesta de fusión y su variación regional.",
+      "new_information": "El paper estima reducción de albedo de 0.16 ± 0.12% y forzamiento de 0.015 ± 0.012 W/m² (~17.4% del carbono negro).",
+      "capa": {
+        "tipo": "dato",
+        "valor": "0.19 ± 0.14",
+        "unidad": "mm de equivalente de agua por día",
+        "etiqueta": "Aceleración modelada de la fusión atribuida a partículas de desgaste",
+        "fuente": "Liu et al., Nature Climate Change (2026), resumen y Fig. 3; Zenodo 23299235."
+      }
+    },
+    {
+      "id": "scene_006",
+      "arc": "cierre_historia",
+      "duration_seconds": 10,
+      "narration": "La fusión se aceleró 0.19 ± 0.14 milímetros de equivalente de agua por día. Es un promedio modelado: el impacto varía entre regiones y puede igualar o superar al carbono negro en zonas de latitud media y alta.",
+      "on_screen_text": "No es igual en todas partes",
+      "visual_description": "Superficie helada con zonas de respuesta distinta; una banda de latitudes medias y altas se resalta sin asignar un valor local ni señalar glaciares concretos.",
+      "image_prompt": "Banksy-style street stencil art on a weathered concrete wall, black spray paint with a single red accent, drips, vertical 9:16, no text; remote snow and ice landscape with varied darkening intensity across high-latitude zones, a subtle meltwater edge, one red accent, no text, no specific glacier.",
+      "ambiente": "goteo suave de deshielo y viento",
+      "sfx": [
+        "goteo aislado",
+        "pulso descendente"
+      ],
+      "source_ids": [
+        "SRC-001"
+      ],
+      "style_id": "stencil_banksy",
+      "dramatic_beat": "La cifra global se contrasta con la variación regional.",
+      "scene_function": "Explicitar el límite de evidencia para no convertir el promedio en regla universal.",
+      "causal_bridge_from_previous": "El dato de fusión se interpreta como estimación modelada y variable por región.",
+      "question_state": "Se sabe que el efecto existe en el modelo; no que todos los glaciares respondan igual.",
+      "reason_to_continue": "El cierre debe volver al asfalto y pagar la pregunta inicial.",
+      "new_information": "La fuente indica que en regiones clave de latitud media y alta el forzamiento puede rivalizar o superar al carbono negro."
+    },
+    {
+      "id": "scene_007",
+      "arc": "reflexion_o_pregunta",
+      "duration_seconds": 10,
+      "narration": "Así que el desgaste no termina en el asfalto: una parte viaja, se deposita y oscurece nieve y hielo. No explica por sí solo todo el deshielo, pero sí añade una fuente medible. Esto fue Datos y ociosidades.",
+      "on_screen_text": "El viaje no termina en el asfalto",
+      "visual_description": "La estela de una llanta se transforma visualmente en partículas sobre un paisaje helado; el último plano vuelve a la carretera y cierra el recorrido sin afirmar que explique todo el deshielo.",
+      "image_prompt": "Banksy-style street stencil art on a weathered concrete wall, black spray paint with a single red accent, drips, vertical 9:16, no text; tire-tread stencil trail fading into a distant snowfield, black particles settling on white ice, one red accent, clear visual payoff, no text, no logos.",
+      "ambiente": "viento que se apaga lentamente",
+      "sfx": [
+        "cierre tonal breve"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "style_id": "stencil_banksy",
+      "dramatic_beat": "La ruta de la partícula vuelve al origen sin reducir el fenómeno a una sola causa.",
+      "scene_function": "Pagar la pregunta y dejar claro el alcance del estudio.",
+      "causal_bridge_from_previous": "La historia cierra el recorrido carretera-atmósfera-criosfera.",
+      "question_state": "La audiencia entiende que el desgaste añade una fuente medible, no una explicación única.",
+      "reason_to_continue": "La pregunta queda respondida: sí puede contribuir, pero el efecto es modelado y regionalmente variable.",
+      "new_information": "El desgaste de neumáticos puede viajar y oscurecer superficies criosféricas; Esto fue Datos y ociosidades."
+    }
+  ],
+  "cortinilla_fuentes": {
+    "duration_seconds": 6,
+    "titulo": "Fuentes",
+    "aviso": "Fuentes citadas; no se generó material audiovisual.",
+    "firma": "Datos y ociosidades",
+    "source_ids": [
+      "SRC-001",
+      "SRC-002"
+    ]
+  },
+  "audio": {
+    "music_asset": null,
+    "music_plan": "sintetico:menor_calma; intención sonora para producción posterior, sin archivo generado",
+    "music_license": null
+  },
+  "export": {
+    "resolution": "1080x1920",
+    "fps": 30,
+    "render_status": "NOT_GENERATED"
+  },
+  "publicacion": {
+    "status": "PENDIENTE_DECISION_GROK",
+    "platforms": [
+      "YouTube Shorts",
+      "TikTok",
+      "Facebook Reels"
+    ],
+    "note": "No publicar ni programar desde preproducción textual."
+  },
+  "estado": "BORRADOR_EN_PROYECTOS_NO_APTO_PARA_PROMOCION",
+  "production_mode": "storyboard_only",
+  "validation_notes": [
+    "Preflight manual: 7 escenas; 221 palabras de narración; 78 s de escenas + 6 s de cortinilla = 84 s; gancho de 5 palabras; mapa global con bounds válidos; capa de dato presente.",
+    "El validador estructural real no se ejecutó porque el entorno no pudo clonar el repositorio (Could not resolve host: github.com). No se atribuye PASS estructural.",
+    "No se registró narrative_qa: la lectura en frío corresponde a un auditor independiente posterior."
+  ],
+  "linea_tematica_provisional": "Actualidad / clima-geo-atmosférico; subtema contaminación de partículas y criosfera.",
+  "approved_assets": [],
+  "risk_notes": [
+    "DOI del artículo PENDING_CROSSREF: Nature direct page devolvió HTTP 500 y api.crossref.org/doi.org no fueron accesibles mediante esta herramienta.",
+    "El texto primario fue recuperado desde el índice de Nature; la lectura directa completa de la página quedó bloqueada. El registro Zenodo de datos sí fue abierto y contiene source data de figuras 1–3.",
+    "El mapa usa la extensión global de las figuras 2–3; no representa un sitio de muestreo ni una distribución uniforme.",
+    "No narrative_qa; no promoción; no cola; no medios; no publicación."
+  ]
+}
