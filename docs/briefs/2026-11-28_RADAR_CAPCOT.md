@@ -2,7 +2,7 @@
 
 **Serie:** Datos y ociosidades  
 **Ventana revisada:** slot 23:30 CDMX  
-**Estado:** borrador de investigación creado en proyectos para el slot libre 23:30 CDMX; no apto para promoción hasta completar DOI/Crossref, validador estructural y QA narrativo independiente.
+**Estado actual:** storyboard textual creado en `proyectos/2026-11-28_llantas-hielo-albedo/storyboard.json` para 23:30 CDMX (7 escenas, 229 palabras, 84 s); QA PASS/90 y DOI/Crossref + resolvedor verificados. No promocionable hasta ejecutar el validador estructural real y confirmar el estado Grok individual.
 
 ## Recuperación de tendencias
 
