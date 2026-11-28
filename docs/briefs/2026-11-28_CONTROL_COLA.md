@@ -118,3 +118,9 @@ Se buscó cada uno de los 12 project_id canónicos en `data/publicaciones.json`,
 - Main reserva 30-nov 23:30 para Cher Ami (`publishAt_utc=2026-12-01T05:30:00Z`). No hay storyboard nuevo para ese slot; se conserva la reserva de main.
 - No hay archivos `ESTADO_EJECUCION.md` en las carpetas de los cinco proyectos recientes; tampoco hay entradas planas actuales en `cola/entrada/`, ni salidas/publicaciones del proyecto de llantas. `publicaciones/` y `historial_youtube/` no existen como directorios independientes.
 - Los 12 IDs y los cuatro proyectos recientes con storyboard mantienen `RECEPCION_GROK_NO_CONFIRMADA` por ausencia de sus estados individuales. No se creó ni editó ningún `cola/estado/`.
+
+
+## Verificación DOI adicional de backlog — 2026-11-28 04:11 CDMX
+
+- PAV1 `10.3389/fpls.2026.2008228`: Crossref REST devolvió `status=ok`, tipo `journal-article`, título coincidente, publisher Frontiers Media SA y registro creado/publicado el 26-nov-2026. Se actualizó únicamente `sources[0].verification_status=VERIFICADO_CROSSREF`; QA PASS90 y narración permanecen sin cambios. El conflicto de slot con main y el procesamiento previo siguen impidiendo promoción.
+- Intermareales mantiene SRC-001 `VERIFICADO_CROSSREF` y SRC-002/SRC-004 `VERIFICADO_RESOLVEDOR`; no se modificaron.
