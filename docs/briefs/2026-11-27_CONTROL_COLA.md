@@ -993,3 +993,12 @@ No se identificó cambio oficial nuevo de APIs que justificara revisión adicion
 - `data/publicaciones.json` conserva 62 registros y no hay archivo separado `historial_youtube` en el inventario leído. `data/rotacion.json` y `data/estilos_usados.json` siguen atrasados respecto del backlog; no se modificaron y no se certifica rotación con ellos.
 - El corte anterior de los 12 IDs del 5–7 nov permanece en 2 PASS / 10 FAIL; no se reescribieron narraciones ni se repitió QA válido.
 - No se modificó `data/*.json`, main, secretos, estados Grok, colas, salidas ni medios. No se creó ni promovió storyboard.
+
+
+## Reconciliación posterior — 27 nov 2026, corte 20:08 CDMX
+
+- El HEAD de main avanzó de `6a96b3eb` a `2b30693dac44d3a60271065369f0465b7ba0b174`. El commit es de Grok Bot y modifica únicamente `data/endscreens_rotacion.json`; añade `snapshot_2026-11-27_20`/`propuesta_2026-11-27_20` con estado `pendiente_studio`. No añade storyboard, cola, salida ni publicación. Se leyó como evidencia externa; el archivo `data/*.json` no se modificó.
+- La Action programada `Callback - aviso de delegaciones` (46095573475) terminó success. El log muestra el recorrido de delegaciones; no hubo salida de issue creado y no aparecieron issues nuevos. No se envió mensaje externo desde este run.
+- En el nuevo commit de main, Semgrep (46096596549) volvió a fallar con **37 hallazgos bloqueantes**; Gitleaks y CodeQL terminaron success. No se alteraron hallazgos ni configuración.
+- PR #3 continúa draft/open y no mergeable. Los checks dinámicos para los commits documentales de este corte quedaron en curso/cola al momento de esta lectura; no se hizo merge ni se disparó el dispatcher Grok.
+- La nueva entrada `pendiente_studio` no cambia los conflictos de PAV1/Intermareal ni habilita Liquen/Rapaces. Los slots y clasificaciones de la sección anterior se mantienen.
