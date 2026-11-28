@@ -399,3 +399,16 @@ Esto documenta un fallo de lectura XML/RSS del visor; **no** se presenta como ej
 - El slot fijo del 28-nov a las 23:30 permanece libre en los registros consultados. Ninguno de los candidatos supera todavía la compuerta DOI; por tanto, no se crea `storyboard.json` ni se selecciona tema.
 - Los RSS científicos definidos en `scripts/tendencias.py` se intentaron de nuevo. El lector no entregó XML parseable; Nature RSS devolvió `Internal Error ()`. Se usaron páginas editoriales primarias como respaldo de investigación, sin rebajar la compuerta DOI.
 - Estado del corte: candidatos documentados; selección y preproducción pendientes de verificación DOI y, donde aplique, coordenadas de fuente primaria.
+
+
+## Verificación de fuentes primarias — 27 nov 2026, corte 19:56 CDMX
+
+Se reabrieron páginas editoriales primarias para confirmar fecha, alcance y cifras de los tres candidatos añadidos en el corte de 17:57. No se seleccionó ninguno ni se creó storyboard.
+
+1. **Marisma + seawall híbrido — Longport, Nueva Jersey.** Publicado 26 nov 2026. El artículo informa que el diseño con muro de 1.0 m y vegetación densa reduce el sobrepaso de oleaje en más de 80% y la duración media de inundación hasta 10 h; el diseño de 1.2 m con vegetación dispersa reduce el sobrepaso 32–36%. DOI: `10.1038/s44458-026-00172-1`. Página primaria abierta; DOI visible en el editor, pero Crossref/resolvedor no confirmado.
+2. **Complejidad ecológica del plancton y bomba biológica.** Publicado 21 nov 2026. Bajo SSP5-8.5, la producción neta comunitaria de fin de siglo cae 5.8% en la configuración por defecto y 8.8%/12.8% en las configuraciones más complejas. DOI: `10.1038/s41467-026-79817-7`. La búsqueda primaria confirma metadatos y cifras; la apertura directa redirigió a autenticación de Nature y no permitió comprobar el resolvedor.
+3. **Intensificación del uso del suelo tropical y biodiversidad.** Publicado 18 nov 2026. El estudio cubre 24 grupos taxonómicos y 40,049 especies; en monocultivos reporta pérdidas aproximadas de 78% en multidiversidad de paisaje y 50% local, sin evidencia de homogeneización comunitaria consistente. DOI: `10.1038/s41586-026-11298-6`. La búsqueda primaria confirma título, fecha y resumen; la apertura directa redirigió a autenticación de Nature.
+
+**Proyecto existente PAV1:** la versión final de Frontiers está publicada desde el 26 nov 2026. El artículo informa inhibición in vitro superior a 98% a 48 h y, en tomate, incidencia de agalla de 83.3% en controles frente a 46.7%/50.0% con aplicación preventiva; no es una prueba de eficacia en vid de campo. DOI: `10.3389/fpls.2026.2008228`. La página primaria abre; el clic al DOI devolvió `500 Redirected to https://www.frontiersin.org/articles/10.3389/fpls.2026.2008228/full which is not accessible via this tool`.
+
+**Compuerta:** las páginas editoriales confirman los DOI escritos, pero esto no sustituye la respuesta de Crossref/resolvedor. Los tres candidatos permanecen `PENDING_CROSSREF`; PAV1 conserva esa misma compuerta. El slot 28 nov 23:30 sigue libre, pero no hay candidato que supere todas las compuertas. No se creó storyboard.
