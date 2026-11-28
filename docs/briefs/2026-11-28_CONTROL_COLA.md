@@ -390,4 +390,4 @@ Commits creados en la rama de trabajo y leídos de vuelta:
 - `0a510bfc66c8173321b6ad27c6897481a7f4f97d` — corrección de la referencia al blob de programación de Bacterias.
 - `ca66e3238246a075c55764e1adb9206720838fcc` — revisión estática del control Crossref en PR #15.
 
-HEAD previo a este registro: `ca66e3238246a075c55764e1adb9206720838fcc`; commit de este registro: `84f97ab13561cf8f77aa55da0a54ed379d142aa1`. No se modificó `main`, `data/*.json`, cola operativa, estados Grok ni medios.
+Secuencia de cierre: `84f97ab13561cf8f77aa55da0a54ed379d142aa1` añadió esta trazabilidad; `14d41335d4113016aa30b09822e532bb38dff24b` corrigió la referencia de HEAD. Ambos commits constan en la historia de la rama. No se modificó `main`, `data/*.json`, cola operativa, estados Grok ni medios.
