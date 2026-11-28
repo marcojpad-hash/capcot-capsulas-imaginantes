@@ -391,3 +391,29 @@ Commits creados en la rama de trabajo y leídos de vuelta:
 - `ca66e3238246a075c55764e1adb9206720838fcc` — revisión estática del control Crossref en PR #15.
 
 Secuencia de cierre: `84f97ab13561cf8f77aa55da0a54ed379d142aa1` añadió esta trazabilidad; `14d41335d4113016aa30b09822e532bb38dff24b` corrigió la referencia de HEAD. Ambos commits constan en la historia de la rama. No se modificó `main`, `data/*.json`, cola operativa, estados Grok ni medios.
+
+## Relectura adicional de main y corrección del validador — 2026-11-28 12:02 CDMX
+
+### Paquetes y slots en main
+
+- Se encontró un paquete adicional que no figuraba en el corte anterior: `proyectos/2026-11-28_magnetismo-p-wave-eusi/`. Su `programacion.json` declara `publish_at=2026-11-28T23:15:00Z` (= 17:15 CDMX), ventana `tarde`, plataformas YouTube/TikTok, privacidad `private` y estado `programado_paquete`. El storyboard declara `export.filename=capsula.mp4`, 1080×1920, 30 fps y -14 LUFS; el árbol de ese proyecto contiene solo `fuentes.md`, `programacion.json` y `storyboard.json`, sin MP4, `render.log`, `metadata.json` ni `qa_es.json`. Clasificación: `PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR` y `MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO`. Es una reserva 17:15 en main, no el slot 23:30 de Llantas.
+- El plan semanal de main mantiene Mareo `fcSNbU809ao` a 17:00; el snapshot de miniaturas registra además `gN6svdqe62Q` a la misma hora. Sigue siendo una colisión histórica no resuelta, no una lectura actual de YouTube Studio.
+- Para `2026-11-23_animal-tama`, main conserva `hueco=2026-11-28 23:30`, `render.log` con duración 85.11 s y `qa_es.json` con los checks audiovisuales en true. El MP4 referido en `/workspace/capcot_main/...` no está en el árbol GitHub; `publishAt_utc=null` y no existe `programacion.json`. Se acredita procesamiento previo, no publicación ni programación confirmadas. Para Llantas/albedo se mantienen `CONFLICTO_DE_SLOT_ENTRE_RAMAS`, `PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR` y `MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO`.
+- No hay paquete del 29-nov en main. El domingo no es día preferente de la ventana; no se creó un storyboard anticipado para un slot futuro.
+
+### Estado de Llantas/albedo y Grok
+
+- La lectura de vuelta del storyboard de feature conserva 229 palabras, 7 escenas, 78 s de escenas + 6 s de cortinilla = 84 s, narrativa `PASS/90`, siete checks true, `approved_assets=[]` y `export.render_status=NOT_GENERATED`.
+- `ESTADO_EJECUCION.md`, `cola/estado/<project_id>.json`, `cola/entrada/<project_id>.json` y `salidas/<project_id>/` devolvieron 404. Se mantiene `RECEPCION_GROK_NO_CONFIRMADA` y `NOT_DISPATCHABLE`; no se creó estado, cola ni handoff.
+- No se repitió el PASS narrativo porque la narración no cambió. El validador estructural y `--check-doi` no se ejecutaron sobre Llantas; no promover.
+- El último commit previo a esta corrección de código, `c0d53a78cbfdf7362944ee3b8d7214adea0f499f`, cambió solo `data/endscreens_rotacion.json`; no añadió ni modificó storyboards/backlog después del corte de las 10:00.
+
+### Corrección mecánica de DOI en el validador activo
+
+- **EJECUTADO:** `scripts/validar_storyboard.py` ya no acepta un HTTP 200 de Crossref por sí solo. Lee el JSON, exige `message.DOI` y compara el identificador devuelto con el solicitado sin distinguir mayúsculas/minúsculas. Respuesta malformada o DOI distinto devuelve FAIL. La ruta de fallback `doi.org` conserva la comprobación HTTPS.
+- **EJECUTADO:** se añadieron tres regresiones en `tests/test_validar_storyboard_textual.py`: DOI distinto rechazado, coincidencia exacta aceptada sin distinguir mayúsculas y JSON malformado rechazado.
+- Commits: `aee512b2fe920c556569ad1610a331414f3f1a0b` (validador) y `9c3398aa6aaf90e87711dcc3142ceef05cd8e4cd` (pruebas). Lectura de vuelta confirma el cambio y las tres pruebas en la rama feature.
+- **Prueba aislada local:** 5 casos del contrato DOI pasaron (coincidencia, mismatch, JSON inválido, fallback del resolvedor e ID inválido). No equivale a ejecutar la suite completa del repositorio.
+- **CI automático observado:** run [#46173968948](https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/actions/runs/46173968948) SUCCESS. Su job valida estructuralmente el storyboard Kuroshio; no usa `--check-doi` ni ejecuta la suite de pruebas nueva. No se disparó manualmente.
+- PR #15 permanece OPEN y sin merge; su rama de trabajo es anterior a la corrección aplicada directamente en la rama feature. No se abrió, cerró ni fusionó ningún PR.
+
