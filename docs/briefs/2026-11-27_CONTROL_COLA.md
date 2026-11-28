@@ -1010,3 +1010,11 @@ No se identificó cambio oficial nuevo de APIs que justificara revisión adicion
 - PR #3 continúa `draft/open`, `mergeable=false`; no se hizo merge. La Action verde no acredita `--check-doi` ni cambia los estados editoriales.
 - HEAD de feature al cierre de esta lectura: `d8849bf2459cb8d46e8637f5e0c2cc6642e9a56a`. HEAD de main permanece `2b30693dac44d3a60271065369f0465b7ba0b174`.
 - No se ejecutó `capcot-grok-dispatch`; el resultado de CI corresponde a documentación del PR, no a recepción Grok ni a producción.
+
+
+## Cierre posterior a RSS — 27 nov 2026, corte 20:14 CDMX
+
+- El radar recibió el reintento de RSS/Trends y la verificación primaria en commit `f2eda23ebb6b3f401a5afc54037ffec52621e81b`; los errores exactos y el respaldo HTML quedaron registrados allí.
+- Ese commit pasó CodeQL en PR #3: run `46096979237`, conclusión `success`. PR #3 sigue draft/open y no mergeable.
+- HEAD de feature al cierre de la verificación: `f2eda23ebb6b3f401a5afc54037ffec52621e81b`; main permanece en `2b30693dac44d3a60271065369f0465b7ba0b174`.
+- El resultado es CI documental, no validación DOI, recepción Grok ni autorización de producción. No se disparó dispatcher.
