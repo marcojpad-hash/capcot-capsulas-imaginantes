@@ -212,3 +212,11 @@ No se modificó ni canceló ningún video. La ausencia de una entrada en el snap
 ### Clasificación
 - Nuevo borrador 1-dic: NOT_DISPATCHABLE; permanece solo en `proyectos/`, sin QA independiente, validador estructural, JSON plano, receipt Grok ni promoción.
 - Llantas/albedo: NOT_DISPATCHABLE; solo en `proyectos/`, sin entrada plana ni receipt Grok. `RECEPCION_GROK_NO_CONFIRMADA` permanece.
+
+
+## Lectura de vuelta posterior a los commits — 2026-11-28 04:56 CDMX
+
+- Storyboard `proyectos/2026-12-01_elefantes-huerfanos-integracion-social/storyboard.json` releído desde GitHub: 8 escenas, 189 palabras, 78 s + 6 s = 84 s, gancho de 6 palabras, voz es-MX-JorgeNeural +7%/-2Hz, mapa con bounds SRC-002, capa de dato SRC-001, `approved_assets=[]`, `render_status=NOT_GENERATED`, `publicacion=PENDIENTE_DECISION_GROK`, sin `narrative_qa` ni rutas de assets.
+- Consulta individual de `cola/estado/2026-12-01_elefantes-huerfanos-integracion-social.json` devolvió literalmente `HTTP 404: Not Found`; estado registrado: `RECEPCION_GROK_NO_CONFIRMADA`. `cola/entrada` plano/anidado y `cola/bloqueados` también devolvieron 404; el árbol de la rama no contiene salida. Clasificación: NOT_DISPATCHABLE. No se creó ni editó ningún estado Grok.
+- GitHub Actions automáticas de CodeQL asociadas a los cuatro commits del cambio terminaron SUCCESS: `46137479201`, `46137482402`, `46137484046`, `46137486217`. Cada ejecución solo muestra jobs `Analyze (python)` y `Analyze (actions)`; no ejecutó `scripts/validar_storyboard.py`, `--check-doi` ni QA narrativo.
+- HEAD de feature después de la lectura de vuelta: `f84854b95b0fab6d7cf6f5b7646194bf801641cf`. El proyecto permanece exclusivamente en `proyectos/`; no hay promoción, webhook, render ni publicación.
