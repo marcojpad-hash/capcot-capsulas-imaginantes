@@ -333,17 +333,17 @@
   "estado": "BORRADOR_EN_PROYECTOS_NO_APTO_PARA_PROMOCION",
   "production_mode": "storyboard_only",
   "validation_notes": [
-    "Preflight manual: 7 escenas; 225 palabras de narración; 78 s de escenas + 6 s de cortinilla = 84 s; gancho de 5 palabras; mapa global con bounds válidos; capa de dato en escena de fusión.",
-    "El validador estructural real no se ejecutó porque el entorno no pudo clonar el repositorio (Could not resolve host: github.com). No se atribuye PASS estructural.",
-    "No se registró narrative_qa: la lectura en frío corresponde a un auditor independiente posterior."
+    "Reconciliación 2026-11-28 04:40 CDMX: narrative_qa PASS/90 ya existente; se hizo una pasada de lectura en frío de la narración concatenada, sin usar título, resumen, arco, notas ni narrative_contract. Los siete checks existentes siguen respaldados; el objeto narrative_qa y la narración no se modificaron.",
+    "Preflight estático: 7 escenas, 225 palabras, 78 s de escenas + 6 s de cortinilla = 84 s; gancho de 5 palabras; capas de mapa y dato presentes.",
+    "DOI SRC-001 Nature 10.1038/s41558-026-02800-z y SRC-002 Zenodo 10.5281/zenodo.23299235 contrastados con Crossref/resolvedor.",
+    "scripts/validar_storyboard.py no se ejecutó en esta sesión; no se declara PASS estructural y el proyecto no se promueve."
   ],
   "linea_tematica_provisional": "Actualidad / clima-geo-atmosférico; subtema contaminación de partículas y criosfera.",
   "approved_assets": [],
   "risk_notes": [
-    "DOI del artículo PENDING_CROSSREF: Nature direct page devolvió HTTP 500 y api.crossref.org/doi.org no fueron accesibles mediante esta herramienta.",
-    "El texto primario fue recuperado desde el índice de Nature; la lectura directa completa de la página quedó bloqueada. El registro Zenodo de datos sí fue abierto y contiene source data de figuras 1–3.",
-    "El mapa usa la extensión global de las figuras 2–3; no representa un sitio de muestreo ni una distribución uniforme.",
-    "No narrative_qa; no promoción; no cola; no medios; no publicación."
+    "El validador estructural Python real sigue pendiente; no promover a cola ni marcar preparado.",
+    "El mapa global y la figura de albedo describen resultados modelados y no implican que todas las regiones nivales tengan la misma respuesta.",
+    "No hay medios generados ni assets aprobados; no hay recepción Grok individual confirmada."
   ],
   "narrative_qa": {
     "status": "PASS",
