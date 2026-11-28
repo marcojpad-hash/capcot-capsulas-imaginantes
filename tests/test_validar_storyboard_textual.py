@@ -1,5 +1,6 @@
 import sys
 import unittest
+from unittest.mock import patch
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
@@ -43,6 +44,86 @@ class TextOnlyStoryboardContractTests(unittest.TestCase):
             "sistema_coordenadas": "Ecuatoriales J2000 (RA/Dec)",
         }
         self.assertFalse(validar_storyboard.validar_punto_mapa(point))
+
+    def test_check_doi_requires_crossref_identity(self):
+        class Response:
+            status = 200
+
+            def getheader(self, name):
+                return None
+
+            def read(self):
+                return b'{"message":{"DOI":"10.1234/another-record"}}'
+
+        class Connection:
+            def __init__(self, host, timeout, context):
+                self.host = host
+
+            def request(self, method, path, headers):
+                pass
+
+            def getresponse(self):
+                return Response()
+
+            def close(self):
+                pass
+
+        with patch.object(validar_storyboard.http.client, "HTTPSConnection", side_effect=Connection) as factory:
+            self.assertFalse(validar_storyboard.check_doi("10.1234/requested-record"))
+            self.assertEqual(factory.call_count, 1)
+            self.assertEqual(factory.call_args.args[0], "api.crossref.org")
+
+    def test_check_doi_accepts_exact_crossref_identity_case_insensitively(self):
+        class Response:
+            status = 200
+
+            def getheader(self, name):
+                return None
+
+            def read(self):
+                return b'{"message":{"DOI":"10.5194/BG-15-5131-2018"}}'
+
+        class Connection:
+            def __init__(self, host, timeout, context):
+                self.host = host
+
+            def request(self, method, path, headers):
+                pass
+
+            def getresponse(self):
+                return Response()
+
+            def close(self):
+                pass
+
+        with patch.object(validar_storyboard.http.client, "HTTPSConnection", side_effect=Connection):
+            self.assertTrue(validar_storyboard.check_doi("10.5194/bg-15-5131-2018"))
+
+    def test_check_doi_rejects_malformed_crossref_json(self):
+        class Response:
+            status = 200
+
+            def getheader(self, name):
+                return None
+
+            def read(self):
+                return b"not-json"
+
+        class Connection:
+            def __init__(self, host, timeout, context):
+                self.host = host
+
+            def request(self, method, path, headers):
+                pass
+
+            def getresponse(self):
+                return Response()
+
+            def close(self):
+                pass
+
+        with patch.object(validar_storyboard.http.client, "HTTPSConnection", side_effect=Connection):
+            self.assertFalse(validar_storyboard.check_doi("10.1234/requested-record"))
 
     def test_missing_narrative_qa_is_rejected(self):
         self.assertTrue(validar_storyboard.validar_narrative_qa(None))
