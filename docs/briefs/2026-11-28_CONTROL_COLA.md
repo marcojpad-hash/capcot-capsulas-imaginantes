@@ -339,3 +339,36 @@ No se repitieron auditorías narrativas. Los 5 estados Grok anteriores devolvier
 - El informe de PR #13 fue generado por Groq `gpt-oss-120b`, pero revisa título, estructura, líneas y metadatos del storyboard. No acredita lectura ciega de la narración concatenada con título, resumen, arco, notas y `narrative_contract` ocultos.
 - El storyboard actual (blob `91a366af5993f934722227026566ae2034880263`) conserva `narrative_qa=FAIL`, score 0, `review_basis=lectura_en_frio_solo_narracion`, flags `REVISION_INDEPENDIENTE_AUSENTE` y `REVISION_EN_FRIO_NO_ACREDITADA`. No se repitió PASS ni se alteró el guion.
 - No se cerró el Issue, no se fusionó PR #13 ni se cambió la etiqueta. La única acción que puede levantar la compuerta es una revisión verdaderamente ciega por un modelo/revisor distinto, usando solo la narración concatenada.
+
+
+## Relectura de cola, ramas y rotación — 2026-11-28 10:00 CDMX
+
+### Precisión sobre las copias bloqueadas
+
+La relectura de los 12 JSON planos de la raíz de `cola/bloqueados/` confirma que sus `project_id` no coinciden todos con los 12 IDs canónicos de la tabla del lote 5–7 nov. Coincidencia exacta: rayo globular, aguacate negro, arena cantante, ranas congeladas, nubes pesan y huesos de bebé (6/12). Los otros seis son IDs históricos distintos: palomitas-explotan, árboles-mito-respiran, venus-dia-largo, corazón-ballena-azul, mpemba-mito y sueños-pulpo. No se puede afirmar que esos seis sean copias de los seis storyboards canónicos con nombres distintos sin reconciliar contenido/hashes. Se conservan todos; no se movió, borró ni renombró nada.
+
+### Cola y acuse
+
+- En feature, `cola/entrada/` contiene `.gitkeep` y una única carpeta anidada, `2026-11-09_dato-robot-ensambla-orbita/`; no hay JSON plano de primer nivel.
+- El workflow `.github/workflows/capcot-grok-dispatch.yml` (blob `47bbd228cfce5a1d402dc952e283e8d0f8e37030`) solo selecciona `cola/entrada/*.json` a profundidad 1. La carpeta anidada es `NOT_DISPATCHABLE_POR_SELECTOR`.
+- El marcador `handoffs/grok_inbox/2026-11-09_dato-robot-ensambla-orbita.json` (blob `6d8923d662ca2ba3642a1ef03a2f1ea01e4b9b1e`) conserva `status=pending`; `handoffs/grok_done/` solo contiene `.gitkeep`. Es un marcador de handoff, no un acuse de Grok.
+- `cola/estado/` no existe en feature; los cinco estados consultados individualmente (llantas/albedo, liquen, rapaces, PAV1 e intermareales) devolvieron 404 → `RECEPCION_GROK_NO_CONFIRMADA`.
+- El workflow valida sintaxis JSON con `python -m json.tool`, crea un marcador pending y solo llama al webhook si existen ambas variables secretas. No ejecuta el validador estructural, DOI/Crossref, QA narrativo ni comprobación de conflictos. No se disparó; no se enviaron payloads. La visibilidad de secretos no está disponible en esta lectura, por lo que no se declara que falten.
+
+### Diferencia de inventario entre feature y main
+
+Los archivos `data/*.json` se mantuvieron en solo lectura. El snapshot de feature está atrasado respecto de main:
+- `publicaciones.json`: feature 22 registros, último 31-oct (blob `a17dbe541d35b7e3d8a835756a06f0588039049a`); main 62 registros, último 24-nov (blob `a822459849571a443196e6a5b5d4ee73d109b1cd`).
+- `rotacion.json`: feature 27 registros, último 31-oct (blob `01677e27569826e49736501a0c22c166f8015a45`); main 39 registros, último 21-nov (blob `1cb16c1cfad8b968e24221793047df27d83eb5e0`).
+- `estilos_usados.json`: feature 21 registros, último 28-oct; main 32 registros, último 9-nov (blob main `d5532a357e6b2c3b13e3a0b57701ce74513d900b`).
+- `horarios.json` difiere por blob entre ramas (feature `550599906c26e747de71b6b962080b6bd469f23f`; main `2261993d542de445df23e0abbe63bca9b54c2ff1`); ambos declaran corte 9-nov. La programación semanal de main, de 21-nov, se consultó en solo lectura para detectar colisiones. No se sincronizó ni modificó ningún `data/*.json`.
+
+### Producción preexistente confirmada
+
+- Para 27-nov 17:00, `main/proyectos/2026-11-27_bacterias-vuelta-oxigeno/programacion.json` (blob `a3d4f8d6` no se usa como referencia; lectura de contenido: `estado=programado_sin_montar`, `publish_at=2026-11-27T23:00:00Z`). El paquete anidado de main contiene `PLACEHOLDER` tanto en `storyboard.json` como en `fuentes.md`; `salidas/2026-11-27_bacterias-vuelta-oxigeno/` y `cola/estado/` devuelven 404. El snapshot de miniaturas del 21-nov también registra `_slEv21gbpM` a las 17:00. Se conserva `PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR`; no se atribuye conflicto entre ramas porque no hay storyboard feature para ese slot.
+- Para 28-nov 17:00, el plan semanal de main registra `fcSNbU809ao` (Mareo) y el snapshot del 21-nov registra además `gN6svdqe62Q` en el mismo `publishAt`. Es una colisión histórica no resuelta; no se afirma que ambos sigan activos hoy sin YouTube Studio.
+- Para 28-nov 23:30, Tama reserva el mismo hueco en main y tiene `render.log` con 85.11 s; `publishAt_utc=null` y el MP4 no está en el árbol. Se mantiene para Llantas/albedo `CONFLICTO_DE_SLOT_ENTRE_RAMAS`, `PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR`, `MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO` y `NOT_DISPATCHABLE`.
+- Llantas/albedo: lectura estática actual conserva 229 palabras, 7 escenas, 84 s, QA registrado PASS/90, siete checks true, fuentes con estados Crossref/resolvedor, `approved_assets=[]` y `render_status=NOT_GENERATED`. Esta relectura no volvió a ejecutar el validador Python ni re-certificó la independencia del reviewer; no se promovió.
+- Liquen (30-nov 17:00) conserva PASS/93; Rapaces (30-nov 07:00), FAIL/82 por giro científico no explicado. Ambos caen en lunes, fuera de los días preferentes de la ventana actual; no se promovieron ni reescribieron.
+
+No se modificaron main, `data/*.json`, estados Grok, bloqueados, workflow, medios, secretos ni permisos. No hubo redispatch, publicación ni programación.
