@@ -13,14 +13,14 @@
   "scene_total_seconds": 78,
   "cortinilla_seconds": 6,
   "total_duration_seconds": 84,
-  "word_count": 184,
+  "word_count": 175,
   "estructura": "pregunta",
   "audience": "Público general interesado en astronomía y ciencia.",
   "occasion": "Slot 17:00 CDMX, dentro de la ventana activa 16:30–18:00. Domingo no preferente, pero no excluido. Borrador textual, sin programación.",
   "resumen": "Un seguimiento de Gemini North y Webb revela un candidato a pareja de cuásares en el universo temprano; las líneas espectrales favorecen dos fuentes, pero la lente gravitacional aún no está descartada.",
   "narrative_contract": {
     "central_question": "¿La segunda luz es un segundo cuásar o una imagen duplicada por una lente gravitacional?",
-    "promise": "Seguir la pista desde el hallazgo en Webb hasta la prueba espectral que favorece dos fuentes distintas.",
+    "promise": "Seguir la pista desde los datos NIRSpec de Webb hasta el seguimiento espectral que favorece dos fuentes distintas.",
     "stakes": "Si son dos objetos reales, ofrecen una ventana poco común al crecimiento de agujeros negros masivos cuando el universo era muy joven.",
     "scientific_turn": "Las diferencias en las alas azules de las líneas [O III] favorecen dos fuentes intrínsecamente distintas; la prueba no se basa solo en que dos puntos estén cerca.",
     "evidence_limit": "La lente gravitacional no está definitivamente descartada; falta modelar la posible galaxia en primer plano. La separación es proyectada, no tridimensional.",
@@ -37,9 +37,9 @@
   "editorial_status": "PENDIENTE_DECISION_GROK",
   "arco": {
     "hook_medias_res": "Gemini North separa dos fuentes que Webb había visto casi superpuestas.",
-    "desarrollo": "La búsqueda en 200 cuásares, la época cósmica y la distancia proyectada establecen el hallazgo; las líneas [O III] aportan el giro.",
-    "cierre_historia": "Las diferencias espectrales favorecen dos fuentes físicas, aunque la lente gravitacional no está descartada.",
-    "reflexion_o_pregunta": "¿Qué puede revelar una pareja candidata sobre el crecimiento de las primeras galaxias?"
+    "desarrollo": "Los datos de Aether, el seguimiento y la época cósmica llevan a la separación y las masas; los perfiles espectrales aportan el giro.",
+    "cierre_historia": "Las líneas [O III] favorecen dos fuentes; una lente gravitacional no está descartada.",
+    "reflexion_o_pregunta": "¿Qué podrá revelar esta pareja candidata sobre el crecimiento de los primeros agujeros negros?"
   },
   "estilo_id": "van_gogh",
   "estilo_visual": "Noche estrellada (Van Gogh)",
@@ -145,8 +145,8 @@
     {
       "id": "scene_001",
       "arc": "hook_medias_res",
-      "duration_seconds": 9,
-      "narration": "Gemini North separó dos luces que Webb había visto casi superpuestas. Cada una brillaba como un cuásar: materia cayendo hacia un agujero negro supermasivo.",
+      "duration_seconds": 8,
+      "narration": "Gemini North separó dos fuentes que Webb había visto casi superpuestas: un candidato a pareja de cuásares.",
       "on_screen_text": "Dos luces separadas",
       "visual_description": "Dos núcleos luminosos casi superpuestos en un campo cósmico profundo; el segundo foco acaba de separarse visualmente del primero, sin representar los agujeros negros como objetos sólidos.",
       "image_prompt": "post-impressionist painting in the style of Van Gogh's Starry Night, swirling brushstrokes, deep blues and glowing yellows, vertical 9:16, no text Dos núcleos luminosos casi superpuestos en un campo cósmico profundo; el segundo foco acaba de separarse visualmente del primero, sin representar los agujeros negros como objetos sólidos.",
@@ -163,17 +163,18 @@
       "scene_function": "La segunda fuente aparece y convierte una sola luz en un candidato a pareja.",
       "causal_bridge_from_previous": "Apertura: el seguimiento resolvió dos fuentes casi superpuestas.",
       "question_state": "Se observa una segunda fuente; aún no se sabe si es un segundo cuásar o una imagen duplicada.",
-      "reason_to_continue": "La observación necesita un contexto instrumental verificable.",
-      "new_information": "Gemini North separó dos fuentes de cuásar que Webb había observado casi superpuestas."
+      "reason_to_continue": "Para entender el hallazgo, hay que volver a los datos donde apareció la compañera.",
+      "new_information": "Gemini North resolvió dos fuentes que Webb había observado casi superpuestas.",
+      "asset_filename": "frames/scene_001.jpg"
     },
     {
       "id": "scene_002",
       "arc": "desarrollo",
-      "duration_seconds": 9,
-      "narration": "La compañera era mucho más débil; dos noches de cielo excepcionalmente limpio permitieron estudiarla desde Maunakea.",
-      "on_screen_text": "Gemini North · Maunakea",
-      "visual_description": "Vista editorial de Maunakea con la cúpula de Gemini North bajo un cielo oscuro; el punto cartográfico identifica el observatorio terrestre, no la posición del par.",
-      "image_prompt": "post-impressionist painting in the style of Van Gogh's Starry Night, swirling brushstrokes, deep blues and glowing yellows, vertical 9:16, no text Vista editorial de Maunakea con la cúpula de Gemini North bajo un cielo oscuro; el punto cartográfico identifica el observatorio terrestre, no la posición del par.",
+      "duration_seconds": 10,
+      "narration": "La pista apareció al revisar los cubos NIRSpec de 200 cuásares del sondeo Aether: Webb detectó una compañera junto a J1602+4228A.",
+      "on_screen_text": "Aether · 200 cuásares",
+      "visual_description": "Panel editorial de un sondeo espectroscópico: una matriz de 200 campos y una segunda señal resaltada junto a una fuente principal, sin cifras ni etiquetas incrustadas en la pintura.",
+      "image_prompt": "post-impressionist painting in the style of Van Gogh's Starry Night, swirling brushstrokes, deep blues and glowing yellows, vertical 9:16, no text Panel editorial de un sondeo espectroscópico: una matriz de 200 campos y una segunda señal resaltada junto a una fuente principal, sin cifras ni etiquetas incrustadas en la pintura.",
       "ambiente": "Viento de altura muy suave, solo como ambiente de observatorio.",
       "sfx": [
         "Despliegue sutil de mapa"
@@ -183,12 +184,12 @@
         "SRC-003"
       ],
       "style_id": "van_gogh",
-      "dramatic_beat": "La debilidad de la compañera vuelve decisivas las condiciones de observación: el seguimiento pudo medirla en solo dos noches.",
-      "scene_function": "La debilidad de la compañera vuelve decisivas las condiciones de observación: el seguimiento pudo medirla en solo dos noches.",
-      "causal_bridge_from_previous": "Resolver dos fuentes tan próximas no bastaba: la compañera era débil y necesitaba observaciones de seguimiento en condiciones excepcionales.",
-      "question_state": "La segunda fuente pudo estudiarse pese a su debilidad; todavía falta situar cuándo emitió esa luz.",
-      "reason_to_continue": "Una vez resuelta la dificultad observacional, la época cósmica revela por qué el hallazgo es extraordinario.",
-      "new_information": "El seguimiento aprovechó dos noches de condiciones excepcionalmente limpias en Maunakea para estudiar la fuente compañera.",
+      "dramatic_beat": "La compañera apareció al inspeccionar sistemáticamente los cubos de Webb, no en una búsqueda dirigida.",
+      "scene_function": "La compañera apareció al inspeccionar sistemáticamente los cubos de Webb, no en una búsqueda dirigida.",
+      "causal_bridge_from_previous": "La observación de Gemini resolvió dos fuentes; para entender el hallazgo, hay que volver a los datos donde apareció la compañera.",
+      "question_state": "Se conoce el origen de la pista; falta estudiar la señal débil por separado.",
+      "reason_to_continue": "La fuente compañera era débil y requería observaciones de seguimiento.",
+      "new_information": "La compañera se identificó al revisar los cubos NIRSpec del sondeo Aether, que incluía 200 cuásares.",
       "capa": {
         "tipo": "mapa",
         "puntos": [
@@ -201,14 +202,15 @@
         "titulo": "Lugar del seguimiento desde tierra",
         "fuente": "SRC-002; SRC-003",
         "nota_precision": "El pin marca Gemini North en Maunakea, Hawái; no es la ubicación del cuásar. No dibujar una ruta terrestre ni trasladar la distancia astronómica al mapa."
-      }
+      },
+      "asset_filename": "frames/scene_002.jpg"
     },
     {
       "id": "scene_003",
       "arc": "desarrollo",
       "duration_seconds": 10,
-      "narration": "La luz salió cuando el universo tenía unos 900 millones de años, durante la época de reionización, mientras las primeras galaxias aún crecían.",
-      "on_screen_text": "900 millones de años",
+      "narration": "La compañera era mucho más débil; dos noches de condiciones excepcionalmente limpias en Maunakea permitieron estudiarla por separado.",
+      "on_screen_text": "Dos noches de seguimiento",
       "visual_description": "Campo cósmico temprano con galaxias jóvenes y dos fuentes puntuales de cuásar; sugerir época de reionización sin inventar una galaxia anfitriona concreta.",
       "image_prompt": "post-impressionist painting in the style of Van Gogh's Starry Night, swirling brushstrokes, deep blues and glowing yellows, vertical 9:16, no text Campo cósmico temprano con galaxias jóvenes y dos fuentes puntuales de cuásar; sugerir época de reionización sin inventar una galaxia anfitriona concreta.",
       "ambiente": "Ambiente de espacio profundo sobrio, sin efectos de explosión.",
@@ -220,18 +222,19 @@
         "SRC-002"
       ],
       "style_id": "van_gogh",
-      "dramatic_beat": "La fecha cósmica transforma una observación difícil en una ventana al universo temprano.",
-      "scene_function": "La fecha cósmica transforma una observación difícil en una ventana al universo temprano.",
-      "causal_bridge_from_previous": "Con las dos fuentes ya estudiadas por separado, la pregunta pasa de cómo observarlas a cuándo emitieron la luz que recibimos.",
-      "question_state": "La luz procede de una etapa muy temprana: el universo tenía unos 900 millones de años.",
-      "reason_to_continue": "La época establece la importancia del sistema; ahora falta explicar cómo apareció el compañero en los datos.",
-      "new_information": "El sistema se observa a z≈6.08, unos 900 millones de años después del Big Bang."
+      "dramatic_beat": "El seguimiento convierte una señal tenue en una fuente que puede estudiarse por separado.",
+      "scene_function": "El seguimiento convierte una señal tenue en una fuente que puede estudiarse por separado.",
+      "causal_bridge_from_previous": "La señal de Webb era débil; el seguimiento en Maunakea permitió estudiarla y compararla con la fuente principal.",
+      "question_state": "La fuente débil pudo estudiarse; falta situar el sistema en la historia cósmica.",
+      "reason_to_continue": "El espectro permite situar la emisión y medir su corrimiento al rojo.",
+      "new_information": "Dos noches de condiciones excepcionalmente limpias en Maunakea permitieron el seguimiento de la compañera débil.",
+      "asset_filename": "frames/scene_003.jpg"
     },
     {
       "id": "scene_004",
       "arc": "desarrollo",
       "duration_seconds": 10,
-      "narration": "En el sondeo Aether, Webb reunió espectros de 200 cuásares. Al revisar esos datos apareció una compañera junto a J1602+4228A.",
+      "narration": "Su luz fue emitida cuando el universo tenía unos 900 millones de años, durante la época de reionización.",
       "on_screen_text": "Aether: 200 cuásares",
       "visual_description": "Panel abstracto de un sondeo espectroscópico: una matriz de 200 campos y dos señales cercanas resaltadas, sin cifras ni etiquetas incrustadas en la pintura.",
       "image_prompt": "post-impressionist painting in the style of Van Gogh's Starry Night, swirling brushstrokes, deep blues and glowing yellows, vertical 9:16, no text Panel abstracto de un sondeo espectroscópico: una matriz de 200 campos y dos señales cercanas resaltadas, sin cifras ni etiquetas incrustadas en la pintura.",
@@ -245,10 +248,11 @@
       "style_id": "van_gogh",
       "dramatic_beat": "La compañera surge al inspeccionar el sondeo, no por una búsqueda dirigida a ese par.",
       "scene_function": "La compañera surge al inspeccionar el sondeo, no por una búsqueda dirigida a ese par.",
-      "causal_bridge_from_previous": "La época extrema exige conocer la búsqueda que lo reveló.",
-      "question_state": "Se conoce el tamaño del sondeo y cómo apareció la compañera.",
-      "reason_to_continue": "El sondeo conduce a la medición de la separación.",
-      "new_information": "La compañera se detectó al inspeccionar los cubos espectrales de un sondeo de 200 cuásares."
+      "causal_bridge_from_previous": "Con el seguimiento espectral, el equipo pudo medir el corrimiento al rojo y situar la emisión en el universo temprano.",
+      "question_state": "El sistema pertenece a una época en que el universo tenía unos 900 millones de años.",
+      "reason_to_continue": "La época establece el contexto; la separación angular cuantifica cuán juntas aparecen las fuentes.",
+      "new_information": "La luz del par fue emitida cuando el universo tenía unos 900 millones de años, durante la época de reionización.",
+      "asset_filename": "frames/scene_004.jpg"
     },
     {
       "id": "scene_005",
@@ -268,9 +272,9 @@
       "style_id": "van_gogh",
       "dramatic_beat": "Una vez identificadas ambas fuentes, se mide su separación.",
       "scene_function": "Una vez identificadas ambas fuentes, se mide su separación.",
-      "causal_bridge_from_previous": "Una vez identificadas ambas fuentes, se mide su separación.",
+      "causal_bridge_from_previous": "Una vez situada la época de emisión, la siguiente medida es cuánto separa a las dos fuentes.",
       "question_state": "La separación angular y proyectada está cuantificada; no equivale a distancia tridimensional.",
-      "reason_to_continue": "La separación pequeña lleva a preguntar qué tan masivos son los objetos.",
+      "reason_to_continue": "La separación proyectada conduce a una pregunta distinta: qué masa tienen los agujeros negros.",
       "new_information": "La separación es 0.98±0.01 segundos de arco y 5.56±0.06 pkpc proyectados.",
       "capa": {
         "tipo": "dato",
@@ -278,13 +282,14 @@
         "etiqueta": "Separación angular y distancia transversal proyectada a z≈6.08",
         "fuente": "SRC-001",
         "interpretacion": "Es una separación proyectada, no una distancia tridimensional ni prueba suficiente de interacción gravitacional."
-      }
+      },
+      "asset_filename": "frames/scene_005.jpg"
     },
     {
       "id": "scene_006",
       "arc": "desarrollo",
       "duration_seconds": 10,
-      "narration": "Los espectros estiman masas de unos 1,530 millones y 399 millones de soles. Son agujeros negros enormes para un universo tan joven.",
+      "narration": "Las estimaciones espectrales dan masas de 1,530 millones y 399 millones de soles: agujeros negros enormes para un universo tan joven.",
       "on_screen_text": "1,530 M · 399 M solares",
       "visual_description": "Dos halos de acreción de distinto brillo y escala, sin dibujar masas como esferas ni convertir la estimación en una medición directa.",
       "image_prompt": "post-impressionist painting in the style of Van Gogh's Starry Night, swirling brushstrokes, deep blues and glowing yellows, vertical 9:16, no text Dos halos de acreción de distinto brillo y escala, sin dibujar masas como esferas ni convertir la estimación en una medición directa.",
@@ -298,16 +303,17 @@
       "style_id": "van_gogh",
       "dramatic_beat": "Las masas estimadas hacen necesario comprobar si son dos objetos distintos.",
       "scene_function": "Las masas estimadas hacen necesario comprobar si son dos objetos distintos.",
-      "causal_bridge_from_previous": "La distancia cercana y las masas estimadas hacen crucial distinguir dos fuentes de una imagen duplicada.",
-      "question_state": "Las masas son estimaciones espectrales, no pesajes directos.",
-      "reason_to_continue": "Las masas hacen crucial distinguir dos fuentes de una imagen duplicada.",
-      "new_information": "Las estimaciones de masa son 1.530×10⁹ y 3.99×10⁸ masas solares."
+      "causal_bridge_from_previous": "La separación cuantifica su proximidad proyectada; las estimaciones de masa describen la escala de cada agujero negro.",
+      "question_state": "Se conocen estimaciones espectrales de masa, no mediciones directas.",
+      "reason_to_continue": "Ni la cercanía ni las masas demuestran por sí solas que sean dos fuentes físicas.",
+      "new_information": "Las masas estimadas son aproximadamente 1.530×10⁹ y 3.99×10⁸ masas solares.",
+      "asset_filename": "frames/scene_006.jpg"
     },
     {
       "id": "scene_007",
       "arc": "cierre_historia",
       "duration_seconds": 10,
-      "narration": "La pista decisiva no es solo la cercanía: las alas azules de las líneas de oxígeno [O III] tienen formas distintas, lo que favorece dos fuentes.",
+      "narration": "La pista no es solo la cercanía: las alas azules de [O III] tienen formas distintas, lo que favorece dos fuentes.",
       "on_screen_text": "Dos perfiles distintos",
       "visual_description": "Dos perfiles espectrales abstractos con alas azules distintas; la diferencia se representa como forma de línea, no como espectro real ni como prueba definitiva.",
       "image_prompt": "post-impressionist painting in the style of Van Gogh's Starry Night, swirling brushstrokes, deep blues and glowing yellows, vertical 9:16, no text Dos perfiles espectrales abstractos con alas azules distintas; la diferencia se representa como forma de línea, no como espectro real ni como prueba definitiva.",
@@ -321,16 +327,17 @@
       "style_id": "van_gogh",
       "dramatic_beat": "La forma de las líneas espectrales aporta una prueba independiente de la mera cercanía.",
       "scene_function": "La forma de las líneas espectrales aporta una prueba independiente de la mera cercanía.",
-      "causal_bridge_from_previous": "La proximidad por sí sola no decide; la forma de las líneas espectrales aporta una prueba.",
-      "question_state": "Las diferencias de [O III] favorecen dos fuentes intrínsecas.",
-      "reason_to_continue": "La prueba espectral necesita su límite antes de cerrar.",
-      "new_information": "Las alas azules de [O III] difieren y favorecen dos fuentes intrínsecas."
+      "causal_bridge_from_previous": "Ni la proximidad ni las masas bastan para descartar una imagen de lente; los perfiles espectrales ofrecen una prueba distinta.",
+      "question_state": "Las diferencias espectrales favorecen dos fuentes intrínsecas, aunque la lente aún no está descartada.",
+      "reason_to_continue": "La evidencia favorece la pareja, pero el límite de la hipótesis debe quedar explícito.",
+      "new_information": "Las alas azules de [O III] difieren y favorecen dos fuentes intrínsecas.",
+      "asset_filename": "frames/scene_007.jpg"
     },
     {
       "id": "scene_008",
       "arc": "reflexion_o_pregunta",
       "duration_seconds": 10,
-      "narration": "Aun así, una lente gravitacional no está descartada; falta modelar una galaxia en primer plano. Es una pista sobre el crecimiento temprano, no una fusión demostrada. Esto fue Datos y ociosidades.",
+      "narration": "Con los datos actuales, la lente gravitacional no está descartada: falta modelar la galaxia en primer plano. El hallazgo no demuestra una fusión. ¿Qué podrá revelar sobre el crecimiento de los primeros agujeros negros? Esto fue Datos y ociosidades.",
       "on_screen_text": "Lente aún no descartada",
       "visual_description": "Una posible galaxia en primer plano entre el observador y las dos fuentes; mostrar la lente como hipótesis no resuelta, con el par al fondo.",
       "image_prompt": "post-impressionist painting in the style of Van Gogh's Starry Night, swirling brushstrokes, deep blues and glowing yellows, vertical 9:16, no text Una posible galaxia en primer plano entre el observador y las dos fuentes; mostrar la lente como hipótesis no resuelta, con el par al fondo.",
@@ -344,10 +351,11 @@
       "style_id": "van_gogh",
       "dramatic_beat": "El hallazgo conserva su valor sin convertir una hipótesis en certeza.",
       "scene_function": "El hallazgo conserva su valor sin convertir una hipótesis en certeza.",
-      "causal_bridge_from_previous": "La evidencia favorece dos fuentes, pero la posibilidad de lente obliga a limitar la conclusión.",
-      "question_state": "La lente no está descartada por completo; la conclusión queda como candidata a pareja física.",
-      "reason_to_continue": "La historia termina con una pista sólida y una incertidumbre explícita.",
-      "new_information": "La modelación de lente y la confirmación de la galaxia de primer plano siguen pendientes."
+      "causal_bridge_from_previous": "Las diferencias espectrales favorecen dos fuentes, pero la posible lente obliga a limitar la conclusión.",
+      "question_state": "La lente sigue abierta; el hallazgo es una pareja candidata, no una fusión demostrada.",
+      "reason_to_continue": "El cierre devuelve la historia a la pregunta inicial y deja una incógnita científica abierta.",
+      "new_information": "Los datos favorecen dos fuentes físicas, pero falta modelar la posible lente gravitacional.",
+      "asset_filename": "frames/scene_008.jpg"
     }
   ],
   "cortinilla_fuentes": {
@@ -389,7 +397,9 @@
     "El DOI 10.3847/2041-8213/aeb11f permanece PENDIENTE_RESOLVEDOR; el enlace arXiv al manuscrito primario es accesible.",
     "El estilo de la cápsula previa de las 07:00 (colibrí) no está registrado en el estado de slots ni existe su storyboard en este repositorio; la unicidad frente a esa pieza no es certificable. Este estilo sí difiere del último storyboard del repositorio y del otro borrador del día.",
     "No se añade narrative_qa: la lectura en frío y la promoción corresponden al auditor independiente.",
-    "Revisión narrativa v2: se eliminó la repetición de Gemini North en escena 2 y se reconstruyó el puente 2→3 (dificultad de observación → época cósmica). narrative_qa histórico permanece FAIL/82; requiere nueva lectura en frío independiente. No promover ni redispatchar."
+    "Revisión narrativa v2: se eliminó la repetición de Gemini North en escena 2 y se reconstruyó el puente 2→3 (dificultad de observación → época cósmica). narrative_qa histórico permanece FAIL/82; requiere nueva lectura en frío independiente. No promover ni redispatchar.",
+    "Auditoría narrativa independiente entregada por el trabajador de cola en PR #13 sobre el commit 54c8ade: se revisaron el momento del primer dato, la progresión de escenas, los puentes causales, la redundancia y el marcador del límite de evidencia. Esta revisión aplica correcciones; el FAIL/82 histórico se conserva hasta una nueva auditoría independiente.",
+    "Se añadieron asset_filename a las ocho escenas para cumplir el esquema del validador. Los archivos de frames no existen todavía; su ausencia solo debe aparecer como aviso, no como generación de medios."
   ],
   "linea_tematica_provisional": "Espacio y astronomía",
   "risk_notes": [
