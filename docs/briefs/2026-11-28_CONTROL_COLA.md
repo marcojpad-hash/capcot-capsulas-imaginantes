@@ -173,3 +173,11 @@ Los registros no se editaron. Las tres horas se consideran ocupadas/conflictivas
 - `feature/capcot-video-discovery-continuity/cola/entrada/`: 2 entradas: un `.gitkeep` y el directorio anidado del 09-nov; **cero JSON planos**.
 - `main/cola/estado/2026-11-09_dato-robot-ensambla-orbita.json` y `main/cola/estado/2026-11-27_bacterias-vuelta-oxigeno.json` devuelven HTTP 404. No crear ni corregir estados.
 - El selector del workflow escucha `cola/entrada/*.json` de primer nivel. Por tanto, los 35 paquetes anidados de main y el paquete anidado de feature no disparan el dispatch actual; el SUCCESS del worker con `sin trabajo en cola` es coherente con ese selector.
+
+
+## CI y límites de automatización — 2026-11-28 04:11 CDMX
+
+- PR #3 permanece OPEN/DRAFT, base main, head `512004c2e2a04094533d927baa17c6adaf29aad3`, `mergeable=false`. Los dos CodeQL runs del head anterior terminaron SUCCESS; el CodeQL del head actual `46135841079` seguía IN_PROGRESS al último chequeo.
+- Esos checks son CodeQL, no el validador estructural de storyboards. `validar-kuroshio.yml` solo cubre el expediente Kuroshio del 18-nov y ejecuta `validar_storyboard.py` sin `--check-doi`; no valida el storyboard de llantas ni acredita DOI.
+- `capcot-descubrimiento.yml` tiene `schedule: 30 14 * * 1`, `permissions.contents: write` y un paso que hace commit/push a `GITHUB_REF_NAME`. En una ejecución `schedule`, la rama de referencia predeterminada es main; por tanto, el workflow puede escribir el catálogo en main aunque la política operativa declare main de solo consulta. No se disparó ni modificó ese workflow.
+- `capcot-grok-dispatch.yml` sigue limitado a JSON planos de primer nivel en push; no se ejecutó manualmente y no se envió webhook.
