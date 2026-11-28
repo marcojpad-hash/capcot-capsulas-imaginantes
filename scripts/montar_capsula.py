@@ -281,7 +281,7 @@ def main():
         sfx = sc.get("sfx") or [sc.get("ambiente") or "olas"]  # lista por plano; el último se repite
         durs += [(sfx[min(k, len(sfx) - 1)], sdur / n) for k in range(n)]
         print(f"{sc['id']}: voz {adur:.1f}s, escena {sdur:.1f}s"); t += sdur
-    cd = float(sb["cortinilla_fuentes"].get("duration_seconds", 5))
+    cd = float(sb["cortinilla_fuentes"].get("duration_seconds", 6))  # contrato editorial: cortinilla de 6 s
     cpng = os.path.join(tmp, "cortinilla.png"); cortinilla(sb, cpng)
     cmp4 = os.path.join(tmp, "cortinilla.mp4")
     run(["ffmpeg", "-y", "-loop", "1", "-i", cpng, "-t", f"{cd}", "-r", str(FPS), "-vf", "format=yuv420p",
